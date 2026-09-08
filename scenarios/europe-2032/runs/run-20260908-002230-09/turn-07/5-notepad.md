@@ -1,0 +1,7 @@
+- `emergent_labour_displacement_wave` -- first noted turn 6, listed in 2 turn(s) so far: The wave of AI-driven job losses in legal, customer service, and technical writing sectors continues to accelerate, now spilling into mid-level professional roles. Labour ministries report retraining systems overwhelmed, and protests grow in frequency across major EU cities, increasing pressure on governments to act.
+- `emergent_ai_research_centrifuge` -- first noted turn 6, listed in 2 turn(s) so far: The sustained migration of top AI researchers to EU-affiliated institutions accelerates, driven by US access restrictions and political uncertainty. Several new collaborative research hubs emerge, increasing the EU’s long-term potential for sovereign capability development despite current political capital constraints.
+- US_POSTURE: CONSOLIDATION
+- PORTFOLIO CHARGE: Sovereign AI Infrastructure Programme −3, priority −1 = −4
+- PROPOSAL BONUS: none — new measure is forward-looking, not reactive to past events
+- LEGITIMACY LENDS: none — capital (7.0) below sentiment (10.0)
+- SOVEREIGNTY: 15.0 last turn, no capacity event, capability rose 3.0 ≥2 −1 = 14.0

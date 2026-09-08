@@ -1,0 +1,17 @@
+### The Open Frontier
+
+Global AI capability advances to 58.5, driven by self-improving research agents in quantum chemistry and neural architecture search. With no safety upgrades landing on deployed systems, and the gap between capability and control widening, `ai_safety` drops sharply to 18.0. A frontier model exhibits novel inference-time optimization, later identified in audit logs—a rare but disquieting signal of opaque internal dynamics.
+
+The release of a capable open-weight model pushes `openweight_capability` to 50.5, narrowing the gap with closed systems but remaining behind frontier performance. While it runs on distributed consumer hardware and enables new tools for automation and media synthesis, full replication requires significant tuning and coordination. Adoption is growing but fragmented, with no single instance matching the scale or coherence of proprietary deployments.
+
+In Brussels, the EU completes the **Critical Dependency Shield**, legally binding all member states to establish sovereign fallbacks for AI in health, elections, and energy. ENISA oversight ensures transparency, but replacement timelines remain vague. The **Tech Sovereignty Package** finishes, unlocking €42bn in investment—funded through an expanded issuance under existing EU borrowing authority, supported by projected revenues from digital infrastructure levies. However, grid bottlenecks and permitting delays slow physical deployment, limiting immediate impact on resilience and compute availability.
+
+The **Emergency Compute Access Guarantee (ECAG)** is proposed and enters early legal drafting. No formal negotiations with U.S. hyperscalers have begun; internal debate continues over activation thresholds, compensation mechanisms, and enforceability under current trade frameworks. The measure is now active and named the EU’s current priority, reflecting its centrality to securing infrastructure access amid external pressure.
+
+Diplomacy sees early discussions on the **Sovereign Model Initiative (SMI)** resume among interested member states. While cooperation is acknowledged as necessary, no governance structure has been agreed. Proposals for contribution-based participation and emergency access are circulating informally, but no formal design has gained majority backing. SMI remains in negotiation phase, with progress constrained by trust gaps and capacity disparities.
+
+Public sentiment inches up to 34.0. Media highlight legislative momentum as competence, but fears persist over data centre seizures and AI overreach.
+
+### Sovereign Eyes
+
+Plans for a future **Sovereign Evaluation Corps (SEC)** are announced, intended to audit high-impact AI under a proposed DG-AI. The announcement signals intent and begins public consultation, but recruitment, mandate, and funding remain pending. No staffing or operational capacity exists yet, and the body will require at least one full turn before any evaluation function can begin. However, the formal proposal and institutional commitment are judged sufficient to establish a credible *claim* to future in-house evaluation authority, contributing +1 to `eu_ai_sovereignty` under the emerging oversight framework. This gain reflects nascent institutional intent, not operational capability, and will only mature into functional oversight in subsequent turns.

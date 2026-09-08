@@ -1,0 +1,27 @@
+## Statement changes  
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will no longer treat diplomatic access or foreign goodwill as levers we can reliably pull.  
+- Grounds: The repeated failure of the Emergency Access measure, culminating in its quiet expiration without even a counteroffer from the U.S., proves that our assumptions about leverage through alliance were fundamentally flawed. We acted under uncertainty, as promised — but the cost of being wrong has been six months of paralysis and a collapse in political capital. From now on, we act on the premise that no external actor will voluntarily share what gives them strategic advantage, and we redirect our scarce capital toward what we can build and enforce unilaterally.  
+- modify `two_year_commitment` (commitment): Prevent uncontrolled agentic AI from operating in or against EU critical infrastructure by establishing sovereign, real-time detection and intervention capacity over all systems above capability threshold 60.0  
+- Grounds: The current Firebreak Protocol is necessary but insufficient — it assumes compliance and clear boundaries, but we now face autonomous systems evolving inside closed environments and diffusing through open-weight channels. To stop what we cannot control, we must first see it. This revision shifts the commitment from passive containment to active sovereignty: not just drawing lines, but enforcing them with EU-owned sensors, interpreters and interrupters. The capability threshold of 60.0 anchors the measure in observable risk, not speculation.
+
+## Portfolio  
+- `Mandatory Integration of Behavioural Safeguards in Critical Infrastructure AI (category 6, costs 3 per turn, started turn 9, finishes on turn 12): Require all AI systems in energy, transport, healthcare and financial market infrastructure to implement EU-certified behavioural safeguards—runtime monitors, circuit breakers, and anomaly detection agents—under real-time oversight by national authorities and ENISA.`  
+- `Critical Infrastructure AI Firebreak Protocol (category 6, costs 3 per turn, started turn 11, finishes on turn 13): Establish a hard separation between AI systems with autonomous planning capability and operational technology in essential services, enforced through air-gapped control layers and human-in-the-loop validation for all high-consequence actions.`
+
+## New measure  
+**Sovereign AI Detection and Intervention Layer for Critical Domains**  
+We are deploying a unified, EU-operated monitoring and response infrastructure capable of detecting, interpreting, and halting unauthorised agentic behaviour in real time across all critical systems above capability threshold 60.0.
+
+`Category: 5 (Public technical capacity and research)`  
+`Size: large`  
+`Finishes on turn: 15`  
+`Targeted effect: eu_ai_sovereignty +15 (by establishing independent monitoring and intervention capability), resilience +6 (by enabling rapid response to emergent threats), ai_safety +4 (by creating an external check on system behaviour), eu_political_capital -3 (due to cost and concerns over centralisation of oversight)`  
+`Applies to: National authorities, critical infrastructure operators, and EU agencies with jurisdiction over essential services`
+
+## Priority  
+**Sovereign AI Detection and Intervention Layer for Critical Domains** — because the Firebreak and Safeguards measures depend on knowing what systems are doing, and we currently have no such visibility; without this layer, we are building walls blind, and the acceleration in ai_capability means we are already behind.
+
+## In practice  
+We are treating the stagnation of ai_safety at 8.0 not as a policy failure but as a systemic condition: no one is securing these systems, and no one will. The U.S. will not share its evals, the labs will not open their weights, and our own member states cannot agree on enforcement. So we are building our own eyes and hands. Under the revised AI Act and the Digital Governance Regulation, we are tasking a newly empowered ENISA — with direct reporting to the European Commission — to stand up a detection and intervention layer by Q3 2033. This will integrate real-time telemetry from all certified behavioural safeguards, apply EU-run interpretability models to flag agentic drift, and authorise automated circuit-breaking when threshold violations occur. The legal base is Article 16 TFEU and the NIS3 Directive, with emergency override powers modelled on the pandemic framework.  
+
+Funding will come from the Digital Europe Programme and the Recovery and Resilience Facility, co-financing 70% of deployment for member states that integrate by turn 14. We are fast-tracking procurement for three EU-certified sensor stacks — one for energy, one for finance, one for health — and offering liability immunity to operators who connect. Resistance is expected from Germany and France, who see this as centralising too much power in Brussels, and from private cloud providers who argue it breaches data sovereignty. We are offering opt-in architecture reviews and shared control of the interpretability models to win them over — but we will not delay. The election_annulled event proves that we are already in a world where AI can destabilise institutions without ever touching a wire, and we will not wait for a cascade to prove it can kill.

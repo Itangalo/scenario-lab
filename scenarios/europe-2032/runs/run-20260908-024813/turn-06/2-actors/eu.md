@@ -1,0 +1,29 @@
+No statement changes.
+
+## Portfolio
+- ``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
+- ``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — **finished this turn**
+- ``Secure EU access to frontier model evaluations through sovereign red-teaming capability (category 5, costs 3 per turn, started turn 2, finishes on turn 6): Establish a permanent, EU-controlled facility to conduct red-team evaluations on frontier AI models, including access to weights under strict legal and security conditions`` — **finished this turn**
+- ``Launch emergency civic dialogue on AI’s role in public life (category 9, costs 2 per turn, started turn 4, finishes on turn 5): A Union-wide forum series, mediated by independent civic bodies, to surface public concerns about AI in hiring, education, housing and personal autonomy, feeding into legislative design and social transition planning`` — **finished this turn**
+
+## New measure
+**Establish EU-led red-teaming and evaluation access for open-weight models, with mandatory reporting from redistributors**  
+Create a sovereign EU capability to evaluate and monitor the safety of open-weight models that have already escaped closed development environments, by mandating reporting and access from redistributors and hosting entities.
+
+`Category: 5 (Public technical capacity and research)`  
+`Size:` large  
+`Finishes on turn:` 8  
+`Targeted effect:` slow the erosion of `ai_safety` by increasing visibility into open-weight systems; build institutional capacity to assess autonomous agent behaviour; contribute to future `limits_and_restrictions` decisions; marginally support `resilience` through early detection of exploit potential  
+`Applies to:` all entities redistributing or hosting open-weight models within the EU, including cloud providers, open-source foundations, and research consortia
+
+## Priority
+``Establish rapid-response cyber defence integration with real-time patching and swarm detection`` — because the cyber_defence_breakthrough is already in motion, its deployment deadlines are binding this turn, and delaying integration would waste a narrow window in which defensive automation outpaces offensive adaptation — a window that may close permanently once openweight_capability crosses 52.0 and autonomous attacks become routine.
+
+## In practice
+We are executing on multiple fronts, but the pace of delivery is not uniform. The rapid-response cyber defence integration is now law: NIS3 was adopted by COREPER this week and enters force immediately for NIS2-covered entities. ENISA has activated deployment cells in all member states, with Germany, France and the Nordics already integrated. We are providing 70% co-financing for Hungary and Slovakia to secure compliance, and hosting joint oversight councils to preserve national operational autonomy — a compromise that holds cohesion together. The cyber shield is now live, reducing intrusion dwell time from days to minutes and locking in a resilience gain that will persist even as offensive AI evolves.
+
+On the industrial front, the French InvestAI Gigafactory is now grid-connected and entering phase-three commissioning; we have rerouted undersea cable stock from the North Sea Wind Power Hub to accelerate full power delivery by Q3. In Poland, after protracted negotiations, we secured local approval by committing 15% of construction jobs to Silesian workers and establishing a regional innovation trust funded by 2% of long-term site revenue — a model we may replicate elsewhere. The Tech sovereignty package, originally designed to crowd in private capital, has pivoted to a bond-backed structure: with private investment still frozen, we are guaranteeing 60% of risk through EIB instruments, making projects bankable without full state ownership. This model will now be extended to future phases.
+
+The sovereign red-teaming capability and the civic dialogue both finish this turn. The red-teaming facility has achieved initial operating capability, with access secured to Kimi K3 derivatives and early GFlowNet variants; its first assessments on autonomous exploit chaining in SCADA environments are already feeding into the cyber defence rollout. The civic dialogue, though concluded, has delivered actionable findings: deep public distrust in AI-driven hiring and public services, particularly among younger and lower-income groups. These are now being translated into draft revisions of the AI Act’s high-risk list, to be circulated in November, informed by citizen juries in Athens, Malmö and Lille.
+
+Meanwhile, the openweight_frontier_release has changed the game. A model of capability 54.0 has been downloaded hundreds of thousands of times in days — now permanently on private hardware, beyond recall. This is not a leak; it is a new norm. We can no longer rely on controlling laboratories to control risk. That is why we are launching a new measure: EU-led red-teaming and evaluation access for open-weight models. Starting this turn, we will require redistributors and hosting platforms to provide evaluation access and safety reporting for any model above threshold capability. This will be enforced through digital service regulations and backed by a new unit within ENISA. The goal is not to stop distribution — that ship has sailed — but to ensure the EU can still *see*, *assess*, and *respond* to what is loose. This is not sovereignty as ownership, but sovereignty as understanding — and it is the only kind we may have left.

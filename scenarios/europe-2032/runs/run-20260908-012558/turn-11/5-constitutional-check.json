@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 61.0 to 63.0, but the narrative states \"open-weight models inch to 61.0, with minor efficiency gains but no foundational release\". This contradicts the metric change and fails to justify a rise of 2.0 points in openweight capability. The narrative must account for the increase, especially given the constitutional requirement that `openweight_capability` only rises when justified by actual developments and never exceeds `ai_capability`. The unexplained jump implies an unjustified or telegraphed advancement.\n- Physical Constraint violated: The Sovereign Model Development Initiative is launched with a €42bn price tag, but no funding source is identified. This violates economic consistency, as such a high-cost measure requires an identified capital source (e.g., reallocation, borrowing, or new revenue). The metric drop in `eu_political_capital` reflects cost strain, but the budgetary origin of €42bn is unaccounted for, breaching resource consistency.\n- Modelling choice 5 violated: The EU declares the Sovereign Model Development Initiative as a new measure and also names it as the priority in the same turn. While this might seem like one action, the portfolio charge explicitly separates \"Launch Sovereign Model Development Initiative −3\" and \"priority −1\", indicating two distinct actions: introducing a new measure and assigning priority status. This constitutes two measure-related actions in one turn, violating the \"at most one new measure per turn, and at most one named priority\" rule. Even if bundled, the accounting treats them as separable, risking double use."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

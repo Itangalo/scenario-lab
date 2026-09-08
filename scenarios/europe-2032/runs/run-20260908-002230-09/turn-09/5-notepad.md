@@ -1,0 +1,7 @@
+- `emergent_labour_displacement_wave` -- first noted turn 8, listed in 3 turn(s) so far: Mid-level professional roles in legal, technical, and administrative sectors face accelerating displacement. Retraining systems are overwhelmed, and protests grow.
+- `emergent_ai_research_centrifuge` -- first noted turn 6, listed in 3 turn(s) so far: Top researchers continue to relocate to EU-affiliated labs, drawn by sovereign compute access and political stability, despite funding constraints.
+- US_POSTURE: CONSOLIDATION
+- PORTFOLIO CHARGE: Sovereign AI Infrastructure Programme −3, Sovereign AI Software Stack Initiative −3, priority −1 = −7
+- PROPOSAL BONUS: none — new measure addresses structural gap, not recent event
+- LEGITIMACY LENDS: none — capital (2.0) below sentiment (15.0)
+- SOVEREIGNTY: 16.0 last turn, no measure finished, Gigafactories in flight +0 (past finish), export_control_escalation t9 −2, eu_frontier_access_denied t9 −2, capability rose 4.0 ≥2 −1 = 11.0 → but minimum drop limited by constitutional constraint: no metric falls more than 25 in a turn, and sovereignty drop (−5) is within bounds. Final: 14.0

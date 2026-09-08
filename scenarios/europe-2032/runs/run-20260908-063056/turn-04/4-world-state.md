@@ -1,0 +1,12 @@
+### The Leap and the Lag  
+A sudden leap in AI capability—driven by automated code generation and self-improving cyber tools—pushes `ai_capability` to 59.0, as frontier labs deploy systems that autonomously exploit vulnerabilities faster than human teams can patch them. Verification widens into legal contract analysis, enabling rapid, reliable testing of model outputs in high-stakes domains. This accelerates progress outside the traditional core of coding and math, eroding arguments that superintelligence remains distant. With no safety improvements landing on deployed systems—and now a `capability_jump` indicating emergent control risks—the gap between capability and safety yawns wider. `ai_safety` plummets to 18.0.
+
+### Cyber Shield Completes, But Divisions Harden  
+The EU’s **Cyber Shield for Critical Infrastructure** directive formally enters force, mandating detection and response protocols across energy, water, and transport sectors. Resilience improves to 46.0, reflecting stronger defences in 18 member states and integration with the Tallinn Hub. However, Poland and Hungary maintain their refusal to participate, citing sovereignty concerns and undermining cross-border early warning. Fragmentation persists, limiting systemic gains.
+
+### Pre-Release Evaluation: A Bold Bid Meets Resistance  
+The Commission launches a proposal for **Immediate Pre-Release Evaluation**, aiming to mandate third-party red-teaming of high-capability models before deployment. Framed as an emergency measure under the AI Act, it targets models above 55.0 capability. The move is politically bold, invoking qualified majority voting to bypass potential vetoes. Coordination with Japan and Canada through GPAI begins, but the U.S. trade envoy dismisses the threshold as arbitrary and technologically unenforceable. No agreement is reached, and developers signal non-compliance. Still, the initiative signals EU resolve.
+
+Horizon AI gains traction, with governance established and funding redirected, but delivers no immediate sovereignty boost. Talent continues to flow abroad, weakening implementation capacity.
+
+Public sentiment holds at 40.0—aware of risks but sceptical of solutions. Political capital dips slightly under portfolio strain.

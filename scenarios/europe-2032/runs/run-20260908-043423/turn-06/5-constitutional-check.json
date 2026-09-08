@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 63.5 to 68.5 (+5.0), while `ai_capability` increased by 4.0. This violates the rule that `openweight_capability` must not exceed `ai_capability` and must not grow faster than it unless justified by narrative events (e.g., catch-up after stagnation). The narrative provides no justification for openweight outpacing frontier capability growth, especially during a U.S. consolidation posture that restricts access — which should hinder, not accelerate, openweight progress.\n- Modelling Choice 5 violated: The narrative states that \"the Tech Sovereignty Package and Pre-Release Evaluation Authority complete their legislative journeys\", implying two new measures were fully implemented this turn. However, the constraint limits the EU to at most one new measure per turn. Even if both were initiated earlier, completing two major measures — one being a regulatory authority — in a single turn exceeds plausible implementation capacity and violates the \"at most one new measure per turn\" rule.\n- Modelling Choice 6 violated: The Pre-Release Evaluation Authority is said to enter law \"without emergency powers\", but there is no indication of prior proposal or phased implementation. Given its significance as a regulatory body, this constitutes instant implementation with operational effect, violating the minimum one-turn lag for low-cost measures and two-turn lag for high-cost ones. The narrative does not establish that this was proposed in a prior turn with partial effect.\n- Invariant 3 violated: The U.S. adopts a \"consolidation posture\" that restricts foreign access, yet the EU simultaneously finalises equity deals securing ownership of labs in Montreal and Seoul under EU jurisdiction. Without any narrative explanation of prior agreements, leverage, or conditions enabling this access, the metric movement assumes compliance from the U.S. (Montreal) without established basis. This violates the rule that nothing the EU decides binds the U.S. automatically — access must be narratively justified before such ownership can be realised."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

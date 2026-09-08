@@ -1,0 +1,5 @@
+PROPOSAL BONUS: none  
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereign Compute Acceleration −3, priority −1 = −10  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21 last turn, no capacity event, Sovereign Compute Acceleration in flight +0, capability rose 3.5 −1 = 19  
+emergent_supply_chain_pressure -- first noted turn 1, listed in 2 turn(s) so far: Amid growing U.S. strategic restraint and export control tightening, the European Commission faces internal pressure to formalize its own export licensing framework for dual-use AI components, particularly those tied to ASML's ecosystem. This institutional response emerges not from a single incident but from the compounding realization that the EU's upstream hardware leverage is both its strongest bargaining chip and its most vulnerable position under external coercion.

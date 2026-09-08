@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Regulatory Constraint violated: The narrative introduces the Sovereign Evaluation Corps as a new measure in this turn (Turn 13), but also names it as the EU's priority. This violates Constitutional Constraint 5, which allows at most one new measure per turn and at most one named priority—however, the combination is only permissible if they are the same measure. While that condition is met, the violation occurs because the portfolio charge in the notepad confirms both a new measure (-3) and a priority (-1), meaning two distinct actions were taken in the same turn: launching a measure *and* naming it priority. This constitutes two restricted actions and exceeds the limit of \"at most one new measure\" and \"at most one named priority\" unless they are one and the same action properly sequenced. Here, the accounting implies two separate debits, suggesting procedural overload.\n- Modelling Choice violated: The +5 boost to **ai_safety** from partial early effect of a category 5 measure is inconsistent with Metric Rule 7 (implied in modelling choices): effect grows gradually toward full value as completion approaches, but no justification is provided for why 100% of the eventual effect (which is tied to completion in t16) is already realized in the first turn of partial effect. A +5 jump from early effect is excessive and violates the spirit of gradualism enforced by constraint 6 (no measure implemented instantly). The rule permits partial effect, but a full +5—equal to the total expected completion bonus—before any prior build-up is unrealistic and telegraphs the outcome.\n- Narrative Constraint violated: The narrative states the Sovereign Evaluation Corps \"earns a +5 boost to **ai_safety** upon completion\" and then applies the full +5 immediately in the same turn as partial early effect. This telegraphs the future event and quantifies the exact future benefit, violating Constitutional Constraint 8: \"The narrative must not telegraph.\" It should not state or imply the magnitude of future metric changes. Doing so leaks gate-state information into the narrative, which belongs only in event evaluations."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

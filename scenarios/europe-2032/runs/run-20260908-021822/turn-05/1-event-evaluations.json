@@ -1,0 +1,144 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.09000000000000001,
+    "probability_samples": [
+      0.09,
+      0.09,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.42585474331608364,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.07584124051711072,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3049711566106855,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5670223207424491,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3921521585157516,
+    "triggered": false
+  },
+  {
+    "id": "election_consolidation",
+    "probability": 0.33,
+    "probability_samples": [
+      0.33,
+      0.33,
+      0.33
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "event_group": "us_election_2028",
+    "group_roll": 0.1224426686946316,
+    "group_basis": "weighted",
+    "triggered": true
+  },
+  {
+    "id": "election_alliance",
+    "probability": 0.33,
+    "probability_samples": [
+      0.33,
+      0.33,
+      0.33
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "event_group": "us_election_2028",
+    "group_roll": 0.1224426686946316,
+    "group_basis": "weighted",
+    "triggered": false,
+    "suppressed_by_group": "us_election_2028"
+  },
+  {
+    "id": "election_retrenchment",
+    "probability": 0.33666666666666667,
+    "probability_samples": [
+      0.33,
+      0.34,
+      0.34
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "event_group": "us_election_2028",
+    "group_roll": 0.1224426686946316,
+    "group_basis": "weighted",
+    "triggered": false,
+    "suppressed_by_group": "us_election_2028"
+  },
+  {
+    "description": "A coordination framework emerges among the EU and other middle powers holding key nodes in the AI supply chain—such as the Netherlands (chip equipment), Taiwan (advanced packaging), and South Korea (memory and logic)—to jointly manage export licensing, negotiate compute access, and share baseline evaluations of open models. The initiative is framed as resilience-building rather than alignment with any bloc, and gains traction as member states seek alternatives to dependence. It forms outside EU institutions but with tacit support from member-state capitals frustrated by Brussels' paralysis.",
+    "emergent": true,
+    "id": "emergent_supply_chain_pact",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7445320693121416,
+    "triggered": false
+  },
+  {
+    "description": "A coalition of civil society groups, labour unions, and regional governments launches a pan-European referendum initiative demanding a binding timeline for AI-driven job impact assessments and retraining guarantees, leveraging growing anxiety over displacement. The campaign gains legal footing in five member states simultaneously, forcing EU institutions to respond. While not guaranteed to succeed, it creates a new political vector independent of party politics and raises the cost of inaction on labour disruption.",
+    "emergent": true,
+    "id": "emergent_civil_society_initiative",
+    "probability": 0.2333333333333333,
+    "probability_samples": [
+      0.22,
+      0.18,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7520784999345695,
+    "triggered": false
+  }
+]

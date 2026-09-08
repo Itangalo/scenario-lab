@@ -1,0 +1,11 @@
+### A Capability Leap, a Safety Setback
+
+Global AI capability advances to 55.0, driven by the consolidation of agent frameworks across research and legal domains. Automated verification now reliably checks contract validity and clinical trial logic, accelerating deployment cycles. However, no corresponding safety upgrades have been deployed. With the gap between capability and safety widening, and no new safeguards in place, confidence in system control erodes. ai_safety drops to 29.0 as reports surface of unmonitored model fine-tuning in high-risk sectors.
+
+### The EU’s Sovereignty Shock
+
+The denial of access to the leading AI model sends shockwaves through EU institutions. Hospitals relying on AI diagnostics, ministries using forecasting tools, and firms building on frontier systems face sudden disruption. The incident confirms deep structural dependency. In response, the Commission proposes the **Operational Sovereignty Framework**, a large category 4 measure aimed at enforcing EU control over high-capability systems operating in its markets. The proposal includes mandatory EU-governed orchestration, kill switches, and fallback infrastructure, tied to market access.
+
+However, the political cost is steep. The portfolio now includes three large measures — InvestAI Gigafactories, Tech Sovereignty Package, and Cyber Shield for Critical Infrastructure — and the addition of this new priority measure increases the burden. Resistance mounts among member states reliant on U.S. cloud providers. One threatens to veto parts of the Shield Fund unless compliance timelines are relaxed. Public sentiment sours further, falling to 37.0, as media frame the move as reactive and divisive.
+
+Resilience remains unchanged — Cyber Shield is still in flight. Sovereignty drops to 18.0, hit by the access denial (−3), rising capability (−1), and no domestic capacity yet online. Political capital falls to 29.0 under the weight of ongoing costs and internal friction, reflecting the cumulative charge of multiple large initiatives and the strain of managing a broadening policy front.

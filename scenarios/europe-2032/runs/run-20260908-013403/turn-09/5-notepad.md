@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Emergency AI Incident Response Corps −3, EU Compute Sovereignty Accelerator −3, EU Biosecurity Surveillance −3, priority −1 = −10  
+PROPOSAL BONUS: EU Biosecurity Surveillance (cat 6, large) +3 — answers emergent_open_bio_design_collectives directly and follows cyber_major_incident  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 12 last turn, no capacity event, EU Compute Sovereignty Accelerator in flight +0, capability rose 1.5 −1 = 11  
+US_POSTURE: ALLIANCE
+
+emergent_eu_analog_standby_regime -- first noted turn 7, listed in 3 turn(s) so far: The analog standby protocols, once limited to health and energy, now expand into transportation and emergency dispatch. Regular drills are institutionalized in five member states, with cross-border coordination tested during a simulated blackout. Public messaging remains challenging—media continue to frame the measures as preparing for collapse, not continuity.  
+emergent_open_bio_design_collectives -- first noted turn 7, listed in 3 turn(s) so far: The decentralized bio-design activity grows more sophisticated, with collectives publishing protein binder designs that mimic immune system components. Some are shared under open science licenses, blurring ethical and regulatory lines. EU-based academic clusters remain the primary hosts, exploiting gaps in oversight. The new surveillance framework begins scanning for signature patterns, but early false positives strain university relations.

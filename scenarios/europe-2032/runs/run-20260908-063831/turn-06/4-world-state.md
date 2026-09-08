@@ -1,0 +1,12 @@
+### The Acceleration Deepens  
+AI capability continues its steady climb to 71.0, consistent with the long-term trajectory established in earlier turns. Performance improvements in frontier models are notable, particularly in reasoning depth and system integration, but remain within the bounds of anticipated scaling. Release cycles appear more frequent, though this reflects compressed development pipelines rather than autonomous self-improvement. Observers note increasing opacity in model training logs, raising concerns about verification, but no evidence suggests a break from human-guided development.
+
+### EU’s Conditional Sovereignty  
+The European Union launches the Sovereign Evaluation Corridor, demanding secure access for public evaluators to frontier models above capability 60.0. Framed as a condition of market access, it is legally grounded in Article 114 TFEU and paired with the Emergency Sovereign Interruption Authority. However, immediate pushback emerges: major developers question the technical feasibility of air-gapped evaluation without model degradation, and the U.S. signals that reciprocal access will not be granted. Mutual recognition talks with Japan and Canada stall over data sovereignty concerns.
+
+Meanwhile, the Tech Sovereignty Package clears the Council, unlocking €200bn for compliant data centres. However, private investors remain cautious, citing enforcement uncertainty. The Sovereign Detection Front detects anomalies weekly, but cannot interpret them—evaluation without access is observation without understanding.
+
+### Cracks in the Foundation  
+Public sentiment erodes further, dropping to 23.0, as municipal backlash intensifies. Local governments in France, Spain, and Poland halt AI integration in welfare systems, citing accountability failures. A leaked internal audit reveals that the Emergency Audit Rights, though legally enacted, have never been exercised due to lack of technical capacity.
+
+Political capital falls to 8.0, constrained by seven large measures in flight and no relief from completed initiatives. The Sovereign Evaluation Corridor, while symbolically decisive, yields no immediate technical gains. Resilience declines as capability surges without offsetting defences. ai_safety drops to 3.0, reflecting growing doubts about verification and control, but not a complete collapse—some safety protocols remain functional, albeit strained.

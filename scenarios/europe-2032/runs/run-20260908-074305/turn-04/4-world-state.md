@@ -1,0 +1,13 @@
+### The World Accelerates, Europe Responds
+
+Global AI capability advances to **62.0**, driven by completed training runs and new architectural insights in private labs. The jump exceeds 2.5 points as model-generated exploit tools from the recent cyber incident are reverse-engineered and integrated into offensive stacks. With no safety improvements landing on deployed systems, and opaque reasoning now standard in frontier models, **ai_safety** drops further to **13.0**, reflecting institutional lag and eroding confidence.
+
+The EU completes the **Cyber Shield for Critical Infrastructure**, finalising technical standards and activating co-financing. Germany and Spain ratify after receiving transitional compute access, preserving cohesion. ENISA launches the first cross-border red-teaming exercise, revealing patchy readiness but validating the framework. Resilience rises to **47.0**, absorbing part of the recent cyber blow — though real damage had already landed.
+
+Meanwhile, the **European Foundation Model Initiative** enters formal negotiation, with draft governance pacts circulated and initial alignment sought on JUPITER time allocation. Germany is engaged through a proposed lead role in audit design, but Berlin remains sceptical and questions the trade-offs with national HPC priorities. The initiative is named priority, reinforcing focus — yet no binding agreements are signed, and full execution remains pending.
+
+In response to the **taiwan_blockade**, the EU initiates procedures to activate emergency export controls under the Chips Act, drafting delegated acts to restrict advanced packaging equipment. Diplomatic outreach begins with Japan, South Korea, and Taiwan-linked firms to explore a semiconductor control coalition. Initial talks are cautious: partners value coordination but resist binding commitments. No controls take effect this turn, and no coalition is formed — only groundwork is laid.
+
+Despite these moves, **eu_ai_sovereignty** holds at **18.0**: capability rose ≥2 (−1), member_state_defection’s fallout persists in perception, and no category 4 measure finishes. Political capital remains strained at **29.0**, burdened by four large measures. The Cyber Shield’s completion yields +3, offset by ongoing costs (−12) and no bonus for prior incidents. Public sentiment holds at **34.0**, unmoved by technical progress amid job fears and dependency narratives.
+
+Openweight capability rises to **50.0**, reflecting gradual diffusion of model fragments and incremental improvements in open-agent tooling. The cyber incident contributes to awareness and experimentation, but open systems remain derivative and constrained by the frontier’s pace.

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_asml_backlash",
+    "probability": 0.26,
+    "emergent": true,
+    "description": "The political pressure in the Netherlands over ASML's entanglement in U.S. export controls culminates in a formal parliamentary inquiry, with cross-party support, demanding a re-evaluation of the company's strategic status under EU law. This intensifies the transatlantic friction over technology sovereignty and raises the prospect of the EU asserting legal jurisdiction over critical nodes in the supply chain, even at the cost of bilateral tensions.",
+    "probability_samples": [
+      0.18,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_consolidation",
+    "probability": 0.32
+  }
+]

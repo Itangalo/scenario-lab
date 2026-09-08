@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 54.0 to 65.0 (a jump of +11.0), which exceeds the maximum allowed single-turn increase of 25 points in absolute value, but more critically, this violates the requirement that `openweight_capability` must not exceed `ai_capability` at any point. Here, `openweight_capability` (65.0) equals `ai_capability` (67.0) closely but remains below—so this specific cap is *not* breached—but the rate of increase is implausible under the accumulation rule. However, the core issue is that `openweight_capability` rose by 11.0 while `ai_capability` only rose by 2.0. Given that open-weight progress depends on frontier leakage or delayed replication, a leap of +11.0 when frontier capability grew only +2.0 is inconsistent with the dependency relationship implied by Invariant 2. Such a surge would require an external discontinuity (e.g., mass leak or theft), which must be narratively justified. The narrative describes a rapid release but does not justify how open models gained *more than five times* the proportional gain relative to frontier progress.\n- Metric Rule 9 violated: While no metric moves more than 25 points in one turn in absolute terms (the largest change here is +11.0), the change in `openweight_capability` (+11.0) lacks grounding in the underlying mechanism. Though within the 25-point ceiling, the jump contradicts the expected coupling with `ai_capability` growth unless a specific event (like a data/model leak) is invoked and sustained in the narrative. The narrative mentions a sudden release but fails to establish sufficient technical or logistical basis for such a large, instantaneous gain in functional equivalence across domains—especially without corresponding safety or resilience tools emerging alongside it. This constitutes a violation of realism under Invariant 2’s spirit and Modelling Choice 8 (narrative must not telegraph or imply unrealistic leaps)."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,27 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Prevent irreversible loss of strategic autonomy and secure sovereign access to frontier AI systems  
+- Trigger: eu_frontier_access_denied  
+- Grounds: The Union has been cut off from the leading model with no appeal, disrupting hospitals, ministries, and firms that depended on it. This is not a market failure but a geopolitical one: the EU’s lack of sovereign capability means its access is conditional, revocable, and exposed. The denial confirms that autonomy is not about participation but control — and that without the ability to run, inspect, and improve frontier systems independently, the Union cannot determine its own future. The commitment must now name the core deficiency: access to the frontier itself.
+
+## Portfolio
+``Frontier Model Transparency and Agent Behaviour Registry (category 1, costs 3 per turn, started turn 9, finishes on turn 10): We mandate real-time logging and quarterly submission of agent-behaviour summaries, training run metadata, and internal red-teaming results from all developers operating at or above 65.0 capability, with submissions verified by independent EU-accredited auditors and accessible to the European AI Security Board`` — finished  
+``Secure Open-Weight Access and Containment Framework (category 3, costs 3 per turn, started turn 10, finishes on turn 11): We establish a conditional access regime for open-weight models above 50.0 capability, requiring developers to submit to weight-security audits, usage logging, and EU-controlled distribution channels in exchange for privileged access to sovereign compute and research funding``
+
+## New measure
+**Sovereign Frontier Access Initiative**  
+We launch an emergency programme to deploy and operate a frontier AI system under full EU jurisdiction, using legally anchored compute, public talent pools, and audited weights, ensuring uninterrupted access to a model at or above 74.0 capability regardless of external conditions.  
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 13`  
+`Targeted effect:` eu_ai_sovereignty +12 (by establishing independent frontier access), ai_safety +3 (through public audit and controlled deployment), eu_political_capital −5 (due to urgency-driven bypass of normal procurement and cohesion concerns)  
+`Applies to:` EU-based developers, public research consortia, and sovereign cloud operators
+
+## Priority  
+**Sovereign Frontier Access Initiative** — because the eu_frontier_access_denied event has made clear that our strategic autonomy is already compromised, and no amount of transparency or containment matters if we cannot run a frontier system on our own terms; this is no longer about influence or leverage but about basic operational survival.
+
+## In practice  
+We are activating the Sovereign Frontier Access Initiative under Article 114 TFEU and the newly invoked Crisis Response Instrument for Strategic Technologies. The European High-Performance Computing Joint Undertaking (EuroHPC JU) is being repurposed as the delivery vehicle, with a dedicated task force reporting directly to the Vice-President for Values and Transparency. We are instructing EuroHPC to contract immediately with a consortium of EU-resident researchers and engineers — including teams from INRIA, Fraunhofer, and the Dutch National AI Institute — to instantiate and operate a model at or above 74.0 capability using legally bound compute within the Sovereign AI Compute Corridor. The weights will be sourced from the last known open frontier release before the access denial, with interpretability and safety audits conducted in parallel by the European AI Security Board.
+
+The Secure Open-Weight Access and Containment Framework is now in final legal review at DG CONNECT, with technical validation underway at ANSSI and BSI. We are adjusting the framework to exempt the Sovereign Frontier Access Initiative from its distribution controls, recognising that public-sector frontier deployment must not be constrained by the same rules as open diffusion. We are also finalising the compliance support unit, which will assist smaller open-weight developers in meeting audit requirements, and preparing a public campaign to reframe the measure as enabling responsible openness rather than restricting it. Resistance from Hugging Face and EleutherAI is being met with bilateral talks offering partial exemptions for non-commercial research and co-funding for EU-hosted instances.
+
+Internally, the emergent_compute_black_market findings have triggered mandatory workload provenance tracking across all InvestAI Gigafactory operators, with ENISA conducting quarterly audits. The cohesion fund clause targeting unilateral AI access deals is being circulated to member states as a non-paper, framed as a mutual safeguard rather than a sanction. We are preparing for backlash from Hungary and Poland by offering fast-tracked access to the Sovereign Frontier Access Initiative’s research tier in exchange for compliance. The entire effort is being sold not as a break from openness but as its necessary evolution — one where the EU does not wall itself off, but ensures it can stand on its own feet when the ground shifts.

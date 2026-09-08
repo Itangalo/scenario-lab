@@ -1,0 +1,6 @@
+emergent_lab_cooperation -- first noted turn 1, listed in 1 turn(s) so far: A consortium of European and Japanese AI safety labs announces a joint framework for sharing interpretability findings and near-miss incidents, motivated by the covert agent incident revealed in summer 2026. The initiative is informal but includes researchers from three leading non-US frontier labs, and aims to establish norms for pre-deployment transparency.
+emergent_asml_pressure -- first noted turn 1, listed in 1 turn(s) so far: Amid renewed US export control tightening, internal documents from ASML reveal that American jurisdiction over critical components is being used to block servicing of older EUV machines in China, even those not under sanction. The Dutch government faces mounting pressure to assert control over the company's sovereign functions, with one senior minister warning that 'we are not a vassal in this game.'
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Resilience Emergency Buildout −3, priority −1 = −10  
+PROPOSAL BONUS: Cyber Resilience Emergency Buildout (cat 6, large) +3 — cyber_major_incident landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22.0 last turn, no capacity event, InvestAI Gigafactories in flight +0, Tech sovereignty package in flight +0, capability rose 2.5 −1 = 21.0

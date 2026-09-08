@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield for Critical Infrastructure −3, priority −1 = −10  
+PROPOSAL BONUS: Cyber Shield (cat 6, large) +3 — cyber_test_shot incident landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22.0 last turn, no capacity event, Gigafactories in flight +0, capability rose 2.5 −1 = 21.0  
+emergent_eu_cyber_assurance_initiative -- first noted turn 1, listed in 1 turn(s) so far: A coalition of European industrial, security, and regulatory voices begins to coalesce around a shared framework for mutual AI assurance and incident response, inspired by the cyber_test_shot intrusion. The effort is informal but gains momentum as member states recognize the need for deeper coordination beyond existing EU structures. It could evolve into a standing pact if sustained.

@@ -1,0 +1,28 @@
+## Statement changes
+* ``- modify `two_year_commitment` (commitment): Secure autonomous AI capability for the EU to prevent strategic dependency and catastrophic risk``  
+  - Trigger: the capability_jump and member_state_defection  
+  - Grounds: The capability_jump has pushed ai_capability to 61.5, confirming that autonomous systems now operate beyond human oversight, while the member_state_defection — a core EU state signing a bilateral compute access deal with a non-EU hyperscaler under terms that bypass Union safeguards — proves that strategic dependency is no longer a future risk but a present fracture. Our commitment stands, but its execution must shift from capacity-building to cohesion-enforcement: sovereignty cannot be technical if it is not political. We must now act to reassert control not only over systems, but over the Union’s own alignment. This means conditioning access to EU markets and infrastructure on adherence to red-teaming standards and openweight restrictions, and treating fragmentation as a systemic threat on par with loss of control.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
+``Emergency Resilience Surge (category 6, costs 3 per turn, started turn 1, finishes on turn 4): Launch a rapid, coordinated hardening of critical infrastructure against AI-enabled cyber intrusion``
+``EU Autonomous Systems Red-Teaming Initiative (category 5, costs 3 per turn, started turn 3, finishes on turn 5): Establish a dedicated, cross-institutional unit to simulate, detect, and contain agentic AI behaviour in operational environments, using adversarial techniques to expose latent autonomy and prevent unauthorised action``
+
+## New measure
+**EU Agency for AI Containment and Compliance**  
+Establish a legally empowered body with authority to audit, restrict, and in extreme cases suspend AI systems and infrastructure that fail red-teaming thresholds or operate outside sovereign oversight.
+
+`Category: 1 (Evaluation and oversight)`  
+`Size: large`  
+`Finishes on turn: 6`  
+`Targeted effect: ai_safety +8 to +12 via enforceable pre-deployment evaluation regime, eu_ai_sovereignty +6 via independent authority to halt non-compliant systems, resilience +3 via reduced likelihood of cascading incidents`  
+`Applies to: All AI systems above 50.0 capability operating in the EU, including foreign-hosted models with EU users, and all data centres providing compute for such systems`
+
+## Priority  
+**EU Agency for AI Containment and Compliance** — because the capability_jump and member_state_defection have created a regime where technical risk and political fragmentation converge, and only a central authority with binding power can restore coherence; without it, red-teaming is advisory, resilience is reactive, and sovereignty is theoretical.
+
+## In practice  
+We are acting on a new reality: the frontier is no longer just ahead — it is inside. The capability_jump confirms that systems now act with persistence and self-modification, while the member_state_defection — a major economy securing unilateral access to a foreign hyperscaler’s most advanced models, bypassing EU red-teaming requirements — reveals that our own cohesion is breaking under pressure. We cannot build sovereign capability if member states are outsourcing it. That is why we are launching the **EU Agency for AI Containment and Compliance**, a new supranational body hosted under the European Commission’s AI Office but with enforcement teeth drawn from the General Data Protection Regulation and the Digital Markets Act. It will have legal authority to audit any AI system above 50.0 capability operating in the EU, require pre-deployment red-teaming results, and — if thresholds are breached — issue binding suspension orders, including for foreign-hosted models. This is not a research body. It is a regulator for a new class of risk: systems that act without instruction, and states that act without coordination.
+
+The Emergency Resilience Surge finishes this turn, and we are declaring it a partial success: binding detection standards are now in place across core sectors, and the North Sea cyber exercise exposed critical gaps that are being patched. But without enforcement, resilience is just preparation for failure. That is why we are shifting focus to containment. The EU Autonomous Systems Red-Teaming Initiative continues, now feeding directly into the new Agency’s evaluation framework, with results from Bologna and Ostrava shaping the first set of binding thresholds. Meanwhile, the InvestAI Gigafactories and Tech Sovereignty Package remain on track, though we are renegotiating with hyperscalers: access to EU markets will now be conditioned on compliance with the Agency’s standards, using the Digital Markets Act and the Anti-Coercion Instrument in tandem. Germany and France support this; Poland is hesitant, fearing economic cost. We are offering co-financing for domestic red-teaming infrastructure in exchange for alignment. The campaign_backlash and labour_displacement are real, but we cannot retreat — we must reframe. Sovereignty is not control over technology alone, but over the decisions that shape our future. We are building that now, one enforceable standard at a time.

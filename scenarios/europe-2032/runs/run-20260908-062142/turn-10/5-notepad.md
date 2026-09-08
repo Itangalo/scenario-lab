@@ -1,0 +1,8 @@
+- `emergent_labour_displacement_wave` -- first noted turn 1, listed in 10 turn(s) so far: Accelerating AI-driven displacement in legal, administrative, and clinical coding roles across the EU. Layoffs are now widespread, with retraining systems overwhelmed. Political pressure mounts for emergency labour interventions.
+- `emergent_asml_defiance_negotiations` -- first noted turn 1, listed in 10 turn(s) so far: Ongoing EU-backed Dutch efforts to secure exemptions for non-EUV ASML tools from U.S. export controls. Talks remain stalled, with Washington viewing any carve-out as a precedent it cannot afford.
+- `emergent_cyber_insurance_collapse` -- first noted turn 10, listed in 2 turn(s) so far: Following the repeated cyber incidents and the exposure of critical infrastructure vulnerabilities, major insurers withdraw from the cyber risk market across several member states, citing unmodelable AI-driven attack velocity. Premiums spike where coverage remains, and essential services face delays in securing underwriting for digital operations.
+- US_POSTURE: CONSOLIDATION
+- PORTFOLIO CHARGE: Emergency Social Transition Compact −3, Data Soil Expansion −3, Sovereign AI Core −3, priority −1 = −10
+- PROPOSAL BONUS: Sovereign AI Core (cat 4, large) +3 — eu_frontier_access_denied and opaque_reasoning landed this turn, directly justifying sovereign compute and talent control
+- LEGITIMACY LENDS: none — capital (14.0) above sentiment (22.0) → no transfer
+- SOVEREIGNTY: 13.0 last turn, eu_frontier_access_denied t10 −2, capability rose 1.5 −1 = 10.0

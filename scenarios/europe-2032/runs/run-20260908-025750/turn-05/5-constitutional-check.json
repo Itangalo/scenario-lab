@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Constitutional Constraint 9 violated: `eu_political_capital` drops from 24.0 to 10.0, a change of 14.0 points, which is within the 25-point limit. However, the PORTFOLIO CHARGE in the notepad assigns a total of −13 from ongoing initiatives and −1 for priority, summing to −14. This implies the drop in political capital is entirely driven by portfolio charge. But metric rule 7 (modelling choice) limits sovereignty’s contribution to political capital to at most +3 per turn — and by symmetry, no single term should dominate or imply an unbounded effect. The narrative provides no additional justification (e.g., legitimacy loss, event shock) for such a large drop beyond the portfolio charge, which itself aggregates multiple initiatives. A portfolio charge of −13 leading directly to a −14 drop in political capital violates the spirit of constraint 7 by allowing indirect dominance of one metric over another through unmoderated summation, especially without narrative grounding in a crisis or event that would justify such a collapse.\n- Constitutional Constraint 8 violated: The narrative states \"The administration has not yet taken office, but the signal is clear: autonomy cannot be bought.\" This telegraphs the upcoming US posture change by asserting its policy implications before the posture is officially declared in Turn 6. While the election outcome may be known, the US posture must remain formally pending until Turn 6, and the narrative must not treat its consequences as already binding. Asserting that \"dependence is no longer a risk—it is policy in Washington\" implies a level of certainty and effect that violates the prohibition on telegraphing future events."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

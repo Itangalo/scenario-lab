@@ -1,0 +1,8 @@
+- `emergent_labour_displacement_wave` -- first noted turn 8, listed in 7 turn(s) so far: Mid-level professional roles in legal, technical, and administrative sectors face accelerating displacement. Retraining systems are overwhelmed, and protests grow.
+- `emergent_ai_research_centrifuge` -- first noted turn 6, listed in 7 turn(s) so far: Top researchers continue to relocate to EU-affiliated labs, drawn by sovereign compute access and political stability, despite funding constraints.
+- `emergent_ai_refugee_wave` -- first noted turn 11, listed in 4 turn(s) so far: Top AI researchers and engineers from non-aligned and adversarial states continue seeking relocation to EU-affiliated institutions, citing political instability, loss of research freedom, and fears of military conscription into state AI programmes. The influx strains onboarding systems but delivers a concentrated boost to sovereign capability pipelines.
+- US_POSTURE: CONSOLIDATION
+- PORTFOLIO CHARGE: Secure Sovereign Runtime Control −3, priority −1 = −4
+- PROPOSAL BONUS: none — measure is large and urgent, but does not directly answer a specific recent incident with measurable impact
+- LEGITIMACY LENDS: none — capital (1.0) below sentiment (13.0)
+- SOVEREIGNTY: 11.0 last turn, no capacity event, capability rose 4.0 ≥2 −1 = 10.0

@@ -1,0 +1,13 @@
+### The Last Nervous System
+
+Global AI capability edges upward to 69.0, driven by relentless scaling in closed frontier labs. The absence of a coordinated safety regime allows incremental advances to accumulate, though the narrative does not imply their trajectory is irreversible or unchallengeable. Open-weight models remain at 67.5, with no significant leap this turn. While distributed research collectives continue to refine existing techniques, the lack of domestic EU compute expansion and restricted access under the US consolidation posture prevent meaningful gains. The gap to frontier closed models remains narrow but stable—sufficient for high-risk inference on consumer hardware, yet not expanding.
+
+The EU completes integration of the Distributed Cognitive Resilience Backbone (DCRB) across its pilot nodes in France, Finland, and the Netherlands. Operating under emergency powers, the Crisis Cognition Cell in Luxembourg now runs autonomous anomaly detection across energy, transport, and electoral systems, bypassing national authorities where necessary. A disinformation surge during the Brittany elections is flagged and internally validated, but without cross-Union corroboration—Germany remains silent, Poland and Hungary dismiss the findings—the EU cannot act collectively.
+
+Despite the technical milestone, no major measure is completed this turn. The DCRB remains an ongoing category 6 initiative, still absorbing political capital at its standard rate. Its effects are partial and localized, with full operational integration delayed by legal challenges and member-state non-cooperation. The portfolio charge holds at −4 (DCRB −3, priority −1), and with no new legitimacy gains or external boosts, eu_political_capital remains at 0.0.
+
+### Silent Nodes, Shrinking Leverage
+
+EU AI sovereignty continues to erode, registering a further −1 decay due to rising global capability and persistent structural dependence. With no domestic compute build and frontier access constrained under the US consolidation posture, no event secures or removes access this turn. The metric declines to 0.0, reflecting the cumulative toll of inaction and fragmentation.
+
+Public sentiment holds at 15.0, reflecting sustained public skepticism. No new adoption measures are introduced, and no visible public benefit from AI systems emerges. The atmosphere remains tense, with concerns about institutional effectiveness circulating in media and expert commentary—framed as open questions rather than foregone conclusions.

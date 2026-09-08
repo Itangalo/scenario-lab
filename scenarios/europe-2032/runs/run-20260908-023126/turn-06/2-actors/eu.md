@@ -1,0 +1,30 @@
+## Statement changes  
+*No statement changes.*
+
+## Portfolio  
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``  
+``Cyber Shield for Critical Infrastructure (category 6, costs 3 per turn, started turn 2, finishes on turn 4): A binding directive requiring real-time intrusion detection and automated response systems across EU energy, water, and transport operators, with mandatory cross-border incident sharing``  
+``Emergency Sovereign AI Access Programme (category 4, costs 3 per turn, started turn 3, finishes on turn 5): Establish an immediate fallback capability using open-weight models at 42.0+ to restore critical public services cut off from foreign frontier models, with emergency compute allocation and rapid fine-tuning hubs in three member states`` — **finished**  
+``Strengthened Open-Weight Evaluation and Deployment Protocol (category 1, costs 2 per turn, started turn 3, finishes on turn 5): Establish mandatory pre-deployment evaluation and runtime monitoring for all open-weight models above 42.0 used in critical public functions, to prevent misuse and ensure baseline control in sovereign systems`` — **finished**  
+``Secure the Open Frontier: Sovereign Runtime Assurance for Open-Weight Models (category 6, costs 3 per turn, started turn 5, finishes on turn 6): We mandate sovereign, tamper-proof execution environments for all open-weight models above 45.0 used in EU critical infrastructure, combining hardware-enforced isolation, real-time anomaly detection, and EU-controlled orchestration to prevent misuse while preserving access`` — **finishes this turn**
+
+## New measure  
+**Sovereign AI Talent and Compute Anchoring Initiative**  
+We launch a binding programme to secure 10,000 frontier AI engineers and 50 exaflops of sovereign training capacity under EU legal and physical control by 2031, with mandatory siting, workforce guarantees, and supply-chain verification.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 9`  
+`Targeted effect:` eu_ai_sovereignty +12 (via anchored talent and compute), ai_safety +3 (through proximity to public oversight), public_sentiment +2 (via visible investment in domestic jobs and control)  
+`Applies to:` EU-based AI laboratories, EuroHPC nodes, and foreign hyperscalers operating at scale in the EU
+
+## Priority  
+Priority: Secure the Open Frontier: Sovereign Runtime Assurance for Open-Weight Models  
+Because openweight capability has reached 49.5 and is now actively used in forgery and intrusion campaigns, we must close the execution gap this turn—our own safety research depends on open models, but they cannot run loose in critical systems, and this measure is the last chance to impose runtime control before the capability becomes uncontainable.
+
+## In practice  
+We are finalising the **Secure the Open Frontier** directive under Article 114 TFEU, with enforcement delegated to national digital regulators and technical implementation led by EuroHPC, ETSI, and Fraunhofer. The runtime assurance stack—hardware-enforced enclaves, sovereign monitoring agents, and EU-controlled orchestration—is being rolled out across the Lyon, Warsaw, and Milan nodes this quarter. We are mandating that all open-weight models above 45.0 used in energy, health, procurement, and transport must run in these environments by July 1st, with a six-month grace period for legacy integrations. To overcome resistance from member states reliant on foreign-hosted models, we are offering access to the Emergency Programme’s fine-tuning pipelines and partial co-funding for migration—paid from the Digital Europe Programme’s resilience envelope. The European AI Office is conducting compliance audits from Q3, with non-compliant models barred from public contracts.
+
+The **InvestAI Gigafactories** remain on track, though grid strain in southern and eastern Europe persists. Our provisional agreement with ENTSO-E now includes black-start resilience commitments tied to AI site allocations, and we are fast-tracking grid upgrades in Bulgaria and Romania using cohesion funds repurposed under the Crisis Regulation. We are also negotiating with ASML and IMEC to co-locate advanced packaging facilities near two Gigafactory sites, aiming to shorten the supply chain for critical components. Meanwhile, the completion of the **Emergency Sovereign AI Access Programme** and the **Strengthened Open-Weight Evaluation Protocol** marks a turning point: we now have fallback compute, secured weights, and baseline monitoring in place. ENISA has certified the Lyon node as fully operational, and the Joint Research Centre has validated the first wave of human-in-the-loop triage models for emergency logistics and translation.
+
+Despite these gains, political capital remains tight at 32.0. The U.S. election outcome eased external pressure, but domestic unrest over job displacement in logistics and local government continues to erode public sentiment. Our new **Sovereign AI Talent and Compute Anchoring Initiative** responds to the bio_uplift_findings and eval_anomaly_reports precursors: we can no longer rely on access alone. We are preparing a legislative proposal under Article 114 for binding talent retention—requiring any lab or hyperscaler operating sovereign training runs in the EU to hire 60% of core AI staff from within the Union and to register training clusters above 10 exaflops with the European AI Office. We are also launching a €30bn talent package—fast-track visas, housing allowances, and research chairs—to attract 10,000 engineers by 2031. This will be funded through a temporary solidarity levy on AI-driven productivity gains in the top 100 listed firms, modelled on the financial transaction tax framework. Resistance is expected from both industry and some member states, but the precursors have shifted the burden of proof: we now act not because we know the danger, but because we know we cannot afford not to.

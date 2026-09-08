@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 59.0 to 72.5 (+13.5), which exceeds the maximum possible growth given that `ai_capability` rose by only 6.0 (from 80.0 to 86.0). According to Invariant 2, `openweight_capability` may never exceed `ai_capability`, and in practice must lag significantly behind due to its derivative nature. A jump of 13.5 points while frontier capability advanced 6 points implies open models outpaced frontier development, which is structurally impossible under the defined relationship.\n- Narrative violates Modelling Choice 8: The narrative states that \"recursive self-improvement accelerating across multiple sites\" has occurred, telegraphing an event gate (rsi_onset) by asserting a mechanism rather than observing outcomes. While the metric rise in `ai_capability` may be justified independently, naming the causal process (\"recursive self-improvement\") leaks forward knowledge that belongs only in event evaluations, not narrative exposition."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

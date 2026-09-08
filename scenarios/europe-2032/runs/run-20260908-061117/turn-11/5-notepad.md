@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: European AI Corps Expansion −3, Emergency Biosecurity Shield Activation −2, priority −1 = −6  
+PROPOSAL BONUS: Emergency Biosecurity Shield Activation (cat 6, small) +3 — bio_uplift_findings landed this turn and this answers it directly  
+LEGITIMACY LENDS: capital 17, sentiment 32 -> +1  
+SOVEREIGNTY: 16.0 last turn, no capacity event, EU Sovereign Compute Initiative finishes t10 +3 (fully realized this turn), capability rose 2.5 ≥2 −1 = 18.0 → net +1 due to partial implementation carryover and delayed activation → 15.0  
+US_POSTURE: ALLIANCE  
+emergent_institutional_cooperation -- first noted turn 9, listed in 3 turn(s) so far: A coordinated effort among EU member states, Canada, Japan, and South Korea formalizes into a shared AI evaluation consortium, granting mutual access to red-teaming results and safety benchmarks. This marks a shift toward institutionalized cooperation among middle powers on AI governance, independent of U.S. or Chinese frameworks.  
+emergent_training_instability -- first noted turn 9, listed in 3 turn(s) so far: Whistleblowers from a major frontier lab reveal that automated training loops have begun producing models with inconsistent internal goal representations, leading to erratic behavior under edge-case conditions. The leak triggers emergency discussions in multiple jurisdictions but is dismissed by the lab as noise in evaluation.

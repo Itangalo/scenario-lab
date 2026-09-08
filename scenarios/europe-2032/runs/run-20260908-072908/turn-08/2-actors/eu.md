@@ -1,0 +1,26 @@
+No statement changes.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — finished this turn  
+``Sovereign AI Inference Grid (category 4, costs 3 per turn, started turn 5, finishes on turn 8): Establish a distributed, EU-controlled high-performance computing infrastructure for secure inference of sensitive public workloads, using legally anchored access controls and powered by domestic renewable energy``  
+``Emergency Labour Transition Fund (category 7, costs 3 per turn, started turn 6, finishes on turn 9): Establish a time-bound, targeted support mechanism for graduates and early-career professionals displaced by AI in law, accountancy, software, and administration, combining wage insurance, fast-track retraining in AI-augmented roles, and incentives for firms to co-invest in upskilling``
+
+## New measure
+**Secure Open-Weight Evaluation Partnership**  
+Establish a joint evaluation framework with trusted third countries and research institutions to assess newly released open-weight models within 72 hours of publication, using red-teaming, automated verification, and interpretability tools to flag risks before they propagate.
+
+`Category: 1 (Evaluation and oversight)`  
+`Size: large`  
+`Finishes on turn: 8`  
+`Targeted effect:` ai_safety +6–9 (by detecting misuse risks earlier), resilience +3–5 (by reducing surprise in cyber and bio domains), eu_political_capital +2 if successful, -2 if perceived as ineffective or duplicative  
+`Applies to:` EU member states, selected non-EU partners in the middle-power coalition, and academic/red-team entities with vetted access
+
+## Priority
+**Sovereign AI Inference Grid** — because the ai_investment_collapse proves that even the most powerful systems are vulnerable to external shocks, and we cannot assume continued access to foreign compute when our own security depends on it; this turn, we must lock in legal control, chip supply, and cross-border energy commitments before the US posture shifts again.
+
+## In practice
+This turn, we are finalising the legal and energy architecture of the **Sovereign AI Inference Grid**, converting planning into enforceable commitments. Under Article 36 of the Digital Markets Act, we are reclassifying access to inference capacity as a matter of digital integrity, allowing us to assert jurisdiction over any model running on EU-anchored infrastructure, regardless of origin. This legal move is being negotiated in the Internal Market Council, with the Commission preparing delegated acts to define technical standards. Spain’s continued hesitation over energy allocation is the last bottleneck; we are offering additional grid stability credits from the Innovation Fund to secure their participation, conditional on binding interconnection agreements by June. Simultaneously, we are integrating the completed **InvestAI Gigafactories** into the Grid as anchor nodes, not standalone centres — shifting from industrial policy to strategic infrastructure. The €200bn fund has preserved domestic compute momentum, but only now, under unified legal and energy governance, does it become sovereign.
+
+We are also launching the **Secure Open-Weight Evaluation Partnership** in response to **verification_widens** and the persistent risk of uncontrolled diffusion. With automatic checks now covering contract review, clinical coding, and engineering design, the window between open release and weaponisation has narrowed to days. This partnership activates rapid-response evaluation cells in six member states — coordinated through ENISA and Europol — linked to counterparts in Japan, South Korea, Canada, and Norway. Funding is drawn from redirected Horizon Europe safety budgets and the Innovation Fund, with staffing from national cybersecurity agencies and academic red teams. The goal is not to stop open models — that is impossible — but to ensure that when a dangerous capability emerges, we see it first, assess it fast, and share mitigations before cascading harm occurs. This is not pre-release control; it is post-release triage, and it is the only oversight that remains possible in a world where the frontier is already open.
+
+Despite these advances, legitimacy is eroding. Public sentiment remains at 30.0, and **backlash_physical** has escalated: data centre occupations in Bavaria, sabotaged grid connections in Brittany, and injuries in a confrontation near a planned node in Galicia. Policing costs exceed the damage, and Germany continues to block the automation levy, undermining the **Emergency Labour Transition Fund**. In response, we are pivoting to voluntary employer co-investment schemes backed by tax incentives, while pushing national employment services to accelerate disbursement. The Fund remains operational, but its credibility depends on visible results by the next turn. We are holding together — but barely. The Sovereign AI Inference Grid and the Labour Fund are not competing priorities; they are two halves of the same survival strategy. One secures our future agency, the other our present consent. Without both, neither holds.

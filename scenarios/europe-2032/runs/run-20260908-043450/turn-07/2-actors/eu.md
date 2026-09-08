@@ -1,0 +1,28 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Integrated sovereign defence and real-time resilience, with full linkage between evaluation, incident response, and public protection — **but only if the Union can act on its own infrastructure and data without external veto**  
+  - Grounds: The supply_chain_coercion event has proven that sovereignty is not merely about building systems, but about controlling the means to sustain them. The Netherlands, host to ASML, could not resist U.S. jurisdictional pressure, exposing the EU’s strategic passivity even at its one potential chokepoint. The Integrated Sovereign Defence Protocol cannot rely on foreign-controlled supply chains for the compute it protects. This turn, we anchor sovereignty not just in software integration but in material control: if we cannot defend our own fabs, we cannot defend anything. The commitment evolves to reflect that integration fails when the foundation is foreign-held.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will now act only where integration across evaluation, enforcement, infrastructure, *and supply chain autonomy* can be achieved, because external coercion has shown that even the most integrated system is brittle if its hardware depends on someone else’s permission.  
+  - Grounds: The supply_chain_coercion event this turn has changed the calculus: the U.S. has weaponised jurisdiction over dual-use technology not just at the frontier, but deep into mature-node supply chains. This is not a temporary restriction but a precedent. The EU’s defence systems, however advanced, depend on chips whose production chain remains vulnerable. Acting without securing the base layer is no longer just risky — it is performative. We must now tie our AI sovereignty to industrial sovereignty, or lose both.
+
+## Portfolio  
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``  
+``Automated Threat Enrichment Layer (category 6, costs 3 per turn, started turn 6, finishes on turn 6): Deploy a unified software stack across ENISA, national CERTs, and Tier 1 infrastructure operators that ingests AI incident data and model evaluation outputs to generate real-time defensive signatures and automated alerts`` — **finished**  
+
+## New measure  
+**Sovereign Semiconductor Assurance Programme**  
+Launch an emergency EU-wide effort to secure, on EU legal soil, the production and servicing of lithography equipment for mature-node chips essential to AI infrastructure, energy, and defence systems.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 9`  
+`Targeted effect:` Increase eu_ai_sovereignty from 14.0 to 28.0 by establishing EU-controlled maintenance, refurbishment, and limited production of critical lithography subsystems within 18 months, reducing dependence on U.S.-jurisdiction-controlled supply chains.  
+`Applies to:` ASML, European semiconductor equipment suppliers, national governments hosting fabs, and EU defence and energy infrastructure operators.
+
+## Priority  
+**Sovereign Semiconductor Assurance Programme** — because the supply_chain_coercion event has revealed that our sovereign defence systems are built on sand: we cannot protect AI infrastructure if the machines that make the chips powering it can be disabled by a foreign decree, and this turn is the last chance to act before the next generation of EU data centres comes online under foreign-controlled conditions.
+
+## In practice  
+This turn, we are shifting from defending AI to defending the foundation it runs on. The Automated Threat Enrichment Layer has reached its finishing turn and is now operational in France, Germany, and the Benelux — a live system that closes the loop between threat detection and defensive update in under four hours. But its credibility is undermined by the fact that the very data centres it protects rely on chips made with equipment subject to U.S. jurisdiction. When Washington forced the Netherlands to cut ASML’s servicing exports, it didn’t just hurt China — it exposed the EU’s own vulnerability. We cannot claim sovereignty over AI if we do not control the means to maintain the hardware that runs it.
+
+We are therefore launching the Sovereign Semiconductor Assurance Programme under Article 122 TFEU, treating mature-node lithography as critical infrastructure. The European Commission, in coordination with Germany, France, and the Netherlands, will establish a legal enclave under EU jurisdiction to host a sovereign maintenance and subsystem production facility for ASML’s older but still vital Twinscan systems. Funding of €18bn will be redirected from the InvestAI Gigafactories programme — delaying one site — to equip this enclave with the technical capacity to keep EU fabs running without relying on U.S.-controlled software updates or spare parts. We are offering ASML a binding guarantee of procurement and liability protection in exchange for transferring technical know-how to EU-controlled engineers. The Council will convene an emergency session in the Competitiveness formation to adopt the legal basis, and we are prepared to invoke the Anti-Coercion Instrument if external pressure obstructs implementation. This is not protectionism — it is survival. If we cannot defend our own supply chains, no defence layer will ever hold.

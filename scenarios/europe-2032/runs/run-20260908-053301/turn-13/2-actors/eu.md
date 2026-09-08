@@ -1,0 +1,30 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Operational resilience and material sovereignty for European AI systems — ensuring the EU can detect, contain, and recover from AI-enabled incidents without reliance on foreign tools, while building independent capacity to certify and control high-performance systems at scale  
+- Grounds: The completion of the Emergency Resilience Surge and the European AI Command Interface has delivered foundational visibility and partial hardening, but has not closed the gap in sovereign technical capacity. The safety_breakthrough offers a rare leverage point, but only if embedded through EU-owned infrastructure and institutions. Our commitment must now sharpen: resilience is not just preparedness, but the ability to act independently when systems fail; sovereignty is not just access, but control over the tools that define safety. This reframing focuses the second half of the commitment period on building operational, not just procedural, independence.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong as the price of not being late — but we will not confuse motion with progress. When a breakthrough lands, we seize it; when a measure finishes, we assess what it actually delivered; and when capital runs thin, we prioritise depth over breadth, choosing leverage over visibility.  
+- Grounds: With eu_political_capital at 11.0, we are below the threshold for sustained multi-front action. The safety_breakthrough demands investment, but so does the erosion of public trust and the steady rise of openweight_capability. Our commitment must now include disciplined focus: we act decisively where we can change the game, not where we merely look busy. This turn, that is the Safety Stack — not because it is safe, but because it is narrow, high-leverage, and time-bound.
+
+## Portfolio  
+- `European AI Command Interface (category 5, costs 3 per turn, started turn 7, finishes on turn 10): A unified operational layer for EU institutions to monitor, task, and audit AI systems running on sovereign infrastructure, ensuring political oversight is not outsourced to algorithms or foreign providers` — *finished on turn 10, no longer in flight.*  
+- `Emergency Resilience Surge for Critical Public Services (category 6, costs 3 per turn, started turn 11, finishes on turn 13): Accelerate cyber hardening, incident response capacity, and fallback procedures for essential public functions in health, justice, and energy, with mandatory breach simulation exercises and AI-disruption contingency plans` — *finishes this turn.*
+
+## New measure  
+**Sovereign AI Safety Stack Initiative**  
+Launch a coordinated EU-wide programme to operationalise the safety_breakthrough by building domestic tools for real-time model behaviour prediction, certification, and intrusion detection based on the new interpretability standard.
+
+`Category: 5 (Public technical capacity and research)`  
+`Size: large`  
+`Finishes on turn: 15`  
+`Targeted effect:` Increase `ai_safety` (+8–12) by embedding verifiable control into deployed systems; boost `eu_ai_sovereignty` (+3–5) by creating EU-owned detection and certification capacity; indirect lift to `public_sentiment` (+2–4) if public sees EU as regaining technical initiative.  
+`Applies to:` EU agencies, national cybersecurity authorities, research labs, and certified private providers of critical AI services.
+
+## Priority  
+**Sovereign AI Safety Stack Initiative** — because the safety_breakthrough is a fleeting opportunity to shift from reactive oversight to proactive control, and with political capital collapsing, we must concentrate our dwindling capacity on the one measure that could restore both technical credibility and sovereign autonomy before the window closes.
+
+## In practice  
+We are launching the Sovereign AI Safety Stack Initiative under the legal base of the Digital Europe Programme and Horizon Europe, with €3.8 billion redirected from the final tranche of the Emergency Resilience Surge — now that its core hardening and exercise components are complete. The European High-Performance Computing Joint Undertaking will lead implementation, working with ENISA to establish a new certification authority for model behaviour, and with the European AI Office to integrate intrusion detection modules into national critical infrastructure. The first pilots will deploy in the French and German health AI networks, using the interpretability tools to monitor for anomalous decision patterns in real time — a capability that, if proven, will be extended to energy grid operators and central banks by turn 16.
+
+The challenge is not just technical, but political: with eu_political_capital at 11.0, we cannot afford delays or fragmentation. We are convening an emergency COREPER session to fast-track a delegated act under the AI Act, recognising the new interpretability standard as a compliance pathway for high-risk systems. This will create immediate demand for EU-certified tools, locking in adoption. We are offering member states a 70% co-financing rate for early integration, funded from the Recovery and Resilience Facility’s unused margins, in exchange for binding commitments to phase out foreign-controlled detection systems in critical sectors by turn 18.
+
+Public sentiment remains fragile at 34.0, and we cannot risk being seen as technocratic or opaque. So all non-sensitive components of the Safety Stack — including the core interpretability libraries and certification dashboards — will be open-source, hosted on the EU’s Digital Infrastructure Commons. A public-facing portal will show which systems have passed EU verification, with plain-language summaries of their risk profiles. This is not just about control; it is about legitimacy. We are not building walls — we are building trust, one verifiable line of code at a time.

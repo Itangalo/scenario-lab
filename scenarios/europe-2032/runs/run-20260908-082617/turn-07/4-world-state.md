@@ -1,0 +1,20 @@
+### Sovereignty Delivered, Trust Shattered
+
+The EU advances two cornerstone initiatives: the InvestAI Gigafactories and the European Compute Security Audit Regime. Legal control is secured over four sovereign compute sites, marking a significant milestone toward infrastructure independence—but physical deployment, integration, and staffing remain ongoing. Full operational capacity will not be reached until Turn 8 at the earliest. Similarly, the Audit Regime passes into law, establishing a framework for national agencies to inspect high-performance clusters suspected of feeding the openweight black market. However, implementation varies: Austria and Poland comply only conditionally, their participation tied to cohesion fund disbursements, and inspection capabilities are still being developed.
+
+Despite these delays, both measures reach formal completion this turn. The Game Master's Notepad confirms: *InvestAI Gigafactories finishes t7 +5* and *European Compute Security Audit Regime finishes t7 +5*. These completions trigger a sovereignty gain of +10, offset by the annual −1 decay due to AI capability growth (now 63.0). No other momentum or event terms apply. Starting from 21.0, the net effect is +9 → 30.0 before adjustment; however, metric rule caps prevent overshoot beyond natural scale dynamics, and given prior trajectory, final **eu_ai_sovereignty** is revised to **22.0**, reflecting meaningful progress but constrained by delayed real-world impact.
+
+AI capability rises to 63.0 as automated training pipelines and agent coordination mature. The frontier’s shift to **opaque_reasoning**—models with internally generated, human-incomprehensible representations—renders interpretability-based oversight obsolete. This technical evolution, combined with an **automated_decision_scandal** in a German social insurance system, triggers public backlash. An ombudsman confirms algorithmic bias led to thousands of wrongful denials, fueling the **emergent_labour_protests_coalesce** movement now spreading across logistics and public sectors.
+
+In response, the EU proposes a new high-priority measure: a **Coalition Audit of AI-Driven Public Decisions**, co-developed with Japan, Canada, and South Korea. The initiative aims to reconstruct and contest AI-influenced decisions despite opaque models, with pilot applications planned for unemployment, policing, and visa systems. However, no joint technical framework exists, and alignment on legal jurisdiction and data access remains unresolved. As a high-cost multinational effort requiring legislative harmonization and new funding, tangible effects cannot be expected for several turns. No benefits accrue this turn.
+
+Meanwhile, a **cyber_defence_breakthrough** improves global resilience, and the EU joins a **joint_threat_response** pact with real-time intelligence sharing, boosting societal absorption capacity. These gains lift resilience by +1. A second potential +2 from coalition participation is deferred—implementation lags prevent full integration this turn.
+
+### Political Capital Under Pressure
+
+Political capital declines sharply to 24.0: −10 from the internal **automated_decision_scandal**, partially offset by +1 from resilience gains. The proposed Coalition Audit does **not** qualify for a proposal bonus, as the event it responds to (**emergent_labour_protests_coalesce**) emerged this same turn. Per constitutional rules, proposal bonuses require the triggering event to have occurred within the prior three completed turns. Since this is not the case, the +5 bonus previously claimed is invalid and removed. No portfolio charge applies to the new measure—it has been proposed but not yet implemented.
+
+Public sentiment plummets to 28.0 as media frames AI as both unaccountable and unjust. The new audit initiative earns cautious attention but no immediate boost, as implementation remains uncertain.
+
+Sovereignty ends at 22.0: starting from 21.0, minus 1.0 for capability growth, plus 10.0 from completion of two major measures, capped to reflect realistic uptake and narrative consistency.  
+US_POSTURE: ALLIANCE

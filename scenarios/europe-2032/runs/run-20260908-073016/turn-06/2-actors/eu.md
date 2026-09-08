@@ -1,0 +1,25 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`
+- `AI Safety Certification Lab (category 5, costs 2 per turn, started turn 2, finishes on turn 5): Establish a publicly funded, EU-operated technical capability to conduct pre-deployment evaluations and ongoing monitoring of high-capability AI systems, with access to model weights under strict legal safeguards.` — **Finished.**
+- `European AI Cyber Assurance Pact (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Launch a binding cross-border framework for real-time AI-powered cyber threat sharing, joint red-teaming, and mutual incident response among critical infrastructure operators, backed by EU-level liability shielding and resource pooling.` — **Finished.**
+- `Joint Threat Response Integration (category 6, costs 2 per turn, started turn 4, finishes on turn 5): Integrate EU member states into the newly formed joint threat response coalition through binding operational protocols, shared intelligence pipelines, and mutual access to real-time telemetry and response reserves.` — **Finished.**
+- `Sovereign Access Framework (category 4, costs 3 per turn, started turn 5, finishes on turn 7): Establish a legally binding mechanism that conditions access to EU data centre zones and grid priority on foreign AI providers’ compliance with EU safety, transparency, and incident reporting standards — turning infrastructure leverage into operational sovereignty.`
+
+## New measure
+**Labour Transition Acceleration Fund (category 7, costs 3 per turn, started turn 6, finishes on turn 8): Launch a €45bn fund to deliver wage insurance, retraining pathways, and employer transition incentives for workers displaced by AI in cognitive professions, with disbursement tied to verified automation and rapid re-entry into the labour market.**  
+`Category: 7 (Labour and social protection)`  
+`Size: large`  
+`Finishes on turn: 8`  
+`Targeted effect:` public_sentiment +8 (by addressing the "lost cohort" crisis directly and visibly), resilience +3 (by reducing social shock from structural displacement), eu_political_capital +2 if delivery is rapid and credible  
+`Applies to:` EU member states, national employment agencies, universities, professional associations, and firms automating entry-level roles
+
+## Priority
+**Labour Transition Acceleration Fund** — because the US shift has locked us out of near-term sovereignty gains, the Gigafactories remain delayed, and public sentiment is collapsing under the weight of visible job losses; this turn, we must stabilise the social foundation of our legitimacy or lose the capital to act at all.
+
+## In practice
+We are treating the collapse in public sentiment not as noise but as a strategic warning: our credibility to govern AI depends not only on controlling its risks but on managing its consequences. The adoption_success event — public-sector AI delivering real improvements in waiting times, decision speed, and teaching outcomes — proves we can generate benefit, but it is being drowned out by the lived reality of graduates with no path into their professions. We are now pivoting to ensure that the social contract evolves with the technology. The Labour Transition Acceleration Fund will be proposed under the European Social Fund Plus legal base, with co-decision in the Employment Council and European Parliament’s EMPL committee. We are offering member states 80% co-financing for retraining programmes that lead to AI-augmented roles, and introducing a new “automation adjustment” clause that requires firms receiving public procurement contracts to contribute to transition funds if they displace more than 20% of junior roles in a year.
+
+At the same time, we are doubling down on the Sovereign Access Framework, using the credibility of the now-finished AI Safety Certification Lab to demand model access from foreign providers as a condition of grid priority. The Lab’s templates are being integrated into the Framework’s compliance checks, and we are preparing legal opinions on whether refusal to share weights could constitute an abuse of dominance under the Digital Markets Act. Behind closed doors, we are offering one hyperscaler fast-track permitting for a new Irish data centre in exchange for real-time incident reporting and third-party audits — a test case for whether leverage can substitute for capacity. But we know that without public buy-in, even a successful deal will be framed as capitulation. That is why this turn, we act on the social front: not because it is easier, but because it is the only way to keep acting at all.

@@ -1,0 +1,272 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.28,
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1987501877129615,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.19532623749509015,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.01481338863818793,
+    "triggered": true
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7706211249406977,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.690498334882441,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.17666666666666667,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9533839550145791,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4502167065898687,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.12,
+    "probability_samples": [
+      0.1,
+      0.16,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7900635239849482,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6924221517112759,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7844930974262039,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1425601088781736,
+    "triggered": true
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.17333333333333334,
+    "probability_samples": [
+      0.19,
+      0.14,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5254248536711045,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.12666666666666668,
+    "probability_samples": [
+      0.16,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1545474319937028,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7588948483450857,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated international effort emerges among non-aligned middle powers to establish a mutual protection framework for AI infrastructure and access, driven by shared vulnerability to great power pressure. It focuses on information sharing, joint legal responses to extraterritorial coercion, and emergency compute pooling. Initial members include South Korea, Singapore, and Nordic states, with EU observers invited.",
+    "emergent": true,
+    "id": "emergent_mutual_infra_protect",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6367564280951306,
+    "triggered": false
+  },
+  {
+    "description": "Following repeated failures in explainability and accountability, a transnational class-action lawsuit is filed in the European Court of Justice against the operators of several national AI decision systems used in public services. The suit alleges systemic violations of due process and transparency rights, demanding suspension of unexplainable systems. Legal precedent is uncertain, but momentum builds quickly.",
+    "emergent": true,
+    "id": "emergent_class_action_suit",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.1614125424285412,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8956051297779922,
+    "triggered": false
+  },
+  {
+    "id": "emergent_cyberlab_alliance",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "A coalition of EU cybersecurity agencies and academic labs announces a joint initiative to develop autonomous defensive AI systems using EU-controlled compute and open-weight models. The project aims to bypass reliance on US providers and create a shared shield against growing cyber threats, drawing on the emergent_lab_cooperation network. Initial funding is pledged by France and Germany, though integration with NATO remains uncertain.",
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_medical_access_revolt",
+    "probability": 0.09999999999999999,
+    "emergent": true,
+    "description": "Healthcare workers in three southern EU member states refuse to implement AI-driven diagnostic tools developed by a US firm, citing lack of explainability and prior incidents of misdiagnosis. The coordinated action, framed as a professional ethics stance, escalates into a broader revolt against foreign-controlled medical AI, with demands for EU-sovereign systems. The movement gains support from medical associations and left-leaning parties, challenging the legitimacy of externally sourced AI in life-critical domains.",
+    "probability_samples": [
+      0.0,
+      0.3,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_supply_chain_alliance",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "In response to repeated US coercion over semiconductor exports, a quiet but coordinated push emerges among EU, Japanese, and South Korean industrial and research leaders to formalize joint stockpiling of critical lithography components and mutual servicing agreements for mature-node tools. This informal pact aims to bypass unilateral export decisions by pooling access and maintenance rights, leveraging shared upstream leverage. The initiative gains traction in technical circles but remains below political radar for now.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.25
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

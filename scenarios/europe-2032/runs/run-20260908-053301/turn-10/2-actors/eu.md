@@ -1,0 +1,28 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Enduring control over European AI systems — ensuring continuity of operation, auditability of decisions, and immunity from external coercion  
+- Grounds: The completion of the Sovereign Compute Access and Resilience Corridors marks the end of the infrastructure-building phase. What now fails are not links, but the integrity of control: opaque reasoning breaks oversight, supply_chain_coercion disables maintenance, and audit gaps allow silent degradation. The shift is categorical — from proving we can build, to proving we can hold. This revised commitment reflects that sovereignty is no longer about access, but about unbroken authority over systems in operation, even under pressure.
+
+## Portfolio
+- `Sovereign Compute Access and Resilience Corridors (category 4, costs 3 per turn, started turn 5, finishes on turn 8): A binding directive establishes minimum compute thresholds for essential public functions across energy, health, and emergency response, reserving priority runtime on EU-controlled infrastructure for these services during disruptions` — *finished this turn.*
+- `Open-Weight Accountability Framework (category 3, costs 3 per turn, started turn 6, finishes on turn 8): A new regulatory framework imposes strict liability on developers releasing models above 45.0 openweight_capability for downstream misuse when safeguards are absent, requiring impact assessments, misuse monitoring, and recall mechanisms for distributed weights`
+- `European AI Command Interface (category 5, costs 3 per turn, started turn 7, finishes on turn 10): A unified operational layer for EU institutions to monitor, task, and audit AI systems running on sovereign infrastructure, ensuring political oversight is not outsourced to algorithms or foreign providers`
+
+## New measure
+**Enforceable Legibility Standards for High-Capability AI in Public Use**  
+Mandate that all AI systems above 55.0 capability used in public functions or critical infrastructure must preserve human-legible reasoning traces at decision-critical junctures, using structured fallback interpretability methods when native chain-of-thought fails.
+
+`Category: 1 (Evaluation and oversight)`  
+`Size: large`  
+`Finishes on turn: 12`  
+`Targeted effect:` Increase `ai_safety` (+5–7) by restoring oversight capacity despite opaque internal representations; indirect boost to `resilience` (+2) via faster root-cause analysis during incidents.  
+`Applies to:` EU institutions, member state agencies, and operators of essential services under the NIS2 and Critical Entities Resilience Directive.
+
+## Priority
+**European AI Command Interface** — because the opaque_reasoning event proves that without enforced legibility and real-time auditability, even sovereign systems become black boxes we cannot direct, and this turn is the last chance to harden the interface before it goes live; failure now would make our control theoretical, not operational.
+
+## In practice
+We are finalizing the rollout of the **European AI Command Interface** in DG Health, Eurojust, and the Energy Union’s crisis coordination cell, where early deployment has exposed a critical flaw: the original logging mandates, while comprehensive, introduce latency that disrupts time-sensitive operations. In response, we have fast-tracked an R&D sprint under Horizon Europe’s AI Safety Cluster to develop sparse, anomaly-triggered logging protocols. These will default to minimal data capture but activate high-fidelity tracing when predefined thresholds — such as deviation from expected output distributions or unauthorised access attempts — are detected. A common schema, co-developed with ENISA and national CIOs, will be mandated by turn 10, with Italy and Spain participating in the design in exchange for phased implementation. Without this adaptation, the Command Interface risks becoming a surveillance dashboard that only works post-incident.
+
+Simultaneously, we are leveraging the momentum of the **emergent_open_provenance** event to strengthen accountability without overburdening developers. The open-source provenance framework, now adopted by major research labs and mid-tier firms, is being formalized through delegated acts under the AI Act and DSA. Systems that comply with its metadata tagging and lineage verification standards will be granted “presumed trustworthy” status in public procurement and liability assessments, creating a positive incentive pathway. The European AI Office is convening core developers under Article 33 to align technical specs with legal definitions of accountability, avoiding duplication while grounding innovation in enforceable standards. Funding comes from repurposed InvestAI budgets, preserving fiscal headroom.
+
+The new **Enforceable Legibility Standards** measure responds directly to the opaque_reasoning shock. With chain-of-thought logging now obsolete, we are mandating structured fallback interpretability — such as modular justification trees, counterfactual probing, and attention-attribution overlays — at decision-critical points in high-capability systems. This is not about full transparency, which may no longer be technically feasible, but about preserving human oversight at moments that matter. The standard will be developed in consultation with the AI Safety Board and implemented through conformity assessments under the AI Act. Non-compliant systems will be barred from public use, with enforcement via market surveillance authorities. This is not a technical fix, but a sovereignty imperative: if we cannot understand what our systems decide, we do not control them.

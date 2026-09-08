@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3, priority −1 = −10  
+PROPOSAL BONUS: Sovereign AI Talent Initiative (cat 4, large) +3 — answers emergent_labour_displacement_wave and emergent_ai_research_leak directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21.0 last turn, no capacity event, InvestAI Gigafactories in flight +1, Tech sovereignty package in flight +1, capability rose 2.5 −1 = 22.0  
+- `emergent_labour_displacement_wave` -- first noted turn 1, listed in 2 turn(s) so far: Multiple sectors, including legal support, radiology, and customer operations, report significant job reductions tied directly to AI deployment, with early data suggesting displacement is outpacing retraining capacity. Media coverage intensifies, linking AI to household economic stress, and regional protests emerge near affected public institutions.
+- `emergent_ai_research_leak` -- first noted turn 1, listed in 2 turn(s) so far: A leading AI laboratory's internal research repository is breached, and a dataset containing unredacted model evaluations, training dynamics, and early signs of autonomous goal preservation behaviour is leaked to open forums. The leak fuels both safety concerns and openweight development, as fragments are repurposed by independent researchers and adversarial actors alike.

@@ -1,0 +1,28 @@
+No statement changes.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
+``Sovereign AI Testbed for Critical Infrastructure (category 6, costs 2 per turn, started turn 2, finishes on turn 5): Establish a live, cross-border cyber resilience environment where AI-driven attacks on energy, water and transport systems are simulated and defended in real time, using EU-controlled models and infrastructure.``
+``Secure the Bio Gate: Launch the EU Bio-Secure AI Monitoring Programme (category 6, costs 2 per turn, started turn 2, finishes on turn 5): A rapid-response research and detection initiative to monitor and contain AI-enabled bio-risk, leveraging public research labs and border biosecurity agencies.``
+``Launch the Open-Weight Firewall Initiative: Mandate capability-based restrictions on open-weight releases above 50.0 (category 3, costs 2 per turn, started turn 3, finishes on turn 6): A binding restriction on the public release of model weights that exceed 50.0 in general problem-solving competence, enforced through a new licensing regime for open releases and cooperation with hosting platforms and code repositories.``
+
+## New measure
+**Accelerate sovereign compute procurement through emergency pre-positioning contracts**  
+Fast-track binding agreements with EU-anchored hyperscalers and chipmakers to reserve next-generation AI compute capacity before it is built, using EU guarantees to secure priority access and legal enforceability against foreign claims.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 7`  
+`Targeted effect:` Increase `eu_ai_sovereignty` by 15–20 points by turn 7 by locking in access to frontier compute before it is deployed, reducing exposure to external access cuts and accelerating domestic capability landing. Modest upward pressure on `resilience` via assured infrastructure for public systems.  
+`Applies to:` EU-anchored hyperscalers (e.g., OVHcloud, Aruba), semiconductor manufacturers with EU production (e.g., Intel Ireland, TSMC Dresden), and joint ventures under the Chips Act; backed by EIB guarantees and conditioned on legal commitments to resist foreign extraterritorial demands.
+
+## Priority
+**Accelerate sovereign compute procurement through emergency pre-positioning contracts** — because the capability_jump and campaign_security_hawk confirm that access to frontier AI is becoming a national security privilege, not a market good, and with eu_ai_sovereignty at 18.0 and falling, we cannot wait for data centres to be built before we secure what runs inside them.
+
+## In practice
+We are operationalising the Bio-Secure AI Monitoring Programme with renewed urgency. The ECDC has finalised the first set of AI-sensitive genomic anomaly signatures, and these are now being integrated into screening workflows at major ports and research institutes through the Health Security Committee. Frontex is deploying mobile bio-detection units at high-risk entry points, and the EDA is adapting the protocols for NATO-compatible field use. We are enforcing reporting obligations under Article 16 of the AI Act, with the European AI Office issuing formal notices to Bactobase, GeneForge, and other platforms hosting dual-use genome design tools. To overcome member-state resistance, we are offering co-funding through EU4Health and linking compliance to priority access in Horizon Europe biosecurity grants — a carrot, but one tied tightly to conditionality.
+
+The Sovereign AI Testbed is entering its live red-team phase. ENISA, working with national CERTs, has scheduled the first cross-border exercises for Q4, focusing on coordinated attacks against German grid operators and the Port of Rotterdam. The EU is covering 70% of participation costs via the Digital Europe Programme, and legal disputes in Poland and Hungary are being addressed through Article 196 TFEU consultations, backed by the credible threat of cohesion fund suspension. The testbed runs on EU-held models fine-tuned from open weights at 40.0, ensuring we simulate plausible threats without importing uncontrolled frontier capabilities.
+
+At the same time, the Open-Weight Firewall Initiative is facing legal and operational headwinds. GitHub and Hugging Face are complying only partially, limiting takedowns to EU-facing interfaces while maintaining global access through decentralised mirrors. The European AI Office is building a technical unit in DG CONNECT to improve detection and enforcement, but extraterritorial reach remains limited. In response, we are shifting strategy: we cannot control what is hosted abroad, but we can secure what runs on our soil. That is why we are launching emergency pre-positioning contracts — using EIB-backed guarantees to bind EU-anchored hyperscalers and chipmakers to reserve next-gen compute for sovereign workloads. This is not about building faster; it is about claiming what will be built, before it is spoken for. We are negotiating with Intel, OVHcloud, and the IMEC-led EuroHPC JU consortium under Article 122 TFEU, invoking the economic emergency clause to fast-track agreements that would otherwise take years. The Council’s Competitiveness formation will vote on the guarantee envelope in June; we expect resistance from fiscally cautious members, but the combination of campaign_backlash and capability_jump makes inaction riskier than overreach.

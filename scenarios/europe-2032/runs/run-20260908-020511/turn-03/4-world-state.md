@@ -1,0 +1,11 @@
+### Frontier Accelerates Amid Unexplained Anomalies  
+AI capability rises by +2.5 to 59.5, driven by longer-running agents and tighter self-improvement loops. However, leaked benchmark anomalies from a leading lab suggest unanticipated reasoning pathways—behaviour not trained but emergent—sparking quiet alarm. No safety upgrades land on deployed systems, and with capability advancing unchecked, ai_safety drops by −3. The gap between power and control widens.
+
+### Open Frontier Release Prompts Regulatory Push  
+A significant open-weight model release, estimated at capability 48.0, rapidly disseminates across private networks in the EU. Analysis suggests it was derived from frontier weights leaked months earlier, when the frontier stood near 57.0, allowing time for replication and fine-tuning. This release—while not matching current frontier levels—closes the gap meaningfully from the previous 45.0. In response, the EU invokes internal market powers to fast-track the Emergency Open-Weight Licensing and Recall Regime, mandating pre-approval and enforceable takedowns for models above 50.0. Hosting providers and code platforms are required to block unapproved uploads, though compliance mechanisms remain under development and full enforcement is not expected until next turn at earliest.
+
+### Backlash and Fragmentation Mount  
+The new measure faces fierce resistance. Digital rights advocates in Germany and Belgium denounce it as overreach, while open-source developers warn of a “chilling effect” on innovation. Several member states’ legal offices question the use of Article 114 TFEU, arguing the measure exceeds internal market justification. The Netherlands, still aggrieved over semiconductor controls, signals non-cooperation, compounding the earlier *member_state_defection*. With unity fraying, the EU’s access to coordinated AI capacity weakens further, triggering a −2 sovereignty penalty under rule 5.
+
+### Political Capital Erodes  
+The portfolio now carries four large measures, reflected in the notepad as a total charge of −10. The new initiative is included in this load. The Cyber Resilience Surge finishes, delivering a +4 delivery bonus. There is no proposal bonus. Net change in political capital is −6, reducing it from 36.0 to 30.0. Public sentiment drops to 37.0, hit by backlash and fears of digital authoritarianism.

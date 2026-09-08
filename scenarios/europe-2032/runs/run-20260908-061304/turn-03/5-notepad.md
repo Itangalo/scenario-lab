@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Resilience Surge −3, European AI Safety Observatory −3, Emergency Access & Continuity Framework −3, priority −1 = −16  
+PROPOSAL BONUS: Emergency Access & Continuity Framework (cat 6, large) +3 — eu_frontier_access_denied and ai_investment_collapse both landed this turn and this measure answers them directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21.0 last turn, eu_frontier_access_denied t3 −2, capability rose 0.5 −1 = 19.0  
+emergent_global_observatory_push -- first noted turn 1, listed in 3 turn(s) so far: A coalition of middle powers and academic institutions launches a formal proposal for an open, multilateral AI observatory to monitor capability trends and safety practices, arguing that unilateral control has failed to prevent distributed risk. The proposal gains early support from non-aligned states but faces resistance from both the US and China.  
+emergent_labour_displacement_wave -- first noted turn 1, listed in 3 turn(s) so far: Preliminary data from several EU member states shows a sharp rise in white-collar job displacement in legal, administrative, and technical writing roles, attributed to AI adoption. The trend is not yet a crisis, but trade unions and education ministries begin sounding alarms about retraining capacity.

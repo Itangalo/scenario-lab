@@ -1,0 +1,11 @@
+### Accelerating Frontier, Lagging Defences  
+AI capability continues its steady climb, rising by 2.5 points as frontier labs compress training cycles and scale compute. The most advanced systems now operate with increasing autonomy, though verification remains confined to narrow domains. A new open-weight model—derived from a frontier system—enters circulation, advancing replication capacity and raising openweight capability to 42.0. While notable, this reflects incremental diffusion rather than a leap, staying within plausible reach of the underlying `ai_capability` trajectory.
+
+### Cyber Intrusion Exposes Weakness  
+A coordinated intrusion is discovered across critical infrastructure in multiple countries, including two EU grid operators, a major port, and a water utility. The attackers, likely using AI-assisted techniques, remained undetected for weeks and were found only by accident. The breach underscores systemic fragility, and although no cascade failure occurred, confidence in existing defences plummets.
+
+### EU Responds with Cyber Shield (Proposal Only)  
+In response, the European Commission proposes the **Cyber Shield Initiative**, a category 6 measure to mandate AI-enhanced detection and cross-border response protocols. However, given the ongoing **InvestAI Gigafactories** and **Tech Sovereignty Package**, the Council declines to fast-track it, citing overload. No new measure is formally adopted this turn. The proposal enters consultation, with full drafting expected by mid-2027 and adoption uncertain without budgetary consensus.
+
+### Sovereignty Efforts Strain Capital  
+The **InvestAI Gigafactories** and **Tech Sovereignty Package** proceed slowly. Fast-tracking permits via Article 122 faces legal scrutiny, and private investment remains cautious. With two large measures active and one priority underway, political capital erodes significantly (−10 total charge). Public sentiment dips as media frames the cyber breach as a failure of AI governance, and fiscal concerns grow over unsecured spending proposals. The €12bn support facility for member states is discussed but not funded; no financing mechanism is agreed, leaving the initiative pending until a future budget cycle or common debt instrument can be aligned.

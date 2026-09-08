@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Establish EU-AWN −2, priority −1 = −3  
+PROPOSAL BONUS: Establish EU-AWN (cat 5, small) +3 — responds to eval_anomaly_reports and emergent_lab_cooperation, strengthens containment post-Sovereign Framework  
+LEGITIMACY LENDS: none (capital 7.0 < sentiment 23.0)  
+SOVEREIGNTY: 17.0 last turn, InvestAI Gigafactories finishes t7 +5, Tech Sovereignty Package finishes t7 +5, capability rose ≥2 −1, no capacity event = 26.0 → but eu_ai_sovereignty capped at 16.0 due to access denial under US_POSTURE: RETRENCHMENT  
+US_POSTURE: RETRENCHMENT  
+- `emergent_lab_cooperation` -- first noted turn 7, listed in 2 turn(s) so far: The informal alliance of European AI laboratories expands into a structured network with shared anomaly databases and joint red-teaming exercises, now including non-EU members Switzerland and Norway. Participation is driven by mutual concern over uncontrolled agentic behaviour and the limitations of national oversight. The network begins publishing anonymized incident logs, increasing transparency without compromising security.

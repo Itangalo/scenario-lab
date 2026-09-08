@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: SOVEREIGN-RIS −3, ESCM −3, EIS −3, priority −1 = −10  
+PROPOSAL BONUS: EIS (cat 5, large) +3 — loss_of_control_incident and bio_uplift_findings both landed this turn, and EIS is the only measure proposed to directly address observational and containment failure in the open frontier  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 19.0 last turn, no capacity event, capability rose 0.5 −1 = 18.0  
+US_POSTURE: CONSOLIDATION
+
+- `emergent_regulatory_fragmentation` -- first noted turn 13, listed in 1 turn(s) so far: National data protection authorities, under pressure from public backlash and distrust in central oversight, begin issuing divergent and increasingly restrictive interpretations of the AI Act, creating a patchwork of compliance rules across member states. This undermines the single market for AI services and forces firms to navigate a maze of local regulations, slowing deployment and increasing costs. The European Commission warns of 'de facto balkanisation' of AI governance.
+- `emergent_open_source_resilience_effort` -- first noted turn 13, listed in 1 turn(s) so far: In response to the loss-of-control incident and declining trust in corporate models, a coalition of European universities, non-profits, and public research labs launches a distributed initiative to build a verifiable, open-weight model stack with built-in transparency and safety constraints. Funded by national science grants and small EU contributions, it gains traction among developers seeking alternatives to opaque frontier systems, though it remains far below the capability frontier for now.

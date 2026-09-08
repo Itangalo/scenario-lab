@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 40.0 to 46.0 (a rise of 6.0), but `ai_capability` only increased by 2.0 (from 52.0 to 54.0). The invariant requires that `openweight_capability` never exceeds `ai_capability`. At the end of this turn, `openweight_capability` (46.0) is within 8.0 points of `ai_capability` (54.0), which may appear acceptable at first glance. However, the narrative states that \"open releases now trailing less closely\", implying a narrowing gap due to faster growth in open models — but the rules do not permit `openweight_capability` to grow faster than `ai_capability` unless justified by prior accumulation or a specific mechanism. A 6.0 jump in `openweight_capability` with only a 2.0 rise in `ai_capability` is implausible under normal diffusion dynamics and risks violating the spirit and likely the bounds of the accumulation rule, especially without explicit justification for accelerated catch-up (e.g., a release event like **openweight_surpass**). Without such a gate, this leap exceeds plausible diffusion and may constitute a violation of the non-regression and bounded-gap principles implied in Invariant 2.\n- Narrative Constraint 8 violated: The narrative states \"narrowing arguments that gains are confined to checkable fields\", which telegraphs a shift in expert consensus and implies resolution of a debate before its outcome is determined by event gates. This constitutes anticipatory framing about the direction of future belief change, which is not permitted under Constitutional Constraint 8 (\"The narrative must not telegraph\"). Tension or ambiguity is acceptable, but stating that arguments are \"narrowing\" implies a forecast of consensus formation, which belongs in event evaluation, not narrative."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

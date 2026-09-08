@@ -1,0 +1,11 @@
+### Capability Marches On
+Global AI capability advances by +3.0 this turn, reaching 73.0, as self-improving systems accelerate research and development cycles across pharmaceuticals, materials science, and autonomous engineering design. The frontier now routinely executes multi-day professional projects without human intervention, displacing junior roles at scale. No safety breakthrough occurs, and the gap between capability and control widens.
+
+### Open Proliferation Accelerates
+Openweight capability climbs to 60.0, reflecting the diffusion of agent-grade models onto consumer hardware. The EU’s containment initiative flags several high-risk models, but enforcement remains stalled. The German constitutional court agrees to hear the challenge to emergency powers under the AI Act, casting doubt on the legal foundation of forced takedowns. Developer resistance intensifies, with open letters accusing the EU of undermining open-source innovation.
+
+### Sovereignty Erodes Further
+Despite completing three major category 4 measures, no new EU-controlled compute comes online due to US export controls and hyperscaler noncompliance. With global capability rising by more than 2.0, dependence deepens, and eu_ai_sovereignty falls to 12.0. Political capital declines to 21.0 under the ongoing cost of four large measures and a named priority. The Labour Fund’s disbursements in France, Spain, and Italy deliver visible improvements in public services and retraining, nudging public sentiment up to 53.0. However, resilience dips slightly as no new protective measures land, and cyber preparedness lags.
+
+### Fragile Legitimacy
+The EU focuses on delivering tangible benefits through the Labour Transition Fund, reinforcing the narrative of managed transition. Wage insurance and retraining incentives reach displaced workers in legal, architectural, and engineering sectors, with reintegration rates exceeding 65% in key regions. Yet, without legal clarity on containment, the Union’s defensive posture appears increasingly brittle. Behind the scenes, officials explore supporting the decentralized evaluation network as a fallback, but no formal shift occurs this turn.

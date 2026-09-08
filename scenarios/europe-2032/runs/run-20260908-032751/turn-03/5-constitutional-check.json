@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The narrative states that five large initiatives (InvestAI Gigafactories, Tech Sovereignty Package, Cyber Shield, Public AI Governance Rebuild, Frontier Access Guarantee) are all in flight simultaneously, and a sixth measure (Frontier Access Guarantee) is introduced as a new large Category 4 measure in this turn. This violates Constitutional Constraint 5: \"At most one new measure per turn.\" Introducing the Frontier Access Guarantee as a new measure while already having four large measures active exceeds the limit on new measures per turn.\n- Modelling Choice violated: The drop in `eu_political_capital` from 35.0 to 26.0 (−9.0) is excessive given the portfolio charge of −16 and a proposal bonus of +6, implying a net change of −10, but no other terms are listed in the notepad to justify the full movement. More critically, the narrative does not account for how political capital can drop by 9 points in one turn without violating the spirit of Constraint 7: the two stocks must be free to move apart, but such a large drop in political capital relative to sovereignty (which fell by 3) suggests an implicit coupling not permitted unless explicitly modelled. While not a direct numeric cap violation (Constraint 9 allows up to 25-point moves), the unexplained magnitude and lack of narrative support for such a steep decline in political capital—especially amid a +6 proposal bonus—raises a modelling inconsistency that undermines the independence of the two stocks."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

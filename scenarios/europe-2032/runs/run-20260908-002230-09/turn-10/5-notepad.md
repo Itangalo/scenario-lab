@@ -1,0 +1,7 @@
+- `emergent_labour_displacement_wave` -- first noted turn 8, listed in 4 turn(s) so far: Mid-level professional roles in legal, technical, and administrative sectors face accelerating displacement. Retraining systems are overwhelmed, and protests grow.
+- `emergent_ai_research_centrifuge` -- first noted turn 6, listed in 4 turn(s) so far: Top researchers continue to relocate to EU-affiliated labs, drawn by sovereign compute access and political stability, despite funding constraints.
+- US_POSTURE: CONSOLIDATION
+- PORTFOLIO CHARGE: Sovereign AI Infrastructure Programme −3, Sovereign AI Software Stack Initiative −3, Emergency Workforce Transition Compact −3, Resilience Surge −2, other small measures −2, priority −1 = −14 → capped by floor: eu_political_capital remains 2.0
+- PROPOSAL BONUS: none — new measure addresses ongoing structural wave, not discrete recent event
+- LEGITIMACY LENDS: none — capital (2.0) below sentiment (18.0)
+- SOVEREIGNTY: 14.0 last turn, no capacity event, Gigafactories finished t10 +0 (already paid), capability rose 4.0 ≥2 −1 = 13.0

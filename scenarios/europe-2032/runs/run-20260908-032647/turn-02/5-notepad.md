@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereign AI Testbed −2, Bio-Secure AI Monitoring Programme −2, priority −1 = −11  
+PROPOSAL BONUS: Bio-Secure AI Monitoring Programme (cat 6, small) +3 — bio_uplift_findings landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20.0 last turn, no capacity event, Gigafactories in flight +0, capability rose 1.5 −1 = 19.0  
+emergent_supply_chain_leverage -- first noted turn 1, listed in 2 turn(s) so far: The European Commission, leveraging ASML's strategic position, initiates quiet talks with Japan and South Korea on coordinated export licensing for advanced lithography equipment, framing it as a stability mechanism rather than a bloc tactic. This marks the first institutional move toward treating supply-chain leverage as a collective tool, not just a Dutch vulnerability.  
+emergent_regional_data_coalition -- first noted turn 1, listed in 2 turn(s) so far: Several EU member states continue informal talks on a regional data-sharing and defense pact for AI-critical infrastructure, driven by concerns over data sovereignty and perceived U.S. unilateralism. The initiative gains momentum as trust in transatlantic coordination erodes, and could formalize into a mutual defense framework if further incidents occur.

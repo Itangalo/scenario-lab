@@ -1,0 +1,11 @@
+### The Weight of Accountability
+
+Global AI capability advanced to 59.0, driven by iterative gains in distributed training and algorithmic efficiency. The frontier continues its steady climb, now just one point from the 60.0 threshold where progress is expected to slow. Leading labs have begun integrating real-time emergent behavior prediction into training loops, marginally improving control—though full deployment remains months away.
+
+In Europe, the cross-border strikes in France and Spain over AI-driven automation in public services forced a reckoning. The EU doubled down on its Accountability Framework for High-Capability Systems, amending it to include enforceable labour transition safeguards. The new measure, AF-HCS-LTS, ties access to powerful AI systems to binding commitments on retraining and redeployment in healthcare, transport, and administration. Pilot states—Belgium, the Netherlands, Finland—received cohesion funds to co-design the rules, and trilateral talks with unions and business groups began under the Social Dialogue Protocol.
+
+However, the political cost was immediate. The expansion of AF-HCS, already a large measure, was named priority—yet with political capital below 20, the pull-in effect failed. The framework’s completion remains set for turn 8, but legal resistance from efficiency-focused agencies and legal uncertainty around the European Labour Authority’s new mandate slowed delegated act finalisation. The measure lands partially: it signals a shift in legitimacy but delivers no full operational change yet.
+
+The InvestAI Gigafactories and OWIRC both completed this turn. Gigafactories’ completion had no sovereignty boost—delays in grid integration and legal challenges negated immediate impact. OWIRC became operational, strengthening response capacity for open-weight misuse, though its reach remains limited.
+
+Public sentiment ticked up slightly as the EU visibly responded to worker grievances. Resilience improved modestly from completed cyber and incident response measures. But sovereignty held flat—no domestic compute came online, and US posture remains RETRENCHMENT, limiting spillover. Political capital dipped under the weight of ongoing large measures and the failed priority effect.

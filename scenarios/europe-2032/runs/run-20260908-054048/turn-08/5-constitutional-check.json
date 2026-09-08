@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 47.0 to 56.0 (+9.0) in one turn, which is a valid rise and allowed to increase, but the narrative attributes this jump to an external open release matching GPT-7. However, `openweight_capability` is an accumulated metric that reflects the EU's *internal* sovereign capacity to develop and deploy open-weight models. A sudden external release may influence the environment, but cannot directly increase the EU's capability by 9 points without a corresponding internal effort, infrastructure, or investment that is narratively justified. The jump is plausible only if the EU rapidly absorbed and built upon the released model, but no such absorption (e.g., integration into EU projects, validation, deployment, or talent scaling) is described. The metric rule requires accumulation, not instantaneous adoption from external sources.\n- Invariant 2 violated: While `ai_capability` rose by only +1.5 (from 65.0 to 66.5), consistent with typical growth, the narrative does not explain why `openweight_capability` grew nearly six times faster than `ai_capability` in this turn. Given that `openweight_capability` must never exceed `ai_capability` and is a subset of it, such a large divergence in growth rates without explanation (especially when the open model was externally released, not EU-developed) violates the spirit and logic of the dependency between the two metrics. The jump implies an unrealistic leap in EU-open-weight capacity relative to global frontier capability.\n- Modelling choice 5 violated: The EU names **Secure the Core** as the priority (−1 in notepad), but also advances the **EU Frontier AI Development Initiative** with a new legal compromise and public-sector data pooling. This constitutes a second significant measure introduced or advanced in the same turn, violating the \"at most one new measure per turn\" rule. Widening scope of an existing measure is allowed, but introducing a new legal framework (data pooling) under a high-cost initiative qualifies as a new measure. Two measures cannot be advanced in one turn without violating the constraint."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

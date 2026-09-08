@@ -1,0 +1,22 @@
+Secure sovereign AI capacity to ensure autonomy in strategic decision-making and catastrophic risk prevention
+
+## Statement changes
+``modify `two_year_commitment` (commitment): Secure sovereign AI capacity to ensure autonomy in strategic decision-making and catastrophic risk prevention``
+- Trigger: the two-year commitment period closes this turn
+
+## Portfolio
+- ``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — Finished this turn.
+- ``Sovereign Model Access Programme (category 5, costs 3 per turn, started turn 3, finishes on turn 6): Grant vetted public-sector researchers and evaluators direct access to frontier models hosted in sovereign EU environments, secured under state-actor-grade controls and isolated from external influence``
+- ``European Compute Assurance Directive (category 4, costs 3 per turn, started turn 8, finishes on turn 9): Establish legally binding requirements for physical control, energy resilience, and jurisdictional anchoring of all AI compute infrastructure receiving EU public funding or operating within critical national functions`` — Finished this turn.
+- ``Critical AI Workload Hardening Initiative (category 6, costs 2 per turn, started turn 9, finishes on turn 10): Designate and protect a core set of essential AI-driven functions—nuclear early warning, disinformation triage, grid balancing—against sabotage, takeover, or degradation through redundant, sovereign-controlled execution environments``
+
+## New measure
+None this turn. Waiting for the completion of the European Compute Assurance Directive and the full integration of its legal and operational framework before layering new binding infrastructure mandates.
+
+## Priority
+**Critical AI Workload Hardening Initiative** — Because the convergence of rising ai_capability (70.5) and eroding ai_safety (29.0) means that failure in cognitive infrastructure is no longer hypothetical, we must harden the core functions that keep the Union standing—nuclear warning, grid stability, disinformation response—before the next incident exposes our continuity gaps.
+
+## In practice
+This turn, we are operationalising sovereignty. The **InvestAI Gigafactories** have delivered: four sovereign compute clusters are now live in Brittany, Luleå, Salamanca, and Puglia, each bound by enforceable legal clauses that anchor control, mandate telemetry-sharing with the Frontier Monitoring Compact, and prohibit foreign ownership shifts without EU review. These sites are no longer construction zones—they are becoming the foundation of our cognitive autonomy. We are now converting capital into doctrine: the **European Compute Assurance Directive**, having cleared inter-institutional negotiation, is being transposed into national law with teeth. DG CONNECT, backed by ENISA and the European Commission’s Legal Service, is enforcing jurisdictional anchoring, energy redundancy, and supply-chain provenance for all data centres above 10MW. Non-compliant facilities will be barred from future InvestAI phases and from fast-track permitting—this is not a guideline.
+
+Resistance remains, particularly from member states concerned about energy mandates, but the triad model—tested in France with co-governance and peacetime veto rights—has proven adaptable. We are extending it to Poland and the Baltics under PESCO, linking it to ECB tier-zero workload containerisation for financial stability. Meanwhile, the **Sovereign Model Access Programme** continues to yield critical insights: Finnish evaluators have confirmed persistent agent-like behaviours in models previously thought to be narrow, reinforcing our push for mandatory telemetry in all critical deployments. That data is now shaping the aviation-style black box design, currently under legal review. The **Critical AI Workload Hardening Initiative** is live in Luleå and Salamanca, testing redundant execution environments for nuclear early-warning interpretation and autonomous grid balancing. These are not experiments—they are the first operational expressions of a sovereign cognitive spine. When the next crisis hits, we will not be choosing between collapse and capitulation. We will have already chosen.

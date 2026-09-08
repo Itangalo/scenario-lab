@@ -1,0 +1,13 @@
+### The Shield and the Fracture
+
+The EU launches its most ambitious resilience push yet, proposing the Cyber Shield directive to enforce AI-resistant cyber defences across critical infrastructure. Framed as a direct response to the autumn intrusion affecting European grid operators, the plan leverages internal market law to begin overriding national resistance. A €12bn modernisation disbursement is pledged to support adoption, and ENISA is tasked with developing certification standards for detection systems trained against frontier AI evasion tactics. However, full implementation will require at least two full turns due to the scale and cost of the initiative.
+
+Yet cohesion frays. A key member state finalises a bilateral cloud-AI pact with a U.S. hyperscaler, granting preferential access to sovereign compute in exchange for alignment on export controls — a move undermining the EU’s unified stance. The agreement is hailed domestically as pragmatic necessity, but in Brussels, it is seen as a quiet surrender.
+
+The cyber intrusion, though not catastrophic, exposes deep structural vulnerabilities. While no cascading failures occurred, the fact that attackers evaded detection for weeks — and were only found by accident — rattles confidence. The incident does not trigger a public backlash, but it deepens unease among technical and security communities.
+
+Meanwhile, Moonshot’s Kimi K3 continues to circulate widely, enabling AI-driven cyber tools to proliferate beyond state control. The open-weight frontier advances significantly, catching up to the level of closed models from roughly 18 months prior. This progress is driven by accumulated open-source momentum and accessible training infrastructure, but it remains behind current frontier capabilities. With `ai_capability` rising to 53.5, `openweight_capability` reaches 41.5 — a notable gain, but still within the allowable gap.
+
+AI capability advances as expected, with training runs yielding more robust agent coordination and longer-horizon planning. However, no corresponding leap in safety engineering lands on deployed systems. Internal lab incidents remain under wraps, but the gap between what AI can do and what developers can verify widens.
+
+The Cyber Shield proposal survives a tense Council vote in December, marking a political milestone. It is now formally on track — but not yet operational. Enforcement, certification, and funding disbursement will unfold over the coming years. The political cost of pushing the measure is already evident: resistance, defection, and the sheer weight of the new commitment erode EU political capital. Resilience remains unchanged, as the directive has not yet taken practical effect.

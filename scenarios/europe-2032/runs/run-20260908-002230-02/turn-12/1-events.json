@@ -1,0 +1,37 @@
+[
+  {
+    "id": "member_state_defection",
+    "probability": 0.16333333333333333,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_disruption_wave",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "A wave of localized strikes and work stoppages erupts across public-sector IT, healthcare administration, and legal support roles, triggered by the rollout of AI systems in national bureaucracies. Workers frame the deployments as unilateral and unconsulted, bypassing collective agreements. The actions are not centrally coordinated but feed a growing narrative of institutional overreach, further straining public trust and political cohesion.",
+    "probability_samples": [
+      0.3,
+      0.25,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

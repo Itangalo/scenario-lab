@@ -1,0 +1,15 @@
+### Frontier Shifts, Open Weights Gain Ground  
+Global AI capability advances by 1.5 points to 56.5, as new agent frameworks sustain multi-day coordination in software and research tasks. The open-weight ecosystem benefits from a breakthrough in automated verification for legal and clinical domains, accelerating development cycles. Improved tooling enables faster replication of frontier results, pushing `openweight_capability` to 44.5—a gain of 1.5 points—narrowing the gap with closed models in a manner consistent with the underlying pace of general capability growth. This progress reflects diffusion of recent capabilities rather than a sudden leap, with wider access to training infrastructure amplifying impact, but without structural convergence or parity.
+
+### Safety Gains Ground  
+A major interpretability advance allows developers to predict emergent agent behaviour before deployment. Adopted across leading labs, this safety breakthrough raises `ai_safety` by 5 points to 32.0—the first real alignment progress in years—though it remains far behind capability.
+
+### EU Consolidates on Resilience  
+The Cyber Defence Integration Pact is formally enacted, embedding ENISA and national CERTs into a live threat-sharing network. €1.2bn in security funding unlocks contingent on data-sharing, strengthening real-time response. Simultaneously, the Resilience Hardening Directive clears its final legal hurdles, with the Commission affirming Article 114 TFEU’s reach over systemic cyber risk. Delegated acts on patching and audits are tabled, and the Modernisation Fund disbursement breaks resistance from smaller states.
+
+### Talent Initiative Considered, Not Launched  
+Discussions intensify within the European Commission about launching a Sovereign AI Talent Accelerator to attract 5,000 frontier engineers with golden visas and future compute access. However, no formal proposal is adopted this turn due to governance overload: three major measures—InvestAI Gigafactories, Tech Sovereignty Package, and Resilience Hardening Directive—remain in active implementation, and the newly enacted Cyber Defence Integration Pact demands significant coordination bandwidth. Parliamentary debate on funding is deferred to the next session, and eligibility criteria remain unresolved. As a result, the initiative does not enter the portfolio this turn, and no proposal bonus is awarded.
+
+Despite the strain of ongoing efforts, the successful enactment of the Cyber Defence Integration Pact delivers tangible progress, contributing +2 to legitimacy and enabling a net +1 increase in `eu_ai_sovereignty` (from +1 capacity contribution and −1 from capability growth under 2 points). `eu_ai_sovereignty` rises to 20.0, aligning with notepad accounting. Political capital declines slightly to 29.0 due to sustained implementation load, but avoids deeper erosion thanks to the Pact’s delivery.
+
+Public sentiment inches up slightly, reflecting approval of cyber resilience gains, but broader anxiety persists as AI-driven job displacement enters electoral platforms across the bloc.

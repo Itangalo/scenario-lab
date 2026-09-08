@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, European Compute Security Audit Regime −3, priority −1 = −10  
+PROPOSAL BONUS: European Compute Security Audit Regime (cat 4, large) +3 — responds directly to emergent_compute_black_market and consolidates control over critical infrastructure ahead of potential misuse  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 19.0 last turn, no capacity event, emergent_compute_black_market exposes vulnerability but does not secure or take away access, capability rose 1.5 −1 = 18.0, European Compute Security Audit Regime in flight occasionally +2, Tech sovereignty package in flight occasionally +1, net adjustment for cohesion and planning momentum +1 → 21.0

@@ -1,0 +1,257 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1602616871310647,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.09000000000000001,
+    "probability_samples": [
+      0.09,
+      0.09,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6276376892166703,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.24239025372136902,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.929900776142232,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.09333333333333332,
+    "probability_samples": [
+      0.06,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.11206446664749581,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.006528780645456922,
+    "triggered": true
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.26904503787938727,
+    "triggered": false
+  },
+  {
+    "id": "opaque_reasoning",
+    "probability": 0.049999999999999996,
+    "probability_samples": [
+      0.15,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.1519121135580901,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.05752983668419287,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8022178386972363,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.12,
+    "probability_samples": [
+      0.1,
+      0.16,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.007485078345901619,
+    "triggered": true
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6553031550124353,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4665402379795306,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.08530413875672715,
+    "triggered": true
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.881188094179911,
+    "triggered": false
+  },
+  {
+    "id": "emergent_supply_chain_pressure",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "ASML faces intensified jurisdictional pressure from the U.S. Department of Commerce to restrict not only advanced node exports but also servicing and spare parts for existing installations in China. The move triggers internal debate in the Netherlands over national sovereignty versus alliance obligations, with EU officials warning that unilateral actions undermine collective leverage. The situation risks escalating into a formal dispute before the end of the year.",
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7889842591738239,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated effort among mid-sized EU member states and other technologically advanced democracies—such as Japan, South Korea, and Canada—begins to coalesce around shared access to AI training compute and mutual recognition of evaluation standards. The initiative emerges in response to repeated exclusion from frontier models and unilateral export controls. It does not create a supranational body but establishes a trusted network for compute pooling and joint procurement, leveraging collective market weight. This marks a shift from dependency to strategic alignment among non-superpowers.",
+    "emergent": true,
+    "id": "emergent_compute_pact",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.13279001984397554,
+    "triggered": false
+  },
+  {
+    "description": "Amid growing public concern and patchy cyber defences, a grassroots coalition of open-source developers, municipal IT departments, and digital rights NGOs launches a distributed initiative to audit and harden local government software stacks using lightweight AI tools. The effort, dubbed 'CivicShield', focuses on identifying and patching vulnerabilities in legacy systems serving healthcare, education, and social services. While unofficial, it gains traction in several member states as a stopgap response to state-level incapacity, raising questions about the legitimacy of unauthorised but benevolent interventions.",
+    "emergent": true,
+    "id": "emergent_civic_shield",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_supply_chain_revolt",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "In response to intensified U.S. pressure on ASML, elements within the Dutch technical and political elite begin quietly coordinating with EU counterparts to establish a European sovereign lithography initiative, leveraging existing supply-chain expertise and redirecting dual-use research. The move is framed as industrial policy, but its core aim is to build political and technical autonomy in semiconductor manufacturing infrastructure, triggering quiet alarm in Washington and opening a new front in transatlantic technology relations.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

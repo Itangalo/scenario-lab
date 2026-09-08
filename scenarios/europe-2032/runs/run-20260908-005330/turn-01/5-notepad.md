@@ -1,0 +1,6 @@
+- `emergent_labour_displacement_wave` -- first noted turn 1, listed in 1 turn(s) so far: Preliminary labour market data from multiple member states show accelerating displacement in mid-skill cognitive jobs—paralegals, junior auditors, technical support—where AI systems now operate autonomously for extended periods. The trend is not yet a crisis, but it becomes visible in national media and begins to shape political discourse around AI's societal impact.
+- `emergent_asml_pushback` -- first noted turn 1, listed in 1 turn(s) so far: Facing intensified U.S. pressure to restrict ASML's export and servicing of older lithography systems, the Dutch government signals conditional resistance, citing economic damage and legal overreach. This marks the first visible friction in the transatlantic alliance over semiconductor control, creating an opening for the EU to coordinate a unified stance on supply chain sovereignty.
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3, priority −1 = −10
+- PROPOSAL BONUS: none
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 22.0 last turn, no capacity event, InvestAI Gigafactories in flight +0, Tech sovereignty package in flight +0, capability rose 2.0 −1 = 21.0

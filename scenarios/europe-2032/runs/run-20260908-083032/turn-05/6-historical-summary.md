@@ -1,0 +1,5 @@
+In 2028, the EU’s Sovereign Access to Safety-Critical Weights initiative collapsed as U.S. providers, backed by Washington’s strategic classification of frontier models, refused weight audits despite incentives, exposing the bloc’s limited leverage. Internal EU divisions deepened, with smaller states rejecting escalation without enforceable guarantees, while leaked red-teaming results revealed unresolved systemic risks, undermining trust in Brussels’ oversight.
+
+Global AI capability surged to 65.5 due to autonomous research and rapid deployment, but ai_safety declined to 36.0 as no new safeguards were adopted, widening the control gap. Openweight_capability rose to 52.5, fueling uncontrolled agent-like deployments. Resilience dipped slightly amid growing systemic exposure.
+
+Public sentiment fell to 36.0 amid widespread job market disruption, particularly for graduates, triggering strikes and criticism of EU policy irrelevance. The failed sovereignty initiative drained political capital further, leaving the EU weakened ahead of a pivotal shift in U.S. leadership.

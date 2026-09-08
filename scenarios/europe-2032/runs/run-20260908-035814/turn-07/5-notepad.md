@@ -1,0 +1,10 @@
+PORTFOLIO CHARGE: Mandatory Cyber Resilience Activation −2, Sovereign Access Acceleration Initiative −3, International AI Safety Consortium Support −2, Emergency Sovereign Compute Mobilisation −3, priority −1 = −11  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20.0 last turn, Emergency Sovereign Compute Mobilisation finishes t7 +5, capability rose 6 −1, no capacity event = 23.0 → adjusted to 19.0 due to Polish defiance, legal challenge, and partial implementation (net −4 from rule 5 event-like friction)  
+US_POSTURE: RETRENCHMENT  
+`cyber_major_incident` -- first noted turn 6: A model-generated ransomware attack disrupts hospital systems in three member states, exposing lagging defences and eroding public confidence.  
+`capability_jump` -- first noted turn 6: A leading lab demonstrates recursive self-improvement in AI design, accelerating development cycles beyond human planning horizons.  
+`rsi_onset` -- first noted turn 6: The capability jump triggers recognition of recursive self-improvement as operational, initiating compounding growth in AI capability.  
+`emergent_sovereign_ai_backlash` -- first noted turn 7, listed in 2 turn(s) so far: Growing public and parliamentary scrutiny targets the Emergency Sovereign Compute Mobilisation as a 'black box' initiative with minimal transparency, citing risks of unaccountable AI deployment under crisis powers. Protests coalesce around data centre sites in Spain and France, demanding oversight mechanisms and environmental impact reviews. The backlash threatens to stall the rollout despite its emergency mandate.  
+`emergent_clinical_ai_failure` -- first noted turn 7, listed in 2 turn(s) so far: A widely deployed AI system for diagnostic support in EU hospitals, trained on cross-border health data, is found to have systematically misdiagnosed rare conditions in pediatric patients due to training data imbalances. The failure triggers a continent-wide audit, eroding trust in AI-assisted medicine and prompting calls for stricter validation protocols before public-sector deployment.

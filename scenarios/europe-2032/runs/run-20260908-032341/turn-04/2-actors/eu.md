@@ -1,0 +1,22 @@
+No statement changes.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
+``Emergency Resilience Surge (category 6, costs 3 per turn, started turn 1, finishes on turn 2): A six-month sprint to harden detection and response across critical infrastructure, triggered by the cyber test shot and access denial. Finished this turn.``
+``ASML Joint Export Governance Initiative (category 8, costs 3 per turn, started turn 2, finishes on turn 4): We are launching formal negotiations with the Dutch government and ASML leadership to establish a binding EU-level framework for decisions on lithography equipment exports, ending unilateral corporate compliance with foreign coercion.``
+``Biosecurity Watchtower and Open-Weight Risk Directive (category 3, costs 3 per turn, started turn 3, finishes on turn 5): Establishing a permanent EU-level biosecurity monitoring function with authority to assess and restrict open-weight model releases that pose plausible catastrophic risks, beginning with genome-scale models.``
+
+## New measure
+**None this turn.**  
+We are conserving political capital in light of the ai_investment_collapse and the strain of five large measures in flight, while awaiting the convergence of technical assessments from the Joint Research Centre on genome-scale model thresholds, which will determine the next phase of biosecurity governance.
+
+## Priority
+**ASML Joint Export Governance Initiative** — because the U.S. pressure campaign and internal fractures at ASML have created a narrow window to assert EU strategic autonomy over a critical chokepoint in the global AI supply chain, and failure to conclude negotiations by the end of this turn will collapse the alignment that makes it possible.
+
+## In practice
+This turn, we close the Emergency Resilience Surge with a formal endorsement in the Competitiveness Council, certifying the integration of AI-driven detection and automated patching into ENISA’s baseline standards for energy and port infrastructure. The rollout is now binding, but we acknowledge the incomplete coverage in water monitoring — a gap we are tasking the Tech Sovereignty Package’s resilience working group to close by Q3, using accelerated permitting and co-financing from cohesion funds. The cyber defence breakthrough in automated patching is being fast-tracked into operational doctrine, with pilot integrations in three member states already underway.
+
+Simultaneously, we are in the final stretch of the ASML negotiations. Invoking Article 346 TFEU, we have convened a trilateral forum with the Dutch Ministry of Economic Affairs and ASML’s executive board, offering full liability shielding, diplomatic protection against extraterritorial coercion, and preferential access to EU semiconductor funding in exchange for a binding EU veto on strategic lithography exports. The board’s growing concern over U.S. overreach has created unexpected momentum, and we are pushing for a political agreement by June, with legal architecture to be finalised under the Anti-Coercion Instrument by turn 5. Quiet coordination channels with Japan and South Korea are also advancing, framed as co-stewardship of a global public good in semiconductor stability, not containment.
+
+On biosecurity, we are not waiting. The Joint Research Centre is finalising technical thresholds for genome-scale models under the Dual-Use Regulation, with enforcement mechanisms being drafted by the AI Office in coordination with EMA and ECDC. We are pairing this with the €300m public research stream for secure open models, to signal that our intent is not suppression but responsible innovation. The openweight_frontier_release event has only reinforced the urgency: what was once a one-year lag is now months, and the window to shape the open frontier is closing fast. But we are not expanding our portfolio — we are holding the line, because political capital is thin, and overreach now could collapse everything.

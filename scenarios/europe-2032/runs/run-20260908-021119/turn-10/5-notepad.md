@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Emergency Sovereign Red-Teaming Expansion −3, Autonomous Threat Simulation Corps −3, EU Sovereign Compute Emergency Mobilisation Directive −3, priority −1 = −10  
+PROPOSAL BONUS: EU Sovereign Compute Emergency Mobilisation Directive (cat 4, large) +6 — answers eu_frontier_access_denied and emergent_sovereign_failure directly, severe and recent, large measure  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20.0 last turn, no category 4 completion, capability rose 2 −1, eu_frontier_access_denied t10 −2 = 18.0  
+US_POSTURE: CONSOLIDATION  
+emergent_defensive_alliance_progress -- first noted turn 6, listed in 5 turn(s) so far: The alliance now integrates real-time telemetry across ten national cyber agencies and has successfully contained live threats using automated response protocols. Political support grows, with calls for formal treaty backing.  
+emergent_societal_backlash -- first noted turn 6, listed in 5 turn(s) so far: Protests continue in major cities, now joined by academic strikes over restrictions on open research. Media frames the AI governance debate as technocratic overreach versus public accountability.  
+emergent_sovereign_failure -- first noted turn 9, listed in 3 turn(s) so far: After repeated failures to achieve convergence in sovereign model training at Extremadura, a classified assessment leaks showing that the EU's flagship AI sovereignty initiative is fundamentally behind due to architectural instability and lack of access to frontier telemetry. The report concludes that even if training succeeds, the resulting model will be non-competitive within months of release. The leak triggers a crisis of confidence among member states and sharpens divisions over continued funding.

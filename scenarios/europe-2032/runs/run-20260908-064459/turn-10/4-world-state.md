@@ -1,0 +1,11 @@
+### A Surge Ends, a Scandal Deepens
+
+The Emergency Cyber Resilience Surge concludes its formal mandate, having hardened critical hospital networks in Germany and France and reduced incident response times by 40%. Its protocols are now being integrated into national cyberdefence frameworks, delivering a tangible boost to societal resilience. However, this progress is overshadowed by a major, model-generated cyberattack that sweeps across public service providers in three member states, exploiting zero-day vulnerabilities in widely used software dependencies. The attack cripples local welfare portals and delays emergency dispatch systems, confirming fears that reactive patching is no longer enough.
+
+Simultaneously, the automated decision scandal widens: an ombudsman’s report confirms that an AI-supported social insurance system, operating in multiple jurisdictions, systematically denied benefits to thousands due to biased training data and unmonitored feedback loops. The system, derived from a foreign model, lacked transparency and audit trails, deepening public distrust. Media coverage frames the crisis as a failure of oversight, not just technology.
+
+### Foundations Laid, but Sovereignty Stalls
+
+The Sovereign Runtime Monitoring and Intervention Layer is formally proposed and named the EU’s priority. It is framed as the necessary evolution from audit and emergency response to real-time control. Funding is secured, and legal groundwork laid under Article 114 TFEU. However, the defecting member state refuses to participate, and U.S. cloud providers push back hard, warning of operational burdens and legal conflicts. No breakthrough in transatlantic negotiations occurs, and ENISA’s authority remains contested.
+
+While the Auditing Corps and Resilience Surge finish, their benefits are partially offset by escalating threats. The cyberattack and scandal drive down public sentiment, despite the EU’s efforts. ai_safety declines further as frontier models advance and no new safety measures land on deployed systems. ai_capability rises by +1.0, driven by global momentum and the verification_widens breakthrough in automated contract review. openweight_capability climbs to 55.0, as research leaks and partial open releases exploit new verification methods.

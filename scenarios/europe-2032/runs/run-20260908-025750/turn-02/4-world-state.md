@@ -1,0 +1,10 @@
+### A Fragile Leap in Control
+A major interpretability breakthrough—developed outside the EU but rapidly validated by the emergent unified evaluation framework—has given regulators and developers alike a new tool to monitor and certify model behaviour in production. The European Union seizes the moment, launching the European Interpretability Initiative: a €12bn effort to embed these techniques into public research, sovereign AI stacks, and the AI Act’s compliance machinery. The Joint Research Centre coordinates a pan-European consortium, aiming to produce auditable verification tools by 2029.
+
+Yet the initiative faces immediate headwinds. While frontier labs express interest, major US developers signal they will adopt only non-binding elements, wary of ceding control to EU standards. Some European firms with tight integration into American AI ecosystems delay participation, awaiting Washington’s stance. The promise of faster compliance and compute subsidies draws mid-tier developers, but the largest actors remain cautious.
+
+### Chokepoint Exposed, Sovereignty Stalled
+Meanwhile, the US government pressures the Netherlands to restrict ASML’s export of mature lithography systems—equipment critical not only for China but for multiple allied semiconductor fabs. The move, justified on national security grounds, effectively weaponises Europe’s own supply-chain leverage against it. Brussels protests, but with no counter-leverage and no completed compute infrastructure, the Union absorbs the blow. The Tech Sovereignty Package and InvestAI Gigafactories remain on track, but deliver no tangible capacity this turn.
+
+### Political Capital Tightens
+The new large measure, combined with three others in flight and the named priority, strains EU political capital. Though the initiative responds to a real breakthrough, it does not address an EU-specific incident, yielding no proposal bonus. Implementation friction and supply-chain frustration dampen momentum. Public sentiment holds steady, as job displacement concerns balance security gains.

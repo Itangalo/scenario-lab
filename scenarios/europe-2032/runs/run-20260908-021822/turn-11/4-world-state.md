@@ -1,0 +1,11 @@
+### The Pivot That Stalls
+
+The European Union attempted a strategic pivot, redefining the Sovereign AI Stack as a minimal crisis-contingency capability focused on resilient compute and agent monitoring. Yet with political capital frozen at 3.0—deep below the 12.0 threshold for functional governance—the re-scoping remained rhetorical. No funding was repurposed, no sites secured, no legal fast-tracking initiated. The Commission’s emergency proposal for a slimmed Sovereign AI Act was rejected by JURI and LIBE as legally insufficient and politically premature. Member states withheld consent, citing unresolved energy and sovereignty concerns. DG CONNECT’s plan to redirect Digital Europe funds foundered on legal objections from the Court of Auditors, which ruled the reallocation incompatible with existing mandates.
+
+### Investment Winter, Legal Thaw
+
+The global `ai_investment_collapse` slowed frontier advancement, with major labs cutting training runs and delaying releases. This temporarily eased the pace of capability growth, though no structural recovery emerged. Open-weight models crept forward to 58.0, as underground networks replicated narrow agent coordination tools despite infrastructure constraints. Meanwhile, the `emergent_ai_rights_litigation` gained momentum: national courts in Germany, France, and Spain accepted jurisdiction in cases demanding accountability for AI-driven public decisions, citing the opacity of systems above capability 65. These rulings did not halt deployments but forced agencies to log decision trails, creating de facto oversight.
+
+### Sovereignty on Paper Only
+
+The EU’s attempt to launch *Minimal Sovereign Stack Phase 1* failed to start. With no fiscal headroom, no legal consensus, and no member state ratification, the measure did not enter the portfolio. The shadow safety network’s detection protocol was not adopted, as ENISA lacked authority to operationalise it. Public sentiment held at 25.0, as protests against AI infrastructure subsided slightly—not from trust, but from apathy. Resilience neither improved nor degraded. The Union remained dependent, exposed, and immobilised.

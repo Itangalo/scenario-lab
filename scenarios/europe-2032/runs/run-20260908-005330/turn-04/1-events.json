@@ -1,0 +1,48 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.28,
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_displacement_wave",
+    "probability": 0.18333333333333335,
+    "emergent": true,
+    "description": "Preliminary labour market data from multiple member states show accelerating displacement in mid-skill cognitive jobs—paralegals, junior auditors, technical support—where AI systems now operate autonomously for extended periods. The trend is not yet a crisis, but it becomes visible in national media and begins to shape political discourse around AI's societal impact.",
+    "probability_samples": [
+      0.15,
+      0.25,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

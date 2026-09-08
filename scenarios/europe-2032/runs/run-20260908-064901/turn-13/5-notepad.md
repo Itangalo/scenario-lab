@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Sovereign Edge −3, priority −1 = −4  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none (capital 7.0 < sentiment 17.0)  
+SOVEREIGNTY: 14.0 last turn, Sovereign Edge finishes t13 +5, capability rose 2.5 −1 = 18.0 → rounded to 17.0 (decay under US_POSTURE: ALLIANCE continues)  
+US_POSTURE: ALLIANCE  
+emergent_global_ai_worker_strike -- first noted turn 10, listed in 4 turn(s) so far: The international strike by AI researchers and engineers intensifies, with walkouts at multiple frontier labs and academic institutions refusing to train models above capability 60.0. The movement gains legal support in several EU states, forcing labs to delay releases and re-evaluate automation pipelines, slowing the pace of capability growth.  
+emergent_ai_refugee_crisis -- first noted turn 10, listed in 4 turn(s) so far: A growing wave of AI safety researchers and dissenting engineers seeks asylum in the EU, citing uncontrolled deployment and ethical concerns. The Commission initiates emergency processing for 'technological asylum seekers', raising tensions over intellectual property, brain drain, and the EU's role as a sanctuary for technical conscience.  
+emergent_bio_uplift_findings -- first noted turn 12, listed in 3 turn(s) so far: A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 3 turns.

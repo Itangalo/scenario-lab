@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3, Sovereign Red-Teaming Network −3, priority −1 = −13  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21 last turn, no capacity event, Gigafactories in flight +0, capability rose 2.0 −1 = 20.0  
+emergent_ai_moratorium_push -- first noted turn 1, listed in 2 turn(s) so far: A coalition of European civil society groups, labour unions, and privacy advocates intensifies its campaign for a moratorium on autonomous AI systems in critical infrastructure and public services. Petitions gain cross-border momentum, and several regional governments pass non-binding resolutions calling for deployment pauses pending safety certification.  
+emergent_capability_plateau_signals -- first noted turn 1, listed in 2 turn(s) so far: A major release underdelivers against its own briefing, and the price of top-tier capability falls sharply, suggesting the frontier is no longer moving at the expected pace. The signal is disputed immediately, with competing interpretations emerging from industry and academia, but the market reaction is real and swift.

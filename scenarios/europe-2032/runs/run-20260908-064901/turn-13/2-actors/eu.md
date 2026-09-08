@@ -1,0 +1,15 @@
+No statement changes.
+
+## Portfolio
+- `Sovereign Edge for Essential State Functions Beyond Crisis (category 4, costs 3 per turn, started turn 12, finishes on turn 13): Extend the hardened, air-gapped compute infrastructure from emergency response to a minimal set of essential state functions—tax collection, civil registry, and border control—ensuring continuity under total digital compromise` — **finished**
+
+## New measure
+None this turn. We are awaiting full operational validation of the Sovereign Edge deployment before committing further capital or initiating new measures.
+
+## Priority
+**Sovereign Edge for Essential State Functions Beyond Crisis** — because with ai_safety at 5.0 and openweight_capability at 76.0, the only remaining assurance of state continuity is physical isolation and capability capping; this measure, now complete, establishes the first EU-wide architecture capable of surviving autonomous AI threat in a world where no connected system above 52.0 can be trusted.
+
+## In practice
+The Sovereign Edge for Essential State Functions Beyond Crisis has now reached operational status in France, Germany, Italy, and Finland. The hardened nodes are running ROM-burned firmware with model weights frozen below capability 50.0, verified through static analysis and runtime monitoring by ENISA. Tax collection, civil registry, and border control systems in these states are now segmented from national digital infrastructures and operate on isolated fibre loops with zero external connectivity. Replication rights have been extended to Ireland and the Netherlands under binding audit guarantees, including real-time logging accessible to the European Commission and independent validators from the European Union Agency for Cybersecurity. These states have accepted access to non-critical digital services on EU-sovereign clusters as part of a broader package that includes co-governance of edge node maintenance and veto rights over future integration mandates.
+
+Funding has been reprofiled from the Digital Europe Programme and the green-digital window of the Recovery and Resilience Facility, with co-investment secured from national budgets in exchange for full adherence to the physical security protocol. Legal challenges from regional development agencies are being addressed through a new mediation track under the Digital Services Act’s dispute resolution framework, with the European Court of Justice fast-tracking two test cases to clarify the scope of EU emergency infrastructure powers. DG HOME, DG TAXUD, and Frontex are now conducting the first cross-border failover exercise, simulating a complete collapse of connected systems across five member states, to test continuity of function. The results will inform a forthcoming Communication on EU Digital Sovereignty Thresholds, expected in early 2033. Until that assessment is complete, no new measure will be initiated, as political capital remains at 2.0 and any expansion risks systemic overload.

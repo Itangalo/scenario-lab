@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 52.0 to 57.0 (+5.0) while `ai_capability` only increased by 0.5 (to 63.5). The openweight metric must not exceed `ai_capability`, and its growth must be bounded by the prior level of `ai_capability`. A jump of 5.0 points is implausible given that `ai_capability` remains at 63.5, especially without narrative justification for a sudden leap (e.g., mass leakage of frontier models or structural collapse in access controls). Even under accelerated distributed fine-tuning, such a surge exceeds realistic catch-up dynamics without an explicit, narrated event enabling it.\n- Organizational Constraint violated: The narrative introduces two active measures — \"Secure Foundational Compute\" and continuation of the \"Watchdog Network\" — but also names one as priority, which is allowed. However, the portfolio charge lists both an ongoing measure (-2 for Watchdog Network) and a new category 4 measure (-3), plus a priority (-1), totaling -6. While multiple active measures are permitted, **modelling choice 5** limits the EU to *at most one new measure per turn*. The update implies the Watchdog Network is ongoing, but no indication is given that \"Secure Foundational Compute\" replaces or subsumes any prior measure; thus, introducing a new large measure while carrying forward another major one without phasing out the previous constitutes a second new initiative unless clearly framed as expansion. The text states it's a \"new\" measure, violating the one-per-turn rule."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

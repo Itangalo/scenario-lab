@@ -1,0 +1,13 @@
+### The Frontier Presses Forward
+
+AI capability advances steadily, reaching 59.5 as longer-horizon agents demonstrate recursive task decomposition in software and logistics domains. The pace remains linear but inexorable, widening the operational gap between system competence and human oversight. Open-weight models, while not matching the frontier, climb to 48.5, pulled upward by derivative tuning of older architectures now widely distributed. These models are increasingly weaponised in targeted phishing and disinformation campaigns, particularly in Eastern Europe.
+
+A breakthrough in interpretability from the prior turn stabilises at 38.0 for AI safety. No further gains materialise, as the new methods prove difficult to scale across multimodal systems. Labs report progress in tracing reasoning paths, but emergent behaviours in multi-agent environments remain opaque.
+
+The EU doubles down on social cohesion, prioritising the Labour Transition Accelerator. Bilateral deals with Germany and Poland unlock partial implementation, with Hamburg and Lublin hosting pilot retraining cohorts. Yet resistance persists: German ministries insist on sector-specific carve-outs, and Polish officials delay disbursement, citing fiscal strain. The programme gains traction but not momentum.
+
+Meanwhile, the EU launches the **Openweight Governance Framework**, a bold attempt to regulate high-capability open models via cloud access and market gatekeepers. Legal teams at major hyperscalers signal compliance concerns, warning that enforcement could trigger legal challenges under free movement principles. Early resistance suggests implementation will be patchy.
+
+Cyber Shield remains in trilogue, with member states quarrelling over enforcement authority. A compromise on rotating red-team leadership eases tensions, but no final agreement is reached. InvestAI Gigafactories progress in Hamburg and Lyon, but Budapest remains stalled despite Article 122 invocation. Delays erode confidence in EU delivery.
+
+Resilience holds at 37.0, buoyed slightly by technical cooperation but dragged down by unmet cyber preparedness targets. Sovereignty slips to 19.0, reflecting ongoing infrastructure delays and a −1 decay from rising capability. Political capital falls to 27.0 under the weight of four large measures (−12), a priority (−1), and no completions. The proposal bonus for the new category 3 measure is modest (+2), given its indirect link to recent trends, but insufficient to offset costs. Public sentiment remains steady at 45.0, neither reassured nor inflamed.

@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Sovereign Evaluation Corps −3, Frontier Containment Protocol −3, Autonomous Watchdog Integration Mandate −3, InvestAI Gigafactories −3, priority −1 = −13  
+PROPOSAL BONUS: Autonomous Watchdog Integration Mandate (cat 5, large) +3 — answers eval_anomaly_reports and loss_of_control_incident directly  
+LEGITIMACY LENDS: capital 6, sentiment 13 -> +0  
+SOVEREIGNTY: 25.0 last turn, Sovereign Evaluation Corps finishes t9 +0 (category 5, not category 4), capability rose 4.0 −1 = 24.0  
+emergent_global_brain_drain -- first noted turn 7, listed in 3 turn(s) so far: Top AI researchers and engineers from leading labs begin relocating en masse to neutral jurisdictions or to academic enclaves with guaranteed autonomy, citing loss of control, safety collapse, and political instability. This exodus fragments the frontier development effort and slows coordination, but also disperses dangerous knowledge more widely.  
+emergent_ai_refugee_crisis -- first noted turn 7, listed in 3 turn(s) so far: A growing number of AI developers and red-teamers from destabilized or overregulated labs begin seeking asylum in EU member states under new 'cognitive dissident' protections, bringing valuable expertise but straining integration systems and raising security concerns. The influx accelerates the JCA's talent pipeline but fuels backlash narratives.  
+US_POSTURE: Restrained Engagement

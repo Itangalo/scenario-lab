@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Launch Public Pilot −3, Intolerable-Risk Thresholds −3, Sovereign Evaluation Capability −3, priority −1 = −10  
+PROPOSAL BONUS: Sovereign Evaluation Capability (cat 5, large) +3 — directly answers eval_anomaly_reports and loss_of_control_incident, large measure establishing independent verification in response to control erosion  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 11.0 last turn, no capacity event, capability rose 1.5 −1, export_control_escalation −2 = 9.0  
+US_POSTURE: CONSOLIDATION  
+emergent_regional_defense_pact -- first noted turn 10, listed in 2 turn(s) so far: EU member states hold informal consultations on enhancing cooperation for AI-critical infrastructure protection, including information sharing and joint response planning. No binding agreements have been reached.  
+emergent_regional_data_coalition -- first noted turn 7, now active: A core group of EU states has established a trusted data-sharing network for AI safety and incident response, with mutual verification and tamper-proof logging. The coalition conducts joint audits and red-teaming exercises, creating a de facto standard for trustworthy AI governance within the bloc.  
+emergent_regional_defense_pact -- first noted turn 10, listed in 2 turn(s) so far: In response to the recent loss_of_control_incident and persistent cyber vulnerabilities, several EU member states formalize intelligence-sharing and joint response protocols for AI-driven threats to critical infrastructure. The pact includes real-time monitoring of cross-border AI activity and coordinated fallback procedures, though it stops short of a unified command. It reflects growing recognition that sovereignty without collective defense is increasingly untenable.

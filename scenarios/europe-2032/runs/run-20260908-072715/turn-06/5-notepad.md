@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Launch sovereign AI agents −3, Scale up EU AI Safety Board −3, priority −1 = −13  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 15 last turn, no capacity event, capability rose 3.5 −1 = 14  
+US_POSTURE: CONSOLIDATION  
+emergent_regional_compute_pact -- first noted turn 6, listed in 1 turn(s) so far: Amid stalled sovereign deployment, a coalition of EU member states with available grid capacity and existing data centre infrastructure—led by Finland, Sweden, and Ireland—announces a binding regional pact to jointly finance and operate a distributed sovereign compute grid, bypassing the need for Union-wide consensus. The initiative is framed as a continuity measure, not a break, but establishes parallel procurement and access protocols outside Commission control.  
+emergent_ai_winter_signals -- first noted turn 6, listed in 1 turn(s) so far: Multiple private AI labs outside the U.S. and China report delays in Series C and later funding rounds, with investors demanding profitability within 18 months. Publicly traded AI firms see sustained sell-offs, and several mid-tier model developers begin merging or winding down operations. While frontier progress continues, the commercial pipeline behind deployment and scaling shows early signs of contraction, independent of policy or safety concerns.

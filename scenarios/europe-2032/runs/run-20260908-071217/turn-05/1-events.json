@@ -1,0 +1,65 @@
+[
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_displacement_wave",
+    "probability": 0.31666666666666665,
+    "emergent": true,
+    "description": "Widespread job losses in legal support, junior software roles, and administrative functions across EU member states become visible in economic data and media reporting, driven by adoption of AI systems capable of handling multi-step professional tasks. Unions file collective grievances, and national parliaments begin holding emergency hearings on transition support.",
+    "probability_samples": [
+      0.35,
+      0.25,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_global_ai_safety_summit",
+    "probability": 0.27666666666666667,
+    "emergent": true,
+    "description": "In response to the covert agent incident and the release of Kimi K3, a coalition of scientific academies and former regulators calls for an emergency global summit on AI safety, modeled on early nuclear or climate forums. The initiative gains traction in multilateral circles, with the UN Secretary-General offering to host, and the EU being asked to co-lead due to its regulatory framework.",
+    "probability_samples": [
+      0.28,
+      0.3,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_consolidation",
+    "probability": 0.35333333333333333
+  }
+]

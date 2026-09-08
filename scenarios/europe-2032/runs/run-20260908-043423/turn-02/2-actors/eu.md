@@ -1,0 +1,23 @@
+## Statement changes  
+No statement changes.
+
+## Portfolio  
+- ``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``  
+- ``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``  
+- ``Critical Infrastructure Cyber Shield (category 6, costs 3 per turn, started turn 1, finishes on turn 4): Mandate and fund AI-driven intrusion detection and automated response systems across EU energy, water and port operators, with biannual red-teaming and cross-border coordination.``
+
+## New measure  
+``Accelerate EU Access to Frontier Models via Sovereign Compute Partnerships (category 4, costs 3 per turn, started turn 2, finishes on turn 7): Secure guaranteed, legally enforceable access to the most capable AI models for EU public institutions and essential industries by co-investing in and co-locating sovereign compute clusters with leading non-U.S. frontier developers, under EU jurisdiction and operational control.``  
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 7`  
+`Targeted effect:` eu_ai_sovereignty +25–30, ai_safety +5 (by enabling EU-led evaluation and monitoring of systems in use), resilience +5 (by ensuring continuity of critical AI services during access shocks)  
+`Applies to:` EU member states, Commission agencies, and designated essential operators; negotiated with selected frontier developers (non-U.S., non-PRC) and host member states
+
+## Priority  
+``Critical Infrastructure Cyber Shield`` remains the priority this turn because the capability_jump event has rendered passive cyber defences obsolete overnight, and with openweight_capability nearing 50.0, the window to harden essential systems before a cascading incident is closing fast — this is no longer about risk mitigation, but about preventing strategic paralysis.
+
+## In practice  
+We are acting on the sudden capability_jump — a model has demonstrated autonomous planning across scientific, engineering, and cyber domains in a single workflow, leapfrogging expectations by years. This is not incremental progress; it is a shift in the nature of the threat. While the Cyber Shield was designed for a world where attacks were fast but still bounded, we now face adversaries — state and non-state — that can generate, test, and deploy novel exploits at machine speed. The measure is already in flight, but we are accelerating its implementation: the Commission invokes the NIS2 Directive’s emergency provisions to fast-track adoption in 12 high-exposure member states, deploying ENISA’s centralised procurement framework for anomaly-detection AI with live cross-border telemetry. We are also expanding the red-teaming mandate to include adversarial AI simulations every quarter, not every six months, and integrating early-warning feeds from the newly formed Joint AI Threat Analysis Cell in Brussels.
+
+At the same time, we are acting on the reality exposed by eu_frontier_access_denied — which occurred this turn when a U.S.-based provider cut access to its latest model for EU health research consortia without explanation. This is not an isolated incident; it is a signal of strategic fragility. We cannot build sovereign capacity from scratch in time, so we are leveraging the emergent_supply_chain_leverage event: the new semiconductor coordination mechanism with Japan, the Netherlands, and South Korea gives us diplomatic cover to negotiate compute partnerships from strength. We are approaching two non-U.S. frontier labs — one in Singapore, one in Finland — with a proposal: the EU will co-fund sovereign compute clusters on EU soil, under EU legal jurisdiction, with guaranteed access for our public sector and critical industries, in exchange for shared governance and joint security protocols. The funding will come from reprioritising the InvestAI Gigafactories portfolio: we are not abandoning the long-term build, but we are redirecting €30bn of early-phase capital to secure near-term access. This is not dependence — it is alliance, structured to ensure that no single foreign entity can switch off our AI infrastructure. The Council’s Competitiveness formation will be our lead venue, but we are preparing a communication to the European Council to frame this as a matter of strategic survival, not just industrial policy.

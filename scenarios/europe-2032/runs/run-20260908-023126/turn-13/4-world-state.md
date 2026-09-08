@@ -1,0 +1,13 @@
+### The Denial That Changed Everything
+
+In July 2032, a silent cutoff swept through European hospitals and grid operators: access to the world’s most advanced triage and logistics models vanished without explanation. No diplomatic channel responded. This was not sabotage — it was exclusion by design. Days later, a wave of AI-crafted ransomware crippled regional rail and health networks, exploiting vulnerabilities in open-source software now operating at near-frontier capability. Defenders were blind: 60% of affected systems lacked basic telemetry. The twin shocks — denial and attack — exposed a fatal gap between ambition and resilience.
+
+The EU’s response pivoted overnight. The **European Sovereign AI Fellowship**, long delayed and now politically toxic, was formally completed but restructured: instead of top-down deployment, it would evolve into a distributed research network co-governed with universities. This concession calmed some academic opposition, but protests at data centre sites intensified, now branding the entire sovereign AI project as an “unaccountable fortress.”
+
+With political capital at 9.0 and public trust near collapse, the Union launched the **Emergency Access Guarantee for Critical Services**, invoking Article 122 TFEU to treat AI denial as a cross-border emergency. The plan mandates fallback inference capacity for healthcare, energy, and transport, backed by retraining pipelines and EuroHPC infrastructure. Germany and Poland, long resistant to audits, agreed to limited data sharing in exchange for priority access — a fragile breakthrough.
+
+Yet momentum faltered. The **Accelerated Sovereign Compute Buildout** faced a likely injunction from the Court of Justice, and Italy’s legal challenge gained support from civil society groups. The narrative of “security through control” was fracturing.
+
+### Capability Without Control
+
+Global AI capability rose to 70.5, driven by automated cyber operations and the **verification_widens** breakthrough in clinical coding, which accelerated model refinement in high-stakes domains. Open weights followed, reaching 59.0, as tooling from the attack leaked into public repositories. With no new safeguards in place, **ai_safety** dropped to 2.0. Resilience inched up to 64.0, reflecting partial gains from the new access guarantee, but the foundations remain shaky. Sovereignty dipped to 29.0 as frontier access was denied and compute progress stalled. Political capital fell to 8.0 under relentless strain, and public sentiment slid to 22.0 — the “AI fortress” critique now dominant in media and streets alike.

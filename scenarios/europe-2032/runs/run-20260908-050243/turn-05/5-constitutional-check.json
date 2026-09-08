@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 46.0 to 53.0 (+7.0) in one turn, which exceeds the maximum plausible growth rate for this metric. While `openweight_capability` may rise or stay flat, such a large jump is inconsistent with its historical trajectory and the absence of any narrative explanation involving a major open-weight release, coordinated open-source scaling, or infrastructure expansion. The constraint requires accumulation without sudden unexplained leaps, especially when no corresponding event (e.g., mass model release, open compute redistribution) is described.\n- Regulatory Constraint violated: The new measure \"Strengthen Joint Resilience Cell and Expand Cross-Border Drills\" is introduced as a small category 6 initiative, but the portfolio charge shows it is already active and contributing a −2 burden. However, the notepad records this as a new proposal in this turn, meaning it cannot have full effect immediately. While metric rule 6 allows partial effect over time, the narrative implies immediate deployment (\"are deployed\"), violating the minimum time lag for implementation—even low-cost measures require at least one full turn to take effect. Deployment should be framed as beginning, not completed.\n- Modelling choice 5 violated: The portfolio charge includes five ongoing items (InvestAI Gigafactories, Tech sovereignty package, Cyber Shield Activation, Strengthen Joint Resilience Cell, and a priority), resulting in a total charge of −12. This exceeds the typical capacity implied by the system’s design and strains organizational feasibility. While not explicitly capped in number, running four high-cost measures concurrently while launching a fifth—especially with political capital falling sharply (from 30.0 to 24.0)—suggests an unrealistic administrative load that contradicts the principle that political capital must reflect real trade-offs. The drop in political capital acknowledges strain, but the continued expansion of commitments without termination or consolidation violates the spirit (and likely the bounds) of feasible portfolio management under resource constraints."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

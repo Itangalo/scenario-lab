@@ -1,0 +1,6 @@
+- `emergent_labour_displacement_wave` -- first noted turn 1, listed in 5 turn(s) so far: Accelerating displacement in mid-skill cognitive jobs continues to gain visibility in national media and political discourse across multiple member states.
+- `emergent_asml_pushback` -- first noted turn 5: Dutch government resists US pressure on ASML exports, creating opening for EU-wide semiconductor sovereignty coordination.
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, EU AI Evaluation Office −3 (finished), ASML Supply Chain Shield −3 (finished), Labour Transition Acceleration Fund −3, Sovereign AI Development Initiative −3, priority −1 = −16
+- PROPOSAL BONUS: Sovereign AI Development Initiative (cat 4, large) +3 — responds directly to cyber_major_incident and collapsing ai_safety
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 22 last turn, ASML Shield finishes t6 +3, Sovereign AI Initiative in flight +1, no capacity event, capability rose 1.5 −1 = 24

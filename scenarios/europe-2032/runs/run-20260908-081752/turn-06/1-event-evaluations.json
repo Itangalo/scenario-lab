@@ -1,0 +1,110 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.47709243784801936,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.13253263031939921,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.04,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.14859805877116739,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5465471335572533,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.12174685846514988,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7557239235347148,
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_displacement_wave",
+    "probability": 0.26,
+    "emergent": true,
+    "description": "Widespread reports emerge of AI-driven automation displacing mid-level administrative and technical workers across EU public services and regulated industries, particularly in legal support, municipal processing, and engineering design. The wave is not due to a single system but to the cumulative deployment of narrowly capable models now reaching critical mass. Unions file coordinated grievances, and several national legislatures open inquiries.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9137423870495952,
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_power_protests",
+    "probability": 0.25333333333333335,
+    "emergent": true,
+    "description": "Grassroots protests erupt in major EU cities over the energy consumption of AI data centres, linking them to rising electricity prices and stalled green transition goals. The movement gains traction among environmental and cost-of-living activists, with sit-ins at proposed data centre sites in Germany and Poland. Media coverage frames it as 'AI versus the planet,' increasing pressure on national governments to impose local moratoria.",
+    "probability_samples": [
+      0.22,
+      0.3,
+      0.24
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.0860484294118058,
+    "triggered": true
+  }
+]

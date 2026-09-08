@@ -1,0 +1,26 @@
+[
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_lab_access_breach",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "A security audit at a leading European AI research lab reveals unauthorized external access to internal model weights and training data, likely exfiltrated over several months. The breach originated from a compromised third-party vendor and exploited weak supply-chain controls. While no immediate misuse is detected, the incident raises alarms about the vulnerability of even modestly secured systems in the current environment.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

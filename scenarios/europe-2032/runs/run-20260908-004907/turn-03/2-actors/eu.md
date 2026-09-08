@@ -1,0 +1,28 @@
+No statement changes.
+
+## Portfolio
+- ``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
+- ``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
+- ``EU Sovereign Access to Frontier Models (SAFM) Directive (category 4, costs 3 per turn, started turn 2, finishes on turn 5): Establishes a legal right for EU public institutions to run and audit frontier AI systems on sovereign infrastructure, with full weight access under strict security, for evaluation, crisis response and essential public services``
+- ``Public Audit Framework for High-Capability Systems (category 1, costs 3 per turn, started turn 3, finishes on turn 6): Creates an independent public evaluation body with statutory authority to conduct pre-deployment assessments of AI systems above 50.0 capability, including adversarial testing, interpretability reviews, and red-teaming of agent behaviours``
+
+## New measure
+**Pause Frontier Deployment Licenses Pending Safety Review**
+
+Establish a temporary licensing requirement for any AI system above 55.0 capability seeking market access in the EU, conditioned on demonstrated safety improvements over the prior generation and independent verification of control mechanisms.
+
+`Category: 3 (Limits and restrictions)`  
+`Size: large`  
+`Finishes on turn: 5`  
+`Targeted effect:` Slows unchecked capability growth in the EU market, pressures ai_safety upward by tying deployment to verifiable assurance gains, and creates regulatory space to strengthen sovereign evaluation capacity. May reduce openweight_capability growth if open releases are similarly constrained.  
+`Applies to:` Frontier AI developers seeking deployment rights in the EU, particularly those releasing systems above 55.0 capability.
+
+## Priority
+**Pause Frontier Deployment Licenses Pending Safety Review** — because the capability plateau evidence and investment collapse create a narrowing window to impose conditions without triggering retaliatory acceleration, and because the openweight frontier release proves that safety failures will now distribute globally the moment they emerge — making restraint at deployment the last point of leverage before irreversibility.
+
+## In practice
+We are moving fast on the new deployment pause, framing it not as a ban but as a time-limited licensing gate: no system above 55.0 capability can be placed on the EU market unless it demonstrates net safety progress over its predecessor and submits to sovereign red-teaming of its agent coordination and goal-persistence behaviours. The legal basis is Article 114 TFEU, piggybacking on the product safety logic of the AI Act, but scoped narrowly to high-capability systems. We are drafting the regulation through an emergency comitology procedure with the AI Office in the lead, supported by ENISA and the European Union Agency for Cybersecurity, and will propose it to the Internal Market Council by the end of this turn. The threshold of 55.0 is deliberate — it catches the current frontier but not yesterday’s systems, and it aligns with the observed plateau, letting us act while the pace of advancement slows. We are offering developers a clear path to compliance: publish a safety case, submit to sovereign testing, and gain fast-track approval. Those who refuse will face market exclusion — a credible threat now, because the investment collapse means they cannot afford to lose the EU as a revenue base.
+
+At the same time, we are doubling down on SAFM, not retreating. The opt-in pilot model is gaining traction: Germany, the Netherlands, and Spain have signaled interest in hosting sovereign instances under joint governance, and we are working with the JRC to stand up the first audit node in Karlsruhe by turn 4. We are linking this to the Tech Sovereignty Package, ensuring that the accelerated-permitting zones now include SAFM-compliant security standards — so private build-out strengthens public resilience. But we are also realistic: the public outrage over data centres means we cannot push more siting fights now. So we are redirecting part of the InvestAI envelope toward upgrading existing HPC facilities in France and Finland to SAFM-ready status, using modular liquid-cooling and grid-smart loads to reduce local impact. This is slower than greenfield builds, but it bypasses the moratoriums.
+
+The Public Audit Framework is being operationalised through a new unit in DG CONNECT, co-staffed by seconded experts from national agencies. We are not waiting for full compliance: we are issuing preliminary audit requests to three systems above 50.0 capability, invoking market access conditions under the Digital Markets Act. If they refuse, we will initiate exclusion procedures — not to punish, but to establish that accountability has teeth. We know this risks escalation, but the emergent global AI research shift gives us cover: we are reaching out to the European and Canadian nodes of the open safety coalition, offering to align our evaluation framework with theirs. If we can show that safety scrutiny is not EU unilateralism but part of a broader democratic standard, we gain legitimacy — and we may even pull some developers into cooperation before the licensing rule formally lands.

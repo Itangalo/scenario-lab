@@ -1,0 +1,7 @@
+- `emergent_regional_cyber_collective` -- first noted turn 9, listed in 3 turn(s) so far: Informal coordination among Nordic and Benelux states deepens into a shared operational doctrine for AI-driven cyber defence, including pre-authorized countermeasures and joint red-teaming exercises. The group begins drafting a formal pact, though EU-wide integration remains distant.
+- `emergent_labour_market_stress_tests` -- first noted turn 9, listed in 3 turn(s) so far: Pilot 'AI impact stress tests' in public hiring across several member states reveal that up to 40% of entry-level administrative roles could be automated within two years. The findings spark debate over retraining obligations and fuel demands for a common EU framework to manage displacement.
+- US_POSTURE: RETRENCHMENT
+- PORTFOLIO CHARGE: Launch EU-Wide Critical Infrastructure Cyber Shield −3, Establish EU Red-Team Access Framework −3, Sovereign Compute Corridor −3, Launch EU-Wide Critical Infrastructure Cyber Shield Pilot Integration −2, priority −1 = −12
+- PROPOSAL BONUS: Launch EU-Wide Critical Infrastructure Cyber Shield Pilot Integration (cat 6, small) +3 — capability_jump occurred this turn and this measure directly addresses operational readiness
+- LEGITIMACY LENDS: none — public_sentiment (30.0) > eu_political_capital (14.0) is false
+- SOVEREIGNTY: 28.0 last turn, no category 4 completion, no capacity event, capability rose 1.5 < 2 → no decay = 28.0

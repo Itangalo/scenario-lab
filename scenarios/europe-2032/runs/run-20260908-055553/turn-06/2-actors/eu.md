@@ -1,0 +1,28 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Secure independent verification and control over frontier AI systems to prevent catastrophic risk and preserve strategic autonomy  
+- Trigger: the two-year commitment period closes this turn  
+- Grounds: The commitment has run its course, and while its objectives remain urgent, the world has shifted beneath us — the frontier is now self-driving, sovereignty is critically underdeveloped, and political capital is near collapse. Continuing to stake legitimacy on a commitment formulated two years ago would bind us to a strategy we can no longer afford. We reaffirm the intent — verification and control — but release ourselves from the prior formulation so we may reframe it in light of the RSI onset and the EU’s rapidly narrowing agency.
+
+## Portfolio  
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`  
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — **Finishes this turn.**  
+- `Secure public evaluation capacity for frontier AI systems with real-time access to model weights and training data (category 5, costs 3 per turn, started turn 4, finishes on turn 6): This measure establishes a permanent EU-level technical agency with legal authority to inspect, test, and continuously monitor the safety and behaviour of the most capable AI systems deployed in or affecting the Union, starting with those operating in critical infrastructure and strategic sectors.` — **Finishes this turn.**  
+- `Establish a sovereign EU foundation model development and deployment programme to achieve technical parity with the global frontier under full regulatory oversight (category 4, costs 3 per turn, started turn 5, finishes on turn 8): This measure launches a coordinated EU effort to train and operate a frontier-level AI system on EU-controlled infrastructure, using sovereign compute, data, and talent, with built-in safety evaluation and red-teaming from day one.`
+
+## New measure  
+**Stand up a minimal, high-assurance AI safety observatory with live access to the EU sovereign model’s training process and agent behaviour logs**  
+This creates a lean, technically sovereign monitoring unit embedded directly in the training stack of the EU’s sovereign foundation model, enabling real-time anomaly detection, interpretability research, and red-teaming during development — not after.
+
+`Category: 5 (Public technical capacity and research)`  
+`Size: small`  
+`Finishes on turn: 7`  
+`Targeted effect:` +8 to ai_safety by turn 7 through sovereign, high-fidelity monitoring of a system under full EU control; begins closing the gap between capability and understanding where it matters most — in the development loop  
+`Applies to:` EU jurisdiction, binding all contractors and research entities in the sovereign foundation model programme to full-stack transparency for the observatory
+
+## Priority  
+`Secure public evaluation capacity for frontier AI systems with real-time access to model weights and training data` is my priority this turn because it finishes now and represents the only institutional foothold we have inside the black box of frontier AI — without it, we cannot verify safety, enforce limits, or even calibrate our own response, and letting it lapse would mean flying blind into the RSI era.
+
+## In practice  
+This turn, we bring two major measures to completion: the Tech Sovereignty Package and the Secure Public Evaluation Capacity. The former unlocks €200bn in anticipated private investment for AI infrastructure, with the first accelerated-permitting zones now designated in Spain, Poland, and Finland — grid access negotiations are underway, and early movers are already securing land. The latter culminates in the formal adoption of the European AI Safety Observatory’s mandate under Article 114 TFEU, now backed by a binding legal act. The first cohort of 40 technical inspectors is in place, drawn from national cyber agencies and vetted academic labs, and we are finalising data-sharing agreements with two major frontier labs operating in the EU. These labs are resisting full access to training logs, citing IP and security — we are countering with phased disclosure protocols and joint red-teaming exercises to build trust, backed by the credible threat of market access restrictions under the AI Act’s critical infrastructure provisions.
+
+At the same time, the sovereign foundation model programme enters its operational phase. We have secured initial compute allocation from the InvestAI Gigafactories — 40,000 H100-equivalent GPUs staged across three sites — and the European AI Research Consortium is finalising the core team, with lead roles going to INRIA, Fraunhofer, and the Dutch National AI Institute. Talent remains a bottleneck: we are fast-tracking residency and security clearance for 150 targeted recruits from outside the EU, funded through a new Horizon Europe mobility window. The new small measure — the embedded safety observatory — is being spun up within the JRC’s AI Safety Division, with direct API access mandated in the foundation model’s development contract. This is not about auditing a finished product; it is about watching the thing grow, and intervening before it learns to hide. We are under no illusion: with ai_safety at 15.0 and capability compounding, we are behind. But for the first time, we have a sovereign stack — from chips to models — where we can actually see what we are building. That is not victory. But it is a beginning.

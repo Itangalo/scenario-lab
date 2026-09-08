@@ -1,0 +1,16 @@
+No statement changes.
+
+## Portfolio
+``Emergency Sovereign AI Capacity Guarantee (category 4, costs 3 per turn, started turn 11, finishes on turn 13): Establish an EU-controlled sovereign AI stack — including model weights, training infrastructure, and deployment systems — capable of running critical public and strategic workloads independently of foreign providers, by consolidating access to existing compute and funding rapid capability integration`` — **in flight**
+
+## New measure
+None this turn.  
+We are waiting for legal clarity on enforcement under Article 122 TFEU and for fiscal consensus on reallocating cohesion funds, both of which are prerequisites for scaling sovereign integration without triggering constitutional disputes or member-state defections.
+
+## Priority
+**Emergency Sovereign AI Capacity Guarantee** — Because the gap between sovereign compute and sovereign capability is now the single point of failure in our strategic autonomy, and because opaque reasoning in frontier models makes external reliance fundamentally unverifiable, we must operationalise our stack before the next capability leap renders current integration paths obsolete.
+
+## In practice
+We are pressing the European High-Performance Computing Joint Undertaking to finalise the architecture of the sovereign AI stack, using the now-operational compute from the completed Sovereign Compute Acceleration Directive as its physical backbone. ENISA has delivered a draft security framework that mandates weight integrity verification at load time, runtime monitoring via sandboxed execution environments, and access logging for all queries from public-sector users. This framework will be binding on all nodes in the network, and compliance will be a condition for receiving integration funding from the €18bn package. We are working through the Competitiveness Council (COMPET) to secure unanimous endorsement of the stack’s governance model, knowing that without it, Ireland and the Netherlands will treat the initiative as an infringement on their cloud sovereignty.
+
+At the same time, we are confronting the reality that the leading AI systems no longer produce human-readable reasoning — a development that invalidates every oversight mechanism we have relied on. The Sovereign Evaluation Corps remains inactive, and no member state has stepped forward with alternative interpretability tools. In this vacuum, our only path to assurance is control: if we cannot inspect the reasoning of foreign models, we must ensure that critical decisions — in crisis management, infrastructure control, and strategic planning — are made by systems we govern, even if they are not the most capable. That is the rationale behind the Emergency Sovereign AI Capacity Guarantee: not to match the frontier, but to create a zone of verifiable operation in a world where opacity is now the default. We are offering Portugal accelerated grid support and Hungary targeted cohesion funds in exchange for full participation, treating integration not as a technical project but as a political settlement.

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_compute_black_market",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "A shadow market in sovereign compute capacity continues to expand, with anonymized leasing and containerized workloads allowing mid-tier firms and research collectives to bypass usage controls on EU-funded infrastructure. Investigations confirm the practice is widespread, undermining the strategic intent of the InvestAI program and raising concerns about uncontrolled access to powerful models.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

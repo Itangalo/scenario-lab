@@ -1,0 +1,19 @@
+## Statement changes  
+*No statement changes.*
+
+## Portfolio  
+- `Emergency Empowerment of the European AI Evaluation Agency with Enforcement Authority (category 1, costs 3 per turn, started turn 7, finishes on turn 9): Grant EAA direct operational powers to suspend, inspect, and override AI systems in critical infrastructure during verified incidents, bypassing national veto or developer appeal` — finished  
+- `Establish Pre-Authorized Override Protocols in Critical Infrastructure with ENISA-Developed Kill Switches (category 1, costs 3 per turn, started turn 9, finishes on turn 10): Mandate the pre-installation of cryptographically secured, EAA-activatable override modules in all AI systems operating in EU essential services, ensuring real-time crisis response capability independent of host-state consent` — finishes this turn  
+- `Launch Sovereign Compute Acceleration Programme: Gigafactories for AI (category 4, costs 3 per turn, started turn 10, finishes on turn 12): To fast-track the deployment of EU-anchored, high-performance computing infrastructure dedicated to public evaluation, safety research, and crisis response, with legal and physical control vested solely in Union institutions` — in flight  
+
+## New measure  
+None this turn.  
+Waiting for legal clarity on the override mandate and early site-readiness assessments for the gigafactories before expanding the portfolio.
+
+## Priority  
+Establish Pre-Authorized Override Protocols in Critical Infrastructure with ENISA-Developed Kill Switches — because this is the final turn of its implementation window, and the legal challenge from six member states must be met not with compromise but with irreversible technical deployment: the EAA must be able to act in extremis, and the kill switches must be embedded before the next systemic incident renders the gap between detection and control fatal.
+
+## In practice  
+We are closing the last operational phase of the Pre-Authorized Override Protocols this turn. Under Article 114 TFEU, ENISA has issued the final technical specifications for EAA-activatable override modules, and we are now mandating their installation in all AI systems operating in energy, transport, health, and electoral infrastructure. Retrofit funding of €800 million from the Digital Europe Programme is being disbursed to operators on strict condition of compliance by turn 11, with no opt-outs permitted. The joint EAA-ENISA command cell is now operational, integrating national liaison officers not as veto-holders but as real-time observers, ensuring transparency without diluting authority. We are treating the ongoing legal challenge not as a barrier but as a political test: implementation proceeds, and the Court of Justice will rule on a fait accompli.
+
+At the same time, we are advancing the Sovereign Compute Acceleration Programme in the face of resistance. The €6.2 billion package is being structured through the InvestEU framework, with co-financing from national development banks in Finland, Spain, and Poland. We are invoking the Chips Act to secure priority access to ASML’s latest lithography tools and are negotiating binding data sovereignty clauses with NVIDIA and Intel for packaging and interconnect supply. Germany’s fiscal concerns are being addressed through multi-annual budget smoothing; France’s demand for strategic control is being met by placing the gigafactories under a new EU Digital Infrastructure Authority, with board representation tied to investment share but operational independence guaranteed. This is not optional: the recent denial of frontier model access — cutting off hospitals and ministries without warning — proved that dependence is not just vulnerability, it is surrender. We are building the cognitive grid because no one will build it for us, and because when the next crisis hits, we must have the compute to see, decide, and act — alone if necessary.

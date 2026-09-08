@@ -1,0 +1,14 @@
+### The Social Fracture Breaks Open  
+Public resistance to AI intensifies into direct confrontation. Protests escalate beyond symbolic demonstrations to physical disruptions: data centre construction sites in Ireland and Finland are occupied, grid connections sabotaged, and several injuries reported. Law enforcement response strains national budgets, and the political cost mounts as media frames the unrest as a backlash against uncontrolled technological change. Labour displacement in legal and corporate sectors becomes a central campaign issue across multiple member states, forcing candidates to take positions.
+
+### EU Proposes Emergency Social Measure  
+In response, the European Commission fast-tracks a proposal for the Labour Transition and Wage Insurance Programme, a large-scale social intervention aimed at stabilising public sentiment and preventing systemic collapse. The €45bn scheme, co-financed at 80%, would guarantee 90% of previous wages for displaced workers who enter retraining in AI oversight, cybersecurity, and resilience roles. Firms deploying high-capability AI would be required to report workforce impacts quarterly. The proposal is named the EU’s new priority, reflecting its urgency, but full adoption is delayed by inter-institutional negotiations and funding debates. Implementation cannot begin before the next turn, and no funds are disbursed yet.
+
+### Cyber Shield Completes Amid Strain  
+The Cyber Shield directive is formally adopted, setting binding cyber resilience standards for critical infrastructure. Mandatory audits and real-time monitoring are established, with micro-utilities granted limited carve-outs in exchange for full transparency. The completion boosts resilience, though implementation lags in smaller operators.
+
+### Sovereignty Drifts, Capital Erodes  
+Despite progress, political capital declines only slightly, as the decision to prioritise the labour measure comes at the cost of slowing other initiatives. The portfolio charge remains high, but the act of focusing on one new priority prevents further erosion. Sovereignty slips further as global compute expansion outpaces EU build-out, and no new sovereign capacity comes online. The frontier advances to 62.0, driven by agentic training loops now managing multi-week projects autonomously.
+
+### Open Models Surge, Safety Lags  
+Openweight capability rises moderately to 48.0, reflecting incremental diffusion of leaked configurations that enable increasingly sophisticated document forgery and cyber operations. With no safety gains, and capability rising, ai_safety drops to 20.0 as oversight fails to keep pace. The increase is notable but remains within accumulation bounds, with no sudden leap. Public sentiment improves slightly due to the visible political response, though unrest persists.

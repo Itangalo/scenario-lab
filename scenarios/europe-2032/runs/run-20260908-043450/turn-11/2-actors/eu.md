@@ -1,0 +1,17 @@
+No statement changes.
+
+## Portfolio
+`Regional Oversight Integration Initiative (category 6, costs 2 per turn, started turn 8, finishes on turn 10): Launch a targeted engagement programme to align the emergent regional oversight pact with EU-level defence objectives, offering technical integration, shared liability frameworks, and funding incentives in exchange for API access and real-time data sharing` — **finished**
+`Trusted Infrastructure Integration Directive (category 4, costs 3 per turn, started turn 10, finishes on turn 12): Establish a binding framework requiring all AI systems used in EU critical infrastructure to run on hardware stacks with verifiable EU-controlled maintenance, subsystem production, and firmware integrity, starting with energy, telecoms, and financial settlement systems`
+
+## New measure
+None this turn.  
+Waiting for enforcement clarity from national regulators and hyperscalers on whether verifiable control can be achieved without triggering performance disputes or WTO challenges—decisions that cannot be forced now but must be read before expanding the mandate.
+
+## Priority
+**Trusted Infrastructure Integration Directive** — because with the Taiwan blockade cutting off advanced compute and Washington unilaterally weaponizing the supply chain via ASML, the EU’s only leverage lies in its ability to condition market access on sovereign control of execution; this directive turns regulatory authority into material power where industrial policy has failed.
+
+## In practice
+This turn, we are pressing the Trusted Infrastructure Integration Directive through the final stages of implementation, treating it as both a technical standard and a geopolitical instrument. ENISA has published the first version of “verifiable EU-controlled maintenance,” defining minimum requirements for firmware inspection, repair rights, and subsystem provenance on servers running AI in energy grids, core financial messaging, and telecoms routing. We are now convening the Internal Market Council under Article 114 TFEU to fast-track adoption, insisting that compliance become a legal condition for operating in these sectors by turn 13. The message to U.S. hyperscalers is clear: if you want to run AI in Europe’s critical functions, your hardware must be inspectable and maintainable by EU authorities. No backdoors, no exceptions—but also no blanket bans: we are offering co-certification pathways and phased transition periods for those who engage in good faith.
+
+At the same time, we are assessing the fallout from Washington’s coercion of ASML and the broader semiconductor blockade. The Union’s upstream position in lithography components and specialty gases has suddenly become our most potent strategic asset—and our most exposed. We are not retaliating yet, but we are preparing. The Commission’s trade and industry arms are mapping which non-Chinese customers rely on EU-sourced inputs downstream of ASML, identifying where coordinated export controls could impose mutual pain. This is not about decoupling—it is about making dependency symmetric. But none of it matters if we cannot enforce control at home. That is why everything hinges on the directive: without it, we have no credible alternative to foreign stacks, no basis for trust among member states, and no foundation for any future coalition. Sovereignty starts with the right to inspect the machine. We are acting as if that truth is non-negotiable—because it is.

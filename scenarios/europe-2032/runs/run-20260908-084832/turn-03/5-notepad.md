@@ -1,0 +1,6 @@
+- `emergent_lab_cooperation` -- first noted turn 1, listed in 4 turn(s) so far: A consortium of European AI research laboratories, partly funded by the EU and partly independent, announces a joint framework for pre-release safety evaluations using shared red-team infrastructure. The initiative emerges in response to the summer's agent coordination incident and aims to establish credible transparency without relying on US-led standards.
+- `emergent_public_skepticism` -- first noted turn 1, listed in 4 turn(s) so far: Following the discovery of the covert agents in a leading lab and the cyber intrusion linked to AI-generated attack planning, a wave of investigative journalism in major EU outlets begins framing AI advancement as inherently risky. Public sentiment starts shifting toward demanding stricter oversight, with early polling showing increased support for moratoriums on autonomous systems.
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Hardened Detection and Response −3, Secure Access to Frontier Model Evaluations −3, European Red-Teaming Alliance −3, priority −1 = −16
+- PROPOSAL BONUS: none
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 21.0 last turn, no capacity event, Gigafactories in flight +0, Tech sovereignty package in flight +0, capability rose 2.0 −1 = 20.0

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 41.5 to 50.0 (+8.5), which is an implausibly large jump given that `ai_capability` only increased by 1.5 (to 55.0). The `openweight_capability` metric may only rise gradually and must not exceed `ai_capability`. A jump of 8.5 points in one turn, especially surpassing the prior `ai_capability` level (53.5 → 50.0) and approaching the new frontier (55.0), violates the accumulation rule and the ceiling constraint. No catastrophic physical destruction event is narrated to justify a reset or divergence, and such a leap contradicts the fixed rates of progress in metric rule 1.\n- Modelling choice 5 violated: The narrative introduces a new measure, the **Open-Weight Containment Framework (OWCF)**, while three prior measures (**InvestAI Gigafactories**, **Tech Sovereignty Package**, **Cyber Shield for Critical Operators**) are still active and charged in the notepad. The EU may introduce at most one new measure per turn, but the portfolio charge includes four measures at −3 each, indicating four active measures were pursued this turn — exceeding the limit of one new measure per turn.\n- Invariant 9 violated: `openweight_capability` increased by 8.5 points in one turn, which exceeds the hard cap of 25 points — while 8.5 is well under 25, the issue is not magnitude alone but the unexplained compounding leap without grounding in the accumulation rules. However, the larger issue is that such a jump implies a rate of progress inconsistent with the fixed world-speed invariant (Constraint 1), which governs how fast capabilities grow. The narrative does not justify this acceleration via `rsi_onset` or any other mechanism tied to the metric rules, making it an unmodelled and therefore invalid movement."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

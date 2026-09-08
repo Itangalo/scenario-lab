@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Public Trust and Transition Initiative −3, Emergency Resilience Surge −3, priority −1 = −7  
+PROPOSAL BONUS: Emergency Resilience Surge (cat 6, large) +5 — answers cyber_major_incident directly and urgently, severe event with immediate public impact  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 15.0 last turn, Operational Command for Sovereign Compute finishes t13 +5, capability rose 1.0 −1 = 19.0  
+US_POSTURE: CONSOLIDATION  
+emergent_regional_auditing_alliance -- first noted turn 10, listed in 4 turn(s) so far: Building on prior cooperation and interpretability advances, a coalition of EU member states and Nordic partners establishes a regional auditing alliance for high-risk AI systems in critical infrastructure. The alliance operationalizes shared red-teaming exercises and real-time model monitoring, with early success in detecting anomalous planning behavior in a German energy grid scheduler. Trust grows as joint protocols prevent a near-miss incident, positioning the bloc as a leader in AI assurance.  
+emergent_cyber_defence_progress -- first noted turn 10, listed in 4 turn(s) so far: Defensive tooling closes the gap for a whole class of attack – automated patching at the speed vulnerabilities are found, or detection that catches swarm behaviour rather than signatures – and the offence-defence balance visibly shifts back for the first time in years.  
+emergent_backlash_physical -- first noted turn 11, listed in 4 turn(s) so far: Protest against AI infrastructure escalates to direct action, including sabotage of data centre grid connections in Poland and Hungary amid backlash to the Operational Command for Sovereign Compute. The Union spends political capital on policing internal dissent.

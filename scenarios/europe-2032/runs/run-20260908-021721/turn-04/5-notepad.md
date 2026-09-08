@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereign AI Talent Initiative −3, Civic Integrity Shield −3, priority −1 = −13  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20.0 last turn, no capacity event, capability rose 2.5 −1 = 19.0  
+- `emergent_bio_risk_threshold` -- first noted turn 4, listed in 1 turn(s) so far: Independent researchers using open-weight models publish a proof-of-concept for generating functional toxin-binding proteins, raising alarms in biosecurity circles. While not directly pathogenic, the technique demonstrates a capability leap accessible to non-specialists, and preprint servers begin flagging submissions involving protein design. This marks a new threshold in distributed bio-risk and increases scrutiny on model release policies.  
+- `emergent_labour_displacement_wave` -- first noted turn 4, listed in 1 turn(s) so far: Widespread reports from regional governments and unions confirm that AI-driven automation is displacing workers faster than retraining programs can absorb them, particularly in legal, medical imaging, and administrative sectors. The mismatch is now structural, with public trust in transition schemes eroding visibly.

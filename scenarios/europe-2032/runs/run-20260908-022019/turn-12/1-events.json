@@ -1,0 +1,37 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_ai_researcher_strike",
+    "probability": 0.3333333333333333,
+    "emergent": true,
+    "description": "Top AI researchers across European institutions declare a work stoppage, refusing to participate in further development until enforceable global safety standards are established. Citing ethical concerns and fear of uncontrolled escalation, they demand a moratorium on training runs above current capability levels. The strike gains traction in Germany, Sweden, and Finland, halting several high-priority projects and forcing governments to confront the limits of technical authority in a crisis.",
+    "probability_samples": [
+      0.35,
+      0.35,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.10333333333333333,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.13
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  }
+]

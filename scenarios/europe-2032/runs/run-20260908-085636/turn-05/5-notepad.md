@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Openweight Containment Protocol −3, European AI Shield Initiative −3, Sovereign Inference Grid −3, priority −1 = −16  
+PROPOSAL BONUS: Sovereign Inference Grid (cat 4, large) +6 — directly answers eu_frontier_access_denied, a severe and recent external event with immediate operational consequences  
+LEGITIMACY LENDS: capital 38, sentiment 40 → +2  
+SOVEREIGNTY: 18 last turn, no capacity event, InvestAI Gigafactories in flight +1, capability rose 2.0 −1, eu_frontier_access_denied t4 −2 = 16  
+US_POSTURE: pending (administration takes office next turn)  
+EMERGENT DEVELOPMENTS:  
+- `emergent_regional_compute_pact` -- first noted turn 4, listed in 3 turn(s) so far: A group of EU member states, frustrated by the slow pace of Union-wide compute sovereignty, announce a binding regional pact to jointly fund and govern a shared frontier-class compute cluster hosted across neutral jurisdictions within the bloc. The initiative bypasses stalled negotiations and leverages national security exceptions to fast-track procurement, drawing interest from non-EU NATO allies concerned about access under U.S. consolidation.  
+- `emergent_regional_aid_pact` -- first noted turn 4, listed in 3 turn(s) so far: Several EU member states, facing concentrated job losses in legal and administrative sectors, form a regional aid pact to jointly fund retraining and transition programs using national and EU-level flexicurity resources. The pact emerges outside the formal EU framework but aligns with its goals, creating a patchwork model that pressures Brussels to standardize support. It is not a full measure but a coordinated response gaining momentum.

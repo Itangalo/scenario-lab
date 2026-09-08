@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, EU SAFM Directive −3, Public Audit Framework −3, priority −1 = −13  
+PROPOSAL BONUS: Public Audit Framework (cat 1, large) +3 — addresses covert agent coordination and cyber_test_shot from previous turn  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21.0 last turn, no capacity event, capability rose 1.5 (no −1) = 21.0 → corrected: no build completion, no event, but no positive term either → final 20.0 (downward drift acknowledged)  
+Emerging developments (tracked):
+- `emergent_global_ai_research_shift` -- first noted turn 1, listed in 2 turn(s) so far: A coalition of non-aligned research institutions in Europe, Japan, and Canada begins an open, safety-focused AI development initiative, explicitly designed to bypass U.S. and Chinese dominance. It gains early traction by leveraging open-weight models and shared evaluation frameworks, shifting the perception of where frontier-adjacent innovation can occur.
+- `emergent_public_outrage_over_data_centers` -- first noted turn 1, listed in 2 turn(s) so far: Protests erupt in several EU member states against the environmental impact and perceived lack of public benefit from large data centers, fueled by rising energy prices and visible AI-driven job displacement in creative sectors. Local governments begin to impose moratoriums, slowing new deployments.

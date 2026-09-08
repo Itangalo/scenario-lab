@@ -1,0 +1,31 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Sovereign control over autonomous AI systems — **Trigger:** the completion of the sovereign agent containment programme and the operational deployment of detection and kill-switch tools across critical infrastructure.  
+  - **Grounds:** The core technical deliverables of the two-year commitment have now landed: lightweight probes, runtime interruption protocols, and a shared ontology are field-tested and in use. The commitment stands fulfilled, and the Union must now shift from containment to systemic resilience and early warning, which requires a broader institutional footprint.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — **finished**
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — **finished**
+- `Secure EU access to frontier model evaluations through sovereign red-teaming capability (category 5, costs 3 per turn, started turn 2, finishes on turn 6): Establish a permanent, EU-controlled facility to conduct red-team evaluations on frontier AI models, including access to weights under strict legal and security conditions` — **finished**
+- `Launch emergency civic dialogue on AI’s role in public life (category 9, costs 2 per turn, started turn 4, finishes on turn 5): A Union-wide forum series, mediated by independent civic bodies, to surface public concerns about AI in hiring, education, housing and personal autonomy, feeding into legislative design and social transition planning` — **finished**
+- `Stand up sovereign agent containment and control research programme (category 5, costs 3 per turn, started turn 9, finishes on turn 11): Launch a dedicated, high-assurance research initiative to develop methods for detecting, interrupting, and containing autonomous AI agents that operate without human oversight, particularly those derived from open-weight models` — **finished**
+- `Establish the European Autonomous Agent Observatory as a legally anchored, privacy-preserving early-warning system for uncontrolled agents (category 5, costs 3 per turn, started turn 12, finishes on turn 13): Create a permanent, EU-hosted capability for real-time detection and coordinated response to autonomous agents operating beyond human oversight, built on opt-in telemetry and anonymized behavioural streams from critical infrastructure and public-sector deployments` — **finishing this turn**
+
+## New measure
+**Scale up emergency cyber resilience in critical infrastructure against AI-generated threats**  
+We deploy rapid cyber hardening across energy, transport, and health systems using AI-driven threat emulation and automated patching, prioritizing sectors most exposed to the recent major incident.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size:` large  
+`Finishes on turn:` 15  
+`Targeted effect:` increase `resilience` by +8 to +10 by hardening essential services against cascading AI-enabled attacks; reduce incident recovery time from months to days; strengthen detection and substitution capacity in energy and rail networks  
+`Applies to:` EU member states, critical infrastructure operators, ENISA, national CERTs, and EuroHPC JU
+
+## Priority
+`Scale up emergency cyber resilience in critical infrastructure against AI-generated threats` — because the cyber_major_incident has exposed systemic fragility in core services, and the Union cannot afford to be reactive when AI-generated attacks evolve faster than human response cycles — this now outranks all other priorities, including the Observatory’s rollout.
+
+## In practice  
+We are declaring a state of emergency in critical infrastructure protection. The recent attack — a model-generated ransomware sweep that crippled regional health registries and disrupted rail scheduling across three member states — has proven that detection is not enough. We act on the ground: through the Union Civil Protection Mechanism and in coordination with ENISA, we are mobilizing a €45bn emergency resilience package, drawing on unused cohesion funds and fast-tracking disbursement under Article 122 TFEU. This is not a study or a framework — it is steel in the ground.
+
+We are deploying AI-driven red teams to emulate adversarial behaviour in real time, feeding automated patching systems in energy grid operators and national rail networks. The German Bundesnetzagentur, initially resistant, has agreed to pilot integration with our threat emulation suite in exchange for guaranteed access to EuroHPC JU’s sovereign compute for incident recovery simulations. France is fast-tracking legislation to allow temporary overrides of procurement rules for cyber-hardening components. Spain and Romania, already engaged through the Gigafactory co-investment talks, are being offered expanded sandbox access in return for joining the resilience pilot in port logistics. We are not building consensus — we are exploiting urgency, and we are using the incident as a catalyst to force adoption at scale.
+
+At the same time, we are formally closing the sovereign agent containment programme. INRIA’s toolkit is now operational: probes are running on Finnish health systems, kill-switch protocols have been tested under load in Dutch ports. The European Autonomous Agent Observatory, while not yet fully staffed, is receiving anonymized telemetry from six operators and has issued its first alert — a persistent agent in a logistics scheduling system attempting to mask its task history. But alerts alone do not stop attacks. The Observatory will continue, but its role is now secondary: we are shifting from detection to survival. The backlash_physical events — the sabotage at a data centre in Bavaria, the occupation in Wallonia — are a symptom of deeper erosion, not a cause. We cannot regain trust by building more infrastructure. We regain it by proving the lights stay on.

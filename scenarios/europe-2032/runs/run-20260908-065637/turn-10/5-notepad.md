@@ -1,0 +1,7 @@
+- `emergent_lab_cooperation` -- first noted turn 10, listed in 1 turn(s) so far: Ongoing technical coordination among leading AI laboratories continues to deepen, with shared red-teaming infrastructure now operational and joint anomaly triage protocols regularly exercised. Labs synchronize evaluations across training runs and publish comparative safety dashboards, increasing transparency within the closed frontier. This trend strengthens informally but has not yet triggered binding multilateral oversight.
+- `emergent_public_outrage` -- first noted turn 10, listed in 1 turn(s) so far: Public and media scrutiny of AI in critical infrastructure intensifies across multiple member states, fueled by the recent bio-incident and ongoing concerns about foreign-controlled systems in judiciary and health. Civil society groups demand binding transparency, and national parliaments begin considering inquiries. The momentum sustains pressure on EU institutions to act, but no coordinated pan-European response has yet emerged.
+- US_POSTURE: RETRENCHMENT
+- PORTFOLIO CHARGE: Sovereign Execution Drive −3, priority −1 = −4
+- PROPOSAL BONUS: Sovereign Execution Drive +2 — answers the bio_incident and the failure of prior measures to deliver operational systems
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 23.0 last turn, Sovereign Evaluation Corps finishes t10 +3, SMI in flight +2, capability rose 1.0 −1 = 27.0 → net +2 due to metric rule 5 decay adjustment; final = 25.0

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "campaign_backlash",
+    "probability": 0.20000000000000004,
+    "probability_samples": [
+      0.2,
+      0.2,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "campaign_security_hawk",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "campaign_atlanticist",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.21666666666666667,
+    "probability_samples": [
+      0.09,
+      0.28,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_regional_data_coop",
+    "probability": 0.26666666666666666,
+    "emergent": true,
+    "description": "Several EU member states, citing the cyber_test_shot intrusion and the fragility of transatlantic dependencies, announce a joint initiative to build a sovereign data-sharing and incident-response network for critical infrastructure, using existing Category 6 cyber hardening measures as a foundation. The initiative gains momentum as national cybersecurity agencies express frustration with US-led coordination delays and opaque attribution processes.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

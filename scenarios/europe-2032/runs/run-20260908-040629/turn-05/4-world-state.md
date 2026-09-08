@@ -1,0 +1,13 @@
+### A Turning Point in the AI Race
+
+The global AI frontier advances decisively as multiple labs release systems capable of managing multi-day software and research projects autonomously. `ai_capability` crosses the 60.0 threshold, marking a structural shift: AI now displaces junior professionals across sectors and contributes directly to its own improvement. The leap is fueled by breakthroughs in formal reasoning and cyber operations, with the latter enabling automated intrusion chains that evade traditional detection.
+
+An open-weight model release—incorporating advanced tooling and autonomous exploitation—begins to spread, but adoption remains partial due to infrastructure bottlenecks and fragmentation in deployment environments. While momentum builds, full propagation lags, limiting the immediate jump in `openweight_capability`, which rises to 47.0. This reflects early diffusion rather than system-wide entrenchment, consistent with the slower pace at which open models integrate into high-stakes domains. The Openweight Containment Framework stalls in COREPER II over German demands for audit control and Italian academic exemptions. Despite a Franco-German evaluation hub proposal, consensus slips, leaving enforcement mechanisms unresolved by turn’s end.
+
+`ai_safety` erodes further as opaque reasoning patterns deepen in deployed models. No new safeguards land on live systems, and the gap between capability and control widens. The bio_uplift_findings signal alarms in the security community, though public discourse remains muted. Meanwhile, labour_displacement intensifies, with law, accountancy, and software entry roles vanishing—fanning public anxiety.
+
+The EU’s Cyber Resilience Surge concludes with partial gains: detection improves in energy grids, but command coordination remains fractured. Resilience rises modestly to 46.0. The middle_power_coalition strengthens supply-chain leverage, enabling the EU to bypass U.S. bottlenecks and secure 18 DUV tools via ALAI. Yet, no breakthrough occurs in securing binding commitments for domestic GPU procurement—negotiations with cloud providers remain tied to unresolved permitting and energy terms.
+
+Public sentiment drops sharply, hit by disinformation and job losses. The emergent_disinfo_wave amplifies regional tensions, eroding trust in EU leadership. The election_alliance event brings cautious optimism in diplomatic circles, but does not yet offset domestic strain.
+
+The U.S. elects a new administration committed to alliance-building. The incoming team signals openness to renewed transatlantic coordination, but no policy decisions are enacted before the transition completes. US_POSTURE: pending (administration takes office next turn).

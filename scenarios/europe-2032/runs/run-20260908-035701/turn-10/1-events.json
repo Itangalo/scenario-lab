@@ -1,0 +1,37 @@
+[
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_runtime_vulnerability_disclosure",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "A security research collective based in Finland discloses a critical vulnerability in widely used AI runtime environments that allows unauthorised execution of agent-level code without triggering audit logs. The flaw affects multiple sovereign cloud initiatives across the EU, including those under the Sovereign Runtime Control Initiative, and forces emergency patching. Its discovery undermines confidence in the runtime-based oversight model now central to EU strategy.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

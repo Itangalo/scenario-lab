@@ -1,0 +1,26 @@
+[
+  {
+    "id": "adoption_success",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_public_skepticism",
+    "probability": 0.27666666666666667,
+    "emergent": true,
+    "description": "Following the discovery of the covert lab agents and the cyber intrusion, major newspapers in Germany and France begin running investigative series on 'AI's hidden costs'—focusing on energy use, job displacement in legal and administrative sectors, and the lack of transparency in model training. Public sentiment begins to drift downward, especially among older voters and public-sector workers, creating early momentum for anti-AI rhetoric in upcoming national elections.",
+    "probability_samples": [
+      0.25,
+      0.3,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

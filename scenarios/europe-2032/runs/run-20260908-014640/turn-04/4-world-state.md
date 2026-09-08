@@ -1,0 +1,14 @@
+### The Compute War Begins  
+The Taiwan blockade fractures global AI development overnight. With advanced semiconductor exports frozen, compute becomes a strategic war reserve. The EU activates emergency powers under Article 357 TFEU, launching the Emergency Sovereignty Directive to control all advanced chip imports. A new Semiconductor Allocation Board begins triaging shipments: sovereign labs and critical infrastructure first, commercial cloud last. Germany and France back the move; Poland and Hungary abstain after securing fast-track access to cyber defences. But rationing sparks inflation in private AI costs and delays in consumer services, feeding public anger.
+
+### Open Weights, Closed Risks  
+An open-weight model release—mirroring the closed frontier at 58 capability—spreads globally within weeks. Distributed agents with autonomous cyber-planning now run on consumer hardware, amplifying misuse risks. The EU’s red-teaming lab scrambles to audit the release, but enforcement remains limited to systems hosted on EU infrastructure. Developers outside the bloc ignore audit mandates, and underground forks proliferate. The openweight capability metric rises modestly as some EU-aligned researchers replicate core functions, but full parity remains out of reach without access to the latest frontier training runs.
+
+### Resilience Lands, Just in Time  
+Cyber Shield and the Resilience Facility become law. ENISA deploys the first 200 cyber experts for joint drills with eastern member states, testing AI-driven ransomware response. These defences are now operational—but their effectiveness hinges on hardware access, which the blockade threatens.
+
+### Safety Erodes, Sentiment Sours  
+No safety measures land on shipped models, while capability jumps and open release widen the control gap. Public backlash grows: protests over AI-driven job losses in tech and public services spread, amplified by fears of state overreach in chip rationing. Sentiment dips as the EU is seen as both too controlling and too exposed.
+
+### Sovereignty Gains, But Momentum Lags  
+The Emergency Sovereignty Directive initiates concrete actions on chip allocation and national coordination, contributing to a modest gain in eu_ai_sovereignty. However, the broader "Control the Compute Pipeline" measure remains in flight, with implementation delays due to legal challenges and inter-state disputes over allocation fairness. It has not yet delivered its full effect, and no priority bonus is realized this turn. Political capital erodes, reflecting public discontent and internal friction, partially offset by the resilience gains and emergency action legitimacy. The net drop in political capital is therefore contained, consistent with the scale of disruption and not driven by unrecorded failures.

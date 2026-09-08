@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Resilience Surge −2, Cyber Shield for Critical Operators −3, Labour Transition Accelerator −3, priority −1 = −15  
+PROPOSAL BONUS: Labour Transition Accelerator (cat 7, large) +5 — emergent_labour_displacement_wave landed this turn and this measure answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20.0 last turn, no capacity event, Gigafactories in flight +0, capability rose 2.0 −1 = 19.0  
+emergent_labour_displacement_wave -- first noted turn 1, listed in 2 turn(s) so far: Widespread job losses in legal support, junior software development, and technical writing become visible across multiple EU member states, as firms rapidly adopt AI systems capable of handling multi-step professional tasks. Media coverage intensifies, linking AI directly to unemployment in white-collar sectors for the first time at scale.  
+emergent_ai_research_acceleration -- first noted turn 1, listed in 2 turn(s) so far: Leading academic institutions report that AI agents are now autonomously generating novel research directions in materials science and algorithm design, with several preprints co-authored by AI systems accepted at top conferences. This marks a shift from AI as tool to AI as collaborator in knowledge creation, increasing pressure on policy to keep pace.

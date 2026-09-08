@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Sovereign Inference Grid −3, European AI Shield Initiative −3, European Labour Transition Facility −3, priority −1 = −13  
+PROPOSAL BONUS: European Labour Transition Facility (cat 7, large) +3 — directly answers emergent_regional_aid_pact, a recent and growing internal pressure point on job displacement  
+LEGITIMACY LENDS: capital 32, sentiment 34 → +2  
+SOVEREIGNTY: 16 last turn, no capacity event, capability rose 2.0 −1, eu_frontier_access_denied t4 −2 = 14  
+US_POSTURE: CONSOLIDATION  
+EMERGENT DEVELOPMENTS:  
+- `emergent_regional_compute_pact` -- first noted turn 4, listed in 4 turn(s) so far: A group of EU member states, frustrated by the slow pace of Union-wide compute sovereignty, explore a binding regional pact to jointly fund and govern a shared frontier-class compute cluster hosted across neutral jurisdictions within the bloc. The initiative seeks to bypass stalled negotiations and leverage national security exceptions to fast-track procurement, drawing interest from non-EU NATO allies concerned about access under U.S. consolidation.  
+- `emergent_regional_aid_pact` -- first noted turn 4, listed in 4 turn(s) so far: Several EU member states, facing concentrated job losses in legal and administrative sectors, form a regional aid pact to jointly fund retraining and transition programs using national and EU-level flexicurity resources. The pact emerges outside the formal EU framework but aligns with its goals, creating a patchwork model that pressures Brussels to standardize support.

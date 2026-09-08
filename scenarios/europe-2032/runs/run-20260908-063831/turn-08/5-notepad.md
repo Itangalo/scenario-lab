@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: Secure the Core −3, priority −1 = −4  
+PROPOSAL BONUS: Accelerate EU Evaluation Corps Recruitment and Training Pipeline (cat 5, large) +3 — direct response to eval_anomaly_reports and the failure of audit rights, both recent and severe, addressing critical staffing gap  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 19.0 last turn, no capacity event, capability rose 2.5 −1, Gigafactories in flight +0 (finished), Secure the Core in flight +0 = 18.0 → adjusted to 17.0 due to evaluation_crisis signal  
+US_POSTURE: CONSOLIDATION  
+emergent_municipal_ai_backlash -- first noted turn 5, listed in 4 turn(s) so far: Public-sector unions and local governments intensify calls to restrict AI in welfare and healthcare systems, citing accountability gaps and recent disruptions.  
+emergent_detection_breakthrough_late -- first noted turn 5, listed in 4 turn(s) so far: German and French pilot teams report improved signal-to-noise in anomalous activation tracing, suggesting potential for scalable real-time detection. Integration into EU-wide evaluation frameworks remains politically contested.  
+emergent_joint_threat_initiative -- first noted turn 8, listed in 1 turn(s) so far: Joint cyber command or biosurveillance pact invites Union participation after a major incident, pooling intelligence and response capacity. Requires a recent shock to overcome inertia.  
+emergent_evaluation_crisis -- first noted turn 8, listed in 1 turn(s) so far: Independent audits of the Secure the Core initiative reveal that the air-gapped evaluation nodes are operating with outdated test suites and lack real-time adversarial probing capacity. The evaluation framework cannot keep pace with frontier model obfuscation techniques, raising doubts about the credibility of the entire EU assurance pipeline just as it becomes operational.

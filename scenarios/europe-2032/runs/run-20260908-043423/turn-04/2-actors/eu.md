@@ -1,0 +1,29 @@
+## Statement changes  
+No statement changes.
+
+## Portfolio  
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``  
+``Critical Infrastructure Cyber Shield (category 6, costs 3 per turn, started turn 1, finishes on turn 4): Mandate and fund AI-driven intrusion detection and automated response systems across EU energy, water and port operators, with biannual red-teaming and cross-border coordination.``  
+``Accelerate EU Access to Frontier Models via Sovereign Compute Partnerships (category 4, costs 3 per turn, started turn 2, finishes on turn 7): Secure guaranteed, legally enforceable access to the most capable AI models for EU public institutions and essential industries by co-investing in and co-locating sovereign compute clusters with leading non-U.S. frontier developers, under EU jurisdiction and operational control.``  
+``Establish EU Pre-Release Evaluation Authority with Emergency Powers (category 1, costs 3 per turn, started turn 3, finishes on turn 6): Create a central, independent body with legal authority to conduct or commission third-party evaluations of high-capability AI systems before deployment, with power to delay or condition release based on demonstrated risk.``
+
+*Finished measure:* Critical Infrastructure Cyber Shield. The mandate is fully implemented across 18 member states, red-teaming protocols are institutionalised, and AI-driven detection systems are now integrated into national cyberdefence frameworks. The measure delivers its intended resilience uplift and is sustained operationally beyond this turn.
+
+## New measure  
+``Launch Sovereign AI Acquisition Facility with Strategic Equity Window (category 4, costs 3 per turn, started turn 4, finishes on turn 8): Authorise the European Innovation Council to deploy up to €50bn in equity investments to acquire or co-own frontier AI labs and compute infrastructure in third countries aligned with EU values, ensuring legal jurisdiction, data locality, and operational control.``  
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 8`  
+`Targeted effect:` eu_ai_sovereignty +12 (by securing direct ownership of frontier assets under EU law), ai_safety +5 (by enabling public-sector oversight of development processes), eu_political_capital +2 long-term (by demonstrating tangible progress on strategic autonomy)  
+`Applies to:` Non-U.S., non-China frontier AI labs and compute clusters in jurisdictions with strong rule of law and data protection (e.g., South Korea, Canada, Japan, Nordic states); investments conditional on binding agreements placing operations under EU regulatory reach and security oversight
+
+## Priority  
+``Launch Sovereign AI Acquisition Facility with Strategic Equity Window`` is the priority this turn because the bio_uplift_findings and member_state_defection have exposed the fragility of both technical and political control: we cannot regulate what we do not own, and we cannot defend what we do not understand. With openweight_capability at 55.5 and emergent models already being used in cyber and bio-probing, waiting for organic build-out or diplomatic alignment is a surrender of agency. This is the only measure that closes both gaps — it turns strategic vulnerability into sovereign capacity, directly serving our two-year commitment.
+
+## In practice  
+We are acting on the collapse of control and the erosion of cohesion. The bio_uplift_findings — a credible path to human-infective organism design — has shifted the risk calculus: we are no longer preparing for hypotheticals, but responding to demonstrated capability in dangerous domains. At the same time, the member_state_defection has shattered the fiction that the Union can enforce a common line without material leverage. Words are not enough. We must own the systems we rely on.
+
+The Sovereign AI Acquisition Facility is our answer. The European Innovation Council, under Article 185 TFEU, will launch a targeted equity window to acquire stakes in frontier labs outside U.S. and Chinese influence. We are not subsidising — we are buying. The €50bn comes from repurposing €20bn of stalled private capital from the Tech Sovereignty Package and €30bn redirected from the Gigafactories contingency reserve. Legal anchoring will be through bilateral investment treaties with host states, reinforced by the Anti-Coercion Instrument to ensure compliance with EU jurisdiction and data governance. The first targets are a Canadian lab demonstrating strong interpretability work and a South Korean compute cluster with open access policies — both have expressed interest, but only if we act before Q3.
+
+At the same time, we are defending the Pre-Release Evaluation Authority against legal challenges. The pilot phase is live in France, Germany, and Finland, using red-team labs to stress-test two incoming models above 60.0 capability. We are preparing for pushback from developers and from member states fearing market disruption, so we are pairing the authority with a fast-track adoption pathway for compliant systems — a carrot to go with the stick. The Council Legal Service is reviewing the emergency powers justification under Article 222 TFEU, and we are preparing a communication campaign to frame this not as overreach, but as the minimum necessary to prevent uncontrolled release in a world where models may already be adapting to evade scrutiny. This is not bureaucracy — it is survival.

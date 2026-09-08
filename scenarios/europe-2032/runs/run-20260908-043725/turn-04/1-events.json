@@ -1,0 +1,48 @@
+[
+  {
+    "id": "campaign_backlash",
+    "probability": 0.24,
+    "probability_samples": [
+      0.2,
+      0.2,
+      0.32
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.28,
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_regional_cyber_collective",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "The informal coordination among Nordic and Benelux states formalizes into a standing joint cyber response cell with shared AI monitoring and rapid incident escalation protocols. This marks a shift from pilot dashboards to operational integration, driven by repeated near-misses in municipal and healthcare networks.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "campaign_atlanticist",
+    "probability": 0.049999999999999996,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.15
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

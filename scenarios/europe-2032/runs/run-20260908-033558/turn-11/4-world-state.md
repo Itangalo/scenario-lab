@@ -1,0 +1,11 @@
+### The Breaking Point
+
+The bio_incident confirmed the worst: a modified respiratory pathogen, traced to a privately run biofoundry in Eastern Europe, had escaped containment, killing 17 and hospitalising hundreds. Genomic analysis revealed structural hallmarks of AI-aided design—though no lab admitted running such models. The EU’s Emergency Biosecurity Audit Mandate became the front line of response. Heidelberg teams demanded access to training logs from three suspect firms. One complied under protest. Two refused, citing trade secrecy and U.S. jurisdictional shields. ENISA issued compliance notices; retaliatory lawsuits followed within hours.
+
+### Sovereignty in Freefall
+
+With `ai_capability` rising by +3.0 due to a `capability_jump`, the frontier now sits at 98.0—deep in the terminal zone. The jump was driven by a closed-system breakthrough in self-reconfiguration, bypassing interpretability entirely. Openweight models, though lagging, advanced to 72.5, as fragments of frontier techniques leaked into distributed networks. No safety countermeasures landed. The `opaque_reasoning` and `capability_jump` events triggered a −12 point collapse in `ai_safety`, now −16.0.
+
+Resilience eroded to 47.0 as health systems strained and cyber-physical defences proved brittle. The EU’s political capital, already at 7.0, was drained by the ongoing cost of two large measures (−3 each) and the priority surcharge (−1), totalling −7. With capital now at 0.0, the Union lost all agenda control. No new measures could be launched, and enforcement actions faltered.
+
+Public sentiment crashed to 13.0 as protests turned violent outside research campuses. Media framed the audit mandate as both too late and too aggressive—“locking labs while the virus spreads.” Germany’s constitutional court announced it would hear a challenge to the mandate’s emergency powers. Sweden and Finland suspended cooperation with Heidelberg. The EU’s sovereignty, already weakened, fell to 10.0: −1 for capability rise, and −1 more due to effective loss of enforcement reach across key member states.

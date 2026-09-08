@@ -1,0 +1,13 @@
+### A Crisis of Continuity
+
+The EU enters 2030 under fire. A wave of AI-powered ransomware cripples regional healthcare systems in Germany, France, and Belgium, exploiting legacy interfaces with model-generated precision. The attacks, while not unprecedented in form, are alarming in coordination — a sign that offensive automation has outpaced public-sector defences. In response, the EU launches the **Hardened Continuity Protocol**, a large category 6 measure mandating failover systems, anomaly detection, and air-gapped fallbacks for high-capability AI in critical infrastructure. Named as the priority, it begins implementation with pilot programmes in affected states, backed by access to new sovereign compute.
+
+Yet momentum falters. The **Operational Sovereignty Framework** and **EU Sovereign Audit Mandate**, both due to finish this turn, stall in final negotiations. Two member states hosting foreign hyperscaler zones withhold support, citing fears of economic retaliation. Though offered transition buffers and co-investment, they demand further concessions — a sign of growing fragmentation. The Audit Mandate, intended to enforce transparency, now risks being diluted or delayed.
+
+Meanwhile, global AI capability climbs to 66.0 as labs internalise lessons from prior incidents, but no shared safety improvements emerge. Opaque systems continue to operate unchecked, and the gap between capability and control widens. With no safety breakthrough and rising systemic risk, `ai_safety` drops sharply to 9.0.
+
+The **Emergency Compute Mobilisation Directive** progresses technically, with funding unlocked and sites advancing, but cross-border energy and security agreements lag. US export controls under **CONSOLIDATION** posture continue to slow deployment, particularly in Finland. While the directive remains in flight, its real-world impact is deferred.
+
+Resilience sees a modest boost to 57.0, driven by the partial activation of the Hardened Continuity Protocol and ongoing cyber defence coordination. However, political capital falls to 10.0 under the weight of three large measures and a failed push for unity. Public sentiment holds at 30.0 — anxiety remains high, and no visible benefit offsets the perception of crisis.
+
+Sovereignty dips to 17.0: the +2 from the ECMD in flight is outweighed by the −1 penalty for rising AI capability and the absence of a completed category 4 project this turn.

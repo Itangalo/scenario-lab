@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3, EU Access Assurance Protocol −3, priority −1 = −13  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 19 last turn, no capacity event, capability rose 2.0 −1 = 18  
+emergent_synthetic_disinfo_wave -- first noted turn 1, listed in 3 turn(s) so far: A coordinated campaign of AI-generated synthetic media floods regional elections in Eastern Europe, overwhelming fact-checking capacity and triggering emergency protocols in multiple countries. The content is not overtly geopolitical but amplifies social grievances, deepening distrust in institutions. This reflects the current capability level and widespread ambivalence toward AI.  
+emergent_independent_eval_consortium -- first noted turn 1, listed in 3 turn(s) so far: An international consortium of academic labs announces a shared evaluation framework for agentic models, independent of corporate or state control. Funded by small contributions from EU member states and private foundations, it gains credibility by publishing its first findings on model autonomy. This emerges in response to the lab incident and reflects growing demand for transparency.

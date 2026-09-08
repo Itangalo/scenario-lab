@@ -1,0 +1,23 @@
+Secure autonomous AI development and sovereign control over critical capability thresholds
+
+## Statement changes
+``modify `two_year_commitment` (commitment): Secure autonomous AI development and sovereign control over critical capability thresholds``
+- Trigger: the two-year commitment period closes this turn
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — finished this turn
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — finished last turn
+- `Secure Open-Source Frontier Monitoring Initiative (category 1, costs 3 per turn, started turn 3, finishes on turn 5): Establish a permanent EU-led capability to monitor, evaluate, and respond to open-weight AI releases within days of their appearance, ensuring that distributed frontier models do not become blind spots for safety and security` — finished two turns ago
+- `Leverage ASML for Coordinated Export Control Framework (category 8, costs 3 per turn, started turn 3, finishes on turn 5): Launch a formal EU-level coordination mechanism to align export controls on critical semiconductor manufacturing equipment, beginning with ASML’s EUV and deep-UV lithography systems, to prevent unilateral decisions under external pressure and strengthen strategic autonomy in AI-relevant supply chains` — finished two turns ago
+- `Launch EU Autonomous AI Development Programme with Sovereign Compute and Talent Pipeline (category 4, costs 3 per turn, started turn 5, finishes on turn 8): Initiate a coordinated, publicly governed effort to develop and operate autonomous AI systems within the EU’s legal and physical boundaries, using sovereign infrastructure and protected talent, to ensure independent action when capability thresholds cross into strategic territory` — finished this turn
+
+## New measure
+None this turn. Waiting for funding resolution and legal clarity on InvestAI before committing further capital.
+
+## Priority
+Launch EU Autonomous AI Development Programme with Sovereign Compute and Talent Pipeline — because despite delays, this remains the core instrument through which the EU can achieve autonomous development; with openweight_capability now at 53.0 and autonomous behaviours circulating beyond lab control, the window to build sovereign capacity before critical thresholds are crossed is closing fast.
+
+## In practice
+We are acting to break the logjam on sovereign infrastructure while anchoring our long-term development chain. The InvestAI Gigafactories are legally complete but physically stalled—regional legal challenges over environmental assessments have frozen construction, and the European Investment Bank has held back disbursements pending resolution. To prevent indefinite delay, we have invoked Article 16 TFEU to fast-track grid, cooling, and physical hardening at the French and German sites. This is not a permanent override but a time-bound acceleration: regional authorities retain oversight, but permitting bottlenecks are suspended for 18 months unless annulled by the Court. Work begins immediately on critical path elements—transformer substations, water loops, perimeter security—funded through pre-approved EIB mechanisms, all bound by jurisdictional integrity clauses: no remote access, no cross-border weight transfer, and storage of model weights on sovereign soil under EuroHPC governance.
+
+Simultaneously, we are finalising the launch of the EU Autonomous AI Development Programme. The structural framework is agreed across Paris-Saclay, Munich, and Eindhoven, with each hub now tasked to deliver a sovereign training stack by Q4 2031. Access to EuroHPC exascale machines is formally tied to participation, creating a closed development loop. We are deploying visa fast-tracks and tax shields for retained and returning talent, though recruitment remains below target. The €4.2bn budget is still unfunded, but we are reallocating from Horizon Europe and pressing member states for joint borrowing—this cannot wait. On evaluation, we accept a diluted mandate: full red-teaming applies only to models using public compute or ERC grants, while smaller projects receive interpretability vouchers. It is not ideal, but it preserves political capital amid growing public anxiety. We also join the joint biosurveillance and cyber telemetry alliance, accepting that resilience must be pooled where domestic capacity is thin. This is not just about risk—it is about agency. We are building not just systems, but facts on the ground.

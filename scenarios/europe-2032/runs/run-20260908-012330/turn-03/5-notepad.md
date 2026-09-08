@@ -1,0 +1,6 @@
+`emergent_regional_oversight_push` -- first noted turn 1, listed in 3 turn(s) so far: Member state coordination on regional oversight continues, now intersecting with the EU's formal proposal, though consensus remains elusive.
+`emergent_regulatory_pushback` -- first noted turn 1, listed in 3 turn(s) so far: National-level discussions on restricting large AI training runs intensify, particularly in Germany and Scandinavia, citing energy and labour concerns.
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech Sovereignty Package −3, Cyber Resilience Emergency Directive −3, Accelerate Sovereign Compute Corridors −3, priority −1 = −13
+PROPOSAL BONUS: European AI Oversight Authority (cat 1, large) +3 — directly answers cyber_major_incident and emergent_regional_oversight_push, both recent and severe
+LEGITIMACY LENDS: none — capital 39.0, sentiment 33.0
+SOVEREIGNTY: 21.0 last turn, no capacity event, InvestAI Gigafactories in flight +1, capability rose 2.0 −1 = 21.0 → adjusted to 20.0 after French and Dutch resistance to oversight framework weakened perceived control (−1 under rule 5, emergent event effect interpreted as partial access erosion)

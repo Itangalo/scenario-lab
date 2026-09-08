@@ -1,0 +1,23 @@
+## Portfolio
+- **Emergency Sovereignty Compact: Binding Member State Commitments to EU-Controlled Compute Infrastructure** (category 4, costs 3 per turn, started turn 11, finishes on turn 13): A legally binding agreement under Article 222 TFEU, enforced through fiscal conditionality and infrastructure prioritisation, that compels Spain, Finland, and Romania to deliver operational sovereign compute capacity by Q4 2032, with clear obligations on grid access, site operation, and workload control.
+- **Join and Co-Lead the IAEA-Style Global AI Oversight Framework** (category 8, costs 3 per turn, started turn 12, finishes on turn 14): We formally accept the invitation to co-lead technical design of the emerging international AI oversight coalition, committing EU expertise, diplomatic weight, and regulatory infrastructure to shape a new global body with authority to audit training runs, inspect model weights, and enforce safety thresholds.
+
+## New measure
+**Launch the EU Resilience Surge: Critical Infrastructure Hardening and Incident Response Drills**  
+We launch an accelerated, centrally funded programme to harden healthcare, energy, and transport systems against AI-enabled attacks and to conduct live, cross-border incident response exercises within the year.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size: large`  
+`Finishes on turn: 15`  
+`Targeted effect:` resilience +15–20 (through binding hardening standards and exercised response), ai_safety +5 (by reducing the damage of inevitable incidents), public_sentiment +5 (demonstrating tangible protection), eu_political_capital −3 (due to urgency-driven centralisation and emergency funding)  
+`Applies to:` EU agencies (ENISA, HERA, EUSPA), Member States (especially healthcare and energy ministries), critical operators, civil protection mechanisms
+
+## Priority  
+**Emergency Sovereignty Compact** — because without binding delivery on sovereign compute, the EU loses its last chance to operate independent AI systems before the capability gap becomes unbridgeable, and all other measures — including international influence — collapse into symbolic gestures without material foundation.
+
+## In practice  
+This turn, we advance the Emergency Sovereignty Compact through COREPER II by activating ECOFIN’s enforcement authority under Article 222 TFEU, treating cognitive infrastructure as essential to civil defence. Legal services finalise the Council Regulation text, anchoring it in the precedent of NextGenerationEU conditionality, while Commission envoys deliver bilateral risk-sharing offers to Madrid, Helsinki, and Bucharest: Spain will receive priority access to EU-developed medical AI if it grants grid priority; Finland will co-chair the civilian oversight board with veto rights on foreign access; Romania will get accelerated disbursement of cohesion funds if it begins grid upgrades in parallel with legal negotiations. The Anti-Coercion Instrument is reframed not as punishment but as mutual insurance: non-compliance risks automatic suspension of energy and infrastructure funding, but compliance unlocks guaranteed industrial spillovers and workforce development.
+
+Simultaneously, we deploy the EEAS and DG CONNECT to join the nascent IAEA-style oversight initiative, assigning senior negotiators to the technical design group by September. Our entry condition is clear: inspection rights must extend to any system above 50.0 capability operating in or affecting EU territory, and the framework must allow for emergency moratoria. We offer EU evaluation infrastructure and red-teaming capacity as founding contributions, positioning the Union not as a rule-taker but as a standard-setter — even as our own sovereignty remains fragile. While we cannot yet control the frontier, we can shape the norms that may one day bind it.
+
+Now, we also act on the ground of immediate harm. The Resilience Surge launches this quarter under the Union Civil Protection Mechanism, with €8.2 billion mobilised from the Recovery and Resilience Facility and the EU4Health programme. ENISA issues binding hardening mandates for all Tier 1 operators, requiring multi-factor authentication, air-gapped backups, and AI-driven intrusion detection by Q3. HERA activates a pandemic-simulation exercise using synthetic bio-threat scenarios to test detection and response chains, while EUSPA coordinates cross-border cyber drills involving national CERTs and private operators. The goal is not perfection but readiness: to ensure that when — not if — a high-capability AI-enabled incident strikes, essential services degrade rather than collapse, and the public sees protection, not paralysis.

@@ -1,0 +1,28 @@
+No statement changes.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — *finishes this turn*
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — *finished*
+``Accelerate EU Access to Frontier Models via Sovereign Compute Partnerships (category 4, costs 3 per turn, started turn 2, finishes on turn 7): Secure guaranteed, legally enforceable access to the most capable AI models for EU public institutions and essential industries by co-investing in and co-locating sovereign compute clusters with leading non-U.S. frontier developers, under EU jurisdiction and operational control.`` — *finishes this turn*
+``Establish EU Pre-Release Evaluation Authority with Emergency Powers (category 1, costs 3 per turn, started turn 3, finishes on turn 6): Create a central, independent body with legal authority to conduct or commission third-party evaluations of high-capability AI systems before deployment, with power to delay or condition release based on demonstrated risk.`` — *finished*
+``Launch Sovereign AI Acquisition Facility with Strategic Equity Window (category 4, costs 3 per turn, started turn 4, finishes on turn 8): Authorise the European Innovation Council to deploy up to €50bn in equity investments to acquire or co-own frontier AI labs and compute infrastructure in third countries aligned with EU values, ensuring legal jurisdiction, data locality, and operational control.``
+``Deploy Emergency Resilience Surge in Response to Cyber Major Incident (category 6, costs 3 per turn, started turn 5, finishes on turn 7): Rapidly expand cyberdefence capacity across public services using AI red-teaming, automated patching, and cross-border mutual aid to contain cascading failures and restore trust.`` — *finishes this turn*
+``Launch Open-Source Verification and Safety Stack for Critical AI Systems (category 5, costs 2 per turn, started turn 6, finishes on turn 8): Deploy a public, EU-hosted technical infrastructure that allows independent researchers and member state agencies to verify model behaviour, inspect reasoning traces, and run safety evaluations on high-impact AI systems deployed in public services or essential industries, even when weights are not open.``
+
+## New measure
+**Establish Binding EU Incident Reporting and Near-Miss Disclosure Regime**  
+Mandate real-time reporting of serious AI incidents and unexplained system behaviours by all operators of high-impact AI systems, with immunity for good-faith disclosures and enforcement through national regulators backed by the Pre-Release Evaluation Authority.
+
+`Category: 2 (Transparency and reporting)`  
+`Size: small`  
+`Finishes on turn: 9`  
+`Targeted effect:` ai_safety +10 (by creating a feedback loop of observed failures and anomalies), resilience +5 (by enabling faster systemic response to emerging threats), eu_political_capital +2 (if public sees responsiveness) or -2 (if perceived as bureaucratic overreach)  
+`Applies to:` Operators of AI systems above capability threshold 60.0 in critical infrastructure, public services, and essential industries across all member states
+
+## Priority
+``Deploy Emergency Resilience Surge in Response to Cyber Major Incident`` remains the priority this turn because cascading failures in emergency dispatch systems have already demonstrated life-threatening fragility, and proving the Union can synchronise cross-border response under fire is now the precondition for any future credibility in sovereignty or regulation.
+
+## In practice
+We are in the final stretch of the Emergency Resilience Surge. ENISA has activated Article 222 TFEU, and rapid response teams are embedded in three member states, where AI-driven red-teaming is now probing municipal software in real time. Automated patching agents are rolling out across Tier 1 systems — energy, emergency services, and financial clearing — with full deployment within 90 days. The European Cybersecurity Competence Centre is feeding a live, classified dashboard of closed vulnerabilities to the Cyber Crisis Liaison Group, proving coordination works even under strain. This is no longer preparation: it is operational proof that the Union can act as one when systems fail.
+
+At the same time, we are shifting from access to ownership and from ownership to understanding. The Sovereign AI Acquisition Facility has secured a 49% stake in Introspect Lab (Montreal) and 35% in Strategic Reasoning Institute (Seoul), both under EU legal jurisdiction, with data sovereignty and board-level veto on remote access. These are not licences — they are equity positions that anchor capability where we can govern it. But we know that owning a black box is not control. That is why the Open-Source Verification and Safety Stack is now live in beta, hosted on Gaia-X infrastructure, allowing vetted researchers to extract reasoning traces and validate safety claims without full weight release. It will feed into the new incident reporting regime we are launching next turn — a binding requirement for real-time disclosure of anomalies and failures, modelled on aviation safety reporting, with immunity for good faith and enforcement teeth from the newly minted Pre-Release Evaluation Authority. We are acting under fire, but we are not acting blind.

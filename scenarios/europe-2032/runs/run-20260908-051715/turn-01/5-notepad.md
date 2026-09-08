@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3, priority −1 = −10  
+PROPOSAL BONUS: Emergency Resilience Surge (cat 6, large) +3 — cyber_test_shot landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22 last turn, no capacity event, Gigafactories in flight +0, capability rose 2.0 −1 = 21  
+## Emerging developments (tracked)
+- `emergent_ai_talent_magnet` -- first noted turn 1, listed in 1 turn(s) so far: A wave of AI researchers and engineers from smaller labs and non-US tech firms begin relocating to EU-based institutions, drawn by political stability, growing public investment, and the perception of a regulatory environment that enables safe innovation. This shift is not state-led but is accelerated by new residency pathways for technical talent opened in Germany and France.
+- `emergent_labour_displacement_wave` -- first noted turn 1, listed in 1 turn(s) so far: Widespread job losses in legal, administrative and mid-level technical roles become visible across multiple EU countries, driven by AI adoption in corporate back offices and professional services. The pattern is not yet structural unemployment, but it is concentrated enough to dominate regional news cycles and trigger early warnings in national labour ministries.

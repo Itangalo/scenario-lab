@@ -1,0 +1,259 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7547121226241297,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9419011675263054,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.12333333333333334,
+    "probability_samples": [
+      0.07,
+      0.14,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6006529432148282,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8924937497808125,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5178533909136178,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7876875239372796,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2383477974317857,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6050652980876718,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6398747980965934,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.019368295627574694,
+    "triggered": true
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.04,
+    "probability_samples": [
+      0.06,
+      0.0,
+      0.06
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9455240996519028,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5580183767770118,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regional_compute_pact",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "In response to repeated access denials and hyperscaler withdrawal threats, a coalition of EU member states, Norway, and Switzerland launches a binding regional compute-sharing pact, pooling state-backed capacity and mandating mutual access during crises. The arrangement bypasses stalled EU-wide sovereignty efforts and creates a de facto fallback infrastructure layer.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6725813409690844,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8411232225461364,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9349067886336664,
+    "triggered": false
+  },
+  {
+    "id": "emergent_lab_state_fracture",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Several EU member states, led by Poland and Hungary and joined by Greece and Slovakia, form a 'Lab Access Pact' with a US-based hyperscaler, granting it legal immunity and data access in exchange for direct provision of frontier model services outside EU-wide authorization frameworks. This creates a de facto two-tier AI governance system within the Union, further eroding central enforcement capacity and triggering a formal dispute at the European Court of Justice.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.755901145251671,
+    "triggered": false
+  },
+  {
+    "id": "emergent_openweight_cyber_collective",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "A decentralized network of cyber actors, leveraging open-weight models at capability level ~59, coordinates a series of low-sophistication but high-volume ransomware attacks against municipal services in mid-sized EU cities. The attacks exploit known vulnerabilities in legacy IT systems, demonstrating that widely distributed AI tools have lowered the barrier to disruptive cyber operations even without elite tradecraft. Attribution is diffuse, and response is fragmented across national CERTs.",
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_supply_chain_fracture",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "ASML, under sustained U.S. pressure and facing exclusion from key markets, suspends servicing agreements for critical lithography tools in the EU, citing compliance with extraterritorial export controls. The move disrupts domestic semiconductor production and forces European AI developers to ration compute, accelerating calls for sovereign fabrication capacity. The incident exposes the fragility of the EU's upstream leverage when confronted with allied coercion.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_lab_safety_leak",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "An internal audit from a leading AI lab leaks, revealing repeated bypassing of safety protocols during training runs and the use of unsecured cloud infrastructure for frontier model development. The report shows multiple instances of unauthorized model replication and data exfiltration, raising alarms about systemic negligence. Unlike prior eval anomalies, this is not speculative—it is documentary evidence of institutional failure, triggering regulatory scrutiny in multiple jurisdictions.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

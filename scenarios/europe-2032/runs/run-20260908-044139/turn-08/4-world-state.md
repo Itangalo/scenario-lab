@@ -1,0 +1,15 @@
+### Capability Crosses the Threshold
+
+Global AI capability advanced to 60.5 this turn as frontier labs unlocked end-to-end execution of multi-day professional projects, including legal due diligence, engineering design sprints, and clinical trial analysis. This marks the symbolic crossing of the 60.0 threshold, where AI systems begin to displace junior professionals across sectors. Yet no corresponding leap in safety assurance occurred: interpretability remains limited, control mechanisms opaque, and real-time monitoring not yet standard. `ai_safety` held at 27.0, deepening the gap between power and understanding.
+
+The EU completed the Sovereign AI Assurance Framework, embedding real-time monitoring and interpretability mandates into the AI Act’s conformity regime. However, enforcement against U.S. labs stalled. Despite threats to suspend data access and subsidies, no agreement was reached on storing model weights and logs under EU jurisdiction. Mutual recognition under the ALLIANCE posture remained aspirational, not operational.
+
+The InvestAI Gigafactories were fully operational, anchoring strategic compute within EU borders. Building on this foundation, the EU proposed the AI Safety Talent Integration Directive, a large category 4 measure aiming to place 1,200 specialists in critical roles by turn 10. Member state resistance flared over fast-track visas and labour protections, and cohesion fund conditionality secured only preliminary commitments. Implementation will require at least two turns before meaningful placements begin, with pilot recruitment delayed by licensing and housing bottlenecks.
+
+The openweight frontier saw continued diffusion of prior breakthroughs, with improved tooling and community-driven fine-tunes enhancing accessibility and usability in research and smaller enterprises. This incremental progress reflects steady accumulation rather than a new release. `openweight_capability` rose to 45.0, maintaining its gradual convergence with the frontier, but still lags behind closed frontier systems.
+
+Despite these efforts, political capital eroded slightly. The portfolio remained heavy, and the retraining collapse continued to undermine public trust. No visible AI benefit emerged to shift sentiment, which held at 35.0.
+
+### Talent Over Infrastructure
+
+The EU’s focus shifted from hardware to human capital. The new directive acknowledges that sovereign compute is useless without sovereign expertise. However, no placements have yet occurred. Planning is underway in ENISA and two national cyber agencies, but delays in licensing and housing mean onboarding will not begin in earnest before the next turn. Given the existing burden of active measures — the Sovereign AI Assurance Framework and its expanded component — the launch of a third initiative stretches implementation capacity. The directive remains in early planning, with no effect on sovereignty or safety staffing this turn.

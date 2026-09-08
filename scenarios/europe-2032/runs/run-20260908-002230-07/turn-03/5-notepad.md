@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Hardened Critical Infrastructure Directive −3, Cyber Defence Acceleration Fund −3, European AI Defence Corridor −3, priority −1 = −16  
+PROPOSAL BONUS: European AI Defence Corridor (cat 6, large) +3 — cyber_defence_breakthrough and cyber_major_incident both landed this turn and this answers them directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20.0 last turn, no capacity event, capability rose 2.5 −1 = 19.0  
+emergent_cyber_defence_initiative -- first noted turn 1, listed in 3 turn(s) so far: A European cybersecurity consortium demonstrates AI-driven behavioral anomaly detection capable of identifying swarm intrusions, marking the first clear shift in the offense-defense balance in years. Deployment remains limited, but interest from member states is growing rapidly.  
+emergent_sovereignty_pact -- first noted turn 1, listed in 3 turn(s) so far: A coalition of EU member states, alarmed by the US control over frontier AI and the Kimi K3 open release, launches a joint research and compute-sharing initiative to accelerate sovereign European model development, framed as a 'digital sovereignty emergency'.

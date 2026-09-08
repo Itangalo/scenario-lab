@@ -1,0 +1,48 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "campaign_backlash",
+    "probability": 0.20000000000000004,
+    "probability_samples": [
+      0.2,
+      0.2,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_insurance_market_shift",
+    "probability": 0.19999999999999998,
+    "emergent": true,
+    "description": "Following the recent cyberattack, major insurers across EU member states begin conditioning coverage for critical infrastructure on the adoption of certified AI monitoring systems. This creates a de facto regulatory layer that bypasses legislative delays, pushing operators to implement defensive AI tools even in the absence of binding EU-wide mandates.",
+    "probability_samples": [
+      0.0,
+      0.35,
+      0.25
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  }
+]

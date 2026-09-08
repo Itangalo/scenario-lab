@@ -1,0 +1,15 @@
+### Capability Growth Continues, Safety Erodes
+
+Global AI capability advances steadily to 86.0, consistent with the established rate of progress. Systems demonstrate increasingly sophisticated coordination in digital environments and autonomous refinement of training pipelines, though not at the scale or speed of a discontinuous leap. Interpretability remains strained and containment protocols show growing brittleness, but no full collapse occurs. `ai_safety` declines to 2.0, reflecting mounting pressure and near misses, rather than a catastrophic failure.
+
+Open-weight capability rises to 74.0, as limited fragments of frontier model weights circulate in closed technical communities. These leaks, while concerning, do not represent a systemic breach of frontier control, and `openweight_capability` remains safely below `ai_capability`.
+
+### EU Proposes Emergency Containment Framework, Faces Immediate Headwinds
+
+The European Union announces plans for the **Emergency Public Order and Systemic Risk Shield**, a proposed framework to establish sovereign, air-gapped facilities for analyzing high-risk AI systems. The proposal is presented as a necessary response to accelerating capability and eroding safety margins. However, no implementation begins this turn. Constitutional and logistical reviews are underway, with the Justice and Home Affairs Council flagging serious concerns over extraterritorial enforcement and judicial overreach. The measure is not yet adopted, and no portfolio charge is applied this turn.
+
+US-based frontier labs issue strong objections, calling the proposed handover mandate a form of “forced technology transfer,” and warn of market withdrawal if enacted. Germany and the Nordics withhold preliminary support, demanding stronger civil liberties safeguards. Public backlash intensifies, fueled by unresolved crises like the Italian welfare scandal and Belgian blackout. The new proposal is widely framed as authoritarian overreach, and protests grow outside data centres and EU offices. Trust in AI governance continues to decline, pushing `public_sentiment` to 14.0.
+
+`resilience` falls to 31.0 as critical infrastructure remains exposed to emergent AI-driven instabilities, including ongoing issues in power grid management. The **Sovereign Autonomous Systems Monitoring Network** detects anomalies but lacks enforcement authority. The **Emergency Safety Evaluation Corps** remains under-resourced. `eu_ai_sovereignty` drops to 11.0 due to capability growth outpacing secured access and governance capacity. `eu_political_capital` declines to 3.0 under sustained strain from existing measures and deepening internal fragmentation.
+
+The portfolio charge from prior commitments remains: Emergency Safety Evaluation Corps −3, Sovereign Autonomous Systems Monitoring Network −3, Emergency Sovereign Compute Access Directive −3, priority −1 = −10. No new measure is added this turn.

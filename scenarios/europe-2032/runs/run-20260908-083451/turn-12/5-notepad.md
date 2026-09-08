@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Emergency Activation of the European AI Foundry Agency −3, Co-Leadership in Distributed AI Safety Framework −3, priority −1 = −7  
+PROPOSAL BONUS: Co-Leadership in Distributed AI Safety Framework (cat 8, large) +3 — answers emergent_global_ai_governance_initiative directly, recent and credible, though indirect in domestic impact  
+LEGITIMACY LENDS: none (capital 10 < sentiment 21 → no addition)  
+SOVEREIGNTY: 10 last turn, no capacity event, capability rose 0.5 −1 = 9  
+US_POSTURE: ALLIANCE  
+emergent_labour_displacement_wave -- first noted turn 1, listed in 11 turn(s) so far: Widespread job losses in legal, administrative and mid-level tech roles become visible across multiple member states as firms deploy AI agents capable of handling multi-step professional workflows. Union-level analysis confirms a structural shift, not cyclical unemployment, triggering early debate on social protection reforms.  
+emergent_global_ai_governance_initiative -- first noted turn 1, listed in 11 turn(s) so far: A coalition of non-aligned states and academic institutions advances a distributed AI safety testing and model provenance framework, inviting the EU to co-lead its technical arm. The initiative gains credibility as trust in laboratory self-reporting erodes following recent loss-of-control incidents.

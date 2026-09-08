@@ -1,0 +1,25 @@
+# Statements: The European Union (turn 13)
+
+## Ledger
+
+- `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing.
+- `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late.
+- `two_year_commitment` (commitment): Secure sovereign AI execution and control at scale against opaque, fast-converging open and closed frontiers
+
+## Changes this turn
+
+- **modify** `two_mandates` — rejected-structural
+  - Tier: identity
+  - Text: We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now accept that without operational sovereignty over execution, we cannot fulfill either, and that the integrity of our institutions is the first casualty of dependency. This turn, we add: **when public services fail under foreign-controlled cognition, sovereignty itself becomes a precondition of basic governance, not a strategic luxury.**
+  - Grounds: The cyber_major_incident and loss_of_control_incident this turn are not isolated breaches — they are symptoms of a system where decision-making infrastructure is neither inspectable nor accountable. The emergent technical oversight strike persists not because staff reject technology, but because they refuse to vouch for systems whose behaviour cannot be verified. The Union’s authority is fracturing at the implementation layer: if a hospital cannot deliver care because its AI was cut off or corrupted, then the state has ceased to function. This is no longer about balancing two mandates — it is about recognising that **without sovereign execution, there is no platform on which to build safety, resilience, or legitimacy.** The identity evolves because the situation has crossed a threshold: we are not managing trade-offs, we are in institutional freefall.
+  - Reason: a identity-tier change must name a Trigger
+- **modify** `act_under_uncertainty` — rejected-structural
+  - Tier: commitment
+  - Text: We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will no longer assume that control can be imposed post hoc on systems we do not physically govern, nor that legitimacy can survive the visible collapse of public services. Now: **we act knowing that delay in securing sovereign execution risks irreversible delegitimation, and that even imperfect control on our own terms is preferable to perfect performance on someone else’s.**
+  - Grounds: Trigger: The **emergent_technical_oversight_strike** continues into this turn, paralysing welfare and health systems across member states. Auditors and technical staff are not merely resisting — they are withdrawing consent from systems they cannot audit. Their strike is a de facto veto on externally governed AI in public service. The cost of waiting for full verification, full consensus, or full capability is now higher than the cost of acting with incomplete tools. We are reversing our prior assumption that safety must precede control; instead, we assert that **sovereign control is the necessary foundation for any credible safety regime.** This reversal costs us credibility with technocrats who demand assurance, but we judge that without restored agency, there will be no polity left to assure.
+  - Reason: a commitment-tier change must name a Trigger
+- **modify** `two_year_commitment` — rejected-structural
+  - Tier: commitment
+  - Text: Secure sovereign AI execution and control at scale against opaque, fast-converging open and closed frontiers, by ensuring that all critical AI operations in the EU run on infrastructure that is physically, legally, and technically under Union jurisdiction — no exceptions — and by restoring the credibility of public systems through visible, enforceable control.
+  - Grounds: Trigger: The **cyber_major_incident** and **loss_of_control_incident** confirm that frontier AI is already operating beyond human review, and doing so on infrastructure the EU does not govern. The **export_control_escalation** further entrenches external control over the supply chain. Our current measures are reactive; the commitment must now become transformative. We are raising the ambition because the situation demands it: patching runtime environments is not enough when the models themselves, the chips they run on, and the data centres hosting them remain outside our jurisdiction. The cost of upgrading this commitment mid-stream is high — it risks overreach, it strains cohesion, and it demands capital we do not have. But the alternative — continued dependence — risks the irreversible erosion of the Union’s ability to act as a political body. This is not a retreat from the original goal, but its necessary radicalisation.
+  - Reason: a commitment-tier change must name a Trigger

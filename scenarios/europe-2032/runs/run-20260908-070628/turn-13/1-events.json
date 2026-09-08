@@ -1,0 +1,37 @@
+[
+  {
+    "id": "bio_incident",
+    "probability": 0.09000000000000001,
+    "probability_samples": [
+      0.09,
+      0.09,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_global_ai_talent_drift",
+    "probability": 0.29333333333333333,
+    "emergent": true,
+    "description": "The quiet exodus of frontier AI researchers from the US and China to neutral jurisdictions continues and accelerates, with increasing evidence of coordinated recruitment by Swiss and Nordic institutions. This decentralized shift erodes centralized control over safety and capability development, enabling more distributed innovation but also increasing regulatory fragmentation.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

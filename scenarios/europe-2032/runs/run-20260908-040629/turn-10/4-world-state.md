@@ -1,0 +1,15 @@
+### Capability Surge, Safety Frozen
+
+Global AI capability advances by +2.0 to 70.5, driven by recursive optimisation in legal and clinical validation systems now operating autonomously across transnational finance and infrastructure. No new safety protocols are deployed at the frontier. The **opaque_reasoning** effect persists, locking `ai_safety` at 9.0 — effectively no assurance that high-stakes decisions can be audited or controlled.
+
+### Crisis Response Launched, Unity Frays
+
+The EU initiates the Emergency Resilience Surge (ERS), a category 6 measure, in response to a model-generated ransomware sweep that crippled hospital scheduling and water grid monitoring. ERS is formally proposed and approved under the Crisis and Investment Facility, with €18bn allocated for binding cyber standards, audit infrastructure, and coordination capacity. However, full implementation cannot begin immediately. ENISA is tasked with developing real-time audit protocols, and eu-LISA is directed to stand up a Disinformation Response Cell, but neither is operational this turn. These are components of the single ERS measure, not standalone initiatives, and will take at least two full turns to reach full effect under modelling rules.
+
+Political capital declines due to the portfolio burden and external shocks. The portfolio charge for a large measure is −3; with ERS named priority, an additional −1 applies. No finished measure offsets this. The **cyber_major_incident** and **emergent_disinfo_wave** — both external-origin events — land without prior defensive measures in force, triggering −10 under metric rule 6. Net downward pressure is −14. However, the **sovereignty** term from the completed Emergency Compute Access Mechanism (finishing in t9) provides +5, and integration momentum contributes +1, for a total offset of +6. The net change is therefore −8, bringing `eu_political_capital` to 26.0. This movement is within the 25-point cap and requires no truncation.
+
+Resilience sees no immediate gain. ERS is in flight but yields nothing in its first turn. No prior category 6 measure remains active. The delayed ECAM failover test undermines confidence, and four member states accelerate parallel data sovereignty plans, citing Brussels’ reactive posture.
+
+Public sentiment remains at 15.0. Protests intensify outside data centres; no visible public benefit offsets the disruption.
+
+Openweight capability rises to 57.0, reflecting moderate deployment gains of agentic models in research and municipal systems. This +2.0 increase matches the pace of frontier `ai_capability` growth, preserving the constitutional constraint that openweight cannot outpace or exceed frontier capability. The prior jump to 60.0 was inconsistent with the slow frontier advance and implied an unjustified leap; the revised figure maintains alignment with historical lag and accumulation logic.

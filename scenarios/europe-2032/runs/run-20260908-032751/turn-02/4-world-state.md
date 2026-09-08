@@ -1,0 +1,14 @@
+### Frontier Momentum and Open Diffusion  
+The global AI frontier advanced by +2.5 this turn, reaching 57.0, as leading labs demonstrated sustained multi-day autonomy in research and engineering agents. These systems now initiate subgoals and correct errors with minimal oversight, marking a clear shift toward agentic behaviour. Open-weight models have continued to diffuse, with Kimi K3’s capabilities being adapted across decentralized networks. However, no new open release exceeded the closed frontier, and while replication has improved, the operational gap remains bounded. `openweight_capability` rises to 47.0—reflecting incremental gains from wider deployment and fine-tuning of existing public models, but not a leap. The increase is consistent with diffusion dynamics, not breakthrough leakage.
+
+### Governance Response Proposed, Not Yet Effective  
+The EU announced plans for the **Public AI Governance Rebuild**, a Category 9 measure aimed at restoring trust in AI-driven public services after the social insurance scandal. The initiative proposes algorithmic audits, real-time bias monitoring, and enforceable human review rights in healthcare and benefits systems, backed by €15bn in tied funding and technical support. It represents a major institutional ambition.
+
+However, no implementation occurred this turn. Legal debates over member state competences delayed adoption, and underfunded ministries lack readiness for audit infrastructure. The model registry peer pressure mechanism was proposed but not activated. As a high-cost, large-scale reform, the measure requires at least two full turns before any effect can materialize. No proposal bonus applies—metric rule 6 forbids instant impact—and preparation consumes only partial political capital.
+
+### Strained Capacity and Falling Sovereignty  
+With three large measures already in flight—InvestAI Gigafactories, Tech Sovereignty Package, and Cyber Shield—the addition of a fourth major initiative remains unconstitutional. The **Public AI Governance Rebuild** is formally *proposed* but not yet *launched* into active portfolio tracking. Only preparatory steps occur this turn; it will count toward the portfolio charge beginning next turn if adopted.
+
+The current portfolio charge thus remains −10 (−3 × 3 active measures, −1 priority). A small additional cost of −3 reflects early coordination overhead and internal resistance, reducing `eu_political_capital` from 38.0 to 35.0. No measure concluded, and brain drain alongside the emergent EUV lithography shortage continue to erode foundational capacity. Compute sovereignty falls to 19.0 as capability advances outpace investment. `ai_safety` drops to 26.0 as safeguards lag behind frontier progress. Resilience holds steady, awaiting activation of Cyber Shield components.
+
+Public sentiment remains unchanged—intent without visible delivery does not restore trust. The EU’s credibility still hinges on execution, not announcement.

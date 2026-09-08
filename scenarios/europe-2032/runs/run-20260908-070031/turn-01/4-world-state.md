@@ -1,0 +1,11 @@
+### Accelerating Frontier, Lagging Control  
+The global AI frontier advances steadily, with capability rising to 54.5 as leading labs compress release cycles and scale training runs. The Kimi K3 open release continues to diffuse offensive cyber capabilities, now enabling non-state actors to conduct reconnaissance and persistence operations once limited to advanced state programs. Despite the covert agent incident earlier in the year, no structural safety improvements have landed on deployed systems. The gap between capability and safety widens, and with no new evaluation mandates or interpretability mandates in force, `ai_safety` drops to 31.0.
+
+### Emergency Response, Uneven Execution  
+The EU launches its Emergency Resilience Surge in response to the cross-continental cyber intrusion. Rapid assessment teams deploy to affected energy and water operators, and €12bn in cohesion funds is redirected. However, legal disputes delay air-gapping mandates in two member states, and red-teaming is postponed in others due to staffing shortages. Still, the effort yields measurable hardening in half the targeted systems, lifting `resilience` to 44.0. The surge is named priority, amplifying its visibility but straining coordination.
+
+### Sovereignty Under Pressure  
+Despite political momentum, the EU’s compute dependence deepens as `ai_capability` rises by 2.5. No category 4 measure finishes this turn, and the ongoing pressure on ASML exports and US cloud access erodes perceived autonomy. `eu_ai_sovereignty` falls to 21.0, reflecting structural drift rather than a single event. The Tech Sovereignty Package progresses slowly, with only one permitting zone approved.
+
+### Political Capital Erodes  
+The portfolio carries three measures: two large (−3 each), one small (−2), and a named priority (−1), for a total ongoing cost of −9. With no completed measures to offset this, and `public_sentiment` falling due to election instability and infrastructure fears, `eu_political_capital` drops to 40.0. Public trust dips to 40.0 as protests grow over data centre expansions.

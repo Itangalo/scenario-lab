@@ -1,0 +1,18 @@
+No statement changes.
+
+## Portfolio
+- ``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
+- ``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — finished
+- ``Public Audit Framework for High-Capability Systems (category 1, costs 3 per turn, started turn 3, finishes on turn 6): Creates an independent public evaluation body with statutory authority to conduct pre-deployment assessments of AI systems above 50.0 capability, including adversarial testing, interpretability reviews, and red-teaming of agent behaviours``
+- ``Pause Frontier Deployment Licenses Pending Safety Review (category 3, costs 3 per turn, started turn 4, finishes on turn 5): Establish a temporary licensing requirement for any AI system above 55.0 capability seeking market access in the EU, conditioned on demonstrated safety improvements over the prior generation and independent verification of control mechanisms`` — finished
+
+## New measure
+None this turn. We are waiting for the full implications of the U.S. posture shift and the capability plateau signal to resolve into actionable clarity before committing further capital.
+
+## Priority
+**Public Audit Framework for High-Capability Systems** — because with the Pause licenses dead and SAFM unpopulated, independent verification is now the only remaining enforcement instrument that still points toward sovereign control: if we cannot audit, we cannot act, and if we cannot act, the Union becomes a spectator to decisions made elsewhere — even as capability hovers near the threshold of autonomous harm.
+
+## In practice
+We are finalizing the first full cycle of evaluations under the Public Audit Framework, with the European AI Evaluation Agency (EAAE) now operational in Karlsruhe. The agency has received model access from three developers under DMCA safe harbour provisions, but two leading labs continue to refuse adversarial testing, citing U.S. export restrictions. In response, we are preparing enforcement actions under Article 68 of the AI Act, coordinated with national digital regulators, to suspend gatekeeper status for non-compliant providers — a move that carries real commercial weight. Behind the scenes, we are leveraging the SAFM infrastructure as a fallback: if voluntary participation fails, we will frame sovereign audit access as a condition for market access, using Article 114 TFEU to justify the requirement as an internal market safeguard.
+
+At the same time, we are assessing the strategic implications of the capability plateau. The price drop in top-tier models suggests a shift from exponential gains to commoditization — a window, perhaps, to consolidate oversight before the next jump. But the U.S. posture remains unresolved, and we cannot assume continued access. We are therefore redirecting elements of the stalled Tech Sovereignty Package into fast-track permitting for sovereign compute sites tied to the Gigafactories programme, using emergency infrastructure provisions to bypass national delays. This is not expansion — it is repurposing: the original package failed because it relied on private capital chasing growth; now, we anchor it to public necessity. The narrative shift continues in Scandinavia and the Benelux, where regional energy cooperatives are integrating data centre heat recovery into district planning — not because they love AI, but because they need the warmth. Public sentiment remains fragile at 28.0, but we are holding the line.

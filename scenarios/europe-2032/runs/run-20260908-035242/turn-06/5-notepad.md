@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3 (finished), EU Sovereign Agent Framework −3, Sovereign Incident Response Corps −3, EU Compute Assurance Directive −3, Emergency Compute Stabilisation Facility −3, priority −1 = −16  
+PROPOSAL BONUS: Emergency Compute Stabilisation Facility (cat 4, large) +6 — answers ai_investment_collapse and cyber_major_incident, both severe and current  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 24 last turn, Emergency Compute Stabilisation Facility in flight +1, Tech sovereignty package finishes t6 +3, capability rose 0.5 −1, election_consolidation t6 −2 = 25  
+US_POSTURE: CONSOLIDATION  
+emergent_labour_displacement_wave -- first noted turn 3, listed in 5 turn(s) so far: Widespread layoffs in administrative and legal sectors continue, with trade unions now demanding EU-wide retraining schemes. Political pressure mounts in multiple capitals, and coordinated cross-border union actions are being discussed.  
+emergent_asml_defiance_negotiations -- first noted turn 5, listed in 3 turn(s) so far: ASML remains in talks with the Commission, but U.S. pressure intensifies, creating a critical test of EU unity and strategic autonomy. Member states are divided, and the prospect of unilateral Dutch action grows.

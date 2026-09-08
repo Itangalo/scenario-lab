@@ -1,0 +1,15 @@
+### The Atlantic Gambit
+
+With the U.S. presidential election concluded, anticipation builds for a new era of transatlantic AI alignment. Early signals from the incoming administration suggest openness to structured cooperation on AI safety and incident reporting. The European Commission begins preparatory work on what could become a **Frontier Access Compact**—a potential large, category 8 measure—aimed at securing conditional access for vetted institutions under strict sovereignty conditions: models would run in EU-controlled environments with full logging and kill switches. However, formal negotiations cannot begin until the new U.S. administration takes office and its posture is officially recorded in the next turn. For now, the proposal remains in drafting, with no implementation started.
+
+### Fractured Implementation, Fragile Gains
+
+The **Mandated Safety Integration Directive**, still the EU’s priority, sees partial progress. Germany agrees to drop legal objections after concessions under Article 114 TFEU, allowing member states co-design rights over rollout timelines. ENISA finalises red-teaming protocols with input from the Netherlands-Belgium-Austria-Finland alliance, and early compliance incentives spark interest in Lyon, Warsaw, and Lisbon. However, procurement softening undermines enforcement leverage, and no runtime safeguards are yet operational. The measure remains in flight, yielding minor momentum.
+
+The **Labour Transition Shield** concludes. Its wage insurance mechanism is evaluated for integration into future initiatives, including the prospective Frontier Access Compact, but no formal adoption occurs this turn. National frameworks in Spain and Poland strain under uptake, and no replacement measure is launched. The portfolio shifts focus, but the transition between measures leaves a temporary gap in coordinated action.
+
+### Capability Creeps, Open Weights Rise
+
+`ai_capability` rises to 61.5, driven by autonomous agents refining their own training loops. The open frontier advances: growing diffusion of optimised inference techniques and wider availability of frontier-derived data enable more capable open-weight models. `openweight_capability` increases to 50.0, reflecting sustained replication efforts across distributed research communities. While momentum builds, the leap is gradual—consistent with prior accumulation—not a sudden breakthrough. The gap narrows through persistent engineering, not quantum jumps.
+
+Resilience holds at 40.0 despite rising threats, as NIS2 revisions slowly embed. Public sentiment improves slightly, buoyed by visible crisis response planning. But eu_ai_sovereignty dips to 14.0, penalised by capability growth and unrelieved supply-chain pressure. Political capital stabilises—efforts narrowly avoid collapse, but no surplus emerges.

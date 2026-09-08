@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 67.0 to 77.0, a rise of 10.0 points in one turn. While the invariant allows `openweight_capability` to rise or stay flat, the jump exceeds the hard bound of +25 points *in principle*, but more critically, such a large increase — especially a 10-point leap — must be justified under the metric rules and growth dynamics. However, the narrative attributes this to \"worker collectives redistributing fine-tuned variants of recently leaked models\". This implies a sudden, uncontrolled proliferation without corresponding infrastructure, coordination, or compute base expansion. Given that `openweight_capability` is constrained by real deployment capacity, model access, and technical maintenance thresholds — none of which are addressed — and given that no prior measure (e.g., open capability diffusion program) has laid groundwork for such a surge, the increase violates the implicit realism guard on plausible diffusion rates. A rise of this magnitude would require either a major prior enabling measure or a catastrophic leak with global cascading effects, neither of which are established in earlier turns or the notepad.\n- Organizational Constraint violated: The narrative introduces *three* new elements — the **Sovereign Control Enforcement Regime**, the **Critical Capability Moratorium Framework**, and mentions continued progress on the **Assurance Integration Directive** — but claims the first two are enacted. This constitutes at least two new measures introduced in a single turn (Enforcement Regime and Moratorium Framework), violating Constitutional Constraint 5: \"At most one new measure per turn, and at most one named priority.\" The notepad lists both the Sovereign Control Enforcement Regime and the Critical Capability Moratorium Framework as active with −3 charges, confirming both were initiated this turn. Even if one was proposed earlier, initiating two major measures in one turn is invalid. Only one new measure may be introduced per turn."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

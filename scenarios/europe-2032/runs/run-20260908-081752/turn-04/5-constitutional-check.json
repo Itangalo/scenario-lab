@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The narrative states that the Cyber Resilience Surge for Critical Operators \"concluded\" and delivered a +2 bonus, but the notepad shows no change in portfolio charge (still four measures active, including priority), and no indication that a measure was closed. Under constitutional constraint #5 (at most one new measure per turn, and at most one named priority), the portfolio size must decrease when a measure concludes unless replaced. Yet the portfolio charge remains at −10 across four measures, implying no reduction in active measures. This violates the rule that measures must be formally closed before their bonuses are realized, and the narrative cannot claim completion without corresponding portfolio adjustment.\n- Metric Movement Violation: `eu_political_capital` decreased by 11.0 (from 24.0 to 13.0), but the notepad only accounts for a portfolio charge of −10, a +2 bonus from the concluded measure, and no other terms. Even with no proposal bonus or legitimacy lends, the net change should be −8, not −11. A drop of 11 violates the accounting consistency required by the metric rules and exceeds the justified movement based on the notepad. This breaches the realism of stock-based modeling under constitutional constraint #7 (separate stocks must be free to move apart, but only via justified terms)."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

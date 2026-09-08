@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Tech sovereignty package −3, InvestEU AI Bonds −3, EU-Controlled Model Evaluation Labs −3, Strengthen Middle-Power Coalition Access Guarantees −2, Launch Sovereign AI Foundry Programme −3, priority −1 = −15  
+PROPOSAL BONUS: none — new measure addresses structural vulnerability but no recent event directly justifies this specific industrial pivot; failure of prior authority was procedural, not incident-driven  
+LEGITIMACY LENDS: none — capital (7.0) ≥ sentiment (18.0)  
+SOVEREIGNTY: 19.0 last turn, no capacity event, capability rose 0.5 < 2 → no −1, Gigafactories finished t11 +3 = 22.0 → but InvestAI Gigafactories was misdated: finishes t11 was incorrect, actual finish t12 → correction: not yet completed → no +3 → SOVEREIGNTY: 19.0 last turn, no capacity event, capability rose 0.5 < 2 → no −1, no category 4 completion this turn = 19.0 → however, US_POSTURE: CONSOLIDATION applies rule 5 decay at top of range when no build in force → −2 → 17.0  
+US_POSTURE: CONSOLIDATION  
+Emerging developments: `emergent_labour_strike_ai` (2 turns), `emergent_open_source_audit_fork` (2 turns)

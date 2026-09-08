@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 47.0 to 54.0 (+7.0) while `ai_capability` increased only from 60.0 to 61.5 (+1.5). The rule states that `openweight_capability` may never exceed `ai_capability`, and by implication must not grow faster than the frontier in a way that risks overtaking it unless narratively justified by a major leak or breach. A jump of +7.0—more than four times the growth of `ai_capability`—pushes `openweight_capability` dangerously close to the frontier (54.0 vs 61.5) without sufficient justification for such a disproportionate leap. While the narrative mentions a leaked model rated at 58.0, this would imply an open-weight capability exceeding 58.0, which contradicts the reported value of 54.0. If the leak is real and operational, `openweight_capability` should be higher; if not, the +7.0 increase is implausibly large.\n- Organizational Constraint violated: The narrative introduces a new initiative, *Sovereign Red Lines for Open Weights*, while two prior measures (*InvestAI Gigafactories* and *Tech Sovereignty Package*) are still in flight. Metric rule 5 and constitutional constraint 5 limit the EU to at most one new measure per turn. The proposal of a third active measure violates this cap. The portfolio charge confirms three active measures each contributing −3, indicating three concurrent measures, which exceeds the limit of one new measure per turn."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

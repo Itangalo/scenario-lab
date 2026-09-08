@@ -1,0 +1,11 @@
+### A Wake-Up Call, But Not a Rally
+
+The EU treats the widespread ransomware sweep—crippling hospital scheduling, tax systems, and local government portals across seven member states—as a systemic digital emergency. Forensic analysis confirms AI-generated tooling adapted payloads in real time, overwhelming human responders. In response, the Commission invokes Article 122 TFEU to fast-track the **Emergency Resilience Surge**, offering €15bn in conditional grants via the Recovery and Resilience Facility. Binding cyber hardening now applies immediately to healthcare, energy, and finance, with other sectors to follow. Still, legal resistance persists: Poland challenges the move as treaty overreach, and Italy delays its implementation plan.
+
+Simultaneously, the **Critical Incident Response Protocol** is launched as a large category 6 measure, mandating 48-hour reporting and live red-teaming for essential services. ENISA gains new authority, and 800 national cybersecurity staff are pooled into a rotating EU incident response unit. Yet rollout is uneven—Germany resists centralised red-teaming, and Spain lacks the infrastructure to meet reporting timelines.
+
+The **Sovereign Safety Audit Regime** sees tactical adjustments: scope is narrowed, and concessions offered to France and Sweden. But no binding agreement is reached, and developers warn the audit framework may drive innovation offshore.
+
+Public trust continues to erode. Media frames the cyberattack as a failure of preparedness, compounding outrage from the social insurance scandal. Job losses in public administration due to automation further sour sentiment.
+
+Meanwhile, a **capability_jump** occurs as a leading lab demonstrates AI-generated exploit chains in under 30 seconds. Offensive cyber tools derived from frontier models spread into criminal ecosystems. While `ai_capability` rises to 58.0, `ai_safety` plummets to 24.0 due to the safety gap and lack of deployed safeguards. `openweight_capability` inches to 44.0 as partial tooling leaks out.

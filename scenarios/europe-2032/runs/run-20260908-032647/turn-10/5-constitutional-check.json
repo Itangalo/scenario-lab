@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 59.0 to 63.0 (+4.0) while `ai_capability` increased by only 1.5 (from 67.0 to 68.5). This violates the requirement that `openweight_capability` must not exceed `ai_capability`. At the new values, `openweight_capability` (63.0) remains below `ai_capability` (68.5), so the cap is not technically breached *in level*, but the jump of +4.0 in `openweight_capability` versus only +1.5 in `ai_capability` implies that openweight grew faster than frontier capability, which is structurally invalid. Since `openweight_capability` can only rise as fast as or slower than `ai_capability`, a larger absolute increase in `openweight_capability` is impossible without violating the dependency.\n- Modelling choice 5 violated: The EU introduces two new measures in one turn — \"Launch Public Pilot\" and \"Intolerable-Risk Thresholds\" — both marked with remaining time (−3), indicating they are newly initiated. This exceeds the limit of one new measure per turn.\n- Narrative Constraint 8 violated: The narrative states \"Drafting begins under urgency, with detection scripts due by next turn\", which telegraphs a future event (\"detection scripts due by next turn\") and implies a timeline that reveals gate state or scheduled delivery, violating the rule against anticipatory statements about what is coming."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

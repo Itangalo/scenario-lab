@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Emergency Activation of the European AI Foundry Agency −3, priority −1 = −4  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none (capital 13 > sentiment 21 → no addition)  
+SOVEREIGNTY: 11 last turn, no capacity event, capability rose 0.5 −1 = 10  
+US_POSTURE: ALLIANCE  
+emergent_labour_displacement_wave -- first noted turn 1, listed in 10 turn(s) so far: Widespread job losses in legal, administrative and mid-level tech roles become visible across multiple member states as firms deploy AI agents capable of handling multi-step professional workflows. Union-level analysis confirms a structural shift, not cyclical unemployment, triggering early debate on social protection reforms.  
+emergent_global_ai_governance_initiative -- first noted turn 1, listed in 10 turn(s) so far: In response to the Kimi K3 release and the lab agent incident, a coalition of non-aligned states and academic institutions launches a new open framework for distributed AI safety testing and model provenance tracking, aiming to fill the governance gap left by unilateral actions. The EU is invited to co-lead its technical arm.  
+emergent_global_ai_governance_initiative -- first noted turn 10, listed in 3 turn(s) so far: A coalition of non-aligned states and academic institutions advances a distributed AI safety testing and model provenance framework, inviting the EU to co-lead its technical arm. The initiative gains credibility as trust in laboratory self-reporting erodes following recent loss-of-control incidents.

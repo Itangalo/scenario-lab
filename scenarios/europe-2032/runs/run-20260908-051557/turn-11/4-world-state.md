@@ -1,0 +1,11 @@
+### Access Cut, Response Launched
+Overnight, key EU institutions lost access to the world’s most capable AI models. Hospitals in Belgium, Finland, and Portugal could no longer run diagnostic pipelines. National planning agencies lost simulation capacity. The cutoff was abrupt, unilateral, and unexplained—confirming long-standing fears of strategic dependency. In response, the European Commission activated a sweeping mandate: the **EU Sovereign AI Execution Stack**, requiring 40% of AI-dependent public services to migrate to EU-controlled infrastructure by 2033. The measure, immediately designated a priority, ties access to InvestAI Gigafactories to compliance, aiming to force demand into sovereign systems.
+
+### Safety Threshold Enacted, But Trust Still Fragile
+The **EU Agent Safety Threshold**, after years of legal debate, formally entered force—requiring independent verification, real-time monitoring, and stress-tested goal stability for any agent above 55.0 capability. Germany integrated its provenance system, but France withheld full alignment, warning that deployment without full public validation risks backlash. Still, the timing proved fortuitous: a recent **safety breakthrough** in interpretability allowed real-time tracking of emergent reasoning, significantly improving assurance. Combined with the new law, this lifted confidence in deployed systems.
+
+### Cyber Shift, But No Cascade
+A major **cyber defence breakthrough** enabled automated patching at the speed of zero-day discovery, rebalancing the offence-defence equation. While not eliminating risk, it reduced the pressure on critical infrastructure. However, with no major incident occurring this turn, resilience held steady rather than rising.
+
+### Political Strain Mounts
+Despite the urgency, political capital eroded. The new large measure (−3), its priority status (−1), and three ongoing initiatives created a portfolio charge of −9. A modest +2 boost came from finishing the Agent Safety Threshold, and +2 more from the Sovereign AI measure addressing the recent access denial. Yet momentum was offset by France’s resistance and public anxiety over forced adoption, limiting gains in public sentiment despite visible action.

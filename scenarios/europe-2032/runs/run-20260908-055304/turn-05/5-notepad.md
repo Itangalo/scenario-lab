@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, ASML Alternative Lithography Initiative −3, Emergency Labour Transition Facility −3, priority −1 = −13  
+PROPOSAL BONUS: Emergency Labour Transition Facility (cat 7, large) +4 — emergent_labour_displacement_wave hardened into strike threat, measure directly addresses it  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20 last turn, Sovereign Compute Acceleration Directive finishes t5 +3, capability rose 0.5 −1 = 22.0  
+emergent_labour_displacement_wave -- first noted turn 5, listed in 1 turn(s) so far: The coordinated cross-border labour movement intensifies, demanding immediate EU action on retraining and transition guarantees. The Emergency Labour Transition Facility is now in flight as a direct response.  
+emergent_asml_investment_pressure -- first noted turn 5, listed in 1 turn(s) so far: The ASML crisis remains unresolved, but the Horizon Europe call for alternative lithography pathways is set to launch, with IMEC, Fraunhofer, and CEA-Leti forming a consortium. Progress is real but long-term.

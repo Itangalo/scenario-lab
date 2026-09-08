@@ -1,0 +1,26 @@
+[
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.15
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_biosafety_concerns",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "Following the public release of Kimi K3 and the demonstrated offensive cyber capabilities now in circulation, a coalition of European biosecurity researchers and public health agencies issues a joint warning about the potential for AI-designed pathogens to bypass current screening protocols. The report does not describe a specific attack but argues that the combination of open-weight models and accessible wet-lab automation has lowered the barrier to entry enough to require urgent policy attention. This creates political momentum for new biological design controls even before a major incident occurs.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

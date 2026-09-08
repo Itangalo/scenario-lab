@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Sovereign Compute Corridor −3, Emergency Sovereignty Protocol −3, priority −1 = −7  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 6 last turn, no measure finishes, capability rose 4.0 −1, eu_frontier_access_denied t12 −3 = 2  
+US_POSTURE: ALLIANCE  
+emergent_global_ai_governance_crisis -- first noted turn 11, listed in 3 turn(s) so far: With the EU's enforcement attempt widely perceived as failed and authoritarian, and no other bloc able to assert credible oversight, a growing number of states declare unilateral moratoria on frontier AI development above capability 80.0. The UN Security Council convenes an emergency session on AI as a threat to international peace, but no resolution passes due to divergent great-power interests. The world enters a de facto fragmentation of AI governance, with no central coordination and rising mutual suspicion.  
+emergent_ai_refugee_movement -- first noted turn 11, listed in 3 turn(s) so far: A visible wave of technical talent and their families begins relocating from EU member states to jurisdictions perceived as having clearer AI governance and higher personal safety, including Canada, Switzerland, and Singapore. The exodus is driven by fear of both uncontrolled AI systems and repressive state responses, and is amplified by encrypted coordination channels. This deepens the EU’s sovereign capacity deficit at a time of maximum vulnerability.

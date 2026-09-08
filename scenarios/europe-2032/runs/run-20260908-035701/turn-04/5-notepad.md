@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Expand Open-Source Research Alliance −3, Strengthen Open-Source Research Alliance −3, priority −1 = −13  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22 last turn, Strengthen Open-Source Research Alliance in flight +2, capability rose 2.0 −1 = 24  
+US_POSTURE: pending  
+emergent_regulatory_fragmentation -- first noted turn 1, listed in 4 turn(s) so far: National AI regulatory bodies continue to diverge in enforcement practices despite the AI Act's harmonization goals, driven by differing national risk tolerances and industrial priorities. This creates compliance friction for cross-border AI deployment and weakens the Union's collective bargaining position externally.  
+emergent_compute_nationalism -- first noted turn 4, listed in 2 turn(s) so far: Several EU member states, citing national security and energy sovereignty, begin unilaterally restricting the export of electricity and grid access to foreign-owned AI data centres. The moves are framed as climate measures but target US hyperscalers, escalating tensions within the Single Market. The European Commission opens infringement proceedings, but enforcement lags behind political momentum.  
+emergent_labour_unrest_ai -- first noted turn 4, listed in 2 turn(s) so far: Coordinated strikes and protests by legal, administrative and public-sector unions erupt in France, Germany and Belgium, demanding binding limits on AI deployment in hiring and service delivery. The actions disrupt court scheduling, tax processing and university admissions, forcing regional governments into emergency negotiations. The unrest is not nationwide but is persistent and media-visible, feeding into broader public skepticism.

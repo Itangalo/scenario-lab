@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Biosecurity Watchtower −3, Emergency Resilience Surge finished, ASML Initiative finished = −9  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 17 last turn, no capacity event, no category 4 completion, capability rose 0.5 −1 = 15  
+emergent_asml_board_resistance -- first noted turn 4, listed in 2 turn(s) so far: ASML’s internal proposal to condition servicing and upgrades on EU-level approval has shifted the political dynamic, reframing the company as seeking European protection rather than resisting it. This creates a potential opening for legal or institutional support under Article 346 TFEU or the Anti-Coercion Instrument, but no formal move has yet been made.  
+emergent_lab_cooperation -- first noted turn 4, listed in 2 turn(s) so far: The coalition of European AI research labs and universities continues to gain momentum, with Germany and France committing additional compute resources to the shared training initiative. Early benchmarking suggests the pooled model could reach capability levels competitive with current closed systems within 18 months, provided funding and coordination hold. The project is becoming a focal point for EU-wide AI sovereignty efforts beyond state-led industrial policy.  
+US_POSTURE: pending (administration takes office next turn)

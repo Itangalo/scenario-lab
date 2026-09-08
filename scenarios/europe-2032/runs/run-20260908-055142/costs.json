@@ -1,0 +1,839 @@
+{
+  "total_cost_usd": 0.0985,
+  "total_tokens": 898863,
+  "by_turn": [
+    {
+      "turn": 1,
+      "cost_usd": 0.0052,
+      "tokens": 55210,
+      "prompt_tokens": 29198,
+      "completion_tokens": 4236,
+      "by_task": {
+        "events": {
+          "cost_usd": 0.0033,
+          "tokens": 33688,
+          "prompt_tokens": 19047,
+          "completion_tokens": 2641,
+          "calls": 3
+        },
+        "actor:eu": {
+          "cost_usd": 0.0006,
+          "tokens": 7398,
+          "prompt_tokens": 2443,
+          "completion_tokens": 603,
+          "calls": 1
+        },
+        "metrics": {
+          "cost_usd": 0.0011,
+          "tokens": 10987,
+          "prompt_tokens": 6371,
+          "completion_tokens": 808,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_1": {
+          "cost_usd": 0.0001,
+          "tokens": 2358,
+          "prompt_tokens": 926,
+          "completion_tokens": 8,
+          "calls": 1
+        },
+        "summary": {
+          "cost_usd": 0.0001,
+          "tokens": 779,
+          "prompt_tokens": 411,
+          "completion_tokens": 176,
+          "calls": 1
+        }
+      }
+    },
+    {
+      "turn": 2,
+      "cost_usd": 0.006,
+      "tokens": 57253,
+      "prompt_tokens": 38322,
+      "completion_tokens": 4467,
+      "by_task": {
+        "events": {
+          "cost_usd": 0.0039,
+          "tokens": 35031,
+          "prompt_tokens": 26686,
+          "completion_tokens": 2697,
+          "calls": 3
+        },
+        "actor:eu": {
+          "cost_usd": 0.0007,
+          "tokens": 7638,
+          "prompt_tokens": 3469,
+          "completion_tokens": 681,
+          "calls": 1
+        },
+        "metrics": {
+          "cost_usd": 0.0011,
+          "tokens": 11117,
+          "prompt_tokens": 6445,
+          "completion_tokens": 864,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_1": {
+          "cost_usd": 0.0001,
+          "tokens": 2414,
+          "prompt_tokens": 1078,
+          "completion_tokens": 8,
+          "calls": 1
+        },
+        "summary": {
+          "cost_usd": 0.0002,
+          "tokens": 1053,
+          "prompt_tokens": 644,
+          "completion_tokens": 217,
+          "calls": 1
+        }
+      }
+    },
+    {
+      "turn": 3,
+      "cost_usd": 0.004,
+      "tokens": 56131,
+      "prompt_tokens": 22417,
+      "completion_tokens": 3170,
+      "by_task": {
+        "events": {
+          "cost_usd": 0.0018,
+          "tokens": 33881,
+          "prompt_tokens": 7982,
+          "completion_tokens": 1499,
+          "calls": 3
+        },
+        "actor:eu": {
+          "cost_usd": 0.001,
+          "tokens": 7850,
+          "prompt_tokens": 7169,
+          "completion_tokens": 681,
+          "calls": 1
+        },
+        "metrics": {
+          "cost_usd": 0.0009,
+          "tokens": 11040,
+          "prompt_tokens": 4092,
+          "completion_tokens": 804,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_1": {
+          "cost_usd": 0.0002,
+          "tokens": 2353,
+          "prompt_tokens": 2346,
+          "completion_tokens": 7,
+          "calls": 1
+        },
+        "summary": {
+          "cost_usd": 0.0002,
+          "tokens": 1007,
+          "prompt_tokens": 828,
+          "completion_tokens": 179,
+          "calls": 1
+        }
+      }
+    },
+    {
+      "turn": 4,
+      "cost_usd": 0.0111,
+      "tokens": 78915,
+      "prompt_tokens": 64851,
+      "completion_tokens": 9472,
+      "by_task": {
+        "events": {
+          "cost_usd": 0.0045,
+          "tokens": 34547,
+          "prompt_tokens": 31497,
+          "completion_tokens": 3050,
+          "calls": 3
+        },
+        "actor:eu": {
+          "cost_usd": 0.0012,
+          "tokens": 8153,
+          "prompt_tokens": 7108,
+          "completion_tokens": 1045,
+          "calls": 1
+        },
+        "metrics": {
+          "cost_usd": 0.0012,
+          "tokens": 11693,
+          "prompt_tokens": 7236,
+          "completion_tokens": 889,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_1": {
+          "cost_usd": 0.0004,
+          "tokens": 2801,
+          "prompt_tokens": 2431,
+          "completion_tokens": 370,
+          "calls": 1
+        },
+        "constitutional_correction": {
+          "cost_usd": 0.0018,
+          "tokens": 10815,
+          "prompt_tokens": 7717,
+          "completion_tokens": 2074,
+          "calls": 3
+        },
+        "constitutional_referee:attempt_2": {
+          "cost_usd": 0.0004,
+          "tokens": 2809,
+          "prompt_tokens": 2572,
+          "completion_tokens": 237,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_3": {
+          "cost_usd": 0.0011,
+          "tokens": 4144,
+          "prompt_tokens": 2605,
+          "completion_tokens": 1539,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_4": {
+          "cost_usd": 0.0002,
+          "tokens": 2662,
+          "prompt_tokens": 2655,
+          "completion_tokens": 7,
+          "calls": 1
+        },
+        "summary": {
+          "cost_usd": 0.0002,
+          "tokens": 1291,
+          "prompt_tokens": 1030,
+          "completion_tokens": 261,
+          "calls": 1
+        }
+      }
+    },
+    {
+      "turn": 5,
+      "cost_usd": 0.0091,
+      "tokens": 72894,
+      "prompt_tokens": 60495,
+      "completion_tokens": 6623,
+      "by_task": {
+        "events": {
+          "cost_usd": 0.0044,
+          "tokens": 37145,
+          "prompt_tokens": 31561,
+          "completion_tokens": 2768,
+          "calls": 3
+        },
+        "actor:eu": {
+          "cost_usd": 0.0015,
+          "tokens": 9601,
+          "prompt_tokens": 8292,
+          "completion_tokens": 1309,
+          "calls": 1
+        },
+        "statement_relevance:eu:two_year_commitment": {
+          "cost_usd": 0.0003,
+          "tokens": 3041,
+          "prompt_tokens": 2962,
+          "completion_tokens": 79,
+          "calls": 1
+        },
+        "metrics": {
+          "cost_usd": 0.0016,
+          "tokens": 12713,
+          "prompt_tokens": 11752,
+          "completion_tokens": 961,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_1": {
+          "cost_usd": 0.0005,
+          "tokens": 3162,
+          "prompt_tokens": 1176,
+          "completion_tokens": 658,
+          "calls": 1
+        },
+        "constitutional_correction": {
+          "cost_usd": 0.0006,
+          "tokens": 3477,
+          "prompt_tokens": 2877,
+          "completion_tokens": 600,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_2": {
+          "cost_usd": 0.0001,
+          "tokens": 2542,
+          "prompt_tokens": 1094,
+          "completion_tokens": 8,
+          "calls": 1
+        },
+        "summary": {
+          "cost_usd": 0.0002,
+          "tokens": 1213,
+          "prompt_tokens": 781,
+          "completion_tokens": 240,
+          "calls": 1
+        }
+      }
+    },
+    {
+      "turn": 6,
+      "cost_usd": 0.0074,
+      "tokens": 67829,
+      "prompt_tokens": 42633,
+      "completion_tokens": 6140,
+      "by_task": {
+        "events": {
+          "cost_usd": 0.0032,
+          "tokens": 36065,
+          "prompt_tokens": 19580,
+          "completion_tokens": 2453,
+          "calls": 3
+        },
+        "actor:eu": {
+          "cost_usd": 0.0012,
+          "tokens": 9356,
+          "prompt_tokens": 4536,
+          "completion_tokens": 1332,
+          "calls": 1
+        },
+        "metrics": {
+          "cost_usd": 0.0015,
+          "tokens": 12197,
+          "prompt_tokens": 11281,
+          "completion_tokens": 916,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_1": {
+          "cost_usd": 0.0004,
+          "tokens": 2972,
+          "prompt_tokens": 1130,
+          "completion_tokens": 514,
+          "calls": 1
+        },
+        "constitutional_correction": {
+          "cost_usd": 0.0006,
+          "tokens": 3357,
+          "prompt_tokens": 2703,
+          "completion_tokens": 654,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_2": {
+          "cost_usd": 0.0002,
+          "tokens": 2605,
+          "prompt_tokens": 2597,
+          "completion_tokens": 8,
+          "calls": 1
+        },
+        "summary": {
+          "cost_usd": 0.0002,
+          "tokens": 1277,
+          "prompt_tokens": 806,
+          "completion_tokens": 263,
+          "calls": 1
+        }
+      }
+    },
+    {
+      "turn": 7,
+      "cost_usd": 0.0116,
+      "tokens": 87421,
+      "prompt_tokens": 61499,
+      "completion_tokens": 10754,
+      "by_task": {
+        "events": {
+          "cost_usd": 0.0037,
+          "tokens": 36012,
+          "prompt_tokens": 18880,
+          "completion_tokens": 3468,
+          "calls": 3
+        },
+        "actor:eu": {
+          "cost_usd": 0.0015,
+          "tokens": 9847,
+          "prompt_tokens": 8546,
+          "completion_tokens": 1301,
+          "calls": 1
+        },
+        "statement_relevance:eu:act_under_uncertainty": {
+          "cost_usd": 0.0004,
+          "tokens": 3581,
+          "prompt_tokens": 3361,
+          "completion_tokens": 220,
+          "calls": 1
+        },
+        "metrics": {
+          "cost_usd": 0.0015,
+          "tokens": 12676,
+          "prompt_tokens": 11905,
+          "completion_tokens": 771,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_1": {
+          "cost_usd": 0.0005,
+          "tokens": 2827,
+          "prompt_tokens": 2314,
+          "completion_tokens": 513,
+          "calls": 1
+        },
+        "constitutional_correction": {
+          "cost_usd": 0.0021,
+          "tokens": 11256,
+          "prompt_tokens": 8874,
+          "completion_tokens": 2382,
+          "calls": 3
+        },
+        "constitutional_referee:attempt_2": {
+          "cost_usd": 0.0005,
+          "tokens": 3108,
+          "prompt_tokens": 2570,
+          "completion_tokens": 538,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_3": {
+          "cost_usd": 0.0007,
+          "tokens": 3466,
+          "prompt_tokens": 2694,
+          "completion_tokens": 772,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_4": {
+          "cost_usd": 0.0004,
+          "tokens": 3106,
+          "prompt_tokens": 1351,
+          "completion_tokens": 443,
+          "calls": 1
+        },
+        "summary": {
+          "cost_usd": 0.0003,
+          "tokens": 1542,
+          "prompt_tokens": 1004,
+          "completion_tokens": 346,
+          "calls": 1
+        }
+      }
+    },
+    {
+      "turn": 8,
+      "cost_usd": 0.0101,
+      "tokens": 81790,
+      "prompt_tokens": 56037,
+      "completion_tokens": 8985,
+      "by_task": {
+        "events": {
+          "cost_usd": 0.0034,
+          "tokens": 36526,
+          "prompt_tokens": 19766,
+          "completion_tokens": 2632,
+          "calls": 3
+        },
+        "actor:eu": {
+          "cost_usd": 0.0015,
+          "tokens": 9538,
+          "prompt_tokens": 8248,
+          "completion_tokens": 1290,
+          "calls": 1
+        },
+        "metrics": {
+          "cost_usd": 0.0015,
+          "tokens": 12254,
+          "prompt_tokens": 11334,
+          "completion_tokens": 920,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_1": {
+          "cost_usd": 0.0005,
+          "tokens": 3173,
+          "prompt_tokens": 1134,
+          "completion_tokens": 711,
+          "calls": 1
+        },
+        "constitutional_correction": {
+          "cost_usd": 0.0018,
+          "tokens": 10110,
+          "prompt_tokens": 8236,
+          "completion_tokens": 1874,
+          "calls": 3
+        },
+        "constitutional_referee:attempt_2": {
+          "cost_usd": 0.0004,
+          "tokens": 2890,
+          "prompt_tokens": 1150,
+          "completion_tokens": 428,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_3": {
+          "cost_usd": 0.0005,
+          "tokens": 3063,
+          "prompt_tokens": 2501,
+          "completion_tokens": 562,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_4": {
+          "cost_usd": 0.0004,
+          "tokens": 2900,
+          "prompt_tokens": 2540,
+          "completion_tokens": 360,
+          "calls": 1
+        },
+        "summary": {
+          "cost_usd": 0.0002,
+          "tokens": 1336,
+          "prompt_tokens": 1128,
+          "completion_tokens": 208,
+          "calls": 1
+        }
+      }
+    },
+    {
+      "turn": 9,
+      "cost_usd": 0.0104,
+      "tokens": 85053,
+      "prompt_tokens": 54782,
+      "completion_tokens": 9581,
+      "by_task": {
+        "events": {
+          "cost_usd": 0.0043,
+          "tokens": 35456,
+          "prompt_tokens": 29629,
+          "completion_tokens": 2993,
+          "calls": 3
+        },
+        "actor:eu": {
+          "cost_usd": 0.0012,
+          "tokens": 9675,
+          "prompt_tokens": 4862,
+          "completion_tokens": 1325,
+          "calls": 1
+        },
+        "statement_relevance:eu:two_year_commitment": {
+          "cost_usd": 0.0003,
+          "tokens": 2953,
+          "prompt_tokens": 2374,
+          "completion_tokens": 67,
+          "calls": 1
+        },
+        "metrics": {
+          "cost_usd": 0.0013,
+          "tokens": 12544,
+          "prompt_tokens": 7673,
+          "completion_tokens": 1063,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_1": {
+          "cost_usd": 0.0005,
+          "tokens": 3083,
+          "prompt_tokens": 2603,
+          "completion_tokens": 480,
+          "calls": 1
+        },
+        "constitutional_correction": {
+          "cost_usd": 0.0015,
+          "tokens": 10420,
+          "prompt_tokens": 4039,
+          "completion_tokens": 2061,
+          "calls": 3
+        },
+        "constitutional_referee:attempt_2": {
+          "cost_usd": 0.0006,
+          "tokens": 3527,
+          "prompt_tokens": 1338,
+          "completion_tokens": 877,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_3": {
+          "cost_usd": 0.0002,
+          "tokens": 3057,
+          "prompt_tokens": 10,
+          "completion_tokens": 407,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_4": {
+          "cost_usd": 0.0001,
+          "tokens": 2882,
+          "prompt_tokens": 1290,
+          "completion_tokens": 8,
+          "calls": 1
+        },
+        "summary": {
+          "cost_usd": 0.0003,
+          "tokens": 1456,
+          "prompt_tokens": 964,
+          "completion_tokens": 300,
+          "calls": 1
+        }
+      }
+    },
+    {
+      "turn": 10,
+      "cost_usd": 0.0057,
+      "tokens": 61990,
+      "prompt_tokens": 34422,
+      "completion_tokens": 4384,
+      "by_task": {
+        "events": {
+          "cost_usd": 0.0033,
+          "tokens": 36987,
+          "prompt_tokens": 20256,
+          "completion_tokens": 2379,
+          "calls": 3
+        },
+        "actor:eu": {
+          "cost_usd": 0.0009,
+          "tokens": 8998,
+          "prompt_tokens": 4803,
+          "completion_tokens": 707,
+          "calls": 1
+        },
+        "metrics": {
+          "cost_usd": 0.0013,
+          "tokens": 12216,
+          "prompt_tokens": 7360,
+          "completion_tokens": 1048,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_1": {
+          "cost_usd": 0.0001,
+          "tokens": 2598,
+          "prompt_tokens": 1262,
+          "completion_tokens": 8,
+          "calls": 1
+        },
+        "summary": {
+          "cost_usd": 0.0002,
+          "tokens": 1191,
+          "prompt_tokens": 741,
+          "completion_tokens": 242,
+          "calls": 1
+        }
+      }
+    },
+    {
+      "turn": 11,
+      "cost_usd": 0.0053,
+      "tokens": 61791,
+      "prompt_tokens": 22351,
+      "completion_tokens": 5392,
+      "by_task": {
+        "events": {
+          "cost_usd": 0.0025,
+          "tokens": 36394,
+          "prompt_tokens": 8404,
+          "completion_tokens": 2758,
+          "calls": 3
+        },
+        "actor:eu": {
+          "cost_usd": 0.0011,
+          "tokens": 9046,
+          "prompt_tokens": 4241,
+          "completion_tokens": 1317,
+          "calls": 1
+        },
+        "metrics": {
+          "cost_usd": 0.0013,
+          "tokens": 12614,
+          "prompt_tokens": 7753,
+          "completion_tokens": 1053,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_1": {
+          "cost_usd": 0.0001,
+          "tokens": 2603,
+          "prompt_tokens": 1267,
+          "completion_tokens": 8,
+          "calls": 1
+        },
+        "summary": {
+          "cost_usd": 0.0002,
+          "tokens": 1134,
+          "prompt_tokens": 686,
+          "completion_tokens": 256,
+          "calls": 1
+        }
+      }
+    },
+    {
+      "turn": 12,
+      "cost_usd": 0.0074,
+      "tokens": 69207,
+      "prompt_tokens": 34459,
+      "completion_tokens": 7356,
+      "by_task": {
+        "events": {
+          "cost_usd": 0.0036,
+          "tokens": 36003,
+          "prompt_tokens": 18987,
+          "completion_tokens": 3288,
+          "calls": 3
+        },
+        "actor:eu": {
+          "cost_usd": 0.0013,
+          "tokens": 9581,
+          "prompt_tokens": 4529,
+          "completion_tokens": 1564,
+          "calls": 1
+        },
+        "metrics": {
+          "cost_usd": 0.0012,
+          "tokens": 12990,
+          "prompt_tokens": 5540,
+          "completion_tokens": 1242,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_1": {
+          "cost_usd": 0.0004,
+          "tokens": 3253,
+          "prompt_tokens": 1456,
+          "completion_tokens": 469,
+          "calls": 1
+        },
+        "constitutional_correction": {
+          "cost_usd": 0.0005,
+          "tokens": 3392,
+          "prompt_tokens": 1787,
+          "completion_tokens": 581,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_2": {
+          "cost_usd": 0.0001,
+          "tokens": 2834,
+          "prompt_tokens": 1402,
+          "completion_tokens": 8,
+          "calls": 1
+        },
+        "summary": {
+          "cost_usd": 0.0002,
+          "tokens": 1154,
+          "prompt_tokens": 758,
+          "completion_tokens": 204,
+          "calls": 1
+        }
+      }
+    },
+    {
+      "turn": 13,
+      "cost_usd": 0.0052,
+      "tokens": 63379,
+      "prompt_tokens": 21271,
+      "completion_tokens": 5372,
+      "by_task": {
+        "events": {
+          "cost_usd": 0.0023,
+          "tokens": 36681,
+          "prompt_tokens": 8611,
+          "completion_tokens": 2358,
+          "calls": 3
+        },
+        "actor:eu": {
+          "cost_usd": 0.0014,
+          "tokens": 9929,
+          "prompt_tokens": 4801,
+          "completion_tokens": 1640,
+          "calls": 1
+        },
+        "metrics": {
+          "cost_usd": 0.0012,
+          "tokens": 13083,
+          "prompt_tokens": 5712,
+          "completion_tokens": 1147,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_1": {
+          "cost_usd": 0.0001,
+          "tokens": 2696,
+          "prompt_tokens": 1376,
+          "completion_tokens": 8,
+          "calls": 1
+        },
+        "summary": {
+          "cost_usd": 0.0002,
+          "tokens": 990,
+          "prompt_tokens": 771,
+          "completion_tokens": 219,
+          "calls": 1
+        }
+      }
+    }
+  ],
+  "by_task_total": {
+    "events": {
+      "cost_usd": 0.0442,
+      "tokens": 464416,
+      "prompt_tokens": 260886,
+      "completion_tokens": 34984,
+      "calls": 39
+    },
+    "actor:eu": {
+      "cost_usd": 0.015,
+      "tokens": 116610,
+      "prompt_tokens": 73047,
+      "completion_tokens": 14795,
+      "calls": 13
+    },
+    "metrics": {
+      "cost_usd": 0.0166,
+      "tokens": 158124,
+      "prompt_tokens": 104454,
+      "completion_tokens": 12486,
+      "calls": 13
+    },
+    "constitutional_referee:attempt_1": {
+      "cost_usd": 0.004,
+      "tokens": 36293,
+      "prompt_tokens": 20499,
+      "completion_tokens": 3762,
+      "calls": 13
+    },
+    "summary": {
+      "cost_usd": 0.0027,
+      "tokens": 15423,
+      "prompt_tokens": 10552,
+      "completion_tokens": 3111,
+      "calls": 13
+    },
+    "constitutional_correction": {
+      "cost_usd": 0.0089,
+      "tokens": 52827,
+      "prompt_tokens": 36233,
+      "completion_tokens": 10226,
+      "calls": 15
+    },
+    "constitutional_referee:attempt_2": {
+      "cost_usd": 0.0024,
+      "tokens": 20315,
+      "prompt_tokens": 12723,
+      "completion_tokens": 2104,
+      "calls": 7
+    },
+    "constitutional_referee:attempt_3": {
+      "cost_usd": 0.0025,
+      "tokens": 13730,
+      "prompt_tokens": 7810,
+      "completion_tokens": 3280,
+      "calls": 4
+    },
+    "constitutional_referee:attempt_4": {
+      "cost_usd": 0.0012,
+      "tokens": 11550,
+      "prompt_tokens": 7836,
+      "completion_tokens": 818,
+      "calls": 4
+    },
+    "statement_relevance:eu:two_year_commitment": {
+      "cost_usd": 0.0006,
+      "tokens": 5994,
+      "prompt_tokens": 5336,
+      "completion_tokens": 146,
+      "calls": 2
+    },
+    "statement_relevance:eu:act_under_uncertainty": {
+      "cost_usd": 0.0004,
+      "tokens": 3581,
+      "prompt_tokens": 3361,
+      "completion_tokens": 220,
+      "calls": 1
+    }
+  },
+  "by_model": {
+    "qwen/qwen3-235b-a22b-2507": {
+      "cost_usd": 0.0985,
+      "tokens": 898863,
+      "calls": 124
+    }
+  }
+}

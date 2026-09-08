@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 55.0 to 61.0 (+6.0), which exceeds the maximum possible growth given `ai_capability` was 67.0 and rose only to 68.5. Since `openweight_capability` cannot exceed `ai_capability` and must only rise or stay flat (never fall unless due to catastrophic physical destruction, which is not narrated), a +6.0 jump is implausible. The maximum plausible increase would be ~1.5 points (matching the `ai_capability` growth), assuming full knowledge transfer and no bottlenecks. A jump of 6.0 suggests `openweight_capability` nearly closed the gap to `ai_capability` without justification, violating the invariant that it must trail and accumulate gradually.\n- Modelling Choice 5 violated: The narrative introduces *two* new measures: (1) the **Operational Command for Sovereign Compute** and (2) the **emergent_regional_auditing_alliance** (described as a coalition establishing shared red-teaming and monitoring). The latter is a distinct, named initiative with operational impact, qualifying as a new measure. Only one new measure per turn is allowed. The presence of both violates the \"at most one new measure per turn\" rule.\n- Modelling Choice 9 violated: `eu_political_capital` decreased from 33.0 to 24.0 (−9.0), and `public_sentiment` decreased from 22.0 to 17.0 (−5.0). While decreases are allowed, the drop in `eu_political_capital` is inconsistent with the narrative justification. The narrative cites costs from a new measure and falling public sentiment, but no event-level shock or major failure is described that would justify a 9-point drop in political capital. More critically, the combination of a large category 4 measure (costing −4) and legitimacy erosion (−1) only accounts for −5 in the notepad’s charge logic, yet the actual drop is −9. This implies unmodelled or unaccounted losses, violating the requirement that metric changes be justified within transparent, bounded rules."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_cyber_lab_leak",
+    "probability": 0.04,
+    "emergent": true,
+    "description": "A security researcher discloses that a vulnerability in a widely used open-weight model's agent framework was exploited to exfiltrate training data from a European AI lab. The breach originated from a compromised dependency in the model's tooling stack, not from state-level actors, and highlights systemic fragility in open development environments. The incident triggers calls for baseline security standards in open AI projects.",
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  }
+]

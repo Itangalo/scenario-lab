@@ -1,0 +1,11 @@
+### A Surge Ends, a Mandate Begins
+
+The Emergency Resilience Surge concludes its 18-month mandate, with binding cyber hardening now legally in force across healthcare, energy, and finance sectors. Germany accepts a compromise on red-teaming under national oversight, and Spain meets reporting benchmarks with EU technical support. The Critical Incident Response Protocol advances to live red-teaming, using adversarial models from French and Dutch labs, though coordination remains patchy.
+
+Buoyed by this partial momentum, the EU launches the **Frontier Compute Co-Location Mandate**, a bold attempt to anchor high-risk AI training within its jurisdiction. Framed under Article 114 TFEU as a digital safety measure, it requires any model above 50.0 capability or trained above 10^25 FLOP/s to run on EU-anchored infrastructure with real-time monitoring by the European AI Safety Authority. Developers are offered fast-track licensing and reserved capacity in the InvestAI Gigafactories.
+
+Yet backlash intensifies. The **campaign_backlash** swells into mainstream politics, with parties across the spectrum demanding AI restraint. **Backlash_physical** escalates: data centre occupations spread to Belgium and Ireland, and a substation serving a major AI cluster is sabotaged, injuring two. Public trust erodes further, as automation in public services is blamed for service delays.
+
+The **cyber_major_incident**—a model-generated ransomware sweep—exposes systemic fragility. Though resilience measures absorb some impact, the response is fragmented. Meanwhile, AI capability advances to 60.0, driven by automated exploit generation. Open-weight models reach 48.0 as toolkits leak into underground forums. With no safety upgrades on deployed systems, **ai_safety** dips to 22.0.
+
+The new mandate faces immediate resistance. U.S. developers threaten withdrawal, and legal challenges loom over extraterritorial reach. Member states diverge: France supports co-location, but Sweden warns of innovation flight. The political cost is high, and public sentiment falls to 26.0.

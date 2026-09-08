@@ -1,0 +1,14 @@
+### Breakthrough and Backlash  
+The global AI frontier advances by 1.5 points, reaching 55.0, as lead labs absorb the underperformance of the last cycle and resume scaling. Despite early signs of plateauing returns, investment and compute growth sustain momentum. With `ai_capability` rising, `openweight_capability` follows to 43.0 — still trailing, but closing slightly due to increased model leakage and developer leniency in open-source communities.
+
+A significant **safety_breakthrough** occurs: a new interpretability technique allows developers to predict emergent reasoning paths in high-stakes models before deployment. Adopted rapidly across major labs, it strengthens monitoring and earns trust from regulators. This lifts `ai_safety` by +5 to 37.0 — a rare gain in an era of widening capability-safety gaps.
+
+### The ASML Gambit  
+The EU launches *Secure ASML’s Technological Autonomy*, a bold move to shield Europe’s most strategic semiconductor asset from foreign export pressure. Framed as a sovereignty imperative, it proposes joint EU-Netherlands ownership and a binding export control framework. However, the initiative faces immediate headwinds. Washington signals strong opposition, warning of alliance fragmentation. Within the EU, Germany and France back the plan, but smaller states fear economic retaliation and question its legality under WTO rules. The Dutch government, while sympathetic, resists ceding control over national champions.
+
+Negotiations stall in the Competitiveness Council. No agreement is reached, and the measure remains in early diplomacy. No sovereignty gain materialises, and the ongoing dependence on foreign-controlled compute deepens the strategic deficit. With `ai_capability` rising by 1.5 — less than 2 — the standard −1 decay from rule 5 does not apply, but no positive event offsets the inertia. The ASML measure is large and urgent, but yields no immediate benefit.
+
+### Political Strain  
+The EU maintains three large ongoing measures: *InvestAI Gigafactories*, *Tech Sovereignty Package*, and *Reinforce Critical Resilience Backbone*. The new ASML initiative adds a fourth large measure. The portfolio charge is high, and no measure finishes this turn. The proposal bonus is **+2** — the ASML move responds indirectly to the persistent `emergent_asml_board_resistance`, but not to a direct incident, so the gain is modest. With `public_sentiment` (42.0) not exceeding `eu_political_capital` (46.0), no legitimacy lending occurs.
+
+`eu_political_capital` falls by 4: −3 for the new large measure, −1 for the priority, and no finish bonus. The net cost is partially offset by the +2 proposal bonus, resulting in a final drop to 42.0. Public sentiment holds steady — no scandal, no visible win.

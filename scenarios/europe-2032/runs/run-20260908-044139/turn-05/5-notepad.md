@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereign AI Assurance Framework −3, priority −1 = −10  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 17 last turn, Gigafactories in flight +1, capability rose 0.5 (less than 2) → no −1, no capacity event = 18  
+US_POSTURE: pending (administration takes office next turn)  
+emergent_regional_retraining_collapse -- first noted turn 4, listed in 2 turn(s) so far: Regional retraining programmes in several member states, overwhelmed by the pace of mid-level job displacement, begin to fail visibly—waiting lists exceed six months, completion rates drop below 30%, and local governments report systemic underfunding. The failures become a political liability, undermining faith in the Workforce Transition Acceleration Fund before it launches.  
+emergent_ai_research_shift -- first noted turn 4, listed in 2 turn(s) so far: The shift in European AI research from frontier scaling to robustness, interpretability, and secure integration gains institutional momentum, with ERC and national funders redirecting grants. Major labs publish new frameworks for agent containment, and the trend begins to influence talent flows, slowing EU contributions to capability races while strengthening long-term safety capacity.

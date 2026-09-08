@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Launch EU-wide AI Labour Transition Guarantee −3, Secure EU Access to Foundational AI Safety Research −3, priority −1 = −10  
+PROPOSAL BONUS: Secure EU Access to Foundational AI Safety Research (cat 5, large) +3 — opaque_reasoning landed this turn and this measure answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 27.0 last turn, Tech sovereignty package finishes t6 +5, Accelerate Sovereign Compute Access finishes t5 +5 (already paid), InvestAI Gigafactories in flight +1, capability rose 3.5 −1 = 30.0  
+US_POSTURE: RETRENCHMENT  
+emergent_ai_governance_schism -- first noted turn 6, listed in 2 turn(s) so far: A rift emerges between the EU and a bloc of emerging economies over AI governance norms, triggered by the EU's restrictive approach being labeled as 'techno-colonialism' in multilateral forums. This leads to competing standards proposals in international bodies, fracturing consensus on export controls and safety benchmarks.  
+emergent_sovereign_cloud_alliance -- first noted turn 6, listed in 2 turn(s) so far: France, Germany, and Poland announce a joint sovereign cloud initiative leveraging the newly operational EuroHPC grid, aiming to provide secure, EU-controlled AI infrastructure for public services and critical industries. The move strengthens internal cohesion and signals a shift toward operational autonomy from non-EU cloud providers.

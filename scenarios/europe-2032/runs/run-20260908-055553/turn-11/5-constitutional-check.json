@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 71.0 to 84.0 (+13.0), which is an implausibly large single-turn jump given that `ai_capability` only increased by 4.0 (from 93.0 to 97.0). While `openweight_capability` may rise, it must not exceed `ai_capability` and should track it gradually unless a narrated event enables a coordinated leap. A 13-point surge—especially when the frontier (`ai_capability`) moved only 4 points—is inconsistent with the constitutional requirement that these metrics accumulate steadily and do not fall. No such enabling event (e.g., mass release of frontier weights, collapse of export controls, or open-source cascade) is described; instead, the narrative cites \"leaked coordination protocols,\" which is insufficient justification for a 13-point gain in openweight capability.\n- Invariant 9 violated: The change in `openweight_capability` (+13.0) does not exceed the 25-point hard cap, so that part is acceptable. However, combined with the lack of precedent or buildup in the notepad or narrative for such a leap, and given that `openweight_capability` has risen 13 points while `ai_capability` rose only 4, this implies `openweight_capability` is advancing faster than the frontier—a logical contradiction under Invariant 2, which states that `openweight_capability` never exceeds `ai_capability`. At 84.0 vs. 97.0, it does not yet exceed it, but the pace of increase (13 vs. 4) suggests inversion risk and violates the spirit and accumulation logic of the invariant, especially without extraordinary justification. Given the absence of a clear, narrated mechanism (e.g., breach of model weights, open release by dissident lab), this movement lacks grounding."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

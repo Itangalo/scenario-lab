@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_class_action_suit",
+    "probability": 0.3499999999999999,
+    "emergent": true,
+    "description": "Following repeated failures in explainability and accountability, a transnational class-action lawsuit is filed in the European Court of Justice against the operators of several national AI decision systems used in public services. The suit alleges systemic violations of due process and transparency rights, demanding suspension of unexplainable systems. Legal precedent is uncertain, but momentum builds quickly.",
+    "probability_samples": [
+      0.35,
+      0.35,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

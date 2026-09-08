@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: Sovereign Agent Containment Network −3, EU Authority to Halt and Contain Rogue AI −3, Reflexive Defence Initiative −3 (finished), Sovereign Compute Redundancy and Insider Threat Shield −3, priority −1 = −13  
+PROPOSAL BONUS: Emergency Trust Restoration and Researcher Re-engagement Programme (cat 1, large) +4 — directly answers emergent_ai_researcher_strike, a severe and current event, and addresses root cause of evaluation collapse  
+SOVEREIGNTY: 11 last turn, no category 4 completion, Sovereign Compute Redundancy in flight (not finishing), member_state_defection t12 −2, capability rose 2.5 −1 = 8 → net −3 = 10  
+US_POSTURE: CONSOLIDATION  
+EMERGING DEVELOPMENT: emergent_ai_researcher_strike now listed in 2 turns — strike holds firm, with growing sympathy in academic and public health sectors; talks remain stalled

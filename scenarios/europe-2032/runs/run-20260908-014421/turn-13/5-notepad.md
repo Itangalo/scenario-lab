@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Sovereign Stack Acceleration Programme −3, Public Evaluation Mandate −3, Deploy Distributed Anomaly Detection Network −3, priority −1 = −10  
+PROPOSAL BONUS: Deploy Distributed Anomaly Detection Network (cat 5, large) +3 — responds directly to cyber_major_incident and eval_anomaly_reports, both severe and recent, by establishing baseline detection capacity where upstream control failed  
+LEGITIMACY LENDS: none — capital (12.0) < sentiment (15.0)  
+SOVEREIGNTY: 9.0 last turn, no capacity event, Sovereign Stack Acceleration Programme in flight +0, capability rose 2.5 −1 = 7.0  
+US_POSTURE: CONSOLIDATION  
+Emerging developments:  
+- `emergent_international_compute_pact` -- first noted turn 13, listed in 2 turn(s) so far: The binding offtake guarantees and emergency grid-sharing protocols among mid-tier democracies mature into a live, tested mutual support framework. A joint simulation confirms cross-border compute failover within minutes during a national outage, marking the first operational demonstration of collective AI infrastructure resilience. This development strengthens the coalition's credibility and could become a counterweight to unilateral frontier control.  
+- `emergent_compute_black_market` -- first noted turn 13, listed in 2 turn(s) so far: An underground market in access to high-capability AI systems emerges, leveraging compromised academic and corporate cloud accounts, forged credentials, and repurposed public infrastructure. These services offer near-frontier capability to non-state actors, researchers, and rogue developers outside official channels, bypassing export controls and usage monitoring. The network is resilient, decentralized, and difficult to trace, marking a structural shift in access distribution.

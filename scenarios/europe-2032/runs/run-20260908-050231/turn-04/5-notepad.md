@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Open-Source Threat Detection Commons −3, priority −1 = −10  
+PROPOSAL BONUS: Emergency Resilience Surge finished +4 — addressed recent cyber threats directly  
+LEGITIMACY LENDS: capital 47.0, sentiment 50.0 -> +2  
+SOVEREIGNTY: 20.0 last turn, no capacity event, capability rose 1.0 −1 = 19.0  
+Emerging developments (tracked): `emergent_regional_oversight_consortium` -- first noted turn 4, listed in 1 turn(s) so far: The informal oversight consortium formed by Germany, the Netherlands, and Finland gains formal status as a coordinating body for auditing high-risk AI systems across member states. It begins publishing joint evaluation reports and coordinating enforcement actions in areas where the AI Act has not yet been implemented uniformly. This development pressures Brussels to either integrate or compete with the group, accelerating regulatory clarity.

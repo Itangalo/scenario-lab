@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Emergency Resilience Surge −3, Frontier Model Registry −3, priority −1 = −7  
+PROPOSAL BONUS: Frontier Model Registry (cat 1, large) +1 — addresses ai_safety collapse and cyber_major_incident, but faces strong resistance and uncertain uptake  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 16.0 last turn, InvestAI Gigafactories finishes t7 +5, Sovereign AI Compute Corridor finishes t7 +5, member_state_defection t8 −3, capability rose 2.5 −1 = 16.0  
+US_POSTURE: CONSOLIDATION  
+emergent_labour_protests_escalate -- first noted turn 2, listed in 8 turn(s) so far: Labour actions intensify in France and Belgium, with transport and public administration workers joining strikes demanding legislative limits on AI deployment. Media coverage grows, framing the issue as a democratic deficit in AI governance.  
+emergent_compute_black_market -- first noted turn 8, listed in 2 turn(s) so far: A shadow market in sovereign compute capacity emerges, where access to EU-funded AI infrastructure is resold through anonymized leasing and containerized workloads. Initial investigations suggest participation by mid-tier tech firms and research collectives seeking to bypass usage controls, undermining the strategic intent of the InvestAI program.

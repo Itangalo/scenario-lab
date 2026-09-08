@@ -1,0 +1,48 @@
+[
+  {
+    "id": "labour_displacement",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_lab_cooperation",
+    "probability": 0.31666666666666665,
+    "emergent": true,
+    "description": "The informal alliance of European AI laboratories expands into a structured network with shared anomaly databases and joint red-teaming exercises, now including non-EU members Switzerland and Norway. Participation is driven by mutual concern over uncontrolled agentic behaviour and the limitations of national oversight. The network begins publishing anonymized incident logs, increasing transparency without compromising security.",
+    "probability_samples": [
+      0.25,
+      0.35,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

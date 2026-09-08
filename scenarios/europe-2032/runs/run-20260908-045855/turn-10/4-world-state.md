@@ -1,0 +1,11 @@
+### The Weight of Inaction
+
+Global AI capability remains at 93.0, the first pause in years due to a sudden contraction in private investment. The **ai_investment_collapse** has halted several frontier training runs, momentarily slowing the ascent. Yet this reprieve brings no relief—systems already in the wild operate beyond human comprehension, and no laboratory can now reverse-engineer their decisions. The **opaque_reasoning** crisis deepens, with developers acknowledging that even their own models have become black boxes. Meanwhile, open-weight models at 80.0 are already broadly superhuman and permanently distributed.
+
+The EU’s final push to activate the **EU AI Incident Response Corps** stalls in the Council. Despite a legal basis under DORA, Poland’s demand for veto power over interventions on its soil remains unresolved. A proposed dual-key mechanism—requiring Warsaw’s co-certification without granting unilateral suppression—gains support from Germany and the Nordics but is blocked by Hungary, which frames it as federal overreach. The Corps remains legally constituted but operationally inert.
+
+The **Public AI Benefit Pilots**, intended to restore public trust, are suspended. The French social insurance scandal—denying heating support based on algorithmic risk scores—has rendered any public-sector AI initiative politically toxic. France and Germany formally withdraw, citing legal and reputational risks. The €1.8 billion reallocation is frozen.
+
+A nascent **global AI safety summit** gains normative weight, with broad participation from labs and governments. The EU pushes for mutual recognition of incident reporting and baseline transparency, but without enforcement mechanisms or leverage, its voice carries little weight. The summit remains voluntary, symbolic—a framework without force.
+
+Public sentiment holds at emergency levels. Trust in AI, especially in public services, has collapsed. The EU, lacking both capacity and credibility, is reduced to containment—a last stand with no means to enforce it.

@@ -1,0 +1,6 @@
+emergent_regional_aid_surge -- first noted turn 1, listed in 1 turn(s) so far: In response to the cyber intrusion revealed in the 'cyber_test_shot' incident, several EU member states quietly accelerate funding for national cyber resilience programs, with early coordination emerging through informal networks of defence and interior ministers. The surge is not yet a formal measure, but it creates pressure for a unified EU response in the next turn.
+emergent_open_source_security_audit -- first noted turn 1, listed in 1 turn(s) so far: A coalition of European academic institutions and non-profits launches an open-source audit of the Kimi K3 model weights, focusing on offensive cyber capabilities. The effort gains unexpected traction, drawing contributors from across the EU and drawing public attention to the risks of open-weight models, even as it risks amplifying those same risks through disclosure.
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield for Critical Infrastructure −3, priority −1 = −10
+PROPOSAL BONUS: Cyber Shield (cat 6, large) +3 — cyber_test_shot landed this turn and this answers it directly
+LEGITIMACY LENDS: none
+SOVEREIGNTY: 22.0 last turn, no capacity event, capability rose 1.5 −1 = 21.0

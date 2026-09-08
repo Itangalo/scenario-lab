@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `ai_capability` increased from 67.5 to 75.0 (+7.5) and `openweight_capability` increased from 54.0 to 58.0 (+4.0), but the narrative attributes the jump in `ai_capability` to \"recursive self-improvement now in motion\" without anchoring the rate of change to the fixed, unannounced global pace defined in Invariant 1. The sudden discontinuity (\"sudden leap\", \"unanticipated release cadence\", \"human-led development cycles are no longer in control\") implies an exogenous acceleration not tied to the fixed underlying rate, violating Invariant 1: \"How fast the world moves is fixed, and unannounced.\" Metric rule 1 (implied by Invariant 1) requires that capability growth follow a predetermined, consistent pace from turn 1 to the last turn; unexplained discontinuities or recursive takeoff narratives are not permitted.\n- Invariant 2 violated: `ai_safety` dropped to 0.0 with no explanation of a catastrophic physical event or irreversible systemic collapse that would justify a hard floor at zero. While falling metrics are allowed for `ai_safety`, setting it to 0.0—implying *total* loss of assurance—requires extraordinary justification. The narrative cites \"lack of technical capacity\" and \"no immediate technical gains\", which are insufficient for a complete collapse to zero. This risks reifying a metric floor not present in the rules and may improperly signal irreversible failure, violating the principle that only `ai_capability` and `openweight_capability` have accumulation invariants (others can fall but not necessarily to hard bounds without extreme justification).\n- Narrative Constraint 8 violated: The narrative telegraphs by stating \"the era of predictable scaling is over\", which implies a known, permanent shift in the underlying dynamics of AI development. This violates Invariant 8: \"The narrative must not telegraph.\" Such a statement forecasts a permanent future state and implies knowledge of the closure of a gate (predictable scaling) that belongs only in event evaluations, not in narrative description. Tension and surprise are allowed, but declarative closure of an era is anticipatory and deterministic."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

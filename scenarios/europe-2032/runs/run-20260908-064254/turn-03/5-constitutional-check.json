@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The narrative states \"three large measures and a priority drained resources,\" but Constitutional Constraint 5 limits the EU to at most one new measure and one named priority per turn. Introducing or maintaining three large measures in a single turn violates this rule.\n- Modelling Choice violated (Constraint 7): The drop in `eu_political_capital` from 38.0 to 31.0 (−7.0) is attributed in part to sustaining multiple measures and a priority, but the Portfolio Charge in the notepad shows only −10 total across all items, with no mechanism provided for how this translates into a 7.0-point drop in political capital. More critically, the narrative implies that political capital is being drained by multiple concurrent large measures, which contradicts Constraint 7's requirement that `eu_ai_sovereignty` and `eu_political_capital` remain distinct and separable stocks. The conflation of their drivers—especially when sovereignty only dropped by 1.0 while political capital dropped by 7.0—risks implying they are the same stock, violating the constitutional separation."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

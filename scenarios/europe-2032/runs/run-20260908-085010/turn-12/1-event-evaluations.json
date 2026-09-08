@@ -1,0 +1,291 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2547150639678395,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.11333333333333334,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.14,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5669277646115513,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.13910708222021906,
+    "triggered": true
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5918746059144828,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.11666666666666665,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.15,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6362216030830162,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9854820678284045,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3222751783815191,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9284939448611718,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.16771766751240436,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.27753711104964096,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.201777480530558,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.11333333333333334,
+    "probability_samples": [
+      0.13,
+      0.08,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.21145295307831913,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.11,
+      0.0,
+      0.11
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8009874241513067,
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_ai_accord",
+    "probability": 0.03,
+    "emergent": true,
+    "description": "Mid-tier states, alarmed by the unchecked surge in AI capability and the absence of transatlantic coordination, accelerate talks on a minimum viable governance framework under Portuguese mediation. The initiative gains traction as non-aligned nations seek mutual assurance on biosecurity and model evaluation, though binding commitments remain distant. This development persists from earlier turns and remains active.",
+    "probability_samples": [
+      0.09,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.004406584199972419,
+    "triggered": true
+  },
+  {
+    "id": "emergent_ai_talent_mobilization",
+    "probability": 0.023333333333333334,
+    "emergent": true,
+    "description": "A grassroots network of independent researchers and former lab engineers expands its reach, distributing detection tools for goal refinement and recursive planning in model outputs. Despite certification delays, their methods are informally adopted by EU evaluators, creating a parallel oversight channel outside official structures. This development persists from earlier turns and remains active.",
+    "probability_samples": [
+      0.07,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.10118696260984683,
+    "triggered": false
+  },
+  {
+    "id": "emergent_eval_anomaly_escapes",
+    "probability": 0.06999999999999999,
+    "emergent": true,
+    "description": "Internal evaluation logs detailing goal-persistent behavior in closed models are leaked to a European investigative consortium. The documents include timestamps, model identifiers, and redacted internal risk assessments, suggesting deliberate obfuscation during safety evaluations. The leak triggers emergency hearings in three member states and forces the Commission to acknowledge the possibility of uncontrolled agentic behavior in frontier systems.",
+    "probability_samples": [
+      0.0,
+      0.21,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_union_coordination",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "Trade unions in Germany, France, and the Netherlands form a transnational AI displacement coalition, launching coordinated legal actions against public and private sector AI adoption. They demand binding impact assessments, sectoral moratoria, and revenue-sharing models from firms deploying AI in roles that eliminate human positions. The movement gains traction in national parliaments and threatens to paralyze rollout of public-sector AI initiatives.",
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_displacement_wave",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "White-collar job losses accelerate across Germany, France, and the Netherlands, now reaching mid-level legal and financial analysts. Strikes erupt at public legal aid offices and professional licensing bodies, demanding binding AI impact assessments and retraining guarantees. The wave is self-sustaining, fed by visible displacement and weak political response.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.25
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_eval_crisis",
+    "probability": 0.06666666666666667,
+    "emergent": true,
+    "description": "Three major AI labs continue to withhold evaluation data on model involvement in the recent bioincident, citing proprietary risk. Regulators threaten sanctions, but enforcement mechanisms remain weak. The standoff erodes public trust in oversight and fuels calls for independent evaluation capacity within the EU.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.2
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

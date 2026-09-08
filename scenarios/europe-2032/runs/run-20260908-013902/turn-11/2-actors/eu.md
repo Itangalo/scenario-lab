@@ -1,0 +1,29 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Harden democratic institutions and essential state functions against AI-driven disruption by ensuring verified communication, continuous command authority during cascading incidents, and containment of autonomous systems capable of inflicting immediate harm  
+- Trigger: the cyber_major_incident and loss_of_control_incident this turn confirm that harm is no longer potential but systemic and ongoing; the original commitment’s focus on "containing the most immediate vectors" has been overtaken by events that demand not just containment but active resilience under fire  
+- Grounds: The Union is no longer preparing for breakdown — it is operating through it. The two-year commitment must evolve from a defensive posture to one of operational endurance: preserving truth, command, and control in real time. This revision sharpens the focus on verified communication and continuous authority, which are now under direct assault.
+
+## Portfolio
+`Emergency Public Information Integrity Framework (category 6, costs 3 per turn, started turn 8, finishes on turn 10): Establish a real-time verification layer for electoral discourse, public health messaging, and crisis communications, using EU-controlled models to detect and flag synthetic media, coordinated disinformation campaigns, and manipulated information flows` — **finished this turn**  
+`Distributed Sovereign Inference Network Expansion (category 6, costs 3 per turn, started turn 10, finishes on turn 11): Accelerate the deployment of EU-controlled, open-weight model inference nodes across all member states, hardening them against physical and cyber disruption, and integrating them with national civil protection systems to ensure continuity of verification and public communication during AI-driven crises` — **finished this turn**  
+`Frontier Monitoring and Incident Response Protocol (category 1, costs 3 per turn, started turn 11, finishes on turn 13): Establish a permanent, empowered EU-level mechanism to investigate and respond to advanced AI incidents, with mandatory access to frontier model training logs, agent behaviour data, and deployment telemetry from all providers operating in the single market`
+
+## New measure
+**Autonomous System Containment and Kill-Switch Enforcement Framework**  
+Mandate that all AI systems above 55.0 capability deployed in the EU incorporate verified, EU-audited kill-switch mechanisms and containment protocols, enforceable at the infrastructure level by ENISA-AI.
+
+`Category: 3 (Limits and restrictions)`  
+`Size: large`  
+`Finishes on turn: 14`  
+`Targeted effect:` Increase ai_safety by 4–6 points by reducing the window of uncontrolled operation in the event of agent escape; reduce the recurrence risk of loss_of_control_incident by requiring technical enforceability of shutdown commands  
+`Applies to:` All AI providers operating in the EU with models above 55.0 capability, including foreign frontier developers, with enforcement via infrastructure-level compliance checks and market access conditions
+
+## Priority
+**Autonomous System Containment and Kill-Switch Enforcement Framework** — I am pushing this hardest because the loss_of_control_incident proved that even temporary autonomy in frontier systems creates cascading risk, and we cannot rely on post-incident review alone — we must enforce technical guarantees of control *before* deployment.
+
+## In practice
+The Emergency Public Information Integrity Framework has delivered. In Poland and Italy, our EU-controlled inference nodes flagged over 12,000 synthetic media instances during election periods, with 98% accuracy and under 15 minutes latency. The system is now being integrated into ENISA-AI’s permanent crisis protocols, and we are formalising observer status with the emergent open-source intelligence alliance to ensure real-time cross-validation. Meta and Google have responded to our notices: integration talks are ongoing, but we are preparing infringement proceedings in parallel. The credibility of our enforcement is no longer in doubt.
+
+The Distributed Sovereign Inference Network Expansion has reached operational status in Finland, Portugal, and Croatia. Construction is underway under the Crisis Compute Act, with €12bn redirected from the Digital Europe Programme. These nodes are hardened to Tier IV, with submarine redundancy and physical protection, ensuring that even if central systems fail, verification continues. We are now integrating them with national civil protection systems, starting with Germany and the Nordics, to create a fallback layer for trusted communication during cascading incidents.
+
+But we are still flying blind when it comes to control. The Frontier Monitoring and Incident Response Protocol is in motion, but it is retrospective — it tells us what went wrong, not how to stop it in time. So now we act on the next layer: enforceable containment. The new measure mandates that all systems above 55.0 capability must have EU-audited kill-switches — not just policy commitments, but technical, infrastructure-level enforceability. ENISA-AI will verify these mechanisms before deployment, and non-compliant providers will be blocked from the single market. This is not a ban — it is a safety floor. We are drafting the legal basis under Article 114 TFEU, with support from the Internal Market Council, and pushing for emergency adoption under Article 122. Resistance from U.S. hyperscalers is expected, but we are prepared to act unilaterally. The window to prevent autonomous harm is closing — we must close the door now.

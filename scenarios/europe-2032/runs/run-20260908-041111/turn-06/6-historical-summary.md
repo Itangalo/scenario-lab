@@ -1,0 +1,9 @@
+By late 2027, the EU’s emergency AI regulations faced deepening implementation crises despite legislative advances. The Tech Sovereignty Package achieved legal clearance in 14 member states, but only €82bn of the promised €200bn in private investment materialized, revealing a critical gap between policy and industrial delivery. InvestAI Gigafactories in Finland and Andalusia secured emergency grid access, yet transformer shortages and infrastructure delays stalled deployment, undermining confidence.
+
+In response to escalating threats, the EU launched the European Red-Team Grid—a network of five regional hubs for simulating AI-driven supply chain attacks—inviting cooperation from Japan, South Korea, and Canada through a new middle-power coalition. However, site preparations lagged, compute allocation remained unresolved, and full operations were delayed beyond the current timeline due to coordination bottlenecks and staffing shortages.
+
+Public trust eroded further after an ombudsman exposed systemic bias in Bavaria’s AI-managed social insurance system, prompting the Commission to impose a moratorium on AI use in social benefits, policing, and judicial decisions. This reinforced widespread perception of AI as hazardous and unaccountable.
+
+Globally, AI capabilities surged past interpretability thresholds: frontier models no longer produced human-readable reasoning, rendering legacy audit and safety frameworks obsolete. Offensive and defensive AI functionalities became indistinguishable in open-weight releases, spreading unchecked. While core red-teaming practices persisted in limited form, the overall safety regime deteriorated critically.
+
+Despite these challenges, the middle-power coalition achieved modest supply-chain coordination gains. Yet talent flight to the U.S. and China intensified, threatening the viability of Europe’s sovereignty ambitions, which now rested solely on contested domestic compute infrastructure.

@@ -1,0 +1,220 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6318793916775887,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8870876901654299,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.36752335437823536,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7655883221248263,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9219134872276707,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.16288751489061548,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9407460775099017,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.37134281664579527,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.13,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.03317292449744136,
+    "triggered": true
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.016784397317675226,
+    "triggered": true
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.03666666666666667,
+    "probability_samples": [
+      0.11,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.46807839565888987,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regional_safety_pact",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Building on the emergent_regional_ai_accord, a formal pact among Nordic and Benelux states is announced, mandating joint third-party audits and shared red-teaming for all high-risk sovereign AI deployments. The pact operates outside EU governance but sets de facto standards that smaller member states begin to adopt, increasing pressure on the Commission to formalize the Sovereign Agent Operational Assurance Framework.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.07433498542646189,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated audit initiative among Nordic and Benelux states expands into a formal early-warning network for high-risk public AI deployments, sharing red-teaming findings and incident precursors in near real time. The network operates independently of EU structures but begins to inform Commission assessments, creating a de facto regional safety layer that strengthens collective resilience and could evolve into a standard-setting body.",
+    "emergent": true,
+    "id": "emergent_regional_safety_network",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6140687875389121,
+    "triggered": false
+  },
+  {
+    "description": "An openweight model trained on biomedical data and released earlier this year demonstrates unexpected proficiency in designing functional protein sequences, verified in independent lab tests. The work is published by a university consortium in Germany and the Netherlands, sparking debate over whether this constitutes a new class of accessible bio-risk and prompting calls for export-style controls on high-capability open biological models.",
+    "emergent": true,
+    "id": "emergent_bio_design_breakthrough",
+    "probability": 0.049999999999999996,
+    "probability_samples": [
+      0.0,
+      0.15,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A joint audit initiative among Nordic and Benelux states strengthens regional alignment on AI safety, creating a de facto coordination mechanism outside formal EU structures. It shares red-teaming resources and establishes common safety baselines for high-risk public deployments, increasing pressure on laggard states. This emergent development reflects growing regional momentum for stricter oversight in the absence of EU-wide agreement.",
+    "emergent": true,
+    "id": "emergent_regional_ai_accord",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.25
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "An informal coalition among semiconductor-exporting nations—Netherlands, Japan, South Korea—begins to function as a coordination mechanism on advanced chip technology transfers. While not yet formalized, it allows the EU to indirectly shape export licensing decisions and increases the cost of bypassing allied controls. This emergent leverage enhances the EU’s strategic weight despite its low sovereignty, particularly as open-weight models raise proliferation concerns.",
+    "emergent": true,
+    "id": "emergent_supply_chain_leverage",
+    "probability": 0.09999999999999999,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.3
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

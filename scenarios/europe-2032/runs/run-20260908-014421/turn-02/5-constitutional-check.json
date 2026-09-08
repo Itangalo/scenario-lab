@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 45.0 to 53.0 (+8.0), which is a rise of 8.0 in one turn. While the invariant allows `openweight_capability` to rise or stay flat, it must not exceed `ai_capability` and must respect realistic accumulation rates. The narrative provides no justification for such a large jump in open-weight capability—especially amid stalled sovereign capacity projects and denied frontier access—while `ai_capability` itself only rose by 3.0. Given that openweight models depend on access to frontier progress and compute, and the narrative explicitly states \"frontier access effectively denied\", a surge of +8.0 is implausible and violates the spirit and realism enforced by Invariant 2.\n- Modelling choice 5 violated: The narrative introduces *Labour Transition Acceleration Fund* as a new measure, while the notepad already lists three active measures (*InvestAI Gigafactories*, *Tech Sovereignty Package*, *Cyber Shield*) and adds this new one, making four large measures simultaneously in flight. The constitutional rule limits the EU to at most one new measure per turn and implies a manageable portfolio; the notepad confirms a portfolio charge from four large measures (−3 each) and a priority (−1), indicating four concurrent measures. This exceeds the structural constraint of manageable initiative load, violating Modelling choice 5: \"At most one new measure per turn\"."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

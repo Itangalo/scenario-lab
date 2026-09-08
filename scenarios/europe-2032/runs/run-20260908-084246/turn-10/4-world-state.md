@@ -1,0 +1,13 @@
+### The Frontier Opens, the Union Hardens
+
+AI capability advances to 68.0, driven by coordinated multi-agent planning now demonstrated in closed environments across logistics, cyber and materials science. The closed frontier inches forward — and for the first time, an open-weight release follows close behind. A new model, derived from recently leaked training data and optimized on distributed compute, reaches broad replication across research collectives and private clusters. openweight_capability rises to 55.0, reflecting rapid but partial diffusion constrained by hardware availability, alignment tuning, and patchy deployment infrastructure. It remains well below the frontier, consistent with delayed access and limited fine-tuning capacity.
+
+The EU responds with urgency. The **Emergency Override Authority Enforcement Directive** is proposed as a large category 6 measure, mandating physical override mechanisms in all high-capability AI systems tied to essential services. ENISA begins drafting technical standards under expedited procedures, and preliminary funding is earmarked from the Article 122 envelope. The directive is named the Union’s current priority, signaling political resolve.
+
+However, implementation has not yet begun. Legal scrutiny intensifies immediately: Warsaw and Budapest question the comitology fast-track, arguing that enforcement mechanisms infringe on national control over critical infrastructure. Challenges are filed, though no ruling is imminent. Public-sector unions voice skepticism, linking the proposal to ongoing concerns about surveillance and job displacement amid expanding AI adoption. Media coverage grows tense, with fragmentation along national lines.
+
+resilience increases modestly to 56.0, as early preparation work begins in Benelux and Nordic grids, embedding isolation protocols in pilot configurations. ai_safety remains stagnant at 28.0 — the new systems are observable, not yet understood. eu_ai_sovereignty dips slightly to 11.5, as the gap between external capability growth and domestic response capacity widens, though not catastrophically. The new measure and priority exact a cost: eu_political_capital declines to 6.0, reflecting early strain (−2 for large measure, −1 for priority), partially offset by residual legitimacy from earlier successes. public_sentiment softens to 33.0, as fears circulate about opaque kill switches and foreign providers threatening market withdrawal, but full backlash has not yet materialized.
+
+### A Fragile Circuit Breaker
+
+The directive is a signal, not a shield — announced, not enacted. The Union moves to build reflexes, but the body politic hesitates at the threshold.

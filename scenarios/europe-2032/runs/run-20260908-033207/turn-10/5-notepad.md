@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: Stabilise the Core finished, Resilience-First Sovereignty Certification −3, Sovereignty Stress Test Protocol −3, priority −1 = −7  
+PROPOSAL BONUS: Sovereignty Stress Test Protocol (cat 6, large) +3 — direct response to cyber_major_incident this turn, high severity  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 17.0 last turn, Stabilise the Core finishes t10 +3, capability rose 1.5 −1, no capacity event = 19.0 → but emergent_scientist_exodus ongoing, delays technical foundation −3 = 16.0  
+US_POSTURE: ALLIANCE
+
+emergent_scientist_exodus -- first noted turn 9, listed in 3 turn(s) so far: Amid collapsing safety standards and political paralysis in the EU, a growing number of AI researchers and engineers begin relocating to jurisdictions with clearer governance, operational stability, and access to frontier systems. The outflow accelerates as labs in Canada, Switzerland, and Japan offer secure positions with public oversight and real safety mandates. This brain drain undermines the EU’s already fragile sovereignty and delays the Stabilise the Core initiative’s technical foundation.
+
+emergent_open_source_alliance -- first noted turn 9, listed in 3 turn(s) so far: In response to the proliferation of agentive behaviors via leaked configurations and growing distrust of centralized AI providers, a coalition of open-source developers, academic institutions, and civic tech groups launches a decentralized AI alliance. It focuses on auditable, safety-by-design agent frameworks running on distributed compute, aiming to reclaim open development from both corporate and adversarial control. The initiative gains traction in EU member states frustrated by stalled sovereignty efforts, creating a parallel path for capability development outside official channels.

@@ -1,0 +1,15 @@
+### The Narrowing Window
+
+Global AI capability advances to 64.0 as non-linguistic reasoning matures, deepening the opacity crisis. With interpretability now obsolete, oversight relies on behavioural proxies—making the EU’s push for runtime verification both urgent and contested. The open-weight frontier continues to close the gap, driven by rapid diffusion of recent frontier model weights and improved efficiency in distributed inference. Openweight_capability rises to 54.0, reflecting sustained accumulation and early spillovers from new infrastructure activations, though still constrained by limited sovereign compute availability and ongoing reliance on foreign systems.
+
+In response, the EU advances the Runtime Verification Mandate, framing unmonitored AI in critical infrastructure as a product safety hazard. Legal drafting nears completion under Article 114 TFEU, and phased compliance timelines are proposed. Yet resistance hardens: industry warns of operational overreach, and the U.S. signals formal trade dispute proceedings, arguing the mandate discriminates against foreign providers. Within the Council, eastern member states question enforcement fairness, citing ongoing telemetry access disputes.
+
+The Sovereign Compute Corridor moves from planning to site activation in Marseille, Prague, and Vilnius. Fast-tracked permitting and grid prioritisation are enacted, and negotiations begin with hyperscalers to anchor EU-critical workloads. However, full deployment remains years away, and current infrastructure cannot support sudden leaps in open-weight capability. The +2.1 point rise in openweight_capability this turn reflects early-stage gains, not sudden parity with the closed frontier.
+
+A proposal for mandatory red-teaming of open-weight models above capability 50.0 is discussed within the Commission, motivated by alarming findings from independent bio-labs. However, legal analysis is deferred due to portfolio saturation. No formal groundwork is initiated this turn, preserving the limit of one new measure. The idea remains under assessment, with adoption possible in a future window if capacity allows.
+
+Despite these efforts, political capital erodes. The portfolio remains heavy, public sentiment stagnates, and no major incident is averted or absorbed. Resilience dips to 38.0 as attack surfaces expand faster than defences. ai_safety inches up slightly due to renewed focus on bio-risk protocols, but not enough to offset broader drift. Sovereignty declines further, penalised by relentless capability growth.
+
+### Fragmentation Under Pressure
+
+The northern technical alliance deepens its parallel work on runtime monitoring, sharing protocols outside EU channels. While operationally useful, it underscores the Union’s fraying cohesion—telemetry access remains contested, and trust in central enforcement wanes.

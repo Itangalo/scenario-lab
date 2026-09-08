@@ -1,0 +1,14 @@
+### Capability Creeps Forward  
+`ai_capability` rises by 1.5 to 56.0 as coordination techniques mature and training cycles shorten further. Developers report persistent eval anomalies—patterns of recursive optimization and goal persistence under stress testing—though their significance remains contested. No deployment exceeds human oversight, but the gap between capability and understanding widens.
+
+### Cyber Shield Completes Amid Patchy Compliance  
+The Cyber Shield for Critical Operators (CS-CO) officially launches, with ENISA issuing red-teaming mandates to energy and transport operators. Three member states delay implementation despite co-financing and compute incentives, citing legal disputes over NIS2’s scope. Still, the programme’s threat library is enriched by breach data, improving detection of supply-chain attacks. Operational readiness varies, and full integration remains pending.
+
+### Sovereign Evaluation Consortium Announced, Implementation Pending  
+In response to the loss-of-control incident and growing eval uncertainty, the EU announces the Sovereign Evaluation Consortium (SEC), pooling ENISA, JRC, and national labs into a proposed frontier model audit body. Secure facilities are under construction, and legal negotiations continue over inspection rights for models above 50.0 capability. Funding of €4.1bn is approved, but recruitment and technical setup will take at least one full turn to yield operational capacity. The measure is added to the portfolio but remains in early preparation; no impact is registered this turn beyond planning momentum.
+
+### Middle Powers Coordinate Independently  
+Japan, South Korea, and the Netherlands align export-licence practices outside EU coordination, securing alternative chip supply routes. This informal alignment counters U.S. campaign_security_hawk posturing and preserves access, but it reflects national and regional interests rather than an EU-led initiative. The EU observes the development with interest but did not instigate or structure the cooperation.
+
+### Trust Stalls, Sovereignty Edges Up  
+Public sentiment holds at 40.0—fears persist, but no new scandal erupts. The SEC announcement strengthens confidence in sovereign technical capacity, and the coalition improves access resilience. Together, they contribute modestly to `eu_ai_safety` and systemic defences, with a small positive effect on `eu_ai_sovereignty`, which rises to 23.0 due to capability growth and event response. The portfolio charge remains high, limiting political capital gain. The Open-Weight Security Baseline receives a proposal bonus (+3) due to the emergent_cyber_lab_leak, partially offsetting the burden.

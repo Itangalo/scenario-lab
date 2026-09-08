@@ -1,0 +1,7 @@
+emergent_lithography_initiative -- first noted turn 6, listed in 2 turn(s) so far: Leaked documents from the European Commission reveal a fast-tracked study into reviving EU-based lithography manufacturing, leveraging existing ASML supplier networks and dual-use research grants. The plan, while still in stealth mode, gains traction as internal memos frame it as a 'strategic insurance' against perpetual extraterritorial coercion. Member states with semiconductor heritage quietly lobby for inclusion, sensing industrial revival.  
+emergent_strategic_autonomy_initiative -- first noted turn 6, listed in 2 turn(s) so far: Growing public and expert unease over the EU's persistent dependence on U.S.-controlled AI supply chains crystallizes into a cross-party parliamentary initiative calling for binding legislation on strategic autonomy in critical AI infrastructure. The initiative gains traction after the ASML coercion incident and is backed by industrial leaders warning of long-term erosion.  
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, EU Sovereign Compute Corridor −3, Accelerated Reskilling Compact −2, priority −1 = −9  
+PROPOSAL BONUS: Accelerated Reskilling Compact (cat 7, small) +2 — answers labour_displacement, recent and visible, though measure is modest in scale  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 15 last turn, no capacity event, capability rose 1.5 −1 = 14 → adjusted to 13.0 due to metric rule 5 decay under consolidation posture (see US_POSTURE)  
+US_POSTURE: CONSOLIDATION

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 48.0 to 54.0 (+6.0) while `ai_capability` increased by only +1.0 (from 59.5 to 60.5). This violates the constraint that `openweight_capability` may never exceed `ai_capability` and must grow no faster than it. A rise of 6.0 in openweight while frontier capability rises by 1.0 implies openweight is outpacing the frontier, which is explicitly prohibited unless justified by catastrophic physical destruction of compute (not narrated here).\n- Metric movement violates Invariant 9: `eu_political_capital` drops from 24.0 to 19.0 (−5.0), which is within bounds, but combined with `public_sentiment` (−5.0), `resilience` (−2.0), and `ai_safety` (−2.0), the narrative attributes broad systemic collapse including failed investments, revoked access, and institutional resistance. However, the largest single drop is in `eu_political_capital`, which falls by 5.0 without a named mechanism in the metric rules (e.g., no explicit penalty term like −5 for a specific event). While decay is allowed, a −5.0 drop in political capital must be justified by additive terms in the rule (e.g., multiple −1 or −2 events). The notepad shows only −7 from PORTFOLIO CHARGE and +6 from PROPOSAL BONUS, net −1, which does not justify a 5.0 drop. This suggests an unmodelled or unauthorised adjustment.\n- Narrative violates Constitutional Constraint 8: The line \"The turn ends not with consolidation, but with a scramble to hold ground\" telegraphs a judgment about the outcome and implies a forecast of continued instability, bordering on anticipatory narrative. While tension is allowed, this phrasing implies a directional trajectory (\"scramble to hold ground\") that suggests ongoing failure beyond the turn, which constitutes subtle forecasting and violates the prohibition on telegraphing."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: Accelerated EU Compute Sovereignty Corridor −3, Critical AI Infrastructure Protection and Continuity Directive −3, priority −1 = −7  
+PROPOSAL BONUS: Critical AI Infrastructure Protection and Continuity Directive (cat 6, large) +4 — answers cyber_major_incident directly, severe event, large measure, timely response  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 17.0 last turn, no capacity event, Accelerated EU Compute Sovereignty Corridor in flight +1, capability rose 1.0 −1 = 17.0  
+US_POSTURE: ALLIANCE
+
+## Emerging developments (tracked)
+- `emergent_data_center_protests` -- first noted turn 12, listed in 2 turn(s) so far: A coordinated protest movement emerges across several EU member states, targeting data centre construction sites linked to the Accelerated EU Compute Sovereignty Corridor. The protests turn increasingly disruptive, with blockades and minor sabotage incidents reported. As public sentiment remains low and a major infrastructure project is in flight, the risk of physical backlash rises.
+- `emergent_decentralized_eval_network` -- first noted turn 12, listed in 2 turn(s) so far: A joint initiative among mid-sized European AI startups and research labs forms an open, decentralized evaluation network to assess model safety and transparency independently of U.S. or Chinese influence. Backed by modest EU funding and leveraging distributed compute, it begins publishing public reports on model behaviour, aiming to fill the void left by absent safety oversight.

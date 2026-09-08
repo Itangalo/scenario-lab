@@ -1,0 +1,14 @@
+### A Threshold Crossed  
+An open-weight model release, matching the closed frontier within months rather than years, spreads rapidly across decentralized networks in Europe. Security researchers confirm it can autonomously craft phishing lures, identify zero-day candidates, and simulate basic protein folding—capabilities now accessible beyond centralized labs. This release accelerates development momentum, lifting `openweight_capability` to 57.0, reflecting rapid adoption and iterative improvement across distributed teams. The gain is substantial but bounded: while deployment is fast, the underlying stock builds on existing infrastructure and talent pipelines, limiting immediate leaps. The 4.0-point rise acknowledges diffusion and reuse, not instant parity with the frontier’s full capability trajectory, which advances more slowly at 65.5.
+
+### Crisis Mode Activated  
+The EU announces the *Emergency Resilience Surge*, a large category 6 measure aimed at hardening critical infrastructure against AI-enabled cyber and bio threats. Planning begins immediately, with red-teaming pilots approved and detection node siting initiated. However, full implementation cannot commence this turn; per structural constraints, high-cost measures require minimum lead time. The measure is therefore in activation phase only, with partial early benefits emerging but no systemic protection yet in place. As a result, `resilience` drops to 34.0, as rising AI capability outpaces defensive readiness.
+
+### Trust Erodes Further  
+Public sentiment plummets to 24.0 amid fallout from the welfare scandal and alarm over the open-weight release. Labour groups denounce the lack of accountability, and media coverage frames AI as a force of unchecked disruption. The completed *Pilot Transitional AI Adjustment Fund* provides retraining for displaced workers, but fails to generate a sentiment boost, as trust in governance continues to fray.
+
+### Sovereignty Under Strain  
+`eu_ai_sovereignty` declines slightly to 27.5. The completion of grid corridors last turn provided momentum, but this turn brings no new category 4 finish. The 0.5-point rise in `ai_capability` triggers a −1 decay, and resistance to integration mandates in Poland and Finland signals fragility in enforcement. No capacity event occurs, but the Union’s leverage remains contested.
+
+### Capital Dwindles — But Not Fully Yet  
+Political capital falls to 36.0. The portfolio charge adjusts to reflect only the initial burden of launching a major initiative: −2 for the ongoing grid measure (unchanged), −1 for initiating the *Emergency Resilience Surge* (not yet full cost), and −1 for naming it priority, totaling −3. The full −3 charge for a category 6 measure will apply next turn upon full activation. No proposal bonus is earned, as the new measure responds to a developing trend, not a recent shock. The legitimacy boost does not apply, as public sentiment now exceeds political capital.

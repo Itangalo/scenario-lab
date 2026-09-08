@@ -1,0 +1,13 @@
+### A Narrow Safety Gain, Amid Escalating Crises
+
+Global AI capability advances by +0.5 to 61.5, sustained by closed-lab integration of real-time interpretability tools. This delivers a +5 boost to `ai_safety`, reaching 28.0—the first meaningful assurance gain in years. However, offensive tooling derived from open models spreads rapidly. A frontier-capable architecture, reconstructed from leaked weights and fine-tuned on public data, pushes `openweight_capability` to 56.0, widening the gap between controlled development and unregulated use.
+
+The US consolidation posture tightens. Without formal announcement, access to the latest frontier models is restricted for EU public health and energy agencies—nationality-based filtering appears overnight. This sudden exclusion, combined with rising capability, triggers a −2 in `eu_ai_sovereignty` under rule 5: `eu_frontier_access_denied` fires this turn, and capability rose (albeit modestly). Sovereignty falls to 4.0, reflecting both physical dependence and eroding trust.
+
+Domestically, the **EU-Wide Civic AI Accountability Framework** reaches its final triologue. To secure passage, oversight is diluted: citizen panels gain advisory status only, and impact assessments are deferred for critical systems. The measure passes, delivering a legitimacy signal, but no sentiment gain materializes. Political capital is strained by the ongoing cost of the measure, which remains active this turn, contributing a −3 charge.
+
+The **Emergency Resilience Mobilisation** is proposed as a new priority initiative, but implementation does not begin in this turn due to governance bottlenecks and lack of consensus on funding. Planning is delayed, and no operational deployments occur. ENISA prepares drill templates and identifies pilot regions, but no cyber drills are conducted, and mobile bio-units remain in storage. No resilience gain is realized.
+
+Political capital drops to 4.0—reflecting the continued cost of the Civic Accountability Framework (−3) and the new priority designation (−1), partially offset by the absence of a second active measure. The model remains within constitutional bounds: sovereignty’s low level does not amplify the loss, preserving the independence of the two stocks as required.
+
+Public sentiment holds at 18.0—protests persist, now framed as resistance against both AI overreach and state overreaction. Labour unrest grows, with student strikes over "obsolete degrees" spreading to Italy and Belgium.

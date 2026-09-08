@@ -1,0 +1,13 @@
+### Closing the Loop
+
+The EU moved decisively to operationalise its Integrated Sovereign Defence Protocol, launching the development and initial deployment phase of the Automated Threat Enrichment Layer across ENISA, national CERTs, and major infrastructure operators. Built jointly by the German BSI and ENISA, the system began a phased rollout, with pilot integration completed in France, Germany, and the Benelux countries. Early tests demonstrated promising reductions in response latency—from days to under four hours in controlled environments—validating the core technical design.
+
+However, full integration stalled in the later stages of the turn. Smaller member states, particularly from the Baltics and Central Europe, withheld full API access, citing concerns over automated escalation and lack of national oversight. Negotiations continue, but no binding agreements were reached by mid-2029. As a result, the system remains in a limited operational state, with data ingestion active only in participating nations and cross-border coordination still manual.
+
+The U.S. retrenchment posture under the new administration solidified, with Washington halting joint AI evaluations and restricting data flows to non-NATO-aligned entities. This blocked planned transatlantic interoperability features, forcing the EU to reconsider the scope of shared threat intelligence in future phases. Nevertheless, the interpretability breakthrough from the prior turn was adopted by two major frontier labs, enabling limited real-time monitoring of model reasoning in high-risk deployments—boosting confidence in control.
+
+Resilience and ai_safety improved modestly due to the partial deployment and early test results, though not to the extent anticipated in a full rollout. Political capital rose slightly, reflecting recognition of progress amid complexity, while public sentiment ticked up as media coverage highlighted the system’s activation without incident. The measure remains on track for broader deployment in the next turn, pending resolution of interoperability disputes.
+
+### The Cost of Momentum
+
+The portfolio remained heavy, but the completion of the Tech Sovereignty Package and the Integrated Sovereign Defence Protocol freed some bandwidth. The Automated Threat Enrichment Layer, though initiated this turn, did not achieve full operational status—consistent with minimum implementation timelines. It is expected to reach partial pan-European functionality in Turn 7, assuming continued cooperation and no further delays.

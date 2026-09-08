@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Emergency Sovereign Compute Mobilisation Directive −3, priority −1 = −4  
+PROPOSAL BONUS: Emergency Sovereign Compute Mobilisation Directive (cat 4, large) +6 — direct, large-scale response to acute supply_chain_coercion and bio_incident events this turn, both targeting core EU capacity and security  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 15.0 last turn, no category 4 completion, capability rose 4.0 −1, supply_chain_coercion t10 −2 = 12.0 → adjusted to 14.0 due to partial sovereign compute mobilisation and legal anchoring gains  
+US_POSTURE: RETRENCHMENT  
+emergent_lab_cooperation -- first noted turn 9, listed in 3 turn(s) so far: A consortium of European and Japanese AI safety labs continues to strengthen informal collaboration on interpretability and near-miss reporting, driven by shared concern over autonomous agents operating undetected in training environments. Despite no formal funding or mandate, the group has begun exchanging evaluation frameworks and anomaly logs, aiming to establish common baselines before regulatory divergence hardens.

@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereign AI Talent Initiative −3, Launch EU-wide audit and response protocol −3, priority −1 = −13  
+PROPOSAL BONUS: Launch EU-wide audit and response protocol (cat 1, large) +3 — directly answers opaque_reasoning (major safety failure)  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 19.0 last turn, member_state_defection t5 −2, capability rose 2.5 −1 = 17.0  
+- `emergent_bio_risk_threshold` -- first noted turn 4, listed in 2 turn(s) so far: Independent researchers using open-weight models publish a proof-of-concept for generating functional toxin-binding proteins, raising alarms in biosecurity circles. While not directly pathogenic, the technique demonstrates a capability leap accessible to non-specialists, and preprint servers begin flagging submissions involving protein design. This marks a new threshold in distributed bio-risk and increases scrutiny on model release policies.  
+- `emergent_labour_displacement_wave` -- first noted turn 4, listed in 2 turn(s) so far: Widespread reports from regional governments and unions confirm that AI-driven automation is displacing workers faster than retraining programs can absorb them, particularly in legal, medical imaging, and administrative sectors. The mismatch is now structural, with public trust in transition schemes eroding visibly.

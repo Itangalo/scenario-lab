@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 47.0 to 52.0 (+5.0), but `ai_capability` only increased by +2.5 (from 54.5 to 57.0). This violates the rule that `openweight_capability` must not exceed `ai_capability`. Even if the new values are within bounds (52.0 ≤ 57.0), a jump of +5.0 in `openweight_capability` while `ai_capability` rises only +2.5 implies an implausible leap in open-weight systems overtaking or nearly matching closed frontier progress without justification. The narrative attributes this to \"a major open-weight release\", but such a large gain—larger than the underlying capability advance it supposedly mirrors—is inconsistent with the invariant that `openweight_capability` lags and accumulates more slowly, never falling but also never outpacing frontier development unless explicitly narrated as a spill or leak (e.g., model theft, intentional release). No such event is described.\n- Economic Constraint violated: The Cyber Shield Directive includes a €30bn matching fund, but no funding source is identified. While the EU may have fiscal capacity, a high-cost measure of this scale requires a specified origin (e.g., redirected budget lines, new borrowing, multi-year commitment). The narrative provides no indication of where the funds come from, violating resource consistency.\n- Modelling choice 5 violated: The EU now has three active measures (InvestAI Gigafactories, Tech Sovereignty Package, EU Talent Corridor Initiative) plus a new one (Cyber Shield Directive), and also maintains a priority. The narrative states the portfolio charge is −9 (−3−3−2−1), which implies four active measures including priority. However, introducing a new Category 6 measure while already carrying two large and one small initiative exceeds the limit of one new measure per turn. The launch of Cyber Shield Directive constitutes a second new measure introduced in this turn (Talent Corridor was also \"formally launched\" this turn per narrative), violating the \"at most one new measure per turn\" rule."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

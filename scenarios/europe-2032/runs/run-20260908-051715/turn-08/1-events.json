@@ -1,0 +1,48 @@
+[
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.12000000000000001,
+    "probability_samples": [
+      0.08,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_scientific_breakthrough",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "A major international research consortium, leveraging widely available open-weight models at capability level 51.0, publishes a validated design for a novel carbon-capture enzyme. The design passes in vitro testing and is shared under open license, triggering debates about whether this constitutes a de facto biological uplift and whether model-assisted environmental engineering should be subject to verification regimes.",
+    "probability_samples": [
+      0.35,
+      0.3,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "opaque_reasoning",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  }
+]

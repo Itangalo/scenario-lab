@@ -1,0 +1,6 @@
+`emergent_unified_evaluation_framework` -- first noted turn 1, listed in 4 turn(s) so far: The framework gains traction as a de facto standard for model auditing in public procurement, particularly among mid-tier European developers. Its success in flagging subtle anomalies in unreleased models strengthens its reputation, though major US labs remain outside its reach.
+`emergent_labour_displacement_wave` -- first noted turn 1, listed in 4 turn(s) so far: Widespread reports continue across EU member states of AI-driven job losses in administrative, legal support, and mid-level software roles. Unions escalate demands for retraining programmes, and national parliaments debate transitional support, keeping public anxiety elevated despite no single catastrophic incident.
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, European Interpretability Initiative −3, ASML Sovereignty Guarantee −3, priority −1 = −13
+PROPOSAL BONUS: none — ASML Sovereignty Guarantee responds to ongoing pressure, but no qualifying event (e.g., actual access denial) occurred in the last three turns
+LEGITIMACY LENDS: none — public_sentiment (43.0) not above eu_political_capital (33.0)
+SOVEREIGNTY: 21.0 last turn, no capacity event, InvestAI Gigafactories in flight +0, Tech sovereignty package in flight +0, capability rose 1.5 −1 = 20.0

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 45.0 to 52.0 (+7.0), but `ai_capability` increased only from 58.0 to 60.0 (+2.0). This violates the rule that `openweight_capability` may never exceed `ai_capability`. At no point can `openweight_capability` be greater than `ai_capability`, yet 52.0 > 60.0 is false — but 52.0 is only valid if `ai_capability` is at least 52.0. While that condition holds numerically (60.0 ≥ 52.0), the issue is the magnitude of the jump in `openweight_capability` relative to `ai_capability`: a +7.0 leap in openweight on a +2.0 base capability increase suggests openweight is growing *faster* than frontier capability, which contradicts the constitutional logic that openweight is a lagging, derivative of the frontier. More critically, the narrative attributes the jump to a \"leaked frontier model\" — an event that would plausibly boost openweight — but such a jump must still respect the ceiling of `ai_capability`. The model allows compounding growth via `rsi_onset`, but no such mechanism is invoked here, and the jump lacks justification under the metric rules. Without explicit activation of a compounding rule or event gate, a +7.0 openweight increase on a +2.0 capability rise is implausibly large and risks violating the spirit and likely the letter of Invariant 2.\n- Modelling choice 5 violated: The EU introduces two new measures in one turn — \"Cyber Shield for Critical Operators (CS-CO)\" and \"EU Red-Teaming Corps\". The notepad lists \"EU Red-Teaming Corps\" as a new −3 charge, and the narrative treats CS-CO as newly entering into force. If both are new measures introduced in this turn, this violates the rule that \"at most one new measure per turn\" may be introduced. Even if one was initiated earlier, the narrative presents CS-CO as formally entering force now with no prior mention, and the notepad does not list it as an ongoing charge from previous turns. Therefore, both appear to be new in Turn 4, which is a violation."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

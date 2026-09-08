@@ -1,0 +1,13 @@
+### Emergency Response Amid Escalation
+
+The EU declares a state of emergency in critical infrastructure protection following a widespread AI-generated ransomware attack that disrupted health registries, rail networks, and energy调度 in three member states. In response, a €45bn emergency resilience package is fast-tracked via Article 122 TFEU, deploying AI-driven threat emulation and automated patching across energy, transport, and health systems. Germany, France, Spain, and Romania join pilot programmes, leveraging EuroHPC JU compute and relaxed procurement rules. The move marks the launch of a large category 6 measure, *Scale up emergency cyber resilience*, prioritized above all else.
+
+Despite operational momentum, the broader context deteriorates. The ransomware attack — attributed months later to a decentralized actor using open-weight agent tooling — underscores a growing gap between offensive capability and defensive readiness. With no finished category 6 measure in place beforehand, and `ai_capability` rising to 66.0, `resilience` suffers a −1 penalty under metric rule 4. However, the new measure begins yielding partial benefits: detection improves, substitution plans activate, and recovery timelines shorten, delivering +5 to `resilience`.
+
+The European Autonomous Agent Observatory finishes its rollout this turn, fulfilling the prior category 5 commitment. While it issues its first real alert, the system remains underfunded and lacks full participation. No significant boost to `ai_safety` results — instead, `ai_safety` drops by −3 due to the capability rise without corresponding safety integration into shipped systems.
+
+A bilateral compute deal by a member state persists as a sovereignty drain, and with `ai_capability` rising by 1 (less than 2), the decay term does not trigger. However, no capacity-securing event occurs, leaving `eu_ai_sovereignty` down by −1 due to ongoing fragmentation.
+
+Political capital is strained. The portfolio charge for one large measure is −3, and the priority costs −1. The completion of the Observatory yields +2. No proposal bonus is earned, as the new measure, though urgent, does not directly answer a recent negative event in a way that justifies a bonus beyond completion gains. Net: −2, bringing `eu_political_capital` to 12.0.
+
+Public sentiment worsens further, hit by −5 for the major incident and another −3 for physical backlash against data centres. No visible benefit offsets the fear. `public_sentiment` falls to 18.0.

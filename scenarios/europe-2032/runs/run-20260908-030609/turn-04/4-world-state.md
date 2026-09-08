@@ -1,0 +1,13 @@
+### Strategic Reordering Amid Crisis
+
+The semiconductor blockade around Taiwan triggers a global AI shock. With advanced chip exports frozen, compute becomes a strategic war reserve. The EU invokes Article 4 of the Treaty on European Union, declaring advanced semiconductors critical infrastructure and proposing binding controls on all 5nm and below chips produced or transiting EU territory. A draft regulation is fast-tracked for emergency approval, with directives prepared for national governments to halt exports and redirect output from facilities like TSMC Dresden and Intel Magdeburg toward strategic programs including InvestAI Gigafactories and the EU Interpretability Corps.
+
+### Mobilisation Meets Resistance
+
+The proposed Sovereign Compute Mobilisation sparks immediate controversy. While the Commission frames it as economic self-defence, the measure faces strong headwinds. Germany and the Netherlands raise legal and economic objections, citing treaty obligations and billions in potential export losses. Early Council deliberations show only 15 of 27 member states tentatively supporting the full scope of the plan. The U.S. has not yet issued an official response, as its foreign policy posture remains undefined in this run and cannot be narratively anticipated. No operational redirection of chip output occurs this turn; the measure remains in the proposal and coordination phase, with full implementation at least two turns away due to high compliance and infrastructure demands.
+
+### Capability Creeps, Safety Stalls
+
+Global AI capability rises to 59.5 as labs exploit remaining compute to train larger, more autonomous agents. Openweight capability climbs to 47.0, driven by leaked training frameworks from pre-blockade runs. Yet no safety gains materialise: the interpretability breakthrough remains siloed, and the gap between capability and control widens. With no finished measure landing on shipped systems, ai_safety drops by 2.
+
+Resilience holds at 45.0, supported by prior coordination, but eu_ai_sovereignty shows no gain, as the new mobilisation effort has not yet delivered tangible capacity. The portfolio charge of −13 and proposal bonus of +1 imply a net −12 pressure on political capital, but no rule-based decay or event penalty justifies a drop of 9 points in one turn. In the absence of a valid mechanism, eu_political_capital remains unchanged at 27.0. Public sentiment stagnates at 35.0, as the social insurance scandal continues to erode trust, and the mobilisation is widely perceived as reactive, not resolved.

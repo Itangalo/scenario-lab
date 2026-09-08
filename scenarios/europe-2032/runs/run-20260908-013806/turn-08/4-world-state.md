@@ -1,0 +1,11 @@
+### The Frontier Shifts, the Union Reacts
+
+AI capability advances to 61.1, driven by iterative gains in agent autonomy and system integration, though debate intensifies over whether the pace can hold. A new open-weight model is released and spreads rapidly, contributing to a measured increase in openweight capability—but not a disruptive leap. Openweight capability rises to 50.8, reflecting adoption and tuning over weeks rather than an instantaneous jump, preserving alignment with the global pace of progress.
+
+The Emergency Sovereign Compute Mobilisation Directive achieves full effect, securing energy and legal access for three sovereign sites. This completion contributes a +3 boost to eu_ai_sovereignty under metric rule 5. However, one major US hyperscaler suspends expansion talks, citing regulatory overreach—a negative access event assessed at −3. These two terms cancel exactly against the decay from capability growth (increase of 1.0, below the 2.0 threshold, applying −1), resulting in no net change: eu_ai_sovereignty remains at 25.0.
+
+The EU launches the EU-Wide Agent Behaviour Monitoring Framework, a large category 5 measure aimed at runtime integrity, to be managed by the AI Safety Observatory. It promises real-time monitoring of high-capability models but faces immediate technical skepticism and legal pushback from member states wary of operational overreach. The measure is named as the new priority, replacing the completed directive in focus. Implementation will take multiple turns, and no significant effect is realized this period.
+
+Despite these efforts, ai_safety drops to 18.0 as the capability advance outpaces safeguard deployment. Resilience declines due to rising threat volume and the absence of any active category 6 measure. Public sentiment worsens as fears of uncontrollable AI spread, reinforced by media coverage of the recent incident.
+
+Political capital erodes further, falling to 16.0, reflecting the ongoing cost of high portfolio charge without decisive wins.

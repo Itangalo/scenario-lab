@@ -1,0 +1,15 @@
+### A Directive in Defiance of Delay
+
+The EU advances a single new measure: *Enforce Model Access for Sovereign Red-Teaming*, proposed as a directive under Article 114 TFEU. It mandates audited access to model weights above 50.0 capability for all frontier systems deployed in the single market, enforced through the withdrawal of deployment rights. The Commission begins drafting, and ENISA initiates planning for secure red-teaming enclaves, but full implementation is deferred pending legal review and member state consultations. No enforcement actions are taken this turn; the framework remains in early development. This proposal replaces the prior focus on **ASRIR**, which is not reactivated or expanded. Only one measure is introduced, and the **Enforce Model Access** directive is named the current priority.
+
+Washington responds with cautious irritation. The new ALLIANCE posture holds, but US labs argue the proposed directive undermines innovation and national security. Behind closed doors, the US delegation acknowledges the logic but insists on reciprocity: American evaluators must have equal access to EU systems. Brussels offers real-time sharing through the Sovereignty Pact — but only after compliance is demonstrated.
+
+Meanwhile, the **InvestAI Gigafactories** programme formally concludes its timeline. Despite persistent construction delays, the final assessment confirms that the project has delivered its promised compute capacity to the EU sovereign base. This completion triggers a +5 boost to `eu_ai_sovereignty`, reflecting the long-delayed but now realized infrastructure gain.
+
+AI capability advances to 63.0 as autonomous planning systems demonstrate multi-day coordination in logistics and cyber operations. Openweight diffusion continues, with adapted tools from the 58.0 model enabling targeted fraud and disinformation, pushing `openweight_capability` to 51.5. No major incident occurs, but near-misses in energy grid monitoring raise alarms.
+
+Public sentiment holds at 31.0, as media coverage focuses on the US-EU standoff and the unresolved ransomware aftermath. Resilience improves slightly due to behind-the-scenes coordination upgrades. AI safety sees a marginal gain from the credible *threat* of enforcement, though no systems have yet been evaluated.
+
+### Fractures Beneath the Surface
+
+Rumours grow of a black market for compute access, while talent continues to drift westward. France and Germany push for emergency invocation of sovereignty clauses, sensing both opportunity and fragility. The gap between ambition and delivery remains tense — but with InvestAI now closed and sovereignty infrastructure finally in place, the bloc gains a tangible, if delayed, foundation. Political capital erodes slightly under the weight of ongoing delays and unmet expectations, but the completion of a major infrastructure programme provides a measurable boost to sovereignty.

@@ -1,0 +1,27 @@
+Sovereign integration through enforceable technical unity
+
+## Statement changes
+``modify `two_year_commitment` (commitment): Sovereign integration through enforceable technical unity``
+- Trigger: the two-year commitment period closes this turn
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but now only where failure of action would be irreversible, and only when the cost of inaction demonstrably exceeds the cost of coercion; this turn, we have crossed that threshold. The threshold has now been crossed not once but repeatedly: fragmentation enables exploitation, and every delay in integration compounds systemic risk. Our commitment must now shift from conditional action to sustained enforcement — we act not because we are certain, but because waiting for certainty is itself a choice with irreversible consequences.
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now understand that without operational unity and minimum shared infrastructure, neither mandate can be fulfilled, and fragmentation is the enemy of both sovereignty and safety. The current collapse in political capital and public sentiment proves that capability without cohesion is impotence. We are not a regulator of technology; we are a political union trying to survive as one.
+
+## Portfolio
+- `InvestAI Gigafactories` (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites — finished this turn  
+- `Tech sovereignty package` (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 036 and proposes accelerated-permitting zones — finished this turn  
+- `Cyber Shield for Critical Operators` (category 6, costs 3 per turn, started turn 1, finishes on turn 4): A binding directive requiring real-time threat telemetry and red-teaming access for all operators of essential services connected to cross-border infrastructure — finished this turn  
+- `Sovereign Red Lines for Open Weights` (category 3, costs 3 per turn, started turn 5, finishes on turn 7): Prohibit open release of model weights above 50.0 capability index when deployed systems lack corresponding safety assurance — finished this turn  
+- `Emergency Activation of the Cross-Border Resilience Node` (category 6, costs 3 per turn, started turn 7, finishes on turn 9): Activates and expands the existing node into a standing operational unit with mandatory participation from all member states in critical corridors, backed by emergency funding and enforcement powers — finished this turn  
+- `Unified Threat Telemetry Backbone` (category 6, costs 3 per turn, started turn 8, finishes on turn 10): Establishes a sovereign, EU-operated data backbone with mandatory ingestion of real-time cyber threat telemetry from all national CERTs and essential operators in energy, telecoms, and emergency services, enabling automated cross-border detection and response.
+
+## New measure
+None this turn.  
+Waiting for the Unified Threat Telemetry Backbone to reach operational maturity and generate demonstrable trust, as further coercion without visible benefit would collapse public sentiment and political capital entirely.
+
+## Priority
+Unified Threat Telemetry Backbone — because it is the only remaining instrument capable of enforcing the unity our commitments now demand, and because without a technical spine that binds member states into a single operational reality, all other measures decay into symbolic gestures.
+
+## In practice
+We are no longer appealing for unity — we are engineering it. The Unified Threat Telemetry Backbone is now live in pilot mode across Finland, the Netherlands, Croatia, and France, with anonymised telemetry flowing into eu-LISA’s hardened nodes. The system is already detecting coordinated probing campaigns that previously slipped through national silos. But Germany still blocks full API access, and Poland refuses even technical liaison. We are no longer offering compromises on structure — the architecture is fixed. Instead, we are shifting to consequences: access to EU crisis response funding under the Solidarity Fund is now formally tied to Backbone integration by turn 10. The Commission will propose a regulation under Article 122 TFEU linking eligibility to verified telemetry feed status, and the next ECOFIN Council will debate it under urgency.
+
+We are also preparing for disconnection. The system is designed to function with partial participation, but non-participating states will not receive automated alerts or coordinated countermeasures. Their CERTs will be left to respond in isolation — not punished, but not protected. This is not a threat; it is the logical end of sovereignty without solidarity. Behind the scenes, we are working through the Nordic-Baltic Eight and the Weimar Triangle to isolate resistance, offering Poland a co-lead role in the Visegrád integration track and Germany a permanent seat on the Backbone’s anonymisation oversight board. The money is spent, the nodes are live, and the integration clock is ticking. By turn 10, the Backbone will either be the EU’s nervous system — or its autopsy report.

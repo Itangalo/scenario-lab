@@ -1,0 +1,6 @@
+- `emergent_regional_cyber_collective` -- first noted turn 1, listed in 4 turn(s) so far: Informal coordination among Nordic and Benelux states strengthens, with joint cyber drills held quarterly and shared AI monitoring dashboards piloted.
+- `emergent_biosafety_concerns` -- first noted turn 1, listed in 4 turn(s) so far: Scientific consensus grows around the risk of AI-accelerated bio-design; pressure mounts for binding international norms ahead of the WHO’s 2028 Global Health Security Summit.
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Critical Infrastructure Cyber Shield −3, priority −1 = −10
+- PROPOSAL BONUS: Emergency Bio-Design Governance Framework (cat 3, small) +3 — addresses emergent_biosafety_concerns directly and urgently
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 18.0 last turn, no capacity event, InvestAI Gigafactories in flight +1, capability rose 2.5 −1 = 17.0

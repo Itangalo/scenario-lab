@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 52.0 to 57.0 (+5.0) in one turn, which exceeds the maximum plausible growth rate. While the invariant allows `openweight_capability` to rise or stay flat, such a large jump is inconsistent with the fixed underlying rates of progress defined in metric rule 1 and the absence of any narrated event (e.g., a major open release, coordinated capability transfer, or open-source breakthrough) that could justify this surge. The narrative does not mention any such event, nor does it reference a compounding growth mechanism like `rsi_onset` that would permit accelerated gains.\n- Invariant 7 violated: The increase in `eu_political_capital` (+3, from 18.0 to 21.0) is attributed primarily to \"delivering a major resilience measure (+5)\", which implies a direct and dominant linkage between `eu_ai_sovereignty`-related outcomes and political capital. However, constitutional constraint 7 limits sovereignty's contribution to political capital to at most +3 per turn and forbids it from dominating other terms. A +5 credit from a sovereignty-adjacent measure violates this cap and undermines the constitutional separation between the two stocks.\n- Modelling Choice 5 violated: The EU introduces two new measures in one turn — the **Distributed Sovereign Inference Network Expansion** and the expansion of the **Emergency Public Information Integrity Framework** into new countries. While the latter may be framed as a widening of scope, the narrative presents it as a substantive operational expansion with new inference nodes and enforcement actions, effectively constituting a new phase. However, the launch of the **Distributed Sovereign Inference Network Expansion** is clearly a new measure (€12bn, new infrastructure program), and combined with the resilience measure completion, this results in more than one major initiative per turn. Only one new measure per turn is allowed under constraint 5."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

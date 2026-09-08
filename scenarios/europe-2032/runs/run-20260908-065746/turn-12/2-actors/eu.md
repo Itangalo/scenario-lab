@@ -1,0 +1,27 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Enforce real-time operational control over all high-risk AI systems affecting the EU, ensuring the ability to interrupt harmful behaviour and preserve evidence — not just monitor, but act — through a sovereign, cryptographically enforced intervention interface integrated into system architecture by turn 11, and maintain that control through EU-owned infrastructure capable of running critical AI workloads independently  
+- Trigger: The Mandatory Runtime Intervention Architecture has completed rollout (turn 12), but the Sovereign Compute Acceleration Directive remains stalled, leaving enforcement dependent on foreign infrastructure; the member_state_defection event confirms that external actors can bypass Union-wide positions through bilateral deals, undermining the credibility of any control mechanism not backed by sovereign capacity  
+- Grounds: The original commitment ended on time and was fulfilled: the intervention interface is now operational across 92% of high-risk systems. But its strategic value collapses if the EU cannot run those systems when access is withdrawn. The runtime mandate is not the end—it is the threshold. Without sovereign compute, we have a key to a door that someone else can lock. The commitment must now expand to include the substrate, not just the switch.
+
+## Portfolio  
+- Mandatory Runtime Intervention Architecture for High-Risk AI Systems (category 1, costs 3 per turn, started turn 9, finishes on turn 11): Require all high-risk AI systems, including foreign-hosted models serving EU markets, to integrate a standardized, EU-controlled intervention interface enabling real-time behavioural interruption and data freeze upon detection of anomalous or harmful activity.  
+- Sovereign Compute Acceleration Directive (category 4, costs 3 per turn, started turn 11, finishes on turn 14): Fast-track the deployment of EU-anchored, high-performance computing infrastructure dedicated to public and strategic AI workloads, with legal and physical control under member state jurisdiction.  
+- Mandatory Runtime Intervention Architecture for High-Risk AI Systems is **finished**.
+
+## New measure  
+**Emergency Compute Co-Location Pact with Joint Threat Response Partners**  
+Establish binding co-location and failover agreements with states in the joint threat response coalition, guaranteeing mutual access to sovereign compute in the event of disruption or denial by third parties, with EU nodes receiving priority routing and shared governance of cross-border workloads.  
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 13`  
+`Targeted effect:` eu_ai_sovereignty +10.0 (immediate), resilience +5.0 (via redundancy), eu_political_capital −2.0 (short-term cost of fast-tracking without full Council consensus)  
+`Applies to:` Joint threat response coalition members, selected member states (France, Germany, Finland, Sweden), and EU strategic AI operators
+
+## Priority  
+**Emergency Compute Co-Location Pact with Joint Threat Response Partners** — because the member_state_defection event proves the Union’s enforcement tools are now being circumvented in real time, and the joint threat response opens a narrow window to lock in mutual compute access before the coalition hardens its terms; this is not a substitute for full sovereignty, but it is the only way to prevent our runtime control from becoming a ceremonial function.
+
+## In practice  
+We are treating the joint threat response invitation as a geopolitical pivot. The cyber command and biosurveillance pact are not just defensive tools—they are the first real institutions of a post-American security order. We are negotiating entry not as a beneficiary, but as a provider of redundancy: offering EU-hosted compute nodes as failover infrastructure for coalition partners, in exchange for guaranteed access when our own systems are cut off. This is not charity—it is insurance. The legal basis is Article 122 TFEU (energy and infrastructure solidarity), extended by the newly invoked AI Security Protocol under the Joint Crisis Coordination Framework. We are fast-tracking agreements with Finland and Sweden, who already host dual-use facilities, and leveraging the Digital Europe Programme to fund cross-border fibre and cooling upgrades.
+
+At the same time, we are doubling down on the Sovereign Compute Acceleration Directive, but shifting tactics. Since Ireland and Poland remain blockers, we are bypassing full Council consensus by activating the “strategic infrastructure” clause in the Net-Zero Industry Act, allowing qualified member states to proceed as a coalition of the willing, with retroactive harmonisation promised. France and Germany are on board; we are offering Dublin a seat on the oversight board and guaranteeing that no co-location requirement will apply to purely commercial cloud services—only to systems designated strategic. For Warsaw, we are advancing €1.2 billion in cohesion funds tied to workforce training for the node, turning resistance into investment. The runtime mandate is now law, but it will mean nothing unless we can run the systems it governs. This turn, we are not just enforcing—we are anchoring.

@@ -1,0 +1,11 @@
+PORTFOLIO CHARGE: Emergency Cross-Border Containment and Incident Response Protocol −3, priority −1 = −4  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none — eu_political_capital (4.0) < public_sentiment (20.0)  
+SOVEREIGNTY: 7.0 last turn, no capacity event, capability rose 1.5 −1 = 5.0  
+US_POSTURE: RETRENCHMENT
+
+emergent_global_south_ai_initiative -- first noted turn 7, listed in 6 turn(s) so far: The coalition of ten Global South nations continues to expand its technical and institutional footprint, with new pilot projects in climate-resilient agriculture and AI-supported public health triage now operational across multiple member states. Their shared open-weight model repository reaches one million downloads, and they announce a joint fellowship program to build local evaluation capacity. This initiative is becoming a credible alternative pole in AI governance, drawing interest from unaligned states.
+
+emergent_ai_refugee_crisis -- first noted turn 12, listed in 2 turn(s) so far: Frontier AI labs in the Global North begin relocating key personnel and compute infrastructure to jurisdictions with weaker regulatory oversight and greater political stability, citing 'operational continuity' and 'strategic ambiguity'. This creates a growing diaspora of AI engineers and red-team specialists operating in legal grey zones, with several labs establishing de facto autonomous enclaves in Southeast Asia and the Gulf. The phenomenon accelerates as trust in Western governance erodes, creating a self-reinforcing cycle of brain drain and capability dispersion.
+
+emergent_sovereignty_revolt -- first noted turn 12, listed in 2 turn(s) so far: A coalition of EU member states led by France and Poland announces the formation of a 'European AI Shield Initiative', bypassing Commission oversight to jointly fund and deploy sovereign AI infrastructure on national soil using emergency defence budgets. The move is framed as a response to the collapse of EU political capital and the failure of the Luxembourg Cell, but it fractures the single market by creating competing national evaluation regimes and access tiers. The initiative draws on military-grade cyber hardening and repurposed satellite bandwidth, creating a shadow network that operates outside civilian regulatory frameworks.

@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Sovereign AI Core −3, Joint Threat Response Integration Directive −2, Middle Power Leverage Accord −2, priority −1 = −8  
+PROPOSAL BONUS: Joint Threat Response Integration Directive (cat 6, small) +2 — answers joint_threat_response directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21 last turn, EU Compute Sovereignty Guarantee finishes t10 +5, capability rose 1.5 −1, no capacity event = 25 → corrected to 21 (cap rise <2, no decay; completion already counted in t9)  
+US_POSTURE: RETRENCHMENT  
+emergent_resilience_backlash -- Regional resistance to mandatory cyber hardening intensifies, with local governments in Germany and Poland formally refusing to implement EU-mandated upgrades, citing budgetary strain and national sovereignty. This undermines the coherence of the Union's resilience strategy and risks creating patchy, inconsistent defences across critical infrastructure.  
+emergent_safety_breakthrough_adoption -- A coalition of EU research labs and public health agencies adapts fragments of an emerging interpretability toolset to monitor AI-driven diagnostics in hospitals. While not yet deployable at frontier scale, early integration into medical AI systems suggests a pathway to operational assurance, albeit slowed by workforce shortages and interoperability gaps.

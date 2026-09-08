@@ -1,0 +1,27 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — finishes this turn.
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — finished last turn.
+- `Cyber Resilience Surge (category 6, costs 3 per turn, started turn 1, finishes on turn 4): Launch emergency hardening of electricity, water and port operators against AI-enabled intrusion. Finished this turn.` — finished.
+- `Accelerated Lithography Access Initiative (ALAI) (category 4, costs 3 per turn, started turn 2, finishes on turn 5): Fast-track EU access to mid-tier DUV lithography tools by co-financing domestic procurement and securing alternative supply chains. Finished this turn.` — finished.
+- `Openweight Containment Framework (category 3, costs 3 per turn, started turn 3, finishes on turn 5): Establish binding thresholds on open-weight model releases based on capability, with automatic licensing requirements and weight-security audits for models above 45.0. Finished this turn.` — finished.
+- `Taiwan Blockade Response: Secure Domestic Compute Resilience (category 4, costs 3 per turn, started turn 4, finishes on turn 6): Launch emergency procurement and legal anchoring of 50,000 H100-equivalent GPUs on EU soil, with binding commitments from cloud providers to make them available for public and strategic use during supply disruption.` — finished last turn.
+
+Canceled measure: InvestAI Gigafactories. The measure concludes this turn, but its financial architecture has failed to unlock the promised private capital, with only two sites reaching final investment decision and permitting delays in Spain and Poland now projected to push deployment beyond 2032. Given the accelerating capability frontier and the urgent need to redirect capital toward operational resilience rather than long-term industrial build-out, we terminate the fund and reprogram €120bn into a new emergency compute access mechanism.
+
+## New measure
+**Emergency Compute Access Mechanism (ECAM)**  
+Establish a rapid-dispatch sovereign compute pool, drawing on existing and near-term EU-anchored capacity, to be activated during capability shocks or supply disruptions.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 8`  
+`Targeted effect:` +3 to eu_ai_sovereignty by turn 8, sustained; +1 to resilience by enabling failover for critical public AI services during crises  
+`Applies to:` EU jurisdiction, with binding obligations on hyperscalers operating in the internal market
+
+## Priority
+`Emergency Compute Access Mechanism` — because the loss of control incident, combined with the emergent regional data sovereignty push and the failure of InvestAI to deliver at scale, demands a shift from long-term industrial ambition to immediate operational sovereignty: we must be able to access and command compute *now*, not in 2034, and this mechanism creates a legal and financial instrument that can be activated within six months of a crisis, directly serving our two-year commitment to secure the foundations of EU AI sovereignty.
+
+## In practice
+We are concluding the InvestAI Gigafactories programme, but its underperformance forces a strategic pivot. The Commission is now drafting the Emergency Compute Access Mechanism under Article 122 TFEU, leveraging the precedent of the pandemic recovery fund to justify rapid fiscal mobilisation. €120bn from the terminated Gigafactories fund will be redirected to secure option contracts with AWS, OVHcloud, and selected national providers for 30,000 H100-equivalent GPUs—already installed or under delivery—indexed to availability and energy resilience. The mechanism will be governed by a new Compute Resilience Board within the Commission, with voting rights for member states and audit powers vested in ENISA. Activation thresholds will be tied to AI capability milestones (crossing 65.0) or verified loss-of-control incidents affecting critical infrastructure. To overcome resistance from Germany and the Nordic states, who fear market distortion, we are framing ECAM as a temporary crisis instrument, sunsetted in 2032 unless renewed by qualified majority. Simultaneously, we are integrating the ALAI-secured DUV tools into a domestic fab acceleration plan in Dresden and Grenoble, now co-financed by redirected European Defence Fund resources, to ensure that compute sovereignty is not purely demand-side. The emergent regional data sovereignty push is being channelled into this framework: bilateral agreements with France, Poland, and Finland will allow local hosting under common technical and access standards, preserving internal market cohesion while meeting national security concerns. With public sentiment at 30.0 and political capital strained, we are avoiding new mandates on open-weight models for now, but preserving the 45.0 threshold logic as a dormant trigger—ready to relaunch if the automated_decision_scandal or election_annulled incident escalates into a broader crisis of legitimacy.

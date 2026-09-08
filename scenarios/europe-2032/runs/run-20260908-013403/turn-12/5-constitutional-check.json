@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 57.0 to 63.5 (+6.5) while `ai_capability` increased by only 1.5 (from 69.0 to 70.5). This violates the rule that `openweight_capability` may never exceed `ai_capability`, and given the prior gap of 12.0 narrowing to 7.0, the openweight metric cannot rise faster than the frontier unless explicitly justified by a narrative breakthrough (e.g., sudden access to frontier weights). No such justification is present; the narrative describes stalled sovereignty efforts and enforcement friction, not a leap in open-weight progress.\n- Modelling choice 5 violated: The EU introduced a new measure (\"Emergency Fallback Enforcement and Compliance Acceleration\") while already having a priority active (\"Emergency Sovereignty Procurement Pact\"). The notepad shows the latter as still ongoing (charge −3), and the narrative names it as the priority. Introducing another new measure in the same turn exceeds the limit of one new measure per turn."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

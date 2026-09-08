@@ -1,0 +1,13 @@
+### The Open Frontier Widens
+
+AI capability advances to 68.5 as self-improving training loops deepen, with frontier labs reporting recursive optimisation in code and simulation tasks now contributing directly to next-generation model development. The pace remains steady, driven by internal automation rather than external breakthroughs.
+
+Signs of acceleration appear in the open AI ecosystem: a leading lab releases a model only months after its closed counterpart, drastically shortening the historical lag. The model, downloaded hundreds of thousands of times in days, demonstrates capabilities approaching the current frontier and fuels speculation about a new era of open access. However, its deployment remains fragmented—distributed actors can now execute complex professional tasks over short durations, but sustained autonomous operation is still out of reach. Openweight capability rises to 55.0, reflecting growing diffusion and toolchain maturity, but structural barriers prevent a full leap. Cyber actors demonstrate AI-orchestrated intrusion chains in test environments, raising alarms, yet these remain experimental rather than operational at scale.
+
+With no new EU measure proposed, political capital holds at 14.0. The portfolio charge is zero—both prior measures completed last turn—and no proposal bonus applies. The Openweight Registration Regime remains the priority, now treated as contraband enforcement, but legal resistance in Hungary, Greece, Italy and Spain stalls full implementation. Customs pilots in the Benelux proceed, yet lack pan-European integration.
+
+Resilience declines to 42.0 as offensive capabilities outpace defensive hardening. The EU’s biosurveillance network operates in 12 cities, but delayed drills and fragmented legal buy-in limit effectiveness. No category 6 measure is active, and rising capability without corresponding defence triggers a −2 resilience loss.
+
+Sovereignty falls to 10.0. Last turn’s figure was 11.0. No category 4 measure finished, no capacity event occurred, and ai_capability rose by 1.5—triggering a −1 decay. The US posture remains RETRENCHMENT, slowing American progress slightly, but this offers no offset within EU control.
+
+Public sentiment holds at 27.0—no major incident, benefit or scandal shifts perception. The mood remains anxious, with media focused on uncontrolled model proliferation and job displacement in legal and design sectors.

@@ -1,0 +1,6 @@
+- `emergent_labour_displacement_wave` -- first noted turn 1, listed in 3 turn(s) so far: Preliminary data from multiple member states shows a sharp uptick in white-collar job losses in legal support, technical writing and junior software roles, directly attributed to AI adoption. The trend is not yet system-wide, but early hotspots emerge in countries with high public-sector AI use. Unions and professional associations begin organizing around AI-driven displacement, creating political pressure for retraining and transition measures.
+- `emergent_global_ai_accord` -- first noted turn 1, listed in 2 turn(s) so far: A loose coordination among non-superpower states gains momentum, focused on minimal guardrails for model releases and sharing defensive best practices. The EU's convening role strengthens as mid-tier powers seek alternatives to dependency, though the forum remains non-binding and normative for now.
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Sovereign Cloud −3, priority −1 = −10
+- PROPOSAL BONUS: EU Sovereign Cloud (cat 4, large) +3 — addresses strategic dependency amid rising capability and emergent_global_ai_accord momentum
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 21.0 last turn, no capacity event, no category 4 finish, capability rose 2.5 −1 = 20.0

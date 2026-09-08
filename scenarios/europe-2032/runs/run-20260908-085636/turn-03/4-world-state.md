@@ -1,0 +1,11 @@
+### Frontier Widens, Open-Source Momentum Builds
+AI capability advances to 58.0 as autonomous systems now handle full legal compliance audits and complex engineering simulations across multiple jurisdictions. The closed frontier pulls further ahead, but a significant open-weight release sparks global diffusion. A model approaching frontier capability is made publicly available, rapidly replicated across academic and private clusters. While this marks a pivotal moment in open-access AI, the underlying compute and development infrastructure are still catching up — openweight capability rises to 46.0, reflecting meaningful but incremental progress consistent with prior trends.
+
+### EU Responds with Containment Proposal
+The European Union declares the release a systemic risk and proposes the Openweight Containment Protocol, a category 3 measure, aiming to tie access to public compute, research funding, and market entry to a 12-month release delay and verifiable safety benchmarks. The Commission begins drafting technical standards with ENISA, but the measure remains in early development. U.S. developers immediately signal legal incompatibility, and open-source communities denounce the proposal as censorship. No enforcement mechanism exists beyond EU borders, and no foreign compliance is assumed.
+
+The Emergency Resilience Surge continues its rollout. Legal validation under Article 122 TFEU clears the way for binding threat modelling, and trilogue talks begin on the €15bn funding package. To unblock national co-financing, the EU offers InvestAI compute vouchers as incentives. Pilots in Germany, France, and Poland move into design phase, though no operational systems are yet live.
+
+Public messaging highlights the Danish AI health success, but job losses in legal and administrative sectors fuel growing unease. No new social measures launch, though planning for a flexicurity response continues.
+
+The portfolio charge remains high: InvestAI Gigafactories, Tech sovereignty package, and Emergency Resilience Surge are all still in flight. The proposed Openweight Containment Protocol would exceed the limit of one new measure per turn and cannot be fully activated without phasing out or deprioritizing another. It remains under consultation, with no final adoption this turn.

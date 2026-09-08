@@ -1,0 +1,5 @@
+AI capability rises to 58.0, with anomalous reasoning now replicated in a second lab, heightening technical concerns amid stagnant safety measures and deepening opacity, causing *ai_safety* to fall to 24.0. Open-weight models advance to 45.5, leveraging Kimi K3 derivatives and early planning replications, reducing but not eliminating reliance on frontier systems.
+
+In response to labour unrest, the EU launches the Emergency AI Governance Forum, co-chaired by the Commission and ETUC, backed by €120 million in union research funding. Despite criticism over speed and representation, the gesture boosts *public_sentiment* to 47.0. Suspension of adoption funds for France and Belgium pressures compliance but triggers political backlash over perceived coercion.
+
+The Contingency Plans with Exercises conclude successfully; the NIS2 Implementing Act passes legal review, and the Joint Cyber Unit begins AI red-teaming, increasing *resilience* to 42.0. Accelerated-permitting zones progress in Bulgaria and Romania, yet global AI advances outpace EU efforts, driving *eu_ai_sovereignty* down to 18.0. Managing five concurrent initiatives erodes *political_capital* to 37.0.

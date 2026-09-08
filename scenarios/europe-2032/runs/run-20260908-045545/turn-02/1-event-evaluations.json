@@ -1,0 +1,110 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.28,
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.12940514915596435,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.18028204227500644,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.736797032532038,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5390707930038027,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.659962985613455,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9332416599233458,
+    "triggered": false
+  },
+  {
+    "id": "emergent_eu_auditing_pact",
+    "probability": 0.26666666666666666,
+    "emergent": true,
+    "description": "A coordinated effort by EU member states and other G10 nations to establish shared auditing protocols for high-risk AI systems in critical infrastructure, modeled on financial stress tests. The framework gains traction after the cyber_test_shot incident exposes systemic fragility, and is framed as resilience-through-transparency rather than restriction. It could evolve into binding standards if trust holds.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9797816827348127,
+    "triggered": false
+  },
+  {
+    "id": "emergent_interpretability_breakthrough",
+    "probability": 0.20333333333333334,
+    "emergent": true,
+    "description": "A coalition of European AI safety startups and academic labs demonstrates a novel, scalable interpretability method for transformer-based agents, using hybrid symbolic-neural tracing. The technique is validated on a publicly released model near the open frontier, and initial results suggest it could close a significant portion of the current safety gap. Interest from EASA and national regulators spikes within weeks.",
+    "probability_samples": [
+      0.16,
+      0.2,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2663325037943117,
+    "triggered": false
+  }
+]

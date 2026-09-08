@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Worker Transition Acceleration Fund −3, Cyber Shield −3, priority −1 = −13  
+PROPOSAL BONUS: Cyber Shield (cat 6, large) +3 — cyber_intrusion_major landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22.0 last turn, no capacity event, InvestAI Gigafactories in flight +1, capability rose 1.0 −1 = 21.0  
+emergent_asml_defiance_move -- first noted turn 1, listed in 2 turn(s) so far: ASML, under pressure from both the U.S. and the EU, announces a limited pilot program to service older lithography machines in China via a Belgian subsidiary using EU-origin components, testing the boundaries of American jurisdiction. The move triggers diplomatic friction but also signals the EU’s willingness to assert its industrial sovereignty in the supply chain.

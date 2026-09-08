@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3, priority −1 = −10  
+PROPOSAL BONUS: Emergency Resilience Surge (cat 6, large) +3 — cyber_test_shot landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22 last turn, no capacity event, InvestAI Gigafactories in flight +0, capability rose 2.0 −1 = 21  
+emergent_regional_cyber_initiative -- first noted turn 1, listed in 1 turn(s) so far: Several EU member states, citing the recent cyber intrusion, quietly begin forming a regional cyber resilience pact with shared threat intelligence and joint red-teaming exercises. The initiative is framed as a technical coordination effort, but it gains momentum due to heightened awareness after the test shot and could evolve into a formal structure if further incidents occur.

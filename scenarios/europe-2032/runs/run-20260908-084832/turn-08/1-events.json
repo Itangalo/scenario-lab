@@ -1,0 +1,26 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_compute_black_market",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "Reports emerge of a growing black market for EU-based AI compute access, where sanctioned entities and non-state actors lease time on ostensibly sovereign clusters through shell companies and compromised academic accounts. The leakage undermines the credibility of the EU's sovereignty claims and raises alarms about uncontrolled use of systems operating near the openweight frontier.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

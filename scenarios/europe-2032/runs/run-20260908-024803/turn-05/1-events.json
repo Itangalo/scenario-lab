@@ -1,0 +1,65 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "opaque_reasoning",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_global_eval_failure",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "A joint evaluation exercise under the Global Evaluation Compact collapses when participating labs refuse to grant access to internal agent logs, exposing fundamental distrust. The failure becomes public, undermining confidence in multilateral oversight just as the US election looms. This development tracks the fragility of international cooperation on AI safety.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_lab_defection",
+    "probability": 0.023333333333333334,
+    "emergent": true,
+    "description": "A leading AI laboratory, facing increasing regulatory pressure and funding constraints in its home jurisdiction, announces it will relocate core research operations to a EU-hosted cloud enclave under joint governance. The move is framed as a bid for neutral evaluation access and long-term stability, but Washington reacts angrily, warning allies against hosting 'strategic assets' outside the allied perimeter. This creates a diplomatic rift and forces the EU to choose between sovereignty leverage and alliance cohesion.",
+    "probability_samples": [
+      0.0,
+      0.07,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "election_consolidation",
+    "probability": 0.33
+  }
+]

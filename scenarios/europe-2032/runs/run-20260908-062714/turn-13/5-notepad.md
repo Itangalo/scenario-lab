@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: Biocontainment Shield −3, priority −1 = −4  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 11 last turn, no capacity event, capability rose 2.0 ≥2 −1 = 10  
+US_POSTURE: CONSOLIDATION  
+emergent_regulatory_backlash -- first noted turn 10, listed in 5 turn(s) so far: France and Poland advance incompatible AI audit rules for critical infrastructure. Hungary blocks mutual recognition, risking market fragmentation.  
+emergent_middle_power_initiative -- first noted turn 7, listed in 6 turn(s) so far: Quiet coordination among EU, South Korea, and Taiwan on export licensing for advanced AI chips matures into a shared tracking mechanism for high-end semiconductor shipments. While still informal, the group begins mapping joint leverage on packaging and testing stages, creating a nascent counterweight to unilateral export actions by larger powers.  
+emergent_physical_backlash_widens -- first noted turn 13, listed in 1 turn(s) so far: Protests against AI infrastructure escalate into coordinated sabotage across multiple member states, with attacks on power substations feeding data centres. The movement cites the Union's paralysis and growing public harm as justification. This turn sees the first fatalities among repair crews.  
+emergent_member_state_moratorium_push -- first noted turn 13, listed in 1 turn(s) so far: A group of central European member states, citing existential risk and institutional collapse, formally request emergency derogation from EU AI governance frameworks to implement national moratoriums on agentic systems. The move fractures internal cohesion and triggers a crisis meeting.

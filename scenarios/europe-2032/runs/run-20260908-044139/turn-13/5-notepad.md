@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Sovereign Compute Accelerator −3, Critical Systems Audit Mandate −3, priority −1 = −7  
+PROPOSAL BONUS: Critical Systems Audit Mandate (cat 1, large) +3 — answers capability_plateau_evidence (external, major), reinforces EUVN with enforcement teeth, high credibility in technical community  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 31 last turn, Sovereign Compute Accelerator in flight +1, no capacity event, capability rose 0.5 (<2) → no −1 = 32  
+US_POSTURE: ALLIANCE  
+emergent_regional_retraining_collapse -- first noted turn 13, listed in 1 turn(s) so far: Regional retraining programmes in several member states, overwhelmed by the pace of mid-level job displacement, begin to fail visibly—waiting lists exceed six months, completion rates drop below 30%, and local governments report systemic underfunding. The failures become a political liability, undermining faith in the Workforce Transition Acceleration Fund before it launches.  
+emergent_foxglove_initiative -- first noted turn 13, listed in 1 turn(s) so far: A coordinated effort by several mid-sized EU member states, frustrated by the Union's inability to secure independent access to frontier AI, begins quiet negotiations with Japan, South Korea, and Canada to form a joint evaluation and assurance framework for AI systems. The initiative focuses on shared red-teaming, model certification, and compute resource pooling, aiming to create a 'safe tier' of interoperable systems outside U.S. or Chinese dominance.

@@ -1,0 +1,29 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`
+- `Compute Sovereignty Accelerator Directive (category 4, costs 3 per turn, started turn 3, finishes on turn 5): A binding directive to fast-track permitting, grid access, and state aid approval for AI compute infrastructure meeting EU strategic criteria, conditioned on legal anchoring of weights and operational control within EU jurisdiction` — **finished this turn**
+- `Public Algorithmic Accountability Framework (category 3, costs 3 per turn, started turn 3, finishes on turn 6): A binding regulatory framework requiring independent audit, real-time monitoring, and redress mechanisms for all AI systems used in public-sector decision-making, with automatic suspension upon verified harm.`
+- `Sovereign Access Framework (category 4, costs 3 per turn, started turn 5, finishes on turn 6): A binding regime that conditions access to EU markets and public-sector AI procurement on verifiable legal anchoring of model weights, operational control within EU jurisdiction, and compliance with EU audit and incident reporting standards — enforced through a licensing mechanism tied to the Digital Markets Act framework`
+- `EU Talent Anchoring Initiative (category 4, costs 3 per turn, started turn 6, finishes on turn 8): A targeted programme to retain and attract frontier AI researchers and engineers by offering long-term funding, secure residency, and institutional autonomy under EU law, tied to participation in sovereign capability development.`
+
+## New measure
+**EU Emergency Compute Resilience Initiative**  
+A rapid-response programme to secure and repurpose existing compute infrastructure across member states, ensuring continuity of sovereign AI operations in the face of collapsing private investment and supply chain disruptions.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 7`  
+`Targeted effect:` Increase `eu_ai_sovereignty` by +4–6 points by securing at least 15 exaflops of high-end compute under EU operational control; prevent total dependence on foreign providers as private build-outs collapse. Mitigate downward pressure on `resilience` by ensuring continuity of critical AI services during infrastructure shock.  
+`Applies to:` National research infrastructures, university clusters, and idle commercial data centres in EU member states, particularly those with access to secure energy and connectivity.
+
+## Priority
+**Sovereign Access Framework** — because this turn determines whether the EU can credibly enforce jurisdictional control over AI systems in its market, and without enforcement, our entire strategy collapses into aspiration; the **ai_investment_collapse** and **supply_chain_coercion** make it urgent that we lock in legal authority now, before the frontier fractures further and second-tier actors exploit the vacuum.
+
+## In practice
+This turn, we are finalizing the **Sovereign Access Framework** under the Digital Markets Act, with the Commission’s Competition Directorate issuing draft licensing conditions that tie EU market access to proof of weight anchoring, remote override protection, and real-time auditability. We are establishing the EU AI Evaluation Office as the certifying authority, offering liability shields and fast-track procurement status to compliant providers. Legal services are preparing for challenges from U.S. hyperscalers, but the **ai_investment_collapse** weakens their leverage: with capital fleeing the sector, they cannot afford prolonged litigation or exit from the EU market. We are engaging Japan, South Korea, and India through the **emergent_lab_cooperation** network to build a coalition around jurisdictional integrity, offering mutual recognition of audit standards in exchange for alignment.
+
+Simultaneously, we are launching the **EU Emergency Compute Resilience Initiative** in response to the **ai_investment_collapse** and **supply_chain_coercion**. With private build-outs evaporating and ASML exports constrained, we are mobilizing under Article 122 TFEU to repurpose existing high-performance computing assets — including national supercomputing centres in Germany, France, and Italy — for sovereign AI workloads. The European High-Performance Computing Joint Undertaking (EuroHPC JU) is being redirected to assess and integrate at least 15 exaflops of immediately available compute, with priority given to systems capable of running models at or above 54.0 openweight capability. Member states are being offered emergency funding and grid priority to keep these systems online and secure.
+
+The **Public Algorithmic Accountability Framework** continues implementation, with national regulators standing up audit units and pilot monitoring systems in public health and social services. However, progress is slowed by lack of in-house technical capacity — a gap the **EU Talent Anchoring Initiative** is meant to close, though its effects will take time. We are also completing the **Tech Sovereignty Package**, finalizing accelerated-permitting zones in five member states, but the **ai_investment_collapse** casts doubt on whether private capital will materialize. Our focus is shifting from attracting investment to securing what we already have — because sovereignty now depends not on scale, but on continuity.

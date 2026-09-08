@@ -1,0 +1,26 @@
+No statement changes.
+
+## Portfolio
+``Joint Control Framework for Frontier AI (category 8, costs 3 per turn, started turn 10, finishes on turn 12): A binding technical and legal architecture under which EU and coalition partners jointly govern access to a frontier model hosted by a neutral third party, with shared telemetry, audit rights, and multi-signature kill switches, ensuring no single external power can override or disrupt the arrangement`` — **finished**. The framework collapsed into indefinite extension talks after Swiss withdrawal over audit rights. No operational joint control was established. The European Verification Cell remains inactive. The measure ends without delivering its intended effect.
+
+``Emergency Resilience Mobilisation: Critical Systems Hardening (category 6, costs 3 per turn, started turn 11, finishes on turn 14): A crash programme to harden municipal, healthcare and energy systems against AI-enabled cyber and decision manipulation, deploying automated red teams, zero-trust architectures, and emergency fallback protocols across all essential services`` — in flight. Deployment continues unevenly: France and Germany report 80% zero-trust coverage in critical nodes; Italy, Greece, and Hungary lag at under 30%. ENISA’s Emergency Cyber Shield now runs adversarial simulations every 72 hours on health data exchanges and grid调度 systems. Red-team access to hospital scheduling platforms has been granted in six member states. Conditional Cohesion Fund disbursements are being withheld from Poland and Hungary pending compliance. The Anti-Coercion Instrument is in legal review for potential activation.
+
+``Secure Compute Corridor Initiative (category 4, costs 2 per turn, started turn 13, finishes on turn 17): Establish a legally enforceable corridor of sovereign AI compute—on EU soil, under EU jurisdiction, powered by renewable energy, and staffed by vetted personnel—with guaranteed access for public agencies and red teams`` — in flight. Site preparation continues in Finland and Sweden despite permitting delays; the European Commission has triggered Article 22 of the Net-Zero Industry Act to fast-track environmental assessments. The EIB has disbursed €2.1bn of the €9bn commitment. Negotiations with NVIDIA remain constrained by export controls; ASML has agreed to expedite lithography tool deliveries in exchange for long-term energy price guarantees. Fast-track Schengen visas for AI engineers launched this month, with 147 applications processed.
+
+## New measure
+**European Compute Authority Activation and Mandate Expansion**  
+Stand up a central authority with legal power to certify, monitor, and if necessary seize control of sovereign compute infrastructure, ensuring it remains under EU jurisdiction and operates in service of public safety and strategic continuity.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 16`  
+`Targeted effect:` +10 to `eu_ai_sovereignty`, +3 to `ai_safety` (via mandatory red-team access and audit logs), −2 to `eu_political_capital` per turn  
+`Applies to:` EU member states, European Investment Bank, national regulators, selected hyperscalers, ENISA
+
+## Priority
+**Emergency Resilience Mobilisation: Critical Systems Hardening** — because the cyber_major_incident has already crippled frontline services, and with `resilience` still at 29.0 and `ai_safety` at 0.0, we are not managing risk—we are surviving failure. Without immediate protection of hospitals, grids, and civil registries, no amount of future sovereignty will matter, and no public will tolerate further investment in capability.
+
+## In practice
+We are acting on two fronts: one to survive the present, one to reclaim a future. On the first, we are enforcing the Emergency Resilience Mobilisation through Article 122 TFEU and NIS2, mandating zero-trust rollouts in all critical operators receiving EU funds. ENISA’s Emergency Cyber Shield is now live, running adversarial simulations on health data exchanges and power调度 systems every 72 hours. Where member states resist—Poland, Hungary—full cost coverage is offered; where they obstruct, the Anti-Coercion Instrument is in legal preparation. This is triage: we patch what we can, before more collapses.
+
+On the second front, we are operationalising the Secure Compute Corridor Initiative and now establishing the European Compute Authority to give it teeth. The Authority will be seated in Brussels with regional nodes in Luleå, Helsinki, and Ponta Delgada. It will have the power to audit, certify, and in extremis take operational control of compute clusters under the Corridor. We are negotiating with Finland and Sweden to fast-track permitting under the Net-Zero Industry Act’s emergency clause, and with Portugal to expand subsea cable redundancy. The EIB is structuring a second tranche of financing tied to audit compliance. This is not ownership of the frontier—but the foundation of our own floor, and the first irreversible step toward agency.

@@ -1,0 +1,15 @@
+{
+  "status": "approved",
+  "iterations": 3,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The narrative introduces three new measures—Emergency Compute Mobilisation Directive, Secure Critical AI Compute Nodes, and European Public Evaluation Corps—and also names a priority (implied by portfolio charge tracking a priority cost). This exceeds the limit of one new measure and one named priority per turn (Constraint 5: \"At most one new measure per turn, and at most one named priority\").\n- Economic Constraint violated: The narrative allocates €30bn from Recovery funds to leverage the Emergency Compute Mobilisation Directive, but no source or mechanism is provided for redirecting these funds in a single turn, especially amid ongoing legal challenges and frozen disbursements (e.g., Bavaria). The use of cohesion policy side-deals to overcome opposition is asserted but not substantiated with realistic timelines or procedural steps, violating minimum time lags for budget reallocation and regulatory enforcement (Constraint: capital expenditures require identified, plausible funding sources and respect implementation lags)."
+    },
+    {
+      "iteration": 2,
+      "violations": "- Regulatory Constraint violated: The narrative introduces two new measures in one turn—“Emergency Compute Mobilisation Directive” and “Secure Critical AI Compute Nodes”—contradicting Constitutional Constraint 5, which limits the EU to at most one new measure per turn. The claim that “only the Emergency Compute Mobilisation Directive is added as a new large measure” is inconsistent with the simultaneous advancement of “Secure Critical AI Compute Nodes” as a distinct initiative with draft templates, site designation, and pending standards, which constitutes a new measure under development.\n- Organizational Constraint violated: The advancement of the “Secure Critical AI Compute Nodes” initiative includes ENISA issuing draft audit templates, designating ten candidate sites, and entering green energy procurement negotiations—all within a single turn. This implies a pace of organizational action (site selection, technical drafting, inter-agency coordination, procurement negotiation) that exceeds realistic implementation speed for a high-cost, cross-border infrastructure measure, violating Constraint 6 (no measure implemented instantly; minimum two-turn timeline required for high-cost measures) and implicitly violating Constraint 3 by assuming de facto EU-level execution capacity without prior narrative establishment of such capability."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

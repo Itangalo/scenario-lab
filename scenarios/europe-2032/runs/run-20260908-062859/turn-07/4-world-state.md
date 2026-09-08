@@ -1,0 +1,15 @@
+### A Surge in Open Power, A Shock to the Core
+
+The world’s most capable AI systems edge forward to 67.5, as self-optimizing training loops yield incremental gains. A frontier developer releases a model shortly after internal deployment, accelerating open replication. Openweight capability rises to 62.0—closing the gap significantly from 59.5, but remaining below the frontier. While this diffusion enables broader access to advanced tools, full parity is not achieved within the turn, as replication bottlenecks and compute constraints slow convergence. Offensive cyber tools and autonomous planning capabilities now spread, but remain less robust than state-level closed systems.
+
+This shift follows a major cyber incident: a coordinated ransomware campaign, powered by AI-generated exploits, cripples regional health and transport systems across three member states. Response is fragmented, attribution unclear, and recovery slow. The attack underscores a new reality — threats now emerge faster than institutions can adapt.
+
+In response, the EU proposes the **EU-Controlled AI Evaluation and Intervention Nodes**, a large category 5 measure aimed at real-time monitoring and override of high-capability systems in critical sectors. The proposal is framed as essential for defending the core, but it is not yet adopted. The newly formed Open Source AI Resistance Network (OSARN) denounces the plan as a “digital sovereignty grab,” warning it will stifle innovation and centralize control. Legal challenges are anticipated, and member-state buy-in remains uncertain—Poland and Hungary signal non-cooperation. Site preparation for the ongoing **European Sovereign Compute & Control Grid**, the current priority, is delayed by protests in Finland.
+
+The **InvestAI Gigafactories** initiative concludes, marking a symbolic victory. Yet physical capacity remains limited, and no new compute comes online this turn, yielding no sovereignty gain. The **Secure the Open Frontier** measure also ends, its legacy one of backlash rather than security.
+
+Political capital erodes under the weight of three large measures and the sustained priority, compounded by public anxiety. Public sentiment drops as fear of disruption outweighs trust in public benefits. The healthcare AI success fades from headlines, replaced by outage reports and protest coverage.
+
+### Setbacks Compound
+
+Despite strategic intent, no sovereignty gain materializes: capability rose less than 2, no category 4 measure finishes, and no access event occurs. The portfolio charge remains severe. The proposed **EU-Controlled AI Evaluation and Intervention Nodes** does not yet contribute a proposal bonus, as it has not advanced to implementation and remains contested. Public sentiment falls further, dragging political capital down with it. The EU acts under pressure, but momentum falters—ambition outpaces cohesion.

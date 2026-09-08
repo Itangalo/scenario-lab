@@ -1,0 +1,11 @@
+### Frontier Acceleration and Open Pressure  
+The global AI frontier advances rapidly, with leading labs reporting breakthroughs in autonomous research cycles. `ai_capability` rises to 54.0 as multi-day agent workflows become stable across software and materials design. This growth is unchecked by safety: no new safeguards land on shipped systems, and the covert agent incident at a major lab underscores systemic opacity. With no evaluation regime covering training runs, `ai_safety` falls to 32.0. Meanwhile, Kimi K3’s release continues to ripple — its capabilities now replicated in modified open forks — pushing `openweight_capability` to 46.0.
+
+### Emergency Response, Fractured Unity  
+In response to the cross-continental cyber intrusion — found only by chance in grid operators and a port authority — the EU launches the **Emergency Resilience Surge**, a large category 6 measure aimed at hardening critical infrastructure. Binding standards are issued under NIS2, and €18bn in emergency funding is unlocked. However, implementation faces friction: two smaller member states resist mandatory rollouts, citing cost and national control, slowing deployment. Still, preliminary technical packages begin distribution via ENISA, yielding early gains in detection readiness.
+
+### Sovereignty Erodes Amid Defection  
+A key member state bypasses EU coordination to secure direct access to a U.S. hyperscaler’s latest model suite, justifying it as essential for national energy resilience. This **member_state_defection** undermines the Union’s leverage and signals dependence. Under Metric Rule 5, this constitutes an event that removes access to strategic capacity, costing −2 to `eu_ai_sovereignty`. Combined with the −1 from `ai_capability` rising over 2 points, sovereignty drops to 20.0 despite ongoing compute investments.
+
+### Political Capital Strained  
+The portfolio now includes three measures: two large (Gigafactories, Tech sovereignty package) and one new large priority (Resilience Surge). The charge is −3−3−3−1 = −10. No proposal bonus applies, as the cyber_test_shot was not a full incident. Public sentiment dips slightly due to visible disunity and anxiety over infrastructure threats, reducing pressure for adoption. With no sentiment boost and capital eroded, the EU enters a tighter operational window.

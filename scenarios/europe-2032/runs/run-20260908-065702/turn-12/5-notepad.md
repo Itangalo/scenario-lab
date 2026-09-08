@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: Accelerate Runtime Node Certification −2, priority −1 = −3  
+PROPOSAL BONUS: Accelerate Runtime Node Certification (cat 6, small) +4 — addresses runtime fragility and cyber incident risks directly, recent and severe  
+LEGITIMACY LENDS: none (capital 15.0 > sentiment 23.0)  
+SOVEREIGNTY: 13.0 last turn, no capacity event, no category 4 measure finished, capability rose 0.5 −1 = 12.0  
+US_POSTURE: CONSOLIDATION  
+EMERGENT DEVELOPMENT: emergent_shadow_evaluation_network — now formalized, operates as parallel audit authority across France, Germany, and Poland, sharing runtime telemetry and override test data, weakening central oversight.  
+EMERGENT DEVELOPMENT: emergent_middle_power_compute_pact — coordination intensifies among mid-sized EU states, Japan, South Korea, and Taiwan on shared secure compute access, leveraging semiconductor influence outside EU channels.  
+emergent_cross_border_labor_mobility_pact -- first noted turn 12, listed in 1 turn(s) so far: In response to accelerating job displacement and uneven national retraining capacity, a coalition of EU member states launches a cross-border labor mobility and requalification pact, allowing displaced workers to access training and transitional employment in regions with labor shortages. The program is funded through repurposed cohesion funds and backed by private-sector skills commitments.  
+emergent_ai_refugee_narrative -- first noted turn 12, listed in 1 turn(s) so far: Media and political discourse in several member states begins to frame highly skilled AI defectors and dissident researchers from authoritarian regimes as 'AI refugees', prompting debates over asylum pathways, integration into EU research programs, and the strategic value of human capital in the AI race. Pilot resettlement programs emerge in Germany and the Netherlands.

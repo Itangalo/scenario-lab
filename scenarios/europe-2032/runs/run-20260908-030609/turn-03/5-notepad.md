@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Interpretability Corps −3, Sovereign Audit Access Directive −3, priority −1 = −13  
+PROPOSAL BONUS: Sovereign Audit Access Directive (cat 1, large) +1 — automated_decision_scandal landed this turn and this answers it directly  
+LEGITIMACY LENDS: none (capital 27 > sentiment 35 → no addition)  
+SOVEREIGNTY: 19.0 last turn, no capacity event, capability rose ≥2 −1 = 17.0  
+Emerging developments (tracked):  
+- `emergent_resilience_backlash` -- first noted turn 2, listed in 3 turn(s) so far: Public resistance to the Emergency Resilience Surge hardens into a cross-border movement opposing mandatory cyber hardening, citing national sovereignty and cost overreach. Protests emerge in federal states where implementation clashes with local governance norms, slowing rollout further and increasing political strain on the Commission.  
+- `emergent_safety_breakthrough_adoption` -- first noted turn 2, listed in 3 turn(s) so far: A major interpretability breakthrough is adopted across top labs, significantly improving model transparency and control. This lifts `ai_safety` by +5, the first meaningful gain in assurance in over a year.

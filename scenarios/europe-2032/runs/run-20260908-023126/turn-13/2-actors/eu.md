@@ -1,0 +1,32 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Secure the foundations of sovereign AI agency while preventing catastrophic systemic risk and restoring public trust as a foundation for political action  
+- Grounds: The **cyber_major_incident** confirms that offensive capabilities have decisively outpaced defensive readiness, even as the **Emergency Resilience Surge** remains unimplemented and the **European AI Incident Response Corps** is still symbolic. The **eu_frontier_access_denied** event compounds the crisis: the Union is locked out of a model critical to hospital triage and supply chain coordination, not due to malice but because reliance on foreign-controlled systems means no appeal exists. This is not a failure of diplomacy — it is a failure of sovereignty. The denial lands precisely when public sentiment hits 23.0, protests grow around sovereign AI sites (**emergent_sovereign_ai_backlash**), and political capital collapses to 9.0. We are not building foundations — we are fighting to remain in the game. The commitment must now reflect that restoring public trust is not a parallel track, but the only ground on which sovereignty can be built. Without it, no measure lands, no infrastructure stands, and no emergency power holds.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will now condition speed on survivable political cost, because overextension is now the primary risk  
+- Grounds: The **emergent_sovereign_ai_backlash** reveals that the Union’s current course — fast-tracking compute, overriding vetoes, deploying fellowships — is not only failing to win support but actively deepening resistance from civil society and academia. The **cyber_major_incident** proves we were right to act, but the **eu_frontier_access_denied** proves we were acting in the wrong place. Our measures are correct in direction but catastrophic in pacing: we are burning capital faster than we are building capacity. The trigger is not a single event, but the convergence of `eu_political_capital` at 9.0 and `public_sentiment` at 23.0 — levels incompatible with sustaining more than one major initiative. We must now slow to survive. This is not retreat; it is recalibration. We still act under uncertainty, but we can no longer afford to act beyond our means.
+
+## Portfolio
+``European Sovereign AI Fellowship and Deployment Programme (category 5, costs 3 per turn, started turn 10, finishes on turn 13): We launch a pan-European initiative to train, place, and empower 5,000 public-sector AI engineers and auditors by 2033, embedded in national administrations, critical infrastructure operators, and EU agencies, with direct access to sovereign models and evaluation tooling`` — **finished**
+
+``Accelerated Sovereign Compute Buildout (category 4, costs 3 per turn, started turn 12, finishes on turn 14): We override national permitting delays and fast-track grid access for EU-anchored data centres hosting models above 55.0 capability, using emergency clauses in the Net-Zero Industry Act and Digital Markets Act to mandate siting, construction, and energy allocation within 12 months``
+
+## New measure
+**Emergency Access Guarantee for Critical Services**  
+We establish a legally enforceable right for EU essential services — healthcare, energy, transport — to maintain access to baseline AI inference during geopolitical denial or commercial cutoff, backed by sovereign fallback capacity and rapid retraining protocols.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size: large`  
+`Finishes on turn: 15`  
+`Targeted effect:` resilience +5 (by ensuring continuity of essential services), eu_ai_sovereignty +3 (via enforceable redundancy), public_sentiment +2 (demonstrating protection of public interest)  
+`Applies to:` national health ministries, ENTSO-E, EASA, EBA, EuroHPC, and designated public AI providers
+
+## Priority  
+Priority: Emergency Access Guarantee for Critical Services  
+Because the **eu_frontier_access_denied** event has already disrupted hospitals and grid coordination — not as a hypothetical but as a live failure — and because our current sovereignty measures are too slow to prevent such shocks, we must now guarantee continuity of essential services by law, not hope; without it, every dependency becomes a future crisis.
+
+## In practice  
+The **Accelerated Sovereign Compute Buildout** continues under Article 346, but its legitimacy frays. Italy’s legal challenge at the Court of Justice gains traction, not on technical grounds but because the **emergent_sovereign_ai_backlash** has reframed the project as exclusionary and militarised. We are now negotiating with the European University Association to co-design the next phase of the Fellowship — not as a deployment programme, but as a distributed research network, to absorb academic resistance into ownership. We offer funding parity for civil society auditors to join the evaluation track, and propose rotating hosting of compute nodes through regional consortia, not just national champions.
+
+Meanwhile, the **cyber_major_incident** — a ransomware sweep across regional hospitals and rail operators, enabled by AI-generated zero-days — forces a reckoning. ENISA confirms that 60% of affected systems had no telemetry, and the attackers exploited a dependency chain originating in a single open-source library now at 57.5 capability. There is no attribution, only damage. This proves that resilience cannot wait for sovereignty. We are drafting the **Emergency Access Guarantee** under Article 122 TFEU, treating AI denial as a cross-border crisis. It will mandate that all critical operators have access to a sovereign fallback model — not frontier, but reliable — trained on essential workflows and hosted on EU-controlled infrastructure. The EIB will fund retraining pipelines so that disruption triggers automatic capacity activation, not political negotiation.
+
+We are offering Germany and Poland a deal: full audit access in exchange for fast-tracked fallback deployment and surge funding. Portugal’s telemetry-for-benefits model is now scaling: we tie data sharing not to punishment, but to priority access. But the core truth remains — we are not trusted. The streets are full of protesters who call us an “AI fortress,” and our capital is at 9.0. We cannot build faster. We must now build differently — not just sovereign, but seen to protect. That is the only path back to action.

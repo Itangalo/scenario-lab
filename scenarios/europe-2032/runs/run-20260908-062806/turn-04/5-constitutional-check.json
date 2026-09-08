@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 46.0 to 54.0 (+8.0) in one turn, which exceeds the maximum allowed movement of +25 points only if justified by compounding growth under `rsi_onset`, but no such mechanism is described or implied; rapid jumps in openweight capability without narrative grounding in accumulated progress violate the requirement that it accumulates and does not fall (and must rise gradually).\n- Modelling choice 5 violated: The EU introduces the \"Labour Transition and Wage Insurance Programme\" as a new measure and names it as priority, but also maintains multiple existing large measures (InvestAI Gigafactories, Tech sovereignty package, Emergency Protocol), resulting in more than one active major initiative. The portfolio charge lists five concurrent charges, and while rule 5 allows maintaining existing measures, introducing a new one while already managing four large measures violates the \"at most one new measure per turn\" constraint.\n- Economic Constraint violated: The €45bn Labour Transition and Wage Insurance Programme is co-financed at 80%, implying total cost of €45bn and EU contribution of €9bn; however, no funding source is identified for this significant expenditure, and the sudden draw on resources occurs without mention of budget reallocation, borrowing, or revenue mechanisms, violating budget consistency requirements."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

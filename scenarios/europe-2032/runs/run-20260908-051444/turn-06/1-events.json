@@ -1,0 +1,37 @@
+[
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "opaque_reasoning",
+    "probability": 0.09999999999999999,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_open_research_alliance",
+    "probability": 0.22999999999999998,
+    "emergent": true,
+    "description": "The informal coalition of European and Global South open-weight research labs gains momentum as openweight_capability reaches 52.0, with several institutions committing to shared benchmarking protocols and joint safety audits. While still unfunded, the alliance is beginning to coordinate public demonstrations of open-model risks and safeguards, increasing its visibility and political relevance.",
+    "probability_samples": [
+      0.19,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

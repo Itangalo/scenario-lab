@@ -1,0 +1,110 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.31015307868011566,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.004545205268132957,
+    "triggered": true
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.07333333333333335,
+    "probability_samples": [
+      0.06,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.15622782589061512,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2380236580757933,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8670320860755725,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.09666666666666666,
+    "probability_samples": [
+      0.12,
+      0.06,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.951847212680008,
+    "triggered": false
+  },
+  {
+    "description": "A coalition of mid-tier AI-capable nations outside the U.S.-China axis formalizes shared standards and mutual recognition of AI safety evaluations, reducing dependence on American validation. Momentum grows as trust in unilateral frontier governance erodes.",
+    "emergent": true,
+    "id": "emergent_regional_ai_pact_continued",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8727657116019863,
+    "triggered": false
+  },
+  {
+    "description": "A fast-tracked legal challenge at the ECJ argues that the Emergency Override Authority Enforcement Directive violates national sovereignty and proportionality principles under EU treaties. The case gains momentum amid rising concerns over centralization of power.",
+    "emergent": true,
+    "id": "emergent_legal_challenge",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5268709140151571,
+    "triggered": false
+  }
+]

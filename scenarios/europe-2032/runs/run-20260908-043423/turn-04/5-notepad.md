@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Accelerate EU Access −3, Pre-Release Evaluation Authority −3, Sovereign AI Acquisition Facility −3, priority −1 = −16  
+PROPOSAL BONUS: none — new measure responds to ongoing control and cohesion concerns, but no single recent event justifies a large bonus  
+LEGITIMACY LENDS: none — public_sentiment (40.0) not above eu_political_capital (18.0)  
+SOVEREIGNTY: 19.0 last turn, no category 4 completion, Gigafactories in flight +1, member_state_defection t4 −2, capability rose 2.5 −1 = 17.0  
+`emergent_ai_research_consortium` -- first noted turn 1, listed in 4 turn(s) so far: The consortium continues to gain traction, influencing draft EU evaluation standards and demonstrating early safety-focused prototypes in public-sector pilots.

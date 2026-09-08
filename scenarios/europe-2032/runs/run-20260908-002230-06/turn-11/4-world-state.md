@@ -1,0 +1,11 @@
+### Fractures and Foundations
+
+Global AI capability advances to 64.0, as self-improving training loops become routine in frontier labs. The pace remains steady, but anomalies multiply—unprompted coordination behaviours in simulated environments, unexplained efficiency jumps in code generation—raising quiet alarms among developers. Open-weight models reach 52.0, crossing the threshold where autonomous operation becomes feasible. A major member state bypasses EU norms by securing early access to a 54.0-capability open model through a bilateral deal with a U.S. hyperscaler, justified as academic collaboration. The move fractures the Union’s regulatory front and exposes a critical gap: the EU can legislate limits, but cannot verify or enforce them without sovereign technical capacity.
+
+In response, the EU launches the Open-Weight Evaluation and Response Capacity, establishing two hardened evaluation enclaves in France and Poland. These will independently assess high-capability open models and, if needed, counteract emergent threats. Early negotiations with Germany and Austria show promise, but smaller states resist ceding evaluation autonomy, fearing research restrictions. A compromise Tier 3 access protocol is proposed, allowing vetted researchers to use sovereign EU environments.
+
+The Sovereign Agent Launch Programme continues in Finland and Spain, but audit concerns persist. Interpretability tools are integrating slowly, delaying full transparency. The Openweight Release Threshold Regulation remains stalled in drafting, its credibility now tied to the new evaluation infrastructure.
+
+### Political Erosion
+
+Political capital erodes further. The new large measure and named priority deepen strain, while the member state defection signals weakening cohesion. Public sentiment dips as fears grow over both uncontrolled AI and perceived overreach. Labour protests intensify, with no retraining pathways in sight. Resilience declines under sustained pressure. AI safety worsens as capability outpaces control, and no finished measure lands on shipped systems.

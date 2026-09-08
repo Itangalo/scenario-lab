@@ -1,0 +1,28 @@
+## Statement changes
+* ``- modify `two_year_commitment` (commitment): Sovereign access to frontier AI capability is the foundation of both safety and strategic autonomy, and we will secure it by any legitimate means necessary``  
+  - Grounds: The emergent_ai_talent_drain_to_defence_sector has fundamentally altered the domestic landscape for AI capacity-building. While the commitment to sovereign access remains, the means are now constrained not only by external denial but by internal fragmentation of human capital. The shift of top researchers into opaque defence programmes undermines both public technical capacity and cross-border cohesion, making infrastructure-based sovereignty insufficient. We must now prioritise binding sovereignty not just in compute and weights, but in talent and knowledge — redirecting the commitment to include securing open, accountable, EU-governed research capacity as a core component of access.
+
+* ``- modify `defend_critical_systems_now` (position): We prioritise immediate protection of healthcare, government, and infrastructure systems against AI-generated attacks, even if it requires temporary centralisation of decision rights or emergency overrides of national opt-outs``  
+  - Grounds: The Biological Threat Coordination Framework now institutionalises the emergency mechanisms previously justified under crisis override. With binding cross-border protocols in flight and red-teamed systems transitioning to permanent operation, the era of ad hoc centralisation is closing. This position is no longer necessary as a standalone directive — its intent is embedded in the new framework. We retire it in favour of a broader, rules-based resilience posture.
+
+## Portfolio
+- `Biological Threat Coordination Framework (category 6, costs 3 per turn, started turn 11, finishes on turn 13): A binding, standing framework for biosurveillance, incident attribution, and coordinated response among EU member states and partner nations, integrating AI-driven detection, sample-sharing mandates, and joint investigation teams` — In flight. Progress this turn includes finalising the draft regulation under Article 168 TFEU, securing co-drafting support from the German and Scandinavian delegations in the Council, and launching technical integration with national BSL-3/4 labs in six member states. Resistance persists in Italy and Spain, where data sovereignty concerns delay API rollouts; Poland remains outside but under pressure after the Lublin lab exposure. The joint_threat_response partners (Japan, Canada, South Korea) have agreed to align export controls on flagged gene sequences, and the WHO has accepted observer status. The measure remains on track, with +4 resilience and +1 ai_safety estimated progress.
+
+## New measure
+**Sovereign Research Talent Compact**
+
+A binding EU-wide framework to retain and redirect top AI researchers into accountable, civilian-led institutions by matching defence-sector salaries, guaranteeing open publication rights, and establishing sovereign research fellowships with cross-border mobility and audit rights.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 16`  
+`Targeted effect:` +12 to `eu_ai_sovereignty` (via talent anchoring and knowledge retention), +5 to `ai_safety` (via public research output and oversight integration), -2 to `public_sentiment` short-term (due to visible militarisation contrast), +3 long-term if success is demonstrated  
+`Applies to:` EU member states, Horizon Europe agencies, national research councils, and designated defence-adjacent AI labs in Germany, France, and Sweden
+
+## Priority
+**Sovereign Research Talent Compact** — Because the emergent_ai_talent_drain_to_defence_sector is hollowing out the civilian foundation of EU AI sovereignty, and without a countermove, all infrastructure investments will lack the human capital to operate or improve them; this turn, talent is the bottleneck, not compute.
+
+## In practice
+We are launching the Sovereign Research Talent Compact through the Horizon Europe Council, with co-leadership from the European Research Council and the newly formed Resilience Directorate. The instrument creates a tiered fellowship programme: “Frontier Stewards” will receive salaries matching defence-sector offers (up to €350k in Germany and France), funded 70% by the EU via a repurposed portion of the Horizon Resilience Facility and 30% by host institutions. In return, fellows must publish core findings, submit to annual EASI-based interpretability audits, and participate in cross-border red-teaming exercises. The legal basis is Article 185 TFEU, allowing enhanced cooperation where member states opt in — we are targeting a coalition of the willing first, with Germany, the Netherlands, and Finland already supportive.
+
+We are confronting the defence sector’s recruitment surge not by banning it, but by out-organising it: offering equal pay, greater intellectual freedom, and EU-level prestige. The compact includes a “transparency floor” — no researcher receiving EU funds may work on fully classified models — and establishes a new audit right for the European AI Safety Institute to review training objectives and data provenance in any project receiving fellowship support. To break the logjam in Poland and Spain, we are offering national co-directorship of regional nodes, with veto power over foreign access. The narrative is clear: this is not anti-defence, but pro-knowledge — sovereignty that learns, not just hides. We are aware that this may deepen the civil-military divide, but the alternative — a brain drain into black-box programmes — would make true sovereignty impossible. This is the infrastructure of mind that we cannot afford to lose.

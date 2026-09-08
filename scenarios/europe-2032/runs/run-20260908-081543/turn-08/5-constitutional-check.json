@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Metric movement violation: `ai_safety` is reported as 0.0 in the proposed metrics but the narrative states it \"plummets by 12 points to −10.0\", creating a contradiction. The final value must be either 0.0 or −10.0; it cannot be both. This violates the requirement for internal consistency in metric reporting.\n- Metric movement violation: A change of −12 in `ai_safety` (from 2.0 to −10.0) exceeds the 25-point maximum single-turn movement limit defined in Constitutional Constraint 9. While the absolute value is under 25, the rule applies to the magnitude of change, which is 12 — acceptable — *but* the reported metric in the proposal is 0.0, not −10.0, meaning the actual applied change is only −2.0 (from 2.0 to 0.0), contradicting the narrative. This inconsistency constitutes a violation of Constraint 9 due to misalignment between stated change and implemented value.\n- Narrative telegraphing violation: The narrative states that \"no safety improvements land on frontier models\" and that misuse detection \"fails\", which implies a definitive outcome and forecasts systemic collapse beyond what the metrics reflect. This crosses into predictive assertion about system failure, violating Constraint 8’s prohibition on telegraphing — especially when paired with extreme metric claims not reflected in the final numbers."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

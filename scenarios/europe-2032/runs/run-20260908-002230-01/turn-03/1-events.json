@@ -1,0 +1,48 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_regional_cyber_collective",
+    "probability": 0.26666666666666666,
+    "emergent": true,
+    "description": "In response to the confirmed intrusion in EU grid operators and the global reach of the cyber_test_shot, several member states initiate talks on a permanent joint cyber defence cell with shared threat intelligence and rapid-response protocols. The initiative gains urgency as national agencies admit gaps in cross-border coordination, and a draft framework is circulated by December 2026.",
+    "probability_samples": [
+      0.25,
+      0.3,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

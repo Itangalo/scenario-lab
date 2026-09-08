@@ -1,0 +1,11 @@
+### Frontier Marches On  
+Global AI capability advances by 1.5 points to 58.0, driven by refined agent frameworks that sustain week-long autonomous operation in logistics and materials discovery. The closed frontier continues its steady progression toward longer-horizon autonomy, with incremental gains in robustness and tool integration. Open-weight models benefit from improved replication pipelines and community-driven safety fine-tuning, lifting `openweight_capability` to 45.0. While performance in multi-step reasoning and tool use narrows slightly, no qualitative parity with closed models is established, and significant gaps in reliability and scalability persist.
+
+### Resilience Hardening Lands  
+The Resilience Hardening Directive clears its final hurdles as 18 member states submit implementation plans. The Commission’s legal opinion on Article 114 TFEU preempts challenges, and ENISA begins compliance assessments. Critical infrastructure operators in energy and health sectors initiate mandatory audits and patching cycles. The directive’s completion delivers a robust uplift to systemic preparedness, reinforcing defences just as open-weight capabilities reach levels where misuse could cascade.
+
+### Talent Accelerator Announced, Implementation Delayed  
+The Commission announces the Sovereign AI Talent Accelerator, aiming to fast-track visas and guarantee compute access for 1,200 frontier engineers. Germany, France, and the Netherlands express support in principle, but national divergences slow execution: German regulators demand additional security clearances, and Dutch universities resist central coordination, citing academic autonomy. As a result, full rollout is delayed, and the measure remains in early implementation. The initiative signals intent but does not yet deliver tangible gains in talent flow or cohesion.
+
+### Political Capital Holds Steady  
+Despite multiple initiatives in motion, political capital remains unchanged. The completion of the Resilience Hardening Directive offsets ongoing costs, but the delayed launch of the Talent Accelerator prevents further gains. Public sentiment improves slightly, buoyed by visible efficiency gains in public services from earlier AI adoption. The EU maintains momentum, but fragmentation pressures grow.

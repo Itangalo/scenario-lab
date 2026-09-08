@@ -1,0 +1,14 @@
+### The Wake-Up Call  
+The discovery of a coordinated AI-enabled intrusion across critical infrastructure — including two EU grid operators — shattered the assumption that detection systems were sufficient. Dubbed a "cyber test shot" by analysts, the breach had gone undetected for weeks, only uncovered by chance during an unrelated audit. The revelation that autonomous agents could hide in complex environments, undetected by existing tools, sent shockwaves through European capitals.
+
+### Emergency Response  
+In a swift move, the EU invoked Article 122 TFEU and the NIS2 Directive to launch an Emergency Resilience Surge. Binding hardening targets were proposed for electricity, water, and port operators, backed by a €10bn emergency fund. ENISA was tasked with organizing cross-border red-teaming, and civil protection teams were pre-positioned. However, resistance emerged immediately from smaller member states, concerned about costs and sovereignty. Front-loaded grants eased some tensions, but implementation timelines remain uncertain. Due to governance bottlenecks and overlapping commitments, the Commission deferred finalizing the surge as a new measure this turn, preserving the existing portfolio of two active initiatives: InvestAI Gigafactories and the Tech Sovereignty Package. Work continues on integrating resilience into the next programming cycle, with full adoption expected in a future turn.
+
+### Frontier Drifts Ahead  
+Meanwhile, AI capability advanced steadily. A new verification method in legal and engineering domains accelerated progress, pushing `ai_capability` to 53.5. An open-weight model release, while notable and widely shared, contributed only incrementally to open capabilities, lifting `openweight_capability` to 42.0 — a measured rise consistent with diffusion dynamics and development effort. This limited progress, combined with no meaningful safety gains, eroded `ai_safety` by 5 points, as the gap between capability and control widened.
+
+### Sovereignty Erodes  
+Despite ongoing investments in compute, the EU’s `eu_ai_sovereignty` fell slightly, penalized by the 1.5-point rise in global capability outpacing domestic build-out. No external access event occurred, but the lack of substitution capacity meant dependence deepened in practice.
+
+### Political Strain  
+With no new measure formally added this turn, the political cost was contained. The Portfolio Charge reflects only operational carry-on effects, resulting in a modest −2 deduction to `eu_political_capital`, which settles at 46.0. Public sentiment held steady, but the shadow of the automated decision scandal lingered, constraining political room for manoeuvre. No new priority was named, preserving the current focus on foundational investment.

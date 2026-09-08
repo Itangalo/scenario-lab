@@ -1,0 +1,15 @@
+No statement changes.
+
+## Portfolio
+- `EU Sovereign Access Guarantee (category 4, costs 3 per turn, started turn 3, finishes on turn 8): We will guarantee uninterrupted access to a sovereign stack of high-capability AI models for essential public functions, built and operated under EU legal jurisdiction, to prevent strategic paralysis from external access denial` — **finished**
+- `Sovereign Talent Acceleration Programme (category 4, costs 3 per turn, started turn 4, finishes on turn 7): We will fast-track recruitment, retention, and integration of frontier AI talent into EU sovereign efforts through binding public-service contracts, relocation incentives, and embedded roles in EuroHPC JU and national security agencies` — **finished**
+
+## New measure
+None this turn.  
+We are waiting for the final enforcement validation of the EU Sovereign Access Guarantee’s runtime control framework and the outcome of ongoing legal challenges from foreign providers before committing to expansion or escalation.
+
+## Priority
+**EU Sovereign Access Guarantee** — this remains our central focus because, with foreign providers increasingly conditioning access on political alignment and technical compliance, the only way to ensure the EU’s strategic autonomy is to enforce runtime sovereignty now, not promise it later — and this turn is the final test of whether our control regime holds.
+
+## In practice
+This turn, we are closing the enforcement phase of the EU Sovereign Access Guarantee. The Joint AI Assurance Unit (JIAU) has completed its first round of pre-deployment audits on two foreign-origin models in the sovereign stack, demanding transparent fine-tuning logs and EU-held override keys as conditions for certification under the Digital Governance Act. US-based providers have formally challenged these requirements, arguing they compromise security and intellectual property. We are countering through leverage: non-compliant models will be excluded from public procurement and critical infrastructure use under the market access conditions tied to the now-completed Tech Sovereignty Package. The partial activation of the InvestAI Gigafactories gives us a credible fallback — not frontier, but sufficient for essential public functions — allowing us to treat access as conditional, not unconditional. The Council’s Digital Affairs configuration is preparing a unified position to back JIAU’s authority, while the Commission is finalising guidance on what constitutes “essential public function” to prevent scope creep. This is the moment of truth: either the EU can enforce its rules on systems running in its critical infrastructure, or it cannot. If we back down, sovereignty becomes fiction. If we hold, the next phase begins — scaling domestic capability to match the access we’ve secured.

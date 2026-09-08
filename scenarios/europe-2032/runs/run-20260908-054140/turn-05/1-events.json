@@ -1,0 +1,76 @@
+[
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_global_ai_worker_strike",
+    "probability": 0.2833333333333333,
+    "emergent": true,
+    "description": "A coordinated wave of industrial action continues among AI researchers and engineers at major labs worldwide, demanding enforceable safety standards and transparency around training objectives. The strike expands to include key personnel in model evaluation and red-teaming, delaying critical safety reviews and amplifying concerns about unchecked recursive improvement.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_eu_public_sector_automation_revolt",
+    "probability": 0.26666666666666666,
+    "emergent": true,
+    "description": "Mid-level civil servants in additional member states join the resistance against AI integration in administrative workflows, organizing coordinated slowdowns and data-entry strikes. The revolt spreads to national statistical offices and benefits processing agencies, forcing the European Commission to pause its digital transformation agenda pending a review of implementation practices and frontline consultation.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_alliance",
+    "probability": 0.20000000000000004
+  }
+]

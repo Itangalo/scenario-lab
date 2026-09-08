@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Sovereign AI Adoption Accelerator −3, Sovereign Incident Response Corps −3, Sovereign Evaluation Access Expansion −3, Critical Infrastructure AI Hardening Directive −3, priority −1 = −13  
+PROPOSAL BONUS: Critical Infrastructure AI Hardening Directive (cat 6, large) +4 — answers cyber_major_incident and capability_jump directly, severe recent shocks  
+LEGITIMACY LENDS: none (capital 10.0 < sentiment 34.0)  
+SOVEREIGNTY: 14.0 last turn, no category 4 completion, no capacity event, capability rose 1.5 −1 = 13.0 → adjusted to 12.0 due to member_state_defection effect (regional pact consolidates outside EU mechanism, reducing effective sovereignty)  
+US_POSTURE: ALLIANCE  
+emergent_labour_unrest -- first noted turn 7, listed in 2 turn(s) so far: As public-sector AI adoption expands under strained oversight, coordinated strikes emerge in civil service unions across three major member states, citing both job displacement and the erosion of professional judgment in administrative decisions. The unrest gains traction in media and threatens to paralyze digital government services.

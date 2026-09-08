@@ -1,0 +1,30 @@
+[
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.06,
+    "probability_samples": [
+      0.02,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_unrest",
+    "probability": 0.26666666666666666,
+    "emergent": true,
+    "description": "Regional strikes in transportation and public services escalate into coordinated work stoppages demanding AI-driven job impact assessments and retraining guarantees. The action spreads across three member states, forcing emergency talks at the European Commission. The unrest is not directly against AI infrastructure but targets deployment in public-sector automation.",
+    "probability_samples": [
+      0.25,
+      0.3,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_alliance",
+    "probability": 0.27
+  }
+]

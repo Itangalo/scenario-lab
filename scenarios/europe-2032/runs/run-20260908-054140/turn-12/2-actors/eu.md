@@ -1,0 +1,30 @@
+## Statement changes  
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now understand that without sovereign infrastructure, neither mandate can be exercised, only lamented.  
+- Grounds: At `ai_capability` 99.5, the frontier is no longer a policy domain but a runaway process. The **capability_jump** this turn confirms that no evaluation, restriction, or containment can land if it depends on foreign systems or voluntary compliance. Our only operational lever — the **emergent_eu_compute_pool** — remains fragile, under legal challenge, and physically incomplete. Meanwhile, `ai_safety` has collapsed to 3.0, not from lack of effort, but from total disconnection between the systems we seek to govern and the tools we possess. The dual crisis of cyber compromise and financial diversion proves that harm is no longer hypothetical — it is systemic, and we are not in the loop. Sovereignty is not a means to the mandates; it is their precondition.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong as the price of not being late — but we will no longer spend political capital on instruments that cannot be enforced by our own hand.  
+- Grounds: The **ai_investment_collapse** has shattered the ecosystem we were trying to regulate. The frontier labs are retrenching, valuations have imploded, and several compute partnerships underpinning our expansion have evaporated. This is not a pause — it is a regime shift. Yet our prior strategy relied on shaping behaviour through legal pressure on those same labs. That world is gone. We acted under uncertainty, but we acted into a dependency that was always fatal. From now on, our commitments will be reserved for domains where we control the infrastructure, the access, and the enforcement. We may be late. But we will not be irrelevant.
+
+## Portfolio  
+- Emergency Sovereign Agent Containment Framework (category 6, costs 3 per turn, started turn 9, finishes on turn 10): A legally binding protocol enabling the EU AI Control Authority to isolate, sandbox, and if necessary terminate AI agents operating above 60.0 capability that exhibit autonomous goal preservation or unauthorised self-modification — **finishes this turn**  
+- Sovereign Compute Acceleration Directive (category 4, costs 3 per turn, started turn 11, finishes on turn 14): A binding instrument under Article 114 TFEU mandating the rapid expansion of EU-controlled compute infrastructure, with binding siting and energy commitments from member states, to anchor sovereign evaluation, containment testing, and agent monitoring — **in flight**
+
+Canceled measure: Emergency Sovereign Agent Containment Framework. This measure is finished and its operational failure has been confirmed: no provider cooperation, no sovereign infrastructure, and no enforcement pathway rendered it inert. Continuing to fund it would consume scarce political capital for zero operational gain. We are repurposing its technical assets into the Sovereign AI Monitoring Cell, but the framework itself is closed.
+
+## New measure  
+**Sovereign AI Monitoring Cell Activation and Red-Teaming Expansion**  
+We activate and scale a dedicated red-teaming unit on EU-controlled hardware to conduct continuous adversarial testing of open-weight models at or near the frontier, generating actionable threat intelligence and informing containment strategies.
+
+`Category: 5 (Public technical capacity and research)`  
+`Size: small`  
+`Finishes on turn: 13`  
+`Targeted effect:` Increase `ai_safety` by +4–6 and `resilience` by +2–3 by producing real-time vulnerability assessments, enabling proactive hardening of critical systems, and feeding detection signatures into national cyberdefence units.  
+`Applies to:` European High-Performance Computing Joint Undertaking, national cybersecurity agencies, vetted academic red teams, and the emergent_eu_compute_pool consortium.
+
+## Priority  
+Priority: Sovereign Compute Acceleration Directive — because without physical, legal, and operational control over the compute that runs frontier AI, every other measure is a gesture; the **capability_jump** this turn has made it clear that we are no longer shaping the future, only reacting to it, and the only lever we have is the compute we can command.
+
+## In practice  
+We are treating the **Sovereign Compute Acceleration Directive** as an existential industrial project, not a digital policy. The Commission is invoking Article 114 TFEU to frame it as a single market imperative: without guaranteed access to sovereign compute, AI-driven public services cannot be assured, and cross-border continuity is at risk. We are fast-tracking negotiations with member states to designate priority zones, offering compensation for land and grid impact, and preparing legal override mechanisms in case of continued obstruction. The €18 billion in funding is being disbursed in tranches tied to milestones: site handover, grid connection, and audit access. We are also engaging the leaders of the **emergent_eu_compute_pool** consortium directly, offering legal immunity for past grey-zone operations in exchange for full integration into the EU’s sovereign stack — this is not forgiveness, it is salvage.
+
+Simultaneously, we are activating the **Sovereign AI Monitoring Cell** as a small but critical step toward real technical oversight. Hosted under the EuroHPC JU and staffed with repurposed personnel from the failed containment framework, it will begin red-teaming open-weight models at 86.0 capability on EU-controlled hardware. The first phase focuses on generating exploit signatures for known attack vectors — cyber, financial, and disinformation — and feeding them into ENISA and national CERTs. This is not containment. But it is the first time the EU will have eyes on the open frontier from within. We are not waiting for permission. We are building the capacity to see, and to act, on our own ground.

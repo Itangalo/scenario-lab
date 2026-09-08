@@ -1,0 +1,15 @@
+### The Dual Push
+
+The EU advanced key initiatives this turn, building on prior investments. The InvestAI Gigafactories and Tech Sovereignty Package, both completed last turn, began yielding measurable infrastructure benefits, particularly in compute availability for public research clusters. Cyber Shield, however, remains in phased rollout and did not achieve full operational status this turn—its final integration delayed by coordination challenges among member states. The European AI Research Corps reached full deployment across 18 clusters, conducting independent safety evaluations and benchmarking under EDIC oversight. Pre-allocated compute from Site B, though finally released after delays, supported only preliminary work on fallback models and interpretability—its contribution incremental, not transformative.
+
+The Commission moved forward with one urgent measure: the emergency expansion of the AI liability pool, implemented by December under ESM-backed guarantees. The program now covers all public-sector AI use in critical infrastructure, enabling rapid deployment of diagnostic AI systems in hospitals across Belgium, Portugal, and Finland. The move was widely seen as a pragmatic crisis response, modestly improving public confidence and reducing adoption friction.
+
+The Sovereign Access Initiative progressed under Article 36 TFEU, with Hungary and Poland conditionally accepting co-governance of fallback nodes in Budapest and Warsaw. However, funding shortfalls from France and Germany necessitated bridging allocations, slowing full deployment. The draft regulation establishes binding milestones, but enforcement mechanisms remain untested and contingent on broader political alignment.
+
+### Capability Creeps, Safety Lags
+
+Global AI capability rose to 63.0, driven by self-improving training pipelines. A leaked frontier model began circulating in underground developer forums, raising concerns about uncontrolled diffusion. While early replication attempts are underway, no broad deployment or capability leap has yet materialized—openweight_capability increased only modestly to 52.0, reflecting limited uptake and ongoing infrastructure constraints.
+
+No new safety evaluations covered the latest frontier models, widening the gap between capability and safety. A major cyber incident exploited AI-generated malware to breach public health systems, exposing persistent fragility. The EU responded by joining a joint threat-sharing pact with Nordic and Benelux states, enabling real-time telemetry and forensic coordination—boosting resilience.
+
+Public sentiment edged up slightly, supported by visible healthcare deployments. Political capital rose on delivery of the liability expansion and continued progress on sovereignty infrastructure, though high costs and delayed timelines limited gains.

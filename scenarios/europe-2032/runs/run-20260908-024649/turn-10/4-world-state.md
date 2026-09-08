@@ -1,0 +1,15 @@
+### A Crisis and a Pivot
+
+The EU confronts a major AI-generated cyberattack: a coordinated ransomware sweep paralyzes hospital scheduling systems across three member states. Response is slow, and recovery takes weeks. The attack underscores the gap between offensive capability and defensive readiness, landing visibly and publicly. Despite the Operational Resilience Stress Test’s partial validation of fallback systems, the real-world activation of sovereign infrastructure is delayed by staffing gaps and procedural friction.
+
+In response, the EU retires the stalled Emergency Fallback Procurement Directive, acknowledging that binding access to foreign compute is unattainable under the US consolidation posture. The move frees political capital but is seen by allies as a retreat. The diagnostic framework from the negotiations is repurposed into multilateral safety standards, preserving partial value.
+
+### Doubling Down on Sovereignty
+
+The EU launches Sovereign Compute Integration Acceleration (Phase II), a large category 4 measure, as its priority. With €4.2 billion in funding, it aims to expand the sovereign compute grid to include twelve regional fallback nodes, automate failover using interpretability protocols, and pre-load verified AI stacks for critical functions. Implementation is scheduled to begin under the Digital Europe Programme and NextGenerationEU, with oversight from the Commission, ENISA, and EuroHPC JU.
+
+However, no operational upgrades occur this turn. The initiative remains in early deployment, facing procurement delays, cross-border coordination challenges, and workforce shortages. While strategic momentum builds, tangible progress on integration and automation will take multiple turns. The project contributes minimal near-term gains—planning advances are acknowledged, but sovereignty sees only a modest reflection of preparatory work. As a result, eu_ai_sovereignty decreases slightly from 24.0 to 23.0, reflecting both the lingering negative impact of denied frontier access (−2) and the faint positive signal of forward motion (+1), consistent with early-stage implementation under rule 10.
+
+### The World Keeps Moving
+
+Global AI capability advances to 67.0, driven by proprietary deployment. Open-weight capability rises to 53.0, reflecting delayed spillover from closed models now reaching accessible thresholds. However, no safety gains materialize—existing breakthroughs remain confined to institutional use, and ai_safety holds at 15.0. Resilience dips slightly as the attack exposes operational fragility. Political capital rises due to the completion of prior measures and the strategic pivot, while public sentiment remains stagnant amid ongoing disruption. The eu_ai_sovereignty metric ends the turn at 23.0, balancing planning progress against unresolved vulnerabilities and external constraints.

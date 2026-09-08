@@ -1,0 +1,25 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Prevent the frontier from escaping political control by ensuring that no training run above 65.0 capability occurs without real-time, tamper-resistant telemetry under EU jurisdiction, and that open-weight releases above 60.0 are subject to mandatory pre-release evaluation and containment review  
+- Grounds: The verification_widens event confirms that capability gains are no longer confined to domains with automatic feedback; AI now autonomously improves in law, engineering and clinical coding—areas previously assumed to require human judgment. Combined with labour_displacement showing structural economic disruption, this means the frontier is not only self-compounding but now reshaping core institutions. Our prior commitment was narrowly focused on jurisdictional access to training environments, but openweight_capability at 75.125 proves that leaked or reproduced models are already operating beyond our reach. We must now bind both the closed *and* open fronts: telemetry where we can enforce it, and evaluation + containment where we cannot. The cost of reversal is high, but the cost of irrelevance is higher.
+
+## Portfolio  
+- **Launch EU-hosted training partnerships with binding safety and telemetry compliance** (category 4, costs 2 per turn, started turn 10, finishes on turn 11): Establish legally enforceable agreements with non-US frontier labs to conduct next-generation training runs within EU jurisdiction, under real-time observability, secured weights, and public evaluation access, in exchange for market access and compute priority.  
+  *Finishes this turn.*
+
+## New measure  
+**Mandate pre-release evaluation and containment review for all open-weight models above 60.0 capability**  
+Require independent assessment of dangerous capabilities and enforceable containment plans before any open-weight model above 60.0 is released, including reproduction attempts, derivative models, or public weight dumps.
+
+`Category: 1 (Evaluation and oversight)`  
+`Size: small`  
+`Finishes on turn: 13`  
+`Targeted effect: +6 to ai_safety by turn 13; reduces risk from distributed, unrecallable models by ensuring no open release above 60.0 occurs without verified safeguards, audit trails, and fallback mechanisms`  
+`Applies to: all entities releasing or reproducing models above 60.0 capability within EU jurisdiction or targeting EU users`
+
+## Priority  
+**Mandate pre-release evaluation and containment review for all open-weight models above 60.0 capability** — because openweight_capability has reached 75.125, meaning superhuman systems are already in circulation outside any lab’s control, and the verification_widens event proves they are now improving in domains where misuse could collapse legal, medical or engineering trust at scale; we can no longer afford to focus only on closed labs when the open frontier is already live and accelerating.
+
+## In practice  
+This turn, we are shifting from containment of the known to governance of the uncontrolled. The completion of our EU-hosted training partnerships gives us a foothold: two non-US labs have agreed to move their next training runs to the EU Gigafactory site in Lyon, under binding telemetry and evaluation terms. But with openweight_capability now matching strong domain experts across most cognitive fields—and reproductions of 75.0+ models running on consumer-grade hardware—we cannot treat open releases as a secondary concern. Our new measure builds on the European AI Office’s existing conformity assessment framework, adapting it for open models. We are instructing the Office to develop a fast-track evaluation protocol for open-weight systems above 60.0, using red-teamed benchmarks in law, medicine, cyber and engineering, and requiring developers to demonstrate containment—such as watermarking, revocation signatures, and hardware fingerprinting—before release.  
+
+We are negotiating with major open-model hubs in France, Germany and the Netherlands to pilot the system, offering safe-harbour status for good-faith submissions and fast-tracked research access in return for compliance. Resistance is expected from decentralised collectives and academic labs, so we are framing the requirement not as censorship but as infrastructure stewardship: just as open-source software projects now undergo security audits before deployment in critical systems, so must open models above a strategic threshold. The labour_displacement event strengthens our hand—MEPs across the spectrum now see AI not just as a tool but as a structural force—and we are using the momentum to pass a delegated act under the AI Act’s high-risk provisions, grounded in Article 114 TFEU. This allows us to act without a full Council vote, though we are consulting the Internal Market Council to preserve cohesion. The measure does not ban open models; it ensures they do not become unrecallable threats. That is the line between innovation and irresponsibility.

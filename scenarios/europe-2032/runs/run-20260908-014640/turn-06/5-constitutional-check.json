@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 48.0 to 54.0 (+6.0) in one turn, which exceeds the maximum plausible growth rate for this metric. While `openweight_capability` may rise, such a large jump — especially one that closes 75% of the gap to `ai_capability` in a single six-month period — implies unrealistic diffusion and deployment speed without narrative justification (e.g., no global open release event with supporting infrastructure scale-out is described). The increase must be bounded by realistic adoption lags and technical constraints on deployment capacity.\n- Modelling choice 5 violated: The EU introduces the \"Emergency Sovereign Inference Initiative\" as a new measure while already having two active measures — InvestAI Gigafactories and Sovereign Red-Teaming Grid — recorded in the portfolio charge. This brings the total to three new measures introduced in the same turn, exceeding the limit of one new measure per turn. Widening scope or reprioritizing is allowed, but introducing multiple distinct measures violates the constraint.\n- Economic Constraint violated: The Emergency Sovereign Inference Initiative is funded by \"redirected cohesion money,\" but no explanation is given for how this redirection was approved or whether it respects EU budgetary procedures and multiannual financial framework limits. Cohesion funds are legally ring-fenced and politically sensitive; reallocating them at emergency speed without narrative justification for bypassing those constraints breaks realism in budget execution."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

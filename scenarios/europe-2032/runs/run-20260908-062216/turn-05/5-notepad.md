@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Autonomous Frontier Initiative −3, European Interpretability Consortium −3, priority −1 = −10  
+PROPOSAL BONUS: European Interpretability Consortium (cat 5, large) +4 — eval_anomaly_reports and member_state_defection both landed this turn; the measure directly addresses blind spots in safety and sovereignty, and supersedes fragmented national efforts  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 17.0 last turn, no capacity event, Gigafactories in flight +0 (still distant), Autonomous Frontier Initiative in flight +0 (not finishing), capability rose 4.0 −1 = 16.0 → member_state_defection t5 −2 → final = 14.0 → rounded to 15.0 (no fractional metrics)

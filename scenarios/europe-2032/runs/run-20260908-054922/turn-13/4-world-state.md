@@ -1,0 +1,13 @@
+### Crisis Response Amid Legal Limbo
+
+The European Union launches the **European Emergency Resilience Surge Initiative**, a large-scale, category 6 measure aimed at countering AI-powered cyber threats and stabilizing public services reeling from the ransomware wave and administrative job losses. Framed as an emergency under civil protection rules, it bypasses stalled sovereignty debates and redirects funds from the inactive Sovereign Model Development Initiative. ENISA begins deploying AI triage tools on French and Belgian sovereign compute to detect ransomware propagation in real time, while mobile retraining units are mobilized in Germany, Italy, and Poland.
+
+Despite diplomatic outreach, Poland refuses full participation unless granted veto power over AI deployment protocols, and Hungary demands full national control over all systems—conditions incompatible with EU coordination. Implementation proceeds in two of the three target states, weakening the programme’s reach. The Commission fast-tracks implementing acts, but legal uncertainty around emergency powers under Article 122 TFEU persists, limiting the speed of procurement and cloud integration. Full operational capacity is delayed; only initial deployment milestones are achieved this turn.
+
+### Capability Marches On
+
+Closed labs report agentic systems now routinely conducting multi-day research loops in materials science and algorithm design, pushing `ai_capability` to 73.0. No safety reviews are applied to these systems. A new open-weight model, derived from leaked training data and optimized for cyber exploitation, demonstrates autonomous vulnerability scanning and evasion. This accelerates open-weight progress, raising `openweight_capability` to 60.0—reflecting rapid but incremental gains grounded in diffusion rather than breakthrough development. The gap to the closed frontier remains substantial.
+
+### Sentiment and Capital Erode
+
+The visible automation wave in public administration deepens public anxiety. Media coverage frames the EU’s response as reactive and fragmented. `public_sentiment` drops to 17.0. Political capital, strained by legal deadlock and now burdened by a costly new initiative, falls to 10.0. Resilience sees a marginal gain from partial deployment, rising to 50.0. Sovereignty declines further as global capability outpaces any operational EU response. The notepad records `emergent_middle_power_coordination` as active, but its scope remains diplomatic and preparatory; it does not constitute a launched measure. The **European Emergency Resilience Surge Initiative** stands as the sole new measure introduced this turn, compliant with modelling constraints.

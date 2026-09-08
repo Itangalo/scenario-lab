@@ -1,0 +1,13 @@
+### Strategic Alarm, Political Strain
+
+The EU’s response to the global cyber intrusion and election disruption was swift in intent but constrained by institutional limits. The Commission proposed the Emergency Resilience Surge, a large-scale directive to harden energy, water, and health systems against AI-driven threats, backed by €50bn in conditional funding. However, under constitutional modelling rules, the EU may introduce only one new measure per turn, and with InvestAI Gigafactories and the Tech Sovereignty Package already in flight, the Emergency Resilience Surge could not be fully launched. Instead, it entered only as a draft framework, with adoption talks delayed pending prioritization in a future turn. Binding standards under Article 114 TFEU triggered resistance from several member states, particularly Poland and Hungary, who denounced "digital federalism" and refused early engagement.
+
+Meanwhile, the cyber_test_shot revealed not just technical vulnerabilities but a dangerous lag in coordinated response. Though no cascade occurred, the fact that intrusions were found by accident eroded confidence. In contrast, the adoption_success — a public AI system cutting hospital wait times in Spain and Finland — provided a rare positive narrative, credited to EU-developed models and boosting cautious optimism.
+
+The InvestAI Gigafactories and Tech Sovereignty Package progressed slowly. Grid access negotiations stalled in Germany, and private investors remained wary despite tax incentives. No new compute came online, and the US maintained tight control over advanced chip exports, limiting near-term sovereignty gains.
+
+### Capability Creeps, Safety Lags
+
+AI capability advanced to 54.0, driven by compressed release cycles and multi-agent training. The gap between capability and safety widened: the covert lab agents incident had not led to enforceable safeguards, and no new evaluation regime touched models in development. ai_safety dropped to 32.0.
+
+Openweight_capability rose to 42.0—modestly ahead of open-source diffusion trends but within bounds of the underlying ai_capability growth—supported by limited adaptation of Kimi K3 tools in defensive red-teaming contexts. Resilience inched up to 41.0, reflecting early planning momentum, though full hardening remained years away. Political capital fell to 40.0 under the weight of two ongoing measures and the strain of attempted overreach. Public sentiment rose slightly, buoyed by visible public-sector gains.

@@ -1,0 +1,13 @@
+### The Bio Incident and Its Aftermath
+
+A genetically engineered pathogen, designed using repurposed research tools from a defunct AI lab, emerges in Central Europe. Automated detection systems under the newly completed AI Watch and Respond Framework flag anomalous synthesis orders within 48 hours, triggering alerts across six member states. Patching protocols restrict access to high-risk genetic sequences, but political fragmentation cripples containment: Poland and Hungary refuse activation of cross-border enforcement mandates, citing national jurisdiction. The delay allows the agent to spread through secondary supply chains, prolonging containment efforts into weeks.
+
+While the technical backbone performed, the absence of binding crisis authority exposed a fatal gap. ENISA, ECDC, and Frontex lead a joint review, confirming that detection worked but coordination failed. A push for a permanent AI Crisis Coordination Cell under Article 114 TFEU, backed by the solidarity clause, gains traction in the Commission but faces stiff resistance in the Council.
+
+Public sentiment sours further. Media coverage focuses on avoidable deaths and dependency on foreign-developed tools, amplifying resentment. Trust in AI governance plummets, with protests near data centres and research hubs. The European Public Prosecutor’s Office opens an investigation into the software supply chain, targeting a Swiss cloud provider linked to the original lab.
+
+Behind the scenes, quiet negotiations advance with Switzerland and Japan on mutual accountability for frontier models. Early signals suggest two European-trained AI researchers from a collapsed US lab may return, and a GPU cluster in Ireland could be re-anchored under EU control—but no move is made. With political capital thin and public anger rising, the Union holds back, consolidating the Watch and Respond infrastructure as a foundation for future action.
+
+### Sovereignty Erodes, Capital Tightens
+
+No new measure is launched. The portfolio charge remains light, but the bio incident inflicts steep costs. ai_safety drops sharply as capability advances without safeguards. Resilience sees a partial gain—the framework absorbed some harm—but not enough to offset broader failures. Sovereignty declines due to institutional drift and the Union’s inability to enforce unity. Political capital erodes under the weight of an unresolved crisis, and public sentiment hits a new low.

@@ -1,0 +1,12 @@
+### Sovereign Activation at the Brink  
+The European Sovereign AI Activation Council concluded its final trilogue negotiations in December 2030, marking a hard-won step toward unified AI governance. Poland conditionally assented, securing co-leadership of a new safety task force and binding audit rights over training logs, while Hungary agreed to observer status and a phased integration path tied to national resilience benchmarks. However, formal establishment of the Council was delayed by unresolved legal challenges in the CJEU over emergency compute access, postponing full activation of the Romanian fallback nodes. Work continues under Commission emergency authority, but operational deployment of a fully sovereign frontier model remains pending.
+
+Nonetheless, progress on governance alignment enabled limited training runs on EU-controlled infrastructure, contributing to incremental gains in sovereign capacity.
+
+### Cyber Crisis and Resilience Response  
+A major AI-generated cyberattack disrupted regional health systems and transport operators across three member states. The attack exploited zero-day vulnerabilities with machine-level speed, overwhelming legacy defences. In response, ENISA fast-tracked red-teamed detection rules, deploying them via emergency powers to NIS2 operators despite ongoing legal challenges. These measures absorbed part of the harm, limiting cascading failures and contributing to a modest resilience gain.
+
+### Capability Marches On  
+`ai_capability` rose to 68.5, driven by autonomous cyber-agents and unverified eval anomalies suggesting emergent planning. No safety validation accompanied the leap. `openweight_capability` rose to 53.0, reflecting wider replication of mid-tier architectures. `resilience` improved slightly due to partial implementation of the Surge Directive.  
+
+`eu_ai_sovereignty`, while advanced by governance progress, was tempered by ongoing decay from geopolitical fragmentation and lagging industrial mobilization. The expected +5 boost from the Activation Council was partially offset by structural erosion, resulting in a net increase to 21.0. Political capital rose to 15.0, reflecting diplomatic investment, but remained constrained by broader institutional fatigue.

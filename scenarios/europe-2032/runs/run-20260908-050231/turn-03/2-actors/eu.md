@@ -1,0 +1,19 @@
+## Portfolio  
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``  
+``Emergency Resilience Surge (category 6, costs 3 per turn, started turn 1, finishes on turn 4): Launch immediate hardening of critical energy, water and port infrastructure against AI-enabled cyber intrusion, with binding standards and co-financed upgrades``  
+``Open-Source Threat Detection Commons (category 5, costs 3 per turn, started turn 3, finishes on turn 5): Establish a shared, EU-hosted platform where public and vetted private researchers can train and deploy defensive AI models on real (anonymised) intrusion data from critical sectors``
+
+## New measure  
+None this turn.  
+Waiting for the Open-Source Threat Detection Commons to mature into a technical platform and governance framework before layering on additional complexity.
+
+## Priority  
+**Emergency Resilience Surge** — because it is the only measure in flight that directly closes a known, urgent gap in time-critical defences, and because it finishes this turn, its full effect must land now or not at all.
+
+## In practice  
+We are executing the final phase of the Emergency Resilience Surge with binding implementation deadlines now in force. ENISA has issued compliance certifications under the NIS2 Directive, and all operators of essential services in energy, water, and ports must demonstrate deployment of AI-resistant configurations by 31 December 2027. The automated patching systems and swarm-detection tools are being rolled out via national CERTs, with technical support from the EU Cyber Rapid Response Teams. Co-financing is active: 70% grants from the Just Transition Fund are flowing to regional utilities in Bulgaria, Finland, and Slovakia, conditioned on audit trails and interoperability with the cross-border alert system. Resistance from smaller member states—particularly in the Baltics and parts of Central Europe—over data sovereignty and operational autonomy is being addressed through bilateral technical assistance packages and opt-in modular integration, preserving the integrity of the baseline standard while allowing phased compliance.
+
+Simultaneously, we are advancing the InvestAI Gigafactories initiative, with construction now underway in Iceland and Portugal. In France and Germany, ECOFIN and the Commission have brokered fast-track environmental assessments under a new “strategic infrastructure” designation, preserving environmental standards while compressing permitting timelines by 40%. The Tech Sovereignty Package is in trilogue, with the Parliament insisting on clawback mechanisms tied to measurable compute deployment milestones—failure to meet them would trigger reinvestment into public alternatives. These category-4 efforts remain the cornerstone of our long-term capacity build-up, even as their pace lags behind global capability growth.
+
+The Open-Source Threat Detection Commons is now formally established under ENISA, with Horizon Europe releasing €400 million in initial funding. Legal frameworks for data anonymisation and liability shielding are being finalised with the EDPS and national data protection authorities. Early participation is confirmed from CERTs in Germany, the Netherlands, and Sweden, and academic partners at TU Delft and the CISPA Institute are designing the first model training cycles. The platform will not go live with real data until Q1 2028, but governance and access protocols are being stress-tested in simulation. This is not a shortcut to sovereignty—but a way to ensure that when we do have capacity, it is legible, defensible, and ours.

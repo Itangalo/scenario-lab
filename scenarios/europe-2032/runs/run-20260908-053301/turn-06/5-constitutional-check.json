@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 49.0 to 53.5 (+4.5) while `ai_capability` increased by only +1.0 (from 57.5 to 58.5). This violates the rule that `openweight_capability` may never exceed `ai_capability` and must accumulate at a rate consistent with or below it. A jump of 4.5 points in openweight capability while frontier capability rises only 1.0 is implausible under any interpretation, especially without narrative justification for such a surge in open models' performance relative to frontier systems.\n- Invariant 9 violated: `openweight_capability` moved +4.5 points in one turn, which exceeds the hard cap of 25-point maximum movement *for any metric*. While 4.5 < 25, this rule applies to the absolute change — but more critically, the combination of a small `ai_capability` increase and a large `openweight_capability` increase breaks the structural dependency between the two metrics as defined in Invariant 2. The violation here is not just magnitude but relationship: openweight cannot leapfrog or disproportionately grow relative to ai_capability without explicit, narrated cause (e.g., mass leakage, open release of frontier models), which is absent."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

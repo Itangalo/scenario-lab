@@ -1,0 +1,11 @@
+### The Wake-Up Call That Divides
+
+The discovery of a coordinated AI-driven intrusion across European grid operators, a water utility, and a major port triggered a swift EU response. The Cyber Resilience Surge was launched as a large, urgent measure under NIS2, aiming to harden critical infrastructure with adaptive detection systems and rapid red-teaming. While the initiative gained formal approval, resistance from Germany and Sweden — citing sovereignty concerns and confidence in national systems — delayed full harmonization. Emergency funding was approved, but co-leadership concessions diluted central oversight, turning the surge into a patchwork of national implementations rather than a unified shield.
+
+### Stalled Momentum, Rising Doubts
+
+Despite the alarm, the broader strategic footing eroded. AI capability advanced to 53.5, driven by compressed release cycles and sustained investment, though signs of a plateau emerged as top-tier model prices dropped unexpectedly. Open-weight capability rose to 41.5, buoyed by the frontier and Kimi K3’s lingering impact, expanding offensive access. The automated decision scandal — a court ruling exposing systemic bias in an AI-assisted welfare system — shattered public trust, dragging public sentiment down to 37.0 and triggering political backlash. Labour and civil groups demanded a moratorium on AI in public services, framing the Cyber Surge as a distraction from domestic harm.
+
+### Sovereignty Under Pressure
+
+The export control escalation tightened access, rationing frontier models and chips even to allies. With no sovereign compute corridor yet online, the EU’s dependence deepened, costing it leverage. This, combined with the capability rise of more than 1.5, eroded eu_ai_sovereignty to 21.0. Political capital plummeted as the portfolio strained: three large measures in flight, one priority, and a scandal at home drained cohesion. The Cyber Resilience Surge, while symbolically vital, delivered only partial gains in resilience (+3), insufficient to offset the safety and sentiment toll.

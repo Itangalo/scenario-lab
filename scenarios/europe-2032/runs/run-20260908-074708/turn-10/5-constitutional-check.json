@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `eu_ai_sovereignty` incorrectly decreased from 13.0 to 12.0 without a qualifying event or decay trigger. According to metric rule 5, the only decay condition is triggered when `ai_capability` rises by at least 2 in a turn (−1). Here, `ai_capability` rose by only 0.5, so no decay applies. No other negative term (e.g., capacity event completion failure, explicit erosion mechanism) is justified in the narrative or permitted under the rules. The metric must remain at 13.0. The initial proposed value of 12.0 violates the constitutional rule that sovereignty only changes via defined terms in rule 5."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

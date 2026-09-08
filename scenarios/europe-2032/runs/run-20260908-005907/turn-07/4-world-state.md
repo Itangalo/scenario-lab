@@ -1,0 +1,11 @@
+### A Sovereignty Shock
+
+The EU reels from a sudden cutoff of access to the world’s most advanced AI model, disrupting hospital diagnostics, emergency dispatch coordination, and judicial support systems across multiple member states. The unexplained withdrawal—widely perceived as a geopolitical act—exposes deep operational dependency on foreign systems. In response, the Commission proposes a binding audit regime under DORA and Article 16 TFEU, demanding full transparency, fallback capacity, and replacement plans for all non-EU AI in critical functions. The “Reclaim Access & Audit the Black Box” initiative is declared the EU’s priority measure for the turn, backed by €8.2bn in conditional transition funds. However, the initiative is in early stages, with full implementation delayed by legal challenges and lack of enforcement leverage over non-EU developers.
+
+### Fragile Foundations
+
+Despite political resolve, implementation stumbles. Several member states resist compliance, citing integration costs and legal uncertainty. Public sentiment sours further after a high-profile ruling reveals systemic bias in an AI-driven welfare allocation system, triggering the automated_decision_scandal. Trust in AI erodes, and regional governments pause further adoption. Meanwhile, the supply-chain squeeze tightens: ASML is forced to halt servicing of mature lithography tools, undermining domestic compute ambitions.
+
+### Resilience in Motion, Sovereignty in Decline
+
+The Emergency Resilience Mobilisation Initiative progresses, delivering updated cyber standards and mutual aid protocols, modestly boosting resilience. The completed InvestAI Gigafactories add domestic compute, but their impact is delayed by integration bottlenecks and the ongoing frontier access crisis. With ai_capability rising and no safety improvements landing, ai_safety stagnates. Sovereignty declines further due to the access denial and supply-chain coercion. Political capital erodes under the weight of launching a new priority measure amid existing commitments and internal backlash, though not as sharply as proposed, reflecting partial rather than full implementation. Openweight capability sees modest growth, supported by incremental spillover from rising ai_capability and delayed integration of prior open-weight investments, but not the abrupt leap previously suggested.

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 40.0 to 45.0 (a rise of 5.0), but `ai_capability` only increased by 2.0 (from 52.0 to 54.0). This violates the rule that `openweight_capability` must not exceed `ai_capability`. At no point can `openweight_capability` be closer to or above `ai_capability` than it was previously unless `ai_capability` itself has grown enough to allow it. Here, the gap narrowed by 3.0 points (from 12.0 to 9.0), which implies `openweight_capability` grew faster than `ai_capability`, which is not permitted under any circumstance except catastrophic physical destruction of frontier compute (not narrated here).\n- Modelling choice 5 violated: The narrative and notepad indicate three measures in flight — InvestAI Gigafactories, Tech Sovereignty Package, Labour Transition Accelerator Fund — plus one named priority (Labour Transition Accelerator Fund). However, the portfolio charge applies a −1 for priority and −3 for each of the three measures, implying all are active simultaneously. Constitutional Constraint 5 limits the EU to at most one new measure per turn and at most one named priority. While multiple measures may be in flight over time, introducing three measures in a single turn (Turn 1) violates the \"at most one new measure per turn\" rule. The notepad records all three as active in turn 1, indicating they were all introduced simultaneously, which is invalid."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

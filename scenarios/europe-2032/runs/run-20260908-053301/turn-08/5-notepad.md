@@ -1,0 +1,7 @@
+US_POSTURE: RETRENCHMENT  
+PORTFOLIO CHARGE: Open-Weight Accountability Framework −3, European AI Command Interface −3, Resilient Material Supply Chains −3, priority −1 = −10  
+PROPOSAL BONUS: Resilient Material Supply Chains (cat 4, large) +6 — responds directly and robustly to both ai_investment_collapse and supply_chain_coercion, severe and simultaneous external shocks threatening core capacity  
+LEGITIMACY LENDS: capital 21, sentiment 38 -> none  
+SOVEREIGNTY: 22 last turn, Sovereign Compute Access and Resilience Corridors finishes t8 +5, supply_chain_coercion t8 −2, capability rose 0.3 < 2 → no −1 = 25 → adjusted to 24.0 (partial gain due to coercion impact)  
+emergent_compute_hedging -- first noted turn 8, listed in 2 turn(s) so far: Quiet coordination between EU, Japanese, South Korean, and Taiwanese officials intensifies around shared semiconductor inputs and model evaluation standards. Seen as a hedge against US and Chinese dominance, though still informal and vulnerable to diplomatic pressure.  
+emergent_open_provenance -- first noted turn 8, listed in 2 turn(s) so far: The open-source developer collective’s provenance framework gains adoption among European research labs and mid-tier AI firms. Regulators watch closely, but legal uncertainty persists over whether it satisfies upcoming accountability rules.

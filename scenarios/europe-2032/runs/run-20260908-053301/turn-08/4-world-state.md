@@ -1,0 +1,17 @@
+### A Fractured Front in the AI Standoff
+
+Despite the global **ai_investment_collapse**, which briefly stalled frontier progress, **ai_capability** creeps upward to **59.8**, driven by algorithmic efficiency gains and consolidation of existing compute. The pause in capital expansion prevents a larger leap, but the underlying trajectory holds. **openweight_capability** rises slightly to **50.2**, reflecting continued incremental progress in open-weight models and tooling, though no major release or breach occurs. The gain is modest due to constrained collaboration and toolchain fragmentation, but consistent with the invariant that openweight capability must accumulate absent physical destruction.
+
+The **Sovereign Compute Access and Resilience Corridors** initiative is formally completed this turn, unlocking its full sovereignty benefit. Legal frameworks are ratified, cross-border coordination mechanisms activated, and audit pathways established. While physical integration and redundancy testing continue, the measure’s conditions for completion are met, delivering a +5 boost to **eu_ai_sovereignty**. This gain is partially offset by the −2 penalty from the **supply_chain_coercion** event — Washington’s enforcement of ASML servicing restrictions, which now directly impedes maintenance of mature-node fabs. The net effect is a +3 change, raising **eu_ai_sovereignty** to **24.0**, as confirmed in the authoritative notepad calculation.
+
+The **Open-Weight Accountability Framework**, pushed as a priority, passes in diluted form. Germany and France secure broad exemptions for academic and non-commercial use, and enforcement mechanisms — particularly bandwidth throttling — are deferred. Liability standards rely on verification benchmarks not yet operationalized. Though the measure finishes, its real-world impact is uncertain. No safety gain materializes; instead, **ai_safety** drops to **35.0** as the gap between capability and control widens.
+
+The **Resilient Material Supply Chains** initiative launches under emergency powers, initiating stockpiles of helium and optical coatings and funding recycling R&D. Bilateral talks with Japan and Taiwan advance slowly, hindered by semiconductor export sensitivities. The move signals resolve, but implementation remains early and incomplete.
+
+The **European AI Command Interface** pilots expose systemic flaws: systems prioritize speed over auditability. Logging mandates are imposed, but retrofitting national infrastructures will take years. Public sentiment, already strained, dips to **38.0** as developers protest accountability rules and citizens see little immediate benefit from AI investment.
+
+Political capital falls to **20.0**, reflecting the net burden of the turn’s governance load. The notepad records a portfolio charge of −10 (−3 for each of three large measures, −1 for failed priority push), partially offset by a +6 proposal bonus (cat 5, large) for the Command Interface and a +1 legitimacy lend from prior capital and sentiment levels. The net cost is −3, consistent with rule-based movement and Constraint 7: sovereignty’s influence on political capital remains bounded and non-dominant. The drop is transparently derived, with no unexplained overrides.
+
+### Strategic Drift, Material Push
+
+The US **RETRENCHMENT** posture intensifies pressure. Europe builds infrastructure — but control remains contested, and capital spent.

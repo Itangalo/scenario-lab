@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Open-Weight Firewall Initiative −2, Establish enforceable sovereign access rights −3, EU Frontier AI Programme −3, priority −1 = −15  
+PROPOSAL BONUS: EU Frontier AI Programme (cat 4, large) +6 — directly answers eu_frontier_access_denied and openweight_frontier_release, both severe and recent, large measure addressing core sovereignty  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 17.0 last turn, no capacity event, capability rose 1.5 −1 = 16.0  
+US_POSTURE: CONSOLIDATION  
+emergent_regional_data_coalition -- first noted turn 4, listed in 2 turn(s) so far: The informal EU data-sharing talks crystallize into a formal mutual defense pact for AI-critical infrastructure, with binding commitments to joint incident response, shared threat intelligence, and coordinated sanctions against foreign actors targeting member states' AI systems. The pact activates in response to growing cyber threats and perceived unreliability of transatlantic coordination.

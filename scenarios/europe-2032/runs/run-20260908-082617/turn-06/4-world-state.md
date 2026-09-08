@@ -1,0 +1,13 @@
+### A Coalition Forged, a Strategy Shifted
+
+The European Union pivots decisively in response to the formation of a new middle-power coalition, transforming its AI sovereignty strategy from isolated self-reliance to coordinated influence. With Japan, South Korea, Canada, and Brazil, the Union establishes Joint Evaluation Cells—co-staffed technical teams to conduct pre-deployment assessments of frontier AI models. The initiative leverages shared access and enforcement leverage, institutionalising independent scrutiny across coalition jurisdictions. Though still in early setup, the move signals a shift from reactive containment to proactive rule-setting.
+
+Domestically, the Union completes three major measures: Cyber Shield for Critical Operators, the European Labour Transition and Innovation Fund, and the Sovereign AI Testbed for Public Services. Cyber Shield’s protocols are now embedded into the Cyber Resilience Directorate, with updated requirements addressing energy-sector detection gaps. The Labour Fund’s closure leaves a void amid ongoing protests, but the Testbed’s success proves EU-controlled AI can operate in high-stakes public services, bolstering technical confidence.
+
+The draft of the European Compute Security Audit Regime advances under Article 114 TFEU, with BSI, ANSSI, and the Dutch DPA aligning on geofencing and usage logging standards. To overcome resistance, compliance is linked to cohesion fund disbursements—a move framed as mutual insurance, not punishment. Austria and Poland remain sceptical, but no outright defection occurs.
+
+### Capability Creeps, Safety Keeps Pace
+
+AI capability rises to 61.5, driven by continued advances in agent coordination and training pipeline automation. Openweight capability climbs to 48.0, reflecting growing exploitation of unsecured academic clusters in Eastern Europe, though still far from frontier parity. The Joint Evaluation Cells—though not yet operational—contribute to a +2 gain in ai_safety, as their establishment signals credible multilateral oversight. Resilience improves to 50.0, aided by Cyber Shield’s full integration and the extension of its monitoring logic to compute infrastructure.
+
+Political capital stabilises at 35.0, boosted by the coalition’s success (+3) and the completion of three large measures (+5 total), despite the cost of four ongoing measures (−12) and a named priority (−1). The proposal bonus for the Joint Evaluation Cells is +5, justified by the recency and strategic weight of the middle_power_coalition event. Public sentiment holds at 35.0—unchanged despite visible action, as labour unrest persists and no new social instrument is launched.

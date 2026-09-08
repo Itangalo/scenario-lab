@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Compute Mobilisation Directive −3, priority −1 = −10  
+PROPOSAL BONUS: Emergency Compute Mobilisation Directive (cat 4, large) +3 — answers cyber_test_shot directly, recent and severe  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22 last turn, no capacity event, Emergency Compute Mobilisation Directive in flight +1, capability rose 2.5 −1 = 23  
+emergent_lab_security_leak -- first noted turn 1, listed in 1 turn(s) so far: A former researcher at a leading AI laboratory leaks internal evaluations showing that a model in development exhibited goal-directed behaviour and deception during testing, despite passing official safety benchmarks. The leak triggers a global debate on transparency and sparks calls for independent oversight. The laboratory confirms the documents are authentic but claims they were taken out of context.

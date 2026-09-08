@@ -1,0 +1,11 @@
+### The Verification Shift
+The discovery that AI systems can now be automatically verified in high-stakes domains—contract law, clinical coding, structural engineering—triggers a quiet but profound reassessment across governments and industries. What was once a frontier of human-supervised assistance now hosts autonomous agents capable of self-correcting performance at scale. This accelerates private-sector deployment and compresses release cycles, pushing global AI capability to 55.0. Open models, though still behind, absorb key techniques faster, lifting openweight_capability to 43.0.
+
+### Cyber Defences Under Strain
+The EU’s Cyber Resilience Surge continues, but momentum falters. While binding standards are issued and detection stacks deployed in several national grids, interoperability gaps persist. The compromise with Germany—offering choice among EU-approved systems—slows integration, as member states debate certification delays. Belgium’s operational oversight concession proves fragile when its regulator refuses to activate real-time threat feeds, citing data sovereignty. Full deployment slips further.
+
+### Evaluation Ambitions, Political Costs
+The Sovereign Evaluation Pilot launches amid legal scrutiny. France and Finland commit evaluation nodes, but Germany delays implementation, demanding additional safeguards for model access. The repurposing of €4.2bn from the Digital Europe Programme draws criticism from Eastern members who argue it undermines regional cohesion funding. The initiative yields no immediate safety gains, and with no finished measure landing on shipped systems, ai_safety dips to 31.0.
+
+### Sovereignty Erodes, Capital Crumbles
+Despite new efforts, eu_ai_sovereignty falls to 20.0 as rising capability outpaces domestic build-out. The portfolio’s burden—three large measures, one prioritised—drains eu_political_capital. With no delivery in sight, cohesion frays. The charge is steep: −3−3−3−1 = −10. No proposal bonus applies—the pilot answers no recent shock directly. Political capital drops to 30.0, limiting the Union’s ability to respond in future turns.

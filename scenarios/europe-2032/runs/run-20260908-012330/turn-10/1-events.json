@@ -1,0 +1,59 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.28,
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "cyber_defence_breakthrough",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.13,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.10333333333333333,
+    "probability_samples": [
+      0.13,
+      0.0,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_cyber_alliance_resistance",
+    "probability": 0.26666666666666666,
+    "emergent": true,
+    "description": "Several EU member states, citing national sovereignty and procurement autonomy, refuse to join a proposed joint cyber defence pact led by Germany and the Netherlands, undermining the effectiveness of real-time telemetry sharing and coordinated red-teaming. The resistance crystallizes around Italy and Greece, who demand veto rights over shared threat responses, exposing structural limits in EU-wide security integration despite the recent cyberattacks.",
+    "probability_samples": [
+      0.3,
+      0.2,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

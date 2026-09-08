@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 45.0 to 52.0 (+7.0), but `ai_capability` only increased from 56.5 to 58.0 (+1.5). This violates the rule that `openweight_capability` may never exceed `ai_capability`. At no point can openweight capability surpass the frontier ai_capability, and here it comes within 6 points of doing so without a corresponding rise in ai_capability. The narrative does not justify this leap, nor is such a jump consistent with the historical relationship between the two metrics.\n- Invariant 9 violated: `eu_political_capital` decreased from 29.0 to 22.0 (−7.0) while `eu_ai_sovereignty` increased from 18.0 to 21.0 (+3.0). Given that sovereignty’s contribution to political capital is capped at +3 per turn (Modelling choice 7), and political capital fell overall, this implies other terms drove a ≥10-point drop. However, the narrative does not identify any corresponding loss driver of sufficient magnitude (e.g., no major failure, no international backlash detailed beyond public sentiment dip), and a 7-point swing in political capital without clear justification risks violating the spirit of bounded, explainable movement—especially when paired with a sovereignty gain. While not a direct numeric cap breach (the 25-point rule is not broken), the uncoupling lacks grounding in the narrative and risks implying an illegitimate feedback loop that contradicts the constitutional separation of the two stocks.\n- Modelling choice 8 violated: The narrative states \"Control the Compute Pipeline\" is \"in flight\" and contributes +3 to sovereignty, but the notepad shows a −1 priority penalty and no indication that the measure is active or completing this turn. The sovereignty calculation assumes the measure delivers +3, but the portfolio charge shows it is still ongoing with no completion signal. This telegraphs progress not yet realized, violating the prohibition on implying event gates are open or that outcomes are secured before their time."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

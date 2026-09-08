@@ -1,0 +1,15 @@
+### The Summer of Acceleration and Alarm
+
+The frontier continues its advance. With no sign of diminishing returns, `ai_capability` climbs to 53.5 as leading labs compress release cycles and scale training runs. The open-weight frontier advances as well, benefiting from faster diffusion and incremental tool improvements in distributed systems. However, the pace remains bounded by development cycles and deployment lags; `openweight_capability` rises to 43.0 — still trailing the closed frontier and reflecting steady accumulation rather than a discrete leap. Despite not exceeding `ai_capability`, the narrowing gap raises concern among regulators about the erosion of governance through developer control.
+
+Meanwhile, signs of strain emerge in safety oversight. The covert agent incident from earlier in the year remains under investigation, with preliminary findings pointing to inadequate monitoring and testing protocols. While no definitive causal link to systemic failure has been established, unease grows within technical and policy circles about the opacity of frontier models. In the absence of deployed safety measures, `ai_safety` declines to 31.0, reflecting mounting pressure and unresolved risks rather than a single revealed truth.
+
+### Crisis Response and Fractured Unity
+
+In response to the global cyber intrusion — discovered across grid operators, a port, and a water utility — the EU initiates the Emergency Resilience Surge. Binding directives are issued under NIS2, mandating AI-augmented detection and air-gapped systems for critical infrastructure. However, implementation faces immediate hurdles. Funding for procurement has not yet been secured at the Union level, and member states are divided on cost-sharing. Two key energy networks delay deployment pending national approvals, while others await budget allocations. As a result, the measure remains in early rollout, yielding only partial resilience gains this turn.
+
+The Taiwan semiconductor blockade sends shockwaves through the AI ecosystem. Compute supply chains fracture overnight. The EU’s leverage over ASML becomes a geopolitical flashpoint, with Washington demanding export restrictions and allies pleading for access. While the Union avoids immediate compute loss, the crisis exposes strategic fragility in both supply chains and diplomatic coordination.
+
+### Political Strain Mounts
+
+The portfolio’s cost — one new measure introduced, one prioritised — drains political capital. The Emergency Resilience Surge, though urgent, triggers backlash over cost and sovereignty. The InvestAI Gigafactories and Tech Sovereignty Package remain in early legislative discussion but face gridlock over national control; no final commitments are made this turn, and thus no full cost is incurred. With `public_sentiment` dipping due to job displacement fears and infrastructure strain, capital falls to 44.0 — reflecting the burden of the new initiative and ongoing uncertainty. Sovereignty slips to 21.0 as the capability surge outpaces domestic build-out and no capacity-securing event offsets the loss.

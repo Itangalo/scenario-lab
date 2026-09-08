@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Reinforce Critical Resilience Backbone −3, Secure ASML’s Technological Autonomy −3, priority −1 = −13  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21 last turn, no capacity event, no category 4 completion, capability rose 1.5 (no −1) = 21  
+emergent_labour_displacement_wave -- first noted turn 1, listed in 3 turn(s) so far: Mid-level professional roles in legal, accounting and technical writing sectors across several EU countries show coordinated workforce reductions tied explicitly to AI adoption, with firms citing internal productivity studies. The pattern is broad enough to register in aggregate labour statistics by year-end, triggering early debate about structural transition support.  
+emergent_asml_board_resistance -- first noted turn 1, listed in 3 turn(s) so far: Senior executives at ASML, under sustained U.S. pressure to expand export restrictions, begin quietly coordinating with Dutch and EU officials to resist further unilateral concessions, citing existential risk to the company's global standing and long-term European technological autonomy. Leaks suggest internal divisions over compliance strategy.

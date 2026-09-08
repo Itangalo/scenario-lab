@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Worker Transition Acceleration Fund −3, Cyber Shield −3, priority −1 = −13  
+PROPOSAL BONUS: Cyber Shield Emergency Activation (cat 6, large) +4 — cyber_major_incident landed this turn and this is a direct, large-scale response  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21.0 last turn, no capacity event, InvestAI Gigafactories in flight +1, capability rose 1.0 −1 = 20.0  
+emergent_asml_shadow_network -- first noted turn 4, listed in 1 turn(s) so far: ASML, under sustained pressure from U.S. export controls and EU industrial policy, accelerates a covert initiative to reconfigure older DUV lithography systems for resale to third countries via a Luxembourg-based subsidiary, using minimal non-U.S. components to stay outside Washington’s jurisdiction. The move is discovered by a Dutch investigative outlet, triggering a diplomatic crisis and raising questions about the EU’s ability to control its own supply chain actors.

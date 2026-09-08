@@ -1,0 +1,29 @@
+No statement changes.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — finished  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — finished  
+``EU AI Evaluation Office – Pre-Release Assessment Regime (category 1, costs 3 per turn, started turn 3, finishes on turn 5): Establish an independent EU body with legal authority to conduct and verify pre-release evaluations of frontier models developed or deployed in the Union`` — finished  
+``ASML Supply Chain Shield – Export Control and Maintenance Sovereignty (category 4, costs 3 per turn, started turn 4, finishes on turn 6): Establish a unified EU mechanism to assert control over the servicing and re-export of legacy and mid-tier semiconductor manufacturing equipment, beginning with ASML systems, to prevent third-party coercion and ensure continued access to critical tools`` — finished  
+``Labour Transition Acceleration Fund (category 7, costs 3 per turn, started turn 5, finishes on turn 6): Launch a time-bound, conditionally funded programme to scale retraining, wage insurance, and employer co-investment in displaced mid-skill cognitive workers across member states, with priority to regions showing early signs of structural disruption`` — finished  
+``Sovereign AI Development Initiative (category 4, costs 3 per turn, started turn 6, finishes on turn 8): Launch a binding directive requiring that all frontier AI development and high-impact deployment within the EU be subject to sovereign oversight, including secure model training environments, state-accessible checkpoints, and deployment logging under EU jurisdiction`` — finished  
+``Emergency Resilience Surge for Critical Infrastructure (category 6, costs 3 per turn, started turn 7, finishes on turn 9): Accelerate cyber hardening and failover capacity in energy, healthcare, and transport systems to withstand AI-enabled attacks now demonstrably within openweight reach``  
+``Runtime Interpretability Verification Framework (category 5, costs 3 per turn, started turn 9, finishes on turn 11): Establish a mandatory, EU-wide verification process requiring all training stacks above 55.0 capability to demonstrate continuous, real-time interpretability of agent reasoning under adversarial audit conditions``
+
+## New measure
+**Sovereign Telemetry Enforcement Directive**  
+Mandate that all AI training stacks operating above 55.0 capability on EU soil or serving EU markets must run telemetry systems cryptographically sealed against manipulation, with real-time access granted to the EU AI Evaluation Office and sovereign nodes, and subject to unannounced adversarial audits.
+
+`Category: 5 (Public technical capacity and research)`  
+`Size: large`  
+`Finishes on turn: 12`  
+`Targeted effect:` ai_safety +15 by closing the gap between claimed and actual monitoring integrity; eu_ai_sovereignty +5 by establishing EU-controlled verification of runtime integrity; resilience +5 by ensuring critical infrastructure operators can trust upstream model provenance  
+`Applies to:` All entities conducting AI training above 55.0 capability that are based in the EU, use EU compute infrastructure, or seek to deploy in the EU market
+
+## Priority
+**Emergency Resilience Surge for Critical Infrastructure** — because with openweight capability nearing 56.0 and self-validating clinical and legal agents already in deployment, the window to prevent cascading failures in healthcare and energy systems is closing fast, and political capital is too low to risk spreading focus — resilience is the only floor we have left.
+
+## In practice
+We are executing the Emergency Resilience Surge through the Digital Europe Programme, releasing the final €9bn tranche to national CERTs and critical operators under strict conditionality: Italy, Poland, and Spain must complete cross-border failover drills by June, or lose access to EU-wide threat intelligence sharing. The European Defence Agency has embedded AI security advisors in 14 national infrastructure agencies, focusing on medical diagnostics platforms and automated grid controls — systems where verification widening has created new exploit pathways. These are not compliance exercises: each drill simulates coordinated AI-driven attacks that manipulate clinical coding or falsify energy load forecasts, and we are measuring success by containment time, not checklist completion.
+
+Simultaneously, we are enforcing the Runtime Interpretability Verification Framework through a new legal instrument: the Sovereign Telemetry Enforcement Directive. CERN’s AI Safety Lab has delivered a reference implementation of tamper-proof telemetry, which we are now mandating as the only acceptable standard for sovereign nodes. Fraunhofer is conducting red-team stress tests against known evasion patterns from leaked lab logs, and we are requiring all hyperscalers — including non-EU firms like Anthropic and Meta — to submit to live, unannounced audits during training if they wish to deploy in the EU. We are offering French and German providers preferential access to EU compute grids and extended liability shields — but only if they integrate the telemetry stack and allow real-time EU access. No more paper compliance. If they refuse, we will invoke Article 17 of the Digital Markets Act to block market access. This is not optional. The decentralised defensive alliance may coordinate outside us, but they still depend on our market. We will make that dependence mutual.

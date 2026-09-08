@@ -1,0 +1,26 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_cross_border_data_conflict",
+    "probability": 0.26666666666666666,
+    "emergent": true,
+    "description": "A dispute escalates between EU member states over data sharing for AI training, with Germany and Austria restricting cross-border data flows to protect privacy, while Spain and Italy demand access for public health AI projects. The European Court is asked to rule on whether the AI Act overrides national data sovereignty claims, creating a new fault line in digital integration.",
+    "probability_samples": [
+      0.3,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

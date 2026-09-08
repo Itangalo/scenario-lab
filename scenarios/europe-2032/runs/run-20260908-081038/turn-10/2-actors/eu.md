@@ -1,0 +1,16 @@
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — finished this turn
+- `Accelerate Anchor Demand for Sovereign Compute (category 4, costs 2 per turn, started turn 6, finishes on turn 7): Mandates binding procurement commitments from EU institutions and member states in defence, energy, health, and critical infrastructure by Q4 2029, verified by JRC and enforced through cohesion and Digital Europe funding conditionality`
+- `Secure Critical AI Infrastructure Against Sabotage and Non-Compliance (category 4, costs 3 per turn, started turn 8, finishes on turn 10): Establishes EU-level authority to fast-track grid access, override national permitting delays, and deploy Civil Protection Mechanism resources to protect and complete sovereign AI infrastructure, with penalties for obstruction` — finishes this turn
+
+## New measure
+None this turn.  
+I am waiting for the Q1 2031 JRC review on idle compute and energy shortfalls to determine whether full public operational control is feasible or whether a distributed fallback must be designed under emergency constraints.
+
+## Priority
+**Secure Critical AI Infrastructure Against Sabotage and Non-Compliance** — because physical and political obstruction in Poland, Hungary, and parts of Southern Europe remains the decisive barrier to sovereignty, and without energized, secured compute, no safety or resilience measure can land — making this the last turn in which failure to enforce is still survivable.
+
+## In practice
+This turn, the Commission is enforcing Article 122 TFEU as a de facto constitutional test for technological survival. Legally, we are contesting Poland and Hungary’s challenges in the CJEU, invoking the primacy of Union law in matters of existential risk, with Advocate General hearings scheduled for April. Physically, Frontex and EUCAP units are now embedded with Romanian and French energy forces to patrol Cluj and Lille nodes, while DG ENER issues binding directives to ENTSO-E to reserve 60% of new transmission capacity for sovereign AI loads, backed by EIB liquidity guarantees. The sabotage in Cluj has been met with forensic investigation and a public attribution package, shared with member states under EUROPOL’s new AI Infrastructure Threat Unit.
+
+Financially, the Digital Sovereignty Board is activating enforcement levers: cohesion funds for Poland are frozen pending CJEU ruling, and Italy’s partial procurement commitment is met with a conditional offer of joint wildfire response capacity, tied directly to full compliance by Q1 2031. France and Germany have been asked to second national technical directors to a nascent EU Compute Authority, which will assume oversight of the Gigafactories if member states fail to meet binding demand thresholds. The message is clear: if member states will not act as one, the Union will act for them — and the emergency powers invoked this turn are not temporary, but the new baseline for survival. The JRC is compiling data on idle compute and energy gaps to inform a binding decision on public operational control by July.

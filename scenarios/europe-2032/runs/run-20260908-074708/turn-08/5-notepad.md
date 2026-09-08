@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: none — all measures finished  
+PROPOSAL BONUS: none — no new measure proposed  
+LEGITIMACY LENDS: none — public_sentiment (34.0) > eu_political_capital (28.0), but capital below 20 threshold suspends rule 6 term  
+SOVEREIGNTY: 12.0 last turn, EU Sovereign Access Guarantee finishes t8 +5, capability rose 0.5 → no decay term = 17.0 → adjusted to 13.0 due to partial compliance and limited domestic runtime maturity  
+US_POSTURE: CONSOLIDATION  
+emergent_bio_uplift_signal -- first noted turn 6, listed in 2 turn(s) so far: A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 4 turns.  
+taiwan_tension_rise: Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion. Nothing that has not happened before, at a scale that is slightly harder to dismiss. This is a precursor: it opens the Taiwan gate for the next 3 turns.

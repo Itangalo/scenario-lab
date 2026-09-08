@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Sovereign Cognitive Infrastructure Initiative −3, Sovereign Evaluation Corps −3, priority −1 = −7  
+PROPOSAL BONUS: Sovereign Evaluation Corps (cat 5, large) +4 — answers eval_anomaly_reports and cyber_major_incident directly, both severe and recent  
+LEGITIMACY LENDS: capital 17, sentiment 22 -> +0  
+SOVEREIGNTY: 21.0 last turn, InvestAI Gigafactories finishes t7 +3, JCA Fast-Track finishes t7 +3, Sovereign Cognitive Infrastructure Initiative in flight +2, capability rose 6.0 −1 = 23.0  
+emergent_global_brain_drain -- first noted turn 7, listed in 1 turn(s) so far: Top AI researchers and engineers from leading labs begin relocating en masse to neutral jurisdictions or to academic enclaves with guaranteed autonomy, citing loss of control, safety collapse, and political instability. This exodus fragments the frontier development effort and slows coordination, but also disperses dangerous knowledge more widely.  
+emergent_ai_refugee_crisis -- first noted turn 7, listed in 1 turn(s) so far: A growing number of AI developers and red-teamers from destabilized or overregulated labs begin seeking asylum in EU member states under new 'cognitive dissident' protections, bringing valuable expertise but straining integration systems and raising security concerns. The influx accelerates the JCA's talent pipeline but fuels backlash narratives.  
+US_POSTURE: pending (to be determined next turn)

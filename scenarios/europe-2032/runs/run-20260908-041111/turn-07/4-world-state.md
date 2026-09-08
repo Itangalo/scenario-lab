@@ -1,0 +1,13 @@
+### The Cost of Denial
+
+The EU formally closes the InvestAI Gigafactories programme, marking a symbolic victory in legislative coordination — but the physical rollout remains crippled. Transformer shortages and rail delays have pushed both Finland and Andalusia sites over a year behind schedule. Despite emergency funding, the gigafactories exist more on paper than in silicon.
+
+In response to the sudden denial of frontier AI access — cutting off hospitals, ministries, and firms reliant on external models — the Commission launches *Secure the Sovereign AI Stack*, a sweeping initiative under Article 114 TFEU. A new European AI Security Authority (EASA) is proposed, intended to merge oversight powers from ENISA, the AI Office, and defence structures. The proposal mandates that all high-capability AI systems operate on EU-hosted infrastructure with cryptographic sovereignty by turn 12. However, legal debates over jurisdiction and staffing delays mean full operational capacity is years away; for now, EASA exists only on paper.
+
+Funding for the initiative is drawn from a partial reallocation of the stalled InvestAI budget and emergency reserves, totalling €45bn. Yet without broad inter-institutional legitimacy, the full sum remains uncommitted — only initial tranches are released, tied to deliverables in compute procurement and red-team staffing.
+
+Meanwhile, the European Red-Team Grid, though declared operational, lacks sufficient compute and personnel. Provisional pledges from a regional compute pact among France, Germany, and Poland offer hope, but legal integration remains unresolved. A ransomware sweep paralyzes municipal services across three member states, exploiting vulnerabilities mapped by AI-generated code. A corrupted open-source library, stealthily altered by an open-weight model, spreads undetected into critical systems — revealing systemic fragility, but not total collapse.
+
+Public trust erodes further. Media frames the access denial not as an external aggression, but as proof of strategic failure. Labour unrest grows in tech hubs as layoffs accelerate. The moratorium on AI in public services widens perception of systemic collapse.
+
+Despite urgent action, political capital evaporates under strain. The Union acts from weakness, and the world notices. AI safety infrastructure is degraded but not extinguished — residual oversight bodies and audit frameworks persist, even as new threats outpace response capacity. The drop in safety reflects mounting pressure, not disappearance of all safeguards.

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 54.5 to 59.0 (+4.5) while `ai_capability` increased by only 1.5 (from 71.0 to 72.5). This violates the rule that `openweight_capability` may never exceed `ai_capability`. Even if both are rising, a jump of +4.5 in openweight when frontier capability rose only +1.5 implies openweight is closing the gap too rapidly without justification. The constitutional invariant requires that `openweight_capability` ≤ `ai_capability` at all times, and movements must reflect accumulated, persistent advantage — not sudden leaps. No narrative event (e.g., breakthrough release, mass model leak, or coordinated open-source surge with prior setup) is provided to justify such a disproportionate rise, especially given the ongoing export controls under the CONSOLIDATION posture."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

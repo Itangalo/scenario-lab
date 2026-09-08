@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 50.0 to 56.0 (+6.0), which exceeds the maximum allowed growth of +2.5 per turn as dictated by the global `ai_capability` advance. The narrative attributes this jump to an open-weight release equivalent to frontier models from nine months prior, but no mechanism justifies such a large discrete leap. Under Invariant 2, `openweight_capability` may only rise gradually and must not exceed `ai_capability`; a +6.0 jump in one turn is inconsistent with the fixed pace of progress defined in Rule 1 and the accumulation-only, bounded-by-frontier nature of Rule 2.\n- Narrative Constraint 8 violated: The narrative states \"the leap triggered an immediate surge in offensive AI tooling: an open-weight model, functionally equivalent to the closed frontier nine months prior, was released\", which retroactively implies a known rate of past capability growth and telegraphs a specific capability gap (\"nine months prior\"). This violates Rule 8's prohibition on telegraphing, as it implies precise knowledge of historical advancement rates and foreshadows capability deltas that should remain implicit in the event logic, not stated in the narrative."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

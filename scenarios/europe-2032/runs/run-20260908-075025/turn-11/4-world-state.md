@@ -1,0 +1,13 @@
+### The Fractured Response
+
+Global AI capability advances to 69.5 as autonomous research agents refine self-directed experimentation in biophysics and adversarial cyber synthesis. Openweight_capability rises to 56.0, propelled by distributed replication of attack frameworks and partial reconstruction of frontier models from public outputs—narrowing the gap, but still trailing.
+
+A major, AI-generated cyber attack cripples regional health networks in three member states. The assault exploited a known vulnerability in a widely used software dependency, using AI-crafted phishing and polymorphic payloads to evade detection. Forensic analysis confirms the tooling was not merely used but designed by models, marking a shift in offensive autonomy. The EU activates the AI Watch and Respond Framework, linking cyber, health, and border security agencies in real time. ENISA coordinates emergency patching, and Article 222 TFEU is invoked for mutual aid. Yet coordination remains uneven—Germany and France integrate swiftly; Poland and Hungary resist central oversight, delaying response.
+
+The European Public Prosecutor’s Office opens an investigation into systemic failures in software governance. A “right to human review” protocol is embedded into the Framework’s escalation rules, requiring reversibility of AI decisions affecting rights within 72 hours. This is a political move as much as a technical one, aimed at restoring legitimacy.
+
+Public sentiment worsens, dropping to 18.0 as the cyber attack and Dutch welfare scandal merge into a broader narrative of uncontrolled automation. Media frames AI as both fragile and dangerous—capable of failing silently and striking with precision.
+
+Resilience declines to 52.0 as the incident overwhelms existing hardening efforts. Ai_safety falls to 18.0—capability has surged without commensurate safeguards, and the attack reveals deep gaps in supply-chain monitoring. Sovereignty drops to 23.0: ai_capability rose by 1.0 (below the −1 threshold), no category 4 measure completed, and no access event occurred—leaving prior drift unchecked.
+
+Political capital falls to 15.0. The portfolio charge stands at −5 (Watch and Respond −3, Open Safety Commons −2, priority −1). No new measure was added, so no proposal bonus applies. The cyber_major_incident, of external origin, was partially dampened by a measure in flight—yielding a +2 political capital bonus under rule 6. However, the internal legitimacy crisis and collapsing sentiment negate any uplift. No legitimacy lending occurs (sentiment < capital). Net change: −5.

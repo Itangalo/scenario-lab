@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Talent Shield Initiative −3, Critical Infrastructure Cyber Resilience Directive −3, priority −1 = −13  
+PROPOSAL BONUS: Critical Infrastructure Cyber Resilience Directive (cat 6, large) +2 — addresses systemic vulnerability highlighted by cyber_test_shot and reinforced by emergent_lab_fracture, though not a direct response to either as safety failures originated internally  
+LEGITIMACY LENDS: capital 43, sentiment 44 -> none  
+SOVEREIGNTY: 23 last turn, Gigafactories in flight +1, capability rose 1.5 −1, no capacity event = 22

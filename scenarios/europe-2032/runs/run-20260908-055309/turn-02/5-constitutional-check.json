@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 42.0 to 47.0 (+5.0), which is acceptable in magnitude, but the narrative provides no justification for such a large jump given the stalled Sovereign Evaluation Regime and lack of new access measures. The diffusion of Kimi K3 tools does not constitute a plausible mechanism for a 5-point rise in openweight capability unless those tools significantly expand model transparency or availability — claims not supported in the narrative. Given that `openweight_capability` must not exceed `ai_capability` and is meant to accumulate only through deliberate policy or disclosure, this increase lacks a credible basis.\n- Modelling choice 5 violated: The EU has four large measures in flight (InvestAI Gigafactories, Tech Sovereignty Package, Sovereign Evaluation Regime, Emergency Resilience Surge) and has named a new priority, resulting in a portfolio charge of −13. However, the modelling constraint limits the EU to at most one new measure per turn and at most one named priority. While introducing the Emergency Resilience Surge as a new measure in this turn is permissible, naming it as *the* priority is allowed — but the notepad implies all four are still active with equal weight and no deprioritization, while also assigning a separate −1 for \"priority\". This suggests either multiple priorities or unclear prioritization, violating the \"at most one named priority\" rule.\n- Invariant 9 violated: `openweight_capability` rose by 5.0 points in one turn. While the 25-point cap is not breached, a 5.0-point jump in `openweight_capability` is at the upper edge of plausibility without extraordinary justification. Given its nature as an accumulated, non-reversible metric tied to structural access and diffusion, growth of more than +3 per turn requires explicit, high-impact events (e.g., mass release of frontier model weights). The narrative cites diffusion of academic tools, not model weights or training data, making this movement inconsistent with the metric’s intended meaning and rate of change."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

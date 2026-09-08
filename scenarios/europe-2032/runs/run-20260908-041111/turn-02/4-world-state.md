@@ -1,0 +1,18 @@
+### Accelerating Capability, Widening Gaps  
+AI capability advances to 57.0 as leading labs deploy larger models and refine training pipelines. The open-weight frontier rises to 46.5, reflecting broader diffusion of recent frontier releases and increased decentralised fine-tuning. A notable model leak contributes to this growth, but open-weight capability remains safely below the frontier. Offensive cyber tools become more accessible, lowering the barrier for disruptive attacks.
+
+### A Major Breach Exposes Weakness  
+A large-scale, AI-orchestrated cyberattack infiltrates public health and energy systems across three member states. Legacy defences failed to detect novel, model-generated exploits in common software stacks. The breach persists for weeks, eroding trust and confirming fears that defensive readiness lags behind offensive capability. Initial attribution is inconclusive, but forensic analysis suggests non-state actors used open-weight models to design the intrusion.
+
+### EU Responds with Enforcement Push  
+In reaction, the EU accelerates the Emergency Resilience Surge, shifting from planning to enforcement. Binding cyber hygiene standards are fast-tracked via Article 122 TFEU, mandating AI-driven anomaly detection and quarterly red-teaming for critical operators. ENISA expands its mandate to conduct unannounced cross-border probes, and a joint procurement framework begins development to pool demand for detection tools. However, resistance from several member states delays full rollout, particularly in regions citing fiscal strain and legal incompatibility.
+
+Simultaneously, work begins on the Cyber Shield Activation measure, formalising a pan-European early-warning network for AI-driven threats. Though proposed this turn, implementation is partial: integration with national CERTs moves slowly, and technical specifications remain under negotiation. The measure is not retracted; it proceeds as a new initiative, contributing to the portfolio charge and earning the +4 proposal bonus for addressing the cyber_test_shot event.
+
+### Resilience Gains, Safety Erodes  
+Resilience rises to 44.0 as pilot systems deploy and coordination improves. Yet ai_safety drops to 26.0, penalised by the capability jump and lack of shipped safeguards. The presence of two active large measures — Emergency Resilience Surge and Cyber Shield Activation — reflects an expanding response, not a consolidated one.
+
+### Political Capital Strained, Sovereignty Erodes  
+With four large measures now active — including the newly launched Cyber Shield Activation — political capital declines to 37.0, reflecting growing strain. The portfolio charge of −13 (−3 each for InvestAI Gigafactories, Tech sovereignty package, Emergency Resilience Surge, and Cyber Shield Activation, plus −1 for priority) is partially offset by a +4 proposal bonus for Cyber Shield Activation (cat 6, large), resulting in a net −9 burden. Public sentiment drops to 35.0 amid job disruption fears and the high-profile breach. The talent drain and labour displacement trends deepen, amplifying scepticism.
+
+EU AI sovereignty falls to 20.0, consistent with the decay mechanic: no capacity event occurred, and the 2.5-point rise in ai_capability triggers a −1 decay adjustment from the previous 21.0. This decline reflects lagging domestic control over strategic AI infrastructure amid accelerating external capability growth.

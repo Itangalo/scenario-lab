@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: European Interpretability Consortium −3 (ends), Emergency Frontier Access Accord −3, priority −1 = −7  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 9.0 last turn, no capacity event secured, supply_chain_coercion t8 −2, capability rose 4.0 −1 = 6.0  
+US_POSTURE: RETRENCHMENT  
+emergent_global_brain_drain -- first noted turn 8, listed in 2 turn(s) so far: Top AI researchers and engineers across Europe begin relocating en masse to jurisdictions with sovereign frontier access and political stability, accelerating a brain drain that undermines both the European Interpretability Consortium and future capacity-building efforts. The exodus is driven by lack of access to frontier models, collapsing political capital, and worsening public hostility toward AI work.  
+emergent_sovereignty_crisis_response -- first noted turn 8, listed in 2 turn(s) so far: A coalition of mid-sized EU member states, frustrated by the Union's paralysis, begins informal coordination with Norway, Switzerland, and South Korea to jointly commission and secure access to a shared sovereign AI training run hosted outside US cloud infrastructure. The initiative bypasses EU mechanisms but cites the Union's own failed priorities as justification, creating a de facto alternative governance track.

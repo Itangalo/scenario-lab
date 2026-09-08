@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_regional_data_sovereignty_pact",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "In response to repeated access denials and stalled EU-level sovereignty initiatives, a coalition of Nordic and Benelux states forms an ad hoc data and compute-sharing pact, pooling sovereign cloud resources and establishing joint governance for AI workloads in critical sectors. The pact operates outside formal EU structures but aligns with GDPR and AI Act principles, creating a de facto northern European AI enclave.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

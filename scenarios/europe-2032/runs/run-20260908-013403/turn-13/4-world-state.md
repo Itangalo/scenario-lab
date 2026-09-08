@@ -1,0 +1,15 @@
+### Sovereignty Slips, Safety Stalls
+
+Despite rising AI capability, the EU’s position grows more precarious. The open-weight frontier advances—now reaching 60.0—narrowing the gap with closed models as replication timelines shorten. This growth is consistent with ongoing diffusion trends rather than a discrete breakthrough; no catastrophic leak or transformative open release occurs. With `ai_capability` rising by 1.5, the openweight gain of +1.5 preserves realistic alignment and maintains the invariant that `openweight_capability` does not outpace frontier capability without extraordinary justification. No safety upgrade accompanies this progress, and with no systemic improvements in monitoring or control, ai_safety remains stagnant at 14.0.
+
+The Emergency Sovereignty Procurement Pact, now the named priority, fails to gain traction. Singapore’s developer demands sweeping antitrust immunity, and EU legal services resist, fearing precedent. Talks stall, and no binding access is secured—leaving the Union without sovereign frontier systems. With ai_capability rising by 1.5 and no new compute secured, eu_ai_sovereignty declines by 2.0, now at 6.0.
+
+Meanwhile, enforcement of the Mandatory Safety-Through-Fallback regime intensifies. ENISA audit teams deploy to high-risk biotech sites, and Horizon Europe funding is conditionally frozen. Yet resistance hardens: France’s Council resolution signals growing dissent, and the Max Planck Society’s public warning fuels academic backlash. No measurable safety gain lands, as audits remain early-stage and fallbacks unverified at scale.
+
+The new measure—Emergency Fallback Enforcement and Compliance Acceleration—is formally adopted. However, implementation has only just begun: staffing is incomplete, interagency coordination remains unresolved, and legal challenges delay rollout. As such, while the political cost of launching the measure begins, it does not yet impose its full burden. The portfolio charge reflects only partial activation: Mandatory Safety-Through-Fallback (−3), Emergency Sovereignty Procurement Pact (−3), and the emerging cost of the new measure, now recognized but not fully operational, assessed at −1 for initial setup. The priority penalty applies (−1). Total charge: −8. The middle_power_coalition event provides a +3 boost, but no proposal bonus applies—the new measure reinforces existing policy, not a recent external shock. With eu_political_capital at 9.0 and public_sentiment at 13.0, no sentiment-driven gain activates. After charges, capital drops to 5.0.
+
+Public sentiment remains frozen at 13.0—resentment over research restrictions balances narrow approval for continuity in critical services.
+
+### A Fragile Front
+
+The middle-power coalition achieves quiet progress on export alignment, offering faint leverage. But without enforceable access, the EU’s AI posture remains reactive, not sovereign.

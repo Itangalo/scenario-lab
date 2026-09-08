@@ -1,0 +1,54 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.07333333333333335,
+    "probability_samples": [
+      0.04,
+      0.04,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "description": "Leaks from within ASML’s board reveal a formal proposal to resist U.S.-pressured export restrictions by conditioning servicing and upgrades on EU-level approval. This marks a shift from private concern to active institutional resistance, potentially forcing the Dutch government to choose between American pressure and European industrial autonomy.",
+    "emergent": true,
+    "id": "emergent_asml_board_resistance",
+    "probability": 0.26666666666666666,
+    "probability_samples": [
+      0.3,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "The emergent coalition of European AI research labs and universities, now backed by additional compute from Germany and France, shows early benchmarking results suggesting pooled models could soon match closed systems. This initiative is becoming a focal point for EU AI sovereignty beyond state-led efforts.",
+    "emergent": true,
+    "id": "emergent_lab_cooperation",
+    "probability": 0.19999999999999998,
+    "probability_samples": [
+      0.0,
+      0.3,
+      0.3
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "election_consolidation",
+    "probability": 0.35333333333333333
+  }
+]

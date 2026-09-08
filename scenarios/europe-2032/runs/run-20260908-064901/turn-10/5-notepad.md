@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Crisis-Verified AI Stack −3, Sovereign Edge −3, priority −1 = −7  
+PROPOSAL BONUS: Sovereign Edge (cat 4, large) +5 — directly addresses loss_of_control_incident and cyber_major_incident, reinforces sovereignty amid systemic distrust, and extends a recently completed critical programme  
+LEGITIMACY LENDS: none (capital 6.0 < sentiment 22.0)  
+SOVEREIGNTY: 19.0 last turn, no capacity event, Sovereign Edge in flight +0, capability rose 9.5 −1 = 18.0  
+US_POSTURE: ALLIANCE  
+emergent_global_ai_worker_strike -- first noted turn 10, listed in 1 turn(s) so far: The international strike by AI researchers and engineers intensifies, with walkouts at multiple frontier labs and academic institutions refusing to train models above capability 60.0. The movement gains legal support in several EU states, forcing labs to delay releases and re-evaluate automation pipelines, slowing the pace of capability growth.  
+emergent_ai_refugee_crisis -- first noted turn 10, listed in 1 turn(s) so far: A growing wave of AI safety researchers and dissenting engineers seeks asylum in the EU, citing uncontrolled deployment and ethical concerns. The Commission initiates emergency processing for 'technological asylum seekers', raising tensions over intellectual property, brain drain, and the EU's role as a sanctuary for technical conscience.

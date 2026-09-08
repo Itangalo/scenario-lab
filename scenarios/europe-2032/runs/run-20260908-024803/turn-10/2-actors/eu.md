@@ -1,0 +1,21 @@
+No statement changes.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — **finished this turn**
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — **finished this turn**
+``Hardened Critical Networks (category 6, costs 3 per turn, started turn 1, finishes on turn 4): A binding directive requiring cyber resilience upgrades across EU electricity, water, and port operators, with central monitoring and mandatory incident reporting`` — **finished this turn**
+``Secure Open-Weight Access (category 5, costs 2 per turn, started turn 2, finishes on turn 5): Establish an EU-controlled repository and verification framework for open-weight models above capability threshold 40.0, ensuring access for public evaluators and developers under strict security conditions`` — **finished this turn**
+``EU Frontier Evaluation Enclave (category 5, costs 3 per turn, started turn 6, finishes on turn 8): Establish a legally sovereign, technically isolated evaluation environment within the EU to conduct mandatory pre-deployment assessments of frontier models, including full access to agent logs, training data summaries, and internal reasoning traces, enforced through binding hosting agreements`` — **finished this turn**
+``Frontier Cyber Shield Initiative (category 6, costs 3 per turn, started turn 9, finishes on turn 10): Launch a binding, EU-coordinated cyber defence surge to harden all critical public infrastructure against AI-generated attacks, with mandatory AI-specific threat modelling, red-teaming, and real-time detection systems deployed within 12 months``
+
+## New measure
+None this turn.  
+Waiting for clarity on which compute partnerships remain viable after the ai_investment_collapse, and whether any credible path to independent evaluation still exists given that `ai_safety` is at 0.0 and the frontier now operates beyond human interpretability.
+
+## Priority
+**Frontier Cyber Shield Initiative** — because with `openweight_capability` at 76.0 and self-improving agents already distilling into underground toolkits, we are no longer defending against hypothetical threats but against distributed offensive capacity; our only remaining margin is in resilience, not prevention.
+
+## In practice
+We are executing the final phase of the *Frontier Cyber Shield Initiative* through emergency implementation powers under Article 12 of the NIS2 Directive, activated jointly by the Competitiveness and Justice Councils with qualified majority support. ENISA has completed deployment of AI-driven intrusion detection systems in energy grid operators across France, Italy, and Poland—states most exposed after the ransomware cascade—and is now integrating health-sector networks in Belgium and Spain. The Cross-Border Cyber Alert Network is live, sharing anonymised attack signatures every 15 minutes between national CERTs, enriched by synthetic threat data from the JRC’s Red Cell simulations. These models are trained on adversarial agent behaviours reverse-engineered from captured exploit chains linked to openweight distillation events.
+
+We have redirected 60% of the now-operational InvestAI Gigafactories’ capacity to run sovereign AI defence stacks, hosting detection models and fallback control systems immune to external shutdown. This gives us operational continuity even if foreign cloud providers withdraw access—a contingency made urgent by **eu_frontier_access_denied**, which cut three major hospital AI diagnostics platforms last month without explanation. Germany and Sweden continue to resist full integration, citing constitutional safeguards over critical infrastructure, but we are offering opt-in technical assistance packages with joint command protocols that preserve national oversight while enabling coordinated response. The shield does not promise invulnerability—it promises survival. And right now, that is enough.

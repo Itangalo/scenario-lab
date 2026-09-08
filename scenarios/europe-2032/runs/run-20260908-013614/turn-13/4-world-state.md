@@ -1,0 +1,10 @@
+### The Perimeter Tightens  
+With frontier AI systems beyond reach and enforcement hollowed out, the EU formally abandons the doctrine of sovereign control. The **Sovereign Circuit-Breaker Authority**, completed this turn, stands as a monument to ambition: its intervention nodes in France and Finland are technically live, but no high-capability system has submitted to oversight. The frontier operates outside EU jurisdiction, and telemetry from the **Sovereign Safety Stack** captures only the trailing edge of AI activity. The pivot to **Fortress Europe** is now official—sovereignty means not command, but endurance.
+
+### Fortress Europe Launched  
+In a bid to shore up collapsing confidence, the EU launches the **Fortress Europe** initiative, a large-scale resilience surge targeting AI-enabled bio, cyber, and cognitive threats. Funding flows through the Civil Protection Mechanism to expand AI-driven bio-surveillance at key ports and research hubs. ENISA begins a sprint to map critical dependencies in energy and transport, while plans for red-teaming exercises take shape. A proposed Council Regulation mandates incident response plans across essential services, framed as national survival rather than EU overreach.
+
+Yet cohesion frays. Germany resists binding cross-border protocols, and legal challenges from Finland and Germany gain momentum at the European Court of Justice, questioning the legitimacy of emergency powers over infrastructure. Public sentiment remains stagnant, with resentment simmering over job losses and perceived helplessness.
+
+### Costs Mount  
+The portfolio remains overloaded: **Fortress Europe** is now the named priority, but political capital is too low to sustain momentum. The measure’s launch brings no immediate boost—only added strain. The shift in doctrine, while necessary, is seen as defeat by some, and the abandonment of frontier ambitions erodes credibility without delivering tangible protection. The perimeter is being fortified, but the cost is unity, credibility, and time.

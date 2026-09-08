@@ -1,0 +1,15 @@
+### Frontier Gains, Verification Widens
+
+Openweight systems advance to 46.0, replicating defensive techniques from frontier models and enabling broader deployment in red-teaming and safety research—though the same capabilities are also exploited for document forgery and system intrusion. In contrast, no broad increase in underlying AI capability is observed this turn; the anticipated jump in `ai_capability` to 58.0 is deferred, as gains from automated verification in legal and clinical domains reflect deployment velocity rather than foundational progress in learning efficiency, model scale, or compute throughput. Without evidence of sustained R&D accumulation or spill-over from frontier labs, `ai_capability` remains at 56.0.
+
+### Sovereignty Undermined
+
+A major setback strikes EU cohesion when a member state finalizes a bilateral AI infrastructure deal with a U.S. hyperscaler, securing preferential access in exchange for relaxing data sovereignty rules—undercutting the Union’s unified stance on frontier model control. The move is hailed domestically as pragmatic crisis management but condemned elsewhere as fragmentation under pressure. This act directly erodes the EU’s collective leverage, reducing eu_ai_sovereignty from 22.0 to 21.0, consistent with the notepad’s accounting of a −2 decay from the event and −1 from ongoing portfolio charge.
+
+### Emergency Programme Advances — At a Cost
+
+Work progresses at the Sovereign AI Hubs in Lyon, Warsaw, and Milan, with exascale partitions activated and fine-tuning pipelines established for open-weight models in medical triage and logistics. However, staffing shortages and integration delays prevent full operational status, deferring full benefits. Cyber Shield nears completion, with Germany and Poland accepting mandatory detection mandates in return for local red-teaming rights. Yet resilience dips slightly as overreliance on still-fragile fallback systems introduces new failure points.
+
+### Political Strain Deepens
+
+Discussions intensify within the Commission about extending oversight to open-weight models above 42.0 used in public services, following recent misuse in the forged health directives incident. While technically sound, any formal proposal is delayed by coordination bottlenecks across existing workstreams. The EU’s active measure portfolio remains overloaded: InvestAI Gigafactories, Cyber Shield, Emergency Sovereign AI Access Programme, and Strengthened Open-Weight Evaluation Protocol are all still in flight—exceeding sustainable capacity. No new measure is launched, and the priority remains fixed on the Emergency Sovereign AI Access Programme. Public sentiment declines further, as visible dependency and internal disunity fuel perceptions of dysfunction. With no new initiative adopted, eu_political_capital remains unchanged.

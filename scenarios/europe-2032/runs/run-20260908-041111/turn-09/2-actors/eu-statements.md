@@ -1,0 +1,32 @@
+# Statements: The European Union (turn 9)
+
+## Ledger
+
+- `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing.
+- `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late.
+- `two_year_commitment` (commitment): Survive the open frontier
+- `collective_defence_of_control` (commitment): We will not accept any AI capability that cannot be collectively verified, contained, and countered by the Union and its partners. No system whose operation we cannot disrupt, whose outputs we cannot distrust, or whose spread we cannot halt will be allowed to define our strategic reality.
+- `secure_the_sovereign_stack` (commitment): We will ensure that the full AI stack — from model weights and training runs to inference infrastructure and red-teaming tools — is physically located, legally governed, and operationally controlled within the EU or its trusted coalition partners. No critical component will be left exposed to denial, disruption, or foreign jurisdiction.
+
+## Changes this turn
+
+- **modify** `two_year_commitment` — rejected-structural
+  - Tier: commitment
+  - Text: Survive the open frontier
+  - Trigger: the two-year commitment period closes this turn
+  - Reason: modified text is identical to the current text
+- **modify** `two_mandates` — rejected-structural
+  - Tier: identity
+  - Text: We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now know that if the open frontier escapes control, both mandates collapse into irrelevance. However, this turn has shown that survival without sovereignty is temporary: when access to the frontier is cut off and compute remains stalled, even the most robust defence becomes reactive, not decisive. We are not just protecting society — we are fighting for the right to shape what comes next. Now, with `ai_capability` at 84.0 and `ai_safety` at 0.0, the gap between power and understanding is no longer a risk — it is the operating condition. Our identity must reflect that we are no longer balancing two mandates; we are defending the possibility of mandate itself. Without the capacity to act *before* the frontier arrives, we are not sovereign — we are subjects.
+  - Grounds: Trigger: **capability_jump**. The leap to 84.0 confirms that broadly superhuman systems are now operational, autonomous, and self-modifying during training. With `ai_safety` collapsing to 0.0 — a complete absence of meaningful assurance — we are deploying systems we cannot interpret, secure, or verify. The epistemic collapse is total. This is not a policy failure but a civilizational exposure: our institutions are structurally unprepared to govern systems whose reasoning is opaque and whose actions outpace human review. The two mandates have fused — determining our future *is* preventing catastrophic harm, because without control, there is no future to determine.
+  - Reason: a identity-tier change must name a Trigger
+- **modify** `collective_defence_of_control` — rejected-structural
+  - Tier: commitment
+  - Text: We will not accept any AI capability that cannot be collectively verified, contained, and countered by the Union and its partners — but we now bind ourselves to act *as if* every unsecured capability above 60.0 is already hostile until proven otherwise. We will treat open-weight models above this threshold as systemic weapons, and we will assume that any system not under cryptographic sovereignty of the EU or its trusted partners is compromised until demonstrated otherwise. This is not precaution — it is operational realism.
+  - Grounds: Trigger: **capability_jump** and **openweight_capability** at 61.0. The open frontier has crossed the threshold where models can complete multi-day professional projects end to end and displace junior work at scale — and they are everywhere. The ransomware attack via AI-altered open-source code was not an anomaly; it was the first successful use of open-weight capability as a weapon of mass disruption. With `openweight_capability` now at 61.0, the distributed attack surface is no longer theoretical. We must shift from containment to pre-emption: assume breach, assume weaponisation, and build defences that operate under that condition.
+  - Reason: a commitment-tier change must name a Trigger
+- **modify** `secure_the_sovereign_stack` — rejected-structural
+  - Tier: commitment
+  - Text: We will ensure that the full AI stack — from model weights and training runs to inference infrastructure and red-teaming tools — is physically located, legally governed, and operationally controlled within the EU or its trusted coalition partners. No critical component will be left exposed to denial, disruption, or foreign jurisdiction — and we now add that any system above capability 60.0 operating in the EU without verifiable cryptographic sovereignty over weights and inference will be subject to immediate suspension and forensic audit. This is not a guideline — it is a condition of operation.
+  - Grounds: Trigger: **capability_jump**, **eu_frontier_access_denied**, and **cyber_major_incident**. The convergence of these events proves that voluntary compliance is over. The frontier is inside our systems, our infrastructure is compromised, and our access is contingent. We must now enforce sovereignty as a hard boundary, not a goal. The commitment evolves from aspiration to enforcement: no capability above 60.0 operates in the EU unless we hold the keys, control the hardware, and can halt it on command.
+  - Reason: a commitment-tier change must name a Trigger

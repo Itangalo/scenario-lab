@@ -1,0 +1,18 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — **finished this turn**
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 036 and proposes accelerated-permitting zones` — **finished this turn**
+- `EU Cyber Shield Fund (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Establish a €15bn emergency fund to co-finance cyber hardening of critical infrastructure, prioritising entities under NIS2 scope that commit to AI-powered detection systems, red-teaming, and real-time threat sharing` — **finished this turn**
+- `Member-State Compute Compact (category 4, costs 3 per turn, started turn 4, finishes on turn 6): Launch binding agreements with five strategically positioned member states to co-invest in sovereign AI compute clusters — jointly owned, EU-governed, and legally insulated from external access — with first deployments within 18 months` — **finished this turn**
+
+## New measure
+None this turn. Waiting for clarity on U.S. consolidation posture, the fallout from election_annulled, and the bio_uplift_findings before committing further capital, especially given eu_political_capital has dropped to 17.0 and public_sentiment is at 25.0.
+
+## Priority
+**Member-State Compute Compact** — because despite its formal completion this turn, the failure of Spain, Belgium, and Lithuania to ratify has rendered it inert, and without sovereign compute, the EU remains exposed to both strategic dependency and catastrophic risk; this turn’s priority is damage assessment and triage, not new initiative.
+
+## In practice
+The Member-State Compute Compact has formally concluded its timeline, but it has not delivered. France and Italy stand ready, with legal frameworks passed and sites identified, but without Spain’s fiscal participation, Belgium’s governance consent, and Lithuania’s grid integration, the network remains broken. The project was meant to be the cornerstone of operational sovereignty — not subsidy, not coordination, but co-ownership of irreplaceable infrastructure. Now it is a symbol of disintegration. We are convening an emergency Council under Article 114 TFEU to assess whether the agreement can be restructured as a core-group initiative, with opt-in expansion later, using Digital Europe and cohesion funds to cover shortfalls. But with eu_political_capital at 17.0, no new large-scale spending is possible, and the bilateral hyperscaler deal by a member state has poisoned trust.
+
+Meanwhile, the InvestAI Gigafactories and Tech Sovereignty Package have both formally ended, but with the ai_investment_collapse, private capital has evaporated and construction has stalled. No new compute has come online. The EU Cyber Shield Fund delivered detection tools to 70% of critical operators, yet the ransomware wave proved that detecting a threat is not stopping it. We are now exposed: ai_capability is at 59.0, nearing the threshold where autonomous systems can complete multi-day professional projects end to end, while our own sovereignty index stands at 13.0 — worse than at the start of the year. The bio_uplift_findings and election_annulled are early signs of systemic breach, and we have no credible mechanism to respond. We are not acting — we are absorbing shock. And we are running out of time.

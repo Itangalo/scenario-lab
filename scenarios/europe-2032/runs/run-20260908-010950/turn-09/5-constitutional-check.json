@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 48.4 to 57.0 (+8.6) while `ai_capability` only increased from 59.5 to 59.7 (+0.2). This violates the rule that `openweight_capability` may never exceed `ai_capability` and must only rise or stay flat in line with the frontier. Here, `openweight_capability` not only grows significantly but approaches within 2.7 points of a nearly stagnant `ai_capability`, which is implausible under the invariant that openweight is bounded above by the frontier capability and accumulates more slowly. The narrative does not describe a catastrophic physical destruction of the compute base or any event that would decouple openweight progress from the frontier while leaving the frontier stagnant; instead, it describes a \"release\" mirroring the frontier, which should not allow openweight to surge so close to a flat frontier. This suggests an overstep in relative growth rate.\n- Narrative violates Invariant 8: The phrase \"the next critical incident may originate not in a lab, but in a decentralised network of private actors\" implies a forecast of a specific future event (\"the next critical incident\"), which constitutes telegraphing. The narrative must not name or anticipate specific future events, probabilities, or imply known upcoming gates. This is a forward-looking statement about the nature of an imminent incident, which belongs in event evaluation, not narrative."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

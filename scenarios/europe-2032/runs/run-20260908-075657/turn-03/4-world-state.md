@@ -1,0 +1,11 @@
+### Stabilisation and Exposure
+
+Global AI capability inches upward to 55.5, as underwhelming performance from a flagship release and falling prices for top-tier models fuel debate over whether the frontier is plateauing. Yet the same period sees an open-weight model emerge within months of the closed frontier, rapidly spreading to private hardware worldwide. While impressive, this diffusion is still constrained by infrastructure and expertise bottlenecks. `openweight_capability` rises to 45.0—reflecting accelerated adoption and narrowing the gap—but not at the pace implied by a sudden 7-point leap, which would require far broader deployment than currently feasible.
+
+In Brussels, the EU completes the **Cyber Shield for Critical Infrastructure**, finishing this turn. Final legal text passes after tense negotiations, with the Presidency securing compromises on healthcare and energy enforcement timelines. Member states receive early access to ENISA’s AI-powered threat-sharing platform in exchange for accepting core isolation protocols. The directive is hailed as a milestone in resilience, though its real test awaits.
+
+The Commission had intended to activate the **EU AI Safety Institute** this turn, granting it provisional audit powers over models above 50.0 capability via a delegated act. However, legal vetting delays and objections from member states over competence boundaries have pushed the formal launch to the next turn. Recruitment begins in outline, and planning for redacted audits continues, but no binding powers are conferred yet. The proposal remains on track, but implementation is staggered to comply with sequencing rules.
+
+Public sentiment remains stagnant at 37.0, as the **campaign_backlash** intensifies across Europe. Moratoriums on data centres and AI in schools gain mainstream traction, and displaced worker protections become a rallying point. The EU’s actions are seen as reactive, not visionary.
+
+Sovereignty erodes further, falling to 15.0, hit by the **supply_chain_coercion** event (−3), rising capability (−1), and no domestic compute yet online. Political capital drops to 21.0, overwhelmed by the cost of four large measures (−12), the named priority (−1), and no finishing bonus this turn. The proposal bonus for the Safety Institute is deferred until actual activation.

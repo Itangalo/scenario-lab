@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Public-Sector AI Safety Audit and Remediation Programme −3, Fiscal Leverage Mechanism for AI Compliance −2, priority −1 = −6  
+PROPOSAL BONUS: Fiscal Leverage Mechanism for AI Compliance (cat 8, small) +2 — directly addresses emergent_regional_data_sovereignty_pacts and member_state_defection, recent systemic failures in cohesion and enforcement  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 6 last turn, no capacity event, capability rose 1.5 −1, Sovereign Red Line Enforcement Network delivered nothing → no gain = 5  
+US_POSTURE: CONSOLIDATION  
+Emerging developments: `emergent_regional_data_sovereignty_pacts` -- first noted turn 11, listed in 3 turn(s) so far: Bilateral compute-sharing agreements gain quiet momentum among Central and Northern member states, framed as continuity planning. These informal pacts allow participating states to bypass stalled EU-wide infrastructure by pooling national resources, creating de facto red lines against external access while deepening internal fragmentation.

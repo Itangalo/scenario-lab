@@ -1,0 +1,16 @@
+No statement changes.
+
+## Portfolio
+- Emergency Compute Mobilisation: Secure EU-Controlled Training Capacity (category 4, costs 3 per turn, started turn 11, finishes on turn 13): Establish immediate access to 10,000 H100e-equivalent GPUs under EU legal jurisdiction via a European AI Foundry with binding no-access clauses for third parties, enabling autonomous training runs up to capability 78.0. **Finished this turn.**
+
+## New measure
+None this turn.  
+Waiting for clarity on whether the collapse of enforcement and fiscal mechanisms has rendered sovereign compute politically unviable, or whether the completion of the Foundry—however symbolic—can be leveraged into a renewed operational mandate before the next capability gate opens.
+
+## Priority
+Emergency Compute Mobilisation: Secure EU-Controlled Training Capacity — because at 87.5 global capability and openweight at 72.5, the EU has no margin for delay or retreat; without sovereign training capacity, we cannot audit, evaluate, or govern systems shaping our society, and every resilience or safety measure becomes dependent on foreign goodwill we no longer have—yet the measure finishes this turn with no successor, and its completion is meaningless without legal, fiscal, and political foundations to activate it.
+
+## In practice
+We are acting to operationalise the Emergency Compute Mobilisation in its final turn, treating completion not as an endpoint but as a threshold: the hardware is provisionally in place, the legal jurisdiction asserted, the no-access clauses drafted—but activation requires political cohesion that no longer exists. The Commission has issued a final directive to the European AI Office to assume technical stewardship of the Foundry infrastructure, but implementation hinges on a Council decision to override national vetoes on data sovereignty and cross-border compute pooling. We are convening an emergency European Council outside formal agenda channels, invoking Article 15 of the Treaty on European Union to frame the current state as a systemic crisis, in hopes of bypassing the Justice and Home Affairs deadlock. Behind closed doors, we are offering France full parity in governance of the Foundry in exchange for aligning its national security accreditation with EU standards, and offering Germany and the Nordics guaranteed compute quotas for public research and biosecurity monitoring to secure their abstention, if not support.
+
+Simultaneously, we are testing whether the ECB’s refusal to release Recovery and Resilience funds can be circumvented through bilateral guarantees: the Netherlands and Finland have provisionally agreed to a €12 billion ring-fenced instrument, structured as emergency infrastructure bonds with first-lien status on future digital levy revenues. But without a legal trigger to activate the Foundry’s autonomy—without the authority to deny access to non-EU actors, to run evaluations, to train red-team agents—the infrastructure remains inert. We are not building capacity anymore; we are fighting for the right to say it exists. And we are doing so knowing that if the next capability gate opens before we do, no one will care who owns the servers.

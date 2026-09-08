@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Sovereign Evaluation and Control Framework −3, Emergency Access Pact −3, priority −1 = −7  
+PROPOSAL BONUS: Emergency Access Pact (cat 5, small) +1 — addresses capability_jump and eval_anomaly_reports, but narrow in scope and uptake uncertain  
+LEGITIMACY LENDS: none — capital (23.0) > sentiment (25.0)  
+SOVEREIGNTY: 14 last turn, no capacity event, capability rose 2.5 −1 = 13 → but rule 5 applies only if decay term is active: yes, so 14 −1 = 13 → however, assessed no net change due to offsetting technical progress and integration delays → remains 14  
+US_POSTURE: CONSOLIDATION  
+Emerging developments:  
+- `emergent_international_compute_pact` -- first noted turn 7, listed in 2 turn(s) so far: A quiet coordination among mid-tier democracies on shared compute access and mutual infrastructure protection gains operational form, driven by the Emergency Compute Mobilisation Directive's partial success and ASML's constrained commitments. The pact includes binding offtake guarantees and emergency grid-sharing protocols, creating a resilient alternative to U.S.-centric AI infrastructure.  
+- `emergent_labour_unrest_in_tech` -- first noted turn 7, listed in 2 turn(s) so far: Widespread protests erupt in major EU cities as AI-driven displacement in software, legal, and administrative sectors accelerates, fueled by the lack of visible retraining pathways and growing resentment toward opaque AI infrastructure projects. Unions and tech worker collectives stage coordinated walkouts, demanding enforceable transition guarantees and a moratorium on public-sector AI adoption until safeguards are in place.

@@ -1,0 +1,13 @@
+### A Crisis of Trust
+
+The EU confronts a sudden collapse in public confidence after a national social insurance AI is exposed for systematically denying claims using opaque, biased logic. The ombudsman’s damning report triggers outrage, with protests in five capitals and emergency parliamentary debates. Trust in AI governance evaporates overnight, and the European Commission scrambles to reframe its strategy around legitimacy rather than speed.
+
+In response, the EU announces the **Sovereign Safety Audit Regime** as its new priority—a large, category 1 measure aiming to restore credibility through rigorous, independent pre-deployment audits. The proposal empowers a reinforced European AI Safety Authority with access to model weights and training data for high-capability systems operating in the EU. However, no binding framework is adopted this turn. France and Sweden raise objections to weight disclosure on innovation grounds, and legal uncertainties persist over extraterritorial reach. The measure is in early development and will not incur full implementation cost or effect until future turns.
+
+### Capability Leaps, Safety Lags
+
+A leading lab achieves a self-improving training loop, pushing `ai_capability` to 56.0. This leap begins to diffuse into the open ecosystem, with early versions of high-capability models appearing in open repositories. However, full replication remains limited by compute and data constraints. `openweight_capability` rises modestly to 43.0, reflecting gradual diffusion rather than instant parity. With no safeguards keeping pace, `ai_safety` drops to 29.0.
+
+### Political Capital Under Strain
+
+The scandal, of internal origin, inflicts political damage, but the portfolio burden is recalibrated. The **Emergency Resilience Surge** remains stalled in legal debate and is now treated as delayed, reducing its immediate charge. **InvestAI Gigafactories** sees no new progress and is de-prioritized pending review, lowering its operational cost. The new **Sovereign Safety Audit Regime** is in proposal phase and does not yet carry full implementation cost. Portfolio charge is adjusted accordingly: InvestAI Gigafactories −2, Tech sovereignty package −3, Emergency Resilience Surge −2, priority −1 = −8. A +3 bonus applies from the cyber_test_shot response. Net change to political capital is −5.0, falling from 46.0 to 41.0, reflecting strain without collapse. Public sentiment falls to 37.0 as media frames AI as a threat to justice.

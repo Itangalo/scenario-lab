@@ -1,0 +1,11 @@
+### Frontier Acceleration  
+AI capability advances to 58.0 as automated research systems now sustain multi-week engineering cycles, including autonomous materials discovery and circuit design. The closed frontier pulls ahead, with leading labs deploying agents that operate continuously across weeks-long software and research tasks—still under human oversight, but with growing autonomy. The gap to open weights widens, though the release of a new biology-focused open model, trained on redacted pre-2025 datasets, lifts `openweight_capability` to 42.0.
+
+### Cyber Shock and Response  
+A coordinated ransomware campaign, powered by AI-generated polymorphic exploits, disrupts regional health authorities and municipal transport systems across five member states. The attack evades traditional detection, propagating through trusted software dependencies. Recovery takes weeks, and public trust erodes. In response, the EU launches the **Secure the Core** directive, mandating AI-specific cyber defences for all NIS2-covered entities. Swarm-based anomaly detection and real-time IOC sharing will be required by turn 5, with ENISA empowered to conduct adversarial red-teaming. The measure lands swiftly, contributing to resilience gains.
+
+### Resilience Gains, Political Strain  
+The **Emergency Resilience Surge** completes, delivering automated patching mandates and cross-border red-teaming. Combined with the new directive, resilience jumps to 50.0. However, the cyber incident and rushed legislative push strain coordination. The **Secure the Core** directive, while necessary, imposes a heavy compliance burden. Public sentiment falls to 37.0 amid anxiety over disruption and state overreach. Political capital declines under the weight of four large measures, despite the completion of one.
+
+### Sovereignty Inches Forward  
+The **Bio-Secure Compute Initiative** advances with pilot planning in Heidelberg, Paris, and Uppsala, integrating sovereign chiplets and ECDC linkages. This early progress adds +1 to sovereignty. However, `ai_capability` rose by 2.0, costing −1. With no capacity event, sovereignty ends at 23.0.

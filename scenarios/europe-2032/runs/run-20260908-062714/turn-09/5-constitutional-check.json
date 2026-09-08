@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` (65.0) exceeds `ai_capability` (66.5) by 1.5 points. The constitutional constraint explicitly states that `openweight_capability` never exceeds `ai_capability`. While the narrative describes rapid open-weight diffusion, it cannot legally surpass the frontier capability level.\n- Invariant 2 violated: `openweight_capability` increases by 6.0 points (from 59.0 to 65.0), which implies a jump inconsistent with its nature as an accumulated, non-declining metric that grows gradually through deployment and diffusion. A surge of this magnitude in one turn — especially without narrative justification for a sudden release or cascading adoption mechanism — violates the spirit and likely the bounds of plausible accumulation, particularly when no such event is pre-noted or gate-triggered.\n- Narrative violates Modelling Choice 8: The statement \"the model was released outside jurisdiction, and enforcement lags\" telegraphs a regulatory failure mode that implies an open event gate (i.e. the existence of a bypass mechanism for EU bans) without prior notepad entry or event resolution. This anticipates and assumes a systemic loophole that should be evaluated through event gates, not embedded as a narrative fact."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

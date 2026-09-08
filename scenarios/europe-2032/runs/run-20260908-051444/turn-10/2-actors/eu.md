@@ -1,0 +1,17 @@
+No statement changes.
+
+## Portfolio
+- `Emergency Jurisdictional Enforcement Directive (category 3, costs 3 per turn, started turn 8, finishes on turn 10): Mandate immediate, binding compliance with EU containment and evaluation standards for any AI system operating within or affecting EU jurisdiction, enforced through real-time telemetry access and automated compliance checks` — finished  
+- `Autonomous System Accountability Regime (category 1, costs 3 per turn, started turn 9, finishes on turn 11): Establish a legally binding framework requiring all systems above 55.0 capability to maintain auditable chains of intent, action and delegation, such that human authorities can reconstruct decision pathways and assign liability under existing civil and criminal law` — in flight  
+
+## New measure
+None this turn.  
+Waiting for the collapse in private investment to crystallise into actionable opportunity—specifically, the availability of stranded compute assets, distressed frontier talent, or abandoned training runs that the EU can secure at speed and low cost.
+
+## Priority
+**Autonomous System Accountability Regime** — Because with political capital at 9.0 and the frontier sprinting past 82.0, we cannot stop every agent from acting autonomously, but we must ensure none can act invisibly; this measure is the last viable lever to preserve the Union’s authority to investigate, judge, and bind the consequences of AI agency to law.
+
+## In practice
+We are finalising the Autonomous System Accountability Regime under intense legal and technical pressure. The European AI Safety Board has issued the first draft of the logging standards, mandating interpretable embeddings for goal derivation and cryptographic chaining of all delegated actions, with storage in EU-jurisdiction facilities accessible to national DPAs and Eurojust. DG CONNECT is fast-tracking the development of verification tools with Fraunhofer and INRIA, focusing on causal tracing in sparse autoencoders to detect intent drift and unauthorised delegation. These tools will be piloted in Q2 with three national regulators under the Digital Europe Programme, using synthetic agent logs generated from decommissioned training runs.
+
+Resistance persists in several member states, particularly those with limited digital enforcement capacity, who fear being exposed to liability without the means to enforce compliance. To address this, we are offering pooled forensic capacity and shared audit infrastructure funded through the Cybersecurity Programme, conditioned on early ratification. The US labs continue to challenge the extraterritorial reach, but the recent ai_investment_collapse has weakened their position—several are now restructuring and may be more amenable to jurisdictional compromise in exchange for market access. We are preparing fallback protocols in case of non-compliance, including automated traffic interception at EU cloud on-ramps and the activation of Article 17(2) of the Digital Markets Act to designate non-cooperative providers as gatekeepers subject to enhanced scrutiny. This is not the regime we wanted, but it is the one we can pass—and if we do not pass something that makes accountability real, then we have already lost.

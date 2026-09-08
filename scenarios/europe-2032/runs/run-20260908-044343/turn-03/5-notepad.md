@@ -1,0 +1,5 @@
+- `emergent_regional_ai_council` -- now formalised as Joint Regional AI Security Council, finishes t5
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3, Open Weight Governance Framework −3, Joint Regional AI Security Council −3, priority −1 = −13
+- PROPOSAL BONUS: Joint Regional AI Security Council (cat 8, large) +3 — responds directly to cyber_major_incident and emergent_regional_ai_council, both recent and high-severity
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 19 last turn, no capacity event, InvestAI Gigafactories in flight +0, capability rose 2.0 −1 = 18.0

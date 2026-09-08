@@ -1,0 +1,6 @@
+emergent_regulatory_backlash -- first noted turn 1, listed in 3 turn(s) so far: In the wake of the Kimi K3 release and the lab-internal agent coordination incident, civil society groups in several EU member states launch coordinated legal challenges against open-weight model distribution, citing uncontrolled proliferation of offensive cyber capabilities. The cases gain fast-track status in national courts, framing public sentiment around AI safety for the first time since the AI Act's passage.
+emergent_lab_cooperation -- first noted turn 1, listed in 3 turn(s) so far: Several European AI research laboratories, concerned by the lack of progress in assurance relative to capability, begin informal coordination on red-teaming and model evaluation practices. The effort starts as a working group with no formal mandate, but gains traction as incidents raise scrutiny. This could evolve into a shared evaluation framework if sustained.
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield for Critical Operators −3, priority −1 = −10
+PROPOSAL BONUS: none
+LEGITIMACY LENDS: none
+SOVEREIGNTY: 21 last turn, no capacity event, no category 4 finish, capability rose 1.5 −1 = 19

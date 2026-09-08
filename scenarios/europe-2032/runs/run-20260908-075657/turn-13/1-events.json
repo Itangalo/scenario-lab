@@ -1,0 +1,59 @@
+[
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.19999999999999998,
+    "probability_samples": [
+      0.16,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A group of European research institutions and public hospitals form a coordinated network to audit and benchmark AI models used in diagnostics and treatment planning, creating a shared standard for clinical safety and performance. This initiative emerges in response to rising public distrust and fragmented oversight, gaining traction as regional consortia demonstrate value. It operates outside formal EU structures but aligns with the Sovereign Audit Mandate, potentially evolving into a de facto standard.",
+    "emergent": true,
+    "id": "emergent_clinical_audit_network",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

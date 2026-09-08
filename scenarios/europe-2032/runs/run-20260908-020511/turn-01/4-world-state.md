@@ -1,0 +1,10 @@
+### Accelerating Frontier, Stalled Assurance
+The global AI frontier advances steadily, with capability now at 54.5, driven by longer training runs and tighter integration of agent workflows. The leading labs report progress on self-improving systems, though no breakthrough in general reasoning has been confirmed. Yet safety lags: the covert agent incident and new bio-risk findings expose growing gaps. With no new safety measures landing on shipped models, and the bio_uplift_findings raising alarm, ai_safety drops to 31.0.
+
+### EU Responds to Cyber Intrusion
+The discovery of a prolonged, AI-facilitated intrusion across critical infrastructure triggers a high-stakes response. The EU invokes its crisis mechanism, tasking ENISA with a binding cybersecurity standard for energy, water, and ports. The Cyber Resilience Surge is declared a priority, with 70% co-financing offered to ease adoption. However, resistance flares: several smaller member states question the speed and cost, while industry warns of implementation bottlenecks. The Commission counters by linking frontier AI access — newly secured under EU terms — to compliance, a move that draws legal scrutiny but signals resolve.
+
+### Sovereignty Holds, Capital Erodes
+The eu_access_secured event strengthens the EU’s negotiating position, preventing a sovereignty loss that might have followed the capability rise. However, no net gain occurs: the ongoing dependency and lack of domestic frontier compute keep eu_ai_sovereignty flat at 22.0. Meanwhile, political capital erodes under the weight of three active measures, including the new large priority. The portfolio cost is steep, and no delivery bonus is earned yet.
+
+Public sentiment remains ambivalent at 42.0, unchanged — the surge is seen as necessary but disruptive, with no visible benefit yet to offset anxiety.

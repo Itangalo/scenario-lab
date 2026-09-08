@@ -1,0 +1,19 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Secure binding public procurement of sovereign AI capacity by Q4 2029 to unlock private investment, enable independent evaluation, and establish a credible foundation for EU-controlled systems capable of meeting strategic and safety imperatives  
+- Grounds: The US has cut off frontier access with no appeal or explanation, exposing the Union’s operational fragility. While the original commitment aimed at strategic autonomy, the denial event — combined with stalled demand activation — makes clear that symbolic declarations are insufficient. This turn demands not just intent but irrevocable commitments: procurement contracts signed, funding conditioned, and grid access tied to anchor buyers. Without this circuit closure, sovereignty remains aspirational, and safety becomes delegation.
+
+## Portfolio  
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — **finished this turn**  
+- `Accelerate Anchor Demand for Sovereign Compute (category 4, costs 2 per turn, started turn 6, finishes on turn 7): Mandates binding procurement commitments from EU institutions and member states in defence, energy, health, and critical infrastructure by Q4 2029, verified by JRC and enforced through cohesion and Digital Europe funding conditionality`
+
+## New measure  
+None this turn.  
+Waiting for member-state responses to the September deadline for procurement plans before scaling enforcement or introducing conditional sanctions.
+
+## Priority  
+Accelerate Anchor Demand for Sovereign Compute — because without legally anchored demand, the completion of InvestAI Gigafactories leaves us with empty shells and no payload, and this turn’s access denial proves we cannot rely on foreign goodwill when our hospitals, grids, and agencies depend on uninterrupted AI services.
+
+## In practice  
+This turn, the Commission finalises the implementation of the *Accelerate Anchor Demand* initiative, converting its framework into enforceable conditionality. DG REGIO confirms that access to cohesion funds for digital infrastructure will be suspended for any member state failing to submit a JRC-verified procurement plan by 30 September. The European Parliament’s ITRE and ENVI committees fast-track a resolution endorsing the linkage, citing energy security and healthcare continuity as overriding concerns. Simultaneously, the EIB announces that its fast-track financing window for AI data centres will require evidence of signed anchor demand — not letters of intent, but multi-year contracts with defined volumes and fallback clauses. Early adopters include France’s ARS network, which commits to sourcing 40% of its clinical decision-support compute from EU-controlled facilities by 2031, and Germany’s Bundeswehr, which issues a tender for sovereign large-agent coordination in C4ISR systems.
+
+On the ground, however, resistance hardens. Poland and Hungary jointly issue a diplomatic note questioning the legality of tying cohesion funds to AI procurement, arguing it exceeds the Treaties’ internal market basis. The Council Legal Service is reviewing the challenge, creating uncertainty in enforcement timing. Meanwhile, physical backlash intensifies: in rural Romania, protesters damage a substation feeding a planned InvestAI site near Cluj, delaying grid connection timelines. National police report increased coordination between anti-AI activist networks across Austria, Italy, and Spain, suggesting a shift from localised dissent to transnational disruption. We respond by activating the Cyber Shield’s mutual aid protocol, sharing threat intelligence on infrastructure targeting through ENISA’s new cross-border intrusion correlation platform. Resilience holds, but public sentiment continues to drift downward under the weight of visible instability and unmet expectations.

@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Post-Deployment Redress Mechanism −3, Secure EU Compute Backbone −3, Emergency Sovereign Compute Continuity Council −3, priority −1 = −10  
+PROPOSAL BONUS: Emergency Sovereign Compute Continuity Council (cat 6, large) +3 — answers member_state_defection, supply_chain_coercion, and physical sabotage directly and severely  
+LEGITIMACY LENDS: none — public_sentiment (21.0) < eu_political_capital (7.0)  
+SOVEREIGNTY: 25.5 last turn, no capacity event, capability rose 1.5 −1 = 24.5  
+US_POSTURE: ALLIANCE  
+emergent_compute_black_market_expands -- listed in 5 turn(s) so far: Distributed training networks in Eastern Europe continue to export model weights to third-party actors, enabling uncontrolled diffusion of mid-tier AI capabilities into high-risk domains. Intelligence agencies confirm the trend is accelerating, with new nodes emerging in non-aligned jurisdictions.  
+emergent_regional_automated_healthcare_failure -- listed in 5 turn(s) so far: A coordinated failure in AI-driven regional healthcare triage systems across several member states leads to delayed treatments and public outcry. The systems, part of a recent cross-border digital health initiative, misprioritized patients during peak loads, exposing fragility in distributed AI governance. Investigations reveal inconsistent oversight and patchwork integration, undermining trust in EU-wide AI adoption.

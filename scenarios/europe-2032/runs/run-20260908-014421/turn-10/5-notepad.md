@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Frontier Access Enforcement Directive −3, priority −1 = −4  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none — capital (17.0) > sentiment (25.0)  
+SOVEREIGNTY: 13 last turn, no capacity event, capability rose 5.0 −1 = 11  
+US_POSTURE: CONSOLIDATION  
+Emerging developments:  
+- `emergent_international_compute_pact` -- first noted turn 10, listed in 1 turn(s) so far: The binding offtake guarantees and emergency grid-sharing protocols among mid-tier democracies mature into a live, tested mutual support framework. A joint simulation confirms cross-border compute failover within minutes during a national outage, marking the first operational demonstration of collective AI infrastructure resilience. This development strengthens the coalition's credibility and could become a counterweight to unilateral frontier control.  
+- `emergent_labour_unrest_in_tech` -- first noted turn 10, listed in 1 turn(s) so far: Labour unrest in the tech sector escalates into coordinated strike actions across multiple EU member states, led by unions demanding enforceable transition guarantees for displaced workers and a moratorium on AI adoption in public-sector hiring. The movement gains traction as white-collar professionals join blue-collar workers in protest, framing AI-driven displacement as a systemic failure of governance. The visibility of the unrest increases pressure on the EU to act on social absorption measures.

@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Worker Transition Fund −2, priority −1 = −3  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 14.0 last turn, no capacity event, capability rose 1.0 −1 = 12.0  
+US_POSTURE: CONSOLIDATION  
+emergent_supply_chain_friction -- first noted turn 7, listed in 3 turn(s) so far: ASML faces sustained internal and external pressure to relax servicing restrictions on legacy lithography tools in China, exposing a growing rift between the EU's formal export controls and actual enforcement. Key member states are lobbying behind closed doors to permit limited servicing, undermining the bloc’s unified stance and eroding its strategic leverage. This fracture becomes publicly visible through leaks and diplomatic friction, weakening the EU's position in semiconductor negotiations.  
+emergent_regulatory_fragility -- first noted turn 7, listed in 3 turn(s) so far: National regulators in three major EU member states continue to issue conflicting interpretations of the AI Act’s high-risk provisions, creating legal uncertainty for cross-border AI deployment. The European Data Protection Board struggles to harmonize enforcement, revealing institutional strain as compliance costs rise and legal challenges mount. This divergence undermines trust in the EU-wide framework and emboldens member states to pursue unilateral regulatory paths.

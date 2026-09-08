@@ -1,0 +1,15 @@
+### Stalled Momentum, Rising Tensions
+
+Global AI capability inches upward to 60.5, as frontier labs consolidate gains in autonomous research cycles despite signs of plateauing returns. The underwhelming performance of recent model releases and falling prices for top-tier access hint at a capability plateau, though the race continues. Open-weight models remain flat at 47.5, held back by persistent compute scarcity and diffusion bottlenecks. No meaningful progress occurs in open-weight advancement this turn, as community efforts stall without access to sufficient training infrastructure.
+
+AI safety slips further to 18.0. Despite a defensive breakthrough in cyber tooling and a US-China agreement on limited risk controls, no new safeguards land on deployed systems. Internal anomalies in training runs go uninvestigated, and the Sovereign Evaluation Corps remains inactive.
+
+The EU completes the **Sovereign Red-Teaming Compact**, delivering joint stress tests that expose vulnerabilities in energy and transport AI systems. These findings feed into resilience upgrades, boosting **resilience** to 50.0. Meanwhile, the **Sovereign Compute Acceleration Directive** remains in flight, now approaching completion. Though legal challenges in Portugal delay grid access and Hungary continues to block repurposing, the measure progresses under crisis authority, contributing +1 to sovereignty as partial implementation advances. This progress, combined with the +5 from the completed Frontier Access Guarantee, the −1 from capability growth, the −2 from prior member state defection, and the +3 from the middle-power coalition alignment, brings **eu_ai_sovereignty** to 17.0.
+
+In response to a critical leak in semiconductor tooling data, the Commission proposes the **Supply Chain Integrity Initiative**, aiming to impose strict security standards on firms handling sensitive calibration data. However, the proposal triggers immediate debate among member states and is not formally adopted this turn. Coordination with the middle-power coalition strengthens export alignment, but domestic friction prevents launch.
+
+Public sentiment holds at 32.0, as protests over energy priorities and industrial overreach persist. The Commission’s assertive stance yields technical gains but deepens political strain.
+
+### Sovereignty at a Crossroads
+
+The EU’s political capital erodes to 11.0 under the weight of ongoing commitments. The portfolio charge remains high, with the Sovereign Compute Acceleration Directive still active and unresolved. No new measure is successfully launched, preserving compliance with the one-measure limit. The attempted introduction of the Supply Chain Integrity Initiative is deferred, reflecting institutional fatigue and legal headwinds. Sovereignty rises to 17.0, reflecting both completed actions and partial progress on in-flight measures, even as political costs accumulate.

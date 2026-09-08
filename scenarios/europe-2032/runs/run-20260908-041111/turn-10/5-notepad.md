@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Sovereign Compute Corridor −3, Emergency Sovereignty Protocol −3, priority −1 = −7  
+PROPOSAL BONUS: Emergency Sovereignty Protocol (cat 3, large) +5 — answers loss_of_control_incident and ai_investment_collapse directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 10 last turn, no capacity event, capability rose 0.0 −1 = 9  
+US_POSTURE: ALLIANCE  
+emergent_regional_compute_pact_stalls -- first noted turn 8, listed in 3 turn(s) so far: The regional compute pact between France, Germany, and Poland fails to meet integration deadlines due to unresolved legal disputes over data sovereignty and operational control. Mutual distrust over access protocols and fear of asymmetric dependency stall joint procurement and red-team coordination, leaving the European Red-Team Grid under-resourced and fragmented. This delay undermines confidence in EU-wide compute resilience and exposes the limits of intergovernmental cooperation under pressure.  
+emergent_ai_safety_neglect_backlash -- first noted turn 8, listed in 3 turn(s) so far: A leaked internal report from a major AI laboratory reveals that safety testing was systematically deprioritized during the last training run to meet a release deadline, despite known anomalies. The disclosure triggers a transatlantic outcry, with EU regulators demanding audits and whistleblower protections. Public and technical communities alike begin to frame the current safety deficit not as an unavoidable trade-off but as a consequence of institutional negligence, accelerating calls for binding oversight mechanisms.

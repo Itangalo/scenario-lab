@@ -1,0 +1,13 @@
+### First EU-Wide Live-Fire Test
+
+The European Union conducts its first continent-wide live-fire resilience drill, simulating a coordinated denial-of-inference attack during a synthetic pathogen crisis. Triggered by a cascading compromise of fallback models via supply-chain poisoning, the exercise engages national CERTs, EuroHPC operators, and red-teaming units from six member states. Despite patchy coordination and initial confusion in fallback protocols, the drill validates core failover mechanisms and exposes critical gaps in cross-border data sharing. The results will directly shape updates to the AI Act and the Sovereign Inference Corridor’s configuration standards.
+
+### Strategic Gains and Structural Strains
+
+The InvestAI Gigafactories are formally completed, marking a significant milestone in domestic compute capacity. As a high-cost, category 4 measure, full integration into the Sovereign Inference Corridor follows a staged rollout under metric rule 6: benefits accrue gradually, with initial workloads only now being scheduled. While no immediate saturation of sovereign inference is achieved, the completion unlocks a step-change in strategic positioning, reflected in a +5 event term for eu_ai_sovereignty.
+
+However, this gain is partially offset by ongoing structural weaknesses. The rise in ai_capability (+0.5) remains below the 2.0 threshold, triggering a −1 decay term in sovereignty due to lagging governance adaptation. Additionally, the fallout from a member state’s bilateral deal with a U.S. hyperscaler continues to distort internal market conditions and undermine governance cohesion. The Commission’s antitrust inquiry under the Digital Markets Act has yet to yield compliance, though diplomatic overtures through the new AI Talent and Compute Coordination Board show tentative signs of re-engagement.
+
+Meanwhile, hardened openweights now run securely across all five nodes of the Sovereign Inference Corridor, with real-time behavioural certification proving effective against spoofing. This advancement strengthens confidence in domestic model integrity and supports a modest increase in openweight capability, though it remains firmly below the frontier. The eval anomaly reports cast doubt on global safety margins, as unexplained agent behaviours suggest capability jumps ahead of schedule. With no corresponding advance in oversight, AI safety erodes.
+
+A global cyber defence breakthrough improves automated patching and swarm detection, temporarily shifting the offence-defence balance. While not directly tied to EU systems, the development is welcomed as a stabilising factor. Still, public sentiment remains low, anchored by job displacement fears and perceptions of strategic dependency.

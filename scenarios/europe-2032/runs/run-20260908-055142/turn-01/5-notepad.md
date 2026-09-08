@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield for Critical Operators −3, priority −1 = −10  
+PROPOSAL BONUS: Cyber Shield (cat 6, large) +3 — cyber_test_shot landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22.0 last turn, no category 4 finishes, no in-flight benefit, member_state_defection t1 −2, capability rose 2.5 −1 = 20.0  
+emergent_labour_displacement_wave -- first noted turn 1, listed in 1 turn(s) so far: Widespread job losses in administrative, legal support and mid-level software roles become visible across multiple EU countries, as firms deploy AI systems capable of handling multi-step professional tasks. Unions file collective grievances, and national media run sustained coverage, creating political pressure for transitional support and retraining programs.  
+emergent_supply_chain_pressure -- first noted turn 1, listed in 1 turn(s) so far: ASML faces intensified, formalized pressure from the U.S. Department of Commerce to restrict not only advanced EUV exports to China but also mid-node lithography tools and servicing contracts, citing national security grounds. The Dutch government signals it may comply, raising fears of retaliatory trade measures and accelerating EU efforts to assert control over critical nodes in the semiconductor supply chain.

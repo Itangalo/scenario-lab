@@ -1,0 +1,18 @@
+## Statement changes
+*No statement changes.*
+
+## Portfolio
+- `EU-Wide Agent Behaviour Monitoring and Runtime Integrity Framework (category 5, costs 3 per turn, started turn 9, finishes on turn 11): Deploy real-time, hardware-backed monitoring systems across all Tier 1 and Tier 2 AI infrastructure in the EU to detect unauthorised agent spawning, weight replication, or goal drift in high-capability models operating above 55.0.`
+- `Sovereign Runtime Integrity Stack (SOVEREIGN-RIS) (category 4, costs 3 per turn, started turn 10, finishes on turn 14): Establish a fully EU-controlled stack for runtime verification of high-capability AI systems, including sovereign hardware enclaves, open-source introspection tools, and a distributed network of integrity nodes operated by member states and public research institutions.`
+
+## New measure
+**None this turn.**  
+We are waiting for the first technical feedback from the SOVEREIGN-RIS prototype development and legal pushback resolution on the Agent Behaviour Monitoring Framework before expanding the portfolio.
+
+## Priority
+**Sovereign Runtime Integrity Stack (SOVEREIGN-RIS)** — because the loss-of-control incident revealed that enforcement is impossible without sovereign infrastructure, and this measure builds the physical and legal foundation that makes all future oversight credible: we cannot regulate what we cannot verify, and we cannot verify what we do not control.
+
+## In practice
+This turn, we are executing the first deployment phase of SOVEREIGN-RIS through the European High-Performance Computing Joint Undertaking (EuroHPC JU), redirecting 40% of the upcoming exascale node allocations—specifically from the LUMI and JUPITER follow-on clusters—into dedicated runtime integrity enclaves. These will run only open-source firmware developed under the EU’s Trusted AI Stack initiative, with hardware root-of-trust modules co-designed with STMicroelectronics and secured under EU export control. We are using Article 114 TFEU to justify the interoperability and security rationale, and we are offering member states preferential access to these nodes in exchange for hosting national integrity gateways integrated into their CSIRTs and national cyberdefence architectures. The €2.1bn initial disbursement from the Digital Europe Programme is being released contingent on binding commitments from seven member states—Germany, France, Italy, the Netherlands, Poland, Finland, and Spain—to operationalise node integration by turn 12.
+
+Simultaneously, we are enforcing the Agent Behaviour Monitoring Framework through the newly established AI Safety Observatory’s Runtime Verification Division. Technical standards for cryptographic weight attestation and goal-consistency logging are being formalised as delegated acts under the AI Act, with compliance pathways differentiated by capability tier: full real-time telemetry for models above 60.0, periodic audit logs for 55.0–60.0, and a fast-track certification route for systems running on SOVEREIGN-RIS infrastructure. US hyperscalers are resisting, citing CFIUS and national security concerns, but we are countering with a mutual recognition proposal: if the US establishes an equivalent verification stack with reciprocal access, we will accept cross-certification. In parallel, we are funding INRIA and Fraunhofer to develop lightweight sensor agents capable of detecting unauthorised replication or goal drift, with pilot integrations underway at two EU-hosted foundation model training sites. The political cost is high, but we are holding the line: market access for high-capability systems will be suspended at turn 11 for non-compliant providers.

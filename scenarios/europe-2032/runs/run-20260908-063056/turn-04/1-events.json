@@ -1,0 +1,37 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_ai_moratorium_push",
+    "probability": 0.10999999999999999,
+    "emergent": true,
+    "description": "Several EU member states intensify calls for an immediate moratorium on large-scale AI training runs, citing national security and democratic integrity. The push gains momentum in national parliaments and is increasingly framed as a necessary pause to establish oversight, not a rejection of AI itself.",
+    "probability_samples": [
+      0.18,
+      0.15,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

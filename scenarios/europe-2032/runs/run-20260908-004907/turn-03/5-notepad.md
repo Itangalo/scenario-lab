@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, EU SAFM Directive −3, Public Audit Framework −3, Pause Frontier Deployment −3, priority −1 = −16  
+PROPOSAL BONUS: Pause Frontier Deployment Licenses (cat 3, large) +4 — addresses openweight_frontier_release and ai_investment_collapse directly, both this turn, high severity  
+LEGITIMACY LENDS: none (capital 29.0 > sentiment 33.0 → no adjustment)  
+SOVEREIGNTY: 20.0 last turn, no capacity event, capability rose 1.5 (less than 2 → no −1), no category 4 completion or in-flight gain = 20.0  
+Emerging developments (tracked):
+- `emergent_global_ai_research_shift` -- first noted turn 1, listed in 3 turn(s) so far: A coalition of non-aligned research institutions in Europe, Japan, and Canada begins an open, safety-focused AI development initiative, explicitly designed to bypass U.S. and Chinese dominance. It gains early traction by leveraging open-weight models and shared evaluation frameworks, shifting the perception of where frontier-adjacent innovation can occur.
+- `emergent_public_outrage_over_data_centers` -- first noted turn 1, listed in 3 turn(s) so far: Protests erupt in several EU member states against the environmental impact and perceived lack of public benefit from large data centers, fueled by rising energy prices and visible AI-driven job displacement in creative sectors. Local governments begin to impose moratoriums, slowing new deployments.

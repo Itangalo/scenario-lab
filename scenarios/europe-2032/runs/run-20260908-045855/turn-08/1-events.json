@@ -1,0 +1,48 @@
+[
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.12666666666666668,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "opaque_reasoning",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_open_weight_red_team_initiative",
+    "probability": 0.22999999999999998,
+    "emergent": true,
+    "description": "The EU-Japan-Canada red-teaming initiative expands its scope beyond vulnerability assessments, conducting live defensive drills against simulated autonomous cyber agents targeting energy and transport systems. Results show measurable improvement in detection and response times, prompting informal adoption by several EU member states. However, without formal EU integration, its reach remains limited to technical communities and pilot programs.",
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

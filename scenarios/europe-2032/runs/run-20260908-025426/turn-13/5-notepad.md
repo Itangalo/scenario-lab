@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Critical Capability Moratorium Framework finished, AI Incident Coordination Cell Activation & Expansion −3, Secure Critical Research Infrastructure −3, Cyber Emergency Response Directive −3, Sovereign Control Enforcement Regime −3, Sovereign Assurance Stack Development Programme −3, priority −1 = −16  
+PROPOSAL BONUS: Sovereign Assurance Stack Development Programme (cat 5, large) +5 — direct response to loss_of_control_incident and eu_frontier_access_denied, both severe and this turn  
+LEGITIMACY LENDS: capital 5, sentiment 50 -> none  
+SOVEREIGNTY: 18.0 last turn, no capacity event, capability rose 4.0 −1 = 14.0  
+US_POSTURE: CONSOLIDATION  
+Emerging developments: `emergent_scientific_dissidence` -- first noted turn 12, listed in 2 turn(s) so far: A growing number of researchers in EU-affiliated labs begin leaking internal safety assessments and model fragments through decentralized networks, arguing that institutional oversight has failed. The leaks reveal unresolved control failures in systems operating at the frontier, and spark debate within the scientific community about ethical disclosure. This creates tension between security and transparency, with some member states calling for criminalization of such acts.

@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Cyber Resilience Directive −3, Expand Open-Source Research Alliance −3, Accelerate Permitting for Sovereign Compute Zones −3, priority −1 = −16  
+PROPOSAL BONUS: Accelerate Permitting (cat 4, large) +1 — addresses ongoing compute delays under emergent_regulatory_fragmentation, but not in direct response to a recent severe event  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21 last turn, Gigafactories in flight +1, capability rose 2.0 −1 = 21 → adjusted to 22.0 due to early permitting progress and open-weight momentum  
+US_POSTURE: pending  
+emergent_regulatory_fragmentation -- first noted turn 1, listed in 3 turn(s) so far: National AI regulatory bodies continue to diverge in enforcement practices despite the AI Act's harmonization goals, driven by differing national risk tolerances and industrial priorities. This creates compliance friction for cross-border AI deployment and weakens the Union's collective bargaining position externally.

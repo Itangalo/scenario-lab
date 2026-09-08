@@ -1,0 +1,11 @@
+### Strategic Drift and External Pressure  
+The EU doubled down on industrial scale-up, launching accelerated-permitting zones to fast-track AI infrastructure. Yet the move faced immediate headwinds. Central European member states, already bound by bilateral hyperscaler deals, resisted ceding control, weakening cohesion. The promised €15bn cohesion top-up failed to secure full buy-in, and the draft governance statute for the InvestAI Gigafactories stalled in internal consultations, delaying final site selection.
+
+### Sovereignty Undermined  
+Washington’s coercion of ASML to restrict exports of mature lithography tools — not just advanced nodes — exposed the EU’s single-point dependency. The Union’s leverage over its own supply chain evaporated overnight. Simultaneously, a member state quietly signed a side agreement with a U.S. cloud provider, granting preferential access to future AI capacity, directly undermining the EU’s unified stance. This defection, framed domestically as economic pragmatism, was read externally as fragmentation.
+
+### Cyber Shock and Safety Erosion  
+A stealthy intrusion across critical infrastructure operators — including two EU grids — revealed deep, undetected access. Though no damage was done, the incident underscored systemic fragility. The attack’s sophistication, possibly AI-aided, outpaced existing detection. With no new safety measures yet landed, and AI capability advancing, confidence in control eroded. Model reasoning remained opaque, and the gap between capability and assurance widened.
+
+### Political Capital Spent, Gains Unclear  
+The EU advanced one large category 4 measure and designated it as the current priority, straining its political capital. The proposed second measure did not clear internal coordination and remains under negotiation, with no implementation progress this turn. Public sentiment dipped as job displacement concerns grew and infrastructure faced local opposition. The portfolio cost of the active measure accounts for a net −3 point charge to political capital, with no offsetting legitimacy gains. External shocks delivered no credit, but their penalties are captured in the sovereignty and resilience metrics, not as additional unmodelled drains. The strategic commitment deepened, but its execution faltered under pressure.

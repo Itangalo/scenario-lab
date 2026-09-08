@@ -1,0 +1,29 @@
+Secure sovereign operational control over AI systems in critical public infrastructure
+
+## Statement changes
+``modify `two_year_commitment` (commitment): Secure sovereign operational control over AI systems in critical public infrastructure``
+- Trigger: the two-year commitment period closes this turn
+
+## Portfolio
+- `Sovereign Talent Attraction and Retention Programme (category 4, costs 3 per turn, started turn 6, finishes on turn 8): Establish a pan-European fast-track visa, housing, research funding, and security clearance framework to recruit and retain 1,000 frontier AI researchers and engineers over the next three years, with binding commitments to EU-based deployment and development` — **finished**
+- `Sovereign AI Operating Cluster (category 4, costs 3 per turn, started turn 6, finishes on turn 9): Establish a federated network of EU-anchored compute clusters, each co-located with energy sources and connected via a sovereign optical backbone, operated under joint EU-member state authority with priority access for public missions and vetted research` — **finished**
+- `Sovereign Agent Deployment Programme (category 9, costs 3 per turn, started turn 7, finishes on turn 10): Deploy sovereign AI agents—built from open-weight-hardened models, operated on EU-anchored compute, and staffed by talent from the Sovereign Talent Programme—into critical public functions with real operational authority, starting with energy grid balancing and border threat detection`
+- `Emergency Cyber Resilience Surge (category 6, costs 3 per turn, started turn 8, finishes on turn 10): Accelerate the hardening of critical public services against AI-enabled cyber threats by fast-tracking deployment of AI-augmented intrusion detection, automated patching, and zero-trust architectures across energy, healthcare, and municipal systems`
+
+## New measure
+**Launch Sovereign Agent Operational Assurance Framework**  
+Establish a binding, auditable safety and control regime for sovereign AI agents in operation, requiring real-time monitoring, human-in-the-loop escalation protocols, and public reporting on incidents and near-misses.
+
+`Category: 1 (Evaluation and oversight)`  
+`Size: large`  
+`Finishes on turn: 12`  
+`Targeted effect:` increases ai_safety by 10–15 points by ensuring deployed sovereign agents are continuously evaluated and constrained; builds public trust and creates a model for broader agent governance  
+`Applies to:` EU institutions, ENISA, Frontex, national energy regulators, operators of essential services using sovereign AI agents, and the Sovereign Agent Deployment Programme
+
+## Priority
+**Sovereign Agent Deployment Programme** — because the openweight_frontier_release and ongoing cyber incident have confirmed that capability is diffusing faster than control can be established, and our only path to relevance is demonstrating that the EU can run AI systems safely and decisively in high-stakes environments; this programme is now the frontline of both sovereignty and safety.
+
+## In practice
+This turn, we are operating under dual pressure: the openweight_frontier_release has embedded advanced AI capabilities into thousands of unsecured systems, while our own sovereign agents enter live operation in critical infrastructure. The Sovereign AI Operating Cluster reaches completion this turn, delivering five co-located compute nodes across Finland, Sweden, and Austria—each physically anchored, energy-secured, and under EU legal jurisdiction. This is the backbone our agents run on, and its completion allows us to shift from preparation to sustained operation. The Sovereign Agent Deployment Programme is now live: the Nordic-Baltic grid-balancing agent has managed real-time load adjustments during two major cold fronts, reducing reliance on fossil peaker plants by 12% in trial weeks, while Frontex’s border correlation agent has flagged three cross-border smuggling patterns previously missed by human analysts. Both operate under human-in-the-loop protocols, with escalation triggers and audit trails monitored by national authorities and ENISA.
+
+At the same time, the Emergency Cyber Resilience Surge accelerates, with €45bn disbursed through the Digital Europe Programme and the Civil Protection Mechanism. ENISA coordinates deployment of AI-augmented intrusion detection systems to 87% of NIS2-designated entities, though adoption in mid-sized municipalities and regional hospitals lags due to staffing shortages. We respond by expanding the EU Cyber Rapid Response Framework, deploying 18 mobile teams to assist in configuration and training. Despite these efforts, ai_safety remains at 29.0—frontier developers are advancing unchecked, and our own assurance regime lags behind deployment. That is why we launch the **Sovereign Agent Operational Assurance Framework**: a new measure to close the gap between capability and control in our own systems. Using Article 114 TFEU for internal market harmonisation, we propose binding requirements for real-time interpretability, third-party audit access, and public incident logging for all sovereign agents. The framework will be enforced by a joint ENISA-EU AI Office unit, with penalties for non-compliance. We will negotiate the directive in the Internal Market Council, where Germany and France support strong oversight, but Hungary and Poland resist new compliance burdens. To secure agreement, we offer co-financing of 70% for monitoring infrastructure and tie access to InvestAI compute to compliance. This is not just about safety—it is about proving that the EU can govern what it deploys, and thereby earn the trust to do more.

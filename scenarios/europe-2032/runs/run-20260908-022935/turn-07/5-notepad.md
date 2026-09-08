@@ -1,0 +1,7 @@
+`US_POSTURE: RETRENCHMENT`  
+`emergent_regulatory_backlash` -- first noted turn 7, listed in 1 turn(s) so far: The coalition pushing for binding restrictions on open-weight models above capability level 40 intensifies its campaign, leveraging the recent breach and declining public sentiment. National parliaments in Germany, the Netherlands, and Belgium begin drafting emergency legislation, and the European Parliament schedules a fast-tracked debate. The movement gains momentum as security experts warn that level 45 open models are already weaponized in the wild.  
+`emergent_regulatory_moratorium_push` -- first noted turn 7, listed in 1 turn(s) so far: The formal proposal for an EU-wide moratorium on open-weight models above capability level 43 gains renewed traction following the uncontrolled agent incident. With early backing from Austria, Finland, and Luxembourg, the initiative is reframed as a necessary emergency measure rather than a precaution. Civil society groups organize a cross-border petition, and the European Data Protection Supervisor issues a statement supporting immediate action, citing systemic risks to democratic infrastructure.  
+PORTFOLIO CHARGE: Launch Sovereign AI Pilot Programme −3, Redirect Sovereign Stack Development −3, priority −1 = −7  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21 last turn, InvestAI Gigafactories finishes t7 +2, Redirect Sovereign Stack Development in flight +1, supply_chain_coercion t7 −2, capability rose 1.0 −1 = 23

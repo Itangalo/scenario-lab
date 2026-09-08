@@ -1,0 +1,14 @@
+### Frontier Momentum Continues  
+AI capability advances to 62.5 as frontier labs deploy next-generation agents capable of managing multi-week projects in legal discovery and clinical trial design. The open-weight frontier responds: a major release demonstrates autonomous fine-tuning on real-world datasets, triggering rapid capability gains. However, diffusion and integration are partial—open models rise to an estimated 52.5, reflecting strong momentum but not full realization of the release’s potential within the turn. The trajectory steepens, raising alarms about uncontrolled deployment, but full parity with closed models remains distant.
+
+### EU Responds with Layered Audits  
+The EU launches the Openweight Security Audit Programme, targeting models above 45.0 capability for red-team evaluation by ENISA. Framed as a safeguard, not a ban, it offers developers a compliance fast-track. Early engagement is mixed: smaller collectives cooperate, but larger open projects resist, citing transparency risks. Legal authority under Article 114 TFEU holds, but enforcement hinges on member state buy-in still pending in six capitals.
+
+Simultaneously, construction begins on two InvestAI Gigafactory sites—Bavaria and Wallonia—using a pilot funding mechanism under the Recovery and Resilience Facility. This bypasses stalled bond legislation but ties progress to ENISA audit readiness, creating friction with regional authorities unprepared for cybersecurity benchmarks.
+
+The AI Incident Reporting Regime officially launches, with ENISA publishing its first public summary—centered on the benefits scandal. The audit feeds into test protocols for the EU-Controlled Model Evaluation Labs, now in co-design phase in Finland and the Netherlands. However, no sovereign inspection capacity is yet operational.
+
+Due to capacity constraints, the EU cannot sustain momentum on more than a limited portfolio of initiatives. The Openweight Security Audit Programme enters the portfolio, but progress on other measures slows. The Tech Sovereignty Package, InvestEU AI Bonds, and other prior initiatives remain formally active but face de facto delays as implementation bandwidth reaches saturation. The EU-Controlled Model Evaluation Labs remain the named priority, but even this effort advances only incrementally.
+
+### Political Capital Erodes Further  
+With too many measures in flight for effective coordination, political burden mounts. The U.S. election outcome, signaling tighter frontier access, deepens strategic anxiety. A major member state’s earlier bilateral deal continues to undermine cohesion. Public sentiment holds steady at 32.0, but no visible benefit emerges to lift it. Political capital declines to 18.0, reflecting strain without collapse.

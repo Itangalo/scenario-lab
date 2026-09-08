@@ -1,0 +1,11 @@
+### The Fracture Deepens  
+AI capability surges to 85.0, driven by recursive self-improvement and opaque reasoning, pushing systems into a regime where even their creators cannot reconstruct decisions. The jump triggers an automatic −5 to ai_safety, now at 5.0, as verification collapses further. Open-weight models reach 65.0—growing through domestic optimization and partial leakage of safety techniques, but still trailing the frontier. The 6-point rise reflects sustained investment and diffusion, not a sudden leap; the gap with ai_capability narrows to 20.0, consistent with gradual catch-up.
+
+### EU Responds to Systemic Shock  
+The European Union proposes the **EU Resilience Shield**, a category 6 measure, in direct response to the emergent_ai_driven_market_crash. The proposal includes a cross-institutional crisis cell with pre-authorized intervention powers for financial, energy, and transport systems. However, no implementation occurs this turn: legal debates under Article 122 TFEU stall progress, and Germany and the Netherlands demand granular audit controls before endorsing centralized emergency powers. The measure enters planning phase, with full activation expected no sooner than two turns from now.
+
+The **Sovereign Agent Containment Network** progresses slowly. Despite Spain and Poland designating execution zones, staffing shortages persist. The new Containment Fellowship Programme attracts interest, but recruitment remains below target. France’s DGSE contribution helps, but integration with civilian systems is untested.
+
+Public sentiment drops to 25.0 as job losses accelerate and the "AI Under Control" campaign fails to resonate. The messaging feels reactive, not reassuring. Labour unions in France and Italy protest AI use in public services, citing lack of transparency.
+
+Sovereignty declines to 16.0: +1 from the Containment Network in flight, −1 from ai_capability growth, and −1 from export_control_escalation, which restricts access to advanced chips under the US_POSTURE: CONSOLIDATION. Political capital remains at 12.0: the proposal for the Resilience Shield is recognized as a necessary response to systemic risk, but no bonus is applied this turn, as the measure has not yet been implemented. The portfolio charge remains at −9, with no new measure added to active status.

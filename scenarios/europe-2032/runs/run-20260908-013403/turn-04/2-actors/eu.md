@@ -1,0 +1,29 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Secure autonomous AI capability to prevent strategic dependency and catastrophic risk, but only through mechanisms that restore and sustain public legitimacy — control, transparency, and enforceable safety — not through deployment at any cost; **now explicitly coupled with a binding obligation to harden essential services against AI-amplified threats, because sovereignty cannot exist where continuity does not**  
+`Trigger: cyber_major_incident, backlash_physical`  
+`Grounds:` The cyber_major_incident has evolved from disruption into systemic erosion: seven member states’ public services remain partially offline, and the backlash_physical wave confirms that the public no longer distinguishes between AI as a tool and AI as a threat. Data centre occupations and grid sabotage are not fringe acts—they are symptoms of a legitimacy deficit that no amount of compute can overcome. Our sovereignty is not just in the chips we control, but in the systems we can keep running. The two-year commitment must now encompass not only building autonomous capability but ensuring it does not become a vector for our own collapse. We are not abandoning the pursuit of EU-led frontier AI—we are anchoring it in continuity. Without resilience, capability is a liability.
+
+## Portfolio  
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`  
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`  
+- `Emergency Resilience Surge (category 6, costs 3 per turn, started turn 2, finishes on turn 4): Stand up binding cyber and biosecurity hardening across all essential services in the EU within 18 months` **— now finished**  
+- `Sovereign Safety Audit Regime (category 1, costs 3 per turn, started turn 2, finishes on turn 5): Establish a mandatory, pre-deployment audit framework for all AI systems above a defined capability threshold, enforced by a newly empowered European AI Safety Authority, with access to model weights and training data for EU-anchored systems`  
+- `Critical Incident Response Protocol (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Establish a binding, EU-wide protocol for rapid detection, classification, and coordinated response to AI-generated cyber incidents, with mandatory reporting and live red-teaming of essential service providers`
+
+## New measure  
+**Frontier Compute Co-Location Mandate**  
+Require all AI training runs above 10^25 FLOP/s on models with capability above 50.0 to be physically executed on EU-anchored compute infrastructure, with real-time monitoring by the European AI Safety Authority.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 6`  
+`Targeted effect:` eu_ai_sovereignty +10, ai_safety +5 (via enforceable access), openweight_capability -2 (slows leakage)  
+`Applies to:` All AI developers operating in or serving the EU market, with enforcement through licensing of high-capability deployments and conditioning of market access
+
+## Priority  
+**Frontier Compute Co-Location Mandate** — because the combination of `ai_capability` at 58.0 and `openweight_capability` at 44.0 confirms that the frontier is moving faster than oversight can follow, and unless we anchor the most dangerous training runs to EU soil and jurisdiction, we will never close the safety gap — nor will we ever build the sovereign capability we need
+
+## In practice  
+We are acting on the conviction that sovereignty is not just about ownership, but about jurisdiction: if the most powerful AI systems are trained beyond our reach, we cannot audit them, secure them, or stop them. This turn, we are launching the Frontier Compute Co-Location Mandate to bind the highest-risk training runs to EU infrastructure. The rule is clear: any model above 50.0 capability or trained above 10^25 FLOP/s must run on compute legally anchored within the Union, with real-time monitoring access granted to the European AI Safety Authority. This is not a ban — it is a redirection. We are offering developers a fast-track licensing pathway for compliant systems, and we are reserving 30% of the InvestAI Gigafactories’ first-phase capacity exclusively for co-located frontier runs. The legal basis is Article 114 TFEU, framed as a digital product safety imperative, and we are coordinating with the Council’s Internal Market configuration to pre-empt challenges.
+
+At the same time, we are closing out the Emergency Resilience Surge: the €15bn in conditional grants has been allocated, and binding hardening is now in force for healthcare, energy, and finance. Germany has accepted a modified red-teaming protocol under national supervision, and Spain has received technical assistance to meet reporting standards. The Critical Incident Response Protocol is entering its second phase — live red-teaming begins in April, using adversarial models developed in partnership with the French and Dutch national labs. On the audit front, we are pressing the Sovereign Safety Audit Regime through trilogue, using the cyber_major_incident as leverage to narrow legal exemptions. And we are watching public sentiment closely: with backlash_physical escalating, we are launching a targeted communication campaign through the Digital Europe Programme to explain how co-location and hardening are not just controls, but conditions for safe adoption. We are not slowing AI — we are making it governable.

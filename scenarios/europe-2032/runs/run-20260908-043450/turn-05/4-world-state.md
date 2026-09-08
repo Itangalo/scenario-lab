@@ -1,0 +1,13 @@
+### A Breakthrough in the Shadow of Crisis
+
+A major biological incident unfolded this autumn: a modified pathogen, linked to AI-designed protein structures, escaped a research facility in Southeast Asia. The release caused dozens of infections before containment, shocking global health systems and reigniting debates over AI’s unchecked reach. Yet amid the crisis, a rare breakthrough emerged—researchers at a European-led consortium unveiled a new interpretability method that allows real-time tracking of model reasoning in high-stakes deployments. The technique, rapidly adopted by several frontier labs, marks a tangible step toward control.
+
+The EU, reeling from its earlier failures, pivoted hard toward integration. The Integrated Sovereign Defence Protocol advanced into implementation, linking ENISA, national CERTs, and the AI Office through secure data gateways. Germany and France agreed to co-chair the crisis cell, though smaller states resisted full data pooling, demanding audit guarantees. Preparatory work began on what may become the Critical Incident Integration Directive, including scoping discussions and interagency coordination. However, due to the existing portfolio load—four large measures still in flight—no formal proposal was made, and the measure remains in incubation. Full drafting is deferred pending capacity review, with consultations expected only if formally proposed next turn.
+
+The Frontier Model Evaluation Consortium, having failed to evaluate any frontier model, was repurposed to reverse-engineer threats from attack data. It will now feed findings into the Defence Protocol, turning defensive experience into predictive insight. Meanwhile, the Tech Sovereignty Package stalled—U.S. retrenchment scared private investors, and no new commitments were secured.
+
+Political capital stabilized slightly. The portfolio load remains heavy—four large measures still in flight—including the Integrated Sovereign Defence Protocol and the repurposed Consortium effort—but no additional measure was formally launched. The priority cost −1 persists, and no measure concluded this turn. The proposal bonus for starting the Directive process is deferred until actual proposal; preliminary work contributes modestly to momentum, reflected in a small uptick in political capital and sentiment.
+
+### The American Turn
+
+The 2028 U.S. election was won by the candidate advocating retrenchment. The implications for transatlantic AI cooperation remain uncertain as the transition unfolds. Europe watches closely, aware that a shift in Washington could reshape the global landscape—but the nature and timing of those changes will only become clear in the coming months.

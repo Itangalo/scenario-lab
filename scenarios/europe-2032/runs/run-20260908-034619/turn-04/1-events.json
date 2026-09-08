@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.28,
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_ai_talent_drain",
+    "probability": 0.13333333333333333,
+    "emergent": true,
+    "description": "A growing wave of European AI researchers and engineers accept positions with well-funded US startups offering remote work, driven by faster career progression and access to frontier compute. The trend accelerates as EU sovereign compute initiatives remain in planning, raising alarms about long-term erosion of technical capacity.",
+    "probability_samples": [
+      0.22,
+      0.18,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  }
+]

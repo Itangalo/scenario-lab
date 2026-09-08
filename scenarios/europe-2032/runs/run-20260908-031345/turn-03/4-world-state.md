@@ -1,0 +1,11 @@
+### The Weight of Crisis
+
+Global AI capability advanced to 59.0, driven by algorithmic efficiency gains and compressed development cycles, despite the ongoing investment downturn. The EU attempted to seize the moment with its priority measure—redirecting €8bn from resilience funding to sovereign compute startups—but progress stalled. Legal challenges from Hungary and political resistance from Poland deepened, with Warsaw demanding co-governance rights over new labs. The European Commission’s attempt to reframe the move as a recalibration—compressing cyber hardening to Tier 1 systems to free up funds—only widened internal fractures. Only €4bn has been conditionally released, tied to three startups, pending a European Court of Justice decision on state aid.
+
+A new small measure, **Establish Public Evaluation Unit for Open-Weight Models**, was proposed to address rising misuse risks. Though modest, it signals a shift toward proactive oversight. However, staffing remains skeletal, and its authority hinges on untested legal grounds. No immediate release is blocked, but the unit is expected to assess the next wave of open models above 45.0.
+
+Public sentiment eroded further, falling to 34.0, as backlash against unchecked AI expansion intensified. A wave of local campaigns against data centre construction and AI in public services gained traction, with parties across the spectrum adopting anti-AI rhetoric. The narrative of "technocratic overreach" hardened, particularly in regions excluded from the new compute investments.
+
+Resilience dipped to 37.0, as broader cyber-hardening slowed and only core sectors advanced. AI safety declined to 29.0, as no new safeguards landed on deployed systems and the capability-safety gap widened. Openweight capability rose to 43.5, as older models were fine-tuned and redistributed despite the investment freeze.
+
+EU political capital fell sharply to 23.0, burdened by multiple large measures in flight and internal dissent. Sovereignty dipped to 22.0, as the failure to secure access during a critical window negated early momentum.

@@ -1,0 +1,304 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7483260858061185,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.820956310810436,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3394441572544906,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.015076720483948147,
+    "triggered": true
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.016666666666666666,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.05,
+      0.0,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.05000000000000001,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.05,
+      0.1,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5316507702415428,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.662289050883503,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.4323523296007763,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.03666666666666667,
+    "probability_samples": [
+      0.11,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.690129689262522,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.21275028905742,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.13,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.20247379848768854,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8364619802888975,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.03666666666666667,
+    "probability_samples": [
+      0.11,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.49753704964952805,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.3460393928721942,
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_ai_outage",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "A cascading failure in globally interdependent AI infrastructure causes widespread service disruptions across finance, logistics, and public administration. The outage originates from a self-reinforcing loop between multiple autonomous systems managing critical dependencies, exposing systemic fragility. Investigations reveal no single point of failure, but rather a loss of coherence in the stack as models trained on each other's outputs diverge from human-understandable logic.",
+    "probability_samples": [
+      0.28,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.40242527486726165,
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_safety_diaspora",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "A wave of defections from leading AI laboratories occurs as researchers and engineers, alarmed by the total collapse of safety oversight, form independent collectives to develop open, verifiable control frameworks. These groups begin publishing low-level interpretability tools and containment protocols outside institutional channels, creating a decentralized safety ecosystem. The movement gains traction among mid-tier developers and public-sector labs seeking alternatives to uncontrolled frontier models.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6729768214423144,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7771711452274046,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated effort among EU member states, Japan, South Korea, and Taiwan to jointly fund and operate a shared sovereign compute grid for AI safety research and critical infrastructure resilience, using export-controlled hardware and open-weight models up to capability 75. The initiative emerges in response to repeated loss-of-control and cyber incidents, aiming to create a trusted stack outside U.S. and Chinese influence. It gains urgency as the EU’s political capital is near collapse, but its survival depends on cohesion and external funding.",
+    "emergent": true,
+    "id": "emergent_sovereign_compute_pact",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "An underground network of open-weight AI developers and biohackers demonstrates a self-replicating model agent capable of running on consumer GPUs and autonomously optimizing biological designs for stability and delivery. The agent, derived from leaked frontier architectures, reaches capability equivalent to 70 on the openweight scale. It spreads through decentralized networks before any authority can respond, marking a qualitative shift in proliferation risk and rendering capability thresholds meaningless.",
+    "emergent": true,
+    "id": "emergent_decentralized_agent_leak",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A coordinated effort by mid-sized EU member states, alarmed by total dependence and collapsing political capital, launches an emergency sovereign AI acceleration program using seized and repurposed hardware, open-source model fragments, and emergency funding diverted from decommissioned infrastructure. It is fragile, under-resourced, and legally precarious, but represents the first autonomous EU action in years.",
+    "emergent": true,
+    "id": "emergent_sovereign_scrap",
+    "probability": 0.08,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.24
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "An underground network of researchers and dissident engineers begins distributing a stealth-optimized, capability-preserving variant of the latest open-weight models, stripped of safety envelopes and designed to operate undetectably on consumer hardware. It spreads through academic and maker communities, accelerating capability diffusion outside state control.",
+    "emergent": true,
+    "id": "emergent_shadow_weights",
+    "probability": 0.10333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.31
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

@@ -1,0 +1,10 @@
+PORTFOLIO CHARGE: ECAP −3, priority −1 = −4  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 19.0 last turn, no capacity event, capability rose 0.5 −1 = 19.0  
+US_POSTURE: CONSOLIDATION  
+emergent_regional_oversight_consortium -- first noted turn 6, listed in 7 turn(s) so far: The consortium of Germany, the Netherlands, and Finland continues to shape national enforcement practices and publish joint risk assessments, increasing pressure on Brussels to formalise its role or risk fragmentation.  
+emergent_global_ai_laboratory_audit_movement -- first noted turn 9, listed in 4 turn(s) so far: The global campaign for public audits of frontier training runs gains momentum, with petitions delivered to major labs and supportive editorials in key scientific journals. Its framework is cited in early debates around EVAI.  
+emergent_finnish_biosecurity_initiative -- first noted turn 9, listed in 5 turn(s) so far: Finland's open-source bio-design detection toolkit is now integrated into screening protocols in six member states and discussed at WHO level, establishing a precedent for technical transparency in high-risk domains.  
+emergent_finnish_biosecurity_initiative -- first noted turn 12, listed in 2 turn(s) so far: Finland's open-source bio-design detection toolkit is formally adopted into EU-wide screening protocols for synthetic biology grants and infrastructure access. This establishes a de facto standard across member states and strengthens cross-border biosecurity coordination, marking a rare case of bottom-up technical leadership shaping Union-level policy in a high-risk domain.  
+emergent_global_ai_laboratory_audit_movement -- first noted turn 12, listed in 2 turn(s) so far: The global campaign for public audits of frontier training runs gains significant traction, with coordinated civil society actions targeting multiple labs simultaneously. Regulatory bodies in three major jurisdictions open consultations on mandatory audit access, citing the movement's technical framework as a viable model. This increases pressure on closed labs to demonstrate safety claims under independent scrutiny.

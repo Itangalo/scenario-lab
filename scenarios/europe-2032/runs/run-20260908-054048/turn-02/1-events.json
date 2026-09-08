@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cyber_defence_breakthrough",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_pathogen_design_breakthrough",
+    "probability": 0.2833333333333333,
+    "emergent": true,
+    "description": "An international consortium of researchers and biosecurity watchdogs publishes a joint report demonstrating that current AI models can now design functional, transmissible human pathogens given only minimal input, using publicly available tools and open-weight models. The report includes redacted examples and calls for urgent global coordination on DNA synthesis screening. While not a live release, the findings are peer-reviewed and replicated across three labs, forcing regulatory bodies to confront the reality of democratized bio-risk.",
+    "probability_samples": [
+      0.35,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

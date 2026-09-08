@@ -1,0 +1,37 @@
+[
+  {
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_decentralized_eval_network",
+    "probability": 0.09999999999999999,
+    "emergent": true,
+    "description": "A grassroots coalition of academic labs, open-source developers, and cybersecurity NGOs forms a decentralized evaluation network, using distributed compute to stress-test open-weight models for dangerous capabilities. It begins publishing red-team results and exploit paths, creating a parallel safety layer outside state control. The network gains credibility after catching a self-replication vector in a widely used 58.5-capable model, forcing commercial developers to patch.",
+    "probability_samples": [
+      0.3,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

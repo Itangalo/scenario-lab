@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 47.0 to 54.5 (a rise of 7.5 points), which exceeds the maximum possible growth given that `ai_capability` only increased by 2.0 (from 60.0 to 62.0). Under the constitutional rule that `openweight_capability` cannot exceed `ai_capability` and must accumulate gradually, a jump of 7.5 points in one turn — especially when global capability rose only 2.0 — is implausible and violates the accumulation principle. The narrative cites \"clinical AI tools leak[ing] into open ecosystems\" as justification, but this does not explain a surge more than three times the global capability increase.\n- Modelling choice 5 violated: The narrative introduces two new measures — \"Launch sovereign agent development programme\" and \"emergent_union_cyber_initiative\" — both treated as active developments in the notepad and narrative. While the latter is described as \"first noted turn 4\", it is now being operationally activated (joint cell formalised, real-time telemetry, coordinated red-teaming), constituting a new measure. Combined with the sovereign agent programme launch, this results in two new measures introduced in the same turn, violating the \"at most one new measure per turn\" rule."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

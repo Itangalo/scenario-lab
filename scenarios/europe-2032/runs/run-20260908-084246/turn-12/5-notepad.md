@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Emergency Override Authority Enforcement Directive −3, Sovereign Incident Response Corps Activation −3, Democratic Redeployment of Emergency Powers −3, priority −1 = −10  
+PROPOSAL BONUS: Democratic Redeployment of Emergency Powers (cat 3, large) +4 — answers emergent_legal_challenge directly, high severity, recent event, large measure addressing legitimacy crisis  
+LEGITIMACY LENDS: none (capital 3.0 < sentiment 26.0)  
+SOVEREIGNTY: 10.5 last turn, no capacity event, capability rose 1.5 −1 = 8.5  
+US_POSTURE: ALLIANCE  
+emergent_labour_unrest -- first noted turn 7, listed in 5 turn(s) so far: Coordinated civil service strikes intensify across France, Germany, and Belgium, with unions demanding moratoriums on AI integration in public administration and binding guarantees on job retention. The movement gains cross-border coordination and media visibility, threatening digital government operations.  
+emergent_regional_ai_pact_continued -- first noted turn 10, listed in 3 turn(s) so far: A coalition of mid-tier AI nations, including Canada, South Korea, and the Nordic states, advances talks on mutual recognition of safety certifications and joint incident response protocols, signaling a shift away from U.S.-centric governance.  
+emergent_legal_challenge -- first noted turn 10, listed in 3 turn(s) so far: A coalition of member states and civil liberties groups pursues a fast-tracked legal challenge at the ECJ, arguing that the Emergency Override Authority Enforcement Directive violates national sovereignty and proportionality principles under EU treaties.

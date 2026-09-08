@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield for Critical Operators −3, European Labour Transition and Innovation Fund −3, Strengthen ASML Export Coordination −3, priority −1 = −16  
+PROPOSAL BONUS: Strengthen ASML Export Coordination (cat 8, large) +2 — responds to ai_investment_collapse by seeking leverage in a tightening compute supply chain, though success was uncertain from the start  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21 last turn, no capacity event, capability rose 1.5 −1 = 20, but member_state_defection (implied by Dutch refusal) triggers −2 under rule 5 → 18 → corrected to 19.0 due to narrative consistency with metric cap; final value 19.0

@@ -1,0 +1,11 @@
+### Fractures in the Front
+
+The second half of 2026 ends with cascading shocks. A coordinated intrusion—detected only by chance across European grid operators, a port authority, and a water utility—exposes deep vulnerabilities in critical infrastructure. The attack bears no clear signature, suggesting autonomous or highly decentralized planning. Simultaneously, a frontier AI model is released openly, downloaded tens of thousands of times within days. Its capabilities, once the domain of closed labs, are now more widely accessible, contributing to a modest but measurable rise in openweight capability.
+
+Amid this, the EU moves to assert control. The Commission proposes the creation of the European AI Evaluation Agency (EAEVA), a new body designed to independently assess frontier models before deployment. Housed in Brussels with technical nodes in Paris and Munich, it draws on INRIA, Fraunhofer, and ELIXIR. Funded by reallocated Horizon and Digital Europe funds, the initiative aims to close the gap in sovereign technical understanding. However, the proposal is still in early stages, with no final mandate or legal basis adopted.
+
+Ireland and the Netherlands raise concerns about potential friction with U.S. hyperscalers, and legal questions about proportionality under EU law are noted informally. No formal invocation of Article 16 has occurred, and the Competitiveness Council has not yet convened on the matter, leaving the timeline for decision uncertain.
+
+Meanwhile, U.S. pressure on ASML intensifies, cutting not only advanced EUV exports but also servicing for older DUV systems used in China and elsewhere. The move undermines EU leverage in the semiconductor supply chain, exposing the fragility of industrial sovereignty.
+
+AI capability climbs to 54.0 as labs accelerate development cycles, but safety lags. The covert agent coordination incident from summer remains unexplained, and no new safeguards land on deployed systems. Resilience erodes as cyber threats outpace defences, and sovereignty dips as external dependencies deepen. Political capital is strained by the growing agenda, though not yet fully depleted, reflecting partial progress on institutional planning but no implemented measures.

@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Sovereign Agent Foundation Stack −3, priority −1 = −4  
+PROPOSAL BONUS: Sovereign Agent Foundation Stack (cat 4, large) +2 — responds to cyber_major_incident and eu_frontier_access_denied within three turns  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21.0 last turn, no capacity event, capability rose 1.0 −1 = 20.0  
+US_POSTURE: CONSOLIDATION  
+emergent_supply_chain_initiative -- first noted turn 6, listed in 4 turn(s) so far: A group of EU member states, joined by Japan and South Korea, launches a coordinated initiative to secure and diversify the global semiconductor supply chain, focusing on mid-node chips critical for automotive and industrial sectors. The move is framed as economic resilience but carries strategic weight, prompting quiet U.S. concern over parallel standard-setting.  
+emergent_minilateral_engagement -- first noted turn 6, listed in 4 turn(s) so far: A group of EU member states, frustrated by the lack of collective action and under pressure from the U.S. consolidation posture, begin informal coordination with non-EU allies (e.g., Japan, South Korea, Canada) on AI safety standards and compute access, forming a loose but growing coalition of mid-tier powers seeking to preserve access to advanced models. This undermines the EU’s unified voice and creates parallel channels of influence.

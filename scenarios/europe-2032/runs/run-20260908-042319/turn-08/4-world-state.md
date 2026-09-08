@@ -1,0 +1,19 @@
+### A Shift in Focus
+
+With five major initiatives completed, the EU pivots from infrastructure to assurance. The *Black-Box Monitoring Sprint* is proposed as a new priority measure, directing ELLIS and ENISA to develop behavioural detection methods for opaque AI systems. Planning and scoping begin in Tübingen, Helsinki, and Prague, focusing on anomaly detection in output patterns, timing, and red-team interactions. However, the absence of a prior *Talent Anchoring Programme* in the record means no dedicated staff or funding stream is immediately available. As a result, the launch proceeds at reduced scale, dependent on repurposed internal resources and delayed hiring, with full deployment pushed back due to budget reallocation bottlenecks and ongoing legal consultations under Article 114 and emergency provisions under Article 122. These consultations proceed in parallel but face harmonisation challenges across member states.
+
+Northern member states express scepticism, citing the regional AI consortium’s parallel work on model transparency. This emergent *emergent_regional_aid_consortium* continues to grow, offering technical aid and secure compute access to smaller EU states in exchange for alignment on sovereignty and safety standards. While it accelerates regional resilience, it also creates a fragmented governance landscape, challenging Commission authority. In this context, the launch of the *Black-Box Monitoring Sprint* proceeds cautiously, with limited initial scope to avoid direct overlap—reflecting the EU’s constrained bandwidth for new centralised initiatives amid existing decentralised momentum.
+
+### The Frontier Moves On
+
+Global AI capability advances to 66.5, driven by algorithmic refinements despite frozen investment. The gap between capability and safety widens further, but no catastrophic failure occurs—only more unexplained model behaviours, reinforcing the need for external monitoring. Open-weight models rise modestly to 60.0, reflecting continued diffusion of prior frontier releases through research networks and limited underground channels. While supervision enables longer reasoning chains, no major new leak or open release event occurs, keeping the growth of openweight capability below the pace of frontier advancement and preserving the structural lag.
+
+Resilience holds at 52.0, sustained by prior cyber defences. Public sentiment remains stagnant at 27.0, with no visible AI benefits to shift perception.
+
+### Sovereignty Rebounds, Capital Holds Steady
+
+The completion of *InvestAI Gigafactories* contributes a +5 boost to *eu_ai_sovereignty*, offset by a −1 decline due to rising global capability. No additional decay or event terms apply, resulting in a net increase from 19.0 to 22.0, consistent with the notepad’s accounting and metric rule 5. This gain reflects the full effect of the measure’s conclusion, with integration occurring within expected timelines.
+
+Political capital remains unchanged at 17.0. The portfolio charge for completing *InvestAI Gigafactories* is −3, and the new measure (category 5) incurs a −2 cost, with an additional −1 for priority designation, for a total charge of −6. No proposal bonus, legitimacy lends, or other positive terms apply. The narrative of a "partial portfolio bonus" is withdrawn, as no rule supports an automatic adjustment. Modelling Choice #7 is respected: sovereignty’s contribution to political capital does not exceed +3 and cannot override explicit costs without a narrated, rule-compliant source. The lack of a rise in political capital despite a sovereignty gain underscores the independence of the two stocks.
+
+Safety improves slightly to 20.0, as early monitoring work begins to offset interpretability decay. Rule 3 grants a +1 effect for initiating a category 5 measure affecting EU jurisdiction, consistent with phased implementation and partial impact before full rollout.

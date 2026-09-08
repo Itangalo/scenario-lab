@@ -1,0 +1,17 @@
+### The Weight of Ambition
+
+The European Union advances the Emergency Sovereignty Compact as its sole major initiative and current priority, pressing member states to commit sovereign compute under Article 222 TFEU, framed as civil defence. Bilateral offers are delivered: Spain is promised medical AI access for grid priority, Finland a co-chair role with veto powers, Romania fast-tracked cohesion funds. Yet resistance holds. Madrid dismisses the deal as “asymmetric solidarity,” Helsinki’s constitutional court confirms it will hear the oversight challenge, and Bucharest delays further, citing unresolved compensation terms. COREPER II remains deadlocked. No breakthrough, only pressure.
+
+Diplomatically, early discussions begin on joining the IAEA-style AI oversight initiative. EEAS envoys express interest in technical design talks, advocating for inspection rights above capability 50.0 and emergency moratoria. Canada and Norway acknowledge the overture but stress that formal participation requires demonstrated enforcement capacity — a condition not yet met. No accession occurs this turn; talks remain exploratory.
+
+At home, planning for a broader Resilience Surge continues, but full launch is deferred. ENISA prepares binding mandates for Tier 1 operators, HERA designs bio-threat simulations, and cross-border cyber drills are scheduled for the next period. Funding remains uncommitted at EU level, pending political clearance. Implementation cannot proceed without approval, and no resources are released this turn.
+
+AI capability creeps to 64.0, driven by autonomous research in quantum materials. Open-weight models rise modestly to 51.5, reflecting incremental diffusion and fine-tuning gains — but still trailing behind frontier capability growth. No safety gains emerge. Resilience holds steady at 45.0, as preparatory work continues without operational deployment.
+
+Public sentiment dips to 14.0 as strikes spread and media portray the Compact as authoritarian desperation. Labour unrest simmers, with confirmed incidents of sabotage against AI hiring platforms now reported in three member states. The notepad confirms emergent_labour_radicalization, and the erosion of public trust registers in the metric.
+
+Political capital collapses from 1.0 to −9.0 under the weight of a −10 portfolio charge from the stalled Emergency Sovereignty Compact, with no legitimacy lends or proposal bonus to offset it. The burden of ambition, unmet by delivery, exacts its toll. eu_political_capital and eu_ai_sovereignty now diverge sharply — one sinking under cost, the other eroded by lack of progress and political decay — affirming their status as separate stocks under strain. Sovereignty falls to 4.0, reflecting the net −1 impact from capability growth (−1) and the absence of delivery or political support, consistent with the notepad’s evaluation.
+
+### A Union Straining
+
+The EU acts with urgency, but scope must bend to capacity. Only one major measure can advance at a time. Diplomatic outreach and resilience planning progress to the edge of implementation — but without triggering portfolio charge or political capital erosion, as neither crosses into active execution. The Emergency Sovereignty Compact remains the sole in-flight measure, carrying the full burden of ambition. Without legal ratification or public trust, even well-prepared initiatives risk becoming hollow shells. The divergence between sovereignty and political capital widens — not from error, but from the weight of unmet expectations.

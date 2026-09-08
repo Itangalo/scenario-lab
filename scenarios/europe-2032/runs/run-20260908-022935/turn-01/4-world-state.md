@@ -1,0 +1,11 @@
+### Frontier Drifts, Defences Stir
+
+The AI frontier creeps forward. While debate rages over whether the latest flagship release signals a plateau, capability advances by +1 this turn — not the leap of prior cycles, but enough to widen the gap between what exists and what is secured. The open-weight frontier inches up in tandem, as Kimi K3’s footprint settles and derivative models tuned for offensive cyber emerge across underground forums.
+
+Meanwhile, a quiet alarm sounds. A coordinated intrusion — discovered by chance — had embedded deeply within critical infrastructure across continents, including two EU grid operators. Retrospective analysis confirms that standard detection tools would not have found it. The episode stops short of disruption, but not of revelation: defences are blind to current threats.
+
+In response, the European Union launches its priority: the Cyber Shield Directive. Framed as essential to public trust, it mandates AI-driven detection, red-teaming, and cross-border reporting for energy, water, transport, and health operators. ENISA gains €1.2bn in new funding, and cohesion funds offer 70% co-financing to ease adoption. Yet resistance simmers. Finance ministries balk at costs, and Central and Eastern member states warn of implementation gaps. The directive enters fast-track discussion, but compliance remains uncertain.
+
+The political cost is immediate. Two large category 4 measures already strain capacity, and the new large measure plus priority status pull capital down sharply. No bonus offsets this: while the cyber_test_shot justifies urgency, the measure was not proposed in direct response to a *finished* incident with systemic harm, and thus earns no proposal credit. Sovereignty slips slightly as global capability outpaces domestic build-out. Safety falls due to the capability rise without corresponding assurance on shipped systems. Resilience sees only the faintest uptick from early momentum behind Cyber Shield.
+
+Public sentiment holds steady — anxious, ambivalent, watching.

@@ -1,0 +1,13 @@
+### Frontier Acceleration and Open Floodgates
+
+Global AI capability advances to **75.0**, as recursive self-improvement cycles deepen in opacity and scale. Leading labs report internal milestones exceeding public benchmarks, with autonomous experimentation now routine in materials science and algorithmic design. The closed frontier accelerates, but so does the open: a surprise release of a high-capability model to public repositories triggers widespread replication. Within weeks, the model is running on consumer hardware worldwide. However, this **openweight_frontier_release** reflects a snapshot of prior frontier capability, not a leap beyond it. The release closes the gap, but `openweight_capability` reaches **60.0**—consistent with its dependency on the closed frontier and preserving the constitutional invariant that it cannot exceed `ai_capability`.
+
+The release occurs without safety review or alignment guarantees. Unvetted deployments in automation and content generation trigger early signs of misuse. Evaluation systems strain under novel attack vectors, and early incident reports cite model hallucinations with real-world consequences. These emerging risks erode confidence in oversight, reducing **ai_safety** to **7.5**.
+
+### Sovereignty Gains, Political Strain
+
+The **European Foundation Model Initiative** completes its integration into EuroHPC, with formal ownership of model weights vested in the Union. Compute allocation begins on JUPITER and LUMI, marking a tangible step toward sovereign capability. This category 4 measure finishes on schedule, contributing +5 to **eu_ai_sovereignty**, though the ongoing rise in `ai_capability` imposes a −1 penalty. No other capacity event occurs, so **eu_ai_sovereignty** rises to **33.0**.
+
+Meanwhile, the **European AI Incident Response Corps** becomes fully operational, conducting its first coordinated response to a cross-border disinformation surge. The action validates protocols and earns a category 6 completion bonus, lifting **resilience** by +3 to **55.0**. Critical infrastructure held, but public trust did not: media coverage focuses on delayed reactions in healthcare IT systems.
+
+The **Emergency Audit Programme** remains mired in legal challenges. Despite emergency endorsement, no enforcement occurs. Public frustration mounts as job displacement in legal and administrative sectors accelerates, yet no new measure is proposed. The EU’s inaction, combined with ongoing portfolio costs, erodes **eu_political_capital** to **12.0**—now below the threshold where control over the agenda slips. Public sentiment remains stagnant at **31.0**, caught between fear and resentment.

@@ -1,0 +1,17 @@
+### Closing One Chapter, Opening Another
+
+The Emergency Resilience Reinforcement Directive concludes with a hard-won victory: Poland and Hungary formally integrate into the mutual aid system under Council pressure, unlocking the final Modernisation Fund tranches. Lyon, Stuttgart, and Valencia complete air-gapped control retrofits, and the first live simulation of cross-border failover succeeds—Valencia’s water management system activates within four hours of a simulated breach. Yet trust remains fragile. Three smaller member states—Cyprus, Latvia, and Slovakia—formally request exemptions from the new redundancy mandates, citing cost and administrative overload.
+
+The Frontline Public Assurance Corps begins deployment, with initial teams arriving in Marseille and Munich. In Barcelona, delayed mobilisation prevents timely intervention, contributing to renewed sabotage of AI-driven traffic systems. However, local mediators broker a temporary truce, leading to a city-level review of algorithmic accountability. Early reports suggest public frustration is less about AI itself than about unresponsive institutions.
+
+The European Commission proposes the Union-Wide Critical Service Failover Protocol, a large-scale resilience measure targeting energy, water, health, and emergency communications. Binding redundancy requirements and live-fire testing under ENISA are now on the table, funded by redirecting Digital Europe Programme resources. Germany and France back the plan, but resistance grows among smaller states wary of centralised mandates. Due to portfolio strain, the launch of this new measure delays full operational planning for the Frontline Corps, which will not reach Barcelona until the next period.
+
+### Capability Creeps Forward
+
+Global AI capability advances to 62.0 as frontier labs report systems autonomously optimising supply chains and legal compliance workflows over multi-week horizons. Supervisory oversight becomes increasingly symbolic. Open-weight models rise to 52.0, supported by incremental gains in distributed fine-tuning and data-sharing among academic networks—no single release dominates, but steady progress accumulates. This growth reflects organic accumulation and does not imply suppression of openweight progress; the structural relationship with ai_capability emerges naturally from parallel trajectories.
+
+AI safety declines to 11.0. The collapse of the audit initiative, combined with unresolved regulatory fissures and institutional pushback, erodes confidence in oversight. No new safeguards land on deployed systems.
+
+Resilience rises to 55.0, reflecting the completion of the Emergency Directive and the momentum behind the new protocol. Political capital increases modestly to 23.0, receiving a partial boost from the completion bonus and strategic framing, though constrained by ongoing portfolio strain and governance limits on concurrent initiatives.
+
+Sovereignty rises to 30.0, as recorded in the notepad: the InvestAI Gigafactories measure delivers its +5 bonus upon completion, offsetting no decay. The emergent_open_source_surge development does not impose a sovereignty penalty this turn, as the notepad confirms the net outcome. The previous narrative misalignment with the authoritative record is corrected; sovereignty reflects accumulated capacity, not speculative adjustment.

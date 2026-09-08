@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 48.0 to 57.0 (+9.0), which exceeds the maximum possible growth given `ai_capability` rose by only 3.5 points. Since `openweight_capability` cannot exceed `ai_capability` and must accumulate gradually, a jump of 9.0 implies either an unrealistic leap in open-weight model performance relative to frontier models or a violation of the accumulation principle. No narrative or notepad justification is provided for such a disproportionate rise.\n- Invariant 9 violated: `ai_safety` increased by 9.0 points (from 29.0 to 38.0), which exceeds the 25-point hard cap on single-turn metric changes. While the narrative describes meaningful progress, a 9.0-point increase in one turn violates the hard bound of ±25 points *for any metric*, regardless of justification."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

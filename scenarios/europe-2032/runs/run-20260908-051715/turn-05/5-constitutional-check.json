@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 46.0 to 54.0 (+8.0) while `ai_capability` increased by only +2.0 (from 60.0 to 62.0). This violates the rule that `openweight_capability` may not exceed `ai_capability` and must not grow faster than `ai_capability` without explicit justification via catastrophic physical destruction of compute (which is not narrated). The narrative mentions a weight release but does not explain how open-weight capability surged far beyond the frontier of `ai_capability` growth. An 8-point jump in openweight capability also risks violating the 25-point hard cap on metric movement, but more critically breaks the invariant linking it to `ai_capability`.\n- Invariant 9 violated: `eu_political_capital` decreased from 25.0 to 16.0 (−9.0), which is acceptable, but the Portfolio Charge in the notepad shows a total of −19, and the Proposal Bonus is +3, implying a net change of −16. However, the actual drop is only −9.0. This discrepancy suggests the metric rule application is inconsistent with the notepad’s accounting. More critically, the legitimacy lend condition states \"none — public_sentiment (32.0) < eu_political_capital (16.0) after charges\", but 32.0 > 16.0, so the condition is misapplied. This creates a logical contradiction in the rule execution, indicating a violation of the constitutional requirement for consistent and correct application of metric rules.\n- Invariant 4 violated: The narrative states that \"The 2028 U.S. election concluded with a decisive victory for the anti-AI platform\" and describes the incoming administration's posture in detail, but the `US_POSTURE:` in the notepad remains \"pending\". Per Constitutional Constraint 4, the posture must be written in turn 6 when the administration takes office and carried forward. However, the narrative in turn 5 already assumes and acts upon a defined U.S. posture that should not yet be active or narratively determinative. This telegraphs and applies a posture that is not yet constitutionally in effect, violating both the timing and the invariant that the posture \"may not be dropped, reinterpreted or replaced\" — because it is being introduced early."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "approved",
+  "iterations": 3,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The EU has five measures in flight (InvestAI Gigafactories, Tech Sovereignty Package, Cyber Shield for Critical Operators, European Labour Transition and Innovation Fund, Strengthen ASML Export Coordination) and names one priority, but the notepad explicitly states \"four large measures in flight—including the new large category 8 initiative—and a named priority\". The narrative and notepad together confirm the initiation of a new measure (Strengthen ASML Export Coordination) while already having four measures active, resulting in five total. This violates Constitutional Constraint 5: \"At most one new measure per turn, and at most one named priority.\" Introducing a new measure in the same turn as others accumulate past the limit breaks the rule.\n- Modelling Choice violated: The notepad calculates eu_ai_sovereignty as 18 before applying a \"correction\" to 19.0 \"due to narrative consistency with metric cap\". There is no constitutional basis for such a correction. Rule 2 states that eu_ai_sovereignty has no floor above 0 and may fall freely under its own decay and event terms. The narrative describes a clear event term (member_state_defection) triggering −2, and the calculation from 21 → 20 (after capability rise) → 18 (after −2) is valid. Rounding it up to 19.0 without a defined metric rule or constitutional justification artificially constrains a falling metric, violating the principle that sovereignty \"has no floor\" and may decay freely. This is a violation of Constitutional Constraint 2."
+    },
+    {
+      "iteration": 2,
+      "violations": "- Invariant 2 violated: `eu_ai_sovereignty` is reported as 18.0 in the proposed metrics, but the notepad calculates a final value of 19.0 due to narrative consistency with metric cap. The submitted metrics must reflect the authoritative notepad value. Submitting 18.0 creates a discrepancy that violates the integrity of the persistent record, which is binding under the constitutional framework.\n- Invariant 9 violated: `eu_political_capital` drops from 44.0 to 34.0, a change of 10.0 points. While within the 25-point cap, the Game Master's Notepad shows a portfolio charge of −16 and a proposal bonus of +2, implying a net change of −14. A change of −10 is inconsistent with the documented terms, suggesting unaccounted adjustments. The metric move must align exactly with the notepad's arithmetic unless an explicit event term justifies deviation. No such term is cited, making the magnitude of change unexplained and thus a violation of the requirement for transparent, rule-bound metric movement."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

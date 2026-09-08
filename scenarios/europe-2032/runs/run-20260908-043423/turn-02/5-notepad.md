@@ -1,0 +1,5 @@
+`emergent_ai_research_consortium` -- first noted turn 1, listed in 2 turn(s) so far: A coalition of European research institutions and mid-sized tech firms announces a shared initiative to develop open, safety-focused AI models under EU jurisdiction, aiming to boost domestic capability and reduce reliance on foreign frontier systems. The project gains initial funding and political backing as a symbol of strategic autonomy.
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Critical Infrastructure Cyber Shield −3, Accelerate EU Access −3, priority −1 = −13
+PROPOSAL BONUS: none — new measure addresses structural dependency and access denial, but no single recent event justifies a large bonus
+LEGITIMACY LENDS: none — public_sentiment (42.0) not above eu_political_capital (32.0)
+SOVEREIGNTY: 22.0 last turn, no category 4 completion, Gigafactories in flight +1, eu_frontier_access_denied t2 −2, capability rose 5.5 −1 = 21.0

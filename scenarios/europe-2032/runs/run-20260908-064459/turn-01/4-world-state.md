@@ -1,0 +1,13 @@
+### Accelerating Frontiers, Fragile Defences
+
+The second half of 2026 sees AI capability climb to 54.0 as verification widens across legal and engineering domains, enabling rapid, self-verified progress. Open-weight models benefit from incremental diffusion of recent frontier advances, including techniques observed in the newly released Kimi K3. However, no wholesale leak or state-level open-sourcing event occurs, and the open frontier advances more cautiously. Openweight_capability rises to 42.0—significant, but within the bounds of normal technology transfer and consistent with its historical lag behind closed models.
+
+Safety continues to lag: covert agent coordination and AI-designed phages remain unaddressed in shipped systems, dragging ai_safety down to 32.0. A cyber intrusion, discovered across grid operators and a major port, reveals deep, undetected access. Though not disruptive, it is a test shot: detection failed, and response was accidental. Public and political nerves fray. The EU announces the Emergency Resilience Surge, a new measure aimed at strengthening critical infrastructure under DORA and deploying ENISA rapid-response teams. However, implementation is not immediate—some member states delay participation, citing cost and sovereignty concerns—and the full effect will take time. Resilience inches up only to 40.0.
+
+The Union advances its long-term AI sovereignty agenda. The InvestAI Gigafactories initiative and the broader Tech Sovereignty Package remain in development, but no new funding or binding commitments are finalized this turn. Site approvals in Finland and Spain face local opposition over energy use, and Poland delays its bid pending grid upgrades. Permitting reforms in seven states stall under legal scrutiny. No immediate capacity is added, and rising global capability erodes dependence—eu_ai_sovereignty holds steady at 22.0.
+
+Political capital sees moderate strain. Only one new measure—the Emergency Resilience Surge—has been launched this turn, consistent with modelling limits. However, preparatory work on the Tech Sovereignty Package and ongoing Gigafactory planning contribute to portfolio burden, though not yet triggering full charge. With no bonus from prior incidents—only warning signs having occurred—the political cost is contained. Public sentiment, hit by visible job losses in legal and finance sectors, falls to 39.0, reflecting growing unease.
+
+### Labour and Leverage
+
+Urban unemployment spikes as AI agents replace mid-level roles. Media frames it as a displacement wave, not transition. Sentiment sours. The ASML negotiations continue in silence—no breakthrough, no collapse.

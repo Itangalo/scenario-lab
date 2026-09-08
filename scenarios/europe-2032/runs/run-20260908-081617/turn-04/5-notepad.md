@@ -1,0 +1,6 @@
+US_POSTURE: pending  
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Secure Open-Source Frontier Equivalents −3, Emergency Compute Sovereignty Mobilisation −3, priority −1 = −13  
+PROPOSAL BONUS: Emergency Compute Sovereignty Mobilisation (cat 4, large) +3 — answers taiwan_blockade and capability_jump directly, severe and current  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 19.0 last turn, no capacity event, capability rose 6.0 −1, emergency mobilisation in flight +3 = 21.0  
+Emerging developments: emergent_supply_chain_pressure — ASML faces intensified jurisdictional pressure from the U.S. Department of Commerce to restrict not only advanced node exports but also servicing and spare parts for existing installations in China. The move triggers internal debate in the Netherlands over national sovereignty versus alliance obligations, with EU officials warning that unilateral actions undermine collective leverage. The situation risks escalating into a formal dispute before the end of the year.

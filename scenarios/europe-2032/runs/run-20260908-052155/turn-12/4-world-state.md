@@ -1,0 +1,11 @@
+### Frontier Cut Off, Foundations Shake
+
+The EU’s access to the world’s most capable AI model is abruptly suspended without explanation. Hospitals relying on diagnostic support, transport ministries using predictive maintenance, and research consortia face immediate disruption. The cutoff — sudden, total, and unappealable — lands not as an external shock but as a confirmation of dependency. Publicly, member states blame Washington; privately, officials concede that no contingency was ready.
+
+Meanwhile, ai_capability climbs to 70.5, driven by recursive self-optimization in biotech design and cyberattack planning. No safety gains reach deployed systems. With interpretability still absent from real-world models and oversight mechanisms stalled, ai_safety slips further to 13.0. Yet a paradox emerges: leaked details of a frontier lab’s internal monitoring breakthrough — smuggled by a disillusioned researcher — begin circulating in open-source communities. Distributed models are integrating crude but functional anomaly detection, creating a rare divergence where open-weight systems may soon outpace closed ones in transparency.
+
+The Sovereign Compute Acceleration Programme races toward completion. Gigafactories, now hardened under NIS2 mandates, show early signs of resilience: redundant power, encrypted telemetry, and mobile fallback units are being tested. But political cohesion frays further. Germany refuses to appoint observers to the EAA-ENISA cell, calling it symbolic appeasement. Italy suspends cooperation with EAA audits. Austria threatens legal action over funding conditions.
+
+The Court of Justice hears arguments on override protocols, but no ruling comes this turn. Without resolution, enforcement remains contested. Public sentiment dips to 20.0, dragged down by visible paralysis and infrastructure fragility. Protests outside data centres grow, now echoing both anti-AI and anti-elite slogans.
+
+Political capital collapses to 5.0. Three large measures remain in flight, including the priority, draining −9 per turn. No new measure launches, but the portfolio continues to bleed. The Union acts, but does not govern.

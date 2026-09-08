@@ -1,0 +1,61 @@
+[
+  {
+    "id": "bio_incident",
+    "probability": 0.09000000000000001,
+    "probability_samples": [
+      0.09,
+      0.09,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.14,
+    "probability_samples": [
+      0.22,
+      0.2,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_model_verification_pact",
+    "probability": 0.3499999999999999,
+    "emergent": true,
+    "description": "A coordinated effort among non-US AI developers — from Israel, Japan, South Korea, and Singapore — yields a shared verification framework for model releases above capability level 50, increasing transparency and trust in non-Western models. This emerges from ongoing technical dialogues initiated after US consolidation and strengthens the position of middle powers in global AI governance.",
+    "probability_samples": [
+      0.35,
+      0.35,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_climate_prediction_breakthrough",
+    "probability": 0.3499999999999999,
+    "emergent": true,
+    "description": "A major European research consortium, leveraging emergency-hardened infrastructure, demonstrates a new class of AI-driven climate modeling that accurately predicts regional extreme weather events six months in advance. The success shifts public sentiment slightly and provides a rare positive narrative around AI, despite ongoing anxieties.",
+    "probability_samples": [
+      0.35,
+      0.35,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

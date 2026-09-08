@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Cyber Shield Fund −3, Member-State Compute Compact −3, priority −1 = −13  
+PROPOSAL BONUS: Member-State Compute Compact (cat 4, large) +5 — direct response to eu_frontier_access_denied, severe recent shock, large measure addressing core dependency  
+LEGITIMACY LENDS: none (capital 22 > sentiment 30 false)  
+SOVEREIGNTY: 20 last turn, no capacity event, Member-State Compute Compact in flight +0, capability rose 1.5 −1, eu_frontier_access_denied t4 −2 = 18  
+emergent_regulatory_backlash -- first noted turn 1, listed in 4 turn(s) so far: The formal initiative to suspend high-risk AI deployments gains legal traction as three additional member states pass national moratoria, citing the unresolved risks from openweight models and the EU's declining sovereignty. Emergency consultations under the AI Act framework escalate into a special session of the European Parliament, increasing pressure for a pan-European pause.

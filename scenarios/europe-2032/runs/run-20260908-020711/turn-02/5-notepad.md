@@ -1,0 +1,6 @@
+- `emergent_ai_talent_exodus` -- first noted turn 1, listed in 2 turn(s) so far: Senior AI researchers and engineers in EU-based labs report increasing rates of departure to North America and Asia, citing underfunding, slower compute access, and weaker career trajectories. A study released this turn estimates that the EU is losing net talent at three times the rate of 2025, undermining long-term sovereignty efforts despite existing supply-chain leverage.
+- `emergent_labour_displacement_signals` -- first noted turn 1, listed in 2 turn(s) so far: Early signs of AI-driven job displacement emerge in tech, legal and administrative sectors across several EU countries, with firms reporting restructuring and reduced hiring for junior roles. The effect is not yet systemic, but media coverage intensifies and trade unions begin to mobilize around AI as a core issue. This sets the stage for political backlash in later turns.
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield −3, Sovereign Access −3, priority −1 = −13
+- PROPOSAL BONUS: Sovereign Access (cat 4, large) +3 — answers eu_access_secured t1 and ongoing access concerns
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 21.0 last turn, no capacity event, Gigafactories in flight +0, capability rose 1.5 −1 = 20.0

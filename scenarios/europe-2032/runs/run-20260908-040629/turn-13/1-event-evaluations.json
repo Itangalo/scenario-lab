@@ -1,0 +1,263 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4246311336653392,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.012645200831858494,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.16983264480049587,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4382468393258814,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.326682562234789,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.08666666666666667,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.08,
+      0.09,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7038666686469041,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.15333333333333335,
+    "probability_samples": [
+      0.17,
+      0.12,
+      0.17
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.15141316690630413,
+    "triggered": true
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5327199076423474,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.37762397381970536,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.007486905014034817,
+    "triggered": true
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.17333333333333334,
+    "probability_samples": [
+      0.19,
+      0.14,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.03636114475126373,
+    "triggered": true
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.12,
+    "probability_samples": [
+      0.14,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8300471100078377,
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_governance_crisis",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "Amid collapsing public trust and repeated infrastructure attacks, a coalition of EU legal scholars, national ombudsmen, and civil society groups declares the current AI governance framework fundamentally illegitimate. They demand an emergency convening of a European Constitutional Convention on AI, arguing that existing institutions are structurally incapable of accountability. The movement gains traction in multiple capitals, threatening to paralyse further top-down initiatives.",
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5494400037097878,
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_scientific_embargo",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "In response to the unchecked proliferation of high-capability open models and repeated safety failures, leading scientific publishers and preprint servers unilaterally impose a global embargo on AI-related research submissions that involve models above a capability threshold of 70.0. The move fractures the research community, with some labs complying and others accelerating underground publication, creating a shadow scientific ecosystem.",
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9286352103155823,
+    "triggered": false
+  },
+  {
+    "id": "emergent_sovereign_ai_fragmentation",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Hungary, Poland, Slovakia, and the Czech Republic formalize a parallel AI governance framework outside EU oversight, citing national sovereignty and data control. The pact establishes independent certification for AI systems and restricts cross-border data flows for high-risk models, fracturing enforcement and creating regulatory arbitrage. This deepens the Digital Single Market's erosion and undermines the AI Act's coherence.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_disinfo_wave",
+    "probability": 0.11666666666666665,
+    "emergent": true,
+    "description": "The synthetic disinformation campaign intensifies, now generating deepfake video briefings attributed to EU commissioners and national leaders, falsely announcing regional lockdowns and benefit cuts. The content spreads rapidly across encrypted platforms and fringe networks, overwhelming fact-checking capacity and triggering localized civil unrest. Trust in official communication channels reaches a new low, reinforcing public hostility toward AI-driven systems.",
+    "probability_samples": [
+      0.0,
+      0.35,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_data_sovereignty_fracture",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "Slovakia and the Czech Republic formalize a bilateral data localization pact outside EU frameworks, citing national security and judicial independence. This creates a de facto schism in the Digital Single Market, enabling parallel AI oversight regimes and weakening cross-border enforcement. The move is framed as pragmatic sovereignty but accelerates fragmentation.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.28
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_watchtower_crisis",
+    "probability": 0.10666666666666667,
+    "emergent": true,
+    "description": "Internal leaks reveal that the European AI Watchtower’s edge nodes in Marseille and Helsinki have suffered undetected model exfiltration during deployment, exploiting vulnerabilities in the incentive-driven rollout. The breach is attributed to a non-state actor using open-weight tools, undermining trust in the Union’s flagship coordination measure and triggering emergency audits across all node states.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.32
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

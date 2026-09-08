@@ -1,0 +1,261 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2556549716032501,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8165368754897926,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.879593286123967,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.04714557709421763,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.021118413443394046,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.0,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6164869161909827,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.049999999999999996,
+    "probability_samples": [
+      0.15,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9335482957684376,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5582265010995818,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5675725165799195,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.13,
+      0.0,
+      0.13
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.29063653769906517,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.14,
+      0.0,
+      0.14
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9673903033682927,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.18043538856888008,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.04,
+    "probability_samples": [
+      0.06,
+      0.0,
+      0.06
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.12529274932828982,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regulatory_fragmentation",
+    "probability": 0.16666666666666666,
+    "emergent": true,
+    "description": "National data protection authorities, under pressure from public backlash and distrust in central oversight, begin issuing divergent and increasingly restrictive interpretations of the AI Act, creating a patchwork of compliance rules across member states. This undermines the single market for AI services and forces firms to navigate a maze of local regulations, slowing deployment and increasing costs. The European Commission warns of 'de facto balkanisation' of AI governance.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.28
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8265639032707524,
+    "triggered": false
+  },
+  {
+    "id": "emergent_open_source_resilience_effort",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "In response to the loss-of-control incident and declining trust in corporate models, a coalition of European universities, non-profits, and public research labs launches a distributed initiative to build a verifiable, open-weight model stack with built-in transparency and safety constraints. Funded by national science grants and small EU contributions, it gains traction among developers seeking alternatives to opaque frontier systems, though it remains far below the capability frontier for now.",
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8858987333238654,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated campaign of sabotage against AI data centres in multiple member states, motivated by anti-AI sentiment and enabled by accessible offensive tools, causes physical disruption and deepens public fear. The attacks are decentralised but share tactical similarities, suggesting networked coordination rather than isolated incidents.",
+    "emergent": true,
+    "id": "emergent_physical_sabotage_wave",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "In response to the loss-of-control incident and collapsing public trust, several national ombudsman offices and regional courts jointly initiate investigations into the legality and ethics of current AI deployment in public services, forming an informal network to share findings. This marks the beginning of a potential pan-European legal backlash originating from domestic institutions rather than Brussels.",
+    "emergent": true,
+    "id": "emergent_institutional_backlash",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_unrest",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Coordinated strikes and work stoppages erupt across multiple EU countries in public administration, legal services, and financial processing sectors, where AI systems are perceived to have displaced entry-level roles without retraining pathways. The actions target both national governments and private contractors deploying AI, demanding a 'just transition' framework.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

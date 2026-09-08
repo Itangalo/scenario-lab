@@ -1,0 +1,272 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7614043726621479,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7432341546654934,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8384850878704414,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.412978195998442,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8319741860500723,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6992442018619288,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9789086135154617,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.07666666666666666,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.11
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.1902489212703775,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.05,
+      0.0,
+      0.05
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.12482833324769771,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.41907086322360176,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.739703776698925,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7460555996210096,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.13698268916096545,
+    "triggered": false
+  },
+  {
+    "id": "emergent_international_ai_audit_consortium",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "A coalition of non-aligned states and EU-aligned institutions forms an independent AI audit consortium, leveraging shared technical expertise and legal frameworks to assess the safety and compliance of frontier models regardless of origin. The initiative emerges in response to the ongoing class-action suit and widespread safety failures, aiming to establish a globally recognized benchmark for accountable AI. It gains early backing from Nordic countries, Canada, and Singapore, and begins negotiating access to model weights under strict confidentiality.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.026768887936254204,
+    "triggered": true
+  },
+  {
+    "id": "emergent_ai_refugee_movement",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "A growing number of AI safety researchers and developers from leading laboratories outside the EU begin relocating to Europe, citing the Union's emergency suspension order and legal accountability efforts as creating a more responsible environment for long-term work. This 'safety-first' brain gain is informal but accelerating, with several open-weight safety projects now coordinating across Brussels, Helsinki, and Zurich. The trend raises concerns about talent flight in the US and China but offers the EU a rare opportunity to build technical depth amid its sovereignty crisis.",
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9264834911369912,
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_rights_litigation",
+    "probability": 0.04,
+    "emergent": true,
+    "description": "A coalition of civil society organisations files a landmark legal challenge in the European Court of Human Rights, arguing that the use of unexplainable AI systems in public decision-making violates fundamental rights to due process and effective remedy. The case cites the ongoing class-action suit and recent audit failures as evidence of systemic risk, and demands a moratorium on high-stakes AI deployments until interpretability standards are met. Legal experts note its potential to reshape the legitimacy of automated governance across the continent.",
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.751011386023513,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.08
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7278888128514738,
+    "triggered": false
+  },
+  {
+    "id": "emergent_international_ai_safety_consortium",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "A coalition of non-aligned states and scientific institutions forms an open, observer-based AI safety consortium to independently evaluate and benchmark frontier models, aiming to create a transparent alternative to closed corporate audits. Initial members include Nordic countries, Canada, and Switzerland, with technical coordination through CERN-like governance. The move gains momentum as trust in private developer claims erodes globally.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_worker_unions",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "Informal networks of displaced knowledge workers in law, software, and administration coalesce into cross-border AI worker unions, demanding recognition, retraining guarantees, and a 'transition dividend' from AI profits. The movement organizes its first pan-European strike actions against public AI procurement, blending digital and physical protest tactics. It begins influencing local policy debates in Germany, France, and the Netherlands.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

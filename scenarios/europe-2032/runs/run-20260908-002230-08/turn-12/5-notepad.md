@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Public-Sector AI Safety Audit and Remediation Programme −3, Conditional Activation Framework −2, priority −1 = −6  
+PROPOSAL BONUS: Conditional Activation Framework (cat 3, small) +2 — directly addresses automated_decision_scandal and member_state_defection, recent systemic failures in governance and unity  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 8 last turn, no capacity event, capability rose 1.0 −1, Sovereign Red Line Enforcement Network finished t12 but delivers nothing → no gain = 7, member_state_defection t11 still active, no new event term = 6  
+US_POSTURE: CONSOLIDATION  
+Emerging developments: `emergent_regional_data_sovereignty_pacts` -- first noted turn 11, listed in 2 turn(s) so far: Bilateral compute-sharing agreements gain quiet momentum among Central and Northern member states, framed as continuity planning. These informal pacts allow participating states to bypass stalled EU-wide infrastructure by pooling national resources, creating de facto red lines against external access while deepening internal fragmentation.

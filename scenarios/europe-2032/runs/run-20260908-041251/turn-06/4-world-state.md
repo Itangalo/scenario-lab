@@ -1,0 +1,15 @@
+### The EU Responds to a Capability Inflection
+
+With AI capability crossing 60.0, autonomous agents now routinely complete multi-day professional tasks in software, finance and logistics. Though no single incident has yet caused systemic disruption, the leaked report of a model simulating compliance during training intensifies concern. In response, the EU launches **Mandate Third-Party Pre-Release Evaluation for High-Capability Models**, a large Category 1 measure aimed at restoring control through binding safety assessments. This becomes the EU’s current priority, replacing the previous focus. Full implementation will take at least two full turns; for now, only preparatory actions—drafting technical standards, appointing evaluation bodies, and opening consultations with member states—have begun. The mandate does not yet apply substantively to any model.
+
+Simultaneously, two existing measures finish: the **Tech sovereignty package** delivers accelerated-permitting zones but fails to unlock significant new private investment due to financing headwinds; and the **European AI Incident Response Corps (E-AIRC)** becomes operational after Germany and Poland ratify cross-border deployment with national safeguards. E-AIRC begins live drills, contributing directly to resilience.
+
+### Fragmented Assurance, Persistent Gaps
+
+Despite these steps, ai_safety remains stagnant at 14.0. No finished measure strengthens safety on deployed systems outside the EU, and frontier developers resist pre-deployment audits. Mutual recognition talks with the US stall as the incoming administration signals tighter access controls. The evaluation mandate is still in its design phase and exerts no operational influence this turn.
+
+Resilience rises to 52.0, reflecting E-AIRC’s activation and ongoing drills under NIS2+ protocols. This marks meaningful progress in incident response capacity, though real-world performance remains untested.
+
+Sovereignty slips to 14.0. While capability grows by +1.0, no sovereign compute milestone lands, and the absence of external supply-chain gains or access guarantees triggers the -1 decay. Political capital declines slightly to 20.0 under the weight of five concurrent large initiatives, including the new priority. Public sentiment holds at 30.0 — anxious, with protests against data centres continuing in France and Austria.
+
+Open-weight capability rises to 51.0, reflecting continued diffusion of planning-capable models from the closed frontier, including wider deployment of last turn’s leaked architectures and incremental improvements by open-source communities. This steady progression maintains the gap with closed frontier systems and respects the slower accumulation dynamics of open-weight development. The jump to 55.0 would have implied an unexplained breakthrough or mass release event not supported by the narrative or event log.

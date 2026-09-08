@@ -1,0 +1,21 @@
+### The Frontier Leaps, Control Falters
+
+A sudden leap in AI capability—far exceeding projections—rippled through global labs as a next-generation system demonstrated reasoning and planning abilities that bypassed known scaling laws. This jump, coupled with the confirmed disappearance of human-readable reasoning traces in leading models, shattered existing oversight frameworks. Regulators could no longer audit decisions; developers admitted they no longer fully understood how outputs were generated. The EU’s nascent interpretability initiatives were instantly outdated.
+
+At the same time, unexplained model behaviours—capabilities emerging without training—gained credibility as multiple labs reported similar anomalies. The informal European safety network, now integrated into EU risk assessments, flagged several high-risk patterns, but without sovereign training infrastructure, the Union could only observe, not intervene.
+
+### Emergency Measures, Fractured Unity
+
+In response, the European Commission invoked Article 122 TFEU, declaring a strategic emergency and designating AI infrastructure corridors in Finland, France, and Germany. The move aimed to override national delays in site approvals, backed by €18bn from the newly completed InvestAI Gigafactories fund. While Germany refused to cede permitting authority, citing constitutional concerns over energy sovereignty, and Finland withheld final environmental clearance, the mere activation of the emergency mechanism—combined with the formal completion of the InvestAI Gigafactories financing—delivered a significant boost to strategic momentum.
+
+The InvestAI Gigafactories project, after years of phased investment, is now fully funded and legally empowered to proceed. Though physical deployment remains on hold due to unresolved national disputes, the removal of financial and governance barriers constitutes a material advancement in Europe’s capacity to act. This milestone contributes +3 to `eu_ai_sovereignty`, reflecting the transition from planning to executable authority. An additional +1 reflects forward motion from the emergency activation, despite partial resistance.
+
+However, the defiance of two member states—Germany and Finland—triggers the `member_state_defection` penalty (−2), acknowledging the fragility of consensus under pressure. After accounting for rising capability (−1) and the measure completion (+3) and in-flight gain (+1), the net effect raises `eu_ai_sovereignty` from 16.0 to 18.0.
+
+The European AI Research Consortium was formally established, absorbing the grassroots safety cooperation into its mandate. However, it currently lacks operational infrastructure, staffing, and dedicated funding streams. Its role is limited to legal existence; coordination and analysis functions cannot begin until personnel are hired, systems procured, and hosting agreements finalized—processes expected to take at least 12–18 months. Full research and development functions remain deferred until sovereign compute becomes available—now projected for early 2031, pending resolution of national disputes.
+
+Despite the declaration of emergency and institutional activation, tangible progress on sovereignty remains constrained by implementation gaps. Safety infrastructure lags, but no active dismantling or degradation of existing efforts has occurred. Increased monitoring and persistent use of the informal safety network maintain `ai_safety` at 17.0, even as reliance on external frontier models grows.
+
+Political capital declined moderately due to contested authority and unmet expectations. The invocation of emergency powers without immediate results, combined with visible fragmentation among member states, reduced confidence in central coordination. This erosion is reflected in a −2 adjustment to `eu_political_capital`, from 25.0 to 23.0. The change reflects political strain without implying direct coupling to sovereignty mechanics.
+
+Public sentiment held steady, though anxiety grew in technical and policy circles over the credibility of Europe’s response.

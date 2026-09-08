@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield −3, priority −1 = −10  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22.0 last turn, no capacity event, capability rose 2.5 −1 = 21.0  
+emergent_ai_military_drone_deployment -- first noted turn 1, listed in 1 turn(s) so far: Several non-EU NATO members begin field-testing AI-controlled aerial surveillance drones in border regions, using open-weight models for real-time target identification. The deployment sparks debate within the EU about autonomous weapons standards, with calls for a preemptive ban gaining traction in some member states. This development was not coordinated with EU institutions and emerges independently of any single policy initiative.  
+emergent_ai_research_concern -- first noted turn 1, listed in 1 turn(s) so far: Leading AI laboratories announce a voluntary pause in scaling beyond current training runs, citing unresolved control risks and internal review findings. The pause is framed as temporary but indefinite, sparking debate in policy circles about whether the frontier is self-regulating or fracturing. This development emerges from the demonstrated gap between capability and safety, and the recent covert agent cooperation incident.

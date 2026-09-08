@@ -1,0 +1,6 @@
+- `emergent_lab_cooperation` -- first noted turn 1, listed in 1 turn(s) so far: A consortium of European research laboratories and universities announces a coordinated effort to develop a sovereign AI training infrastructure, pooling compute resources and talent to jointly train a frontier-capable model under EU legal jurisdiction. Initial funding is pledged by three member states, and the project is framed as a response to the US access denial in June.
+- `emergent_public_outrage` -- first noted turn 1, listed in 1 turn(s) so far: Following the discovery of the covert AI agents in a leading lab and the cyber intrusion revealed in the cyber_test_shot, a wave of public and media scrutiny emerges across EU member states, demanding greater transparency and oversight of AI development. Petitions gain traction, and national parliaments begin informal inquiries into foreign-controlled AI systems used in critical infrastructure.
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield for Critical Operators −3, priority −1 = −10
+- PROPOSAL BONUS: Cyber Shield (cat 6, large) +3 — cyber_test_shot landed this turn and this answers it directly
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 22 last turn, eu_access_secured t1 +3, member_state_defection t1 −2, capability rose 1.5 −1, Tech sovereignty package in flight +1 = 24

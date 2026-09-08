@@ -1,0 +1,12 @@
+### Access Cut, Systems Fail  
+The European Union is abruptly locked out of the leading AI model. Hospitals report stalled diagnostics, energy ministries lose forecasting capacity, and civil protection systems operate blind. No explanation is given, no appeal possible. The cutoff is total and immediate, exposing the fragility of critical operations built on foreign systems. Public trust wavers as services falter.
+
+### Emergency Surge Completes, Shield Initiative Proposed  
+The Emergency Resilience Surge finishes on schedule, delivering €15bn in binding threat modelling for critical sectors. Detection logic for AI-generated cyber threats is integrated into national CERTs, and InvestAI vouchers unlock co-financing from Germany, France, and Poland. As a major ransomware attack — powered by AI-generated tooling — sweeps public services globally, early deployment of detection systems helps limit damage in several member states, though full coverage is not yet achieved.
+
+The European AI Shield Initiative is formally proposed as a large category 9 measure, aiming to deploy fallback AI stacks on EU-controlled infrastructure. Funding of €12bn is pledged, but legal disputes over procurement and infrastructure readiness delay immediate launch. Derived from open models below 52.0 and hardened with interpretability layers, the systems are intended to restore continuity in health, energy, and civil protection — but rollout will take time and face coordination hurdles.
+
+### Openweight Momentum, Closed Gap  
+AI capability reaches 60.0 as autonomous systems complete multi-day engineering and legal projects. A leaked evaluation hints at unexplained reasoning in a frontier model, raising alarms. With no safety breakthrough, and capability outpacing assurance, ai_safety drops. Meanwhile, a powerful open-weight model spreads across academic and private clusters, lifting openweight_capability to 48.0 — a moderate gain aligned with the frontier’s pace, but still trailing closed systems.
+
+Public sentiment dips as job losses mount and dependency humiliations unfold. The Shield is welcomed but seen as reactive. Sovereignty erodes further as access is severed, despite domestic build-out. Political capital declines under the weight of multiple large measures and a crisis response that feels overdue.

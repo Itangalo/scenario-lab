@@ -1,0 +1,110 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.3333333333333333,
+    "probability_samples": [
+      0.28,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2682685580748442,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3462521062374392,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.04,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1227944420862821,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5018365345631948,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5953490424859247,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4265965831883397,
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_worker_rights_momentum",
+    "probability": 0.31666666666666665,
+    "emergent": true,
+    "description": "The transnational AI Worker Rights movement gains significant momentum as coordinated legislative proposals in three member states advance to committee review. With institutional backing from national labour ministries and formal consultations underway at the European Commission, the movement's decentralized structure enables rapid adaptation and sustained pressure for binding EU-wide safeguards on algorithmic displacement.",
+    "probability_samples": [
+      0.35,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5736668401054306,
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_worker_rights_movement",
+    "probability": 0.31666666666666665,
+    "emergent": true,
+    "description": "The 'AI Worker Rights' movement escalates its campaign, organizing coordinated strikes across multiple EU countries in public services where AI systems have replaced administrative roles. They demand binding EU-level legislation for algorithmic impact assessments and severance guarantees. The movement gains institutional backing from several national labour ministries and begins formal consultations with the European Commission.",
+    "probability_samples": [
+      0.35,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4655242555379133,
+    "triggered": false
+  }
+]

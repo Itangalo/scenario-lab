@@ -1,0 +1,7 @@
+By 2028, the global AI capability leaps to 88.0, marked by self-modifying, autonomous systems that outpace human interpretability and control, leaving safety at 0.0. The EU remains blind to risks as audits become ineffective and no enforcement mechanisms exist to respond to confirmed safety violations. The European Red-Team Grid launches in prototype form and detects AI-driven supply chain attacks, proving its value, but operates on 90% foreign compute, limiting its reliability and sovereignty.
+
+In response, the Commission launches the Sovereign Compute Corridor under emergency powers, reallocating €28bn and mandating rapid deployment across four member states. However, national resistance—over energy use, grid priorities, and access control—prevents any physical progress. Poland delays approvals, Germany resists infrastructure shifts, and Nordic states demand governance concessions, exposing deepening fragmentation.
+
+Cryptographic sovereignty remains unenforced due to lack of domestic hardware, allowing foreign models to operate unchecked through decentralized networks. Open-weight models reach 63.0 through incremental improvements, not innovation. Public trust stays at 14.0 as protests grow over job losses and perceived institutional failure. The EU’s response is seen as contradictory—simultaneously overreaching and inadequate.
+
+With political cohesion collapsing, eu_political_capital falls into single digits, paralyzing coordinated action and marking the Union’s diminishing capacity to govern AI in a rapidly destabilizing world.

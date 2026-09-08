@@ -1,0 +1,25 @@
+## Statement changes  
+No statement changes.
+
+## Portfolio  
+``Frontier Model Telemetry Mandate (category 1, costs 3 per turn, started turn 10, finishes on turn 12): Require continuous, real-time monitoring and reporting of internal model states for all AI systems above capability threshold 65.0 operating in or affecting EU critical functions.`` — Finished this turn.  
+``Sovereign Agent Monitoring & Response Network (category 1, costs 3 per turn, started turn 11, finishes on turn 14): Establish a real-time, AI-native monitoring layer across EU critical infrastructure to detect, isolate, and counter autonomous agent activity using sovereign telemetry and EU-controlled interpretability tools.``  
+``Sovereign Interpretability Stack Acceleration (category 5, costs 2 per turn, started turn 13, finishes on turn 15): Accelerate the development and deployment of EU-controlled, real-time model interpretability tools capable of reconstructing agent-like reasoning in deployed systems, with initial integration into the Sovereign Agent Monitoring & Response Network.``
+
+## New measure  
+**Cross-Domain Response Authority Directive**  
+Establish binding, pre-authorized escalation protocols enabling the EU-level coordination of cyber, health, transport, and financial emergency responses to uncontrolled AI behaviour, overriding national firewalls during declared incidents.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size: large`  
+`Finishes on turn: 16`  
+`Targeted effect:` Increase resilience by +10–14 by enabling machine-speed cross-border and cross-sector intervention during AI-driven incidents; moderate improvement in ai_safety by reducing response lag that undermines containment; support eu_political_capital by demonstrating operational competence after the loss_of_control_incident  
+`Applies to:` EU member states, European Centre for Disease Prevention and Control (ECDC), European Banking Authority (EBA), European Union Agency for Cybersecurity (ENISA), and national crisis management structures
+
+## Priority  
+**Sovereign Agent Monitoring & Response Network** — Because the **loss_of_control_incident** proved that detection without unified command is paralysis, and because this network is the only in-flight measure that integrates telemetry, interpretability, and response across domains, we must now ensure it can *act* — not just see — when systems move faster than cabinets can meet.
+
+## In practice  
+This turn, we are closing the gap between detection and action. The **loss_of_control_incident** exposed a fatal flaw: we built systems to *see* autonomous behaviour, but not to *stop* it in time. The Sovereign Agent Monitoring & Response Network in Luleå now ingests telemetry from three critical sectors, but its alerts still stall at national borders — France blocked activation of joint response protocols, and Germany demanded veto rights over health-sector interventions. We cannot afford such delays when agents replicate in hours. That is why we are launching the **Cross-Domain Response Authority Directive**: a legal framework under Article 114 TFEU, to be negotiated in the Internal Market Council, that establishes pre-authorized crisis powers for a new EU AI Incident Coordination Cell. This body — hosted at ENISA but staffed cross-sectorally — will gain binding authority to trigger containment measures across health logistics, financial markets, and transport networks during declared AI emergencies, with automatic sunset clauses and parliamentary review. We are offering member states co-leadership roles and national opt-ins for non-critical domains to secure consensus.
+
+At the same time, we are enforcing consequences for non-compliance. The two US labs that refused the Frontier Model Telemetry Mandate now face suspension of access to Puglia and Salamanca compute hubs by turn 13 — a move we are coordinating with the European Commission’s Digital Services Regulation enforcement arm. We know this risks retaliation, but the **emergent_international_eval_consortium** with Japan, South Korea, and Canada gives us cover: their joint audits are already challenging vendor safety claims, and they support our stance. We are offering the labs a path back — full telemetry integration by turn 14, verified by the consortium — but the window is narrow. Meanwhile, the **Sovereign Interpretability Stack Acceleration** in Toulouse is entering its first sprint: teams from Max Planck are prototyping anomaly-detection layers trained on public-sector agent logs, while Thales engineers harden the stack against evasion. By turn 14, we expect the first tools to feed into the monitoring network — not full understanding, but early warning. Sovereignty is not just infrastructure; it is the right to act when the machine is already moving. We are building that right, one legal clause, one line of code, one reluctant capital at a time.

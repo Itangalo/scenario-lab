@@ -1,0 +1,32 @@
+[
+  {
+    "description": "Spontaneous cross-border labour actions emerge in logistics, healthcare, and public administration, targeting AI-driven job displacement and opaque algorithmic management. The protests are not centrally coordinated but share demands for transparency, retraining guarantees, and moratoriums on automated hiring. Their persistence strains national responses and forces emergency debate in the European Parliament.",
+    "emergent": true,
+    "id": "emergent_labour_protests",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A grey-market network for high-performance AI compute emerges, leveraging underutilized academic and industrial clusters across Eastern and Southern Europe. It offers access to models near the open frontier, bypassing export controls and licensing. Initial users include startups, investigative journalists, and small research collectives, but intelligence agencies express concern about potential misuse as the network scales.",
+    "emergent": true,
+    "id": "emergent_compute_black_market",
+    "probability": 0.2333333333333333,
+    "probability_samples": [
+      0.3,
+      0.2,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_alliance",
+    "probability": 0.25
+  }
+]

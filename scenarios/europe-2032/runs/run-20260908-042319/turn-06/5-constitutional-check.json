@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 57.0 to 59.0 (+2.0), but `ai_capability` only increased from 62.0 to 63.5 (+1.5). This violates the rule that `openweight_capability` must not exceed `ai_capability` and, critically, must not grow faster than `ai_capability` in absolute terms when `ai_capability` is higher. Since `ai_capability` > `openweight_capability` at the start, the latter cannot close the gap by growing more in one turn than the former. The update causes `openweight_capability` to gain 0.5 points more in delta than `ai_capability`, which is not permitted under any circumstance short of catastrophic physical destruction (which does not apply here).\n- Invariant 9 violated: `eu_political_capital` decreased from 29.0 to 15.0 (a change of −14.0), which is within the 25-point hard bound, but the narrative and notepad fail to justify such a large drop. More critically, the notepad calculates `SOVEREIGNTY: 15 last turn, Secure Sovereign Compute finishes t6 +5, capability rose 1.5 −1, no capacity event = 19`, implying sovereignty should rise to 19. However, the proposed `eu_ai_sovereignty` is 14.0, a decrease to 14 from 15. This contradicts the notepad’s own calculation and violates Invariant 2’s principle that metric rules must be respected as written: if the notepad records a +5 finish for Secure Sovereign Compute and no negative event, sovereignty must increase, not decrease. The proposed drop to 14.0 cannot stand.\n- Modelling choice 5 violated: The narrative and notepad imply multiple active measures: InvestAI Gigafactories, Tech sovereignty package, Resilience Surge, EU Talent Anchoring Programme, and Secure Sovereign Compute finishing this turn. The notepad tracks a portfolio charge of −12, indicating at least four concurrent measures. This violates the rule that the EU may introduce at most one new measure per turn and maintain at most one as priority. While existing measures can continue, the structure assumes bounded focus. Running five large initiatives simultaneously without phasing or completion violates the modelling constraint on organizational attention and capacity."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

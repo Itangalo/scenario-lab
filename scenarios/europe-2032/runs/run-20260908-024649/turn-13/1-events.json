@@ -1,0 +1,37 @@
+[
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.10333333333333333,
+    "probability_samples": [
+      0.13,
+      0.18,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_ai_winter_investment_shift",
+    "probability": 0.18000000000000002,
+    "emergent": true,
+    "description": "Private investment in European AI startups dries up noticeably as venture capital pivots to defensive tech and resilience infrastructure, anticipating regulatory tightening and public hostility. Founders begin repositioning as 'AI-adjacent' to survive, while state-backed funds step in selectively — creating a new class of semi-sovereign firms dependent on public grants rather than market validation.",
+    "probability_samples": [
+      0.3,
+      0.0,
+      0.24
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  }
+]

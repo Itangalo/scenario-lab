@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 57.0 to 65.0 (+8.0) in a single turn, which is an implausibly large jump given that `openweight_capability` must accumulate gradually and cannot fall (except under catastrophic destruction, which is not narrated). The narrative attributes this to a \"major open-weight release\", but no prior accumulation or build-up is indicated, and such a leap exceeds plausible diffusion rates without a preceding ramp-up in the metric. This violates the accumulation principle for `openweight_capability`.\n- Modelling choice 5 violated: The EU introduced two new measures in one turn — the **Sovereign Agent Operational Assurance Framework** (declared finished) and the **EU Incident Response Corps** (launched and declared a priority). Even though one is finishing, launching a new measure and naming it as the priority in the same turn constitutes introducing a new measure while another is closing, which counts as more than one new measure activation in a single turn. At most one new measure may be introduced per turn.\n- Invariant 9 violated: `eu_political_capital` increased by 4.0 (from 19.0 to 23.0), which exceeds the hard cap of ±25 points *total movement* — while 4.0 is well under 25, the issue is compounded by the fact that no sufficient justification is provided for such a jump given the context: political capital dipped under portfolio costs and only rebounded slightly from completing a measure. A +4 shift requires stronger positive drivers than are present, especially in a turn with sovereignty erosion, member state defection, and incomplete implementation. The notepad shows a +3 proposal bonus and no legitimacy lends, which should result in a net change closer to +0 or +1 after costs, not +4."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

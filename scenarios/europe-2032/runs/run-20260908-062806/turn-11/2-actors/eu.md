@@ -1,0 +1,28 @@
+## Statement changes  
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now know that without sovereign technical capacity, neither mandate can be fulfilled, and without political cohesion, sovereign capacity cannot be built.  
+- Grounds: The failure to unify EuroHPC sites under operational control — despite legal, financial, and technical mobilisation — reveals that the obstacle is no longer capital or capability, but the Union’s inability to bind member-state sovereignty to collective survival. The disinformation attacks and energy panic exploited not just technical fragility, but the visible fracture in our command. The convergence of mandates now includes a third pole: unity in execution, not just ambition.
+
+- modify `two_year_commitment` (commitment): Deliver a sovereign AI stack — trained, operated, and interpreted within EU jurisdiction — that can serve as the operational backbone of critical public services and as a control reference for safety, achieving minimum capability of 75.0 by turn 12. This commitment now includes binding operational control over EuroHPC infrastructure and full participation of all member states — no opt-outs, no parallel deals.  
+- Grounds: The Slovakian bilateral arrangement and the deadlock at the EU AI Infrastructure Board have rendered the original commitment unfulfillable on current terms. We cannot train sovereign models on contested infrastructure. The commitment must now include not just technical delivery, but enforceable unity — or it is a fiction. This is not a retreat, but a necessary hardening of conditions for success.
+
+## Portfolio  
+``Sovereign AI Core: Build and Operate EU-Controlled Frontier Systems (category 4, costs 3 per turn, started turn 9, finishes on turn 12): Establish and operate EU-owned, EU-staffed AI systems at or above 75.0 capability, trained and run on sovereign infrastructure, with full interpretability and telemetry, to serve as both operational backbone and control reference.``  
+``Launch Sovereign Interpretability Directorate with Binding Access to All High-Capability Systems (category 5, costs 3 per turn, started turn 10, finishes on turn 14): Establish a public research agency dedicated to reverse-engineering, monitoring, and certifying non-linguistic reasoning in frontier models, with legal authority to access weights, training data, and internal activations from all systems above 60.0 capability deployed in the EU.``
+
+## New measure  
+**Invoke Article 122 TFEU to Declare a Digital Sovereignty Emergency and Suspend Bilateral AI Infrastructure Agreements**  
+This measure legally overrides national-level AI infrastructure deals that compromise EU-wide control, enabling immediate operational unification of EuroHPC sites under the EU AI Infrastructure Board.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 12`  
+`Targeted effect:` Increase eu_ai_sovereignty by 15 points and eu_political_capital by 5 by resolving the infrastructure deadlock; enables progress on the Sovereign AI Core by securing access to LUMI, JUWELS, and Leonardo. Prevents further erosion of resilience by closing legal limbo that attackers exploit.  
+`Applies to:` All member states, EuroHPC national nodes, and foreign providers with bilateral AI infrastructure agreements in the EU.
+
+## Priority  
+**Sovereign AI Core: Build and Operate EU-Controlled Frontier Systems** — because without a functioning sovereign stack, every other measure, including interpretability and emergency powers, lacks substance: we cannot govern systems we cannot run, and we cannot secure infrastructure we do not control. This turn, the stack is not just a technical project — it is the test of whether the Union can act as one.
+
+## In practice  
+We are acting under Article 122 TFEU — the solidarity clause — to declare a digital sovereignty emergency, triggered by the convergence of capability advance, disinformation attacks, and infrastructure fragmentation. This is not a request: it is a binding directive that suspends all bilateral agreements allowing foreign control or exclusive access to AI-critical infrastructure on EU soil. Slovakia’s deal with the U.S. provider is suspended; LUMI, JUWELS, and Leonardo are placed under the operational authority of the EU AI Infrastructure Board by end of turn. Legal challenges will come — we are preparing the CJEU referral in advance to pre-empt delay. The EIB has released an additional €20bn in emergency tranches, tied to compliance: full integration by turn 12 unlocks access to sovereign model runs and priority compute shares. Resistance will be met with consequences — non-compliant states lose eligibility for AI resilience funding and future EuroHPC upgrades.
+
+The Sovereign AI Core remains on track for capability 75.0 by turn 12, but only if architecture finalisation and training runs begin in Q1 2032. That requires chip deliveries now — we have activated emergency export licensing with ASML and secured priority TSMC shipments under EU-only routing. The first non-linguistic interpretability tools are being prototyped at Aalto and INRIA, feeding into the Sovereign Interpretability Directorate, which begins its first audits of foreign models in Q4, using legal access under the Digital Markets Act. But none of this matters if the stack remains unbuilt. This turn, we are not asking for unity — we are enforcing it. The Union will have control of its infrastructure, or it will have no future to determine.

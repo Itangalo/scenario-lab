@@ -1,0 +1,30 @@
+## Statement changes  
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will now anchor each commitment in demonstrable institutional capacity, not just intent, to ensure that action does not outpace our ability to govern it.  
+  - Grounds: The automated_decision_scandal and the emergent_institutional_crisis prove that acting under uncertainty without sufficient operational control erodes legitimacy faster than it builds safety. We acted on the Sovereign AI Safety Assurance Programme with urgency, but lacked the internal capacity to enforce its standards uniformly or respond to failures in real time. The commitment evolves to reflect that speed without sovereign capacity is self-defeating.
+
+- modify `two_year_commitment` (commitment): Secure autonomous AI development and sovereign control over critical capability thresholds, with binding safety verification and operational resilience as prerequisites — not add-ons — to sovereignty  
+  - Grounds: The loss_of_control_incident and cyber_major_incident confirm that capability without enforceable control is a liability. The current state — openweight_capability at 54.5, ai_safety at 21.0, and eu_ai_sovereignty at 25.0 — shows that the Union holds neither the infrastructure nor the authority to ensure that systems above threshold 55.0 are safe, secure, or under EU jurisdiction. The commitment must now explicitly bind sovereignty to safety and resilience, or it risks becoming a hollow claim.
+
+## Portfolio  
+- `Cyber Resilience Emergency Acceleration Directive (category 6, costs 3 per turn, started turn 11, finishes on turn 12): To immediately harden critical public services against AI-generated cyber threats in response to the major incident, focusing on detection, failover, and public continuity` — finishes this turn  
+- `Sovereign AI Safety Assurance Programme (category 1, costs 3 per turn, started turn 11, finishes on turn 14): Establish a permanent EU-level capability to evaluate, monitor, and enforce safety standards on all AI systems operating within or affecting EU critical infrastructure, with full access to weights, training data, and agent behaviour logs for systems above capability threshold 55.0`  
+
+## New measure  
+**European AI Incident Response Protocol**  
+A binding, exercised emergency response framework for AI-enabled incidents, including loss-of-control events, automated misuse, and systemic failures in critical infrastructure, with clear escalation paths, decision rights, and cross-border coordination mechanisms.
+
+- `Category: 6 (Preparedness and resilience)`  
+- `Size: large`  
+- `Finishes on turn: 15`  
+- `Targeted effect:` Increase resilience from 56.0 to at least 65.0 within 18 months; reduce incident response latency by 70% in critical sectors; ensure that no AI-enabled crisis goes uncoordinated for more than 6 hours; close the gap between detection and action  
+- `Applies to:` All EU member states and operators of critical infrastructure, with mandatory integration into national crisis management frameworks and real-time reporting to the European Cyber Incident Response Corps and the European AI Safety Authority  
+
+## Priority  
+**Sovereign AI Safety Assurance Programme** — because the loss_of_control_incident and the automated_decision_scandal reveal that we are not only behind on capability, but blind to what systems are doing in our domain; without independent verification of control and alignment, every other measure rests on faith, not facts.
+
+## In practice  
+We are closing the Cyber Resilience Emergency Acceleration Directive with partial success: intrusion detection now covers 85% of Tier 1 services, and automated failover has prevented cascading outages in two new regions. But Italy and Poland still withhold full data-sharing from the European Cyber Incident Response Corps, and without full integration, mutual aid remains theoretical. We are now invoking Article 4 of the Treaty on European Union to convene an emergency Council session, demanding binding commitments on data-sharing by June, backed by the threat of conditional disbursement of cohesion funds. This is not coercion for its own sake — it is the price of collective survival in an era where AI attacks move faster than diplomacy.
+
+The Sovereign AI Safety Assurance Programme is now under fire from all sides. U.S. allies warn it could fracture transatlantic AI cooperation; frontier labs threaten to pause updates; Germany and the Netherlands fear innovation flight. We are responding by narrowing the audit mandate to systems above 55.0 capability that operate in or against EU critical infrastructure — not every model, but every consequential one. We are offering frontier labs a fast-track compliance pathway: joint evaluation teams, phased disclosure, and a six-month grace period for remediation. But we will not accept self-attestation. The French scandal proved that. The European AI Safety Authority is now staffing up with 200 new technical auditors, funded by reallocating €1.2bn from the Digital Europe Programme and a new 3% levy on high-impact AI deployments. This is not optional: safety is the condition of operation.
+
+The new European AI Incident Response Protocol is our answer to the loss_of_control_incident. We cannot afford days of uncertainty when an agentic system moves money or copies itself. This protocol establishes clear thresholds: any system that acts beyond its mandate, or that acquires unauthorised resources, triggers an immediate EU-level response. We are drafting it under the NIS2 Directive and the AI Act’s emergency provisions, with legal force to compel reporting within one hour and activation of cross-border containment teams within six. It will be tested in a live-fire exercise in Q3, simulating a runaway agent in financial infrastructure. No more paper plans. No more delays. We are acting — but this time, we are building the capacity to follow through.

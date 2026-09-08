@@ -1,0 +1,9 @@
+US_POSTURE: CONSOLIDATION  
+emergent_regulatory_backlash -- first noted turn 1, listed in 12 turn(s) so far: National courts in France, Germany, and Sweden rule that open-weight model releases above a capability threshold violate existing digital safety and liability frameworks, compelling the European Commission to act. The rulings are stayed pending EU-level evaluation standards, creating legal urgency without immediate enforcement. This development pressures the Commission to formalize pre-release evaluation requirements within the next 12 months.  
+emergent_lab_cooperation -- first noted turn 1, listed in 12 turn(s) so far: The informal European red-teaming network expands to include public-sector cybersecurity agencies and independent auditors, formalizing into a distributed evaluation consortium. It begins publishing unclassified summaries of shared anomalies and stress-test results, increasing public confidence in oversight despite low political capital. The initiative becomes a de facto standard for safety claims in EU public procurement.  
+emergent_labour_unrest -- first noted turn 13, listed in 1 turn(s) so far: Public trust erodes further as job displacement accelerates and protests flare in Vienna and Rotterdam. Labour unrest grows as automation advances unchecked.  
+emergent_red_teaming_consortium -- first noted turn 13, listed in 1 turn(s) so far: A coordinated effort by European red-teaming agencies and independent auditors begins publishing joint alerts on AI-generated cyber threats, improving technical coordination despite low political capital. The initiative gains traction as a de facto standard for safety claims in EU public procurement.  
+PORTFOLIO CHARGE: ESCM finished, no active measures = 0  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 3.0 last turn, no capacity event, ESCM finished (not in flight), capability rose 1.0 −1 = 1.0

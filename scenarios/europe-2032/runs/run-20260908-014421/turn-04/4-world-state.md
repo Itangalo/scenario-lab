@@ -1,0 +1,17 @@
+### A Turn of Collapse and Resolve
+
+Global AI capability advanced by +3.0 this turn, reaching 67.0, as frontier labs leveraged autonomous cyber agents to self-improve training loops. Offensive AI now designs exploits faster than human teams can patch them. With no safety breakthrough and opaque reasoning confirmed, `ai_safety` declined to 7.0—a notable erosion reflecting institutional strain and diverted oversight attention due to cascading crises, but not a systemic collapse. The drop accounts for heightened deployment pressure and reduced scrutiny bandwidth, consistent with the cyber crisis, but stops short of implying total failure without explicit safety-specific breakdowns.
+
+A major, automated ransomware attack crippled public health and transport systems across multiple member states—the **cyber_major_incident**—exposing deep vulnerabilities. Meanwhile, the **ai_investment_collapse** shattered private AI infrastructure plans: valuations imploded, chip fab expansions were scrapped, and Europe’s reliance on market-driven compute evaporated overnight.
+
+The EU completed **Cyber Shield for Critical Operators**, mandating AI-driven intrusion detection and red-teaming. This delivered +3 to `resilience`, raising it to 45.0—defences are now institutionalised, though under strain.
+
+In response to the investment collapse, the EU drafted the **Sovereign Compute Emergency Buildout**, a state-led initiative to construct frontier-scale AI infrastructure. However, no implementation began. Legal resistance from France and Poland against invoking Article 114 TFEU to override national energy regulators has stalled any legislative progress. ASML, under U.S. pressure, delays lithography deliveries. No funding mechanism is yet secured: emergency funds are insufficient, and no fiscal instruments (e.g., bonds or reallocations) have been passed. The European State Semiconductor Office does not exist, and technical staffing remains absent—planning capacity is not in place. As a result, the proposal remains informal and unadopted.
+
+Due to the portfolio already carrying four active measures—InvestAI Gigafactories, Tech sovereignty package, Labour Transition Acceleration Fund, and Cyber Shield—and one named priority, the EU cannot legally adopt a fifth measure this turn. The **Sovereign Compute Emergency Buildout** was debated but not formally proposed, and therefore does not enter the portfolio. It will require de-prioritisation or completion of an existing measure before formal adoption. No proposal bonus is awarded.
+
+`eu_ai_sovereignty` fell to 12.0. The **ai_investment_collapse** erased prior dependencies, costing −1 due to capability growth. The cyber crisis and lack of organisational capacity prevented any defensive investment gains. The mere drafting of an emergency plan, with no staffing, funding, or legal pathway, does not constitute progress and provides no upward adjustment. The metric reflects the erosion of structural position without offsetting advances.
+
+Political capital fell to 23.0—down, but not catastrophically—due to ongoing burden from the active portfolio and the political strain of debating an unadoptable emergency measure. Public sentiment collapsed to 30.0 amid job fears, outage trauma, and backlash against data centres—fuelled by the **campaign_backlash**.
+
+`openweight_capability` rose modestly to 51.0, half the frontier’s gain, constrained by diffusion bottlenecks.

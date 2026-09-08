@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Enforceable Runtime Safeguards Mandate −3, priority −1 = −4  
+PROPOSAL BONUS: Enforceable Runtime Safeguards Mandate (cat 3, large) +3 — openweight_frontier_release created urgent need for enforceable safeguards, directly addressed by this measure  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 12.0 last turn, InvestAI Gigafactories finishes t7 +5, capability rose 1.5 −1 = 15.0  
+US_POSTURE: ALLIANCE  
+emergent_labour_displacement_wave -- first noted turn 7, listed in 1 turn(s) so far: The wave of AI-driven displacement in mid-level technical and administrative roles continues to escalate, with widespread strikes in legal, financial, and public sectors across multiple member states. Unions coordinate transnationally, demanding binding EU-wide safeguards on public-sector AI adoption and transitional income guarantees, framing the issue as one of democratic legitimacy.  
+emergent_global_ai_governance_initiative -- first noted turn 7, listed in 1 turn(s) so far: The multilateral AI governance forum led by Japan, India, and Brazil finalizes a framework for neutral evaluation standards and incident reporting, attracting formal participation from 15 additional non-aligned states. The initiative begins drafting a lightweight compliance mechanism, positioning itself as a viable alternative to both U.S.-led and EU-centric models of AI governance.

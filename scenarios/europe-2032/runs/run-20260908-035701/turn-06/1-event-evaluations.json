@@ -1,0 +1,110 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.09000000000000001,
+    "probability_samples": [
+      0.09,
+      0.09,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8103477836683464,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7997333311421264,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8080819107270559,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2974030850951169,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.70961916164878,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.1466666666666667,
+    "probability_samples": [
+      0.12,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8559783227534361,
+    "triggered": false
+  },
+  {
+    "description": "Several EU member states, citing national security and energy sovereignty, begin unilaterally restricting the export of electricity and grid access to foreign-owned AI data centres. The moves are framed as climate measures but target US hyperscalers, escalating tensions within the Single Market. The European Commission opens infringement proceedings, but enforcement lags behind political momentum.",
+    "emergent": true,
+    "id": "emergent_compute_nationalism",
+    "probability": 0.24,
+    "probability_samples": [
+      0.25,
+      0.22,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.26772503579568085,
+    "triggered": false
+  },
+  {
+    "description": "Coordinated strikes and protests by legal, administrative and public-sector unions erupt in France, Germany and Belgium, demanding binding limits on AI deployment in hiring and service delivery. The actions disrupt court scheduling, tax processing and university admissions, forcing regional governments into emergency negotiations. The unrest is not nationwide but is persistent and media-visible, feeding into broader public skepticism.",
+    "emergent": true,
+    "id": "emergent_labour_unrest_ai",
+    "probability": 0.26666666666666666,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5241604480974985,
+    "triggered": false
+  }
+]

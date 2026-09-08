@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Secure Foundational Compute −3, European AI Watchdog Network −2, priority −1 = −6  
+PROPOSAL BONUS: none — measure is strategic but not a direct response to a recent incident  
+LEGITIMACY LENDS: none — capital 6.0 < sentiment 20.0  
+SOVEREIGNTY: 11.0 last turn, no capacity event, no category 4 finish, capability rose 0.5 −1 = 10.0  
+US_POSTURE: RETRENCHMENT  
+- `emergent_regional_compute_pact` -- first noted turn 9, listed in 3 turn(s) so far: Several EU member states, frustrated by the lack of centralized sovereignty progress, quietly begin forming a regional compute-sharing pact with Switzerland and Norway, pooling surplus government and research-grade GPU clusters for joint evaluation and red-teaming. The initiative bypasses stalled EU-wide frameworks but risks fragmenting oversight further.  
+- `emergent_ai_faultline_earthquake` -- first noted turn 9, listed in 3 turn(s) so far: A moderate earthquake strikes a major European data centre hub, triggering cooling failures and temporary outages across multiple facilities. The incident exposes geographic concentration risks in EU AI infrastructure and prompts emergency discussions about geographic redundancy in the Sovereign Resilience Corridor.  
+- `bio_uplift_findings` -- first noted turn 11, listed in 2 turn(s) so far: A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 4 turns.

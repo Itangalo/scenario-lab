@@ -1,0 +1,18 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — **finished**
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — **finished**
+- `EU Sovereign Access Guarantee (category 4, costs 3 per turn, started turn 3, finishes on turn 8): We will guarantee uninterrupted access to a sovereign stack of high-capability AI models for essential public functions, built and operated under EU legal jurisdiction, to prevent strategic paralysis from external access denial`
+- `Sovereign Talent Acceleration Programme (category 4, costs 3 per turn, started turn 4, finishes on turn 7): We will fast-track recruitment, retention, and integration of frontier AI talent into EU sovereign efforts through binding public-service contracts, relocation incentives, and embedded roles in EuroHPC JU and national security agencies`
+- `Establish sovereign model control and runtime governance for the EU Sovereign Access Guarantee (category 1, costs 3 per turn, started turn 7, finishes on turn 7): We will operationalise the sovereign stack by mandating EU-controlled fine-tuning, deployment monitoring, and runtime intervention protocols on all models covered by the Guarantee, enforced through a new certification regime` — **finished**
+
+## New measure
+None this turn.  
+We are waiting for the completion of the Sovereign Access Guarantee’s operational control framework and the assessment of its real-world enforceability before committing further to expansion or escalation.
+
+## Priority
+**EU Sovereign Access Guarantee** — this remains our central commitment because, with foreign providers now conditioning access on political alignment and technical compliance, runtime sovereignty is the only way to ensure that the EU’s access to essential AI systems cannot be silently degraded or revoked.
+
+## In practice
+We are closing out the first phase of sovereign runtime control: the certification regime for the EU Sovereign Access Guarantee has been drafted under the Digital Governance Act and is now before the JIAU for initial enforcement. The Joint AI Assurance Unit has activated its audit teams, drawing on specialists embedded through the Sovereign Talent Acceleration Programme, and is conducting pre-deployment evaluations of two foreign-origin models currently in the stack. These evaluations are testing the limits of our leverage — US providers are contesting the requirement for transparent fine-tuning logs and EU-held override keys, arguing they compromise security and intellectual property. We are countering through the market access conditions tied to the Tech Sovereignty Package: non-compliant models will be excluded from public procurement and critical infrastructure use in the EU. Domestically, the completion of the InvestAI Gigafactories allows us to point to a credible alternative — not yet at frontier capability, but sufficient to run the sovereign stack at operational capacity. The message is clear: you may keep your weights, but if they run in our critical systems, they run under our rules. This turn, we are consolidating, not expanding — ensuring that the control we claimed on paper is real in practice, and that the certification regime can withstand legal and technical challenge. The next step depends on whether this holds.

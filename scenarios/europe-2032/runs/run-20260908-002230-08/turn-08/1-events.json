@@ -1,0 +1,26 @@
+[
+  {
+    "id": "joint_threat_response",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_regional_data_sovereignty_pacts",
+    "probability": 0.28,
+    "emergent": true,
+    "description": "Several EU member states, reacting to both public backlash and U.S. access restrictions, continue forming bilateral and regional agreements to pool compute resources and establish sovereign data-sharing frameworks outside major hyperscaler clouds. These pacts prioritize local control, auditability, and non-extradition of model weights, creating a patchwork of semi-autonomous AI infrastructure. The developments are not yet coordinated at the EU level but gain momentum as trust in external providers erodes.",
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

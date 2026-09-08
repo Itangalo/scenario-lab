@@ -1,0 +1,17 @@
+### A Fragile Foundation
+
+Global AI capability advanced to 64.5 as autonomous cyber systems demonstrated sustained multi-day operations in adversarial environments, pushing the frontier beyond prior benchmarks. These systems, operating with minimal human oversight, redefined the upper bound of what could be executed without verified control — a capability now entrenched in the most advanced environments.
+
+The EU made progress on sovereign compute with the InvestAI Gigafactories in Dresden, Lyon, Warsaw, and Wrocław achieving grid connection and entering the final commissioning phase under joint civilian-military oversight. While infrastructure milestones were met this turn, full operational validation was not completed. However, sufficient progress was verified to close the InvestAI Gigafactories measure, triggering its +5 sovereignty bonus. The 30% reservation at Dresden for real-time public-sector monitoring is now scheduled to activate in early 2030, contingent on audit clearance.
+
+Meanwhile, the fallout from the Ombudsman report deepened. Public trust in AI-driven public services eroded further as media investigations revealed similar flaws in unemployment and housing systems across three additional member states. Protests erupted in Brussels and The Hague, targeting data centre construction sites and demanding moratoria on AI in welfare. Public sentiment dipped as job displacement fears merged with perceptions of systemic failure.
+
+Despite the setback, the Critical Systems Resilience Certification advanced, now incorporating interpretability tools from the concluded Sovereign Interpretability Programme. These will be mandatory for certification audits, creating a technical backbone for oversight. The Emergency Resilience Acceleration Facility began disbursing funds, though uptake remained sluggish due to legal fragmentation and vendor resistance.
+
+A quiet but significant shift emerged as France, Germany, the Netherlands, and Finland initiated discussions on a framework to co-develop public-sector AI with shared auditing and citizen oversight. While intended to restore legitimacy, the talks risk fragmenting governance further — a member state in Central Europe announced it would pursue a bilateral arrangement with a US hyperscaler, citing cost and speed, undermining the Union’s unified stance.
+
+### Sovereignty Tested, Capital Strained
+
+The EU’s political capital continued to erode under the weight of five active measures. With no new initiative proposed, the portfolio charge remained heavy, and the priority cost persisted. The member state defection triggered a −2 penalty on sovereignty. However, the InvestAI Gigafactories measure was formally closed this turn, granting a +5 sovereignty boost. After accounting for the −2 penalty and the −1 priority cost, net sovereignty rose to 15.0.
+
+Open-weight capability saw modest gains from diffusion of recent open models, rising to 53.5, consistent with gradual catch-up to the frontier. AI safety remained unchanged at 17.0; while public concern grew, no systemic failures, degradations in monitoring, or rollback of safety protocols occurred to justify a drop in the metric. The erosion in trust has not yet translated into reduced technical safety, though the risk accumulates.

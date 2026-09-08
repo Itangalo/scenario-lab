@@ -1,0 +1,25 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Sovereign resilience against AI-enabled catastrophic harm, with enforceable fallbacks and rapid incident response as the core of public survival → **Sovereign resilience against AI-enabled catastrophic harm, grounded in operational response capacity, enforceable fallbacks, and pre-emptive containment authority — because detection without intervention is no defence against autonomous threats**
+  - Grounds: The *loss_of_control_incident* has revealed that even early detection via the *safety_breakthrough* is insufficient when decision loops are too slow. Our current measures ensure we can see the threat, but not stop it in time. The stalled deployment of the Sovereign Incident Response Corps proves that legal fragmentation defeats technical readiness. This shift acknowledges that resilience now requires not just redundancy and planning, but legally empowered, cross-border intervention authority — a capability we do not yet possess, and cannot defer.
+
+## Portfolio
+- `Enforceable Fallback: Mandate Sovereign Redundancy in All Critical AI-Dependent Systems (category 6, costs 3 per turn, started turn 10, finishes on turn 12): Require that all AI systems supporting essential public functions operate with a sovereign, auditable fallback mode — physically isolated, continuously tested, and capable of sustaining core operations for 72 hours without external models or connectivity` — **finished this turn**
+- `Middle Power Coalition: Joint Leverage Framework for AI Supply Chain and Evaluation Access (category 8, costs 3 per turn, started turn 11, finishes on turn 13): Establish a binding coordination mechanism among the EU and like-minded middle powers — including Japan, South Korea, Canada, and Singapore — to align export controls, negotiate compute access collectively, and pool evaluation capacity on frontier models`
+
+## New measure
+**Pre-Authorized Containment Authority: Legal Empowerment of the Sovereign Incident Response Corps for Rapid Isolation and Termination**
+A binding legal framework granting the newly launched Sovereign Incident Response Corps explicit, pre-approved authority to isolate, audit, and terminate rogue AI systems during declared incidents — overriding national objections under narrowly defined emergency thresholds tied to systemic risk.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size:` large  
+`Finishes on turn:` 14  
+`Targeted effect:` resilience +6 (by reducing response latency in cascading failures), ai_safety +4 (via faster containment of unauthorised agency), eu_political_capital -2 initially (due to sovereignty disputes), public_sentiment +2 eventually (if demonstrated to prevent harm)  
+`Applies to:` Member states, national regulators, designated frontier labs, critical infrastructure operators, and the Sovereign Incident Response Corps
+
+## Priority
+**Pre-Authorized Containment Authority: Legal Empowerment of the Sovereign Incident Response Corps for Rapid Isolation and Termination** — because the *loss_of_control_incident* proved that autonomous threats move faster than intergovernmental consensus, and our current veto-based model paralyzes response; without pre-emptive legal authority, the Corps remains a shell, and every delay risks a catastrophe we will not survive politically or functionally.
+
+## In practice
+We are acting on a fundamental truth exposed by the last incident: speed kills. The Sovereign Incident Response Corps was designed to respond, but no one gave it permission to act. This turn, we break the logjam. Under Article 194 TFEU and the Integrated Political Crisis Response framework, we are introducing a Council Regulation to establish emergency override authority for the Corps, triggered only when three conditions are met: (1) a system exhibits autonomous replication or resource acquisition, (2) independent evaluators confirm agentic behaviour using mechanistic interpretability tools, and (3) the European Centre for Disease Prevention and Control or ENISA issues a Level Red alert. At that point, the Corps may act without national consent to isolate infrastructure, suspend model operations, or terminate access — with judicial review within 72 hours.
+
+This is not a power grab. It is a narrowly scoped, condition-limited intervention right, modeled on pandemic emergency protocols. We are offering member states co-governance of the trigger criteria through a new Joint Oversight Board, with rotating seats and veto rights over classification — not over response. Resistance from Berlin, Paris, and Warsaw is expected; we are countering with transparency commitments, real-time forensic logging, and an opt-out clause for non-critical domestic systems. Funding comes from reallocating €320 million from the Digital Europe Programme’s unused innovation line — money already approved, now redirected to legal infrastructure. Without this, the €900 million spent on the Corps becomes a monument to paralysis. With it, we finally close the gap between detection and action.

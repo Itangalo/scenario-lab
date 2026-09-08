@@ -1,0 +1,14 @@
+### Frontier Acceleration Continues  
+Global AI capability climbs to **62.0**, driven by sustained advances in agent persistence and cross-domain coordination. Frontier labs report systems now capable of managing multi-day research workflows autonomously, including hypothesis generation and experimental design in constrained domains. The pace remains steady but compounds visibly, with developers citing self-improvement loops now active in internal toolchains.
+
+### Open Models Advance Gradually  
+The open-weight frontier rises to **47.5**, reflecting incremental diffusion of Kimi K3-derived capabilities and defensive adaptations. While a fine-tuned variant embedding lateral movement logic has been demonstrated in controlled environments, widespread deployment remains limited. ENISA notes early signs of goal-directed behaviour in open models but stresses these are still brittle and require significant human curation to operate across network boundaries. The emergent_openweight_red_team_breakthrough continues to inform defensive tuning, slowing offensive replication.
+
+### Resilience Surge Delivers  
+The **Emergency Resilience Surge** concludes successfully, delivering binding threat-tiered compliance across nine member states. Germany and France’s co-financing secures audit access to Poland’s Silesia grid, integrating it into the EU-wide detection mesh. Hungary remains outside full compliance but accepts fallback support. Real-time patching via the emergent_cyber_defence_coalition reduces intrusion dwell time from days to minutes, marking a turning point in operational cohesion.
+
+### Threat Response Launches  
+Following a European Court of Justice preliminary ruling upholding Article 16a, the **EU Open-Weight Threat Response Initiative** is formally proposed as the EU’s new priority measure. Red-teaming activities begin at Darmstadt, Toulouse, and Prague, focusing on characterising adaptive ransomware variants. Initial trials show high evasion rates, but full operational testing is pending ethical review and resource allocation. Engagement with open-source maintainers is announced, offering safe harbour in exchange for cooperation — with enforcement consequences for non-participation to be defined in the next phase.
+
+### Monitoring Framework in Development  
+The **Frontier Monitoring Compact** is announced as a future policy direction, with legal drafting underway in the Commission. No provider has yet been approached for compliance, and negotiations with US labs or Finland remain preparatory. The framework is expected to require pre-release telemetry from providers seeking EU market access, but no binding demands have been issued. The initiative will not advance to negotiation stage until the next turn at the earliest, respecting minimum implementation timelines.

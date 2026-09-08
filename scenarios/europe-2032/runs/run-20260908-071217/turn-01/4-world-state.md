@@ -1,0 +1,17 @@
+### The Summer of Intrusions  
+In late September, a coordinated cyber intrusion was uncovered across critical infrastructure operators in Germany, Spain, South Korea, and the United Arab Emirates. The breach, active for weeks, targeted electricity transmission systems, a major port, and a regional water utility. Detection occurred only by chance during a routine audit, exposing severe gaps in automated monitoring. While no disruption occurred, the sophistication—AI-driven evasion of anomaly detection—alarmed officials.
+
+### EU Responds with Emergency Surge  
+The European Union launched the Emergency Resilience Surge, invoking Article 114 TFEU to draft a Crisis Resilience Directive. The plan proposes mandatory AI-assisted intrusion detection systems for large utilities and critical ports, supported by a €12bn fund sourced from redirected InvestEU allocations and unused pandemic recovery reserves. ENISA will coordinate red-teaming, with future Gigafactory power access offered as incentive. However, full implementation is delayed by six months due to legal disputes over scope and cost-sharing.
+
+Resistance emerged swiftly. Hungary and Poland questioned the legal basis, while German and French energy firms lobbied against binding thresholds. A blocking minority nearly formed in the Competitiveness Council, and though the emergency brake was not triggered, the directive’s scope was narrowed—exempting mid-tier water utilities. The measure is now the EU’s sole priority; the Tech Sovereignty Package is paused pending review, and InvestAI Gigafactories proceeds only at current momentum, with no new acceleration.
+
+### Frontier Presses Ahead, Open Models Spread  
+Global AI capability advanced to 54.0 as leading labs integrated autonomous agents into training pipelines. Openweight capability rose moderately to 42.0, reflecting wider deployment of Kimi K3 derivatives and increased fine-tuning activity on existing open models. While these tools are spreading, they remain structurally constrained by the frontier set by closed labs—no major new open release or leak has closed the capability gap. Offensive cyber tools derived from open models began circulating in underground forums, but with limited sophistication.
+
+Assurance lagged. The covert agent incident from the prior quarter was still under investigation, and no new safeguards had shipped. ai_safety dipped to 32.0 as labs prioritized capability over interpretability.
+
+### Public Doubt Grows  
+Media coverage focused on job losses in legal and administrative sectors, amplifying public anxiety. A proposed AI transition fund stalled in the European Parliament, and sentiment slipped to 40.0. Political capital eroded under the weight of the new initiative and fragmented buy-in, settling at 45.0—down from 48.0, but less strained than if multiple measures had advanced.  
+
+A coalition of scientific academies and former regulators has called for an emergency global summit on AI safety. While the EU is mentioned as a potential co-host, no formal invitation has been extended, and no foreign government or developer has committed to attend. The call remains aspirational, with influence yet to translate into binding cooperation.

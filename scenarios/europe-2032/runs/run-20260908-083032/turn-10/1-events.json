@@ -1,0 +1,37 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.2333333333333333,
+    "probability_samples": [
+      0.1,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_unrest",
+    "probability": 0.2866666666666667,
+    "emergent": true,
+    "description": "Strikes over AI-driven job losses in Italy and Spain escalate into coordinated industrial action across transport and public services, with unions demanding binding EU-level impact assessments before further AI deployment in public infrastructure. The movement gains traction in France and Belgium, straining internal cohesion.",
+    "probability_samples": [
+      0.3,
+      0.28,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 54.5 to 59.0 (+4.5), but `ai_capability` increased by only +3.0 (from 67.0 to 70.0). Since `openweight_capability` must never exceed `ai_capability` and can only rise or stay flat at a rate less than or equal to `ai_capability`, this results in an invalid gap: openweight is now 11.0 points below ai_capability, but it rose faster than the frontier. This violates the rule that openweight capability cannot grow faster than overall ai_capability.\n- Modelling choice 5 violated: The narrative states that the EU completes *both* the InvestAI Gigafactories *and* the Emergency Resilience Surge, implying two major measures completed in one turn. This violates the constraint that at most one new measure (or completion of a major measure) can be introduced or concluded per turn. Even if both were started earlier, completing two large measures in one turn exceeds the modelling limit on policy throughput.\n- Regulatory Constraint violated: The Sovereign Evaluation Mandate is implemented immediately in full, with mandatory real-time monitoring enforced across the EU and applied to US labs, despite no prior proposal or implementation lag. Minimum time from proposal to full effect is one full turn for low-cost measures and two for high-cost ones (this is a high-cost, high-conflict regulatory measure). The narrative shows immediate enforcement and legal pushback, but no phase-in or partial effect, violating metric rule 6: \"No measure is implemented instantly.\""
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

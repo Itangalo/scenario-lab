@@ -1,0 +1,48 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.15666666666666668,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.12000000000000001,
+    "probability_samples": [
+      0.08,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_institutional_crisis",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "The combination of plummeting political capital, fragmented member-state cooperation, and repeated public scandals triggers an open crisis in EU institutional legitimacy. A coalition of member states calls for an emergency summit to reassess the EU's AI governance framework, demanding either radical reform or opt-outs. The crisis forces a reckoning with the sustainability of centralized AI oversight amid divergent national interests.",
+    "probability_samples": [
+      0.28,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

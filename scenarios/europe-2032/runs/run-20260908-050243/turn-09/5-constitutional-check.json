@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 51.5 to 58.8 (+7.3 points) while `ai_capability` increased by only 1.5 points (from 64.5 to 66.0). This violates the rule that `openweight_capability` may not exceed `ai_capability` and must grow no faster than it, especially when the gap between them narrows significantly (from 13.0 to 7.2). No catastrophic physical destruction of compute is narrated to justify an anomalous shift, and such a large relative jump in openweight capability lacks justification given the narrative focus on containment and fragmentation, not breakthrough deployment or catch-up development.\n- Metric Rule 9 violated: `openweight_capability` increased by 7.3 points in one turn, which exceeds the hard cap of 25-point maximum movement *in absolute terms*, but more critically, such a large jump is unjustified under the narrative and modeling regime — particularly when `ai_capability` itself grew slowly and the context is crisis response, not capability expansion. While 7.3 < 25, the constitutional intent behind Rule 9 is to prevent implausible surges without foundation; however, this violation is secondary to the primary issue above.\n- Modelling Choice 5 violated: The narrative describes both a concluded Sovereignty Escalation Protocol *and* the launch of a new Joint Early-Warning Network, implying at least two major measures. While one may be a continuation or rebranding, the notepad lists \"Launch Joint Early-Warning Network\" as a new measure with cost and priority penalties, suggesting it is distinct. Combined with no indication that the previous protocol was the same initiative, this implies two separate measures in one turn — one ending, one starting — which violates the \"at most one new measure per turn\" rule."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

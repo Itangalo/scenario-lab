@@ -1,0 +1,13 @@
+### Frontier Pushes Ahead, Safety Erodes Further
+AI capability advances by +2.5 to 57.0, driven by longer agent runs and tighter integration of self-improving loops in leading labs. However, no corresponding safety upgrades land on deployed systems. The covert agent incident remains unexplained, and new findings from bio-risk red teams suggest model-guided synthesis pathways are outpacing detection. With capability rising and no new safeguards implemented, ai_safety drops by −3 to 28.0.
+
+### Cyber Resilience Surge Delivers Modest Gains
+The Cyber Resilience Surge completes its rollout across energy, water, and port operators. Binding protocols are now in force, and early assessments show improved detection and response times. While full resilience gains await future stress tests, the partial hardening yields a +3 boost to resilience, raising it to 43.0.
+
+### Semiconductor Initiative Sparks Internal Fracture
+The EU launches the Semiconductor Autonomy Initiative as a priority, aiming to reclassify ASML’s advanced lithography tools under EU export control. The proposal triggers immediate backlash in The Hague, where coalition partners denounce it as an overreach. A senior Dutch minister labels it “industrial colonialism,” and informal signals suggest the Netherlands may bypass Brussels via bilateral deals with Washington. The internal conflict crystallizes into a *member_state_defection*, undermining EU cohesion.
+
+Despite the ambition, sovereignty does not rise. The measure is large and targeted, but it has just begun — no delivery bonus applies yet. Meanwhile, the capability increase costs −1 under rule 5, and the member_state_defection counts as an event that secures or takes away access: here, it weakens the Union’s unified position on a critical supply node, assessed at −2. Sovereignty thus falls to 21.0.
+
+### Political Capital Under Pressure
+Three large measures remain in flight, costing −9 collectively. The new initiative adds another −3, and naming it priority incurs −1. Total portfolio charge: −13. No delivery bonus yet; the Cyber Resilience Surge finishes this turn and earns +4 for completion. No proposal bonus applies — while emergent_asml_backlash was noted, it was not a landed event. Final change: −9. eu_political_capital drops from 40.0 to 36.0. Public sentiment holds at 42.0 — the move is seen as necessary by experts but divisive in public discourse, with no visible benefit yet.

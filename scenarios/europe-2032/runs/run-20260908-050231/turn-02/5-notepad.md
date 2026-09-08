@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3, priority −1 = −10  
+PROPOSAL BONUS: Open-Source Threat Detection Commons (cat 5, large) +3 — cyber_defence_breakthrough landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21.0 last turn, no capacity event, capability rose 1.5 −1 = 20.0  
+Emerging developments (tracked): `emergent_regional_oversight_consortium` -- first noted turn 1, listed in 2 turn(s) so far: In response to the AI Act's delayed enforcement and perceived lack of teeth, a consortium of EU member states with strong technical governance traditions forms a regional oversight body to conduct independent evaluations of high-risk AI systems, share audit findings, and coordinate enforcement where Brussels hesitates. The initiative gains traction as public sentiment remains ambivalent and trust in centralized regulation wavers.

@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Enforce Mandatory Integration −3, priority −1 = −4  
+PROPOSAL BONUS: none — measure is continuation, not direct response to recent event  
+LEGITIMACY LENDS: none (capital 12.0 < sentiment 23.0)  
+SOVEREIGNTY: 12.0 last turn, eu_frontier_access_denied t13 −2, capability rose 0.5 −1, no category 4 finish this turn = 10.0  
+US_POSTURE: CONSOLIDATION  
+emergent_cross_border_labor_mobility_pact -- first noted turn 12, listed in 2 turn(s) so far: In response to accelerating job displacement and uneven national retraining capacity, a coalition of EU member states launches a cross-border labor mobility and requalification pact, allowing displaced workers to access training and transitional employment in regions with labor shortages. The program is funded through repurposed cohesion funds and backed by private-sector skills commitments.  
+emergent_ai_refugee_narrative -- first noted turn 12, listed in 2 turn(s) so far: Media and political discourse in several member states begins to frame highly skilled AI defectors and dissident researchers from authoritarian regimes as 'AI refugees', prompting debates over asylum pathways, integration into EU research programs, and the strategic value of human capital in the AI race. Pilot resettlement programs emerge in Germany and the Netherlands.

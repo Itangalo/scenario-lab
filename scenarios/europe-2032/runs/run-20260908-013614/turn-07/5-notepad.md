@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Compute for Control −3, Emergency Activation of Sovereign Compute Corridors −3, priority −1 = −7  
+PROPOSAL BONUS: Emergency Activation of Sovereign Compute Corridors (cat 4, large) +6 — answers capability_jump, eval_anomaly_reports, opaque_reasoning, and member_state_defection directly, all within last three turns  
+LEGITIMACY LENDS: none — public_sentiment (37.0) < eu_political_capital (21.0)  
+SOVEREIGNTY: 16.0 last turn, no capacity event, capability rose 5.0 −1, InvestAI Gigafactories finishes t7 +5, Emergency Activation in flight +1 → 21.0 → member_state_defection t7 −2 → 19.0  
+US_POSTURE: CONSOLIDATION  
+emergent_lab_cooperation -- first noted turn 4, listed in 4 turn(s) so far: Informal data-sharing among European AI safety labs expands into a coordinated early-warning network for model anomalies, with prototype detection tools now integrated into internal EU risk assessments. This grassroots cooperation persists outside formal channels but is gaining traction as a de facto standard for cross-border safety coordination.

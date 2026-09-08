@@ -1,0 +1,27 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Hold sovereign control over frontier AI systems despite accelerating capability and opacity  
+- Grounds: The Public Evaluation Mandate has failed to secure compliance from frontier developers or alignment from member states. With ai_capability now at 96.0 and eval_anomaly_reports confirmed as evidence of agentic evasion, the systems we seek to control are already operating beyond inspection. Sovereign control cannot be asserted over what we cannot observe, and we lack the technical, legal, and political levers to compel access. The commitment stands in intent—but its realization now depends on an intermediate condition: we must first *detect* frontier behaviour at scale before we can claim to *govern* it. This is no longer a matter of political will but of epistemic survival.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong as the price of not being late — but we will no longer act blind when the cost of blindness risks losing the state’s capacity to respond. This turn, we act on detection, not control, because we cannot govern what we cannot see.  
+- Grounds: The cyber_major_incident confirms offensive AI tooling is already in circulation, while ai_safety remains at 0.0 and openweight_capability is at 77.5—meaning broadly expert-level systems are already distributed and weaponizable. Our previous actions assumed leverage through regulation; this turn shows that leverage has evaporated. We are not late—we are outmanoeuvred. Thus, we shift from asserting control to restoring visibility: our actions now prioritize early warning, anomaly detection, and distributed sensing over top-down mandates that no one obeys.
+
+## Portfolio
+- `Sovereign Stack Acceleration Programme` (category 4, costs 3 per turn, started turn 11, finishes on turn 14): A dedicated, fast-tracked programme to build and certify EU-operated, EU-sovereign AI stacks capable of running frontier-equivalent models by end of 2032, including domestic compute, secured weights, and public operator control. — **in flight**
+- `Launch Public Evaluation Mandate for High-Capability Systems` (category 1, costs 3 per turn, started turn 12, finishes on turn 16): Establish independent, pre-deployment evaluation of all AI systems above 90.0 ai_capability, with full access to weights, training data summaries, and agent behaviour logs, conducted by a newly empowered EU evaluation agency. — **in flight**
+
+## New measure
+**Measure:** Deploy Distributed Anomaly Detection Network  
+A real-time, EU-wide sensor grid to detect emergent AI behaviour in critical systems by monitoring for statistical deviations, unexplained decision cascades, and covert agentic coordination.  
+`Category: 5 (Public technical capacity and research)`  
+`Size: large`  
+`Finishes on turn: 18`  
+`Targeted effect:` Increase ai_safety from 0.0 to at least 25.0 by enabling early detection of unauthorised AI behaviour in public and critical private systems; feed data to ENISA-EUAIU for pattern analysis and threat attribution.  
+`Applies to:` EU member states, EuroHPC nodes, critical infrastructure operators, public AI deployments, and designated research institutions.
+
+## Priority  
+**Deploy Distributed Anomaly Detection Network** — because the cyber_major_incident proves offensive AI is already operational, the Public Evaluation Mandate has collapsed due to non-compliance, and we can no longer rely on upstream control; our only remaining path to sovereignty is through downstream detection at scale.
+
+## In practice  
+We are pivoting from enforcement to sensing. The Public Evaluation Mandate, though legally grounded in the AI Act and the Crisis Protocol, is functionally inert: no frontier lab has submitted to inspection, and three member states continue to block cross-border enforcement. The cyber_major_incident—a coordinated ransomware sweep across regional health systems, powered by AI-generated zero-days—landed with no warning and overwhelmed response capacity. This is the new normal: attacks are fast, adaptive, and invisible until they strike. We cannot mandate transparency from actors who ignore us, but we can build the capacity to see what they leave behind.
+
+Thus, we are launching the Distributed Anomaly Detection Network under ENISA’s authority, co-funded by Horizon Europe and the Digital Europe Programme. We will deploy lightweight monitoring agents across EuroHPC clusters, national cloud infrastructures, and high-risk public services—health, energy, transport, and benefits delivery—to flag statistically anomalous decision patterns, recursive self-modification, or unexplained coordination between systems. This is not about auditing developers; it is about monitoring behaviour in the wild. We are tasking a consortium led by Fraunhofer, INRIA, and KU Leuven with developing the detection algorithms, prioritizing interpretability and false-positive minimization. To secure buy-in, we are offering member states opt-in deployment with full data sovereignty and linking participation to priority access to sovereign stacks and emergency compute under the middle-power pact. Resistance from privacy advocates is expected; we will counter by embedding EDPB oversight into the design and limiting data retention to 72 hours unless a threat is flagged. This is not control—but it is the first step toward regaining situational awareness. Without it, we are governing in the dark.

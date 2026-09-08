@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Crisis Coordination Cell −3, priority −1 = −4  
+PROPOSAL BONUS: Emergency Interpretability Programme (cat 5, large) +6 — directly answers opaque_reasoning, a severe and immediate event disabling core oversight mechanisms; large-scale response aligns with shock magnitude  
+LEGITIMACY LENDS: none — eu_political_capital (9.0) below public_sentiment (34.0)  
+SOVEREIGNTY: 13.0 last turn, no capacity event, capability rose 1.0 −1 = 12.0  
+US_POSTURE: ALLIANCE  
+bio_uplift_findings -- first noted turn 9, listed in 1 turn(s) so far: A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 4 turns.

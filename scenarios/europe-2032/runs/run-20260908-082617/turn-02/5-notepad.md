@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield for Critical Operators −3, European Labour Transition and Innovation Fund −3, priority −1 = −13  
+PROPOSAL BONUS: European Labour Transition and Innovation Fund (cat 7, large) +3 — answers both emergent_labour_displacement_wave and automated_decision_scandal directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21 last turn, no capacity event, InvestAI Gigafactories in flight +0, Tech sovereignty package in flight +0, capability rose 2.0 −1 = 20  
+emergent_asml_supply_chain_negotiations -- first noted turn 1, listed in 2 turn(s) so far: Under growing internal pressure, the Dutch government initiates quiet trilateral talks with France and Germany to establish a unified EU front on semiconductor equipment exports, aiming to coordinate leverage over ASML’s technology without unilateral compliance with U.S. demands. The discussions are framed as industrial policy, but their intent is to transform the Union’s fragmented position into a collective bargaining stance, potentially laying groundwork for a future middle-power coalition.

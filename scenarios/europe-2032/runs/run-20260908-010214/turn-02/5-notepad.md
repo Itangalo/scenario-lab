@@ -1,0 +1,6 @@
+emergent_supply_chain_pressure -- first noted turn 1, listed in 3 turn(s) so far: ASML faces intensified U.S. demands to restrict not only advanced EUV exports to China but also servicing and component shipments for existing machines, threatening a de facto expansion of control. The Dutch government signals hesitation, citing economic and diplomatic risks, but Washington applies targeted financial leverage through correspondent banking channels.
+emergent_supply_chain_coordination -- first noted turn 1, listed in 3 turn(s) so far: A consortium of European and Asian semiconductor equipment manufacturers, alarmed by U.S. unilateralism and supply chain disruptions, begins informal talks on a coordinated export licensing framework independent of Washington's control. Initial focus is on dual-use tools and spare parts, with ASML's service network as a key leverage point. Meetings are held in Geneva under Swiss neutrality to avoid diplomatic escalation.
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Accelerated Sovereignty Procurement −3, priority −1 = −10
+PROPOSAL BONUS: Emergency Resilience Surge (cat 6, small) +3 — cyber_test_shot landed this turn and this answers it directly
+LEGITIMACY LENDS: none
+SOVEREIGNTY: 21.0 last turn, no capacity event, Accelerated Sovereignty Procurement in flight +0, capability rose 4.0 −1 = 20.0

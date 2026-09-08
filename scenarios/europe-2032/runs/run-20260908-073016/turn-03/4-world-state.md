@@ -1,0 +1,8 @@
+### The Frontier Accelerates
+Global AI capability advances by +2.5, reaching 59.5, as automated research pipelines mature in biomedicine and logistics. The verification_widens breakthrough spreads, enabling reliable AI-driven validation in new high-stakes domains. Open-weight models absorb fragments of this progress: `openweight_capability` rises to 47.0, nearing the threshold where offensive cyber capabilities become widely reproducible.
+
+### Crisis Drives Unity — and Cost
+The healthcare ransomware attack galvanises EU action. The Cyber Shield programme is fast-tracked, with binding AI detection mandates pushed through national councils. Emergency funding unlocks deployment in hesitant Eastern states, though rollout remains uneven. The new European AI Cyber Assurance Pact gains traction, converting informal coordination into structured commitments. ENISA launches a pilot threat-sharing platform, and nine member states sign preliminary accords. However, full ratification is delayed by legal disputes over liability limits, pushing completion into turn 5.
+
+### Sovereignty Erodes, Capital Bleeds
+The InvestAI Gigafactories remain stalled, and with `ai_capability` rising over 2, `eu_ai_sovereignty` falls to 19.0. Political capital drops sharply: four large measures in flight (−11), a named priority (−1), no completions. The new Pact earns a +3 proposal bonus — answering both the recent attack and the emergent initiative — but net change is −6, leaving capital at 25.0. Public sentiment rises slightly (+2) due to visible crisis response and the adoption_success narrative, now at 47.0. Yet `ai_safety` dips (−2) as capability outpaces safeguards, and resilience falls (−1) despite efforts — defences are still catching up.

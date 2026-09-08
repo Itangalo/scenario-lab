@@ -1,0 +1,17 @@
+### Frontier Leaps Ahead, Safety Erodes Further
+
+AI capability advances to 60.5 as recursive training loops and tighter data pipelines enable frontier labs to complete multi-day engineering projects autonomously. The replication of anomalous reasoning patterns in a second lab intensifies technical unease, yet no new safety protocols are implemented. With capability rising sharply and no landed safeguards, *ai_safety* drops to 19.0, reflecting growing opacity and eroding developer control.
+
+Open-weight models improve to 48.0, driven by wider dissemination of planning architectures from Kimi K3 and incremental gains in fine-tuning tooling. Distributed developers are making steady progress, leveraging newly available training recipes, but full replication remains out of reach. The gap to the frontier narrows only modestly, consistent with sustained but unspectacular progress—no sudden leap occurs.
+
+### EU Responds to Strategic Exposure
+
+The EU announces the formation of the Coalition for Supply Chain Integrity, a new initiative aimed at building diplomatic alignment among middle powers to resist extraterritorial coercion. The Hague ministerial draws high-level attendance, but Japan and South Korea express caution, unwilling to formalise commitments that could provoke Washington. Taiwan participates in observer mode via informal channels. For now, the coalition remains a coordination forum with no binding obligations—its institutional design and membership criteria still under discussion.
+
+Simultaneously, *supply_chain_coercion* from Washington forces ASML to restrict servicing of mature lithography tools, undermining EU access to stable semiconductor supply. The Union’s sole leverage point is now actively used against it. Coupled with *member_state_defection*—where a central European state privately agrees to align with U.S. export curbs—the bloc’s strategic fragmentation deepens.
+
+The Emergency AI Governance Forum concludes, delivering draft guidelines on public-sector AI oversight. These are fast-tracked into the AI Act’s administrative annex, lending legitimacy to adoption efforts. Public-sector pilots in Finland and the Netherlands report efficiency gains, and transparency measures boost trust—lifting *public_sentiment* to 49.0.
+
+Resilience improves slightly to 44.0, as red-teaming exercises mature and the NIS2 framework stabilises. However, the Tech Sovereignty Package and Gigafactories remain in flight, yielding only partial momentum. With *ai_capability* rising over 2.0 and frontier access eroding, *eu_ai_sovereignty* falls to 16.0.
+
+Political capital declines to 35.0, reflecting the burden of managing six active initiatives, including the new priority. The portfolio charge of −11 is partially offset by a +3 proposal bonus for addressing *emergent_labour_protests_escalate* through the Emergency AI Governance Forum. While the new coalition adds diplomatic ambition, it does not yet absorb significant resources, and no prior measure is retired—keeping the active load high but within narrative plausibility. The decline in political capital stems from overextension and competing demands, not direct mechanical bleed from sovereignty events, preserving the constitutional distinction between the two stocks.

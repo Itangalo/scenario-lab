@@ -1,0 +1,7 @@
+US_POSTURE: ALLIANCE
+- `emergent_regional_resilience_network` -- first noted turn 4, listed in 4 turn(s) so far: A bottom-up coordination effort among regional governments and critical infrastructure operators gains momentum after the recent cyber intrusion, leading to a shared early-warning and response network for AI-driven threats. This decentralized resilience framework improves detection and response times, and its success begins to influence EU-level planning.
+- `emergent_openweight_scrutiny` -- first noted turn 1, listed in 6 turn(s) so far: Following the release of Kimi K3 and its demonstrated offensive capability, a coalition of computer security researchers and civil society groups in Europe calls for urgent regulation of open-weight models above a capability threshold. Petitions gain tens of thousands of signatures in the first month, and the European Parliament begins informal consultations on amending the AI Act to address distributed risk.
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Resilience Acceleration Programme −3, Joint Access Framework Implementation −3, priority −1 = −10
+- PROPOSAL BONUS: Resilience Acceleration Programme (cat 6, large) +4 — cyber_major_incident and rsi_onset create urgent context; measure directly addresses defensive lag
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 16.0 last turn, no capacity event, capability rose 6.0 ≥2 −1 = 15.0

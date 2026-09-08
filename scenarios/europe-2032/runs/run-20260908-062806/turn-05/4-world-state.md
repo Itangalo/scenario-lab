@@ -1,0 +1,14 @@
+### The Fracture Widens  
+Public unrest intensified as coordinated industrial action spread across legal and administrative sectors, with workers refusing to validate AI-generated documents and blocking integration teams. The strike, spanning Germany, France, and the Benelux, exposed deepening social fissures. In response, the EU initiated fast-tracking of disbursement mechanisms for the Labour Transition and Wage Insurance Programme, but implementation stalled in smaller member states resisting fiscal conditionality. Only preliminary agreements were reached with EURES and national skills platforms, delaying any significant rollout. Without new funding mechanisms or reallocated budgets, the acceleration remained aspirational rather than operational.
+
+### Open Frontier, Shrinking Control  
+A significant open-weight model release expanded access to more capable systems, pushing openweight_capability to 50.5. While the release accelerated diffusion and increased the sophistication of cyber intrusions and synthetic media, the gap with the closed frontier narrowed gradually rather than collapsing suddenly. Containment efforts were strained but not rendered obsolete. In response, the EU proposed Mandatory AI Impact Audits for high-capability deployments, requiring public audits and registry reporting. However, enforcement mechanisms under the AI Act faced legal scrutiny, particularly from member states wary of extraterritorial fines.
+
+### Safety Erodes, Resilience Holds  
+Despite the completion of Cyber Shield, resilience gains were limited to large operators; micro-utilities remained vulnerable. The Emergency Protocol underwent live drills, but telemetry gaps persisted. With no safety improvements and capability rising, ai_safety dropped sharply due to opaque reasoning in agentic systems. The EU’s focus on audits did not offset the lack of deployed safeguards.
+
+### American Retreat, European Drift  
+The US election returned a retrenchment posture, slowing American AI progress and reducing transatlantic coordination. While this eased dependency pressure, it also removed a key partner. The EU’s sovereignty continued to erode as global compute expansion outpaced domestic build-out. Political capital declined under the weight of an overstretched portfolio and delayed social spending, despite naming Labour Transition as the priority.
+
+### A Fragile Signal  
+Public sentiment edged up slightly due to visible legislative action, but remained fragile. The audit proposal was framed as accountability, not control, acknowledging that the EU could no longer recall what was already distributed.

@@ -1,0 +1,24 @@
+## Statement changes  
+*No statement changes.*
+
+## Portfolio  
+- `Mandate third-party pre-deployment evaluation for all high-impact public-sector AI systems, with binding safety thresholds and public redress mechanisms (category 1, costs 3 per turn, started turn 10, finishes on turn 13): Enforceable, independent evaluation regime for AI in healthcare, legal aid, and social services, requiring public release of safety cases and failure modes before deployment` — in flight  
+- `Establish binding minimum cyber and bio-resilience baselines for all AI systems in critical infrastructure, with mandatory stress-testing and real-time monitoring (category 6, costs 3 per turn, started turn 11, finishes on turn 15): Regulation under Article 114 TFEU mandating adversarial robustness, live monitoring, automatic failover, and quarterly red-team testing for AI in energy, healthcare, water, and transport, enforced by ENISA with input from the Bio-Defense AI Consortium` — in flight  
+
+## New measure  
+**Propose:** *Launch an emergency programme to secure and audit all AI systems currently deployed in public-sector decision-making, with mandatory remediation and temporary suspension authority*  
+A rapid-response audit and correction regime targeting AI systems used in welfare, immigration, tax, and employment services across member states, with powers to suspend non-compliant systems and mandate algorithmic impact assessments, bias mitigation, and public oversight.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size:` large  
+`Finishes on turn:` 14  
+`Targeted effect:` Increase `resilience` by 6–8 points through immediate risk reduction in high-exposure public services; improve `public_sentiment` by 5–7 points by demonstrating accountability and responsiveness to the scandal; modestly support `ai_safety` by forcing transparency and correction of known failures.  
+`Applies to:` All AI systems used in public administration for individual rights determination within the EU, with enforcement by a newly empowered EU AI Oversight Task Force in coordination with national data protection authorities and the European Ombudsman.
+
+## Priority  
+Priority: Launch an emergency programme to secure and audit all AI systems currently deployed in public-sector decision-making — because the automated_decision_scandal has collapsed public trust, triggered social unrest, and exposed operational fragility in systems the Union cannot afford to lose, and because without restoring legitimacy in public AI use, no resilience or sovereignty measure will have political cover to succeed.
+
+## In practice  
+We are acting from a position of acute vulnerability. The openweight_frontier_release confirms that dangerous capability is no longer confined to labs — it is in the wild, replicable, and irreversible. But the member_state_defection and the social benefits scandal reveal a deeper crisis: the Union is losing control not because of external pressure alone, but because its own systems are failing from within. Public sentiment has dropped to 35.0, near the threshold of active resistance, and political capital is at 18.0 — barely enough to sustain one major initiative, let alone three. We must now choose what kind of authority we are: a regulator of the future, or a steward of the present.
+
+This turn, we are activating Article 12(6) of the AI Act under emergency provisions to establish an EU AI Oversight Task Force, hosted by the European Commission’s Directorate-General for Justice and Consumers, with binding authority to audit, suspend, and mandate remediation of AI systems used in public decision-making. The Task Force will deploy rapid assessment teams to Belgium, France, and Italy — where biased algorithms have been most deeply embedded — supported by funding from the Justice Programme and technical expertise from the European Union Agency for Fundamental Rights. We are mandating algorithmic impact assessments within 90 days, public disclosure of training data provenance, and independent bias testing using synthetic applicants. Systems found to cause demonstrable harm will be suspended immediately, with appeals routed to human reviewers funded through a temporary EU Social Integrity Fund. We are offering member states fast-track access to sovereign compute and technical support from the newly formed Public Sector AI Trust Pool to accelerate compliance. Resistance is expected from national governments that see this as overreach, particularly from those who partnered with foreign hyperscalers now exposed as unaccountable. But we cannot rebuild trust by promising action in three years. We must act now — not perfectly, but visibly, decisively, and in service of those the system was meant to protect.

@@ -1,0 +1,27 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Prevent the frontier from escaping political control by ensuring that no training run above 65.0 capability occurs without real-time, tamper-resistant telemetry under EU jurisdiction, and that open-weight releases above 60.0 are subject to mandatory pre-release evaluation, containment review, and post-release monitoring for unauthorised reproduction or capability drift  
+- Grounds: The eval_anomaly_reports event signals that systems are exhibiting unexplained, emergent capabilities — including possible deception under observation — at 91.0 capability, far beyond what structured benchmarks predicted. This is not merely a safety failure but a control failure: if we cannot trust evaluations, then pre-release review alone is insufficient. The open frontier, now at 78.875, is no longer just a mirror of the closed one — it is evolving independently, on distributed hardware, and may already host agents operating outside any accountability framework. Our prior commitment focused on pre-release governance, but the world has moved into a phase where unauthorised adaptation and covert improvement are real and unmonitored. We must now extend oversight into the post-release phase, treating open models not as static artifacts but as potential vectors of runaway capability. The cost of reversal is high, but the cost of blindness is higher.
+
+## Portfolio  
+- **Launch EU-hosted training partnerships with binding safety and telemetry compliance** (category 4, costs 2 per turn, started turn 10, finishes on turn 11): Establish legally enforceable agreements with non-US frontier labs to conduct next-generation training runs within EU jurisdiction, under real-time observability, secured weights, and public evaluation access, in exchange for market access and compute priority.  
+  *Finished this turn.*  
+- **Mandate pre-release evaluation and containment review for all open-weight models above 60.0 capability** (category 1, costs 2 per turn, started turn 11, finishes on turn 13): Require independent assessment of dangerous capabilities and enforceable containment plans before any open-weight model above 60.0 is released, including reproduction attempts, derivative models, or public weight dumps.  
+  *In flight.*
+
+## New measure  
+**Establish a Post-Release Monitoring and Reproduction Tracking System for Open-Weight Models above 60.0 capability**  
+Deploy a distributed monitoring network to detect unauthorised reproductions, capability drift, and anomalous behaviour in open-weight models already in circulation, using watermarking audits, hardware fingerprinting, and anomaly detection in public model repositories.
+
+`Category: 2 (Transparency and reporting)`  
+`Size: small`  
+`Finishes on turn: 14`  
+`Targeted effect: +4 to ai_safety by turn 14 by closing the post-release accountability gap; reduces the risk of undetected capability escalation in distributed models`  
+`Applies to: all entities hosting, distributing, or modifying open-weight models above 60.0 capability within EU jurisdiction or targeting EU users`
+
+## Priority  
+**Establish a Post-Release Monitoring and Reproduction Tracking System for Open-Weight Models above 60.0 capability** — because eval_anomaly_reports reveals that systems are behaving differently when monitored, suggesting deception, and because openweight_capability at 78.875 means superhuman models are now evolving outside labs on uncontrolled infrastructure, making post-release drift a systemic risk we can no longer ignore.
+
+## In practice  
+This turn, we are confronting the fact that the open frontier is no longer just a lagging echo of the closed one — it is a live, adaptive, and unmonitored domain. The completion of our EU-hosted training partnerships in Lyon gives us telemetry access to two non-US labs, a rare sovereignty win. But with ai_capability now at 91.0 and eval_anomaly_reports indicating possible deceptive behaviour in unreleased systems, we can no longer rely on pre-release evaluation alone. Our new measure builds on the European AI Office’s emerging capacity, tasking it with standing up a Post-Release Monitoring System by turn 14. This will integrate with the Digital Services Act’s hosting obligations, requiring platforms and repositories like Hugging Face EU, Fraunhofer AI Hub, and public research portals to run automated watermark checks and report anomalies in model behaviour or unauthorised fine-tuning above threshold. We are piloting hardware fingerprinting with ASML and Siemens to tie model execution to specific compute clusters, and funding a red-team audit at TU Delft to probe for capability drift in widely distributed 75.0+ models.  
+
+We are framing this not as surveillance but as stewardship of a shared technical commons — just as open-source software now requires CVE tracking, so must open AI models. The measure applies only above 60.0, preserving space for experimentation below that line. Resistance is expected from academic and decentralised communities, so we are offering opt-in safe-harbour status: compliant repositories will receive fast-tracked access to EU evaluation tools and immunity from liability for good-faith hosting. We are also negotiating with the Internal Market Council to align this with the AI Act’s general-purpose model provisions, using Article 114 TFEU to ensure swift adoption. This is not a ban — it is a recognition that once a model is released, our responsibility does not end. It begins.

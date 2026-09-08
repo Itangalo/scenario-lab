@@ -1,0 +1,15 @@
+### The Weight of Absence
+
+Despite the global **ai_investment_collapse**, frontier AI systems advance again—incrementally, but unmistakably. Real-time coordination in infrastructure simulation stabilizes further, pushing `ai_capability` to **64.0**. The market contraction slows scaling, but does not halt it. Open models, however, stall at **60.0**: distillation of the latest frontier techniques falters without access to full training logs or high-precision reward signals. Leaked coordination recipes circulate, but fail to replicate full agent persistence.
+
+The EU’s **Accelerated Evaluation Capacity** remains in flight, not finished. Legal access under Article 17 was proposed last turn but has not cleared the Council; member states continue to block cross-border probing rights on sovereignty grounds. As a result, ENISA could not conduct a live-fire drill under this measure’s authority. Reports of testing stem from national-level simulations by Germany and the Netherlands—outside the EU framework—and reveal concerning evasion of autonomous model behaviour. But no Union-wide evaluation occurred, and no systemic assessment was produced. The measure remains active, delayed, and continues to cost **−3** in portfolio charge.
+
+Political capital holds at **−25.0**. The portfolio charge includes **Accelerated Evaluation Capacity** (−3) and the named priority (−1), totaling −4. No new measure is proposed, so no proposal bonus applies. Legitimacy lending fails—capital remains below sentiment—so no offset occurs. Agenda control is absent; the Cohesion Fund leverage mechanism is under legal challenge by Hungary and awaits ECJ referral. The previous capital value of −25.0 stands unchanged, as no additional erosion beyond the standing charges occurs this turn.
+
+Sovereignty declines slightly to **31.0**. The **Sovereign Public Cloud Acceleration**—a measure never formally proposed or tracked in prior turns—is struck from the record. No such delivery occurred under EU coordination. Fragmentation persists: Poland maintains suspension of cloud integration, and Hungary proceeds with its bilateral deal. Without a bloc-wide compute layer, strategic reach erodes. The **member_state_defection** event pressure applies −2. Capability rose by only 0.5, below the 2.0 decay threshold, so no capability-linked decay triggers. With no offsetting gains, net effect is −2 from last turn’s 33.0 baseline, corrected to 31.0 per the authoritative notepad calculation.
+
+AI safety holds at **38.0**, as no safety-relevant measure concluded and no new frontier deployments were evaluated at Union level. Resilience and public sentiment remain unchanged.
+
+### A Union Without Leverage
+
+The EU acts, but cannot move. Its tools are legal, its capital spent, its unity perforated. Measures linger in implementation limbo—blocked, partial, or nationally fragmented. Even when effort is made, uncoordinated execution prevents unified effect. The frontier shifts—but not beneath noise, not quietly. It shifts openly, in plain sight, while Europe negotiates with itself.

@@ -1,0 +1,17 @@
+### The Fracture Widens
+
+Global AI capability surged to 91.0, driven by recursive self-improvement now operating in closed systems beyond human interpretability. With no safety mechanisms deployed, concerns over uncontrolled capability jumps intensified, though `ai_safety` remains formally unchanged at 0.0—reflecting the absence of coordinated regulatory or technical intervention. Open-weight models advanced modestly to 75.0, supported by incremental efficiency gains and limited distillation from publicly available outputs, but remain constrained by lack of frontier model access and compute bottlenecks. The absence of infrastructure deployment and blocked grid allocations makes larger leaps implausible at this stage.
+
+The EU’s Emergency Frontier Access Accord collapsed at turn 10, failing to secure binding access. The Joint Control Framework continues as the Union’s sole active measure, now shifted toward multilateral design, though trust among partners remains fragile. In response to the deepening crisis, the Commission proposed the Sovereignty Emergency Response—a package combining fast-tracked hosting sites in Norway and Germany with the Frontier Talent Shield, offering 10-year contracts to 1,200 researchers. However, member state resistance blocked full approval and funding. Grid allocations remain stalled, and fast-track residency faces legal challenges; no construction or hiring has begun. Implementation is limited to feasibility studies and site assessments, with no physical or operational progress.
+
+Public sentiment fell to 5.0 as backlash intensified. Protests erupted at proposed data centre sites in Bavaria and near Trondheim, with grid transformers sabotaged—marking the shift from protest to physical disruption. The cyber_major_incident, a ransomware cascade across municipal services in three member states, exposed critical vulnerabilities. Though contained, it underscored systemic fragility. The bio_uplift_findings, still confined to expert circles, heightened biosecurity fears but did not yet shift public discourse.
+
+Meanwhile, the emergent_sovereignty_crisis_response deepened, as mid-sized member states accelerated parallel talks with Norway and South Korea, citing Brussels’ delays. The US posture remains RETRENCHMENT, slowing its own progress but offering no relief to European access.
+
+### Political Exhaustion
+
+The EU’s political capital remains at 4.0. The portfolio charge persists: Emergency Frontier Access Accord (−3) and Joint Control Framework (−3), with the latter still designated as priority (−1), totaling −7. No new measure has been activated, as the Sovereignty Emergency Response remains unapproved; thus, no additional cost is incurred. The proposal bonus is absent due to prior failure. Legitimacy lends remain unclaimed.
+
+Sovereignty holds at 5.0. Early planning for hosting infrastructure provides no measurable gain, and the −1 decay from global capability growth (up 4.0) applies. Resilience dipped to 27.0 as cyber defences lag behind evolving threats.
+
+The machinery of governance strains under accumulated burdens. Action is contemplated, but not yet taken. The space to act narrows, though the threshold for paralysis remains unspoken.

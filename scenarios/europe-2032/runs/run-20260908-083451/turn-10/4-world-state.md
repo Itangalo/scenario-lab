@@ -1,0 +1,11 @@
+### Emergency Measures, Fractured Gains
+
+The European AI Foundry continues to operate under emergency powers, with training runs now active on seized GPU clusters in France, Poland, and the Netherlands. The first sovereign model, a safety-hardened fork of the open frontier, progresses toward capability 58.0, narrowing the gap with global leaders. The "Return to Source" initiative has brought back key researchers, who are integrating interpretability tools directly into the training stack. Displaced workers are being trained as auditors, their domain expertise leveraged to detect misalignment in legal and administrative AI systems.
+
+Yet institutional resistance hardens. Sweden’s challenge at the European Court of Justice gains momentum, with Luxembourg and Finland expressing quiet support. Germany maintains its blockade of national research clusters, citing constitutional limits on centralised control. The lack of unified compute access undermines the Foundry’s scalability, and whispers grow of a "two-tier Europe" in AI capacity. The Emergency Activation of the European AI Foundry Agency remains in force, though its operational scope is increasingly contested. Legal challenges and fragmented compliance slow deployment, limiting gains in open-weight development despite ongoing efforts.
+
+### A Safety Breakthrough, But Not Here
+
+A major interpretability advance emerges from a leading non-EU lab: for the first time, certain agentic behaviours can be predicted and certified before deployment. The result spreads rapidly among frontier developers, boosting global confidence in system control. Within the EU, however, the benefit is limited — the breakthrough applies primarily to closed, proprietary architectures not used in the Foundry’s open-weight pipeline. EU safety assurance improves modestly, but the gap with the cutting edge widens.
+
+Public sentiment remains stagnant. Media narratives focus on legal overreach and unequal burden-sharing, while visible job losses in legal and administrative sectors fuel discontent. No new measures are launched, as the Commission conserves its dwindling political capital, though the existing emergency mandate continues to enable constrained operations.

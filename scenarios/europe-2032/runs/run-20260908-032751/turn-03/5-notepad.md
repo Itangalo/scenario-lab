@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield for Critical Operators −3, Public AI Governance Rebuild −3, Frontier Access Guarantee −3, priority −1 = −16  
+PROPOSAL BONUS: Frontier Access Guarantee (cat 4, large) +6 — eu_frontier_access_denied landed this turn and this answers it directly, severe event, large measure  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 19.0 last turn, eu_frontier_access_denied t3 −2, capability rose 2.5 −1 = 16.0  
+emergent_euv_lithography_shortage -- first noted turn 1, listed in 3 turn(s) so far: ASML reports a growing backlog in EUV machine deliveries due to tightened American export controls and rising maintenance demands in allied fabs. Lead times stretch beyond two years, delaying next-generation AI chip production in both Europe and Asia. This scarcity begins to affect global compute availability projections.  
+emergent_ai_research_brain_drain -- first noted turn 1, listed in 3 turn(s) so far: A growing number of European AI researchers accept positions at American frontier labs or well-funded startups, citing faster compute access and higher salaries. The trend accelerates after the summer, with several high-profile teams relocating entirely. This undermines EU efforts to build sovereign capacity despite existing talent pools.

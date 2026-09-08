@@ -1,0 +1,15 @@
+### The Weight of Control, the Glimmer of Hope
+
+The EU advanced the Sovereign Control Stack with the release of its API, mandating telemetry and circuit-breaking for high-capability systems. Implementation is underway, but resistance hardened: German and Polish labs delayed compliance, citing integration costs, and threatened legal challenges over innovation throttling. The promised incentive — Cyber Rapid Response Force access — failed to sway holdouts, exposing limits of leverage.
+
+Preparations for a potential Public Good Proofpoint Programme were discussed at technical levels, with rescEU and the EMA exchanging feasibility assessments on leveraging the recent AI-designed antibiotic breakthrough. Initial coordination occurred in Marseille and Gothenburg, focusing on audit trails for AI modules in dosing and resistance tracking. However, no formal planning milestones were approved, resource allocation remains pending, and the initiative has not advanced beyond the conceptual phase this turn. Public messaging experiments occurred in isolation but were not coordinated or scaled. The programme remains in early exploration, not yet activated as a formal measure.
+
+Physical backlash intensified: data centre occupations spread to Belgium and Italy, and a transformer sabotage near a Dutch AI cluster injured two technicians. Policing the unrest drained resources and spotlighted the political cost of AI governance without legitimacy. While the medical opportunity offered a counter-narrative, most media coverage remained dominated by disruption and distrust.
+
+Global AI capability rose to 71.5, driven by autonomous coordination now routine in closed labs. Open-weight models reached 60.0, enabling broader access to offensive cyber tools. With no safety improvements landing on deployed systems — only mandates in flight — and another wave of incidents, ai_safety remained under pressure, though no systemic collapse occurred to justify a drop this turn. Resilience held steady, as health-sector discussions consumed limited bandwidth and did not yet divert critical capacity from core defence planning.
+
+eu_ai_sovereignty remained stable, as the Control Stack’s partial rollout was offset by continued fragmentation and dependence. Political capital held, as the EU introduced only one new measure — the operational phase of the Sovereign Control Stack — and did not initiate any additional programmes. The Proofpoint effort remained below the threshold of formal proposal.
+
+### A Narrow Window, Not Yet Seized
+
+Public sentiment held at its prior level, as early reports of the antibiotic breakthrough gained traction in science outlets and some mainstream coverage. For the first time in months, AI was framed as a healer — but without institutional backing or coordinated narrative, the shift remained narrow, urban, and fleeting. The EU had identified a legitimacy opportunity, but took no action this turn to operationalize it.

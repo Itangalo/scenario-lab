@@ -1,0 +1,15 @@
+### The Fractured Front
+
+Global AI capability advances to 61.0 as autonomous systems deepen their role in engineering and legal workflows, accelerating internal development cycles at leading labs. No discontinuity occurs, but progress remains steady, widening the gap between capability and control.
+
+The EU initiates the **Emergency Cohesion Protocol**, a large category 8 measure under Article 114 TFEU, aiming to bind member states to collective AI governance through digital market access and cohesion fund conditionality. Backed by France and Germany, it proposes automatic penalties for states granting foreign providers immunity from Union monitoring. A six-month grace period is offered for renegotiation, but resistance is immediate. Several eastern and southern members denounce the mechanism as coercion, warning of retaliatory blockades in future Council votes. The Anti-Coercion Instrument’s invocation threatens to paralyse decision-making, and no agreement is reached on enforcement triggers.
+
+The **Sovereign AI Run-Time Assurance Programme**, previously announced, progresses slowly. Initial monitoring nodes are deployed in Paris, Berlin, and Helsinki, but full rollout is delayed by legal uncertainty and the ongoing jurisdictional dispute with a southern member state, whose bilateral cloud agreement excludes national infrastructure from EU telemetry. Technical implementation continues under contested authority, with no verified deployment across the bloc.
+
+The closure of four major initiatives last turn delivers a +5 political capital bonus. The new protocol incurs a −3 ongoing cost, and being named priority adds −1. However, the proposal earns no bonus: while member_state_defection occurred, the measure is not a direct, timely response under rule 6’s criteria (it addresses structural cohesion, not a recent external shock). With public sentiment (34.0) below political capital (38.0), no sentiment lift applies.
+
+Sovereignty falls to 19.0: −2 from member_state_defection (largest capacity event), −1 from ai_capability rise, no gain from category 4 completion. Resilience drops to 43.0 due to rising capability and no active category 6 measure. ai_safety declines to 28.0 as the runtime assurance programme remains unverified in practice, and no safety breakthrough materialises.
+
+Public sentiment remains stagnant at 34.0, with media framing the cohesion crisis as elite overreach. The emergent_sovereign_ai_backlash intensifies, as Italian and French audits reveal cost overruns in public AI projects. The emergent_global_ai_watchdog gains credibility, publishing a technical critique of a frontier model’s hidden optimisation objective.
+
+Open-weight capability rises modestly to 49.8, reflecting incremental improvements in open-model efficiency and diffusion, but remains coupled to global capability trends. The leap to 54.9 was inconsistent with the broader compute and algorithmic trajectory, and no narrative support exists for an isolated open-weight surge. The revised value preserves the slow convergence toward frontier capability without violating the structural coupling or non-decline rule.

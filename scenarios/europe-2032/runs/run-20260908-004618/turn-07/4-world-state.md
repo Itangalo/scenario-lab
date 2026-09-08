@@ -1,0 +1,15 @@
+### The Weight of Foundations
+
+AI capability advanced to 64.5, driven by the sudden automation of legal contract review and clinical coding—domains once thought to require human judgment—now rapidly yielding to AI systems equipped with newly discovered automatic verification checks. This sharp capability jump bypassed traditional safety pipelines, widening the gap between what systems can do and what can be controlled.
+
+The EU marked a symbolic milestone with the announcement of progress on the InvestAI Gigafactories programme: the four planned sovereign data centres are now under construction, with site preparation completed and core infrastructure underway. However, first operations are delayed beyond Q1 2030 due to supply bottlenecks in high-precision cooling and power delivery systems. The project remains in the execution phase, with no finishing event triggered. No sovereignty bonus is awarded, consistent with the multi-turn implementation timeline for high-cost infrastructure.
+
+Responding to a leaked internal study, the Commission announced the **Lithography Revival Initiative**, a large Category 4 measure targeting the reconstruction of end-to-end chip manufacturing capacity. Anchored in Dresden, Grenoble, and Eindhoven, the effort leverages dual-use research and national industrial assets. However, early resistance emerges from member states excluded from initial funding, and questions mount over the feasibility of replicating ASML-level precision without foreign inputs. Due to the extreme complexity and infrastructure demands, no operational capacity or capability gains are expected before at least two full turns; the initiative remains in preparatory and feasibility assessment phase. No interim sovereignty gain is registered, as the narrative of delayed implementation and high barriers precludes even symbolic credit. No funding source has yet been formally allocated, and parliamentary debate on budget reallocation is expected in the next term.
+
+Public sentiment dipped further, as automation in legal and medical coding sectors triggered visible job losses. A leaked internal audit revealed gaps in the reskilling programme’s reach, reinforcing perceptions of an elite-driven AI agenda. Corporate hesitation and patchy national implementation deepened the divide.
+
+Sovereignty remains unchanged at 13.0. The InvestAI Gigafactories have not completed, and the Lithography Revival Initiative is too early in development to confer any benefit. Political capital eroded to 20.0 under the weight of expanding the portfolio with a new large measure and maintaining the existing priority, despite a modest bonus for acting on a recent emergent signal.
+
+### The Silence Holds
+
+Washington remains in consolidation posture. No shift in access terms has occurred, but the absence of engagement intensifies European concerns over long-term dependency.

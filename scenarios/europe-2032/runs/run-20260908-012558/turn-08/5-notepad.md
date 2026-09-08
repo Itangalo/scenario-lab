@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Launch EU-wide AI Labour Transition Guarantee −3, Secure EU Access to Foundational AI Safety Research −3, Launch EU AI Safety Emergency Directive −3, priority −1 = −10  
+PROPOSAL BONUS: Launch EU AI Safety Emergency Directive (cat 1, large) +3 — direct response to cyber_major_incident and bio_uplift_findings  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 39.0 last turn, no capacity event, capability rose 3.5 −1 = 38.0 → rounded to 39.0 (no momentum or completion)  
+US_POSTURE: RETRENCHMENT  
+emergent_ai_governance_schism -- first noted turn 6, listed in 4 turn(s) so far: A rift emerges between the EU and a bloc of emerging economies over AI governance norms, triggered by the EU's restrictive approach being labeled as 'techno-colonialism' in multilateral forums. This leads to competing standards proposals in international bodies, fracturing consensus on export controls and safety benchmarks.  
+emergent_sovereign_cloud_alliance -- first noted turn 6, listed in 4 turn(s) so far: France, Germany, and Poland announce a joint sovereign cloud initiative leveraging the newly operational EuroHPC grid, aiming to provide secure, EU-controlled AI infrastructure for public services and critical industries. The move strengthens internal cohesion and signals a shift toward operational autonomy from non-EU cloud providers.

@@ -1,0 +1,15 @@
+### The Weight of Crisis
+
+The European Union proposed the European AI Transition and Wage Insurance Programme in a bid to stabilise growing social unrest, invoking emergency powers under Article 122 TFEU. Framed as a defence of social sovereignty, the plan mandates wage support for displaced legal, administrative, and technical workers, funded by a 7% levy on firms reporting significant AI-driven productivity gains. However, immediate resistance emerged: Germany and the Netherlands questioned the levy’s legal basis, while smaller states warned of competitive distortion. The ECOFIN Council has yet to approve the framework, and negotiations are ongoing, with a compromise under discussion that would exempt firms with fewer than 500 AI-automated roles — a concession expected to weaken its reach but necessary for consensus.
+
+Public sentiment dipped further as protests in Bavaria and eastern France reignited, now targeting both AI-driven job losses and the perceived overreach of the proposed security corridor. Media outlets highlighted cases of mid-career professionals likely to be excluded from the new programme due to narrow eligibility criteria still under debate, reinforcing the image of a disjointed, reactive Union.
+
+Meanwhile, the InvestAI Gigafactories officially completed their rollout, with three sites now operational. However, grid integration delays in Romania and unresolved rare-earth supply bottlenecks limited full capacity activation. The Inter-State Compute Consortium welcomed the new infrastructure, but Sweden and Ireland maintained their separate audit arrangements with U.S. firms, underscoring persistent fragmentation.
+
+The U.S. alliance posture remained in effect, enabling limited joint safety dialogues, but offered no relief on access to frontier models. With AI capability crossing 60.0, systems now capable of multi-day professional projects end-to-end, the gap between technical possibility and institutional control widened alarmingly.
+
+### Fractured Foundations
+
+The Commission’s political capital eroded further under the strain of multiple concurrent large initiatives. Legal challenges loom over the wage insurance proposal, and the unresolved fallout from the EU-Wide Physical Security Corridor — an existing measure still under implementation — continues to drain capacity. The attempt to reframe social protection as core to sovereignty gained rhetorical ground but has not yet translated into policy cohesion or public trust.
+
+No new progress was made on open-weight models. Despite the completion of new compute infrastructure, access to frontier model weights remains constrained by U.S. export controls and lack of reciprocal openness. The modest rise in openweight_capability reflects only incremental gains from domestic model development and partial replication of publicly available architectures, consistent with the slow diffusion of knowledge in a restricted environment.

@@ -1,0 +1,5 @@
+`emergent_bio_uplift_2026` -- first noted turn 1, listed in 5 turn(s) so far: A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 2 turns.
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Absorb Frontier Talent −3, Stand Up EASA −3, priority −1 = −13
+PROPOSAL BONUS: Stand Up EASA (cat 5, large) +5 — directly addresses loss_of_control_incident and emergent_labour_unrest in same turn
+SOVEREIGNTY: 18.0 last turn, no capacity event, InvestAI Gigafactories in flight +0, capability rose 2.5 −1 = 17.0 → final 16.0 (round down)
+LEGITIMACY LENDS: none

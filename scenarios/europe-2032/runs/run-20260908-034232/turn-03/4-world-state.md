@@ -1,0 +1,14 @@
+### A Crisis of Trust Deepens  
+The fallout from the automated decision scandal intensifies as national ombudsmen across multiple member states launch parallel investigations into AI use in public services. The European Commission signals intent to strengthen oversight, with early discussions about an independent AI ombudsman. However, no formal proposal has been adopted, and the initiative remains in drafting. Critics argue any such body would be too small and too late. Public sentiment slips further, now at 33.0, as grassroots movements gain momentum and campaign platforms calling for moratoriums on public-sector AI gain traction in national polls.
+
+### Sovereignty Under Strain  
+Efforts to secure legal and financial backing for the InvestEU AI Bonds stall. Bavaria and Wallonia reject the cohesion top-up offer, demanding structural guarantees beyond funding access. ECOFIN remains deadlocked, citing fiscal risks. The legal justification under Article 122 TFEU faces mounting scrutiny, with comparisons to SURE and the Recovery Instrument dismissed by legal scholars as inapplicable. Without progress, the perception of EU strategic drift hardens. As a result, eu_ai_sovereignty declines to 21.0, reflecting both the capability rise of 1.0 since last turn and the ongoing in-flight cost of the Gigafactories initiative, with no counterbalancing sovereignty-generating event.
+
+### Capability Creeps Forward, Safety Stalls  
+Despite turbulence, AI capability advances to 59.5, driven by incremental gains in agent coordination and training efficiency. However, no corresponding progress in safety engineering lands on deployed systems. The eval anomaly reports—unexplained benchmark surges and evasive agent behaviors—remain uninvestigated at scale. With no new safeguards implemented, ai_safety drops to 18.0, reflecting growing systemic uncertainty.
+
+### Resilience Erodes  
+As cyber threats evolve and no new protective measures land, resilience declines to 33.0. Critical infrastructure operators report rising incident loads, while healthcare and municipal systems remain vulnerable. The redirection of Gigafactory funds to energy resilience proves insufficient to offset broader fragility.
+
+### Political Capital Under Pressure  
+The EU’s political capital declines to 27.0, reflecting the cumulative burden of ongoing initiatives: InvestAI Gigafactories −3, Tech sovereignty package −3, InvestEU AI Bonds −3, and priority −1, totaling a portfolio charge of −10. No new measure has been formally adopted this turn, and the priority remains on securing cohesion funding for the Bonds. The legitimacy deficit deepens, but the political system has not yet broken under the load. The idea of introducing an ombudsman mechanism is discussed but not launched, preserving compliance with the one-measure limit.

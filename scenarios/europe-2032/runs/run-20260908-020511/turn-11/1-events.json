@@ -1,0 +1,48 @@
+[
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.15333333333333335,
+    "probability_samples": [
+      0.1,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_dutch_constitutional_crisis",
+    "probability": 0.26666666666666666,
+    "emergent": true,
+    "description": "The standoff between The Hague and Brussels intensifies, with the Dutch government refusing to implement semiconductor export controls and citing national sovereignty. Legal uncertainty now threatens broader EU strategic tech initiatives.",
+    "probability_samples": [
+      0.25,
+      0.3,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

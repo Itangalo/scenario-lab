@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 54.0 to 58.0 (+4.0), but `ai_capability` only increased from 65.0 to 67.0 (+2.0). Since `openweight_capability` must never exceed `ai_capability` and both are cumulative stocks that can only rise or stay flat, a jump of +4.0 in `openweight_capability` when `ai_capability` rose only +2.0 implies that openweight has overtaken or caught up too quickly to the frontier without justification. This is especially problematic because no catastrophic physical destruction of compute is narrated, which is the only allowed exception for divergence in trends — and even then, it would reduce `ai_capability`, not accelerate `openweight_capability`.\n- Metric Rule 9 potentially violated: `ai_safety` increases from 10.0 to 25.0 (+15.0) in one turn. While under 25 points, such a large jump requires strong justification given typical growth rates implied by prior turns and the absence of earlier momentum. The narrative attributes this to a single breakthrough and rapid adoption, but no prior setup (e.g., ongoing deployment, staged rollout) is indicated, making the full activation within one turn inconsistent with minimum time lags for regulatory and technical diffusion (Modelling Choice 6: No measure is implemented instantly). A +15.0 swing lacks phased implementation details and risks telegraphing overwhelming success without friction.\n- Modelling Choice 8 violated: The narrative states that the **Emergency Resilience Surge** is \"now prioritized\" and is a \"large category 6 measure\", implying a new priority designation. However, the notepad shows the current priority is still contributing −1 to the portfolio charge, indicating no change in priority status was formally recorded. At most one named priority is allowed per turn (Modelling Choice 5), and switching priorities must be explicitly notated. The introduction of a new high-cost measure *and* re-prioritization in the same turn without clear notation violates procedural discipline."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

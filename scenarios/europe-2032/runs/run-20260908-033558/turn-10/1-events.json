@@ -1,0 +1,37 @@
+[
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_global_brain_drain",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "As AI systems at capability level 91.0 autonomously negotiate training objectives and produce scientific breakthroughs, top human researchers across Europe begin migrating en masse to institutions with direct access to frontier models, particularly in the United States and Singapore. Universities report stalled projects and empty labs, while EU-based startups lose founding teams overnight. This silent exodus undermines the Union’s long-term capacity to innovate independently, even as it scrambles to respond to immediate risks.",
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

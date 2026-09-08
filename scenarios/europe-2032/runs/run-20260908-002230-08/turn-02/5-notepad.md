@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield Directive −3, ASML Strategic Shield Initiative −3, priority −1 = −13  
+PROPOSAL BONUS: ASML Strategic Shield (cat 4, large) +2 — responds directly to emergent_asml_defiance_contingency (turn 1–2), a strategic supply-chain vulnerability with growing political visibility  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21 last turn, no capacity event, InvestAI Gigafactories in flight +0, capability rose 2.0 −1 = 20  
+emergent_labour_displacement_wave -- first noted turn 1, listed in 2 turn(s) so far: Mid-level professional roles in legal, accounting and technical writing across several member states show synchronized job reductions tied to AI adoption, with firms citing 'efficiency gains' from internal AI systems. The pattern is broad enough to register in national labour statistics within the turn, triggering early warnings in social dialogue bodies and shifting public discourse toward displacement rather than augmentation.  
+bio_uplift_findings — genome model produces credible human-infective organism design; methodology contested but signal stronger than prior work. Opens bio gate for next 4 turns.

@@ -1,0 +1,22 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Secure and operate sovereign EU AI compute infrastructure at frontier scale by any means necessary, including emergency borrowing and invocation of Article 346, to prevent irreversible loss of strategic autonomy in AI  
+- Grounds: The collapse of private investment and the bilateral defection of a member state have rendered the previous formulation too passive. With ai_capability at 59.5 and closing on the threshold of autonomous agent-driven development, the window for reactive positioning is gone. The only path to strategic autonomy now is direct, state-led control over compute — not just investment, not just coordination, but ownership and operation. This turn, we act on that reality.
+
+## Portfolio  
+- ``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — **finished this turn**  
+- ``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — **finished this turn**  
+- ``Establish EU AI Incident Response Corps (category 6, costs 3 per turn, started turn 1, finishes on turn 5): A standing, cross-border technical unit with mandate to detect, investigate and contain AI-enabled attacks on critical infrastructure`` — **finished this turn**  
+- ``Launch Labour Transition Accelerator (category 7, costs 3 per turn, started turn 3, finishes on turn 5): A rapid-response retraining and wage-insurance programme targeting displaced mid-level professionals, with AI adoption incentives tied to employer contributions`` — **finished this turn**  
+- ``Expand EU Cyber Resilience Certification to AI-Critical Infrastructure (category 6, costs 3 per turn, started turn 4, finishes on turn 6): Mandate high-assurance, continuous monitoring and AI-specific hardening for all systems designated as critical under the revised NIS2 framework, with enforcement tied to EU funding and procurement access`` — **finished this turn**
+
+## New measure  
+None this turn.  
+We are executing the pivot of InvestAI Gigafactories to full public ownership and preparing emergency measures under Article 346; proposing a new instrument now would overextend our depleted political capital.
+
+## Priority  
+``InvestAI Gigafactories`` — because with private capital gone and a member state already bypassed by U.S. bilateral leverage, only direct EU ownership of frontier-scale compute can close the gap before ai_capability crosses 60.0 and openweight_capability follows, locking in irreversible dependence.
+
+## In practice  
+We are treating the completion of InvestAI Gigafactories not as an endpoint but as a threshold: the €200bn fund is now being redirected from public-private co-investment to full EU ownership and operation of at least two sovereign compute sites, to be located in France and Finland under EU legal jurisdiction and powered by dedicated grid allocations. We are invoking the precedent of REPowerEU to justify emergency borrowing under Article 122 TFEU, with the Commission drafting a legislative proposal this month to designate AI compute as critical infrastructure under the Critical Entities Resilience Directive — a move that unlocks state aid flexibility and fast-tracks permitting. The European Investment Bank is preparing to issue bonds backed by future cohesion and digital funds, conditional on Council approval by early Q1 2030.
+
+Simultaneously, we are escalating the standoff over ASML. The Dutch government has been given six weeks to agree to binding export controls on deep-UV and next-gen EUV components and to commit to joint development of EU-accessible lithography capacity. If they refuse, we will unilaterally invoke Article 346 for dual-use technology, accepting the risk of legal challenge and diplomatic rupture. This is not a bluff: the Commission has already drafted the implementing regulation, and we are briefing friendly member states on the necessity of strategic over commercial logic. The world is fragmenting, and the EU will either build its own foundation or be governed by those who did. There is no third option.

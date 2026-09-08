@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Accelerated Biosecurity Enforcement Directive −3, Emergency Resilience Surge −3, Sovereign Compute Acceleration Programme −3, priority −1 = −10  
+PROPOSAL BONUS: Sovereign Compute Acceleration Programme (cat 4, large) +3 — answers supply_chain_coercion directly, severe and recent  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 17 last turn, no capacity event, capability rose 0.5 <2 → no −1 = 17  
+US_POSTURE: CONSOLIDATION  
+emergent_biosecurity_leak -- first noted turn 11, listed in 3 turn(s) so far: A classified biosecurity assessment from a leading national lab, detailing successful model-assisted design of a respiratory pathogen vector, is leaked to a press outlet. The document includes redacted methodology and internal warnings about open-model accessibility to dual-use techniques. Public and intergovernmental panic spikes, especially as the techniques described are within reach of advanced hobbyists.  
+emergent_lab_fracture -- first noted turn 11, listed in 3 turn(s) so far: A senior research team at a leading non-EU frontier lab publicly defects, citing ethical concerns over unchecked capability scaling and inadequate safety protocols. They release a manifesto calling for a moratorium on training runs above current levels and offer their expertise to international oversight bodies, creating fissures within the global AI development community.

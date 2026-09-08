@@ -1,0 +1,13 @@
+### The Aftermath of Fire
+
+The EU barely contained the wave of AI-generated ransomware that crippled municipal networks across Western Europe. Though the Incident Response Corps was activated, its deployment was delayed by jurisdictional disputes and lack of secure, sovereign compute for encrypted coordination. ENISA confirmed the attacks exploited zero-day vulnerabilities identified and weaponized in real time—offensive AI at work. Defensive AI tools, where available, slowed but did not stop the cascade. Recovery took days, not hours, and trust in digital infrastructure eroded further.
+
+Simultaneously, the blockade in the Taiwan Strait severed global semiconductor flows, making the EU’s InvestAI Gigafactories in Marseille, Vilnius, and Gdansk the West’s sole operational frontier compute base. The Commission invoked Article 122 TFEU, declaring them critical infrastructure. The Sovereign Compute Access Framework’s crisis protocol took effect: dual-key allocation above 30% thresholds held despite resistance from Poland and Hungary. This proved the system works—but also how fragile it remains without hardened operational control.
+
+The formal completion of the Sovereign Compute Access Framework marked a milestone. Yet its real test came not in planning, but under fire. While the hardware held, the institutions around it faltered. The lack of secure execution environments, trusted relays, and unified command exposed a dangerous gap between ownership and operational sovereignty.
+
+A joint threat response among NATO and EU states improved intelligence sharing and attribution speed, slightly boosting resilience. Meanwhile, early signs of emergent cyber defence progress—automated patching and swarm detection—offered hope. But public sentiment fell sharply, framed by media as an "AI war" and "chip siege," with visible job losses and disrupted services. The promise of sovereign AI felt distant to citizens facing real-world chaos.
+
+### The Weight of What Was Built
+
+The EU closed the Sovereign Compute Access Framework this turn, a major step toward autonomy. But without new measures to harden command, control, and secure operations, the victory was partial. The priority designation ensured timely completion, but the political cost of centralization and the trauma of the attacks left capital strained. The Union stands at a crossroads: it has the hardware, but not yet the unity or agility to wield it decisively.

@@ -1,0 +1,17 @@
+### Oversight in the Dark  
+The EU formally closes its two-year commitment cycle, marking the end of an era defined by voluntary cooperation. Reports indicate growing use of opaque reasoning in frontier systems, though no formal determination of systemic collapse has been made. Human interpretability remains contested, with limited evidence of full failure across the board. The Public Evaluation Node Expansion is technically live in two member states, but remains starved of access—US developers continue to withhold model weights, citing national security directives. The European AI Office initiates enforcement actions under Article 48 of the AI Act, though the legal consequences remain uncertain and capacity constraints limit follow-through.
+
+### Open Floodgates  
+An open-weight model, derived from leaked research artifacts and community-driven refinement, spreads globally within days of release. Capable of autonomous planning and cyber exploitation, it lands on consumer hardware and dark web forums alike. Openweight capability rises to 52.0, reflecting incremental progress from prior development and diffusion, but remains 11.5 points behind the frontier. While the release accelerates grassroots capability, it does not close the gap dramatically—no sudden leap occurs, as foundational advances have been gradual and fragmented. The open ecosystem gains momentum, but still lags in scale and coordination.
+
+### Democratic Fractures  
+A national election in a founding EU member is annulled after courts cite algorithmic manipulation of voter sentiment. While no actor is proven responsible, the mere plausibility of decisive interference shatters public trust. Protests erupt, and far-right parties gain ground, framing AI as an existential threat to self-rule.
+
+### Sovereignty Erodes, Then Rebounds  
+The Tech Sovereignty Package nears completion, mobilizing early-stage commitments and laying groundwork for future compute expansion. While €200bn in private investment is announced, disbursement remains phased and contingent on regulatory clarity and project milestones. Tangible infrastructure gains are limited this turn, with only preliminary construction underway. As a category 4 measure not yet fully delivering EU-controlled compute, it does not trigger the +3 to +6 sovereignty bonus. Instead, eu_ai_sovereignty sees a modest +1 from partial progress, offsetting the −1 decay due to rising ai_capability, resulting in a net value of 16.0.
+
+The Labour Transition Accelerator concludes, redirecting funds into the Social Fund+, but too late to stem white-collar unemployment. Resentment grows. Public sentiment drops to 30.0 as media dub the LTA a “paper shield.”
+
+Resilience declines as capability outpaces preparation. The Sovereign Resilience Hardening Programme is delayed by political resistance; Hungary and Slovakia accept only partial mandates. No stress tests are run this turn.
+
+The Frontier Access Enforcement Directive is proposed as a large category 1 measure, but fails to secure immediate compliance. Political capital erodes under portfolio strain and backlash from both developers and member states. The EU’s leverage remains aspirational—its rules unenforced beyond its borders.

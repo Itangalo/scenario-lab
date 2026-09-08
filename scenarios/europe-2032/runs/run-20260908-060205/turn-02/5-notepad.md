@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Secure Open-Source Frontier Monitoring Initiative −3, priority −1 = −10  
+PROPOSAL BONUS: Secure Open-Source Frontier Monitoring Initiative (cat 1, large) +2 — openweight_frontier_release created a direct oversight gap this measure aims to close, though not a crisis yet  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21.0 last turn, no capacity event, InvestAI Gigafactories in flight +0, capability rose 1.5 −1 = 20.0
+
+- `emergent_supply_chain_pressure` -- first noted turn 1, listed in 2 turn(s) so far: ASML faces intensified, formalized U.S. demands to restrict not only advanced EUV exports to China but also mid-tier DUV systems used for mature-node chips. The Dutch government signals resistance, but internal divisions emerge as Washington invokes national security clauses covering embedded American components. This tests the EU's ability to coordinate a unified stance on strategic technology sovereignty.
+- `emergent_supply_chain_leverage` -- first noted turn 1, listed in 2 turn(s) so far: ASML, under sustained US pressure, begins informal consultations with EU institutions about coordinating export restrictions on EUV and older-generation lithography machines, recognizing that unilateral action risks retaliation and supply chain fragmentation. This marks the first time a key non-EU corporate actor seeks EU coordination on a strategic technology chokepoint.

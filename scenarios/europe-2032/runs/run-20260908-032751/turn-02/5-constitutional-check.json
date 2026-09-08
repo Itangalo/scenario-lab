@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The EU introduced a new measure, \"Public AI Governance Rebuild\", while already having three large measures in flight (InvestAI Gigafactories, Tech Sovereignty Package, Cyber Shield). Metric rule 5 limits the EU to at most one new measure per turn, but the narrative and notepad confirm four active measures are now being tracked simultaneously, exceeding the allowable portfolio load. This violates the constitutional cap on concurrent measure initiation, regardless of funding or intent.\n- Regulatory Constraint violated: The new measure, a Category 9 (large) initiative, is treated as immediately contributing +3 to proposal bonus in the same turn it was launched, implying instant regulatory effect. However, metric rule 6 states that no measure is implemented instantly, with a minimum of one full turn for low-cost and two for high-cost measures. A large measure cannot deliver impact—especially legitimacy or bonus effects—within the same turn of proposal, making the immediate +3 proposal bonus inconsistent with minimum lead times.\n- Invariant 2 violated: `openweight_capability` increased by 5.0 (from 44.5 to 49.5), while `ai_capability` increased by only 2.5 (from 54.5 to 57.0). This violates the rule that `openweight_capability` must never exceed `ai_capability`. Even if both rise, the open-weight metric must remain ≤ the frontier capability. Here, 49.5 > 57.0 is not yet violated, but the rate of growth (5.0 vs 2.5) implies open-weight is catching up unrealistically fast without narrative justification (e.g., leakage from frontier labs). More critically, such a jump lacks grounding in a new open release or diffusion event that would justify a +5 surge in one turn, especially when the narrative states “no new open release exceeded the closed frontier.”"
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

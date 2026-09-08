@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `ai_safety` decreased from 14.0 to 6.0 (−8.0), but no narrative or notepad justification is provided for such a large drop, and the metric rules do not permit unexplained falls in `ai_safety`. While `ai_safety` is not protected from decline like `ai_capability` and `openweight_capability`, a drop of this magnitude requires a clear, narrated cause—such as a major incident, policy failure, or systemic breakdown—that is commensurate with the scale. The narrative mentions institutional inertia and lack of telemetry but does not describe an event that would justify an 8-point collapse. This exceeds plausible erosion and violates the requirement for realism in stock changes.\n- Modelling choice 5 violated: The notepad applies a −1 penalty for \"priority −1\", implying that a priority was set, but the narrative does not name any single priority measure for the turn. This contradicts Constitutional Constraint 5, which allows at most one named priority per turn and requires it to be explicitly identified. If a priority exists in the notepad, it must be narratively acknowledged to maintain consistency and avoid hidden mechanics.\n- Modelling choice 8 violated: The narrative states that the capability jump \"crossed into the 75.0 threshold where systems match strong domain experts across most cognitive professions\", which telegraphs a functional threshold and implies a known consequence of reaching that level. This violates the prohibition on telegraphing future effects or defining capability levels by qualitative benchmarks. Such thresholds belong in event logic, not narrative exposition."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

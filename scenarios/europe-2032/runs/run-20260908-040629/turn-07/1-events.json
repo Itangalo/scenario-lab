@@ -1,0 +1,37 @@
+[
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_regional_data_sovereignty_push",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "Several EU member states, reacting to both the emergent_disinfo_wave and stalled EU-level data governance, begin unilaterally mandating local data residency and model hosting for public-sector AI systems. This fragments the internal market further and strains cohesion, but also accelerates domestic infrastructure planning in countries with available energy and cooling capacity.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

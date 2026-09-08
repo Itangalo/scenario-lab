@@ -1,0 +1,11 @@
+PORTFOLIO CHARGE: Sovereign Cloud Integration Acceleration −3, Emergency Compute Mobilisation Facility −3, priority −1 = −7  
+PROPOSAL BONUS: Emergency Compute Mobilisation Facility (cat 4, large) +8 — answers cyber_major_incident and ai_investment_collapse directly, both severe and this turn  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 9 last turn, no capacity event, Emergency Compute Mobilisation Facility in flight +1, capability rose 1.0 −1 = 10  
+US_POSTURE: CONSOLIDATION
+
+emergent_sovereign_cloud_initiative -- first noted turn 10, listed in 4 turn(s) so far: A coalition of European tech firms and national governments, frustrated by the lack of operational sovereign compute, launches a parallel 'Sovereign Cloud Initiative' to pool non-sensitive public-sector workloads on EU-controlled infrastructure. The move gains quiet support from mid-sized member states seeking alternatives to U.S. dependency, but faces resistance from countries tied to American hyperscalers.
+
+emergent_labour_disruption_wave -- first noted turn 10, listed in 5 turn(s) so far: A wave of localized strikes and work stoppages erupts across public-sector IT, healthcare administration, and legal support roles, triggered by the rollout of AI systems in national bureaucracies. Workers frame the deployments as unilateral and unconsulted, bypassing collective agreements. The actions are not centrally coordinated but feed a growing narrative of institutional overreach, further straining public trust and political cohesion.
+
+emergent_ai_refugee_wave -- first noted turn 13, listed in 2 turn(s) so far: A growing number of AI researchers and engineers from non-EU countries, particularly those facing restrictive export controls or political pressure on their work, begin seeking relocation to EU member states offering protected research status and access to sovereign compute. This creates a quiet but strategic inflow of talent into the bloc, framed as asylum for technologists, and puts pressure on the EU to formalize safe harbors for frontier research.

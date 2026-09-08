@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, ASML Joint Export Governance Initiative −3, Biosecurity Watchtower −3, priority −1 = −13  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20 last turn, no capacity event, Gigafactories in flight +0, capability rose 1 −1 = 19  
+US_POSTURE: not yet determined  
+emergent_lab_cooperation -- first noted turn 1, listed in 3 turn(s) so far: A coalition of European AI research labs and universities announces a shared training initiative to develop a sovereign frontier-capable model using pooled compute and data resources, backed by conditional funding from several member states. The project is framed as a response to the US access denial in June and gains rapid academic and industrial support, though its ability to scale remains uncertain.  
+emergent_asml_board_resistance -- first noted turn 1, listed in 3 turn(s) so far: Senior executives at ASML, under sustained U.S. pressure to restrict exports further, begin coordinating with Dutch and EU officials to formalize a joint decision-making framework on lithography exports. Leaks suggest the board is pushing back internally, arguing that unilateral compliance risks long-term strategic autonomy and market position. This marks the first visible fracture in the supply chain coercion chain.

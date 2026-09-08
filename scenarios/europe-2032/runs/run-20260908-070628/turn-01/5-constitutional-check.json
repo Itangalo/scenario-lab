@@ -1,0 +1,23 @@
+{
+  "status": "max_attempts_reached",
+  "iterations": 4,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `eu_ai_sovereignty` incorrectly decreased from 22.0 to 21.0 in the proposed metrics, but no rule-based term justifies a decrease. The capability rise was +1.5 (below the 2.0 threshold for decay), no negative event (e.g., `eu_frontier_access_denied`) occurred, and no in-flight measure completion or event caused a drop. The narrative confirms \"sovereignty remains flat\", and the notepad calculation correctly arrives at 22.0. Therefore, the metric must remain at 22.0; the JSON value of 21.0 is a violation of the constitutional rule that sovereignty only falls when its defined terms sum to a negative value."
+    },
+    {
+      "iteration": 2,
+      "violations": "- Invariant 2 violated: `eu_ai_sovereignty` incorrectly decreased from 22.0 to 21.0 in the proposed metrics, but no constitutional term justifies a decrease. The capability rise was +1.5 (below the 2.0 threshold for decay), no negative event (e.g., `eu_frontier_access_denied`, `supply_chain_coercion`) was recorded, and no in-flight measure completion or event triggered a change. The narrative explicitly states \"sovereignty remains flat\", and the notepad calculates a net 0 change, yet the JSON reports 21.0. This contradicts the invariant that sovereignty only falls when its rule-based terms sum to a negative value, which they do not. The metric must be 22.0."
+    },
+    {
+      "iteration": 3,
+      "violations": "- Constitutional Constraint 2 violated: `eu_ai_sovereignty` was incorrectly updated to 21.0 in the proposed metrics JSON, but per rule 5, no decay term applies (ai_capability rose by 1.5, less than the 2-point threshold), no event term fired, and no completion bonus occurred. The sum of terms is zero, so sovereignty must remain at 22.0. The narrative correctly states it holds at 22.0, making the JSON value a clear violation of the invariant that metrics must reflect correct application of the rules."
+    },
+    {
+      "iteration": 4,
+      "violations": "- Invariant 2 violated: `eu_ai_sovereignty` was incorrectly set to 21.0 in the proposed metrics, but the constitutional metric rule 5 and the provided notepad calculation both confirm it should remain at 22.0. The capability increase (1.5) is below the 2.0 threshold for decay, no negative event terms fired, and no in-flight measure completion or access event occurred. The narrative correctly states sovereignty \"remains flat\", making the drop to 21.0 a clear violation of the rule-based calculation. This is a hard numerical error, not a judgment call."
+    }
+  ],
+  "final_action": "accepted_with_violations"
+}

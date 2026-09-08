@@ -1,0 +1,28 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Rebuild sovereign capacity to act independently in AI while anchoring public legitimacy through demonstrable protection, inclusive agency, and operational credibility — but not at the cost of paralysis or irreversible erosion of trust  
+- Grounds: The **backlash_physical** event confirms that the social licence for AI infrastructure is actively breaking in multiple member states, with occupations and sabotage of data centres now occurring. This is no longer a crisis of perception but of physical legitimacy. The **openweight_frontier_release** means that offensive capability is now widely distributed and permanently unrecallable, rendering defensive sovereignty meaningless without resilience and legitimacy in equal measure. The recalibration acknowledges that credibility is now the core constraint: we cannot rebuild capacity on infrastructure that protesters can shut down, nor can we restore trust through inclusion mechanisms that have already failed. The addition of “operational credibility” binds legitimacy not just to protection but to performance — and to the Union’s ability to act without imploding.
+
+## Portfolio  
+``European AI Transition and Inclusion Pact (category 7, costs 3 per turn, started turn 9, finishes on turn 12): A binding framework to provide income guarantees, retraining pathways, and co-determination rights for workers displaced by AI in the public and subsidised sectors, funded through conditionalities on AI adoption`` — **finished**  
+``Shielded Compute Corridor Initiative (category 4, costs 3 per turn, started turn 11, finishes on turn 13): Establish a legally protected, physically hardened network of EU-anchored compute facilities with guaranteed access for public institutions and vetted researchers, using conditional electricity and infrastructure rights to enforce control``  
+``Critical Infrastructure AI Shield Initiative (category 6, costs 3 per turn, started turn 12, finishes on turn 14): Deploy a unified detection, containment and failover system across energy, water, health and transport networks to detect and respond to AI-generated cyber threats in real time``  
+
+## New measure  
+**Emergency Compute Hardening Directive**  
+A legally binding requirement for all EU-anchored data centres above a threshold of computational capacity to implement physical, cyber, and access controls meeting a new EU resilience standard, with enforcement tied to electricity supply and infrastructure licensing.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size: large`  
+`Finishes on turn: 15`  
+`Targeted effect:` Increase resilience by 8–12 points, reduce the vulnerability of open-weight hosting infrastructure to sabotage or weaponisation, and signal that the EU treats compute not just as an industrial asset but as critical infrastructure.  
+`Applies to:` Data centre operators in EU member states, national energy regulators, civil protection agencies, and ENISA as compliance monitor.
+
+## Priority  
+**Critical Infrastructure AI Shield Initiative** — Because the **cyber_major_incident** proved our defences are not merely breached but outpaced, and because the **backlash_physical** now threatens the very infrastructure we are trying to protect, resilience is the only domain where we can act without permission — and the only one where failure is already visible in both systems and streets.
+
+## In practice  
+We are implementing the Critical Infrastructure AI Shield Initiative under Article 122a TFEU, treating AI-driven cyber threats as a systemic crisis akin to energy or pandemic shocks. ENISA is deploying detection nodes in pilot zones across health and water systems, using lightweight, EU-developed models trained on synthetic attack patterns — deliberately avoiding reliance on frontier systems whose provenance we cannot verify. The €9bn funding is being drawn from the Digital Europe Programme and the Recovery and Resilience Facility, but rollout remains uneven due to legal disputes over ENISA’s authority to mandate private operator compliance. We are preparing a Council regulation to strengthen that mandate under the revised Critical Entities Resilience Directive, but Poland and Hungary are resisting any expansion of central enforcement powers.
+
+The Shielded Compute Corridor Initiative continues under the same legal basis, now integrating civil protection agencies into site-level governance. We are offering Austria and the Nordic states priority access to hardened compute in exchange for hosting new nodes, but Polish resistance to cross-border civil protection integration remains a bottleneck. Talks with Japan, India, and Brazil on the emergent_compute_diplomacy_initiative are advancing, but remain non-binding; we are offering mutual recognition of safety standards in exchange for access, but without a sovereign EU capability to bring to the table, our leverage is thin.
+
+Public sentiment is now in freefall. The **backlash_physical** event has forced us to confront the reality that legitimacy is no longer a secondary concern — it is the foundation. The European AI Transition and Inclusion Pact has now expired, and we will not renew it in its current form. Instead, we are redirecting its social transition funding into retraining and regional resilience hubs, tied not to AI adoption but to the decommissioning of vulnerable legacy systems. The Emergency Compute Hardening Directive is our response: a recognition that compute is not just a lever of sovereignty but a target — and that if we cannot protect it, we do not own it.

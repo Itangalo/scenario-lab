@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 40.0 to 47.0 (+7.0) in one turn, which exceeds the maximum plausible growth rate for this metric. While the invariant allows `openweight_capability` to rise or stay flat, such a large jump in a single turn is inconsistent with the gradual, accumulated nature of capability development unless justified by an extraordinary event (e.g., a major open release or breakthrough). No such justification is provided in the narrative, and no prior notepad entries foreshadow this leap. The constraint requires accumulation, not sudden surges.\n- Economic Constraint violated: The narrative states that CS-CO is a \"large category 6 measure\" and includes \"80% co-financing and joint procurement\", yet no funding source is identified for this significant expenditure. A large-scale financial commitment of this nature requires an explicit revenue source, borrowing authorization, or reallocation from another budget line, none of which are mentioned. This violates the requirement that capital expenditures have identified sources.\n- Modelling Choice 5 violated: The EU introduces **Cyber Shield for Critical Operators (CS-CO)** as a new measure while already having two measures in flight: **InvestAI Gigafactories** and **Tech Sovereignty Package**. This results in three active measures simultaneously, but the constraint allows at most one new measure per turn and implicitly caps the portfolio to avoid overload. The notepad confirms all three are active and charged, exceeding the limit of one new measure per turn."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

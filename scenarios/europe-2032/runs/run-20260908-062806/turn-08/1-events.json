@@ -1,0 +1,48 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.17666666666666667,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_scientific_dissident_network",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "A decentralized network of researchers and engineers, disillusioned with closed-lab opacity and declining safety standards, begins publishing coordinated technical critiques and alternative evaluations of frontier models from outside official channels. Using open-weight tools and anonymized data, they gain credibility after correctly predicting a minor control failure in a widely deployed agent system.",
+    "probability_samples": [
+      0.25,
+      0.22,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

@@ -1,0 +1,17 @@
+## Statement changes  
+*No statement changes.*
+
+## Portfolio  
+- `Establish the Transatlantic AI Safety Accord (category 8, costs 3 per turn, started turn 7, finishes on turn 10): Create a binding framework for joint evaluation, incident response coordination, and shared red lines with the new US administration, leveraging their reset in foreign policy to lock in structured cooperation before capability outpaces alignment` — **finished.**  
+- `Launch the EU AI Watch and Respond Framework (category 6, costs 3 per turn, started turn 10, finishes on turn 12): Establish a permanent, real-time monitoring and rapid-response capability for AI incidents with cross-sectoral reach, integrating technical detection, legal authority, and public communication`  
+
+## New measure  
+**None this turn.** — We are consolidating our position after completing the Sovereign Agent Framework and launching a large resilience measure, while political capital is too low to sustain additional large initiatives without risk of portfolio collapse.
+
+## Priority  
+**Launch the EU AI Watch and Respond Framework** — because the automated_decision_scandal has made public trust fragile, bio-risk concerns are mounting, and we must demonstrate operational readiness now, even as the Transatlantic Accord finishes without delivering reciprocal access.
+
+## In practice  
+We are treating the completion of the Transatlantic AI Safety Accord as a partial success: the framework is signed, but reciprocal evaluation access remains blocked by Washington’s internal review. We have secured joint tabletop exercises and a shared taxonomy of red lines, but no real-time data flow or mutual enforcement. The accord’s value now depends on unilateral EU readiness — which is why we are doubling down on the AI Watch and Respond Framework. This turn, we are activating the co-funding mechanism through the Internal Security Fund and EU4Health, releasing €420 million in conditional grants to member states that appoint national AI incident coordinators by June. ENISA is integrating feeds from national CERTs, the ECDC’s pathogen monitoring network, and Frontex’s border analytics into a prototype dashboard, with full integration targeted by turn 12.
+
+The automated_decision_scandal has hit at the worst moment — a Dutch court found that an AI-supported welfare fraud system wrongfully denied benefits to over 2,000 citizens, many of them low-income migrants. The ruling cites systemic opacity and lack of appeal pathways. Public sentiment is now under acute pressure: restriction is politically cheap, but so is blocking any AI deployment that smells of surveillance. We are responding by embedding the European Public Prosecutor’s Office in the Watch and Respond governance structure, giving it standing authority to investigate AI-enabled administrative harm. This is not just about bio or cyber — it is about restoring legitimacy. The scandal proves that safety without accountability is meaningless, and resilience must include social recovery, not just technical containment. We are using the incident to push for faster ratification of the Framework, framing it as the EU’s answer to both catastrophic risk and everyday injustice.

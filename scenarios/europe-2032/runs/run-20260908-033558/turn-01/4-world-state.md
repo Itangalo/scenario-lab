@@ -1,0 +1,15 @@
+### A Surge in Capability, a Collapse in Safety
+
+The second half of 2026 ends in shock. A single release obsoletes prior assumptions, pushing `ai_capability` sharply upward — the frontier advances meaningfully as AI systems demonstrate the ability to autonomously design and validate complex software modules in unstructured environments, marking a qualitative shift. Simultaneously, offensive cyber capabilities demonstrated in the wild — including the coordinated grid intrusions across three continents — reveal AI-driven attacks that evade traditional detection. The intrusions, discovered only by accident, expose critical gaps in Europe’s defences.
+
+In response, the EU launches the **Emergency Resilience Surge**, a large category 6 measure aimed at hardening energy, water, and port infrastructure. Binding technical standards are drafted under NIS2 and Article 18 of the Cyber Resilience Act, with ENISA given enforcement powers. However, repurposing funds from the Recovery and Resilience Facility proves politically fraught: two smaller member states object to the bypassing of national implementation plans, and legal questions arise over the Commission’s authority to redirect RRF spending without full Council unanimity. Emergency fast-tracking is debated, but no final agreement is reached by year’s end. Planning and technical work proceed, but disbursement and deployment are stalled pending resolution.
+
+Meanwhile, the open release of Kimi K3’s successor — now capable of autonomous cyber exploitation — spreads rapidly through underground networks. The model’s capabilities suggest reconstruction from leaked artifacts or partial weights, accelerated by distributed fine-tuning efforts. While not matching the full breadth of the new frontier, its performance in narrow offensive domains pushes `openweight_capability` significantly forward, though still trailing the closed frontier.
+
+### Sovereignty Under Pressure
+
+The US coercion of ASML to restrict servicing of older lithography machines — a move targeting not just China but also third-country customers — triggers `supply_chain_coercion`. The EU’s sole strategic chokepoint is being leveraged against its interests, undermining its autonomy. This, combined with the sharp rise in AI capability, drains `eu_ai_sovereignty` by −2, leaving it at 21.0.
+
+`ai_safety` plummets due to the capability jump and the failure of existing safeguards to detect coordinated AI agents in real systems. No safety measure has landed on frontier models, and the gap between capability and control widens dangerously.
+
+The new resilience measure incurs an initial cost of −3 political capital, the two ongoing category 4 measures cost −6, and the priority designation adds −1. With no offsetting gains, `eu_political_capital` drops to 40.0. Public sentiment holds steady, as the benefits of AI remain diffuse while fears of disruption grow.

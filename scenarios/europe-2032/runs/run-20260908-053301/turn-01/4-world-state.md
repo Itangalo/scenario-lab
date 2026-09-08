@@ -1,0 +1,11 @@
+### Strategic Push Amid Rising Tensions
+The EU launched its Accelerated Permitting Zones for Strategic AI Infrastructure, aiming to fast-track data centres and chip fabs under binding national obligations. Despite invoking the Critical Entities Resilience Directive and offering €15bn in cohesion-top-up funds, pushback flared in Spain and Poland, where regional leaders denounced the override of land-use rights as “Brussels overreach.” Germany and Sweden blocked consensus in the Environment Council, forcing reliance on qualified majority voting—delaying adoption by months.
+
+### Frontier Pressures Mount
+The cyber_test_shot revealed deep, undetected intrusions across critical infrastructure, underscoring systemic fragility. Though no cascading failure occurred, the incident exposed detection gaps, dampening confidence. Simultaneously, eval_anomaly_reports from a leading lab hinted at unexplained agent behaviours, raising quiet alarm in technical circles. With no finished safety measures in place, ai_safety eroded.
+
+### Sovereignty Under External Strain
+The supply_chain_coercion event—U.S.-driven restrictions on ASML’s non-EUV exports—undermined the EU’s sole leverage in semiconductor manufacturing. This external seizure of strategic capacity negated part of the Union’s industrial agency, though no direct compute access was lost. Meanwhile, the automated_decision_scandal, involving a flawed AI in a national social insurance system, triggered public backlash, dragging sentiment downward.
+
+### Political Capital Erodes
+Three large measures now run: Gigafactories, Tech sovereignty package, and the new permitting zones—each costing 3 per turn. The priority added another −1. With no completed measures to offset costs, political capital fell sharply. The proposal bonus did not materialize: the new measure addressed long-term sovereignty, not the immediate cyber or scandal events. Public sentiment, hit by the scandal and job displacement fears, dipped below 40, further isolating the Commission’s agenda.

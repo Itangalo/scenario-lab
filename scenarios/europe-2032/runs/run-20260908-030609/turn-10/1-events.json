@@ -1,0 +1,37 @@
+[
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_safety_breakthrough_adoption",
+    "probability": 0.24333333333333332,
+    "emergent": true,
+    "description": "A coalition of EU research labs and public health agencies adapts fragments of an emerging interpretability toolset to monitor AI-driven diagnostics in hospitals. While not yet deployable at frontier scale, early integration into medical AI systems suggests a pathway to operational assurance, albeit slowed by workforce shortages and interoperability gaps.",
+    "probability_samples": [
+      0.28,
+      0.2,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

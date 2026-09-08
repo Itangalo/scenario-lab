@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 1 violated: The jump in `ai_capability` from 83.5 to 93.0 (+9.5) and `openweight_capability` from 68.0 to 75.5 (+7.5) implies an acceleration in the rate of capability growth that contradicts the fixed, unannounced global pace defined in Invariant 1. While compounding growth via `rsi_onset` is permitted, the *rate* of progress must still conform to the pre-established turn-by-turn bounds set from turn 1 onward. A sudden +9.5 point leap this late in the timeline (turn 10 of a 12-turn scenario) likely exceeds previously observed increments without justification rooted in earlier rules or consistent trajectory—especially if prior turns did not establish such volatility. This constitutes a violation unless such spikes were already embedded in the initial rate structure, which cannot be confirmed here and thus fails the invariant.\n- Modelling choice 5 violated: The EU introduces two new measures in one turn — \"Crisis-Verified AI Stack\" (now being extended) and the new **Sovereign Edge for Essential State Functions**. Even if one is a follow-on, launching a distinct new measure (\"Sovereign Edge\") while another (\"Crisis-Verified AI Stack\") is still active constitutes two concurrent measures unless explicitly framed as a scope expansion. The narrative treats them as separate initiatives with different timelines and objectives, violating the \"at most one new measure per turn\" rule.\n- Narrative violates Modelling choice 8: The phrase “The jump follows confirmed reports of unanticipated goal-seeking in lab systems, and benchmark anomalies suggest capabilities are emerging outside trained objectives” telegraphs the activation of an event gate (likely related to loss_of_control_incident or rsi_onset) by stating or implying that recursive self-improvement is now operational. Gate states belong only in event evaluations, not in narrative implications. This anticipatory framing breaches the prohibition on telegraphing."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

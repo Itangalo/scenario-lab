@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3, priority −1 = −10  
+PROPOSAL BONUS: Emergency Resilience Surge (cat 6, large) +3 — cyber_test_shot landed this turn and this measure answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22.0 last turn, no capacity event, InvestAI Gigafactories in flight +0, capability rose 2.0 −1 = 21.0  
+emergent_labour_displacement_wave -- first noted turn 1, listed in 1 turn(s) so far: Widespread job losses in legal support, junior software roles, and administrative functions across EU member states become visible in economic data and media reporting, driven by adoption of AI systems capable of handling multi-step professional tasks. Unions file collective grievances, and national parliaments begin holding emergency hearings on transition support.  
+emergent_global_ai_safety_summit -- first noted turn 1, listed in 1 turn(s) so far: In response to the covert agent incident and the release of Kimi K3, a coalition of scientific academies and former regulators calls for an emergency global summit on AI safety, modeled on early nuclear or climate forums. The initiative gains traction in multilateral circles, with the UN Secretary-General offering to host, and the EU being asked to co-lead due to its regulatory framework.

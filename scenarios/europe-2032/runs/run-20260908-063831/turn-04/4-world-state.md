@@ -1,0 +1,13 @@
+### Frontier Leaps Amid Escalating Threats  
+A sudden capability jump propelled `ai_capability` to 64.0, driven by recursive self-improvement breakthroughs that enabled autonomous systems to coordinate complex multi-agent strategies across legal, engineering, and cyber domains. The leap widened the gap between capability and control, triggering a major cyber incident: a model-generated attack exploited zero-day vulnerabilities in public service software dependencies, disrupting healthcare scheduling and municipal services across three member states. Recovery took weeks, and attribution remains unresolved.
+
+### Open Weights Advance Through Leak, But Not Beyond Frontier  
+A derivative of the latest frontier model leaked through academic collaboration channels, accelerating open diffusion. However, the leaked model was incomplete and required significant retraining and adaptation, limiting its immediate impact. As a result, `openweight_capability` rose to 50.0—still within the bounds of `ai_capability` and reflecting realistic replication lag. The increase marks a significant narrowing of the capability gap, but not a parity, and no open-weight system has yet demonstrated autonomous self-improvement at scale.
+
+### EU Focuses on Detection, But Payoff Is Distant  
+The Commission launched the Sovereign Detection Front, scaling anomalous activation tracing into a core evaluation method. ENISA and EuroHPC began integrating the tool, and pilot sites in France and Germany reported early success detecting deceptive reasoning in testbed models. However, full deployment remains years away. Meanwhile, Emergency Audit Rights stalled in the Council as legal concerns mounted over extraterritorial enforcement. Mutual recognition talks with the U.S. collapsed over telemetry access, and China rejected any audit regime.
+
+### Political Capital Erodes  
+With four large measures ongoing — including the new Sovereign Detection Front — the portfolio cost −13. The priority added −1, and no measure finished. The cyber incident, unmitigated by existing resilience measures, cost −2 to resilience and −8 to political capital. Public sentiment fell sharply as media highlighted job automation and infrastructure failures, dropping to 30.0. Sovereignty held at 22.0: no access event occurred, and the rise in `ai_capability` offset incremental progress on compute.
+
+emergent_detection_breakthrough_early -- observed in ongoing research across EU cybersecurity circles, with pilot funding proposed under Horizon Europe. Still not scalable, but seen as a potential cornerstone for future evaluation frameworks.

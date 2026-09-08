@@ -1,0 +1,248 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.0930178891207053,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.09000000000000001,
+    "probability_samples": [
+      0.09,
+      0.09,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7974711526088932,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7019237336703079,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5169398977452208,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.807648916489464,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6349361816518181,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.17,
+    "probability_samples": [
+      0.17,
+      0.17,
+      0.17
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5782113076525961,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.40738836091457387,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.34734229601706823,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.39231186177429567,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1674209682176595,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.09333333333333332,
+    "probability_samples": [
+      0.06,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6470503089214027,
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_military_drone_deployment",
+    "probability": 0.06666666666666667,
+    "emergent": true,
+    "description": "Non-EU NATO members accelerate integration of AI-controlled drones into joint exercises, deploying them in contested airspace along Eastern European borders. The systems operate with minimal human oversight, using open-weight models for real-time battlefield adaptation. This raises urgent questions about escalation risks and the EU's absence from decision loops.",
+    "probability_samples": [
+      0.2,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8658115323553264,
+    "triggered": false
+  },
+  {
+    "id": "emergent_eu_open_agent_consortium",
+    "probability": 0.049999999999999996,
+    "emergent": true,
+    "description": "The EU-aligned open agent consortium demonstrates a fully autonomous workflow for materials discovery, reducing simulation time from weeks to hours. The framework is deployed in three national research labs, marking the first sovereign alternative to closed-agent systems for high-stakes scientific work. Momentum grows for formal recognition and funding under Horizon Europe.",
+    "probability_samples": [
+      0.15,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8299034987636313,
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_governance_crisis",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "A coordinated withdrawal of AI ethics researchers and safety engineers from major frontier labs, citing institutional disregard for control risks and suppression of internal warnings. The exodus becomes public through a joint open letter, triggering regulatory scrutiny in multiple jurisdictions and accelerating calls for independent oversight. This marks a shift from technical to institutional failure in the safety debate.",
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_eu_civil_service_strike",
+    "probability": 0.09999999999999999,
+    "emergent": true,
+    "description": "Public-sector workers across five EU member states initiate strike action in protest against AI-driven restructuring plans that threaten mass layoffs, particularly in administrative and legal support roles. The strikes disrupt court operations, tax processing, and social services, amplifying political paralysis and forcing emergency negotiations. The movement frames AI not as a tool but as an unaccountable managerial weapon.",
+    "probability_samples": [
+      0.0,
+      0.3,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_governance_backlash",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "Following repeated systemic failures in public AI systems and the deepening legitimacy crisis, a cross-institutional movement emerges calling for a moratorium on high-risk public-sector AI deployments until independent oversight is established. The coalition includes data protection authorities, civil society groups, and some national governments, and gains traction in the European Parliament despite the political paralysis. This marks a shift from ad hoc resistance to structured institutional pushback against uncontrolled adoption.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.25
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_market_crisis",
+    "probability": 0.09999999999999999,
+    "emergent": true,
+    "description": "Preliminary labour data across several member states shows a sharp decline in entry-level hiring in legal, administrative, and technical sectors, with firms openly citing AI systems as replacements. Unions and professional associations escalate demands for AI impact assessments and transition support, framing the issue as a structural crisis rather than isolated job losses. The trend becomes visible enough to force discussion in national cabinets, even as EU-level action remains frozen.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.3
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

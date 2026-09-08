@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereign Red-Teaming Network −3, Frontier Compute Access Compact −3, Sovereign Model Development Initiative −3, priority −1 = −16  
+PROPOSAL BONUS: Sovereign Model Development Initiative (cat 4, large) +5 — answers emergent_lab_safety_leak and failure of Access Compact directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20.0 last turn, Gigafactories in flight +1, capability rose 2.0 −1 = 21.0  
+emergent_defensive_alliance_initiative -- first noted turn 4, listed in 1 turn(s) so far: In response to the repeated cyber incidents and the demonstrated gap in defensive capabilities, a coalition of EU member states and non-EU European nations launches a new joint cyber defence initiative, pooling AI-driven threat detection resources and establishing shared red-teaming exercises. The initiative is framed as a sovereign yet collaborative effort to close the readiness gap without relying on external actors.  
+US_POSTURE: election_consolidation (to be written in turn 6)

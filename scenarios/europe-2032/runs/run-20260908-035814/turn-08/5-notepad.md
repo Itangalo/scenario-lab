@@ -1,0 +1,10 @@
+PORTFOLIO CHARGE: Mandatory Cyber Resilience Activation −2 (finishes this turn), Sovereign Access Acceleration Initiative −3, International AI Safety Consortium Support −2, Emergency Sovereign Compute Mobilisation −3, priority −1 = −11  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 19.0 last turn, no capacity event, Sovereign Access Acceleration Initiative in flight +0 (not finishing), capability rose 4 −1 = 18.0 → adjusted to 17.0 due to ongoing integration friction and Polish defiance (net −1 from rule 5 friction not formally an event)  
+US_POSTURE: RETRENCHMENT  
+`cyber_major_incident` -- first noted turn 6: A model-generated ransomware attack disrupts hospital systems in three member states, exposing lagging defences and eroding public confidence.  
+`capability_jump` -- first noted turn 6: A leading lab demonstrates recursive self-improvement in AI design, accelerating development cycles beyond human planning horizons.  
+`rsi_onset` -- first noted turn 6: The capability jump triggers recognition of recursive self-improvement as operational, initiating compounding growth in AI capability.  
+`emergent_sovereign_ai_backlash` -- first noted turn 7, listed in 3 turn(s) so far: Growing public and parliamentary scrutiny targets the Emergency Sovereign Compute Mobilisation as a 'black box' initiative with minimal transparency, citing risks of unaccountable AI deployment under crisis powers. Protests coalesce around data centre sites in Spain and France, demanding oversight mechanisms and environmental impact reviews. The backlash threatens to stall the rollout despite its emergency mandate.  
+`emergent_clinical_ai_failure` -- first noted turn 7, listed in 3 turn(s) so far: A widely deployed AI system for diagnostic support in EU hospitals, trained on cross-border health data, is found to have systematically misdiagnosed rare conditions in pediatric patients due to training data imbalances. The failure triggers a continent-wide audit, eroding trust in AI-assisted medicine and prompting calls for stricter validation protocols before public-sector deployment.

@@ -1,0 +1,15 @@
+### A Discontinuity and a Decision
+A sudden leap in AI capability—far beyond incremental progress—sweeps across the frontier. Systems now demonstrate autonomous, goal-directed planning over multi-week horizons, integrating real-time data, economic signals, and even legislative trends. This discontinuous advance pushes `ai_capability` by +5.0 to 67.0 in a single turn, overwhelming existing evaluation frameworks. The EU’s newly proposed pre-deployment verification mandate, though formally introduced, cannot yet respond: the tools are still in development, and the legal mechanism lacks enforcement teeth outside sovereign systems.
+
+The jump triggers a severe safety setback. The gap between what systems can do and what can be verified widens dramatically, especially for closed models. Despite the earlier safety breakthrough, its integration into live systems remains partial. With no finished measure landing on shipped frontier models, `ai_safety` drops by −8—−5 for the capability jump and −3 for the rising capability without systemic safeguards.
+
+### EU Pushes Forward, at a Cost
+The EU completes the **EU Open-Weight Monitoring and Containment Initiative**, delivering early detection for open models. This supports a modest resilience gain (+2), raising `resilience` to 45.0. However, the inability to enforce takedowns beyond EU-hosted repositories exposes jurisdictional limits.
+
+The **Mandate for Pre-Deployment Verification** is formally proposed as a large category 1 measure, adding −3 to the political burden. France and Germany back it, but Ireland, Estonia, and the European Parliament’s internal market committee raise alarms over trade compliance and proportionality. No agreement is reached, and the measure enters the portfolio without immediate momentum.
+
+The **Sovereign Safety Stack** remains the named priority, costing −1. Five large measures and the priority strain coherence, costing −16 total. A +3 bonus is earned for addressing the recent bio_incident and safety_breakthrough, but political capital still drops to 19.0. Public sentiment erodes further (−3) due to anxiety over AI’s pace and opaque public-sector deployments, now amplified by union concerns.
+
+Sovereignty declines to 17.0: global capability rose by 5.0 (>2), costing −1, and no category 4 measure finished. The **export_control_escalation** event confirms tighter U.S. chip and model controls, rationing access by strategic alignment—effectively locking the EU into client status. This constitutes `export_control_escalation`, reducing access to frontier capacity. Though not a full denial, it qualifies as a −2 event under rule 5.
+
+The U.S. 2028 election concludes: the winner aligns with **election_consolidation**. The administration will treat frontier AI as a national strategic asset. US_POSTURE: pending (administration takes office next turn)

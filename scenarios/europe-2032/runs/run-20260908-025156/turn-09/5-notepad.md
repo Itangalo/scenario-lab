@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Critical Infrastructure AI Shield Initiative −3, European AI Transition and Inclusion Pact −3, priority −1 = −7  
+PROPOSAL BONUS: European AI Transition and Inclusion Pact (cat 7, large) +3 — directly addresses emergent_labour_displacement_wave, a sustained and escalating crisis with transnational coordination, offering structural response to root cause  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 19.0 last turn, member_state_defection t9 −2, capability rose 1.5 −1 = 17.0  
+US_POSTURE: ALLIANCE  
+emergent_labour_displacement_wave -- first noted turn 7, listed in 4 turn(s) so far: The wave of AI-driven displacement in mid-level technical and administrative roles continues to escalate, with widespread strikes in legal, financial, and public sectors across multiple member states. Unions coordinate transnationally, demanding binding EU-wide safeguards on public-sector AI adoption and transitional income guarantees, framing the issue as one of democratic legitimacy.  
+emergent_global_ai_governance_initiative -- first noted turn 7, listed in 4 turn(s) so far: The multilateral AI governance forum led by Japan, India, and Brazil finalizes a framework for neutral evaluation standards and incident reporting, attracting formal participation from 15 additional non-aligned states. The initiative begins drafting a lightweight compliance mechanism, positioning itself as a viable alternative to both U.S.-led and EU-centric models of AI governance.

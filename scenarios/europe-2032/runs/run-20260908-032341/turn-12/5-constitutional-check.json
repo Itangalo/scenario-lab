@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Sovereignty calculation error: The narrative states \"Sovereignty drops slightly... no capacity event occurs and no completion bonus is earned this turn,\" and claims capability rose 0.5 (<2), so no −1 penalty applies, concluding sovereignty remains at 17. However, the proposed metric shows `eu_ai_sovereignty` = 16.0, not 17.0. This contradicts the internal logic provided and violates Constitutional Constraint #2, which requires that changes to `eu_ai_sovereignty` must follow explicitly stated rules (decay term, event term). If no negative terms apply, sovereignty cannot drop. Either the narrative must account for a −1 decay or event penalty, or the metric must remain at 17.0.\n- Political capital erosion lacks justification: The narrative attributes erosion to \"the cost of three large measures\" but does not reference any rule-based mechanism for political capital decline. While `eu_political_capital` can fall (and has no floor), its movement must be grounded in defined terms—such as portfolio charge exceeding income. The notepad shows a portfolio charge of −10 and a proposal bonus of +3, but no source of +1 or more to offset the drop from 1.0 to 0.0 is explained. A net change of −1 would require a balance calculation (e.g., charge exceeds available capital), but no such accounting is given. This risks violating Constraint #7 by allowing unmodelled coupling between sovereignty efforts and political capital without transparent mechanics."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 47.0 to 54.0 (+7.0), which exceeds the hard cap of +25 points per turn, but more critically, such a large jump is unexplained by the narrative and inconsistent with the constitutional requirement that capability metrics grow gradually unless justified by compounding effects like `rsi_onset`. No such mechanism is cited, and the jump implies an unrealistic rate of technical diffusion without corresponding infrastructure or time for replication.\n- Organizational Constraint violated: The narrative states the \"Sovereign Resilience Hardening Programme launches\" and yields a \"small resilience gain\", but no prior proposal or measure introduction was recorded in earlier turns for this programme. Per Constitutional Constraint 5 (at most one new measure per turn) and 6 (no measure implemented instantly), a new programme cannot launch and produce effects in the same turn it is introduced without violating minimum lead times. The notepad shows it was charged this turn, meaning it was introduced this turn, yet it already yields a resilience gain, violating the minimum one-turn delay for low-cost measures.\n- Narrative Constraint 8 violated: The US election outcome section states the president \"favouring international cooperation on AI\" and \"signals structured access for allies, conditional on alignment\", which telegraphs future policy conditions and implies a binding stance before the posture is officially set. This anticipates and prescribes outcomes that should remain uncertain until Turn 6, when `US_POSTURE:` is formally written. Mentioning conditional access and alignment expectations violates the ban on forecasting specific future events or implying gate conditions are met."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

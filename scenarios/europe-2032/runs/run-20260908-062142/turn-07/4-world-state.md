@@ -1,0 +1,17 @@
+### A Fragile Leap Forward
+
+Global AI capability advances to 63.0, driven by recursive verification loops in training pipelines and tighter agent coordination—gains concentrated in closed labs but beginning to echo through open communities. Open-weight models remain at 50.0, as efforts by underground collectives to distill last cycle’s frontier systems remain fragmented and constrained by compute access. No leakage events, open releases, or coordinated open-source breakthroughs have occurred to justify a measurable leap in open-weight capability. The gap with frontier capability persists.
+
+The EU initiates talks with Japan, South Korea, and Taiwan on a proposed joint cyber command framework, aiming to reduce detection lag and enable coordinated countermeasures. Early technical discussions show promise, and the Commission cites this emerging alignment as a potential foundation for future resilience gains. However, legal and sovereignty concerns among partner states and within EU member states slow progress—no binding agreements are signed, and data-sharing protocols remain under negotiation. As a result, resilience improves only partially to 44.0, reflecting early gains in threat modeling and shared simulations, but falling short of operational integration.
+
+No new measure is formally proposed. The Commission explores the feasibility of a Joint Threat Response Integration Directive and circulates a concept note, but stops short of launching it as a category 6 initiative. With the Sovereign AI Sentinel Programme and Critical Infrastructure AI Shield Initiative already in flight—both high-cost—the portfolio charge remains at its limit. The Commission defers any new measure launch to avoid overextension, preserving bandwidth for existing priorities.
+
+Meanwhile, the **InvestAI Gigafactories** programme officially completes, releasing €42bn to accelerate the Kittilä and Sines compute sites. Yet physical progress remains slow: grid bottlenecks persist, and local resistance flares in northern Finland. Sovereignty declines to 12.0, reflecting continued erosion from delayed implementation and the absence of a capacity event, consistent with the ongoing strain on execution capacity.
+
+The **Critical Infrastructure AI Shield Initiative** remains stalled in legal dispute, with Germany and Poland continuing to demand parliamentary oversight and red-team autonomy. The Commission pressures compliance via Recovery and Resilience funds, but no breakthrough occurs this turn. Without enforcement, the Sentinel Programme’s agents gather dust.
+
+AI safety erodes further—to 14.0—as rushed defensive deployments bypass audits, and no safeguards accompany the latest capabilities. Public sentiment holds at rock bottom, 17.0, amid continuing job losses and the social insurance scandal. Faint signals of engagement emerge from the reactivated Labour Council and the Data Soil initiative, but no measurable shift in political capital occurs.
+
+Political capital remains at 22.0. While exploratory work on international coordination generates muted interest, no formal initiative is launched to justify a perception boost. Portfolio strain from existing commitments continues to weigh on execution credibility.
+
+The EU edges forward on multiple fronts, but each step reveals deeper constraints. Trust must be built, not assumed—and access, even when shared, comes at a price.

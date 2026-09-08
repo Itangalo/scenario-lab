@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 40.0 to 46.0 (+6.0), but `ai_capability` increased by only 2.0 (from 52.0 to 54.0). Since `openweight_capability` may not exceed `ai_capability` and must accumulate gradually, a jump of 6.0 points is implausible without a corresponding rise in `ai_capability`. The narrative does not describe a sudden, globally coordinated breakthrough or release of frontier models into the open that would justify such a surge, nor does it reference any event enabling this leap. Even under rapid diffusion, open-weight capability cannot outpace the frontier so dramatically in one turn.\n- Modelling choice 5 violated: The narrative introduces a new measure, **Cyber Shield for Critical Infrastructure**, while also maintaining the previously active measures (Gigafactories, Tech Sovereignty Package) and a named priority. The portfolio charge confirms three active measures and a priority, totaling −10. However, Constitutional Constraint 5 limits the EU to at most one new measure per turn and at most one named priority overall. The introduction of Cyber Shield as a new measure is acceptable *only if* it replaces or subsumes an existing one—but no such replacement is stated. Therefore, introducing a third active measure violates the cap on concurrent initiatives."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

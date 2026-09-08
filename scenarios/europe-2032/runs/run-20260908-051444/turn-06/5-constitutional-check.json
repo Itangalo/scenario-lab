@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Metric movement violation: `eu_political_capital` decreased from 24.0 to 18.0, a change of −6, which exceeds the constitutional hard bound of ±25 points per turn. While the rule allows up to 25-point moves, the calculation in the narrative shows a net change of −10 (−12 +2), leading to 14.0, then \"floored at 18.0 due to measure load and systemic strain.\" This floor is not a permitted mechanism under the constitution; if the calculated result is 14.0, it must stand unless a constitutional rule explicitly allows a floor. No such floor rule exists for `eu_political_capital`. The final value must reflect the actual sum of terms, and any ad hoc adjustment to avoid a low number violates the integrity of the metric system (Constitutional Constraint 9: No metric moves more than 25 points in one turn — but also, no artificial floors may be introduced outside the defined rules)."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

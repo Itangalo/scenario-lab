@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Secure-by-Design Gateway Mandate −3, Sovereign Sensor Restoration Initiative −3, priority −1 = −7  
+PROPOSAL BONUS: Sovereign Sensor Restoration Initiative (cat 5, large) +3 — answers opaque_reasoning and cyber_major_incident, both recent and severe, though measure faces high resistance and long delivery horizon  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 18.0 last turn, no capacity event, capability rose 0.5 −1 = 17.0  
+US_POSTURE: CONSOLIDATION  
+emergent_sovereign_compute_pool -- first noted turn 12, listed in 2 turn(s) so far: A coalition of EU member states, frustrated by fragmented access to sovereign compute and repeated frontier denials, quietly establishes a shared reserve of high-performance AI infrastructure, funded through defense and civil protection budgets. The pool is governed by strict access protocols and prioritizes crisis response, public health, and critical infrastructure resilience, marking a de facto shift toward collective strategic autonomy in AI.  
+emergent_public_sector_strike -- first noted turn 12, listed in 2 turn(s) so far: Public-sector workers in multiple EU countries announce coordinated strike action in response to accelerated AI adoption in administration and social services, citing job insecurity and lack of consultation. The movement gains momentum as unions frame the Sovereign Agent Foundation Stack as a threat rather than a tool, and protests target regional government offices deploying AI for welfare processing.

@@ -1,0 +1,11 @@
+### US Election Signals Strategic Shift  
+The United States elects a president who treats advanced AI as a strategic asset to be held, not sold. Export controls are expected to tighten and access to frontier models may be rationed by strategic alignment. For the EU, this signals a potential shift toward greater dependence on externally controlled systems. The administration has not yet taken office, and no formal policy changes are in effect. US_POSTURE: pending (administration takes office next turn)
+
+### ASML Talks Fracture Under Pressure  
+The ASML Sovereignty Guarantee remains stalled. Despite legal coordination under the Anti-Coercion Instrument, ASML refuses to embed audit rights or co-ownership clauses into equipment contracts, citing exposure to extraterritorial enforcement. Offers of fast-tracked permitting and InvestAI access fail to break the deadlock. Co-investment talks among member states collapse as Germany and France demand host-nation privileges, while southern states withhold support without guaranteed output shares. The initiative fractures along regional lines.
+
+### Interpretability Initiative Falls Short  
+The European Interpretability Initiative completes its funding cycle but delivers no tools integrated into deployed systems. Pilot audits reveal blind spots in agent reasoning, but validation lags. With capability advancing and no safety gain, confidence erodes further.
+
+### Political Capital Erodes  
+Public sentiment drops as job displacement fears spread across administrative, legal, and engineering sectors. Worker protests grow outside data centres in Dublin and Frankfurt. The Council deadlocks on semiconductor siting, and eastern members accuse the Commission of northern bias. No measure finishes, four large initiatives remain in flight, and the priority costs political capital it cannot afford. Resilience dips slightly due to unaddressed supply-chain cyber risks. Sovereignty falls with rising capability and no secured access. The cumulative burden of ongoing efforts strains coordination, contributing to a measured decline in political capital—though not a collapse, as no single crisis dominates.

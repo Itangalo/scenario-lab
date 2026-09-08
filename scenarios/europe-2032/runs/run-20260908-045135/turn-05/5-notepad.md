@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, priority −1 = −7  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 18.0 last turn, no capacity event, capability rose 2.5 −1 = 17.0  
+emergent_labour_displacement_wave -- first noted turn 4, listed in 3 turn(s) so far: Preliminary labour market data from multiple member states show a sharp uptick in job losses in mid-skill cognitive roles—paralegals, technical drafting, insurance underwriting—correlated with the deployment of AI agents capable of sustained task execution. The trend is not yet structural, but early indicators suggest displacement is outpacing retraining capacity. Media coverage intensifies, feeding into the ambivalent public sentiment.  
+emergent_asml_boardroom_pressure -- first noted turn 1, listed in 5 turn(s) so far: Internal leaks from ASML reveal growing dissent on its board over compliance with U.S. pressure to restrict servicing of older EUV machines to China. Executives warn of long-term market erosion and retaliation, while U.S. shareholders demand full alignment. The Dutch government, though not a shareholder, faces a de facto veto moment: whether to indirectly intervene through diplomatic or financial channels to preserve strategic autonomy in the semiconductor supply chain.

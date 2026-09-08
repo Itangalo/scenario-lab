@@ -1,0 +1,72 @@
+[
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.17333333333333334,
+    "probability_samples": [
+      0.19,
+      0.14,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "description": "A coalition of European and global academic institutions launches an open scientific outreach program using accessible AI agents trained on open-weight models to assist researchers in low-resource settings. The initiative gains rapid traction in Africa and Southeast Asia, improving research capacity but raising concerns about uncontrolled diffusion of high-capability systems beyond regulatory reach.",
+    "emergent": true,
+    "id": "emergent_global_scientific_outreach",
+    "probability": 0.21333333333333335,
+    "probability_samples": [
+      0.25,
+      0.19,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "In response to persistent AI sovereignty concerns and repeated access denials, several EU member states with advanced semiconductor and energy infrastructure announce a unified initiative to co-fund and co-locate a sovereign European compute grid, independent of U.S. technology stacks. The project is framed as strategic autonomy for AI development and draws on emergency resilience funding, with early participation from Germany, France, and the Netherlands.",
+    "emergent": true,
+    "id": "emergent_unified_eu_compute_initiative",
+    "probability": 0.27666666666666667,
+    "probability_samples": [
+      0.3,
+      0.28,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

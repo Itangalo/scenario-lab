@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 52.0 to 57.0 (+5.0) while `ai_capability` increased from 64.5 to 66.0 (+1.5). This violates the rule that `openweight_capability` must not exceed `ai_capability` and must not grow faster than `ai_capability` unless justified by narrative events showing a leap in open replication — no such justification is provided, and the increase contradicts the invariant that both metrics are accumulated and do not fall, with openweight capped by ai_capability.\n- Modelling Choice 5 violated: The narrative introduces a new measure, **Stabilise the Core**, while already having **Emergency Resilience Surge** in flight, and explicitly names **Stabilise the Core** as the new priority. This results in two active measures and a new priority introduced in the same turn, exceeding the limit of one new measure per turn and at most one named priority at any time.\n- Narrative Constraint 8 violated: The narrative states \"evidence of rapidly advancing autonomous cyber tools now operating beyond human-led development cycles\" — this telegraphs a qualitative shift in AI autonomy and implies a specific threshold has been crossed, which constitutes anticipatory framing of an event gate (e.g., autonomous development onset) not evaluated through formal event gates. Such statements must remain in evaluation logic, not narrative implication."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

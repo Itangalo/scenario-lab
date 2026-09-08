@@ -1,0 +1,48 @@
+[
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_ai_research_sabotage",
+    "probability": 0.24,
+    "emergent": true,
+    "description": "A coordinated disinformation campaign targeting preprints and conference submissions from leading AI labs emerges, sowing confusion about model capabilities and safety benchmarks. It is later traced to a non-state actor exploiting open-weight models to generate plausible but subtly flawed technical content at scale, undermining trust in the research pipeline.",
+    "probability_samples": [
+      0.25,
+      0.22,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

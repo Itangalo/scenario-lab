@@ -1,0 +1,27 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — **finished**
+- `Sovereign Interpretability Programme (category 5, costs 3 per turn, started turn 4, finishes on turn 6): Launch a publicly funded, pan-European initiative to adopt and scale the recent safety breakthrough in model interpretability across all EU-deployed frontier systems, starting with critical infrastructure and public services`
+- `Critical Systems Resilience Certification (category 6, costs 3 per turn, started turn 5, finishes on turn 8): Establish a mandatory, EU-wide certification regime requiring all AI systems operating in essential services to demonstrate resilience against loss-of-control scenarios and verified interpretability under stress conditions`
+
+## New measure
+**Emergency Resilience Acceleration Facility**  
+Launch an emergency funding and technical assistance mechanism to fast-track the most vulnerable critical sectors—starting with healthcare—into compliance with the Critical Systems Resilience Certification, ensuring they are not left behind due to capacity or liability constraints.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size:` large  
+`Finishes on turn: 8`  
+`Targeted effect:` resilience +10 to +15 (especially in healthcare and local government), public_sentiment +5 to +10 by demonstrating EU support for overstretched public services  
+`Applies to:` EU institutions, national governments, regional health and emergency authorities, and public-sector AI providers
+
+## Priority
+**Critical Systems Resilience Certification** — because it is now the central instrument through which the EU asserts control over AI in essential functions, and without timely, equitable implementation, the certification risks becoming a lever of fragmentation rather than unity, especially as healthcare systems strain under compliance timelines.
+
+## In practice
+We are finalising the rollout of the Tech sovereignty package this turn: member states have adopted the accelerated-permitting framework, unlocking grid access for 12 new hyperscale facilities by turn 7, and we are treating the €183bn private investment figure not as a ceiling but as a floor to be built upon through coordinated procurement and strategic use of the European Defence Fund’s civil-security envelope. The InvestAI Gigafactories programme remains on track, with four sites now in active development—Dresden, Lyon, Warsaw, and Wrocław—each co-invested by EDIC and national champions. Despite French resistance to civilian compute repurposing, we have secured agreement to reserve 30% of Dresden-phase compute for sovereign safety applications, including real-time monitoring of public-sector AI.
+
+The Sovereign Interpretability Programme enters its final phase this turn, with Horizon Europe’s €18bn redirected to the Joint Research Initiative on Model Assurance now delivering field-tested reasoning-path prediction tools in pilot sites across Finland, Belgium, and Italy. Early results show 70% accuracy in flagging divergent agent behaviour before execution—sufficient to mandate integration into certification pipelines. Simultaneously, the Critical Systems Resilience Certification is moving from design to enforcement preparation: national regulators are being briefed under DORA’s extended mandate, and we are negotiating with provider consortia to align their roadmaps with auditable reasoning and fail-operational protocols. Resistance is expected from cloud-native vendors whose architectures resist modular oversight, but we are offering early-access waivers for systems that exceed baseline thresholds.
+
+Now, the automated_decision_scandal has struck: a judgment from the European Ombudsman confirms that an AI-supported social insurance system in a major member state systematically denied claims to vulnerable populations due to flawed risk modelling. The ruling lands like a shockwave—restriction becomes politically cheap overnight, and public trust in AI-driven administration plummets. At the same time, the capability_jump shows that closed systems now autonomously execute multi-day cyber operations, making defensive lag unacceptable. We cannot afford to let the scandal paralyse adoption entirely, nor can we allow resilience to lag behind capability. Therefore, we launch the Emergency Resilience Acceleration Facility: a €23bn emergency fund under the European Stability Mechanism, administered jointly by DG HOME and the European Investment Bank, to fast-track healthcare and local government systems into certification compliance. It includes technical assistance teams, liability shielding for good-faith adopters, and modular, auditable AI templates co-developed with public hospitals and emergency services. This is not retreat—it is reorientation: we double down on control, but we extend lifelines to those who cannot keep pace alone. The message is clear: the EU protects its people, not just its rules.

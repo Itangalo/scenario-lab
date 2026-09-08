@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The narrative states that \"three measures are now in flight, including a priority,\" but the Constitutional Constraints (Modelling choice #5) limit the EU to at most one new measure per turn. Introducing three measures in a single turn — especially without justification for how they were all initiated within Turn 1 — violates this hard cap on policy bandwidth. The Emergency Resilience Surge may be a valid response to an event, but launching two additional measures (InvestAI Gigafactories and Tech Sovereignty Package) alongside it exceeds the limit of one new measure per turn.\n- Modelling choice #5 violation: The portfolio charge lists three ongoing measures (InvestAI Gigafactories, Tech Sovereignty Package, Emergency Resilience Surge) each with a −3 cost, plus a priority penalty of −1, implying multiple active initiatives launched recently. Since this is Turn 1, and no prior measures existed, all three would have had to be introduced in this turn, which directly violates the rule: \"At most one new measure per turn, and at most one named priority.\" Even if only one is *new*, the presence of three distinct measures in flight from Turn 1 implies improper accumulation."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

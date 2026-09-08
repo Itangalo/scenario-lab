@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereign Access to Frontier Models −3, Mandatory Pre-Deployment Safety Certification −3, Accelerated Evaluation Capacity −3, priority −1 = −16  
+PROPOSAL BONUS: Accelerated Evaluation Capacity (cat 5, large) +3 — directly supports Mandatory Pre-Deployment Safety Certification, addressing emergent biosecurity concerns and openweight_frontier_release  
+LEGITIMACY LENDS: none (capital 19.0 < sentiment 33.0 → +2 would apply, but already included in final capital)  
+SOVEREIGNTY: 24 last turn, InvestAI Gigafactories in flight +1, Tech sovereignty package in flight +1, Accelerated Evaluation Capacity in flight +1, capability rose 1.5 (no decay) = 27 → but adjusted to 25.0 due to coordination delays and partial implementation  
+Emerging developments: `emergent_biosecurity_concerns` (2), `emergent_eu_public_cloud_push` (2)

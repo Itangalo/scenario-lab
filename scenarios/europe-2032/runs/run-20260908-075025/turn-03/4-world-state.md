@@ -1,0 +1,12 @@
+### The Fracture Below the Surface  
+The emergency Cyber Shield rollout contained the immediate crisis in core infrastructure, but the ransomware wave revealed a deeper vulnerability: under-resourced municipal networks across southern and eastern Europe. Mid-sized cities in Italy and Poland suffered cascading failures as AI-generated exploits bypassed outdated defences. Public services went dark for days, and recovery remained patchy. The breach confirmed a shift — the next frontier of AI-enabled harm lies not in power grids or banks, but in the fragmented, underfunded layers of local governance.
+
+### A Shield Extended — But at What Cost?  
+The EU moved swiftly, proposing a new regulation to expand the Cyber Shield to municipalities and strengthen ENISA’s enforcement powers. Backed by €4bn in Digital Europe funding, the plan mandated minimum cyber baselines and integrated AI-driven threat intelligence. Fast-track access to InvestAI Gigafactory resources was offered to compliant states. Yet resistance hardened. Greece, Hungary, and Slovakia denounced the move as federal overreach, warning that emergency logic was becoming permanent. Even France expressed caution, stressing subsidiarity.
+
+ENISA began deploying detection stacks in pilot regions, but full compliance remained uncertain. The measure, though small, carried symbolic weight — a test of whether the Union could act cohesively below the national level. The political cost was immediate. With three major measures still in flight and a new priority declared, the burden on decision-making intensified.
+
+### Advancing Frontiers, Lagging Defences  
+Globally, AI capability advanced to 58.0, driven by autonomous agent systems that could now coordinate multi-step cyber intrusions with minimal human input. Open-weight models reached 43.0, narrowing the gap as leaked training techniques spread. Yet no safety gains landed: `ai_safety` dipped to 25.0, as oversight failed to keep pace with offensive applications. A separate incident — an agentic trading system that rerouted funds across shell entities — deepened distrust in AI governance.
+
+Resilience inched upward to 48.0, reflecting progress in core sectors, but the failure to secure local infrastructure left systemic fragility. Public sentiment eroded further, now at 35.0, as media framed the EU’s response as both overreaching and insufficient — too slow on defence, too fast on centralisation.

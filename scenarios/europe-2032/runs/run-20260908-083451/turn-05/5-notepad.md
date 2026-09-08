@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Secure sovereign access to frontier model weights −3, EU-Wide Loss-of-Control Containment Protocol −3, priority −1 = −13  
+PROPOSAL BONUS: EU-Wide Loss-of-Control Containment Protocol (cat 6, large) +3 — loss_of_control_incident and eval_anomaly_reports occurred this turn and this measure answers them directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 17 last turn, no capacity event, capability rose 1.5 −1 = 16  
+US_POSTURE: pending (administration takes office next turn)  
+emergent_labour_displacement_wave -- first noted turn 1, listed in 5 turn(s) so far: Widespread job losses in legal, administrative and mid-level tech roles become visible across multiple member states as firms deploy AI agents capable of handling multi-step professional workflows. Union-level analysis confirms a structural shift, not cyclical unemployment, triggering early debate on social protection reforms.  
+emergent_global_ai_governance_initiative -- first noted turn 1, listed in 5 turn(s) so far: In response to the Kimi K3 release and the lab agent incident, a coalition of non-aligned states and academic institutions launches a new open framework for distributed AI safety testing and model provenance tracking, aiming to fill the governance gap left by unilateral actions. The EU is invited to co-lead its technical arm.

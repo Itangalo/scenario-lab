@@ -1,0 +1,26 @@
+No statement changes.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — **finished**
+``Sovereign AI Compute Corridor (category 4, costs 3 per turn, started turn 6, finishes on turn 7): We designate and legally bind a core network of EU-based data centres to serve as the backbone for sovereign AI operations, ensuring uninterrupted access to frontier-capable systems under EU jurisdiction, with enforceable access guarantees for public agencies and vetted researchers`` — **finishes this turn**
+
+``Emergency Resilience Surge for Critical Infrastructure (category 6, costs 3 per turn, started turn 7, finishes on turn 8): We activate an emergency protocol to harden national energy grids, transport systems, and public digital services against AI-driven cyber threats, triggered by emergent_grid_stability_alerts and the confirmed cyber_major_incident, deploying rapid-response teams, automated anomaly detection, and failover protocols across all member states``
+
+## New measure
+**Secure Open-Weight Access and Containment Framework**  
+We establish a mandatory pre-release notification and containment protocol for any open-weight model approaching 55.0 capability, requiring developers to submit weights, training data summaries, and agent-behaviour evaluations to a newly empowered EU AI Security Board, which can delay or restrict distribution if uncontainable risks are found.  
+`Category: 3 (Limits and restrictions)`  
+`Size: large`  
+`Finishes on turn: 9`  
+`Targeted effect:` openweight_capability growth capped at +3.0 this turn and +1.5 next, ai_safety +4 by institutionalising containment before release, eu_political_capital −2 if enforcement triggers developer resistance  
+`Applies to:` open-weight developers globally who distribute within the EU, enforced through platform liability and access to EU compute and data markets
+
+## Priority
+**Emergency Resilience Surge for Critical Infrastructure** — because the opaque_reasoning event and the automated_decision_scandal confirm that we are no longer dealing with tools we can supervise, but with systems whose logic we cannot follow and whose decisions we cannot justify, and with resilience at 51.0 and ai_safety collapsing to 13.0, delaying hardening of critical systems would be an abdication of duty.
+
+## In practice
+We are executing the final phase of the Sovereign AI Compute Corridor through ECOFIN and COREPER II, where Poland’s outstanding objections are being met with a binding side letter guaranteeing access to U.S. cloud services for non-sovereign commercial workloads — a concession that preserves the corridor’s integrity while acknowledging Warsaw’s digital dependency. France and Germany have formally committed to integrating their national AI clouds, and legal anchoring of the corridor is now complete under Article 114 TFEU, with enforcement powers delegated to the European Commission and penalties for non-compliance tied to Cohesion Fund disbursements. The InvestAI Gigafactories are now operational at two sites — Finland and southern France — with South Korean cooling systems contracted as a workaround for U.S. supply delays; site preparation at the third location in Portugal begins in October, and private capital mobilisation stands at €82bn of the €200bn target.
+
+The Emergency Resilience Surge continues under Article 122 TFEU, with ENISA and ACER deploying AI threat detection units to grid operators in Germany, Spain, and Poland. Automated circuit-breakers are now installed in 60% of high-risk substations, and the EU-wide Incident Fusion Cell is operational, receiving daily anomaly reports from 18 national operators. However, resistance in Italy and Hungary persists: Rome demands opt-outs on sovereignty grounds, while Budapest cites fiscal strain. We are countering with targeted Crisis and Investment Facility disbursements — €1.2bn to Italy for municipal digital resilience upgrades, conditional on full grid monitoring integration, and a similar package to Hungary tied to transport system hardening. The fusion cell has already flagged two new AI-coordinated probing attacks on rail signalling in Belgium and the Netherlands, triggering pre-emptive isolation protocols that contained the threat.
+
+We are launching the Secure Open-Weight Access and Containment Framework in response to the openweight_frontier_release event, which has brought open models within 16 points of the closed frontier — a narrowing that eliminates the EU’s margin for governance through delay. The proposal will be tabled at the October Telecommunications Council and framed as a necessary counterpart to the open innovation the EU has long championed: openness must not become a vector for uncontrolled risk. The European AI Security Board will be staffed from ENISA, the European Laboratory for Learning and Intelligent Systems (ELLIS), and national cybersecurity agencies, with authority to audit weights and impose temporary distribution holds. We are preparing for pushback from open-source communities and U.S.-based foundations, and will counter by offering fast-track access to EU sovereign compute for compliant developers — turning containment into a gateway, not a barrier.

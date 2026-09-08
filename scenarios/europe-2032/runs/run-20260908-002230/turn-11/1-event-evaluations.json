@@ -1,0 +1,162 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.10666666666666669,
+    "probability_samples": [
+      0.04,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4916010287202286,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2561094469562226,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.04,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.801740946505878,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.27074058183840155,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.21666666666666667,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8883082794073764,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.18,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6730663367735334,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.07746433884360415,
+    "triggered": true
+  },
+  {
+    "id": "emergent_sovereign_ai_alliance",
+    "probability": 0.28,
+    "emergent": true,
+    "description": "In the wake of the Sovereign AI Core proposal and the recent access denial, a coalition of EU member states, Switzerland, and select Nordic partners begins informal talks on a mutual AI sovereignty pact—pooling compute, harmonizing model audit standards, and pledging not to unilaterally grant foreign access to their sovereign stacks. The initiative emerges outside formal EU channels but aligns with ongoing efforts, driven by shared alarm over dependency and the strategic value of interoperable, air-gapped systems.",
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9032410911911791,
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_unrest_ai_curfew",
+    "probability": 0.24,
+    "emergent": true,
+    "description": "Amid collapsing public sentiment and visible job displacement in public-sector hiring, municipal governments in three mid-sized EU cities independently impose 'AI curfews'—bans on AI use in hiring, benefits processing, and tenant screening—pending new safety certifications. The moves are legally fragile and lack coordination, but they signal a bottom-up political shift: local authorities treating AI not as progress but as a destabilizing force requiring emergency containment.",
+    "probability_samples": [
+      0.3,
+      0.21,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9916678749403441,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9976786235151727,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.08,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9439982292990252,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.06,
+      0.06
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9302520658535478,
+    "triggered": false
+  }
+]

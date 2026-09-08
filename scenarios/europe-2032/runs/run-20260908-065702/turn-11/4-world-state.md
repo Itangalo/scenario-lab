@@ -1,0 +1,21 @@
+### The Storm Breaks
+
+A wave of AI-powered ransomware cripples hospital networks and regional transport systems across three member states. The attack, rapidly attributed to a foreign cyber unit using model-generated exploits, overwhelms legacy defences. Response is fragmented, with some regions restoring service within days, others taking weeks. The **cyber_major_incident** exposes deep fragility, even as the EU’s **Hardened Cyber Shield** officially completes deployment—too late to prevent the breach.
+
+Simultaneously, a breakthrough in verification allows automatic validation of structural engineering designs, accelerating AI adoption in construction and infrastructure planning. This **verification_widens** effect signals that frontier capability is no longer confined to software and logic, eroding arguments for containment.
+
+An open-weight model is released shortly after the frontier update, demonstrating strong performance in reasoning and design tasks. While impressive, it does not match the full scope of the closed frontier’s capabilities—particularly in real-time control and multi-modal integration. Downloaded tens of thousands of times, it spreads advanced functionality into unregulated environments. However, training infrastructure remains fragmented, and the ecosystem lacks the coordinated scaling seen in closed models. The jump in capability is meaningful but bounded. Given the frontier’s modest growth this turn, openweight capability rises moderately, narrowing the gap only slightly—from 55.0 to 55.5—consistent with incremental progress rather than parity.
+
+### Sovereignty Under Pressure
+
+The EU proposes a new resilience measure—**Harden and Expand Emergency Override Protocols**—a small, targeted upgrade to the sovereign runtime node architecture. Automated kill-switches and anomaly-detection agents, trained using the prior interpretability breakthrough, are now in development. Full deployment will take at least one full turn due to integration complexity and member-state coordination delays. No implementation occurs this turn.
+
+Progress on major initiatives continues, but full completion is staggered. The **Sovereign Compute Reserves** come fully online this turn, delivering a foundational boost to resilient infrastructure. The **InvestAI Gigafactories**, however, reach only partial operational status—construction timelines in three member states slipped due to permitting and energy grid constraints. Their full effects will materialize over the next two turns. Five other measures near completion, but only one high-cost initiative finishes this turn. Ongoing costs are reduced, and with all prior measures now complete, the portfolio charge is cleared.
+
+Despite U.S. warnings, the runtime node project advances under emergency powers. Poland delays final commitments, citing unmet energy assurances. Bavarian protests slow construction. The **emergent_regional_evaluation_network** continues to deepen coordination among national audit units, sharing runtime monitoring tools and red-team findings. As recorded in the notepad, the network is now formalized and operates as a parallel audit authority, challenging central oversight while maintaining technical continuity. Similarly, the **emergent_middle_power_compute_pact** strengthens informal coordination among mid-sized EU states, Japan, South Korea, and Taiwan on secure compute access—leveraging semiconductor influence outside EU governance channels.
+
+Public sentiment remains low. No visible benefits offset fears of disruption and dependency.
+
+### Political Rebound
+
+With one major initiative completed (**Sovereign Compute Reserves**) and a new small measure proposed (**Harden and Expand Emergency Override Protocols**), the EU gains +3 from delivery (down from +5 due to staggered finishes). The new measure costs −2, and the priority costs −1. The **proposal bonus** of +3 applies—this measure directly answers the recent cyber incident and systemic control risks, but as a small category 2 initiative, it does not qualify for the full +5 bonus reserved for high-impact, category 4 proposals. No legitimacy lending occurs, as sentiment still exceeds capital. Net political capital increases by +3, reaching 14.0. There is no rounding or momentum-based adjustment—this is the final calculated value.

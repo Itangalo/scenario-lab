@@ -1,0 +1,274 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.3333333333333333,
+    "probability_samples": [
+      0.28,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9936227763198598,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2884145398906962,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9187190592600756,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.28151562199909363,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2859568247501395,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.12666666666666668,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9989979091566115,
+    "triggered": false
+  },
+  {
+    "description": "A major AI-supported public administration system in a northern European member state is found to have systematically denied benefits to eligible citizens due to a flawed training dataset. The scandal spreads across jurisdictions using similar models, triggering parliamentary inquiries and freezing further adoption plans. Trust in AI-mediated governance erodes further, feeding public resentment.",
+    "emergent": true,
+    "id": "emergent_automated_governance_failure",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6515818404231696,
+    "triggered": false
+  },
+  {
+    "description": "Amid stalled transatlantic talks and repeated access denials, a coalition of EU, Japanese, South Korean, and Canadian mid-tier semiconductor producers forms a coordination forum to jointly manage export licensing and negotiate compute access terms with the U.S. and China. The move signals a shift toward collective leverage by non-superpowers over critical AI supply chains.",
+    "emergent": true,
+    "id": "emergent_middle_power_technology_pact",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9838687817122759,
+    "triggered": false
+  },
+  {
+    "description": "A major European university announces a breakthrough in post-quantum cryptography, developed in collaboration with a national lab and using AI-driven search over novel algebraic structures. The algorithm withstands known attacks and is released under permissive open terms, prompting immediate interest from ENISA and NATO for integration into critical systems. Its emergence shifts the cyber defence conversation toward proactive hardening.",
+    "emergent": true,
+    "id": "emergent_post_quantum_breakthrough",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Following the Munich alert and repeated failures in foreign AI reliability, a coalition of EU member states with significant public AI deployments begins informal talks on a 'Sovereign Inference Pact' — a mutual assurance mechanism to share runtime monitoring data and model audits across trusted nodes. The initiative is fragile, underfunded, and excludes key players initially, but marks the first coordinated move toward collective AI safety among peers.",
+    "emergent": true,
+    "id": "emergent_sovereign_inference_pact",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.03,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.09
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9437307595109933,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.16
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.3287801845423811,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.016666666666666666,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.05
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6761022584553983,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.026356207574957713,
+    "triggered": true
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.04666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.14
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.1379469761879627,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.03666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.11
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.24040709412542471,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.12
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.3137811184212199,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.15642740853095483,
+    "triggered": false
+  },
+  {
+    "id": "emergent_sovereign_interpretability_breakthrough",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "A breakthrough in reverse-engineering the flawed French welfare algorithm yields the first real-time interpretability window into a live foreign model, achieved by a joint team in Strasbourg using open-weight proxies and hardware-side channel analysis. The method is fragile and EU-specific, but it proves that black-box models can be partially legibilised without vendor cooperation, shifting the leverage in future audit demands.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_south_ai_partnership",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "A coalition of Global South nations, frustrated by exclusion from both US and EU AI governance frameworks, launches a mutual access pact for open-weight models and shared evaluation infrastructure, with Brasília and Nairobi as co-leads. The EU is invited as a technical partner rather than a gatekeeper, offering a new diplomatic vector for influence independent of American posture.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

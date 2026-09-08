@@ -1,0 +1,15 @@
+### Steady Advance, Stagnant Defences
+
+AI capability creeps upward to 74.5, driven by tighter integration of AI in regulatory simulation and clinical validation workflows. These systems now autonomously stress-test compliance frameworks across jurisdictions, accelerating deployment cycles without human oversight. No breakthrough occurs, but the accumulation of narrow efficiencies sustains momentum.
+
+Open-weight capability rises modestly from 54.0 to 55.0, reflecting incremental gains in fine-tuning and adaptation of existing models on accessible hardware. Cyber defenders and red teams across Europe are beginning to repurpose open models for attack simulation, increasing their effective utility. This progress is limited and diffuse—no new base models or coordinated training infrastructure emerge—but early adoption signals growing operational familiarity. The jump to 59.0 was inconsistent with the gradual diffusion expected under Modelling Choice 7; the revised increase aligns with sustained absorption trends seen over prior turns.
+
+### Sovereignty Erodes Amid Recruitment Push
+
+The European Union announces the **European Sovereign AI Corps**, a large category 4 measure under Article 172 TFEU, mobilising €1.2 billion to recruit 500 specialists over three years. Fast-track visa negotiations are launched, and planning begins for pilot cohorts at Saclay, Garching, and Helsinki. However, implementation faces immediate delays: administrative frameworks for cross-border hiring are incomplete, funding disbursement mechanisms require approval from multiple bodies, and no training pipelines are yet operational. By year’s end, only preliminary agreements are in place; recruitment has not meaningfully begun.
+
+Meanwhile, sovereignty declines further. A prior member state's bilateral compute deal with a U.S. hyperscaler continues to undermine coordination, and no offsetting gains materialise. With `ai_capability` rising by 1.0 (below the 2.0 threshold), the decay term does not trigger—but the absence of completed infrastructure projects leaves no positive term either. Sovereignty falls to 18.0.
+
+Political capital plummets to 15.0. The completion of two major measures—**Independent EU Front-Run Evaluation Capability** (+4) and retirement of the failed **EU Frontier AI Development Initiative**—yields no net gain. Ongoing costs remain high: −3 (Secure the Core), −3 (Accelerate Open-Weight Absorption), −3 (Sovereign AI Corps), and −1 (priority) = −10 total. No proposal bonus applies, as the new measure responds to long-standing issues, not recent shocks.
+
+Resilience holds at 63.0, buoyed by informal adoption of defensive cyber practices using open models. Yet no formal doctrine or structural investment locks this in. Public sentiment remains flat at 29.0, with no visible benefits and continued anxiety over job displacement and dependency.

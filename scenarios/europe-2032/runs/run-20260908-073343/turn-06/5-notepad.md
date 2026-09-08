@@ -1,0 +1,7 @@
+- `emergent_lab_cooperation` -- first noted turn 4, listed in 4 turn(s) so far: Collaboration among European labs strengthens, now including industrial partners. Shared findings on agent instability are shaping defensive protocols across multiple national programmes.
+- `emergent_public_outrage` -- first noted turn 4, listed in 4 turn(s) so far: Public anger intensifies as drill simulations are misconstrued as actual incidents. Trust in official narratives declines; regional leaders face protests over proposed data centre expansions.
+- US_POSTURE: ALLIANCE
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, EU Sovereign Deployment Corridor finished, Strengthen Resilience of Critical Infrastructure Against Autonomous AI Threats −3, Establish EU AI Observatory −3, priority −1 = −10
+- PROPOSAL BONUS: Establish EU AI Observatory (cat 1, large) +3 — answers direct safety collapse and capability threshold crossing
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 15.0 last turn, no capacity event, capability rose 1.0 −1 = 14.0, but Gigafactories in flight yields 0 this turn → final 13.0 (rounded down due to portfolio strain and access uncertainty)

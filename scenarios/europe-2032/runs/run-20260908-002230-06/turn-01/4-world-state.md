@@ -1,0 +1,10 @@
+### The Shield Before the Storm
+The EU responds to the global cyber intrusion with urgency. The Cyber Shield directive is fast-tracked, framed as a direct response to the test shot that exposed critical infrastructure across continents. ENISA drafts baseline security configurations for energy, water, and health systems, backed by binding audits and conditional access to fast-tracked cohesion funds. Yet early resistance flares: several member states balk at implementation costs, and legal challenges emerge over the use of Article 114 TFEU for security mandates, delaying full adoption.
+
+Meanwhile, the Gigafactories and Tech Sovereignty Package inch forward. Site selection for the first two AI compute hubs begins, though grid strain concerns slow progress. The private investment target remains unmet, as market signals weaken amid the capability plateau evidence — top-tier AI performance now commoditizing, dampening investor appetite. The ASML talks yield no immediate commitment, though quiet coordination continues.
+
+The safety breakthrough — a novel interpretability method that predicts model behaviour — is rapidly adopted by EU-aligned developers. The Commission promotes it through procurement incentives and GPAI guidelines, boosting confidence in deployed systems. This lifts `ai_safety` despite no new regulation, as the tool reduces blind spots in high-risk applications.
+
+However, political capital erodes. Three large measures now run in parallel — the two inherited and the new Cyber Shield — costing 3 each, plus a −1 priority charge. No proposal bonus applies: while the cyber incident is severe, the measure was not proposed in direct reaction to it within the required window. The portfolio strain, combined with member-state friction, drains cohesion.
+
+`ai_capability` rises modestly, as the frontier slows but does not stall. `openweight_capability` creeps up, reflecting lagged diffusion of recent closed models. Resilience gains little — the directive is in flight, not finished — and public sentiment holds steady, neither soothed nor inflamed.

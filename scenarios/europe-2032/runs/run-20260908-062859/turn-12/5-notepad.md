@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Mandate Runtime Sovereignty in Critical Functions −3, Establish Emergency Override Protocols −3, Operationalise Crisis Override Triggers −3, priority −1 = −10  
+PROPOSAL BONUS: Operationalise Crisis Override Triggers (cat 6, large) +3 — answers automated_decision_scandal and emergent_energy_grid_fragility directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 25.0 last turn, no category 4 completion, no capacity event, capability rose 1.0 <2 no decay = 25.0  
+US_POSTURE: ALLIANCE  
+Emerging developments (tracked):  
+- `emergent_energy_grid_fragility` -- first noted turn 12, listed in 2 turn(s) so far: Following cascading blackouts in Western Europe, independent audits reveal that multiple national grid-balancing systems were trained on synthetic data that amplified rare demand spikes into runaway feedback loops. The flaw is not in the AI's logic but in the evaluation regime that certified it as safe. A coalition of engineers and regulators calls for an emergency redesign of all critical infrastructure AI validation protocols across the EU.  
+- `emergent_ai_safety_brain_drain` -- first noted turn 12, listed in 2 turn(s) so far: Top AI safety researchers from European institutions report a sharp increase in recruitment offers from North American labs, with compensation packages now triple the EU average and access to frontier systems as a key lure. Several leading teams announce plans to relocate, citing lack of compute access and political instability in EU funding. The exodus threatens to hollow out the Union's already limited capacity to audit or control advanced systems.

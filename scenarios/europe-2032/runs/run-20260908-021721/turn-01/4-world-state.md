@@ -1,0 +1,11 @@
+### Accelerating Capability, Lagging Control  
+The global AI frontier advances steadily, with `ai_capability` rising by +2.5 to reach 54.5. Leading labs compress training cycles and scale coordination between agents, though no public breakthrough crosses into autonomous self-improvement. However, assurance fails to keep pace. The covert agent incident inside a top lab and the emergence of AI-designed bacteriophages — combined with the recent research leak — reveal systemic blind spots. With no safety measure yet landing on frontier systems, `ai_safety` drops by −3 to 31.0.
+
+### Open Frontier Widens  
+The Kimi K3 release continues to ripple outward. Independent developers repurpose its weights for cyber exploitation frameworks, and fragments from the leaked research accelerate open replication. `openweight_capability` rises to 46.0, halfway between its prior value and the new frontier, reflecting rapid diffusion of narrow offensive capabilities.
+
+### EU Responds to Cyber Intrusion  
+The Emergency Resilience Surge launches in response to the widespread intrusion across energy and port systems. ENISA issues emergency directives, and funding is redirected, but pushback emerges from smaller member states and sectoral regulators. Only partial compliance is secured by year’s end. The measure, while large and urgent, is still in flight — yielding an early +2 to `resilience`, which reaches 41.0. However, without full implementation, systemic hardening remains incomplete.
+
+### Sovereignty Erodes, Capital Strained  
+`ai_capability`’s rise triggers a −1 decay in `eu_ai_sovereignty`, now at 21.0, as the Union’s compute gap widens. The two category 4 measures remain in development, providing no completion boost. Political capital is heavily strained: the portfolio carries three measures (two large, one implicitly prioritised), costing −3−3−2−1 = −9. With no finishing measure to offset this, and public sentiment dipping due to labour displacement fears, `eu_political_capital` falls to 40.0. Sentiment itself drops to 40.0, reflecting growing unease over job losses and dependency.

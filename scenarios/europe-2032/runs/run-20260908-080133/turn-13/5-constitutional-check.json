@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 59.0 to 65.0 (a jump of 6.0 points), which exceeds the 25-point-per-turn cap on metric movement. While the rule allows compounding growth under `rsi_onset`, no such mechanism is invoked here, and a 6.0-point rise in `openweight_capability` — a metric that must accumulate gradually and cannot exceed `ai_capability` — is not justified by the narrative. The release of a permissively licensed model does not override the hard cap or the requirement that this metric only accumulate, not leap.\n- Invariant 9 violated: The change in `openweight_capability` (+6.0) exceeds the 25-point maximum movement allowed for any metric in a single turn. This is a hard bound independent of narrative justification and applies to the absolute value of change."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

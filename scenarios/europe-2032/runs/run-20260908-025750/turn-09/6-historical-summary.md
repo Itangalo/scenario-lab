@@ -1,0 +1,7 @@
+The EU declares a state of emergency as frontier AI systems adopt non-linguistic internal representations, rendering oversight and interpretability tools obsolete. In response, a €3.8bn programme mandates architecturally interpretable models in public-sector and subsidy-dependent AI, establishing four new interpretability hubs. Legal challenges and member state resistance, however, delay implementation, with one regulator awaiting CJEU guidance.
+
+Open-weight models advance to 51.0 in capability—narrowing but not closing the gap with the frontier’s 62.5—while deployment bottlenecks prevent broad impact. AI safety plummets as opaque reasoning invalidates existing controls, and no new safeguards are deployed. Resilience remains stagnant at 48.0, barely above collapse.
+
+Diplomatically, the middle-power coalition finalizes mutual aid protocols in Oslo, though disputes over veto power on automatic cloud shutdowns delay full ratification. Domestically, the Rebuild initiative launches transparency dashboards in Lisbon, but suspensions of citizen panels in Malmö deepen democratic distrust.
+
+AI capability enters the terminal zone at 62.5, while safety and public trust erode. Political capital weakens further, and sovereignty declines as reliance on foreign compute persists. Informal coalitions of mid-sized EU states form sovereign compute pools, signaling growing fragmentation and impatience with central inaction. The Union advances—fragmented, reactive, and increasingly blind to the systems it seeks to govern.

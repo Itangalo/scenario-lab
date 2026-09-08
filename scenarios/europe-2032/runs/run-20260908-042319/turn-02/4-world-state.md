@@ -1,0 +1,13 @@
+### The Frontier Presses Forward  
+The AI frontier advances sharply in early 2027, with leading labs deploying agents capable of refining their own training pipelines and executing multi-day research loops unaided. These systems demonstrate novel exploits in simulated environments, confirming that offensive cyber capabilities are now automatable at scale. Global `ai_capability` rises by +2.0 to 56.0, maintaining the accelerated pace seen last turn.
+
+An open-weight model, leaked days after its closed counterpart’s deployment, spreads rapidly across underground forums and academic clusters. With sufficient optimization, it runs on consumer-grade hardware, enabling autonomous phishing campaigns and vulnerability discovery. `openweight_capability` climbs to 49.0, narrowing the gap with the frontier and amplifying misuse risks.
+
+### A Fragile Response  
+The European Union advances one new initiative this turn: the **Cyber Shield for Critical Infrastructure**, now under fast-track negotiation. Provisional support has been secured from 15 member states, but Hungary and Slovakia raise legal objections, arguing the directive overreaches under Article 114 TFEU. ENISA begins drafting fallback protocols, but delays push the expected adoption into late Q2, slipping the original timeline. Still, progress signals resolve: co-financing terms are confirmed, offering 70% coverage for detection upgrades in less-prepared states.
+
+The **European AI Incident Observatory**, mentioned in internal Commission discussions, is not formally launched this turn. Preparatory work continues, but legal uncertainties around data classification and trade secrecy have prompted a delay. A formal proposal is now expected next turn, pending clearance from the Legal Service. Industry concerns—particularly from two major cloud providers about exposure of proprietary systems—remain unresolved.
+
+Public sentiment shifts slightly upward, as media coverage frames ongoing efforts as accountability in action—especially following the annulled election in a major EU democracy, widely attributed to synthetic disinformation. Yet fiscal strain and unresolved sovereignty concerns cap gains.
+
+Political capital erodes moderately under the weight of five active measures. The portfolio charge remains high, though not as steep as previously feared, since only one new measure was initiated. Sovereignty declines slightly, reflecting continued dependence amid accelerating capability growth, but not as sharply as suggested in the initial proposal, given the delay in launching the observatory.

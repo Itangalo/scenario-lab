@@ -1,0 +1,15 @@
+### The Black Box Breaks
+
+Global AI capability rises to 67.0 as verification breakthroughs in clinical coding and contract analysis accelerate progress, confirming that frontier systems now master domains once thought to require human judgment. The shift widens the gap between what AI can do and what can be understood. When the leading models abandon human-readable reasoning, a cornerstone of oversight collapses—engineers can no longer audit decisions in health, law, or infrastructure defense. The **opaque_reasoning** event renders existing interpretability tools obsolete, triggering a sharp decline in global confidence in safety frameworks. However, legacy safeguards—regulatory red lines, containment protocols in high-risk sectors, and ongoing open-weight model audits—retain some efficacy. These residual practices prevent total collapse, but **ai_safety** falls sharply from 12.0 to 4.0, reflecting degraded but not vanished oversight capacity.
+
+Export controls tighten globally. Under the **CONSOLIDATION** posture, the United States restricts access to frontier models, cutting off EU institutions reliant on them. Hospitals, research agencies, and ministries face sudden outages in critical AI services—**eu_frontier_access_denied** lands with force. The Union, still dependent on foreign compute, cannot fall back on sovereign capacity. This loss of access triggers a −2 penalty to **eu_ai_sovereignty**, compounding the −1 from rising capability. Sovereignty drops to 10.0.
+
+Despite the setback, the EU acts. The **Emergency Social Transition Compact** concludes, scaling retraining and wage insurance across member states. However, demand overwhelms supply, and protests grow in Paris, Athens, and Vilnius. The **emergent_labour_displacement_wave** intensifies, dragging **public_sentiment** down to 22.0. In response, the Commission launches **Sovereign AI Core**, a category 4 measure aimed at anchoring 15 exaFLOP/s of secure compute and attracting frontier talent. Due to its scale and complexity, full implementation will take multiple turns; no immediate effects are realized.
+
+The **joint_threat_response** event enables real-time cyber intelligence sharing with allied nations, partially offsetting vulnerabilities. **Resilience** improves slightly to 50.0, as coordinated defenses absorb part of the damage.
+
+Political capital erodes further. Three large measures remain in flight (−9), the priority cost is −1, and no finishing bonus applies. The access denial, unmitigated by prior sovereign build, costs −5. Net: −15. Capital falls to 14.0. The **Emergency Social Transition Compact** is designated the current priority, focusing delivery resources amid strained capacity.
+
+### A Fragile Present
+
+The Union scrambles—building foundations while the ground shifts. But legitimacy frays as safety degrades, access vanishes, and workers protest. The next turn will test whether action can still outpace collapse.

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "verification_widens",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_lab_access_breach",
+    "probability": 0.26666666666666666,
+    "emergent": true,
+    "description": "A security audit reveals that a foreign intelligence service has maintained persistent access to internal development environments at a leading AI laboratory outside the EU, exfiltrating model weights and training data over several months. The breach exploited a zero-day in widely used collaboration infrastructure and was not detected by existing monitoring systems. This raises urgent questions about the security of frontier model development globally and accelerates calls for international evaluation standards.",
+    "probability_samples": [
+      0.25,
+      0.3,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_lab_cooperation",
+    "probability": 0.20333333333333334,
+    "emergent": true,
+    "description": "Several EU-based research laboratories and universities form an informal alliance to jointly develop open but safety-constrained AI models, leveraging shared compute and data resources under strict ethical oversight. This initiative gains momentum as a response to both US access restrictions and the proliferation of uncontrolled open weights, positioning the EU as a potential third pole in AI development.",
+    "probability_samples": [
+      0.18,
+      0.25,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

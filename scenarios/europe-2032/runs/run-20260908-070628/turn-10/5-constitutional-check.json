@@ -1,0 +1,15 @@
+{
+  "status": "approved",
+  "iterations": 3,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Economic Constraint violated: The narrative states that the \"Accelerated Evaluation Capacity\" measure is \"finished\" and fully delivered, yet it continues to contribute a portfolio charge of −3 in the notepad. Once a measure is completed, it should no longer carry an ongoing cost unless explicitly designed as a recurring expenditure. Rule 5 (Modelling choices) limits at most one new measure per turn and governs measure lifecycle; completed measures must exit the portfolio charge unless justified as permanent operational costs—but no such justification is provided here, and the narrative confirms it \"fails to activate.\" A finished measure cannot simultaneously be inactive *and* still charged against capital.\n- Organizational Constraint violated: The narrative claims ENISA conducted a \"live-fire drill\" revealing dangerous gaps, but no follow-up or systemic fix occurs despite the identified failure. However, this implies ENISA has both the capability and authority to run advanced evaluations—yet the measure itself (\"Accelerated Evaluation Capacity\") is described as legally blocked. This contradicts the minimum lead time and implementation realism required under Modelling Choice #6: No measure is implemented instantly. If legal access was blocked, ENISA should not have been able to conduct such a drill under the authority of that measure without partial activation, which would require graduated effect—not full exercise followed by political nullification without consequence on metric movement."
+    },
+    {
+      "iteration": 2,
+      "violations": "- Invariant 2 violated: `eu_ai_sovereignty` is reported as 32.0 in the proposed new metrics, but the notepad's authoritative calculation states it should be 31.0 (32.0 last turn, net −1 from fragmentation). The narrative and output must reflect the correct value; overriding the notepad's running total contradicts the constitutional requirement that metric changes follow defined rules and recorded state.\n- Modelling choice 5 violated: The narrative describes the completion of \"Sovereign Public Cloud Acceleration\" and implies a new measure is finishing, but no prior turn established this as a proposed or active measure. At most one new measure may be introduced per turn, and its introduction and progression must be tracked. Introducing its completion without prior establishment violates the constraint on measure scope and sequencing.\n- Narrative violates Modelling choice 8: The line \"The frontier shifts quietly beneath the noise of collapse\" telegraphs an implicit forecast of ongoing capability growth, suggesting an open event gate or trend not yet realized. The narrative must not imply directional inevitability or unseen momentum; tension and ambiguity are allowed, but not statements that project unannounced future events."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "approved",
+  "iterations": 3,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The narrative introduces two new measures in one turn — \"Sovereign Semiconductor Assurance Programme\" and \"Regional Oversight Integration Initiative\" — violating Constitutional Constraint 5, which limits the EU to at most one new measure per turn.\n- Economic Constraint violated: The Sovereign Semiconductor Assurance Programme includes an €18bn commitment and a €1.2bn incentive package for regional integration, but no funding source is identified. These are high-cost expenditures that lack justification within available revenue or borrowing mechanisms, violating budget consistency.\n- Regulatory Constraint violated: The Sovereign Semiconductor Assurance Programme is described as \"formally adopted\" and entering implementation with binding procurement, yet no prior turn established preparatory steps, consultation, or legislative process, violating Constraint 6 that no measure is implemented instantly (minimum one full turn for low-cost, two for high-cost measures).\n- Physical Constraint violated: The programme assumes immediate binding procurement and knowledge transfer from ASML, but semiconductor equipment development and deployment are subject to global supply constraints and U.S. export controls (as acknowledged in the narrative). The assumption of immediate progress ignores physical and geopolitical bottlenecks in tool delivery and technology access, especially under US_POSTURE: RETRENCHMENT."
+    },
+    {
+      "iteration": 2,
+      "violations": "- Invariant 2 violated: `eu_ai_sovereignty` decreased from 12.0 to 11.0, but the notepad calculates it as 10.0. The narrative states sovereignty \"decreased slightly to 11.0\", while the notepad computes: 12.0 − 2 (from `export_control_escalation`) = 10.0, since capability increased by only 0.5 (insufficient for the −1 decay override). This creates a direct contradiction between the stated value (11.0) and the constitutionally required calculation (10.0). The metric must follow the notepad's logic; narrative cannot override it.\n- Invariant 7 violated: The narrative attributes a −3 portfolio charge to the new high-cost measure and −1 for the ongoing priority, but the notepad lists a total portfolio charge of −6 (Sovereign Semiconductor Assurance Programme −3, Regional Oversight Integration Initiative −2, priority −1). The narrative omits the −2 charge from the ongoing Regional Oversight Integration Initiative, leading to an incorrect explanation of the political capital drop. This misrepresents the constitutional accounting and falsely attributes the full burden to the new measure and priority alone."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

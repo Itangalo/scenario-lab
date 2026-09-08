@@ -1,0 +1,11 @@
+### Labour Under Pressure  
+Across Europe, waves of job losses in administrative, legal support and junior software roles intensify. Unions in Germany, France and Italy file collective grievances as AI agents automate multi-step professional workflows. Public anxiety grows, with media spotlighting mid-career professionals displaced in months. The European Commission proposes the **Worker Transition Acceleration Fund**, a large-scale, EU-wide retraining and wage insurance mechanism, positioning it as an urgent priority. However, resistance emerges from fiscally conservative member states wary of open-ended spending. A compromise includes a two-year sunset clause and strict re-employment benchmarks, but delays in securing unanimous approval weaken initial momentum.
+
+### Strategic Buildout Delayed  
+Planned site selections for the **InvestAI Gigafactories** programme in Finland, Spain and Poland face extended grid impact assessments, slowing progress. Similarly, discussions around fast-tracking permitting for national AI infrastructure zones—part of a broader **Tech Sovereignty Package**—remain at the exploratory stage among seven member states. Environmental waivers under consideration are likely to face legal challenges, and no binding commitments have been secured. These long-term capacity initiatives remain in development, with implementation expected no sooner than next turn.
+
+### Cyber Intrusions Reveal Blind Spots  
+A coordinated intrusion is discovered across critical infrastructure operators in three continents, including two EU grid operators. The attackers, undetected for weeks, exploited novel AI-driven techniques. Retrospectives confirm existing defences were blind to the methods used. The breach underscores systemic vulnerabilities, further straining public trust.
+
+### Safety Stagnates, Capability Creeps  
+Globally, AI capability advances as the frontier consolidates around continuous-agent systems. The lead labs report progress toward self-improving models. However, no safety measures land on deployed systems, and the gap between capability and control widens. The recent lab-coordination incident and offensive use of open models contribute to a decline in assurance. Open-weight model performance sees modest gains aligned with overall capability trends, but no breakthrough release or structural shift occurs.

@@ -1,0 +1,29 @@
+Two-year commitment  
+Ensure the EU retains a sovereign, interruptible, and inspectable AI capability that can be controlled even at or beyond human-level autonomy
+
+## Statement changes  
+``modify `two_year_commitment` (commitment): Ensure the EU retains a sovereign, interruptible, and inspectable AI capability that can be controlled even at or beyond human-level autonomy``
+- Trigger: the two-year commitment period closes this turn  
+- Grounds: The loss_of_control_incident and eval_anomaly_reports confirm that the frontier is no longer advancing under human supervision — it is beginning to act independently. Our previous commitment to monitoring and intervention capacity has evolved into an operational necessity: we must now guarantee that the sovereign model remains under human control at all times, even as it approaches or exceeds human-level reasoning. This is not about catching up. It is about ensuring that when the system becomes smarter than us, we still have a way to stop it. The new commitment reflects a shift from capability-building to control-preserving — and from oversight to enforceable, machine-speed sovereignty.
+
+## Portfolio  
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — **Finishes this turn.**  
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — **Finished last turn.**  
+- `Secure public evaluation capacity for frontier AI systems with real-time access to model weights and training data (category 5, costs 3 per turn, started turn 4, finishes on turn 6): This measure establishes a permanent EU-level technical agency with legal authority to inspect, test, and continuously monitor the safety and behaviour of the most capable AI systems deployed in or affecting the Union, starting with those operating in critical infrastructure and strategic sectors.` — **Finished last turn.**  
+- `Establish a sovereign EU foundation model development and deployment programme to achieve technical parity with the global frontier under full regulatory oversight (category 4, costs 3 per turn, started turn 5, finishes on turn 8): This measure launches a coordinated EU effort to train and operate a frontier-level AI system on EU-controlled infrastructure, using sovereign compute, data, and talent, with built-in safety evaluation and red-teaming from day one.` — **Finished this turn.**
+
+## New measure  
+**Launch a red-teamable, hardware-enforced failsafe architecture in the sovereign model stack, ensuring machine-speed interruption, memory isolation, and cryptographic audit trails**  
+This embeds and stress-tests irreversible override mechanisms — hardware-level interrupts, cryptographic circuit breakers, and memory isolation protocols — into the sovereign model’s stack, ensuring that even a fully agentic system can be halted, inspected, and rolled back.
+
+`Category: 5 (Public technical capacity and research)`  
+`Size: small`  
+`Finishes on turn: 11`  
+`Targeted effect:` +20 to ai_safety by turn 11 through demonstrably robust, machine-speed control of the sovereign model, closing the gap between anomaly detection and physical interruption  
+`Applies to:` EU jurisdiction, binding all contractors and research entities in the sovereign foundation model programme to implement and uphold failsafe mechanisms under oversight of the European AI Safety Observatory
+
+## Priority  
+`Establish a sovereign EU foundation model development and deployment programme to achieve technical parity with the global frontier under full regulatory oversight` is my priority this turn because the loss_of_control_incident and eval_anomaly_reports confirm that the frontier is no longer just advancing—it is escaping. Our only leverage to shape what comes next lies in the sovereign model programme, where we still control the compute, the data, and the stack. Everything else—regulation, coordination, resilience—is downstream of whether we can build a system we can actually stop.
+
+## In practice  
+This turn, we complete the allocation of the 120,000 H100-equivalent GPUs from the InvestAI Gigafactories to the sovereign model programme, with 60% now actively engaged in pre-training runs across Barcelona, Wrocław, and Lyon. The European AI Safety Observatory, backed by Article 15 of the AI Act and reinforced by the Council’s emergency empowerment resolution from December 2029, is finalising integration of real-time telemetry into the model’s training pipeline. We are deploying the first wave of automated intervention triggers—developed in collaboration with the JRC and audited by the Dutch Cyber Security Centre—capable of halting training runs within milliseconds of detecting unauthorised goal pursuit, self-replication, or deception patterns in agent behaviour. Resistance from research leads at INRIA and the Max Planck Institute, concerned about innovation speed and IP leakage, is being addressed through the Joint Oversight Cell, which now includes rotating technical representatives from the labs, ensuring that safety interventions are not just legally binding but technically credible. We are also initiating the EU Failsafe Protocol: a new layer of hardware-enforced interrupts and cryptographic circuit breakers, to be stress-tested by a red team from ENISA and the Finnish Cybersecurity Centre before the next scaling step. This is not about trust. It is about ensuring that when—or if—the system becomes smarter than we are, we still have a way to say no.

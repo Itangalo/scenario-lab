@@ -1,0 +1,17 @@
+### The Frontier in Every Laptop
+
+Global AI capability advances to 73.0, driven by rapid iteration and distributed experimentation. Open-weight models rise to 63.0, reflecting incremental progress in replication and optimization using existing public artifacts. This growth is consistent with ongoing open efforts, though still lagging behind the closed frontier. The increase follows reports of a frontier model snapshot circulating in underground developer channels, originating from an unsecured research API. While the leak has not yet produced a functional open equivalent of the frontier, it has intensified scrutiny on containment practices and spurred informal benchmarking. No evidence yet indicates that the leaked weights have enabled runnable models at scale; verification remains limited by compute access and evaluation rigor.
+
+### Jurisdiction Without Foothold
+
+The European Commission circulates a concept paper for the Frontier Capability Jurisdiction Directive, proposing authority over any AI system exceeding 60.0 capability, regardless of origin. The draft asserts performance-based jurisdiction as a response to the leak. However, no formal proposal is tabled, and no legislative process is launched this turn. The concept triggers immediate backlash: Germany warns it could criminalize open research, while France insists the EU lacks detection capacity to enforce such a rule. No member state commits to co-funding monitoring infrastructure. Legal services flag jurisdictional overreach under international trade law. The directive remains in early consultation, with ratification unlikely before 2031.
+
+No new measure is adopted. The Sovereign Evaluation Authority and Emergency Containment Powers remain under active development, consuming political bandwidth. The concept paper does not trigger a proposal bonus; no measurable progress occurs toward implementation, consistent with the minimum lag for high-cost measures. Work begins on a prototype air-gapped evaluation environment in Estonia, but operational deployment is months away.
+
+### Sovereignty Eroding
+
+The InvestAI Gigafactories come fully online, but their compute is allocated to existing contracts and does not expand frontier access. With the US in RETRENCHMENT, export controls block integration with the most advanced models. EU sovereignty, already weakened, declines further. The rise in global capability imposes a −1 penalty, and under persistent RETRENCHMENT, the annual decay term of −5 applies. No event offsets the decline. The measure under discussion provides no operational gain. Sovereignty falls from 11.0 to 5.0.
+
+Political capital remains under strain at 12.0, burdened by the ongoing portfolio charge of two large measures. Public sentiment drops to 27.0 amid growing unease over regulatory overreach. Tech hubs see renewed protests, with critics denouncing the Commission’s approach as reactive and legally unmoored.
+
+Resilience holds at 40.0. The bio uplift findings deepen concern among containment experts. No incident has occurred—yet the gap between capability and safety widens. Safety improves slightly to 16.0 as planning for containment infrastructure advances, though no physical upgrades are completed.

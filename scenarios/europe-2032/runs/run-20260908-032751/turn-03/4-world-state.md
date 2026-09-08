@@ -1,0 +1,15 @@
+### Frontier Pressure Mounts  
+The global AI frontier advances by +2.5, reaching 59.5, as leading labs deploy autonomous agents capable of multi-day scientific and engineering workflows. These systems now initiate subgoals, debug their own code, and propose novel experiments in materials science and logistics optimisation. Open-weight models rise slightly to 48.0, driven by fine-tuning of Kimi K3 on distributed clusters, but no new open release matches the closed frontier.
+
+### Access Cut, Trust Shattered  
+Without warning, several EU public institutions and healthcare providers lose access to a leading frontier AI model. The cutoff affects diagnostic support systems and research coordination tools, triggering emergency fallbacks. The provider offers no explanation, citing internal policy. The incident is widely reported as a sovereignty breach, with officials denouncing "technological colonialism." Public sentiment drops as the disruption confirms fears of dependency.
+
+### EU Responds with Emergency Measures  
+In response, the European Union proposes the **Frontier Access Guarantee for Essential Functions**, a large Category 4 measure aimed at securing uninterrupted access to frontier AI for critical public operators. Invoking market leverage under the Digital Markets Act, the Commission drafts emergency licensing conditions: providers serving essential functions must guarantee service continuity or face exclusion. Planning for sovereign frontier nodes on EU soil begins, though deployment remains months away.
+
+However, the proposal does not advance beyond initial drafting this turn. With four large measures already in flight—**InvestAI Gigafactories**, **Tech Sovereignty Package**, **Cyber Shield**, and **Public AI Governance Rebuild**—the system is at capacity. No new measure can be launched without displacing or deprioritizing an existing one, and no such decision is made. The **Frontier Access Guarantee** remains in formulation, pending political resolution of portfolio constraints.
+
+### Political Capital Stretched, But Not Shattered  
+Cyber Shield and Public AI Governance yield no progress this turn. Resilience dips as delays mount. Ai_safety falls further to 23.0, as capability growth outpaces safeguards. The access denial event triggers a sovereignty penalty: dependence remains high, and no domestic fallback yet exists. Public trust erodes.
+
+Political capital declines, but not catastrophically. The portfolio charge of −13 and proposal bonus of +3 (for Public AI Governance Rebuild addressing the automated_decision_scandal) result in a net −10 pressure. However, political capital only falls by 3 points—to 32.0—reflecting residual legitimacy from public concern over the access incident and ongoing institutional engagement. The gap between political capital and sovereignty widens slightly, affirming their independence: political capital remains responsive to governance effort and crisis response, not merely sovereignty trends.

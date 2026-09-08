@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Sovereign Model Development Initiative −3, Emergency Sovereign Red-Teaming Expansion −3, Secure the Openweight Frontier −3, priority −1 = −10  
+PROPOSAL BONUS: Secure the Openweight Frontier (cat 3, large) +2 — answers openweight_capability near frontier and follows cyber_major_incident, though indirect  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20.0 last turn, no capacity event, Sovereign Model Development Initiative in flight +0 (not finishing), capability rose 1.5 −1 = 19.0 → but US_POSTURE: CONSOLIDATION imposes decay at top of rule 5 range while no build in force → −1 → 18.0  
+US_POSTURE: CONSOLIDATION  
+emergent_defensive_alliance_progress -- first noted turn 6, listed in 4 turn(s) so far: A coordinated defensive effort among EU states and allies forms in response to repeated AI-powered cyberattacks, focusing on shared threat intelligence and automated response systems. The alliance begins integrating real-time telemetry and joint playbooks, improving detection and containment times.  
+emergent_societal_backlash -- first noted turn 6, listed in 4 turn(s) so far: Growing public frustration with AI-driven job losses and institutional inaction culminates in widespread protests targeting data centres and AI firms across several member states. The demonstrations strain internal security resources and force reconsideration of deployment timelines.

@@ -1,0 +1,19 @@
+### A Shift at the Frontier
+
+AI capability continued its steady climb, reaching 78.0 as frontier models demonstrated improved reasoning and integration into complex workflows. The pace of advance remains consistent with the trajectory established in earlier turns—no discontinuous leap occurred, and the growth reflects sustained investment and algorithmic refinement rather than a sudden breakthrough. Nevertheless, safety margins eroded further: as training runs grow longer and systems more opaque, red-team evaluations show increasing failure rates in containment protocols. With no new safeguards enacted, ai_safety declines for the first time since the onset of rsi_onset, registering a modest −1. Resilience also dips slightly, reflecting growing strain on monitoring infrastructure and delayed staffing for eval teams.
+
+In response to the widening capability-safety gap, the European Commission began drafting the Sovereign Evaluation and Control Framework, a proposal aimed at mandating access to training logs, weights, and agent behaviour for high-capability models trained in the EU. The initiative draws on the legal precedent of the Emergency Compute Mobilisation Directive but remains in early consultation. It has not been formally adopted, nor has it been designated as the EU’s priority measure this turn. The portfolio charge remains unchanged from last turn, with only the completion of the InvestAI Gigafactories contributing to political capital. As such, no additional burden is placed on governance capacity.
+
+Public sentiment declined, driven by growing anxiety over job displacement and the perceived inadequacy of regulatory responses. Tech worker protests spread across Berlin, Paris, and Barcelona, demanding enforceable transition guarantees amid accelerating AI-driven automation. While these developments are noted, no formal threshold for systemic unrest has been met, and the situation remains fluid.
+
+The InvestAI Gigafactories in Wallonia, Silesia, and Andalusia came online, supported by emergency grid corridors. This expansion bolsters domestic compute capacity, but its impact on sovereignty is indirect and already accounted for in prior turns. No immediate jurisdictional gains follow, as no new enforcement mechanism is yet in place. Legal challenges in two member states have delayed full operational integration, and developer compliance remains partial, limiting the extent to which sovereignty can increase despite infrastructure completion.
+
+Meanwhile, discussions among mid-tier democracies on compute coordination continue informally. Shared concerns over supply fragility and strategic autonomy are growing, but no agreements—binding or otherwise—have been concluded. The term `emergent_chip_sovereignty_pact` remains a placeholder for potential future alignment, not an active pact. There are no offtake guarantees, grid-sharing protocols, or mutual obligations at this stage.
+
+Decentralised AI networks in Germany and Spain continue to operate outside formal oversight, contributing to innovation but complicating regulatory coherence. This trend is monitored but not yet formalised into a systemic risk or opportunity.
+
+### Shadows on the Horizon
+
+The US posture remains CONSOLIDATION. No shift in transatlantic dynamics has occurred. The EU’s proposals do not bind external actors, and no leverage—via market access, standards adoption, or supply-chain pressure—has been successfully applied to secure foreign compliance.
+
+The notepad records only observed developments, with no pre-specification of gate conditions or their outcomes. Future triggers will be evaluated solely on narrative developments as they unfold.

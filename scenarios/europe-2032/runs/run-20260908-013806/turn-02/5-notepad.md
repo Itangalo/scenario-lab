@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Hardened Critical Infrastructure Directive −3, EU Joint Threat Response Protocol −3, priority −1 = −13  
+PROPOSAL BONUS: EU Joint Threat Response Protocol (cat 6, large) +3 — joint_threat_response landed this turn and this measure formalises and funds it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 23 last turn, no capacity event, Gigafactories in flight +1, capability rose 1.5 −1 = 22  
+- `emergent_regulatory_backlash` -- first noted turn 1, listed in 3 turn(s) so far: In response to the cyber intrusion revealed in the 'cyber_test_shot' event and growing public unease, several EU member states initiate emergency consultations on tightening AI governance beyond the postponed AI Act provisions. Proposals include mandatory breach reporting for AI systems, stricter oversight of foreign-owned data centres, and a temporary moratorium on high-risk AI deployments in critical infrastructure until resilience measures are upgraded. The momentum builds rapidly, driven by cross-party concern but also by electoral pressure in upcoming national votes.

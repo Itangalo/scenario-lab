@@ -1,0 +1,23 @@
+## Statement changes  
+No statement changes.
+
+## Portfolio  
+- `AI Safety Talent Integration Directive (category 4, costs 3 per turn, started turn 9, finishes on turn 10): Mandatory fast-track placement of 1,200 AI safety engineers into sovereign labs, ENISA, and national cyber agencies to close the human capital gap in containment, monitoring, and incident response` — finished  
+- `Launch the Resilience Corps Pilot Expansion to harden critical infrastructure sectors against AI-enabled cyber and control attacks, with binding red-teaming mandates and live-failover drills. (category 6, costs 3 per turn, started turn 10, finishes on turn 11): Scales the proven RTE-TenneT grid-control monitoring model to transport, health, and water systems, enforcing AI-driven incident response under real conditions` — finished  
+- `Stand up the European AI Verification Network (EUVN), a distributed public capability to independently evaluate, monitor, and certify AI systems operating in EU critical infrastructure. (category 5, costs 3 per turn, started turn 11, finishes on turn 12): Establishes sovereign technical authority for runtime audits, model interpretability, and certification of AI in healthcare, transport, and social services, reducing reliance on foreign labs and provider self-reporting` — finished  
+
+## New measure  
+**Establish the Sovereign Compute Accelerator to deliver exascale-class AI infrastructure on EU soil, under binding legal and energy security commitments, with direct state participation in siting, grid access, and chip supply.** This creates a sovereign, non-recallable foundation for EU-run AI systems in critical functions and verification workloads.  
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 16`  
+`Targeted effect:` Increase eu_ai_sovereignty by 12–16 points and ai_safety by 3–5 points over 24 months by anchoring compute capacity under EU jurisdiction, enabling independent training and runtime control of high-assurance models; reduce exposure to foreign infrastructure shutdowns or throttling  
+`Applies to:` EU member states, national energy regulators, major hyperscalers operating in the EU, semiconductor suppliers, European High-Performance Computing Joint Undertaking (EuroHPC JU)
+
+## Priority  
+**Establish the Sovereign Compute Accelerator** — because the capability plateau may be real, but the openweight frontier at 47.0 and the underperformance of closed systems prove that the strategic advantage now lies not in chasing the top, but in owning the stack: without sovereign compute, EUVN is a watchdog without teeth, and our hybrid verification path collapses the moment it needs scale.
+
+## In practice  
+This turn, we complete the European AI Verification Network — not as a directive, but as a functioning technical reality. Secure enclaves in Berlin, Lyon, and Utrecht are now operational under ENISA, with full access to the 1,200 engineers placed through the Talent Integration Directive. These are not auditors in name only: they have the legal authority under Article 16 TFEU, as reinforced by the AI Act’s high-risk provisions, to demand model weights and runtime logs from any provider whose AI touches EU critical infrastructure. The first audits will begin next turn, starting with medical triage systems in France and transport coordination in the Nordic corridor. The emergent_foxglove_initiative’s hybrid model will be among the first tested — not because it is dangerous, but because it must meet the standard we set for ourselves: auditable, legible, and under our control.
+
+But verification without compute is inspection without power. The plateau in closed capability is a window — not to relax, but to act. We are launching the Sovereign Compute Accelerator to build three exascale-class facilities on EU soil, co-located with renewable energy hubs in Spain, Finland, and Poland, with binding agreements that power and cooling cannot be diverted during crises. This is not another procurement round — it is direct state intervention: we are fast-tracking permits through the Trans-European Networks for Energy (TEN-E) framework, securing 40% of next-gen EUV lithography output via the Chips Act, and mandating that 60% of capacity be reserved for public-interest workloads, including EUVN audits, hybrid system training, and Resilience Corps simulations. Resistance from member states fearing energy strain is being met with cohesion fund top-ups and guaranteed grid redundancy. Without this compute, our verification regime remains dependent on foreign infrastructure — and sovereignty cannot be outsourced. This is the foundation: if we do not own the machines, we do not own the future.

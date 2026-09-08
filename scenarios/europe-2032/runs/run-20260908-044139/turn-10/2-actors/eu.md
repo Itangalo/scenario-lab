@@ -1,0 +1,24 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Scale sovereign human capital and institutional capacity to independently verify, control, and respond to AI systems operating in EU critical infrastructure  
+- Trigger: the two-year commitment period closes this turn  
+- Grounds: The AI Safety Talent Integration Directive has moved from policy to implementation, but the operational gap is not in recruitment alone — it is in integration, verification authority, and real-time response. The automated decision scandal and plateauing capability have created a narrow window to shift from talent acquisition to sovereign operational control, before the next leap invalidates current safeguards.
+
+## Portfolio
+- `AI Safety Talent Integration Directive (category 4, costs 3 per turn, started turn 9, finishes on turn 10): Mandatory fast-track placement of 1,200 AI safety engineers into sovereign labs, ENISA, and national cyber agencies to close the human capital gap in containment, monitoring, and incident response` — finished  
+- `Launch the Resilience Corps Pilot Expansion to harden critical infrastructure sectors against AI-enabled cyber and control attacks, with binding red-teaming mandates and live-failover drills. (category 6, costs 3 per turn, started turn 10, finishes on turn 11): Scales the proven RTE-TenneT grid-control monitoring model to transport, health, and water systems, enforcing AI-driven incident response under real conditions`
+
+## New measure
+**Stand up the European AI Verification Network (EUVN), a distributed public capability to independently evaluate, monitor, and certify AI systems operating in EU critical infrastructure.** This establishes sovereign technical authority where enforcement depends on foreign compliance.  
+`Category: 5 (Public technical capacity and research)`  
+`Size: large`  
+`Finishes on turn: 12`  
+`Targeted effect:` Increase ai_safety by 8–10 points and eu_ai_sovereignty by 5–7 points over 18 months by enabling independent verification of agent behaviour, runtime interpretability, and control claims  
+`Applies to:` EU member states, ENISA, national AI oversight bodies, EU-funded research institutions, and critical infrastructure operators
+
+## Priority
+European AI Verification Network — because the automated decision scandal has shattered public trust and rendered adoption politically toxic, while the capability plateau gives us a rare six-month window to build sovereign verification before the next leap; this turn, control must shift from diplomatic pressure to technical autonomy, or we lose both mandates
+
+## In practice
+We are converting the gains of the AI Safety Talent Integration Directive into operational reality by launching the European AI Verification Network. The 1,200 engineers now under placement will not be scattered across agencies but concentrated into a unified technical corps with shared tooling, standards, and escalation authority. Hosted under ENISA but physically distributed across the AI Safety Zones in Berlin, Lyon, and Utrecht, the EUVN will be empowered to conduct runtime audits, demand model explanations, and issue public certification — or non-conformity rulings — on AI systems in healthcare, transport, and social services. This is not a research exercise: we are repurposing €620 million from the stalled InvestAI Modernisation Facility to build secure compute enclaves and deploy interpretability stacks that can keep pace with frontier models. The scandal in the Netherlands over AI-driven social insurance denials has made clear that we cannot rely on provider self-reporting or U.S. lab cooperation. Verification must be independent, public, and technically credible — or it will not be believed.
+
+The Resilience Corps Pilot Expansion is now operational in ten pilot sites across the energy, rail, and public health sectors. ENISA and eu-LISA are conducting live red-teaming drills this quarter, simulating AI-driven failures in hospital diagnostics and water treatment controls. Binding requirements will be enforced by turn 11, with non-compliant operators barred from EU resilience funding. Member state resistance remains, particularly in Italy and Hungary, where ministries argue that failover protocols undermine national authority. We are countering with cohesion fund incentives tied to drill performance, not just participation. The automated decision scandal has hardened attitudes: where some saw resilience as a cost, they now see it as the only way to survive the next incident. We are not building defences for a future threat — we are repairing the breach that has already happened. Talent, verification, and resilience: these are no longer separate lines of effort. They are the skeleton of a sovereign response, and this turn, we are giving it muscle.

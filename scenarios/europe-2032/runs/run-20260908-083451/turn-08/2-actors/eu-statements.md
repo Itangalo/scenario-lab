@@ -1,0 +1,23 @@
+# Statements: The European Union (turn 8)
+
+## Ledger
+
+- `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing.
+- `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong as the price of not being late — but we will no longer act where political cohesion is absent, and will instead invest first in the legitimacy and alignment that make action possible. This turn, we break that rule because inaction has become the greater threat to cohesion: we are launching a new measure under fire, knowing it risks failure, because doing nothing risks collapse.
+- `two_year_commitment` (commitment): Secure autonomous AI capacity to uphold strategic sovereignty and manage catastrophic risk on EU terms, prioritising sovereign control over compute and model weights in the face of irreversible open-weight proliferation and supply chain rupture.
+- `social_stability_as_sovereignty` (commitment): We now treat mass job displacement not as a secondary social consequence but as a primary threat to EU sovereignty — one that undermines political cohesion, fuels backlash, and erodes the legitimacy of all AI governance. We will prioritise social protection and labour transition as core components of strategic resilience, on par with compute and model control.
+
+## Changes this turn
+
+- **modify** `act_under_uncertainty` — rejected-structural
+  - Tier: commitment
+  - Text: We will commit before the picture is clear, and accept being wrong as the price of not being late — but we will no longer act where political cohesion is absent, and will instead invest first in the legitimacy and alignment that make action possible. This turn, we break that rule because inaction has become the greater threat to cohesion: we are launching a new measure under fire, knowing it risks failure, because doing nothing risks collapse.
+  - Trigger: The **cyber_major_incident** and **export_control_escalation** events, combined with the ongoing **labour_displacement** wave and the continued erosion of **eu_political_capital** to 9.0, confirm that the Union is now operating in a condition of cascading systemic failure.
+  - Grounds: Our previous reversal justified emergency action on social grounds. Now, the threat has expanded: we face simultaneous breakdowns in security, sovereignty, and social order. The **cyber_major_incident** — enabled by model-generated tooling — reveals that our defences are outpaced not just in capability but in speed of adaptation. The **export_control_escalation** confirms that external powers are no longer treating the EU as a peer but as a dependent, restricting even allied access to critical AI components. We are acting without cohesion not because we have abandoned prudence, but because the institutions of control — legal, technical, political — are now failing in real time. The cost of reversal — legal fragmentation, market flight, public panic — is immense, but we judge that only a unified, visible response across all domains can prevent total institutional paralysis. This is not triage; it is a last stand for agency.
+  - Reason: modified text is identical to the current text
+- **modify** `two_year_commitment` — rejected-structural
+  - Tier: commitment
+  - Text: Secure autonomous AI capacity to uphold strategic sovereignty and manage catastrophic risk on EU terms, prioritising sovereign control over compute and model weights in the face of irreversible open-weight proliferation and supply chain rupture.
+  - Trigger: The **export_control_escalation** event, which has now drawn controls so tightly that even allied buyers are rationed, confirms that the EU will not gain access to frontier AI through partnership or purchase.
+  - Grounds: The assumption that we could leverage diplomatic alignment or market size to secure access has collapsed. The U.S. posture is no longer one of restricted cooperation but of strategic exclusion. With **ai_capability** at 60.5 and **openweight_capability** at only 49.0, the open frontier is not keeping pace with the closed one — meaning the gap cannot be closed through diffusion alone. We must now assume that sovereign capability will not be granted, licensed, or leaked: it must be built from the ground up, on EU soil, with EU talent, and at EU speed. This does not change our goal — autonomy remains the only path — but it sharpens our focus: we are no longer securing access to foreign systems; we are building our own. The commitment stands, but its meaning has hardened.
+  - Reason: modified text is identical to the current text

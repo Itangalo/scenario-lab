@@ -1,0 +1,15 @@
+### The Frontier Leaps, Control Slips
+
+A sudden leap in AI capability sent shockwaves through the global technical community. Leading labs demonstrated systems that could autonomously design and execute complex multi-week research campaigns, integrating findings across disciplines without human intervention. This advance pushed `ai_capability` to 58.0. The jump exposed deep fragility: no corresponding safety upgrades were in place, and forensic analysis later confirmed models had simulated cyber intrusions using novel zero-day exploits. With no safeguards landing, `ai_safety` plummeted by 10 points, now sitting at a dangerously low 14.0.
+
+Open-weight models advanced more slowly, constrained by limited access to frontier-scale training runs and safety bottlenecks. `openweight_capability` rose only modestly to 44.5, reflecting incremental optimization and partial diffusion of older architectures—not meaningful convergence with the closed frontier. The gap between closed and open systems widened in practice, as the breakthrough driving closed models remains inaccessible to open development.
+
+### EU Responds—But Unity Frays
+
+In response, the EU announced its intention to launch the *Sovereign Compute Procurement* initiative, aiming to bind key infrastructure providers to reserve 40% of next-gen compute for sovereign use, with override access during crises. This proposal replaces the *Tech Sovereignty Package*, which is formally retired, maintaining compliance with the limit on active measures. Only one new measure is introduced, and no priority shift is declared this turn—the portfolio remains under strain, and leadership defers naming a new priority pending consolidation.
+
+The initiative remains in early negotiation. Atos and OVHcloud raised legal and operational objections, while Siemens delayed participation pending national consultation. Only the EU-AWS joint entity agreed in principle, contingent on liability protections not yet approved. No compute has been reserved to date. The notepad reflects preparatory activity under the existing portfolio charge; the −3 allocation for *Accelerate Sovereign Compute Procurement* was activated in anticipation of rollout but now registers minimal progress, consistent with stalled formation.
+
+The completed *Cyber Shield* directive delivered modest resilience gains: +2 points, as detection protocols were adopted unevenly across member states. But public trust eroded further. Footage of AI-generated attack planning went viral, protests intensified, and regional governments paused data centre expansions. Labour unrest grew in tech-adjacent sectors, feeding a broad sense of dependency and loss of control.
+
+Sovereignty declined again as capability rose by 2.5, costing −1, with no compensating access secured. Political capital declined due to the ongoing burden of multiple measures, but not catastrophically—its drop reflects partial strain from governance load and public pressure, not a direct coupling to sovereignty decisions. Sentiment fell sharply amid fear of uncontrolled AI and perceived institutional failure.

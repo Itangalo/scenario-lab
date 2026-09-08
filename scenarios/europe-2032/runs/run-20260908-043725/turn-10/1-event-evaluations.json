@@ -1,0 +1,97 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8179633609708054,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9325278337178738,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.07,
+    "probability_samples": [
+      0.05,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9860225501097017,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.015560977592245506,
+    "triggered": true
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.16666666666666666,
+    "probability_samples": [
+      0.16,
+      0.12,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6381760592697908,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regional_cyber_collective",
+    "probability": 0.22999999999999998,
+    "emergent": true,
+    "description": "Informal coordination among Nordic and Benelux states deepens into a shared operational doctrine for AI-driven cyber defence, including pre-authorized countermeasures and joint red-teaming exercises. The group begins drafting a formal pact, though EU-wide integration remains distant.",
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4264746937314702,
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_market_stress_tests",
+    "probability": 0.21,
+    "emergent": true,
+    "description": "Pilot 'AI impact stress tests' in public hiring across several member states reveal that up to 40% of entry-level administrative roles could be automated within two years. The findings spark debate over retraining obligations and fuel demands for a common EU framework to manage displacement.",
+    "probability_samples": [
+      0.18,
+      0.25,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8359377381038033,
+    "triggered": false
+  }
+]

@@ -1,0 +1,7 @@
+- `emergent_labour_displacement_wave` -- first noted turn 1, listed in 7 turn(s) so far: Accelerating AI-driven displacement in legal, administrative, and clinical coding roles across the EU. Layoffs are now widespread, with retraining systems overwhelmed. Political pressure mounts for emergency labour interventions.
+- `emergent_asml_defiance_negotiations` -- first noted turn 1, listed in 7 turn(s) so far: Ongoing EU-backed Dutch efforts to secure exemptions for non-EUV ASML tools from U.S. export controls. Talks remain stalled, with Washington viewing any carve-out as a precedent it cannot afford.
+- US_POSTURE: CONSOLIDATION
+- PORTFOLIO CHARGE: Sovereign AI Sentinel Programme −3, Critical Infrastructure AI Shield Initiative −3, Joint Threat Response Integration Directive −3, priority −1 = −10
+- PROPOSAL BONUS: Joint Threat Response Integration Directive (cat 6, large) +3 — directly answers joint_threat_response and cyber_major_incident, both current and severe
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 13.0 last turn, no capacity event, Sovereign AI Sentinel Programme in flight +0, capability rose 1.5 −1 = 12.0 → final 12.0

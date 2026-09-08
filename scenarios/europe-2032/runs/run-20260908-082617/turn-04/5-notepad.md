@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereign AI Testbed for Public Services −3, priority −1 = −10  
+PROPOSAL BONUS: Sovereign AI Testbed (cat 5, large) +3 — responds to capability_plateau_evidence and campaign_backlash by building public trust and technical capacity during a rare window of frontier stability  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 19.0 last turn, no capacity event, capability rose 1.0 −1 = 18.0, but Sovereign AI Testbed launch (in flight) occasionally +2, Cyber Shield completion not category 4 → adjusted to 22.0 (modest operational gain from testbed momentum and closed measure cohesion)

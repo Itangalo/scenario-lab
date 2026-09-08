@@ -1,0 +1,26 @@
+[
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_regulatory_backlash",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "Several EU member states begin fast-tracking national legislation to restrict the deployment of AI in critical infrastructure, citing the need for sovereign control and auditability. The momentum shifts toward preemptive regulation, even as industry warns of fragmentation and delay.",
+    "probability_samples": [
+      0.25,
+      0.35,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

@@ -1,0 +1,287 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.03515824614755103,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.09000000000000001,
+    "probability_samples": [
+      0.09,
+      0.09,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.41710711434404946,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.435294852495104,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.310023299029629,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9764901386222894,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.04,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.04,
+      0.04,
+      0.04
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.21,
+    "probability_samples": [
+      0.21,
+      0.21,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4171297619678126,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.48518080175963885,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.21399827494111323,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.28259481697357847,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.834151353831951,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1738481796847634,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.21198094932217248,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.11,
+      0.0,
+      0.11
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.4286480199644783,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.42380686723501104,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regional_sovereignty_fracture",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "The parallel sovereign evaluation platform launched by Nordic and Benelux states formalizes into a binding technical alliance, adopting divergent audit standards from the EU's AI Act. This creates a de facto split in certification authority, with Germany and the Netherlands increasingly aligning with the regional bloc, weakening Brussels' central coordination role in AI governance.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.23692120213236323,
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_market_radicalization",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "A coalition of displaced tech and legal workers forms a transnational movement demanding AI-driven job impact assessments and sectoral moratoria on automated hiring. The movement gains traction in France, Spain, and Sweden, organizing strikes and digital protests that disrupt public-sector AI pilots, forcing political responses across multiple member states.",
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5801465321280131,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.07,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.13
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7866744524943611,
+    "triggered": false
+  },
+  {
+    "id": "emergent_informal_ai_regulation_network",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "A loose coalition of national data protection authorities, consumer watchdogs, and technical standards bodies begins coordinating informal enforcement actions against AI systems that violate transparency or fairness norms, using existing legal tools in novel ways. This network operates outside formal EU structures but gains influence due to paralysis at the center, creating a patchwork of de facto regulation that companies must navigate. Its emergence reflects growing institutional frustration and fills a vacuum left by stalled central policy.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_ai_standards_fragmentation",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "Multiple competing AI safety and evaluation standards emerge from different blocs — the EU-led Middle-Power Coalition, a U.S.-centric alliance, and a China-aligned framework — leading to incompatibility in certification, audit tools, and incident reporting. This fragmentation forces multinational firms into costly compliance silos and undermines trust in cross-border AI deployment.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.25
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_driven_disinformation_surge",
+    "probability": 0.09999999999999999,
+    "emergent": true,
+    "description": "A wave of highly targeted, multilingual disinformation campaigns — generated by accessible AI tools at openweight_capability 59.0 — destabilizes regional elections in Eastern Europe and inflames separatist tensions in multiple EU member states. The campaigns exploit local grievances with unprecedented coherence, overwhelming current detection systems and prompting emergency coordination among intelligence agencies.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.3
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Secure the Core −3, Accelerate EU Evaluation Corps −3, priority −1 = −7  
+PROPOSAL BONUS: Accelerate EU Evaluation Corps Recruitment and Training Pipeline (cat 5, large) +4 — direct response to emergent_evaluation_crisis and eval_anomaly_reports, both recent and severe, addressing critical staffing and operational credibility gap  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 17.0 last turn, no capacity event, capability rose 3.0 −1, Secure the Core in flight +0 = 16.0 → adjusted to 15.0 due to deepening evaluation_crisis signal  
+US_POSTURE: CONSOLIDATION  
+emergent_joint_threat_initiative -- first noted turn 8, listed in 2 turn(s) so far: Joint cyber command or biosurveillance pact invites Union participation after a major incident, pooling intelligence and response capacity. Requires a recent shock to overcome inertia.  
+emergent_evaluation_crisis -- first noted turn 8, listed in 2 turn(s) so far: Independent audits of the Secure the Core initiative reveal that the air-gapped evaluation nodes are operating with outdated test suites and lack real-time adversarial probing capacity. The evaluation framework cannot keep pace with frontier model obfuscation techniques, raising doubts about the credibility of the entire EU assurance pipeline just as it becomes operational.

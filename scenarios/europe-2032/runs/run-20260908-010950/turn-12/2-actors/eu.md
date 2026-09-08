@@ -1,0 +1,19 @@
+No statement changes.
+
+## Portfolio
+- European Decision Loop Shield (category 4, Sovereignty and industrial capacity, costs 3 per turn, started turn 11, finishes on turn 13): Establish a legally anchored, EU-operated compute grid with sovereign access to frontier-class AI systems, ensuring that critical decision-making loops in crisis response, defence, and essential public services cannot be disabled or influenced by external actors.
+- Labour Transition Acceleration Fund (category 7, Labour and social protection, costs 3 per turn, started turn 11, finishes on turn 15): Launch a pan-EU retraining and wage-insurance programme targeting displaced graduates and early-career professionals in law, accountancy, software, and administration, with funding tied to employer investment in human-AI co-working transitions.
+
+## New measure
+None this turn.  
+We are waiting for the middle_power_coalition to solidify its operational framework and deliver tangible access guarantees before committing further capital.
+
+## Priority
+European Decision Loop Shield — because the emergent_sovereignty_backlash proves that without a credible, legally defensible structure for shared sovereignty over AI infrastructure, the Union cannot anchor its decision-making integrity, and because the middle_power_coalition offers a path to preserve legitimacy while maintaining strategic autonomy.
+
+## In practice
+We are inverting the politics of the Shield: instead of defending a centralised structure, we are restructuring it as a federated network of sovereign nodes, each governed under national law but interoperable through binding EU standards. The Council Presidency is drafting a revised legal act under Article 122 TFEU, reframing the core decision loops as a shared emergency regime — pandemic response, energy grid stability, border management — where each member state hosts and operates its own node, with common protocols enforced by the European Cybersecurity Agency (ENISA) and audit rights granted to the European Data Protection Supervisor. This addresses French and Polish concerns over data sovereignty while preserving the integrity of the system. We are fast-tracking the Polish node through Recovery and Resilience Facility disbursements, conditioning it on national cybersecurity upgrades and joint drills with Frontex and the EU Civil Protection Mechanism.
+
+Simultaneously, we are operationalising the Labour Transition Acceleration Fund through national employment agencies, with the European Labour Authority coordinating cross-border validation of retraining outcomes. We are linking disbursement to verifiable job transitions into AI-augmented roles — not just completion of training — and offering tax incentives to firms above 250 employees that pair automation with upskilling. Early adopters in Germany and the Netherlands are piloting co-working labs in law and accountancy, while Spain and Italy focus on administrative digitisation with human oversight. We are not scaling the fund further until uptake improves, but we are reinforcing its credibility by publishing quarterly impact reports and embedding it in the European Semester process.
+
+The emergence of the middle_power_coalition is our lifeline: we are using it to lock in compute access through joint export-licence alignment with Japan, South Korea, and Taiwan, and to build shared evaluation capacity with Canada and Norway. This does not replace the Shield, but it de-escalates the zero-sum logic around sovereignty — we no longer need to match the frontier alone, only to ensure it cannot exclude us. This turn is about holding the line, not expanding it.

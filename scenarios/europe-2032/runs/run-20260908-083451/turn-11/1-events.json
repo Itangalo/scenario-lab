@@ -1,0 +1,48 @@
+[
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.21666666666666667,
+    "probability_samples": [
+      0.25,
+      0.2,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.04666666666666667,
+    "probability_samples": [
+      0.0,
+      0.14,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_displacement_wave",
+    "probability": 0.17666666666666667,
+    "emergent": true,
+    "description": "Widespread job losses in legal, administrative and mid-level tech roles become visible across multiple member states as firms deploy AI agents capable of handling multi-step professional workflows. Union-level analysis confirms a structural shift, not cyclical unemployment, triggering early debate on social protection reforms.",
+    "probability_samples": [
+      0.0,
+      0.35,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  }
+]

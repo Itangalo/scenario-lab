@@ -1,0 +1,50 @@
+[
+  {
+    "id": "campaign_security_hawk",
+    "probability": 0.16666666666666666,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "cyber_defence_breakthrough",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_asml_investment_pressure",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "ASML faces intensified pressure from both U.S. and EU actors: Washington demands broader restrictions on servicing existing lithography machines in China, while a coalition of EU member states and industrial stakeholders pushes for emergency investment in alternative supply chains and domestic chip fabrication. The company warns of existential risk to its business model if forced to choose sides, creating a flashpoint over sovereignty and economic survival.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_displacement_wave",
+    "probability": 0.31666666666666665,
+    "emergent": true,
+    "description": "Widespread reports emerge of AI-driven automation displacing mid-level technical and administrative workers across EU member states, particularly in legal support, radiology, and public administration. The pace exceeds previous trends, triggering early warnings in national labour ministries and prompting calls for emergency retraining programs. This is not yet physical backlash, but it establishes the economic precondition for one.",
+    "probability_samples": [
+      0.35,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

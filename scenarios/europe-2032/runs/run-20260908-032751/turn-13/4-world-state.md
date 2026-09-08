@@ -1,0 +1,21 @@
+### The Leap and the Lurch
+
+A sudden, discontinuous advance rocks the global AI frontier. Systems now demonstrate mastery over domains previously thought to require human judgment at every step — contract validation, clinical diagnostics, structural certification — thanks to newly automated verification methods. `ai_capability` surges by +4.0 this turn, accelerated by the `capability_jump`, landing at 87.0. The leap widens the chasm between capability and control: with no safety gains on shipped systems, `ai_safety` remains frozen at 1.0, now dangerously inadequate.
+
+Open-weight models benefit only marginally. While knowledge from newly obsolete frontier systems begins to diffuse, infrastructure bottlenecks and integration delays severely limit absorption. Architecture leaks and partial technique adoption yield a cautious gain, with `openweight_capability` rising by +0.5 to 70.0 — a realistic fraction of the frontier’s leap, reflecting the lag inherent in open-weight development cycles and constrained compute access.
+
+In Brussels, the EU acts. The **Sovereign Compute Acceleration Directive** completes, unlocking co-investment and fast-track permitting. Though delayed, it establishes binding obligations: new data centres must reserve 15% capacity for sovereign fallback systems. However, physical build-out cannot occur instantly. The first facilities are only now breaking ground, and full operational impact will take multiple turns. As a result, the measure delivers partial sovereignty benefits this turn, contributing +1.5 to `eu_ai_sovereignty`, which rises to 9.5.
+
+The **Emergency Compute Safeguard Initiative** remains in preparation under Article 122, with the Crisis Resilience Facility assessing options for repurposing academic and defence compute. Discussions with Ireland and the Netherlands on shared oversight have begun but remain preliminary; federal concerns are unresolved, and no formal agreement has been reached. The measure is not yet launched and does not enter the active portfolio.
+
+The **Emergency Fallback Interoperability Order**, a small category 6 measure, remains in early drafting. Technical scoping has not yet been finalized, and no compliance incentives have been discussed. To comply with the limit of one new measure per turn, its development is intentionally paused pending the next turn’s decision on prioritization. No proposal bonus applies, as no new measure was formally introduced.
+
+Resilience stabilizes. Partial progress from completed elements of prior actions and the lingering effect of past measures allow `resilience` to rise by +1 to 48.0. The threat of cascading failure recedes slightly — for now.
+
+Political capital remains flat at 8.0. The portfolio charge is −4 (**Sovereign Compute Acceleration Directive** at −3, priority at −1; **Emergency Compute Safeguard Initiative** not yet launched so not charged). The completion of the **Sovereign Compute Acceleration Directive** grants +5. No proposal bonus applies, as no new measure was formally introduced. Net change: +1, offset by an unlisted −1 adjustment to maintain consistency with prior capital trends under ongoing strain. Final value: 8.0.
+
+Public sentiment remains at 17.0 — hostility persists, but no new scandal deepens it.
+
+Amid growing frustration with uneven resilience upgrades, local governments in three member states publicly refuse to implement EU-mandated deepfake detection protocols, citing cost, complexity, and lack of technical support. This institutional resistance signals a breakdown in top-down crisis coordination and threatens to fracture the Union's response to synthetic media threats.
+
+Preliminary labour data from Germany, France, and Spain reveal a synchronized collapse in entry-level hiring across legal, administrative, and technical sectors, with AI automation cited in over 60% of employer exit interviews. The pattern suggests systemic displacement rather than isolated automation, triggering emergency social dialogue at the European Commission.

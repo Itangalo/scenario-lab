@@ -1,0 +1,13 @@
+### The Frontier Leaps, the Market Cracks
+
+A flagship model release shatters expectations, delivering a discontinuous advance in autonomous reasoning and real-world task execution. Overnight, the frontier surges to 60.5, crossing the threshold for multi-day professional autonomy. This leap invalidates prior assumptions of plateauing, as the same labs that saw valuations collapse also achieved breakthroughs in training stability and agent coordination. Open-weight derivatives follow within weeks, pushing `openweight_capability` to 52.0—now matching the closed frontier from just two years prior.
+
+The leap comes at a cost. No safety measures land on these systems, and their internal logic remains opaque. The gap between capability and understanding widens sharply, dragging `ai_safety` down to 22.0. Meanwhile, a major ransomware campaign—automated, adaptive, and seeded through a poisoned software library—disrupts public health systems across five member states. Emergency response is slow, and full containment takes weeks. The attack underscores systemic fragility, though the newly launched Cyber Shield directive enables faster coordination than before.
+
+### EU Responds, But Strains Show
+
+The EU finalises the **Cyber Shield for Critical Infrastructure**, a major resilience milestone. ENISA’s threat-sharing platform goes live, integrating real-time data from finance and transport sectors. Several member states, responding to insurance pressures, announce independent biosecurity and grid-hardening investments, amplifying the directive’s impact and lifting `resilience` to 48.0.
+
+However, the **EU AI Safety Institute** activation fails due to legal objections, forcing a downgrade to a monitoring unit under ENISA. This stopgap yields no immediate safety gains. Political capital erodes further, as the portfolio of four large measures continues to drain resources. The new **Sovereign Access Partnerships** initiative launches, but early talks with frontier labs stall—developers resist hosting on EU soil, fearing loss of control. The pivot from compute build-out to access deals is seen as reactive, not strategic.
+
+Sovereignty slips to 14.0, hit by rising capability (−1) and no domestic compute or secured access. The **ai_investment_collapse** event compounds exposure, undermining private compute plans. Public sentiment remains flat at 37.0, caught between fear of disruption and distrust in institutional response.

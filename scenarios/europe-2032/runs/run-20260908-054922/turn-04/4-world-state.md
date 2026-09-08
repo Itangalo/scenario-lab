@@ -1,0 +1,13 @@
+### Frontier Crosses Threshold
+
+AI capability advances sharply, reaching 60.0 as recursive training loops and agent coordination mature into end-to-end execution of multi-day professional projects. The frontier now autonomously conducts software development, materials design, and clinical trial analysis with minimal oversight. Open-weight models make significant progress following a leaked checkpoint from a leading lab, which is rapidly refined by a distributed network of academic and independent developers. This lifts openweight capability to 48.0—still below the frontier but closing the gap—enabling early deployment of persistent agents on high-end consumer hardware, though not yet at scale.
+
+### Access Denied, Response Launched
+
+The European Union is abruptly cut off from the leading AI model, disrupting hospital diagnostics, regulatory automation, and infrastructure planning across multiple member states. No explanation is given. In response, Brussels invokes crisis powers to initiate the Emergency Sovereign Compute Access Directive, authorizing the requisitioning of idle military and research supercomputers in Finland, Estonia, and the Czech Republic. Legal challenges emerge in Prague over sovereignty concerns, and integration planning is only now beginning. While political approval has been secured, technical coordination, security clearance, and cross-border data protocols remain incomplete. Full operational capability is not expected until mid-2029, consistent with high-cost measure timelines.
+
+Simultaneously, the EU reinforces long-term autonomy by tying Poland’s participation in the Sovereign Model Development Initiative to GPU fast-tracking and talent pipelines. However, delays persist in EuroHPC funding and hardware delivery. The red-teaming and incident response network completes its rollout, enhancing cyber-bio coordination.
+
+### Political Strain Mounts
+
+The access denial inflicts reputational damage, and public sentiment dips as media frame the outage as a humiliation. Labour Transition Fund rollouts continue but are overshadowed. Safety declines further due to unchecked capability growth. Resilience improves slightly from completed red-teaming and early compute contingency planning. Political capital erodes more significantly than initially assessed due to the high coordination cost and legal friction of the compute directive, now reflected in the deeper drop to 22.0. The directive remains in implementation phase, with full effects deferred.

@@ -1,0 +1,9 @@
+### A Pivot in the Dark
+
+With political capital at 9.0 and public sentiment stagnant at 25.0, the European Union abandons enforcement-driven AI strategy. The Public Audit Framework, once a cornerstone of regulatory ambition, collapses under legal fragmentation as Ireland and the Netherlands refuse to back coercive measures. In its place, the Commission pivots to foundational investment, declaring the InvestAI Gigafactory in Finland a strategic emergency.
+
+Under emergency provisions of the TEN-E Regulation, Brussels fast-tracks permitting and secures off-take guarantees from the European Defence Fund and EuroHPC, aiming to deliver 10,000 PFLOPS of sovereign compute by mid-2032. Finnish authorities confirm grid access and heat-recovery agreements with Helsinki will neutralize local resistance. Quiet technical talks with firms in Japan and South Korea suggest willingness to route non-U.S. controlled equipment through EU nodes—if deployment momentum holds.
+
+Yet no ground has been broken. The gigafactory remains a promise, not a plant. No sovereignty gain is realized this turn. Meanwhile, global AI capability advances steadily to 62.0, driven by unbroken progress in training efficiency and scale. Open-weight models rise to 51.0, trailing but widening access to powerful tooling. With no new safety mechanisms applied to frontier training, ai_safety holds at 31.0. Resilience erodes slightly as adoption pressures grow without countermeasures, dipping to 27.0.
+
+Public-sector strikes over AI-driven displacement continue across education and local government, sustained by encrypted coordination networks. Media narratives emphasize dependency and drift. The shift to infrastructure is framed not as vision, but as retreat from failed confrontation.

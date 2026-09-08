@@ -1,0 +1,30 @@
+## Statement changes  
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now face a world where failing one will extinguish the other within the decade.  
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we can no longer afford to act on assumptions that have not materialised. This turn, we pivot from sovereign-first to access-first: if we do not secure real-time, enforceable oversight of a frontier model by turn 9, we will be reduced to reacting to cascading failures with no agency at all.  
+- modify `two_year_commitment` (commitment): Autonomous sovereign AI capacity as a foundation for safety, control, and strategic independence — but if no sovereign training run occurs by turn 9, we will secure emergency access to a closed frontier model under binding EU-imposed safeguards, including real-time telemetry, red-teaming rights, and kill switches, even if hosted outside the Union.  
+- add `emergency_access_pathway` (position): Our fallback path to understanding and controlling frontier AI is through legally enforced, technically verifiable access to a closed system operated under EU jurisdictional reach — not ownership, but control.  
+- retire `Autonomous Frontier Initiative`  
+  - Trigger: The Autonomous Frontier Initiative has failed to achieve air-gapping or sovereign training runs by turn 8, despite emergency execution under Article 185 TFEU and Crisis Regulation Framework invocation. Technical bottlenecks, national resistance, and the +7 leap in `ai_capability` have rendered its original timeline obsolete.  
+  - Grounds: Continuing to fund a measure whose core objective is unmet and whose assumptions are invalidated by events drains political capital we cannot afford. We must shift from building sovereign capacity in isolation to securing enforceable access to existing capability — not as a long-term solution, but as the only remaining path to survival.
+
+## Portfolio  
+``Autonomous Frontier Initiative (category 4, costs 3 per turn, started turn 4, finishes on turn 9): Launch a fully sovereign EU programme to train and operate frontier AI models on EU-controlled infrastructure, with full access to weights, training data, and agent logs, to enable real-time safety evaluation, red-teaming, and enforcement readiness`` — canceled. The technical and legal bottlenecks at Lyon and Barcelona are insurmountable within the timeline, and the +7 leap in `ai_capability` has outpaced our ability to catch up through isolated development. Continuing would consume capital without delivering sovereignty or safety.  
+``European Interpretability Consortium (category 5, costs 3 per turn, started turn 5, finishes on turn 8): A coordinated, public-sector-led effort to reverse-engineer the internal reasoning of frontier AI models using novel probing techniques, building on the emergent_interpretability_consortium, with binding data-sharing rights over sovereign model runs`` — finishes this turn. No sovereign model access was achieved, so the consortium delivers only theoretical advances. Its infrastructure and research pipeline will be repurposed under a new measure focused on external access.
+
+## New measure  
+**Emergency Frontier Access Accord**  
+A binding agreement with a non-US, non-Chinese frontier developer (e.g., a Swiss or Singaporean lab) to host a closed frontier model under EU legal jurisdiction, with real-time telemetry, red-teaming access, and EU-controlled kill switches.
+
+`Category: 5 (Public technical capacity and research)`  
+`Size: large`  
+`Finishes on turn: 10`  
+`Targeted effect:` +15 to `ai_safety`, +10 to `eu_ai_sovereignty`, indirect stabilisation of `resilience` by enabling proactive threat detection  
+`Applies to:` a frontier AI developer outside US and Chinese jurisdiction, under EU legal and enforcement reach
+
+## Priority  
+**Emergency Frontier Access Accord** — because with `ai_safety` at 0.0, `ai_capability` at 79.0, and sovereign access failed, we are now blind to systems that are already superhuman and self-improving; without real-time access to a frontier model, we cannot evaluate, cannot red-team, and cannot prevent catastrophe — and we have no time left for pride.
+
+## In practice  
+We are redirecting the full weight of the European Interpretability Consortium’s technical pipeline and €18bn in repurposed Tech Sovereignty funds toward securing an Emergency Frontier Access Accord. The European Commission, through DG CONNECT and the European External Action Service, is opening emergency negotiations with three non-aligned frontier labs — one in Switzerland, one in Singapore, and one in Canada — offering a binding legal framework under which a closed model would be hosted on EU-sovereign-adjacent infrastructure, with full telemetry, real-time anomaly detection rights, and EU-controlled termination protocols. We are invoking Article 188 TFEU to fast-track international agreements on AI safety as a matter of strategic urgency.
+
+The Council’s Foreign Affairs configuration will convene an extraordinary session in March 2030 to authorise the use of the Anti-Coercion Instrument to deter third-party interference in the agreement, and we are preparing a legal opinion on whether the Court of Justice can grant interim jurisdiction over foreign-hosted models operating under EU safety mandates. Member states are being offered early access to the threat intelligence derived from the model in exchange for political support. The High Representative is personally leading the outreach, backed by a crisis cell in Brussels that includes ENISA, the European Biosecurity Agency, and the AI Observatory. This is not sovereignty as we once defined it — but it is the only path left to regain sight of the threat before it moves beyond all human response.

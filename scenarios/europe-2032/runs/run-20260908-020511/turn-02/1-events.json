@@ -1,0 +1,26 @@
+[
+  {
+    "id": "member_state_defection",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.13,
+      0.0,
+      0.13
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_asml_backlash",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "Domestic political pressure in the Netherlands intensifies over ASML's role in US-led semiconductor restrictions, with coalition partners threatening to collapse the government unless export policies are renegotiated to reflect EU strategic autonomy. The debate reframes the company not just as an economic asset but as a geopolitical lever now under foreign influence, increasing the risk of a policy shift that could ripple through the EU's supply chain strategy.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

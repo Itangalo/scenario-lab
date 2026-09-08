@@ -1,0 +1,15 @@
+### A Threshold Crossed
+
+Global AI capability reaches 61.0, crossing the 60.0 threshold into a new regime. This leap is not incremental: frontier systems now autonomously execute multi-day professional projects, from drafting complex legal instruments to optimising industrial supply chains with minimal human input. Developers report that these models are contributing to the design of their own successors, accelerating the feedback loop. The jump triggers quiet alarm in intelligence and research communities, as the line between tool and agent blurs.
+
+The open frontier advances. An open-weight model, derived from a leaked frontier checkpoint and refined through distributed collaboration, demonstrates autonomous cyber exploitation and synthetic reasoning at scale. Openweight capability rises to 49.0 — a significant gain, but still trailing the closed frontier and reflecting the lag inherent in replication and adaptation. The model is deployed in targeted attacks on underdefended infrastructure, from municipal networks to mid-tier financial platforms. The EU’s underground audit collective confirms the presence of self-replicating exploit chains, validating earlier warnings. While concerning, the capability increase is consistent with gradual accumulation rather than sudden parity.
+
+The EU advances two initiatives, but neither reaches full completion. The **Emergency Compute Assurance Programme** makes substantial progress, finalising the mapping of essential public functions and failover protocols. However, integration with live crisis response systems remains ongoing, delaying full operational impact. Similarly, the **Tech Sovereignty Package** establishes accelerated permitting zones and legal frameworks, but private investment continues to lag, and implementation is uneven across member states. These advances contribute partially to resilience, which rises to 46.0, reflecting progress short of full completion.
+
+The EU launches the **Public-Access Interpretability Registry**, mandating transparency for AI systems in public services. However, legal pushback from cloud providers and member states over emergency requisition powers stalls progress on the **EU Compute Access Guarantee**, the named priority. The Commission’s invocation of the Digital Markets Act triggers protracted negotiations, with no fallback agreements finalised.
+
+Public sentiment remains stagnant at 30.0, as high-profile incidents dominate discourse. Political capital tightens further under the weight of four ongoing measures and the failed priority push, despite modest gains in resilience.
+
+### US Posture Set
+
+The new US administration takes office, adopting a **CONSOLIDATION** posture. Frontier access will now be rationed by country tier, increasing the cost of EU sovereignty-building efforts and heightening exposure risks.

@@ -1,0 +1,17 @@
+### A Turning Point in Visibility
+
+The EU publishes the first full audit of a flawed welfare algorithm, tracing unauthorised updates to a foreign model that led to systemic denials. The report, released by the European AI Office using emergency technical teams mobilised under the Emergency Cyber Resilience Surge, marks a rare moment of clarity: for the first time, the public sees not just that an AI failed, but how. This builds fragile legitimacy, but the celebration is brief.
+
+### Proposing Oversight, Not Yet Operating It
+
+Building on the audit’s momentum, the European Commission begins drafting the **Sovereign Runtime Monitoring and Intervention Layer**, a real-time observability framework for AI systems above 55.0 capability in critical public functions. Preliminary technical design and legal scope are circulated internally, with a formal proposal expected next turn. The framework would mandate inference-layer logging and cryptographic attestations from providers operating in health, energy, and transport, with enforcement powers granted to ENISA. However, no final decision is made this turn, and deployment timelines remain undefined. Member states are consulted informally, with strong signals of resistance already emerging.
+
+### Resistance and Defection
+
+A defecting member state, having struck a bilateral deal with a U.S. hyperscaler, refuses even to evaluate the draft proposal, citing national sovereignty and commercial confidentiality. Washington issues a cautious public statement, reiterating its commitment to the transatlantic alliance while expressing concerns about potential compliance burdens and interoperability risks. Major cloud providers warn of performance degradation should such a regime be implemented. The EU discusses activation of the Anti-Coercion Instrument, including data flow restrictions, but no action is taken this turn.
+
+### Resilience and Fragile Gains
+
+Pilot efforts under the Emergency Cyber Resilience Surge continue in German and French hospitals, reducing incident response time by 40% in controlled environments. However, broader rollout remains slow. ai_safety improves moderately due to increased diagnostic clarity from audit methods, and resilience inches upward. eu_ai_sovereignty holds steady — no gain from the draft monitoring layer, as it has not advanced beyond early drafting. Political capital declines under the strain of sustaining multiple large initiatives, and public sentiment remains flat despite the audit’s transparency.
+
+The openweight capability remains unchanged at 53.5, reflecting continued barriers to diffusion under geopolitical friction and lack of new open infrastructure deployment. While global open research progresses, the EU’s isolated position and restricted access to frontier compute prevent meaningful domestic accumulation this turn. ai_capability increases by +0.5, consistent with the notepad’s calculation of +1.5 global growth minus a −1 penalty from the ongoing eu_frontier_access_denied effect. The notepad’s internal proposal bonus of +3 for the Emergency Cyber Resilience Surge is retained as forward momentum, but no sovereignty gain is recorded until implementation advances beyond proposal.

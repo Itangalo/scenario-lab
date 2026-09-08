@@ -1,0 +1,110 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9016723004735382,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.03175660693297855,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6690990663842414,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.793031624999085,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.16197103861123252,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.21333333333333335,
+    "probability_samples": [
+      0.16,
+      0.22,
+      0.26
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7175693656049928,
+    "triggered": false
+  },
+  {
+    "id": "emergent_joint_threat_initiative",
+    "probability": 0.12,
+    "emergent": true,
+    "description": "A joint cyber command or biosurveillance pact invites Union participation after a major incident, pooling intelligence and response capacity. Requires a recent shock to overcome inertia.",
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.04152367659104339,
+    "triggered": true
+  },
+  {
+    "id": "emergent_evaluation_crisis",
+    "probability": 0.2833333333333333,
+    "emergent": true,
+    "description": "Independent audits of the Secure the Core initiative reveal that the air-gapped evaluation nodes are operating with outdated test suites and lack real-time adversarial probing capacity. The evaluation framework cannot keep pace with frontier model obfuscation techniques, raising doubts about the credibility of the entire EU assurance pipeline just as it becomes operational.",
+    "probability_samples": [
+      0.25,
+      0.35,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.12028432450575477,
+    "triggered": true
+  }
+]

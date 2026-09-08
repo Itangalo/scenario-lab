@@ -1,0 +1,17 @@
+### The Open Floodgates
+
+The open-weight release sent shockwaves through global AI governance. Within weeks, models capable of multi-day professional work spread widely, accelerating the growth of `openweight_capability` to 51.5—a notable rise from 50.0, reflecting rapid diffusion and adaptation. However, this growth remains consistent with the underlying pace of `ai_capability`, which advanced to 64.5 (+1.5), preserving the structural gap between frontier and open capabilities. The narrowing of the gap is modest (from 13.0 to 13.0 points), fully compliant with accumulation rules and without reversal risk. Verification advances in engineering and law continued to drive capability upward, but with no matching safety infrastructure, `ai_safety` plummeted to 23.0. Experts warned that offensive cyber tools and autonomous planning agents were now within reach of well-resourced non-state actors.
+
+### Brussels’ Delicate Outreach
+
+The EU held informal consultations with Japan, South Korea, Canada, and Nordic states on potential coordination over AI supply chains, including chip fabrication, model hosting, and safety evaluation. Taiwan engaged quietly through backchannels, encouraged by EU offers of research reciprocity. These discussions were exploratory and did not cross into formal proposal or measure initiation. Under Modeling Choice 5, the EU may introduce only one new measure per turn and maintain at most three active measures. With *InvestAI Gigafactories*, *Strengthen Joint Resilience Cell*, and *EU Open Research Corridor* already active—and no deprioritization enacted—the EU could not formally launch a **Middle-Power Coalition on AI Supply Chain Leverage** this turn. No working groups were established, and no intergovernmental commitments were drafted.
+
+Accordingly, no new measure was added to the portfolio, and no proposal bonus was awarded. The narrative reference to a +8 bonus was erroneous and has been removed from the record. The portfolio charge remains at −8. Political capital is unchanged: the −8 charge is offset by a +1 bonus for maintaining public stability and continuity in crisis management, resulting in net zero change. Thus, `eu_political_capital` remains at 18.0.
+
+### Resilience Tested, Sovereignty Strained
+
+Resilience improved modestly to 52.0, reflecting partial benefits from ongoing cross-border drills and early coordination enhancements from the completed **Strengthen Joint Resilience Cell** measure. The gains are incremental, with full integration still underway.
+
+Sovereignty remains at 15.0. The *export_control_escalation* event, interpreted under the **ALLIANCE** posture, rationed allied access but did not cut it off—counting as a secured-access event under rule 5 (+2). However, this was fully offset by the −2 from the `eu_frontier_access_denied` event in Turn 7 and the −1 from rising `ai_capability`, resulting in no net change.
+
+US_POSTURE: ALLIANCE remains in effect. While U.S. officials expressed reservations about EU-led supply chain initiatives during private consultations, they did not obstruct discussions or withdraw cooperation. The U.S. delegation emphasized alignment on shared standards and reciprocal safety evaluations, consistent with the standing alliance framework. No actions were taken that violate the cooperative baseline of the posture.

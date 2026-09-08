@@ -1,0 +1,15 @@
+{
+  "status": "approved",
+  "iterations": 3,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 52.0 to 57.0 (+5.0) while `ai_capability` increased only by 1.0 (from 61.0 to 62.0). The open-weight capability cannot grow faster than the frontier AI capability unless justified by a specific, narrated event such as widespread leakage or release of frontier models. While the narrative mentions \"dual-use models leaked,\" this is vague and does not establish a sufficient causal link or scale to justify a +5 jump in openweight capability—especially one that closes the gap by 5 points when the frontier itself advanced only 1 point. This violates the invariant that `openweight_capability` never exceeds `ai_capability` and must generally follow its trajectory without outpacing it significantly without extraordinary justification.\n- Modelling Choice 5 violated: The update applies a sovereignty change of −2 (from 21.0 to 19.0), but the notepad calculates an intermediate value of 23 before adjusting down due to \"partial EMASI delivery and access denial impact.\" However, no such downward adjustment mechanism exists in Metric Rule 5—sovereignty changes are determined strictly by the sum of discrete terms (capability growth, event hits, measure completion, decay). The narrative and notepad introduce an ad hoc −4 reduction not grounded in any defined term, which contradicts the constitutional requirement that metrics evolve through rule-based additions, not narrative-driven corrections. This undermines the integrity of the metric system."
+    },
+    {
+      "iteration": 2,
+      "violations": "- Sovereignty calculation contradicts notepad: Narrative and final metric report sovereignty at 20.0, but the notepad calculates 19 after adjustments. The notepad is the authoritative record, so either the narrative or the final metric must reflect 19.0. Reporting 20.0 violates the invariant that the notepad governs what has already happened.\n- Political capital drop inconsistent with rules: Political capital falls from 28.0 to 22.0 (−6), but no justification is provided in the narrative or notepad for such a large drop. The notepad shows no political capital terms summing to this effect (no penalty tags like \"overreach\" or \"backlash\", no legitimacy lend deduction, and proposal bonus offsets some cost). A −6 shift requires explicit modelling under Rule 7; falling more than decay and portfolio charge allows is a violation unless justified by event or rule."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

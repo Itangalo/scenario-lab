@@ -1,0 +1,39 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.15666666666666668,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_displacement_wave",
+    "probability": 0.3499999999999999,
+    "emergent": true,
+    "description": "Multiple EU member states report sharp increases in job losses in administrative, legal support, and junior software roles, directly attributed to AI adoption in private firms. Media coverage intensifies, linking specific company rollouts to layoffs, and trade unions begin coordinating cross-border responses. This creates political pressure for retraining programs and strengthens anti-AI sentiment in affected regions.",
+    "probability_samples": [
+      0.35,
+      0.35,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_asml_defiance_negotiations",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "ASML management, under sustained U.S. pressure to restrict exports further, begins quiet negotiations with the European Commission to establish a formal EU-level export licensing framework that would allow partial compliance while preserving strategic autonomy. The company signals it may resist unilateral U.S. demands if the EU offers a coordinated alternative, creating a potential flashpoint in transatlantic tech policy.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

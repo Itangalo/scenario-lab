@@ -1,0 +1,15 @@
+### A Surge of Capability, a Silence on Safety
+
+Global AI capability advances by 4.0 points to 74.0, driven by recursive self-improvement cycles now entrenched in leading labs. With no safety upgrades landing on deployed systems and opaque reasoning widespread, ai_safety remains at 3.0 — stagnant in the danger zone.
+
+A major medical breakthrough delivers gene-targeted therapies for two rare diseases, developed using frontier AI. Public sentiment rises as lives are saved — but the models behind the breakthrough are locked in U.S. data centres, accessible only through restrictive licensing. The benefit is real, yet it underscores Europe’s dependency, limiting the sentiment gain.
+
+The EU advances negotiations on two landmark equity deals through the Sovereign AI Acquisition Facility, targeting leading labs in Montreal and Seoul. Legal and jurisdictional challenges persist, particularly over data sovereignty with Canada, and no final agreements are signed this turn. The deals remain in flux, with integration planning underway but ownership not yet secured. The U.S. administration formally adopts a consolidation posture, restricting foreign access to frontier AI. Tiered access begins, placing the EU in a conditional category — not locked out, but subject to growing scrutiny. This posture complicates the Montreal deal, which now faces additional review and may require concessions.
+
+The Tech Sovereignty Package completes its legislative journey and is formally adopted, marking a significant step toward coordinated EU action on compute and talent. However, the Pre-Release Evaluation Authority only clears its final parliamentary hurdle — it is now law, but lacks emergency powers and will not become operational until implementation frameworks are built over the next turn. No immediate regulatory effect is felt, preserving the minimum one-turn lag for operational impact.
+
+The Emergency Resilience Surge progresses: AI red-teaming identifies critical flaws in emergency dispatch systems, and automated patching rolls out across three nations. Resilience climbs to 55.0 as defences harden. The new Open-Source Verification Stack launches in beta, offering limited auditability for public-sector AI — a step toward transparency, though not yet transformative.
+
+With seven measures in flight — including a priority — political capital erodes further. Legal disputes flare over data sovereignty in the Montreal deal, and one member state delays ratification. Public sentiment improves slightly, but not enough to offset the strain. eu_political_capital drops to 8.0, deepening the risk of agenda collapse.
+
+Openweight capability rises to 67.5, narrowing the gap with frontier models through coordinated EU-funded training runs on existing open architectures. This growth is strong but remains below the 74.0 frontier, consistent with catch-up dynamics under constrained access. The rise reflects intensified effort, not unrestricted access — and falls short of matching the full pace of closed frontier systems.

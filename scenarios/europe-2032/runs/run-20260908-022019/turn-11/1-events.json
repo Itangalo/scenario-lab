@@ -1,0 +1,26 @@
+[
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_sovereign_compute_blackout",
+    "probability": 0.26,
+    "emergent": true,
+    "description": "A coordinated campaign of sabotage targets EU data centres hosting sovereign AI infrastructure, exploiting leaked access credentials and insider threats. Multiple facilities in France, Poland, and the Netherlands suffer simultaneous power and network disruptions, with attackers demanding the suspension of all autonomous agent deployments. The incident exposes critical gaps in physical and personnel security for AI infrastructure.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

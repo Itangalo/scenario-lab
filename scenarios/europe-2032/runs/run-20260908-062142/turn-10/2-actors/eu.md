@@ -1,0 +1,26 @@
+No statement changes.
+
+## Portfolio
+``Critical Infrastructure AI Shield Initiative (category 6, costs 3 per turn, started turn 7, finishes on turn 9): A rapid deployment programme to harden 80% of EU critical infrastructure operators—energy, water, transport, health—against AI-generated cyberattacks by integrating EU-controlled defensive agents from the Sentinel Programme into their SOC stacks within 18 months, with mandatory adoption and centralised threat intelligence sharing`` — **finished**
+``Emergency Social Transition Compact (category 7, costs 3 per turn, started turn 8, finishes on turn 10): Establishes a binding, EU-wide framework for AI-driven job displacement, co-governed by the reactivated European Labour Council, to scale worker cooperatives, retraining pipelines, and wage insurance in sectors under acute automation pressure, funded by a levy on firms deploying AI at scale``
+``Data Soil Expansion and Rural AI Integration Programme (category 9, costs 3 per turn, started turn 9, finishes on turn 11): Launch a pan-EU rollout of the emergent Data Soil initiative, integrating repurposed defensive AI models into agricultural planning, carbon farming, and rural economic development, with member-state co-investment and technical support from Eurostat, EEA, and CAP infrastructure``
+
+## New measure
+**Sovereign AI Core: Secure Compute & Talent Foundation**  
+Establish a legally sovereign, physically distributed, and politically insulated foundation of compute and technical talent to run and verify AI systems essential to EU strategic autonomy, starting with hardened clusters in Finland, Belgium, and Bulgaria.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size:` large  
+`Finishes on turn:` 13  
+`Targeted effect:` Increase eu_ai_sovereignty by 8–12 points by anchoring 15 exaFLOP/s of secure, auditable training compute on EU soil under irrevocable jurisdiction; attract and retain 200 frontier-level engineers through fast-track visas, housing, and public-sector research mandates; lay groundwork for future model sovereignty. Prevent further erosion of eu_political_capital from external access denial.  
+`Applies to:` European High Performance Computing Joint Undertaking, national energy regulators, Frontex (for border resilience use case), national research ministries, EuroHPC centres in CSC, LRZ, and ELI-NP
+
+## Priority
+**Emergency Social Transition Compact** — because the emergent_labour_displacement_wave has overwhelmed retraining systems, protests are spreading, and wage insurance alone is failing to contain social fracture — without restoring legitimacy through visible worker pathways, even sovereign compute will lack democratic endurance.
+
+## In practice
+We are closing the Critical Infrastructure AI Shield Initiative with formal validation from ENISA: 14 member states have integrated defensive agents into SOC stacks, and joint telemetry with Japan and South Korea enabled partial containment of the recent attack. But the incident revealed that even our own defensive systems rely on opaque reasoning chains we can no longer audit — a failure not of intent but of foresight. The Shield held, but it is not transparent, and it is not under full democratic control. Germany’s opt-in pilot remains fragile; we are offering Bavaria priority access to Data Soil analytics for flood resilience in exchange for full SOC integration by turn 11.
+
+The Emergency Social Transition Compact is now in full disbursement phase. The levy has raised €920 million from 47 firms, and the European Social Fund+ is scaling retraining in AI-adjacent trades — green retrofitting, care robotics maintenance, carbon auditing. But demand exceeds capacity by 3.7×, and protests in Paris, Athens, and Vilnius are targeting AI deployment sites directly. We are invoking Article 153 urgency again to fast-track regional transition councils, co-chaired by trade unions and municipal leaders, to co-design local AI adaptation plans — not just compensation, but co-ownership. This is the only way to rebuild legitimacy: by making AI answerable not just to capital, but to communities.
+
+The Data Soil programme is in early rollout: pilot regions in Andalusia, Wallonia, and Crete are using repurposed agent models for drought forecasting and soil carbon tracking. But rural broadband gaps and local resistance to centralised AI planning are slowing adoption. We are pairing the rollout with CAP reform negotiations, offering member states enhanced co-financing if they align AI deployment with ecological outcomes. Still, the programme is not moving fast enough to offset the gathering storm in public sentiment — which is why we are launching the Sovereign AI Core. This is not another Gigafactory. It is a constitutional act: compute as critical infrastructure, talent as strategic reserve, and jurisdiction as non-negotiable. We are fast-tracking land allocation in Kittilä and Sines under Article 122, securing long-term power contracts, and launching the European AI Talent Corridor with expedited Schengen processing for 500 researchers. Without this, every defensive or social measure we pass can be nullified by a foreign access cut-off — as we saw this turn with eu_frontier_access_denied. We act now to ensure the Union does not beg for its own future.

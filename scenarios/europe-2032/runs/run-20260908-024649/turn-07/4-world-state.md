@@ -1,0 +1,19 @@
+### The Weight of Dependence
+
+A wave of AI-driven ransomware cripples regional health and transport systems across three member states, exploiting vulnerabilities mapped by open-weight models. Defenders are overwhelmed; recovery relies on manual override, exposing the limits of planning without guaranteed compute access. The EU activates crisis protocols, but the incident confirms a hard truth: sovereignty cannot be legislative alone.
+
+In response, the Commission proposes the **Emergency Fallback Procurement Directive**, invoking Article 122 to establish a legal basis for hyperscaler compute requisition during crises. The proposal triggers intense negotiations. The US-based firm resists, citing shareholder risk, while the Asian operator demands expanded market access. Only the European provider signals conditional support. The directive is expected to take at least two turns to fully implement, reflecting high governance and diplomatic costs.
+
+Meanwhile, the **InvestAI Gigafactories** programme reaches substantial completion, with four new sovereign compute sites delivered. Integration with the EU Compute Access Guarantee is delayed at one site due to staffing shortages and power infrastructure bottlenecks, pushing full operational capacity to the next turn. However, the partial delivery is sufficient to unlock key sovereignty benefits, particularly in resilience planning and crisis response posture. The **Public-Access Interpretability Registry** remains active, but vendor pushback intensifies. Two major AI suppliers threaten to withdraw from public tenders unless audit requirements are scaled back. The Commission holds firm, tying compliance to AI Act certification, but no new progress is made this turn on registry expansion.
+
+Public sentiment dips as job losses in legal and administrative sectors mount, amplified by the cyberattack’s visibility. The US deepens export controls on chipmaking equipment, leveraging jurisdiction over embedded American technology to restrict sales to China and beyond — including to EU allies. The Union’s sole supply-chain leverage is being exercised by another power.
+
+With multiple high-cost measures still in flight — EU Compute Access Guarantee, Public-Access Interpretability Registry, and now the new Emergency Fallback Procurement Directive — and no formal deprioritization, the portfolio charge remains heavy. Political capital erodes further under the strain of overextension, reflecting the difficulty of sustaining momentum across a broad front without clear triage. The priority remains formally unchanged, but the lack of acceleration signals growing fatigue.
+
+### Sovereignty, Hard-Won
+
+The partial completion of the gigafactories and the proposal of a fallback procurement mechanism contribute to a measured rise in EU AI sovereignty. Gains are tangible, rooted in infrastructure and contingency planning, not legislative ambition alone. The notepad confirms that the base sovereignty value rises to 21 this turn, reflecting the incremental delivery of sovereign compute capacity and the activation of crisis-linked policy mechanisms. However, the absence of open innovation advances and continued integration delays temper the uplift, applying a −1 adjustment to reach a final value of 20.0.
+
+Without a corresponding rise in open-weight model capability — no new releases or collaborative breakthroughs occurred — openweight_capability holds steady. Sovereignty advances, but slowly, and at a cost to political capital.
+
+Global AI capability continues to rise at its fixed, unannounced rate. The +1.5 increase in ai_capability reflects ongoing accumulation from distributed research, private sector scaling, and model refinement outside the EU’s direct control — a background trend consistent with the regime of fixed world-speed. This growth is not driven by EU action, but it compounds, quietly raising the bar for strategic autonomy.

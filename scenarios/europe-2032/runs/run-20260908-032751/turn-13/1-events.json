@@ -1,0 +1,37 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_market_crisis",
+    "probability": 0.3499999999999999,
+    "emergent": true,
+    "description": "Preliminary labour data from Germany, France, and Spain reveal a synchronized collapse in entry-level hiring across legal, administrative, and technical sectors, with AI automation cited in over 60% of employer exit interviews. The pattern suggests systemic displacement rather than isolated automation, triggering emergency social dialogue at the European Commission.",
+    "probability_samples": [
+      0.35,
+      0.35,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.09999999999999999,
+    "probability_samples": [
+      0.0,
+      0.15,
+      0.15
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  }
+]

@@ -1,0 +1,7 @@
+- `emergent_lab_cooperation` -- first noted turn 4, listed in 3 turn(s) so far: National AI research labs across the EU deepen informal coordination on red-teaming and safety evaluations, sharing test frameworks and anomaly reports. The collaboration remains ad hoc, but signs of a de facto safety culture are emerging.
+- `emergent_public_outrage` -- first noted turn 4, listed in 3 turn(s) so far: Public and media scrutiny of AI in critical infrastructure intensifies, fueled by the election annulment and the member state's unilateral deal. Civil society groups demand binding transparency, and national parliaments consider inquiries into foreign-controlled AI in judiciary and health systems.
+- US_POSTURE: pending (administration takes office next turn)
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereign Model Initiative −3, Cyber Shield Enforcement Mechanism −3, Critical Dependency Shield −3, priority −1 = −16
+- PROPOSAL BONUS: Critical Dependency Shield (cat 6, large) +4 — addresses taiwan_blockade, supply_chain_coercion, and election_retrenchment directly, all within three turns, with systemic resilience focus
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 24.0 last turn, no capacity event, SMI in flight +0, capability rose 0.5 −1 = 23.0 → but supply_chain_coercion t5 −1 applies: Union's access to enabling infrastructure is actively restricted by external coercion → 22.0

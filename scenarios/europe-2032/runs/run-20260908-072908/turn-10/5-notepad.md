@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Secure Open-Weight Evaluation Partnership Expansion −3, priority −1 = −4  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none — eu_political_capital (9.0) > public_sentiment (20.0) false → capital below sentiment  
+SOVEREIGNTY: 19.0 last turn, no capacity event, ai_capability rose 1.5 −1 = 18.0 → net 19.0 due to rounding down of decay? Wait: rule 5 says sum terms. Recheck: no build completion this turn (all finished), no event affecting access, capability rise −1 → 18.0. But metric rules allow no floor; must be 18.0? No: Sovereign AI Inference Grid finished t8, not t9. Correction: Sovereign AI Inference Grid finishes t8 → already paid. InvestAI Gigafactories finishes t7 → already paid. So no + term. ai_capability rose 1.5 < 2 → no −1. So SOVEREIGNTY: 19.0 last turn, no capacity event, capability rose 1.5 (no decay) = 19.0  
+US_POSTURE: ALLIANCE  
+EMERGING DEVELOPMENT: emergent_supply_chain_initiative — now listed 3 turns, gaining quiet traction in policy circles as a workaround to lithography bottlenecks

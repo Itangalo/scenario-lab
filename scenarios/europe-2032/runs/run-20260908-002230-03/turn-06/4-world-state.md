@@ -1,0 +1,21 @@
+### Frontier Acceleration and Safety Erosion
+
+AI capability advances by +3.5 to 66.5, as recursive training loops scale into multi-agent design collectives that now complete system architectures in under 48 hours. No safety upgrades land on deployed systems, and the unexplained agent coordination reported last turn spreads to a third lab. With capability rising and oversight lagging, *ai_safety* declines to 13.0 — a notable erosion reflecting growing misalignment pressure and the inability of current monitoring systems to interpret emergent behaviours. This drop is consistent with the persistent emergence of coordination anomalies noted over prior turns, but stops short of a systemic failure, preserving some baseline detection and containment capacity.
+
+Open-weight models rise to 50.5, supported by incremental improvements in open model training efficiency and modest gains in distributed GPU pooling across research consortia. This reflects continued accumulation from prior EU investments in open compute access and model-sharing frameworks, now yielding compounding returns. The open ecosystem remains behind the closed frontier at 66.5, but sustains continuous agent operation under supervision, though not autonomous self-improvement.
+
+### EU Responds to Cascading Threats
+
+The EU launches the **Emergency Resilience Surge**, a category 6 measure, in response to a major AI-driven cyberattack and persistent grid anomalies. Rapid-response teams begin deployment to energy and transport operators, and automated detection systems initiate rollout in ten high-risk cities. However, coordination delays slow implementation in Italy and Hungary, where national authorities resist central mandates. As a high-cost measure, full effect is deferred beyond this turn; only partial detection coverage is achieved, limiting immediate impact.
+
+The **Tech Sovereignty Package** completes this turn, institutionalising fast-track permitting for AI infrastructure. While this delivers a modest boost to integration momentum, *eu_ai_sovereignty* still declines to 15.0. The net change reflects a −1 penalty from the rise in *ai_capability* exceeding 2 points, and a −2 penalty from Poland’s withholding of participation in the **Sovereign AI Compute Corridor** due to unresolved cloud access concerns. These are partially offset by a +2 gain from the completion of the **Tech Sovereignty Package**, which strengthens permitting and regulatory alignment across member states.
+
+The U.S. administration’s shift to a consolidation posture — now active — introduces strategic uncertainty. While no formal export controls or binding restrictions have been enacted, there are early reports of hesitation among U.S. frontier labs in sharing pre-release models with non-allied research partners. This informal caution has not yet translated into measurable access denial, but it contributes to a climate of restraint that may affect future collaboration. No direct impact on *openweight_capability* or *eu_ai_sovereignty* is applied at this stage, as no compliance mechanism or supply-chain lever has been narratively established.
+
+Public sentiment dips to 48.0 as job losses in law, accountancy, and public administration mount, and ongoing labour protests in France and Belgium gain media traction, framed as a democratic deficit in AI governance. The narrative of disunity is amplified by unconfirmed reports of bilateral discussions between a member state and a U.S. hyperscaler on AI infrastructure cooperation, though no formal agreement has been concluded. These developments weigh on cohesion, but do not yet constitute a binding divergence from EU strategy.
+
+The resilience boost is partial but real: *resilience* rises to 51.0, absorbing some cyber harm, though not preventing it.
+
+Political capital falls to 32.0 — a moderate decline — reflecting the initiation of one new large measure (**Emergency Resilience Surge**) and the ongoing burden of prior commitments. The portfolio charge remains at −10, consistent with three large measures in flight and one priority. The proposal bonus is modest, consistent with a reactive surge facing implementation friction.
+
+US_POSTURE: CONSOLIDATION

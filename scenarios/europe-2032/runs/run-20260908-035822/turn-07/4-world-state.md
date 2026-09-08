@@ -1,0 +1,13 @@
+### The Reckoning of Access
+
+Global AI capability climbs to 58.0, driven by algorithmic efficiency gains and distributed training innovations. The frontier continues to outpace governance, even as a major safety breakthrough—enabling real-time prediction of emergent model behavior—is adopted across leading labs, lifting `ai_safety` gradually. Initial integration into training pipelines has begun, but full deployment will take time; the safety gain this turn reflects only partial uptake, with broader implementation expected over the coming months.
+
+In Europe, the abrupt denial of access to the leading AI model sent shockwaves through public services. Hospitals in three member states lost diagnostic support overnight; government AI tools went dark. The EU responded not with appeals, but with resolve. The Accountability Framework for High-Capability Systems, already in development, was retooled into a doctrine of retaliation: the EU would no longer rely on goodwill, but enforce consequences.
+
+Proposed amendments under the Digital Markets Act and AMLD6 aim to enable financial interdiction against entities using unregistered models above 45.0 capability. However, implementation remains in early stages. While political agreement was reached this turn, pilot enforcement in Belgium, the Netherlands, and Finland has been delayed by legal reviews and coordination hurdles. SWIFT-affiliated banks have been notified of pending protocols for transaction freezes, but no operational systems are yet live. The high-cost nature of this regulatory shift means full effect is still at least one turn away.
+
+Yet the moment was fragile. The **export_control_escalation** tightened chip and model exports, rationing even allied access—confirming a fragmented, zero-sum world. The EU’s own compute ambitions faltered: grid bottlenecks and legal challenges delayed the InvestAI Gigafactories, undermining sovereignty. Trust eroded further as a central member state deepened its bilateral ties with a US hyperscaler.
+
+Public sentiment dipped as strikes in France and Spain over automation rolled into transport and healthcare, framing the new accountability push as elite retaliation, not protection. The **emergent_regional_ai_pact** gained traction, not as a solution, but as proof of Brussels’ weakening grip.
+
+Resilience rose slightly, buoyed by completed cyber shields and monitoring systems. But sovereignty fell—dependent on external models and losing ground domestically. Political capital dwindled under the weight of stalled projects and rising backlash. Open-weight models advanced moderately, benefiting from newly released training techniques, but remain behind the frontier, now at 50.0.

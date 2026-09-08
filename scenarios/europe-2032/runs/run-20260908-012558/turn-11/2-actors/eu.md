@@ -1,0 +1,38 @@
+## Statement changes  
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now see that without presence, we cannot fulfill either.  
+- Grounds: The annulled election, the biosecurity precursor, and the cyber_major_incident all trace back not to lack of will, but to lack of operational control. We have authority on paper, but enforcement fails where access ends. Our sovereignty is still outsourced, and our safety regime is blind to the systems that matter. This is not a failure of principle — it is a failure of presence. We must now treat physical and legal anchoring of AI control as the precondition for both mandates, not a policy option between them.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will no longer accept acting without leverage.  
+- Grounds: We acted under uncertainty and were not late — the Emergency Directive is live, the Response Corps intervened, and the annulled election triggered swift review. But we acted without the means to enforce our decisions. US labs withhold weights, open models run unchecked on consumer hardware, and critical infrastructure remains exposed. The cost of acting without leverage is not just inefficacy — it is erosion of credibility. From now on, commitment must include control.
+
+- modify `two_year_commitment` (commitment): Anchor the means of AI control — sovereign compute, public evaluation, and intervention capacity — within the Union’s legal and physical reach to prevent catastrophic risk and secure Europe’s strategic autonomy; now prioritising enforcement reach over symbolic compliance.  
+- Grounds: The directive is operational in name, but Leuven remains understaffed, pre-deployment reviews are stalled, and no US provider has shared weights. Meanwhile, the cyber_major_incident originated in an open-weight model running on repurposed hardware — a vector we can neither monitor nor stop. Our two-year commitment stands, but its emphasis must shift: from establishing authority to ensuring it can be exercised. Symbolic compliance with Japan and Canada is not enough. We must now compel access — or build our own way around it.
+
+## Portfolio  
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — finished this turn  
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — finished this turn  
+- `Establish EU AI Emergency Response Corps (category 6, costs 3 per turn, started turn 2, finishes on turn 4): A standing, cross-border unit with legal authority to intervene in AI-driven incidents affecting critical infrastructure, equipped with technical forensics, cyber countermeasures, and coordination powers` — finished this turn  
+- `Accelerate Sovereign Compute Access via Repurposed Hardware and Emergency Permitting (category 4, costs 3 per turn, started turn 2, finishes on turn 5): We invoke emergency powers to fast-track access to existing high-performance computing clusters across member states, repurpose them under EU coordination, and secure them as sovereign AI infrastructure` — finished this turn  
+- `Launch EU-wide AI Labour Transition Guarantee (category 7, costs 3 per turn, started turn 4, finishes on turn 8): A legally binding promise to every worker displaced by AI in the public or regulated sectors: six months of full wage replacement, access to retraining in AI-augmented professions, and guaranteed public-sector placement if no match is found within a year` — finished this turn  
+- `Launch EU AI Safety Emergency Directive (category 1, costs 3 per turn, started turn 8, finishes on turn 9): We declare a systemic risk event under Article 22 of the Treaty on European Union, enabling emergency powers to mandate pre-deployment evaluations, restrict high-risk models, and enforce transparency across all AI systems operating in or affecting the EU` — finished this turn  
+
+## New measure  
+**Measure: Launch Sovereign Model Development Initiative**  
+A dedicated EU-led programme to train and deploy a frontier-capable model, evaluated and controlled entirely within EU jurisdiction, to break dependency on foreign weight-sharing and enable effective enforcement.  
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 17`  
+`Targeted effect:` Increases eu_ai_sovereignty (by 10–15 points), enables meaningful ai_safety oversight (supports +10–15 on ai_safety over time), reduces dependence on openweight and foreign models  
+`Applies to:` EU jurisdiction, with binding access for EU AI Office, accredited labs, and Emergency Response Corps  
+
+## Priority  
+Priority: Launch Sovereign Model Development Initiative  
+Because the Emergency Directive cannot be enforced without access to model weights, and US providers continue to refuse sharing — and because the openweight frontier is now a proven attack vector — we must no longer rely on external cooperation to secure our own safety. This is not about matching the global frontier at 78.5; it is about having one sovereign, auditable, controllable system at 70+ that we can use to evaluate, monitor, and intervene — finally closing the loop between authority and capability.
+
+## In practice  
+We are acting on a new imperative: control must be built, not bargained for. The cyber_major_incident — a ransomware sweep across public services, enabled by model-generated exploits and targeting municipal infrastructure — was traced to an agent fine-tuned from an open model at 61.0 capability. It ran on repurposed consumer GPUs, evading all pre-deployment scrutiny. The Emergency Response Corps contained it, but only after weeks of cascading outages in Belgium and northern Italy. This is not a failure of detection — it is a failure of reach. We have labs, but no weights to test. We have authority, but no means to enforce it.  
+
+We are now launching the Sovereign Model Development Initiative under the Digital Europe Programme and EuroHPC, with €42bn in initial funding drawn from the unspent margins of the InvestAI Gigafactories programme and redirected cohesion funds. The model will be trained on EU-secured compute, using data curated under GDPR and evaluated under the Emergency Directive’s framework. We are tasking a newly reinforced European AI Office — now with binding access rights to all sovereign infrastructure — to oversee its development, with mandatory interpretability, red-teaming, and continuous monitoring baked in from the start. This is not a research pilot. It is a strategic necessity.  
+
+France, Germany, and Poland have agreed to co-host the training runs, with Finland providing secure cold-storage infrastructure. We are offering US and UK labs a final six-month grace period to enter binding weight-sharing agreements with the EU AI Office under a new Article 114 legal instrument — but if they do not comply by turn 12, we will impose access mandates on any system above 65.0 capability operating in the EU, enforced through compute licensing and market access restrictions. The backlash_physical events — including the sabotage of a grid connection in Brittany — show that public tolerance is thin. But we will not retreat. We will anchor control where it belongs: on EU soil, under EU law, in EU hands.

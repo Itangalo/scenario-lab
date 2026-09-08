@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech Sovereignty Package −3, Cyber Shield Directive −3, Secure Compute Access Framework −3, Compute for Control −3, priority −1 = −16  
+PROPOSAL BONUS: Compute for Control (cat 4, large) +4 — directly answers cyber_major_incident, ongoing access vulnerability, and capability_jump at threshold 60  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 18.0 last turn, no capacity event, capability rose 2.5 −1 = 17.0  
+emergent_lab_cooperation -- first noted turn 4, listed in 2 turn(s) so far: Informal data-sharing among European AI safety labs expands into a coordinated early-warning network for model anomalies, with prototype detection tools now integrated into internal EU risk assessments. This grassroots cooperation persists outside formal channels but is gaining traction as a de facto standard for cross-border safety coordination.

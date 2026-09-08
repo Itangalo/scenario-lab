@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereign Access Framework −3, priority −1 = −10  
+PROPOSAL BONUS: AI Safety Certification Lab (cat 5, large) +3 — addresses safety lag and enables Sovereign Access Framework; European AI Cyber Assurance Pact (cat 6, large) +4 — directly answers recent cyber incidents; Joint Threat Response Integration (cat 6, large) +3 — enhances coalition readiness → total bonus +10  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 18.0 last turn, no capacity event, Gigafactories in flight +0, capability rose 2.5 −1 = 17.0  
+emergent_global_ai_treaty_discussions -- first noted turn 4, listed in 3 turn(s) so far: Informal talks among technologically advanced nations continue, now including two neutral states. The US election outcome casts doubt on transatlantic alignment, but the shared concern over openweight risks keeps the dialogue alive, albeit at a technical level.  
+emergent_distributed_evaluation_network -- first noted turn 4, listed in 3 turn(s) so far: The distributed evaluation framework is now piloted in three Eastern member states and gains traction in civil society circles. Its use by the newly operational AI Safety Certification Lab lends it credibility, and calls grow for its integration into EU-wide audit standards.

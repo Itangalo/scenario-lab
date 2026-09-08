@@ -1,0 +1,6 @@
+- `emergent_lab_cooperation` -- first noted turn 4, listed in 2 turn(s) so far: National AI research labs across the EU deepen informal coordination on red-teaming and safety evaluations, sharing test frameworks and anomaly reports. The collaboration remains ad hoc, but signs of a de facto safety culture are emerging.
+- `emergent_public_outrage` -- first noted turn 4, listed in 2 turn(s) so far: Public and media scrutiny of AI in critical infrastructure intensifies, fueled by the election annulment and the member state's unilateral deal. Civil society groups demand binding transparency, and national parliaments consider inquiries into foreign-controlled AI in judiciary and health systems.
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield for Critical Operators −3 (finished), Cyber Shield Enforcement Mechanism −3, Sovereign Model Initiative −3, priority −1 = −13
+- PROPOSAL BONUS: Emergency Audit (cat 1, small) +2 — responds to member_state_defection and election_annulled, addressing dependency and legitimacy risks
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 25.0 last turn, member_state_defection t4 −2, capability rose 1.0 −1, SMI in flight +0 = 24.0

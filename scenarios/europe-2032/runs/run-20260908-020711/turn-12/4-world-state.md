@@ -1,0 +1,11 @@
+### Sovereignty Delivered, Oversight Fractured
+
+The EU closed the Sovereign Access Initiative on schedule, finalising binding rules for model portability and fallback deployment across public services. With fallback stress tests completed in Budapest and Warsaw using Site B compute, the framework transitioned from legal text to operational reality, marking a rare win for technical sovereignty. The directive’s enforcement mechanism—linking compliance to cohesion funding—lent it teeth, and member states began integrating fallback protocols into health and energy systems. This progress, anchored in existing infrastructure builds, lifted `eu_ai_sovereignty` by +3.
+
+Meanwhile, the launch of the Independent AI Safety Oversight Board aimed to quell the growing crisis in legitimacy. Yet despite its strong mandate and integration with the Research Corps, early appointments sparked fresh debate. Critics argued the Commission retained too much control over board selection, and civil society nominees faced delays due to vetting disputes. The board’s first task—assessing a leaked frontier model—was seen as high-stakes, but its ability to act independently remained unproven.
+
+Publicly, the EU presented unity, but behind the scenes, coordination frayed. France and Germany continued to resist full enforcement timelines, and the Internal Market Council’s final vote included softened penalties for non-compliance, undermining the initiative’s bite. The Nordic-Benelux threat-sharing pact, now expanded under the emergent regional aid pact, improved detection and response coordination, marginally boosting `resilience` as cross-border cyber drills succeeded.
+
+Globally, AI capability crept upward to 63.5, driven by iterative improvements in training efficiency. The leaked model had not yet enabled a broad capability jump, but replication efforts in closed labs raised alarms. Openweight capability rose slightly to 52.5, limited by hardware access and fragmentation in developer communities.
+
+No new safety evaluations covered frontier models this turn, and the gap between capability and safety persisted. The political cost of launching a large new measure, combined with the ongoing priority, drained `eu_political_capital`, despite the completion of four major initiatives.

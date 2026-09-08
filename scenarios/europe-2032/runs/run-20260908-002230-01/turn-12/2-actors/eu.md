@@ -1,0 +1,28 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Prevent uncontrolled agentic AI from operating in or against EU critical infrastructure by establishing sovereign, real-time detection and intervention capacity over all systems above capability threshold 60.0 — but we now accept that detection without enforcement is futile, and that intervention without control of infrastructure is a signal, not a shield.  
+- Grounds: The backlash_physical event proves that public tolerance for AI infrastructure is collapsing, and the election_annulled event confirms that harm is already materialising through indirect channels — manipulation, erosion of trust, cascading institutional failure — that our detection layer cannot stop even if it sees them. We are politically bankrupt, technically dependent, and socially fractured. The original commitment assumed we could build sovereign capability within the existing architecture of control; we now face a world where the infrastructure itself is contested terrain. This revision acknowledges that detection is not sovereignty — and that intervention requires not just sensors and interpreters, but ownership of the systems they protect. We must now pivot from monitoring to control.
+
+## Portfolio  
+- `Mandatory Integration of Behavioural Safeguards in Critical Infrastructure AI (category 6, costs 3 per turn, started turn 9, finishes on turn 12): Require all AI systems in energy, transport, healthcare and financial market infrastructure to implement EU-certified behavioural safeguards—runtime monitors, circuit breakers, and anomaly detection agents—under real-time oversight by national authorities and ENISA.`  
+- `Critical Infrastructure AI Firebreak Protocol (category 6, costs 3 per turn, started turn 11, finishes on turn 13): Establish a hard separation between AI systems with autonomous planning capability and operational technology in essential services, enforced through air-gapped control layers and human-in-the-loop validation for all high-consequence actions.`  
+- `Sovereign AI Detection and Intervention Layer for Critical Domains (category 5, costs 3 per turn, started turn 12, finishes on turn 15): Deploy a unified, EU-operated monitoring and response infrastructure capable of detecting, interpreting, and halting unauthorised agentic behaviour in real time across all critical systems above capability threshold 60.0.`
+
+## New measure  
+**Sovereign Control of Critical AI Infrastructure via Public Utility Designation**  
+We are placing all AI systems above capability threshold 60.0 operating in or directly affecting EU critical infrastructure under public utility status, with operational control vested in EU-designated entities and subject to direct oversight, audit, and intervention rights.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 16`  
+`Targeted effect: eu_ai_sovereignty +18 (by establishing legal and operational control over critical AI systems), resilience +8 (by enabling direct intervention during incidents), eu_political_capital -4 (due to legal challenges, member state resistance, and private sector backlash)`  
+`Applies to: All AI systems above capability threshold 60.0 operating in energy, transport, health, finance, and electoral integrity domains, regardless of origin or ownership`
+
+## Priority  
+**Sovereign Control of Critical AI Infrastructure via Public Utility Designation** — because detection and firebreaks are meaningless if we do not own the systems we are trying to protect, and because the backlash_physical event proves that infrastructure is now a political battlefield — we must control it or lose it.
+
+## In practice  
+We are acting on the irreversible collapse of external trust and internal capacity. The U.S.-China agreement confirms that the world’s leading powers are stabilising their own relationship on AI risk without us — we were neither consulted nor included. The election_annulled event shows that AI can break democracy without ever triggering a circuit breaker. And backlash_physical reveals that the public will now attack the infrastructure itself, not just protest it. We can no longer rely on goodwill, compliance, or layered defences. We must take control.
+
+Under Article 122 TFEU and the revised NIS3 Directive, we are proposing that all AI systems above capability 60.0 operating in critical domains be designated as public utilities, subject to licensing, operational audit, and, where necessary, direct management by EU-appointed stewards. This does not mean nationalising every model, but it does mean that no system with the power to disrupt essential services can operate outside a framework of enforceable public accountability. Germany and France will resist the centralisation, but we are offering them co-stewardship of the utility boards and priority access to sovereign compute for their national champions. Cloud providers will claim data sovereignty violations, but we are invoking the Digital Markets Act’s gatekeeper provisions to condition access to the EU market on compliance.
+
+Funding will come from the European Defence Fund’s emerging technology window and the Innovation Fund, repurposed under emergency clause. We are fast-tracking legal opinions from the Commission’s services and preparing for immediate challenges at the CJEU. This is not a market correction — it is a reclamation of political agency. We are no longer building walls around systems we do not control. We are taking them.

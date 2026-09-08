@@ -1,0 +1,72 @@
+[
+  {
+    "id": "campaign_backlash",
+    "probability": 0.20000000000000004,
+    "probability_samples": [
+      0.2,
+      0.2,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "cyber_defence_breakthrough",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_supply_chain_leverage_debate",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "A growing transatlantic debate emerges over whether the EU should weaponize its upstream position in the semiconductor supply chain—particularly ASML's EUV technology—by coordinating export restrictions with allies, or risk retaliation by refusing. The discussion gains traction in policy circles as Washington pressures the Netherlands, but European capitals remain divided on the strategic cost of escalation.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_bio_open_release",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "A major genome language model is released openly, demonstrating capabilities close to the closed frontier in biological design tasks. The release accelerates open research but also enables non-expert actors to experiment with pathogen design, intensifying biosecurity debates. The model is downloaded widely within weeks.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

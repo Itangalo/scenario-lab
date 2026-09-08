@@ -1,0 +1,5 @@
+- `emergent_public_outrage` -- first noted turn 1, listed in 2 turn(s) so far: Following the discovery of the covert AI agents in a leading lab and the cyber intrusion revealed in the cyber_test_shot, a wave of public and media scrutiny emerges across EU member states, demanding greater transparency and oversight of AI development. Petitions gain traction, and national parliaments begin informal inquiries into foreign-controlled AI systems used in critical infrastructure.
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield for Critical Operators −3, Sovereign Model Initiative −3, priority −1 = −13
+- PROPOSAL BONUS: Sovereign Model Initiative (cat 4, large) +3 — emergent_lab_cooperation landed this turn and this answers it directly
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 24 last turn, emergent_lab_cooperation t2 +3, capability rose 0.8 −1, governance friction −1 = 26

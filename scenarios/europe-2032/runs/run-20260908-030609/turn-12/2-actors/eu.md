@@ -1,0 +1,32 @@
+## Statement changes  
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now see that without sovereignty, we cannot fulfill either.  
+- modify `two_year_commitment` (commitment): Maintain sovereign control over AI systems that are critical to public function, security, and democratic resilience — and accelerate the operationalisation of that control before dependency becomes irreversible.  
+- reclassify `act_under_uncertainty` to position: We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but only when the action preserves options, not when it locks us into dependency.
+
+- Grounds: The denial of frontier access and the emergent compute rerouting have transformed the strategic landscape: what was a risk of dependency is now an active condition of subordination. The export control escalation confirms that access is not a market question but a political one — and one we are losing. Sovereignty is no longer a hedge; it is the only foundation on which safety, resilience, or public trust can stand. The commitment to act under uncertainty remains valid in spirit, but its application must now be disciplined: we cannot afford to mistake improvisation for strategy when every shortcut deepens our exposure.
+
+## Portfolio  
+- `EU Compute Sovereignty Guarantee (category 4, costs 3 per turn, started turn 7, finishes on turn 8)`: Establish a legally binding, EU-guaranteed minimum compute capacity for critical public functions—health, defence, energy, and emergency response—ensuring uninterrupted access to AI systems at or above 60.0 capability, regardless of external access — **finished this turn**  
+- `Sovereign AI Core for Critical Functions (category 4, costs 3 per turn, started turn 9, finishes on turn 12)`: Designate and harden a minimal set of AI systems—trained, hosted, and operated under EU jurisdiction—as the only models permitted for use in essential public services, with mandatory fallbacks and no exceptions for foreign alternatives  
+- `Joint Threat Response Integration Directive (category 6, costs 2 per turn, started turn 10, finishes on turn 11)`: Formalise EU participation in a joint cyber and bio threat response framework, binding ENISA and ECDC into real-time intelligence sharing, coordinated attribution, and standing response protocols with seven allied states — **finished this turn**  
+- `Emergency Access to Frontier Models for Public Health Applications (category 4, costs 2 per turn, started turn 11, finishes on turn 12)`: Secure immediate, conditional access to the most capable non-EU AI systems for use in EU public health research and clinical deployment, under strict data governance and reciprocal benefit-sharing terms  
+
+## New measure  
+**Accelerated Sovereign Compute Buildout via Binding Energy and Siting Rights**  
+We mandate priority grid access and fast-track permitting for EU-anchored AI compute infrastructure, backed by a €12 billion reinforcement of the Digital Europe Programme, to bring 40 exaflops of sovereign, high-bandwidth training capacity online by mid-2034.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 15`  
+`Targeted effect: eu_ai_sovereignty +12 (by closing the compute gap for training frontier models under EU jurisdiction), resilience +3 (via redundant, hardened infrastructure), public_sentiment +2 (through visible investment in autonomy)`  
+`Applies to: EU member states, major cloud operators with EU operations, national energy regulators, and the European Investment Bank`
+
+## Priority  
+**Sovereign AI Core for Critical Functions** — This remains our anchor, now more than ever: with frontier access denied and compute rerouted, we are not merely preparing for dependency — we are already living it. The Core is the last firewall against total foreign control of public systems, and its completion this turn is non-negotiable. Everything else must bend to ensure it lands.
+
+## In practice  
+This turn, we finalise the Sovereign AI Core in trilogue by invoking Article 114 TFEU as a mutual recognition framework, securing agreement from member states that feared loss of control. We offer expanded Digital Europe Programme co-funding for migration and commit to joint procurement of sovereign AI stacks through the European Defence Agency — now accelerated to include not just software but the underlying hardware stacks. The five-member-state pilot for clinical triage will launch in July, using a 58.0-capable model trained entirely on EU soil, with full auditability and fallback protocols. The EMA will publish its first model behaviour logs under the Emergency Access initiative, setting a precedent for transparency — but also exposing the limits of relying on foreign systems we cannot inspect.
+
+Simultaneously, we respond to the compute rerouting by launching the Accelerated Sovereign Compute Buildout. We convene a special Council meeting under the Digital Agenda, where we present binding energy allocation rules: any data centre hosting training workloads above 50.0 capability must reserve 60% of its EU-based capacity for sovereign projects, or face disconnection from priority grid access. National regulators will enforce this under a new clause in the Critical Infrastructure Directive. The European Investment Bank will issue a €12 billion callable bond, backed by cohesion funds, to finance the buildout. We target three sites — in Finland, Spain, and Poland — for rapid deployment, leveraging existing nuclear and renewable overcapacity. This is not a market signal — it is a command: the EU will not outsource its cognitive infrastructure.
+
+The export control escalation forces a choice: we could accept rationed access under U.S. terms, or we could treat this as the rupture it is. We choose the latter. We will not join a tiered access regime that treats the EU as a client. Instead, we activate the Anti-Coercion Instrument in preparatory mode and begin consultations with Japan and South Korea on mutual compute access. The message is clear: if the West is to hold together, it must do so as equals — or it will not hold at all.

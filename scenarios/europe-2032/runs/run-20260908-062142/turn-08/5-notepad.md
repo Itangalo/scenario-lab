@@ -1,0 +1,7 @@
+- `emergent_labour_displacement_wave` -- first noted turn 1, listed in 8 turn(s) so far: Accelerating AI-driven displacement in legal, administrative, and clinical coding roles across the EU. Layoffs are now widespread, with retraining systems overwhelmed. Political pressure mounts for emergency labour interventions.
+- `emergent_asml_defiance_negotiations` -- first noted turn 1, listed in 8 turn(s) so far: Ongoing EU-backed Dutch efforts to secure exemptions for non-EUV ASML tools from U.S. export controls. Talks remain stalled, with Washington viewing any carve-out as a precedent it cannot afford.
+- US_POSTURE: CONSOLIDATION
+- PORTFOLIO CHARGE: Sovereign AI Sentinel Programme finished, Critical Infrastructure AI Shield Initiative −3, Emergency Social Transition Compact −3, priority −1 = −7
+- PROPOSAL BONUS: Emergency Social Transition Compact (cat 7, large) +3 — directly answers backlash_physical and emergent_eu_labour_council_activation, both current and severe
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 12.0 last turn, Sovereign AI Sentinel Programme finishes t8 +3, no capacity event, capability rose 1.0 −1 = 14.0

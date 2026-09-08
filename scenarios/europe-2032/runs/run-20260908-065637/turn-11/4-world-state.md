@@ -1,0 +1,11 @@
+### The Weight of Deadlines
+
+The European Union entered the second half of 2031 under mounting pressure to deliver tangible results from its Sovereign Execution Drive. Despite redirection of €18.7 billion and institutional momentum, the first Sovereign Model Initiative training run did not begin. Legal resistance from hyperscalers in Ireland and the Netherlands, citing investor uncertainty and unresolved liability under Article 122 TFEU, blocked binding compute commitments. The European Investment Bank hesitated to finalise contracts without legal clarity, and fast-tracking under Article 58a of the AI Act remained untested in practice.
+
+In response, the Commission launched the **Compute Access Guarantee Activation**, a small category 4 measure aimed at securing crisis access to EU-located compute. Offering ECHR-compliant liability shielding and escrow-based compensation, it sought voluntary agreements for emergency repurposing of infrastructure. Joint governance seats on the ECAG oversight board were offered as concessions, but Dublin and The Hague remained noncommittal. With voluntary alignment stalling, preparations for Council Regulation under Article 122 TFEU advanced—legally defensible, but politically fraught.
+
+Meanwhile, ENISA and the Joint Research Centre co-led a red-team sprint, conducting the first synthetic bio-risk exercise using proxy models at 58.0 capability. Results exposed gaps in inference anomaly detection, though the evaluation suite itself remained unproven against live systems. No major incident occurred, but resilience held only at 43.0, barely absorbing ongoing capability growth.
+
+Globally, AI capability advanced to 62.0, driven by tighter integration of automated reasoning in scientific workflows. Open-weight models rose to 55.5, reflecting broader diffusion of training techniques and increased collaboration among open-source communities. Safety remained stagnant at 10.0—opaque reasoning and goal drift persisted, despite growing red-teaming coordination among non-EU labs.
+
+Public sentiment stayed at 20.0, unmoved by procedural advances. Protests in Lyon and Prague continued, and national inquiries into foreign AI in critical systems gained traction. The machinery of sovereignty turned, but the power had not yet arrived.

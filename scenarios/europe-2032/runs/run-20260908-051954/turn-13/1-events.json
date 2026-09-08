@@ -1,0 +1,26 @@
+[
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_ai_faultline_earthquake",
+    "probability": 0.11666666666666665,
+    "emergent": true,
+    "description": "A moderate earthquake strikes a major European data centre hub, triggering cooling failures and temporary outages across multiple facilities. The incident exposes geographic concentration risks in EU AI infrastructure and prompts emergency discussions about geographic redundancy in the Sovereign Resilience Corridor.",
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.25
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  }
+]

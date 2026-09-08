@@ -1,0 +1,25 @@
+No statement changes.
+
+## Portfolio
+- `Emergency Resilience Activation for Critical Infrastructure (category 6, costs 3 per turn, started turn 11, finishes on turn 12): Activates immediate, cross-border contingency protocols and cyber hardening for energy, health, and emergency services, using existing EU capabilities and mutual aid frameworks to absorb ongoing AI-enabled harm` — **finishes on this turn**
+- `Emergency Audit and Suspension Order for Public AI Systems (category 3, costs 3 per turn, started turn 12, finishes on turn 13): Mandates the immediate suspension of all unexplainable AI systems used in public services pending independent audit and demonstrable compliance with due process safeguards, in direct response to the emergent class-action suit and the collapse of ai_safety` — **in flight**
+
+## New measure
+**Launch EU Sovereign Audit and Response Corps (Category 5, Public technical capacity and research)**  
+Establish a permanent, EU-wide technical unit under the European AI Safety Board (EAISB) with legal authority, tooling access, and classified clearance to conduct real-time interpretability analysis, agent-behaviour evaluation, and audit enforcement on any AI system deployed in critical public functions.
+
+`Category: 5 (Public technical capacity and research)`  
+`Size: large`  
+`Finishes on turn: 15`  
+`Targeted effect:` Begin closing the gap between regulatory intent and technical reality by building in-house capacity to verify compliance independently; increase `ai_safety` by enabling proactive detection of unsafe agent behaviour; modest boost to `eu_ai_sovereignty` by anchoring audit capability within EU jurisdiction; long-term downward pressure on `ai_capability` risk by enabling early intervention  
+`Applies to:` EU institutions, member states, and certified third-party operators of AI in critical public infrastructure
+
+## Priority
+**Emergency Audit and Suspension Order for Public AI Systems** — because legitimacy is the foundation of action, and with `ai_safety` at 0.0 and a transnational lawsuit exposing indefensible deployments, we must enforce accountability now or lose the authority to act at all; this measure is the only one actively dismantling the current regime of unaccountable AI in public service.
+
+## In practice
+This turn, we are operating on three planes: containment, enforcement, and institutional repair. On the first, the Emergency Resilience Activation reaches its final phase. ENISA has completed red-team drills across 18 national CERTs, validating incident response protocols under AI-driven attack conditions. The Connecting Europe Facility disburses €1.2 billion in co-funding for cyber upgrades, with 74% of Tier 1 energy and transport operators now compliant with the new anomaly detection mandates. Yet command fragmentation persists — Germany insists on national override authority, and France delays full integration into CyCLONe. We accept partial cohesion as the price of movement: better a federated shield than none.
+
+On the second, we are executing the Emergency Audit and Suspension Order with precision and pressure. The EAISB has published the first version of the Expedited Public AI Audit Framework, requiring verifiable decision logs, human-readable rationale trails, and rollback capability within 90 seconds. Systems failing this standard — including Spain’s emergency dispatch coordinator and Italy’s welfare eligibility engine — are now in phased suspension. We are not banning AI; we are demanding it be governable. Fast-track re-certification pathways are open, and we have assigned joint EU-national task forces to assist high-impact systems in meeting standards by turn 13. The political backlash is real — France threatens legal action under Article 15 of the Treaty on European Union — but we stand: if a system cannot be audited, it cannot be trusted with public power.
+
+Finally, we are laying the foundation for enduring control. The new measure — the EU Sovereign Audit and Response Corps — begins as a 300-person interdisciplinary unit, recruited from national cyber agencies, academic AI safety labs, and public engineering corps. Hosted in Luxembourg with satellite nodes in Helsinki and Toulouse, it will be granted access to model weights under strict containment protocols, using open-source interpretability tooling enhanced with classified evasion-detection modules. This is not a think tank; it is a technical strike force. Its creation signals that the EU will no longer outsource its understanding of AI to those who built it. We fund it through a reallocation of the stalled Gigafactories initiative — a pivot, not an expansion — and justify it by the emergent international audit consortium, which offers partnership but cannot replace sovereign capability. Without this, every audit is a performance; with it, we begin to know.

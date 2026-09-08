@@ -1,0 +1,31 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Anchor European AI sovereignty through independent capability and resilient public adoption  
+- Trigger: the two-year commitment period closes this turn  
+- Grounds: The commitment has run its course across six turns, during which we prioritized compute sovereignty, public service anchoring, and resilience integration. While the structural goals remain, the strategic window opened by US retrenchment demands a sharper, more operational focus on capability execution and institutional control. The next phase must shift from anchoring to activating—turning infrastructure into sovereign agency.
+
+## Portfolio  
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`  
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — *finished this turn.*  
+- `Accelerated Permitting Zones for Strategic AI Infrastructure (category 4, costs 3 per turn, started turn 1, finishes on turn 4): Fast-track environmental, grid, and land-use approvals for data centres and chip fabs tied to EU-controlled AI capacity` — *finished this turn.*  
+- `Biosurveillance and Incident Response Integration (category 6, costs 3 per turn, started turn 2, finishes on turn 5): Integrate EU health security agencies into the newly formed joint biosurveillance pact, enabling real-time pathogen data sharing, binding sample access, and co-located analysis cells` — *finished this turn.*  
+- `Sovereign Compute Access and Resilience Corridors (category 4, costs 3 per turn, started turn 5, finishes on turn 8): A binding directive establishes minimum compute thresholds for essential public functions across energy, health, and emergency response, reserving priority runtime on EU-controlled infrastructure for these services during disruptions`
+
+## New measure  
+**Open-Weight Accountability Framework**  
+A new regulatory framework imposes strict liability on developers releasing models above 45.0 openweight_capability for downstream misuse when safeguards are absent, requiring impact assessments, misuse monitoring, and recall mechanisms for distributed weights.  
+
+`Category: 3 (Limits and restrictions)`  
+`Size: large`  
+`Finishes on turn: 8`  
+`Targeted effect:` Reduce misuse risk from open models by increasing developer accountability; modestly lower `openweight_capability` growth rate (–1.5–3.0 over two years) while preserving research access below threshold. May reduce `public_sentiment` slightly (–3 to –7) due to developer backlash, but strengthens long-term legitimacy of open releases.  
+`Applies to:` Open-weight model developers releasing within or into the EU market, enforced by the European AI Office with cooperation from national digital regulators.
+
+## Priority  
+**Open-Weight Accountability Framework** — because the emergent misuse of open models for coordinated harassment campaigns exposes a critical governance gap: capability once released cannot be收回, and the current wave at 49.0 is already at the edge of autonomous operation under supervision—this measure must land before the next jump in open capability locks in irreversible risk.
+
+## In practice  
+We are advancing the **Sovereign Compute Access and Resilience Corridors** through the Digital Ministers Council, using the legal base of Article 114 TFEU to harmonize national obligations for essential service continuity. Negotiations with Germany, France, and Poland focus on defining runtime thresholds for grid operators and emergency medical coordination, backed by conditional access to the Just Transition Fund to offset compliance costs. The European High-Performance Computing Joint Undertaking is drafting technical annexes to bind allocation rights to EU-controlled clusters, ensuring that privately funded data centres under the **Tech Sovereignty Package**—now concluded—fulfill public service obligations. Despite pushback from Hungary and Sweden on subsidiarity grounds, civil protection agencies and energy regulators remain strong allies, framing the directive as digital civil defense.
+
+Simultaneously, the **Open-Weight Accountability Framework** is being drafted under the AI Act’s adaptive provisions, with the European AI Office leading consultations with open-source developers, academia, and civil society. The trigger is clear: the decentralized doxxing campaign using a repurposed reasoning model at 48.7 openweight_capability overwhelmed national cyber units and exposed the absence of liability for distributed harm. We are proposing a tiered threshold: models above 45.0 must undergo independent misuse risk assessment, implement detectable watermarking, and establish takedown coordination protocols. Below that, research freedom remains protected. The framework will be paired with a public communication campaign to distinguish responsible openness from reckless release, aiming to preserve trust while closing the accountability gap. Resistance is expected from developer communities, but the political cost of inaction—especially after attacks on public officials—is now higher than the backlash.
+
+The **InvestAI Gigafactories** remain on track for completion in turn 7, though ASML export controls continue to delay lithography tool deliveries to the Dresden and Grenoble sites. We are engaging the Dutch government bilaterally to secure exemptions under national security provisions, citing the sovereignty rationale of the programme. Political capital remains tight at 22.0, and no further measures will be added without cancellation. The completion of the **Tech Sovereignty Package** frees up marginal bandwidth, but only if implementation holds. This is not a turn for expansion—it is a turn for enforcement. We are acting on two fronts: securing the infrastructure we built, and governing the capability we can no longer contain by borders alone.

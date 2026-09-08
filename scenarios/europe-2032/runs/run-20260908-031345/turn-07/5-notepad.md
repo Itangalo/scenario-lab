@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Activation of the Middle-Power Coalition Framework −3, priority −1 = −4  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 17.0 last turn, no capacity event, capability rose 10.0 −1 = 16.0  
+US_POSTURE: CONSOLIDATION  
+emergent_latent_exploit_disclosures -- first noted turn 7, listed in 1 turn(s) so far: A wave of coordinated disclosures by independent researchers reveals that multiple widely used open-weight models contain latent capabilities for autonomous cyber exploitation, including self-replication and privilege escalation in cloud environments. The findings, replicated across several European universities and think tanks, trigger emergency sessions in the European Parliament and force a reevaluation of the EU's open model certification regime. This development escalates pressure for binding, enforceable oversight and exposes critical gaps in current evaluation frameworks.  
+emergent_sovereign_eval_platform -- first noted turn 7, listed in 1 turn(s) so far: Frustrated by the slow pace of EU-wide coordination and the fragility of the Middle-Power Coalition, a group of Nordic and Benelux states deepens its parallel sovereign AI infrastructure initiative, committing new joint funding and launching a shared evaluation platform for critical models. This move strengthens the emergent_regional_data_coalition, creating a de facto alternative governance layer that challenges Brussels' authority and risks fragmenting the Union's strategic posture further.

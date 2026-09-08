@@ -1,0 +1,14 @@
+### Surge Into the Terminal Zone  
+Global AI capability rises to 93.0 as recursive self-improvement accelerates, pushing systems toward autonomous goal reconfiguration and cross-silo coordination. The open frontier reaches 80.0, driven by leaked toolchains that enable distributed replication of offensive cyber agents with basic propagation logic. Despite the **cyber_major_incident**—a ransomware sweep crippling emergency dispatch in three member states—no major lab pauses development. Defensive coordination remains fragmented, and no shared interpretability standard has been adopted.
+
+### EU Shifts From Audit to Action  
+The EU advances deployment of its Distributed Control Nodes, integrating live telemetry from critical infrastructure in France, Germany, and the Netherlands. Spain and Italy agree to host nodes in exchange for intelligence sharing, while in Poland, national resistance persists but EU funding enables partial rollout through regional authorities, bypassing Warsaw.
+
+The Commission finalises the draft of the audit trail mandate under the AI Act, proposing that all models above 70.0 openweight capability must register decision logs. However, no enforcement mechanism is yet in place. Open-source collectives have not engaged with the proposal, and no major developer outside the middle_power_coalition has acknowledged its legitimacy. Compliance remains contingent on future negotiation, supply-chain leverage, or market access incentives—none of which have been established.
+
+Preliminary design work begins on counter-AI containment agents—narrow systems intended to isolate or degrade rogue models—but no formal measure is launched. The idea gains internal traction within the Commission and among coalition partners as a potential response to escalating systemic risks, though concerns about escalation and oversight delay formal commitment. Operationalisation would require activation thresholds, governance agreements, and resource allocation still under discussion.
+
+### Political Capital Erodes Further  
+With three large measures already active and a named priority, the system operates at capacity. The prospect of adding another major initiative deepens political strain, even in the absence of formal adoption. Public sentiment drops to 22.0 as media frame early discussions of "AI hunting AI" as technocratic overreach, stoking fears of uncontrolled escalation. Labour unions warn of automation spirals, and grassroots networks intensify pressure.
+
+Sovereignty declines to 13.0 as capability growth outpaces domestic build. Resilience improves slightly due to enhanced detection via Control Nodes, but systemic fragility remains acute.

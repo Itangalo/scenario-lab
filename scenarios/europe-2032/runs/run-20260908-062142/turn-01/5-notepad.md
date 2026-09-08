@@ -1,0 +1,6 @@
+- `emergent_labour_displacement_wave` -- first noted turn 1, listed in 1 turn(s) so far: Mid-level technical and administrative roles across EU member states begin to be systematically displaced by AI agents capable of multi-step workflow execution, particularly in legal support, insurance processing, and local government services. The trend is visible in job market data by late 2026, triggering early debates about retraining and social safety nets.
+- `emergent_asml_defiance_negotiations` -- first noted turn 1, listed in 1 turn(s) so far: Leaked diplomatic cables suggest that the Dutch government, under EU coordination, has initiated quiet negotiations with Washington to establish formal carve-outs for ASML's non-extreme ultraviolet equipment exports, leveraging the Union's supply chain position as a bargaining chip rather than accepting unilateral coercion.
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield for Critical Operators −3, priority −1 = −10
+- PROPOSAL BONUS: none
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 22.0 last turn, no capacity event, InvestAI Gigafactories in flight +0, Tech sovereignty package in flight +0, capability rose 2.0 −1 = 21.0

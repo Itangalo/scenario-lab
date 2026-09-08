@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Constitutional Constraint 9 violated: `eu_ai_sovereignty` increased from 19.0 to 24.0, a change of +5.0 points. While this is within the 25-point cap, the notepad shows a sovereignty term calculation: \"Activation Council finishes t9 +5, capability rose 1.5 −1 = 24\". This implies the +5 from finishing the Activation Council is applied in full. However, Constitutional Constraint 5 states that `eu_ai_sovereignty` has a decay term and an event term, both negative, and starts at 22 — meaning its baseline drifts downward. The narrative and notepad do not account for the decay term this turn, which must apply per metric rule 5. Absent an explicit narrative or notepad justification for offsetting decay, the net increase cannot be +5 without violating the required negative drift. A net rise of +5 with only +1.5 from capability growth and no mention of decay compensation suggests the decay term was ignored, violating the invariant that sovereignty does not return to baseline and is subject to erosion.\n- Constitutional Constraint 7 violated: The jump in `eu_ai_sovereignty` (+5) is heavily driven by the completion of a major measure (Activation Council), while `eu_political_capital` only increased by +2.0 (from 13.0 to 15.0). This implies `eu_ai_sovereignty` is being treated as the primary output of political effort without corresponding capital cost, risking conflation of the two stocks. The constitution requires that sovereignty’s contribution to political capital never exceeds +3 per turn and must not dominate other terms. Here, the inverse is problematic: high sovereignty gain without proportional political capital cost suggests the two are not being modeled as distinct, violating the constitutional guard that they must be free to move apart."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

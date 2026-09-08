@@ -1,0 +1,7 @@
+- `emergent_enhanced_eu_monitoring_initiative` -- first noted turn 4, listed in 3 turn(s) so far: Now operational in ten member states, but limited to detection and alerting due to legal constraints on automated response. Seen as a step forward, but insufficient against fast-evolving threats.
+- `emergent_research_leak_cascade` -- first noted turn 4, listed in 3 turn(s) so far: Leaked cyber-agent tooling continues to circulate, now adapted into modular attack frameworks available on underground forums. Diffusion shows no sign of slowing.
+- US_POSTURE: CONSOLIDATION
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, EU Defensive AI Corps −3, Sovereign AI Testbeds −3, Sovereign Assurance Stack −3, priority −1 = −13
+- PROPOSAL BONUS: Sovereign Assurance Stack (cat 4, large) +3 — directly answers cyber_major_incident and opaque_reasoning, both severe and recent
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 14 last turn, no capacity event, capability rose 2.0 −1, member_state_defection ongoing −1 = 11.0

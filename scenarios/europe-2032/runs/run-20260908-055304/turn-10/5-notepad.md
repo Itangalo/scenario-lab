@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: Runtime Verification Mandate −3, Sovereign Compute Corridor Initiative −3, priority −1 = −7  
+PROPOSAL BONUS: Sovereign Compute Corridor Initiative (cat 4, large) +3 — addresses ongoing sovereignty erosion and opaque_reasoning fallout  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 17.0 last turn, no capacity event, Sovereign Compute Corridor in flight +0, capability rose 1.0 −1 = 16.0  
+US_POSTURE: ALLIANCE
+
+emergent_distributed_bio_redteaming -- first noted turn 10, listed in 1 turn(s) so far: A new international consortium of bio-labs, alarmed by the bio_uplift_findings and untrusting of state-led initiatives, independently begins a distributed red-teaming effort using open-weight models to probe for dangerous biological designs. The effort is decentralized, underfunded, and controversial, but produces early evidence of multiple plausible attack vectors. This emergent development increases pressure on formal institutions to act and may accelerate the bio gate closure timeline.
+
+emergent_northern_runtime_alliance -- first noted turn 10, listed in 1 turn(s) so far: A group of northern European states, frustrated by the deadlock in EU-wide AI governance, quietly form a parallel technical working group outside EU structures to coordinate runtime verification and incident response. The group operates under national security umbrellas, shares telemetry internally, and begins developing interoperable kill-switch protocols. This emergent institutional reaction reflects growing fragmentation in the face of existential risk, but risks deepening east-west divides within the Union.

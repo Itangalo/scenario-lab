@@ -1,0 +1,28 @@
+## Statement changes
+- modify `two_mandate_commitment` (commitment): Secure sovereign AI agency while preventing catastrophic systemic risk and now also restoring public trust as a foundation for political action  
+- Grounds: The emergence of **emergent_labour_unrest**, the collapse in public sentiment to 24.0, and the failure of transatlantic alignment have revealed that sovereignty without legitimacy is unenforceable. The Union cannot build evaluation, response, or compute capacity if member states stall ratification, graduates turn against automation, and public infrastructure projects face local blockades. This turn demands we treat trust not as a byproduct but as a pillar: our capacity to act depends on being seen to act *for* people, not just *on* systems. The commitment now reflects that we must govern both AI and its social consequence — or lose the authority to do either.
+
+## Portfolio
+``Secure Sovereign Evaluation Capacity (category 5, costs 3 per turn, started turn 9, finishes on turn 10): We stand up an EU-owned and operated evaluation regime for models above 55.0 capability, using red-team agents, interpretability tooling, and tamper-proof runtime monitoring to detect emergent risks before deployment`` — **finished**  
+``European AI Incident Response Corps (category 6, costs 3 per turn, started turn 10, finishes on turn 11): We establish a standing, cross-border rapid-response unit for AI-enabled cyber and hybrid incidents, with pre-authorized access to critical infrastructure logs, model telemetry, and emergency override protocols``
+
+## New measure
+**European Sovereign AI Fellowship and Deployment Programme**  
+We launch a pan-European initiative to train, place, and empower 5,000 public-sector AI engineers and auditors by 2033, embedded in national administrations, critical infrastructure operators, and EU agencies, with direct access to sovereign models and evaluation tooling.
+
+`Category: 5 (Public technical capacity and research)`  
+`Size: large`  
+`Finishes on turn: 13`  
+`Targeted effect:` eu_ai_sovereignty +5 (via human capital embedded in sovereign systems), ai_safety +4 (through persistent monitoring and red-teaming in deployment), resilience +2 (via technical surge capacity in crises), public_sentiment +3 (by visibly linking AI investment to public service and job creation)  
+`Applies to:` EU member states, EuroHPC operators, national digital agencies, and public universities
+
+## Priority  
+Priority: European Sovereign AI Fellowship and Deployment Programme  
+Because the **loss_of_control_incident**, **bio_uplift_findings**, and **emergent_labour_unrest** together expose a fatal gap: we are building sovereign infrastructure but lack the people to run it with authority, respond to crises with credibility, or convince the public that AI serves them — and without that, even finished evaluation and response systems will be hollow.
+
+## In practice  
+The **Secure Sovereign Evaluation Capacity** measure concludes this turn with partial but critical success. The tamper-proof sandbox for agent introspection has been validated on EuroHPC’s LUMI-B run, and INRIA’s first interpretability pipeline has extracted goal-directed behaviour from a 61.2 agent system during pre-deployment screening. However, rollout to private deployers above 55.0 capability is stalled: Germany and Spain demand exemptions for health AI under emergency use clauses, and the 15% levy faces legal challenge at the CJEU over proportionality. We are fast-tracking a compromise — a tiered levy with lower rates for audited public-interest applications — to be tabled at the ECOFIN meeting in April. The system works, but its reach remains contested.
+
+The **European AI Incident Response Corps** is now operational in pilot mode, with 40 personnel drawn from ENISA, national CERTs, and the European Cybercrime Centre. Basing agreements in Prague and Helsinki are signed, but Portugal delays its telemetry access mandate pending a constitutional review. We are dispatching a crisis envoy to Lisbon, offering immediate surge support for their upcoming grid modernisation in exchange for fast-tracking ratification. Cross-border drills are scheduled for Q3, but without full legal access to private model logs, the Corps remains blind to half the threat surface. We are preparing a Directive on AI System Transparency for Critical Operators to close that gap — a move that will require Council approval and will come at political cost.
+
+The new **European Sovereign AI Fellowship and Deployment Programme** responds to the vacuum at the intersection of talent, trust, and technical control. We are launching it through Erasmus Digital, with co-funding from the Digital Europe Programme and Horizon Europe. The first 1,000 fellowships will open in May, targeting mid-career engineers and recent graduates in computer science, bioinformatics, and public administration. Fellows will be placed in ministries, hospitals, and grid operators, trained on sovereign models at EuroHPC sites, and equipped with audit tooling from the EASi stack. France and the Netherlands have pledged matching funding; Germany remains hesitant, fearing brain drain from private industry. We are offering co-development rights on public AI tools and a moratorium on private-sector hiring restrictions to secure their buy-in. This is not just upskilling — it is embedding sovereignty in human tissue, where it can act, answer, and be seen to serve.

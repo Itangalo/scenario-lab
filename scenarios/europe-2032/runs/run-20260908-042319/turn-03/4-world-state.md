@@ -1,0 +1,12 @@
+### The Open Frontier Widens  
+The AI frontier advances again, with closed models demonstrating self-directed improvements in reasoning and cyber operations. `ai_capability` rises by +2.0 to 58.0, maintaining its sharp trajectory. A research collective releases a partially distilled open-weight version of a frontier model, optimized for consumer-grade hardware. While not matching the full reasoning depth of its closed counterpart, it spreads rapidly across developer forums and dark web marketplaces. This incremental leap lifts `openweight_capability` to 51.0—a gain of +2.0—narrowing the gap but preserving the lead of closed systems. The release alarms intelligence agencies, but does not yet enable autonomous replication or weaponization at scale.
+
+### Institutional Gains Amid Social Backlash  
+The European AI Incident Observatory launches successfully, marking a milestone in transparency. High-impact AI incidents are now centrally logged and publicly reported, strengthening institutional learning. However, a damning ombudsman report reveals that an AI system used in social benefits processing denied thousands of claims due to biased risk scoring—triggering public outrage and reinforcing perceptions of AI as a tool of arbitrary control. Labour unions and civil society groups intensify opposition, and several member states pause AI adoption in public services.
+
+Simultaneously, the Cyber Shield for Critical Infrastructure clears its final legal hurdles. A compromise reframes the directive around cross-border operational security, winning over Hungary and Slovakia. Adoption is expected by year’s end, with binding red-teaming and threat-sharing mandates. ENISA begins drafting implementation guidelines, contributing to modest resilience gains.
+
+### Talent Flight and Political Strain  
+The EU launches the Talent Anchoring Programme, offering fellowships, frontier compute access, and fast-track visas. Yet the initiative faces skepticism: researchers note that EuroHPC allocations still lag behind US cloud-scale training runs, and early applications are modest. The quiet exodus of AI talent continues, undermining sovereignty.
+
+Political capital erodes under the weight of six active measures. The priority on Cyber Shield yields partial progress, but the automated scandal and ongoing delays strain cohesion. Public sentiment dips as media frames AI as both a threat and a foreign dependency.

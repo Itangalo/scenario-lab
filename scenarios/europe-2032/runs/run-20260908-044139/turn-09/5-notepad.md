@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: AI Safety Talent Integration Directive −3, Resilience Corps Pilot Expansion −3, priority −1 = −7  
+PROPOSAL BONUS: Resilience Corps Pilot Expansion (cat 6, large) +3 — addresses rising ai_capability and openweight_capability with binding preparedness, especially after safety breakthrough enables new verification methods  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 24 last turn, AI Safety Talent Integration Directive in flight +2, no capacity event, capability rose 1.0 (less than 2) → no −1 = 26  
+US_POSTURE: ALLIANCE  
+emergent_regional_retraining_collapse -- first noted turn 7, listed in 3 turn(s) so far: Regional retraining programmes in several member states, overwhelmed by the pace of mid-level job displacement, begin to fail visibly—waiting lists exceed six months, completion rates drop below 30%, and local governments report systemic underfunding. The failures become a political liability, undermining faith in the Workforce Transition Acceleration Fund before it launches.  
+emergent_ai_research_shift -- first noted turn 7, listed in 3 turn(s) so far: The shift in European AI research from frontier scaling to robustness, interpretability, and secure integration gains institutional momentum, with ERC and national funders redirecting grants. Major labs publish new frameworks for agent containment, and the trend begins to influence talent flows, slowing EU contributions to capability races while strengthening long-term safety capacity.

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_interpretability_consortium",
+    "probability": 0.20333333333333334,
+    "emergent": true,
+    "description": "A coalition of European research institutes, partially funded by national governments and the EU, announces a shared effort to reverse-engineer the internal representations of frontier models using novel probing techniques. The effort is not yet successful, but it establishes a credible non-US path to understanding model reasoning, feeding into future safety and evaluation measures.",
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_retrenchment",
+    "probability": 0.42333333333333334
+  }
+]

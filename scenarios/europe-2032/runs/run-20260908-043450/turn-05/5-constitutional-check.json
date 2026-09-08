@@ -1,0 +1,15 @@
+{
+  "status": "approved",
+  "iterations": 3,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The narrative states that \"four large measures and a small one remained in flight\" while also introducing the Critical Incident Integration Directive as a new measure. This results in six active measures simultaneously, violating the constraint that limits the EU to at most one new measure per turn and a reasonable portfolio load. The modelling choice in constraint #5 (\"At most one new measure per turn, and at most one named priority\") is clearly breached, as multiple new or concurrent measures are implied without phasing.\n- Regulatory Constraint violated: The Critical Incident Integration Directive is introduced and fast-tracked with real-time reporting mandates for Tier 2 operators, yet full compliance is deemed unlikely by the next turn. This violates constraint #6 (\"No measure is implemented instantly\") — even a fast-tracked, low-cost measure requires at least one full turn to take effect; claiming it is fast-tracked does not justify immediate functional impact or justify skipping minimum lead times for implementation."
+    },
+    {
+      "iteration": 2,
+      "violations": "- Invariant 2 violated: `eu_ai_sovereignty` must have decreased to 14.0 this turn, but remains at 15.0. The notepad explicitly calculates sovereignty as 14.0 (\"SOVEREIGNTY: 15.0 last turn, no capacity event, capability rose 1.0 −1 = 14.0\"), reflecting the decay term from rising `ai_capability` (metric rule 5). Sovereignty cannot remain flat when the rules and notepad dictate a drop.\n- Modelling choice 5 violated: The EU introduced planning for the Critical Incident Integration Directive while already having four large measures in flight (InvestAI Gigafactories, Tech Sovereignty Package, European Frontier Model Evaluation Consortium, Integrated Sovereign Defence Protocol). Adding a new measure exceeds the limit of one new measure per turn. While drafting began, the notepad records it as a new charge, confirming initiation. This violates the \"at most one new measure per turn\" rule.\n- Narrative telegraphing violation (Modelling choice 8): The narrative states \"Washington will soon impose AI restrictions and pause frontier growth,\" which telegraphs a future event with certainty. The American posture is settled in turn 6, not turn 5; announcing its effects in advance violates the prohibition on anticipatory statements. The election outcome may be known, but its policy effects must not be narrated until the posture is officially written in the next turn."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

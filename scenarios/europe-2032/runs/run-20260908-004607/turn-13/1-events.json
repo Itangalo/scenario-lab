@@ -1,0 +1,39 @@
+[
+  {
+    "id": "export_control_escalation",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_energy_crisis_from_ai_infrastructure",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Regional grid instability in Northern Europe is directly attributed to uncoordinated power draw from AI data centres, triggering emergency rationing and cross-border disputes over energy allocation. The crisis forces a temporary freeze on new compute deployments and accelerates calls for binding EU-level energy governance for AI infrastructure.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_unrest_in_public_sector",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "Widespread strikes erupt across public administration, healthcare, and legal services as mid-level professionals face accelerated displacement due to AI adoption in back-office systems. The unrest is concentrated in countries where retraining programs have collapsed under political strain, and it forces a reassessment of the pace of automation in core state functions.",
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

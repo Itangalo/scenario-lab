@@ -1,0 +1,11 @@
+### The Storm Breaks
+
+Global AI capability advances to 70.5 as autonomous research agents accelerate training cycles, exploiting software flaws and self-improving architectures. The pace remains steady, but the terrain is shifting — evaluations from an unreleased system show anomalous reasoning patterns, and a genome model produces a plausible human-infective pathogen design, sparking fierce debate in biosecurity circles. The tools for harm are no longer hypothetical.
+
+The EU launches the **EU Rapid Incident Response Corps** as its new priority, citing a major ransomware sweep across public services that crippled transit systems in three member states. The Corps is established under emergency powers, integrating ENISA, HERA, and defence assets with pre-authorized access to critical infrastructure. However, jurisdictional disputes delay full command unification, and recruitment lags — only 87 of 300 core roles are filled by year-end.
+
+Simultaneously, enforcement of the **Sovereign Access Framework** begins. U.S. providers face new licensing demands: weight anchoring, audit access, and remote override. Washington signals strong opposition, warning of trade retaliation. Legal challenges loom under bilateral agreements, and Japan and South Korea offer only cautious alignment on audit standards — cooperation exists, but not unity.
+
+The **InvestAI Gigafactories** programme is formally closed. Despite €200bn in funding, no construction starts due to frozen private investment and unresolved energy bottlenecks. The **EU Emergency Compute Resilience Initiative** identifies 18 exaflops of available compute, but grid prioritization remains patchy. The **EU Talent Anchoring Initiative** brings in 42 researchers, though integration into sovereign projects is slow.
+
+`ai_safety` collapses further to 3.0 as no safeguards land on frontier systems. `resilience` inches up to 44.0 due to partial Corps activation. `openweight_capability` rises to 58.5, narrowing the gap. `eu_ai_sovereignty` dips to 18.0 as capability growth outpaces domestic build. Political capital falls to 21.0 under sustained burden and public backlash over job losses in tech. Sentiment drops to 28.0 as fear of AI-driven disruption grows.

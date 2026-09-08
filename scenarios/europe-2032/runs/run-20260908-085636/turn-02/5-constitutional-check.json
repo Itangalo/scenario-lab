@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 42.0 to 49.0 (+7.0), which exceeds the maximum possible growth given `ai_capability` increased by only 2.0. The constitutional constraint that `openweight_capability` never exceeds `ai_capability` implies its growth is bounded by the growth of `ai_capability`, especially when starting 12 points behind. A 7-point catch-up in one turn without narrative justification of an extraordinary, discrete replication event (e.g., full leak of frontier model) is implausible and violates the spirit and letter of the accumulation rule. The narrative mentions \"replication of Kimi K3’s architecture and newly shared cyber modules\", but this does not justify such a large leap absent prior groundwork or event trigger.\n- Modelling choice 5 violated: The EU introduces the \"Emergency Resilience Surge\" as a new measure while also naming it as the priority in the same turn. This constitutes both introducing a new measure and designating a priority, which is allowed only if they are the same action. However, the notepad shows a pre-existing \"Tech Sovereignty Package\" already in flight, and no indication that the Emergency Resilience Surge replaces it. The portfolio charge applies a separate −1 for \"priority\", implying a distinct priority is being maintained. Thus, the EU is operating with more than one named priority (Tech Sovereignty Package and Emergency Resilience Surge), violating the \"at most one named priority\" rule.\n- Economic Constraint violated: The narrative redirects €15bn from digital and recovery funds and introduces InvestAI compute incentives without confirming that these funds are available within EU fiscal capacity or explaining how co-financing is secured. While redirection is permitted, the scale and speed of reallocation for a category 6 measure (large) lacks justification in terms of budgetary procedures, Council/Parliament approval, or use of emergency clauses. Minimum time lags for high-cost measures (metric rule 6: minimum two turns) are not respected—this measure is proposed and already deploying pilot systems in the same turn."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

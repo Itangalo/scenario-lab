@@ -1,0 +1,26 @@
+Secure minimum AI continuity for essential state functions
+
+## Statement changes
+``modify `two_year_commitment` (commitment): Secure minimum AI continuity for essential state functions``
+- Trigger: the two-year commitment period closes this turn
+- modify `two_year_commitment` (commitment): Pivot from building sovereign AI capacity to securing minimum viable resilience and access for essential public functions
+- Grounds: The past two years have been defined by systemic fragility, not capacity gaps: the **eu_frontier_access_denied** event exposed that even basic government functions can collapse overnight when external dependencies are severed. The Emergency Compute Assurance Programme, though still in flight, has revealed the limits of industrial ambition without operational continuity. While sovereignty remains the long-term aim, the immediate imperative is no longer about scale or speed of build, but about ensuring the state does not go offline. This new commitment is not a retreat from sovereignty, but a redefinition of what sovereignty means in crisis: not gigafactories or investment targets, but guaranteed runtime for diagnostics, emergency dispatch, and border integrity. It is triage made durable.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
+``Cyber Shield Certification (category 6, costs 3 per turn, started turn 1, finishes on turn 4): Mandate and fund a baseline cyber hardening standard for all EU critical infrastructure operators, with third-party audits and public scoring.`` — **Finished this turn.**
+``EU Compute Access Guarantee (category 4, costs 3 per turn, started turn 2, finishes on turn 8): Establishes a legal right for EU public institutions to run sovereign AI workloads on guaranteed compute, backed by binding infrastructure timelines and emergency fallbacks.``
+``Emergency Compute Assurance Programme (category 6, costs 3 per turn, started turn 5, finishes on turn 6): Guarantees minimal runtime for essential public services — healthcare, emergency response, and border control — using existing EU-anchored infrastructure, fallback procurement, and failover protocols.``
+
+## New measure
+None this turn.  
+Waiting for the **election_alliance** to settle into measurable cooperation before committing new capital to access-dependent resilience.
+
+## Priority
+``Emergency Compute Assurance Programme`` is the priority this turn because the **eu_frontier_access_denied** event has already demonstrated that the failure of AI-dependent public services is not a hypothetical risk but a lived reality — and without assured minimal runtime, no amount of industrial planning can restore functionality in time. While the **Tech Sovereignty Package** and **InvestAI Gigafactories** remain in flight, they are too slow to answer the immediate collapse in trust and continuity. This measure is the only one actively preventing cascading state failure this turn.
+
+## In practice
+We are treating the denial of frontier access as a wake-up call: the lights must stay on, even if the future is dark. Under the Emergency Compute Assurance Programme, we are activating the Civil Protection Mechanism to map all AI-dependent public functions whose failure would cause immediate harm — starting with hospital diagnostics, emergency dispatch, and border processing. For each, we are defining minimal runtime thresholds — 1 exaFLOP per million population for health, 0.5 for emergency response — and identifying existing EU-anchored compute under public contracts or commercial SLAs that can be requisitioned under emergency powers in the Digital Markets Act. We are also establishing fallback procurement agreements with non-frontier but stable providers, including open-weight model operators vetted for reliability, to ensure continuity even if closed systems vanish.
+
+At the same time, we are renegotiating the **Tech Sovereignty Package** to reflect the new reality: the original €200bn private investment target is no longer credible in a climate of collapsing frontier funding, so we are shifting focus to securing 20% of existing EU-anchored compute for public emergency use, enforceable by audit and backed by the Digital Services Act. This is not about building faster — it is about ensuring we are not erased from the board. **InvestAI Gigafactories** remains in flight, but we are suspending new site approvals pending updated assessments of power availability and investment appetite. Our message is clear: we are not stopping the build, but we must first ensure the state can function while we build it. The **election_alliance** offers a narrow window of relief — structured access to frontier capability for vetted institutions — but we are not betting on it yet. Relief is not resilience. We will act on it next turn, if it holds.

@@ -1,0 +1,97 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9714181323429067,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6379389754124581,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.15131502013462672,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9060652923596125,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8937038223917793,
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_safety_norms_push",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "Following the WHO's endorsement of early EU framework drafts, a coalition of middle powers and non-aligned states launches a diplomatic initiative to formalize pre-deployment audits and model certification as global norms. The effort gains momentum as countries seek to avoid unilateral restrictions, leveraging the EU's technical groundwork as a template for broader adoption.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.712420691285611,
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_market_stress_tests",
+    "probability": 0.20000000000000004,
+    "emergent": true,
+    "description": "In response to growing anxiety over AI-driven job displacement, several EU member states begin piloting 'AI impact stress tests' for public and private sector hiring, assessing which roles are at risk of automation and whether retraining pipelines can absorb the shock. The tests are framed as proactive planning but spark debate over data privacy and employer obligations.",
+    "probability_samples": [
+      0.2,
+      0.2,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8179036728086956,
+    "triggered": false
+  }
+]

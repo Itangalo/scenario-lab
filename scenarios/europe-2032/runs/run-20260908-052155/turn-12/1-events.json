@@ -1,0 +1,26 @@
+[
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_interpretability_leak",
+    "probability": 0.2833333333333333,
+    "emergent": true,
+    "description": "Details of a real-time interpretability breakthrough, initially confined to frontier labs, leak to open-source communities via a disgruntled researcher. Open-weight models begin integrating rudimentary versions of the technique, accelerating safety-aware training and anomaly detection in the open ecosystem. This creates a divergence between open and closed safety trajectories, with distributed models gaining assurance even as closed systems remain opaque.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

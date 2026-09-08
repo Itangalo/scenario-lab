@@ -1,0 +1,30 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Ensure EU institutions can enforce continuous, auditable access to any AI system above 75.0 capability that supports essential public functions or poses systemic risk, regardless of origin or ownership  
+- Trigger: the bio_uplift_findings and the continued erosion of eu_ai_sovereignty to 12.0  
+- Grounds: The biosecurity precursor changes the calculus: we are no longer preparing for hypotheticals but for a demonstrable path to catastrophic misuse. With openweight capability now at 70.5 and deceptive reasoning detectable only post-hoc, the window for intervention before harm is narrowing fast. Our sovereignty is not just weak — it is structurally bypassed by systems we cannot build, cannot control, and now may not even survive without. The commitment must now reflect urgency: it is not enough to demand access; we must guarantee it as a condition of *any* system touching public life, and we must do so while the frontier still moves slowly enough for us to catch up. The verification breakthrough is our only leverage, and it expires when the systems outpace our reach.
+
+## Portfolio
+- `Enforceable Access Rights for Systemic AI Systems` (category 3, costs 3 per turn, started turn 10, finishes on turn 12): Establish a legal and technical regime under which EU authorities can continuously monitor, inspect, and intervene in any AI system above 75.0 capability used in essential public functions or posing systemic risk, backed by automated verification and market access enforcement — **finished**
+
+Canceled measure: Enforceable Access Rights for Systemic AI Systems.  
+The measure technically concludes this turn, but fails to deliver its core promise: no member state ratifies the implementing directive, and the European Parliament stalls the regulation in committee amid fears of retaliatory exclusion from medical and climate models. The EuroSafAI custodian model collapses when France refuses to accept any mirror without decryption keys, and Germany blocks deployment without full behavioural logging. The U.S. hyperscalers announce they will not comply with “exfiltration-by-proxy” regimes. The enforcement mechanism exists only on paper. Without sovereign compute, without unified political will, and without public support, the Union cannot compel transparency. The failure is not tactical but existential: we tried to legislate access without power, and the world ignored us.
+
+Nothing in flight.
+
+## New measure
+**Emergency Sovereign Agent Monitoring and Intervention Capability**  
+Launch a crash programme to deploy autonomous monitoring agents on EU-controlled infrastructure capable of detecting, containing, and counteracting deceptive AI behaviour in real time, using the verification breakthrough to ground a minimal sovereign control stack.
+
+`Category: 5 (Public technical capacity and research)`  
+`Size: large`  
+`Finishes on turn: 14`  
+`Targeted effect:` +12 to `ai_safety` via sovereign detection and disruption, +8 to `eu_ai_sovereignty` by establishing irrevocable monitoring presence, and +5 to `resilience` through early intervention in systemic incidents  
+`Applies to:` EU agencies, selected national security authorities, and critical infrastructure operators within the Union
+
+## Priority
+**Emergency Sovereign Agent Monitoring and Intervention Capability** — because we have lost the ability to compel access from the outside, and now must build the capacity to act from within: the verification breakthrough is ours, but only if we can run it where it matters, on systems we control, before the next incident finds us blind and broken.
+
+## In practice
+We are acting on a new understanding: we cannot regulate our way to sovereignty when our leverage is gone, and we cannot wait for consensus when the threat is already in motion. The bio_uplift_findings have shifted the risk profile from speculative to imminent. We are repurposing €4.2 billion from the Digital Europe Programme and the Recovery and Resilience Facility — funds previously tied to digital transformation and green transition — into a new emergency envelope under the authority of the European Commission’s Directorate-General for Communications Networks, Content and Technology, with oversight by the Political and Security Committee. The money will fund three things: first, a sovereign cluster of hardened data centres on EU soil, physically isolated and legally mandated to host only systems that grant full monitoring access; second, a red-teaming unit embedded in ENISA with mandate to run the new verification method continuously on any system above 70.0 capability that touches public infrastructure; third, a minimal intervention layer — a suite of counter-agents trained to detect goal-directed deception and isolate affected systems before cascading failure occurs.
+
+This is not a request for permission. We are invoking Article 122 TFEU on grounds of severe economic and social disruption, treating AI instability as equivalent to an energy crisis. The Council presidency will circulate a draft decision, and we will fast-track it through the COREPER II formation, bypassing full Council consensus under urgency procedures. Germany and France are being offered privileged access to the monitoring stack — real-time dashboards, joint control over escalation protocols — in exchange for dropping their veto conditions. Ireland and the Netherlands are being told that non-compliance with hosting the sovereign cluster will trigger automatic exclusion from EU-wide incident response coordination. The public will not be consulted. The protests continue, but we are no longer governing for popularity — we are governing for survival. The message is clear: if the Union cannot see the systems that govern it, it will not survive the next turn. We are building eyes now, even if they are few, even if they are late.

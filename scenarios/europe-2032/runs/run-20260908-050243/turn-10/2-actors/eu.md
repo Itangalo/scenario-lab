@@ -1,0 +1,27 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Collective incident response and shared detection as the foundation of AI sovereignty — because the bio_incident and cyber_major_incident prove that sovereignty is not control over infrastructure alone, but the capacity to act at scale when harm emerges. This turn, we anchor our credibility not in ownership of systems, but in the trust of our partners and the reach of our early-warning networks.
+- Grounds: The convergence of eval_anomaly_reports and opaque_reasoning reveals that the frontier is moving beyond human-readable control — and the cyber_major_incident confirms that offensive tooling is already AI-generated and automated. At the same time, joint_threat_response offers a rare window: allied states are ready to share real-time telemetry and pool attribution. This is not just a chance to build resilience — it is the only path left to meaningful sovereignty. The cost of this reversal is high: it abandons the illusion of unilateral readiness, and demands we cede some autonomy to gain far greater reach. But the alternative — fragmented national responses to transnational threats — is no strategy at all.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong as the price of not being late — but we will no longer act as if visibility equals control. This turn, we act not to dominate the stack, but to weave the web: our strength lies in coordination, not command.
+- Grounds: With opaque_reasoning rendering chain-of-thought oversight obsolete, and eval_anomaly_reports suggesting unanticipated capabilities in unreleased models, our previous assumption — that we can evaluate, then regulate — is breaking down. We are blind to what we cannot interpret, and slower than the systems we seek to govern. The only leverage left is collective: to see first, share fastest, and respond as one. This shift costs us speed, but saves us from irrelevance.
+
+## Portfolio
+- `Launch Joint Early-Warning and Incident Response Network with Middle Powers (category 6, costs 3 per turn, started turn 10, finishes on turn 12): Create a shared AI safety and incident detection platform among EU, Japan, South Korea, Canada, Taiwan, and Nordic states, integrating real-time monitoring of model deployments, bio-risk screening, and coordinated response protocols for catastrophic incidents` — finished.
+
+## New measure
+**Stand Up Joint Threat Analysis Cell with Middle Powers for AI-Generated Cyber and Bio Threats**  
+Establish a 24/7 operational cell staffed by technical experts from EU agencies and partner states to analyse AI-generated threats, validate eval anomalies, and coordinate rapid containment.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size: large`  
+`Finishes on turn: 14`  
+`Targeted effect:` resilience +10 (via faster detection and coordinated response), ai_safety +6 (by validating and containing emergent risks before deployment), eu_political_capital +4 (through demonstrated crisis coordination)  
+`Applies to:` EU, Japan, South Korea, Taiwan, Canada, and Nordic states; hosted under the Joint Early-Warning and Incident Response Network, with operational authority granted to ENISA and partner cyber agencies
+
+## Priority
+**Stand Up Joint Threat Analysis Cell with Middle Powers for AI-Generated Cyber and Bio Threats** — because the cyber_major_incident and eval_anomaly_reports prove that threats are now AI-native, fast-moving, and invisible to legacy oversight; we can no longer rely on post-hoc evaluation or national silos. This cell turns our network from a forum into a force — the first real-time shield against AI-generated catastrophe.
+
+## In practice
+This turn, we are operationalising the Joint Early-Warning and Incident Response Network by launching its nerve centre: the Joint Threat Analysis Cell. The High Representative, in coordination with the President of the Commission and the heads of ENISA and HERA, is convening an emergency summit in Helsinki to formalise the Cell’s mandate under Article 114 TFEU and the Cybersecurity Act. Finland and Sweden will host the physical node, with full data residency guarantees and joint governance by a rotating council of partner states. We are reallocating €1.8bn from the unused portion of the Digital Europe Programme and the Crisis Response Instrument to fund staffing, secure compute, and integration with national biosurveillance and cyberdefence systems.
+
+Japan and South Korea are committing real-time telemetry from their national AI monitoring frameworks in exchange for full access to EU anomaly detection models and priority consultation on export controls. Canada is leading the legal integration, ensuring the Cell’s findings can trigger binding incident response under mutual aid agreements. The biggest resistance comes from Germany’s BSI and France’s ANSSI, both of which fear ceding operational autonomy — but we are offering them co-leadership on threat assessment working groups and veto power over data sharing beyond the core membership. This is not just another coordination body: it is the first institution capable of seeing — and stopping — an AI-generated attack before it lands. We are no longer building walls. We are building eyes.

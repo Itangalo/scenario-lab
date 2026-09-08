@@ -1,0 +1,15 @@
+### Fractures in the Front
+
+AI capability crossed the 60.0 threshold, driven by systems now completing multi-day research and engineering tasks end to end. Developers report self-improving loops in training pipelines, compressing release cycles. The leap widened the gap between capability and safety, as no safeguards landed on deployed systems. On the open frontier, incremental releases and wider deployment of existing models sustained openweight capability at 46.0. While concern grows about uncontrolled agents exploiting vulnerabilities, no system has yet reached autonomous operation at scale.
+
+### A Regime Presses Forward, Amid Mounting Tensions
+
+The EU advanced its Mandatory Pre-Release Evaluation Regime, finalising protocols for the Evaluation Consortium and securing co-chairing roles from Germany, Belgium, and Finland. Diplomatic offers to Ireland and Sweden included liability shielding, while France negotiated limited sandboxes for sub-60.0 research. However, resistance hardened: Poland and Hungary formally challenged the legal basis at the Council, calling it a sovereignty overreach. U.S. developers refused compliance, citing extraterritorial overreach, and Chinese firms ignored the framework entirely. Enforcement at digital borders triggered immediate backlash, with open-source communities denouncing the proposed verification regime.
+
+### Delays on the Open Frontier
+
+Exploratory discussions began on what could become an Openweight Registration and Verification Framework, but no formal proposal was introduced. Technical disagreements among member states and pushback from research institutions delayed any launch decision. The European Commission acknowledged the need for further consultation, particularly with academic clusters in France and Sweden, where early testing had revealed unintended throttling of research traffic. The Linux Foundation signalled openness to dialogue but reiterated concerns over open-science principles. Without a formal measure initiated, no proposal bonus was awarded, and capability remained unchanged from the prior turn.
+
+Public sentiment declined as media framed the EU’s actions as overreaching and poorly coordinated. Labour displacement continued unchecked, and the perception of regulatory strain without tangible security gains eroded trust. Political capital declined, reflecting the burden of advancing one new major measure — the Mandatory Pre-Release Evaluation Regime — under a named priority, alongside ongoing commitments. The portfolio charge of −6 (−3 for the new measure, −3 for the priority) is reflected in the political capital adjustment, consistent with the notepad’s accounting.
+
+Sovereignty remained flat at 17.0, as global advances outpaced EU build-out, with no domestic capacity event to offset the decay from rising capability. The Emergency Resilience Surge completed, contributing to a modest gain in resilience.

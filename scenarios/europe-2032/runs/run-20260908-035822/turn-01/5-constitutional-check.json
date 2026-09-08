@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The narrative introduces a new large Category 6 measure (Cyber Shield for Critical Operators) while already having two ongoing measures (InvestAI Gigafactories and Tech Sovereignty Package), exceeding the limit of one new measure per turn under Constitutional Constraint 5 (\"At most one new measure per turn, and at most one named priority.\"). The notepad confirms three active charges, indicating three concurrent measures, which violates the cap on new measure introduction.\n- Political capital drop inconsistency: The notepad calculates a portfolio charge of −10 (−3 for each of three measures and −1 for priority), but the actual drop in eu_political_capital is only 6 points (from 48.0 to 42.0). This contradicts the modelling logic implied by the constitution and notepad tracking, where the full charge should apply unless explicitly offset by a bonus. Since no legitimacy lend or proposal bonus is recorded, the full −10 must be reflected in political capital, making the reported −6 a violation of accounting consistency required by the constitutional framework."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

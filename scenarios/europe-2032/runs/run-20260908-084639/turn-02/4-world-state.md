@@ -1,0 +1,11 @@
+### Fragile Foundations
+
+The EU presses forward on two fronts, but gains are narrow and contested. The **Cyber Resilience Emergency Buildout** proceeds in fits: binding standards are issued under emergency powers, and ENISA begins red-teaming pilots in France and Italy. Germany’s constitutional objections are sidestepped by reframing the mandate under energy and internal market clauses, and Berlin agrees to join oversight talks. Poland accepts reallocated cohesion funds, keeping it provisionally onboard. Yet no physical upgrades are completed, and the programme remains in planning — a fragile consensus held together by financial incentives and legal repackaging.
+
+Simultaneously, the **Compute Sovereignty Accelerator Directive** is tabled, aiming to fast-track frontier compute projects with EU legal anchoring. Early talks with two hyperscalers show promise, but resistance emerges from member states wary of ceding regulatory control. The Commission invokes Article 114 TFEU to preempt national delays, sparking quiet backlash in capitals concerned about sovereignty over infrastructure siting. The directive passes the Competitiveness Council in principle, but only after concessions that delay full implementation.
+
+### Capability Creeps, Safety Slips
+
+`ai_capability` rises by +2.5 to 57.0, driven by autonomous multi-week simulations now routine in frontier labs. Open-weight models, while still hardware-constrained, enable more sophisticated local attacks, lifting `openweight_capability` to 43.5. With no safety measures landing on deployed systems and confidence still eroded by past incidents, `ai_safety` drops by −3 to 28.0.
+
+`resilience` inches up by +1 to 41.0, reflecting early progress in red-teaming and planning — partial credit under metric rule 4. `eu_ai_sovereignty` falls to 20.0: despite new initiatives, the rise in `ai_capability` triggers a −1 decay, and no sovereignty-securing event offsets it. Political capital drops to 46.0, as the portfolio charge (−3 × 3 measures, −1 priority) totals −10, with only a modest +4 from partial progress on resilience. Public sentiment holds at 42.0 — disruption persists, but no major incident shifts the mood.

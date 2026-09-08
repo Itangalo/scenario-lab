@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: Emergency Openweight Containment Directive −3, priority −1 = −4  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 10 last turn, no category 4 completion, capability rose 4.0 −1, eu_frontier_access_denied t12 −3 = 6.0  
+US_POSTURE: CONSOLIDATION  
+emergent_eu_sovereign_model_launch -- first noted turn 11, listed in 2 turn(s) so far: Early benchmarks confirm the EU’s first sovereign model at capability 59.0 is operational in limited government pilot programmes. Scaling remains bottlenecked by GPU availability and U.S. export delays.  
+emergent_asml_backlash -- first noted turn 1, listed in 11 turn(s) so far: The Dutch parliamentary inquiry into ASML intensifies, with cross-party consensus forming around greater national oversight. While the EU directive passed, its diluted form fuels domestic debate over sovereignty versus alliance discipline. A constitutional challenge to Brussels’ authority over corporate exports is being drafted.  
+cyber_defence_breakthrough -- first noted turn 9, listed in 4 turn(s) so far: Defensive tooling closes the gap for a whole class of attack – automated patching at the speed vulnerabilities are found, or detection that catches swarm behaviour rather than signatures – and the offence-defence balance visibly shifts back for the first time in years.  
+emergent_dutch_constinental_crisis -- first noted turn 10, listed in 3 turn(s) so far: The standoff between The Hague and Brussels intensifies, with the Dutch government refusing to implement semiconductor export controls and citing national sovereignty. Legal uncertainty now threatens broader EU strategic tech initiatives.

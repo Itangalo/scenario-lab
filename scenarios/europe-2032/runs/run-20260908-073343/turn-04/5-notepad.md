@@ -1,0 +1,6 @@
+- `emergent_lab_cooperation` -- first noted turn 4, listed in 2 turn(s) so far: The European lab consortium deepens collaboration, sharing adversarial training data and launching a joint sprint on agent containment. Participation grows, but integration with national security agencies remains limited.
+- `emergent_public_outrage` -- first noted turn 4, listed in 2 turn(s) so far: Outrage escalates into political action, with three national parliaments launching inquiries into AI lab governance. Media narratives increasingly frame AI as a threat to democratic control, amplifying resistance to infrastructure projects.
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield −3 (finished), EU Sovereign Deployment Corridor −3, Accelerate Sovereign Compute Procurement −3, priority −1 = −16
+- PROPOSAL BONUS: none
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 18.0 last turn, no capacity event, capability rose ≥2.0 −1 = 16.0

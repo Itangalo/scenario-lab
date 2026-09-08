@@ -1,0 +1,13 @@
+### A Technical Breakthrough, a Political Tightrope
+
+The global AI frontier advances decisively, crossing the 60.0 threshold as coordinated training runs complete across multiple frontier labs. This milestone enables AI systems to autonomously execute multi-day professional projects — including drug design, legal synthesis, and cyber operations — with minimal supervision. A new safety method to formally verify goal stability in agent systems shows strong promise and is being piloted by several leading developers. Early results are encouraging, and the technique is expected to spread over the coming months, though full integration into deployment pipelines will take time.
+
+Buoyed by this moment, the EU proposes the Sovereign Assurance Programme, aiming to establish independent evaluation authority over high-capability AI. However, this new initiative is still in the design phase, with recruitment not yet launched and no operational capacity. The proposal replaces no existing measure, and given the ongoing burden of the InvestAI Gigafactories, Tech Sovereignty Package, and ASML Strategic Shield Initiative, its rollout will be delayed pending resource reallocation. The Commission acknowledges that staffing and funding constraints will limit near-term progress.
+
+The Cyber Shield Directive officially completes, mandating AI-driven intrusion detection across critical infrastructure. Germany and Austria comply fully, but Hungary and Slovakia continue to resist, rejecting even cost-sharing offers. Brussels threatens infringement procedures, straining cohesion. Meanwhile, the ASML Strategic Shield Initiative remains in diplomatic mode: the Belgian maintenance hub is now a formal European Defence Fund project, though physical progress is limited to site studies and inconclusive talks with Washington.
+
+Public sentiment dips as job losses in legal, administrative, and software sectors intensify. Media coverage frames the proposed Sovereign Assurance Programme as ambitious but underfunded, while protests against data centres grow more frequent. The informal bio-surveillance network expands, linking labs in six countries, but operates without legal mandate or central coordination.
+
+### Sovereignty Under Pressure
+
+Despite the technical optimism, export controls tighten further, now rationing advanced chips even to allied nations. This deepens Europe’s dependency, as no domestic alternative yet exists. The EU’s sovereignty erodes further, not from failure, but from the pace of external advancement outstripping its build-up. Open-weight AI capability sees modest gains from incremental open-source improvements and limited diffusion of safety techniques, but progress remains constrained by talent shortages and fragmented investment.

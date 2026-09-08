@@ -1,0 +1,1 @@
+The EU completed the Sovereign Compute Access Framework, securing control over the InvestAI Gigafactories in Marseille, Vilnius, and Gdansk—the West’s sole frontier compute base during the Taiwan Strait blockade. Despite this, operational fragility persisted due to delayed coordination and insecure execution environments during a major ransom游戏副本

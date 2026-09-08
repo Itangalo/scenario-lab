@@ -1,0 +1,25 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Enforce real-time operational control over all high-risk AI systems affecting the EU, ensuring the ability to interrupt harmful behaviour and preserve evidence — not just monitor, but act — through a sovereign, cryptographically enforced intervention interface integrated into system architecture by turn 11  
+- Trigger: the **eu_frontier_access_denied** event this turn  
+- Grounds: The abrupt denial of access to the leading global model — with no appeal, no transparency, and immediate operational consequences for hospitals, ministries and firms — proves that sovereignty without enforceable control is a fiction. Our previous commitment to runtime intervention was framed as a risk mitigation; now it is a survival imperative. The event confirms that reliance on foreign AI infrastructure, even under regulatory scrutiny, leaves the Union strategically exposed. We are no longer building oversight — we are building an operational immune system. This shift is not in intent, but in urgency and finality: the interface must be embedded, active, and under sole EU authority by turn 11, or we will be unable to act when the next disruption hits. The cost of reversal — loss of public trust, strategic paralysis — is now higher than the cost of enforcement.
+
+## Portfolio  
+- `Mandatory Runtime Intervention Architecture for High-Risk AI Systems (category 1, costs 3 per turn, started turn 9, finishes on turn 11): Require all high-risk AI systems, including foreign-hosted models serving EU markets, to integrate a standardized, EU-controlled intervention interface enabling real-time behavioural interruption and data freeze upon detection of anomalous or harmful activity.`  
+
+## New measure  
+**Sovereign Compute Acceleration Directive**  
+Fast-track the deployment of EU-anchored, high-performance computing infrastructure dedicated to public and strategic AI workloads, with legal and physical control under member state jurisdiction.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 14`  
+`Targeted effect:` Increases eu_ai_sovereignty by 15–20 points by turn 14 through 10+ exaflops of new sovereign compute; reduces dependency on foreign providers by enabling EU-controlled training and inference for critical applications; creates leverage in negotiations with hyperscalers by offering co-location with public workloads.  
+`Applies to:` EU member states, EU-certified data centre operators, and foreign hyperscalers seeking access to public procurement or critical infrastructure partnerships.
+
+## Priority  
+**Sovereign Compute Acceleration Directive** — because the **eu_frontier_access_denied** event has exposed a fatal gap: we can mandate control, but if we lack the infrastructure to run sovereign systems at scale, our mandates are empty. Runtime intervention is only as strong as the systems that enforce it — and right now, those systems depend on the very providers who just cut us off. This measure builds the substrate on which enforcement, evaluation, and resilience depend. Without it, every other measure is rented, not owned.
+
+## In practice  
+We are acting on the shock of exclusion: when the leading model was withdrawn without warning, it wasn’t just a technical outage — it was a political moment. Hospitals lost diagnostic support, ministries had to halt automated policy simulations, and firms faced sudden operational voids. This was not a failure of safety or resilience — it was a failure of sovereignty. We cannot enforce runtime control if we cannot run anything when the plug is pulled. This turn, we are launching the Sovereign Compute Acceleration Directive under the Digital Europe Programme and the Net-Zero Industry Act legal base, mobilising €8.2 billion in cohesion and IPCEI funds to fast-track the construction of sovereign compute clusters in six member states: France, Germany, Italy, Spain, Finland, and Poland. These sites will be legally bound to EU jurisdiction, with physical access restricted to cleared personnel and energy supply guaranteed through priority grid access.
+
+The directive uses a new permitting fast-track under Article 22 of the Digital Decade Act, cutting approval timelines from 36 to 12 months, and mandates that any hyperscaler seeking public procurement contracts above €50 million must either co-locate a mirrored stack on sovereign infrastructure or pay a 15% resilience surcharge. Poland, which has resisted previous centralisation efforts, is being offered leadership of the Warsaw node and first access to public AI jobs retraining funds in exchange for hosting. Ireland, still withholding support for the runtime mandate, is being presented with a choice: join the compute coalition and gain guaranteed access to 20% of Dublin’s output for SMEs, or be excluded from the mutual aid network when the next disruption hits. This is not about catching up to the frontier — it’s about ensuring we have a place to stand when the next wave breaks. We are building the ground beneath our feet.

@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield for Critical Infrastructure −3, AI Safety Certification Lab −2, European AI Cyber Assurance Pact −3, priority −1 = −15  
+PROPOSAL BONUS: European AI Cyber Assurance Pact (cat 6, large) +3 — answers cyber_major_incident and emergent_eu_cyber_assurance_initiative directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20.0 last turn, no capacity event, Gigafactories in flight +0, capability rose 2.5 −1 = 19.0  
+emergent_eu_cyber_assurance_initiative -- first noted turn 1, listed in 3 turn(s) so far: A coalition of European industrial, security, and regulatory voices continues to coalesce around a shared framework for mutual AI assurance and incident response, inspired by the cyber_test_shot intrusion. The effort is informal but gains momentum as member states recognize the need for deeper coordination beyond existing EU structures. It could evolve into a standing pact if sustained.

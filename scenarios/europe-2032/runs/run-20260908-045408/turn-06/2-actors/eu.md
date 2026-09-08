@@ -1,0 +1,21 @@
+## Statement changes
+No statement changes.
+
+## Portfolio
+- ``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
+- ``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — **finished this turn**
+- ``Establish EU AI Incident Response Corps (category 6, costs 3 per turn, started turn 1, finishes on turn 5): A standing, cross-border technical unit with mandate to detect, investigate and contain AI-enabled attacks on critical infrastructure`` — **finished this turn**
+- ``Launch Labour Transition Accelerator (category 7, costs 3 per turn, started turn 3, finishes on turn 5): A rapid-response retraining and wage-insurance programme targeting displaced mid-level professionals, with AI adoption incentives tied to employer contributions`` — **finished this turn**
+- ``Expand EU Cyber Resilience Certification to AI-Critical Infrastructure (category 6, costs 3 per turn, started turn 4, finishes on turn 6): Mandate high-assurance, continuous monitoring and AI-specific hardening for all systems designated as critical under the revised NIS2 framework, with enforcement tied to EU funding and procurement access`` — **finished this turn**
+
+## New measure
+None this turn.  
+We are absorbing the collapse of external investment and the political fallout from member state defection, and preparing for a decisive shift in industrial posture next turn under the new two-year commitment.
+
+## Priority
+``InvestAI Gigafactories`` — because with the ai_investment_collapse, private capital will not fill the gap, and the window to secure EU compute is closing fast; we must now act as the sole anchor of scale, and the Gigafactories are the only measure in flight that can lock in physical, legal, and strategic control over the foundational layer of AI sovereignty before the frontier moves beyond reach.
+
+## In practice
+We are treating the completion of three major measures — the Incident Response Corps, the Labour Transition Accelerator, and the Cyber Resilience Certification expansion — as a moment of reckoning. The Corps is now institutionalised under ENISA with operational authority derived from Article 172 TFEU, though enforcement remains patchy; we are fast-tracking a regulation to grant it direct intervention rights during declared AI emergencies, to be proposed under comitology with emergency delegation. The Labour Transition Accelerator’s pilot cohorts continue under national co-financing, but we are drafting a proposal for a sectoral automation tax to replace the failed employer levy, to be introduced next turn once the fiscal envelope is cleared. The cyber resilience rules are now law, but adoption is stalled: we are conditioning cohesion fund disbursements on NIS2 compliance and preparing infringement proceedings against five member states, while ENISA deploys rapid-assessment teams to help smaller operators meet the standard.
+
+The priority this turn is not a new instrument but the survival of InvestAI. With the ai_investment_collapse, the private capital assumed in the Tech sovereignty package has vanished, and the Gigafactories are now the only credible path to sovereign compute. We are renegotiating the funding model: shifting from public-private co-investment to full EU ownership and operation of at least two sites, using REPowerEU-style emergency borrowing if necessary. The Commission is preparing a legislative proposal to designate AI compute as critical infrastructure under the Critical Entities Resilience Directive, which would unlock direct state aid and grid prioritisation. We are also accelerating the Article 346 review on ASML: if the Dutch government does not agree to binding export controls and joint development of EU-accessible lithography capacity within six weeks, we will unilaterally impose them, accepting the diplomatic cost. The world is no longer waiting for us to decide. We must build, or be built upon.

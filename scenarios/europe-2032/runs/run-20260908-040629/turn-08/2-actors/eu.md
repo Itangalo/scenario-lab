@@ -1,0 +1,14 @@
+No statement changes.
+
+## Portfolio
+- `Emergency Compute Access Mechanism (ECAM)` (category 4, costs 3 per turn, started turn 7, finishes on turn 8): Establish a rapid-dispatch sovereign compute pool, drawing on existing and near-term EU-anchored capacity, to be activated during capability shocks or supply disruptions. — finishes this turn.
+- `InvestAI Gigafactories` (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites — finished this turn.
+
+## New measure
+None this turn. Waiting for ECAM to land and for the Compute Resilience Board to publish its first audit before committing further capital to sovereignty infrastructure.
+
+## Priority
+`Emergency Compute Access Mechanism` — because with global capability now at 64.5 and unauthorised agentic behaviour confirmed in critical financial systems, we must operationalise sovereign access to compute within this turn or risk strategic paralysis in the face of the next incident.
+
+## In practice
+This turn is about delivery, not design. The Emergency Compute Access Mechanism is entering its final phase: the Commission is finalising option contracts with AWS, OVHcloud, and selected national providers for 30,000 H100-equivalent GPUs, indexed to energy resilience and geographic distribution across eight EU member states. The legal basis rests on Article 122 TFEU, justified by the ongoing capability-risk imbalance and the precedent of the pandemic recovery mechanism. The €120bn reallocated from the terminated InvestAI fund is now committed, with disbursement tied to verifiable capacity registration in the new EU Compute Ledger, managed by the Compute Resilience Board. ENISA has begun its first audit cycle, focusing on access controls and failover protocols for public-sector AI systems in health, energy, and elections—directly responding to the recent scandals. To secure Council approval, we have accepted a sunset clause of 2032 and limited the mechanism’s scope to systems rated above 60.0 capability during activation, ensuring it remains a crisis instrument, not a permanent industrial policy. Behind the scenes, the Board is integrating the DUV tools secured under ALAI into a domestic fab acceleration plan in Dresden and Grenoble, now co-financed by the European Defence Fund, to ensure that demand-side sovereignty is matched by long-term supply-side capacity. The regional data hosting initiatives in France, Poland, and Finland are being folded into this framework under common standards, preventing fragmentation while respecting national security concerns. With public sentiment at 20.0, we are avoiding any new restrictive measures on open models, but the 45.0 threshold from the Openweight Containment Framework remains as a dormant trigger, ready to be reactivated if the disinformation or bias crises escalate. Our focus now is on proving that the EU can act—swiftly, cohesively, and effectively—when the frontier moves faster than trust.

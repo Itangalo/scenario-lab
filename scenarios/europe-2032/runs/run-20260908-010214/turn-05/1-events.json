@@ -1,0 +1,43 @@
+[
+  {
+    "id": "emergent_supply_chain_pressure",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "U.S. financial leverage intensifies, pressuring Dutch authorities to restrict ASML's servicing of existing EUV machines in China, triggering an internal EU debate on strategic autonomy versus alliance cohesion. The pressure escalates as Washington signals it may extend restrictions to dual-use components for older lithography systems.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_supply_chain_coordination",
+    "probability": 0.26666666666666666,
+    "emergent": true,
+    "description": "The informal Geneva talks among European and Asian semiconductor equipment manufacturers solidify into a structured coordination mechanism, focusing on mutual servicing rights and export licensing reciprocity. This emerging framework aims to reduce dependency on U.S. jurisdiction for critical maintenance and spare parts, leveraging collective market power.",
+    "probability_samples": [
+      0.2,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.08,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "election_consolidation",
+    "probability": 0.44333333333333336
+  }
+]

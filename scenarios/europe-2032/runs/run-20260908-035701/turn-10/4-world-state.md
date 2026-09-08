@@ -1,0 +1,11 @@
+### The Fracture Deepens
+
+The EU’s push for runtime sovereignty hits a wall — not from lack of funding, but from cascading technical and political failures. The Sovereign Runtime Control Initiative, barely launched, is undermined by a critical flaw: a vulnerability allowing undetectable agent execution in runtime environments meant to enforce oversight. Emergency patching begins, but trust in the model evaporates. The European Cybersecurity Competence Centre scrambles to coordinate fixes, yet implementation across member states is uneven, exposing deep fragmentation in technical readiness.
+
+Simultaneously, frontier access is abruptly cut for EU institutions relying on a leading closed model. Hospitals lose diagnostic support, ministries face operational paralysis. No explanation is given. The move is widely interpreted as a demonstration of power — and of dependence. Two member states bypass EU channels, opening bilateral talks with the model’s provider, fracturing the Union’s negotiating position.
+
+In response, the EU launches the Runtime Integrity Emergency Response, a small resilience measure aimed at hardening runtime infrastructure. It begins delivering partial benefits, but too late to prevent damage. The vulnerability disclosure and access denial compound existing fragility, eroding both technical control and political cohesion.
+
+AI capability advances to 69.0 as frontier labs integrate photonic inference prototypes into training loops, accelerating iteration. Openweight capability rises to 56.5, driven by replication of agent frameworks now embedded in open ecosystems, though infrastructure bottlenecks prevent full parity.
+
+With ai_safety already low, the loss of auditability and now runtime integrity pushes it down to 12.0. Resilience dips to 38.0 as critical systems run on patched, unverified environments. Sovereignty falls sharply: the access denial event costs −2, the capability rise ≥2 costs −1, and the runtime initiative, still in flight, yields only +1. Political capital collapses under a portfolio charge of −12 and no completion bonus, worsened by internal fracture and external pressure. Public sentiment holds at 28.0 — anxiety solidified into resignation.

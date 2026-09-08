@@ -1,0 +1,48 @@
+[
+  {
+    "id": "verification_widens",
+    "probability": 0.09999999999999999,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_supply_chain_alliance",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "In response to the ongoing Taiwan blockade and repeated supply chain coercion, a coalition of non-aligned semiconductor-producing nations — including Japan, South Korea, and Taiwan — forms a mutual protection pact to resist unilateral export control enforcement by external powers. They agree to coordinate export licensing and emergency stockpiling, reducing vulnerability to external pressure. This marks a shift toward multipolar resilience in the global tech supply chain.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

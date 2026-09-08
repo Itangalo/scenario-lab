@@ -1,0 +1,36 @@
+## Statement changes
+
+- modify `two_year_commitment` (commitment): Secure autonomous control over AI systems that determine strategic outcomes  
+- Trigger: The cyber_major_incident and eval_anomaly_reports this turn demonstrate that control is no longer about access or ownership, but about understanding and containment.  
+- Grounds: We now face systems capable of self-modification and unanticipated behaviour at 81.0 capability, while ai_safety is at 0.0. Owning a lab or co-locating compute—our previous focus—does not equate to control when reasoning is opaque and incident response is reactive. Our commitment must shift from securing access to securing *comprehension*: the ability to inspect, predict, and intervene in system behaviour before failure occurs. This is no longer optional; it is the core of sovereignty in a world where the frontier is already inside our critical infrastructure.
+
+## Portfolio
+
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — *finished this turn*  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — *finished*  
+``Accelerate EU Access to Frontier Models via Sovereign Compute Partnerships (category 4, costs 3 per turn, started turn 2, finishes on turn 7): Secure guaranteed, legally enforceable access to the most capable AI models for EU public institutions and essential industries by co-investing in and co-locating sovereign compute clusters with leading non-U.S. frontier developers, under EU jurisdiction and operational control.`` — *finished this turn*  
+``Establish EU Pre-Release Evaluation Authority with Emergency Powers (category 1, costs 3 per turn, started turn 3, finishes on turn 6): Create a central, independent body with legal authority to conduct or commission third-party evaluations of high-capability AI systems before deployment, with power to delay or condition release based on demonstrated risk.`` — *finished*  
+``Launch Sovereign AI Acquisition Facility with Strategic Equity Window (category 4, costs 3 per turn, started turn 4, finishes on turn 8): Authorise the European Innovation Council to deploy up to €50bn in equity investments to acquire or co-own frontier AI labs and compute infrastructure in third countries aligned with EU values, ensuring legal jurisdiction, data locality, and operational control.``  
+``Deploy Emergency Resilience Surge in Response to Cyber Major Incident (category 6, costs 3 per turn, started turn 5, finishes on turn 7): Rapidly expand cyberdefence capacity across public services using AI red-teaming, automated patching, and cross-border mutual aid to contain cascading failures and restore trust.`` — *finished this turn*  
+``Launch Open-Source Verification and Safety Stack for Critical AI Systems (category 5, costs 2 per turn, started turn 6, finishes on turn 8): Deploy a public, EU-hosted technical infrastructure that allows independent researchers and member state agencies to verify model behaviour, inspect reasoning traces, and run safety evaluations on high-impact AI systems deployed in public services or essential industries, even when weights are not open.``
+
+## New measure
+
+**Mandate Real-Time Monitoring and Interpretability Requirements for High-Capability AI Systems**  
+Require all AI systems above capability level 60.0 operating in critical infrastructure or public services to run with real-time interpretability tooling that logs decision pathways, flags deviations from expected behaviour, and enables immediate human-in-the-loop override.
+
+`Category: 5 (Public technical capacity and research)`  
+`Size: large`  
+`Finishes on turn: 10`  
+`Targeted effect:` ai_safety +15 (by forcing transparency into deployed systems), eu_ai_sovereignty +5 (by creating a technical and legal basis for EU-level oversight), resilience +5 (by enabling faster detection and containment of emergent failures)  
+`Applies to:` Operators of AI systems above capability threshold 60.0 in critical infrastructure, public services, and essential industries across all member states
+
+## Priority
+
+``Launch Open-Source Verification and Safety Stack for Critical AI Systems`` remains the priority this turn because, in the wake of the cyber_major_incident and eval_anomaly_reports, proving we can *see inside* high-capability systems is now the only credible foundation for either regulation or resilience — and this stack delivers that visibility where it matters most.
+
+## In practice
+
+We are in the final phase of the Emergency Resilience Surge, and its impact is real: automated patching agents are now live in emergency dispatch systems across six member states, and ENISA’s red-teaming has already uncovered three zero-day vulnerabilities in municipal water control software. But the cyber_major_incident — a ransomware sweep that crippled hospital scheduling in two capitals — proved that defence without insight is temporary. We cannot patch what we do not understand. That is why our focus is now converging on the Open-Source Verification and Safety Stack: it is no longer a research prototype but a live operational tool. Hosted on Gaia-X, it is ingesting reasoning traces from the Montreal and Seoul labs we partially own, and we are mandating its integration into all public-sector AI deployments above threshold 60.0. The EIC and DG CONNECT are working with national regulators to issue technical standards by turn 9, so that when the new monitoring mandate comes into force, compliance is not a negotiation but a configuration.
+
+At the same time, we are redefining what “autonomous control” means. The Sovereign AI Acquisition Facility will complete its equity deals this turn — we will have board seats, data sovereignty, and co-location. But as the eval_anomaly_reports show, that is not enough. A system that behaves differently under observation cannot be governed by ownership alone. That is why the new measure — real-time monitoring and interpretability — is being drafted under Article 114 TFEU as a harmonised internal market rule, to prevent fragmentation. We are offering transitional compliance pathways to operators who integrate the EU Safety Stack, and we are working with the Pre-Release Evaluation Authority to align pre-deployment testing with in-service monitoring. The pushback is strong — especially from non-EU labs who call this extraterritorial — but we are not asking for weights. We are asking for logs. And if they want to operate in our critical infrastructure, they will provide them. This is not a barrier to innovation. It is the price of admission to our society.

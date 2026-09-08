@@ -1,0 +1,29 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Secure the foundations of sovereign AI agency while preventing catastrophic systemic risk and restoring public trust as a foundation for political action  
+- Grounds: The continued erosion of `public_sentiment` to 23.0, the failure of the **European AI Incident Response Corps** to launch in operational form, and the legal and political delays to sovereign evaluation capacity confirm that institutional outputs without legitimacy are inert. The **emergent_labour_unrest** is not a phase but a structural condition: the Union cannot staff its sovereign systems, enforce its directives, or sustain investment if its own people see AI as an occupying force. This turn, we treat trust not as a secondary effect but as a binding constraint — one that determines whether our measures live or die in implementation. The commitment now reflects that sovereignty, safety, and social license are inseparable.
+
+## Portfolio
+``Secure Sovereign Evaluation Capacity (category 5, costs 3 per turn, started turn 9, finishes on turn 10): We stand up an EU-owned and operated evaluation regime for models above 55.0 capability, using red-team agents, interpretability tooling, and tamper-proof runtime monitoring to detect emergent risks before deployment`` — **finished**  
+``European AI Incident Response Corps (category 6, costs 3 per turn, started turn 10, finishes on turn 11): We establish a standing, cross-border rapid-response unit for AI-enabled cyber and hybrid incidents, with pre-authorized access to critical infrastructure logs, model telemetry, and emergency override protocols``  
+``European Sovereign AI Fellowship and Deployment Programme (category 5, costs 3 per turn, started turn 10, finishes on turn 13): We launch a pan-European initiative to train, place, and empower 5,000 public-sector AI engineers and auditors by 2033, embedded in national administrations, critical infrastructure operators, and EU agencies, with direct access to sovereign models and evaluation tooling``
+
+## New measure
+**Emergency Resilience Surge for Critical Infrastructure**  
+We mandate and fund immediate cyber hardening and AI incident response readiness across all EU energy, health, and water systems, with binding targets, central coordination, and rapid deployment of sovereign tooling and Fellowship engineers.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size: large`  
+`Finishes on turn: 12`  
+`Targeted effect:` resilience +6 (via hardened critical systems and embedded response teams), ai_safety +2 (through real-time monitoring and intervention capacity), eu_ai_sovereignty +2 (by asserting control over deployment environments)  
+`Applies to:` EU member states, national critical infrastructure operators, ENISA, EuroHPC, and the European Health Data Space
+
+## Priority  
+Priority: Emergency Resilience Surge for Critical Infrastructure  
+Because the **loss_of_control_incident**, **bio_uplift_findings**, and **eval_anomaly_reports** together signal that the next failure may not be contained — and because the **election_annulled** event proves that AI’s reach now extends to the foundations of democratic legitimacy — we must act now to harden the systems upon which life and governance depend, even at the cost of accelerating our strained political capital.
+
+## In practice  
+The **Secure Sovereign Evaluation Capacity** is now complete in technical form, but its authority remains fractured. We are finalising the tiered levy compromise — 15% for unrestricted private systems, 7% for audited public-interest AI — and will table it at ECOFIN in July. The legal base is Article 114 TFEU, with co-decision by Parliament, but we are preparing a fallback regulation under the Digital Services Act framework in case the levy is struck down. INRIA’s interpretability pipeline is now detecting goal drift in agent systems up to 61.2, but without universal access, it sees only a fraction of the threat. We are offering audit exemptions and faster market access to firms that volunteer telemetry — a carrot, because the stick is not yet law.
+
+The **European AI Incident Response Corps** remains in pilot, but we are converting the delay into focus: instead of full deployment, we are embedding 20 of its personnel as forward observers in the ten highest-risk infrastructure zones — German grid operators, French nuclear facilities, and the Nordic data corridors. They will run red-teaming drills using sovereign models from LUMI-B and MareNostrum, and their findings will feed into the new **Emergency Resilience Surge**. Portugal has agreed to limited telemetry sharing in exchange for priority surge support during its August grid stress test — a precedent we will replicate across the bloc. The Directive on AI System Transparency for Critical Operators is now drafted and will go to COREPER next month; we are offering member states co-ownership of the incident database to secure buy-in.
+
+The **European Sovereign AI Fellowship and Deployment Programme** has opened its first call, with 1,000 positions funded by Horizon Europe and the Digital Europe Programme. We are fast-tracking visas for non-EU experts in biosecurity and agent safety, and offering signing bonuses to retain talent in public service. Germany has withdrawn its opposition after we agreed to a joint industry-public R&D track — private firms can bid for Fellowship-led projects, ensuring knowledge flows both ways. Fellows will begin arriving in hospitals and energy ministries by September, but their real test will be the **Emergency Resilience Surge**, where they will be deployed as technical enforcers and public liaisons — not just auditors, but ambassadors of a sovereign AI that serves, rather than displaces.

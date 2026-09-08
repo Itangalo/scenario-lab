@@ -1,0 +1,14 @@
+### The Frontier Leaps, the World Staggers  
+A sudden, discontinuous advance — the so-called *capability_jump* — pushes `ai_capability` to 65.5, crossing the 60 threshold where AI systems autonomously execute multi-day professional projects and begin materially shaping their successors. The release renders prior roadmaps obsolete overnight. With no safety upgrades in flight and verification lagging, `ai_safety` plummets by 12 points to 13.0, entering uncharted territory of opaque risk. Simultaneously, the *taiwan_blockade* halts advanced semiconductor exports, triggering a global compute scarcity. Existing data centres become strategic assets overnight.
+
+### EU Responds with Emergency Mobilisation  
+In response, the EU launches the **Emergency Compute Sovereignty Mobilisation**, invoking Article 122 TFEU to initiate fast-track acquisition of twelve high-performance data centres. A proposal to draw €45bn from unused Recovery and Resilience Facility (RRF) margins is tabled, but legal challenges emerge over the availability and repurposability of these funds under current EU fiscal rules. The European Commission confirms exploratory talks with member states on potential reallocations, though disbursement cannot proceed without Council consensus. As a result, no physical infrastructure is secured this turn.
+
+The EuroHPC Joint Undertaking is designated as the intended operator of a future strategic reserve, but its transformation into such a role remains pending legislative approval, staffing expansion, and integration planning. Germany supports the ambition; France resists centralisation but signals openness to co-location compromises. Spain negotiates for representation on a proposed tripartite oversight body, though final governance arrangements are deferred.
+
+The *Secure Open-Source Frontier Equivalents* programme accelerates planning, aided by pledged access to MosaicML-EU clusters and planned ENISA monitoring frameworks. However, no sovereign compute build finishes this turn, and access remains contested.
+
+### Political Capital Strains Under Pressure  
+The portfolio now includes four large measures (including the new emergency directive), costing −10 per turn, plus −1 for the priority. No completion bonus offsets this. A −2 penalty hits `public_sentiment` due to fears of nationalisation and supply shock. `Resilience` drops by 2 as capability outpaces protection. Despite the urgency, `eu_ai_sovereignty` rises slightly to 21.0, reflecting political commitment amid crisis. Yet political capital erodes to 35.0, reflecting mounting strain and fragmentation.
+
+`Openweight_capability` increases only marginally to 49.0, consistent with gradual accumulation through ongoing development efforts and partial cluster access, rather than a discontinuous leap. The global compute shortage constrains scaling, and no major open-weight training runs conclude this turn.

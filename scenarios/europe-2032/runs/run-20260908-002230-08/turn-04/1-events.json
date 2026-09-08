@@ -1,0 +1,59 @@
+[
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.12,
+    "probability_samples": [
+      0.16,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.1366666666666667,
+    "probability_samples": [
+      0.16,
+      0.15,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.14,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_eu_bio_defence_network",
+    "probability": 0.06999999999999999,
+    "emergent": true,
+    "description": "In response to the recent bio incident, a pan-European AI-driven bio-surveillance network begins informal coordination between national labs, sharing anomaly detection models and real-time pathogen data. The network operates outside formal EU structures but gains traction due to urgency, laying groundwork for a future binding framework.",
+    "probability_samples": [
+      0.21,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

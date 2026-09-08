@@ -1,0 +1,13 @@
+### Accelerating Frontier, Fragile Defences
+
+The global AI frontier advances rapidly, with `ai_capability` rising by 2.0 as laboratories compress release cycles and scale training runs. The Kimi K3 open release enables broader replication of mid-tier offensive cyber capabilities, lifting `openweight_capability` to 42.0—a measured increase that reflects growing diffusion without surpassing the pace of frontier progress. Despite this, a significant `safety_breakthrough` improves interpretability in deployed models, allowing developers to predict emergent behaviours before deployment. This boosts `ai_safety` by +4, the largest single gain in years.
+
+Meanwhile, a sophisticated `cyber_test_shot` exposes critical gaps: intrusions in energy, water, and port systems across multiple continents reveal that AI-driven attacks now evade conventional detection. The EU responds with the **Cyber Shield Directive**, named as its priority for the turn. A €12bn Modernisation Envelope is proposed to offset compliance costs, but formal adoption is delayed. France and Poland demand exemptions for strategic infrastructure, stalling consensus. The measure is formally tabled but yields no immediate resilience gain.
+
+Public trust erodes further after an `automated_decision_scandal` in a national social insurance system is found to have denied claims systematically. The backlash shifts sentiment downward, especially among older voters and public-sector unions. Labour displacement concerns grow louder as AI adoption accelerates in legal and accounting sectors.
+
+The EU’s compute ambitions are signalled through early planning for InvestAI Gigafactories, with environmental assessments proposed and site selection beginning. However, no construction starts this turn. Energy policy tensions emerge as AI power demand grows, and local opposition rises in drought-prone regions. The Tech Sovereignty Package is mentioned in debate but not formally advanced in Parliament.
+
+### Strategic Drift
+
+With `ai_capability` rising by more than 2, `eu_ai_sovereignty` declines by −1. No capacity event occurred, but dependence deepens. Political capital is strained—only one measure is now in flight (Cyber Shield Directive), costing −3; the priority designation adds −1; and the scandal inflicts −5 due to internal origin. A modest +2 from the safety breakthrough partially offsets losses. No proposal bonus applies—the Cyber Shield responds to a real incident, but `cyber_test_shot` was not a major incident, only a warning.

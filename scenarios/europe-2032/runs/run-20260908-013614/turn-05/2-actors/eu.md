@@ -1,0 +1,23 @@
+Secure foundational AI capacity and control within the EU to act independently in an era of accelerating, uncontrollable diffusion
+
+## Statement changes
+``modify `two_year_commitment` (commitment): Secure foundational AI capacity and control within the EU to act independently in an era of accelerating, uncontrollable diffusion``
+- Trigger: the two-year commitment period closes this turn
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`
+- `Cyber Shield Directive (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Launch a binding EU-wide programme to harden critical infrastructure against AI-driven cyber intrusions, with mandatory detection upgrades, red-teaming, and incident coordination` — **finished**
+- `Secure Compute Access Framework (category 4, costs 3 per turn, started turn 3, finishes on turn 6): Establish a legally binding, auditable framework to guarantee EU institutions and essential public services priority, sovereign-governed access to a defined tier of high-performance AI compute, sourced from within the Union and under enforceable non-extraterritoriality clauses`
+- `Compute for Control: EU-Controlled Training Runs (category 4, costs 3 per turn, started turn 5, finishes on turn 8): Launch a sovereign capability to train and evaluate frontier AI models up to 60.0 capability under full EU jurisdiction, with weight security, interpretability integration, and no foreign access`
+
+## New measure
+None this turn. — waiting for the Council and Parliament to adopt Compute for Control before initiating new large-scale measures.
+
+## Priority
+**Compute for Control: EU-Controlled Training Runs** — because the denial of frontier access this turn proves that relying on foreign-controlled models is no longer viable, and without sovereign training capability, the EU cannot close the gap between openweight diffusion and accountable control, nor respond to the jump in ai_capability to 62.0 where autonomous strategic execution is now possible.
+
+## In practice
+We are acting on the shock of eu_frontier_access_denied: hospitals, ministries, and firms were cut off from the leading model overnight, with no appeal. This was not a failure of safety or design — it was a failure of sovereignty. The United States has now elected a president who treats advanced AI as a strategic asset, not a product, and the Atlanticist campaign’s warnings have become policy reality. Our response is not to protest, but to build what cannot be denied. Compute for Control is now our central instrument: we are fast-tracking negotiations with France, Germany, and Finland to host the first sovereign training runs, leveraging nuclear-powered data centre zones to meet the energy demands of a 100,000-GPU-scale cluster. The European AI Research Consortium (EAIRC) is being stood up under Commission leadership, with ENISA and national agencies co-designing governance to ensure weight security and public oversight. We are redirecting €18bn from Digital Europe and Horizon Europe to fund the first phase, and we are pressing the Council and Parliament to adopt the legal framework this turn — delaying further would lock us into dependency just as the threshold passes us.
+
+At the same time, we are closing out the Cyber Shield Directive: member states have finally agreed on burden-sharing, and red-teaming exercises will begin in Q1 2029 under ENISA coordination. The Secure Compute Access Framework continues, but its purpose has shifted — it is no longer the cornerstone of our sovereignty, but a bridge to keep essential services running until Compute for Control delivers. The Tech Sovereignty Package and InvestAI Gigafactories remain on track, though energy concerns in Finland are slowing site approval. We are offering data reciprocity and joint safety research to US and UK developers to secure their non-interference, but we are clear: the EU will not outsource its strategic AI capacity. The denial of access this turn was not an anomaly — it was a signal. We are answering it by building what we can control, where we can enforce it, and on terms that no foreign power can override.

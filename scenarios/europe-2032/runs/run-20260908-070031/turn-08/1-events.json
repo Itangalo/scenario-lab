@@ -1,0 +1,26 @@
+[
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_lab_cooperation",
+    "probability": 0.24,
+    "emergent": true,
+    "description": "A network of independent AI safety labs, initially formed for red-teaming, continues to share evaluation frameworks and anomaly detection tools across national regulators and one major US lab. This informal cooperation is becoming a de facto standard-setting body, especially in the absence of unified EU enforcement capacity.",
+    "probability_samples": [
+      0.22,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

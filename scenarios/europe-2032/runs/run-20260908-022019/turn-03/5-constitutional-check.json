@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 44.0 to 48.0 (+4.0), but `ai_capability` increased by only +2.5 (from 57.0 to 59.5). Since `openweight_capability` may never exceed `ai_capability` and must accumulate at a rate no faster than the leading metric, a jump of +4.0 while `ai_capability` grows +2.5 implies `openweight_capability` is rising faster than the frontier, which violates the invariant unless justified by catastrophic physical destruction of compute (not narrated). No such event is described; instead, progress is attributed to policy and adoption, which does not override the accumulation rule.\n- Modelling choice 5 violated: The narrative introduces *two* new measures in one turn: **Public AI Corps** and the completion of **Cyber Shield for Critical Operators** is treated as an active measure contributing to portfolio charge (−3), while **Public AI Corps** also carries a −3 charge. The notepad lists four active measures (InvestAI Gigafactories, Tech Sovereignty Package, Cyber Shield, Public AI Corps), but the rule allows at most one *new* measure per turn. Introducing **Public AI Corps** as a new measure while **Cyber Shield** is still active and charged as a full measure in the final turn constitutes two new or active measures unless one is clearly a continuation. However, the notepad treats both as active simultaneously, and the narrative treats **Public AI Corps** as newly introduced, violating the \"at most one new measure per turn\" rule."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

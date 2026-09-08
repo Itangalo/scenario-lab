@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `eu_political_capital` decreased from 16.0 to 5.0, a drop of 11 points in one turn. This violates the hard cap in Constitutional Constraint 9, which states: \"No metric moves more than 25 points in one turn.\" While 11 is within the 25-point threshold, the narrative and notepad imply a calculation error in the final value. The notepad states the final capital should be 7.0 after the +1 legitimacy adjustment (from 6.0 to 7.0), but the proposed metric is 5.0. This internal inconsistency violates Constraint 9 by misapplying the movement limit logic — either the adjustment applies (resulting in 7.0) or it doesn’t (resulting in 6.0), but not 5.0. The final value must be consistent with the rules as applied.\n- Invariant 4 violated: The narrative states \"The US election concluded with a consolidation victory\" and declares the EU a \"client, not a peer\", which establishes the new US posture. However, the notepad records `US_POSTURE: pending`, and per Constraint 4, \"The American posture, once elected, is standing\" and \"the `US_POSTURE:` line is written in turn 6, when the administration takes office\". By narrating a definitive US posture in turn 5 — before it is officially recorded in the notepad in turn 6 — the update violates the constitutional timing and recording rule. The narrative must not establish or imply the posture before it is formally entered in turn 6."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

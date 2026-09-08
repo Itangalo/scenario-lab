@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 42.5 to 51.0 (+8.5), which is acceptable in magnitude, but the narrative provides no justification for such a large jump in openweight capability independent of `ai_capability`. More critically, the jump narrows the gap significantly despite no corresponding breakthrough in sovereign compute or open model training infrastructure—this risks implying openweight capability is decoupling from the underlying compute and safety constraints without cause. While not strictly falling, such a surge must be grounded in a plausible open-source or distributed training event; the release of a single model does not justify an 8.5-point leap unless it represents a coordinated, resource-intensive effort that would itself consume political capital or resilience—none of which is accounted for.\n- Modelling choice 5 violated: The narrative states that the EU has four large measures \"in flight\" and introduces a *fifth*, the Sovereign Talent Acceleration Programme, implying five active major measures. However, the portfolio charge in the notepad lists five measures each with −3, plus a priority penalty, totaling −16. This exceeds the structural limit implied by the modelling constraints: while not explicitly capped in number, the cost and political capital drain of running five category 4 measures simultaneously—especially with no completed measure to offset—violates the spirit and practical feasibility bounded by constraint 5 (at most one new measure per turn, and only one named priority). The introduction of a new large measure while four others are active and none have completed breaches the pacing and capacity realism this constraint enforces.\n- Narrative violates Modelling choice 8: The notepad mentions `emergent_bio_uplift_signal` has been listed for three turns and states it \"opens the bio gate for the next 4 turns\"—this is a clear telegraphing of a future event gate, specifying both duration and activation. This violates the prohibition on writing anticipatory sentences about what is coming. Gate state belongs only in event evaluation logic, not in narrative or notepad summaries."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

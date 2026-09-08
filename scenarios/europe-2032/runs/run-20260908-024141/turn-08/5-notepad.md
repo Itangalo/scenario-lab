@@ -1,0 +1,7 @@
+- `emergent_asml_boardroom_revolt` -- first noted turn 7, listed in 2 turn(s) so far: The legal campaign by ASML executives against U.S. export control pressure intensifies, with public statements invoking Dutch sovereignty and EU industrial autonomy. The European Commission signals it may invoke emergency powers to assert control over dual-use technology exports, escalating tensions with Washington and raising the prospect of retaliatory measures. This could fracture transatlantic coordination on tech security.
+- `emergent_labour_displacement_wave` -- first noted turn 7, listed in 2 turn(s) so far: The wave of AI-driven job losses accelerates across legal, radiology, and software sectors, with multiple member states reporting record declines in mid-level professional hiring. Regional protests erupt over delayed retraining programs, and national labour ministries warn of systemic strain. The issue dominates public discourse, increasing pressure on EU institutions to deliver structural labour reforms.
+- PORTFOLIO CHARGE: no active measures, priority −1 = −1
+- PROPOSAL BONUS: none
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 17.0 last turn, Sovereign Inference Initiative finishes t8 +3, capability rose 6 −1 = 19.0
+- US_POSTURE: RETRENCHMENT

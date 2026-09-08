@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: EU Compute Resilience Directive −3, priority −1 = −4  
+PROPOSAL BONUS: none — no negative event in last three turns that this measure directly answers  
+LEGITIMACY LENDS: none — public_sentiment (34.0) > eu_political_capital (24.0), but capital below 20 threshold suspends rule 6 term  
+SOVEREIGNTY: 13.0 last turn, no capacity event, EU Compute Resilience Directive in flight +0 (early stage), capability rose 0.5 → no decay term = 13.0  
+US_POSTURE: CONSOLIDATION  
+emergent_bio_uplift_signal -- first noted turn 9, listed in 1 turn(s) so far: A peer-reviewed study demonstrates that a widely available open-weight model can guide the synthesis of a pathogenic viral vector with moderate human infectivity, given access to lab resources. The study passes peer review but is redacted before publication, and the debate centers on whether the method constitutes a realistic threat or theoretical speculation. This signal strengthens biosecurity concerns and keeps the bio gate open.  
+emergent_taiwan_tension_rise -- first noted turn 9, listed in 1 turn(s) so far: Following heightened military drills and a diplomatic incident involving the expulsion of consular staff, Taiwan experiences a sustained spike in shipping insurance costs and restricted air corridors. The situation remains below active conflict but increases pressure on semiconductor supply chains, reinforcing the strategic urgency for non-Chinese compute sovereignty.

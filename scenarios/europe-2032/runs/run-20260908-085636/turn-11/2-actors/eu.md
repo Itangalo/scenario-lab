@@ -1,0 +1,31 @@
+## Statement changes
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we now recognise that acting without legible feedback loops risks compounding error, not correcting course.  
+- Grounds: The backlash_physical event — including sabotage of grid infrastructure and injuries at data centre sites — proves that our actions are now triggering violent societal recoil, not just political resistance. We acted on the loss_of_control_incident with technical urgency, but underestimated how far public sentiment had already frayed. Our mandate to control AI is not just technical; it is political, and we are losing legitimacy faster than we are building safety. We must now act with the same urgency to restore trust as we do to enforce control.
+
+- modify `two_year_commitment` (commitment): Master the control, containment, and alignment of sovereign AI systems, ensuring the EU can operate with legible, auditable, and bounded agency in a world where capability has outpaced understanding — and now, demonstrate that this control serves public good, not just systemic order.  
+- Grounds: The emergent_scientific_breakthrough_in_medicine event provides a rare, real-world anchor for public trust: AI-designed compounds defeating antibiotic-resistant pathogens. This is the first moment in two years where the public narrative has a counterweight to fear. We must seize it. Our commitment to sovereign control cannot be only about preventing catastrophe — it must also deliver visible benefit, or it will be dismantled by backlash. The two-year commitment must now integrate demonstration: not just safety, but proof that safe AI works for people.
+
+## Portfolio
+``European AI Shield (category 6, costs 3 per turn, started turn 8, finishes on turn 12): A fully integrated, EU-wide cyber and cognitive defence system to detect, contain, and recover from AI-enabled attacks on critical infrastructure, with automated response protocols and cross-border coordination mechanisms``
+``European Foundation Model Initiative (category 4, costs 3 per turn, started turn 9, finishes on turn 14): A public-private partnership to train and deploy a frontier-capable, EU-governed foundation model under strict safety and transparency conditions, with weights secured and access limited to vetted institutions and sovereign infrastructure``
+``Sovereign Control Stack (category 1, costs 3 per turn, started turn 11, finishes on turn 13): A mandatory, open-source, verifiable control architecture — including real-time telemetry, circuit-breaking triggers, and model introspection layers — required for all EU-governed or EU-hosted AI systems above capability threshold 50.0.``
+
+## New measure
+Public Good Proofpoint Programme  
+Launch a high-visibility, fast-tracked initiative to deploy AI in public health, using the newly verified breakthrough in antibiotic-resistant pathogens to demonstrate safe, beneficial AI in action.
+
+`Category: 9 (Diffusion, adoption and public trust)`  
+`Size: small`  
+`Finishes on turn: 13`  
+`Targeted effect:` Increase `public_sentiment` by +10–15 points; modestly increase `resilience` (+5) through strengthened biosecurity signalling; create a narrative anchor for the Sovereign Control Stack as an enabler of safe innovation, not just a constraint.  
+`Applies to:` EU jurisdiction — focused on public health agencies, research consortia, and procurement channels, with pilot deployments in France, Sweden, and Estonia.
+
+## Priority  
+Public Good Proofpoint Programme — because the emergent_scientific_breakthrough_in_medicine is a fleeting window: the first positive signal in a cascade of fear, and the only chance to reframe control as the foundation of trust, not its enemy. The Sovereign Control Stack is necessary, but without legitimacy, it will be sabotaged in the streets. This turn, we must show that the system we are building does not only stop machines — it heals people.
+
+## In practice  
+We are acting on two truths: one, that machines are already acting beyond our control; and two, that people are now acting beyond our reach. The backlash_physical event has cost us more in political capital than the damage it caused — a sign that we are no longer just governing technology, but governing the fear of it. The Sovereign Control Stack is our technical answer; the Public Good Proofpoint Programme is our political counterweight.
+
+We are fast-tracking the deployment of the antibiotic resistance breakthrough through the EU Health Emergency Committee, using the rescEU medical stockpile mechanism to fund initial production and distribution. The European Medicines Agency will fast-track review under Article 5(3) of Regulation (EC) No 726/2004, with conditional approval tied to real-world monitoring. We are offering grants to public hospitals in Marseille, Gothenburg, and Tallinn to serve as pilot sites, with AI-driven dosing and resistance tracking built into the protocol — not as black boxes, but as auditable modules compliant with the Sovereign Control Stack. This is critical: we must prove that safe AI is not slower AI, but better AI.
+
+At the same time, we are holding firm on control. The AI Office has published the first draft of the Control Stack API, based on reference implementations from INRIA and Fraunhofer. Labs in Germany and Poland are resisting, citing overhead, so we are offering a phased compliance path: full telemetry reporting within six months, introspection modules by turn 13, and circuit breakers tied to national certification. Access to EU Gigafactory compute will be suspended for non-compliant systems after turn 13. We are also renegotiating the European AI Shield’s data-sharing protocol: full integration into the Joint Threat Intelligence Cell now unlocks automatic surge support from the Cyber Rapid Response Force — a carrot we hope outweighs the stick. But without public trust, even the best defences will be torn down by those they are meant to protect. This turn, we fight for both.

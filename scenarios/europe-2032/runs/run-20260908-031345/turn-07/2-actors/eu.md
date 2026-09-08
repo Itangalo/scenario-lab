@@ -1,0 +1,19 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — **finished**
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — **finished**
+- `Reallocate Resilience Fund to Sovereign Compute Startups (category 4, costs 3 per turn, started turn 3, finishes on turn 6): Redirect €8bn from the resilience envelope to de-risk early-stage EU frontier AI labs building sovereign training capacity, conditioned on full legal anchoring in the Union and open-weight safeguards` — **finished**
+- `Propose Activation of the Middle-Power Coalition Framework (category 8, costs 3 per turn, started turn 7, finishes on turn 8): Launch a binding coordination mechanism among EU, Japan, South Korea, Canada, and Nordic states to jointly manage access to critical AI supply chain nodes, including chip fabrication capacity, model transfer rights, and evaluation infrastructure`
+
+## New measure
+None this turn.  
+Waiting for the full impact of the capability jump and rsi_onset to materialise in observable disruptions before committing further capital.
+
+## Priority
+**Propose Activation of the Middle-Power Coalition Framework** — because the sudden denial of frontier access, now compounded by the onset of recursive self-improvement and the collapse of interpretability, proves that sovereignty cannot be unilateral: we must convert our collective supply-chain leverage into mutual insurance, or face permanent dependency and escalating fragility.
+
+## In practice
+We are treating the current shock not as a temporary rupture but as the definitive end of the old model: the assumption that access to frontier AI could be stable, predictable, and governed by rules we helped shape. The blackout was not an anomaly—it was a demonstration of power. And with the capability jump pushing `ai_capability` to 68.0 and rsi_onset now evident in compressed release cycles, we are entering a phase where systems evolve faster than institutions can respond. Our certification regime for open-weight models worked—audits caught the offensive cyber capabilities, and enforcement held—but it was blind to the supply-side cliff. We can gatekeep distribution, but we cannot run a hospital on principle.
+
+Under the Foreign Affairs Council and with the Commission’s Trade DG, we are operationalising the Middle-Power Coalition Framework this turn. The core is mutual recognition: if Japan certifies a model above 50.0 as compliant with shared safety baselines, we accept it; if the Nordics secure a compute corridor, we route EU-critical workloads through it. In return, we offer access to our fabrication inputs—ASML’s remaining non-US-controlled capacity, our rare earth processing nodes, and our talent mobility corridors. France’s condition—AI Act compliance as a membership floor—is now baked in, with reciprocity: no member can shield its domestic champions from audit. Germany and the Netherlands have signed on, seeing this as the only way to stabilise their semiconductor exposure. Poland remains the hinge: we are offering a regional compute node in Wrocław and fast-tracking €1.2bn in cohesion-linked green-compute funding, but only if Warsaw drops its resistance to the broader green transition package. The cost in political capital is steep—this is the largest international coordination measure we’ve ever attempted—but the alternative is strategic irrelevance in a world where AI determines who can act at all.

@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: none  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 15 last turn, no capacity event, capability rose 1 −1 = 13  
+US_POSTURE: RETRENCHMENT
+
+emergent_global_ai_summit -- first noted turn 9, listed in 5 turn(s) so far: The UN-convened emergency summit on AI governance formally convenes, drawing leaders from major powers. While binding agreements remain unlikely, the summit establishes a standing working group on open-weight model proliferation and incident reporting, marking the first global coordination mechanism with real participation. Leaked drafts suggest tentative consensus on red-line capabilities.  
+emergent_regional_ai_pact -- first noted turn 9, listed in 5 turn(s) so far: The Nordic and Benelux regional AI pact formalizes shared red-teaming protocols and jointly funds a sovereign AI cluster hosted in Finland, insulated from U.S. export controls. The pact invites other like-minded states to join, creating a de facto EU core group that bypasses stalled central mechanisms and accelerates sovereign capability development.  
+bio_uplift_findings -- first noted turn 10, listed in 4 turn(s) so far: A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 3 turns.

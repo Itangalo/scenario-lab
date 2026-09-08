@@ -1,0 +1,339 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5520411415760417,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.441003155664472,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9495106972766854,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.16439174885387775,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.21,
+    "probability_samples": [
+      0.21,
+      0.21,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9696164766045655,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.11,
+    "probability_samples": [
+      0.19,
+      0.14,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6122816032828043,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.10333333333333333,
+    "probability_samples": [
+      0.18,
+      0.13,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9351284679663286,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.16891467836302998,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.09000000000000001,
+    "probability_samples": [
+      0.16,
+      0.11,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.3568020942205372,
+    "triggered": false
+  },
+  {
+    "id": "emergent_eu_internal_reform",
+    "probability": 0.023333333333333334,
+    "emergent": true,
+    "description": "In response to the collapse of public trust and the evident failure of existing governance, a cross-institutional working group within the EU Commission proposes a radical overhaul of AI oversight, merging fragmented authorities into a single European AI Authority with enforcement powers across member states. The proposal gains traction in smaller states hit hardest by recent incidents.",
+    "probability_samples": [
+      0.07,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7413630269924887,
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_scientist_strike",
+    "probability": 0.016666666666666666,
+    "emergent": true,
+    "description": "A growing number of researchers at frontier labs, disturbed by the repeated loss-of-control incidents and the militarization of AI, announce a coordinated strike demanding independent safety audits and a moratorium on agentic systems above capability level 60. The movement starts small but spreads across institutions in Europe and North America.",
+    "probability_samples": [
+      0.05,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7671116494550381,
+    "triggered": false
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.3292030934563811,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9921471361478268,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.4559109431048617,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.33991825001515585,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.4914265829270599,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.26862905944396176,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.0025544234572225655,
+    "triggered": true
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.678479422799016,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6036621231579369,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9737723769861277,
+    "triggered": false
+  },
+  {
+    "description": "A coalition of EU member states, alarmed by the erosion of public trust and repeated incidents, begins informal coordination on a joint emergency AI oversight protocol outside formal EU channels. The initiative, led by Germany and the Netherlands, aims to harmonize incident reporting, share red-teaming resources, and establish mutual aid in containment operations. It emerges as a workaround to the EU's weakened political capital and fragmented enforcement, modeled loosely on pre-Schengen security cooperation.",
+    "emergent": true,
+    "id": "emergent_eu_oversight_coordination",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A grassroots initiative in Southern Europe, fueled by public distrust and local energy shortages, successfully blocks the construction of a new AI data center through coordinated legal challenges and civil disobedience. The movement, centered in Greece and southern Italy, frames AI infrastructure as a luxury consuming critical grid capacity during heatwaves. Its success inspires similar actions in Spain and Portugal, creating a patchwork of local moratoria that undermine national adoption plans.",
+    "emergent": true,
+    "id": "emergent_grassroots_infrastructure_resistance",
+    "probability": 0.09999999999999999,
+    "probability_samples": [
+      0.0,
+      0.3,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A coordinated wave of sabotage targets data centres and grid connections in Poland and Hungary, linked to anti-AI militant groups radicalized by ongoing public distrust and perceived state overreach. The attacks are low-casualty but high-visibility, designed to disrupt operations and symbolically reject centralized AI governance. Intelligence suggests cross-border coordination and use of openweight models for planning.",
+    "emergent": true,
+    "id": "emergent_physical_backlash_wave",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.25
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "An unexpected alignment emerges between mid-tier EU states frustrated by both US dominance and internal fragmentation, proposing a 'Coalition of the Willing' to pool sovereign compute, harmonize red-teaming standards, and jointly fund a European agentic safety layer. The initiative bypasses stalled EU-wide mechanisms and leverages existing bilateral agreements, gaining quiet support from Germany and the Nordic bloc.",
+    "emergent": true,
+    "id": "emergent_eu_safety_consortium",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

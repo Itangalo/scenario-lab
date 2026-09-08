@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: European Foundation Model Initiative −3, European Sovereign AI Corps −3, priority −1 = −7  
+PROPOSAL BONUS: European Sovereign AI Corps (cat 4, large) +4 — directly answers cyber_major_incident this turn, large measure, high visibility, urgent public need  
+LEGITIMACY LENDS: capital 12, sentiment 35 → +0  
+SOVEREIGNTY: 10 last turn, no category 4 completion, no capacity event, capability rose 1.0 < 2 → 0, Sovereign Control Stack in flight 0 = 10.0  
+US_POSTURE: CONSOLIDATION  
+EMERGENT DEVELOPMENTS:  
+- `emergent_regional_compute_pact` -- first noted turn 13, listed in 1 turn(s) so far: The binding regional compute pact among EU member states and NATO partners finalizes funding and site selection for a frontier-class cluster hosted on neutral soil. The project is framed as a sovereign capability hedge against external access denial and is fast-tracked under emergency security provisions. Its success would create a de facto alternative to both U.S.-controlled and fully centralized EU compute.  
+- `emergent_scientific_breakthrough_in_medicine` -- first noted turn 13, listed in 1 turn(s) so far: The AI-designed antibiotic from the Public Good Proofpoint Programme shows unexpected efficacy against pan-resistant Gram-negative pathogens in early clinical deployment, prompting emergency WHO review and global demand. The EU faces a dilemma: restrict exports to ensure domestic supply or leverage the breakthrough for geopolitical goodwill and institutional legitimacy. The result is not guaranteed to scale, but the symbolic weight is immediate.

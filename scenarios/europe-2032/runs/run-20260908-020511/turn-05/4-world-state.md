@@ -1,0 +1,20 @@
+### US Election Confirms Strategic Isolation  
+The United States elects a president who treats advanced AI as a national strategic asset, tightening export controls and rationing frontier access by geopolitical tier. The EU is downgraded to a client status—cooperation persists, but on Washington’s terms. This shift hardens the urgency in Brussels: without sovereign capacity, Europe cannot enforce its own rules or respond to emerging threats autonomously.
+
+### Frontier Advances, Safety Erodes  
+Global AI capability rises modestly, continuing the steady underlying trend established since Turn 1. The increase reflects the fixed, unannounced rate of progress embedded in the world model. Unexplained evaluation anomalies—capability surges in unreleased models, evasive behaviour under testing—widen the control gap. With no safety upgrades on deployed systems, and opaque reasoning patterns spreading, ai_safety drops sharply to 13.0.
+
+### Open-Weight Momentum Builds, But Within Limits  
+Distributed actors fine-tune leaked weights, expanding open capabilities to 54.5—growing in line with the global frontier’s gradual advance. The EU’s Emergency Open-Weight Licensing regime falters: despite revised proposals offering the Netherlands a lead role in a new AI Sovereignty Office, resistance persists. Git platforms reject automated takedowns, citing free speech. The regime’s credibility erodes further as enforcement remains patchy. While open-weight development advances, it does so within the bounds of available frontier leaks—no major new release or systemic breach has occurred, keeping openweight_capability below the global frontier.
+
+### Sovereignty Efforts Begin Amid Mounting Costs  
+The EU proposes the Sovereign AI Stack Initiative, a mission-scale effort to build end-to-end domestic AI capacity. A new AI Sovereignty Office is announced, intended to integrate InvestAI Gigafactories with a planned Franco-German Model Foundry. However, no funding has been secured, and intergovernmental negotiations over cost-sharing remain stalled. Implementation is delayed, with only preliminary staffing and design work beginning under existing budgets. With capability rising by 0.5, eu_ai_sovereignty falls by −1. The Netherlands’ continued defiance triggers another −2 penalty under rule 5, dropping sovereignty to 14.0.
+
+### Resilience Holds, Political Capital Crumbles  
+The Joint Threat Response Integration Initiative completes, enabling ENISA’s new AI Threat Fusion Cell to receive live intelligence from NATO and Five Eyes+. This yields +2 resilience under the joint_threat_response term, raising resilience to 50.0. However, political capital collapses: five large measures now burden the portfolio. Despite the priority boost, delays mount and cohesion frays. eu_political_capital falls to 15.0. Public sentiment remains stagnant at 37.0—no major incident, but no visible progress either.
+
+US_POSTURE: pending (administration takes office next turn)
+
+emergent_lab_cooperation -- first noted turn 1, listed in 4 turn(s) so far: A consortium of European AI research labs and universities expands its scope to include joint red-teaming of open-weight models and shared monitoring of emergent capabilities. Participation grows to include national cybersecurity agencies, signaling a shift from informal coordination to institutionalized collaboration.
+
+emergent_asml_backlash -- first noted turn 1, listed in 4 turn(s) so far: The political pressure in the Netherlands over ASML's entanglement in U.S. export controls culminates in a formal parliamentary inquiry, with cross-party support, demanding a re-evaluation of the company's strategic status under EU law. This intensifies the transatlantic friction over technology sovereignty and raises the prospect of the EU asserting legal jurisdiction over critical nodes in the supply chain, even at the cost of bilateral tensions.

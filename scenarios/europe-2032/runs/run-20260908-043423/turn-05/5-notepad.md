@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Accelerate EU Access −3, Pre-Release Evaluation Authority −3, Sovereign AI Acquisition Facility −3, Emergency Resilience Surge −3, priority −1 = −19  
+PROPOSAL BONUS: Emergency Resilience Surge (cat 6, large) +4 — direct response to cyber_major_incident and rsi_onset raises stakes  
+LEGITIMACY LENDS: none — public_sentiment (37.0) below eu_political_capital (11.0)  
+SOVEREIGNTY: 17.0 last turn, no category 4 completion, Gigafactories in flight +1, capability rose 5.0 −1, election_consolidation t5 −2 = 15.0  
+`emergent_ai_research_consortium` -- first noted turn 1, listed in 5 turn(s) so far: The consortium gains visibility as a potential alternative to US-dominated evaluation frameworks, with pilot audits underway in public health AI systems.  
+`emergent_global_ai_worker_strike` -- first noted turn 5, listed in 2 turn(s) so far: Reports surface of work stoppages at two major labs, with engineers citing ethical concerns and lack of transparency. The movement remains fragmented but is gaining media traction.  
+`emergent_global_regulatory_backlash` -- first noted turn 5, listed in 2 turn(s) so far: A group of mid-sized democracies begins drafting a joint transparency framework for high-capability models, positioning it as an alternative to US and Chinese dominance.

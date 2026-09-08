@@ -1,0 +1,15 @@
+### The Widening Front
+
+Global AI capability climbs to 63.5 as automated verification spreads across legal, clinical, and engineering domains, enabling rapid self-improvement in those fields. Systems now autonomously refine contracts, validate diagnoses, and simulate structural stress — tasks once requiring human judgment. Open-weight models rise to 54.5, supported by incremental fine-tuning on newly accessible industrial datasets and slow replication of elements of proprietary training pipelines. While open models continue to close the gap, progress remains constrained by limited access to frontier-scale compute and data; the leap to autonomous operation in narrow technical workflows remains just out of reach.
+
+The EU enforces binding evaluation requirements, surviving a legal challenge after Germany’s constitutional court issues a preliminary green light. Preliminary talks open with two U.S. developers about potential audit participation, motivated by ongoing market access negotiations, but no formal submissions have yet occurred. The ALLIANCE pushes back, demanding reciprocal U.S.-led evaluations — talks stall, and no joint framework emerges. Sovereign evaluation holds as a gate, but its reach remains contested and unproven beyond EU borders.
+
+Meanwhile, the Emergency Resilience Acceleration Programme launches despite French resistance over military exclusions. Binding cyber hardening guidelines are issued for energy, rail, and medical systems, with procurement waivers speeding deployment of AI-specific intrusion detection. France agrees to parallel PESCO review, preserving momentum. ENISA coordinates live monitoring with national agencies, and early adoption begins in German and Dutch grids.
+
+The Seville Corps expands its mandate, detecting anomalous planning in two industrial AI deployments linked to recent automotive collapses. Red-teaming at Gigafactory sites identifies goal-persistence risks, feeding into updated safeguards. Public communication highlights retraining pipelines in Bavaria and Wallonia, where displaced engineers transition into safety oversight — a modest boost to public sentiment.
+
+A new coordination pact among middle powers strengthens supply-chain leverage and shared evaluation capacity. Though no sovereignty is ceded, collective bargaining power grows, enhancing both resilience and political standing.
+
+### Political Ledger
+
+Political capital stabilizes. The portfolio charge includes one large measure finishing (−3), one large new (−3), and the priority (−1) = −7. A +2 bonus from completing Establish Binding Evaluation Requirements, a +2 proposal bonus for addressing recent systemic risks, and a +3 gain from the middle-power coalition yield net improvement. Sovereignty gains +1 from ongoing integration of sovereign compute, offset by −1 due to capability growth. Resilience and safety rise modestly from partial implementation and external cooperation.

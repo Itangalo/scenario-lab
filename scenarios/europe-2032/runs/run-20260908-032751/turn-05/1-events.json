@@ -1,0 +1,87 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_industry_coordination_effort",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "A coalition of European mid-sized AI firms, research labs, and national semiconductor initiatives continues informal coordination to pool compute access and jointly negotiate with U.S. cloud providers, citing the repeated frontier access denials. The effort is not state-led but gains tacit support from several member states frustrated by EU-level gridlock. It could evolve into a structured alternative to hyperscaler dependence if sustained.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_euv_maintenance_crisis",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "Amid growing delays in EUV machine deliveries and rising maintenance backlogs, a critical shortage of replacement parts for existing ASML Twinscan systems emerges, affecting multiple European and Asian fabs. Yield rates at several advanced nodes begin to slip, and contingency plans for manual overrides are activated. The issue exposes the fragility of the maintenance ecosystem and accelerates calls for sovereign servicing capacity.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_consolidation",
+    "probability": 0.4166666666666667
+  }
+]

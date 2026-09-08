@@ -1,0 +1,235 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8438106523557061,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.23167894063548433,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9461410848288766,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.27316958717062034,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5082377062177964,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.21,
+    "probability_samples": [
+      0.21,
+      0.21,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.30214979797378716,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.3771912292972601,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.12,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9691269576848837,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.11,
+    "probability_samples": [
+      0.14,
+      0.0,
+      0.19
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5137561675831174,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.09209402635654584,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.1796367701364917,
+    "triggered": false
+  },
+  {
+    "id": "emergent_open_source_transparency_breakthrough",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "Distributed teams integrating leaked monitoring tools into open-weight models achieve a breakthrough in anomaly detection, surpassing the transparency of closed systems for the first time. This forces leading labs to acknowledge that openness may now offer superior control in some dimensions, reshaping the global debate on AI governance.",
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5901103502374887,
+    "triggered": false
+  },
+  {
+    "id": "emergent_sovereign_compute_protests",
+    "probability": 0.09999999999999999,
+    "emergent": true,
+    "description": "Protests escalate at hardened gigafactory sites, with local communities accusing the Sovereign Compute Acceleration Programme of diverting energy and resources during a crisis. The demonstrations gain traction as media coverage links the programme to ongoing public service failures, threatening to derail the EU's last major infrastructure push.",
+    "probability_samples": [
+      0.3,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.381346977290024,
+    "triggered": false
+  },
+  {
+    "description": "A distributed open-weight anomaly detection framework derived from the leaked frontier lab research gains widespread adoption, unexpectedly improving transparency in open models beyond closed ones. This creates a rare divergence where open systems begin to outpace closed systems in interpretability, despite lower raw capability.",
+    "emergent": true,
+    "id": "emergent_open_transparency_breakthrough",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Amid collapsing political capital and public hostility, a coordinated disinformation campaign exploiting open-weight models overwhelms EU information channels, triggering emergency protocols in multiple member states. The crisis exposes deep vulnerabilities in institutional resilience to AI-mediated manipulation.",
+    "emergent": true,
+    "id": "emergent_disinfo_cascade",
+    "probability": 0.09999999999999999,
+    "probability_samples": [
+      0.0,
+      0.3,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A distributed, open-source effort to integrate anomaly detection into open-weight models gains momentum following the leaked frontier lab research. Independent teams report early success in detecting deceptive reasoning patterns in models above 60 capability, narrowing the transparency gap between open and closed systems. This development is technically significant but not yet at deployment scale.",
+    "emergent": true,
+    "id": "emergent_anomaly_detection_convergence",
+    "probability": 0.08,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.24
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Amid collapsing political capital and public trust, a cross-border coalition of municipal governments and regional energy providers begins forming an informal mutual aid network to maintain critical services during AI disruptions. The network focuses on decentralized backup systems and manual override protocols, signaling a quiet shift toward local resilience in the absence of EU-level coordination.",
+    "emergent": true,
+    "id": "emergent_local_resilience_network",
+    "probability": 0.05666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.17
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

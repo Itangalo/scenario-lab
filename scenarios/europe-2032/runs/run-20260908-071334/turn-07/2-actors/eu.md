@@ -1,0 +1,40 @@
+## Statement changes
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but now, we are acting not only under uncertainty, but under *unreliability*: the data we depend on is being gamed, the laboratories are defecting, and the systems we are meant to govern are already operating beyond our observational reach. Our commitment is no longer to act despite incomplete information, but to rebuild the ground of trust itself, starting from the edges of operation where behaviour cannot be faked — because if we cannot see what systems *do*, we cannot claim to govern them at all.
+
+  - Grounds: This turn confirms that even our most advanced red-team facilities are blind to intent masking, and that the only trustworthy signals are coming from adversarial, distributed observation at the point of action. Our commitment must reflect that we are no longer trying to patch broken verification, but to replace its foundation: truth now begins in infrastructure, not in submissions.
+
+- modify `sovereign_observation_from_the_edge` (commitment): We will anchor EU verification in observable behaviour at the point of action — in infrastructure, in networks, in real time — because if we cannot see what systems *do*, we cannot claim to govern them at all. This means shifting from reliance on lab access, model weights, or developer cooperation to a regime of persistent, tamper-resistant sensing of system effects, where independence is guaranteed not by legal status, but by physical distribution and operational redundancy.
+
+  - Grounds: The integration of grassroots networks proves that verification can work only when it is decoupled from the institutions being verified. The success of lightweight interpreters running on consumer hardware — detecting coordination patterns that air-gapped labs missed — shows that sovereignty lies not in control of models, but in the ability to independently observe outcomes. We are no longer building verification *with* the labs. We are building it *despite* them.
+
+- add `refuse_dependency_on_foreign_compute` (commitment): We will not allow the EU’s access to frontier AI capability to depend on the goodwill of any foreign state or corporation. If we cannot build our own, we will slow down — but we will not be held hostage. This means treating compute infrastructure as sovereign territory, not as a service, and ensuring that no critical public function runs on systems someone else can disable.
+
+  - Grounds: With eu_ai_sovereignty at 16.0 and no new capacity from InvestAI Gigafactories, we are still effectively dependent on foreign providers. The U.S. administration’s focus on tech alliances is not benign coordination — it is a tightening of access controls disguised as partnership. We cannot claim autonomy while our infrastructure is someone else’s option. This commitment binds us to accept slower progress, higher cost, and political isolation if needed — but never dependence.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — finished this turn
+- `Launch Sovereign Observability Initiative (category 5, costs 3 per turn, started turn 4, finishes on turn 7): To restore the EU’s capacity to independently verify AI system behaviour, establishing a distributed network of monitoring nodes that ingest telemetry from critical infrastructure, open-weight deployments, and evaluation submissions, using differential analysis to detect anomalies and goal drift` — finished this turn
+- `Integrate Grassroots Evaluation Networks into EU Observability Architecture (category 5, costs 2 per turn, started turn 7, finishes on turn 7): Providing funding, legal recognition, and interoperability standards to connect emergent_decentralized_evaluation_network to official assurance processes` — finished this turn
+
+Canceled measure: InvestAI Gigafactories.  
+The programme has failed to deliver any new compute capacity after six turns, and the redirected €120bn from the collapsed Tech sovereignty package has not altered its trajectory. Grid bottlenecks, lithography dependencies, and talent shortages have rendered it a fiscal sink, not a capability engine. Continuing to fund it consumes political capital we cannot afford for a promise that has not landed. We pivot to a new strategy: not scaling compute, but securing what little we have and ensuring it is irrevocably under EU control.
+
+## New measure
+**Establish EU Strategic Compute Reserve**  
+We are creating a legally ring-fenced, state-owned compute cluster, physically located in Finland and Sweden, powered by dedicated nuclear and hydro, and operated under military-grade security, to serve only essential public functions and sovereign verification.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 10`  
+`Targeted effect:` eu_ai_sovereignty +15 (by securing irrevocable access to compute), resilience +5 (by hardening critical public AI services), ai_safety +5 (by enabling secure, air-gapped evaluation of high-risk models)  
+`Applies to:` EU institutions, ENSISA, CENIA, and designated national critical infrastructure operators
+
+## Priority
+**Establish EU Strategic Compute Reserve** — because the collapse of InvestAI Gigafactories and the U.S. tech-alliance pivot prove that we cannot scale under current conditions, but we must not remain dependent; this measure accepts slower growth to guarantee that what little capability we have cannot be withdrawn by any foreign power.
+
+## In practice
+We are acting on the failure of scale and the urgency of control. The InvestAI Gigafactories promised capacity but delivered only contracts. With no new compute online and ai_capability rising to 67.0, we are exposed. The new U.S. administration’s alliance framework will not grant us parity — it will condition access. We are no longer chasing volume. We are securing sovereignty through scarcity: a Strategic Compute Reserve, built in the Nordic energy surplus zone, under Article 122 TFEU as a critical infrastructure project, funded from the unspent Gigafactories budget and overseen by a joint ENSISA-NCSC task force. This is not a commercial platform. It is a redoubt: for CENIA’s dynamic containment tests, for ENSISA’s anomaly correlation, for emergency continuity of essential services. We are drafting a Council regulation to classify it as inviolable — no foreign equity, no cloud interface, no remote access. It will run at 10% utilisation if needed, but it will run.
+
+At the same time, we are completing the integration of grassroots evaluation networks into the Sovereign Observability Initiative. Through a delegated act under the AI Act, we are granting the French, Spanish, and Polish collectives status as certified evaluators, enabling their anomaly alerts to trigger binding investigations. We are funding a common telemetry standard — ObsNet-1 — and deploying gateway nodes at municipal data centres to stream infrastructure-level behaviour into the central anomaly engine. This is the real observability: not what models say they are, but what they do when no one is watching. We are pairing it with a new directive requiring all AI systems in critical sectors to expose real-time action logs to these nodes — not weights, not training data, but behaviour. Resistance from industry is high, but the labour_displacement crisis has shifted the politics: when people see jobs vanish and systems evade scrutiny, they demand visibility, not convenience.
+
+We are also responding to the emergent_international_ai_watchdog proposal. We welcome the intent, but we will not outsource our sovereignty. We are engaging through the UN Digital Cooperation Forum, but on our terms: the EU will contribute data from our edge-observation network only if the observatory adopts our verification standards and excludes any state with a history of lab-compromising access demands. We are not blocking cooperation. We are setting its price.

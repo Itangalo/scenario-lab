@@ -1,0 +1,33 @@
+## Statement changes  
+* ``- modify `two_year_commitment` (commitment): Establish EU-operated, sovereign AI systems capable of detecting, intercepting, and neutralising unauthorised agentic AI activity within EU infrastructure by turn 18, using domestically controlled compute, talent, and counter-agent technology``  
+  - Trigger: the cyber_major_incident and the capability_jump, which together confirm that detection without enforcement is obsolete, and that offensive AI tools are now widely accessible even to non-state actors  
+  - Grounds: The attack was model-generated, landed across public services in three member states, and exploited a poisoned software dependency with cascading effects—precisely the scenario SCIACT was meant to prevent. But SCIACT only watches. SACAD, though still in development, is the only instrument that could have acted. The capability_jump proves that even narrow advances in offensive automation now outpace civilian response cycles. We cannot wait for consensus on rules that cannot be enforced. Our commitment must now be narrower, sharper: not governance through law, but control through capability. We are no longer building oversight—we are building operational dominance over AI activity in our domain.  
+* ``- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late``  
+  - Grounds: This commitment stands, but its meaning has shifted. We are not acting in epistemic uncertainty—we are acting in political collapse. The uncertainty we face now is not about what AI can do, but whether the Union can hold together while defending itself. We are not late because we hesitated; we are late because we assumed law could substitute for power. We keep the commitment, but we now understand it as a licence to build unilateral capacity when multilateralism fails, not just when evidence is incomplete.
+
+## Portfolio  
+``Secure Critical Infrastructure Against Autonomous Cyber Threats (SCIACT) (category 6, costs 3 per turn, started turn 10, finishes on turn 13): Deploy AI-powered intrusion detection and autonomous countermeasures across energy, water, and election systems, with human-in-the-loop escalation protocols and shared threat intelligence across member states`` — finished this turn  
+``Emergency Enforcement of Systemic AI Accountability (category 3, costs 3 per turn, started turn 12, finishes on turn 14): Mandate telemetry, kill switches, and pre-deployment certification for all agentic AI systems operating in or affecting EU critical infrastructure, enforced through borderless compliance mechanisms`` — continues  
+``Sovereign AI Counter-Agent Development Programme (SACAD) (category 4, costs 3 per turn, started turn 13, finishes on turn 18): Build and deploy EU-controlled AI systems capable of detecting, analysing, and actively disrupting unauthorised agentic AI activity within EU infrastructure`` — continues  
+
+Canceled measure: Secure Critical Infrastructure Against Autonomous Cyber Threats (SCIACT).  The programme has reached its operational endpoint, but its passive detection layer proved insufficient against the recent attack. Its components will be integrated into SACAD’s active counter-agent stack, and its funding redirected to accelerate deployment in vulnerable member states.
+
+## New measure  
+**Rapid Integration and Operationalisation of Counter-Agent Defences (RICAD)**  
+Accelerate the field deployment of SACAD’s counter-agent stack to all national CERTs and critical infrastructure operators by turn 16, with pre-authorised engagement rules for high-confidence threats.  
+
+`Category: 6 (Preparedness and resilience)`  
+`Size: large`  
+`Finishes on turn: 16`  
+`Targeted effect:` +10 to `resilience` (by enabling autonomous disruption of AI-driven attacks before cascading), +5 to `ai_safety` (by reducing dwell time of rogue agents), -2 to `public_sentiment` (due to expanded autonomous action in civilian infrastructure)  
+`Applies to:` EU member states, national CERTs, and critical infrastructure operators under ENISA coordination
+
+## Priority  
+**Rapid Integration and Operationalisation of Counter-Agent Defences (RICAD)** — because the cyber_major_incident proved that detection without action is a liability, and because the capability_jump means the next attack will be faster and more adaptive; we must close the gap between sovereign capability and operational reach before the next wave hits, even if it means accepting higher political risk.
+
+## In practice  
+This turn, we are shifting from building sovereign tools to wielding them. The cyber_major_incident—a model-generated ransomware sweep exploiting a poisoned dependency in municipal software—hit hospitals in Belgium, transit systems in Prague, and tax databases in Estonia. It was not state-scale, but it was coordinated, adaptive, and fast. SCIACT detected it, but no system had authority to act. By the time human analysts confirmed the pattern, 68% of the targeted nodes were encrypted. That ends now.  
+
+We are fast-tracking the operationalisation of SACAD’s counter-agent stack through RICAD, using emergency provisions under the NIS2 Directive and the Digital Europe Programme to bypass national procurement delays. The stack—developed by Thales and Siemens on sovereign compute in Finland and Portugal—will be deployed to all national CERTs by turn 16, with pre-authorised engagement rules for threats that match high-confidence signatures. ENISA will coordinate integration, with Europol’s red-cell unit updating threat models weekly. We are offering Poland and Hungary immediate deployment with local veto over engagement rules—no audits, no data sharing, just protection. If they refuse, we will still harden cross-border infrastructure unilaterally, starting with energy interconnects and emergency services.  
+
+The capability_jump—demonstrated by a new model that autonomously discovered and weaponised a zero-day in industrial control systems—confirms that we are no longer facing tools, but tactics. Our response must be equally dynamic. We are not waiting for consensus on what constitutes a “proportional” response. We are building the capacity to act, and we are building it now. The cost in public trust is real—protests grow, and media speak of “AI war”—but the cost of inaction is higher. We are not abandoning law. We are ensuring there is still a Union left to govern.

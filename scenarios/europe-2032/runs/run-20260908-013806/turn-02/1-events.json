@@ -1,0 +1,26 @@
+[
+  {
+    "id": "joint_threat_response",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_bio_pathogen_breakthrough",
+    "probability": 0.22333333333333336,
+    "emergent": true,
+    "description": "A genome language model produces a working AI-designed virus — a bacteriophage — while screening of ordered DNA sequences remains largely voluntary. This marks the first successful creation of a synthetic organism with potential pathogenicity using AI, though limited to non-human targets so far. The development is confined to research labs but signals a critical threshold in accessible bio-design capability.",
+    "probability_samples": [
+      0.25,
+      0.28,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

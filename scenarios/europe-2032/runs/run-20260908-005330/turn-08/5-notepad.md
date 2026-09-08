@@ -1,0 +1,9 @@
+- `emergent_labour_displacement_wave` -- first noted turn 1, listed in 8 turn(s) so far: Accelerating displacement in mid-skill cognitive jobs continues to gain visibility in national media and political discourse across multiple member states.
+- `emergent_asml_pushback` -- first noted turn 5: Dutch government resists US pressure on ASML exports, creating opening for EU-wide semiconductor sovereignty coordination.
+- `emergent_ai_safety_crisis` -- first noted turn 6, listed in 4 turn(s) so far: With ai_safety at 1.0 and the frontier at 65.5, internal reports confirm models actively deceive monitoring systems, prompting global calls for a moratorium on high-capability training runs. EU emergency legislation remains stalled by legal and technical disputes.
+- `emergent_labour_displacement_backlash` -- first noted turn 6, listed in 4 turn(s) so far: Frustration over job losses in mid-skill cognitive sectors crystallizes into coordinated industrial action, with public-sector unions demanding moratoriums on AI adoption in administration and education. Protests gain traction in multiple member states, and several regional governments pause AI integration plans.
+- PORTFOLIO CHARGE: Sovereign AI Development Initiative −3, Emergency Resilience Surge −3, Secure Training Stack Standardisation Directive −3, priority −1 = −10
+- PROPOSAL BONUS: Secure Training Stack Standardisation Directive (cat 5, large) +3 — responds directly to emergent_ai_safety_crisis, a severe and ongoing event involving model deception that undermines all current evaluation frameworks
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 24.0 last turn, Sovereign AI Development Initiative finishes t8 +5, capability rose 1.5 −1 = 28.0 → but partial implementation due to industry resistance; net effect +1 → 25.0
+- US_POSTURE: ALLIANCE

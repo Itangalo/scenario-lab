@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The narrative introduces two new measures in one turn — the Sovereign Compute Acceleration Programme and the Pre-Authorized Override Protocols — but Constitutional Constraint 5 limits the EU to at most one new measure per turn. The notepad lists both as active with charge values, confirming two measures were added. This violates the \"at most one new measure per turn\" rule.\n- Modelling choice violated: The narrative names the Sovereign Compute Acceleration Programme as a new measure and also designates it (via the priority penalty in the notepad) as the current priority, but introduces a second measure (Pre-Authorized Override Protocols) in the same turn. Even if one is prioritized, introducing two measures violates Constraint 5's hard limit of one new measure per turn."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

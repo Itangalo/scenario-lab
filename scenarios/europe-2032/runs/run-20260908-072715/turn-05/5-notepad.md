@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Strengthen EU-wide incident detection −3, Establish mandatory pre-deployment safety evaluation −3, priority −1 = −13  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 15 last turn, no capacity event, capability rose 3.5 −1 = 14  
+emergent_export_control_initiative -- first noted turn 3, listed in 4 turn(s) so far: The European Commission advances plans to formalize export controls on AI-relevant semiconductor equipment, particularly involving ASML's technology. Inter-service negotiations progress toward a draft framework, driven by fears of being locked out of global supply decisions as the U.S. tightens its own controls. Reactions from Washington and Beijing remain cautious but watchful, with no formal coordination yet established.

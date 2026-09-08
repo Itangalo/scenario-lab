@@ -1,0 +1,11 @@
+### Capability Creeps Forward
+Global AI capability advances by +3.0 this turn, reaching 70.0, as self-improving automation accelerates research cycles. The frontier now routinely completes multi-day professional projects autonomously, displacing junior roles across law, engineering, and software. With no safety breakthrough or major lab incident, the gap between capability and control widens.
+
+### Open Proliferation, Closed Access
+Openweight capability climbs to 57.0, nearing autonomous agent viability. The EU launches its **Open-Weight Monitoring and Containment Initiative**, deploying scanners across public code repositories. Early detection systems flag several models near the 55.0 threshold, but enforcement falters: GitHub-equivalent platforms resist geofenced takedowns, citing free software principles. A legal challenge looms in Germany over the use of emergency powers under the AI Act. While the system shows promise, its credibility hinges on cooperation the EU cannot compel.
+
+### Sovereignty Stalls, Capital Erodes
+The **InvestAI Gigafactories** and **Sovereign Access Framework** finish, but no new compute comes online. The US **CONSOLIDATION** posture blocks foreign access, and hyperscalers reject audit terms. Despite these completions, sovereignty drops to 14.0 as dependence deepens and capability rises. Political capital falls to 22.0 under the weight of four large measures and a named priority. The Labour Fund delivers early benefits in Spain and France, lifting public sentiment to 52.0 through visible retraining and shorter public service waits. However, northern fiscal hawks grow restless, and southern states demand faster disbursement, straining cohesion.
+
+### Fragile Gains at Home
+The Labour Transition Fund’s emergency disbursements stabilise incomes in high-displacement sectors. Public-sector AI tools reduce hospital wait times by 18% in pilot regions, reinforcing the narrative of managed transition. Yet, the containment initiative risks backlash: developer communities denounce it as overreach, and a leaked memo reveals internal doubts about enforcement feasibility.

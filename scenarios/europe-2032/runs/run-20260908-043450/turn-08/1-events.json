@@ -1,0 +1,26 @@
+[
+  {
+    "id": "export_control_escalation",
+    "probability": 0.14,
+    "probability_samples": [
+      0.1,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_regional_oversight_pact",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "In response to the stalled rollout of the Automated Threat Enrichment Layer, a coalition of Central and Baltic states forms a regional oversight pact, establishing joint review protocols for AI-driven security systems before granting API access. This creates a de facto standard for national control over shared AI infrastructure, increasing friction with the EU core but also forcing a renegotiation of trust and delegation terms.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

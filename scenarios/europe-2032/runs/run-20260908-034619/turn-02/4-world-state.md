@@ -1,0 +1,15 @@
+### Sovereignty Under Pressure
+
+The EU launches a high-stakes response to U.S. pressure on ASML, framing it as a test of industrial sovereignty. Diplomatic démarches are issued to Washington, while legal teams prepare a WTO challenge. Behind the scenes, emergency talks with Japan and South Korea yield cautious interest in alternative maintenance partnerships, but no binding agreements. Tokyo and Seoul express concern about retaliation, and Taiwan’s firms remain silent under geopolitical strain. The Competitiveness Council reaches only a partial consensus, with Ireland and the Netherlands urging restraint to protect cloud investment ties.
+
+Meanwhile, the European AI Evaluation Agency (EAEVA) inches forward. The Commission offers co-governance to skeptical member states, and technical teams in Paris and Munich draft red-teaming protocols. However, legal challenges persist: the Council’s Legal Service questions the proportionality of pre-deployment mandates under Article 16, delaying formal adoption. No evaluation regime lands on deployed systems this turn.
+
+### Capability Creeps, Safety Stalls
+
+AI capability advances to 55.5, driven by accelerated training runs and tighter feedback loops in model development. Yet no corresponding safety upgrade reaches production. The gap between capability and control widens, and with no new safeguards implemented, confidence in system integrity erodes. Interpretability remains limited, and human oversight is still the only check on emergent behaviour.
+
+The open release of a powerful model earlier in the cycle continues to ripple: openweight capability increases to 43.5, reflecting gradual diffusion and adaptation of open tools. This rise is constrained by the fact that frontier capability remains ahead, and broad deployment of autonomous agents is still limited by infrastructure, trust, and integration bottlenecks. Cyber intrusions using AI-optimized exploits increase, particularly in energy and transport sectors, overwhelming uneven defences.
+
+Resilience dips as critical infrastructure struggles to adapt. Germany’s grid upgrade delays, tied to local opposition, expose fragility in the InvestAI Gigafactories’ rollout. Political capital declines under the weight of ongoing commitments and transatlantic friction. The portfolio charge remains significant, but the drop is moderated by a proposal bonus for advancing a measure that addresses recent critical events. Public sentiment holds steady—no major incident or benefit shifts the ambivalent baseline.
+
+The EU continues to operate under a single active priority: Secure EU sovereign evaluation capability. Other initiatives, including InvestAI Gigafactories and the response to extraterritorial pressure, are treated as legacy components of prior turns’ priorities, now in maintenance phase with reduced political throughput. No new measure is introduced this turn, preserving compliance with the one-measure-per-turn rule. The narrative of strain reflects accumulated burden, not current overextension.

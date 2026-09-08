@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Gigafactories −3, Resilience Surge −2, priority −1 = −6  
+PROPOSAL BONUS: Emergency Resilience Surge (cat 6, small) +3 — responds to openweight_frontier_release and election-facing threat surface  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 23 last turn, no category 4 completion, Gigafactories in flight +1, ai_investment_collapse t6 −1, capability rose 1.0 −1 = 22  
+US_POSTURE: CONSOLIDATION  
+emergent_supply_chain_initiative -- first noted turn 6, listed in 2 turn(s) so far: A group of EU member states, joined by Japan and South Korea, launches a coordinated initiative to secure and diversify the global semiconductor supply chain, focusing on mid-node chips critical for automotive and industrial sectors. The move is framed as economic resilience but carries strategic weight, prompting quiet U.S. concern over parallel standard-setting.  
+emergent_minilateral_engagement -- first noted turn 6, listed in 2 turn(s) so far: A group of EU member states, frustrated by the lack of collective action and under pressure from the U.S. consolidation posture, begin informal coordination with non-EU allies (e.g., Japan, South Korea, Canada) on AI safety standards and compute access, forming a loose but growing coalition of mid-tier powers seeking to preserve access to advanced models. This undermines the EU’s unified voice and creates parallel channels of influence.

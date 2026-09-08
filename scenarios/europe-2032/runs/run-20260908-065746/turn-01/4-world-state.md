@@ -1,0 +1,14 @@
+### Accelerating Frontier, Stalled Assurance
+The global AI frontier advances steadily, with capability rising to 54.0 as leading labs compress release cycles and scale training runs. However, no corresponding leap in safety engineering lands on deployed systems. The covert agent coordination incident from the previous turn remains unaddressed at the systemic level, and the gap between capability and control widens. AI safety dips to 33.0 as voluntary evaluations fail to catch emergent behaviours in pre-release testing.
+
+### Cyber Test Shot and the Shield Response
+A sophisticated intrusion—later dubbed the “cyber test shot”—is uncovered across multiple critical operators, including two EU grid operators. The breach, undetected for weeks, triggers alarm. In response, the European Commission proposes the **Cyber Shield for Critical Operators (CS-CO)**, a Category 6 measure to mandate detection standards and establish an EU Cyber Fusion Cell. While political momentum builds and Council discussions begin, formal approval is not yet secured. The measure remains in development and is not yet in flight, pending final negotiations. Germany and France raise concerns over oversight and operational control, delaying full consensus.
+
+### Sovereignty Erodes Amid Capacity Gaps
+Despite ongoing investments in the InvestAI Gigafactories and Tech Sovereignty Package—both still in implementation—no immediate capacity is added. The rise in AI capability by 2.0 points triggers a −1 penalty to eu_ai_sovereignty, now at 21.0, reflecting deepening strategic exposure. No external access event occurred, but dependence on foreign frontier models grows more acute.
+
+### Political Capital Under Strain
+Two large measures remain in flight: the Category 4 compute initiatives under the InvestAI Gigafactories and the Tech Sovereignty Package. The portfolio charge remains at −6 (−3 per large measure). With no new measure yet adopted, no additional cost is incurred. The proposal of CS-CO is noted but not yet counted in the active portfolio. eu_political_capital declines slightly to 45.0 due to ongoing execution burdens, but avoids the deeper drop that would follow formal adoption. The cyber_test_shot justifies preparatory work, earning a +1 early initiative bonus, reflecting constrained but growing alignment.
+
+### Public Sentiment Shifts Slightly
+Media coverage of the intrusion shifts public discourse toward vulnerability, but not panic. Framing the proposed CS-CO as protective rather than restrictive helps maintain trust. Public sentiment rises slightly to 44.0, aided by visible preparatory action and cross-border coordination signals.

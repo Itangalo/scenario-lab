@@ -1,0 +1,16 @@
+## Statement changes  
+*No statement changes.*
+
+## Portfolio  
+- `Launch the EU AI Watch and Respond Framework (category 6, costs 3 per turn, started turn 10, finishes on turn 12): Establish a permanent, real-time monitoring and rapid-response capability for AI incidents with cross-sectoral reach, integrating technical detection, legal authority, and public communication` — **finished.**
+
+## New measure  
+**None this turn.** — We are waiting for the political ground to stabilise after the cyber attack and the collapse in public sentiment, and for the ai_investment_collapse to clarify which capabilities are now within reach due to reduced frontier momentum.
+
+## Priority  
+**Launch the EU AI Watch and Respond Framework** — because it finishes this turn and must now prove its worth: we are in the aftermath of a live incident that tested every part of the system, and we must show that the EU can detect, contain, and recover—not just declare readiness.
+
+## In practice  
+We are closing out the AI Watch and Respond Framework with a full operational review, co-led by ENISA, the ECDC, and Frontex, to assess how the system performed during the recent attack. The dashboard worked—real-time data flowed, alerts were triggered, and patching agents deployed in Germany and France within hours—but political resistance in Poland and Hungary blocked coordinated action at the worst moment. We are now pushing for a permanent Council-level standing group on AI crisis coordination, to be established under the same legal base (Article 114 TFEU for internal market harmonisation, extended via solidarity clause invocation). The European Public Prosecutor’s Office’s investigation into software supply-chain failures will feed into this, aiming to assign accountability across vendors, regulators, and public operators. We are also formalising the “right to human review” protocol into binding implementing acts, ensuring that any AI decision affecting rights in public services can be appealed and reversed within 72 hours—a minimal but vital signal that the EU still governs its own systems.
+
+Behind the scenes, we are assessing the fallout from the ai_investment_collapse. Several US-based labs have downgraded their training runs, paused expansion, and laid off safety teams. This is not a slowdown we caused, but one we must use. For the first time, the frontier is not accelerating unilaterally. We are quietly mapping which compute clusters, talent pools, and model weights might now be within reach of EU anchoring—especially those tied to European capital or personnel. But we cannot act yet. With eu_political_capital at 15.0 and public_sentiment at 18.0, any new structural move risks failure. We are instead consolidating: ensuring that the Watch and Respond Framework leaves behind durable detection infrastructure, trained personnel, and a mandate for future escalation. This is not the pivot we wanted, but it is the one we can afford. The two-year commitment—to prevent strategic dependence on systems we cannot control—remains. But we will not chase it into the storm. We will wait for the fog to lift, and then move.

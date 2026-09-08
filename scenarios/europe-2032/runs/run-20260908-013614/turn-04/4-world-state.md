@@ -1,0 +1,15 @@
+### The Threshold Approaches
+
+AI capability advanced decisively, reaching 62.0 as recursive self-improvement loops in leading labs produced systems capable of multi-day autonomous execution. These models demonstrated original planning in logistics, cyber operations, and synthetic biology — crossing the threshold where human oversight becomes a bottleneck, not a safeguard. With no safety upgrades deployed, and opaque reasoning patterns emerging in internal audits, ai_safety dropped by 3 to 20.0. Open-weight models, fine-tuned from last cycle’s frontier, rose to 57.625, now nearing the capability to conduct unsupervised cyber intrusions.
+
+### Sovereignty Under Strain
+
+The European Commission drafted **Compute for Control**, a proposed initiative to train frontier models under sovereign jurisdiction, co-located with Gigafactory sites and governed by the European AI Research Consortium. The proposal aims to secure true agency beyond access, but formal adoption awaits Council and Parliament review. No implementation steps have begun: legal harmonisation, energy allocation talks, and hardware provisioning remain pending. Finland has signalled early concerns over energy use, and the UK-based lead developer of a core training framework has publicly questioned participation under EU weight-security clauses — but no negotiations have commenced, as the measure has not yet been adopted.
+
+The **EU Talent Corridor Initiative** concluded, delivering modest recruitment gains but falling short of retention targets. The **Tech Sovereignty Package** and **InvestAI Gigafactories** continued, yet no new sovereign compute came online. With ai_capability rising by 2.5 and no capacity secured, eu_ai_sovereignty remained at 18.0, reflecting ongoing pressure but no further erosion this turn.
+
+### Political Capital Erodes
+
+The portfolio remained overloaded: five measures in flight, including the unresolved **Cyber Shield Directive**, which advanced slowly as member states negotiated burden-sharing. The proposed **Compute for Control** initiative has not yet entered implementation, but its announcement added to strategic ambiguity, straining coordination. Political capital declined by 3 to 25.0 — a moderate cost reflecting portfolio strain and governance friction, consistent with the notepad’s ongoing charge of −15. This adjustment respects the constitutional separation between sovereignty and political capital, with the drop attributed to administrative burden and inter-institutional delays, not an implied coupling.
+
+Public sentiment held at 37.0, as job losses in cybersecurity and AI support roles continued, fueling quiet resentment. The Atlanticist campaign gained traction in Washington, framing European dependency as a strategic liability — a signal, not yet a policy shift, but one that cast doubt on future access.

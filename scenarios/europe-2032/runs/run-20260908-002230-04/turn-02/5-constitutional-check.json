@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 46.0 to 52.0 (+6.0), but `ai_capability` only increased by 2.0 (from 54.0 to 56.0). This violates the rule that `openweight_capability` may not exceed `ai_capability`. At no point can `openweight_capability` be within 4 points of surpassing `ai_capability`, let alone grow sixfold faster. The narrative does not describe a catastrophic physical destruction event justifying an anomalous jump, nor does it justify how open models exceeded frontier AI capability growth.\n- Modelling choice 9 violated: `openweight_capability` increased by 6.0 in one turn, which exceeds the hard cap of 25-point maximum movement for any metric in a single turn. While the rule is about absolute point changes (not relative), a change of +6.0 is well within 25, so this specific point stands corrected — *this is not a violation*. However, the prior violation stands: `openweight_capability` cannot leap past its ceiling relative to `ai_capability`.\n```\n\n**Correction after review**: The 25-point cap applies to absolute value changes (e.g., going from 10 to 35 = +25), so +6.0 is allowed under Rule 9. But Invariant 2 remains binding.\n\nFinal assessment:\n\n```\nVIOLATIONS:\n- Invariant 2 violated: `openweight_capability` increased by 6.0 (to 52.0) while `ai_capability` increased by only 2.0 (to 56.0), resulting in `openweight_capability` now being only 4.0 below `ai_capability`. Given that `openweight_capability` started significantly behind and must never exceed `ai_capability`, such a disproportionate jump lacks justification in the narrative. No catastrophic compute destruction event is described, and no explanation is given for how open replication networks achieved near-parity with closed labs in half a turn. This breaks the invariant that `openweight_capability` may only rise or stay flat and must not exceed `ai_capability`."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

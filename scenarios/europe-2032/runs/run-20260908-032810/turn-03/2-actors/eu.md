@@ -1,0 +1,21 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`
+- `AI Security Shield for Critical Infrastructure (category 6, costs 3 per turn, started turn 1, finishes on turn 4): Mandate and fund cyber hardening and intrusion detection upgrades across EU energy, water, and port operators, with binding standards and joint exercises`
+- `Worker Transition Acceleration Fund (category 7, costs 3 per turn, started turn 3, finishes on turn 5): Establish a pan-European retraining and wage-insurance mechanism for workers displaced by AI in legal, translation, and administrative support roles, with co-financing for firms that reskill rather than replace`
+
+## New measure
+None this turn.  
+Waiting for the ai_investment_collapse to clarify which compute partnerships are truly viable, before doubling down on new industrial commitments.
+
+## Priority
+**AI Security Shield for Critical Infrastructure** — because the eval_anomaly_reports and rising ai_capability to 54.5, despite recent underperformance, demand that we lock in defensive hardening now, while the cyber_defence_breakthrough still gives us a narrow edge, and because member state resistance must be overcome before the window closes.
+
+## In practice
+We are finalising the delegated acts under Article 114 TFEU for the AI Security Shield, with ENISA delivering the technical framework for automated patching and swarm-detection by mid-March, and the Commission preparing a binding implementing act to enter into force by Q3. The €14bn front-loaded disbursement from the emergency fund is being conditioned on national adoption of the standards into law by December 2027, with bilateral side letters offering early access to joint cyber-reserves and real-time monitoring tools for those who comply. This is our leverage: we cannot force unanimity, but we can reward alignment. The NIS2 red-teaming exercises are being scheduled for October, coordinated through the CSIRT network, and the federated alert system via eu-LISA will go live in pilot mode by November, ensuring cross-border detection without data centralisation.
+
+Simultaneously, we are launching the Worker Transition Acceleration Fund with a €12bn envelope, 60% co-financed by the EU, targeting legal, translation, and administrative support sectors where displacement signals are now undeniable. National pilot programmes in France, Estonia, and Spain will test wage-insurance models paired with reskilling incentives, while firms that commit to retraining—verified through national labour audits—gain fast-track access to the Tech Sovereignty Package’s permitting zones and partial tax rebates. This is not charity; it is political insurance. With public_sentiment at 44.0—ambivalent but fragile—we are acting before displacement becomes visible at scale, knowing that once it does, political capital will evaporate. The legal challenge over state aid linkages remains, but we are reframing the incentives as productivity investments, not conditionalities, to stay within Commission guidelines.
+
+Behind both, the ai_investment_collapse is reshaping our calculus. Promised compute expansions from US hyperscalers have been cancelled, and valuations in the sector have cratered. This weakens the private capital assumptions underpinning the Tech Sovereignty Package and forces a reckoning: if the market will not deliver, the state must. But we are not yet acting—because we must first distinguish temporary retrenchment from structural collapse. We are convening an emergency meeting of the European Council on Competitiveness in December to assess which partnerships still stand, and which parts of InvestAI Gigafactories may need to shift from co-investment to direct state build. Until then, we hold course, but we do not expand.

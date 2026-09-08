@@ -1,0 +1,61 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_regional_aid_pact",
+    "probability": 0.22333333333333336,
+    "emergent": true,
+    "description": "A subset of EU member states — led by Germany, France, and the Netherlands — deepens their informal cooperation on AI-driven critical infrastructure protection, expanding shared red-teaming and incident response drills into a standing rapid-reaction cyber unit. This decentralized framework gains legitimacy as central EU efforts stall, and begins to attract additional members frustrated by the lack of progress at the Union level.",
+    "probability_samples": [
+      0.2,
+      0.25,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_cyber_defence_progress",
+    "probability": 0.22666666666666668,
+    "emergent": true,
+    "description": "Defensive AI tooling achieves a breakthrough in detecting and neutralizing swarm-style cyberattacks before they cascade, using behavioral pattern recognition that adapts faster than attackers can mutate. This shift is quietly confirmed by multiple national CERTs, marking the first sustained advantage for defenders in years and raising hopes that resilience can be rebuilt even without major policy progress.",
+    "probability_samples": [
+      0.25,
+      0.3,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

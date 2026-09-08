@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Metric movement violation under Constitutional Constraint #9: `eu_political_capital` decreases by 8.0 points (from 22.0 to 14.0), which exceeds the 25-point cap on absolute movement—but more critically, the narrative attributes this drop to \"a large new measure and a named priority\" without accounting for the full −5 penalty from the ongoing priority (Sovereign Agent Launch Programme) already charged in the notepad. The notepad shows a −5 from portfolio charge, yet the net change in `eu_political_capital` is only −8.0, implying an additional −3.0 from the new measure. However, under Constitutional Constraint #5 (\"At most one new measure per turn, and at most one named priority\"), introducing the Openweight Release Threshold Regulation as a new measure while already having a named priority (Sovereign Agent Launch Programme) violates the rule. The EU cannot introduce a new large measure and maintain a named priority in the same turn. This results in an invalid dual measure/priority structure, making the political capital calculation non-compliant regardless of magnitude.\n- Regulatory Constraint violated: The Openweight Release Threshold Regulation is introduced and enforced through \"emergency provisions\" with immediate regulatory effect, but Constitutional Constraint #6 (\"No measure is implemented instantly\") requires a minimum of one full turn for low-cost measures and two for high-cost ones. This is a high-impact, category 3 regulatory intervention involving licensing, third-party evaluation, and carve-outs—yet it is treated as having immediate effect. The narrative does not describe phased implementation or growing effect toward full enforcement, violating the minimum time lag for regulatory implementation."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

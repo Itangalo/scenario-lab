@@ -1,0 +1,289 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8474302176056959,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7952321326129947,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6029180587733785,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9880993484621275,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.19999999999999998,
+    "probability_samples": [
+      0.16,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4377858943794566,
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.06,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "A bloc of EU member states, alarmed by the erosion of strategic autonomy and deepening dependence on U.S. AI infrastructure, begins exploratory talks with Japan, South Korea, and Canada to form a coordinated front on mutual access, shared evaluation protocols, and joint leverage over critical nodes in the AI supply chain. The initiative emerges in response to repeated access denials and sovereignty leaks, and is framed as a defensive alignment of like-minded technologically advanced democracies. It gains quiet momentum as Poland and Italy signal interest, despite U.S. reservations.",
+    "emergent": true,
+    "id": "emergent_middle_power_alignment",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9682023141514632,
+    "triggered": false
+  },
+  {
+    "description": "A coalition of public-sector AI ethics officers and municipal IT directors, disillusioned by top-down mandates and punitive enforcement, forms a transnational network to share compliant yet locally adaptive AI governance templates. Sparked by Florence task force discussions and fueled by backlash against the Cohesion Fund penalties, the network begins publishing interoperable safety overrides and human-in-the-loop blueprints. It is not an official body, but it starts filling the vacuum left by fragmented EU implementation.",
+    "emergent": true,
+    "id": "emergent_municipal_governance_network",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.19203105937039533,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9138346729213954,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.0,
+      0.13,
+      0.13
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9806440780183725,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.0,
+      0.14,
+      0.14
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5585914971755449,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.08,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8936472509448842,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5457781264682727,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.0,
+      0.13,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7888676067028899,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated effort emerges among mid-sized EU member states to form a joint evaluation and monitoring body for AI safety, independent of U.S. influence and leveraging pooled technical capacity. It arises in response to the persistent safety deficit and repeated incidents, aiming to restore credibility. The initiative gains quiet support from France, Germany, and Finland but faces resistance from members reliant on external providers.",
+    "emergent": true,
+    "id": "emergent_eu_safety_pact",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Workers in AI-dependent sectors across several member states begin organizing transnational strike actions demanding binding EU-wide safeguards on automation and retraining guarantees, inspired by the emergent_ai_worker_unions. The movement gains momentum as public sentiment sours, threatening to disrupt public services and private AI adoption unless addressed.",
+    "emergent": true,
+    "id": "emergent_transnational_strike_momentum",
+    "probability": 0.09999999999999999,
+    "probability_samples": [
+      0.0,
+      0.3,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.03666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.11
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.36040890498778655,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.12
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.08091997484431546,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.18855007121666634,
+    "triggered": false
+  },
+  {
+    "description": "A grassroots movement of AI engineers and researchers, disillusioned with unchecked deployment and eroding safety, begins coordinating across EU member states to promote ethical development and public accountability. The group gains traction through public letters and technical audits, echoing prior union activity but now operating transnationally.",
+    "emergent": true,
+    "id": "emergent_ethical_engineers_collective",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.25
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A coalition of mid-sized EU industrial firms, facing displacement by AI-driven automation, successfully lobbies for a pan-European AI transition fund, modeled on green transition mechanisms. The proposal gains quiet support in Brussels as a way to stabilize public sentiment and manage labour displacement without slowing innovation.",
+    "emergent": true,
+    "id": "emergent_industrial_transition_pact",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.2
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

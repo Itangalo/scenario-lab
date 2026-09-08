@@ -1,0 +1,26 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Assert sovereign authority over AI systems at the frontier by enforcing real-time evaluation, containment, and incident response rights across all models operating within or affecting the EU, and extend operational control to open-weight models that achieve frontier capability regardless of origin or distribution method  
+- Trigger: the openweight_frontier_release and emergent_bio_uplift_findings this turn, combined with the failure to ratify emergency powers last turn  
+- Grounds: The frontier is no longer defined by access or ownership—it is defined by capability, and that capability is now permanently distributed. Our original commitment assumed a sovereign evaluation authority could act on systems under controlled access; today, the most dangerous models are unmoored from any laboratory, running on consumer hardware and already weaponized. The bio_uplift_findings confirm that even non-expert actors may soon cross into human-relevant bio-design. To maintain credibility, our authority must now reach beyond closed systems and apply to any model, open or closed, that crosses a capability threshold. This means monitoring, evaluating, and if necessary, disrupting deployments of open-weight models that match or exceed frontier risk profiles—using technical means where legal ones fail. We are no longer securing oversight; we are asserting jurisdiction over capability itself.
+
+## Portfolio  
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — **finishes this turn**  
+``Sovereign Evaluation Authority with Real-Time Access (category 5, costs 3 per turn, started turn 6, finishes on turn 8): Establish a legally empowered, technically equipped EU body with continuous access to the most capable AI systems—closed and open—operating within or affecting the Union, able to run evaluations, detect emergent risks, and enforce containment protocols``
+
+## New measure  
+**Frontier Capability Jurisdiction Directive**  
+Establishes a binding EU-wide threshold: any AI system, open or closed, that demonstrates capability above 60.0 on the standard index must be subject to evaluation, incident reporting, and potential containment under the Sovereign Evaluation Authority, regardless of origin or distribution method.
+
+`Category: 3 (Limits and restrictions)`  
+`Size: large`  
+`Finishes on turn: 9`  
+`Targeted effect: increases ai_safety by expanding enforcement scope to distributed models, supports eu_ai_sovereignty by asserting jurisdiction over capability not access, may reduce public_sentiment if perceived as overreach into open-source communities`  
+`Applies to: all AI systems operating within or significantly affecting the EU that meet or exceed frontier capability thresholds`
+
+## Priority  
+**Frontier Capability Jurisdiction Directive** — because the openweight_frontier_release proves that the most dangerous capabilities are now uncontainable by lab-based governance, and without extending our authority to models that *achieve* frontier capability—wherever they run—we are regulating the past, not the present.
+
+## In practice  
+We are acting on the irreversible shift: the frontier is no longer held in a lab, but carried in a `.gguf` file on a laptop. The release of a model matching closed-frontier capability—running on consumer hardware, self-coordinating in cyber operations, and now nearing bio-design thresholds—forces a categorical change. Our Sovereign Evaluation Authority cannot be limited to systems that choose to submit; it must have reach over systems that *cross a line*. This turn, we are proposing a directive under Article 114 TFEU to establish a capability-based jurisdiction: any model demonstrating performance at or above 60.0 on the standard index—measured through benchmarking, deployment behaviour, or incident impact—falls under the Authority’s mandate. This includes open-weight models, regardless of origin.
+
+We are negotiating in the Internal Market Council, where resistance is high. Germany insists this will criminalize research and fracture developer trust; France warns of enforcement chaos without shared detection infrastructure. To Germany, we offer a research exemption: models used solely in academic or non-deployed experimental settings are exempt from containment, but not from reporting. To France, we offer co-funding of a distributed detection network—using the REACT-EU envelope—to identify high-capability models in the wild. We are also activating the AI Office’s emergency clause to begin shadow-evaluating known open-weight models already above threshold, using air-gapped nodes in Estonia and Finland. The Gigafactories’ compute, now operational, will support this effort—not as a sovereign inference alternative, but as a forensic evaluation backbone. We are not waiting for unanimity. Where legal ratification lags, we are building technical capacity to act, because the next breach may not wait.

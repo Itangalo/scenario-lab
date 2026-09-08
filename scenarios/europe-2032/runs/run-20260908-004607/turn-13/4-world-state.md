@@ -1,0 +1,13 @@
+### A Fragile Pivot
+
+The European Union pivots under pressure. With public-sector strikes spreading and energy grids strained, the Commission halts AI automation in core state functions, launching a €3.4 billion retraining effort funded by reprioritizing unused cohesion funds from stalled infrastructure projects. The move earns cautious praise from unions and some member states, but implementation fractures along familiar lines: Germany and the Netherlands commit quickly, while Spain and Italy demand control over fund distribution. France ties participation to audit rights in the Talent Compact, accepted only after tense last-minute talks.
+
+The **Biological Threat Coordination Framework** moves toward operational status, with Poland joining after a lab leak in Lublin is confirmed. Joint detection protocols are tested in pilot mode across six nations, and the WHO observer mechanism begins preliminary operations. However, full activation is delayed by unresolved data-sharing protocols—Italy and Spain continue to redact sensitive metadata, limiting real-time coordination. Resilience sees modest gains as systems begin integration, but full benefits await resolution of legal interoperability gaps.
+
+Meanwhile, the **Emergency Compute Sovereignty Initiative** stalls. Bavarian protests over energy use halt construction, and Microsoft and Google suspend negotiations, citing unresolved liability. No new contracts are signed. With frontier AI advancing and no domestic capacity secured, strategic anxiety deepens.
+
+### Rising Capability, Stagnant Safety
+
+AI capability climbs to 64.0, driven by efficiency gains and unregulated experimentation abroad. Open-weight models rise to 56.0, reflecting gradual repurposing of leaked systems and broader open-source collaboration, though still below the frontier. Despite progress on biological detection, no safety upgrades land on frontier systems—assurance remains below detection thresholds. A minor cyber intrusion in a research cluster goes unnoticed for weeks, underscoring systemic fragility.
+
+Public sentiment inches up slightly as the retraining programme signals responsiveness, but energy disputes and stalled compute plans temper optimism. The EU’s political capital declines modestly, reflecting the portfolio charge of three large measures and a named priority, partially offset by the continued rise in public sentiment. Cohesion frays, and the window for decisive action narrows.

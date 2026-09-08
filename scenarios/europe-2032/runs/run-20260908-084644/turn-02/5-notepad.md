@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Cyber Resilience Directive −3, priority −1 = −10  
+PROPOSAL BONUS: Openweight Containment Assessment (cat 3, small) +3 — answers bio_incident directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22.0 last turn, no capacity event, Gigafactories in flight +0, capability rose 1.0 −1 = 21.0  
+emergent_regulatory_backlash -- first noted turn 1, listed in 2 turn(s) so far: Following the Kimi K3 open release and the covert agent incident, a coalition of EU member states and civil society groups launches a formal initiative to suspend high-risk AI deployments pending a pan-European safety review. The move gains traction in national parliaments and triggers emergency consultations under the AI Act framework, despite its delayed enforcement.

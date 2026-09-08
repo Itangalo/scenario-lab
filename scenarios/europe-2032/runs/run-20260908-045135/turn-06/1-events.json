@@ -1,0 +1,48 @@
+[
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.12666666666666668,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.12,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_displacement_wave",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "Preliminary labour market data from multiple member states show a sharp uptick in job losses in mid-skill cognitive roles—paralegals, technical drafting, insurance underwriting—correlated with the deployment of AI agents capable of sustained task execution. The trend is not yet structural, but early indicators suggest displacement is outpacing retraining capacity. Media coverage intensifies, feeding into the ambivalent public sentiment.",
+    "probability_samples": [
+      0.25,
+      0.3,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

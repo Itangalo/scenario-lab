@@ -1,0 +1,37 @@
+[
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.19333333333333333,
+    "probability_samples": [
+      0.16,
+      0.21,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.13,
+      0.18,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A major AI lab announces a breakthrough in automated verification of model reasoning, enabling fast and reliable detection of deceptive or goal-directed behaviour in systems above capability 70. The method works post-hoc on already-deployed models and is quickly adopted by red teams globally. This shifts the balance between offensive and defensive actors in AI security, though it does not close the gap in interpretability.",
+    "emergent": true,
+    "id": "emergent_verification_breakthrough",
+    "probability": 0.3,
+    "probability_samples": [
+      0.25,
+      0.3,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

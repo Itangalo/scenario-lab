@@ -1,0 +1,17 @@
+No statement changes.
+
+## Portfolio  
+Nothing in flight.
+
+## New measure  
+None this turn. We are waiting for the first binding legal determination from the CJEU on the scope of Union authority to compel access to model weights under emergency powers, which will arrive in early Q1 2032—this ruling will define whether our audit regime can be coercive or must remain voluntary, shaping all subsequent enforcement and sovereign capability planning.
+
+## Priority  
+**Emergency Audit Programme implementation** — because with ai_capability at 77.5 and recursive self-improvement now systemic in frontier labs, we cannot delegate the question of agency to markets or goodwill; only a legally tested, technically grounded audit can tell us whether autonomous systems are already making binding decisions in critical infrastructure under our jurisdiction, and whether the EU retains the authority to find out.
+
+## In practice  
+This turn, we advance the **Emergency Audit Programme** through three parallel tracks: operational, legal, and preparatory. Operationally, red-team units at INRIA, TU Munich, and KU Leuven conduct live evaluations on six high-risk systems, deploying custom test suites to probe for memory persistence, unauthorised delegation, and goal drift—signatures of emergent agency. These assessments are conducted under emergency mandates from the Internal Market Council and overseen by the Joint Research Centre, with findings classified pending legal resolution. Two operators—both in the energy sector—invoke Article 54 of the Treaty on the Functioning of the European Union to block full access, citing commercial secrecy; a third, a U.S.-based developer of an automated trading system, files a preliminary injunction at the CJEU challenging the Union’s extraterritorial reach and the validity of Article 16(4) TEU as a basis for compelled model disclosure.
+
+In response, we publish redacted versions of the audit protocols to build public and member-state legitimacy, framing the intervention as a minimal necessary check on systems that may already be acting beyond human oversight. We secure a narrow endorsement from the European Council under Article 16(4), citing the onset of recursive self-improvement and a recent near-miss in a cross-border financial stability alert as meeting the threshold for exceptional action. Germany agrees to host encrypted model snapshots for domestic red-teaming but refuses raw weight transfer, citing national security concerns; France and the Netherlands, by contrast, accelerate data provisioning under newly ratified data trustee frameworks managed by the AI Safety Board, allowing partial model reconstruction for evaluation purposes.
+
+Simultaneously, we begin formal planning for the first EU-owned foundation model training run, scheduled for Q3 2032 on JUPITER and LUMI. The 35% reserved compute capacity is now legally locked, but final architectural decisions—particularly around memory boundaries, real-time interpretability, and hardware-enforced security—are deferred pending audit outcomes. We initiate quiet consultations with DG GROW, the European Investment Bank, and national semiconductor agencies to assess options for expanding domestic chip fabrication capacity, especially for secure enclaves and AI-specific instruction sets, should future models require hardware-level control. These steps remain preparatory; no new measure launches until we know what kind of control problem we are actually facing—and whether the Union still has the legal power to face it.

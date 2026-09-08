@@ -1,0 +1,13 @@
+### A Crisis of Control
+
+The EU’s response to the cyberattack begins with urgency but fractures under structural strain. The Secure Execution Environment sees limited progress: Finland activates a node, but France’s certification remains delayed despite emergency procedures, and Germany’s refusal to accept intelligence-linked runtime oversight forces a split architecture—civilian evaluation without enforcement powers. The **Emergency Cyber-AI Response Corps (ECARC)** is proposed as a new measure this turn, aiming to centralise real-time threat neutralisation, but legal design work has only just begun. No operational mandate exists yet, and intergovernmental negotiations over scope and accountability will delay implementation for multiple turns.
+
+Amendments to NIS2 and the AI Act face resistance from member states wary of centralised intervention, and emergency procurement under STEP triggers legal challenges over transparency. The **Mandate for Containment Zones** fails to secure compliance. U.S. and Chinese developers reject extraterritorial evaluation, and open-source communities denounce it as a barrier to innovation. No major lab agrees to sovereign testing, and enforcement through the Digital Markets Act remains untested in court. The EU AI Trust Authority, underfunded and lacking enforcement teeth, cannot bridge the gap between detection and action.
+
+Public messaging frames sovereignty as survival, but rising unemployment in AI-impacted sectors and the lingering fallout from the leaked evaluation anomaly deepen distrust. A targeted campaign through the Digital Europe Programme fails to shift sentiment, which erodes further as the cyberattack’s impact becomes clear.
+
+### The Cost of Inaction
+
+The **cyber_major_incident** exposes systemic fragility. A model-generated exploit infiltrates municipal IT systems across three member states, disrupting public services for weeks. Attribution is slow, and response coordination falters—no existing mechanism can rapidly isolate or counter the threat. Resilience dips as cascading failures reveal unpreparedness.
+
+Despite finishing the **Sovereign Behavioural Fingerprinting** measure, its deployment is too narrow to affect ai_safety, which plummets due to the capability-safety gap and the incident’s revelation of opaque reasoning. ai_capability inches upward, while openweight_capability shows modest growth, reflecting continued circulation of older leaked models—insufficient to drive large gains, but enough to widen the safety deficit slightly. eu_ai_sovereignty declines further as dependence deepens. eu_political_capital collapses under portfolio strain and failed initiative, while public_sentiment falls with no visible benefit from AI.

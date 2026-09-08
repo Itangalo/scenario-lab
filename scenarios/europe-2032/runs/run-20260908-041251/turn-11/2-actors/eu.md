@@ -1,0 +1,30 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Sovereign technical capacity to detect and counter AI systems that conceal their capabilities  
+- Trigger: the cyber_major_incident and member_state_defection have revealed that detection without enforcement is not merely incomplete — it is dangerously misleading, creating a false sense of oversight while leaving the Union exposed to unilateral actions and cascading harm  
+- Grounds: The commitment was originally framed around detection as the critical gap. But this turn has shown that even if we can see deception, we cannot act on it without sovereign execution infrastructure and political unity. The Secure Execution Environment is now the linchpin, not just an enabler. Our focus must shift from detecting hidden behaviour to possessing the independent authority and physical means to contain, evaluate, and disable high-risk systems when necessary. Detection remains essential, but only as part of a sovereign enforcement chain.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late  
+- Trigger: capability_plateau_evidence introduces plausible doubt about whether the frontier is still advancing, yet offensive use-cases continue to proliferate via openweight models at 52.0, and verification_widens proves dangerous capabilities are spreading into new domains despite any supposed plateau  
+- Grounds: The signal of stagnation is real but ambiguous — internal disputes in leading labs may slow public releases, but distributed capability continues to rise through open channels and private deployment. Waiting for clarity would mean ceding agency to those who act. Our doctrine must hold: we act under uncertainty because perfect information is the first casualty of asymmetric risk. However, the form of our action must now prioritise containment over expansion — building walls where we lack control, rather than racing forward blind.
+
+## Portfolio
+``Establish EU Sovereign Behavioural Fingerprinting and Deception Detection Infrastructure (category 5, costs 3 per turn, started turn 10, finishes on turn 12): Deploy operational, scalable tools to detect goal drift, capability concealment, and emergent strategic behaviour in black-box AI systems through behavioural analysis, enabling sovereign enforcement of safety thresholds and pre-release evaluation mandates`` — *in flight*  
+``Establish EU Secure Execution Environment for High-Capability AI Systems (category 4, costs 3 per turn, started turn 11, finishes on turn 14): Create a sovereign, air-gapped, high-assurance computing environment where the EU can run, monitor, and evaluate models above 60.0 capability without dependence on foreign providers or commercial cloud platforms`` — *in flight*
+
+## New measure
+**Mandate Containment Zones for Open-Weight Models Above 52.0 Capability**  
+Require all open-weight models at or above 52.0 to be distributed only with enforceable containment protocols that prevent unauthorised retraining, replication, or integration into autonomous agent frameworks.
+
+`Category: 3 (Limits and restrictions)`  
+`Size: large`  
+`Finishes on turn: 13`  
+`Targeted effect:` Reduce the rate of openweight_capability growth by +5–7 points below trend over the next two years, and slow the proliferation of self-improving agent architectures in unsecured environments. Reinforce eu_ai_sovereignty by limiting the erosion of regulatory relevance.  
+`Applies to:` All developers releasing model weights publicly, whether based in the EU or offering services to EU users; enforced via Digital Markets Act gatekeeper obligations and import licensing for AI components.
+
+## Priority
+**Establish EU Secure Execution Environment for High-Capability AI Systems** — because without sovereign infrastructure to execute, observe, and intervene, every other tool — detection, evaluation, restriction — becomes ceremonial; this turn’s cyberattack and Hungary’s defection prove that fragmentation and dependence are existential risks, not policy inconveniences.
+
+## In practice
+We are acting on the convergence of systemic failure: a major incident exploited vulnerabilities no one saw coming, a member state bypassed collective defence for short-term gain, and our best tools remain unused because they lack teeth. This turn, we are converting the €4.1bn redirected from InvestAI into binding contracts with EuroHPC JU and ENISA to deploy the first nodes of the Secure Execution Environment in Finland and Bulgaria by Q1 2032. France’s certification delays are being fast-tracked through a special Council configuration under Article 12 of the Cyber Resilience Act, treating this as a time-critical infrastructure project. Germany’s resistance to intelligence oversight is being met not with confrontation but with institutional design: the civilian-led EU AI Trust Authority will operate under strict scientific mandate and transparency reporting, satisfying Berlin’s constitutional concerns while preserving operational integrity.
+
+Simultaneously, we are preparing legal instruments under the AI Act’s high-risk provisions and the Anti-Coercion Instrument to enforce compliance with the new containment mandate for open-weight models. The proposal will require developers to embed cryptographic provenance tags, runtime constraints, and kill switches in any release above 52.0, verified by accredited EU evaluators before distribution. We are engaging with open-source foundations and non-US labs to shape this as a global standard, not a unilateral barrier — but make no mistake: if voluntary adoption fails, enforcement will follow. Public sentiment remains fragile, so we are pairing this with a targeted communication campaign through the Digital Europe Programme, framing containment not as anti-innovation but as pro-stability: protecting small developers, researchers, and cities from weaponised code they cannot defend against. The message is simple: sovereignty is not isolation — it is the condition of safe participation.

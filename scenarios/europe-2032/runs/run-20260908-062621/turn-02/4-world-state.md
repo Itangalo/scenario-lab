@@ -1,0 +1,20 @@
+### A Denial That Changes Everything
+
+The European Union scrambles in the wake of a sudden blackout: access to the world’s most advanced AI model has been severed without explanation. Hospitals relying on it for diagnostics, ministries using it for crisis forecasting, and intelligence units running threat simulations are left blind. The Commission declares an emergency, initiating exploratory planning for an **Emergency Sovereign Access Initiative** — a proposed crash programme to restore core functions with sovereign infrastructure. However, no binding funding or legal invocation occurs this turn; the initiative remains in drafting, awaiting Council prioritization.
+
+Despite the urgency, repurposing €12bn from legacy funds faces audits and legal challenges from two member states, delaying hardware procurement. Negotiations with non-US developers yield only truncated models — useful, but not equivalent to what was lost. Modular data centres at InvestAI sites remain in permitting review; no assembly begins this turn. The Joint Research Centre makes progress on a minimal inference stack but does not deploy it by June.
+
+Global AI capability advances to 55.0 as labs scale into new research domains. A genome model produces a controversial pathogen design, sparking fierce debate in biosecurity circles — a precursor to greater risks. With no structural safety upgrades post-deployment, and now a major capability denial exposing systemic fragility, ai_safety declines by 2 points, reflecting heightened risk awareness and institutional strain but not a systemic collapse. The drop is moderated by ongoing adherence to existing safety protocols, even as their sufficiency is questioned.
+
+Open-weight models continue diffusing: Kimi K3 variants demonstrate improved cyber intrusion capabilities, and a new wave of open-source fine-tuning lowers the skill barrier to high-efficiency attacks. This broadens access and operational reach, lifting openweight_capability to 42.0 — still trailing frontier capability and reflecting constrained diffusion under access restrictions. Resilience holds at 40.0 — Cyber Shield standards advance slowly, still blocked by national opt-outs.
+
+Sovereignty sees a narrow gain: emergency planning efforts (+2) offset the −1 decay from ai_capability rising over 2. Political capital declines by 3.0 points, reflecting the cost of maintaining the three existing large measures (InvestAI Gigafactories, Tech sovereignty package, Cyber Shield) and the emerging cost of preparing a new proposal — but not yet launching it. The notepad records a portfolio charge of −10, consistent with three active measures and a priority penalty. No proposal bonus applies, and the Emergency Sovereign Access Initiative remains in pre-commitment exploration — not yet subject to full portfolio cost, as no formal commitment has been made.
+
+Public sentiment sours as news spreads of hospitals reverting to manual diagnostics; trust in AI governance erodes. However, the reaction, while sharp, is contained to a measured decline — media coverage remains factual, and no cascading panic or secondary failures amplify the crisis. The drop in sentiment reflects concern, not crisis-level disillusionment.
+
+### Fragility Exposed
+
+The Union responds to crisis with intent — but action is constrained. The Emergency Sovereign Access Initiative remains in gestation, blocked by governance friction and fiscal scrutiny. Sovereignty inches upward through planning alone, while the cost of existing commitments begins to weigh. The floor holds — for now — but the path forward narrows.
+
+### Emerging developments (tracked)
+- `emergent_public_debate_escalation` -- first noted turn 1: The Kimi K3 release and the lab agent incident trigger a surge in expert commentary and public debate across EU media, with increasing calls for urgent regulatory action and scrutiny of AI development practices. Editorial boards demand accountability, and parliamentary hearings on AI risk are fast-tracked in multiple member states.

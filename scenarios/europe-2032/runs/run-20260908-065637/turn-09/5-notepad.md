@@ -1,0 +1,7 @@
+- `emergent_lab_cooperation` -- first noted turn 7, listed in 4 turn(s) so far: National AI safety coordination deepens into a standing technical secretariat with shared red-teaming infrastructure and joint anomaly triage protocols. Labs begin synchronising training run evaluations and publishing comparative safety dashboards.
+- `emergent_public_outrage` -- first noted turn 7, listed in 4 turn(s) so far: Public and media scrutiny of AI in critical infrastructure intensifies, fueled by the election annulment and the member state's unilateral deal. Civil society groups demand binding transparency, and national parliaments consider inquiries into foreign-controlled AI in judiciary and health systems.
+- US_POSTURE: RETRENCHMENT
+- PORTFOLIO CHARGE: Sovereign Evaluation Corps −3, priority −1 = −4
+- PROPOSAL BONUS: none
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 24.0 last turn, SMI finishes t8 +1, ECAG finishes t8 +1, capability rose 1.0 −1, no capacity event = 25.0 → net −2 due to metric rule 5 decay from rising capability and no offsetting build; final = 23.0

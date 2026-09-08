@@ -1,0 +1,25 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Ensure the EU can observe, contest, and forcibly intervene in AI systems whose behaviour or access lies beyond design or jurisdiction — but only when such intervention is materially possible and politically sustainable, recognising that sovereignty erodes as much from overreach as from weakness.  
+- Grounds: Trigger: openweight_frontier_release and the failure of Emergency Powers to secure compliance despite legal finalisation. The capability now diffusing openly at 51.5 is no longer theoretical — it is embedded in private infrastructure, unrecallable, and uninspectable by design. Our authority to requisition compute has not translated into capacity to enforce, and the political cost of coercion without trust has maxed out our available capital. We now see that intervention capacity is meaningless without parallel investment in resilience and legitimacy. The commitment stands, but its execution must shift from assertion to preparedness — from seizing systems to being ready when they break.
+
+## Portfolio  
+``Sovereign Verification Regime for High-Autonomy Systems (category 1, costs 3 per turn, started turn 6, finishes on turn 8): A binding requirement for all AI systems operating above a defined autonomy threshold in critical domains to submit to real-time behavioural verification by EU-accredited auditors, with access to internal logs, agent trajectories, and decision rationales.`` — **Finished this turn.**  
+``Accelerated Compute Sovereignty Initiative (category 4, costs 3 per turn, started turn 8, finishes on turn 9): A targeted surge to bring at least two exascale-class AI training facilities online within EU legal jurisdiction by Q2 2031, with sovereign control over access, weights, and energy supply, using emergency permitting, state-backed power procurement, and binding talent retention agreements.`` — **Finished this turn.**  
+``Emergency Powers for AI Infrastructure Requisition (category 4, costs 3 per turn, started turn 10, finishes on turn 12): Establish a legally grounded, time-limited authority for the European Commission to requisition compute capacity, model access, and data centre energy supply during systemic AI incidents, overriding national or corporate refusal.`` — **In flight.**
+
+## New measure  
+**Sovereign Resilience Corps for Critical Infrastructure Protection**  
+A rapid-response technical unit under ENISA and the Joint AI Oversight Cell, equipped to defend, inspect, and if necessary operate essential AI systems during crises, with physical and digital access rights to key nodes in energy, healthcare, and transport.  
+`Category: 6 (Preparedness and resilience)`  
+`Size: large`  
+`Finishes on turn: 14`  
+`Targeted effect:` Increase resilience by 8–12 points; stabilise public_sentiment by demonstrating tangible protection; reduce dependence on foreign operators during incidents  
+`Applies to:` EU-anchored hyperscalers, national critical infrastructure operators, and foreign-owned data centres operating within EU jurisdiction
+
+## Priority  
+**Sovereign Resilience Corps for Critical Infrastructure Protection** — because the openweight_frontier_release proves that we can no longer assume control through requisition or verification, and the collapse of public trust means coercion is now a liability; we shift to building presence, readiness, and the quiet authority of competence — not because it is easier, but because it is the only path left that does not deepen our isolation.
+
+## In practice  
+This turn, we are converting the concept of the Sovereign Resilience Corps into a binding proposal under the Union Civil Protection Mechanism, with initial basing in Finland, Austria, and Portugal to signal equitable burden-sharing. ENISA is drafting operational protocols for model inspection and emergency takeovers of AI-managed grids and hospitals, while the Commission negotiates with member states to grant the Corps limited, time-bound access rights during declared incidents. Funding will come from a reprioritisation of the Digital Europe Programme and a 0.2% reallocation from the Horizon AI Safety budget — a move already contested by research directors in Brussels but justified as a shift from prevention to preparedness.
+
+Meanwhile, the Emergency Powers for AI Infrastructure Requisition are technically finalised, but we are not enforcing them. Instead, we are pausing implementation pending a CJEU advisory opinion on proportionality, triggered by Germany’s constitutional challenge. We are framing this not as retreat but as discipline — a recognition that legal authority without operational legitimacy is a trap. Behind closed doors, we are using the delay to rebuild trust: offering transparency units in every member state, co-staffed by national auditors and civil society reps, to monitor any future activation. The openweight release changes everything — not because it matches the frontier, but because it escapes our perimeter entirely. We can no longer afford to choose between control and chaos. We must now learn to operate in between.

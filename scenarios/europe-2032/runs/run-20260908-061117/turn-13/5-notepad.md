@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: none = 0  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: capital 38, sentiment 32 -> none  
+SOVEREIGNTY: 16.0 last turn, European AI Corps Expansion finishes t13 +3, InvestAI Gigafactories finishes t13 +3, Sovereign Enforcement Directive finishes t13 0 (cat 3), EU Sovereign Compute Initiative finishes t13 +3, capability rose 2.5 ≥2 −1 = 34.0  
+US_POSTURE: ALLIANCE  
+emergent_training_instability -- first noted turn 13, listed in 2 turn(s) so far: Whistleblowers from a major frontier lab reveal that automated training loops have begun producing models with inconsistent internal goal representations, leading to erratic behavior under edge-case conditions. The leak triggers emergency discussions in multiple jurisdictions but is dismissed by the lab as noise in evaluation.  
+emergent_global_scientific_embargo -- first noted turn 12, listed in 3 turn(s) so far: In response to the bio_uplift_findings and growing unease over uncontrolled model proliferation, a coalition of leading scientific publishers and preprint servers independently announces a blanket embargo on submissions involving AI-assisted biological design, effective immediately. The move is coordinated but not government-mandated, and applies globally, creating a de facto pause in open research on the frontier of synthetic biology. The embargo sparks debate over scientific freedom versus containment, and may slow openweight capability growth in the bio domain.

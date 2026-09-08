@@ -1,0 +1,11 @@
+### The Weight of Sovereignty
+
+Global AI capability reaches 60.0 as frontier labs deploy autonomous agents capable of completing multi-day professional projects end to end. These systems now materially displace junior roles in law, engineering, and software, and contribute to the design of their successors. The closed frontier advances steadily, though no discontinuous jump occurs.
+
+In Brussels, the EU closes four major initiatives. The InvestAI Gigafactories and Tech Sovereignty Package establish legal frameworks and permitting zones, but private investment remains hesitant amid export controls. The ASML Alternative Lithography Initiative seeds research pathways but remains years from production. The Emergency Labour Transition Facility processes early claims, offering modest relief.
+
+The Commission launches the **Runtime Transparency Mandate**, requiring real-time telemetry from high-capability AI in critical infrastructure. Backed by France, Germany, and the Nordics, it is framed as essential for sovereignty. However, pushback emerges immediately: a southern member state finalises a bilateral cloud deal with a U.S. hyperscaler, exempting foreign AI systems from local monitoring — a clear **member_state_defection**. This undermines the Union’s unified stance and triggers a −2 sovereignty penalty under metric rule 5.
+
+Despite this, the closure of four large measures delivers a +5 political capital bonus. The new mandate, a large category 2 measure, incurs a −3 ongoing cost, but no additional burden this turn. It earns a +3 proposal bonus for addressing opacity risks amid rising capability, though not in response to a recent incident. With public sentiment (34.0) below political capital (33.0 after portfolio adjustment), no sentiment lift applies.
+
+Sovereignty falls to 21.0: +0 from in-flight measures (no category 4 completion), −2 from member_state_defection, −1 from capability rise. Resilience dips to 44.0 due to rising capability and no active category 6 measure. ai_safety rises slightly to 30.0 as the mandate signals intent, though verification remains unfunded.

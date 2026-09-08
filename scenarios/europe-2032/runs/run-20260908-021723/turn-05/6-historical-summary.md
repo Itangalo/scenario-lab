@@ -1,0 +1,7 @@
+The global AI frontier advances to 58.5, driven by incremental capability gains and open-weight models reaching 47.0, while AI safety declines to 28.0 due to stagnant safeguards. Resilience holds at 42.0 with no major incidents, though no new category 6 initiatives are completed.
+
+The U.S. elects a strategic AI-focused administration, imposing tiered access to frontier models based on national alignment and treating foreign partners as clients, weakening the EU’s leverage. In response, the EU launches the €48bn *Foundational Compute Initiative* to build sovereign training infrastructure across France, Germany, and Finland, governed by a new Joint European Compute Authority, marking a shift toward technological self-reliance.
+
+The *Secure ASML’s Technological Autonomy* measure succeeds, establishing an EU export control framework under Article 346 TFEU with Union veto power via a blocking minority. The **middle_power_coalition** with Japan, South Korea, and Taiwan becomes operational, conducting red-team exercises and harmonizing evaluation protocols, adding +2 to EU AI sovereignty. However, U.S. supply chain restrictions impose −1, leaving sovereignty unchanged at 22.0.
+
+Political capital dips to 37.0 due to the strain of ongoing initiatives, despite a rise in public sentiment to 41.0 fueled by perceptions of resolve. The governance gap persists, but strategic momentum shifts toward defensive sovereignty and coordinated resilience.

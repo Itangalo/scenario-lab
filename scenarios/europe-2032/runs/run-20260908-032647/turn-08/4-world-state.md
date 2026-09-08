@@ -1,0 +1,19 @@
+### A Pivot Under Pressure
+
+The EU’s recalibration in the face of cascading crises yields mixed results. The **EU Frontier AI Programme** advances with redirected InvestAI funds accelerating infrastructure in Toulouse and Prague, though full sovereign training remains a turn away. Meanwhile, the **Open-Weight Firewall expansion** formally concludes, introducing real-time detection and takedown protocols. Yet platform resistance and inconsistent enforcement limit its reach—models above capability 50.0 continue to leak through informal channels.
+
+A promising development emerges in interpretability research: a new method, recently validated in Zurich, allows reliable prediction of agent behaviour under novel incentives. Early testing by leading labs shows reduced liability risks and improved model evaluation confidence. Encouraged, the European Commission proposes **EU-AISE**, the European Union Agency for Intelligence Safety and Evaluation, to institutionalize these advances. The proposal includes plans for pre-deployment audit authority and live monitoring powers. ENISA agrees to transfer its red-teaming unit, and exploratory discussions begin with INRIA and Fraunhofer on research partnerships. However, staffing, legal mandates, and budget approvals remain pending—implementation will take at least one full turn.
+
+The **export_control_escalation** and **eu_frontier_access_denied** deal sharp blows. The US, operating under a CONSOLIDATION posture, cuts off access to the latest frontier model, disrupting public and private AI operations. This exclusion, combined with **ai_capability** rising by 1.5, triggers a −2 sovereignty hit, underscoring persistent dependency despite infrastructure gains.
+
+Public anxiety deepens as the **labour_displacement** wave accelerates. Entry-level roles in law, accountancy, and software vanish, feeding a narrative of exclusion. Informal discussions emerge in Belgium, Austria, and Estonia about a potential emergency pilot limited to models undergoing rigorous safety review. However, no formal proposal is advanced this turn, respecting the constraint that only one new measure may be introduced per turn. The idea remains in early consultation, with coordination and legal basis still to be established.
+
+Political capital rises to 16.0. The completion of two measures—InvestAI Gigafactories and the Open-Weight Firewall upgrade—brings a combined +7 boost. The proposal for **EU-AISE** earns a +4 bonus, judged as a large, timely response to recent safety and cyber failures. However, the portfolio charge of −9 (six active measures, including a priority) and a −1 sentiment drag keep gains in check.
+
+Resilience declines slightly to 50.0. While the ransomware aftermath lingers, no new systemic incident occurs, preventing further decline.
+
+Informal discussions continue among EU members on strengthening collective responses to AI-related threats. Some advocate for binding commitments on shared incident response and threat intelligence, citing growing cyber tensions and questions about transatlantic reliability. For now, coordination remains ad hoc, with no formal pact established. The notepad entries on emergent pacts are revised to reflect only the ongoing informal nature of these talks—described as exploratory dialogues without activation conditions, thresholds, or operational status.
+
+The notepad now reads:  
+emergent_regional_defense_pact -- first noted turn 7, listed in 2 turn(s) so far: EU member states hold informal consultations on enhancing cooperation for AI-critical infrastructure protection, including information sharing and joint response planning. No binding agreements have been reached.  
+emergent_regional_data_coalition -- first noted turn 7, listed in 2 turn(s) so far: Discussions continue among EU members on mutual support for AI data integrity and incident resilience. Talks remain non-binding and exploratory.

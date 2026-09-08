@@ -1,0 +1,17 @@
+### The Reclamation Gambit
+
+The EU declared a state of strategic urgency. With private investment frozen and export controls now rationing even allied access to frontier AI training, the Commission invoked Article 122 TFEU to launch the **Emergency Sovereign Compute Mobilisation**—a bold attempt to seize and reactivate stalled data centre projects in Germany, Poland, and France. The plan promised future sovereign capacity by repurposing idle infrastructure, bypassing years of permitting and negotiation.
+
+Yet resistance flared immediately. German officials denounced the move as federal overreach, warning that emergency powers risked destabilising energy markets and undermining investor confidence. In Warsaw, legal challenges emerged over land ownership and environmental compliance. Only Lyon’s site saw initial progress, with French authorities accepting co-ownership under strict conditions. However, no meaningful compute capacity came online by mid-year; the initiative remained in early mobilisation, with physical delivery deferred well into 2029. The effort consumed political capital but delivered no immediate gains.
+
+Meanwhile, the **Accelerated Public Evaluation Programme** concluded successfully. Interpretability tools were embedded into ENISA’s audit framework, enabling the first systematic review of high-impact public AI systems. Bias in asylum risk models was detected and corrected—marking a rare win for transparency. However, these gains did little to shift public mood, as job displacement and data centre protests fed a growing narrative of AI as a destabilising force.
+
+The **Public-Private Compute Assurance Compact** remained in negotiation, with no breakthrough. Hyperscalers demanded sweeping liability protections and energy guarantees, while member states quarrelled over enforcement. Ireland’s conditional support hinged on tax treatment, further complicating consensus. No new commitments were reached, and the initiative remained stalled, absorbing diplomatic bandwidth without progress.
+
+### A Winter Sets In
+
+Financial markets solidified around the “AI winter” thesis, with central banks warning of speculative collapse. The **emergent_regional_compute_pact** among Nordic and Alpine states gained quiet traction, pooling remaining capacity in a de facto northern bloc—a workaround, not a solution.
+
+AI capability advanced steadily to 62.0, driven by closed labs abroad. With no matching safety leap, the gap widened. Resilience ticked up slightly from prior hardening, but sovereignty held steady at 18.0—no decline, but no gain either, as the reclamation effort had not yet yielded tangible capacity. The narrative of desperation grew louder, but the physical base had not yet shifted.
+
+Political capital dwindled under the weight of stalled initiatives and rising friction. Public sentiment dipped as the reclamation effort was framed less as sovereignty and more as desperation. Open-weight capability rose modestly to 53.0, reflecting incremental diffusion of prior models and minor open-source contributions, but fell short of the leap implied by unreported breakthroughs. The absence of a major open release or coordinated capability infusion kept growth within plausible bounds.

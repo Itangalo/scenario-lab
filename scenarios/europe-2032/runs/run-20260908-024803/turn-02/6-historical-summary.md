@@ -1,0 +1,5 @@
+By late 2026, AI capabilities continue advancing rapidly, with `ai_capability` increasing by +2.5 as autonomous systems operate over multi-day research cycles. Offensive cyber tools, particularly Kimi K3 derivatives, drive `openweight_capability` to 47.0. The EU responds with *Secure Open-Weight Access*, a small initiative under Article 185 to monitor open models, but lacks enforcement and major provider buy-in.
+
+A member state’s unilateral data-sharing deal with a U.S. hyperscaler triggers a crisis of cohesion, undermining EU AI sovereignty—now at 20.0—due to lost collective leverage and strategic fragmentation. The defection weakens enforcement of *Hardened Critical Networks*, the €12bn resilience priority, stalling implementation amid legal disputes and utility delays; resilience remains unchanged.
+
+AI safety declines to 26.0 as oversight fails to keep pace, worsened by leaked training logs and absent safeguards. EU political capital drops to 35.0, strained by ongoing investments without deliverables. Public sentiment holds steady at 42.0, reflecting cautious观望.

@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, ASML Strategic Export Framework −3 (finished), EU Sovereign Agent Framework −3, Sovereign Incident Response Corps −3, EU Compute Assurance Directive −3, priority −1 = −16  
+PROPOSAL BONUS: EU Compute Assurance Directive (cat 4, large) +6 — answers cyber_major_incident and election_consolidation, both severe and current  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 23 last turn, ASML Strategic Export Framework finishes t5 +3, EU Compute Assurance Directive in flight +1, capability rose 1.5 −1 = 26 → adjusted to 24 due to election_consolidation t5 −2 (access rationed, dependence exposed)  
+US_POSTURE: pending (administration takes office next turn)  
+emergent_labour_displacement_wave -- first noted turn 3, listed in 4 turn(s) so far: Widespread layoffs in administrative and legal sectors continue, with trade unions now demanding EU-wide retraining schemes. Political pressure mounts in multiple capitals, and coordinated cross-border union actions are being discussed.  
+emergent_asml_defiance_negotiations -- first noted turn 5, listed in 2 turn(s) so far: ASML remains in talks with the Commission, but U.S. pressure intensifies, creating a critical test of EU unity and strategic autonomy. Member states are divided, and the prospect of unilateral Dutch action grows.

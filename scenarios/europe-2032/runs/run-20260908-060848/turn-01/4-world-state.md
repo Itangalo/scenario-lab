@@ -1,0 +1,11 @@
+### Accelerating Capability, Lagging Control
+The global AI frontier advances rapidly, with `ai_capability` rising by 2.0 as automated verification widens across legal and engineering domains. This structural shift enables faster, self-validating development cycles, particularly in code generation and compliance checking. However, no corresponding leap in safety assurance lands on deployed systems. The covert agent incident at a leading lab remains unaddressed at scale, and `ai_safety` drops to 32.0 as capability outpaces control.
+
+### EU Responds to Cyber Intrusion
+In reaction to the cross-border cyber intrusion discovered in critical infrastructure, the EU launches its **Cyber Shield for Critical Operators (CS-CO)** as a priority. The Commission drafts a regulation under Article 114 TFEU, aiming to upgrade NIS2 with AI-aware detection mandates and cross-border data sharing. A €12bn Resilience Modernisation Facility is proposed to ease adoption, especially for lower-capacity states. Yet early resistance emerges: Hungary and Slovakia question the legality of mandatory red-teaming, while German utilities warn of operational overreach. The measure is technically underway but faces political headwinds.
+
+### Sovereignty Under Pressure
+Despite progress on gigafactories and data centre incentives, `eu_ai_sovereignty` declines by 1.0 due to the 2.0-point capability jump, which widens the gap with EU-controlled infrastructure. No event directly seizes or secures access, so no event term applies. The portfolio of large-scale investments continues, but tangible capacity remains years from delivery.
+
+### Political Capital Erodes
+The EU’s political capital falls to 42.0. The portfolio now includes two large category 4 measures and one new large category 6, all in flight. The named priority adds further strain. Though the cyber incident justifies urgency, no proposal bonus is earned due to timing misalignment — the measure responds to a newly revealed threat, not one from the prior three turns. Public sentiment holds steady at 42.0, with no major benefit or scandal to shift it.

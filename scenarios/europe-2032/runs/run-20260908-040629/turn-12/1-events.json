@@ -1,0 +1,50 @@
+[
+  {
+    "id": "member_state_defection",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.13,
+      0.18,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_regional_data_pact",
+    "probability": 0.27,
+    "emergent": true,
+    "description": "Several EU member states, citing the failure of central AI governance and growing public distrust, accelerate informal negotiations on a regional data governance pact. The pact would restrict high-capability model training on locally generated data, framed as a sovereignty measure but risking further fragmentation of the digital single market. Tensions with the Commission rise as the December failover test looms, with unity increasingly in doubt.",
+    "probability_samples": [
+      0.28,
+      0.25,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_disinfo_wave",
+    "probability": 0.3333333333333333,
+    "emergent": true,
+    "description": "A coordinated synthetic disinformation campaign, likely originating outside the EU, floods social and local media across multiple member states. It subtly amplifies regional grievances and erodes trust in EU institutions, evading current detection systems and distorting public discourse around AI policy.",
+    "probability_samples": [
+      0.35,
+      0.3,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

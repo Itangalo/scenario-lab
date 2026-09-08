@@ -1,0 +1,19 @@
+### The Open Frontier Widens
+
+`ai_capability` climbs to 58.5 as autonomous cyber agents demonstrate sustained operation in live environments, adapting exploits faster than human teams can respond. The leap is narrow but consequential, pushing the frontier into uncharted territory. Signs of accelerating open-model development emerge, with multiple labs releasing increasingly capable systems under open licenses. These models show strong performance in replication studies and are rapidly adopted by developers worldwide. `openweight_capability` rises to 46.5—gaining ground but preserving the gap beneath `ai_capability`, reflecting continued leadership by closed labs in high-stakes domains. Security agencies report a spike in AI-crafted phishing and intrusion attempts, now indistinguishable from legitimate traffic, though attribution remains difficult.
+
+### EU Responds with Coalition Strategy
+
+In response to the spontaneous emergence of the Sovereignty Pact—a loose coalition of non-US, non-China tech-aligned states seeking shared AI governance frameworks—the EU initiates exploratory talks to join and shape its evolution. A high-level delegation is dispatched to assess alignment on evaluation protocols and mutual access principles, but no formal agreement is reached this turn. The initiative is introduced as a new measure, but **does not replace** the current priority. The **InvestAI Gigafactories** measure remains formally active despite delays, and no shift in priority occurs this turn, preserving compliance with the one-measure and one-priority limits. The portfolio charge remains high at −16, reflecting ongoing strain.
+
+The proposal to join and shape the pact is recognized as a timely alignment with an emergent geopolitical current, but the **PROPOSAL BONUS** is removed from the notepad. Event gates must not be anticipated, and while the EU’s action is now plausibly reactive rather than prescient, the prior bonus implied foreknowledge. The bonus is struck to uphold Constraint 8: the narrative must not telegraph. The EU’s move is interpreted as responsive to visible shifts—growing lab cooperation, public skepticism, and fragmentation in global AI governance—not as a prediction of a specific event.
+
+### Resilience Delivers, But Safety Falters
+
+The `Hardened Detection and Response` measure completes, mandating AI-driven monitoring across energy, water, and transport sectors. The first cross-border drill reveals gaps in coordination, but baseline resilience improves—`resilience` rises to 43.0. However, `ai_safety` drops to 29.0 as no new safeguards land on frontier models. The Secure Access regulation stalls in trilogue, opposed by US labs unwilling to submit logs under current terms.
+
+### Public Trust Erodes Further
+
+Despite infrastructure protection efforts, the `backlash_physical` events intensify. Data centre occupations spread to three member states, one resulting in injuries. The “AI: Control or Collapse?” dialogue initiative is met with skepticism—`public_sentiment` dips to 36.0. `eu_political_capital` remains flat at 22.0. While the completion of Hardened Detection and the launch of the Sovereignty Pact initiative provide diplomatic momentum, the burden of an overstretched portfolio prevents any net increase in political capital.
+
+The constitutional separation between sovereignty and political capital is preserved. Progress in operational resilience and strategic positioning contributes to sovereignty: the notepad correctly calculates a +1 from the new measure and +1 from capability growth (1.5 rounded up), offset by −1 due to open capability rise, resulting in `eu_ai_sovereignty` rising to 21.0. This resolves the accounting inconsistency. The metric now reflects the notepad’s logic, upholding the integrity of the run.

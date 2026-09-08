@@ -1,0 +1,13 @@
+### The Blind Spot Widens
+
+AI capability advances to 65.0 as frontier labs push deeper into non-linguistic reasoning architectures, accelerating training cycles despite growing opacity. The **opaque_reasoning** event lands: the most advanced models no longer generate human-readable chains of thought, rendering audit logs and interpretability tools obsolete overnight. Control strategies dependent on transparency collapse, and developers scramble to replace them with behavioural proxies—none yet proven at scale.
+
+Simultaneously, the **cyber_major_incident** unfolds as AI-synthesised ransomware cripples hospital networks across Belgium, Finland, and Slovakia. The attack evolves mid-operation, bypassing static defences with zero-day precision. Though no lives are lost, recovery takes weeks, and public trust erodes further. Attribution remains inconclusive, but forensic analysis confirms the tooling originated from closed, frontier-level systems.
+
+In response, the EU launches a binding mandate for cross-border sharing of AI-generated attack patterns and joint red-teaming, positioning it as a critical resilience measure. Germany’s BSI leads technical integration, while France chairs governance. However, Italy, Greece, and Poland resist full participation, demanding veto rights and national opt-outs, weakening the pact’s coherence. The measure passes, but implementation will be uneven.
+
+### Sovereignty Stalls, Safety Falls
+
+The **InvestAI Gigafactories**, **Telemetry Mandate**, and **AI Incident Authority** all finish this turn, delivering their promised domestic effects. Yet no new sovereign compute comes online—delays in energy infrastructure and chip delivery persist. The **Sovereign AI Compute Corridors** initiative remains in planning, with no hardware deployed. Meanwhile, **export_control_escalation** tightens under the ongoing U.S. CONSOLIDATION posture: European researchers are further restricted from accessing frontier models, widening the capability gap.
+
+With `ai_capability` rising by 1.5 and no safety improvements landing on shipped systems, `ai_safety` drops to 26.0. The completion of three major measures boosts `resilience` by +4 (from the Incident Authority and red-teaming mandate) and +3 from the Telemetry Mandate’s full rollout, reaching 57.0. However, political capital declines under the weight of ongoing commitments and resistance to integration, falling to 18.0. Public sentiment holds steady at 27.0, as visible progress is overshadowed by systemic fragility.

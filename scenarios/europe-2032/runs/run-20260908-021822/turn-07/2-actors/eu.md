@@ -1,0 +1,17 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — **finishing this turn**
+- `Sovereign Interpretability Programme (category 5, costs 3 per turn, started turn 4, finishes on turn 6): Launch a publicly funded, pan-European initiative to adopt and scale the recent safety breakthrough in model interpretability across all EU-deployed frontier systems, starting with critical infrastructure and public services` — **finished**
+- `Critical Systems Resilience Certification (category 6, costs 3 per turn, started turn 5, finishes on turn 8): Establish a mandatory, EU-wide certification regime requiring all AI systems operating in essential services to demonstrate resilience against loss-of-control scenarios and verified interpretability under stress conditions`
+
+## New measure
+None this turn. We are at the edge of political capacity and must consolidate enforcement of the Critical Systems Resilience Certification and absorption of the Emergency Resilience Acceleration Facility before layering new initiatives.
+
+## Priority
+**Critical Systems Resilience Certification** — because the Ombudsman scandal has shattered public trust, and the surge in autonomous cyber operations makes uncontrolled AI in essential services a strategic liability; this measure is now the only credible instrument through which the EU can simultaneously restore legitimacy and enforce technical control.
+
+## In practice
+This turn marks the culmination of the InvestAI Gigafactories programme, with all four sites—Dresden, Lyon, Warsaw, and Wrocław—now fully permitted, grid-connected, and entering operational commissioning. The European Defence Industrial Corporation (EDIC) has confirmed co-investment in each, and we have locked in the 30% sovereign reservation at Dresden for real-time public-sector AI monitoring, operational by turn 8. This delivers a foundational layer of physical compute sovereignty, even as global capability advances. Simultaneously, the Sovereign Interpretability Programme has concluded its pilot phase, and its reasoning-path prediction tools—validated in Finland, Belgium, and Italy—will be integrated directly into the Critical Systems Resilience Certification audit framework. We are now mandating that all certified systems deploy these tools as part of their fail-operational protocols, turning interpretability from research into enforcement.
+
+The Emergency Resilience Acceleration Facility is mobilising under DG HOME and the European Investment Bank, with technical teams already embedded in six high-risk healthcare systems across Germany, France, and the Netherlands. Liability shielding is being offered through amended clauses in the AI Liability Directive, and modular AI templates are being co-developed with public hospitals to ensure compliance does not mean bespoke development for every region. The emergent regional AI pact—led by France, Germany, the Netherlands, and Finland—offers a crucial political vector: we are aligning the Facility’s governance with its citizen oversight panels and shared auditing framework, turning a potential parallel track into a reinforcing network. This is not merely damage control; it is an opportunity to rebuild public-sector AI on terms of transparency and collective ownership, anchoring trust not in promises but in architecture.

@@ -1,0 +1,26 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Secure sovereign resilience through independent AI assurance and critical infrastructure protection  
+  - Grounds: The eu_frontier_access_denied event has rendered our dependence on external frontier access a direct and immediate threat to state function, not a strategic vulnerability to be managed over time. Our current path — relying on emergency powers to stand up red-team sites while the legal foundation of the Evaluation Agency remains contested — is failing. We are not building sovereign capacity fast enough to matter, and we are paying full political cost for partial delivery. This turn, we pivot from assurance as the sole pillar of resilience to one anchored in sovereign operational capacity: we must run systems we control, not just audit ones we don’t. The commitment stands in spirit, but its instrument must change.
+
+## Portfolio  
+- Sovereign Audit and Evaluation Launch (category 5, costs 3 per turn, started turn 11, finishes on turn 13): Establish the European AI Evaluation Agency with legal authority to inspect model weights, training data, and agent behaviour for systems deployed in or affecting EU critical infrastructure.  
+- Accelerated Red-Team Facility Deployment (category 5, costs 2 per turn, started turn 11, finishes on turn 12): Fast-track construction and operationalisation of secure red-team sites in Leuven, Toulouse, and Vilnius with emergency permitting, military-grade cybersecurity, and immediate deployment of evaluation teams to begin audits on AI systems in healthcare and energy grids. **Finished this turn.**
+
+## New measure  
+### Emergency Sovereign Compute Mobilisation  
+Seize and repurpose idle or underutilised high-performance computing assets across EU research institutions, national labs, and state-owned industrial firms to train and run a minimal sovereign model stack for critical public functions.  
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 14`  
+`Targeted effect:` +15 to eu_ai_sovereignty by establishing baseline sovereign model training and inference capacity under EU legal control; +5 to ai_safety by enabling red-team evaluations on systems not dependent on foreign access  
+`Applies to:` EU jurisdiction, focusing on public-sector AI use in healthcare, energy, and civil protection  
+
+## Priority  
+Priority: Emergency Sovereign Compute Mobilisation.  
+This is no longer about oversight — it is about survival. With frontier access cut off unilaterally and without appeal, we cannot afford to wait for legal clarity or consensus; we must have systems we can run, now. The red-team sites will come online this turn, but they have nothing to test and no models to run. This measure answers that gap: sovereign compute for sovereign function.
+
+## In practice  
+We are acting under existential constraint. The Sovereign Audit and Evaluation Launch remains in flight, but its legitimacy is fraying. We are now offering Germany and Poland a binding seat on the Evaluation Agency’s oversight board and a shared veto on audits touching national security systems — not because we want to dilute authority, but because we need survival. The European Court of Justice reference will proceed, but we are preparing for a partial annulment: we are drafting a fallback regulation under Article 114 TFEU that would allow national regulators to delegate to a weakened, coordinating-only agency, preserving some capacity even if the central authority is struck down.
+
+The Accelerated Red-Team Facility Deployment finishes this turn: Leuven and Toulouse are provisionally operational, running audits on hospital triage algorithms and grid load balancers using legacy model weights and synthetic test cases. Vilnius is behind due to procurement delays on secure cabling, but we are routing its first audits through a hardened air-gapped container from the Bundeswehr’s cyber command — a temporary bilateral arrangement under the PESCO framework. These sites now have personnel, hardware, and mandate, but no live frontier models to evaluate. That is why we are launching the Emergency Sovereign Compute Mobilisation: using Article 222 TFEU’s emergency powers, we are issuing a binding directive to national research bodies — CERN, Fraunhofer, CNRS, Flanders AI — to report all GPU clusters above 1,000 petaflops of idle capacity. We are not seizing them yet, but we are preparing activation orders. Our first target is the decommissioned LUMI-2 array in Kajaani: Finland has agreed to reactivate it under EU operational control in exchange for priority access to its first training run. We are pooling €2.1 billion from Digital Europe, Horizon Europe, and the Recovery and Resilience Facility to cover power, cooling, and talent contracts. This is not about matching the frontier — not yet. It is about having one stack, one model, one inference pipeline that answers to no one outside the Union. If we cannot audit the world’s best, we will at least run our own.

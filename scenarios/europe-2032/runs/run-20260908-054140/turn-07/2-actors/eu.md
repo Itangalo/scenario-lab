@@ -1,0 +1,22 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — finishing this turn
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — finished
+- `Cyber Shield Directive (category 6, costs 3 per turn, started turn 1, finishes on turn 4): A binding directive requiring all operators of essential services in the EU to implement AI-driven intrusion detection systems and conduct quarterly red-teaming exercises with cross-border oversight` — finished
+- `EU Sovereignty Compute Corridor (category 4, costs 3 per turn, started turn 3, finishes on turn 7): A legally binding initiative to fast-track permitting, secure long-term electricity contracts, and guarantee access to maintenance and talent for AI data centres that commit to EU jurisdictional control and open-weight security standards` — finishing this turn
+- `Sovereign AI Control Stack (category 5, costs 3 per turn, started turn 4, finishes on turn 6): Establishes a unified authority with technical access to inspect, monitor, and if necessary, suspend AI systems operating at or above 50.0 capability within EU jurisdiction` — finished
+
+## New measure
+None this turn.  
+Waiting for the completion of the Sovereign AI Control Stack and the Compute Corridor to assess sovereign operational readiness before launching the Emergency Sovereign Agent Containment Framework, which cannot succeed without enforceable access and domestic infrastructure.
+
+## Priority
+Priority: InvestAI Gigafactories — because it finishes this turn and represents the first physical anchoring of frontier-scale compute under EU legal and operational control, enabling all future sovereign measures from containment to evaluation, and because its closure unlocks €200bn in private capital that will otherwise reroute to non-EU jurisdictions within months.
+
+## In practice
+We are closing the first phase of our sovereign build-out. The **InvestAI Gigafactories** in Finland, France, and Spain are now certified under EU jurisdictional control, with audit nodes embedded at the hardware level and physical perimeters hardened against both cyber-physical intrusion and political capture. These sites will host systems we can monitor, and soon, we hope, systems we can stop. The final disbursement of €180bn in blended public-private funding is tied to binding commitments: no model above 60.0 capability operating from these sites may lack API-level access for the EU AI Control Authority, and open-weight releases derived from their training runs must meet EU security standards before publication. This is not subsidy — it is sovereignty with strings.
+
+The **EU Sovereignty Compute Corridor** completes its legal integration this turn, linking the Gigafactories to long-term electricity contracts from Nordic hydro and Iberian solar, with priority grid access guaranteed under revised TEN-E regulations. Talent mobility agreements now allow engineers and auditors to move freely across sites under EU-level clearance, bypassing national bottlenecks. The resistance from Hungary and Poland remains, but it is no longer existential: their objections to the Control Stack’s suspension powers have been met with co-governance concessions — national representatives hold 40% of voting weight on the Oversight Board, and no action can be taken without cross-regional support. This is not ideal, but it is functional.
+
+We are not blind to the risks. With `ai_capability` at 79.5 and `ai_safety` at 3.0, we are living in the gap between power and control. The **openweight_frontier_release** proves that capability is now globally distributed the moment it emerges. The **labour_displacement** and **backlash_physical** events show that the social contract is fraying. But we cannot act beyond our means. We have no capital to waste. The **Emergency Sovereign Agent Containment Framework** must wait — not because the threat is distant, but because launching it now, without the Control Stack’s authority or the Gigafactories’ infrastructure, would be ceremonial. We are building levers, not declarations. When the next recursive leap comes — and it will — we will not be the ones who only had opinions.

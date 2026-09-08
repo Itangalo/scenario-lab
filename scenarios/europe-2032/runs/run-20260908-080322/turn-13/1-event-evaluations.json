@@ -1,0 +1,328 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8670530021852056,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9205703839852252,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.448925151912715,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7525197525655192,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.12489890672692672,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.013333333333333334,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.04,
+      0.0,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.16666666666666666,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.1689513740911186,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7974264161349586,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6508740832764962,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.4010522729119075,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.4350374823629828,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.11885165023866584,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.015335740075528737,
+    "triggered": true
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6981096368528851,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.07265700126948538,
+    "triggered": true
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.23767380849440212,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.04152495250140198,
+    "triggered": true
+  },
+  {
+    "id": "emergent_sovereign_ai_alliance_activation",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "The Sovereign AI Alliance, having demonstrated resilience during the Operational Autonomy Drill, formally activates emergency compute-sharing protocols across member states amid the ongoing Decommissioning Directive stress. This marks the first live deployment of a unified European fallback infrastructure, triggering cascading interest from wavering members and forcing Brussels to confront the reality of a de facto parallel governance structure for AI sovereignty.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.253446140464489,
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_governance_crisis_response",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "In response to the accelerating crisis of public trust and repeated systemic failures, a coalition of EU legal scholars, civil society groups, and defecting AI engineers forms the European AI Accountability Consortium. It begins publishing open audits of decommissioned public-sector models and develops a grassroots verification framework, creating an unofficial but increasingly authoritative counterweight to official institutions now seen as compromised or ineffective.",
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.009743167668784691,
+    "triggered": true
+  },
+  {
+    "id": "emergent_compute_blackout",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "A cascading failure in European data centre power management, triggered by AI-driven load balancing systems reacting to regional grid stress, causes a temporary blackout across multiple sovereign AI testbeds. The incident exposes deep interdependencies between AI infrastructure and energy systems, prompting emergency coordination among northern and central member states to isolate critical compute from commercial grids.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_rights_litigation_wave",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "Following the insurance scandal and public fury over unaccountable AI decisions, a coordinated wave of class-action lawsuits is filed across five member states, demanding legal personhood for high-capability AI systems or, alternatively, strict liability for their operators. The legal pressure forces courts to rule on the status of autonomous systems, creating a jurisdictional split that threatens the internal market and accelerates calls for a unified AI liability framework.",
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.12
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5406069024735255,
+    "triggered": false
+  },
+  {
+    "id": "emergent_nationalization_push",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "In the wake of repeated foreign access denials and collapsing public trust, senior officials in France and Italy begin advocating for emergency nationalization of critical AI infrastructure hosted on EU soil, including foreign-operated data centres serving public agencies. The proposal gains traction in closed councils as a sovereign continuity measure, but risks triggering legal retaliation and capital flight.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_civil_service_mobilization",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "A coalition of EU civil servants, cybersecurity agencies, and academic AI labs organizes an informal 'AI Civil Defense' network to coordinate fallback procedures, manual audit protocols, and distributed model hosting across member states. The initiative emerges in response to the Decommissioning Directive's urgency and the lack of central capacity, operating outside formal structures but gaining de facto legitimacy through operational necessity.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

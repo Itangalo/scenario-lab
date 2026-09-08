@@ -1,0 +1,261 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.17333333333333334,
+    "probability_samples": [
+      0.14,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4971964414865274,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.09000000000000001,
+    "probability_samples": [
+      0.09,
+      0.09,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5752340411288964,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.12000000000000001,
+    "probability_samples": [
+      0.08,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.04927208494728885,
+    "triggered": true
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.2333333333333333,
+    "probability_samples": [
+      0.1,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.39652693992465593,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.18114260516630443,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.17666666666666667,
+    "probability_samples": [
+      0.21,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8660113995210221,
+    "triggered": false
+  },
+  {
+    "description": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 4 turns.",
+    "emergent": true,
+    "id": "emergent_bio_breakthrough_escapes_lab",
+    "probability": 0.049999999999999996,
+    "probability_samples": [
+      0.15,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.37915134907375747,
+    "triggered": false
+  },
+  {
+    "description": "Amid growing public anger over AI-driven job losses and opaque decision-making, a cross-party coalition in the European Parliament introduces a sweeping 'AI Accountability Act' to establish binding transparency requirements for all high-risk AI systems used in public services. The proposal gains rapid support in several member states and triggers emergency consultations, signaling a shift toward stricter governance despite limited political capital.",
+    "emergent": true,
+    "id": "emergent_eu_accountability_push",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.05857281368855893,
+    "triggered": true
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.13999999999999999,
+    "probability_samples": [
+      0.0,
+      0.21,
+      0.21
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.20176614422677852,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.11333333333333334,
+    "probability_samples": [
+      0.0,
+      0.17,
+      0.17
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.09289409961475181,
+    "triggered": true
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.10333333333333333,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.13
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.970229313568238,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.0,
+      0.14,
+      0.14
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.2000369747732763,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.11,
+      0.11
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.18775163234283387,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.08,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.18630042806754854,
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_safety_international_standards_schism",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "A split emerges between the EU and a coalition of Asian and African nations over the implementation of AI safety standards, with the latter accusing the EU of imposing unworkable compliance burdens that hinder development. This leads to parallel certification regimes and growing friction in trade and technology partnerships.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_eu_public_sector_automation_backlash",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "Widespread reports of malfunctioning AI systems in EU public administration — from incorrect welfare denials to delayed medical referrals — trigger a coordinated civil society campaign demanding audits and rollbacks. Protests gain traction in multiple member states, putting pressure on the Commission to pause further automation efforts.",
+    "probability_samples": [
+      0.0,
+      0.28,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.16
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.31762583992049054,
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_refugee_movement",
+    "probability": 0.023333333333333334,
+    "emergent": true,
+    "description": "A growing number of AI researchers and engineers from countries with restrictive export controls or unstable political environments seek residency in the EU, citing concerns over freedom of research and access to infrastructure. This informal brain gain strengthens EU technical capacity but strains integration systems and sparks debate over selective immigration policies.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.07
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_scientific_embargo_on_ai_research",
+    "probability": 0.016666666666666666,
+    "emergent": true,
+    "description": "Following the bio_uplift_findings and recent cyber incidents, a coalition of independent scientific publishers and preprint servers announces a temporary embargo on publishing research involving AI-driven biological design or autonomous agent training, citing dual-use risks. The move is voluntary but widely adopted, slowing open progress at the frontier and increasing pressure on state-led evaluation regimes.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.05
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

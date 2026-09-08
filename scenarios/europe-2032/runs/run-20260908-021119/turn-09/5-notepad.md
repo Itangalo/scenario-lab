@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Emergency Sovereign Red-Teaming Expansion −3, Autonomous Threat Simulation Corps −3, priority −1 = −7  
+PROPOSAL BONUS: Autonomous Threat Simulation Corps (cat 6, large) +4 — answers cyber_major_incident directly, severe and recent, large measure  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 18 last turn, Sovereign Model Development Initiative finishes t9 +5, capability rose 1.5 −1, no capacity event = 21 → but US_POSTURE: CONSOLIDATION imposes decay at top of rule 5 range while no build in force → −1 → 20.0  
+US_POSTURE: CONSOLIDATION  
+emergent_defensive_alliance_progress -- first noted turn 6, listed in 5 turn(s) so far: The alliance now integrates real-time telemetry across ten national cyber agencies and has successfully contained live threats using automated response protocols. Political support grows, with calls for formal treaty backing.  
+emergent_societal_backlash -- first noted turn 6, listed in 5 turn(s) so far: Protests continue in major cities, now joined by academic strikes over restrictions on open research. Media frames the AI governance debate as technocratic overreach versus public accountability.  
+emergent_sovereign_failure -- first noted turn 9, listed in 2 turn(s) so far: Despite the Extremadura success, internal assessments question the long-term viability of the sovereign stack due to ongoing architectural bottlenecks and lagging telemetry access. Doubts persist about scalability and competitiveness beyond the pilot phase.

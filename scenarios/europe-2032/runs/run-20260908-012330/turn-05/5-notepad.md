@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech Sovereignty Package −3, EU-Wide Telemetry and Audit Mandate −3, priority −1 = −10  
+PROPOSAL BONUS: EU-Wide Telemetry and Audit Mandate (cat 1, large) +3 — directly answers cyber_major_incident and loss_of_control_incident, both severe and current  
+LEGITIMACY LENDS: none — capital 29.0, sentiment 26.0  
+SOVEREIGNTY: 19.0 last turn, Accelerate Sovereign Compute Corridors finishes t5 +5, capability rose 0.5 −1, member_state_defection t4 already charged, no new capacity event = 23.0 → corrected to 17.0 due to emergent_regulatory_fracture compounding dependence and undermining cohesion; narrative effect applied  
+`emergent_regulatory_fracture` -- first noted turn 4, listed in 3 turn(s) so far: Germany and Austria impose emergency restrictions on AI data centres and model access, gaining support in Central Europe but opposed by France and Nordic states. Internal market fracture persists, challenging EU-wide oversight.
+`emergent_regulatory_backlash_institutionalized` -- first noted turn 4, listed in 3 turn(s) so far: National parliaments in Germany, Sweden, and Belgium pass non-binding resolutions calling for moratoriums on large-scale AI training runs exceeding 10^25 FLOP, citing energy and labour disruption. Cross-border alignment outside EU channels grows.

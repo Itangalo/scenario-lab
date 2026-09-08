@@ -1,0 +1,18 @@
+No statement changes.
+
+## Portfolio
+``EU Sovereign Agent Development Initiative (category 4, costs 3 per turn, started turn 4, finishes on turn 8): Launch a coordinated public effort to develop and deploy EU-controlled autonomous AI agents for strategic research and infrastructure management, using secure domestic compute and open-weight-hardened architectures`` — **finished**
+``EU Compute Access Guarantee (category 4, costs 3 per turn, started turn 7, finishes on turn 8): Establish a legally binding mechanism to ensure uninterrupted access to frontier AI systems for EU institutions, critical public services, and licensed operators, even when foreign providers withdraw access`` — **finished**
+``Emergency Openweight Integration Directive (category 4, costs 3 per turn, started turn 8, finishes on turn 8): Mandate the immediate integration of verified open-weight models at or above capability 50.0 into EU-critical systems, with binding timelines for deployment in healthcare, justice, and emergency management, backed by emergency compute allocation and liability shielding for public operators``
+
+## New measure
+None this turn.  
+We are not waiting — we are executing. This turn is consumed by implementation: legal finalisation, compute provisioning, and agency-level coordination for the Emergency Openweight Integration Directive. No new measure is proposed because the portfolio is at capacity and the priority is operational delivery, not expansion.
+
+## Priority
+**Emergency Openweight Integration Directive** — because the cutoff trauma has not faded, the openweight frontier is now within operational reach, and we must convert capability already in circulation into sovereign infrastructure before the next denial event — not build parallel systems that will not be ready in time.
+
+## In practice
+We are executing, not designing. The Emergency Openweight Integration Directive is now law — adopted under Article 122 TFEU for urgent public interest, with emergency compute mobilised through the Resilience Facility and Gaia-X governance repurposed to enforce data-locality and model-provenance standards. DG SANTE, JUST, and ECHO are finalising implementation plans this month: by June, every regional health authority, national court system, and civil protection unit must have a verified open-weight model (≥50.0) integrated into at least one core workflow — triage prioritisation, case law synthesis, or disaster logistics. Horizon Europe releases €500 million in integration grants this quarter, drawn from repurposed InvestAI funds, with disbursement tied to audit trails of model validation and staff training.
+
+Liability shielding is operationalised through a new EU-wide instrument: public operators using certified models in approved configurations will have civil liability capped at €1 million per incident, with the remainder borne by a mutualised fund backed by the Commission. ENISA-AI, newly empowered, begins issuing certifications this turn, using test suites adapted from the EU AI Office’s 2028 framework. The Sovereign Agent Development Initiative and EU Compute Access Guarantee both end this turn — not cancelled, but absorbed. Their personnel and remaining budgets are folded into a new **Openweight Operationalisation Taskforce**, hosted at DG CNECT, to ensure continuity. This is not retreat — it is convergence. We are not building sovereign agents from scratch; we are securing agency by commanding the open frontier as it exists. The capability is free; our task is to make it ours.

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 54.5 to 61.5 (+7.0), but `ai_capability` only increased from 62.0 to 62.5 (+0.5). The `openweight_capability` cannot exceed `ai_capability` at any point, and a jump of 7 points while the frontier advances by only 0.5 is implausible under the fixed rates of progress (Constitutional Constraint 1) and the accumulation rule (Constraint 2). Even if the open-weight model is catching up rapidly, it cannot surpass or nearly match the frontier by such a margin in one turn without violating the invariant that `openweight_capability` ≤ `ai_capability`.\n- Invariant 9 violated: `ai_safety` decreased by 12.0 points (from 4.0 to −8.0), which exceeds the hard cap of 25-point maximum movement *in absolute value* per turn. While the rule allows up to 25 points of change, the narrative does not justify such a massive drop within the constraints of realistic erosion—especially given that no catastrophic event (e.g., widespread system failure, major breach) is narrated as occurring. A drop of this magnitude would require extraordinary justification, which is absent. Furthermore, the metric rules do not permit such a swing without explicit compounding mechanisms or event gates being triggered, which are not referenced here."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

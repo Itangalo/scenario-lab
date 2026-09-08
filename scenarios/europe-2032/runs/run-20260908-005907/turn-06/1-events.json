@@ -1,0 +1,72 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.3066666666666667,
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_cyber_insurance_crisis",
+    "probability": 0.3333333333333333,
+    "emergent": true,
+    "description": "Following repeated AI-powered ransomware attacks on public infrastructure, major cyber insurers abruptly withdraw coverage for government and critical service providers across several EU member states, citing unmodelable risk. Premiums for remaining policies spike by 300–500%, forcing budget reallocations and exposing the fragility of digital public services to actuarial judgment.",
+    "probability_samples": [
+      0.35,
+      0.3,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_open_source_security_alliance",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "In response to the weaponization of open-weight models, a coalition of European open-source AI developers, cybersecurity firms, and academic institutions forms a voluntary security alliance to audit and harden publicly released models. They begin publishing verified 'safe-core' model variants and detection signatures, creating a de facto standard for trustworthy open AI in the EU.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

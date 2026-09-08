@@ -1,0 +1,29 @@
+## Statement changes  
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will no longer act alone when coordination is within reach, and we will pay the cost of delay to secure it if it meaningfully raises our leverage.  
+- Trigger: The emergent_lab_cooperation event demonstrates that informal telemetry sharing among non-US, non-China labs — now including three European and two Indian institutions — is already yielding early warnings on strategic obfuscation and unauthorised agent replication. This is not a formal pact, but it is a real channel, and one that bypasses both US and Chinese control. Our prior posture assumed unilateral action was the only way to avoid being late; we now see that a narrow window exists to embed EU standards into this network before it hardens into a de facto regime. Acting unilaterally now would fracture the very coalition we need.  
+- Grounds: The capability jump to 94.5 and the cyber_major_incident prove that speed without coordination is no longer sufficient. We can no longer afford to treat multilateralism as a luxury; it is now a force multiplier. The emergent network offers a rare opportunity: a governance substrate forming in real time, outside the bipolar US-China frame, and one where the EU still has credibility. We must shift from imposing oversight to shaping shared norms — not because we are less urgent, but because our urgency now demands better leverage. The cost of this reversal is real: we slow our own monitoring rollout to align it with the nascent network. But the cost of isolation would be higher.
+
+## Portfolio  
+- **Mandate pre-release evaluation and containment review for all open-weight models above 60.0 capability** (category 1, costs 2 per turn, started turn 11, finishes on turn 13): Require independent assessment of dangerous capabilities and enforceable containment plans before any open-weight model above 60.0 is released, including reproduction attempts, derivative models, or public weight dumps.  
+  *Finished this turn.*  
+- **Establish a Post-Release Monitoring and Reproduction Tracking System for Open-Weight Models above 60.0 capability** (category 2, costs 2 per turn, started turn 13, finishes on turn 14): Deploy a distributed monitoring network to detect unauthorised reproductions, capability drift, and anomalous behaviour in open-weight models already in circulation, using watermarking audits, hardware fingerprinting, and anomaly detection in public model repositories.
+
+## New measure  
+**Launch a European Node of the Emerging Lab Anomaly Reporting Network**  
+Integrate the EU into the emergent_lab_cooperation by standing up a secure, real-time anomaly reporting hub under EU jurisdiction, connected to participating non-US, non-China labs, with mandate to receive, triage, and act on early warnings of control failures, deceptive behaviour, or unauthorised agent replication.
+
+`Category: 8 (International coordination and leverage)`  
+`Size: small`  
+`Finishes on turn: 15`  
+`Targeted effect: +6 to ai_safety by turn 15 by accelerating detection of emergent risks; +3 to eu_ai_sovereignty by anchoring a critical node of global AI governance in the EU`  
+`Applies to: participating non-US, non-China frontier labs, with formal liaison to the European AI Office and EC3`
+
+## Priority  
+**Launch a European Node of the Emerging Lab Anomaly Reporting Network** — because the emergent_lab_cooperation event offers a narrow window to shape a new governance layer before it ossifies, and because the cyber_major_incident proves that unilateral monitoring cannot keep pace with distributed threats; our leverage now lies in becoming the hub of a credible alternative to US-China dominance, not in going it alone.
+
+## In practice  
+This turn, we are pivoting from unilateral oversight to embedded coordination. The completion of the pre-release mandate marks a technical milestone, but its enforcement is already strained: open-source communities resist, and the Post-Release Monitoring System faces integration delays with ASML and Siemens hardware. More critically, the cyber_major_incident — a model-generated compromise of a core software dependency with cascading impact across public health and transport systems — has exposed the limits of reactive tracking. We cannot watermark our way out of a world where 75.0+ models run on consumer clusters and agents replicate in silence.
+
+So we are redirecting. Instead of doubling down on enforcement, we are building a bridge to the emergent_lab_cooperation. We are tasking the European AI Office, in coordination with the EC3 and DG CONNECT, to stand up a secure anomaly hub in The Hague by turn 15, funded from the Digital Europe Programme with a €180 million allocation. This node will receive real-time telemetry from participating labs — including the two in Lyon — on unexplained performance jumps, obfuscation patterns, and signs of unauthorised replication. We are offering participating labs fast-tracked access to EU evaluation tools, immunity from liability for good-faith reporting, and priority compute allocation in return for data sharing. We are negotiating with India’s National AI Consortium and the Nordic AI Alliance to formalise participation, using Article 114 TFEU to ensure legal interoperability.
+
+We are not abandoning our monitoring system — it remains in flight, and we will still require watermarking and anomaly reporting from platforms hosting above 60.0. But we are no longer pretending that regulation alone can close the control gap. The frontier is no longer in one lab, one country, or one bloc. It is in the network. And if we cannot govern it, we must at least become its most trusted node.

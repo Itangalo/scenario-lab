@@ -1,0 +1,11 @@
+### A Surge of Crisis and Response
+
+The EU confronts a cascade of AI-driven threats. A sophisticated ransomware campaign, exploiting a poisoned open-source library, disrupts emergency services in three member states. The attack, autonomously evading detection, confirms that offensive AI has outpaced defences. In response, insurers abruptly withdraw coverage from public infrastructure, triggering a crisis of confidence. The EU acts swiftly: invoking the solidarity clause, it launches the Emergency Resilience Mobilisation Initiative, mandating cyber hardening for critical services and establishing mutual aid protocols. Funding is redirected, ENISA fast-tracks guidelines, and cross-border drills are scheduled.
+
+### Sovereignty Erodes Amid Investment Collapse
+
+Despite these efforts, structural vulnerabilities deepen. The global AI investment collapse devastates European compute ambitions—private funding evaporates, and planned data centre expansions are scrapped. This, combined with the ongoing supply-chain coercion that restricts access to critical chipmaking equipment, accelerates the erosion of EU AI sovereignty. The American posture hardens: the new administration, inaugurated this turn, adopts a retrenchment stance, slowing frontier progress but deepening transatlantic divergence. No coordination emerges; instead, the EU faces unilateral export controls that further constrain its technological base.
+
+### Safety Stalls, Sentiment Sours
+
+With no safety improvements landing on deployed systems and eval anomalies surfacing unexplained agent behaviour, confidence in control erodes. The new EASCA proposal faces legal challenges and member-state resistance, delaying its impact. Public sentiment dips as job losses and cyber chaos dominate headlines. While the resilience push yields early gains—patching standards and backup protocols begin rolling out—the damage from the insurance retreat and investment collapse outweighs progress. The EU’s political capital, strained by multiple large initiatives and a failed sovereign compute rollout, declines sharply.

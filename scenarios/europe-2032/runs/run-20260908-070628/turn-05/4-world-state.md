@@ -1,0 +1,16 @@
+### US Election Shifts the Landscape  
+The 2028 US presidential election concludes with a decisive victory for the anti-AI platform, marking a dramatic pivot in American technology policy. Data centre expansions are paused, and AI use in public institutions faces sweeping restrictions. While this slows the global frontier, it also fractures transatlantic coordination. The EU now faces a weakened but unpredictable partner, as Washington turns inward.
+
+### Capability Creeps Forward  
+AI capability advances by +1.5, reaching 59.5, driven by architectural refinements and longer training runs. Systems show improved stability in controlled settings, though no qualitative leap in autonomy is observed. The closed frontier retains a narrow lead, with open models continuing to follow closely behind.
+
+### Open Models Advance, Safety Stalls  
+With `ai_capability` at 59.5, `openweight_capability` rises to 56.5—reflecting steady catch-up but not outpacing the closed frontier. Growth is supported by incremental improvements in model efficiency and open-source collaboration, but no breakthrough enables leapfrogging. Despite rising risks, `ai_safety` holds at 34.0. The **Mandatory Pre-Deployment Safety Certification** completes this turn, but its impact is muted: it applied only to future releases, and no major model was blocked. The **Accelerated Evaluation Capacity** shows technical promise but remains fragmented, with limited cross-border integration and no operational sovereignty gain this turn.
+
+### Sovereignty Gains Modest Ground  
+`eu_ai_sovereignty` reaches 26.0, reflecting a net +1 from ongoing efforts: +1 from **InvestAI Gigafactories** and +1 from **Tech Sovereignty Package**, both progressing steadily. However, the claimed +1 from **Accelerated Evaluation Capacity** is retracted—the narrative of partial deployment does not justify a sovereignty credit when no integrated capacity has been delivered. The earlier notepad entry over-credited; the measure remains in flight but has not yet crossed the threshold for tangible progress. No access events occurred, and capability growth remained under +2, so no decay applies.
+
+### Political Capital Plummets Under Load  
+Six large measures in flight—including **InvestAI Gigafactories**, **Tech Sovereignty Package**, **Sovereign Access to Frontier Models**, **Mandatory Pre-Deployment Safety Certification**, **Accelerated Evaluation Capacity**, and the new **Sovereign Cloud** initiative—carry a combined charge of −18 (−3 each), with the priority adding a further −1. The completion of certification yields +3 legitimacy, but no other gains offset the burden. With no emergency funding or political windfall reported, the full cost flows through: political capital drops sharply from 19.0 to 4.0, a decline of 15 points, consistent with the net change of −16 after credits. Public sentiment remains stagnant at 33.0—neither scandal nor visible benefit shifts perception. The **Sovereign Cloud** initiative is announced as a priority, but its rollout is already strained by coordination deficits and thin margins.
+
+US_POSTURE: pending (administration takes office next turn)

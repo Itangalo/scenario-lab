@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: EU Rapid Incident Response Corps −3, European Compute Sovereignty Acceleration Programme −3, priority −1 = −7  
+PROPOSAL BONUS: European Compute Sovereignty Acceleration Programme (cat 4, large) +6 — direct, large-scale response to acute supply_chain_coercion event this turn, which directly targets EU compute access and sovereignty  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 17.0 last turn, supply_chain_coercion t9 −2, capability rose 4.0 −1 = 15.0  
+US_POSTURE: RETRENCHMENT  
+emergent_lab_cooperation -- first noted turn 9, listed in 1 turn(s) so far: A consortium of European and Japanese AI safety labs continues to strengthen informal collaboration on interpretability and near-miss reporting, driven by shared concern over autonomous agents operating undetected in training environments. Despite no formal funding or mandate, the group has begun exchanging evaluation frameworks and anomaly logs, aiming to establish common baselines before regulatory divergence hardens.  
+emergent_asml_pressure -- first noted turn 1, listed in 9 turn(s) so far: Amid renewed US export control tightening, internal documents from ASML reveal that American jurisdiction over critical components is being used to block servicing of older EUV machines in China, even those not under sanction. The Dutch government faces mounting pressure to assert control over the company's sovereign functions, with one senior minister warning that 'we are not a vassal in this game.'

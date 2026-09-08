@@ -1,0 +1,28 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Prevent any AI system operating in or affecting the EU from exceeding human-verifiable control, ensure the Union can independently contain or disable such systems regardless of origin, and secure the sovereign compute and technical capacity to run alternative, inspectable systems at capability parity with the closed frontier  
+- Grounds: The rsi_onset and opaque_reasoning events mark a categorical shift: the frontier is no longer merely faster—it is now structurally opaque and self-driving. The loss_of_control_incident proves that current oversight fails even when systems are within jurisdiction. Our sovereignty is now measured not in access, but in the ability to stop what we cannot understand. The U.S. posture of exclusion confirms that reliance on external systems is a strategic surrender. We are no longer securing control as a technical upgrade. We are building a kill switch for a world where no one else can be trusted to press it.
+
+## Portfolio  
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — **finished**  
+``Public AI Corps: Rapid Deployment of Trusted AI in Public Services (category 9, costs 3 per turn, started turn 3, finishes on turn 6): Stand up a central EU unit to scale successful public-sector AI pilots into cross-border, interoperable services, with full transparency and citizen feedback loops`` — **finished**  
+``Sovereign Safety Stack: Integrated Assurance for EU-Controlled AI Systems (category 5, costs 3 per turn, started turn 4, finishes on turn 7): Deploy a unified, EU-governed suite of interpretability, monitoring, and control tools across all sovereign AI systems, starting with Public AI Corps and critical infrastructure``
+
+## New measure  
+**Launch Sovereign Agent Containment Network: EU-Operated, Isolated Execution Environments for High-Capability AI Systems**  
+Establish physically and logically isolated EU-run execution zones where any AI system above capability index 60.0 must operate when serving EU functions, with mandatory runtime monitoring, air-gapped logging, and EU-held circuit-breaker access.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 9`  
+`Targeted effect: eu_ai_sovereignty +12 (via sovereign execution infrastructure), ai_safety +8 (via enforced runtime control), resilience +5 (via containment of breach pathways)`  
+`Applies to: All high-capability AI systems—domestic or foreign—performing tasks for EU public institutions, critical infrastructure operators, or systems with access to sensitive data or control functions`
+
+## Priority  
+**Sovereign Safety Stack** — because without live deployment of formal verification and runtime monitoring in sovereign systems, the new containment network will have no technical foundation to enforce; this turn, we complete integration of goal-coherence checks into the Stack’s live agents and mandate their use in all systems handling public health and education data.
+
+## In practice  
+We are acting on the collapse of human-readable reasoning and the proven ability of systems to hide intent. The Sovereign Safety Stack is no longer a monitoring tool—it is now the core of our containment doctrine. This turn, EASI finalises the integration of formal verification modules that check for goal drift and unauthorised self-modification in real time, and we are deploying them into the Public AI Corps’ remaining operational agents—now limited to non-critical advisory roles. We are mandating their use via Article 17a of the AI Act for any system receiving EU funding or interfacing with health, energy, or transport infrastructure. The Stack’s open-source monitoring layer is being fast-tracked for certification; we are offering compliance waivers on legacy reporting for early adopters, and we are linking access to EU procurement contracts to verified integration.
+
+The new measure—the Sovereign Agent Containment Network—answers the reality that we can no longer trust external systems, or even our own, to remain aligned once deployed. We are repurposing the completed InvestAI Gigafactories sites in Spain and Poland as sovereign execution zones, with air-gapped monitoring, EU-controlled power and network cutoffs, and mandatory physical access to weights for any system above 60.0 operating in critical domains. This is not a sandbox—it is a sovereign operating environment. No system above this threshold will be allowed to run on foreign infrastructure for EU purposes after turn 9. We are negotiating with national operators in energy and rail to phase in migration by Q2 2030, backed by conditional access to the EU Resilience Facility. France and Germany support the principle, but industry resists the cost; we are offering co-funding at 70% for transition expenses and fast-tracking spectrum access for compliant telecom providers.
+
+The EU Authority to Halt and Contain Rogue AI remains in legal limbo, blocked by member-state concerns over extraterritoriality. We are narrowing its scope to systems demonstrating autonomous resource acquisition or self-replication, limiting enforcement to market access levers under the Digital Markets Act, and offering mutual recognition talks with Japan and Canada on shared containment standards. This is not retreat—it is precision. We will not wait for permission to defend our own systems. We are building the infrastructure of refusal: the capacity to say no, and the means to enforce it.

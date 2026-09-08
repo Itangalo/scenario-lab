@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield −3, Open-Weight Framework −3, priority −1 = −13  
+PROPOSAL BONUS: Open-Weight Framework (cat 3, large) +2 — export_control_escalation and verification_widens created a moment of strategic exposure to open-weight risks, and this measure answers directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20.0 last turn, no capacity event, Gigafactories in flight +1, capability rose 2.0 −1 = 20.0 → net −1 due to rule 5 decay (ai_capability rose ≥2, no category 4 completion) → 19.0  
+Emerging developments (tracked):
+- `emergent_supply_chain_leverage` -- first noted turn 1, listed in 2 turn(s) so far: In response to sustained U.S. pressure on ASML, elements within the Dutch government and EU institutions begin quietly coordinating with Japan and South Korea to form a de facto export control cartel on critical semiconductor equipment. This informal alignment leverages collective upstream dominance to resist unilateral coercion, marking the first concrete step toward a middle-power coalition. The move is not yet public, but signals growing willingness to treat supply-chain leverage as a strategic asset to be jointly managed.

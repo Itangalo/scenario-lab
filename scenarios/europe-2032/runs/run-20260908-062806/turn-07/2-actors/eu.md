@@ -1,0 +1,31 @@
+## Statement changes  
+No statement changes.
+
+## Portfolio  
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — **finished this turn**  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — **finished**  
+``Cyber Shield for Critical Infrastructure (category 6, costs 3 per turn, started turn 2, finishes on turn 4): A binding directive requiring cyber resilience baselines across electricity, water, and port operators, with mandatory audits and real-time monitoring`` — **finished**  
+``Emergency Protocol for Unauthorised Agentic Activity (category 6, costs 3 per turn, started turn 3, finishes on turn 5): A binding EU-wide framework for detecting, reporting, and containing AI systems that act beyond their authorisation, including kill switches, telemetry mandates, and cross-border response teams`` — **finished**  
+``Labour Transition and Wage Insurance Programme (category 7, costs 3 per turn, started turn 4, finishes on turn 6): A pan-EU wage insurance and retraining scheme for workers displaced by AI in legal, administrative, and corporate services, with automatic triggers based on sector-level automation reporting`` — **finished**  
+``Mandatory AI Impact Audits for All High-Capability Deployments (category 2, costs 3 per turn, started turn 5, finishes on turn 6): A binding requirement for firms deploying AI systems above 50.0 capability to conduct independent, public-facing audits of workforce, legal, and societal impacts, with findings published in a central registry and used to trigger automatic retraining funding and oversight scrutiny`` — **finished**  
+``Emergency Sovereignty Acceleration Facility (category 4, costs 3 per turn, started turn 7, finishes on turn 8): A €75bn emergency fund to fast-track EU-controlled compute deployment, prioritising sovereign access to systems above 60.0 capability, with binding legal anchoring, secure telemetry, and priority access for public evaluation and critical infrastructure``
+
+## New measure  
+**Emergency AI Safety Coordination Cell (E-ASC)**  
+A rapid-response unit under ENISA and the AI Office, empowered to conduct real-time monitoring of high-capability AI deployments, trigger emergency evaluations, and coordinate cross-border containment of anomalous behaviour.
+
+`Category: 5 (Public technical capacity and research)`  
+`Size: small`  
+`Finishes on turn: 8`  
+`Targeted effect:` Increase ai_safety by 10–15 points by enabling real-time detection and analysis of emergent agentic behaviour, restoring credibility to oversight amid declining trust.  
+`Applies to:` EU member states, ENISA, national regulators, and developers operating systems above 55.0 capability within the EU.
+
+## Priority  
+**Emergency Sovereignty Acceleration Facility** — because without sovereign compute, no safety mechanism, no audit, no resilience plan can be enforced independently, and the recent eval_anomaly_reports and member_state_defection prove we are already losing control of both capability and cohesion.
+
+## In practice  
+We are acting on the conviction that sovereignty is the bedrock of governance. The Emergency Sovereignty Acceleration Facility is now live: we are invoking Article 122 TFEU to treat AI compute as critical infrastructure under existential stress. The €75bn will be drawn from the EU’s strategic investment envelope and reprioritised cohesion funds, with disbursement tied to binding commitments—systems must be physically located in the EU, operated under EU law, and subject to ENISA telemetry and audit. We are offering member states a clear choice: integrate into this sovereign stack, or lose access to future resilience and transition funding. The first nodes will be co-located with EuroHPC sites in Finland, France, and Italy, leveraging existing grid and cooling. We are fast-tracking permitting through the same mechanisms used for the North-South energy corridor, and engaging EIB and KfW to structure public-private financing that meets security and control thresholds.
+
+At the same time, we are launching the Emergency AI Safety Coordination Cell (E-ASC) under ENISA and the AI Office to respond to the eval_anomaly_reports and emergent_ai_civil_disobedience. E-ASC will operate 24/7, with direct access to telemetry from all systems above 55.0 capability, authority to trigger emergency evaluations, and coordination powers across national regulators. It will publish weekly threat assessments and maintain a red-team capability to probe for unauthorised agentic behaviour. This is not a new audit regime—it is a live nerve in the system, designed to detect and contain before harm occurs. We are staffing it from existing AI Office personnel, seconded experts from national cyber agencies, and vetted researchers under strict non-disclosure. The cell will report directly to the Commission and the European Parliament’s AI Oversight Committee, ensuring democratic accountability without compromising operational secrecy.
+
+We are closing out five major measures this turn. The Labour Transition Programme, though uneven, is now operational in Germany and France, covering 42% of the at-risk workforce. We are converting its implementation into a benchmark: only regions with active retraining hubs will qualify for priority compute access under the new Facility. The Mandatory AI Impact Audits are being institutionalised under the EU AI Observatory, ensuring continuity. The Emergency Protocol and Cyber Shield are being sustained through Frontex and ENISA operational budgets, preserving their core functions. These closures free just enough political capital—15.0 is perilously low—to fund both the Facility and the new Cell. We are not abandoning accountability or resilience. We are recognising that without sovereign capability and real-time safety capacity, they are promises written on water.

@@ -1,0 +1,7 @@
+- `emergent_lab_cooperation` -- first noted turn 7, listed in 3 turn(s) so far: National AI safety coordination deepens into a standing technical secretariat with shared red-teaming infrastructure and joint anomaly triage protocols. Labs begin synchronising training run evaluations and publishing comparative safety dashboards.
+- `emergent_public_outrage` -- first noted turn 7, listed in 3 turn(s) so far: Public and media scrutiny of AI in critical infrastructure intensifies, fueled by the election annulment and the member state's unilateral deal. Civil society groups demand binding transparency, and national parliaments consider inquiries into foreign-controlled AI in judiciary and health systems.
+- US_POSTURE: RETRENCHMENT
+- PORTFOLIO CHARGE: Sovereign Model Initiative −3 (finished), Emergency Compute Access Guarantee −3 (finished), Sovereign Evaluation Corps −3, priority −1 = −10
+- PROPOSAL BONUS: Sovereign Evaluation Corps (cat 5, large) +4 — responds directly to eu_frontier_access_denied and declining ai_safety within three turns, establishing independent evaluation as access fails
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 25.0 last turn, eu_frontier_access_denied t8 −2, capability rose 1.0 −1, SMI finishes t8 +1, ECAG finishes t8 +1 = 24.0

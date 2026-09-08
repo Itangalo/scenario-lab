@@ -1,0 +1,50 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_ai_worker_unions",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "AI engineers and technical safety researchers, increasingly alienated by the erosion of oversight and the deployment of systems they consider unsafe, begin forming transnational professional associations focused on ethical development and whistleblower protection. These groups coordinate via encrypted platforms and start issuing joint statements on model releases and safety practices, gaining traction in media and policy circles.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_regional_sovereignty_pact",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "Diplomatic momentum around the nascent compute-sharing pact between France, Germany, the Nordics, Norway, and Switzerland crosses a quiet threshold: working groups begin drafting mutual access protocols and contingency plans for joint compute mobilisation during crises. While not yet formalised, the framework starts functioning as a de facto alliance, with shared audits and joint threat modelling exercises initiated.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

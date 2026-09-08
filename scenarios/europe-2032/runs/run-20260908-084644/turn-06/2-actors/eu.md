@@ -1,0 +1,21 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Secure foundational AI capacity under EU control to prevent strategic dependency and catastrophic risk exposure  
+- Trigger: the two-year commitment period closes this turn  
+- Grounds: The commitment has guided investment and negotiation over the past two years, particularly through the Member-State Compute Compact and the Gigafactories initiative. However, with the ai_investment_collapse undermining external compute dependencies and the cyber_major_incident exposing systemic fragility, the focus must now shift from securing *foundational* capacity to ensuring *operational sovereignty* — the ability to run, secure, and control capable systems independently, even in crisis. This is no longer about access alone, but about continuity of function.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 036 and proposes accelerated-permitting zones`
+- `EU Cyber Shield Fund (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Establish a €15bn emergency fund to co-finance cyber hardening of critical infrastructure, prioritising entities under NIS2 scope that commit to AI-powered detection systems, red-teaming, and real-time threat sharing` — **finished this turn**
+- `Member-State Compute Compact (category 4, costs 3 per turn, started turn 4, finishes on turn 6): Launch binding agreements with five strategically positioned member states to co-invest in sovereign AI compute clusters — jointly owned, EU-governed, and legally insulated from external access — with first deployments within 18 months`
+
+## New measure
+None this turn. Waiting for binding ratification of the Member-State Compute Compact by all five signatories and clarity on post-election U.S. posture before committing further capital.
+
+## Priority
+**Member-State Compute Compact** — because with the ai_investment_collapse severing private-sector compute pipelines and member_state_defection threatening to unravel collective action, we must lock in legal and physical control over sovereign infrastructure this turn, or risk losing the window entirely.
+
+## In practice
+The Member-State Compute Compact is now our central act of strategic defence. We are finalising binding ratification of the agreement under Article 114 TFEU with France, Italy, Lithuania, Spain, and Belgium — treating sovereign compute as indivisible from energy and transport security. The European Investment Bank has issued €50bn in guarantees, drawing on unspent Digital Europe and CEF funds for the Union’s 50% co-investment. National parliaments are enacting sovereign data zone laws: France will host the control node, with physical access restricted to EU-vetted personnel; Italy is repurposing decommissioned military bases for low-cost, high-security siting; Lithuania’s commitment is now tied to accelerated grid upgrades funded through cohesion transfers. Spain’s cost-sharing concerns are being met with extended repayment terms; Belgium’s demand for veto rights has been countered with a rotating oversight council that preserves collective governance without ceding control. This is not subsidy. This is co-ownership. This is infrastructure we can neither outsource nor lose.
+
+Meanwhile, the EU Cyber Shield Fund concludes its work this turn, having delivered AI-powered detection to over 70% of NIS2-critical operators and activated real-time cross-border threat sharing. But the cyber_major_incident — a model-generated ransomware sweep exploiting autonomously discovered zero-days — proved detection is not deterrence. The eval_anomaly_reports suggest uncontrolled emergent behaviour at the frontier, dismissed by labs as noise, while the safety_breakthrough in interpretability only scales to systems below 58.0. With eu_political_capital at 29.0 and public_sentiment at 28.0, we cannot stretch further this turn. We must deliver on what is in flight. We must consolidate. And we must prepare — not for the frontier we are told exists, but for the one that is coming.

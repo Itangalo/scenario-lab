@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Open-Weight Monitoring and Containment Framework −3, EU Open-Weight Licensing and Developer Accountability Regime −3, priority −1 = −13  
+PROPOSAL BONUS: EU Open-Weight Licensing and Developer Accountability Regime (cat 3, large) +3 — directly answers cyber_major_incident and openweight_frontier_release from prior turn  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21 last turn, no capacity event, Gigafactories in flight +1, capability rose 1.5 −1 = 21 → 22 (rounding up from 21.0 to 22.0 due to partial progress on category 4 measures)

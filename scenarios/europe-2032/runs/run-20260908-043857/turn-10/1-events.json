@@ -1,0 +1,48 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.13,
+      0.18,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_global_brain_drain",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "The exodus of top AI researchers and engineers from leading labs continues, now accelerating as neutral jurisdictions establish formal 'autonomy enclaves' with legal firewalls against foreign interference. These hubs attract talent by guaranteeing control over training runs and model deployment, fragmenting coordination but also dispersing dangerous capabilities more widely. The EU struggles to integrate defectors while managing security risks.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

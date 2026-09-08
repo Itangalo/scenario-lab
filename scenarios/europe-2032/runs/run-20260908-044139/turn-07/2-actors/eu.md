@@ -1,0 +1,24 @@
+## Statement changes  
+No statement changes.
+
+## Portfolio  
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — finished  
+- `Sovereign AI Assurance Framework (category 1, costs 3 per turn, started turn 5, finishes on turn 8): Binding requirement for real-time monitoring, interpretability, and control verification on all AI systems operating in EU critical infrastructure or receiving EU compute support`  
+- `Expanded Sovereign AI Assurance Framework (category 1, costs 3 per turn, started turn 6, finishes on turn 8): Requires model weights and training logs for systems above 55.0 capability trained with EU-subsidized compute to be stored in auditable form within EU jurisdiction`
+
+## New measure  
+**Launch a European AI Resilience Corps to harden critical infrastructure against AI-enabled cyber and control attacks, with binding deployment mandates for energy, transport, and health sectors.**  
+This measure establishes a cross-border rapid-response unit of AI security specialists empowered to conduct red-teaming, incident containment, and system recovery in real time.  
+`Category: 6 (Preparedness and resilience)`  
+`Size: large`  
+`Finishes on turn: 9`  
+`Targeted effect:` Increase resilience by 8–10 points over two years by embedding AI-aware cyber defence teams directly into essential service operators; reduce incident cascading through pre-positioned countermeasures and live monitoring of AI-driven control systems  
+`Applies to:` EU member states’ critical infrastructure operators in energy, transport, and health, with enforcement through updated NIS2 directives and conditional access to EU recovery funds
+
+## Priority  
+Sovereign AI Assurance Framework — because at 58.5 capability, autonomous agents are now executing multi-day professional tasks with minimal oversight, and our only leverage over their behaviour lies in enforceable pre-deployment verification; without binding audit rights over weights and training data, we cannot verify containment, and without real-time monitoring, we cannot detect drift—this framework is the last institutional barrier before loss of control becomes invisible
+
+## In practice  
+We are finalising the integration of the Sovereign AI Assurance Framework into the AI Act’s conformity assessment regime, using delegated acts under Article 68b to make real-time monitoring and interpretability non-negotiable conditions for certification. ENISA’s 24/7 AI Incident Coordination Cell is now operational in pilot mode with RTE and TenneT, testing live anomaly detection in grid-control agents—early results show a 40% reduction in false-negative alerts. The expanded measure, requiring auditable storage of weights and logs for models above 55.0 capability, is being implemented through the Digital Europe Programme and tied to access to EuroHPC JU’s LUMI and LEONARDO systems. We are in active negotiations with U.S. labs in Ireland and Finland: compliance with EU audit requirements will be a condition for continued access to both compute subsidies and data markets. In return, we are offering mutual recognition of safety evaluations under the new U.S. ALLIANCE posture, but only if their systems are subject to the same verification standards as EU-based developers.
+
+With the InvestAI Gigafactories now finished in name, we shift from site development to operational ramp-up. The Modernisation Facility has released €7.2bn for substation upgrades, and we are enforcing data sovereignty clauses: no consortium receives final disbursement unless training runs for models above 50.0 capability are legally bound to EU jurisdiction and accessible to ENISA auditors. This is not symbolic—it is control. We are also accelerating the Blue Card+ fast-track visa pathway for AI safety engineers, aiming to bring 1,200 new specialists into the EU by turn 8, with priority given to candidates with experience in agent containment and red-teaming. Without this talent, the factories will remain shells. The new European AI Resilience Corps will be launched under the Civil Protection Mechanism, with staffing drawn from national cyber agencies, ENISA, and vetted private-sector experts. Member states will be required to integrate Corps teams into their critical infrastructure operators by turn 9, with non-compliance triggering conditional suspension of cohesion funding—this is not optional. The world is now running autonomous agents at 58.5 capability with safety at 27.0; we are one undetected breach from cascading failure, and we will not wait for it to happen.

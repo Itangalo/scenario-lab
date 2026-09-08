@@ -1,0 +1,9 @@
+### The Blind Spot Deepens
+
+Despite signs of a plateau in commercial AI development, the frontier’s hidden momentum persists. Global capability remains at 70.0, sustained by embedded agent coordination now standard in offensive cyber stacks. With the **opaque_reasoning** event, the best systems no longer produce human-readable logic chains, collapsing interpretability-based oversight. No replacement safeguards are fielded, and `ai_safety` plummets to 4.0. The **eu_frontier_access_denied** event cuts EU hospitals and agencies off from the most capable models overnight, exposing total dependence. Public trust holds at 20.0, frozen in distrust.
+
+### Sovereign Compute, Sovereign Blindness
+
+The EU activates its hardened exaflop nodes in Grenoble, Pilsen, and Oulu under the Crisis Compute initiative. The infrastructure is live—but blind. The original Minimal Sovereign Stack, repurposed mid-flight, finishes on schedule, delivering secure compute but no monitoring. The pivot to a **Sovereign Threat Detection Layer** begins, aiming to deploy real-time agent detection using methods from the transnational scientists’ coalition. Yet integration is fragile, EDPB certification remains distant, and non-host states protest the Union’s unilateral posture.
+
+With `eu_political_capital` at 2.0, launching a new small measure (-2) and naming it priority (-1) should be impossible. But the **proposal bonus** for directly answering **eu_frontier_access_denied** and **opaque_reasoning**—two severe, concurrent shocks—grants +4. Political capital rises to 3.0, just enough to survive the charge. Still, resilience dips to 55.0 as capability advances without protective measures. Sovereignty holds at 10.0: no gain from compute activation (already counted), no new access secured, and capability rise imposes -1, offset by no event term.

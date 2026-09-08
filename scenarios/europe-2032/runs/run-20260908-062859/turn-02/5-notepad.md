@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3, Labour Transition Readiness Initiative −3, priority −1 = −13  
+PROPOSAL BONUS: Labour Transition Readiness Initiative (cat 7, large) +3 — emergent_labour_displacement_wave landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21.0 last turn, no capacity event, InvestAI Gigafactories in flight +0, capability rose 5.0 −1 = 19.0  
+- `emergent_labour_displacement_wave` -- first noted turn 1, listed in 2 turn(s) so far: Mid-level technical and administrative roles in European finance, legal support, and public administration begin to be visibly displaced by AI agents capable of handling multi-step workflows, triggering early warnings in employment agencies and regional development funds. The trend is not yet systemic, but it becomes a live political topic in several member states.
+- `emergent_asml_pressure_backlash` -- first noted turn 1, listed in 2 turn(s) so far: Sustained U.S. pressure on ASML triggers a political backlash in the Netherlands and within the European Parliament, with growing calls to assert EU control over strategic semiconductor supply chain assets. This leads to emergency consultations on industrial sovereignty, framing export decisions as a matter of collective security rather than bilateral compliance.

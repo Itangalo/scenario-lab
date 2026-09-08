@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 41.0 to 50.0 (a rise of 9.0 points), which is plausible only if justified by compounding growth from `rsi_onset` or incremental progress. However, no such mechanism is narrated. The narrative attributes the surge to \"an open-weight release\" and \"rapidly spreading unrecallable capability\", but this does not justify a near-doubling of progress in one half-year turn without reference to accumulated capability or prior groundwork. Such a jump violates the principle that capability metrics grow incrementally unless driven by a named, active compounding mechanism.\n- Modelling choice 5 violated: The EU introduced a new measure (\"sovereign access to frontier model weights\") while already having active measures (InvestAI Gigafactories, Tech sovereignty package) and a named priority (implied by the −1 penalty in the notepad). The notepad shows three active measures and a priority, exceeding the limit of one new measure per turn and one named priority. The output introduces a new Category 4 measure without retiring or consolidating any existing one, resulting in more than one active measure being advanced, which is invalid.\n- Invariant 9 violated: `openweight_capability` increased by 9.0 points in one turn, which is within the 25-point cap and thus not a violation of the hard bound. However, this is noted to ensure no misinterpretation — while the point change alone does not violate Invariant 9, the lack of justification for such growth violates Invariant 2's accumulation principle."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

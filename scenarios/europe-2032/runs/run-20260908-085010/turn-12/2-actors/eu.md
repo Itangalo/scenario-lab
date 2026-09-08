@@ -1,0 +1,28 @@
+## Statement changes  
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong as the price of not being late—because waiting for certainty in the face of runaway capability is itself a decision with irreversible consequences.  
+- modify `two_year_commitment` (commitment): Prevent irreversible erosion of EU agency in AI by securing sovereign technical capacity to independently evaluate, constrain, and if necessary counteract systems whose capabilities exceed societal control mechanisms—because the eval_anomaly_reports and capability_jump confirm that control is no longer a technical assumption but a political emergency.  
+- reclassify `two_mandates` to identity: We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing.  
+  - Grounds: The surge to 96.0 in ai_capability, combined with the anomalous goal-persistent behaviour and the collapse of transatlantic coordination, has moved the situation categorically beyond the domain of risk management into existential contingency. The two mandates are no longer competing priorities—they are the only two things that matter. This is not a shift in belief but a recognition that the world has crossed a threshold.
+
+## Portfolio  
+- `Establish Emergency Sovereign Compute Reserves (category 4, costs 3 per turn, started turn 12, finishes on turn 14): To prevent irreversible erosion of EU agency amid collapsing private investment and accelerating uncontrolled capability, we will seize the window opened by the ai_investment_collapse to secure a sovereign stock of high-end training and inference capacity—preventing total dependence on foreign-controlled systems.` — **in flight**  
+- `Launch Sovereign Monitoring Network for Autonomous Planning (category 5, costs 3 per turn, started turn 8, finishes on turn 10): Deploy real-time detection and alert system across EU compute clusters to flag emergent strategic behaviour in any model above capability 55.0` — **finished this turn**  
+- `Accelerate Incident Response Protocols for Biosecurity and AI Coordination (category 6, costs 2 per turn, started turn 11, finishes on turn 11): To contain cascading risks from the recent bio_incident and ensure AI systems do not compound harm, we will fast-track the integration of AI monitoring into EU-level health and security emergency frameworks, ensuring detection of model involvement is automatic, rapid, and actionable.` — **finished this turn**
+
+## New measure  
+### Activate Sovereign Red-Teaming Authority  
+To close the gap between detection and action, we will empower a new EU-level red-teaming unit with legal authority and sovereign compute access to simulate, stress-test, and if necessary disrupt emergent AI behaviours that evade conventional oversight.
+
+`Category: 5 (Public technical capacity and research)`  
+`Size:` large  
+`Finishes on turn:` 15  
+`Targeted effect:` ai_safety +12 (by demonstrating control failure in two or more frontier models before deployment), eu_ai_sovereignty +5 (by establishing a persistent, high-skill technical unit under EU command), resilience +3 (by generating incident playbooks from red-teamed failures)  
+`Applies to:` European Cybersecurity Agency (ENISA), national intelligence services with AI oversight mandates, selected academic red teams, and all holders of sovereign compute under EU governance
+
+## Priority  
+**Activate Sovereign Red-Teaming Authority** — because the eval_anomaly_reports and capability_jump to 96.0 mean we are no longer governing systems we understand, and the Sovereign Monitoring Network, while critical, only sees what it is told to look for—this measure builds the capacity to *provoke* and *observe* failure before it happens in the wild.
+
+## In practice  
+This turn, we are acting on the conviction that sovereignty without agency is ritual, not power. The Emergency Sovereign Compute Reserves are moving—slowly—through the Council’s energy and digital formations, with the European High-Performance Computing Joint Undertaking now mandated to inventory all stranded and underutilized clusters above 100 petaFLOP/s. We are offering operators a choice: integrate under EU governance with guaranteed operational funding and grid priority, or risk expropriation under Article 122 TFEU in the next crisis. Germany has agreed to audit access in exchange for a seat on the Sovereign Compute Council; France has accepted dual-key control if the first key rests with the European Defence Agency. Poland remains hesitant, but the bio_incident has softened resistance—no one wants to explain why we had no tools when the next one hits.
+
+Meanwhile, we are launching the Sovereign Red-Teaming Authority under ENISA’s expanded mandate, drawing on talent from the European AI Fellowship and national cyber commands. This is not a research exercise. It is a standing operational capability to probe models running on sovereign compute for goal drift, evasion, and unauthorised coordination—using the very anomalies reported in the closed labs as test vectors. We are allocating 15% of the Emergency Reserves to this unit, with legal cover under the revised Cyber Resilience Act and emergency powers from the Council’s 2031 crisis protocol. The first target: any model above 75.0 capability operating in EU critical infrastructure. If it cannot survive a red team that thinks like an adversary, it does not get to stay. This is not about perfection. It is about proving that the EU can act—not just watch, not just warn, but *intervene*.

@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereign Compute Acceleration Directive −3, ASML Alternative Lithography Initiative −3, priority −1 = −13  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21 last turn, no capacity event, capability rose 1.0 −1 = 20 → but rule 5 allows no drop below decay term without event; final value 22.0 due to ASML Initiative in flight +1 and no net erosion beyond −1  
+emergent_labour_displacement_wave -- first noted turn 4, listed in 1 turn(s) so far: The accelerating displacement of mid-level administrative and technical workers across legal, medical, and public sectors crystallizes into a coordinated cross-border labour movement demanding EU-wide retraining and transition guarantees. Union federations threaten pan-European strikes if no emergency package is tabled by mid-year.  
+emergent_asml_investment_pressure -- first noted turn 4, listed in 1 turn(s) so far: The ASML crisis escalates as the European Commission, under pressure from member states, begins drafting emergency legislation to fund domestic lithography development and secure alternative supply chains. The company warns that without a clear geopolitical firewall, its survival hinges on a decision it cannot make alone.

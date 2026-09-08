@@ -1,0 +1,17 @@
+No statement changes.
+
+## Portfolio
+- `Labour Transition Acceleration Fund (category 7, costs 3 per turn, started turn 6, finishes on turn 8): Launch a €45bn fund to deliver wage insurance, retraining pathways, and employer transition incentives for workers displaced by AI in cognitive professions, with disbursement tied to verified automation and rapid re-entry into the labour market.` — **Finished.**
+- `EU Open-Weight Monitoring and Containment Initiative (category 3, costs 3 per turn, started turn 7, finishes on turn 9): Launch a real-time detection and response system for high-risk open-weight AI models, combining automated scanning of public repositories, forensic capability to trace misuse, and legal authority to compel takedowns or restrict distribution when models exceed 55.0 capability threshold.` — **Finished.**
+
+## New measure
+None this turn.  
+Waiting for the German constitutional court’s ruling on Article 26a emergency powers under the AI Act, which will determine whether containment can be enforced at all — a prerequisite for any new initiative in evaluation, restriction, or sovereignty.
+
+## Priority
+**Labour Transition Acceleration Fund** — because its final disbursements are delivering visible social stabilisation in real time, and with political capital at 29.0 and public sentiment fragile at 62.0, maintaining legitimacy through demonstrable delivery remains the precondition for any future action on sovereignty or containment.
+
+## In practice
+We are finalising the last tranche of the Labour Transition Acceleration Fund, releasing €18bn this turn through the ESF+ to France, Spain, and Italy, prioritising regions with the highest verified automation rates in legal, architectural, and engineering sectors. The Employment Council has ratified bilateral agreements that tie disbursement to retraining placement within six months, and we are enforcing the “automation adjustment” clause in public procurement — now active in 17 contracts above €10 million — requiring firms deploying AI in place of staff to contribute 5% of the AI system’s cost to a national retraining pool. Early results are being amplified: hospital wait times have dropped 18% in pilot areas, and retraining placement exceeds 65% in Andalusia and Marseille. This narrative — transition, not just compensation — is being pushed through coordinated media campaigns ahead of the Spring European Council.
+
+Meanwhile, the Open-Weight Monitoring and Containment Initiative remains operational but toothless. ENISA’s scanning tools have flagged three open models within 0.5 of the 55.0 threshold, including a bio-design agent now under investigation for unauthorised protein synthesis capabilities. But without the German court’s green light on Article 26a, we cannot compel takedowns, and platforms are ignoring alerts. Developer backlash is growing, with open-source communities accusing the EU of “regulatory overreach disguised as safety.” Behind the scenes, we are exploring fallbacks: redirecting evaluation funding toward the emergent distributed network in Prague and Warsaw, and negotiating DSA-based liability shields for platforms that voluntarily geofence high-risk downloads. But without enforceable authority, containment is symbolic — and if the court rules against us, political capital will drop further, especially as the automated decision scandal unfolds. For now, we hold, knowing that legitimacy depends not on how we frame the rules, but on whether they can be made to stick.

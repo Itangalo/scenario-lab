@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: European Compute Assurance Directive −3, Critical AI Workload Hardening Initiative −2, Sovereign Model Access Programme −3, priority −1 = −9  
+PROPOSAL BONUS: Critical AI Workload Hardening Initiative (cat 6, small) +3 — responds directly to cyber_intrusion and supply_chain_coercion (last turn), immediate operational relevance  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 25 last turn, InvestAI Gigafactories finishes t8 +5, European Compute Assurance Directive in flight +2, capability rose 2.5 −1 = 28  
+US_POSTURE: Cooperative Technological Alliance  
+emergent_plateau_signals -- first noted turn 6, listed in 3 turn(s) so far: A major release underdelivers against its own briefing, and – the stronger signal – the price of top-tier capability falls sharply rather than staying flat, which is what happens when the frontier stops moving and last year's ceiling becomes this year's commodity. It is disputed at once, and the dispute is not resolvable from outside the laboratories.  
+emergent_international_eval_consortium -- first noted turn 6, listed in 3 turn(s) so far: A coordinated effort among EU member states, Japan, South Korea, and Canada establishes a joint evaluation consortium for frontier AI models, pooling technical expertise and audit capacity to assess safety claims independently of vendor submissions. The initiative emerges in response to the disputed bio-uplift findings and gains momentum as trust in unilateral assurances erodes. It counts as a category 5 measure and strengthens public confidence in oversight.  
+bio_uplift_findings -- precursor opens bio gate for next 4 turns

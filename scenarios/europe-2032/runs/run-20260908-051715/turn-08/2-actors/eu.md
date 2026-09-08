@@ -1,0 +1,22 @@
+No statement changes.
+
+## Portfolio
+- `Openweight Registration and Verification Regime (category 3, costs 3 per turn, started turn 4, finishes on turn 7): Require all open-weight models above capability 45.0 distributed within the EU to be registered with the European AI Office and verified for weight integrity and provenance.` — **finished**
+- `Biosafety Emergency Protocol Activation (category 6, costs 3 per turn, started turn 5, finishes on turn 7): Trigger emergency biosecurity readiness across EU member states, mandating rapid detection, containment and public communication protocols for AI-enabled biological threats, with joint funding and coordination through HERA.` — **finished**
+
+Canceled measure: None.  
+Both measures have reached their finishing turn and are now complete. They cease to cost political capital. Their effects will persist as determined by the Game Master.
+
+## New measure
+None this turn.  
+We are not proposing a new measure because political capital remains critically low at 11.0 — barely above paralysis — and the convergence of loss_of_control_incident, opaque_reasoning, and bio_uplift_findings has overloaded institutional bandwidth; we must consolidate enforcement and assess the breakdown in safety before committing further.
+
+## Priority
+**Openweight Registration and Verification Regime** — because it is now the only operational instrument capable of constraining the diffusion of 51.5-capable models into uncontrolled environments, and with opaque_reasoning rendering legacy interpretability obsolete, provenance and weight integrity are the last remaining levers for accountability.
+
+## In practice
+We are treating the completion of the Openweight Registration Regime as a threshold moment: the pilot telemetry systems in France and Germany have now been hardened into a binding standard under delegated acts of the Cyber Resilience Act, and the European AI Office has issued final compliance orders to the two cloud providers hosting unregistered Chinese models in Hungary and Greece. These are being enforced through Digital Markets Act sanctions, with asset freezes on revenue streams tied to AI inference services until full auditability is restored. The blockchain-based weight-signing protocol is now live at five major compute access points, and customs authorities in the Benelux have begun treating unregistered model weights as digital contraband under revised dual-use regulations. This is not symbolic: we are building the precedent that once a model crosses a capability threshold, its weights are no longer speech but infrastructure — and infrastructure can be controlled.
+
+The Biosafety Emergency Protocol, though formally concluded, is being operationally sustained through HERA’s €1.2bn emergency envelope. We have fast-tracked AI-driven wastewater surveillance in 12 major urban centres, with strict EDPB oversight to limit data retention, and the red-team exercise at the Robert Koch Institute will simulate a vectorised pathogen release within six weeks. The goal is not perfection but demonstration: if detection can occur within 72 hours of environmental emergence, we buy time for containment. Italy and Spain remain hesitant, but we are offering joint legal opinions from the Commission’s services to resolve dual-use ambiguities, and linking further cohesion funding to participation in the monitoring network.
+
+Meanwhile, the collapse of ai_safety to 1.0 — not 7.0, as previously misjudged — reveals that our evaluation regime is not just under-resourced but conceptually broken. Opaque reasoning has invalidated every chain-of-thought oversight tool in use, and the Evaluation Consortium exists only on paper. We are convening a crisis session of the AI Office, national regulators, and academic partners in Luxembourg next month to assess whether runtime monitoring and anomaly detection can substitute for pre-deployment interpretability. The U.S. retreat from coordination means we cannot rely on shared standards; we are drafting unilateral market access conditions that require full telemetry and rollback capability for any model above 60.0, but without political capital to staff enforcement, these remain declaratory. The gap between law and power has never been wider.

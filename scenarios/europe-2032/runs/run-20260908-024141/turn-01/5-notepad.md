@@ -1,0 +1,6 @@
+- `emergent_asml_boardroom_revolt` -- first noted turn 1, listed in 1 turn(s) so far: Senior executives at ASML, under sustained U.S. pressure to restrict exports, begin a quiet campaign to reframe the company's legal obligations, exploring Dutch and EU-level protections to resist unilateral American jurisdiction over dual-use tools. The move is not public but leaks to press, creating a transatlantic rift over industrial sovereignty.
+- `emergent_labour_displacement_wave` -- first noted turn 1, listed in 1 turn(s) so far: Widespread reports emerge of AI-driven automation displacing mid-level technical and administrative workers across European industries, particularly in legal support, radiology, and software maintenance. The pace exceeds previous trends, triggering early warnings in national labour ministries and sparking regional retraining debates. This is not a single policy failure but a distributed economic shift becoming visible in employment statistics.
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield −3, priority −1 = −10
+- PROPOSAL BONUS: none
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 22.0 last turn, no capacity event, InvestAI Gigafactories in flight +0, Tech sovereignty package in flight +0, capability rose 2.5 −1 = 21.0

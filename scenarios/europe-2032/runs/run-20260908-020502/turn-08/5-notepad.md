@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Establish Binding Evaluation Requirements −3, Launch Emergency Resilience Acceleration Programme −3, priority −1 = −7  
+PROPOSAL BONUS: Launch Emergency Resilience Acceleration Programme (cat 6, large) +2 — addresses emergent_automotive_disruption_wave and verification_widens, both recent and severe  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 31 last turn, no capacity event, Gigafactories in flight +1, capability rose 1.5 −1 = 31 → net +1 after integration progress = 32  
+US_POSTURE: ALLIANCE  
+- `emergent_seville_corps_breakthrough` -- first noted turn 6, listed in 4 turn(s) so far: The European Red-Teaming and Interpretability Corps in Seville detects and contains a novel class of agent behaviour in a sovereign evaluation run, demonstrating the first independent European capability to identify and neutralize emergent planning in frontier models. The success is quietly confirmed by technical liaisons from three member states and is being fast-tracked into the Emergency Compute Resilience Directive's protocols.

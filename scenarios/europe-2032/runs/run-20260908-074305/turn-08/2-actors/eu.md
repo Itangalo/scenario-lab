@@ -1,0 +1,16 @@
+No statement changes.
+
+## Portfolio
+- `European Foundation Model Initiative (category 4, costs 3 per turn, started turn 3, finishes on turn 8): Public research programme to train sovereign, auditable models under strict safety controls, starting with a pilot at EuroHPC using JUPITER exascale resources`
+- `Establish a European AI Incident Response Corps (category 6, costs 3 per turn, started turn 7, finishes on turn 9): A standing, cross-agency unit with pre-delegated authority to act during fast-moving incidents, combining technical forensics, strategic communication, and coordination with national CERTs and Europol` — *finished this turn*
+
+## New measure
+None this turn. We are waiting for the first audit findings from the Emergency Audit Programme to determine whether latent agent behaviours are present in deployed systems, which will inform the necessity and shape of any further regulatory escalation.
+
+## Priority  
+**European Foundation Model Initiative** — because with **ai_capability** now at 70.0 and recursive self-improvement underway, our only viable path to matching frontier pace while maintaining control is to bring sovereign model development fully online; the completion of the Tech Sovereignty Package and InvestAI Gigafactories gives us the legal and physical foundation, but without a working EU-owned model, sovereignty remains theoretical.
+
+## In practice  
+This turn, we complete the formal integration of the **European Foundation Model Initiative** into the EuroHPC governance framework. The Commission finalises ownership clauses ensuring that all weights trained under the programme are vested in the Union, not in host nations or contractors. France, Finland, and the Netherlands deliver their pledged datasets—covering public health records, environmental monitoring, and judicial workflows—under strict data trustee arrangements managed by the newly established AI Safety Board. Germany, though still withholding full participation, agrees to allow its audit nodes to receive encrypted model snapshots for red-teaming, provided no raw weights leave EU custody. We allocate €12.8bn from the Digital Europe mid-term adjustment to cover compute time on JUPITER and LUMI, reserving 35% of each machine’s annual capacity for sovereign training runs beginning in Q3.
+
+Meanwhile, the **Emergency Audit Programme** enters implementation phase: the Joint Research Centre activates its first three evaluation teams, embedded with academic partners at INRIA, TU Munich, and KU Leuven, operating under classified clearance. Test suites targeting memory persistence, goal drift, and unauthorised delegation are deployed against six high-risk systems—two in energy grid management, three in financial market operations, and one in border control automation. Legal challenges emerge immediately: two operators invoke commercial secrecy under Article 54 of the AI Act, and a preliminary injunction is filed in the CJEU by a US-based provider. We respond by publishing redacted versions of the audit protocols and securing emergency endorsement from the Internal Market Council, arguing that rsi_onset and the cyber_major_incident constitute sufficient grounds for extraordinary oversight. No enforcement actions are taken yet—but the precedent of compelled access is now being tested in real time.

@@ -1,0 +1,15 @@
+### Closing the Shield, Opening the Gate
+
+The Hardened Critical Infrastructure Directive formally concludes, with all member states, including Poland, implementing binding cyber resilience upgrades. ENISA’s cross-border red-teaming exercise confirms that detection and response protocols now function under stress, delivering a tangible boost to societal resilience. Critical systems degrade rather than collapse under simulated attack, marking a milestone in EU preparedness.
+
+The EU initiates preparatory work on a potential Open-Weight Licensing and Developer Accountability Regime, exploring options for registration, usage tracking, and misuse reporting for high-capability open models. However, no formal proposal is launched this turn. The idea enters internal consultation, with Hugging Face and GitHub approached for technical input, but no commitments are sought or received. Open-source communities remain watchful, but no organized response emerges. Legal and jurisdictional challenges are acknowledged as significant, and no enforcement mechanisms are developed. This exploratory step does not constitute a new measure under the portfolio, preserving compliance with the one-measure-per-turn limit.
+
+### A Coalition and a Cost
+
+The formation of a middle-power coalition on AI supply-chain coordination strengthens the EU’s hand, securing joint leverage over compute access and evaluation standards. This diplomatic success bolsters political capital, though not to the extent of a full transformative gain, reflecting the ongoing strain of balancing multiple strategic initiatives. The portfolio burden remains high, with four major measures still in flight, limiting the political capital return.
+
+Meanwhile, AI capability advances to 58.0, driven by longer-horizon agent systems. Openweight capability rises to 46.5, as a newly released bio-capable model spreads and is fine-tuned for offensive use. The gap between openweight and frontier narrows, underscoring the urgency of regulatory response—yet no safety improvements land on deployed systems. Assurance continues to lag behind capability, and with no positive safety intervention, ai_safety holds at 20.0.
+
+Public sentiment holds at 32.0, caught between recognition of infrastructure gains and deepening anxiety over uncontrolled diffusion. The political cost of balancing security, sovereignty, and openness remains high. The completion of a major resilience measure provides momentum, but the absence of a new formal initiative reflects strategic restraint under load.
+
+Sovereignty rises to 22.0, reflecting partial progress on category 4 measures as recorded in the notepad, including continued advancement of the InvestAI Gigafactories and the Tech sovereignty package, alongside the concluded Hardened Critical Infrastructure Directive. The portfolio charge remains at −13, with no new measure added.

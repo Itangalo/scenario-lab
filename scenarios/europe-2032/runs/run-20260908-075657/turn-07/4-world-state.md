@@ -1,0 +1,19 @@
+### The Weight of Unchecked Capability
+
+Global AI capability climbs to 65.0 as labs integrate lessons from the **loss_of_control_incident**, refining agent containment protocols — but only internally. No shared safety update follows, and opaque systems continue to operate in high-stakes domains. While internal safeguards show incremental improvement, the absence of coordinated deployment standards and the growing complexity of frontier models erode systemic confidence. Without a new incident, the decline in `ai_safety` is moderate, settling at 12.0 — a drop of 2.0, reflecting mounting structural risk rather than acute failure.
+
+The **bio_uplift_findings** deepen alarm within closed biosecurity circles, though public attention remains limited. Meanwhile, **verification_widens** as automated checks for clinical trial eligibility emerge, accelerating drug development — and expanding the frontier of machine-executable expertise beyond code.
+
+Amid this turbulence, the EU completes the **InvestAI Gigafactories**, delivering sovereign compute capacity. This marks a rare concrete win: a large infrastructure project finished on schedule, adding tangible stock to the EU’s strategic foundation. The completion contributes +5 to `eu_ai_sovereignty`, which rises to 18.0, consistent with the authoritative notepad calculation: 10.0 (previous) +5 (Gigafactories complete) +2 (ECMD in flight) −1 (capability rise penalty) = 18.0.
+
+Building on this, the EU announces the **Emergency Compute Mobilisation Directive (ECMD)**, a high-cost initiative to fast-track hardened clusters in Finland, Spain, and Poland, with Germany and France under negotiation to host the central evaluation node. However, securing cross-border commitments proves complex. While technical planning advances, no intergovernmental agreements are finalized this turn. The directive is now in flight, contributing +2 to sovereignty, but full deployment will require at least one additional turn due to governance hurdles and energy allocation disputes — further complicated by the **US_POSTURE: CONSOLIDATION**, which tightens export controls on advanced chipmaking equipment and restricts access to dual-use verification tools. This posture is now actively shaping EU planning: Finland’s proposed site faces delays due to US licensing requirements for cooling infrastructure, and Poland’s energy provider hesitates to commit without assurances of non-retaliation in global tech markets.
+
+The **joint_threat_response** initiative activates: a cross-border cyber defence cell forms in response to rising AI-assisted attacks, including early signs of the **emergent_healthcare_ransom_wave**. The EU gains access, bolstering its defensive posture and lifting `resilience` to 54.0. Participation remains conditional on demonstrated sovereign capability — a bar now being met, just barely.
+
+Public sentiment holds at 30.0 despite these moves. The Audit Mand remains stalled, and the ECMD’s invocation of crisis powers sparks legal scrutiny. Political capital inches up slightly — not from strength, but because completing the Gigafactories offsets ongoing burdens, consistent with the +1 increase.
+
+On the open front, modest replication of recent frontier models occurs across academic and non-profit clusters, supported by newly available sovereign infrastructure. This enables a measured rise in `openweight_capability` to 56.0 — a +1.0 gain, aligning with the pace of global capability growth and leveraging newly operational EU compute. No major open releases or distributed training campaigns occur, preventing a surge; progress remains incremental and resource-bound.
+
+### A Fragile Foundation
+
+Control without capacity is ritual. The EU now understands this — and is laying bricks, not proclamations. But even bricks take time to set. And under **US_POSTURE: CONSOLIDATION**, the mortar dries slower.

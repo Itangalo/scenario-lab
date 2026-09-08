@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, European AI Safety Lab −3, Establish EU Red-Teaming Corps −3, Launch sovereign agent development programme −3, priority −1 = −16  
+PROPOSAL BONUS: Launch sovereign agent development programme (cat 4, large) +5 — directly responds to cyber_major_incident and emergent_regulatory_backlash, both severe and recent  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 18 last turn, no capacity event, capability rose 2.0 −1 = 17  
+emergent_union_cyber_initiative -- first noted turn 4, listed in 2 turn(s) so far: ENISA, national CSIRTs, and defence cyber units formalise a joint operational cell for AI-powered threat detection and response, following successful tabletop exercises. The initiative enables real-time telemetry sharing and coordinated red-teaming across member states, marking a de facto shift toward a unified cyber defence posture despite lacking full treaty basis.

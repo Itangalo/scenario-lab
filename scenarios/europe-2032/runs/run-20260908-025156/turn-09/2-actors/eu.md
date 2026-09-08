@@ -1,0 +1,28 @@
+Secure foundational safety and adaptive resilience to survive autonomous threats while rebuilding political capacity for strategic autonomy
+
+## Statement changes
+``modify `two_year_commitment` (commitment): Rebuild sovereign capacity to act independently in AI while anchoring public legitimacy through protection and inclusion``
+- Trigger: the two-year commitment period closes this turn
+- Grounds: The current commitment was forged in a moment of cascading risk and eroding control, and it has delivered tangible gains in preparedness and enforcement visibility. The Critical Infrastructure AI Shield Initiative has established a physical presence around the stack, and the Enforceable Runtime Safeguards Mandate finishes this turn with partial adoption across key states. Yet sovereignty remains at 19.0, political capital has collapsed to 18.0, and public sentiment is stuck at 30.0 — not because we failed, but because protection alone is not legitimacy. The **member_state_defection** this turn reveals that even our own states no longer believe the Union can deliver autonomy; the **emergent_labour_displacement_wave** reveals that the public sees AI not as a tool but as a force of exclusion. We have stabilised the perimeter, but we are losing the centre. The next two years must pivot from survival to sovereignty — not just the capacity to act, but the legitimacy to do so. This means rebuilding independent capability *and* anchoring it in social inclusion, so that the Union is not just the shield, but the architect of a future people will fight for.
+
+## Portfolio
+``Enforceable Runtime Safeguards Mandate (category 3, costs 3 per turn, started turn 7, finishes on turn 9): Establish legally binding, auditable runtime monitoring and kill-switch mechanisms in all AI systems used in critical infrastructure, with penalties tied to procurement exclusion and CE marking withdrawal`` — **finished this turn**
+``Frontier Access Compact with Safeguards (category 8, costs 3 per turn, started turn 6, finishes on turn 7): Establish a binding EU-level agreement with the United States to secure structured access to frontier AI models for vetted public institutions, conditional on joint safety evaluation, incident reporting, and EU-controlled deployment environments`` — **finished**
+
+## New measure
+**European AI Transition and Inclusion Pact**  
+A binding framework to provide income guarantees, retraining pathways, and co-determination rights for workers displaced by AI in the public and subsidised sectors, funded through conditionalities on AI adoption.  
+
+`Category: 7 (Labour and social protection)`  
+`Size: large`  
+`Finishes on turn: 12`  
+`Targeted effect:` Increase public_sentiment by 10–15 points, stabilise political capital by addressing root causes of unrest, and reduce strike frequency by institutionalising worker voice in AI deployment.  
+`Applies to:` EU member states, public-sector employers, and private contractors receiving EU funds or operating in regulated sectors.
+
+## Priority
+**European AI Transition and Inclusion Pact** — This is now the priority because the **emergent_labour_displacement_wave** has become the dominant political force this turn, eclipsing even infrastructure sabotage in its reach and coordination; without restoring social legitimacy, no shield, mandate, or sovereignty investment will survive the next election cycle.
+
+## In practice
+We are launching the European AI Transition and Inclusion Pact under the legal umbrella of the European Pillar of Social Rights and the Public Procurement Directives, with implementation anchored in the newly empowered Social Climate Board. The Pact will require any public body or publicly funded entity adopting AI in roles involving displacement of mid-level administrative, legal, or health workers to co-fund a transition package: 75% wage insurance for two years, fast-tracked retraining into AI oversight, maintenance, or public service roles, and a seat on a local AI Deployment Council for affected unions. Funding will come from a 12% levy on AI procurement budgets above €10m, with an additional €8bn drawn from the Just Transition Fund and the Digital Europe Programme. We are negotiating with the ETUC and BusinessEurope to jointly endorse the framework, offering industry regulatory predictability in exchange for buy-in, and offering workers a voice that outlasts protest.
+
+At the same time, we are formalising the closure of two major measures: the Enforceable Runtime Safeguards Mandate and the Frontier Access Compact. The former has achieved conditional adoption in France, Poland, and the Nordic states, but Southern members remain outside full compliance. We are converting its enforcement into a graduated access regime — full Shield protection only for systems with verified runtime safeguards — rather than a blanket exclusion. The latter, while symbolically important, delivered only limited access, and the U.S. has since restricted the models covered under its terms. We are now instructing the European Commission to pivot from bilateral dependency to coalition-building, using our remaining leverage in semiconductor supply and data governance to initiate talks with Japan, India, and Brazil on a new **Compute Access and Security Pact**, to be proposed next turn under category 8. This is not abandonment, but reallocation: we cannot afford to fund failed instruments while the street is on fire.

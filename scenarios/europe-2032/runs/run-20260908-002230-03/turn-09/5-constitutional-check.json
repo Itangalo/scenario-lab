@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The narrative states the EU launches the \"Secure Open-Weight Access and Containment Framework\" as a new measure while also maintaining the \"Frontier Model Registry\" as an ongoing measure and naming the former as a priority. This results in two active measures (Frontier Model Registry and Secure Open-Weight Framework) and one named priority, violating Constitutional Constraint 5: \"At most one new measure per turn, and at most one named priority.\" The portfolio charge confirms both measures are active (−3 each), and the priority is explicitly named, indicating three restricted elements are active simultaneously.\n- Metric Movement Violation: `eu_political_capital` drops from 27.0 to 18.0, a change of −9.0 in one turn. While no explicit floor is stated for this metric, Constitutional Constraint 9 imposes a hard bound: \"No metric moves more than 25 points in one turn.\" This is satisfied in magnitude (9 < 25), so it is not a violation of that rule. However, the drop is driven by a portfolio charge of −7 (two measures and a priority), which is permissible only if the measure count complies with Constraint 5. Since the measure count itself violates Constraint 5, the resulting political capital movement is invalid due to being based on an unconstitutional portfolio configuration."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Resilience Directive for Critical Operators −3, priority −1 = −10  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22.0 last turn, no capacity event, Gigafactories in flight +0, Tech sovereignty package in flight +0, capability rose 1.5 −1 = 21.0 → adjusted to 20.0 due to ongoing strategic exposure and lack of near-term capacity milestones  
+## Emerging developments (tracked)
+- `emergent_labour_displacement_wave` -- first noted turn 1, listed in 1 turn(s) so far: Mid-level technical and administrative roles in legal, financial and engineering sectors across several member states begin to be displaced at scale as firms adopt AI agents capable of handling multi-step professional workflows. Early retraining programs are overwhelmed, and regional unemployment spikes above 10% in three industrial regions, triggering social unrest and emergency debates in national parliaments.
+- `emergent_global_ai_standards_push` -- first noted turn 1, listed in 1 turn(s) so far: In response to the Kimi K3 release and the US access restrictions, a coalition of non-aligned states including India, Brazil, and South Korea launches a formal initiative under the UN's technology governance body to establish neutral, open-access frameworks for AI capability thresholds, model release norms, and incident reporting — positioning itself as an alternative to US- or China-led order.

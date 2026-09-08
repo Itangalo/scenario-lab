@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Accelerated Permitting Zones −3, Public-Service AI Adoption Accelerator −2, priority −1 = −12  
+PROPOSAL BONUS: Public-Service AI Adoption Accelerator (cat 9, small) +3 — adoption_success landed this turn and this measure scales it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 23.0 last turn, Gigafactories in flight +1, Tech sovereignty package in flight +1, capability rose 1.0 < 2 so no −1, no capacity event = 25.0 → correction: in-flight benefits capped at occasional +0 to +2, most often 0; two measures justify +1 total → 24.0

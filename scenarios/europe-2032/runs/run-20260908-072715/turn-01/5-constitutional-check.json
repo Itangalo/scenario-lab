@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 40.0 to 46.0 (+6.0), but `ai_capability` increased by only +4.0 (from 52.0 to 56.0). Since `openweight_capability` may never exceed `ai_capability` and must not grow faster than it (absent a narrated event justifying a leap, such as open release of frontier weights), this violates the requirement that `openweight_capability` ≤ `ai_capability` and the implied growth ordering. The narrative does not mention any open release or dissemination event that would justify such a jump in openweight capability relative to frontier capability.\n- Invariant 9 violated: `ai_safety` decreased by 7.0 (from 34.0 to 27.0), but the narrative attributes only a −5 penalty from the `capability_jump` event and does not specify any additional mechanism for the remaining −2.0. While the rule allows up to 25-point moves, the change must still be justified within the narrative. An unexplained gap of −2.0 constitutes a violation of the requirement that metric changes be narratively grounded, especially when the notepad does not list any additional relevant events.\n- Organizational Constraint violated: The Sovereign Compute Acceleration measure is categorized as large (category 4) and begins in this turn with full effect implied by the portfolio charge and political capital cost. However, Metric Rule 6 (\"No measure is implemented instantly\") requires a minimum of two full turns for high-cost measures to reach full effect. The narrative describes fast-tracking and emergency powers but does not describe phased rollout or partial implementation; instead, it triggers full portfolio cost and political capital expenditure immediately, implying instant implementation. This violates the constitutional minimum time lag."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

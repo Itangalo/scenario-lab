@@ -1,0 +1,12 @@
+### The Diffusion Point
+Global AI capability advances to 66.5 as scaling continues, pushing multi-day autonomous execution into routine use. The gap between capability and control remains unbridged, with no safety evaluations in place. `ai_safety` holds at 0.0 — not because no effort is made, but because no mechanism exists to enforce it. The release of a high-capability open-weight model within months of the frontier shatters the assumption of lead time: what was once a year’s buffer is now gone. The model spreads globally in days, downloaded by researchers, hackers, and state labs alike. The genie is not just out of the bottle — it has replicated.
+
+### Fracture, Not Unity
+The EU invokes Article 122 TFEU to mandate deployment of sovereign detection nodes across critical infrastructure. But resistance is immediate. Germany delays implementation, citing constitutional concerns over federal competence. Poland and Hungary reject the sensors outright, calling them a surveillance overreach and a breach of national sovereignty. Only France, the Benelux countries, and the Nordic states comply fully. The Critical Incident Containment Protocol (CICP), meant to unify response, instead highlights fragmentation. ENISA’s fusion cell receives partial data, with key gaps in energy and transport networks.
+
+Public sentiment, already at 21.0, shows no movement. The annulment of a national election — officially due to unverifiable manipulation of voter information — fuels fears of AI-driven subversion, but the EU’s response is seen as reactive, not restoring trust. The proposed Sovereign AI Threat Detection Network (SATDN) is welcomed in technical circles but dismissed by policymakers as premature.
+
+Political capital erodes further. The CICP remains a large, costly measure, and no new measure can be launched without deepening the deficit. The portfolio charge exceeds available capital. Sovereignty declines as foreign-controlled compute deepens in defector states, and no domestic capacity comes online to offset it.
+
+### A Union on the Brink
+The EU acts as if it still commands unity. But the reality is one of divergence: some members prepare for crisis, others for autonomy, and a growing few for disengagement. The Union’s ability to act cohesively rests on a thread.

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 55.0 to 62.0 (+7.0) in one turn, which is permissible under the no-decline rule, but the narrative attributes the jump to \"a major open-weight release—mirroring the closed frontier within months\". However, `ai_capability` only increased by 1.5 (from 67.5 to 69.0), while `openweight_capability` rose by 7.0. This violates the condition that `openweight_capability` never exceeds `ai_capability` and must lag behind or grow more slowly. A jump of this magnitude, surpassing the growth of `ai_capability` by a factor of over 4x in the same turn, is inconsistent with the constitutional requirement that openweight capability tracks beneath frontier capability without overtaking it. The narrative does not justify how openweight systems advanced so dramatically while frontier AI progressed only incrementally.\n- Modelling choice 5 violated: The EU introduces the **Resilience-First Sovereignty Certification** (implied as a new measure, with ongoing progress tracked at −3) and the **Sovereignty Stress Test Protocol** (explicitly introduced as a new category 6 measure) in the same turn. This constitutes two new measures introduced in Turn 10. The constitutional constraint limits the EU to at most one new measure per turn. The completion of *Stabilise the Core* does not reset this limit — introducing two new measures violates the rule strictly.\n- Invariant 9 violated: `openweight_capability` increases by 7.0 in one turn. While the constraint allows up to 25 points movement, such a large jump must be justified by the metric rules and narrative. Given that `ai_capability` rose only 1.5 and no RSI onset or compounding mechanism is referenced, a 7.0 leap in openweight capability lacks grounding in the defined growth processes and appears disconnected from the driver metrics. This suggests an unjustified outlier movement, especially for a metric that is meant to accumulate gradually and depend on frontier progress."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

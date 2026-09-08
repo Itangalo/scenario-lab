@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Regulatory Constraint violated: The EU launched two new measures in the same turn — \"Mandatory Pre-Release Evaluation\" (category 1) and \"Biosecurity Integration\" (category 6). Constitutional Constraint #5 limits the EU to at most one new measure per turn. The narrative and notepad confirm both were initiated this turn, which is invalid.\n- Organizational Constraint violated: The \"Biosecurity Integration\" measure is classified as category 6 (large, high-cost) and was launched in the same turn as another measure. Even if only one were allowed, a high-cost measure cannot have immediate partial credit without respecting minimum implementation time (Constraint #6: minimum two turns for high-cost measures). The narrative implies it contributes to resilience now, which violates the rule that effect grows only as the measure approaches completion."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

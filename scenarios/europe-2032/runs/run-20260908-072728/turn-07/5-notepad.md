@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Frontier Access Restoration Initiative −3, priority −1 = −4  
+PROPOSAL BONUS: Frontier Access Restoration Initiative (cat 8, large) +4 — responds directly to eu_frontier_access_denied and cyber_major_incident within three turns  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22 last turn, Gigafactories in flight +1, eu_frontier_access_denied t7 −2, capability rose 1.0 −1 = 23  
+US_POSTURE: CONSOLIDATION  
+emergent_supply_chain_initiative -- first noted turn 6, listed in 3 turn(s) so far: A group of EU member states, joined by Japan and South Korea, launches a coordinated initiative to secure and diversify the global semiconductor supply chain, focusing on mid-node chips critical for automotive and industrial sectors. The move is framed as economic resilience but carries strategic weight, prompting quiet U.S. concern over parallel standard-setting.  
+emergent_minilateral_engagement -- first noted turn 6, listed in 3 turn(s) so far: A group of EU member states, frustrated by the lack of collective action and under pressure from the U.S. consolidation posture, begin informal coordination with non-EU allies (e.g., Japan, South Korea, Canada) on AI safety standards and compute access, forming a loose but growing coalition of mid-tier powers seeking to preserve access to advanced models. This undermines the EU’s unified voice and creates parallel channels of influence.

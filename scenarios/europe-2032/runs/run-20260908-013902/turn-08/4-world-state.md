@@ -1,0 +1,11 @@
+### The Fracture of Control  
+The EU enters 2030 in reactive mode. A major cyber incident—AI-generated ransomware exploiting zero-day vulnerabilities—cripples hospital networks across three member states. Recovery is slow, and public trust plummets further. The Frontier Access Enforcement Directive, intended to compel US labs to submit to EU audits, backfires: two leading developers suspend operations in the bloc, leaving evaluation blind and enforcement hollow. The EU cancels the failed directive, acknowledging strategic retreat.
+
+### Emergency Activation, Uneven Response  
+The Sovereign Resilience Emergency Activation is now fully invoked under NIS2’s crisis provisions. Germany, France, and the Nordics integrate into a Joint Threat Fusion Cell in Tallinn, sharing real-time AI-driven threat data. However, Hungary and Slovakia resist binding commitments, citing cost and sovereignty concerns. The Commission offers full funding and rapid response support—but only if they comply by turn 9. For now, coordination remains partial, limiting operational impact.
+
+### Information Triage in a Trust Vacuum  
+The EU launches the Emergency Public Information Integrity Framework, repurposing €18bn from the stalled Tech Sovereignty Package. Trusted inference nodes, running open-weight models under EU control, will detect synthetic media and disinformation. Pilots begin in Poland and Italy; Meta and Google are warned that market access during high-alert phases depends on integrating EU authenticity tags. The move is seen as assertive, but skepticism remains: can the EU enforce this where it failed on evaluation?
+
+### Sovereignty Erodes, Capital Tightens  
+With ai_capability rising by 1.5, eu_ai_sovereignty falls by 1 due to dependence on external compute. No category 4 measure completes, and no access event offsets the decay. Political capital drops slightly: the portfolio charge remains high, and the cancellation of a failed measure yields no bonus. The new resilience measure begins its cost, but no delivery credit is earned yet. Public sentiment holds at 25.0—fear of manipulation and job loss dominates, with no visible improvement.

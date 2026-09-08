@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: EU Compute Sovereignty Guarantee −3, Resilience Acceleration Compact −2, Middle Power Leverage Accord −2, priority −1 = −8  
+PROPOSAL BONUS: Middle Power Leverage Accord (cat 8, small) +4 — answers eu_frontier_access_denied t6 and ongoing dependency humiliations  
+LEGITIMACY LENDS: capital 29, sentiment 36 -> +2  
+SOVEREIGNTY: 17 last turn, InvestAI Gigafactories finishes t8 +5, Sovereign Compute Mobilisation finishes t8 +5, Tech Sovereignty Package finishes t8 +5, capability rose 1.5 −1 = 21 → rounded to 22  
+US_POSTURE: RETRENCHMENT  
+emergent_resilience_backlash -- first noted turn 8, listed in 2 turn(s) so far: Regional resistance to mandatory cyber hardening intensifies, with local governments in Germany and Poland formally refusing to implement EU-mandated upgrades, citing budgetary strain and national sovereignty. This undermines the coherence of the Union's resilience strategy and risks creating patchy, inconsistent defences across critical infrastructure.  
+emergent_safety_breakthrough_adoption -- first noted turn 8, listed in 2 turn(s) so far: A coalition of EU research labs and public health agencies adapts fragments of an emerging interpretability toolset to monitor AI-driven diagnostics in hospitals. While not yet deployable at frontier scale, early integration into medical AI systems suggests a pathway to operational assurance, albeit slowed by workforce shortages and interoperability gaps.

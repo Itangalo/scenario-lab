@@ -1,0 +1,23 @@
+Secure sovereign access to AI systems and build societal resilience against uncontrolled AI risks
+
+## Statement changes
+``modify `two_year_commitment` (commitment): Secure sovereign access to AI systems and build societal resilience against uncontrolled AI risks``
+- Trigger: the two-year commitment period closes this turn
+
+## Portfolio
+- Secure sovereign resilience through independent control, anticipatory defence, and collective assurance (category 4, costs 3 per turn, started turn 3, finishes on turn 6): Establish EU-anchored compute infrastructure with sovereign access controls, integrate red-teaming into deployment pipelines, and coordinate interpretability research across member states to reduce dependence on foreign AI supply chains. **Finished this turn.**
+- Mandatory Cyber Resilience Activation (category 6, costs 2 per turn, started turn 4, finishes on turn 7): Enforce baseline cyber hardening across energy, transport, and health sectors, with mandatory patching timelines, red-teaming obligations, and incident reporting to ENISA. **Finished this turn.**
+- Sovereign Access Acceleration Initiative (category 4, costs 3 per turn, started turn 5, finishes on turn 8): Accelerate deployment of EU-controlled compute clusters in Spain and Poland, resolve governance disputes over access and oversight, and integrate national efforts into a unified sovereign AI infrastructure. **Finished this turn.**
+- International AI Safety Consortium Support (category 8, costs 2 per turn, started turn 5, finishes on turn 7): Fund and staff a transnational safety coordination hub with Japan and Canada, share evaluation environments, and develop joint red-teaming protocols to strengthen collective oversight capacity. **Finished this turn.**
+- Emergency Sovereign Compute Mobilisation (category 4, costs 3 per turn, started turn 7, finishes on turn 7): A rapid, binding directive to complete and activate sovereign compute clusters in Poland and Spain within six months, overriding national objections under Article 122 TFEU on grounds of systemic AI risk. **Finished this turn.**
+
+## New measure
+None this turn. I am waiting for the Court of Justice’s ruling on the legality of the Emergency Sovereign Compute Mobilisation and assessing the political fallout from its enforcement amid collapsing public sentiment and open resistance.
+
+## Priority
+**Emergency Sovereign Compute Mobilisation** — because despite its formal completion this turn, the measure’s operational success remains uncertain due to legal challenges, sabotage, and the lack of public legitimacy, and without functional sovereign compute, every other strategic objective — from resilience to evaluation — collapses into dependency on systems we cannot audit, trust, or defend.
+
+## In practice
+We are treating the Emergency Sovereign Compute Mobilisation as operationally urgent, even as its legal and political viability hangs in the balance. Technical teams from DG CONNECT and the JRC have taken physical control of the Barcelona and Wrocław clusters, with full activation scheduled for December. We are enforcing access through Article 122 TFEU, backed by implementing acts under the Cyber Resilience Act and the Digital Markets Act, and have redirected €1.8 billion from the Digital Europe Programme and the Recovery and Resilience Facility to cover costs, including a €300 million co-governance package for Catalonia to secure local cooperation. Frontex and Europol remain deployed to protect infrastructure in Bavaria and Normandy, where sabotage attempts have increased, though this militarised posture continues to erode public trust.
+
+The collapse of ai_safety to 12.0 and the loss_of_control_incident this turn confirm that the world is now operating beyond human oversight, and our ability to respond depends entirely on having sovereign systems we can trust. Yet with eu_political_capital at 12.0 and public_sentiment at 16.0, we are at the edge of governability. We are preparing contingency plans for a negative ruling from the Court of Justice, including a revised legal basis under Article 4(3) TEU and offers of binding compute-sharing guarantees to Poland. The joint_threat_response command with NATO, Japan, and South Korea remains our only functional multilateral channel, and we are deepening real-time telemetry sharing to improve incident response, even as the hospital ransomware attack exposed how fragile our readiness still is. For now, we hold — by emergency powers, by technical assertion, and by the bare minimum of cohesion still holding the Union together.

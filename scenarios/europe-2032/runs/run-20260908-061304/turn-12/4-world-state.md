@@ -1,0 +1,11 @@
+### Stalled Momentum, Mounting Pressures
+
+The EU consolidates the Sovereign Evaluation Authority Pilot (SEAP), integrating red-team findings into a binding risk-scoring framework now applied to AI systems seeking access to critical infrastructure. Early adopters—France, Germany, and the Netherlands—gain fast-track certification benefits, reinforcing SEAP’s legitimacy. Legal teams prepare a coordinated defence of its mandate under Article 16 TFEU, citing evidence that unassessed models fail under stress at triple the rate of evaluated ones. Yet, with no new measures launched, the Union’s agenda stalls.
+
+Globally, signs of a capability plateau emerge: a flagship AI release underperforms expectations, and prices for top-tier models drop sharply—suggesting stagnation at the frontier. Still, `ai_capability` creeps up by 0.5, reflecting residual momentum. This incremental advance, combined with the absence of new resilience or sovereignty-building measures, continues to erode systemic buffers.
+
+The Taiwan semiconductor blockade deepens. Emergency mapping by the Competitiveness Council reveals cascading dependencies—not just in chips, but in packaging, cooling, and power infrastructure. Yet without fiscal headroom and amid resistance from Hungary and Poland, no coordinated industrial response emerges. Sovereignty suffers another −1 from capability growth and −1 from persistent structural exposure, despite no new formal event.
+
+`resilience` dips to 56.0, penalized for the capability rise without a compensating category 6 measure. Political capital rises modestly to 21.0: the completion of SEAP (a large category 5 measure) delivers +4, while the portfolio charge ends this turn (SEAP finishes), and no new measure incurs cost. The priority penalty (−1) applies, but with only one measure concluding, the net effect is positive. Public sentiment holds at 30.0—no major incident, but no visible progress either.
+
+Open-weight models advance to 55.0, as distributed developers optimize on constrained hardware, exploiting architectural refinements now circulating in open forums.

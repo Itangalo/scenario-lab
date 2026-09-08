@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: European AI Shield −3, European Foundation Model Initiative −3, Sovereign Control Stack −3, Public Good Proofpoint Programme −2, priority −1 = −12  
+PROPOSAL BONUS: Public Good Proofpoint Programme (cat 9, small) +3 — directly answers emergent_scientific_breakthrough_in_medicine this turn, visible public benefit emerging  
+LEGITIMACY LENDS: capital 11, sentiment 35 → +0  
+SOVEREIGNTY: 12 last turn, no capacity event, capability rose 1.5 < 2 → 0, no category 4 completion, member_state_defection ongoing → −1 = 11  
+US_POSTURE: CONSOLIDATION  
+EMERGENT DEVELOPMENTS:  
+- `emergent_regional_compute_pact` -- first noted turn 7, listed in 5 turn(s) so far: A coalition of EU member states, including France, Poland, and non-EU NATO partners, accelerates negotiations on a binding regional compute pact to jointly fund and govern a frontier-class compute cluster hosted on neutral soil within the bloc. The initiative bypasses stalled EU-wide sovereignty talks, citing urgency under U.S. consolidation, and is framed as a security necessity rather than an economic project.  
+- `emergent_scientific_breakthrough_in_medicine` -- first noted turn 7, listed in 5 turn(s) so far: A European research consortium using AI-driven protein folding and drug discovery models announces a breakthrough in targeting antibiotic-resistant pathogens, identifying three novel compound families with in vivo efficacy. The result, independently verified, marks the first major public health benefit directly attributed to AI in the EU and temporarily shifts public sentiment discourse toward potential rather than risk.

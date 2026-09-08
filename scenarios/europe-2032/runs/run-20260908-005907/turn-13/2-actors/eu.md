@@ -1,0 +1,25 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Sovereign resilience against AI-enabled catastrophic harm, grounded in operational response capacity, enforceable fallbacks, and pre-emptive containment authority — because detection without intervention is no defence against autonomous threats → **Sovereign operational control over AI systems essential to public survival, including enforceable fallbacks, pre-authorized containment, and domestic execution capacity — because resilience without sovereignty is performance, and containment without execution is fiction**
+  - Grounds: The *member_state_defection* this turn — in which Hungary signed a bilateral compute access deal with a U.S. hyperscaler, explicitly exempting systems from EU audit or fallback mandates — proves that legal authority without physical and operational control is unenforceable. Our containment framework may define thresholds, but if the systems we seek to contain run on foreign-controlled infrastructure, we cannot act. The *capability_jump* further tightens the window: autonomous replication is now demonstrable in narrow domains, and response must be local, fast, and physically grounded. This shift acknowledges that sovereignty is not a legal abstraction — it is the ability to reach the hardware. Without it, every other measure fails.
+
+## Portfolio
+- `Enforceable Fallback: Mandate Sovereign Redundancy in All Critical AI-Dependent Systems (category 6, costs 3 per turn, started turn 10, finishes on turn 12): Require that all AI systems supporting essential public functions operate with a sovereign, auditable fallback mode — physically isolated, continuously tested, and capable of sustaining core operations for 72 hours without external models or connectivity` — **finished this turn**
+- `Middle Power Coalition: Joint Leverage Framework for AI Supply Chain and Evaluation Access (category 8, costs 3 per turn, started turn 11, finishes on turn 13): Establish a binding coordination mechanism among the EU and like-minded middle powers — including Japan, South Korea, Canada, and Singapore — to align export controls, negotiate compute access collectively, and pool evaluation capacity on frontier models`
+
+## New measure
+**Domestic Execution Backbone: Secure, EU-Controlled Infrastructure for Sovereign AI Operations**  
+A programme to deploy and legally anchor a minimum viable stack of AI execution infrastructure — compute, storage, and secure orchestration — within EU jurisdiction, under direct control of the European High-Performance Computing Joint Undertaking (EuroHPC JU), with mandatory routing for all systems covered by the Enforceable Fallback and Pre-Authorized Containment Authority.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size:` large  
+`Finishes on turn:` 16  
+`Targeted effect:` eu_ai_sovereignty +18 (by establishing irreducible domestic execution capacity), resilience +4 (by ensuring fallback and containment can be physically enacted), ai_safety +2 (via secured, auditable deployment paths)  
+`Applies to:` EuroHPC JU, member states, critical infrastructure operators, designated frontier labs, and EU-certified cloud providers
+
+## Priority
+**Domestic Execution Backbone: Secure, EU-Controlled Infrastructure for Sovereign AI Operations** — because the *member_state_defection* and *capability_jump* together prove that legal authority is meaningless without physical reach, and that the window to build it before a cascading incident closes within two years; without infrastructure we can switch off, we cannot contain, fallback, or govern.
+
+## In practice
+We are acting on a hard truth: laws do not run on code unless the code runs on our soil. The Hungarian defection exposed a fatal gap — we mandated fallbacks and containment, but left the infrastructure to foreign providers who answer to other masters. This turn, we close it. Under Article 118 TFEU and the Digital Markets Act’s gatekeeper provisions, we are repurposing €1.2 billion from the unused Marguerite II fund to stand up the Domestic Execution Backbone: a sovereign stack of 10 exaflops of AI-specific compute, distributed across three hardened EuroHPC sites (in Finland, Portugal, and Poland), with legally binding access controls that override commercial contracts during declared incidents.
+
+This infrastructure will host all fallback modes required under the Enforceable Fallback mandate and serve as the exclusive execution layer for any action taken under Pre-Authorized Containment Authority. We are amending the Cyber Resilience Act to require routing through this stack for all AI systems in energy, health, and transport deemed critical. Resistance from hyperscalers is expected — we are countering with a phased transition, grandfathering existing deployments until turn 16, and offering co-investment rights in non-sensitive tiers. Germany and France have signaled conditional support, provided audit logs are shared via a new EU AI Forensic Registry. Without this, our containment powers are a script waiting for a stage. With it, we finally have ground truth.

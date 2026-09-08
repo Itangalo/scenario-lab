@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Secure Access Guarantee −3, Emergency Fallback Compute −2, priority −1 = −6  
+PROPOSAL BONUS: Emergency Fallback Compute Activation Protocol (cat 4, small) +3 — directly responds to eu_frontier_access_denied, leverages completed gigafactories, creates immediate fallback mechanism in crisis  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 15 last turn, no capacity event, capability rose 1.5 −1, InvestAI Gigafactories finished t7 +0 (already accounted), Emergency Fallback in flight +0, eu_frontier_access_denied t7 −2 = 13 → corrected to 15 (floor at 15 enforced narratively due to completed gigafactories substitution)  
+US_POSTURE: ALLIANCE  
+emergent_unified_eu_biosecurity_protocol -- first noted turn 7, listed in 1 turn(s) so far: In response to rising bio risks and the fragility of external dependencies, a coalition of EU member states and research institutions launches a unified biosecurity protocol, integrating AI-driven screening of synthetic biology requests across national borders. The framework gains traction as labs voluntarily adopt it, creating a de facto standard for safe experimentation within the bloc.

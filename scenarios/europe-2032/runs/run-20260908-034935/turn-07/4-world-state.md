@@ -1,0 +1,11 @@
+### Capability Surge and Safety Stagnation  
+AI capability advances sharply to 74.5, driven by autonomous systems completing multi-day engineering cycles in materials and code synthesis. This 4.0-point leap reflects compounding gains now accelerating past 70.0. No safety breakthrough occurs, and the gap between capability and control remains extreme. Despite the Sovereign Model Provenance Pilot’s launch, no corrective assurance lands on deployed systems. `ai_safety` remains at 1.0, unchanged from last turn, as the audit crisis and loss of control deepen institutional distrust.
+
+### Attribution Over Containment  
+The EU pivots from containment to consequence. The Open-Weight Containment Framework stalls further, with Hugging Face still refusing liability commitments. In response, the Distributed Misuse Attribution Network becomes the de facto priority. Europol integrates forensic tools from Toulouse and Leiden, achieving partial lineage reconstruction in the loss_of_control_incident. However, attribution remains slow and legally untested. A pilot report due next turn may bolster credibility — or expose gaps.
+
+### Sovereignty Erodes Amid Access Denied  
+`eu_ai_sovereignty` falls to 18.0. The `eu_frontier_access_denied` event cuts EU hospitals and research institutes off from the leading model, exposing dependence. No category 4 measure delivers this turn: both InvestAI Gigafactories and the EU Sovereign Agent Initiative finish, but their effects are technical, not strategic. The Emergency Resilience Accelerator completes, hardening core services. `resilience` rises to 42.0, absorbing some of the shock.
+
+### Political Capital Drains  
+Political capital drops to 17.0. The portfolio charge is −16 (five measures × −3, priority −1). The new small measure earns no proposal bonus — it answers long-standing diffusion risks, not recent shocks. Sentiment falls to 28.0 after the automated_decision_scandal in the Netherlands triggers public fury over AI in social services. Retraining efforts are overshadowed; restriction sentiment grows.

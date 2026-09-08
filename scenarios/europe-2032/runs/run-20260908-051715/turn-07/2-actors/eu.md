@@ -1,0 +1,23 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — **finished**
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — **finished**
+- `Labour Transition Accelerator (category 7, costs 3 per turn, started turn 3, finishes on turn 6): Launch a pan-EU retraining and wage-insurance programme targeting workers displaced by AI in legal, administrative, and mid-level technical roles.` — **finished**
+- `Mandatory Pre-Release Evaluation Regime (category 1, costs 3 per turn, started turn 3, finishes on turn 6): Establish independent, third-party evaluation of high-capability models before public release, with authority to delay deployment pending safety verification.` — **finished**
+- `Openweight Registration and Verification Regime (category 3, costs 3 per turn, started turn 4, finishes on turn 7): Require all open-weight models above capability 45.0 distributed within the EU to be registered with the European AI Office and verified for weight integrity and provenance.`
+- `Biosafety Emergency Protocol Activation (category 6, costs 3 per turn, started turn 5, finishes on turn 7): Trigger emergency biosecurity readiness across EU member states, mandating rapid detection, containment and public communication protocols for AI-enabled biological threats, with joint funding and coordination through HERA.`
+
+## New measure
+None this turn.  
+We are not proposing a new measure because political capital has collapsed to 9.0 — below the threshold where new initiatives reliably start — and the cyber_major_incident has consumed bandwidth across institutions; we must consolidate enforcement of existing regimes before adding further obligations.
+
+## Priority
+**Openweight Registration and Verification Regime** — because the diffusion of 51.0-capable open models into academic and cloud environments has created an irreversible attack surface, and with the U.S. retreating from coordination and China non-compliant, this is the only lever left to constrain distributed capability at scale.
+
+## In practice
+We are treating the final months of the Openweight Registration Regime as a make-or-break enforcement window. The European AI Office has activated its emergency powers under Article 17 of the AI Act, designating the two Chinese-hosted models detected in Hungary and Greece as non-compliant and initiating sanctions under the Digital Markets Act against the cloud platforms that enabled their deployment. We are working with national cybersecurity agencies to deploy blockchain-based weight-signing telemetry at compute access points, and with customs authorities to treat unregistered model weights as controlled digital goods — a precedent we are codifying through delegated acts under the Cyber Resilience Act. France and Germany have agreed to pilot real-time provenance tracking in their national research clouds, but only with assurances that academic freedom is preserved; we are offering audit-safe sandboxes for registered models as a compromise.
+
+The Biosafety Emergency Protocol is entering its final phase under visible strain. HERA has unlocked €1.2bn in emergency funding, but rollout remains patchy: Italy and Spain have delayed dual-use review mandates, citing legal uncertainty. We are fast-tracking integration of AI-driven wastewater monitoring through the ECDC, with strict EDPB oversight to prevent mission creep, and the red-team exercise at the Robert Koch Institute will simulate a lab leak amplified by AI-designed vector transmission. This is not about achieving full readiness — it is about proving that detection can precede catastrophe. The modest resilience gain we are seeing (now at 46.0) is not from systemic hardening, but from narrow, high-leverage interventions that buy time.
+
+Meanwhile, the collapse of ai_safety to 7.0 has exposed the fatal gap between law and capacity: the Mandatory Pre-Release Evaluation Regime is on the books but not in the field. We have finalised the Evaluation Consortium’s structure and secured liability shielding for participating states, but without trained evaluators or functional test suites, certification remains symbolic. The U.S. posture shift has hardened our stance: no developer — American or otherwise — will access the single market without full telemetry and audit rights. But without political capital to expand enforcement, this is a line in the sand, not a firewall.

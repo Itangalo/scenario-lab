@@ -1,0 +1,207 @@
+[
+  {
+    "id": "campaign_backlash",
+    "probability": 0.32,
+    "probability_samples": [
+      0.32,
+      0.32,
+      0.32
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.015890152186094797,
+    "triggered": true
+  },
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.0766524707084899,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5407449094297668,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.698610828776821,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9034641737220109,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7700771143417867,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.79955794227944,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.24971161764789263,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.1366666666666667,
+    "probability_samples": [
+      0.13,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.06326717202072307,
+    "triggered": true
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5981451997810032,
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_strike_ai",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Public-sector unions in France, Germany, and Spain coordinate a wave of strikes against AI-driven administrative restructuring, citing the Emergency Resilience Surge as a Trojan horse for mass automation in healthcare and tax services. The action disrupts digital service rollouts and forces national governments to negotiate implementation delays.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.42486142315984254,
+    "triggered": false
+  },
+  {
+    "id": "emergent_open_source_cyber_toolkits",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "Following the partial leaks that pushed openweight_capability to 44.0, underground developer communities begin packaging and distributing AI-powered cyber exploitation toolkits with user-friendly interfaces, enabling non-expert attackers to launch targeted ransomware and data exfiltration campaigns. These toolkits spread rapidly on dark web forums and are traced to several small-scale breaches.",
+    "probability_samples": [
+      0.28,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.42825116912262506,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regional_aid_pact",
+    "probability": 0.06999999999999999,
+    "emergent": true,
+    "description": "In response to the uneven rollout of the Emergency Resilience Surge and growing fragmentation, a coalition of medium-sized EU states — led by the Netherlands, Austria, and Finland — forms a regional mutual aid pact for cyber incident response, pooling red teams, threat intelligence, and spare compute capacity. The pact operates outside formal EU structures but aligns with ENISA standards, creating a de facto two-tier resilience system within the Union.",
+    "probability_samples": [
+      0.0,
+      0.21,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_mobilisation",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "Trade unions in Germany, France, and Spain launch a coordinated campaign demanding binding EU-wide regulations on AI-driven public-sector layoffs, citing the automation of administrative roles in tax offices and hospitals. The movement gains traction in national parliaments and forces the European Commission to open emergency consultations, creating political pressure for a formal response despite low political capital.",
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_strike_wave",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Public-sector workers in multiple member states—particularly in healthcare administration, tax processing, and local government—initiate coordinated strikes in response to accelerated AI-driven layoffs, citing the Emergency Resilience Surge's automation of backend systems as a direct threat. The strikes disrupt digital service rollouts and force emergency negotiations at the EU level, exposing fractures between national labour policies and EU digital transformation goals.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

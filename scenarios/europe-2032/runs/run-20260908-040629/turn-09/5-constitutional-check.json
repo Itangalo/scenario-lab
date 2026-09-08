@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 53.0 to 57.0 (+4.0), but `ai_capability` only increased by +2.0 (from 66.5 to 68.5). Since `openweight_capability` cannot exceed `ai_capability` and must accumulate at a rate no faster than the frontier, a +4.0 jump in openweight while frontier capability rises only +2.0 implies openweight has caught up or possibly overtaken the frontier without justification. The narrative offers no catastrophic physical destruction of non-openweight compute or other exceptional event that would reset the balance; such a shift would require either a massive leap in open-weight-specific deployment or a collapse in proprietary systems, neither of which is described.\n- Metric movement violates realism under Invariant 1 and Modelling Choice 9: While the absolute change is within 25 points, the *relative acceleration* of `openweight_capability` compared to `ai_capability` contradicts the fixed underlying rates of progress assumed in the constitution. The scenario assumes steady, unannounced progression — not sudden divergence in accumulation rates — and this update implies an unexplained regime shift in how capability is distributed across the ecosystem."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

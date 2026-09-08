@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Sovereign Agent Execution Initiative −3, priority −1 = −7  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 24 last turn, three category 4 measures finish t6 +3, capability rose 1.5 −1 = 25  
+US_POSTURE: CONSOLIDATION  
+emergent_regulatory_fragmentation -- first noted turn 1, listed in 5 turn(s) so far: National AI regulatory bodies continue to diverge in enforcement practices despite the AI Act's harmonization goals, driven by differing national risk tolerances and industrial priorities. This creates compliance friction for cross-border AI deployment and weakens the Union's collective bargaining position externally.  
+emergent_compute_nationalism -- first noted turn 4, listed in 3 turn(s) so far: Several EU member states, citing national security and energy sovereignty, begin unilaterally restricting the export of electricity and grid access to foreign-owned AI data centres. The moves are framed as climate measures but target US hyperscalers, escalating tensions within the Single Market. The European Commission opens infringement proceedings, but enforcement lags behind political momentum.  
+emergent_labour_unrest_ai -- first noted turn 4, listed in 3 turn(s) so far: Coordinated strikes and protests by legal, administrative and public-sector unions erupt in France, Germany and Belgium, demanding binding limits on AI deployment in hiring and service delivery. The actions disrupt court scheduling, tax processing and university admissions, forcing regional governments into emergency negotiations. The unrest is not nationwide but is persistent and media-visible, feeding into broader public skepticism.

@@ -1,0 +1,10 @@
+PORTFOLIO CHARGE: DCRB −3, priority −1 = −4  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 1.0 last turn, no capacity event, capability rose 0.5 −1 = 0.0  
+US_POSTURE: CONSOLIDATION
+
+EMERGING DEVELOPMENTS:  
+- `emergent_open_research_collective` -- first noted turn 10, listed in 4 turn(s) so far: A transnational network of independent researchers continues to publish red-teaming results on AI-designed toxins and disinformation vectors. Their work circulates in academic and biosecurity circles but remains excluded from formal policy channels.
+- `emergent_global_biosecurity_leak` -- first noted turn 13, listed in 1 turn(s) so far: A classified red-teaming exercise from a leading AI lab, detailing the synthesis of a high-pathogenicity respiratory agent using commercially available DNA services, is leaked to a transnational journalist collective. The document includes step-by-step model-generated protocols and bypass methods for existing screening regimes, triggering emergency biosecurity reviews in multiple countries and forcing public debate on open-model risks. The leak originates from within a subcontracted bioethics review board, not the lab itself.
+- `emergent_dcrb_defection` -- first noted turn 13, listed in 1 turn(s) so far: A senior technical lead from the Crisis Cognition Cell in Luxembourg defects to a private AI safety consortium based in Switzerland, taking with them internal anomaly detection models and classified assessments of DCRB node vulnerabilities. The defector claims the EU's emergency architecture is both illegitimate and technically unsound, and publishes a manifesto calling for distributed, non-state oversight of cognitive infrastructure. This triggers a crisis of confidence in the DCRB's operational secrecy and raises questions about its long-term sustainability.

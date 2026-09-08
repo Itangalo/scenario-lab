@@ -1,0 +1,11 @@
+### Accelerating Frontier, Failing Defenses  
+The global AI frontier advances steadily, with capability now at 54.5, driven by compressed release cycles and self-reinforcing training pipelines. A major open-weight model is released this autumn, widely downloaded and rapidly fine-tuned for specialized tasks. While it marks a significant leap in accessibility and downstream performance, its base capabilities build incrementally on prior foundations. Openweight_capability rises to 42.0, reflecting early adoption and adaptation, but remains 12.5 points behind the closed frontier. Offensive cyber tools derived from it begin circulating in underground forums, signaling a shift toward distributed access—but not yet parity.
+
+A covert intrusion—detected only by chance—penetrated grid operators in two EU countries, a major port, and a water utility. No disruption occurred, but the depth of access shocks officials. Existing detection systems failed entirely. The breach was not AI-coordinated in a novel way, but its stealth and persistence suggest capabilities now within reach of non-state actors armed with open models.
+
+### EU Response: Ambition Meets Friction  
+The European Union announces the proposed EU AI Emergency Response Corps as its new priority, aiming to close the response gap. Legal drafting proceeds under internal security and internal market clauses, and HaDEA begins coordination with ENISA and national agencies. However, Germany and Sweden question the supranational mandate, and the Council delays adoption of the legal basis past December. The measure remains in formation, with no operational capacity by year’s end.
+
+To avoid overextension, work continues at reduced pace on the Gigafactories and Tech Sovereignty Package. Site selection advances in Finland and Spain, though local opposition in Poland delays grid commitments. The private investment lever in the Tech Package remains untested—no firm has yet signed on under the new terms.
+
+Public sentiment sours further as mid-level job losses in legal and administrative sectors become impossible to ignore. Media frames the cyber breach as a "near miss" due to foreign dependence. Protests grow at proposed data centre sites, now seen as symbols of unaccountable technological acceleration.

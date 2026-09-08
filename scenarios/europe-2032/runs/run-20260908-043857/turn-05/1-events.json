@@ -1,0 +1,41 @@
+[
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_regional_aid_pact",
+    "probability": 0.21666666666666667,
+    "emergent": true,
+    "description": "In response to growing regional disparities in AI infrastructure investment and repeated incidents affecting southern and eastern member states, a coalition of mid-sized EU countries forms an informal mutual aid pact for cyber and AI incident response. The pact includes shared rapid-response teams, joint simulations, and pooled reserve compute for crisis deployment, operating outside formal EU structures but with tacit Commission approval. It emerges as a workaround to slow central coordination and signals growing fragmentation in implementation despite unity in policy.",
+    "probability_samples": [
+      0.2,
+      0.2,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_alliance",
+    "probability": 0.26666666666666666
+  }
+]

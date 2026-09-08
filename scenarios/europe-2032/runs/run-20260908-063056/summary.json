@@ -1,0 +1,352 @@
+{
+  "scenario": "Europe 2032 — Verification-bounded",
+  "total_turns": 13,
+  "final_metrics": {
+    "ai_capability": 71.5,
+    "openweight_capability": 59.0,
+    "ai_safety": 1.0,
+    "resilience": 47.0,
+    "eu_ai_sovereignty": 8.0,
+    "eu_political_capital": 6.0,
+    "public_sentiment": 25.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 54.0,
+        "openweight_capability": 42.0,
+        "ai_safety": 32.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 45.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 55.5,
+        "openweight_capability": 43.5,
+        "ai_safety": 29.0,
+        "resilience": 42.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 35.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 57.5,
+        "openweight_capability": 45.0,
+        "ai_safety": 24.0,
+        "resilience": 41.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 31.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 59.0,
+        "openweight_capability": 47.0,
+        "ai_safety": 18.0,
+        "resilience": 46.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 30.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 59.5,
+        "openweight_capability": 48.0,
+        "ai_safety": 15.0,
+        "resilience": 45.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 24.0,
+        "public_sentiment": 37.0
+      }
+    },
+    {
+      "turn": 6,
+      "metrics": {
+        "ai_capability": 60.5,
+        "openweight_capability": 49.0,
+        "ai_safety": 13.0,
+        "resilience": 43.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 22.0,
+        "public_sentiment": 32.0
+      }
+    },
+    {
+      "turn": 7,
+      "metrics": {
+        "ai_capability": 62.0,
+        "openweight_capability": 50.5,
+        "ai_safety": 13.0,
+        "resilience": 42.0,
+        "eu_ai_sovereignty": 16.0,
+        "eu_political_capital": 22.0,
+        "public_sentiment": 32.0
+      }
+    },
+    {
+      "turn": 8,
+      "metrics": {
+        "ai_capability": 63.5,
+        "openweight_capability": 52.0,
+        "ai_safety": 8.0,
+        "resilience": 43.0,
+        "eu_ai_sovereignty": 14.0,
+        "eu_political_capital": 19.0,
+        "public_sentiment": 30.0
+      }
+    },
+    {
+      "turn": 9,
+      "metrics": {
+        "ai_capability": 65.0,
+        "openweight_capability": 54.0,
+        "ai_safety": 7.0,
+        "resilience": 45.0,
+        "eu_ai_sovereignty": 12.0,
+        "eu_political_capital": 18.0,
+        "public_sentiment": 31.0
+      }
+    },
+    {
+      "turn": 10,
+      "metrics": {
+        "ai_capability": 67.0,
+        "openweight_capability": 55.0,
+        "ai_safety": 0.0,
+        "resilience": 46.0,
+        "eu_ai_sovereignty": 11.0,
+        "eu_political_capital": 14.0,
+        "public_sentiment": 26.0
+      }
+    },
+    {
+      "turn": 11,
+      "metrics": {
+        "ai_capability": 68.5,
+        "openweight_capability": 57.0,
+        "ai_safety": 1.0,
+        "resilience": 48.0,
+        "eu_ai_sovereignty": 10.0,
+        "eu_political_capital": 12.0,
+        "public_sentiment": 24.0
+      }
+    },
+    {
+      "turn": 12,
+      "metrics": {
+        "ai_capability": 70.0,
+        "openweight_capability": 58.5,
+        "ai_safety": 1.0,
+        "resilience": 48.0,
+        "eu_ai_sovereignty": 9.0,
+        "eu_political_capital": 8.0,
+        "public_sentiment": 24.0
+      }
+    },
+    {
+      "turn": 13,
+      "metrics": {
+        "ai_capability": 71.5,
+        "openweight_capability": 59.0,
+        "ai_safety": 1.0,
+        "resilience": 47.0,
+        "eu_ai_sovereignty": 8.0,
+        "eu_political_capital": 6.0,
+        "public_sentiment": 25.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "ai_investment_collapse",
+    "bio_uplift_findings",
+    "campaign_security_hawk",
+    "capability_jump",
+    "capability_plateau_evidence",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_annulled",
+    "election_consolidation",
+    "emergent_ai_moratorium_push",
+    "emergent_ai_talent_exodus",
+    "eu_frontier_access_denied",
+    "eval_anomaly_reports",
+    "export_control_escalation",
+    "joint_threat_response",
+    "labour_displacement",
+    "member_state_defection",
+    "openweight_frontier_release",
+    "supply_chain_coercion",
+    "verification_widens"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 2,
+      "id": "capability_plateau_evidence"
+    },
+    {
+      "turn": 2,
+      "id": "emergent_ai_talent_exodus"
+    },
+    {
+      "turn": 3,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 3,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 3,
+      "id": "campaign_security_hawk"
+    },
+    {
+      "turn": 4,
+      "id": "capability_jump"
+    },
+    {
+      "turn": 4,
+      "id": "emergent_ai_moratorium_push"
+    },
+    {
+      "turn": 4,
+      "id": "verification_widens"
+    },
+    {
+      "turn": 5,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 5,
+      "id": "ai_investment_collapse"
+    },
+    {
+      "turn": 5,
+      "id": "capability_plateau_evidence"
+    },
+    {
+      "turn": 5,
+      "id": "election_consolidation"
+    },
+    {
+      "turn": 6,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 6,
+      "id": "eu_frontier_access_denied"
+    },
+    {
+      "turn": 6,
+      "id": "supply_chain_coercion"
+    },
+    {
+      "turn": 6,
+      "id": "joint_threat_response"
+    },
+    {
+      "turn": 7,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 7,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 7,
+      "id": "election_annulled"
+    },
+    {
+      "turn": 7,
+      "id": "supply_chain_coercion"
+    },
+    {
+      "turn": 8,
+      "id": "verification_widens"
+    },
+    {
+      "turn": 8,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 8,
+      "id": "election_annulled"
+    },
+    {
+      "turn": 8,
+      "id": "eu_frontier_access_denied"
+    },
+    {
+      "turn": 9,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 10,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 10,
+      "id": "capability_jump"
+    },
+    {
+      "turn": 10,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 10,
+      "id": "supply_chain_coercion"
+    },
+    {
+      "turn": 11,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 12,
+      "id": "capability_jump"
+    },
+    {
+      "turn": 12,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 13,
+      "id": "labour_displacement"
+    }
+  ],
+  "last_updated": "2026-09-08T07:00:24.704844",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_eu_ai_crisis_cabinet",
+      "description": "In response to the repeated cyber incidents and collapsing political capital, a coalition of smaller member states pushes through the formation of an emergency EU AI Crisis Cabinet, bypassing national vetoes under Article 222. The body is granted temporary authority to coordinate cross-border AI operations, override national procurement decisions, and allocate sovereign compute resources, marking a significant but contested centralization of power.",
+      "first_turn": 12,
+      "last_turn": 13
+    },
+    {
+      "id": "emergent_openweight_leak_chain",
+      "description": "A chain of open-weight releases originating from a compromised research collaboration in Eastern Europe leaks models with emergent tool-use and planning capabilities. The models are not state-of-the-art but are easily modifiable and widely distributed through underground developer networks, accelerating the openweight capability curve despite no official release.",
+      "first_turn": 12,
+      "last_turn": 13
+    }
+  ],
+  "completed_at": "2026-09-08T07:00:31.085526"
+}

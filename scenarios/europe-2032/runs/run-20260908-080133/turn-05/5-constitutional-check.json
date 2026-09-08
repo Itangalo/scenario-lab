@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 51.0 to 58.0 (+7.0) while `ai_capability` only increased from 60.0 to 61.0 (+1.0). This violates the rule that `openweight_capability` may never exceed `ai_capability`. At no point can open-weight capability surpass the frontier AI capability, even transiently, without a corresponding increase in the latter. The narrative does not justify this overtake, and the metrics themselves breach the constitutional ceiling.\n- Narrative Constraint 8 violated: The line \"the **election_retrenchment** in the US — confirmed this turn — removes a key partner without immediate benefit\" telegraphs a future political posture by naming and characterizing the outcome of the US election before Turn 6, when `US_POSTURE:` is to be written. This anticipates and implies a specific future event (retrenchment) that should only be reflected in the posture line next turn, not narrated as settled fact now."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

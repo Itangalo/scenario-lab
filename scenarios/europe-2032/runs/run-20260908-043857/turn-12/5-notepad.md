@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Sovereign Reflex Architecture Integration −3, Hardened Sovereign Core Network −3, priority −1 = −7  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: capital -13, sentiment 3 -> none  
+SOVEREIGNTY: 21.0 last turn, no capacity event, Hardened Sovereign Core Network in flight +0, capability rose 4.0 −1 = 20.0 → final 19.0 due to unresolved access fragility and member state defiance  
+emergent_global_brain_drain -- first noted turn 7, listed in 6 turn(s) so far: Top AI researchers and engineers from leading labs continue relocating en masse to neutral jurisdictions or to academic enclaves with guaranteed autonomy, citing loss of control, safety collapse, and political instability. This exodus fragments the frontier development effort and slows coordination, but also disperses dangerous knowledge more widely.  
+emergent_ai_refugee_crisis -- first noted turn 10, listed in 4 turn(s) so far: A growing number of AI developers and red-teamers from destabilized or overregulated labs begin seeking asylum in EU member states under new 'cognitive dissident' protections, bringing valuable expertise but straining integration systems and raising security concerns. The influx accelerates the JCA's talent pipeline but fuels backlash narratives.  
+US_POSTURE: Restrained Engagement

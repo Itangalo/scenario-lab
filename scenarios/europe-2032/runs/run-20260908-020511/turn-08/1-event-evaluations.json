@@ -1,0 +1,270 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.09785170695465628,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5573340073092593,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.24468663039977856,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.11886478544663914,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9911986457055437,
+    "triggered": false
+  },
+  {
+    "id": "rsi_onset",
+    "probability": 0.3499999999999999,
+    "probability_samples": [
+      0.35,
+      0.35,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3055956774267241,
+    "triggered": true
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.48585337410802587,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6957924316704799,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.14,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5653107184028765,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8637307058980799,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7711290784758902,
+    "triggered": false
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6070473242563047,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.29971778583296094,
+    "triggered": false
+  },
+  {
+    "id": "emergent_dutch_constitutional_crisis",
+    "probability": 0.14666666666666667,
+    "emergent": true,
+    "description": "The Dutch Constitutional Court rules that the ASML Jurisdictional Safeguard Directive violates national sovereignty over corporate exports, triggering a standoff between The Hague and Brussels. The European Commission threatens infringement proceedings, while the Dutch government halts all implementation and invokes emergency powers to maintain control over export licensing. This freezes EU-level enforcement of semiconductor controls and exposes a critical legal fracture in strategic autonomy.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.22
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7676468219411129,
+    "triggered": false
+  },
+  {
+    "id": "emergent_eu_sovereign_model_launch",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "A coalition of EU national labs and public AI institutes, leveraging partial compute from the completed InvestAI Gigafactories, launches the first sovereignly trained model at capability level 59.0 — narrowly surpassing openweight_capability. Though not yet competitive with the closed frontier, it enables restricted public-sector deployment without external dependencies. The launch is hailed as a symbolic breakthrough but strained by limited scale and integration bottlenecks due to U.S. chip restrictions.",
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.862176336974649,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.0,
+      0.13,
+      0.13
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8516869515629609,
+    "triggered": false
+  },
+  {
+    "id": "emergent_asml_backlash",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "The Dutch constitutional challenge to the ASML Jurisdictional Safeguard Directive gains traction in the European Court of Justice, with early indications that national export control rights may override centralized EU authority. This legal uncertainty freezes several planned semiconductor shipments, undermining the credibility of EU-level supply chain leverage and prompting emergency consultations among member states dependent on high-end lithography access.",
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.049999999999999996,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.15
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.13108527366795253,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.12
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.43803778545704963,
+    "triggered": false
+  },
+  {
+    "id": "emergent_eu_cyber_defense_alliance",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "In response to the recent cyberattack and the Emergency Cyber Shield rollout, a coalition of EU member states with advanced cyber units proposes a binding, real-time intelligence-sharing pact outside existing NATO structures. The initiative gains traction rapidly as Belgium, Poland, and Finland commit resources, framing it as a test of European strategic autonomy. If formalized, it would significantly accelerate resilience integration and create a de facto EU cyber command.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

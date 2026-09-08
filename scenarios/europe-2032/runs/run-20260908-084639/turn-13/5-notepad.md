@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Sovereign Compute Foundation Programme −3, Resilience Surge Initiative −3, Sovereign Cloud Alliance Interim Access Pact −3, priority −1 = −10  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 13.0 last turn, no category 4 completion, supply_chain_coercion t13 −2, capability rose 2.5 −1 = 12.0  
+US_POSTURE: RETRENCHMENT  
+emergent_global_ai_worker_strike -- first noted turn 12, listed in 2 turn(s) so far: A decentralized coalition of AI ethics researchers, open-source developers, and displaced tech workers organizes a coordinated 'strike' by withholding model updates, audit contributions, and data labeling at scale. The action spans multiple jurisdictions and platforms, significantly slowing down commercial fine-tuning cycles and open-weight improvements for several weeks. It emerges as a direct response to the stagnation in safety governance and the accelerating capability-safety gap.  
+emergent_sovereign_cloud_alliance -- first noted turn 12, listed in 2 turn(s) so far: In response to repeated access denials and supply chain coercion, a group of mid-tier technological democracies—including Canada, South Korea, and the Nordic states—initiates informal talks with the EU to form a 'Sovereign Cloud Alliance'. The goal is to jointly fund and interlink national compute reserves to create a mutual access pact for critical AI workloads, reducing dependence on any single foreign provider. The initiative remains non-binding but gains momentum as trust in unilateral access erodes.

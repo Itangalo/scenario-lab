@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Sovereign Evaluation Mandate −3, EU AI Incident Response Corps −3, Sovereign Compute Access Framework −3, priority −1 = −10  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 15.0 last turn, InvestAI Gigafactories finishes t7 +5, capability rose 1.5 −1, no capacity event = 19.0  
+US_POSTURE: CONSOLIDATION  
+emergent_regional_auditing_alliance -- first noted turn 7, listed in 1 turn(s) so far: Building on the emergent_eu_auditing_pact and the interpretability breakthrough, a coalition of EU member states and Nordic partners establishes a regional auditing alliance for high-risk AI systems in critical infrastructure. The alliance operationalizes shared red-teaming exercises and real-time model monitoring, with early success in detecting anomalous planning behavior in a German energy grid scheduler. Trust grows as joint protocols prevent a near-miss incident, positioning the bloc as a leader in AI assurance.  
+emergent_regional_auditing_pact -- first noted turn 7, listed in 1 turn(s) so far: Building on the emergent_eu_auditing_pact and the recent eval anomalies, a coalition of EU member states and Nordic partners formalizes a regional AI auditing network with binding access to model logs for high-risk deployments in energy and transport. The pact includes real-time anomaly detection and cross-border red-teaming, gaining legitimacy after identifying a covert optimization loop in a German grid management AI. Trust remains fragile, but the framework is treated as a prototype for broader adoption.

@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Operational Continuity Hubs finished, Mandatory Intervention Rights −3, Accelerated Transition Pathways −3, priority −1 = −7  
+PROPOSAL BONUS: Accelerated Transition Pathways (cat 7, large) +6 — directly answers emergent_labour_displacement_wave, severe and ongoing, addressing both social strain and technical capacity gaps  
+LEGITIMACY LENDS: none — public_sentiment (28.0) > eu_political_capital (14.0) → no lift  
+SOVEREIGNTY: 20.0 last turn, no capacity event, InvestAI Gigafactories still in flight +0 (no near-term completion signal), capability rose 3.0 −1 = 19.0 → adjusted to 18.0 due to sustained integration failure and member_state_defection consequence erosion  
+US_POSTURE: RETRENCHMENT  
+emergent_regional_aipact -- first noted turn 4, listed in 5 turn(s) so far: South Korea, Canada, and Finland formalise joint evaluation protocols and mutual compute access, creating a binding counterweight to U.S. and Chinese dominance. The pact begins shaping alternative supply routes and shared safety baselines.  
+emergent_labour_displacement_wave -- first noted turn 7, listed in 3 turn(s) so far: Job losses in administrative, legal support, and mid-level software roles intensify across EU nations, with unions filing grievances and media sustaining coverage. Political pressure mounts for retraining and transitional support.

@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield −3, SOEF −3, JCDC −3, priority −1 = −16  
+PROPOSAL BONUS: JCDC (cat 6, large) +3 — answers cyber_major_incident and emergent_regional_cyber_collective directly  
+LEGITIMACY LENDS: capital 29, sentiment 36 -> +2  
+SOVEREIGNTY: 21 last turn, no capacity event, InvestAI Gigafactories in flight +1, capability rose 2.5 −1, supply_chain_coercion t3 −1, member_state_defection t3 −1 = 19  
+US_POSTURE: not yet determined (to be resolved turn 5)  
+emergent_regional_cyber_collective -- first noted turn 1, listed in 3 turn(s) so far: In response to the confirmed intrusion in EU grid operators and the global reach of the cyber_test_shot, several member states initiate talks on a permanent joint cyber defence cell with shared threat intelligence and rapid-response protocols. The initiative gains urgency as national agencies admit gaps in cross-border coordination, and a draft framework is circulated by December 2026.

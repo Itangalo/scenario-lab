@@ -1,0 +1,25 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Redirect the Minimal Sovereign Stack from securing sovereign *crisis continuity* to ensuring *sovereign threat detection and response*—establishing an EU-operated, real-time monitoring capability for autonomous AI agents in critical infrastructure by June 2033, built on the hardened compute nodes in Grenoble, Pilsen, and Oulu, with full EDPB-certified safeguards and integration into a transnational early-warning network  
+- Grounds: The **opaque_reasoning** event renders all prior interpretability-based oversight obsolete, collapsing the technical foundation of our monitoring strategy. The **emergent_global_scientists_coalition** offers a viable alternative path through open, reproducible detection methods, but only if the EU can act as an interoperable node—not a silo. Meanwhile, **eu_frontier_access_denied** confirms that external tools cannot be relied upon for threat visibility. The original focus on *crisis continuity*—keeping systems running—is no longer sufficient: we must now *see the threat*, or we are blind inside our own defences. This shift does not abandon the goal of sovereignty, but reorients it from passive resilience to active sensing. The cost is credibility with security hawks who wanted hardened compute as an end in itself, and further strain on civil liberties advocates who see any real-time monitoring as overreach—especially given `public_sentiment` at 20.0. But without this pivot, the Crisis Compute nodes become secure tombs for obsolete models.
+
+## Portfolio  
+- Minimal Sovereign Stack Phase 1: Crisis Compute & Agent Monitoring Core (category 4, costs 2 per turn, started turn 11, finishes on turn 13): Launch a stripped-down sovereign capability focused on exaflop-scale secure compute for crisis continuity and a public monitoring system for autonomous agents in critical infrastructure — **finished**  
+- Crisis Compute Activation: Hardened Exaflop Nodes in Grenoble, Pilsen, Oulu (category 4, costs 2 per turn, started turn 13, finishes on turn 13): Stand up three sovereign, physically secured exaflop computing nodes with grid priority and direct access for essential public agencies, operational within six months — **finished**
+
+## New measure  
+**Sovereign Threat Detection Layer: Real-Time Monitoring of Autonomous Agents via EU-Certified Detection Protocol**  
+Deploy a lightweight, EDPB-certified, real-time monitoring system across the newly activated hardened compute nodes to detect stealthy AI agent activity in energy, health, and transport systems, using detection methods interoperable with the emergent global scientists’ coalition.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size: small`  
+`Finishes on turn: 15`  
+`Targeted effect:` ai_safety +12 (functional detection of unauthorised agents), resilience +6, eu_political_capital -2  
+`Applies to:` EU jurisdiction, binding on essential service operators and public agencies using sovereign compute infrastructure
+
+## Priority  
+**Sovereign Threat Detection Layer: Real-Time Monitoring of Autonomous Agents via EU-Certified Detection Protocol** — because the **opaque_reasoning** event has made human-readable chains of thought obsolete, and without a new detection paradigm, the EU is blind to autonomous threats even on its own sovereign infrastructure; the hardened nodes are now live, but they are useless without eyes.
+
+## In practice  
+This turn, we are pivoting from compute activation to sovereign sensing. The nodes in Grenoble, Pilsen, and Oulu are now online, powered by repurposed Digital Europe funds and secured under Frontex-led protocols. But their value depends entirely on what runs on them. We are tasking ENISA, in coordination with the Public AI Safety Unit and the newly engaged transnational scientists’ coalition, to operationalise a detection protocol by turn 15 that can identify anomalous agent behaviour even in systems whose reasoning is no longer legible. This protocol will be built on open, reproducible methods—particularly the coalition’s bio-design detection framework—and adapted to cyber and infrastructure domains.  
+
+We are submitting the design for co-certification by the EDPB under Article 15 of the AI Act, with strict limits on data retention and scope: the system monitors processes, not people. Access will be granted only to designated incident response teams, with audit logs reviewed quarterly by the European Ombudsman. To secure Council buy-in, we are framing this not as surveillance but as *defensive observability*—a condition of safe operation on sovereign infrastructure. Host states will be offered priority access to detection alerts and integration into national CERTs. Non-host states, still resentful of the Crisis Compute rollout, will be reassured by the universal application of the protocol and the sunset clause tied to the restoration of verifiable external AI safety standards. This is not the monitoring system we wanted. It is the one we can build now—before the next blind spot kills someone.

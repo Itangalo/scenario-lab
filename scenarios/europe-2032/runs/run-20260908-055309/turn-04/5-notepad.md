@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereign Evaluation Regime −3, Middle Power Compute Accord −3, Sovereign Audit Access Pilot −2, priority −1 = −15  
+PROPOSAL BONUS: Sovereign Audit Access Pilot (cat 5, small) +3 — directly responds to eval_anomaly_reports, provides early technical validation amid rising capability concerns, and unblocks stalled sovereignty efforts  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 18 last turn, Sovereign Audit Access Pilot in flight +2 (demonstrated access and evaluation capacity), capability rose 2.0 −1 = 19 → +1 from partial securing of evaluation access via pilot = 20

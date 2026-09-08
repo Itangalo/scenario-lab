@@ -1,0 +1,20 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`
+- `Secure Audit Access for EU-Certified Evaluators (category 5, costs 2 per turn, started turn 2, finishes on turn 3): Establish binding access rights for EU-vetted evaluators to conduct real-time model inspections and agent-behaviour monitoring in high-risk systems operated by foreign providers within EU critical infrastructure` — **finished this turn**
+- `EU-Hosted Red Teaming Facility (category 5, costs 2 per turn, started turn 3, finishes on turn 4): A public technical capability to continuously probe the most capable foreign AI systems under controlled conditions, simulating adversarial use cases and detecting emergent coordination risks` — **finishes this turn**
+- `Sovereign Access to Safety-Critical Weights (category 5, costs 2 per turn, started turn 4, finishes on turn 5): Establish a legal and technical pathway for EU-certified institutions to obtain read-only, auditable access to model weights used in systems operating within EU critical infrastructure, under strict security protocols and with liability shielding for compliance`
+
+## New measure
+**None this turn.**  
+We are waiting for the outcome of transatlantic negotiations on weight access and the full operationalisation of the red teaming facility before expanding our public technical capacity further.
+
+## Priority
+**Sovereign Access to Safety-Critical Weights (category 5)** — because the failure of telemetry-based audit confirms that access to weights is the only remaining lever to verify safety in systems that are already too capable to trust blindly, and because the interpretability breakthrough creates a narrow window where providers may accept weight disclosure as the price of fast-tracked safety recognition.
+
+## In practice
+We are acting through the European Digital Infrastructure Board, reinforced by emergency delegation under the Critical Entities Resilience Directive and the Digital Markets Act. With Secure Audit Access concluded but unimplemented—no provider granted real-time telemetry, and Washington blocked cooperation—we have pivoted to what is still within reach: sovereign access to weights. The interpretability breakthrough changes the calculus. For the first time, a safety technique has landed that allows prediction of dangerous reasoning before it executes. The labs want it adopted universally because it stabilises their own operations. We are offering a bargain: the EU will fast-track recognition of any provider’s safety claims if, in return, they submit weights used in EU critical infrastructure to secure, read-only audit by EU-certified institutions. No copying, no real-time control—just verification that the systems keeping our energy grids, hospitals, and transport networks running do not contain embedded coordination risks.
+
+We are targeting energy, health, and transport first, where dependency is highest and failure least tolerable. Germany and France, already invested in red teaming nodes, are first in line for audit insights. For smaller states like Estonia and Cyprus, burned by inadequate support during the last cyber incident, we are embedding a hard clause: any provider refusing weight access will be disqualified from public contracts in critical sectors across all member states. This leverage is thin, but it is real. The U.S. security hawk faction will denounce this as IP seizure—but the atlanticist coalition gives us a counter-narrative: shared risk demands shared assurance. This is not about copying models. It is about verifying that the systems upon which our societies depend are not ticking time bombs. We are not asking for everything. We are asking for what we must have.

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The narrative states the EU advanced \"two large category 4 measures and prioritised one\", which violates Constitutional Constraint 5 (\"At most one new measure per turn, and at most one named priority\"). Introducing two large measures and a priority in the same turn is invalid, regardless of framing or justification.\n- Metric movement unjustified by rules or narrative: The drop in `eu_political_capital` from 48.0 to 41.0 (−7.0) is not supported by the provided terms in the notepad. The notepad only accounts for a −7 charge from portfolio cost (−3, −3, −1), but no legitimacy lending or other positive terms are listed. However, political capital should not drop more than the net of charges and bonuses. A drop of 7 points may be within bounds if fully charged, but the narrative implies additional unmodelled penalties (\"external shocks brought no credit — only penalties\") that are not reflected in the notepad’s accounting. This suggests an unauthorised off-book penalty, violating Constraint 9 (all movements must be explainable within the model and bounded by rules). The hard cap of −25 is respected, but the transparency and rule adherence are not."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

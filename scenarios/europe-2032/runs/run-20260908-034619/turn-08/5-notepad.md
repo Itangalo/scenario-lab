@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Mandate real-time incident telemetry −3, Launch tripartite crisis coordination protocol −2, priority −1 = −6  
+PROPOSAL BONUS: Launch tripartite crisis coordination protocol (cat 6, small) +3 — emergent_eu_public_sector_strike landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20.0 last turn, no category 4 completion, no capacity event, capability rose 1.5 −1 = 19.0  
+US_POSTURE: ALLIANCE  
+emergent_international_ai_safety_conference -- first noted turn 7, listed in 2 turn(s) so far: In response to growing global concern over unchecked AI capability growth and repeated safety failures, a coalition of non-aligned states and scientific institutions convenes an emergency international conference on AI safety, hosted in Geneva. The event draws major research labs, independent auditors, and civil society groups, aiming to establish baseline transparency norms for training runs and incident reporting—outside the control of any single superpower.

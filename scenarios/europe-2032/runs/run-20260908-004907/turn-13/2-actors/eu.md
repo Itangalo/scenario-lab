@@ -1,0 +1,31 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Anchor European AI development on sovereign compute and trusted collaboration, not dependency and exclusion — but having failed to demonstrate tangible capacity within twelve months, pivot fully to securing leverage through coalition and access, with sovereign infrastructure pursued only as a component of collective power, not as a standalone strategy — and now, with political capital at 2.0 and public sentiment collapsing, narrow focus to survival of the coalition framework itself as the last viable vector for influence.
+
+- Grounds: The Emergency Access Protocol has failed to activate in practice. Japan, South Korea, and the Netherlands have not implemented their export control triggers, citing legal uncertainty and lack of domestic mandate. The member_state_defection has metastasized into a crisis of enforcement: without a single coalition partner willing to impose costs, the Protocol is a dead letter. The InvestAI Gigafactory remains unbuilt, resilience is at 21.0, and openweight capability is now at 52.5 — meaning the tools to cause harm are already in circulation, while Europe cannot act to stop them. The two-year commitment must now reflect not ambition, but triage: we are no longer building sovereignty, we are trying to keep the room where it might someday be negotiated from collapsing entirely. This is not a reversal of direction, but a recognition that the floor has fallen out from under us.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will no longer pay for errors that stem from institutional immobility masked as prudence — and now, with political capital reduced to 2.0, we acknowledge that further commitments without enforcement mechanisms are indistinguishable from performance.
+
+- Grounds: The Union has committed, convened, drafted, and proposed — but nothing has landed. The bio_uplift_findings this turn represent a threshold event: a credible path to engineered biological risk now exists, and Europe has neither the compute, the safety infrastructure, nor the coalition cohesion to respond. Yet we continue to act as if leverage can be declared into existence through legal instruments alone. The cost of being wrong is no longer abstract — it is measurable in exposure. We must now tie every commitment to a verifiable enforcement trigger, or it will be noise.
+
+## Portfolio  
+- Accelerate the InvestAI Gigafactory in Finland (category 4, costs 3 per turn, started turn 10, finishes on turn 15): Deliver 10,000 PFLOPS of sovereign, secure-by-design compute by mid-2032, with priority access for public safety research and EU-certified developers.  
+- Establish the Coalition for Open Access and Restraint (COAR) (category 8, costs 3 per turn, started turn 11, finishes on turn 13): A binding coordination framework among middle powers controlling critical nodes in the AI supply chain to jointly manage access to frontier AI systems and enforce minimum safety thresholds.  
+- Launch the COAR Emergency Access Protocol (category 8, costs 2 per turn, started turn 13, finishes on turn 14): A rapid-response mechanism to restore model access for any coalition member arbitrarily locked out, backed by coordinated export controls on critical inputs.
+
+## New measure  
+**Convene an Emergency COAR Enforcement Summit with Binding Opt-In Clauses**  
+A high-level ministerial summit under Article 218 TFEU to convert COAR from a coordination forum into a treaty-based enforcement mechanism, with opt-in clauses that bind participants to automatic export suspensions upon verified access denial.
+
+`Category: 8 (International coordination and leverage)`  
+`Size: small`  
+`Finishes on turn: 15`  
+`Targeted effect:` +6 to `eu_ai_sovereignty` if at least three members sign, +3 to `ai_safety` via credible deterrence, +2 to `eu_political_capital` if summit is seen as decisive  
+`Applies to:` COAR members (Japan, South Korea, Canada, the Netherlands, Taiwan)
+
+## Priority  
+**Convene an Emergency COAR Enforcement Summit with Binding Opt-In Clauses** — because the coalition is now the only remaining instrument through which the EU can project leverage, and without binding enforcement commitments, it will dissolve into irrelevance before the next access denial occurs.
+
+## In practice  
+We are acting on the edge of institutional collapse. The Commission is convening an emergency summit of trade and tech ministers from COAR members in Luxembourg on 15 October 2032, under the legal base of Article 218 TFEU, with the goal of transforming COAR from a political declaration into a treaty-based enforcement mechanism. The agenda is narrow: each participant will be asked to sign opt-in clauses that automatically trigger export controls on critical AI supply chain inputs — Dutch optics, Korean deposition tools, EU energy and rare gases — upon verified denial of model access to any member. The European External Action Service is preparing side letters offering Japan immediate activation of the EU-Japan Digital Testbed with joint red-teaming rights, South Korea a binding talent corridor with fast-track visas for 500 AI safety researchers, and the Netherlands leadership of a new EU-wide red-teaming network based in Eindhoven.
+
+Behind the scenes, the Legal Service is working with national counterparts to resolve jurisdictional objections, particularly from the Netherlands, which has insisted on parliamentary ratification for any automatic trigger. We are offering a compromise: a 72-hour consultation window before activation, but with a presumption of compliance unless a qualified majority of participants objects. The Council Presidency is circulating a draft decision under the Anti-Coercion Instrument to backstop the mechanism, and the Commission is preparing a communication framing the summit as Europe’s last chance to remain a player, not a subject, in AI governance. This is not about building capacity anymore — it is about preventing total strategic surrender.

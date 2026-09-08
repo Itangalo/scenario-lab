@@ -1,0 +1,27 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Enforce real-time operational control over all high-risk AI systems affecting the EU, ensuring the ability to interrupt harmful behaviour and preserve evidence — not just monitor, but act — through a sovereign, cryptographically enforced intervention interface integrated into system architecture by turn 11, and maintain that control through EU-owned infrastructure capable of running critical AI workloads independently, with binding redundancy guarantees among a coalition of aligned member states to ensure continuity of access under coercion or denial  
+- Trigger: The *member_state_defection* event persists in effect, the *taiwan_blockade* has made compute access a strategic bottleneck, and the Emergency Compute Co-Location Pact remains unfinished and legally fragile — its coalition structure excludes key members and lacks mutual enforcement teeth  
+- Grounds: The original commitment was fulfilled on time: the intervention interface is operational. But sovereignty is not a technical layer — it is a chain of trust under duress. With the Taiwan blockade cutting global compute supply and a member state already circumventing EU control via bilateral deal, we must now guarantee not just ownership, but mutualised, fail-safe access. The commitment evolves from infrastructure to alliance: control must survive coercion, denial, and fragmentation. This is not a retreat — it is hardening the perimeter.
+
+## Portfolio  
+- Sovereign Compute Acceleration Directive (category 4, costs 3 per turn, started turn 11, finishes on turn 14): Fast-track the deployment of EU-anchored, high-performance computing infrastructure dedicated to public and strategic AI workloads, with legal and physical control under member state jurisdiction.  
+- Emergency Compute Co-Location Pact with Joint Threat Response Partners (category 4, costs 2 per turn, started turn 12, finishes on turn 13): Establish binding co-location and failover agreements with states in the joint threat response coalition, guaranteeing mutual access to sovereign compute in the event of disruption or denial by third parties, with EU nodes receiving priority routing and shared governance of cross-border workloads.  
+- Emergency Compute Co-Location Pact with Joint Threat Response Partners is **finished**.
+
+## New measure  
+**Mutual Compute Assurance Compact**  
+Establish a legally binding, treaty-level agreement among coalition members to guarantee reciprocal access to sovereign compute during supply shocks or coercion, backed by joint procurement, shared reserve pools, and mutual veto over third-party access to strategic nodes.  
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 15`  
+`Targeted effect:` eu_ai_sovereignty +12.0 (via binding redundancy and shared procurement), resilience +5.0 (via assured continuity), eu_political_capital −3.0 (cost of treaty negotiation under urgency)  
+`Applies to:` Emergency Compute Co-Location Pact members (France, Finland, Sweden), Germany, and EU strategic AI operators
+
+## Priority  
+**Mutual Compute Assurance Compact** — because the *taiwan_blockade* has turned compute into a weaponised scarcity, and the current co-location pact is too weak to survive a real denial: without mutual legal guarantees, our sovereignty is conditional, and our runtime control is a fiction.
+
+## In practice  
+We are treating the *taiwan_blockade* not as a supply crisis, but as a regime change: the era of plug-and-play access to frontier AI is over. The Mutual Compute Assurance Compact is our answer — not just another directive, but a treaty-level binding of compute sovereignty among those who can still act. We are convening the coalition under the Joint Crisis Coordination Framework, invoking Article 122 TFEU and the newly ratified AI Security Protocol to fast-track negotiations. The core offer is simple: your access to our nodes, if we can use yours when cut off. We are pooling procurement through the European Defence Fund’s digital resilience window, creating a shared reserve of wafers and modules ring-fenced for strategic AI. Germany is in, but we must bring Sweden over the line — they fear entanglement, so we are offering them first call on any EU-hosted node during disruption, and a rotating veto on export licensing. Finland wants joint training pipelines; we are expanding the Digital Europe Programme’s talent track to include dual-certification in secure AI operations.  
+
+At the same time, we are pushing the Sovereign Compute Acceleration Directive through national implementation. France has broken ground in Brittany; we are using the Net-Zero Industry Act to override local permitting delays in two German sites. Ireland remains hesitant — so we are offering Dublin a lead role in the Compact’s audit mechanism, and guaranteeing that no commercial cloud will be subject to mutual access rules. For Poland, we are accelerating the cohesion fund disbursement, but tying it to a binding MOU on node interoperability. This is not just about compute — it is about trust under fire. The runtime interface works. But if we cannot run the systems it governs when the lights go out, then we have built a switch no one can flip. This turn, we are wiring the circuit.

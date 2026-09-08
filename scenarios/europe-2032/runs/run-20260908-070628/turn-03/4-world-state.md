@@ -1,0 +1,14 @@
+### Capability Creeps Forward  
+AI capability advances by +1.5 to 56.5, driven by denser architectures and training stability gains. Labs consolidate the gains of the past year, edging toward reliable multi-day autonomous operation. The closed frontier pulls slightly ahead, but the open frontier remains in striking distance.
+
+### Safety Breakthrough, Then Backlash  
+A major interpretability advance allows developers to predict emergent reasoning paths before inference, enabling proactive intervention. Adopted across leading labs, this drives a +5 boost to `ai_safety`, lifting it to 33.0. In response, the EU proposes a new measure: Mandatory Pre-Deployment Safety Certification for open-weight models, aiming to institutionalise this advance. However, the proposal sparks fierce resistance. Open science coalitions, backed by academics and decentralised AI communities, denounce it as a threat to innovation. The backlash, amplified by recent polling shifts, pushes `public_sentiment` down by 2, to 33.0.
+
+### Resilience Gains from Defensive Shift  
+A breakthrough in AI-driven cyber defence—real-time patching and swarm behaviour detection—reverses years of offensive dominance. The EU accelerates integration into its critical infrastructure hardening programme, contributing to a +3 boost in `resilience`, now at 42.0.
+
+### Sovereignty Stalls Amid Division  
+The InvestAI Gigafactories and Tech Sovereignty Package remain on track and continue to contribute +1 each to `eu_ai_sovereignty`, yielding a total of +2 for the turn, bringing the metric to 24.0. The proposed Sovereign Access to Frontier Models initiative remains in early drafting; no formal launch decision has been made, no resources have been committed, and it does not enter the portfolio this turn. It is not yet an active measure and therefore incurs no portfolio charge or sovereignty contribution.
+
+### Political Capital Under Pressure  
+Three large measures remain in flight—InvestAI Gigafactories, Tech Sovereignty Package, and Cyber Resilience Emergency Directive—each costing −3, for a total portfolio charge of −9. The newly proposed Mandatory Pre-Deployment Safety Certification is the only new measure introduced this turn and is designated as the current priority, incurring a −1 priority cost. As a category 4 measure directly addressing the openweight surge, it earns a +5 proposal bonus. Net change before legitimacy: 33 −9 −1 +5 = 28. With `public_sentiment` (33) now above political capital (28), a +2 legitimacy bonus applies, bringing `eu_political_capital` to 30. However, the unpopularity of the new measure and internal coordination challenges result in implementation delays and lower-than-expected coalition buy-in, absorbing part of the bonus in friction. Final `eu_political_capital` settles at 24.0, reflecting the difficulty of advancing ambitious reforms amid rising public skepticism.

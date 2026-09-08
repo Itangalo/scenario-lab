@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Sovereign Red Line Enforcement Network −3, Public-Sector AI Safety Audit and Remediation Programme −3, priority −1 = −7  
+PROPOSAL BONUS: Public-Sector AI Safety Audit and Remediation Programme (cat 6, large) +3 — directly addresses automated_decision_scandal, severe and recent systemic failure in public-sector AI  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 11 last turn, no capacity event, Sovereign Red Line Enforcement Network in flight +0, capability rose 0.5 −1 = 10, member_state_defection t11 −2, supply_chain_coercion t11 −1 = 8  
+US_POSTURE: CONSOLIDATION  
+Emerging developments: `emergent_regional_data_sovereignty_pacts` -- first noted turn 11, listed in 1 turn(s) so far: Bilateral compute-sharing agreements gain quiet momentum among Central and Northern member states, framed as continuity planning. These informal pacts allow participating states to bypass stalled EU-wide infrastructure by pooling national resources, creating de facto red lines against external access while deepening internal fragmentation.

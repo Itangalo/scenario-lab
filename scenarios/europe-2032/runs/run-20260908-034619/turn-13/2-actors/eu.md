@@ -1,0 +1,34 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Maintain sovereign control over AI capability sufficient to resist coercion and prevent catastrophic harm, while rebuilding institutional consent as the foundation of both resilience and legitimacy  
+  - Trigger: the **cyber_major_incident** this turn, which exploited model-generated tooling to compromise public services across three member states, and the continued denial of frontier access despite emergency measures  
+  - Grounds: The attack demonstrated that even without general superintelligence, narrow but rapidly generated offensive capabilities now outpace our defences. Our compute buildout failed to deliver operational systems in time, and the infrastructure we sought to command remains legally contested and physically offline. Sovereignty cannot be declared by fiat when the tools to enforce it are absent. At the same time, the refusal of Germany, Poland, and Spain to grant grid access—even under Article 122—reveals that no amount of legal authority can substitute for political unity. We must now explicitly condition sovereignty on cohesion: we will not pursue capacity that we cannot govern, nor defend systems we cannot power. The commitment stands, but its interpretation shifts from infrastructure-first to legitimacy-conditioned.
+
+- modify `social_repair_before_scale` (commitment): We will not expand AI capacity without first restoring public trust through visible redress, retraining, and accountability for harm  
+  - Trigger: the failure of the Reckoning Initiative to launch despite being declared priority last turn, due to lack of political capital and resistance from member states blocking data sharing and funding  
+  - Grounds: Intent is not action. We staked ourselves on repair before scale, yet no funds have moved, no taskforce has convened, and the scandal-ridden social insurance AI remains in use pending audit. To keep this commitment alive, we must now bind it to enforcement: we will suspend all non-critical AI procurement across EU institutions until the Reckoning Initiative is funded, staffed, and operating with full transparency. That suspension becomes the price of credibility. Without teeth, this commitment becomes performance, not policy.
+
+## Portfolio
+``Accelerate EU Sovereign Compute Buildout via Emergency Grid Access and Siting Waivers (category 4, costs 3 per turn, started turn 12, finishes on turn 13): Fast-track permitting, grid connection, and power allocation for AI data centres on EU soil that are legally bound to serve public institutions and critical infrastructure under crisis conditions`` — **finished**
+
+Canceled measure: *Accelerate EU Sovereign Compute Buildout via Emergency Grid Access and Siting Waivers*.  
+  Short statement on why you choose to cancel it: Despite invoking emergency powers, the measure failed to overcome constitutional, technical, and energy constraints; grid denials in Spain and Germany, combined with rising public backlash over blackouts, rendered further investment politically unsustainable and operationally futile. Continuing would drain capital without delivering capability.
+
+## New measure
+**Launch Binding Suspension of Non-Critical AI Procurement Until Redress is Operational**  
+To force accountability, we halt all new AI adoption in EU institutions unless essential to safety or continuity, effective immediately upon Council confirmation.
+
+`Category: 9 (Diffusion, adoption and public trust)`  
+`Size:` small  
+`Finishes on turn:` 14  
+`Targeted effect:` Increase `public_sentiment` (+5) and `resilience` (+3) by demonstrating that the EU governs its own use of AI, not just others’; reinforce that trust must precede deployment. Also applies downward pressure on `ai_capability` growth within EU jurisdiction by slowing domestic demand signal.  
+`Applies to:` European Commission departments, EU agencies, Eurostat, Frontex, EMA, and other bodies procuring AI systems for internal use or public service delivery.
+
+## Priority
+**Priority:** *Launch Binding Suspension of Non-Critical AI Procurement Until Redress is Operational* — because while the Reckoning Initiative remains stalled, symbolic restraint is the only remaining lever to show citizens that the EU does not serve technology for its own sake, and because continuing business-as-usual procurement while frontline workers are denied benefits and public services are under cyber siege would collapse what little legitimacy remains.
+
+## In practice
+We are ending the compute buildout—not because the goal was wrong, but because the path was broken. ENTSO-E refused additional allocations citing energy security; Germany’s Constitutional Court ruled our siting waivers incompatible with federal competence; Bavaria blocked construction citing environmental strain. REPowerEU funds remain unspent, and the MFF flexibility window closes next quarter. We have no choice but to accept that sovereign compute cannot be forced where political and physical infrastructures refuse to carry it. The measure is finished, and we retire it with a formal report acknowledging partial legal progress—new precedent on crisis capacity—but systemic failure in execution.
+
+Now we pivot to governance through restraint. The Cyber Major Incident exposed how deeply embedded AI systems have become in public administration—this attack ran through an automated document-processing pipeline used by tax and welfare offices in Belgium, France, and Luxembourg. No one noticed until decryption keys were auctioned in a darknet forum. We cannot harden what we do not understand, nor defend systems we did not design to fail safely. So we act inwardly: the Secretary-General of the Commission is instructed to issue a moratorium on all AI procurements not strictly necessary for health, border integrity, or incident response. This includes chatbots, HR screening tools, and forecasting models. Exceptions require approval by a newly convened Ethics & Continuity Board composed of the EDPS, ELA, and two independent technologists appointed by the European Parliament.
+
+We fund the board through repurposed MFF reserves—€80 million redirected from stalled compute subsidies—and tie resumption of procurement to two conditions: first, the Reckoning Initiative must publish its initial audit findings and open compensation claims within four months; second, all future AI deployments must include a sunset clause requiring renewal after 18 months unless proven socially beneficial. We offer member states a trade: pause expansion, and we will fast-track their inclusion in any future coalition-led compute effort once cohesion returns. For now, survival depends not on speed, but on credibility. We stop building so we can remember why we started.

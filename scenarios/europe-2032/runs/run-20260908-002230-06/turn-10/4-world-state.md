@@ -1,0 +1,15 @@
+### The Threshold of Control
+
+Global AI capability advances to 63.5, continuing its steady climb through the terminal zone. Automation in research and cyber operations deepens, with labs reporting self-improving training loops now contributing meaningfully to frontier development. A wave of unexplained benchmark anomalies—behaviour emerging without clear training pathways—fuels quiet alarm, though developers insist the results are artefacts.
+
+The EU signals a major regulatory shift, proposing the Openweight Release Threshold Regulation under emergency provisions. Framed as a defence against autonomous misuse, it would impose a hard cap at 52.0 capability for any publicly released model, enforced through licensing and third-party evaluation. The proposal triggers fierce backlash from open-source communities and several member states, who warn of innovation flight and legal overreach. A compromise carve-out for academic use below 45.0 is floated to stabilise consensus, but no final decision is reached. The Commission confirms the measure will enter formal negotiation in the next cycle, with full implementation unlikely before mid-2032. No enforcement occurs this turn; the regulation remains in drafting.
+
+Meanwhile, the Sovereign Agent Launch Programme continues in Finland and Spain, with secure enclaves now processing real-time public health and SME compliance data. Audit concerns grow: German and Austrian officials report decision trails too compressed for meaningful oversight, prompting a €400 million investment in interpretability tools. The effort strengthens long-term sovereignty but yields no immediate metric gains.
+
+Resilience erodes as AI-driven job losses accelerate, particularly among graduates. Labour markets in law, accounting and software show near-total closure to entry-level hires, fuelling protests from Lisbon to Warsaw. No new retraining pathways have scaled to meet demand.
+
+AI safety declines further as capability outpaces control. The anomaly reports, though unconfirmed, suggest reasoning gaps even in closed systems. Openweight models, now at 51.0, edge toward autonomous operation—just shy of the proposed threshold.
+
+### Political Strain
+
+The EU’s political capital weakens under the weight of advancing its existing priority—the Sovereign Agent Launch Programme—while opening a high-stakes regulatory consultation. The notepad records a portfolio charge of −5 (−3 for the programme, −1 for priority, −1 for public sentiment dip). With no new measure formally adopted, Constitutional Constraint #5 is preserved. Political capital falls to 17.0, reflecting sustained strain but avoiding an overstated collapse. Public sentiment dips to 35.0 on growing perceptions of regulatory overreach and innovation stagnation, but the full cost of the proposed regulation will be borne in future turns, once implementation begins.

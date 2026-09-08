@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Frontier Model Telemetry Mandate −3, Sovereign Agent Monitoring & Response Network −3, priority −1 = −7  
+PROPOSAL BONUS: Sovereign Agent Monitoring & Response Network (cat 1, large) +4 — addresses cyber_major_incident and supply_chain_coercion, both high-impact and recent, with a large, targeted measure  
+LEGITIMACY LENDS: capital 39, sentiment 41 -> +1  
+SOVEREIGNTY: 34 last turn, no capacity event, capability rose 2.5 −1 = 33, but supply_chain_coercion t11 −1 = 32  
+US_POSTURE: Cooperative Technological Alliance  
+emergent_plateau_signals -- first noted turn 9, listed in 3 turn(s) so far: A major release underdelivers against its own briefing, and – the stronger signal – the price of top-tier capability falls sharply rather than staying flat, which is what happens when the frontier stops moving and last year's ceiling becomes this year's commodity. It is disputed at once, and the dispute is not resolvable from outside the laboratories.  
+emergent_international_eval_consortium -- first noted turn 10, listed in 2 turn(s) so far: Technical dialogue among EU member states, Japan, South Korea, and Canada intensifies around joint evaluation of frontier AI models, with shared audit protocols under discussion. While no formal structure exists yet, the momentum suggests a functional consortium could emerge if trust in vendor-led safety claims continues to erode. This would count as a category 5 measure and strengthen public confidence in oversight.  
+bio_uplift_findings -- precursor opens bio gate for next 4 turns

@@ -1,0 +1,12 @@
+### Capability Creeps Forward  
+Global AI capability advances by 2.0 points to 56.0, driven by wider deployment of self-validating agents in engineering design and legal compliance workflows. These systems now autonomously verify their outputs against regulatory databases and simulation environments, accelerating iteration without proportional safety gains. No breakthrough in interpretability or control lands on deployed models, and `ai_safety` slips to 31.0 as the gap widens.
+
+### Open Frontier Widens  
+Academic and non-commercial replication of frontier techniques continues, with researchers in Switzerland and South Korea reproducing key components of agent coordination frameworks. While no full model release occurs, modular advances in training infrastructure and alignment pipelines lower the barrier to entry. As a result, `openweight_capability` rises to 44.0 — a measured increase reflecting diffusion of partial capabilities, consistent with gradual accumulation. It remains below `ai_capability`, preserving the structural lead of closed frontier actors.
+
+### EU Pushes Back on Fragmentation  
+The European Union advances its **Cyber Shield for Critical Operators (CS-CO)**, offering opt-in red-teaming pilots to ease German and Slovak concerns. However, the voluntary phase deepens suspicion among federal utilities, who argue it undermines deterrence. Local opposition in Finland and Spain delays two InvestAI Gigafactory sites, forcing reliance on grid adjustments via ACER — a move protested by Nordic wind exporters.
+
+Concurrently, the Commission proposes the creation of the **European AI Safety Lab (EASL)**, allocating €8.5bn from Horizon reserves to build independent evaluation capacity. This initiative remains in early planning: recruitment has not begun, and legal authority over non-EU developers is unresolved. Full implementation will take at least two turns, and no immediate operational impact is registered. The announcement contributes to political debate but does not yet restore confidence.
+
+Public sentiment dips to 40.0 as draft moratoriums on AI in grid controls gain traction in three national parliaments, framed as necessary precautions after the recent intrusion. The backlash dampens enthusiasm for rapid adoption, and trust in EU-level solutions wanes. In response, `eu_political_capital` declines to 39.0 — a smaller drop than initially projected, as the EASL proposal signals intent, even if delayed. `eu_ai_sovereignty` falls to 20.0, reflecting ongoing implementation gaps and fragmented member-state responses.

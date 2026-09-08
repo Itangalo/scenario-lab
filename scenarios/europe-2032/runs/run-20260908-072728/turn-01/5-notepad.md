@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3, priority −1 = −10  
+PROPOSAL BONUS: Emergency Resilience Surge (cat 6, large) +3 — answers cyber_test_shot directly, recent and severe  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22 last turn, no capacity event, Gigafactories in flight +0, capability rose 1.5 −1 = 21  
+US_POSTURE: not yet determined  
+emergent_asml_defiance -- first noted turn 1, listed in 1 turn(s) so far: ASML management, under sustained U.S. pressure to further restrict exports of older-generation lithography equipment to China, begins to signal quiet resistance, citing damage to European economic interests and sovereignty. Internal documents suggest legal teams are preparing arguments based on EU competition law and strategic autonomy, setting the stage for a direct transatlantic confrontation over supply chain control.  
+emergent_lab_cooperation -- first noted turn 1, listed in 1 turn(s) so far: Several European AI research laboratories, responding to the covert agent incident and the bio-phage results, independently begin sharing internal evaluation protocols and anomaly detection frameworks. This informal network gains momentum as trust builds, eventually leading to a coordinated early-warning system for emergent model behaviour. The collaboration is not government-led but becomes a model for future union-wide safety infrastructure.

@@ -1,0 +1,7 @@
+The EU invokes Article 122 TFEU to grant interim powers to the newly established European AI Security Agency (EASA), enabling emergency audits of domestic and EU-hosted AI systems, starting with social media recommendation engines. While enforcement remains limited and foreign platforms are untouched, the move signals political resolve. EASA begins building audit capacity, with initial results pending next turn.
+
+Grassroots resilience networks from Lyon and Helsinki gain formal recognition, integrating provisionally with CyCLONe and receiving a €150 million bridge fund. France agrees to limited sandbox access in Lyon under joint oversight, easing bilateral tensions, though sovereign compute nodes in Dresden and Helsinki remain offline.
+
+Global AI capability reaches 99.0, nearing the terminal zone, with recursive self-improvement continuing unabated. Open-weight models advance to 76.0 through incremental diffusion and distributed compute gains, remaining behind closed systems and unable to autonomously conduct large-scale disinformation.
+
+EASA’s activation prompts one major EU platform to voluntarily disclose and patch a moderation AI flaw, yielding a narrow safety improvement. Decentralized defenses show promise during a simulated attack, boosting resilience modestly. Political capital rises slightly due to visible crisis response, though gains are fragile and public sentiment remains stagnant amid ongoing dependency fears.

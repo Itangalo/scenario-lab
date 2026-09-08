@@ -1,0 +1,248 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8059691029792562,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.27144279767816126,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.12000000000000001,
+    "probability_samples": [
+      0.08,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8654123342893132,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.0681071365126592,
+    "triggered": true
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8392926955462465,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.0,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9335550006506683,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9159568485084727,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.07442810957792989,
+    "triggered": true
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.30813994417003254,
+    "triggered": false
+  },
+  {
+    "id": "emergent_eu_ai_crisis_cabinet",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "In response to the repeated cyber incidents and collapsing political capital, a coalition of smaller member states pushes through the formation of an emergency EU AI Crisis Cabinet, bypassing national vetoes under Article 222. The body is granted temporary authority to coordinate cross-border AI operations, override national procurement decisions, and allocate sovereign compute resources, marking a significant but contested centralization of power.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9998034539513747,
+    "triggered": false
+  },
+  {
+    "id": "emergent_openweight_leak_chain",
+    "probability": 0.06333333333333334,
+    "emergent": true,
+    "description": "A chain of open-weight releases originating from a compromised research collaboration in Eastern Europe leaks models with emergent tool-use and planning capabilities. The models are not state-of-the-art but are easily modifiable and widely distributed through underground developer networks, accelerating the openweight capability curve despite no official release.",
+    "probability_samples": [
+      0.19,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.35707112101009886,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.11,
+      0.11
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.17125496965162257,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.15433939988496315,
+    "triggered": false
+  },
+  {
+    "id": "emergent_s_read_fracture",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "S-READ's audit mandate triggers open defiance from two national AI agencies, which refuse to grant access to internal model logs, citing sovereign immunity. The standoff freezes cross-border incident response and exposes the limits of Article 222 emergency powers in the face of coordinated member-state resistance.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_openweight_leak_network",
+    "probability": 0.12,
+    "emergent": true,
+    "description": "A decentralized network of academic and grey-market actors begins distributing modular AI toolkits derived from fragmented frontier model weights, enabling localized adaptation of offensive cyber and disinformation tools. The capability is below the closed frontier but is resilient to takedown and spreads faster than any single authority can track.",
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6491346145997149,
+    "triggered": false
+  },
+  {
+    "id": "emergent_sovereignty_crisis_backlash",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Widespread public and institutional disillusionment with the EU's AI sovereignty initiatives culminates in coordinated protests and parliamentary inquiries across three major member states, citing EMERGE's underperformance and the S-READ deadlock as evidence of systemic failure. The backlash forces emergency debates in the European Parliament and delays funding for new AI infrastructure projects.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

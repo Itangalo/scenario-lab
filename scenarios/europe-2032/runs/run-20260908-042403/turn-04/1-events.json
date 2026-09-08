@@ -1,0 +1,26 @@
+[
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_lab_defection",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "A leading European AI laboratory maintains its refusal to engage in EU red-teaming or data sharing, and now signals it may relocate parts of its operations outside the Union due to legal uncertainty. Other labs are watching closely, raising the risk of a broader exodus of technical talent and institutional trust from EU coordination mechanisms.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

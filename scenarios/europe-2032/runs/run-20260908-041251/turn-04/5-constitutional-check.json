@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 45.0 to 51.5 (+6.5) while `ai_capability` increased from 56.5 to 58.0 (+1.5). This violates the requirement that `openweight_capability` never exceeds `ai_capability`. At no point can the open-weight frontier surpass the closed frontier, and a jump of 6.5 points—nearly matching the closed frontier two turns prior—implies overtaking it, which is structurally disallowed without explicit narrative of catastrophic leakage or collapse, neither of which is present.\n- Modelling choice 5 violated: The EU introduces a new measure, E-AIRC (category 6), while already having three large measures in flight (InvestAI Gigafactories, Tech sovereignty package, Accelerate Sovereign Compute Access) and a priority active. The portfolio charge reflects five large measures in flight (−13), but the constitutional constraint limits the EU to at most one new measure per turn. Introducing E-AIRC in this turn constitutes a second new measure if any other was initiated this turn, or exceeds the one-priority limit if E-AIRC is also named as priority. The narrative does not clarify whether E-AIRC replaces or subsumes an existing measure, nor does it withdraw any prior one; thus, the cap of one new measure per turn is breached.\n- Narrative Constraint 8 violated: The narrative states that \"the latest leaked model is rapidly fine-tuned and deployed in research and cyber operations\", which implies a specific mechanism (leak → deployment) and telegraphs the consequence of emergent_model_audit_campaign and emergent_eval_anomaly_leak as resolved or operationalized. While the notepad tracks these as ongoing emergent phenomena, the narrative treats them as concluded inputs to capability growth, effectively resolving event gates without evaluation. This anticipates outcomes that should remain uncertain, violating the prohibition on telegraphing."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

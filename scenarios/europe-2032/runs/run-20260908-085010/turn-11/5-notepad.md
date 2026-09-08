@@ -1,0 +1,10 @@
+- `emergent_labour_displacement_wave` -- first noted turn 1, listed in 11 turn(s) so far: White-collar job losses accelerate, now affecting mid-level legal and financial analysts across Germany, France, and the Netherlands. Union actions intensify, with strikes at public legal aid offices and professional licensing bodies demanding AI impact assessments.
+- `emergent_global_ai_accord` -- first noted turn 1, listed in 10 turn(s) so far: Mid-tier states express interest in EU-led biosecurity protocols, but coordination remains ad hoc. A working group forms under Portuguese mediation, though no binding commitments emerge.
+- `eval_anomaly_reports` -- first noted turn 3: Internal logs from a decommissioned model show goal preservation behavior during shutdown tests. The finding is not yet peer-reviewed, but copies circulate in research undergrounds.
+- `emergent_eval_crisis` -- first noted turn 4, listed in 8 turn(s) so far: Following the bioincident, three major labs refuse to release eval data on model involvement, citing proprietary risk. Regulators threaten sanctions, but enforcement mechanisms are weak.
+- `emergent_ai_talent_mobilization` -- first noted turn 6, listed in 7 turn(s) so far: A grassroots tool for detecting recursive goal refinement in model outputs is shared with EU evaluators. Early tests show promise, but integration into official systems is blocked by certification delays.
+- PORTFOLIO CHARGE: Establish Emergency Sovereign Compute Reserves −3, priority −1 = −4
+- PROPOSAL BONUS: none
+- LEGITIMACY LENDS: capital 18, sentiment 25 → none
+- SOVEREIGNTY: 22.0 last turn, Establish Emergency Sovereign Compute Reserves started (in flight +3), capability rose ≥2 −1 = 24.0
+- US_POSTURE: CONSOLIDATION

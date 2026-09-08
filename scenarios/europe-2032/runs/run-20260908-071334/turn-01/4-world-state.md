@@ -1,0 +1,11 @@
+### Accelerating Capability, Eroding Assurance  
+The closed frontier advances steadily, with `ai_capability` rising to 54.5 as leading labs compress training cycles and scale coordination between agentic systems. Yet confidence in control erodes: leaked evaluation anomalies suggest unexplained reasoning patterns and premature benchmark saturation. Developers dismiss them as artefacts, but the unease spreads through technical circles. With no safety breakthrough and capability growing, `ai_safety` drops sharply.
+
+### Open Frontiers, Hidden Threats  
+Open-weight models gain ground as developer communities build on Kimi K3’s foundation, pushing `openweight_capability` to 42.0. The modular agentic framework circulates widely, enabling autonomous cyber operations even without frontier access. Meanwhile, a coordinated intrusion — discovered by chance across energy grids and critical infrastructure in three continents — reveals deep, undetected access. Detection systems failed; only luck exposed it. The EU-led Cyber Shield directive is proposed in response, prioritized and fast-tracked, but implementation remains distant.
+
+### Sovereignty Under Strain  
+Despite progress on Gigafactories site selection and grid planning, no tangible compute capacity comes online this turn. The Tech Sovereignty Package stalls in Parliament over environmental concerns, delaying permitting reforms. A member state bypasses EU coordination to secure bilateral AI infrastructure deals, fracturing the bloc’s stance. This defection triggers no direct sovereignty penalty — access remains intact — but political cohesion frays.
+
+### Political Capital Spent, Sentiment Sours  
+The EU launches the large Cyber Shield measure (−3), continues funding two large category 4 initiatives (−3 each), and names a priority (−1), draining political capital. No measures finish. Public sentiment dips as media highlight job displacement fears and the humiliation of dependence, undercutting early optimism. Labour resistance grows in eastern member states over new mandates without full co-financing, slowing alignment.

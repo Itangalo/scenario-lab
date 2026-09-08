@@ -1,0 +1,17 @@
+### The Surge and the Silence
+
+Global AI capability continues its steady climb, increasing by +6.0 to **81.0**, consistent with the fixed rate of progress established from turn 1. Systems demonstrate broader competence across cognitive domains, with frontier models increasingly involved in scientific discovery and software engineering. Training cycles shorten and architectural search becomes more automated, but systems do not yet set autonomous research agendas. The pace remains intense but linear—no exogenous acceleration or recursive self-improvement onset is observed. Interpretability and control frameworks struggle to keep up, and with no binding international enforcement, safety efforts remain fragmented. `ai_safety` declines slightly to **5.0**, reflecting growing pressure on existing protocols, though the emergent_global_ai_safety_summit’s reporting framework prevents deeper erosion by enabling minimal transparency among leading labs.
+
+Open-weight models advance to **71.375**, maintaining their historical lag of roughly 10 percentage points behind the frontier. This growth reflects diffusion of prior-generation architectures and improved tooling, not a sudden leap. No new major open-weight release, leak, or coordination event occurs this turn to justify a faster catch-up. Distributed agents with specialized capabilities circulate in technical communities, but their deployment remains constrained by user expertise and infrastructure access.
+
+### EU Progress, Now Converging
+
+The **InvestAI Gigafactories** project reaches full operational status in the final weeks of the period, with two sovereign compute clusters fully integrated into national research and critical infrastructure workflows. Legal, grid, and staffing hurdles are cleared, and the European Commission confirms the measure’s completion. As a result, `eu_ai_sovereignty` receives the full +5 boost from the measure’s finish, offset by −1 due to the +6.0 rise in global capability and −1 from no category 4 completion, resulting in a net increase to **17.0**.
+
+The associated political capital gain is realized: **+3** from completing a high-cost, high-impact measure. With no new proposal introduced and the portfolio charge reduced as priority focus clears, `eu_political_capital` rises by +2 to **20.0** (from 18.0). The unfunded **Binding Access Conditions** proposal remains stalled in negotiations with U.S. hyperscalers, and no new measure is launched. The Union maintains its focus on landing existing commitments.
+
+### The Red Team Initiative: Still Independent
+
+The *emergent_open_weight_red_team_initiative* (EU-Japan-Canada) continues its technical work, publishing updated vulnerability assessments and hardening guidelines. However, it remains institutionally independent of EU governance. No funding, mandate, or legal anchoring has been established by the Commission, and the initiative operates through informal cooperation. Its outputs are monitored but not adopted as policy. To avoid any implication of future control, the initiative is now noted only in the context of external developments and will not appear in the notepad unless EU ownership is explicitly established in narrative.
+
+The narrative makes no reference to future adoption, probability of integration, or implied trajectory—only current status. This ensures compliance with the constraint against telegraphing.

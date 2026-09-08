@@ -1,0 +1,8 @@
+- `emergent_labour_displacement_wave` -- first noted turn 8, listed in 6 turn(s) so far: Mid-level professional roles in legal, technical, and administrative sectors face accelerating displacement. Retraining systems are overwhelmed, and protests grow.
+- `emergent_ai_research_centrifuge` -- first noted turn 6, listed in 6 turn(s) so far: Top researchers continue to relocate to EU-affiliated labs, drawn by sovereign compute access and political stability, despite funding constraints.
+- `emergent_ai_refugee_wave` -- first noted turn 11, listed in 3 turn(s) so far: Top AI researchers and engineers from non-aligned and adversarial states begin seeking relocation to EU-affiliated institutions, citing political instability, loss of research freedom, and fears of military conscription into state AI programmes. The influx strains onboarding systems but delivers a concentrated boost to sovereign capability pipelines.
+- US_POSTURE: CONSOLIDATION
+- PORTFOLIO CHARGE: Resilience Surge −2, other small measures −2, priority −1 = −5
+- PROPOSAL BONUS: Emergency Workforce Transition Compact finishes t12 +3 — category 7, large, addresses ongoing displacement
+- LEGITIMACY LENDS: none — capital (3.0) below sentiment (13.0)
+- SOVEREIGNTY: 12.0 last turn, no capacity event, capability rose 4.0 ≥2 −1 = 11.0

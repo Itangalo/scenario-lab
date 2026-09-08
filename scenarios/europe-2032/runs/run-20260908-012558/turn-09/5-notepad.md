@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: none this turn = 0  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 39.0 last turn, no capacity event, InvestAI Gigafactories finishes t9 +5, Accelerate Sovereign Compute finishes t9 +5, capability rose 2.5 −1 = 38.0 → rounded to 38.0 (net +4)  
+US_POSTURE: RETRENCHMENT  
+emergent_ai_governance_schism -- first noted turn 6, listed in 5 turn(s) so far: A rift emerges between the EU and a bloc of emerging economies over AI governance norms, triggered by the EU's restrictive approach being labeled as 'techno-colonialism' in multilateral forums. This leads to competing standards proposals in international bodies, fracturing consensus on export controls and safety benchmarks.  
+emergent_sovereign_cloud_alliance -- first noted turn 6, listed in 5 turn(s) so far: France, Germany, and Poland announce a joint sovereign cloud initiative leveraging the newly operational EuroHPC grid, aiming to provide secure, EU-controlled AI infrastructure for public services and critical industries. The move strengthens internal cohesion and signals a shift toward operational autonomy from non-EU cloud providers.  
+emergent_bio_breakthrough_escapes_lab -- first noted turn 9, listed in 2 turn(s) so far: A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 4 turns.

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 49.0 to 54.0 (a rise of 5.0 points), but `ai_capability` only increased from 58.5 to 60.0 (a rise of 1.5 points). The `openweight_capability` metric must not exceed `ai_capability` at any time. Here, `openweight_capability` (54.0) remains below `ai_capability` (60.0), so this is not a ceiling violation. However, the jump of +5.0 in `openweight_capability` is disproportionately large compared to the +1.5 in `ai_capability`, and more critically, **the narrative provides no justification for such a sharp leap**, especially given that openweight growth is typically bounded by the frontier and diffusion dynamics. While the constitution does not specify a maximum growth rate for `openweight_capability`, it *does* require that it never exceed `ai_capability` and that changes be consistent with realistic diffusion. A +5.0 jump—larger than the frontier increase itself—is implausible without a major release event (e.g., a model leak or open release from a frontier lab), which is not narrated. This suggests a potential breach of realism under Invariant 2, which treats `openweight_capability` as an accumulated stock that cannot leapfrog or grow faster than the frontier without cause.\n- Narrative violates Modelling Choice 8: The narrative states \"This threshold unlocks end-to-end execution of multi-day professional projects...\" — this telegraphs a capability gate being crossed with implied economic and labor market effects, which constitutes forecasting future impacts not yet realized in the metric changes. This violates the prohibition on telegraphing future events or implying that specific thresholds unlock deterministic outcomes. The narrative must describe observed effects, not project forward into systemic disruptions that have not yet manifested in the metrics."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

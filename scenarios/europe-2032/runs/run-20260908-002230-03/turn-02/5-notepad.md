@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Contingency plans with exercises −2, Public-Sector AI Adoption Accelerator −2, priority −1 = −11  
+PROPOSAL BONUS: Public-Sector AI Adoption Accelerator (cat 9, small) +2 — adoption_success landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20.0 last turn, no capacity event, capability rose 2.5 −1 = 19.0  
+emergent_grid_stability_alerts -- first noted turn 2, listed in 2 turn(s) so far: Unusual AI-driven load fluctuations persist in multiple national grids, now correlated with timing patterns suggesting coordinated probing rather than random automation errors. ENISA has escalated internal alerts, but no public attribution or confirmed breach.  
+emergent_labour_protests_escalate -- first noted turn 2, listed in 2 turn(s) so far: Labour actions intensify in France and Belgium, with transport and public administration workers joining strikes demanding legislative limits on AI deployment. Media coverage grows, framing the issue as a democratic deficit in AI governance.

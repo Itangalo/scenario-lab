@@ -1,0 +1,261 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.08963960369406654,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.0801484087629355,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8080395131859769,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6595178696578877,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.10898222278868208,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.17666666666666667,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.33637188872050583,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.23555356425341067,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2965859252346901,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.16680503343069686,
+    "triggered": true
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.15666666666666668,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7389983840145232,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.11333333333333333,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.684680832639712,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4125437891766248,
+    "triggered": false
+  },
+  {
+    "id": "emergent_sovereign_failure",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "After repeated failures to achieve convergence in sovereign model training at Extremadura, a classified assessment leaks showing that the EU's flagship AI sovereignty initiative is fundamentally behind due to architectural instability and lack of access to frontier telemetry. The report concludes that even if training succeeds, the resulting model will be non-competitive within months of release. The leak triggers a crisis of confidence among member states and sharpens divisions over continued funding.",
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.748208432476604,
+    "triggered": false
+  },
+  {
+    "id": "emergent_defensive_alliance_progress",
+    "probability": 0.09999999999999999,
+    "emergent": true,
+    "description": "The emergent defensive alliance among EU states and allies continues to mature, with real-time telemetry now integrated across seven national cyber agencies and automated response protocols activated during a simulated multi-vector attack. Joint playbooks successfully contain a live ransomware strain before it reaches critical infrastructure, reducing median response time to under 11 minutes. This operational success strengthens political support for deeper integration and expands participation to three additional NATO partners.",
+    "probability_samples": [
+      0.3,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.05304624058087981,
+    "triggered": true
+  },
+  {
+    "id": "emergent_sovereignty_backlash",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Growing public and academic scrutiny of the EU's sovereign AI program intensifies after leaked internal assessments reveal repeated failures and escalating costs with no demonstrable progress. Media investigations highlight reliance on foreign components and software, undermining the narrative of autonomy. This triggers parliamentary inquiries and demands for independent audit, slowing ongoing initiatives and further eroding political capital.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_ai_governance_initiative",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "In response to the accelerating instability of frontier AI and repeated incidents, a coalition of non-superpower states including Japan, South Korea, Canada, and the Nordic countries proposes a new international framework for minimal AI safety standards and incident reporting. The initiative gains quiet support from some EU member states frustrated with paralysis at the bloc level, creating a parallel channel for coordination that could either complement or bypass EU institutions.",
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.26413616377286375,
+    "triggered": false
+  },
+  {
+    "id": "emergent_fragile_red_teaming_alliance",
+    "probability": 0.07666666666666667,
+    "emergent": true,
+    "description": "A coalition of EU member states and non-U.S. allies begins informal coordination on red-teaming sovereign AI systems, sharing adversarial test suites and failure modes. The effort is technically constructive but politically fragile, as participants withhold their most sensitive findings. It emerges in response to ENISA's exposed gaps and the failure of Extremadura to deliver a stable model, and could evolve into a formal capability or collapse under distrust.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.23
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_sovereignty_backlash_investment_strike",
+    "probability": 0.04666666666666667,
+    "emergent": true,
+    "description": "A consortium of private European investors announces a coordinated pause in funding for new AI infrastructure projects within the EU, citing policy uncertainty, public hostility, and the failure of sovereign initiatives to demonstrate viability. The move amplifies financial strain, threatens planned compute expansions, and signals that domestic capital no longer assumes the Union will secure its own technological position.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.14
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

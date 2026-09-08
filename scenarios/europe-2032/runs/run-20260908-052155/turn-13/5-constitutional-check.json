@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Constitutional Constraint 7 violated: The narrative claims political capital \"rebounds slightly — not from action, but from completion\" and attributes a +9 net change (from −9 portfolio cost removal and +5 upper-end boost) to the metric increase from 5.0 to 14.0. However, the constitutional guard in constraint 7 explicitly limits sovereignty's contribution to political capital to at most +3 per turn and forbids political capital from being dominated by sovereignty-related terms. Here, the jump of +9 in political capital is directly attributed to the completion of sovereignty-related measures, effectively allowing sovereignty to dominate political capital growth, which contradicts the constitutional separation required between these two stocks.\n- Metric Rule 9 violated: The change in `eu_political_capital` from 5.0 to 14.0 represents a 9.0-point increase. While this is under the 25-point cap, the narrative attributes the full rebound to the completion of three large measures and the removal of a cumulative −9 portfolio charge. This implies a direct, deterministic translation of past costs into gains, which is not permitted under the modelling framework — political capital dynamics must reflect ongoing political realities, not accounting reversals. The sudden +9 shift without any new action, measure, or narrative event to justify sustained political reinvestment violates the spirit and structure of how political capital is meant to accumulate, especially given its fragility as described."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

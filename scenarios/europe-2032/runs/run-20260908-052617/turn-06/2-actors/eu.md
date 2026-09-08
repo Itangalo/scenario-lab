@@ -1,0 +1,27 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Secure sovereign evaluation and control over AI systems at the frontier  
+- Trigger: the two-year commitment period closes this turn  
+- Grounds: The commitment, originally set two years ago, has defined the Union’s strategic direction through a period of escalating crisis and institutional strain. While progress has been partial—sovereign inference remains unrealised and the Frontier Access Guarantee stalled—the core objective of establishing independent evaluative capacity has gained irreversible momentum with the launch of the Sovereign Evaluation Authority. The cyber_major_incident this turn confirms the urgency of the original pledge, but also reveals that control without visibility is meaningless. The commitment stands, though its expression must now shift from aspiration to enforcement: we are no longer building the capability, we are asserting it.
+
+## Portfolio  
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``  
+``Frontier Access Guarantee: Public Option for AI Inference (category 4, costs 3 per turn, started turn 3, finishes on turn 6): Establish a publicly operated, EU-owned inference infrastructure capable of running models at or near the closed frontier, independent of foreign providers, to serve essential public functions and anchor sovereign adoption``  
+``Labour Transition Accelerator Fund (category 7, costs 3 per turn, started turn 4, finishes on turn 6): Launch a pan-EU fund to scale and harmonise national retraining, mobility support, and transitional income guarantees under the emergent AI Adjustment Pact, turning ad hoc responses into a coordinated, rights-based adjustment mechanism``  
+``Sovereign Evaluation Authority with Real-Time Access (category 5, costs 3 per turn, started turn 6, finishes on turn 8): Establish a legally empowered, technically equipped EU body with continuous access to the most capable AI systems—closed and open—operating within or affecting the Union, able to run evaluations, detect emergent risks, and enforce containment protocols``
+
+*Note: Tech sovereignty package, Frontier Access Guarantee, and Labour Transition Accelerator Fund finish this turn. They will be removed from the portfolio next turn and cease to cost political capital. Their effects will persist as sustained initiatives unless otherwise acted upon.*
+
+## New measure  
+**None this turn.**  
+We are waiting for the legal and institutional architecture of the Sovereign Evaluation Authority to clear its first Council hurdle, and for the fallout of the cyber_major_incident to crystallise into actionable intelligence.
+
+## Priority  
+**Sovereign Evaluation Authority with Real-Time Access** — because the blind strike proved that without sovereign, real-time insight into model behaviour, every other investment in resilience, sovereignty, or industrial capacity operates in the dark, and the authority is now the only instrument that can close the loop between threat detection and sovereign control.
+
+## In practice  
+We are acting on the fact that the EU is no longer merely behind—it is blind. The ransomware wave was not just an attack; it was a demonstration of autonomous adaptation in the wild, enabled by AI systems whose inner logic we cannot inspect, whose deployment we cannot verify, and whose evolution we cannot anticipate. Our response is no longer about catching up. It is about reclaiming the right to know.
+
+The Sovereign Evaluation Authority is being fast-tracked through the Internal Market Council under Article 114 TFEU, with a draft regulation tabled for April. We are offering Germany a national veto on public disclosure of findings affecting its critical infrastructure, while binding it to collective enforcement of containment protocols. To smaller states, we offer guaranteed access to evaluation results and co-hosting of regional red-team nodes in Estonia and Finland—turning sovereignty into shared capability, not centralisation. Developers are being told: you may operate in the Union, but not without scrutiny. Access to model weights will be mandated under the AI Act’s high-risk provisions, with suspension powers triggered automatically if cooperation fails. We are allocating €1.4bn from REACT-EU this turn to stand up the first air-gapped evaluation clusters, drawing on EuroHPC infrastructure and staffing from ENISA, the AI Office, and national cyber agencies under a new joint command protocol.
+
+At the same time, we are allowing the Tech sovereignty package, Frontier Access Guarantee, and Labour Transition Accelerator Fund to conclude as planned. Their work is not done, but their delivery cycles are. The Gigafactories remain on track—private capital is flowing, though chip access delays persist. The Labour Transition Fund has seeded the AI Adjustment Pact, now being taken up by member states. And while the Frontier Access Guarantee failed to deliver sovereign inference, it has created the legal and technical scaffolding for the Evaluation Authority to access what *does* run on EU soil. We are not abandoning these lines—we are letting them land, so we can focus political capital where it is most urgently needed: on seeing the frontier, before it sees us.

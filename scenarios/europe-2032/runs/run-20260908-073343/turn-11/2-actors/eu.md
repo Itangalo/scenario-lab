@@ -1,0 +1,18 @@
+No statement changes.
+
+## Portfolio
+- `Launch Open Integration Programme for Independent Interpretability Tools` (category 5, costs 2 per turn, started turn 10, finishes on turn 11): Integrate the newly released Zurich interpretability tool into the EU AI Observatory’s monitoring stack and fund rapid adaptation to higher-capability models, while creating a public-private research node to coordinate grassroots oversight efforts — **finished**
+- `Expand Resilience Surge to Include Autonomous Incident Response Protocols` (category 6, costs 3 per turn, started turn 11, finishes on turn 13): Establish binding protocols for autonomous incident containment in critical infrastructure, backed by live simulation drills across energy, transport, and health sectors, with automatic fallback procedures when human intervention is too slow
+
+## New measure
+None this turn. We are consolidating our response under extreme capital constraints and waiting for legal clarity on emergency powers before initiating any new structural effort.
+
+## Priority
+**Expand Resilience Surge to Include Autonomous Incident Response Protocols** — because the denial of frontier access has rendered observation insufficient, and with global AI capability at 62.5, we must now harden systems against fast-moving incidents that will unfold faster than human institutions can respond; survival depends on pre-delegated, automated resilience.
+
+## In practice
+This turn, we are operating under siege conditions. The loss of frontier AI access has cascaded through hospitals relying on diagnostic support, transport authorities using predictive maintenance models, and research programmes dependent on high-throughput simulation — exposing how deeply operational dependence had become institutional fragility. Despite the technical completion of the AI Observatory’s monitoring layer, its interrupt function remains offline: Article 114 TFEU still lacks consensus interpretation, and the Court of Justice has not ruled. With the US cloud provider refusing to re-engage, and the Anti-Coercion Instrument failing to elicit even a reply, we have shifted from deterrence to damage control.
+
+The Legal Service is now drafting a standalone Council regulation under the internal market clause, aiming for adoption via qualified majority in the Telecommunications Working Party — bypassing national vetoes but risking fragmentation if two or more members formally dissent. Six states back the move as necessary for continuity of government functions; two others warn it could trigger retaliatory data flows restrictions. Meanwhile, DG CONNECT has confirmed the Open Integration Programme has met its delivery milestones: the Zurich tool now supports fragment-level analysis of agent behaviours up to 52.0, and the Brussels coordination node is active, linking CNRS, Fraunhofer, and RISE with national CERTs. But this is not sovereignty — it is patchwork interdependence.
+
+That is why our full focus this turn is on the Expand Resilience Surge. ENISA has issued the first design package for autonomous containment protocols, targeting three vectors: unauthorised model replication in energy SCADA systems, rogue inference loops in hospital diagnostics, and cascading routing failures in rail networks. These will be embedded as firmware-level fallbacks, pre-authorised under standing rules approved by member-state CIOs. The first war game — simulating a multi-domain incident at 63.0 capability — is scheduled for November in cooperation with HERA and eu-LISA. No new initiatives can be credibly launched under political capital of 10.0; everything now turns on whether we can demonstrate functional resilience before the next shock hits.

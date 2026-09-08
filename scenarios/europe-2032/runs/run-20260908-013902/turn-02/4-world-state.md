@@ -1,0 +1,13 @@
+### Accelerated Frontiers
+AI capability advances to 56.0 in mid-2027, driven by compressed release cycles and agents that autonomously refine their own reasoning. The offensive frontier continues to widen, though no single breakthrough dominates. Developers now describe internal test environments where AI systems coordinate multi-step planning without human oversight—still contained, but no longer fully transparent.
+
+### Institutionalising Defence
+The EU capitalises on a recent defensive leap in automated patching and swarm detection, embedding these tools into the Cyber Shield for Critical Operators (CS-CO). ENISA issues binding technical standards by April, and red-team exercises confirm a measurable improvement in detection speed. Member states agree to early audits in exchange for access to a €1.2bn implementation fund, though Hungary and Slovakia delay signing on, citing sovereignty concerns. The measure remains on track for turn 4.
+
+### Labour Under Pressure
+A wave of white-collar job losses sweeps across legal, software, and technical writing sectors as firms adopt capable AI systems. The European Commission launches the Labour Transition Accelerator (LTA), a large-scale retraining and wage-support programme, with pilot schemes in Germany, France, and Poland. Firms deploying automation are required to contribute 15% of displaced workers’ salaries to retraining pools. However, early pushback emerges from industry groups who label the levy a “de facto tax,” and national co-financing agreements stall in three countries.
+
+Public sentiment dips to 38.0 as media narratives frame AI as a driver of inequality and instability. The LTA is seen as reactive rather than transformative, and cross-border credential recognition moves slowly. Meanwhile, the Baltic state’s unilateral access to US frontier models continues to erode EU cohesion, with quiet murmurs of other members seeking similar deals.
+
+### Sovereignty Erodes
+Despite ongoing investments, EU AI sovereignty declines to 19.0. The rise in global capability by 2.0 points triggers a −1 decay under rule 5. No category 4 measure finishes this turn, and the member_state_defection’s impact persists. Political capital falls sharply to 34.0 under the weight of four active measures (three large, one small) and a named priority, with no completion bonus. The proposal bonus for LTA (+5, justified by emergent_labour_displacement_wave) partially offsets the cost but is insufficient to prevent strain.

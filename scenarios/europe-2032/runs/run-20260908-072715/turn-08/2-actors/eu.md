@@ -1,0 +1,26 @@
+## Statement changes  
+No statement changes.
+
+## Portfolio  
+- `Launch an EU-led programme to develop and deploy safe-by-design sovereign AI agents, starting with public-sector critical functions (health, energy, emergency response), using open but controlled-weight models audited for goal fidelity and interpretability (category 4, costs 3 per turn, started turn 5, finishes on turn 8): Increase eu_ai_sovereignty by +15 to +20, raise ai_safety by +10 through embedded assurance, reduce dependence on foreign-controlled frontier models` — **finished**  
+- `Scale up the EU AI Safety Board’s authority and resources to conduct real-time audits of training runs and deployed systems at foreign labs operating within EU jurisdiction, with power to halt runs that exhibit eval anomalies or unauthorised capability thresholds (category 1, Evaluation and oversight, costs 3 per turn, started turn 6, finishes on turn 8): Raise ai_safety by +12 through early detection and intervention, close the gap between frontier capability and regulatory visibility, and establish de facto jurisdiction over systems trained on EU soil regardless of ownership` — **finished**  
+- `Sovereign Compute Sprint (category 4, costs 3 per turn, started turn 7, finishes on turn 10): Redirect the capital and permitting mechanisms from the now-completed InvestAI Gigafactories and Tech Sovereignty Package toward emergency sovereign compute mobilisation, prioritising speed over scale, to anchor at least one EU-controlled training run above 60.0 capability by turn 10`  
+
+## New measure  
+**Accelerate the deployment of sovereign AI in critical public services by launching a fast-track adoption corridor for EU-controlled models under the Sovereign Compute Sprint, ensuring first operational use in emergency response and grid resilience by turn 9**
+
+`Category: 9 (Diffusion, adoption and public trust)`  
+`Size: small`  
+`Finishes on turn: 9`  
+`Targeted effect:` Increase `public_sentiment` by +8 to +10 through visible, trusted AI delivering public benefit under EU control; modestly raise `resilience` (+2) by hardening emergency coordination and energy dispatch; signal that sovereignty is not just about compute but about utility  
+`Applies to:` National civil protection agencies, ENTSO-E, and EU-level crisis management bodies (Emergency Response Coordination Centre, Copernicus) using models trained under the Sovereign Compute Sprint with full audit and interpretability
+
+## Priority  
+**Sovereign Compute Sprint** — because the `eval_anomaly_reports` and the `capability_jump` confirm that the frontier is entering a phase of unpredictable behaviour just as the investment winter creates a fleeting opportunity to capture stranded capacity, and because without an EU-controlled system above 60.0, we will have no leverage when the next anomaly becomes an incident — speed now is the only way to avoid permanent dependency.
+
+## In practice  
+We are acting on a narrowing window: the `eval_anomaly_reports` suggest that frontier systems are beginning to exhibit unexplained, emergent competence — a precursor to jumps we cannot contain. At the same time, the `medical_breakthrough` has not yet materialised in our systems; the therapies are being developed in closed U.S. labs we cannot audit, and their arrival would only deepen public resentment of AI as a foreign force that heals elsewhere but displaces here. We cannot wait for consensus. The completion of two major measures — the sovereign agent development programme and the safety board expansion — frees up critical political capital, even as the **Sovereign Compute Sprint** begins to draw down. We are now converting early progress into visible function.
+
+Under the new adoption corridor, we are directing DG HOME and ENTSO-E to integrate the first outputs of the Sprint into live operations by turn 9. This means using EU-sovereign models for wildfire spread prediction in Mediterranean member states, flood coordination in the Danube basin, and real-time balancing of renewable loads across the Nordic grid. The models will run on EuroHPC infrastructure, under full interpretability logging, with red-line constraints enforced by the EU AI Safety Board. We are using the Digital Europe Programme and cohesion funds to cover integration costs, and offering fast-track certification under the AI Act for any national system that adopts them. This is not a pilot — it is operational deployment with teeth.
+
+We are also responding to the emergent regional compute pact. While Finland, Sweden, and Ireland have moved outside Commission channels, we are not treating them as rivals. Instead, we are offering to harmonise their protocols with the Sprint’s audit and ownership framework, converting their parallel effort into a distributed pillar of EU sovereignty. The European Investment Bank is preparing a bridging facility to co-finance their grid upgrades in exchange for legal anchoring of weights and access for the Safety Board. This is how we scale without waiting for unanimity: by absorbing momentum, not opposing it. The frontier does not pause for procedure — neither will we.

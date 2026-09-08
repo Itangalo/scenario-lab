@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech Sovereignty Package −3, Secure Compute Access Framework −3, Compute for Control −3, Sovereign Weight Security Stack −3, priority −1 = −16  
+PROPOSAL BONUS: Sovereign Weight Security Stack (cat 5, large) +3 — answers eval_anomaly_reports and access denial directly  
+LEGITIMACY LENDS: none — public_sentiment (37.0) < eu_political_capital (18.0)  
+SOVEREIGNTY: 18.0 last turn, eu_frontier_access_denied t6 −3, capability rose 3.5 −1 = 14.0 → partial mitigation from large measure in flight approaching urgency +2 → 16.0  
+US_POSTURE: CONSOLIDATION  
+emergent_lab_cooperation -- first noted turn 4, listed in 4 turn(s) so far: Informal data-sharing among European AI safety labs expands into a coordinated early-warning network for model anomalies, with prototype detection tools now integrated into internal EU risk assessments. This grassroots cooperation persists outside formal channels but is gaining traction as a de facto standard for cross-border safety coordination.

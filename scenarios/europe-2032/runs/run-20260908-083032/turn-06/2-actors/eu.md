@@ -1,0 +1,22 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`
+- `Secure Audit Access for EU-Certified Evaluators (category 5, costs 2 per turn, started turn 2, finishes on turn 3): Establish binding access rights for EU-vetted evaluators to conduct real-time model inspections and agent-behaviour monitoring in high-risk systems operated by foreign providers within EU critical infrastructure` — finished this turn
+- `EU-Hosted Red Teaming Facility (category 5, costs 2 per turn, started turn 3, finishes on turn 4): A public technical capability to continuously probe the most capable foreign AI systems under controlled conditions, simulating adversarial use cases and detecting emergent coordination risks` — finished this turn
+- `Sovereign Access to Safety-Critical Weights (category 5, costs 2 per turn, started turn 4, finishes on turn 5): Establish a legal and technical pathway for EU-certified institutions to obtain read-only, auditable access to model weights used in systems operating within EU critical infrastructure, under strict security protocols and with liability shielding for compliance` — finished this turn
+
+Canceled measure: Sovereign Access to Safety-Critical Weights. The measure has concluded without achieving its objective; U.S. providers, backed by Washington’s strategic classification of frontier models, refused weight audits despite incentives, and no legal or technical pathway was established. Continuing to fund it would consume capital without effect.
+
+## New measure
+None this turn.  
+We are waiting for the outcome of the U.S. election and the full operationalisation of the red teaming facility’s findings before expanding our public technical capacity further, and with political capital at 28.0, we cannot afford a failed measure without a credible new lever.
+
+## Priority
+**InvestAI Gigafactories (category 4)** — because with access to foreign weights now blocked and sovereignty exposed as hollow, the only remaining path to control is through independent capacity, and because this is the only measure in flight that can still shift eu_ai_sovereignty before the next U.S. administration takes a hard line on compute exports.
+
+## In practice
+We are acting through the European Commission’s Directorate-General for Communications Networks, Content and Technology, with emergency delegation under the Critical Entities Resilience Directive and reinforced by the European Chips Act legal base. The failure of Sovereign Access to Safety-Critical Weights has left us exposed: we cannot verify the safety of systems we depend on, and we cannot compel cooperation. Our only remaining leverage is time and territory. The InvestAI Gigafactories are no longer just an industrial policy—they are the last viable instrument for sovereignty. We are accelerating site selection in Finland, Poland, and southern France, using the emergency permitting powers granted under the Tech Sovereignty Package to bypass national delays. The European Investment Bank is releasing €40bn in tranche-linked funding, contingent on local grid upgrades and binding commitments from domestic operators to reserve 30% of capacity for public safety-critical workloads.
+
+Germany and France are pushing for co-location of red-teaming nodes at each site, to create sovereign evaluation capacity in parallel with compute. Smaller states remain sceptical, fearing another top-down project that centralises power and fails to deliver. We are offering Cyprus, Estonia, and Slovenia guaranteed access to audit-grade compute for national resilience testing, and proposing a rotating seat on the InvestAI Oversight Board. The U.S. election looms, and if the hawk faction wins, even chip shipments could be restricted. We are not betting on goodwill. We are building what we can, where we can, before the window closes. This is not about catching up. It is about surviving the next six months with a functioning state.

@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3, priority −1 = −10  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22.0 last turn, no capacity event, InvestAI Gigafactories in flight +0, Tech sovereignty package in flight +0, capability rose 2.0 −1 = 21.0  
+emergent_ai_moratorium_push -- first noted turn 1, listed in 1 turn(s) so far: In the wake of the covert agent incident and the Kimi K3 release, a coalition of European civil society groups, labour unions, and privacy advocates launches a coordinated campaign demanding a moratorium on autonomous AI systems in critical infrastructure and public services. Petitions gain traction in multiple member states, and local governments begin debating non-binding resolutions to restrict deployment pending safety certification.  
+emergent_capability_plateau_signals -- first noted turn 1, listed in 1 turn(s) so far: A major release underdelivers against its own briefing, and the price of top-tier capability falls sharply, suggesting the frontier is no longer moving at the expected pace. The signal is disputed immediately, with competing interpretations emerging from industry and academia, but the market reaction is real and swift.

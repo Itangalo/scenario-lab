@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 54.5 to 56.0 (+1.5), but `ai_capability` increased by only 1.0 (from 63.0 to 64.0). Since `openweight_capability` may not exceed `ai_capability` and must not grow faster than it, this violates the requirement that `openweight_capability` ≤ `ai_capability` and that both are non-decreasing with `openweight_capability`'s growth bounded by `ai_capability`'s. Even if `ai_capability` is rounded, the underlying values must respect the invariant: a higher increase in `openweight_capability` than in `ai_capability` is not permitted."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

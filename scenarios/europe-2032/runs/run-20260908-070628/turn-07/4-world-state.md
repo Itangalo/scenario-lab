@@ -1,0 +1,19 @@
+### A Fragile Advance
+
+AI capability advances by +1.0 to 61.5, driven by longer-horizon agent training and improved self-correction loops in closed labs. Open-weight models rise to 58.5, narrowing the gap as distillation techniques accelerate—leveraging recently released high-capability checkpoints from closed models. This brings open-weight systems closer to autonomous cyber operations, but remains within the bounds of feasible knowledge transfer, preserving the invariant that `openweight_capability` ≤ `ai_capability`.
+
+A genuine **safety_breakthrough** occurs: a new interpretability framework allows real-time tracking of latent planning states in high-capability models, adopted rapidly by leading developers. This lifts `ai_safety` by +5, from 34.0 to 39.0—the first meaningful control gain in years.
+
+The **InvestAI Gigafactories** complete this turn, delivering their full sovereignty benefit after delayed chiplet integration finally resolves. This contributes +3 to `eu_ai_sovereignty`. The **Sovereign Cloud for Public Audit and Civic Use** also completes this turn in governance terms—formal approval is granted and infrastructure deployed—though integration with Sphère and BürgerNetz remains partial due to unresolved coordination disputes between member states. Despite incomplete operationalization, the measure is counted as finished in the portfolio, as its primary milestones are met. Full benefit will require future turns to realize, but the completion triggers its accounting: +3 to portfolio charge, no immediate sovereignty yield beyond baseline trajectory.
+
+The **Emergency Resilience Surge** progresses, contributing +2 to resilience through binding standards and ENISA-led drills. Resilience reaches 45.0.
+
+The EU proposes **Sovereign Public Cloud Acceleration**, a category 4 measure, intended to expand and deepen the recently completed Sovereign Cloud initiative. This counts as the single allowed new measure for the turn. However, due to severe political capital constraints (−12.0 portfolio charge), implementation cannot begin in this turn. The proposal is formally registered and narrowly endorsed by Germany and France, who pledge future hosting capacity, but full coordination is blocked by Poland. No infrastructure is deployed, and no capital is yet spent beyond the proposal’s accounting. As a high-cost measure, per modelling constraint 6, full implementation requires at least two turns; this turn marks only the proposal phase. It will not contribute to portfolio charge until next turn.
+
+The named priority **Accelerated Evaluation Capacity** yields no acceleration: at −12.0 capital, priorities are inert. Red-teaming clusters stall in planning.
+
+Political capital falls further. Portfolio charge: four large measures in flight (Gigafactories finished, Sovereign Access finished, Tech Sovereignty finished, Emergency Resilience Surge ongoing) × −3 = −12; priority −1. Total charge: −13. Proposal bonus: +3 for answering the recent cyberattack. No legitimacy lending (capital < sentiment). Final capital: 0.0 −13 +3 = **−10.0**. The change of −10.0 is within the allowable range (≤25), so no floor applies.
+
+`eu_ai_sovereignty` rises to 31.0: base 28.0, plus +3 from InvestAI Gigafactories. The completed Sovereign Cloud measure does *not* yield an additional +3 this turn, as its contribution was already accounted for in prior sovereign yield calculations (per notepad: adjusted to 27.0 due to integration delays). The earlier reported 32.0 → 27.0 adjustment confirms incomplete delivery, and retroactively adding another +3 would double-count. No decay applies, as `ai_capability` rose by 1.0 (below 2.0 threshold).
+
+Public sentiment holds at 28.0—no visible benefit yet, no new scandal.

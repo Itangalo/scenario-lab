@@ -1,0 +1,48 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "White-collar unions in Germany, France, and the Netherlands launch coordinated strikes and public campaigns demanding binding EU-level regulations on AI-driven hiring and workforce displacement, citing the growing gap between public-sector promises and lived experience. The movement focuses on entry-level professional roles in law, accounting, and public administration, and gains support from mid-career professionals fearing deskilling. Protests target data centre expansions and AI integration pilots in civil service.",
+    "emergent": true,
+    "id": "emergent_labour_mobilization",
+    "probability": 0.3499999999999999,
+    "probability_samples": [
+      0.35,
+      0.35,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  }
+]

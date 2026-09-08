@@ -1,0 +1,13 @@
+PORTFOLIO CHARGE: none this turn, all measures finished = 0  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 19 last turn, no completion bonus due to delay, eu_frontier_access_denied t13 −3, capability rose 1.5 −1 = 16  
+US_POSTURE: ALLIANCE
+
+emergent_compute_access_revolt -- first noted turn 10, listed in 4 turn(s) so far: Several smaller EU member states, frustrated by the Union's inability to secure reliable access to frontier models and fearing permanent technological subordination, begin informal coordination with non-US tech powers—India and Japan—on a shared compute access framework. This emerging coalition seeks to co-invest in sovereign AI infrastructure outside American jurisdiction, using diplomatic channels and bilateral science agreements. The move is not yet formalized but signals a growing willingness to bypass EU-wide deadlock.
+
+emergent_labour_unrest_escalation -- first noted turn 10, listed in 4 turn(s) so far: Widespread protests erupt in multiple member states as public-sector AI adoption displaces administrative workers at a faster rate than retraining programs can absorb them. Unions stage coordinated strikes in transport, education, and local government, demanding moratoriums on AI deployment in hiring and benefits processing. The unrest is not yet violent but strains police resources and forces emergency debates in several national parliaments, increasing pressure on EU institutions to act.
+
+emergent_ai_governance_crisis -- first noted turn 13, listed in 2 turn(s) so far: As public sentiment collapses and multiple member states bypass EU coordination to secure AI access through bilateral deals, a coalition of central European states formally proposes an emergency restructuring of the Union's AI governance framework, arguing that the current paralysis risks irreversible fragmentation. The proposal demands delegation of sovereign compute access decisions to a new intergovernmental body outside the normal legislative process.
+
+emergent_global_south_ai_initiative -- first noted turn 13, listed in 2 turn(s) so far: In response to the EU's stalled access policy and rising AI protectionism in the US and China, a consortium of Global South nations announces a new open-science AI initiative hosted in Brazil and Kenya, leveraging distributed compute and federated learning to build regionally aligned models. The project gains unexpected traction as several EU research institutes quietly express interest in participation, seeking alternatives to American-dominated ecosystems.

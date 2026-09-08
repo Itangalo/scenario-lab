@@ -1,0 +1,9 @@
+AI capability advances to 61.5 as autonomous systems achieve multi-day operations in cyber and logistics, widening the gap between offensive capabilities and defensive readiness. The open-weight frontier expands with a 58.0 model enabling broader fraud, disinformation, and intrusion tools, pushing `openweight_capability` to 50.5 despite adaptation bottlenecks. A major ransomware attack continues to undermine trust, with systemic vulnerabilities exposed across EU health systems.
+
+In response, the EU launches the €200bn Tech Sovereignty Package, accelerating private investment and permitting in Finland, Spain, and Poland, though no new compute capacity comes online. The Sovereignty Pact is formalized with Japan, South Korea, and Canada, enhancing export controls and evaluation sharing, but the US remains outside pending its new administration’s stance. The ASRIR initiative is announced with €4.8bn funding and plans for 1,200 staff to strengthen red-teaming under ENISA and the Joint Research Centre, but legal disputes over access to US models delay implementation, preventing operational launch.
+
+A Taiwan blockade disrupts global semiconductor supply, placing EU strengths in lithography and rare gas purification at the center of high-stakes negotiations. Brussels explores conditional export flexibility to China in exchange for secured EU shipments, testing geopolitical alignment.
+
+Public sentiment remains stagnant at 31.0 amid ongoing anxiety. Resilience sees marginal gains through improved coordination, while AI safety declines further as safeguards fail to keep pace. EU AI sovereignty weakens due to compute shortages and talent outflow. Political capital falls to 17.0, reflecting the strain of advancing high-cost initiatives amid crisis.
+
+The 2028 US election concludes with a new administration adopting a posture of strategic cooperation: US_POSTURE shifts to ALLIANCE.

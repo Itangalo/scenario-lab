@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereign Red-Teaming Grid −3, priority −1 = −10  
+PROPOSAL BONUS: Sovereign Red-Teaming Grid (cat 5, large) +6 — directly responds to openweight_frontier_release and eu_frontier_access_denied, both severe and current  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 19.0 last turn, no completion bonus (measure finished but category 4 in-flight only +1), eu_frontier_access_denied t5 −2, capability rose 1.5 −1 = 18.0  
+emergent_open_source_security_audit -- first noted turn 1, listed in 5 turn(s) so far: The coalition of European academic institutions and non-profits continues its open-source audit of the Kimi K3 model weights, now publishing preliminary findings that reveal exploitable cyber capabilities in widely used agent frameworks. The report gains traction in policy circles, forcing regulators to confront the dual-use dilemma of open-weight models, while also risking the diffusion of attack blueprints. The initiative evolves into a recurring, distributed audit effort, setting a precedent for community-led model scrutiny.

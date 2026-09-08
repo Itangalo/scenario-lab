@@ -1,0 +1,6 @@
+US_POSTURE: RETRENCHMENT  
+PORTFOLIO CHARGE: Sovereign Evaluation Authority −3, Distributed Detection and Disruption Network −3, priority −1 = −7  
+PROPOSAL BONUS: Distributed Detection and Disruption Network (cat 5, large) +4 — directly answers emergent_containment_failure this turn, severe and recent  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 5.0 last turn, InvestAI Gigafactories finishes t9 +5, capability rose 2.5 −1, no capacity event = 9.0 → adjusted for early operational effect of new network +1 → final 8.0 (capped by partial delivery and integration lag)  
+emergent_public_sector_strike -- first noted turn 8, listed in 2 turn(s) so far: Public-sector workers in France, Germany, and Belgium launch coordinated strikes against the rollout of AI-supported administrative systems, citing lack of consultation and fears of mass redundancy. The strike disrupts tax processing, permit issuance, and healthcare administration, forcing emergency negotiations and slowing the deployment of several category 9 measures.

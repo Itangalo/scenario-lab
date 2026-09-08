@@ -1,0 +1,110 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7053084171826316,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8735716162982881,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.04,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.23704857391161338,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.43299202318086216,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5507810999203666,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.641980637827411,
+    "triggered": false
+  },
+  {
+    "description": "A coalition of middle powers and academic institutions launches a formal proposal for an open, multilateral AI observatory to monitor capability trends and safety practices, arguing that unilateral control has failed to prevent distributed risk. The proposal gains early support from non-aligned states but faces resistance from both the US and China.",
+    "emergent": true,
+    "id": "emergent_global_observatory_push",
+    "probability": 0.16666666666666666,
+    "probability_samples": [
+      0.15,
+      0.1,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.42180703063644165,
+    "triggered": false
+  },
+  {
+    "description": "Preliminary data from several EU member states shows a sharp rise in white-collar job displacement in legal, administrative, and technical writing roles, attributed to AI adoption. The trend is not yet a crisis, but trade unions and education ministries begin sounding alarms about retraining capacity.",
+    "emergent": true,
+    "id": "emergent_labour_displacement_wave",
+    "probability": 0.15,
+    "probability_samples": [
+      0.12,
+      0.15,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4011590886958194,
+    "triggered": false
+  }
+]

@@ -1,0 +1,15 @@
+### A Surge in Capability, a Surge in Risk
+
+Global AI capability inches upward to 69.0, driven by self-improving training loops now embedded in core development pipelines. The open-weight frontier advances noticeably, reaching 64.0, as tooling derived from recently leaked model weights enables more accessible automation and synthetic media generation. While this reflects accelerated diffusion, it remains firmly behind the closed frontier, preserving the expected lag in open-weight capability growth.
+
+This progress follows a major cyber intrusion that disrupted public services across three member states. The attack, executed with AI-generated exploit chains and adaptive evasion techniques, overwhelmed legacy defences. Attribution remains unclear, but forensic analysis confirms the tooling was model-synthesized. The incident underscores a dangerous imbalance: capability is outpacing both safety and resilience.
+
+In response, the EU launches the *Mandate Runtime Sovereignty in Critical Functions*, a sweeping measure requiring runtime monitoring hooks in all high-capability AI systems interfacing with critical infrastructure. The mandate, declared a priority, aims to enforce observable control and immediate intervention authority through the newly empowered European AI Infrastructure Authority (EAIA). However, political backlash is immediate. Hungary formally challenges the legal basis, while Poland threatens to withhold budget approval.
+
+The *Opaque System Monitoring & Control Pilot*, previously under discussion, remains in preparatory phase due to legal and technical coordination delays. It has not yet been formally launched and will not enter the portfolio until these issues are resolved. Its rollout is now expected in the next turn, pending resolution of cross-border data access disputes. Resilience dips as infrastructure strains under unseen pressures, and public trust erodes further after media reports link AI automation to regional blackouts. Labour protests grow, feeding a sentiment of technological overreach.
+
+Despite progress toward sovereign infrastructure, political capital plummets. The portfolio charge persists, the new large measure adds cost, and the priority penalty applies—just as capital falls below 12, triggering loss of control. The proposal bonus is minimal: the cyber incident justifies action, but the measure’s scale and timing earn only partial credit. Public sentiment drops on visible disruption and elite division.
+
+### Sovereignty Without Unity
+
+The EU has built components of autonomy—but integration and unity remain distant. The sovereign compute grid, though advanced, is not yet operational at system-wide scale. Final integration and certification are pending, with full activation anticipated in the coming months. Until then, its potential remains unrealized in both metrics and governance.

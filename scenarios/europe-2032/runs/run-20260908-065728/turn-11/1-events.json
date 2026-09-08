@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_plateau_signals",
+    "probability": 0.20999999999999996,
+    "emergent": true,
+    "description": "A major release underdelivers against its own briefing, and the price of top-tier capability falls sharply—suggesting the frontier may have stalled. The signal is disputed, with labs offering conflicting interpretations, but the market is reacting. This could mark the beginning of a sustained plateau in capability growth.",
+    "probability_samples": [
+      0.3,
+      0.03,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

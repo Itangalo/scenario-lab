@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 56.5 to 68.0 (+11.5) while `ai_capability` increased from 70.0 to 76.0 (+6.0). The increase in `openweight_capability` exceeds the increase in `ai_capability`, which violates the requirement that `openweight_capability` never exceeds `ai_capability`. At no point can `openweight_capability` be closer to the frontier than it was previously — here, it closes the gap from 13.5 to 8.0, implying it overtook the frontier’s prior growth, which is not permitted unless narratively justified by catastrophic physical destruction of the compute base (which is not the case).\n- Invariant 9 violated: `ai_safety` decreased by 7.0 (from 10.0 to 3.0), which is within the 25-point cap, but `openweight_capability` increased by 11.5 in one turn. While this is under 25, the issue is not magnitude alone — the violation is structural due to the relationship with `ai_capability` (see above). However, the jump in `openweight_capability` is suspiciously fast and lacks a plausible diffusion mechanism; even with rapid open releases, such a leap would require infrastructure, expertise, and coordination that cannot emerge instantly. The narrative does not justify how open actors closed 11.5 points of capability in six months against a rising frontier, violating Modelling Choice 6 (no measure is implemented instantly) by implication for capability diffusion.\n- Modelling Choice 5 violated: The EU introduces the \"Emergency Jurisdictional Enforcement Directive\" as a new measure. The notepad shows \"PORTFOLIO CHARGE: Emergency Jurisdictional Enforcement Directive −3, priority −1 = −4\", indicating it is both a new measure and named as a priority. However, the notepad also records \"PROPOSAL BONUS: Emergency Jurisdictional Enforcement Directive (cat 3, large) +6\", suggesting it was proposed and implemented within the same turn. This violates the minimum time lag (Modelling Choice 6): high-cost measures require at least two full turns from proposal to full effect. The narrative treats it as already launched and operational, implying full implementation in one turn."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

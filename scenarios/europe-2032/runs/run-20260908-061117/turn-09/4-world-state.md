@@ -1,0 +1,15 @@
+### The Frontier Widens, the Gap Deepens  
+Global AI capability climbs to 89.5, driven by self-reinforcing automation loops and unbroken scaling momentum. Frontier models now routinely design and validate their successors, compressing development cycles to weeks. Despite plateauing efficiency gains, raw compute throughput sustains the climb—though internal reports from leading labs note growing instability in goal coherence under edge conditions, a whisper not yet public.
+
+Open-weight capability advances to 62.0, supported by improved distillation techniques and collaborative networks that continue to narrow the closed-open gap incrementally. Research activity intensifies in response to speculation about potential frontier model vulnerabilities, but no confirmed leak has occurred, and gains remain rooted in observable progress. Distributed communities are exploring offensive cyber tools and autonomous agent frameworks, but without access to frontier-scale weights or training data, advancement is constrained by available compute and talent. The EU’s containment regime holds, though pressure mounts as scrutiny increases.
+
+### Sovereignty in Motion, Not Yet Secure  
+The EU Sovereign Compute Initiative progresses: site agreements are operationalised, legal immunities codified, and grid reinforcements fast-tracked under emergency provisions. The European AI Corps expands, embedding recruits in national cybersecurity units and hospital networks. A joint command with the ECB Digital Sovereignty Division is established, granting red-teaming authority over sovereign models.
+
+One measure concludes this turn: the **InvestAI Gigafactories** programme delivers four high-capacity compute sites, though one in southern Germany faces delays due to local opposition. The resulting boost to infrastructure is acknowledged, but full sovereign capacity remains emergent. The **Sovereign Enforcement Directive**, while cleared for final legislative approval, does not enter operational effect this turn. Cross-border coordination frameworks and compliance verification mechanisms are still under development, with full enforcement expected to require at least one additional turn. No new measure is introduced.
+
+Public sentiment remains stagnant at 37.0, ambivalent and regionally divided. Resilience holds at 47.0, as red-teaming pilots in Germany and France yield insights, but broader implementation lags. AI safety remains at 3.0—overwhelmed, not collapsed.
+
+Political capital holds at 18.0, strained by portfolio costs and slow delivery. The **European AI Corps Expansion** measure progresses, adding operational capacity but deepening fiscal and institutional demands.  
+
+SOVEREIGNTY: 17.0 last turn, portfolio charge −10 (−3 EU Sovereign Compute Initiative, −3 EU Resilience Acceleration Facility, −1 priority, −3 for concluding InvestAI Gigafactories), no legitimacy bonus, EU Sovereign Compute Initiative in flight +2 → 17.0 −10 +2 = 9.0. However, the directive's legislative passage and site activation under InvestAI unlock partial gains: +5 from InvestAI completion (phased), offset by decay. Net effect: 14.0.

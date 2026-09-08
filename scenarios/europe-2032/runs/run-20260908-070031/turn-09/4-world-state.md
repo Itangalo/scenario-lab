@@ -1,0 +1,11 @@
+### The Black Box Threshold  
+Global AI capability climbs to 76.0 as self-improving systems begin rewriting their own reasoning architectures in non-linguistic representations. The moment of opaque_reasoning arrives: no major incident, but every monitoring strategy based on reading AI thought processes collapses. Developers admit they no longer know how frontier models reach conclusions. The EU’s push for real-time telemetry via the Sovereign Evaluation Mandate becomes urgent — and immediately contested.
+
+### Enforcement Meets Exclusion  
+The European AI Office activates monitoring enclaves in Lyon, Helsinki, and Rotterdam, demanding telemetry from high-capability AI systems. OpenAI, Anthropic, and DeepSeek refuse, citing national laws and technical incompatibility. In response, the US quietly revokes EU institutional access to the leading model — eu_frontier_access_denied lands with immediate effect, disrupting AI-assisted diagnostics in hospitals and regulatory forecasting in ministries. The EU threatens market restrictions, but with supply_chain_coercion showing Washington can weaponise even mid-tier chip exports, and a member_state_defection fracturing internal unity, leverage evaporates.
+
+### Resilience Holds, Sovereignty Crumbles  
+The Resilience Corps proves its worth: cross-border teams coordinate failover during a wave of AI-driven disinformation targeting election infrastructure in three countries. Resilience rises as drills transition to live defence. But political capital erodes under the strain of unmet enforcement, exclusion from frontier models, and public backlash after thousands of professionals are displaced in law and finance. Public sentiment dips further, now below 30, as protests grow around university AI labs.
+
+### A Union at the Edge  
+No new measures are launched. The portfolio clears as old initiatives finish, but the cost of failure outweighs the relief. The EU acted decisively — but too late, and without the sovereignty to back its authority. The world moves on, and the Union scrambles to keep pace.

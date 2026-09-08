@@ -1,0 +1,32 @@
+[
+  {
+    "id": "emergent_global_ai_regulatory_fragmentation",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "Major jurisdictions continue enforcing divergent AI regulations, creating compliance chaos for multinational developers. The EU's AI Act, US executive orders, and China's model licensing regime pull in opposite directions, forcing companies to build region-specific systems. This regulatory balkanization slows deployment and increases costs, especially for open-weight models that cannot be easily geofenced.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_ai_driven_energy_crisis_pressure",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "Surging AI compute demand exacerbates energy shortages across Europe, with data centres consuming an unprecedented share of grid capacity. Local governments impose emergency restrictions on new AI infrastructure, and public sentiment turns sharply against unchecked expansion of compute capacity, citing blackouts and rising electricity prices. This pressure risks stalling sovereign compute initiatives and further eroding public support for AI expansion.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_retrenchment",
+    "probability": 0.36000000000000004
+  }
+]

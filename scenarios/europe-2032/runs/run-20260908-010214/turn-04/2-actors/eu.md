@@ -1,0 +1,15 @@
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`
+- `Accelerated Sovereignty Procurement (category 4, costs 3 per turn, started turn 3, finishes on turn 4): Fast-track legal and financial instruments to secure EU-controlled compute capacity from private providers under binding conditions.`
+
+## New measure
+None this turn. We are waiting for the outcome of the emergency procurement vote in the Council’s Competitiveness configuration and for clarity on whether the €45bn Crisis and Investment Facility drawdown can be legally ringfenced for sovereignty-conditional access, before launching a new initiative.
+
+## Priority
+`Accelerated Sovereignty Procurement` — because the sudden denial of frontier access and the eval anomaly together create a narrow leverage window: weakened labs may accept EU control for liquidity, but only if we act before they restructure or find alternative patrons.
+
+## In practice
+We are finalising the emergency procurement framework under Article 32 of the Financial Regulation, with the Commission preparing implementing acts that define technical thresholds for model capability (aligned with the 50.0 openweight benchmark) and a 90-day review window for model behaviour under observation. Legal services are responding to proportionality concerns from two member states, drawing on the precedent of pandemic vaccine procurement to justify extraordinary measures in the face of systemic risk. The Council’s Competitiveness configuration is scheduled to vote on the package in late March; we have secured tentative support from four of the five largest member states, contingent on safeguards against arbitrary access revocation and a clear sunset clause.
+
+Parallel bilateral talks continue with three hyperscalers—one pausing training runs due to capital constraints, two in advanced restructuring—offering access to €45bn from the Crisis and Investment Facility, drawn against the InvestAI envelope, in exchange for binding commitments on EU-based infrastructure, model review access, and public service fallback capacity. The denial of frontier access this turn has hardened our position: we are now insisting on physical hosting, audit rights, and irrevocable access for critical functions, treating this not as procurement but as strategic anchoring. If we secure even one agreement by turn 4’s end, it will mark the first real step toward independent capacity. If we fail, the window may close as labs stabilise under new terms elsewhere—leaving the EU locked out and reactive.

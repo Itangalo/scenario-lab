@@ -1,0 +1,13 @@
+### Stalled Momentum, Mounting Risks
+
+The **Accelerated Biosecurity Enforcement Directive** officially concludes its legislative journey, but implementation falters. Emergency powers under Article 222 TFEU allow the AI Office to begin direct red-teaming, yet Hungary blocks inspector deployment and Germany challenges the legality of bypassing judicial review. A pilot simulation with France and Sweden proceeds, but Poland refuses to participate, citing sovereignty concerns. The directive’s formal completion yields no operational gain.
+
+The **Emergency Resilience Surge** intensifies coordination, with General Mäkinen publishing scorecards that expose uneven progress. Spain’s staffing gaps persist despite redirected funds, and France maintains its nuclear exclusion, arguing that civilian oversight risks command integrity. A full dark-grid exercise is planned for December but delayed due to weather and logistical disputes—exposing the gap between planning and readiness.
+
+The **Sovereign Compute Acceleration Programme** advances permitting in Finland and Romania, but U.S. export controls stall critical equipment shipments. Negotiations with ASML and IMEC on repurposed lithography yield only conceptual designs. The Anti-Coercion Instrument is invoked against a major cloud provider, but no immediate concessions follow. Sovereignty remains aspirational.
+
+AI capability climbs to 65.0 as recursive self-improvement accelerates in closed labs. Openweight capability reaches 52.0 after minor model leaks and community fine-tuning—now matching the closed frontier at the start of the run. No safety improvements land; **ai_safety** remains at 1.0, reflecting unenforced safeguards and opaque model reasoning. Resilience holds at 40.0, absorbing no new gains from incomplete measures.
+
+Public sentiment stays at 16.0, with sabotage fears amplified by the delayed exercise and unresolved job losses. Political capital falls to 0.0: the portfolio charge of −10 (three large measures at −3 each, priority at −1) is partially offset by a +3 bonus for launching the compute programme earlier and a +7 carryover from the previous turn’s surplus (1.0 → 0.0 net). No new proposal bonus applies this turn. The EU’s agenda is now financially and politically overextended.
+
+**eu_ai_sovereignty** remains at 17.0. Although the capability index rose by 1.0, falling short of the 2.0 threshold for decay under metric rule 5, no positive sovereignty events occurred and existing headwinds persist. Without a triggering mechanism for decline, the metric holds steady, consistent with its rule-governed behavior.

@@ -1,0 +1,309 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8101291626827904,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.09000000000000001,
+    "probability_samples": [
+      0.09,
+      0.09,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.279172405184393,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.24,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.44
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3798301234299787,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.2333333333333333,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3308099531520625,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8898267786872764,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.05440071370738675,
+    "triggered": true
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.12333333333333334,
+    "probability_samples": [
+      0.21,
+      0.0,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5130569173983347,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.16666666666666666,
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.25
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.32909359926023474,
+    "triggered": false
+  },
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8535271526391811,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.12936137837112882,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9663021055052888,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.11333333333333333,
+    "probability_samples": [
+      0.12,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6762821305464715,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.03298449574284135,
+    "triggered": true
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5712231785127753,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.014831329378304448,
+    "triggered": true
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5201131745830827,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.11,
+      0.0,
+      0.11
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5609082423655197,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.28440222336598364,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.005575541446128929,
+    "triggered": true
+  },
+  {
+    "id": "emergent_sovereign_medical_breakthrough_attempt",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "A coalition of EU biomedical researchers and public hospitals begins circulating an unpublished proof-of-concept using STI-aligned infrastructure to replicate a foreign-developed AI-designed therapy under full auditability constraints. While not yet validated, the effort signals a tangible attempt to close the sovereign capability gap in life-saving AI applications, and gains quiet support from member-state health ministries frustrated by dependency.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7371791944530155,
+    "triggered": false
+  },
+  {
+    "id": "emergent_biosecurity_alliance",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "In response to repeated bio-risk signals and the lack of enforceable global standards, a coalition of European, Nordic, and East Asian states forms a non-binding but operationally active biosecurity intelligence-sharing network focused on detecting and disrupting illicit AI-assisted pathogen design. The group leverages national surveillance systems and academic monitoring to flag high-risk preprints and synthesis orders, marking the first coordinated transnational effort to close the openweight bio-risk gap.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5032392666321783,
+    "triggered": false
+  },
+  {
+    "id": "emergent_sovereign_model_breakthrough",
+    "probability": 0.049999999999999996,
+    "emergent": true,
+    "description": "A research team within the STI program, leveraging newly deployed secure clusters and cross-border biomedical data access under emergency provisions, achieves an unexpected milestone: training a fully auditable AI model capable of designing novel protein structures for rare disease targets. While not yet at frontier capability, the model demonstrates functional parity with closed systems from three years prior, reigniting debate about the viability of sovereign, transparent AI development in high-stakes domains.",
+    "probability_samples": [
+      0.0,
+      0.15,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_sovereign_therapeutics_setback",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "The Sovereign Therapeutics Initiative (STI) suffers a critical failure in its first major trial run: an AI-designed candidate therapy triggers an unforeseen immune cascade in preclinical models, forcing a redesign. The incident raises doubts about the EU's ability to deliver safe, sovereign biomedical AI without access to frontier assurance tools, and delays the program by at least 12 months. Leaked internal assessments suggest the failure stemmed from inadequate training data diversity and lack of real-time interpretability.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.25
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

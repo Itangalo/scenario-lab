@@ -1,0 +1,59 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.1366666666666667,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_supply_chain_pressure",
+    "probability": 0.20666666666666667,
+    "emergent": true,
+    "description": "The U.S. intensifies pressure on the Netherlands to restrict mid-tier DUV lithography exports from ASML to China, leveraging American components in the machines. This exposes the EU's vulnerability in its sole strategic hardware advantage and forces a high-level debate within the Dutch government, delaying maintenance and upgrades for critical customers.",
+    "probability_samples": [
+      0.25,
+      0.12,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

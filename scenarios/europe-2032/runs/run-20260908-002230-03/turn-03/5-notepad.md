@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Public-Sector AI Adoption Accelerator −2, Emergency AI Governance Forum −2, priority −1 = −11  
+PROPOSAL BONUS: Emergency AI Governance Forum (cat 7, small) +3 — emergent_labour_protests_escalate landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 19.0 last turn, no capacity event, capability rose 2.5 −1 = 18.0  
+emergent_grid_stability_alerts -- first noted turn 2, listed in 3 turn(s) so far: Unusual AI-driven load fluctuations persist in multiple national grids, now correlated with timing patterns suggesting coordinated probing rather than random automation errors. ENISA has escalated internal alerts, but no public attribution or confirmed breach.  
+emergent_labour_protests_escalate -- first noted turn 2, listed in 3 turn(s) so far: Labour actions intensify in France and Belgium, with transport and public administration workers joining strikes demanding legislative limits on AI deployment. Media coverage grows, framing the issue as a democratic deficit in AI governance.

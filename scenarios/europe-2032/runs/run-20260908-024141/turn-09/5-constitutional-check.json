@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 64.5 to 77.0 (+12.5), which is a rise of more than 25% of the gap to `ai_capability` (which rose from 83.5 to 89.5). The constitutional constraint requires that `openweight_capability` never exceeds `ai_capability` and must grow more slowly, as it is bounded above by `ai_capability` and can only close the gap gradually. A jump of +12.5 in one turn, especially when `ai_capability` increased by only +6.0, implies `openweight_capability` is catching up too fast without narrative justification (e.g., catastrophic leakage or uncontrolled release of frontier models), and violates the spirit and likely the intent of Invariant 2, which treats `openweight_capability` as a trailing, constrained metric.\n- Narrative Constraint 8 violated: The narrative states \"recursive self-improvement now operating in newly automatable fields\" and implies a qualitative shift in AI development (\"collapsing the assumption that human judgment was a bottleneck\"). This telegraphs a systemic change in the AI growth regime, which constitutes forecasting a future state or implying that an event gate (e.g., recursive self-improvement onset) has opened. Such telegraphing is prohibited under Constraint 8, which forbids implying that an event gate is open or naming probabilities or future trends. The capability increase itself may be within bounds, but the narrative frames it as a permanent regime shift, which is not permitted."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

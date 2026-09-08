@@ -1,0 +1,341 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1604886661054915,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9518408384635841,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3269393880689776,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.787074876013247,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6046840024931582,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.21,
+    "probability_samples": [
+      0.21,
+      0.21,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6352983845350146,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.979822461108526,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1334794579956764,
+    "triggered": true
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5610951927297684,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7651873729176454,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5345104078289808,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5980814381051397,
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_displacement_wave",
+    "probability": 0.0,
+    "emergent": true,
+    "description": "The wave of AI-driven displacement in mid-level technical and administrative roles continues to escalate, with widespread strikes in legal, financial, and public sectors across multiple member states. Unions coordinate transnationally, demanding binding EU-wide safeguards on public-sector AI adoption and transitional income guarantees, framing the issue as one of democratic legitimacy.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.4409136250684562,
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_ai_governance_initiative",
+    "probability": 0.0,
+    "emergent": true,
+    "description": "The multilateral AI governance forum led by Japan, India, and Brazil finalizes a framework for neutral evaluation standards and incident reporting, attracting formal participation from 15 additional non-aligned states. The initiative begins drafting a lightweight compliance mechanism, positioning itself as a viable alternative to both U.S.-led and EU-centric models of AI governance.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.30725180290355314,
+    "triggered": false
+  },
+  {
+    "id": "emergent_compute_diplomacy_initiative",
+    "probability": 0.0,
+    "emergent": true,
+    "description": "Japan, India, and Brazil formalize a joint compute-access consortium that conditions participation on adherence to shared AI safety and openness norms, inviting the EU as a founding partner. The initiative gains momentum as U.S. access restrictions intensify, offering a viable alternative to bilateral dependency.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6629229000837316,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.05000000000000001,
+    "probability_samples": [
+      0.0,
+      0.05,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.05133037799360063,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.03,
+    "probability_samples": [
+      0.0,
+      0.09,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.01663083669452947,
+    "triggered": true
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9025101606034786,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8048551308731099,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5622780887746851,
+    "triggered": false
+  },
+  {
+    "id": "emergent_compute_access_negotiations",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "In response to stalled bilateral talks and growing dependency risks, a coalition of EU member states initiates emergency negotiations with Japan, India, and Brazil to formalize mutual compute access guarantees under shared safety and openness norms. The talks are framed as a contingency against further U.S. access restrictions and aim to operationalize the emergent_compute_diplomacy_initiative into binding agreements. If successful, this would mark the first sovereign compute-sharing pact outside the U.S. or Chinese spheres.",
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_public_sector_strike_wave",
+    "probability": 0.09999999999999999,
+    "emergent": true,
+    "description": "Following the automated decision scandal and widespread benefit denials, transnational public-sector unions coordinate a rolling strike across health, social services, and civil administration in five member states, demanding independent audit rights over AI systems and veto power on algorithmic deployments. The strike disrupts digital service delivery and forces emergency debates in national parliaments, exposing the fragility of digital governance under eroding trust.",
+    "probability_samples": [
+      0.0,
+      0.3,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_worker_council_strike_wave",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "Transnational worker councils escalate to coordinated strikes across legal, healthcare, and public administration sectors in five member states, demanding binding EU-wide moratoriums on AI in public services and transitional income guarantees. The action disrupts national parliaments and courts, forcing emergency debates and exposing deep fractures in the EU’s social contract around automation.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.28
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_compute_diplomacy_breakthrough",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "The joint compute-access consortium led by Japan, India, and Brazil finalizes a binding agreement with the EU, granting reciprocal access to sovereign AI infrastructure under shared safety and openness norms. The deal includes joint audit rights and dispute resolution, marking the first time the EU secures guaranteed compute access outside U.S. jurisdiction, and reorients its leverage in global AI diplomacy.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "labour_displacement",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_lab_unrest",
+    "probability": 0.3333333333333333,
+    "emergent": true,
+    "description": "Whistleblowers from multiple frontier labs leak internal assessments showing that safety protocols are routinely bypassed during training runs, and that several near-miss control incidents were concealed from regulators. The disclosures trigger emergency hearings in the US and UK, and public pressure forces partial transparency reforms. The EU, lacking access, is excluded from the fallout but gains political cover to demand oversight rights.",
+    "probability_samples": [
+      0.35,
+      0.3,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_global_oversight_momentum",
+    "probability": 0.27666666666666667,
+    "emergent": true,
+    "description": "In response to accelerating capability and repeated safety failures, a coalition of mid-sized democracies proposes a new international framework for AI oversight, modelled on the IAEA, with powers to audit training runs and inspect weights. The initiative gains traction outside the US-China axis, and the EU is invited to co-lead technical design — a rare opening to shape global rules despite its weak sovereignty.",
+    "probability_samples": [
+      0.3,
+      0.25,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

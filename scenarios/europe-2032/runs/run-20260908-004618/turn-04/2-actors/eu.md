@@ -1,0 +1,29 @@
+## Statement changes  
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now see that failing to act decisively on safety risks undermines sovereignty just as surely as dependence on foreign systems.  
+- modify `two_year_commitment` (commitment): Secure autonomous AI capacity to protect European strategic freedom and societal resilience, with a binding focus on ensuring that such capacity is demonstrably safe and controllable before it is scaled.  
+- Grounds: The bio_uplift_findings and eu_frontier_access_denied events this turn represent a categorical shift: the bio risk is no longer theoretical, and the Union has just been cut off from the frontier model with no recourse, exposing both strategic vulnerability and the fragility of unsecured capability. This proves that sovereignty without safety is not sovereignty at all — it is exposure. We must now bind the two mandates tightly: our capacity must be not only independent, but trusted and trustworthy. The two-year commitment stands, but its meaning evolves — we are no longer building capability for its own sake, but for survivable sovereignty.
+
+## Portfolio  
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`  
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`  
+- `Labour Transition Accelerator Fund (category 7, costs 3 per turn, started turn 1, finishes on turn 5): A new €45bn fund to scale national retraining and wage insurance programmes in sectors hit by sudden automation, with mandatory co-financing from firms automating roles at scale`  
+- `Cyber Shield Emergency Protocol Activation (category 6, costs 3 per turn, started turn 2, finishes on turn 4): Activates and funds a binding, time-bound upgrade cycle for cyber defences across critical public infrastructure, with mandatory adoption by member states and direct EU-level coordination of threat intelligence, patch deployment, and red-teaming` — **finished**  
+- `ASML Alignment Safeguard Initiative (category 8, costs 3 per turn, started turn 3, finishes on turn 5): Launch a binding EU-level review of export licensing conditions for critical semiconductor equipment, with authority to override national or third-party pressure when EU strategic interests are at risk, beginning with DUV lithography systems`
+
+## New measure  
+**EU Frontier Safety Vetting Directive**  
+Establish a mandatory pre-deployment evaluation and control regime for any AI system above 55.0 capability accessing EU infrastructure, requiring proof of reasoning legibility, weight security, and misuse resistance before operational use.
+
+`Category: 1 (Evaluation and oversight)`  
+`Size: large`  
+`Finishes on turn: 6`  
+`Targeted effect:` Increase ai_safety by at least 10 points and stabilise eu_ai_sovereignty by ensuring that no system, foreign or domestic, operates in the EU without verifiable safeguards — turning safety into a condition of access.  
+`Applies to:` EU member states, European Commission (DG CNECT, ENISA), all providers of AI systems above 55.0 capability, and public operators using such systems.
+
+## Priority  
+**EU Frontier Safety Vetting Directive** — because the eu_frontier_access_denied event has exposed our strategic helplessness, not just to exclusion, but to operating systems we cannot understand or secure, and because the bio_uplift_findings prove that the threshold for catastrophic misuse is now within reach of non-experts — so we must act now to make safety a sovereign boundary, not a foreign afterthought.
+
+## In practice  
+We are treating the denial of frontier model access not as a temporary outage, but as a wake-up call: we cannot afford to depend on systems we cannot inspect, control, or trust. Under Article 114, we are launching the EU Frontier Safety Vetting Directive, to be negotiated in trilogue by turn 5 and operational by turn 6. The European AI Office, with support from a newly empowered ENISA and the European Biosecurity Agency, will define technical standards for legibility, weight integrity, and misuse containment. No system above 55.0 capability — whether hosted abroad or running locally — will be allowed to interface with healthcare, energy, transport, or government systems unless it passes third-party evaluation and commits to ongoing monitoring. This is not a ban — it is a border: we are open to capability, but only if it comes with accountability.
+
+At the same time, we are closing out the Cyber Shield Emergency Protocol: ENISA confirms that 78% of critical operators are now compliant, and the two lagging member states have accepted emergency funding tied to a binding remediation schedule. We are using the momentum to push for permanent cyber resilience standards under the revised NIS3 framework. On industry, we have unblocked one InvestAI Gigafactory site via the new hydrogeological oversight body, and are fast-tracking grid connections under the Tech Sovereignty Package’s accelerated-permitting zones. The Labour Transition Fund is now live in six high-displacement regions, with pilot programmes linking wage support to cyber and bio-resilience training — because retraining must serve not just workers, but the system’s survival. And we are holding firm on the ASML Initiative: the Export Integrity Board, though delayed, will deliver its opinion by turn 5, and we are preparing legal countermeasures under the Anti-Coercion Instrument in case of U.S. retaliation — sovereignty cannot be conditional.

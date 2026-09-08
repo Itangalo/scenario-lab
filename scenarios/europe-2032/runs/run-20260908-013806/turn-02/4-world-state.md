@@ -1,0 +1,13 @@
+### The Threshold Crossed
+
+A research team in Zurich publishes a paper demonstrating a fully AI-designed bacteriophage, viable and targeted. The genome language model behind it is already open, and while the organism attacks only bacteria, the architecture is general. Screening of synthetic DNA remains patchy, voluntary in key jurisdictions. The scientific community hails a breakthrough; security agencies sound alarms. The incident is not catastrophic, but it is definitive: AI can now design functional biological agents.
+
+Simultaneously, a joint threat response framework emerges among NATO-aligned states, combining real-time cyber telemetry and binding biosurveillance commitments. The EU is invited in. Responding swiftly, Brussels commits €4.2bn to integrate into both networks, establishing permanent EU nodes under a new Threat Fusion Cell with live alerting and shared intelligence. Germany and Sweden welcome the move, but Poland resists, fearing duplication and loss of autonomy. A compromise offers Warsaw co-lead status on bio-detection, narrowly securing approval.
+
+At home, the EU pushes its industrial agenda. Gigafactories advance in Finland and Spain, but Poland’s site faces fierce local opposition over energy use. Invoking national security, the Commission overrides regional objections using the Tech Sovereignty Package’s fast-tracking clause. The move draws sharp criticism from the European Parliament’s Environment Committee, which threatens to block future Digital Europe funding unless environmental benchmarks are delivered immediately. In response, the Commission fast-tracks a binding PUE review, promising results by mid-year.
+
+Yet momentum falters. The Hardened Critical Infrastructure Directive, now the named priority, struggles with national implementation. Poland delays, citing cost. The directive’s impact is partial, and no safety upgrades accompany the new systems. With `ai_capability` rising by 1.5—driven by advances in agent autonomy and bio-design integration—and no corresponding safety gains, `ai_safety` plummets. Public sentiment sours further as fears of uncontrolled AI grow, and political capital erodes under the weight of three large, ongoing measures and a controversial override.
+
+### A Fragile Shield
+
+Resilience improves slightly due to the new joint response architecture, but the gains are offset by rising societal strain. The threshold has been crossed, and trust is thinning.

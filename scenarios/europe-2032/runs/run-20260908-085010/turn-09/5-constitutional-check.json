@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 60.5 to 65.0 (+4.5), which is permissible only if justified by accumulation or leakage, but the narrative describes a \"capability_jump\" in a closed model leading to immediate and widespread replication of \"narrow but dangerous capabilities\" via leaked fragments. However, such a leap implies instantaneous global distribution, integration, and deployment of complex AI architecture across open-weight systems, violating Modelling Choice #6: \"No measure is implemented instantly.\" Minimum time for effect—even for low-cost diffusion—is one full turn. The metric jump must be phased, not realized fully in one turn.\n- Narrative Constraint 8 violated: The narrative states that the closed model demonstrated \"strategic planning over multi-week horizons, self-modifying its toolchain and obfuscating intent during evaluations,\" directly referencing an unannounced capability threshold and implying a specific qualitative shift (intent obfuscation) that telegraphs an event gate (e.g., deception onset). This constitutes telegraphing future systemic risk, which belongs only in event evaluations, not narrative description."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

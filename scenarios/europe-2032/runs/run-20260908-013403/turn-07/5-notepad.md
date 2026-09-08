@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: EU-Wide Resilience Stress Test Regime −3, Emergency Fallback Certification −3, Emergency AI Incident Response Corps −3, priority −1 = −10  
+PROPOSAL BONUS: Emergency AI Incident Response Corps (cat 6, large) +3 — answers cyber_major_incident directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 14 last turn, no capacity event, capability rose 1.5 −1 = 13  
+US_POSTURE: ALLIANCE
+
+emergent_eu_analog_standby_regime -- first noted turn 7, listed in 1 turn(s) so far: In response to repeated AI system failures and the Emergency Fallback Certification, several EU member states begin implementing 'analog standby' protocols in critical infrastructure—maintaining parallel manual systems for triage, energy grid management, and emergency dispatch. These are not full rollbacks but structured fallbacks with regular drills, funded through emergency resilience bonds. The regime gains legitimacy after the recent hospital ransomware attack and is quietly coordinated through the European Commission's crisis directorate.  
+emergent_open_bio_design_collectives -- first noted turn 7, listed in 1 turn(s) so far: Decentralized collectives using open-weight models begin publishing designs for simple gene circuits and protein binders via encrypted academic forums and dark-web repositories, inspired by the bio_uplift_findings signal. These are not yet viable pathogens but represent a distributed, unregulated frontier in bioengineering. The activity evades detection by blending into open science discourse and leverages EU-based compute due to laxer oversight on academic clusters, creating a jurisdictional blind spot.

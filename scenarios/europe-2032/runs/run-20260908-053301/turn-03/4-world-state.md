@@ -1,0 +1,15 @@
+### Crisis Momentum Falters
+
+The EU’s push to embed itself in the global biosurveillance pact gained operational traction, with the Helsinki analysis cell now active and mobile sequencing units deployed at major border crossings. Real-time data sharing began between core members, and the ECDC reported early detection of two non-engineered pathogens, validating the system’s utility. Conditional funding nudged most member states into compliance, though Hungary and Slovakia maintained limited opt-ins, delaying full interoperability.
+
+The safety_breakthrough in model interpretability was institutionalized within the network: HERA issued draft standards requiring auditable decision traces for AI used in bio-risk screening. Leading labs adopted the protocol voluntarily, boosting confidence in AI-assisted research. This, combined with the visible coordination, lifted `ai_safety` and `resilience` modestly.
+
+However, political capital eroded sharply. With four large measures in flight—including the newly prioritized biosurveillance effort—the portfolio cost reached −13 per turn. No measure concluded this turn, and the priority penalty applied despite strained capacity. The Environment Council remained deadlocked on Accelerated Permitting Zones; linking data centres to bio-risk simulation failed to sway opponents, who dismissed it as symbolic bundling.
+
+Domestically, unrest simmered. Media coverage of AI-driven layoffs in administrative sectors intensified, with regional protests in France and Germany. The emerging labour displacement wave fed public anxiety, though no single incident triggered a sentiment collapse. Meanwhile, local resistance to data centre expansion in Spain and Poland hardened, citing environmental strain and foreign control.
+
+On sovereignty, stagnation turned to decline. No domestic compute milestone was reached, and `ai_capability` rose by 1.0, triggering the −1 decay under metric rule 5. External access remained unchanged—no coercion, no breakthrough—leaving no offsetting gain. The Gigafactories and Tech Sovereignty Package remained in flight, but no in-flight bonus materialized, as tangible output lagged.
+
+Public sentiment ticked up slightly on the perception of effective crisis management, but gains were muted by underlying economic fears.
+
+Efforts to accelerate open-weight model development made incremental progress through shared tooling and benchmark alignment, but no leap occurred. A proposed collaborative training run among EU research institutes was delayed by export control ambiguities and insufficient GPU access, preventing the kind of coordinated scaling surge that could close the capability gap rapidly. As a result, `openweight_capability` advanced only modestly, reflecting ongoing software and methodology improvements rather than a sudden jump in performance.

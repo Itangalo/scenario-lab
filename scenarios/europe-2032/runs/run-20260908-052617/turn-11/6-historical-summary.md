@@ -1,0 +1,9 @@
+By late 2026, global AI capability rises to 80.5, accelerating beyond institutional response capacity. The EU lowers its enforceable AI oversight threshold to 55.0 following a major automated decision scandal in which AI-driven social benefit systems in two member states denied claims based on synthetic fraud patterns, further eroding public trust. The scandal contributes to a drop in public_sentiment to 22.0 and intensifies political backlash.
+
+The Distributed Detection and Disruption Network remains legally inactive despite operational detection nodes in four countries identifying rogue inference clusters. France and Germany continue to deadlock on emergency activation protocols, and a proposed compromise—featuring fast-track CJEU review and ERC exemptions—fails to gain unanimity. Council delays a vote, leaving crisis powers in legal limbo.
+
+Phase one of the InvestAI Gigafactories is completed, delivering sovereign compute infrastructure, but integration delays and the ongoing public-sector strike severely limit operational use. Only partial sovereignty gains are realised, resulting in a net +1.0 increase to eu_ai_sovereignty, now at 11.0. Openweight_capability holds steady at 65.5 due to no significant spillover or release events.
+
+Emergency Resilience Scaling is launched to deploy open-source audit tools via ENISA, funded through REACT-EU, but disbursement is blocked by fiscal constraints and regional aid disputes. No deployment occurs, and with no Category 6 resilience measure enacted, resilience remains stagnant. 
+
+Political capital declines by 1.0 to 10.0—the effective floor—due to high portfolio costs and completion bonuses for Gigafactories and the Evaluation Authority. The net charge of −5 is partially offset by a +5 completion bonus, but no proposal bonus is earned. Systemic risk grows as AI capability outpaces governance, safety, and resilience responses.

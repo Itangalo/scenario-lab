@@ -1,0 +1,26 @@
+[
+  {
+    "id": "member_state_defection",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.18,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_coordinated_disinfo_wave",
+    "probability": 0.26666666666666666,
+    "emergent": true,
+    "description": "A coordinated disinformation campaign using AI-generated content overwhelms national election safeguards in two member states simultaneously, triggering emergency coordination at the EU level. The content is subtle, context-aware, and indistinguishable from legitimate political discourse without forensic analysis, deepening public distrust.",
+    "probability_samples": [
+      0.3,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

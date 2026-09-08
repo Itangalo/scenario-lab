@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield −3, priority −1 = −10  
+PROPOSAL BONUS: Cyber Shield (cat 6, large) +3 — cyber_test_shot landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22 last turn, no capacity event, Gigafactories in flight +0, capability rose 2.5 −1 = 21  
+emergent_bio_uplift_findings -- first noted turn 1, listed in 1 turn(s) so far: A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 4 turns  
+emergent_bio_phage_breakthrough -- first noted turn 1, listed in 1 turn(s) so far: Genome models produce the first working AI-designed bacteriophages — the shortest genomes that can infect living cells — while screening of ordered DNA sequences remains largely voluntary. The result is contested on methodology and biosecurity grounds, but marks a clear step toward more dangerous designs. This is a precursor: it opens the bio gate for the next 4 turns

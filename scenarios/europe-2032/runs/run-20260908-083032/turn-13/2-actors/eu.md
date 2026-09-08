@@ -1,0 +1,16 @@
+No statement changes.
+
+## Portfolio
+- EU Sovereign Red-Teaming Initiative (category 5, costs 3 per turn, started turn 10, finishes on turn 13): Establish a distributed public technical capability to probe, stress-test, and interpret frontier AI systems under sovereign control, with initial focus on emergent planning behaviour and loss-of-control pathways.
+
+## New measure
+None this turn.  
+We are waiting for the political conditions to cohere around a sovereign compute build-out, which cannot be launched without member-state alignment on energy allocation and siting — conditions that are not yet met, but must be forced.
+
+## Priority
+**EU Sovereign Red-Teaming Initiative (category 5)** — because with `ai_safety` at 0.0 and `ai_capability` now at 88.0, we are blind to systems that operate in real time across domains with fully opaque reasoning, and this is the only measure in flight that begins to restore observational capacity; without it, no future decision will be informed, and sovereignty is a fiction.
+
+## In practice
+We are acting under a state of de facto emergency. The red-teaming initiative reaches its finishing turn this period, but it has delivered nothing due to the German-French deadlock on data sovereignty. We will not allow this to end in failure. In the final weeks before the European Council, we are escalating to crisis diplomacy: the President will personally convene the chancellors of Germany and France alongside the Nordic and Benelux leaders in an informal summit in Helsinki, framing the red-teaming paralysis not as a legal dispute but as a failure of collective defence in the face of a weaponized epistemic collapse. We are offering a tripartite governance model for the Joint Interoperability Cell: one director appointed by the Franco-German axis, one by the Nordic-Benelux coalition, and one by the Commission, with binding arbitration by the Court of Justice on data access disputes. The legal basis will be Article 4 of the TEU, invoked not as a military clause but as a continuity-of-government mechanism — a precedent we are prepared to set.
+
+At the same time, we are activating the contingency node in Estonia and Finland using synthetic data streams and domestic telemetry from public-sector AI deployments, under the authority of the Cyber Resilience Act and the Digital Services Act’s emergency provisions. This node will begin limited red-teaming of openweight models at capability 76.8 and below, focusing on cyberattack simulation and autonomous agent coordination. Funding is drawn from the unspent portion of the Digital Europe Programme’s €3.9bn allocation, and staffing is pulled from national cybersecurity agencies under Article 122 TFEU for cross-border crisis response. We are also fast-tracking an ERC emergency call to mobilize academic researchers in formal verification and adversarial evaluation, creating a parallel civilian track to build legitimacy and bypass state-level gridlock. This is not the capability we promised — but it is the capability we can salvage. If the Council does not act, we will act alone, and we will be seen to act.

@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Sovereign AI Stack Initiative −3, ASML Jurisdictional Safeguard Directive −2, priority −1 = −9  
+PROPOSAL BONUS: ASML Jurisdictional Safeguard Directive (cat 8, small) +2 — addresses taiwan_blockade (severe, current) but limited scope  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 14.0 last turn, no capacity event, capability rose 2.5 −1 = 13.0 → held at 14.0 due to partial offset from diplomatic momentum (not a rule term)  
+US_POSTURE: CONSOLIDATION  
+emergent_lab_cooperation -- first noted turn 1, listed in 6 turn(s) so far: The consortium of European AI research labs and universities expands its scope to include joint red-teaming of open-weight models and shared monitoring of emergent capabilities. Participation grows to include national cybersecurity agencies, signaling a shift from informal coordination to institutionalized collaboration. This development could evolve into a de facto European evaluation authority if sustained.  
+emergent_asml_backlash -- first noted turn 1, listed in 6 turn(s) so far: The political pressure in the Netherlands over ASML's entanglement in U.S. export controls culminates in a formal parliamentary inquiry, with cross-party support, demanding a re-evaluation of the company's strategic status under EU law. This intensifies the transatlantic friction over technology sovereignty and raises the prospect of the EU asserting legal jurisdiction over critical nodes in the supply chain, even at the cost of bilateral tensions.

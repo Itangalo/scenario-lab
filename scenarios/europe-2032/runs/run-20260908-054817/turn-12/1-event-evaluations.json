@@ -1,0 +1,259 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3950782921743997,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9808627357303558,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.07856495824206067,
+    "triggered": true
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6750602880969891,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.13621006351933274,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6954850214969636,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9918444604349784,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3254967877484978,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6610452881599891,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.013227079722542667,
+    "triggered": true
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5739128146202366,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6694577385230507,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7026648791669472,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.10016271323237447,
+    "triggered": false
+  },
+  {
+    "id": "emergent_supply_chain_alliance_pressure",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Non-EU semiconductor equipment manufacturers, facing coercive export controls and service restrictions, begin informal coordination with the EU and other middle powers to resist unilateral jurisdictional overreach. This nascent alliance seeks to establish mutual servicing agreements and technology reciprocity outside U.S. legal reach, leveraging shared market power. The initiative gains traction as firms seek operational continuity and political cover.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5652603951025498,
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_market_radicalization",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "Graduate unemployment in technical and legal fields reaches crisis levels, fueling radicalization among young professionals. Unions and professional associations begin organizing cross-border actions, including strikes against AI-integrated firms and public institutions deploying automated hiring systems. The movement demands binding quotas for human staffing in cognitive professions and reparations for displaced workers, threatening broader social unrest.",
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.14143148168006292,
+    "triggered": false
+  },
+  {
+    "id": "emergent_eu_sovereign_compute_backlash",
+    "probability": 0.06999999999999999,
+    "emergent": true,
+    "description": "Public protests against the Sovereign Compute Certification Framework escalate into coordinated legal challenges from regional governments, citing environmental impact and fiscal misallocation. The backlash forces a pause in data centre certification, exposing fragmentation in enforcement and undermining the credibility of the EU's technical sovereignty agenda.",
+    "probability_samples": [
+      0.0,
+      0.21,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_scientific_embargo_on_ai_research",
+    "probability": 0.15,
+    "emergent": true,
+    "description": "Following repeated safety failures and the growing gap between capability and control, a coalition of independent scientific journals and preprint servers announces a voluntary embargo on publishing AI research involving autonomous agent frameworks or model self-improvement. The move gains rapid adherence, slowing open dissemination of frontier techniques and creating a de facto governance layer outside state control.",
+    "probability_samples": [
+      0.0,
+      0.27,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_sovereign_compute_backlash",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Public-sector IT unions and municipal governments in Germany, France, and Poland coordinate mass resistance to the Sovereign Compute Certification Framework, citing procurement delays, cost overruns, and unmet service-level agreements. The backlash frames the initiative as a top-down technocratic overreach that is degrading public services rather than securing them, triggering parliamentary inquiries and a no-confidence motion in the Czech Republic over failed hospital system migrations.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

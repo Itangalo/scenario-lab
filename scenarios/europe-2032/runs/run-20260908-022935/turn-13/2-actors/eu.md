@@ -1,0 +1,32 @@
+## Statement changes
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now see that without immediate control over the open frontier, both mandates collapse together. This turn, that collapse has reached the domestic public sphere: the automated decision scandal proves that harm is no longer abstract or distant, but embedded in core state functions. Our sovereignty is not just strategic — it is existential, and it must be operational within our own institutions by next year, or we will have no credible claim to either mandate.
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but this turn, the cost of being wrong has become lower than the
+- modify `two_year_commitment` (identity): Sovereign AI capacity at scale — not as a long-term aspiration, but as the minimum threshold for functional governance. This turn, we are no longer building toward sovereignty; we are rebuilding *from* it. Without sovereign inference, there is no safe deployment, no trusted public service, and no political survival. The Grid is not infrastructure — it is the foundation of the Union’s next phase.
+
+`Trigger: the automated_decision_scandal`  
+`Grounds: A court has ruled that an AI-supported welfare eligibility system in a major member state systematically denied benefits to vulnerable populations, with no effective human override. The judgment cites unreviewable model logic, lack of appeal pathways, and dependence on foreign-hosted systems beyond EU jurisdiction. This is not a failure of ethics — it is a failure of sovereignty. The public now sees AI not as distant technology but as an active, unaccountable actor in their lives. Restriction is now politically cheap, but irrelevant: the models are already loose, and the harm is inside our own systems. We must act not to ban, but to replace — and only sovereign infrastructure can carry that replacement. Our two-year commitment is no longer strategic; it is the only path to legitimacy.`
+
+## Portfolio
+``Accelerate Resilience Hardening (category 6, costs 3 per turn, started turn 10, finishes on turn 14): Expand and enforce cyber hardening, biosecurity detection upgrades, and incident response exercises across all critical infrastructure operators in the EU, with binding compliance timelines for energy, health, transport and water sectors, prioritizing Eastern European member states where resilience lags.`` — *in flight*
+``Launch Frontier Access Negotiation with US Hyperscalers (category 4, costs 3 per turn, started turn 10, finishes on turn 13): Secure binding, non-discriminatory access to frontier AI systems hosted by US-based hyperscalers under enforceable EU legal jurisdiction and red-team audit rights, to prevent strategic dependency during sovereign capability build-out.`` — *finished this turn*
+``Establish EU Sovereign Inference Grid with Immediate Effect (category 4, costs 3 per turn, started turn 13, finishes on turn 15): Fast-track deployment of a sovereign, high-capacity AI inference infrastructure on EU soil, legally anchored and operationally insulated from external control, to serve essential public functions and provide a baseline of controlled capability that cannot be revoked or degraded by foreign actors.`` — *in flight*
+
+## New measure
+**Secure Public Sector AI Replacement Programme**  
+We will mandate and fund the replacement of all high-impact, high-autonomy AI systems in public administration with sovereign, auditable alternatives by the end of 2034, starting with social services, justice, and immigration.
+
+`Category: 9 (Diffusion, adoption and public trust)`  
+`Size: large`  
+`Finishes on turn: 16`  
+`Targeted effect:` Increase `public_sentiment` by at least 10 points through visible, trusted AI use in public services; reduce `ai_safety` risk exposure by removing unreviewable foreign systems from domestic decision-making; apply pressure on the Sovereign Inference Grid to deliver usable capacity by 2034  
+`Applies to:` EU institutions, member state public administrations delivering essential services, and contractors operating under EU procurement rules
+
+## Priority
+**Secure Public Sector AI Replacement Programme** — because the automated decision scandal has shattered public trust, and we can no longer afford to wait for perfect sovereign capability; we must now visibly withdraw from uncontrolled systems, even if it means running at reduced capacity in the short term — or lose legitimacy entirely.
+
+## In practice  
+The judgment in *Doe v. Social Insurance Agency* lands like a thunderclap. It does not dispute the model’s accuracy — it condemns the absence of review, the opacity of process, and the impossibility of appeal. The court calls it “automated tyranny by algorithmic proxy.” Overnight, AI is not a tool of efficiency — it is a threat to the rule of law itself. We cannot defend the status quo. We cannot delay. We must act — and we must act visibly.
+
+We are invoking Article 346 TFEU and the Digital Governance Act to declare a binding directive: no high-autonomy AI system in public administration may remain in operation past June 2034 unless it runs on sovereign infrastructure, under EU jurisdiction, with full audit rights and human appeal pathways. The first wave covers welfare, immigration, and criminal risk assessment. We are releasing €1.8bn in emergency modernisation funds — drawn from unused cohesion reserves — to support member states in transition. The Commission will establish a fast-track procurement lane for sovereign AI services, and ENISA will publish a public register of compliant systems by Q1 2033.
+
+Germany resists, fearing delays in border processing; we offer a co-developed pilot in Bavaria using a locally hosted model from the Grid’s first node. Poland demands parity with private-sector access; we agree to fast-track a sovereign SME lending module in exchange for early compliance. This is not optional. The scandal has made clear: if we do not replace these systems, the public will demand we dismantle them — and with them, the state’s ability to function at scale. We are not just rebuilding infrastructure. We are rebuilding trust — from the ground up.

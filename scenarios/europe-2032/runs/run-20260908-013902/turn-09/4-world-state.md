@@ -1,0 +1,14 @@
+### The Plateau That Wasn’t  
+Despite signs of stagnation—underwhelming model releases and falling prices at the edge—the AI frontier advances. `ai_capability` rises to 68.0, driven by silent gains in planning and coordination depth. The supposed plateau evaporates under scrutiny, revealing a deeper trend: capability is consolidating, not slowing.
+
+### Resilience Gains Ground, Fragmentation Persists  
+The **Sovereign Resilience Emergency Activation** concludes, delivering binding cyber mandates to nine states and operationalising the Tallinn Fusion Cell. Germany, France, and the Nordics now share real-time AI threat data, and automated stress tests are live. However, Hungary and Slovakia remain outside the core, their sectors under temporary federal oversight pending legal rulings. Despite resistance, the measure qualifies for full resilience credit: +4 to resilience, reaching 53.0.
+
+### Truth Under Pressure  
+The **Emergency Public Information Integrity Framework** expands, with inference nodes now active in Poland and Italy. These EU-controlled systems flag synthetic media in real time, supporting electoral commissions and public health agencies. Meta and Google face formal notices: market access during crises hinges on adopting EU authenticity tags. Behind the scenes, co-development talks begin, but enforcement remains untested.
+
+### A Shield in Formation  
+The **Distributed Sovereign Inference Network Expansion** is proposed, allocating €12bn to build redundant, hardened inference nodes in every member state. However, implementation cannot begin immediately—procurement rules, environmental reviews, and cross-border coordination will delay construction. Site selection in Finland, Portugal, and Croatia is underway, with first groundbreakings now expected in early 2031. The measure is formally adopted but not yet operational, preserving compliance with the one-new-measure-per-turn rule.
+
+### Public Trust Stalls, Capital Holds  
+Public sentiment remains at 25.0—fear of disinformation and job loss persists, and physical protests against data centres grow. Political capital rises to 20.0, reflecting partial credit (+3) for delivering the resilience measure, offset by portfolio costs and the burden of launching a new high-stakes initiative. Sovereignty dips to 12.0 as external dependence deepens, with no offsetting domestic capacity gain. `openweight_capability` increases moderately to 53.5, reflecting steady open-model diffusion and incremental improvements in distributed training, consistent with the fixed rate of progress and absence of breakthrough events.

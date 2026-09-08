@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 40.0 to 46.0 (+6.0), which exceeds the maximum possible rise given that `ai_capability` rose by 2.5 and `openweight_capability` must not exceed `ai_capability`. Since `openweight_capability` starts below `ai_capability` and can only close the gap gradually through model releases, a 6-point jump — especially to a value that now represents a 50% closure of the gap in one turn — is implausible without a named release event or development surge. The narrative does not justify this leap with any such event, nor does it reference a sudden open release from a frontier lab. This violates the invariant that `openweight_capability` may only rise or stay flat and must not exceed `ai_capability`, and further implies an unrealistic acceleration not supported by the mechanism.\n- Modelling choice 5 violated: The EU names Cyber Shield as its priority, but the portfolio includes three measures already: InvestAI Gigafactories, Tech Sovereignty package, and Cyber Shield. The narrative and notepad confirm all three are active, and Cyber Shield is designated as the priority. However, the notepad applies a charge of −3−3−3−1 = −10, which correctly reflects three measures and a priority. This is acceptable under the charge system, but the constitutional constraint limits the EU to at most one new measure per turn. The narrative introduces Cyber Shield as a new initiative in this turn, while the other two were presumably already in flight. However, the notepad does not indicate when the first two measures were introduced. Since this is Turn 1, and no prior turn exists, introducing *three* measures — including one new and one priority — violates the constraint that at most one new measure may be introduced per turn. Only one new measure is allowed in Turn 1; the presence of three active measures implies at least two were introduced this turn, which is invalid."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

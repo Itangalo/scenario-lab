@@ -1,0 +1,19 @@
+### The Fracture Deepens
+
+Global AI capability advances to 69.5, driven by closed-loop training cycles in proprietary systems. A notable open-weight release—based on repurposed architecture from a prior frontier model and enhanced through distributed fine-tuning across academic clusters—raises openweight_capability to 55.0. This reflects both incremental accumulation over previous turns and the delayed diffusion of last year’s breakthroughs into deployable form. While the gap with closed systems narrows slightly, open ecosystems still lag in integration, tooling, and real-world deployment scale. Offensive cyber tools proliferate; synthetic media fuels disinformation at election time in two member states.
+
+The EU scrambles to respond. The **Crisis Activation Drills** conclude with uneven participation: only six of twenty-seven member states completed full simulations. Two refused outright, citing national sovereignty. ENISA’s audit, delayed by legal disputes, will not publish until next turn. **Sovereign Compute Integration Acceleration (Phase II)** is now designated the EU’s priority measure, focusing political attention on node integration and readiness. However, no new measures are launched this turn—the proposed **Binding Readiness Certification** remains under inter-institutional review and will not be formalized until governance conflicts are resolved. Early signals of resistance from several capitals suggest it may face challenges as a condition for funding, but no decision is taken this turn.
+
+Three regional nodes report modest staffing improvements under Phase II, but automation protocols remain untested. The Commission deploys rapid coordination teams, yet legal challenges stall integration in two key jurisdictions. No node achieves full readiness.
+
+Public trust collapses further. A court annuls a regional election over AI-generated disinformation, citing “unverifiable manipulation of voter perception.” Protests against AI infrastructure turn physical: a data centre in northern France is occupied, and grid connections to a compute hub in Poland are sabotaged. Police response escalates tensions.
+
+The **eu_frontier_access_denied** event cuts off critical AI services in healthcare and tax administration. Backup systems fail to activate—no node meets the readiness threshold needed to assume control. Political fallout is immediate. The scandal reinforces public perception of AI as both dangerous and unreliable.
+
+Resilience dips to 48.0 as systems falter under real stress. ai_safety remains stagnant at 15.0—no safeguards have landed. Sovereignty falls to 20.0 as access is severed and delivery lags. Political capital drops to 9.0, reflecting a net −4 change: the −6 portfolio charge is partially offset by a +2 proposal bonus from the **Crisis Activation Drills**, which answers the cyber_major_incident directly and is recent and severe, though limited by the measure’s small size. Public sentiment drops to 15.0, nearing outright hostility.
+
+### A Union Under Strain
+
+The EU’s identity shifts: capability without legitimacy is now seen as hollow. Yet translating that insight into action proves harder than declaring it. The gap between ambition and execution is evident this turn—sovereignty was tested and found wanting, trust eroded by failure, and the frontier advanced regardless.
+
+Amid growing frustration, informal discussions intensify among a coalition of northern member states exploring tighter coordination on compute and safety standards outside formal EU channels. These talks do not yet constitute a pact but mark a worrying divergence in strategic alignment. The emergence of such parallel efforts underscores the strain on collective action—but no formal structure exists by period end.

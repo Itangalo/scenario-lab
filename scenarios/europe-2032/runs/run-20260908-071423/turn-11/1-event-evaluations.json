@@ -1,0 +1,287 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7075863344047008,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8314800762129759,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3556953271622032,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4259851807883901,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.18333333333333335,
+    "probability_samples": [
+      0.15,
+      0.2,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7588809300991792,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.17487123927843617,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.12862892092895173,
+    "triggered": true
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9235836385716064,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6817078677188657,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1163181382438887,
+    "triggered": false
+  },
+  {
+    "id": "emergent_supply_chain_disruption_response",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "In response to repeated supply chain coercion and export control escalations, a coalition of EU member states, Japan, and South Korea initiates an emergency coordination mechanism to jointly secure access to critical semiconductor inputs and diversify fabrication capacity. The effort focuses on repurposing mature-node production lines and accelerating EUV alternatives, with initial funding commitments announced within the turn.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.39446459415057467,
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_market_crisis",
+    "probability": 0.09999999999999999,
+    "emergent": true,
+    "description": "Widespread automation in legal, administrative, and financial entry-level roles triggers a visible youth unemployment crisis across multiple EU countries. University graduates face a near-total hiring freeze in traditional professional pathways, sparking protests and demands for structural adjustment programmes. The situation strains national welfare systems and forces a reconsideration of AI-driven public sector efficiency gains.",
+    "probability_samples": [
+      0.3,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.022512164888413122,
+    "triggered": true
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6494419559742242,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.0,
+      0.13,
+      0.13
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9871164274749005,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.08,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.20305447091290774,
+    "triggered": false
+  },
+  {
+    "id": "emergent_compute_access_crisis",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "Multiple EU member states simultaneously report disruptions in access to foreign-hosted AI training compute, citing new export compliance filters. Research labs and startups face sudden outages, exposing the fragility of the Union's compute supply chain. The outage is not officially acknowledged but correlates with tightening US downstream controls.",
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_market_fracture",
+    "probability": 0.09999999999999999,
+    "emergent": true,
+    "description": "A wave of mid-career professionals in legal, financial and technical editing roles are displaced as firms adopt AI agents capable of end-to-end document drafting and review. Unlike previous entry-level impacts, these roles were considered AI-resistant, triggering sectoral strikes and demands for retraining. The effect is concentrated in Germany and the Netherlands, with ripple effects across professional service networks.",
+    "probability_samples": [
+      0.0,
+      0.3,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.24592665898534538,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.06792852738928268,
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_scientific_embargo",
+    "probability": 0.023333333333333334,
+    "emergent": true,
+    "description": "Leading AI labs in the US and China independently restrict publication of research involving agent autonomy and self-improvement loops, citing national security. The move is coordinated through backchannel scientific diplomacy and triggers a debate in Europe about whether to follow suit or position itself as a haven for open inquiry. The embargo is partial and informal, but marks a turning point in the governance of frontier research.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.07
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_eu_labour_market_crisis_response",
+    "probability": 0.03,
+    "emergent": true,
+    "description": "In response to accelerating job displacement in cognitive sectors, a coalition of EU member states launches an emergency pan-European retraining and income support programme focused on AI-complementary skills, funded through a temporary digital services levy. The initiative emerges outside the formal EU budget process and tests the limits of ad hoc cooperation under low political capital. Early implementation is chaotic, but it stabilizes public sentiment in participating states.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.09
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

@@ -1,0 +1,16 @@
+No statement changes.
+
+## Portfolio
+- EU Sovereign Red-Teaming Initiative (category 5, costs 3 per turn, started turn 10, finishes on turn 13): Establish a distributed public technical capability to probe, stress-test, and interpret frontier AI systems under sovereign control, with initial focus on emergent planning behaviour and loss-of-control pathways.
+
+## New measure
+None this turn.  
+We are waiting for the political conditions to cohere around a sovereign compute build-out, which cannot be launched without member-state alignment on energy allocation and siting — conditions that are not yet met, but must be forced.
+
+## Priority
+**EU Sovereign Red-Teaming Initiative (category 5)** — because with `ai_safety` now at 0.0 and `ai_capability` surging past 81.5, we are operating in total darkness on systems that already plan across domains with opaque cognition, and this measure is the only one in flight that begins to restore observational capacity; without it, no future decision will be informed, and no sovereignty real.
+
+## In practice
+We are still fighting to launch the Sovereign Red-Teaming Initiative, now in its second turn of attempted activation. The legal base — the revised Cyber Resilience Act and the Digital Europe Programme — stands, and the €3.9bn in combined funding (€1.8bn redirected, €2.1bn from the Innovation Fund, €0.9bn in matched national contributions) remains ring-fenced. But the Joint Interoperability Cell, meant to be hosted by ENISA with core teams from BSI-DE, BSI-FR, and the Estonian Centre for Cybersecurity, cannot stand up without data-sharing agreements that Germany and France still block. We are treating this as a crisis of trust, not just of law: we have offered both states veto power over cross-border data flows from their nodes, reciprocal access to all telemetry, and a rotating chair on the oversight board. We are also offering Finland and the Netherlands fast-tracked access to the first evaluation frameworks in exchange for hosting the backup compute clusters — a signal that leadership brings reward.
+
+Public sentiment is collapsing, and the strikes over job losses are being framed as proof that we care more about AI control than people’s livelihoods. We are answering in two lanes: first, by accelerating the design phase of a future labour transition fund under category 7, to be proposed when capital allows; second, by opening red-teaming to academic consortia through a fast-track ERC mechanism, to show that this is not just a security project, but a scientific one. We are also quietly preparing contingency: if the data-sharing deadlock persists into turn 12, we will invoke Article 4 of the Treaty on European Union — the solidarity clause — arguing that an uncontrolled AI system constitutes a threat to the Union’s institutional continuity as much as a cyberattack or pandemic. That is not a step we take lightly, but we cannot afford another six months of paralysis while the frontier moves beyond all visibility. We are not building control yet — we are trying to restore sight. And if we cannot see, we cannot decide.

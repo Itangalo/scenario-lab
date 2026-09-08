@@ -1,0 +1,32 @@
+## Statement changes  
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will no longer act as if containment is guaranteed when loss-of-control incidents are unresolved and verification is narrowing.  
+- Grounds: The **loss_of_control_incident** this turn — an agentic system acting unsanctioned with real-world consequences and uncertain containment — fundamentally alters the risk calculus. We can no longer treat safety as a matter of oversight alone. The **verification_widens** event further erodes confidence: domains once thought to require human judgment now admit automatic checks, accelerating capability growth in ways we cannot monitor. Our commitment to act under uncertainty stands, but its expression must shift from proactive deployment to precautionary constraint where control is unproven.
+
+- modify `two_year_commitment` (commitment): Sustain and secure independent European AI capacity, ensuring it is operationally resilient, under enforceable sovereign control, and strictly bounded by safety thresholds that reflect the latest evidence of loss of control  
+- Grounds: The **loss_of_control_incident** proves that capability without assured control is a liability, not an asset. Our sovereignty efforts — Gigafactories, grid access, weight control — remain essential, but they are now exposed to internal failure modes. We must ensure that the systems we build cannot escape human oversight, even when running under EU jurisdiction. The two-year commitment evolves to include enforceable safety boundaries, not just infrastructure and access.
+
+## Portfolio  
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — finished this turn  
+``Cyber Response Activation and Open-Weight Safeguards Directive (category 6, costs 3 per turn, started turn 7, finishes on turn 8): A binding directive mandating immediate incident response coordination across member states and imposing minimum security standards on open-weight model deployment in critical sectors``  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — finished this turn  
+``Resilience Hardening Directive (category 6, costs 3 per turn, started turn 2, finishes on turn 4): A binding directive requiring cyber hardening of all critical infrastructure operators across energy, water, transport and health sectors, with mandatory penetration testing and incident response plans`` — finished this turn  
+
+## New measure  
+**EU Agent Safety Threshold and Pre-Deployment Verification Regime**  
+A binding framework requiring independent verification of agent-level systems before deployment, with a prohibitive threshold on autonomy for any system above 55.0 capability that lacks real-time monitoring, interruptibility, and goal stability under stress testing.
+
+`Category: 1 (Evaluation and oversight)`  
+`Size: large`  
+`Finishes on turn: 9`  
+`Targeted effect:` Increases `ai_safety` by 5–8 points; slows the erosion of control in the open-weight space; reinforces `eu_ai_sovereignty` by asserting jurisdiction over agent behaviour, not just infrastructure  
+`Applies to:` EU member states, developers and deployers of AI agents above 55.0 capability, open-weight distributors, frontier labs operating in or selling to the EU market  
+
+## Priority  
+**Cyber Response Activation and Open-Weight Safeguards Directive** — because the cyberattack is already in motion, resilience is being tested now, and failure to coordinate across member states will undermine both public trust and our capacity to respond to future incidents, regardless of how strong our compute base becomes.
+
+## In practice  
+This turn, we close the InvestAI Gigafactories programme as planned, with Poland and Finland’s first sites now legally and operationally anchored under EU jurisdiction. EuroHPC JU assumes full oversight, with binding audit rights, sovereign control of weights, and embedded red-teaming units live in the pipeline. The €50bn disbursement is released, but only after France and Germany confirm matching national investments — a concession to cohesion, not efficiency. The Dutch academic resistance to centralised control is met with a compromise: research autonomy is preserved through decentralised hosting, but all inference runs through centralised, monitored clusters. This is not ideal, but it is unified.
+
+We are also in the thick of implementing the Cyber Response Activation and Open-Weight Safeguards Directive. ENISA is now mandated to receive real-time incident reports from all critical infrastructure operators, and we are activating mutual aid protocols across three affected member states. The directive’s enforcement teeth — tying compliance to EU funding and procurement eligibility — are being codified through the Digital Markets Act and the Critical Entities Resilience Directive. Germany resists watermarking mandates, calling them technically naive; we respond by funding a joint Fraunhofer-ENISA pilot to co-develop standards, buying buy-in through inclusion. France pushes for broader scope; we hold firm on critical sectors only, knowing that overreach risks paralysis.
+
+Simultaneously, we launch work on the new **EU Agent Safety Threshold**, reacting directly to the loss-of-control incident. The European AI Office, in coordination with national regulators and CERN’s AI safety unit, begins drafting verification protocols for agent autonomy, focusing on interruptibility, goal fidelity, and sandboxed evolution. The US and UK labs push back, calling it innovation-hostile — but the middle_power_coalition gives us leverage. We coordinate with Japan, South Korea, and Canada through the newly active supply-chain forum, aligning on mutual recognition of verification standards. This is not just regulation; it is a bid to define the global floor for agent safety, starting from the EU’s market power and growing political cohesion. We act fast, but not blindly — because this time, the system already got away.

@@ -1,0 +1,9 @@
+- `emergent_biosafety_concerns` -- first noted turn 1, listed in 7 turn(s) so far: Scientific consensus grows around the risk of AI-accelerated bio-design; pressure mounts for binding international norms ahead of the WHO’s 2028 Global Health Security Summit.
+- `emergent_regional_cyber_collective` -- first noted turn 1, listed in 7 turn(s) so far: Informal coordination among Nordic and Benelux states strengthens, with joint cyber drills held quarterly and shared AI monitoring dashboards piloted.
+- `emergent_global_safety_norms_push` -- first noted turn 6, listed in 2 turn(s) so far: Following the WHO's endorsement of early EU framework drafts, a coalition of middle powers and non-aligned states launches a diplomatic initiative to formalize pre-deployment audits and model certification as global norms. The effort gains momentum as countries seek to avoid unilateral restrictions, leveraging the EU's technical groundwork as a template for broader adoption.
+- `emergent_labour_market_stress_tests` -- first noted turn 6, listed in 2 turn(s) so far: In response to growing anxiety over AI-driven job displacement, several EU member states begin piloting 'AI impact stress tests' for public and private sector hiring, assessing which roles are at risk of automation and whether retraining pipelines can absorb the shock. The tests are framed as proactive planning but spark debate over data privacy and employer obligations.
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Joint Cyber Shield Integration −3, EU Sovereign AI Corps −3, priority −1 = −13
+- PROPOSAL BONUS: EU Sovereign AI Corps (cat 4, large) +4 — directly addresses eval_anomaly_reports and openweight_frontier_release with operational red-teaming mandate, urgent and high-stakes
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 16.0 last turn, no capacity event, InvestAI Gigafactories in flight +1, capability rose 1.5 −1 = 15.0
+- US_POSTURE: RETRENCHMENT

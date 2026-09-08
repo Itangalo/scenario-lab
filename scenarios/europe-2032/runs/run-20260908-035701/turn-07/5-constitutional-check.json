@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 50.0 to 58.0 (+8.0) in one turn, which is permissible only if justified by accumulated growth or a realistic release event. While the narrative describes a leak, it does not account for such a large jump within the constraint that `openweight_capability` may only rise (or stay flat), but must do so without telegraphing unrealistically rapid capability gains. An 8-point leap exceeds plausible single-turn advancement given the fixed world-speed assumption (Constraint 1) and lacks grounding in prior capability trends—no preceding signals in the notepad suggest this model was nearing readiness. The sudden emergence of a 58.0-capable open-weight model with no foreshadowing violates the principle that capability accumulation is gradual and unannounced.\n- Invariant 9 violated: `ai_safety` drops by 5.0 points (from 22.0 to 17.0), which is allowed, but `resilience` falls by 2.0 (to 41.0), `eu_ai_sovereignty` by 2.0 (to 23.0), and `eu_political_capital` by 4.0 (to 13.0)—all within bounds. However, the *combined narrative justification* for `openweight_capability`’s +8.0 implies an exogenous shock of unprecedented scale, which would require corresponding broader systemic effects (e.g., on safety, sovereignty, political capital) that are already maxed out under their own rules. The core issue is not individual metric movement but the implausibility of an 8-point leap in `openweight_capability` without any prior indication in the notepad or earlier turns—this contradicts Constraint 1 (\"How fast the world moves is fixed, and unannounced\") because such a jump implies an acceleration in the rate of progress inconsistent with the established pace since Turn 1."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

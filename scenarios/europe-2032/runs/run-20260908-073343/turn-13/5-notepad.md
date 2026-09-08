@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Expand Resilience Surge finished, Rapid Incident Response Cell −2, priority −1 = −3  
+PROPOSAL BONUS: Rapid Incident Response Cell (cat 6, small) +3 — answers cyber_major_incident directly, recent and severe  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 9 last turn, no capacity event, capability rose 0.5 −1 = 8, taiwan_blockade −1 = 7  
+US_POSTURE: CONSOLIDATION  
+emergent_grassroots_monitoring_network -- first noted turn 10, listed in 5 turn(s) so far: A decentralized network of academic, civic, and hacker groups across Germany, France, and the Nordic countries continues to deploy independent monitoring nodes using the Zurich interpretability tool. The network has detected additional anomalies in public-facing legal and medical AI services, reinforcing its credibility despite lacking formal integration into EU structures.  
+emergent_sovereign_inference_network -- first noted turn 10, listed in 5 turn(s) so far: The Nordic and Benelux sovereign compute pact remains operational, now handling over 15% of classified public-sector inference tasks in participating states. Its success intensifies debate in Brussels over whether to standardise, absorb, or regulate such regional coalitions.

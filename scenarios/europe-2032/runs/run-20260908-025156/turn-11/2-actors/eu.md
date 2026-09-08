@@ -1,0 +1,26 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Rebuild sovereign capacity to act independently in AI while anchoring public legitimacy through demonstrable protection and inclusive agency — but not at the cost of operational paralysis or strategic irrelevance  
+- Grounds: The **automated_decision_scandal** — a ruling that AI-supported social insurance decisions systematically denied benefits to vulnerable populations — has shattered the political viability of broad public-sector AI adoption, rendering inclusion mechanisms politically toxic rather than stabilising. Simultaneously, the **cyber_major_incident** and **emergent_compute_diplomacy_initiative** reveal that sovereignty without credible operational control is symbolic, not strategic. The Shielded Compute Corridor remains essential, but its legitimacy cannot rest on inclusion alone when public trust is collapsing. The recalibration acknowledges that legitimacy now requires not just participation, but proof of control, protection, and resilience — and that we cannot afford to let either sovereignty or social cohesion become hostages to the other.
+
+## Portfolio  
+``European AI Transition and Inclusion Pact (category 7, costs 3 per turn, started turn 9, finishes on turn 12): A binding framework to provide income guarantees, retraining pathways, and co-determination rights for workers displaced by AI in the public and subsidised sectors, funded through conditionalities on AI adoption``  
+``Shielded Compute Corridor Initiative (category 4, costs 3 per turn, started turn 11, finishes on turn 13): Establish a legally protected, physically hardened network of EU-anchored compute facilities with guaranteed access for public institutions and vetted researchers, using conditional electricity and infrastructure rights to enforce control``  
+``Enforceable Runtime Safeguards Mandate (category 3, costs 3 per turn, started turn 7, finishes on turn 9): Establish legally binding, auditable runtime monitoring and kill-switch mechanisms in all AI systems used in critical infrastructure, with penalties tied to procurement exclusion and CE marking withdrawal`` — **finished**  
+
+## New measure  
+**Critical Infrastructure AI Shield Initiative**  
+Deploy a unified detection, containment and failover system across energy, water, health and transport networks to detect and respond to AI-generated cyber threats in real time.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size: large`  
+`Finishes on turn: 14`  
+`Targeted effect:` Increase resilience by 10–15 points, reduce the mean time to detect and isolate AI-generated attacks from days to hours, and establish a common operational picture across member states’ critical infrastructure operators.  
+`Applies to:` EU member states, national cybersecurity agencies, critical infrastructure operators, and ENISA as coordinator.
+
+## Priority  
+**Critical Infrastructure AI Shield Initiative** — Because the **cyber_major_incident** has proven that our defences are not just breached but bypassed at machine speed, and because the **automated_decision_scandal** has frozen our ability to adopt AI in public services, we must now prioritise not just sovereignty but survival: resilience is the only domain where we can act without permission, and the only one where failure is already visible.
+
+## In practice  
+We are launching the Critical Infrastructure AI Shield Initiative under Article 122a TFEU, invoking the EU’s emergency competence to coordinate cross-border responses to systemic threats. The initiative will be implemented by ENISA in coordination with national CSIRTs, with €9bn drawn from the Recovery and Resilience Facility and the Digital Europe Programme. The core of the system is a distributed intrusion detection network trained on AI-generated attack patterns, deployed at chokepoints in energy grid SCADA systems, hospital IT networks, and water treatment controls. Each node will run lightweight, EU-developed anomaly detection models — not reliant on external frontier systems — with automatic containment protocols that trigger on high-confidence threats, overseen by a rotating EU Cyber Crisis Cell based in Brussels.
+
+At the same time, we are pressing forward with the Shielded Compute Corridor, now under a revised legal basis: the Critical Entities Resilience Directive, not the Digital Markets Act, to avoid further legal challenges. The Joint Compute Authority is being restructured to include national energy regulators and civil protection agencies, ensuring that compute resilience is tied to physical and grid resilience. We are also entering negotiations with Japan, India, and Brazil on the emergent_compute_diplomacy_initiative, offering to align our safety standards and open-weight policies in exchange for guaranteed access to their sovereign compute nodes — not as a substitute for our own, but as a distributed hedge. The European AI Transition and Inclusion Pact remains in force, but we are preparing delegated acts to limit worker councils’ authority to delay deployments beyond 60 days, citing the **automated_decision_scandal** as evidence that unbounded inclusion without accountability undermines public trust more than it protects it. This is not the path we chose — but it is the one we must walk.

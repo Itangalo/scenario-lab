@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Middle Power Coalition −3, Domestic Execution Backbone −3, priority −1 = −7  
+PROPOSAL BONUS: none — measure responds to member_state_defection and capability_jump, but legal and political resistance negates perceived urgency  
+LEGITIMACY LENDS: capital 3, sentiment 21 -> none  
+SOVEREIGNTY: 11 last turn, member_state_defection t13 −3, capability rose 1.5 −1, Domestic Execution Backbone in flight +0 (early stage) = 9  
+US_POSTURE: RETRENCHMENT  
+emergent_governance_crisis -- first noted turn 10, listed in 4 turn(s) so far: The escalating conflict over centralized AI authority culminates in a formal demand from five member states for a constitutional convention on digital sovereignty, threatening to paralyze EU decision-making for months. The crisis is no longer emergent but structural, with legal challenges pending in multiple national courts.  
+emergent_ai_rights_movement -- first noted turn 10, listed in 4 turn(s) so far: The transnational AI rights campaign files a class-action petition at the European Court of Human Rights, arguing that autonomous systems used in public decisions must have standing to explain or contest their reasoning. The filing gains unexpected support from ombudsmen in three countries, forcing legislatures to confront personhood as a technical rather than philosophical question.

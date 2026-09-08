@@ -1,0 +1,9 @@
+### A Turn of Fracture and Pivot
+
+The EU enters 2029’s first half politically spent. The collapse of the ASML Sovereignty Guarantee and the underwhelming close of the European Interpretability Initiative leave four major initiatives either failed or stalled. With political capital at 11.0, barely above the threshold of paralysis, the Union cannot sustain its infrastructure-first strategy. The escalation of protests into sabotage—targeting data centres and grid links—forces a reckoning: without public trust, even the most advanced systems are vulnerable to social rejection.
+
+In response, the Commission pivots sharply, launching a large transparency and accountability framework under the AI Act. Mandating third-party audits, real-time dashboards, and citizen oversight panels in health, education, and social services, the initiative aims to rebuild legitimacy from the ground up. Pilot cities—Lisbon, Budapest, Malmö—will test community oversight with veto rights, a bold experiment in democratic AI governance. Funding is redirected from stalled sovereignty projects, sidestepping new budget requests.
+
+Yet the pivot comes at a cost. The Tech sovereignty package nears completion but delivers no immediate sovereignty gain, and the ASML deal’s failure signals continued dependence on foreign-controlled supply chains. With no category 4 measure finishing, and ai_capability rising by 1.0, eu_ai_sovereignty falls further. The measure portfolio remains heavy, and political capital, though not collapsing, remains frozen under the weight of ongoing commitments.
+
+Meanwhile, public-sector AI successes—shorter waiting lists, faster decisions—begin to shift sentiment. The new transparency push, combined with these tangible benefits, lifts public_sentiment slightly. But backlash_physical underscores the fragility of this progress. The US administration takes office next turn, and the EU braces for a new era of restricted frontier access.

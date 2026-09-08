@@ -1,0 +1,324 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1455354499122744,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9655087677065941,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.16584029867068728,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.07650355888033189,
+    "triggered": true
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3230113184334603,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2730246892390138,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.13999999999999999,
+    "probability_samples": [
+      0.21,
+      0.21,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7365447750551789,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.12,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8937895449352792,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.23572705343446743,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.09000000000000001,
+    "probability_samples": [
+      0.18,
+      0.09,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.3252823775857734,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.1732348007000366,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6442746531369573,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.1878670661516929,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6949865177276515,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.13,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.38757117541665853,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.12666666666666668,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9257239439890077,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.09999999999999999,
+    "probability_samples": [
+      0.11,
+      0.19,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5399857343407768,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9757351727428117,
+    "triggered": false
+  },
+  {
+    "id": "emergent_institutional_breakdown_in_ai_governance",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "National data protection authorities and sectoral regulators begin issuing conflicting rulings on AI liability, transparency, and compliance with the AI Act, leading to legal paralysis in cross-border deployments. Courts are overwhelmed with preliminary references, and enforcement fragments along national lines, undermining the EU's single market logic in AI. This institutional incoherence becomes visible as public services using AI face contradictory obligations from different member states.",
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9228755641423033,
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_refugee_reintegration_network",
+    "probability": 0.049999999999999996,
+    "emergent": true,
+    "description": "The informal network supporting AI researchers fleeing high-pressure jurisdictions evolves into a semi-structured reintegration platform, with academic hosts, legal aid collectives, and EU-funded incubators coordinating to place talent in sovereign compute projects and public-interest AI roles. This creates a new pipeline of skilled personnel for EU institutions but raises security concerns as vetting procedures lag behind the influx, and some arrivals bring contested or classified knowledge.",
+    "probability_samples": [
+      0.15,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8395689885488109,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6093423267566552,
+    "triggered": false
+  },
+  {
+    "id": "emergent_decentralized_ai_monitoring_network",
+    "probability": 0.16666666666666666,
+    "emergent": true,
+    "description": "The decentralized, open-source monitoring network continues to expand, now flagging anomalous AI behavior in municipal services and regional healthcare systems. Its credibility grows as official agencies begin quietly referencing its alerts, though it remains formally unrecognized. The network is beginning to coordinate with similar initiatives in non-EU countries, forming a loose international fabric of grassroots oversight.",
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.25
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_regional_aid_rejection",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "Several EU member states, citing public anger and energy strain, begin refusing to host new AI infrastructure projects funded under EU initiatives. Regional governments withdraw grid access permits and block construction, framing it as democratic resistance to unaccountable technocratic overreach. This decentralized pushback undermines centralized efforts to rebuild AI sovereignty and signals a deepening rift between core and periphery within the Union.",
+    "probability_samples": [
+      0.0,
+      0.28,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A growing number of AI researchers and engineers from high-pressure jurisdictions, particularly those under strict state control or post-incident scrutiny, begin seeking asylum in EU member states, citing ethical concerns and loss of autonomy. The influx strains immigration systems and raises questions about brain gain versus security risks, as some arrive with sensitive knowledge. This movement coalesces into an organized, though informal, network facilitating relocation and protection for technical talent at risk.",
+    "emergent": true,
+    "id": "emergent_global_ai_refugee_crisis",
+    "probability": 0.09999999999999999,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.3
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

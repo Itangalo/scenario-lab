@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Emergency Override Authority Enforcement Directive −3, priority −1 = −4  
+PROPOSAL BONUS: Emergency Override Authority Enforcement Directive (cat 6, large) +4 — answers openweight_frontier_release directly, severe near-term threat, large measure addressing irreversible distribution  
+LEGITIMACY LENDS: none (capital 5.0 < sentiment 32.0)  
+SOVEREIGNTY: 12.0 last turn, no category 4 completion, no capacity event, capability rose 1.5 −1 = 11.0  
+US_POSTURE: ALLIANCE  
+emergent_labour_unrest -- first noted turn 7, listed in 4 turn(s) so far: Coordinated civil service strikes intensify across France, Germany, and Belgium, with unions demanding moratoriums on AI integration in public administration and binding guarantees on job retention. The movement gains cross-border coordination and media visibility, threatening digital government operations.  
+emergent_regional_ai_pact_continued -- first noted turn 10, listed in 2 turn(s) so far: A coalition of mid-tier AI nations, including Canada, South Korea, and the Nordic states, advances talks on mutual recognition of safety certifications and joint incident response protocols, signaling a shift away from U.S.-centric governance.  
+emergent_legal_challenge -- first noted turn 10, listed in 2 turn(s) so far: A coalition of member states and civil liberties groups pursues a fast-tracked legal challenge at the ECJ, arguing that the Emergency Override Authority Enforcement Directive violates national sovereignty and proportionality principles under EU treaties.

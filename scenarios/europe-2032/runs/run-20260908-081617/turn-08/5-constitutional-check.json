@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increases from 57.5 to 67.5 (+10.0), which exceeds the maximum possible rise under the constitutional rules. `openweight_capability` may not rise faster than half the increase in `ai_capability` plus any spillover from events or red-teaming, but the base rule limits its rise to ≤ +5.0 when `ai_capability` increases by +3.0 (as it does here). A jump of +10.0 is only permissible if `ai_capability` had increased by at least +20.0, which it did not. The narrative cites leakage of tools and fragments but provides no event-level justification (e.g., a named event like `open_model_leak`) that would override the standard accumulation rule. This violates the constitutional accumulation logic for `openweight_capability`.\n- Modelling choice 9 violated: The increase of `openweight_capability` by 10.0 points in one turn exceeds the hard cap of 25-point maximum movement for any metric — while 10.0 is below 25, the violation of the underlying accumulation rule (Invariant 2) invalidates the legitimacy of the movement, and thus the hard cap cannot be invoked to justify it. The real issue is the improper rate of growth relative to `ai_capability`, which is a stricter constitutional constraint."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

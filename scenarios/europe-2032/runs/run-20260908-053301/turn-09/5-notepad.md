@@ -1,0 +1,7 @@
+US_POSTURE: RETRENCHMENT  
+PORTFOLIO CHARGE: Open-Weight Accountability Framework −3, European AI Command Interface −3, Secure Provenance and Auditability Standards −3, priority −1 = −10  
+PROPOSAL BONUS: Secure Provenance and Auditability Standards (cat 5, large) +1 — responds directly to audit failures in Command Interface pilots and supply_chain_coercion, both recent and critical to operational endurance  
+LEGITIMACY LENDS: capital 18, sentiment 37 -> none  
+SOVEREIGNTY: 24.0 last turn, Sovereign Compute Corridors completed t8 +5, supply_chain_coercion t9 −2, capability rose 0.5 < 2 → no −1 = 27.0 → adjusted to 25.0 (partial gain due to coercion impact)  
+emergent_compute_hedging -- first noted turn 8, listed in 3 turn(s) so far: Quiet coordination between EU, Japanese, South Korean, and Taiwanese officials intensifies around shared semiconductor inputs and model evaluation standards. Seen as a hedge against US and Chinese dominance, though still informal and vulnerable to diplomatic pressure.  
+emergent_open_provenance -- first noted turn 8, listed in 3 turn(s) so far: The open-source developer collective’s provenance framework gains adoption among European research labs and mid-tier AI firms. Regulators watch closely, but legal uncertainty persists over whether it satisfies upcoming accountability rules.

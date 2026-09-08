@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereign Inference Clusters −3, priority −1 = −10  
+PROPOSAL BONUS: Sovereign Inference Clusters (cat 4, large) +5 — directly addresses `election_consolidation` and secures access after US access rationing confirmed  
+LEGITIMACY LENDS: capital 41.0, sentiment 48.0 -> +2  
+SOVEREIGNTY: 19.0 last turn, no capacity event, capability rose 1.0 −1 = 18.0  
+Emerging developments (tracked): `emergent_regional_oversight_consortium` -- first noted turn 4, listed in 2 turn(s) so far: The informal oversight consortium formed by Germany, the Netherlands, and Finland gains formal status as a coordinating body for auditing high-risk AI systems across member states. It begins publishing joint evaluation reports and coordinating enforcement actions in areas where the AI Act has not yet been implemented uniformly. This development pressures Brussels to either integrate or compete with the group, accelerating regulatory clarity.

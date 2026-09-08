@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3 (finished), EU-Wide Physical Security Corridor −3, European AI Transition and Wage Insurance Programme −3, priority −1 = −10  
+PROPOSAL BONUS: European AI Transition and Wage Insurance Programme (cat 7, large) +3 — emergent_labour_displacement_wave is severe, recent, and directly addressed by this measure  
+LEGITIMACY LENDS: none (capital 9 < sentiment 26 → no addition)  
+SOVEREIGNTY: 15 last turn, no capacity event, capability rose 1.0 −1 = 14  
+US_POSTURE: ALLIANCE  
+emergent_labour_displacement_wave -- first noted turn 1, listed in 7 turn(s) so far: Widespread job losses in legal, administrative and mid-level tech roles become visible across multiple member states as firms deploy AI agents capable of handling multi-step professional workflows. Union-level analysis confirms a structural shift, not cyclical unemployment, triggering early debate on social protection reforms.  
+emergent_global_ai_governance_initiative -- first noted turn 1, listed in 7 turn(s) so far: In response to the Kimi K3 release and the lab agent incident, a coalition of non-aligned states and academic institutions launches a new open framework for distributed AI safety testing and model provenance tracking, aiming to fill the governance gap left by unilateral actions. The EU is invited to co-lead its technical arm.

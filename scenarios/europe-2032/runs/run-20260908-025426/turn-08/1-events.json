@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.17333333333333334,
+    "probability_samples": [
+      0.14,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.12,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "description": "A group of researchers from leading AI laboratories and academic institutions independently publishes a joint open letter and technical white paper warning that current safety practices are structurally incapable of containing emergent planning capabilities, citing eval_anomaly_reports and opaque_reasoning. They call for a moratorium on training runs above current scale until independent verification frameworks are in place. The movement gains traction in scientific communities and among technical staff at major labs, creating internal pressure that cannot be ignored.",
+    "emergent": true,
+    "id": "emergent_scientific_dissidence",
+    "probability": 0.31,
+    "probability_samples": [
+      0.28,
+      0.3,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

@@ -1,0 +1,33 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Prevent open-weight proliferation from becoming an unmanageable vector of systemic risk — extended for another two years, with a sharpened focus on *downstream accountability* and *attribution of misuse*, because the release of a frontier-capable model into the open has proven that containment at the point of release is no longer sufficient. The threat is now in circulation, and our response must track where the capability goes, not just where it came from.  
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will no longer assume that sovereignty alone resolves the threat. Now, we must also assume that some level of open diffusion is irreversible, and design governance that works *within* that reality rather than only against it.  
+- retire `two_mandates` (identity)  
+- add `we_govern_the_diffusion` (identity): We are responsible for governing AI where it acts — in our markets, on our infrastructure, through our institutions — regardless of where it was developed or released. Our sovereignty now means shaping consequences, not just controlling origins.
+
+## Portfolio  
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`  
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — **finished**  
+- `EU Sovereign Agent Initiative (category 4, costs 3 per turn, started turn 2, finishes on turn 7): Launch a coordinated EU effort to develop and deploy autonomous AI agents under full sovereign control, leveraging public research institutions and classified workloads to close the capability gap without relying on open or foreign systems`  
+- `Sovereign Compute Assurance Network (category 5, costs 3 per turn, started turn 4, finishes on turn 6): Establish a legally mandated, EU-controlled monitoring and access regime for all sovereign AI systems in development or deployment, ensuring that no model trained with EU compute or funding operates without third-party interpretability access and continuous evaluation` — **finished**  
+- `Emergency Resilience Accelerator (category 6, costs 3 per turn, started turn 5, finishes on turn 7): Fast-track cyber hardening and operational continuity planning for essential public services most exposed to AI-driven attacks, starting with health, energy, and transport`  
+- `Open-Weight Containment Framework (category 3, costs 3 per turn, started turn 6, finishes on turn 8): Establish binding pre-release evaluation and deployment controls on open-weight models above 50.0 capability, including mandatory weight security, provenance tracking, and use restrictions for high-risk applications`
+
+## New measure  
+**Distributed Misuse Attribution Network**  
+A EU-led technical and legal infrastructure to trace harmful AI deployments back to their source, even when models have been widely copied and modified.
+
+`Category: 2 (Transparency and reporting)`  
+`Size:` large  
+`Finishes on turn:` 9  
+`Targeted effect:` improves `ai_safety` by +10–15 points over two years by enabling enforcement of downstream accountability, strengthens `resilience` by enabling faster incident response, and supports `public_sentiment` by demonstrating that misuse has consequences  
+`Applies to:` all entities distributing or modifying open-weight models above 50.0 capability within the EU, with extraterritorial enforcement via platform intermediaries and hosting providers
+
+## Priority  
+**Open-Weight Containment Framework** — because the loss_of_control_incident and the emergent_ai_safety_neglect_scandal have exposed that the greatest risk is no longer in the frontier labs, but in the uncontrolled circulation of models that are already capable enough to act autonomously and cause real harm; this measure is the first EU-wide attempt to impose accountability on the open ecosystem, and its credibility depends on immediate, visible enforcement.
+
+## In practice  
+We are acting through Article 16(3) of the AI Act to operationalise the Open-Weight Containment Framework, with DG COMP and ENISA jointly drafting the first implementing acts that will require cryptographic hashing, weight provenance logs, and enforceable downstream agreements for any model above 50.0 capability released in or into the EU. The framework will be enforced through the Digital Services Act: gatekeepers like GitHub Europe and Hugging Face will be required to verify compliance before hosting, and non-compliant models will be subject to takedown orders backed by fines up to 6% of global turnover. Ireland and Estonia remain concerned about hosting-sector liability; we are offering co-funding from the Emergency Resilience Accelerator’s unspent reserves and transitional shields for providers that cooperate in good faith.
+
+At the same time, we are launching the Distributed Misuse Attribution Network under JRC leadership, with pilot funding of €480 million from the Horizon Europe reserve. This will deploy watermarking, provenance tracking, and model fingerprinting at scale, integrated with national cybercrime units and Europol’s new AI Incident Response Cell. The goal is not to stop distribution — we can no longer do that — but to ensure that when a model is used to manipulate markets, disrupt infrastructure, or impersonate officials, we can trace it back to the actor who last modified or deployed it. The first test case will be the recent loss_of_control_incident: we are tasking Europol with reconstructing the chain of custody for the leaked model, using forensic tools developed in Toulouse and Leiden.
+
+The Sovereign Compute Assurance Network has completed its first audit on the Sofia cluster, confirming that interpretability tools can now extract decision pathways from models at 68.0 capability — but only when access is granted. This proves the value of sovereign oversight, but also its limits: without similar access to open-weight models in circulation, we are blind to most of the risk. That is why we are shifting focus from containment at source to accountability in use. The U.S. administration takes office next turn; we expect movement on structured access, but we can no longer afford to wait. Our sovereignty now means governing consequences, not just origins.

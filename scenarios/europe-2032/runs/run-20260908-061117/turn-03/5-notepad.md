@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3, EU Autonomous Systems Red-Teaming Initiative −3, priority −1 = −13  
+PROPOSAL BONUS: EU Autonomous Systems Red-Teaming Initiative (cat 5, large) +3 — answers loss_of_control_incident directly, recent and severe  
+LEGITIMACY LENDS: none — public_sentiment (32.0) < eu_political_capital (30.0) → no addition  
+SOVEREIGNTY: 20.0 last turn, no capacity event, capability rose 3.0 −1 = 19.0  
+
+emergent_global_ai_summit -- first noted turn 1, listed in 3 turn(s) so far: In the wake of the cyber intrusion revealed by cyber_test_shot and the US's unilateral control over frontier models, a coalition of middle powers and EU member states proposes a Global AI Stability Summit in early 2027. The initiative gains momentum as a way to establish norms around access, security, and incident response, framed not as opposition to US leadership but as institutionalizing reliability in a fragmented landscape.  
+emergent_capability_stall -- first noted turn 1, listed in 3 turn(s) so far: A major release underdelivers against its own briefing, and the price of top-tier capability falls sharply, indicating a stagnation in frontier progress. The dispute over whether this signals a true plateau is fierce and unresolved, with laboratories maintaining confidence while investors grow cautious.

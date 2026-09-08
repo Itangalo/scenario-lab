@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The narrative states that \"three large measures and a priority\" are active, but Constitutional Constraint 5 limits the EU to at most one new measure per turn and at most one named priority. The notepad lists four measures (InvestAI Gigafactories, Tech Sovereignty Package, Emergency Resilience Surge, Sovereign Red-Teaming Network) and one priority (Emergency Resilience Surge), implying multiple new measures were introduced in the same turn. Even if some were introduced earlier, the narrative presents the Sovereign Red-Teaming Network as a new initiative in this turn, and the portfolio charge applies to all as if they are concurrent. Without evidence that only one new measure was introduced this turn, this violates the \"at most one new measure per turn\" rule.\n- Economic Constraint violated: The Tech Sovereignty Package secures €42bn in capital, but the narrative does not identify a source for this funding. While the metric rules do not require tracking euro amounts directly, the Constitutional Constraints require that capital expenditures have identified sources. The sudden appearance of €42bn without mention of borrowing, reallocation, or new revenue violates the requirement for budget consistency."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

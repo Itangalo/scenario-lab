@@ -1,0 +1,25 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — finished this turn
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — finished last turn
+- `Secure Open-Source Frontier Monitoring Initiative (category 1, costs 3 per turn, started turn 3, finishes on turn 5): Establish a permanent EU-led capability to monitor, evaluate, and respond to open-weight AI releases within days of their appearance, ensuring that distributed frontier models do not become blind spots for safety and security` — finished two turns ago
+- `Leverage ASML for Coordinated Export Control Framework (category 8, costs 3 per turn, started turn 3, finishes on turn 5): Launch a formal EU-level coordination mechanism to align export controls on critical semiconductor manufacturing equipment, beginning with ASML’s EUV and deep-UV lithography systems, to prevent unilateral decisions under external pressure and strengthen strategic autonomy in AI-relevant supply chains` — finished two turns ago
+- `Launch EU Autonomous AI Development Programme with Sovereign Compute and Talent Pipeline (category 4, costs 3 per turn, started turn 5, finishes on turn 8): Initiate a coordinated, publicly governed effort to develop and operate autonomous AI systems within the EU’s legal and physical boundaries, using sovereign infrastructure and protected talent, to ensure independent action when capability thresholds cross into strategic territory`
+
+## New measure
+**Propose emergency activation of sovereign compute pre-positioning at InvestAI sites under Article 16 TFEU**
+
+We are fast-tracking grid, cooling, and physical hardening at both French and German InvestAI sites using emergency powers, bypassing local permitting bottlenecks while binding all future compute to jurisdictional integrity clauses.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: small`  
+`Finishes on turn: 9`  
+`Targeted effect:` eu_ai_sovereignty +6 by accelerating deployment of physically secured, legally anchored infrastructure; resilience +2 via hardened site design; eu_political_capital -3 if met with sustained regional resistance, but avoids total stagnation of flagship programme  
+`Applies to:` French and German national governments, regional authorities, European Investment Bank, EuroHPC Joint Undertaking, selected energy and construction contractors
+
+## Priority
+**Launch EU Autonomous AI Development Programme with Sovereign Compute and Talent Pipeline** — because even as we secure the foundations, the core pipeline remains behind schedule, and without an end-to-end sovereign development chain, every enforcement and evaluation gain is contingent on systems we don’t control — now more than ever, as openweight_capability reaches 52.0 and autonomous behaviours go live outside lab walls.
+
+## In practice
+We are acting on two fronts: breaking logjams and locking in sovereignty. The InvestAI Gigafactories are legally complete, but ground remains idle. With emergent_sovereignty_backlash gaining traction, waiting for consensus risks indefinite delay. So we invoke Article 16 TFEU’s emergency clause to activate pre-approved infrastructure work — grid connections, water-cooling loops, perimeter fencing — at both sites, funded through the EIB and conditional on full compliance with weight-storage and no-remote-access protocols. This is not a takeover, but a time-bound acceleration: regional authorities retain oversight, but veto power pauses for 18 months unless a Court annulment is granted. Separately, we finalise the first cohort of the EU Autonomous AI Development Programme, allocating €4.2bn from Horizon Europe and national labs to three integrated teams — based in Paris-Saclay, Munich, and Eindhoven — each tasked with delivering a sovereign training stack by Q4 2031. Access to EuroHPC exascale machines is tied directly to participation, and we are offering visa fast-tracks and tax shields for retained talent. Meanwhile, the binding evaluation mandate for open models above 48.0 moves forward under Council Regulation, though diluted: full red-teaming applies only to models accessing public compute or ERC grants, while smaller academic projects receive interpretability vouchers instead. We accept this compromise to preserve political capital — already strained by backlash — knowing that partial coverage today builds legitimacy for broader rules tomorrow. The joint threat response pact strengthens our hand: we join the biosurveillance network and commit real-time cyber telemetry sharing, lifting resilience despite domestic fragility. But make no mistake — origin matters. We are building not just capacity, but jurisdictional fact.

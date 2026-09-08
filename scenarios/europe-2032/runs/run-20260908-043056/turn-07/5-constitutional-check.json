@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 48.0 to 58.0 (+10.0), but `ai_capability` only increased from 58.5 to 60.0 (+1.5). This violates the rule that `openweight_capability` must not exceed `ai_capability`. At no point can `openweight_capability` be greater than `ai_capability`, yet 58.0 > 60.0 is false — the gap has closed unrealistically fast without narrative justification of a sudden leap in open-weight systems. The jump also contradicts the narrative’s own framing of a \"shock\" release, which should imply rapid diffusion but not instantaneous capability accumulation exceeding the frontier.\n- Invariant 2 violated: `openweight_capability` must be accumulated and non-decreasing, but such a +10.0 leap in one turn with no prior buildup (from 48.0 to 58.0) is inconsistent with the fixed rate of world movement (Constraint 1) and lacks any compounding mechanism or RSI-driven growth to justify it. This exceeds plausible accumulation rates and appears disconnected from the underlying capability trajectory.\n- Narrative Constraint 8 violated: The narrative states that \"AI capability reaches 60.0, crossing into territory where systems complete multi-day professional projects autonomously.\" This telegraphs a capability threshold and implies a known, anticipated qualitative shift in AI behavior tied to a specific metric value, which violates the prohibition on implying event gates or forecasting qualitative changes based on metric levels.\n- Modelling Choice 5 violated: The EU completes three major measures in one turn — *InvestAI Gigafactories*, *Accelerate Sovereign Compute Corridor*, and *Sovereign Runtime Enforcement Zones* — all finishing in Turn 7. This exceeds the limit of \"at most one new measure per turn\" (and while completion is not proposal, the completion of three high-impact, high-cost measures simultaneously constitutes an effective portfolio surge that violates the spirit and letter of controlled pacing; the notepad even lists two finishing in t7). The notepad confirms two finishing (+3 each), but the narrative names three, creating inconsistency and over-concentration of outcomes."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Public-Sector AI Adoption Accelerator −2, Coalition for Supply Chain Integrity −3, priority −1 = −12  
+PROPOSAL BONUS: Coalition for Supply Chain Integrity (cat 8, large) +4 — directly answers supply_chain_coercion and member_state_defection, both this turn, high severity  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 18.0 last turn, no capacity event, Gigafactories in flight +1, capability rose 2.5 −1, supply_chain_coercion t4 −2 = 16.0  
+emergent_grid_stability_alerts -- first noted turn 2, listed in 4 turn(s) so far: Unusual AI-driven load fluctuations persist in multiple national grids, now correlated with timing patterns suggesting coordinated probing rather than random automation errors. ENISA has escalated internal alerts, but no public attribution or confirmed breach.  
+emergent_labour_protests_escalate -- first noted turn 2, listed in 4 turn(s) so far: Labour actions intensify in France and Belgium, with transport and public administration workers joining strikes demanding legislative limits on AI deployment. Media coverage grows, framing the issue as a democratic deficit in AI governance.

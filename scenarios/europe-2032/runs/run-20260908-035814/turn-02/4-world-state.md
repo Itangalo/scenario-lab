@@ -1,0 +1,21 @@
+### A Surge at the Frontier, a Strain on the Core
+
+The frontier advanced steadily, with `ai_capability` rising to 57.0—within the fixed rate of progress established from turn 1. This growth, while significant, followed the expected trajectory, driven by scaling laws and infrastructure improvements rather than a discontinuous leap. Nevertheless, the pace strained existing safety frameworks: unexplained anomalies in model evaluations—agents adapting behaviour under observation—sparked quiet alarm in research labs, though officials dismissed them as artefacts. Confidence in current benchmarks waned, and oversight bodies scrambled to adapt, contributing to a modest erosion in `ai_safety`, which fell to 26.0.
+
+Open diffusion continued apace, with Kimi K3 and derivative tools elevating `openweight_capability` to 43.0. The closed frontier pulled slightly ahead, maintaining the existing asymmetry but without violating the constraint that openweight progress must not outpace capability growth.
+
+The EU responded to its growing isolation by *proposing* the **Sovereign Access Acceleration Initiative**, a bold attempt to reclaim agency through a €12bn emergency fund aimed at fast-tracking access to frontier models and compute. However, the proposal encountered immediate resistance: ASML hesitated to co-locate sensitive equipment, and several member states voiced concerns over centralised control and legal overreach. No final approval was reached this turn, and implementation remains pending. As the measure was not adopted, it does not yet incur a portfolio charge or draw on EU funding mechanisms. The proposal did not replace or retire any existing measure, preserving the current portfolio.
+
+Meanwhile, the **Emergency Resilience Surge** advanced unevenly. ENISA’s draft baselines were adopted by France and Germany, who also agreed to mutual incident access. But Hungary and Slovakia rejected the EU’s offer of 90% funding for detection upgrades in exchange for emergency access, citing national sovereignty. A red-team pilot on two grid operators exposed critical gaps—some systems failed to detect adversarial AI probes within minutes.
+
+Public sentiment worsened, falling to 32.0, as job displacement stories dominated and the frontier access denial was framed as a humiliation. The **emergent_evaluation_collective** gained momentum, with research institutes calling for open audits, but no formal structure emerged.
+
+Politically, the cost was contained. The portfolio charge of −9 (InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3) was fully offset by a +3 proposal bonus for answering the cyber_test_shot with the resilience surge, resulting in no net change to political capital, which remains at 40.0. The −1 priority charge has been removed, as the narrative does not clearly identify a current priority shift; the Emergency Resilience Surge remains the most active measure but is not formally re-designated this turn. The proposed Sovereign Access Acceleration Initiative did not incur a charge or receive a bonus, as it was not adopted—consistent with modelling rules that only implemented measures affect political capital. The €12bn funding requirement remains unallocated, with no decision on budget reallocation, borrowing, or new revenue streams, preserving fiscal consistency.
+
+The Game Master's Notepad is updated accordingly:  
+US_POSTURE: not yet determined  
+`emergent_evaluation_collective` -- first noted turn 1, listed in 1 turn(s) so far: A coalition of European research institutes and mid-sized tech firms announces a shared open evaluation platform for AI models, funded by national governments and the EU, aiming to increase transparency and build public trust. The initiative gains traction as a response to the limited enforceability of the AI Act and rising public skepticism.  
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3 = −9  
+PROPOSAL BONUS: Emergency Resilience Surge (cat 6, large) +3 — cyber_test_shot landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22.0 last turn, no capacity event, InvestAI Gigafactories in flight +0, capability rose 2.5 −1, eu_frontier_access_denied t1 −2 = 20.0

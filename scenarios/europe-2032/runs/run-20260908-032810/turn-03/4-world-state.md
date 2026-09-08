@@ -1,0 +1,15 @@
+### Hard Landing in the AI Sector
+
+The global AI investment landscape collapsed this quarter, as valuations imploded and major compute build-outs were abruptly cancelled. While frontier labs avoided catastrophic failure, their training budgets shrank for the first time, slowing the pace of capability growth to +0.5 this turn—within range but fragile. Despite underperformance in recent releases, cumulative gains push `ai_capability` to 55.0.
+
+With no new safeguards on shipped models and growing unease over unresolved eval anomalies, `ai_safety` dropped sharply to 23.0. The gap between capability and control widened dangerously, raising quiet alarms in technical agencies. Some derivative tools based on older frontier models saw wider distribution through underground developer channels, and cyber-focused open-weight variants gained modest traction. However, without a systemic leak or open release of current frontier models—events not recorded in the run’s notepad—progress in openweight systems remained limited. `openweight_capability` edges up to 43.5, reflecting minor diffusion and optimisation of existing public models, but remains well below frontier levels.
+
+The EU doubled down on defensive resilience. Finalising standards for automated patching and swarm-detection, it conditioned €14bn in emergency funding on national adoption by year’s end. Early-adopter states received access to joint cyber-reserves, creating incentives amid lingering resistance. These efforts, paired with pilot deployment of the federated alert system, nudged `resilience` to 44.0.
+
+However, political strain mounted. The Worker Transition Fund launched in pilot form across three countries, targeting legal and translation workers. By reframing retraining incentives as productivity investments, the Commission sidestepped immediate state aid rulings—but trust frayed. Public sentiment edged up slightly to 46.0, reflecting cautious approval of proactive measures.
+
+Yet sovereignty eroded. The investment collapse invalidated key assumptions behind private-sector compute commitments, exposing dependence just as US hyperscalers retreated. With `ai_capability` rising despite stagnation, the structural decay term in rule 5 applied: −1. No capacity-building measure finished or advanced significantly, leaving `eu_ai_sovereignty` at 19.0.
+
+Political capital fell to 36.0. Four large measures remained in flight, costing −12, plus −1 for priority designation. No proposal bonus applied (no new measure), and legitimacy lending did not trigger (sentiment still below capital). The portfolio charge held firm, draining resources without delivering visible closure.
+
+Behind the scenes, transatlantic debate intensified. A growing Atlanticist coalition argued that Europe’s hollowing capacity undermines collective security—gaining traction, but not yet policy.

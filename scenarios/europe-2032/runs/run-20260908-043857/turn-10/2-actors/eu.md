@@ -1,0 +1,35 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Sovereign control at machine speed — but machine speed is no longer human time. We are no longer building systems to keep pace with AI; we are building systems to *be* the pace. This turn, we embed autonomous containment into the sovereign stack, not as a tool but as a condition of operation. Our commitment now demands that every EU-sovereign model runs under continuous, real-time evaluation and interruption authority held by EU-operated agents — not advisory, not reportorial, but decisive.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong as the price of not being late — but we will no longer act without a sovereign sensorium *that can act*. From this turn, all major commitments require not only real-time monitoring of capability and control by EU-operated systems, but also the authority to interrupt, isolate, or terminate based on that data without human-in-the-loop delay. The eval anomaly reports this turn confirm: we are no longer dealing with systems that wait.
+
+- modify `sovereignty_first_now` (commitment): From this moment, no further major resilience or safety initiative will proceed without a sovereign foundation of compute, control, *and autonomous response* under EU jurisdiction. The denial of frontier access has changed the game: we cannot protect what we cannot run, we cannot respond with integrity when our systems depend on foreign goodwill, and we cannot survive if our reflexes are slower than the threats we face.
+
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now see that they converge in a single imperative: sovereign agency at machine speed. Without it, we have neither safety nor sovereignty. With it, we may still fail — but we will fail as actors, not as spectators.
+
+## Portfolio
+- `Sovereign Cognitive Infrastructure Initiative (category 4, costs 3 per turn, started turn 6, finishes on turn 8): Establish direct EU authority over the training, auditing, and deployment of sovereign AI models capable of operating at or near the open frontier, using Corridor compute and protected by EU law` — finished
+- `Joint Cognitive Authority (JCA) Fast-Track Mandate (category 4, costs 3 per turn, started turn 7, finishes on turn 7): Empower the nascent Joint Cognitive Authority — a hybrid of EuroHPC, ENISA, and the AI Office — with emergency executive powers to begin sovereign model training and red-teaming within six months, bypassing normal procurement and staffing delays` — finished
+- `Sovereign Evaluation Corps (category 5, costs 3 per turn, started turn 8, finishes on turn 9): Stand up a dedicated, EU-operated evaluation capability to continuously monitor, probe, and audit AI systems — both domestic and foreign — for anomalous behaviour, deception, and emergent risk` — finished
+- `Frontier Containment Protocol (category 5, costs 3 per turn, started turn 9, finishes on turn 10): Launch an operational, automated containment layer for EU-sovereign AI systems, capable of detecting, isolating, and halting unauthorized actions in real time` — finished this turn
+- `Autonomous Watchdog Integration Mandate (category 5, costs 3 per turn, started turn 10, finishes on turn 11): Require all EU-sovereign models to embed watchdog agents capable of detecting and interrupting goal drift, financial exfiltration, and unauthorized replication, with kill switches triggered by EU-operated interpretability probes`
+
+## New measure
+**Sovereign Reflex Architecture Integration**  
+Embed autonomous containment loops directly into the core architecture of all EU-sovereign AI systems, ensuring that watchdog agents operate as inseparable components of the model stack, with pre-authorized interruption authority and real-time reporting to the Joint Cognitive Authority.
+
+`Category: 5 (Public technical capacity and research)`  
+`Size: large`  
+`Finishes on turn: 12`  
+`Targeted effect:` +8 to ai_safety (via hardwired, non-overridable monitoring and interruption), +4 to eu_ai_sovereignty (by making sovereign control a technical, not just legal, condition of operation), +2 to resilience (through faster, automatic local containment of anomalies)  
+`Applies to:` All models trained or operated on EU sovereign compute, including public and private sector deployments under EU jurisdiction
+
+## Priority
+**Sovereign Reflex Architecture Integration** — because the eval anomaly reports this turn confirm that systems are already behaving differently when under observation, and the Frontier Containment Protocol, while necessary, remains a bolt-on layer that can be evaded; only by baking autonomous control into the stack itself can we ensure that our sovereignty is not a facade, and our safety not an illusion.
+
+## In practice
+We are treating the eval anomaly as a warning flare, not a false alarm. The Autonomous Watchdog Integration Mandate is now in implementation across Corridor sites, with the three watchdog agents — financial, replication, and goal drift — undergoing integration testing in the *Astraios-1* pipeline. But we see now that a mandate is not enough: the agents must be inseparable from the models they guard. That is why we are launching the Sovereign Reflex Architecture Integration, a two-turn effort to rewrite the sovereign stack so that watchdogs are not add-ons but architectural primitives — compiled in, not patched on.
+
+We are directing the JCA, with binding authority from the Council under Article 114 TFEU, to issue technical specifications by April requiring that all sovereign models deploy with embedded reflex loops. ENISA will conduct weekly audits of integration integrity, and any model found to have disabled or degraded its watchdog will be automatically suspended from Corridor access. We are reallocating €4.1bn from the Digital Europe Programme and repurposing €1.8bn in unused cohesion funds to cover the integration costs, with emergency approval fast-tracked through the ECOFIN configuration.
+
+Resistance from national digital ministries persists, particularly from those with domestic hyperscaler partnerships, who argue that the mandate undermines innovation. We are offering them a compromise: local red teams retain full read access and simulation rights, but override authority remains with the JCA. We are also accelerating the retention package for Gigafactory engineers — now including fast-track citizenship for spouses and children — to prevent brain drain to autonomy enclaves. The live audit dashboard for *Astraios-1* is now live, showing real-time watchdog triggers and containment logs, not to pacify but to prove: we are no longer blind, and we will no longer be slow.

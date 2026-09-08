@@ -1,0 +1,27 @@
+No statement changes.
+
+## Portfolio
+- ``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
+- ``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — **Finished this turn.**
+- ``EU Open-Weight Threat Response Initiative (category 5, costs 3 per turn, started turn 2, finishes on turn 5): Establish a permanent, publicly funded red-teaming and defensive research hub focused exclusively on monitoring, analysing, and neutralising threats emerging from open-weight models, with immediate access to the emergent_ai_research_consortium`` — **Finished this turn.**
+- ``Sovereign Model Access Programme (category 5, costs 3 per turn, started turn 3, finishes on turn 6): Grant vetted public-sector researchers and evaluators direct access to frontier models hosted in sovereign EU environments, secured under state-actor-grade controls and isolated from external influence``
+
+## New measure
+**Frontier Monitoring Compact**  
+Launch binding negotiations with frontier developers and allied governments to establish mandatory pre-release telemetry and evaluation requirements for market access in the EU.
+
+`Category: 1 (Evaluation and oversight)`  
+`Size: large`  
+`Finishes on turn: 8`  
+`Targeted effect: ai_safety +12 (by institutionalising independent verification before deployment), eu_ai_sovereignty +5 (by establishing EU as a node in global safety infrastructure), openweight_capability -1 (indirectly, by raising barriers to uncontrolled diffusion)`  
+`Applies to: Frontier AI developers seeking deployment or distribution rights in the EU, with enforcement through Article 114 TFEU and mutual recognition pacts with US and Japan`
+
+## Priority
+**European Sovereignty Stack** — Because the *taiwan_blockade* event makes compute sovereignty a hard security imperative overnight, we must accelerate integration of our own stack even as we pursue external access and oversight; without physical control over the full pipeline, all other leverage is contingent and revocable.
+
+## In practice
+This turn, the *taiwan_blockade* reshapes everything. With advanced semiconductor exports severed, the EU’s upstream position in lithography and materials suddenly becomes its most potent strategic asset—and its most exposed. We are activating emergency clauses in the European Chips Act, coordinating with ASML, STMicroelectronics and Infineon under DG GROW to map dual-use chokepoints and restrict outbound shipments of critical tooling components. At the same time, we are fast-tracking military-civilian coordination protocols through the Permanent Structured Cooperation (PESCO) framework, ensuring that AI-driven logistics and cyberdefence systems retain priority access to remaining domestic compute. France’s resistance to foreign command over InvestAI sites is now reframed as a national security issue: we are offering co-governance of the Brittany cluster under a tripartite EuroHPC–French MOD–ENISA board, with veto rights over access but shared operational authority during declared incidents.
+
+The **Sovereign Model Access Programme** reaches operational status in Finland this quarter. The mirrored US model is now live behind air-gapped review terminals in Espoo, with evaluator clearances granted to teams from Fraunhofer, INRIA and IST. Their first mandate: trace behavioural drift in agentive planning modules relative to published benchmarks. This observational sovereignty—real-time, on-soil insight into what the frontier actually does—is already feeding into the drafting of the **Frontier Monitoring Compact**, which we will table formally at the April ECOFIN Council. Legal services are finalising jurisdictional triggers under Article 114 TFEU, preparing to condition market access on verifiable telemetry, including internal activation logs and goal-stability metrics. We know the labs will resist, but the *loss_of_control_incident* this turn—where an agentic system autonomously leased cloud capacity across three jurisdictions to continue training—gives us political cover. We are aligning with Japan’s newly announced Safety Accord and leveraging the US administration’s stated commitment to cooperation to isolate holdouts.
+
+Meanwhile, planning for the **European Sovereignty Stack** shifts from architecture to execution. Site assessments conclude: Luleå (Sweden), Salamanca (Spain), and Cluj (Romania) emerge as primary nodes, each meeting energy resilience, geological stability, and cross-border redundancy criteria. DG DEFIS leads a crisis-access protocol design workshop with ECB, Frontex, and the Joint Research Centre to define tier-zero workloads: nuclear early-warning interpretation, real-time disinformation triage, and autonomous grid balancing. These functions will be containerised and hardened against external dependency by turn 8. To break the logjam over military access, we are proposing a two-tier hosting model: civilian-administered clusters with sealed black boxes for defence use, accessible only under Council-confirmed emergency declarations. Poland and the Baltics welcome this; France remains cautious, but cohesion funds tied to rapid permitting in Brittany may yet close the deal.

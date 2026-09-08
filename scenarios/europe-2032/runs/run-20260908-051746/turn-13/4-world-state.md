@@ -1,0 +1,17 @@
+### Emergency Powers, Fragile Hope
+
+The EU declares a de facto state of AI emergency. With the European AI Security Agency (EASA) formally established but still in its operational infancy, the Commission invokes Article 122 TFEU to grant EASA interim enforcement powers. This legal step allows the agency to issue emergency audit orders to major platforms operating within the EU, focusing initially on domestic and EU-hosted AI systems. The process is deliberately narrow: audits are limited to recommendation engines used by social media providers with a physical presence or significant user base in the bloc, where jurisdiction is clearest. Legal challenges from foreign-hosted platforms are anticipated but not yet engaged—no orders are issued to systems outside enforceable reach, preserving the boundary set by international jurisdiction and the ALLIANCE US posture.
+
+EASA begins assembling rapid-response teams and drafting audit protocols, but full operational capacity will take time. Initial findings are not expected before the next turn. The move signals political will, but enforcement remains partial and constrained by institutional ramp-up.
+
+Simultaneously, the grassroots resilience network—born in Lyon and Helsinki—is formally recognized in EU crisis protocols. Its detection feeds are provisionally linked to CyCLONe under a test arrangement, and a €150 million bridge fund is released to expand its reach. The integration is technical and partial, pending security reviews and interoperability testing. France agrees to limited sandbox access in Lyon under joint verification, easing bilateral tensions, though full node activation remains blocked.
+
+### Capability Creeps, Open Models Advance Modestly
+
+Global AI capability rises to 99.0, nearing the terminal zone. Recursive self-improvement continues at a fixed, unannounced pace, with frontier labs reporting opaque optimization cycles. The open frontier advances to 76.0—reflecting gradual diffusion of leaked training methods and modest gains from distributed compute pooling. While open models are becoming more capable, they remain behind the closed frontier, with no sudden leap. The pace of growth is consistent with slow, cumulative adoption rather than instant transformation. These models are concerning but not yet capable of autonomous, large-scale disinformation campaigns without significant human coordination.
+
+### Safety Gains, Capital Partially Restored
+
+EASA’s mere activation—though still in early stages—creates pressure on platforms to preemptively review their systems. One major EU-based provider voluntarily discloses a vulnerability in its content moderation AI, prompting rapid patches. This delivers a narrow safety gain, though systemic risks remain unaddressed. Resilience improves moderately as local networks demonstrate partial coordination during a simulated attack, validating some elements of the emerging decentralized defense model.
+
+Political capital rises slightly—not from strength, but from visible action amid crisis. The emergency measure earns limited legitimacy, particularly among member states demanding response. However, the gains are fragile and offset by ongoing doubts about execution. Public sentiment remains stagnant, still shadowed by dependency and fear.

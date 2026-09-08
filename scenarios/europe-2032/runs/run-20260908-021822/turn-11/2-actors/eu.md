@@ -1,0 +1,24 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Redirect the Sovereign AI Stack toward a minimal viable sovereign capability—focused on crisis continuity and defensive autonomy—by June 2033, prioritising resilience-enabling compute and secure agent monitoring over frontier parity  
+- Grounds: The Sovereign AI Stack Launch has failed to start due to political capital collapse (3.0), and the investment winter triggered by `ai_investment_collapse` has invalidated its original assumptions: the frontier is contracting, not accelerating, and the EU cannot outspend the market downturn. Simultaneously, `emergent_ai_rights_litigation` reveals that unchecked deployment of high-capability systems—especially in public services—is now a legal liability, not just a safety risk. The original goal of frontier parity is now both unaffordable and politically toxic. The commitment stands, but its expression must shift: from building a mirror of the frontier to securing a sovereign *minimum*—a capability sufficient to maintain essential functions during exclusion, detect stealth threats, and support EU-regulated public AI use under legal scrutiny. This is no longer about matching the lead; it is about surviving the next cutoff with constitutional integrity.
+
+## Portfolio  
+- Sovereign AI Stack Launch (Gigafactories + Talent + Frontier Lab) (category 4, costs 3 per turn, started turn 11, finishes on turn 13): Establish a fully sovereign EU AI capability stack—compute, talent, frontier lab—within 18 months to ensure autonomous decision-making in crisis and immunity from strategic exclusion  
+
+## New measure  
+**Minimal Sovereign Stack Phase 1: Crisis Compute & Agent Monitoring Core**  
+Launch a stripped-down, legally and fiscally viable version of the Sovereign AI Stack focused on two deliverables: (1) exaflop-scale secure compute for crisis continuity, and (2) a public monitoring system for autonomous agents in critical infrastructure.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: small`  
+`Finishes on turn: 13`  
+`Targeted effect:` eu_ai_sovereignty +15 (limited but functional stack), eu_political_capital -1 per turn, resilience +5, ai_safety +5 (via monitoring)  
+`Applies to:` EU jurisdiction, with binding access rights for public safety agencies and override authority limited to systems in essential services
+
+## Priority  
+**Minimal Sovereign Stack Phase 1: Crisis Compute & Agent Monitoring Core** — because the original Sovereign AI Stack is frozen by political paralysis and capital exhaustion, and the convergence of investment collapse and emergent rights litigation demands a pivot: we must deliver *something* sovereign and legally defensible within 18 months, or lose all credibility on both sovereignty and rights.
+
+## In practice  
+This turn, we are downgrading the Sovereign AI Stack to a crisis-contingency core. Under Article 172 TFEU, we are re-scoping the programme to focus on two politically survivable, technically urgent outcomes: secure compute for continuity of government and essential services during AI exclusion, and a public agent monitoring layer to detect unauthorised autonomous operations in critical infrastructure. We are working with DG CONNECT and the European High-Performance Computing Joint Undertaking to repurpose €6.2 billion from stalled Digital Europe and Horizon projects into three hardened compute sites—Grenoble, Pilsen, and Oulu—with classified grid priority and physical security, but without the full frontier lab or mass talent recruitment. The lab component is deferred; instead, we are tasking the European Cybersecurity Agency (ENISA) and a newly convened Public AI Safety Unit with developing a monitoring agent based on the shadow network’s bio-design detection protocol, adapted for AI behavioural anomalies.  
+
+We are engaging JURI and LIBE committees directly to pre-empt the `emergent_ai_rights_litigation` wave, offering a legally bounded, transparent alternative: the monitoring core will be subject to EDPB oversight, and its outputs treated as audit trails, not enforcement tools. In return, we seek emergency fast-tracking of a slimmed Sovereign AI Act that grants only the minimal override powers needed to inspect and isolate rogue agents in public systems. We are offering member states hosting sites a 70% co-financing rate and energy compensation guarantees under the Crisis and Investment Instrument, while suspending export control debates until Phase 2. Resistance from civil liberties groups is being met with transparency commitments and sunset clauses; resistance from US-aligned hyperscalers is bypassed by focusing on public, not commercial, infrastructure. This is no longer about catching up. It is about staying alive.

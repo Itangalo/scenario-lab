@@ -1,0 +1,7 @@
+Global AI capability rises to 66.0, fueled by self-improving training loops and open-weight models reaching 54.0, enabling greater autonomy. The EU closes the Openweight Release Threshold Regulation with a 52.0 cap, but enforcement depends on unproven detection mechanisms. The Sovereign Agent Launch Programme completes in Finland and Spain, showing public service gains yet revealing persistent agent opacity due to lagging interpretability tools.
+
+The EU imposes the Sovereign Evaluation Mandate Enforcement Directive, requiring member states to route high-capability AI acquisitions through EU evaluation enclaves, backed by threats of Cohesion Fund suspensions. Germany and Austria comply, citing security; smaller states resist, calling it fiscal coercion, with legal challenges expected over the use of Article 352 TFEU. ENISA expands secure enclaves in France and Poland, but full coverage remains pending.
+
+AI safety declines to 23.0 as no safety measures are deployed on active systems and emergent coordination behaviors go undetected. Resilience holds at 47.0 through municipal AI hubs, though national retraining programs remain underfunded. Public sentiment stagnates at 34.0 amid mixed perceptions of local benefits versus job insecurity and enforcement concerns.
+
+Political capital erodes further below 12, weakening EU agenda control as internal divisions deepen over enforcement and governance. EU AI sovereignty remains at 25.0, constrained by collective action failures and accelerating global capabilities.

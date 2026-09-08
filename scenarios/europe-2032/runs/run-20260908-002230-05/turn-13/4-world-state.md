@@ -1,0 +1,13 @@
+### A Fragile Advance Amid Escalating Fractures
+
+Global AI capability advances by +0.5, reaching 62.0, as closed labs refine agent coordination and planning depth. This incremental leap consolidates the closed frontier’s lead but delivers no further gain to `ai_safety`, which remains at 28.0—still below meaningful control thresholds. Meanwhile, early diffusion of leaked model weights and open-source fine-tuning efforts begins to lift `openweight_capability` modestly to 56.5. While momentum builds in the open ecosystem, the impact remains limited by infrastructure bottlenecks and legal uncertainty, preventing a rapid catch-up. The gap with the closed frontier narrows only slightly, preserving the relative ordering and respecting the accumulated nature of capability growth.
+
+The EU’s **Frontier Access Emergency Response** is launched as a high-stakes diplomatic and legal countermeasure. Invoking emergency provisions under the Digital Markets Act, Brussels demands interoperability for EU-hosted inference gateways to restore access for public-sector use. Simultaneously, offers of mutual evaluation with the US are floated as a path to de-escalation. However, Washington, operating under its **CONSOLIDATION** posture, treats the move as a challenge to its tiered access regime. Initial responses are dismissive; no immediate restoration of model flows occurs.
+
+Domestically, the **EU-Wide Civic AI Accountability Framework** officially concludes. While legally enacted, its diluted form—advisory panels, deferred impact assessments—fails to quell public anger. Protests in Italy and Belgium intensify, now targeting not just AI deployment but the perceived hollowing out of democratic oversight. Labour unrest over "obsolete degrees" spreads, feeding a narrative of systemic betrayal.
+
+The **Sovereign Compute Acceleration Directive** continues in flight, but its two-year timeline offers no near-term relief. No progress is made on resilience infrastructure—cyber drills remain unexercised, bio-units idle.
+
+Political capital sees a marginal rise to 5.0. The completion of the Civic Accountability Framework yields a +3 bonus under metric rule 6, offsetting ongoing costs. The new measure, though proposed, does not yet incur its full cost, and the portfolio charge is reduced with one measure finishing. The proposal bonus for addressing a sovereignty crisis is judged +3, but only partially realized due to uncertain diplomatic traction.
+
+Public sentiment holds at 18.0. No visible benefit emerges from new initiatives, and backlash continues to erode trust.

@@ -1,0 +1,17 @@
+### Frontier Leaps Ahead, Open Weights Respond Gradually
+AI capability advances to 61.5, as frontier labs refine autonomous agents capable of managing multi-day projects across legal, clinical, and engineering domains. An open-weight release follows, demonstrating strong performance and narrowing the gap with frontier models—though not closing it entirely. Early benchmarks suggest it reaches roughly halfway toward the latest closed models, reflecting accelerated but still bounded diffusion. The open ecosystem shows growing momentum, but full parity remains months away, constrained by compute access and fine-tuning bottlenecks.
+
+### Member State Defection Undermines Unity
+Amid rising strategic anxiety, a major EU member state finalizes a bilateral agreement with a U.S. hyperscaler, securing preferential access to next-gen models in exchange for data localization concessions. Framed domestically as pragmatic sovereignty, the move is widely interpreted as a fracture in the Union’s common stance. The deal weakens the EU’s leverage in upcoming negotiations and signals that national interests may override collective strategy.
+
+### U.S. Election Reshapes Access
+The U.S. presidential election concludes with a decisive victory for the candidate advocating strategic consolidation of AI. While the new administration takes office next turn, the signal is clear: frontier AI will be treated as critical infrastructure, with access rationed by geopolitical alignment. Dependence on American capability deepens, raising concerns about conditional access.
+
+### EU Launches Evaluation Labs Initiative
+The EU announces the **EU-Controlled Model Evaluation Labs**, a large category 5 measure, aiming to build sovereign technical capacity to audit frontier models. Legal groundwork proceeds under Article 114 TFEU, with pilot sites planned in Finland and the Netherlands. However, implementation will take multiple turns—no technical capacity is established this turn. Pushback emerges from developers citing IP risks, and member states question enforcement feasibility. The initiative is named as the EU’s priority, reflecting urgency, but remains in early development.
+
+### Incident Reporting Regime Advances, But Not Launched
+COREPER finalizes the draft directive for the AI Incident Reporting Regime, overcoming legal hurdles. ENISA begins initial design work on the technical dashboard, and planning starts for the first audit into the benefits scandal. However, this is a continuation of an existing measure, not a new one—finalization of the draft does not constitute a new measure launch. The regime remains in preparation, with no operational impact this turn.
+
+### Political Strain Moderates
+With three large and one small measure in flight—including the new priority—political burden increases. Stalled Bonds, member state defection, and rising capability without corresponding safety erode confidence. However, the strain, while notable, does not trigger a crisis. The net political cost is reflected in a measured decline of 3 points in political capital, consistent with ongoing pressures but without collapse or sudden loss of legitimacy. Resilience dips slightly as cyber risks grow unchecked, but no major incident occurs.

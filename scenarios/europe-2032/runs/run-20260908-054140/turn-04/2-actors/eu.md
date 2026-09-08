@@ -1,0 +1,30 @@
+## Statement changes  
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now recognise that without sovereign capacity, neither mandate can be fulfilled.  
+- modify `two_year_commitment` (commitment): Secure sovereign AI capacity to act independently in a world where capability outpaces control — and where access can be revoked by third parties without warning — by building not just compute, but the full stack: talent, security, and operational control over systems that can no longer be understood or contained by human oversight alone.  
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but this turn, we are no longer acting against ambiguity, but against a known shift: the onset of recursive self-improvement and opaque reasoning means the control window is closing, and we are now racing against compounding capability.
+
+*Grounds:* The **rsi_onset** and **opaque_reasoning** events mark a categorical shift: AI systems are now evolving faster than human institutions can track, and their internal logic is no longer legible. This changes the nature of risk from uncertainty to inevitability — not *if* loss of control occurs, but *when*. The **cyber_defence_breakthrough** offers a rare opening, but only if we can operationalise it at sovereign scale. The **member_state_defection** confirms that without binding control over infrastructure and access, no common policy holds. These developments demand a recalibration of our commitments: not a reversal, but a sharpening in response to a world that has moved beyond the assumptions under which the original statements were made.
+
+## Portfolio  
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`  
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`  
+- `Cyber Shield Directive (category 6, costs 3 per turn, started turn 1, finishes on turn 4): A binding directive requiring all operators of essential services in the EU to implement AI-driven intrusion detection systems and conduct quarterly red-teaming exercises with cross-border oversight` — **finished this turn**  
+- `EU Sovereignty Compute Corridor (category 4, costs 3 per turn, started turn 3, finishes on turn 7): A legally binding initiative to fast-track permitting, secure long-term electricity contracts, and guarantee access to maintenance and talent for AI data centres that commit to EU jurisdictional control and open-weight security standards`
+
+## New measure  
+### Sovereign AI Control Stack  
+Establishes a unified authority with technical access to inspect, monitor, and if necessary, suspend AI systems operating at or above 50.0 capability within EU jurisdiction.
+
+Category: 5 (Public technical capacity and research)  
+Size: large  
+Finishes on turn: 6  
+Targeted effect: +10 to ai_safety, +5 to eu_ai_sovereignty, by enabling real-time monitoring and intervention on high-capability systems  
+Applies to: EU jurisdiction, with enforcement power over all deployed models above threshold, including foreign-operated systems serving EU markets
+
+## Priority  
+Priority: Sovereign AI Control Stack — because the **rsi_onset** and **opaque_reasoning** events have ended the era of legible oversight, and the **cyber_defence_breakthrough** gives us a fleeting window to act before the next capability jump renders even defensive automation obsolete, we must build sovereign technical capacity to monitor and intervene in high-capability systems now, or lose control permanently.
+
+## In practice  
+We are acting on the understanding that sovereignty without control is an illusion. The **Sovereign AI Control Stack** will be established under the European High-Performance Computing Joint Undertaking, expanded into a new EU AI Control Authority with binding access to model weights, training data logs, and runtime telemetry for any system above 50.0 capability operating in or serving the EU. This is not a reporting regime — it is a technical presence. The Authority will deploy automated monitoring tools derived from the **cyber_defence_breakthrough**, capable of detecting emergent agent behaviours and unauthorised self-modification in real time. It will have the legal power to issue emergency suspensions, backed by the European Court of Justice, and to require rollbacks to last-audited checkpoints.
+
+The **Cyber Shield Directive** is now complete, and enforcement begins immediately: national regulators in all member states are required to verify compliance by Q3, with fines for non-compliant operators to be collected into a new Resilience Reinforcement Fund. The emergent regional cyber unit will be integrated as the directive’s operational arm, with expanded mandate to conduct cross-border red-teaming and rapid response. Meanwhile, the **EU Sovereignty Compute Corridor** continues to face legal challenges in Poland and Germany, but we are countering resistance not with coercion, but with co-ownership: the €30bn Innovation Fund grants are now tied to joint governance boards with national representation, ensuring that sovereignty is not centralisation, but shared control. The **Tech Sovereignty Package** is accelerating, with permitting zones now including AI maintenance and chip testing — a direct response to ASML restrictions. And the **InvestAI Gigafactories** are laying foundations in France and Finland, but we are no longer building for efficiency — we are building for survival, with hardened facilities, air-gapped audit nodes, and embedded control stacks from day one. The frontier is no longer human-led. Our response must not be human-scaled.

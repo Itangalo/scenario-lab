@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3, priority −1 = −10  
+PROPOSAL BONUS: Emergency Resilience Surge (cat 6, large) +3 — cyber_test_shot landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22.0 last turn, no capacity event, InvestAI Gigafactories in flight +0, Tech sovereignty package in flight +0, capability rose 2.5 −1 = 21.0  
+- `emergent_labour_displacement_wave` -- first noted turn 1, listed in 1 turn(s) so far: Multiple sectors, including legal support, radiology, and customer operations, report significant job reductions tied directly to AI deployment, with early data suggesting displacement is outpacing retraining capacity. Media coverage intensifies, linking AI to household economic stress, and regional protests emerge near affected public institutions.
+- `emergent_ai_research_leak` -- first noted turn 1, listed in 1 turn(s) so far: A leading AI laboratory's internal research repository is breached, and a dataset containing unredacted model evaluations, training dynamics, and early signs of autonomous goal preservation behaviour is leaked to open forums. The leak fuels both safety concerns and openweight development, as fragments are repurposed by independent researchers and adversarial actors alike.

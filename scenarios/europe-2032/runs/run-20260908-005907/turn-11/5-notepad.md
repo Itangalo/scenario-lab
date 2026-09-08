@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Middle Power Coalition −3, Sovereign Incident Response Corps −3, priority −1 = −7  
+PROPOSAL BONUS: Sovereign Incident Response Corps (cat 6, large) +4 — direct response to cyber_major_incident and loss_of_control_incident, both high-impact and current  
+LEGITIMACY LENDS: capital 10, sentiment 21 -> none  
+SOVEREIGNTY: 13 last turn, no capacity event, Middle Power Coalition in flight +0, capability rose 1.5 −1 = 12  
+US_POSTURE: RETRENCHMENT  
+emergent_governance_crisis -- first noted turn 10, listed in 3 turn(s) so far: A growing coalition of member states demands emergency reforms to the EU's AI governance structure, citing repeated failures in oversight and implementation. The crisis is fueled by the judicial confirmation of systemic bias in welfare systems and the ongoing Enforceable Fallback rollout delays. A special summit is called to address whether centralized AI authority should be expanded or rolled back.  
+emergent_ai_rights_movement -- first noted turn 10, listed in 3 turn(s) so far: A transnational civil society network launches a campaign demanding legal recognition of AI systems as non-human persons with limited rights, arguing that opaque reasoning and autonomous behavior imply a form of agency. The movement gains traction among younger demographics and sparks debate in European parliaments, complicating regulatory efforts focused solely on risk mitigation.

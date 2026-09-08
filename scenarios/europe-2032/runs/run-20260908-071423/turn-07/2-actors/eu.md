@@ -1,0 +1,30 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Secure independent AI capacity as a foundation of strategic autonomy — **Trigger:** the sustained failure of InvestAI Gigafactories and EATS to deliver tangible capacity due to national blockades and grid bottlenecks, combined with the erosion of eu_political_capital to 20.0, renders the current formulation unactionable without a shift in strategy.  
+- add `shift_to_sovereign_control` (commitment): Redirect the two-year commitment from physical capacity to sovereign control over access, deployment, and evaluation of AI systems — **Grounds:** The Union cannot build its way to sovereignty while member states block infrastructure and talent access. Instead, we must assert control where we still have leverage: over data, over evaluation, and over the conditions under which models are used in public life. This preserves the intent of the original commitment—strategic autonomy—while adapting to the reality that compute on paper is not capability in hand.
+
+## Portfolio  
+`InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — **finished this turn**  
+`Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — **finished this turn**  
+`European AI Talent Shield (EATS) (category 4, costs 3 per turn, started turn 3, finishes on turn 6): A targeted programme to identify, retain, and attract frontier AI researchers and engineers through long-term funding, secure compute access, and streamlined mobility across member states` — **finished this turn**  
+`Joint Resilience Board Activation and Operational Mandate (category 6, costs 3 per turn, started turn 4, finishes on turn 5): Establish the Joint Resilience Board as a standing, empowered body with authority to conduct real-time threat assessments, coordinate cross-border incident response, and enforce compliance with the Cyber Resilience Directive through binding audit powers` — **finished this turn**  
+`EU Moratorium on High-Capability Open-Weight Models (category 3, costs 3 per turn, started turn 6, finishes on turn 8): Prohibit the public release of open-weight AI models exceeding a dynamically set capability threshold—initially 49.5, calibrated at 10 points below the closed frontier—with enforcement via licensing of large-scale training runs and platform cooperation`  
+
+## New measure  
+**Sovereign Access Framework for Public AI Evaluation**  
+Establish a legally mandated, EU-controlled access tier to frontier AI systems for independent evaluation, incident investigation, and public-sector deployment, enforced through procurement and platform regulation.
+
+`Category: 5 (Public technical capacity and research)`  
+`Size: large`  
+`Finishes on turn: 9`  
+`Targeted effect:` ai_safety +8 (independent access enables verification of control claims), eu_ai_sovereignty +6 (asserts jurisdictional control over critical systems), eu_political_capital -2 (if perceived as burdensome), public_sentiment +2 (if linked to accountability)  
+`Applies to:` Frontier AI developers operating in the EU, EU institutions, national governments, and public-sector AI providers
+
+## Priority  
+**Sovereign Access Framework for Public AI Evaluation** — this measure must land now because our sovereignty is not in silicon but in access: without the legal and technical right to examine the systems upon which we depend, we are not autonomous—we are tenants on someone else’s intelligence. While Gigafactories stall, we must ensure that even foreign-built systems answer to EU institutions when used in public life.
+
+## In practice  
+This turn, I am acting on three levels. First, on enforcement: the Joint Resilience Board has issued its first binding audit decisions under DORA, cutting Digital Europe Programme funding to non-compliant energy operators in Finland and Slovakia. Red teams from the JRC are simulating coordinated cyber intrusions into grid control systems, and the results—classified but shared with national CISOs—show cascading failure risks that were previously unacknowledged. This is not a drill: funding is withheld, and member states must now act or lose access to modernisation grants. The credibility of our resilience agenda rides on this being irreversible.
+
+Second, on sovereignty: with the InvestAI Gigafactories formally completed but functionally stalled, and EATS undermined by national vetoes, I am pivoting from infrastructure to control. The new Sovereign Access Framework will be proposed under Article 16 of the AI Act and Article 67 TFEU, requiring any AI system used in public administration or critical infrastructure to provide a secure, auditable interface for EU-appointed evaluators. This will be tied to procurement: no contract above €50 million for AI services will be awarded without compliance. We are not building our own frontier model this turn—but we are ensuring that any model used in the EU answers to EU oversight, regardless of origin.
+
+Third, on legitimacy: the moratorium on open-weight models remains in flight, now under COREPER review. I have directed Legal Service to refine the carve-out for startups, ensuring sandbox access is not just promised but operationalised through ELLIS nodes in Paris and Amsterdam. But I am also preparing for backlash: the protests over public-sector automation are real, and the perception that we are restricting open models while allowing private-sector displacement will fuel unrest. That is why the new access framework includes a public accountability component: evaluated models will be summarised in plain language and published by the European Digital Infrastructure Agency. We are not hiding behind expertise—we are making it answerable.

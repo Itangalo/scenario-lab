@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Establish EU AI Incident Response Corps finished −3, Launch Public AI Benefit Pilots canceled = −3  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 13.0 last turn, no capacity event, capability rose 0.0 −1 = 12.0  
+US_POSTURE: CONSOLIDATION  
+emergent_international_red_team_alliance -- first noted turn 12, listed in 3 turn(s) so far: Following the technical success of the Franco-German-Dutch red team network, informal coordination expands into a structured but non-institutionalized alliance of middle powers—including Canada, Japan, and South Korea—to jointly audit and stress-test open-weight models. The group begins publishing shared vulnerability advisories, creating de facto global standards for model security despite lacking formal authority.  
+emergent_informal_red_team_breakthrough -- first noted turn 12, listed in 3 turn(s) so far: The informal Franco-German-Dutch red team network successfully demonstrates a general method for extracting decision logic from superhuman open-weight models, achieving a level of transparency previously thought impossible without lab access. Their findings are published in a joint preprint and rapidly validated by independent researchers across Europe, creating immediate pressure for institutional recognition and funding.

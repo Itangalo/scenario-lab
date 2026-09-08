@@ -1,0 +1,7 @@
+- `emergent_regional_cyber_collective` -- first noted turn 9, listed in 4 turn(s) so far: The Nordic-Benelux group’s shared doctrine gains operational traction, conducting joint red-team exercises using sovereign AI. Its success pressures laggard states, but also fuels resentment over de facto two-tier integration.
+- `emergent_labour_market_stress_tests` -- first noted turn 9, listed in 4 turn(s) so far: Findings from pilot stress tests go public, with leaked summaries suggesting widespread entry-level job erosion. Labour ministers delay a joint response, citing political sensitivity.
+- US_POSTURE: RETRENCHMENT
+- PORTFOLIO CHARGE: Launch EU-Wide Critical Infrastructure Cyber Shield −3 (finished), Establish EU Red-Team Access Framework −3, Sovereign Compute Corridor −3, Launch EU-Wide Critical Infrastructure Cyber Shield Pilot Integration −2, Establish Joint Operational Doctrine −2, priority −1 = −13
+- PROPOSAL BONUS: none — new measure addresses an emergent trend, not a past incident
+- LEGITIMACY LENDS: none — public_sentiment (30.0) > eu_political_capital (11.0) is false
+- SOVEREIGNTY: 28.0 last turn, no category 4 completion, no capacity event, capability rose 1.5 < 2 → no decay = 28.0

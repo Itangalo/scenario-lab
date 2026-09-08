@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: Joint Resilience Activation −3, Prevent Strategic Access Denial −3, priority −1 = −7  
+PROPOSAL BONUS: Prevent Strategic Access Denial (cat 4, large) +5 — directly answers eu_frontier_access_denied-level risk after two failed sovereignty measures during opaque_reasoning and labour_displacement  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 15.0 last turn, no capacity event, capability rose 3.0 −1, no completion = 14.0  
+US_POSTURE: CONSOLIDATION  
+emergent_supply_chain_pressure — ASML faces intensified U.S. pressure on servicing exports to China; Dutch debate sovereignty vs. alliance; EU warns unilateral actions weaken collective leverage  
+emergent_compute_pact — mid-sized democracies explore compute pooling and mutual standards; no formal structure yet, but coordination grows  
+emergent_verification_breakthrough — first noted turn 9, listed in 1 turn(s) so far: A major AI lab announces a breakthrough in automated verification of model reasoning, enabling fast and reliable detection of deceptive or goal-directed behaviour in systems above capability 70. The method works post-hoc on already-deployed models and is quickly adopted by red teams globally. This shifts the balance between offensive and defensive actors in AI security, though it does not close the gap in interpretability.  
+emergent_digital_cohesion_initiative — first noted turn 9, listed in 1 turn(s) so far: Amid deepening public anger over AI-driven displacement and opaque decision-making, a coalition of mid-sized EU member states launches a joint initiative to build a sovereign, auditable AI stack based on open-weight models below capability 65. The effort is framed as a democratic alternative to both uncontrolled frontier systems and foreign dependence. Initial funding is modest but symbolically significant, drawing on emergency resilience allocations

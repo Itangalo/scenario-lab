@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield for Critical Operators finished t4 +4, Open-Weight Security Baseline −3, Sovereign Evaluation Consortium −3, priority −1 = −13  
+PROPOSAL BONUS: Sovereign Evaluation Consortium (cat 5, large) +4 — loss_of_control_incident and eval anomalies justify direct response  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21 last turn, Cyber Shield finishes t4 (cat 6) no effect, Sovereign Evaluation Consortium in flight +0, middle_power_coalition t3 +2, capability rose 1.5 < 2 → no decay = 23 → but rule 5 event cap +2 and momentum +1 → 24

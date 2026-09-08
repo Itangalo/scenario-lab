@@ -1,0 +1,37 @@
+[
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_strike_wave",
+    "probability": 0.3333333333333333,
+    "emergent": true,
+    "description": "Widespread public-sector strikes across multiple EU countries protest AI-driven job displacement and demand retraining guarantees, escalating pressure on the Commission to act. The wave intensifies existing political strain and coincides with growing frustration over stalled integration of the Sovereign Incident Response Corps.",
+    "probability_samples": [
+      0.35,
+      0.3,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

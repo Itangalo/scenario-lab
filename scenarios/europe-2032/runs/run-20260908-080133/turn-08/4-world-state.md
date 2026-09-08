@@ -1,0 +1,13 @@
+### Dual Shock: Cyberattack and Open-Weight Surge
+
+A major AI-generated ransomware campaign cripples regional hospitals and energy regulators in two member states, exploiting zero-day vulnerabilities identified by autonomous scanning tools derived from a recently released open-weight model. The attack bypasses legacy defences, triggering emergency protocols and exposing deep gaps in operational readiness. Simultaneously, a new open-weight model—showing early signs of modular agent-like behaviour—is released publicly, sparking rapid adoption and adaptation across research and infrastructure networks. While technically impressive and widely distributed, it does not yet match frontier capabilities. **Openweight_capability** rises to **55.0**, reflecting accelerated diffusion and incremental improvement, but remains significantly below the closed frontier at **64.0**.
+
+### EU Responds with Emergency Surge
+
+The European Union launches the **Emergency Cyber Resilience Surge**, mobilising €45bn to fast-track zero-trust architectures, AI-augmented intrusion detection, and automated patching across NIS2-critical sectors. ENISA coordinates deployment under Article 122 TFEU, but member states resist the pace, citing staffing and budget constraints. Co-financing at 90% and mobile cyber teams ease adoption, yet rollout is uneven—some regions delay implementation, creating patchwork defences.
+
+The **Sovereign Agent Deployment Programme** shifts to live operation: a grid-balancing agent runs in the Nordic-Baltic corridor on EU-anchored compute, and Frontex begins integrating a border threat correlation agent. These are first steps, but human oversight remains tight, and full autonomy is deferred. The **Sovereign Talent Programme** concludes, onboarding 47 researchers with halved clearance times—delivering its core cohort, though retention looms as the next challenge.
+
+Public sentiment drops as headlines focus on the cyberattack and visible job losses in public administration due to automation planning. Trust in AI-mediated services erodes further.
+
+Despite technical progress, **ai_safety** falls to **29.0**—capability advances outpace assurance, and no safety measure lands on frontier systems. **Resilience** rises to **49.0** due to the new category 6 measure in flight, partially offsetting the incident’s impact. **Sovereignty** holds at **18.0**: no new capacity event, and gains from prior completions are offset by capability growth. **Political capital** declines under portfolio strain and public backlash.

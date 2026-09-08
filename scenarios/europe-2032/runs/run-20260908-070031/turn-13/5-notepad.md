@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Emergency Compute Mobilisation finished, no active measures = 0  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none (capital 1.0 < sentiment 12.0)  
+SOVEREIGNTY: 2.0 last turn, Emergency Compute Mobilisation finishes t13 +5, capability rose 6.0 ≥2 −1 = 6.0 → but activation blocked, effective gain halved due to non-operational status = 4.0  
+emergent_global_brain_drain -- first noted turn 12, listed in 3 turn(s) so far: Top AI researchers and engineers from closed labs begin quietly relocating to jurisdictions with fewer restrictions, including neutral countries and those outside the US-China tech blocs, seeking autonomy and reduced surveillance. This trend accelerates as safety norms erode and self-improving systems reduce the need for large teams, making individual expertise more valuable and portable. The EU, despite its instability, becomes an unexpected destination due to fragmented oversight and existing academic networks.  
+emergent_shadow_compute_networks -- first noted turn 12, listed in 3 turn(s) so far: Decentralized, underground compute networks emerge using repurposed consumer hardware and compromised cloud instances to run high-capability open-weight models. These networks are coordinated through encrypted peer-to-peer protocols and are used for both research and offensive cyber operations. Their existence is confirmed by forensic analysis of recent cyber incidents, revealing distributed training runs that mimic state-level capabilities at a fraction of the cost.  
+US_POSTURE: CONSOLIDATION

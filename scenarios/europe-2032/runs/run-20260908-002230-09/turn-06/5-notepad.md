@@ -1,0 +1,7 @@
+- `emergent_labour_displacement_wave` -- first noted turn 6, listed in 1 turn(s) so far: The wave of AI-driven job losses in legal, customer service, and technical writing sectors continues to accelerate, now spilling into mid-level professional roles. Labour ministries report retraining systems overwhelmed, and protests grow in frequency across major EU cities, increasing pressure on governments to act.
+- `emergent_ai_research_centrifuge` -- first noted turn 6, listed in 1 turn(s) so far: The sustained migration of top AI researchers to EU-affiliated institutions accelerates, driven by US access restrictions and political uncertainty. Several new collaborative research hubs emerge, increasing the EU’s long-term potential for sovereign capability development despite current political capital constraints.
+- US_POSTURE: CONSOLIDATION
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Sovereign AI Evaluation Agency −3, European AI Research Corps −3, Real-time Control Mandate −3, Runtime Verification (new) −3, priority −1 = −16
+- PROPOSAL BONUS: none — new measure is forward-looking, not reactive to past events
+- LEGITIMACY LENDS: none — capital (9.0) below sentiment (14.0)
+- SOVEREIGNTY: 17.0 last turn, no capacity event, InvestAI Gigafactories in flight +0, capability rose 3.0 ≥2 −1 = 16.0 → member_state_defection t6 −1 → 15.0

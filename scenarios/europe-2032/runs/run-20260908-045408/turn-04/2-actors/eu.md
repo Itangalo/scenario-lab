@@ -1,0 +1,20 @@
+No statement changes.
+
+## Portfolio
+- ``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
+- ``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
+- ``Establish EU AI Incident Response Corps (category 6, costs 3 per turn, started turn 1, finishes on turn 5): A standing, cross-border technical unit with mandate to detect, investigate and contain AI-enabled attacks on critical infrastructure``
+- ``Launch Labour Transition Accelerator (category 7, costs 3 per turn, started turn 3, finishes on turn 5): A rapid-response retraining and wage-insurance programme targeting displaced mid-level professionals, with AI adoption incentives tied to employer contributions``
+- ``Expand EU Cyber Resilience Certification to AI-Critical Infrastructure (category 6, costs 3 per turn, started turn 4, finishes on turn 6): Mandate high-assurance, continuous monitoring and AI-specific hardening for all systems designated as critical under the revised NIS2 framework, with enforcement tied to EU funding and procurement access``
+
+## New measure
+**None this turn.**  
+We are holding space this turn because the portfolio is at capacity—four large concurrent measures already strain our thin political capital, and the cyber incident demands full focus on execution, not expansion.
+
+## Priority
+``Expand EU Cyber Resilience Certification to AI-Critical Infrastructure`` — because the **cyber_major_incident** has revealed that our defences are blind to AI-coordinated threats, and without credible resilience, public trust and institutional continuity will erode beyond repair, especially as openweight_capability reaches 45.0 and offensive tools become widely accessible.
+
+## In practice
+We are treating the ransomware cascade not as an anomaly but as a signal: AI is now an attack vector in its own right, and our defences must evolve accordingly. The expansion of the Cyber Resilience Certification is being fast-tracked under the NIS2 Directive, with ENISA drafting implementing acts by Q1 2028 to mandate AI-specific red-teaming, continuous anomaly detection, and air-gapped fallback protocols for all operators of essential services. Compliance will be tied to access to EU cohesion funds and public procurement preferences—a lever strong enough to compel action even in reluctant member states. We are already in talks with national CSIRTs in Belgium, Italy, and Luxembourg to integrate forensic findings from the recent attack into the baseline threat model. This is no longer about best practice; it is about survival of the network.
+
+At the same time, we are pushing the EU AI Incident Response Corps toward operational readiness under Article 172 TFEU, with pilot teams now active in six member states. The Corps will not wait for full mandate confirmation to begin cross-border coordination drills, which will simulate AI-driven cascading failures this summer. But we are clear-eyed: without compute sovereignty, even the best response unit will be fighting with outdated tools. The InvestAI Gigafactories remain our anchor for long-term independence, and we are escalating directly with the Dutch government to resolve the ASML blockade, warning that if technical support continues to be withheld under U.S. pressure, the EU will invoke Article 346 and treat compute infrastructure as a matter of strategic autonomy. On the domestic front, the Labour Transition Accelerator is moving—pilot cohorts in AI auditing and cybersecurity are being accredited in France and the Netherlands—but legal challenges in Germany and Ireland threaten to unravel the employer contribution model. We are offering flexibility on co-financing, but not on conditionality: automation must fund its own social cost. We are holding the line, but barely.

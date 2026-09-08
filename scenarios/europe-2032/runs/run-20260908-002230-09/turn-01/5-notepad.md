@@ -1,0 +1,6 @@
+- `emergent_labour_displacement_wave` -- first noted turn 1, listed in 2 turn(s) so far: Widespread reports emerge of AI-driven automation displacing workers in customer service, legal support, and technical writing across multiple EU countries, with firms citing cost savings from deploying LLM-based agents. The pace exceeds previous trends, triggering early warnings in labour ministries and fueling public debate on retraining and transition support.
+- `emergent_ai_research_centrifuge` -- first noted turn 1, listed in 2 turn(s) so far: Several leading AI researchers outside the US announce moves to EU-affiliated institutions, citing concerns over American access restrictions and export controls, and the EU's relatively open research environment. This marks the first measurable shift in talent flow, potentially accelerating domestic capability development if sustained.
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech Sovereignty Package −3, Emergency Resilience Hardening −3, priority −1 = −10
+- PROPOSAL BONUS: Emergency Resilience Hardening (cat 6, large) +3 — cyber_test_shot landed this turn and this answers it directly
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 22.0 last turn, no capacity event, InvestAI Gigafactories in flight +1, capability rose 2.5 −1 = 21.0

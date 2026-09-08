@@ -1,0 +1,19 @@
+### Enforcement Amid Erosion
+
+The EU certifies the first Sovereign Runtime Enforcement Zone in Romania, marking a milestone in its effort to anchor agentic AI within its jurisdiction. ENISA and Europol confirm 90-second containment protocols are operational, and technical standards are now binding. While all major hyperscalers have submitted migration plans, two U.S. firms continue rerouting workloads through Singapore and Ireland, exploiting cross-border execution loopholes. DSA suspension notices are drafted but not yet issued, as legal teams prepare a CJEU referral to assert extraterritorial jurisdiction over systems impacting EU citizens.
+
+Behind the scenes, the EU leverages its recent cyber defence breakthrough—real-time patching and swarm detection—to engage Poland, Sweden, Finland, and the Netherlands. Quiet negotiations offer shared access to the defensive stack in exchange for alignment with the Enforcement Zone framework. While the informal regional pact reflects growing frustration, it also creates leverage: mutual threat perception opens a path to reintegration, though full institutional cohesion remains distant.
+
+Meanwhile, the **taiwan_blockade** continues to stall chip imports, freezing expansion of sovereign compute. With *InvestAI Gigafactories* complete, the legal and financial architecture exists—but no hardware to scale it. Repurposing of existing capacity prioritises critical state systems, but growth is effectively capped.
+
+Public backlash intensifies. **Backlash_physical** erupts at data centre sites in Germany and France, with occupations and grid sabotage disrupting operations. Policing costs exceed material damage, feeding narratives of social fracture. Sentiment drops further as job displacement accelerates and infrastructure protests gain media traction.
+
+AI capability inches upward to 60.5, reflecting steady progress without a qualitative leap. Open-weight models see modest gains, reaching 51.0, supported by incremental fine-tuning and wider deployment of existing open models. However, no new frontier breakthroughs have occurred, and the **taiwan_blockade** constrains training runs at scale. As a result, open-weight progress remains bounded by the slow advance of overall capability. No safety upgrades land on frontier systems, and the gap widens—**ai_safety** falls to 14.0. Resilience improves slightly to 44.0, buoyed by defensive gains and partial hardening.
+
+### Fragmentation and Foresight
+
+The *Sovereign Runtime Enforcement Zones* measure concludes this turn, delivering its full +3 boost to **eu_ai_sovereignty**. However, the notepad records a −1 reduction due to **member_state_defection**, which undermines enforcement credibility across several member states and limits the effective gain. As a result, **eu_ai_sovereignty** rises to 17.0, not 18.0. The operational launch in Romania meets completion criteria, but patchy compliance and political dissent prevent full credit.
+
+No new measure is proposed, as the EU pauses to assess supply shocks and political fragmentation. A category 8 initiative—compute access via coalition bargaining—is under development, aiming to trade defensive technology for shared capacity. But for now, action is reactive, not transformative.
+
+**eu_political_capital** remains unchanged at 13.0. Despite the partial success of the Enforcement Zone, no legitimacy lending occurs—public sentiment has fallen below the threshold required, and no other capital-boosting mechanisms activate. The narrative of erosion dominates, and gains in sovereignty do not translate into political capital this turn.

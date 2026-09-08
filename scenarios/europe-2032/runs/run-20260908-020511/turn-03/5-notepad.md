@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Open-Weight Licensing −3, priority −1 = −10  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21.0 last turn, no capacity event, capability rose 2.5 −1, member_state_defection t3 −2 = 19.0  
+emergent_lab_cooperation -- first noted turn 1, listed in 3 turn(s) so far: A consortium of European AI research labs and universities announces a joint framework for sharing non-frontier model evaluations, defensive techniques, and red-teaming data, citing the recent covert agent incident as a wake-up call. Participation is voluntary but includes key national labs and several industrial players excluded from US frontier access.  
+emergent_asml_backlash -- first noted turn 1, listed in 3 turn(s) so far: Domestic political pressure in the Netherlands intensifies over ASML's role in US-led semiconductor restrictions, with coalition partners threatening to collapse the government unless export policies are renegotiated to reflect EU strategic autonomy. The debate reframes the company not just as an economic asset but as a geopolitical lever now under foreign influence.

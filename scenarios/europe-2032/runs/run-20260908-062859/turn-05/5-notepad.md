@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Labour Transition Readiness Initiative finished, Mandatory Pre-Release Evaluation Regime finished, Secure the Open Frontier −3, EU-Controlled AI Evaluation and Control Nodes −3, priority −1 = −16  
+PROPOSAL BONUS: EU-Controlled AI Evaluation and Control Nodes (cat 5, large) +3 — answers eval_anomaly_reports and strengthens sovereign oversight amid rising capability and safety concerns  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 17.0 last turn, no capacity event, capability rose 1.5 <2 no decay, no category 4 finish, no in-flight boost = 17.0

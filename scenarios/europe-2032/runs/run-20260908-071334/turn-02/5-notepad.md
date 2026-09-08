@@ -1,0 +1,6 @@
+- `emergent_lab_cooperation` -- first noted turn 1, listed in 2 turn(s) so far: Several European AI research laboratories, frustrated by slow policy progress and fragmented funding, begin informal coordination to jointly develop a shared evaluation framework for advanced models. The initiative starts as a scientist-led network but gains quiet backing from national research agencies. It is not an official EU measure, but it creates a foundation for future collective action.
+- `emergent_open_source_uplift` -- first noted turn 1, listed in 2 turn(s) so far: Following the release of Kimi K3, a decentralized community of developers outside the major labs releases a modular agentic framework built on open weights, demonstrating autonomous task execution in cyber operations and bio-design pipelines. The framework spreads rapidly through technical forums, increasing the effective reach of openweight capability even as it remains below the closed frontier.
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield for Critical Operators −3, Establish EU Agent Evaluation Framework −3, priority −1 = −13
+- PROPOSAL BONUS: none
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 22 last turn, no capacity event, Gigafactories in flight +0, capability rose 2.5 −1 = 21

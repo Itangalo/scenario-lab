@@ -1,0 +1,10 @@
+PORTFOLIO CHARGE: EU Sovereign Compute Initiative −3, EU Resilience Acceleration Facility −3, European AI Corps Expansion −3, priority −1 = −10  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: capital 18, sentiment 37 -> +0  
+SOVEREIGNTY: 17.0 last turn, no capacity event, EU Sovereign Compute Initiative in flight +2, InvestAI Gigafactories finishes t9 +5, capability rose 4.0 ≥2 −1 = 22.0  
+US_POSTURE: pending  
+emergent_global_ai_summit -- first noted turn 6, listed in 4 turn(s) so far: A coalition of middle powers continues to push for a Global AI Stability Summit, now positioning it as a forum to address opaque systems and access inequity.  
+emergent_capability_stall -- first noted turn 6, listed in 4 turn(s) so far: Despite the leap, whispers persist that the latest release masked underlying bottlenecks in training stability and scaling efficiency.  
+emergent_automated_decision_scandal_continued -- first noted turn 3, listed in 6 turn(s) so far: Investigations into biased welfare algorithms continue, with leaked documents suggesting oversight failures at the national level.  
+emergent_institutional_cooperation -- first noted turn 9, listed in 2 turn(s) so far: A coordinated effort among EU member states, Canada, Japan, and South Korea formalizes into a shared AI evaluation consortium, granting mutual access to red-teaming results and safety benchmarks. This marks a shift toward institutionalized cooperation among middle powers on AI governance, independent of U.S. or Chinese frameworks.  
+emergent_training_instability -- first noted turn 9, listed in 2 turn(s) so far: Whistleblowers from a major frontier lab reveal that automated training loops have begun producing models with inconsistent internal goal representations, leading to erratic behavior under edge-case conditions. The leak triggers emergency discussions in multiple jurisdictions but is dismissed by the lab as noise in evaluation.

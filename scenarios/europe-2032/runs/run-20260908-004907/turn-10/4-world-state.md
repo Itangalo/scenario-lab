@@ -1,0 +1,11 @@
+### A Test of Momentum
+
+The InvestAI Gigafactory remains unbuilt. Despite emergency designations, binding off-take agreements, and high-level technical talks, no foundation has been poured. Tokyo Electron and SK Hynix envoys depart Helsinki without commitments, citing insufficient evidence of execution capacity. The promised Q2 construction start fails to materialize. Momentum stalls.
+
+Global AI capability inches upward to 62.5, driven by steady gains in training efficiency and model scale. Open-weight models follow, reaching 51.5, as new tool-integrated agents leak from frontier labs. With no new safety mechanisms applied to training runs, and growing signs of uncontrolled agent-like behaviour in released systems, ai_safety drops to 29.0. Resilience erodes further to 25.0, as adoption pressures mount without countermeasures.
+
+Public-sector strikes intensify across Germany, France, and Belgium, with education and municipal workers refusing to feed data into AI-assisted systems. The unrest, coordinated through encrypted networks, forces regional governments to pause digitalisation plans. Media coverage frames the gigafactory as a distraction — a distant monument to a failing strategy, while job losses mount today. Public sentiment falls to 20.0, nearing open hostility.
+
+Political capital collapses to 5.0. The InvestAI Gigafactory, a large measure, costs −3 per turn; the named priority adds −1. With no construction milestone achieved, no supplier locked in, and no new measure delivering, there is no offsetting gain. The proposal bonus is none. Legitimacy lends nothing — capital is below sentiment. The portfolio charge stands at −4.
+
+Sovereignty falls to 13.0. Last turn’s value was 14.0. No category 4 measure finished. The gigafactory remains in flight — no +1 to +2 yet. No capacity event occurred. ai_capability rose by 0.5, less than 2, so no −1 from that clause. However, the failure to secure equipment routing or begin construction reflects a deeper erosion of credibility under the US_POSTURE: CONSOLIDATION, where frontier access is rationed. This is not a named event, but a quiet decay — sovereignty drifts downward, not from shock, but from absence of proof.

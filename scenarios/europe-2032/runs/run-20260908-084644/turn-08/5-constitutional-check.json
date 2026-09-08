@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 48.0 to 53.0 (+5.0) while `ai_capability` increased only from 59.5 to 60.5 (+1.0). This violates the rule that `openweight_capability` may not exceed `ai_capability` and, more critically, that both metrics are non-decreasing *and* `openweight_capability` cannot grow faster than `ai_capability` unless justified by narrative of catch-up through open innovation. No such narrative justification is provided for a +5.0 leap in openweight capability while frontier capability rose only +1.0. The increase also implies a reversal of prior stagnation without explanation (e.g., no new open-source breakthrough, release of a major model, or infrastructure activation).\n- Invariant 9 violated: `public_sentiment` decreased from 23.0 to 18.0 (−5.0), `eu_political_capital` from 18.0 to 13.0 (−5.0), and `resilience` from 50.0 to 48.0 (−2.0) — these are within bounds individually. However, the *combined* drop across multiple metrics is not the issue; rather, the **+5.0 jump in `openweight_capability`** exceeds the maximum plausible movement relative to `ai_capability`’s +1.0 under Invariant 2, which is a separate hard constraint. The magnitude of the `openweight_capability` increase itself is not bounded by the 25-point rule (which it satisfies), but it violates the *relative and directional* constraints in Invariant 2.\n- Invariant 2 further violated: There is no mention of any catastrophic physical destruction of compute, so the only allowed direction for `openweight_capability` is flat or increasing — but its increase must remain *below or equal to* `ai_capability` and follow a plausible accumulation path. Here, `openweight_capability` (53.0) remains below `ai_capability` (60.5), so the ceiling is not broken, but the *rate of growth* is implausibly high given the absence of any narrative about a major open release, coordinated open R&D surge, or new open compute infrastructure coming online. The notepad records no such enabling event."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 52.0 to 58.0 (a rise of 6.0 points) while `ai_capability` increased by only 0.5 (from 63.5 to 64.0). This violates the rule that `openweight_capability` may not exceed `ai_capability`. At no point can `openweight_capability` be greater than `ai_capability`, yet 58.0 > 64.0 is false — but 58.0 would exceed the allowable maximum of 64.0 only if the cap were strictly enforced. However, more critically, the increase in `openweight_capability` by 6.0 is implausibly large given the collapse of private investment in compute and the failure to field new sovereign tools — especially when `ai_capability` itself grows only slightly. The narrative provides no justification for such a large leap in openweight capability amid a global investment collapse and domestic fragmentation, making the movement inconsistent with both the invariant and the stated conditions.\n- Invariant 2 further violated: `openweight_capability` must not grow faster than `ai_capability` unless justified by sovereign infrastructure deployment, which failed this turn. The narrative explicitly states \"no sovereign alternative emerges\" and integration stalled, yet `openweight_capability` jumps sharply — which contradicts the invariant that this metric only rises (or stays flat) due to accumulation and cannot leap without a corresponding basis in compute growth or deployment. No such basis is provided.\n- Narrative violates Modelling Choice 8 (No telegraphing): The listing of emergent events in the notepad as persistently recurring (e.g., \"listed in 3 turn(s) so far\") implies a count toward activation or threshold, which constitutes telegraphing. The notepad should not track counts of mentions unless tied to an explicit gate condition; doing so implies a forecastable trigger, violating the prohibition on implying event probabilities or open gates. This format belongs in event evaluation logic, not in the narrative or notepad visible to the player."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

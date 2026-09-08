@@ -1,0 +1,367 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.22872330986320488,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.09000000000000001,
+    "probability_samples": [
+      0.09,
+      0.09,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8554047772667102,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.08336226103335365,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.43197341506899023,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5221258949103932,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.02,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4868384934718154,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.880020401105933,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.07985667805265362,
+    "triggered": true
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6296743271116841,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5117278754458795,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1801086342966839,
+    "triggered": false
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.04,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.4642695117369773,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1318141281732258,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.40977429344472893,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5120425469382919,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.06959381051643221,
+    "triggered": true
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6266491916352143,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9888104360718656,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6769575931429497,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7238882759797075,
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_scientific_embargo_on_ai_bio_research",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Following the bio_uplift_findings and the EU's Bio-Defense AI Consortium activation, a coalition of leading scientific journals and international research funders announces a voluntary embargo on publishing AI-assisted biological design studies that involve pathogenicity or human transmissibility. The move aims to slow dual-use diffusion but sparks debate over scientific freedom, with some labs complying and others accelerating work in opaque preprint channels.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7473369802869712,
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_rights_litigation_wave",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "In the wake of the automated decision scandal and the Transnational AI Accountability Forum's formation, a coordinated wave of class-action lawsuits is filed across five EU member states, arguing that algorithmic systems used in public services violated fundamental rights to explanation and appeal. The cases cite the EU Charter and the newly established liability pool, and if successful, could force a systemic overhaul of AI governance in welfare, housing, and immigration.",
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.423761450518774,
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_scientists_call_for_open_model_ban",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Following the latest openweight release and the confirmed harm from the EU benefits scandal, a coalition of leading AI safety researchers and biosecurity experts from outside the EU issues a public declaration calling for a global moratorium on open-sourcing models above capability level 55. The petition gains rapid traction in scientific circles and pressures governments to act, framing uncontrolled diffusion as an existential risk. While not binding, it shifts public and policy discourse significantly.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_eu_public_sector_ai_freeze",
+    "probability": 0.09999999999999999,
+    "emergent": true,
+    "description": "In response to the automated decision scandal and plummeting public trust, several major EU member states independently announce a freeze on new AI deployments in public services pending a full review of accountability frameworks. This de facto halts the rollout of AI in welfare, education and local government across the bloc, creating a patchwork of restrictions that the Commission must now reconcile. The move reflects deepening institutional caution amid political fragility.",
+    "probability_samples": [
+      0.0,
+      0.3,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_south_ai_access_initiative",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "A coalition of African, Southeast Asian and Latin American nations, frustrated by exclusion from frontier AI access and wary of dependency, launches a Global South AI Access Initiative. It pools resources to co-fund open-weight model hosting, local fine-tuning hubs, and shared defensive tooling, leveraging diplomatic ties with the EU’s open-source research alliance. The move accelerates diffusion but also fosters a new pole of distributed innovation outside the U.S.-China duopoly.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_winter_investment_pullback",
+    "probability": 0.09999999999999999,
+    "emergent": true,
+    "description": "Following repeated scandals, stalled adoption, and rising regulatory costs, major European venture funds announce a strategic pivot away from generative AI startups. Several high-profile AI firms downsize or restructure, and public markets devalue AI-exposed tech stocks. This marks the beginning of a broader 'AI winter' signal in private investment, with capital shifting toward niche automation and non-AI deep tech, slowing the pace of commercial experimentation in the region.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.3
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

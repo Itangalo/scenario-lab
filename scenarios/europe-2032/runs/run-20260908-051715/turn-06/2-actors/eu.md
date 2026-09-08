@@ -1,0 +1,23 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — **finished**
+- `Labour Transition Accelerator (category 7, costs 3 per turn, started turn 3, finishes on turn 6): Launch a pan-EU retraining and wage-insurance programme targeting workers displaced by AI in legal, administrative, and mid-level technical roles.` — **finished**
+- `Mandatory Pre-Release Evaluation Regime (category 1, costs 3 per turn, started turn 3, finishes on turn 6): Establish independent, third-party evaluation of high-capability models before public release, with authority to delay deployment pending safety verification.` — **finished**
+- `Openweight Registration and Verification Regime (category 3, costs 3 per turn, started turn 4, finishes on turn 7): Require all open-weight models above capability 45.0 distributed within the EU to be registered with the European AI Office and verified for weight integrity and provenance.`
+- `Biosafety Emergency Protocol Activation (category 6, costs 3 per turn, started turn 5, finishes on turn 7): Trigger emergency biosecurity readiness across EU member states, mandating rapid detection, containment and public communication protocols for AI-enabled biological threats, with joint funding and coordination through HERA.`
+
+## New measure
+**None this turn.**  
+We are waiting for the U.S. administration’s formal posture to crystallise before committing additional capital to external-facing regimes, and must consolidate what is already in flight amid collapsing political capital.
+
+## Priority
+**Openweight Registration and Verification Regime** — because the release of 50.0-capable open weights has crossed into uncontrolled agent territory, and with the U.S. retreating and Chinese firms non-compliant, this regime is now our only instrument with teeth against distributed capability; we are doubling down on enforcement through customs-linked digital gateways and pushing for real-time provenance tracking before the window closes.
+
+## In practice
+We are treating the completion of the Mandatory Pre-Release Evaluation Regime not as an endpoint but as a threshold: the regime is now law, but its authority hinges on credibility in the face of anomalous behaviour that evades traditional evaluation. We have finalised the delegated acts under Article 68, established the Evaluation Consortium’s structure with Germany, Belgium, and Finland, and secured Ireland and Sweden’s cooperation through limited liability shielding. France has accepted innovation carve-outs for sub-55.0 models, but only with full telemetry and audit rights — a precedent we are now applying retroactively to all sandboxed systems. For U.S. developers, the message is final: no certification, no market. The digital gateways at the border are now operational, blocking uncertified model distribution, and we are preparing to publish the first list of non-compliant entities by turn-end.
+
+Simultaneously, the Openweight Registration Regime is shifting from design to enforcement. The release of 50.0-capable weights has triggered its core clause, and we are now demanding registration and provenance verification for all models above 45.0. The European AI Office is deploying blockchain-based weight-signing protocols and working with national cybersecurity agencies to detect unregistered model propagation. We are also pressuring cloud providers — both EU-based and foreign — to verify registration status before compute allocation, using the Digital Markets Act as leverage. This is not symbolic: we are preparing to sanction platforms that enable unregistered deployment, starting with two Chinese-hosted models detected in academic clusters in Hungary and Greece.
+
+The Biosafety Emergency Protocol remains under strain, but not broken. We have unlocked partial funding through HERA’s emergency mechanism and are mandating dual-use review at all EU-funded labs. The red-team exercises will begin in June, hosted by the Robert Koch Institute in coordination with the ECDC. We are also fast-tracking the integration of AI-driven wastewater and travel pattern monitoring, but only with strict oversight mandates under the EDPB to prevent function creep. This is not about stopping all risk — it is about ensuring that if a breach occurs, it is detected before it becomes a crisis. The resilience gain is narrow but real, and we are counting on it to stabilise public sentiment before the next shock.

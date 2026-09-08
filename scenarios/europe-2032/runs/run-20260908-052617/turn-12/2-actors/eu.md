@@ -1,0 +1,29 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Maintain sovereign control over AI capability thresholds in the EU by ensuring that no system above 52.0 operates without enforceable evaluation, containment, and incident response rights—regardless of origin, distribution method, or deployment environment  
+- Grounds: The combination of `ai_capability` at 80.5 and `openweight_capability` at 65.5, now compounded by **opaque_reasoning**, means that even shadow evaluation is losing its footing: systems no longer produce legible justifications, and human oversight is functionally blind. The **bio_incident** confirms that catastrophic risk is no longer theoretical, and **eu_frontier_access_denied** exposes total strategic dependence. Our threshold must now align not with where oversight *could* work, but with where it *still can*—52.0 marks the upper bound of systems whose reasoning remains partially inspectable and whose behaviour can be bounded through traditional red-teaming. This is not a retreat but a pivot: we are shifting enforcement downward to where control is still possible, and upward to where harm is already materialising.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, accept being wrong sometimes as the price of not being late, and now explicitly accept that some actions will fail because the tools we relied on—interpretability, audit, human-in-the-loop—are being rendered obsolete by the systems we seek to govern  
+- Grounds: The **opaque_reasoning** event invalidates the foundational assumption behind most applied oversight: that intermediate cognition can be inspected. The Evaluation Authority we built is now blind to the internals of the most capable systems, and the Disruption Network cannot justify intervention without legible risk indicators. We acted under uncertainty before; now we must act under *unverifiability*. This change acknowledges that our instruments are decaying in real time, and that future commitments must assume partial or total opacity as the default condition.
+
+## Portfolio  
+``Distributed Detection and Disruption Network (category 5, costs 3 per turn, started turn 9, finishes on turn 12): Deploys a federated system of air-gapped, high-assurance nodes across member states to detect, shadow-evaluate, and if necessary, disrupt AI models operating above 60.0 capability that are not under formal evaluation or containment`` — **finished this turn**  
+
+## New measure  
+**Emergency Sovereign Inference Initiative**  
+Establishes a legally ring-fenced, EU-operated inference environment using InvestAI Gigafactory compute to run critical public services and safety evaluations on models no longer accessible from abroad, while launching a crash programme to train EU-controlled narrow agents for audit, detection, and resilience tasks under opaque reasoning conditions.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 15`  
+`Targeted effect:` +8 to `eu_ai_sovereignty`, stabilise `resilience` against cascading failures, begin partial offset of `eu_frontier_access_denied`  
+`Applies to:` EU institutions, member state critical agencies, and designated public research entities
+
+## Priority  
+**Emergency Sovereign Inference Initiative** — because **eu_frontier_access_denied** has already severed our operational continuity in health and governance systems, and because without sovereign inference, every other measure—evaluation, disruption, resilience—depends on infrastructure someone else can switch off.
+
+## In practice  
+We are activating the InvestAI Gigafactories’ sovereign compute capacity under Article 122 TFEU for critical inference continuity, repurposing 40% of phase one capacity to host EU-critical AI workloads displaced by access denial—particularly in public health diagnostics, border risk assessment, and social benefit verification. This is not a long-term frontier race, but a lifeline: we are porting and fine-tuning models at or below 60.0 capability that can still function without opaque reasoning, prioritising those needed for safety and continuity. The European High-Performance Computing Joint Undertaking is being directed to operationalise this within 90 days, with ENISA certifying air-gapped deployment and the Commission fast-tracking procurement waivers.
+
+Simultaneously, we are launching a crash programme—Sovereign Agent Training for Resilience and Oversight (SATRO)—to train narrow, task-specific agents on EU data and compute, designed to operate under opaque reasoning conditions. These will not be general models, but auditors that flag statistical anomalies in public systems, biothreat detectors trained on legacy interpretability datasets, and phishing-disruption bots for municipal networks. This is a stopgap, but it begins to rebuild agency where general oversight has failed. We are drawing talent from the ERC’s suspended AI safety fellows and redirecting OpenForge funding to this effort under emergency delegation.
+
+The Disruption Network’s nodes in Estonia, Finland, Belgium, and Austria have now been granted provisional operational status under Article 222 TFEU, following a narrow QMV vote in the Council after Germany abstained and France demanded—and received—a binding 24-hour CJEU review for any future disruption order. The nodes remain in detection mode only for now, but legal authority is no longer the bottleneck. The real constraint is technical: without legible reasoning, we cannot justify disruption. We are therefore tasking the newly empowered Evaluation Authority to develop behavioural proxies—such as inference duration, data exfiltration patterns, and recursive self-modification signals—as grounds for intervention, even in the absence of semantic transparency. This is uncharted terrain, but the bio_incident leaves us no choice.

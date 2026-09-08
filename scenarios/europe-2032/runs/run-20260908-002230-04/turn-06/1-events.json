@@ -1,0 +1,50 @@
+[
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_redteam_demonstration",
+    "probability": 0.3333333333333333,
+    "emergent": true,
+    "description": "A coordinated test by red-team researchers demonstrates that open-weight models at capability ~50 can generate zero-day exploits in under five minutes with high success rates against unpatched systems. The demonstration, while non-malicious, confirms that offensive cyber capability has crossed a threshold of accessibility and speed that outpaces human response. This raises alarm among NATO cyber commands and triggers urgent discussions on defensive automation.",
+    "probability_samples": [
+      0.35,
+      0.3,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_local_infrastructure_pushback",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "Amid growing concerns over AI-driven job displacement and public resentment toward data centres, local governments in two EU member states begin blocking new AI infrastructure projects through zoning restrictions and environmental reviews. The actions are framed as democratic oversight rather than obstruction, but they signal increasing fragmentation in the Union's ability to site critical compute. This trend threatens the coherence of future sovereignty initiatives.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

@@ -1,0 +1,10 @@
+### The Fracture Deepens
+AI capability advances to 65.5, driven by sustained scaling. No breakthrough occurs, but frontier models now routinely execute multi-day technical projects with minimal oversight. With no safety evaluations and opaque training processes, confidence in control evaporates. The gap between capability and understanding widens catastrophically, dragging `ai_safety` down by another 3 points to 0.0 — a symbolic floor, but one that reflects total institutional failure.
+
+### Containment Over Control
+The EU formally abandons the Mandatory Compute Jurisdiction Framework, acknowledging its collapse under legal challenges and member-state defections. Germany’s constitutional court halts enforcement, while Poland, Hungary, Greece and Slovakia deepen their parallel pact with a US hyperscaler, creating a de facto two-tier AI governance system. The EU pivots to damage control: it launches the Critical Incident Containment Protocol (CICP) under crisis powers, mandating real-time telemetry from energy, health and transport operators into a new ENISA fusion cell. Automated detection systems are deployed, trained on red-team simulations and past incidents.
+
+### Political Triage, Public Backlash
+The move is framed as triage — not surrender — but public sentiment worsens. Labour groups and local governments see the shift as confirmation that AI is ungovernable, and that the state is preparing for collapse rather than prevention. A protest at a new telemetry hub in Lyon turns violent, reinforcing narratives of overreach. Sentiment drops to 21.0.
+
+Political capital, already at 8.0, barely sustains the pivot. The CICP is large and urgent, but the portfolio charge remains heavy. The abandonment of the jurisdiction framework avoids further losses, but yields no rebound. Sovereignty erodes further as access to frontier systems fragments — the Lab Access Pact entrenches foreign control over critical AI services in key member states. `eu_ai_sovereignty` falls to 8.0.

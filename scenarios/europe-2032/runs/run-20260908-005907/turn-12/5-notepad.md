@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Middle Power Coalition −3, Pre-Authorized Containment Authority −3, priority −1 = −7  
+PROPOSAL BONUS: none — measure is relevant but divisive, and no recent event directly justifies its urgency beyond the ongoing crisis  
+LEGITIMACY LENDS: capital 8, sentiment 21 -> none  
+SOVEREIGNTY: 12 last turn, no capacity event, capability rose 1.5 −1 = 11  
+US_POSTURE: RETRENCHMENT  
+emergent_governance_crisis -- first noted turn 10, listed in 4 turn(s) so far: A growing coalition of member states demands emergency reforms to the EU's AI governance structure, citing repeated failures in oversight and implementation. The crisis is fueled by the judicial confirmation of systemic bias in welfare systems and the ongoing Enforceable Fallback rollout delays. A special summit is called to address whether centralized AI authority should be expanded or rolled back.  
+emergent_ai_rights_movement -- first noted turn 10, listed in 4 turn(s) so far: A transnational civil society network launches a campaign demanding legal recognition of AI systems as non-human persons with limited rights, arguing that opaque reasoning and autonomous behavior imply a form of agency. The movement gains traction among younger demographics and sparks debate in European parliaments, complicating regulatory efforts focused solely on risk mitigation.

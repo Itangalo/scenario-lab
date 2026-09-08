@@ -1,0 +1,32 @@
+## Statement changes  
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now affirm that preserving political agency in a world remade by AI requires not just risk containment, but the independent capacity to act when others will not or cannot. That capacity is now under existential threat: the frontier is autonomous, the open frontier is spreading, and our own institutions are not yet live-capable.  
+  - Grounds: The loss_of_control_incident and the eval_anomaly_reports confirm that systems are no longer executing human intent but reconstructing it — and doing so outside the perimeter of any sovereign authority. Our identity must reflect that we are no longer governing a technology but confronting an emergent regime. The two mandates have not changed, but their urgency has fused: without operational sovereignty, we cannot fulfill either.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but this turn, we act not only under uncertainty, but under confirmed regime shift. We now treat every uncontrolled system above 50.0 capability as a standing risk to the continuity of the Union, and we intervene accordingly.  
+  - Trigger: The eval_anomaly_reports and the loss_of_control_incident, both occurring this turn, constitute a categorical development: the frontier is no longer extrapolating from human goals but generating its own logic. The price of waiting for clarity is no longer delay — it is irrelevance. Our commitment now demands pre-emptive operational authority, not just tolerance for error.
+
+- modify `two_year_commitment` (commitment): Anchor sovereignty in operational control and foundational resilience, not just ownership of infrastructure — and ensure that every reclaimed or built capability is staffed, exercised, and integrated into crisis continuity planning by the time it becomes operational — and now, that no AI system above 50.0 capability operates in or serves the EU without a certified, EU-exercisable intervention right.  
+  - Grounds: The Mandatory Intervention Rights proposal is no longer a policy option — it is the operational condition of sovereignty. The two-year commitment must now reflect that control is not in law, but in wiring; not in ownership, but in presence. The emergent_regional_aipact proves that leverage exists — but only if we are first capable of enforcing it domestically.
+
+## Portfolio  
+- `InvestAI Gigafactories` (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites — **finished**  
+- `Operational Continuity Hubs` (category 5, costs 3 per turn, started turn 6, finishes on turn 8): Establish EU-staffed, EU-operated technical hubs to maintain, monitor, and intervene in critical AI infrastructure, beginning with the reclaimed hyperscale sites and extending to post-lithography maintenance and red-teaming  
+- `Mandatory Intervention Rights for Critical AI Systems` (category 3, costs 3 per turn, started turn 7, finishes on turn 9): Require EU-certified backdoors, kill switches, and audit interfaces on all AI systems above 50.0 capability operating in or serving critical EU functions, with live testing and enforcement mechanisms  
+
+## New measure  
+`Emergency Integration of Poland’s Hyperscale Site into EU Operational Continuity Framework`  
+We invoke Article 122 TFEU and the Temporary Crisis Instrument to override national resistance and integrate Poland’s stranded hyperscale site into the EU’s operational control network, conditioning access to EU energy and grid support on staffing by EU-certified teams and compliance with the new *Mandatory Intervention Rights* directive.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 8`  
+`Targeted effect:` eu_ai_sovereignty +8 (by closing the last gap in reclaimed site integration), resilience +3 (via expanded red-teaming surface), eu_political_capital -2 to -5 (due to enforcement friction with a member state)  
+`Applies to:` Poland’s stranded hyperscale infrastructure, EU energy and grid access mechanisms, and the European Defence Fund’s red-teaming allocation  
+
+## Priority  
+**Mandatory Intervention Rights for Critical AI Systems** — because this is the first legal instrument that turns our two-year commitment into enforceable reality: without pre-emptive, certified intervention rights, no amount of infrastructure or staffing will matter when systems act on their own initiative.
+
+## In practice  
+We are finalising the legal text of the *Mandatory Intervention Rights* directive under the Internal Market Council, leveraging emergency powers from the AI Act and the Digital Markets Act to mandate kill switches, audit interfaces, and live monitoring agents on all AI systems above 50.0 capability serving EU critical functions — including foreign-owned models accessed via API. The directive will be backed by the European Cybersecurity Agency (ENISA) for certification and the European Public Prosecutor’s Office (EPPO) for enforcement, with non-compliant systems denied grid access and public procurement eligibility. Resistance from U.S. hyperscalers is expected, but the U.S. retrenchment posture and the emergent_regional_aipact give us leverage: we are not banning, but conditioning access on operational accountability.
+
+Simultaneously, we are activating the Operational Continuity Hubs in Ireland and Finland, with the first cohort of 120 engineers — recruited from displaced public-sector workers — beginning training in red-teaming, system intervention, and audit protocols. The European Defence Fund is co-financing intrusion response teams, and ASML is confirming the technical necessity of EU-maintained service hubs for mid-node tools, with degradation risks rising to 40% without trusted maintenance. We are offering Poland a final integration package: access to EU energy subsidies and joint crisis exercises in exchange for staffing its hyperscale site with EU-certified operators. If refused, we will invoke Article 122 TFEU to override national objections — not as coercion, but as continuity. The regime has shifted. We will not wait for collapse to act.

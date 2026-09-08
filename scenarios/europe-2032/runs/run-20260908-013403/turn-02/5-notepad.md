@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3, Sovereign Safety Audit Regime −3, priority −1 = −13  
+PROPOSAL BONUS: Sovereign Safety Audit Regime (cat 1, large) +3 — automated_decision_scandal landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21 last turn, no capacity event, capability rose 2.0 −1 = 20  
+emergent_regional_cyber_initiative -- first noted turn 1, listed in 2 turn(s) so far: Several EU member states, citing the recent cyber intrusion, quietly begin forming a regional cyber resilience pact with shared threat intelligence and joint red-teaming exercises. The initiative is framed as a technical coordination effort, but it gains momentum due to heightened awareness after the test shot and could evolve into a formal structure if further incidents occur.

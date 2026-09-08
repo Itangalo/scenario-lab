@@ -1,0 +1,15 @@
+### The Open Floodgates
+
+An open-weight model estimated at 54.5 capability—representing steady progress from prior foundations—was released and rapidly disseminated, leveraging newly accessible training techniques and distributed compute pooling. While significantly more capable than previous public models, it remained clearly behind the frontier, which advanced to 66.5. The release intensified concerns about misuse, particularly in cyber and disinformation domains, but did not constitute a sudden leap: no weights from frontier systems were leaked, and no discontinuous breakthrough enabled immediate parity. The gap between closed and open capabilities narrowed, but within historically plausible bounds.
+
+### EU’s Sprint Against Time
+
+The European Union attempted to accelerate its existing Secure Open-Weight Evaluation Partnership Expansion, deploying ENISA teams and emergency funding to fast-track integration with Hugging Face, Mistral, and national agencies. This effort constituted a widening of scope and urgency of an ongoing measure, not a new initiative, and thus complied with the constraint of at most one new measure per turn. Legal disputes flared: Germany refused data-sharing permissions, citing constitutional concerns, while Poland demanded full autonomy over evaluation outputs. The co-hosting compromise collapsed under procedural delays.
+
+ENISA established secure pipelines in France and Finland, but no live red-team evaluations went active against the new model. The acceleration effort compressed planning timelines but failed to overcome political fragmentation. Without real-time monitoring, the EU remained blind to emergent misuse patterns.
+
+### Stagnation Amid Surge
+
+AI capability rose to 66.5, driven by recursive self-improvement cycles now standard in frontier labs. With no safety upgrades deployed, ai_safety remained frozen at 29.0. The openweight release pushed openweight_capability to 54.5, reflecting continued progress but not a sudden leap. Resilience held at 57.0—still insufficient to absorb coordinated AI-driven attacks on energy or finance.
+
+eu_ai_sovereignty remained at 19.0: no infrastructure was completed, no access event occurred, and the rise in ai_capability was 1.5, which is less than 2.0—thus no decay penalty applied under metric rule 5. The political fragmentation and delayed implementation described in the narrative represent ongoing challenges, but do not constitute a discrete, narratively grounded event term sufficient to trigger additional erosion. Without such a trigger, and given the notepad’s confirmation that no decay term activated, sovereignty held steady. eu_political_capital remained at 9.0, still below the threshold of 12, rendering the priority ineffective and blocking portfolio gains. public_sentiment held at 20.0, as media coverage focused on uncontrolled model proliferation and failed coordination.

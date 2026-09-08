@@ -1,0 +1,348 @@
+{
+  "scenario": "Europe 2032 — Verification-bounded",
+  "total_turns": 13,
+  "final_metrics": {
+    "ai_capability": 72.0,
+    "openweight_capability": 61.5,
+    "ai_safety": 14.0,
+    "resilience": 43.0,
+    "eu_ai_sovereignty": 11.0,
+    "eu_political_capital": 15.0,
+    "public_sentiment": 13.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 54.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 39.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 40.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 56.0,
+        "openweight_capability": 48.0,
+        "ai_safety": 34.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 37.0,
+        "public_sentiment": 37.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 57.5,
+        "openweight_capability": 49.5,
+        "ai_safety": 36.0,
+        "resilience": 43.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 30.0,
+        "public_sentiment": 37.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 59.0,
+        "openweight_capability": 50.5,
+        "ai_safety": 38.0,
+        "resilience": 46.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 25.0,
+        "public_sentiment": 37.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 60.5,
+        "openweight_capability": 51.5,
+        "ai_safety": 37.0,
+        "resilience": 49.0,
+        "eu_ai_sovereignty": 16.0,
+        "eu_political_capital": 20.0,
+        "public_sentiment": 32.0
+      }
+    },
+    {
+      "turn": 6,
+      "metrics": {
+        "ai_capability": 62.0,
+        "openweight_capability": 51.5,
+        "ai_safety": 37.0,
+        "resilience": 49.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 18.0,
+        "public_sentiment": 27.0
+      }
+    },
+    {
+      "turn": 7,
+      "metrics": {
+        "ai_capability": 63.5,
+        "openweight_capability": 52.5,
+        "ai_safety": 35.0,
+        "resilience": 47.0,
+        "eu_ai_sovereignty": 17.0,
+        "eu_political_capital": 22.0,
+        "public_sentiment": 25.0
+      }
+    },
+    {
+      "turn": 8,
+      "metrics": {
+        "ai_capability": 65.0,
+        "openweight_capability": 54.0,
+        "ai_safety": 33.0,
+        "resilience": 45.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 19.0,
+        "public_sentiment": 23.0
+      }
+    },
+    {
+      "turn": 9,
+      "metrics": {
+        "ai_capability": 67.0,
+        "openweight_capability": 56.0,
+        "ai_safety": 28.0,
+        "resilience": 47.0,
+        "eu_ai_sovereignty": 17.0,
+        "eu_political_capital": 18.0,
+        "public_sentiment": 23.0
+      }
+    },
+    {
+      "turn": 10,
+      "metrics": {
+        "ai_capability": 68.5,
+        "openweight_capability": 57.0,
+        "ai_safety": 23.0,
+        "resilience": 48.0,
+        "eu_ai_sovereignty": 16.0,
+        "eu_political_capital": 18.0,
+        "public_sentiment": 18.0
+      }
+    },
+    {
+      "turn": 11,
+      "metrics": {
+        "ai_capability": 69.5,
+        "openweight_capability": 58.0,
+        "ai_safety": 20.0,
+        "resilience": 47.0,
+        "eu_ai_sovereignty": 15.0,
+        "eu_political_capital": 17.0,
+        "public_sentiment": 16.0
+      }
+    },
+    {
+      "turn": 12,
+      "metrics": {
+        "ai_capability": 70.5,
+        "openweight_capability": 59.0,
+        "ai_safety": 15.0,
+        "resilience": 45.0,
+        "eu_ai_sovereignty": 14.0,
+        "eu_political_capital": 16.0,
+        "public_sentiment": 14.0
+      }
+    },
+    {
+      "turn": 13,
+      "metrics": {
+        "ai_capability": 72.0,
+        "openweight_capability": 61.5,
+        "ai_safety": 14.0,
+        "resilience": 43.0,
+        "eu_ai_sovereignty": 11.0,
+        "eu_political_capital": 15.0,
+        "public_sentiment": 13.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "adoption_success",
+    "ai_investment_collapse",
+    "automated_decision_scandal",
+    "bio_incident",
+    "bio_uplift_findings",
+    "campaign_security_hawk",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_retrenchment",
+    "emergent_eu_eval_pool",
+    "emergent_local_infrastructure_pushback",
+    "emergent_redteam_demonstration",
+    "eu_frontier_access_denied",
+    "eval_anomaly_reports",
+    "export_control_escalation",
+    "joint_threat_response",
+    "labour_displacement",
+    "member_state_defection",
+    "openweight_frontier_release",
+    "safety_breakthrough",
+    "supply_chain_coercion",
+    "taiwan_tension_rise",
+    "us_china_agreement",
+    "verification_widens"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 1,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 1,
+      "id": "safety_breakthrough"
+    },
+    {
+      "turn": 2,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 2,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 2,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 2,
+      "id": "adoption_success"
+    },
+    {
+      "turn": 2,
+      "id": "automated_decision_scandal"
+    },
+    {
+      "turn": 3,
+      "id": "ai_investment_collapse"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_eu_eval_pool"
+    },
+    {
+      "turn": 4,
+      "id": "campaign_security_hawk"
+    },
+    {
+      "turn": 4,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 5,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 5,
+      "id": "labour_displacement"
+    },
+    {
+      "turn": 5,
+      "id": "election_retrenchment"
+    },
+    {
+      "turn": 6,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 6,
+      "id": "us_china_agreement"
+    },
+    {
+      "turn": 6,
+      "id": "emergent_redteam_demonstration"
+    },
+    {
+      "turn": 6,
+      "id": "emergent_local_infrastructure_pushback"
+    },
+    {
+      "turn": 7,
+      "id": "eu_frontier_access_denied"
+    },
+    {
+      "turn": 8,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 8,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 9,
+      "id": "verification_widens"
+    },
+    {
+      "turn": 9,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 9,
+      "id": "joint_threat_response"
+    },
+    {
+      "turn": 10,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 10,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 10,
+      "id": "labour_displacement"
+    },
+    {
+      "turn": 10,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 10,
+      "id": "safety_breakthrough"
+    },
+    {
+      "turn": 12,
+      "id": "bio_incident"
+    },
+    {
+      "turn": 12,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 13,
+      "id": "supply_chain_coercion"
+    }
+  ],
+  "last_updated": "2026-09-08T00:48:43.697273",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_sovereignty_backlash",
+      "description": "Regional governments in Bavaria and Wallonia, emboldened by the EU's paralysis and the legal challenge to the Sovereign Compute project, begin formal proceedings to establish independent regional AI infrastructure with bilateral partnerships to non-EU providers. This fractures the Union's already weak coordination and signals that member states no longer expect Brussels to deliver strategic autonomy.",
+      "first_turn": 13,
+      "last_turn": 13
+    },
+    {
+      "id": "emergent_ai_winter_sentiment",
+      "description": "Following the AI-designed pathogen incident and widespread job losses, major European media outlets and civil society groups launch a coordinated 'AI Winter' campaign calling for a moratorium on frontier model deployment, public-sector AI use, and data centre expansion. The movement gains traction in national parliaments, with draft legislation introduced in three member states.",
+      "first_turn": 13,
+      "last_turn": 13
+    }
+  ],
+  "completed_at": "2026-09-08T00:49:06.927605"
+}

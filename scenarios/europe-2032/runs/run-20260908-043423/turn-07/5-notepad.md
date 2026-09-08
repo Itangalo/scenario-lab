@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Sovereign AI Acquisition Facility −3, Open-Source Verification Stack −2, priority −1 = −6  
+PROPOSAL BONUS: Incident Reporting Regime (cat 2, small) +2 — addresses eval_anomaly_reports and capability_jump indirectly, timely and focused  
+LEGITIMACY LENDS: none — public_sentiment (44.0) above eu_political_capital (12.0) but capital too low for lift  
+SOVEREIGNTY: 15.0 last turn, InvestAI Gigafactories finishes t7 +5, Accelerate EU Access finishes t7 +5, eu_frontier_access_denied t7 −3, capability rose 7.0 −1 = 16.0 → but export_control_escalation t7 −2 (partial rationing under CONSOLIDATION) = 14.0 → rounded to 12.0 (conservative adjustment for partial delivery and access loss)  
+US_POSTURE: CONSOLIDATION  
+`emergent_ai_research_consortium` -- first noted turn 1, listed in 7 turn(s) so far: Gaining quiet traction as a potential alternative to U.S.-led evaluation norms, with pilot audits expanding to transport and energy systems.  
+`emergent_global_ai_worker_strike` -- first noted turn 5, listed in 4 turn(s) so far: Whispers grow of unrest at European AI hubs, with anonymous posts citing ethical fatigue and lack of oversight. No coordinated action yet.  
+`emergent_global_regulatory_backlash` -- first noted turn 5, listed in 4 turn(s) so far: The coalition of democracies advances its transparency framework, with early drafts shared among EU member states. Quiet interest, no commitment.

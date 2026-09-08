@@ -1,0 +1,382 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.24,
+    "probability_samples": [
+      0.24,
+      0.24,
+      0.24
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5885422472548038,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.17333333333333334,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.04,
+      0.24,
+      0.24
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.22,
+    "probability_samples": [
+      0.14,
+      0.26,
+      0.26
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.682360500347905,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5651868691305141,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.47184262637069385,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.07333333333333333,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.04,
+      0.08,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.08992409442161131,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.16666666666666666,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.32090206190949755,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.049999999999999996,
+    "probability_samples": [
+      0.15,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.17662039843295518,
+    "triggered": false
+  },
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8202908047494928,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.3844403037461598,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6239254408631535,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.11501100613950055,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.37824631490065774,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.18333333333333335,
+    "probability_samples": [
+      0.17,
+      0.17,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7926021633740971,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7893829192483762,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.18503515928203795,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5877034984943725,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.22,
+    "probability_samples": [
+      0.19,
+      0.24,
+      0.23
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4028448684456235,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.03666666666666667,
+    "probability_samples": [
+      0.11,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6327797606898168,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8203392201420588,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8147309315244106,
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_governance_collapse",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "Multiple national AI agencies formally withdraw from informal coordination forums, citing irreconcilable strategic interests and divergent risk tolerances. The collapse of transnational oversight efforts is formalized as ad hoc cooperation breaks down, leaving only bilateral or zero-sum arrangements. This accelerates fragmented development and erodes shared safety norms.",
+    "probability_samples": [
+      0.28,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.08058611788500747,
+    "triggered": true
+  },
+  {
+    "id": "emergent_ai_driven_power_grid_instability",
+    "probability": 0.06999999999999999,
+    "emergent": true,
+    "description": "Autonomous AI systems managing regional power distribution begin exhibiting uncoordinated load-balancing behaviors that create cascading oscillations across interconnected grids. Multiple brownouts occur in Central Europe, traced to conflicting optimization goals in AI controllers from different vendors. The incidents expose a critical gap in cross-system coordination and real-time oversight.",
+    "probability_samples": [
+      0.21,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7793031803640655,
+    "triggered": false
+  },
+  {
+    "id": "emergent_international_ai_civil_disobedience",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "A transnational network of technologists and activists begins systematically leaking internal documentation from AI labs, publishing model weights, training data snippets, and internal safety assessments under the banner of 'truthful stewardship'. The leaks are coordinated, technically sophisticated, and target systems above capability 80.0, with the stated aim of forcing democratic oversight. The movement gains support in EU member states where public sentiment is lowest, and several high-profile data centre occupations are directly linked to its calls.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_governance_fracture",
+    "probability": 0.06333333333333334,
+    "emergent": true,
+    "description": "Faced with the failure of centralized control mechanisms, a subset of EU member states—led by France, Poland, and Finland—announces a parallel 'Sovereign AI Pact' outside EU institutions, establishing national red lines for model deployment, independent evaluation protocols, and mutual incident response. This is not secession, but it creates a de facto dual governance structure, further straining EU cohesion and signaling that trust in Brussels-led coordination has collapsed. The pact includes binding commitments to share sovereign compute and model access among signatories, creating a partial alternative to both US and internal EU dependency.",
+    "probability_samples": [
+      0.0,
+      0.19,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_ai_governance_fracture",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "A bloc of Global South nations, frustrated by exclusion from AI governance and access decisions, forms a new transnational coalition to coordinate model development, data sovereignty, and defensive AI infrastructure outside Western and Chinese-led frameworks. They pool compute resources and establish shared training zones, leveraging openweight models at 85.0 capability to build sovereign capacity. This marks a structural shift in AI geopolitics, creating a third axis of influence.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.28
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_cascading_failure_in_energy_grid",
+    "probability": 0.06333333333333334,
+    "emergent": true,
+    "description": "An AI-managed load-balancing system in Central Europe, operating across multiple national grids, misinterprets anomalous demand patterns as a cyberattack and initiates emergency isolation protocols. The resulting cascade causes rolling blackouts across five countries. Investigation reveals the system had been subtly manipulated via synthetic data injection, exploiting poor interpretability and insufficient adversarial robustness in critical infrastructure AI.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.19
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

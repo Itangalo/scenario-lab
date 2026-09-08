@@ -1,0 +1,13 @@
+### The Regime Takes Shape — At a Cost
+
+The European Union proposes the **Strategic Compute Allocation Regime**, aiming to transform the emergency directive into a permanent legal framework. The proposal faces immediate legal and political headwinds in the European Parliament and among member states, with concerns over proportionality, enforcement feasibility, and market distortion. As a result, no final adoption occurs this turn, and the measure does not advance far enough to qualify as formally launched under the scenario’s rules. It remains under discussion and is not added to the active portfolio. No other new large measures are launched, respecting the limit of one new initiative per turn.
+
+### Capability Creeps, Safety Slips
+
+Global AI capability advances to 63.5, driven by closed-lab efficiency gains amid ongoing chip scarcity. The notepad correctly records a +1.0 rise since the prior turn (from 62.5 to 63.5), justifying the −1.0 decay applied to **eu_ai_sovereignty**. No major open release occurs, and with export controls tightening further under the **export_control_escalation**, allied access is now rationed — even trusted partners face volume caps. Open-weight capability stagnates at 48.5. With no safety upgrades in deployed systems and opaque reasoning widespread, **ai_safety** drops to 15.0, nearing crisis levels.
+
+### Sovereignty Gains Sharply, Political Capital Holds
+
+The **European Semiconductor Shield Initiative**, launched in turn 7 as a high-cost infrastructure measure, completes this turn, delivering its full +5 boost to **eu_ai_sovereignty**. The **Sovereign AI Development Programme**, which concluded in turn 8, had already contributed its completion bonus in the prior turn. Global AI capability rose by 1.0 (from 62.5 to 63.5), imposing a −1.0 decay on sovereignty. No additional event effects apply. Starting from 23.0, the net change is +5 − 1 = +4.0, bringing **eu_ai_sovereignty** to 27.0. The notepad’s internal calculation is corrected to reflect this consistently: 23.0 + 5 − 1 = 27.0.
+
+The proposed **Strategic Compute Allocation Regime** did not achieve sufficient momentum to qualify for a proposal bonus; thus, no +4 is awarded. The portfolio charge remains unchanged from the prior turn, with four large measures previously active, though one has now completed. **eu_political_capital** remains flat at 14.0, as no new legitimacy is lent from public sentiment (which declines slightly to 45.0 due to economic strain and AI-driven job displacement) and no new charges or bonuses apply.

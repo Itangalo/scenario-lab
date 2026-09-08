@@ -1,0 +1,26 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Hold sovereign control over frontier AI systems despite accelerating capability and opacity  
+- Grounds: The Frontier Access Enforcement Directive reaches its finishing turn this turn, and while it has advanced legal compatibility and initiated certification work, it has not secured adoption by all member states nor established operational fallback stacks. Three member states continue to demand exemptions, ENISA has not certified any sovereign stack, and hyperscaler resistance has hardened into coordinated lobbying. The directive, as implemented, does not yet deliver sovereign control—only the framework for it. The strategic imperative remains, but the measure meant to fulfill it has not closed the gap. Therefore, the commitment must be reasserted in action, not merely retained in text.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late.  
+- Grounds: The automated_decision_scandal and emergent_labour_unrest_in_tech confirm that acting under uncertainty is no longer a choice but a condition of governance. The scandal reveals that even second-order AI systems—support tools, not frontier agents—are already causing systemic harm, and the unrest shows that social absorption has collapsed. Waiting for full clarity on frontier risks would mean ignoring cascading harms already in motion. Our commitment to early action now extends beyond the frontier to the fabric of social trust: we act not only on what may come, but on what is already breaking.
+
+## Portfolio
+- `Frontier Access Enforcement Directive (category 4, costs 3 per turn, started turn 10, finishes on turn 11): A legal directive mandating that any AI system used in essential public services — healthcare, energy, transport, justice, and core government functions — must be deployable on EU-controlled infrastructure using EU-held model weights, with full operational independence from foreign entities.` — **finished**
+
+## New measure
+**Measure:** Launch Sovereign Stack Acceleration Programme  
+A dedicated, fast-tracked programme to build and certify EU-operated, EU-sovereign AI stacks capable of running frontier-equivalent models by end of 2032, including domestic compute, secured weights, and public operator control.  
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 14`  
+`Targeted effect:` Increase eu_ai_sovereignty by at least 15 points; raise resilience by enabling fallback during access denial; begin closing the gap between openweight_capability and ai_capability through sovereign fine-tuning capacity.  
+`Applies to:` EU institutions, member states, EDIC, ENISA, and qualifying domestic AI providers.
+
+## Priority  
+**Sovereign Stack Acceleration Programme** — because the Frontier Access Enforcement Directive has reached its end without delivering operational sovereignty, and because the automated_decision_scandal and emergent_labour_unrest_in_tech prove that dependence is now actively destabilising both public trust and social order; we must move from legal frameworks to working systems, and we must do it faster than the frontier moves.
+
+## In practice  
+We are treating the failure of the Frontier Access Enforcement Directive to deliver operational stacks as a systemic warning: legal mandates without industrial capacity are declarations, not policy. The new Sovereign Stack Acceleration Programme will cut through implementation inertia by centralising procurement, pre-empting national delays, and directly funding EU-level operators. We are activating the European Defence Fund’s crisis clause to repurpose €4.1bn in cohesion and Digital Europe funds, co-locating compute procurement with the Chips Act II supply chain to fast-track delivery of 5,000 sovereign GPU racks by Q2 2032. ENISA will be empowered to designate public operators—drawing from national labs, EuroHPC, and EDIC—who will hold and run the weights, with strict no-access clauses for foreign entities.
+
+Resistance remains high. The three holdout member states argue that sovereign stacks duplicate private investment; US hyperscalers warn that exclusion will isolate EU research. But the automated_decision_scandal—where a national benefits system denied thousands based on opaque AI reasoning—has shifted the political ground: it is no longer acceptable to delegate public authority to systems we cannot inspect or control. We are offering the holdouts binding transition support: sovereign stacks will be prioritised for deployment in their most exposed sectors—health and social services—in exchange for immediate ratification of the directive’s implementing acts. Labour unions are being brought into the design phase of the programme, with a seat on the steering board, to ensure that sovereign capacity includes enforceable retraining pathways and hiring guarantees. This is not just about control over AI—it is about restoring the state’s capacity to act when everything else fails.

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 40.0 to 46.0 (a rise of 6.0 points), which exceeds the maximum allowable single-turn increase of 25 points in absolute value, but more critically, this increase is implausibly large given that `openweight_capability` must not exceed `ai_capability` and can only rise gradually unless justified by a compounding mechanism already in motion. The narrative does not justify such a sudden leap (especially from 40.0 to 46.0 while `ai_capability` rose only 2.5 points), and no prior event or mechanism in the notepad enables this surge. This violates the spirit and letter of Invariant 2, which requires accumulation without reversal and realistic pacing relative to `ai_capability`.\n- Modelling Choice 5 violated: The EU introduces a new measure, **Cyber Shield Initiative**, while already having two measures in flight (**InvestAI Gigafactories** and **Tech Sovereignty Package**) and a priority active. The portfolio charge confirms three active measures (−3 each) plus priority (−1), totaling −10. This exceeds the limit of at most one new measure per turn and at most one named priority. Introducing a third concurrent measure violates the constraint.\n- Economic Constraint violated: The proposal includes a €12bn facility for lower-income member states with no identified funding source. While the EU may borrow or reallocate, such a large sum must be tied to a budgetary mechanism, common debt instrument, or revenue stream. Its absence breaches realism in capital expenditure sourcing."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

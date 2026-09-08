@@ -1,0 +1,43 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_displacement_wave",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "Preliminary data from several EU member states shows a sharp rise in white-collar job displacement in legal, administrative, and technical writing roles, attributed to AI adoption. The trend is not yet a crisis, but trade unions and education ministries begin sounding alarms about retraining capacity.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_global_observatory_push",
+    "probability": 0.19333333333333336,
+    "emergent": true,
+    "description": "A coalition of middle powers and academic institutions launches a formal proposal for an open, multilateral AI observatory to monitor capability trends and safety practices, arguing that unilateral control has failed to prevent distributed risk. The proposal gains early support from non-aligned states but faces resistance from both the US and China.",
+    "probability_samples": [
+      0.2,
+      0.2,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_alliance",
+    "probability": 0.2233333333333333
+  }
+]

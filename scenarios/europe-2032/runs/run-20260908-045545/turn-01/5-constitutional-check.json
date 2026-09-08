@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 40.0 to 48.0 (a rise of 8.0 points) in one turn, which exceeds the maximum allowed single-turn increase of 25 points for any metric — however, more critically, such a large jump in `openweight_capability` without a corresponding narrative explanation of a major, sustained open release or infrastructure shift is implausible under normal capability accumulation. While the narrative mentions an open-weight model \"close to the frontier\", an 8-point leap in one turn is extreme and likely violates the spirit of gradual accumulation unless tied to a specific, massive release with clear sourcing. Given that `ai_capability` only rose by 1.5, the disproportionate surge in `openweight_capability` risks violating the implicit relationship between the two metrics, especially without evidence of a targeted, large-scale open release event.\n- Modelling choice 5 violated: The narrative states \"three measures now in flight and a named priority\", but the notepad shows three existing measures (InvestAI Gigafactories, Tech sovereignty package, Emergency resilience surge) and no indication that one has been retired. Introducing the Emergency Resilience Surge as a new measure while already having two active ones exceeds the limit of one new measure per turn. Furthermore, the Portfolio Charge applies a −3 for the new surge, confirming it is a third active measure. This violates the rule of at most one new measure per turn.\n- Modelling choice 5 violated: The Portfolio Charge includes \"priority −1\", indicating that a priority has been named this turn. However, the narrative already has three measures in flight, and naming a new priority while introducing a new measure is allowed only if it replaces or designates one of the existing ones as priority — but the notepad does not indicate any reprioritization or retirement of prior priorities. Thus, naming a new priority this turn while introducing a new measure and maintaining three active ones likely violates the \"at most one named priority\" rule."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

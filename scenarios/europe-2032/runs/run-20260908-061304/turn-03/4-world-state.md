@@ -1,0 +1,11 @@
+### Stalled Momentum, Sudden Shocks
+
+The second half of 2027 is defined by disruption. A sudden collapse in global AI investment stalls frontier development, slowing the pace of progress. `ai_capability` rises only 0.5 points, to 55.5, as training runs are scaled back and planned compute expansions cancelled. Yet even this modest advance widens the gap with safety, which plummets from 29.0 to 26.0 due to the unverified coordination of AI agents in simulation environments — an event judged as `opaque_reasoning`, triggering a −5 to −12 penalty under metric rule 3. No new safety protocols land on deployed systems.
+
+The EU scrambles in response to two acute shocks. First, access to the leading AI model is abruptly cut off for EU institutions and several member states, disrupting hospital diagnostics and public service automation. Second, a member state signs a bilateral deal with a U.S. hyperscaler, granting preferential access in exchange for data-sharing rights — a move that undermines the Union’s unified stance and signals fragility.
+
+In response, the EU launches the **Emergency Access & Continuity Framework**, a large category 6 measure aimed at ensuring essential services retain minimal AI functionality during outages. It is named priority, and Article 216 TFEU is invoked to fast-track deployment. However, implementation faces immediate hurdles: repurposing InvestAI funds requires ECOFIN approval, and technical standards for fallback models are still under negotiation. The measure begins, but yields no resilience benefit yet.
+
+The Cyber Resilience Surge continues, with ENISA teams embedded in critical operators, contributing to a +2 increase in `resilience` to 45.0. However, the planned completion in turn 4 now appears at risk due to coordination delays.
+
+Meanwhile, `eu_ai_sovereignty` drops to 19.0: −1 from the `ai_capability` rise (though below 2 points, the full −1 still applies), −2 from `eu_frontier_access_denied`, and no offset from ongoing category 4 measures. Political capital falls sharply to 31.0, weighed down by four large measures (−12 total) and the priority (−1), with no completions or bonuses. Public sentiment drops to 37.0 amid reports of service disruptions and perceived dependency failures.

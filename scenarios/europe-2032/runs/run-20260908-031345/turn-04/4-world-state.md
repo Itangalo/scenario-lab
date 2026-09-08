@@ -1,0 +1,17 @@
+### The Open Floodgates
+
+Global AI capability advanced to 62.0, driven by algorithmic refinements and compressed training cycles, as the frontier pushed into early agent-level autonomy. A major open-weight model was released, claiming partial parity with closed systems on narrow benchmarks, and saw rapid uptake—hundreds of thousands of downloads in the first week. This expanded access significantly, but full functional equivalence remains months away, with deployment constrained by limited access to high-performance compute. Most adopters rely on donated or repurposed clusters, and energy bottlenecks and chip shortages continue to throttle scaling. Openweight_capability rose to 47.0, reflecting growing distribution and adaptation, but not an instantaneous leap to frontier parity.
+
+The EU doubled down on institutional control, prioritising the **Establish Public Evaluation Unit for Open-Weight Models** as its sole leverage point. The proposal, introduced in a prior turn and already reflected in the portfolio charge, was fast-tracked under emergency provisions. However, staffing remains a critical hurdle—technical experts from member states are being seconded gradually, and integration of tools and protocols is incomplete. Full operational capacity is not expected before mid-2029. A proposal for pre-release audits was discussed but deferred; no new measure was formally introduced, respecting institutional bandwidth limits.
+
+Industrial ambitions faltered. The €8bn reallocation to sovereign startups remains stalled, with the ECJ hearing now delayed without a confirmed date. No disbursements have occurred. The claim that "only €4bn remains conditionally active" is retracted—funding remains fully blocked pending legal resolution. Hungary maintains its challenge, and Poland’s concessions failed to break the deadlock. The Tech sovereignty package remains held in the Environment Council, though Sardinia’s green-energy-linked compute project gains informal support as a potential pilot.
+
+Cyber hardening under **Hardened Critical Infrastructure Zones** continues at a slow pace—only 40% of member states have implemented red-teaming—with the Commission now linking cohesion funds to compliance. Resilience holds at 37.0, as delays in rollout are offset by improved coordination protocols.
+
+Public sentiment edges down to 33.0, as fears of uncontrolled AI spread. Local opposition to data centres intensifies, and the Commission’s assertive stance on evaluation draws criticism as overreach, undermining legitimacy.
+
+AI safety rises slightly to 31.0, as the emerging evaluation framework begins shaping internal practices, though no safeguards yet reach deployed systems. Sovereignty falls to 20.0, penalised by capability growth and the failure to secure access. Political capital drops to 19.0—less sharply than proposed—reflecting the portfolio charge from five ongoing measures (−15) and the priority modifier (−1), partially offset by the avoided cost of not launching a second new policy. The narrative of overload persists, but the restraint on new initiatives prevents deeper erosion.
+
+### Fractured Unity
+
+A quiet realignment emerged among Nordic and Benelux states, exploring joint infrastructure outside formal EU channels. The signal grew stronger: differentiated integration may soon become necessity.

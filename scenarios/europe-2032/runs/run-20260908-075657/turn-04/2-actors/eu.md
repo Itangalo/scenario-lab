@@ -1,0 +1,31 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Secure independent AI capacity to anchor European strategic autonomy, but pivot from maximalist compute build-out to a dual-track strategy: accelerate sovereign access to existing global capability through binding partnership terms, while conditioning further Gigafactory funding on evidence of sustained frontier acceleration.  
+- Trigger: The **capability_plateau_evidence** event and **ai_investment_collapse** have materially altered the landscape: the assumed trajectory of ever-accelerating capability no longer holds, and several private compute partnerships under the Tech Sovereignty Package have collapsed. Continuing to fund €200bn in Gigafactories on worst-case assumptions risks wasting scarce capital on idle infrastructure.  
+- Grounds: We remain committed to sovereignty, but the path must now reflect market contraction and uncertain returns. Binding access to foreign frontier systems—through legal guarantees of uninterrupted service, audit rights, and weight security—is now as strategic as domestic compute. We preserve the long-term build-out, but gate its expansion on observable inflection points in capability growth, aligning with our recalibrated risk posture under `act_under_uncertainty`.
+
+## Portfolio  
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`  
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`  
+- `Cyber Shield for Critical Infrastructure (category 6, costs 3 per turn, started turn 1, finishes on turn 4): Launch a binding directive to harden essential services against AI-enabled intrusions, with mandatory detection, isolation and response protocols — finished this turn`  
+- `Operational Sovereignty Framework (category 4, costs 3 per turn, started turn 2, finishes on turn 8): Establish legal, technical, and institutional control over EU-resident high-capability AI systems, ensuring uninterrupted access and enforceable governance even if foreign-owned`  
+- Canceled measure: EU AI Safety Institute Activation and Mandate Expansion. The delegated act was blocked by the Council Legal Service over competence disputes, and the planned recruitment cannot proceed without audit powers. We shift to a scaled-back, resilience-aligned safety monitoring role under ENISA for now.
+
+## New measure  
+**Sovereign Access Partnerships with Frontier Labs**  
+Establish legally binding agreements with non-EU frontier AI developers to guarantee uninterrupted, auditable access to their most capable systems for EU essential functions, under EU jurisdictional control.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 6`  
+`Targeted effect:` Increases eu_ai_sovereignty by 10–15 points by securing guaranteed access to frontier capability even without domestic training, while raising ai_safety by enabling pre-deployment audits and weight security enforcement under EU law. Reduces risk of service denial during geopolitical stress.  
+`Applies to:` Non-EU frontier AI developers operating in or supplying the EU market, with enforcement through licensing under the AI Act and integration with the Operational Sovereignty Framework.
+
+## Priority  
+**Sovereign Access Partnerships with Frontier Labs** — because the collapse of private investment and plateauing frontier growth make brute-force compute build-out unsustainable, and because without guaranteed access, the EU cannot act even if it decides to; this turn, we must lock in leverage before the labs’ bargaining power shifts again.
+
+## In practice  
+This turn, we finalise the **Cyber Shield for Critical Infrastructure**, adopting the directive in the Council during the March session. The Presidency secures passage by offering phased enforcement: healthcare providers gain a 12-month grace period for isolation protocols, and energy operators may implement detection upgrades in two stages, funded by a €900m top-up from the Digital Europe Programme. ENISA launches the AI-powered threat-sharing platform on 1 April, onboarding 18 national CERTs in the first month. The platform becomes operational with live feeds from pilot sectors—transport and finance—creating a de facto baseline for future biosecurity integration, especially as the **emergent_resilience_investment_wave** begins to show in national procurement.
+
+Simultaneously, we pivot from the stalled Safety Institute to a pragmatic alternative: under Article 68 of the AI Act, we task ENISA with establishing a **Frontier System Monitoring Unit**, using existing reporting obligations to collect redacted safety summaries and incident logs from providers above 50.0 capability. This is not the audit power we wanted, but it creates a sovereign data stream and a technical team that can evolve into full evaluation capacity when legal barriers fall. We fund this with a €120m reallocation from the delayed Gigafactory disbursement, approved by the Budget Committee on grounds of urgency.
+
+Most critically, we open negotiations on **Sovereign Access Partnerships** with three frontier labs—two US-based, one Singaporean—leveraging market access, supply chain cooperation, and the Anti-Coercion Instrument. The Commission drafts model terms: labs must host EU-controlled instances of their frontier models on EU soil, with weight security certified to a state-actor standard, and grant the EU Safety Office real-time access to training logs and agent behaviour. In return, we offer fast-track compliance status, liability shielding for authorised use, and coordination on export controls. The first talks convene in May under the Digital Markets Act enforcement framework, with the Vice-President for Values and Transparency leading the delegation. This is not ownership—but it is control, and for now, control is sovereignty.

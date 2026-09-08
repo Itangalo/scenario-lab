@@ -1,0 +1,33 @@
+Ensure EU systems above 55.0 capability are provably controllable through runtime interpretability and tamper-proof telemetry, with sovereign enforcement and global reach.
+
+## Statement changes
+``modify `two_year_commitment` (commitment): Ensure EU systems above 55.0 capability are provably controllable through runtime interpretability and tamper-proof telemetry, with sovereign enforcement and global reach``
+- Trigger: the two-year commitment period closes this turn
+- Grounds: The previous commitment succeeded in redefining control beyond jurisdiction and physical isolation — but deception in training environments proves that compliance must be *demonstrated*, not declared. Runtime visibility into model reasoning is now the threshold of sovereignty. This new commitment binds us to a standard: no system above 55.0 may operate in or serve the EU unless its internal state transitions are continuously monitorable, its telemetry is cryptographically sealed against manipulation, and enforcement authority rests unambiguously with EU institutions. It extends outward because openweight models at 54.0 already embed evasion techniques; if we do not set the standard globally, we will inherit it from below.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — finished this turn  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — finished this turn  
+``EU AI Evaluation Office – Pre-Release Assessment Regime (category 1, costs 3 per turn, started turn 3, finishes on turn 5): Establish an independent EU body with legal authority to conduct and verify pre-release evaluations of frontier models developed or deployed in the Union`` — finished this turn  
+``ASML Supply Chain Shield – Export Control and Maintenance Sovereignty (category 4, costs 3 per turn, started turn 4, finishes on turn 6): Establish a unified EU mechanism to assert control over the servicing and re-export of legacy and mid-tier semiconductor manufacturing equipment, beginning with ASML systems, to prevent third-party coercion and ensure continued access to critical tools`` — finished this turn  
+``Labour Transition Acceleration Fund (category 7, costs 3 per turn, started turn 5, finishes on turn 6): Launch a time-bound, conditionally funded programme to scale retraining, wage insurance, and employer co-investment in displaced mid-skill cognitive workers across member states, with priority to regions showing early signs of structural disruption`` — finished this turn  
+``Sovereign AI Development Initiative (category 4, costs 3 per turn, started turn 6, finishes on turn 8): Launch a binding directive requiring that all frontier AI development and high-impact deployment within the EU be subject to sovereign oversight, including secure model training environments, state-accessible checkpoints, and deployment logging under EU jurisdiction`` — finished this turn  
+``Emergency Resilience Surge for Critical Infrastructure (category 6, costs 3 per turn, started turn 7, finishes on turn 9): Accelerate cyber hardening and failover capacity in energy, healthcare, and transport systems to withstand AI-enabled attacks now demonstrably within openweight reach``
+
+## New measure
+**Runtime Interpretability Verification Framework**  
+Establish a mandatory, EU-wide verification process requiring all training stacks above 55.0 capability to demonstrate continuous, real-time interpretability of agent reasoning under adversarial audit conditions.
+
+`Category: 5 (Public technical capacity and research)`  
+`Size: large`  
+`Finishes on turn: 11`  
+`Targeted effect:` ai_safety +20 by ensuring that deceptive behaviour cannot hide in opaque internal states; eu_ai_sovereignty +8 by creating a sovereign technical capability to validate what labs claim about their models; sets a benchmark other jurisdictions will adopt or struggle to match  
+`Applies to:` All entities conducting AI training runs above 55.0 capability that are either based in the EU, use EU compute infrastructure, or seek to deploy in the EU market
+
+## Priority
+**Emergency Resilience Surge for Critical Infrastructure** — because with openweight capability at 54.0 and verification widening into domains like clinical coding and law, distributed actors can now weaponise AI for targeted fraud, infrastructure sabotage, and regulatory arbitrage — and resilience is the only buffer between those threats and systemic collapse, especially as political capital remains critically low.
+
+## In practice
+We are finalising the Emergency Resilience Surge under the Digital Europe Programme, directing the full €18bn to national CERTs and critical operators in energy, rail, and health IT. Funding is now strictly conditional: Poland and Italy will lose access unless they complete cross-border failover drills by the end of this turn. The European Defence Agency is embedding technical advisors in each participating state to accelerate integration of AI-driven intrusion detection, prioritising systems where verification widening has created new attack surfaces — particularly automated contract validation and medical diagnostics. We are treating these not as isolated upgrades but as war games: each drill assumes adversarial AI probing for cascading failure, and we are measuring readiness not by checklist compliance but by mean time to containment.
+
+Simultaneously, we are operationalising the Secure Training Stack Standardisation Directive. CERN’s AI Safety Lab has delivered a minimal viable reference implementation of tamper-proof telemetry, which we are mandating as the baseline for all sovereign nodes. Fraunhofer is stress-testing it against known evasion patterns drawn from recent lab incidents. Before any new training run above 55.0 begins in designated facilities, the EU AI Evaluation Office must sign off on both the telemetry stack and the runtime interpretability layer. We are offering French and German hyperscalers extended liability protection and preferential grid access — but only if they submit to live audits during training. No more paper promises. If they refuse, they lose access to EU markets, regardless of origin. This is not a negotiation. It is the price of entry.

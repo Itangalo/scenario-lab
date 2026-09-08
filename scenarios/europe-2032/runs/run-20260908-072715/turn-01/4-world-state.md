@@ -1,0 +1,15 @@
+### Frontier Leaps, Assurance Cracks  
+A sudden capability jump reshapes the AI landscape in late 2026. The release of a new model generation — trained in secret and demonstrating reasoning leaps across multiple domains — pushes `ai_capability` sharply upward. This discontinuity, combined with ongoing steady progress, totals a +4.0 increase. However, no corresponding safety improvements landed with the release. The jump bypassed standard evaluation protocols, and developers admit they cannot fully interpret the new system’s reasoning pathways. With `ai_safety` already fragile, the gap widens dangerously, triggering a −5 penalty from the `capability_jump` event. In the absence of countermeasures or interpretability advances, confidence erodes further, contributing an additional −2.0 decline, grounded in systemic risk accumulation rather than a discrete event.
+
+### Access Cut, Sovereignty Strained  
+Simultaneously, the EU is locked out of the latest frontier model with no explanation or appeal. Hospitals relying on AI diagnostics, research consortia, and public planning agencies face immediate disruption. The move, widely seen as arbitrary, underscores Europe’s dependence. This `eu_frontier_access_denied` event directly reduces `eu_ai_sovereignty` by −2. Though the EU responds with emergency compute plans, the damage is immediate and political.
+
+### Cyber Intrusion Reveals Gaps  
+A sophisticated intrusion, detected only by chance, had embedded itself in critical infrastructure across continents — including two EU grid operators. While systems held, the breach exposes detection shortcomings. With no finished resilience measure in place and `ai_capability` rising, `resilience` drops by −1.
+
+### EU Responds — At a Cost  
+The Commission fast-tracks sovereign compute under emergency powers, reframing data centres as strategic infrastructure. Member states resist energy allocation and environmental waivers, but concessions secure initial momentum. The new large category 4 measure begins, but per constitutional rule, high-cost measures require at least two full turns before full implementation. Thus, only partial political capital is consumed this turn, with further costs deferred. The measure incurs an initial portfolio charge of −3 political capital. With *InvestAI Gigafactories* as priority (−1), and two other measures in flight (−3 and −3), the portfolio charge totals −10. A proposal bonus of +4 is earned — the recent access denial and cyber intrusion justify urgent action — softening the net loss.
+
+Public messaging frames dependence as existential risk, but backlash grows over energy equity and disruption. `Public_sentiment` dips slightly as skepticism hardens.  
+
+Open-weight development sees moderate gains from diffusion of older architectures and community tooling improvements, but no open release of frontier weights occurs. Thus, `openweight_capability` rises to 44.0 — a +4.0 increase, matching the growth in `ai_capability` — preserving the invariant that openweight capability does not outpace frontier capability without explicit narrative justification.

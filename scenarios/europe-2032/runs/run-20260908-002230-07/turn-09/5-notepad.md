@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Sovereign Red-Teaming Network −3 (finished), Hardened Critical Infrastructure Directive −2 (finished), Cyber Defence Acceleration Fund −2 (finished), Public AI Recall Authority −3, priority −1 = −6  
+PROPOSAL BONUS: Public AI Recall Authority (cat 3, large) +5 — answers automated_decision_scandal directly, a severe internal-origin event with ongoing political fallout, and establishes first real enforcement mechanism  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 15.0 last turn, no capacity event, capability rose 6.0 −1 = 14.0  
+US_POSTURE: ALLIANCE  
+emergent_ai_refugee_movement -- first noted turn 7, listed in 4 turn(s) so far: A growing number of AI safety researchers and whistleblowers from non-EU labs, citing untenable working conditions and lack of oversight, publicly relocate to EU-based institutions under newly expanded scientific visas. The influx is concentrated in Germany and the Netherlands, creating a de facto sanctuary effect and prompting diplomatic friction with the US and UK over intellectual property and export controls.

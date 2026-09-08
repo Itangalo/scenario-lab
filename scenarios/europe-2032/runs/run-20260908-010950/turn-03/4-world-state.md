@@ -1,0 +1,12 @@
+### Steady Ascent, Widening Gaps  
+Global AI capability rose to 55.0, driven by incremental gains in reasoning efficiency and system integration. Frontier labs reported longer autonomous operation in research workflows, particularly in materials design and code synthesis, though no breakthrough-level jumps occurred. No corresponding safety upgrades were deployed, and internal audits later revealed that some AI-designed molecules had bypassed screening protocols—information not made public. The gap between capability and control deepened, dragging `ai_safety` down to 23.0.
+
+Open-weight models reached 44.0, sustained by fine-tuning advances and broader deployment in bioinformatics. The European biofine-tuning research continued to draw scrutiny, with security analysts warning that accessible models could be repurposed for targeted biological design, though no misuse was confirmed.
+
+### Sovereignty and Sentiment  
+The EU advanced its Accelerated Permitting Zones, finalising the legal act designating the first three zones. Environmental safeguards and workforce integration plans were mandated, aiming to pre-empt legal challenges. While implementation remains slow, the framework is now legally binding, contributing modestly to sovereignty. With no major milestone reached, in-flight momentum yielded +1, and no access event occurred, `eu_ai_sovereignty` rose to 24.0.
+
+The Public-Service AI Adoption Accelerator was formally launched, scaling proven AI tools in healthcare, education, and judiciary administration across 15 regions. Visible public benefits from prior pilots—shorter waiting times, faster case processing—were now attributed to EU-level coordination, boosting public sentiment to 48.0. The initiative, a small category 9 measure, is expected to improve service resilience and anchor demand to EU-controlled systems.
+
+### Political Costs  
+The portfolio remained crowded: three large measures and one small in flight. The named priority—Accelerated Permitting Zones—added an extra cost. Political capital declined to 35.0 after a full portfolio charge of −13, partially offset by a +3 proposal bonus for launching a measure that directly scales a recent success. No legitimacy lending occurred, as sentiment remained below capital.

@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: EU Sovereign Access Guarantee −3, Sovereign Talent Acceleration Programme −3, priority −1 = −7  
+PROPOSAL BONUS: none — no new measure proposed  
+LEGITIMACY LENDS: none — public_sentiment (34.0) > eu_political_capital (27.0), but rule 6 does not apply the +1 to +2 term when capital is below 20 and priority has no effect  
+SOVEREIGNTY: 11.0 last turn, InvestAI Gigafactories finishes t7 +5, capability rose 0.5 → no decay term = 16.0 → adjusted to 14.0 due to partial substitution and ongoing dependence  
+US_POSTURE: CONSOLIDATION  
+emergent_bio_uplift_signal -- first noted turn 6, listed in 2 turn(s) so far: A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 4 turns.

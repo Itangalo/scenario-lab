@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 53.0 to 62.0 (+9.0), which exceeds the maximum possible growth given that `ai_capability` only increased by 1.5 (from 62.5 to 64.0). Since `openweight_capability` cannot exceed `ai_capability` and must accumulate gradually, a jump of 9.0 points in one turn — especially one that nearly closes the gap with the frontier — is implausible without a narrated, discrete enabling event (e.g., a major leak or coordinated open release). The narrative mentions an open-weight release but does not justify a near-frontier capability leap of this magnitude in a single turn.\n- Modelling choice 5 violated: The narrative states that \"four large measures\" are active (InvestAI Gigafactories, Operational Sovereignty Framework, EU Sovereign Audit Mandate, and Cyber Shield), but Constitutional Constraint 5 limits the EU to at most one new measure per turn and at most one named priority. While some measures may have been initiated in prior turns, the notepad shows three measures currently charged: InvestAI Gigafactories (−3), Operational Sovereignty Framework (−3), EU Sovereign Audit Mandate (−3), plus a priority (−1). This implies multiple active measures beyond what is allowed. The presence of four large measures simultaneously violates the constraint on measure proliferation.\n- Modelling choice 7 violated: `eu_political_capital` drops from 16.0 to 8.0 (−8.0), a large decline, but the narrative attributes this to \"four large measures and a priority, with no visible wins.\" However, the constitutional guard requires that `eu_ai_sovereignty` and `eu_political_capital` be distinct stocks and prevents sovereignty from dominating political capital dynamics. Here, the drop in political capital is implicitly tied to sovereignty-related measure overload, but without a clear alternative mechanism (e.g., public backlash, international friction), the conflation risks treating the two metrics as the same stock. The narrative fails to differentiate the sources of political capital erosion beyond sovereignty-related overreach, violating the principle that these stocks must be free to move apart."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

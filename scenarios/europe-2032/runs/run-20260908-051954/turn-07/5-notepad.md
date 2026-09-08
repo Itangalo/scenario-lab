@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Sovereign Resilience Corridor −3, Activate EU Jurisdictional Enforcement Units −2, priority −1 = −6  
+PROPOSAL BONUS: Activate EU Jurisdictional Enforcement Units (cat 1, small) +2 — responds to eval_anomaly_reports and reinforces containment after Sovereign Containment Framework completion  
+LEGITIMACY LENDS: none (capital 8.0 < sentiment 21.0)  
+SOVEREIGNTY: 15.0 last turn, InvestAI Gigafactories finishes t7 +5, capability rose <2 −1, no capacity event = 17.0  
+US_POSTURE: RETRENCHMENT  
+- `emergent_lab_cooperation` -- first noted turn 7, listed in 1 turn(s) so far: The informal alliance of European AI laboratories expands into a structured network with shared anomaly databases and joint red-teaming exercises, now including non-EU members Switzerland and Norway. Participation is driven by mutual concern over uncontrolled agentic behaviour and the limitations of national oversight. The network begins publishing anonymized incident logs, increasing transparency without compromising security.

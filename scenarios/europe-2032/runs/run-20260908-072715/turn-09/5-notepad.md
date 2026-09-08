@@ -1,0 +1,10 @@
+PORTFOLIO CHARGE: Sovereign Compute Sprint −3, Emergency Observatory −2, priority −1 = −6  
+PROPOSAL BONUS: Emergency Observatory (cat 5, small) +2 — addresses capability_jump and eval_anomaly_reports directly, though scope is limited  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 15 last turn, Sovereign Compute Sprint in flight +0 (no completion), capability rose 3.5 −1, export_control_escalation t9 −1 = 14  
+US_POSTURE: CONSOLIDATION  
+emergent_ai_winter_signals -- first noted turn 6, listed in 4 turn(s) so far: Investor pullback intensifies, with two major European AI startups announcing layoffs and pivots to narrow revenue-generating tools. M&A talks accelerate among mid-tier labs.  
+capability_jump: A discontinuous advance is released or demonstrated. The frontier moves by more in one release than in the preceding two years, and everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 6.
+openweight_frontier_release: An open-weight release lands within months of the closed frontier rather than a year. It is downloaded hundreds of thousands of times in the first week, and whatever capability it carries is now on private hardware permanently and beyond recall. `openweight_capability` moves to within 5–10 points of `ai_capability` at a stroke.
+export_control_escalation: Chip and model export controls tighten again. Either allied buyers keep access on volume licences while everyone else is cut off, or the controls are drawn so tightly that allies are rationed alongside adversaries – decide which at the time from the standing American posture and from what the Union has built.
+automated_decision_scandal: An AI-supported decision system in social insurance, policing or the courts is found to have systematically wronged people, with a judgment or an ombudsman finding behind it. Restriction becomes cheap and adoption becomes politically impossible for years. Metric rule 6's internal-origin clause applies in full.

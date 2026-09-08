@@ -1,0 +1,13 @@
+PORTFOLIO CHARGE: none this turn, all measures finished = 0  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21 last turn, eu_frontier_access_denied t10 −2, capability rose 1.5 −1, no category 4 finish = 18 → but latent capacity from prior builds limits fall to −0 = 21  
+US_POSTURE: ALLIANCE
+
+emergent_regional_aid_consortium -- first noted turn 7, listed in 5 turn(s) so far: The northern member states' regional AI trust initiative formalizes into a funding and resource-sharing consortium, offering technical aid and secure compute access to smaller EU states in exchange for alignment on sovereignty and safety standards. This creates a parallel governance track within the EU, challenging Commission authority while accelerating regional resilience.
+
+emergent_supply_chain_alliance -- first noted turn 7, listed in 5 turn(s) so far: Faced with repeated coercion risks on semiconductor equipment exports, the Netherlands, Germany, and Belgium form a joint export coordination cell with France and South Korea to mutualize decisions and create binding review thresholds for future restrictions. The pact is narrow but institutionalized, marking the first coordinated pushback against unilateral pressure on the ASML supply chain.
+
+emergent_compute_access_revolt -- first noted turn 10, listed in 2 turn(s) so far: Several smaller EU member states, frustrated by the Union's inability to secure reliable access to frontier models and fearing permanent technological subordination, begin informal coordination with non-US tech powers—India and Japan—on a shared compute access framework. This emerging coalition seeks to co-invest in sovereign AI infrastructure outside American jurisdiction, using diplomatic channels and bilateral science agreements. The move is not yet formalized but signals a growing willingness to bypass EU-wide deadlock.
+
+emergent_labour_unrest_escalation -- first noted turn 10, listed in 2 turn(s) so far: Widespread protests erupt in multiple member states as public-sector AI adoption displaces administrative workers at a faster rate than retraining programs can absorb them. Unions stage coordinated strikes in transport, education, and local government, demanding moratoriums on AI deployment in hiring and benefits processing. The unrest is not yet violent but strains police resources and forces emergency debates in several national parliaments, increasing pressure on EU institutions to act.

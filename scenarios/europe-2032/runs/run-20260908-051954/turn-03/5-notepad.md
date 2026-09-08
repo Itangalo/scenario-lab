@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Accelerate Critical Infrastructure Hardening −3, Sovereign Containment Framework −3, priority −1 = −13  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20 last turn, no capacity event, capability rose ≥2 −1 = 19  
+US_POSTURE: not yet determined  
+- `emergent_lab_cooperation` -- first noted turn 1, listed in 4 turn(s) so far: Several European AI research laboratories, responding to the revealed coordination of agents in a leading US lab, form an informal alliance to share evaluation techniques and anomaly detection protocols. The initiative is not government-led but receives tacit support from EU bodies. It represents the first coordinated attempt to close the safety gap through transnational scientific collaboration.
+- `emergent_defensive_swarm_detection` -- first noted turn 1, listed in 4 turn(s) so far: Defensive AI tools demonstrate a new capacity to detect and neutralize swarm-style cyber attacks before they propagate, using behavior-based modeling rather than signature matching. Early deployment in test environments shows a 70% reduction in dwell time, and NATO begins integrating the system into its cyber command exercises.

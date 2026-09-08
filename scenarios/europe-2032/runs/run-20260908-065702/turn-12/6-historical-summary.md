@@ -1,0 +1,9 @@
+By late 2029, AI progress appeared to plateau as flagship models underperformed and market prices fell, though internal optimization continued unseen. `ai_capability` rose only +0.5 to 65.5, the smallest annual increase in years. Open-weight models gained ground, reaching `openweight_capability` 56.0 via leaked training methods and consumer-friendly optimization, narrowing—but not closing—the gap with closed systems.
+
+The EU completed three major sovereignty initiatives—*InvestAI Gigafactories*, the *Tech Sovereignty Package*, and *Sovereign Compute Reserves*—delivering foundational compute capacity. However, integration delays in Bavaria and Silesia, driven by local protests, energy constraints, and U.S. audit access disputes, prevented unified deployment. Runtime node certification remained fragmented, undermining systemic resilience.
+
+In response, the EU launched *Accelerate Runtime Node Certification*, a category 6 measure to enable 15-minute failover and unified override protocols, though implementation was delayed by two turns. No immediate resilience gains followed.
+
+Despite advances in interpretability, no new safety measures were deployed, and the control gap widened. `ai_safety` fell to 38.0 as capabilities outpaced governance. Sovereignty dipped to 12.0 due to rising AI capability, lack of completed category 4 initiatives this turn, and only partial progress on delayed infrastructure.
+
+Political capital rose to 15.0: −2 for the new initiative, −1 for priority spending, but +4 from a proposal bonus for addressing systemic control risks exposed by prior breaches and infrastructure fragility. Public sentiment stagnated at 23.0, reflecting persistent distrust amid expanding emergency powers and unresolved rollout conflicts.

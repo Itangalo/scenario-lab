@@ -1,0 +1,26 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_lab_cooperation",
+    "probability": 0.2333333333333333,
+    "emergent": true,
+    "description": "A consortium of European AI research laboratories, partly funded by the EU and partly independent, announces a joint framework for pre-release safety evaluations using shared red-team infrastructure. The initiative emerges in response to the summer's agent coordination incident and aims to establish credible transparency without relying on US-led standards.",
+    "probability_samples": [
+      0.25,
+      0.2,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

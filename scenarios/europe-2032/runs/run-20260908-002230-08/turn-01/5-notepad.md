@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield Directive −3, priority −1 = −10  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22.0 last turn, no capacity event, InvestAI Gigafactories in flight +0, capability rose 2.0 −1 = 21.0  
+emergent_labour_displacement_wave -- first noted turn 1, listed in 1 turn(s) so far: Mid-level professional roles in legal, accounting and technical writing across several member states show synchronized job reductions tied to AI adoption, with firms citing 'efficiency gains' from internal AI systems. The pattern is broad enough to register in national labour statistics within the turn, triggering early warnings in social dialogue bodies and shifting public discourse toward displacement rather than augmentation.  
+emergent_asml_defiance_contingency -- first noted turn 1, listed in 1 turn(s) so far: Facing intensified U.S. pressure on ASML export restrictions, a coalition of EU member states and industrial stakeholders begins drafting a legal and financial contingency to shield critical semiconductor equipment exports under EU foreign policy competence, testing the limits of extraterritorial jurisdiction. The move signals a nascent shift from passive dependence to active strategic shielding, though implementation remains uncertain.

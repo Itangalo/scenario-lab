@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, European AI Safety Observatory −3 (finished), Emergency Access & Continuity Framework −3 (finished), Sovereign Inference Corridor −3, Hardened Openweight Deployment Programme −3, priority −1 = −19  
+PROPOSAL BONUS: Hardened Openweight Deployment Programme (cat 5, large) +3 — answers cyber_major_incident and strengthens Emergency Access Framework after access vulnerability exposed  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21.0 last turn, Sovereign Inference Corridor in flight +2 (gaining momentum), capability rose 1.5 −1 = 23.0  
+emergent_labour_displacement_wave -- first noted turn 4, listed in 2 turn(s) so far: Preliminary data from several EU member states shows a sharp rise in white-collar job displacement in legal, administrative, and technical writing roles, attributed to AI adoption. The trend is not yet a crisis, but trade unions and education ministries begin sounding alarms about retraining capacity.  
+emergent_global_observatory_push -- first noted turn 1, listed in 5 turn(s) so far: A coalition of middle powers and academic institutions launches a formal proposal for an open, multilateral AI observatory to monitor capability trends and safety practices, arguing that unilateral control has failed to prevent distributed risk. The proposal gains early support from non-aligned states but faces resistance from both the US and China.  
+US_POSTURE: pending (administration takes office next turn)

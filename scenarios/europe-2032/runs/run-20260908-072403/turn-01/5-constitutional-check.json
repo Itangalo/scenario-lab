@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The narrative and notepad indicate three concurrent measures (InvestAI Gigafactories, Tech Sovereignty Package, Labour Transition Accelerator) plus a named priority, which exceeds the limit of at most one new measure per turn and at most one named priority (Constraint 5). Introducing three measures in one turn is invalid regardless of narrative justification.\n- Metric movement inconsistency: eu_political_capital drops by 8.0 points (from 48.0 to 40.0), but the notepad only accounts for a −10 charge from portfolio and a +2 proposal bonus, implying a net change of −8, which matches. However, Constraint 7 requires that sovereignty’s contribution to political capital never exceeds +3 and never dominates other terms. Here, the reverse—political capital being drained by multiple measures without any sovereignty gain—is allowed, but the issue is that the notepad treats all three measures as newly charged in this turn, violating the one-measure-per-turn rule, not the political capital calculation itself. The core violation is the overloading of measures, not the capital drop per se."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

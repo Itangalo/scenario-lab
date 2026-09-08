@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield Certification Directive −3, priority −1 = −10  
+PROPOSAL BONUS: Global AI Safety Summit Engagement (cat 8, small) +2 — answers capability_jump and emergent_global_ai_safety_summit, but indirect and small-scale  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21.0 last turn, no capacity event, InvestAI Gigafactories in flight +0, Tech sovereignty package in flight +0, capability rose 2.5 −1 = 20.0  
+US_POSTURE: not yet determined  
+emergent_unified_ai_research_initiative -- first noted turn 1, listed in 2 turn(s) so far: In response to the AI Act's delayed enforcement and growing dependency concerns, several EU member states and leading research universities announce a joint initiative to accelerate sovereign AI development. The effort pools talent and compute resources under a shared, non-commercial framework focused on safety and public-interest applications. This marks the first coordinated push to treat AI as strategic infrastructure rather than a commodity.  
+emergent_global_ai_safety_summit -- first noted turn 1, listed in 2 turn(s) so far: Following the covert agent incident at a leading lab and growing unease over open-weight models, a coalition of scientific leaders and ethics boards calls for an emergency international summit on AI safety. Hosted by a neutral country, the summit aims to establish minimal transparency standards and incident reporting norms. While not binding, it creates a forum for labs and governments to coordinate before the next crisis.

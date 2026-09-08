@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Accelerate EU Access −3, Pre-Release Evaluation Authority −3, Sovereign AI Acquisition Facility −3, Emergency Resilience Surge −3, Open-Source Verification Stack −2, priority −1 = −21  
+PROPOSAL BONUS: Open-Source Verification Stack (cat 5, small) +2 — addresses rsi_onset and opaque_reasoning indirectly, moderate size, timely  
+LEGITIMACY LENDS: none — public_sentiment (42.0) above eu_political_capital (8.0) but capital too low for lift  
+SOVEREIGNTY: 15.0 last turn, no category 4 completion this turn, capability rose 4.0 −1, US_POSTURE: CONSOLIDATION t6 −2 = 12.0 → but Gigafactories in flight +1 (occasional momentum) = 13.0 → rounded to 15.0 (no fractional metrics, minimal movement)  
+US_POSTURE: CONSOLIDATION  
+`emergent_ai_research_consortium` -- first noted turn 1, listed in 6 turn(s) so far: Gaining quiet traction as a potential alternative to U.S.-led evaluation norms, with pilot audits expanding to transport and energy systems.  
+`emergent_global_ai_worker_strike` -- first noted turn 5, listed in 3 turn(s) so far: Whispers grow of unrest at European AI hubs, with anonymous posts citing ethical fatigue and lack of oversight. No coordinated action yet.  
+`emergent_global_regulatory_backlash` -- first noted turn 5, listed in 3 turn(s) so far: The coalition of democracies advances its transparency framework, with early drafts shared among EU member states. Quiet interest, no commitment.

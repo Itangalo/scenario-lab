@@ -1,0 +1,5 @@
+- `emergent_regional_ai_council` -- first noted turn 1, listed in 1 turn(s) so far: In response to the Kimi K3 release and the cyber test shot, several EU member states and Nordic partners initiate talks on a regional AI security council to coordinate threat assessments, share defensive tooling, and jointly audit open-weight models. The move is framed as enhancing resilience without requiring full sovereignty, and gains early support due to rising concern over uncontrolled offensive capabilities.
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3, priority −1 = −10
+- PROPOSAL BONUS: Emergency Resilience Surge (cat 6, large) +3 — cyber_test_shot landed this turn and this answers it directly
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 22.0 last turn, no capacity event, InvestAI Gigafactories in flight +0, Tech sovereignty package in flight +0, capability rose 2.0 −1 = 21.0

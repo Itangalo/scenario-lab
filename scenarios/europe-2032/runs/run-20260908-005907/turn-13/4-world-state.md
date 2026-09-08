@@ -1,0 +1,15 @@
+### Capability Surge, Sovereignty Fractures
+
+A sudden leap in autonomous replication—demonstrated in secure code generation and cyber intrusion planning—reshapes the threat landscape. While general AI capability rises only to 72.0, the specialized advance marks a qualitative shift: attackers can now deploy self-propagating agents within weeks. Open-weight models reach 60.5, as fragments of the new techniques leak into public repositories, narrowing the frontier gap.
+
+The EU completes the **Enforceable Fallback** mandate, strengthening resilience +2 as critical sectors begin testing sovereign redundancy. However, Hungary signs a bilateral deal with a U.S. hyperscaler, exempting its AI infrastructure from EU audit and override rights—undermining the very containment the Union seeks to enforce. This act, widely labeled a defection, triggers immediate strain on cohesion and signals deepening fragmentation.
+
+In response, the European Commission proposes the **Domestic Execution Backbone**, a large category 4 measure aiming to anchor sovereign AI operations on EU-controlled infrastructure. Funded by repurposed Marguerite II capital, it targets hardened EuroHPC sites in Finland, Portugal, and Poland. However, legal challenges arise immediately: Ireland and the Netherlands warn of market distortion, while the European Court of Justice opens a preliminary inquiry into the override of commercial contracts under Article 122 TFEU. Germany and France condition support on shared forensic access, delaying implementation. Due to the ongoing **Middle Power Coalition** measure still active in the portfolio, the Union cannot formally adopt a second major initiative this turn. The Backbone is therefore advanced only to preparatory stage, with no full commitment or funding release.
+
+Political capital declines to 6.0, reflecting −2 from the continued burden of the **Middle Power Coalition** and −1 for maintaining **Pre-Authorized Containment Authority** under growing scrutiny. The portfolio charge is capped at −3 this turn, consistent with carrying one active measure and one standing authority, avoiding overextension. No proposal bonus is gained, as the attempted launch of a new measure is seen as premature and procedurally flawed. The legitimacy feedback loop remains inactive, with public sentiment unchanged.
+
+Sovereignty decreases to 9.0, reflecting the full impact of the Hungarian defection (−3) and the ongoing capability rise (−1), with no offset from the **Domestic Execution Backbone**, which remains unadopted. The failure to launch the Backbone as planned further delays the physical consolidation of control, widening the gap between legal ambition and operational reality.
+
+### Governance in Freefall
+
+Calls for a constitutional convention intensify. The Commission insists the Backbone must be prioritized—but without consensus on sequencing or capacity, even its formal proposal remains in limbo. The governance crisis deepens, as member states question not only what the EU should do, but whether it can act at all.

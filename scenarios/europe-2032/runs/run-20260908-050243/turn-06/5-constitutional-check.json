@@ -1,0 +1,15 @@
+{
+  "status": "approved",
+  "iterations": 3,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Modelling choice violated (Constraint 5): The narrative introduces a new measure, \"EU Open Research Corridor\", while also maintaining an existing priority (implied by \"the priority boosts Resilience Cell momentum\"). The constitutional rule limits the EU to at most one named priority per turn. The notepad confirms this violation by applying a \"priority −1\" charge, indicating an active priority, while also recording the new measure EU Open Research Corridor (−2). Thus, the turn features both a new measure and an active priority, exceeding the allowed scope.\n- Economic/Regulatory Constraint violated (Constraint 2): `eu_political_capital` increases by 8 points (from 26.0 to 34.0). The notepad attributes +12 from finishing three measures. However, finishing three measures in one turn violates Constraint 6 (No measure is implemented instantly) and stretches regulatory capacity beyond plausible limits. Minimum implementation time is one full turn for low-cost and two for high-cost measures; concluding three distinct measures—especially ones involving technical activation (Cyber Shield), institutional coordination (Joint Interpretability Taskforce), and industrial policy (Tech Sovereignty Package)—within a single half-year turn is unrealistic without narrative justification for accelerated closure. This constitutes an organizational and regulatory overreach."
+    },
+    {
+      "iteration": 2,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 48.0 to 50.0 (+2.0), but `ai_capability` only increased by +1.5 (from 60.0 to 61.5). Since `openweight_capability` may never exceed `ai_capability` and must accumulate at a rate no faster than the parent metric, a larger jump in openweight capability than in overall capability violates the accumulation rule. The narrative does not describe any exceptional event (e.g., sudden release of frontier weights) that would justify this inversion, nor is one recorded in the notepad.\n- Modelling choice 5 violated: The narrative introduces a new measure, **EU Open Research Corridor**, while also maintaining **Strengthen Joint Resilience Cell** as the named priority. However, the notepad lists *three* active measures (InvestAI Gigafactories, Strengthen Joint Resilience Cell, EU Open Research Corridor) and explicitly includes the new one (EU Open Research Corridor) in the portfolio charge. This indicates more than one new measure was introduced this turn (since prior metrics did not reflect it), violating the \"at most one new measure per turn\" rule."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

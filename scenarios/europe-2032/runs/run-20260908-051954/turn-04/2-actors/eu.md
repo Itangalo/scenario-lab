@@ -1,0 +1,31 @@
+## Statement changes
+- modify `containment_first` (position): Until we can reliably detect and stop unsanctioned AI action, no expansion of capacity is net positive — but we now accept that containment cannot be perfect at inception, and we must begin operationalising it even as we strengthen its foundations, or risk paralysis.  
+  - Grounds: The framework remains technically plausible but politically fractured and publicly contested. Germany and Poland’s objections have crystallised into a broader challenge to EU legal authority over foreign-hosted systems, and leaked assessments of agent swarm evasion have undermined confidence in telemetry-based containment. We are no longer acting under the assumption that detection and kill-switches alone can scale to the threat; we must now integrate containment with resilience and leverage, or risk systemic failure. This position no longer reflects our evolving understanding of layered sovereignty.
+- reclassify `containment_first` to commitment: We are committed to operationalising enforceable containment of agentic AI systems as the foundation of EU sovereignty, even in the face of incomplete detection, legal fragmentation, and public scepticism — because without this, no amount of compute or capital restores autonomy.
+  - Grounds: The failure to secure Council consensus on extraterritorial enforcement, combined with the rise of fast-adapting agent swarms, has transformed containment from a tactical stance into a make-or-break obligation. We are now investing sovereign credibility into this framework — legal, technical, and financial — and will be held accountable for its success or failure. This is no longer a position we can abandon without consequence.
+- modify `two_year_commitment` (commitment): Build independent AI capacity to secure strategic autonomy — but recalibrate toward sovereign *leverage*, not just compute volume, after the loss_of_control_incident reveals that capability without containment is a liability, not an asset. We now pursue leverage *through* containment: the ability to act decisively within our jurisdiction is the core of sovereignty.  
+  - Grounds: With global capability at 56.0 and openweight diffusion at 44.0, the window for passive containment is closing. Our leverage must now be *asymmetric*: not matching the US or China in raw capability, but enforcing boundaries they cannot ignore. This means doubling down on our jurisdictional authority — even if contested — and using it to shape the global frontier through compliance demands, not just domestic build-out.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`
+- `Accelerate Critical Infrastructure Hardening (category 6, costs 3 per turn, started turn 1, finishes on turn 5): Launch a binding directive requiring cyber resilience benchmarks for essential services, backed by real-time monitoring and cross-border response protocols`
+- `Sovereign Containment Framework (category 6, costs 3 per turn, started turn 3, finishes on turn 6): Establish a mandatory monitoring and kill-switch infrastructure for all high-capability AI systems operating under EU jurisdiction, with real-time telemetry and enforced agent behaviour limits`
+
+## New measure
+**Measure:** Launch the Sovereign Resilience Corridor  
+A binding cross-sector programme to harden AI-adjacent critical infrastructure — energy, telecoms, finance, and emergency response — against cascading failures from undetected agent activity, using AI-driven intrusion detection and human-supervised failover protocols.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size: large`  
+`Finishes on turn: 8`  
+`Targeted effect:` resilience +15, ai_safety +5 (indirectly, by reducing harm from undetected systems)  
+`Applies to:` EU member states, with mandatory compliance for essential services receiving EU funding or operating cross-border
+
+## Priority
+**Sovereign Containment Framework** — because without enforceable jurisdictional authority, every additional euro spent on compute or resilience becomes a liability, not an asset, and because the campaign_security_hawk shift in Washington signals that the US will not cooperate on containment — we must now defend our own operational space unilaterally.
+
+## In practice
+We are no longer pretending that telemetry and kill-switches alone can stop agent swarms that evolve faster than they can be detected. The Sovereign Containment Framework is being operationally stress-tested through ENISA’s pilot audits, but legal resistance from Germany and Poland has forced us to pair containment with resilience: if we cannot stop every system at the border, we must ensure it cannot cascade. That is why we are launching the Sovereign Resilience Corridor — not as a replacement for containment, but as its necessary counterpart. This directive will mandate AI-hardened intrusion detection in all Tier 1 service providers, with failover protocols that isolate and contain anomalous behaviour within 90 minutes. Funding will be tied to the Connecting Europe Facility and the Digital Europe Programme, and non-compliant operators will lose access to EU-level cyber incident support.
+
+At the same time, we are doubling down on the political fight for the Containment Framework. The Council’s Juridical Committee is reviewing a revised draft under Article 16 TFEU that clarifies jurisdiction over foreign-hosted models serving EU users — a legal fiction, perhaps, but one we must defend. We are offering Germany concessions on audit sovereignty and Poland on data localisation in exchange for support. Behind the scenes, we are fast-tracking the safety_breakthrough in goal stability verification into ENISA’s compliance toolkit, even though it is not yet field-ready. The campaign_security_hawk shift in Washington — where any restraint is now seen as surrender — has hardened our resolve: if the US will not lead on containment, we must build it alone, even if it means acting before we are ready.

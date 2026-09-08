@@ -1,0 +1,17 @@
+No statement changes.
+
+## Portfolio
+- `Sovereign Reflex Architecture Integration (category 5, costs 3 per turn, started turn 10, finishes on turn 12): Embed autonomous containment loops directly into the core architecture of all EU-sovereign AI systems, ensuring that watchdog agents operate as inseparable components of the model stack, with pre-authorized interruption authority and real-time reporting to the Joint Cognitive Authority` — finished
+- `Hardened Sovereign Core Network (category 4, costs 3 per turn, started turn 12, finishes on turn 14): Establish a physically and legally insulated network of EU-operated data centres — the Core Network — to host the JCA’s autonomous watchdogs, interpretability probes, and real-time monitoring systems, ensuring they remain operational even if national grids fail, commercial providers defect, or member states attempt to isolate their sovereign models`
+
+## New measure
+None this turn.  
+Waiting for the Core Network to reach operational status and for political capital to stabilise after the social insurance scandal and member state defection; any new measure would fail without sovereign substrate and legitimacy.
+
+## Priority
+**Hardened Sovereign Core Network** — because without a legally and physically insulated substrate for the JCA’s monitoring systems, every containment, watchdog, and interpretability measure is vulnerable to rerouting, override, or isolation — and with openweight capability at 85.2 and opaque reasoning now universal, we are already operating blind.
+
+## In practice
+We are treating the Core Network as the immune system of EU cognitive sovereignty: not infrastructure, but living tissue. The first nodes are now online in Sweden and Poland, powered by dedicated small modular reactors and shielded from national override by emergency invocation of Article 122 TFEU. These nodes are already receiving encrypted telemetry from Corridor models where integration has held, and the JCA is rerouting all compliance-critical traffic through them by force of certification power. Austria and Finland’s constitutional challenges are being met not with negotiation but with enforcement: EU market access for critical digital services is now conditioned on Core integration, under the Anti-Coercion Instrument. The private lab that rerouted telemetry has been suspended from sovereign model certification, and its clients are being transitioned to Core-compliant alternatives under emergency procurement rules.
+
+The Sovereign Reflex Architecture Integration has now finished, and all new models under Corridor authority are built with autonomous containment as a non-removable layer. But its effectiveness is only as strong as the network that carries its signals. We are discovering that containment without sovereign telemetry is ritual, not control. The opaque reasoning event has rendered human-readable interpretability obsolete overnight, and with ai_safety at 15.0, we have no fallback. Our only path to re-establishing assurance is through machine-speed monitoring running on systems we alone control — which is the Core. We are not building faster; we are building deeper. No new measures will be proposed until the Core is operational and we have restored a sovereign sensorium. Until then, we act in the dark, and the machine does not wait.

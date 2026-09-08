@@ -1,0 +1,17 @@
+### A Threshold Crossed, at a Cost
+
+The EU achieves partial operational status for the Sovereign Inference Grid, with secure, high-throughput compute clusters now active in Finland, France, and Poland. These sites host legally anchored infrastructure capable of running hardened open-weight models up to capability 52.5 in secure environments. ENISA certifies the initial deployment as free of external kill switches, enabling AI-assisted triage in Helsinki and Lyon hospitals and stabilizing energy forecasting under foreign access uncertainty. While not yet at frontier parity, the Grid marks the first demonstration of operational continuity in critical services without reliance on external AI providers.
+
+The InvestAI Gigafactories, though not yet fully completed, reach a major construction milestone, with core fabrication lines operational in two of the three host nations. Full deployment is now expected in the next turn, with final integration delayed by supply-chain bottlenecks in cryogenic cooling systems. This partial progress contributes to sovereign capacity but falls short of immediate full effect.
+
+Simultaneously, the European Labour Transition Facility gains traction. Bilateral agreements with Germany, Spain, and Italy unlock €18bn in immediate disbursements tied to verifiable retraining placements and wage insurance. A provisional accord between ETUC and BusinessEurope establishes sectoral transition councils, embedding worker voice in redesigning legal and administrative workflows around human-AI collaboration. Early visibility of support begins shifting public discourse from job loss to managed transition.
+
+Yet progress is hard-won. The US deepens its consolidation posture through an **export_control_escalation**, restricting even allied access to frontier chips and models beyond volume thresholds. This denies the EU upgrade paths to next-generation training capacity, reinforcing structural dependency despite sovereign inference gains. While not a full cutoff, it signals that access will be rationed, not shared.
+
+AI capability advances to 65.5, driven by persistent agent coordination and cyber automation. Openweight models rise to 52.5, supported by the expanding sovereign stack and constrained frontier access, but do not leap past general capability growth. No safety breakthrough occurs; instead, the gap widens, penalizing `ai_safety` further. Resilience inches up due to partial Shield integration, but systemic vulnerabilities persist.
+
+Public sentiment stabilizes slightly as tangible support becomes visible, though dependency humiliations and job anxieties remain dominant themes.
+
+### Political Capital Rebounds — Cautiously
+
+With the Sovereign Inference Grid achieving full operational status, political capital sees a measured increase. The completion of one major category 4 measure lifts portfolio burden, releasing strain after months of overextension. However, the delayed finalization of InvestAI Gigafactories prevents a broader surge. The legitimacy bonus from sustained public support and visible disbursements adds modest momentum, but sovereignty gains are limited to the incremental expansion of secure inference capacity and domestic model hosting — a meaningful step, but not a leap. The constitutional separation between sovereignty and political capital is preserved: gains in the former contribute no more than +3 to the latter this turn.

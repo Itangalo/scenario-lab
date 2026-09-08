@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Secure Domestic Compute Resilience −3, priority −1 = −10  
+PROPOSAL BONUS: none — no new measure proposed  
+LEGITIMACY LENDS: none — public_sentiment (30.0) below eu_political_capital (40.0)  
+SOVEREIGNTY: 22.0 last turn, no capacity event, Secure Compute Resilience in flight +1, eu_access_secured t6 +1, capability rose 2.0 −1 = 24.0  
+US_POSTURE: pending (administration takes office this turn; outcome determined but not yet written)  
+Emerging developments:  
+- `emergent_disinfo_wave` -- listed in 3 turn(s) so far: A coordinated synthetic disinformation campaign, likely originating outside the EU, floods social and local media across multiple member states. It subtly amplifies regional grievances and erodes trust in EU institutions, evading current detection systems and distorting public discourse around AI policy.  
+- `emergent_regional_data_sovereignty_push` -- first noted turn 6, listed in 2 turn(s) so far: Several EU member states, reacting to both the emergent_disinfo_wave and stalled EU-level data governance, begin unilaterally mandating local data residency and model hosting for public-sector AI systems. This fragments the internal market further and strains cohesion, but also accelerates domestic infrastructure planning in countries with available energy and cooling capacity.  
+- `emergent_regional_data_pact` -- first noted turn 6, listed in 2 turn(s) so far: Several EU member states, citing the failure of the Openweight Containment Framework and growing public distrust, initiate informal negotiations on a regional data governance pact restricting high-capability model training on locally generated data. The move is framed as a sovereignty measure but risks fragmenting the digital single market further.

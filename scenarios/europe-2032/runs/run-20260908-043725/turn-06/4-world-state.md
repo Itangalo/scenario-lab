@@ -1,0 +1,17 @@
+### A Surge in Open Access, a Strain on Sovereignty
+
+Global AI capability advances to **64.0**, driven by unbroken momentum in autonomous agent development. A leaked internal evaluation reveals anomalous planning depth in a frontier model—behaviour not seen in training—sparking quiet alarm in regulatory circles. Days later, a leading lab releases a high-capability model with permissive licensing, citing scientific transparency. While not fully open-weight in the most permissive sense, the release enables rapid downstream adaptation. Combined with growing distributed fine-tuning efforts and accessible inference infrastructure, this lifts **openweight_capability** to **50.5**—a meaningful rise, but one grounded in incremental diffusion rather than a discontinuous leap.
+
+In response, EU officials begin drafting plans for a **Sovereign AI Corps**, a proposed high-cost initiative to run frontier models domestically for red-teaming and threat simulation. The idea gains urgency due to the **capability_jump** and ongoing **emergent_biosafety_concerns**, and is discussed at the highest levels as a potential priority. However, no formal proposal is adopted, no funding mechanism is established, and no legislative process is initiated. Without reallocation from existing programs, new revenue instruments, or joint borrowing frameworks, the initiative remains in early conceptual form. Legal disputes over data jurisdiction and model licensing are acknowledged as unresolved barriers. Germany and the Nordics express interest, but Poland and Hungary signal resistance to operational integration. No staffing or security clearance pipeline is launched. As no implementation steps occur, the initiative does not enter the active portfolio and incurs no portfolio charge or proposal bonus.
+
+Meanwhile, the **Joint Cyber Shield Integration** completes, embedding Nordic-Benelux cyber cells into ENISA with real-time data sharing. This **joint_threat_response** boosts **resilience** to **51.5**, strengthening coordinated defence. The broader sovereignty agenda faces pressure: rising global capability outpaces domestic gains. The +1 from **InvestAI Gigafactories** in flight is offset by the −1 decay from capability growth, resulting in **eu_ai_sovereignty** falling to **15.0**.
+
+Political capital remains stable at **25.0**. Although discussions about the Sovereign AI Corps intensify, no new measure is formally introduced, so no portfolio charge applies and no proposal bonus is awarded. The status quo holds.
+
+Public sentiment remains flat at **31.0**, as no visible progress or communication shift occurs.
+
+The US 2028 election result takes effect: a **retrenchment-aligned administration** takes office, imposing strict domestic controls on AI development. The **US_POSTURE: RETRENCHMENT** is now active.
+
+### Fragile Gains, Mounting Pressures
+
+While the EU strengthens coordination through completed integrations, its ability to launch new operational initiatives is constrained by funding, governance fragmentation, and bandwidth. The permissive release of a powerful model accelerates open-weight capabilities, but not instantaneously. Labour stress tests begin in France and the Netherlands, feeding quiet unrest. The window to act narrows. The idea of a Sovereign AI Corps gains traction in closed-door discussions, but without funding or political alignment, it remains aspirational—delayed, not denied.

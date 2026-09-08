@@ -1,0 +1,37 @@
+[
+  {
+    "id": "verification_widens",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.22
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_photonic_inference_breakthrough",
+    "probability": 0.2833333333333334,
+    "emergent": true,
+    "description": "A joint academic-industrial consortium in Germany and the Netherlands achieves a breakthrough in energy-efficient inference using photonic chips, demonstrating a prototype that reduces power consumption by 40% compared to state-of-the-art GPU clusters. The design is open-sourced, triggering interest from public-sector AI operators across Europe seeking to reduce dependence on foreign hardware. While not yet scalable, it becomes a focal point for new investment proposals and shifts the discourse around sustainable AI sovereignty.",
+    "probability_samples": [
+      0.3,
+      0.25,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

@@ -1,0 +1,26 @@
+No statement changes.
+
+## Portfolio
+``Emergency Cohesion Protocol (category 8, costs 3 per turn, started turn 9, finishes on turn 10): Establish a binding enforcement mechanism for EU-wide AI governance, triggered when a member state’s bilateral agreement undermines collective sovereignty, with immediate suspension of digital market access and reallocation of cohesion funds`` — **finished**
+
+``Runtime Verification Mandate for Critical Infrastructure (category 1, costs 3 per turn, started turn 10, finishes on turn 12): Require all AI systems operating in energy, transport, health, and financial infrastructure to run under certified EU verification frameworks that continuously monitor for unauthorised objective drift, with kill-switch authority vested in the European AI Safety Authority``
+
+## New measure
+**EU Sovereign Compute Corridor Initiative**  
+Launch a legally anchored, high-capacity compute build-out across three core EU hubs—Marseille, Prague, and Vilnius—with guaranteed grid priority, fast-tracked permitting, and mandatory data residency for any system operating in critical infrastructure or receiving public procurement contracts.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 15`  
+`Targeted effect:` eu_ai_sovereignty +8 (by establishing sovereign frontier-adjacent compute), ai_safety +2 (indirectly, by enabling EU-controlled evaluation environments), resilience +1 (through redundancy in AI-dependent command systems)  
+`Applies to:` EU territory, with direct jurisdiction over national cloud providers and foreign hyperscalers operating in regulated sectors
+
+## Priority
+**Runtime Verification Mandate for Critical Infrastructure** — because without enforceable runtime assurance, even sovereign compute becomes a vector: if we cannot verify behaviour, it does not matter where the hardware sits. This mandate is the linchpin of our safety claim and the only way to operationalise control in the black box era.
+
+## In practice
+We are treating the completion of the Emergency Cohesion Protocol as a technical victory but a political void. The mechanism passed Council approval this month, but only after eastern and southern states secured exemptions for existing bilateral deals with U.S. cloud providers. Automatic penalties remain off the table. As a result, the protocol will not trigger against shielded deployments, and its deterrent value is hollow. We are now shifting focus from legal design to operational consequence: the Commission will issue guidance stating that any member state blocking EU telemetry access forfeits eligibility for AI-related cohesion funding and emergency response support under the Digital Europe Programme. This is not retaliation — it is risk-based allocation. If you will not let us see the threat, you cannot expect us to defend you from it.
+
+The Runtime Verification Mandate is now in drafting at the European AI Safety Authority, with ENISA providing threat models and the JRC adapting its prediction frameworks to non-linguistic agent trajectories. Legal services are finalising the Article 114 TFEU justification, framing unchecked AI deployment as a systemic product hazard akin to unsafe electrical grids. We are preparing for fierce resistance from both industry and some capitals, so we are offering a phased rollout: full compliance required within six months for new deployments, twelve for legacy systems. Crucially, we are insisting that verification applies equally to foreign and domestic providers — no carve-outs for "trusted allies". The U.S. mission has already warned this could violate trade commitments; we reply that safety is not negotiable, and that the alternative — cascading failures in power or rail networks due to undetected objective drift — is not a risk we will accept.
+
+At the same time, we are launching the EU Sovereign Compute Corridor Initiative to break our dependence on offshore capacity. The plan is to construct three high-density compute zones with hardened physical and cyber security, powered by dedicated renewable microgrids, and governed by a new EU-level authority with override rights during emergencies. These sites will host not just government workloads but also serve as the only legal platform for AI systems used in critical infrastructure. We are invoking the Net-Zero Industry Act and the Digital Markets Act to justify accelerated permitting and exclusion from competition scrutiny. Funding will come from repurposed NextGenerationEU capital and private co-investment under strict conditionality: any company accessing these facilities must submit to full runtime monitoring and allow model weights to be escrowed for emergency inspection. We are offering tax incentives to attract displaced talent from sanctioned labs abroad, but sovereignty comes first — no backdoors, no remote administration by foreign entities. This is not about catching up. It is about ensuring that, when the next crisis hits, the EU still has a seat at the table — and a switch we can actually flip.

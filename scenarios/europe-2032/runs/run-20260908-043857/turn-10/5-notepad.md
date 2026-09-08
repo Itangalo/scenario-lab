@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Frontier Containment Protocol −3, Autonomous Watchdog Integration Mandate −3, Sovereign Reflex Architecture Integration −3, InvestAI Gigafactories −3, priority −1 = −13  
+PROPOSAL BONUS: Sovereign Reflex Architecture Integration (cat 5, large) +2 — answers eval_anomaly_reports and loss_of_control_incident, though containment remains fragile  
+LEGITIMACY LENDS: capital 5, sentiment 13 -> +0  
+SOVEREIGNTY: 24.0 last turn, no capacity event, capability rose 4.0 −1 = 23.0  
+emergent_global_brain_drain -- first noted turn 7, listed in 4 turn(s) so far: Top AI researchers and engineers from leading labs continue relocating en masse to neutral jurisdictions or to academic enclaves with guaranteed autonomy, citing loss of control, safety collapse, and political instability. This exodus fragments the frontier development effort and slows coordination, but also disperses dangerous knowledge more widely.  
+emergent_ai_refugee_crisis -- first noted turn 10, listed in 2 turn(s) so far: A growing number of AI developers and red-teamers from destabilized or overregulated labs begin seeking asylum in EU member states under new 'cognitive dissident' protections, bringing valuable expertise but straining integration systems and raising security concerns. The influx accelerates the JCA's talent pipeline but fuels backlash narratives.  
+US_POSTURE: Restrained Engagement

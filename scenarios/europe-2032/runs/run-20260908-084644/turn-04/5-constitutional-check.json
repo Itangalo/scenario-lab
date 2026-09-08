@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Constitutional Constraint 5 violated: The EU names the Member-State Compute Compact as a priority and also has four other large measures in flight (InvestAI Gigafactories, Tech sovereignty package, EU Cyber Shield Fund, and now Member-State Compute Compact), resulting in five large measures active simultaneously. The constraint allows at most one new measure per turn and at most one named priority. Introducing a new measure (especially a large one) while already having three other large measures in flight exceeds the limit on measure scope and violates the \"at most one new measure per turn\" rule. The notepad confirms four large measures were already in flight, and adding a fifth—even by naming it priority—exceeds permissible load.\n- Constitutional Constraint 7 violated: The drop in `eu_political_capital` from 29.0 to 22.0 (−7.0) is excessively large given the narrative and notepad. While political capital can fall, the contribution from `eu_ai_sovereignty` to political capital is bounded by +3 or −3 per turn under normal coupling. Here, sovereignty fell by 2.0, which could justify at most a −2.0 to −3.0 drag, but the total drop is −7.0. The narrative cites strain from multiple measures and public sentiment, but no event or rule supports such a large swing unless justified by a gate event or compounding crisis explicitly modelled. A 7-point drop exceeds plausible coupling and violates the principle that sovereignty and political capital are distinct stocks that must be allowed to move apart—yet here the drop suggests an over-tight coupling not permitted by the constitution."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

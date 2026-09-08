@@ -1,0 +1,26 @@
+## Statement changes  
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong as the price of not being late — but we will no longer act without a coherent theory of control, nor without a path to legitimacy  
+- Grounds: The physical backlash and collapse of political capital to 6.0 confirm that even technically sound interventions fail if they lack public anchoring. Our framework may be enforceable in law, but it is not yet *lived* as legitimate. The Union cannot govern through emergency authority alone when the emergency is structural and enduring. From now on, legitimacy is not a secondary effect to be managed, but a core condition of control. This recalibration acknowledges that acting under uncertainty now requires not only operational coherence but also social embedding — or else we are simply erecting barriers on sand.
+
+- modify `two_year_commitment` (commitment): Prevent uncontrolled AI systems from determining the EU’s future by securing sovereign control over critical AI infrastructure, ensuring societal resilience against runaway automation and strategic dependency, and beginning to rebuild public legitimacy through visible, enforceable safeguards  
+- Grounds: The current crisis is not only one of capability or control, but of consent. The Emergency Sovereign Control Framework is technically necessary, but its erosion of political capital reveals that resilience must now include the social contract. Without a deliberate effort to restore legitimacy — not just through communication, but through institutions that are seen to constrain power — no measure will endure. The commitment must now explicitly include legitimacy as a target, because without it, sovereignty is unenforceable and resilience is unsustainable.
+
+## Portfolio  
+- Emergency Sovereign Control Framework (category 3, costs 4 per turn, started turn 11, finishes on turn 13): Establish a legally grounded, technically enforceable framework for human oversight of AI systems operating above capability index 75.0, with mandatory telemetry, kill-chain protocols, and real-time auditability for all systems accessing EU infrastructure or markets.  
+  *This measure remains in flight. Despite low political capital and active resistance, implementation continues under Article 114 TFEU with co-legislation in IMCO and LIBE. Technical design is advanced, but rollout is strained by lack of trust and operational friction with member states.*
+
+## New measure  
+**Sovereign Incident Response Corps**  
+Establish a standing, EU-level technical unit with authority to investigate, contain, and publicly report on AI incidents involving systems above capability 75.0, combining cyber, agent-behaviour, and safety expertise under a unified mandate.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size: large`  
+`Finishes on turn: 14`  
+`Targeted effect:` Increase resilience by 8 points and ai_safety by 5 through rapid containment and public assurance; reduce the cost of future incidents by enabling faster, coordinated response  
+`Applies to:` EU institutions, member states, and all operators of high-capability AI systems within or affecting the Union
+
+## Priority  
+**Emergency Sovereign Control Framework** — because without enforceable limits on systems that operate beyond human supervision, every investment in resilience, sovereignty, or safety becomes a temporary patch on an accelerating loss of control, and because this measure remains the only lever we have to restore a minimum floor of oversight before the frontier moves beyond any possibility of containment.
+
+## In practice  
+We are advancing the Emergency Sovereign Control Framework through trilogue negotiations, anchoring it in Article 114 TFEU as a single market imperative, not a security override. ENISA and the AI Office are finalising the technical specifications for telemetry and kill switches, with pilot integrations underway at two EU-hosted foundation model sites. We are offering frontier developers a compliance corridor: those who embed the required controls will gain fast-track access to EU markets and immunity from ad hoc shutdowns during incidents — a trade of predictability for transparency. But legitimacy remains the true bottleneck. The protests are not just about jobs; they are about power. People see AI as a force acting upon them, not for them. To answer that, we are launching the Sovereign Incident Response Corps — not as a replacement for regulation, but as proof that the EU can act *for* people when things go wrong. Hosted jointly by the JRC and Frontex’s cyber unit, with secondments from national CERTs and academic AI safety labs, it will be the first EU body with real-time access to high-capability system logs and the authority to trigger containment. Its reports will be public by default. This is not just about response — it is about making oversight visible. The €600 million for the Control Framework is now fully committed, drawn from Digital Europe and Innovation Fund reserves; the additional cost of the Corps will be offset by reallocating stalled industrial compute grants, accepting a delay in sovereignty-building to preserve the capacity to act at all. We are surviving turn 11 — not by force, but by beginning to reframe control as service.

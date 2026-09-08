@@ -1,0 +1,48 @@
+[
+  {
+    "id": "cyber_test_shot",
+    "probability": 1.0,
+    "probability_samples": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.09000000000000001,
+    "probability_samples": [
+      0.09,
+      0.09,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A coordinated effort among EU member states, Canada, Japan, and South Korea emerges to jointly fund and deploy a shared evaluation framework for frontier AI models, focusing on cyber and biological risk. The initiative gains momentum as a direct response to the unilateral US access revocation and the Kimi K3 open release, aiming to reduce dependency on American assurances. It is not a treaty, but a technical pact with shared red-teaming capacity.",
+    "emergent": true,
+    "id": "emergent_multilateral_eval",
+    "probability": 0.049999999999999996,
+    "probability_samples": [
+      0.0,
+      0.15,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

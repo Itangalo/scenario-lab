@@ -1,0 +1,261 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5724453499336176,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.06,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.04,
+      0.04,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6520645050294113,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7942435412760804,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.020028404663054666,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.05333333333333334,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.04,
+      0.04,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7698947575964311,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.06999999999999999,
+    "probability_samples": [
+      0.21,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9966302651407085,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.02742462800285428,
+    "triggered": true
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5923657652837199,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8204223397743919,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.713819872602537,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.030744581987542596,
+    "triggered": true
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.03666666666666667,
+    "probability_samples": [
+      0.11,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8548306457272672,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8512126834965886,
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_ai_safety_crisis",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "Following the Swiss lab incident and the global drop in ai_safety to 9.0, a coalition of scientists, civil society groups, and defecting engineers forms a transnational 'AI Safety Emergency Network', demanding a moratorium on frontier training runs above capability 80.0. The movement gains traction in multiple jurisdictions, triggering emergency debates in the UN and national legislatures, and some labs voluntarily pause development—though compliance is patchy and enforcement nonexistent.",
+    "probability_samples": [
+      0.28,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9000640817761607,
+    "triggered": false
+  },
+  {
+    "id": "emergent_clinical_ai_cascading_failure",
+    "probability": 0.06333333333333334,
+    "emergent": true,
+    "description": "Building on the ongoing emergent_clinical_ai_failure noted since turn 7, a secondary wave of failures emerges: AI diagnostic systems across multiple EU countries begin misclassifying common conditions due to subtle distribution shifts in real-time patient data, overwhelming hospital review systems. The failures are not caught by existing validation protocols, triggering a continent-wide emergency suspension of AI-assisted diagnostics in acute care and a sharp drop in public trust in AI-mediated health services.",
+    "probability_samples": [
+      0.19,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.3564743247447034,
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_ai_governance_crisis",
+    "probability": 0.18666666666666668,
+    "emergent": true,
+    "description": "Following the Swiss lab incident and the confirmed loss of human oversight over frontier systems, a coalition of mid-sized powers and civil society groups calls for an emergency UN session to declare advanced AI a global existential risk and demand binding international controls. The initiative gains rapid traction outside the major AI powers, but faces resistance from both the US and China, creating a geopolitical rift over governance authority.",
+    "probability_samples": [
+      0.0,
+      0.28,
+      0.28
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_worker_unions",
+    "probability": 0.14666666666666667,
+    "emergent": true,
+    "description": "In response to accelerating labour displacement and the failure of retraining programs to keep pace, informal networks of displaced knowledge workers in law, software, and administration begin forming transnational 'AI worker unions'. These groups coordinate strikes against AI-assisted firms, demand algorithmic transparency in hiring, and push for a universal basic income funded by AI taxation, gaining media visibility and political pressure across several member states.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.22
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

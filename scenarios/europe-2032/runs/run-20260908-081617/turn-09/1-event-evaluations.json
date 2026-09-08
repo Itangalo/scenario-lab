@@ -1,0 +1,259 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.37692250306688424,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.03666666666666667,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.10378006389697314,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.12000000000000001,
+    "probability_samples": [
+      0.08,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.21080083888449308,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6325000345512303,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.19333333333333333,
+    "probability_samples": [
+      0.21,
+      0.21,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.23386000363717396,
+    "triggered": false
+  },
+  {
+    "description": "A major AI lab announces a breakthrough in automated verification of model reasoning, enabling fast and reliable detection of deceptive or goal-directed behaviour in systems above capability 70. The method works post-hoc on already-deployed models and is quickly adopted by red teams globally. This shifts the balance between offensive and defensive actors in AI security, though it does not close the gap in interpretability.",
+    "emergent": true,
+    "id": "emergent_verification_breakthrough",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9526966347343313,
+    "triggered": false
+  },
+  {
+    "description": "Amid deepening public anger over AI-driven displacement and opaque decision-making, a coalition of mid-sized EU member states launches a joint initiative to build a sovereign, auditable AI stack based on open-weight models below capability 65. The effort is framed as a democratic alternative to both uncontrolled frontier systems and foreign dependence. Initial funding is modest but symbolically significant, drawing on emergency resilience allocations.",
+    "emergent": true,
+    "id": "emergent_digital_cohesion_initiative",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.3108424226222236,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.025084958620317566,
+    "triggered": true
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6955049130238575,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.4342183541175678,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.0,
+      0.13,
+      0.13
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.3342367546706585,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.0,
+      0.14,
+      0.14
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6677167773634903,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.02,
+    "probability_samples": [
+      0.0,
+      0.06,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.45980497307361257,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.08,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.4827050244411577,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.15238987523262326,
+    "triggered": false
+  },
+  {
+    "id": "emergent_compute_pact",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "Mid-sized democracies intensify coordination on compute pooling, mutual standards, and joint evaluation frameworks. Initial pilot agreements are signed, focusing on resilience and sovereign access. The pact remains informal but begins to shape investment and export decisions.",
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.13
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.3066173874092878,
+    "triggered": false
+  },
+  {
+    "id": "emergent_compute_pact_activation",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "The informal compute pooling discussions among mid-sized democracies crystallize into a formal pact with binding commitments on mutual access during crises and shared standards for model evaluation. The EU is invited as a bloc, but participation requires ceding some autonomy over export licensing. The pact begins initial operations, creating a counterweight to unilateral great-power control.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_asml_sovereignty_decision",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "Under sustained U.S. pressure to restrict ASML's servicing of Chinese lithography tools, the Dutch government triggers a national sovereignty clause, conditionally halting compliance unless the EU collectively backs a unified semiconductor independence strategy. The move forces an emergency debate in the Council, exposing fractures but also opening a path to binding EU-level action on supply chain autonomy.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

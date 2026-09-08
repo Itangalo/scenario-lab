@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Open-Weight Firewall Initiative −2, Establish enforceable sovereign access rights −3, EU Frontier AI Programme −3, priority −1 = −15  
+PROPOSAL BONUS: Strengthen Open-Weight Firewall (cat 3, large) +4 — directly answers cyber_major_incident, severe and recent, large measure targeting misuse surface  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 16.0 last turn, InvestAI Gigafactories finishes t7 +5, export_control_escalation t7 −2, capability rose 1.5 −1 = 15.0  
+US_POSTURE: CONSOLIDATION  
+emergent_regional_defense_pact -- first noted turn 7, listed in 1 turn(s) so far: The informal EU data-sharing pact evolves into a binding regional defense alliance for AI-critical infrastructure, with automated incident escalation, shared red teams, and coordinated sanctions against foreign actors conducting offensive model runs targeting member states. The pact becomes operational after a series of near-miss cyber intrusions traced to a non-aligned state actor.  
+emergent_regional_data_coalition -- first noted turn 7, listed in 1 turn(s) so far: The informal EU data-sharing talks crystallize into a formal mutual defense pact for AI-critical infrastructure, with binding commitments to joint incident response, shared threat intelligence, and coordinated sanctions against foreign actors targeting member states' AI systems. The pact activates in response to growing cyber threats and perceived unreliability of transatlantic coordination.

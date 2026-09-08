@@ -1,0 +1,13 @@
+### The Hollow Core Filled — Just in Time
+
+The EU begins urgent work on **Secure the Core**, a new initiative to retrofit two former InvestAI Gigafactory sites in Portugal and Poland into air-gapped evaluation nodes, following the revelation that audit rights were never exercised. This effort repurposes infrastructure from the now-completed **InvestAI Gigafactories** and **Tech Sovereignty Package**, though the reallocation of capital remains partial and contested. Initial funding is drawn from residual project surpluses and phased decommissioning, but the full €200bn cited in early proposals is not yet secured—budget negotiations among member states delay full commitment. Spain and Finland co-lead protocol design, helping to ease initial tensions, but staffing and operational frameworks for the planned EU Evaluation Corps remain under development.
+
+The **Sovereign Detection Front** is now integrated into EuroHPC’s Tier-1 infrastructure, generating real-time anomaly alerts. However, interpretive capacity lags—the system detects disturbances but cannot yet attribute intent or mechanism. The **Emergency Sovereign Interruption Authority** is legally ratified, but its operational credibility depends on the success of future evaluation infrastructure now only in early deployment.
+
+### Capability Creeps On
+
+Global AI capability advances to 73.5, driven by tighter integration of reasoning modules and faster training loops. No self-improvement loop is confirmed, but verification capacity is increasingly strained. Open weights, derived from slightly older architectures and incremental replication gains, rise modestly to 58.0. This reflects continued diffusion and optimization within existing open frameworks, not a sudden leap—no major new release or breakthrough in replication has occurred.
+
+### Fragile Gains Amid Institutional Strain
+
+Political capital rises to 11.0, supported by the completion of two prior measures and the symbolic momentum of launching Secure the Core. The +5 proposal bonus applies due to its direct response to *eval_anomaly_reports* and *rsi_onset*, but the contribution from rising sovereignty is capped at +3 per constitutional rules (sovereignty increased by 1.0, from 18.0 to 19.0). Public sentiment remains stagnant at 23.0, as local AI rollbacks in welfare systems continue to fuel distrust. Resilience dips to 28.0 as capability outpaces defences. ai_safety improves slightly to 4.0—not due to stronger safeguards, but because the rate of capability growth has begun to slow relative to safety investment. Sovereignty reaches 19.0, reflecting early progress on domestic evaluation infrastructure, though full operational capacity is still months away.

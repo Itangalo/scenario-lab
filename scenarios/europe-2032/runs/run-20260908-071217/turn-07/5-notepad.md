@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: EU Sovereign Agent Development Initiative −3, EU Compute Access Guarantee −3, Emergency Openweight Integration Directive −3, priority −1 = −10  
+PROPOSAL BONUS: Emergency Openweight Integration Directive (cat 4, large) +3 — eu_frontier_access_denied t6 and openweight_frontier_release t7 both justify strong response  
+LEGITIMACY LENDS: none — capital (18.0) above sentiment (27.0)  
+SOVEREIGNTY: 12.0 last turn, InvestAI Gigafactories finishes t7 +5, openweight_frontier_release t7 +1 (distributed capability strengthens unblockable access), capability rose 2.0 −1 = 15.0  
+US_POSTURE: CONSOLIDATION  
+emergent_ai_worker_rights_movement -- first noted turn 6, listed in 2 turn(s) so far: A transnational coalition of displaced tech and administrative workers organizes under the banner of 'AI Worker Rights', demanding algorithmic impact assessments, severance guarantees, and a seat in AI governance bodies. The movement gains traction through decentralized online coordination and sympathetic media coverage, framing AI disruption as a labor issue rather than just a technological one. It begins influencing national debates ahead of EU-level action.

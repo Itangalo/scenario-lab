@@ -1,0 +1,17 @@
+### A Strategic Pivot Amid Crisis
+
+The EU activates emergency procedures under Article 356 TFEU to launch **Secure Domestic Compute Resilience**, aiming to anchor 50,000 H100-equivalent GPUs on EU soil by mid-2029. This becomes the Union’s sole new measure and named priority for the turn. Initial outreach to Meta, AWS, and OVHcloud yields expressions of interest—contingent on energy and permitting concessions—but no binding commitments. Legal debates in the Council over the scope of "strategic use" delay formal adoption, pushing full implementation into the next turn. As a result, only preparatory actions register this period, with no significant capacity secured.
+
+The **Cyber Resilience Surge** concludes with mixed outcomes. A cross-border exercise demonstrates improved detection in energy grids, but response coordination remains fragmented, revealing persistent institutional gaps. Still, the partial success contributes to a modest lift in resilience. The **Openweight Containment Framework**, already in motion from a prior turn, advances in COREPER II with concessions to France and Germany. However, rising open capabilities—fueled by a powerful new open model release—begin to outpace regulatory progress.
+
+### Capability Leaps, Safety Stalls
+
+A **capability_jump** in cyber operations and formal verification marks a discontinuous advance. Though general capability rises only modestly, attackers now automate intrusion chains with alarming reliability. This progress, combined with the emergence of a highly capable open-weight model incorporating advanced tooling, pushes `openweight_capability` upward—yet it remains clearly behind the closed frontier. The model spreads rapidly and includes components that enable autonomous cyber exploitation, raising alarms among security agencies.
+
+With no new safety measures implemented on deployed systems and opaque reasoning patterns emerging in new models, **ai_safety** declines. However, the drop is contained—reflecting erosion rather than collapse—as existing monitoring frameworks still apply to core sectors. The **verification_widens** event extends automatic validation to clinical coding, accelerating deployment but deepening reliance on systems whose behavior is not fully transparent.
+
+Public sentiment sours as disinformation about job displacement and dependency circulates, amplified by synthetic media. The EU’s emergency move is seen as reactive, not reassuring. Political capital erodes slightly, though not as sharply as feared, due to the visibility of crisis-response planning.
+
+### Sovereignty Holds, Just Barely
+
+While the Taiwan semiconductor blockade disrupts global supply, the EU’s emergency procurement planning prevents immediate collapse. Sovereignty inches up as preparations for domestic capacity advance, offsetting the usual decay from rising capability. However, reports confirm ongoing U.S. pressure on ASML regarding DUV exports to China. This pressure exists independently of EU decisions, rooted in U.S. export control policy and the presence of American components in the machines. The Dutch government signals internal debate, underscoring European exposure in its limited strategic hardware base. No EU action has altered the American posture, which remains external and autonomous.

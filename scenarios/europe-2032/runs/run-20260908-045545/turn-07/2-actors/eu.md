@@ -1,0 +1,22 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — **finished**
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — **finished**
+- `Sovereign Evaluation Mandate (category 1, costs 3 per turn, started turn 4, finishes on turn 8): Establish a permanent EU authority with binding pre-release evaluation powers over all models above a threshold capability, including access to weights, training data snapshots, and agent behaviour logs`
+- `EU AI Incident Response Corps (category 6, costs 3 per turn, started turn 5, finishes on turn 8): A standing, cross-border technical unit trained and equipped to deploy within hours to major AI-enabled incidents, conducting forensic analysis, containment, and recovery support` — **in flight**
+- `Sovereign Compute Access Framework (category 4, costs 3 per turn, started turn 7, finishes on turn 9): A binding mechanism to ensure that EU public institutions, critical industries, and vetted researchers can access high-performance AI systems running on sovereign infrastructure, even during global supply shocks or foreign export restrictions`
+
+## New measure
+None this turn.  
+Waiting for the fallout from the ai_investment_collapse to clarify which compute providers will survive, and whether the anomaly reports reflect a systemic control failure or isolated noise.
+
+## Priority
+**Sovereign Compute Access Framework** — because the convergence of eval_anomaly_reports and export_control_escalation confirms that both capability and access are now volatile and contested, making guaranteed operational access to sovereign compute not just a strategic priority but a precondition for all other measures, including evaluation and response.
+
+## In practice
+We are standing up the Sovereign Compute Access Framework under Article 122 TFEU, treating compute as critical infrastructure in times of crisis. The legal basis is emergency economic governance, but the implementation is technical: we are building sovereign middleware—developed by a consortium led by Fraunhofer and Thales—that will sit between EU-reserved compute tranches and workload schedulers, enforcing allocation rules based on mission-criticality, sectoral vulnerability, and research urgency. This is not theoretical: the InvestAI Gigafactories in Marseille, Vilnius, and Gdansk are now legally required to reserve 40% of their frontier-capable capacity for Framework-eligible users, with private hyperscalers (notably OVHcloud and Atos) contributing additional sovereign slices under revised hosting agreements that prevent foreign administrative override.
+
+Germany and France are pushing for immediate activation, but Poland and Hungary demand national control over allocation decisions, fearing exclusion from high-value workloads. To break the deadlock, we are introducing dual-key authentication: no allocation above a national threshold can be made without co-approval from the Commission and the host member state. We are also creating regional buffers—15% of total reserved capacity set aside for nationally led projects, co-financed by cohesion funds redirected from stalled digital modernisation programmes. The €4.1bn needed for middleware development, monitoring, and initial operations will come from that reallocation and a temporary 7% levy on commercial AI workloads above 50 petaFLOPs-day, assessed through mandatory reporting under revised energy efficiency regulations.
+
+At the same time, we are holding firm on the Sovereign Evaluation Mandate: despite lab resistance, we are finalising the evaluation threshold at 55.0 on the ai_capability index, meaning any model approaching autonomous research or multi-day task execution will require pre-release review. ENISA and the new evaluation authority are conducting joint dry runs with the Incident Response Corps, simulating containment of a rogue agent leak from a training environment—exactly the kind of incident the anomaly reports suggest may already have occurred. But without sovereign access to the systems we are meant to evaluate and defend, all of this remains ceremonial. The Framework is not about building more compute; it is about ensuring that what we have cannot be switched off from the outside, or starved from within, when it matters most.

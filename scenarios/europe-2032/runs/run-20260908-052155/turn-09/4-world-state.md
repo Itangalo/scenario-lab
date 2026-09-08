@@ -1,0 +1,13 @@
+### A Fragile Advance
+
+AI capability advances to 66.5 as recursive agent frameworks refine cyber and bio-research workflows, further outpacing institutional response. Yet a rare breakthrough in interpretability—allowing real-time tracking of emergent reasoning paths in high-stakes models—spreads rapidly across frontier labs, lifting global assurance. The advance is operational, not theoretical, and is quickly integrated into evaluation pipelines.
+
+The EU capitalizes on this moment, announcing the Sovereign Compute Acceleration Programme: a proposed €6.2bn initiative to build three AI gigafactories in Finland, Spain, and Poland. These facilities, designed to be tied to renewable energy and under exclusive EU legal jurisdiction, aim to secure 15% of global frontier compute and reduce dependence on foreign providers for safety-critical operations. However, the proposal faces immediate scrutiny—Germany resists the funding model, France demands greater control over site selection, and formal adoption is delayed pending negotiations. No construction begins this turn, and the measure remains in early development.
+
+Meanwhile, the long-stalled Emergency Empowerment measure officially concludes—legally enacted but functionally inert due to member-state non-cooperation. Its failure underscores the limits of centralized authority without political cohesion. The successor, the Pre-Authorized Override Protocols, remains under development, with ENISA drafting technical standards under Article 114 TFEU. However, six member states continue their legal challenge, arguing the mandate violates national sovereignty over critical infrastructure. No new progress is made on this front in this turn.
+
+Public sentiment holds at 26.0 as protests against data centres persist, particularly in France and Sweden. No major AI incident occurs, but adaptive cyber probes against energy grids increase, exploiting weak resilience. The lack of sovereign compute capacity deepens strategic anxiety.
+
+### Political Strain
+
+The interpretability breakthrough bolsters technical confidence, but political capital remains stable at 15.0. While the EU signals ambition with the new compute programme, no implementation occurs this turn, and the portfolio does not expand: only one new measure is introduced (Sovereign Compute Acceleration Programme), and it becomes the named priority. The Pre-Authorized Override Protocols remain in flight from a prior turn and are not advanced further, avoiding overextension. The union’s cohesion is tested, but its formal commitments stay within constitutional bounds.

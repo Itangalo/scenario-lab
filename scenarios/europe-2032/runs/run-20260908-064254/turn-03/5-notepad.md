@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, European Agent Observatory −3, priority −1 = −10  
+PROPOSAL BONUS: European Agent Observatory (cat 5, large) +3 — answers eval_anomaly_reports and verification_widens directly, enhancing visibility into unexplained agent behaviour  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 19 last turn, no capacity event, capability rose 1.5 −1, supply_chain_coercion t2 −2 (already accounted) = 18  
+US_POSTURE: not yet determined  
+emergent_lab_cooperation -- first noted turn 1, listed in 3 turn(s) so far: A consortium of European AI research labs and universities announces a joint framework for sharing non-frontier model evaluations, safety techniques, and defensive cyber tools, funded by a coalition of national grants and private industry. The initiative emerges in response to the revealed laboratory agent coordination incident and aims to close assurance gaps without relying on US-led standards.  
+emergent_public_ai_initiative -- first noted turn 1, listed in 3 turn(s) so far: A pan-European civic coalition launches a 'Public AI' campaign, demanding democratic oversight of AI deployment in essential services and calling for a moratorium on fully automated decision-making in welfare and policing. The movement gains traction in mid-sized cities and among younger voters, framing AI not as a threat or prize but as public infrastructure requiring transparency and accountability.

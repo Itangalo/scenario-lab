@@ -1,0 +1,11 @@
+### Sovereignty Without Software
+
+The European Union completed the Sovereign Audit and Evaluation Launch, formally establishing the European AI Evaluation Agency. Yet its authority was immediately contested: the European Court of Justice fast-tracked a challenge from Germany and Poland, arguing overreach on national sovereignty. A last-minute tripartite compromise preserved a weakened technical office under Article 114 TFEU, but stripped it of central enforcement power. National regulators retained veto rights, fracturing the Union’s oversight.
+
+Meanwhile, the Emergency Sovereign Compute Mobilisation gained hardware but not cohesion. CERN and CNRS reported thousands of petaflops repurposed, and Finland advanced LUMI-2’s recommissioning. But without a unified software stack, clusters risked becoming isolated fiefdoms of computation. The Union launched the Secure Stack for Critical Functions as a binding directive under NIS2, mandating deployment in healthcare, energy, and civil protection. Germany resisted, citing national control, but accepted leadership of the core development team in exchange for participation.
+
+Public sentiment remained frozen at crisis levels. A wave of disruptive cyber intrusions, attributed to decentralized hacktivist groups using accessible AI tools, overwhelmed response systems. Though not strategically damaging, they amplified distrust in digital governance. A nascent civil society watchdog, formed from national ethics boards, began publishing unofficial compliance scores, challenging the legitimacy of EU-level institutions.
+
+The US posture of CONSOLIDATION remained in force, rationing frontier access and increasing pressure on EU sovereignty. With no safety upgrades and global AI capability advancing to 65.0, the gap between capability and control widened. Open-weight models reached 54.0, enabling more sophisticated misuse. Resilience held at 44.0, absorbing minor incidents but unprepared for larger shocks.
+
+Political capital remained at 1.0, barely sufficient to sustain existing measures. The new Secure Stack initiative was added to the portfolio, but no immediate gains followed. The Union acted, but not decisively — cohesion, trust, and time were all in short supply.

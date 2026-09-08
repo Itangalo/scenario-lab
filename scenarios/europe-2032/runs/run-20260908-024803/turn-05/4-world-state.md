@@ -1,0 +1,13 @@
+### A Leap and a Rift  
+A leading AI laboratory released a system demonstrating reasoning capabilities far beyond prior expectations—its internal processes no longer legible to human reviewers. This discontinuous advance pushed global AI capability to 68.0, accelerating the frontier by over five points in a single leap. With no safeguards in place, the opacity of the new models strained existing oversight mechanisms. Interpretability tools faltered, audit trails grew inconsistent, and confidence in current safety frameworks eroded significantly—though not universally abandoned. Some research collectives retained limited probing capacity, and legacy red-teaming protocols still function in constrained domains, preventing a total collapse.
+
+Simultaneously, the EU’s *Global Evaluation Compact* collapsed when participating labs refused to share internal agent logs, citing proprietary and security concerns. The failure became public, discrediting multilateral evaluation just as the U.S. election concluded. In a surprise move, one leading lab announced it would relocate core research operations to a proposed EU-hosted cloud enclave, citing the need for neutral, stable governance. Washington reacted sharply, warning allies against hosting strategic AI assets outside allied oversight, creating a diplomatic rift.
+
+### The EU’s Response  
+In response, the EU announced the *Frontier Evaluation Enclave*, a proposed binding framework that would require full technical access for any frontier model accessing the EU market. The initiative is framed as a sovereign necessity and leverages the lab’s offer to anchor future evaluation authority in EU law and infrastructure. However, the framework remains in early drafting stages and will not take effect until formal adoption—no earlier than next turn. Member state negotiations have begun, but consensus is not guaranteed. One member state has escalated resistance to central oversight, and public sentiment dipped to 37.0 amid visible job losses in legal and administrative sectors, now clearly tied to AI adoption.
+
+The *Secure Open-Weight Access* initiative concluded successfully, integrating several high-capability models into a secure red-teaming environment. Yet with *Hardened Critical Networks* only partially implemented, resilience declined slightly as new threats emerged faster than defences could adapt.
+
+The U.S. election resulted in a decisive victory for a candidate treating AI as a strategic asset. The administration will take office next turn.
+
+US_POSTURE: pending (administration takes office next turn)

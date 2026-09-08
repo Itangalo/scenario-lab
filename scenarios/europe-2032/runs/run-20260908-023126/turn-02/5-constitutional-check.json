@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Modelling choice violated: The portfolio carries three large measures (InvestAI Gigafactories, Cyber Shield, Emergency Sovereign AI Access Programme) and a named priority, exceeding the limit of \"at most one new measure per turn, and at most one named priority\" (Constraint 5). The Emergency Sovereign AI Access Programme is introduced this turn as a new measure, while the narrative and notepad confirm two pre-existing large measures remain active. Introducing a third large measure without retiring one violates the cap on concurrent large measures.\n- Invariant violated: `eu_political_capital` drops from 45.0 to 37.0 (a change of −8.0), which is not justified under the narrative or notepad. The notepad shows no legitimacy lend, no event-based penalty beyond the portfolio charge of −10 and a proposal bonus of +6, implying a net change of −4, which would result in 41.0, not 37.0. A drop of 8 points exceeds the accounted terms and violates the requirement that metric movements be traceable to defined rules and events (Constraint 2 and overall realism guard)."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Tech sovereignty package −3, Post-Deployment Redress Mechanism −3, Accelerate Resilience Hardening −3, priority −1 = −10  
+PROPOSAL BONUS: none — no recent event directly answered by new measures  
+LEGITIMACY LENDS: none — public_sentiment (28.0) < eu_political_capital (19.0)  
+SOVEREIGNTY: 26.0 last turn, InvestAI Gigafactories finishes t9 +5, European Compute Security Audit Regime finishes t9 +5, capability rose 1.5 −1 = 35.0 → capped at 30.0 due to metric cap and implementation lag  
+US_POSTURE: ALLIANCE  
+emergent_compute_black_market_expands -- listed in 2 turn(s) so far: Distributed training networks in Eastern Europe continue to export model weights to third-party actors, enabling uncontrolled diffusion of mid-tier AI capabilities into high-risk domains. Intelligence agencies confirm the trend is accelerating, with new nodes emerging in non-aligned jurisdictions.  
+emergent_regional_automated_healthcare_failure -- listed in 2 turn(s) so far: A coordinated failure in AI-driven regional healthcare triage systems across several member states leads to delayed treatments and public outcry. The systems, part of a recent cross-border digital health initiative, misprioritized patients during peak loads, exposing fragility in distributed AI governance. Investigations reveal inconsistent oversight and patchwork integration, undermining trust in EU-wide AI adoption.

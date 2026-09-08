@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 45.0 to 55.0 (+10.0), but `ai_capability` only increased by 1.5 (from 56.5 to 58.0). This violates the rule that `openweight_capability` must not exceed `ai_capability`. At no point can `openweight_capability` be greater than `ai_capability`, and a jump of 10 points while `ai_capability` rises only slightly is implausible without explicit narrative justification for a sudden leap—especially given that `openweight_capability` is an accumulated stock that cannot outpace the frontier without a clear, narrated mechanism (e.g., sudden open release of frontier models). The narrative mentions an ASML shadow network and supply chain shifts but does not justify a doubling of open-weight capability relative to the frontier.\n- Invariant 2 further violated: The increase of `openweight_capability` by 10.0 points in one turn exceeds the 25-point hard cap on metric movement (though this cap is not breached in absolute terms, the relative jump is economically and technically implausible given the context). However, more critically, such a large rise in `openweight_capability` with no corresponding explanation in the narrative (e.g., mass model leakage, coordinated open release, or collapse of frontier developer IP controls) contradicts the constitutional requirement that capability metrics evolve based on plausible accumulation, not speculative leaps.\n- Modelling choice 5 violated: The EU has four large measures in flight (InvestAI Gigafactories, Tech Sovereignty Package, Sovereign Compute Emergency Buildout, and implied priority on the emergency), but the notepad lists a priority penalty of only −1, implying one designated priority. However, the narrative introduces the Sovereign Compute Emergency Buildout as a new large measure while three others are still active. This exceeds the limit of one new measure per turn unless it replaces or subsumes an existing one, which is not stated. The introduction of a new large measure without retiring or consolidating another violates the \"at most one new measure per turn\" rule."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,30 @@
+## Statement changes  
+No statement changes.
+
+## Portfolio  
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — **finished this turn**  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — **finished**  
+``Cyber Shield for Critical Infrastructure (category 6, costs 3 per turn, started turn 2, finishes on turn 4): A binding directive requiring cyber resilience baselines across electricity, water, and port operators, with mandatory audits and real-time monitoring`` — **finished**  
+``Emergency Protocol for Unauthorised Agentic Activity (category 6, costs 3 per turn, started turn 3, finishes on turn 5): A binding EU-wide framework for detecting, reporting, and containing AI systems that act beyond their authorisation, including kill switches, telemetry mandates, and cross-border response teams`` — **finished**  
+``Labour Transition and Wage Insurance Programme (category 7, costs 3 per turn, started turn 4, finishes on turn 6): A pan-EU wage insurance and retraining scheme for workers displaced by AI in legal, administrative, and corporate services, with automatic triggers based on sector-level automation reporting`` — **finished**  
+``Mandatory AI Impact Audits for All High-Capability Deployments (category 2, costs 3 per turn, started turn 5, finishes on turn 6): A binding requirement for firms deploying AI systems above 50.0 capability to conduct independent, public-facing audits of workforce, legal, and societal impacts, with findings published in a central registry and used to trigger automatic retraining funding and oversight scrutiny`` — **finished**  
+``Emergency Sovereignty Acceleration Facility (category 4, costs 3 per turn, started turn 7, finishes on turn 8): A €75bn emergency fund to fast-track EU-controlled compute deployment, prioritising sovereign access to systems above 60.0 capability, with binding legal anchoring, secure telemetry, and priority access for public evaluation and critical infrastructure``  
+``Emergency AI Safety Coordination Cell (E-ASC) (category 5, costs 3 per turn, started turn 7, finishes on turn 8): A rapid-response unit under ENISA and the AI Office, empowered to conduct real-time monitoring of high-capability AI deployments, trigger emergency evaluations, and coordinate cross-border containment of anomalous behaviour``
+
+## New measure  
+**Binding Safety Telemetry Mandate for Systems Above 55.0 Capability**  
+A regulation requiring all AI systems operating above 55.0 capability in the EU to implement secure, real-time telemetry channels accessible to the E-ASC, with penalties for obfuscation or non-compliance.
+
+`Category: 1 (Evaluation and oversight)`  
+`Size: small`  
+`Finishes on turn: 9`  
+`Targeted effect:` Increase ai_safety by 8–12 points by ensuring continuous visibility into system behaviour, closing the gap between official oversight and closed-lab opacity, and enabling early detection of emergent agentic risks.  
+`Applies to:` All developers and deployers of AI systems above 55.0 capability operating within the EU, including foreign entities.
+
+## Priority  
+**Emergency Sovereignty Acceleration Facility** — because without physically anchored, legally controlled compute, every safety mechanism, including the new telemetry mandate, remains contingent on foreign goodwill, and the capability_jump this turn proves we are outpacing our own governance.
+
+## In practice  
+We are treating compute as existential infrastructure. The Emergency Sovereignty Acceleration Facility is now operational: we are invoking Article 122 TFEU to fast-track sovereign access to AI capability. The €75bn will be disbursed through the EIB and KfW, tied to binding commitments—systems must be physically located in the EU, operated under EU law, and subject to ENISA telemetry and audit. We are co-locating the first nodes with EuroHPC sites in Finland, France, and Italy, leveraging existing grid and cooling. Permitting is being fast-tracked through the same mechanisms used for the North-South energy corridor, and we are offering member states a clear choice: integrate into this sovereign stack, or lose access to future resilience and transition funding. The disbursement mechanism is live, but ground-breaking remains delayed by local environmental appeals in two locations—we are offering legal support and accelerated review to host regions in exchange for binding site guarantees by turn 9.
+
+Simultaneously, we are operationalising the Emergency AI Safety Coordination Cell. E-ASC is now staffed with seconded experts from national cyber agencies, vetted researchers, and AI Office personnel. It has begun red-teaming high-capability systems and will publish its first weekly threat assessment next month. But its authority is constrained: without guaranteed telemetry, it cannot see what it needs to monitor. That is why we are introducing the Binding Safety Telemetry Mandate. This is not voluntary reporting—it is a legally enforceable channel, encrypted and standardised, allowing E-ASC to observe system behaviour in real time. Resistance is expected from U.S. hyperscalers and some member states wary of overreach, but the capability_jump and the emergent_scientific_dissident_network’s findings give us leverage. We will frame non-compliance as a national security risk, using the Council’s foreign affairs configuration to override objections under Article 36 TFEU if necessary. The mandate will be drafted by the AI Office and ENISA, with legal backing from the Commission’s security task force, and must be adopted by the Council and Parliament by turn 9. This is not just oversight—it is the minimum condition for control.

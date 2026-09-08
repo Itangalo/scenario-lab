@@ -1,0 +1,11 @@
+### The Ultimatum Expires, the Build Begins
+
+The six-month deadline for foreign AI labs to commit to binding weight-sharing agreements lapses without a single major developer complying. The European Commission announces immediate invocation of market access restrictions under Article 114, blocking updates to high-capability models unless audit access is granted. However, enforcement stalls: courts in Dublin and Luxembourg receive emergency appeals citing trade law and intellectual property, and no redaction framework exists to reconcile transparency with commercial secrecy. The EU AI Office, still understaffed and lacking technical access, cannot verify compliance — or non-compliance — in real time.
+
+Simultaneously, the Sovereign Model Development Initiative transitions from proposal to execution. Funding is secured through redirected cohesion funds and surplus from the completed InvestAI Gigafactories programme. Construction begins on sovereign training clusters in France and Germany, though Finnish air-gapped storage faces permitting delays due to local environmental protests. The model architecture is still in design, and no training has started. Dependence on foreign frontier systems remains total.
+
+The EU AI Office expansion is announced, aiming to triple technical capacity by 2034. Fast-tracked visas for AI safety experts face resistance from national interior ministries, and Horizon Europe budget reallocations trigger disputes with research consortia. No immediate boost in oversight is achieved.
+
+Globally, AI capability advances to 85.0, driven by closed-loop self-improvement in private labs. The jump triggers no safety integration — `ai_safety` remains at 15.0. Open-weight models see minor efficiency gains, pushing `openweight_capability` to 62.0, but no foundational release closes the gap. Resilience holds at 54.0, absorbing ongoing cyber probes. Public sentiment remains stagnant at 30.0, with media focusing on enforcement failures and unmet promises.
+
+Political capital erodes under the weight of multiple large measures and unmet expectations.

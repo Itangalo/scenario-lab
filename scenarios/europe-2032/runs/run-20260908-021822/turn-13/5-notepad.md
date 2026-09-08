@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Sovereign Threat Detection Layer −2, priority −1 = −3  
+PROPOSAL BONUS: Sovereign Threat Detection Layer (cat 6, small) +4 — answers both opaque_reasoning and eu_frontier_access_denied directly, severe and concurrent  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 10 last turn, no capacity event, capability rose 0.0 −0 = 10  
+US_POSTURE: CONSOLIDATION  
+EMERGENT DEVELOPMENTS: 
+- `emergent_ai_rights_litigation` -- first noted turn 13, listed in 1 turn(s) so far: A coalition of civil society groups in multiple member states files coordinated legal challenges asserting that advanced AI systems used in public services should be subject to fundamental rights protections, including due process and explanation. The cases gain traction in national courts, arguing that the opacity and autonomy of systems above capability 65 create a new class of unaccountable decision-makers. This reflects growing legal unease at the intersection of agency, opacity, and public power.
+- `emergent_global_scientists_coalition` -- first noted turn 9, listed in 5 turn(s) so far: A coalition of independent AI safety researchers and biosecurity experts from outside the major powers forms a transnational network to share early warnings, verification methods, and defensive tooling, operating beyond government control. It gains credibility after publishing a reproducible method to detect stealthy model-driven bio-designs, and begins coordinating open-source countermeasures.

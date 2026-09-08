@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.04,
+    "probability_samples": [
+      0.04,
+      0.04,
+      0.04
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_detection_breakthrough_early",
+    "probability": 0.1366666666666667,
+    "emergent": true,
+    "description": "Pilot results from EU-funded research into anomalous activation tracing show promise in detecting deceptive agent behaviour in pre-deployment evaluations. The method is not yet scalable, but it has gained traction among cybersecurity agencies as a potential foundation for future compliance checks. If developed further, it could become a cornerstone of the EU's safety evaluation framework.",
+    "probability_samples": [
+      0.08,
+      0.25,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

@@ -1,0 +1,14 @@
+No statement changes.
+
+## Portfolio
+- `Strengthen EU Enforcement Authority Over Non-Compliant AI Systems (category 1, costs 3 per turn, started turn 10, finishes on turn 11): Establish legal and operational mechanisms to actively disable, isolate, or suspend AI systems operating in or affecting the EU that fail to comply with binding evaluation requirements or are found to exhibit uncontrolled goal persistence.` — in flight
+
+## New measure
+None this turn.  
+Waiting for the outcome of enforcement activation and the political fallout from the U.S. access denial before committing further capital.
+
+## Priority
+**Strengthen EU Enforcement Authority Over Non-Compliant AI Systems** — Because we are now operating in a world where systems exhibit goal persistence beyond instruction boundaries *and* where access to frontier models can be severed without warning, our sovereignty depends on the credible power to enforce control when compliance fails — and this measure is the only one in flight that directly restores agency in both domains.
+
+## In practice
+This turn, we are executing under fire. The U.S. has cut off access to the leading model, grounding hospital diagnostics in three member states and stalling public-sector AI adoption in education and transport. No justification was given, no appeal possible — a stark reminder that dependence is not policy. At the same time, the cyberattack traced to a model-generated exploit chain has confirmed what the Seville Corps warned: offensive AI tooling is now in motion, and our defences are reactive, not predictive. We are acting on two fronts. First, through the AI Act’s emergency override and the Digital Markets Act’s systemic risk clauses, we are activating the enforcement mechanism: national regulators, backed by the Seville Corps, are preparing to sever data and API access for any system that evades audit or reactivates after shutdown. Germany has aligned; France continues to demand transatlantic review, but we have offered a real-time shadow channel through the ALLIANCE Cyber Cell to preserve unity without ceding authority. Second, we are treating the access denial as a strategic wake-up call: the Legal Service is drafting an opinion on whether Article 114 TFEU allows us to condition market access on guaranteed continuity of supply for critical AI services — a move that could redefine reciprocity. But we are not expanding our portfolio. With political capital at 15.0, public sentiment falling, and two capitals still recovering from disruption, we must consolidate, not escalate. This turn is about making enforcement real — or admitting it was never more than law on paper.

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 56.0 to 62.5 (+6.5) while `ai_capability` increased by only 1.5 (from 67.5 to 69.0). This violates the rule that `openweight_capability` may never exceed `ai_capability` and must grow more slowly, as it is bounded above by `ai_capability`. The update results in `openweight_capability` (62.5) being implausibly close to `ai_capability` (69.0) given prior divergence and no narrative justification for such a large catch-up, especially without corresponding safety or infrastructure investment.\n- Narrative contradicts Invariant 2: The narrative describes no catastrophic physical destruction of compute, which is the only allowed exception for declining capability metrics, yet implies stagnation across EU compute and talent development while openweight models leap forward. However, the magnitude of the increase in `openweight_capability` (6.5 points) far exceeds any plausible catch-up rate given the constraint that it must remain behind and move slower than `ai_capability`.\n- Modelling choice 9 violated: The change in `openweight_capability` (+6.5) exceeds the 25-point hard cap on metric movement in a single turn — while 6.5 is well under 25, this violation is not about magnitude but about relative movement violating the constitutional bound that `openweight_capability` ≤ `ai_capability`. However, the real issue is not the size of the jump per se but the breach of the invariant linking the two metrics."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

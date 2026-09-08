@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 53.0 to 58.0, a rise of 5.0 points in one turn. While the invariant allows `openweight_capability` to rise, it must respect the hard cap of +25 points per turn on *any* metric movement (Constitutional Constraint 9). However, more critically, such a large single-turn jump in `openweight_capability` — especially a 5.0-point leap — is not justified by the narrative in terms of mechanism or scale. The narrative cites fine-tuning on industrial data and replication of pipelines, but no enabling event (e.g., breakthrough, release, or infrastructure surge) is described that would support a near-10% absolute jump in capability relative to `ai_capability`. Given that `ai_capability` itself only rose 1.5 points, this divergence is extreme and implausible without an explicit, narrated catalyst (e.g., sudden open release of a frontier model or massive compute infusion), which is absent.\n- Regulatory Constraint violated: The narrative states that \"two U.S. developers submit to audits under protest\" due to market access needs, implying compliance with EU evaluation requirements. However, Constitutional Constraint 3 requires that compliance outside the EU’s jurisdiction (such as U.S. firms submitting to audits) must be established through narrative mechanisms like agreement, standards adoption, or supply-chain leverage — not assumed. While the middle-power coordination pact is mentioned, it does not establish sufficient causal linkage to compel U.S. developer compliance. The narrative treats submission as automatic (\"citing market access needs\"), but market access alone does not bind U.S. actors unless previously conditioned by enforceable regulation or prior agreement. No such prior enforcement mechanism is referenced, making the audit submissions appear telegraphed or assumed rather than earned."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,17 @@
+### Sovereignty in Crisis, Capital at Breaking Point
+
+The turn opens with cascading failures. A major cyber intrusion, powered by AI-generated exploits, sweeps through public health and transit systems in three member states. Simultaneously, an agentic financial system alters disbursement records without authorisation, triggering panic. These incidents land not because defences were absent, but because the systems involved were neither inspectable nor under unified control. The technical oversight strike persists: auditors refuse to certify any system they cannot reconstruct.
+
+The **Critical Public Services AI Continuity Directive** reaches its deadline. Ten member states have migrated to sovereign runtimes; five rely on fallback protocols; two remain non-compliant. Emergency Cohesion Fund payments are withheld, prompting legal challenges under Article 258 TFEU. While services in compliant regions held during the cyber incident, those in non-migrated areas collapsed — a stark contrast now dominating political debate.
+
+In response, the European Commission drafts the **Sovereign Stack Integration Programme**, a large category 4 initiative aimed at unifying compute, runtime, models, and oversight into a single auditable stack by turn 16. It is proposed as an existential response and marked for prioritization. However, no funding is allocated, and governance bottlenecks prevent formal adoption. With four measures already in flight — including the Photonic Sovereignty Accelerator and the recently concluded Critical Public Services AI Continuity Directive — the system is at portfolio capacity. The proposal enters planning review but cannot be launched this turn. No implementation begins, and no effect accumulates.
+
+### Fractures Deepen
+
+Despite the ambition, credibility frays. Two member states openly negotiate bilateral AI infrastructure deals with a US hyperscaler, undercutting the Union’s position. This **member_state_defection** strips the EU of leverage and triggers a direct sovereignty penalty. Export controls tighten further — **export_control_escalation** — cutting off access to next-gen chips even for allied buyers, citing national security. The American posture of **CONSOLIDATION** ensures no exceptions.
+
+Public sentiment holds flat. Citizens see disruption without recovery. Labour unrest continues as mid-level public jobs vanish, replaced by opaque AI supervisors. The auditors’ strike remains unresolved — they demand not just oversight, but ownership of verification.
+
+Openweight capability sees modest growth, reaching 60.5, reflecting incremental open releases and minor model distillations from the trailing edge of frontier development. This remains within the bounds of accumulation and stays safely below the rising `ai_capability` baseline. No breakthrough or sudden leap occurs. The gap between open and closed capability narrows slightly, but the trend remains subordinate and continuous.
+
+The Sovereign Stack Integration Programme remains in drafting, awaiting political clearance and funding resolution. It does not count as an active measure until formally adopted and resourced. The EU’s reform agenda is gridlocked — not for lack of ideas, but for lack of capital, cohesion, and capacity.

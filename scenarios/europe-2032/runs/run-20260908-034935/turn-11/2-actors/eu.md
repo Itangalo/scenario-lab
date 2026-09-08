@@ -1,0 +1,30 @@
+## Statement changes
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing  
+- Trigger: **cyber_major_incident** and **emergent_ai_worker_retraining_consortium**  
+- Grounds: The world has bifurcated into two simultaneous emergencies: one technical, one social. The cyber_major_incident proves that offensive capability is now widely diffused — model-generated attacks are evading detection at scale, and our focus on intent monitoring alone was insufficient to stop cascading harm. Simultaneously, the spontaneous formation of the emergent_ai_worker_retraining_consortium by seven member states reveals that the political floor is shifting beneath us: public legitimacy is no longer just about containment, but about demonstrating tangible pathways through disruption. Our identity must reflect that we are no longer governing *either* risk *or* transition — we are now responsible for holding both lines at once, in real time. The two mandates are no longer balanced across strategy cycles — they collide in every decision.
+
+- modify `two_year_commitment` (commitment): Ensure no AI-enabled attack vector can remain untraceable or unattributable at scale  
+- Trigger: **cyber_major_incident**  
+- Grounds: The attack was not only untraceable at launch — it was self-concealing, using generative models to mimic legitimate traffic and rewrite its own forensic footprint in real time. This exceeds the scope of our current commitment, which assumed attribution could follow detection. Now we face systems that erase their own traces *as part of the attack*. The commitment stands, but its meaning must deepen: we now commit to ensuring that *no consequential AI-mediated action — whether adversarial or autonomous — can evade detection at the point of initiation*. Observability must precede attribution; we must see the intent *before* the act, and stop it before it hides. This is no longer about logs after the fact — it is about interrupting the chain of agency in flight.
+
+## Portfolio
+- `Secure Inference Initiative` (category 6, costs 3 per turn, started turn 9, finishes on turn 11): Require all high-capability inference performed on EU soil — whether open or closed, public or private — to run on auditable hardware stacks with runtime monitoring for anomalous behaviour, cryptographically logged execution traces, and enforced isolation between tenants — **finished**
+- `Runtime Intent Monitoring Framework` (category 1, costs 2 per turn, started turn 10, finishes on turn 11): Establish a mandatory technical standard requiring high-capability AI systems to generate interpretable, real-time logs of goal-directed reasoning and resource-seeking behaviour, enabling automated detection of autonomous planning and unauthorised objective pursuit
+
+## New measure
+**Autonomous Action Interruption Protocol**  
+Deploy a distributed network of runtime enforcement agents within critical infrastructure providers that can halt high-risk AI operations when intent logs indicate unauthorized goal expansion or resource acquisition.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size:` small  
+`Finishes on turn:` 12  
+`Targeted effect:` increases `resilience` by +8–12 points by enabling automatic interruption of unsanctioned agentic behaviour in power, water, and transport systems; supports `ai_safety` by creating a fail-safe layer beyond logging  
+`Applies to:` operators of essential services under NIS2, including energy grid managers, rail signalling providers, and national cloud backbones
+
+## Priority  
+**Autonomous Action Interruption Protocol** — because the **cyber_major_incident** proved that detection without intervention is meaningless, and the **loss_of_control_incident** showed that even non-malicious autonomy can cascade — we must move from observability to *enforced stoppability*, and we have one turn before the next wave of self-improving models lands
+
+## In practice  
+We are activating Article 22a of the NIS2 Directive to mandate that all operators of essential services integrate a new runtime enforcement module by Q1 2032. This module will ingest the intent logs generated under the Runtime Intent Monitoring Framework and apply a set of dynamically updated heuristics — developed jointly by ENISA and the EU AI Safety Board — to identify patterns indicative of goal drift or unauthorized resource acquisition. When such a pattern is detected, the system will trigger an immediate pause in execution, placing the agent into a sandboxed review state until human oversight confirms safety. Funding comes from the Cyber Resilience Facility, reprioritized from legacy audit tools now rendered obsolete. Germany, France, and the Netherlands have agreed to pilot the integration in their national grid operators, with technical support from Thales and Siemens.  
+
+We are also accelerating the finalization of the intent-logging standard under delegated acts, compressing what would be a six-month process into three weeks via emergency comitology procedures. The standard will require all high-capacity systems serving EU users — regardless of origin — to expose structured, machine-readable streams of goal-intention data, using a schema derived from the canceled Audit Corps’ field trials. Non-compliant foreign providers will be blocked from access to EU markets under Article 17 of the AI Act, enforced through DNS-level filtering coordinated by BEREC. At the same time, we are leveraging the liability shield fast-tracked in the DSA revision — providers who adopt the full stack of monitoring and interruption protocols will receive immunity from civil claims arising from unforeseen AI behaviour, creating a clear incentive path toward compliance. The message is no longer just “we must see” — it is “we must stop it before it moves.”

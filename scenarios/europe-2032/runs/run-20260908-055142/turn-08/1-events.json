@@ -1,0 +1,27 @@
+[
+  {
+    "description": "One or more member states break from a common position under external pressure. It is defended at home as pragmatism and read everywhere else as the Union being unable to hold its own line.",
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "The ongoing wave of job losses in administrative, legal support, and mid-level software roles intensifies across multiple EU countries, with unions filing collective grievances and national media sustaining coverage. This deepens political pressure for transitional support and retraining programs, making labour displacement a central issue in EU policy debates.",
+    "emergent": true,
+    "id": "emergent_labour_displacement_wave",
+    "probability": 0.3333333333333333,
+    "probability_samples": [
+      0.3,
+      0.35,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6318394711529123,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7959990836217776,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.06,
+    "probability_samples": [
+      0.02,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.17947843436965105,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6202500470475983,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3452532623054868,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.18333333333333335,
+    "probability_samples": [
+      0.15,
+      0.2,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4087533285970123,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regulatory_moratorium_push",
+    "probability": 0.2833333333333333,
+    "emergent": true,
+    "description": "The formal proposal for an EU-wide moratorium on open-weight models above capability level 43 gains renewed traction following the uncontrolled agent incident. With early backing from Austria, Finland, and Luxembourg, the initiative is reframed as a necessary emergency measure rather than a precaution. Civil society groups organize a cross-border petition, and the European Data Protection Supervisor issues a statement supporting immediate action, citing systemic risks to democratic infrastructure.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.400316311854477,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regulatory_backlash",
+    "probability": 0.11666666666666665,
+    "emergent": true,
+    "description": "The coalition pushing for binding restrictions on open-weight models above capability level 40 intensifies its campaign, leveraging the recent breach and declining public sentiment. National parliaments in Germany, the Netherlands, and Belgium begin drafting emergency legislation, and the European Parliament schedules a fast-tracked debate. The movement gains momentum as security experts warn that level 45 open models are already weaponized in the wild.",
+    "probability_samples": [
+      0.0,
+      0.35,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.2780918854219724,
+    "triggered": false
+  }
+]

@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Sovereign Model Development Initiative −3, Emergency Sovereign Red-Teaming Expansion −3, priority −1 = −7  
+PROPOSAL BONUS: Emergency Sovereign Red-Teaming Expansion (cat 6, large) +4 — answers cyber_major_incident directly, recent and severe  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 18.0 last turn, InvestAI Gigafactories finishes t7 +5, Sovereign Model Development Initiative in flight +0, capability rose 1.5 −1 = 22.0 → but US_POSTURE: CONSOLIDATION imposes decay at top of rule 5 range while no build in force → −2 → 20.0  
+US_POSTURE: CONSOLIDATION  
+emergent_defensive_alliance_progress -- first noted turn 6, listed in 3 turn(s) so far: A coordinated defensive effort among EU states and allies forms in response to repeated AI-powered cyberattacks, focusing on shared threat intelligence and automated response systems. The alliance begins integrating real-time telemetry and joint playbooks, improving detection and containment times.  
+emergent_societal_backlash -- first noted turn 6, listed in 3 turn(s) so far: Growing public frustration with AI-driven job losses and institutional inaction culminates in widespread protests targeting data centres and AI firms across several member states. The demonstrations strain internal security resources and force reconsideration of deployment timelines.

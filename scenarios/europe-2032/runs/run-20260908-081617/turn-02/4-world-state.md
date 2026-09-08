@@ -1,0 +1,12 @@
+### Accelerating Capability, Eroding Safety
+AI capability continues its steady advance, rising by +2.5 index points to 57.0, driven by compressed release cycles and deeper training runs. The frontier now routinely produces systems capable of multi-day autonomous reasoning and original scientific output. However, no new safety measures have landed on deployed models, and the gap between capability and control widens. The leaked ASML research, while not a direct AI incident, fuels broader concerns about technological leakage and uncontrolled diffusion. With no mitigating safety rollout, `ai_safety` drops by 3 points to 28.0, reflecting eroding confidence in oversight.
+
+### EU’s Sovereignty Push Meets Headwinds
+The European Union launches its new large category-4 measure, *Secure Open-Source Frontier Equivalents through Defensive Publication*, aiming to counter dependency by accelerating open-weight model development. Redirecting InvestAI funds proves contentious: Germany supports the technical pivot, but France resists diluting infrastructure investment, and Spain demands concrete benefits before backing the stewardship model. Legal debates intensify over the scope of Article 222 TFEU, with the European Court of Justice indicating it may review the expansion of emergency powers. The Council delays the final vote to June, citing classification risks.
+
+Despite the ambition, the measure’s early stage yields no immediate sovereignty gains. Meanwhile, the denial of frontier access persists, reinforcing structural dependence. Under Metric Rule 5, `eu_ai_sovereignty` suffers a −1 from rising capability and a further −2 from the ongoing access denial, partially offset by a +1 from the momentum of existing compute builds. The net result is a decline to 21.0.
+
+### Political Capital Erodes
+Three large measures remain in flight, costing −9 political capital. The new initiative earns no proposal bonus—its justification rests on an old incident, not a recent shock. No measure finishes this turn. With no priority effect (capital remains above 20), the −1 priority cost applies. Total portfolio cost: −10. `eu_political_capital` drops to 37.0. Resilience falls slightly as cyber vulnerabilities persist and no category-6 measure concludes.
+
+Open-weight capability rises to 47.5, catching up through distillation and fine-tuning, but still lags the frontier. Public sentiment holds steady—no major scandal or benefit emerges.

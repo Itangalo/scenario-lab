@@ -1,0 +1,9 @@
+### Crisis of Legitimacy
+
+The coordinated disinformation campaign intensifies, infiltrating local election debates in two member states with hyper-personalised, AI-generated content that mimics grassroots political speech. Forensic analysis confirms foreign orchestration, but public trust erodes further as authorities struggle to respond in real time. In the wake of the attack, the EU launches the Emergency Democratic Integrity Protocol, pooling €900 million to equip national agencies with AI detection tools and cross-border response cells. ENISA and Europol coordinate a rapid alert system, and mutual legal assistance is fast-tracked.
+
+Yet political cohesion frays. A member state, citing urgent national security needs, signs a bilateral data and compute-sharing agreement with a U.S. hyperscaler, bypassing EU-level oversight and undermining the Sovereign Compute Directive. The move is framed domestically as pragmatic, but in Brussels it is seen as a rupture—proof that sovereignty cannot be decreed without buy-in.
+
+The Labour Transition Compact sees modest uptake, but micro-credential delays stall momentum. Public sentiment dips as media spotlight growing dependency on foreign AI for core governance functions. Meanwhile, AI capability advances to 73.0, driven by closed-lab progress nearing the terminal zone. Open weights rise to 71.0, as prior models proliferate on distributed networks. With no safety improvements, `ai_safety` remains stagnant at 14.0.
+
+Resilience climbs to 68.0, reflecting the new electoral defence infrastructure now partially operational. But `eu_ai_sovereignty` falls to 14.0—capability growth outpaces domestic build, and the member state’s defection triggers a −2 loss under rule 5. Political capital holds at 12.0: the portfolio charge (−13) is offset by a +1 proposal bonus for the new large category 6 measure answering a severe recent incident. No legitimacy lending occurs—public sentiment is below capital.

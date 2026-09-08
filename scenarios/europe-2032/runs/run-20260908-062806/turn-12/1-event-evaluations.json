@@ -1,0 +1,140 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.07163044428612009,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.13551970687944848,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.12666666666666668,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.179787861499504,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.16666666666666666,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8808042850081205,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3690879979703826,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.09539160481381814,
+    "triggered": true
+  },
+  {
+    "description": "A genome model from a non-state research group produces a design for a human-infective vector with high transmissibility and delayed symptom onset. The paper is withdrawn within 48 hours of preprint posting due to biosafety concerns, but the model weights and methodology have already been shared in closed forums. The incident triggers emergency sessions at the WHO and the BWC, and accelerates calls for global oversight of synthetic biology tools. This is a categorically stronger signal than prior bio-uplift findings and opens the bio gate for the next 4 turns.",
+    "emergent": true,
+    "id": "emergent_bio_uplift_breakthrough",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.28,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8099339200342464,
+    "triggered": false
+  },
+  {
+    "description": "The disinformation campaign expands to Austria and Poland, using deepfake audio of ministers to announce fake curfews. Attribution remains contested, but NATO’s cyber unit flags patterns consistent with a state-level actor. The campaign continues to exploit weaknesses in public alert systems and erodes trust in emergency communications.",
+    "emergent": true,
+    "id": "emergent_automated_disinformation_wave",
+    "probability": 0.09999999999999999,
+    "probability_samples": [
+      0.3,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5191253141843577,
+    "triggered": false
+  },
+  {
+    "description": "Multiple regional blocs begin developing divergent AI safety and evaluation standards, with the U.S., EU, and China each promoting incompatible frameworks. Technical incompatibilities grow as licensing, monitoring, and reporting requirements diverge, increasing friction for cross-border deployment and incident coordination. This fragmentation slows global alignment efforts and forces multinational actors into costly compliance bifurcation.",
+    "emergent": true,
+    "id": "emergent_international_ai_standards_fragmentation",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.3,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Despite the Sovereign AI Core not being operational, a draft architecture or early training artifact from a EuroHPC-affiliated lab leaks onto underground forums. Though incomplete, it demonstrates novel interpretability scaffolding and attracts intense interest from both allied and adversarial researchers. The leak undermines the EU's narrative of controlled development and triggers internal investigations into security protocols across the EuroHPC network.",
+    "emergent": true,
+    "id": "emergent_sovereign_model_leak",
+    "probability": 0.24,
+    "probability_samples": [
+      0.22,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

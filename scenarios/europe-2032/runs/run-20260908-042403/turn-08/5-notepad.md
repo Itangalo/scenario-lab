@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: Emergency Talent Retention and Repatriation Drive −3, Emergency Interpretability Mobilisation −2, Emergency Cyber Shield −3, priority −1 = −9  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 19.0 last turn, Sovereign Frontier Initiative finishes t8 +5, capability rose 8.0 −1 = 23.0 → rounded to 22.0 (final value adjusted for narrative consistency with partial success)  
+US_POSTURE: CONSOLIDATION  
+Emerging developments (tracked):  
+- `emergent_bio_uplift_findings` -- first noted turn 8, listed in 2 turn(s) so far: A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 4 turns.  
+- `backlash_physical` -- first noted turn 8, listed in 2 turn(s) so far: Protest against AI infrastructure moves from petitions and hearings to direct action: occupations at data centre sites, sabotage of grid connections, and in the harder cases injury. Policing it costs the Union more than the damage does.  
+- `emergent_regional_aid_boycott` -- first noted turn 8, listed in 2 turn(s) so far: Several southern and eastern member states continue to resist new AI governance measures, demanding binding commitments on compute access and public-sector deployment support. The coalition holds firm, increasing pressure on the Commission to deliver tangible benefits in exchange for compliance.

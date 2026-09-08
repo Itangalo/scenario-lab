@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 40.0 to 46.0 (+6.0), which exceeds the maximum single-turn increase of +3.0 implied by the constitutional constraint that `openweight_capability` may only rise or stay flat and is bounded by `ai_capability` (which rose by only +2.0). A rise of +6.0 in one turn is implausible given that open-weight progress depends on frontier capability growth and diffusion, both of which are constrained by prior levels and cannot leapfrog so sharply without narrative justification tied to a catastrophic compute leak or model leakage event — none of which is present.\n- Modelling choice 5 violated: The EU has three active measures in flight — InvestAI Gigafactories, Tech Sovereignty Package, and Cyber Shield Directive — and yet no single priority is designated as the current focus. The narrative refers to \"three major measures in flight — including the new priority\", but does not explicitly name which one is the current priority. Per rule 5, at most one measure may be named as the current priority per turn; ambiguity violates the constraint.\n- Narrative Constraint 8 violated: The narrative states \"The incident galvanizes emergency debate on cyber resilience funding\" in relation to `emergent_cyber_ransom_surge`, which telegraphs a future policy response. This implies a causal chain that pre-empts decision-making and suggests an event gate (funding approval) is opening, which belongs only in event evaluations — not the narrative. Tension is allowed, but implying direct legislative consequences from an emergent event crosses into telegraphing."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

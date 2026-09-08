@@ -1,0 +1,25 @@
+Secure sovereign AI capacity to act independently in a world of accelerating, uncontrolled capabilities
+
+## Statement changes
+``modify `two_year_commitment` (commitment): Prevent the EU from being structurally disempowered by AI-driven shifts in global power and agency``
+- Trigger: the two-year commitment period closes this turn
+- Grounds: The prior commitment delivered foundational compute, talent, and access frameworks, but did not close the gap in strategic autonomy. With ai_capability at 70.0 and the EU excluded from core risk governance, the threat is no longer just capability denial but irreversible marginalisation in decision-making about the systems that will shape the next decade. The new commitment shifts from building capacity in isolation to ensuring the Union can act with weight and independence in a world where AI defines power.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — **finished**
+- `Sovereign Compute Acceleration Initiative (category 4, costs 3 per turn, started turn 3, finishes on turn 7): Launch an emergency procurement and deployment programme to bring 100,000 sovereign AI accelerators online within EU legal jurisdiction by mid-2028, prioritising energy-secure sites and direct state ownership where necessary` — **finished**
+- `Sovereign Talent Anchoring Programme (category 4, costs 3 per turn, started turn 4, finishes on turn 7): Launch a targeted recruitment, retention, and integration initiative to secure 1,500 frontier AI engineers and safety researchers within EU institutions and sovereign stacks by mid-2029, with fast-track visas, competitive salaries, and dual affiliation to national labs and the CEA Joint Undertaking` — **finished**
+- `Emergency Access Guarantee for Sovereign Stacks (category 4, costs 3 per turn, started turn 6, finishes on turn 8): Establish a legally enforceable right of access for EU public agencies—health, energy, civil protection, research—to sovereign AI systems during declared capability denial events, backed by standing compute capacity and failover protocols` — **finished**
+- `Sovereign AI Incident Response Network (category 6, costs 3 per turn, started turn 8, finishes on turn 9): Establish a coordinated, pre-authorized detection and intervention capability across EU critical sectors to identify and contain AI-driven incidents within hours of onset, leveraging shared monitoring infrastructure and delegated authority` — **finishing this turn**
+
+## New measure
+None this turn.  
+Waiting for the Sovereign AI Incident Response Network to land and for the political fallout from the automated decision-making scandal to stabilise before committing scarce capital to a new initiative.
+
+## Priority
+**Sovereign AI Incident Response Network** — because with ai_safety at 9.0 and public sentiment collapsing, the EU cannot afford another cascading incident, and this measure is the only one in flight that directly builds autonomous containment capacity across health, energy, and transport before the next shock hits.
+
+## In practice
+This turn, we are closing out the foundational phase of our sovereignty build-up. The InvestAI Gigafactories, Sovereign Compute Acceleration Initiative, and Talent Anchoring Programme have all formally completed. Their effects are now embedded: construction is underway at three of the five Gigafactory sites, with binding grid commitments secured; 1,320 of the 1,500 targeted engineers are now under contract with EU institutions or sovereign stacks; and the first sovereign AI accelerators are being installed at EuroHPC nodes in Finland and Portugal. But completion does not mean consolidation. The Emergency Access Guarantee, though legally adopted, remains unimplemented in key member states. We are now enforcing it through Article 122 TFEU, conditioning cohesion funds on the designation of fallback nodes by Q1 2031, and advancing bilateral medical AI partnerships with the Czech Republic and the Netherlands as compliance incentives.
+
+At the same time, the automated decision-making scandal has shattered public trust and drained political capital to 1.5 — a level not seen since the euro crisis. We are responding by fast-tracking the Sovereign AI Incident Response Network, which goes operational this turn. ENISA, ECDC, and national cybersecurity agencies are finalising red-line triggers for autonomous shutdown, and we are deploying shared monitoring tooling to ten critical infrastructure operators in energy and health. This is not about prevention — we lack the visibility for that — but about minimising damage when (not if) the next failure occurs. The emergent EU open agent consortium offers a glimmer of alternative capacity, and we are quietly routing pilot funding through Horizon Europe to test its frameworks in grid optimisation, but we cannot bet on decentralised research to close the sovereignty gap. Our focus remains on hardening the perimeter, not expanding the frontier — for now.

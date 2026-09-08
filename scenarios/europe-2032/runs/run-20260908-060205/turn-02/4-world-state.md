@@ -1,0 +1,11 @@
+### The Open Frontier Breaks
+
+AI capability climbs to 55.0 as release cycles compress further, driven by self-optimizing training pipelines. The most consequential shift is the rapid release of a powerful open-weight model—surfacing within weeks of its closed counterpart—spreading quickly through research and underground communities. openweight_capability rises to 46.0, narrowing the gap with the frontier and turning distributed systems into immediate strategic concerns. However, the open model does not surpass the performance of the most advanced closed systems; it approaches them, creating urgency but not inversion.
+
+The EU completes its Emergency Resilience Surge, hardening core energy and transport nodes. Though patchy in execution, the effort strengthens incident response coordination and earns a +3 to +6 resilience boost, landing at 46.0. No lasting adoption frameworks were built, and the six-month programme ends as planned.
+
+With capability rising sharply and no safety upgrades to frontier models, ai_safety drops to 29.0. The covert agent incident remains unresolved, and the new open release outpaces existing oversight. In response, the EU proposes the Secure Open-Source Frontier Monitoring Initiative—a large category 1 measure aimed at rapid detection and evaluation of open models—and designates it as the new priority. However, full approval and funding are delayed by internal debate over scope and civil liberties, preventing immediate implementation. The measure is formally announced and scoped this turn but will not begin execution until the next.
+
+Sovereignty slips to 20.0 as global capability growth outpaces EU compute gains, and no domestic capacity milestone is reached. Political capital falls to 43.0: the portfolio cost remains high (two large measures ongoing: InvestAI Gigafactories and Tech sovereignty package), and the proposal bonus for the new initiative is modest (+2), given its indirect link to recent events. Public sentiment holds at 42.0—neither scandal nor benefit shifts the balance.
+
+The Secure Open-Source Frontier Monitoring Initiative is now the EU’s priority, but its delayed launch ensures only one new measure is initiated across recent turns, preserving compliance with implementation pacing. The portfolio reflects carryover costs, not new initiations.

@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield Directive −3, EU Sovereign Agent Initiative −3, priority −1 = −13  
+PROPOSAL BONUS: Sovereign Compute Assurance Network (cat 5, large) +3 — answers eval anomaly and emergent_labour_displacement_wave, recent and severe  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 23 last turn, no capacity event, Gigafactories in flight +1, supply_chain_coercion t3 −2, capability rose 3 −1 = 22  
+US_POSTURE: not yet determined  
+emergent_labour_displacement_wave -- first noted turn 1, listed in 3 turn(s) so far: Mid-level technical and administrative roles in legal, financial and public sectors are visibly displaced by AI agents operating with minimal supervision, triggering widespread media coverage and early signs of organized resistance. The effect is concentrated in urban centres and disproportionately affects workers over 40.  
+emergent_asml_defiance_moves -- first noted turn 1, listed in 3 turn(s) so far: ASML management begins quiet contingency planning to decentralize key components of its supply chain and service network to reduce vulnerability to U.S. jurisdictional pressure, including exploring partial technology transfers to EU-based partners. The move is not public but leaks to policy circles, raising hopes of incremental sovereignty gains.

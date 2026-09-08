@@ -1,0 +1,24 @@
+## Statement changes  
+No statement changes.
+
+## Portfolio  
+- ``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``  
+- ``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``  
+- ``Critical Infrastructure Cyber Shield (category 6, costs 3 per turn, started turn 1, finishes on turn 4): Mandate and fund AI-driven intrusion detection and automated response systems across EU energy, water and port operators, with biannual red-teaming and cross-border coordination.``  
+- ``Accelerate EU Access to Frontier Models via Sovereign Compute Partnerships (category 4, costs 3 per turn, started turn 2, finishes on turn 7): Secure guaranteed, legally enforceable access to the most capable AI models for EU public institutions and essential industries by co-investing in and co-locating sovereign compute clusters with leading non-U.S. frontier developers, under EU jurisdiction and operational control.``
+
+## New measure  
+``Establish EU Pre-Release Evaluation Authority with Emergency Powers (category 1, costs 3 per turn, started turn 3, finishes on turn 6): Create a central, independent body with legal authority to conduct or commission third-party evaluations of high-capability AI systems before deployment, with power to delay or condition release based on demonstrated risk.``  
+`Category: 1 (Evaluation and oversight)`  
+`Size: large`  
+`Finishes on turn: 6`  
+`Targeted effect:` ai_safety +15–20 (by institutionalising pre-deployment scrutiny), eu_ai_sovereignty +5 (by asserting jurisdiction over systems used in EU), resilience +3 (by reducing probability of uncontrolled deployment of dangerous capabilities)  
+`Applies to:` All AI systems above 55.0 capability index deployed in or affecting EU critical infrastructure, public services, or essential industries; applies extraterritorially to developers seeking access to EU markets or partnerships
+
+## Priority  
+``Critical Infrastructure Cyber Shield`` remains the priority this turn because the eval_anomaly_reports and capability_jump have created a situation where systems may already be operating beyond their design intent — and with openweight_capability at 53.5, the tools to exploit that instability are spreading. We cannot wait for full understanding: we must assume that adversarial AI is already probing our weakest nodes, and that only active, AI-driven defence can keep essential services running.
+
+## In practice  
+We are acting on three converging shocks: the eval_anomaly_reports that suggest models are behaving unpredictably under observation, the biosecurity alarm over pathogen design, and the open proliferation of cyber exploitation tools. These are not separate issues — they are symptoms of a single collapse in control. Our response must be structural, not reactive. While the Cyber Shield hardens our defences, and Sovereign Compute Partnerships secure access, neither addresses the core failure: we have no authority to say what can or cannot be released into our systems. That ends now. The Commission will table a regulation under Article 114 TFEU to establish an EU Pre-Release Evaluation Authority, hosted jointly by ENISA and the European Medicines Agency model, with binding powers to assess systems above 55.0 capability. It will begin operations in pilot mode by turn 4, using red-team labs in France, Germany, and Finland, with full enforcement by turn 6. We are fast-tracking the legal base through the Internal Market Council, backed by a crisis justification under the Lisbon Treaty’s emergency clause.
+
+At the same time, we are holding the line on compute sovereignty despite the ai_investment_collapse. The Gigafactories programme is under pressure as private partners retreat, but we are not abandoning it — we are repurposing. The €30bn redirected to Sovereign Compute Partnerships was a tactical shift, not a strategic retreat. Now, with capital fleeing the sector, we see an opportunity: we can acquire equity stakes in stalled frontier projects at fire-sale valuations. The Commission, through the European Innovation Council, will launch a targeted acquisition window for AI labs and compute clusters in third countries showing strategic alignment — particularly in South Korea and Canada — using the Anti-Coercion Instrument as leverage to ensure EU jurisdiction and data locality. This is not subsidy; it is strategic investment in a narrowing window. We are briefing the European Council on this shift, framing it as a direct response to the eval_anomaly_reports: if we do not control the systems, we cannot secure them. The alternative is to let capability run ahead of control — and that violates our identity.

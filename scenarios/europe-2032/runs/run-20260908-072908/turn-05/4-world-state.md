@@ -1,0 +1,12 @@
+### A Fragile Pivot
+
+The EU formally concluded the **Frontier Transparency Compact** this turn, acknowledging its failure to secure participation from US labs. With legal uncertainty unresolved and no enforcement mechanism, the voluntary disclosure framework collapsed into symbolic gesture. The closure marks a strategic inflection: the Union now openly admits that oversight without capacity is performative.
+
+In response, the European Commission launched the **Sovereign AI Inference Grid**, a large category-4 initiative designed to anchor critical public AI workloads on EU-controlled infrastructure. Legal authority was asserted under the Digital Markets Act and Cyber Resilience Act, with €12 billion committed across three turns. Initial retrofitting began in Finland and Portugal, and quantum-resistant cross-border links were scoped. However, early negotiations with ASML and STMicroelectronics revealed supply constraints, and Spain delayed grid connections for the broader Tech Sovereignty Package, citing energy prioritization.
+
+Despite the shift, political capital eroded further. Public sentiment declined due to widespread reports of job losses in law, accounting, and software—graduates found roles vanishing as firms deployed AI assistants. Media coverage framed the Inference Grid as an elite project while young professionals faced stagnation. Protests near proposed data centre sites intensified, particularly in Hungary and Poland, where resistance to the Biological Threat Network grew over data sovereignty concerns. Bilateral assurances eased tensions slightly, but full participation remains uncertain.
+
+Resilience inched upward as the first genomic data streams fed into the biothreat system and Cyber Shield’s gains held. Yet ai_safety dipped as global capability advanced by 1.5 points with no matching safeguards. The US election outcome—interpreted as a win for cooperation—offered temporary relief but deepened strategic ambivalence: structured access reduces immediate risk but undermines urgency for autonomy.
+
+### The Election Result
+The United States elected a president favouring international alignment on technology governance. US_POSTURE: pending (administration takes office next turn)

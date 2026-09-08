@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: Emergency Sovereignty Compact −3, Join and Co-Lead the IAEA-Style Global AI Oversight Framework −3, EU Resilience Surge −3, priority −1 = −10  
+PROPOSAL BONUS: EU Resilience Surge (cat 6, large) +3 — addresses ongoing infrastructure vulnerability and rising incident risk, though no single major event has yet struck  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 5.0 last turn, no capacity event, capability rose 0.5 (<2 → no decay), Emergency Sovereignty Compact in flight +0 → 5.0 → net −1 due to political erosion and lack of delivery = 4.0  
+US_POSTURE: CONSOLIDATION
+
+## Emerging developments (tracked)
+- `emergent_diplomatic_fracture` -- first noted turn 12, listed in 2 turn(s) so far: Key Eastern European member states, citing national security concerns and dissatisfaction with the EU's diplomatic prioritization of global oversight over regional defence, begin informal bilateral coordination with NATO and US AI defence units, bypassing EU channels. This creates a de facto split in AI governance alignment, weakening the Union's normative leverage and exposing internal strategic divergence.
+- `emergent_labour_radicalization` -- first noted turn 12, listed in 2 turn(s) so far: Displaced tech and legal workers, frustrated by the failure of retraining programs and the pace of job losses, form cross-border action networks that escalate beyond strikes to coordinated digital sabotage of AI-driven hiring platforms and corporate data pipelines. The movement gains sympathy in affected communities, increasing pressure on governments to act but also risking a backlash against reform.

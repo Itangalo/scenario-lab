@@ -1,0 +1,42 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.28,
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Automated verification extends into a domain previously thought to require human judgement.",
+    "id": "verification_widens",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "description": "Parliamentary motions for moratoriums on AI-operated critical infrastructure gain cross-party support in Germany, France, and the Netherlands. The push is framed as precautionary, citing the recent hospital ransomware attack, and targets grid controls and transport systems. The momentum suggests a formal legislative initiative could emerge by late 2028.",
+    "emergent": true,
+    "id": "emergent_regulatory_backlash",
+    "probability": 0.26666666666666666,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_retrenchment",
+    "probability": 0.3333333333333333
+  }
+]

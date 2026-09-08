@@ -1,0 +1,19 @@
+### A Shift at the Frontier
+
+Global AI capability climbs past the 60 threshold, reaching 60.5, as automated verification unlocks rapid progress in law, medicine and engineering. Systems now reliably execute multi-day professional projects end to end, displacing junior roles across sectors. Rumours circulate of a major open release on underground forums, with claims of frontier-quality performance in narrow domains. Independent validators are assessing the model’s authenticity, but no official confirmation has emerged. Crucially, the model remains unverified and isolated; no downstream integration, replication, or measurable diffusion into the open ecosystem has occurred. As such, openweight capability remains unchanged at 50.0, reflecting continued containment and lack of access to training data, infrastructure, or derivative tools that would enable broad capability uptake.
+
+### EU Responds to the Open Frontier
+
+The **Sovereign AI Inference Grid** is formally prioritised this turn, consolidating cross-border compute coordination, legal oversight, and energy commitments. This decision accelerates planning and unlocks initial funding tranches, though physical deployment remains delayed pending Spain’s final commitment. The **InvestAI Gigafactories** programme progresses steadily, with site preparation underway at two locations; full completion is now expected next turn due to permitting delays.
+
+The proposal for a **Secure Open-Weight Evaluation Partnership** with Japan, South Korea, Canada and Norway is prepared but not formally introduced this turn, respecting the constraint of at most one new measure. The concept remains under interagency review and will be proposed in a future turn once diplomatic preconditions are clearer. As no formal proposal is launched, it generates no legitimacy, capacity, or political capital impact.
+
+### Gains Amid Fragility
+
+The **middle_power_coalition** strengthens diplomatic leverage, supporting ongoing efforts, but does not generate new gains in political capital this turn. Progress on the Sovereign AI Inference Grid delivers a partial boost to coordination and legitimacy, contributing modestly to sovereignty. Resilience improves as updated threat modelling and simulation exercises enhance cyber preparedness, though full integration is incomplete.
+
+ai_safety sees a small gain, rising to 29.0, due to expanded monitoring frameworks now covering high-risk open-weight systems—preparatory work that advances despite the absence of a formal partnership. However, public sentiment remains stagnant at 30.0. The **Emergency Labour Transition Fund** continues to face uneven implementation, and transnational worker protests grow, demanding deeper structural reforms. Germany’s resistance to automation levies limits fiscal cohesion.
+
+Sovereignty rises to 15.0, reflecting partial credit for prioritisation and planning advances on the Inference Grid, and continued progress on InvestAI Gigafactories, adjusted downward due to permitting delays and lack of full coalition alignment. The notepad’s theoretical gain is tempered by incomplete execution: Spain’s pending commitment limits cross-border coordination value, and site delays reduce InvestAI’s contribution from +5 to +3. No new negative events occur, but gains are muted by implementation friction, consistent with metric rule 5’s decay and partial progress terms.
+
+Despite external headwinds, the EU maintains cautious momentum. Political capital holds steady at 16.0, supported by ongoing portfolio execution, though no new surges emerge. The path forward remains narrow, contingent on turning planning into deployment.

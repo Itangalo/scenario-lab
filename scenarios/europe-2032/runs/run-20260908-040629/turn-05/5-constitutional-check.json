@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 45.0 to 50.0 (+5.0) while `ai_capability` only increased by +1.0 (from 59.5 to 60.5). This violates the rule that `openweight_capability` may never exceed `ai_capability`. At no point can `openweight_capability` be closer to or above `ai_capability` than it was previously unless `ai_capability` itself rises sufficiently to justify it. Here, the gap narrows unrealistically fast without justification via narrative or precedent.\n- Narrative Constraint 8 violated: The narrative states \"setting the stage for structured access to frontier AI\" in reference to the incoming U.S. administration, which telegraphs a future event gate (U.S. cooperation opening) and implies a positive trajectory for `US_POSTURE`. This anticipates a specific future policy shift before it is constitutionally allowed—since `US_POSTURE` is set in turn 6 and must remain pending until then. The phrase “setting the stage” implies foreknowledge incompatible with the no-telegraphing rule."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

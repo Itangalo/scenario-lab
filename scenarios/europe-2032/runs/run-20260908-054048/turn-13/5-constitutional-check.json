@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 54.0 to 59.0, a rise of 5.0 points in one turn. While the metric is allowed to rise, such a large increase must be justified under the rules governing its accumulation. The narrative attributes this jump to \"widespread fine-tuning and adaptation of existing models on accessible hardware\" rather than new releases or documented infrastructure growth. However, no supporting mechanism (e.g., compounding growth from prior investments, event-driven leap, or sustained absorption trend) is cited to justify a 5-point surge. Given that `openweight_capability` is an accumulated stock with realistic diffusion limits, a 5-point increase without clear, rule-consistent justification violates the realism implied by Invariant 2 and Modelling Choice 7 (separate stocks must be free to move apart, but not by implausible leaps).\n- Organizational Constraint violated: The **European Sovereign AI Corps** is described as a \"large category 4 measure\" mobilising €1.2 billion to recruit 500 specialists over three years, yet only 47 candidates are confirmed by year’s end. The narrative implies immediate, large-scale recruitment capacity (via fast-track visas and pilot cohorts) but fails to explain how the EU can launch such a high-cost initiative with no prior buildup of administrative or training infrastructure. This violates Modelling Choice 6: \"No measure is implemented instantly.\" A category 4 measure of this scale cannot plausibly begin meaningful operations (including cohort formation at three sites) within a single turn without violating maximum organizational growth rates. Minimum lead times for staffing, funding disbursement, and intergovernmental coordination are unaccounted for."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

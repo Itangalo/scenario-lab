@@ -1,0 +1,15 @@
+### The Union Builds on Shifting Ground
+
+Global AI capability remains frozen at 61.5, and with it, the open frontier shows no organic advance. The reported surge in `openweight_capability` is discredited: the leaked agent-grade model, while widely shared, fails to achieve sustained autonomous operation under real-world conditions. Verification clusters in Prague and Utrecht confirm functional degradation under load. Without a corresponding leap in underlying capability, `openweight_capability` holds at 55.0—its previous ceiling—preserving the invariant that it cannot exceed `ai_capability`.
+
+The EU shifts strategy, abandoning the failed pursuit of sovereignty through acquisition. The **Integrate Acquired AI Assets** measure formally ends, but its legacy is hollow: no systems were secured, and bilateral talks collapsed. Sovereignty now hinges on the **Baseline Compute Initiative**, launched amid protests in Finland and Portugal. Site preparation begins under emergency permitting, but Romania withholds final approval, citing national control over energy infrastructure. No clusters come online. The project yields no early momentum.
+
+**Accelerate Resilience**, the named priority, stumbles. Hungary and Slovakia block co-financing, delaying patch deployment in regional grids. ENISA’s red-team exercises expose critical weaknesses: simulated attacks disrupt hospital scheduling and spoof emergency alerts. With no tangible delivery, resilience erodes to 20.0, reflecting deepening systemic fragility.
+
+Public sentiment dips to 18.0. Sabotage intensifies: activists in Malmö ignite a transformer at a data centre, calling it an act of “energy sovereignty.” In Lyon, a protest turns violent after police clear an occupation. Media frames AI as a destabilizing force consuming public trust and resources.
+
+Political capital collapses to -12.0. The portfolio charge—two large measures (-3 each) and a priority (-1)—totals -7. No completion bonus applies. The new initiative earns no proposal bonus: it answers long-standing failures, not a recent shock. Sentiment exceeds capital, but legitimacy lift is capped by capital’s floor. The Union is spending political currency it no longer possesses.
+
+Sovereignty falls to 5.0. The **export_control_escalation** event from last turn continues to bite: advanced chips remain blocked, and no sovereign compute is operational to substitute. Rule 5 applies: -2 for lost access. No category 4 completion bonus lands, and the in-flight measure yields no momentum. The decay deepens.
+
+No drop in `ai_safety` occurs. While stress tests reveal vulnerabilities in critical infrastructure, these fall under resilience, not core safety frameworks. No regulatory rollback, incident involving autonomous systems, or failure in alignment monitoring is reported. The existing safety architecture holds, preserving `ai_safety` at 8.0 despite broader instability.

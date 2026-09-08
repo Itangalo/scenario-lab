@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, JTIC −3 (finished), Sovereign Talent Initiative −3, Secure Compute Access Guarantee −3, Emergency Compute Mobilisation Directive −2, priority −1 = −18  
+PROPOSAL BONUS: Emergency Compute Mobilisation Directive (cat 4, small) +4 — directly answers emergent_compute_shortage_pressure and eu_frontier_access_denied, both recent and impactful  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 14 last turn, no capacity event, capability rose 2.0 −1, Gigafactories in flight +0, Tech sovereignty package in flight +0, Emergency Compute Mobilisation Directive in flight +0 = 12

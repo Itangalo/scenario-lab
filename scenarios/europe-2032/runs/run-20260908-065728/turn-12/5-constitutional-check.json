@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 59.0 to 69.0 (+10.0), which is permissible in magnitude, but the narrative provides no justification for such a large jump in open-weight capability during a period of crisis and eroding sovereignty. More critically, `openweight_capability` (69.0) remains significantly below `ai_capability` (80.5), which is allowed — but the increase occurs without any mention of new open releases, distributed models, or capacity expansion in the open ecosystem. The launch of the Sovereign Interpretability Stack Acceleration is a research initiative and does not justify an immediate +10 point leap in *capability*, especially when the broader context emphasizes failure and lag. This violates the spirit and traceability of Invariant 2: capability accumulation must be explainable and continuous, not inferred from unrelated policy activity.\n- Metric Rule 9 violated: `ai_safety` decreased from 26.0 to 19.0 (−7.0), which is within bounds, but the drop is unaccounted for in the narrative beyond \"no safety gains\" and the occurrence of incidents. However, the larger issue is that `eu_political_capital` dropped from 34.0 to 28.0 (−6.0), a movement of more than 5 points, and while Rule 9 allows up to 25-point moves, such a drop requires stronger grounding in specific capital expenditures or political costs. The narrative cites \"eroded under the weight of unresolved crises\" — a vague systemic explanation — but no actual political measure was introduced or failed in this turn (the Telemetry Mandate finished, and the new acceleration program is a small category 5 proposal). A −6 shift in political capital demands a significant event (e.g., treaty rejection, coalition collapse, major protest), none of which are present. This risks violating Rule 9 by allowing large movements without proportionate cause, undermining the constraint’s purpose of preventing implausible swings."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

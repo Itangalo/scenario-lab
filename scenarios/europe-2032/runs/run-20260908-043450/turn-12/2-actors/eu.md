@@ -1,0 +1,17 @@
+No statement changes.
+
+## Portfolio
+`Regional Oversight Integration Initiative (category 6, costs 2 per turn, started turn 8, finishes on turn 10): Launch a targeted engagement programme to align the emergent regional oversight pact with EU-level defence objectives, offering technical integration, shared liability frameworks, and funding incentives in exchange for API access and real-time data sharing` — **finished**  
+`Trusted Infrastructure Integration Directive (category 4, costs 3 per turn, started turn 10, finishes on turn 12): Establish a binding framework requiring all AI systems used in EU critical infrastructure to run on hardware stacks with verifiable EU-controlled maintenance, subsystem production, and firmware integrity, starting with energy, telecoms, and financial settlement systems`
+
+## New measure
+None this turn.  
+Waiting for the Internal Market Council to resolve legal feasibility under Article 114 TFEU and for U.S. hyperscalers to signal whether co-certification pathways are acceptable—conditions that must be met before expanding the directive’s scope or launching a follow-on measure.
+
+## Priority
+**Trusted Infrastructure Integration Directive** — because with `eu_ai_sovereignty` at 11.0 and the Taiwan blockade exposing total dependence on foreign compute, this directive is the only instrument we have that turns regulatory authority into leverage over execution, and its enforcement deadline lands this turn.
+
+## In practice
+This turn, we are in the final stretch of enforcing the Trusted Infrastructure Integration Directive. ENISA has delivered the technical baseline for verifiable EU-controlled maintenance, and we are now pressing the Internal Market Council to adopt it as a harmonised standard under Article 114. The stakes are existential: without this, the EU cannot guarantee that the AI systems running its energy grids, financial messaging, or telecoms backbones are inspectable, repairable, or secure from remote sabotage. We are offering U.S. hyperscalers a narrow but viable path—co-certification with EU authorities, phased compliance, and mutual recognition of audit protocols—but we are not retreating on the core principle: if you operate in our critical infrastructure, your hardware must be maintainable by us. No exceptions.
+
+Behind the scenes, we are preparing contingency plans for non-compliance. If the Council fails to act or if major providers refuse to engage, we will trigger the Digital Markets Act’s gatekeeper provisions as a fallback enforcement vector, treating non-cooperative platforms as systemic risks. This is not our preferred path—it risks legal overreach and market disruption—but we cannot let the directive die in silence. At the same time, we are mapping leverage points in the semiconductor supply chain: EU-sourced components in ASML tools, specialty gases, metrology software—each a potential node for coordinated export controls if Washington continues to weaponise access. But that power is only credible if we have an alternative to foreign stacks. That is why everything hinges on this directive: it is not just a technical standard. It is the foundation of sovereign agency in an era where the machine you cannot inspect is already owned by someone else. We are acting as if there is no plan B—because there isn’t.

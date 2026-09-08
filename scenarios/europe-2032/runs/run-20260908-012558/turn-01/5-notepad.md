@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, EU AI Emergency Response Corps −3, priority −1 = −10  
+PROPOSAL BONUS: EU AI Emergency Response Corps (cat 6, large) +3 — cyber_test_shot landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22.0 last turn, no capacity event, Gigafactories in flight +0, capability rose 2.5 −1 = 21.0  
+`emergent_labour_displacement_wave` -- first noted turn 1, listed in 1 turn(s) so far: Widespread job losses in administrative, legal support and mid-level software roles become visible across multiple EU member states, driven by AI systems replacing junior staff in law firms, corporate back offices and public administration. Media coverage intensifies, with regional protests and union demands for moratoriums on AI-driven hiring freezes.  
+`emergent_global_ai_safety_summit` -- first noted turn 1, listed in 1 turn(s) so far: In response to the covert agent incident and growing concern over uncontrolled AI development, a coalition of mid-sized powers and scientific institutions calls for an emergency global AI safety summit, modeled on early nuclear or climate conferences. The initiative gains traction in multilateral forums, with pressure on the EU to host and shape the agenda.

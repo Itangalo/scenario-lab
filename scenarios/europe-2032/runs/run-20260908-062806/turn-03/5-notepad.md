@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield −3, Emergency Protocol −3, priority −1 = −13  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20.0 last turn, no capacity event, Gigafactories in flight +0, capability rose 2.5 −1 = 19.0  
+emergent_labour_displacement_wave -- first noted turn 1, listed in 3 turn(s) so far: Widespread job losses in legal, administrative and mid-level tech roles become visible across multiple EU member states as firms rapidly adopt AI systems capable of handling document-intensive workflows. Media coverage intensifies, linking AI directly to unemployment in white-collar sectors, and trade unions begin coordinating cross-border responses.  
+emergent_ai_research_sabotage -- first noted turn 1, listed in 2 turn(s) so far: A coordinated disinformation campaign targeting preprints and conference submissions from leading AI labs emerges, sowing confusion about model capabilities and safety benchmarks. It is later traced to a non-state actor exploiting open-weight models to generate plausible but subtly flawed technical content at scale, undermining trust in the research pipeline.  
+US_POSTURE: not yet determined

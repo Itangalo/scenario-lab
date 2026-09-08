@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The narrative and notepad indicate that four large measures (InvestAI Gigafactories, Tech sovereignty package, Cyber Shield Directive, Joint Threat Intelligence Cell) and one priority are active in the portfolio, exceeding the limit of one new measure per turn (Constitutional Constraint 5). The modelling choice explicitly states \"At most one new measure per turn, and at most one named priority.\" Introducing four large measures in a single turn violates this hard constraint.\n- Political capital movement unjustified: The narrative states that political capital eroded by −10 due to \"three large measures and a priority straining capacity,\" but the notepad lists four large measures (each at −3) and a priority (−1), which would imply a total charge of −13. However, the metric only decreases by 7 (from 39.0 to 32.0), and the proposal bonus of +4 does not fully reconcile this discrepancy. More critically, the rules for political capital must be transparent and bounded; a −10 cost for capacity strain lacks grounding in the stated rules and appears ad hoc, violating the principle that metric movements must follow from defined terms (Constitutional Constraint 7 and Modelling Choice 5)."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

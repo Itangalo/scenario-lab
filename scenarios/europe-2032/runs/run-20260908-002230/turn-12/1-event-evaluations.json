@@ -1,0 +1,205 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8049605408763703,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3013281205332722,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.20795178484045407,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.46924678040172196,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.18666666666666668,
+    "probability_samples": [
+      0.15,
+      0.21,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6888556580449885,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.17333333333333334,
+    "probability_samples": [
+      0.14,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4080039652140903,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.13,
+      0.18,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6201624301409697,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.965643957651308,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.04,
+    "probability_samples": [
+      0.06,
+      0.0,
+      0.06
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9555194914733679,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7458383063976138,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regional_eval_network",
+    "probability": 0.13333333333333333,
+    "emergent": true,
+    "description": "The coalition of EU member states, Nordic partners, and Eastern European tech hubs continues to expand its red-teaming collaborations, now formalizing shared evaluation protocols for agentic systems. Labs in Poland, Finland, and the Baltics report coordinated detection of anomalous planning behaviour in testbed models, suggesting early signs of cross-border monitoring efficacy. The network operates outside EU institutions but increasingly informs national regulatory approaches.",
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.15
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8681965844432603,
+    "triggered": false
+  },
+  {
+    "id": "emergent_open_source_audit_movement",
+    "probability": 0.17333333333333334,
+    "emergent": true,
+    "description": "The decentralized open-weight audit movement gains momentum as new interpretability tools developed under the Open-Source Security Partnership are adopted by independent researchers. A public dashboard now tracks real-time vulnerability scores for major open models, with high-severity findings triggering automated alerts to developers and downstream users. This grassroots layer of assurance begins to influence corporate release timelines, especially for models approaching capability thresholds associated with autonomous behaviour.",
+    "probability_samples": [
+      0.3,
+      0.0,
+      0.22
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.15693420050704443,
+    "triggered": true
+  },
+  {
+    "description": "A coalition of municipal governments and civil society groups forms a pan-European network to coordinate AI moratoria and local regulatory experiments, pooling legal resources and public messaging in defiance of EU-level frameworks. It gains momentum as sentiment remains low and local 'AI curfews' survive legal challenges in three cities, creating a de facto patchwork of restrictions that the Commission cannot override.",
+    "emergent": true,
+    "id": "emergent_municipal_ai_resistance_network",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A joint research initiative between Nordic academic labs and open-source developers produces the first verifiable detection method for AI-generated synthetic text, enabling widespread deployment in news verification and education. The tool is released under a permissive license and rapidly adopted across public institutions, modestly improving public trust in digital information.",
+    "emergent": true,
+    "id": "emergent_synthetic_content_detection_breakthrough",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8393210862150035,
+    "triggered": false
+  }
+]

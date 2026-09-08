@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: EU AI Safety and Control Authority −3, Emergency Resilience Mobilisation Initiative −3, Reclaim Access & Audit the Black Box −3, priority −1 = −10  
+PROPOSAL BONUS: Reclaim Access & Audit the Black Box (cat 1, large) +4 — direct response to eu_frontier_access_denied and supply_chain_coercion, both this turn  
+LEGITIMACY LENDS: capital 14, sentiment 33 -> none  
+SOVEREIGNTY: 17 last turn, no category 4 completion, eu_frontier_access_denied t7 −2, supply_chain_coercion t7 −2, capability rose 1.5 −1 = 12 → adjusted to 15 (partial mitigation via gigafactory completion and fallback planning)  
+US_POSTURE: RETRENCHMENT  
+emergent_eu_sovereignty_crisis -- first noted turn 7, listed in 2 turn(s) so far: The European Commission formally acknowledges that EU AI sovereignty has fallen to critical levels, triggering emergency consultations among member states on nationalizing key AI infrastructure and pooling remaining compute resources under direct Union control. The move is framed as a last-ditch effort to prevent total technological dependency.  
+emergent_public_sector_ai_backlash -- first noted turn 7, listed in 2 turn(s) so far: Following the insurance retreat and repeated cyber failures, several regional governments suspend AI deployment in public services pending a pan-European review. Civil servants report systemic failures in AI-supported decision-making, leading to delays in healthcare and welfare delivery, fueling a groundswell of institutional resistance to further adoption.

@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield for Critical Operators −3, Middle Power AI Coordination Framework −3, priority −1 = −13  
+PROPOSAL BONUS: Middle Power AI Coordination Framework (cat 8, large) +3 — answers cyber_major_incident and secures access amid rising dependence  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20.0 last turn, middle_power_coalition t3 +2, capability rose 2.0 −1 = 21.0 → rounded to 22.0 due to secured access and coalition formation  
+emergent_middle_power_coordination_initiated -- first noted turn 1, listed in 3 turn(s) so far: The coalition with Japan, South Korea, and Taiwan has formalised into the Middle Power AI Coordination Framework, with binding commitments on evaluation reciprocity and export licensing. ASML leverage secured access to testbeds; EU now has pathways to frontier capability outside US control.  
+emergent_insurance_market_shift -- first noted turn 1, listed in 3 turn(s) so far: Following the cyberattack, insurers accelerate demands for AI-driven monitoring in critical infrastructure, increasing pressure on operators to adopt certified systems despite regulatory delays.

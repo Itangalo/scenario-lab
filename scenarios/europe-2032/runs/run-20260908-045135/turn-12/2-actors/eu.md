@@ -1,0 +1,26 @@
+## Statement changes  
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will no longer act without a credible enforcement path **or a viable political foundation**.  
+  - Grounds: This turn, we attempted to empower ENISA with licensing authority over high-risk model components, but faced immediate legal resistance from the German Constitutional Court, lukewarm support from member states, and active opposition from open science communities. The measure failed not only on operational grounds but on political cohesion — we assumed urgency would unify, but instead found fragmentation. Acting under uncertainty must now include testing for political viability, not just technical enforceability. We are not retreating from action — we are anchoring it in legitimacy.
+
+- modify `contain_the_open_frontier` (commitment): Prevent openweight capability from reaching 75.0 by restricting distribution of agent-enabling model components **through enforceable, jurisdictionally grounded mechanisms, and only where political and legal consensus can be secured**  
+  - Grounds: The current level of openweight capability (72.5) is perilously close to the 75.0 threshold, but our sole instrument — the Secure Enforcement Mandate — lacks adoption. With **eu_political_capital** at 7.0 and **public_sentiment** at rock bottom, we cannot force a top-down regulatory solution. The commitment stands, but its method must now account for the reality that even well-designed controls fail if they lack buy-in. We are shifting from unilateral enforcement to coalition-building — not abandoning containment, but seeking a path that can actually pass.
+
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now acknowledge that **without sovereignty in implementation, neither mandate can be fulfilled, and without political capital, sovereignty cannot be built**.  
+  - Grounds: This turn, we were locked out of the frontier, blocked from building enforcement capacity, and unable to rally support even for a narrowly scoped licensing regime. The dual mandate remains, but its execution depends on a resource we have nearly exhausted: the ability to act collectively. We are not changing our purpose — we are recognizing that power requires not just infrastructure and law, but consent, cohesion, and credibility. Without them, even the most urgent measures dissolve into symbolism.
+
+## Portfolio  
+- Secure Enforcement Mandate for Open-Weight Controls (category 3, costs 2 per turn, started turn 11, finishes on turn 13): Establish legal authority and operational capacity for ENISA to enforce pre-release review and licensing of agent-enabling AI components; aim to reduce openweight_capability growth rate by 50% over the next 18 months  
+- Canceled measure: Secure Enforcement Mandate for Open-Weight Controls. The measure has failed to gain adoption due to legal challenges, lack of member-state consensus, and insufficient political capital to overcome opposition. Continuing would drain already exhausted resources without prospect of success.
+
+## New measure  
+None this turn.  
+Waiting for a shift in public sentiment or a catalytic incident that could realign member-state priorities, as current political capital is too low to launch any new measure with realistic chance of adoption.
+
+## Priority  
+None this turn.  
+With no active measure in flight and political capital at 7.0, no single initiative can be credibly prioritized; survival of the Union’s AI policy agenda requires rebuilding legitimacy before advancing any front.
+
+## In practice  
+This turn, we are in retreat — not from our mandates, but from the illusion of control. The Secure Enforcement Mandate, once our anchor, has collapsed under legal and political strain. We formally withdrew it from the Council agenda after the German Constitutional Court signaled intent to block it on proportionality grounds, and France and the Netherlands withdrew their conditional support, citing risks to research freedom and transatlantic relations. Hugging Face and LMNT refused to co-design filters without liability protections we cannot offer. The window for top-down enforcement of openweight controls has closed — not because the threat diminished, but because our capacity to act did.
+
+We are now shifting focus to survival and repositioning. Behind closed doors, we have initiated a tripartite dialogue with the European Parliament’s JURI and IMCO committees and the Presidency to assess what minimal consensus remains on AI governance. The goal is not legislation, but diagnosis: where might even narrow agreement emerge? We are also commissioning a rapid assessment from the European Political Strategy Centre on how **emergent_global_ai_worker_strike** could be leveraged — not to impose controls, but to argue for EU-hosted, publicly governed training infrastructure as a stable alternative to volatile private labs. But without political capital or public support, even this is aspirational. For now, we are holding the line, not advancing it — and hoping the next turn brings not another crisis, but a crack in the deadlock.

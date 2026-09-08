@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Worker Transition Acceleration Fund −3, priority −1 = −10  
+PROPOSAL BONUS: Worker Transition Acceleration Fund (cat 7, large) +3 — emergent_labour_displacement_wave landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22.0 last turn, no capacity event, InvestAI Gigafactories in flight +1, capability rose 1.5 −1 = 22.0  
+emergent_asml_defiance_move -- first noted turn 1, listed in 1 turn(s) so far: ASML, under pressure from both the U.S. and the EU, announces a limited pilot program to service older lithography machines in China via a Belgian subsidiary using EU-origin components, testing the boundaries of American jurisdiction. The move triggers diplomatic friction but also signals the EU’s willingness to assert its industrial sovereignty in the supply chain.

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_open_source_research_alliance",
+    "probability": 0.2333333333333333,
+    "emergent": true,
+    "description": "A coalition of European universities, public research labs, and open-source AI collectives advances its efforts to develop and maintain a sovereign, auditable stack of AI models based on openweight releases. Early progress boosts morale, but long-term scalability remains uncertain without sustained funding and coordination.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

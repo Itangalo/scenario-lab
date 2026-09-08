@@ -1,0 +1,6 @@
+`emergent_ai_moratorium_push` -- first noted turn 1, listed in 1 turn(s) so far: In the wake of the cyber test shot and growing public unease over uncontrolled AI development, several EU member states begin pushing for an immediate moratorium on training runs above a certain scale, citing national security and democratic integrity. The proposal gains traction in national parliaments and is framed as a necessary pause to establish oversight, not a rejection of AI itself.
+`emergent_ai_talent_exodus` -- first noted turn 1, listed in 1 turn(s) so far: Reports emerge of a growing outflow of AI researchers and engineers from EU institutions to positions in the United States and China, driven by faster-paced environments, access to superior compute, and fewer regulatory constraints. This trend accelerates as frontier labs expand recruitment targeting European talent, weakening the Union's ability to build independent capacity despite its supply-chain leverage.
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield for Critical Infrastructure −3, priority −1 = −10
+PROPOSAL BONUS: none
+LEGITIMACY LENDS: none
+SOVEREIGNTY: 22.0 last turn, no capacity event, InvestAI Gigafactories in flight +0, Tech sovereignty package in flight +0, capability rose 2.0 −1 = 21.0

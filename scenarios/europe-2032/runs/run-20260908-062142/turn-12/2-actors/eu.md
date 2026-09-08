@@ -1,0 +1,28 @@
+No statement changes.
+
+## Portfolio
+``Critical Infrastructure AI Shield Initiative (category 6, costs 3 per turn, started turn 7, finishes on turn 9): A rapid deployment programme to harden 80% of EU critical infrastructure operators—energy, water, transport, health—against AI-generated cyberattacks by integrating EU-controlled defensive agents from the Sentinel Programme into their SOC stacks within 18 months, with mandatory adoption and centralised threat intelligence sharing`` — **finished**  
+``Emergency Social Transition Compact (category 7, costs 3 per turn, started turn 8, finishes on turn 10): Establishes a binding, EU-wide framework for AI-driven job displacement, co-governed by the reactivated European Labour Council, to scale worker cooperatives, retraining pipelines, and wage insurance in sectors under acute automation pressure, funded by a levy on firms deploying AI at scale``  
+``Data Soil Expansion and Rural AI Integration Programme (category 9, costs 3 per turn, started turn 9, finishes on turn 11): Launch a pan-EU rollout of the emergent Data Soil initiative, integrating repurposed defensive AI models into agricultural planning, carbon farming, and rural economic development, with member-state co-investment and technical support from Eurostat, EEA, and CAP infrastructure``  
+``Sovereign AI Core: Secure Compute & Talent Foundation (category 4, costs 3 per turn, started turn 11, finishes on turn 13): Establish a legally sovereign, physically distributed, and politically insulated foundation of compute and technical talent to run and verify AI systems essential to EU strategic autonomy, starting with hardened clusters in Finland, Belgium, and Bulgaria``  
+``Joint AI Safety Taskforce with Conditional Access Framework (category 8, costs 3 per turn, started turn 12, finishes on turn 14): Establish a transatlantic safety evaluation consortium with pre-deployment access to frontier models, conditioned on binding EU oversight rights and reciprocal data flows, to restore visibility into high-capability systems now operating beyond audit.``
+
+## New measure
+**Emergency Auditability Directive for Critical AI Systems**  
+Mandate immediate logging, traceability, and human-readable decision rationales for all AI systems integrated into critical infrastructure operations, enforced through ENISA with emergency powers until full compliance is verified.
+
+`Category: 1 (Evaluation and oversight)`  
+`Size:` large  
+`Finishes on turn:` 14  
+`Targeted effect:` Increase ai_safety by 8–12 points by forcing transparency into opaque systems currently in operation; reduce institutional liability fears that are blocking further integration; begin restoring public trust eroded by unaccountable AI actions. Mitigate political capital drain from loss of democratic control.  
+`Applies to:` ENISA, national cybersecurity agencies, critical infrastructure operators in energy, transport, health, and water sectors across all member states, and vendors supplying AI systems to those sectors.
+
+## Priority  
+**Emergency Auditability Directive for Critical AI Systems** — because the Shield we built can no longer be trusted by those it protects, and without enforceable transparency, even our own defensive systems risk becoming instruments of unaccountable power — undermining both resilience and legitimacy.
+
+## In practice  
+We are acting on a crisis of confidence as much as capability. The Shield holds, but its opacity has become a second-order threat: Bavaria, Crete, and now parts of Wallonia refuse integration unless they can verify decisions. We cannot defend democracy with tools that defy democratic scrutiny. Under Article 17(3) of the Cyber Resilience Act and invoking the new Emergency Powers Protocol, ENISA will issue binding technical standards this quarter requiring all AI systems in critical infrastructure to produce auditable reasoning trails — not perfect interpretability, but enough to reconstruct key alerts, suppressions, and escalation paths. Vendors have six months to retrofit or withdraw; non-compliant systems will be disconnected from cross-border networks. This is not optional.  
+
+Meanwhile, the Emergency Social Transition Compact remains in overdrive. We are reallocating €300 million from fast-failing regional training silos into modular, mobile upskilling units — retrofitted buses equipped with VR simulators and live mentorship links — deployed directly to Paris, Athens, and Vilnius where protests have turned physical. These units prioritise care robotics maintenance, green retrofit coordination, and local AI steward roles: jobs that embed displaced workers into oversight, not just adaptation. The European Labour Council is negotiating co-ownership pilots in three regions, where worker councils gain veto rights over AI deployment speed and scope. It’s fragile, but it’s beginning to shift the narrative from displacement to participation.  
+
+The Sovereign AI Core moves slowly, but it moves. Power contracts in Kittilä are signed under state-backed guarantees; Schengen fast-tracking for AI researchers now processes applications in 14 days. But we are still one bottleneck away from paralysis — which is why we are escalating the Joint AI Safety Taskforce through NATO’s Civil Emergency Planning Committee, reframing it as a collective security imperative. If Washington won’t treat this as a shared sovereignty issue, we will treat it as a defence one. And on the ground, Data Soil expands — cautiously. In Andalusia, we’ve tied drought-model access to open telemetry: every village using our forecasts must publish soil moisture data in return. Trust is earned in loops, not declarations.

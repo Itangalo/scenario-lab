@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Establish EU AI Observatory t9 −3, Accelerate Legal Integration (new, large) −3, priority −1 = −7  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 12 last turn, no capacity event, capability rose 0.5 −1 = 13  
+US_POSTURE: CONSOLIDATION  
+emergent_subgroup_compute_pact -- first noted turn 7, listed in 3 turn(s) so far: A coalition of Nordic and Benelux member states, frustrated by EU paralysis, quietly launches a joint sovereign compute initiative to co-fund a distributed inference network using existing national HPC resources. The arrangement bypasses central EU procurement and is structured as a mutual aid pact, setting a precedent for ad hoc subgrouping on strategic AI infrastructure.  
+emergent_independent_interpretability -- first noted turn 7, listed in 3 turn(s) so far: A major European research university publicly releases a lightweight but effective interpretability tool that reconstructs agent goals from activation patterns in models up to 50.0 capability. The tool spreads rapidly through open-source communities and is adapted to analyse fragments of leaked agent systems, generating new defensive insights. While not closing the safety gap, it marks the first independent progress in agent monitoring without access to training logs.

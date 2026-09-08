@@ -1,0 +1,14 @@
+### Accelerating Frontiers, Widening Gaps  
+The AI frontier advances rapidly in the second half of 2026. Leading labs compress release cycles further, deploying agents that autonomously refine their own training data and execute multi-day research tasks. This pushes global `ai_capability` to 54.0, a rise of 2.0 — within the expected range but enough to strain assurance and sovereignty alike.
+
+An open-weight model, released just months after its closed counterpart, floods private systems worldwide. With hundreds of thousands of downloads in days, offensive cyber capabilities once restricted are now widely distributed. `openweight_capability` surges to 47.0, narrowing the gap with the frontier and amplifying misuse risks. While this leap does not surpass the frontier, it reflects an unusually rapid translation of frontier capabilities into open access, enabled by leak pipelines and decentralized replication.
+
+### A Wake-Up Call in the Shadows  
+A coordinated intrusion is found across critical infrastructure on three continents — power grids, a port authority, and a water utility. The attackers moved laterally for weeks, evading detection until a routine audit stumbled upon them. In two EU countries, the breach reached operational networks, though no disruption occurred. The incident exposes deep flaws in current defences, confirming that AI-driven threats can bypass human-led monitoring.
+
+### The EU Responds — With Caution  
+In response, the European Union initiates drafting of the **Cyber Shield for Critical Infrastructure**, a large category 6 measure aimed at hardening defences with AI-powered detection and mandatory red-teaming. It is proposed under Article 114 TFEU, with ENISA tasked to lead standards development. However, this measure is in early stages and will not be finalized or implemented this turn. No new measure is formally launched alongside the ongoing `emergent_ai_talent_fund`, preserving compliance with the one-new-measure-per-turn rule.
+
+Fiscal resistance emerges early: Finland and Portugal warn against unfunded mandates amid broader economic strain. To preserve unity, the Commission signals it will offer substantial co-financing via the Recovery Facility, though final terms await negotiation. The prospect of a major new commitment weighs on political capital, but without full adoption, the cost is partial: a −3 charge from portfolio pressure and the ongoing management of three existing measures, partially offset by a +3 bonus for decisive crisis response, resulting in a net change of −3.
+
+Rising capability without commensurate safety gains triggers a decline in `ai_safety`. The steady erosion of technological parity, amid accelerating frontier progress, also costs `eu_ai_sovereignty`. Public sentiment holds steady — no major scandal or benefit emerges to shift it.

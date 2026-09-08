@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 52.5 to 60.0 (+7.5) while `ai_capability` increased from 63.5 to 65.0 (+1.5). This violates the rule that `openweight_capability` may not exceed `ai_capability`. At no point can `openweight_capability` be greater than `ai_capability`, yet 60.0 > 65.0 is false — but 60.0 is only valid if ≤65.0. While 60.0 ≤ 65.0 holds numerically, the jump of +7.5 in `openweight_capability` far outpaces the +1.5 growth in `ai_capability`, implying a catch-up or leapfrog effect that is not permitted without a corresponding rise in the frontier. More critically, such a large asymmetric jump (especially when `openweight_capability` was already close to the frontier) suggests a structural breach of the accumulation invariant unless explicitly grounded in a prior event gate or capability release mechanism already authorized. No such basis is provided.\n- Invariant 2 further violated: The narrative describes no catastrophic physical destruction of compute, which is the only exception allowing downward movement in `ai_capability` or `openweight_capability`. However, this is not at issue — the violation is upward: `openweight_capability` rising faster than `ai_capability` and nearing parity without any explanation tied to an earlier-enabled mechanism (e.g., prior open-release infrastructure, leakage, or sanctioned diffusion). The notepad records no such enabling event, and the Sovereign Access programme is described as procedural, not operational. Thus, the jump lacks grounding in accumulated capability.\n- Metric Rule 9 potentially violated: While no single metric moves more than 25 points, a +7.5 increase in `openweight_capability` must still respect underlying accumulation dynamics. Given that `ai_capability` grows slowly via RSI onset (implied by prior turns), a sudden +7.5 leap in open-weight capability — especially from 52.5 to 60.0 — exceeds plausible compounding rates absent a major release event. Such jumps are typically bounded by the rate of frontier advancement unless unlocked by a specific gate (e.g., leak, open-sourcing by a frontier lab). No such event is narrated or recorded in the notepad."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

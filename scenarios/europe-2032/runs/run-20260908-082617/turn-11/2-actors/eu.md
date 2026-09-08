@@ -1,0 +1,33 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Shift from becoming the definitive validator of trustworthy AI governance through post-deployment redress and audits, to ensuring the EU retains operational agency in AI governance by securing sovereign access to capability and closing critical gaps in resilience — because without infrastructure that functions and capital to act, no standard-setting power remains  
+- Trigger: the member_state_defection event, the backlash_physical outbreak, and the supply_chain_coercion event collectively demonstrate that the Union’s authority is fracturing both externally and internally; meanwhile, eu_political_capital has collapsed to 12.0 and public_sentiment to 23.0, rendering the current redress-focused commitment inoperable without prior stabilization  
+- Grounds: The previous commitment assumed we could lead by normative authority — that fairness could be our leverage. But legitimacy is not a standalone foundation; it rests on perceived competence and control. With a member state bypassing EU coordination to cut its own AI deal, physical attacks on data centres spreading, and ASML’s entire product line weaponized by Washington, the EU is being stripped of both material autonomy and political cohesion. The automated_decision_scandal and German insurance failure were symptoms; these events are proof of systemic collapse. We cannot operationalise redress when our own institutions cannot secure power grids or command loyalty. The two-year commitment must now pivot to survival: stabilise sovereignty, restore minimum trust, and prevent cascading failure. Fairness without functioning is a memorial, not a mandate.
+
+## Portfolio  
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — finished this turn  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 036 and proposes accelerated-permitting zones`` — finished this turn  
+``Establish the European Compute Security Audit Regime (category 4, costs 3 per turn, started turn 5, finishes on turn 7): Create a binding framework to audit and certify the physical and legal integrity of high-performance compute clusters used for advanced AI training and inference within the EU, with special scrutiny for academic and industrial resources linked to the emergent black market`` — finished this turn  
+``Launch Coalition Audit of AI-Driven Public Decisions (category 1, costs 3 per turn, started turn 7, finishes on turn 9): Stand up a joint technical-legal task force with middle-power partners to audit high-impact AI-supported decisions in social services, policing, and labour markets, creating binding redress protocols and public accountability mechanisms``  
+``Operationalise the Post-Deployment Redress Mechanism for Public AI (category 1, costs 3 per turn, started turn 10, finishes on turn 12): Launch an EU-level system to reconstruct, review, and correct high-impact algorithmic decisions in real time, using forensic logging, model versioning, and human-in-the-loop review to create enforceable rights``
+
+Canceled measure: Launch Coalition Audit of AI-Driven Public Decisions.  With political capital at 12.0 and public trust in freefall, continuing to fund a transnational audit coalition that lacks enforcement, domestic legitimacy, or operational buy-in risks becoming a theatre of irrelevance; the energy and capital must shift to stabilising core infrastructure and containing physical backlash.
+
+## New measure  
+**Secure EU Compute Backbone Against Physical and Coercive Threats**  
+Deploy emergency protocols to protect sovereign AI infrastructure from sabotage, coercion, and black-market leakage, using legal, military, and industrial tools to ensure continuity of operation.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size: large`  
+`Finishes on turn: 14`  
+`Targeted effect:` resilience +12 (by hardening physical and energy links to compute sites), eu_ai_sovereignty +8 (by preventing external coercion from disabling EU-accessible capability), public_sentiment +5 (by visibly defending public infrastructure)  
+`Applies to:` EU sovereign compute sites, national energy grids, military and civil protection forces, semiconductor supply chains under partial EU leverage
+
+## Priority  
+**Secure EU Compute Backbone Against Physical and Coercive Threats** — because the member_state_defection, backlash_physical, and supply_chain_coercion events have created an existential convergence: our infrastructure is under attack from within, our sovereignty is being outsourced by coercion, and our political capital is too low to sustain normative projects — so we must first ensure the lights stay on.
+
+## In practice  
+This turn, we are in triage. The Coalition Audit, once our flagship, is being mothballed. Its technical teams will be folded into a new emergency task force under the Joint Research Centre and Frontex, repurposed to assess physical vulnerabilities at the four sovereign compute sites now legally under EU jurisdiction. The Post-Deployment Redress Mechanism remains in flight, but its rollout is being slowed — not canceled — to free up AI Office capacity. We cannot afford to launch new normative systems while data centres are being sabotaged and member states are defecting to bilateral deals.
+
+Instead, we are invoking the Civil Protection Mechanism and Article 122 TFEU to treat AI infrastructure as critical energy infrastructure. The Commission is drafting an Emergency Compute Continuity Directive, to be fast-tracked through COREPER II and the Energy Council, mandating military-grade protection for grid links to Finland, France, Spain, and Poland’s sovereign clusters. We are coordinating with national intelligence services to disrupt the emergent_compute_black_market_expands network, using Europol’s new AI Forensics Unit to trace illicit weight transfers. Simultaneously, we are activating the Anti-Coercion Instrument in consultation with the European Parliament to prepare countermeasures against any further extraterritorial supply chain interference — not to retaliate yet, but to signal that the Union will not accept the weaponisation of its own industrial base by third parties.
+
+The message is clear: we are no longer building standards in the hope of influence. We are defending the ground we have. The German insurance scandal revealed our moral failure; the backlash_physical and supply_chain_coercion reveal our strategic one. This turn, we stop building ombudsmen and start assigning guards. If we do not, there will be nothing left to govern.

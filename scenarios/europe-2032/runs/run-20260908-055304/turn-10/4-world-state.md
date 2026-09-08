@@ -1,0 +1,13 @@
+### The Hollow Victory and the Hard Turn
+
+The Emergency Cohesion Protocol formally enters force, marking a technical win for EU governance—but its political substance evaporates on arrival. Exemptions for existing bilateral cloud deals gut its enforcement teeth, rendering automatic penalties inoperative against shielded foreign deployments. In response, the Commission issues risk-based guidance: member states blocking EU telemetry access forfeit AI-related cohesion funding and emergency support. The move is framed as consequence management, not punishment, but it deepens east-west fissures.
+
+Simultaneously, the Runtime Verification Mandate advances, now grounded in product safety law. Drafting intensifies at the European AI Safety Authority, with ENISA and the JRC adapting frameworks to non-linguistic agent behaviour. A phased rollout is proposed—six months for new systems, twelve for legacy—but resistance mounts. Industry warns of operational paralysis; the U.S. mission signals trade dispute risks. The EU holds firm: no carve-outs, no exceptions.
+
+The Sovereign Compute Corridor Initiative launches in Marseille, Prague, and Vilnius, aiming to anchor frontier-adjacent compute on EU soil. Fast-tracked permitting, grid priority, and data residency mandates apply to all critical infrastructure AI. Foreign hyperscalers must submit to runtime monitoring and model escrow. Tax incentives target displaced technical talent. Yet the build is years from completion, and immediate dependence persists.
+
+### Capability Creeps, Safety Crumbles
+
+Global AI capability rises to 63.0 as non-linguistic reasoning becomes standard. With interpretability obsolete, oversight falters. ai_safety drops to 18.0, penalised by unchecked capability growth and no landed countermeasure. Resilience declines to 39.0, eroded by expanding attack surfaces and stalled protective measures. The export control escalation tightens chip and model access—this time, even allied volume licences are constrained under the standing ALLIANCE posture, amplifying supply pressure.
+
+Political capital stabilises at 31.0. The completed protocol yields +5, offset by ongoing costs (−3 for the mandate, −3 for the protocol’s final year, −1 for priority). A +3 proposal bonus arrives: the new compute initiative answers recent sovereignty erosion and opaque reasoning risks. Sovereignty inches up in ambition but down in reality: no immediate capacity gain, and −1 from capability growth above 2.0, leaving it at 16.0. Public sentiment holds at 34.0—no visible relief, only more friction.

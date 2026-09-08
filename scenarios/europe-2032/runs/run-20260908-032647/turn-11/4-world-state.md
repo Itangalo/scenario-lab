@@ -1,0 +1,11 @@
+### The Weight of Control
+
+The European Union completes the operational activation of EU-AISE, now fully exercising its mandate to audit and halt high-risk AI deployments. Monitoring systems are integrated with a growing regional data coalition, and compliance sweeps are scheduled to begin next turn. Yet despite completed compute infrastructure in Toulouse and Prague, no sovereign training runs above 60.0 resume. The US export control escalation, now tightening access even for allied partners under the **CONSOLIDATION** posture, cuts off supply of critical chips and frontier models. The EU’s ambition for independent frontier capability is formally downgraded: the path is blocked, and the timeline abandoned.
+
+A new large measure launches to establish sovereign evaluation and red-teaming capacity for frontier models, aiming to verify safety claims independently. However, without access to weights or training runs, its early work is limited to simulation and reverse analysis of open models. The political cost is immediate. With three large measures now in flight—including the public pilot and the intolerable-risk thresholds—and a named priority, the portfolio charge overwhelms the Union’s thin political capital.
+
+### Fragile Trust, Falling Ground
+
+Resilience dips as unpatched vulnerabilities persist across healthcare and energy grids, absorbing low-level but persistent AI-driven intrusions. The public pilot in Belgium, Estonia, and Austria proceeds cautiously, but legal fragmentation slows expansion. Transparency dashboards are live, yet public sentiment remains stagnant—scepticism outweighs reassurance. No major incident occurs, but the gap between mandate and capacity widens.
+
+AI capability advances globally, pushing into the 70.0 range as self-improving systems accelerate development cycles. Open-weight models now reach 63.0, spreading narrow superhuman performance in cyber and research. Yet with no safety gains, and sovereignty eroding under sustained external pressure, the EU’s position grows more reactive. The new evaluation measure is necessary—but its impact is years away, and the present is slipping.

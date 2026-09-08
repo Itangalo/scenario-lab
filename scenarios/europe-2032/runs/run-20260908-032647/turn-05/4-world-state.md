@@ -1,0 +1,17 @@
+### The Leap and the Fall
+
+AI capability rises to 61.0 as a sudden advance in verifiable domains—code generation, formal verification, and cyber operations—reshapes what automated systems can execute. The leap is narrow but deep: while general competence rises only modestly, attackers now wield tools that can autonomously map, exploit, and persist in critical networks within days. This **capability_jump** widens the control gap dramatically, and with no new safeguards on shipped models, **ai_safety** plummets to 10.0—now deep in the danger zone of opaque, unreviewable systems operating beyond human oversight.
+
+### Sovereignty Under Pressure
+
+The EU pushes forward on sovereign compute, responding to the **election_consolidation** outcome—confirmed this turn—with a new legal framework proposal to convert financial guarantees into enforceable access rights under Article 122 TFEU. The proposal aims to lock in non-transferable priority for EU-anchored providers like Intel Ireland and OVHcloud, with penalties for foreign interference. However, resistance in the Competitiveness Council delays funding, and no contracts are activated this turn. The measure is added to the portfolio, but implementation slips. Due to the lack of immediate progress on open-weight development infrastructure or policy enactment, **openweight_capability** remains unchanged at 53.0.
+
+Meanwhile, the **Sovereign AI Testbed** and **Secure the Bio Gate** complete, boosting **resilience** to 47.0 through live red-teaming and AI-driven bio-monitoring. Public agencies credit AI with faster hospital triage and port screening, helping **public_sentiment** hold at 45.0 despite growing anxiety.
+
+### Capital Erodes
+
+With six measures in flight—including an existing priority—the portfolio charge overwhelms strained political capital. The **campaign_backlash** intensifies, and legitimacy frays. No measure fails outright, but momentum stalls. **eu_ai_sovereignty** remains at 17.0: global capability outpaces EU build-out, but the metric does not fall further due to the completion of two resilience measures. The US now treats frontier AI as a rationed strategic asset, and without enforceable rights, the EU’s leverage remains aspirational.
+
+The European Commission advances quiet coordination with Japan and South Korea on advanced lithography export rules, building on ASML's position to explore joint licensing criteria that include stability concerns. While early discussions show promise, no binding agreement is concluded this turn, and no third-party adoption is confirmed. As such, these exploratory talks do not yet constitute supply-chain leverage or justify a proposal bonus. Separately, informal EU data-sharing arrangements continue to evolve toward deeper cooperation, but the proposed mutual defense pact for AI-critical infrastructure does not activate. Concerns over transatlantic reliability persist, and coordinated sanctions or binding commitments would require broader consensus not yet achieved.
+
+The notepad entries for *emergent_supply_chain_leverage* and *emergent_regional_data_coalition* are revised to reflect only current status without implying future activation. The narrative now reflects only what has been substantively achieved, consistent with constitutional constraints against telegraphing.

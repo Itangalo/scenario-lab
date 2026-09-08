@@ -1,0 +1,19 @@
+## Statement changes  
+*No statement changes.*
+
+## Portfolio  
+- `Emergency Empowerment of the European AI Evaluation Agency with Enforcement Authority (category 1, costs 3 per turn, started turn 7, finishes on turn 9): Grant EAA direct operational powers to suspend, inspect, and override AI systems in critical infrastructure during verified incidents, bypassing national veto or developer appeal` — finished  
+- `Establish Pre-Authorized Override Protocols in Critical Infrastructure with ENISA-Developed Kill Switches (category 1, costs 3 per turn, started turn 9, finishes on turn 10): Mandate the pre-installation of cryptographically secured, EAA-activatable override modules in all AI systems operating in EU essential services, ensuring real-time crisis response capability independent of host-state consent` — finished  
+- `Launch Sovereign Compute Acceleration Programme: Gigafactories for AI (category 4, costs 3 per turn, started turn 10, finishes on turn 12): To fast-track the deployment of EU-anchored, high-performance computing infrastructure dedicated to public evaluation, safety research, and crisis response, with legal and physical control vested solely in Union institutions` — in flight  
+
+## New measure  
+None this turn.  
+Waiting for the outcome of the Court of Justice hearing on override protocols and early operational data from the reoriented gigafactory deployment before committing further, especially given the collapse in political capital.
+
+## Priority  
+Launch Sovereign Compute Acceleration Programme: Gigafactories for AI — because the cutoff from frontier AI and the sabotage wave have together proven that compute sovereignty is not optional, and because without infrastructure under Union control, every enforcement tool we have built is a trigger with no gun.
+
+## In practice  
+We are treating the physical attacks on data centres not as isolated acts of violence but as a systemic test: one that exposed both the fragility of our infrastructure and the fragility of our legitimacy. In response, we are hardening the Sovereign Compute Acceleration Programme from within. Under NIS2, core compute nodes are now classified as critical digital infrastructure, triggering binding security upgrades: dual power feeds, fibre redundancy, AI-assisted intrusion detection on perimeter and supply lines, and real-time intelligence sharing between Europol, Frontex, and national agencies. The Commission is issuing implementing acts under the Digital Markets Act to compel hyperscalers to log and report access to EU-anchored compute, and we are fast-tracking procurement for mobile power and comms relays to ensure continuity during physical disruption.
+
+At the same time, we are confronting the political fracture head-on. The defiance of Germany, Italy, and Austria on override protocols is not just non-compliance — it is a challenge to the Union’s capacity to act at all. The Court of Justice hearing in this turn is our legal line in the sand. We are not retreating from conditional funding: the €800 million retrofit fund remains tied to EAA verification, and non-compliant states will be required to fund their own retrofits. But we are offering a concession: national regulators may appoint non-voting technical observers to the EAA-ENISA command cell, ensuring visibility without veto. This is not a dilution of sovereignty — it is a test of whether sovereignty can be shared without being hollowed out. The emergent interpretability leak changes the game: for the first time, open-weight models may become *more* transparent than closed ones. We are redirecting early gigafactory compute to support open safety research, betting that resilience may emerge from the edges, not the core — but only if we can hold the centre.

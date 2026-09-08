@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: EU Frontier AI Programme −3, Strengthen Open-Weight Firewall −2, Establish EU-AISE −3, priority −1 = −9  
+PROPOSAL BONUS: Establish EU-AISE (cat 5, large) +4 — directly answers cyber_major_incident, safety_breakthrough, and eu_frontier_access_denied, all recent and severe, large measure addressing core safety and sovereignty  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 15.0 last turn, no capacity event, capability rose 1.5 −1, eu_frontier_access_denied t8 −2 = 14.0  
+US_POSTURE: CONSOLIDATION  
+emergent_regional_defense_pact -- first noted turn 7, listed in 2 turn(s) so far: The informal EU data-sharing pact evolves into a binding regional defense alliance for AI-critical infrastructure, with automated incident escalation, shared red teams, and coordinated sanctions against foreign actors conducting offensive model runs targeting member states. The pact becomes operational after a series of near-miss cyber intrusions traced to a non-aligned state actor.  
+emergent_regional_data_coalition -- first noted turn 7, listed in 2 turn(s) so far: The informal EU data-sharing talks crystallize into a formal mutual defense pact for AI-critical infrastructure, with binding commitments to joint incident response, shared threat intelligence, and coordinated sanctions against foreign actors targeting member states' AI systems. The pact activates in response to growing cyber threats and perceived unreliability of transatlantic coordination.

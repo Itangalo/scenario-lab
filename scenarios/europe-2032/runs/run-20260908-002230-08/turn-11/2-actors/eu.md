@@ -1,0 +1,29 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Secure sovereign operational AI infrastructure to enforce European red lines in real time, with demonstrable containment of autonomous threats by turn 12 and a public report on systemic risk prevention in public-sector AI by turn 13  
+- Grounds: The **automated_decision_scandal** has revealed that enforcement without accountability in domestic systems is politically unsustainable. While the external threat from autonomous cyber tools grows, the Union now faces a dual legitimacy crisis: one of competence (can we stop fast-moving AI threats?) and one of consent (do our own systems harm the people we are meant to protect?). The original commitment stands, but it must now include a binding obligation to demonstrate public benefit and repair trust, or risk total collapse of political capital.
+
+- modify `resilience_as_foundation` (position): Resilience without sovereign operational capacity is reactive, not strategic — but operational capacity without verifiable safety in public systems and visible harm reduction cannot be sustained  
+- Grounds: The current scandal is not a failure of infrastructure but of governance — an AI system deployed in the public sector caused widespread harm due to flawed risk logic, unchecked automation, and absent oversight. This is not a one-off; it reflects a systemic gap between capability and control within EU institutions themselves. Resilience must now include the ability to prevent self-inflicted harm, not just absorb external shocks.
+
+## Portfolio  
+- `Sovereign Compute Initiative (category 4, costs 3 per turn, started turn 8, finishes on turn 10): Launch an emergency build-out of EU-controlled, AI-native compute infrastructure, capable of running and evaluating frontier models independently, with secure access for public evaluators and red teams` — finished  
+- `Frontier Access Corridor (category 5, costs 3 per turn, started turn 9, finishes on turn 11): Establish a legally binding, technically secured pathway for the European AI Office to access and run frontier AI models—whether closed or open—on sovereign infrastructure, bypassing foreign-controlled APIs and cloud dependencies` — finished  
+- `Sovereign Red Line Enforcement Network (category 4, costs 3 per turn, started turn 10, finishes on turn 12): Establish a distributed, EU-operated network of secure compute enclaves capable of running, monitoring, and actively countering AI systems that cross verified thresholds of risk, with direct red-teaming authority and real-time response protocols`
+
+## New measure  
+**Public-Sector AI Safety Audit and Remediation Programme**  
+A binding EU-wide audit of all AI systems in public administration above 40.0 capability, with mandatory remediation, public reporting, and temporary suspension of high-risk systems until verified safe.  
+
+- Category: 6 (Preparedness and resilience)  
+- Size: large  
+- Finishes on turn: 13  
+- Targeted effect: Increase `ai_safety` by 8–12 points, raise `public_sentiment` by 10–15, and reduce systemic risk from public-sector AI failures  
+- Applies to: EU member states, European Commission agencies, and public-sector contractors  
+
+## Priority  
+**Public-Sector AI Safety Audit and Remediation Programme** — because the **automated_decision_scandal** has shattered public trust and exposed a critical vulnerability within the Union’s own institutions: we cannot credibly enforce red lines on external actors while our own systems inflict harm at scale, and without restoring legitimacy, no sovereign capability will survive political withdrawal of support.
+
+## In practice  
+We are launching the Public-Sector AI Safety Audit and Remediation Programme under Article 114 TFEU, with the European AI Office leading coordination and national data protection authorities conducting on-the-ground assessments. All AI systems used in social services, healthcare, law enforcement, and tax administration above 40.0 capability must undergo independent evaluation by certified red teams within six months. Systems found to lack human oversight, exhibit biased risk profiling, or operate without explainability will be suspended until remediated. We are allocating €900 million from the Digital Europe Programme and leveraging the newly activated AI Emergency Fund to cover audit costs and transition support. Crucially, the first report — on the Belgian social insurance system — will be published by turn 12, setting a precedent of transparency.
+
+Meanwhile, the Sovereign Red Line Enforcement Network continues toward operational readiness, but its credibility hinges on more than technical success. France and Germany are finalizing secure enclave configurations, but without full compute access — still blocked by ASML’s withheld servicing and U.S. downstream controls — we cannot simulate threats at frontier scale. ENISA’s real-time response protocols remain theoretical without live data, and the upcoming fall cyber exercise risks being seen as performative unless it includes a public demonstration of containment. We are now treating the Polish node not just as a delay but as a strategic liability, and the Article 7(1) opinion will be issued next month — not to punish, but to reassert that sovereignty is collective. Yet even this move risks backlash if not paired with visible progress on harm prevention at home. The middle-power coalition offers a lifeline: we are pushing for joint leverage with Japan, Taiwan, and South Korea on lithography servicing access, using our shared chokepoint in materials and inspection tools to counter U.S. supply chain coercion. But that leverage will mean nothing if the public believes the Union builds walls against threats while letting harm flow unchecked through its own doors.

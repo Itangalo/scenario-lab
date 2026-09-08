@@ -1,0 +1,6 @@
+`emergent_ai_talent_fund` -- first noted turn 1, listed in 1 turn(s) so far: A coalition of EU member states and private foundations announces a pan-European AI talent initiative, offering substantial fellowships and relocation grants to retain and attract frontier researchers. The program is framed as a response to the brain drain toward US labs and is designed to strengthen long-term EU sovereignty without requiring immediate technological breakthroughs.
+`emergent_ai_talent_exodus` -- first noted turn 1, listed in 1 turn(s) so far: A growing number of EU-based AI researchers and engineers begin relocating to the US and UK, citing lack of access to frontier training runs, weak career trajectories within EU institutions, and limited industrial capacity. This quiet exodus accelerates as mid-tier labs fold or are acquired, reinforcing dependency.
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Resilience Surge −2, Cyber Shield −3, priority −1 = −12
+PROPOSAL BONUS: Cyber Shield (cat 6, large) +3 — cyber_test_shot landed this turn and this answers it directly
+LEGITIMACY LENDS: none
+SOVEREIGNTY: 22 last turn, no capacity event, capability rose 2.0 −1 = 21

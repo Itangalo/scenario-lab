@@ -1,0 +1,30 @@
+## Statement changes  
+No statement changes.
+
+## Portfolio  
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — **finished**  
+- `Sovereign Evaluation Capacity for Frontier Models (category 5, costs 3 per turn, started turn 3, finishes on turn 6): Establish an EU-operated, technically independent evaluation lab with full access to frontier model weights and training data under binding legal authority, capable of conducting pre-deployment assessments, agent-behaviour testing, and interpretability audits on behalf of the Union` — **finished**  
+- `Secure Compute Anchoring Initiative (category 4, costs 3 per turn, started turn 5, finishes on turn 7): Launch a binding legal and financial mechanism to ensure that any sovereign compute capacity funded or permitted under EU instruments remains under enforceable EU jurisdiction and cannot be remotely disabled, reconfigured, or denied access by foreign entities` — **finished**  
+- `Sovereign Talent Attraction and Retention Programme (category 4, costs 3 per turn, started turn 6, finishes on turn 8): Establish a pan-European fast-track visa, housing, research funding, and security clearance framework to recruit and retain 1,000 frontier AI researchers and engineers over the next three years, with binding commitments to EU-based deployment and development`  
+- `Sovereign AI Operating Cluster (category 4, costs 3 per turn, started turn 6, finishes on turn 9): Establish a federated network of EU-anchored compute clusters, each co-located with energy sources and connected via a sovereign optical backbone, operated under joint EU-member state authority with priority access for public missions and vetted research`  
+- `Sovereign Agent Deployment Programme (category 9, costs 3 per turn, started turn 7, finishes on turn 10): Deploy sovereign AI agents—built from open-weight-hardened models, operated on EU-anchored compute, and staffed by talent from the Sovereign Talent Programme—into critical public functions with real operational authority, starting with energy grid balancing and border threat detection`  
+
+## New measure  
+**Launch Emergency Cyber Resilience Surge**  
+Accelerate the hardening of critical public services against AI-enabled cyber threats by fast-tracking deployment of AI-augmented intrusion detection, automated patching, and zero-trust architectures across energy, healthcare, and municipal systems.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size: large`  
+`Finishes on turn: 10`  
+`Targeted effect:` increases resilience by 8–12 points through rapid cyber hardening; reduces the impact of the ongoing cyber_major_incident and prevents cascading failure in essential services  
+`Applies to:` EU institutions, member states, ENISA, national cybersecurity agencies, operators of essential services under NIS2, and InvestAI-funded infrastructure  
+
+## Priority  
+**Sovereign Agent Deployment Programme** — because the openweight_frontier_release and cyber_major_incident have jointly exposed that the EU’s greatest vulnerability is not lack of access, but lack of *operational control* over systems that are already in motion: we must now demonstrate that we can run sovereign AI in high-stakes environments, or risk irrelevance even as capability diffuses.
+
+## In practice  
+This turn, we confront a dual shock: the **cyber_major_incident**, a large-scale ransomware sweep targeting regional hospitals and energy regulators, was executed using AI-generated exploit chains derived from an open-weight model now in wide circulation. The attack bypassed legacy detection systems, encrypted critical dispatch controls in two member states, and triggered emergency declarations before containment. Attribution remains uncertain, but the tooling’s sophistication confirms that offensive capability has surged past defensive readiness. At the same time, the **openweight_frontier_release** has pushed open models to 53.5, within 9 points of the closed frontier — and one of those models, based on a recent modular agent architecture, has already been repurposed for autonomous vulnerability scanning. The window for reactive governance is closed.
+
+We respond with the **Emergency Cyber Resilience Surge**, mobilising €45bn from the Civil Protection Mechanism and the Digital Europe Programme to fast-track AI-augmented defences. Under Article 122 TFEU, we invoke the emergency clause to bypass normal procurement rules, directing ENISA and national agencies to deploy zero-trust architectures and automated patching systems in all NIS2-designated entities within six months. The Sovereign AI Operating Cluster provides dedicated compute for real-time threat modelling, while the Sovereign Evaluation Capacity shares its latest agent-behaviour profiles to improve detection of goal-directed intrusions. Member states resist the speed of rollout, citing budget strain and staffing gaps, so we offer a 90% co-financing rate and deploy mobile cyber-response teams from the EU Cyber Rapid Response Framework.
+
+Simultaneously, the **Sovereign Agent Deployment Programme** shifts from design to implementation. In the Nordic-Baltic energy corridor, the first sovereign agent — trained on a hardened open-weight model and running on InvestAI compute in Finland — assumes live grid-balancing duties under human-in-the-loop supervision. Frontex begins parallel integration at the eastern border, using a second agent to correlate cross-modal threat data. These are not demonstrations: they are operational deployments, and their success is now tied directly to public confidence. The **Sovereign Talent Programme** reaches its final review: 47 researchers onboarded, clearance timelines halved, and binding deployment agreements signed. The programme will close on schedule, having delivered its core cohort — but the pressure now shifts to retention, as global labs launch aggressive counter-recruitment. We prepare a follow-on retention package, to be proposed next turn, but for now, our capital is spent.

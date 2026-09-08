@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, ASML Strategic Shield Initiative −3, EU Sovereign Assurance Programme −3, priority −1 = −13  
+PROPOSAL BONUS: EU Sovereign Assurance Programme (cat 5, large) +6 — directly answers safety_breakthrough (pivotal technical shift) and export_control_escalation (sovereignty threat), both current and severe  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 18 last turn, no capacity event, capability rose 2.0 −1, ASML Strategic Shield Initiative in flight +0 = 17 → adjusted to 16 due to sustained access vulnerability under export_control_escalation and lack of near-term substitution

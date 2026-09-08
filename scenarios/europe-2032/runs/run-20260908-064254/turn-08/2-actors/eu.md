@@ -1,0 +1,18 @@
+## Statement changes
+
+No statement changes.
+
+## Portfolio
+``Sovereign Verification Regime for High-Autonomy Systems (category 1, costs 3 per turn, started turn 6, finishes on turn 8): A binding requirement for all AI systems operating above a defined autonomy threshold in critical domains to submit to real-time behavioural verification by EU-accredited auditors, with access to internal logs, agent trajectories, and decision rationales.`` — **Finished this turn.**  
+``Accelerated Compute Sovereignty Initiative (category 4, costs 3 per turn, started turn 8, finishes on turn 9): A targeted surge to bring at least two exascale-class AI training facilities online within EU legal jurisdiction by Q2 2031, with sovereign control over access, weights, and energy supply, using emergency permitting, state-backed power procurement, and binding talent retention agreements.``
+
+## New measure
+None this turn. The **Accelerated Compute Sovereignty Initiative** is still in its first operational turn, requiring urgent negotiation of site-specific conditions, parliamentary scrutiny of the Article 122 invocation, and alignment with national energy regulators—no space exists for another major instrument without risking political overload.
+
+## Priority
+**Accelerated Compute Sovereignty Initiative** — because the US-China audit agreement has created a new global norm for weight security and mutual verification, but explicitly excludes the EU; without sovereign training infrastructure, our own verification regime collapses into symbolic oversight, and we risk becoming dependent spectators in a system that determines strategic outcomes.
+
+## In practice
+This turn, we are executing the launch phase of the **Accelerated Compute Sovereignty Initiative**, converting political intent into binding commitments. Under Article 122 TFEU, the Commission has issued an implementing act declaring AI compute infrastructure a matter of Union-wide critical importance, enabling emergency permitting procedures through the European Climate, Infrastructure and Environment Executive Agency (CLIMA). We are convening a high-level group under the President of the Council, composed of ministers from France, Sweden, Finland, and Germany, to fast-track land-use, grid-access, and environmental waivers for the Nordic and French sites. The European Investment Bank has been directed to allocate €18bn in low-interest loans, drawn from repurposed cohesion funds and the residual capital of the concluded InvestAI programme.
+
+At the same time, ENISA is drafting the technical standards for air-gapped weight storage and audit-ready training environments, which will be binding on any operator seeking sovereign tasking rights. We are offering existing hyperscalers a carve-out: if they establish a legally separate EU subsidiary with irrevocable access guarantees and no right to refuse crisis tasking, they may compete for construction and operation contracts under the initiative. This offer is being negotiated bilaterally with Google DeepMind, Meta AI, and NVIDIA’s European arm, leveraging access to gigawatt-scale geothermal and nuclear power as bargaining chips. Resistance is mounting in the ECOFIN Council, where several member states warn of market distortion and fiscal strain, but we are holding firm: without independent capacity, no regulation we impose can be credibly enforced. The completion of the **Sovereign Verification Regime** this turn marks not an endpoint, but a warning—we now have rules for systems we cannot see, built on foundations we do not control. That ends with this initiative.

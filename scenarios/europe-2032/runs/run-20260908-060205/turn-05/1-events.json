@@ -1,0 +1,30 @@
+[
+  {
+    "id": "emergent_regulatory_fracture",
+    "probability": 0.24,
+    "emergent": true,
+    "description": "National data protection authorities begin issuing conflicting rulings on the legality of open-weight model training on public web data, splitting enforcement across member states and creating legal uncertainty for developers. The European Data Protection Board fails to issue a unified interpretation, revealing a fracture between strict and permissive jurisdictions.",
+    "probability_samples": [
+      0.2,
+      0.3,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "election_alliance",
+    "probability": 0.5533333333333333
+  }
+]

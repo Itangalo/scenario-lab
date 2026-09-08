@@ -1,0 +1,22 @@
+## Statement changes  
+No statement changes.
+
+## Portfolio  
+- ``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``  
+- ``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``  
+- ``Strengthen detection and response to AI-driven cyber intrusions (category 6, costs 3 per turn, started turn 1, finishes on turn 4): Launch mandatory cyber resilience audits for all critical infrastructure operators, with binding upgrade requirements and real-time monitoring pilots``  
+- ``Secure EU access to frontier model evaluations through sovereign red-teaming capability (category 5, costs 3 per turn, started turn 2, finishes on turn 6): Establish a permanent, EU-controlled facility to conduct red-team evaluations on frontier AI models, including access to weights under strict legal and security conditions``
+
+## New measure  
+None this turn.  
+Waiting for the fallout from the ai_investment_collapse to settle before recommitting scarce political capital to large industrial measures — especially as the campaign_security_hawk shift in Washington closes off near-term cooperation.
+
+## Priority  
+``Strengthen detection and response to AI-driven cyber intrusions`` — because it is now clear that even modest-capability systems are high-value targets, and without operational detection in critical infrastructure, no sovereign evaluation or compute build-out will survive long enough to matter.
+
+## In practice  
+We are acting on two shocks: one hidden, one visible. The *ai_investment_collapse* has frozen several of the private compute expansions we were counting on — including two US-backed hyperscaler nodes in Ireland and Finland whose funding was withdrawn overnight. This hits our Tech sovereignty package hard, and makes the InvestAI Gigafactories more urgent than ever. But we cannot double down yet. With political capital at 34.0 and public sentiment falling, launching another large measure would overload the system. Instead, we are renegotiating the Gigafactories’ rollout: shifting Phase 1 to a single site in France with existing grid headroom, using REPowerEU emergency provisions to fast-track permitting, and offering a 15% co-investment premium from the Recovery Fund to anchor private partners who remain. This keeps momentum without overextending.
+
+Meanwhile, the breach fallout demands action where harm lands — in infrastructure. ENISA’s audit teams are now embedded in 18 critical operators, using forensic signatures from the lab intrusion to simulate novel attack vectors. We have activated Article 12a of the NIS2 Directive under the “material incident” clause, allowing us to mandate upgrades even in states resisting compliance. In Greece and Portugal, we are linking RRF disbursements to remediation timelines, accepting phased plans but requiring real-time telemetry sharing with the newly expanded CSIRT network. Hungary’s CJEU challenge remains unresolved, but we are building parallel coordination through the Energy and Transport Councils, where consensus on cross-border risk is stronger. Our goal is not perfection — it is degradation resistance. If an AI-driven attack knocks out one node in the Baltic grid, we must ensure it does not cascade.
+
+At the same time, the red-teaming facility is moving from concept to concrete. The Joint Research Centre has secured hosting agreements with BSI and ANSSI, and we are drafting the legal instrument for irrevocable jurisdiction over model weights evaluated within it — a condition non-negotiable for any lab seeking market access in the EU. We are offering mutual recognition of findings to the two leading labs still in negotiation, but the campaign_security_hawk posture in Washington has hardened their stance. One has formally declined, citing export controls we did not anticipate. So we are pivoting: expanding the facility’s remit to include open-weight stress testing, starting with Kimi K3 derivatives now circulating at 42.5. This builds public credibility, demonstrates value quickly, and creates leverage for future access. We are not blind, and we will not wait.

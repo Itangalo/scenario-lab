@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Sovereign Incident Response Corps −3, Sovereign AI Adoption Accelerator −3, Sovereign Evaluation Access Expansion −3, priority −1 = −10  
+PROPOSAL BONUS: Sovereign Evaluation Access Expansion (cat 5, large) +3 — answers capability_jump and eval_anomaly_reports directly  
+LEGITIMACY LENDS: none (capital 12.0 < sentiment 39.0)  
+SOVEREIGNTY: 15.0 last turn, no category 4 completion, no capacity event, capability rose 1.5 −1 = 14.0  
+US_POSTURE: ALLIANCE  
+emergent_regional_ai_pact -- first noted turn 7, listed in 1 turn(s) so far: In response to the EU's deepening dependency and the U.S. alliance posture offering only symbolic access, a coalition of Nordic and Benelux states initiates an informal but binding regional AI pact. It combines national compute reserves into a shared emergency pool, coordinates red-teaming of public systems, and establishes joint procurement for sovereign AI infrastructure. The move bypasses EU-wide paralysis and creates a functional core of resilience among states with aligned risk tolerance.  
+emergent_labour_unrest -- first noted turn 7, listed in 1 turn(s) so far: As public-sector AI adoption expands under strained oversight, coordinated strikes emerge in civil service unions across three major member states, citing both job displacement and the erosion of professional judgment in administrative decisions. The unrest gains traction in media and threatens to paralyze digital government services.

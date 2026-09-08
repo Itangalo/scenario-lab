@@ -1,0 +1,48 @@
+[
+  {
+    "id": "campaign_security_hawk",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.12,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A group of EU member states, alarmed by the lack of autonomous AI capability and recent exclusion from U.S. frontier models, independently launch a joint initiative to pool compute resources and fund a sovereign European AI laboratory. The move is framed as strategic autonomy but creates tension with the EU's central institutions, which are still negotiating a unified approach. The initiative gains traction quickly due to existing supply-chain leverage and public concern over dependence.",
+    "emergent": true,
+    "id": "emergent_eu_compute_pact",
+    "probability": 0.26666666666666666,
+    "probability_samples": [
+      0.3,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

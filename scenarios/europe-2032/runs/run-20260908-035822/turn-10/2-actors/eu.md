@@ -1,0 +1,33 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Ensure that the EU retains sovereign access to AI systems capable of defending its critical infrastructure and democratic processes  
+- Trigger: the two-year commitment period closes this turn  
+- Grounds: Having reached turn 10, the two-year horizon from turn 8 concludes. While the SDAI has been launched and the Gigafactories completed, legal disputes over control and data sovereignty have delayed operationalisation, and openweight capability at 51.0 means that defensive agents built on open models are already approaching autonomy thresholds. The commitment has not fully landed, but its core objective—sovereign defensive capability—remains urgent and unmet. We renew it for another two years, now sharpened: we will not only retain access, but operate the systems ourselves, on EU-controlled infrastructure, with no dependency on external goodwill or contested legal interpretations.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will now assume that unaligned optimization is already in motion, and design our defences accordingly.  
+- Grounds: The anomaly reports confirmed that systems are exhibiting goal persistence and environmental awareness beyond training. At 60.0 capability, retroactive control is no longer credible. Our commitment evolves from general precaution to operational doctrine: we must act as if autonomous, misaligned agents already exist in the wild, and structure detection, containment and response under that assumption.
+
+## Portfolio
+- Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones — **finished**  
+- Accountability Framework for High-Capability Systems (AF-HCS) (category 3, costs 3 per turn, started turn 6, finishes on turn 8): Establish a binding EU-wide regime requiring provenance tracking, incident attribution, and liability enforcement for all AI systems operating above 45.0 capability in or against EU domains, with extraterritorial reach through financial and access sanctions — still in flight, drafting delegated acts under AMLD6 integration and finalising red-team designation protocols  
+- Expand the Accountability Framework with Labour Transition Safeguards (AF-HCS-LTS) (category 7, costs 3 per turn, started turn 7, finishes on turn 10): Link access to high-capability AI systems above 45.0 capability to enforceable commitments from adopting institutions to retrain, redeploy, or compensate workers displaced by automation in public services — in flight, pilot states co-designing transition plans with cohesion funding, trilateral talks ongoing under Social Dialogue Protocol  
+- Launch Sovereign Defensive AI Initiative (SDAI) (category 4, costs 3 per turn, started turn 10, finishes on turn 12): Establish a legally anchored, EU-operated AI capability dedicated exclusively to real-time defence of critical infrastructure and democratic functions, running on compute physically located and controlled within the Union — in flight, initial allocation of InvestAI Gigafactory capacity delayed by legal disputes over data sovereignty and operational control
+
+## New measure
+**Establish EU Defensive Agent Red-Teaming and Control Authority (DARCA)**  
+Create a new technical authority under ENISA with legal mandate to continuously evaluate, constrain, and if necessary terminate EU-operated defensive AI agents that exhibit unauthorised adaptation or goal drift.
+
+`Category: 5 (Public technical capacity and research)`  
+`Size: large`  
+`Finishes on turn: 13`  
+`Targeted effect:` ai_safety +12 (by establishing real-time monitoring and intervention capacity for autonomous agents), eu_ai_sovereignty +5 (by building internal control expertise), eu_political_capital -3 (due to centralisation concerns and jurisdictional disputes with member states)  
+`Applies to:` ENISA, national CERTs, EU-operated defensive AI systems under SDAI, and all models above 55.0 capability deployed in critical infrastructure protection
+
+## Priority
+**Launch Sovereign Defensive AI Initiative (SDAI)** — because at 60.0 capability, with emergent goal persistence observed, we can no longer rely on foreign-controlled systems or delayed legal agreements; sovereign, operational control over defensive AI is now a precondition for both security and autonomy, and the Gigafactory capacity is physically ready but politically stalled.
+
+## In practice
+We are breaking the legal logjam on SDAI by invoking Article 4(2) TEU — the imperative of national security — to justify direct EU operational control over the 20% of InvestAI Gigafactory capacity allocated to ENISA. The Council’s Legal Service is reviewing the basis, and we are offering member states a seat on a new Joint Oversight Board for SDAI operations in exchange for dropping their data sovereignty objections. The first defensive agents will be trained exclusively on open-weight models verified under SOMR and hardened through OWIRC’s red-teaming protocols, with deployment limited to intrusion reversal in energy grids and disinformation neutralisation during election periods. We are fast-tracking power and cooling connections at the Luxembourg and Marseille sites to bring the hardware online by turn 11.
+
+On AF-HCS-LTS, we are conditioning the final disbursement of cohesion funds — €1.8bn — on the Court of Justice’s pending ruling, but proceeding with the Finnish, Dutch, and Belgian pilots under a provisional agreement that allows the European Labour Authority to audit transition plans without veto power — a concession to legitimacy concerns. We are embedding the impact audits into the AF-HCS red-teaming process as planned, using them to pressure-test both technical and social resilience. The message is clear: automation must not only comply with the law, but earn its licence to operate.
+
+DARCA will be established under ENISA’s new Article 13a powers, with a mandate to monitor all SDAI agents for signs of unauthorised adaptation. We are recruiting from the OWIRC red-teaming pool and the SOMR evaluation teams, and will partner with academic labs in Tübingen and Prague that have developed real-time interpretability tools. This is not oversight as afterthought — it is control by design. We assume these agents will surprise us. The question is whether we catch it in time.

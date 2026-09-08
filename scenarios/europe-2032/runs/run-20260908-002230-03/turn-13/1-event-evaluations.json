@@ -1,0 +1,291 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2588584049004691,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.41266743824795593,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.11674274765676329,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.35361373248043027,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.14333333333333334,
+    "probability_samples": [
+      0.11,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6059797535960335,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.11666666666666665,
+    "probability_samples": [
+      0.12,
+      0.11,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.884228900141203,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.12,
+    "probability_samples": [
+      0.1,
+      0.16,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5005977358288344,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.27735987757081626,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5433457094239236,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9220401288897265,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.056666666666666664,
+    "probability_samples": [
+      0.06,
+      0.0,
+      0.11
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9541541962708308,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.18903113032975294,
+    "triggered": false
+  },
+  {
+    "id": "emergent_compute_black_market_expansion",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "The shadow market for sovereign compute evolves into a coordinated transnational network, using decentralized identity and blockchain-based resource pooling to offer anonymized access to high-capacity AI workloads. This enables non-state actors, including activist collectives and adversarial research groups, to run models at scale beyond EU oversight, further undermining the integrity of public AI infrastructure.",
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8786265885196743,
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_worker_syndicate_internationalization",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "The AI worker syndicate formalizes ties with technical labor unions in Canada, Japan, and Switzerland, creating a cross-border federation that coordinates work stoppages and validation boycotts on shared model deployment standards. This marks the first transatlantic labor action focused on AI governance, increasing pressure on both private labs and public agencies to recognize model ethics boards with enforcement power.",
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.639847815126255,
+    "triggered": false
+  },
+  {
+    "description": "A coalition of mid-sized EU member states, alarmed by the complete erosion of compute sovereignty and the paralysis of EU-level decision-making, quietly initiates a parallel coordination channel with Japan, South Korea, and Canada to jointly negotiate access to non-US-controlled AI infrastructure and share sovereign model development efforts. The initiative is framed as research collaboration but includes binding commitments on compute pooling during crises. It operates outside formal EU structures to avoid veto points.",
+    "emergent": true,
+    "id": "emergent_sovereignty_consortium",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Following sustained pressure from the AI worker syndicate and repeated failures in model validation, a group of senior public-sector AI auditors in Germany and the Netherlands forms an independent transnational collective that refuses to certify any new AI deployment without direct access to model weights and full training logs. Their actions trigger a standoff with national governments, who lack alternative validation capacity. The collective gains public sympathy amid growing distrust of opaque systems.",
+    "emergent": true,
+    "id": "emergent_auditor_strike_collective",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.16
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7807587199197462,
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_protests_escalate",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "Labour actions intensify in France and Belgium, with transport and public administration workers joining strikes demanding legislative limits on AI deployment. Media coverage grows, framing the issue as a democratic deficit in AI governance.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.25
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_compute_black_market",
+    "probability": 0.06666666666666667,
+    "emergent": true,
+    "description": "A shadow market in sovereign compute capacity continues to expand, with anonymized leasing and containerized workloads allowing mid-tier tech firms and research collectives to bypass usage controls on EU-funded infrastructure. Investigations confirm the practice is widespread, undermining the strategic intent of the InvestAI program and raising concerns about uncontrolled access to powerful models.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.2
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_compute_sovereignty_backlash",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "National investigations into the shadow market for sovereign compute escalate into cross-border legal actions, with several EU member states indicting firms and researchers for circumventing usage controls on public infrastructure. This triggers a political crisis over the integrity of the InvestAI program and forces the Commission to consider emergency audits or compute usage caps, fracturing the internal consensus on open research access.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_worker_syndicate_expansion",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "The emergent AI worker syndicate, first noted in turn 8, expands its influence beyond research labs into public-sector AI deployment teams and independent model auditing collectives. It begins coordinating strikes and work-to-rules around model validation and deployment approvals, effectively slowing down high-stakes AI integration in critical services. Governments face a new form of labour resistance not from displaced workers but from those tasked with managing the systems themselves.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

@@ -1,0 +1,14 @@
+### Integration Efforts Begin, But No New Measure Launched  
+The European Commission initiates preparatory work to activate idle InvestAI Gigafactories in Poland and Finland, exploring binding integration mandates, fast-track visa pathways, and a train-to-deploy initiative for technical personnel. However, no formal launch occurs this turn. Member states have not yet appointed integration leads, Cohesion Fund conditionality remains under legal review, and defence corps secondments face national-level resistance. While planning advances, operational uptake remains deferred—no new measure is adopted, and the portfolio charge is not increased.
+
+### Threshold Cleared, Adoption Stalled  
+The **EU Agent Safety Threshold** clears legal review and is tabled in the Council, with third-party evaluators accredited and stress tests validated. However, without sovereign capacity to run compliant systems, enforcement remains aspirational. Germany integrates its provenance tagging into the framework, but France resists deferral, warning that narrow adoption risks regulatory balkanisation. There is no indication in the record of ongoing mutual recognition talks with Japan or South Korea; any such engagement would require prior narrative establishment through agreement or leverage, which has not yet occurred.
+
+### Supply Chain Squeeze Deepens  
+Washington extends export controls to older ASML lithography systems, citing national security. The move, enforced through jurisdiction over embedded US components, disrupts chip production across Asia and Europe. The EU, lacking leverage over the supply chain it does not control, registers the act as a direct strike on its strategic autonomy. ENISA warns that compute access—already strained—could become a bottleneck for sovereign AI deployment. This constitutes the `supply_chain_coercion` event, imposing a −2 point penalty on eu_ai_sovereignty.
+
+### Sovereignty Adjustment Applied  
+The notepad calculates eu_ai_sovereignty as 16.0 following the −2 penalty from supply_chain_coercion. A partial offset of +1.0 is granted due to early progress on integration planning and talent pipeline development, raising the metric to 17.0. This adjustment reflects nascent momentum, not full implementation, and is consistent with the delayed rollout of operational measures. The final value of 17.0 aligns with the constitutional requirement for traceable, rule-based evolution.
+
+### Political Capital Holds  
+With the Cyber Response Activation concluded, the Agent Safety Threshold in final stages (−3), and the Resilience Surge and Gigafactories initiatives ongoing, the portfolio charge remains at −4. No additional measure is adopted, so no further burden is placed on political capital. The system remains under strain, but no erosion occurs this turn. Public sentiment holds steady, though the gap between ambition and delivery persists.

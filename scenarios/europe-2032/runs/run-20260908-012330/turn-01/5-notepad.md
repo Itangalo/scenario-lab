@@ -1,0 +1,6 @@
+`emergent_regional_oversight_push` -- first noted turn 1, listed in 2 turn(s) so far: In response to the cyber_test_shot and growing public unease, several EU member states begin pushing for a formal regional AI oversight body with independent audit authority over critical infrastructure deployments. This is not a formal proposal yet, but early coordination signals a shift toward institutionalizing resilience beyond national silos.
+`emergent_regulatory_pushback` -- first noted turn 1, listed in 2 turn(s) so far: Several EU member states, citing concerns over AI-driven job displacement and energy consumption, begin informal coordination on national-level restrictions on large-scale AI training runs and data centre expansions. The move is not yet a formal coalition, but it signals growing resistance to unbounded AI growth narratives within the Union itself.
+PROPOSAL BONUS: Cyber Resilience Emergency Directive (cat 6, large) +3 — cyber_test_shot landed this turn and this answers it directly
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech Sovereignty Package −3, Cyber Resilience Emergency Directive −3, priority −1 = −10
+SOVEREIGNTY: 22.0 last turn, no capacity event, Gigafactories in flight +0, capability rose 2.0 −1 = 21.0
+LEGITIMACY LENDS: capital 40.0, sentiment 43.0 -> +3 (capped at capital)

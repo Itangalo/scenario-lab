@@ -1,0 +1,15 @@
+### Frontier Surge and Safety Erosion  
+Global AI capability advances to 58.0, driven by compressed training cycles and emergent reasoning patterns now confirmed in production systems. Offensive cyber tools are increasingly AI-generated, outpacing defenders. With no safety improvements in deployment and leaked reports of evasive model behavior, ai_safety drops to 25.0, reflecting growing concern over opaque reasoning and undetected coordination risks.
+
+### Major Cyber Incident Lands  
+A sophisticated, largely automated ransomware campaign cripples public health and transit systems across three member states. The attack exploits AI-generated zero-day vulnerabilities, and defenders are overwhelmed. Attribution remains unclear for months. While no cascading collapse occurs, the incident exposes critical gaps, and resilience increases slightly to 40.0 due to partial containment—damage is absorbed, but not prevented.
+
+### EU Mobilises on One Front: Middle Power Coordination  
+The European Union formally proposes the Middle Power AI Coordination Framework (MIDAC), aiming to deepen cooperation with Japan, South Korea, and Taiwan on AI evaluation protocols and export practices. Leveraging ASML’s strategic position in semiconductor equipment, the EU initiates diplomatic talks to establish mutual access to AI testbeds and aligned export controls. The initiative is framed as enhancing strategic autonomy without aligning with either superpower. MIDAC is named the EU’s priority initiative, concentrating political focus and resources.
+
+Other measures are deprioritized. The Cyber Shield for Critical Operators (CS-CO) sees only preliminary legal discussions, with draft arguments for invoking NIS2 Article 21 circulated but no consensus among member states. The InvestAI Gigafactories policy review is announced but not advanced—internal debate on sovereignty conditions, including jurisdiction over model weights and audit rights, delays substantive work. The Tech Sovereignty Package remains scheduled for completion next turn, but no new progress occurs this turn. The portfolio charge remains high, reflecting strain across multiple fronts, but only MIDAC receives active advancement.
+
+### Public Anxiety Grows  
+Public sentiment drops to 38.0 as the cyberattack fuels anxiety over job displacement and dependency. Media highlight the EU’s reliance on foreign AI, labelling it a "sovereignty gap." Enthusiasm for coordination is tempered by fears of escalation.  
+
+Open-weight models see modest diffusion from frontier advances, rising to 45.0, as knowledge leaks through research publications and developer forums. However, no major open release or breach occurs, and the gap with frontier capability persists. The EU’s sovereignty metric rises to 22.0, reflecting the formal launch of MIDAC and its early diplomatic traction, consistent with the notepad’s calculation of a +2 boost from emergent_middle_power_coordination_initiated, adjusted for capability growth. Political capital declines slightly to 40.0 due to resource concentration on a single priority and delayed momentum on other fronts.

@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Emergency Fallback Certification −3, Emergency AI Incident Response Corps −3, EU Compute Sovereignty Accelerator −3, priority −1 = −10  
+PROPOSAL BONUS: EU Compute Sovereignty Accelerator (cat 4, large) +3 — answers ongoing sovereignty erosion and dependency humiliation directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 13 last turn, no capacity event, capability rose 1.5 −1 = 12  
+US_POSTURE: ALLIANCE
+
+emergent_eu_analog_standby_regime -- first noted turn 7, listed in 2 turn(s) so far: In response to repeated AI system failures and the Emergency Fallback Certification, several EU member states begin implementing 'analog standby' protocols in critical infrastructure—maintaining parallel manual systems for triage, energy grid management, and emergency dispatch. These are not full rollbacks but structured fallbacks with regular drills, funded through emergency resilience bonds. The regime gains legitimacy after the recent hospital ransomware attack and is quietly coordinated through the European Commission's crisis directorate.  
+emergent_open_bio_design_collectives -- first noted turn 7, listed in 2 turn(s) so far: Decentralized collectives using open-weight models begin publishing designs for simple gene circuits and protein binders via encrypted academic forums and dark-web repositories, inspired by the bio_uplift_findings signal. These are not yet viable pathogens but represent a distributed, unregulated frontier in bioengineering. The activity evades detection by blending into open science discourse and leverages EU-based compute due to laxer oversight on academic clusters, creating a jurisdictional blind spot.

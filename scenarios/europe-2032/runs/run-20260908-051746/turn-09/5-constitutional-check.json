@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 58.0 to 69.5 (+11.5) while `ai_capability` increased by only 2.5 (from 78.5 to 81.0). This violates the requirement that `openweight_capability` never exceeds `ai_capability`. At no point can `openweight_capability` be greater than `ai_capability`, and given the prior values, a jump to 69.5 when `ai_capability` is only 81.0 implies `openweight_capability` now represents 85.8% of `ai_capability` — a sudden and unjustified convergence without narrative explanation. More critically, such a large relative leap would require `ai_capability` to have been significantly higher last turn or `openweight_capability` already closer to parity, neither of which was the case.\n- Metric Rule 9 violated: `ai_safety` dropped from 5.0 to 0.0 — a change of −5.0 points in one turn. While decreases are allowed for this metric, a full 5-point drop exceeds the hard cap of 25 points *in absolute magnitude* per turn. However, more importantly, the narrative provides no causal mechanism for this total collapse — no event, no policy failure, no attack or disclosure — making it both a magnitude and plausibility issue. A drop of this size with no explanatory anchor violates modelling discipline, especially given that safety infrastructure was previously active and no disabling event is described."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

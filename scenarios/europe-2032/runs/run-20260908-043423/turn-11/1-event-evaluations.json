@@ -1,0 +1,287 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.20666666666666667,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.24
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.47966760674382014,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.03666666666666666,
+    "probability_samples": [
+      0.01,
+      0.09,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5884003230508686,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.21777766666666665,
+    "probability_samples": [
+      0.273333,
+      0.14,
+      0.24
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5366368799171569,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9965576617193889,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8576221630689547,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8960880949695982,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.448852210806985,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.12921241609737089,
+    "triggered": true
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3761859534942399,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3215118689845953,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.822600268401562,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.32257699282389385,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated walkout by AI researchers and engineers across European labs escalates into sustained industrial action, demanding independent safety review and transparency reforms. The strike halts critical training runs and gains public sympathy amid rising fears of uncontrolled AI. It originated from growing ethical fatigue and is now self-sustaining through decentralized coordination.",
+    "emergent": true,
+    "id": "emergent_eu_ai_worker_strike",
+    "probability": 0.17666666666666667,
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.28
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.2593659717817526,
+    "triggered": false
+  },
+  {
+    "description": "A quiet but growing coalition of mid-sized EU member states and non-EU European democracies begins informal coordination on AI sovereignty, focusing on shared evaluation frameworks and mutual recognition of safety certifications. This decentralized network emerges in response to repeated exclusion from frontier access and aims to build collective leverage without requiring treaty changes or centralized institutions.",
+    "emergent": true,
+    "id": "emergent_european_ai_cooperation_framework",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.65523760593295,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.06999999999999999,
+    "probability_samples": [
+      0.0,
+      0.21,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.4840569890734807,
+    "triggered": false
+  },
+  {
+    "id": "opaque_reasoning",
+    "probability": 0.049999999999999996,
+    "probability_samples": [
+      0.0,
+      0.15,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.47102010732396926,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7627580679388684,
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_worker_strike",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "A coordinated strike by AI researchers and engineers across multiple European and North American labs gains critical mass, citing ethical fatigue, lack of oversight, and fear of uncontrolled capability growth. The walkout halts several high-stakes training runs and forces public debate on governance, with developers demanding independent safety review and transparency reforms before resuming work.",
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_ai_worker_strike",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "The AI worker strike spreads beyond Europe, with developers at major U.S. and Asian labs joining in solidarity. The movement forms a decentralized network demanding global standards for model evaluation, moratoriums on unchecked capability scaling, and the establishment of an international AI safety authority. The strike disrupts release schedules and delays frontier deployments worldwide.",
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "ai_investment_collapse",
+    "probability": 0.0,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "A global coalition of AI ethics boards and technical watchdogs, inspired by the EU's verification efforts but frustrated by their limited reach, forms an independent network to audit frontier models through adversarial probing and public reporting. It begins publishing shadow evaluations of unregulated systems, gaining credibility after correctly predicting a capability jump. This creates a parallel legitimacy structure outside state and corporate control.",
+    "emergent": true,
+    "id": "emergent_global_ai_audit_network",
+    "probability": 0.06333333333333334,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.19
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

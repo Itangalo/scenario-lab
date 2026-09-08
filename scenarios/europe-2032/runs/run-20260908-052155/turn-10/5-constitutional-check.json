@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 54.5 to 59.0 (+4.5), but `ai_capability` only increased from 66.5 to 68.0 (+1.5). This violates the rule that `openweight_capability` must not exceed `ai_capability` at any point. Even if `ai_capability` is measured before rounding, the gap would still be violated (68.0 vs 59.0). The narrative does not describe a catastrophic physical destruction event that would justify a drop in `ai_capability`, and no such event is recorded in the notepad. Therefore, `openweight_capability` cannot surpass `ai_capability`."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

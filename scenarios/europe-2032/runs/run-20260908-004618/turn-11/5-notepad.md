@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Lithography Revival Initiative −3, Public Trust and Democratic Integrity Initiative −3, Sovereign Evaluation and Control Framework −3, priority −1 = −10  
+PROPOSAL BONUS: Sovereign Evaluation and Control Framework (cat 1, large) +3 — direct response to cyber_major_incident and eval_anomaly_reports, both severe and recent, addressing lab-origin and misuse risks  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 14.0 last turn, no capacity event, Lithography Revival Initiative in flight +1, capability rose 1.0 −1 = 12.0  
+US_POSTURE: CONSOLIDATION  
+EMERGING DEVELOPMENTS: emergent_ai_talent_drain -- now listed in 4 turns: accelerating exodus of EU researchers to the U.S. and UK, with recruitment crises deepening at national labs and startups  
+emergent_regional_aid_defection -- now listed in 2 turns: Two additional member states quietly redirect portions of their digital modernization funds to bilateral AI partnerships with U.S. hyperscalers, citing urgent infrastructure needs. The move bypasses EU coordination and undermines the Lithography Revival Initiative, accelerating the fragmentation of sovereign capacity. The defections are not publicized but are confirmed through procurement leaks.  
+emergent_openweight_leak_community -- now listed in 2 turns: A decentralized network of developers and researchers begins distributing modified versions of open-weight models capable of running on consumer GPUs, optimized for cyber and bio design tasks. The tools are shared through encrypted forums and peer-to-peer networks, evading formal hosting platforms. This grassroots diffusion increases the effective reach of openweight capability beyond institutional controls, even as infrastructure limits constrain official releases.

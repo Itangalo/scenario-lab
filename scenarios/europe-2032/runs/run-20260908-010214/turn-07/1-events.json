@@ -1,0 +1,26 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_lab_defection",
+    "probability": 0.2866666666666667,
+    "emergent": true,
+    "description": "A senior research team from a leading European AI lab announces it is relocating to Canada, citing political instability, lack of funding continuity, and concerns over future access to frontier training runs. The move triggers alarm in Brussels about brain drain and the fragility of EU technical capacity amid rising global competition.",
+    "probability_samples": [
+      0.3,
+      0.28,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

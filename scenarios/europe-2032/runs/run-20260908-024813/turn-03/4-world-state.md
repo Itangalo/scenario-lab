@@ -1,0 +1,11 @@
+### The Capital Crunch  
+The global AI sector reels from a sudden contraction as investor confidence collapses. Valuations reset, and several major compute expansions — including US-backed hyperscalers in Ireland and Finland — are abruptly cancelled. The EU’s Tech sovereignty package, reliant on private capital, falters. While the InvestAI Gigafactories pivot to a phased rollout—fast-tracking a single site in France using emergency powers—momentum slows. The shift preserves credibility but delays broader sovereign capacity.
+
+### Cyber Resilience Under Pressure  
+With critical infrastructure exposed by the recent lab breach, ENISA intensifies audits across 18 operators, deploying forensic models to simulate novel attack vectors. Binding upgrades are mandated via NIS2’s emergency clause, and real-time telemetry is now required for Recovery Fund disbursements in Greece and Portugal. Despite Hungary’s legal challenge, cross-sector coordination in energy and transport councils enables partial compliance. These steps strengthen resilience, but uneven implementation limits gains.
+
+### Red-Teaming in the Shadow of Washington  
+Efforts to secure access to frontier model evaluations stall as U.S. election rhetoric hardens into a security-first posture. One leading lab refuses cooperation, citing unforeseen export controls. In response, the EU pivots, expanding its red-teaming facility to stress-test open-weight models, starting with Kimi K3 derivatives. While this builds operational experience, it does not substitute for frontier access. Sovereignty erodes further as capability advances outpace domestic reach.
+
+### Falling Trust, Narrowing Options  
+Public sentiment dips as media frames the investment collapse and lab breach as symptoms of strategic dependency. Political capital declines under the weight of four large measures and rising friction. No new initiatives are launched, as leaders await stabilization. The cyber resilience push yields modest gains, but without secured access or sovereign capability, the Union’s position remains reactive.

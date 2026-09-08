@@ -1,0 +1,26 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_supply_chain_pressure",
+    "probability": 0.24,
+    "emergent": true,
+    "description": "Amid growing U.S. strategic restraint and export control tightening, the European Commission faces internal pressure to formalize its own export licensing framework for dual-use AI components, particularly those tied to ASML's ecosystem. This institutional response emerges not from a single incident but from the compounding realization that the EU's upstream hardware leverage is both its strongest bargaining chip and its most vulnerable position under external coercion.",
+    "probability_samples": [
+      0.22,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

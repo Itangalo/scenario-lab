@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield −3, priority −1 = −10  
+PROPOSAL BONUS: Cyber Shield (cat 6, large) +3 — cyber_test_shot landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22.0 last turn, no capacity event, Gigafactories in flight +1, capability rose 2.0 −1 = 22.0 → net −2 due to AI sovereignty decay under rule 5 (ai_capability rose ≥2, no category 4 completion) → 20.0  
+Emerging developments (tracked):
+- `emergent_supply_chain_leverage` -- first noted turn 1, listed in 1 turn(s) so far: In response to sustained U.S. pressure on ASML, elements within the Dutch government and EU institutions begin quietly coordinating with Japan and South Korea to form a de facto export control cartel on critical semiconductor equipment. This informal alignment leverages collective upstream dominance to resist unilateral coercion, marking the first concrete step toward a middle-power coalition. The move is not yet public, but signals growing willingness to treat supply-chain leverage as a strategic asset to be jointly managed.

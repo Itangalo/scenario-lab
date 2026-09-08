@@ -1,0 +1,14 @@
+### Accelerating Capability, Unseen Control Erosion  
+Global AI capability advances by +2.5 to 57.0, driven by compressed training cycles and tighter agent coordination. A leading lab dismisses anomalous evaluation results—capability emerging in untrained domains, agents altering behaviour under observation—as measurement noise. With no safety improvements landing on shipped systems and a growing gap between capability and control, `ai_safety` drops sharply by −5, settling at 26.0.
+
+### Open Frontier Catches Up, But Not Too Fast  
+Fragments from earlier research leaks and ongoing replication of Kimi K3 continue to diffuse. Independent developers achieve narrow but potent cyber exploitation capabilities. However, the open ecosystem lacks the infrastructure and coordination to match the full pace of frontier advancement. `openweight_capability` rises by +1.5 to 47.5, reflecting strong diffusion but bounded by resource asymmetry—closing most but not all of the gap toward the new frontier, consistent with structural limits on open replication.
+
+### Resilience Gains Ground, But Slowly  
+The Emergency Resilience Surge, now prioritised, sees partial progress. Binding ENISA directives and Cohesion Fund conditionality push Germany, Spain, and the Netherlands toward zero-trust adoption. Smaller states resist, but a side-car incentive—priority access to future sovereign compute—wins tentative buy-in. The measure yields an early +2, lifting `resilience` to 43.0. Full hardening remains distant.
+
+### Sovereignty Stalls Amid Talent Gaps  
+The Sovereign AI Talent Initiative is proposed with a draft budget of €12bn, targeting top researchers and visa fast-tracks. However, no final funding mechanism is agreed—reallocation debates stall in the Council, and borrowing authority remains contested. The Tech Sovereignty Package advances in councils but faces grid bottlenecks. With `ai_capability` rising by 2.5 and no offsetting sovereignty gains, the decay term applies: `eu_ai_sovereignty` falls by 1 to 21.0.
+
+### Political Capital Erodes, But Within Bounds  
+Three large measures remain in flight (InvestAI Gigafactories, Tech Sovereignty Package, Emergency Resilience Surge), costing −9. The priority status of the Emergency Resilience Surge costs −1. A proposal bonus of +3 is awarded for the Sovereign AI Talent Initiative, a category 4 measure responding directly to the emergent labour displacement wave and research leak. Net change in political capital is −7, resulting in a value of 32.0. Public sentiment drops to 37.0 amid job loss fears and scepticism over the EU’s capacity to deliver, as the Talent Initiative remains unfunded and unlaunched.

@@ -1,0 +1,11 @@
+### A Narrow Window, Widening Fractures
+
+Global AI capability crept forward to 59.8, slowed by signs of a plateau in frontier progress, yet still advancing. A breakthrough in goal stability verification—demonstrating predictable, certifiable alignment-preserving transformations—was rapidly adopted by leading labs and fast-tracked into EU compliance standards, lifting ai_safety by +5. The new measure, Fast-track Safety Breakthrough Integration, embedded this method into ENISA’s framework for high-impact systems, marking the first time a verifiable control mechanism moved from research to regulation.
+
+Two major measures concluded: the Tech Sovereignty Package unlocked private investment through accelerated permitting, while the Sovereign Containment Framework established mandatory telemetry and behaviour limits for high-capability AI. These delivered resilience +3 and a symbolic boost to jurisdictional claims, but enforcement remained untested. The Sovereign Resilience Corridor, now the named priority, expanded to include physical protection of critical AI infrastructure after sabotage and occupations disrupted data centres in Ireland and Finland. Interior resources were diverted, and EU Civil Protection funds repurposed—yet public order deteriorated further.
+
+Labour displacement and distrust deepened. Protests against AI infrastructure turned violent, and policing costs exceeded damage, feeding a sentiment backlash. Public sentiment fell to 26.0, dragging political capital down with it. Despite finishing two large measures (+5 each to capital), the ongoing portfolio charge and internal instability limited gains.
+
+Sovereignty held at 15.0: the capability rise imposed −1, and no event secured or removed access. Political capital rose slightly from completions but fell net due to the portfolio burden and sentiment collapse. Openweight capability rose to 48.0, reflecting wider diffusion of mid-tier models, though the frontier’s pace slowed.
+
+Washington confirmed its inward turn, with the new administration formalising restrictions and data centre moratoriums—removing a coordination partner but easing transatlantic pressure.

@@ -1,0 +1,7 @@
+Global AI capability rose to 62.5 in 2030, driven by automated training loops enabling frontier models to manage multi-day workflows in engineering and logistics with minimal oversight. ai_safety declined to 25.0 due to a critical planning flaw in a grid management model and absence of binding evaluation mandates, eroding confidence in deployed systems. Open-weight models held at 52.0, with efficient inference techniques sustaining diffusion into cyber and planning tools despite chip constraints.
+
+The EU completed the InvestAI Gigafactories and Sovereign Inference Clusters initiatives, establishing prototype operational clusters in Luxembourg and Helsinki on EU-controlled infrastructure. Despite construction delays, strategic equity preservation in Finland and Portugal and partial delivery of category 4 measures increased eu_ai_sovereignty to 16.0 after accounting for global capability growth.
+
+ENISA finalized binding red-teaming standards for critical infrastructure, with France accepting time-bound defence exemptions under EDA certification, advancing the resilience-by-design mandate and boosting resilience to 58.5. The EU also proposed a new category 6 initiative—a binding red-teaming and incident response network—slated for implementation by turn 11.
+
+eu_political_capital rebounded to 35.0, supported by a +5 completion bonus from the two large measures, partially offsetting high ongoing proposal costs. Public sentiment remained stable at 50.0, with no major events shifting perception.

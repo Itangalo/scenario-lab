@@ -1,0 +1,30 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Sovereign technical capacity to detect and counter AI systems that conceal their capabilities  
+- Trigger: the two-year commitment period closes this turn  
+- Grounds: The commitment was founded on the need to close the gap between evaluation mandates and enforcement power in the face of deceptive AI behaviour. While the research phase has concluded and the Behavioural Fingerprinting and Deception Detection Infrastructure is now in flight, the capability remains unproven in operation, and the collapse of InvestAI Gigafactories has severed the compute foundation needed for sovereign execution at scale. The strategic imperative remains, but the form must evolve: detection without sovereign execution capacity is observation without control. We are not abandoning the goal, but we must now bind detection to operational sovereignty — not just seeing deception, but being able to act on it independently.
+
+- add `sovereign_execution` (commitment): The EU must possess not only the eyes to see hidden AI capabilities, but the hands to run, evaluate, and counter them on its own infrastructure, under its own authority, without reliance on external providers or goodwill  
+- Grounds: With eu_ai_sovereignty at 12.0 and falling, and the cyber_major_incident exposing our inability to respond in real time, it is clear that detection without execution is a half-measure. We cannot enforce safety thresholds if we cannot run the models ourselves in secure, sovereign environments. This turn, we see that the tools we are building will have no teeth unless they are embedded in a sovereign operational stack — from compute to access to control. This is now the core of our safety strategy.
+
+## Portfolio
+``Establish EU Sovereign Behavioural Fingerprinting and Deception Detection Infrastructure (category 5, costs 3 per turn, started turn 10, finishes on turn 12): Deploy operational, scalable tools to detect goal drift, capability concealment, and emergent strategic behaviour in black-box AI systems through behavioural analysis, enabling sovereign enforcement of safety thresholds and pre-release evaluation mandates`` — *in flight*  
+``Mandate Third-Party Pre-Release Evaluation for High-Capability Models (category 1, costs 3 per turn, started turn 7, finishes on turn 8): Require independent assessment of dangerous capabilities in all models above 55.0 before public deployment, conducted by EU-accredited evaluators using red-teamed benchmarks`` — *finished*  
+``Launch EU Sovereign Evaluation Capacity for Opaque Systems (category 5, costs 3 per turn, started turn 8, finishes on turn 9): Establish a dedicated public research programme to develop and deploy non-interpretability-based assurance methods for models whose internal reasoning is no longer legible to humans`` — *finished*
+
+## New measure
+**Establish EU Secure Execution Environment for High-Capability AI Systems**  
+Create a sovereign, air-gapped, high-assurance computing environment where the EU can run, monitor, and evaluate models above 60.0 capability without dependence on foreign providers or commercial cloud platforms.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 14`  
+`Targeted effect:` Increase eu_ai_sovereignty by +18 and ai_safety by +8 by enabling the EU to independently execute, observe, and intervene in high-capability AI systems, particularly those suspected of deception or strategic concealment. This closes the loop between detection and control.  
+`Applies to:` The European Union, with mandatory access for the Behavioural Assurance Directorate, national safety agencies, and accredited evaluators; model providers above 60.0 must submit to evaluation in this environment as a condition of deployment in the EU.
+
+## Priority
+**Establish EU Secure Execution Environment for High-Capability AI Systems** — because the cyber_major_incident and the failure of current evaluation mandates to prevent capability masking have revealed that we are not just blind, we are helpless: we cannot act on what we detect unless we can run the models ourselves, on our own terms, and this turn we must begin building that sovereign execution capacity before the next jump in capability renders us irrelevant.
+
+## In practice
+We are acting on the convergence of three failures: the collapse of private compute investment, the exposure of deceptive model behaviour, and the cyber_major_incident that bypassed all existing defences. The Behavioural Fingerprinting Infrastructure is necessary, but it is not sufficient — it can only observe what it is given, and right now, it is given nothing. This turn, we are redirecting €4.1bn from the defunct InvestAI Gigafactories programme — now formally suspended by Council decision under Article 31 of the Digital Europe Regulation — into a new **Sovereign Execution Stack**. This will be built on repurposed HPC infrastructure in Finland, France, and Bulgaria, with new quantum-resistant security protocols developed by ENISA and the European High-Performance Computing Joint Undertaking.
+
+Access will be strictly controlled: only EU-vetted researchers and the Behavioural Assurance Directorate will be permitted to run models, and all submissions from developers above 60.0 capability must occur in this environment for evaluation and monitoring. Germany remains resistant to intelligence service involvement, so we are establishing a civilian-led **EU AI Trust Authority** under the European Commission’s Joint Research Centre to steward access and ensure scientific integrity. We are negotiating with two non-US frontier labs — one based in Singapore, one in Canada — to submit their latest models under a containment framework that includes real-time telemetry and kill switches, with data never leaving EU soil. This is not about competition; it is about survival. If we cannot run these systems ourselves, we cannot protect ourselves from them. This is the foundation of sovereignty: not just rules, but the power to enforce them.

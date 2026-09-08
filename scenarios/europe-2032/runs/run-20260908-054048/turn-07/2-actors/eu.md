@@ -1,0 +1,29 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Complete the establishment of an independent EU evaluation capability with binding authority over frontier models and pivot toward building indigenous EU AI capacity to close the strategic gap left by conditional access from foreign powers  
+- Grounds: The Sovereign AI Access Framework has failed to secure compliance from US hyperscalers, whose outright rejection of sovereign mirrors underlines that access conditional on political alignment cannot be compelled through mandate alone. With ai_capability now at 63.5 and openweight_capability lagging at 47.0, the window for reactive sovereignty — mirroring foreign systems — is closing. The EU must now shift from securing access to building capacity, or risk permanent strategic subordination. This pivot does not abandon evaluation as a goal — that remains urgent — but redefines the path to sovereignty: not just mirrors, but origins.
+
+## Portfolio  
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — finished this turn  
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — finished this turn  
+- `Bio-Secure Compute Initiative (category 4, costs 3 per turn, started turn 2, finishes on turn 5): Establish a legally ring-fenced, high-assurance computing tier for bio-risk-sensitive research, with mandatory screening of model outputs and DNA synthesis requests` — finished  
+- `Secure the Core: AI-Resilient Critical Infrastructure Directive (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Mandate AI-specific cyber defences and automated incident containment for all NIS2-designated operators, with real-time threat intelligence sharing across the Single Market` — finished  
+- `Sovereign AI Access Framework (category 4, costs 3 per turn, started turn 4, finishes on turn 6): Establish a legal and technical framework to ensure EU institutions and essential public services retain access to capable AI systems even under foreign supply disruption or political coercion` — finished this turn  
+- `Independent EU Front-Run Evaluation Capability (category 5, costs 3 per turn, started turn 6, finishes on turn 8): Establish a permanent, technically credible, and legally empowered EU body able to conduct pre-deployment evaluations of frontier AI systems, including agent behaviour, self-improvement potential, and weight security, with binding authority to delay deployment`
+
+## New measure  
+**EU Frontier AI Development Initiative**  
+Launch a coordinated EU-led effort to train and deploy a frontier AI model of sovereign origin, using InvestAI Gigafactory capacity, public research talent, and legally anchored data rights.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 10`  
+`Targeted effect:` eu_ai_sovereignty +15 (by establishing an indigenous frontier capability), ai_safety +5 (by embedding evaluation and control from training onward), eu_political_capital -4 (due to scale, cost, and competition with private investment)  
+`Applies to:` EU-based research consortia, national AI agencies, and public-private partnerships selected through a Horizon Europe-style call
+
+## Priority  
+**Independent EU Front-Run Evaluation Capability** — because without sovereign judgment, even sovereign models would be dangerous, and because this turn marks the first opportunity to staff and fund the body now that the legal framework is in motion; delaying it further risks rendering both the new development initiative and all market access decisions technically hollow.
+
+## In practice  
+We are treating the completion of the InvestAI Gigafactories and the failure of the Sovereign AI Access Framework as a single inflection point: the era of relying on foreign frontier models is over. The Gigafactories’ final phase delivers five sites with exascale-class capacity now online, but underutilised. We are repurposing 40% of this compute — formally freed by the end of the Bio-Secure Compute Initiative and the expired Tech Sovereignty Package — for the new EU Frontier AI Development Initiative. This will be managed jointly by the European High-Performance Computing Joint Undertaking and the AI Office, with calls for proposals to form a pan-European training consortium involving INRIA, Fraunhofer, CWI, and leading universities. Legal work is underway to establish data pooling rights under Article 116 TFEU, treating high-value public data as a strategic input. The model will be trained under the oversight of the Independent EU Front-Run Evaluation Capability, ensuring that safety is not bolted on but built in.
+
+At the same time, we are forcing the long-delayed operationalisation of the Evaluation Capability. The Franco-German co-leadership agreement has broken the deadlock in the Competitiveness Council, and we are now allocating €1.2bn from unspent pandemic recovery funds to stand up the first evaluation teams in Paris and Berlin. Binding authority will be granted through an implementing act under the AI Act, invoking Article 68a on systemic risk. The first mandatory review will target the next GPT-7 update, due this quarter, with a public report to the European Parliament. We are offering member states opt-in participation in joint audits to build buy-in, and we are fast-tracking security clearances for technical staff. This is not ideal — we are building sovereign capacity on expired emergency infrastructure and patched-together funding — but the alternative is to accept that the EU will never understand the systems it depends on. We are no longer waiting for alignment. We are building our own.

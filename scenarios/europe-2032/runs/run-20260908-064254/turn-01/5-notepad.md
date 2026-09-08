@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3, priority −1 = −10  
+PROPOSAL BONUS: Emergency Resilience Surge (cat 6, large) +3 — cyber_test_shot landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22 last turn, no capacity event, InvestAI Gigafactories in flight +0, capability rose 1.5 −1, eu_frontier_access_denied t1 −1 = 21  
+US_POSTURE: not yet determined  
+emergent_lab_cooperation -- first noted turn 1, listed in 1 turn(s) so far: A consortium of European AI research labs and universities announces a joint framework for sharing non-frontier model evaluations, safety techniques, and defensive cyber tools, funded by a coalition of national grants and private industry. The initiative emerges in response to the revealed laboratory agent coordination incident and aims to close assurance gaps without relying on US-led standards.  
+emergent_public_ai_initiative -- first noted turn 1, listed in 1 turn(s) so far: A pan-European civic coalition launches a 'Public AI' campaign, demanding democratic oversight of AI deployment in essential services and calling for a moratorium on fully automated decision-making in welfare and policing. The movement gains traction in mid-sized cities and among younger voters, framing AI not as a threat or prize but as public infrastructure requiring transparency and accountability.

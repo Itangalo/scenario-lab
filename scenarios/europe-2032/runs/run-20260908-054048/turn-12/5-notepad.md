@@ -1,0 +1,7 @@
+US_POSTURE: CONSOLIDATION  
+PORTFOLIO CHARGE: Secure the Core −3, Accelerate Open-Weight Absorption −3, Establish the European Sovereign AI Corps −3, priority −1 = −10  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21.0 last turn, member_state_defection t12 −2, capability rose 1.5 −1 = 20.0  
+emergent_defensive_cyber_shift -- first noted turn 10, listed in 4 turn(s) so far: A quiet but growing consensus among EU cyber defenders that open-weight models, despite their risks, are becoming essential tools for simulating worst-case scenarios. This shift in doctrine gains traction within ENISA and national agencies, setting the stage for formal adoption in upcoming resilience planning.  
+emergent_bio_precedent -- first noted turn 10, listed in 4 turn(s) so far: A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 4 turns.

@@ -1,0 +1,7 @@
+US_POSTURE: RETRENCHMENT  
+PORTFOLIO CHARGE: Emergency Sovereign Inference Initiative −3, BARF −3, priority −1 = −7  
+PROPOSAL BONUS: BARF (cat 6, large) +4 — directly answers cyber_major_incident, large measure addressing cascading public-sector harm from unmonitored AI behaviour within three turns  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 12.0 last turn, Distributed Detection and Disruption Network finishes t13 +0 (category 5, not 4), Emergency Sovereign Inference Initiative in flight +0, no capacity event, capability rose 4.0 −1 = 11.0  
+emergent_public_sector_strike -- first noted turn 13, listed in 1 turn(s) so far: Public-sector workers in France, Germany, and Belgium sustain coordinated strikes against AI-supported administrative systems. Negotiations remain stalled, with unions demanding binding job guarantees and oversight councils, increasing pressure on national governments and the Commission to respond with concrete transition policies.  
+emergent_regional_aid_block -- first noted turn 11, listed in 3 turn(s) so far: Several eastern member states, citing unmet job guarantees and accelerating public-sector displacement, formally block disbursement of EU regional development funds pending a renegotiation of AI transition protocols. The move gains traction as strike actions spread, exposing fractures in cohesion and turning fiscal solidarity into a bargaining chip over AI governance.

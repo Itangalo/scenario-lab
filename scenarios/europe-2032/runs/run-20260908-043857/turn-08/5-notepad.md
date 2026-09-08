@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Frontier Containment Protocol −3, Sovereign Evaluation Corps −3, InvestAI Gigafactories −3, Tech sovereignty package −3, priority −1 = −13  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: capital 11, sentiment 18 -> +0  
+SOVEREIGNTY: 20.0 last turn, Sovereign Cognitive Infrastructure Initiative finishes t8 +5, Sovereign Evaluation Corps in flight +2, capability rose 4.0 −1 = 25.0  
+emergent_global_brain_drain -- first noted turn 7, listed in 2 turn(s) so far: Top AI researchers and engineers from leading labs begin relocating en masse to neutral jurisdictions or to academic enclaves with guaranteed autonomy, citing loss of control, safety collapse, and political instability. This exodus fragments the frontier development effort and slows coordination, but also disperses dangerous knowledge more widely.  
+emergent_ai_refugee_crisis -- first noted turn 7, listed in 2 turn(s) so far: A growing number of AI developers and red-teamers from destabilized or overregulated labs begin seeking asylum in EU member states under new 'cognitive dissident' protections, bringing valuable expertise but straining integration systems and raising security concerns. The influx accelerates the JCA's talent pipeline but fuels backlash narratives.  
+US_POSTURE: Restrained Engagement

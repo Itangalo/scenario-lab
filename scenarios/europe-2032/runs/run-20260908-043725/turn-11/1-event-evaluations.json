@@ -1,0 +1,112 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8548313732720932,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9462727551142548,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6736352858024489,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.16333333333333336,
+    "probability_samples": [
+      0.16,
+      0.25,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.35137653335373165,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.0,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.13860227130025626,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regional_cyber_collective",
+    "probability": 0.2833333333333333,
+    "emergent": true,
+    "description": "Informal coordination among Nordic and Benelux states deepens into a shared operational doctrine for AI-driven cyber defence, including pre-authorized countermeasures and joint red-teaming exercises. The group begins drafting a formal pact, though EU-wide integration remains distant.",
+    "probability_samples": [
+      0.35,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.18084087817628913,
+    "triggered": true
+  },
+  {
+    "id": "emergent_labour_market_stress_tests",
+    "probability": 0.21666666666666667,
+    "emergent": true,
+    "description": "Pilot 'AI impact stress tests' in public hiring across several member states reveal that up to 40% of entry-level administrative roles could be automated within two years. The findings spark debate over retraining obligations and fuel demands for a common EU framework to manage displacement.",
+    "probability_samples": [
+      0.25,
+      0.2,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.32026085027821816,
+    "triggered": false
+  }
+]

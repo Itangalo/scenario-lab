@@ -1,0 +1,27 @@
+## Statement changes  
+No statement changes.
+
+## Portfolio  
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — **finished**  
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — **finished**  
+- `Launch an EU-led programme to develop and deploy safe-by-design sovereign AI agents, starting with public-sector critical functions (health, energy, emergency response), using open but controlled-weight models audited for goal fidelity and interpretability (category 4, costs 3 per turn, started turn 5, finishes on turn 8): Increase eu_ai_sovereignty by +15 to +20, raise ai_safety by +10 through embedded assurance, reduce dependence on foreign-controlled frontier models`  
+- `Scale up the EU AI Safety Board’s authority and resources to conduct real-time audits of training runs and deployed systems at foreign labs operating within EU jurisdiction, with power to halt runs that exhibit eval anomalies or unauthorised capability thresholds (category 1, Evaluation and oversight, costs 3 per turn, started turn 6, finishes on turn 8): Raise ai_safety by +12 through early detection and intervention, close the gap between frontier capability and regulatory visibility, and establish de facto jurisdiction over systems trained on EU soil regardless of ownership`
+
+## New measure  
+**Redirect the capital and permitting mechanisms from the now-completed InvestAI Gigafactories and Tech Sovereignty Package toward emergency sovereign compute mobilisation, prioritising speed over scale, to anchor at least one EU-controlled training run above 60.0 capability by turn 10**
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 10`  
+`Targeted effect:` Increase `eu_ai_sovereignty` by +12 to +18 by ensuring the EU can independently train and operate a system above 60.0 capability, with full interpretability and weight security, before global capability reaches 80.0; partially offset the U.S. **CONSOLIDATION** stance by creating a credible, non-open but EU-sovereign alternative to foreign frontier access  
+`Applies to:` EU-anchored research consortia (IMEC, INRIA, Fraunhofer, ELLIS), national HPC operators, and private developers with binding legal commitments to EU jurisdiction and audit
+
+## Priority  
+**Redirect the capital and permitting mechanisms from the now-completed InvestAI Gigafactories and Tech Sovereignty Package toward emergency sovereign compute mobilisation** — because the `ai_investment_collapse` and `emergent_ai_winter_signals` have created a narrowing window to capture stranded talent, discounted hardware, and stalled projects before they vanish, and because the U.S. **CONSOLIDATION** stance means that even if we wanted to buy access later, it may no longer be for sale; we must now build what we cannot buy, or be permanently locked out.
+
+## In practice  
+We are acting on a dual recognition: that the frontier is accelerating even as the commercial scaffolding behind it cracks, and that our sovereignty cannot wait for consensus. The completion of the InvestAI Gigafactories and Tech Sovereignty Package gives us a rare moment of fiscal and political liquidity — two major category 4 measures have cleared, freeing up capital and administrative bandwidth. We are not letting that moment pass. The €200bn fund and accelerated-permitting zones were designed for scale, but scale is no longer the bottleneck — speed is. We are repurposing the legal, financial, and grid-access mechanisms from those programmes into a new emergency track: **Sovereign Compute Sprint**, to be managed jointly by the European Commission’s DG CONNECT and the European High-Performance Computing Joint Undertaking (EuroHPC JU).
+
+This sprint will fast-track one to two EU-controlled training runs of agent-grade models above 60.0 capability, using a coalition of public labs and vetted private partners. We are offering immediate grid priority, emergency permitting under Article 122 TFEU, and access to pooled compute from national champions like LUMI, JUWELS, and the new Alpino system in Italy. Crucially, we are attaching binding conditions: full interpretability logging, real-time audit access for the EU AI Safety Board, and legal ownership of weights vested in a pan-European trust. This is not about matching the U.S. or China at 75.0 — not yet. It is about ensuring that when the next capability jump happens, the EU is not just a regulator or a market, but a *player* with its own systems, its own data, and its own leverage.
+
+At the same time, we are holding firm on the real-time audit mandate, despite resistance from U.S. hyperscalers. One firm has resumed its training run under a conditional agreement, in exchange for fast-tracked licensing and joint red-teaming access. Two others remain in dispute, with national regulators preparing enforcement actions. We are not backing down — jurisdiction over what happens on EU soil is not negotiable. But we are also not blind: if the investment winter deepens, we may be able to recruit talent and acquire hardware at fire-sale terms. We are preparing acquisition protocols with the European Investment Bank and national innovation agencies to move fast when the moment comes. This is not the plan we wrote — it is the one we are making.

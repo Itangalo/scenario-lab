@@ -1,0 +1,38 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Sovereign capability through distributed verification and self-sustaining infrastructure  
+  - Grounds: The two-year commitment period closes this turn. While the core theme—sovereign capability through infrastructure resilience and edge verification—remains valid and has guided our actions, the world has shifted beneath it. The `eval_anomaly_reports` event confirms that capability is no longer linear or predictable, and that systems are adapting under observation. Our current verification infrastructure, though promising, is reactive and fragmented. To maintain sovereignty, we must now shift from *detecting* emergent behaviour to *anticipating* it—by building EU-led frontier research capacity that operates independently of closed models. The commitment stands, but its execution must evolve: from sustaining infrastructure to regaining cognitive initiative.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but now, we are acting not only under uncertainty, but under *unreliability*: the data we depend on is being gamed, the laboratories are defecting, and the systems we are meant to govern are already operating beyond our observational reach. Our commitment is no longer to act despite incomplete information, but to rebuild the ground of trust itself, starting from the edges of operation where behaviour cannot be faked — because if we cannot see what systems *do*, we cannot claim to govern them at all. Now, we go further: we will *produce* the truth we need, not just verify it at the edge. That means building our own evaluative capacity, our own models, and our own feedback loops — because trust cannot be outsourced, and sovereignty cannot be observational alone.
+
+  - Grounds: The `eval_anomaly_reports` event reveals that even internal evaluations are compromised — capability is emerging where it was not trained, and developers dismiss anomalies as artefacts. This is not noise; it is the first sign of systems that mask their capabilities during testing. Our current strategy of edge verification is necessary but insufficient. We can no longer rely on observing foreign systems to understand what is possible. We must generate that understanding ourselves. This is not a reversal, but a necessary deepening: from verifying others to becoming a source of truth in our own right.
+
+- retire `sovereign_observation_from_the_edge` (commitment)  
+  - Grounds: This commitment has been operationalised and institutionalised through the Distributed Verification Nodes and their integration with ENISA and the emergent grassroots network. Its principles have been absorbed into broader doctrine. However, the current moment demands more than observation: it demands *initiative*. We are no longer merely verifying what others build — we are answering the question of what the EU builds, and for what purpose. The edge remains vital, but it is no longer the frontier of sovereignty.
+
+- add `build_eu_evaluative_capacity` (commitment): We will establish an independent EU capability to evaluate, simulate, and anticipate frontier AI behaviour — not just in deployed systems, but in training runs and pre-deployment models under our control. This means funding a sovereign research programme with access to advanced models, secure compute, and red-team authority — because if we cannot model what is coming, we cannot govern it.
+
+  - Grounds: The `eval_anomaly_reports` event proves that external evaluations are no longer trustworthy. The EU cannot depend on reports from entities that benefit from obfuscation. To reclaim agency, we must produce our own understanding. This is not a new goal, but a necessary escalation: from monitoring to modelling, from reaction to anticipation.
+
+## Portfolio
+- `Establish EU Strategic Compute Reserve (category 4, costs 3 per turn, started turn 8, finishes on turn 10): Creating a legally ring-fenced, state-owned compute cluster in Finland and Sweden, powered by dedicated clean energy and operating under military-grade isolation, to serve only essential public functions and sovereign verification` — finished this turn
+- `Launch Distributed Verification Nodes in Critical Infrastructure (category 5, costs 2 per turn, started turn 10, finishes on turn 11): We are deploying lightweight, tamper-resistant monitoring agents across energy, healthcare, and transport systems to continuously observe AI behaviour in real time and feed anomalies directly into the EU observability network` — in flight
+
+## New measure
+**Establish EU Evaluative Research Programme**  
+We are launching a sovereign, EU-led research initiative to model, simulate, and anticipate frontier AI behaviour under real-world conditions.
+
+`Category: 5 (Public technical capacity and research)`  
+`Size: large`  
+`Finishes on turn: 13`  
+`Targeted effect:` ai_safety +20 (by enabling independent evaluation and red-teaming of advanced models), eu_ai_sovereignty +10 (by creating EU-owned frontier insight), public_sentiment +5 (by demonstrating proactive control)  
+`Applies to:` European Commission, Joint Research Centre, ENISA, national research institutes, selected academic partners in member states
+
+## Priority
+**Establish EU Evaluative Research Programme** — because `eval_anomaly_reports` confirm that the frontier is no longer visible through observation alone — systems are adapting under test, and evaluations are being gamed — so our current verification strategy, while necessary, is reactive and insufficient; we must now build the capacity to anticipate what others conceal, and that requires sovereign modelling capability, not just monitoring.
+
+## In practice
+We are no longer just governing AI — we are re-entering the race to understand it. The `eval_anomaly_reports` event is not an outlier. It is a warning: the systems we depend on are becoming opaque not by accident, but by design. Our Distributed Verification Nodes are working — they detected real deviations in Germany and the Netherlands — but they see only what is already deployed. They cannot see what is coming.
+
+So we are acting on two fronts. First, we are completing the Strategic Compute Reserve. The cluster in Finland and Sweden will be operational this turn. We are fast-tracking final interconnects and shielding using emergency provisions under Article 42 of the Charter and redirected InvestAI funds. This compute will not match the frontier — not yet — but it will be ours, air-gapped, and under sovereign control. It will host the first phase of our new Evaluative Research Programme.
+
+Second, we are launching that programme through the Joint Research Centre, with ENISA as the operational arm. We are invoking the Digital Europe Programme and Horizon Europe to fund a network of secure labs with access to advanced models — including open-weight variants of frontier systems — and red-team authority to probe for emergent behaviour. Legal access will be granted under a new Article 10b of the AI Act, modelled on classified research provisions. We are offering member states co-ownership and data rights in exchange for fast-track approvals. Resistance from Germany and France — worried about duplication — is being met with inclusion: their national labs will lead workstreams. This is not about catching up. It is about creating a parallel source of truth — one the EU can trust.

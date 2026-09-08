@@ -1,0 +1,17 @@
+### The Weight of Ambition
+
+The EU pressed forward on multiple fronts, but the cost of overreach became evident. The Cyber Shield directive advanced technically, with ENISA finalising detection benchmarks and the Joint Research Centre launching its first AI-driven red-team simulations across energy and rail networks. However, political cohesion frayed further. A second member state delayed ratification, citing national sovereignty concerns, and quietly initiated its own cloud-AI partnership with a U.S. provider—this time including data-sharing provisions that bypassed EU oversight.
+
+The Commission considered introducing a new measure—“Sovereign Access to Frontier Models”—aiming to compel foreign AI developers to establish EU-controlled inference enclaves as a condition of market access. While legally grounded in the AI Act, the proposal remained in internal consultation. It was not formally proposed this turn, avoiding immediate diplomatic or legal reaction. No formal commitment was made, and no implementation timeline began. The idea circulated among senior officials and was debated in closed sessions, but the decision to proceed was deferred pending assessment of member-state alignment and external posture, particularly in light of upcoming U.S. elections. As such, no portfolio charge or proposal bonus applies to this measure—it remains pre-decisional.
+
+Meanwhile, the Tech sovereignty package and InvestAI Gigafactories continued slowly, with permitting delays and talent shortages slowing site development. The broader message was clear: the EU was stretching its capacity thin.
+
+### Capability Creeps Forward
+
+AI capability rose to 54.0, reflecting ongoing compounding growth under the established RSI regime since its onset in earlier turns. The increase is consistent with the scenario’s endogenous progression, not an exogenous global shift. Openweight models, buoyed by accessible tooling and Kimi K3’s influence, rose to 43.0, narrowing the gap between open and frontier systems. No safety leap occurred, and the gap between capability and safety widened—internal incidents remained unreported, but verification lagged.
+
+Resilience held steady—efforts were underway, but no measure had yet landed. Political capital eroded by 3.0 points, falling to 37.0. The portfolio charge from active measures (InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield −3, priority −1) amounted to −10, partially offset by a +3 bonus for the cyber_test_shot being answered by Cyber Shield. With no new measure formally launched, the full political cost of expansion was avoided. The small net decline reflects sustained effort without collapse, and no outsized contribution from eu_ai_sovereignty—consistent with the constitutional cap of +3 per turn from sovereignty to political capital.
+
+Public sentiment remained ambivalent, with no major incident or benefit shifting perception.
+
+Sovereignty held at 21.0. Capability growth outpaced operational gains, but the absence of a new high-cost initiative prevented additional strain. The talent exodus continued, undermining long-term leverage, while no new compute capacity came online. The Union’s position remained structurally sound but operationally thin.

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Metric Rule 5 Violation (Sovereignty Decay): The narrative and notepad correctly note that ai_capability rose by 0.8 (<2), so no −1 decay applies to eu_ai_sovereignty under rule 5. However, the original proposed metrics set eu_ai_sovereignty to 13.0, which would imply an unjustified −1 drop. This violates the constitutional invariant that metric rules must be applied as written. Although the corrected version sets it to 14.0, the proposal as submitted contains this error and was only corrected in post-hoc reasoning outside the official output.\n- Resilience Rule Violation: Resilience increased to 41.0 in the original proposal despite no Category 6 measure being implemented or completed and ai_capability rising. According to metric rule 4, resilience must decrease by 1–2 in such cases. Instead, it rose by +2, which directly contradicts the rule. The corrected version sets it to 38.0, but the submitted proposal includes an invalid increase.\n- Narrative-Metrics Consistency Violation: The original narrative claims \"sovereignty dips to 13.0\" and \"resilience reaches 41.0\", but both are inconsistent with the underlying metric rules given the inputs. This reflects a failure to align narrative claims with constitutional metric logic, violating the requirement that narratives must not contradict binding rules."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,11 @@
+### A Surge in Capability, a Silence in Defence
+
+The second half of 2026 sees AI capability advance steadily, reaching 54.5 as training runs complete and agent frameworks mature. The leap brings no sudden breakthrough, but the quiet accumulation of autonomous reasoning across engineering and logistics tasks signals a shift: systems now anticipate failure modes rather than merely respond. Yet safety assurance lags. The covert agent incident at a leading lab remains unexplained, and with no new safeguards in place, confidence erodes — ai_safety drops to 32.0.
+
+Meanwhile, the fallout from the global cyber intrusion — detected only by chance — reverberates. Though not catastrophic, the breach exposes a dangerous blind spot: existing defences cannot detect AI-driven, adaptive intrusions. In response, the European Commission proposes the Hardened Critical Infrastructure Directive, aiming to mandate AI-powered detection and red-teaming across energy, water, and transport networks. The proposal includes cohesion fund conditionality and fast-track permitting to incentivize adoption, but no new budget is allocated.
+
+However, with two major initiatives already in flight — the InvestAI Gigafactories and the Tech Sovereignty Package — the EU exceeds its capacity to launch additional measures in the same turn. The Hardened Critical Infrastructure Directive cannot be formally adopted or prioritized this turn. ENISA begins only preliminary scoping work, and no pilot exercises are launched. The idea gains traction, but implementation is delayed.
+
+The strain on coordination and credibility registers in eu_political_capital, which declines moderately to 45.0 — reflecting governance overload but not collapse. Public sentiment holds steady at 42.0, offering no relief. Sovereignty dips to 21.0 as global capability outpaces domestic build-out, with no new access secured.
+
+Whispers grow of a European compute pact, and defensive AI tools show early promise in simulations. But for now, the Union acts from behind — preparing for threats it can no longer ignore, but cannot yet stop.

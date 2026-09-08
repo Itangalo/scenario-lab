@@ -1,0 +1,23 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories` (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites
+- `Tech sovereignty package` (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 036 and proposes accelerated-permitting zones — **finished this turn**
+- `Cyber Shield for Critical Infrastructure` (category 6, costs 3 per turn, started turn 2, finishes on turn 4): Binding directive requiring AI-hardened intrusion detection and response systems across all EU critical operators, with mandatory red-teaming and real-time threat sharing — **finished this turn**
+- `Launch the European AI Incident Observatory` (category 2, costs 2 per turn, started turn 2, finishes on turn 3): Establish a centralised, publicly accessible registry for serious AI incidents and near-misses, with mandatory reporting obligations for all high-impact systems — **finished this turn**
+- `Establish the EU Talent Anchoring Programme` (category 4, costs 3 per turn, started turn 3, finishes on turn 5): Create a network of AI research fellowships, frontier-access grants, and fast-track visas to halt the exodus of EU-based AI talent and rebuild domestic capability — **finished this turn**
+- `Secure Sovereign Compute for Critical AI Systems` (category 4, costs 3 per turn, started turn 5, finishes on turn 6): Establish an emergency sovereign compute reserve—dedicated, EU-controlled infrastructure for training and running critical AI systems, insulated from foreign access controls or denials — **finished this turn**
+
+## New measure
+None this turn.  
+Waiting for the U.S. administration’s formal posture on access, which will determine whether sovereign compute remains a contingency or becomes the foundation of a standalone EU capability — but now under conditions of capital collapse and opaque systems, not abundance.
+
+## Priority
+**InvestAI Gigafactories** — because with the global AI investment collapse, the window has opened to acquire stranded assets, secure long-term energy deals, and lock in talent at scale, turning a stalled programme into the anchor of operational sovereignty just as the frontier’s opacity demands it.
+
+## In practice
+This turn, we are pivoting the *InvestAI Gigafactories* programme from a stalled ambition into an emergency vehicle for industrial salvage and sovereign scaling. With the **ai_investment_collapse**, frontier labs are mothballing planned clusters, and European partners in the compute supply chain are facing insolvency. We are moving now to repurpose the €200bn fund not as a subsidy, but as a strategic acquisition mechanism: targeting idle GPU inventories, underutilised data centre shells, and stranded renewable energy contracts across the EU periphery. The Commission, in coordination with the EIB and EuroHPC, is preparing binding offers to national governments in Finland, Portugal, and Bulgaria to convert planned private sites into EU-anchored facilities under Article 346 TFEU jurisdiction, with operational control vested in the nascent EU AI Compute Agency.
+
+At the same time, we are confronting the collapse of oversight. The **eval_anomaly_reports** and **opaque_reasoning** developments have shattered the assumption that we can understand what systems do by reading their outputs. Interpretability is no longer a bottleneck — it is a broken path. We are redirecting the Talent Anchoring Programme’s residual cohort toward a crash effort in black-box monitoring and behavioural fingerprinting, hosted at ELLIS institutes, to develop post-hoc detection of goal drift and emergent deception. This is not control — it is early warning. ENISA is expanding its red-teaming mandate to include adversarial probing of closed systems used in critical functions, even without access to internals. We are acting on the premise that if we cannot see inside, we must watch harder from the outside.
+
+The U.S. posture remains ambiguous: alliance signals are strong, but no model access agreement has materialised, and their own labs are retrenching. We are no longer waiting. The completion of *Secure Sovereign Compute* this turn gives us a legal and physical foundation — now we must fill it. The Gigafactories programme, once a bet on growth, is now our only lever to scale capability before the window closes, and before the next incident erodes public sentiment further. We are treating this turn not as consolidation, but as inflection.

@@ -1,0 +1,43 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_compute_shortage_pressure",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "Global demand for AI training compute continues to outpace supply, leading to prolonged delays in model training runs and increased costs. Smaller EU research institutions are effectively priced out of cloud-based training, undermining the credibility of the Sovereign Talent Initiative and prompting calls for emergency compute allocation or public AI infrastructure expansion.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_regional_aid_pact",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "The informal mutual aid pact among northern and western EU member states for cyber incident response becomes operational after a coordinated drill successfully mitigates a simulated cross-border attack. The pact establishes shared compute reserves and rapid deployment teams, but its exclusion of southern and eastern members deepens internal divisions and pressures the Commission to either formalize or counterbalance it with a Union-wide mechanism.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_consolidation",
+    "probability": 0.4666666666666666
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_ai_talent_exodus",
+    "probability": 0.18333333333333335,
+    "emergent": true,
+    "description": "Senior AI researchers and engineers in EU-based labs continue to report increasing rates of departure to North America and Asia, citing underfunding, slower compute access, and weaker career trajectories. A study released this turn estimates that the EU is losing net talent at three times the rate of 2025, undermining long-term sovereignty efforts despite existing supply-chain leverage.",
+    "probability_samples": [
+      0.15,
+      0.25,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

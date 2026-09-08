@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Emergency Sovereignty Acceleration Facility −3, Emergency AI Safety Coordination Cell −2, priority −1 = −6  
+PROPOSAL BONUS: Emergency AI Safety Coordination Cell (cat 5, small) +3 — eval_anomaly_reports and emergent_ai_civil_disobedience justify urgent safety capacity, though small size limits bonus  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 13.0 last turn, InvestAI Gigafactories finishes t7 +5, capability rose 4.0 −1 = 17.0 → adjusted to 15.0 due to member_state_defection effect still in play (Slovakia’s deal unresolved)  
+US_POSTURE: RETRENCHMENT  
+emergent_scientific_dissident_network -- first noted turn 7, listed in 1 turn(s) so far: A decentralized network of researchers and engineers, disillusioned with closed-lab opacity and declining safety standards, begins publishing coordinated technical critiques and alternative evaluations of frontier models from outside official channels. Using open-weight tools and anonymized data, they gain credibility after correctly predicting a minor control failure in a widely deployed agent system.

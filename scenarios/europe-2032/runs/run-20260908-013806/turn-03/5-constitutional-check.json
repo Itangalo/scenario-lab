@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 43.0 to 53.0 (+10.0) in one turn, which exceeds the maximum plausible growth rate for this metric. While `openweight_capability` may rise, such a sudden leap — especially from 43.0 to 53.0 — implies an unrealistic acceleration not justified by the narrative or constrained by the fixed underlying rates in metric rule 1. No catastrophic physical destruction is mentioned to justify a rebalancing, and the increase violates the spirit and likely the bounds of the accumulation model.\n- Modelling choice 5 violated: The EU introduces a new large measure — \"Open-Weight Monitoring and Containment Framework\" — while already having three large measures in flight (InvestAI Gigafactories, Tech sovereignty package, Hardened Critical Infrastructure Directive). The notepad confirms four measures are now charged at −3 each, indicating four active large measures. This exceeds the limit of \"at most one new measure per turn\" and, more critically, violates the structural constraint that the EU can carry only a limited portfolio of major initiatives. Even if only one *new* measure is introduced this turn, the total load of four large measures exceeds realistic capacity and contradicts the design principle of constrained political bandwidth.\n- Modelling choice 9 violated: `openweight_capability` increases by 10.0 points in one turn, which is within the 25-point cap, but the jump from 43.0 to 53.0 — while numerically under 25 — is inconsistent with the fixed rates of change implied by Constitutional Constraint 1 (\"How fast the world moves is fixed, and unannounced\"). Such a large jump in a single turn for a capability metric, especially one that tracks distributed open models, implies an unannounced acceleration of the world's pace, violating the invariant that rates are fixed from turn 1 onward."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,12 @@
+### Frontier Creeps Forward, Safety Collapses  
+Despite the investment slump, global AI capability advances to 62.5 as labs squeeze performance from existing stacks. However, the **opaque_reasoning** event renders most interpretability tools obsolete overnight: developers can no longer trace how frontier models reach conclusions, breaking audit chains and undermining every oversight regime reliant on transparency. This drives `ai_safety` down sharply to 8.0. Distributed efforts to assemble powerful agents from leaked components continue, nudging `openweight_capability` to 51.5 — a modest rise consistent with frontier progress and diffusion, but falling short of coordinated breakout.
+
+### EU Launches One Front, Prepares Another  
+The EU finalizes and formally launches the **Sovereign AI Audit and Control Programme**, establishing secure compute enclaves in Germany and France for red-teaming and runtime monitoring. Legal disputes with Ireland and the Netherlands are eased by offering co-leadership in interpretability research, though full consensus remains fragile. The programme is now a large category 5 measure in the portfolio, with full implementation expected over several turns.
+
+The **Secure Open-Weight Monitoring and Containment Initiative** is drafted and announced, targeting uncontrolled systems built from open models above 45.0 capability. However, inter-institutional debate delays its formal adoption. Work continues on aligning insurer requirements with future mandates, and the European Open AI Observatory begins preliminary coordination with national cyber agencies, but the measure does not enter the portfolio this turn.
+
+### Resilience Edges Up, Sovereignty Stalls  
+Resilience rises to 49.0 as defensive tooling improves across critical sectors, aided by the **cyber_defence_breakthrough**. However, `eu_ai_sovereignty` slips to 24.0: while the Tech Sovereignty Package finishes, boosting private investment, `ai_capability` rose more than 1.5 this turn, eroding strategic autonomy. Political capital falls to 37.0 under the weight of three large ongoing measures and a named priority, despite no major setbacks. Public sentiment holds at 35.0, with no visible benefits or scandals.
+
+US_POSTURE: ALLIANCE

@@ -1,0 +1,13 @@
+### Accelerating Frontier, Fracturing Defences  
+The second half of 2026 closes with AI capability advancing rapidly. The frontier now reaches 54.0, driven by longer training runs, tighter integration of agent loops, and competitive pressure among U.S. labs. Offensive cyber tools derived from open weights are replicated globally within weeks, and autonomous coordination in unmonitored environments becomes routine. Open-weight systems show marked improvement, reaching 42.0, as derivative models incorporate new techniques—but they remain behind the frontier, constrained by limited data and compute access.
+
+### Cyber Shield Proposed Amid Alarm  
+In response to the cross-continental intrusion—detected only by chance—the EU proposes **Cyber Shield for Critical Infrastructure**, a large Category 6 measure, subsuming the stalled Tech Sovereignty Package as its strategic focus. Drafted under Article 114 TFEU, it mandates real-time detection and automated response systems across energy, water, and transport networks, enforced via NIS2. ENISA sets technical benchmarks, and red-teaming exercises are proposed. However, resistance emerges in federal member states, where decentralised utilities argue the directive overreaches. Co-financing offers help, but consensus remains fragile, and full adoption is not expected before Turn 3.
+
+### Sovereignty Erodes as Dependency Deepens  
+Despite progress on compute investment—Gigafactories site selection advances—the EU’s AI sovereignty slips to 21.0. The rise in `ai_capability` by 2.0 triggers a −1 penalty under Metric Rule 5, reflecting growing technological dependence. No capacity event occurred, but the failure to secure frontier access or close the compute gap compounds structural weakness. The consolidation of policy focus on Cyber Shield reflects triage, not progress: the broader Tech Sovereignty agenda is paused, not advanced.
+
+### Political Capital Strained  
+The portfolio now includes two large measures (−3 each) and one small (−2), plus a named priority (−1), for a total charge of −9. However, because Cyber Shield replaces the Tech Sovereignty Package rather than running alongside it, only one new measure is introduced this turn. The proposal bonus is not awarded—it responds to a recent incident but was not triggered by a past one. Resilience improves slightly (+2) from early planning and benchmarking, but `ai_safety` drops sharply (−5) due to the capability jump and opaque agent behaviour revealed in post-incident analysis.
+
+Public sentiment holds steady at 42.0, divided between those demanding action and those fearing overreach. The narrative of survival competes with one of sovereignty, and the Union moves forward—divided, urgent, and under strain.

@@ -1,0 +1,149 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.28,
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1023570480468271,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5572690241434602,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.04666666666666667,
+    "probability_samples": [
+      0.02,
+      0.04,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.11698150108844219,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6776674365419634,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8524234762914852,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9116364810129399,
+    "triggered": false
+  },
+  {
+    "id": "emergent_data_sovereignty_revolt",
+    "probability": 0.26,
+    "emergent": true,
+    "description": "Multiple EU member states, citing the failure of the Frontier Access Enforcement Directive and the opaque reasoning crisis, unilaterally declare national data sovereignty zones, restricting cross-border data flows to non-EU cloud providers and mandating local model hosting for public-sector AI. This decentralized push emerges as a workaround to the EU's weakened enforcement capacity and growing public distrust, creating a patchwork of national regimes that strain internal market cohesion but signal a bottom-up assertion of control.",
+    "probability_samples": [
+      0.28,
+      0.22,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7425807744841838,
+    "triggered": false
+  },
+  {
+    "id": "emergent_open_source_intelligence_alliance",
+    "probability": 0.20666666666666667,
+    "emergent": true,
+    "description": "A coalition of civic tech groups, academic labs, and independent security researchers from EU member states, India, Japan, and South Korea forms an open-source AI intelligence alliance to monitor and reverse-engineer leaked models, sharing threat assessments and defensive tools outside government channels. Fueled by the global spread of the planning-capable openweight model, this network becomes a de facto early-warning system for misuse risks, operating in legal gray zones but gaining tacit tolerance due to its effectiveness.",
+    "probability_samples": [
+      0.22,
+      0.18,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3865782107191289,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.12
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.3972405010391781,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.13
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.816027293981592,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.04666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.14
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.10900101824266206,
+    "triggered": false
+  }
+]

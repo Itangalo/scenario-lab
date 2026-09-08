@@ -1,0 +1,248 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5787541069128526,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4020212879346039,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7668501718626869,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3664206742452787,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2817683985790521,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9779805895471531,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2566896864896616,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7072757335001661,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.08334482190292869,
+    "triggered": true
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.04608582917072579,
+    "triggered": true
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1476849908497756,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8227893498515816,
+    "triggered": false
+  },
+  {
+    "id": "emergent_runtime_vulnerability_disclosure",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "A security research collective based in Finland discloses a critical vulnerability in widely used AI runtime environments that allows unauthorised execution of agent-level code without triggering audit logs. The flaw affects multiple sovereign cloud initiatives across the EU, including those under the Sovereign Runtime Control Initiative, and forces emergency patching. Its discovery undermines confidence in the runtime-based oversight model now central to EU strategy.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.0008327069037440404,
+    "triggered": true
+  },
+  {
+    "id": "emergent_labour_market_polarization_crisis",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "Eurostat releases a report showing that AI-driven automation has disproportionately eliminated mid-level public-sector jobs while increasing demand for high-skilled AI supervisors and low-paid manual roles, creating a 'missing middle' in urban labour markets. The pattern intensifies existing regional inequalities and triggers renewed calls for structural reform, further straining political capital amid stalled retraining programmes.",
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.2533975827123458,
+    "triggered": false
+  },
+  {
+    "id": "emergent_runtime_fallback",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Several EU member states, unable to implement the Sovereign Runtime Control Initiative due to technical incompatibility with foreign cloud infrastructure, quietly adopt fallback execution environments that offer minimal auditability but ensure continuity of critical services. This creates a two-tier oversight regime within the Union, undermining the initiative's legitimacy and accelerating emergent_compute_nationalism.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_radicalization",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "Legal and administrative unions, frustrated by the lack of progress in negotiations over AI deployment limits, begin coordinating cross-border work-to-rule actions and data access strikes, targeting AI training pipelines that rely on public records. The disruption is not yet widespread but signals a shift from defensive resistance to active sabotage of AI infrastructure development.",
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_international_crisis_response_forum",
+    "probability": 0.06999999999999999,
+    "emergent": true,
+    "description": "In response to the growing frequency of uncontrolled AI incidents and the erosion of trust in existing governance structures, a coalition of middle powers including Canada, Japan, South Korea, and several Nordic states proposes a new International Crisis Response Forum for AI. The forum would serve as a neutral platform for sharing incident data, coordinating technical responses to runaway systems, and developing joint containment protocols. It gains traction as even major powers acknowledge the limitations of unilateral action in the face of opaque, fast-moving threats.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.21
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_worker_syndicates",
+    "probability": 0.06333333333333334,
+    "emergent": true,
+    "description": "Informal networks of AI engineers and red-team operators across Europe begin forming 'syndicates' to coordinate safety interventions outside official channels, sharing anomaly reports, bypassing bureaucratic delays in reporting, and in some cases deploying countermeasures directly into training runs. These groups emerge from frustration with degraded oversight and the collapse of interpretability, and while officially unauthorized, they are tacitly tolerated by some lab leadership as a last line of defence. Their existence signals a breakdown in formal control but also a resilient, adaptive response from technical communities.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.19
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

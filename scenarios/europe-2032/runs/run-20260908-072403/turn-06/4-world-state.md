@@ -1,0 +1,13 @@
+### A Step Forward, Two Steps Back
+
+Global AI capability advanced to 63.0 as silent improvements in long-horizon planning and self-correction enabled frontier systems to autonomously coordinate multi-week research and legal workflows with minimal oversight. This steady progress outpaced open efforts, where no major public model releases occurred. Open-weight capability rose only modestly to 48.0, reflecting continued reliance on delayed or partial disclosures from frontier labs—now further constrained under the new U.S. posture.
+
+The EU launched the European AI Access Board under ENISA, assigning France and Germany as initial technical leads. However, staffing delays in Italy and Belgium, coupled with unresolved governance questions, prevented the board from assuming any operational role. No interim allocation powers were exercised, and trilogue negotiations on enabling acts—invoking Article 122 TFEU and amending the Digital Markets Act to apply to compute access—remained deadlocked. Spain and Sweden withheld support, warning of potential retaliation against cloud infrastructure operations. With no agreement expected before the next turn, the initiative contributed no sovereignty benefit this period.
+
+Resilience eroded to 47.0 as adaptive cyber intrusions bypassed defensive AI tools, targeting energy grid operators in two member states. Coordination gaps persisted, especially in Central Europe, exposing fragilities in joint response protocols. Labour displacement accelerated, with visible job losses in legal support and administrative sectors amplifying public unease.
+
+Public sentiment dipped to 42.0 amid growing concern over dependency and bureaucratic inertia. The new U.S. administration officially took office and confirmed its posture: strategic consolidation, with AI access now rationed by national interest. This move deepened European concerns about external leverage and supply-chain vulnerability.
+
+### Transatlantic Tensions Solidify
+
+With the American shift formalised, the EU’s sovereignty efforts faced steeper headwinds. The Tech Sovereignty Package and Mandatory Pre-Release Evaluation Regime both concluded, removing their political costs—but gains from these measures were overshadowed by ongoing access uncertainty and falling confidence. Without immediate leverage over U.S. hyperscalers, and with internal implementation delayed, the EU's position weakened. Sovereignty fell to 15.0, reflecting unmet threats, stalled coordination, and no compensating advances in domestic capacity.

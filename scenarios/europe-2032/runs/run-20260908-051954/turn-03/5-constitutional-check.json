@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 42.0 to 49.0 (+7.0), which is an implausible jump given that `ai_capability` only increased by 1.5 (from 54.5 to 56.0). While openweight capability may rise, it must do so within realistic bounds relative to the frontier. A 7-point leap—especially closing nearly half the gap to the frontier in one turn—exceeds plausible diffusion or replication rates under existing export controls and technical barriers, and no narrative justification is provided for such an abrupt leap (e.g., no major open release, no breakthrough in model efficiency, no collapse of export enforcement). This violates the spirit and realism implied by Invariant 2, which allows accumulation but not unexplained convergence.\n- Narrative violates Constraint 8 (No telegraphing): The narrative states \"the safety breakthrough in goal stability certification was integrated into early technical specifications, offering a path to verification — though full deployment remains distant.\" This implies a positive trajectory toward a future capability gate (verification of agentic systems) and suggests a path to resolution, which amounts to telegraphing. The phrase \"offering a path to verification\" anticipates future success without uncertainty, violating the prohibition on implying that event gates are opening. Tension or ambiguity would be acceptable; this is a forward-looking assurance that belongs in event evaluation, not narrative."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

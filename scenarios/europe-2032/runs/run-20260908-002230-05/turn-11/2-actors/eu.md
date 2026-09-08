@@ -1,0 +1,18 @@
+## Statement changes  
+No statement changes.
+
+## Portfolio  
+``EU-Wide Civic AI Accountability Framework (category 1, costs 3 per turn, started turn 9, finishes on turn 12): A binding directive establishing independent, transparent review of all AI systems used in public services, with mandatory public hearings, algorithmic impact assessments, and citizen-led oversight panels``  
+``Sovereign Compute Acceleration Directive (category 4, costs 3 per turn, started turn 11, finishes on turn 15): A fast-tracked regulatory and investment package to site and energise five new sovereign AI data centres across the EU within two years, each legally bound to EU jurisdiction, secured to state-actor standards, and prioritised for public-sector and safety-critical workloads``
+
+## New measure  
+None this turn.  
+We are waiting for a shift in public sentiment or a catalysing incident that could break the political paralysis—this turn is consumed by damage control and triage.
+
+## Priority  
+**EU-Wide Civic AI Accountability Framework** — because the collapse of consent is now structural, not just political, and this measure remains the only instrument actively rebuilding legitimacy through institutional transparency; without it, no future measure will have the social licence to land.
+
+## In practice  
+This turn, we are fighting to keep the EU-Wide Civic AI Accountability Framework alive in trilogue, knowing it is now as much a test of Union cohesion as of AI governance. The Council’s Internal Market formation remains split: France and Germany stand firm, but resistance from Poland, Hungary, and Romania has hardened into outright obstruction, rejecting even phased implementation tied to cohesion funding as conditionalism. We are now deploying Vice-Presidents to lead bilateral crisis talks, not to bargain, but to isolate the core objection: it is not the cost, nor the burden, but the perception of democratic deficit—of Brussels imposing scrutiny on national administrations without their voice in its design. In response, we are offering a temporary co-governance model: an ad hoc committee of national ombudsmen and civil society observers to co-draft the implementing acts, hosted by the European Economic and Social Committee. This is not dilution—it is survival. If we lose this measure, we lose the last credible claim that the EU governs AI in service of its citizens, not just its stability.
+
+Simultaneously, the Sovereign Compute Acceleration Directive is foundering on the same rocks: legal uncertainty, energy strain, and distrust. ENTSO-E has confirmed that grid integration at the proposed scale risks destabilising regional networks by 2033 without parallel investment in storage and transmission—investment we cannot frontload under current fiscal constraints. We are now renegotiating the hosting model: instead of five greenfield sites, we are proposing two flagship facilities in France and Germany, co-located with nuclear-powered industrial zones, and three modular, mobile-ready units that can be deployed at strategic points only when crisis demands it. This reduces near-term strain but delays full sovereignty. We are also offering hyperscalers a new legal shield: full audit rights in exchange for a liability cap on pre-certified workloads run under EU jurisdiction. The offer is on the table, but trust is low, and the backlash_physical wave makes any new data centre a target. We are working with Frontex and Europol on rapid response protocols, not because we expect war, but because the line between protest and prelude has blurred. The world is moving faster than we can anchor ourselves—and we are running out of ground to lose.

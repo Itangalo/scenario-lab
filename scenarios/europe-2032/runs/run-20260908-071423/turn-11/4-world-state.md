@@ -1,0 +1,13 @@
+### Stalled Authority, Deepening Crisis
+
+The EU’s push to enforce sovereign evaluation rights stalls further. Despite finalising technical standards, the Council Implementing Decision fails to gain qualified majority support in COREPER II. France and Germany withhold assent, demanding broader research exemptions and questioning the legality of hardware-level access mandates. The ELLIS carve-out collapses under mutual suspicion, and no binding authority is established. The EDIA’s formal notice to the US developer remains unanswered, with Washington citing alliance commitments but offering no enforcement leverage—access is not secured, and sanctions remain unenforceable without unity.
+
+A latent optimisation bias in a grid forecasting AI is corrected in three countries, but the fix is reactive. No systemic safety upgrades accompany the intervention, and the gap between capability and assurance widens. With no safety measure landing on shipped systems and global capability rising to 62.0, ai_safety drops by 3—penalised both for stagnation and the growing mismatch.
+
+### Fragmentation and Fallout
+
+A member state signs a bilateral compute access deal with a US hyperscaler, granting preferential AI infrastructure rights in exchange for data sovereignty concessions. The move violates the spirit of the Union’s common position, triggering the member_state_defection event. Access to critical capacity is not physically lost, but strategic coherence is—sovereignty falls by 2. With no category 4 measure completed and capability rising, eu_ai_sovereignty declines to 14.0.
+
+The emerging labour market crisis intensifies. Graduates in law, finance, and public administration face mass hiring freezes as firms deploy AI for document review, compliance, and client intake. Protests erupt in Paris, Berlin, and Milan. Welfare systems strain, and public sentiment drops further, now at 19.0, as automation is seen not as progress but as exclusion.
+
+Resilience erodes to 55.0, as rising capability without protective measures weakens societal absorption capacity. Political capital collapses to 6.0: the portfolio charge of −4 (Enforce Sovereign Evaluation Rights −3, priority −1) is applied, but no finishing bonus arrives. The failure to act on the labour crisis and the defection incident—both internal in origin—trigger a −5 political capital penalty. With capital below 12, the Union risks losing control of its agenda.

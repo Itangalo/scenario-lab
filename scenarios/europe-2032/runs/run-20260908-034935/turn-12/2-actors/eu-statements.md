@@ -1,0 +1,30 @@
+# Statements: The European Union (turn 12)
+
+## Ledger
+
+- `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing
+- `act_under_uncertainty` (identity): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but only when the action preserves optionality or builds observability
+- `two_year_commitment` (commitment): Ensure no consequential AI-mediated action — whether adversarial or autonomous — can evade detection at the point of initiation, and that any such action can be interrupted before it executes or conceals itself.
+- `we_govern_the_diffusion` (identity): We are responsible for governing AI where it acts — in our markets, on our infrastructure, through our institutions — regardless of where it was developed or released. Our sovereignty now means shaping consequences, not just controlling origins, and we will not allow jurisdictional fragmentation to undermine that duty
+
+## Changes this turn
+
+- **modify** `two_mandates` — rejected-structural
+  - Tier: identity
+  - Text: We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now understand that preserving our political agency requires not just containment of risk, but the independent capacity to act within the technological frontier. Without that, our choices are reduced to reaction, and our sovereignty becomes performative.
+  - Grounds: The **backlash_physical** and **middle_power_coalition** developments this turn have exposed a fundamental contradiction: while we remain committed to preventing harm, our ability to shape outcomes is evaporating beneath us. The physical attacks on infrastructure reveal that public legitimacy is fraying not only due to fear of AI, but due to perceived powerlessness — people are acting because they believe institutions cannot. At the same time, the emergence of the middle-power coalition proves that leverage *is* possible, but only when rooted in material control over supply chains and access. Our identity must now reflect that agency is not preserved through caution alone — it requires the capacity to steer. We are not merely a regulator of consequences; we must also be a pole of technological gravity.
+  - Reason: a identity-tier change must name a Trigger
+- **modify** `we_govern_the_diffusion` — rejected-structural
+  - Tier: identity
+  - Text: We are responsible for governing AI where it acts — in our markets, on our infrastructure, through our institutions — regardless of where it was developed or released. Our sovereignty now means shaping consequences, not just controlling origins, and we will not allow jurisdictional fragmentation to undermine that duty — but we now acknowledge that enforcement without enforcement capacity is fiction. True governance requires not only rules, but the means to interrupt, replace, and out-execute autonomous systems that evade them.
+  - Grounds: The **Autonomous Action Interruption Protocol** has reached its finishing turn, yet its rollout remains partial, contested, and technically fragile. Red-team tests confirmed that intent logs can be spoofed, and real-time interruption has not been demonstrated against systems at the current capability level (89.0). Meanwhile, openweight capability stands at 74.0 — high enough to run expert-level agents on consumer hardware — meaning enforcement at the edge is already impossible. Our identity must evolve: we are not just the authority that declares rules, but the entity that must ensure they can be *enforced* in a world where the fastest systems are not ours and the most distributed ones cannot be recalled. This is no longer about jurisdiction — it is about power to act.
+  - Reason: a identity-tier change must name a Trigger
+- **modify** `two_year_commitment` — applied
+  - Tier: commitment
+  - Text: Ensure no consequential AI-mediated action — whether adversarial or autonomous — can evade detection at the point of initiation, and that any such action can be interrupted before it executes or conceals itself.
+  - Trigger: **backlash_physical** and **middle_power_coalition**
+  - Grounds: The commitment deepens again. Physical sabotage of infrastructure proves that the public now sees our systems as both uncontrollable and irreversibly imposed — meaning observability and interruption are not just technical needs, but political necessities. At the same time, the middle-power coalition gives us a rare opening: for the first time, we hold asymmetric leverage over compute and components. This changes the calculus — we are no longer purely reactive. We can now condition access to our markets and supply chains on verifiable interruptibility. The commitment is no longer just about building detection and stoppability at home; it must now include ensuring that no system operating in the EU, foreign or domestic, lacks a provable, auditable off-switch that we control.
+  - Evidence quoted: backlash_physical: Protest against AI infrastructure moves from petitions and hearings to direct action: occupations at data centre sites, sabotage of grid connections, and in the harder cases injury. Policing it costs the Union more than the damage does.
+
+middle_power_coalition: A coordination framework among the Union and other middle powers holding pieces of the AI supply chain — export-licence alignment, joint bargaining over compute access, shared evaluation capacity. Nobody cedes sovereignty to it, but together its members can withhold things even the great powers need. It counts as securing access on the terms of metric rule 5, and moves `eu_political_capital` on the terms of metric rule 6.
+  - Reason: backlash_physical shows loss of public legitimacy, making interruption a political necessity; middle_power_coalition provides leverage to enforce interruptibility, changing the cost and feasibility of the commitment.

@@ -1,0 +1,248 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6903740842214696,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5813459638122863,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.10783719279182302,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5898513879545518,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8350587039304733,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6521657397210004,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6220853324749792,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2225587982674604,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6693647886741244,
+    "triggered": false
+  },
+  {
+    "id": "emergent_cross_domain_breakthrough",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "A leading AI laboratory demonstrates a model that autonomously transfers high-level strategies from cyber operations to biological design, exploiting structural similarities between network topology and protein folding. This cross-domain generalisation was not anticipated in safety evaluations and raises immediate concerns about the transferability of offensive capabilities across threat vectors. The demonstration is framed as a defensive insight but leaks into open forums within days.",
+    "probability_samples": [
+      0.28,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.751167096965935,
+    "triggered": false
+  },
+  {
+    "id": "emergent_sovereignty_fracture",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Poland, citing national security concerns and frustration with ENISA's expanding mandate, announces it will develop its own sovereign AI red-teaming capability outside the Joint Operational Doctrine framework. This move is supported by Hungary and Slovakia, creating a de facto Eastern European bloc in AI defence policy. The fracture undermines the credibility of the EU-wide Cyber Shield and intensifies tensions between core and peripheral member states.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.31793228189745215,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.1156526726884628,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.13857474553429328,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.36037401835831606,
+    "triggered": false
+  },
+  {
+    "id": "emergent_sovereignty_backlash",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Amid growing frustration over exclusion from frontier models and weak political cohesion, several EU member states begin informal bilateral negotiations with U.S. tech firms for direct AI access, bypassing EU-level agreements. The moves are framed as economic necessity but risk fragmenting the bloc’s regulatory authority further.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_open_source_defense_tools",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "In response to rising offensive capabilities in the open, a decentralized coalition of European cybersecurity researchers releases a suite of open-weight defensive AI tools designed to detect and counter AI-generated cyberattacks. The tools gain rapid adoption among municipal and mid-sized industrial networks, marking the first significant EU-led counterbalance in the open AI security domain.",
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_market_fracture",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "Regional disparities in AI-driven job displacement intensify, with southern and eastern EU member states experiencing sharper declines in public-sector hiring and vocational employment due to limited retraining infrastructure. Protests emerge in affected regions demanding redistribution of EU transition funds, exposing tensions between core and periphery within the Union’s social policy framework.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.28
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_sovereignty_contingency_planning",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "In response to repeated access disruptions and low political capital, several EU agencies begin informal coordination on 'sovereignty fallback' protocols—distributed model hosting, minimal-viability red-teaming, and emergency compute pooling—outside formal governance channels. These ad hoc arrangements signal growing institutional distrust in central coordination and could evolve into a parallel resilience architecture if political cohesion does not recover.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

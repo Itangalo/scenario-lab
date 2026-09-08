@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Tech sovereignty package −3, AF-HCS −3, AF-HCS-LTS −3, SDAI −3, priority −1 = −13  
+PROPOSAL BONUS: SDAI (cat 4, large) +3 — directly addresses eval_anomaly_reports this turn  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 16.0 last turn, SDAI started (in flight) +3, capability rose ≥2 −1 = 19.0  
+EMERGENT: `emergent_ai_labor_unrest_spreads` -- first noted turn 9, listed in 1 turn(s) so far: Following the cross-border strikes in France and Spain, coordinated industrial actions escalate across multiple EU member states as public-sector unions in healthcare, transport, and administration demand binding AI deployment moratoria. The strikes disrupt essential services and force emergency negotiations at the European level, amplifying pressure on the AF-HCS-LTS framework.  
+EMERGENT: `emergent_us_ai_export_enforcement` -- first noted turn 9, listed in 1 turn(s) so far: U.S. customs and border authorities begin actively intercepting shipments of high-performance AI chips bound for third countries, citing newly expanded export control lists. The move triggers diplomatic friction with several EU members and raises concerns about the reliability of U.S.-controlled supply chains, accelerating quiet EU discussions on sovereign compute infrastructure.  
+US_POSTURE: RETRENCHMENT

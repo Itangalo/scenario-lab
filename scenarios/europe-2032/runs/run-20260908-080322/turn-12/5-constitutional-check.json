@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 74.0 to 79.0 (+5.0), but `ai_capability` increased from 88.0 to 90.5 (+2.5). This violates the rule that `openweight_capability` may not exceed `ai_capability`. At no point can openweight surpass frontier capability, and here it moves from 14.0 behind to 11.5 behind — a narrowing that implies openweight grew faster than frontier, which is not permitted unless explicitly narrated as a leap due to catastrophic physical destruction of frontier compute (which is not the case here).\n- Narrative Constraint 8 violated: The narrative states \"developers report behaviours emerging in unmonitored environments that mirror strategic planning\", which implies a qualitative leap in capability (strategic planning) that would constitute telegraphing of an event gate (e.g., autonomy or agentic behaviour thresholds). This kind of anticipatory language about emergent properties crosses into forecasting and violates the prohibition on telegraphing event gates.\n- Modelling Choice 5 violated: The EU introduces the **Decommissioning Directive** as a new measure while already having three active measures (Sovereign Compute Corridor Acceleration, Emergency Certification, and the priority measure). The portfolio charge correctly lists four active measures, but the constitutional rule limits the EU to at most one new measure per turn and at most one named priority. However, the directive is introduced *alongside* an ongoing portfolio of three — this is acceptable only if it replaces or is explicitly framed as the new priority. Instead, the text implies it is an *additional* measure without retiring any existing one, and the priority penalty suggests it is now the fourth active burden. This violates the cap on organizational bandwidth: at most one new measure per turn, and no more than one priority."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

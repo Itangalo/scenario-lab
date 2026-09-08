@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, EU SAFM Directive −3, priority −1 = −10  
+PROPOSAL BONUS: EU SAFM Directive (cat 4, large) +3 — supply_chain_coercion and cyber_test_shot both justify urgent sovereign access  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22.0 last turn, no capacity event yet, capability rose 1.5 (no −1), supply_chain_coercion t1 −2 = 20.0 → corrected to 21.0 after recheck: supply_chain_coercion qualifies as −2, no offsetting build completion → final 21.0  
+Emerging developments (tracked):
+- `emergent_global_ai_research_shift` -- first noted turn 1, listed in 1 turn(s) so far: A coalition of non-aligned research institutions in Europe, Japan, and Canada begins an open, safety-focused AI development initiative, explicitly designed to bypass U.S. and Chinese dominance. It gains early traction by leveraging open-weight models and shared evaluation frameworks, shifting the perception of where frontier-adjacent innovation can occur.
+- `emergent_public_outrage_over_data_centers` -- first noted turn 1, listed in 1 turn(s) so far: Protests erupt in several EU member states against the environmental impact and perceived lack of public benefit from large data centers, fueled by rising energy prices and visible AI-driven job displacement in creative sectors. Local governments begin to impose moratoriums, slowing new deployments.

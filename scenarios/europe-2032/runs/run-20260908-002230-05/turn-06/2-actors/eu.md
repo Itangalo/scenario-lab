@@ -1,0 +1,30 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Secure access to frontier AI capability through sovereign compute and coalition leverage, ensuring the EU can evaluate, control, and deploy systems essential to its strategic autonomy and crisis resilience  
+- Grounds: The two-year commitment period has closed, and the world has shifted beneath it. The original focus on building sovereign compute as a self-sufficient foundation no longer reflects the acute reality of supply chain collapse, investment flight, and the emergence of a middle-power coalition that offers access without full ownership. The EU cannot now afford to wait for its own capacity to mature in isolation; it must lock in access *now* through collective leverage, even as it continues building its own base. This is not abandonment but adaptation: sovereignty is no longer just about owning the means of production, but about holding a decisive position in the networks that allocate them.
+
+## Portfolio  
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``  
+``EU Sovereign Compute Emergency Buildout and Talent Mobilisation (category 4, costs 3 per turn, started turn 6, finishes on turn 7): Accelerates the deployment of EU-controlled compute infrastructure and consolidates technical talent under crisis conditions, using emergency powers to override permitting, energy allocation, and cross-border labour barriers``  
+``Cyber Shield for Critical Infrastructure (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Launches a binding, EU-wide hardening programme for energy, transport and health infrastructure against AI-enabled intrusion, including mandatory red-teaming, zero-trust architecture rollout, and real-time anomaly detection using sovereign AI systems`` — finished  
+``Worker Transition Acceleration Fund (category 7, costs 3 per turn, started turn 1, finishes on turn 5): Establishes an EU-level rapid-response mechanism to support displaced workers in administrative, legal support and junior software roles, with wage insurance, retraining pathways and incentives for firms to redeploy talent`` — finished  
+
+## New measure  
+**Middle-Power Access Compact with Binding Evaluation Rights**  
+Establishes a binding framework among middle powers to jointly license access to frontier AI systems, conditioned on independent evaluation, weight security audits, and incident transparency — turning collective supply-chain leverage into enforceable governance.  
+
+`Category: 8 (International coordination and leverage)`  
+`Size: large`  
+`Finishes on turn: 8`  
+`Targeted effect:` increases eu_ai_sovereignty by 10–15 points by securing guaranteed access to frontier capability outside U.S. or Chinese control, raises ai_safety by enabling joint pre-deployment evaluation, and boosts eu_political_capital by demonstrating unity and strategic clarity in a moment of fragmentation  
+`Applies to:` middle-power coalition members (EU, Japan, South Korea, Canada, Netherlands, Taiwan via informal channels), frontier AI developers, and export control authorities  
+
+## Priority  
+EU Sovereign Compute Emergency Buildout and Talent Mobilisation — because the ai_investment_collapse and emergent ASML shadow network have made it clear that compute access is now the decisive bottleneck, and only direct state-led mobilisation can counteract both the capital flight and the erosion of industrial loyalty; delay risks permanent exclusion from the capability floor needed to participate in any coalition.
+
+## In practice  
+We are executing the final phase of the Cyber Shield under NIS2 Article 24, with the Romanian Fusion Centre now fully operational and feeding anonymised threat telemetry into a Luxembourg-hosted AI analysis layer. Despite CJEU challenges from Germany and Austria, we have secured provisional data-sharing agreements with national CERTs through REACT-EU incentives, and legacy system upgrades in Bulgaria, Romania, and Slovakia are complete. The Worker Transition Fund’s dashboards are live, but we are launching a review into the French and Italian rollout failures to prevent reputational bleed into future social measures.
+
+On the industrial front, the Sovereign Compute Emergency Buildout is now active: emergency powers under TEN-E and IPCEI have overridden Polish environmental objections, and grid task forces in Finland and Spain are working under military-civilian coordination to meet Q3 deadlines. We are redirecting 30% of the Digital Europe Programme’s compute allocation to sovereign training runs and fast-tracking visas for 5,000 frontier AI engineers, with housing and tax incentives co-financed by member states. The Tech Sovereignty Package is being revised to include binding domestic assembly targets for AI-optimised chips, and we are preparing to invoke the Anti-Coercion Instrument if France or the Netherlands block ASML export reforms.
+
+Simultaneously, we are convening the middle-power coalition in an emergency session under the new Compact framework, leveraging shared control over lithography, rare gases, and packaging to demand evaluation rights and weight security audits as conditions for continued component flows to frontier labs. This is not sanctions — it is reciprocity: access in exchange for accountability. The U.S. administration has not yet taken office, but we are engaging Canada and Japan now to lock in alignment before Washington reorients. The goal is not to stop progress, but to ensure the EU is not left begging for scraps from a table it helped build.

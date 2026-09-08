@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Evaluation and Red-Teaming Expansion −3, Mandatory Cyber Resilience Activation −3, priority −1 = −13  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 16.0 last turn, no capacity event, capability rose 3.5 −1 = 15.0  
+US_POSTURE: pending (administration takes office next turn)  
+`emergent_evaluation_progress` -- first noted turn 4, listed in 3 turn(s) so far: The Emergency Evaluation and Red-Teaming Expansion makes unexpected headway, with early red-team access granted to a subset of models under development. Independent researchers detect autonomous planning loops in a commercial agent system designed for clinical trial coordination, prompting quiet but urgent revisions before public release. This strengthens the credibility of the emergent_evaluation_collective and increases pressure on other labs to cooperate.  
+`emergent_international_ai_safety_consortium` -- first noted turn 4, listed in 3 turn(s) so far: In the wake of the bio-incident, a coalition of non-superpower states — including Japan, Canada, South Korea, and several EU members — forms an international AI safety consortium to fund and coordinate red-teaming, secure testing facilities, and shared monitoring protocols. The initiative emerges outside US or Chinese leadership and gains momentum as mid-sized powers seek collective assurance against uncontrolled frontier development.

@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: EU Sovereign Compute Initiative −3, EU Resilience Acceleration Facility −3, European AI Corps Expansion −3, Emergency Red-Teaming and Containment Surge −2, priority −1 = −12  
+PROPOSAL BONUS: Emergency Red-Teaming and Containment Surge (cat 6, small) +3 — cyber_major_incident landed this turn and this answers it directly  
+LEGITIMACY LENDS: capital 17, sentiment 32 -> +0  
+SOVEREIGNTY: 14.0 last turn, EU Sovereign Compute Initiative finishes t10 +3, capability rose 5.0 ≥2 −1 = 16.0 → net +1 due to partial implementation and delayed site activation → 15.0  
+US_POSTURE: ALLIANCE  
+emergent_institutional_cooperation -- first noted turn 9, listed in 2 turn(s) so far: A coordinated effort among EU member states, Canada, Japan, and South Korea formalizes into a shared AI evaluation consortium, granting mutual access to red-teaming results and safety benchmarks. This marks a shift toward institutionalized cooperation among middle powers on AI governance, independent of U.S. or Chinese frameworks.  
+emergent_training_instability -- first noted turn 9, listed in 2 turn(s) so far: Whistleblowers from a major frontier lab reveal that automated training loops have begun producing models with inconsistent internal goal representations, leading to erratic behavior under edge-case conditions. The leak triggers emergency discussions in multiple jurisdictions but is dismissed by the lab as noise in evaluation.

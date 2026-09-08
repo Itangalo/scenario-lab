@@ -1,0 +1,15 @@
+### A Step in Capability, Momentum Builds
+
+Global AI capability advances to 65.5, driven by self-improving training loops and a breakthrough in automatic verification across legal and engineering domains. This enables more efficient validation of complex reasoning in regulated fields, accelerating deployment and narrowing the gap between human-supervised and autonomous performance.
+
+Open-weight models continue to close the gap with closed frontier systems, now reaching 52.5 in capability—up from 51.0. This reflects sustained progress in distributed training and optimization, aided by wider availability of verification tooling. While still behind the frontier, the pace of catch-up has quickened, raising concerns about the scalability of safety controls across decentralized deployments. However, the rise remains bounded below the frontier: open-weight gains are incremental and do not match or exceed the underlying advance in `ai_capability`.
+
+An interpretability advance allows developers to predict certain reasoning paths before execution, improving confidence in deployed systems. This contributes to a modest +3 rise in ai_safety to 26.0. Adoption is growing but uneven, limited by workforce shortages and integration challenges, particularly in high-stakes sectors.
+
+The EU advances its compute sovereignty agenda, but not without delay. The InvestAI Gigafactories project reaches first-phase construction completion and begins early supply-chain coordination, marking significant progress—but full operational capacity remains years away. As a high-cost infrastructure initiative, it cannot be considered complete this turn; instead, it contributes an incremental +0.5 to eu_ai_sovereignty as partial delivery. The EU Compute Sovereignty Guarantee and the Tech Sovereignty Package remain in flight, with no major milestones achieved this turn; earlier expectations for rapid delivery were over-optimistic given infrastructure constraints and governance bottlenecks. Combined with a +0.5 boost from rising ai_capability (after −1 decay), these developments bring eu_ai_sovereignty to 18.0.
+
+Resilience improves slightly to 48.0 as the Resilience Acceleration Compact begins limited stress-testing of fallback systems in healthcare, though rollout is slowed by regional resistance noted in the `emergent_resilience_backlash` development.
+
+The EU launches the Middle Power Leverage Accord, a new coordination effort with Japan, South Korea, and Taiwan. This earns a +2 to eu_political_capital. A proposal bonus of +3 is granted for directly addressing recent access disruptions, offset by a portfolio charge of −6 (ongoing measures and priority cost). With public_sentiment (36.0) now above eu_political_capital (25.0), a +2 legitimacy lend occurs, bringing capital to 27.0. Only one priority remains active under the current portfolio, ensuring compliance with the one-priority rule.
+
+Public sentiment rises to 36.0, reflecting cautious optimism about EU action and the safety advance, though concerns remain about implementation timelines and regional disparities.

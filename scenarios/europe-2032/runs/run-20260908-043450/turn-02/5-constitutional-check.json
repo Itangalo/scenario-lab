@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The narrative describes launching three large measures (Emergency Resilience Surge, European Frontier Model Evaluation Consortium, and referencing InvestAI Gigafactories and Tech Sovereignty Package as active) while also naming a priority, implying more than one new measure introduced or active simultaneously. Constitutional Constraint 5 limits the EU to at most one new measure per turn and at most one named priority. The notepad confirms four active charges (three measures and one priority), indicating multiple measures in flight from this or prior turns, but the narrative introduces the Evaluation Consortium as a *new* initiative without retiring any prior measure, violating the \"at most one new measure per turn\" rule.\n- Modelling choice violated: The drop in `eu_political_capital` from 40.0 to 28.0 (−12) exceeds the maximum allowable change of ±25 points per turn, but the violation is not the magnitude—it is the lack of justification. However, the real issue is consistency with the portfolio charge: the notepad lists a charge of −10 (three measures at −3 each and priority at −1), which should result in a −10 change, not −12. The metric drop of 12 contradicts the notepad’s own accounting, implying an unexplained additional −2 loss, violating the requirement that political capital changes be fully and transparently accounted for under the defined rules."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

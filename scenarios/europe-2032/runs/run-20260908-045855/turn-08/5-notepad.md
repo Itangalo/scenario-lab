@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: EU AI Incident Response Corps −3, priority −1 = −4  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 17.0 last turn, no capacity event, capability rose 6.0 −1 = 16.0  
+US_POSTURE: CONSOLIDATION  
+emergent_global_ai_safety_summit -- first noted turn 6, listed in 3 turn(s) so far: The coalition of scientific leaders and ethics boards successfully convenes the emergency international summit on AI safety, drawing participation from major labs and governments. The summit produces a non-binding but widely adopted framework for minimal transparency and incident reporting, marking the first coordinated global attempt to establish guardrails amid accelerating capability growth.  
+emergent_open_weight_red_team_initiative -- first noted turn 6, listed in 3 turn(s) so far: The joint EU-Japan-Canada red-teaming platform for open-weight models expands its scope, conducting live defensive drills against simulated autonomous cyber agents targeting energy and transport systems. Results show measurable improvement in detection and response times, prompting informal adoption by several EU member states. However, without formal EU integration, its reach remains limited to technical communities and pilot programs.

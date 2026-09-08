@@ -1,0 +1,5 @@
+emergent_open_source_security_audit -- first noted turn 1, listed in 2 turn(s) so far: A coalition of European academic institutions and non-profits launches an open-source audit of the Kimi K3 model weights, focusing on offensive cyber capabilities. The effort gains unexpected traction, drawing contributors from across the EU and drawing public attention to the risks of open-weight models, even as it risks amplifying those same risks through disclosure.
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield for Critical Infrastructure −3, Resilience Facility & Rapid Response Corps −3, priority −1 = −13
+PROPOSAL BONUS: Resilience Facility & Rapid Response Corps (cat 6, large) +3 — emergent_regional_aid_surge and eval_anomaly_reports signal growing threat, and this measure answers both with preparedness
+LEGITIMACY LENDS: none
+SOVEREIGNTY: 21.0 last turn, no capacity event, capability rose 1.5 −1 = 19.0

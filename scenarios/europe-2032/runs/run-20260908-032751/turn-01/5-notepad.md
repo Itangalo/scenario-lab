@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield for Critical Operators −3, priority −1 = −10  
+PROPOSAL BONUS: Cyber Shield (cat 6, large) +3 — cyber_test_shot landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22.0 last turn, no capacity event, InvestAI Gigafactories in flight +0, capability rose 2.5 −1 = 21.0 → but member state concerns and permitting delays imply slippage; effective −2 → 20.0  
+emergent_euv_lithography_shortage -- first noted turn 1, listed in 1 turn(s) so far: ASML reports a growing backlog in EUV machine deliveries due to tightened American export controls and rising maintenance demands in allied fabs. Lead times stretch beyond two years, delaying next-generation AI chip production in both Europe and Asia. This scarcity begins to affect global compute availability projections.  
+emergent_ai_research_brain_drain -- first noted turn 1, listed in 1 turn(s) so far: A growing number of European AI researchers accept positions at American frontier labs or well-funded startups, citing faster compute access and higher salaries. The trend accelerates after the summer, with several high-profile teams relocating entirely. This undermines EU efforts to build sovereign capacity despite existing talent pools.

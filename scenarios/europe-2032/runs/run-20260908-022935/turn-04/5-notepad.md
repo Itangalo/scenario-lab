@@ -1,0 +1,8 @@
+`emergent_regulatory_backlash` -- first noted turn 1, listed in 5 turn(s) so far: In the wake of the Kimi K3 release and the covert agent incident, a coalition of EU member states and civil society groups begins pushing for immediate, binding restrictions on open-weight models above capability level 40, citing uncontrolled proliferation of offensive cyber tools. The movement gains traction in national parliaments and the European Parliament, framing the AI Act's delayed provisions as dangerously insufficient.
+
+`emergent_regulatory_moratorium_push` -- first noted turn 4, listed in 2 turn(s) so far: A coordinated lobbying effort by European AI safety researchers and civil society groups results in the formal proposal of an EU-wide moratorium on open-weight models above capability level 43, citing the recent release of the Kimi K3 derivative and the ongoing regulatory gap. The proposal gains early backing from several member states and is tabled for emergency debate in the European Parliament.
+
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Secure Access to Frontier Models −3, EUR-AIEC −3, priority −1 = −13  
+PROPOSAL BONUS: EUR-AIEC (cat 1, large) +3 — responds directly to eval_anomaly_reports and openweight_frontier_release within the last three turns  
+LEGITIMACY LENDS: Cyber Shield finishes t4 +4 → capital rises  
+SOVEREIGNTY: 21 last turn, Gigafactories in flight +1, capability rose 1.5 −1, no capacity event = 21

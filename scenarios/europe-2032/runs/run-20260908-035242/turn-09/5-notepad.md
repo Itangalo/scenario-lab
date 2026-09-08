@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: Sovereign Incident Response Corps −3, Emergency Compute Stabilisation Facility −3, priority −1 = −7  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 30 last turn, member_state_defection t9 −3, capability rose 1.0 −1 = 27  
+US_POSTURE: CONSOLIDATION  
+emergent_labour_displacement_wave -- first noted turn 3, listed in 7 turn(s) so far: Widespread layoffs in administrative and legal sectors continue, with trade unions now demanding EU-wide retraining schemes. Political pressure mounts in multiple capitals, and coordinated cross-border union actions are being discussed.  
+emergent_asml_defiance_negotiations -- first noted turn 5, listed in 5 turn(s) so far: ASML remains in talks with the Commission, but U.S. pressure intensifies, creating a critical test of EU unity and strategic autonomy. Member states are divided, and the prospect of unilateral Dutch action grows.  
+emergent_labour_strike_wave -- first noted turn 8, listed in 3 turn(s) so far: Widespread public-sector strikes across multiple EU countries protest AI-driven job displacement and demand retraining guarantees, escalating pressure on the Commission to act. The wave intensifies existing political strain and coincides with growing frustration over stalled integration of the Sovereign Incident Response Corps.  
+emergent_synthetic_election_interference -- first noted turn 8, listed in 3 turn(s) so far: A coordinated disinformation campaign using highly realistic synthetic media targets multiple upcoming national elections in EU member states, overwhelming existing detection systems. The scale and coordination suggest non-domestic involvement, triggering emergency discussions on electoral integrity.

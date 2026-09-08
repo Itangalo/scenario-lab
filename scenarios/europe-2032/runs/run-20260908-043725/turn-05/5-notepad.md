@@ -1,0 +1,6 @@
+- `emergent_biosafety_concerns` -- first noted turn 1, listed in 6 turn(s) so far: Scientific consensus grows around the risk of AI-accelerated bio-design; pressure mounts for binding international norms ahead of the WHO’s 2028 Global Health Security Summit.
+- `emergent_regional_cyber_collective` -- first noted turn 1, listed in 6 turn(s) so far: Informal coordination among Nordic and Benelux states strengthens, with joint cyber drills held quarterly and shared AI monitoring dashboards piloted.
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Joint Cyber Shield Integration −3, EU Sovereign AI Corps −3, priority −1 = −13
+- PROPOSAL BONUS: EU Sovereign AI Corps (cat 4, large) +4 — directly addresses capability_jump and biosafety concerns with operational capacity, urgent and high-stakes
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 16.0 last turn, no capacity event, InvestAI Gigafactories in flight +1, capability rose 2.0 −1 = 16.0

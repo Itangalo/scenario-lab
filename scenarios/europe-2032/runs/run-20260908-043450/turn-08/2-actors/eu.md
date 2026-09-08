@@ -1,0 +1,29 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Integrated sovereign defence and real-time resilience, with full linkage between evaluation, incident response, and public protection — **but only if the Union can act on its own infrastructure and data without external veto, and only if the hardware stack sustaining that infrastructure is itself under EU-controlled maintenance and subsystem production**  
+  - Grounds: The supply_chain_coercion event has proven that sovereignty collapses not at the software layer, but at the material base. The Sovereign Semiconductor Assurance Programme was conceived as a response to this, but its success is not guaranteed: adoption remains under negotiation, implementation is delayed until Turn 9, and political capital is now critically low. The commitment must now explicitly bind industrial sovereignty to AI sovereignty — not as a parallel goal, but as a precondition. Without control over the machines that make the chips, all higher-layer defences are conditional on foreign goodwill.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will now act only where integration across evaluation, enforcement, infrastructure, *and supply chain autonomy* can be achieved, because external coercion has shown that even the most integrated system is brittle if its hardware depends on someone else’s permission.  
+  - Grounds: No change from last turn — this remains valid. The interpretability breakthrough and partial rollout of the Automated Threat Enrichment Layer confirm that technical progress is possible, but the export_control_escalation and stalled integration in Central Europe show that political and industrial fragility now dominate risk. Acting without supply chain control is no longer credible.
+
+## Portfolio  
+`InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — **finished**  
+`Automated Threat Enrichment Layer (category 6, costs 3 per turn, started turn 6, finishes on turn 6): Deploy a unified software stack across ENISA, national CERTs, and Tier 1 infrastructure operators that ingests AI incident data and model evaluation outputs to generate real-time defensive signatures and automated alerts` — **finished**  
+`Sovereign Semiconductor Assurance Programme (category 4, costs 3 per turn, started turn 7, finishes on turn 9): Launch an emergency EU-wide effort to secure, on EU legal soil, the production and servicing of lithography equipment for mature-node chips essential to AI infrastructure, energy, and defence systems`  
+
+## New measure  
+**Regional Oversight Integration Initiative**  
+Launch a targeted engagement programme to align the emergent regional oversight pact with EU-level defence objectives, offering technical integration, shared liability frameworks, and funding incentives in exchange for API access and real-time data sharing.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size: small`  
+`Finishes on turn: 10`  
+`Targeted effect:` Increase resilience from 52.0 to 58.0 by enabling full EU-wide deployment of the Automated Threat Enrichment Layer through negotiated integration with Central and Baltic states, closing the current operational gap.  
+`Applies to:` ENISA, national CERTs, Central and Baltic member states, and the emergent regional oversight pact.
+
+## Priority  
+**Sovereign Semiconductor Assurance Programme** — because the export_control_escalation this turn confirms that the U.S. is no longer treating mature-node tools as neutral infrastructure but as levers of geopolitical coercion; if we do not secure control over servicing and subsystems now, the next generation of EU AI infrastructure will be built on foreign-controllable foundations, rendering all other defences performative.
+
+## In practice  
+This turn, we are operating on two fronts: defending against hardware coercion and closing the cracks in our own cohesion. The Sovereign Semiconductor Assurance Programme is now in flight, but its adoption is not assured. The European Commission has tabled the legal basis under Article 122 TFEU, and we are preparing to invoke the Anti-Coercion Instrument if Washington escalates further — but first, we must close ranks at home. The emergent_regional_oversight_pact reveals a deeper truth: sovereignty is not just about independence from external control, but about trust between member states. Central and Baltic nations are not resisting integration — they are demanding accountability. We cannot build a unified defence layer if half the Union fears it will be used against them.
+
+So we are launching the Regional Oversight Integration Initiative: a small but urgent measure to bridge the gap. ENISA will lead a delegation to Tallinn and Warsaw next month, offering technical integration of national review protocols into the EU’s evaluation stack, co-developed liability frameworks for AI-driven security actions, and a €1.2bn incentive package from unused InvestAI funds to fast-track local hardening. This is not a concession — it is an investment in legitimacy. If we cannot earn API access through trust, we will never achieve real-time resilience. At the same time, the Council Competitiveness formation is meeting in emergency session to finalise the Sovereign Semiconductor Assurance Programme’s funding — we are offering ASML a binding procurement guarantee for the next decade in exchange for transferring subsystem know-how to EU engineers. This is not about building a rival to ASML — it is about ensuring that when a foreign power says “no,” we do not fall silent. We are defending not just chips, but the capacity to defend ourselves.

@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Public Algorithmic Accountability Framework −3, EU Talent Anchoring Initiative −3, EU Rapid Incident Response Corps −3, priority −1 = −10  
+PROPOSAL BONUS: EU Rapid Incident Response Corps (cat 6, large) +5 — direct response to cyber_major_incident and bio_uplift_findings, both severe and current  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 19.0 last turn, no capacity event, capability rose 2.5 −1 = 18.0  
+US_POSTURE: RETRENCHMENT  
+emergent_lab_cooperation -- first noted turn 1, listed in 7 turn(s) so far: A consortium of European and Japanese AI safety labs continues to strengthen informal collaboration on interpretability and near-miss reporting, driven by shared concern over autonomous agents operating undetected in training environments. Despite no formal funding or mandate, the group has begun exchanging evaluation frameworks and anomaly logs, aiming to establish common baselines before regulatory divergence hardens.  
+emergent_asml_pressure -- first noted turn 1, listed in 7 turn(s) so far: Amid renewed US export control tightening, internal documents from ASML reveal that American jurisdiction over critical components is being used to block servicing of older EUV machines in China, even those not under sanction. The Dutch government faces mounting pressure to assert control over the company's sovereign functions, with one senior minister warning that 'we are not a vassal in this game.'

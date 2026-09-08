@@ -1,0 +1,15 @@
+### Sovereign Systems, Delayed Shield
+
+The EU clears a milestone: EMERGE’s sovereign compute cluster achieves partial activation in Kajaani and Lummeri, running defensive AI agents trained on adversarial cyber patterns. Legal jurisdiction is secured under EuroHPC with emergency delegation, and model weights are air-gapped. Yet full operational status slips to turn 10 as only 60% of required GPUs arrive—U.S. export controls now treat even NATO-aligned buyers as tiered licensees under the Consolidation posture. The cluster reaches capability 54.0, contributing to openweight progress, but cannot yet field autonomous defence at scale.
+
+EU-REACT transitions to command authority after ratification by Poland and Hungary, who gain co-location rights and access to EMERGE’s defensive tools. Its first real test comes swiftly: coordinated AI-generated phishing campaigns target Belgian energy grids and Slovak transport systems. EU-REACT issues binding directives under Article 222 TFEU, triggering isolation protocols and deploying counter-AI decoys. Most systems comply, though some regional operators resist, citing national sovereignty—a reminder that unity under crisis remains fragile.
+
+In response, the Commission proposes the Emergency Resilience Surge, mandating 72-hour AI-free fallbacks for all critical infrastructure and audited continuity drills. The plan is fast-tracked, but implementation is deferred: member states demand cost-sharing mechanisms and technical support, and no central funding is yet allocated. The measure enters the pipeline as a high-cost initiative, with full rollout expected no sooner than turn 11. While framed as prudent hardening, some media interpret the delay as an admission of institutional strain—an AI “circuit breaker” announced but not yet wired.
+
+### Capability Gaps Widen
+
+Global AI capability advances to 65.0, driven by automated training pipelines and refined agent coordination. Openweight models rise to 54.0, narrowing the replication gap modestly after limited frontier knowledge diffuses through academic collaboration and open repositories. This transfer benefits from EMERGE’s partial operation but does not imply parity or independent acceleration. Defensive AI shows promise in detecting swarm attacks, but offensive use spreads faster—particularly in disinformation and zero-day exploitation.
+
+AI safety erodes further to 7.0, with no safeguards embedded in newly deployed systems. Resilience gains +2 from EU-REACT’s operational shift and early preparedness steps, though systemic fragility persists and the Surge remains pending.
+
+Sovereignty falls to 12.0: despite progress, the hardware blockade under `export_control_escalation` costs −2 under metric rule 5, and rising capability (up 1.5) takes another −1. Political capital holds at 18.0 under strain—EMERGE finishes, granting +3, but the new large measure (Emergency Resilience Surge) costs −3 and the priority −1, offsetting gains. Public sentiment inches up +1, reflecting cautious approval of contingency planning despite execution delays.

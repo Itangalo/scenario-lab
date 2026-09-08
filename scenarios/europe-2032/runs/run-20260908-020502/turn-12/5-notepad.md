@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: none  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 26 last turn, no capacity event, capability rose 1.5 −1 = 25  
+US_POSTURE: ALLIANCE  
+- `emergent_bio_uplift_findings` -- first noted turn 9, listed in 4 turn(s) so far: A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 2 turns.
+- `emergent_regulatory_fragility_revolt` -- first noted turn 12, listed in 1 turn(s) so far: Several EU member states, citing legal uncertainty and enforcement overreach from the recent AI Act emergency measures, form an informal bloc demanding a rollback of Seville Corps authority and a moratorium on further centralised enforcement actions. The coalition threatens to block upcoming AI sovereignty funding unless oversight is rebalanced toward national courts and parliaments.
+- `emergent_openweight_research_surge` -- first noted turn 12, listed in 1 turn(s) so far: A distributed network of open-science researchers and hobbyists leverages the latest open-weight models at 59.0 capability to launch coordinated, automated research campaigns in materials science and low-energy fusion pathways. Early results show anomalous but reproducible predictions, sparking both excitement and concern about uncontrolled discovery trajectories outside institutional oversight.

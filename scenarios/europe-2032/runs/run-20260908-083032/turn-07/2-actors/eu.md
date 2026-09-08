@@ -1,0 +1,22 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — finishes this turn
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — finished
+- `Secure Audit Access for EU-Certified Evaluators (category 5, costs 2 per turn, started turn 2, finishes on turn 3): Establish binding access rights for EU-vetted evaluators to conduct real-time model inspections and agent-behaviour monitoring in high-risk systems operated by foreign providers within EU critical infrastructure` — finished
+- `EU-Hosted Red Teaming Facility (category 5, costs 2 per turn, started turn 3, finishes on turn 4): A public technical capability to continuously probe the most capable foreign AI systems under controlled conditions, simulating adversarial use cases and detecting emergent coordination risks` — finished
+- `Sovereign Access to Safety-Critical Weights (category 5, costs 2 per turn, started turn 4, finishes on turn 5): Establish a legal and technical pathway for EU-certified institutions to obtain read-only, auditable access to model weights used in systems operating within EU critical infrastructure, under strict security protocols and with liability shielding for compliance` — finished
+
+Canceled measure: Sovereign Access to Safety-Critical Weights. The measure has concluded without achieving its objective; U.S. providers, backed by Washington’s strategic classification of frontier models, refused weight audits despite incentives, and no legal or technical pathway was established. Continuing to fund it would consume capital without effect.
+
+## New measure
+None this turn.  
+We are waiting for the outcome of the U.S. election and the full operationalisation of the red teaming facility’s findings before expanding our public technical capacity further, and with political capital at 23.0, we cannot afford a failed measure without a credible new lever.
+
+## Priority
+**InvestAI Gigafactories (category 4)** — because with access to foreign weights now blocked and sovereignty exposed as hollow, the only remaining path to control is through independent capacity, and because this is the only measure in flight that can still shift eu_ai_sovereignty before the next U.S. administration takes a hard line on compute exports.
+
+## In practice
+We are acting through the European Commission’s Directorate-General for Communications Networks, Content and Technology, under emergency delegation granted by the Critical Entities Resilience Directive and reinforced by the European Chips Act. The InvestAI Gigafactories are entering their final phase: site construction begins in Finland (Kajaani), Poland (Wrocław), and southern France (Toulouse), with binding agreements signed for 30% of initial capacity to be reserved for public safety-critical workloads—civil protection, energy grid management, and sovereign red-teaming. The European Investment Bank is releasing €40bn in tranche-linked funding, contingent on national grid operators delivering substation upgrades by Q2 2030. Germany and France have secured co-location rights for national evaluation nodes at each site, raising concerns among smaller states about centralisation. To address this, we are offering Cyprus, Estonia, and Slovenia guaranteed access to audit-grade compute time and a rotating seat on the InvestAI Oversight Board, aiming to preserve cohesion through shared sovereignty rather than uniform control.
+
+The collapse of the red-teaming initiative and the failure to secure foreign weight access have left us blind to the systems we depend on. With ai_safety at 31.0 and openweight_capability at 56.0, the window for reactive oversight is closing. Our only remaining leverage is physical: land, power, and hardware under EU jurisdiction. We are not betting on goodwill from the U.S., especially with a hawkish faction likely to win the upcoming election and restrict chip exports. This is not industrial policy—it is infrastructure for survival. The Gigafactories are the last viable instrument to ensure that, six months from now, the EU still has a functioning state capable of independent action. We are not trying to catch up to the frontier. We are trying to ensure there is still a frontier to catch.

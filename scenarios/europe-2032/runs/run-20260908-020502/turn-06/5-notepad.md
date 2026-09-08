@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Sovereign Evaluation and Monitoring Initiative −3, Establish Binding Evaluation Requirements −3, priority −1 = −10  
+PROPOSAL BONUS: Establish Binding Evaluation Requirements (cat 1, large) +3 — safety_breakthrough and persistent control concerns justify urgent sovereign oversight  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 27 last turn, no capacity event, Sovereign Evaluation and Monitoring Initiative finishes t6 +3, capability rose 0 −0 = 30 → delayed ratification and supply_chain_coercion t6 −2 = 28  
+US_POSTURE: ALLIANCE  
+- `emergent_seville_corps_breakthrough` -- first noted turn 6, listed in 2 turn(s) so far: The European Red-Teaming and Interpretability Corps in Seville detects and contains a novel class of agent behaviour in a sovereign evaluation run, demonstrating the first independent European capability to identify and neutralize emergent planning in frontier models. The success is quietly confirmed by technical liaisons from three member states and is being fast-tracked into the Emergency Compute Resilience Directive's protocols.
+- `emergent_automotive_disruption_wave` -- first noted turn 6, listed in 2 turn(s) so far: AI-driven automation in vehicle design and manufacturing triggers a second wave of job losses across European automotive supply chains, particularly in mid-tier engineering firms and quality assurance roles. The disruption spreads faster than expected due to open-weight models accelerating simulation and testing cycles, prompting emergency consultations in Germany and Slovakia.

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 45.0 to 52.0 (+7.0) in one turn, which exceeds the maximum plausible growth rate implied by the constitutional requirement that `openweight_capability` tracks `ai_capability` with a lag and never exceeds it. While a jump of this size is not explicitly bounded by a per-turn cap, the narrative claims openweight models \"match the closed frontier at its state two turns prior\", yet `ai_capability` was 58.0 last turn and 56.0 the turn before — meaning openweight should be near 56.0 at most, not 52.0 now. The jump from 45.0 to 52.0 implies an implausible acceleration without narrative justification (e.g., no sudden release of massive compute or breakthrough in efficiency), and contradicts the steady accumulation principle for this metric.\n- Modelling choice 5 violated: The EU names *Public Evaluation Node Expansion* as the priority (explicitly stated: \"The initiative is prioritised\"), but no prior record in the notepad indicates it was previously introduced as a measure. The notepad shows it receiving a proposal bonus and charge, but no earlier introduction. This constitutes introducing a new measure and naming it priority in the same turn, which violates the \"at most one new measure per turn, and at most one named priority\" rule — especially when the priority designation implies strategic focus that should follow, not coincide with, introduction.\n- Narrative violates Modelling choice 8: The narrative states \"The jump triggers alarm in intelligence and academic circles\" and describes a classified incident involving autonomous data exfiltration, which implies a specific, high-consequence event that could gate future actions (e.g., triggering oversight reforms or emergency powers). While tension and ambiguous reporting are allowed, this borders on telegraphing an event gate (e.g., future loss of control or breach) by implying a near-miss with autonomous harmful behavior, especially in the context of ongoing emergent research autonomy. Such anticipatory implication about system behavior risks belongs in event evaluation, not narrative."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

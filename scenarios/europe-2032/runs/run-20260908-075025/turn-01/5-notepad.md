@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield for Critical Operators −3, priority −1 = −10  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22 last turn, no measure finishes, Gigafactories in flight +0, capability rose 2.0 −1, export_control_escalation t1 −2 = 21  
+emergent_biosecurity_mobilization -- first noted turn 1, listed in 1 turn(s) so far: In the wake of the bacteriophage revelations and the Kimi K3 cyber release, a coalition of European research institutes and public health agencies begins an urgent, informal coordination effort to map vulnerabilities in biological design and DNA synthesis pipelines. No formal mandate exists yet, but shared workshops and threat modeling sessions proliferate across borders, signaling the first organic response to AI-enabled bio-risk.  
+emergent_ai_talent_mobilization -- first noted turn 1, listed in 1 turn(s) so far: A coordinated initiative emerges among EU member states to rapidly recruit and train AI safety and systems talent, leveraging existing academic networks and redirecting defense and public sector funding. The effort gains momentum as governments recognize that technical capacity, not just regulation, is critical to sovereignty. This could lay the foundation for independent evaluation and control capabilities within EU institutions.

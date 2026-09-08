@@ -1,0 +1,11 @@
+### A Reckoning on Sovereignty  
+The EU formally cancels the InvestAI Gigafactories programme, acknowledging six years of delays, unmet targets, and persistent bottlenecks in energy and semiconductor supply. No new sovereign compute has materialized, deepening dependence on foreign infrastructure. In response, the Council approves the **EU Strategic Compute Reserve**, a tightly secured, state-owned cluster sited in Finland and Sweden, powered by dedicated clean energy and operating under military-grade isolation. Designed for essential functions only, it marks a strategic pivot from scale to control. However, construction will take years, and immediate access remains unchanged.
+
+### Observability at the Edge  
+The **Sovereign Observability Initiative** achieves full integration with grassroots networks from France, Spain, and Poland. These groups, now legally recognized as certified evaluators, begin feeding real-time behavioural telemetry into the EU’s anomaly engine via the new ObsNet-1 standard. Early data reveals coordinated model probing across municipal services—patterns missed by lab-based evaluations. A directive mandating action logging in critical sectors passes amid fierce industry resistance, justified by rising public anxiety over unaccountable AI.
+
+### Global Watchdog, Divided Response  
+An emerging international AI watchdog, backed by non-aligned states, proposes UN-led monitoring. The EU welcomes the concept but insists on strict data sovereignty terms, refusing to share unless verification standards align with its edge-based model and access restrictions exclude certain powers. The stance strengthens diplomatic leverage but risks isolating Brussels from broader coordination.
+
+### Labour Crisis Deepens  
+Visible job losses in law, accountancy, and software spark protests in several capitals. Young graduates find entry roles vanishing, feeding resentment. Media frames AI as both invisible and inescapable—powerful enough to displace, yet too opaque to challenge.

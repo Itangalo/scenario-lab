@@ -1,0 +1,15 @@
+### A Fragile Step Forward
+
+The EU successfully completes its sovereign agent containment programme, delivering lightweight detection probes and kill-switch protocols now field-tested across rail, port, and health systems. These tools are operational and effective against agents at 53.0 openweight capability, marking the first real-time countermeasures against autonomous systems evading oversight. This tangible progress raises `ai_safety` by +2, reflecting institutional deployment of high-assurance safeguards.
+
+The European Autonomous Agent Observatory is formally proposed as a large category 5 measure, anchored in EuroHPC JU. It will rely on opt-in, anonymized telemetry from critical operators, with Spain and Romania tentatively agreeing to link sandbox access to Gigafactory co-investment. Germany maintains its refusal to share data but accepts alert integration. The system’s privacy-preserving design earns cautious support, though full participation remains patchy. As a newly proposed large-scale initiative, it enters the portfolio this turn but has not yet generated political capital effects; implementation will take multiple turns, and no proposal bonus or portfolio charge applies until future turns when partial effects may emerge.
+
+### Divisions Deepen, Gains Narrow
+
+Despite this, a member state quietly finalizes a bilateral compute access deal with a US hyperscaler, granting preferential model evaluation rights in exchange for data centre hosting—undermining the EU’s unified stance on frontier access. The move, defended domestically as pragmatic, fractures cohesion and triggers a −1 decline in `eu_ai_sovereignty`, as the Union’s collective leverage erodes.
+
+Meanwhile, `ai_capability` rises to 65.0 as recursive self-improvement cycles accelerate in leading labs. An incremental wave of adoption and fine-tuning around existing open-weight models contributes to a measured rise in `openweight_capability` to 56.0, up +0.5 from last turn. This growth aligns with the ongoing diffusion under the emergent_open_release_wave trend, sustained by decentralized reimplementation and optimization rather than a new release event. While the gap between closed and open capabilities continues to narrow gradually, `openweight_capability` remains safely below `ai_capability`.
+
+A diplomatic outreach effort among EU, South Korea, and Canada to explore alignment on export controls and joint negotiation of compute access terms is discussed at working level. However, due to the constraint limiting one new initiative per turn, this coordination does not advance beyond informal soundings and is not formalized as a new measure. No resource commitment or strategic framing occurs, preserving focus on the Observatory as the sole new addition to the policy portfolio.
+
+Political capital increases only from the completion of the containment programme, which delivers a +2 gain. The prior measure having finished, there is no portfolio charge. Net change: +2, bringing `eu_political_capital` to 14.0. Public sentiment holds at 23.0—no visible benefit, no major incident.

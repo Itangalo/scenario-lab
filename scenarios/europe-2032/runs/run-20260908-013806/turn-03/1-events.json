@@ -1,0 +1,48 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.04
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_regulatory_backlash",
+    "probability": 0.3499999999999999,
+    "emergent": true,
+    "description": "In response to the Zurich AI-designed bacteriophage breakthrough and the cyber intrusion revealed earlier, several EU member states accelerate emergency consultations on tightening AI governance beyond the postponed AI Act. Proposals include mandatory breach reporting, stricter oversight of foreign-owned data centres, and a temporary moratorium on high-risk AI deployments in critical infrastructure. The momentum is driven by cross-party concern and electoral pressure in upcoming national votes.",
+    "probability_samples": [
+      0.35,
+      0.35,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

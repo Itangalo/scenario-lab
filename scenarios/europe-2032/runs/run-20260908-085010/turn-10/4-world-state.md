@@ -1,0 +1,11 @@
+### The Bioincident and the Blind Spot
+
+A modified avian influenza strain, engineered with AI-assisted protein folding and transmission optimization, escapes a high-containment lab in Southeast Asia. Dozens die before containment is achieved, and genomic analysis confirms synthetic signatures matching known model outputs. The world wakes to a new threat: AI is no longer a risk vector—it is a co-author of biological harm.
+
+In Brussels, the EU activates emergency protocols. The **Accelerate Incident Response Protocols for Biosecurity and AI Coordination** measure is launched, mandating AI-involvement screening in all major health crises. However, implementation is uneven: only three member states integrate the forensic tools by June, and HERA lacks the authority to enforce compliance. The measure begins but delivers no full benefit yet.
+
+The **Sovereign Monitoring Network**, now a priority, sees accelerated deployment. Anomalies detected in Darmstadt trigger alerts, but integration across national systems falters—France delays data sharing over sovereignty concerns, and Poland’s module fails under load. The network is partially operational, but blind spots remain.
+
+Despite completing *InvestAI Gigafactories* and *Red-Team Access*, sovereignty slips to 22.0: the +3 from Gigafactories is offset by −1 from capability growth and −1 from delayed real-world impact under US consolidation. Safety remains stagnant at 11.0—no safeguards have landed on frontier models. Resilience rises to 50.0, absorbing some harm through partial response activation. Political capital improves slightly to 18.0, aided by a +6 proposal bonus for the biosecurity measure, though ongoing costs and the priority penalty weigh heavily. Public sentiment plummets to 25.0 as media frames the incident as a failure of AI governance.
+
+Transatlantic silence persists. Washington offers condolences but no joint investigation, citing national security. The EU’s monitoring push is seen as symbolic—necessary, but too late.

@@ -1,0 +1,15 @@
+### The Edge of Infrastructure
+
+The global frontier creeps forward, reaching 67.5, as closed laboratories refine agentic coordination and long-horizon planning. Yet no safety gains accompany it: deployed systems remain opaque, and the gap between capability and control widens. The US **CONSOLIDATION** posture persists, restricting access to frontier models and reinforcing dependency.
+
+In Europe, the **InvestAI Gigafactories** programme achieves physical completion and initial power-up, marking a symbolic milestone in sovereign compute development. However, full integration into the European AI ecosystem remains months behind schedule due to delays in cross-border energy agreements and workforce certification. Operations are limited to test loads; meaningful compute throughput will not begin until the next turn at earliest. As a result, only partial sovereignty value is recognized this turn. The **Operational Sovereignty Framework** clears final regulatory hurdles and is formally adopted, establishing binding oversight for high-capability systems within EU jurisdiction. While legally in force, enforcement mechanisms require further technical alignment across member states, delaying operational impact. Implementation progress supports a modest step in sovereignty, but full benefits are deferred.
+
+The **Hardened Continuity Protocol** continues implementation, with Germany and France advancing live-failover systems in critical sectors. Belgium delays participation pending legal review of emergency powers, slowing system-wide cohesion. No new measures are launched this turn, preserving institutional bandwidth.
+
+Amid rising tensions, the **backlash_physical** wave intensifies. Protesters target data centre sites in Poland and Finland, disrupting grid connections and delaying certification of key facilities. While damage is contained, the political cost mounts. Public sentiment remains stagnant at 30.0, caught between fear of AI incidents and distrust of institutional overreach.
+
+Resilience rises to 60.0, reflecting partial progress on continuity systems and ongoing hardening of infrastructure. Sovereignty increases to 21.0, reflecting incremental gains from partial activation of InvestAI Gigafactories (+2) and early-stage adoption of the Operational Sovereignty Framework (+2), offset by rising capability (−1). The full +5 benefits of each measure will accrue gradually in subsequent turns as implementation matures. Political capital remains flat at 12.0, as formal progress is balanced by execution friction and public resistance.
+
+Open-weight capability advances to 57.5, supported by continued collaboration within the **emergent_eval_consortium**, which has sustained incremental progress in open evaluation tooling despite restricted frontier access under the US posture.
+
+The EU advances, not through flawless execution, but through persistence in the face of compounding challenges.

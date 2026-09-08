@@ -1,0 +1,50 @@
+[
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.16,
+      0.22,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_compute_sovereignty_backlash",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "National investigations into the shadow market for sovereign compute escalate into cross-border legal actions, with several EU member states indicting firms and researchers for circumventing usage controls on public infrastructure. This triggers a political crisis over the integrity of the InvestAI program and forces the Commission to consider emergency audits or compute usage caps, fracturing the internal consensus on open research access.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_ai_worker_syndicate_expansion",
+    "probability": 0.26666666666666666,
+    "emergent": true,
+    "description": "The emergent AI worker syndicate, first noted in turn 8, expands its influence beyond research labs into public-sector AI deployment teams and independent model auditing collectives. It begins coordinating strikes and work-to-rules around model validation and deployment approvals, effectively slowing down high-stakes AI integration in critical services. Governments face a new form of labour resistance not from displaced workers but from those tasked with managing the systems themselves.",
+    "probability_samples": [
+      0.3,
+      0.28,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

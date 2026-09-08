@@ -1,0 +1,14 @@
+### Acceleration and Exposure  
+The second half of 2026 closes with a stark divergence: AI capability advanced decisively, while governance and security fell further behind. The closed frontier, despite the *ai_investment_collapse*, pushed forward through compressed cycles and accumulated knowledge. The leading labs, though trimming budgets, still achieved a +2.5 increase in general capability, reaching 54.5 as systems demonstrated sustained autonomy in complex research domains.
+
+Simultaneously, an *openweight_frontier_release* brought near-frontier models into public hands within months of their closed counterparts. This wave of diffusion significantly narrowed the capability gap, lifting *openweight_capability* to 47.0. While this surge made offensive cyber tools and autonomous agent frameworks more accessible, the release did not fully close the gap with the frontier—some core optimizations and training infrastructure remained out of reach. Still, defensive systems across sectors were caught unprepared.
+
+A *cyber_test_shot* revealed critical vulnerabilities: intrusions in energy, port, and water systems across continents showed that detection mechanisms were blind to advanced AI-driven threats. The EU’s resilience, already strained, eroded further as its infrastructure proved unable to absorb such incidents.
+
+### Sovereignty Under Pressure  
+The *supply_chain_coercion* event marked a strategic defeat. Washington compelled ASML to restrict exports beyond advanced nodes, hitting the EU’s only leverage in the semiconductor supply chain. This act undermined European autonomy and signaled that critical infrastructure would remain subject to external control.
+
+Meanwhile, the *emergent_labor_shortage* deepened, exposing a critical gap between investment and execution. Despite funding for compute, the EU lacked the engineers to deploy or secure sovereign systems.
+
+### A Response Considered, But Not Yet Launched  
+In response, the European Commission drafted the *EU Talent Corridor Initiative*, a small Category 4 measure aimed at fast-tracking visas and integration for AI engineers. However, amid existing commitments—*InvestAI Gigafactories* and *Tech Sovereignty Package*—the political bandwidth for a third active measure is absent. The proposal remains under internal debate, with no formal approval granted this turn. Member states have raised concerns about equity and brain drain, and the Parliament has not been consulted. As a result, no implementation has begun, and the political cost has not yet materialized in full—though early resistance has already contributed to a broader sense of strain.

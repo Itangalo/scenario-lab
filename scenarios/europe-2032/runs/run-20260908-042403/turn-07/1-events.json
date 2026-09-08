@@ -1,0 +1,61 @@
+[
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.11333333333333334,
+    "probability_samples": [
+      0.08,
+      0.12,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "rsi_onset",
+    "probability": 0.2333333333333333,
+    "probability_samples": [
+      0.35,
+      0.0,
+      0.35
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_regional_aid_boycott",
+    "probability": 0.24,
+    "emergent": true,
+    "description": "Several southern and eastern member states continue to resist new AI governance measures, demanding binding commitments on compute access and public-sector deployment support. The coalition holds firm, increasing pressure on the Commission to deliver tangible benefits in exchange for compliance.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_foreign_disinfo_wave",
+    "probability": 0.29333333333333333,
+    "emergent": true,
+    "description": "A coordinated disinformation campaign using AI-generated synthetic media targets multiple European elections, destabilizing public trust in democratic processes. The scale and realism overwhelm existing detection systems, prompting emergency coordination among intelligence agencies.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

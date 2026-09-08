@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, AI Security Shield −3, Worker Transition Fund −3, priority −1 = −13  
+PROPOSAL BONUS: Worker Transition Fund (cat 7, large) +3 — emergent_labour_displacement_signals landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21.0 last turn, no capacity event, capability rose 1.0 −1 = 20.0  
+emergent_supply_chain_friction -- first noted turn 1, listed in 2 turn(s) so far: ASML faces intensified internal and external pressure over export controls, with leaks suggesting key EU member states are lobbying to relax restrictions on servicing older lithography tools in China. This creates a visible rift between the EU's de jure control and de facto enforcement, undermining its leverage.  
+emergent_labour_displacement_signals -- first noted turn 1, listed in 2 turn(s) so far: Early indicators of AI-driven job displacement emerge in EU white-collar sectors, particularly legal support and technical translation. Layoffs attributed to AI adoption appear in national media, feeding public anxiety and creating political momentum for protective measures, though the scale is not yet systemic.

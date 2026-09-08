@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Hardened Openweight Deployment Programme −3, EU-Wide Red-Teaming and Resilience Drills −3, priority −1 = −7  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 25 last turn, Hardened Openweight Deployment Programme finishes t7 +5, capability rose 1.0 −1, member_state_defection t7 −2 = 27 → but US_POSTURE: ALLIANCE applies rule 5 decay at top end due to ongoing dependence: −2 → 25 → correction: category 5 is not category 4; no +5 term. Recompute: 25 last turn, no category 4 completion, capability rose 1.0 −1, member_state_defection t7 −2 = 22 → recheck: Hardened Openweight is category 5, so no +3–+6. But EU gains *de facto* sovereign model integrity — interpret as secured access? No: event term only for compute, models, supply chain, or membership. Defection costs −2. Final: 25 −1 (capability) −2 (defection) = 22. Wait — Sovereign Inference Corridor completed last turn; Gigafactories finishes t7: category 4, large, finishes now → +5. Yes: InvestAI Gigafactories finishes t7 +5, capability rose 1.0 −1, member_state_defection t7 −2 = 27  
+US_POSTURE: ALLIANCE  
+emergent_regional_sovereignty_pact — first noted turn 6, listed in 3 turn(s) so far  
+emergent_ai_winter_signals — first noted turn 6, listed in 3 turn(s) so far

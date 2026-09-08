@@ -1,0 +1,14 @@
+### Frontier Stalls, Open Weights Surge  
+Global AI capability inches up to 56.0, but momentum falters. The `capability_plateau_evidence` suggests diminishing returns at the frontier, reinforced by the `ai_investment_collapse`, which forces major labs to scale back training runs. Yet, the `openweight_frontier_release` delivers a shock: a powerful open model, developed quietly over prior turns and now functionally near the closed frontier, spreads globally within weeks. `openweight_capability` rises to 47.0—reflecting both the release of pre-existing advanced weights and rapid adoption—closing the gap significantly but remaining below `ai_capability`. This growth is substantial but constrained by the need for deployment infrastructure and trust, preventing an instantaneous leap to parity.
+
+### Cyber Shield Completes, But Gaps Persist  
+The EU’s Cyber Shield for Critical Operators becomes law, mandating detection and reporting standards across energy, water, and ports. A +4 boost to `resilience` reflects this milestone. However, uneven rollout—especially in Southern Europe—limits immediate impact. The Digital Europe Programme accelerates funding, but grid and staffing delays persist.
+
+### New Threat Demands Measured Response  
+In response to distributed risk, the EU initiates planning for the Open-Weight Incident Response Corps (OWIRC), a proposed rapid-response unit under ENISA-Europol coordination. It aims to detect, contain, and attribute misuse of powerful open models. However, legal and operational hurdles delay full launch: cross-border jurisdiction and private-sector cooperation remain unresolved. The initiative is scoped this turn but not yet operational, avoiding immediate portfolio overload.
+
+### Political Capital Strained  
+Despite completing Cyber Shield for Critical Operators (+4 to `eu_political_capital`), the portfolio remains heavy: five measures in flight cost −15. The planning phase of OWIRC does not yet add to this burden, as it is not formally launched. The proposal bonus for European AI Security Partnership (cat 8, large) is applied from prior turn. Net gains are offset by fallout from `backlash_physical` and `campaign_backlash`, which erode public trust. Labour protests in France and Spain, linked to AI-driven job cuts, deepen skepticism. `public_sentiment` dips to 34.0.
+
+### Sovereignty Under Pressure  
+`eu_ai_sovereignty` falls to 21.0. The `ai_investment_collapse` undermines the Tech Sovereignty Package, forcing reliance on public co-investment. Access to frontier compute weakens, and no new domestic capacity comes online. The `export_control_escalation` further restricts chip supplies, compounding dependence. The EU’s diplomatic leverage, while active, has not yet translated into secured access.

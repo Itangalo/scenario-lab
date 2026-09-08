@@ -1,0 +1,32 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Maintain sovereign access to AI systems capable of executing critical public functions — including healthcare, energy, and border security — independent of third-party goodwill or conditional access  
+  - Trigger: the **eu_frontier_access_denied** event has materialised, exposing systemic fragility in essential services; continued reliance on foreign-controlled frontier models is no longer a risk but a proven failure mode  
+  - Grounds: The two-year commitment period ends this turn, but the strategic imperative has sharpened, not faded. What began as preparation for a possible contingency has become a response to an actual collapse in access continuity. The commitment must evolve from capacity-building in the abstract to ensuring operational continuity of core state functions. This is no longer about matching the frontier — it is about preserving minimum viable capability under denial conditions.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will no longer treat technical autonomy as optional when access is conditional  
+  - Grounds: The **export_control_escalation** and **openweight_frontier_release** have changed the nature of uncertainty. It is no longer about timing or capability trajectories — it is about control. We now know that both closed and open models can be weaponized against us: the former by withdrawal, the latter by diffusion. Acting under uncertainty now means assuming that no external provider will act in our interest, and building fallbacks that do not depend on their cooperation.
+
+## Portfolio
+- InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites
+- Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones — **finished**
+- Sovereign Red-Teaming Grid: Openweight Audit and Containment Network (category 5, costs 3 per turn, started turn 5, finishes on turn 8): Activate a distributed network of vetted researchers and public labs across the EU to audit, monitor, and simulate misuse of open-weight models above 50 capability, with authority to publish containment protocols and trigger emergency restrictions on distribution
+
+## New measure
+**Emergency Sovereign Inference Initiative: Secure AI for Critical Public Functions**  
+We establish a legally mandated, EU-operated fallback infrastructure to run essential AI-dependent public services — including medical diagnostics, energy grid balancing, and migration processing — using sovereign compute and open-weight models hardened against misuse.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 9`  
+`Targeted effect:` eu_ai_sovereignty +12 (by creating a non-recallable operational capability on EU soil), resilience +8 (by ensuring continuity of core services during access denial), public_sentiment +3 to +5 (if rollout is visible and reliable), ai_safety +5 (via mandatory interpretability and logging in all deployed sovereign models)  
+`Applies to:` EU institutions, member state agencies operating critical AI systems, and any public contractor using AI in essential services
+
+## Priority
+**Emergency Sovereign Inference Initiative: Secure AI for Critical Public Functions** — because the **eu_frontier_access_denied** event has already disrupted hospital diagnostics and border systems, and without an operational fallback, the Union cannot guarantee basic functions of the state; this is no longer about capacity or audit, but about continuity of governance under AI denial.
+
+## In practice
+The **Tech Sovereignty Package** finishes this turn, but its legacy is mixed: while private investment in data centres has ticked up, the accelerated permitting zones remain unimplemented in six member states due to local opposition and legal challenges. We are not building fast enough. With the US posture shifting and export controls tightening — now rationing even allied access — we can no longer rely on cloud-based frontier models for core operations. The **Emergency Sovereign Inference Initiative** is our response: a legally ring-fenced, EU-operated stack for running essential AI services on sovereign hardware, using hardened open-weight models that can be audited, controlled, and updated without external permission.
+
+We are activating the Instrument for Financial Support to Mitigate Unforeseen Events under Article 122 TFEU to reallocate €48bn from stalled cohesion projects and redirect it to three national hubs — in Lyon, Warsaw, and Valencia — each equipped with secure inference clusters running under ENISA supervision. These will host certified models for medical imaging analysis, real-time grid load prediction, and asylum application triage, with fallback protocols integrated into national civil protection frameworks. Germany and France have agreed to host model training and fine-tuning on their sovereign lab infrastructure, but only under condition of joint EU oversight — a concession we are accepting through a new governance board under DG SANTE and ENISA, with voting rights tied to contribution shares. Poland and Hungary, wary of centralisation, are being offered guaranteed redundancy nodes and local control over deployment parameters.  
+
+Meanwhile, the **Sovereign Red-Teaming Grid** enters its second phase: Austria and Finland have delivered their first simulation environments, and we are on track to publish the first EU-wide containment protocol for autonomous cyber agents by turn 7. But simulations are not enough. When hospitals lose AI diagnostics and border queues back up for days, the public does not care about audit frameworks — they care about function. This turn, we shift from preparation to operationalisation. The Gigafactories continue construction, but until they deliver, we must make do with what we can secure now. The Emergency Sovereign Inference Initiative is that bridge — not to parity, but to survival.

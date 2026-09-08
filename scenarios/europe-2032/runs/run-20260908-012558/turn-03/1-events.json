@@ -1,0 +1,27 @@
+[
+  {
+    "id": "emergent_labour_displacement_wave",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "Widespread job losses in administrative, legal support and mid-level software roles become visible across multiple EU member states, driven by AI systems replacing junior staff in law firms, corporate back offices and public administration. Media coverage intensifies, with regional protests and union demands for moratoriums on AI-driven hiring freezes.",
+    "probability_samples": [
+      0.35,
+      0.3,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A coordination framework among the Union and other middle powers holding pieces of the AI supply chain — export-licence alignment, joint bargaining over compute access, shared evaluation capacity. Nobody cedes sovereignty to it, but together its members can withhold things even the great powers need. It counts as securing access on the terms of metric rule 5, and moves `eu_political_capital` on the terms of metric rule 6.",
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

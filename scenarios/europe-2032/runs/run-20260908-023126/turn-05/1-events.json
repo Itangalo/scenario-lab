@@ -1,0 +1,30 @@
+[
+  {
+    "id": "member_state_defection",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.0,
+      0.13,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_displacement_wave",
+    "probability": 0.19999999999999998,
+    "emergent": true,
+    "description": "Widespread automation in logistics and administrative sectors across multiple member states leads to visible job losses, with regional unemployment spikes and early retirement waves. The effect is not yet systemic, but it becomes a dominant theme in local media and labour union actions, feeding into political narratives around AI-driven inequality.",
+    "probability_samples": [
+      0.0,
+      0.35,
+      0.25
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "election_alliance",
+    "probability": 0.331111
+  }
+]

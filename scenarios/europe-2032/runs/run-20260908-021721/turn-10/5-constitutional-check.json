@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 63.0 to 73.0 (+10.0) in one turn, which is within the 25-point cap, but the jump is implausible given the metric's nature as an accumulated capability that cannot fall and must grow gradually. More critically, the narrative provides no justification for such a sudden leap in open-weight model performance, especially while closed systems (ai_capability) only rose by 3.0. Given that openweight_capability must not exceed ai_capability and is generally constrained by slower, distributed progress, a 10-point leap without explanation (e.g., a major open release or coordinated scaling event) violates the spirit and modelling expectations of Invariant 2.\n- Modelling Choice 5 violated: The EU introduces two new measures in one turn — the completion and folding of SAM-CAL (implying closure and re-scoping) and the launch of SAVF as a new large measure. While SAM-CAL is described as completing, the narrative introduces SAVF as a new, distinct, and large-scale initiative. The notepad records SAVF as a new charge (−3), indicating it is a new measure. This constitutes introducing a new measure while also concluding and restructuring another major one, which together exceed the \"at most one new measure per turn\" rule. Even if SAVF is framed as a successor, it is a distinct regulatory framework under Article 114 TFEU and counts as a new measure.\n- Modelling Choice 9 potentially violated: While no metric moves more than 25 points, `openweight_capability`'s +10.0 increase lacks grounding in the narrative or prior trend. The rule allows movements up to 25 points but requires that movements within the allowed ranges still respect the underlying metric rules and plausibility. A +10 jump in openweight_capability with no mention of a major model release, training run, or open collaboration is unexplained and risks violating the realism expected under the constitution, especially when closed systems only advanced by +3.0."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

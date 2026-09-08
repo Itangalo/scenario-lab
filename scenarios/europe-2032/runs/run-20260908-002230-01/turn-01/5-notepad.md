@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield −3, priority −1 = −10  
+PROPOSAL BONUS: Cyber Shield (cat 6, large) +3 — cyber_test_shot landed this turn and this answers it directly  
+LEGITIMACY LENDS: capital 43, sentiment 44 -> +1  
+SOVEREIGNTY: 22 last turn, no capacity event, InvestAI Gigafactories in flight +1, capability rose 2.5 −1 = 22 → but eu_ai_sovereignty falls to 21 due to unresolved access erosion from unlisted export control friction (−1) not captured in formal events  
+US_POSTURE: not yet determined (to be resolved turn 5)  
+emergent_regional_cyber_collective -- first noted turn 1, listed in 1 turn(s) so far: In response to the confirmed intrusion in EU grid operators and the global reach of the cyber_test_shot, several member states initiate talks on a permanent joint cyber defence cell with shared threat intelligence and rapid-response protocols. The initiative gains urgency as national agencies admit gaps in cross-border coordination, and a draft framework is circulated by December 2026.  
+emergent_cyber_defence_initiative -- first noted turn 1, listed in 1 turn(s) so far: Defensive tooling closes the gap for a whole class of attack – automated patching at the speed vulnerabilities are found, or detection that catches swarm behaviour rather than signatures – and the offence-defence balance visibly shifts back for the first time in years.

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 52.0 to 59.0 (+7.0) in one turn, which exceeds the maximum plausible growth rate for this metric. While the constitution allows `openweight_capability` to rise or stay flat, such a large jump lacks justification given the prior trend and absence of narrative explanation for sudden distributed model deployment at scale. No catastrophic physical destruction has occurred, so the non-decreasing rule applies strictly, but rapid increases still require grounding in supply, dissemination, and adoption timelines.\n- Modelling choice 5 violated: The EU introduces the \"Sovereign Compute Surge\" as a new measure while already having an ongoing priority (Emergency Biocontainment Programme). Naming another priority (\"Sovereign Compute Surge\" as category 4, large) violates the rule that the EU may have at most one named priority per turn. The notepad confirms the Emergency Biocontainment Programme is still active with a charge of −3, so no rotation of priority is permitted.\n- Economic Constraint violated: The Sovereign Compute Surge is described as a large-scale infrastructure programme involving exascale clusters, energy guarantees, and legal obligations, yet no funding source is identified. High-cost measures require minimum two-turn implementation and must be justified by available fiscal capacity or borrowing; neither is mentioned here, especially critical given `eu_political_capital` is only 7.0 and legitimacy cannot lend support."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

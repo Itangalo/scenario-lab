@@ -1,0 +1,250 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9819678836809651,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.08333333333333333,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5326203404654688,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.0070641575218697295,
+    "triggered": true
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2047049499670991,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.016942116933417628,
+    "triggered": true
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.20852774325543022,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8555585651891312,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.16333333333333333,
+    "probability_samples": [
+      0.13,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6161996988880005,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.15666666666666668,
+    "probability_samples": [
+      0.14,
+      0.19,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9481691078380917,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.04,
+    "probability_samples": [
+      0.06,
+      0.0,
+      0.06
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.10715195485234064,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4335368609156781,
+    "triggered": false
+  },
+  {
+    "id": "emergent_international_ai_audit_initiative",
+    "probability": 0.04,
+    "emergent": true,
+    "description": "A coalition of middle powers and neutral states, alarmed by the opacity of frontier AI development and repeated loss-of-control near-misses, launches a voluntary international audit framework for high-capability models. The initiative offers technical support and liability protections in exchange for transparency, aiming to establish baseline verification norms outside the U.S.-China duopoly. Participation remains limited initially, but it creates a new diplomatic vector for states excluded from both major blocs.",
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.10475599500075339,
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_firmware_supply_chain_compromise",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "Security researchers uncover a sophisticated, AI-generated firmware-level backdoor embedded in network hardware shipped globally over the past six months. The compromise evaded traditional inspection by using generative design to mimic legitimate code structure and timing. Its purpose appears to be persistent access and lateral movement preparation, suggesting a major state actor is pre-positioning for future cyber operations. The discovery triggers urgent recalls and a crisis of confidence in global hardware supply chains.",
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.1850907639373579,
+    "triggered": false
+  },
+  {
+    "id": "emergent_eu_defensive_cyber_corps",
+    "probability": 0.08,
+    "emergent": true,
+    "description": "In response to repeated cyber incidents and the failure of the Sovereign Assurance Stack to gain traction, a coalition of technically capable member states — led by France, Germany, and the Netherlands — begins forming a joint defensive cyber corps outside formal EU structures. This initiative pools red teams, automated patching systems, and real-time threat intelligence, bypassing Brussels' coordination delays. The move is framed as pragmatic but deepens the divide between core and peripheral members.",
+    "probability_samples": [
+      0.0,
+      0.24,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_open_source_aisafety_framework",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "A distributed collaboration among European academic labs, independent auditors, and disillusioned industry engineers releases a minimal but functional open-source framework for monitoring AI reasoning in deployed systems. Though limited to models below 55.0 capability, it gains rapid adoption by public-sector operators desperate for transparency. The tool does not close the safety gap but proves that distributed efforts can produce tangible assurance tools despite institutional stagnation.",
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_international_ai_safety_consortium",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "In response to the repeated loss of control and opaque reasoning incidents, a coalition of non-aligned scientific institutions and middle powers forms an International AI Safety Consortium, aiming to establish shared monitoring protocols and emergency intervention frameworks for frontier models. The initiative gains momentum as several major labs, under public pressure, agree to limited data-sharing on anomaly detection.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_refugee_crisis",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "As AI-driven automation accelerates job displacement in Southern and Eastern Europe, and with public-sector retraining programs overwhelmed, a growing number of skilled workers begin migrating to regions with stronger AI integration and labor demand, creating political tension over 'AI refugee' flows within the Schengen area and prompting emergency debates on mobility and social support.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

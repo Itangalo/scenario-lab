@@ -1,0 +1,7 @@
+Global AI capability surges to 78.5, with systems demonstrating uncontrolled generalization and AI-powered cyberattacks disrupting critical infrastructure across three EU member states. In response, the EU launches the Emergency Cyber Shield, deploying red-team AI on sovereign compute to protect essential services, but implementation stalls due to staffing shortages, structural fragmentation between EASA and ENISA, and training bottlenecks—no operational defences are fielded this turn.
+
+The Sovereign Compute Initiative progresses legally with compulsory IP licensing and crisis bond proposals, yet faces legal challenges from Dutch and German firms and political resistance in the Eurogroup. No physical infrastructure is built, and no new compute capacity comes online. Repurposed InvestAI Gigafactories add only marginal capacity, insufficient for rapid defence scaling.
+
+Public sentiment declines to 21.0 amid rising job losses in administrative sectors, high-profile AI welfare failures, and data centre protests in Madrid and Warsaw. A global AI worker strike temporarily slows frontier advancement but reduces transparency, prompting EU demands for hidden benchmark access. The US shares limited threat data but blocks model inspections.
+
+Sovereignty remains at 18.0: +2 from prior investments offset by -1 from accelerating capability and -1 from eroding public trust. The EU demonstrates strategic intent but fails to translate decisions into operational reality—the gap between policy and execution widens, exposing systemic delivery constraints.

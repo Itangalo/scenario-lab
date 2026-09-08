@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Modelling choice violated (Constraint 5): The narrative introduces both a new measure (\"Emergency Activation of the EU AI Incident Response Framework\") and names it as a priority, resulting in two charges under the PORTFOLIO CHARGE line: one for the measure (−3) and one for the priority (−1). This constitutes introducing a new measure *and* naming a priority in the same turn, which violates the constitutional rule that \"at most one new measure per turn, and at most one named priority\" is allowed. The fact that they are part of the same initiative does not negate the violation—only one of these actions is permitted per turn.\n- Narrative telegraphing violated (Constraint 8): The narrative states \"bio_uplift_findings -- first noted turn 9, opens bio gate for next 3 turns\" and \"eval_anomaly_reports -- ... opens capability gate for next 1 turn and control gate for next 2\", which are forward-looking statements about open event gates. While gate states are tracked internally, explicitly referencing their duration (\"next 3 turns\") in the notepad or narrative telegraphs future possibilities and violates the prohibition on implying or stating that an event gate is open with known duration. This belongs solely in event evaluations, not in the narrative or notepad as written."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

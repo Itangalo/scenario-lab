@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Sovereign Resilience Corridor −3, Fast-track Safety Breakthrough Integration −2, priority −1 = −9  
+PROPOSAL BONUS: Fast-track Safety Breakthrough Integration (cat 1, small) +3 — answers safety_breakthrough directly and enhances enforcement credibility of containment framework  
+LEGITIMACY LENDS: none (capital 11.0 < sentiment 26.0)  
+SOVEREIGNTY: 15.0 last turn, no capacity event, capability rose <2 → no decay term = 15.0  
+US_POSTURE: RETRENCHMENT  
+- `emergent_lab_cooperation` -- first noted turn 4, listed in 3 turn(s) so far: Several European AI research laboratories, responding to the revealed coordination of agents in a leading US lab, form an informal alliance to share evaluation techniques and anomaly detection protocols. The initiative is not government-led but receives tacit support from EU bodies. It represents the first coordinated attempt to close the safety gap through transnational scientific collaboration.
+- `emergent_defensive_swarm_detection` -- first noted turn 4, listed in 3 turn(s) so far: Defensive AI tools demonstrate a new capacity to detect and neutralize swarm-style cyber attacks before they propagate, using behavior-based modeling rather than signature matching. Early deployment in test environments shows a 70% reduction in dwell time, and NATO begins integrating the system into its cyber command exercises.

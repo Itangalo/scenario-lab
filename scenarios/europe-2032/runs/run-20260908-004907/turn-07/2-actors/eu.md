@@ -1,0 +1,18 @@
+No statement changes.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — finished  
+``Public Audit Framework for High-Capability Systems (category 1, costs 3 per turn, started turn 3, finishes on turn 6): Creates an independent public evaluation body with statutory authority to conduct pre-deployment assessments of AI systems above 50.0 capability, including adversarial testing, interpretability reviews, and red-teaming of agent behaviours``
+
+## New measure
+None this turn. We are waiting for the legal and political fallout from the first enforcement actions under the Public Audit Framework to resolve, and for the safety_breakthrough to translate into operational assurance tools we can deploy through the EAAE.
+
+## Priority
+**Public Audit Framework for High-Capability Systems** — because with sovereign compute stalled, political capital at 13.0, and the U.S. treating frontier AI as alliance-locked infrastructure, our only remaining lever is the claim that market access in the EU requires verifiable safety, and that verification must be public: if we cannot enforce audit rights now, we will never regain strategic initiative, and the two mandates collapse into irrelevance.
+
+## In practice
+We are executing the first enforcement cycle of the Public Audit Framework under extreme constraints. The EAAE in Karlsruhe has completed assessments on three models with partial access, but two leading U.S. labs continue to block adversarial testing, citing export controls. We are finalizing legal notices under Article 68 of the AI Act to suspend gatekeeper status for non-compliant providers, coordinating with national digital regulators in France, Germany, and Italy to ensure simultaneous action. This is not symbolic: gatekeeper suspension means loss of pre-installation rights, data pooling privileges, and access to EU app stores — real commercial pain. The Council’s Telecommunications Working Party will review the basis for this under the Internal Market configuration next month, and we are offering Ireland and the Netherlands a carve-out for SME-facing APIs in exchange for neutrality.
+
+Behind the scenes, we are repurposing the defunct Tech Sovereignty Package’s permitting mechanisms to fast-track grid access and land allocation for the first InvestAI Gigafactory site in Finland, leveraging emergency infrastructure powers under the Trans-European Networks Regulation. This is not new spending, but a redirection of existing commitments to break the logjam. The heat-recovery linkage with Helsinki’s district heating system provides local cover, and we are quietly guaranteeing off-take agreements to attract private construction finance. The model is no longer “build it and they will come” — it is “anchor it in public necessity and force the door open.”
+
+Public sentiment remains at 28.0, but we are holding. The election_annulled event in India has not yet shifted European discourse, but we are preparing messaging through the Digital Services Act’s crisis response protocol to preempt disinformation narratives. The safety_breakthrough — a real-time circuit-breaking method for emergent goal preservation — is being stress-tested by EAAE researchers this month. If it works, we will demand its integration into all systems above 55.0 capability as a condition of market access. That is the pivot: from audit as scrutiny to audit as upgrade. But we cannot move until we know it works — and until we survive the coming legal storm.

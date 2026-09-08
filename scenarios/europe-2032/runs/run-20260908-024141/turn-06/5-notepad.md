@@ -1,0 +1,7 @@
+- `emergent_asml_boardroom_revolt` -- first noted turn 4, listed in 3 turn(s) so far: Senior executives at ASML intensify their legal campaign to resist U.S. pressure on export controls, citing Dutch sovereignty and EU industrial policy. The dispute leaks more widely, straining transatlantic relations and prompting the European Commission to consider emergency measures to assert control over dual-use technologies. This development escalates as a direct consequence of ongoing export control tensions and the EU's weak sovereignty position.
+- `emergent_labour_displacement_wave` -- first noted turn 4, listed in 3 turn(s) so far: The wave of AI-driven labour displacement accelerates, now affecting mid-level professionals in legal, radiology, and software sectors across multiple member states. National labour ministries issue coordinated warnings, and regional protests emerge over retraining delays. The issue gains traction in public discourse, feeding into political debates ahead of the 2028 U.S. election cycle and increasing pressure on the EU to respond with structural reforms.
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Sovereign Inference Initiative −3 (finished), Tech sovereignty package −3 (finished), priority −1 = −10
+- PROPOSAL BONUS: none
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 18.0 last turn, no capacity event, Sovereign Inference Initiative finishes t6 +0 (not category 4), capability rose 6 −1 = 17.0 → adjusted to 16.0 due to member state non-compliance undermining effective control
+- US_POSTURE: RETRENCHMENT

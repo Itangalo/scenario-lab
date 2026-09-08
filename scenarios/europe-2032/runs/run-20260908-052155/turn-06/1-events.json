@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.21666666666666667,
+    "probability_samples": [
+      0.09,
+      0.28,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_regional_aid_consortium",
+    "probability": 0.24,
+    "emergent": true,
+    "description": "Several Central and Eastern European member states, frustrated by the slow pace of EU-wide AI sovereignty initiatives, form an informal consortium to jointly procure and deploy defensive AI tools for critical infrastructure. The group operates outside formal EU structures but coordinates with ENISA, creating a parallel resilience-building track that gains quiet support from national security agencies.",
+    "probability_samples": [
+      0.22,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  }
+]

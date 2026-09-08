@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, SOEF −3, JCDC −3, Sovereign Model Development Programme −3, priority −1 = −16  
+PROPOSAL BONUS: Sovereign Model Development Programme (cat 4, large) +3 — answers eval_anomaly_reports and openweight_frontier_release directly  
+LEGITIMACY LENDS: capital 29, sentiment 34 -> +2  
+SOVEREIGNTY: 19 last turn, no capacity event, InvestAI Gigafactories in flight +1, capability rose 3.5 −1, member_state_defection t3 −1 ongoing (no new event) = 18  
+US_POSTURE: not yet determined (to be resolved turn 5)  
+emergent_joint_cyber_command -- first noted turn 4, listed in 1 turn(s) so far: Several member states deepen coordination on cyber threat intelligence and joint response protocols following repeated attacks, formalizing commitments made during the emergent_regional_cyber_collective initiative. The framework includes shared telemetry, red-teaming exercises, and a standing alert system, though full operational integration remains limited by national sovereignty concerns.  
+emergent_civil_disobedience_wave -- first noted turn 4, listed in 1 turn(s) so far: Growing public concern over AI-driven job losses and opaque decision-making in public services fuels organized civil disobedience against new AI infrastructure projects. Activists target data centre expansions and smart city initiatives, combining legal challenges with direct actions such as sit-ins and digital protests, straining local authorities and raising questions about social license for AI deployment.

@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Establish public right to explanation and redress −3, Mandate real-time incident telemetry −3, priority −1 = −7  
+PROPOSAL BONUS: Mandate real-time incident telemetry (cat 6, large) +4 — cyber_major_incident landed this turn and this directly answers it  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20.0 last turn, Gigafactories finish t7 +5, capability rose 1.5 −1, no capacity event = 25.0  
+US_POSTURE: ALLIANCE  
+emergent_international_ai_safety_conference -- first noted turn 7, listed in 1 turn(s) so far: In response to growing global concern over unchecked AI capability growth and repeated safety failures, a coalition of non-aligned states and scientific institutions convenes an emergency international conference on AI safety, hosted in Geneva. The event draws major research labs, independent auditors, and civil society groups, aiming to establish baseline transparency norms for training runs and incident reporting—outside the control of any single superpower.  
+emergent_eu_public_sector_strike -- first noted turn 7, listed in 1 turn(s) so far: Following the AI welfare scandal and widespread perception of automated systems undermining public service integrity, unions representing civil servants in France, Germany, and Italy announce coordinated strike actions demanding a moratorium on AI deployment in social services until redress mechanisms are fully implemented and audited. The strikes threaten to disrupt administrative functions across key EU institutions during a period of low political capital and high public tension.

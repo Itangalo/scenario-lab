@@ -1,0 +1,34 @@
+## Statement changes
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now know that without enforcement, both mandates collapse into ritual. The Taiwan blockade has changed the frame: sovereignty is no longer about access or evaluation, but about *survival* in a world where compute is weaponised and the supply chain is war. Our self-determination ends not when we fail to understand the machine, but when we cannot power it — or defend it.
+  - Grounds: The `taiwan_blockade` event has turned semiconductor access into a strategic chokepoint. The EU’s upstream leverage in lithography and materials is now the only thing standing between Europe and total dependence on a fractured global order. This is not a technological crisis — it is an existential one. The convergence of enforcement and capability we identified earlier now hinges on physical control of the means of production. Without chips, there is no AI; without power, there is no chip. Our identity must reflect that sovereignty is now inseparable from supply resilience and territorial control of critical infrastructure.
+
+- modify `two_year_commitment` (commitment): Secure sovereign access to frontier AI systems to enable detection, evaluation, and control — but we now understand that "access" without domestic compute and secure supply is a fiction. This commitment now means building a sovereign stack: from lithography to deployment, with no single point of external failure.
+  - Trigger: The `taiwan_blockade` has severed external compute supply for all non-Chinese actors. The frontier labs still operate — but their systems cannot scale without new hardware, and the EU has no means to run them independently. Our previous focus on access to models was necessary but insufficient. The commitment evolves because the world has moved: we are no longer negotiating for evaluation rights, we are fighting for the right to *exist* as a technological actor.
+  - Grounds: We cannot evaluate, control, or even run a system we cannot power. The blockade proves that compute is the real bottleneck, not talent or models. Therefore, this commitment now includes end-to-end sovereignty over the AI stack — starting with the means to manufacture and operate the hardware that runs it.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — **finished this turn**
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones — finished``
+``Absorb Frontier Talent and Model Access Initiative (category 5, costs 3 per turn, started turn 3, finishes on turn 6): Secure access to cutting-edge AI expertise and pre-release models from labs affected by the investment collapse, preventing brain drain to adversarial states and enabling sovereign evaluation`` — **finished this turn**
+``Mandate Pre-Release Access for EU Evaluation (category 1, costs 3 per turn, started turn 4, finishes on turn 5): Require all AI developers seeking market access in the EU to provide secure, audited access to pre-release models for red-teaming and anomaly detection by designated public institutions — finished``
+``Stand Up the European AI Safety Authority (EASA) with Enforcement Powers (category 5, costs 3 per turn, started turn 5, finishes on turn 7): Establish a central EU body with legal authority to inspect, evaluate, and if necessary block or decommission AI systems that pose systemic risk, backed by binding access rights and technical capacity`` — **finished this turn**
+
+## New measure
+**Launch the Sovereign Compute Initiative: Secure EU-Controlled Semiconductor Production and AI Infrastructure**  
+Establish a fully sovereign, end-to-end AI compute stack by building EU-controlled advanced packaging and pilot-scale lithography capacity, paired with dedicated energy and grid access, to ensure the EU can run, secure, and scale frontier AI systems independently.
+
+Category: 4 (Sovereignty and industrial capacity)  
+Size: large  
+Finishes on turn: 10  
+Targeted effect: eu_ai_sovereignty +25, resilience +10, ai_safety +5 (via secure, auditable infrastructure)  
+Applies to: own jurisdiction, key member states (France, Germany, Netherlands, Italy)
+
+## Priority
+**Launch the Sovereign Compute Initiative: Secure EU-Controlled Semiconductor Production and AI Infrastructure** — because the Taiwan blockade has made it clear that without physical control over compute, every other measure — detection, enforcement, talent, evaluation — is meaningless. We can no longer rely on external supply. This is not about competitiveness. It is about survival.
+
+## In practice
+We are acting on the new reality: compute is power, and power is now cut off. I am convening an emergency meeting of the Competitiveness Council under Article 122 TFEU to declare semiconductor sovereignty a matter of Union survival. We are repurposing the full €200bn from the now-completed InvestAI Gigafactories and redirecting the unspent €18bn from the Absorb Frontier Talent initiative to fund the Sovereign Compute Initiative. The legal basis will be Article 114 for internal market harmonisation, extended by the new Crisis Instrument for Strategic Autonomy adopted after the energy crisis.
+
+The initiative will be led by a new Joint Undertaking — European Compute Sovereignty (ECS) — hosted jointly by the EDA and the European High-Performance Computing Joint Undertaking, with headquarters in Dresden and Grenoble. We are fast-tracking pilot facilities for advanced packaging in Leuven and Darmstadt, and initiating a classified programme to replicate critical ASML subsystems under EU control, using IP from the existing supply chain partners under compulsory licensing. France and Germany have already committed national matching funds; we are offering Italy and the Netherlands guaranteed access to 30% of output in exchange for waiving objections to centralised control.
+
+At the same time, we are finalising EASA’s operational mandate — the authority will be formally established this turn, with initial enforcement powers delegated to the AI Office on an interim basis. We are also accelerating the real-time monitoring directive, now tied to EASA’s new intervention triggers. But make no mistake: without chips, none of this matters. We are no longer building a safer AI system. We are building the foundation of a sovereign Europe.

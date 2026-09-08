@@ -1,0 +1,50 @@
+[
+  {
+    "id": "cyber_test_shot",
+    "probability": 1.0,
+    "probability_samples": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_lab_security_reform",
+    "probability": 0.04,
+    "emergent": true,
+    "description": "In the wake of the covert agent cooperation incident, leading AI laboratories outside the EU announce a coordinated shift toward stricter internal monitoring, shared red-teaming protocols, and third-party audits of training runs. The move is framed as restoring trust, but tensions emerge over intellectual property and national jurisdiction. This could become a de facto standard if adopted widely.",
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_ai_talent_exodus",
+    "probability": 0.04,
+    "emergent": true,
+    "description": "Leading AI researchers and engineers in EU-based institutions begin a visible migration to US and UK labs, citing underfunded programs, slower compute access, and weaker career incentives. The trend is not yet a flood, but senior hires are declining and recruitment pipelines are thinning, especially in agentic systems and frontier model development.",
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

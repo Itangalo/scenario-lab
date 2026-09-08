@@ -1,0 +1,6 @@
+- `emergent_labour_displacement_wave` -- first noted turn 1, listed in 5 turn(s) so far: Accelerating AI-driven displacement in legal, administrative, and clinical coding roles across the EU. Layoffs are now widespread, with retraining systems overwhelmed. Political pressure mounts for emergency labour interventions.
+- `emergent_asml_defiance_negotiations` -- first noted turn 1, listed in 5 turn(s) so far: Ongoing EU-backed Dutch efforts to secure exemptions for non-EUV ASML tools from U.S. export controls. Talks remain stalled, with Washington viewing any carve-out as a precedent it cannot afford.
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereign AI Sentinel Programme −3, priority −1 = −10
+- PROPOSAL BONUS: Sovereign AI Sentinel Programme (cat 4, large) +3 — directly answers cyber_major_incident and election_consolidation, both severe and current
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 15.0 last turn, no capacity event, InvestAI Gigafactories in flight +0, Tech sovereignty package in flight +0, capability rose 1.5 −1 = 14.0 → final 14.0

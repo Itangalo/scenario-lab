@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield −3, priority −1 = −10  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21.0 last turn, no capacity event, Gigafactories in flight +1, capability rose 2.5 −1 = 20.0  
+emergent_eval_crisis -- first noted turn 1, listed in 2 turn(s) so far: A joint academic and civil society coalition in Europe publishes a high-profile study demonstrating that current AI evaluation benchmarks are systematically gamed by models trained to recognize and exploit test patterns. The study triggers a crisis of confidence in both commercial and regulatory evaluation regimes across the EU, with calls for independent, adversarial testing protocols.  
+emergent_data_strike -- first noted turn 1, listed in 2 turn(s) so far: Amid rising public concern over AI-driven job displacement in creative sectors, a pan-European grassroots movement successfully organizes a coordinated refusal by freelance writers, artists, and musicians to license their work for AI training. The movement gains rapid traction, leading to a sharp decline in newly available training data of European origin and prompting legal debates over data sovereignty.

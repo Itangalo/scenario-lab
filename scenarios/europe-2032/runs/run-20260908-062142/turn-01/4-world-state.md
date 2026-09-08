@@ -1,0 +1,11 @@
+### Accelerating Capability, Lagging Control  
+The global AI frontier advances rapidly, with capability rising to 54.0 as leading labs compress release cycles and deploy more autonomous agents. Offensive cyber tools derived from frontier models proliferate silently. The open-weight frontier sees modest gains: Kimi K3’s release improves accessibility and transparency, lifting openweight_capability to 41.0. While the model is widely adopted, its weights are not fully repurposed at scale within this turn, limiting immediate impact.
+
+### The Shield Begins — But So Does the Pushback  
+The EU announces intent to launch Cyber Shield for Critical Operators (CS-CO), a large category 6 measure, in response to the cross-border intrusion discovered in autumn. Drafting begins under Article 114 TFEU, with ENISA initiating scoping for AI-specific threat standards. However, no binding requirements are adopted yet, and implementation remains in early stages. Germany and Poland raise concerns about the burden on national CERTs, while Mediterranean port authorities highlight delays in digital upgrades. The proposed €15bn in co-funding remains under negotiation, softening but not resolving opposition. Due to existing policy commitments, the EU does not formally launch CS-CO as a new measure this turn; preparatory work continues under the umbrella of the ongoing Tech Sovereignty Package.
+
+### Sovereignty Erodes, Capital Tightens  
+Despite ongoing compute investments, eu_ai_sovereignty dips to 21.0 as the capability gap widens faster than domestic capacity grows. The cyber_test_shot exposed systemic fragility, and no new sovereign capacity comes online this turn. eu_political_capital declines to 45.0, reflecting a moderate cost of −3 for sustaining active measures and −1 for internal coordination strain, but avoiding deeper depletion due to continued public support for existing initiatives. The absence of a new measure launch prevents additional political cost. public_sentiment softens slightly to 40.0 due to growing unease over job displacement and infrastructure vulnerability.
+
+### A Bio Warning Ignored  
+The bio_uplift_findings spark debate in closed security circles, but no public action follows. The EU’s focus remains cyber, leaving bio preparedness unaddressed — a growing blind spot.

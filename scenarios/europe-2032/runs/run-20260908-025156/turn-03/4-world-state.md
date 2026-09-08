@@ -1,0 +1,11 @@
+### Cracks in the Foundation
+
+The European Commission pushed forward the **Enforceable Sovereignty Framework**, aiming to reclaim authority over member states’ foreign AI infrastructure deals after Hungary’s bilateral pact with a U.S. hyperscaler. Framed as a defence of strategic autonomy, the proposal mandated pre-approval for such agreements, backed by the threat of withholding cohesion and digital funds. France and the Nordics voiced support, but Germany and Poland pushed back fiercely, calling it an overreach of Brussels’ authority and a violation of national sovereignty. Talks stalled in the Economic and Financial Affairs Council, with no implementing acts adopted. The linkage of Labour Transition Shield funding and TEN-E grid approvals to compliance only deepened resentment, seen as coercive bargaining rather than partnership.
+
+Meanwhile, AI capability advanced to **58.0**, driven by tighter integration of multi-agent systems in software and logistics. No new safety evaluations were applied, and red-teaming gaps in autonomous reasoning persisted, pushing **ai_safety** down to **28.0**. The **cyber_defence_breakthrough**, however, offered rare good news: automated patching and swarm detection tools were rapidly adopted by Nordic and Dutch grid operators, improving threat response times and contributing to a modest resilience gain.
+
+The **Emergency Resilience Surge** benefited from this progress, with ENISA fast-tracking integration of the new defensive tooling into draft standards. Yet implementation remained patchy—Germany delayed adoption pending constitutional review, and Italy cited budget constraints. Still, the partial rollout lifted **resilience** to **42.0**.
+
+Public sentiment eroded further, hitting **37.0**, as strikes in Paris and Frankfurt expanded, now joined by civil servants protesting AI-driven restructuring. Media framed the Sovereignty Framework as a top-down power grab, deepening distrust. Political capital fell to **27.0**, strained by four large measures in flight and the backlash from member state tensions.
+
+**eu_ai_sovereignty** dropped to **17.0**, penalised by the continued rise in AI capability and the failure to counteract structural dependence, despite the symbolic force of the new measure.

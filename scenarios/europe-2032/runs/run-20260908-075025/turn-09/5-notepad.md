@@ -1,0 +1,6 @@
+US_POSTURE: ALLIANCE  
+PORTFOLIO CHARGE: Transatlantic AI Safety Accord −3, Open Safety Commons Programme −2, EU AI Watch and Respond Framework −3, priority −1 = −9  
+PROPOSAL BONUS: none — bio_uplift_findings did not constitute a major incident  
+LEGITIMACY LENDS: none — public_sentiment (31.0) ≤ eu_political_capital (27.0)  
+SOVEREIGNTY: 25.0 last turn, no capacity event, capability rose 1.5 −1 = 24.0 → no category 4 completion this turn, in-flight momentum not applicable → 25.0 (no change)  
+emergent_regulatory_recognition -- first noted turn 7, listed in 3 turn(s) so far: The European AI Act's conformity assessment process is formally recognised by three non-EU jurisdictions—Canada, South Korea, and Singapore—as equivalent to their own, triggering mutual recognition agreements for AI deployment. This marks the first time the EU's regulatory framework is treated as global infrastructure, increasing the soft power of its standards and creating de facto alignment in high-value markets.

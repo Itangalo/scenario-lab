@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Activate EU Jurisdictional Enforcement Units −2, priority −1 = −3  
+PROPOSAL BONUS: none — measure addresses structural gaps, not a recent event shock  
+LEGITIMACY LENDS: none (capital 6.0 < sentiment 21.0)  
+SOVEREIGNTY: 15.0 last turn, no category 4 completion, export_control_escalation t9 −2, capability rose 1.0 −1, in-flight enforcement +1 → 13.0  
+US_POSTURE: RETRENCHMENT  
+- `emergent_regional_compute_pact` -- first noted turn 9, listed in 1 turn(s) so far: Several EU member states, frustrated by the lack of centralized sovereignty progress, quietly begin forming a regional compute-sharing pact with Switzerland and Norway, pooling surplus government and research-grade GPU clusters for joint evaluation and red-teaming. The initiative bypasses stalled EU-wide frameworks but risks fragmenting oversight further.  
+- `emergent_ai_faultline_earthquake` -- first noted turn 9, listed in 1 turn(s) so far: A moderate earthquake strikes a major European data centre hub, triggering cooling failures and temporary outages across multiple facilities. The incident exposes geographic concentration risks in EU AI infrastructure and prompts emergency discussions about geographic redundancy in the Sovereign Resilience Corridor.

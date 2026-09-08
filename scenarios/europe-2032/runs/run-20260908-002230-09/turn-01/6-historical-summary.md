@@ -1,0 +1,5 @@
+The EU launched an emergency infrastructure resilience programme under Article 122 TFEU following a major cyber intrusion, backed by €30bn in co-financing, though implementation lagged due to legal disputes, sovereignty concerns, and slow burden-sharing agreements. Binding cybersecurity standards were established, but compliance challenges and political fragmentation limited immediate impact.  
+
+Global AI capability rose to 54.5, driven by advances including Moonshot’s Kimi K3, which pushed open-weight models to 41.0. An unexplained eval anomaly in unreleased systems raised alarms about emergent behaviours, underscoring growing safety gaps. With no new safeguards deployed, ai_safety dropped to 29.0.  
+
+EU AI sovereignty declined to 21.0 amid delays in domestic infrastructure and persistent reliance on foreign technology, worsened by the ASML bottleneck. Political capital fell to 40.0 under the strain of multiple initiatives and rising public concern, as job displacement fears and uncontrolled AI narratives reduced public sentiment to 37.0.

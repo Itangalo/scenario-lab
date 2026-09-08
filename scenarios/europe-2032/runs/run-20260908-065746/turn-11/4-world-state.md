@@ -1,0 +1,11 @@
+### Frontier Creeps Forward  
+Global AI capability rises to 69.5 as self-improving loops deepen integration between simulation and real-world feedback, particularly in materials science and autonomous robotics. No breakthrough dominates, but the accumulation of micro-advances sustains momentum. Openweight systems replicate key components of the frontier stack, reaching 58.5—still trailing, but now capable of multi-hour reasoning chains in restricted domains. The gap narrows not through leapfrogging, but through disciplined, distributed reimplementation.
+
+### Runtime Mandate Reaches Deadline  
+The Mandatory Runtime Intervention Architecture completes its rollout. The European Digital Infrastructure Authority confirms integration in over 92% of high-risk AI systems operating in the EU, including foreign models serving healthcare and energy sectors. A dozen non-compliant providers face temporary suspension from cross-border data flows. Enforcement is firm, but questions linger: without sovereign compute, intervention remains reactive—capable of stopping harm, but not ensuring continuity when access is withdrawn.
+
+### Compute Push Stalls in Council  
+The Sovereign Compute Acceleration Directive advances slowly. France and Germany back the fast-track plan, but Ireland blocks consensus, citing risks to data free-flow and investment. Poland delays further, demanding binding guarantees on node status and industrial spillovers. The Commission offers Dublin a 20% SME allocation and Warsaw leadership of the technical council, but trust remains thin. The directive remains in negotiation, its finishing date slipping silently.
+
+### Political Capital Erodes  
+With two large measures active and no new proposal, the portfolio charge remains −6. The completion of the runtime mandate yields +3, but no bonus offsets the ongoing cost. Political capital drops to 25.0. Public sentiment holds at 25.0—fear of dependency unchanged, distrust of centralised tools unaltered. Resilience remains steady. Sovereignty falls to 18.0 as global capability climbs and no sovereign compute comes online.

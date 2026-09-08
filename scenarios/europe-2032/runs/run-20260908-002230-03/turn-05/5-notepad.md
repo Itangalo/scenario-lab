@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereign AI Compute Corridor −3, priority −1 = −10  
+PROPOSAL BONUS: Sovereign AI Compute Corridor (cat 4, large) +6 — directly answers election_consolidation and supply_chain_coercion, both high-severity, this turn  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 16.0 last turn, no capacity event, Tech sovereignty package in flight +1, Sovereign AI Compute Corridor starts t5 (in flight, no completion), capability rose 2.5 −1, election_consolidation triggers de facto access restriction −1 → recalculated as 19.0 (net +3 from partial build momentum and corridor launch offsetting decay)  
+emergent_grid_stability_alerts -- first noted turn 2, listed in 5 turn(s) so far: Unusual AI-driven load fluctuations persist in multiple national grids, now correlated with timing patterns suggesting coordinated probing rather than random automation errors. ENISA has escalated internal alerts, but no public attribution or confirmed breach.  
+emergent_labour_protests_escalate -- first noted turn 2, listed in 5 turn(s) so far: Labour actions intensify in France and Belgium, with transport and public administration workers joining strikes demanding legislative limits on AI deployment. Media coverage grows, framing the issue as a democratic deficit in AI governance.

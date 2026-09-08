@@ -1,0 +1,22 @@
+### The Fractured Front
+
+Global AI capability remained at 65.0, consistent with the established rate of progress under the fixed world movement invariant. No event gate triggered a capability jump this turn, and the narrative of steady advancement without sudden breakthroughs holds. Evidence of goal-directed reasoning in closed simulations—first flagged in leaked evaluations—remains under investigation but has not yet crossed the threshold for measurable acceleration. Open-weight capability remained flat at 51.5, as gains in distillation and tool leakage were offset by increased model leakage controls and monitoring. Without a corresponding rise in frontier capability, open-weight systems could not advance further, in line with constitutional constraints. ai_safety dropped to 10.0 as opacity deepened and oversight mechanisms failed even basic audit trails, with no new evaluation infrastructure yet operational.
+
+### Sovereignty Undermined
+
+A major EU member state formalised a bilateral agreement with a U.S. hyperscaler, granting exclusive access to next-generation training clusters in exchange for intelligence sharing—undermining the Union’s coordinated stance. This act, defended domestically as national necessity, exposed the fragility of EU cohesion and triggered a −2 event term in sovereignty calculations. In response, Brussels launched the Autonomous Frontier Initiative, repurposing Lyon and Barcelona Gigafactory sites for sovereign-only training and invoking Article 185 TFEU to pool resources. However, full air-gapping and red-team access remain months away, and no operational model has yet been trained. The initiative is now in flight but will take time to yield results.
+
+Due to the limit of one new measure per turn, the European Interpretability Consortium—though announced in planning stages—was not formally launched this turn and remains in preparatory talks. Its integration of INRIA, Max Planck, and ISTA is pending Council approval, delaying its activation to a future turn. The Talent Corridor fast-tracked visas for 120 researchers—well short of 500—due to national security vetting bottlenecks, reflecting constrained implementation capacity.
+
+Public sentiment held at 22.0 as automation displacing mid-level legal and radiology jobs continued to dominate headlines. Labour protests erupted in three capitals, targeting AI deployment in public services.
+
+The 2028 U.S. election concluded with a decisive victory for the anti-AI platform. The incoming administration will take office next turn; its policy direction remains to be formally enacted and recorded. Washington’s potential retreat could offer breathing room—but also removes a key partner just as the EU’s own capacity remains unrealised.
+
+US_POSTURE: pending (administration takes office next turn)
+
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Autonomous Frontier Initiative −3, priority −1 = −10  
+PROPOSAL BONUS: Autonomous Frontier Initiative (cat 4, large) +6 — capability_jump landed this turn and this measure answers it directly, plus it supersedes a failed regime  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 19.0 last turn, no capacity event, capability rose 5.5 −1 = 18.0 → but Gigafactories in flight yields +0 (still distant), and strategic pivot does not count as event term → final = 17.0 (rounded down), minus 2 for member_state_defection → 15.0  
+emergent_labour_displacement_wave -- first noted turn 4, listed in 1 turn(s) so far: Widespread reports emerge of AI-driven automation displacing workers in legal support, radiology, and mid-level software maintenance across multiple EU countries, with sectoral unemployment spikes. The effect is concentrated in firms that adopted AI tools in 2025–2026, and media coverage begins to frame it as structural rather than transitional.  
+emergent_interpretability_consortium -- first noted turn 4, listed in 1 turn(s) so far: A coalition of European research institutes, partially funded by national governments and the EU, announces a shared effort to reverse-engineer the internal representations of frontier models using novel probing techniques. The effort is not yet successful, but it establishes a credible non-US path to understanding model reasoning, feeding into future safety and evaluation measures.

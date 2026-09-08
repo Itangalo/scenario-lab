@@ -1,0 +1,15 @@
+### The Verification Imperative
+
+Global AI capability inched upward to 62.5 as frontier labs refined infrastructure and training pipelines, maintaining steady but unspectacular progress. Signs of accelerating open progress emerged: a new model, developed collaboratively by European and Canadian researchers under the emergent_foxglove_initiative, was released with permissive licensing and quickly adopted across academic and civic networks. While not matching frontier performance, its capabilities in interpretability and domain-specific tasks marked a meaningful step forward. Open-weight systems, cumulatively, gained ground—reflected in a modest rise in openweight_capability—not through a single breakthrough, but through sustained investment and diffusion over recent turns.
+
+In response to growing concerns over opaque AI in high-risk sectors, the European Commission formally proposed the European AI Verification Network (EUVN), a high-cost, pan-European framework to mandate runtime audits and weight disclosures under ENISA oversight. The proposal, backed by Germany and Nordic states, invokes Article 16 TFEU to assert jurisdiction over AI systems used in EU critical infrastructure, regardless of origin. However, implementation cannot begin in full this turn: legal challenges from two U.S.-based developers are already anticipated, and cross-border enforcement mechanisms remain under negotiation. The framework is not yet operational; no audits have commenced, and no weights have been collected. The earliest operational capacity is expected in the next turn, pending resolution of jurisdictional disputes.
+
+The Commission also announced exploratory funding for hybrid symbolic-neural systems, building on the emergent_symbolic_hybrid_breakthrough observed in prior research. This initiative, still in scoping phase, aims to develop verification standards for air traffic and medical triage applications. No deployment has occurred; testing in Nordic airspace and hospitals is scheduled to begin in the next turn, contingent on technical readiness and regulatory alignment. This activity represents preparatory work only and does not constitute a new measure launched this turn.
+
+The Resilience Corps Pilot Expansion concluded successfully, conducting live failover drills across ten critical sites. Despite initial resistance from Italy and Hungary, cohesion fund incentives secured participation. Results showed improved detection and containment of simulated AI-driven attacks, boosting resilience.
+
+Public sentiment remained stagnant at 30.0, weighed down by the Dutch social insurance scandal and growing anxiety over uncontrolled open models. Political capital held steady, supported by delivery on key measures, though the cost of three large initiatives strained capacity.
+
+### A Fork in the Road
+
+The EU advances a vision of sovereignty through verification, not velocity. But no new high-cost measure can take full effect this soon. The path forward requires patience: proposals take time, legal battles take longer, and technical alternatives remain in development. Sovereignty grows not in leaps, but in steps.

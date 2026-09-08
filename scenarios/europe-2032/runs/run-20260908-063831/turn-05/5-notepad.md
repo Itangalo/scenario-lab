@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech Sovereignty Package −3, Accelerate Sovereign Testbed Integration −3, Emergency Audit Rights −3, Sovereign Detection Front −3, Emergency Sovereign Interruption Authority −3, priority −1 = −19  
+PROPOSAL BONUS: Emergency Sovereign Interruption Authority (cat 3, large) +5 — direct response to capability_jump and cyber_major_incident, both recent and severe, addressing core control failure  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22 last turn, no category 4 completion, capability rose 3.5 −1, eu_frontier_access_denied t5 −2 = 20.0  
+emergent_municipal_ai_backlash -- first noted turn 5, listed in 2 turn(s) so far: Public-sector unions and local governments intensify calls to restrict AI in welfare and healthcare systems, citing accountability gaps and recent disruptions.  
+emergent_detection_breakthrough_late -- first noted turn 5, listed in 2 turn(s) so far: German and French pilot teams report improved signal-to-noise in anomalous activation tracing, suggesting potential for scalable real-time detection. Integration into EU-wide evaluation frameworks remains politically contested.  
+US_POSTURE: pending (administration takes office next turn)

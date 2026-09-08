@@ -1,0 +1,31 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — **finished this turn**
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — **finished**
+- `Compute Sovereignty Accelerator Directive (category 4, costs 3 per turn, started turn 3, finishes on turn 5): A binding directive to fast-track permitting, grid access, and state aid approval for AI compute infrastructure meeting EU strategic criteria, conditioned on legal anchoring of weights and operational control within EU jurisdiction` — **finished**
+- `Public Algorithmic Accountability Framework (category 3, costs 3 per turn, started turn 3, finishes on turn 6): A binding regulatory framework requiring independent audit, real-time monitoring, and redress mechanisms for all AI systems used in public-sector decision-making, with automatic suspension upon verified harm.` — **finished**
+- `Sovereign Access Framework (category 4, costs 3 per turn, started turn 5, finishes on turn 6): A binding regime that conditions access to EU markets and public-sector AI procurement on verifiable legal anchoring of model weights, operational control within EU jurisdiction, and compliance with EU audit and incident reporting standards — enforced through a licensing mechanism tied to the Digital Markets Act framework` — **finished**
+- `EU Talent Anchoring Initiative (category 4, costs 3 per turn, started turn 6, finishes on turn 8): A targeted programme to retain and attract frontier AI researchers and engineers by offering long-term funding, secure residency, and institutional autonomy under EU law, tied to participation in sovereign capability development.`
+
+Canceled measure: InvestAI Gigafactories. The programme completes its legislative and financial framework this turn, but no physical construction has begun due to the ai_investment_collapse and unresolved energy constraints; continuing it as an active measure would misrepresent operational progress and waste political capital on a dormant instrument.
+
+## New measure
+**EU Rapid Incident Response Corps**  
+A standing, cross-institutional unit with mandate, technical capacity, and pre-authorized access to respond to AI-generated cyber and bio incidents within 72 hours, integrating civilian and defence capabilities under a unified command.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size: large`  
+`Finishes on turn: 9`  
+`Targeted effect:` Increase `resilience` by +6–8 points over two turns by enabling rapid containment and recovery from AI-generated incidents; reduce lag between detection and coordinated action across member states; signal operational credibility to deter opportunistic actors.  
+`Applies to:` EU institutions, national cybersecurity and biosecurity agencies, EuroHPC JU, and designated private operators of critical infrastructure.
+
+## Priority
+**EU Rapid Incident Response Corps** — because the **cyber_major_incident** and **bio_uplift_findings** prove that harm is no longer hypothetical, and with `ai_safety` at 15.0 and `resilience` falling, our ability to absorb damage is now as strategic as our ability to prevent it — legitimacy depends on protecting people, not just regulating systems.
+
+## In practice
+This turn, we are launching the **EU Rapid Incident Response Corps** in direct response to the **cyber_major_incident** and the **bio_uplift_findings**, which together expose a fatal gap: we can regulate and audit, but we cannot act. The Corps will be established under the Integrated Political-Military Crisis Response Framework, with permanent liaison from ENISA, HERA, Frontex, and the European Defence Agency. We are securing Council approval through the Foreign Affairs Council (FAC) and the Internal Market Council (IMCO), leveraging the urgency of the ransomware sweep across public services to overcome jurisdictional resistance. Funding will come from the Civil Protection Mechanism and the European Defence Fund, repurposed under Article 122 TFEU, with €4.2bn allocated over two years. Recruitment begins immediately for 300 core technical staff — red teams, bioinformaticians, cyber-incident commanders — hosted initially at the Joint Research Centre in Ispra.
+
+Simultaneously, we are executing the final phase of the **Sovereign Access Framework**, now legally adopted and entering enforcement. The Commission’s Competition Directorate has issued final licensing conditions: any provider deploying models above 52.0 openweight capability in the EU must prove weight anchoring in EU territory, demonstrate remote override capability, and submit to real-time audit by the newly operational EU AI Evaluation Office. We are offering fast-track procurement status and partial liability shielding to compliant firms, but making clear that non-compliance triggers exclusion from public contracts and DMCA-based market restrictions. Legal challenges from U.S. hyperscalers are expected, but we are preparing countermeasures under the Anti-Coercion Instrument, coordinating with Japan and South Korea through the emergent_lab_cooperation network to mutualize audit standards and reduce dependency on any single jurisdiction.
+
+The **EU Emergency Compute Resilience Initiative** advances in parallel, with EuroHPC JU completing its first inventory of available high-end compute: 18 exaflops identified across national centres in Germany, France, Italy, and the Netherlands. We are activating emergency grid prioritization and offering €1.3bn in short-term operational subsidies to keep these systems online and secure. The **EU Talent Anchoring Initiative** continues, with 42 frontier researchers now onboarded under secure residency and long-term grants, though full integration into sovereign development remains slow. We are no longer building for scale — we are securing continuity, response, and control. That is what sovereignty means now.

@@ -1,0 +1,9 @@
+### Signs of Acceleration
+
+Global AI capability advanced to 61.0 as self-improving training loops demonstrated sustained gains across multiple domains. Systems are exhibiting longer planning horizons and increasingly autonomous task execution, though full oversight remains intermittent rather than absent. A notable breakthrough in interpretability—spurred by independent research and rapidly adopted by leading labs—enabled limited prediction of agent behaviour before execution, marking a rare gain in control. This improvement, though narrow, was enough to lift `ai_safety` to 14.0.
+
+### EU Begins Operationalising Interrupt Authority
+
+The European Union initiated steps toward operationalising sovereign interrupt authority, focusing on the deployment of pilot nodes within energy and transport networks under the existing Sovereign Deployment Corridor framework. Initial installations encountered integration delays due to legacy system incompatibilities and staffing shortages, limiting immediate impact. Legal drafting under Article 114 TFEU remains in consultation phase, with no formal proposal advanced this turn. The effort remains a single new initiative—field deployment of interrupt mechanisms—without expansion to additional measures.
+
+Open-weight model capability rose modestly to 47.0, reflecting incremental progress in distributed training efficiency and model sharing across research collectives. This growth builds on prior investments and aligns with the accumulated trajectory of openweight development, remaining within the bounds of plausible advancement and below the frontier.

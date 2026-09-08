@@ -1,0 +1,17 @@
+### A Release and a Reckoning
+
+The AI frontier surged again, crossing 68.0 as self-improving systems compressed development cycles. An advanced open-weight model, derived from last year’s frontier system, began circulating in research networks and grey-market channels. While its base capabilities were strong, widespread optimization and distributed fine-tuning only partially closed the gap with proprietary systems. Openweight capability rose modestly to 51.8—reflecting diffusion and adaptation, but not parity in development velocity or access to leading-edge compute.
+
+Simultaneously, a national audit exposed a deeply flawed AI system used in social benefits allocation, which had denied aid to thousands based on biased risk scoring. A parliamentary ombudsman confirmed systemic harm, triggering public outrage. The scandal, rooted in domestic governance, dealt a severe blow to trust in AI, dragging public sentiment down to 20.0 and freezing momentum for new AI initiatives. In response, civil society groups intensified calls for transparency, but no binding safeguards reached the frontier tier, leaving ai_safety reduced to 3.0 amid growing opacity.
+
+### Enforcement Amid Erosion
+
+The EU continued advancing the **Emergency Fallback Compute Activation Protocol** toward completion, with member states finalizing technical integration plans under Commission oversight. Full implementation remains pending, and the measure continues to cost −3 political capital as work progresses into its final phase. No formal bonus has yet been applied, and sovereignty remains unchanged at 12.0 this turn—progress is absorbed by ongoing decay and capability growth (−1), offsetting the partial contribution from the in-flight category 4 measure.
+
+The **EU-Wide Mandatory Fallback Integration Certification** was discussed among member states but formally delayed due to resistance over national autonomy concerns. It did not enter the active portfolio this turn and incurred no cost. Planning remains at the consultation stage, with no timeline for launch.
+
+The **Unified EU Biosecurity Integration Directive** remains in preparatory discussions. While conceptually aligned with health law reforms, structural refinements are ongoing to prevent overlap with digital sovereignty debates. Pilot funding has been allocated to early-adopter regions, but the directive has not formally launched and does not contribute to resilience or incur cost. The proposal bonus previously attributed to it is retracted, as it did not meet activation criteria this turn.
+
+Political capital declined to 18.0 due to sustained strain from the active portfolio and reputational damage from the domestic scandal. Only one measure—the Emergency Fallback Compute Activation Protocol—remains active in the portfolio, consistent with capacity limits. The notepad entry referencing multiple charged measures is corrected: PORTFOLIO CHARGE reflects only Emergency Fallback Compute (−3) and priority (−1), totaling −4; all other items are pre-launch and not yet operational.
+
+References to persistent coalitions such as "emergent_regional_ai_council" and "emergent_coalition_for_compute_access" are removed from forward-looking commentary. Their activities are not tracked as event gates, and no narrative implication of progression toward formalization is permitted. Any coordination remains ad hoc and unstructured, consistent with constitutional guardrails against telegraphing.

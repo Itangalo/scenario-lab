@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereign Compute Emergency Buildout −3, priority −1 = −10  
+PROPOSAL BONUS: Sovereign Compute Emergency Buildout (cat 4, large) +6 — direct, large-scale response to taiwan_blockade and openweight_frontier_release, both severe and current  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20.0 last turn, no capacity event, InvestAI Gigafactories in flight +1, capability rose 1.5 −1 = 18.0  
+emergent_asml_shadow_network -- first noted turn 4, listed in 2 turn(s) so far: ASML, under sustained pressure from U.S. export controls and EU industrial policy, accelerates a covert initiative to reconfigure older DUV lithography systems for resale to third countries via a Luxembourg-based subsidiary, using minimal non-U.S. components to stay outside Washington’s jurisdiction. The move is discovered by a Dutch investigative outlet, triggering a diplomatic crisis and raising questions about the EU’s ability to control its own supply chain actors.

@@ -1,0 +1,6 @@
+emergent_asml_boardroom_pressure -- first noted turn 1, listed in 5 turn(s) so far: Internal leaks from ASML reveal growing dissent on the board over U.S. pressure to restrict exports beyond EUV machines, including older DUV systems critical for automotive and industrial chips. Executives warn of irreversible market share loss to Chinese competitors and long-term erosion of the EU’s leverage. The dispute risks spilling into public view before the end of the year.  
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Labour Transition Accelerator Fund −3 (finished), ASML Alignment Safeguard Initiative −3 (finished), EU Sovereign Compute Corridor −3, priority −1 = −13  
+PROPOSAL BONUS: EU Sovereign Compute Corridor (cat 4, large) +5 — directly answers supply_chain_coercion and emergent_asml_boardroom_pressure, both severe and current  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 15 last turn, no capacity event, capability rose 1.5 −1 = 14  
+US_POSTURE: pending (administration takes office next turn)

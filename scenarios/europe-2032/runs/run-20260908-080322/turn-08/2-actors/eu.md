@@ -1,0 +1,32 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Secure independent AI capability to ensure strategic autonomy — but we now recognise that autonomy without resilience is exposure, and capability without control is surrender. Our priority shifts from matching the frontier to securing the capacity to operate outside it, ensuring the EU can sustain essential functions even when AI systems fail or turn opaque.  
+- Trigger: The **automated_decision_scandal** and the failure to launch the **Critical System Fallback Regime** despite its priority status reveal that structural fragility, not capability lag, is the immediate threat.  
+- Grounds: At `ai_capability` 78.0 and `openweight_capability` 64.0, the gap between what exists and what the EU can inspect or replace has become unbridgeable in real time. The **Sovereign Control Framework** cannot be enforced because override mechanisms are untested and fallbacks unprepared. Political capital is too low to force adoption, and public sentiment is eroding trust in AI-mediated governance. Continuing to treat sovereign capability as a compute-and-talent race ignores that the systems we cannot control are already embedded in welfare, health, and infrastructure. We must now anchor autonomy in operational redundancy, not frontier parity.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we now accept that some actions deepen dependence even as they promise control, and we will not mistake motion for progress when the ground is shifting beneath us.  
+- Grounds: The **export_control_escalation** and **member_state_defection** have shown that even well-intentioned industrial policy can fracture under external pressure. The **InvestAI Gigafactories** collapse proved that flagship projects without pre-wired cohesion fail, while the **automated_decision_scandal** demonstrated that oversight without operational alternatives is theatrical. We acted, but the structure did not hold. The cost of misstep is no longer reputational — it is systemic. We remain committed to acting early, but now with a stricter filter: does this build real capacity to act independently, or only the appearance of it?
+
+## Portfolio  
+- `Sovereign Talent Anchoring Initiative (category 4, costs 3 per turn, started turn 6, finishes on turn 8): Launch a targeted recruitment, retention, and mobility programme for frontier AI researchers and engineers, offering long-term funding, secure lab access, and fast-track residency to keep critical expertise within EU jurisdiction` — **finished**  
+- `Sovereign Control Framework for Critical AI Systems (category 4, costs 3 per turn, started turn 7, finishes on turn 9): Establish a legal and technical mandate requiring full inspection rights, emergency override protocols, and EU-operated monitoring nodes for all AI systems used in healthcare, energy, transport, and public administration`  
+- `Critical System Fallback Regime (category 6, costs 3 per turn, started turn 8, finishes on turn 9): Mandate that every AI system performing essential public functions must be paired with a human-operable, EU-controlled fallback system capable of sustaining core operations for 72 hours`
+
+Canceled measure: Sovereign Talent Anchoring Initiative.  
+The programme fails to deliver at scale: recruitment lags due to visa bottlenecks, lab access disputes between member states, and the **export_control_escalation** blocking key equipment needed for frontier safety research. With only 40% of targeted hires secured and no unified compute access, continuing would burn capital on symbolic retention. The focus shifts to embedding safety engineering within existing institutions — ENISA, the European Digital Infrastructure Consortium, and national crisis response units — rather than relying on isolated talent clusters.
+
+## New measure  
+**Fallback System Readiness Certification**  
+Establish a mandatory certification process for all fallback systems under the Critical System Fallback Regime, requiring quarterly live drills, public reporting of failure modes, and independent validation by ENISA.  
+`Category: 6 (Preparedness and resilience)`  
+`Size: small`  
+`Finishes on turn: 10`  
+`Targeted effect:` resilience +8 (via enforced readiness), ai_safety +3 (via forced transparency in failure modes), public_sentiment +2 (via visible accountability)  
+`Applies to:` EU member states, national regulators, public-sector AI providers, and foreign vendors operating in critical domains
+
+## Priority  
+**Critical System Fallback Regime** — because the **automated_decision_scandal** proved that override without readiness is meaningless, and the regime will fail unless fallbacks are not just designed but proven to work under stress, which only mandatory certification and live drills can ensure.
+
+## In practice  
+This turn, we are acting from the recognition that having a fallback is not enough — it must be known to work. The **Critical System Fallback Regime** is now law in principle, but implementation stalls as member states treat it as a paperwork exercise. We are therefore launching the **Fallback System Readiness Certification** to force operational discipline. Under Article 122 TFEU, ENISA will issue binding audit protocols by Q3 2030, requiring all critical AI systems — foreign or domestic — to demonstrate functional fallbacks in live drills every quarter. The drills will simulate total AI blackout in welfare, energy dispatch, and emergency response, with national crisis teams taking over manually. Results will be public, and systems that fail three times will be suspended from critical use.
+
+We are funding this through a €3.2bn reallocation from the Digital Europe Programme and Recovery and Resilience Facility, conditioned on member states committing national crisis units to the drills by June. Finland and Austria are already preparing their nodes, but Germany and Poland resist, citing sovereignty and cost. We are offering 80% co-financing and framing it as civil protection, not AI policy, to bypass tech-fatigue in national parliaments. The **Sovereign Control Framework** continues under Article 114, but now with fallback certification as a prerequisite for override approval — control is no longer a legal right, but a demonstrated capability. This is not about catching up. It is about learning how to step out of the machine and still keep the lights on.

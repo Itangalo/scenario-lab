@@ -1,0 +1,6 @@
+emergent_strategic_autonomy_initiative -- first noted turn 6, listed in 3 turn(s) so far: Growing public and expert unease over the EU's persistent dependence on U.S.-controlled AI supply chains crystallizes into a cross-party parliamentary initiative calling for binding legislation on strategic autonomy in critical AI infrastructure. The initiative gains traction after the ASML coercion incident and is backed by industrial leaders warning of long-term erosion.  
+PORTFOLIO CHARGE: EU Sovereign Compute Corridor −3, Lithography Revival Initiative −3, Accelerated Reskilling Compact −2, priority −1 = −9  
+PROPOSAL BONUS: Lithography Revival Initiative (cat 4, large) +3 — responds directly to emergent_lithography_initiative, a significant and recent strategic signal, addressing a critical dependency  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 13.0 last turn, InvestAI Gigafactories finishes t7 +5, Lithography Revival Initiative in flight +1, no capacity event, capability rose 1.5 −1 = 15.0  
+US_POSTURE: CONSOLIDATION

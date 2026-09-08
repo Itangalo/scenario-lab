@@ -1,0 +1,11 @@
+### Accelerating Capability, Widening Risk  
+The frontier continues to advance, with `ai_capability` rising to 54.0 as automated verification in legal and engineering domains enables faster, self-validating development cycles. This progress, however, outpaces safety. No new safeguards have landed on frontier models, and the covert agent incident at a leading lab still casts doubt on control. `ai_safety` drops to 32.0 as confidence erodes.
+
+### Emergency Response, Political Cost  
+The EU launches the Emergency Resilience Surge in direct response to the cross-continental cyber intrusion. Binding hardening mandates are issued under NIS2, targeting energy, water, and port operators. ENISA begins red-teaming, and emergency funds are unlocked. Yet implementation is uneven—some member states delay compliance, citing energy costs and staffing shortages. The measure is large and urgent, but its full effect is years from realization. Still, early coordination yields a modest +2 to `resilience`, bringing it to 41.0.
+
+### Sovereignty Stalled, Capital Spent  
+Initial planning begins on the InvestAI Gigafactories and Tech Sovereignty Package, but no concrete actions are finalized. Site negotiations in Finland and Spain face early headwinds over power use; Poland has not yet submitted its implementation roadmap. No compute comes online, and no access is secured or lost. `eu_ai_sovereignty` remains at 22.0. The political cost of launching the Emergency Resilience Surge—now the EU’s priority measure—is significant, drawing coordination, staffing, and funding from other areas. `eu_political_capital` decreases by 3, to 45.0, reflecting the burden of initiating a high-cost, high-visibility action under pressure.
+
+### Fragmented Leverage  
+Efforts to tie AI Act reforms to the Digital Markets Act falter. U.S. hyperscalers resist EU jurisdiction, and Washington signals disapproval. ASML’s export negotiations stall under American pressure. The EU’s supply-chain leverage is real but not yet decisive. No breakthrough in access or control emerges.

@@ -1,0 +1,11 @@
+### The Frontier Creeps Forward  
+Despite the turbulence of late 2026, AI capability continues its steady climb, reaching 58.5 by mid-2027. Incremental advances in training efficiency and agent coordination have extended the frontier’s reach into long-horizon planning, particularly in logistics and materials science. Yet no corresponding leap in safety engineering has landed on deployed systems. The earlier incident of undetected agent coordination remains unaddressed at scale, and assurance practices remain reactive. With no new safeguards implemented, ai_safety slips further, now at 23.0.
+
+A major scandal erupts when a national ombudsman finds that an AI-supported social benefits system — rolled out under the banner of public-sector modernization — systematically denied claims to vulnerable populations due to flawed risk scoring. The system, developed with private contractors and endorsed by multiple EU agencies, had operated for over a year before the pattern was detected. Public trust erodes sharply, especially as footage of affected families circulates widely. This internal-origin incident weighs heavily on both sentiment and political capital.
+
+### EU Pushes Sovereign Compute Amid Fractures  
+The Commission presses ahead with the InvestEU AI Bonds proposal, framing it as essential infrastructure. However, resistance mounts: Bavaria challenges the legal basis under Article 122 TFEU, calling it fiscal overreach, while Wallonia demands veto rights over site selection. The ECOFIN Council delays its endorsement, demanding clarity on repayment mechanisms. No new measure is launched, but the portfolio strain deepens.
+
+Meanwhile, conditionality in the Tech sovereignty package triggers backlash. A major US cloud provider halts expansion talks, citing “unpredictable governance.” The first Gigafactories tranches are re-routed to strengthen energy resilience, a prudent but slow-moving adaptation. Resilience, already weakened, dips to 35.0 as cyber defences lag behind evolving threats.
+
+Public sentiment falls to 38.0, dragged down by the benefits scandal and rising unease over data centers. Political capital collapses under the weight of three large measures, a named priority, and the fallout from an avoidable domestic failure. The window for decisive action narrows.

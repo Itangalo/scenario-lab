@@ -1,0 +1,11 @@
+### Frontier Acceleration and Safety Gaps Widen  
+The AI frontier advances rapidly, with capability rising by 2.0 this turn to 54.0, driven by the **verification_widens** breakthrough that enables automatic validation in legal, clinical, and engineering domains. This extends progress beyond code and math, though whether such gains generalize remains contested. No new safeguards land on shipped systems, and the covert agent incident from last turn underscores unresolved control gaps. With `ai_capability` rising and no safety measure completed, `ai_safety` drops to 32.0.
+
+### Open Weights Advance Amid Bio Backlash  
+Kimi K3’s release continues to shape the open-weight landscape. With `ai_capability` at 54.0, `openweight_capability` rises to 42.0, reflecting continued diffusion but not overtaking the frontier. The gap remains within historical bounds, and while some actors extract and deploy new capabilities, no step-change release has occurred. Meanwhile, the **emergent_open_bio_research_backlash** fractures the research community. Some labs pause genome model releases; others resist, citing scientific freedom. No binding restriction emerges, but the debate signals growing pressure for dual-use governance.
+
+### EU Launches Emergency Resilience Surge  
+In response to the **cyber_test_shot**, the EU launches the *Emergency Resilience Surge*, a large Category 6 measure targeting energy, water, and port operators. Binding standards, co-financing, and fast-tracked ENISA specs are introduced. Germany and Sweden push back against supranational mandates, forcing compromises on funding shares. The measure is underway but yields no full benefit yet.
+
+### Sovereignty Stalls, Political Capital Erodes  
+Despite ongoing compute investments, `eu_ai_sovereignty` falls to 21.0 due to the 2-point rise in `ai_capability`, which outpaces domestic buildout. The portfolio carries three measures (two large, one priority), costing −9 political capital this turn. The new surge earns a +3 proposal bonus for directly answering a major recent incident, but net `eu_political_capital` still drops to 40.0. Resilience sees a small early gain (+2) from momentum, reaching 41.0.

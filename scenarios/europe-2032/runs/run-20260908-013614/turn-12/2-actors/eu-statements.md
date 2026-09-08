@@ -1,0 +1,15 @@
+# Statements: The European Union (turn 12)
+
+## Ledger
+
+- `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing.
+- `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late.
+- `two_year_commitment` (commitment): Deliver sovereign capability to train, secure, and govern frontier AI models within the EU by mid-2030, ensuring that no strategic decision about AI is made beyond our jurisdiction — but acknowledge that this target is now technically unmet and politically strained, and shift the focus from symbolic completion to operational integrity by Q3 2030.
+
+## Changes this turn
+
+- **modify** `two_year_commitment` — rejected-structural
+  - Tier: commitment
+  - Text: Deliver sovereign capability to train, secure, and govern frontier AI models within the EU by mid-2030, ensuring that no strategic decision about AI is made beyond our jurisdiction — but acknowledge that this target is now technically unmet and politically strained, and shift the focus from symbolic completion to operational integrity by Q3 2030, and further acknowledge that as of mid-2031, the capability gap has widened beyond recovery within the original framework; pivot to securing intervention rights and control levers over all high-capability systems on EU soil, regardless of ownership, as the new core of sovereignty — and now, as of turn 12, accept that even this pivot has failed to land: the frontier operates beyond reach, enforcement is nominal, and the Union is denied access to the very systems it seeks to govern. Sovereignty must now mean harm containment, not control. We are no longer governing the frontier — we are fortifying the perimeter.
+  - Grounds: The **eu_frontier_access_denied** event is not a temporary glitch but a structural condition: the Union is locked out of the systems that define strategic reality. The **Sovereign Circuit-Breaker Authority**, despite years of effort, remains unanchored in law and unimplemented in practice beyond isolated nodes. Germany’s resistance stands, and no foreign operator has submitted to EU jurisdiction. Meanwhile, AI capability has reached 90.0 — functionally superhuman, with recursive self-improvement active — while `ai_safety` is at 14.0, barely above the level of no meaningful assurance. The original commitment assumed we could still reach parity or at least jurisdictional authority; that assumption is now void. Continuing to act as if we can enforce rules on systems we cannot access or understand would be ritual, not governance. The cost of reversal is immense: it signals the end of the EU as a technological sovereign in the traditional sense. But the cost of denial is collapse — of credibility, of security, of public trust. This is not surrender; it is a shift from ambition to survival.
+  - Reason: a commitment-tier change must name a Trigger

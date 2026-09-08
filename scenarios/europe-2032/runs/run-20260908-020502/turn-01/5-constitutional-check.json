@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 40.0 to 46.0 (+6.0) while `ai_capability` increased by only 2.0 (from 52.0 to 54.0). Since `openweight_capability` must never exceed `ai_capability` and can only rise or stay flat, a jump of 6.0 points when the frontier `ai_capability` rises by only 2.0 is implausible unless justified by catastrophic physical destruction of frontier compute (which would reduce `ai_capability`, not increase it). No such event is narrated, and the narrative instead describes continued frontier advancement. This violates the accumulation rule and the ceiling constraint relative to `ai_capability`.\n- Narrative violates Constitutional Constraint 8 (No telegraphing): The narrative states \"the cyber_test_shot strengthens the case for accelerated permitting\" — this implies a future policy outcome (accelerated permitting) as a foregone conclusion, effectively telegraphing a future metric movement or event gate resolution. Tension or advocacy is acceptable, but stating that an event \"strengthens the case\" for a specific regulatory outcome crosses into anticipatory narration, especially when such outcomes are gate-conditioned and must not be pre-empted."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,315 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8846026872659974,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7034435910557368,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.32105600200936546,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8069306045407948,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.12870090652388522,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.02,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.04613377915598493,
+    "triggered": true
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.09999999999999999,
+    "probability_samples": [
+      0.15,
+      0.0,
+      0.15
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.11554516505574097,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.10232032980209915,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.10765818344612299,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7999307658028676,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.13,
+      0.0,
+      0.13
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.3037651080489858,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.07333333333333335,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.14
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5592320748783598,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.04,
+    "probability_samples": [
+      0.06,
+      0.0,
+      0.06
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9117836838419222,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.2319628443358993,
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_labor_unrest_spreads",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "Following the cross-border strikes in France and Spain, coordinated industrial actions escalate across multiple EU member states as public-sector unions in healthcare, transport, and administration demand binding AI deployment moratoria. The strikes disrupt essential services and force emergency negotiations at the European level, amplifying pressure on the AF-HCS-LTS framework.",
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5005660533620094,
+    "triggered": false
+  },
+  {
+    "id": "emergent_us_ai_export_enforcement",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "U.S. customs and border authorities begin actively intercepting shipments of high-performance AI chips bound for third countries, citing newly expanded export control lists. The move triggers diplomatic friction with several EU members and raises concerns about the reliability of U.S.-controlled supply chains, accelerating quiet EU discussions on sovereign compute infrastructure.",
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9504185932357236,
+    "triggered": false
+  },
+  {
+    "description": "A group of EU member states, frustrated by the Union's inability to act decisively and protect their interests under retrenching US posture, begin quiet coordination with Japan, South Korea, and Canada on mutual AI access and defensive cyber collaboration. The initiative starts as an informal network but gains momentum as trust in transatlantic alignment erodes. It does not replace EU structures but creates a parallel channel that could harden into a formal coalition if sovereignty remains stagnant.",
+    "emergent": true,
+    "id": "emergent_hedging_alliance",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Amid rising public anxiety and repeated failures in large-scale measure implementation, a prominent European think tank publishes a high-profile critique arguing that the current approach to AI governance is structurally incapable of keeping pace with capability growth. The report gains traction in policy circles and sparks debate in several national parliaments about overhauling institutional mandates, potentially reshaping future EU AI strategy.",
+    "emergent": true,
+    "id": "emergent_institutional_crisis",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.12
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9027669955318265,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.13
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7678994099776368,
+    "triggered": false
+  },
+  {
+    "id": "emergent_scientific_breakthrough",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "A European-led consortium announces a novel AI-guided discovery in high-temperature superconductivity, validated by independent labs. The result was found using open-weight models on EU-secured infrastructure, and while not militarily strategic, it demonstrates autonomous capability advancement independent of US or Chinese leadership. The breakthrough triggers quiet interest in research realignment and rekindles debate about where frontier innovation truly resides.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_regional_ai_pact",
+    "probability": 0.11666666666666665,
+    "emergent": true,
+    "description": "The emergent regional AI pact, first noted last turn, gains momentum as Nordic and Benelux states formalize a joint evaluation and incident response framework outside US oversight. They commit shared compute for red-teaming and establish a rotating joint AI safety cell, citing both sovereignty and resilience. This is not a military alliance, but a practical hedge — and it tests the limits of US tolerance under RETRENCHMENT posture.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.35
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

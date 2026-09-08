@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 77.0 to 87.0 (+10.0) in one turn, which exceeds the maximum plausible growth rate for this metric. While `openweight_capability` may rise, such a large jump—especially surpassing 90% of `ai_capability` (now 98.5)—requires explicit narrative justification in terms of a major, uncontained leak or systemic failure (e.g., theft of frontier weights, collapse of access controls). The mention of \"leaked verification tools\" does not justify a 10-point surge, particularly without accompanying narrative of a specific breach or cascade event. This violates the principle that capability accumulation is bounded and gradual absent catastrophic enabling events.\n- Invariant 9 violated: `openweight_capability` increased by 10.0 points in one turn, which exceeds the hard cap of 25-point *total* movement for *any* metric. While 10.0 is below 25, the rule is absolute and applies to all metrics equally—however, this movement is especially problematic because it occurs without triggering any event gate, funding source, or organizational expansion that would justify such a leap. The rule exists to prevent implausible jumps regardless of direction.\n- Modelling Choice 5 violated: The narrative states \"no new measure is launched\" and \"no active measures\", yet still assigns a \"priority −1\" in the notepad and includes it in the sovereignty calculation. However, per Modelling Choice 5, at most one measure can be prioritized per turn. Here, the absence of an active measure contradicts the application of a priority penalty. If no measure is active, there can be no priority—positive or negative. Applying a −1 priority charge without a named active measure violates the constraint that at most one priority may be named per turn."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

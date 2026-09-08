@@ -1,0 +1,25 @@
+No statement changes.
+
+## Portfolio
+- `Pilot Transitional AI Adjustment Fund (category 7, costs 2 per turn, started turn 8, finishes on turn 10): Launch a time-limited, targeted wage insurance and retraining programme for workers displaced by AI in legal, accounting, and administrative roles, with co-financing from firms that automate and mandatory redeployment pathways` — **finished this turn**
+- `Enforce Binding Grid Integration Deadlines with Funding Clawbacks (category 4, costs 2 per turn, started turn 9, finishes on turn 11): Impose binding, time-limited grid integration milestones for all recipients of EU compute funding, with automatic clawback of capital and revocation of security certification for non-compliance` 
+
+## New measure
+**Launch Emergency Resilience Surge: Critical Cyber & Bio Defences**  
+Deploy emergency hardening of core public services against AI-enabled cyber intrusion and synthetic biology threats, using rapid procurement and pre-authorised access to sovereign models for defensive simulation.
+
+Category: 6 (Preparedness and resilience)  
+Size: large  
+Finishes on turn: 13  
+Targeted effect: Deliver +6 to resilience by end of turn 13 through mandated cyber hygiene upgrades across energy, health, and water infrastructure; establish real-time bio-threat detection nodes in five major urban centres; integrate sovereign AI into red-teaming of essential systems.  
+Applies to: Member states, ENISA, HERA, national CIRTs, critical infrastructure operators, EU Health Union agencies
+
+## Priority
+**Launch Emergency Resilience Surge: Critical Cyber & Bio Defences** — because the openweight frontier release this turn brings offensive capability within reach of non-state actors at an unprecedented scale, and with ai_safety at 19.0 and resilience falling to 37.0, we are now one incident away from cascading failure—this is no longer about building sovereignty, but about preventing its collapse before it begins.
+
+## In practice
+This turn, we are shifting from construction to crisis footing. The completion of the *Pilot Transitional AI Adjustment Fund* marks the end of a first-phase response to social disruption: the retraining pipelines in Germany and France have enrolled over 12,000 workers, and the mandatory redeployment quotas are now being audited by Eurostat in coordination with national labour ministries. However, the ETUC has suspended further cooperation pending an independent inquiry into the welfare scandal, and union leaders warn that without visible progress on accountability, the next wave of automation will meet coordinated industrial action. We are responding with transparency: the Commission has launched a formal review under Article 29 of the AI Act, with full access to model logs and decision trails, to be concluded by turn 12.
+
+Meanwhile, the *Enforce Binding Grid Integration Deadlines* measure is entering its decisive phase. The EAIA has issued formal notices to Belgium, Poland, and Finland, requiring certified grid readiness plans by Q3. ENISA has confirmed that failure to comply will trigger automatic revocation of weight custody certification, effectively barring those jurisdictions from operating sovereign models above 50.0 capability. This is not symbolic: €40bn in cohesion and digital funds are now conditionally frozen, and the Legal Service has affirmed the use of Article 114 TFEU as a basis for enforcement. Behind the scenes, we are negotiating with national grid operators through the Energy Council, offering accelerated access to emergency reserve capacity in exchange for firm deployment timelines. The resistance remains fierce—particularly in Poland, where constitutional concerns are being raised—but the precedent must hold.
+
+Now, we act on the new threat vector. The openweight release at 53.0 is not just a diffusion milestone—it is a weaponization threshold. Systems capable of autonomous phishing, vulnerability discovery, and even basic synthetic gene design are now in circulation. With no meaningful ai_safety assurance and critical infrastructure still running on legacy protocols, we cannot wait. Under the newly proposed *Emergency Resilience Surge*, we are activating the Civil Protection Mechanism and directing €6.2bn from the Crisis and Investment Facility to fund immediate upgrades: ENISA will mandate MFA, zero-trust architecture, and AI-driven anomaly detection across all Tier 1 services by turn 12. HERA will stand up three pilot bio-detection hubs in Rotterdam, Lyon, and Milan, equipped with portable sequencing and AI-assisted screening tools. And for the first time, sovereign AI compute will be provisioned directly to national CIRTs for adversarial testing—under strict audit and containment protocols. This is not preparedness as procedure. It is defence in depth, built under fire.

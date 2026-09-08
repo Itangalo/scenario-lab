@@ -1,0 +1,13 @@
+### A Threshold Crossed, But Not a Turnaround
+
+The Sovereign Compute Acceleration Programme reaches operational status. Three hardened gigafactories — in Finland, Poland, and Portugal — are now live under full EU legal control, running safety evaluations and crisis simulations without reliance on external model access. Mobile fallback units deploy successfully during cross-border drills, and encrypted telemetry confirms integrity under simulated attack. For the first time since the cutoff, the Union possesses AI compute it fully owns and cannot be switched off. This is not parity with the frontier, but it is independence.
+
+Yet sovereignty does not translate into political capital. At 5.0, it barely sustains the existing portfolio. No new measure launches. The Commission instead prepares a stark ultimatum: member states rejecting EAA verification must now fund and operate their own sovereign compute nodes, outside the EU’s shared security perimeter. Berlin, Rome, and Vienna remain defiant, calling the move coercive.
+
+Meanwhile, ai_capability climbs to 71.5, driven by self-optimizing biotech design loops and adaptive cyber agents. With no safety gains reaching deployment, and interpretability still absent from real-world systems, ai_safety slips further to 12.0. However, distributed teams in open-source communities begin integrating anomaly detection based on leaked frontier lab research. Early results suggest open-weight models may soon surpass closed ones in transparency — a quiet reversal of the usual dynamic.
+
+Resilience remains stagnant at 28.0. Despite the gigafactory completion, critical infrastructure protections are still uneven, and no new category 6 measure lands. Public sentiment holds at 20.0, anchored by anger over energy allocation and distrust in elite-driven AI policy.
+
+Political capital sees only a modest recovery. The completion of the gigafactories, Frontier Access Guarantee, and Resilience Surge lifts the portfolio charge from −9 to 0, removing ongoing costs. However, the political benefits are partial and delayed. The removal of burden does not equate to immediate capital accumulation, especially amid ongoing intergovernmental friction. A limited gain of +3 is realized — reflecting relief from past strain, but not a resurgence of initiative. Political capital rises to 8.0, no longer paralysed but still constrained.
+
+Sovereignty gains +1 for the ongoing momentum of the gigafactories (rule 10), while the capability rise of 1.0 triggers −1 decay. No capacity event occurs. Net change: +1 → 14.0.

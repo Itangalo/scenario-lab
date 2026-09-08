@@ -1,0 +1,18 @@
+## Statement changes  
+No statement changes.
+
+## Portfolio  
+- ``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``  
+- ``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``  
+- ``Cyber Shield for Critical Operators (CS-CO) (category 6, costs 3 per turn, started turn 2, finishes on turn 4): Establish mandatory intrusion detection and response standards for all critical infrastructure operators, with EU-level monitoring and rapid response teams``
+
+## New measure  
+None this turn. We are waiting for Council adoption of CS-CO to clear the path for focused reinvestment in sovereignty-building, and we must conserve political capital until the cyber shield is in flight and its cost fully accounted for.
+
+## Priority  
+**Cyber Shield for Critical Operators (CS-CO)** — because the cyber_test_shot has exposed a live vulnerability in essential services, and without binding, cross-border detection and response, resilience cannot rise; this measure closes a gap that no amount of compute or talent can compensate for, and its adoption this turn is the price of credibility in both security and sovereignty.
+
+## In practice  
+We are finalising negotiations on the Cyber Shield for Critical Operators (CS-CO) in the Council’s Digital Affairs formation, where qualified majority is now within reach. Germany and France remain cautious about centralised oversight, so we have offered them rotating co-leadership of the EU Cyber Fusion Cell and a phased rollout: Stage One will cover only cross-border energy and transport operators, with full telemetry and automated alerting to ENSISA, while Stage Two—covering national-level water, health, and rail—will follow after an evaluation in turn 3. The legal basis is Article 21 of the NIS2 Directive, interpreted through the lens of the recent intrusion, which we are now formally designating a “cross-border incident of strategic significance.” Funding is secured: €6.4bn from the Digital Europe Programme, €2.8bn co-financed by member states using the Resilience and Recovery Facility’s digital window, with flexibility for smaller economies to substitute in-kind contributions like spectrum access or pre-approved siting.
+
+Simultaneously, we are using the eval_anomaly_reports to reinforce internal arguments for accelerating the Tech Sovereignty Package. While the Gigafactories remain on track—environmental assessments in Spain, Finland, and Poland are now compressed to four months—we are pressing national regulators to finalise grid commitments by turn 3, leveraging the Commission’s authority under the proposed Net-Zero Industry Act fast-track provisions. Atos, Siemens, and the EU AI Foundation are in advanced talks to form a joint consortium that would operate the first sovereign training cluster under EU legal control, with weight security and audit rights reserved for ENSISA and a newly mandated public evaluation unit. This is not yet a new measure, but it is the seed of one: if the anomaly reports presage a jump in capability, we will need not just compute, but compute we can trust and inspect—something only public stewardship can guarantee. For now, we hold course, knowing that CS-CO must land before we can ask for more.

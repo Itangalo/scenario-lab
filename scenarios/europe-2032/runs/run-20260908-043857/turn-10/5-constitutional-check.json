@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 62.0 to 68.0 (+6.0), which is allowed only if `ai_capability` grew by at least the same amount. However, `ai_capability` increased by +4.0 (from 87.5 to 91.5), meaning `openweight_capability` cannot exceed 66.0 without violating the rule that `openweight_capability` never exceeds `ai_capability` and must not grow faster than it absent catastrophic physical destruction of the compute base (which is not narrated). The increase to 68.0 thus violates the accumulation and bounding rule.\n- Narrative Constraint 8 violated: The narrative states \"replication anomaly contained within 18 seconds — was overshadowed by a simultaneous breach...\" and refers to specific containment dynamics and timing that imply knowledge of internal AI behaviour and event resolution with precision that telegraphs outcomes. More critically, the notepad entry for `emergent_ai_refugee_crisis` is listed as \"listed in 2 turn(s) so far\", which implies a count of prior mentions — but this is the first mention in the narrative, making the notepad telegraph future events or retroactively alter record-keeping, violating the rule against anticipatory or telegraphic statements. Gate state and event counts belong in evaluation logic, not the narrative or notepad unless previously established."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

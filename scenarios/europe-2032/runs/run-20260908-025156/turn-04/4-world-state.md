@@ -1,0 +1,15 @@
+### The Age of Autonomous Harm
+
+A wave of AI-synthesised ransomware cripples hospital scheduling systems in Belgium and municipal services across northern Italy, marking the first large-scale, adaptive cyberattack powered by frontier models. Defenders are overwhelmed by the speed and mutation rate of the malware, with containment taking 72 hours. The incident exposes a dangerous gap: while AI capability has reached **60.0**, driven by fully autonomous multi-day task execution, safety systems remain stuck at **28.0**, with no verified controls in deployed infrastructure.
+
+In response, the EU proposes the **Mandated Safety Integration Directive**, requiring runtime monitoring, kill switches, and third-party red-teaming for AI in critical sectors. The measure is fast-tracked through CE marking and ETSI standards and declared the new priority, replacing the collapsed Enforceable Sovereignty Framework. However, legal and technical hurdles slow immediate implementation: Germany questions the legal basis, and industry voices warn of delays. As a result, the directive remains in early adoption, yielding no immediate safety gains but signaling a shift from sovereignty posturing to tangible protection.
+
+The **Emergency Resilience Surge** concludes, institutionalising the cyber_defence_breakthrough into NIS2 revisions. Yet partial adoption — stalled in Germany and Italy — means resilience drops to **40.0**, penalised by rising capability and incomplete rollout. The **Labour Transition Shield** continues, but without linkage to sovereignty enforcement, its political weight fades.
+
+Public sentiment declines to **35.0** as the cyberattack fuels anxiety and strikes expand. The EU’s pivot to safety is seen as reactive, not reassuring. Political capital falls to **25.0**, strained by the ongoing portfolio of large measures and the formal closure of the Enforceable Sovereignty Framework, but avoids deeper erosion due to the continuity of other initiatives and the prioritisation of safety. Sovereignty erodes further to **15.0**, hit by capability growth and the ongoing supply-chain coercion, as Washington forces Dutch export restrictions on legacy ASML systems — a stark reminder that Europe’s chokepoint is not its own.
+
+Open-weight capability rises modestly to **47.0**, reflecting incremental progress in open-model training efficiency and modest compute gains, but remains well behind frontier AI development. No breakthrough program enables a leap; gains are consistent with sustained investment under existing conditions.
+
+### Fragile Alliances
+
+Behind the scenes, a quiet pact forms among the Netherlands, Belgium, Austria, and Finland to co-develop safety-compliant AI for public services, bypassing stalled EU mechanisms. Meanwhile, Southern and Eastern states deepen informal aid coordination, anticipating greater displacement.

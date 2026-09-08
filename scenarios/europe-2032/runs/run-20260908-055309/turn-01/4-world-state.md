@@ -1,0 +1,13 @@
+### Strategic Alarm and Legislative Push
+
+The discovery of a coordinated intrusion across critical infrastructure operators — including two EU grid operators — sent shockwaves through Brussels. Though the breach was not disruptive, its stealth and reach revealed a new order of AI-powered cyber threat, one that bypassed existing defences. The incident, occurring just weeks after Washington unilaterally restricted access to its most advanced models, crystallized a growing consensus: capability without sovereignty is a liability.
+
+In response, the European Union advanced plans for the Sovereign Evaluation Regime, a legislative initiative already in development, aiming to establish independent, mandatory evaluation of high-capability AI systems. Framed as a cornerstone of technical sovereignty, the measure would grant the new European Model Evaluation Agency (EMEA) access to model weights and training data for systems above 45.0 capability. The proposal, elevated to the Union’s current priority, entered formal negotiation — but did not pass or take effect this turn.
+
+Resistance flared immediately. Several member states, dependent on U.S. cloud infrastructure, questioned the legality and feasibility of weight disclosure. Industry groups warned of stifling innovation and driving developers offshore. Behind closed doors, legal challenges to the use of Article 114 TFEU emerged, with critics arguing it was being stretched beyond its intended scope.
+
+The cyber intrusion also exposed weak detection capacity. With no category 6 resilience measure yet in force, the Union’s defences failed to catch the threat, and the delayed discovery eroded confidence. Public sentiment, already ambivalent, remained unchanged — no visible benefits emerged to shift perception, and fears of dependency grew.
+
+Meanwhile, the frontier advanced. AI capability rose to 54.0 as training runs delivered incremental but compounding gains. Openweight capability increased to 42.0, reflecting partial diffusion of Kimi K3’s tools within research and red-team circles, consistent with gradual spillover rather than a discrete leak or release. With no safety measure yet implemented, and capability rising sharply, ai_safety fell by 5 points. The gap between capability and control widened, and resilience dipped under unmet demand.
+
+The political cost of ambition became clear. Three large measures now in flight, plus the priority surcharge, drained eu_political_capital. The Sovereign Evaluation Regime, though urgent, contributed no proposal bonus — it answered a near-miss, not a realized catastrophe. Sovereignty, strained by rising capability and no offsetting gain in access, declined slightly.

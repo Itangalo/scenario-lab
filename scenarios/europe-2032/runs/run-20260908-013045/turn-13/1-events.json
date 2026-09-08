@@ -1,0 +1,37 @@
+[
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.15666666666666668,
+    "probability_samples": [
+      0.14,
+      0.19,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_diplomatic_fracture",
+    "probability": 0.2833333333333334,
+    "emergent": true,
+    "description": "Key Eastern European member states, citing national security concerns and dissatisfaction with the EU's diplomatic prioritization of global oversight over regional defence, begin informal bilateral coordination with NATO and US AI defence units, bypassing EU channels. This creates a de facto split in AI governance alignment, weakening the Union's normative leverage and exposing internal strategic divergence.",
+    "probability_samples": [
+      0.3,
+      0.25,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

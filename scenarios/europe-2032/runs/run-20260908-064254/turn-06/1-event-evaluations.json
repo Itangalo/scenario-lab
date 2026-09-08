@@ -1,0 +1,142 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.07333333333333335,
+    "probability_samples": [
+      0.04,
+      0.04,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.20854333965168426,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.529170834366088,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.04,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9685205991568545,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4654235067519509,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9206972798142928,
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "ai_investment_collapse",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.03,
+      0.1,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "A consortium of European AI research labs and universities has evolved into the EU Defence AI Collaborative, receiving Horizon Europe funding to develop open-source detection tools and adversarial evaluation frameworks. It operates independently of US-led standards and is increasingly seen as a foundation for EU-specific assurance infrastructure.",
+    "emergent": true,
+    "id": "emergent_lab_cooperation",
+    "probability": 0.15,
+    "probability_samples": [
+      0.25,
+      0.2,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9255597898172604,
+    "triggered": false
+  },
+  {
+    "description": "The 'Public AI' civic coalition expands its campaign to demand democratic oversight of AI in essential services, now supported by pilot transparency portals in three major cities that allow citizens to inspect and contest algorithmic decisions in welfare and housing. The movement successfully pressures two national governments to delay automated decision-making rollouts, framing AI not as a tool of efficiency but as public infrastructure requiring accountability. Its influence grows in local elections, reshaping the political cost of unaccountable deployment.",
+    "emergent": true,
+    "id": "emergent_public_ai_initiative",
+    "probability": 0.16666666666666666,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.3687879530408328,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated coalition of mid-sized European firms, research hospitals, and municipal governments begins openly sharing AI safety validation frameworks and red-teaming results outside EU regulatory channels, treating them as too slow. This decentralized network starts publishing quarterly 'trust scores' for public AI systems, creating informal market pressure. It emerges in response to stalled EAIRC authority and rising public distrust, filling an enforcement vacuum with technical credibility.",
+    "emergent": true,
+    "id": "emergent_decentralized_safety_network",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.25
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Amid stalled graduate hiring and rising automation in law and accounting, a pan-European platform for AI-augmented freelance legal and financial advisory services gains rapid adoption, bypassing traditional firms. Backed by venture capital and using open-weight models fine-tuned on EU regulatory texts, it offers low-cost services directly to SMEs and individuals. This shifts the labour displacement narrative toward informalization rather than mere unemployment, challenging existing professional licensing regimes.",
+    "emergent": true,
+    "id": "emergent_freelance_automation_platform",
+    "probability": 0.09999999999999999,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.3
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

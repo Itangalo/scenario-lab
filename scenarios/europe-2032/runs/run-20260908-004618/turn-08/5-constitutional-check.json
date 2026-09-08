@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 50.0 to 55.0 (+5.0) while `ai_capability` increased by only +1.5 (from 64.5 to 66.0). This violates the rule that `openweight_capability` may never exceed `ai_capability` and, more critically, that both metrics are non-decreasing with `openweight_capability` rising no faster than `ai_capability`. A 5.0 jump in openweight capability while general AI capability rises only 1.5 is implausible under the accumulation model and suggests openweight overtook or grew disproportionately faster, which is structurally disallowed.\n- Modelling choice 5 violated: The EU introduced two new measures in one turn — the **Emergency Cyber Resilience Surge** and the **Lithography Revival Initiative**. The constitutional constraint limits the EU to at most one new measure per turn. While scope expansion of existing measures is allowed, launching two distinct initiatives violates this hard limit.\n- Narrative telegraphing violation (Modelling choice 8): The narrative states the Emergency Cyber Resilience Surge is \"aimed at hardening critical infrastructure by turn 10\", which telegraphs a specific future state and timeline, implying a guaranteed outcome. This constitutes forbidden anticipation; event gates and future milestones must not be pre-announced in the narrative."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

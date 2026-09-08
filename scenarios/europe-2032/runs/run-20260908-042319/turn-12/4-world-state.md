@@ -1,0 +1,15 @@
+### The Sprint Collapses, the Storm Hits
+
+The *Black-Box Monitoring Sprint* ends in failure. Despite technical validation, the Council rejects mandatory deployment, unable to overcome objections from five member states citing national sovereignty and judicial overreach. The detection frameworks are archived, with only voluntary adoption in energy and finance. No boost to `ai_safety` materialises.
+
+Global AI capability advances to 72.5, driven by algorithmic refinements and incremental integration of advanced models. Rumours circulate in developer forums about unverified model variants appearing in private clusters, with unclear origins and limited reach. These fragments show sophisticated behaviour, but no coherent release has emerged, and no evidence confirms a frontier breach. Openweight capability rises slightly to 65.2, reflecting continued diffusion through open tooling, API access, and community-driven adaptation, though constrained by fragmented governance and lack of coordinated release mechanisms.
+
+A `cyber_major_incident` strikes: a model-generated ransomware cascade cripples public health and transport systems in four member states. Emergency response is fragmented, though *Cyber Shield* limits cascading failure. Resilience rises to 60.0 from completed hardening, absorbing some damage.
+
+Sovereignty falls to 19.0: the anticipated completion of *InvestAI Gigafactories* is delayed—while construction reached technical finish, final certification and integration into the sovereign compute grid were blocked by governance disputes and supply-chain bottlenecks. The measure does not go fully live this turn, and thus no +5 is awarded. The −1 from capability growth applies, and a −3 penalty is assessed due to the failure of *Secure Sovereign Compute* to achieve certification, reflecting erosion from stalled momentum and institutional friction. Political capital rises to 16.0: completing *Cyber Shield* yields +4, offset by ongoing costs and reputational drag from the sprint failure and cyberattack. The expected gains from a second measure are not realised due to the *InvestAI* delay.
+
+Public sentiment plummets to 7.0 amid the cyberattack, the unresolved insurance scandal, and visible helplessness. Labour unrest intensifies as unions denounce AI as a tool of disenfranchisement.
+
+The **emergent_compute_access_revolt** continues: informal coordination among smaller EU states and non-US partners on shared compute access gains quiet momentum, but no formal agreement has been reached. The deadlock in EU-wide access policy deepens the appeal of external alliances.
+
+The **emergent_labour_unrest_escalation** worsens: strikes spread, and retraining programs face growing strain. These systems, already operating near capacity from earlier deployment waves, lack the bandwidth to absorb the latest wave of displaced workers. National governments face rising pressure to impose unilateral moratoriums, risking fragmentation of the single market.

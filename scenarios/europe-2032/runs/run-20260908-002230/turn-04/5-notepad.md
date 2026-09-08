@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Open-Weight Security Baseline −3, Sovereign Evaluation Consortium −3, Secure the Middle Power Coalition Framework −3, priority −1 = −16  
+PROPOSAL BONUS: Secure the Middle Power Coalition Framework (cat 8, large) +5 — directly responds to supply_chain_coercion and middle_power_coalition within three turns  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 23 last turn, middle_power_coalition t4 +2, capability rose 1.5 < 2 → no decay, Secure the Middle Power Coalition Framework in flight +1, no capacity event = 26 → but rule 5 limits event gain to +2 and momentum +1 → 25

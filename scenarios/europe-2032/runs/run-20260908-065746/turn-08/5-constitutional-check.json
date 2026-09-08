@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 53.0 to 62.0 (+9.0), but `ai_capability` only increased from 64.0 to 65.5 (+1.5). This violates the rule that `openweight_capability` never exceeds `ai_capability`. At the proposed values, `openweight_capability` (62.0) is within 3.5 points of surpassing `ai_capability` (65.5), which is impermissible under any circumstance unless `ai_capability` is simultaneously higher. The narrative does not describe a catastrophic physical destruction of the compute base that would justify a drop in `ai_capability`, nor does it justify such a large leap in openweight capability relative to the frontier.\n- Invariant 9 violated: `openweight_capability` increases by 9.0 points in one turn (from 53.0 to 62.0), which exceeds the hard cap of 25 points per turn. While 9 is less than 25, this check confirms that the rule is not violated by magnitude alone — however, the prior violation of the `openweight_capability` ≤ `ai_capability` invariant remains dispositive."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

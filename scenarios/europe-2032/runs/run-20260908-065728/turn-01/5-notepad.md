@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3, priority −1 = −10  
+PROPOSAL BONUS: Emergency Resilience Surge (cat 6, large) +3 — cyber_test_shot exposed undetectable intrusions in critical infrastructure, justifying urgent preparedness  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22 last turn, no capacity event, capability rose 2.5 −1 = 21  
+emergent_cyber_defence_coalition -- first noted turn 1, listed in 1 turn(s) so far: Defensive tooling closes the gap for a whole class of attack – automated patching at the speed vulnerabilities are found, or detection that catches swarm behaviour rather than signatures – and the offence-defence balance visibly shifts back for the first time in years.  
+emergent_ai_research_consortium -- first noted turn 1, listed in 1 turn(s) so far: In response to the Kimi K3 release and the demonstrated offensive capabilities now in the wild, a coalition of European research universities, public AI labs, and cybersecurity agencies forms an informal but coordinated network to study and counter emerging threats from open-weight models. The consortium begins pooling data, running red-team exercises, and publishing defensive techniques, accelerating EU-specific preparedness without requiring new legislation or funding.

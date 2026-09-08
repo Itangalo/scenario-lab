@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: EU-Wide Telemetry and Audit Mandate −3, EU Authority for Real-Time AI Incident Detection and Response −3, Sovereign AI Compute Corridors −3, priority −1 = −10  
+PROPOSAL BONUS: Sovereign AI Compute Corridors (cat 4, large) +3 — directly answers eval_anomaly_reports and underpins all oversight by securing access  
+LEGITIMACY LENDS: none — capital 23.0, sentiment 28.0  
+SOVEREIGNTY: 15.0 last turn, InvestAI Gigafactories finishes t7 +5, Sovereign AI Compute Corridors started +1, no capacity event, capability rose 1.5 −1 = 21.0  
+`emergent_regulatory_fracture` -- first noted turn 4, listed in 5 turn(s) so far: Germany, Austria, and Belgium enforce strict limits on AI training runs and data centre expansion, while France and Nordic states pursue sovereign capability through relaxed oversight. Legal uncertainty grows for cross-border AI operations.
+`emergent_regulatory_backlash_institutionalized` -- first noted turn 4, listed in 5 turn(s) so far: National parliaments in Germany, Sweden, and Belgium pass non-binding resolutions calling for moratoriums on large-scale AI training runs exceeding 10^25 FLOP, citing energy and labour disruption. Cross-border alignment outside EU channels grows.
+`emergent_labour_unrest` -- first noted turn 6, listed in 3 turn(s) so far: Coordinated strikes emerge in public administration and legal services across several member states as mid-level professionals face displacement from AI systems capable of drafting legislation, reviewing contracts, and managing casework. Unions demand binding safeguards and retraining guarantees, framing the issue as one of dignity rather than mere transition.
+US_POSTURE: CONSOLIDATION

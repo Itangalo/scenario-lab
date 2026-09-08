@@ -1,0 +1,19 @@
+No statement changes.
+
+## Portfolio
+- ``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
+- ``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
+- ``Worker Transition Acceleration Fund (category 7, costs 3 per turn, started turn 1, finishes on turn 5): Establishes an EU-level rapid-response mechanism to support displaced workers in administrative, legal support and junior software roles, with wage insurance, retraining pathways and incentives for firms to redeploy talent``
+- ``Cyber Shield for Critical Infrastructure (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Launches a binding, EU-wide hardening programme for energy, transport and health infrastructure against AI-enabled intrusion, including mandatory red-teaming, zero-trust architecture rollout, and real-time anomaly detection using sovereign AI systems``
+
+## New measure
+None this turn.  
+We are waiting for the first red-teaming results from the Cyber Shield pilot and for clarity on Poland’s position on environmental waivers before committing further capital.
+
+## Priority
+Cyber Shield for Critical Infrastructure — because without securing essential services against AI-enabled attack, no amount of sovereign compute or worker retraining will preserve the stability on which both mandates depend.
+
+## In practice
+We are executing the Cyber Shield mandate through binding acts issued under Article 18 of the Cyber Resilience Act and the emergency powers of NIS2, with ENISA delivering implementation timelines by end-September and requiring all critical operators to adopt zero-trust architectures by Q2 2028. The €15 billion support fund is being disbursed through a blended mechanism: 70% from Digital Europe and REACT-EU surpluses, 30% co-financed nationally, with disbursement conditional on audit-readiness by December. The Joint Threat Emulation Cell in Romania is now operational, conducting red-team simulations using AI agents trained to mimic known adversarial tactics, with findings feeding into ENISA’s baseline configuration standards. Member states with limited cyber capacity—particularly in the Baltics and parts of Southern Europe—are receiving technical assistance from the EU Cybersecurity Competence Centre, but resistance persists in Germany and Austria over data sovereignty concerns in shared detection systems.
+
+On the industrial front, we are pressing ahead with grid acceleration for the InvestAI Gigafactories in Finland and Spain under the TEN-E emergency clause, with the Commission fast-tracking environmental assessments to meet Q1 2028 connection targets. In Poland, we have opened a high-level dialogue with the Ministry of Climate and Environment, offering targeted cohesion funds for green transition in exchange for expediting the environmental waivers needed for IPCEI eligibility—failure to comply by February will trigger a review of Poland’s access to future IPCEI designations. The Tech Sovereignty Package continues to gain quiet support, with nine member states now aligned on AI infrastructure zones, though we are preparing legal countermeasures in case the CJEU challenges the proposed environmental derogations. Meanwhile, we are using the momentum from the tripartite summit to finalise the Worker Transition Acceleration Fund, with the Commission drafting an Article 122 TFEU decision to unlock disbursement by Q1 2028, tied to real-time re-employment dashboards in high-displacement regions.

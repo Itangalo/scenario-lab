@@ -1,0 +1,50 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_lab_defection",
+    "probability": 0.31666666666666665,
+    "emergent": true,
+    "description": "Frustrated by the EU's inability to translate technical coordination into policy or funding, several leading AI laboratories quietly enter bilateral agreements with the United States for evaluation access and compute sharing, citing national security alignment. The move bypasses Brussels entirely and is framed as continuity of research, but it effectively integrates their safety workflows into an American perimeter.",
+    "probability_samples": [
+      0.25,
+      0.35,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_worker_cooperatives_ai",
+    "probability": 0.2333333333333333,
+    "emergent": true,
+    "description": "In response to widespread job displacement and distrust in institutional AI governance, worker cooperatives in Germany, Spain, and Belgium begin developing open-source AI tools tailored to union-led retraining and workplace monitoring, funded by municipal grants and solidarity funds. These tools focus on transparency and worker agency, gaining traction as a bottom-up alternative to state or corporate systems.",
+    "probability_samples": [
+      0.2,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

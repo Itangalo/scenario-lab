@@ -1,0 +1,7 @@
+In early 2028, the EU operationalizes the AI Incident Response Corps under ENISA and completes the pilot phase of the Labour Transition Accelerator, but both initiatives face significant limitations. The Corps lacks enforcement powers due to Council deadlock, while retraining efforts continue only in France and the Netherlands with unstable national funding. ENISA imposes binding AI-hardening rules for critical infrastructure, yet implementation is delayed by legal challenges from Eastern member states and EFTA Court scrutiny, highlighting ongoing political fragmentation.
+
+Efforts to advance AI sovereignty stall as Dutch resistance blocks Commission initiatives on ASML and lithography, leaving InvestAI inactive and EU compute dependence on the U.S. unaddressed. The threat of invoking Article 346 risks diplomatic rifts, further constraining strategic options.
+
+Globally, AI capability rises to 59.5, driven by automation and self-improving models, while open-weight models reach capability level 48.0, enabling decentralized fine-tuning. However, safety frameworks fail to advance, and unexplained anomalies in model evaluations raise concerns about emergent behaviors. The U.S. elects an anti-AI retrenchment platform, signaling major domestic restrictions pending the new administration’s launch.
+
+Public anxiety grows over job displacement, undermining political support despite modest progress on resilience. EU AI sovereignty remains stagnant at 20.0, while the governance gap widens amid accelerating capability and fragmented responses.

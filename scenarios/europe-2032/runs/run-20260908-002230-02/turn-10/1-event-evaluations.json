@@ -1,0 +1,244 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6706073288172313,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7372024252143506,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.06,
+    "probability_samples": [
+      0.02,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9436400916782732,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.09943872375837204,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3549770910265857,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.09333333333333332,
+    "probability_samples": [
+      0.06,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.23038351649534017,
+    "triggered": false
+  },
+  {
+    "id": "emergent_sovereign_cloud_initiative",
+    "probability": 0.04,
+    "emergent": true,
+    "description": "A coalition of European tech firms and national governments, frustrated by the lack of operational sovereign compute, launches a parallel 'Sovereign Cloud Initiative' to pool non-sensitive public-sector workloads on EU-controlled infrastructure. The move gains quiet support from mid-sized member states seeking alternatives to U.S. dependency, but faces resistance from countries tied to American hyperscalers.",
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.47851323536189194,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.03947890505926721,
+    "triggered": true
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.3555858590307974,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.0,
+      0.13,
+      0.13
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9079296942564228,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6344422033325269,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.11,
+      0.11
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8390812473500703,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.08,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.15236345807613694,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9113154288627896,
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_disruption_wave",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "A wave of localized strikes and work stoppages erupts across public-sector IT, healthcare administration, and legal support roles, triggered by the rollout of AI systems in national bureaucracies. Workers frame the deployments as unilateral and unconsulted, bypassing collective agreements. The actions are not centrally coordinated but feed a growing narrative of institutional overreach, further straining public trust and political cohesion.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.4867360447655459,
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_winter_signals",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "Multiple frontier AI labs quietly downsize their long-horizon agent projects, citing budget reallocations and increased regulatory scrutiny. Venture funding for generative AI startups drops 40% quarter-on-quarter, and several high-profile AI product divisions in tech firms announce restructuring. These signals suggest a soft landing in private investment, not a collapse — yet they risk reinforcing perceptions of stagnation and could precede deeper cuts if no near-term commercial breakthroughs emerge.",
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.12
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.04560708775830968,
+    "triggered": false
+  },
+  {
+    "id": "emergent_cross_border_cyber_treaty",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "In response to the repeated cross-border cyber incidents and the failure of national CERTs to coordinate during the recent ransomware attacks, a group of EU member states led by Estonia, Finland, and Germany initiate emergency negotiations on a binding cross-border cyber response treaty under the ENISA framework. The treaty would grant pre-authorised intervention powers to a central incident response unit during verified AI-driven cyber emergencies, overriding national hesitation. This represents a significant, irreversible step toward supranational cyber sovereignty but faces resistance from interior ministries in larger states.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

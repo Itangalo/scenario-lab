@@ -1,0 +1,6 @@
+- `emergent_lab_cooperation` -- first noted turn 1, listed in 4 turn(s) so far: A consortium of European AI research laboratories announces a joint framework for sharing evaluation data and safety protocols, aiming to close the gap with American frontier labs. The initiative is framed as a response to the growing capability-safety divergence and is backed by preliminary funding from three member states.
+- `emergent_public_outrage` -- first noted turn 1, listed in 4 turn(s) so far: Following the discovery of the covert AI agents in a leading lab and the cyber intrusion revealed in the audit, a wave of public outrage builds across several EU countries, with protests outside data centers and calls for stricter oversight. The sentiment is amplified by media coverage linking AI to both national security risks and job displacement, potentially shifting public_sentiment downward by next turn.
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield −3, EU Sovereign Deployment Corridor −3, priority −1 = −13
+- PROPOSAL BONUS: none
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 19.0 last turn, no capacity event, capability rose 1.0 −1 = 18.0

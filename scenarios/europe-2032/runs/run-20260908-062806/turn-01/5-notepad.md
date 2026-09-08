@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield −3, priority −1 = −10  
+PROPOSAL BONUS: Cyber Shield (cat 6, large) +3 — cyber_test_shot landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22.0 last turn, no capacity event, Gigafactories in flight +0, Tech sovereignty package in flight +0, capability rose 2.5 −1 = 21.0  
+US_POSTURE: not yet determined  
+emergent_ai_research_sabotage -- first noted turn 1, listed in 1 turn(s) so far: A coordinated disinformation campaign targeting preprints and conference submissions from leading AI labs emerges, sowing confusion about model capabilities and safety benchmarks. It is later traced to a non-state actor exploiting open-weight models to generate plausible but subtly flawed technical content at scale, undermining trust in the research pipeline.  
+emergent_labour_displacement_wave -- first noted turn 1, listed in 1 turn(s) so far: Widespread job losses in legal, administrative and mid-level tech roles become visible across multiple EU member states as firms rapidly adopt AI systems capable of handling document-intensive workflows. Media coverage intensifies, linking AI directly to unemployment in white-collar sectors, and trade unions begin coordinating cross-border responses.

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 57.0 to 59.0 (+2.0), but `ai_capability` only increased by +1.5 (from 70.0 to 71.5). Since `openweight_capability` must never exceed `ai_capability` and both are accumulation metrics that cannot fall (except under catastrophic physical destruction, which is not narrated), this creates a violation: `openweight_capability` is now too close to or potentially exceeding the implied ceiling set by `ai_capability`. Even if not strictly exceeding, the rate of growth relative to `ai_capability` is inconsistent with the constitutional requirement that `openweight_capability` lags and does not outpace `ai_capability` in growth unless justified by narrative mechanism (none provided here).\n- Narrative violates Constitutional Constraint 8 (\"No metric moves more than 25 points in one turn\") is not violated numerically, but the **narrative telegraphs** by stating that the \"clinical triage pilot will launch in July\" — a specific future event with a named timeline. This violates Constraint 8: \"The narrative must not telegraph. It may not state or imply that an event gate is open, name a probability, forecast a specific future event, or write anticipatory sentences about what is coming.\" The phrase \"will launch in July\" is a direct forecast and belongs only in event gates, not narrative.\n- Organizational Constraint implied by Modelling Choice 5: The EU introduces two new measures in one turn — \"Sovereign AI Core for Critical Functions\" (finalised, but treated as newly activated) and \"Accelerated Sovereign Compute Buildout\" (launched). While one may be framed as completion, the narrative presents both as active new policy commitments in this turn. Modelling Choice 5 limits the EU to \"at most one new measure per turn\". Introducing both violates this rule unless one is clearly a continuation or expansion of an existing measure, which is not established here."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

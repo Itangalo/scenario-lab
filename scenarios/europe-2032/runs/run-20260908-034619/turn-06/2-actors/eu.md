@@ -1,0 +1,29 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Maintain sovereign control over AI capability sufficient to resist coercion and prevent catastrophic harm, and ensure public institutions have independent technical capacity to evaluate and challenge systems without relying on foreign infrastructure or goodwill  
+- Grounds: The US election outcome and the benefits scandal have exposed a critical gap: sovereignty is not just about access to capability, but about the ability of public institutions to independently verify and contest it. The new phrasing integrates the lesson of this turn — that control without scrutiny is hollow — while keeping the original commitment’s core intact. The scandal demonstrated catastrophic harm arising from opaque automation, and the US overture confirmed that access under alignment conditions is not control. The addition strengthens, rather than reverses, the original intent.
+
+## Portfolio
+- ``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
+- ``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
+- ``Counter extraterritorial pressure on EU industrial capacity (category 8, costs 3 per turn, started turn 2, finishes on turn 5): Launch a coordinated legal, diplomatic, and industrial response to defend EU semiconductor sovereignty against U.S. extraterritorial enforcement targeting ASML`` — **finished**
+- ``Launch the Regional Data Resilience Pact (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Establish a binding, EU-coordinated network for real-time cyber incident detection, data sharing, and joint response among critical infrastructure operators across member states`` — **finished**
+- ``Establish the European AI Talent Shield (category 4, costs 3 per turn, started turn 4, finishes on turn 6): Create a pan-EU programme to retain and repatriate frontier AI talent through guaranteed access to sovereign compute, fast-track research visas, and co-funded career pathways in public technical institutions``
+- ``Launch sovereign compute access for public technical institutions (category 5, costs 3 per turn, started turn 5, finishes on turn 7): Provide guaranteed, high-priority access to EU-controlled frontier compute clusters for public evaluators, red teams, and safety researchers to strengthen operational oversight and independent analysis``
+
+## New measure
+**Establish public right to explanation and redress in AI-mediated public services**  
+Create a legally enforceable right for individuals to receive clear, auditable reasons for AI-assisted administrative decisions and to challenge them through fast-track review.
+
+`Category: 3 (Limits and restrictions)`  
+`Size:` large  
+`Finishes on turn:` 8  
+`Targeted effect:` Improve `ai_safety` (+4 to +6) by forcing transparency in high-impact public-sector deployments; boost `public_sentiment` (+8 to +12) by responding visibly to the scandal; reinforce `eu_political_capital` by demonstrating accountability. Risk of resistance from member states with entrenched automated systems.  
+`Applies to:` All EU member states, for AI systems used in welfare, immigration, tax, and public employment services.
+
+## Priority
+**Priority:** *Establish public right to explanation and redress in AI-mediated public services* — because the benefits scandal has shattered public trust, and no amount of sovereign compute or private-sector cooperation matters if the Union cannot demonstrate that people are protected from harm when systems fail; this turn, legitimacy is the line of greatest leverage.
+
+## In practice
+We are closing the first two-year cycle under a cloud of betrayal. The ombudsman report on the member state’s AI welfare system is not just a policy failure — it is a moral one. Thousands denied care, appeals buried in automated silence, oversight bodies overruled by efficiency metrics. This is what happens when capability outpaces control, and when public institutions lack the tools to push back. The US election offered a glimmer of cooperation, but it also offered a trap: structured access in exchange for alignment. We cannot let foreign approval substitute for sovereign scrutiny. That is why we are doubling down on the public compute access policy — now live, though still scaling — and why we are embedding red teams at ENISA and EAEVA with priority scheduling on Gigafactory clusters. This is not just infrastructure; it is the beginning of a capability to say *no*.
+
+But infrastructure alone will not restore trust. The Regional Data Resilience Pact and the Counter Extraterritorial Pressure initiative finish this turn, delivering modest gains in resilience and supply security — real, but invisible to the public. Meanwhile, protests grow, and the narrative is clear: AI is being used against people. So we act where the harm landed. We are drafting a directive under Article 114 TFEU to establish a binding right to explanation and redress in AI-mediated public services. The legal anchor is Article 41 of the Charter, the right to good administration. We will require impact assessments, public audit logs, and fast-track review panels in every member state — funded through cohesion penalties for non-compliance. France and Finland are already piloting models we can scale. Germany resists, fearing federal overreach, so we offer co-financing from the Just Transition Fund. This is not a restriction on AI — it is a restoration of dignity. And if it costs political capital now, it may earn it back when people see that the Union stands between them and the machine.

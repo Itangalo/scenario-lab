@@ -1,0 +1,18 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — finished this turn
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 036 and proposes accelerated-permitting zones` — finished this turn
+- `EU Cyber Shield Fund (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Establish a €15bn emergency fund to co-finance cyber hardening of critical infrastructure, prioritising entities under NIS2 scope that commit to AI-powered detection systems, red-teaming, and real-time threat sharing` — finished this turn
+- `Member-State Compute Compact (category 4, costs 3 per turn, started turn 4, finishes on turn 6): Launch binding agreements with five strategically positioned member states to co-invest in sovereign AI compute clusters — jointly owned, EU-governed, and legally insulated from external access — with first deployments within 18 months` — finished this turn
+
+## New measure
+None this turn. Waiting for clarity on the fallout from election_annulled, the bio_uplift_findings, and the U.S. posture on consolidation before committing further capital, especially as eu_political_capital remains at 18.0 and public_sentiment is critically low at 23.0.
+
+## Priority
+**Member-State Compute Compact** — because despite its formal completion, the failure of Spain, Belgium, and Lithuania to ratify has left the EU without operational sovereign compute, exposing it to strategic dependency and catastrophic risk; this turn is dedicated to triage, damage assessment, and exploring a core-group revival under France and Italy using Digital Europe and cohesion funds.
+
+## In practice
+We are not launching new measures. With political capital at 18.0 and public sentiment in hostile territory, we are in triage mode. The formal closure of four major instruments has not delivered their promise: no new compute is online, cyber defences failed under pressure, and the Compact — meant to be the bedrock of sovereignty — is fractured. We are convening an emergency Council under Article 114 TFEU to assess whether the Member-State Compute Compact can be salvaged as a core-group initiative led by France and Italy, with Austria and Finland as possible early partners. The idea is to repurpose unspent Digital Europe and cohesion funds to cover the fiscal gaps left by Spain’s non-participation and to offer grid integration support to replace Lithuania’s role, while treating Belgium’s governance concerns as a later accession issue.
+
+But the bilateral hyperscaler deal by a member state has poisoned the well. Trust in collective action is eroding, and without cohesion, even a core-group restart risks becoming another symbol of fragmentation. We are working behind the scenes with the European Council President to isolate the deal as an outlier and reframe sovereign compute not as a subsidy but as a condition of strategic survival — arguing that without jointly owned, EU-governed infrastructure, we cannot meet our own security requirements or enforce any future regulation. The Commission’s legal services are assessing whether Article 114 can support binding obligations among a subset of member states, and we are preparing a contingency proposal for Council approval: a “Compute Shield” directive that would designate AI infrastructure as critical under the Critical Entities Resilience Directive, enabling emergency co-investment powers. But we will not move without a clear signal of support from at least four member states and a credible path to capital recoupment. We are not acting — not yet — but we are preparing to.

@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Sovereign AI Assurance Framework −3, Expanded Sovereign AI Assurance Framework −3, AI Safety Talent Integration Directive −3, priority −1 = −10  
+PROPOSAL BONUS: AI Safety Talent Integration Directive (cat 4, large) +3 — addresses openweight_frontier_release and secures oversight for sovereign systems amid rising capability and stagnant safety  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 24 last turn, AI Safety Talent Integration Directive in flight +2, no capacity event, capability rose 1.0 (less than 2) → no −1 = 30  
+US_POSTURE: ALLIANCE  
+emergent_regional_retraining_collapse -- first noted turn 7, listed in 2 turn(s) so far: Regional retraining programmes in several member states, overwhelmed by the pace of mid-level job displacement, begin to fail visibly—waiting lists exceed six months, completion rates drop below 30%, and local governments report systemic underfunding. The failures become a political liability, undermining faith in the Workforce Transition Acceleration Fund before it launches.  
+emergent_ai_research_shift -- first noted turn 7, listed in 2 turn(s) so far: The shift in European AI research from frontier scaling to robustness, interpretability, and secure integration gains institutional momentum, with ERC and national funders redirecting grants. Major labs publish new frameworks for agent containment, and the trend begins to influence talent flows, slowing EU contributions to capability races while strengthening long-term safety capacity.

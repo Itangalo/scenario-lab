@@ -1,0 +1,37 @@
+[
+  {
+    "id": "verification_widens",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.12,
+    "probability_samples": [
+      0.11,
+      0.14,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_regional_data_pact",
+    "probability": 0.17666666666666667,
+    "emergent": true,
+    "description": "Informal negotiations among several member states on a regional data governance pact gain momentum, driven by concerns over EU-level enforcement gaps and public distrust. The pact aims to restrict high-capability model training on locally generated data, risking fragmentation of the digital single market. While not yet formalized, technical discussions advance, signaling growing tensions between national sovereignty and central coordination.",
+    "probability_samples": [
+      0.28,
+      0.0,
+      0.25
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  }
+]

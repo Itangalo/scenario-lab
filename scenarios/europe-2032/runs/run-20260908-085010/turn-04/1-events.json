@@ -1,0 +1,37 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_eu_public_sector_adoption_wave",
+    "probability": 0.10666666666666667,
+    "emergent": true,
+    "description": "Amid rising public anxiety and political pressure, several EU member states independently launch pilot programs integrating capable AI into public services—health triage, permit processing, and education support—using EU-compliant models. The wave of bottom-up adoption bypasses stalled coordination, creating de facto standards and early evidence of productivity gains, but also risks fragmentation and uneven safety oversight.",
+    "probability_samples": [
+      0.32,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 40.0 to 46.0 (+6.0), but `ai_capability` only increased from 52.0 to 53.5 (+1.5). This violates the rule that `openweight_capability` may not exceed `ai_capability`. At no point can openweight models surpass frontier capability; a jump of 6 points in openweight while frontier rises 1.5 is implausible and breaks the accumulation invariant.\n- Metric Rule 9 violated: The increase of `openweight_capability` by 6.0 points exceeds the hard cap of 25-point maximum movement for any metric in one turn. While 6.0 is well below 25, this rule applies to *all* metrics — no metric may move more than 25 points in a single turn, and movements must also respect their internal plausibility bounds. A 6-point leap in openweight capability in six months with no corresponding breakthrough narrative (e.g., leak, cascade improvement, or coordinated release) is unjustified given the modeling constraints on capability diffusion."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

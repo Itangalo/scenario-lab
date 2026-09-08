@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 48.0 to 54.0 (+6.0) while `ai_capability` increased from 60.0 to 61.5 (+1.5). This violates the rule that `openweight_capability` must not exceed `ai_capability`. At no point can openweight models surpass frontier capability, and a six-point jump in openweight versus only 1.5 in frontier capability—especially without any corresponding safety or containment narrative—is structurally invalid.\n- Modelling choice 5 violated: The EU has more than one measure in flight without a clear single priority. The notepad lists four active measures (InvestAI Gigafactories, Sovereign AI Sentinel Programme, Critical Infrastructure AI Shield Initiative, and a priority charge), with a total portfolio charge of −10 and a priority −1. However, the narrative introduces the **Critical Infrastructure AI Shield Initiative** as a new large measure while still carrying two other major programmes (Sentinel and repurposed Gigafactory funds) as active. This exceeds the \"at most one new measure per turn\" rule. Even if prior measures are winding down, introducing a new category 6 measure while others are still in flight violates the constraint.\n- Invariant 9 violated: `public_sentiment` drops from 22.0 to 17.0 (−5.0) and `ai_safety` drops from 22.0 to 17.0 (−5.0), which is acceptable, but `eu_political_capital` drops from 25.0 to 22.0 (−3.0) while `eu_ai_sovereignty` drops from 14.0 to 13.0 (−1.0). However, the narrative attributes political capital erosion to \"three large measures and a priority\", implying a systemic overextension. The portfolio charge of −10 suggests a deeper drain. While not a direct point violation of the 25-point cap, the combination of metric movements and narrative implies a larger systemic strain than the numbers reflect. More critically, the **openweight_capability** jump of +6.0 exceeds the 25-point hard cap on *any* metric movement in one turn only if interpreted absolutely, but +6.0 is within bounds—so this part is *not* a violation of Invariant 9. However, the **openweight > ai_capability** issue remains fatal."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

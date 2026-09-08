@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Constitutional Constraint 2 violated: `openweight_capability` increased from 62.0 to 71.0 (+9.0), which is a valid rise, but the narrative states that \"fragments of recent agent-grade models leak through developer sandboxes and are reassembled via distributed compute pools.\" This implies a sudden, unannounced leap in openweight capability not grounded in accumulated progress. The constraint requires `openweight_capability` to only rise through accumulation and explicitly forbids decreases unless due to catastrophic physical destruction. While the metric itself does not fall, the mechanism described — sudden leaks and reassembly — bypasses the required gradual, accumulation-based growth, violating the spirit and letter of the invariant.\n- Constitutional Constraint 9 violated: `ai_safety` drops from 5.5 to 0.0 (a change of −5.5), which is within the 25-point cap, but the narrative claims it \"crashes by −12.0, crossing into single digits at −6.5\". This results in a final value of −6.5, yet the proposed metric is listed as 0.0. This discrepancy between the narrative (−6.5) and the proposed metric (0.0) constitutes a direct violation of the requirement that the metrics and narrative align. The final value in the metric block must reflect the described change.\n- Modelling Choice 8 violated: The narrative telegraphs future events by stating \"This is a precursor: it opens the bio gate for the next 4 turns.\" This explicitly reveals the state of an event gate (the bio gate) and forecasts its availability over a defined future period, which is prohibited under Constraint 8. Tension and ambiguous reporting are allowed, but stating that a gate is \"opened\" and will remain so for a specific duration is telegraphing and belongs only in event evaluations, not the narrative."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

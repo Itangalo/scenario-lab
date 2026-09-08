@@ -1,0 +1,28 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Secure sovereign runtime control over AI systems essential to EU survival and resilience, and ensure that such systems remain under meaningful human authority even as their capability exceeds 70.0 — now revised to prioritise *enforceable disconnection* over *continuous runtime monitoring*, in light of eu_frontier_access_denied and the collapse of public_sentiment. The focus shifts from detecting anomalies to guaranteeing operational continuity when external AI services fail or are weaponised by withdrawal.  
+- Grounds: The **eu_frontier_access_denied** event has fundamentally altered the calculus: the Union can no longer assume access to critical AI capabilities, even for essential services. Hospitals, ministries, and infrastructure operators were left blind and immobilised. This is not a failure of safety architecture — it is a failure of sovereignty. The original commitment assumed that we could monitor and intervene in systems we depend on; now we must assume that those systems may vanish overnight. The **bio_uplift_findings** reinforce this, showing that the frontier is accelerating beyond governance, but the immediate threat is not rogue AI — it is orphaned infrastructure. We are no longer securing runtime control over foreign systems; we are rebuilding sovereign capability to replace them. This reversal costs legitimacy with developers and markets, but preserves survival.
+
+## Portfolio  
+- `Mandate Runtime Sovereignty in Critical Functions (category 3, costs 3 per turn, started turn 10, finishes on turn 13): Require all AI systems above 60.0 capability operating in or interfacing with EU critical infrastructure to integrate EU-controlled runtime monitoring and intervention hooks, enabling immediate detection, isolation, and shutdown of anomalous behaviour` — **finished this turn**  
+- `Establish Emergency Override Protocols for AI-Controlled Critical Infrastructure (category 6, costs 3 per turn, started turn 12, finishes on turn 14): Define and deploy legally binding, technically enforced escalation pathways that allow designated EU and member-state authorities to suspend, redirect, or terminate AI-driven decisions in energy, transport, and health systems during instability events`  
+- `Operationalise Crisis Override Triggers in Critical Infrastructure via Binding EU-Enforced Thresholds (category 6, costs 3 per turn, started turn 13, finishes on turn 15): Deploy and activate real-time, automated override triggers in AI systems managing energy, health, and transport, based on pre-defined deviation thresholds from safe operational baselines, with enforcement tied to access to the sovereign compute grid and Digital Europe funding`
+
+## New measure  
+**Launch Sovereign Compute Surge for Critical Functions to Restore Operational Continuity**  
+Stand up emergency EU-operated AI infrastructure on EU soil, using repatriated workloads from now-inaccessible systems to justify immediate compute expansion, prioritising health, energy, and civil protection.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 18`  
+`Targeted effect: eu_ai_sovereignty +15 (by establishing independent high-capacity runtime), resilience +6 (by reducing dependency on volatile external services), eu_political_capital +2 (if successful, as a demonstration of agency), public_sentiment +4 (if linked visibly to service restoration)`  
+`Applies to: EU institutions, national health agencies, ENTSO-E, ERSA, and civil protection services currently dependent on now-denied foreign AI systems`
+
+## Priority  
+**Launch Sovereign Compute Surge for Critical Functions to Restore Operational Continuity** — because **eu_frontier_access_denied** has created an immediate operational crisis in hospitals and ministries, and no override protocol can save a system that has already gone dark; we must now act as infrastructure provider, not just regulator, or lose all authority.
+
+## In practice  
+We are acting on the conviction that sovereignty is not a feature — it is the foundation. The **eu_frontier_access_denied** event has left critical functions blind: radiology pipelines halted in Madrid, grid optimisation failed in Warsaw, refugee processing stalled in Athens. We cannot override what is no longer there. The Emergency Override Protocols remain vital, but they are now a safeguard for what remains, not a shield for what has fallen. We are shifting from oversight to replacement.
+
+Under Article 122 TFEU and the Union Civil Protection Mechanism, we are launching an emergency compute surge. The Digital Europe Programme and Connecting Europe Facility are being redirected to fund the immediate deployment of sovereign AI clusters in Luxembourg, Helsinki, and Bologna — physically isolated, legally anchored, and operationally redundant. We are repatriating workloads from now-inaccessible systems, starting with oncology diagnostics and cross-border patient records. The European High-Performance Computing Joint Undertaking will manage procurement, bypassing national bottlenecks, with chip supply secured through pre-existing agreements with ASML and Infineon. We are offering member states guaranteed access in exchange for waiving local siting delays.
+
+This is not a long-term frontier race — it is a lifeline. We are not building the most capable system in the world; we are building one that does not disappear when called upon. The **bio_uplift_findings** remind us of the risks ahead, but the present is already a crisis. We are using the collapse of trust not to retreat, but to rebuild — not smarter, but ours.

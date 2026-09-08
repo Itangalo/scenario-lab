@@ -1,0 +1,13 @@
+### The Fracture Widens
+
+The EU doubled down on strategic autonomy, launching the ASML Alignment Safeguard Initiative to assert control over export licensing of critical semiconductor equipment. Framed as a defense of industrial sovereignty, the move sought to counter U.S. pressure on ASML to restrict older DUV systems—technology foundational to automotive and industrial AI. Yet the initiative immediately strained transatlantic ties, with Washington characterizing it as protectionism disguised as security. Behind closed doors, diplomats warned of retaliatory measures on data flows and joint research access, chilling prospects for cooperation.
+
+Domestically, the Competitiveness Council convened an emergency review, but pushback emerged from member states reliant on American investment. The proposed EU Export Integrity Board faced legal challenges over its authority under Article 121, delaying its formation. While the political signal was clear, concrete leverage remained elusive.
+
+Meanwhile, the Cyber Shield Emergency Protocol achieved partial success. ENISA reported improved patch deployment and threat-sharing across 78% of critical operators, and a joint red-team exercise exposed dangerous vulnerabilities in hospital networks—prompting emergency upgrades. Yet two member states still lagged in compliance, citing fiscal strain and sovereignty concerns, undermining the bloc’s unified posture.
+
+On the industrial front, the InvestAI Gigafactories remained delayed by environmental disputes, despite new monitoring proposals. The Tech Sovereignty Package advanced in trilogue, but only after diluting green commitments. The Labour Transition Fund expanded its cyber-skills linkage, yet automation in logistics accelerated faster than retraining could keep pace.
+
+Public sentiment dipped as media spotlighted job losses and the ASML dispute stoked fears of isolation. Political capital eroded under the weight of multiple initiatives, though not as severely as initially feared, as the Council consolidated focus around the Cyber Shield Emergency Protocol as its current priority. The other measures remained active but progressed at reduced pace, reflecting constrained bandwidth and mounting coordination costs.
+
+Globally, AI capability rose to 58.0, driven by more stable agent frameworks now enabling sustained coordination. Open models improved moderately, with openweight capability reaching 45.0, reflecting incremental gains in accessibility and tooling—but still trailing frontier systems, which advanced more rapidly in closed environments. Safety concerns deepened as opaque reasoning persisted and no safeguards landed on frontier systems.

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 56.0 to 60.0 (+4.0), but `ai_capability` only increased by +0.5 (from 69.5 to 70.0). Since `openweight_capability` must never exceed `ai_capability` and both are accumulation metrics that cannot fall (except under catastrophic physical destruction, which is not narrated), the proposed `openweight_capability` of 60.0 is invalid because it would exceed the previous `ai_capability` value of 69.5 by the time `ai_capability` reaches 70.0. Even if `ai_capability` is now 70.0, `openweight_capability` may not surpass it at any point. The narrative does not describe a catastrophic compute destruction event justifying any drop in `ai_capability` relative to `openweight_capability`, nor does it justify such a large leap in openweight capability ahead of frontier progress.\n- Modelling choice 5 violated: The narrative introduces two new emergent events — `emergent_cross_border_labor_mobility_pact` and `emergent_ai_refugee_narrative` — both first noted in turn 12 and now listed in two turns. However, the constitutional constraint limits the EU to at most one new measure per turn. While these are labeled \"emergent\" and not formal EU measures, the notepad treats them as active developments with narrative persistence and potential metric impact. If they are considered policy-relevant measures, introducing two in the same timeframe violates the \"one new measure per turn\" rule. The notepad does not clarify which, if either, is official EU policy, creating ambiguity that risks violating the constraint on measure proliferation. To comply, only one should be treated as a formal new measure; the other must be framed as background trend or subsumed."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

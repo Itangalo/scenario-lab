@@ -1,0 +1,14 @@
+### Strategic Reorientation Amid Crisis  
+The EU declared a new strategic clarity: sovereignty now means not just compute and chips, but political cohesion under external shock. The Taiwan blockade froze access to advanced packaging and mature-node semiconductors, turning every petaflop into a national security asset. In response, the Commission invoked qualified majority voting under the European Chips Act to bypass member-state vetoes on InvestAI Gigafactory sites, offering holdouts equity stakes in a Union-wide operating consortium. Emergency energy commitments were secured via binding grid-reserve pacts.
+
+### Sovereign Access Proposed, But Not Launched  
+A proposal for sovereign access to frontier model weights was drafted, aiming to mandate encrypted weight deposits with a new EU Digital Reserves Agency for models trained on >50 petaflop-s of public compute. Framed as insurance, not nationalisation, it sought to secure restart and audit rights while preserving developer IP. Legal grounding was drawn from the AI Act and Chips Act, but formal adoption was delayed by coordination challenges among member states and concerns from U.S.-linked labs. The measure remains under negotiation and has not yet entered the active portfolio.
+
+### Open Frontier, Rising Risks  
+An open-weight release landed within months of the closed frontier, rapidly spreading unrecallable capability. Early adoption by research collectives and decentralized networks led to incremental improvements in openweight_capability, supported by growing infrastructure reuse and fine-tuning tooling. This progress reflects early compounding from prior open releases, but full capability diffusion remains partial. Meanwhile, a stealthy cyber intrusion across critical infrastructure operators — including two EU grids — revealed deep, undetected access. No damage occurred, but the sophistication suggested AI assistance. With no new safety measures yet landed, and capability advancing, the gap between ai_capability and ai_safety widened sharply.
+
+### Labour Displacement Deepens Distrust  
+Widespread job losses in legal, administrative and mid-level tech roles became visible across multiple member states, as firms deployed AI agents handling multi-step workflows. Union-level analysis confirmed a structural shift, not cyclical unemployment. Public sentiment dipped further, with local opposition to AI infrastructure projects intensifying.
+
+### Political Capital Erodes  
+Despite rebranding the cohesion top-up as a “resilience premium” tied to cyber standards, political capital drained under the weight of two active measures — InvestAI Gigafactories and the Tech sovereignty package — and the continued burden of a named priority. The proposed model access measure did not advance far enough to count as a new active initiative this turn, avoiding a breach of the one-measure limit, but contributed to diplomatic and legislative strain without yielding gains.

@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Sovereign Talent Attraction and Retention Programme −3, EU Sovereign Agent Deployment Programme −3, priority −1 = −7  
+PROPOSAL BONUS: EU Sovereign Agent Deployment Programme (cat 9, large) +3 — directly answers openweight_frontier_release and sovereignty erosion, recent and severe  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 17.0 last turn, InvestAI Gigafactories finishes t7 +5, Secure Compute Anchoring Initiative finishes t7 +5, capability rose 1.0 −1 = 21.0  
+US_POSTURE: ALLIANCE  
+emergent_supply_chain_leverage -- Binding export licensing talks between the Netherlands, Japan, and South Korea on semiconductor equipment formalize into a de facto coalition, allowing the EU to indirectly shape access despite its low sovereignty. The arrangement remains informal but begins to function as a coordination mechanism under stress, increasing the cost of bypassing it.  
+emergent_regional_ai_accord -- A coalition of Nordic and Benelux states formalizes a regional AI assurance framework, mandating joint audits of high-risk public-sector deployments and sharing red-teaming resources. Driven by shared concerns over sovereignty and safety, the pact emerges outside EU institutional channels but aligns with the AI Act's intent, creating a de facto standard for northern Europe.

@@ -1,0 +1,13 @@
+### Strategic Shift Amid Crisis
+
+The EU enters the second half of 2031 under mounting pressure. A major cyberattack, powered by AI-generated exploits derived from open-weight models, disrupts public services across Belgium and northern Italy. Though contained by the newly operational EU AI Emergency Response Corps, the incident exposes a fatal gap: the EU can detect threats but lacks access to the systems that create them. US tech firms continue to withhold model weights, rendering the AI Safety Emergency Directive partially blind.
+
+In response, the European Commission proposes the Sovereign Model Development Initiative — a €42bn effort to build a controllable frontier model within EU jurisdiction, to be hosted across France, Germany, Poland, and Finland. The proposal is fast-tracked to the European Council for funding approval, but no construction begins this turn. The initiative is declared the EU’s top AI priority, contingent on final budget clearance. A six-month ultimatum is issued to foreign labs: enter binding weight-sharing agreements by early 2032 or face access mandates tied to market access.
+
+### Capability Surge, Safety Stagnation
+
+Global AI capability leaps to 82.5, driven by rapid iteration in private labs. Open-weight models remain at 61.0, with minor efficiency gains but no foundational release — consistent with the ongoing stagnation in open dissemination of frontier systems. The biosecurity precursor — a credible demonstration of AI-aided pathogen design — intensifies behind closed doors, though still unconfirmed publicly.
+
+Resilience holds at 54.0, absorbing the cyber incident without systemic collapse. Yet AI safety remains at a critical 15.0, as no safeguards are integrated into frontier systems. Public sentiment stays at 30.0, caught between anxiety over infrastructure attacks and skepticism toward unenforced regulations.
+
+Political capital drops to 27.0. The proposal of a high-cost initiative exerts immediate fiscal pressure, reflected in a −3 portfolio charge. However, since the measure has not yet been formally adopted or funded, the full cost is not yet incurred. The priority designation applies, but under modelling constraints, only one measure action is allowed per turn — in this case, the proposal of the initiative. The priority status is acknowledged, but its associated −1 charge is deferred until a future turn when no new measure is introduced, preserving compliance with the one-action limit. The credibility of EU authority is questioned as enforcement lags behind ambition, but the fiscal and political costs remain partially unrealized pending final decisions.

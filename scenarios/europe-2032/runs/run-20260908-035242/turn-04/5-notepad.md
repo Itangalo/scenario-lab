@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, ASML Strategic Export Framework −3, EU Sovereign Agent Framework −3, Sovereign Incident Response Corps −3, priority −1 = −16  
+PROPOSAL BONUS: Sovereign Incident Response Corps (cat 6, large) +4 — directly answers cyber_major_incident this turn, severe and fresh  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 23 last turn, no capacity event, EU Sovereign Agent Framework in flight +0 (stalled), capability rose 1.5 −1 = 22  
+emergent_labour_displacement_wave -- first noted turn 3, listed in 3 turn(s) so far: Widespread layoffs in administrative and legal sectors continue, with trade unions now demanding EU-wide retraining schemes. Political pressure mounts in multiple capitals, and coordinated cross-border union actions are being discussed.  
+emergent_asml_defiance_negotiations -- first noted turn 3, listed in 3 turn(s) so far: ASML remains in talks with the Commission, but U.S. pressure intensifies, creating a critical test of EU unity and strategic autonomy. Member states are divided, and the prospect of unilateral Dutch action grows.

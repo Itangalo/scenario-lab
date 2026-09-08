@@ -1,0 +1,30 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_eval_crisis",
+    "probability": 0.20000000000000004,
+    "emergent": true,
+    "description": "The crisis of confidence in evaluation methodologies intensifies as multiple laboratories refuse to release internal logs, citing proprietary concerns. Regulators from the EU, UK, and Japan announce parallel assessment regimes, fragmenting the global consensus on model safety benchmarks. This divergence creates uncertainty for cross-border deployment and accelerates efforts to build independent evaluation capacity.",
+    "probability_samples": [
+      0.2,
+      0.2,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_alliance",
+    "probability": 0.33
+  }
+]

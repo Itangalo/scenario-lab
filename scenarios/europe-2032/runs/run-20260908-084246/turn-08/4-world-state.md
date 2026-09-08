@@ -1,0 +1,13 @@
+### A Wake-Up Call, Met with Strain
+
+The EU treats the ransomware sweep across Belgian, Danish, and northern Italian health systems as a systemic alarm. Forensic teams confirm the attack chain — from phishing to lateral movement — was AI-coordinated, exploiting integrated scheduling tools. With resilience below threshold and capability rising, the Commission activates emergency powers under Article 122 TFEU to redirect €12bn toward the new Critical Infrastructure AI Hardening Directive. The directive mandates retrofits in energy, water, rail, and healthcare, requiring verified containment and manual override in all AI-driven control systems above 50.0 capability.
+
+Despite the urgency, execution falters. National regulators resist central mandates, and the 60:40 co-financing model stalls in Warsaw and Budapest, where fiscal pressures mount. The AI Safety Gate rollout is delayed by interoperability disputes between ENISA and national agencies. Meanwhile, the Sovereign Incident Response Corps advances its tabletop exercise to a live drill, simulating a grid manipulation attack — but communication gaps between Nordic and Baltic CERTs undermine coordination.
+
+Diplomatically, the EU pushes Washington for real-time access to frontier model telemetry under the Sovereign Evaluation Access Expansion. But with the U.S. offering only symbolic reciprocity, and the emergent regional AI pact now formalising a Nordic-Benelux compute pool, Brussels struggles to present a unified front. The pact strengthens regional resilience but deepens perceptions of EU fragmentation.
+
+Public sentiment drops as media highlight the health sector breach and civil service strikes intensify, citing erosion of professional autonomy. The pivot to hardening fails to reassure: adoption slows, trust erodes, and the perception of reactive drift grows.
+
+### Capability Leaps, Safety Lags
+
+AI capability advances to 65.0, driven by a discontinuous leap in autonomous cyber planning. No safety deployment keeps pace. Eval anomalies multiply, and the capability_jump event lands — but no breakthrough measure ships. ai_safety drops sharply. openweight_capability inches up to 52.0, as limited techniques leak into open ecosystems. resilience gains from partial hardening planning and drill participation, but systemic fragility persists. eu_ai_sovereignty falls further, as infrastructure gaps widen and capability growth costs −1. eu_political_capital drops under portfolio strain and public backlash.

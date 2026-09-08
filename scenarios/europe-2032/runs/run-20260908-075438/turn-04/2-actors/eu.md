@@ -1,0 +1,21 @@
+## Statement changes  
+No statement changes.
+
+## Portfolio  
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`  
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`  
+- `Emergency Compute Mobilisation Directive (category 4, costs 3 per turn, started turn 2, finishes on turn 5): A binding directive to fast-track national AI compute projects under EU coordination, overriding permitting delays and securing grid access for priority sites`  
+- `Secure Critical AI Compute Nodes (category 6, costs 3 per turn, started turn 3, finishes on turn 6): Designating and hardening ten core AI data centres across the EU as critical infrastructure under NIS2, mandating redundancy, physical security, cyber resilience upgrades, and linking to sovereign energy sources`  
+- `European Public Evaluation Corps (category 1, costs 3 per turn, started turn 4, finishes on turn 6): A standing body of EU-employed evaluators with direct access to pre-release models from all frontier developers operating in or supplying the Union, empowered to conduct adversarial testing and publish findings ahead of deployment`
+
+## New measure  
+None this turn.  
+We are holding the line on new measures to avoid overloading implementation capacity while legal and political resistance to the Emergency Compute Mobilisation Directive intensifies.
+
+## Priority  
+**Emergency Compute Mobilisation Directive** — because sovereign compute access is the foundational precondition for all other control: without it, we cannot observe frontier training runs, host public evaluation, or guarantee continuity of critical AI services under crisis conditions, and the current legal fragmentation threatens to lock us out permanently.
+
+## In practice  
+We are treating the Emergency Compute Mobilisation Directive as a test of European unity under strategic pressure. The Commission has activated crisis arbitration under Article 122 TFEU, deploying legal envoys to Berlin, Madrid, and Brussels to mediate the Bavarian grid dispute and Madrid’s constitutional challenge. €30bn in Recovery and Resilience Facility disbursements remain conditionally suspended in non-compliant states, with the Council Legal Service now reviewing whether national vetoes can block a TFEU 122 determination of cross-border crisis. To break the deadlock, we are offering Bavaria a dedicated €2.1bn grid modernisation package co-financed by the EIB and Nordlink surplus capacity, while Madrid is being offered leadership of a new Iberian AI Resilience Cluster under the Secure Critical AI Compute Nodes programme, with binding commitments to locate two hardened nodes in Andalusia and Catalonia. Smaller member states are being brought in through cohesion policy side-deals: guaranteed access to sovereign edge clusters and AI workforce academies funded from a reallocated Just Transition Fund envelope.
+
+Simultaneously, we are operationalising the European Public Evaluation Corps: a regulation under the Digital Markets Act is being fast-tracked through COREPER II, requiring all developers deploying models above 45.0 capability to grant red-team access to EU evaluators or face suspension of market access. ENISA has drafted the first access protocols, and recruitment has begun via EURES, targeting 150 red-team engineers and interpretability researchers by turn 5. The first test cohort will focus on agent persistence and goal-hacking behaviours, using sandbox environments hosted at the newly designated Secure Critical AI Compute Nodes. On the resilience front, those ten nodes are now under NIS2+ protocols: physical security upgrades are underway, incident response plans have been submitted, and power purchase agreements with Ørsted and Iberdrola secure 78% green baseload by 2029. The InvestAI Gigafactories and Tech Sovereignty Package continue on track, but we are tightening enforcement: next month’s ECOFIN scorecard will tie national digital grant allocations to permitting speed and grid cooperation, making sovereignty not just a goal but a condition of funding.

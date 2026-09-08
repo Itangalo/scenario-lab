@@ -1,0 +1,8 @@
+`emergent_ai_moratorium_push` -- first noted turn 1, listed in 7 turn(s) so far: Several EU member states intensify calls for an immediate moratorium on large-scale AI training runs, citing national security and democratic integrity. The push gains momentum in national parliaments and is increasingly framed as a necessary pause to establish oversight, not a rejection of AI itself.
+`emergent_ai_talent_exodus` -- first noted turn 1, listed in 7 turn(s) so far: Reports confirm an accelerating outflow of AI researchers and engineers from EU institutions to the United States and China, driven by superior compute access, faster development environments, and fewer regulatory constraints. This trend undermines the Union's ability to build independent AI capacity despite its supply-chain leverage.
+`emergent_cyber_defence_shift` -- first noted turn 5, listed in 4 turn(s) so far: Defensive AI systems begin to detect and block automated cyber attacks in real time by learning swarm behavior patterns, marking a shift in the offense-defense balance after years of dominance by attackers.
+US_POSTURE: CONSOLIDATION
+PORTFOLIO CHARGE: EU-REACT −3, EMERGE −3, priority −1 = −7
+PROPOSAL BONUS: EMERGE (cat 4, large) +6 — direct response to cyber_major_incident and supply_chain_coercion, addresses loss of compute access and operational paralysis within last three turns
+LEGITIMACY LENDS: none
+SOVEREIGNTY: 18 last turn, no capacity event, capability rose 1.5 −1 = 17, but supply_chain_coercion t7 −2 = 15 → corrected to 16 after recheck: rule 5 event term takes precedence, net −2 from prior, final 16

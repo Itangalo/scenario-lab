@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3, priority −1 = −10  
+PROPOSAL BONUS: Emergency Resilience Surge (cat 6, large) +3 — cyber_test_shot and eu_frontier_access_denied both landed this turn and this measure answers both directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22 last turn, no category 4 finish, Gigafactories in flight +0, Tech sovereignty package in flight +0, eu_frontier_access_denied t1 −2, member_state_defection t1 −1, capability rose 1.5 −1 = 20  
+US_POSTURE: not yet determined  
+emergent_lab_cooperation -- first noted turn 1, listed in 1 turn(s) so far: A coalition of European AI research labs and universities announces a shared training initiative to develop a sovereign frontier-capable model using pooled compute and data resources, backed by conditional funding from several member states. The project is framed as a response to the US access denial in June and gains rapid academic and industrial support, though its ability to scale remains uncertain.  
+emergent_asml_board_resistance -- first noted turn 1, listed in 1 turn(s) so far: Senior executives at ASML, under sustained U.S. pressure to restrict exports further, begin coordinating with Dutch and EU officials to formalize a joint decision-making framework on lithography exports. Leaks suggest the board is pushing back internally, arguing that unilateral compliance risks long-term strategic autonomy and market position. This marks the first visible fracture in the supply chain coercion chain.

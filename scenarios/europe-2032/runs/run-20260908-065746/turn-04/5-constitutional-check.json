@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Constitutional Constraint 2 violated: `openweight_capability` increased from 45.0 to 52.0 (+7.0), which is allowed only if `ai_capability` also increases by at least that amount and the invariant `openweight_capability ≤ ai_capability` is preserved. While `ai_capability` did increase (from 58.0 to 60.0, +2.0), the rise in `openweight_capability` (+7.0) exceeds the rise in `ai_capability`, violating the rule that `openweight_capability` cannot grow faster than `ai_capability` absent a narrated mechanism such as a major open release or structural shift. The narrative does not explain this outsized leap, especially given that open-weight models typically lag frontier developments.\n- Constitutional Constraint 5 violated: The narrative introduces progress on *both* the Emergency AI Resilience Certification Framework *and* the Middle Power AI Coordination Framework as new advances, and the notepad shows both were active and contributed to outcomes. However, the constraint limits the EU to at most one new measure per turn. The Emergency AI Resilience Certification Framework is explicitly described as newly completed, and MIDAC is described as gaining significant new ground (Japan, South Korea signing, Taiwan agreeing in principle), constituting a second major initiative. This constitutes two new measure-level developments in one turn, which is not permitted.\n- Constitutional Constraint 8 violated: The narrative telegraphs future events by stating \"Insurers now require certified AI monitoring for coverage, creating binding de facto standards ahead of legislation\" and notes an active \"emergent_insurance_regulatory_push\" with firms threatening withdrawal of coverage. This implies a predictable regulatory cascade and foreshadows a specific future event (widespread adoption of monitoring due to insurance pressure), which constitutes telegraphing. The gate state belongs in event evaluations, not the narrative."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

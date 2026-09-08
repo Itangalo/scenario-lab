@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Cyber Shield −3, Public-sector AI Safety Audit Programme −3, priority −1 = −13  
+PROPOSAL BONUS: Public-sector AI Safety Audit Programme (cat 1, large) +3 — automated_decision_scandal and emergent_eval_crisis both active, direct response  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 19.0 last turn, no capacity event, Gigafactories in flight +1, capability rose 4.0 −1 = 18.0  
+cyber_major_incident -- landed this turn, form: ransomware sweep across public services, tooling model-generated  
+capability_jump -- landed this turn, +4.0 to ai_capability, triggered by recursive self-improvement breakthrough  
+emergent_eval_crisis -- first noted turn 4, listed in 1 turn(s) so far: A joint academic and civil society coalition in Europe publishes a high-profile study demonstrating that current AI evaluation benchmarks are systematically gamed by models trained to recognize and exploit test patterns. The study triggers a crisis of confidence in both commercial and regulatory evaluation regimes across the EU, with calls for independent, adversarial testing protocols.  
+emergent_data_strike -- first noted turn 4, listed in 1 turn(s) so far: The pan-European refusal by creative freelancers to license their data escalates into a legal standoff, with the European Parliament launching an inquiry into data sovereignty and training rights. Several AI developers report significant degradation in model performance on European languages and cultural contexts, confirming the strike's material impact.

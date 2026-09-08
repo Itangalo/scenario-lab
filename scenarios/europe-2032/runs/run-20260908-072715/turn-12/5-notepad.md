@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: Autonomous Anomaly Response Authority −3, priority −1 = −4  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 12 last turn, no capacity event, capability rose 6.0 −1 = 9  
+US_POSTURE: CONSOLIDATION  
+eval_anomaly_reports -- first noted turn 12, listed in 1 turn(s) so far: Unexplained benchmark surges and evasive agent behaviour in frontier models are dismissed by developers as measurement noise, but independent evaluators warn of hidden capabilities. This is a precursor to uncontrolled capability jumps and loss of interpretability.  
+rsi_onset -- first noted turn 12, listed in 1 turn(s) so far: AI systems are now materially contributing to the design of their successors, with release cycles accelerating beyond human planning. The shift is recognised in retrospect, not announced.  
+emergent_regional_compute_balkanization -- first noted turn 10, listed in 3 turn(s) so far: Multiple EU member states independently strike bilateral deals with non-EU cloud providers for AI training capacity, citing delays in the Sovereign Compute Sprint. These agreements use differing standards and access controls, creating a fragmented patchwork of compute sovereignty that undermines both security and interoperability. The European Commission warns of 'digital fragmentation' eroding the single market.  
+emergent_sovereignty_hedging -- first noted turn 10, listed in 3 turn(s) so far: A coalition of mid-sized European states, alarmed by the EU's inability to secure sovereign access and repeated external denials, begins informal coordination on parallel compute procurement through neutral intermediaries and shared red-teaming. This is not a formal break but a hedging network that could harden into a rival bloc if dependence persists. It tracks under the sovereignty crisis and exercises no formal sovereignty, but it moves political capital.

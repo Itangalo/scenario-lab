@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Compute Mobilisation Directive −3, Secure Critical AI Compute Nodes −3, European Public Evaluation Corps −3, priority −1 = −16  
+PROPOSAL BONUS: European Public Evaluation Corps (cat 1, large) +4 — answers eval_anomaly_reports and emergent_lab_security_leak, both active and severe, within last three turns  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22 last turn, no capacity event, capability rose 2.5 −1 = 21 → rounded to 22 (no measure completion or in-flight gain; minimal momentum acknowledged)

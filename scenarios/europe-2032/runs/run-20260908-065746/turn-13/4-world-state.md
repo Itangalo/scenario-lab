@@ -1,0 +1,11 @@
+### Frontier Creeps Higher, Again  
+Global AI capability advances to 72.5 as verification breakthroughs widen into structural engineering and clinical coding, enabling rapid self-improvement in design and biomedical domains. These gains are narrow but strategically significant, reinforcing closed-loop development in high-assurance systems. Openweight models reach 60.75 by replicating frontier fine-tuning pipelines, narrowing the gap further under distributed pressure.
+
+### Treaty Talks Stumble, Coalition Frays  
+The Emergency Compute Co-Location Pact formally concludes, establishing failover protocols among France, Finland, and Sweden. However, its operational impact is muted: Germany remains outside the final agreement, and Sweden refuses to ratify mutual access under current terms, citing neutrality concerns. The proposed Mutual Compute Assurance Compact stalls in early negotiations. While joint procurement of wafers begins under the European Defence Fund, legal disagreements over veto rights and node control prevent treaty-level commitment. Ireland and Poland remain non-participants, undermining pan-EU credibility.
+
+### Runtime Control, Grounded in Fragility  
+The EU enforces real-time intervention on high-risk AI, but its authority remains contingent. With the Taiwan blockade disrupting global semiconductor flows, access to advanced compute becomes a geopolitical chokepoint. The Sovereign Compute Acceleration Directive progresses slowly—only France and parts of Germany meet deployment milestones. Legal overrides in Germany face local court challenges, and Ireland continues to resist integration, demanding exemptions for commercial cloud infrastructure.
+
+### Resilience Rises, Sovereignty Falls  
+The completed pact contributes +3 to resilience, now at 62.0, by strengthening cross-border cyber continuity and shared threat monitoring. However, rising AI capability triggers −1 on eu_ai_sovereignty, which drops to 17.0 despite the pact’s completion—no category 4 finish bonus applies, as the measure was small and not fully ratified. Political capital falls to 19.0: the portfolio charge (−3 for Sovereign Compute, −2 for new large measure, −1 for priority) totals −6, with no completion bonus. The proposal bonus is +0—the *taiwan_blockade* is severe, but the response is incomplete and contested.

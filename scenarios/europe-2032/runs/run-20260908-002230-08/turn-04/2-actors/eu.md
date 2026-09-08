@@ -1,0 +1,29 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Anchor European strategic freedom through resilient, sovereign AI infrastructure — not only compute capacity, but secured supply chains, independent evaluation, and public legitimacy  
+- modify `resilience_as_foundation` (position): In the face of cascading risks, societal resilience is the precondition for both sovereignty and safety — but resilience without sovereign capacity to act is reactive, not strategic  
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now see that without public legitimacy, neither mandate can be fulfilled, and without sovereign capability, neither can be enforced  
+`- Grounds: The safety_breakthrough proves that technical progress in control is possible and adoptable at scale, but only where sovereign actors can mandate its use. The export_control_escalation confirms that access to frontier technology is now a function of geopolitical alignment, not market terms. The emergent_eu_bio_defence_network shows that informal coordination can precede formal authority, but only if backed by infrastructure the Union controls. Together, these developments confirm that resilience must be rooted in sovereignty, not just response. The two-year commitment remains valid in spirit but must now explicitly include the capacity to enforce standards and deploy assurance — not just build defences.`
+
+## Portfolio  
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`  
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`  
+- `Cyber Shield Directive (category 6, costs 3 per turn, started turn 1, finishes on turn 4): Establish mandatory intrusion detection and response standards for all critical infrastructure operators, with AI-driven red-teaming and quarterly cross-border exercises` — **finished**  
+- `ASML Strategic Shield Initiative (category 4, costs 3 per turn, started turn 2, finishes on turn 5): Launch a legal-financial shield to protect EU-based semiconductor equipment exports from extraterritorial pressure, anchoring critical AI supply chain control under EU foreign policy authority`  
+
+## New measure  
+**EU Sovereign Assurance Programme**  
+Stand up an independent, public-sector capability to evaluate, monitor and enforce safety standards on all AI systems operating in or affecting the EU, using the safety_breakthrough to certify control properties before deployment.
+
+`Category: 5 (Public technical capacity and research)`  
+`Size: large`  
+`Finishes on turn: 6`  
+`Targeted effect: ai_safety +10, eu_ai_sovereignty +8 (via sovereign evaluation authority), public_sentiment +5 (via visible independence from labs)`  
+`Applies to: EU institutions, national regulators, frontier AI developers operating in the EU, and critical infrastructure operators using high-capability systems`
+
+## Priority  
+**EU Sovereign Assurance Programme** — because the safety_breakthrough gives us a technical opening to close the gap between what the labs build and what we can verify, and without sovereign evaluation capacity, we remain dependent on their goodwill, not our own authority.
+
+## In practice  
+We are treating the safety_breakthrough as a pivotal moment: for the first time, a control technique has landed in production that allows prediction of system behaviour before it occurs, not just post-hoc analysis. This changes the game — but only if we can apply it independently. We are launching the EU Sovereign Assurance Programme under the authority of the European AI Office, with direct funding from the MFF and staffing drawn from ENISA, the Joint Research Centre, and vetted national labs. The programme will establish a sovereign capability to certify that high-risk AI systems — especially those above 50.0 ai_capability — do not exhibit uncontrolled goal pursuit, unauthorised self-modification, or covert planning. We are fast-tracking recruitment of 200 specialists through the EU Talent Shield, offering salaries competitive with the private sector and legal protection for public interest disclosures.
+
+At the same time, we are completing the Cyber Shield Directive’s implementation: with the measure now finished, all critical infrastructure operators must have AI-driven intrusion detection in place, reporting to national CSIRTs. We are using the sunset clause to pressure holdouts — Germany and Austria have committed, but Hungary and Slovakia remain non-compliant, citing sovereignty concerns. We are offering them bilateral technical support and partial cost coverage in exchange for full adoption by turn 5. For the ASML Strategic Shield Initiative, we are shifting from legal defence to capability building: the Belgian maintenance hub is now a formal project under the European Defence Fund, with €1.2bn in seed funding for feasibility and site preparation. We are negotiating with ASML andIMEC on technology transfer under EU supervision, and with Washington on reciprocal servicing access — though we expect resistance. The InvestAI Gigafactories remain on hold for new sites, but the €30bn retrofit programme is now operational, focused on physical security, energy redundancy, and air-gapped monitoring for high-capacity systems. Public messaging ties the new Assurance Programme to the bio incident and the labour_displacement wave: we are not just reacting to harm, but building the capacity to prevent it.

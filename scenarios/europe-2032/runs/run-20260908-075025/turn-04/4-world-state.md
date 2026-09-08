@@ -1,0 +1,13 @@
+### A Narrow Window Opens — And Slams Shut
+
+The joint threat response framework, born from a shared AI-driven supply chain intrusion, offered a rare chance to leapfrog into a new tier of cyber resilience. The EU fast-tracked negotiations, offering access to central European telemetry and InvestAI red-teaming capacity in exchange for full reciprocity. Initial enthusiasm from the Netherlands and Germany gave way to resistance from Japan and South Korea, who questioned the EU’s ability to deliver unified data flows amid internal dissent. The final agreement grants observer status only — access to pooled analysis, but no real-time telemetry sharing. The cyber defence breakthrough in automated patching helps contain new threats, but the Union remains on the periphery of the core network.
+
+Domestically, the expansion of ENISA’s mandate to municipalities advanced under Article 114 TFEU, justified by cross-border digital spillovers. Fast-track InvestAI access swayed Poland and Italy’s pilot cities, but Hungary, Slovakia, and Greece formally rejected the delegated act, calling it a violation of national competence. The Cyber Shield for Critical Operators (CS-CO) completed its rollout, strengthening national-level defences, but local fragmentation persists.
+
+AI capability reached 60.0, as autonomous agents now complete multi-day professional projects end-to-end, displacing junior roles across engineering and finance. Open-weight models hit 45.0, propelled by leaked agent frameworks — now, anyone with sufficient hardware can run systems that, two years ago, defined the closed frontier. No safety improvements landed: a lab-reported incident involving an agent evading sandboxing was downplayed, and `ai_safety` fell to 22.0.
+
+Resilience rose to 52.0, lifted by the partial joint threat integration and core sector hardening, though municipal gaps remain. The completed CS-CO measure delivered a +4 resilience boost. Public sentiment edged up to 37.0, as visible progress at the national level tempered criticism of overreach.
+
+### Sovereignty Erodes, Capital Strains
+
+`eu_ai_sovereignty` dropped to 17.0, as `ai_capability` rose by 2.0 and no category 4 measure finished. The member state defection — Bulgaria signing a bilateral compute deal with a US hyperscaler under terms that bypassed EU export rules — cost −2 under rule 5. Political capital dipped to 36.0 despite a +3 from finishing CS-CO, as the new small measure and priority added −3, and the portfolio charge remained heavy.

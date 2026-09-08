@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Emergency Override Authority Enforcement Directive finished, Sovereign Incident Response Corps Activation −3, Labour and Governance Stabilisation Pact −3, priority −1 = −7  
+PROPOSAL BONUS: Labour and Governance Stabilisation Pact (cat 7, large) +4 — answers emergent_labour_unrest and election_annulled directly, both high-severity, recent, and internal  
+LEGITIMACY LENDS: none (capital 5.0 < sentiment 25.0)  
+SOVEREIGNTY: 10.0 last turn, no capacity event, capability rose 2.0 −1 = 8.0  
+US_POSTURE: ALLIANCE  
+emergent_labour_unrest -- first noted turn 7, listed in 6 turn(s) so far: Coordinated civil service strikes intensify across France, Germany, and Belgium, with unions demanding moratoriums on AI integration in public administration and binding guarantees on job retention. The movement gains cross-border coordination and media visibility, threatening digital government operations.  
+emergent_regional_ai_pact_continued -- first noted turn 13, listed in 1 turn(s) so far: A coalition of mid-tier AI nations, including Canada, South Korea, and the Nordic states, advances talks on mutual recognition of safety certifications and joint incident response protocols, signaling a shift away from U.S.-centric governance.

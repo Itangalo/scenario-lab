@@ -1,0 +1,17 @@
+## Statement changes  
+No statement changes.
+
+## Portfolio  
+- `EU Sovereign Agent Framework (category 5, costs 3 per turn, started turn 4, finishes on turn 8): A legal and technical framework for the development and deployment of high-assurance AI agents under EU control, with sovereign compute, auditable reasoning, and fail-safe protocols` — **finished**  
+- `Sovereign Compute Acceleration Directive (category 4, costs 3 per turn, started turn 8, finishes on turn 8): We mandate emergency permitting, grid prioritization, and state-backed power contracts for AI compute infrastructure on EU soil, directly linking energy and infrastructure policy to strategic AI sovereignty` — **finished**
+
+## New measure  
+None this turn. We are waiting for implementation signals from member states and early data on compute deployment velocity before committing further capital.
+
+## Priority  
+**Sovereign Compute Acceleration Directive** — because without physically anchored, legally secured compute capacity, every other element of sovereignty—agency, safety, resilience, regulation—is contingent on the goodwill of powers whose strategic interests are diverging sharply from our own, and this directive is the first instrument to break our dependence on that goodwill.
+
+## In practice  
+This turn, we close two major programmes: the EU Sovereign Agent Framework and the Sovereign Compute Acceleration Directive. The former delivers its final specifications to the European AI Office, establishing a baseline for high-assurance agent design, audit protocols, and red-line behaviour constraints. Though no EU-run agent yet operates at frontier capability, the framework ensures that when such systems emerge, they will be legible, bounded, and subject to enforceable control. The directive, meanwhile, has passed trilogue and entered into force under Article 114 TFEU, with AI compute now legally designated as critical infrastructure. ENTSO-E has issued guidance on grid prioritization, and the European Investment Bank has approved the first tranche of state-backed power purchase agreements for the Finnish and Spanish sites. We have overridden national delays in permitting on two grounds: strategic necessity and cross-border interdependence, invoking the precedent of the 2022 REPowerEU emergency mechanisms.
+
+Germany and Austria remain resistant, but we have contained the risk of legal challenge by embedding environmental safeguards into the directive’s implementing acts and pairing each gigafactory with a regional AI transition hub—funded from the redirected Tech Sovereignty Package—that links compute growth to retraining in green tech and public digital services. These hubs are now co-managed by national governments and the Commission, turning resistance into co-ownership. The political cost was high—38bn reallocated under fire, and cohesion stretched—but the capital we spent was already accounted for, and the completion of both measures within their windows preserves credibility. We now shift from building foundations to testing whether they hold. The next move depends on whether compute lands where it is meant to, whether agents can be run securely on it, and whether the world gives us time. For now, we consolidate.

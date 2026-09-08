@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Accelerated Permitting Zones −3, priority −1 = −10  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22.0 last turn, Gigafactories in flight +1, Tech sovereignty package in flight +1, capability rose 1.5 −1 = 23.0  
+- `emergent_telecom_rollback` -- first noted turn 1, listed in 2 turn(s) so far: A major European telecom provider, responding to public concern over AI-driven job displacement and opaque decision-making, publicly commits to a 'human-in-the-loop' charter for AI deployment across customer-facing services. The move triggers a broader sectoral shift, with three other national champions announcing similar pledges within the turn. This is not mandated by EU law but emerges as a competitive differentiator in a climate of ambivalent public sentiment.
+- `emergent_biofine_tuning` -- first noted turn 1, listed in 2 turn(s) so far: Researchers at a European bioinformatics institute demonstrate that widely available open-weight models at capability level 40.0 can be fine-tuned with modest resources to design functional bacteriophages, validating concerns about democratized bio-risk. The paper sparks debate in the security community about whether current screening norms are sufficient, given that the models used are not frontier but openly accessible.

@@ -1,0 +1,11 @@
+### The Authority Gambit
+
+The European Commission unveiled a sweeping emergency regulation to empower the European AI Safety Lab (EASL) with unprecedented authority: the power to suspend any AI system deemed to pose an "intolerable risk," including those already deployed. Framed as a necessary response to the recent wave of AI-generated ransomware, the move marks a decisive shift from evaluation to enforcement. A public risk taxonomy is promised by Q3, with autonomous zero-day generation and unmonitored critical infrastructure systems likely to be flagged.
+
+France, Germany, and Finland voiced support, aligning the measure with their regional pact’s security ambitions. But resistance hardened elsewhere. Italy’s government denounced the plan as a "technocratic overreach" that could jeopardize healthcare AI during transitions. Poland, citing its existing U.S. partnership, questioned the EU’s jurisdiction over systems hosted on foreign sovereign clouds. Legal challenges are expected, with Warsaw hinting at a constitutional court referral.
+
+The regulation’s passage triggered immediate political costs. Industry groups warned of investment flight, and member-state negotiations grew tense. While the intent was to close the safety gap, the heavy-handed approach further alienated a public already wary of punitive AI governance. Trust in EU-level AI management eroded, and sentiment dipped as media highlighted fears of disruption and dependency.
+
+Despite the push, no breakthrough in AI safety was achieved this turn. The measure is large and complex, and its effects will only materialize upon full implementation. Meanwhile, the global AI frontier advanced steadily, with capability rising to 72.0 as labs integrated new training efficiencies. Open-weight models inched forward to 59.5, benefiting from leaked tooling and distributed fine-tuning, though still trailing the closed frontier.
+
+EU sovereignty ticked down to 10.0, reflecting continued dependence on external compute and the absence of unified command. Political capital fell to 22.0 under the weight of the new large measure and the named priority, despite partial gains from acting on a recent incident. Resilience held steady, with prior counter-agent mandates still delivering incremental gains, but unity remains fragile.

@@ -1,0 +1,70 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.2233333333333333,
+    "probability_samples": [
+      0.19,
+      0.24,
+      0.24
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "opaque_reasoning",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_ai_refugee_crisis",
+    "probability": 0.06333333333333334,
+    "emergent": true,
+    "description": "The influx of AI developers and red-teamers from destabilized or overregulated labs intensifies, with over 300 new 'cognitive dissidents' arriving in EU member states this semester. Integration systems are overwhelmed, creating both a talent windfall and a security strain, as some arrivals bring unvetted model fragments and adversarial training techniques.",
+    "probability_samples": [
+      0.19,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

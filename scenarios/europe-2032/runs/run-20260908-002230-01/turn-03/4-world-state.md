@@ -1,0 +1,11 @@
+### The Cracks Widen
+
+Despite urgent efforts, the EU’s summer of crisis deepens. The **Cyber Shield for Critical Infrastructure** directive faces fierce resistance in the Internal Market Council, with several Central and Eastern member states refusing to accept binding red-teaming mandates, even with 90% co-financing. Delays mount, and full implementation slips past turn 4. ENISA’s AI-powered red teams are active in five nations, but their authority remains patchy, and legal disputes over cross-border operations stall wider deployment.
+
+The **Secure Open-Source Evaluation Framework (SOEF)** avoids collapse but gains little traction. A legal carve-out for API-accessed foreign models is accepted in principle, yet enforcement mechanisms remain untested. Pilot audits of three high-capability open models proceed, but developers boycott data sharing, and results are inconclusive. Public trust, shaken by France’s benefits scandal, erodes further as another AI-assisted fraud scheme hits German unemployment offices.
+
+In response, the **Joint Cyber Defence Cell (JCDC)** is formally launched, building on growing momentum among member states alarmed by repeated intrusions. A secure intelligence-sharing platform goes live, and real-time reporting of high-severity threats is agreed in principle. However, automated countermeasures remain politically fraught—several nations refuse to delegate shutdown authority, fearing domestic backlash.
+
+Meanwhile, frontier AI advances relentlessly. Unverified reports of anomalous behaviour in unreleased systems surface, suggesting capabilities emerging outside expected training bounds. The US tightens export controls further, forcing ASML to restrict servicing of older lithography machines, directly undermining EU compute ambitions. In a further blow, Poland finalises a bilateral AI infrastructure deal with a US hyperscaler, bypassing EU coordination and weakening the bloc’s unified stance.
+
+Public sentiment dips as AI is increasingly associated with disruption and dependency. Political capital erodes under the weight of stalled reforms, rising costs, and diplomatic setbacks. Sovereignty declines as external pressures mount and internal cohesion frays.

@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: Emergency Powers −3, priority −1 = −4  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 17 last turn, no capacity event, capability rose 0.5 < 2 → no decay term, Emergency Powers in flight → no completion bonus yet = 17  
+US_POSTURE: ALLIANCE  
+emergent_lab_cooperation -- first noted turn 6, listed in 5 turn(s) so far: The EU Defence AI Collaborative now includes 17 institutions and has published its first adversarial testing suite, adopted by three national regulators. Its independence from US frameworks strengthens the case for EU-specific assurance.  
+emergent_public_ai_initiative -- first noted turn 6, listed in 5 turn(s) so far: The 'Public AI' coalition launches a pan-European petition demanding algorithmic transparency in social services, gathering 2.3 million signatures. Municipal pilots expand to five new cities, increasing pressure on national governments to codify oversight.  
+emergent_regulatory_fragmentation -- first noted turn 9, listed in 2 turn(s) so far: National regulators in Germany, France and Poland begin enforcing divergent interpretations of the AI Act, creating compliance chaos for cross-border operators. The European Commission warns of a de facto breakup of the internal market in AI services, with firms forced to build separate systems for each major member state. This fragmentation slows deployment and undermines the EU's claim to a unified digital market.  
+emergent_ai_refugee_waves -- first noted turn 9, listed in 2 turn(s) so far: A growing number of AI researchers and engineers from the United States and China seek residency in EU countries offering sovereign compute access and political stability, citing concerns over state control and instability in their home jurisdictions. This 'AI brain gain' begins to shift technical momentum toward EU-affiliated labs, though integration bottlenecks and housing shortages threaten to cap the influx unless coordinated action is taken.

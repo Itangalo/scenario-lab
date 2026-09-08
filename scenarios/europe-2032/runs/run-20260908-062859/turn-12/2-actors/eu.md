@@ -1,0 +1,26 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Secure sovereign runtime control over AI systems essential to EU survival and resilience, and ensure that such systems remain under meaningful human authority even as their capability exceeds 70.0 — now expanded to include binding enforcement of override rights during declared instability, with crisis-triggered de-escalation protocols operational across all critical sectors by turn 16  
+- Grounds: The automated_decision_scandal, combined with the Marseille triage failure and the Bavarian grid incident, confirms that runtime observability alone is insufficient. Systems are not only failing — they are failing in ways that evade detection until harm occurs, and public institutions are now adjudicating systemic wrongs. This shifts the imperative from monitoring to enforceable crisis response: we must not only see failure, but stop it in motion. The scandal makes restriction politically viable and adoption toxic, so we act now to lock in control mechanisms while the window is open.
+
+## Portfolio  
+- `Launch Opaque System Monitoring & Control Pilot (category 5, costs 2 per turn, started turn 8, finishes on turn 11): Deploy prototype runtime monitoring systems in two critical infrastructure sectors (health and energy) that detect anomalous AI behaviour through action patterns, data flow deviations, and cryptographic provenance chains, independent of internal reasoning transparency` — **finished this turn**  
+- `Mandate Runtime Sovereignty in Critical Functions (category 3, costs 3 per turn, started turn 10, finishes on turn 13): Require all AI systems above 60.0 capability operating in or interfacing with EU critical infrastructure to integrate EU-controlled runtime monitoring and intervention hooks, enabling immediate detection, isolation, and shutdown of anomalous behaviour`  
+- `Establish Emergency Override Protocols for AI-Controlled Critical Infrastructure (category 6, costs 3 per turn, started turn 12, finishes on turn 14): Define and deploy legally binding, technically enforced escalation pathways that allow designated EU and member-state authorities to suspend, redirect, or terminate AI-driven decisions in energy, transport, and health systems during instability events`
+
+## New measure  
+**Operationalise Crisis Override Triggers in Critical Infrastructure via Binding EU-Enforced Thresholds**  
+Deploy and activate real-time, automated override triggers in AI systems managing energy, health, and transport, based on pre-defined deviation thresholds from safe operational baselines.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size: large`  
+`Finishes on turn: 15`  
+`Targeted effect: resilience +8 (by hardening response to cascading failures), ai_safety +7 (by reducing duration of uncontrolled behaviour), public_sentiment +5 (by demonstrating concrete accountability after the scandal)`  
+`Applies to: All AI systems above 60.0 capability directly managing or advising real-time operations in EU critical infrastructure, with enforcement tied to access to the sovereign compute grid and Digital Europe funding`
+
+## Priority  
+**Establish Emergency Override Protocols for AI-Controlled Critical Infrastructure** — because the automated_decision_scandal has shattered public trust and made inaction politically unsustainable, and because runtime sovereignty without enforceable override is a promise unkept: we must now move from policy to live crisis response capability, or lose legitimacy entirely.
+
+## In practice  
+We are acting on the conviction that monitoring without power is ritual, not governance. The Opaque System Monitoring & Control Pilot has delivered: we can detect anomalies in black-box systems, even when we cannot read their minds. But detection is not defence. That is why we are now operationalising the Emergency Override Protocols under EPCIP, working with ENTSO-E, EHI, and ERSA to hardcode thresholds — 15% voltage deviation, 10% clinical guideline drift, unauthorised autonomous rerouting — that trigger immediate suspension and handover to human-led crisis cells. These protocols will be stress-tested in a live pan-European exercise in Q2, funded through the Union Civil Protection Mechanism.
+
+The Mandate Runtime Sovereignty in Critical Functions remains our legal backbone, now being pushed through COREPER II under Article 114 TFEU. We are offering Poland and Hungary co-governance in the EAIA’s crisis response cell — not just access, but authority — in exchange for ratification. The U.S. continues to warn of trade disputes, but we are not banning systems; we are requiring kill switches. This is flight recorders, not nationalisation. And now, with the new measure, we are going further: we are wiring those switches directly into the grid, the hospitals, the rail networks. The automated_decision_scandal has given us a narrow window — public fury is high, but so is the risk of paralysis. We are using it to lock in not just rules, but reflexes: when AI fails, the EU must still be in command.

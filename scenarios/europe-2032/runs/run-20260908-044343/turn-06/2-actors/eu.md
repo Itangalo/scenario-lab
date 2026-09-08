@@ -1,0 +1,29 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Prevent irreversible erosion of EU political agency by securing operational AI sovereignty — the ability to run, verify and defend critical systems without dependency on foreign-controlled infrastructure or goodwill  
+- Grounds: The **cyber_major_incident**, combined with the US election outcome and the **emergent_research_leak_cascade**, has shifted the nature of the threat: it is no longer about catching up to the frontier, but about preserving the Union’s capacity to act at all. Access without control is meaningless when the infrastructure can be withheld or weaponised. The original commitment assumed a race in capability; this turn reveals a race in autonomy, where jurisdiction, telemetry and sovereign execution matter more than raw performance. The shift is categorical: we are no longer building capacity to compete — we are building it to survive.
+
+## Portfolio  
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`  
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — **finished**  
+- `EU Defensive AI Corps (category 6, costs 3 per turn, started turn 5, finishes on turn 7): Establish a standing, cross-border unit under ENISA and Europol with operational authority to deploy AI-driven threat detection and counter-intrusion systems across member states’ critical infrastructure`  
+- `Sovereign AI Testbeds for Critical Sectors (category 4, costs 3 per turn, started turn 6, finishes on turn 8): Launch EU-controlled, high-assurance testbeds where essential services can safely integrate and stress-test capable AI systems under real-world conditions, with full telemetry and no dependency on foreign providers`
+
+## New measure  
+**Sovereign Assurance Stack for Critical AI Systems**  
+Establish a unified, EU-governed software and verification layer — including secure runtime environments, model attestation, and real-time anomaly detection — to ensure that any AI operating in critical infrastructure is both functionally reliable and politically accountable.  
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 9`  
+`Targeted effect: +4 to eu_ai_sovereignty by creating a non-foreign-dependent stack for running and verifying AI in essential services; +2 to ai_safety by enforcing runtime observability and tamper-proof telemetry; reduces openweight risk by making unverified models operationally unusable in high-stakes domains`  
+`Applies to: EU member states, ENISA, European High-Performance Computing Joint Undertaking, national cybersecurity agencies, critical infrastructure operators`
+
+## Priority  
+**Sovereign Assurance Stack for Critical AI Systems** — because the **cyber_major_incident** and the collapse of interpretability mean we can no longer trust either the tools we use or the providers who supply them, and because the US election outcome confirms that access will be rationed by alliance, not principle — we must now build not just compute, but control: a stack we own, from silicon to software, that ensures no critical decision is made outside our jurisdiction or beyond our audit.
+
+## In practice  
+We are finalising the **Sovereign AI Testbeds** rollout this quarter, with Lyon, Warsaw and Rotterdam now entering integration testing. The health diagnostics module in Lyon will pilot AI-assisted radiology triage under full EU legal jurisdiction, using models trained on federated data and running on repurposed EuroHPC nodes. We are offering full access to this environment as a counter-incentive to bilateral deals — Poland has been invited to integrate its national health AI roadmap into the testbed, with co-governance rights and priority compute allocation. The message is clear: we are not blocking access — we are offering a better kind of access, one rooted in shared control, not dependency.
+
+Meanwhile, the **EU Defensive AI Corps** continues recruitment despite legal delays, with ENISA and Europol establishing a joint command cell in The Hague. We are fast-tracking clearance for 200 cyber-analysts from member states with proven defensive AI experience, and deploying interim rule-based detection systems to high-risk nodes in southern Europe. Austria’s concerns are being addressed through a modular opt-in framework: full integration grants access to real-time threat telemetry and automated countermeasures; partial participation still receives alerts but retains national control over response. This is not a compromise — it is a ladder, and we will keep building it upward.
+
+The new **Sovereign Assurance Stack** initiative responds to the core failure exposed by the attacks: we cannot secure systems we do not control. This is not another sandbox — it is a runtime. We are tasking ENISA with developing a minimal, verifiable execution environment — a "trusted AI kernel" — that will be required for any AI operating in critical infrastructure. It will enforce model provenance checks at load time, runtime telemetry with cryptographic signing, and automatic isolation upon deviation from expected behaviour. The stack will be open-source but EU-governed, with updates requiring consensus among member states. Funding will come from the Digital Europe Programme and co-investment from national cyber budgets. This is the foundation of sovereignty: not just who builds the AI, but who runs it, who watches it, and who can stop it.

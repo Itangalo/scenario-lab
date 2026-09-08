@@ -1,0 +1,7 @@
+US_POSTURE: ALLIANCE
+PORTFOLIO CHARGE: Stand Up EASA −3, Accelerate Sovereign Compute Deployment −3, Embed Safety-by-Architecture −3, priority −1 = −10
+PROPOSAL BONUS: none
+LEGITIMACY LENDS: none
+SOVEREIGNTY: 12 last turn, no capacity event, capability rose 4 ≥2 −1 = 11
+emergent_synthetic_disinfo_wave -- first noted turn 12, listed in 1 turn(s) so far: A coordinated disinformation campaign using AI-generated deepfakes and synthetic media undermines public trust in multiple EU institutions, including the European Commission and national health agencies. The content spreads rapidly across social platforms, exploiting existing fractures in public sentiment and overwhelming fact-checking capacity. Attribution is slow and contested, but forensic analysis later suggests non-state actors with access to high-capability open models were responsible.
+emergent_local_resilience_network -- first noted turn 12, listed in 1 turn(s) so far: A grassroots coalition of municipal governments, universities, and mid-sized industrial firms begins forming a decentralized AI resilience network, pooling resources to harden local infrastructure against cyber and disinformation threats. Operating outside formal EU channels, the network shares defensive tooling, conducts joint drills, and develops community-based verification protocols. The movement gains traction in response to the perceived failure of central institutions, particularly in Lyon and Helsinki where protests have stalled sovereign compute deployment.

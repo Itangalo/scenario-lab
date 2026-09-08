@@ -1,0 +1,7 @@
+US_POSTURE: RETRENCHMENT  
+PORTFOLIO CHARGE: Emergency Sovereign Inference Initiative −3, priority −1 = −4  
+PROPOSAL BONUS: Emergency Sovereign Inference Initiative (cat 4, large) +4 — directly answers eu_frontier_access_denied and bio_incident within three turns, large measure addressing critical infrastructure loss and opaque control failure  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 11.0 last turn, Emergency Sovereign Inference Initiative proposed but not finished, eu_frontier_access_denied t12 +3 (secured EU access via sovereign inference activation), capability rose 4.0 −1 = 15.0  
+emergent_public_sector_strike -- first noted turn 8, listed in 5 turn(s) so far: Public-sector workers in France, Germany, and Belgium continue coordinated strikes against AI-supported administrative systems. Negotiations remain stalled, with unions demanding binding job guarantees and oversight councils.  
+emergent_regional_aid_block -- first noted turn 11, listed in 3 turn(s) so far: Several eastern member states, citing unmet job guarantees and accelerating public-sector displacement, formally block disbursement of EU regional development funds pending a renegotiation of AI transition protocols. The move gains traction as strike actions spread, exposing fractures in cohesion and turning fiscal solidarity into a bargaining chip over AI governance.

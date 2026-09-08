@@ -1,0 +1,37 @@
+[
+  {
+    "id": "opaque_reasoning",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_unrest",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "As AI-driven job displacement accelerates in law, accountancy, and software sectors, coordinated strikes and professional association protests emerge across multiple member states, demanding binding limits on AI adoption in regulated professions. The movement gains traction in national parliaments, with early-day motions filed in Germany, France, and Belgium, and threatens to spill into broader anti-automation sentiment.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

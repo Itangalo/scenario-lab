@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3, Labour Transition Shield −3, priority −1 = −13  
+PROPOSAL BONUS: Labour Transition Shield (cat 7, large) +3 — emergent_labour_displacement_wave justifies urgent social response  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21 last turn, no capacity event, InvestAI Gigafactories in flight +0, capability rose 2.0 −1, member_state_defection −2 = 19  
+emergent_labour_displacement_wave -- first noted turn 1, listed in 2 turn(s) so far: Mid-level technical and administrative roles in legal, financial and public sectors are displaced at scale by AI agents capable of handling multi-step workflows, triggering visible unemployment spikes in urban centres. Labour unions and professional associations begin coordinated strikes and lobbying, framing AI as an immediate threat to skilled employment.  
+emergent_global_ai_governance_initiative -- first noted turn 1, listed in 2 turn(s) so far: A coalition of middle powers, including Japan, India, and Brazil, launches a new multilateral AI governance forum outside existing Western-led institutions, aiming to establish neutral evaluation standards and incident reporting protocols. The initiative gains early momentum as a venue for non-aligned states seeking alternatives to US-EU-China poles.

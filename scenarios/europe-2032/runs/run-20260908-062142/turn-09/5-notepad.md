@@ -1,0 +1,7 @@
+- `emergent_labour_displacement_wave` -- first noted turn 1, listed in 9 turn(s) so far: Accelerating AI-driven displacement in legal, administrative, and clinical coding roles across the EU. Layoffs are now widespread, with retraining systems overwhelmed. Political pressure mounts for emergency labour interventions.
+- `emergent_asml_defiance_negotiations` -- first noted turn 1, listed in 9 turn(s) so far: Ongoing EU-backed Dutch efforts to secure exemptions for non-EUV ASML tools from U.S. export controls. Talks remain stalled, with Washington viewing any carve-out as a precedent it cannot afford.
+- US_POSTURE: CONSOLIDATION
+- PORTFOLIO CHARGE: Critical Infrastructure AI Shield Initiative finished, Emergency Social Transition Compact −3, Data Soil Expansion −3, priority −1 = −7
+- PROPOSAL BONUS: none — new measure is category 9, large, but does not address recent negative events directly; emergent_data_soil_initiative is positive trend, not shock requiring response
+- LEGITIMACY LENDS: none — capital (19.0) above sentiment (30.0) → no transfer
+- SOVEREIGNTY: 14.0 last turn, no capacity event, no category 4 completion, capability rose 1.5 −1 = 13.0

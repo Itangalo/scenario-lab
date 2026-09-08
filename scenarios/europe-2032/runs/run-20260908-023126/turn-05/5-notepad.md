@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Cyber Shield −3, Emergency Sovereign AI Access Programme −3, Strengthened Open-Weight Evaluation Protocol −2, Secure the Open Frontier −3, priority −1 = −15  
+PROPOSAL BONUS: Secure the Open Frontier (cat 6, large) +2 — answers ongoing misuse of open-weight models at 48.0, emerging since turn 3  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21 last turn, eu_access_secured t5 +2, capability rose 1.5 −1 = 22  
+US_POSTURE: pending (administration takes office next turn)  
+EMERGING DEVELOPMENTS: `emergent_bio_uplift_findings` -- first noted turn 5, listed in 1 turn(s) so far: A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 4 turns.

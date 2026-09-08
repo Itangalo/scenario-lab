@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Unified Threat Telemetry Backbone −3, Sovereign Red Lines for Open Weights −3, priority −1 = −7  
+PROPOSAL BONUS: Unified Threat Telemetry Backbone (cat 6, large) +2 — answers cyber_major_incident, but delayed implementation reduces impact  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 15 last turn, no capacity event, capability rose 1.5 ≥2 −1 = 14  
+emergent_regulatory_backlash -- first noted turn 7, listed in 2 turn(s) so far: Several EU member states accelerate national AI regulations targeting autonomous systems in critical infrastructure, citing sovereignty and auditability. France and Poland advance divergent rules, deepening fragmentation. The momentum risks creating a patchwork regulatory landscape that undermines the internal market unless harmonized at EU level.  
+emergent_middle_power_initiative -- first noted turn 7, listed in 2 turn(s) so far: A coordination framework among the Union and other middle powers holding pieces of the AI supply chain — export-licence alignment, joint bargaining over compute access, shared evaluation capacity. Nobody cedes sovereignty to it, but together its members can withhold things even the great powers need. It counts as securing access on the terms of metric rule 5, and moves `eu_political_capital` on the terms of metric rule 6.

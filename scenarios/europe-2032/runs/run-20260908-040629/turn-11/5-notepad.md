@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Emergency Resilience Surge −3, Sovereign AI Testbed Network −3, priority −1 = −7  
+PROPOSAL BONUS: Sovereign AI Testbed Network (cat 5, large) +3 — addresses systemic ai_safety deficit and indirect fallout from emergent_disinfo_wave and cyber_major_incident  
+LEGITIMACY LENDS: none — eu_political_capital (21.0) above public_sentiment (15.0)  
+SOVEREIGNTY: 32.0 last turn, no capacity event, capability rose 2.0 −1 = 31.0  
+US_POSTURE: cooperative engagement with strategic autonomy  
+Emerging developments:  
+- `emergent_regional_data_pact` -- first noted turn 10, listed in 3 turn(s) so far: Several EU member states, citing the failure of central AI governance and growing public distrust, accelerate informal negotiations on a regional data governance pact. The pact would restrict high-capability model training on locally generated data, framed as a sovereignty measure but risking further fragmentation of the digital single market. Tensions with the Commission rise as the December failover test looms, with unity increasingly in doubt.  
+- `emergent_disinfo_wave` -- first noted turn 11, listed in 2 turn(s) so far: A coordinated synthetic disinformation campaign, likely originating outside the EU, floods social and local media across multiple member states. It subtly amplifies regional grievances and erodes trust in EU institutions, evading current detection systems and distorting public discourse around AI policy.

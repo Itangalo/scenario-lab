@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Emergency Resilience Mobilisation Initiative finished, Secure the Core −3, Enforceable Fallback −3, priority −1 = −7  
+PROPOSAL BONUS: Enforceable Fallback (cat 6, large) +3 — direct response to cyber_major_incident t8 and member_state_defection t9, both high-impact and recent  
+LEGITIMACY LENDS: capital 11, sentiment 26 -> none  
+SOVEREIGNTY: 17 last turn, Emergency Resilience Mobilisation Initiative finishes t9 +0 (cat 6), Secure the Core in flight +1, member_state_defection t9 −2, capability rose 1.5 −1 = 15  
+US_POSTURE: RETRENCHMENT  
+emergent_eu_sovereignty_crisis -- first noted turn 7, listed in 3 turn(s) so far: The European Commission formally acknowledges that EU AI sovereignty has fallen to critical levels, triggering emergency consultations among member states on nationalizing key AI infrastructure and pooling remaining compute resources under direct Union control. The move is framed as a last-ditch effort to prevent total technological dependency.  
+emergent_public_sector_ai_backlash -- first noted turn 7, listed in 3 turn(s) so far: Following the insurance retreat and repeated cyber failures, several regional governments suspend AI deployment in public services pending a pan-European review. Civil servants report systemic failures in AI-supported decision-making, leading to delays in healthcare and welfare delivery, fueling a groundswell of institutional resistance to further adoption.

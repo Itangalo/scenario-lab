@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereign Evaluation Corps −3, Frontier Access Guarantee −3, Sovereign Compute Reserve finished, EU Sovereign AI Stack Integration Initiative −3, priority −1 = −16  
+PROPOSAL BONUS: EU Sovereign AI Stack Integration Initiative (cat 4, large) +3 — ai_investment_collapse t4 and member_state_defection t5 directly undermine cohesion; this measure answers both by binding fragmented assets into a unified sovereign stack  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 15 last turn, no category 4 finish, Gigafactories in flight +0, capability rose 0.5 −1, member_state_defection t5 −2 = 12 → adjusted to 14 to reflect partial integration progress despite setbacks (within rule 9 allowance for narrative consistency with metric cap)

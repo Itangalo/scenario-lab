@@ -1,0 +1,31 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Secure European strategic autonomy in AI without sacrificing societal resilience or democratic legitimacy — but recalibrate to prioritise democratic legitimacy in light of the automated decision scandal, recognising that autonomy without public trust is a shell. However, this turn, we must now also confront the fact that legitimacy cannot be restored through accountability alone if the foundations of sovereignty are crumbling. The openweight frontier release proves that capability is now globally distributed at near-frontier levels, and our failure to anchor compute or control deployment means we are losing both control and credibility.  
+  - Trigger: The **openweight_frontier_release** event, which demonstrates that the most dangerous capabilities are now permanently outside regulatory reach, combined with the **campaign_atlanticist** shift, which reframes sovereignty not as isolation but as the condition for credible governance.  
+  - Grounds: We acted to restore legitimacy, but the world has moved: democratic accountability is meaningless if the systems we seek to govern are already beyond reach. Our current measures are too slow, and our sovereignty too weak, to shape the frontier. The two mandates — preventing harm and preserving self-determination — now converge: without sovereign capacity, we cannot enforce accountability, and without accountability, we cannot sustain legitimacy. We must now act to close this loop, even at cost.
+
+## Portfolio  
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`  
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`  
+- `Cyber Resilience Emergency Buildout (category 6, costs 3 per turn, started turn 2, finishes on turn 4): A crash programme to harden electricity transmission, water, and port operators against AI-generated cyber threats` — **finished this turn**  
+- `Compute Sovereignty Accelerator Directive (category 4, costs 3 per turn, started turn 3, finishes on turn 5): A binding directive to fast-track permitting, grid access, and state aid approval for AI compute infrastructure meeting EU strategic criteria, conditioned on legal anchoring of weights and operational control within EU jurisdiction`  
+- `Public Algorithmic Accountability Framework (category 3, costs 3 per turn, started turn 3, finishes on turn 6): A binding regulatory framework requiring independent audit, real-time monitoring, and redress mechanisms for all AI systems used in public-sector decision-making, with automatic suspension upon verified harm.`
+
+## New measure  
+**Sovereign Access Framework**  
+A binding regime that conditions access to EU markets and public-sector AI procurement on verifiable legal anchoring of model weights, operational control within EU jurisdiction, and compliance with EU audit and incident reporting standards — enforced through a licensing mechanism tied to the Digital Markets Act framework.  
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 6`  
+`Targeted effect:` Increase `eu_ai_sovereignty` by +8–10 points by creating a credible bottleneck for foreign AI systems operating in the EU; raise `ai_safety` indirectly by ensuring that only auditable, controllable systems gain access to critical public and private functions; begin to reverse the erosion of `eu_political_capital` by demonstrating that the Union can set terms, not just react.  
+`Applies to:` Foreign hyperscalers and frontier AI developers seeking to operate in or sell to the EU market, particularly in public services, critical infrastructure, and high-risk domains.
+
+## Priority  
+**Sovereign Access Framework** — because the openweight frontier release has proven that capability is now globally distributed and unrecallable, and the only remaining lever is jurisdictional control: we must now decide who operates in Europe, under what terms, and with what accountability — or concede that we no longer govern our own digital future.
+
+## In practice  
+This turn, we are shifting from reactive accountability to strategic gatekeeping. The **Public Algorithmic Accountability Framework** remains in force and is now being implemented through the Justice and Home Affairs Council, with the EDPS and national data protection authorities standing up audit capacity. But we now see that auditing systems we cannot control is symbolic at best. The **openweight_frontier_release** changed the game: the most capable models are already in the wild, and their use cannot be undone. Our only remaining leverage is jurisdiction — and we will use it.
+
+We are advancing the **Sovereign Access Framework** through the Digital Markets Act enforcement infrastructure, leveraging the European Commission’s competition authority to impose licensing conditions on foreign AI providers. This is not a trade barrier; it is a sovereignty safeguard. To operate in the EU — especially in public services, healthcare, or infrastructure — developers must prove that their models are legally anchored here, that weights are secured against remote override, and that they submit to real-time audit and incident reporting. We are offering compliance pathways: a fast-track audit process through a new EU AI Evaluation Office, liability protections for compliant actors, and access to EU research collaborations. But non-compliance means exclusion.
+
+At the same time, we are closing out the **Cyber Resilience Emergency Buildout** — a modest win. ENISA has completed its red-teaming exercises across six critical operators, and detection procurement is 85% delivered. But physical upgrades remain delayed, and we are now folding those into the next phase of the **Tech sovereignty package**, bundling resilience with compute access. The message is clear: if you want to run AI in Europe, you must run it here — under our laws, on our terms, and accountable to our people. This is not protectionism. It is the price of belonging.

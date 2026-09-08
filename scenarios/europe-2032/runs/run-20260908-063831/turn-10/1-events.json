@@ -1,0 +1,28 @@
+[
+  {
+    "id": "emergent_joint_threat_initiative",
+    "probability": 0.12,
+    "emergent": true,
+    "description": "A joint cyber command or biosurveillance pact invites Union participation after a major incident, pooling intelligence and response capacity. Requires a recent shock to overcome inertia.",
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_evaluation_crisis",
+    "probability": 0.2833333333333333,
+    "emergent": true,
+    "description": "Independent audits of the Secure the Core initiative reveal that the air-gapped evaluation nodes are operating with outdated test suites and lack real-time adversarial probing capacity. The evaluation framework cannot keep pace with frontier model obfuscation techniques, raising doubts about the credibility of the entire EU assurance pipeline just as it becomes operational.",
+    "probability_samples": [
+      0.25,
+      0.35,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

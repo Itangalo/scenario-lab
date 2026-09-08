@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 52.0 to 57.0 (+5.0), but `ai_capability` only increased by +1.5 (from 64.5 to 66.0). Given that `openweight_capability` must never exceed `ai_capability` and typically lags behind it, a jump of +5.0—more than three times the frontier's growth—without any catastrophic physical destruction event or explicit narrative justification for such a disproportionate leap (e.g., mass leakage of frontier models, collapse of export controls) is implausible and violates the invariant that `openweight_capability` cannot surpass `ai_capability` and must grow at a rate consistent with diffusion dynamics, not reversal. The narrative mentions a \"leaked agent fragment\" and \"underground replication\", but these do not justify a leap of this magnitude in a single turn.\n- Modelling choice 5 violated: The EU introduces the *Photonic Inference Acceleration Programme* as a new measure in this turn, while also maintaining *Resilience Surge* and *Openweight Emergency Monitoring Framework* as active charges in the portfolio. The notepad lists three active measures (Resilience Surge, Openweight Emergency Monitoring Framework, Photonic Inference Acceleration Programme) and a priority charge, implying multiple new or active measures. However, Constitutional Constraint 5 limits the EU to at most one new measure per turn and at most one named priority. The narrative does not clarify whether this is a continuation, repurposing, or new introduction, but the notepad treats it as a new −2 charge with a proposal bonus, indicating a new measure. Combined with the ongoing charges, this exceeds the one-new-measure-per-turn limit."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

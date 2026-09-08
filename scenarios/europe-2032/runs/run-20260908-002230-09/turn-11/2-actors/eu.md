@@ -1,0 +1,17 @@
+No statement changes.
+
+## Portfolio
+``Launch sovereign AI software stack initiative: fund and coordinate the development of a fully open, auditable, and EU-governed AI operating environment — including agent coordination frameworks, telemetry pipelines, and override protocols — to run on sovereign infrastructure and ensure full control over system behaviour (category 5, costs 3 per turn, started turn 9, finishes on turn 11): Fund and coordinate development of a trusted, EU-governed software stack for sovereign AI systems, enabling auditability and operational control on EU-hosted infrastructure`` — finished  
+``Emergency workforce transition compact: launch an EU-wide, fast-tracked retraining and income support programme for professionals displaced by AI in legal, technical writing, and customer service roles, with binding participation from national labour ministries and co-financing from automating firms (category 7, costs 3 per turn, started turn 11, finishes on turn 12): Launch EU-wide retraining and income support for AI-displaced professionals, with mandatory activation of national flexicurity schemes and firm-level automation reporting``
+
+## New measure
+None this turn.  
+Waiting for the Sovereign AI Software Stack Initiative to deliver its first operational components before advancing runtime enforcement measures that depend on it.
+
+## Priority
+**Emergency workforce transition compact** — because political capital is now negative, and without immediate action to stabilise public sentiment and prevent social fracture, no technical sovereignty project will survive the next electoral cycle, regardless of its strategic necessity.
+
+## In practice
+This turn, we are executing on two collapsing fronts: one technical, one existential. The Sovereign AI Software Stack Initiative has reached its finishing turn, and while core cryptographic protocols for telemetry and override have been designed, they have not yet been integrated or tested under load. The evaluation agency confirms that no agent runtime currently meets the full-stack auditability standard we set. The stack is not deployable. We are therefore unable to activate the runtime control mandate we staked ourselves on. The infrastructure is in place, but it runs nothing of consequence. The gap between hardware and software is now the single point of failure in our sovereignty strategy.
+
+On the social front, we are forcing implementation of the Emergency Workforce Transition Compact through the Council’s Employment configuration, leveraging Article 14b of the European Pillar of Social Rights as a legal base and conditioning Recovery and Resilience Facility disbursements on national activation. Germany, France, and Poland have activated their retraining pipelines, drawing on existing flexicurity frameworks and repurposing digital upskilling funds. A solidarity levy of 5% on firms that have automated over 20% of their professional roles since 2029 is being collected via the new AI Impact Reporting Regime, though enforcement lags in Italy and Spain due to contested national interpretations. The European Labour Authority is deploying rapid-response teams to regions with concentrated displacement, but rollout is uneven. Without faster uptake, public sentiment will not turn—and without that, political capital cannot recover. We are not building the future. We are trying to stop the present from burning down.

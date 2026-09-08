@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Resilience Surge −2, Open-Weight Firewall Initiative −2, Establish enforceable sovereign access rights −3, priority −1 = −14  
+PROPOSAL BONUS: Establish enforceable sovereign access rights (cat 4, large) +3 — addresses capability_jump and election_consolidation directly, recent and severe  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 17.0 last turn, no capacity event, capability rose 1.5 −1 = 16.0  
+US_POSTURE: pending (administration takes office next turn)  
+emergent_regional_data_coalition -- first noted turn 4, listed in 2 turn(s) so far: The informal EU data-sharing talks crystallize into a formal mutual defense pact for AI-critical infrastructure, with binding commitments to joint incident response, shared threat intelligence, and coordinated sanctions against foreign actors targeting member states' AI systems. The pact activates in response to growing cyber threats and perceived unreliability of transatlantic coordination.

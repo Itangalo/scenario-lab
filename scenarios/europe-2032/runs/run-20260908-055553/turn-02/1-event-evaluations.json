@@ -1,0 +1,110 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.15666666666666668,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4129746609523962,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.38444357404359475,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.04,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8022179157260463,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9450284325948077,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.049190210125642286,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.07666666666666666,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.61341347418935,
+    "triggered": false
+  },
+  {
+    "description": "Preliminary labour data from major EU economies reveals a sharp uptick in job losses in mid-level technical and administrative roles, with firms openly citing AI-driven automation as the cause. The trend is concentrated in legal support, public administration, and IT operations, and union leaders begin calling for emergency talks. The effect on public sentiment and political capital becomes a live question by year's end.",
+    "emergent": true,
+    "id": "emergent_labour_displacement_wave",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7447706111216928,
+    "triggered": false
+  },
+  {
+    "description": "The U.S. Department of Commerce expands its jurisdictional reach over ASML’s non-EUV systems, demanding that the company restrict servicing and spare parts for older lithography tools used in China and by third parties with indirect exposure. The Dutch government faces a direct confrontation between compliance with U.S. extraterritorial claims and the strategic independence of a flagship European firm, triggering high-level emergency consultations within the Commission.",
+    "emergent": true,
+    "id": "emergent_asml_supply_chain_pressure",
+    "probability": 0.2066666666666667,
+    "probability_samples": [
+      0.22,
+      0.2,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.03502952164400164,
+    "triggered": true
+  }
+]

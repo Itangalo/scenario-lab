@@ -1,0 +1,5 @@
+- `emergent_labour_displacement_wave` -- first noted turn 1, listed in 4 turn(s) so far: Accelerating displacement in mid-skill cognitive jobs continues to gain visibility in national media and political discourse across multiple member states.
+- PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, EU AI Evaluation Office −3, Labour Transition Acceleration Fund −3, priority −1 = −13
+- PROPOSAL BONUS: Labour Transition Acceleration Fund (cat 7, large) +3 — responds to emergent labour displacement wave and cyber_major_incident
+- LEGITIMACY LENDS: none
+- SOVEREIGNTY: 20 last turn, ASML Supply Chain Shield finishes t4 +3, capability rose 1.5 −1, no capacity event = 22

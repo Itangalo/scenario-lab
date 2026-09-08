@@ -1,0 +1,33 @@
+## Statement changes  
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, but we now understand that preserving our political agency requires not just intent — it requires independent technical capacity, because without it, no decision we make can land in the world; yet this turn has shown that sovereignty without cohesion is an illusion, and that capability without enforceable authority collapses into distributed fragility  
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we now assume that any system we do not operate and physically control ourselves may be weaponized against us, whether through denial, sabotage, or uncontrolled diffusion, and that even sovereign systems are only as secure as their weakest update, dependency, or monitoring node — including the political dependencies that allow a single member state to block emergency disconnection  
+- retire `two_year_commitment`  
+  - Trigger: The failure of the Emergency Override Authority to gain universal buy-in, despite two years of legal and technical preparation, reveals that securing operational integrity cannot be achieved through central mandates alone when political fragmentation outpaces technical integration  
+  - Grounds: Our commitment assumed that technical control could be unified under EU authority, but the emergence of the *emergent_sovereignty_network_surge* and the refusal of two member states to accept override prove that integrity must now be built laterally, not vertically — and that the old model of top-down enforcement is breaking down  
+
+## Portfolio  
+- Sovereign AI Defence Stack: Secure Execution Environment for Critical Public Models (category 6, costs 3 per turn, started turn 8, finishes on turn 10): Mandate and deploy a unified, hardware-rooted execution environment — combining secure enclaves, runtime monitoring, and local override — for all sovereign AI systems running healthcare, energy, and border functions under the Emergency Sovereign Inference Initiative — **finished this turn**  
+- Joint AI Incident Response Corps: Rapid Deployment Teams for Critical System Intrusions (category 6, costs 3 per turn, started turn 9, finishes on turn 11): A standing corps of technical responders — drawn from ENISA, Europol, national CERTs, and vetted private experts — trained and authorized to physically deploy to compromised AI infrastructure within 12 hours of a confirmed breach — **finished this turn**  
+- Emergency Override Authority for Critical AI Systems (category 6, costs 3 per turn, started turn 10, finishes on turn 12): A binding directive establishing that in the event of a Tier 1 AI incident — defined as uncontrolled replication, critical infrastructure compromise, or confirmed weaponization of open models — the Joint AI Incident Cell at ENISA-Europol may authorize emergency isolation and physical intervention, overriding any national or vendor objection  
+
+Canceled measure: Sovereign Red-Teaming Grid: Openweight Audit and Containment Network. This capability has been operationally validated and integrated into ENISA’s runtime policies; further investment is redundant given the shift in threat landscape toward politically blocked enforcement rather than technical detection gaps.
+
+## New measure  
+### European Compute Solidarity Pact  
+A binding agreement among willing member states to pool sovereign compute resources, evaluation access, and secure enclave operations under shared governance, enabling mutual override in emergencies and collective response without requiring unanimity.
+
+Category: 4 (Sovereignty and industrial capacity)  
+Size: large  
+Finishes on turn: 14  
+Targeted effect: +8 to eu_ai_sovereignty, +5 to resilience, indirect boost to public_sentiment if framed as stability-building  
+Applies to: participating member states (initially France, Germany, Italy, Netherlands, Spain), with opt-in for others
+
+## Priority  
+**European Compute Solidarity Pact** — because the Emergency Override Authority is failing due to political fragmentation, not technical weakness, and because the emergent_sovereignty_network_surge proves that trust is shifting to lateral coalitions; we must now institutionalize what is already forming in the shadows, or risk irrelevance
+
+## In practice  
+We are closing out two major measures this turn: the Sovereign AI Defence Stack and the Joint AI Incident Response Corps. In Lyon, Warsaw, and Valencia, the secure enclaves are live, monitoring sovereign models with hardware-rooted verification and local fuses. But we now know these nodes are only as strong as the willingness of host states to let them act. When Poland blocked disconnection last month, the fuse remained intact — but unused. Similarly, the Joint AI Incident Response Corps has completed training and certification across 18 sites. Its first deployment drill in Bavaria succeeded, but only because all parties agreed in advance. No drill prepares us for a state saying no during real cascading failure.
+
+That is why we pivot — not away from sovereignty, but toward a new form of it. The *emergent_sovereignty_network_surge* is not a rebellion; it is an adaptation. Five mid-sized states have committed to shared compute, joint red-teaming, and mutual override protocols outside EU channels because they no longer believe central authority can move fast enough. We will meet them where they are. Under Article 122 TFEU and the precedent of the Eurogroup’s crisis mechanisms, we are convening a summit in Maastricht next month to launch the European Compute Solidarity Pact. Germany and France have signaled conditional support — they want co-leadership and sunset clauses, but they also fear being left behind. We are offering veto-free emergency protocols tied to verified incidents, audited by a tripartite board (ENISA, national labs, civil society), with compute contributions weighted by contribution.
+
+This is not a replacement for EU-wide authority — it is a lifeline. We will channel cohesion funds and EUQIRP-certified chips into the pact’s shared enclaves, prioritizing those who sign on. For Poland and Hungary, we leave the door open — but no longer wait for them. If override fails at the centre, it must succeed among those who still act as one. And if public sentiment remains at 10.0, it is because people see chaos, not control. This pact will be sold not as power grab, but as damage containment: a network that works when the system does not.

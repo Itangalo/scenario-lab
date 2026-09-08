@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereign Evaluation and Monitoring Initiative −3, European Red-Teaming and Interpretability Corps −3, priority −1 = −13  
+PROPOSAL BONUS: European Red-Teaming and Interpretability Corps (cat 5, large) +3 — emergent_labour_displacement_wave and persistent control concerns justify urgent sovereign evaluation capacity  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 25 last turn, no capacity event, European Red-Teaming and Interpretability Corps in flight +2, capability rose 2.0 −1 = 28 → Seville build progress confirmed +2, but delayed ratification limits immediate impact = 27  
+US_POSTURE: pending (administration takes office next turn)  
+- `emergent_labour_displacement_wave` -- first noted turn 4, listed in 2 turn(s) so far: Widespread reports confirm that AI-driven automation is displacing mid-level technical and administrative workers across European firms, particularly in legal support, software maintenance, and public-sector back offices. The pace exceeds previous trends, with unions mobilising and regional protests intensifying in France and Germany, feeding into political narratives around AI's societal cost.

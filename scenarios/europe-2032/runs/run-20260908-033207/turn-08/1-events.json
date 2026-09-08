@@ -1,0 +1,39 @@
+[
+  {
+    "id": "member_state_defection",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_regional_compute_pact",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "A binding regional pact among France, Germany, and Poland to pool compute resources, jointly fund frontier model training under national oversight, and establish shared legal jurisdiction over participating data centres gains momentum, creating a de facto core group for sovereign AI infrastructure that bypasses stalled EU mechanisms.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_ai_winter_signals",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "Multiple private AI firms announce restructuring, delayed releases, and reduced capital expenditure due to rising energy costs, regulatory uncertainty, and slower-than-expected revenue from AI products, signaling early signs of an AI winter despite high capability metrics.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

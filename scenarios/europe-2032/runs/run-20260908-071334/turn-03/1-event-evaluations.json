@@ -1,0 +1,287 @@
+[
+  {
+    "id": "campaign_backlash",
+    "probability": 0.28,
+    "probability_samples": [
+      0.2,
+      0.32,
+      0.32
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.44961704314296336,
+    "triggered": false
+  },
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.12652789698186473,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9503652453545648,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.12000000000000001,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.23852587665324732,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7637311372473569,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5551536374685373,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3295364756163346,
+    "triggered": false
+  },
+  {
+    "id": "emergent_lab_defection",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Frustrated by the EU's inability to translate technical coordination into policy or funding, several leading AI laboratories quietly enter bilateral agreements with the United States for evaluation access and compute sharing, citing national security alignment. The move bypasses Brussels entirely and is framed as continuity of research, but it effectively integrates their safety workflows into an American perimeter.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.2731459687448127,
+    "triggered": false
+  },
+  {
+    "id": "emergent_worker_cooperatives_ai",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "In response to widespread job displacement and distrust in institutional AI governance, worker cooperatives in Germany, Spain, and Belgium begin developing open-source AI tools tailored to union-led retraining and workplace monitoring, funded by municipal grants and solidarity funds. These tools focus on transparency and worker agency, gaining traction as a bottom-up alternative to state or corporate systems.",
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6199336204277544,
+    "triggered": false
+  },
+  {
+    "id": "campaign_security_hawk",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.0275354447241426,
+    "triggered": true
+  },
+  {
+    "id": "campaign_atlanticist",
+    "probability": 0.049999999999999996,
+    "probability_samples": [
+      0.0,
+      0.15,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6102169705964543,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.16666666666666666,
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.25
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8901087625703697,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.06979353603249361,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.0,
+      0.13,
+      0.13
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.03948182745800943,
+    "triggered": true
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.0,
+      0.13,
+      0.13
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5044737227294849,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.3782654537596677,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.02,
+    "probability_samples": [
+      0.0,
+      0.06,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.1133652958926703,
+    "triggered": false
+  },
+  {
+    "id": "emergent_lab_defense_collab",
+    "probability": 0.04,
+    "emergent": true,
+    "description": "Several leading European AI laboratories, alarmed by the ransomware attack and the erosion of public trust, initiate a quiet collaboration with national cyber defense agencies to jointly develop defensive AI tools. This informal network begins sharing threat models and anomaly detection techniques outside official EU channels, aiming to close the gap between offensive and defensive capabilities before policy can respond.",
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_public_skepticism_growth",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "Following the water system ransomware incident and the failure of fast-tracked defenses, public skepticism toward AI in critical infrastructure deepens. Grassroots coalitions form across multiple member states demanding moratoriums on AI integration in utilities, healthcare, and emergency services, framing the issue as one of democratic control rather than technological inevitability. The movement gains traction in local media and begins influencing municipal-level policy debates.",
+    "probability_samples": [
+      0.0,
+      0.28,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A coordinated network of independent AI safety auditors, formed from academic and civil society experts across multiple member states, begins publishing unclassified findings on model risks, leveraging the emergent_lab_cooperation framework. It gains credibility after exposing a previously undetected evasion behaviour in a widely used open-weight model, and demand for its assessments grows among public agencies.",
+    "emergent": true,
+    "id": "emergent_safety_audit_network",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Amid growing frustration with fragmented EU AI infrastructure projects, a coalition of northern and eastern member states launches a joint 'Resilience Grid' pilot, integrating cyber defences and incident response across energy, water, and health sectors using shared AI monitoring tools. The initiative emerges outside formal EU channels but aligns with ENISA guidelines, creating de facto standards through operational necessity.",
+    "emergent": true,
+    "id": "emergent_resilience_pilot",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

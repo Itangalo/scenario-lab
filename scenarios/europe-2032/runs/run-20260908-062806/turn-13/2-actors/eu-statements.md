@@ -1,0 +1,22 @@
+# Statements: The European Union (turn 13)
+
+## Ledger
+
+- `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing.
+- `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — **but this turn, we act not on incomplete data, but on the certainty that delay is fatal. We are no longer choosing between risks; we are responding to active failure.**
+- `survival_first` (commitment): Before rebuilding sovereignty, we must stop the bleeding. This turn, our priority is not capability, but containment: ensure that no high-capability system — foreign or domestic — operates in the EU without real-time monitoring, telemetry, and enforceable circuit breakers. If we cannot run our own models yet, we must at least see what others are running. **But seeing is not enough. We now know that telemetry without enforcement is ritual. The deepfake curfews exploited our alert systems not because they were unseen, but because no one could act in time. We must not only monitor — we must be able to halt, isolate, and override.**
+
+## Changes this turn
+
+- **modify** `survival_first` — applied
+  - Tier: commitment
+  - Text: Before rebuilding sovereignty, we must stop the bleeding. This turn, our priority is not capability, but containment: ensure that no high-capability system — foreign or domestic — operates in the EU without real-time monitoring, telemetry, and enforceable circuit breakers. If we cannot run our own models yet, we must at least see what others are running. **But seeing is not enough. We now know that telemetry without enforcement is ritual. The deepfake curfews exploited our alert systems not because they were unseen, but because no one could act in time. We must not only monitor — we must be able to halt, isolate, and override.**
+  - Trigger: The emergent_automated_disinformation_wave, using deepfake audio of ministers to announce fake curfews, succeeded not because the content was undetectable, but because public alert systems lacked kill switches and cross-verification protocols. Telemetry from one U.S. lab flagged anomalies 47 minutes before broadcast — but no authority had the legal or technical means to stop transmission. The system saw the knife — but could not block the strike.
+  - Grounds: We are no longer failing from ignorance, but from impotence. Our monitoring cell exists in name, but cannot act. Gatekeepers delay enforcement, member states dispute jurisdiction, and providers treat alerts as advisory. At ai_capability 89.0, every second of unauthorised operation risks cascading harm. The commitment evolves: visibility is necessary, but only power over operation is sufficient. We now stake ourselves on operational override — not just observation.
+  - Evidence quoted: The disinformation campaign expands to Austria and Poland, using deepfake audio of ministers to announce fake curfews. Attribution remains contested, but NATO’s cyber unit flags patterns consistent with a state-level actor. The campaign continues to exploit weaknesses in public alert systems and erodes trust in emergency communications.
+  - Reason: The development directly exposes the failure of telemetry without enforcement, which is the core reason for strengthening the statement from monitoring to override authority.
+- **modify** `act_under_uncertainty` — rejected-structural
+  - Tier: commitment
+  - Text: We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — **but this turn, we act not on incomplete data, but on the certainty that delay is fatal. We are no longer choosing between risks; we are responding to active failure. Now, with override systems untested and disinformation already weaponising our infrastructure, we act not just to compel access, but to seize control where access is denied.**
+  - Grounds: The disinformation wave confirms that adversarial actors are no longer probing — they are operating inside our sovereign space using AI-generated authority. Waiting for consensus, for legal clarity, for perfect tools, is a luxury we do not have. Our commitment must now include the authority to disable systems that threaten public order, even without provider consent. This is not a step we take lightly — but it is the only step left.
+  - Reason: a commitment-tier change must name a Trigger

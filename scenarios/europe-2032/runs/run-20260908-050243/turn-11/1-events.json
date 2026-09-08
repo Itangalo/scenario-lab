@@ -1,0 +1,26 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_unrest",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "Spontaneous coordination among mid-level professionals in law, accounting, and engineering leads to a wave of strikes and licensing body resolutions demanding moratoriums on AI-driven automation in credentialing and client service. The movement gains traction in Germany, France, and Belgium, citing the erosion of career pathways and professional standards.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Secure sovereign access to frontier model weights −3, Emergency Resilience Acceleration −3, priority −1 = −13  
+PROPOSAL BONUS: Emergency Resilience Acceleration (cat 6, large) +3 — backlash_physical occurred this turn and this measure answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 18 last turn, no capacity event, capability rose 1.5 −1 = 17  
+emergent_labour_displacement_wave -- first noted turn 1, listed in 4 turn(s) so far: Widespread job losses in legal, administrative and mid-level tech roles become visible across multiple member states as firms deploy AI agents capable of handling multi-step professional workflows. Union-level analysis confirms a structural shift, not cyclical unemployment, triggering early debate on social protection reforms.  
+emergent_global_ai_governance_initiative -- first noted turn 1, listed in 4 turn(s) so far: In response to the Kimi K3 release and the lab agent incident, a coalition of non-aligned states and academic institutions launches a new open framework for distributed AI safety testing and model provenance tracking, aiming to fill the governance gap left by unilateral actions. The EU is invited to co-lead its technical arm.

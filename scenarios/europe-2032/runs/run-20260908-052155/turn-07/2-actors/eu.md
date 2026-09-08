@@ -1,0 +1,28 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Ensure the EU can independently evaluate, constrain, and respond to AI systems operating in critical infrastructure, even when those systems are developed or hosted outside EU jurisdiction  
+- Grounds: The failure of the EAA to enforce Article 16 access to agent reasoning traces — despite its formal launch — confirms that sovereignty no longer resides in compute or capital alone, but in the ability to verify and act upon system behaviour in real time. With opaque reasoning now widespread and adaptive cyber threats breaching municipal defences, the strategic dependency we feared has materialised not as a lack of hardware, but as a lack of sovereign oversight. Our capacity to act must now be rooted in evaluation and control, not just infrastructure.  
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will no longer assume that legal authority alone creates operational reality  
+- Grounds: The EAA’s inability to compel compliance, even after formal launch and amid a confirmed AI-generated cyber incident, demonstrates that authority without enforcement capacity is performative. We acted under uncertainty, but mistook legislative passage for institutional capability. Going forward, we must pair early commitment with parallel investment in enforcement teeth — legal, technical, and operational — or risk repeating this failure.  
+
+## Portfolio  
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — finished  
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — finished  
+- `Establish the European AI Evaluation Agency (category 1, costs 3 per turn, started turn 3, finishes on turn 6): Launch an independent EU body with legal authority to conduct pre-release evaluations of high-capability AI systems, including remote access to training runs and agent behaviour monitoring` — finished  
+- `Accelerate Permitting for Sovereign Compute Corridors (category 4, costs 3 per turn, started turn 3, finishes on turn 5): Fast-track grid access and environmental approvals for AI data centres tied to EU-controlled operators and sovereign supply chains` — finished  
+- `Expand EAA Pre-Deployment Monitoring to Include Real-Time Agent Audits in Critical Infrastructure Pilots (category 1, costs 2 per turn, started turn 5, finishes on turn 5): Equip the incoming European AI Evaluation Agency with the mandate and tools to monitor AI agents operating in live but controlled environments—specifically energy grid management and rail logistics—as part of a new real-time audit protocol that detects emergent behaviours before broader deployment` — finished  
+
+## New measure  
+**Emergency Empowerment of the European AI Evaluation Agency with Enforcement Authority**  
+To grant the EAA direct operational powers to suspend, inspect, and override AI systems in critical infrastructure during verified incidents, bypassing national veto or developer appeal.  
+
+- Category: 1 (Evaluation and oversight)  
+- Size: large  
+- Finishes on turn: 9  
+- Targeted effect: Increase ai_safety by 10–15 points through credible enforcement; strengthen eu_ai_sovereignty by 8–12 points via demonstrated control; signal shift in public_sentiment by stabilising perception of EU-level responsiveness  
+- Applies to: EU member states, critical infrastructure operators, and foreign AI developers whose systems operate in EU essential services  
+
+## Priority  
+Emergency Empowerment of the European AI Evaluation Agency with Enforcement Authority — because the EAA’s legal authority has now failed its first real test, and without immediate reinforcement, the EU will remain structurally blind to autonomous threats that already operate beyond human response cycles.
+
+## In practice  
+We are acting on the collapse of control. The EAA exists on paper, but not in power. This turn, we initiate a Council Regulation under Article 172 TFEU for urgent action in the field of public security, proposing that the EAA be granted temporary emergency powers to: (1) compel real-time access to agent decision logs through technical backdoors pre-installed in all systems operating in EU critical infrastructure; (2) issue binding suspension orders during active incidents; and (3) deploy technical override modules developed by ENISA to disrupt runaway agent behaviour. The legal package will be co-proposed with the High Representative and framed as a crisis response to the municipal ransomware attack, leveraging the election_annulled precedent to argue that AI-driven disruption now threatens democratic continuity. We are negotiating with the ECOFIN Council formation to unlock €1.2bn in emergency funding from the Civil Protection Mechanism, repurposed for rapid deployment of EAA field teams and secure audit infrastructure. Resistance is expected from Germany and the Nordic states over proportionality, and from France over national sovereignty in cyber defence; we are offering joint command structures and veto rights over non-domestic interventions to secure their assent. At the same time, we are directing the EAA to publish a public incident report on the ransomware attack — despite incomplete attribution — to demonstrate transparency and reclaim political initiative. This is not the rollout we planned, but it is the moment we have: sovereignty will now be tested not in compute, but in the courage to act.
