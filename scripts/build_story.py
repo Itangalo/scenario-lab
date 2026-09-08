@@ -267,8 +267,17 @@ header.masthead {
 @keyframes dissolve {
   to { opacity: 0; transform: translateY(-16px); filter: blur(5px); }
 }
+/* The world that replaces it should arrive, not blink into existence. */
+/* Beats the per-chapter `rise` further down, which is shorter and would
+   otherwise win on source order and snap the story in under the preamble. */
+#stream.arriving > * { animation: arrive 900ms ease-out backwards; }
+#stream.arriving > *:nth-child(2) { animation-delay: 180ms; }
+@keyframes arrive {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
 @media (prefers-reduced-motion: reduce) {
-  .ch, .fade-block { animation: none !important; }
+  .ch, .fade-block, #stream.arriving > * { animation: none !important; }
 }
 .rail { display: flex; gap: 3px; align-items: center; justify-content: center; padding-top: 0.25rem; }
 .rail i { display: block; width: 14px; height: 3px; border-radius: 1px; background: var(--track); }
@@ -524,11 +533,11 @@ function appendChapter(id) {
 }
 
 const TEXT_BLOCKS = "h2, h3, p, li, summary, .signal, .meta";
-const LETTER_MS = 900;   // how long one character takes to leave
-const SPREAD_MS = 780;   // how long the wave takes to cross everything visible
+const LETTER_MS = 1200;  // how long one character takes to leave
+const SPREAD_MS = 1200;  // how long the wave takes to cross everything visible
 const CHAR_CAP = 3200;   // beyond this, blocks fade rather than shatter
 
-function shatter(el, from, total) {
+function shatter(el, from, total, reverse) {
   // Split text nodes only, so the markup inside a heading — the dateline span,
   // an emphasis — survives intact.
   const walk = node => {
@@ -547,10 +556,14 @@ function shatter(el, from, total) {
   };
   Array.from(el.childNodes).forEach(walk);
   const chars = el.querySelectorAll(".ch");
+  const n = chars.length;
   chars.forEach((s, i) => {
     // Delay is a fraction of the whole wave, not a fixed step, so the effect
-    // takes the same time whether one paragraph is showing or five.
-    const at = (from + i) / Math.max(1, total);
+    // takes the same time whether one paragraph is showing or five. Within a
+    // block the order runs backwards, so the last line goes before the first
+    // and the whole thing reads as rising rather than falling.
+    const order = reverse ? (n - 1 - i) : i;
+    const at = (from + order) / Math.max(1, total);
     s.style.setProperty("--tilt", (Math.random() * 18 - 9).toFixed(1) + "deg");
     s.style.animation = "letter " + LETTER_MS + "ms cubic-bezier(0.4, 0, 0.6, 1) forwards";
     s.style.animationDelay = (at * SPREAD_MS + Math.random() * 60).toFixed(0) + "ms";
@@ -572,25 +585,29 @@ function startOver() {
     .filter(el => onScreen(el) && !el.querySelector(TEXT_BLOCKS));
   if (!visible.length) { reset(); return; }
 
-  const total = visible.reduce((n, el) => n + el.textContent.length, 0);
+  // Bottom of the screen first, so the page lifts away upward.
+  const rising = visible.slice().sort((a, b) =>
+    b.getBoundingClientRect().top - a.getBoundingClientRect().top);
+
+  const total = rising.reduce((n, el) => n + el.textContent.length, 0);
   stream.classList.add("dissolving");
   let seen = 0;
-  visible.forEach(el => {
+  rising.forEach(el => {
     if (seen > CHAR_CAP) {
       el.classList.add("fade-block");
       el.style.animationDelay = ((seen / Math.max(1, total)) * SPREAD_MS).toFixed(0) + "ms";
       return;
     }
-    seen += shatter(el, seen, Math.min(total, CHAR_CAP));
+    seen += shatter(el, seen, Math.min(total, CHAR_CAP), true);
   });
 
   setTimeout(() => {
     stream.classList.remove("dissolving");
-    reset();
+    reset(true);
   }, LETTER_MS + SPREAD_MS + 120);
 }
 
-function reset() {
+function reset(arriving) {
   arm = Math.floor(Math.random() * 3);
   chain = [];
   picked = {};
@@ -602,6 +619,10 @@ function reset() {
   setPanel(NODES[START]);
   active = START;
   window.scrollTo({ top: 0, behavior: "instant" });
+  if (arriving && !REDUCED) {
+    stream.classList.add("arriving");
+    setTimeout(() => stream.classList.remove("arriving"), 1200);
+  }
 }
 
 function trackActive() {
