@@ -443,6 +443,7 @@ BODY = """
       <div class="rail" id="rail" aria-hidden="true"></div>
     </aside>
   </div>
+  __SITEFOOTER__
 </div>
 <script>
 const NODES = __DATA__;
@@ -737,11 +738,73 @@ def dial_tips(path: Path) -> dict[str, str]:
     return out
 
 
+SITE_FOOTER = """<footer class="site">
+    <a href="https://falkai.org/">Falk AI</a>
+    <span>Scenario Lab &middot; draft</span>
+  </footer>"""
+
+SITE_FOOTER_CSS = """
+/* Standalone only: the page sits on a site, and needs a way back to it. */
+footer.site {
+  display: flex; flex-wrap: wrap; gap: 0.6rem 1.25rem; align-items: baseline;
+  margin-top: 4rem; padding-top: 1.25rem; border-top: 1px solid var(--rule);
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--faint);
+}
+footer.site a { color: var(--accent); text-decoration: none; }
+footer.site a:hover { text-decoration: underline; text-underline-offset: 3px; }
+"""
+
+
+def standalone(head: str, body: str) -> str:
+    """Wrap the page as an ordinary web page for falkai.org.
+
+    The artifact host supplies the document skeleton, so the page normally
+    starts at <title>. On a site it has to carry its own, and follow the site's
+    conventions: the `... · Falk AI` title, the shared favicons, a link home.
+
+    It stays noindex on purpose. This is an unfinished draft that stops in 2029
+    and is meant to move to its own domain; indexing it now buys a search result
+    that will rot. One line to remove when that changes.
+    """
+    head = head.replace("<title>Europe 2032</title>\n", "", 1)
+    head = head.replace("</style>", SITE_FOOTER_CSS + "</style>", 1)
+    body = body.replace("__SITEFOOTER__", SITE_FOOTER, 1)
+    description = ("An interactive scenario: you take the European Union through "
+                   "2026\u20132032 without knowing which AI trajectory you are on. "
+                   "Built from several hundred simulation runs.")
+    return (
+        "<!DOCTYPE html>\n"
+        '<html lang="en">\n'
+        "<head>\n"
+        '<meta charset="UTF-8">\n'
+        '<meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
+        "<title>Europe 2032 &middot; Falk AI</title>\n"
+        f'<meta name="description" content="{description}">\n'
+        '<meta name="robots" content="noindex, follow">\n'
+        '<meta property="og:type" content="article">\n'
+        '<meta property="og:site_name" content="Falk AI">\n'
+        '<meta property="og:title" content="Europe 2032">\n'
+        f'<meta property="og:description" content="{description}">\n'
+        '<meta property="og:url" content="https://falkai.org/europe-2032/">\n'
+        '<meta name="twitter:card" content="summary">\n'
+        '<link rel="icon" href="/favicon.ico">\n'
+        '<link rel="apple-touch-icon" href="/favicon-180.png">\n'
+        f"{head}"
+        "</head>\n<body>\n"
+        f"{body}"
+        "</body>\n</html>\n"
+    )
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("scenario", type=Path)
     ap.add_argument("--out", type=Path)
+    ap.add_argument("--standalone", action="store_true",
+                    help="emit a full web page for falkai.org, not artifact content")
     args = ap.parse_args()
 
     story_dir = args.scenario / "story"
@@ -766,11 +829,14 @@ def main() -> int:
     body = body.replace("__POSTAMBLE__", json.dumps(postamble))
     body = body.replace("__TIPS__", json.dumps(tips, ensure_ascii=False))
     out = args.out or (args.scenario / "story.html")
-    out.write_text(HEAD + body, encoding="utf-8")
+    page = standalone(HEAD, body) if args.standalone else HEAD + body.replace(
+        "__SITEFOOTER__", "", 1)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(page, encoding="utf-8")
 
     turns = sum(1 for e in payload.values() if e["kind"] == "turn")
     choices = sum(1 for e in payload.values() if e["kind"] == "choice")
-    leak = re.findall(r"\b[AVP][12]{1,3}\b", body)
+    leak = re.findall(r"\b[AVP][12]{1,3}\b", page)
     print(f"wrote {out} — {turns} turns, {choices} choice pages, "
           f"{out.stat().st_size // 1024} KB")
     print(f"branch ids in output: {len(leak)}")
