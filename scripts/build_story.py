@@ -338,6 +338,28 @@ article em { color: var(--muted); }
 .dial b i { font-style: normal; margin-left: 0.15rem; }
 .dial b i.up { color: var(--up); }
 .dial b i.down { color: var(--down); }
+/* The arcs carry a reading but never say what the reading is of. Each dial
+   explains itself on hover and on keyboard focus; the text is authored in
+   story/dial-tips.md, not here. */
+.dial { position: relative; }
+.dial:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 3px; }
+.dial .tip {
+  position: absolute; bottom: calc(100% + 8px); left: 50%;
+  transform: translateX(-50%) translateY(3px);
+  width: max-content; max-width: 12.5rem;
+  background: var(--ink); color: var(--ground);
+  font-family: Spectral, Georgia, serif; font-size: 0.78rem; line-height: 1.45;
+  letter-spacing: 0; text-align: left; text-transform: none;
+  padding: 0.5rem 0.65rem; border-radius: 2px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity 140ms ease, transform 140ms ease;
+  z-index: 20;
+}
+.dial:hover .tip, .dial:focus-visible .tip {
+  opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0);
+}
+@media (prefers-reduced-motion: reduce) { .dial .tip { transition: none; } }
 .events { display: flex; flex-direction: column; gap: 0.4rem; }
 .events details { border-top: 1px solid var(--rule); }
 .events details:first-child { border-top: 0; }
@@ -428,6 +450,7 @@ const START = __START__;
 const PREAMBLE = __PREAMBLE__;
 const POSTAMBLE = __POSTAMBLE__;
 const LAST_TURN = 13;
+const TIPS = __TIPS__;
 const BANDS = ["very low", "low", "moderate", "high", "very high"];
 const REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const R = 24, CIRC = 2 * Math.PI * R, ARC = CIRC * 0.72;
@@ -445,7 +468,7 @@ const LABELS = metricOrder();
 
 function buildDials() {
   document.getElementById("dials").innerHTML = LABELS.map((label, i) =>
-    '<div class="dial">' +
+    '<div class="dial" tabindex="0" aria-describedby="tip' + i + '">' +
       '<svg viewBox="0 0 60 60" width="56" height="56" role="img" id="a' + i + '" aria-label="' + label + '">' +
         '<g transform="rotate(129 30 30)">' +
           '<circle class="track" cx="30" cy="30" r="' + R + '" fill="none" stroke-width="5" stroke-linecap="round" ' +
@@ -453,7 +476,10 @@ function buildDials() {
           '<circle class="fill" id="f' + i + '" cx="30" cy="30" r="' + R + '" fill="none" stroke-width="5" ' +
             'stroke-linecap="round" stroke-dasharray="0 ' + CIRC.toFixed(1) + '"></circle>' +
         '</g></svg>' +
-      '<b>' + label + '<i id="t' + i + '"></i></b></div>').join("");
+      '<b>' + label + '<i id="t' + i + '"></i></b>' +
+      '<span class="tip" role="tooltip" id="tip' + i + '">' +
+        (TIPS[label] || "") + '</span>' +
+    '</div>').join("");
 }
 
 function setPanel(entry) {
@@ -694,6 +720,23 @@ reset();
 """
 
 
+def dial_tips(path: Path) -> dict[str, str]:
+    """Reader-facing dial explanations, keyed by the metric label.
+
+    Authored in `story/dial-tips.md` rather than here, like the preamble and
+    postamble: it is prose a reader sees, so it is edited as prose. A heading
+    that matches no metric label simply never renders.
+    """
+    out: dict[str, str] = {}
+    text = path.read_text(encoding="utf-8")
+    for block in re.split(r"^##\s+", text, flags=re.M)[1:]:
+        head, _, rest = block.partition("\n")
+        paragraph = rest.strip().split("\n\n")[0].strip()
+        if paragraph:
+            out[head.strip()] = re.sub(r"\s+", " ", paragraph)
+    return out
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -707,6 +750,8 @@ def main() -> int:
     preamble_path = story_dir / "preamble.md"
     preamble = markdown(preamble_path.read_text(encoding="utf-8")) \
         if preamble_path.is_file() else ""
+    tips_path = story_dir / "dial-tips.md"
+    tips = dial_tips(tips_path) if tips_path.is_file() else {}
     postamble_path = story_dir / "postamble.md"
     postamble = markdown(postamble_path.read_text(encoding="utf-8")) \
         if postamble_path.is_file() else ""
@@ -719,6 +764,7 @@ def main() -> int:
     body = body.replace("__START__", json.dumps(start))
     body = body.replace("__PREAMBLE__", json.dumps(preamble))
     body = body.replace("__POSTAMBLE__", json.dumps(postamble))
+    body = body.replace("__TIPS__", json.dumps(tips, ensure_ascii=False))
     out = args.out or (args.scenario / "story.html")
     out.write_text(HEAD + body, encoding="utf-8")
 
