@@ -36,6 +36,7 @@ Two independent bodies of work. Either order; 3a is one command and a wait, 3b n
 
 - **1 950 turn-executions, about $13.50, about 7–9 hours** at 8–12 concurrent. Measured basis ($0.0069/turn-execution across the Stage 2–3 batches); the CLI estimator says $0.23/run ($34.50 total) but consistently quotes ~2.5× measured spend — treat that as the ceiling.
 - One command per arm (`batch-run --repeat 50` on each variant), fresh random seeds by default, no human input once launched.
+- **Batch launched overnight 2026-09-08** as a single `batch-run scenarios/europe-2032 --variants --repeat 50 --max-concurrency 10` (150 jobs). Separation from the story-block runs is by provenance-only initial-state draws: every job carries `notes: "batch=stats-20260908; draw=NNN"` in its `config.json`, so `--filter batch=stats-20260908` isolates the batch and `--group-by scenario` splits the arms. Draws, launcher, AC-power gate, and 20-minute monitor live in `stats-batch-20260908/` (logs: `batch.log`, `progress.log`, `watcher.log`). Commitments kept (story comparison stays apples-to-apples).
 
 ### 3b – the story tree
 
@@ -62,6 +63,29 @@ Plus actor-only draws for the option pools: 6 turn-6 pools (10 each; A2/V2/P2 ex
 
 **Whole programme: about $17 estimated, $8.84 measured (batches $8.63 + pools $0.21), and roughly 12 hours of wall clock including one paused evening.** Cheap enough that the constraint is attention, not credits: every stage of 3b needs someone to look at the pools.
 
+## Phase 4 – the story (open)
+
+The runs are evidence. This phase is the thing a reader walks through, and it is where the work now is. `story/README.md` holds the tree layout and the writing rules; this section holds the state, the tools and the order of work.
+
+**What exists.**
+
+- `story/tree.json` — the editorial source of truth: which run each of the 42 blocks follows, which option leads into it, and how honest each choice's split is. Generated from the branch-log tables in `story/README.md` and verified against every run's `config.json` before it was written.
+- `story/extract_tree.py` — builds `story/tree/`, one directory per node, 169 turns and 38 choices. Each holds a machine-extracted `data.json` and a hand-written `narrative.md` (or `choice.md`). It never overwrites prose whose front matter says `status: written`; `data.json` is derived and always rewritten, so it is safe to re-run at any time.
+- `story/check_tree.py` — structure, numbers, events, arm leakage, in-world framing, calendar time, the 2028 US result, provenance. `--self-test` plants a fault of each kind and fails if any goes uncaught; run it before believing anything the checker says. `--continuity` walks all 24 reader paths and reports threads referenced before they have happened, and events that fired in a written turn and never reached the page.
+- `scripts/build_story.py` — the reader: one self-contained page built from the written nodes, stopping wherever the writing has got to. Output `story.html`, gitignored and regenerated. `story/preamble.md` and `story/postamble.md` are authored text, edited like any other prose rather than living in the generator.
+
+**State, 2026-09-08.** 39 of 207 nodes written: turn 1, both turn-1 options, the 24 turns of 2027–2028, and the twelve turn-6 choice pages. Both checkers clean. Remaining: the 48 turns of 2029–2030, the 24 turn-10 choice pages, and the 96 turns of 2031–2032. A draft of what exists is published as a private artifact for readability feedback.
+
+**Order of work.** Forward, stage by stage, because a turn has to know what the reader has already been told: Stage 2's 48 turns, then the 24 turn-10 choices, then Stage 3's 96 turns. Within a stage, one block at a time.
+
+**This phase costs no API credit.** The simulator's job ended when the runs finished. The prose is written by hand; the only machine steps are extraction, checking and building the page. The constraint is attention, not credits.
+
+**Open questions, none blocking.**
+
+- **Length.** The written turns run 280–340 words against a 250 budget. Whether to tighten is a judgement to make on reader feedback, not in advance — but it should be settled before the remaining 144 turns are written, not after.
+- **The agency floor is stated twice with two values.** `scenario.yaml` says `eu_political_capital` ≥ 40; phase 1 above records it as reset to ≥12, applied or not at Johan's call. Capital sits at or near 0 on several Stage-3 paths, so which number is live decides whether most endings read as failures.
+- **Whether the arm is revealed at the end.** Thematically right — the reader finds out the way the Union would — but it means putting the arm names into the page, which weakens the concealment enforced everywhere else. Not decided.
+
 ## Standing facts
 
 Measured on the 36-run batch of 2026-09-02/03, not estimated (predates OpenRouter prompt caching and parallel sample elicitation — wall-clock per turn is lower now, costs slightly lower on cached reads):
@@ -76,5 +100,5 @@ Measured on the 36-run batch of 2026-09-02/03, not estimated (predates OpenRoute
 
 1. Read this file. `AGENTS.md` points here, which is the only mechanism needed.
 2. `git log --oneline -15` — commit messages here carry the reasoning and the numbers, deliberately.
-3. Check which phase is open. If phase 1: the criteria above are the checklist. If phase 3: `story/README.md` and the branch logs say what is built.
+3. Check which phase is open. Phase 4 is, and has been since 2026-09-07. If phase 1: the criteria above are the checklist. If phase 3: `story/README.md` and the branch logs say what is built. If phase 4: `story/README.md` holds the writing rules and the session procedure, and `grep -l 'status: written' story/tree/*/*.md | wc -l` says how far it has got.
 4. Before believing any measurement, check the instrument. `/scripts/check_sovereignty.py` reported three different wrong answers on 2026-09-02/03 before its parser was right, and each wrong answer looked exactly as authoritative as the correct one.

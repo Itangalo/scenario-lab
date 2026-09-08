@@ -60,6 +60,23 @@ Settled with Johan on 2026-09-07, at the turn-1 checkpoint. These hold for all 2
 - **Threads have lead-ups.** Nothing may be referenced that the reader has not met on this path. `check_tree.py --continuity` walks all 24 reader paths and reports both directions — a reference to a thread that has not happened yet, and an event that fired in a written turn and never reached the page. It is a report, not a gate: it matches in-world phrases, which is too approximate to block a commit on.
 - **Numbers.** Never retyped. Anything the reader sees as a figure must exist in the node's `data.json` or in the run artifacts behind it.
 
+## How a writing session runs
+
+The rules above say what the prose must be. This says how a turn actually gets written, so a session that starts cold can pick up where the last one stopped.
+
+**Find the edge.** `grep -L 'status: written' tree/*/narrative.md tree/*/choice.md` lists what is left. Work forward — Stage 2's turns, then the turn-10 choices, then Stage 3 — and within a stage take one block at a time, all four of its half-years in order. A turn has to know what the reader has already been told, and a Stage-3 block inherits eight half-years of established threads.
+
+**Write from the run, not from the summary.** The scaffold in `narrative.md` is the verified stage paragraph, and it is a skeleton, not a source of fact — it was verified on its `Metrics:`/`Events:` line, not its body, and three of its bodies turned out to contain things the runs do not. What makes a turn readable is in the block's path run, named in `tree.json`:
+
+- `turn-NN/2-actors/eu.md` — what the Union actually proposed, and the reasoning it gave. The `In practice` section is where the specifics live: legal bases, sums, member states, named sites.
+- `turn-NN/4-world-state.md` — how the world answered, and why the metrics moved.
+- `turn-NN/5-notepad.md` and `6-historical-summary.md` — continuity, and what the referee was tracking.
+- `../events.md` — the catalogue text for anything that fired.
+
+**Check, then commit.** Run `python check_tree.py --block <block>` after each block and `--continuity` after each stage; `--self-test` first if you are relying on a result. Commit per branch or per block, on `main`, with the block id in the message. Regenerate the reader with `python ../../../scripts/build_story.py ..` when the prose has moved.
+
+**What the checkers cannot see.** They verify figures against the runs, catch the vocabulary rules, and report threads with no lead-up. They cannot tell you whether a paragraph is worth reading. That judgement is the reason this is written by hand.
+
 ## How options and paths are created
 
 **The options** are created by running (at least) ten instances of the turn leading up to it, collecting only the actor output. From these, two outputs are selected. These should be representative of two larger groups of outputs.
