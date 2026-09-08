@@ -63,6 +63,29 @@ def markdown(text: str) -> str:
     return "\n".join(html_ for _, html_ in blocks(text))
 
 
+def split_turn(text: str) -> dict[str, str]:
+    """Lift the headline out of a turn so the chapter header can carry the
+    date alongside it, the way `split_choice` lifts one off a choice page."""
+    parts = blocks(text)
+    title, body = "", []
+    for i, (kind, html_) in enumerate(parts):
+        if not title and kind == "h":
+            title = re.sub(r"</?h\d>", "", html_)
+            continue
+        body.append(html_)
+    return {"title": title, "html": "\n".join(body)}
+
+
+MONTHS = {"H1": "January\u2013June", "H2": "July\u2013December"}
+
+
+def months(period: str) -> str:
+    """`H1 2027` reads as a convention the page never explains; a reader wants
+    the months. Presentation only — the underlying field is untouched."""
+    m = re.match(r"(H[12])\s+(\d{4})", period or "")
+    return f"{MONTHS[m.group(1)]} {m.group(2)}" if m else (period or "")
+
+
 def split_choice(text: str) -> dict[str, str]:
     """A choice card is a headline, the measure it commits to, a lead
     paragraph, the rest behind an expander, and the draw counts."""
@@ -114,7 +137,7 @@ def load_nodes(tree_dir: Path) -> dict[str, dict[str, Any]]:
         nodes[node_dir.name] = {
             "data": json.loads(data_path.read_text(encoding="utf-8")),
             "html": markdown(body),
-            "parts": split_choice(body) if is_choice else {},
+            "parts": split_choice(body) if is_choice else split_turn(body),
             "is_choice": is_choice,
         }
     return nodes
@@ -139,7 +162,9 @@ def build_payload(nodes: dict[str, dict[str, Any]]) -> dict[str, Any]:
             entry["next"] = live[0] if len(live) == 1 else None
         else:
             entry["turn"] = data.get("turn")
-            entry["period"] = data.get("period", "")
+            entry["title"] = node["parts"].get("title", "")
+            entry["html"] = node["parts"].get("html", entry["html"])
+            entry["period"] = months(data.get("period", ""))
             entry["periodProse"] = data.get("period_prose", "")
             entry["metrics"] = [
                 {"label": m["label"], "value": m["value"], "delta": m["delta"]}
@@ -205,7 +230,7 @@ header.masthead {
   font-family: Newsreader, Georgia, serif; font-weight: 600;
   font-size: 1.5rem; letter-spacing: -0.01em; margin: 0;
 }
-.mono, .sub, .stamp, .cap, .dial b, button, .events summary {
+.mono, .sub, .cap, .dial b, button, .events summary {
   font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
 }
 .sub { font-size: 0.72rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--faint); }
@@ -243,11 +268,11 @@ aside { position: sticky; top: 1.5rem; display: flex; flex-direction: column; ga
   margin: 2rem 0 0; background: transparent; border-style: dashed;
   font-size: 0.9rem;
 }
-.stamp { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin: 0 0 0.4rem; }
+.chapter-title .when { color: var(--accent); font-weight: 400; }
 article { max-width: var(--measure); }
 article h2 {
   font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 2rem;
-  line-height: 1.15; letter-spacing: -0.015em; text-wrap: balance; margin: 0 0 1.4rem;
+  line-height: 1.18; letter-spacing: -0.015em; text-wrap: balance; margin: 0 0 1.5rem;
 }
 article h3 {
   font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 1.1rem;
@@ -462,8 +487,10 @@ function appendChapter(id) {
   const section = document.createElement("section");
   section.className = "chapter";
   section.dataset.node = id;
-  section.innerHTML = '<p class="stamp">' + (entry.period || "") + '</p>' +
-                      '<article>' + entry.html + '</article>' +
+  const head = entry.title
+    ? '<h2 class="chapter-title"><span class="when">' + entry.period + ':</span> ' + entry.title + '</h2>'
+    : '<h2 class="chapter-title"><span class="when">' + entry.period + '</span></h2>';
+  section.innerHTML = '<article>' + head + entry.html + '</article>' +
                       '<div class="controls">' + controlsFor(id) + '</div>';
   document.getElementById("stream").appendChild(section);
   return section;
