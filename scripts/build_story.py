@@ -253,20 +253,22 @@ header.masthead {
 }
 
 /* Starting over re-rolls which of the three worlds you are in, so the page
-   comes apart rather than simply swapping. Headings go letter by letter; the
-   body blocks lift and blur, which keeps this cheap on a long column. */
+   comes apart rather than simply swapping. Only what is on screen performs:
+   the reader cannot see the rest, and splitting a whole long column into
+   characters would stall the click. Transform and opacity only — a blur per
+   character across a screenful of prose is what would actually jank. */
 .dissolving { pointer-events: none; }
-.dissolving > * { animation: dissolve 520ms ease-in forwards; }
-@keyframes dissolve {
-  to { opacity: 0; transform: translateY(-12px); filter: blur(5px); }
-}
 .ch { display: inline-block; white-space: pre; }
 @keyframes letter {
-  30% { opacity: 1; }
-  to { opacity: 0; transform: translateY(-26px) rotate(var(--tilt)); filter: blur(2px); }
+  20% { opacity: 1; }
+  to { opacity: 0; transform: translateY(-38px) rotate(var(--tilt)); }
+}
+.fade-block { animation: dissolve 900ms ease-in forwards; }
+@keyframes dissolve {
+  to { opacity: 0; transform: translateY(-16px); filter: blur(5px); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .dissolving > *, .ch { animation: none !important; }
+  .ch, .fade-block { animation: none !important; }
 }
 .rail { display: flex; gap: 3px; align-items: center; justify-content: center; padding-top: 0.25rem; }
 .rail i { display: block; width: 14px; height: 3px; border-radius: 1px; background: var(--track); }
@@ -521,9 +523,14 @@ function appendChapter(id) {
   return section;
 }
 
-function shatter(el) {
-  // Only headings are split: a few dozen characters each, against thousands in
-  // the prose. Splitting the body would stall the page on the click.
+const TEXT_BLOCKS = "h2, h3, p, li, summary, .signal, .meta";
+const LETTER_MS = 900;   // how long one character takes to leave
+const SPREAD_MS = 780;   // how long the wave takes to cross everything visible
+const CHAR_CAP = 3200;   // beyond this, blocks fade rather than shatter
+
+function shatter(el, from, total) {
+  // Split text nodes only, so the markup inside a heading — the dateline span,
+  // an emphasis — survives intact.
   const walk = node => {
     if (node.nodeType === 3) {
       const frag = document.createDocumentFragment();
@@ -539,26 +546,48 @@ function shatter(el) {
     }
   };
   Array.from(el.childNodes).forEach(walk);
-  el.querySelectorAll(".ch").forEach((s, i) => {
-    s.style.setProperty("--tilt", (Math.random() * 16 - 8).toFixed(1) + "deg");
-    s.style.animation = "letter 640ms cubic-bezier(0.4, 0, 0.6, 1) forwards";
-    s.style.animationDelay = (i * 11 + Math.random() * 40).toFixed(0) + "ms";
+  const chars = el.querySelectorAll(".ch");
+  chars.forEach((s, i) => {
+    // Delay is a fraction of the whole wave, not a fixed step, so the effect
+    // takes the same time whether one paragraph is showing or five.
+    const at = (from + i) / Math.max(1, total);
+    s.style.setProperty("--tilt", (Math.random() * 18 - 9).toFixed(1) + "deg");
+    s.style.animation = "letter " + LETTER_MS + "ms cubic-bezier(0.4, 0, 0.6, 1) forwards";
+    s.style.animationDelay = (at * SPREAD_MS + Math.random() * 60).toFixed(0) + "ms";
   });
+  return chars.length;
+}
+
+function onScreen(el) {
+  const r = el.getBoundingClientRect();
+  return r.height > 0 && r.bottom > 0 && r.top < window.innerHeight;
 }
 
 function startOver() {
   const stream = document.getElementById("stream");
   if (REDUCED || !stream.children.length) { reset(); return; }
-  stream.querySelectorAll(".chapter-title").forEach(shatter);
-  Array.from(stream.children).forEach((el, i) => {
-    el.style.animationDelay = Math.min(i * 70, 560) + "ms";
-  });
+  // Whatever the reader is actually looking at is what comes apart. Everything
+  // above and below is off screen and needs no animation at all.
+  const visible = Array.from(stream.querySelectorAll(TEXT_BLOCKS))
+    .filter(el => onScreen(el) && !el.querySelector(TEXT_BLOCKS));
+  if (!visible.length) { reset(); return; }
+
+  const total = visible.reduce((n, el) => n + el.textContent.length, 0);
   stream.classList.add("dissolving");
-  const wait = 520 + Math.min(stream.children.length * 70, 560);
+  let seen = 0;
+  visible.forEach(el => {
+    if (seen > CHAR_CAP) {
+      el.classList.add("fade-block");
+      el.style.animationDelay = ((seen / Math.max(1, total)) * SPREAD_MS).toFixed(0) + "ms";
+      return;
+    }
+    seen += shatter(el, seen, Math.min(total, CHAR_CAP));
+  });
+
   setTimeout(() => {
     stream.classList.remove("dissolving");
     reset();
-  }, wait);
+  }, LETTER_MS + SPREAD_MS + 120);
 }
 
 function reset() {
