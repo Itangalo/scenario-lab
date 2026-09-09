@@ -856,6 +856,8 @@ ALT_TELLINGS = [
      "source": "merged-blocks-casual.md", "intro": "alt-intro.md"},
     {"view": "tight", "label": "Tighter cut",
      "source": "merged-blocks-tight.md", "intro": "alt-intro-tight.md"},
+    {"view": "inside", "label": "From inside",
+     "source": "character-telling.md", "intro": "alt-intro-inside.md"},
 ]
 
 
