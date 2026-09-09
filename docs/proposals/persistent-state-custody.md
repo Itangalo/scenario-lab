@@ -10,10 +10,10 @@ An actor's measure portfolio is not held by the framework. The actor re-emits it
 
 | | count | share |
 |---|---|---|
-| measures proposed | 1 391 | |
-| entered the portfolio at some later turn | 1 299 | 93.4% |
-| never entered, run states a reason | 28 | 2.0% |
-| **never entered, no reason stated** | **64** | **4.6%** |
+| measures proposed | 1 481 | |
+| entered the portfolio at some later turn | 1 386 | 93.6% |
+| never entered, run states a reason | 29 | 2.0% |
+| **never entered, no reason stated** | **66** | **4.5%** |
 
 | | count | share |
 |---|---|---|
@@ -24,11 +24,13 @@ An actor's measure portfolio is not held by the framework. The actor re-emits it
 
 The 42 story path runs give 7.8% and 0.8% for the two unexplained rates — worse, but they are pinned and a smaller sample, so weight the batch.
 
+**These figures were corrected on 2026-09-09 and the first version of them was understated.** `parse_actor_turn` treated a `###` sub-heading as the end of the `## New measure` section, so a measure whose name was written that way was invisible to the instrument — indistinguishable from a turn where the actor proposed nothing. The proposal originally recorded 1 391 proposals and 64 unexplained non-entries (4.6%); the true counts are 1 481 and 66 (4.5%). The rates barely moved and every conclusion below stands, but the absolute counts were low by about 6%, and 17 turns of this batch are *still* unreadable and excluded from the denominator. The transitions half of the table was unaffected. See `tests/test_actor_parsing.py`.
+
 Never-entering is the larger failure and the worse one: a measure that never arrives is invisible from the first moment, while one that vanishes appeared at least once and can be caught by comparing consecutive turns. At roughly three proposals per run, expect a measure to go missing in something like one run in seven.
 
 It is not only a narrative problem. The metrics step charges political capital per measure in flight, so a measure that silently drops out **stops costing anything**, and a run that loses one looks slightly better-resourced than it should.
 
-There is a third failure mode the table above splits out but does not name: **the deferral that never resolves**. The 28 non-entries with a stated reason are, by definition, proposals the run explained away at the time and then never returned to. That is 2.0% on top of the 4.6%, so the honest figure for "the actor proposed a measure and it never became one" is 92 of 1 391, or 6.6%.
+There is a third failure mode the table above splits out but does not name: **the deferral that never resolves**. The 29 non-entries with a stated reason are, by definition, proposals the run explained away at the time and then never returned to. That is 2.0% on top of the 4.5%, so the honest figure for "the actor proposed a measure and it never became one" is 95 of 1 481, or 6.4%.
 
 One instance reached the story, and it is of that third kind: on the A2 branch the European AI Assurance Directorate — the measure the reader chooses at turn 1 — is deferred in the turn-1 world state with a stated reason, and then never mentioned again from turn 2 to 9 except once, and never enters the portfolio. Recorded in `scenarios/europe-2032/story/README.md` under known faults. It matters for the design because a custody mechanism would not have caught it: nothing was lost from a ledger, and the deferral was legitimate when made. Only something tracking open proposals across turns would notice that one was never resolved.
 
@@ -45,7 +47,7 @@ The portfolio is a third instance of the same design error, in the same actor ou
 ## The three options considered
 
 1. **Accept it.** Defensible for the already-built europe-2032 tree, where the alternative is discarding 420 committed runs. Not defensible as a framework property.
-2. **A stronger but still cheap model.** Johan's bound: twice the cost is acceptable, five times is not. Plausible at these rates — 0.6% and 4.6% are the kind of thing a better model may absorb. Two cautions: it reduces the rate of a *silent* failure rather than making it visible, and `docs/MODEL_TESTING.md` currently has one "Recommended" verdict and "Avoid" for everything else, so a switch means redoing that testing. Cheap to evaluate now: `check_ledger.py` needs no framework change, so a twenty-run batch on a candidate gives a comparable number for a few dollars.
+2. **A stronger but still cheap model.** Johan's bound: twice the cost is acceptable, five times is not. Plausible at these rates — 0.6% and 4.5% are the kind of thing a better model may absorb. Two cautions: it reduces the rate of a *silent* failure rather than making it visible, and `docs/MODEL_TESTING.md` currently has one "Recommended" verdict and "Avoid" for everything else, so a switch means redoing that testing. Cheap to evaluate now: `check_ledger.py` needs no framework change, so a twenty-run batch on a candidate gives a comparable number for a few dollars.
 3. **Python execution around phases.** Johan's framing: the framework should support scenario-supplied scripts that run before or after phases, able to signal an invalid reply or produce output for the next phase. Explicitly not one-off code for a single scenario.
 
 ## Where the discussion landed
