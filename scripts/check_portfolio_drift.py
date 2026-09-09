@@ -36,6 +36,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import sys
 from pathlib import Path
@@ -209,6 +210,81 @@ def audit_store(run_dirs: list[Path], actor: str, limit: int) -> dict[str, Any]:
             "examples": examples}
 
 
+def audit_charges(run_dirs: list[Path], actor: str, limit: int) -> dict[str, Any]:
+    """Check the Game Master's portfolio-charge line against the store.
+
+    This is a measurement the store makes possible and nothing made possible
+    before. `design-notes.md` records that the sovereignty line's own terms
+    summed to the total it stated in 51-70% of turns, and there was no
+    independent figure to check the portfolio charge against -- the portfolio
+    itself was whatever the actor had last written down. Now there is one.
+
+    Two separate things are checked, because they fail for different reasons:
+
+    * **terms match the store** -- the measures the Game Master charged are the
+      measures actually in flight. A mismatch means it is charging from the
+      narrative rather than from the rows it was given.
+    * **the line adds up** -- the stated total equals its own terms. A mismatch
+      is arithmetic, and it is the failure the itemised line exists to expose.
+    """
+    checked = terms_ok = arith_ok = 0
+    examples: list[str] = []
+
+    for rd in run_dirs:
+        for t in turns_of(rd):
+            state_file = rd / f"turn-{t:02d}" / "2-actors" / f"{actor}-store.json"
+            notepad = rd / f"turn-{t:02d}" / "5-notepad.md"
+            if not (state_file.is_file() and notepad.is_file()):
+                continue
+            try:
+                state = json.loads(state_file.read_text(encoding="utf-8"))
+            except (OSError, ValueError):
+                continue
+
+            expected = 0
+            for record in state.get("records", []):
+                if record.get("table") != "measures" or record.get("removed_turn") is not None:
+                    continue
+                finish = record.get("fields", {}).get("finish_turn")
+                if isinstance(finish, int) and t >= finish:
+                    continue  # finished: paid this turn, not charged
+                cost = record.get("derived", {}).get("cost_per_turn")
+                if not isinstance(cost, int):
+                    cost = 3 if record.get("fields", {}).get("size") == "large" else 2
+                expected += cost
+
+            lines = [l for l in notepad.read_text(encoding="utf-8").splitlines()
+                     if "PORTFOLIO CHARGE" in l.upper()]
+            if not lines:
+                continue
+            head, _, tail = lines[-1].rpartition("=")
+            written = [int(x) for x in re.findall(r"[\u2212-](\d+)", head)]
+            if not written:
+                continue
+            stated = re.findall(r"(\d+)", tail)
+            stated_total = int(stated[0]) if stated else None
+            # The priority is a further cost the framework cannot compute: it
+            # does not know which measure was named.
+            priority = 1 if "priorit" in head.lower() else 0
+            measures = sum(written) - priority
+
+            checked += 1
+            matched = measures == expected
+            adds_up = stated_total == sum(written)
+            terms_ok += matched
+            arith_ok += adds_up
+            if not (matched and adds_up) and len(examples) < limit:
+                faults = []
+                if not matched:
+                    faults.append(f"charged {measures}, store says {expected}")
+                if not adds_up:
+                    faults.append(f"terms sum to {sum(written)}, line states {stated_total}")
+                examples.append(f"{rd.name} turn {t}: " + "; ".join(faults))
+
+    return {"checked": checked, "terms_ok": terms_ok, "arith_ok": arith_ok,
+            "examples": examples}
+
+
 def pct(n: int, d: int) -> str:
     return f"{100 * n / d:.1f}%" if d else "—"
 
@@ -222,6 +298,8 @@ def main() -> int:
     ap.add_argument("--examples", type=int, default=5)
     ap.add_argument("--store", action="store_true",
                     help="audit runs whose portfolio the framework holds, instead")
+    ap.add_argument("--charges", action="store_true",
+                    help="check the Game Master's charge line against the store")
     args = ap.parse_args()
 
     runs_dir = args.scenario / "runs"
@@ -237,6 +315,9 @@ def main() -> int:
     if not runs:
         print("no runs matched", file=sys.stderr)
         return 2
+
+    if args.charges:
+        return report_charges(audit_charges(runs, args.actor, args.examples), len(runs), args.actor)
 
     if args.store:
         return report_store(audit_store(runs, args.actor, args.examples), len(runs), args.actor)
@@ -295,6 +376,28 @@ def report_store(r: dict[str, Any], run_count: int, actor: str) -> int:
     print("and never recorded -- and is the case for the re-ask hook. The line above it")
     print("is mostly correct behaviour: the actor is told that broadening a measure")
     print("already in flight is an `update`, not a new measure, and this counts those too.")
+    if r["examples"]:
+        print("\nexamples:")
+        for e in r["examples"]:
+            print(f"  {e}")
+    return 0
+
+
+def report_charges(r: dict[str, Any], run_count: int, actor: str) -> int:
+    if not r["checked"]:
+        print("no charge lines found beside a store artifact. These runs predate "
+              "the store, or the scenario writes no PORTFOLIO CHARGE line.", file=sys.stderr)
+        return 2
+    print(f"{run_count} runs, actor '{actor}', {r['checked']} charge lines\n")
+    print(f"terms match the measures actually in flight:  {r['terms_ok']:5}  "
+          f"({pct(r['terms_ok'], r['checked'])})")
+    print(f"the line adds up to its own total:            {r['arith_ok']:5}  "
+          f"({pct(r['arith_ok'], r['checked'])})")
+    print("\nThe first is whether the Game Master charged from the rows it was given")
+    print("or from the narrative. The second is arithmetic, which is what the itemised")
+    print("line exists to expose. Neither was checkable before the store: the portfolio")
+    print("was whatever the actor had last written down, so there was nothing to check")
+    print("the charge against.")
     if r["examples"]:
         print("\nexamples:")
         for e in r["examples"]:
