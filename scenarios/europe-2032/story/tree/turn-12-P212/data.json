@@ -108,10 +108,35 @@
       "pinned": false
     }
   ],
-  "portfolio": [],
+  "portfolio": [
+    {
+      "name": "Launch the Integrity Audit Expansion",
+      "category": 1,
+      "cost": 2,
+      "start": 9,
+      "finish": 11,
+      "description": "A programme to scale up independent, adversarial-style auditing of sovereign AI systems, focusing on both technical integrity (weight security, evaluation air gaps) and operational accountability (decision provenance, redress pathways), with findings binding on continued operation`` — finished this turn",
+      "finished": false,
+      "status": "running",
+      "finish_period": "the second half of 2031",
+      "start_period": "the second half of 2030"
+    },
+    {
+      "name": "Launch the Public Redress and Co-Design Framework",
+      "category": 9,
+      "cost": 2,
+      "start": 12,
+      "finish": 14,
+      "description": "A binding requirement for all public-sector AI systems above 50.0 capability to implement legally enforceable redress mechanisms and to co-design audit and oversight procedures with civil society representatives and affected communities",
+      "finished": false,
+      "status": "new",
+      "finish_period": "the first half of 2033",
+      "start_period": "the first half of 2032"
+    }
+  ],
   "cancelled": [],
-  "new_measure": "Measure:",
-  "priority": "Priority:",
+  "new_measure": "Anchor the Emergent Industrial Sovereignty Consortium",
+  "priority": "Anchor the Emergent Industrial Sovereignty Consortium",
   "commitment": null,
   "prev_node": "turn-11-P212",
   "next_node": "turn-13-P212",

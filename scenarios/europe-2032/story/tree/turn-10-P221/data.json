@@ -115,10 +115,35 @@
       "pinned": true
     }
   ],
-  "portfolio": [],
+  "portfolio": [
+    {
+      "name": "Establish the Continuity Assurance Framework",
+      "category": 6,
+      "cost": 3,
+      "start": 9,
+      "finish": 11,
+      "description": "A binding regime requiring all critical public AI systems to maintain validated, air-gapped fallback nodes capable of autonomous operation during service denial, with central certification and failover testing every quarter",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the second half of 2031",
+      "start_period": "the second half of 2030"
+    },
+    {
+      "name": "Frontier Access Guarantee",
+      "category": 4,
+      "cost": 3,
+      "start": 7,
+      "finish": 12,
+      "description": "Secure guaranteed access to frontier AI capability for EU public institutions by co-investing in closed-access compute clusters operated under EU legal jurisdiction, with weight control and auditability",
+      "finished": false,
+      "status": "running",
+      "finish_period": "the first half of 2032",
+      "start_period": "the second half of 2029"
+    }
+  ],
   "cancelled": [],
-  "new_measure": "Measure:",
-  "priority": "Priority:",
+  "new_measure": "Launch the Emergency Continuity Response Initiative",
+  "priority": "Launch the Emergency Continuity Response Initiative",
   "commitment": null,
   "prev_node": "option-10-P221",
   "next_node": "turn-11-P221",

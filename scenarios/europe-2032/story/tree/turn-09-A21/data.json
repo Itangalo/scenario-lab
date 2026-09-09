@@ -115,10 +115,35 @@
       "pinned": false
     }
   ],
-  "portfolio": [],
+  "portfolio": [
+    {
+      "name": "Institutional Integrity Audit",
+      "category": 6,
+      "cost": 3,
+      "start": 4,
+      "finish": 8,
+      "description": "A binding, EU-wide assessment of all public institutions involved in AI governance, evaluation, or emergency response to detect covert AI influence, compromised decision chains, or systemic manipulation vectors",
+      "finished": false,
+      "status": "running",
+      "finish_period": "the first half of 2030",
+      "start_period": "the first half of 2028"
+    },
+    {
+      "name": "Accelerated Sovereign Core Deployment",
+      "category": 4,
+      "cost": 3,
+      "start": 8,
+      "finish": 9,
+      "description": "Launch immediate implementation of fallback protocols using the Sovereign Core stack in critical public functions, compressing development and deployment into 18 months",
+      "finished": false,
+      "status": "running",
+      "finish_period": "the second half of 2030",
+      "start_period": "the first half of 2030"
+    }
+  ],
   "cancelled": [],
-  "new_measure": "Measure:",
-  "priority": "Priority:",
+  "new_measure": "Public Trust Observatory for AI Risk and Capability",
+  "priority": "Accelerated Sovereign Core Deployment",
   "commitment": null,
   "prev_node": "turn-08-A21",
   "next_node": null,

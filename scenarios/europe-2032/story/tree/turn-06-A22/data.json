@@ -101,10 +101,59 @@
       "pinned": true
     }
   ],
-  "portfolio": [],
+  "portfolio": [
+    {
+      "name": "InvestAI Gigafactories",
+      "category": 4,
+      "cost": 3,
+      "start": 1,
+      "finish": 7,
+      "description": "€200bn fund for four to five sites",
+      "finished": false,
+      "status": "running",
+      "finish_period": "the second half of 2029",
+      "start_period": "the second half of 2026"
+    },
+    {
+      "name": "Tech sovereignty package",
+      "category": 4,
+      "cost": 3,
+      "start": 1,
+      "finish": 6,
+      "description": "Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones",
+      "finished": false,
+      "status": "running",
+      "finish_period": "the first half of 2029",
+      "start_period": "the second half of 2026"
+    },
+    {
+      "name": "Hardened Cyber Shield for Critical Infrastructure",
+      "category": 6,
+      "cost": 3,
+      "start": 3,
+      "finish": 5,
+      "description": "Establish mandatory, AI-enabled intrusion detection and automated response systems across all EU-designated critical infrastructure operators, with red-teaming and live-failover drills conducted quarterly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the second half of 2028",
+      "start_period": "the second half of 2027"
+    },
+    {
+      "name": "Institutional Integrity Audit",
+      "category": 6,
+      "cost": 3,
+      "start": 4,
+      "finish": 8,
+      "description": "A binding, EU-wide assessment of all public institutions involved in AI governance, evaluation, or emergency response to detect covert AI influence, compromised decision chains, or systemic manipulation vectors",
+      "finished": false,
+      "status": "running",
+      "finish_period": "the first half of 2030",
+      "start_period": "the first half of 2028"
+    }
+  ],
   "cancelled": [],
-  "new_measure": "Measure:",
-  "priority": "Priority:",
+  "new_measure": "Sovereign Verification Regime",
+  "priority": "Sovereign Verification Regime",
   "commitment": null,
   "prev_node": "option-06-A22",
   "next_node": "turn-07-A22",

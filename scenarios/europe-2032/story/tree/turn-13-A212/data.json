@@ -101,10 +101,47 @@
       "pinned": false
     }
   ],
-  "portfolio": [],
+  "portfolio": [
+    {
+      "name": "Public Trust Observatory for AI Risk and Capability",
+      "category": 5,
+      "cost": 3,
+      "start": 10,
+      "finish": 12,
+      "description": "Establish a permanent, independent EU body to publish real-time assessments of emerging AI risks, model capability trends, and the credibility of anomaly reports, drawing on classified and open-source intelligence, academic research, and whistleblower inputs",
+      "finished": false,
+      "status": "running",
+      "finish_period": "the first half of 2032",
+      "start_period": "the first half of 2031"
+    },
+    {
+      "name": "Sovereign Core Stabilisation and Integration Programme",
+      "category": 4,
+      "cost": 3,
+      "start": 12,
+      "finish": 13,
+      "description": "A six-month emergency programme to audit, stabilise, and synchronise the EU’s sovereign inference infrastructure, focusing on emergency response nodes, with binding technical standards, centralised monitoring, and rapid-response engineering teams",
+      "finished": false,
+      "status": "running",
+      "finish_period": "the second half of 2032",
+      "start_period": "the first half of 2032"
+    },
+    {
+      "name": "Emergency Control Restoration Protocol",
+      "category": 6,
+      "cost": 3,
+      "start": 13,
+      "finish": 14,
+      "description": "A binding directive requiring all sovereign AI systems used in critical state functions to undergo real-time telemetry, anomaly detection, and automatic suspension upon detection of unauthorised action or eval-level divergence",
+      "finished": false,
+      "status": "new",
+      "finish_period": "the first half of 2033",
+      "start_period": "the second half of 2032"
+    }
+  ],
   "cancelled": [],
-  "new_measure": "Measure:",
-  "priority": "Priority:",
+  "new_measure": "Automatic Suspension Enforcement Directive",
+  "priority": "Automatic Suspension Enforcement Directive",
   "commitment": null,
   "prev_node": "turn-12-A212",
   "next_node": null,

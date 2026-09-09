@@ -40,7 +40,7 @@ TEMPLATE = Path(__file__).with_name("dashboard-template.html")
 # The backticks are optional, the trailing finished-marker comes in two spellings,
 # and the Game Master writes "costs"/"cost" interchangeably.
 MEASURE = re.compile(
-    r"^[-*]\s*`?\s*(?P<name>.+?)\s*\(category\s*(?P<category>\d+)\s*,\s*"
+    r"^[-*]?\s*`?\s*(?P<name>.+?)\s*\(category\s*(?P<category>\d+)\s*,\s*"
     r"costs?\s*(?P<cost>\d+)\s*per turn,\s*started turn\s*(?P<start>\d+)\s*,\s*"
     r"finishes on turn\s*(?P<finish>\d+)\s*\)\s*:\s*(?P<description>.*?)\s*`?\s*"
     r"(?:[—–-]+\s*\*\*finished(?:\s+this\s+turn)?\*\*\s*)?$",
@@ -93,7 +93,14 @@ def parse_actor_turn(path: Path) -> dict[str, Any]:
         if not body or re.match(r"(?:none|no new|nothing)\b", bare, re.IGNORECASE):
             return None
         if (m := BOLD_NAME.search(body)):
-            return m["name"].strip()
+            name = m["name"].strip()
+            if name.endswith(":"):
+                # `**Measure:** Name` — the bold part is a label, and the name
+                # is what follows it on the same line.
+                rest = body[m.end():].strip().split("\n")[0].strip(" `*")
+                if rest:
+                    return rest.rstrip(".")
+            return name
         # No bold name: take the clause before the reason, not a fixed slice.
         first = body.split("\n")[0]
         return re.split(r"\s+[—–-]{1,2}\s+|(?<=[.;:])\s", first)[0].strip()[:140] or None
