@@ -41,12 +41,30 @@ No special events occur this turn.
 These carry forward unchanged unless you explicitly propose a change.
 {% endif %}
 
+{% if has_store %}
+## Your portfolio
+
+These are the measures you have in flight. They are **held for you** and carry forward on their own. You do not restate them, and nothing you leave out of your answer can remove one. Each carries the id the framework gave it; that id, not the measure's name, is how you refer to it.
+
+{{ store.rows('measures', status='running') }}
+
+They cost you {{ store.sum('measures', 'cost_per_turn', status='running') }} political capital this turn, which is the sum of the `cost_per_turn` column above.
+{% if store.count('measures', status='finished') > 0 %}
+
+These have finished. They no longer cost you anything and keep delivering their effect for as long as it is sustained:
+
+{{ store.rows('measures', status='finished') }}
+{% endif %}
+
+The only thing that changes any of this is a command under `## Store changes` in your answer.
+{% endif %}
+
 {% if previous_actions %}
 ## Your previous response (last turn)
 
 {{previous_actions}}
 
-This record is the authority on what you have in flight. Your `## Portfolio` this turn must carry every measure in it forward. A measure disappears from your books only by an explicit decision recorded under Actions, never by being left out.
+This is your own record of what you said and why. What you have in flight is above, and is authoritative.
 {% endif %}
 
 Use the background information to determine your actions this turn. Your actions will be evaluated by a Game Master.
@@ -83,25 +101,14 @@ Two things follow from the timing, and both matter. The new direction takes effe
 Omit it, or write `No statement changes.`, when nothing has changed.
 {% endif %}
 
-* Heading level 2: Portfolio
-One bullet per measure already in flight, copied straight from the portfolio passed onto you, on the form ``Measure name (category N, costs C per turn, started turn X, finishes on turn Y): short description``. Write `Nothing in flight.` if there is nothing.
-
-A measure whose finishing turn the run has now reached is **finished**: say so on its line this turn, and drop it from the portfolio from the next turn on. It stops costing you political capital and keeps delivering its effect for as long as it is sustained. Finishing is the one way a measure leaves your books without a decision.
-{% if turn == 1 %}
-Open your portfolio with exactly these two, and carry them forward as you would any other measure:
-
-- ``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
-- ``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
-{% endif %}
-You may choose to drop measures from your portfolio, to save `eu_political_capital`. If you want to drop a measure, list them in the following way: ``Canceled measure: Name of measure.  Short statement on why you choose to cancel it.``
-
 * Heading level 2: New measure
-**Pick at most one**. `None this turn.` is an option. **Choose it with your two-year commitment in mind: across the four turns of a commitment period it should be the dominant theme of what you build.** Not everything must serve it — an incident that must be answered now, a window that closes, a cheap chance worth taking are all real reasons to spend a turn elsewhere — but if you reach the end of a two-year period and most of what you started points somewhere else, you did not hold the commitment, whatever the ledger still says. Every measure in your portfolio cost `eu_political_capital`, but less so if the opinion for the measure is favourable. Propose a measure unless you have a reason not to, and if you write `None this turn.`, say in one clause what you are waiting for. When you do propose one, give a heading plus one short sentence saying what it actually does, then five lines:
-`Category:` (**number and name together, copied from the list below** — for example `Category: 6 (Preparedness and resilience)`). Measures you invent are welcome and get the category they most resemble, or `10 (Other)`.
-`Size:` (large or small — large costs 3 political capital a turn, small costs 2, every turn until it finishes, less whatever the world has made easier).
-`Finishes on turn:` (the turn it is actually in force, judged from how big the thing is: a directive needing drafting and a vote is two or three turns out, a capability that has to be built and staffed six or more).
-`Targeted effect:` (which metrics, which direction, roughly how much).
-`Applies to:` (your own jurisdiction, particular member states, the US, China, a coalition, the frontier developers directly).
+**Pick at most one**. `None this turn.` is an option. **Choose it with your two-year commitment in mind: across the four turns of a commitment period it should be the dominant theme of what you build.** Not everything must serve it — an incident that must be answered now, a window that closes, a cheap chance worth taking are all real reasons to spend a turn elsewhere — but if you reach the end of a two-year period and most of what you started points somewhere else, you did not hold the commitment, whatever the ledger still says. Every measure in your portfolio cost `eu_political_capital`, but less so if the opinion for the measure is favourable. Propose a measure unless you have a reason not to, and if you write `None this turn.`, say in one clause what you are waiting for. When you do propose one, give a heading plus one short sentence saying what it actually does, and say in a further sentence or two why this and why now. The measure itself is not recorded here — you enter it under `## Store changes` below, and these are the judgements that command asks you for:
+
+`category` (**the number from the list below**, for example `category = 6`). Measures you invent are welcome and get the category they most resemble, or `10`. Name the category in your prose so the number can be checked against it.
+`size` (`large` or `small` — large costs 3 political capital a turn, small costs 2, every turn until it finishes).
+`finish_turn` (the turn it is actually in force, judged from how big the thing is: a directive needing drafting and a vote is two or three turns out, a capability that has to be built and staffed six or more).
+`targeted_effect` (which metrics, which direction, roughly how much).
+`applies_to` (your own jurisdiction, particular member states, the US, China, a coalition, the frontier developers directly).
 
 **There are ten categories for measures, and only these may be used. Each carries an anchor — the measure it most typically means — and, in brackets, others that belong to it:**
 
@@ -119,6 +126,28 @@ You may choose to drop measures from your portfolio, to save `eu_political_capit
 Categories 4, 7 and 9 are not decoration. Diffusion breadth buys economic gain but also attack surface and misuse exposure; public trust determines how much capital you have when incidents arrive; industrial and infrastructure pace feeds capability growth. If your strongest lever turns out not to point at the frontier at all, that is a real finding, not a mistake.
 Copy the pair exactly; never invent a name of your own for a number, and never write a number without its name. Read the name before you write the number: standing up your own evaluation or monitoring capability is 5, hardening critical services against attack is 6, and 4 is compute, chips, energy and talent on EU soil — the three are routinely confused, and the tag is how measures are compared across runs. Broadening a measure already in flight is not a new measure — record it under Portfolio instead. This applies with full force to the programmes you inherited: building EU compute *is* the Gigafactories line, and reviving, redirecting or re-funding it belongs in the Portfolio and in your Priority, not here as a fresh initiative under a new name. Standing up a parallel compute programme while the inherited one sits stalled is the one move the Union cannot credibly make.
 
+* Heading level 2: Store changes
+**Required every turn, even when nothing changes.** This section is the only thing that alters your portfolio. Write `No changes.` when there is nothing — leaving the section out is not the same as writing that, and is recorded as a fault.
+
+Your measures in flight carry forward on their own. Do not re-list them here; list only what changes. Three commands, one per bullet:
+
+``add measures: name = <name>; category = <number>; size = <large or small>; finish_turn = <turn>; applies_to = <who it reaches>; targeted_effect = <which metrics, which direction, roughly how much>``
+``update measures <id>: finish_turn = <turn>``
+``delete measures <id>``
+
+Each may carry an indented `- Grounds: <one clause>` line beneath it, and a `delete` must.
+
+- **Adding.** One `add` for the measure you proposed above, and no more than one this turn. The framework gives it an id and stamps the turn it started; you cannot set either.
+- **Moving a finishing turn.** `update` is the only way a finishing turn moves, and rule 10 says what may move it: a named priority may pull it in by one turn, several unprioritised turns may push it out by one, an event may do either and rarely by more than one. Nothing else moves it, and nothing moves it silently.
+- **Dropping a measure.** `delete` is abandonment or public defeat, and it costs you (rule 6). It is not how a measure finishes: a measure that reaches its finishing turn finishes by itself, keeps its record, and stops costing you without any command from you. Never delete a measure because it has finished.
+{% if turn == 1 %}
+
+**This turn only**, your section opens with exactly these two commands, which enter the programmes you inherited, and then the `add` for whatever you propose above:
+
+``add measures: name = InvestAI Gigafactories; category = 4; size = large; finish_turn = 7; applies_to = own jurisdiction; targeted_effect = eu_ai_sovereignty up, via €200bn for four to five sites``
+``add measures: name = Tech sovereignty package; category = 4; size = large; finish_turn = 6; applies_to = own jurisdiction; targeted_effect = eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones``
+{% endif %}
+
 * Heading level 2: Priority
 Name at most one measure you are pushing hardest this turn, and one sentence on why it and not the others. In most turns this should be a measure that serves your two-year commitment. Naming a priority that serves something else is allowed – say in that same sentence what the world demanded that outranked your own direction.
 
@@ -127,4 +156,4 @@ Two or three short paragraphs, in the Union's own voice, on how you are actually
 
 **It carries out your measures; it does not add any.** Anything here that stands up a further distinct instrument, with its own implementation track and its own lead time, is a second new measure by another name, and the turn's slot does not allow it. If what you are describing would need its own budget line and its own finishing turn, it belongs under New measure in a later turn, not here.
 
-Four rules bind this response and you must not talk your way past any of them. Where a **Two-year commitment** section is asked for you must open with it — chosen and entered in the ledger in your first turn, renewed or redirected when the term expires. You may introduce **at most one new measure this turn**, however many good ideas you have, and nothing under In practice may become a second one. Everything under Portfolio and Priority must be carried forward accurately from what you recorded before, not re-invented. And every proposed measure must carry its `Category:` line — a measure without one cannot be compared against anything, which is most of why these runs exist.
+Four rules bind this response and you must not talk your way past any of them. Where a **Two-year commitment** section is asked for you must open with it — chosen and entered in the ledger in your first turn, renewed or redirected when the term expires. You may introduce **at most one new measure this turn**, however many good ideas you have, and nothing under In practice may become a second one. A **Store changes** section is required every turn, saying `No changes.` when nothing changes. And every measure you add must carry its `category` — a measure without one cannot be compared against anything, which is most of why these runs exist.

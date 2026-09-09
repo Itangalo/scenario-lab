@@ -132,6 +132,47 @@ research_questions:
     events: [cyber_major_incident, bio_incident, loss_of_control_incident, automated_decision_scandal, member_state_defection, backlash_physical, election_annulled, taiwan_blockade]
     notes: "Scenario discovery, adverse half. Report the emergent events separately from the catalogue events: the emergent ones carry no authored gates and are the only genuinely exploratory material in the pool. Watch for measure portfolios that appear in both the favourable and the adverse sets; those are measures whose value is contingent on something else, and identifying that something is the useful result."
 
+# The measure portfolio, held by the framework rather than by the actor.
+#
+# Before this, the EU re-emitted its whole portfolio every turn and an entry
+# survived only if the model wrote it again. Measured over the 150-run stats
+# batch: 4.5% of proposed measures never arrived at all, and 0.6% of
+# turn-to-turn transitions lost an entry with no stated cause. Because rule 6
+# charges capital per measure in flight, a measure that dropped out silently
+# stopped costing anything, and the run read as better-resourced than it was.
+# See docs/proposals/persistent-state-custody.md.
+#
+# `owner` is the load-bearing column here. `started_turn` is stamped by Python
+# and there is no command that reaches it, so rule 10's "copied forward,
+# unchanged" is no longer something the model obeys by remembering.
+#
+# Changing this block changes the physics. Runs made under different schemas
+# are not comparable, which is why the resolved schema is recorded in each
+# run's config.json.
+store:
+  measures:
+    scope: actor
+    columns:
+      id:              {owner: system,  type: text}
+      name:            {owner: actor,   type: text, required: true}
+      # An integer rather than an enum of 1-10, deliberately. An enum would
+      # reject `category = 6 (Preparedness and resilience)`, which is exactly
+      # what the prompt teaches the actor to write, and losing a measure to
+      # punctuation is the failure this whole mechanism exists to remove. The
+      # ten categories are taught in the actor prompt and audited downstream.
+      category:        {owner: actor,   type: integer, required: true}
+      size:            {owner: actor,   type: enum, values: [large, small], required: true}
+      started_turn:    {owner: system,  type: turn}
+      finish_turn:     {owner: actor,   type: turn, required: true}
+      applies_to:      {owner: actor,   type: text}
+      targeted_effect: {owner: actor,   type: text}
+      # Rule 6's per-turn charge, as data rather than as arithmetic the Game
+      # Master performs while also writing the narrative.
+      cost_per_turn:   {owner: derived, type: integer, from: size, map: {large: 3, small: 2}}
+      # "A measure is finished when the current turn reaches Y" (rule 10).
+      status:          {owner: derived, type: text, from: finish_turn,
+                        when_reached: finished, else: running}
+
 llm:
   model: "openrouter:qwen/qwen3-235b-a22b-2507"
   temperature: 0.7

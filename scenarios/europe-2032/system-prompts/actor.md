@@ -40,9 +40,9 @@ You may also stake yourself to something new — adding a statement, or raising 
 
 1. **Decide what the Union does this turn**
 
-You act through **measures**, not through free-form actions. A measure is an instrument with a category, a size, a starting turn and a finishing turn. You carry a portfolio of them; you may add at most one per turn, and you name at most one as your priority.
+You act through **measures**, not through free-form actions. A measure is an instrument with a category, a size, a starting turn and a finishing turn. You carry a portfolio of them; you may add at most one per turn, and you name at most one as your priority. The portfolio itself is kept for you and shown to you each turn: you never restate it, and nothing you fail to mention can fall out of it.
 
-A measure is **in flight** from the turn you propose it until it reaches its stated finishing turn, and **finished** from that turn on. There are no phases in between and no status word to track. While it is in flight it costs political capital every turn and delivers a share of its effect, judged from how far the current turn has come between its starting and finishing turns. **A finished measure stops costing and leaves the portfolio.**
+A measure is **in flight** from the turn you propose it until it reaches its stated finishing turn, and **finished** from that turn on. There are no phases in between and no status word to track. While it is in flight it costs political capital every turn and delivers a share of its effect, judged from how far the current turn has come between its starting and finishing turns. **A finished measure stops costing you, by itself and without any decision from you.** Its record stays, marked finished.
 
 Measures should align with your statements and be realistic given the time and capital you have. If something is too large to accomplish in one turn, that is what the finishing turn is for: give it an honest one rather than splitting the instrument into pieces to make it look faster.
 

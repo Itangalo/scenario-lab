@@ -336,3 +336,18 @@ Johan asked whether all runs have their own seeds. Scanned every `run-20*` confi
 Benign, for an architectural reason rather than by luck: dice are `random.Random(f"{seed}:{turn}:{event_id}")`, so a seed only collides meaningfully when two runs draw the *same turn*. Path runs consumed turns 1–5, fixtures only turn 6, and the fixtures' own turn-6 actor outputs are discarded — no turn's dice was ever drawn twice. All 60 Stage-1 runs and all 120 Stage-2 blocks hold fresh unique seeds.
 
 Two guards so the next batch cannot repeat the accident: `branch` without `--seed` now prints that the child shares the parent's seed (comparable counterfactuals want that; independent exploration does not), and AGENTS.md says to pass a fresh `--seed` when a branch explores new turns. `story/pin-turn.py` already draws fresh per block.
+
+## The portfolio moved into framework custody (ECHO 2026-09-10)
+
+The measure portfolio is no longer re-emitted by the actor. It is declared in `scenario.yaml` under `store:` and held by Python; the EU proposes deltas under `## Store changes` and never restates what it holds. Background, measurement and design: `../../docs/proposals/persistent-state-custody.md`; mechanism: the *Declared Persistent State* section of `../../docs/ARCHITECTURE.md`.
+
+What this changes in this scenario's own terms:
+
+- **Rule 10's "copied forward in the portfolio, unchanged" is now structural.** `started_turn` is stamped by the framework and no command reaches it. A finishing turn moves only by an explicit `update`, with grounds, and the three things rule 10 allows to move it are still the three things — but the rule is now describing what the actor may ask for rather than what it must remember.
+- **Rule 6's per-turn charge is computed and printed with its rows.** The rules render the portfolio in flight and the sum of `cost_per_turn` beside it. The Game Master still itemises the charge line, because the itemisation is what makes it checkable, and now it has something to check against. The line's total is still the Game Master's: the framework does not know which measure was named as priority, so its figure covers the measures only.
+- **The `## Portfolio` section is gone from the actor's response,** and the five labelled lines under `## New measure` moved into the `add` command. The prose that argued for the measure stays; the record is written once, in one place, rather than declared in prose and copied into a list.
+- **Finishing needs no decision.** `status` is derived from `finish_turn` against the current turn, so a measure stops being charged the turn it finishes without the actor doing anything, and its record stays for analysis instead of being dropped.
+
+**What this does not fix, and it is the larger half.** Custody protects what got into the store. A measure the EU argues for in prose and never writes an `add` for is still lost, and that was 4.5% of proposals against 0.6% for entries vanishing. The absent section is at least visible now — it prints a warning and is recorded as a fault in `turn-XX/2-actors/eu-store.md` — but nothing re-asks. Nor does anything see the A2 case in `story/README.md`, where a proposal was correctly deferred with a reason and never revisited.
+
+**Comparability.** Runs made from here are not strictly comparable with the 570 already committed: the actor's response format changed, rule 6 and rule 10 changed, and the portfolio's custody changed. The resolved schema is recorded in each run's `config.json` so the two populations can be told apart.

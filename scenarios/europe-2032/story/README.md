@@ -52,6 +52,8 @@ Faults found after the batches were committed, recorded rather than re-run. Re-r
 
 ### The portfolio is not a reliable ledger (2026-09-09)
 
+**Still true of this tree, and no longer true of the framework (2026-09-10).** The portfolio moved into framework custody: it is declared in `scenario.yaml` and held by Python, and an actor's silence can no longer drop an entry. Every run in this story tree predates that and is described exactly as below. Rebuilding the tree under custody would remove the drift described here — it would not remove the A2 case, which is an unresolved deferral rather than a drop, and which nothing yet detects. See `../../../docs/proposals/persistent-state-custody.md`.
+
 The A2 case is one instance of something systematic, and worth knowing before anyone writes from `data.json`'s portfolio field.
 
 The portfolio is not maintained by Python. It is restated by the actor in its own output every turn, which is correct under the pure-LLM architecture and means it drifts. Measured across the 42 path runs: of 387 proposed measures, 109 never appear in the next turn's portfolio. Forty of those the run explains itself — portfolio saturation, deferral, not formally tabled, which are designed behaviours. The remaining 69 have no explanation anywhere in the world state.

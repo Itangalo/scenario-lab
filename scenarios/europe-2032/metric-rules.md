@@ -39,12 +39,17 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
    - IMPORTANT: Sum across the full portfolio and other effects before changes are applied
    - `eu_ai_sovereignty` above 40: +1 to +3 `eu_political_capital`, top end if above 60
    - `public_sentiment` above `eu_political_capital`: +1 to +2 `eu_political_capital`
-   - Every measure in flight costs the same amount `eu_political_capital` every turn, and finishes on a stated turn
-      - large measure: −3 `eu_political_capital` per turn
-      - small measure: −2 `eu_political_capital` per turn
+   - Every measure in flight costs `eu_political_capital` every turn until it finishes: −3 for a large measure, −2 for a small one. **This turn the portfolio in flight is:**
+
+{{ store.rows('measures', status='running') }}
+
+     **so the measures come to −{{ store.sum('measures', 'cost_per_turn', status='running') }} `eu_political_capital` this turn.** That figure is the `cost_per_turn` column added up, and nothing else: the named priority's −1 below is charged on top of it, and is not in it.
    - A named priority: −1 that turn.
-   - A measure abandoned or publicly defeated: −3 to −6, remove from portfolio
-   - A measure reaching its finishing turn: +2 to +5, then remove from portfolio
+   - A measure the Union abandoned or that was publicly defeated this turn — it left the portfolio by an explicit decision, which you will find in the actor's `## Store changes`: −3 to −6
+   - A measure reaching its finishing turn: +2 to +5, once, in that turn. {% if store.count('measures', finish_turn=turn) > 0 %}**Finishing this turn:**
+
+{{ store.rows('measures', finish_turn=turn) }}
+{% else %}Nothing finishes this turn.{% endif %}
     - A measure just added, addressing a negative event from the last three rounds: +1 to +8. Larger for bigger events, more recent events and larger measures; smaller for the reverse.
     - The event `middle_power_coalition`, in the turn it fires: +2 to +4, once. Its sovereignty effect is already covered: coordination that secures supply-chain access counts under rule 5's event term.
    - Negative events this turn move `eu_political_capital` in either direction; the sign follows from where the harm originated and whether the EU had acted beforehand.
@@ -86,7 +91,8 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
    - Agreement in public and evasion in private is a permitted outcome, and should sometimes be the one that happens.
 
 10. **Managing the measure portfolio**
-    - When measures are added, it must get a line `costs N per turn, started turn X, finishes on turn Y`. This line is copied forward in the portfolio, unchanged. Three things can move  it. Nothing moves it silently.
+    - The portfolio is held by the framework, not restated by the Union. A measure's cost, starting turn and finishing turn are carried forward by Python; nothing the Union writes or omits can drop an entry, and its starting turn cannot be rewritten at all. Do not ask the Union to re-list its measures, and do not treat a measure's absence from the narrative as its departure. The rows printed under rule 6 are the portfolio.
+    - A finishing turn moves only by an explicit `update` in the Union's `## Store changes`, and three things justify one. Nothing moves it silently.
       - It is a named priority: may pull it in by one turn
       - Left unprioritised several consecutive turns: may push it out by one
       - An event: either, and rarely by more than one
@@ -94,7 +100,7 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
       - **The named priority has no effect, and no cost.** Pull-in-by-one-turn does not apply, pushing a measure buys nothing, and the priority's −1 is not charged. Naming a priority changes nothing at all.
     - If `eu_political_capital` is below 12, control slips further:
       - **A new measure may fail to start.** Judge it, roughly one turn in three. A measure that fails to start never enters the portfolio, costs nothing, and may be proposed again in a later turn. Say plainly in the narrative what blocked it — a member state withholding assent, a budget line refused, a legal base contested. The narrative must not announce that a line has been crossed.
-    - A measure is finished when the current turn reaches Y.
+    - A measure is finished when the current turn reaches Y. This happens by itself: the record's status turns to finished, it stops being charged, and it needs no decision from the Union.
       - Apply the full bonus from the measure
     - A measure in flight gives part bonus:
       - A measure yields nothing in the turn it is proposed
