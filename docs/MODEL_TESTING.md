@@ -410,7 +410,19 @@ So the arithmetic advantage is real and is not an artefact of a lenient referee.
 
 **Where muse loses, and it is not visible in any metric above.** It writes the new measure's name as a `###` sub-heading under `## New measure`, where every other tested model writes it in bold on the following line. `section()` in `build_dashboard.py` stops at the next heading of any level, so the captured body is empty and `parse_actor_turn` returns `new_measure = None` for **all 13 turns of all three runs**. That silently defeats every instrument built on that parser: `check_ledger.py` reported "proposed measures: 0" for the cohort, which reads like a perfect score and is a total parse failure. Anything downstream of `parse_actor_turn` – the dashboard included – is blind to what this model proposed.
 
-This is fixable from either end (tighten the format contract in the actor prompt, or widen `section()` to treat `###` as content rather than a boundary), but until it is, ledger and dashboard figures for this model are meaningless rather than good.
+**Fixed 2026-09-09**, in the parser rather than the prompt: prompt-side format prohibitions have a poor record in this repo, and a prompt fix cannot repair the runs already on disk. `section()` now stops at `#` and `##` but not `###`, and `parse_actor_turn` reports `new_measure_status` of `named`, `declined` or `unreadable` so a parse failure can no longer masquerade as an actor that proposed nothing. Verified against 12 000 real actor files before the change: Portfolio, Priority and In practice parse byte-identically, and all 271 differences in New measure recover a section that previously read as absent — 270 empty-to-content, one truncated-to-whole, none altered or lost. It was not a muse-specific bug: 228 of those files are `forking-futures`, which had been losing measures silently for months. Pinned by `tests/test_actor_parsing.py`.
+
+With the parser fixed, the real ledger figures for this cohort are worse than qwen's rather than perfect:
+
+| | qwen | muse @ minimal |
+|---|---|---|
+| turns where it named no measure and said so | 4 | 9 |
+| measures proposed | 32 | 29 |
+| entered the portfolio later | **32 (100%)** | 27 (93.1%) |
+| never entered, no reason stated | **0** | 2 (6.9%) |
+| vanished with no stated cause | 0 | 0 |
+
+So the two models split the quality question rather than one winning it: muse is far better at the accounting arithmetic and worse at ledger discipline.
 
 **One behavioural difference worth knowing before comparing runs.** muse declines to propose a measure on many turns, and says why – "None this turn, while we let three lines finish and stop their capital burn". That is defensible reasoning about the rule 6 charge rather than a failure, but it means materially fewer measures per run than qwen, so a muse cohort and a qwen cohort are not interchangeable as simulation output even when both complete.
 

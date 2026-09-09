@@ -69,6 +69,7 @@ def turns_of(run_dir: Path) -> list[int]:
 def audit(run_dirs: list[Path], actor: str, limit: int) -> dict[str, Any]:
     entered = non_entry_ok = non_entry_bad = 0
     carried = left_ok = left_bad = 0
+    declined = unreadable = 0
     never_eg: list[str] = []
     vanished_eg: list[str] = []
 
@@ -80,6 +81,16 @@ def audit(run_dirs: list[Path], actor: str, limit: int) -> dict[str, Any]:
             later = [x for x in turns if x > t]
 
             # -- proposed, and did it ever arrive? --------------------------
+            # A turn the parser could not read is counted apart from one where
+            # the actor named nothing. Folded together they made a total parse
+            # failure print as "proposed measures: 0", which reads like a
+            # perfect score; the muse-spark cohort of 2026-09-09 did exactly
+            # that for 39 of 39 turns.
+            status = parsed[t].get("new_measure_status", "named")
+            if status == "declined":
+                declined += 1
+            elif status == "unreadable":
+                unreadable += 1
             proposal = parsed[t]["new_measure"]
             if words(proposal) and later:
                 if any(any(words(proposal) & words(m["name"]) for m in parsed[x]["portfolio"])
@@ -121,7 +132,8 @@ def audit(run_dirs: list[Path], actor: str, limit: int) -> dict[str, Any]:
             "non_entry_ok": non_entry_ok, "non_entry_bad": non_entry_bad,
             "transitions": carried + left_ok + left_bad, "carried": carried,
             "left_ok": left_ok, "left_bad": left_bad,
-            "never_eg": never_eg, "vanished_eg": vanished_eg}
+            "never_eg": never_eg, "vanished_eg": vanished_eg,
+            "declined": declined, "unreadable": unreadable}
 
 
 def pct(n: int, d: int) -> str:
@@ -150,6 +162,13 @@ def main() -> int:
 
     r = audit(runs, args.actor, args.examples)
     print(f"{len(runs)} runs, actor '{args.actor}'\n")
+    if r["unreadable"]:
+        print(f"⚠️  {r['unreadable']} turn(s) had no readable 'New measure' section. "
+              f"Those are NOT counted below as measures that were never proposed; "
+              f"they are turns this instrument could not read, and every figure "
+              f"here understates the truth by that much. Check the actor output's "
+              f"format before reading the rest.\n")
+    print(f"turns where the actor named no measure and said so: {r['declined']}")
     print(f"proposed measures: {r['proposals']}")
     print(f"  entered the portfolio at some later turn: {r['entered']:5}  "
           f"({pct(r['entered'], r['proposals'])})")

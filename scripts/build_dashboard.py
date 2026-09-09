@@ -52,15 +52,25 @@ BOLD_NAME = re.compile(r"\*\*(?P<name>[^*]+)\*\*")
 
 
 def section(text: str, heading: str) -> str:
-    """The body under a `## heading`, up to the next heading of any level."""
-    match = re.search(rf"^##\s*{re.escape(heading)}\s*$(.*?)(?=^#{{1,3}}\s|\Z)",
+    """The body under a `## heading`, up to the next heading at the same level.
+
+    The boundary stops at `#` and `##` but not `###`, because some models write
+    the measure's own name as a sub-heading directly under `## New measure`.
+    Treating that as a terminator made the body empty and lost the measure
+    entirely. Verified against 12 000 actor files: Portfolio, Priority and In
+    practice parse byte-identically either way, and every difference in New
+    measure recovers a section that previously read as absent (270 of 271
+    empty to content, 1 truncated to whole, none altered or lost).
+    """
+    match = re.search(rf"^##\s*{re.escape(heading)}\s*$(.*?)(?=^#{{1,2}}\s|\Z)",
                       text, re.MULTILINE | re.DOTALL | re.IGNORECASE)
     return match.group(1).strip() if match else ""
 
 
 def parse_actor_turn(path: Path) -> dict[str, Any]:
     if not path.exists():
-        return {"portfolio": [], "new_measure": None, "priority": None, "cancelled": []}
+        return {"portfolio": [], "new_measure": None, "new_measure_status": "unreadable",
+                "priority": None, "priority_status": "unreadable", "cancelled": []}
     text = path.read_text(encoding="utf-8")
 
     portfolio, cancelled = [], []
@@ -81,17 +91,28 @@ def parse_actor_turn(path: Path) -> dict[str, Any]:
         elif (m := CANCELLED.match(line)):
             cancelled.append({"name": m["name"].strip(" `"), "reason": m["reason"].strip()})
 
-    def first_bold(heading: str) -> str | None:
-        """The measure named under a heading, or None when none was named.
+    def named(heading: str) -> tuple[str | None, str]:
+        """The measure named under a heading, plus why there is none.
+
+        Returns a status alongside the name because the two empty cases are
+        opposites and used to be indistinguishable: an actor that deliberately
+        proposed nothing and a section this parser could not read both came
+        back as None. Downstream that turned a total parse failure into
+        "proposed measures: 0", which reads like a perfect score.
+
+        Statuses are "named", "declined" (the actor said so) and "unreadable"
+        (no such section, or nothing under it).
 
         The Game Master writes the empty case as `**None this turn.**`, as
         `None this turn.`, and occasionally as prose beginning "no new"; all
         three mean the same thing and none of them is a measure name.
         """
         body = section(text, heading)
+        if not body:
+            return None, "unreadable"
         bare = body.lstrip("*_ \t")
-        if not body or re.match(r"(?:none|no new|nothing)\b", bare, re.IGNORECASE):
-            return None
+        if re.match(r"(?:none|no new|nothing)\b", bare, re.IGNORECASE):
+            return None, "declined"
         if (m := BOLD_NAME.search(body)):
             name = m["name"].strip()
             if name.endswith(":"):
@@ -99,17 +120,23 @@ def parse_actor_turn(path: Path) -> dict[str, Any]:
                 # is what follows it on the same line.
                 rest = body[m.end():].strip().split("\n")[0].strip(" `*")
                 if rest:
-                    return rest.rstrip(".")
-            return name
+                    return rest.rstrip("."), "named"
+            return name, "named"
         # No bold name: take the clause before the reason, not a fixed slice.
-        first = body.split("\n")[0]
-        return re.split(r"\s+[—–-]{1,2}\s+|(?<=[.;:])\s", first)[0].strip()[:140] or None
+        # Leading #s are stripped because the name may be a `###` sub-heading.
+        first = body.split("\n")[0].lstrip("#").strip()
+        name = re.split(r"\s+[—–-]{1,2}\s+|(?<=[.;:])\s", first)[0].strip()[:140]
+        return (name, "named") if name else (None, "unreadable")
 
+    new_measure, new_measure_status = named("New measure")
+    priority, priority_status = named("Priority")
     return {
         "portfolio": portfolio,
         "cancelled": cancelled,
-        "new_measure": first_bold("New measure"),
-        "priority": first_bold("Priority"),
+        "new_measure": new_measure,
+        "new_measure_status": new_measure_status,
+        "priority": priority,
+        "priority_status": priority_status,
         "reasoning": section(text, "In practice"),
     }
 
