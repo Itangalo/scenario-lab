@@ -171,19 +171,54 @@ def test_missing_section_is_reported_not_inferred(store: Store):
 # ---------------------------------------------------------------------------
 
 
-def test_system_column_cannot_be_written(store: Store):
+def test_a_system_column_cannot_be_written(store: Store):
     add_two(store)
     outcome = apply(store, 2, "## Store changes\n- update measures M1: started_turn = 5\n")[0]
     assert outcome.verdict == "rejected"
-    assert "stamped by the framework" in outcome.reason
     assert store.live_records("measures")[0].fields["started_turn"] == 1
 
 
-def test_derived_column_cannot_be_written(store: Store):
+def test_a_derived_column_cannot_be_written(store: Store):
     add_two(store)
     outcome = apply(store, 2, "## Store changes\n- update measures M1: cost_per_turn = 1\n")[0]
     assert outcome.verdict == "rejected"
-    assert "computed from" in outcome.reason
+    assert store.value(store.live_records("measures")[0], "cost_per_turn") == 3
+
+
+def test_an_unwritable_column_costs_the_value_not_the_command(store: Store):
+    """The actor copies the columns it is shown, and it is shown all of them.
+
+    An eight-turn verification run lost six measures because each `add`
+    carried `cost_per_turn = 3` beside the fields the actor owns -- the right
+    value, which the framework computes anyway, rejected along with the whole
+    measure. An unknown column stays a rejection, because a typo must never
+    become an addition; a known but unwritable one is the actor telling us
+    what we already know.
+    """
+    outcome = apply(
+        store,
+        1,
+        "## Store changes\n- add measures: name = Kept; size = large; finish_turn = 9; "
+        "cost_per_turn = 99; started_turn = 4\n",
+    )[0]
+    assert outcome.verdict == "applied"
+    assert "computed from 'size'" in outcome.note
+    assert "stamped by the framework" in outcome.note
+
+    record = store.live_records("measures")[0]
+    assert record.fields["name"] == "Kept"
+    assert store.value(record, "cost_per_turn") == 3   # not 99
+    assert record.fields["started_turn"] == 1          # not 4
+
+
+def test_an_unknown_column_is_still_a_rejection(store: Store):
+    """The two cases are different and must stay different."""
+    outcome = apply(
+        store, 1,
+        "## Store changes\n- add measures: name = X; finish_turn = 3; colour = blue\n",
+    )[0]
+    assert outcome.verdict == "rejected"
+    assert store.live_records("measures") == []
 
 
 def test_unknown_column_is_a_rejection_not_an_addition(store: Store):

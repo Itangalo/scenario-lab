@@ -48,7 +48,7 @@ These are the measures you have in flight. They are **held for you** and carry f
 
 {{ store.rows('measures', status='running') }}
 
-They cost you {{ store.sum('measures', 'cost_per_turn', status='running') }} political capital this turn, which is the sum of the `cost_per_turn` column above.
+They cost you {{ store.sum('measures', 'cost_per_turn', status='running') }} political capital this turn, which is the sum of the `cost_per_turn` column above. That column, like `id`, `started_turn` and `status`, is worked out for you and is not yours to write.
 {% if store.count('measures', status='finished') > 0 %}
 
 These have finished. From the turn each reached its finishing turn it costs you nothing, and it keeps delivering its effect for as long as it is sustained:
@@ -141,6 +141,8 @@ What the six fields of an `add` are asking you to judge:
 - `finish_turn` — the turn it is actually in force, judged from how big the thing is: a directive needing drafting and a vote is two or three turns out, a capability that has to be built and staffed six or more.
 - `targeted_effect` — which metrics, which direction, roughly how much.
 - `applies_to` — your own jurisdiction, particular member states, the US, China, a coalition, the frontier developers directly.
+
+**Those six and no others.** The table above shows more columns than that — `id`, `started_turn`, `cost_per_turn`, `status` — and every one of them is worked out for you: the id and the starting turn when the measure enters, the cost from its size, the status from its finishing turn. Writing them in a command changes nothing, so do not write them.
 
 And when each command is the right one:
 

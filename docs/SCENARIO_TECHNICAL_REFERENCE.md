@@ -339,6 +339,8 @@ What the actor writes, under a `## Store changes` heading in its response:
 
 The section is required every turn; `No changes.` is the answer when nothing changes, and an absent section is recorded as a fault. Pairs are separated by semicolons, values are normalised on the way in (`**Large**`, `` `large` `` and `Large` all store as `large`; `turn 7` stores as `7`), and anything that will not normalise is rejected with a reason into the turn's changelog rather than stored as something else. Records are addressed by the id the framework assigned (`M1`), never by name.
 
+The parser is forgiving about the shapes actors actually write: bullets or numbered lists, a heading at any level, a command wrapped in backticks, a semicolon inside a value, a trailing `No other changes.`, a delete naming several ids (`delete measures M1, M2`) or carrying its reason inline. What it will not do is guess: a line it cannot read is recorded as unparsed rather than dropped, and an `add` whose name already belongs to a live record is applied with a note saying so, because names are not keys and two similar measures may both be legitimate.
+
 What templates can read, in `metric-rules.md` and in prompt overrides:
 
 - `{{ store.rows('measures') }}` — a markdown table of every column, including derived ones

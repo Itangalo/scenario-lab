@@ -428,6 +428,9 @@ class Store:
         self.counters: dict[str, int] = {name: 0 for name in schema.tables}
         self.current_turn: int = 0
         self._snapshots: dict[int, str] = {}
+        # What the last applied command asked for and did not get, so the
+        # outcome can carry it into the changelog.
+        self._ignored: list[str] = []
 
     # -- state -----------------------------------------------------------
 
@@ -497,6 +500,7 @@ class Store:
                 grounds=command.grounds,
             )
 
+        self._ignored: list[str] = []
         try:
             if command.kind == "add":
                 record = self._apply_add(table, command, actor_id, turn)
@@ -509,9 +513,13 @@ class Store:
         except StoreCommandError as err:
             return StoreOutcome(command.raw, "rejected", str(err), grounds=command.grounds)
 
+        notes = list(self._ignored)
+        duplicate = self._note_for(table, command, record, actor_id)
+        if duplicate:
+            notes.append(duplicate)
         return StoreOutcome(
             command.raw, "applied", record_id=record.id, grounds=command.grounds,
-            note=self._note_for(table, command, record, actor_id),
+            note="; ".join(notes),
         )
 
     def _note_for(
@@ -544,8 +552,26 @@ class Store:
             "Both are charged."
         )
 
-    def _validate_assignments(self, table: StoreTable, command: "StoreCommand") -> dict[str, Any]:
+    def _validate_assignments(
+        self, table: StoreTable, command: "StoreCommand"
+    ) -> tuple[dict[str, Any], list[str]]:
+        """The values to store, and what was ignored getting there.
+
+        An *unknown* column is a rejection: a typo must never silently become
+        an addition, which is the rule the patch loader already enforces.
+
+        A *known but unwritable* one is not the same thing, and treating it as
+        one was expensive. The actor sees the rendered rows -- it has to, the
+        rows are the portfolio -- and it copies the columns it sees, so it
+        writes `cost_per_turn = 3` beside the fields it owns. The value is
+        right, the framework computes it anyway, and rejecting the command
+        threw away the whole measure over it: six measures lost in one
+        eight-turn run. The assignment is dropped and noted instead. Nothing
+        the actor writes can reach a system or derived column either way,
+        which is the guarantee that matters.
+        """
         values: dict[str, Any] = {}
+        ignored: list[str] = []
         for name, raw in command.assignments.items():
             column = table.columns.get(name)
             if column is None:
@@ -554,20 +580,19 @@ class Store:
                     f"'{table.name}' has no column '{name}' (you may set: {known})"
                 )
             if column.owner == "system":
-                raise StoreCommandError(
-                    f"column '{name}' is stamped by the framework and cannot be set"
-                )
+                ignored.append(f"'{name}' is stamped by the framework")
+                continue
             if column.owner == "derived":
-                raise StoreCommandError(
-                    f"column '{name}' is computed from '{column.source}' and cannot be set directly"
-                )
+                ignored.append(f"'{name}' is computed from '{column.source}'")
+                continue
             values[name] = normalize_value(column, raw)
-        return values
+        return values, ignored
 
     def _apply_add(
         self, table: StoreTable, command: "StoreCommand", actor_id: str, turn: int
     ) -> StoreRecord:
-        values = self._validate_assignments(table, command)
+        values, ignored = self._validate_assignments(table, command)
+        self._ignored = ignored
         missing = [
             name for name, column in table.columns.items()
             if column.owner == "actor" and column.required and name not in values
@@ -597,9 +622,13 @@ class Store:
         record = self.find(table.name, command.record_id, actor_id)
         if record is None:
             raise StoreCommandError(f"no live record '{command.record_id}' in '{table.name}'")
-        values = self._validate_assignments(table, command)
+        values, ignored = self._validate_assignments(table, command)
+        self._ignored = ignored
         if not values:
-            raise StoreCommandError("an update must set at least one column")
+            raise StoreCommandError(
+                "an update must set at least one column the actor owns"
+                + (f" ({'; '.join(ignored)})" if ignored else "")
+            )
         record.fields.update(values)
         return record
 
@@ -1268,13 +1297,15 @@ def self_test() -> int:
         "- add widgets: name = Y\n"
     )
     verdicts = [store.apply(c, "eu", 3) for c in commands]
-    check("system column refused", verdicts[0].verdict, "rejected")
-    check("derived column refused", verdicts[1].verdict, "rejected")
+    check("update of a system column alone refused", verdicts[0].verdict, "rejected")
+    check("update of a derived column alone refused", verdicts[1].verdict, "rejected")
     check("unknown id refused", verdicts[2].verdict, "rejected")
     check("missing required refused", verdicts[3].verdict, "rejected")
     check("bad enum refused", verdicts[4].verdict, "rejected")
     check("unknown table refused", verdicts[5].verdict, "rejected")
     check("nothing applied", len(store.live_records("measures")), 2)
+    check("started_turn untouched", store.live_records("measures")[0].fields["started_turn"], 1)
+
 
     # Re-running a turn replaces rather than appends.
     store.begin_turn(4)
@@ -1305,6 +1336,21 @@ def self_test() -> int:
         StoreView(store, "eu").sum("measures", "cost_per_turn"),
     )
     check("counter survives", restored.counters["measures"], store.counters["measures"])
+
+    # A command that names an unwritable column *alongside* the ones the actor
+    # owns keeps its measure. The value is dropped, not the command.
+    store.begin_turn(6)
+    commands, _, _ = parse_store_changes(
+        "## Store changes\n"
+        "- add measures: name = Copied the table; size = large; finish_turn = 9; "
+        "cost_per_turn = 99; started_turn = 4\n"
+    )
+    outcome = store.apply(commands[0], "eu", 6)
+    check("kept despite unwritable columns", outcome.verdict, "applied")
+    check("and said what it dropped", "computed from" in outcome.note, True)
+    added = store.find("measures", outcome.record_id)
+    check("framework's derivation wins", store.value(added, "cost_per_turn"), 3)
+    check("framework's stamp wins", added.fields["started_turn"], 6)
 
     # Schema strictness.
     for label, bad in (
