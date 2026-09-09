@@ -6,6 +6,7 @@ The guiding principle is simple:
 
 - Prioritize improvements that strengthen `run -> inspect -> compare -> iterate`.
 - Treat Mirofish-inspired ideas mainly as improvements to ingest, analysis, visualization, and UX.
+- Open: who holds persistent state. The measure portfolio is restated by the actor each turn and drifts (measured: 4.6% of proposals never enter it, 0.6% of entries vanish, neither with a stated cause), while statements are carried by Python and do not. See [proposals/persistent-state-custody.md](proposals/persistent-state-custody.md).
 - Avoid changes that weaken the pure LLM architecture by moving scenario logic into Python.
 
 ## Pre-release Checklist
