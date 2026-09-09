@@ -368,7 +368,14 @@ def normalize_value(column: StoreColumn, raw: object) -> Any:
         match = _TURN_RE.search(text)
         if not match:
             raise StoreCommandError(f"column '{column.name}' must be a whole number, got '{text}'")
-        return int(match.group(1))
+        value = int(match.group(1))
+        if column.type == "turn" and value < 1:
+            # Turns are 1-indexed. A non-positive one is not a turn, and it
+            # would quietly satisfy every `when_reached` comparison there is.
+            raise StoreCommandError(
+                f"column '{column.name}' must be a turn number of 1 or more, got {value}"
+            )
+        return value
 
     if column.type == "number":
         match = re.search(r"-?\d+(?:\.\d+)?", text)
@@ -645,8 +652,15 @@ _UPDATE_RE = re.compile(
     r"^update\s+(?P<table>[a-z][a-z0-9_]*)\s+(?P<id>[A-Za-z]+\d+)\s*:\s*(?P<body>.+)$",
     re.IGNORECASE,
 )
+# A delete is required to give grounds, so it is written with the reason
+# attached at least as often as on an indented line beneath. Anything after
+# the id is taken as those grounds rather than making the command unreadable
+# -- losing a cancellation to a subordinate clause is the failure this
+# mechanism exists to remove, in miniature.
 _DELETE_RE = re.compile(
-    r"^delete\s+(?P<table>[a-z][a-z0-9_]*)\s+(?P<id>[A-Za-z]+\d+)\s*\.?$", re.IGNORECASE
+    r"^delete\s+(?P<table>[a-z][a-z0-9_]*)\s+(?P<id>[A-Za-z]+\d+)\b"
+    r"(?:\s*[-—:,]?\s*(?:because\s+)?(?P<grounds>.+?))?\s*\.?$",
+    re.IGNORECASE,
 )
 _GROUNDS_RE = re.compile(r"^grounds\s*:\s*(?P<value>.+)$", re.IGNORECASE)
 
@@ -730,7 +744,9 @@ def parse_store_changes(output: str) -> tuple[list[StoreCommand], list[str], boo
         stripped = line.strip()
         if not stripped:
             continue
-        item = re.sub(r"^[-*+]\s+", "", stripped)
+        # Bullets, and numbered lists: actors write "1. add measures: ..." often
+        # enough that treating it as unreadable would lose real commands.
+        item = re.sub(r"^(?:[-*+]|\d{1,3}[.)])\s+", "", stripped)
         item = _strip_code_span(item)
         if not item or item.lower().rstrip(".") in NO_CHANGES_MARKERS:
             continue
@@ -742,6 +758,7 @@ def parse_store_changes(output: str) -> tuple[list[StoreCommand], list[str], boo
             if commands:
                 commands[-1].grounds = grounds.group("value").strip()
             continue
+
 
         parsed = _parse_command_line(item)
         if parsed is None:
@@ -789,6 +806,7 @@ def _parse_command_line(item: str) -> Optional[StoreCommand]:
             kind="delete",
             table=match.group("table").lower(),
             record_id=match.group("id").upper(),
+            grounds=(match.group("grounds") or "").strip(),
             raw=item,
         )
 

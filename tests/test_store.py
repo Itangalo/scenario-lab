@@ -300,6 +300,67 @@ def test_a_no_op_line_does_not_swallow_a_real_command():
     assert malformed  # not silently discarded
 
 
+def test_numbered_lists_are_lists_too():
+    """Actors write "1. add measures: ..." often enough to matter."""
+    for prefix in ("1.", "2)", "10."):
+        commands, malformed, _ = parse_store_changes(
+            f"## Store changes\n{prefix} add measures: name = X; finish_turn = 3\n"
+        )
+        assert malformed == []
+        assert len(commands) == 1
+
+
+@pytest.mark.parametrize(
+    "line,expected",
+    [
+        ("delete measures M1", ""),
+        ("delete measures M1 because the levy was rejected", "the levy was rejected"),
+        ("delete measures M1 — the levy was rejected", "the levy was rejected"),
+        ("delete measures M1: the levy was rejected", "the levy was rejected"),
+    ],
+)
+def test_a_delete_may_carry_its_reason_inline(line: str, expected: str):
+    """A delete must give grounds, so it is written this way as often as not."""
+    commands, malformed, _ = parse_store_changes(f"## Store changes\n- {line}\n")
+    assert malformed == []
+    assert commands[0].kind == "delete"
+    assert commands[0].record_id == "M1"
+    assert commands[0].grounds == expected
+
+
+@pytest.mark.parametrize("value", ["-3", "0"])
+def test_a_turn_column_rejects_a_non_turn(store: Store, value: str):
+    """Turns are 1-indexed, and a non-positive one satisfies every
+    `when_reached` comparison there is."""
+    outcome = apply(
+        store, 1, f"## Store changes\n- add measures: name = X; finish_turn = {value}\n"
+    )[0]
+    assert outcome.verdict == "rejected"
+    assert "turn number of 1 or more" in outcome.reason
+
+
+def test_a_stored_value_is_never_executed_as_a_template(store: Store):
+    """Values are inserted by Jinja, not re-rendered by it.
+
+    The repository already runs a sandboxed environment because of a real
+    template-injection issue, and rendering the rules against the store adds a
+    path from actor-written text into a template context. It is a value path,
+    and this pins it as one.
+    """
+    from jinja2.sandbox import SandboxedEnvironment
+
+    apply(
+        store,
+        1,
+        "## Store changes\n- add measures: name = {{ 7*7 }}; size = small; finish_turn = 4\n",
+    )
+    env = SandboxedEnvironment()
+    rules = env.from_string("{{ store.rows('measures') }}").render(store=StoreView(store, "eu"))
+    prompt = env.from_string("{{ metric_rules }}").render(metric_rules=rules)
+    assert "{{ 7*7 }}" in prompt
+    assert "49" not in prompt
+
+
 def test_unparsable_line_is_recorded_rather_than_dropped():
     commands, malformed, _ = parse_store_changes(
         "## Store changes\n"
