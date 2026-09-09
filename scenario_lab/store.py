@@ -33,7 +33,7 @@ from __future__ import annotations
 import json
 import re
 from dataclasses import dataclass, field
-from typing import Any, Iterable, Optional
+from typing import Any, Optional
 
 # The column owners. This is the load-bearing part of the schema: it is what
 # turns "copied forward unchanged" from an instruction the model obeys by
@@ -462,10 +462,6 @@ class Store:
         if isinstance(source_value, int) and self.current_turn >= source_value:
             return column.when_reached
         return column.otherwise
-
-    def row(self, record: StoreRecord) -> dict[str, Any]:
-        table = self.schema.tables[record.table]
-        return {name: self.value(record, name) for name in table.columns}
 
     # -- mutation --------------------------------------------------------
 
