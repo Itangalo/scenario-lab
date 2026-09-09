@@ -156,7 +156,7 @@ def audit_store(run_dirs: list[Path], actor: str, limit: int) -> dict[str, Any]:
     faults the store artifacts already record.
     """
     turns = missing = rejected = unparsed = applied = 0
-    described_without_command = 0
+    described_without_add = described_without_anything = 0
     examples: list[str] = []
 
     for rd in run_dirs:
@@ -176,18 +176,36 @@ def audit_store(run_dirs: list[Path], actor: str, limit: int) -> dict[str, Any]:
             applied += changes.count("- **applied**")
 
             # A measure argued for in prose but never entered by a command.
-            parsed = parse_actor_turn(rd / f"turn-{t:02d}" / "2-actors" / f"{actor}.md")
-            proposal = parsed.get("new_measure")
-            if words(proposal) and "add measures" not in changes:
-                described_without_command += 1
+            #
+            # Split in two, because the first number is not what it looks
+            # like. The actor is told that broadening a measure already in
+            # flight is not a new measure, and when it follows that
+            # instruction it argues under `## New measure` and issues an
+            # `update`, not an `add`. That is correct behaviour and it lands
+            # in the first count. Only a turn that argued for a measure and
+            # then recorded *nothing at all* is the failure custody does not
+            # reach.
+            prose = (rd / f"turn-{t:02d}" / "2-actors" / f"{actor}.md")
+            parsed = parse_actor_turn(prose)
+            described = parsed.get("new_measure_status") == "named" and (
+                "## New measure" in prose.read_text(encoding="utf-8")
+                if prose.is_file() else False
+            )
+            if described and "add measures" not in changes:
+                described_without_add += 1
+                wrote_nothing = "- **applied**" not in changes
+                if wrote_nothing:
+                    described_without_anything += 1
                 if len(examples) < limit:
-                    examples.append(
-                        f"{rd.name} turn {t}: described but never added: {(proposal or '')[:46]}"
-                    )
+                    label = ("described, nothing recorded" if wrote_nothing
+                             else "described, recorded as a change to an existing measure")
+                    name = parsed.get("new_measure") or ""
+                    examples.append(f"{rd.name} turn {t}: {label}: {name[:44]}")
 
     return {"turns": turns, "missing": missing, "rejected": rejected,
             "unparsed": unparsed, "applied": applied,
-            "described_without_command": described_without_command,
+            "described_without_add": described_without_add,
+            "described_without_anything": described_without_anything,
             "examples": examples}
 
 
@@ -268,10 +286,15 @@ def report_store(r: dict[str, Any], run_count: int, actor: str) -> int:
           f"({pct(r['missing'], r['turns'])})")
     print(f"commands rejected:                           {r['rejected']:5}")
     print(f"lines the parser could not read:             {r['unparsed']:5}")
-    print(f"measures described in prose, never added:    {r['described_without_command']:5}")
-    print("\nEntries cannot be lost from the store, so there is no drift figure here. "
-          "\nThe last three lines are what custody does not reach: they are the case "
-          "\nfor the re-ask hook, not evidence against the store.")
+    print(f"argued under New measure, no `add` issued:   {r['described_without_add']:5}  "
+          f"({pct(r['described_without_add'], r['turns'])})")
+    print(f"  ...of which recorded nothing at all:       {r['described_without_anything']:5}  "
+          f"({pct(r['described_without_anything'], r['turns'])})")
+    print("\nEntries cannot be lost from the store, so there is no drift figure here.")
+    print("The last line is the failure custody does not reach -- a measure argued for")
+    print("and never recorded -- and is the case for the re-ask hook. The line above it")
+    print("is mostly correct behaviour: the actor is told that broadening a measure")
+    print("already in flight is an `update`, not a new measure, and this counts those too.")
     if r["examples"]:
         print("\nexamples:")
         for e in r["examples"]:

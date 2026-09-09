@@ -51,7 +51,7 @@ These are the measures you have in flight. They are **held for you** and carry f
 They cost you {{ store.sum('measures', 'cost_per_turn', status='running') }} political capital this turn, which is the sum of the `cost_per_turn` column above.
 {% if store.count('measures', status='finished') > 0 %}
 
-These have finished. They no longer cost you anything and keep delivering their effect for as long as it is sustained:
+These have finished. From the turn each reached its finishing turn it costs you nothing, and it keeps delivering its effect for as long as it is sustained:
 
 {{ store.rows('measures', status='finished') }}
 {% endif %}

@@ -52,6 +52,8 @@ The "Emerging developments (tracked)" section lists developments that recent tur
 
    **The measures half of that line is given to you.** Rule 6 above prints the portfolio as it now stands and what the measures come to, added up from the rows. Itemise them anyway — the line is what makes the charge checkable — and check that your measure terms come to that same figure. If they do not, you have misread a row, and the rows are right.
 
+   **A measure finishing this turn is not in the charge.** Rule 6 lists what finishes separately, and separately is where it belongs: the turn a measure reaches its finishing turn is the turn it pays out, not a last turn of costing. Adding a finishing measure back into the charge line is the commonest way the line comes to more than rule 6's figure.
+
    **The total at the end of the line is one further step, and it is yours.** The framework does not know which measure you named as the priority, so its figure covers the measures only. The line reads `= (the figure rule 6 gives) + 1 more for the priority`, as a subtraction. With four large measures and a priority, rule 6 says −12 and the line ends `= −13`. Copying rule 6's figure into the total and writing `priority −1` beside it leaves the priority uncharged, which is the commonest way this line goes wrong.
 
 3b. **Then judge the proposal bonus, if this turn's new measure earned one.** A separate, one-off addition to `eu_political_capital` under metric rule 6, paid in the turn a measure is proposed and never again. It does not touch the charge above.

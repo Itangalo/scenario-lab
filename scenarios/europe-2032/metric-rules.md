@@ -43,10 +43,10 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
 
 {{ store.rows('measures', status='running') }}
 
-     **so the measures come to −{{ store.sum('measures', 'cost_per_turn', status='running') }} `eu_political_capital` this turn.** That figure is the `cost_per_turn` column added up, and nothing else: the named priority's −1 below is charged on top of it, and is not in it.
+     **so the measures come to −{{ store.sum('measures', 'cost_per_turn', status='running') }} `eu_political_capital` this turn.** That figure is the `cost_per_turn` column of the rows above, added up, and nothing else: the named priority's −1 below is charged on top of it, and is not in it. **A measure is charged in every turn up to but not including its finishing turn.** It is absent from those rows in the turn it finishes, because it is no longer in flight — that turn it is paid, not charged, under the next line.
    - A named priority: −1 that turn.
    - A measure the Union abandoned or that was publicly defeated this turn — it left the portfolio by an explicit decision, which you will find in the actor's `## Store changes`: −3 to −6
-   - A measure reaching its finishing turn: +2 to +5, once, in that turn. {% if store.count('measures', finish_turn=turn) > 0 %}**Finishing this turn:**
+   - A measure reaching its finishing turn: +2 to +5, once, in that turn. {% if store.count('measures', finish_turn=turn) > 0 %}**Finishing this turn — these are paid, and are deliberately not in the charge above:**
 
 {{ store.rows('measures', finish_turn=turn) }}
 {% else %}Nothing finishes this turn.{% endif %}
@@ -100,7 +100,7 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
       - **The named priority has no effect, and no cost.** Pull-in-by-one-turn does not apply, pushing a measure buys nothing, and the priority's −1 is not charged. Naming a priority changes nothing at all.
     - If `eu_political_capital` is below 12, control slips further:
       - **A new measure may fail to start.** Judge it, roughly one turn in three. A measure that fails to start never enters the portfolio, costs nothing, and may be proposed again in a later turn. Say plainly in the narrative what blocked it — a member state withholding assent, a budget line refused, a legal base contested. The narrative must not announce that a line has been crossed.
-    - A measure is finished when the current turn reaches Y. This happens by itself: the record's status turns to finished, it stops being charged, and it needs no decision from the Union.
+    - A measure is finished when the current turn reaches Y. This happens by itself: the record's status turns to finished, it stops being charged **from that turn**, and it needs no decision from the Union. Turn Y is the first turn it does not cost anything, and the turn it pays out.
       - Apply the full bonus from the measure
     - A measure in flight gives part bonus:
       - A measure yields nothing in the turn it is proposed
