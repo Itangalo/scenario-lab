@@ -142,6 +142,8 @@ What the six fields of an `add` are asking you to judge:
 - `targeted_effect` — which metrics, which direction, roughly how much.
 - `applies_to` — your own jurisdiction, particular member states, the US, China, a coalition, the frontier developers directly.
 
+And when each command is the right one:
+
 - **Adding.** One `add` for the measure you proposed above, and no more than one this turn. The framework gives it an id and stamps the turn it started; you cannot set either.
 - **Moving a finishing turn.** `update` is the only way a finishing turn moves, and rule 10 says what may move it: a named priority may pull it in by one turn, several unprioritised turns may push it out by one, an event may do either and rarely by more than one. Nothing else moves it, and nothing moves it silently.
 - **Dropping a measure.** `delete` is abandonment or public defeat, and it costs you (rule 6). It is not how a measure finishes: a measure that reaches its finishing turn finishes by itself, keeps its record, and stops costing you without any command from you. Never delete a measure because it has finished.
