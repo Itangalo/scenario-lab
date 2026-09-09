@@ -108,6 +108,49 @@ def test_an_actor_cannot_drop_a_record_by_omission(store: Store):
     assert live == {"M1", "M2"}
 
 
+def test_a_delete_may_name_several_records(store: Store):
+    """"delete measures M7, M8" once deleted M7 and kept M8, silently.
+
+    The second id was absorbed into the reason clause, so one record went and
+    the other quietly stayed with no fault recorded anywhere -- this module's
+    own failure mode, reintroduced in its own parser. Seen in a verification
+    run.
+    """
+    add_two(store)
+    outcomes = apply(store, 2, "## Store changes\n- delete measures M1, M2\n")
+    assert [o.verdict for o in outcomes] == ["applied", "applied"]
+    assert store.live_records("measures") == []
+
+
+def test_a_multi_delete_still_separates_ids_from_the_reason(store: Store):
+    add_two(store)
+    outcomes = apply(
+        store, 2, "## Store changes\n- delete measures M1 and M2 — both stalled\n"
+    )
+    assert [o.record_id for o in outcomes] == ["M1", "M2"]
+    assert all(o.grounds == "both stalled" for o in outcomes)
+
+
+def test_a_duplicate_name_is_noted_and_not_refused(store: Store):
+    """Names are not keys, so this is auditing, not gatekeeping.
+
+    A verification run carried the same initiative twice for two turns at full
+    cost, because the actor believed its first attempt had not gone through.
+    Rejecting would be wrong -- a scenario may legitimately want two measures
+    of similar name -- but a reader should see it.
+    """
+    apply(store, 1, "## Store changes\n- add measures: name = Twice; size = small; finish_turn = 9\n")
+    outcome = apply(
+        store, 2, "## Store changes\n- add measures: name = twice; size = large; finish_turn = 9\n"
+    )[0]
+    assert outcome.verdict == "applied"
+    assert "duplicates the name of M1" in outcome.note
+    assert len(store.live_records("measures")) == 2
+
+    text = render_store_file(store, "eu", "EU", 2, [outcome], [], True)
+    assert "Note: duplicates the name of M1" in text
+
+
 def test_removal_requires_an_explicit_command(store: Store):
     add_two(store)
     outcomes = apply(store, 2, "## Store changes\n- delete measures M2\n")

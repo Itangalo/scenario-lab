@@ -1435,6 +1435,9 @@ class Orchestrator:
             rejected = [o for o in outcomes if o.verdict == "rejected"]
             for outcome in rejected:
                 print(f"  ⚠ {actor_id} store command rejected: {outcome.reason}")
+            for outcome in outcomes:
+                if outcome.note:
+                    print(f"  ⚠ {actor_id} store {outcome.record_id}: {outcome.note}")
 
             if self.output_manager:
                 self.output_manager.save_actor_store(

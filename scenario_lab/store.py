@@ -416,6 +416,7 @@ class StoreOutcome:
     reason: str = ""
     record_id: str = ""
     grounds: str = ""
+    note: str = ""        # applied, but worth a reader's attention
 
 
 class Store:
@@ -508,7 +509,40 @@ class Store:
         except StoreCommandError as err:
             return StoreOutcome(command.raw, "rejected", str(err), grounds=command.grounds)
 
-        return StoreOutcome(command.raw, "applied", record_id=record.id, grounds=command.grounds)
+        return StoreOutcome(
+            command.raw, "applied", record_id=record.id, grounds=command.grounds,
+            note=self._note_for(table, command, record, actor_id),
+        )
+
+    def _note_for(
+        self, table: StoreTable, command: "StoreCommand", record: StoreRecord, actor_id: str
+    ) -> str:
+        """Anything applied that a reader should still look at.
+
+        Currently one thing: an `add` whose name already belongs to a live
+        record. Names are not keys and never become keys -- a scenario may
+        legitimately want two measures of similar name -- so this is recorded
+        and not rejected, in the same spirit as the fuzzy matcher that audits
+        history rather than running the system. A run once carried the same
+        initiative twice for two turns, at full cost, because the actor
+        believed its first attempt had not gone through.
+        """
+        if command.kind != "add":
+            return ""
+        name = str(record.fields.get("name", "")).strip().lower()
+        if not name:
+            return ""
+        twins = [
+            other.id for other in self.live_records(table.name, actor_id)
+            if other.id != record.id
+            and str(other.fields.get("name", "")).strip().lower() == name
+        ]
+        if not twins:
+            return ""
+        return (
+            f"duplicates the name of {', '.join(twins)}, which is still live. "
+            "Both are charged."
+        )
 
     def _validate_assignments(self, table: StoreTable, command: "StoreCommand") -> dict[str, Any]:
         values: dict[str, Any] = {}
@@ -665,11 +699,20 @@ _UPDATE_RE = re.compile(
 )
 # A delete is required to give grounds, so it is written with the reason
 # attached at least as often as on an indented line beneath. Anything after
-# the id is taken as those grounds rather than making the command unreadable
+# the ids is taken as those grounds rather than making the command unreadable
 # -- losing a cancellation to a subordinate clause is the failure this
 # mechanism exists to remove, in miniature.
+#
+# Several ids at once, because actors write "delete measures M7, M8" and the
+# earlier single-id form silently took ", M8" as part of the reason: one
+# record deleted, the other quietly kept, no fault recorded anywhere. That is
+# the precise failure this module exists to prevent, reintroduced in its own
+# parser. Only id-shaped tokens are absorbed as ids, so a trailing clause is
+# still read as grounds.
+_ID = r"[A-Za-z]+\d+"
 _DELETE_RE = re.compile(
-    r"^delete\s+(?P<table>[a-z][a-z0-9_]*)\s+(?P<id>[A-Za-z]+\d+)\b"
+    rf"^delete\s+(?P<table>[a-z][a-z0-9_]*)\s+"
+    rf"(?P<ids>{_ID}(?:\s*(?:,|and|&)\s*{_ID})*)\b"
     r"(?:\s*[-—:,]?\s*(?:because\s+)?(?P<grounds>.+?))?\s*\.?$",
     re.IGNORECASE,
 )
@@ -772,30 +815,31 @@ def parse_store_changes(output: str) -> tuple[list[StoreCommand], list[str], boo
 
 
         parsed = _parse_command_line(item)
-        if parsed is None:
+        if not parsed:
             # A continuation of a wrapped Grounds line is not malformed.
             if line.startswith(("  ", "\t")) and commands:
                 continue
             malformed.append(item)
             continue
-        commands.append(parsed)
+        commands.extend(parsed)
 
     return commands, malformed, True
 
 
-def _parse_command_line(item: str) -> Optional[StoreCommand]:
+def _parse_command_line(item: str) -> list[StoreCommand]:
+    """Zero, one, or -- for a multi-id delete -- several commands."""
     match = _ADD_RE.match(item)
     if match:
         try:
             assignments = _split_assignments(match.group("body"))
         except StoreCommandError:
-            return StoreCommand(kind="add", table=match.group("table").lower(), raw=item)
-        return StoreCommand(
+            return [StoreCommand(kind="add", table=match.group("table").lower(), raw=item)]
+        return [StoreCommand(
             kind="add",
             table=match.group("table").lower(),
             assignments=assignments,
             raw=item,
-        )
+        )]
 
     match = _UPDATE_RE.match(item)
     if match:
@@ -803,25 +847,29 @@ def _parse_command_line(item: str) -> Optional[StoreCommand]:
             assignments = _split_assignments(match.group("body"))
         except StoreCommandError:
             assignments = {}
-        return StoreCommand(
+        return [StoreCommand(
             kind="update",
             table=match.group("table").lower(),
             record_id=match.group("id").upper(),
             assignments=assignments,
             raw=item,
-        )
+        )]
 
     match = _DELETE_RE.match(item)
     if match:
-        return StoreCommand(
-            kind="delete",
-            table=match.group("table").lower(),
-            record_id=match.group("id").upper(),
-            grounds=(match.group("grounds") or "").strip(),
-            raw=item,
-        )
+        grounds = (match.group("grounds") or "").strip()
+        return [
+            StoreCommand(
+                kind="delete",
+                table=match.group("table").lower(),
+                record_id=record_id.upper(),
+                grounds=grounds,
+                raw=item,
+            )
+            for record_id in re.findall(_ID, match.group("ids"))
+        ]
 
-    return None
+    return []
 
 
 # --------------------------------------------------------------------------
@@ -991,6 +1039,8 @@ def render_store_file(
         lines.append(head)
         if outcome.grounds:
             lines.append(f"  - Grounds: {outcome.grounds}")
+        if outcome.note:
+            lines.append(f"  - Note: {outcome.note}")
         if outcome.reason:
             lines.append(f"  - Reason: {outcome.reason}")
     for line in malformed:
