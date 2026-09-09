@@ -229,6 +229,7 @@ class Orchestrator:
         registry = ProviderRegistry(
             call_timeout_seconds=config.call_timeout_seconds,
             session_id=f"scenario-lab-{self.random_seed}",
+            reasoning_effort=config.reasoning_effort,
         )
         self._owned_registries.append(registry)
 

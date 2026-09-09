@@ -265,6 +265,21 @@ class LLMConfig:
     max_tokens: int = 2000
     max_tokens_by_task: dict[str, int] = field(default_factory=dict)
 
+    # Reasoning level for models that emit reasoning tokens, passed to
+    # providers that accept it (currently OpenRouter). None omits the field, so
+    # every model stays on its own default and existing scenarios are
+    # unaffected.
+    #
+    # It matters more than its size suggests. A model whose reasoning is
+    # mandatory spends output tokens on it whether or not the step needs
+    # thinking, and reasoning tokens are billed as completion tokens: on one
+    # events-shaped prompt, meta/muse-spark-1.3-contributor ran 1 599 output
+    # tokens at its default effort and 304 at "minimal", which is 4.5x the cost
+    # and 5.5x the wall clock for the same answer. It is also what decides
+    # whether such a model fits llm.max_tokens at all -- at 3000 the events
+    # step exhausted the budget on reasoning and returned nothing parseable.
+    reasoning_effort: Optional[str] = None
+
     # Provider-native structured outputs for the events step.
     #   "auto"  – try structured; on "unsupported" fall back silently to the
     #             legacy parse + format-fix path and remember it for the run.

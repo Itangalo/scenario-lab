@@ -290,3 +290,33 @@ class TestPromptCaching:
             provider = registry.get("openrouter")
             assert provider.session_id == "scenario-lab-999"
             registry.close_all()
+
+    def test_no_reasoning_effort_by_default(self):
+        """Unset must omit the field, so existing scenarios are unaffected."""
+        provider = OpenRouterProvider(api_key="key")
+        assert provider.reasoning_effort is None
+        payload = provider._base_payload("s", "u", model="m", temperature=0, max_tokens=1)
+        assert "reasoning" not in payload
+
+    def test_reasoning_effort_in_payload(self):
+        provider = OpenRouterProvider(api_key="key", reasoning_effort="minimal")
+        payload = provider._base_payload("s", "u", model="m", temperature=0, max_tokens=1)
+        assert payload["reasoning"] == {"effort": "minimal"}
+
+    def test_reasoning_effort_reaches_structured_payload(self):
+        """The events step calls complete_structured; it must carry it too."""
+        provider = OpenRouterProvider(api_key="key", reasoning_effort="low")
+        payload = provider._base_payload("s", "u", model="m", temperature=0, max_tokens=1)
+        payload["response_format"] = {"type": "json_schema"}
+        assert payload["reasoning"] == {"effort": "low"}
+
+    def test_registry_threads_reasoning_effort(self):
+        import os
+
+        from scenario_lab.providers.registry import ProviderRegistry
+
+        with patch.dict(os.environ, {"OPENROUTER_API_KEY": "k"}):
+            registry = ProviderRegistry(reasoning_effort="minimal")
+            provider = registry.get("openrouter")
+            assert provider.reasoning_effort == "minimal"
+            registry.close_all()

@@ -32,6 +32,7 @@ class OpenRouterProvider(LLMProvider):
         api_key: Optional[str] = None,
         call_timeout_seconds: int = DEFAULT_CALL_TIMEOUT_SECONDS,
         session_id: Optional[str] = None,
+        reasoning_effort: Optional[str] = None,
     ) -> None:
         self.api_key = api_key or os.environ.get("OPENROUTER_API_KEY")
         if not self.api_key:
@@ -43,6 +44,10 @@ class OpenRouterProvider(LLMProvider):
         # to one provider endpoint so prompt caches stay warm. Falls back to
         # OPENROUTER_SESSION_ID when not passed explicitly.
         self.session_id = session_id or os.environ.get("OPENROUTER_SESSION_ID")
+        # Reasoning effort for models that emit reasoning tokens. None omits
+        # the field entirely, which leaves every existing scenario on the
+        # model's own default and keeps this change inert until asked for.
+        self.reasoning_effort = reasoning_effort
         # Per-operation timeouts still apply as a first line of defence; the
         # wall-clock deadline in _post_with_deadline is what actually bounds a
         # call, since httpx resets its read timeout on every received chunk.
@@ -213,6 +218,12 @@ class OpenRouterProvider(LLMProvider):
         for others (e.g. OpenAI explicit breakpoints); routes without caching
         ignore the hint. ``session_id`` pins sticky routing so a run's
         requests land on the same provider endpoint and the cache stays warm.
+
+        ``reasoning_effort`` is sent only when the scenario sets it. Models
+        that must reason spend output tokens on it whether or not the step
+        needs thinking, and reasoning tokens bill as completion tokens, so the
+        effort level moves both cost and wall clock by several times on the
+        same prompt. Models that do not reason ignore the field.
         """
         payload: dict = {
             "model": model,
@@ -234,6 +245,8 @@ class OpenRouterProvider(LLMProvider):
         }
         if self.session_id:
             payload["session_id"] = self.session_id
+        if self.reasoning_effort:
+            payload["reasoning"] = {"effort": self.reasoning_effort}
         return payload
 
     @staticmethod

@@ -165,6 +165,7 @@ llm:
   max_tokens: 2000
   max_tokens_by_task:
     rules: 3000
+  reasoning_effort: minimal    # optional; only for models that reason
 ```
 
 Model values can be:
@@ -178,6 +179,7 @@ Validation rules:
 - model strings must use `provider/model` format
 - `temperature` must be in `[0, 2]`
 - `max_tokens` and `max_tokens_by_task[*]` must be integers in `[100, 100000]`
+- `reasoning_effort` is optional and lower-cased at load time; it is not checked against a list of levels, because each provider names its own and an unrecognised value is the provider's error to report. Omit it unless a configured model emits reasoning tokens: a model whose reasoning is mandatory bills its thinking as completion tokens and can exhaust `max_tokens` before writing anything, so this setting decides both what a run costs and whether it completes at all
 - `max_tokens_by_task` keys must be one of:
   - `events`, `actors`, `rules`, `metrics`, `summary`, `analysis`, `synthesis`, `referee`
 - `probability_samples` must be an integer in `[1, 10]`

@@ -4,6 +4,24 @@ Accumulated findings from running Scenario Lab scenarios with different LLMs. Us
 
 Pricing should still be verified against OpenRouter before trusting older logged cost figures — newer runs use a cached OpenRouter pricing snapshot, but historical runs may reflect outdated pricing data.
 
+## Reasoning models: set `llm.reasoning_effort` before judging one
+
+Since 2026-09-09 `llm.reasoning_effort` is passed to OpenRouter as `reasoning: {"effort": …}`. Unset omits the field, so every assessment below predates it and measured its model at whatever effort that model defaults to.
+
+This matters when reading any entry here about a reasoning model, because the setting moves cost and speed by several times and the default is rarely the right choice for simulation steps. Measured on one events-shaped prompt, mean of three calls each:
+
+| | wall/call | completion tokens | cost/call | vs qwen3-235b |
+|---|---|---|---|---|
+| `qwen/qwen3-235b-a22b-2507` | 6.4s | 147 | $0.000158 | – |
+| `meta/muse-spark-1.3-contributor`, default (`medium`) | 18.2s | 1 599 | $0.000332 | 2.10x cost, 2.86x time |
+| the same at `low` | 8.4s | 841 | $0.000180 | 1.14x cost, 1.32x time |
+| the same at `minimal` | 3.3s | 304 | $0.000073 | **0.46x cost, 0.51x time** |
+
+Two practical consequences:
+
+- **A verdict of "too expensive" or "too slow" on a reasoning model is provisional until the effort level is stated.** One parameter moved this model from clearly worse than the incumbent on both axes to roughly half of each.
+- **Reasoning also decides whether a model fits `llm.max_tokens` at all.** `meta/muse-spark-1.3-contributor` at europe-2032's declared 3 000 exhausted the entire budget on reasoning in the events step and returned nothing parseable. This is the same failure that is recorded as a crash for `minimax/minimax-m3` below, and it is a configuration problem rather than a property of the model. Raise the budget, lower the effort, or both – then re-test.
+
 **Model availability changes without warning.** As of 2026-08-21, two of the three previously recommended models – `x-ai/grok-4.1-fast` and `google/gemini-2.0-flash-001` – have been removed from the OpenRouter catalogue and return HTTP 404. `x-ai/grok-4.1-fast` was still configured in six scenarios and was the library default for the `summary`, `analysis`, and `referee` tasks, so those scenarios could not run at all until reconfigured. `audit-models` does not catch this: it checks name patterns and snapshot age, never whether the model still exists. Verify availability against the pricing cache before a batch, not after.
 
 ## ⚠️ ai-safety-race Results Before 2026-08-21 Are Unreliable

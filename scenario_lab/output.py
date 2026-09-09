@@ -592,6 +592,10 @@ class OutputManager:
                 "max_tokens_by_task": self.scenario.config.llm.max_tokens_by_task,
                 "probability_samples": self.scenario.config.llm.probability_samples,
                 "call_timeout_seconds": self.scenario.config.llm.call_timeout_seconds,
+                # Recorded because it changes what a run cost and how long it
+                # took by several times on a reasoning model, so a batch that
+                # does not carry it cannot be compared against any other.
+                "reasoning_effort": self.scenario.config.llm.reasoning_effort,
                 "model_limits": {
                     key: {
                         field: value

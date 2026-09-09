@@ -767,6 +767,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
                     "structured_outputs": base_config.llm.structured_outputs,
                     "probability_samples": base_config.llm.probability_samples,
                     "call_timeout_seconds": base_config.llm.call_timeout_seconds,
+                    "reasoning_effort": base_config.llm.reasoning_effort,
                     "model_limits": {
                         key: {
                             field: value
@@ -818,6 +819,9 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
     _structured = _normalize_structured(llm_data.get("structured_outputs", "auto"))
     _probability_samples = llm_data.get("probability_samples", 1)
     _call_timeout = llm_data.get("call_timeout_seconds", 300)
+    _reasoning_effort = llm_data.get("reasoning_effort")
+    if _reasoning_effort is not None:
+        _reasoning_effort = str(_reasoning_effort).strip().lower() or None
     _model_limits = parse_model_limits(llm_data.get("model_limits"))
 
     # Support both old format (single model) and new format (per-task models)
@@ -838,6 +842,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
             structured_outputs=_structured,
             probability_samples=_probability_samples,
             call_timeout_seconds=_call_timeout,
+            reasoning_effort=_reasoning_effort,
             model_limits=_model_limits,
         )
     else:
@@ -858,6 +863,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
             structured_outputs=_structured,
             probability_samples=_probability_samples,
             call_timeout_seconds=_call_timeout,
+            reasoning_effort=_reasoning_effort,
             model_limits=_model_limits,
         )
 

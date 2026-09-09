@@ -66,6 +66,8 @@ Models are specified in `scenario.yaml` as `provider:model`, for example `openro
 
 The events step can use provider-native structured outputs via `llm.structured_outputs` in `scenario.yaml` (`auto` | `true` | `false`, default `auto`). With `auto`, models that support structured output return schema-validated event JSON directly; unsupported models fall back automatically to the regular JSON parsing path. Use `true` to require structured output (hard error if unsupported) or `false` to disable it.
 
+If you run a model that emits reasoning tokens, set `llm.reasoning_effort` in `scenario.yaml` (for example `minimal`) — it is passed straight to OpenRouter. Leaving it unset keeps each model on its own default, which is usually the wrong choice for simulation steps: reasoning bills as completion tokens, so the effort level can change a run's cost and wall clock several times over, and a model whose reasoning is mandatory can spend the whole of `llm.max_tokens` thinking and return nothing parseable. See [docs/MODEL_TESTING.md](docs/MODEL_TESTING.md) for measured figures.
+
 Two optional settings improve how well the event step models genuine uncertainty:
 
 - `emergent_events.enabled: true` lets the Game Master propose novel exogenous events that are not listed in `events.md` (capped in number and probability per turn) – the mechanism for exploring futures the scenario author did not enumerate. Proposals are fully recorded in `1-event-evaluations.json` with `"emergent": true`.

@@ -14,6 +14,7 @@ class ProviderRegistry:
         self,
         call_timeout_seconds: int | None = None,
         session_id: str | None = None,
+        reasoning_effort: str | None = None,
     ) -> None:
         """
         Args:
@@ -22,10 +23,14 @@ class ProviderRegistry:
             session_id: Sticky-routing key handed to providers that support
                 it (currently OpenRouter). Pins a run's requests to one
                 provider endpoint so prompt caches stay warm.
+            reasoning_effort: Reasoning level handed to providers that
+                support it (currently OpenRouter). None omits the field,
+                leaving each model on its own default.
         """
         self._providers: dict[str, LLMProvider] = {}
         self._call_timeout_seconds = call_timeout_seconds
         self._session_id = session_id
+        self._reasoning_effort = reasoning_effort
 
     def register(self, provider: LLMProvider) -> None:
         """Register a provider instance."""
@@ -52,6 +57,8 @@ class ProviderRegistry:
                 kwargs["call_timeout_seconds"] = self._call_timeout_seconds
             if self._session_id is not None:
                 kwargs["session_id"] = self._session_id
+            if self._reasoning_effort is not None:
+                kwargs["reasoning_effort"] = self._reasoning_effort
             return OpenRouterProvider(**kwargs)
         if name == "anthropic":
             from .anthropic import AnthropicProvider
