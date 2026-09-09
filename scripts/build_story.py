@@ -50,6 +50,9 @@ def blocks(text: str) -> list[tuple[str, str]]:
         block = block.strip()
         if not block:
             continue
+        if re.fullmatch(r"(?:-{3,}|\*{3,}|_{3,})", block):
+            out.append(("hr", "<hr>"))
+            continue
         heading = re.match(r"^(#{1,3})\s+(.*)$", block)
         if heading:
             level = len(heading.group(1))
@@ -215,6 +218,9 @@ HEAD = """<title>Europe 2032</title>
   --accent-soft: #16302f; --up: #6fbb92; --down: #d98771;
 }
 * { box-sizing: border-box; }
+/* `.layout` sets `display: grid`, which would beat the user-agent rule for
+   `hidden` and leave the inactive tab panel on screen. */
+[hidden] { display: none !important; }
 body {
   margin: 0; background: var(--ground); color: var(--ink);
   font-family: Spectral, Georgia, "Times New Roman", serif;
@@ -222,10 +228,35 @@ body {
 }
 .wrap { max-width: 72rem; margin: 0 auto; padding: 0 1.5rem 5rem; }
 header.masthead {
-  border-bottom: 1px solid var(--rule); margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--rule);
   padding: 2.25rem 0 1.1rem; display: flex; flex-wrap: wrap;
   align-items: baseline; gap: 0.6rem 1.25rem;
 }
+/* Two tellings of the same material, side by side under the masthead. */
+.tabs { display: flex; flex-wrap: wrap; gap: 0.35rem; padding-top: 0.9rem; margin-bottom: 2.5rem; }
+.tab {
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase;
+  background: transparent; color: var(--muted);
+  border: 1px solid transparent; border-radius: 2px;
+  padding: 0.5rem 0.9rem; cursor: pointer;
+}
+.tab:hover { color: var(--accent); }
+.tab[aria-selected="true"] {
+  color: var(--accent); background: var(--surface); border-color: var(--rule);
+}
+.tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* The alternative telling is linear, so there is no half-year to report and
+   no panel to report it in. It keeps the reading column and nothing else. */
+.altview:focus { outline: none; }
+.altview article h2 { margin-top: 0; }
+.altview article h3 {
+  color: var(--accent); font-size: 1.15rem; margin: 2.6rem 0 0.7rem;
+}
+.altview article hr {
+  border: 0; border-top: 1px solid var(--rule); margin: 3.5rem 0;
+}
+body[data-view="alt"] .restart.floating { display: none; }
 .masthead h1 {
   font-family: Newsreader, Georgia, serif; font-weight: 600;
   font-size: 1.5rem; letter-spacing: -0.01em; margin: 0;
@@ -427,8 +458,14 @@ BODY = """
     <h1>Europe 2032</h1>
     <span class="sub">A simulated decision &middot; 2026&ndash;2032</span>
   </header>
+  <div class="tabs" role="tablist" aria-label="Two tellings of the same material">
+    <button class="tab" type="button" id="tab-story" role="tab" data-view="story"
+            aria-controls="view-story" aria-selected="true" tabindex="0">The story</button>
+    <button class="tab" type="button" id="tab-alt" role="tab" data-view="alt"
+            aria-controls="view-alt" aria-selected="false" tabindex="-1">Straight through</button>
+  </div>
   <button class="js-restart restart floating" type="button">Start over</button>
-  <div class="layout">
+  <div class="layout" id="view-story" role="tabpanel" aria-labelledby="tab-story">
     <main id="stream"></main>
     <aside>
       <button class="js-restart restart" type="button">Start over</button>
@@ -442,6 +479,10 @@ BODY = """
       </section>
       <div class="rail" id="rail" aria-hidden="true"></div>
     </aside>
+  </div>
+  <div class="altview" id="view-alt" role="tabpanel" aria-labelledby="tab-alt" tabindex="0" hidden>
+    <div class="note preamble">__ALTINTRO__</div>
+    <article>__ALT__</article>
   </div>
   __SITEFOOTER__
 </div>
@@ -715,6 +756,44 @@ document.addEventListener("click", e => {
   if (e.target.closest(".js-restart")) startOver();
 });
 
+// Tabs. Switching views only toggles which panel is shown — the interactive
+// story keeps its chapters, its choices and the reader's scroll position, so
+// coming back lands where they left.
+const TABS = Array.from(document.querySelectorAll('[role="tab"]'));
+const SCROLL_AT = { story: 0, alt: 0 };
+let view = "story";
+
+function showView(next) {
+  if (next === view || !SCROLL_AT.hasOwnProperty(next)) return;
+  SCROLL_AT[view] = window.scrollY;
+  view = next;
+  TABS.forEach(t => {
+    const on = t.dataset.view === next;
+    t.setAttribute("aria-selected", on ? "true" : "false");
+    t.tabIndex = on ? 0 : -1;
+    const panel = document.getElementById(t.getAttribute("aria-controls"));
+    if (panel) panel.hidden = !on;
+  });
+  document.body.dataset.view = next;
+  window.scrollTo({ top: SCROLL_AT[next], behavior: "instant" });
+}
+
+TABS.forEach((tab, i) => {
+  tab.addEventListener("click", () => showView(tab.dataset.view));
+  tab.addEventListener("keydown", e => {
+    let j = null;
+    if (e.key === "ArrowRight" || e.key === "ArrowDown") j = (i + 1) % TABS.length;
+    else if (e.key === "ArrowLeft" || e.key === "ArrowUp") j = (i - 1 + TABS.length) % TABS.length;
+    else if (e.key === "Home") j = 0;
+    else if (e.key === "End") j = TABS.length - 1;
+    if (j === null) return;
+    e.preventDefault();
+    showView(TABS[j].dataset.view);
+    TABS[j].focus();
+  });
+});
+document.body.dataset.view = "story";
+
 buildDials();
 reset();
 </script>
@@ -736,6 +815,25 @@ def dial_tips(path: Path) -> dict[str, str]:
         if paragraph:
             out[head.strip()] = re.sub(r"\s+", " ", paragraph)
     return out
+
+
+def alt_reading(path: Path) -> str:
+    """The alternative telling, with the internal notes around it left behind.
+
+    `experiments/merged-blocks-casual.md` is a working document: it opens with
+    framing written for the team and closes with an assessment section, and
+    neither is for a reader. Only the two read-throughs between them are
+    published, so the extraction is anchored on those two landmarks rather than
+    on line numbers the drafting will move.
+    """
+    text = path.read_text(encoding="utf-8")
+    start = re.search(r"^#\s+Path one\b.*$", text, re.M)
+    if not start:
+        return ""
+    end = re.search(r"^##\s+Notes for assessment\b.*$", text, re.M)
+    body = text[start.start():end.start() if end else len(text)].rstrip()
+    body = re.sub(r"\n\s*(?:-{3,}|\*{3,}|_{3,})\s*$", "", body)
+    return markdown(body)
 
 
 SITE_FOOTER = """<footer class="site">
@@ -818,6 +916,12 @@ def main() -> int:
     postamble_path = story_dir / "postamble.md"
     postamble = markdown(postamble_path.read_text(encoding="utf-8")) \
         if postamble_path.is_file() else ""
+    experiments = story_dir / "experiments"
+    alt_intro_path = experiments / "alt-intro.md"
+    alt_intro = markdown(alt_intro_path.read_text(encoding="utf-8")) \
+        if alt_intro_path.is_file() else ""
+    alt_path = experiments / "merged-blocks-casual.md"
+    alt = alt_reading(alt_path) if alt_path.is_file() else ""
     payload = build_payload(nodes)
     start = opaque("turn-01")
     if start not in payload:
@@ -828,6 +932,8 @@ def main() -> int:
     body = body.replace("__PREAMBLE__", json.dumps(preamble))
     body = body.replace("__POSTAMBLE__", json.dumps(postamble))
     body = body.replace("__TIPS__", json.dumps(tips, ensure_ascii=False))
+    body = body.replace("__ALTINTRO__", alt_intro, 1)
+    body = body.replace("__ALT__", alt, 1)
     out = args.out or (args.scenario / "story.html")
     page = standalone(HEAD, body) if args.standalone else HEAD + body.replace(
         "__SITEFOOTER__", "", 1)
