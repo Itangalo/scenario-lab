@@ -55,6 +55,7 @@ Re-test candidates against the fixed prompt before trusting any comparison below
 | nvidia/nemotron-3-ultra-550b-a55b:free | $0 | $0 | 2/3 approved before crash | Avoid (free tier drops responses) |
 | deepseek/deepseek-v4-flash-0731 | $0.065 | $0.18 | 6/10 turns violated on first attempt, 2/10 left unresolved (ai-safety-race, **fixed prompt**, 10 turns) | Avoid for unattended work – never crashes, but 565s/turn and the referee cannot keep it in bounds |
 | minimax/minimax-m3 | $0.23 | $0.96 | 3/3 approved, then crashed turn 4 | Avoid (reasoning budget exhaustion) |
+| meta/muse-spark-1.3-contributor | $0.10 | $0.20 | 1.0 violation-turns/run, 0.3 unresolved (europe-2032, 3 runs, 13 turns, `reasoning_effort: minimal`) | **Promising, not drop-in** – 2.3x faster and far better at arithmetic than qwen, but 20% dearer per run and its output format breaks `parse_actor_turn` |
 | z-ai/glm-4.7-flash | $0.06 | $0.40 | 2/2 approved, 661s/turn | Avoid (far too slow) |
 | stealth/ox-alpha | free | free | **0/10 turns** (ai-safety-race, fixed prompt); 0 unresolved in 5 government-formation runs | **Use for synthesis only** – cleanest output tested, but 5 of 12 batch jobs completed and 15.6 min/turn |
 
@@ -378,3 +379,39 @@ The sweep exposed a further bug, now fixed. `validate_llm_config` predated the `
 
 - google/gemma-4-26b-a4b-it (non-reasoning, $0.05/$0.25 – the most promising untested budget candidate)
 - meta-llama/llama-3.3-70b-instruct
+
+---
+
+### meta/muse-spark-1.3-contributor
+
+**Tested on:** europe-2032, verification-bounded variant (3 runs, 13 turns, 2026-09-09, `reasoning_effort: minimal`, `max_tokens: 16000`, seeds 771001-3) against 3 qwen runs on the **same seeds**, so both cohorts saw identical dice and the model was the only variable. Tagged `batch=benchmark-muse-20260909`; harness in `scenarios/europe-2032/benchmark-20260909/`.
+
+**Reasoning is mandatory on this model, and the effort level decides everything.** See the section at the top of this file. At its default effort it is 2.10x qwen's cost and 2.86x its wall clock; at `minimal` it is 0.46x and 0.51x on a single prompt. Everything below is at `minimal`. **At `max_tokens: 3000` it does not run at all** – the events step spends the whole budget on reasoning and returns nothing parseable.
+
+| | qwen3-235b | muse @ minimal |
+|---|---|---|
+| cost per 13-turn run | **$0.0701** | $0.0838 |
+| wall clock per turn | 152s | **65s** |
+| completion tokens per run | 58 579 | 130 164 |
+| turns where the referee objected | 8.0 | **1.0** |
+| turns it could not resolve | 2.3 | **0.3** |
+| referee iterations per run | 28.0 | **15.0** |
+
+Wall clock is contended – all six runs were concurrent – but both cohorts were contended equally, so the ratio holds and the absolute figures are inflated for both.
+
+**Cost went the wrong way despite the cheaper tokens.** muse is 2.2x cheaper on input and 4.4x on output, and still costs 20% more per run, because even at minimal effort it spends 2.2x the completion tokens. The per-call microbenchmark at the top of this file overstates the saving on real prompts, where the prompt side is large and cached.
+
+**The quality result is better than the violation counts alone can establish, because the referee was also muse.** `--model` overrides every task, and a less critical referee produces exactly this table. Two referee-independent instruments were used to settle it:
+
+- **`check_sovereignty.py`** reads the notepad's accounting line against the value actually written to the metrics JSON. No referee involved. muse: terms sum to the stated total in **37/37 turns (100%)**, and the total is applied in 35/36 (97%). qwen on the same seeds: **14/38 (37%)** and 28/36 (78%). qwen also revises its own total after reaching it in 38% of turns and writes rule 5's decay term where it is not charging it in 49%; muse does neither, in any turn. The qwen figures are consistent with this file's own history (51% arithmetic, 82% binding); muse's are better than anything recorded here.
+- **Out-of-bounds clamping**, which Python detects with no model in the loop: one qwen run logged **23** clampings (proposing negative political capital, and narrating "fell to -12.0" while its metrics said 0.0), then hit `max_attempts_reached` on turn 13 and exited without writing `costs.json`. The other five runs logged zero.
+
+So the arithmetic advantage is real and is not an artefact of a lenient referee. This is the interesting finding: minimal reasoning did **not** degrade the mechanical faculties, it improved them.
+
+**Where muse loses, and it is not visible in any metric above.** It writes the new measure's name as a `###` sub-heading under `## New measure`, where every other tested model writes it in bold on the following line. `section()` in `build_dashboard.py` stops at the next heading of any level, so the captured body is empty and `parse_actor_turn` returns `new_measure = None` for **all 13 turns of all three runs**. That silently defeats every instrument built on that parser: `check_ledger.py` reported "proposed measures: 0" for the cohort, which reads like a perfect score and is a total parse failure. Anything downstream of `parse_actor_turn` – the dashboard included – is blind to what this model proposed.
+
+This is fixable from either end (tighten the format contract in the actor prompt, or widen `section()` to treat `###` as content rather than a boundary), but until it is, ledger and dashboard figures for this model are meaningless rather than good.
+
+**One behavioural difference worth knowing before comparing runs.** muse declines to propose a measure on many turns, and says why – "None this turn, while we let three lines finish and stop their capital burn". That is defensible reasoning about the rule 6 charge rather than a failure, but it means materially fewer measures per run than qwen, so a muse cohort and a qwen cohort are not interchangeable as simulation output even when both complete.
+
+**Verdict:** Promising and worth pursuing for the speed, which is the axis that actually constrains batch work. Not a drop-in replacement: it costs more per run, its output format breaks the existing parsers, and the referee confound is only partly retired – a split configuration (muse for events/actors/metrics, qwen as referee) has not been tested and is the obvious next experiment.
