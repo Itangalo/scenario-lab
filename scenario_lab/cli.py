@@ -1121,10 +1121,6 @@ def main():
         help="Where to write samples (default: <run>/turn-NN/actor-samples/)",
     )
 
-    # Visualize command
-    viz_parser = subparsers.add_parser("visualize", help="Generate charts for a run")
-    viz_parser.add_argument("run_dir", type=Path, help="Path to run directory (e.g. scenarios/x/runs/run-123)")
-
     # Costs command
     costs_parser = subparsers.add_parser("costs", help="Display cost report for a run")
     costs_parser.add_argument("run_dir", type=Path, help="Path to run directory")
@@ -1400,19 +1396,6 @@ def main():
         args.command = "run"
     elif args.command is None:
         parser.print_help()
-        return
-
-    if args.command == "visualize":
-        try:
-            # Import here to avoid dependency requirement for basic runs if plotly missing
-            from .visualizer import create_visualization
-            print(f"Generating visualization for: {args.run_dir}")
-            output_path = create_visualization(args.run_dir)
-            print(f"✅ Visualization saved to: {output_path}")
-        except ImportError:
-            print("❌ Error: 'plotly' not installed. Run 'pip install plotly' to use this feature.")
-        except Exception as e:
-            print(f"❌ Error generating visualization: {e}")
         return
 
     if args.command == "batch-run":

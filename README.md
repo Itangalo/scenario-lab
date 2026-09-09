@@ -368,14 +368,6 @@ python -m scenario_lab.cli audit-models scenarios/sweden-ai-2030 --json
 
 This helps catch stale or poor model choices before they quietly affect run quality or cost.
 
-### Generate a visualization
-
-```bash
-python -m scenario_lab.cli visualize scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHMMSS
-```
-
-This command requires `plotly`.
-
 ## What a Run Produces
 
 Each run is saved in a timestamped directory:

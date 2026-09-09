@@ -556,7 +556,7 @@ Cost so far: $0.15 | Projected total: $0.50
 
 ### CLI (`cli.py`)
 - **Entry Point:** `python -m scenario_lab.cli`.
-- **Commands:** `run`, `batch-run`, `batch-resume`, `resume`, `branch`, `validate`, `describe`, `audit-models`, `visualize`, `costs`, `estimate`, `refresh-pricing`, `calibrate`, `ensemble`, `model-sensitivity`, `causal-impact`, `compare-runs`, `check-run-integrity`, `check-regressions`, `compare-distributions`, `quality-check`, `analyze`
+- **Commands:** `run`, `batch-run`, `batch-resume`, `resume`, `branch`, `validate`, `describe`, `audit-models`, `costs`, `estimate`, `refresh-pricing`, `calibrate`, `ensemble`, `model-sensitivity`, `causal-impact`, `compare-runs`, `check-run-integrity`, `check-regressions`, `compare-distributions`, `quality-check`, `analyze`
 - **Overrides:** Supports `--override key=value` to modify configuration at runtime (e.g., `--override output_language=Spanish`).
 - **Validation:** Supports `--validate` flag to validate scenarios before running
 - **Model Preflight:** `run` performs model hygiene checks by default and can be bypassed with `--skip-model-checks`
