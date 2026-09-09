@@ -232,7 +232,7 @@ header.masthead {
   padding: 2.25rem 0 1.1rem; display: flex; flex-wrap: wrap;
   align-items: baseline; gap: 0.6rem 1.25rem;
 }
-/* Two tellings of the same material, side by side under the masthead. */
+/* The tellings of the same material, side by side under the masthead. */
 .tabs { display: flex; flex-wrap: wrap; gap: 0.35rem; padding-top: 0.9rem; margin-bottom: 2.5rem; }
 .tab {
   font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
@@ -256,7 +256,7 @@ header.masthead {
 .altview article hr {
   border: 0; border-top: 1px solid var(--rule); margin: 3.5rem 0;
 }
-body[data-view="alt"] .restart.floating { display: none; }
+body:not([data-view="story"]) .restart.floating { display: none; }
 .masthead h1 {
   font-family: Newsreader, Georgia, serif; font-weight: 600;
   font-size: 1.5rem; letter-spacing: -0.01em; margin: 0;
@@ -458,11 +458,10 @@ BODY = """
     <h1>Europe 2032</h1>
     <span class="sub">A simulated decision &middot; 2026&ndash;2032</span>
   </header>
-  <div class="tabs" role="tablist" aria-label="Two tellings of the same material">
+  <div class="tabs" role="tablist" aria-label="Tellings of the same material">
     <button class="tab" type="button" id="tab-story" role="tab" data-view="story"
             aria-controls="view-story" aria-selected="true" tabindex="0">The story</button>
-    <button class="tab" type="button" id="tab-alt" role="tab" data-view="alt"
-            aria-controls="view-alt" aria-selected="false" tabindex="-1">Straight through</button>
+__TABS__
   </div>
   <button class="js-restart restart floating" type="button">Start over</button>
   <div class="layout" id="view-story" role="tabpanel" aria-labelledby="tab-story">
@@ -480,10 +479,7 @@ BODY = """
       <div class="rail" id="rail" aria-hidden="true"></div>
     </aside>
   </div>
-  <div class="altview" id="view-alt" role="tabpanel" aria-labelledby="tab-alt" tabindex="0" hidden>
-    <div class="note preamble">__ALTINTRO__</div>
-    <article>__ALT__</article>
-  </div>
+__ALTPANELS__
   __SITEFOOTER__
 </div>
 <script>
@@ -758,24 +754,35 @@ document.addEventListener("click", e => {
 
 // Tabs. Switching views only toggles which panel is shown — the interactive
 // story keeps its chapters, its choices and the reader's scroll position, so
-// coming back lands where they left.
+// coming back lands where they left. A view's name is also its URL fragment,
+// so any tab can be linked to directly; the fragment is the only thing this
+// page uses the hash for.
 const TABS = Array.from(document.querySelectorAll('[role="tab"]'));
-const SCROLL_AT = { story: 0, alt: 0 };
+const SCROLL_AT = Object.fromEntries(TABS.map(t => [t.dataset.view, 0]));
 let view = "story";
 
-function showView(next) {
-  if (next === view || !SCROLL_AT.hasOwnProperty(next)) return;
-  SCROLL_AT[view] = window.scrollY;
-  view = next;
-  TABS.forEach(t => {
-    const on = t.dataset.view === next;
-    t.setAttribute("aria-selected", on ? "true" : "false");
-    t.tabIndex = on ? 0 : -1;
-    const panel = document.getElementById(t.getAttribute("aria-controls"));
-    if (panel) panel.hidden = !on;
-  });
-  document.body.dataset.view = next;
-  window.scrollTo({ top: SCROLL_AT[next], behavior: "instant" });
+function showView(next, fromHash) {
+  if (!SCROLL_AT.hasOwnProperty(next)) return;
+  if (next !== view) {
+    SCROLL_AT[view] = window.scrollY;
+    view = next;
+    TABS.forEach(t => {
+      const on = t.dataset.view === next;
+      t.setAttribute("aria-selected", on ? "true" : "false");
+      t.tabIndex = on ? 0 : -1;
+      const panel = document.getElementById(t.getAttribute("aria-controls"));
+      if (panel) panel.hidden = !on;
+    });
+    document.body.dataset.view = next;
+    window.scrollTo({ top: SCROLL_AT[next], behavior: "instant" });
+  }
+  if (fromHash) return;
+  // replaceState, not pushState: a reader flicking between tellings should not
+  // have to press back once per click to leave the page.
+  const url = next === "story"
+    ? location.pathname + location.search
+    : location.pathname + location.search + "#" + next;
+  history.replaceState(null, "", url);
 }
 
 TABS.forEach((tab, i) => {
@@ -793,6 +800,10 @@ TABS.forEach((tab, i) => {
   });
 });
 document.body.dataset.view = "story";
+
+// An unknown or absent fragment leaves the reader in the interactive story.
+window.addEventListener("hashchange", () => showView(location.hash.slice(1), true));
+showView(location.hash.slice(1), true);
 
 buildDials();
 reset();
@@ -820,11 +831,11 @@ def dial_tips(path: Path) -> dict[str, str]:
 def alt_reading(path: Path) -> str:
     """The alternative telling, with the internal notes around it left behind.
 
-    `experiments/merged-blocks-casual.md` is a working document: it opens with
-    framing written for the team and closes with an assessment section, and
-    neither is for a reader. Only the two read-throughs between them are
-    published, so the extraction is anchored on those two landmarks rather than
-    on line numbers the drafting will move.
+    Each file under `experiments/` is a working document: it opens with framing
+    written for the team and closes with an assessment section, and neither is
+    for a reader. Only the two read-throughs between them are published, so the
+    extraction is anchored on those two landmarks rather than on line numbers
+    the drafting will move. Every telling in `ALT_TELLINGS` is read this way.
     """
     text = path.read_text(encoding="utf-8")
     start = re.search(r"^#\s+Path one\b.*$", text, re.M)
@@ -834,6 +845,45 @@ def alt_reading(path: Path) -> str:
     body = text[start.start():end.start() if end else len(text)].rstrip()
     body = re.sub(r"\n\s*(?:-{3,}|\*{3,}|_{3,})\s*$", "", body)
     return markdown(body)
+
+
+# The alternative tellings, in tab order. A telling whose source file is absent
+# simply does not get a tab, so the page still builds from a partial checkout.
+# `view` is the tab's URL fragment as well as its id, so #straight-through and
+# #tight are the deep links.
+ALT_TELLINGS = [
+    {"view": "straight-through", "label": "Straight through",
+     "source": "merged-blocks-casual.md", "intro": "alt-intro.md"},
+    {"view": "tight", "label": "Tighter cut",
+     "source": "merged-blocks-tight.md", "intro": "alt-intro-tight.md"},
+]
+
+
+def alt_panels(experiments: Path) -> tuple[str, str]:
+    """Tab buttons and reader panels for every alternative telling that exists."""
+    tabs: list[str] = []
+    panels: list[str] = []
+    for telling in ALT_TELLINGS:
+        source = experiments / telling["source"]
+        body = alt_reading(source) if source.is_file() else ""
+        if not body:
+            continue
+        view = telling["view"]
+        intro_path = experiments / telling["intro"]
+        intro = markdown(intro_path.read_text(encoding="utf-8")) \
+            if intro_path.is_file() else ""
+        tabs.append(
+            f'    <button class="tab" type="button" id="tab-{view}" role="tab"'
+            f' data-view="{view}"\n'
+            f'            aria-controls="view-{view}" aria-selected="false"'
+            f' tabindex="-1">{html.escape(telling["label"])}</button>')
+        panels.append(
+            f'  <div class="altview" id="view-{view}" role="tabpanel"'
+            f' aria-labelledby="tab-{view}" tabindex="0" hidden>\n'
+            f'    <div class="note preamble">{intro}</div>\n'
+            f'    <article>{body}</article>\n'
+            f'  </div>')
+    return "\n".join(tabs), "\n".join(panels)
 
 
 SITE_FOOTER = """<footer class="site">
@@ -916,12 +966,7 @@ def main() -> int:
     postamble_path = story_dir / "postamble.md"
     postamble = markdown(postamble_path.read_text(encoding="utf-8")) \
         if postamble_path.is_file() else ""
-    experiments = story_dir / "experiments"
-    alt_intro_path = experiments / "alt-intro.md"
-    alt_intro = markdown(alt_intro_path.read_text(encoding="utf-8")) \
-        if alt_intro_path.is_file() else ""
-    alt_path = experiments / "merged-blocks-casual.md"
-    alt = alt_reading(alt_path) if alt_path.is_file() else ""
+    alt_tabs, alt_views = alt_panels(story_dir / "experiments")
     payload = build_payload(nodes)
     start = opaque("turn-01")
     if start not in payload:
@@ -932,8 +977,8 @@ def main() -> int:
     body = body.replace("__PREAMBLE__", json.dumps(preamble))
     body = body.replace("__POSTAMBLE__", json.dumps(postamble))
     body = body.replace("__TIPS__", json.dumps(tips, ensure_ascii=False))
-    body = body.replace("__ALTINTRO__", alt_intro, 1)
-    body = body.replace("__ALT__", alt, 1)
+    body = body.replace("__TABS__", alt_tabs, 1)
+    body = body.replace("__ALTPANELS__", alt_views, 1)
     out = args.out or (args.scenario / "story.html")
     page = standalone(HEAD, body) if args.standalone else HEAD + body.replace(
         "__SITEFOOTER__", "", 1)
