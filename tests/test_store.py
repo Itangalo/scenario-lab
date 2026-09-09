@@ -269,6 +269,37 @@ def test_code_span_wrapper_is_stripped():
     assert len(commands) == 1
 
 
+@pytest.mark.parametrize(
+    "line",
+    [
+        "No other changes.",
+        "No further changes",
+        "No additional changes.",
+        "No more changes.",
+        "No changes.",
+    ],
+)
+def test_a_trailing_no_op_line_is_not_a_fault(line: str):
+    """Actors write these after their commands, and they are not commands.
+
+    The fault channel only means something while everything in it is a fault:
+    a real run flagged `No other changes.` as an unparsed command twice, which
+    is exactly the noise that trains a reader to skip the warnings.
+    """
+    commands, malformed, _ = parse_store_changes(
+        f"## Store changes\n- add measures: name = X; size = small; finish_turn = 4\n- {line}\n"
+    )
+    assert len(commands) == 1
+    assert malformed == []
+
+
+def test_a_no_op_line_does_not_swallow_a_real_command():
+    commands, malformed, _ = parse_store_changes(
+        "## Store changes\n- No changes to measures except: add measures: name = X; finish_turn = 4\n"
+    )
+    assert malformed  # not silently discarded
+
+
 def test_unparsable_line_is_recorded_rather_than_dropped():
     commands, malformed, _ = parse_store_changes(
         "## Store changes\n"

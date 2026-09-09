@@ -649,6 +649,15 @@ _DELETE_RE = re.compile(
     r"^delete\s+(?P<table>[a-z][a-z0-9_]*)\s+(?P<id>[A-Za-z]+\d+)\s*\.?$", re.IGNORECASE
 )
 _GROUNDS_RE = re.compile(r"^grounds\s*:\s*(?P<value>.+)$", re.IGNORECASE)
+
+# "No other changes." written after a command, which actors do. It is not a
+# command and it is not malformed, and counting it as either poisons the one
+# channel that says whether the turn went wrong: a fault report only means
+# something while everything in it is a fault.
+_NO_OP_LINE_RE = re.compile(
+    r"^no\s+(?:other|further|more|additional|remaining)?\s*(?:store\s+)?changes?\b[\s.]*$",
+    re.IGNORECASE,
+)
 _CODE_SPAN_RE = re.compile(r"^(?P<fence>`{1,}) *(?P<body>.+?) *(?P=fence)$", re.DOTALL)
 
 
@@ -724,6 +733,8 @@ def parse_store_changes(output: str) -> tuple[list[StoreCommand], list[str], boo
         item = re.sub(r"^[-*+]\s+", "", stripped)
         item = _strip_code_span(item)
         if not item or item.lower().rstrip(".") in NO_CHANGES_MARKERS:
+            continue
+        if _NO_OP_LINE_RE.match(item):
             continue
 
         grounds = _GROUNDS_RE.match(item)
@@ -1132,6 +1143,13 @@ def self_test() -> int:
     check("section present", present, True)
     check("malformed", malformed, [])
     check("commands parsed", len(commands), 2)
+
+    _cmds, _malformed, _ = parse_store_changes(
+        "## Store changes\n"
+        "- add measures: name = X; size = small; finish_turn = 4\n"
+        "- No other changes.\n"
+    )
+    check("trailing no-op is not a fault", (_malformed, len(_cmds)), ([], 1))
     outcomes = [store.apply(c, "eu", 1) for c in commands]
     check("all applied", [o.verdict for o in outcomes], ["applied", "applied"])
     check("ids assigned", [o.record_id for o in outcomes], ["M1", "M2"])
