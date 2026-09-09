@@ -1,8 +1,17 @@
 """Measure whether an actor's measure portfolio survives being restated.
 
-The portfolio is not held by the framework. The actor re-emits it in its own
-output every turn, so an entry persists only if the model remembers to write it
-again. This script measures how often that fails, in the two ways it can:
+**This measures the design the store replaced.** Where a scenario declares a
+`store:` block, the portfolio is held by Python, the actor never restates it,
+and the two failures below cannot happen -- so on such a run this script should
+report zero of both, and anything else is a bug in the store rather than a
+finding about the model. It is kept because the 570 runs already committed were
+made under the old design and are still the evidence base for what that design
+cost; see docs/proposals/persistent-state-custody.md and the *Declared
+Persistent State* section of docs/ARCHITECTURE.md.
+
+Under the old design the actor re-emitted the portfolio in its own output every
+turn, so an entry persisted only if the model remembered to write it again.
+This script measures how often that failed, in the two ways it could:
 
 * **never entered** -- a measure is proposed and never appears in the portfolio
   at any later turn. Invisible from the first moment.
@@ -136,6 +145,52 @@ def audit(run_dirs: list[Path], actor: str, limit: int) -> dict[str, Any]:
             "declined": declined, "unreadable": unreadable}
 
 
+def audit_store(run_dirs: list[Path], actor: str, limit: int) -> dict[str, Any]:
+    """The same question, asked of runs whose portfolio the framework holds.
+
+    Custody makes the two failures above impossible, so it is not what needs
+    measuring here. What needs measuring is what custody does *not* fix: an
+    actor that describes a measure in prose and never writes the command for
+    it. That was the larger half of the defect (never-entered, 4.5%), and the
+    re-ask hook that would close it is not built. Until it is, this counts the
+    faults the store artifacts already record.
+    """
+    turns = missing = rejected = unparsed = applied = 0
+    described_without_command = 0
+    examples: list[str] = []
+
+    for rd in run_dirs:
+        for t in turns_of(rd):
+            artifact = rd / f"turn-{t:02d}" / "2-actors" / f"{actor}-store.md"
+            if not artifact.is_file():
+                continue
+            turns += 1
+            text = artifact.read_text(encoding="utf-8")
+            changes = text.split("## Changes this turn", 1)[-1]
+            if "No `## Store changes` section" in text:
+                missing += 1
+                if len(examples) < limit:
+                    examples.append(f"{rd.name} turn {t}: no section written")
+            rejected += changes.count("- **rejected**")
+            unparsed += changes.count("- **unparsed**")
+            applied += changes.count("- **applied**")
+
+            # A measure argued for in prose but never entered by a command.
+            parsed = parse_actor_turn(rd / f"turn-{t:02d}" / "2-actors" / f"{actor}.md")
+            proposal = parsed.get("new_measure")
+            if words(proposal) and "add measures" not in changes:
+                described_without_command += 1
+                if len(examples) < limit:
+                    examples.append(
+                        f"{rd.name} turn {t}: described but never added: {(proposal or '')[:46]}"
+                    )
+
+    return {"turns": turns, "missing": missing, "rejected": rejected,
+            "unparsed": unparsed, "applied": applied,
+            "described_without_command": described_without_command,
+            "examples": examples}
+
+
 def pct(n: int, d: int) -> str:
     return f"{100 * n / d:.1f}%" if d else "—"
 
@@ -147,18 +202,26 @@ def main() -> int:
     ap.add_argument("--actor", default="eu")
     ap.add_argument("--filter", help="substring that must appear in a run's config.json")
     ap.add_argument("--examples", type=int, default=5)
+    ap.add_argument("--store", action="store_true",
+                    help="audit runs whose portfolio the framework holds, instead")
     args = ap.parse_args()
 
     runs_dir = args.scenario / "runs"
     runs = [d for d in sorted(runs_dir.iterdir())
             if d.is_dir() and (d / "config.json").is_file()]
     if args.filter:
+        # Matched against the run's own name as well as its config, so a single
+        # run can be picked out by directory without inventing a config key.
         runs = [d for d in runs
-                if args.filter in (d / "config.json").read_text(encoding="utf-8")]
+                if args.filter in d.name
+                or args.filter in (d / "config.json").read_text(encoding="utf-8")]
     runs = [d for d in runs if turns_of(d)]
     if not runs:
         print("no runs matched", file=sys.stderr)
         return 2
+
+    if args.store:
+        return report_store(audit_store(runs, args.actor, args.examples), len(runs), args.actor)
 
     r = audit(runs, args.actor, args.examples)
     print(f"{len(runs)} runs, actor '{args.actor}'\n")
@@ -190,6 +253,28 @@ def main() -> int:
     if r["vanished_eg"]:
         print("\nvanished, examples:")
         for e in r["vanished_eg"]:
+            print(f"  {e}")
+    return 0
+
+
+def report_store(r: dict[str, Any], run_count: int, actor: str) -> int:
+    if not r["turns"]:
+        print("no store artifacts found -- these runs predate the store, "
+              "or the scenario declares none. Run without --store.", file=sys.stderr)
+        return 2
+    print(f"{run_count} runs, actor '{actor}', {r['turns']} turns with a store artifact\n")
+    print(f"commands applied:                            {r['applied']:5}")
+    print(f"turns with NO '## Store changes' section:    {r['missing']:5}  "
+          f"({pct(r['missing'], r['turns'])})")
+    print(f"commands rejected:                           {r['rejected']:5}")
+    print(f"lines the parser could not read:             {r['unparsed']:5}")
+    print(f"measures described in prose, never added:    {r['described_without_command']:5}")
+    print("\nEntries cannot be lost from the store, so there is no drift figure here. "
+          "\nThe last three lines are what custody does not reach: they are the case "
+          "\nfor the re-ask hook, not evidence against the store.")
+    if r["examples"]:
+        print("\nexamples:")
+        for e in r["examples"]:
             print(f"  {e}")
     return 0
 

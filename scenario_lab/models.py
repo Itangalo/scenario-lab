@@ -1,6 +1,7 @@
 """Data models for Scenario Lab V4."""
 
 from .event_groups import EventGroup  # noqa: F401  (typing)
+from .store import Store, StoreSchema  # noqa: F401  (typing)
 from dataclasses import dataclass, field
 from typing import Callable, Optional, Union, List
 import json
@@ -561,6 +562,12 @@ class ScenarioConfig:
     # See scenario_lab/event_groups.py.
     event_groups: list["EventGroup"] = field(default_factory=list)
 
+    # Declared persistent state: the tables the framework holds on the actors'
+    # behalf, from the `store:` block. Empty for scenarios that declare none,
+    # which is every scenario that predates the mechanism.
+    # See scenario_lab/store.py and docs/ARCHITECTURE.md.
+    store: StoreSchema = field(default_factory=StoreSchema)
+
     # Variant resource patches (set from YAML `patches:`, paths resolved
     # absolute during loading). Applied in order after the base scenario's
     # resources load; a variant inherits its base's patches and appends its own.
@@ -673,6 +680,12 @@ class Scenario:
     # Emergent proposals that have not fired yet and are being carried forward
     # as emerging developments (see ARCHITECTURE.md).
     emerging_developments: list[EmergingDevelopment] = field(default_factory=list)
+
+    # The live records of the declared store. Owned by Python: actors propose
+    # deltas under `## Store changes` and never restate the contents, which is
+    # what makes silent loss structurally impossible rather than merely rare.
+    # None when the scenario declares no `store:` block.
+    store: Optional[Store] = None
 
     # The YAML this scenario was loaded from, as an absolute path. Recorded in a
     # run's config.json so `resume` and `branch` can reload the same variant.

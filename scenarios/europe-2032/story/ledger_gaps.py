@@ -32,7 +32,7 @@ SCENARIO = STORY.parent
 REPO = SCENARIO.parents[1]
 sys.path.insert(0, str(REPO / "scripts"))
 from build_dashboard import parse_actor_turn  # noqa: E402
-from check_ledger import DEFERRED, same, words  # noqa: E402
+from check_portfolio_drift import DEFERRED, same, words  # noqa: E402
 
 
 def main() -> int:

@@ -4,6 +4,7 @@ from pathlib import Path
 from typing import Optional, Any
 from .statements import render_ledger
 from .models import Scenario, build_expression_env, Actor
+from .store import StoreView
 import json
 import hashlib
 
@@ -249,6 +250,41 @@ class PromptBuilder:
     # Master's notepad. Idempotency depends on the exact header string.
     EMERGING_SECTION_HEADER = "## Emerging developments (tracked)"
 
+    def store_view(self, actor_id: Optional[str] = None) -> Optional[StoreView]:
+        """The read surface for templates, optionally scoped to one actor."""
+        if self.scenario.store is None:
+            return None
+        return StoreView(self.scenario.store, actor_id)
+
+    def _render_metric_rules(self, turn: int, store: Optional[StoreView]) -> str:
+        """Render the metric rules, so a rule can state a total it did not compute.
+
+        ``metric-rules.md`` has always been injected as raw text and never
+        rendered, which is why the read syntax needed a rendering pass that did
+        not exist. It is the sandboxed environment already used for every other
+        template rather than a second interpolation syntax of its own: that
+        inherits the sandbox, Jinja's filters and the undefined-variable
+        behaviour the validator already knows how to warn about, and keeps a
+        bespoke parser out of the design.
+
+        A scenario with no store renders nothing and gets the file back
+        untouched, so this is invisible to every scenario that predates it.
+        """
+        text = self.scenario.metric_rules
+        if store is None or "{{" not in text:
+            return text
+        try:
+            return self.jinja_env.from_string(text).render(store=store, turn=turn)
+        except Exception as err:
+            # Falling back to the source is deliberate. The alternative -- an
+            # exception -- ends the run at turn N of a batch job, and the
+            # alternative to that -- a blank -- deletes the rule silently,
+            # which is the exact failure this mechanism exists to remove. The
+            # unrendered expression reaching the model is wrong but loudly so,
+            # and it lands in the artifact where it can be read afterwards.
+            print(f"  ⚠ metric-rules.md failed to render against the store: {err}")
+            return text
+
     def _compose_notepad(self) -> str:
         """Render the notepad as the LLM steps should see it this turn.
 
@@ -386,8 +422,18 @@ class PromptBuilder:
 
         notepad = self._compose_notepad()
 
+        # Derived columns compare against the turn (a measure is finished when
+        # the run reaches its finishing turn), so the store has to know which
+        # turn it is being read in before anything reads it.
+        if self.scenario.store is not None:
+            self.scenario.store.current_turn = turn
+
         context = {
             "turn": turn,
+            # Scenario-wide by default; the actor prompt narrows it to the
+            # actor's own records below.
+            "store": self.store_view(),
+            "has_store": self.scenario.store is not None,
             "time_period": time_period,
             "time_scale": self.scenario.config.time_scale,
             "metrics_json": metrics_json,
@@ -522,6 +568,8 @@ class PromptBuilder:
         context["previous_actions"] = previous_actions
         
         # Add actor-specific context
+        context["store"] = self.store_view(actor_id)
+
         context["statement_ledger"] = ""
         if actor_id in self.scenario.actors:
             actor = self.scenario.actors[actor_id]
@@ -619,6 +667,12 @@ class PromptBuilder:
         
         # Build context
         context = self._get_common_context(turn)
+        # Deliberately NOT rendered. This step rewrites the rules, and its
+        # output becomes the live rule set for the rest of the run: hand it
+        # rendered totals and it writes those totals back as the rule, and the
+        # expression that produced them is gone for good. It sees the source it
+        # is being asked to edit. (Scenarios that pair a store with live rule
+        # evolution are warned about by the validator for this reason.)
         context["metric_rules"] = self.scenario.metric_rules
         context["rule_evolution_policy"] = self._format_rule_evolution_policy(turn)
         context["triggered_events"] = self._format_triggered_events(triggered_events)
@@ -688,7 +742,11 @@ class PromptBuilder:
         
         # Build context
         context = self._get_common_context(turn)
-        context["metric_rules"] = self.scenario.metric_rules
+        # Rendered here and nowhere else. This is the step that *applies* the
+        # rules, so it is the one that should see totals rather than the
+        # expressions that produce them. The rules step, which *edits* the
+        # rules, gets the source instead -- see build_rules_prompt.
+        context["metric_rules"] = self._render_metric_rules(turn, context.get("store"))
         context["triggered_events"] = self._format_triggered_events(triggered_events)
         
         # Format actor actions

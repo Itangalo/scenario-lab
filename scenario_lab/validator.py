@@ -23,6 +23,21 @@ class ValidationResult:
 
 # Helper functions
 
+_TEMPLATE_SYNTAX_RE = re.compile(r"\{\{.*?\}\}|\{%.*?%\}|\{#.*?#\}", re.DOTALL)
+
+
+def strip_template_expressions(text: str) -> str:
+    """Remove Jinja expressions before scanning prose for metric references.
+
+    Identifiers inside a template expression belong to a different namespace:
+    `{{ store.sum('measures', 'cost_per_turn') }}` names a store column, not a
+    metric, and reading it as one reports an error for correct text. Each
+    namespace is checked by the validator that owns it -- store references by
+    `validate_store`, metric references here.
+    """
+    return _TEMPLATE_SYNTAX_RE.sub(" ", text)
+
+
 def extract_metric_references(text: str) -> Set[str]:
     """Extract metric ID references from text.
 
@@ -384,8 +399,19 @@ def validate_metric_references(scenario: Scenario) -> List[str]:
     # Event group ids are legitimate references too: a member's condition names
     # the family that resolves it, and that family is not itself an event.
     group_ids = {group.id for group in getattr(scenario.config, "event_groups", []) or []}
+    # Declared store tables and columns are identifiers too, and a rule that
+    # explains a charge naturally names the column it is computed from
+    # ("the `cost_per_turn` column added up"). Reading those as metric
+    # references reports an error for correct text. They are checked against
+    # the schema by validate_store.
+    store_names: set[str] = set()
+    store_schema = getattr(scenario.config, "store", None)
+    if store_schema:
+        for table_name, table in store_schema.tables.items():
+            store_names.add(table_name)
+            store_names.update(table.columns)
     valid_identifiers = (
-        set(valid_metric_ids) | {event.id for event in scenario.events} | group_ids
+        set(valid_metric_ids) | {event.id for event in scenario.events} | group_ids | store_names
     )
 
     for actor_id, actor in scenario.actors.items():
@@ -452,7 +478,9 @@ def validate_metric_references(scenario: Scenario) -> List[str]:
 
     # Check metric rules for cross-references
     if scenario.metric_rules:
-        referenced_metrics = extract_metric_references(scenario.metric_rules)
+        referenced_metrics = extract_metric_references(
+            strip_template_expressions(scenario.metric_rules)
+        )
         for metric in referenced_metrics:
             if '_' in metric and metric not in valid_identifiers:
                 errors.append(
@@ -1130,6 +1158,74 @@ def validate_event_fields(scenario_path: Path) -> List[str]:
     ]
 
 
+def validate_store(scenario: Scenario) -> Tuple[List[str], List[str]]:
+    """Check every ``store.…`` reference in the scenario's own templates.
+
+    Validating the schema is not enough. An undefined Jinja variable renders as
+    empty text, so a mistyped column silently zeroes an arithmetic term and the
+    rule stops applying with nothing recording it -- the same shape of failure
+    as the ``model_limits`` key that matches no route, and as
+    ``openweight_frontier_release``, where the correct instruction was written,
+    reviewed, and never sent to anything. References are checked *to* the
+    schema, not only the schema itself.
+    """
+    from .store import check_store_references
+
+    errors: List[str] = []
+    warnings: List[str] = []
+    schema = scenario.config.store
+
+    sources: List[Tuple[str, str]] = [("metric-rules.md", scenario.metric_rules)]
+    for key, text in scenario.custom_user_prompts.items():
+        sources.append((f"user-prompts/{key}.md", text))
+    for key, text in scenario.custom_system_prompts.items():
+        sources.append((f"system-prompts/{key}.md", text))
+
+    referenced = False
+    for where, text in sources:
+        if not text:
+            continue
+        source_errors, source_warnings = check_store_references(schema, text, where)
+        errors.extend(source_errors)
+        warnings.extend(source_warnings)
+        if "store." in text:
+            referenced = True
+
+    if not schema:
+        return errors, warnings
+
+    if not referenced:
+        warnings.append(
+            "A `store:` block is declared but no template reads it. The records "
+            "will be kept and persisted, and nothing will ever see them."
+        )
+
+    # The rules step rewrites the rule set from its own output, so an
+    # expression living in a rule survives only as long as a model reproduces
+    # it verbatim -- which is the failure mode this whole mechanism exists to
+    # remove, reintroduced one level up.
+    policy = scenario.config.rule_evolution
+    if "{{" in scenario.metric_rules and policy.freeze_until_turn < scenario.config.max_turns:
+        warnings.append(
+            f"metric-rules.md contains store expressions, but rule evolution is live "
+            f"from turn {policy.freeze_until_turn + 1} of {scenario.config.max_turns}. "
+            "The rules step rewrites the rule set from its own output, so an expression "
+            "survives only if the model copies it back verbatim. Freeze rule evolution, "
+            "or keep the expressions out of the rules."
+        )
+
+    for name, table in schema.tables.items():
+        writable = table.writable()
+        if len(writable) == 1:
+            warnings.append(
+                f"store table '{name}' has one writable column ('{writable[0]}'). "
+                "A table the actor can barely describe is usually a sign the state "
+                "belongs in a statement instead."
+            )
+
+    return errors, warnings
+
+
 def validate_scenario(scenario_path: Path) -> ValidationResult:
     """Run all validation checks on a scenario.
 
@@ -1236,5 +1332,8 @@ def validate_scenario(scenario_path: Path) -> ValidationResult:
     prompt_errors, prompt_warnings = validate_prompt_overrides(scenario)
     errors.extend(prompt_errors)
     warnings.extend(prompt_warnings)
+    store_errors, store_warnings = validate_store(scenario)
+    errors.extend(store_errors)
+    warnings.extend(store_warnings)
 
     return ValidationResult(errors, warnings)

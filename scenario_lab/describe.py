@@ -149,6 +149,17 @@ def describe_scenario(
         "metrics": metrics,
         "events": events,
         "metric_rules_count": _count_rules(scenario.metric_rules),
+        # What the framework holds for the actors, if anything. Worth showing
+        # beside the rules: it is part of the scenario's physics, and "which
+        # state does this scenario keep for me" is a question an author asks
+        # before reading a single rule.
+        "store": {
+            name: {
+                "columns": len(table.columns),
+                "writable": table.writable(),
+            }
+            for name, table in config.store.tables.items()
+        },
         "constitution": (
             {"present": True, "constraints": _count_constraints(scenario.constitution)}
             if scenario.constitution
@@ -271,6 +282,15 @@ def format_describe_report(overview: dict[str, Any]) -> str:
         lines.append(f"- Constitution: yes ({constitution['constraints']} constraint(s))")
     else:
         lines.append("- Constitution: none")
+    store = overview.get("store") or {}
+    if store:
+        for name, table in store.items():
+            lines.append(
+                f"- Declared state: `{name}` ({table['columns']} column(s); "
+                f"the actor sets {', '.join(table['writable'])})"
+            )
+    else:
+        lines.append("- Declared state: none (actors carry their own state in prose)")
     emergent = overview["emergent_events"]
     if emergent["enabled"]:
         lines.append(

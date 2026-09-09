@@ -11,6 +11,11 @@ from .prompts import PromptBuilder
 from .llm import LLMResponse, LLMParseError, LLMError, LLMUnsupportedStructuredError
 from .router import FallbackRouter
 from .providers.registry import ProviderRegistry
+from .store import (
+    StoreOutcome,
+    parse_store_changes,
+    render_store_file,
+)
 from .statements import (
     ProposalOutcome,
     apply_proposal,
@@ -489,6 +494,18 @@ class Orchestrator:
         )
         if applied:
             print(f"  → {applied} statement change(s) applied")
+
+        # Declared persistent state: apply this turn's commands. Same placement
+        # and same reason as the statement step above.
+        store_outcomes = self._process_store_changes(turn, actor_outputs)
+        store_applied = sum(
+            1
+            for outcomes in store_outcomes.values()
+            for outcome in outcomes
+            if outcome.verdict == "applied"
+        )
+        if store_applied:
+            print(f"  → {store_applied} store change(s) applied")
 
         # Step 3: Update metric rules
         if self.progress_tracker:
@@ -1367,6 +1384,66 @@ class Orchestrator:
             if self.output_manager:
                 self.output_manager.save_actor_statements(
                     turn, actor_id, render_statements_file(actor, turn, outcomes)
+                )
+
+        return all_outcomes
+
+    def _process_store_changes(
+        self, turn: int, actor_outputs: dict[str, str]
+    ) -> dict[str, list[StoreOutcome]]:
+        """Apply actors' store commands to the records Python holds for them.
+
+        Runs immediately after the statement step, for the same reason and with
+        the same shape: the rest of the turn must see the state as it now
+        stands. What the actor writes is a delta. What it does not write
+        persists. There is no path by which a record leaves the store because
+        an actor forgot to mention it.
+
+        The turn is applied as one transaction. ``begin_turn`` restores the
+        pre-turn snapshot first, so a turn executed twice -- which the referee
+        loop permits up to ``constitutional_enforcement.max_attempts`` times --
+        replaces its own previous application instead of appending to it.
+        """
+        store = self.scenario.store
+        if store is None:
+            return {}
+
+        store.begin_turn(turn)
+        all_outcomes: dict[str, list[StoreOutcome]] = {}
+
+        for actor_id, output in actor_outputs.items():
+            actor = self.scenario.actors.get(actor_id)
+            if actor is None:
+                continue
+
+            commands, malformed, section_present = parse_store_changes(output)
+            outcomes = [store.apply(command, actor_id, turn) for command in commands]
+            all_outcomes[actor_id] = outcomes
+
+            # An absent section is a fault, not a declaration of no change --
+            # and it is the *detectable* form of the failure this mechanism
+            # exists to remove. It is reported rather than repaired: repairing
+            # it means re-asking the actor, which is its own mechanism and is
+            # not built yet (docs/proposals/persistent-state-custody.md).
+            if not section_present:
+                print(
+                    f"  ⚠ {actor_id} wrote no '## Store changes' section; "
+                    "nothing was applied this turn"
+                )
+            for line in malformed:
+                print(f"  ⚠ {actor_id} store command not understood: {line[:80]}")
+            rejected = [o for o in outcomes if o.verdict == "rejected"]
+            for outcome in rejected:
+                print(f"  ⚠ {actor_id} store command rejected: {outcome.reason}")
+
+            if self.output_manager:
+                self.output_manager.save_actor_store(
+                    turn,
+                    actor_id,
+                    render_store_file(
+                        store, actor_id, actor.name, turn, outcomes, malformed, section_present
+                    ),
+                    store.to_dict(),
                 )
 
         return all_outcomes

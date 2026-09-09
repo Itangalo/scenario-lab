@@ -1,12 +1,23 @@
 # Proposal: who holds persistent state
 
-Status: **open**, opened 2026-09-09. Nothing is implemented. This records a measured defect, the design conversation around it, and what a future session needs in order to continue without redoing the work.
+Status: **built, 2026-09-10**, opened 2026-09-09. The mechanism below is implemented as `scenario_lab/store.py` and europe-2032's measure portfolio runs on it. Three things named here are **not** built and remain open: the re-ask hook, tracking of unresolved deferrals, and moving statements into the store. Everything below is kept as written — it is the design record, and the measurement it reports is of the design that was replaced.
+
+What changed from the design as written here:
+
+- **It is called the `store`, not the `ledger`.** The proposal made the name conditional on statements moving in; they have not, so "ledger" stays with statements. `scripts/check_ledger.py` is now `scripts/check_portfolio_drift.py`, and it grew a `--store` mode that audits the new design instead of the old one.
+- **`when_past` is `when_reached`,** because europe-2032's rule 10 says a measure is finished when the current turn *reaches* its finishing turn, and a column named for "past" that means ">=" is a trap.
+- **`scope: world` is rejected at load** rather than accepted. It needs a writer, the only candidate is the step that also writes the narrative and the metrics JSON, and half-wiring it would let a scenario depend on a table nothing writes to.
+- **Reads are rendered for the metrics step only.** The rules step, which rewrites the rule set from its own output, is given the source. Handing it totals would make it write those totals back as the rule. The validator warns when a scenario pairs store expressions with live rule evolution.
+- **A branch inherits by value.** The open question is answered by the existing implementation: `create_branch` copies the turn directories wholesale.
+- **Category is an `integer`, not an `enum` of 1–10,** in europe-2032. The prompt teaches the actor to write `Category: 6 (Preparedness and resilience)`, and an enum would reject that — losing a measure to punctuation is the failure this mechanism exists to remove.
+
+See the *Declared Persistent State: the Store* section of `../ARCHITECTURE.md` for what was built.
 
 Out of scope here: whether to re-run any europe-2032 simulations because of this. That is a separate decision.
 
 ## The defect
 
-An actor's measure portfolio is not held by the framework. The actor re-emits it in its own output every turn, so an entry survives only if the model remembers to write it again. Measured with `scripts/check_ledger.py` over the 150-run statistics batch (unpinned, fresh initial draws, the cleanest sample available):
+An actor's measure portfolio is not held by the framework. The actor re-emits it in its own output every turn, so an entry survives only if the model remembers to write it again. Measured with `scripts/check_portfolio_drift.py` over the 150-run statistics batch (unpinned, fresh initial draws, the cleanest sample available):
 
 | | count | share |
 |---|---|---|
@@ -47,7 +58,7 @@ The portfolio is a third instance of the same design error, in the same actor ou
 ## The three options considered
 
 1. **Accept it.** Defensible for the already-built europe-2032 tree, where the alternative is discarding 420 committed runs. Not defensible as a framework property.
-2. **A stronger but still cheap model.** Johan's bound: twice the cost is acceptable, five times is not. Plausible at these rates — 0.6% and 4.5% are the kind of thing a better model may absorb. Two cautions: it reduces the rate of a *silent* failure rather than making it visible, and `docs/MODEL_TESTING.md` currently has one "Recommended" verdict and "Avoid" for everything else, so a switch means redoing that testing. Cheap to evaluate now: `check_ledger.py` needs no framework change, so a twenty-run batch on a candidate gives a comparable number for a few dollars.
+2. **A stronger but still cheap model.** Johan's bound: twice the cost is acceptable, five times is not. Plausible at these rates — 0.6% and 4.5% are the kind of thing a better model may absorb. Two cautions: it reduces the rate of a *silent* failure rather than making it visible, and `docs/MODEL_TESTING.md` currently has one "Recommended" verdict and "Avoid" for everything else, so a switch means redoing that testing. Cheap to evaluate now: `check_portfolio_drift.py` needs no framework change, so a twenty-run batch on a candidate gives a comparable number for a few dollars.
 3. **Python execution around phases.** Johan's framing: the framework should support scenario-supplied scripts that run before or after phases, able to signal an invalid reply or produce output for the next phase. Explicitly not one-off code for a single scenario.
 
 ## Where the discussion landed
@@ -107,7 +118,7 @@ ledger:
       status:        {owner: derived, from: finish_turn, when_past: finished, else: running}
 ```
 
-- **Python assigns ids; the actor never keys on names.** `scripts/check_ledger.py` carries a `STOPWORDS` list and a `words()` fuzzy matcher with the comment "the Game Master paraphrases names", and the 2026-09-09 benchmark shows one measure appearing as "EU AI Incident Response Corps", "Establish the EU AI Incident Response Corps with Pub…" and "European AI Incident Response Corps". Names are not keys. `storage-add` gets a framework-assigned id back, the id is rendered beside every row in the prompt, and later commands address it. The fuzzy matcher then audits history instead of running the system.
+- **Python assigns ids; the actor never keys on names.** `scripts/check_portfolio_drift.py` carries a `STOPWORDS` list and a `words()` fuzzy matcher with the comment "the Game Master paraphrases names", and the 2026-09-09 benchmark shows one measure appearing as "EU AI Incident Response Corps", "Establish the EU AI Incident Response Corps with Pub…" and "European AI Incident Response Corps". Names are not keys. `storage-add` gets a framework-assigned id back, the id is rendered beside every row in the prompt, and later commands address it. The fuzzy matcher then audits history instead of running the system.
 - **Types few, forgiving on write, strict in store.** `integer`, `number`, `text`, `turn`, `enum`. Normalise on write – lowercase, strip backticks and asterisks – because models write `Large`, `` `large` `` and `**large**`. The precedent is `structured_outputs`, where "YAML booleans are normalized to the canonical strings at load time". What will not normalise is rejected loudly into the turn's changelog.
 - **Derivation is lookup only.** A map is data, not logic, and it keeps rule 6's numbers in scenario config where they are readable and versioned rather than in Python. No expressions, no conditionals beyond a single map, no cross-table joins. When a scenario wants more than a lookup, that is the signal the thing is judgement and belongs to the LLM.
 - **Validate references *to* the schema, not only the schema.** An undefined Jinja variable renders as empty text, so a mistyped column silently zeroes an arithmetic term and the rule stops applying with nothing recording it. The validator already warns that undefined variables "render as empty text" and that a `model_limits` key matching no route will never apply; the same warning is needed for a ledger column named in a template and absent from the schema. The cautionary case is `openweight_frontier_release`, where "the correct instruction was written, reviewed, and never sent to anything".
@@ -116,7 +127,7 @@ ledger:
 
 ### Naming, and whether statements move in
 
-**Call it the ledger only if statements move into it.** "Ledger" is already overloaded three ways: `ARCHITECTURE.md` has the actor *statement ledger*, `story/README.md` says the portfolio "is not a reliable ledger", and `check_ledger.py` measures neither. If statements become one table among several, that overload collapses into one coherent meaning. If they stay separate, two things called ledger is worse than picking another word, and "store" is the honest fallback. Either way `check_ledger.py` wants renaming when this lands, since it exists to measure drift the design makes impossible.
+**Call it the ledger only if statements move into it.** "Ledger" is already overloaded three ways: `ARCHITECTURE.md` has the actor *statement ledger*, `story/README.md` says the portfolio "is not a reliable ledger", and `check_portfolio_drift.py` measures neither. If statements become one table among several, that overload collapses into one coherent meaning. If they stay separate, two things called ledger is worse than picking another word, and "store" is the honest fallback. Either way `check_portfolio_drift.py` wants renaming when this lands, since it exists to measure drift the design makes impossible.
 
 **Statements should move in eventually, but not first, and not as part of the same change.** They are the same shape – declared persistent state, mutated by structured commands, carried by Python – and ARCHITECTURE already invites it. But they carry semantics a generic store would flatten: the tier system, the gated relevance check where a `commitment` or `identity` change must name a triggering development and a referee demands a verbatim quote, and world pricing, where an accepted change is narrated as a public event. So the ledger needs **per-table mutation policy** from the first design, or statements cannot move without losing what makes them work.
 
@@ -140,8 +151,8 @@ Sequence it: build the ledger for the state that has no custody at all, prove it
 ## Reproducing the numbers
 
 ```
-python scripts/check_ledger.py scenarios/europe-2032 --filter batch=stats-20260908
-python scripts/check_ledger.py scenarios/europe-2032          # every run in the scenario
+python scripts/check_portfolio_drift.py scenarios/europe-2032 --filter batch=stats-20260908
+python scripts/check_portfolio_drift.py scenarios/europe-2032          # every run in the scenario
 ```
 
 Name matching is deliberately loose — the Game Master paraphrases measure names between turns — so a reported miss means no portfolio entry shared a distinctive word with the proposal. Before believing any of it, read the script: the first version of this measurement conflated never-entered with vanished and checked only the following turn, and reported a materially worse picture than the corrected one above.

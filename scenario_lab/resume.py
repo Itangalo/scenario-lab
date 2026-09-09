@@ -9,6 +9,7 @@ from datetime import datetime
 from .models import Scenario, EmergingDevelopment
 from .loader import load_scenario, get_time_period
 from .statements import parse_ledger_file, render_statements_file
+from .store import render_store_file
 
 
 def detect_last_turn(run_dir: Path) -> int:
@@ -270,6 +271,22 @@ def load_run_state(
             if response_file.exists():
                 actor.last_actions = response_file.read_text(encoding="utf-8")
 
+    # 4c. Load the declared store, so a resumed or branched run continues from
+    # the records as they stood. The JSON holds the whole store, not one
+    # actor's slice, so the first file found restores everything; they are
+    # written once per actor only so that each actor's directory is
+    # self-contained. A branch inherits by value rather than by reference:
+    # `create_branch` copies the turn directories wholesale, so the child's
+    # records are its own from the first turn it executes and nothing it does
+    # can reach back into the parent.
+    if scenario.store is not None and actors_dir.exists():
+        for actor_id in scenario.actors:
+            state_file = actors_dir / f"{actor_id}-store.json"
+            if state_file.exists():
+                scenario.store.restore(json.loads(state_file.read_text(encoding="utf-8")))
+                scenario.store.current_turn = from_turn
+                break
+
     # 5. Load historical summary (if exists)
     summary_file = turn_dir / "6-historical-summary.md"
     if summary_file.exists():
@@ -513,6 +530,19 @@ def persist_scenario_state_at_turn(run_dir: Path, turn: int, scenario: Scenario)
         (actors_dir / f"{actor_id}-statements.md").write_text(
             render_statements_file(actor, turn, []), encoding="utf-8"
         )
+        # And the store, for the same reason: a branch created here must start
+        # from the records as they actually stand, not from an empty store.
+        if scenario.store is not None:
+            (actors_dir / f"{actor_id}-store.md").write_text(
+                render_store_file(
+                    scenario.store, actor_id, actor.name, turn, [], [], True
+                ),
+                encoding="utf-8",
+            )
+            (actors_dir / f"{actor_id}-store.json").write_text(
+                json.dumps(scenario.store.to_dict(), indent=2, ensure_ascii=False),
+                encoding="utf-8",
+            )
 
     # Keep historical summary aligned with loaded state when present.
     if scenario.world_state.historical_summary:

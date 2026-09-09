@@ -295,6 +295,66 @@ Behavior:
 - when `turn <= freeze_until_turn`, the rules LLM step is skipped and the previous rules are carried forward in a new versioned wrapper
 - after the freeze window, rule updates are expected to stay within `max_changes_per_turn`
 
+### `store` (optional)
+
+Declares persistent state the framework holds on the actors' behalf, instead of the actor restating it in prose every turn. Absent by default; a scenario that declares nothing here behaves exactly as before.
+
+```yaml
+store:
+  measures:
+    scope: actor
+    columns:
+      id:            {owner: system,  type: text}
+      name:          {owner: actor,   type: text, required: true}
+      size:          {owner: actor,   type: enum, values: [large, small], required: true}
+      started_turn:  {owner: system,  type: turn}
+      finish_turn:   {owner: actor,   type: turn, required: true}
+      cost_per_turn: {owner: derived, type: integer, from: size, map: {large: 3, small: 2}}
+      status:        {owner: derived, type: text, from: finish_turn,
+                      when_reached: finished, else: running}
+```
+
+Table fields:
+
+- `scope` — `actor` only. `scope: world` is rejected at load: it is part of the design but has no writer yet.
+- `columns` — an ordered mapping. Every table needs one system-owned `text` column for the record id, and at least one actor-owned column.
+
+Column fields:
+
+- `owner` (required) — `system` (stamped by the framework and unreachable by any command), `actor` (set in a command), or `derived` (computed at read time).
+- `type` — `text`, `integer`, `number`, `turn` or `enum`. Default `text`. An `enum` must declare `values`.
+- `required` — actor-owned columns only. An `add` missing one is rejected.
+- `from` plus either `map` or `when_reached`/`else` — derived columns only. `map` is a lookup on another column's value and must cover every value of an enum it reads. `when_reached`/`else` compares a `turn` column against the current turn. Derivation is one step deep: a derived column may not derive from another derived column.
+
+What the actor writes, under a `## Store changes` heading in its response:
+
+```
+## Store changes
+
+- add measures: name = Compute build-out; size = large; finish_turn = 7
+  - Grounds: the access denial in turn 3
+- update measures M2: finish_turn = 5
+- delete measures M1
+```
+
+The section is required every turn; `No changes.` is the answer when nothing changes, and an absent section is recorded as a fault. Pairs are separated by semicolons, values are normalised on the way in (`**Large**`, `` `large` `` and `Large` all store as `large`; `turn 7` stores as `7`), and anything that will not normalise is rejected with a reason into the turn's changelog rather than stored as something else. Records are addressed by the id the framework assigned (`M1`), never by name.
+
+What templates can read, in `metric-rules.md` and in prompt overrides:
+
+- `{{ store.rows('measures') }}` — a markdown table of every column, including derived ones
+- `{{ store.sum('measures', 'cost_per_turn') }}`, and `min`, `max`, `mean`, `count`
+- one equality filter as a keyword argument: `store.sum('measures', 'cost_per_turn', status='running')`
+- `store.actor('eu')` to scope a scenario-wide view to one actor
+
+There are no joins and no arithmetic between aggregates, and a second filter is a validation error. **Render the rows beside any total** — the validator warns when a template aggregates over a table whose rows it never shows, because a number the reader cannot check against its terms is one they stop checking.
+
+Two things to know before using this:
+
+- **`metric-rules.md` is rendered for the metrics step and not for the rules step.** The rules step rewrites the rule set from its own output, so an expression there survives only if a model copies it back verbatim. Freeze rule evolution when you put store expressions in the rules; the validator warns when you have not.
+- **The schema is physics.** It is recorded in each run's `config.json`, a variant inherits its base's schema, and two batches run under different schemas are not comparable.
+
+Artifacts: `turn-XX/2-actors/<actor_id>-store.md` (records plus this turn's changelog, written every turn) and `<actor_id>-store.json` (the state `resume` reads back). `python -m scenario_lab.store --self-test` checks the mechanism itself.
+
 ### `constitutional_enforcement`
 
 Optional guardrails for the constitutional referee retry/fallback policy:
@@ -386,6 +446,8 @@ Recommended format:
 - numbered rules (`1.`, `2.`, `3.`) with clear quantitative relationships
 
 The file may evolve during simulation and is versioned in turn outputs.
+
+When the scenario declares a `store:` block, this file is additionally rendered as a Jinja template before the metrics step sees it, so a rule can state a total the framework computed rather than asking the Game Master to sum a list while it also writes the narrative. See `store` above.
 
 ## `background/context.md`
 
@@ -534,6 +596,8 @@ Both override directories are rendered as Jinja templates in a sandboxed environ
 - `metric_<metric_id>` for every metric, carrying its current value
 
 `user-prompts/` templates receive a turn-aware context instead: `turn`, `time_period`, `metrics_json`, `world_state`, `historical_summary`, `notepad`, `output_language`, and `metric_<metric_id>`.
+
+When the scenario declares a `store:` block they also receive `store` (see `store` above) and `has_store`. In an actor prompt `store` is scoped to that actor's own records; elsewhere it spans every actor.
 
 Because system prompts are built without a turn number, turn-specific variables are unavailable there – reference them from a user prompt instead.
 

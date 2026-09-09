@@ -28,6 +28,7 @@ from .models import (
     TerminationCondition,
     WorldState,
 )
+from .store import Store, StoreSchemaError, parse_store_schema
 
 
 def _parse_routes_field(value: object) -> "ModelRoute | list[ModelRoute]":
@@ -532,6 +533,11 @@ def load_scenario(
         custom_system_prompts=custom_system_prompts,
         custom_user_prompts=custom_user_prompts,
         source_path=str(config_file.resolve()),
+        # The live store starts empty and is filled only by commands. Nothing
+        # a scenario file says seeds it: opening records are the actor's first
+        # turn of commands, exactly like every later turn, so there is one code
+        # path into the records rather than two.
+        store=Store(config.store) if config.store else None,
     )
 
     if initial_state is not None:
@@ -791,6 +797,11 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
                     "freeze_until_turn": base_config.rule_evolution.freeze_until_turn,
                     "max_changes_per_turn": base_config.rule_evolution.max_changes_per_turn,
                 },
+                # A variant inherits its base's declared state wholesale. The
+                # schema is physics, and an arm that quietly held a different
+                # set of columns from its siblings would make the batch
+                # incomparable in a way nothing downstream could detect.
+                **({"store": _store_schema_to_yaml(base_config.store)} if base_config.store else {}),
                 "constitutional_enforcement": {
                     "max_attempts": base_config.constitutional_enforcement.max_attempts,
                     "on_failure": base_config.constitutional_enforcement.on_failure,
@@ -893,6 +904,11 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
         llm_io=bool(logging_data.get("llm_io", False)),
     )
 
+    try:
+        store_schema = parse_store_schema(data.get("store"))
+    except StoreSchemaError as err:
+        raise ValueError(f"{path}: {err}") from err
+
     return ScenarioConfig(
         name=data["name"],
         description=data["description"],
@@ -905,6 +921,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
         requires_initial_state=bool(data.get("requires_initial_state", False)),
         termination=parse_termination(data.get("termination")),
         event_groups=parse_event_groups_or_raise(data.get("event_groups")),
+        store=store_schema,
         llm=llm_config,
         emergent_events=emergent_events,
         rule_evolution=rule_evolution,
@@ -912,6 +929,36 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
         logging=logging_config,
         patches=[*base_patches, *resolve_patch_specs(child_patch_specs, path.parent)],
     )
+
+
+def _store_schema_to_yaml(schema) -> dict:
+    """Render a parsed store schema back to its YAML shape.
+
+    Inheritance works by turning a loaded base config back into a dict and deep
+    merging the child over it, so the schema has to survive that round trip in
+    the same grammar ``parse_store_schema`` reads. Deliberately not
+    ``StoreSchema.to_dict``: that one is the *resolved* record for a run's
+    config.json and carries the derived id prefix, which is not an input.
+    """
+    out: dict = {}
+    for name, table in schema.tables.items():
+        columns: dict = {}
+        for col_name, column in table.columns.items():
+            entry: dict = {"owner": column.owner, "type": column.type}
+            if column.required:
+                entry["required"] = True
+            if column.values:
+                entry["values"] = list(column.values)
+            if column.source:
+                entry["from"] = column.source
+            if column.mapping:
+                entry["map"] = dict(column.mapping)
+            if column.when_reached is not None:
+                entry["when_reached"] = column.when_reached
+                entry["else"] = column.otherwise
+            columns[col_name] = entry
+        out[name] = {"scope": table.scope, "columns": columns}
+    return out
 
 
 def resolve_patch_specs(specs: object, base_dir: Path) -> List[ResourcePatch]:

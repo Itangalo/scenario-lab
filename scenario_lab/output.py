@@ -223,6 +223,32 @@ class OutputManager:
         actors_dir.mkdir(exist_ok=True)
         (actors_dir / f"{actor_id}-statements.md").write_text(content, encoding="utf-8")
 
+    def save_actor_store(self, turn: int, actor_id: str, content: str, state: dict):
+        """Save the actor's declared persistent state and this turn's changelog.
+
+        Two files, and the split is deliberate. The markdown is the readable
+        artifact and the one a diff between consecutive turns is taken over --
+        empty unless a command was actually applied, exactly as for statements.
+        The JSON is the authoritative state that ``resume`` and ``branch`` read
+        back, because round-tripping arbitrary record text through a markdown
+        table needs a bespoke parser, and this repository has enough evidence
+        about bespoke parsers. Same division as 4-metrics.json beside
+        4-world-state.md.
+
+        Args:
+            turn: Turn number
+            actor_id: Actor identifier
+            content: Rendered records and changelog markdown
+            state: The whole store, serialized
+        """
+        turn_dir = self.get_turn_dir(turn)
+        actors_dir = turn_dir / "2-actors"
+        actors_dir.mkdir(exist_ok=True)
+        (actors_dir / f"{actor_id}-store.md").write_text(content, encoding="utf-8")
+        (actors_dir / f"{actor_id}-store.json").write_text(
+            json.dumps(state, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
+
     def save_metric_rules(self, turn: int, rules: str):
         """Save metric rules immediately after generation.
 
@@ -611,6 +637,10 @@ class OutputManager:
             "patches": [
                 {"resource": p.resource, "path": p.path} for p in self.scenario.config.patches
             ],
+            # A schema change is a physics change, and two batches run under
+            # different schemas are not comparable. Recorded for the same
+            # reason reasoning_effort is.
+            "store": self.scenario.config.store.to_dict(),
             "emergent_events": {
                 "enabled": self.scenario.config.emergent_events.enabled,
                 "max_per_turn": self.scenario.config.emergent_events.max_per_turn,

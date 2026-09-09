@@ -5,7 +5,7 @@ emits, and nothing enforced it. When `meta/muse-spark-1.3-contributor` was
 benchmarked on 2026-09-09 it wrote each measure's name as a `###` sub-heading
 under `## New measure`; `section()` treated that as the end of the section, so
 the body was empty and the parser reported no measure for all 13 turns of all
-three runs. `check_ledger.py` then printed "proposed measures: 0", which reads
+three runs. `check_portfolio_drift.py` then printed "proposed measures: 0", which reads
 like a perfect score and was a total parse failure. The same bug had been
 silently eating `forking-futures` output for months.
 
