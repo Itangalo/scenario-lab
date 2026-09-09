@@ -42,6 +42,26 @@ No figure is retyped from a run into prose. `check_tree.py` enforces that, along
 
 `tree.json` is the editorial source of truth underneath all of it: which run each of the 42 blocks follows, which option leads into it, and how honest each choice's split is. The branch-log tables below are the human record it was generated from and verified against.
 
+## Known faults in the built tree
+
+Faults found after the batches were committed, recorded rather than re-run. Re-running a Stage-1 path means discarding everything below it: A2 alone is the parent of A21 and A22 and of four Stage-3 blocks, so replacing it costs 60 block runs, two redrawn option pools and four written turns, to correct one measure on one branch.
+
+- **A11 rep 1** — sentiment trajectory implausible, rule-7 incident penalties skipped. Rep 2 promoted; recorded in the Stage-2 table above.
+- **P11 rep 1** — `openweight_capability` frozen at 45.0 by GM inertia against rule 2's diffusion midpoint, while 9/10 siblings diffused normally. Rep 2 promoted.
+- **A2: the reader's first choice never enters the portfolio.** The European AI Assurance Directorate is the measure `option-02-2` proposes, and on the A2 path it is absent from the portfolio at every turn from 2 to 9. It carries normally on V2 and P2, which choose the same option, and every branch choosing `option-02-1` carries its measure. Accepted and written as deprioritisation — the reader's own priority goes to the gigafactory fund, so "it went into the queue and stayed there" is a true reading of their choice — but it is a fault, and eight of the twenty-four endings open with it.
+
+### The portfolio is not a reliable ledger (2026-09-09)
+
+The A2 case is one instance of something systematic, and worth knowing before anyone writes from `data.json`'s portfolio field.
+
+The portfolio is not maintained by Python. It is restated by the actor in its own output every turn, which is correct under the pure-LLM architecture and means it drifts. Measured across the 42 path runs: of 387 proposed measures, 109 never appear in the next turn's portfolio. Forty of those the run explains itself — portfolio saturation, deferral, not formally tabled, which are designed behaviours. The remaining 69 have no explanation anywhere in the world state.
+
+Existing measures drop out too, not just new ones. On V1 the InvestAI Gigafactories are in the turn-2 portfolio and gone from turn 3 with no cancellation note, while the turn-2 Resilience Sprint that the world state narrates in detail never enters the portfolio at all. The two records disagree, and the world state is the one that reads as authoritative.
+
+This has mechanical consequences, not only narrative ones: the metrics step charges political capital per measure in flight, so a measure that silently drops out stops costing anything.
+
+Not fixed. A proper fix means changing who owns the ledger — Python carrying the portfolio forward and asking the actor only for deltas, or the referee reconciling it each turn — which is a change to the simulation, not to the story, and would invalidate the built tree. Recorded here so that prose written from a portfolio is checked against the world state first.
+
 ## How the prose is written
 
 Settled with Johan on 2026-09-07, at the turn-1 checkpoint. These hold for all 207 nodes, and `check_tree.py` enforces the ones that can be enforced.

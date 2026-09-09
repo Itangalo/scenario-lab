@@ -84,6 +84,7 @@ The runs are evidence. This phase is the thing a reader walks through, and it is
 
 - **Length.** The written turns run 280–340 words against a 250 budget. Whether to tighten is a judgement to make on reader feedback, not in advance — but it should be settled before the remaining 144 turns are written, not after.
 - **The agency floor is stated twice with two values.** `scenario.yaml` says `eu_political_capital` ≥ 40; phase 1 above records it as reset to ≥12, applied or not at Johan's call. Capital sits at or near 0 on several Stage-3 paths, so which number is live decides whether most endings read as failures.
+- **The portfolio drifts.** The actor restates its own measure portfolio each turn, so measures fall out of it: 109 of 387 proposals never reach the next turn's portfolio, and only 40 of those are explained by the run. One consequence is already in the story — on A2 the reader's turn-1 choice never enters the portfolio at all. Fixing it means moving the ledger into Python or the referee, which would invalidate the built tree, so it is recorded in `story/README.md` and deferred. Prose written from a portfolio should be checked against that turn's world state.
 - **Whether the arm is revealed at the end.** Thematically right — the reader finds out the way the Union would — but it means putting the arm names into the page, which weakens the concealment enforced everywhere else. Not decided.
 
 ## Standing facts
