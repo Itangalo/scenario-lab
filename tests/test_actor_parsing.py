@@ -167,3 +167,101 @@ class TestSectionBoundary:
                 "\n## New measure\n### Beta\nbody\n")
         r = parse(tmp_path, text)
         assert [m["name"] for m in r["portfolio"]] == ["Alpha"]
+
+
+class TestStoreBackedRuns:
+    """Runs whose portfolio the framework holds have no `## Portfolio` section.
+
+    The actor stopped restating it, which is the point. Everything downstream
+    of this parser -- the dashboard, the tree extractor, the sign-off renderer
+    -- would otherwise report an empty portfolio for every turn of such a run,
+    silently and forever. That is the exact shape of failure this repository
+    keeps having to measure after the fact, so it is pinned here.
+    """
+
+    def write(self, tmp_path: Path, records: list[dict], turn: int = 3) -> Path:
+        import json
+
+        actors = tmp_path / f"turn-{turn:02d}" / "2-actors"
+        actors.mkdir(parents=True)
+        (actors / "eu.md").write_text(
+            "## New measure\n\n**A Measure Name**\n\nIt does a thing.\n\n"
+            "## Priority\n\nA Measure Name\n",
+            encoding="utf-8",
+        )
+        (actors / "eu-store.json").write_text(
+            json.dumps({"turn": turn, "counters": {"measures": len(records)},
+                        "records": records}),
+            encoding="utf-8",
+        )
+        return actors / "eu.md"
+
+    def record(self, rid: str, name: str, **kw) -> dict:
+        base = {
+            "id": rid, "table": "measures", "actor": "eu",
+            "fields": {"name": name, "category": 4, "size": "large",
+                       "started_turn": kw.get("start", 1),
+                       "finish_turn": kw.get("finish", 7),
+                       "targeted_effect": "sovereignty up"},
+            "derived": {"cost_per_turn": 3, "status": kw.get("status", "running")},
+            "added_turn": kw.get("start", 1),
+            "removed_turn": kw.get("removed"),
+        }
+        return base
+
+    def test_portfolio_comes_from_the_store(self, tmp_path):
+        path = self.write(tmp_path, [self.record("M1", "Gigafactories"),
+                                     self.record("M2", "Sovereignty package", finish=6)])
+        result = parse_actor_turn(path)
+        assert [m["name"] for m in result["portfolio"]] == ["Gigafactories", "Sovereignty package"]
+        assert result["portfolio"][0]["cost"] == 3
+        assert result["portfolio"][0]["category"] == 4
+        assert result["portfolio"][0]["start"] == 1
+        assert result["portfolio"][0]["finish"] == 7
+
+    def test_a_finished_measure_is_marked(self, tmp_path):
+        path = self.write(tmp_path, [self.record("M1", "Done", status="finished")])
+        assert parse_actor_turn(path)["portfolio"][0]["finished"] is True
+
+    def test_a_deleted_measure_is_a_cancellation_in_its_own_turn(self, tmp_path):
+        path = self.write(tmp_path, [self.record("M1", "Dropped", removed=3)])
+        result = parse_actor_turn(path)
+        assert result["portfolio"] == []
+        assert [c["name"] for c in result["cancelled"]] == ["Dropped"]
+
+    def test_a_measure_deleted_earlier_is_simply_absent(self, tmp_path):
+        path = self.write(tmp_path, [self.record("M1", "Dropped", removed=2)])
+        result = parse_actor_turn(path)
+        assert result["portfolio"] == []
+        assert result["cancelled"] == []
+
+    def test_the_new_measure_is_the_record_added_this_turn(self, tmp_path):
+        """The record names the measure; the prose only argues for it."""
+        path = self.write(tmp_path, [self.record("M1", "Old", start=1),
+                                     self.record("M2", "Newly added", start=3)])
+        result = parse_actor_turn(path)
+        assert result["new_measure"] == "Newly added"
+        assert result["new_measure_status"] == "named"
+
+    def test_prose_still_answers_when_nothing_was_added(self, tmp_path):
+        """'Proposed nothing' and 'could not be read' stay opposite findings."""
+        actors = tmp_path / "turn-03" / "2-actors"
+        actors.mkdir(parents=True)
+        (actors / "eu.md").write_text("## New measure\n\nNone this turn.\n", encoding="utf-8")
+        (actors / "eu-store.json").write_text('{"turn": 3, "records": []}', encoding="utf-8")
+        result = parse_actor_turn(actors / "eu.md")
+        assert result["new_measure"] is None
+        assert result["new_measure_status"] == "declined"
+
+    def test_runs_without_a_store_still_parse_their_prose(self, tmp_path):
+        """Every run committed before this change."""
+        actors = tmp_path / "turn-03" / "2-actors"
+        actors.mkdir(parents=True)
+        (actors / "eu.md").write_text(
+            "## Portfolio\n\n"
+            "- Gigafactories (category 4, costs 3 per turn, started turn 1, "
+            "finishes on turn 7): sites\n",
+            encoding="utf-8",
+        )
+        result = parse_actor_turn(actors / "eu.md")
+        assert [m["name"] for m in result["portfolio"]] == ["Gigafactories"]

@@ -67,30 +67,13 @@ def section(text: str, heading: str) -> str:
     return match.group(1).strip() if match else ""
 
 
-def parse_actor_turn(path: Path) -> dict[str, Any]:
-    if not path.exists():
-        return {"portfolio": [], "new_measure": None, "new_measure_status": "unreadable",
-                "priority": None, "priority_status": "unreadable", "cancelled": []}
-    text = path.read_text(encoding="utf-8")
+def _named_sections(text: str) -> dict[str, Any]:
+    """The prose sections of an actor's turn: what it proposed and prioritised.
 
-    portfolio, cancelled = [], []
-    for line in section(text, "Portfolio").splitlines():
-        line = line.strip()
-        if not line:
-            continue
-        if (m := MEASURE.match(line)):
-            portfolio.append({
-                "name": m["name"].strip(" `"),
-                "category": int(m["category"]),
-                "cost": int(m["cost"]),
-                "start": int(m["start"]),
-                "finish": int(m["finish"]),
-                "description": m["description"].strip(" `"),
-                "finished": bool(FINISHED_MARK.search(line)),
-            })
-        elif (m := CANCELLED.match(line)):
-            cancelled.append({"name": m["name"].strip(" `"), "reason": m["reason"].strip()})
-
+    Shared by both custody models. The portfolio moved into the framework;
+    these did not, and they are read the same way whether or not the run has a
+    store beside it.
+    """
     def named(heading: str) -> tuple[str | None, str]:
         """The measure named under a heading, plus why there is none.
 
@@ -131,14 +114,112 @@ def parse_actor_turn(path: Path) -> dict[str, Any]:
     new_measure, new_measure_status = named("New measure")
     priority, priority_status = named("Priority")
     return {
-        "portfolio": portfolio,
-        "cancelled": cancelled,
         "new_measure": new_measure,
         "new_measure_status": new_measure_status,
         "priority": priority,
         "priority_status": priority_status,
         "reasoning": section(text, "In practice"),
     }
+
+
+def _portfolio_from_store(actor_path: Path) -> tuple[list, list, str | None] | None:
+    """Read the portfolio out of the store artifact, if this run has one.
+
+    Returns None when the run predates framework custody, so the caller falls
+    back to parsing the actor's prose. The shape returned is the one the rest
+    of this script and its consumers already expect -- name, category, cost,
+    start, finish, description, finished -- so nothing downstream has to know
+    which custody model produced a run.
+    """
+    state_file = actor_path.parent / f"{actor_path.stem}-store.json"
+    if not state_file.is_file():
+        return None
+    try:
+        state = json.loads(state_file.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
+
+    turn_match = re.search(r"turn-(\d+)", str(actor_path))
+    turn = int(turn_match.group(1)) if turn_match else state.get("turn", 0)
+
+    portfolio, cancelled, added_this_turn = [], [], None
+    for record in state.get("records", []):
+        if record.get("table") != "measures":
+            continue
+        fields = record.get("fields", {})
+        derived = record.get("derived", {})
+        name = str(fields.get("name", "")).strip(" `")
+        if record.get("added_turn") == turn:
+            added_this_turn = name
+        if record.get("removed_turn") is not None:
+            # A record the actor deleted. Reported as a cancellation in the
+            # turn it happened, and simply absent afterwards.
+            if record["removed_turn"] == turn:
+                cancelled.append({"name": name, "reason": "deleted by the actor"})
+            continue
+        portfolio.append({
+            "name": name,
+            "category": _as_int(fields.get("category")),
+            "cost": _as_int(derived.get("cost_per_turn")),
+            "start": _as_int(fields.get("started_turn")),
+            "finish": _as_int(fields.get("finish_turn")),
+            "description": str(fields.get("targeted_effect", "")).strip(" `"),
+            "finished": derived.get("status") == "finished",
+        })
+    return portfolio, cancelled, added_this_turn
+
+
+def _as_int(value: Any) -> int:
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return 0
+
+
+def parse_actor_turn(path: Path) -> dict[str, Any]:
+    if not path.exists():
+        return {"portfolio": [], "new_measure": None, "new_measure_status": "unreadable",
+                "priority": None, "priority_status": "unreadable", "cancelled": []}
+    text = path.read_text(encoding="utf-8")
+
+    # Runs whose portfolio the framework holds have no `## Portfolio` section
+    # to read: the actor stopped restating it, which is the whole point. Read
+    # the store artifact beside the actor file instead, and fall back to the
+    # prose for every run made before that.
+    from_store = _portfolio_from_store(path)
+    if from_store is not None:
+        portfolio, cancelled, added_this_turn = from_store
+        named = _named_sections(text)
+        if added_this_turn:
+            # The record is a better answer than the prose: it is what the
+            # measure actually is, under the name the run will carry, where
+            # the prose is an argument for it that may name it loosely or not
+            # at all. The prose is still read for the case where nothing was
+            # added, since "proposed nothing deliberately" and "this parser
+            # could not read the section" are opposite findings.
+            named["new_measure"] = added_this_turn
+            named["new_measure_status"] = "named"
+        return {"portfolio": portfolio, "cancelled": cancelled, **named}
+
+    portfolio, cancelled = [], []
+    for line in section(text, "Portfolio").splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        if (m := MEASURE.match(line)):
+            portfolio.append({
+                "name": m["name"].strip(" `"),
+                "category": int(m["category"]),
+                "cost": int(m["cost"]),
+                "start": int(m["start"]),
+                "finish": int(m["finish"]),
+                "description": m["description"].strip(" `"),
+                "finished": bool(FINISHED_MARK.search(line)),
+            })
+        elif (m := CANCELLED.match(line)):
+            cancelled.append({"name": m["name"].strip(" `"), "reason": m["reason"].strip()})
+
+    return {"portfolio": portfolio, "cancelled": cancelled, **_named_sections(text)}
 
 
 @dataclass

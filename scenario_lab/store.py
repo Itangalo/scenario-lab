@@ -585,7 +585,17 @@ class Store:
     # -- persistence -----------------------------------------------------
 
     def to_dict(self) -> dict:
+        """Serialize the whole store.
+
+        ``fields`` holds stored values only and is what ``restore`` reads back;
+        derived values are recomputed from it, never trusted from the file.
+        ``derived`` is written alongside it anyway, stamped at the turn the
+        file was written, so that anything reading a turn's artifact -- the
+        dashboard, the tree extractor, a person -- sees what the prompts saw
+        that turn without having to know the scenario's derivation rules.
+        """
         return {
+            "turn": self.current_turn,
             "counters": dict(self.counters),
             "records": [
                 {
@@ -593,6 +603,11 @@ class Store:
                     "table": r.table,
                     "actor": r.actor_id,
                     "fields": dict(r.fields),
+                    "derived": {
+                        name: self.value(r, name)
+                        for name, column in self.schema.tables[r.table].columns.items()
+                        if column.owner == "derived"
+                    },
                     "added_turn": r.added_turn,
                     "removed_turn": r.removed_turn,
                 }

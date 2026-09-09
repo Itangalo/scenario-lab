@@ -102,13 +102,9 @@ Omit it, or write `No statement changes.`, when nothing has changed.
 {% endif %}
 
 * Heading level 2: New measure
-**Pick at most one**. `None this turn.` is an option. **Choose it with your two-year commitment in mind: across the four turns of a commitment period it should be the dominant theme of what you build.** Not everything must serve it — an incident that must be answered now, a window that closes, a cheap chance worth taking are all real reasons to spend a turn elsewhere — but if you reach the end of a two-year period and most of what you started points somewhere else, you did not hold the commitment, whatever the ledger still says. Every measure in your portfolio cost `eu_political_capital`, but less so if the opinion for the measure is favourable. Propose a measure unless you have a reason not to, and if you write `None this turn.`, say in one clause what you are waiting for. When you do propose one, give a heading plus one short sentence saying what it actually does, and say in a further sentence or two why this and why now. The measure itself is not recorded here — you enter it under `## Store changes` below, and these are the judgements that command asks you for:
+**Pick at most one**. `None this turn.` is an option. **Choose it with your two-year commitment in mind: across the four turns of a commitment period it should be the dominant theme of what you build.** Not everything must serve it — an incident that must be answered now, a window that closes, a cheap chance worth taking are all real reasons to spend a turn elsewhere — but if you reach the end of a two-year period and most of what you started points somewhere else, you did not hold the commitment, whatever the ledger still says. Every measure in your portfolio cost `eu_political_capital`, but less so if the opinion for the measure is favourable. Propose a measure unless you have a reason not to, and if you write `None this turn.`, say in one clause what you are waiting for. When you do propose one, write **the measure's name in bold on its own line**, then one short sentence saying what it actually does, then a sentence or two on why this and why now.
 
-`category` (**the number from the list below**, for example `category = 6`). Measures you invent are welcome and get the category they most resemble, or `10`. Name the category in your prose so the number can be checked against it.
-`size` (`large` or `small` — large costs 3 political capital a turn, small costs 2, every turn until it finishes).
-`finish_turn` (the turn it is actually in force, judged from how big the thing is: a directive needing drafting and a vote is two or three turns out, a capability that has to be built and staffed six or more).
-`targeted_effect` (which metrics, which direction, roughly how much).
-`applies_to` (your own jurisdiction, particular member states, the US, China, a coalition, the frontier developers directly).
+**Write nothing else here — this section is prose, not a form.** The measure's category, size, finishing turn, effect and reach are not written here: they are the `add` command under `## Store changes` below, and writing them twice is how the two copies come to disagree. Name the category in your prose if you like, so the number in the command can be checked against it.
 
 **There are ten categories for measures, and only these may be used. Each carries an anchor — the measure it most typically means — and, in brackets, others that belong to it:**
 
@@ -136,6 +132,15 @@ Your measures in flight carry forward on their own. Do not re-list them here; li
 ``delete measures <id>``
 
 Each may carry an indented `- Grounds: <one clause>` line beneath it, and a `delete` must.
+
+What the six fields of an `add` are asking you to judge:
+
+- `name` — the same name you wrote in bold under New measure.
+- `category` — **the number from the list above**, for example `category = 6`. Measures you invent are welcome and get the category they most resemble, or `10`.
+- `size` — `large` or `small`. Large costs 3 political capital a turn, small costs 2, every turn until it finishes.
+- `finish_turn` — the turn it is actually in force, judged from how big the thing is: a directive needing drafting and a vote is two or three turns out, a capability that has to be built and staffed six or more.
+- `targeted_effect` — which metrics, which direction, roughly how much.
+- `applies_to` — your own jurisdiction, particular member states, the US, China, a coalition, the frontier developers directly.
 
 - **Adding.** One `add` for the measure you proposed above, and no more than one this turn. The framework gives it an id and stamps the turn it started; you cannot set either.
 - **Moving a finishing turn.** `update` is the only way a finishing turn moves, and rule 10 says what may move it: a named priority may pull it in by one turn, several unprioritised turns may push it out by one, an event may do either and rarely by more than one. Nothing else moves it, and nothing moves it silently.
