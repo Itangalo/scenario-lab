@@ -28,7 +28,9 @@ Never-entering is the larger failure and the worse one: a measure that never arr
 
 It is not only a narrative problem. The metrics step charges political capital per measure in flight, so a measure that silently drops out **stops costing anything**, and a run that loses one looks slightly better-resourced than it should.
 
-One instance reached the story: on the A2 branch the European AI Assurance Directorate — the measure the reader chooses at turn 1 — never enters the portfolio at any turn from 2 to 9. It carries normally on V2 and P2, which choose the same option. Recorded in `scenarios/europe-2032/story/README.md` under known faults.
+There is a third failure mode the table above splits out but does not name: **the deferral that never resolves**. The 28 non-entries with a stated reason are, by definition, proposals the run explained away at the time and then never returned to. That is 2.0% on top of the 4.6%, so the honest figure for "the actor proposed a measure and it never became one" is 92 of 1 391, or 6.6%.
+
+One instance reached the story, and it is of that third kind: on the A2 branch the European AI Assurance Directorate — the measure the reader chooses at turn 1 — is deferred in the turn-1 world state with a stated reason, and then never mentioned again from turn 2 to 9 except once, and never enters the portfolio. Recorded in `scenarios/europe-2032/story/README.md` under known faults. It matters for the design because a custody mechanism would not have caught it: nothing was lost from a ledger, and the deferral was legitimate when made. Only something tracking open proposals across turns would notice that one was never resolved.
 
 ## The framework already solved this once, for a different kind of state
 
