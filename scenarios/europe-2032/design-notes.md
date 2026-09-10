@@ -476,3 +476,13 @@ Impact is deliberately the Game Master's to decide, as with the critical events,
 
 One thing is ruled out explicitly, because it is the mistake the entry invites: a European result does **not** move `eu_ai_sovereignty` by itself. Rule 5's event term is about access to capacity, not about what is achieved with it, and letting achievement move that metric would quietly open a second channel the rule does not have. Where a European result does pay is as evidence that a finished category 4 or 5 measure produced something — which routes it through the measure system rather than around it, and gives the Union its strongest available argument for having spent the money.
 
+
+### Every description reaches the model now (2026-09-10)
+
+`parse_events` in `loader.py` is line-based: it keeps lines beginning with `**` that contain a colon, so an event's description is only the text on the `**Description:**` line itself. Everything after a blank line was silently discarded – no error, no warning, and `validate` passes either way. Multi-paragraph descriptions had therefore never worked in this scenario. `cyber_test_shot` had been reaching the Game Master at 82 words of 305 since long before this branch, and the overhaul made it much worse by leaning on the paragraph form: at its low point 3686 authored words parsed to 2498, a third of the catalogue's prose reaching no prompt.
+
+All six affected entries were shortened and flattened to a single line each rather than the parser being changed, which keeps the framework untouched and forces the edit the length wanted anyway. `embodied_ai_deployment` went from 432 authored words to 281, `cyber_test_shot` from 305 to 281, `automated_decision_scandal` from 222 to 219, `research_breakthrough` from 215 to 215, `knowledge_work_augmented` from 195 to 154, `us_labs_nationalised` from 170 to 168. The catalogue now parses at 100%: 3475 authored, 3475 reaching the model, median 67 words and a 281-word ceiling on the two events that carry the most instruction.
+
+**Authoring rule from here: an event description is one line.** A blank line inside it truncates the entry at that point and nothing will tell you. The same holds for the `Description` field of a variant patch – the V arm's `research_breakthrough` override was losing 70 of its 191 words the same way.
+
+Fixing the parser to accumulate continuation lines remains the alternative, and would be the better long-run answer if descriptions ever want structure. It is a framework change and belongs on its own branch.
