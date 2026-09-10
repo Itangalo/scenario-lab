@@ -83,6 +83,7 @@ The runs are evidence. This phase is the thing a reader walks through, and it is
 **Open questions, none blocking.**
 
 - **The event list has not been re-read since the store redesign.** Standing conditions (US posture), scheduling moves and seeded portfolios changed what the catalogue must carry and what the store now guarantees; the list may hold events the store makes redundant and lack ones the new machinery enables. Deferred deliberately until the prompt overhaul settles -- review it next, before any measured batch.
+- **Full rerun on Muse Spark + store branch: see `rerun-plan.md`.** All story simulations go again under the new model on `store-v2-world-scope-and-metrics` (deliberately unmerged). Pilot done 2026-09-10; scale-up gated on the checkpoint in that file, with `main` as the fallback.
 
 - **Length.** The written turns run 280–340 words against a 250 budget. Whether to tighten is a judgement to make on reader feedback, not in advance — but it should be settled before the remaining 144 turns are written, not after.
 - **The agency floor is stated twice with two values.** `scenario.yaml` says `eu_political_capital` ≥ 40; phase 1 above records it as reset to ≥12, applied or not at Johan's call. Capital sits at or near 0 on several Stage-3 paths, so which number is live decides whether most endings read as failures.
