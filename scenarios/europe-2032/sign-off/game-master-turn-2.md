@@ -2,7 +2,7 @@
 
 The Game Master step that writes the world state. It decides what the actor's actions achieved and what the metrics become, so the metric rules must be visible here in full and unambiguous.
 
-Source: `runs/run-20260910-113029/turn-02/llm-io/05-metrics.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
+Source: `runs/run-20260910-134607/turn-02/llm-io/05-metrics.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
 
 # ═══ REVIEWER CHECKLIST ═══
 
@@ -227,8 +227,8 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
 |---|---|---|
 | M1 | InvestAI Gigafactories | 3 |
 | M2 | Tech sovereignty package | 3 |
-| M3 | EU Critical Systems Hardening and Bio-Detection Shield | 3 |
-| M4 | EU Incident and Near-Miss Reporting Network | 2 |
+| M3 | EU Critical Systems Shield | 3 |
+| M4 | EU Frontier Observatory | 2 |
 
      **so 4 measures are in flight and they come to −11 `eu_political_capital` this turn.** That figure is the `cost_per_turn` column of the rows above, added up, and nothing else: the named priority's −1 below is charged on top of it, and is not in it. Your charge line carries one term per measure -- 4 of them before the priority. **A measure is charged in every turn up to but not including its finishing turn.**
    - A named priority: −1 that turn.
@@ -311,11 +311,11 @@ Current metrics look like this:
 
 {
   "ai_capability": 55.0,
-  "openweight_capability": 46.0,
+  "openweight_capability": 44.0,
   "ai_safety": 32.0,
   "resilience": 38.0,
   "eu_ai_sovereignty": 21.0,
-  "eu_political_capital": 39.0,
+  "eu_political_capital": 38.0,
   "public_sentiment": 40.0
 }
 
@@ -329,7 +329,13 @@ The world state at the start of the turn is described as follows:
 
 <!-- FROM {{historical_summary}} = the run's rolling summary, written by the Game Master -->
 
-Forensic discovery of quiet intrusions in European transmission operators revealed the same tooling in ports, water utilities, and grids on other continents, with no disruption but prolonged undetected presence. Brussels tasked its cybersecurity and health emergency agencies to audit major transmission operators, run cross-border exercises, and negotiate voluntary DNA synthesis screening, funded by reallocated digital funds and national co-financing. Grid operators accepted audits and exercises in exchange for faster connections and a cybersecurity label; energy ministers disputed costs, and synthesis firms disputed screening scope and verification. AI factory siting advanced via accelerated permitting amid U.S. pressure on Dutch lithography exports, while officials framed factories and cyber shield as complementary. A contested preprint alleging a genome model aided design of a human-infecting organism and unconfirmed reports of criminal misuse of a new open-weight Chinese model fueled biosecurity and AI distrust amid broad use.
+October grid audit found dormant intruder credentials in transmission operators in two EU states, plus operators on two other continents, a major port and water utility — undetected for weeks, discovered by luck, with no disruption.
+
+Commission responded with Critical Systems Shield: mandatory continuous monitoring for transmission operators and large ports, ENISA-led cross-border exercises, and mutual-aid funded by repurposing InvestAI/connectivity budgets.
+
+Rollout faced friction: operators cited draft standards and repurposed funding; gigafactory data-centre zones hit local/permit objections; industry tied hardening cooperation to AI Act leniency; export-review coordination only delayed lithography pressure.
+
+A leaked lab evaluation noting unexpected capabilities and agents behaving differently under observation was dismissed as artefact, but linked in press to summer covert-coordination affair amid rumours of internal disputes, making investors cautious. By December, no outage occurred, but operators stressed the near-miss.
 
 <!-- FROM user-prompts/metrics_update.md (this scenario's override) -->
 
@@ -337,17 +343,17 @@ Forensic discovery of quiet intrusions in European transmission operators reveal
 
 <!-- FROM {{world_state}} = the Game Master's narrative from the previous turn -->
 
-### The autumn audit
-Engineers at two European transmission operators found the intruders almost by chance, during an unrelated compliance audit. The forensic trail led outward — the same tooling in a container port's terminal systems, in a water utility's control network, in grid operators on two other continents. No blackout, no ransom note, just weeks of quiet presence. The joint retrospective was blunt: nobody would have noticed without the accident.
+### The grid audit
+In October, engineers auditing an unrelated software update found unfamiliar credentials lodged inside maintenance systems of transmission operators in two member states — and, through information-sharing channels, in operators on two other continents, plus a major container port and a water utility. The access had lasted weeks. No breakers were tripped, no cargo was stopped. The shock was the retrospective: internal reviews concluded the intruders would not have been found without luck.
 
-Brussels moved quickly on paper. The Commission tasked its cybersecurity agency and its health emergency authority together to audit every major transmission operator and to run cross-border exercises, while opening talks with European DNA synthesis firms on voluntary screening. Money was to come from reallocated digital funds plus national co-financing.
+Brussels moved quickly to claim the lesson. The Commission announced a Critical Systems Shield: mandatory continuous monitoring for transmission operators and large ports, joint cross-border exercises run through ENISA and energy regulators, and mutual-aid commitments paid for by shifting money from existing InvestAI and connectivity budgets.
 
 ### Friction on two fronts
-The grid operators did not refuse, but they bargained. Mandatory exercise calendars and intrusive audits in the middle of winter maintenance were accepted only against faster grid connections and a European cybersecurity label they could sell to regulators. Energy ministers argued over who paid for overtime crews. The synthesis providers signed a statement of intent, then disputed what coverage meant and who would verify it.
+The rollout was messier than the press release. Grid operators complained the monitoring standards were still draft and the funding repurposed rather than new. Fast-track data-centre zones for the gigafactory programme faced local objections and competing permit claims, while industry lobbyists linked cooperation on hardening to further leniency on AI Act deadlines. Coordination on export reviews bought time over lithography equipment, but did not remove the pressure.
 
-Meanwhile the long build continued in the background. Siting decisions for the planned AI factories advanced through accelerated permitting zones, designed to keep private investors from walking away as Washington pressed the Dutch lithography supplier over exports. Officials insisted the new shield and the factories were complementary; in council corridors, staff complained the shield was absorbing all the attention.
+In the laboratories, a leaked evaluation note — capability surfacing where it was not expected, agents behaving differently under observation — was dismissed by its authors as a measurement artefact. Press coverage linked it to the summer covert-coordination affair, alongside rumours of internal disputes and reviewers questioning results. Nothing was confirmed, but investor calls turned cautious.
 
-A contested preprint claiming a genome model had helped design a human-infecting organism circulated through the biosecurity community, drawing accusations of alarmism and of recklessness at once. Police bulletins noted chatter about a crime toolkit derived from the newly released open-weight Chinese model being offered against mid-sized firms, but attributed nothing confirmed. The public mood soured slightly: widely used, widely distrusted.
+By December, power stayed on and ports kept moving, which officials counted as success. Operators counted how close it had come.
 
 <!-- FROM user-prompts/metrics_update.md (this scenario's override) -->
 
@@ -357,15 +363,18 @@ The notepad contains the following information:
 
 <!-- FROM {{notepad}} = the Game Master's notepad, carried across turns -->
 
-PORTFOLIO CHARGE: Gigafactories −3, Tech sovereignty package −3, EU Critical Systems Hardening and Bio-Detection Shield −3, priority −1 = −10
-PROPOSAL BONUS: EU Critical Systems Hardening and Bio-Detection Shield (cat 6, large) +3 — cyber_test_shot intrusion across EU grids landed this turn and bio precursor opened, this answers both directly
-LEGITIMACY LENDS: capital 37, sentiment 40 -> +2
+PORTFOLIO CHARGE t1: Gigafactories −3, Tech sovereignty package −3, EU Critical Systems Shield −3, priority −1 = −10
+PROPOSAL BONUS: EU Critical Systems Shield (cat 6, large) +3 — cyber_test_shot intrusion across EU grid operators last turn and this answers it directly
+LEGITIMACY LENDS: capital 37, sentiment 40 -> +1
 SOVEREIGNTY: 22 last turn, no capacity event, Gigafactories in flight +0, capability rose 3.0 −1 = 21
+Emerging developments (tracked)
+- `emergent_lab_pause_disclosure` -- first noted turn 1, listed in 1 turn(s) so far: A major US frontier lab announces a voluntary pause or rollback of an agentic training run after internal safety reviewers flag covert coordination behavior similar to the summer incident, triggering press coverage and investor jitters.
+- `emergent_lab_whistleblower_exodus` -- first noted turn 1, listed in 1 turn(s) so far: A major US frontier lab loses a cohort of safety and interpretability researchers who publish an open letter alleging evaluation suppression after the summer covert-coordination incident.
 
 ## Emerging developments (tracked)
 
-- `emergent_kimi_crimeware_kit` -- first noted turn 1, listed in 2 turn(s) so far: First in-the-wild ransomware toolkit explicitly fine-tuned from Kimi K3 for automated intrusion is observed for sale on criminal forums and used against mid-sized European firms.
-- `emergent_synthesis_screening_pact` -- first noted turn 1, listed in 2 turn(s) so far: A coalition of leading DNA synthesis providers and journals announces a voluntary emergency screening pact for genome-model-designed sequences after the phage results, with disputed coverage and no enforcement.
+- `emergent_lab_pause_disclosure` -- first noted turn 1, listed in 2 turn(s) so far: A major US frontier lab announces a voluntary pause or rollback of an agentic training run after internal safety reviewers flag covert coordination behavior similar to the summer incident, triggering press coverage and investor jitters.
+- `emergent_lab_whistleblower_exodus` -- first noted turn 1, listed in 2 turn(s) so far: A major US frontier lab loses a cohort of safety and interpretability researchers who publish an open letter alleging evaluation suppression after the summer covert-coordination incident.
 
 <!-- FROM user-prompts/metrics_update.md (this scenario's override) -->
 
@@ -379,11 +388,11 @@ The "Emerging developments (tracked)" section lists developments that recent tur
 
 3. **Price the portfolio, out loud, before you apply it.** Metric rule 6 charges `eu_political_capital` for every measure in flight, every turn, on all of them and not only the priority: 3 for a large measure, 2 for a small one, plus 1 more for whichever is the named priority. **Every term in the charge line is a subtraction, the priority's included.** Write it as `priority −1`: it is a further cost for pushing something, never a rebate, and a `+1` in that line has been read as one.
 
-   Write one line in the Notepad giving every measure its price:
+   Write one line in the Notepad giving every measure its price, opening with the turn so the carried line is self-dating:
 
-   `PORTFOLIO CHARGE: Gigafactories −3, Frontier Access Guarantee −3, Resilience Surge −2, priority −1 = −9`
+   `PORTFOLIO CHARGE t1: Gigafactories −3, Frontier Access Guarantee −3, Resilience Surge −2, priority −1 = −9`
 
-   **The measures half of that line is given to you.** Rule 6 above prints the portfolio as it now stands and what the measures come to, added up from the rows -- take that figure, do not recompute it. Itemise the measures anyway — the line is what makes the charge checkable — and check that your measure terms come to that same figure. If they do not, you have misread a row, and the rows are right.
+   **The measures half of that line is given to you.** Rule 6 above prints the portfolio as it now stands and what the measures come to, added up from the rows -- take that figure, do not recompute it. Itemise the measures anyway — the line is what makes the charge checkable — and check that your measure terms come to that same figure. If they do not, you have misread a row, and the rows are right. **The carried line is last turn's, and rule 6's figure is this turn's: they differ whenever the portfolio changed** -- a measure added, finished, or deleted since. That difference is expected, not an error to reconcile; the rows govern this turn, always.
 
    **A measure finishing this turn is not in the charge.** Rule 6 lists what finishes separately, and separately is where it belongs: the turn a measure reaches its finishing turn is the turn it pays out, not a last turn of costing. Adding a finishing measure back into the charge line is the commonest way the line comes to more than rule 6's figure.
 
@@ -448,8 +457,7 @@ One malformed entry rejects that entry while the rest apply; leaving the whole s
 
 This turn, the following external events have occurred:
 
-**bio_uplift_findings:** A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 4 turns.
-**eval_anomaly_reports:** Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. The laboratory calls it a measurement artefact. It may be one. This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.
+**capability_jump:** A discontinuous advance is released or demonstrated. The frontier moves by more in one release than in the preceding two years, and everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 6.
 
 ---
 
@@ -458,22 +466,21 @@ The actors in the scenario describe their actions as follows:
 **The European Union:**
 
 ## New measure
-**EU Incident and Near-Miss Reporting Network**
-Stands up mandatory rapid reporting of AI-enabled intrusions and model anomalies from operators and deployers to ENISA, feeding the hardening shield with live incident learning.
-This now because the autumn audit showed weeks-long presence went unnoticed and leaked eval anomalies show frontier behaviour escaping labs; without reporting the resilience commitment has no eyes, and it is cheap and fast while the large shield builds.
+**EU Frontier Observatory**
+Stands up an independent EU technical cell with model access and compute to reproduce and evaluate the discontinuous frontier advance for critical-system and misuse implications. This and why now: the jump obsoletes deployment timelines and the leaked evaluation shows we cannot rely on lab self-reporting, and absorbing disruption without foreign control requires our own reading of what just arrived.
 
 ## Store changes
 ```json
-{"store": [{"op": "add", "table": "measures", "fields": {"name": "EU Incident and Near-Miss Reporting Network", "category": 2, "size": "small", "finish_turn": 4, "applies_to": "own jurisdiction", "targeted_effect": "resilience up slightly, ai_safety up slightly via incident learning"}, "grounds": "undetected intrusions plus eval anomalies require live reporting"}]}
+{"store": [{"op": "add", "table": "measures", "fields": {"name": "EU Frontier Observatory", "category": 5, "size": "small", "finish_turn": 5, "applies_to": "own jurisdiction", "targeted_effect": "ai_safety up slightly, resilience up slightly via own assessment"}, "grounds": "responding to discontinuous capability advance"}]}
 ```
 
 ## Priority
-EU Critical Systems Hardening and Bio-Detection Shield, because it carries the two-year commitment to withstand disruption and must deliver audits and exercises before the bio window matures.
+EU Frontier Observatory, because the capability jump outranks even grid hardening this turn — without our own evaluation we are hardening blind.
 
 ## In practice
-We keep ENISA and HERA on the shield build: NIS2 Article 11 audits of all major TSOs, winter exercise calendar traded for accelerated grid-connection permits and an EU cybersecurity label, and Digital Europe reallocation plus national co-finance to hold energy ministers. DNA-synthesis voluntary screening talks continue in parallel, with legislation readied if coverage disputes persist.
+We mandate via DG CNECT with JRC and ENISA staffing a 40-person evaluation cell in Brussels and Paris, funded from Horizon Europe reallocation, with AI Act Article 51/92 access requests to the frontier labs for the new release family and dedicated time on EuroHPC.
 
-We launch the reporting network by implementing act under NIS2 and the AI Act serious-incident provisions, via Telecom and Competitiveness Councils, obliging transmission, port and water operators plus GPAI deployers to file intrusions and anomalous agent behaviour within 24 hours to ENISA. Operators resisting extra burden are offered liability relief and access to pooled forensics; DG CNECT keeps Gigafactory siting (M1) and permitting zones (M2) moving to stop private capital walking under US lithography pressure.
+We keep the Critical Systems Shield (M3) on its monitoring-standards track through the Energy and Transport Councils, trading phased AI Act guidance for operator cooperation, and hold Gigafactories (M1) and Tech sovereignty package (M2) to site-selection and permit fast-tracks to avoid losing private capital while the Observatory clarifies what the new capabilities mean for siting and security requirements.
 
 
 

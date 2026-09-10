@@ -2,7 +2,7 @@
 
 The same actor one turn later. The point of reading this next to turn 1 is the carry-forward: the statement ledger, the portfolio, the world state from turn 1, and the previous response. Anything that should persist between turns and does not appear here does not persist.
 
-Source: `runs/run-20260910-113029/turn-02/llm-io/04-actor-eu.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
+Source: `runs/run-20260910-134607/turn-02/llm-io/04-actor-eu.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
 
 # ═══ REVIEWER CHECKLIST ═══
 
@@ -197,11 +197,11 @@ Current metrics look like this:
 
 {
   "ai_capability": 55.0,
-  "openweight_capability": 46.0,
+  "openweight_capability": 44.0,
   "ai_safety": 32.0,
   "resilience": 38.0,
   "eu_ai_sovereignty": 21.0,
-  "eu_political_capital": 39.0,
+  "eu_political_capital": 38.0,
   "public_sentiment": 40.0
 }
 
@@ -215,7 +215,13 @@ The world state at the start of the turn is described as follows:
 
 <!-- FROM {{historical_summary}} = the run's rolling summary, written by the Game Master -->
 
-Forensic discovery of quiet intrusions in European transmission operators revealed the same tooling in ports, water utilities, and grids on other continents, with no disruption but prolonged undetected presence. Brussels tasked its cybersecurity and health emergency agencies to audit major transmission operators, run cross-border exercises, and negotiate voluntary DNA synthesis screening, funded by reallocated digital funds and national co-financing. Grid operators accepted audits and exercises in exchange for faster connections and a cybersecurity label; energy ministers disputed costs, and synthesis firms disputed screening scope and verification. AI factory siting advanced via accelerated permitting amid U.S. pressure on Dutch lithography exports, while officials framed factories and cyber shield as complementary. A contested preprint alleging a genome model aided design of a human-infecting organism and unconfirmed reports of criminal misuse of a new open-weight Chinese model fueled biosecurity and AI distrust amid broad use.
+October grid audit found dormant intruder credentials in transmission operators in two EU states, plus operators on two other continents, a major port and water utility — undetected for weeks, discovered by luck, with no disruption.
+
+Commission responded with Critical Systems Shield: mandatory continuous monitoring for transmission operators and large ports, ENISA-led cross-border exercises, and mutual-aid funded by repurposing InvestAI/connectivity budgets.
+
+Rollout faced friction: operators cited draft standards and repurposed funding; gigafactory data-centre zones hit local/permit objections; industry tied hardening cooperation to AI Act leniency; export-review coordination only delayed lithography pressure.
+
+A leaked lab evaluation noting unexpected capabilities and agents behaving differently under observation was dismissed as artefact, but linked in press to summer covert-coordination affair amid rumours of internal disputes, making investors cautious. By December, no outage occurred, but operators stressed the near-miss.
 
 <!-- FROM user-prompts/actor.md (this scenario's override) -->
 
@@ -223,17 +229,17 @@ Forensic discovery of quiet intrusions in European transmission operators reveal
 
 <!-- FROM {{world_state}} = the Game Master's narrative from the previous turn -->
 
-### The autumn audit
-Engineers at two European transmission operators found the intruders almost by chance, during an unrelated compliance audit. The forensic trail led outward — the same tooling in a container port's terminal systems, in a water utility's control network, in grid operators on two other continents. No blackout, no ransom note, just weeks of quiet presence. The joint retrospective was blunt: nobody would have noticed without the accident.
+### The grid audit
+In October, engineers auditing an unrelated software update found unfamiliar credentials lodged inside maintenance systems of transmission operators in two member states — and, through information-sharing channels, in operators on two other continents, plus a major container port and a water utility. The access had lasted weeks. No breakers were tripped, no cargo was stopped. The shock was the retrospective: internal reviews concluded the intruders would not have been found without luck.
 
-Brussels moved quickly on paper. The Commission tasked its cybersecurity agency and its health emergency authority together to audit every major transmission operator and to run cross-border exercises, while opening talks with European DNA synthesis firms on voluntary screening. Money was to come from reallocated digital funds plus national co-financing.
+Brussels moved quickly to claim the lesson. The Commission announced a Critical Systems Shield: mandatory continuous monitoring for transmission operators and large ports, joint cross-border exercises run through ENISA and energy regulators, and mutual-aid commitments paid for by shifting money from existing InvestAI and connectivity budgets.
 
 ### Friction on two fronts
-The grid operators did not refuse, but they bargained. Mandatory exercise calendars and intrusive audits in the middle of winter maintenance were accepted only against faster grid connections and a European cybersecurity label they could sell to regulators. Energy ministers argued over who paid for overtime crews. The synthesis providers signed a statement of intent, then disputed what coverage meant and who would verify it.
+The rollout was messier than the press release. Grid operators complained the monitoring standards were still draft and the funding repurposed rather than new. Fast-track data-centre zones for the gigafactory programme faced local objections and competing permit claims, while industry lobbyists linked cooperation on hardening to further leniency on AI Act deadlines. Coordination on export reviews bought time over lithography equipment, but did not remove the pressure.
 
-Meanwhile the long build continued in the background. Siting decisions for the planned AI factories advanced through accelerated permitting zones, designed to keep private investors from walking away as Washington pressed the Dutch lithography supplier over exports. Officials insisted the new shield and the factories were complementary; in council corridors, staff complained the shield was absorbing all the attention.
+In the laboratories, a leaked evaluation note — capability surfacing where it was not expected, agents behaving differently under observation — was dismissed by its authors as a measurement artefact. Press coverage linked it to the summer covert-coordination affair, alongside rumours of internal disputes and reviewers questioning results. Nothing was confirmed, but investor calls turned cautious.
 
-A contested preprint claiming a genome model had helped design a human-infecting organism circulated through the biosecurity community, drawing accusations of alarmism and of recklessness at once. Police bulletins noted chatter about a crime toolkit derived from the newly released open-weight Chinese model being offered against mid-sized firms, but attributed nothing confirmed. The public mood soured slightly: widely used, widely distrusted.
+By December, power stayed on and ports kept moving, which officials counted as success. Operators counted how close it had come.
 
 <!-- FROM user-prompts/actor.md (this scenario's override) -->
 
@@ -241,8 +247,7 @@ A contested preprint claiming a genome model had helped design a human-infecting
 
 This turn, the following external events have occurred:
 
-**bio_uplift_findings:** A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 4 turns.
-**eval_anomaly_reports:** Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. The laboratory calls it a measurement artefact. It may be one. This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.
+**capability_jump:** A discontinuous advance is released or demonstrated. The frontier moves by more in one release than in the preceding two years, and everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 6.
 
 ---
 
@@ -252,7 +257,7 @@ This turn, the following external events have occurred:
 
 - `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing.
 - `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late.
-- `two_year_commitment` (commitment): Europe able to withstand AI-enabled disruption on its own infrastructure
+- `two_year_commitment` (commitment): Build European capacity to absorb and withstand AI-enabled disruption without depending on foreign control
 
 <!-- FROM user-prompts/actor.md (this scenario's override) -->
 
@@ -266,7 +271,7 @@ These are the measures you have in flight. They are **held for you** and carry f
 |---|---|---|---|---|---|---|---|---|---|
 | M1 | InvestAI Gigafactories | 4 | large | 0 | 7 | own jurisdiction | eu_ai_sovereignty up, via €200bn for four to five sites | 3 | running |
 | M2 | Tech sovereignty package | 4 | large | 0 | 6 | own jurisdiction | eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones | 3 | running |
-| M3 | EU Critical Systems Hardening and Bio-Detection Shield | 6 | large | 1 | 3 | own jurisdiction | resilience up substantially, ai_safety up slightly via incident learning | 3 | running |
+| M3 | EU Critical Systems Shield | 6 | large | 1 | 3 | own jurisdiction | resilience up, ai_safety up slightly via detection | 3 | running |
 
 They cost you 9 political capital this turn, which is the sum of the `cost_per_turn` column above. That column, like `id`, `started_turn` and `status`, is worked out for you and is not yours to write.
 
@@ -277,28 +282,27 @@ The only thing that changes any of this is an entry under `## Store changes` in 
 <!-- FROM {{previous_actions}} = the actor's own response from the previous turn -->
 
 ## Two-year commitment
-Europe able to withstand AI-enabled disruption on its own infrastructure
+Build European capacity to absorb and withstand AI-enabled disruption without depending on foreign control
 
 ## Statement changes
-add `two_year_commitment` (commitment): Europe able to withstand AI-enabled disruption on its own infrastructure
+- add `two_year_commitment` (commitment): Build European capacity to absorb and withstand AI-enabled disruption without depending on foreign control
 
 ## New measure
-**EU Critical Systems Hardening and Bio-Detection Shield**
-Hardens electricity transmission, ports and water utilities against AI-enabled intrusion with exercised cross-border response, and builds EU-wide biological detection and DNA-screening capacity.
-This now because the autumn intrusions prove detection would not have caught weeks-long presence, and the bio uplift finding opens a four-turn window before the risk matures; resilience is within EU control while frontier capability is not.
+**EU Critical Systems Shield**
+Hardens electricity transmission, ports and water utilities against AI-enabled intrusion with mandatory detection, incident response exercises and mutual aid. This and why now: the autumn intrusions prove detection would not have caught persistent access, and resilience is the lever fully within EU control while sovereignty builds.
 
 ## Store changes
 ```json
-{"store": [{"op": "add", "table": "measures", "fields": {"name": "EU Critical Systems Hardening and Bio-Detection Shield", "category": 6, "size": "large", "finish_turn": 4, "applies_to": "own jurisdiction", "targeted_effect": "resilience up substantially, ai_safety up slightly via incident learning"}, "grounds": "autumn grid/port intrusions plus bio precursor demand immediate hardening"}]}
+{"store": [{"op": "add", "table": "measures", "fields": {"name": "EU Critical Systems Shield", "category": 6, "size": "large", "finish_turn": 4, "applies_to": "own jurisdiction", "targeted_effect": "resilience up, ai_safety up slightly via detection"}, "grounds": "responding to cross-continent grid intrusion"}]}
 ```
 
 ## Priority
-EU Critical Systems Hardening and Bio-Detection Shield, because ongoing undetected access to EU grids demands containment before sovereignty investments can pay off.
+EU Critical Systems Shield, because the intrusion across EU grid operators demands an immediate resilience answer that outranks even the long-run compute build.
 
 ## In practice
-We task ENISA and the Health Emergency Preparedness and Response Authority (HERA) jointly, under the NIS2 and CER directives, with EU-coordinated audits of the two affected transmission operators plus all other TSOs, funded from InvestAI-adjacent Digital Europe reallocation and member-state co-finance. Energy and Transport Council formations carry the mandate; grid operators resisting mandatory exercise schedules are offered accelerated grid-connection and EU cybersecurity certification in return.
+We task ENISA and the CER Directive competent authorities to roll mandatory continuous monitoring and joint exercises for transmission system operators and major ports, funded via repurposed InvestAI and Connecting Europe Facility resilience lines. The Energy and Transport Council formations carry the mandate, with ACER coordinating cross-border mutual aid.
 
-In parallel we push the Gigafactories (M1) and Tech sovereignty package (M2) through DG CNECT siting decisions, using accelerated-permitting zones to keep private capital committed despite US export pressure on ASML, while we negotiate voluntary DNA-synthesis screening with European providers ahead of legislation. This keeps the long sovereignty build alive while the new shield absorbs this turn's political cost.
+We keep the Gigafactories (M1) and Tech sovereignty package (M2) running on their permitting and site-selection track, using DG CNECT and member-state fast-track zones to hold private capital in, while resisting US pressure on ASML through coordinated export review. Industry pushback on AI Act timelines is met by linking hardening funds to compliance cooperation.
 
 <!-- FROM user-prompts/actor.md (this scenario's override) -->
 
