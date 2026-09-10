@@ -23,9 +23,11 @@ Status: plan written 2026-09-10. Pilot (10 runs, 4/3/3 across arms) done and aud
 - Never-entered: 8 lost adds (~7%, worse than the 4.5% markdown baseline), all two shapes, both fixed and verified against the real failed blocks (nested `grounds` hoists; double-close `[{...}}]` salvages; missing commas/truncations still fail). Post-fix expectation is near zero on observed shapes; unobserved quirks at scale are the residual risk.
 - Referee: 123 approved, 7 deadlocks, all from the referee misreading invariant 2 as delta-proportionality. Constitution item 2 now states levels-not-deltas explicitly. **Zero live runs behind that edit.**
 
-## Before launching: open decision
+## Before launching: open decision -- RESOLVED 2026-09-10
 
-- **Event-list review is still pending** (ROADMAP Phase 4 open questions). The rerun bakes the current list in. Either review first, or accept the list as-is for this generation. Do not start the batch with this undecided.
+- **Event-list review is done** (`europe-2032: event catalogue re-read and overhaul`). Catalogue back at 37 events: cut the three campaign events (mechanically idle), `capability_plateau_evidence`, `verification_widens`, `election_annulled`, `backlash_physical`; added three catastrophic "all bets are off" events, `us_labs_nationalised`, `knowledge_work_augmented`, `embodied_ai_deployment`, `research_breakthrough`; rewrote `opaque_reasoning`, `automated_decision_scandal`, `us_china_agreement`; rule 5's take-away list extended; all three arm patches updated; base validates and every arm loads.
+- **Consequence for the pilot baselines:** election, posture, commitment, charge and custody findings stand (untouched mechanics). Fire-rate balance does NOT transfer -- new probabilities are first guesses, uncalibrated, and the old balance measurement was taken on the superseded list. The checkpoint's event checks are structural (family resolves, posture transitions, no missing sections), not distributional. Redo the balance measurement against the new list from an early batch chunk before trusting any rate.
+- Starting context was sharpened the same day (Millennium Prize, pivotal agent incident, training-cluster takeover) -- sign-off predates it and re-renders with the new generation.
 
 ## Pre-launch checklist
 
