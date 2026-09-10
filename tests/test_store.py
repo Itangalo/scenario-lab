@@ -506,7 +506,36 @@ def test_rows_render_every_column_including_derived(store: Store):
     rows = StoreView(store, "eu").rows("measures")
     assert "M1" in rows and "InvestAI Gigafactories" in rows
     assert "cost_per_turn" in rows and "status" in rows
-    assert rows.count("\n") == 3  # header, rule, two records
+    assert str(rows).count("\n") == 3  # header, rule, two records
+
+
+def test_rows_with_column_selection_renders_narrow_table(store: Store):
+    """Column selection fixes the token and attention cost of wide rows."""
+    add_two(store)
+    store.current_turn = 1
+    view = StoreView(store, "eu")
+    narrow = str(view.rows("measures", ["id", "name", "cost_per_turn"], status="running"))
+    assert "M1" in narrow and "InvestAI Gigafactories" in narrow
+    assert "cost_per_turn" in narrow
+    assert "targeted_effect" not in narrow and "status" not in narrow
+    wide = str(view.rows("measures", status="running"))
+    assert "status" in wide
+
+
+def test_selector_reducers_need_exactly_one_column(store: Store):
+    """rows('t', ['a', 'b']).sum has no defensible answer: a validation error."""
+    from scenario_lab.store import StoreSchemaError as _SSE
+
+    add_two(store)
+    view = StoreView(store, "eu")
+    assert view.rows("measures", ["cost_per_turn"]).sum == 5
+    assert view.rows("measures", status="running").count == 2
+    with pytest.raises(_SSE):
+        _ = view.rows("measures", ["cost_per_turn", "category"]).sum
+    with pytest.raises(_SSE):
+        _ = view.rows("measures").sum
+    with pytest.raises(StoreSchemaError):
+        _ = view.rows("measures", ["nope"]).sum
 
 
 def test_query_surface_stays_closed(store: Store):
@@ -657,6 +686,18 @@ def test_valid_reference_passes():
     assert errors == []
 
 
+def test_valid_chained_reference_passes():
+    schema = parse_store_schema(SCHEMA)
+    errors, warnings = check_store_references(
+        schema,
+        "Rows:\n{{ store.rows('measures', ['id', 'name', 'cost_per_turn'], status='running') }}\n"
+        "Charge {{ store.rows('measures', ['cost_per_turn'], status='running').sum }}.",
+        "metric-rules.md",
+    )
+    assert errors == []
+    assert warnings == []
+
+
 @pytest.mark.parametrize(
     "text",
     [
@@ -665,6 +706,11 @@ def test_valid_reference_passes():
         "{{ store.median('measures', 'cost_per_turn') }}",
         "{{ store.sum('measures', 'cost_per_turn', nope='x') }}",
         "{{ store.sum('measures') }}",
+        "{{ store.rows('measures', ['cost_per_turn', 'category']).sum }}",
+        "{{ store.rows('measures').sum }}",
+        "{{ store.rows('measures', ['nope']).sum }}",
+        "{{ store.rows('measures', 'cost_per_turn').sum }}",
+        "{{ store.rows('measures', ['cost_per_turn']).median }}",
     ],
 )
 def test_broken_reference_is_an_error(text: str):

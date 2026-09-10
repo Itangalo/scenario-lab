@@ -48,8 +48,8 @@ These are the measures you have in flight. They are **held for you** and carry f
 
 {{ store.rows('measures', status='running') }}
 
-They cost you {{ store.sum('measures', 'cost_per_turn', status='running') }} political capital this turn, which is the sum of the `cost_per_turn` column above. That column, like `id`, `started_turn` and `status`, is worked out for you and is not yours to write.
-{% if store.count('measures', status='finished') > 0 %}
+They cost you {{ store.rows('measures', ['cost_per_turn'], status='running').sum }} political capital this turn, which is the sum of the `cost_per_turn` column above. That column, like `id`, `started_turn` and `status`, is worked out for you and is not yours to write.
+{% if store.rows('measures', status='finished').count > 0 %}
 
 These have finished. From the turn each reached its finishing turn it costs you nothing, and it keeps delivering its effect for as long as it is sustained:
 

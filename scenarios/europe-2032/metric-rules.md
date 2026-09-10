@@ -41,12 +41,12 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
    - `public_sentiment` above `eu_political_capital`: +1 to +2 `eu_political_capital`
    - Every measure in flight costs `eu_political_capital` every turn until it finishes: −3 for a large measure, −2 for a small one. **This turn the portfolio in flight is:**
 
-{{ store.rows('measures', status='running') }}
+{{ store.rows('measures', ['id', 'name', 'cost_per_turn'], status='running') }}
 
-     **so {{ store.count('measures', status='running') }} measures are in flight and they come to −{{ store.sum('measures', 'cost_per_turn', status='running') }} `eu_political_capital` this turn.** Your charge line carries one term per measure, so it has exactly {{ store.count('measures', status='running') }} of them before the priority: a line with fewer has dropped one, and a line with more has charged something that is not in flight. That figure is the `cost_per_turn` column of the rows above, added up, and nothing else: the named priority's −1 below is charged on top of it, and is not in it. **A measure is charged in every turn up to but not including its finishing turn.** It is absent from those rows in the turn it finishes, because it is no longer in flight — that turn it is paid, not charged, under the next line.
+     **so {{ store.rows('measures', status='running').count }} measures are in flight and they come to −{{ store.rows('measures', ['cost_per_turn'], status='running').sum }} `eu_political_capital` this turn.** Your charge line carries one term per measure, so it has exactly {{ store.rows('measures', status='running').count }} of them before the priority: a line with fewer has dropped one, and a line with more has charged something that is not in flight. That figure is the `cost_per_turn` column of the rows above, added up, and nothing else: the named priority's −1 below is charged on top of it, and is not in it. **A measure is charged in every turn up to but not including its finishing turn.** It is absent from those rows in the turn it finishes, because it is no longer in flight — that turn it is paid, not charged, under the next line.
    - A named priority: −1 that turn.
    - A measure the Union abandoned or that was publicly defeated this turn — it left the portfolio by an explicit decision, which you will find in the actor's `## Store changes`: −3 to −6
-   - A measure reaching its finishing turn: +2 to +5, once, in that turn. {% if store.count('measures', finish_turn=turn) > 0 %}**Finishing this turn — these are paid, and are deliberately not in the charge above:**
+   - A measure reaching its finishing turn: +2 to +5, once, in that turn. {% if store.rows('measures', finish_turn=turn).count > 0 %}**Finishing this turn — these are paid, and are deliberately not in the charge above:**
 
 {{ store.rows('measures', finish_turn=turn) }}
 {% else %}Nothing finishes this turn.{% endif %}

@@ -344,11 +344,12 @@ The parser is forgiving about the shapes actors actually write: bullets or numbe
 What templates can read, in `metric-rules.md` and in prompt overrides:
 
 - `{{ store.rows('measures') }}` — a markdown table of every column, including derived ones
-- `{{ store.sum('measures', 'cost_per_turn') }}`, and `min`, `max`, `mean`, `count`
-- one equality filter as a keyword argument: `store.sum('measures', 'cost_per_turn', status='running')`
+- `{{ store.rows('measures', ['id', 'name', 'cost_per_turn'], status='running') }}` — the same table narrowed to three columns, for the token and attention cost of wide rows
+- `{{ store.rows('measures', ['cost_per_turn'], status='running').sum }}`, and `.min`, `.max`, `.mean`, `.count` — reducers on the selector; a bare selector renders, a reduced one yields a number
+- one equality filter as a keyword argument: `store.rows('measures', ['cost_per_turn'], status='running').sum`
 - `store.actor('eu')` to scope a scenario-wide view to one actor
 
-There are no joins and no arithmetic between aggregates, and a second filter is a validation error. **Render the rows beside any total** — the validator warns when a template aggregates over a table whose rows it never shows, because a number the reader cannot check against its terms is one they stop checking.
+There are no joins and no arithmetic between reducers, a second filter is a validation error, and a reducer other than `count` over anything but exactly one selected column is a validation error. **Render the rows beside any total** — the validator warns when a template aggregates over a table whose rows it never shows, because a number the reader cannot check against its terms is one they stop checking. The legacy `store.sum('measures', 'cost_per_turn', ...)` form still runs but new templates should use the selector.
 
 Two things to know before using this:
 

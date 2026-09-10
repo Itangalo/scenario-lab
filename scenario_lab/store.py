@@ -914,13 +914,143 @@ _builtin_min = min
 _builtin_max = max
 
 
+class StoreSelection:
+    """One selector: ``store.rows(table, [columns], **where)`` plus reducers.
+
+    A bare selector renders the markdown table (``str(selection)``); a reduced
+    one yields a number (``selection.sum`` and friends). Writing the same
+    selector twice -- once bare and once reduced -- is how "render the itemised
+    rows beside any total" is expressed.
+
+    Reducers are properties (not methods) so they resolve under the Jinja
+    sandbox without a call: ``{{ store.rows('measures', ['cost_per_turn'],
+    status='running').sum }}``. Underscored helpers stay out of reach by the
+    same rule that keeps ``StoreView._store`` out.
+    """
+
+    def __init__(
+        self,
+        store: Store,
+        table: str,
+        columns: Optional[list[str]],
+        where: dict[str, Any],
+        actor_id: Optional[str] = None,
+    ):
+        self._store = store
+        self._table = table
+        # None means every column, in schema order. A list means exactly those,
+        # in the given order.
+        self._columns = list(columns) if columns is not None else None
+        self._where = dict(where)
+        self._actor_id = actor_id
+
+    @property
+    def _view(self) -> "StoreView":
+        return StoreView(self._store, self._actor_id)
+
+    def _select(self) -> list[StoreRecord]:
+        view = self._view
+        records = view._select(self._table, self._where)
+        if self._columns is not None:
+            schema_table = self._store.schema.tables.get(self._table)
+            if schema_table is not None:
+                for name in self._columns:
+                    if name not in schema_table.columns:
+                        raise StoreSchemaError(
+                            f"store table '{self._table}' has no column '{name}'"
+                        )
+        return records
+
+    def _numbers(self) -> list[float]:
+        if self._columns is None or len(self._columns) != 1:
+            selected = (
+                "none" if not self._columns else ", ".join(self._columns)
+            )
+            raise StoreSchemaError(
+                f"rows('{self._table}', [{selected}]) has no single column to reduce: "
+                "a reducer needs exactly one selected column, e.g. "
+                f"rows('{self._table}', ['cost_per_turn']).sum"
+            )
+        column = self._columns[0]
+        return self._view._numbers(self._table, column, self._where)
+
+    @staticmethod
+    def _tidy(value: float) -> Any:
+        return int(value) if float(value).is_integer() else round(value, 3)
+
+    @property
+    def count(self) -> int:
+        return len(self._select())
+
+    @property
+    def sum(self) -> Any:
+        return self._tidy(_builtin_sum(self._numbers()))
+
+    @property
+    def min(self) -> Any:
+        values = self._numbers()
+        return self._tidy(_builtin_min(values)) if values else "(none)"
+
+    @property
+    def max(self) -> Any:
+        values = self._numbers()
+        return self._tidy(_builtin_max(values)) if values else "(none)"
+
+    @property
+    def mean(self) -> Any:
+        values = self._numbers()
+        # An empty mean is undefined, and rendering it as 0 would put an
+        # authoritative-looking number where there is no answer. These values
+        # are read as prose by a model, never consumed by Python arithmetic,
+        # so a visible marker is the honest rendering.
+        return self._tidy(_builtin_sum(values) / len(values)) if values else "(none)"
+
+    def __str__(self) -> str:
+        records = self._select()
+        schema_table = self._store.schema.tables[self._table]
+        columns = list(schema_table.columns) if self._columns is None else list(self._columns)
+        multi_actor = len({r.actor_id for r in self._store.live_records(self._table)}) > 1
+        header = (["actor"] if multi_actor else []) + columns
+
+        if not records:
+            return "(none)"
+
+        lines = ["| " + " | ".join(header) + " |",
+                 "|" + "|".join("---" for _ in header) + "|"]
+        for record in records:
+            cells = [record.actor_id] if multi_actor else []
+            for name in columns:
+                value = self._store.value(record, name)
+                cells.append("" if value is None else str(value).replace("|", "\\|"))
+            lines.append("| " + " | ".join(cells) + " |")
+        return "\n".join(lines)
+
+    def __repr__(self) -> str:
+        return str(self)
+
+    def __format__(self, spec: str) -> str:
+        return format(str(self), spec)
+
+    def __eq__(self, other: object) -> bool:
+        if isinstance(other, str):
+            return str(self) == other
+        if isinstance(other, StoreSelection):
+            return str(self) == str(other)
+        return NotImplemented
+
+    def __contains__(self, item: object) -> bool:
+        return str(item) in str(self)
+
+
 class StoreView:
     """What ``{{ store.… }}`` can do inside a template.
 
-    Closed and small by design. Five aggregates, one equality filter, no
-    joins, no arithmetic between aggregates. A rule that needs more than this
-    is asking for judgement, and judgement is the LLM's job -- which is the
-    whole reason the arithmetic was worth taking away from it.
+    The read surface is one selector plus reducers: ``store.rows(table,
+    [columns], **filter)`` renders the markdown table, and ``.count`` /
+    ``.sum`` / ``.min`` / ``.max`` / ``.mean`` on it yield numbers. Closed and
+    small by design: one equality filter, no joins, no arithmetic between
+    aggregates. A rule that needs more than this is asking for judgement, and
+    judgement is the LLM's job.
     """
 
     def __init__(self, store: Store, actor_id: Optional[str] = None):
@@ -969,32 +1099,27 @@ class StoreView:
     def _tidy(value: float) -> Any:
         return int(value) if float(value).is_integer() else round(value, 3)
 
-    # -- aggregates ------------------------------------------------------
+    # -- aggregates (legacy thin wrappers; prefer rows(...).<reducer>) ------
 
     def sum(self, table: str, column: str, **where: Any) -> Any:
-        return self._tidy(_builtin_sum(self._numbers(table, column, where)))
+        return self.rows(table, [column], **where).sum
 
     def count(self, table: str, **where: Any) -> int:
-        return len(self._select(table, where))
+        return self.rows(table, **where).count
 
     def min(self, table: str, column: str, **where: Any) -> Any:
-        values = self._numbers(table, column, where)
-        return self._tidy(_builtin_min(values)) if values else "(none)"
+        return self.rows(table, [column], **where).min
 
     def max(self, table: str, column: str, **where: Any) -> Any:
-        values = self._numbers(table, column, where)
-        return self._tidy(_builtin_max(values)) if values else "(none)"
+        return self.rows(table, [column], **where).max
 
     def mean(self, table: str, column: str, **where: Any) -> Any:
-        values = self._numbers(table, column, where)
-        # An empty mean is undefined, and rendering it as 0 would put an
-        # authoritative-looking number where there is no answer. These values
-        # are read as prose by a model, never consumed by Python arithmetic,
-        # so a visible marker is the honest rendering.
-        return self._tidy(_builtin_sum(values) / len(values)) if values else "(none)"
+        return self.rows(table, [column], **where).mean
 
-    def rows(self, table: str, **where: Any) -> str:
-        """The itemised rows, as a markdown table.
+    def rows(
+        self, table: str, columns: Optional[list[str] | tuple[str, ...]] = None, **where: Any
+    ) -> StoreSelection:
+        """The itemised rows, as a markdown table -- and the reducers on it.
 
         ``design-notes.md`` records that the portfolio charge binds *because*
         "the total cannot be known without summing it". Handing over a
@@ -1002,25 +1127,18 @@ class StoreView:
         to the portfolio at all, and the narrative drifting free of the store
         rather than the reverse. Every total is meant to be rendered beside
         these rows, and the validator warns when one is not.
+
+        ``columns`` narrows the rendered table: ``rows('measures',
+        ['id', 'name', 'cost_per_turn'], status='running')`` renders three
+        columns instead of ten. A reducer needs exactly one selected column --
+        ``rows('measures', ['cost_per_turn'], status='running').sum`` -- except
+        ``count``, which counts rows whatever is selected.
         """
-        records = self._select(table, where)
-        schema_table = self._store.schema.tables[table]
-        columns = list(schema_table.columns)
-        multi_actor = len({r.actor_id for r in self._store.live_records(table)}) > 1
-        header = (["actor"] if multi_actor else []) + columns
-
-        if not records:
-            return "(none)"
-
-        lines = ["| " + " | ".join(header) + " |",
-                 "|" + "|".join("---" for _ in header) + "|"]
-        for record in records:
-            cells = [record.actor_id] if multi_actor else []
-            for name in columns:
-                value = self._store.value(record, name)
-                cells.append("" if value is None else str(value).replace("|", "\\|"))
-            lines.append("| " + " | ".join(cells) + " |")
-        return "\n".join(lines)
+        if columns is not None and not isinstance(columns, (list, tuple)):
+            raise StoreSchemaError(
+                f"rows('{table}') takes a list of columns, got {columns!r}"
+            )
+        return StoreSelection(self._store, table, columns, where, self._actor_id)
 
 
 # --------------------------------------------------------------------------
@@ -1047,7 +1165,7 @@ def render_store_file(
     lines = [f"# Store: {actor_name} (turn {turn})", ""]
 
     for table_name in store.schema.tables:
-        lines += [f"## {table_name}", "", view.rows(table_name), ""]
+        lines += [f"## {table_name}", "", str(view.rows(table_name)), ""]
 
     lines += ["## Changes this turn", ""]
     if not section_present:
@@ -1088,8 +1206,17 @@ _CALL_RE = re.compile(
     r"\.(?P<method>[a-z_]+)\(\s*(?P<args>[^)]*)\)",
     re.IGNORECASE,
 )
+# The chained read surface: store.rows('t', ['c'], f='v').sum and friends. The
+# trailing reducer is part of the match so a bare rows() and a reduced one are
+# told apart at validation time.
+_ROWS_CHAIN_RE = re.compile(
+    r"\bstore(?:\.actor\(\s*['\"][^'\"]*['\"]\s*\))?"
+    r"\.rows\(\s*(?P<args>[^)]*)\)\s*(?:\.\s*(?P<reducer>[a-z_]+))?",
+    re.IGNORECASE,
+)
 _STRING_ARG_RE = re.compile(r"['\"]([^'\"]*)['\"]")
 _KWARG_RE = re.compile(r"([a-z_][a-z0-9_]*)\s*=")
+_LIST_RE = re.compile(r"\[([^\]]*)\]")
 
 
 @dataclass
@@ -1101,6 +1228,52 @@ class StoreReference:
     column: Optional[str]
     kwargs: tuple[str, ...]
     raw: str
+    # The chained read surface carries its column selection separately: None
+    # means "every column" (bare ``rows('t')`` or ``rows('t').count``), a tuple
+    # means exactly those. ``chained`` tells a rows() call apart from the
+    # legacy ``store.sum('t', 'c')`` form, which keeps ``column`` instead.
+    columns: Optional[tuple[str, ...]] = None
+    chained: bool = False
+
+
+def _parse_rows_args(args: str) -> tuple[Optional[str], Optional[tuple[str, ...]], bool]:
+    """Split a rows() argument list into table, column selection, bare-column flag.
+
+    Returns ``(table, columns, has_bare_column)`` where ``columns`` is None for
+    "every column" and a tuple otherwise. ``has_bare_column`` is true when the
+    call passes a second positional quoted string instead of a list -- e.g.
+    ``rows('measures', 'cost_per_turn')`` -- which the runtime rejects (it
+    takes a list) and the validator reports as such.
+    """
+    list_match = _LIST_RE.search(args)
+    columns: Optional[tuple[str, ...]] = None
+    rest = args
+    if list_match:
+        columns = tuple(_STRING_ARG_RE.findall(list_match.group(1)))
+        rest = args[: list_match.start()] + args[list_match.end():]
+    # Positional parts are the comma-separated pieces without an '='; keyword
+    # parts carry the single equality filter. A quoted filter value such as
+    # status='running' must not read as a column selection.
+    positionals: list[str] = []
+    for part in rest.split(","):
+        if "=" in part:
+            continue
+        part = part.strip()
+        if part:
+            positionals.append(part)
+    strings = _STRING_ARG_RE.findall(" ".join(positionals))
+    table = strings[0] if strings else None
+    has_bare_column = list_match is None and len(strings) > 1
+    if has_bare_column:
+        columns = tuple(strings[1:])
+    if list_match and columns is not None and len(positionals) > 1:
+        # A list selection plus an extra bare positional string: keep both so
+        # the validator can report the stray one rather than dropping it.
+        extra = [s for s in strings[1:] if s not in columns]
+        if extra:
+            columns = tuple([*columns, *extra])
+            has_bare_column = True
+    return table, columns, has_bare_column
 
 
 def find_store_references(text: str) -> list[StoreReference]:
@@ -1114,13 +1287,53 @@ def find_store_references(text: str) -> list[StoreReference]:
     time for exactly that reason.
     """
     references: list[StoreReference] = []
+    chained_spans: list[tuple[int, int]] = []
+    for match in _ROWS_CHAIN_RE.finditer(text):
+        args = match.group("args")
+        reducer = (match.group("reducer") or "rows").lower()
+        table, columns, _bare = _parse_rows_args(args)
+        column: Optional[str] = None
+        if reducer != "rows" and reducer != "count" and columns is not None and len(columns) == 1:
+            column = columns[0]
+        references.append(
+            StoreReference(
+                method=reducer,
+                table=table,
+                column=column,
+                kwargs=tuple(_KWARG_RE.findall(args)),
+                raw=match.group(0),
+                columns=tuple(columns) if columns is not None else None,
+                chained=True,
+            )
+        )
+        chained_spans.append((match.start(), match.end()))
     for match in _CALL_RE.finditer(text):
+        # Rows calls are owned by the chained pass above; matching them again
+        # here would double-count every selector.
+        if any(start <= match.start() < end for start, end in chained_spans):
+            continue
         args = match.group("args")
         strings = _STRING_ARG_RE.findall(args)
         method = match.group("method").lower()
+        if method == "rows":
+            # A rows() the chained regex missed (unusual spacing); parse it
+            # the same way rather than dropping it.
+            table, columns, _bare = _parse_rows_args(args)
+            references.append(
+                StoreReference(
+                    method="rows",
+                    table=table,
+                    column=None,
+                    kwargs=tuple(_KWARG_RE.findall(args)),
+                    raw=match.group(0),
+                    columns=tuple(columns) if columns is not None else None,
+                    chained=True,
+                )
+            )
+            continue
         table = strings[0] if strings else None
         column = strings[1] if len(strings) > 1 else None
-        if method in ("count", "rows"):
+        if method == "count":
             column = None
         references.append(
             StoreReference(
@@ -1168,19 +1381,67 @@ def check_store_references(schema: StoreSchema, text: str, where: str) -> tuple[
             continue
         if ref.method == "rows":
             itemised.add(ref.table)
-        elif ref.method != "count":
-            aggregated.add(ref.table)
+            if ref.chained and ref.columns is not None:
+                _table, _cols, bare = _parse_rows_args(
+                    _ROWS_CHAIN_RE.search(ref.raw).group("args")
+                    if _ROWS_CHAIN_RE.search(ref.raw)
+                    else ""
+                )
+                if bare:
+                    errors.append(
+                        f"{where}: `{ref.raw}` — pass columns as a list, e.g. "
+                        f"rows('{ref.table}', ['id', 'name'])"
+                    )
+                for name in ref.columns:
+                    if name not in table.columns:
+                        errors.append(
+                            f"{where}: `{ref.raw}` — table '{ref.table}' has no column '{name}' "
+                            f"(declared: {', '.join(table.columns)})"
+                        )
         else:
             aggregated.add(ref.table)
-
-        if ref.method not in ("count", "rows"):
-            if ref.column is None:
-                errors.append(f"{where}: `{ref.raw}` — {ref.method} needs a quoted column name")
-            elif ref.column not in table.columns:
-                errors.append(
-                    f"{where}: `{ref.raw}` — table '{ref.table}' has no column '{ref.column}' "
-                    f"(declared: {', '.join(table.columns)})"
+            if ref.chained:
+                _table, _cols, bare = _parse_rows_args(
+                    _ROWS_CHAIN_RE.search(ref.raw).group("args")
+                    if _ROWS_CHAIN_RE.search(ref.raw)
+                    else ""
                 )
+                if bare:
+                    errors.append(
+                        f"{where}: `{ref.raw}` — pass columns as a list, e.g. "
+                        f"rows('{ref.table}', ['cost_per_turn']).{ref.method}"
+                    )
+                    continue
+                if ref.method == "count":
+                    for name in ref.columns or ():
+                        if name not in table.columns:
+                            errors.append(
+                                f"{where}: `{ref.raw}` — table '{ref.table}' has no column '{name}' "
+                                f"(declared: {', '.join(table.columns)})"
+                            )
+                else:
+                    selected = list(ref.columns or ())
+                    if len(selected) != 1:
+                        shown = ", ".join(selected) if selected else "none"
+                        errors.append(
+                            f"{where}: `{ref.raw}` — {ref.method} needs exactly one "
+                            f"selected column, got [{shown}]: "
+                            f"rows('{ref.table}', ['<column>']).{ref.method}"
+                        )
+                    elif selected[0] not in table.columns:
+                        errors.append(
+                            f"{where}: `{ref.raw}` — table '{ref.table}' has no column '{selected[0]}' "
+                            f"(declared: {', '.join(table.columns)})"
+                        )
+            else:
+                if ref.method not in ("count", "rows"):
+                    if ref.column is None:
+                        errors.append(f"{where}: `{ref.raw}` — {ref.method} needs a quoted column name")
+                    elif ref.column not in table.columns:
+                        errors.append(
+                            f"{where}: `{ref.raw}` — table '{ref.table}' has no column '{ref.column}' "
+                            f"(declared: {', '.join(table.columns)})"
+                        )
         for name in ref.kwargs:
             if name not in table.columns:
                 errors.append(
@@ -1271,7 +1532,20 @@ def self_test() -> int:
     check("filtered sum", view.sum("measures", "cost_per_turn", size="large"), 3)
     check("mean", view.mean("measures", "cost_per_turn"), 2.5)
     check("min", view.min("measures", "cost_per_turn"), 2)
-    check("rows render", view.rows("measures").count("\n") >= 3, True)
+    check("rows render", str(view.rows("measures")).count("\n") >= 3, True)
+    # The selector surface: the same selector twice, once bare and once reduced.
+    check("selector sum", view.rows("measures", ["cost_per_turn"]).sum, 5)
+    check(
+        "selector filtered sum",
+        view.rows("measures", ["cost_per_turn"], size="large").sum,
+        3,
+    )
+    check("selector count", view.rows("measures", status="running").count, 2)
+    check(
+        "selector narrow render",
+        str(view.rows("measures", ["id", "name"], status="running")).count("cost_per_turn"),
+        0,
+    )
 
     # Derived status follows the turn, and the running filter with it.
     store.current_turn = 3
