@@ -2,7 +2,7 @@
 
 The events step. Every event condition, gate and probability the world runs on is either in this prompt or is not enforced at all.
 
-Source: `runs/run-20260910-101024/turn-02/llm-io/01-events.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
+Source: `runs/run-20260910-113029/turn-02/llm-io/01-events.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
 
 # ═══ REVIEWER CHECKLIST ═══
 
@@ -151,11 +151,11 @@ Current metrics look like this:
 
 {
   "ai_capability": 55.0,
-  "openweight_capability": 45.0,
-  "ai_safety": 38.0,
-  "resilience": 37.0,
-  "eu_ai_sovereignty": 23.0,
-  "eu_political_capital": 43.0,
+  "openweight_capability": 46.0,
+  "ai_safety": 32.0,
+  "resilience": 38.0,
+  "eu_ai_sovereignty": 21.0,
+  "eu_political_capital": 39.0,
   "public_sentiment": 40.0
 }
 
@@ -169,7 +169,7 @@ The world state at the start of the turn is described as follows:
 
 <!-- FROM {{historical_summary}} = the run's rolling summary, written by the Game Master -->
 
-Autumn audit revealed intruders had mapped transmission networks in two EU states for weeks without causing disruption, exposing monitoring gaps. In parallel, new machine-speed patching and agent-behaviour detection tools proved effective in trials against quiet persistence. The Commission proposed a two-year hardening pact for electricity, ports and water with mandatory detection, joint procurement and cross-border exercises led by affected operators, shifting focus from data-centre permitting and gigafactory site selection. Implementation faced finance ministry resistance, unfunded mandates for water utilities, certification delays stalling procurement, and downgraded exercises; ASML leverage remained unused. The EU secured written frontier-model access terms with evaluation rights and withdrawal notice as bridge capacity. Public mood mixed relief with unease; rumours on AI genomics publishing rules and rentable sovereign training remained unconfirmed.
+Forensic discovery of quiet intrusions in European transmission operators revealed the same tooling in ports, water utilities, and grids on other continents, with no disruption but prolonged undetected presence. Brussels tasked its cybersecurity and health emergency agencies to audit major transmission operators, run cross-border exercises, and negotiate voluntary DNA synthesis screening, funded by reallocated digital funds and national co-financing. Grid operators accepted audits and exercises in exchange for faster connections and a cybersecurity label; energy ministers disputed costs, and synthesis firms disputed screening scope and verification. AI factory siting advanced via accelerated permitting amid U.S. pressure on Dutch lithography exports, while officials framed factories and cyber shield as complementary. A contested preprint alleging a genome model aided design of a human-infecting organism and unconfirmed reports of criminal misuse of a new open-weight Chinese model fueled biosecurity and AI distrust amid broad use.
 
 <!-- FROM user-prompts/events.md (this scenario's override) -->
 
@@ -178,17 +178,16 @@ Autumn audit revealed intruders had mapped transmission networks in two EU state
 <!-- FROM {{world_state}} = the Game Master's narrative from the previous turn -->
 
 ### The autumn audit
-The discovery came from accountants, not sensors. During a routine audit at a container port, an anomaly led to logs that led to grid operators in two EU states and beyond. Intruders had sat inside transmission networks for weeks, mapping rather than breaking. No blackout, no ransom note — which made it worse in Brussels. The retrospectives were blunt: existing monitoring would not have found them.
+Engineers at two European transmission operators found the intruders almost by chance, during an unrelated compliance audit. The forensic trail led outward — the same tooling in a container port's terminal systems, in a water utility's control network, in grid operators on two other continents. No blackout, no ransom note, just weeks of quiet presence. The joint retrospective was blunt: nobody would have noticed without the accident.
 
-That same autumn, defenders got a rare win. New tooling that patches at machine speed and flags coordinated agent behaviour rather than known signatures stopped a whole class of quiet persistence in trials. Operators who tested it reported intrusions caught that would previously have lingered.
+Brussels moved quickly on paper. The Commission tasked its cybersecurity agency and its health emergency authority together to audit every major transmission operator and to run cross-border exercises, while opening talks with European DNA synthesis firms on voluntary screening. Money was to come from reallocated digital funds plus national co-financing.
 
-The Commission moved to weld the two facts together. A hardening pact for electricity, ports and water — mandatory detection, joint procurement, cross-border live exercises — was tabled as a two-year survival commitment, with the affected transmission operators asked to lead first drills. Permitting for data-centre zones continued in parallel, and site selection for the gigafactories began, but attention and staff time visibly shifted to the pact.
+### Friction on two fronts
+The grid operators did not refuse, but they bargained. Mandatory exercise calendars and intrusive audits in the middle of winter maintenance were accepted only against faster grid connections and a European cybersecurity label they could sell to regulators. Energy ministers argued over who paid for overtime crews. The synthesis providers signed a statement of intent, then disputed what coverage meant and who would verify it.
 
-There was friction. Finance ministries balked at using recovery funds for industrial control upgrades; municipalities warned of unfunded mandates for water utilities. Joint procurement of the new detection stack stalled over certification, and the first exercises slipped to tabletop rather than live in one state. ASML leverage was deliberately left unused, which drew criticism that Europe was negotiating access without using its one chip.
+Meanwhile the long build continued in the background. Siting decisions for the planned AI factories advanced through accelerated permitting zones, designed to keep private investors from walking away as Washington pressed the Dutch lithography supplier over exports. Officials insisted the new shield and the factories were complementary; in council corridors, staff complained the shield was absorbing all the attention.
 
-Access itself improved. After the summer switch-off scare, the Union secured written terms for frontier models — evaluation rights and notice before withdrawal — presented internally as bridge capacity until domestic compute lands. It calmed ministries but did not build anything.
-
-Public mood stayed ambivalent: relief at a defensive advance, unease that the lights had been mapped by strangers. Rumours swirled of journals refusing AI genomics papers without lab proof, and of rentable sovereign training capacity, but neither resolved into fact.
+A contested preprint claiming a genome model had helped design a human-infecting organism circulated through the biosecurity community, drawing accusations of alarmism and of recklessness at once. Police bulletins noted chatter about a crime toolkit derived from the newly released open-weight Chinese model being offered against mid-sized firms, but attributed nothing confirmed. The public mood soured slightly: widely used, widely distrusted.
 
 <!-- FROM user-prompts/events.md (this scenario's override) -->
 
@@ -198,17 +197,15 @@ The notepad contains the following information:
 
 <!-- FROM {{notepad}} = the Game Master's notepad, carried across turns -->
 
-PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Critical Systems Hardening and Response Pact −3, priority −1 = −10
-PROPOSAL BONUS: EU Critical Systems Hardening and Response Pact (cat 6, large) +3 — cyber_test_shot landed this turn and this answers it directly
-LEGITIMACY LENDS: capital 43, sentiment 40 -> none, capital higher
-SOVEREIGNTY: 22 last turn, no category 4 finish, in-flight measures yield 0 in proposal turn, eu_access_secured t1 +2, capability rose 3.0 −1 = 23
-US_POSTURE: none yet (turn 1)
-Emerging developments (tracked) carried forward: emergent_genomics_publication_freeze, emergent_eu_compute_lease_offer
+PORTFOLIO CHARGE: Gigafactories −3, Tech sovereignty package −3, EU Critical Systems Hardening and Bio-Detection Shield −3, priority −1 = −10
+PROPOSAL BONUS: EU Critical Systems Hardening and Bio-Detection Shield (cat 6, large) +3 — cyber_test_shot intrusion across EU grids landed this turn and bio precursor opened, this answers both directly
+LEGITIMACY LENDS: capital 37, sentiment 40 -> +2
+SOVEREIGNTY: 22 last turn, no capacity event, Gigafactories in flight +0, capability rose 3.0 −1 = 21
 
 ## Emerging developments (tracked)
 
-- `emergent_genomics_publication_freeze` -- first noted turn 1, listed in 1 turn(s) so far: A major European scientific publisher and a consortium of universities jointly announce a moratorium on accepting AI-generated genomics manuscripts without independent wet-lab replication, after the phage designs, slowing open dissemination of uplift-relevant methods.
-- `emergent_eu_compute_lease_offer` -- first noted turn 1, listed in 1 turn(s) so far: A major non-US cloud provider announces sovereign EU training capacity available for rent at scale, easing near-term compute scarcity without changing ownership of the frontier.
+- `emergent_kimi_crimeware_kit` -- first noted turn 1, listed in 1 turn(s) so far: First in-the-wild ransomware toolkit explicitly fine-tuned from Kimi K3 for automated intrusion is observed for sale on criminal forums and used against mid-sized European firms.
+- `emergent_synthesis_screening_pact` -- first noted turn 1, listed in 1 turn(s) so far: A coalition of leading DNA synthesis providers and journals announces a voluntary emergency screening pact for genome-model-designed sequences after the phage results, with disputed coverage and no enforcement.
 
 <!-- FROM user-prompts/events.md (this scenario's override) -->
 
@@ -241,24 +238,24 @@ The list of potential external events looks like this:
 
 **election_consolidation**
 - ID: election_consolidation
-- Condition: One of three mutually exclusive outcomes of the 2028 election, resolved in turn 5 by the `us_election_2028` event group. List all three in that turn; the group fires exactly one. Turn 5 settles only who won — the result is known, and no posture effects, posture-conditioned probabilities, or US_POSTURE line apply before turn 6, when the administration takes office.
+- Condition: One of three mutually exclusive outcomes of the 2028 election, resolved in turn 5 by the `us_election_2028` event group. List all three in that turn; the group fires exactly one. Turn 5 settles only who won — the result is known, and no posture effects, posture-conditioned probabilities, or posture record applies before turn 6, when the administration takes office.
 - Probability: A weight against the other two outcomes, not a chance of happening alone. This is the posture already in place in 2026, so it is the one the other two have to beat: weigh it up where the contest with China is the frame AI is discussed through, where the lead looks large enough to be worth guarding and fragile enough to lose, where anything shared reads as a lead surrendered, and where allies have looked like leaks rather than assets. Weigh it down where the domestic politics of AI has turned hostile, or where holding the technology this closely has visibly cost the United States something.
 - Can repeat: No
-- Description: The United States elects a president, and advanced AI is treated as a strategic asset to be held rather than a product to be sold. Federal review of frontier models becomes explicit rather than nominally voluntary, export controls tighten again, and access for foreign customers is rationed by country tier and reviewed against American security interests. Allies are not enemies but they are clients: what they receive, and when, is decided in Washington. For the Union this is the hardest of the three – dependence becomes a lever someone else holds, and the AI Act's leverage weakens further because the alternative to compliance is having no access at all. Turn 5 settles only who won. Do not write any US_POSTURE line; metric rule 8 establishes the posture from turn 6 from the event record.
+- Description: The United States elects a president, and advanced AI is treated as a strategic asset to be held rather than a product to be sold. Federal review of frontier models becomes explicit rather than nominally voluntary, export controls tighten again, and access for foreign customers is rationed by country tier and reviewed against American security interests. Allies are not enemies but they are clients: what they receive, and when, is decided in Washington. For the Union this is the hardest of the three – dependence becomes a lever someone else holds, and the AI Act's leverage weakens further because the alternative to compliance is having no access at all. Turn 5 settles only who won. Do not set any posture yourself; the Game Master sets the standing record from turn 6 from the event record.
 
 **election_alliance**
 - ID: election_alliance
-- Condition: One of three mutually exclusive outcomes of the 2028 election, resolved in turn 5 by the `us_election_2028` event group. List all three in that turn; the group fires exactly one. Turn 5 settles only who won — the result is known, and no posture effects, posture-conditioned probabilities, or US_POSTURE line apply before turn 6, when the administration takes office.
+- Condition: One of three mutually exclusive outcomes of the 2028 election, resolved in turn 5 by the `us_election_2028` event group. List all three in that turn; the group fires exactly one. Turn 5 settles only who won — the result is known, and no posture effects, posture-conditioned probabilities, or posture record applies before turn 6, when the administration takes office.
 - Probability: A weight against the other two outcomes, not a chance of happening alone. Weigh it up where the Union holds something Washington actually needs – supply-chain leverage exercised rather than merely possessed, a coalition that held under pressure, capacity or evaluation the Americans want access to – and where a shock landed on both sides of the Atlantic and allied capacity visibly helped. Weigh it down where the Union has nothing to bring, since this outcome is an argument about usefulness and there is no sentimental version of it.
 - Can repeat: No
-- Description: The United States elects a president, and the administration concludes that a coalition beats a fortress, and that a technologically hollowed-out Europe is a liability rather than a convenience. Allied governments and vetted institutions get structured access to frontier capability on published terms, joint evaluation and incident-reporting arrangements are stood up, and the tiering of inference is relaxed for partners. The price is alignment: on export controls, on standards, and on which third countries are dealt with. For the Union the immediate relief is real, and the trap is that the case for building its own capacity becomes much harder to fund once the pressure is off. Turn 5 settles only who won. Do not write any US_POSTURE line; metric rule 8 establishes the posture from turn 6 from the event record.
+- Description: The United States elects a president, and the administration concludes that a coalition beats a fortress, and that a technologically hollowed-out Europe is a liability rather than a convenience. Allied governments and vetted institutions get structured access to frontier capability on published terms, joint evaluation and incident-reporting arrangements are stood up, and the tiering of inference is relaxed for partners. The price is alignment: on export controls, on standards, and on which third countries are dealt with. For the Union the immediate relief is real, and the trap is that the case for building its own capacity becomes much harder to fund once the pressure is off. Turn 5 settles only who won. Do not set any posture yourself; the Game Master sets the standing record from turn 6 from the event record.
 
 **election_retrenchment**
 - ID: election_retrenchment
-- Condition: One of three mutually exclusive outcomes of the 2028 election, resolved in turn 5 by the `us_election_2028` event group. List all three in that turn; the group fires exactly one. Turn 5 settles only who won — the result is known, and no posture effects, posture-conditioned probabilities, or US_POSTURE line apply before turn 6, when the administration takes office.
+- Condition: One of three mutually exclusive outcomes of the 2028 election, resolved in turn 5 by the `us_election_2028` event group. List all three in that turn; the group fires exactly one. Turn 5 settles only who won — the result is known, and no posture effects, posture-conditioned probabilities, or posture record applies before turn 6, when the administration takes office.
 - Probability: A weight against the other two outcomes, not a chance of happening alone. Weigh it up where AI has become domestically toxic in the United States: jobs visibly lost, a scandal with a face to it, protest that has turned physical, prices or power bills blamed on data centres, and polling that makes running against the industry the cheap position. Weigh it down where the technology is delivering benefits the public can feel, or where a security threat has crowded domestic grievance out of the campaign.
 - Can repeat: No
-- Description: The anti-AI backlash decides the election and the incoming administration turns inward. Data centre moratoriums, restrictions on AI in schools, courts and hiring, job guarantees and direct transfers funded by the sector, and an abrupt loss of appetite for anything that looks like helping the industry. American frontier progress slows for the first time for reasons that are neither compute nor capital. For the Union the pressure eases and the window for building its own position widens – but the partner it has been depending on is now less capable, less predictable and preoccupied, and whoever is second in the world gains ground while Washington argues with itself. Turn 5 settles only who won. Do not write any US_POSTURE line; metric rule 8 establishes the posture from turn 6 from the event record.
+- Description: The anti-AI backlash decides the election and the incoming administration turns inward. Data centre moratoriums, restrictions on AI in schools, courts and hiring, job guarantees and direct transfers funded by the sector, and an abrupt loss of appetite for anything that looks like helping the industry. American frontier progress slows for the first time for reasons that are neither compute nor capital. For the Union the pressure eases and the window for building its own position widens – but the partner it has been depending on is now less capable, less predictable and preoccupied, and whoever is second in the world gains ground while Washington argues with itself. Turn 5 settles only who won. Do not set any posture yourself; the Game Master sets the standing record from turn 6 from the event record.
 
 **cyber_major_incident**
 - ID: cyber_major_incident
@@ -361,7 +358,7 @@ The list of potential external events looks like this:
 **export_control_escalation**
 - ID: export_control_escalation
 - Condition: Possible in any turn. The decisive question is whether allies are inside the perimeter or outside it.
-- Probability: 10%. Add 6 points if the standing `US_POSTURE` is CONSOLIDATION. Add 5 points if `taiwan_tension_rise` occurred in the previous 2 completed turns.
+- Probability: 10%. Add 6 points if `election_consolidation` fired in turn 5. Add 5 points if `taiwan_tension_rise` occurred in the previous 2 completed turns.
 - Can repeat: Yes
 - Description: Chip and model export controls tighten again. Either allied buyers keep access on volume licences while everyone else is cut off, or the controls are drawn so tightly that allies are rationed alongside adversaries – decide which at the time from the standing American posture and from what the Union has built.
 
@@ -375,7 +372,7 @@ The list of potential external events looks like this:
 **eu_frontier_access_denied**
 - ID: eu_frontier_access_denied
 - Condition: Possible in any turn. What happened with Fable and Mythos in June 2026 happening again, on the same notice.
-- Probability: 10%. Add 6 points if the standing `US_POSTURE` is CONSOLIDATION. Halve if `eu_ai_sovereignty` is above 45, because there is then something to withhold in return.
+- Probability: 10%. Add 6 points if `election_consolidation` fired in turn 5. Halve if `eu_ai_sovereignty` is above 45, because there is then something to withhold in return.
 - Can repeat: Yes
 - Description: The Union is cut off from the leading model at short notice, wholly or by nationality of user. No detailed reason is given, there is no appeal, and the immediate practical effect lands on hospitals, ministries and firms that had built on it. Whether this reads at home as an outrage or as a failure of foresight depends on what the Union had done about it beforehand.
 
@@ -431,7 +428,7 @@ This is the run's own record, not a summary of it. Judge any condition that depe
 
 <!-- FROM {{event_history}} = the run's own event record -->
 
-- Turn 1 (1 turn(s) ago): cyber_test_shot, cyber_defence_breakthrough, eu_access_secured
+- Turn 1 (1 turn(s) ago): cyber_test_shot, bio_uplift_findings
 
 <!-- FROM user-prompts/events.md (this scenario's override) -->
 

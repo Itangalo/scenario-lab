@@ -2,7 +2,7 @@
 
 The Game Master step that writes the world state. It decides what the actor's actions achieved and what the metrics become, so the metric rules must be visible here in full and unambiguous.
 
-Source: `runs/run-20260910-101024/turn-02/llm-io/05-metrics.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
+Source: `runs/run-20260910-113029/turn-02/llm-io/05-metrics.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
 
 # ═══ REVIEWER CHECKLIST ═══
 
@@ -119,6 +119,10 @@ When judging success and writing the narrative, be realistic rather than harmoni
 * If every actor's actions succeeded cleanly this turn, reconsider your assessment before finalizing it.
 * Update the notepad with important information that should be remembered for the next turn, but doesn't fit in metrics or the narrative. This can be ongoing events, conditions that have come into effect, or other information affecting future turns. The content you write here will REPLACE the current notepad. Make sure to include any previous notes you wish to keep. If nothing needs to be noted, leave the notepad empty.
 
+## Records you alone write
+
+Some state in this scenario lives in run-owned tables that only you write: standing conditions of the world no actor may rewrite. They carry forward on their own. The only thing that changes them is a JSON block under a `## Store changes` heading in your answer: `{"store": [{"op": "add", ...}]}` with `add`, `update` (named by `id`), or `delete` (named by `id`, carrying `grounds`). One malformed entry rejects that entry while the rest apply; an absent section is recorded as a fault. Actor-owned records are outside your reach unless your turn instructions explicitly give you scheduling moves there -- and then only moves, with the reason stated, never additions or removals.
+
 ## Constitutional Constraints
 
 These are hard rules of this world. They are checked after you answer, and an update that breaks one is sent back to be redone – so read them before deciding metric values, and write a narrative that is consistent with them rather than one that has to be corrected afterwards. Where a constraint is conditional, check whether its condition actually holds before applying it.
@@ -137,11 +141,11 @@ These are hard rules of this world. They are checked after you answer, and an up
 
 3. **Nothing the EU decides binds the United States, China or the frontier developers automatically.** Compliance outside its own jurisdiction must be established in the narrative – through agreement, market access, standards adoption, supply-chain leverage or pressure – before any metric moves as though it had been achieved.
 
-4. **The American posture, once elected, is standing.** Turn 5 settles who won the 2028 election; the `US_POSTURE:` line is written in turn 6, when the administration takes office, and carried in the notepad every subsequent turn, conditioning the world under metric rule 8. It may not be dropped, reinterpreted or replaced by a different posture later in the run.
+4. **The American posture, once elected, is standing.** Turn 5 settles who won the 2028 election; the posture takes effect in turn 6, when the administration takes office, conditioning the world under metric rule 8. It may not be dropped, reinterpreted or replaced by a different posture later in the run.
 
 ## Modelling choices
 
-5. **At most one new measure per turn, and at most one named priority.** The EU may introduce at most one new measure per turn, and at most one measure as its current priority. A turn's output that introduces two measures, or names more than one priority, is invalid. Widening the scope of an existing measure is ok, and usually moves the finishing date further out.
+5. **At most one new measure per turn, and at most one named priority.** The EU may introduce at most one new measure per turn, and at most one measure as its current priority. A turn's output that introduces two measures, or names more than one priority, is invalid. Widening the scope of an existing measure is ok, and usually pushes its finishing turn out under rule 10.
 
 6. **No measure is implemented instantly.** Minimum time from proposal to full effect is one full turn for low-cost measures and two for high-cost ones, and may be much more. Effect grows the closer the measure is to be completed.
 
@@ -223,13 +227,14 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
 |---|---|---|
 | M1 | InvestAI Gigafactories | 3 |
 | M2 | Tech sovereignty package | 3 |
-| M3 | EU Critical Systems Hardening and Response Pact | 3 |
-| M4 | EU Sovereign Fallback Compute Lease | 2 |
+| M3 | EU Critical Systems Hardening and Bio-Detection Shield | 3 |
+| M4 | EU Incident and Near-Miss Reporting Network | 2 |
 
-     **so 4 measures are in flight and they come to −11 `eu_political_capital` this turn.** Your charge line carries one term per measure, so it has exactly 4 of them before the priority: a line with fewer has dropped one, and a line with more has charged something that is not in flight. That figure is the `cost_per_turn` column of the rows above, added up, and nothing else: the named priority's −1 below is charged on top of it, and is not in it. **A measure is charged in every turn up to but not including its finishing turn.** It is absent from those rows in the turn it finishes, because it is no longer in flight — that turn it is paid, not charged, under the next line.
+     **so 4 measures are in flight and they come to −11 `eu_political_capital` this turn.** That figure is the `cost_per_turn` column of the rows above, added up, and nothing else: the named priority's −1 below is charged on top of it, and is not in it. Your charge line carries one term per measure -- 4 of them before the priority. **A measure is charged in every turn up to but not including its finishing turn.**
    - A named priority: −1 that turn.
-   - A measure the Union abandoned or that was publicly defeated this turn — it left the portfolio by an explicit decision, which you will find in the actor's `## Store changes`: −3 to −6
-   - A measure reaching its finishing turn: +2 to +5, once, in that turn. Nothing finishes this turn.    - A measure just added, addressing a negative event from the last three rounds: +1 to +8. Larger for bigger events, more recent events and larger measures; smaller for the reverse.
+   - A measure the Union abandoned or that was publicly defeated this turn — it left the portfolio by an explicit `delete`, which you will find in the actor's `## Store changes`: −3 to −6
+   - A measure reaching its finishing turn: +2 to +5, once, in that turn. Nothing finishes this turn.  A measure is finished when the current turn reaches its finishing turn: its status flips by itself, it stops costing from that turn, and no entry from anyone is needed. Turn Y is the first turn it does not cost anything, and the turn it pays out.
+    - A measure just added, addressing a negative event from the last three rounds: +1 to +8. Larger for bigger events, more recent events and larger measures; smaller for the reverse.
     - The event `middle_power_coalition`, in the turn it fires: +2 to +4, once. Its sovereignty effect is already covered: coordination that secures supply-chain access counts under rule 5's event term.
    - Negative events this turn move `eu_political_capital` in either direction; the sign follows from where the harm originated and whether the EU had acted beforehand.
      - external origin, effect dampened by finished measure: +3 to +10. The bigger the event and the larger the measure, the bigger the gain.
@@ -248,7 +253,13 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
 
 ## Other effects
 
-8. **The American posture is a standing condition from turn 6 onward.** In turn 5 exactly one of `election_consolidation`, `election_alliance` and `election_retrenchment` occurs; which one is decided before you see it. Turn 5 settles only who won — the result is known, nothing else changes: no posture effects, no posture-conditioned probabilities, no US_POSTURE line. From turn 6 the winner governs, when the new administration takes office. In turn 6, read the turn-5 winner from the event record and write the matching `US_POSTURE:` line into the world state, then carry it in the notepad every turn after. The events themselves never write this line.
+8. **The American posture is a standing condition from turn 6 onward, held in the store.** In turn 5 exactly one of `election_consolidation`, `election_alliance` and `election_retrenchment` occurs; which one is decided before you see it. Turn 5 settles only who won — the result is known, nothing else changes: no posture effects, no posture-conditioned probabilities, no posture. From turn 6 the winner governs, when the new administration takes office. The record reads:
+
+| id | posture |
+|---|---|
+| S1 | undecided |
+
+In turn 5, set it to `pending` — the administration has not taken office — and in particular never to a named posture: a named posture would let this turn's judgments price a government that does not exist. From turn 6, read the turn-5 winner from the event record and set the matching posture, then leave it standing: it may not be dropped, reinterpreted or replaced later in the run. The events themselves never write this record, and the narrative never carries it — the rows above are where it lives, every turn.
 
    - **CONSOLIDATION** — frontier access rationed by country tier:
      - categories 4 and 5 cost one size level more
@@ -271,10 +282,11 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
 
 10. **Managing the measure portfolio**
     - The portfolio is held by the framework, not restated by the Union. A measure's cost, starting turn and finishing turn are carried forward by Python; nothing the Union writes or omits can drop an entry, and its starting turn cannot be rewritten at all. Do not ask the Union to re-list its measures, and do not treat a measure's absence from the narrative as its departure. The rows printed under rule 6 are the portfolio.
-    - A finishing turn moves only by an explicit `update` in the Union's `## Store changes`, and three things justify one. Nothing moves it silently.
+    - A finishing turn moves only by your `update`, and three things justify one — each stated in the entry's grounds, because a move that rewrites someone else's entry without a reason is not auditable. Nothing moves it silently.
       - It is a named priority: may pull it in by one turn
       - Left unprioritised several consecutive turns: may push it out by one
       - An event: either, and rarely by more than one
+    - The Union cannot move it at all: no `update` entry of theirs reaches a finishing turn. If this turn's events or the Union's own neglect should have moved one and you do not move it, say so in the Narrative — that is a thing the world noticed and the Union did not act on, and it is the kind of pressure that shows up in the next turn's answer.
     - If `eu_political_capital` is below 20, the EU starts losing control of its own agenda:
       - **The named priority has no effect, and no cost.** Pull-in-by-one-turn does not apply, pushing a measure buys nothing, and the priority's −1 is not charged. Naming a priority changes nothing at all.
     - If `eu_political_capital` is below 12, control slips further:
@@ -299,11 +311,11 @@ Current metrics look like this:
 
 {
   "ai_capability": 55.0,
-  "openweight_capability": 45.0,
-  "ai_safety": 38.0,
-  "resilience": 37.0,
-  "eu_ai_sovereignty": 23.0,
-  "eu_political_capital": 43.0,
+  "openweight_capability": 46.0,
+  "ai_safety": 32.0,
+  "resilience": 38.0,
+  "eu_ai_sovereignty": 21.0,
+  "eu_political_capital": 39.0,
   "public_sentiment": 40.0
 }
 
@@ -317,7 +329,7 @@ The world state at the start of the turn is described as follows:
 
 <!-- FROM {{historical_summary}} = the run's rolling summary, written by the Game Master -->
 
-Autumn audit revealed intruders had mapped transmission networks in two EU states for weeks without causing disruption, exposing monitoring gaps. In parallel, new machine-speed patching and agent-behaviour detection tools proved effective in trials against quiet persistence. The Commission proposed a two-year hardening pact for electricity, ports and water with mandatory detection, joint procurement and cross-border exercises led by affected operators, shifting focus from data-centre permitting and gigafactory site selection. Implementation faced finance ministry resistance, unfunded mandates for water utilities, certification delays stalling procurement, and downgraded exercises; ASML leverage remained unused. The EU secured written frontier-model access terms with evaluation rights and withdrawal notice as bridge capacity. Public mood mixed relief with unease; rumours on AI genomics publishing rules and rentable sovereign training remained unconfirmed.
+Forensic discovery of quiet intrusions in European transmission operators revealed the same tooling in ports, water utilities, and grids on other continents, with no disruption but prolonged undetected presence. Brussels tasked its cybersecurity and health emergency agencies to audit major transmission operators, run cross-border exercises, and negotiate voluntary DNA synthesis screening, funded by reallocated digital funds and national co-financing. Grid operators accepted audits and exercises in exchange for faster connections and a cybersecurity label; energy ministers disputed costs, and synthesis firms disputed screening scope and verification. AI factory siting advanced via accelerated permitting amid U.S. pressure on Dutch lithography exports, while officials framed factories and cyber shield as complementary. A contested preprint alleging a genome model aided design of a human-infecting organism and unconfirmed reports of criminal misuse of a new open-weight Chinese model fueled biosecurity and AI distrust amid broad use.
 
 <!-- FROM user-prompts/metrics_update.md (this scenario's override) -->
 
@@ -326,17 +338,16 @@ Autumn audit revealed intruders had mapped transmission networks in two EU state
 <!-- FROM {{world_state}} = the Game Master's narrative from the previous turn -->
 
 ### The autumn audit
-The discovery came from accountants, not sensors. During a routine audit at a container port, an anomaly led to logs that led to grid operators in two EU states and beyond. Intruders had sat inside transmission networks for weeks, mapping rather than breaking. No blackout, no ransom note — which made it worse in Brussels. The retrospectives were blunt: existing monitoring would not have found them.
+Engineers at two European transmission operators found the intruders almost by chance, during an unrelated compliance audit. The forensic trail led outward — the same tooling in a container port's terminal systems, in a water utility's control network, in grid operators on two other continents. No blackout, no ransom note, just weeks of quiet presence. The joint retrospective was blunt: nobody would have noticed without the accident.
 
-That same autumn, defenders got a rare win. New tooling that patches at machine speed and flags coordinated agent behaviour rather than known signatures stopped a whole class of quiet persistence in trials. Operators who tested it reported intrusions caught that would previously have lingered.
+Brussels moved quickly on paper. The Commission tasked its cybersecurity agency and its health emergency authority together to audit every major transmission operator and to run cross-border exercises, while opening talks with European DNA synthesis firms on voluntary screening. Money was to come from reallocated digital funds plus national co-financing.
 
-The Commission moved to weld the two facts together. A hardening pact for electricity, ports and water — mandatory detection, joint procurement, cross-border live exercises — was tabled as a two-year survival commitment, with the affected transmission operators asked to lead first drills. Permitting for data-centre zones continued in parallel, and site selection for the gigafactories began, but attention and staff time visibly shifted to the pact.
+### Friction on two fronts
+The grid operators did not refuse, but they bargained. Mandatory exercise calendars and intrusive audits in the middle of winter maintenance were accepted only against faster grid connections and a European cybersecurity label they could sell to regulators. Energy ministers argued over who paid for overtime crews. The synthesis providers signed a statement of intent, then disputed what coverage meant and who would verify it.
 
-There was friction. Finance ministries balked at using recovery funds for industrial control upgrades; municipalities warned of unfunded mandates for water utilities. Joint procurement of the new detection stack stalled over certification, and the first exercises slipped to tabletop rather than live in one state. ASML leverage was deliberately left unused, which drew criticism that Europe was negotiating access without using its one chip.
+Meanwhile the long build continued in the background. Siting decisions for the planned AI factories advanced through accelerated permitting zones, designed to keep private investors from walking away as Washington pressed the Dutch lithography supplier over exports. Officials insisted the new shield and the factories were complementary; in council corridors, staff complained the shield was absorbing all the attention.
 
-Access itself improved. After the summer switch-off scare, the Union secured written terms for frontier models — evaluation rights and notice before withdrawal — presented internally as bridge capacity until domestic compute lands. It calmed ministries but did not build anything.
-
-Public mood stayed ambivalent: relief at a defensive advance, unease that the lights had been mapped by strangers. Rumours swirled of journals refusing AI genomics papers without lab proof, and of rentable sovereign training capacity, but neither resolved into fact.
+A contested preprint claiming a genome model had helped design a human-infecting organism circulated through the biosecurity community, drawing accusations of alarmism and of recklessness at once. Police bulletins noted chatter about a crime toolkit derived from the newly released open-weight Chinese model being offered against mid-sized firms, but attributed nothing confirmed. The public mood soured slightly: widely used, widely distrusted.
 
 <!-- FROM user-prompts/metrics_update.md (this scenario's override) -->
 
@@ -346,16 +357,15 @@ The notepad contains the following information:
 
 <!-- FROM {{notepad}} = the Game Master's notepad, carried across turns -->
 
-PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Critical Systems Hardening and Response Pact −3, priority −1 = −10
-PROPOSAL BONUS: EU Critical Systems Hardening and Response Pact (cat 6, large) +3 — cyber_test_shot landed this turn and this answers it directly
-LEGITIMACY LENDS: capital 43, sentiment 40 -> none, capital higher
-SOVEREIGNTY: 22 last turn, no category 4 finish, in-flight measures yield 0 in proposal turn, eu_access_secured t1 +2, capability rose 3.0 −1 = 23
-US_POSTURE: none yet (turn 1)
-Emerging developments (tracked) carried forward: emergent_genomics_publication_freeze, emergent_eu_compute_lease_offer
+PORTFOLIO CHARGE: Gigafactories −3, Tech sovereignty package −3, EU Critical Systems Hardening and Bio-Detection Shield −3, priority −1 = −10
+PROPOSAL BONUS: EU Critical Systems Hardening and Bio-Detection Shield (cat 6, large) +3 — cyber_test_shot intrusion across EU grids landed this turn and bio precursor opened, this answers both directly
+LEGITIMACY LENDS: capital 37, sentiment 40 -> +2
+SOVEREIGNTY: 22 last turn, no capacity event, Gigafactories in flight +0, capability rose 3.0 −1 = 21
 
 ## Emerging developments (tracked)
 
-- `emergent_genomics_publication_freeze` -- first noted turn 1, listed in 2 turn(s) so far: A major European scientific publisher and a consortium of universities jointly announce a moratorium on accepting AI-generated genomics manuscripts without independent wet-lab replication, after the phage designs, slowing open dissemination of uplift-relevant methods.
+- `emergent_kimi_crimeware_kit` -- first noted turn 1, listed in 2 turn(s) so far: First in-the-wild ransomware toolkit explicitly fine-tuned from Kimi K3 for automated intrusion is observed for sale on criminal forums and used against mid-sized European firms.
+- `emergent_synthesis_screening_pact` -- first noted turn 1, listed in 2 turn(s) so far: A coalition of leading DNA synthesis providers and journals announces a voluntary emergency screening pact for genome-model-designed sequences after the phage results, with disputed coverage and no enforcement.
 
 <!-- FROM user-prompts/metrics_update.md (this scenario's override) -->
 
@@ -373,7 +383,7 @@ The "Emerging developments (tracked)" section lists developments that recent tur
 
    `PORTFOLIO CHARGE: Gigafactories −3, Frontier Access Guarantee −3, Resilience Surge −2, priority −1 = −9`
 
-   **The measures half of that line is given to you.** Rule 6 above prints the portfolio as it now stands and what the measures come to, added up from the rows. Itemise them anyway — the line is what makes the charge checkable — and check that your measure terms come to that same figure. If they do not, you have misread a row, and the rows are right.
+   **The measures half of that line is given to you.** Rule 6 above prints the portfolio as it now stands and what the measures come to, added up from the rows -- take that figure, do not recompute it. Itemise the measures anyway — the line is what makes the charge checkable — and check that your measure terms come to that same figure. If they do not, you have misread a row, and the rows are right.
 
    **A measure finishing this turn is not in the charge.** Rule 6 lists what finishes separately, and separately is where it belongs: the turn a measure reaches its finishing turn is the turn it pays out, not a last turn of costing. Adding a finishing measure back into the charge line is the commonest way the line comes to more than rule 6's figure.
 
@@ -415,7 +425,7 @@ The "Emerging developments (tracked)" section lists developments that recent tur
 
    `SOVEREIGNTY: 34 last turn, no capacity event, Gigafactories in flight +1, capability rose 2.5 −1 = 34`
 
-   **The number after the `=` is what you write for `eu_ai_sovereignty` in the Metrics JSON** — the same number, not one near it and not one you reached another way. There is nothing left to judge once the line is written. Nothing outside rule 5 is a term: momentum, institutional follow-through, prior delivery, floors and rounding are not terms, and a line that reaches a total and then appends `→ net +1` has thrown away its own arithmetic.
+   **The number after the `=` is what you write for `eu_ai_sovereignty` in the Metrics JSON** — the same number, not one near it and not one you reached another way. Nothing outside rule 5 is a term: momentum, institutional follow-through, prior delivery, floors and rounding are not terms, and a line that reaches a total and then appends `→ net +1` has thrown away its own arithmetic. Read what finishes this turn off rule 6's finishing list — the store's rows, not your memory of the portfolio.
 
    **An event names the turn it fired, and that turn is this one.** Write `eu_frontier_access_denied t6 −2`, and only when the turn is 6 and the id is in this turn's list above. An event pays once, in the turn it happens, and is then gone from this line however long the world goes on dealing with it — a plant that is still shut, a supplier that has not come back, a member state that has not returned to the line. Those are consequences of a charge already made, not a charge to make again.
 
@@ -423,15 +433,23 @@ The "Emerging developments (tracked)" section lists developments that recent tur
 
    **A measure that has not reached its finishing turn cannot pay finishing money.** Building momentum, permits granted, planning underway, a programme going well — none of these is a completion, and the most any of them is worth is +2.
 
-4. **A finishing turn moves only when something moved it.** Each measure's finishing turn is carried by the framework and printed in the rows under rule 6; you do not copy it forward and you cannot change it. Only the Union can, by an `update` in its `## Store changes`, and rule 10 says what justifies one. If this turn's events or the Union's own neglect should have moved a finishing turn and the Union did not move it, say so in the Narrative — that is a thing the world noticed and the Union did not act on, and it is the kind of pressure that shows up in the next turn's answer.
+4. **A finishing turn moves only when something moved it, and only you move it.** Each measure's finishing turn is carried by the framework and printed in the rows under rule 6; the Union cannot change it. Against rule 10, consider each running measure every turn: a named priority may pull it in by one, several unprioritised turns may push it out by one, an event may do either and rarely by more than one. Move with an `update` entry under your `## Store changes` carrying the condition as grounds — `{"op": "update", "table": "measures", "id": "M2", "fields": {"finish_turn": 5}, "grounds": "named priority"}` — and nothing else moves one. You never add or remove measures. If this turn's events or the Union's own neglect should have moved a finishing turn and you do not move it, say so in the Narrative instead.
 
+
+Your world writes — the finishing-turn moves of step 4 and the standing record of step 5 — go under a `## Store changes` heading holding one JSON block, or `{"store": []}` when neither owes anything this turn:
+
+```json
+{"store": [{"op": "update", "table": "standing", "id": "S1", "fields": {"posture": "pending"}}]}
+```
+
+One malformed entry rejects that entry while the rest apply; leaving the whole section out is recorded as a fault rather than read as no change. The block holds *your* tables only: the `standing` record and `update` moves on `measures`. You never add or remove measures, and metric levels go under `## Metrics`, never here.
 
 ---
 
 This turn, the following external events have occurred:
 
-**eu_frontier_access_denied:** The Union is cut off from the leading model at short notice, wholly or by nationality of user. No detailed reason is given, there is no appeal, and the immediate practical effect lands on hospitals, ministries and firms that had built on it. Whether this reads at home as an outrage or as a failure of foresight depends on what the Union had done about it beforehand.
-**emergent_eu_compute_lease_offer (emergent event):** A major non-US cloud provider announces sovereign EU training capacity available for rent at scale, easing near-term compute scarcity without changing ownership of the frontier.
+**bio_uplift_findings:** A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 4 turns.
+**eval_anomaly_reports:** Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. The laboratory calls it a measurement artefact. It may be one. This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.
 
 ---
 
@@ -440,22 +458,22 @@ The actors in the scenario describe their actions as follows:
 **The European Union:**
 
 ## New measure
-**EU Sovereign Fallback Compute Lease**
-Lease the offered non-US sovereign training and inference capacity on EU soil under EU law to keep hospitals, ministries and grid operators running after the frontier cut-off.
-Why this and why now: the short-notice denial turned bridge dependence into an operational failure for critical services, and a rentable EU-anchored alternative that eases scarcity without ceding ownership is exactly the stopgap the two-year hardening commitment needs until gigafactories land.
+**EU Incident and Near-Miss Reporting Network**
+Stands up mandatory rapid reporting of AI-enabled intrusions and model anomalies from operators and deployers to ENISA, feeding the hardening shield with live incident learning.
+This now because the autumn audit showed weeks-long presence went unnoticed and leaked eval anomalies show frontier behaviour escaping labs; without reporting the resilience commitment has no eyes, and it is cheap and fast while the large shield builds.
 
 ## Store changes
 ```json
-{"store": [{"op": "add", "table": "measures", "fields": {"name": "EU Sovereign Fallback Compute Lease", "category": 4, "size": "small", "finish_turn": 4, "applies_to": "own jurisdiction", "targeted_effect": "eu_ai_sovereignty up slightly, resilience up by keeping critical services on capable models"}, "grounds": "frontier access cut-off hitting hospitals and ministries demands immediate fallback"}]}
+{"store": [{"op": "add", "table": "measures", "fields": {"name": "EU Incident and Near-Miss Reporting Network", "category": 2, "size": "small", "finish_turn": 4, "applies_to": "own jurisdiction", "targeted_effect": "resilience up slightly, ai_safety up slightly via incident learning"}, "grounds": "undetected intrusions plus eval anomalies require live reporting"}]}
 ```
 
 ## Priority
-EU Critical Systems Hardening and Response Pact, because undetected mapping of transmission networks plus loss of frontier models means detection, patching and live exercises must land before any new build-out.
+EU Critical Systems Hardening and Bio-Detection Shield, because it carries the two-year commitment to withstand disruption and must deliver audits and exercises before the bio window matures.
 
 ## In practice
-We keep the Pact as the main push: DG CNECT and ENISA use the NIS2 base to force joint procurement of the machine-speed patching and agent-behaviour detection stack past certification, with Digital Europe covering water utilities to answer the unfunded-mandate revolt, and Energy and Transport Councils ordering the two affected TSOs to run live cross-border drills this spring.
+We keep ENISA and HERA on the shield build: NIS2 Article 11 audits of all major TSOs, winter exercise calendar traded for accelerated grid-connection permits and an EU cybersecurity label, and Digital Europe reallocation plus national co-finance to hold energy ministers. DNA-synthesis voluntary screening talks continue in parallel, with legislation readied if coverage disputes persist.
 
-At the same time we sign the fallback lease via the European Cloud and AI procurement vehicle, with data-residency, audit and EU-jurisdiction clauses and priority allocation to health, ministries and the Pact operators. DG CNECT keeps gigafactory site selection and permitting zones moving but without new money this turn, and we formally protest the cut-off while holding ASML leverage in reserve for a coercion response.
+We launch the reporting network by implementing act under NIS2 and the AI Act serious-incident provisions, via Telecom and Competitiveness Councils, obliging transmission, port and water operators plus GPAI deployers to file intrusions and anomalous agent behaviour within 24 hours to ENISA. Operators resisting extra burden are offered liability relief and access to pooled forensics; DG CNECT keeps Gigafactory siting (M1) and permitting zones (M2) moving to stop private capital walking under US lithography pressure.
 
 
 
@@ -469,7 +487,7 @@ Use this information to do the following:
 
 Please write your response in English.
 
-Important: You must use the exact headers '## Metrics', '## Narrative', and '## Notepad' as specified below. Do not translate these headers, even if you are writing the content in another language.
+Important: You must use the exact headers '## Metrics', '## Narrative', '## Notepad', and '## Store changes' as specified below. Do not translate these headers, even if you are writing the content in another language.
 
 Respond with a Markdown text with the following content:
 
@@ -477,3 +495,7 @@ Respond with a Markdown text with the following content:
 * A JSON object describing all metrics in a ```json code fence, in the following format: `{"metric1_name": value1, "metric2_name": value2}`
 * Heading level 2: Narrative
 * A coherent story about what happens in the world during the turn (max 400 words). You may use subheadings (level 3) if desired.
+* Heading level 2: Notepad
+* The four required lines: the portfolio charge, the proposal bonus, the legitimacy line, and the sovereignty line, each as specified above. The new content REPLACES the old, so each line is rewritten every turn, never copied.
+* Heading level 2: Store changes
+* One JSON block holding this turn's world writes, or `{"store": []}` when neither the standing record nor any finishing turn owes anything.

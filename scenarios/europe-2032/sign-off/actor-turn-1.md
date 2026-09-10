@@ -2,7 +2,7 @@
 
 The actor's opening prompt. Everything the actor will ever know about itself that is not carried by state passes through here. Read it against the actor's background file section by section.
 
-Source: `runs/run-20260910-101024/turn-01/llm-io/04-actor-eu.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
+Source: `runs/run-20260910-113029/turn-01/llm-io/04-actor-eu.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
 
 # ═══ REVIEWER CHECKLIST ═══
 
@@ -150,6 +150,8 @@ Each statement carries a tier saying what it takes to change it:
 
 You may also stake yourself to something new — adding a statement, or raising one to a higher tier. That needs no triggering development, because you are binding yourself rather than reversing yourself, but it must appear in your actions: a commitment nobody saw you make is not a commitment.
 
+Your two-year commitment is one such statement, and it has its own rhythm rather than the ordinary one. In your first turn you choose it and enter it as ``add `two_year_commitment` (commitment): <one sentence>``. It then governs four turns without further entries from you. When its term closes you name its replacement the same way, opening with ``modify `two_year_commitment` (commitment): <one sentence>`` and `- Trigger: the two-year commitment period closes this turn`. Renewing the same direction is a real choice, not a default: write it out either way. The turn instructions tell you when a turn opens or closes a term; this paragraph tells you what those turns mean for the ledger.
+
 ## Your tasks
 
 1. **Decide what the Union does this turn**
@@ -231,8 +233,7 @@ None of that is disputed; what it means is. The same evidence is read by compete
 This turn, the following external events have occurred:
 
 **cyber_test_shot:** In the autumn of 2026 an intrusion is discovered across electricity transmission operators on three continents, together with a large container port authority and a regional water utility. Two of the affected grid operators are in EU member states, but the deepest access is elsewhere, and no jurisdiction is the evident target. The intruders had been present for weeks. They were found by accident, during an unrelated audit, and the defenders' own retrospectives concede that existing detection would not have caught them.
-**cyber_defence_breakthrough:** Defensive tooling closes the gap for a whole class of attack – automated patching at the speed vulnerabilities are found, or detection that catches swarm behaviour rather than signatures – and the offence-defence balance visibly shifts back for the first time in years.
-**eu_access_secured:** The Union obtains frontier access under conditions it set rather than accepted: published terms, evaluation rights, a notice period before withdrawal, or capacity legally anchored inside its own jurisdiction. It is not sovereignty, and it is not nothing.
+**bio_uplift_findings:** A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 4 turns.
 
 ---
 
@@ -245,17 +246,20 @@ This turn, the following external events have occurred:
 
 <!-- FROM user-prompts/actor.md (this scenario's override) -->
 
-These carry forward unchanged unless you explicitly propose a change.
+These are a ledger of their own -- not your portfolio below, which is a different mechanism. They carry forward unchanged unless you explicitly propose a change.
 
 ## Your portfolio
 
 These are the measures you have in flight. They are **held for you** and carry forward on their own. You do not restate them, and nothing you leave out of your answer can remove one. Each carries the id the framework gave it; that id, not the measure's name, is how you refer to it.
 
-(none)
+| id | name | category | size | started_turn | finish_turn | applies_to | targeted_effect | cost_per_turn | status |
+|---|---|---|---|---|---|---|---|---|---|
+| M1 | InvestAI Gigafactories | 4 | large | 0 | 7 | own jurisdiction | eu_ai_sovereignty up, via €200bn for four to five sites | 3 | running |
+| M2 | Tech sovereignty package | 4 | large | 0 | 6 | own jurisdiction | eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones | 3 | running |
 
-They cost you 0 political capital this turn, which is the sum of the `cost_per_turn` column above. That column, like `id`, `started_turn` and `status`, is worked out for you and is not yours to write.
+They cost you 6 political capital this turn, which is the sum of the `cost_per_turn` column above. That column, like `id`, `started_turn` and `status`, is worked out for you and is not yours to write.
 
-The only thing that changes any of this is a command under `## Store changes` in your answer.
+The only thing that changes any of this is an entry under `## Store changes` in your answer.
 
 
 Use the background information to determine your actions this turn. Your actions will be evaluated by a Game Master.
@@ -275,9 +279,9 @@ Name the main direction of measures you will pursue over the next two years (fou
 **This section is the only place the ledger is read from.** Writing that line under the previous heading does nothing at all, and writing `No statement changes.` here leaves you with no direction for the rest of the run. Any other statement changes follow it.
 
 * Heading level 2: New measure
-**Pick at most one**. `None this turn.` is an option. **Choose it with your two-year commitment in mind: across the four turns of a commitment period it should be the dominant theme of what you build.** Not everything must serve it — an incident that must be answered now, a window that closes, a cheap chance worth taking are all real reasons to spend a turn elsewhere — but if you reach the end of a two-year period and most of what you started points somewhere else, you did not hold the commitment, whatever the ledger still says. Every measure in your portfolio cost `eu_political_capital`, but less so if the opinion for the measure is favourable. Propose a measure unless you have a reason not to, and if you write `None this turn.`, say in one clause what you are waiting for. When you do propose one, write **the measure's name in bold on its own line**, then one short sentence saying what it actually does, then a sentence or two on why this and why now.
+**Pick at most one**. `None this turn.` is an option. **Choose it with your two-year commitment in mind: across the four turns of a commitment period it should be the dominant theme of what you build.** Not everything must serve it — an incident that must be answered now, a window that closes, a cheap chance worth taking are all real reasons to spend a turn elsewhere — but if you reach the end of a two-year period and most of what you started points somewhere else, you did not hold the commitment, whatever the ledger still says. Propose a measure unless you have a reason not to, and if you write `None this turn.`, say in one clause what you are waiting for. When you do propose one, write **the measure's name in bold on its own line**, then one short sentence saying what it actually does, then a sentence or two on why this and why now.
 
-**Write nothing else here — this section is prose, not a form.** The measure's category, size, finishing turn, effect and reach are not written here: they are the `add` command under `## Store changes` below, and writing them twice is how the two copies come to disagree. Name the category in your prose if you like, so the number in the command can be checked against it.
+**Write nothing else here — this section is prose, not a form.** The measure's category, size, finishing turn, effect and reach are not written here: they are the `add` entry under `## Store changes` below, and writing them twice is how the two copies come to disagree. Name the category in your prose if you like, so the number in the entry can be checked against it.
 
 **There are ten categories for measures, and only these may be used. Each carries an anchor — the measure it most typically means — and, in brackets, others that belong to it:**
 
@@ -293,21 +297,17 @@ Name the main direction of measures you will pursue over the next two years (fou
 10. **Other.** Anything fitting nowhere else, including combinations and inventions.
 
 Categories 4, 7 and 9 are not decoration. Diffusion breadth buys economic gain but also attack surface and misuse exposure; public trust determines how much capital you have when incidents arrive; industrial and infrastructure pace feeds capability growth. If your strongest lever turns out not to point at the frontier at all, that is a real finding, not a mistake.
-Copy the pair exactly; never invent a name of your own for a number, and never write a number without its name. Read the name before you write the number: standing up your own evaluation or monitoring capability is 5, hardening critical services against attack is 6, and 4 is compute, chips, energy and talent on EU soil — the three are routinely confused, and the tag is how measures are compared across runs. Broadening a measure already in flight is not a new measure — record it under Portfolio instead. This applies with full force to the programmes you inherited: building EU compute *is* the Gigafactories line, and reviving, redirecting or re-funding it belongs in the Portfolio and in your Priority, not here as a fresh initiative under a new name. Standing up a parallel compute programme while the inherited one sits stalled is the one move the Union cannot credibly make.
+Copy the pair exactly; never invent a name of your own for a number, and never write a number without its name. Read the name before you write the number: standing up your own evaluation or monitoring capability is 5, hardening critical services against attack is 6, and 4 is compute, chips, energy and talent on EU soil — the three are routinely confused, and the tag is how measures are compared across runs. Broadening a measure already in flight is not a new measure — make the case for the broader scope under Priority and In practice, and the finishing turn moves, if it should, by the Game Master under rule 10. This applies with full force to the programmes you inherited: building EU compute *is* the Gigafactories line, and reviving, redirecting or re-funding it belongs in your Priority, not here as a fresh initiative under a new name. Standing up a parallel compute programme while the inherited one sits stalled is the one move the Union cannot credibly make.
 
 * Heading level 2: Store changes
 **Required every turn, even when nothing changes.** This section is the only thing that alters your portfolio. Write `No changes.` when there is nothing — leaving the section out is not the same as writing that, and is recorded as a fault.
 
-Your measures in flight carry forward on their own. Do not re-list them here; list only what changes. One JSON block:
+Your measures in flight carry forward on their own. Do not re-list them here; list only what changes. One JSON block with `add` and `delete` entries:
 
 ```json
 {"store": [{"op": "add", "table": "measures", "fields": {"name": "<name>", "category": 6, "size": "large", "finish_turn": 9, "applies_to": "<who it reaches>", "targeted_effect": "<which metrics, which direction, roughly how much>"}, "grounds": "<one clause>"}]}
 ```
 
-Three operations, one entry each:
-
-``{"op": "add", "table": "measures", "fields": {...}}`` with an optional `"grounds"` line
-``{"op": "update", "table": "measures", "id": "M2", "fields": {"finish_turn": 5}}``
 ``{"op": "delete", "table": "measures", "id": "M1", "grounds": "<one clause>"}`` — a `delete` must carry grounds.
 
 What the six fields of an `add` are asking you to judge:
@@ -315,26 +315,16 @@ What the six fields of an `add` are asking you to judge:
 - `name` — the same name you wrote in bold under New measure.
 - `category` — **the number from the list above**, for example `6`. Measures you invent are welcome and get the category they most resemble, or `10`.
 - `size` — `large` or `small`. Large costs 3 political capital a turn, small costs 2, every turn until it finishes.
-- `finish_turn` — the turn it is actually in force, judged from how big the thing is: a directive needing drafting and a vote is two or three turns out, a capability that has to be built and staffed six or more.
+- `finish_turn` — the turn it is actually in force, judged from how big the thing is: a directive needing drafting and a vote is two or three turns out, a capability that has to be built and staffed six or more. **You set this once, when you propose the measure, and never touch it again.** A finishing turn moves only by the Game Master under rule 10 — a named priority pulling it in, several unprioritised turns pushing it out, an event moving it either way — and the move arrives with the reason stated. There is no `update` entry of yours that reaches it.
 - `targeted_effect` — which metrics, which direction, roughly how much.
 - `applies_to` — your own jurisdiction, particular member states, the US, China, a coalition, the frontier developers directly.
 
 **Those six and no others.** The table above shows more columns than that — `id`, `started_turn`, `cost_per_turn`, `status` — and every one of them is worked out for you: the id and the starting turn when the measure enters, the cost from its size, the status from its finishing turn. Writing them in an entry changes nothing, so do not write them.
 
-And when each operation is the right one:
+And when each entry is the right one:
 
 - **Adding.** One `add` for the measure you proposed above, and no more than one this turn. The framework gives it an id and stamps the turn it started; you cannot set either.
-- **Moving a finishing turn.** `update` is the only way a finishing turn moves, and rule 10 says what may move it: a named priority may pull it in by one turn, several unprioritised turns may push it out by one, an event may do either and rarely by more than one. Nothing else moves it, and nothing moves it silently.
 - **Dropping a measure.** `delete` is abandonment or public defeat, and it costs you (rule 6). It is not how a measure finishes: a measure that reaches its finishing turn finishes by itself, keeps its record, and stops costing you without any entry from you. Never delete a measure because it has finished.
-
-**This turn only**, your block opens with exactly these two entries, which enter the programmes you inherited, and then the `add` for whatever you propose above:
-
-```json
-{"store": [
-  {"op": "add", "table": "measures", "fields": {"name": "InvestAI Gigafactories", "category": 4, "size": "large", "finish_turn": 7, "applies_to": "own jurisdiction", "targeted_effect": "eu_ai_sovereignty up, via €200bn for four to five sites"}},
-  {"op": "add", "table": "measures", "fields": {"name": "Tech sovereignty package", "category": 4, "size": "large", "finish_turn": 6, "applies_to": "own jurisdiction", "targeted_effect": "eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones"}}
-]}
-```
 
 * Heading level 2: Priority
 Name at most one measure you are pushing hardest this turn, and one sentence on why it and not the others. In most turns this should be a measure that serves your two-year commitment. Naming a priority that serves something else is allowed – say in that same sentence what the world demanded that outranked your own direction.

@@ -57,6 +57,36 @@ def test_extract_metrics_malformed():
         resp.extract_metrics_and_narrative()
 
 
+def test_store_changes_are_not_carried_in_the_notepad():
+    """A ## Store changes section after ## Notepad is writes, not memory.
+
+    Without the cut the block rides the notepad into every later prompt --
+    a sign-off read caught the events prompt carrying a whole store block
+    inside the notepad -- and sits beside the live records as a stale copy.
+    """
+    content = """
+## Metrics
+```json
+{"metric1": 10}
+```
+
+## Narrative
+This is the narrative.
+
+## Notepad
+PORTFOLIO CHARGE: A −3 = −3
+
+## Store changes
+```json
+{"store": []}
+```
+"""
+    resp = LLMResponse(content=content, raw_response={})
+    _metrics, _narrative, notepad = resp.extract_metrics_and_narrative()
+    assert notepad == "PORTFOLIO CHARGE: A −3 = −3"
+    assert "Store changes" not in notepad
+
+
 def test_get_finish_reason():
     resp = LLMResponse(
         content="x",

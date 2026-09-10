@@ -108,6 +108,14 @@ The "Emerging developments (tracked)" section lists developments that recent tur
 {% elif turn == 5 %}5. The 2028 election fires this turn: set the standing record to `pending` — the administration has not taken office — and in particular never to a named posture: a named posture would let this turn's judgments price a government that does not exist. Record who won in the narrative only.
 {% endif %}
 
+Your world writes — the finishing-turn moves of step 4 and the standing record of step 5 — go under a `## Store changes` heading holding one JSON block, or `{"store": []}` when neither owes anything this turn:
+
+```json
+{"store": [{"op": "update", "table": "standing", "id": "S1", "fields": {"posture": "pending"}}]}
+```
+
+One malformed entry rejects that entry while the rest apply; leaving the whole section out is recorded as a fault rather than read as no change. The block holds *your* tables only: the `standing` record and `update` moves on `measures`. You never add or remove measures, and metric levels go under `## Metrics`, never here.
+
 ---
 
 This turn, the following external events have occurred:
@@ -136,7 +144,7 @@ Use this information to do the following:
 Please write your response in {{output_language}}.
 {% endif %}
 
-Important: You must use the exact headers '## Metrics', '## Narrative', and '## Notepad' as specified below. Do not translate these headers, even if you are writing the content in another language.
+Important: You must use the exact headers '## Metrics', '## Narrative', '## Notepad', and '## Store changes' as specified below. Do not translate these headers, even if you are writing the content in another language.
 
 Respond with a Markdown text with the following content:
 
@@ -144,3 +152,7 @@ Respond with a Markdown text with the following content:
 * A JSON object describing all metrics in a ```json code fence, in the following format: `{"metric1_name": value1, "metric2_name": value2}`
 * Heading level 2: Narrative
 * A coherent story about what happens in the world during the turn (max 400 words). You may use subheadings (level 3) if desired.
+* Heading level 2: Notepad
+* The four required lines: the portfolio charge, the proposal bonus, the legitimacy line, and the sovereignty line, each as specified above. The new content REPLACES the old, so each line is rewritten every turn, never copied.
+* Heading level 2: Store changes
+* One JSON block holding this turn's world writes, or `{"store": []}` when neither the standing record nor any finishing turn owes anything.

@@ -192,12 +192,23 @@ class LLMResponse:
 
         narrative = narrative_match.group(2).strip() if narrative_match else ""
 
-        # Find ## Notepad section (optional)
+        # Find ## Notepad section (optional). It ends where a ## Store changes
+        # section begins, when the Game Master writes one: without the cut the
+        # store block would be carried in the notepad, leak into every later
+        # prompt that renders it, and sit beside the live records as a stale
+        # copy. Seen in a sign-off read, where the events prompt carried a
+        # whole store block inside the notepad.
         notepad_match = re.search(
             r"##\s*Notepad\s*\n+(.*)", self.content, re.DOTALL | re.IGNORECASE
         )
 
         notepad = notepad_match.group(1).strip() if notepad_match else ""
+        store_cut = re.search(
+            r"^[ \t]{0,3}#{1,6}[ \t]+Store changes\b", notepad,
+            re.IGNORECASE | re.MULTILINE,
+        )
+        if store_cut:
+            notepad = notepad[: store_cut.start()].rstrip()
 
         return metrics, narrative, notepad
 
