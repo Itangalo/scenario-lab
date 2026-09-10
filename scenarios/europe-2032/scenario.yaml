@@ -90,8 +90,11 @@ actors:
 # which campaign current fired last then removed that failure but added another:
 # it made the presidency hang on two narrow events inside a four-turn window,
 # and campaign_atlanticist fired zero times in 30 runs, so Alliance was
-# unreachable rather than merely rare. The campaign events remain in the pool as
-# evidence the events step can read; they no longer decide anything.
+# unreachable rather than merely rare. The campaign events were then removed
+# from the catalogue altogether (2026-09-10): once they decided nothing, they
+# were three entries competing for listing space to report a mood the events
+# step can read off the world directly. The weighting prose in events.md now
+# says so explicitly -- there is no signal to count.
 #
 # `default` now covers only the degenerate case where every weight is zero.
 event_groups:
@@ -105,13 +108,13 @@ research_questions:
   - id: rq_sovereignty_and_agency
     question: "Do runs that build AI capacity of their own end with more room to act than runs that do not, or can a Union with strong instruments and little compute hold its agency to 2032?"
     metrics: [eu_ai_sovereignty, eu_political_capital, public_sentiment]
-    events: [eu_frontier_access_denied, supply_chain_coercion, eu_access_secured, export_control_escalation, member_state_defection, election_consolidation, election_alliance, election_retrenchment]
+    events: [eu_frontier_access_denied, supply_chain_coercion, eu_access_secured, export_control_escalation, us_labs_nationalised, member_state_defection, election_consolidation, election_alliance, election_retrenchment]
     notes: "The central question, and the one the metric design exists to keep open. Plot the two stocks against each other at the final turn and look for all four quadrants. A batch in which they never diverge means the physics coupled them and begged the question – report that as a defect in the rules, not as a finding about Europe. Group by US_POSTURE before comparing: the posture is the largest exogenous determinant of what dependence costs."
 
   - id: rq_no_regret
     question: "Are there measures or combinations of measures that clear the acceptability floors in every arm, rather than paying off strongly in one?"
     metrics: [eu_political_capital, resilience, ai_safety, public_sentiment]
-    events: [capability_jump, rsi_onset, capability_plateau_evidence, openweight_frontier_release, ai_investment_collapse, cyber_major_incident]
+    events: [capability_jump, rsi_onset, openweight_frontier_release, ai_investment_collapse, cyber_major_incident]
     notes: "Robustness in the RDM sense: satisficing across regimes, not optimising within one. Group measures by their category tag before comparing. A package that pays off strongly in one arm and fails a floor in another is not no-regret, however large the payoff. State the null result if there is one – finding no robust package is a real finding about the difficulty of the problem. Watch category 6 in particular: the metric rules give the Union its strongest lever there, so a finding that resilience spending is robust is partly authored and must be reported with that caveat."
 
   - id: rq_proactive_vs_reactive
@@ -123,13 +126,13 @@ research_questions:
   - id: rq_two_mandates
     question: "How does the Union actually trade its two mandates against each other under pressure, and which balance appears in the runs that clear all four floors?"
     metrics: [eu_ai_sovereignty, ai_safety, resilience, eu_political_capital]
-    events: [bio_incident, loss_of_control_incident, medical_breakthrough, adoption_success, labour_displacement, backlash_physical]
+    events: [bio_incident, loss_of_control_incident, medical_breakthrough, adoption_success, labour_displacement]
     notes: "Descriptive before evaluative. Classify each turn's named priority by whether it serves capability-and-independence or harm-prevention, and describe the sequence rather than scoring it. The interesting cases are the turns where the two-year commitment was explicitly abandoned or redirected: the actor is required to say so and give a reason, so those turns are recoverable from the transcripts and are the closest thing to a record of the trade being made."
 
   - id: rq_adverse_profile
     question: "Which event profiles and which measure portfolios characterise the least favourable outcomes within each arm, and which of them recur across all three arms?"
     metrics: [eu_political_capital, public_sentiment, resilience, ai_safety]
-    events: [cyber_major_incident, bio_incident, loss_of_control_incident, automated_decision_scandal, member_state_defection, backlash_physical, election_annulled, taiwan_blockade]
+    events: [cyber_major_incident, bio_incident, loss_of_control_incident, automated_decision_scandal, member_state_defection, taiwan_blockade, catastrophic_bio_incident, catastrophic_loss_of_control_incident, catastrophic_great_power_conflict]
     notes: "Scenario discovery, adverse half. Report the emergent events separately from the catalogue events: the emergent ones carry no authored gates and are the only genuinely exploratory material in the pool. Watch for measure portfolios that appear in both the favourable and the adverse sets; those are measures whose value is contingent on something else, and identifying that something is the useful result."
 
 # The measure portfolio, held by the framework rather than by the actor.

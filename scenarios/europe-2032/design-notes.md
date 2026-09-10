@@ -360,3 +360,119 @@ What this changes in this scenario's own terms:
 The charge line is now checkable against an independent figure for the first time, with `check_portfolio_drift.py --charges`. After the corrections above it adds up to its own total in 15 of 15 lines, against 51–70% for the sovereignty line, which has no figure to anchor against. Its terms match the measures actually in flight in 13 of 15. The residual is the Game Master itemising from the narrative rather than from the rows — once charging a measure that finished two turns earlier, once omitting one that was in flight. Rule 6 now states the in-flight count as well as the sum, so an omission is arithmetically visible; that change is unmeasured.
 
 **Comparability.** Runs made from here are not strictly comparable with the 570 already committed: the actor's response format changed, rule 6 and rule 10 changed, and the portfolio's custody changed. The resolved schema is recorded in each run's `config.json` so the two populations can be told apart.
+
+## The event-list pruning pass (2026-09-10)
+
+The open item at ROADMAP line 85 — the event list had not been re-read since the store redesign — closed here. The catalogue went from 37 events to 34: seven cut, four added (three catastrophic events and `us_labs_nationalised`), and several survivors rewritten. `events.md` was replaced from the reviewed draft and the downstream references were updated in the same pass.
+
+The selection criterion was Johan's and is worth recording, because it is not the one the earlier balance measurement used. An event earns its place either by being likely enough that leaving it out would be odd, or by carrying a message about how AI could develop that is worth the space at low probability – credibility or payload, and mid on both is a cut. ROADMAP line 16 had established that no event was dead, so fire rate could not decide this; it is a judgement about what the catalogue is *for*, not about what it does.
+
+One finding shaped the cut and is the reusable part: pruning on vividness alone removes mostly positive events, because good news is quiet. `cyber_defence_breakthrough`, `safety_breakthrough`, `joint_threat_response`, `middle_power_coalition` and `us_china_agreement` all looked weak individually and were all kept deliberately – cutting them would have asserted that defence never gains, assurance never lands and cooperation never happens, which fails the credibility half of the criterion by construction.
+
+
+### What was cut, and why
+
+Seven events were removed, taking the catalogue from 37 to 30. The criterion was that an event earns its place either by being likely enough that leaving it out would be odd, or by carrying a message about how AI could develop that is worth the space even at low probability. These seven scored middling on both.
+
+- `campaign_backlash`, `campaign_security_hawk`, `campaign_atlanticist` – the three 2028 campaign events. They decided nothing mechanically, and the election weighting already instructs the events step to read the whole world rather than count signals. Cut as a set, since keeping one or two would put a thumb on the scale for one outcome.
+- `capability_plateau_evidence` – a plateau shows up as progress stalling, which the metrics carry on their own. The event was a second, noisier channel for the same information.
+- `verification_widens` – true and interesting, but a mechanism rather than an event: nothing happens in the world on the turn it fires.
+- `election_annulled` – a real subject, but it belongs to a scenario about the information environment rather than to this one about the Union's position in the supply chain.
+- `backlash_physical` – the sentiment machinery and the retrenchment outcome already carry the politics of public hostility.
+
+### Downstream updates, all applied 2026-09-10
+
+Applied after the batch finished. `scenario.yaml` validates and the scenario loads with 34 events.
+
+- `scenario.yaml` line 114, `rq_no_regret` – remove `capability_plateau_evidence` from the `events` list. Note that this leaves `ai_investment_collapse` as the only marker of the stalled-frontier regime in that research question, which is thin for a question about robustness *across* regimes. Worth a deliberate look rather than a straight deletion.
+- `scenario.yaml` line 126, `rq_two_mandates` – remove `backlash_physical` from the `events` list.
+- `scenario.yaml` line 132, `rq_adverse_profile` – remove `backlash_physical` and `election_annulled` from the `events` list.
+- `scenario.yaml`, the `event_groups` comment – ended "The campaign events remain in the pool as evidence the events step can read; they no longer decide anything", which the cut made false. The measurement history was kept and the closing sentence rewritten to record that the entries were removed outright.
+- `design-notes.md` – mentions `campaign_atlanticist` and `backlash_physical` in the record of earlier measurement. These are historical findings and should be left as written; the file records what was measured at the time.
+- `ROADMAP.md` line 16 – the balance finding ("All 35 events fire at least once") is superseded. Deliberately not edited to a new number: it is a measurement, and it has to be re-measured after the probability pass rather than adjusted by hand. Flagged in the roadmap instead.
+- No changes needed in `metric-rules.md`, `metrics.md`, `constitution.md`, `system-prompts/` or `user-prompts/`. None of the seven cut ids appears in any of them.
+
+### Changes made to surviving events
+
+- `ai_investment_collapse` – its +10 modifier keyed off `capability_plateau_evidence`, which no longer exists. Replaced with a metric condition: `ai_capability` rising by less than 2 points across the previous 3 completed turns. The threshold is a first guess and belongs in the probability pass.
+- `us_china_agreement` – now states that a floor under the competition makes assurance and defensive work jointly obliged rather than unilateral, and `safety_breakthrough` (+8) and `cyber_defence_breakthrough` (+6) carry matching modifiers. Both figures are first guesses.
+- `opaque_reasoning` – rewritten and sharpened. The condition now says the architectural direction is already established before the run begins, so the event is the completion of a visible trend rather than a surprise, and the description names what specifically stops working.
+- `automated_decision_scandal` – rewritten against the AI Act, with two named failure modes to choose between: obligations breached on a system that was correctly classified high-risk under Annex III, or a high-stakes deployment the Act's categories never reached at all.
+- `supply_chain_coercion` – no change needed. ASML is already named in both the title and the first line.
+
+### Open questions
+
+- **Should `opaque_reasoning` be a forced turn-1 event?** Argument for: the architecture shift is real and already under way, so a run in which it never happens is arguably the unrealistic one. Argument against, and currently the stronger one: turn 1 is fixed and identical in every run, the turn-1 base runs are pinned, and `story/turn-01/` was rebuilt from a 30-draw pool – changing turn 1 invalidates the built story tree. It also spends the event's whole payload before the reader has made a single decision, and removes the possibility of a run where oversight survives. Recommend leaving it as a rollable event and revisiting only if the probability pass cannot get it to fire often enough.
+- **`opaque_reasoning` eligibility.** Still gated at `ai_capability` >= 60. If the point is that the shift is already under way in 2026, that gate may be too high. Probability pass.
+- **Positivity balance after the cut.** The seven cut events were six negatives and one neutral, so the balance moved slightly toward the positive – but `cyber_defence_breakthrough`, `safety_breakthrough`, `joint_threat_response` and `middle_power_coalition` are all low-probability and several are conditional, so the *realised* balance in a run is the thing to check, not the catalogue balance.
+
+### Critical events (ECHO 2026-09-10)
+
+Three now: `catastrophic_bio_incident`, `catastrophic_loss_of_control_incident` and `catastrophic_great_power_conflict`. Two things about the third differ from the other two and were deliberate.
+
+- **The RSI requirement is enforced by the events step, not by Python.** `Eligible:` expressions are evaluated by `eval_boolean_expression` against `build_expression_env`, which supplies metric ids plus `is_fast` / `is_plateau` / `is_rlvr_limited` and nothing else – it cannot see whether an event has occurred. So "requires `rsi_onset`" had to go in the prose condition, in the same form `joint_threat_response` and `middle_power_coalition` already use. As a deterministic backstop the entry also carries `Eligible: ai_capability >= 70`, so the event cannot fire in a low-capability world even if the events step misreads the prose. The backstop is not the requirement; it is only a floor under it.
+- **It is conditionally listed rather than always listed with a shut gate.** The other two criticals follow the gate rule at the top of this file: listed every turn, gate open or gate shut, both non-zero. This one is absent entirely before `rsi_onset` and a flat 10% after. That is right if RSI is a genuine precondition rather than merely an amplifier – but it does mean there is no low-probability path to great-power war in a run where RSI never happens, which is a claim about the world worth making on purpose. Say if it should instead be always-listed at 1% with 10% after RSI.
+
+Still open: `loss_of_control_incident` and `catastrophic_loss_of_control_incident` both carry the heading `## Loss-of-Control Incident`. The bio pair is distinguished ("Biological Incident" / "Catastrophic Biological Incident"); this pair is not, and the events step reads these headings.
+
+### Nationalisation of the US frontier labs (ECHO 2026-09-10)
+
+Added as `us_labs_nationalised`, placed between `export_control_escalation` and `us_china_agreement`. The case for it: every other event in this file treats the frontier laboratories as *companies*, and metric rule 9 makes that assumption explicit – measures aimed outside the Union work "through market access, standards, supply-chain leverage and reputational cost". Nationalisation is the one event that voids that mechanism rather than merely resisting it, because none of those levers reach an arm of another state's security apparatus. It is distinct from Consolidation, which rations what the labs sell but leaves them selling.
+
+Three design choices worth confirming.
+
+- **Not a critical event.** It is structural rather than chaotic: the consequences are legible and the Game Master does not need "all bets are off" latitude to play it. The severity spread is handled inside the entry instead, mild end to hard end.
+- **No hard prerequisite.** It is always listed at 4%, raised by Consolidation posture, by `rsi_onset`, by a catastrophic event and by `loss_of_control_incident`, and halved under Retrenchment. Several roads lead there, and requiring `election_consolidation` would have made it unreachable in exactly the shock-driven runs where it is most plausible.
+- **It cuts both ways.** A state-owned laboratory is a counterparty a state can negotiate with, so the entry raises `us_china_agreement` rather than lowering it. This is the non-obvious half and the reason the event is not simply another loss for the Union.
+
+Matching modifiers were added so the consequences are mechanical rather than only asserted in prose: `eu_frontier_access_denied` +10, `eu_access_secured` halved, `us_china_agreement` +6. All four figures are first guesses for the probability pass.
+
+Added to `rq_sovereignty_and_agency`'s `events` list in `scenario.yaml`, the research question it speaks to most directly. The three catastrophic events were added to `rq_adverse_profile` at the same time, which had lost two members to the cut.
+
+### Two stale cross-references found and fixed
+
+Both predate this pass and were live in `events.md` for some time; the metric rules were renumbered at some point and two event entries were not updated with them.
+
+- `capability_jump` said its `ai_safety` cost was charged "on the terms of metric rule 6". Rule 6 is `eu_political_capital`; `ai_safety` is rule 3, and rule 3 already names `capability_jump` explicitly at −5 to −12. Corrected to rule 3.
+- `us_china_agreement` said it slowed `ai_capability` "on the terms of metric rule 2". Rule 2 is `openweight_capability`; capability growth and its agreement exception are rule 1. Corrected to rule 1.
+
+The remaining seven references (rules 4, 5, 6, 8 and 9) were checked in context and are correct. Worth re-checking these whenever the rules are renumbered – nothing validates a prose cross-reference, and both of these read plausibly enough to survive several readings.
+
+### The arm-differentiation gap, and a cut that was wrong (2026-09-10)
+
+`verification_widens` was cut in the pruning pass on the grounds that it was "a mechanism, not an event – nothing happens in the world on the turn it fires". That was wrong on both counts, and the way it was wrong is worth recording.
+
+It was load-bearing. The V arm patched it to 22% against a 12% base – its highest single override – and `bio_uplift_findings` keys off it there. It was the event that gave verification-bounded acceleration its character, and removing it left that arm with no positive event distinguishing it from the plateau arm at all. The gap was noticed from the outside ("we don't have anything that really affects the RLVR-bound arm") before it was noticed in the file.
+
+It also broke all three variants. The patch stanzas for `verification_widens` and `capability_plateau_evidence` matched no event and carried no `Description`, which `resource_patches` treats as a hard error rather than an addition. Every arm failed to load. This went unnoticed because the reference audit covered `scenario.yaml`, the metric rules, the prompts and the constitution but not `variants/`, and because `validate` checks the base scenario only – a variant is only exercised when it is loaded. **Any future change to the event catalogue has to load all three variants, not just validate the base.**
+
+The event was restored, rewritten to show the result rather than the mechanism – and then cut again on review, which is the outcome that stands. Restoring it had been the wrong fix for the right problem: what the V arm lacked was not this event but *any* event expressing what that world feels like, and once `knowledge_work_augmented` and `embodied_ai_deployment` existed, a third labour-and-progress event was redundant. The V arm now carries its character through `knowledge_work_augmented` at 22%, `labour_displacement` held down to 5%, `embodied_ai_deployment` at 14% with its coarse-motor boundary as the line the labour market divides on, and `capability_jump`'s existing V description confining the jump to verifiable domains. The V patch's `bio_uplift_findings` modifier, which keyed off `verification_widens`, was re-keyed to `capability_jump`.
+
+`capability_plateau_evidence` stayed cut, as decided; its stanzas were removed from the three patches and the plateau arm's `ai_investment_collapse` now keys off stalled `ai_capability` the way the base entry does.
+
+### Two events added for coverage the catalogue lacked (2026-09-10)
+
+- **`knowledge_work_augmented`** – measured productivity gains across ordinary knowledge work with no matching fall in employment. It is the counterpoint to `labour_displacement` and the outcome the catalogue had no way to express: the most economically consequential thing that can happen without being a crisis. Its sting is in the second half – a public that is not frightened is also a public that will not fund very much – which makes it a genuine complication for the Union rather than simple good news. Patched to 22% on the V arm, 14% on plateau, 5% on acceleration, where augmentation is a stage rather than an outcome.
+- **`embodied_ai_deployment`** – general-purpose robots reaching commercial deployment. The catalogue had no embodiment at all, which left physical labour outside the displacement question entirely. Written to land on Europe specifically: it reaches the one industrial base the Union still leads in, and it arrives from outside, with the actuators and volume manufacturing Chinese and the control models American. Patched to 16% on acceleration, 14% on V (where the boundary between checkable and uncheckable physical tasks is where the labour market divides), 4% on plateau.
+
+The V arm also gained a `labour_displacement` override at 5%, since "knowledge work is boosted but not replaced" is the arm's defining claim and the base 10% contradicted it. The displacement that does occur there is narrow by construction: it falls on work already close to a checkable output and stops at the edge of it.
+
+### Metric effects for the two new events (2026-09-10)
+
+Both were added with prose consequences and no numbers, which is the failure mode the rest of the catalogue avoids: an event that reads as significant and moves nothing is scenery. Corrected.
+
+- **`knowledge_work_augmented`** moves `public_sentiment` at the top of rule 7's visible-benefit range and nothing else by itself – explicitly not capability, sovereignty or resilience. Its second effect is stated as political rather than numerical: with no displacement crisis to point at, rule 6's bonus for a measure addressing a recent negative event does not apply, so the Union is asked to spend against a problem the public can no longer feel. That is the honest version of the earlier prose flourish about a public that will not fund very much, which as first written was in tension with rule 7 – high sentiment already favours category 4 and 9 measures, so the flourish claimed the opposite of what the rules do.
+- **`embodied_ai_deployment`** takes away access on rule 5's event term at the small end (a new dependence forming, not existing access withdrawn) and moves `public_sentiment` −2 to −5. It was added to rule 5's named list. It also gained `Eligible: ai_capability >= 60`, which is reachable on every arm – all three start at 52, and the plateau arm at +1 to +2 per turn crosses 60 somewhere around turns 5 to 9, so robots arrive there late and rarely, which is the intended shape.
+
+The robots entry was also confined to coarse motor action at Johan's direction, and the limit is stated precisely because a vague limit will be read as no limit: lifting, carrying, sorting, palletising, cleaning and basic assembly in a setting arranged around the machine; not fine motor work, not a light touch, not improvisation when the plan is wrong. Surgery, wiring, repair, most care work and real construction sites stay human. The three arm descriptions differ on what happens to that boundary – acceleration breaks through it within a year, V hardens it into the line the labour market divides on, plateau only half keeps even the coarse promise.
+
+### `research_breakthrough` (2026-09-10)
+
+Added as "Science Delivers", confined to the natural sciences, computing and mathematics, with medicine explicitly excluded and pointed at `medical_breakthrough` so the two do not compete for the same narrative slot. Eligible at `ai_capability` 60, 5%, rising to 10% above 70.
+
+The threshold interacts with the arms in a way worth recording, because it is why only one arm needed a patch. Acceleration runs to an 88–96 terminal zone and crosses 70 early, so it reaches the higher rate on its own. Plateau tops out at 62–68 and never crosses 70, so it correctly stays at 5% for the whole run. Verification-bounded eases into 68–74, which puts the 70 threshold inside its terminal zone – the higher rate would only have opened in its final turns, in the arm the event most belongs to. Its patch drops the threshold to 62, which it reaches early.
+
+Impact is deliberately the Game Master's to decide, as with the critical events, but the entry gives rails rather than open latitude: choose the field, choose the size honestly (most such results are noticed only by the field), say where it was done, and state which rule each effect runs under. Two channels are named as clearly existing – `public_sentiment` under rule 7 where the benefit is visible, and `ai_capability` within the run's stated rate under rule 1 for a computing result.
+
+One thing is ruled out explicitly, because it is the mistake the entry invites: a European result does **not** move `eu_ai_sovereignty` by itself. Rule 5's event term is about access to capacity, not about what is achieved with it, and letting achievement move that metric would quietly open a second channel the rule does not have. Where a European result does pay is as evidence that a finished category 4 or 5 measure produced something — which routes it through the measure system rather than around it, and gives the Union its strongest available argument for having spent the money.
+
