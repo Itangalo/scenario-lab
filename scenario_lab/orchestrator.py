@@ -1388,6 +1388,57 @@ class Orchestrator:
 
         return all_outcomes
 
+    def _reask_store_reports(
+        self,
+        turn: int,
+        client,
+        task_name: str,
+        writer_id: str,
+        writer_kind: str,
+        missing: list[tuple[str, str, str]],
+    ) -> tuple[list[StoreOutcome], list[str]]:
+        """One repair attempt for omitted required reports.
+
+        Returns ``(repair_outcomes, repair_malformed)``. Whatever is still
+        missing afterwards is returned as a synthetic rejected outcome, so the
+        turn's changelog records the outcome whether or not the repair worked
+        -- the same rule the metrics repair follows. A failed repair call
+        itself never kills the run: the omission stands and is recorded.
+        """
+        store = self.scenario.store
+        assert store is not None
+        try:
+            system, user = self.prompt_builder.build_store_reask_prompt(turn, missing)
+            response = client.complete(system, user)
+        except Exception as exc:  # noqa: BLE001 - a failed re-ask must not kill the run
+            print(f"  Warning: store re-ask failed: {exc}")
+            return [], [f"re-ask failed: {exc}"[:200]]
+        self._record_llm_call(turn, task_name, response)
+
+        commands, malformed, section_present = parse_store_changes(response.content)
+        if not section_present:
+            malformed = [*malformed, "re-ask answered with no '## Store changes' section"]
+        outcomes = [store.apply(command, writer_id, turn, writer_kind=writer_kind)
+                    for command in commands]
+        for outcome in outcomes:
+            if outcome.verdict == "applied":
+                outcome.note = (outcome.note + "; " if outcome.note else "") + "on re-ask"
+        still_missing = store.missing_required_reports(
+            writer_kind, None if writer_kind == "world" else writer_id
+        )
+        if still_missing:
+            names = ", ".join(f"{t}/{r}/{c}" for t, r, c in still_missing)
+            print(f"  Warning: store re-ask still omits {names}")
+            outcomes.append(
+                StoreOutcome(
+                    "(re-ask)", "rejected",
+                    f"still missing required reports: {names}",
+                )
+            )
+        else:
+            print("  ✓ Store reports completed on re-ask")
+        return outcomes, malformed
+
     def _process_store_changes(
         self, turn: int, actor_outputs: dict[str, str]
     ) -> dict[str, list[StoreOutcome]]:
@@ -1418,6 +1469,20 @@ class Orchestrator:
 
             commands, malformed, section_present = parse_store_changes(output)
             outcomes = [store.apply(command, actor_id, turn) for command in commands]
+            malformed = list(malformed)
+
+            # A required report that is absent is a fault, and a flag that only
+            # warned would leave the turn's records incomplete. Re-ask once.
+            missing = store.missing_required_reports("actor", actor_id)
+            if missing:
+                names = ", ".join(f"{t}/{r}/{c}" for t, r, c in missing)
+                print(f"  Warning: {actor_id} omitted required store reports {names}; re-asking")
+                repair_outcomes, repair_malformed = self._reask_store_reports(
+                    turn, self.client_for_actor(actor_id),
+                    f"store:reask:{actor_id}", actor_id, "actor", missing,
+                )
+                outcomes.extend(repair_outcomes)
+                malformed.extend(repair_malformed)
             all_outcomes[actor_id] = outcomes
 
             # An absent section is a fault, not a declaration of no change --
@@ -1476,6 +1541,18 @@ class Orchestrator:
             store.apply(command, "world", turn, writer_kind="world")
             for command in commands
         ]
+        malformed = list(malformed)
+
+        missing = store.missing_required_reports("world")
+        if missing:
+            names = ", ".join(f"{t}/{r}/{c}" for t, r, c in missing)
+            print(f"  Warning: Game Master omitted required world reports {names}; re-asking")
+            repair_outcomes, repair_malformed = self._reask_store_reports(
+                turn, self.llm_clients["metrics"],
+                "store:reask:world", "world", "world", missing,
+            )
+            outcomes.extend(repair_outcomes)
+            malformed.extend(repair_malformed)
 
         if not section_present:
             print(

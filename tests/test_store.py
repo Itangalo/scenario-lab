@@ -491,6 +491,77 @@ def test_commas_need_no_escaping_in_json_values():
 
 
 # ---------------------------------------------------------------------------
+# Ranges: clamp-and-record by default, error on request
+# ---------------------------------------------------------------------------
+
+
+RANGE_SCHEMA = {
+    "gauges": {
+        "scope": "actor",
+        "columns": {
+            "id": {"owner": "system", "type": "text"},
+            "name": {"owner": "actor", "type": "text", "required": True},
+            "level": {"owner": "actor", "type": "integer", "range": [0, 10]},
+            "strict": {"owner": "actor", "type": "integer", "range": {"min": 0, "max": 10},
+                       "on_out_of_range": "error"},
+        },
+    }
+}
+
+
+def test_range_clamps_and_records(store: Store):
+    """A silent clamp is quiet wrongness; a clamp with a trace is not."""
+    schema = parse_store_schema(RANGE_SCHEMA)
+    ranged = Store(schema)
+    ranged.begin_turn(1)
+    commands, malformed, _ = parse_store_changes(
+        block({"op": "add", "table": "gauges",
+               "fields": {"name": "G", "level": 99, "strict": 3}})
+    )
+    assert malformed == []
+    outcome = ranged.apply(commands[0], "eu", 1)
+    assert outcome.verdict == "applied"
+    assert ranged.live_records("gauges")[0].fields["level"] == 10
+    assert "clamped from 99 to 10" in outcome.note
+
+
+def test_range_error_rejects(store: Store):
+    schema = parse_store_schema(RANGE_SCHEMA)
+    ranged = Store(schema)
+    ranged.begin_turn(1)
+    commands, _, _ = parse_store_changes(
+        block({"op": "add", "table": "gauges",
+               "fields": {"name": "G", "level": 3, "strict": 11}})
+    )
+    outcome = ranged.apply(commands[0], "eu", 1)
+    assert outcome.verdict == "rejected"
+    assert "outside range [0, 10]" in outcome.reason
+    assert ranged.live_records("gauges") == []
+
+
+def test_range_forms_and_misforms():
+    good_list = {"g": {"columns": {
+        "id": {"owner": "system"}, "n": {"owner": "actor", "type": "integer", "range": [0, 5]}}}}
+    good_map = {"g": {"columns": {
+        "id": {"owner": "system"}, "n": {"owner": "actor", "type": "number",
+                                        "range": {"min": -1, "max": 1}}}}}
+    parse_store_schema(good_list)
+    parse_store_schema(good_map)
+    for bad in (
+        {"g": {"columns": {
+            "id": {"owner": "system"}, "n": {"owner": "actor", "type": "integer",
+                                            "range": [5, 0]}}}},
+        {"g": {"columns": {
+            "id": {"owner": "system"}, "n": {"owner": "actor", "type": "text", "range": [0, 5]}}}},
+        {"g": {"columns": {
+            "id": {"owner": "system"}, "n": {"owner": "actor", "type": "integer",
+                                            "on_out_of_range": "warn"}}}},
+    ):
+        with pytest.raises(StoreSchemaError):
+            parse_store_schema(bad)
+
+
+# ---------------------------------------------------------------------------
 # Derivation and the read surface
 # ---------------------------------------------------------------------------
 
@@ -758,7 +829,6 @@ def test_a_map_must_cover_every_enum_value():
         )
     assert "small" in str(err.value)
 
-
 def test_table_prefixes_are_unique():
     schema = parse_store_schema(
         {
@@ -768,6 +838,158 @@ def test_table_prefixes_are_unique():
     )
     prefixes = {t.id_prefix for t in schema.tables.values()}
     assert len(prefixes) == 2
+
+
+def test_new_schema_keys_survive_inheritance_round_trip():
+    """Variants inherit the schema through YAML, so every key must round-trip."""
+    from scenario_lab.loader import _store_schema_to_yaml
+
+    schema = parse_store_schema(
+        {
+            "gauges": {
+                "scope": "world",
+                "reporting_required": True,
+                "columns": {
+                    "id": {"owner": "system", "type": "text"},
+                    "level": {"owner": "world", "type": "integer",
+                              "reporting_required": True,
+                              "range": {"min": 0, "max": 100},
+                              "on_out_of_range": "error"},
+                },
+            }
+        }
+    )
+    revived = parse_store_schema(_store_schema_to_yaml(schema))
+    table = revived.tables["gauges"]
+    assert table.scope == "world"
+    assert table.reporting_required is True
+    column = table.columns["level"]
+    assert column.reporting_required is True
+    assert column.range == (0.0, 100.0)
+    assert column.on_out_of_range == "error"
+
+
+# ---------------------------------------------------------------------------
+# Adjust: submit the change, not the new value
+# ---------------------------------------------------------------------------
+
+
+SINGLE_GAUGE_SCHEMA = {
+    "gauge": {
+        "scope": "actor",
+        "columns": {
+            "id": {"owner": "system", "type": "text"},
+            "name": {"owner": "actor", "type": "text", "required": True},
+            "level": {"owner": "actor", "type": "integer", "range": [0, 100]},
+        },
+    }
+}
+
+
+def gauge_store() -> Store:
+    store = Store(parse_store_schema(SINGLE_GAUGE_SCHEMA))
+    store.begin_turn(1)
+    commands, malformed, _ = parse_store_changes(
+        block(add_entry("gauge", name="G", level=43))
+    )
+    assert malformed == []
+    assert store.apply(commands[0], "eu", 1).verdict == "applied"
+    return store
+
+
+def test_adjust_moves_the_value_by_the_delta():
+    store = gauge_store()
+    store.begin_turn(2)
+    commands, malformed, _ = parse_store_changes(
+        block({"op": "update", "table": "gauge", "id": "G1", "adjust": -9,
+               "grounds": "portfolio charge 8, priority 1"})
+    )
+    assert malformed == []
+    outcome = store.apply(commands[0], "eu", 2)
+    assert outcome.verdict == "applied"
+    assert store.live_records("gauge")[0].fields["level"] == 34
+    assert "adjusted 'level' from 43 by -9 to 34" in outcome.note
+
+
+def test_adjust_records_the_loss_at_the_bound():
+    store = gauge_store()
+    store.begin_turn(2)
+    commands, _, _ = parse_store_changes(
+        block({"op": "update", "table": "gauge", "id": "G1", "adjust": -50})
+    )
+    outcome = store.apply(commands[0], "eu", 2)
+    assert outcome.verdict == "applied"
+    assert store.live_records("gauge")[0].fields["level"] == 0
+    assert "lost at the bound" in outcome.note
+
+
+def test_adjust_needs_one_numeric_column(store: Store):
+    """The measures table has two writer-owned numerics: ambiguous, rejected."""
+    add_two(store)
+    store.begin_turn(2)
+    commands, malformed, _ = parse_store_changes(
+        block({"op": "update", "table": "measures", "id": "M1", "adjust": -1})
+    )
+    assert malformed == []
+    outcome = store.apply(commands[0], "eu", 2)
+    assert outcome.verdict == "rejected"
+    assert "no single numeric column" in outcome.reason
+
+
+def test_fields_and_adjust_together_are_malformed():
+    commands, malformed, _ = parse_store_changes(
+        block({"op": "update", "table": "gauge", "id": "G1",
+               "fields": {"level": 3}, "adjust": -1})
+    )
+    assert commands == []
+    assert len(malformed) == 1
+
+
+# ---------------------------------------------------------------------------
+# reporting_required: omission is a fault the orchestrator re-asks
+# ---------------------------------------------------------------------------
+
+
+REPORTING_SCHEMA = {
+    "gauges": {
+        "scope": "actor",
+        "columns": {
+            "id": {"owner": "system", "type": "text"},
+            "name": {"owner": "actor", "type": "text", "required": True},
+            "level": {"owner": "actor", "type": "integer", "reporting_required": True},
+        },
+    }
+}
+
+
+def test_a_reported_turn_has_nothing_missing():
+    store = Store(parse_store_schema(REPORTING_SCHEMA))
+    store.begin_turn(1)
+    commands, _, _ = parse_store_changes(block(add_entry("gauges", name="G", level=1)))
+    assert store.apply(commands[0], "eu", 1).verdict == "applied"
+    assert store.missing_required_reports("actor", "eu") == []
+
+
+def test_silence_is_an_omission_when_reporting_is_required():
+    store = Store(parse_store_schema(REPORTING_SCHEMA))
+    store.begin_turn(1)
+    commands, _, _ = parse_store_changes(block(add_entry("gauges", name="G", level=1)))
+    assert store.apply(commands[0], "eu", 1).verdict == "applied"
+    store.begin_turn(2)
+    assert store.missing_required_reports("actor", "eu") == [("gauges", "G1", "level")]
+    store.begin_turn(2)
+    update, _, _ = parse_store_changes(
+        block(update_entry("G1", "gauges", level=2))
+    )
+    assert store.apply(update[0], "eu", 2).verdict == "applied"
+    assert store.missing_required_reports("actor", "eu") == []
+
+
+def test_default_is_silence_means_persistence(store: Store):
+    """Without the flag, an untouched record is persistence, not an omission."""
+    add_two(store)
+    store.begin_turn(2)
+    assert store.missing_required_reports("actor", "eu") == []
 
 
 # ---------------------------------------------------------------------------

@@ -83,6 +83,9 @@ class StoreColumn:
     mapping: dict[str, Any] = field(default_factory=dict)  # derived: lookup
     when_reached: Optional[str] = None    # derived: value once the turn arrives
     otherwise: Optional[str] = None       # derived: value before then
+    reporting_required: bool = False      # the writer reports this every turn
+    range: Optional[tuple[float, float]] = None  # numeric columns only
+    on_out_of_range: str = "clamp"        # "clamp" (and record) | "error"
 
     @property
     def is_derived_map(self) -> bool:
@@ -101,6 +104,7 @@ class StoreTable:
     scope: str                            # "actor" | "world"
     columns: dict[str, StoreColumn]
     id_prefix: str = "R"
+    reporting_required: bool = False      # every writer-owned column, every turn
 
     @property
     def id_column(self) -> str:
@@ -142,6 +146,12 @@ class StoreSchema:
                 entry: dict[str, Any] = {"owner": column.owner, "type": column.type}
                 if column.required:
                     entry["required"] = True
+                if column.reporting_required:
+                    entry["reporting_required"] = True
+                if column.range is not None:
+                    entry["range"] = [column.range[0], column.range[1]]
+                if column.on_out_of_range != "clamp":
+                    entry["on_out_of_range"] = column.on_out_of_range
                 if column.values:
                     entry["values"] = list(column.values)
                 if column.source:
@@ -152,12 +162,18 @@ class StoreSchema:
                     entry["when_reached"] = column.when_reached
                     entry["else"] = column.otherwise
                 columns[col_name] = entry
-            out[name] = {"scope": table.scope, "id_prefix": table.id_prefix, "columns": columns}
+            body: dict[str, Any] = {"scope": table.scope, "id_prefix": table.id_prefix,
+                                    "columns": columns}
+            if table.reporting_required:
+                body["reporting_required"] = True
+            out[name] = body
         return out
 
 
-_TABLE_KEYS = {"scope", "columns"}
-_COLUMN_KEYS = {"owner", "type", "required", "values", "from", "map", "when_reached", "else"}
+_TABLE_KEYS = {"scope", "columns", "reporting_required"}
+_COLUMN_KEYS = {"owner", "type", "required", "reporting_required",
+                "range", "on_out_of_range",
+                "values", "from", "map", "when_reached", "else"}
 _NAME_RE = re.compile(r"^[a-z][a-z0-9_]*$")
 
 
@@ -225,6 +241,12 @@ def parse_store_schema(data: object) -> StoreSchema:
         if not isinstance(raw_columns, dict) or not raw_columns:
             raise StoreSchemaError(f"store table '{name}' must declare columns")
 
+        table_reporting = body.get("reporting_required", False)
+        if not isinstance(table_reporting, bool):
+            raise StoreSchemaError(
+                f"store table '{name}': 'reporting_required' must be true or false"
+            )
+
         columns: dict[str, StoreColumn] = {}
         for col_name, spec in raw_columns.items():
             columns[col_name] = _parse_column(name, col_name, spec)
@@ -252,7 +274,8 @@ def parse_store_schema(data: object) -> StoreSchema:
             )
 
         tables[name] = StoreTable(
-            name=name, scope=scope, columns=columns, id_prefix=prefixes[name]
+            name=name, scope=scope, columns=columns, id_prefix=prefixes[name],
+            reporting_required=table_reporting,
         )
 
     return StoreSchema(tables=tables)
@@ -318,8 +341,52 @@ def _parse_column(table: str, name: object, spec: object) -> StoreColumn:
                 raise StoreSchemaError(f"{where}: '{key}' is only meaningful on a derived column")
         if column.required and owner not in ("actor", "world"):
             raise StoreSchemaError(f"{where}: only an actor-owned or world-owned column can be required")
+        if "reporting_required" in spec:
+            if not isinstance(spec["reporting_required"], bool):
+                raise StoreSchemaError(f"{where}: 'reporting_required' must be true or false")
+            if spec["reporting_required"] and owner not in ("actor", "world"):
+                raise StoreSchemaError(
+                    f"{where}: only a writer-owned column reports every turn"
+                )
+            column.reporting_required = spec["reporting_required"]
+        if "range" in spec or "on_out_of_range" in spec:
+            if col_type not in ("integer", "number", "turn"):
+                raise StoreSchemaError(
+                    f"{where}: 'range' is only meaningful on a numeric column"
+                )
+            if "range" in spec:
+                column.range = _parse_range(where, spec["range"])
+            policy = spec.get("on_out_of_range", "clamp")
+            if policy not in ("clamp", "error"):
+                raise StoreSchemaError(
+                    f"{where}: 'on_out_of_range' must be clamp or error, got {policy!r}"
+                )
+            column.on_out_of_range = policy
 
     return column
+
+
+def _parse_range(where: str, raw: object) -> tuple[float, float]:
+    """``range: [0, 100]`` or ``range: {min: 0, max: 100}`` to a bound pair."""
+    low: object = None
+    high: object = None
+    if isinstance(raw, list) and len(raw) == 2:
+        low, high = raw
+    elif isinstance(raw, dict) and set(raw) <= {"min", "max"} and "min" in raw and "max" in raw:
+        low, high = raw["min"], raw["max"]
+    else:
+        raise StoreSchemaError(
+            f"{where}: 'range' must be [min, max] or {{min: _, max: _}}, got {raw!r}"
+        )
+    if isinstance(low, bool) or not isinstance(low, (int, float)):
+        raise StoreSchemaError(f"{where}: range minimum must be a number, got {low!r}")
+    if isinstance(high, bool) or not isinstance(high, (int, float)):
+        raise StoreSchemaError(f"{where}: range maximum must be a number, got {high!r}")
+    if low > high:
+        raise StoreSchemaError(
+            f"{where}: range minimum {low} is above maximum {high}"
+        )
+    return (float(low), float(high))
 
 
 def _check_derivations(table: str, columns: dict[str, StoreColumn]) -> None:
@@ -403,6 +470,29 @@ def normalize_value(column: StoreColumn, raw: object) -> Any:
     raise StoreCommandError(f"column '{column.name}' has unsupported type {column.type}")
 
 
+def _enforce_range(column: StoreColumn, value: float) -> tuple[float, Optional[str]]:
+    """Apply a column's ``range`` to a normalised value.
+
+    The default policy clamps *and records*: a silent clamp is the quiet
+    wrongness this project usually refuses, but a clamp that leaves a trace in
+    the turn's changelog is not. ``on_out_of_range: error`` rejects instead,
+    for columns where an out-of-bounds write means the writer is broken rather
+    than approximate.
+    """
+    assert column.range is not None
+    low, high = column.range
+    if low <= value <= high:
+        return value, None
+    if column.on_out_of_range == "error":
+        raise StoreCommandError(
+            f"column '{column.name}' value {value:g} is outside range [{low:g}, {high:g}]"
+        )
+    clamped = min(high, max(low, value))
+    return clamped, (
+        f"'{column.name}' clamped from {value:g} to {clamped:g} (range [{low:g}, {high:g}])"
+    )
+
+
 # --------------------------------------------------------------------------
 # Records and the live store
 # --------------------------------------------------------------------------
@@ -448,6 +538,10 @@ class Store:
         # What the last applied command asked for and did not get, so the
         # outcome can carry it into the changelog.
         self._ignored: list[str] = []
+        # Which (table, record id) reported which columns this turn. Reset by
+        # begin_turn; both writers in the turn accumulate into it, which is
+        # what reporting_required reads to find omissions.
+        self._reported: dict[tuple[str, str], set[str]] = {}
 
     # -- state -----------------------------------------------------------
 
@@ -510,6 +604,7 @@ class Store:
         else:
             self._snapshots[turn] = json.dumps(self.to_dict())
         self.current_turn = turn
+        self._reported = {}
 
     def apply(
         self, command: "StoreCommand", actor_id: str, turn: int,
@@ -634,8 +729,64 @@ class Store:
             if column.owner != allowed:
                 ignored.append(f"'{name}' is not yours to write")
                 continue
-            values[name] = normalize_value(column, raw)
+            normalised = normalize_value(column, raw)
+            if column.range is not None:
+                normalised, clamp_note = _enforce_range(column, float(normalised))
+                if column.type in ("integer", "turn") and float(normalised).is_integer():
+                    normalised = int(normalised)
+                if clamp_note is not None:
+                    ignored.append(clamp_note)
+            values[name] = normalised
         return values, ignored
+
+    def _adjustment_target(self, table: StoreTable) -> StoreColumn:
+        """The one numeric column an ``adjust`` entry may move.
+
+        ``adjust`` submits the change rather than the new value, so it is only
+        meaningful where exactly one writer-owned numeric column exists -- the
+        metrics table's value column, for example. Anything else is ambiguous,
+        and an ambiguous adjustment is a rejection rather than a guess.
+        """
+        candidates = [
+            c for c in table.columns.values()
+            if c.owner == table.writer_owner and c.type in ("integer", "number", "turn")
+        ]
+        if len(candidates) != 1:
+            raise StoreCommandError(
+                f"'{table.name}' has no single numeric column to adjust "
+                "(an 'adjust' entry needs exactly one)"
+            )
+        return candidates[0]
+
+    def _apply_adjustment(
+        self, table: StoreTable, record: StoreRecord, delta: float
+    ) -> tuple[str, Any]:
+        """Move the adjustment target by ``delta``. Returns (column, result).
+
+        The artifact records prior value, adjustment, and result: a wrong delta
+        compounds forever where a wrong absolute value self-corrects next turn,
+        and the legible trail is the only defence. Clamping interacts -- an
+        adjustment that runs past a bound loses the overshoot, and the loss is
+        recorded rather than absorbed.
+        """
+        column = self._adjustment_target(table)
+        prior = record.fields.get(column.name)
+        if not isinstance(prior, (int, float)) or isinstance(prior, bool):
+            raise StoreCommandError(
+                f"record '{record.id}' has no prior '{column.name}' value to adjust"
+            )
+        result: Any = float(prior) + delta
+        trail = f"adjusted '{column.name}' from {prior} by {delta:g} to {result:g}"
+        if column.range is not None:
+            result, clamp_note = _enforce_range(column, result)
+            if clamp_note is not None:
+                lost = (float(prior) + delta) - result
+                trail += f" (clamped: {lost:g} lost at the bound)"
+        if column.type in ("integer", "turn") and isinstance(result, float) and result.is_integer():
+            result = int(result)
+        record.fields[column.name] = result
+        self._reported.setdefault((table.name, record.id), set()).add(column.name)
+        return column.name, trail
 
     def _apply_add(
         self, table: StoreTable, command: "StoreCommand", actor_id: str, turn: int,
@@ -664,6 +815,7 @@ class Store:
             if column.owner == "system" and column.type == "turn":
                 record.fields[name] = turn
         self.records.append(record)
+        self._reported[(table.name, record.id)] = set(values)
         return record
 
     def _apply_update(
@@ -675,12 +827,21 @@ class Store:
             raise StoreCommandError(f"no live record '{command.record_id}' in '{table.name}'")
         values, ignored = self._validate_assignments(table, command, writer_kind)
         self._ignored = ignored
+        if command.adjust is not None:
+            if values:
+                raise StoreCommandError(
+                    "an update carries 'fields' or 'adjust', not both"
+                )
+            _, trail = self._apply_adjustment(table, record, command.adjust)
+            self._ignored.append(trail)
+            return record
         if not values:
             raise StoreCommandError(
                 "an update must set at least one column you own"
                 + (f" ({'; '.join(ignored)})" if ignored else "")
             )
         record.fields.update(values)
+        self._reported.setdefault((table.name, record.id), set()).update(values)
         return record
 
     def _apply_delete(
@@ -691,6 +852,48 @@ class Store:
             raise StoreCommandError(f"no live record '{command.record_id}' in '{table.name}'")
         record.removed_turn = turn
         return record
+
+    # -- required reports --------------------------------------------------
+
+    def required_columns(self, table: StoreTable) -> list[str]:
+        """Writer-owned columns the writer must report every turn.
+
+        A table-level ``reporting_required: true`` covers every writer-owned
+        column; otherwise only columns flagged individually. Default off:
+        omitted means unchanged, which is the silence-means-persistence rule
+        the whole store rests on.
+        """
+        return [
+            name for name, column in table.columns.items()
+            if column.owner == table.writer_owner
+            and (column.reporting_required or table.reporting_required)
+        ]
+
+    def missing_required_reports(
+        self, writer_kind: str = "actor", actor_id: Optional[str] = None
+    ) -> list[tuple[str, str, str]]:
+        """Live (table, record id, column) triples the turn did not report.
+
+        Read after a writer's entries applied, before the turn moves on. An
+        omission here is a fault -- the counterpart of the absent-section
+        check -- and the orchestrator re-asks once rather than only warning,
+        in the pattern of the metrics repair.
+        """
+        missing: list[tuple[str, str, str]] = []
+        for table_name, table in self.schema.tables.items():
+            if writer_kind == "world" and table.scope != "world":
+                continue
+            if writer_kind != "world" and table.scope == "world":
+                continue
+            required = self.required_columns(table)
+            if not required:
+                continue
+            for record in self.live_records(table_name, actor_id):
+                reported = self._reported.get((table_name, record.id), set())
+                for column in required:
+                    if column not in reported:
+                        missing.append((table_name, record.id, column))
+        return missing
 
     # -- persistence -----------------------------------------------------
 
@@ -761,6 +964,7 @@ class StoreCommand:
     assignments: dict[str, Any] = field(default_factory=dict)
     grounds: str = ""
     raw: str = ""
+    adjust: Optional[float] = None         # update only: submit the change
 
 
 # Matched leniently for the same reason the statement section is: a writer gets
@@ -819,19 +1023,42 @@ def _entry_to_command(entry: object, index: int) -> StoreCommand:
         fields = {}
     if not isinstance(fields, dict):
         raise StoreCommandError(f"{where}: 'fields' must be an object")
+    adjust_raw = entry.get("adjust")
+    if adjust_raw is not None and fields:
+        raise StoreCommandError(
+            f"{where}: give 'fields' or 'adjust', not both -- "
+            "set the value, or submit the change"
+        )
+    adjust: Optional[float] = None
+    if adjust_raw is not None:
+        if isinstance(adjust_raw, bool):
+            raise StoreCommandError(f"{where}: 'adjust' must be a number")
+        if isinstance(adjust_raw, (int, float)):
+            adjust = float(adjust_raw)
+        elif isinstance(adjust_raw, str):
+            try:
+                adjust = float(adjust_raw.strip().lstrip("+"))
+            except ValueError:
+                raise StoreCommandError(
+                    f"{where}: 'adjust' must be a number, got {adjust_raw!r}"[:160]
+                ) from None
+        else:
+            raise StoreCommandError(f"{where}: 'adjust' must be a number")
     assignments: dict[str, Any] = {}
     for name, value in fields.items():
         clean = str(name).strip().strip("`*_\"' ").lower()
         if clean:
             assignments[clean] = value
     if op == "add":
+        if adjust is not None:
+            raise StoreCommandError(f"{where}: an 'add' sets 'fields', not 'adjust'")
         return StoreCommand(kind=op, table=table, assignments=assignments, grounds=grounds, raw=raw)
     record_id = str(entry.get("id", "")).strip().upper()
     if not record_id:
         raise StoreCommandError(f"{where}: an 'update' needs an 'id'")
     return StoreCommand(
         kind=op, table=table, record_id=record_id,
-        assignments=assignments, grounds=grounds, raw=raw,
+        assignments=assignments, adjust=adjust, grounds=grounds, raw=raw,
     )
 
 

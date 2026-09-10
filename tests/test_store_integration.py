@@ -448,6 +448,93 @@ def test_an_actor_cannot_write_a_world_table(world_scenario_dir, tmp_path):
 
 
 # ---------------------------------------------------------------------------
+# reporting_required: the orchestrator re-asks once instead of only warning
+# ---------------------------------------------------------------------------
+
+
+REPORTING_SCENARIO_YAML = """
+name: "Store Test"
+description: "A scenario that declares persistent state"
+start_date: "2026-01"
+time_scale: "6 months per turn"
+max_turns: 5
+actors:
+  - gov
+rule_evolution:
+  freeze_until_turn: 6
+  max_changes_per_turn: 0
+store:
+  measures:
+    scope: actor
+    columns:
+      id:            {owner: system,  type: text}
+      name:          {owner: actor,   type: text, required: true}
+      size:          {owner: actor,   type: enum, values: [large, small], required: true}
+      started_turn:  {owner: system,  type: turn}
+      finish_turn:   {owner: actor,   type: turn, required: true, reporting_required: true}
+      cost_per_turn: {owner: derived, type: integer, from: size, map: {large: 3, small: 2}}
+      status:        {owner: derived, type: text, from: finish_turn,
+                      when_reached: finished, else: running}
+"""
+
+
+@pytest.fixture
+def reporting_scenario_dir(tmp_path: Path, scenario_dir: Path) -> Path:
+    """The minimal fixture with one column the writer must report every turn."""
+    import shutil
+
+    directory = tmp_path / "reporting-store-test"
+    shutil.copytree(scenario_dir, directory)
+    (directory / "scenario.yaml").write_text(REPORTING_SCENARIO_YAML)
+    return directory
+
+
+def test_a_missing_required_report_is_reasked_not_just_warned(
+    reporting_scenario_dir, tmp_path
+):
+    """Omission is a fault with a repair attempt, recorded either way."""
+    scenario = load_scenario(reporting_scenario_dir)
+    output = OutputManager(scenario, reporting_scenario_dir)
+    run_dir = output.start_run()
+    repair = (
+        "## Store changes\n```json\n"
+        + json.dumps(
+            {"store": [{"op": "update", "table": "measures", "id": "M1",
+                        "fields": {"finish_turn": 9}}]}
+        )
+        + "\n```\n"
+    )
+    responses = {
+        "It is now turn 1.": actor_response(writes(add("Kept", finish_turn=9))),
+        "required reports were omitted": repair,
+        "external events": "[]",
+        "Metric Rules": (
+            "# Metric Rules v2 (Turn 1)\n\n## Changelog from v1\n\n"
+            "- No material rule changes.\n  - **Motivation:** frozen\n"
+            "  - **Expected impact:** none\n\n## Rules\n\n1. Test rule\n"
+        ),
+        "JSON object describing all metrics": (
+            '## Metrics\n\n```json\n{"capital": 50}\n```\n\n'
+            "## Narrative\n\nThings happened.\n\n## Notepad\n\nNotes."
+        ),
+        "CURRENT NARRATIVE": "A summary.",
+    }
+    orchestrator = Orchestrator(
+        scenario, MockLLMClient(responses), output_manager=output
+    )
+    # Turn 2 reports nothing: finish_turn is required every turn, so the
+    # orchestrator re-asks once and the repair lands in the same turn.
+    orchestrator._process_store_changes(1, {"gov": actor_response(writes(add("Kept", finish_turn=9)))})
+    orchestrator._process_store_changes(2, {"gov": "## Store changes\nNo changes.\n"})
+
+    record = scenario.store.find("measures", "M1", "gov")
+    assert record is not None
+    assert record.fields["finish_turn"] == 9
+    text = (run_dir / "turn-02" / "2-actors" / "gov-store.md").read_text()
+    assert "on re-ask" in text
+
+
+# ---------------------------------------------------------------------------
 # Scenarios that declare nothing
 # ---------------------------------------------------------------------------
 

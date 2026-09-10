@@ -873,6 +873,51 @@ class PromptBuilder:
                 lines.append(f"- `{metric_id}` (currently {metric.value})")
         return "\n".join(lines)
 
+    def build_store_reask_prompt(
+        self, turn: int, missing: list[tuple[str, str, str]]
+    ) -> tuple[str, str]:
+        """Build the one repair attempt for omitted required reports.
+
+        A table or column flagged ``reporting_required`` means the writer
+        reports the value every turn; an omission is a fault, not persistence.
+        Like the metrics repair, this re-asks once with a targeted prompt and
+        the outcome is recorded whether or not the repair worked -- the
+        changelog carries it either way. Rendered with the current value each
+        missing cell holds going into the turn, for the same reason the
+        metrics repair carries incoming values.
+        """
+        lines = []
+        store = self.scenario.store
+        for table_name, record_id, column in missing:
+            current = "(unknown)"
+            if store is not None:
+                record = store.find(table_name, record_id)
+                if record is not None:
+                    value = store.value(record, column)
+                    current = "(empty)" if value is None else str(value)
+            lines.append(
+                f"- table `{table_name}`, record `{record_id}`, "
+                f"column `{column}` (currently {current})"
+            )
+        listing = "\n".join(lines)
+        system = (
+            "You are repairing an incomplete write to persistent records. "
+            "Answer with a `## Store changes` section holding a single "
+            '`{"store": [...]}` JSON block, and nothing else.'
+        )
+        user = (
+            f"In turn {turn} the following required reports were omitted -- "
+            "values this scenario requires its writer to state every turn:\n\n"
+            f"{listing}\n\n"
+            'Report each one as an `update` entry naming its record id, e.g. '
+            '`{"op": "update", "table": "<table>", "id": "<id>", '
+            '"fields": {"<column>": <value>}}`. A numeric change from a known '
+            "level may instead be an `adjust` entry carrying the delta, e.g. "
+            '`{"op": "update", "table": "<table>", "id": "<id>", "adjust": -3}`.\n\n'
+            "## Store changes\n"
+        )
+        return system, user
+
     def build_constitutional_referee_prompt(
         self,
         turn: int,

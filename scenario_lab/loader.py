@@ -947,6 +947,12 @@ def _store_schema_to_yaml(schema) -> dict:
             entry: dict = {"owner": column.owner, "type": column.type}
             if column.required:
                 entry["required"] = True
+            if column.reporting_required:
+                entry["reporting_required"] = True
+            if column.range is not None:
+                entry["range"] = [column.range[0], column.range[1]]
+            if column.on_out_of_range != "clamp":
+                entry["on_out_of_range"] = column.on_out_of_range
             if column.values:
                 entry["values"] = list(column.values)
             if column.source:
@@ -957,7 +963,10 @@ def _store_schema_to_yaml(schema) -> dict:
                 entry["when_reached"] = column.when_reached
                 entry["else"] = column.otherwise
             columns[col_name] = entry
-        out[name] = {"scope": table.scope, "columns": columns}
+        body: dict = {"scope": table.scope, "columns": columns}
+        if table.reporting_required:
+            body["reporting_required"] = True
+        out[name] = body
     return out
 
 

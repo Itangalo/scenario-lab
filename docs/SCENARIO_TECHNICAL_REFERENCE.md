@@ -324,6 +324,8 @@ Column fields:
 - `owner` (required) — `system` (stamped by the framework and unreachable by any entry), `actor` (set in an actor entry), `world` (set in a Game Master entry), or `derived` (computed at read time).
 - `type` — `text`, `integer`, `number`, `turn` or `enum`. Default `text`. An `enum` must declare `values`.
 - `required` — actor-owned columns in actor tables, world-owned columns in world tables. An `add` missing one is rejected.
+- `reporting_required` — per column, or per table as `reporting_required: true` beside `scope`. Default off: omitted means unchanged. Set, the writer must report the value every turn and an omission is a fault that re-asks once; the outcome lands in the turn's changelog either way.
+- `range` — `[min, max]` or `{min: _, max: _}`, numeric columns only. Out-of-bounds values clamp into range with a note in the changelog; `on_out_of_range: error` rejects instead.
 - `from` plus either `map` or `when_reached`/`else` — derived columns only. `map` is a lookup on another column's value and must cover every value of an enum it reads. `when_reached`/`else` compares a `turn` column against the current turn. Derivation is one step deep: a derived column may not derive from another derived column.
 
 What the writer sends, under a `## Store changes` heading in its response:
@@ -338,7 +340,7 @@ What the writer sends, under a `## Store changes` heading in its response:
 ]}
 ```
 
-The section is required every turn; `No changes.` (or `{"store": []}`) is the answer when nothing changes, and an absent section is recorded as a fault. One entry names one record (`delete` takes a single `id`); values are normalised on the way in (`"Large"` and `"turn 7"` store as `large` and `7`), and anything that will not normalise is rejected with a reason into the turn's changelog rather than stored as something else. Records are addressed by the id the framework assigned (`M1`), never by name. One malformed entry rejects that entry while the rest apply; prose around the block is ignored. What the parser will not do is guess: a block it cannot read is recorded as unparsed rather than dropped, and an `add` whose name already belongs to a live record is applied with a note saying so, because names are not keys and two similar measures may both be legitimate.
+The section is required every turn; `No changes.` (or `{"store": []}`) is the answer when nothing changes, and an absent section is recorded as a fault. One entry names one record (`delete` takes a single `id`). An `update` may carry `adjust` with a numeric delta instead of `fields`, which moves the table's single numeric writer-owned column by that amount -- the change, not the new value. Prior value, adjustment, and result are recorded in the changelog; give `fields` or `adjust`, not both. Values are normalised on the way in (`"Large"` and `"turn 7"` store as `large` and `7`), and anything that will not normalise is rejected with a reason into the turn's changelog rather than stored as something else. Records are addressed by the id the framework assigned (`M1`), never by name. One malformed entry rejects that entry while the rest apply; prose around the block is ignored. What the parser will not do is guess: a block it cannot read is recorded as unparsed rather than dropped, and an `add` whose name already belongs to a live record is applied with a note saying so, because names are not keys and two similar measures may both be legitimate.
 
 What templates can read, in `metric-rules.md` and in prompt overrides:
 
