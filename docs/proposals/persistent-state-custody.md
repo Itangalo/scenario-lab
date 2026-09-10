@@ -13,6 +13,8 @@ What changed from the design as written here:
 
 See the *Declared Persistent State: the Store* section of `../ARCHITECTURE.md` for what was built.
 
+**A second part is open: `store-v2-world-scope-and-metrics.md` (2026-09-10).** It takes up the things this proposal deferred or got wrong — world-scoped tables and a Game Master writer, JSON as the single write form, a reporting flag that re-asks, ranges, relative adjustment, and metrics as a table. Read this file for why the store exists and what the old design cost; read that one for what it becomes.
+
 Out of scope here: whether to re-run any europe-2032 simulations because of this. That is a separate decision.
 
 ## The defect
