@@ -442,6 +442,45 @@ def apply_initial_state(scenario: Scenario, state: InitialState) -> None:
     scenario.initial_state = state
 
 
+def apply_initial_records(scenario: Scenario) -> None:
+    """Apply a schema's ``initial:`` seed entries before turn 1.
+
+    Seeds go through the same apply path as any turn's writes -- normalised,
+    required columns enforced, system turn columns stamped -- at turn 0, so a
+    portfolio the run inherits never depends on a writer talking it into
+    existence on turn 1. A dirty seed fails the load, not the first turn.
+    """
+    from .store import StoreCommand
+
+    store = scenario.store
+    if store is None:
+        return
+    for table_name, table in store.schema.tables.items():
+        for entry in table.initial:
+            if table.scope == "actor":
+                actor_id = entry["actor"]
+                if actor_id not in scenario.actors:
+                    raise StoreSchemaError(
+                        f"store table '{table_name}': initial entry names unknown "
+                        f"actor '{actor_id}'"
+                    )
+                writer_id, writer_kind = actor_id, "actor"
+            else:
+                writer_id, writer_kind = "world", "world"
+            command = StoreCommand(
+                kind="add",
+                table=table_name,
+                assignments=dict(entry["fields"]),
+                grounds=str(entry.get("grounds", "")),
+                raw="initial seed",
+            )
+            outcome = store.apply(command, writer_id, 0, writer_kind=writer_kind)
+            if outcome.verdict != "applied":
+                raise StoreSchemaError(
+                    f"store table '{table_name}': initial entry rejected: {outcome.reason}"
+                )
+
+
 def load_scenario(
     path: Union[Path, str],
     initial_state: Optional[Union[Path, str]] = None,
@@ -563,6 +602,12 @@ def load_scenario(
                 scenario.store,
                 {m_id: m.value for m_id, m in metrics.metrics.items()},
             )
+        except StoreSchemaError as err:
+            raise ValueError(f"{path}: {err}") from err
+
+    if scenario.store is not None:
+        try:
+            apply_initial_records(scenario)
         except StoreSchemaError as err:
             raise ValueError(f"{path}: {err}") from err
 
@@ -992,6 +1037,8 @@ def _store_schema_to_yaml(schema) -> dict:
         body: dict = {"scope": table.scope, "columns": columns}
         if table.reporting_required:
             body["reporting_required"] = True
+        if table.initial:
+            body["initial"] = [dict(entry) for entry in table.initial]
         out[name] = body
     return out
 

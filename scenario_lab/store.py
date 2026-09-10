@@ -105,6 +105,7 @@ class StoreTable:
     columns: dict[str, StoreColumn]
     id_prefix: str = "R"
     reporting_required: bool = False      # every writer-owned column, every turn
+    initial: list[dict[str, Any]] = field(default_factory=list)  # seeded at load
 
     @property
     def id_column(self) -> str:
@@ -166,11 +167,13 @@ class StoreSchema:
                                     "columns": columns}
             if table.reporting_required:
                 body["reporting_required"] = True
+            if table.initial:
+                body["initial"] = [dict(entry) for entry in table.initial]
             out[name] = body
         return out
 
 
-_TABLE_KEYS = {"scope", "columns", "reporting_required", "write_form"}
+_TABLE_KEYS = {"scope", "columns", "reporting_required", "write_form", "initial"}
 _COLUMN_KEYS = {"owner", "type", "required", "reporting_required",
                 "range", "on_out_of_range",
                 "values", "from", "map", "when_reached", "else"}
@@ -256,6 +259,11 @@ def parse_store_schema(data: object) -> StoreSchema:
                 f"store table '{name}': 'write_form' must be 'json', got {write_form!r}"
             )
 
+        # Records the run starts with, so a portfolio need not be talked into
+        # existence on turn 1. Shape-checked here; applied by the loader, where
+        # a dirty seed fails the load instead of the first turn.
+        initial = _parse_initial(name, scope, body.get("initial"))
+
         columns: dict[str, StoreColumn] = {}
         for col_name, spec in raw_columns.items():
             columns[col_name] = _parse_column(name, col_name, spec)
@@ -284,10 +292,49 @@ def parse_store_schema(data: object) -> StoreSchema:
 
         tables[name] = StoreTable(
             name=name, scope=scope, columns=columns, id_prefix=prefixes[name],
-            reporting_required=table_reporting,
+            reporting_required=table_reporting, initial=initial,
         )
 
     return StoreSchema(tables=tables)
+
+
+def _parse_initial(table: str, scope: str, raw: object) -> list[dict[str, Any]]:
+    """Shape-check a table's ``initial:`` seed entries.
+
+    An entry carries ``fields`` (the writer-owned values) and, for actor
+    tables, ``actor`` naming the record's owner. Values are normalised and
+    required columns enforced when the loader applies them, through the same
+    path as any turn's writes -- never a second grammar.
+    """
+    if raw is None:
+        return []
+    if not isinstance(raw, list):
+        raise StoreSchemaError(f"store table '{table}': 'initial' must be a list")
+    entries: list[dict[str, Any]] = []
+    for index, item in enumerate(raw):
+        where = f"store table '{table}', initial entry {index}"
+        if not isinstance(item, dict):
+            raise StoreSchemaError(f"{where} must be a mapping")
+        unknown = set(item) - {"actor", "fields", "grounds"}
+        if unknown:
+            raise StoreSchemaError(f"{where}: unknown key(s): {', '.join(sorted(unknown))}")
+        fields = item.get("fields")
+        if not isinstance(fields, dict) or not fields:
+            raise StoreSchemaError(f"{where} needs a non-empty 'fields' mapping")
+        if scope == "actor":
+            if not isinstance(item.get("actor"), str) or not item["actor"].strip():
+                raise StoreSchemaError(f"{where} needs 'actor' naming the record's owner")
+        elif "actor" in item:
+            raise StoreSchemaError(
+                f"{where}: a world table's seeds belong to the run, not an actor"
+            )
+        entry: dict[str, Any] = {"fields": dict(fields)}
+        if scope == "actor":
+            entry["actor"] = item["actor"].strip()
+        if item.get("grounds") is not None:
+            entry["grounds"] = str(item["grounds"])
+        entries.append(entry)
+    return entries
 
 
 def _parse_column(table: str, name: object, spec: object) -> StoreColumn:
@@ -622,8 +669,10 @@ class Store:
         """Apply one parsed write, enforcing which scope the writer may touch.
 
         Actor outputs write actor-scoped tables; the Game Master step writes
-        world-scoped ones. A command crossing that boundary is rejected rather
-        than half-wired: a scenario must never depend on a table nothing writes
+        world-scoped ones, plus scheduling moves -- ``update`` entries with
+        grounds -- on actor tables, where it alone sees the whole turn. A
+        command crossing that boundary any other way is rejected rather than
+        half-wired: a scenario must never depend on a table nothing writes
         to, nor let an actor rewrite standing conditions of the world.
         """
         table = self.schema.tables.get(command.table)
@@ -635,12 +684,13 @@ class Store:
                 grounds=command.grounds,
             )
         if writer_kind == "world" and table.scope != "world":
-            return StoreOutcome(
-                command.raw, "rejected",
-                f"table '{command.table}' is actor-scoped and cannot be written "
-                "by the Game Master",
-                grounds=command.grounds,
-            )
+            if not (table.scope == "actor" and command.kind == "update"):
+                return StoreOutcome(
+                    command.raw, "rejected",
+                    f"table '{command.table}' is actor-scoped: the Game Master "
+                    "may only move records there, never add or remove them",
+                    grounds=command.grounds,
+                )
         if writer_kind != "world" and table.scope == "world":
             return StoreOutcome(
                 command.raw, "rejected",
@@ -831,9 +881,23 @@ class Store:
         self, table: StoreTable, command: "StoreCommand", actor_id: str,
         writer_kind: str = "actor",
     ) -> StoreRecord:
-        record = self.find(table.name, command.record_id, actor_id)
+        # The Game Master addresses any actor's record: scheduling moves are
+        # run-wide, and scoping them to one portfolio would hide the rest.
+        lookup = None if (writer_kind == "world" and table.scope == "actor") else actor_id
+        record = self.find(table.name, command.record_id, lookup)
         if record is None:
             raise StoreCommandError(f"no live record '{command.record_id}' in '{table.name}'")
+        if (
+            writer_kind == "world" and table.scope == "actor"
+            and not command.grounds.strip()
+        ):
+            # A scheduling move rewrites someone else's portfolio entry. The
+            # grounds cite the rule-10 condition that justifies it, and the
+            # changelog carries them -- auditability is the price of the
+            # asymmetric write.
+            raise StoreCommandError(
+                "a Game Master update to an actor table must carry grounds"
+            )
         values, ignored = self._validate_assignments(table, command, writer_kind)
         self._ignored = ignored
         if command.adjust is not None:

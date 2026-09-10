@@ -1225,6 +1225,8 @@ def validate_store(scenario: Scenario) -> Tuple[List[str], List[str]]:
                     "table exists to remove. Set it on the table."
                 )
             continue
+        if table.scope == "world":
+            continue
         writable = table.writable()
         if len(writable) == 1:
             warnings.append(

@@ -36,6 +36,14 @@ Each statement carries a tier saying what it takes to change it:
 
 You may also stake yourself to something new — adding a statement, or raising one to a higher tier. That needs no triggering development, because you are binding yourself rather than reversing yourself, but it must appear in your actions: a commitment nobody saw you make is not a commitment.
 
+{% if has_store %}
+## Records kept for you
+
+Some state in this scenario lives in tables the framework holds, not in prose you restate. What you hold carries forward on its own: you never re-list it, and nothing you leave out can remove a record. Each record carries the id the framework gave it; that id, not the record's name, is how you refer to it.
+
+The only thing that changes any of it is a JSON block under a `## Store changes` heading in your answer: `{"store": [{"op": "add", ...}]}` with `add` (new record), `update` (named by `id`), or `delete` (named by `id`, and it must carry `grounds`). List only what changes. One malformed entry rejects that entry while the rest apply; leaving the whole section out is recorded as a fault rather than read as no change.
+{% endif %}
+
 ## Your tasks
 
 1. **Describe actions you take during this turn**

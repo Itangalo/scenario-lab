@@ -10,11 +10,11 @@
 
 3. **Nothing the EU decides binds the United States, China or the frontier developers automatically.** Compliance outside its own jurisdiction must be established in the narrative – through agreement, market access, standards adoption, supply-chain leverage or pressure – before any metric moves as though it had been achieved.
 
-4. **The American posture, once elected, is standing.** Turn 5 settles who won the 2028 election; the `US_POSTURE:` line is written in turn 6, when the administration takes office, and carried in the notepad every subsequent turn, conditioning the world under metric rule 8. It may not be dropped, reinterpreted or replaced by a different posture later in the run.
+4. **The American posture, once elected, is standing.** Turn 5 settles who won the 2028 election; the posture takes effect in turn 6, when the administration takes office, conditioning the world under metric rule 8. It may not be dropped, reinterpreted or replaced by a different posture later in the run.
 
 ## Modelling choices
 
-5. **At most one new measure per turn, and at most one named priority.** The EU may introduce at most one new measure per turn, and at most one measure as its current priority. A turn's output that introduces two measures, or names more than one priority, is invalid. Widening the scope of an existing measure is ok, and usually moves the finishing date further out.
+5. **At most one new measure per turn, and at most one named priority.** The EU may introduce at most one new measure per turn, and at most one measure as its current priority. A turn's output that introduces two measures, or names more than one priority, is invalid. Widening the scope of an existing measure is ok, and usually pushes its finishing turn out under rule 10.
 
 6. **No measure is implemented instantly.** Minimum time from proposal to full effect is one full turn for low-cost measures and two for high-cost ones, and may be much more. Effect grows the closer the measure is to be completed.
 

@@ -152,6 +152,29 @@ research_questions:
 store:
   measures:
     scope: actor
+    # The run inherits two programmes already in flight. They are seeded,
+    # not proposed: the Union's first turn is its own decision, and a
+    # portfolio that must be talked into existence on turn 1 is the defect
+    # this mechanism removes. Seeded at turn 0, before any writer runs.
+    initial:
+      - actor: eu
+        fields:
+          name: InvestAI Gigafactories
+          category: 4
+          size: large
+          finish_turn: 7
+          applies_to: own jurisdiction
+          targeted_effect: eu_ai_sovereignty up, via €200bn for four to five sites
+        grounds: inherited programme
+      - actor: eu
+        fields:
+          name: Tech sovereignty package
+          category: 4
+          size: large
+          finish_turn: 6
+          applies_to: own jurisdiction
+          targeted_effect: eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones
+        grounds: inherited programme
     columns:
       id:              {owner: system,  type: text}
       name:            {owner: actor,   type: text, required: true}
@@ -172,6 +195,17 @@ store:
       # "A measure is finished when the current turn reaches Y" (rule 10).
       status:          {owner: derived, type: text, from: finish_turn,
                         when_reached: finished, else: running}
+  # The American posture after the 2028 election: a standing condition of the
+  # world, held by the framework rather than carried in prose. One record,
+  # seeded undecided; the Game Master sets it from the event record -- pending
+  # in turn 5, the winner from turn 6 -- and rule 8 reads it back.
+  standing:
+    scope: world
+    initial:
+      - fields: {posture: undecided}
+    columns:
+      id:       {owner: system, type: text}
+      posture:  {owner: world,  type: text, required: true}
 
 llm:
   model: "openrouter:meta/muse-spark-1.3-contributor"

@@ -23,6 +23,15 @@ When judging success and writing the narrative, be realistic rather than harmoni
 * If every actor's actions succeeded cleanly this turn, reconsider your assessment before finalizing it.
 * Update the notepad with important information that should be remembered for the next turn, but doesn't fit in metrics or the narrative. This can be ongoing events, conditions that have come into effect, or other information affecting future turns. The content you write here will REPLACE the current notepad. Make sure to include any previous notes you wish to keep. If nothing needs to be noted, leave the notepad empty.
 
+{% if has_world_store %}
+## Records you alone write
+
+Some state in this scenario lives in run-owned tables that only you write: standing conditions of the world no actor may rewrite. They carry forward on their own. The only thing that changes them is a JSON block under a `## Store changes` heading in your answer: `{"store": [{"op": "add", ...}]}` with `add`, `update` (named by `id`), or `delete` (named by `id`, carrying `grounds`). One malformed entry rejects that entry while the rest apply; an absent section is recorded as a fault. Actor-owned records are outside your reach unless your turn instructions explicitly give you scheduling moves there -- and then only moves, with the reason stated, never additions or removals.
+{% endif %}
+{% if has_metrics_store %}
+Metrics themselves live in one such table: report every metric every turn as a store entry, submitting the change (`"adjust": <delta>`) where the rules state deltas and the level (`"fields"`) where they set one.
+{% endif %}
+
 {% if constitution %}
 ## Constitutional Constraints
 

@@ -177,6 +177,12 @@ class PromptBuilder:
             "actor_name": "",
             "actor_description": "",
             "behavioral_traits": "",
+            "has_store": self.scenario.store is not None,
+            "has_world_store": self.scenario.store is not None
+            and any(t.scope == "world" for t in self.scenario.store.schema.tables.values()),
+            "has_metrics_store": self.scenario.store is not None
+            and self.scenario.store.schema.tables.get("metrics") is not None
+            and self.scenario.store.schema.tables["metrics"].scope == "world",
         }
 
         if actor_id and actor_id in self.scenario.actors:

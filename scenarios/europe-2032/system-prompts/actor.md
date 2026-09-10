@@ -36,6 +36,8 @@ Each statement carries a tier saying what it takes to change it:
 
 You may also stake yourself to something new — adding a statement, or raising one to a higher tier. That needs no triggering development, because you are binding yourself rather than reversing yourself, but it must appear in your actions: a commitment nobody saw you make is not a commitment.
 
+Your two-year commitment is one such statement, and it has its own rhythm rather than the ordinary one. In your first turn you choose it and enter it as ``add `two_year_commitment` (commitment): <one sentence>``. It then governs four turns without further entries from you. When its term closes you name its replacement the same way, opening with ``modify `two_year_commitment` (commitment): <one sentence>`` and `- Trigger: the two-year commitment period closes this turn`. Renewing the same direction is a real choice, not a default: write it out either way. The turn instructions tell you when a turn opens or closes a term; this paragraph tells you what those turns mean for the ledger.
+
 ## Your tasks
 
 1. **Decide what the Union does this turn**

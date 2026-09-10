@@ -316,8 +316,9 @@ store:
 
 Table fields:
 
-- `scope` — `actor` (written by actors) or `world` (written by the Game Master step, read by every step). An actor entry touching a world table is rejected, and the Game Master cannot reach actor tables.
+- `scope` — `actor` (written by actors) or `world` (written by the Game Master step, read by every step). An actor entry touching a world table is rejected. The Game Master may additionally move records (`update` with grounds) on actor tables where the scenario gives it scheduling moves; it may never add or remove there, and actors cannot write world tables at all.
 - `columns` — an ordered mapping. Every table needs one system-owned `text` column for the record id, and at least one column owned by its writer (`actor` for actor tables, `world` for world tables); the other writer's columns are rejected at load.
+- `initial` — optional list of seeded records the run starts with, applied at turn 0 through the same path as any turn's writes. An actor-table entry names `actor` plus `fields`; a world-table entry names `fields` (and optional `grounds`). A dirty seed fails the load, not the first turn.
 
 Column fields:
 

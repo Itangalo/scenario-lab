@@ -64,7 +64,7 @@ Under a `## Store changes` heading in your answer, write one JSON block holding 
 {"store": [{"op": "add", "table": "<world table>", "fields": {"<column>": "<value>"}, "grounds": "<one clause>"}]}
 ```
 
-`op` is `add` (with `fields`), `update` (with `id` and `fields`), or `delete` (with `id`, and it must carry `grounds`). One malformed entry rejects that entry while the rest apply; an absent section is recorded as a fault. You cannot write actor tables, and actors cannot write these.
+`op` is `add` (with `fields`), `update` (with `id` and `fields`), or `delete` (with `id`, and it must carry `grounds`). One malformed entry rejects that entry while the rest apply; an absent section is recorded as a fault. Actor-owned records are outside your reach unless your turn instructions explicitly give you scheduling moves there -- and then only moves, with the reason stated, never additions or removals.{% if has_metrics_store %} Metric reports do not go here: they go under `## Metrics` below, one entry per metric.{% endif %}
 
 ---
 {% endif %}

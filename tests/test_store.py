@@ -993,6 +993,93 @@ def test_default_is_silence_means_persistence(store: Store):
 
 
 # ---------------------------------------------------------------------------
+# Scheduling moves: the Game Master updates actor tables, nothing else
+# ---------------------------------------------------------------------------
+
+
+def test_the_game_master_may_move_but_not_add_or_remove():
+    store = Store(parse_store_schema(SCHEMA))
+    store.begin_turn(1)
+    commands, _, _ = parse_store_changes(block(add_entry(name="X", size="small", finish_turn=9)))
+    assert store.apply(commands[0], "eu", 1).verdict == "applied"
+
+    move, _, _ = parse_store_changes(
+        block({"op": "update", "table": "measures", "id": "M1",
+               "fields": {"finish_turn": 8}, "grounds": "named priority"})
+    )
+    # Grounds are required: a scheduling move rewrites someone else's entry.
+    bare, _, _ = parse_store_changes(block(update_entry("M1", finish_turn=8)))
+    assert store.apply(bare[0], "world", 1, writer_kind="world").verdict == "rejected"
+    outcome = store.apply(move[0], "world", 1, writer_kind="world")
+    assert outcome.verdict == "applied"
+    assert store.find("measures", "M1", "eu").fields["finish_turn"] == 8
+
+    add, _, _ = parse_store_changes(block(add_entry(name="Y", size="small", finish_turn=9)))
+    assert store.apply(add[0], "world", 1, writer_kind="world").verdict == "rejected"
+    delete, _, _ = parse_store_changes(block(delete_entry("M1", grounds="x")))
+    assert store.apply(delete[0], "world", 1, writer_kind="world").verdict == "rejected"
+    assert len(store.live_records("measures")) == 1
+
+
+# ---------------------------------------------------------------------------
+# Seeds: the run starts with records, not with talk about records
+# ---------------------------------------------------------------------------
+
+
+def test_initial_entries_are_shape_checked_at_parse():
+    good = {"m": {"columns": {
+        "id": {"owner": "system"}, "n": {"owner": "actor"}},
+        "initial": [{"actor": "eu", "fields": {"n": "X"}}]}}
+    assert parse_store_schema(good).tables["m"].initial[0]["actor"] == "eu"
+    for bad_initial in (
+        [{"fields": {"n": "X"}}],
+        [{"actor": "eu"}],
+        [{"actor": "eu", "fields": {}, "extra": 1}],
+        "not-a-list",
+    ):
+        with pytest.raises(StoreSchemaError):
+            parse_store_schema({"m": {"columns": {
+                "id": {"owner": "system"}, "n": {"owner": "actor"}},
+                "initial": bad_initial}})
+
+
+def test_seeds_apply_through_the_same_path_at_turn_zero():
+    from types import SimpleNamespace
+
+    from scenario_lab.loader import apply_initial_records
+
+    schema = parse_store_schema(
+        {"m": {"columns": {
+            "id": {"owner": "system"},
+            "n": {"owner": "actor", "required": True},
+            "s": {"owner": "system", "type": "turn"}},
+            "initial": [{"actor": "eu", "fields": {"n": "Inherited"}}]}}
+    )
+    store = Store(schema)
+    apply_initial_records(SimpleNamespace(store=store, actors={"eu": object()}))
+    (record,) = store.live_records("m")
+    assert record.id == "M1"
+    assert record.fields["n"] == "Inherited"
+    assert record.fields["s"] == 0
+    assert record.added_turn == 0
+
+
+def test_a_dirty_seed_fails_the_load_not_the_first_turn():
+    from types import SimpleNamespace
+
+    from scenario_lab.loader import apply_initial_records
+
+    schema = parse_store_schema(
+        {"m": {"columns": {
+            "id": {"owner": "system"}, "n": {"owner": "actor", "required": True}},
+            "initial": [{"actor": "eu", "fields": {"typo_column": 1}}]}}
+    )
+    store = Store(schema)
+    with pytest.raises(StoreSchemaError):
+        apply_initial_records(SimpleNamespace(store=store, actors={"eu": object()}))
+
+
+# ---------------------------------------------------------------------------
 # Template references
 # ---------------------------------------------------------------------------
 

@@ -43,13 +43,14 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
 
 {{ store.rows('measures', ['id', 'name', 'cost_per_turn'], status='running') }}
 
-     **so {{ store.rows('measures', status='running').count }} measures are in flight and they come to −{{ store.rows('measures', ['cost_per_turn'], status='running').sum }} `eu_political_capital` this turn.** Your charge line carries one term per measure, so it has exactly {{ store.rows('measures', status='running').count }} of them before the priority: a line with fewer has dropped one, and a line with more has charged something that is not in flight. That figure is the `cost_per_turn` column of the rows above, added up, and nothing else: the named priority's −1 below is charged on top of it, and is not in it. **A measure is charged in every turn up to but not including its finishing turn.** It is absent from those rows in the turn it finishes, because it is no longer in flight — that turn it is paid, not charged, under the next line.
+     **so {{ store.rows('measures', status='running').count }} measures are in flight and they come to −{{ store.rows('measures', ['cost_per_turn'], status='running').sum }} `eu_political_capital` this turn.** That figure is the `cost_per_turn` column of the rows above, added up, and nothing else: the named priority's −1 below is charged on top of it, and is not in it. Your charge line carries one term per measure -- {{ store.rows('measures', status='running').count }} of them before the priority. **A measure is charged in every turn up to but not including its finishing turn.**
    - A named priority: −1 that turn.
-   - A measure the Union abandoned or that was publicly defeated this turn — it left the portfolio by an explicit decision, which you will find in the actor's `## Store changes`: −3 to −6
+   - A measure the Union abandoned or that was publicly defeated this turn — it left the portfolio by an explicit `delete`, which you will find in the actor's `## Store changes`: −3 to −6
    - A measure reaching its finishing turn: +2 to +5, once, in that turn. {% if store.rows('measures', finish_turn=turn).count > 0 %}**Finishing this turn — these are paid, and are deliberately not in the charge above:**
 
 {{ store.rows('measures', finish_turn=turn) }}
 {% else %}Nothing finishes this turn.{% endif %}
+  A measure is finished when the current turn reaches its finishing turn: its status flips by itself, it stops costing from that turn, and no entry from anyone is needed. Turn Y is the first turn it does not cost anything, and the turn it pays out.
     - A measure just added, addressing a negative event from the last three rounds: +1 to +8. Larger for bigger events, more recent events and larger measures; smaller for the reverse.
     - The event `middle_power_coalition`, in the turn it fires: +2 to +4, once. Its sovereignty effect is already covered: coordination that secures supply-chain access counts under rule 5's event term.
    - Negative events this turn move `eu_political_capital` in either direction; the sign follows from where the harm originated and whether the EU had acted beforehand.
@@ -69,7 +70,11 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
 
 ## Other effects
 
-8. **The American posture is a standing condition from turn 6 onward.** In turn 5 exactly one of `election_consolidation`, `election_alliance` and `election_retrenchment` occurs; which one is decided before you see it. Turn 5 settles only who won — the result is known, nothing else changes: no posture effects, no posture-conditioned probabilities, no US_POSTURE line. From turn 6 the winner governs, when the new administration takes office. In turn 6, read the turn-5 winner from the event record and write the matching `US_POSTURE:` line into the world state, then carry it in the notepad every turn after. The events themselves never write this line.
+8. **The American posture is a standing condition from turn 6 onward, held in the store.** In turn 5 exactly one of `election_consolidation`, `election_alliance` and `election_retrenchment` occurs; which one is decided before you see it. Turn 5 settles only who won — the result is known, nothing else changes: no posture effects, no posture-conditioned probabilities, no posture. From turn 6 the winner governs, when the new administration takes office. The record reads:
+
+{{ store.rows('standing', ['id', 'posture']) }}
+
+In turn 5, set it to `pending` — the administration has not taken office — and in particular never to a named posture: a named posture would let this turn's judgments price a government that does not exist. From turn 6, read the turn-5 winner from the event record and set the matching posture, then leave it standing: it may not be dropped, reinterpreted or replaced later in the run. The events themselves never write this record, and the narrative never carries it — the rows above are where it lives, every turn.
 
    - **CONSOLIDATION** — frontier access rationed by country tier:
      - categories 4 and 5 cost one size level more
@@ -92,10 +97,11 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
 
 10. **Managing the measure portfolio**
     - The portfolio is held by the framework, not restated by the Union. A measure's cost, starting turn and finishing turn are carried forward by Python; nothing the Union writes or omits can drop an entry, and its starting turn cannot be rewritten at all. Do not ask the Union to re-list its measures, and do not treat a measure's absence from the narrative as its departure. The rows printed under rule 6 are the portfolio.
-    - A finishing turn moves only by an explicit `update` in the Union's `## Store changes`, and three things justify one. Nothing moves it silently.
+    - A finishing turn moves only by your `update`, and three things justify one — each stated in the entry's grounds, because a move that rewrites someone else's entry without a reason is not auditable. Nothing moves it silently.
       - It is a named priority: may pull it in by one turn
       - Left unprioritised several consecutive turns: may push it out by one
       - An event: either, and rarely by more than one
+    - The Union cannot move it at all: no `update` entry of theirs reaches a finishing turn. If this turn's events or the Union's own neglect should have moved one and you do not move it, say so in the Narrative — that is a thing the world noticed and the Union did not act on, and it is the kind of pressure that shows up in the next turn's answer.
     - If `eu_political_capital` is below 20, the EU starts losing control of its own agenda:
       - **The named priority has no effect, and no cost.** Pull-in-by-one-turn does not apply, pushing a measure buys nothing, and the priority's −1 is not charged. Naming a priority changes nothing at all.
     - If `eu_political_capital` is below 12, control slips further:

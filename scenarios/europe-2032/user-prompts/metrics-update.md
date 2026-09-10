@@ -1,10 +1,11 @@
 {# Scenario override. Identical to templates/user-prompts/metrics-update.md except for four additions:
    1. Guidance for treating tracked emerging developments as faint narrative signals rather than events.
-   2. The political-capital procedure: the portfolio charge, the proposal bonus and the sentiment term, each as its own required Notepad line.
-   3. The US_POSTURE line, which is carried in the Notepad from turn 6 onward. In turn 5, the turn the 2028 election fires, do NOT write it: the result is known but the administration has not taken office, so there is no standing posture yet. From turn 6, read the turn-5 winner from the event record and carry the matching line every turn after.
+   2. The political-capital procedure: the portfolio charge (taken from rule 6's store figure, not recomputed), the proposal bonus and the sentiment term, each as its own required Notepad line.
+   3. The standing record for the American posture: pending in turn 5, the winner from turn 6, read from the store every turn after and never carried in the Notepad. In turn 5, the turn the 2028 election fires, do NOT set it: the result is known but the administration has not taken office, so there is no standing posture yet.
    4. The sovereignty accounting line of step 3d, which unlike the three above is not a record of a judgement but the judgement itself: it starts from last turn's figure and the number it ends at is the one written into the Metrics JSON.
    The first three sit after the notepad block; the metrics_json block above it is now in the default template too and is not an override.
    A ban on writing the long run as settled used to sit here, and was removed on 2026-09-01 deliberately: the Game Master is never told the arm's name and never sees the other arms' rules, so it has no vocabulary for announcing which trajectory this world turned out to be. background/context.md does name the three readings in the opening world state, so the channel is not fully closed -- that was weighed and accepted.
+   Finishing-turn moves live here rather than with the Union: only the Game Master sees the whole turn, so only it judges pull-ins, push-outs and event moves under rule 10, with grounds stated.
    Keep in sync with the default template when that changes. #}
 It is now turn {{turn}} which covers {{time_period}}.
 
@@ -50,7 +51,7 @@ The "Emerging developments (tracked)" section lists developments that recent tur
 
    `PORTFOLIO CHARGE: Gigafactories −3, Frontier Access Guarantee −3, Resilience Surge −2, priority −1 = −9`
 
-   **The measures half of that line is given to you.** Rule 6 above prints the portfolio as it now stands and what the measures come to, added up from the rows. Itemise them anyway — the line is what makes the charge checkable — and check that your measure terms come to that same figure. If they do not, you have misread a row, and the rows are right.
+   **The measures half of that line is given to you.** Rule 6 above prints the portfolio as it now stands and what the measures come to, added up from the rows -- take that figure, do not recompute it. Itemise the measures anyway — the line is what makes the charge checkable — and check that your measure terms come to that same figure. If they do not, you have misread a row, and the rows are right.
 
    **A measure finishing this turn is not in the charge.** Rule 6 lists what finishes separately, and separately is where it belongs: the turn a measure reaches its finishing turn is the turn it pays out, not a last turn of costing. Adding a finishing measure back into the charge line is the commonest way the line comes to more than rule 6's figure.
 
@@ -92,7 +93,7 @@ The "Emerging developments (tracked)" section lists developments that recent tur
 
    `SOVEREIGNTY: 34 last turn, no capacity event, Gigafactories in flight +1, capability rose 2.5 −1 = 34`
 
-   **The number after the `=` is what you write for `eu_ai_sovereignty` in the Metrics JSON** — the same number, not one near it and not one you reached another way. There is nothing left to judge once the line is written. Nothing outside rule 5 is a term: momentum, institutional follow-through, prior delivery, floors and rounding are not terms, and a line that reaches a total and then appends `→ net +1` has thrown away its own arithmetic.
+   **The number after the `=` is what you write for `eu_ai_sovereignty` in the Metrics JSON** — the same number, not one near it and not one you reached another way. Nothing outside rule 5 is a term: momentum, institutional follow-through, prior delivery, floors and rounding are not terms, and a line that reaches a total and then appends `→ net +1` has thrown away its own arithmetic. Read what finishes this turn off rule 6's finishing list — the store's rows, not your memory of the portfolio.
 
    **An event names the turn it fired, and that turn is this one.** Write `eu_frontier_access_denied t6 −2`, and only when the turn is 6 and the id is in this turn's list above. An event pays once, in the turn it happens, and is then gone from this line however long the world goes on dealing with it — a plant that is still shut, a supplier that has not come back, a member state that has not returned to the line. Those are consequences of a charge already made, not a charge to make again.
 
@@ -100,10 +101,11 @@ The "Emerging developments (tracked)" section lists developments that recent tur
 
    **A measure that has not reached its finishing turn cannot pay finishing money.** Building momentum, permits granted, planning underway, a programme going well — none of these is a completion, and the most any of them is worth is +2.
 
-4. **A finishing turn moves only when something moved it.** Each measure's finishing turn is carried by the framework and printed in the rows under rule 6; you do not copy it forward and you cannot change it. Only the Union can, by an `update` in its `## Store changes`, and rule 10 says what justifies one. If this turn's events or the Union's own neglect should have moved a finishing turn and the Union did not move it, say so in the Narrative — that is a thing the world noticed and the Union did not act on, and it is the kind of pressure that shows up in the next turn's answer.
+4. **A finishing turn moves only when something moved it, and only you move it.** Each measure's finishing turn is carried by the framework and printed in the rows under rule 6; the Union cannot change it. Against rule 10, consider each running measure every turn: a named priority may pull it in by one, several unprioritised turns may push it out by one, an event may do either and rarely by more than one. Move with an `update` entry under your `## Store changes` carrying the condition as grounds — `{"op": "update", "table": "measures", "id": "M2", "fields": {"finish_turn": 5}, "grounds": "named priority"}` — and nothing else moves one. You never add or remove measures. If this turn's events or the Union's own neglect should have moved a finishing turn and you do not move it, say so in the Narrative instead.
 
-{% if turn >= 6 %}5. Once `us_election_2028` has fired, write the resulting `US_POSTURE: CONSOLIDATION`, `US_POSTURE: ALLIANCE` or `US_POSTURE: RETRENCHMENT` line into the world state for that turn, and carry the same line in the Notepad every turn thereafter. It is a standing condition of the world that metric rule 8 reads each turn, not a one-off narrative beat.
-{% elif turn == 5 %}5. The 2028 election fires this turn: record who won in the narrative only. There is no standing posture yet — the administration has not taken office — so write exactly `US_POSTURE: pending (administration takes office next turn)` and nothing else on that line. In particular, never write CONSOLIDATION, ALLIANCE or RETRENCHMENT this turn: a named posture would let this turn's judgments price a government that does not exist. Metric rule 8 replaces the pending line from the event record in turn 6.
+{% if turn == 6 %}5. The 2028 election fired last turn: read the winner from the event record and set the standing record to the matching posture (`CONSOLIDATION`, `ALLIANCE` or `RETRENCHMENT`) with an `update` entry. From here it stands: it may not be dropped, reinterpreted or replaced later in the run.
+{% elif turn > 6 %}5. The standing record already holds the posture. Leave it alone: it is read from the rows every turn and never rewritten, never carried in the Notepad, never touched by events.
+{% elif turn == 5 %}5. The 2028 election fires this turn: set the standing record to `pending` — the administration has not taken office — and in particular never to a named posture: a named posture would let this turn's judgments price a government that does not exist. Record who won in the narrative only.
 {% endif %}
 
 ---
