@@ -47,11 +47,11 @@ The "Emerging developments (tracked)" section lists developments that recent tur
 
 3. **Price the portfolio, out loud, before you apply it.** Metric rule 6 charges `eu_political_capital` for every measure in flight, every turn, on all of them and not only the priority: 3 for a large measure, 2 for a small one, plus 1 more for whichever is the named priority. **Every term in the charge line is a subtraction, the priority's included.** Write it as `priority −1`: it is a further cost for pushing something, never a rebate, and a `+1` in that line has been read as one.
 
-   Write one line in the Notepad giving every measure its price:
+   Write one line in the Notepad giving every measure its price, opening with the turn so the carried line is self-dating:
 
-   `PORTFOLIO CHARGE: Gigafactories −3, Frontier Access Guarantee −3, Resilience Surge −2, priority −1 = −9`
+   `PORTFOLIO CHARGE t1: Gigafactories −3, Frontier Access Guarantee −3, Resilience Surge −2, priority −1 = −9`
 
-   **The measures half of that line is given to you.** Rule 6 above prints the portfolio as it now stands and what the measures come to, added up from the rows -- take that figure, do not recompute it. Itemise the measures anyway — the line is what makes the charge checkable — and check that your measure terms come to that same figure. If they do not, you have misread a row, and the rows are right.
+   **The measures half of that line is given to you.** Rule 6 above prints the portfolio as it now stands and what the measures come to, added up from the rows -- take that figure, do not recompute it. Itemise the measures anyway — the line is what makes the charge checkable — and check that your measure terms come to that same figure. If they do not, you have misread a row, and the rows are right. **The carried line is last turn's, and rule 6's figure is this turn's: they differ whenever the portfolio changed** -- a measure added, finished, or deleted since. That difference is expected, not an error to reconcile; the rows govern this turn, always.
 
    **A measure finishing this turn is not in the charge.** Rule 6 lists what finishes separately, and separately is where it belongs: the turn a measure reaches its finishing turn is the turn it pays out, not a last turn of costing. Adding a finishing measure back into the charge line is the commonest way the line comes to more than rule 6's figure.
 
