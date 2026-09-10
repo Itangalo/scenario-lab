@@ -192,7 +192,7 @@ def audit_store(run_dirs: list[Path], actor: str, limit: int) -> dict[str, Any]:
                 "## New measure" in prose.read_text(encoding="utf-8")
                 if prose.is_file() else False
             )
-            if described and "add measures" not in changes:
+            if described and "add measures" not in changes and '"op": "add"' not in changes:
                 described_without_add += 1
                 wrote_nothing = "- **applied**" not in changes
                 if wrote_nothing:

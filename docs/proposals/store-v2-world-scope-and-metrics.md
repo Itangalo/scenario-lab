@@ -1,6 +1,6 @@
 # Proposal: the store, part two — world scope, reporting, and metrics
 
-Status: **open**, opened 2026-09-10. Nothing here is implemented. Part one *is* implemented and running; this is what it becomes.
+Status: **implemented** on `store-v2-world-scope-and-metrics`, 2026-09-10, in four steps (selector/reducers; world scope + JSON; reporting/range/adjust; metrics adapter). Part one *is* implemented and running; this is what it becomes.
 
 Read `persistent-state-custody.md` first for why the store exists, what the old design cost, and which arguments were already settled. Read the *Declared Persistent State: the Store* section of `../ARCHITECTURE.md` for what is live today. This file is written to be a sufficient brief on its own for a session that has none of the conversation behind it.
 

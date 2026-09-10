@@ -359,6 +359,22 @@ Two things to know before using this:
 
 Artifacts: `turn-XX/2-actors/<actor_id>-store.md` (records plus this turn's changelog, written every turn) and `<actor_id>-store.json` (the state `resume` reads back); world tables additionally land in `turn-XX/4-world-store.md` and `turn-XX/4-world-store.json` from the Game Master step, and `resume` prefers the latter when present because it holds the whole turn. `python -m scenario_lab.store --self-test` checks the mechanism itself.
 
+### `store.metrics`: metrics as a world table (optional)
+
+A scenario may hold its metric levels in the store instead of only in the metrics step's JSON:
+
+```yaml
+store:
+  metrics:
+    scope: world
+    reporting_required: true
+    columns:
+      id:    {owner: system, type: text}
+      value: {owner: world,  type: number, range: [0, 100], on_out_of_range: clamp}
+```
+
+Convention: the table is named `metrics`, world-scoped, with its levels in exactly one numeric world-owned column under any name. One record per metric is seeded from the starting values, addressed by metric id, and `scenario.metrics` syncs from the records -- every reader (gates, termination, prompts, analysis) is unchanged. The Game Master reports metrics as store entries (`adjust` for deltas, field sets for levels); a legacy levels map is accepted entry by entry. `reporting_required` is expected here and warned about when absent: without it an omitted metric persists silently. Starting-state draws set both the metric and its record.
+
 ### `constitutional_enforcement`
 
 Optional guardrails for the constitutional referee retry/fallback policy:

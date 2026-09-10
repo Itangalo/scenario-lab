@@ -1215,6 +1215,16 @@ def validate_store(scenario: Scenario) -> Tuple[List[str], List[str]]:
         )
 
     for name, table in schema.tables.items():
+        if name == "metrics" and table.scope == "world":
+            if not table.reporting_required and not any(
+                c.reporting_required for c in table.columns.values()
+            ):
+                warnings.append(
+                    "store table 'metrics' sets no `reporting_required`: without it an "
+                    "omitted metric persists silently, which is the defect the metrics "
+                    "table exists to remove. Set it on the table."
+                )
+            continue
         writable = table.writable()
         if len(writable) == 1:
             warnings.append(

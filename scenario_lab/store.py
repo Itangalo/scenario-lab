@@ -170,7 +170,7 @@ class StoreSchema:
         return out
 
 
-_TABLE_KEYS = {"scope", "columns", "reporting_required"}
+_TABLE_KEYS = {"scope", "columns", "reporting_required", "write_form"}
 _COLUMN_KEYS = {"owner", "type", "required", "reporting_required",
                 "range", "on_out_of_range",
                 "values", "from", "map", "when_reached", "else"}
@@ -245,6 +245,15 @@ def parse_store_schema(data: object) -> StoreSchema:
         if not isinstance(table_reporting, bool):
             raise StoreSchemaError(
                 f"store table '{name}': 'reporting_required' must be true or false"
+            )
+
+        # JSON is the only write form; the key exists so scenarios written
+        # against the proposal validate, and so a future form is a value here
+        # rather than a new grammar.
+        write_form = body.get("write_form", "json")
+        if write_form != "json":
+            raise StoreSchemaError(
+                f"store table '{name}': 'write_form' must be 'json', got {write_form!r}"
             )
 
         columns: dict[str, StoreColumn] = {}
@@ -1091,6 +1100,18 @@ def _commands_from_candidates(
     return commands, malformed
 
 
+def commands_from_documents(
+    candidates: list[str],
+) -> tuple[list[StoreCommand], list[str]]:
+    """Parse JSON documents holding ``{"store": [...]}`` into commands.
+
+    The public entry point for call sites that already extracted the JSON --
+    the metrics adapter reads the ``## Metrics`` section itself rather than a
+    ``## Store changes`` one, so it parses documents rather than responses.
+    """
+    return _commands_from_candidates(candidates)
+
+
 def parse_store_changes(output: str) -> tuple[list[StoreCommand], list[str], bool]:
     """Extract JSON write commands from a step's response.
 
@@ -1427,6 +1448,78 @@ def render_store_file(
 def world_tables(schema: StoreSchema) -> list[str]:
     """Names of the run-owned tables, in declaration order."""
     return [name for name, table in schema.tables.items() if table.scope == "world"]
+
+
+# --------------------------------------------------------------------------
+# Metrics as a world table (behind an adapter)
+# --------------------------------------------------------------------------
+
+METRICS_TABLE_NAME = "metrics"
+
+
+def metrics_table(schema: StoreSchema) -> Optional[StoreTable]:
+    """The run-owned metrics table, when the scenario declares one."""
+    table = schema.tables.get(METRICS_TABLE_NAME)
+    if table is None or table.scope != "world":
+        return None
+    return table
+
+
+def metrics_value_column(table: StoreTable) -> StoreColumn:
+    """The single numeric world-owned column a metrics table holds values in.
+
+    One column, because ``adjust`` submits a change without naming its target
+    and the adapter syncs without guessing which column is the level.
+    """
+    candidates = [
+        c for c in table.columns.values()
+        if c.owner == "world" and c.type in ("integer", "number", "turn")
+    ]
+    if len(candidates) != 1:
+        raise StoreSchemaError(
+            f"store table '{table.name}': a metrics table holds its levels in "
+            "exactly one numeric world-owned column"
+        )
+    return candidates[0]
+
+
+def seed_metrics_table(store: Store, levels: dict[str, float]) -> None:
+    """Create one record per metric, addressed by metric id.
+
+    Records carry the metric id as their record id -- ``{"op": "update",
+    "table": "metrics", "id": "eu_political_capital", ...}`` addresses the
+    metric, not a framework counter -- stamped at turn 0, before any writer
+    runs. Unknown ids in later writes reject as unknown records, so the Game
+    Master cannot invent a metric by updating one.
+    """
+    table = metrics_table(store.schema)
+    if table is None:
+        return
+    column = metrics_value_column(table)
+    for metric_id, level in levels.items():
+        store.records.append(
+            StoreRecord(
+                id=metric_id,
+                table=table.name,
+                actor_id="world",
+                fields={column.name: level},
+                added_turn=0,
+            )
+        )
+
+
+def read_metric_levels(store: Store) -> dict[str, Any]:
+    """Live metric id to stored level, for the metrics adapter to sync from."""
+    table = metrics_table(store.schema)
+    if table is None:
+        return {}
+    column = metrics_value_column(table)
+    levels: dict[str, Any] = {}
+    for record in store.live_records(table.name):
+        value = record.fields.get(column.name)
+        if isinstance(value, (int, float)) and not isinstance(value, bool):
+            levels[record.id] = value
+    return levels
 
 
 def render_world_store_file(

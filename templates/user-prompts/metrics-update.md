@@ -84,6 +84,7 @@ Important: You must use the exact headers '## Metrics', '## Narrative', and '## 
 Respond with a Markdown text with the following content:
 
 * Heading level 2: Metrics
-* A JSON object describing all metrics in a ```json code fence, in the following format: `{"metric1_name": value1, "metric2_name": value2}`
-* Heading level 2: Narrative
+{% if has_metrics_store %}* A JSON object holding this turn's metric reports as the store's write form, in a ```json code fence: `{"store": [{"op": "update", "table": "metrics", "id": "<metric_id>", "adjust": <delta>, "grounds": "<one clause>"}]}`. Report **every** metric every turn -- an omission is re-asked, not carried silently. Where the rules state the change as a delta, submit the change with `adjust` and let the framework do the arithmetic; where the value is set rather than moved, give `"fields": {"<value column>": <level>}` instead. Give `fields` or `adjust`, not both.
+{% else %}* A JSON object describing all metrics in a ```json code fence, in the following format: `{"metric1_name": value1, "metric2_name": value2}`
+{% endif %}* Heading level 2: Narrative
 * A coherent story about what happens in the world during the turn (max 400 words). You may use subheadings (level 3) if desired.

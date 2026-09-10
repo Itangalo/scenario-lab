@@ -436,6 +436,9 @@ class PromptBuilder:
             "has_store": self.scenario.store is not None,
             "has_world_store": self.scenario.store is not None
             and any(t.scope == "world" for t in self.scenario.store.schema.tables.values()),
+            "has_metrics_store": self.scenario.store is not None
+            and self.scenario.store.schema.tables.get("metrics") is not None
+            and self.scenario.store.schema.tables["metrics"].scope == "world",
             "time_period": time_period,
             "time_scale": self.scenario.config.time_scale,
             "metrics_json": metrics_json,

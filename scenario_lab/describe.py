@@ -286,9 +286,10 @@ def format_describe_report(overview: dict[str, Any]) -> str:
     store = overview.get("store") or {}
     if store:
         for name, table in store.items():
+            writer = "the Game Master" if table.get("scope") == "world" else "the actor"
             lines.append(
                 f"- Declared state: `{name}` ({table['columns']} column(s); "
-                f"the actor sets {', '.join(table['writable'])})"
+                f"{writer} sets {', '.join(table['writable'])})"
             )
     else:
         lines.append("- Declared state: none (actors carry their own state in prose)")

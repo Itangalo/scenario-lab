@@ -535,6 +535,231 @@ def test_a_missing_required_report_is_reasked_not_just_warned(
 
 
 # ---------------------------------------------------------------------------
+# Metrics as a world table: the adapter keeps scenario.metrics' interface
+# ---------------------------------------------------------------------------
+
+
+METRICS_STORE_SCENARIO_YAML = """
+name: "Metrics Store Test"
+description: "A scenario whose metrics live in the store"
+start_date: "2026-01"
+time_scale: "6 months per turn"
+max_turns: 5
+actors:
+  - gov
+rule_evolution:
+  freeze_until_turn: 6
+  max_changes_per_turn: 0
+store:
+  metrics:
+    scope: world
+    reporting_required: true
+    write_form: json
+    columns:
+      id:    {owner: system, type: text}
+      value: {owner: world,  type: number, range: [0, 100], on_out_of_range: clamp}
+"""
+
+METRICS_STORE_RULES = """# Metric Rules
+
+## Rules
+
+1. Capital stands at {{ store.rows('metrics', ['value'], id='capital').max }}.
+"""
+
+METRICS_STORE_ACTOR_PROMPT = """It is now turn {{turn}}.
+
+## Your records
+
+{{ store.rows('metrics', ['value'], id='capital').max }}
+
+Write a `## Store changes` section.
+"""
+
+
+@pytest.fixture
+def metrics_scenario_dir(tmp_path: Path) -> Path:
+    """A minimal scenario whose metric lives in a world table."""
+    directory = tmp_path / "scenarios" / "metrics-store-test"
+    (directory / "background" / "actors").mkdir(parents=True)
+    (directory / "user-prompts").mkdir()
+
+    (directory / "scenario.yaml").write_text(METRICS_STORE_SCENARIO_YAML)
+    (directory / "metric-rules.md").write_text(METRICS_STORE_RULES)
+    (directory / "events.md").write_text("# Events\n")
+    (directory / "metrics.md").write_text(
+        "# Metrics\n\n## capital\n**Description:** Political capital\n"
+        "**ID:** capital\n**Starting value:** 50\n**Min:** 0\n**Max:** 100\n**Unit:** points\n"
+    )
+    (directory / "background" / "context.md").write_text("# Context\n\nThe world.")
+    (directory / "background" / "actors" / "gov.md").write_text(
+        "# Government\n## Short description\nA government.\n"
+        "## Long description\nIt governs.\n"
+    )
+    (directory / "user-prompts" / "actor.md").write_text(METRICS_STORE_ACTOR_PROMPT)
+    return directory
+
+
+def metrics_store_responses(metrics_json: str, actor_body: str = "No changes.") -> dict:
+    """Mock responses where the Game Master reports metrics in store form."""
+    return {
+        f"It is now turn 1.": actor_response(actor_body),
+        "metric reports as the store's write form": (
+            "## Metrics\n\n```json\n" + metrics_json + "\n```\n\n"
+            "## Narrative\n\nThings happened.\n\n## Notepad\n\nNotes."
+        ),
+        "external events": "[]",
+        "Metric Rules": (
+            "# Metric Rules v2 (Turn 1)\n\n## Changelog from v1\n\n"
+            "- No material rule changes.\n  - **Motivation:** frozen\n"
+            "  - **Expected impact:** none\n\n## Rules\n\n1. Test rule\n"
+        ),
+        "CURRENT NARRATIVE": "A summary.",
+    }
+
+
+def test_metrics_are_seeded_from_start_values(metrics_scenario_dir):
+    scenario = load_scenario(metrics_scenario_dir)
+    record = scenario.store.find("metrics", "capital")
+    assert record is not None
+    assert record.fields["value"] == 50
+    assert scenario.metrics.metrics["capital"].value == 50
+
+
+def test_an_adjust_moves_the_metric_in_python(metrics_scenario_dir):
+    """The addition happens in Python: the model submits the delta, not the level."""
+    scenario = load_scenario(metrics_scenario_dir)
+    output = OutputManager(scenario, metrics_scenario_dir)
+    run_dir = output.start_run()
+    orchestrator = Orchestrator(
+        scenario,
+        MockLLMClient(
+            metrics_store_responses(
+                json.dumps(
+                    {"store": [{"op": "update", "table": "metrics", "id": "capital",
+                                "adjust": -9, "grounds": "charge 8, priority 1"}]}
+                )
+            )
+        ),
+        output_manager=output,
+    )
+    orchestrator.run_turn(1)
+    assert scenario.metrics.metrics["capital"].value == 41
+    saved = json.loads((run_dir / "turn-01" / "4-metrics.json").read_text())
+    assert saved["capital"] == 41
+    changelog = (run_dir / "turn-01" / "4-world-store.md").read_text()
+    assert "adjusted 'value' from 50" in changelog
+
+
+def test_a_levels_map_is_accepted_entry_by_entry(metrics_scenario_dir):
+    """The format-fix retry asks for levels; refusing them would strand repairs."""
+    scenario = load_scenario(metrics_scenario_dir)
+    output = OutputManager(scenario, metrics_scenario_dir)
+    output.start_run()
+    orchestrator = Orchestrator(
+        scenario,
+        MockLLMClient(metrics_store_responses(json.dumps({"capital": 44}))),
+        output_manager=output,
+    )
+    orchestrator.run_turn(1)
+    assert scenario.metrics.metrics["capital"].value == 44
+
+
+def test_an_unknown_metric_id_rejects_only_itself(metrics_scenario_dir):
+    scenario = load_scenario(metrics_scenario_dir)
+    output = OutputManager(scenario, metrics_scenario_dir)
+    output.start_run()
+    orchestrator = Orchestrator(
+        scenario,
+        MockLLMClient(
+            metrics_store_responses(json.dumps({"capital": 44, "nope": 1}))
+        ),
+        output_manager=output,
+    )
+    orchestrator.run_turn(1)
+    assert scenario.metrics.metrics["capital"].value == 44
+
+
+def test_a_missing_metric_is_reasked(metrics_scenario_dir):
+    scenario = load_scenario(metrics_scenario_dir)
+    output = OutputManager(scenario, metrics_scenario_dir)
+    run_dir = output.start_run()
+    repair = (
+        "## Store changes\n```json\n"
+        + json.dumps(
+            {"store": [{"op": "update", "table": "metrics", "id": "capital",
+                        "fields": {"value": 47}}]}
+        )
+        + "\n```\n"
+    )
+    responses = metrics_store_responses(json.dumps({"store": []}))
+    responses["required reports were omitted"] = repair
+    orchestrator = Orchestrator(
+        scenario, MockLLMClient(responses), output_manager=output
+    )
+    orchestrator.run_turn(1)
+    assert scenario.metrics.metrics["capital"].value == 47
+    metadata = json.loads((run_dir / "turn-01" / "4-metrics-metadata.json").read_text())
+    assert metadata["repaired"] is True
+
+
+def test_resume_keeps_store_and_metrics_agreeing(metrics_scenario_dir):
+    scenario = load_scenario(metrics_scenario_dir)
+    output = OutputManager(scenario, metrics_scenario_dir)
+    run_dir = output.start_run()
+    orchestrator = Orchestrator(
+        scenario,
+        MockLLMClient(
+            metrics_store_responses(
+                json.dumps(
+                    {"store": [{"op": "update", "table": "metrics", "id": "capital",
+                                "adjust": -4}]}
+                )
+            )
+        ),
+        output_manager=output,
+    )
+    orchestrator.run_turn(1)
+    resumed, turn = load_run_state(run_dir)
+    assert turn == 1
+    assert resumed.metrics.metrics["capital"].value == 46
+    assert resumed.store.find("metrics", "capital").fields["value"] == 46
+
+
+def test_an_initial_state_draw_sets_both(metrics_scenario_dir, tmp_path):
+    draw = tmp_path / "draw-01.json"
+    draw.write_text(json.dumps({"metrics": {"capital": 60}, "notes": "draw 01"}))
+    scenario = load_scenario(metrics_scenario_dir, initial_state=draw)
+    assert scenario.metrics.metrics["capital"].value == 60
+    assert scenario.store.find("metrics", "capital").fields["value"] == 60
+
+
+def test_metrics_table_without_reporting_warns(tmp_path):
+    from scenario_lab.validator import validate_store
+
+    directory = tmp_path / "unreported"
+    (directory / "background" / "actors").mkdir(parents=True)
+    (directory / "user-prompts").mkdir()
+    (directory / "scenario.yaml").write_text(
+        METRICS_STORE_SCENARIO_YAML.replace("    reporting_required: true\n", "")
+    )
+    (directory / "metric-rules.md").write_text(METRICS_STORE_RULES)
+    (directory / "events.md").write_text("# Events\n")
+    (directory / "metrics.md").write_text(
+        "# Metrics\n\n## capital\n**Description:** Political capital\n"
+        "**ID:** capital\n**Starting value:** 50\n**Min:** 0\n**Max:** 100\n**Unit:** points\n"
+    )
+    (directory / "background" / "context.md").write_text("# Context\n\nThe world.")
+    (directory / "background" / "actors" / "gov.md").write_text(
+        "# Government\n## Short description\nA government.\n"
+        "## Long description\nIt governs.\n"
+    )
+    scenario = load_scenario(directory)
+    _errors, warnings = validate_store(scenario)
+    assert any("reporting_required" in w for w in warnings)
+
+
+# ---------------------------------------------------------------------------
 # Scenarios that declare nothing
 # ---------------------------------------------------------------------------
 

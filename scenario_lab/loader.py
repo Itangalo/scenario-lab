@@ -28,7 +28,14 @@ from .models import (
     TerminationCondition,
     WorldState,
 )
-from .store import Store, StoreSchemaError, parse_store_schema
+from .store import (
+    Store,
+    StoreSchemaError,
+    metrics_table,
+    metrics_value_column,
+    parse_store_schema,
+    seed_metrics_table,
+)
 
 
 def _parse_routes_field(value: object) -> "ModelRoute | list[ModelRoute]":
@@ -417,6 +424,14 @@ def apply_initial_state(scenario: Scenario, state: InitialState) -> None:
                 f"[{metric.min_value}, {metric.max_value}]"
             )
         metric.value = value
+        # A metrics table holds the same levels: the draw sets both, so the
+        # run starts from one starting world rather than two.
+        table = metrics_table(scenario.config.store) if scenario.store is not None else None
+        if table is not None:
+            column = metrics_value_column(table)
+            record = scenario.store.find(table.name, metric_id)
+            if record is not None:
+                record.fields[column.name] = value
 
     if state.context:
         # The world state starts as a copy of the context, so both need the
@@ -536,9 +551,20 @@ def load_scenario(
         # The live store starts empty and is filled only by commands. Nothing
         # a scenario file says seeds it: opening records are the actor's first
         # turn of commands, exactly like every later turn, so there is one code
-        # path into the records rather than two.
+        # path into the records rather than two. The one exception is the
+        # metrics table, whose records are the metric set itself: one record
+        # per metric, addressed by metric id, at its starting value.
         store=Store(config.store) if config.store else None,
     )
+
+    if scenario.store is not None and metrics_table(config.store) is not None:
+        try:
+            seed_metrics_table(
+                scenario.store,
+                {m_id: m.value for m_id, m in metrics.metrics.items()},
+            )
+        except StoreSchemaError as err:
+            raise ValueError(f"{path}: {err}") from err
 
     if initial_state is not None:
         apply_initial_state(scenario, load_initial_state(initial_state))

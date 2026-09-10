@@ -12,9 +12,15 @@ from .llm import LLMResponse, LLMParseError, LLMError, LLMUnsupportedStructuredE
 from .router import FallbackRouter
 from .providers.registry import ProviderRegistry
 from .store import (
+    StoreCommand,
     StoreOutcome,
+    commands_from_documents,
+    metrics_table,
+    metrics_value_column,
     parse_store_changes,
+    read_metric_levels,
     render_store_file,
+    render_world_store_file,
 )
 from .statements import (
     ProposalOutcome,
@@ -1487,9 +1493,8 @@ class Orchestrator:
 
             # An absent section is a fault, not a declaration of no change --
             # and it is the *detectable* form of the failure this mechanism
-            # exists to remove. It is reported rather than repaired: repairing
-            # it means re-asking the actor, which is its own mechanism and is
-            # not built yet (docs/proposals/persistent-state-custody.md).
+            # exists to remove. A missing required report re-asks once above;
+            # a missing section is reported rather than repaired.
             if not section_present:
                 print(
                     f"  ⚠ {actor_id} wrote no '## Store changes' section; "
@@ -1516,7 +1521,138 @@ class Orchestrator:
 
         return all_outcomes
 
-    def _process_world_store_changes(self, turn: int, gm_text: str) -> list[StoreOutcome]:
+    def _apply_world_entries(
+        self, turn: int, commands: list[StoreCommand]
+    ) -> list[StoreOutcome]:
+        """Apply parsed entries as the Game Master step, without reopening the turn."""
+        store = self.scenario.store
+        assert store is not None
+        return [
+            store.apply(command, "world", turn, writer_kind="world")
+            for command in commands
+        ]
+
+    def _apply_metrics_table_entries(
+        self, turn: int, parsed: object
+    ) -> tuple[dict[str, float], dict, list[StoreOutcome], list[str]]:
+        """Apply the ``## Metrics`` JSON as store writes, and sync the adapter.
+
+        With a metrics table the step emits the store's write form rather than
+        a levels map: ``{"store": [{"op": "update", "table": "metrics",
+        "id": "<metric>", "adjust": -3}]}``. A legacy levels map is still
+        accepted entry by entry -- the format-fix retry asks for one, so
+        refusing it would strand every repaired turn -- translated into
+        field-set updates. Entries naming any other table are rejected here;
+        they belong under ``## Store changes``.
+
+        Returns ``(levels, metadata, outcomes, malformed)`` where levels is
+        the metric id to value mapping synced from the store -- the adapter's
+        read interface -- and metadata records the repair outcome the way the
+        legacy missing-metrics repair does. The caller hands the outcomes to
+        the world-store step so the turn writes one changelog, not two.
+        """
+        from .store import METRICS_TABLE_NAME
+
+        store = self.scenario.store
+        assert store is not None
+        table = metrics_table(store.schema)
+        assert table is not None
+        value_column = metrics_value_column(table).name
+
+        commands: list[StoreCommand] = []
+        malformed: list[str] = []
+        native = False
+        if isinstance(parsed, dict) and isinstance(parsed.get("store"), list):
+            native = True
+            commands, malformed = commands_from_documents([json.dumps(parsed)])
+        elif isinstance(parsed, dict):
+            for metric_id, value in parsed.items():
+                if metric_id not in self.scenario.metrics.metrics:
+                    malformed.append(f"unknown metric '{metric_id}'")
+                    continue
+                if isinstance(value, bool) or not isinstance(value, (int, float)):
+                    malformed.append(
+                        f"metric '{metric_id}' must be a number, got {value!r}"[:160]
+                    )
+                    continue
+                commands.append(
+                    StoreCommand(
+                        kind="update", table=METRICS_TABLE_NAME,
+                        record_id=str(metric_id),
+                        assignments={value_column: value},
+                        raw=json.dumps({metric_id: value})[:200],
+                    )
+                )
+        else:
+            malformed.append(
+                "expected a levels map or {\"store\": [...]} in ## Metrics"
+            )
+
+        outcomes: list[StoreOutcome] = []
+        for command in commands:
+            if command.table != METRICS_TABLE_NAME:
+                outcomes.append(
+                    StoreOutcome(
+                        command.raw, "rejected",
+                        f"table '{command.table}' is not the metrics table: "
+                        "write it under '## Store changes'",
+                        grounds=command.grounds,
+                    )
+                )
+                continue
+            outcomes.append(store.apply(command, "world", turn, writer_kind="world"))
+
+        record: dict = {
+            "store_form": "entries" if native else "levels_map",
+            "applied": sum(1 for o in outcomes if o.verdict == "applied"),
+            "rejected": sum(1 for o in outcomes if o.verdict == "rejected"),
+            "malformed": list(malformed),
+        }
+
+        missing = [m for m in store.missing_required_reports("world") if m[0] == METRICS_TABLE_NAME]
+        record["missing_metrics"] = [m[1] for m in missing]
+        if missing:
+            names = ", ".join(m[1] for m in missing)
+            print(f"  Warning: metrics response omitted {names}; requesting completion")
+            record["repair_attempted"] = True
+            repair_outcomes, repair_malformed = self._reask_store_reports(
+                turn, self.llm_clients["metrics"],
+                "metrics:completion_fix", "world", "world", missing,
+            )
+            outcomes.extend(repair_outcomes)
+            malformed.extend(repair_malformed)
+            still = [m for m in store.missing_required_reports("world") if m[0] == METRICS_TABLE_NAME]
+            record["repaired"] = not still
+            if still:
+                record["still_missing"] = [m[1] for m in still]
+        else:
+            record["repair_attempted"] = False
+
+        for outcome in [o for o in outcomes if o.verdict == "rejected"]:
+            print(f"  ⚠ metrics store entry rejected: {outcome.reason}")
+        for line in malformed:
+            print(f"  ⚠ metrics store entry not understood: {line[:120]}")
+
+        # The adapter sync: the store holds the values, scenario.metrics keeps
+        # its interface. Carried-forward values are explicit -- every metric
+        # lands in the saved mapping from its record, never as an absent key.
+        levels: dict[str, float] = {}
+        for metric_id, metric in self.scenario.metrics.metrics.items():
+            stored = read_metric_levels(store).get(metric_id)
+            if stored is not None:
+                metric.value = float(stored)
+                metric.clamp()
+            levels[metric_id] = metric.value
+
+        if self.output_manager:
+            self.output_manager.save_metrics_metadata(turn, record)
+
+        return levels, record, outcomes, malformed
+
+    def _process_world_store_changes(
+        self, turn: int, gm_text: str,
+        prior: tuple[list[StoreOutcome], list[str]] = ([], []),
+    ) -> list[StoreOutcome]:
         """Apply the Game Master step's writes to the run-owned tables.
 
         Runs inside the metrics step, after the metrics JSON parsed: world
@@ -1529,21 +1665,45 @@ class Orchestrator:
 
         Scenarios without world tables skip this entirely: the Game Master
         response format is saturated enough without a block nothing reads.
+
+        ``prior`` carries the metrics-table wave, if any, so the turn writes
+        one world changelog rather than two artifacts overwriting each other.
+        An absent ``## Store changes`` section is a fault only when the
+        scenario has world tables beyond the metrics one -- with metrics
+        alone, the ``## Metrics`` section is that turn's world-write block.
         """
-        from .store import render_world_store_file, world_tables
+        from .store import METRICS_TABLE_NAME, render_world_store_file, world_tables
 
         store = self.scenario.store
         if store is None or not world_tables(store.schema):
             return []
 
         commands, malformed, section_present = parse_store_changes(gm_text)
-        outcomes = [
-            store.apply(command, "world", turn, writer_kind="world")
-            for command in commands
-        ]
+        outcomes = self._apply_world_entries(turn, commands)
         malformed = list(malformed)
 
-        missing = store.missing_required_reports("world")
+        prior_outcomes, prior_malformed = prior
+        outcomes = [*prior_outcomes, *outcomes]
+        malformed = [*prior_malformed, *malformed]
+
+        if not section_present and any(
+            t != METRICS_TABLE_NAME for t in world_tables(store.schema)
+        ):
+            print(
+                "  ⚠ Game Master wrote no '## Store changes' section; "
+                "nothing was applied to world tables this turn"
+            )
+        elif not section_present:
+            # Metrics alone: the ## Metrics section is this turn's
+            # world-write block, so there is nothing to fault.
+            section_present = True
+
+        # Required reports beyond the metrics table re-ask here; the metrics
+        # table's own omissions were already re-asked in the metrics wave.
+        missing = [
+            m for m in store.missing_required_reports("world")
+            if m[0] != METRICS_TABLE_NAME
+        ]
         if missing:
             names = ", ".join(f"{t}/{r}/{c}" for t, r, c in missing)
             print(f"  Warning: Game Master omitted required world reports {names}; re-asking")
@@ -1554,11 +1714,6 @@ class Orchestrator:
             outcomes.extend(repair_outcomes)
             malformed.extend(repair_malformed)
 
-        if not section_present:
-            print(
-                "  ⚠ Game Master wrote no '## Store changes' section; "
-                "nothing was applied to world tables this turn"
-            )
         for line in malformed:
             print(f"  ⚠ world store entry not understood: {line[:120]}")
         for outcome in [o for o in outcomes if o.verdict == "rejected"]:
@@ -1890,10 +2045,23 @@ class Orchestrator:
                 )
                 return current_metrics, error_narrative, self.scenario.notepad
 
-        metrics, narrative, notepad = self._complete_metrics(
-            turn, metrics, narrative, notepad, response.content
-        )
-        self._process_world_store_changes(turn, gm_text)
+        if self.scenario.store is not None and metrics_table(self.scenario.config.store) is not None:
+            # Metrics live in the store: the ## Metrics JSON is the store's
+            # write form, and scenario.metrics syncs from the records behind
+            # its unchanged interface. The reporting re-ask replaces the
+            # legacy missing-metrics repair.
+            metrics, _record, metrics_outcomes, metrics_malformed = (
+                self._apply_metrics_table_entries(turn, metrics)
+            )
+            prior_wave: tuple[list[StoreOutcome], list[str]] = (
+                metrics_outcomes, metrics_malformed,
+            )
+        else:
+            metrics, narrative, notepad = self._complete_metrics(
+                turn, metrics, narrative, notepad, response.content
+            )
+            prior_wave = ([], [])
+        self._process_world_store_changes(turn, gm_text, prior_wave)
         return self._validate_and_clamp_metrics(metrics), narrative, notepad
 
     def _missing_metrics(self, metrics: dict) -> list[str]:

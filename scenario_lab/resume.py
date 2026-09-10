@@ -9,7 +9,13 @@ from datetime import datetime
 from .models import Scenario, EmergingDevelopment
 from .loader import load_scenario, get_time_period
 from .statements import parse_ledger_file, render_statements_file
-from .store import render_store_file
+from .store import (
+    metrics_table as _metrics_table,
+    read_metric_levels,
+    render_store_file,
+    render_world_store_file,
+    world_tables,
+)
 
 
 def detect_last_turn(run_dir: Path) -> int:
@@ -297,6 +303,16 @@ def load_run_state(
                     scenario.store.current_turn = from_turn
                     break
 
+    # 4d. When metrics live in the store, the store is the holder and
+    # scenario.metrics its read interface: sync the restored records over the
+    # restored levels so the two cannot disagree about the turn.
+    if scenario.store is not None and _metrics_table(scenario.store.schema) is not None:
+        for metric_id, level in read_metric_levels(scenario.store).items():
+            metric = scenario.metrics.metrics.get(metric_id)
+            if metric is not None:
+                metric.value = float(level)
+                metric.clamp()
+
     # 5. Load historical summary (if exists)
     summary_file = turn_dir / "6-historical-summary.md"
     if summary_file.exists():
@@ -553,6 +569,19 @@ def persist_scenario_state_at_turn(run_dir: Path, turn: int, scenario: Scenario)
                 json.dumps(scenario.store.to_dict(), indent=2, ensure_ascii=False),
                 encoding="utf-8",
             )
+
+    # The world snapshot is what resume prefers when world tables exist, so a
+    # branch point carrying world writes must refresh it alongside the actor
+    # files rather than leaving the copied turn's version behind.
+    if scenario.store is not None and world_tables(scenario.store.schema):
+        (turn_dir / "4-world-store.md").write_text(
+            render_world_store_file(scenario.store, turn, [], [], True),
+            encoding="utf-8",
+        )
+        (turn_dir / "4-world-store.json").write_text(
+            json.dumps(scenario.store.to_dict(), indent=2, ensure_ascii=False),
+            encoding="utf-8",
+        )
 
     # Keep historical summary aligned with loaded state when present.
     if scenario.world_state.historical_summary:
