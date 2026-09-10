@@ -165,8 +165,28 @@ Every mechanism in this repository that grew informally had to be measured and c
 - **Step 4's whole justification is arithmetic quality**, so it needs a before-and-after. Rule 2's `openweight_capability` midpoint is the clean case: it is currently a computation the Game Master performs in prose, and it is exactly what a rendered term would replace.
 - Step 2 should be measured for parse failures, not just correctness. The claim behind JSON is that structured outputs remove a class of bug; the four found in part one's grammar are the baseline it should be checked against.
 
+## Which base this assumes
+
+**Part one's code lives on `generalized-ledger` and nowhere else.** `main` carries the part-one *proposal* and none of the implementation: no `scenario_lab/store.py`, no wiring through loader, prompts, orchestrator, output, resume and validator, no europe-2032 migration, no `scripts/check_portfolio_drift.py`, none of the 940 tests. As of 2026-09-10 the branch is fourteen commits ahead of `main` and `main` is zero ahead of it.
+
+This proposal is written as an extension of part one, and branching from `generalized-ledger` is the recommended base. Only one piece of part one is actually *replaced* by the design above — the markdown command parser, superseded by decision 2. Everything else is additive: world scope, the reporting flag, ranges, `adjust` and the chained read surface all sit on top of machinery that already exists and is tested.
+
+Starting from `main` instead means rebuilding part one to reach the point this document starts from. That is a defensible choice if the intent is a clean design rather than an accreted one, but it should be a decision rather than a side effect of picking a branch, and the list below is what must not be lost either way.
+
+## What to salvage if rebuilding from scratch
+
+None of this is design; it is knowledge that cost measured runs to acquire, and rewriting from the design alone would relearn it the same way.
+
+- **`tests/test_store.py` and `tests/test_store_integration.py`.** Several tests exist because of a specific incident, and each names it in its docstring. The four that matter most: a two-id delete that kept the second record; an unwritable column costing the whole command; a trailing "No other changes." reading as a fault; a turn column accepting a non-positive turn. Under a JSON write form the parsing tests change shape, but every *semantic* test survives unchanged.
+- **The normalisation rules.** Models write `Large`, `` `large` `` and `**large**` for one value, and `finishes on turn 7` for the number 7. Forgiving on write, strict in store, and loud rejection for what will not normalise. JSON does not remove this: a model writing JSON still writes `"size": "Large"`.
+- **The per-turn transaction.** `Store.begin_turn` restores a pre-turn snapshot before applying, so a turn re-run under `constitutional_enforcement.max_attempts` replaces its own previous application instead of appending. Without it a turn executed twice doubles a portfolio.
+- **Derivation as lookup only**, one step deep, with a map over an enum required to cover every value.
+- **Ids assigned by Python, never names as keys.** `check_portfolio_drift.py` needs a stopword list and a fuzzy matcher because the Game Master paraphrases names between turns.
+- **The two audit modes and their baselines**, which are the only way to tell an improvement from noise.
+- **The europe-2032 prompt corrections**, which are not in the framework at all and are easy to lose: the finishing-turn boundary, the priority charged on top of the framework's figure, `## New measure` as prose rather than a form, and the four computed columns named as not-yours-to-write.
+
 ## For a fresh session
 
-Everything needed is in this file, `persistent-state-custody.md`, the *Declared Persistent State* section of `../ARCHITECTURE.md`, and the store section of `../SCENARIO_TECHNICAL_REFERENCE.md`. The working branch is `generalized-ledger`.
+Everything needed is in this file, `persistent-state-custody.md`, the *Declared Persistent State* section of `../ARCHITECTURE.md`, and the store section of `../SCENARIO_TECHNICAL_REFERENCE.md` — the last two on `generalized-ledger` only.
 
-Start at step 1. It is independent of the rest and can be measured against the six existing runs without touching custody.
+Start at step 1. It is independent of the rest, touches only the read surface, and can be measured against the six existing runs without touching custody.
