@@ -37,8 +37,16 @@ from typing import Any, Optional
 
 # The column owners. This is the load-bearing part of the schema: it is what
 # turns "copied forward unchanged" from an instruction the model obeys by
-# remembering into something it cannot express at all.
-OWNERS = ("system", "actor", "derived")
+# remembering into something it cannot express at all. `actor` columns are
+# written by actors, `world` columns by the Game Master step; `system` is
+# stamped by the framework and `derived` is computed at read time.
+OWNERS = ("system", "actor", "world", "derived")
+
+# A table belongs either to one actor's portfolio or to the run itself.
+# Actor tables are written under `## Store changes` in actor outputs; world
+# tables (alliances, treaty registers, standing conditions) are written by the
+# Game Master step, read by every step, and persisted with everything else.
+SCOPES = ("actor", "world")
 
 COLUMN_TYPES = ("text", "integer", "number", "turn", "enum")
 
@@ -90,7 +98,7 @@ class StoreTable:
     """One table of records, and the prefix its record ids carry."""
 
     name: str
-    scope: str                            # "actor" (see parse_store_schema)
+    scope: str                            # "actor" | "world"
     columns: dict[str, StoreColumn]
     id_prefix: str = "R"
 
@@ -102,8 +110,13 @@ class StoreTable:
                 return name
         return "id"
 
+    @property
+    def writer_owner(self) -> str:
+        """Which column owner the table's writer writes: actors or the world."""
+        return "world" if self.scope == "world" else "actor"
+
     def writable(self) -> list[str]:
-        return [n for n, c in self.columns.items() if c.owner == "actor"]
+        return [n for n, c in self.columns.items() if c.owner == self.writer_owner]
 
 
 @dataclass
@@ -202,17 +215,10 @@ def parse_store_schema(data: object) -> StoreSchema:
             )
 
         scope = body.get("scope", "actor")
-        if scope != "actor":
-            # World-scoped tables are a real part of the design -- alliances,
-            # permanent changes to the world -- but they need a writer, and the
-            # only step that could write them is the one that also produces the
-            # narrative and the metrics JSON. Adding a third parsed section to
-            # that step is its own change with its own failure modes. Declared
-            # unsupported rather than half-wired, so a scenario cannot quietly
-            # depend on a table nothing ever writes to.
+        if scope not in SCOPES:
             raise StoreSchemaError(
-                f"store table '{name}': scope '{scope}' is not supported yet; "
-                "only scope: actor is implemented (see docs/ARCHITECTURE.md)"
+                f"store table '{name}': scope must be one of {', '.join(SCOPES)}, "
+                f"got '{scope}'"
             )
 
         raw_columns = body.get("columns")
@@ -227,11 +233,22 @@ def parse_store_schema(data: object) -> StoreSchema:
         if not any(c.owner == "system" and c.type == "text" for c in columns.values()):
             raise StoreSchemaError(
                 f"store table '{name}' must declare a system-owned text column for the record id "
-                "(the actor addresses records by id, never by name)"
+                "(the writer addresses records by id, never by name)"
             )
-        if not any(c.owner == "actor" for c in columns.values()):
+        writer = "world" if scope == "world" else "actor"
+        if not any(c.owner == writer for c in columns.values()):
             raise StoreSchemaError(
-                f"store table '{name}' has no actor-owned column, so nothing could ever be written to it"
+                f"store table '{name}' has no {writer}-owned column, so nothing could ever be written to it"
+            )
+        if scope == "actor" and any(c.owner == "world" for c in columns.values()):
+            raise StoreSchemaError(
+                f"store table '{name}' is actor-scoped but declares a world-owned column: "
+                "actors cannot write it and the Game Master cannot reach this table"
+            )
+        if scope == "world" and any(c.owner == "actor" for c in columns.values()):
+            raise StoreSchemaError(
+                f"store table '{name}' is world-scoped but declares an actor-owned column: "
+                "the Game Master cannot write it and no actor can reach this table"
             )
 
         tables[name] = StoreTable(
@@ -299,8 +316,8 @@ def _parse_column(table: str, name: object, spec: object) -> StoreColumn:
         for key in ("from", "map", "when_reached", "else"):
             if key in spec:
                 raise StoreSchemaError(f"{where}: '{key}' is only meaningful on a derived column")
-        if column.required and owner != "actor":
-            raise StoreSchemaError(f"{where}: only an actor-owned column can be required")
+        if column.required and owner not in ("actor", "world"):
+            raise StoreSchemaError(f"{where}: only an actor-owned or world-owned column can be required")
 
     return column
 
@@ -435,9 +452,13 @@ class Store:
     # -- state -----------------------------------------------------------
 
     def live_records(self, table: str, actor_id: Optional[str] = None) -> list[StoreRecord]:
+        # A world table belongs to the run, not to an actor: every step reads
+        # the same records, so the actor filter does not apply to it.
+        schema_table = self.schema.tables.get(table)
+        world = schema_table is not None and schema_table.scope == "world"
         return [
             r for r in self.records
-            if r.table == table and r.live and (actor_id is None or r.actor_id == actor_id)
+            if r.table == table and r.live and (world or actor_id is None or r.actor_id == actor_id)
         ]
 
     def find(self, table: str, record_id: str, actor_id: Optional[str] = None) -> Optional[StoreRecord]:
@@ -490,7 +511,17 @@ class Store:
             self._snapshots[turn] = json.dumps(self.to_dict())
         self.current_turn = turn
 
-    def apply(self, command: "StoreCommand", actor_id: str, turn: int) -> StoreOutcome:
+    def apply(
+        self, command: "StoreCommand", actor_id: str, turn: int,
+        writer_kind: str = "actor",
+    ) -> StoreOutcome:
+        """Apply one parsed write, enforcing which scope the writer may touch.
+
+        Actor outputs write actor-scoped tables; the Game Master step writes
+        world-scoped ones. A command crossing that boundary is rejected rather
+        than half-wired: a scenario must never depend on a table nothing writes
+        to, nor let an actor rewrite standing conditions of the world.
+        """
         table = self.schema.tables.get(command.table)
         if table is None:
             known = ", ".join(sorted(self.schema.tables)) or "(none)"
@@ -499,13 +530,27 @@ class Store:
                 f"unknown table '{command.table}' (this scenario declares: {known})",
                 grounds=command.grounds,
             )
+        if writer_kind == "world" and table.scope != "world":
+            return StoreOutcome(
+                command.raw, "rejected",
+                f"table '{command.table}' is actor-scoped and cannot be written "
+                "by the Game Master",
+                grounds=command.grounds,
+            )
+        if writer_kind != "world" and table.scope == "world":
+            return StoreOutcome(
+                command.raw, "rejected",
+                f"table '{command.table}' is world-scoped: only the Game Master "
+                "step writes to it",
+                grounds=command.grounds,
+            )
 
         self._ignored: list[str] = []
         try:
             if command.kind == "add":
-                record = self._apply_add(table, command, actor_id, turn)
+                record = self._apply_add(table, command, actor_id, turn, writer_kind)
             elif command.kind == "update":
-                record = self._apply_update(table, command, actor_id)
+                record = self._apply_update(table, command, actor_id, writer_kind)
             elif command.kind == "delete":
                 record = self._apply_delete(table, command, actor_id, turn)
             else:
@@ -549,11 +594,11 @@ class Store:
             return ""
         return (
             f"duplicates the name of {', '.join(twins)}, which is still live. "
-            "Both are charged."
+            "Both remain live."
         )
 
     def _validate_assignments(
-        self, table: StoreTable, command: "StoreCommand"
+        self, table: StoreTable, command: "StoreCommand", writer_kind: str = "actor"
     ) -> tuple[dict[str, Any], list[str]]:
         """The values to store, and what was ignored getting there.
 
@@ -561,15 +606,16 @@ class Store:
         an addition, which is the rule the patch loader already enforces.
 
         A *known but unwritable* one is not the same thing, and treating it as
-        one was expensive. The actor sees the rendered rows -- it has to, the
+        one was expensive. The writer sees the rendered rows -- it has to, the
         rows are the portfolio -- and it copies the columns it sees, so it
         writes `cost_per_turn = 3` beside the fields it owns. The value is
         right, the framework computes it anyway, and rejecting the command
         threw away the whole measure over it: six measures lost in one
         eight-turn run. The assignment is dropped and noted instead. Nothing
-        the actor writes can reach a system or derived column either way,
+        the writer sends can reach a system or derived column either way,
         which is the guarantee that matters.
         """
+        allowed = table.writer_owner
         values: dict[str, Any] = {}
         ignored: list[str] = []
         for name, raw in command.assignments.items():
@@ -585,17 +631,21 @@ class Store:
             if column.owner == "derived":
                 ignored.append(f"'{name}' is computed from '{column.source}'")
                 continue
+            if column.owner != allowed:
+                ignored.append(f"'{name}' is not yours to write")
+                continue
             values[name] = normalize_value(column, raw)
         return values, ignored
 
     def _apply_add(
-        self, table: StoreTable, command: "StoreCommand", actor_id: str, turn: int
+        self, table: StoreTable, command: "StoreCommand", actor_id: str, turn: int,
+        writer_kind: str = "actor",
     ) -> StoreRecord:
-        values, ignored = self._validate_assignments(table, command)
+        values, ignored = self._validate_assignments(table, command, writer_kind)
         self._ignored = ignored
         missing = [
             name for name, column in table.columns.items()
-            if column.owner == "actor" and column.required and name not in values
+            if column.owner == table.writer_owner and column.required and name not in values
         ]
         if missing:
             raise StoreCommandError(f"missing required column(s): {', '.join(missing)}")
@@ -617,16 +667,17 @@ class Store:
         return record
 
     def _apply_update(
-        self, table: StoreTable, command: "StoreCommand", actor_id: str
+        self, table: StoreTable, command: "StoreCommand", actor_id: str,
+        writer_kind: str = "actor",
     ) -> StoreRecord:
         record = self.find(table.name, command.record_id, actor_id)
         if record is None:
             raise StoreCommandError(f"no live record '{command.record_id}' in '{table.name}'")
-        values, ignored = self._validate_assignments(table, command)
+        values, ignored = self._validate_assignments(table, command, writer_kind)
         self._ignored = ignored
         if not values:
             raise StoreCommandError(
-                "an update must set at least one column the actor owns"
+                "an update must set at least one column you own"
                 + (f" ({'; '.join(ignored)})" if ignored else "")
             )
         record.fields.update(values)
@@ -696,7 +747,7 @@ class Store:
 
 
 # --------------------------------------------------------------------------
-# Commands
+# Commands (one JSON block per writing step)
 # --------------------------------------------------------------------------
 
 
@@ -707,106 +758,122 @@ class StoreCommand:
     kind: str                              # "add" | "update" | "delete"
     table: str
     record_id: str = ""
-    assignments: dict[str, str] = field(default_factory=dict)
+    assignments: dict[str, Any] = field(default_factory=dict)
     grounds: str = ""
     raw: str = ""
 
 
-# Matched leniently for the same reason the statement section is: an actor gets
+# Matched leniently for the same reason the statement section is: a writer gets
 # a heading level wrong often enough that strictness costs more than it buys,
-# and a discarded section is indistinguishable from an actor that changed
+# and a discarded section is indistinguishable from a writer that changed
 # nothing.
 _SECTION_RE = re.compile(
     r"^[ \t]{0,3}(?P<hashes>#{1,6})[ \t]+Store changes\b[^\n]*$",
     re.IGNORECASE | re.MULTILINE,
 )
 
-_ADD_RE = re.compile(r"^add\s+(?P<table>[a-z][a-z0-9_]*)\s*:\s*(?P<body>.+)$", re.IGNORECASE)
-_UPDATE_RE = re.compile(
-    r"^update\s+(?P<table>[a-z][a-z0-9_]*)\s+(?P<id>[A-Za-z]+\d+)\s*:\s*(?P<body>.+)$",
-    re.IGNORECASE,
+# Fenced blocks carrying the write form, e.g.
+# ```json
+# {"store": [{"op": "add", "table": "measures", "fields": {...}}]}
+# ```
+_FENCED_BLOCK_RE = re.compile(
+    r"```(?:json)?[ \t]*\n(?P<body>.*?)\n```", re.IGNORECASE | re.DOTALL
 )
-# A delete is required to give grounds, so it is written with the reason
-# attached at least as often as on an indented line beneath. Anything after
-# the ids is taken as those grounds rather than making the command unreadable
-# -- losing a cancellation to a subordinate clause is the failure this
-# mechanism exists to remove, in miniature.
-#
-# Several ids at once, because actors write "delete measures M7, M8" and the
-# earlier single-id form silently took ", M8" as part of the reason: one
-# record deleted, the other quietly kept, no fault recorded anywhere. That is
-# the precise failure this module exists to prevent, reintroduced in its own
-# parser. Only id-shaped tokens are absorbed as ids, so a trailing clause is
-# still read as grounds.
-_ID = r"[A-Za-z]+\d+"
-_DELETE_RE = re.compile(
-    rf"^delete\s+(?P<table>[a-z][a-z0-9_]*)\s+"
-    rf"(?P<ids>{_ID}(?:\s*(?:,|and|&)\s*{_ID})*)\b"
-    r"(?:\s*[-—:,]?\s*(?:because\s+)?(?P<grounds>.+?))?\s*\.?$",
-    re.IGNORECASE,
-)
-_GROUNDS_RE = re.compile(r"^grounds\s*:\s*(?P<value>.+)$", re.IGNORECASE)
-
-# "No other changes." written after a command, which actors do. It is not a
-# command and it is not malformed, and counting it as either poisons the one
-# channel that says whether the turn went wrong: a fault report only means
-# something while everything in it is a fault.
-_NO_OP_LINE_RE = re.compile(
-    r"^no\s+(?:other|further|more|additional|remaining)?\s*(?:store\s+)?changes?\b[\s.]*$",
-    re.IGNORECASE,
-)
-_CODE_SPAN_RE = re.compile(r"^(?P<fence>`{1,}) *(?P<body>.+?) *(?P=fence)$", re.DOTALL)
 
 
 def _next_section_re(level: int) -> re.Pattern[str]:
     return re.compile(rf"^[ \t]{{0,3}}#{{1,{level}}}[ \t]+", re.MULTILINE)
 
 
-def _strip_code_span(item: str) -> str:
-    match = _CODE_SPAN_RE.match(item.strip())
-    return match.group("body").strip() if match else item
+def _entry_to_command(entry: object, index: int) -> StoreCommand:
+    """One ``{"store": [...]}`` array element to a command.
 
-
-def _split_assignments(body: str) -> dict[str, str]:
-    """``name = "x"; size = large`` to a mapping.
-
-    Semicolon-separated because a measure name contains commas far more often
-    than it contains semicolons, and requiring quoting of every value is a
-    rule a model follows about as reliably as it copied the portfolio.
+    Shape problems raise ``StoreCommandError`` with the entry's position, and
+    the caller records them per entry: one malformed entry rejects that entry,
+    never the turn's other writes.
     """
-    assignments: dict[str, str] = {}
-    last: Optional[str] = None
-    for part in body.split(";"):
-        if not part.strip():
+    where = f"entry {index}"
+    if not isinstance(entry, dict):
+        raise StoreCommandError(f"{where} must be an object, got {entry!r}"[:160])
+    op = str(entry.get("op", "")).strip().lower()
+    if op not in ("add", "update", "delete"):
+        raise StoreCommandError(
+            f"{where}: 'op' must be one of add, update, delete, got {entry.get('op')!r}"[:160]
+        )
+    table = str(entry.get("table", "")).strip().lower()
+    if not table:
+        raise StoreCommandError(f"{where}: a '{op}' needs a table name")
+    grounds = entry.get("grounds", "")
+    grounds = str(grounds).strip() if grounds is not None else ""
+
+    raw = json.dumps(entry, ensure_ascii=False)[:400]
+
+    if op == "delete":
+        record_id = str(entry.get("id", "")).strip().upper()
+        if not record_id:
+            raise StoreCommandError(f"{where}: a 'delete' needs an 'id'")
+        return StoreCommand(kind=op, table=table, record_id=record_id, grounds=grounds, raw=raw)
+
+    fields = entry.get("fields", {})
+    if fields is None:
+        fields = {}
+    if not isinstance(fields, dict):
+        raise StoreCommandError(f"{where}: 'fields' must be an object")
+    assignments: dict[str, Any] = {}
+    for name, value in fields.items():
+        clean = str(name).strip().strip("`*_\"' ").lower()
+        if clean:
+            assignments[clean] = value
+    if op == "add":
+        return StoreCommand(kind=op, table=table, assignments=assignments, grounds=grounds, raw=raw)
+    record_id = str(entry.get("id", "")).strip().upper()
+    if not record_id:
+        raise StoreCommandError(f"{where}: an 'update' needs an 'id'")
+    return StoreCommand(
+        kind=op, table=table, record_id=record_id,
+        assignments=assignments, grounds=grounds, raw=raw,
+    )
+
+
+def _commands_from_candidates(
+    candidates: list[str],
+) -> tuple[list[StoreCommand], list[str]]:
+    """Parse candidate JSON documents into commands and per-entry rejections."""
+    commands: list[StoreCommand] = []
+    malformed: list[str] = []
+    for candidate in candidates:
+        try:
+            document = json.loads(candidate)
+        except json.JSONDecodeError as err:
+            malformed.append(f"unparseable JSON block: {err}"[:200])
             continue
-        key, sep, value = part.partition("=")
-        name = key.strip().strip("`*_").lower()
-        if not sep or not name or " " in name:
-            # A semicolon inside a value rather than between pairs. Free text
-            # columns invite this -- "resilience +3 to +6; sentiment +1" is a
-            # natural thing to write -- and rejecting the whole command over
-            # punctuation would lose a measure to a keystroke, which is the
-            # class of failure this mechanism exists to remove. Put it back.
-            if last is None:
-                raise StoreCommandError(f"'{part.strip()}' is not a `column = value` pair")
-            assignments[last] = f"{assignments[last]}; {part.strip()}"
+        if isinstance(document, dict) and isinstance(document.get("store"), list):
+            entries = document["store"]
+        elif isinstance(document, list):
+            entries = document
+        else:
+            malformed.append(
+                'expected {"store": [...]} — the block parsed but holds no store array'[:200]
+            )
             continue
-        assignments[name] = value.strip()
-        last = name
-    if not assignments:
-        raise StoreCommandError("no `column = value` pairs given")
-    return assignments
+        for index, entry in enumerate(entries):
+            try:
+                commands.append(_entry_to_command(entry, index))
+            except StoreCommandError as err:
+                malformed.append(str(err))
+    return commands, malformed
 
 
 def parse_store_changes(output: str) -> tuple[list[StoreCommand], list[str], bool]:
-    """Extract commands from an actor's response.
+    """Extract JSON write commands from a step's response.
 
-    Returns ``(commands, malformed_lines, section_present)``.
+    Returns ``(commands, malformed_entries, section_present)``.
 
     ``section_present`` is reported rather than inferred because its absence is
     the failure this whole mechanism exists to make visible. A missing section
     is detectable; a missing inline command never was, and that is the larger
-    half of the measured defect.
+    half of the measured defect. Per-entry rejection survives the format
+    change: one malformed entry rejects that entry while the rest apply.
     """
     match = _SECTION_RE.search(output)
     if not match:
@@ -820,85 +887,18 @@ def parse_store_changes(output: str) -> tuple[list[StoreCommand], list[str], boo
     if body.strip().lower().rstrip(".") in NO_CHANGES_MARKERS:
         return [], [], True
 
-    commands: list[StoreCommand] = []
-    malformed: list[str] = []
+    candidates = [m.group("body") for m in _FENCED_BLOCK_RE.finditer(body)]
+    if not candidates and body.strip():
+        candidates = [body.strip()]
 
-    for line in body.split("\n"):
-        stripped = line.strip()
-        if not stripped:
-            continue
-        # Bullets, and numbered lists: actors write "1. add measures: ..." often
-        # enough that treating it as unreadable would lose real commands.
-        item = re.sub(r"^(?:[-*+]|\d{1,3}[.)])\s+", "", stripped)
-        item = _strip_code_span(item)
-        if not item or item.lower().rstrip(".") in NO_CHANGES_MARKERS:
-            continue
-        if _NO_OP_LINE_RE.match(item):
-            continue
-
-        grounds = _GROUNDS_RE.match(item)
-        if grounds:
-            if commands:
-                commands[-1].grounds = grounds.group("value").strip()
-            continue
-
-
-        parsed = _parse_command_line(item)
-        if not parsed:
-            # A continuation of a wrapped Grounds line is not malformed.
-            if line.startswith(("  ", "\t")) and commands:
-                continue
-            malformed.append(item)
-            continue
-        commands.extend(parsed)
-
+    commands, malformed = _commands_from_candidates(candidates)
+    if not candidates:
+        return [], [], True
+    if not commands and not malformed:
+        # An explicit empty array: {"store": []}. Nothing to do, and the
+        # section was present, so this is a declaration of no change.
+        return [], [], True
     return commands, malformed, True
-
-
-def _parse_command_line(item: str) -> list[StoreCommand]:
-    """Zero, one, or -- for a multi-id delete -- several commands."""
-    match = _ADD_RE.match(item)
-    if match:
-        try:
-            assignments = _split_assignments(match.group("body"))
-        except StoreCommandError:
-            return [StoreCommand(kind="add", table=match.group("table").lower(), raw=item)]
-        return [StoreCommand(
-            kind="add",
-            table=match.group("table").lower(),
-            assignments=assignments,
-            raw=item,
-        )]
-
-    match = _UPDATE_RE.match(item)
-    if match:
-        try:
-            assignments = _split_assignments(match.group("body"))
-        except StoreCommandError:
-            assignments = {}
-        return [StoreCommand(
-            kind="update",
-            table=match.group("table").lower(),
-            record_id=match.group("id").upper(),
-            assignments=assignments,
-            raw=item,
-        )]
-
-    match = _DELETE_RE.match(item)
-    if match:
-        grounds = (match.group("grounds") or "").strip()
-        return [
-            StoreCommand(
-                kind="delete",
-                table=match.group("table").lower(),
-                record_id=record_id.upper(),
-                grounds=grounds,
-                raw=item,
-            )
-            for record_id in re.findall(_ID, match.group("ids"))
-        ]
-
-    return []
 
 
 # --------------------------------------------------------------------------
@@ -1192,7 +1192,63 @@ def render_store_file(
             lines.append(f"  - Reason: {outcome.reason}")
     for line in malformed:
         lines.append(f"- **unparsed** — {line}")
-        lines.append("  - Reason: not a recognised `add` / `update` / `delete` command")
+        lines.append("  - Reason: not a recognised store entry (see the `{\"store\": [...]}` write form)")
+
+    return "\n".join(lines) + "\n"
+
+
+def world_tables(schema: StoreSchema) -> list[str]:
+    """Names of the run-owned tables, in declaration order."""
+    return [name for name, table in schema.tables.items() if table.scope == "world"]
+
+
+def render_world_store_file(
+    store: Store,
+    turn: int,
+    outcomes: list[StoreOutcome],
+    malformed: list[str],
+    section_present: bool,
+) -> str:
+    """The per-turn artifact for run-owned tables, written by the Game Master step.
+
+    Same contract as the actor file: a diff between consecutive turns is empty
+    unless a world entry was actually applied. An absent block is a fault, not
+    a declaration of no change -- the step is required to write
+    ``{"store": []}`` when it changes nothing.
+    """
+    view = StoreView(store)
+    lines = [f"# World store (turn {turn})", ""]
+    names = world_tables(store.schema)
+
+    for table_name in names:
+        lines += [f"## {table_name}", "", str(view.rows(table_name)), ""]
+
+    lines += ["## Changes this turn", ""]
+    if not section_present:
+        lines.append(
+            "**No `## Store changes` section in the Game Master response.** Nothing was "
+            "applied this turn. An absent section is a fault, not a declaration of "
+            "no change: the step is required to write `{\"store\": []}` when it has none."
+        )
+        lines.append("")
+    if not outcomes and not malformed:
+        if section_present:
+            lines.append("No changes.")
+    for outcome in outcomes:
+        head = f"- **{outcome.verdict}**"
+        if outcome.record_id:
+            head += f" `{outcome.record_id}`"
+        head += f" — {outcome.command}"
+        lines.append(head)
+        if outcome.grounds:
+            lines.append(f"  - Grounds: {outcome.grounds}")
+        if outcome.note:
+            lines.append(f"  - Note: {outcome.note}")
+        if outcome.reason:
+            lines.append(f"  - Reason: {outcome.reason}")
+    for line in malformed:
+        lines.append(f"- **unparsed** — {line}")
+        lines.append("  - Reason: not a recognised store entry (see the `{\"store\": [...]}` write form)")
 
     return "\n".join(lines) + "\n"
 
@@ -1504,21 +1560,33 @@ def self_test() -> int:
     # A well-formed turn.
     store.begin_turn(1)
     commands, malformed, present = parse_store_changes(
-        "## Store changes\n\n"
-        "- add measures: name = InvestAI Gigafactories; size = **Large**; finish_turn = turn 7\n"
-        "  - Grounds: inherited programme\n"
-        "- add measures: name = `Incident Response Corps`; size = small; finish_turn = 3\n"
+        "## Store changes\n\n```json\n"
+        + json.dumps({"store": [
+            {"op": "add", "table": "measures",
+             "fields": {"name": "InvestAI Gigafactories", "size": "**Large**",
+                        "finish_turn": "turn 7"},
+             "grounds": "inherited programme"},
+            {"op": "add", "table": "measures",
+             "fields": {"name": "`Incident Response Corps`", "size": "small",
+                        "finish_turn": 3}},
+        ]})
+        + "\n```\n"
     )
     check("section present", present, True)
     check("malformed", malformed, [])
     check("commands parsed", len(commands), 2)
+    check("grounds ride along", commands[0].grounds, "inherited programme")
 
     _cmds, _malformed, _ = parse_store_changes(
         "## Store changes\n"
-        "- add measures: name = X; size = small; finish_turn = 4\n"
-        "- No other changes.\n"
+        + "```json\n"
+        + json.dumps({"store": [
+            {"op": "add", "table": "measures",
+             "fields": {"name": "X", "size": "small", "finish_turn": 4}},
+        ]})
+        + "\n```\nNo other changes.\n"
     )
-    check("trailing no-op is not a fault", (_malformed, len(_cmds)), ([], 1))
+    check("trailing prose is not a fault", (_malformed, len(_cmds)), ([], 1))
     outcomes = [store.apply(c, "eu", 1) for c in commands]
     check("all applied", [o.verdict for o in outcomes], ["applied", "applied"])
     check("ids assigned", [o.record_id for o in outcomes], ["M1", "M2"])
@@ -1562,13 +1630,21 @@ def self_test() -> int:
     # Provenance is enforced, not requested.
     store.begin_turn(3)
     commands, _, _ = parse_store_changes(
-        "## Store changes\n"
-        "- update measures M1: started_turn = 2\n"
-        "- update measures M1: cost_per_turn = 1\n"
-        "- update measures M9: finish_turn = 4\n"
-        "- add measures: name = No finish turn given\n"
-        "- add measures: name = X; size = enormous; finish_turn = 4\n"
-        "- add widgets: name = Y\n"
+        "## Store changes\n```json\n"
+        + json.dumps({"store": [
+            {"op": "update", "table": "measures", "id": "M1",
+             "fields": {"started_turn": 2}},
+            {"op": "update", "table": "measures", "id": "M1",
+             "fields": {"cost_per_turn": 1}},
+            {"op": "update", "table": "measures", "id": "M9",
+             "fields": {"finish_turn": 4}},
+            {"op": "add", "table": "measures",
+             "fields": {"name": "No finish turn given"}},
+            {"op": "add", "table": "measures",
+             "fields": {"name": "X", "size": "enormous", "finish_turn": 4}},
+            {"op": "add", "table": "widgets", "fields": {"name": "Y"}},
+        ]})
+        + "\n```\n"
     )
     verdicts = [store.apply(c, "eu", 3) for c in commands]
     check("update of a system column alone refused", verdicts[0].verdict, "rejected")
@@ -1584,7 +1660,12 @@ def self_test() -> int:
     # Re-running a turn replaces rather than appends.
     store.begin_turn(4)
     commands, _, _ = parse_store_changes(
-        "## Store changes\n- add measures: name = Twice; size = small; finish_turn = 9\n"
+        "## Store changes\n```json\n"
+        + json.dumps({"store": [
+            {"op": "add", "table": "measures",
+             "fields": {"name": "Twice", "size": "small", "finish_turn": 9}},
+        ]})
+        + "\n```\n"
     )
     for command in commands:
         store.apply(command, "eu", 4)
@@ -1596,7 +1677,13 @@ def self_test() -> int:
 
     # Deletion, and a round trip through persistence.
     store.begin_turn(5)
-    commands, _, _ = parse_store_changes("## Store changes\n- delete measures M1\n")
+    commands, _, _ = parse_store_changes(
+        "## Store changes\n```json\n"
+        + json.dumps({"store": [
+            {"op": "delete", "table": "measures", "id": "M1"},
+        ]})
+        + "\n```\n"
+    )
     check("delete applied", store.apply(commands[0], "eu", 5).verdict, "applied")
     check("delete removes", len(store.live_records("measures")), 2)
 
@@ -1615,9 +1702,13 @@ def self_test() -> int:
     # owns keeps its measure. The value is dropped, not the command.
     store.begin_turn(6)
     commands, _, _ = parse_store_changes(
-        "## Store changes\n"
-        "- add measures: name = Copied the table; size = large; finish_turn = 9; "
-        "cost_per_turn = 99; started_turn = 4\n"
+        "## Store changes\n```json\n"
+        + json.dumps({"store": [
+            {"op": "add", "table": "measures",
+             "fields": {"name": "Copied the table", "size": "large",
+                        "finish_turn": 9, "cost_per_turn": 99, "started_turn": 4}},
+        ]})
+        + "\n```\n"
     )
     outcome = store.apply(commands[0], "eu", 6)
     check("kept despite unwritable columns", outcome.verdict, "applied")
@@ -1629,7 +1720,12 @@ def self_test() -> int:
     # Schema strictness.
     for label, bad in (
         ("unknown table key", {"m": {"scope": "actor", "colums": {}}}),
-        ("world scope", {"m": {"scope": "world", "columns": {"id": {"owner": "system"}}}}),
+        ("unknown scope", {"m": {"scope": "orbit", "columns": {"id": {"owner": "system"}}}}),
+        ("world table without a world column",
+         {"m": {"scope": "world", "columns": {"id": {"owner": "system"}}}}),
+        ("actor column in a world table", {"m": {"scope": "world", "columns": {
+            "id": {"owner": "system"}, "w": {"owner": "world"},
+            "n": {"owner": "actor"}}}}),
         ("derived from unknown", {"m": {"columns": {
             "id": {"owner": "system"}, "n": {"owner": "actor"},
             "d": {"owner": "derived", "from": "nope", "map": {"a": 1}}}}}),

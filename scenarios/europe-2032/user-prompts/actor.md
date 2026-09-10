@@ -125,36 +125,44 @@ Copy the pair exactly; never invent a name of your own for a number, and never w
 * Heading level 2: Store changes
 **Required every turn, even when nothing changes.** This section is the only thing that alters your portfolio. Write `No changes.` when there is nothing — leaving the section out is not the same as writing that, and is recorded as a fault.
 
-Your measures in flight carry forward on their own. Do not re-list them here; list only what changes. Three commands, one per bullet:
+Your measures in flight carry forward on their own. Do not re-list them here; list only what changes. One JSON block:
 
-``add measures: name = <name>; category = <number>; size = <large or small>; finish_turn = <turn>; applies_to = <who it reaches>; targeted_effect = <which metrics, which direction, roughly how much>``
-``update measures <id>: finish_turn = <turn>``
-``delete measures <id>``
+```json
+{"store": [{"op": "add", "table": "measures", "fields": {"name": "<name>", "category": 6, "size": "large", "finish_turn": 9, "applies_to": "<who it reaches>", "targeted_effect": "<which metrics, which direction, roughly how much>"}, "grounds": "<one clause>"}]}
+```
 
-Each may carry an indented `- Grounds: <one clause>` line beneath it, and a `delete` must.
+Three operations, one entry each:
+
+``{"op": "add", "table": "measures", "fields": {...}}`` with an optional `"grounds"` line
+``{"op": "update", "table": "measures", "id": "M2", "fields": {"finish_turn": 5}}``
+``{"op": "delete", "table": "measures", "id": "M1", "grounds": "<one clause>"}`` — a `delete` must carry grounds.
 
 What the six fields of an `add` are asking you to judge:
 
 - `name` — the same name you wrote in bold under New measure.
-- `category` — **the number from the list above**, for example `category = 6`. Measures you invent are welcome and get the category they most resemble, or `10`.
+- `category` — **the number from the list above**, for example `6`. Measures you invent are welcome and get the category they most resemble, or `10`.
 - `size` — `large` or `small`. Large costs 3 political capital a turn, small costs 2, every turn until it finishes.
 - `finish_turn` — the turn it is actually in force, judged from how big the thing is: a directive needing drafting and a vote is two or three turns out, a capability that has to be built and staffed six or more.
 - `targeted_effect` — which metrics, which direction, roughly how much.
 - `applies_to` — your own jurisdiction, particular member states, the US, China, a coalition, the frontier developers directly.
 
-**Those six and no others.** The table above shows more columns than that — `id`, `started_turn`, `cost_per_turn`, `status` — and every one of them is worked out for you: the id and the starting turn when the measure enters, the cost from its size, the status from its finishing turn. Writing them in a command changes nothing, so do not write them.
+**Those six and no others.** The table above shows more columns than that — `id`, `started_turn`, `cost_per_turn`, `status` — and every one of them is worked out for you: the id and the starting turn when the measure enters, the cost from its size, the status from its finishing turn. Writing them in an entry changes nothing, so do not write them.
 
-And when each command is the right one:
+And when each operation is the right one:
 
 - **Adding.** One `add` for the measure you proposed above, and no more than one this turn. The framework gives it an id and stamps the turn it started; you cannot set either.
 - **Moving a finishing turn.** `update` is the only way a finishing turn moves, and rule 10 says what may move it: a named priority may pull it in by one turn, several unprioritised turns may push it out by one, an event may do either and rarely by more than one. Nothing else moves it, and nothing moves it silently.
-- **Dropping a measure.** `delete` is abandonment or public defeat, and it costs you (rule 6). It is not how a measure finishes: a measure that reaches its finishing turn finishes by itself, keeps its record, and stops costing you without any command from you. Never delete a measure because it has finished.
+- **Dropping a measure.** `delete` is abandonment or public defeat, and it costs you (rule 6). It is not how a measure finishes: a measure that reaches its finishing turn finishes by itself, keeps its record, and stops costing you without any entry from you. Never delete a measure because it has finished.
 {% if turn == 1 %}
 
-**This turn only**, your section opens with exactly these two commands, which enter the programmes you inherited, and then the `add` for whatever you propose above:
+**This turn only**, your block opens with exactly these two entries, which enter the programmes you inherited, and then the `add` for whatever you propose above:
 
-``add measures: name = InvestAI Gigafactories; category = 4; size = large; finish_turn = 7; applies_to = own jurisdiction; targeted_effect = eu_ai_sovereignty up, via €200bn for four to five sites``
-``add measures: name = Tech sovereignty package; category = 4; size = large; finish_turn = 6; applies_to = own jurisdiction; targeted_effect = eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones``
+```json
+{"store": [
+  {"op": "add", "table": "measures", "fields": {"name": "InvestAI Gigafactories", "category": 4, "size": "large", "finish_turn": 7, "applies_to": "own jurisdiction", "targeted_effect": "eu_ai_sovereignty up, via €200bn for four to five sites"}},
+  {"op": "add", "table": "measures", "fields": {"name": "Tech sovereignty package", "category": 4, "size": "large", "finish_turn": 6, "applies_to": "own jurisdiction", "targeted_effect": "eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones"}}
+]}
+```
 {% endif %}
 
 * Heading level 2: Priority

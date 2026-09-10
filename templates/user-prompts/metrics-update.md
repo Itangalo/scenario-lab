@@ -55,6 +55,20 @@ The actors in the scenario describe their actions as follows:
 
 ---
 
+{% if has_world_store %}
+Some tables in the store belong to the run rather than to any actor, and you are their only writer. They carry forward on their own; nothing you leave out can remove a record. Each carries the id the framework gave it; that id, not the record's name, is how you refer to it.
+
+Under a `## Store changes` heading in your answer, write one JSON block holding your world writes, or `{"store": []}` when nothing changes:
+
+```json
+{"store": [{"op": "add", "table": "<world table>", "fields": {"<column>": "<value>"}, "grounds": "<one clause>"}]}
+```
+
+`op` is `add` (with `fields`), `update` (with `id` and `fields`), or `delete` (with `id`, and it must carry `grounds`). One malformed entry rejects that entry while the rest apply; an absent section is recorded as a fault. You cannot write actor tables, and actors cannot write these.
+
+---
+{% endif %}
+
 Use this information to do the following:
 
 * Determine how successful the actors are with their actions. This is based on how the world looks and your assessment of how likely they are to succeed.
@@ -65,7 +79,7 @@ Use this information to do the following:
 Please write your response in {{output_language}}.
 {% endif %}
 
-Important: You must use the exact headers '## Metrics', '## Narrative', and '## Notepad' as specified below. Do not translate these headers, even if you are writing the content in another language.
+Important: You must use the exact headers '## Metrics', '## Narrative', and '## Notepad' as specified below{% if has_world_store %}, plus '## Store changes' for your world writes{% endif %}. Do not translate these headers, even if you are writing the content in another language.
 
 Respond with a Markdown text with the following content:
 

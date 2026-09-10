@@ -316,30 +316,29 @@ store:
 
 Table fields:
 
-- `scope` — `actor` only. `scope: world` is rejected at load: it is part of the design but has no writer yet.
-- `columns` — an ordered mapping. Every table needs one system-owned `text` column for the record id, and at least one actor-owned column.
+- `scope` — `actor` (written by actors) or `world` (written by the Game Master step, read by every step). An actor entry touching a world table is rejected, and the Game Master cannot reach actor tables.
+- `columns` — an ordered mapping. Every table needs one system-owned `text` column for the record id, and at least one column owned by its writer (`actor` for actor tables, `world` for world tables); the other writer's columns are rejected at load.
 
 Column fields:
 
-- `owner` (required) — `system` (stamped by the framework and unreachable by any command), `actor` (set in a command), or `derived` (computed at read time).
+- `owner` (required) — `system` (stamped by the framework and unreachable by any entry), `actor` (set in an actor entry), `world` (set in a Game Master entry), or `derived` (computed at read time).
 - `type` — `text`, `integer`, `number`, `turn` or `enum`. Default `text`. An `enum` must declare `values`.
-- `required` — actor-owned columns only. An `add` missing one is rejected.
+- `required` — actor-owned columns in actor tables, world-owned columns in world tables. An `add` missing one is rejected.
 - `from` plus either `map` or `when_reached`/`else` — derived columns only. `map` is a lookup on another column's value and must cover every value of an enum it reads. `when_reached`/`else` compares a `turn` column against the current turn. Derivation is one step deep: a derived column may not derive from another derived column.
 
-What the actor writes, under a `## Store changes` heading in its response:
+What the writer sends, under a `## Store changes` heading in its response:
 
+```json
+{"store": [
+  {"op": "add", "table": "measures",
+   "fields": {"name": "Compute build-out", "category": 4, "size": "large", "finish_turn": 7},
+   "grounds": "the access denial in turn 3"},
+  {"op": "update", "table": "measures", "id": "M2", "fields": {"finish_turn": 5}},
+  {"op": "delete", "table": "measures", "id": "M1", "grounds": "publicly defeated"}
+]}
 ```
-## Store changes
 
-- add measures: name = Compute build-out; size = large; finish_turn = 7
-  - Grounds: the access denial in turn 3
-- update measures M2: finish_turn = 5
-- delete measures M1
-```
-
-The section is required every turn; `No changes.` is the answer when nothing changes, and an absent section is recorded as a fault. Pairs are separated by semicolons, values are normalised on the way in (`**Large**`, `` `large` `` and `Large` all store as `large`; `turn 7` stores as `7`), and anything that will not normalise is rejected with a reason into the turn's changelog rather than stored as something else. Records are addressed by the id the framework assigned (`M1`), never by name.
-
-The parser is forgiving about the shapes actors actually write: bullets or numbered lists, a heading at any level, a command wrapped in backticks, a semicolon inside a value, a trailing `No other changes.`, a delete naming several ids (`delete measures M1, M2`) or carrying its reason inline. What it will not do is guess: a line it cannot read is recorded as unparsed rather than dropped, and an `add` whose name already belongs to a live record is applied with a note saying so, because names are not keys and two similar measures may both be legitimate.
+The section is required every turn; `No changes.` (or `{"store": []}`) is the answer when nothing changes, and an absent section is recorded as a fault. One entry names one record (`delete` takes a single `id`); values are normalised on the way in (`"Large"` and `"turn 7"` store as `large` and `7`), and anything that will not normalise is rejected with a reason into the turn's changelog rather than stored as something else. Records are addressed by the id the framework assigned (`M1`), never by name. One malformed entry rejects that entry while the rest apply; prose around the block is ignored. What the parser will not do is guess: a block it cannot read is recorded as unparsed rather than dropped, and an `add` whose name already belongs to a live record is applied with a note saying so, because names are not keys and two similar measures may both be legitimate.
 
 What templates can read, in `metric-rules.md` and in prompt overrides:
 
@@ -356,7 +355,7 @@ Two things to know before using this:
 - **`metric-rules.md` is rendered for the metrics step and not for the rules step.** The rules step rewrites the rule set from its own output, so an expression there survives only if a model copies it back verbatim. Freeze rule evolution when you put store expressions in the rules; the validator warns when you have not.
 - **The schema is physics.** It is recorded in each run's `config.json`, a variant inherits its base's schema, and two batches run under different schemas are not comparable.
 
-Artifacts: `turn-XX/2-actors/<actor_id>-store.md` (records plus this turn's changelog, written every turn) and `<actor_id>-store.json` (the state `resume` reads back). `python -m scenario_lab.store --self-test` checks the mechanism itself.
+Artifacts: `turn-XX/2-actors/<actor_id>-store.md` (records plus this turn's changelog, written every turn) and `<actor_id>-store.json` (the state `resume` reads back); world tables additionally land in `turn-XX/4-world-store.md` and `turn-XX/4-world-store.json` from the Game Master step, and `resume` prefers the latter when present because it holds the whole turn. `python -m scenario_lab.store --self-test` checks the mechanism itself.
 
 ### `constitutional_enforcement`
 

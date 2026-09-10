@@ -1451,6 +1451,54 @@ class Orchestrator:
 
         return all_outcomes
 
+    def _process_world_store_changes(self, turn: int, gm_text: str) -> list[StoreOutcome]:
+        """Apply the Game Master step's writes to the run-owned tables.
+
+        Runs inside the metrics step, after the metrics JSON parsed: world
+        writes describe standing conditions of the world (alliances, registers)
+        that the narrative just established. No ``begin_turn`` here -- the
+        actor step already opened this turn's transaction, and reopening it
+        would restore the pre-turn snapshot over this turn's actor writes.
+        A re-run turn reopens the transaction at the actor step, so both
+        halves still replace rather than append.
+
+        Scenarios without world tables skip this entirely: the Game Master
+        response format is saturated enough without a block nothing reads.
+        """
+        from .store import render_world_store_file, world_tables
+
+        store = self.scenario.store
+        if store is None or not world_tables(store.schema):
+            return []
+
+        commands, malformed, section_present = parse_store_changes(gm_text)
+        outcomes = [
+            store.apply(command, "world", turn, writer_kind="world")
+            for command in commands
+        ]
+
+        if not section_present:
+            print(
+                "  ⚠ Game Master wrote no '## Store changes' section; "
+                "nothing was applied to world tables this turn"
+            )
+        for line in malformed:
+            print(f"  ⚠ world store entry not understood: {line[:120]}")
+        for outcome in [o for o in outcomes if o.verdict == "rejected"]:
+            print(f"  ⚠ world store entry rejected: {outcome.reason}")
+        for outcome in outcomes:
+            if outcome.note:
+                print(f"  ⚠ world store {outcome.record_id}: {outcome.note}")
+
+        if self.output_manager:
+            self.output_manager.save_world_store(
+                turn,
+                render_world_store_file(store, turn, outcomes, malformed, section_present),
+                store.to_dict(),
+            )
+
+        return outcomes
+
     def _check_statement_relevance(
         self, turn: int, actor_id: str, statement, proposal, triggered_events: list[dict]
     ) -> tuple[str, str, str]:
@@ -1736,6 +1784,7 @@ class Orchestrator:
         )
         response = self.llm_clients["metrics"].complete(system, user)
         self._record_llm_call(turn, "metrics", response)
+        gm_text = response.content
 
         try:
             metrics, narrative, notepad = response.extract_metrics_and_narrative()
@@ -1751,6 +1800,7 @@ class Orchestrator:
                 fix_response = self.llm_clients["metrics"].complete(fix_system, fix_user)
                 self._record_llm_call(turn, "metrics:format_fix", fix_response)
                 metrics, narrative, notepad = fix_response.extract_metrics_and_narrative()
+                gm_text = fix_response.content
                 print("  ✓ Metrics format fixed on retry")
             except Exception as fix_e:
                 print(f"  Warning: Metrics format-fix retry failed: {fix_e}")
@@ -1766,6 +1816,7 @@ class Orchestrator:
         metrics, narrative, notepad = self._complete_metrics(
             turn, metrics, narrative, notepad, response.content
         )
+        self._process_world_store_changes(turn, gm_text)
         return self._validate_and_clamp_metrics(metrics), narrative, notepad
 
     def _missing_metrics(self, metrics: dict) -> list[str]:

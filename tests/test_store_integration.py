@@ -98,6 +98,18 @@ def actor_response(body: str) -> str:
     return f"## Actions\n\nWe act.\n\n## Store changes\n\n{body}\n"
 
 
+def writes(*entries: dict) -> str:
+    """A fenced JSON write block for a mocked actor answer."""
+    return "```json\n" + json.dumps({"store": list(entries)}) + "\n```"
+
+
+def add(name: str, size: str = "small", finish_turn: int = 9, **extra) -> dict:
+    return {
+        "op": "add", "table": "measures",
+        "fields": {"name": name, "size": size, "finish_turn": finish_turn, **extra},
+    }
+
+
 def mock_client(actor_by_turn: dict[int, str]) -> MockLLMClient:
     """A client whose actor reply depends on which turn's prompt it is given."""
     responses = {
@@ -141,10 +153,10 @@ def test_commands_are_applied_and_records_persist(scenario_dir, tmp_path):
     scenario, _run_dir = run_turns(
         scenario_dir,
         {
-            1: "- add measures: name = Compute build; size = large; finish_turn = 6",
+            1: writes(add("Compute build", size="large", finish_turn=6)),
             2: "No changes.",
             3: "No changes.",
-            4: "- add measures: name = Incident corps; size = small; finish_turn = 4",
+            4: writes(add("Incident corps", finish_turn=4)),
         },
     )
     records = scenario.store.live_records("measures")
@@ -157,7 +169,7 @@ def test_a_turn_that_never_mentions_the_store_loses_nothing(scenario_dir, tmp_pa
     """The measured defect, reproduced as the failing case and now passing."""
     scenario, _run_dir = run_turns(
         scenario_dir,
-        {1: "- add measures: name = Kept; size = small; finish_turn = 9"},
+        {1: writes(add("Kept", finish_turn=9))},
     )
     store = scenario.store
     # A later turn whose actor output has no section at all.
@@ -169,7 +181,7 @@ def test_artifacts_are_written_every_turn(scenario_dir, tmp_path):
     _scenario, run_dir = run_turns(
         scenario_dir,
         {
-            1: "- add measures: name = Kept; size = small; finish_turn = 9",
+            1: writes(add("Kept", finish_turn=9)),
             2: "No changes.",
         },
     )
@@ -203,7 +215,7 @@ def test_a_missing_section_is_recorded_as_a_fault(scenario_dir, tmp_path):
 def test_rejections_reach_the_artifact(scenario_dir, tmp_path):
     _scenario, run_dir = run_turns(
         scenario_dir,
-        {1: "- add measures: name = Nameless; size = enormous; finish_turn = 3"},
+        {1: writes(add("Nameless", size="enormous", finish_turn=3))},
     )
     text = (run_dir / "turn-01" / "2-actors" / "gov-store.md").read_text()
     assert "**rejected**" in text
@@ -228,10 +240,7 @@ def test_config_records_the_resolved_schema(scenario_dir, tmp_path):
 def test_the_metrics_prompt_gets_totals_and_the_rules_step_gets_source(scenario_dir, tmp_path):
     scenario, _ = run_turns(
         scenario_dir,
-        {
-            1: "- add measures: name = A; size = large; finish_turn = 9\n"
-            "- add measures: name = B; size = small; finish_turn = 9",
-        },
+        {1: writes(add("A", size="large"), add("B"))},
     )
     builder = PromptBuilder(scenario)
 
@@ -249,7 +258,7 @@ def test_the_metrics_prompt_gets_totals_and_the_rules_step_gets_source(scenario_
 def test_the_actor_sees_its_own_records(scenario_dir, tmp_path):
     scenario, _run_dir = run_turns(
         scenario_dir,
-        {1: "- add measures: name = Visible; size = large; finish_turn = 9"},
+        {1: writes(add("Visible", size="large"))},
     )
     _system, prompt = PromptBuilder(scenario).build_actor_prompt("gov", 2, [])
     assert "Visible" in prompt
@@ -259,7 +268,7 @@ def test_the_actor_sees_its_own_records(scenario_dir, tmp_path):
 def test_derived_status_tracks_the_turn_in_the_prompt(scenario_dir, tmp_path):
     scenario, _run_dir = run_turns(
         scenario_dir,
-        {1: "- add measures: name = Short; size = small; finish_turn = 3"},
+        {1: writes(add("Short", finish_turn=3))},
     )
     builder = PromptBuilder(scenario)
     _s, before = builder.build_metrics_prompt(2, {"gov": "x"}, [])
@@ -277,8 +286,8 @@ def test_resume_restores_the_records(scenario_dir, tmp_path):
     _scenario, run_dir = run_turns(
         scenario_dir,
         {
-            1: "- add measures: name = Carried; size = large; finish_turn = 9",
-            2: "- add measures: name = Also carried; size = small; finish_turn = 9",
+            1: writes(add("Carried", size="large")),
+            2: writes(add("Also carried")),
         },
     )
 
@@ -294,18 +303,148 @@ def test_resume_restores_the_records(scenario_dir, tmp_path):
 def test_a_resumed_run_does_not_reuse_ids(scenario_dir, tmp_path):
     _scenario, run_dir = run_turns(
         scenario_dir,
-        {1: "- add measures: name = First; size = large; finish_turn = 9"},
+        {1: writes(add("First", size="large"))},
     )
     resumed, _turn = load_run_state(run_dir)
     output = OutputManager(resumed, scenario_dir)
     output.run_dir = run_dir
     orchestrator = Orchestrator(
         resumed,
-        mock_client({2: "- add measures: name = Second; size = small; finish_turn = 9"}),
+        mock_client({2: writes(add("Second"))}),
         output_manager=output,
     )
     orchestrator.run_turn(2)
     assert [r.id for r in resumed.store.live_records("measures")] == ["M1", "M2"]
+
+
+# ---------------------------------------------------------------------------
+# World tables: the Game Master step writes, every step reads
+# ---------------------------------------------------------------------------
+
+
+WORLD_SCENARIO_YAML = """
+name: "Store Test"
+description: "A scenario that declares persistent state"
+start_date: "2026-01"
+time_scale: "6 months per turn"
+max_turns: 5
+actors:
+  - gov
+rule_evolution:
+  freeze_until_turn: 6
+  max_changes_per_turn: 0
+store:
+  measures:
+    scope: actor
+    columns:
+      id:            {owner: system,  type: text}
+      name:          {owner: actor,   type: text, required: true}
+      size:          {owner: actor,   type: enum, values: [large, small], required: true}
+      started_turn:  {owner: system,  type: turn}
+      finish_turn:   {owner: actor,   type: turn, required: true}
+      cost_per_turn: {owner: derived, type: integer, from: size, map: {large: 3, small: 2}}
+      status:        {owner: derived, type: text, from: finish_turn,
+                      when_reached: finished, else: running}
+  alliances:
+    scope: world
+    columns:
+      id:     {owner: system, type: text}
+      name:   {owner: world,  type: text, required: true}
+      standing: {owner: world, type: text}
+"""
+
+
+@pytest.fixture
+def world_scenario_dir(tmp_path: Path, scenario_dir: Path) -> Path:
+    """The minimal fixture plus one run-owned table."""
+    import shutil
+
+    directory = tmp_path / "world-store-test"
+    shutil.copytree(scenario_dir, directory)
+    (directory / "scenario.yaml").write_text(WORLD_SCENARIO_YAML)
+    return directory
+
+
+def world_metrics_response(alliance_name: str = "River Pact") -> str:
+    return (
+        '## Metrics\n\n```json\n{"capital": 50}\n```\n\n'
+        "## Narrative\n\nThings happened.\n\n## Notepad\n\nNotes.\n\n"
+        "## Store changes\n\n```json\n"
+        + json.dumps(
+            {
+                "store": [
+                    {
+                        "op": "add", "table": "alliances",
+                        "fields": {"name": alliance_name, "standing": "strong"},
+                        "grounds": "the summit this turn",
+                    }
+                ]
+            }
+        )
+        + "\n```\n"
+    )
+
+
+def test_the_game_master_step_writes_world_tables(world_scenario_dir, tmp_path):
+    """World scope end to end: GM writes, actors read, artifacts persist it."""
+    scenario = load_scenario(world_scenario_dir)
+    output = OutputManager(scenario, world_scenario_dir)
+    run_dir = output.start_run()
+    responses = {
+        "It is now turn 1.": actor_response(writes(add("Kept", finish_turn=9))),
+        # Before "external events": the metrics prompt contains both phrases,
+        # and the mock answers the first key that matches.
+        "JSON object describing all metrics": world_metrics_response(),
+        "external events": "[]",
+        "Metric Rules": (
+            "# Metric Rules v2 (Turn 1)\n\n## Changelog from v1\n\n"
+            "- No material rule changes.\n  - **Motivation:** frozen\n"
+            "  - **Expected impact:** none\n\n## Rules\n\n1. Test rule\n"
+        ),
+        "CURRENT NARRATIVE": "A summary.",
+    }
+    orchestrator = Orchestrator(
+        scenario, MockLLMClient(responses), output_manager=output
+    )
+    orchestrator.run_turn(1)
+
+    records = scenario.store.live_records("alliances")
+    assert [r.fields["name"] for r in records] == ["River Pact"]
+    # The actor's write landed in the same turn: one transaction, two writers.
+    assert [r.fields["name"] for r in scenario.store.live_records("measures")] == ["Kept"]
+    # Read by every step: the actor-scoped view sees the run-owned rows too.
+    assert "River Pact" in str(StoreView(scenario.store, "gov").rows("alliances"))
+
+    turn_dir = run_dir / "turn-01"
+    assert (turn_dir / "4-world-store.md").exists()
+    assert (turn_dir / "4-world-store.json").exists()
+    assert "River Pact" in (turn_dir / "4-world-store.md").read_text()
+
+    resumed, turn = load_run_state(run_dir)
+    assert turn == 1
+    assert [r.fields["name"] for r in resumed.store.live_records("alliances")] == ["River Pact"]
+    assert [r.fields["name"] for r in resumed.store.live_records("measures")] == ["Kept"]
+
+
+def test_an_actor_cannot_write_a_world_table(world_scenario_dir, tmp_path):
+    scenario = load_scenario(world_scenario_dir)
+    output = OutputManager(scenario, world_scenario_dir)
+    output.start_run()
+    orchestrator = Orchestrator(scenario, mock_client({}), output_manager=output)
+    outcomes = orchestrator._process_store_changes(
+        1,
+        {
+            "gov": "## Store changes\n" + writes(
+                {
+                    "op": "add", "table": "alliances",
+                    "fields": {"name": "Sneaky Pact"},
+                }
+            )
+        },
+    )
+    assert outcomes["gov"][0].verdict == "rejected"
+    assert "world-scoped" in outcomes["gov"][0].reason
+    assert scenario.store.live_records("alliances") == []
 
 
 # ---------------------------------------------------------------------------

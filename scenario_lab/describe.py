@@ -155,6 +155,7 @@ def describe_scenario(
         # before reading a single rule.
         "store": {
             name: {
+                "scope": table.scope,
                 "columns": len(table.columns),
                 "writable": table.writable(),
             }

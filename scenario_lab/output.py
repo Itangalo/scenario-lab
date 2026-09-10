@@ -249,6 +249,21 @@ class OutputManager:
             json.dumps(state, indent=2, ensure_ascii=False), encoding="utf-8"
         )
 
+    def save_world_store(self, turn: int, content: str, state: dict):
+        """Save the run-owned tables and the Game Master step's changelog.
+
+        Written by the metrics step when the scenario declares world tables.
+        The JSON holds the whole store -- actor records included, since the
+        actor writes landed earlier the same turn -- so it is the freshest
+        snapshot of the turn: ``resume`` prefers it over the per-actor files,
+        which were written before the Game Master step ran.
+        """
+        turn_dir = self.get_turn_dir(turn)
+        (turn_dir / "4-world-store.md").write_text(content, encoding="utf-8")
+        (turn_dir / "4-world-store.json").write_text(
+            json.dumps(state, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
+
     def save_metric_rules(self, turn: int, rules: str):
         """Save metric rules immediately after generation.
 

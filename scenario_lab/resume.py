@@ -279,13 +279,23 @@ def load_run_state(
     # `create_branch` copies the turn directories wholesale, so the child's
     # records are its own from the first turn it executes and nothing it does
     # can reach back into the parent.
+    #
+    # The Game Master step writes after the actor step, so when world tables
+    # exist the 4-world-store.json snapshot is fresher than the per-actor
+    # files: it holds this turn's actor writes *and* its world writes, where
+    # the actor files hold only the former. Prefer it when present.
     if scenario.store is not None and actors_dir.exists():
-        for actor_id in scenario.actors:
-            state_file = actors_dir / f"{actor_id}-store.json"
-            if state_file.exists():
-                scenario.store.restore(json.loads(state_file.read_text(encoding="utf-8")))
-                scenario.store.current_turn = from_turn
-                break
+        world_state_file = turn_dir / "4-world-store.json"
+        if world_state_file.exists():
+            scenario.store.restore(json.loads(world_state_file.read_text(encoding="utf-8")))
+            scenario.store.current_turn = from_turn
+        else:
+            for actor_id in scenario.actors:
+                state_file = actors_dir / f"{actor_id}-store.json"
+                if state_file.exists():
+                    scenario.store.restore(json.loads(state_file.read_text(encoding="utf-8")))
+                    scenario.store.current_turn = from_turn
+                    break
 
     # 5. Load historical summary (if exists)
     summary_file = turn_dir / "6-historical-summary.md"

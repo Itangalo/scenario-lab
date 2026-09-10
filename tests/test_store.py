@@ -72,13 +72,43 @@ def apply(store: Store, turn: int, text: str, actor: str = "eu") -> list:
     return [store.apply(command, actor, turn) for command in commands]
 
 
+def block(*entries: dict) -> str:
+    """One ``## Store changes`` section carrying a JSON write block."""
+    return "## Store changes\n\n" + jsonblock(*entries)
+
+
+def jsonblock(*entries: dict) -> str:
+    """Just the fenced JSON write block, for sections built by hand."""
+    return "```json\n" + json.dumps({"store": list(entries)}) + "\n```\n"
+
+
+def add_entry(table: str = "measures", grounds: str = "", **fields) -> dict:
+    entry: dict = {"op": "add", "table": table, "fields": dict(fields)}
+    if grounds:
+        entry["grounds"] = grounds
+    return entry
+
+
+def update_entry(record_id: str, table: str = "measures", **fields) -> dict:
+    return {"op": "update", "table": table, "id": record_id, "fields": dict(fields)}
+
+
+def delete_entry(record_id: str, table: str = "measures", grounds: str = "") -> dict:
+    return {"op": "delete", "table": table, "id": record_id, "grounds": grounds}
+
+
 def add_two(store: Store) -> None:
     apply(
         store,
         1,
-        "## Store changes\n"
-        "- add measures: name = InvestAI Gigafactories; category = 4; size = large; finish_turn = 7\n"
-        "- add measures: name = Incident Response Corps; category = 6; size = small; finish_turn = 3\n",
+        block(
+            add_entry(
+                name="InvestAI Gigafactories", category=4, size="large", finish_turn=7
+            ),
+            add_entry(
+                name="Incident Response Corps", category=6, size="small", finish_turn=3
+            ),
+        ),
     )
 
 
@@ -98,34 +128,29 @@ def test_silence_carries_records_forward(store: Store):
 def test_an_actor_cannot_drop_a_record_by_omission(store: Store):
     """There is no path from 'not mentioned' to 'gone'."""
     add_two(store)
-    apply(
-        store,
-        2,
-        "## Store changes\n"
-        "- update measures M1: finish_turn = 8\n",
-    )
+    apply(store, 2, block(update_entry("M1", finish_turn=8)))
     live = {r.id for r in store.live_records("measures")}
     assert live == {"M1", "M2"}
 
 
-def test_a_delete_may_name_several_records(store: Store):
-    """"delete measures M7, M8" once deleted M7 and kept M8, silently.
+def test_deletes_name_one_record_each(store: Store):
+    """JSON carries one id per entry, so the old two-id delete has no syntax.
 
-    The second id was absorbed into the reason clause, so one record went and
-    the other quietly stayed with no fault recorded anywhere -- this module's
-    own failure mode, reintroduced in its own parser. Seen in a verification
-    run.
+    Under the markdown grammar "delete measures M7, M8" deleted M7 and kept
+    M8 silently -- the second id absorbed into the reason clause, this
+    module's own failure mode reintroduced in its own parser. One entry names
+    one record now, and that class of bug has nowhere to live.
     """
     add_two(store)
-    outcomes = apply(store, 2, "## Store changes\n- delete measures M1, M2\n")
+    outcomes = apply(store, 2, block(delete_entry("M1"), delete_entry("M2")))
     assert [o.verdict for o in outcomes] == ["applied", "applied"]
     assert store.live_records("measures") == []
 
 
-def test_a_multi_delete_still_separates_ids_from_the_reason(store: Store):
+def test_a_delete_carries_its_grounds(store: Store):
     add_two(store)
     outcomes = apply(
-        store, 2, "## Store changes\n- delete measures M1 and M2 — both stalled\n"
+        store, 2, block(delete_entry("M1", grounds="both stalled"), delete_entry("M2", grounds="both stalled"))
     )
     assert [o.record_id for o in outcomes] == ["M1", "M2"]
     assert all(o.grounds == "both stalled" for o in outcomes)
@@ -139,9 +164,9 @@ def test_a_duplicate_name_is_noted_and_not_refused(store: Store):
     Rejecting would be wrong -- a scenario may legitimately want two measures
     of similar name -- but a reader should see it.
     """
-    apply(store, 1, "## Store changes\n- add measures: name = Twice; size = small; finish_turn = 9\n")
+    apply(store, 1, block(add_entry(name="Twice", size="small", finish_turn=9)))
     outcome = apply(
-        store, 2, "## Store changes\n- add measures: name = twice; size = large; finish_turn = 9\n"
+        store, 2, block(add_entry(name="twice", size="large", finish_turn=9))
     )[0]
     assert outcome.verdict == "applied"
     assert "duplicates the name of M1" in outcome.note
@@ -153,7 +178,7 @@ def test_a_duplicate_name_is_noted_and_not_refused(store: Store):
 
 def test_removal_requires_an_explicit_command(store: Store):
     add_two(store)
-    outcomes = apply(store, 2, "## Store changes\n- delete measures M2\n")
+    outcomes = apply(store, 2, block(delete_entry("M2")))
     assert outcomes[0].verdict == "applied"
     assert {r.id for r in store.live_records("measures")} == {"M1"}
 
@@ -173,14 +198,14 @@ def test_missing_section_is_reported_not_inferred(store: Store):
 
 def test_a_system_column_cannot_be_written(store: Store):
     add_two(store)
-    outcome = apply(store, 2, "## Store changes\n- update measures M1: started_turn = 5\n")[0]
+    outcome = apply(store, 2, block(update_entry("M1", started_turn=5)))[0]
     assert outcome.verdict == "rejected"
     assert store.live_records("measures")[0].fields["started_turn"] == 1
 
 
 def test_a_derived_column_cannot_be_written(store: Store):
     add_two(store)
-    outcome = apply(store, 2, "## Store changes\n- update measures M1: cost_per_turn = 1\n")[0]
+    outcome = apply(store, 2, block(update_entry("M1", cost_per_turn=1)))[0]
     assert outcome.verdict == "rejected"
     assert store.value(store.live_records("measures")[0], "cost_per_turn") == 3
 
@@ -198,8 +223,12 @@ def test_an_unwritable_column_costs_the_value_not_the_command(store: Store):
     outcome = apply(
         store,
         1,
-        "## Store changes\n- add measures: name = Kept; size = large; finish_turn = 9; "
-        "cost_per_turn = 99; started_turn = 4\n",
+        block(
+            add_entry(
+                name="Kept", size="large", finish_turn=9,
+                cost_per_turn=99, started_turn=4,
+            )
+        ),
     )[0]
     assert outcome.verdict == "applied"
     assert "computed from 'size'" in outcome.note
@@ -215,7 +244,7 @@ def test_an_unknown_column_is_still_a_rejection(store: Store):
     """The two cases are different and must stay different."""
     outcome = apply(
         store, 1,
-        "## Store changes\n- add measures: name = X; finish_turn = 3; colour = blue\n",
+        block(add_entry(name="X", finish_turn=3, colour="blue")),
     )[0]
     assert outcome.verdict == "rejected"
     assert store.live_records("measures") == []
@@ -223,7 +252,7 @@ def test_an_unknown_column_is_still_a_rejection(store: Store):
 
 def test_unknown_column_is_a_rejection_not_an_addition(store: Store):
     outcome = apply(
-        store, 1, "## Store changes\n- add measures: name = X; finish_turn = 3; colour = blue\n"
+        store, 1, block(add_entry(name="X", finish_turn=3, colour="blue"))
     )[0]
     assert outcome.verdict == "rejected"
     assert "no column 'colour'" in outcome.reason
@@ -231,7 +260,7 @@ def test_unknown_column_is_a_rejection_not_an_addition(store: Store):
 
 
 def test_required_columns_are_required(store: Store):
-    outcome = apply(store, 1, "## Store changes\n- add measures: name = X\n")[0]
+    outcome = apply(store, 1, block(add_entry(name="X")))[0]
     assert outcome.verdict == "rejected"
     assert "finish_turn" in outcome.reason
 
@@ -241,25 +270,25 @@ def test_ids_are_assigned_by_python(store: Store):
     assert [r.id for r in store.live_records("measures")] == ["M1", "M2"]
     # And an id is never reused after a deletion, so a stale reference in a
     # later turn cannot silently address a different record.
-    apply(store, 2, "## Store changes\n- delete measures M1\n")
-    apply(store, 3, "## Store changes\n- add measures: name = Y; size = small; finish_turn = 9\n")
+    apply(store, 2, block(delete_entry("M1")))
+    apply(store, 3, block(add_entry(name="Y", size="small", finish_turn=9)))
     assert [r.id for r in store.live_records("measures")] == ["M2", "M3"]
 
 
-def test_the_actor_never_keys_on_names(store: Store):
+def test_the_writer_never_keys_on_names(store: Store):
     """Names are not keys, so a paraphrase cannot address a record at all.
 
     `check_portfolio_drift.py` needs a stopword list and a fuzzy word matcher because
     the Game Master renames measures between turns ("EU AI Incident Response
-    Corps", "European AI Incident Response Corps"). A command addressed by
-    name does not parse, so no paraphrase can ever reach the wrong record.
+    Corps", "European AI Incident Response Corps"). An entry without an id does
+    not parse into an update, so no paraphrase can ever reach the wrong record.
     """
     add_two(store)
     commands, malformed, _ = parse_store_changes(
-        "## Store changes\n- update measures InvestAI Gigafactories: finish_turn = 9\n"
+        block({"op": "update", "table": "measures", "fields": {"finish_turn": 9}})
     )
     assert commands == []
-    assert malformed == ["update measures InvestAI Gigafactories: finish_turn = 9"]
+    assert len(malformed) == 1
     assert store.live_records("measures")[0].fields["finish_turn"] == 7
 
 
@@ -279,11 +308,7 @@ def test_the_actor_never_keys_on_names(store: Store):
     ],
 )
 def test_enum_decoration_is_normalised(store: Store, written: str, expected: str):
-    apply(
-        store,
-        1,
-        f"## Store changes\n- add measures: name = X; size = {written}; finish_turn = 4\n",
-    )
+    apply(store, 1, block(add_entry(name="X", size=written, finish_turn=4)))
     assert store.live_records("measures")[0].fields["size"] == expected
 
 
@@ -291,13 +316,13 @@ def test_enum_decoration_is_normalised(store: Store, written: str, expected: str
     "written,expected", [("7", 7), ("turn 7", 7), ("**7**", 7), ("Turn 7.", 7)]
 )
 def test_turn_is_read_out_of_prose(store: Store, written: str, expected: int):
-    apply(store, 1, f"## Store changes\n- add measures: name = X; finish_turn = {written}\n")
+    apply(store, 1, block(add_entry(name="X", finish_turn=written)))
     assert store.live_records("measures")[0].fields["finish_turn"] == expected
 
 
 def test_unnormalisable_value_is_rejected_loudly(store: Store):
     outcome = apply(
-        store, 1, "## Store changes\n- add measures: name = X; size = enormous; finish_turn = 4\n"
+        store, 1, block(add_entry(name="X", size="enormous", finish_turn=4))
     )[0]
     assert outcome.verdict == "rejected"
     assert "must be one of large, small" in outcome.reason
@@ -312,7 +337,7 @@ def test_heading_level_is_not_load_bearing():
     for hashes in ("#", "##", "###", "####"):
         commands, _, present = parse_store_changes(
             f"{hashes} Store changes (required this turn)\n"
-            "- add measures: name = X; finish_turn = 3\n"
+            + jsonblock(add_entry(name="X", finish_turn=3))
         )
         assert present is True
         assert len(commands) == 1
@@ -321,30 +346,42 @@ def test_heading_level_is_not_load_bearing():
 def test_section_ends_at_the_next_heading_of_the_same_level():
     commands, _, _ = parse_store_changes(
         "## Store changes\n"
-        "- add measures: name = X; finish_turn = 3\n"
-        "\n"
-        "## Priority\n"
-        "- add measures: name = NOT A COMMAND; finish_turn = 4\n"
+        + jsonblock(add_entry(name="X", finish_turn=3))
+        + "\n## Priority\n"
+        + jsonblock(add_entry(name="NOT AN ENTRY", finish_turn=4))
     )
     assert len(commands) == 1
 
 
-def test_grounds_attach_to_the_preceding_command():
+def test_grounds_ride_inside_the_entry():
     commands, _, _ = parse_store_changes(
-        "## Store changes\n"
-        "- add measures: name = X; finish_turn = 3\n"
-        "  - Grounds: the cyber incident in turn 2\n"
+        block(add_entry(name="X", finish_turn=3, grounds="the cyber incident in turn 2"))
     )
     assert commands[0].grounds == "the cyber incident in turn 2"
 
 
-def test_code_span_wrapper_is_stripped():
-    """Models copy the backticks the prompt wrapped the form in."""
+def test_unfenced_json_is_still_read():
+    """A bare object is accepted; the fence is a courtesy, not the contract."""
     commands, malformed, _ = parse_store_changes(
-        "## Store changes\n- ``add measures: name = X; finish_turn = 3``\n"
+        "## Store changes\n" + json.dumps({"store": [add_entry(name="X", finish_turn=3)]}) + "\n"
     )
     assert malformed == []
     assert len(commands) == 1
+
+
+def test_one_bad_entry_rejects_only_itself(store: Store):
+    """Per-entry rejection, not per-block: a turn's good writes survive one typo."""
+    outcomes = apply(
+        store,
+        1,
+        block(
+            add_entry(name="Good", size="small", finish_turn=4),
+            {"op": "add", "table": "measures", "fields": {"name": "Bad"}},
+            add_entry(name="Also good", size="small", finish_turn=5),
+        ),
+    )
+    assert [o.verdict for o in outcomes] == ["applied", "rejected", "applied"]
+    assert {r.fields["name"] for r in store.live_records("measures")} == {"Good", "Also good"}
 
 
 @pytest.mark.parametrize(
@@ -357,62 +394,60 @@ def test_code_span_wrapper_is_stripped():
         "No changes.",
     ],
 )
-def test_a_trailing_no_op_line_is_not_a_fault(line: str):
-    """Actors write these after their commands, and they are not commands.
+def test_trailing_prose_after_the_block_is_not_a_fault(line: str):
+    """Writers add these after their block, and they are not entries.
 
     The fault channel only means something while everything in it is a fault:
-    a real run flagged `No other changes.` as an unparsed command twice, which
-    is exactly the noise that trains a reader to skip the warnings.
+    a real run once flagged `No other changes.` as an unparsed command twice,
+    which is exactly the noise that trains a reader to skip the warnings.
     """
     commands, malformed, _ = parse_store_changes(
-        f"## Store changes\n- add measures: name = X; size = small; finish_turn = 4\n- {line}\n"
+        "## Store changes\n"
+        + jsonblock(add_entry(name="X", size="small", finish_turn=4))
+        + line
+        + "\n"
     )
     assert len(commands) == 1
     assert malformed == []
 
 
-def test_a_no_op_line_does_not_swallow_a_real_command():
-    commands, malformed, _ = parse_store_changes(
-        "## Store changes\n- No changes to measures except: add measures: name = X; finish_turn = 4\n"
+def test_prose_without_a_block_is_malformed_not_silent():
+    commands, malformed, present = parse_store_changes(
+        "## Store changes\nNo changes to measures except some vague intent.\n"
     )
+    assert present is True
+    assert commands == []
     assert malformed  # not silently discarded
 
 
-def test_numbered_lists_are_lists_too():
-    """Actors write "1. add measures: ..." often enough to matter."""
-    for prefix in ("1.", "2)", "10."):
-        commands, malformed, _ = parse_store_changes(
-            f"## Store changes\n{prefix} add measures: name = X; finish_turn = 3\n"
-        )
-        assert malformed == []
-        assert len(commands) == 1
+def test_every_entry_in_one_block_applies():
+    commands, malformed, _ = parse_store_changes(
+        block(add_entry(name="X", finish_turn=3), add_entry(name="Y", finish_turn=4))
+    )
+    assert malformed == []
+    assert len(commands) == 2
 
 
 @pytest.mark.parametrize(
-    "line,expected",
-    [
-        ("delete measures M1", ""),
-        ("delete measures M1 because the levy was rejected", "the levy was rejected"),
-        ("delete measures M1 — the levy was rejected", "the levy was rejected"),
-        ("delete measures M1: the levy was rejected", "the levy was rejected"),
-    ],
+    "grounds",
+    ["", "the levy was rejected"],
 )
-def test_a_delete_may_carry_its_reason_inline(line: str, expected: str):
-    """A delete must give grounds, so it is written this way as often as not."""
-    commands, malformed, _ = parse_store_changes(f"## Store changes\n- {line}\n")
+def test_a_delete_carries_its_grounds_in_the_entry(grounds: str):
+    """A delete must give grounds, so the entry carries them as often as not."""
+    commands, malformed, _ = parse_store_changes(
+        block(delete_entry("M1", grounds=grounds))
+    )
     assert malformed == []
     assert commands[0].kind == "delete"
     assert commands[0].record_id == "M1"
-    assert commands[0].grounds == expected
+    assert commands[0].grounds == grounds
 
 
-@pytest.mark.parametrize("value", ["-3", "0"])
-def test_a_turn_column_rejects_a_non_turn(store: Store, value: str):
+@pytest.mark.parametrize("value", [-3, 0])
+def test_a_turn_column_rejects_a_non_turn(store: Store, value: int):
     """Turns are 1-indexed, and a non-positive one satisfies every
     `when_reached` comparison there is."""
-    outcome = apply(
-        store, 1, f"## Store changes\n- add measures: name = X; finish_turn = {value}\n"
-    )[0]
+    outcome = apply(store, 1, block(add_entry(name="X", finish_turn=value)))[0]
     assert outcome.verdict == "rejected"
     assert "turn number of 1 or more" in outcome.reason
 
@@ -430,7 +465,7 @@ def test_a_stored_value_is_never_executed_as_a_template(store: Store):
     apply(
         store,
         1,
-        "## Store changes\n- add measures: name = {{ 7*7 }}; size = small; finish_turn = 4\n",
+        block(add_entry(name="{{ 7*7 }}", size="small", finish_turn=4)),
     )
     env = SandboxedEnvironment()
     rules = env.from_string("{{ store.rows('measures') }}").render(store=StoreView(store, "eu"))
@@ -439,21 +474,18 @@ def test_a_stored_value_is_never_executed_as_a_template(store: Store):
     assert "49" not in prompt
 
 
-def test_unparsable_line_is_recorded_rather_than_dropped():
+def test_unparsable_block_is_recorded_rather_than_dropped():
     commands, malformed, _ = parse_store_changes(
-        "## Store changes\n"
-        "- add measures: name = X; finish_turn = 3\n"
-        "- we will also do something vague\n"
+        "## Store changes\n```json\n{not json at all\n```\n"
     )
-    assert len(commands) == 1
-    assert malformed == ["we will also do something vague"]
+    assert commands == []
+    assert len(malformed) == 1
 
 
-def test_semicolons_separate_but_commas_do_not():
-    """A measure name contains commas far more often than semicolons."""
+def test_commas_need_no_escaping_in_json_values():
+    """A measure name contains commas; JSON strings hold them as-is."""
     commands, _, _ = parse_store_changes(
-        "## Store changes\n"
-        "- add measures: name = Compute, chips, and energy package; finish_turn = 5\n"
+        block(add_entry(name="Compute, chips, and energy package", finish_turn=5))
     )
     assert commands[0].assignments["name"] == "Compute, chips, and energy package"
 
@@ -552,7 +584,7 @@ def test_views_are_scoped_per_actor(store: Store):
     add_two(store)
     # A later turn, because a turn is one transaction: re-entering turn 1 would
     # restore the pre-turn snapshot and discard what the first actor wrote.
-    apply(store, 2, "## Store changes\n- add measures: name = Z; size = large; finish_turn = 6\n",
+    apply(store, 2, block(add_entry(name="Z", size="large", finish_turn=6)),
           actor="other")
     assert StoreView(store, "eu").count("measures") == 2
     assert StoreView(store, "other").count("measures") == 1
@@ -562,7 +594,7 @@ def test_views_are_scoped_per_actor(store: Store):
 def test_an_actor_cannot_address_another_actors_record(store: Store):
     add_two(store)
     store.begin_turn(2)
-    commands, _, _ = parse_store_changes("## Store changes\n- delete measures M1\n")
+    commands, _, _ = parse_store_changes(block(delete_entry("M1")))
     assert store.apply(commands[0], "other", 2).verdict == "rejected"
     assert len(store.live_records("measures")) == 2
 
@@ -575,7 +607,7 @@ def test_an_actor_cannot_address_another_actors_record(store: Store):
 def test_rerunning_a_turn_replaces_rather_than_appends(store: Store):
     """`constitutional_enforcement.max_attempts` permits a turn to run again."""
     add_two(store)
-    text = "## Store changes\n- add measures: name = Third; size = small; finish_turn = 9\n"
+    text = block(add_entry(name="Third", size="small", finish_turn=9))
     apply(store, 2, text)
     assert len(store.live_records("measures")) == 3
     apply(store, 2, text)
@@ -587,12 +619,13 @@ def test_a_partial_re_emission_does_not_leave_half_of_each_attempt(store: Store)
     apply(
         store,
         2,
-        "## Store changes\n"
-        "- add measures: name = A; size = small; finish_turn = 9\n"
-        "- add measures: name = B; size = small; finish_turn = 9\n",
+        block(
+            add_entry(name="A", size="small", finish_turn=9),
+            add_entry(name="B", size="small", finish_turn=9),
+        ),
     )
     assert len(store.live_records("measures")) == 4
-    apply(store, 2, "## Store changes\n- add measures: name = A; size = small; finish_turn = 9\n")
+    apply(store, 2, block(add_entry(name="A", size="small", finish_turn=9)))
     names = {r.fields["name"] for r in store.live_records("measures")}
     assert "B" not in names
     assert len(store.live_records("measures")) == 3
@@ -612,7 +645,28 @@ def test_no_store_block_is_no_store():
     "bad",
     [
         {"measures": {"scope": "actor", "colums": {}}},
+        {"measures": {"scope": "orbit", "columns": {"id": {"owner": "system"}}}},
         {"measures": {"scope": "world", "columns": {"id": {"owner": "system"}}}},
+        {
+            "measures": {
+                "scope": "actor",
+                "columns": {
+                    "id": {"owner": "system"},
+                    "n": {"owner": "actor"},
+                    "w": {"owner": "world"},
+                },
+            }
+        },
+        {
+            "measures": {
+                "scope": "world",
+                "columns": {
+                    "id": {"owner": "system"},
+                    "w": {"owner": "world"},
+                    "n": {"owner": "actor"},
+                },
+            }
+        },
         {"measures": {"columns": {"id": {"owner": "system"}, "n": {"owner": "nobody"}}}},
         {"measures": {"columns": {"id": {"owner": "system"}, "n": {"owner": "actor", "type": "date"}}}},
         {"measures": {"columns": {"id": {"owner": "system"}, "e": {"owner": "actor", "type": "enum"}}}},
@@ -624,6 +678,52 @@ def test_no_store_block_is_no_store():
 def test_malformed_schema_is_rejected_at_load(bad):
     with pytest.raises(StoreSchemaError):
         parse_store_schema(bad)
+
+
+WORLD_SCHEMA = {
+    "pacts": {
+        "scope": "world",
+        "columns": {
+            "id": {"owner": "system", "type": "text"},
+            "name": {"owner": "world", "type": "text", "required": True},
+            "seats": {"owner": "world", "type": "integer"},
+            "standing": {
+                "owner": "derived", "type": "text",
+                "from": "seats", "map": {"5": "strong"},
+            },
+        },
+    }
+}
+
+
+def test_world_tables_belong_to_the_run_not_an_actor():
+    """A world table is read by every step and written by the Game Master step."""
+    schema = parse_store_schema(WORLD_SCHEMA)
+    store = Store(schema)
+    store.begin_turn(1)
+    commands, malformed, present = parse_store_changes(
+        block(add_entry("pacts", name="River Pact", seats=5))
+    )
+    assert present is True and malformed == []
+    # An actor's write to a world table is rejected, not half-applied.
+    assert store.apply(commands[0], "eu", 1).verdict == "rejected"
+    outcome = store.apply(commands[0], "world", 1, writer_kind="world")
+    assert outcome.verdict == "applied"
+    # ... while the Game Master cannot reach actor tables.
+    actor_schema = parse_store_schema(SCHEMA)
+    actor_store = Store(actor_schema)
+    actor_store.begin_turn(1)
+    actor_commands, _, _ = parse_store_changes(
+        block(add_entry(name="X", size="small", finish_turn=4))
+    )
+    assert (
+        actor_store.apply(actor_commands[0], "world", 1, writer_kind="world").verdict
+        == "rejected"
+    )
+    # World records read the same whoever asks: no actor filter applies.
+    assert len(store.live_records("pacts", "eu")) == 1
+    assert len(store.live_records("pacts", "other")) == 1
+    assert StoreView(store, "eu").rows("pacts", ["name"]).count == 1
 
 
 def test_derivation_is_one_step_deep():
@@ -750,7 +850,7 @@ def test_actor_scoped_call_is_found():
 
 def test_round_trip_through_json(store: Store):
     add_two(store)
-    apply(store, 2, "## Store changes\n- delete measures M2\n")
+    apply(store, 2, block(delete_entry("M2")))
     store.current_turn = 2
 
     restored = Store(parse_store_schema(SCHEMA))
@@ -766,10 +866,10 @@ def test_artifact_shows_records_and_the_changelog(store: Store):
     outcomes = apply(
         store,
         1,
-        "## Store changes\n"
-        "- add measures: name = X; size = small; finish_turn = 4\n"
-        "  - Grounds: because\n"
-        "- update measures M9: finish_turn = 5\n",
+        block(
+            add_entry(name="X", size="small", finish_turn=4, grounds="because"),
+            update_entry("M9", finish_turn=5),
+        ),
     )
     text = render_store_file(store, "eu", "European Union", 1, outcomes, [], True)
     assert "# Store: European Union (turn 1)" in text
