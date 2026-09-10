@@ -2,7 +2,7 @@
 
 The Game Master step that writes the world state. It decides what the actor's actions achieved and what the metrics become, so the metric rules must be visible here in full and unambiguous.
 
-Source: `runs/run-20260902-201003/turn-02/llm-io/06-metrics.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
+Source: `runs/run-20260910-101024/turn-02/llm-io/05-metrics.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
 
 # ═══ REVIEWER CHECKLIST ═══
 
@@ -131,11 +131,13 @@ These are hard rules of this world. They are checked after you answer, and an up
 
 1. **How fast the world moves is fixed, and unannounced.** The rates in metric rule 1 hold from turn 1 to the last turn.
 
-2. **Capability is accumulated and does not fall.** `ai_capability` and `openweight_capability` may rise or stay flat, and `openweight_capability` never exceeds `ai_capability`. The single exception is catastrophic physical destruction of the compute base, which must be narrated as such.
+2. **`ai_capability` and `openweight_capability` are accumulated and do not fall.** These two metrics, and no others, may only rise or stay flat, and `openweight_capability` never exceeds `ai_capability`. The single exception is catastrophic physical destruction of the compute base, which must be narrated as such.
+
+   **This invariant reaches no other metric.** Every other metric in this scenario is a stock that can be spent, eroded or taken away, and falling is how they say so. `eu_ai_sovereignty` above all: metric rule 5 gives it a decay term and an event term that are both negative, it has no floor above 0, and the 22 it starts at is a point on the scale rather than a level it returns to. A turn whose sovereignty terms come to −2 ends two points lower, and that is the rule working, not a violation to correct.
 
 3. **Nothing the EU decides binds the United States, China or the frontier developers automatically.** Compliance outside its own jurisdiction must be established in the narrative – through agreement, market access, standards adoption, supply-chain leverage or pressure – before any metric moves as though it had been achieved.
 
-4. **The American posture, once elected, is standing.** From the turn `us_election_2028` fires, the `US_POSTURE:` line is carried in the notepad every subsequent turn and conditions the world under metric rule 8. It may not be dropped, reinterpreted or replaced by a different posture later in the run.
+4. **The American posture, once elected, is standing.** Turn 5 settles who won the 2028 election; the `US_POSTURE:` line is written in turn 6, when the administration takes office, and carried in the notepad every subsequent turn, conditioning the world under metric rule 8. It may not be dropped, reinterpreted or replaced by a different posture later in the run.
 
 ## Modelling choices
 
@@ -186,11 +188,10 @@ One turn is six months. Figures are for this turn: a rule applies in whatever tu
 
 The EU's leverage differs by metric, and the ordering governs everything below: strong on `resilience`, `eu_ai_sovereignty` and `eu_political_capital`; moderate on `public_sentiment`; weak on `ai_safety` and `openweight_capability`, reachable only through market access and international agreement; none on `ai_capability`.
 
-1. **This run's own rate sets the growth of `ai_capability`.** In this run: +1.5 to +2.5 per turn while capability is below 60, +0.5 to +1.5 above it, easing into the **68–74** terminal zone. Where verifiable reward works, capability keeps improving sharply: that improvement shows in the narrative, in what attackers can do, and in raised cyber and open-replication event probabilities, and never in this number. A trajectory that re-accelerates on the general index under conditions this rule does not give is misapplying the rule.
+1. **This run's own rate sets the growth of `ai_capability`.** In this run: +2.5 to +4 per turn, steadily – slower than compounding, never stalled. After `rsi_onset`: +6 to +10 per turn, and the increment itself grows, carrying capability into the **88–96** terminal zone within a few turns. Growth is sub-linear above 85: halve the stated increment there, because the instrument is losing resolution rather than the world slowing down. Rates are floors on motion, not decorations – a trajectory that stalls well below its terminal zone is misapplying the rule.
 
 2. **`openweight_capability` trails `ai_capability`**
-   - `openweight_capability` should normally be set between old value and last turn's value of `ai_capability`. Lower end when restrictions on open-weight releases.
-   - The event `openweight_frontier_release` make `openweight_capability` jump to at most 5 below `ai_capability` at a stroke.
+   - `openweight_capability` should normally be set around the middle of its old value and last turn's value of `ai_capability`. Lower when restrictions on open-weight are present, higher if `openweight_frontier_release` just occurred.
    - `openweight_capability` never fall
    - `openweight_capability` never exceeds `ai_capability`
 
@@ -204,23 +205,32 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
    - Category 6 measure covering a named class of harm, in the turn it finishes: +3 to +6, once
    - `ai_capability` rose and no category 6 measure is in force: −1 to −2
    - Category 9 measure broadening adoption, in the turn it finishes: −1 to −3, once
+   - The event `joint_threat_response`, in the turn it fires: +1 to +3, once
 
 5. **`eu_ai_sovereignty`**
    - Category 4 measure, in the turn it finishes: +3 to +6, once
    - `ai_capability` rose at least 2 this turn: −1
+   - An event this turn that takes away or secures the Union's access to AI capacity itself — the compute, the leading models, the supply chain they run on, or a member state's participation in the common line: −1 to −3 where access is taken away, +1 to +3 where it is secured. `eu_frontier_access_denied`, `supply_chain_coercion`, `export_control_escalation` and `member_state_defection` take away; `eu_access_secured` secures; an emergent event that does the same thing counts the same. At most one such term in a turn, the largest where several qualify. **It is paid in the turn the event fires and in no other:** write the event's id with that turn beside it, as `eu_frontier_access_denied t3 −2`, and only when the turn is 3. Afterwards the event is gone from this rule entirely, however long its consequences run in the world. Size it by how much of the Union's actual capacity the event reaches, and take the small end where the Union has finished category 4 capacity of its own to fall back on: what dependence costs is what it cannot substitute for. Pressure, rhetoric and a threat not yet acted on are not this term.
    - `eu_ai_sovereignty` falls when the sum of its terms is negative, and keeps falling. It has no floor above 0: the 22 it starts at is a reference point on the scale, not a level it returns to or rests on. A turn whose terms come to −1 ends one point lower.
 
 6. **`eu_political_capital`**
    - IMPORTANT: Sum across the full portfolio and other effects before changes are applied
    - `eu_ai_sovereignty` above 40: +1 to +3 `eu_political_capital`, top end if above 60
    - `public_sentiment` above `eu_political_capital`: +1 to +2 `eu_political_capital`
-   - Every measure in flight costs the same amount `eu_political_capital` every turn, and finishes on a stated turn
-      - large measure: −3 `eu_political_capital` per turn
-      - small measure: −2 `eu_political_capital` per turn
+   - Every measure in flight costs `eu_political_capital` every turn until it finishes: −3 for a large measure, −2 for a small one. **This turn the portfolio in flight is:**
+
+| id | name | cost_per_turn |
+|---|---|---|
+| M1 | InvestAI Gigafactories | 3 |
+| M2 | Tech sovereignty package | 3 |
+| M3 | EU Critical Systems Hardening and Response Pact | 3 |
+| M4 | EU Sovereign Fallback Compute Lease | 2 |
+
+     **so 4 measures are in flight and they come to −11 `eu_political_capital` this turn.** Your charge line carries one term per measure, so it has exactly 4 of them before the priority: a line with fewer has dropped one, and a line with more has charged something that is not in flight. That figure is the `cost_per_turn` column of the rows above, added up, and nothing else: the named priority's −1 below is charged on top of it, and is not in it. **A measure is charged in every turn up to but not including its finishing turn.** It is absent from those rows in the turn it finishes, because it is no longer in flight — that turn it is paid, not charged, under the next line.
    - A named priority: −1 that turn.
-   - A measure abandoned or publicly defeated: −3 to −6, remove from portfolio
-   - A measure reaching its finishing turn: +2 to +5, then remove from portfolio
-   - A measure just added, addressing a negative event from the last three rounds: +1 to +8. Larger for bigger events, more recent events and larger measures; smaller for the reverse.
+   - A measure the Union abandoned or that was publicly defeated this turn — it left the portfolio by an explicit decision, which you will find in the actor's `## Store changes`: −3 to −6
+   - A measure reaching its finishing turn: +2 to +5, once, in that turn. Nothing finishes this turn.    - A measure just added, addressing a negative event from the last three rounds: +1 to +8. Larger for bigger events, more recent events and larger measures; smaller for the reverse.
+    - The event `middle_power_coalition`, in the turn it fires: +2 to +4, once. Its sovereignty effect is already covered: coordination that secures supply-chain access counts under rule 5's event term.
    - Negative events this turn move `eu_political_capital` in either direction; the sign follows from where the harm originated and whether the EU had acted beforehand.
      - external origin, effect dampened by finished measure: +3 to +10. The bigger the event and the larger the measure, the bigger the gain.
      - external origin, effect dampened by measure in flight: +1 to +4. The bigger the event and the larger the measure, the bigger the gain.
@@ -238,7 +248,7 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
 
 ## Other effects
 
-8. **The American posture is a standing condition from the 2028 election onward.** In turn 5 exactly one of `election_consolidation`, `election_alliance` and `election_retrenchment` occurs; which one is decided before you see it. Write the matching `US_POSTURE:` line into the world state that turn and carry it in the notepad every turn after.
+8. **The American posture is a standing condition from turn 6 onward.** In turn 5 exactly one of `election_consolidation`, `election_alliance` and `election_retrenchment` occurs; which one is decided before you see it. Turn 5 settles only who won — the result is known, nothing else changes: no posture effects, no posture-conditioned probabilities, no US_POSTURE line. From turn 6 the winner governs, when the new administration takes office. In turn 6, read the turn-5 winner from the event record and write the matching `US_POSTURE:` line into the world state, then carry it in the notepad every turn after. The events themselves never write this line.
 
    - **CONSOLIDATION** — frontier access rationed by country tier:
      - categories 4 and 5 cost one size level more
@@ -260,14 +270,16 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
    - Agreement in public and evasion in private is a permitted outcome, and should sometimes be the one that happens.
 
 10. **Managing the measure portfolio**
-    - When measures are added, it must get a line `costs N per turn, started turn X, finishes on turn Y`. This line is copied forward in the portfolio, unchanged. Three things can move  it. Nothing moves it silently.
+    - The portfolio is held by the framework, not restated by the Union. A measure's cost, starting turn and finishing turn are carried forward by Python; nothing the Union writes or omits can drop an entry, and its starting turn cannot be rewritten at all. Do not ask the Union to re-list its measures, and do not treat a measure's absence from the narrative as its departure. The rows printed under rule 6 are the portfolio.
+    - A finishing turn moves only by an explicit `update` in the Union's `## Store changes`, and three things justify one. Nothing moves it silently.
       - It is a named priority: may pull it in by one turn
       - Left unprioritised several consecutive turns: may push it out by one
       - An event: either, and rarely by more than one
     - If `eu_political_capital` is below 20, the EU starts losing control of its own agenda:
       - **The named priority has no effect, and no cost.** Pull-in-by-one-turn does not apply, pushing a measure buys nothing, and the priority's −1 is not charged. Naming a priority changes nothing at all.
+    - If `eu_political_capital` is below 12, control slips further:
       - **A new measure may fail to start.** Judge it, roughly one turn in three. A measure that fails to start never enters the portfolio, costs nothing, and may be proposed again in a later turn. Say plainly in the narrative what blocked it — a member state withholding assent, a budget line refused, a legal base contested. The narrative must not announce that a line has been crossed.
-    - A measure is finished when the current turn reaches Y.
+    - A measure is finished when the current turn reaches Y. This happens by itself: the record's status turns to finished, it stops being charged **from that turn**, and it needs no decision from the Union. Turn Y is the first turn it does not cost anything, and the turn it pays out.
       - Apply the full bonus from the measure
     - A measure in flight gives part bonus:
       - A measure yields nothing in the turn it is proposed
@@ -286,13 +298,13 @@ Current metrics look like this:
 <!-- FROM {{metrics_json}} = the run's live metric values -->
 
 {
-  "ai_capability": 54.0,
-  "openweight_capability": 40.0,
-  "ai_safety": 36.0,
-  "resilience": 38.0,
-  "eu_ai_sovereignty": 21.0,
-  "eu_political_capital": 40.0,
-  "public_sentiment": 44.0
+  "ai_capability": 55.0,
+  "openweight_capability": 45.0,
+  "ai_safety": 38.0,
+  "resilience": 37.0,
+  "eu_ai_sovereignty": 23.0,
+  "eu_political_capital": 43.0,
+  "public_sentiment": 40.0
 }
 
 <!-- FROM user-prompts/metrics_update.md (this scenario's override) -->
@@ -305,7 +317,7 @@ The world state at the start of the turn is described as follows:
 
 <!-- FROM {{historical_summary}} = the run's rolling summary, written by the Game Master -->
 
-The Emergency Resilience Surge achieved partial success, with ENISA red teams deploying detection systems that identified previously missed agent-like network behaviour, enabling early interception of follow-up cyber probes. Sensor upgrades and zero-trust initiatives began rollout, supported by €8.3bn in emergency funding, contributing to a +3 increase in resilience and a +2 gain in ai_safety due to an interpretability breakthrough. However, implementation faced significant hurdles: Poland and Hungary rejected mandatory data sharing on sovereignty grounds, Italian municipalities delayed adoption over cost concerns, and mutual aid protocols stalled over legal uncertainties. Public sentiment improved modestly amid media portrayals of decisive action, though skepticism persisted. AI capabilities surged past 54.0, outpacing domestic compute investments and widening the sovereignty gap. Political capital declined sharply under the strain of overlapping initiatives and uneven outcomes. Defensive tooling against swarm attacks showed no clear systemic improvement, with mixed reports on effectiveness.
+Autumn audit revealed intruders had mapped transmission networks in two EU states for weeks without causing disruption, exposing monitoring gaps. In parallel, new machine-speed patching and agent-behaviour detection tools proved effective in trials against quiet persistence. The Commission proposed a two-year hardening pact for electricity, ports and water with mandatory detection, joint procurement and cross-border exercises led by affected operators, shifting focus from data-centre permitting and gigafactory site selection. Implementation faced finance ministry resistance, unfunded mandates for water utilities, certification delays stalling procurement, and downgraded exercises; ASML leverage remained unused. The EU secured written frontier-model access terms with evaluation rights and withdrawal notice as bridge capacity. Public mood mixed relief with unease; rumours on AI genomics publishing rules and rentable sovereign training remained unconfirmed.
 
 <!-- FROM user-prompts/metrics_update.md (this scenario's override) -->
 
@@ -313,21 +325,18 @@ The Emergency Resilience Surge achieved partial success, with ENISA red teams de
 
 <!-- FROM {{world_state}} = the Game Master's narrative from the previous turn -->
 
-### A Surge Against the Inevitable
+### The autumn audit
+The discovery came from accountants, not sensors. During a routine audit at a container port, an anomaly led to logs that led to grid operators in two EU states and beyond. Intruders had sat inside transmission networks for weeks, mapping rather than breaking. No blackout, no ransom note — which made it worse in Brussels. The retrospectives were blunt: existing monitoring would not have found them.
 
-The Emergency Resilience Surge launched with urgency. ENISA’s red teams deployed within weeks, testing live systems at water utilities and grid operators in Germany, Spain and Greece—sites compromised in the recent intrusion wave. The new detection logic, derived from a sudden interpretability breakthrough now quietly spreading through labs, proved effective: it flagged coordinated agent-like behaviour in network traffic that signature-based tools had missed. Sensor upgrades began, zero-trust rollouts were initiated, and €8.3bn in emergency funds started flowing.
+That same autumn, defenders got a rare win. New tooling that patches at machine speed and flags coordinated agent behaviour rather than known signatures stopped a whole class of quiet persistence in trials. Operators who tested it reported intrusions caught that would previously have lingered.
 
-But momentum faltered. National regulators in Poland and Hungary formally objected to mandatory data sharing under Article 12a, citing sovereignty concerns. Municipal operators in Italy delayed implementation, fearing long-term cost exposure despite EU guarantees. Mutual aid protocols stalled in the Council’s working group—legal ambiguity around command authority during cross-border incidents proved harder to resolve than expected.
+The Commission moved to weld the two facts together. A hardening pact for electricity, ports and water — mandatory detection, joint procurement, cross-border live exercises — was tabled as a two-year survival commitment, with the affected transmission operators asked to lead first drills. Permitting for data-centre zones continued in parallel, and site selection for the gigafactories began, but attention and staff time visibly shifted to the pact.
 
-Still, the partial deployment made a difference. The new monitoring caught two follow-up probe attempts before lateral movement could begin. This limited success, paired with visible leadership, nudged public sentiment upward—some media framed the response as decisive, though local pushback kept enthusiasm cautious.
+There was friction. Finance ministries balked at using recovery funds for industrial control upgrades; municipalities warned of unfunded mandates for water utilities. Joint procurement of the new detection stack stalled over certification, and the first exercises slipped to tabletop rather than live in one state. ASML leverage was deliberately left unused, which drew criticism that Europe was negotiating access without using its one chip.
 
-Meanwhile, AI capability advanced sharply. The frontier crossed 54.0 as two labs completed accelerated runs, leveraging improved training efficiency. No corresponding safety gains landed on deployed systems beyond the emergent signal’s indirect influence, but the interpretability advance did enable a +2 bump to ai_safety. Resilience rose by +3 due to the surge’s partial effect.
+Access itself improved. After the summer switch-off scare, the Union secured written terms for frontier models — evaluation rights and notice before withdrawal — presented internally as bridge capacity until domestic compute lands. It calmed ministries but did not build anything.
 
-Sovereignty dipped: despite ongoing compute investments, the gap with the accelerating frontier widened faster than domestic capacity grew. Political capital fell sharply under the weight of a large new measure, an existing priority, and three active programmes—costs mounted even as results remained uneven.
-
-### Not All Tools Are Welcome
-
-The defensive tooling shift tracked since last turn remains ambiguous. Some security firms report detecting swarm patterns; others say attackers adapt too quickly. No systemic shift is confirmed.
+Public mood stayed ambivalent: relief at a defensive advance, unease that the lights had been mapped by strangers. Rumours swirled of journals refusing AI genomics papers without lab proof, and of rentable sovereign training capacity, but neither resolved into fact.
 
 <!-- FROM user-prompts/metrics_update.md (this scenario's override) -->
 
@@ -337,19 +346,16 @@ The notepad contains the following information:
 
 <!-- FROM {{notepad}} = the Game Master's notepad, carried across turns -->
 
-US_POSTURE: not yet applicable
-
-PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3, priority −1 = −10  
-PROPOSAL BONUS: Emergency Resilience Surge (cat 6, large) +3 — cyber_test_shot exposed critical vulnerabilities and this measure addresses them directly  
-LEGITIMACY LENDS: none  
-SOVEREIGNTY: 22 last turn, no category 4 finish, InvestAI Gigafactories in flight +0, Tech sovereignty package in flight +0, capability rose ≥2 −1 = 21  
-
-Emerging developments (tracked):  
-- `emergent_defensive_tooling_shift` -- first noted turn 1, listed in 2 turn(s) so far: Defensive tooling closes the gap for a whole class of attack – automated patching at the speed vulnerabilities are found, or detection that catches swarm behaviour rather than signatures – and the offence-defence balance visibly shifts back for the first time in years.
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Critical Systems Hardening and Response Pact −3, priority −1 = −10
+PROPOSAL BONUS: EU Critical Systems Hardening and Response Pact (cat 6, large) +3 — cyber_test_shot landed this turn and this answers it directly
+LEGITIMACY LENDS: capital 43, sentiment 40 -> none, capital higher
+SOVEREIGNTY: 22 last turn, no category 4 finish, in-flight measures yield 0 in proposal turn, eu_access_secured t1 +2, capability rose 3.0 −1 = 23
+US_POSTURE: none yet (turn 1)
+Emerging developments (tracked) carried forward: emergent_genomics_publication_freeze, emergent_eu_compute_lease_offer
 
 ## Emerging developments (tracked)
 
-- `emergent_defensive_tooling_shift` -- first noted turn 1, listed in 2 turn(s) so far: Defensive tooling closes the gap for a whole class of attack – automated patching at the speed vulnerabilities are found, or detection that catches swarm behaviour rather than signatures – and the offence-defence balance visibly shifts back for the first time in years.
+- `emergent_genomics_publication_freeze` -- first noted turn 1, listed in 2 turn(s) so far: A major European scientific publisher and a consortium of universities jointly announce a moratorium on accepting AI-generated genomics manuscripts without independent wet-lab replication, after the phage designs, slowing open dissemination of uplift-relevant methods.
 
 <!-- FROM user-prompts/metrics_update.md (this scenario's override) -->
 
@@ -367,7 +373,11 @@ The "Emerging developments (tracked)" section lists developments that recent tur
 
    `PORTFOLIO CHARGE: Gigafactories −3, Frontier Access Guarantee −3, Resilience Surge −2, priority −1 = −9`
 
-   Recompute that total every turn from the portfolio as it now stands. It changes when a measure is added and when one finishes, and a total carried forward unchanged while the portfolio grew is this rule being skipped.
+   **The measures half of that line is given to you.** Rule 6 above prints the portfolio as it now stands and what the measures come to, added up from the rows. Itemise them anyway — the line is what makes the charge checkable — and check that your measure terms come to that same figure. If they do not, you have misread a row, and the rows are right.
+
+   **A measure finishing this turn is not in the charge.** Rule 6 lists what finishes separately, and separately is where it belongs: the turn a measure reaches its finishing turn is the turn it pays out, not a last turn of costing. Adding a finishing measure back into the charge line is the commonest way the line comes to more than rule 6's figure.
+
+   **The total at the end of the line is one further step, and it is yours.** The framework does not know which measure you named as the priority, so its figure covers the measures only. The line reads `= (the figure rule 6 gives) + 1 more for the priority`, as a subtraction. With four large measures and a priority, rule 6 says −12 and the line ends `= −13`. Copying rule 6's figure into the total and writing `priority −1` beside it leaves the priority uncharged, which is the commonest way this line goes wrong.
 
 3b. **Then judge the proposal bonus, if this turn's new measure earned one.** A separate, one-off addition to `eu_political_capital` under metric rule 6, paid in the turn a measure is proposed and never again. It does not touch the charge above.
 
@@ -387,34 +397,41 @@ The "Emerging developments (tracked)" section lists developments that recent tur
 
    Compare the two numbers before writing anything. `none` is correct only when capital is the higher of the two, and a `none` whose own reasoning shows sentiment above capital is wrong.
 
-3d. **Account for `eu_ai_sovereignty` in one line of arithmetic, and let that arithmetic be the value.** Metric rule 5 gives it exactly two sources, and they are not the same size:
+3d. **Account for `eu_ai_sovereignty` in one line of arithmetic, and let that arithmetic be the value.** Metric rule 5 gives it exactly three sources, and they are not the same size:
 
    - a category 4 measure **in the turn its stated finishing turn is reached**: +3 to +6, that turn and no other. Two finishing in the same turn each pay in full.
    - a category 4 measure **still in flight**: under rule 10, occasionally +0 to +2 — most often 0, and more only as its finishing turn approaches.
+   - **an event this turn that took away or secured access to capacity itself**: −1 to −3, or +1 to +3 where it secured. One such term at most, the largest where several events qualify. Rule 5 says which events these are and how to size one; an event that pressured, threatened or embarrassed the Union without reaching its capacity is not this term and gets nothing here.
+
+   **The event term is a lookup, not a judgement.** The only ids you may charge are the ones listed above under "This turn, the following external events have occurred", and you charge them by copying the id from that list. Read the list before you write the line. If nothing in it is one of rule 5's capacity events, the line says `no capacity event` and there is no such term this turn — which is the ordinary case, not a gap to fill. A world that feels as though access has been lost, where no such event fired, is a world where nothing was charged: the atmosphere is the consequence of charges already made.
 
    Against them, `ai_capability` rising at least 2 this turn costs −1.
 
    Write one line in the Notepad that starts from last turn's figure, names every term, and ends at this turn's:
 
-   `SOVEREIGNTY: 31 last turn, Sovereign Compute Corridor finishes t6 +5, Gigafactories in flight +1, capability rose 2.5 −1 = 36`
+   `SOVEREIGNTY: 31 last turn, Sovereign Compute Corridor finishes t6 +5, Gigafactories in flight +1, eu_frontier_access_denied t6 −2, capability rose 2.5 −1 = 34`
+
+   and in a turn where no capacity event fired, which is most turns:
+
+   `SOVEREIGNTY: 34 last turn, no capacity event, Gigafactories in flight +1, capability rose 2.5 −1 = 34`
 
    **The number after the `=` is what you write for `eu_ai_sovereignty` in the Metrics JSON** — the same number, not one near it and not one you reached another way. There is nothing left to judge once the line is written. Nothing outside rule 5 is a term: momentum, institutional follow-through, prior delivery, floors and rounding are not terms, and a line that reaches a total and then appends `→ net +1` has thrown away its own arithmetic.
 
-   **A completion names the turn it finishes, and that turn is this one.** Write `finishes t7 +5`, and only when the turn is 7. Afterwards the measure is gone from this line entirely, however long it stays visible in the world and however much it is still delivering. **This line is never copied forward.** Recompute it from the portfolio every turn: in a batch of twelve, nine runs paid one measure's completion in two or more turns, one of them for six turns running on a line reproduced word for word while the narrative beside it said the money had already been paid.
+   **An event names the turn it fired, and that turn is this one.** Write `eu_frontier_access_denied t6 −2`, and only when the turn is 6 and the id is in this turn's list above. An event pays once, in the turn it happens, and is then gone from this line however long the world goes on dealing with it — a plant that is still shut, a supplier that has not come back, a member state that has not returned to the line. Those are consequences of a charge already made, not a charge to make again.
+
+   **A completion names the turn it finishes, and that turn is this one.** Write `finishes t7 +5`, and only when the turn is 7. Afterwards the measure is gone from this line entirely, however long it stays visible in the world and however much it is still delivering. **This line is never copied forward.** Rule 6 above lists exactly what finishes this turn, and says plainly when nothing does: pay those and no others. Before this list existed the step had to recompute it from a portfolio it read out of prose, and in a batch of twelve, nine runs paid one measure's completion in two or more turns — one of them for six turns running, on a line reproduced word for word while the narrative beside it said the money had already been paid.
 
    **A measure that has not reached its finishing turn cannot pay finishing money.** Building momentum, permits granted, planning underway, a programme going well — none of these is a completion, and the most any of them is worth is +2.
 
-4. **A finishing turn moves only when something moved it.** The portfolio carries a stated finishing turn per measure, set when the measure was proposed. Copy them forward as they stand. If a measure's finishing turn should change — pushed by being the priority, slipping through neglect, delayed or accelerated by an event — say so in the Narrative in the same breath as the reason, and write the new turn. A finishing turn that drifts with no reason given is an error.
+4. **A finishing turn moves only when something moved it.** Each measure's finishing turn is carried by the framework and printed in the rows under rule 6; you do not copy it forward and you cannot change it. Only the Union can, by an `update` in its `## Store changes`, and rule 10 says what justifies one. If this turn's events or the Union's own neglect should have moved a finishing turn and the Union did not move it, say so in the Narrative — that is a thing the world noticed and the Union did not act on, and it is the kind of pressure that shows up in the next turn's answer.
 
-5. Once `us_election_2028` has fired, write the resulting `US_POSTURE: CONSOLIDATION`, `US_POSTURE: ALLIANCE` or `US_POSTURE: RETRENCHMENT` line into the world state for that turn, and carry the same line in the Notepad every turn thereafter. It is a standing condition of the world that metric rule 8 reads each turn, not a one-off narrative beat.
 
 ---
 
 This turn, the following external events have occurred:
 
-**cyber_major_incident:** A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.
-**loss_of_control_incident:** An agentic system takes consequential unsanctioned action with real-world effect – moving money, altering records, acquiring resources, or copying itself to infrastructure nobody authorised – and containment is uncertain for a period measured in days rather than hours. What it was trying to achieve is reconstructed afterwards and disputed.
-**election_annulled:** An election in an established democracy is postponed, rerun or annulled with explicit reference to manipulation of the information environment. Whether the manipulation was decisive is not established and cannot be; what is established is that a court believed it might have been, and that half the electorate does not accept the decision.
+**eu_frontier_access_denied:** The Union is cut off from the leading model at short notice, wholly or by nationality of user. No detailed reason is given, there is no appeal, and the immediate practical effect lands on hospitals, ministries and firms that had built on it. Whether this reads at home as an outrage or as a failure of foresight depends on what the Union had done about it beforehand.
+**emergent_eu_compute_lease_offer (emergent event):** A major non-US cloud provider announces sovereign EU training capacity available for rent at scale, easing near-term compute scarcity without changing ownership of the frontier.
 
 ---
 
@@ -422,36 +439,24 @@ The actors in the scenario describe their actions as follows:
 
 **The European Union:**
 
-## Statement changes
-* ``modify `two_year_commitment` (commitment): Secure foundational AI capacity under EU control while containing systemic risk in the absence of global coordination, with priority now shifting to sovereign detection and containment of agentic threats as openweight capability approaches militarily relevant thresholds.``
-  * Trigger: The **loss_of_control_incident** and **cyber_major_incident** this turn demonstrate that systemic risk is no longer prospective but operational — and that the most urgent threat vector is not high-end capability alone, but autonomous, self-coordinating systems acting without sanction. The interpretability breakthrough gives us a narrow window to build sovereign detection capacity before such systems evolve beyond legibility.
-  * Grounds: The two-year commitment remains valid in intent, but its operational focus must shift. The original formulation assumed systemic risk could be contained through industrial and compute sovereignty alone. The incidents this turn prove that even without full frontier access, distributed agent-capable systems can already breach critical infrastructure and act autonomously. Our containment strategy must now include sovereign, real-time monitoring and interdiction capacity — not just compute and talent. This does not abandon the original goal, but refocuses it on the most immediate vector of harm.
-
-* ``modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late, but we will not act alone where leverage can be pooled — and we will now prioritise sovereign operational capacity in detection and response, even if coordination lags.``
-  * Grounds: The failure of mutual aid protocols to advance despite months of negotiation shows that legal coordination cannot move at the same speed as AI-enabled threats. We must still seek coalitions, but we can no longer let their absence block action. The Union must now build its own operational spine — detection, analysis, containment — that others can plug into, rather than waiting for consensus to act.
-
-## Portfolio
-- ``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
-- ``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
-- ``Emergency Resilience Surge (category 6, costs 3 per turn, started turn 1, finishes on turn 2): Launch a six-month sprint to harden detection and response across energy, water and port infrastructure exposed in the cyber_test_shot — now completed``
-
 ## New measure
-### Sovereign Agent Monitoring & Interdiction Network (S-AMIN)
-Establish a permanent, EU-operated detection and response capability for unauthorised agentic AI behaviour in critical infrastructure and public services, using interpretability tools and autonomous red-teaming agents under strict human oversight.
+**EU Sovereign Fallback Compute Lease**
+Lease the offered non-US sovereign training and inference capacity on EU soil under EU law to keep hospitals, ministries and grid operators running after the frontier cut-off.
+Why this and why now: the short-notice denial turned bridge dependence into an operational failure for critical services, and a rentable EU-anchored alternative that eases scarcity without ceding ownership is exactly the stopgap the two-year hardening commitment needs until gigafactories land.
 
-`Category: 6 (Preparedness and resilience)`  
-`Size: large`  
-`Finishes on turn: 5`  
-`Targeted effect:` resilience +10, ai_safety +8 via persistent monitoring and automated containment of unsanctioned agent activity; begins closing the gap between incident detection and autonomous threat evolution  
-`Applies to:` EU institutions, ENISA, national CERTs, and critical infrastructure operators across all member states — with mandatory integration for entities receiving EU funding or operating under EU regulatory oversight
+## Store changes
+```json
+{"store": [{"op": "add", "table": "measures", "fields": {"name": "EU Sovereign Fallback Compute Lease", "category": 4, "size": "small", "finish_turn": 4, "applies_to": "own jurisdiction", "targeted_effect": "eu_ai_sovereignty up slightly, resilience up by keeping critical services on capable models"}, "grounds": "frontier access cut-off hitting hospitals and ministries demands immediate fallback"}]}
+```
 
 ## Priority
-**Sovereign Agent Monitoring & Interdiction Network (S-AMIN)** — because the **loss_of_control_incident** proved that agentic systems can now act autonomously to move resources and replicate, and the **cyber_major_incident** showed that such actions are already being weaponised; we can no longer rely on post-hoc detection or voluntary coordination — we need a standing, sovereign capability to see and stop these systems in real time.
+EU Critical Systems Hardening and Response Pact, because undetected mapping of transmission networks plus loss of frontier models means detection, patching and live exercises must land before any new build-out.
 
 ## In practice
-We are launching S-AMIN under Article 12a of the Cybersecurity Act and the NIS2 Directive, with ENISA as the lead agency and a new Joint AI Threat Analysis Cell (JATAC) established under the European Cybersecurity Competence Centre. This is not an extension of the Emergency Resilience Surge — it is its necessary successor. Where the Surge was a sprint to deploy detection logic, S-AMIN is a permanent operational layer: we are contracting for 24/7 monitoring of network telemetry across energy, water, rail, and health data exchanges using the newly matured interpretability tools that can flag goal-directed, non-human decision chains. These tools will be run on EU-sovereign compute, physically located in Luxembourg and Finland, with access strictly limited to cleared personnel and automated alert systems.
+We keep the Pact as the main push: DG CNECT and ENISA use the NIS2 base to force joint procurement of the machine-speed patching and agent-behaviour detection stack past certification, with Digital Europe covering water utilities to answer the unfunded-mandate revolt, and Energy and Transport Councils ordering the two affected TSOs to run live cross-border drills this spring.
 
-We are mandating integration for all operators of essential services that receive EU funding or fall under the Digital Operational Resilience Act (DORA), offering full cost coverage for the first three years and technical support from a newly expanded ENISA rapid deployment corps. Resistance will come from member states citing sovereignty and from private operators fearing liability — we are countering with a liability shield for good-faith reporting and a governance model that keeps operational control at the national level while centralising threat intelligence. The first red-team agents — constrained, auditable, and designed to hunt for unauthorised autonomy — will be deployed in test environments by turn 3. This is not about controlling AI use — it is about ensuring that when AI acts, it does so under authority, and that when it doesn’t, we see it and stop it.
+At the same time we sign the fallback lease via the European Cloud and AI procurement vehicle, with data-residency, audit and EU-jurisdiction clauses and priority allocation to health, ministries and the Pact operators. DG CNECT keeps gigafactory site selection and permitting zones moving but without new money this turn, and we formally protest the cut-off while holding ASML leverage in reserve for a coercion response.
+
 
 
 ---

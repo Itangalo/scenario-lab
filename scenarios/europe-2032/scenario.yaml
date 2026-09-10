@@ -174,9 +174,13 @@ store:
                         when_reached: finished, else: running}
 
 llm:
-  model: "openrouter:qwen/qwen3-235b-a22b-2507"
+  model: "openrouter:meta/muse-spark-1.3-contributor"
   temperature: 0.7
   max_tokens: 3000
+  # muse-spark reasons mandatorily and bills it as completion tokens: at the
+  # default effort the events step spends the whole 3000-token budget thinking
+  # and returns nothing parseable. Minimal keeps the turn steps fitting.
+  reasoning_effort: minimal
   # Analysis and synthesis read a whole run (or the whole ensemble) and are the
   # only steps a reasoning model is used for here. The 3000 the turn steps need
   # is far too small for them: a reasoning model can spend that entire budget on

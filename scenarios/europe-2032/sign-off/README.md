@@ -1,6 +1,6 @@
 # Prompt sign-off
 
-Generated from `run-20260902-201003`. These documents exist because a scenario file that never reaches a prompt changes nothing, and nothing else in the pipeline will tell you which ones those are.
+Generated from `run-20260910-101024`. These documents exist because a scenario file that never reaches a prompt changes nothing, and nothing else in the pipeline will tell you which ones those are.
 
 Read them once when the scenario is built, and again after any change to the templates, the scenario's prompt overrides, or the background files. Sign off by saying so in the scenario's design notes, with the date.
 
@@ -17,6 +17,15 @@ Every heading in the scenario's background and definition files, and whether the
 
 | source file | heading | in a prompt |
 |---|---|---|
+| `ROADMAP.md` | Europe 2032 – roadmap to the story | **NO** |
+| `ROADMAP.md` | Phase 1 – the scenario stops moving | **NO** |
+| `ROADMAP.md` | Phase 2 – clear the ground (done 2026-09-04) | **NO** |
+| `ROADMAP.md` | Phase 3 – the runs | **NO** |
+| `ROADMAP.md` | 3a – the statistics batch | **NO** |
+| `ROADMAP.md` | 3b – the story tree | **NO** |
+| `ROADMAP.md` | Phase 4 – the story (open) | **NO** |
+| `ROADMAP.md` | Standing facts | **NO** |
+| `ROADMAP.md` | Resuming this in a new session | **NO** |
 | `background/actors/eu.md` | Short description | yes |
 | `background/actors/eu.md` | Long description | yes |
 | `background/actors/eu.md` | What you are | **NO** |
@@ -75,6 +84,8 @@ Every heading in the scenario's background and definition files, and whether the
 | `events.md` | Backlash Turns Physical | **NO** |
 | `events.md` | Adoption Delivers | yes |
 | `events.md` | Automated Decision Scandal | yes |
+| `events.md` | Joint Threat Response | yes |
+| `events.md` | Middle Powers Coordinate | yes |
 | `metric-rules.md` | Metric Rules | yes |
 | `metric-rules.md` | Other effects | yes |
 | `metrics.md` | Metrics | **NO** |

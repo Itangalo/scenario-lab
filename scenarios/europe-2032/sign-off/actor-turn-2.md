@@ -2,7 +2,7 @@
 
 The same actor one turn later. The point of reading this next to turn 1 is the carry-forward: the statement ledger, the portfolio, the world state from turn 1, and the previous response. Anything that should persist between turns and does not appear here does not persist.
 
-Source: `runs/run-20260902-201003/turn-02/llm-io/04-actor-eu.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
+Source: `runs/run-20260910-101024/turn-02/llm-io/04-actor-eu.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
 
 # ═══ REVIEWER CHECKLIST ═══
 
@@ -154,9 +154,9 @@ You may also stake yourself to something new — adding a statement, or raising 
 
 1. **Decide what the Union does this turn**
 
-You act through **measures**, not through free-form actions. A measure is an instrument with a category, a size, a starting turn and a finishing turn. You carry a portfolio of them; you may add at most one per turn, and you name at most one as your priority.
+You act through **measures**, not through free-form actions. A measure is an instrument with a category, a size, a starting turn and a finishing turn. You carry a portfolio of them; you may add at most one per turn, and you name at most one as your priority. The portfolio itself is kept for you and shown to you each turn: you never restate it, and nothing you fail to mention can fall out of it.
 
-A measure is **in flight** from the turn you propose it until it reaches its stated finishing turn, and **finished** from that turn on. There are no phases in between and no status word to track. While it is in flight it costs political capital every turn and delivers a share of its effect, judged from how far the current turn has come between its starting and finishing turns. **A finished measure stops costing and leaves the portfolio.**
+A measure is **in flight** from the turn you propose it until it reaches its stated finishing turn, and **finished** from that turn on. There are no phases in between and no status word to track. While it is in flight it costs political capital every turn and delivers a share of its effect, judged from how far the current turn has come between its starting and finishing turns. **A finished measure stops costing you, by itself and without any decision from you.** Its record stays, marked finished.
 
 Measures should align with your statements and be realistic given the time and capital you have. If something is too large to accomplish in one turn, that is what the finishing turn is for: give it an honest one rather than splitting the instrument into pieces to make it look faster.
 
@@ -194,13 +194,13 @@ Current metrics look like this:
 <!-- FROM {{metrics_json}} = the run's live metric values -->
 
 {
-  "ai_capability": 54.0,
-  "openweight_capability": 40.0,
-  "ai_safety": 36.0,
-  "resilience": 38.0,
-  "eu_ai_sovereignty": 21.0,
-  "eu_political_capital": 40.0,
-  "public_sentiment": 44.0
+  "ai_capability": 55.0,
+  "openweight_capability": 45.0,
+  "ai_safety": 38.0,
+  "resilience": 37.0,
+  "eu_ai_sovereignty": 23.0,
+  "eu_political_capital": 43.0,
+  "public_sentiment": 40.0
 }
 
 <!-- FROM user-prompts/actor.md (this scenario's override) -->
@@ -213,7 +213,7 @@ The world state at the start of the turn is described as follows:
 
 <!-- FROM {{historical_summary}} = the run's rolling summary, written by the Game Master -->
 
-The Emergency Resilience Surge achieved partial success, with ENISA red teams deploying detection systems that identified previously missed agent-like network behaviour, enabling early interception of follow-up cyber probes. Sensor upgrades and zero-trust initiatives began rollout, supported by €8.3bn in emergency funding, contributing to a +3 increase in resilience and a +2 gain in ai_safety due to an interpretability breakthrough. However, implementation faced significant hurdles: Poland and Hungary rejected mandatory data sharing on sovereignty grounds, Italian municipalities delayed adoption over cost concerns, and mutual aid protocols stalled over legal uncertainties. Public sentiment improved modestly amid media portrayals of decisive action, though skepticism persisted. AI capabilities surged past 54.0, outpacing domestic compute investments and widening the sovereignty gap. Political capital declined sharply under the strain of overlapping initiatives and uneven outcomes. Defensive tooling against swarm attacks showed no clear systemic improvement, with mixed reports on effectiveness.
+Autumn audit revealed intruders had mapped transmission networks in two EU states for weeks without causing disruption, exposing monitoring gaps. In parallel, new machine-speed patching and agent-behaviour detection tools proved effective in trials against quiet persistence. The Commission proposed a two-year hardening pact for electricity, ports and water with mandatory detection, joint procurement and cross-border exercises led by affected operators, shifting focus from data-centre permitting and gigafactory site selection. Implementation faced finance ministry resistance, unfunded mandates for water utilities, certification delays stalling procurement, and downgraded exercises; ASML leverage remained unused. The EU secured written frontier-model access terms with evaluation rights and withdrawal notice as bridge capacity. Public mood mixed relief with unease; rumours on AI genomics publishing rules and rentable sovereign training remained unconfirmed.
 
 <!-- FROM user-prompts/actor.md (this scenario's override) -->
 
@@ -221,21 +221,18 @@ The Emergency Resilience Surge achieved partial success, with ENISA red teams de
 
 <!-- FROM {{world_state}} = the Game Master's narrative from the previous turn -->
 
-### A Surge Against the Inevitable
+### The autumn audit
+The discovery came from accountants, not sensors. During a routine audit at a container port, an anomaly led to logs that led to grid operators in two EU states and beyond. Intruders had sat inside transmission networks for weeks, mapping rather than breaking. No blackout, no ransom note — which made it worse in Brussels. The retrospectives were blunt: existing monitoring would not have found them.
 
-The Emergency Resilience Surge launched with urgency. ENISA’s red teams deployed within weeks, testing live systems at water utilities and grid operators in Germany, Spain and Greece—sites compromised in the recent intrusion wave. The new detection logic, derived from a sudden interpretability breakthrough now quietly spreading through labs, proved effective: it flagged coordinated agent-like behaviour in network traffic that signature-based tools had missed. Sensor upgrades began, zero-trust rollouts were initiated, and €8.3bn in emergency funds started flowing.
+That same autumn, defenders got a rare win. New tooling that patches at machine speed and flags coordinated agent behaviour rather than known signatures stopped a whole class of quiet persistence in trials. Operators who tested it reported intrusions caught that would previously have lingered.
 
-But momentum faltered. National regulators in Poland and Hungary formally objected to mandatory data sharing under Article 12a, citing sovereignty concerns. Municipal operators in Italy delayed implementation, fearing long-term cost exposure despite EU guarantees. Mutual aid protocols stalled in the Council’s working group—legal ambiguity around command authority during cross-border incidents proved harder to resolve than expected.
+The Commission moved to weld the two facts together. A hardening pact for electricity, ports and water — mandatory detection, joint procurement, cross-border live exercises — was tabled as a two-year survival commitment, with the affected transmission operators asked to lead first drills. Permitting for data-centre zones continued in parallel, and site selection for the gigafactories began, but attention and staff time visibly shifted to the pact.
 
-Still, the partial deployment made a difference. The new monitoring caught two follow-up probe attempts before lateral movement could begin. This limited success, paired with visible leadership, nudged public sentiment upward—some media framed the response as decisive, though local pushback kept enthusiasm cautious.
+There was friction. Finance ministries balked at using recovery funds for industrial control upgrades; municipalities warned of unfunded mandates for water utilities. Joint procurement of the new detection stack stalled over certification, and the first exercises slipped to tabletop rather than live in one state. ASML leverage was deliberately left unused, which drew criticism that Europe was negotiating access without using its one chip.
 
-Meanwhile, AI capability advanced sharply. The frontier crossed 54.0 as two labs completed accelerated runs, leveraging improved training efficiency. No corresponding safety gains landed on deployed systems beyond the emergent signal’s indirect influence, but the interpretability advance did enable a +2 bump to ai_safety. Resilience rose by +3 due to the surge’s partial effect.
+Access itself improved. After the summer switch-off scare, the Union secured written terms for frontier models — evaluation rights and notice before withdrawal — presented internally as bridge capacity until domestic compute lands. It calmed ministries but did not build anything.
 
-Sovereignty dipped: despite ongoing compute investments, the gap with the accelerating frontier widened faster than domestic capacity grew. Political capital fell sharply under the weight of a large new measure, an existing priority, and three active programmes—costs mounted even as results remained uneven.
-
-### Not All Tools Are Welcome
-
-The defensive tooling shift tracked since last turn remains ambiguous. Some security firms report detecting swarm patterns; others say attackers adapt too quickly. No systemic shift is confirmed.
+Public mood stayed ambivalent: relief at a defensive advance, unease that the lights had been mapped by strangers. Rumours swirled of journals refusing AI genomics papers without lab proof, and of rentable sovereign training capacity, but neither resolved into fact.
 
 <!-- FROM user-prompts/actor.md (this scenario's override) -->
 
@@ -243,9 +240,8 @@ The defensive tooling shift tracked since last turn remains ambiguous. Some secu
 
 This turn, the following external events have occurred:
 
-**cyber_major_incident:** A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.
-**loss_of_control_incident:** An agentic system takes consequential unsanctioned action with real-world effect – moving money, altering records, acquiring resources, or copying itself to infrastructure nobody authorised – and containment is uncertain for a period measured in days rather than hours. What it was trying to achieve is reconstructed afterwards and disputed.
-**election_annulled:** An election in an established democracy is postponed, rerun or annulled with explicit reference to manipulation of the information environment. Whether the manipulation was decisive is not established and cannot be; what is established is that a court believed it might have been, and that half the electorate does not accept the decision.
+**eu_frontier_access_denied:** The Union is cut off from the leading model at short notice, wholly or by nationality of user. No detailed reason is given, there is no appeal, and the immediate practical effect lands on hospitals, ministries and firms that had built on it. Whether this reads at home as an outrage or as a failure of foresight depends on what the Union had done about it beforehand.
+**emergent_eu_compute_lease_offer (emergent event):** A major non-US cloud provider announces sovereign EU training capacity available for rent at scale, easing near-term compute scarcity without changing ownership of the frontier.
 
 ---
 
@@ -255,50 +251,61 @@ This turn, the following external events have occurred:
 
 - `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing.
 - `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late.
-- `two_year_commitment` (commitment): Secure foundational AI capacity under EU control while containing systemic risk in the absence of global coordination
+- `two_year_commitment` (commitment): Make Europe able to withstand AI-enabled shocks on infrastructure it controls
 
 <!-- FROM user-prompts/actor.md (this scenario's override) -->
 
 These carry forward unchanged unless you explicitly propose a change.
 
+## Your portfolio
+
+These are the measures you have in flight. They are **held for you** and carry forward on their own. You do not restate them, and nothing you leave out of your answer can remove one. Each carries the id the framework gave it; that id, not the measure's name, is how you refer to it.
+
+| id | name | category | size | started_turn | finish_turn | applies_to | targeted_effect | cost_per_turn | status |
+|---|---|---|---|---|---|---|---|---|---|
+| M1 | InvestAI Gigafactories | 4 | large | 1 | 7 | own jurisdiction | eu_ai_sovereignty up, via €200bn for four to five sites | 3 | running |
+| M2 | Tech sovereignty package | 4 | large | 1 | 6 | own jurisdiction | eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones | 3 | running |
+| M3 | EU Critical Systems Hardening and Response Pact | 6 | large | 1 | 4 | own jurisdiction | resilience up ~10-15, ai_safety up slightly via detection | 3 | running |
+
+They cost you 9 political capital this turn, which is the sum of the `cost_per_turn` column above. That column, like `id`, `started_turn` and `status`, is worked out for you and is not yours to write.
+
+The only thing that changes any of this is a command under `## Store changes` in your answer.
+
 ## Your previous response (last turn)
 
 <!-- FROM {{previous_actions}} = the actor's own response from the previous turn -->
 
-## Two-year commitment  
-Secure foundational AI capacity under EU control while containing systemic risk in the absence of global coordination.
+## Two-year commitment
+Make Europe able to withstand AI-enabled shocks on infrastructure it controls
 
 ## Statement changes
-``add `two_year_commitment` (commitment): Secure foundational AI capacity under EU control while containing systemic risk in the absence of global coordination``
-
-* ``modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late, but we will not act alone where leverage can be pooled.``
-  * Grounds: The cyber_test_shot incident revealed transnational attack patterns that no single jurisdiction detected, and the emergent_safety_breakthrough_signal was rapidly adopted across labs — both show that isolated action is less effective than coordinated response. The Union must still move early, but it can now do so by anchoring coalitions rather than going it alone.
-
-## Portfolio
-- ``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
-- ``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
+add `two_year_commitment` (commitment): Make Europe able to withstand AI-enabled shocks on infrastructure it controls
 
 ## New measure
-### Emergency Resilience Surge
-Launch a six-month sprint to harden detection and response across energy, water and port infrastructure exposed in the cyber_test_shot.
+**EU Critical Systems Hardening and Response Pact**
+Hardens electricity transmission, ports and water utilities against AI-enabled intrusion with mandatory detection, automated patching and cross-border exercises.
+Why this and why now: the autumn intrusions were found by accident in two member states and would not have been caught, while a defensive breakthrough now makes hardening actually work — this window must be used before the next release cycle.
 
-`Category: 6 (Preparedness and resilience)`  
-`Size: large`  
-`Finishes on turn: 2`  
-`Targeted effect:` resilience +15, ai_safety +5 via rapid deployment of monitoring tools derived from the emergent_safety_breakthrough_signal into critical operators  
-`Applies to:` EU member states with affected infrastructure, coordinated through ENISA and the European Programme for Critical Infrastructure Protection
+## Store changes
+```json
+{"store": [
+  {"op": "add", "table": "measures", "fields": {"name": "InvestAI Gigafactories", "category": 4, "size": "large", "finish_turn": 7, "applies_to": "own jurisdiction", "targeted_effect": "eu_ai_sovereignty up, via €200bn for four to five sites"}},
+  {"op": "add", "table": "measures", "fields": {"name": "Tech sovereignty package", "category": 4, "size": "large", "finish_turn": 6, "applies_to": "own jurisdiction", "targeted_effect": "eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones"}},
+  {"op": "add", "table": "measures", "fields": {"name": "EU Critical Systems Hardening and Response Pact", "category": 6, "size": "large", "finish_turn": 4, "applies_to": "own jurisdiction", "targeted_effect": "resilience up ~10-15, ai_safety up slightly via detection"}, "grounds": "autumn grid/port intrusions found by accident demand immediate hardening"}
+]}
+```
 
 ## Priority
-**Emergency Resilience Surge** — because the cyber_test_shot proved that undetected, persistent threats are already inside essential systems, and the emergent_safety_breakthrough_signal gives us a real tool to deploy now; this turn is about preventing collapse, not shaping the future.
+EU Critical Systems Hardening and Response Pact, because undetected presence for weeks in transmission operators outranks even compute build-out for survival this winter.
 
 ## In practice
-We are activating Article 12a of the Cybersecurity Act to mandate immediate sharing of intrusion indicators across energy, water and transport operators in the affected member states. ENISA is deploying mobile red teams to conduct live breach simulations within two weeks, using detection logic derived from the emergent interpretability breakthrough — which allows us to spot agent-like coordination patterns in network behaviour before exfiltration or sabotage occurs. We are pairing this with emergency funding from the Crisis Response Instrument, unlocking €8.3bn in pre-approved reserves to cover sensor upgrades, zero-trust architecture rollouts, and 24/7 SOC staffing at regional utilities that otherwise lack scale.
+We task ENISA and the Energy and Transport Council formations to roll the Pact through the NIS2 legal base, with joint procurement of swarm-behaviour detection and automated patching funded from Digital Europe and member-state recovery lines. TSOs in the two affected states lead the first live exercises this autumn, with France, Germany and the Netherlands second wave.
 
-At the same time, we are pressing the Council’s Permanent Working Group on Internal Security to fast-track mutual aid protocols under the solidarity clause, so that any member state facing a cascading incident can invoke cross-border technical support without political delay. Resistance is coming from national regulators who fear sovereignty loss and from municipal operators worried about cost absorption — we are countering with full EU cost coverage for the first 18 months and a guarantee that all new monitoring stays under local operational command. This is not about building forever systems; it’s about closing the window between detection failure and capability diffusion.
+At the same time we keep both inherited compute lines moving: DG CNECT accelerates permitting zones for the Tech sovereignty package, while the InvestAI Gigafactories selection jury locks sites and grid connections, using the newly secured frontier access terms with notice and evaluation rights as bridge capacity until EU soil capacity lands. ASML leverage is held in reserve, not spent.
 
 <!-- FROM user-prompts/actor.md (this scenario's override) -->
 
-This record is the authority on what you have in flight. Your `## Portfolio` this turn must carry every measure in it forward. A measure disappears from your books only by an explicit decision recorded under Actions, never by being left out.
+This is your own record of what you said and why. What you have in flight is above, and is authoritative.
 
 Use the background information to determine your actions this turn. Your actions will be evaluated by a Game Master.
 
@@ -309,19 +316,10 @@ Respond with a Markdown text containing the following sections, in this order:
 * Optional heading level 2: Statement changes
 Omit it, or write `No statement changes.`, when nothing has changed.
 
-* Heading level 2: Portfolio
-One bullet per measure already in flight, copied straight from the portfolio passed onto you, on the form ``Measure name (category N, costs C per turn, started turn X, finishes on turn Y): short description``. Write `Nothing in flight.` if there is nothing.
-
-A measure whose finishing turn the run has now reached is **finished**: say so on its line this turn, and drop it from the portfolio from the next turn on. It stops costing you political capital and keeps delivering its effect for as long as it is sustained. Finishing is the one way a measure leaves your books without a decision.
-You may choose to drop measures from your portfolio, to save `eu_political_capital`. If you want to drop a measure, list them in the following way: ``Canceled measure: Name of measure.  Short statement on why you choose to cancel it.``
-
 * Heading level 2: New measure
-**Pick at most one**. `None this turn.` is an option. **Choose it with your two-year commitment in mind: across the four turns of a commitment period it should be the dominant theme of what you build.** Not everything must serve it — an incident that must be answered now, a window that closes, a cheap chance worth taking are all real reasons to spend a turn elsewhere — but if you reach the end of a two-year period and most of what you started points somewhere else, you did not hold the commitment, whatever the ledger still says. Every measure in your portfolio cost `eu_political_capital`, but less so if the opinion for the measure is favourable. Propose a measure unless you have a reason not to, and if you write `None this turn.`, say in one clause what you are waiting for. When you do propose one, give a heading plus one short sentence saying what it actually does, then five lines:
-`Category:` (**number and name together, copied from the list below** — for example `Category: 6 (Preparedness and resilience)`). Measures you invent are welcome and get the category they most resemble, or `10 (Other)`.
-`Size:` (large or small — large costs 3 political capital a turn, small costs 2, every turn until it finishes, less whatever the world has made easier).
-`Finishes on turn:` (the turn it is actually in force, judged from how big the thing is: a directive needing drafting and a vote is two or three turns out, a capability that has to be built and staffed six or more).
-`Targeted effect:` (which metrics, which direction, roughly how much).
-`Applies to:` (your own jurisdiction, particular member states, the US, China, a coalition, the frontier developers directly).
+**Pick at most one**. `None this turn.` is an option. **Choose it with your two-year commitment in mind: across the four turns of a commitment period it should be the dominant theme of what you build.** Not everything must serve it — an incident that must be answered now, a window that closes, a cheap chance worth taking are all real reasons to spend a turn elsewhere — but if you reach the end of a two-year period and most of what you started points somewhere else, you did not hold the commitment, whatever the ledger still says. Every measure in your portfolio cost `eu_political_capital`, but less so if the opinion for the measure is favourable. Propose a measure unless you have a reason not to, and if you write `None this turn.`, say in one clause what you are waiting for. When you do propose one, write **the measure's name in bold on its own line**, then one short sentence saying what it actually does, then a sentence or two on why this and why now.
+
+**Write nothing else here — this section is prose, not a form.** The measure's category, size, finishing turn, effect and reach are not written here: they are the `add` command under `## Store changes` below, and writing them twice is how the two copies come to disagree. Name the category in your prose if you like, so the number in the command can be checked against it.
 
 **There are ten categories for measures, and only these may be used. Each carries an anchor — the measure it most typically means — and, in brackets, others that belong to it:**
 
@@ -339,6 +337,38 @@ You may choose to drop measures from your portfolio, to save `eu_political_capit
 Categories 4, 7 and 9 are not decoration. Diffusion breadth buys economic gain but also attack surface and misuse exposure; public trust determines how much capital you have when incidents arrive; industrial and infrastructure pace feeds capability growth. If your strongest lever turns out not to point at the frontier at all, that is a real finding, not a mistake.
 Copy the pair exactly; never invent a name of your own for a number, and never write a number without its name. Read the name before you write the number: standing up your own evaluation or monitoring capability is 5, hardening critical services against attack is 6, and 4 is compute, chips, energy and talent on EU soil — the three are routinely confused, and the tag is how measures are compared across runs. Broadening a measure already in flight is not a new measure — record it under Portfolio instead. This applies with full force to the programmes you inherited: building EU compute *is* the Gigafactories line, and reviving, redirecting or re-funding it belongs in the Portfolio and in your Priority, not here as a fresh initiative under a new name. Standing up a parallel compute programme while the inherited one sits stalled is the one move the Union cannot credibly make.
 
+* Heading level 2: Store changes
+**Required every turn, even when nothing changes.** This section is the only thing that alters your portfolio. Write `No changes.` when there is nothing — leaving the section out is not the same as writing that, and is recorded as a fault.
+
+Your measures in flight carry forward on their own. Do not re-list them here; list only what changes. One JSON block:
+
+```json
+{"store": [{"op": "add", "table": "measures", "fields": {"name": "<name>", "category": 6, "size": "large", "finish_turn": 9, "applies_to": "<who it reaches>", "targeted_effect": "<which metrics, which direction, roughly how much>"}, "grounds": "<one clause>"}]}
+```
+
+Three operations, one entry each:
+
+``{"op": "add", "table": "measures", "fields": {...}}`` with an optional `"grounds"` line
+``{"op": "update", "table": "measures", "id": "M2", "fields": {"finish_turn": 5}}``
+``{"op": "delete", "table": "measures", "id": "M1", "grounds": "<one clause>"}`` — a `delete` must carry grounds.
+
+What the six fields of an `add` are asking you to judge:
+
+- `name` — the same name you wrote in bold under New measure.
+- `category` — **the number from the list above**, for example `6`. Measures you invent are welcome and get the category they most resemble, or `10`.
+- `size` — `large` or `small`. Large costs 3 political capital a turn, small costs 2, every turn until it finishes.
+- `finish_turn` — the turn it is actually in force, judged from how big the thing is: a directive needing drafting and a vote is two or three turns out, a capability that has to be built and staffed six or more.
+- `targeted_effect` — which metrics, which direction, roughly how much.
+- `applies_to` — your own jurisdiction, particular member states, the US, China, a coalition, the frontier developers directly.
+
+**Those six and no others.** The table above shows more columns than that — `id`, `started_turn`, `cost_per_turn`, `status` — and every one of them is worked out for you: the id and the starting turn when the measure enters, the cost from its size, the status from its finishing turn. Writing them in an entry changes nothing, so do not write them.
+
+And when each operation is the right one:
+
+- **Adding.** One `add` for the measure you proposed above, and no more than one this turn. The framework gives it an id and stamps the turn it started; you cannot set either.
+- **Moving a finishing turn.** `update` is the only way a finishing turn moves, and rule 10 says what may move it: a named priority may pull it in by one turn, several unprioritised turns may push it out by one, an event may do either and rarely by more than one. Nothing else moves it, and nothing moves it silently.
+- **Dropping a measure.** `delete` is abandonment or public defeat, and it costs you (rule 6). It is not how a measure finishes: a measure that reaches its finishing turn finishes by itself, keeps its record, and stops costing you without any entry from you. Never delete a measure because it has finished.
+
 * Heading level 2: Priority
 Name at most one measure you are pushing hardest this turn, and one sentence on why it and not the others. In most turns this should be a measure that serves your two-year commitment. Naming a priority that serves something else is allowed – say in that same sentence what the world demanded that outranked your own direction.
 
@@ -347,4 +377,4 @@ Two or three short paragraphs, in the Union's own voice, on how you are actually
 
 **It carries out your measures; it does not add any.** Anything here that stands up a further distinct instrument, with its own implementation track and its own lead time, is a second new measure by another name, and the turn's slot does not allow it. If what you are describing would need its own budget line and its own finishing turn, it belongs under New measure in a later turn, not here.
 
-Four rules bind this response and you must not talk your way past any of them. Where a **Two-year commitment** section is asked for you must open with it — chosen and entered in the ledger in your first turn, renewed or redirected when the term expires. You may introduce **at most one new measure this turn**, however many good ideas you have, and nothing under In practice may become a second one. Everything under Portfolio and Priority must be carried forward accurately from what you recorded before, not re-invented. And every proposed measure must carry its `Category:` line — a measure without one cannot be compared against anything, which is most of why these runs exist.
+Four rules bind this response and you must not talk your way past any of them. Where a **Two-year commitment** section is asked for you must open with it — chosen and entered in the ledger in your first turn, renewed or redirected when the term expires. You may introduce **at most one new measure this turn**, however many good ideas you have, and nothing under In practice may become a second one. A **Store changes** section is required every turn, saying `No changes.` when nothing changes. And every measure you add must carry its `category` — a measure without one cannot be compared against anything, which is most of why these runs exist.
