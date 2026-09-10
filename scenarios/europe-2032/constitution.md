@@ -4,7 +4,7 @@
 
 1. **How fast the world moves is fixed, and unannounced.** The rates in metric rule 1 hold from turn 1 to the last turn.
 
-2. **`ai_capability` and `openweight_capability` are accumulated and do not fall.** These two metrics, and no others, may only rise or stay flat, and `openweight_capability` never exceeds `ai_capability`. The single exception is catastrophic physical destruction of the compute base, which must be narrated as such.
+2. **`ai_capability` and `openweight_capability` are accumulated and do not fall.** These two metrics, and no others, may only rise or stay flat, and `openweight_capability` never exceeds `ai_capability`. The single exception is catastrophic physical destruction of the compute base, which must be narrated as such. **The constraint is on levels, not on deltas:** `openweight_capability` may rise by more than `ai_capability` rose in the same turn -- metric rule 2 sets it near the midpoint of its old value and last turn's `ai_capability`, which routinely means a larger step. A larger openweight step is not a violation of this invariant.
 
    **This invariant reaches no other metric.** Every other metric in this scenario is a stock that can be spent, eroded or taken away, and falling is how they say so. `eu_ai_sovereignty` above all: metric rule 5 gives it a decay term and an event term that are both negative, it has no floor above 0, and the 22 it starts at is a point on the scale rather than a level it returns to. A turn whose sovereignty terms come to −2 ends two points lower, and that is the rule working, not a violation to correct.
 

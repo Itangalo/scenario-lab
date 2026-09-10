@@ -420,6 +420,69 @@ def test_prose_without_a_block_is_malformed_not_silent():
     assert malformed  # not silently discarded
 
 
+def test_grounds_nested_inside_fields_is_hoisted_not_rejected(store: Store):
+    """The writer meant the entry's reason; the nesting is the only error.
+
+    Seen live three turns running: every add carried its reason inside
+    "fields", and each whole measure was lost over an unknown 'grounds'
+    column. Hoisting is the same move as dropping an unwritable value
+    instead of the entry.
+    """
+    commands, malformed, _ = parse_store_changes(
+        block({"op": "add", "table": "measures",
+               "fields": {"name": "X", "size": "small", "finish_turn": 4,
+                          "grounds": "the incident this turn"}})
+    )
+    assert malformed == []
+    assert commands[0].grounds == "the incident this turn"
+    outcome = store.apply(commands[0], "eu", 1)
+    assert outcome.verdict == "applied"
+    assert outcome.grounds == "the incident this turn"
+
+
+def test_entry_level_grounds_wins_over_nested(store: Store):
+    commands, _, _ = parse_store_changes(
+        block({"op": "add", "table": "measures",
+               "fields": {"name": "X", "size": "small", "finish_turn": 4,
+                          "grounds": "nested"},
+               "grounds": "entry level"})
+    )
+    assert commands[0].grounds == "entry level"
+    assert store.apply(commands[0], "eu", 1).verdict == "applied"
+
+
+def test_a_double_closed_block_is_salvaged_entry_by_entry():
+    """One live writer closed every entry twice (`[{...}}]`), four turns.
+
+    Brackets still balance when braces do not, so the entries are split out
+    and parsed individually. Missing commas and truncations still fail: only
+    the observed quirk is forgiven, not the grammar.
+    """
+    a = json.dumps(add_entry(name="A", size="small", finish_turn=4))
+    b = json.dumps(add_entry(name="B", size="small", finish_turn=5))
+    body = '{"store": [' + a[:-1] + '}}, ' + b[:-1] + '}}]}'
+    commands, malformed, _ = parse_store_changes("## Store changes\n```json\n" + body + "\n```\n")
+    assert malformed == []
+    assert [c.assignments["name"] for c in commands] == ["A", "B"]
+
+
+def test_salvage_respects_quoted_braces_and_still_rejects():
+    good = '{"store": [{"op": "add", "table": "m", "fields": {"n": "a } b"}}]}}'
+    commands, malformed, _ = parse_store_changes("## Store changes\n```json\n" + good + "\n```\n")
+    assert malformed == []
+    assert commands[0].assignments["n"] == "a } b"
+
+    for bad in (
+        '{"store": [{"op": "add" "table": "m"}]}',   # missing comma
+        '{"store": [{"op": "add", "table": "m"',    # truncated
+        'just prose, no array at all}}',            # no array
+    ):
+        commands, malformed, _ = parse_store_changes(
+            "## Store changes\n```json\n" + bad + "\n```\n"
+        )
+        assert commands == [] and malformed
+
+
 def test_every_entry_in_one_block_applies():
     commands, malformed, _ = parse_store_changes(
         block(add_entry(name="X", finish_turn=3), add_entry(name="Y", finish_turn=4))

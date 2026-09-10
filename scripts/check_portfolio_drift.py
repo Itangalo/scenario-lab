@@ -257,20 +257,59 @@ def audit_charges(run_dirs: list[Path], actor: str, limit: int) -> dict[str, Any
                      if "PORTFOLIO CHARGE" in l.upper()]
             if not lines:
                 continue
-            head, _, tail = lines[-1].rpartition("=")
-            written = [int(x) for x in re.findall(r"[\u2212-](\d+)", head)]
+            line = lines[-1]
+            # New line shapes since the store redesign, all of which the old
+            # parser misread as faults: a two-total line ("= −12 + priority
+            # M5 −1 = −13"), a void priority under rule 10 ("priority −1 not
+            # charged (capital 7 below 20, ...)"), and "no measures in
+            # flight −0". Terms are read before the first "=" so an
+            # intermediate total never counts as a term.
+            first, _, _rest = line.partition("=")
+            written = [int(x) for x in re.findall(r"[\u2212-](\d+)", first)]
             if not written:
                 continue
-            stated = re.findall(r"(\d+)", tail)
-            stated_total = int(stated[0]) if stated else None
-            # The priority is a further cost the framework cannot compute: it
-            # does not know which measure was named.
-            priority = 1 if "priorit" in head.lower() else 0
-            measures = sum(written) - priority
+            void = any(
+                phrase in line.lower()
+                for phrase in ("not charged", "void", "ineffective", "no effect",
+                               "no cost", "has no effect")
+            )
+            # The priority term is the number attached to the priority
+            # mention itself -- charged (−1) in the normal shape, written-
+            # but-void (−1) or written-as-zero under rule 10. Measures
+            # charged exclude it either way, since a zero contributes
+            # nothing. Read off the mention, not the line's last number: a
+            # trailing "−0 only" belongs to the total, not the priority.
+            has_priority_term = "priorit" in first.lower()
+            pval = 0
+            if has_priority_term:
+                pmatch = re.search(r"priorit[^\n=]*?[\u2212-](\d+)", first)
+                pval = int(pmatch.group(1)) if pmatch else 0
+            measures = sum(written) - pval
+            totals = [int(x) for x in re.findall(r"=\s*[\u2212-](\d+)", line)]
+            # A void line may state its corrected total without "=" ("...
+            # ineffective ... so charged −3 only").
+            for extra in re.findall(r"charged\s*[\u2212-](\d+)", line.lower()):
+                if not totals or totals[-1] != int(extra):
+                    totals.append(int(extra))
+            if not totals:
+                continue
 
             checked += 1
             matched = measures == expected
-            adds_up = stated_total == sum(written)
+            # The stated total shows every term in the normal shape, but drops
+            # a written-but-void nonzero priority term. A two-total line
+            # states an intermediate total first ("= −12 + priority M5 −1 =
+            # −13", or "= −4, priority ineffective ... so charged −3 only"):
+            # the intermediate shows all terms, the final applies the rule.
+            if len(totals) == 1:
+                adds_up = totals[0] == sum(written) - (pval if void and pval else 0)
+            else:
+                adds_up = totals[0] == sum(written)
+                if void:
+                    adds_up = adds_up and totals[-1] == totals[0] - pval
+                else:
+                    final_priority = 1 if "priorit" in line.lower() else 0
+                    adds_up = adds_up and totals[-1] == totals[0] + final_priority
             terms_ok += matched
             arith_ok += adds_up
             if not (matched and adds_up) and len(examples) < limit:
@@ -278,7 +317,7 @@ def audit_charges(run_dirs: list[Path], actor: str, limit: int) -> dict[str, Any
                 if not matched:
                     faults.append(f"charged {measures}, store says {expected}")
                 if not adds_up:
-                    faults.append(f"terms sum to {sum(written)}, line states {stated_total}")
+                    faults.append(f"terms sum to {measures}, line states {totals}")
                 examples.append(f"{rd.name} turn {t}: " + "; ".join(faults))
 
     return {"checked": checked, "terms_ok": terms_ok, "arith_ok": arith_ok,

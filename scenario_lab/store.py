@@ -1096,6 +1096,19 @@ def _entry_to_command(entry: object, index: int) -> StoreCommand:
         fields = {}
     if not isinstance(fields, dict):
         raise StoreCommandError(f"{where}: 'fields' must be an object")
+    # A writer that nests entry-level keys inside "fields" told us what it
+    # meant: hoist "grounds" rather than rejecting the entry as an unknown
+    # column. Seen live, three turns running, where every add carried its
+    # reason inside "fields" and the whole measure was lost over it -- the
+    # same shape as the unwritable-column failure that already taught us to
+    # drop the value instead of the entry. An entry-level "grounds" wins.
+    nested_grounds = fields.pop("grounds", None)
+    if (not isinstance(entry.get("grounds"), str) or not entry["grounds"].strip()):
+        if isinstance(nested_grounds, str) and nested_grounds.strip():
+            entry = {**entry, "grounds": nested_grounds}
+            grounds = nested_grounds.strip()
+        elif nested_grounds is not None:
+            raise StoreCommandError(f"{where}: 'grounds' must be text")
     adjust_raw = entry.get("adjust")
     if adjust_raw is not None and fields:
         raise StoreCommandError(
@@ -1145,7 +1158,22 @@ def _commands_from_candidates(
         try:
             document = json.loads(candidate)
         except json.JSONDecodeError as err:
-            malformed.append(f"unparseable JSON block: {err}"[:200])
+            # One live writer closed every entry twice (`[{...}}]`), four
+            # turns running. A stray `}` at depth zero -- one that no open
+            # brace owns -- is skipped and the entries still parsed
+            # individually; anything else stays malformed. Missing commas and
+            # truncations still fail loudly: only the observed quirk is
+            # forgiven, not the grammar.
+            salvaged = _salvage_entries(candidate)
+            if salvaged is None:
+                malformed.append(f"unparseable JSON block: {err}"[:200])
+                continue
+            entries = salvaged
+            for index, entry in enumerate(entries):
+                try:
+                    commands.append(_entry_to_command(entry, index))
+                except StoreCommandError as err:
+                    malformed.append(str(err))
             continue
         if isinstance(document, dict) and isinstance(document.get("store"), list):
             entries = document["store"]
@@ -1162,6 +1190,99 @@ def _commands_from_candidates(
             except StoreCommandError as err:
                 malformed.append(str(err))
     return commands, malformed
+
+
+def _salvage_entries(candidate: str) -> Optional[list[object]]:
+    """Split a brace-unbalanced block into its entry objects, if possible.
+
+    One live writer closed every entry twice (`[{...}}]`), four turns
+    running. Brackets still balance when braces do not, so the array is cut
+    out by bracket matching and its elements split by brace scanning; a `}`
+    owned by no open brace is skipped. Anything else -- missing commas,
+    truncations, no array at all -- returns None and stays malformed.
+    String-aware throughout: braces inside quoted values never count.
+    """
+    inner = _array_inner(candidate)
+    if inner is None:
+        return None
+    objects: list[str] = []
+    depth = 0
+    start: Optional[int] = None
+    in_string = False
+    escaped = False
+    i = 0
+    n = len(inner)
+    while i < n:
+        char = inner[i]
+        if in_string:
+            if escaped:
+                escaped = False
+            elif char == "\\":
+                escaped = True
+            elif char == '"':
+                in_string = False
+        elif char == '"':
+            in_string = True
+        elif char == "{":
+            if depth == 0:
+                start = i
+            depth += 1
+        elif char == "}":
+            if depth == 0:
+                # Owned by nothing. Skip it only for the double-close shape:
+                # followed by another entry, the array end, or nothing.
+                rest = inner[i + 1:].lstrip()
+                if rest.startswith((",", "]")) or not rest:
+                    i += 1
+                    continue
+                return None
+            depth -= 1
+            if depth == 0 and start is not None:
+                objects.append(inner[start: i + 1])
+                start = None
+        i += 1
+    if not objects or depth != 0 or in_string:
+        return None
+    entries: list[object] = []
+    try:
+        for text in objects:
+            entries.append(json.loads(text))
+    except json.JSONDecodeError:
+        return None
+    return entries
+
+
+def _array_inner(candidate: str) -> Optional[str]:
+    """The text inside the first balanced ``[...]``, string-aware."""
+    in_string = False
+    escaped = False
+    depth = 0
+    start: Optional[int] = None
+    i = 0
+    n = len(candidate)
+    while i < n:
+        char = candidate[i]
+        if in_string:
+            if escaped:
+                escaped = False
+            elif char == "\\":
+                escaped = True
+            elif char == '"':
+                in_string = False
+        elif char == '"':
+            in_string = True
+        elif char == "[":
+            if depth == 0:
+                start = i
+            depth += 1
+        elif char == "]":
+            if depth == 0:
+                return None
+            depth -= 1
+            if depth == 0 and start is not None:
+                return candidate[start + 1: i]
+        i += 1
+    return None
 
 
 def commands_from_documents(
