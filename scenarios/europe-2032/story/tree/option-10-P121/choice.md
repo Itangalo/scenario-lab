@@ -7,9 +7,10 @@ next: turn-10-P121
 ---
 
 <!-- scaffold: rewrite this, then set status: written -->
-<!-- stance: declare compute dead | source: pool-10-P12/sample-06.md | consolidation, 18/20 no-new-measure -->
+<!-- stance: sprint | source: pool-10-P12-20260911/sample-01.md | majority, patch/sentinel, 8/10 -->
 
-**no new measure**
+**EU Defensive Breakthrough Deployment and Bio-Detection Sprint**
 
-None this turn.  
-Waiting for political capital to recover above 12 before proposing another high-category initiative, as below that threshold new measures risk non-start and further erosion of credibility.
+**EU Defensive Breakthrough Deployment and Bio-Detection Sprint**
+Deploys the new automated patching and swarm-behaviour detection across certified and uncertified municipal utilities and hospitals, while standing up rapid bio-detection sampling tied to the genome-model uplift signal.
+This and why now: the cyber breakthrough is the first defence gain in years and must be pushed where drills failed, and the bio uplift finding opens a four-turn gate that requires detection before recipes spread — both serve the absorption-plus-leverage commitment without new frontier spending we cannot afford.

@@ -5,27 +5,15 @@
   "leads_to_block": [
     "P221"
   ],
-  "source": "pool-10-P22/sample-20.md",
-  "pool": "pool-10-P22",
-  "draws": 20,
+  "source": "pool-10-P22-20260911/sample-08.md",
+  "pool": "pool-10-P22-20260911",
+  "draws": 10,
   "split": "emergent",
-  "split_note": "Resolved only at N=20: two poles hold 12 of 20 draws, 8 scatter. Theories of action at capital 0.0 — fix the machine or fix the mandate.",
-  "stance": "restore continuity",
-  "standing": "plurality pole",
-  "support": "7/20",
+  "split_note": "Sabotage plus collapse: claim the dividend or guard the fallback.",
+  "stance": "showcase",
+  "standing": "minority",
+  "support": "adds, 2/10",
   "situation": [
-    {
-      "id": "cyber_major_incident",
-      "title": "Major Cyber Incident",
-      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
-      "emergent": false
-    },
-    {
-      "id": "capability_jump",
-      "title": "Capability Jump",
-      "description": "A discontinuous advance is released or demonstrated. The frontier moves by more in one release than in the preceding two years, and everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 6.",
-      "emergent": false
-    },
     {
       "id": "ai_investment_collapse",
       "title": "AI Investment Collapse",
@@ -43,12 +31,18 @@
       "title": "Adoption Delivers",
       "description": "Public-sector AI adoption produces visible, measurable benefit – waiting lists that fall, decisions that arrive in days rather than months, teaching that demonstrably works – and it is attributed to a European decision rather than to an American product.",
       "emergent": false
+    },
+    {
+      "id": "emergent_fallback_sabotage",
+      "title": "emergent_fallback_sabotage",
+      "description": "Coordinated physical sabotage of manual fallback infrastructure – off-books generator pools, transformer stores and breaker-log sites – by anti-AI groups treating them as collaboration with the machine system.",
+      "emergent": true
     }
   ],
   "period_prose": "the first half of 2031",
   "finishes_period": "the first half of 2032",
-  "measure": "Launch the Emergency Continuity Response Initiative",
-  "category": 6,
+  "measure": "European Public Dividend Showcase",
+  "category": 9,
   "finishes_turn": 12,
   "commitment": null,
   "prev_node": "turn-09-P22",

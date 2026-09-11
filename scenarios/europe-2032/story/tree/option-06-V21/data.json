@@ -5,27 +5,33 @@
   "leads_to_block": [
     "V21"
   ],
-  "source": "pool-06-V2/sample-14.md",
-  "pool": "pool-06-V2",
-  "draws": 30,
-  "split": "ends-split",
-  "split_note": "Every draw fuses the same two halves; the presentable split is the two ends, with a real assurance middle (10/30) that is the shared thesis rather than a third option.",
-  "stance": "build the core",
-  "standing": "majority pole",
-  "support": "14/30 sovereignty-led",
+  "source": "pool-06-V2-20260911/sample-02.md",
+  "pool": "pool-06-V2-20260911",
+  "draws": 10,
+  "split": "emergent",
+  "split_note": "Cyberattack plus defection at capital 4: repair visibly or retrench to the compact.",
+  "stance": "repair",
+  "standing": "minority",
+  "support": "cat6, 3/10",
   "situation": [
     {
       "id": "cyber_major_incident",
       "title": "Major Cyber Incident",
       "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
       "emergent": false
+    },
+    {
+      "id": "member_state_defection",
+      "title": "Member State Defection",
+      "description": "A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken. It is defended at home as pragmatism and read everywhere else as the Union being unable to hold its own line.",
+      "emergent": false
     }
   ],
   "period_prose": "the first half of 2029",
-  "finishes_period": "the second half of 2030",
-  "measure": "Launch Sovereign AI Core Programme",
-  "category": 4,
-  "finishes_turn": 9,
+  "finishes_period": "the first half of 2030",
+  "measure": "EU Cyber Emergency Repair Cell",
+  "category": 6,
+  "finishes_turn": 8,
   "commitment": null,
   "prev_node": "turn-05-V2",
   "next_node": [

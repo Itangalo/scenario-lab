@@ -12,9 +12,9 @@
     "decided": "the second half of 2028"
   },
   "provenance": {
-    "run": "run-20260904-230752",
-    "seed": 10624122088920592955,
-    "turn_dir": "runs/run-20260904-230752/turn-05",
+    "run": "run-20260910-224841-01",
+    "seed": 16469017358909379730,
+    "turn_dir": "runs/run-20260910-224841-01/turn-05",
     "pinned_turn": null,
     "option_file": "turn-01/option-02-1.md",
     "path_rep": 1,
@@ -23,57 +23,57 @@
   "metrics": {
     "ai_capability": {
       "label": "AI capability",
-      "value": 61.0,
-      "previous": 59.0,
-      "delta": 2.0,
+      "value": 61.5,
+      "previous": 60.0,
+      "delta": 1.5,
       "min": 0.0,
       "max": 100.0
     },
     "openweight_capability": {
       "label": "Open-weight capability",
-      "value": 48.0,
-      "previous": 46.0,
-      "delta": 2.0,
+      "value": 57.8,
+      "previous": 55.5,
+      "delta": 2.3,
       "min": 0.0,
       "max": 100.0
     },
     "ai_safety": {
       "label": "AI safety",
-      "value": 23.0,
-      "previous": 22.0,
-      "delta": 1.0,
+      "value": 24.0,
+      "previous": 26.0,
+      "delta": -2.0,
       "min": 0.0,
       "max": 100.0
     },
     "resilience": {
       "label": "Resilience",
-      "value": 45.0,
-      "previous": 42.0,
-      "delta": 3.0,
+      "value": 49.0,
+      "previous": 45.0,
+      "delta": 4.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
+      "value": 16.0,
+      "previous": 16.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
       "value": 24.0,
       "previous": 25.0,
       "delta": -1.0,
       "min": 0.0,
       "max": 100.0
     },
-    "eu_political_capital": {
-      "label": "EU political capital",
-      "value": 40.0,
-      "previous": 39.0,
-      "delta": 1.0,
-      "min": 0.0,
-      "max": 100.0
-    },
     "public_sentiment": {
       "label": "Public sentiment",
-      "value": 34.0,
-      "previous": 32.0,
-      "delta": 2.0,
+      "value": 36.0,
+      "previous": 37.0,
+      "delta": -1.0,
       "min": 0.0,
       "max": 100.0
     }
@@ -82,41 +82,115 @@
     {
       "id": "election_retrenchment",
       "title": "The 2028 US Presidential Election – Retrenchment",
-      "description": "The anti-AI backlash decides the election and the incoming administration turns inward. Data centre moratoriums, restrictions on AI in schools, courts and hiring, job guarantees and direct transfers funded by the sector, and an abrupt loss of appetite for anything that looks like helping the industry. American frontier progress slows for the first time for reasons that are neither compute nor capital. For the Union the pressure eases and the window for building its own position widens – but the partner it has been depending on is now less capable, less predictable and preoccupied, and whoever is second in the world gains ground while Washington argues with itself. Turn 5 settles only who won. Do not write any US_POSTURE line; metric rule 8 establishes the posture from turn 6 from the event record.",
+      "description": "The anti-AI backlash decides the election and the incoming administration turns inward. Data centre moratoriums, restrictions on AI in schools, courts and hiring, job guarantees and direct transfers funded by the sector, and an abrupt loss of appetite for anything that looks like helping the industry. American frontier progress slows for the first time for reasons that are neither compute nor capital. For the Union the pressure eases and the window for building its own position widens – but the partner it has been depending on is now less capable, less predictable and preoccupied, and whoever is second in the world gains ground while Washington argues with itself. Turn 5 settles only who won. Do not set any posture yourself; the Game Master sets the standing record from turn 6 from the event record.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "eval_anomaly_reports",
+      "title": "Evaluation Anomalies Escalate",
+      "description": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. Some call it a measurement artefact, some a PR stunt. It may be either, and it may be AI slipping out of our control. **This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.**",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "taiwan_tension_rise",
+      "title": "Taiwan Tension Rises",
+      "description": "Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion. Nothing that has not happened before, at a scale that is slightly harder to dismiss. **This is a precursor: it opens the Taiwan gate for the next 3 turns.**",
       "emergent": false,
       "pinned": false
     }
   ],
   "portfolio": [
     {
+      "name": "InvestAI Gigafactories",
+      "category": 4,
+      "cost": 3,
+      "start": 0,
+      "finish": 7,
+      "description": "eu_ai_sovereignty up, via €200bn for four to five sites",
+      "finished": false,
+      "status": "running",
+      "finish_period": "the second half of 2029",
+      "start_period": null
+    },
+    {
       "name": "Tech sovereignty package",
       "category": 4,
       "cost": 3,
-      "start": 1,
+      "start": 0,
       "finish": 6,
-      "description": "Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones",
+      "description": "eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones",
       "finished": false,
       "status": "running",
       "finish_period": "the first half of 2029",
+      "start_period": null
+    },
+    {
+      "name": "EU Critical Services Shield",
+      "category": 6,
+      "cost": 3,
+      "start": 1,
+      "finish": 4,
+      "description": "resilience up substantially, ai_safety indirectly via incident response",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2028",
       "start_period": "the second half of 2026"
     },
     {
-      "name": "Critical Infrastructure Resilience Sprint",
+      "name": "EU Swarm Defence Deployment",
       "category": 6,
-      "cost": 3,
-      "start": 5,
-      "finish": 6,
-      "description": "Launch a 12-month emergency hardening programme for energy, transport, and health systems against AI-driven cyberattacks, with mandatory audits, fallback protocols, and live red-teaming",
+      "cost": 2,
+      "start": 2,
+      "finish": 4,
+      "description": "resilience up, ai_safety up slightly via reduced cyber harm",
       "finished": true,
       "status": "finished",
+      "finish_period": "the first half of 2028",
+      "start_period": "the first half of 2027"
+    },
+    {
+      "name": "EU Incident Continuity Backstop",
+      "category": 6,
+      "cost": 2,
+      "start": 3,
+      "finish": 5,
+      "description": "resilience up to stop cascade, eu_political_capital protected from service failure",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the second half of 2028",
+      "start_period": "the second half of 2027"
+    },
+    {
+      "name": "EU Joint Threat and Bio-Surveillance Integration",
+      "category": 6,
+      "cost": 2,
+      "start": 4,
+      "finish": 6,
+      "description": "resilience up, ai_safety up slightly via shared telemetry and bio detection",
+      "finished": false,
+      "status": "running",
       "finish_period": "the first half of 2029",
+      "start_period": "the first half of 2028"
+    },
+    {
+      "name": "EU–Middle-Power Trusted Compute Compact",
+      "category": 8,
+      "cost": 2,
+      "start": 5,
+      "finish": 8,
+      "description": "eu_ai_sovereignty up, resilience up slightly via secured supply",
+      "finished": false,
+      "status": "new",
+      "finish_period": "the first half of 2030",
       "start_period": "the second half of 2028"
     }
   ],
   "cancelled": [],
-  "new_measure": "Systemic Integrity Watch",
-  "priority": "Critical Infrastructure Resilience Sprint",
-  "commitment": null,
+  "new_measure": "EU–Middle-Power Trusted Compute Compact",
+  "priority": "M6 EU Joint Threat and Bio-Surveillance Integration",
+  "commitment": "Secure verifiable safety and independent capacity so Europe is not defenceless as capabilities jump",
   "prev_node": "turn-04-V1",
   "next_node": null,
   "next_choice": [

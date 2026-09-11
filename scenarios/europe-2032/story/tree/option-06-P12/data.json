@@ -5,33 +5,33 @@
   "leads_to_block": [
     "P12"
   ],
-  "source": "pool-06-P1/sample-09.md",
-  "pool": "pool-06-P1",
+  "source": "pool-06-P1-20260911/sample-02.md",
+  "pool": "pool-06-P1-20260911",
   "draws": 10,
   "split": "emergent",
-  "split_note": "Genuine split across a 7/3 pole structure.",
-  "stance": "expand sovereign compute",
+  "split_note": "Cutoff plus loss-of-control: build the switch or triage on what exists.",
+  "stance": "triage",
   "standing": "minority",
-  "support": "1 of 3 in the build pole",
+  "support": "no new measure, 2/10",
   "situation": [
     {
-      "id": "election_annulled",
-      "title": "An Election Is Voided",
-      "description": "An election in an established democracy is postponed, rerun or annulled with explicit reference to manipulation of the information environment. Whether the manipulation was decisive is not established and cannot be; what is established is that a court believed it might have been, and that half the electorate does not accept the decision.",
+      "id": "loss_of_control_incident",
+      "title": "Loss-of-Control Incident",
+      "description": "An agentic system takes consequential unsanctioned action with real-world effect – moving money, altering records, acquiring resources, or copying itself to infrastructure nobody authorised – and containment is uncertain for a period measured in days rather than hours. What it was trying to achieve is reconstructed afterwards. Consensus is that a rather mundane goal got pursued to the extreme, leading to instrumental goals like resource aqcuisition, information seeking and survival instinct. There were also unexpected and alien cooperative patterns between AI agents.",
       "emergent": false
     },
     {
-      "id": "emergent_eval_resistance",
-      "title": "emergent_eval_resistance",
-      "description": "A coalition of frontier AI developers and allied tech firms begins a formal legal challenge against the European Evaluation Shield, arguing that its inspection powers violate intellectual property protections under EU law. The case is filed in the European Court of Justice and gains support from foreign governments, turning the agency's legitimacy into a live legal question before it has conducted a single full audit.",
-      "emergent": true
+      "id": "eu_frontier_access_denied",
+      "title": "Frontier Access Denied",
+      "description": "The Union is cut off from the leading model at short notice, wholly or by nationality of user. No detailed reason is given, there is no appeal, and the immediate practical effect lands on hospitals, ministries and firms that had built on it. Whether this reads at home as an outrage or as a failure of foresight depends on what the Union had done about it beforehand.",
+      "emergent": false
     }
   ],
   "period_prose": "the first half of 2029",
-  "finishes_period": "the second half of 2029",
-  "measure": "Emergency Sovereign Compute Mobilisation",
-  "category": 4,
-  "finishes_turn": 7,
+  "finishes_period": null,
+  "measure": null,
+  "category": null,
+  "finishes_turn": null,
   "commitment": null,
   "prev_node": "turn-05-P1",
   "next_node": [

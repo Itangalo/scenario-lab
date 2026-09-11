@@ -5,27 +5,45 @@
   "leads_to_block": [
     "A111"
   ],
-  "source": "pool-10-A11/sample-04.md",
-  "pool": "pool-10-A11",
+  "source": "pool-10-A11-20260911/sample-01.md",
+  "pool": "pool-10-A11-20260911",
   "draws": 10,
   "split": "emergent",
-  "split_note": "Genuine split, 6 vs 4.",
-  "stance": "build compute redundancy",
+  "split_note": "War: shield the infrastructure or wait out the exchange.",
+  "stance": "shield",
   "standing": "majority",
-  "support": "6/10; the only majority-bloc draw finishing in-run",
+  "support": "wartime shields, 9/10",
   "situation": [
     {
-      "id": "eu_frontier_access_denied",
-      "title": "Frontier Access Denied",
-      "description": "The Union is cut off from the leading model at short notice, wholly or by nationality of user. No detailed reason is given, there is no appeal, and the immediate practical effect lands on hospitals, ministries and firms that had built on it. Whether this reads at home as an outrage or as a failure of foresight depends on what the Union had done about it beforehand.",
+      "id": "openweight_frontier_release",
+      "title": "Open Weights Capability Jump",
+      "description": "An open-weight release lands within a few months of the closed frontier. It is downloaded hundreds of thousands of times in the first week, and whatever capability it carries is now on private hardware permanently and beyond recall. `openweight_capability` moves to within 5–10 points of `ai_capability` at a stroke.",
       "emergent": false
+    },
+    {
+      "id": "labour_displacement",
+      "title": "Labour Displacement Wave",
+      "description": "Measurable job losses attributed to AI in named sectors, with the graduate market worst hit: entry-level positions in law, accountancy, software, customer operations and administration are not replaced. The numbers are argued about; the absence of hiring is not.",
+      "emergent": false
+    },
+    {
+      "id": "catastrophic_great_power_conflict",
+      "title": "Hot Conflict Between Major Powers",
+      "description": "The US and China are shooting at each other. Who moved first are yours to decide, but the reasoning is the same in every version: somebody concluded that the other side was months from an advantage that could never be caught up with, and that acting now was less dangerous than waiting. Fabrication plants, undersea cable, satellite constellations and data centres are military targets in this war, and some of them are in Europe or next to it. The Union is not asked whether it wishes to be involved. All bets are off. You decide how far it goes, whether it stays conventional, who else is drawn in, what becomes of the frontier laboratories and the systems they were running, and what is left of the Union's room to act when it stops.",
+      "emergent": false
+    },
+    {
+      "id": "emergent_infrastructure_sabotage_wave",
+      "title": "emergent_infrastructure_sabotage_wave",
+      "description": "Coordinated night-time arson and blockade campaign spreads from pilot robot sites to gigafactory grid-connection works, halting construction and forcing emergency energy council intervention.",
+      "emergent": true
     }
   ],
   "period_prose": "the first half of 2031",
-  "finishes_period": "the second half of 2032",
-  "measure": "Emergency Compute Redundancy Initiative",
-  "category": 4,
-  "finishes_turn": 13,
+  "finishes_period": "the first half of 2032",
+  "measure": "EU Wartime Energy-Compute Continuity Shield",
+  "category": 6,
+  "finishes_turn": 12,
   "commitment": null,
   "prev_node": "turn-09-A11",
   "next_node": [

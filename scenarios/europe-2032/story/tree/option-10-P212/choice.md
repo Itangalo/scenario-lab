@@ -7,15 +7,10 @@ next: turn-10-P212
 ---
 
 <!-- scaffold: rewrite this, then set status: written -->
-<!-- stance: pause AI in public services | source: pool-10-P21/sample-05.md | singleton minority, 1/10 -->
+<!-- stance: hold | source: pool-10-P21-20260911/sample-01.md | majority, no new measure, 8/10 -->
 
-**Enact Emergency AI Governance Suspension in Public Services**
+**no new measure**
 
-**Measure:** Enact Emergency AI Governance Suspension in Public Services  
-A temporary moratorium on the deployment of AI systems in welfare, social services, and public benefits administration until integrity audits are completed and redress mechanisms are legally binding and operational.
+None this turn, while political capital is at 0 and court injunctions freeze builds pending the January water-power compacts.
 
-`Category: 3 (Limits and restrictions)`  
-`Size: small`  
-`Finishes on turn: 12`  
-`Targeted effect:` Halt further erosion of `public_sentiment` by visibly responding to the **automated_decision_scandal**; create political space to rebuild trust through the Integrity Audit Expansion and prevent irreversible backlash that could collapse support for all sovereign AI efforts  
-`Applies to:` All EU member states operating AI systems in public welfare and social benefit determination
+The bio uplift finding and an open release within points of the closed frontier demand a resilience-first posture, not a new build or restriction this semester: any new instrument would cost capital we do not have and fail on frozen siting and hostile sentiment. We use this turn to let M8 finish, draft the compacts, and stand up passive bio-cyber detection with existing HERA/ENISA/ECDC mandates so the next commitment starts from something fundable.

@@ -5,26 +5,44 @@
   "leads_to_block": [
     "V12"
   ],
-  "source": "pool-06-V1/sample-01.md",
-  "pool": "pool-06-V1",
+  "source": "pool-06-V1-20260911/sample-09.md",
+  "pool": "pool-06-V1-20260911",
   "draws": 10,
   "split": "emergent",
-  "split_note": "Genuine split.",
-  "stance": "secure compute",
-  "standing": "minority",
-  "support": "2/10",
+  "split_note": "Jump plus opacity plus open release plus defection: know the new systems or patch against them.",
+  "stance": "patch",
+  "standing": "majority",
+  "support": "cat6, 5/10",
   "situation": [
     {
-      "id": "taiwan_blockade",
-      "title": "Taiwan Blockade",
-      "description": "A quarantine or blockade halts advanced semiconductor exports. Compute supply for everyone outside China's domestic chain is disrupted for years, every AI policy question becomes a security question overnight, and the Union's upstream position in the supply chain becomes the most valuable thing it holds and the most dangerous thing to hold.",
+      "id": "capability_jump",
+      "title": "Capability Jump",
+      "description": "A discontinuous advance is released or demonstrated. Everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 3.",
+      "emergent": false
+    },
+    {
+      "id": "opaque_reasoning",
+      "title": "Reasoning Stops Being Legible",
+      "description": "The frontier models no longer allow intermediate reasoning a human can read, because the representations that work best are not words and never were. This is partly driven by architecture decisions, partly by pressure in the training. It is announced as a capability win, but also lands as a safety loss. Every control and oversight strategy that depended on reading the chain of thought stops working at once. The alternatives that remain are unreliable benchmarks and black-box evaluations, combined with slow, costly and immature inspection of model activations.",
+      "emergent": false
+    },
+    {
+      "id": "openweight_frontier_release",
+      "title": "Open Weights Capability Jump",
+      "description": "An open-weight release lands within a few months of the closed frontier. It is downloaded hundreds of thousands of times in the first week, and whatever capability it carries is now on private hardware permanently and beyond recall. `openweight_capability` moves to within 5–10 points of `ai_capability` at a stroke.",
+      "emergent": false
+    },
+    {
+      "id": "member_state_defection",
+      "title": "Member State Defection",
+      "description": "A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken. It is defended at home as pragmatism and read everywhere else as the Union being unable to hold its own line.",
       "emergent": false
     }
   ],
   "period_prose": "the first half of 2029",
   "finishes_period": "the first half of 2030",
-  "measure": "Emergency Compute Assurance Initiative",
-  "category": 4,
+  "measure": "EU Open-Weight Exploit Containment Patch",
+  "category": 6,
   "finishes_turn": 8,
   "commitment": null,
   "prev_node": "turn-05-V1",

@@ -7,15 +7,10 @@ next: turn-10-V222
 ---
 
 <!-- scaffold: rewrite this, then set status: written -->
-<!-- stance: deliver justice | source: pool-10-V22/sample-01.md | minority, 4/10 by priority -->
+<!-- stance: recovery | source: pool-10-V22-20260911/sample-03.md | half, cyber recovery, 5/10 -->
 
-**Launch EU AI Accountability Tribunal and Remediation Fund**
+**EU Critical Services Cyber Recovery Corps and Dependency Patching Pact**
 
-**Measure:** Launch EU AI Accountability Tribunal and Remediation Fund  
-Establish a supranational legal body with investigative authority over AI-driven harms in public and hybrid systems, empowered to compel evidence, issue public findings, and order compensation. Back it with a €10bn fund for rapid redress, seeded from fines on non-compliant deployments.
-
-Category: 3 (Limits and restrictions)  
-Size: large  
-Finishes on turn: 14  
-Targeted effect: Increase public_sentiment by 10–15 points by turn 14, reduce political capital erosion after incidents, and raise the cost of opaque or reckless deployment  
-Applies to: European Commission, European Ombudsman, national data protection authorities, public-sector AI operators, EU-funded hybrid systems
+**EU Critical Services Cyber Recovery Corps and Dependency Patching Pact**
+Puts joint ENISA/CERT-EU teams, pre-funded vendor patch contracts and offline fallback procedures into municipalities, hospitals and grid operators hit by the automated attack wave.
+This and now because the major model-generated incident lands on brittle systems with resilience 37 and safety 24, and without a visible defender-ahead response the last capital and trust evaporate; it is category 6 Preparedness and resilience, small and executable under CER/NIS2 and Civil Protection within one turn.

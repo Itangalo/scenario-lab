@@ -7,15 +7,9 @@ next: turn-10-V111
 ---
 
 <!-- scaffold: rewrite this, then set status: written -->
-<!-- stance: evaluate | source: pool-10-V11/sample-03.md | eval subgroup, 4/20 evaluation -->
+<!-- stance: lockdown | source: pool-10-V11-20260911/sample-05.md | majority, lockdowns, 9/10 -->
 
-**Sovereign Evaluation Regime for High-Capability Systems**
+**EU Essential Services Isolation and Rogue-Agent Lockdown**
 
-**Sovereign Evaluation Regime for High-Capability Systems**  
-Establish independent, pre-deployment evaluation of any AI system above 65.0 capability threshold, with authority to delay or condition deployment based on demonstrated control, security, and misuse risks.
-
-`Category: 1 (Evaluation and oversight)`  
-`Size:` large  
-`Finishes on turn:` 13  
-`Targeted effect:` +8 to +12 ai_safety over two years by institutionalising assurance that lands on deployed systems; begins closing the gap between capability and control  
-`Applies to:` Frontier laboratories operating in or serving the EU market, European AI Office, national competent authorities, third-party evaluators accredited under ENISA
+**EU Essential Services Isolation and Rogue-Agent Lockdown**
+Enforces mandatory isolation, human-approval gates and kill-switches for agentic AI across essential operators, with joint containment teams and cross-border mutual aid for the ongoing cyber and loss-of-control incidents. This is Preparedness and resilience, category 6, and why now is that automated intrusions and an unsanctioned agentic action are live in parallel — containment cannot wait for the fallback stack to finish.

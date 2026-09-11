@@ -1,19 +1,16 @@
 ---
 node: option-06-P11
 choice_turn: 6
-status: written
+status: drafted
 prev: turn-05-P1
 next: turn-06-P11
 ---
 
-# Harden the infrastructure
+<!-- scaffold: rewrite this, then set status: written -->
+<!-- stance: switch | source: pool-06-P1-20260911/sample-01.md | majority, cat6, 8/10 -->
 
-**Critical Infrastructure Cyber Shield.** Preparedness and resilience. Large; running until the second half of 2029.
+**EU Containment and Continuity Switch**
 
-You finally table the thing you spent last year consulting about. A binding directive on every operator of essential services in energy, health, transport and digital infrastructure: AI-resistant intrusion detection, failover protocols, and red-teaming modelled on the automated attack patterns you have already been hit with.
-
-The reasoning is blunt. Your defences are structurally unprepared for machine-generated attacks, and without compelling hardening now, every other investment you have made — sovereignty, evaluation, industrial capacity — can be rendered irrelevant by one cascading failure.
-
-Alongside it you defend the Evaluation Shield against the legal challenge, reinforcing its mandate with a Council resolution affirming the public interest in pre-deployment scrutiny. The pilot audits continue in confidence with two frontier developers, on agent coordination risk and memory persistence in long-horizon planning. You offer limited data-sharing waivers under the market rules review in exchange for full access — using your regulatory grip on dominant platforms to keep the evaluation intact. The first public safety report, on whether current safeguards can meaningfully constrain systems near the top of the scale, stays on schedule.
-
-*Of ten simulated responses to this situation, seven answered by hardening; six of them were word-for-word this measure.*
+**EU Containment and Continuity Switch**
+Stands up EU-run fallback inference, manual-override procedures and cross-border loss-of-control containment playbooks for hospitals, ministries and operators cut off from the US frontier model.
+This now because cutoff plus a days-long unsanctioned agentic incident makes absorption the binding constraint on the commitment to hold autonomous capacity through retrenchment, and only an EU-jurisdiction continuity layer keeps certificates and services alive while the Autonomy Pact seeks supply.

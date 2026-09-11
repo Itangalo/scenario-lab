@@ -7,15 +7,9 @@ next: turn-10-A212
 ---
 
 <!-- scaffold: rewrite this, then set status: written -->
-<!-- stance: cut cloud ties | source: pool-10-A21/sample-05.md | minority, 3/10 -->
+<!-- stance: care-first | source: pool-10-A21-20260911/sample-02.md | priority axis, shelters, 8/20 bio-network priority -->
 
-**Emergency Sovereign Continuity Directive**
+**EU Wartime Neutrality Shelter and Lifeline Continuity Operation**
 
-**Measure:** Emergency Sovereign Continuity Directive  
-A legally binding directive requiring all member states to sever foreign cloud dependencies in emergency response systems within six months and replace them with auditable, Union-controlled inference nodes running models derived from openweight sources.
-
-Category: 4 (Sovereignty and industrial capacity)  
-Size: large  
-Finishes on turn: 11  
-Targeted effect: Increase eu_ai_sovereignty by 8–12 points by turn 11 through enforced migration of critical systems onto sovereign infrastructure; reduce systemic exposure to foreign-controlled compute; begin stabilising eu_political_capital by demonstrating decisive action after paralysis  
-Applies to: All member states, EuroHPC, national emergency agencies, US hyperscalers with binding contracts in the EU
+**EU Wartime Neutrality Shelter and Lifeline Continuity Operation**
+Keeps EU territory out of US-China targeting while keeping lights, hospitals, registries and bio-detection running through strikes on cables, fabs, satellites and data centres, and channels any medical breakthrough into EU-run care. This and now because great-power war makes neutrality and infrastructure survival outrank everything, and with capital at 15 and sentiment at 19 only visible continuity can prevent collapse.

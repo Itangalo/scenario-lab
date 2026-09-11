@@ -7,8 +7,9 @@ next: turn-10-A211
 ---
 
 <!-- scaffold: rewrite this, then set status: written -->
-<!-- stance: harden systems | source: pool-10-A21/sample-08.md | majority, 7/10 -->
+<!-- stance: shelter-first | source: pool-10-A21-20260911/sample-06.md | priority axis, shelters, 12/20 self-priority -->
 
-**Emergency Resilience Surge**
+**EU Wartime Neutrality Shelter and Lifeline Continuity**
 
-(no new measure)
+**EU Wartime Neutrality Shelter and Lifeline Continuity**
+Keeps EU territory, cables, fabs and care services out of US-China targeting while securing licensed access to breakthrough therapies on EU-run infrastructure. This and now because great-power war makes neutrality and continuity the precondition for the two-year commitment to hold daily services and biosecurity at all.

@@ -7,8 +7,8 @@ next: turn-10-A122
 ---
 
 <!-- scaffold: rewrite this, then set status: written -->
-<!-- stance: consolidate and add | source: pool-10-A12/sample-01.md | cluster pick, cluster 01/04/06/08 -->
+<!-- stance: wait | source: pool-10-A12-20260911/sample-04.md | minority, no new measure, 3/10 -->
 
-**Secure foundational resilience through joint threat response integration**
+**no new measure**
 
-(no new measure)
+None this turn, while we let the Corps land and rebuild capital before starting anything new.

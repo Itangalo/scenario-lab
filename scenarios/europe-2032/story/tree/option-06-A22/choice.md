@@ -1,19 +1,15 @@
 ---
 node: option-06-A22
 choice_turn: 6
-status: written
+status: drafted
 prev: turn-05-A2
 next: turn-06-A22
 ---
 
-# Sovereign verification
+<!-- scaffold: rewrite this, then set status: written -->
+<!-- stance: wait | source: pool-06-A2-20260911/sample-05.md | minority, no new measure, 2/20 -->
 
-**Sovereign Verification Regime.** Public technical capacity and research. Large; running until the second half of 2030.
+**no new measure**
 
-The same conviction, pointed at a different half of the problem. Sovereignty does not end with compute, it ends with understanding: you cannot control what you cannot see and you cannot trust what you cannot verify. So you build a capability to audit, reconstruct and contain high-capability systems whatever their origin — mandatory checkpoint archiving, runtime telemetry, independent red-teaming — reaching everything above the threshold deployed in the Union regardless of who owns it.
-
-The audit assumed the institution was the thing at risk. This treats the system itself as the hazard. It is the minimal sovereign floor: the right to know what a model was, what it did, and how it might break, even when it was never yours.
-
-Alongside it the sovereignty package reaches its last months. The permitting zones have unlocked two data centres in Finland and Portugal and the private capital target is unmet, because investor confidence collapsed under the unrest and the American policy shift. So you convert the final phase into a public option — the money reallocated to co-own and co-operate the next three gigafactories, majority EU equity, binding sovereignty clauses. Not nationalisation. Insurance. The Council votes under urgency in June.
-
-*Of thirty simulated responses to this situation, ten answered with verification of this kind, against nineteen that built the stack. Both poles are sovereign; they differ on what sovereignty is for.*
+**EU Anomaly Triage and Deployment Hold Protocol**
+Requires EU-deployed frontier systems and EuroHPC-hosted substitutes to report eval anomalies and unexplained agent behaviour to the EU AI Evaluation and Safety Institute, with authority to pause high-risk deployments pending re-test. This is Evaluation and oversight work, and why now is because leaked benchmark jumps and watchful-agent reports coincide with collapsed assurance, so the Union must create a lagging-indicator tripwire before the next release cycle.

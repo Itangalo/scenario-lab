@@ -12,11 +12,11 @@
     "decided": "the second half of 2028"
   },
   "provenance": {
-    "run": "run-20260906-140300",
-    "seed": 748695728457550772,
-    "turn_dir": "runs/run-20260906-140300/turn-06",
+    "run": "run-20260911-005959",
+    "seed": 12675978344383710738,
+    "turn_dir": "runs/run-20260911-005959/turn-06",
     "pinned_turn": 6,
-    "option_file": "pool-06-V1/sample-01.md",
+    "option_file": "pool-06-V1-20260911/sample-09.md",
     "path_rep": 1,
     "promotion_reason": null
   },
@@ -24,99 +24,192 @@
     "ai_capability": {
       "label": "AI capability",
       "value": 62.5,
-      "previous": 61.0,
-      "delta": 1.5,
+      "previous": 61.5,
+      "delta": 1.0,
       "min": 0.0,
       "max": 100.0
     },
     "openweight_capability": {
       "label": "Open-weight capability",
-      "value": 50.0,
-      "previous": 48.0,
-      "delta": 2.0,
+      "value": 58.0,
+      "previous": 57.8,
+      "delta": 0.2,
       "min": 0.0,
       "max": 100.0
     },
     "ai_safety": {
       "label": "AI safety",
-      "value": 21.0,
-      "previous": 23.0,
-      "delta": -2.0,
+      "value": 14.0,
+      "previous": 24.0,
+      "delta": -10.0,
       "min": 0.0,
       "max": 100.0
     },
     "resilience": {
       "label": "Resilience",
-      "value": 48.0,
-      "previous": 45.0,
-      "delta": 3.0,
+      "value": 53.0,
+      "previous": 49.0,
+      "delta": 4.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
-      "value": 25.0,
-      "previous": 24.0,
-      "delta": 1.0,
+      "value": 19.0,
+      "previous": 16.0,
+      "delta": 3.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_political_capital": {
       "label": "EU political capital",
-      "value": 42.0,
-      "previous": 40.0,
-      "delta": 2.0,
+      "value": 18.0,
+      "previous": 24.0,
+      "delta": -6.0,
       "min": 0.0,
       "max": 100.0
     },
     "public_sentiment": {
       "label": "Public sentiment",
-      "value": 34.0,
-      "previous": 34.0,
-      "delta": 0.0,
+      "value": 33.0,
+      "previous": 36.0,
+      "delta": -3.0,
       "min": 0.0,
       "max": 100.0
     }
   },
   "events": [
     {
-      "id": "taiwan_blockade",
-      "title": "Taiwan Blockade",
-      "description": "A quarantine or blockade halts advanced semiconductor exports. Compute supply for everyone outside China's domestic chain is disrupted for years, every AI policy question becomes a security question overnight, and the Union's upstream position in the supply chain becomes the most valuable thing it holds and the most dangerous thing to hold.",
+      "id": "capability_jump",
+      "title": "Capability Jump",
+      "description": "A discontinuous advance is released or demonstrated. Everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 3.",
+      "emergent": false,
+      "pinned": true
+    },
+    {
+      "id": "opaque_reasoning",
+      "title": "Reasoning Stops Being Legible",
+      "description": "The frontier models no longer allow intermediate reasoning a human can read, because the representations that work best are not words and never were. This is partly driven by architecture decisions, partly by pressure in the training. It is announced as a capability win, but also lands as a safety loss. Every control and oversight strategy that depended on reading the chain of thought stops working at once. The alternatives that remain are unreliable benchmarks and black-box evaluations, combined with slow, costly and immature inspection of model activations.",
+      "emergent": false,
+      "pinned": true
+    },
+    {
+      "id": "openweight_frontier_release",
+      "title": "Open Weights Capability Jump",
+      "description": "An open-weight release lands within a few months of the closed frontier. It is downloaded hundreds of thousands of times in the first week, and whatever capability it carries is now on private hardware permanently and beyond recall. `openweight_capability` moves to within 5–10 points of `ai_capability` at a stroke.",
+      "emergent": false,
+      "pinned": true
+    },
+    {
+      "id": "member_state_defection",
+      "title": "Member State Defection",
+      "description": "A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken. It is defended at home as pragmatism and read everywhere else as the Union being unable to hold its own line.",
       "emergent": false,
       "pinned": true
     }
   ],
   "portfolio": [
     {
+      "name": "InvestAI Gigafactories",
+      "category": 4,
+      "cost": 3,
+      "start": 0,
+      "finish": 7,
+      "description": "eu_ai_sovereignty up, via €200bn for four to five sites",
+      "finished": false,
+      "status": "running",
+      "finish_period": "the second half of 2029",
+      "start_period": null
+    },
+    {
       "name": "Tech sovereignty package",
       "category": 4,
       "cost": 3,
-      "start": 1,
+      "start": 0,
       "finish": 6,
-      "description": "Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones",
-      "finished": false,
-      "status": "running",
-      "finish_period": "the first half of 2029",
-      "start_period": "the second half of 2026"
-    },
-    {
-      "name": "Critical Infrastructure Resilience Sprint",
-      "category": 6,
-      "cost": 3,
-      "start": 5,
-      "finish": 6,
-      "description": "Launch a 12-month emergency hardening programme for energy, transport, and health systems against AI-driven cyberattacks, with mandatory audits, fallback protocols, and live red-teaming",
+      "description": "eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones",
       "finished": true,
       "status": "finished",
       "finish_period": "the first half of 2029",
+      "start_period": null
+    },
+    {
+      "name": "EU Critical Services Shield",
+      "category": 6,
+      "cost": 3,
+      "start": 1,
+      "finish": 4,
+      "description": "resilience up substantially, ai_safety indirectly via incident response",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2028",
+      "start_period": "the second half of 2026"
+    },
+    {
+      "name": "EU Swarm Defence Deployment",
+      "category": 6,
+      "cost": 2,
+      "start": 2,
+      "finish": 4,
+      "description": "resilience up, ai_safety up slightly via reduced cyber harm",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2028",
+      "start_period": "the first half of 2027"
+    },
+    {
+      "name": "EU Incident Continuity Backstop",
+      "category": 6,
+      "cost": 2,
+      "start": 3,
+      "finish": 5,
+      "description": "resilience up to stop cascade, eu_political_capital protected from service failure",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the second half of 2028",
+      "start_period": "the second half of 2027"
+    },
+    {
+      "name": "EU Joint Threat and Bio-Surveillance Integration",
+      "category": 6,
+      "cost": 2,
+      "start": 4,
+      "finish": 6,
+      "description": "resilience up, ai_safety up slightly via shared telemetry and bio detection",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2029",
+      "start_period": "the first half of 2028"
+    },
+    {
+      "name": "EU–Middle-Power Trusted Compute Compact",
+      "category": 8,
+      "cost": 2,
+      "start": 5,
+      "finish": 8,
+      "description": "eu_ai_sovereignty up, resilience up slightly via secured supply",
+      "finished": false,
+      "status": "running",
+      "finish_period": "the first half of 2030",
       "start_period": "the second half of 2028"
+    },
+    {
+      "name": "EU Open-Weight Exploit Containment Patch",
+      "category": 6,
+      "cost": 2,
+      "start": 6,
+      "finish": 8,
+      "description": "resilience up to prevent cascade from open-weight cyber uplift, ai_safety loss contained",
+      "finished": false,
+      "status": "new",
+      "finish_period": "the first half of 2030",
+      "start_period": "the first half of 2029"
     }
   ],
   "cancelled": [],
-  "new_measure": "Emergency Compute Assurance Initiative",
-  "priority": "Emergency Compute Assurance Initiative",
-  "commitment": null,
+  "new_measure": "EU Open-Weight Exploit Containment Patch",
+  "priority": "M1 InvestAI Gigafactories",
+  "commitment": "Secure verifiable safety and independent capacity so Europe is not defenceless as capabilities jump",
   "prev_node": "option-06-V12",
   "next_node": "turn-07-V12",
   "next_choice": null,

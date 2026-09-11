@@ -5,39 +5,63 @@
   "leads_to_block": [
     "A222"
   ],
-  "source": "pool-10-A22/sample-06.md",
-  "pool": "pool-10-A22",
+  "source": "pool-10-A22-20260911/sample-02.md",
+  "pool": "pool-10-A22-20260911",
   "draws": 10,
   "split": "emergent",
-  "split_note": "Even split, 5 vs 5.",
-  "stance": "police models",
-  "standing": "even pole",
-  "support": "5/10 control side",
+  "split_note": "Rogue agent plus agreement: livelihoods or containment.",
+  "stance": "containment",
+  "standing": "half",
+  "support": "cat6, 5/10",
   "situation": [
     {
-      "id": "capability_jump",
-      "title": "Capability Jump",
-      "description": "A discontinuous advance is released or demonstrated. The frontier moves by more in one release than in the preceding two years, and everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 6.",
+      "id": "cyber_major_incident",
+      "title": "Major Cyber Incident",
+      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
       "emergent": false
     },
     {
       "id": "eval_anomaly_reports",
-      "title": "Evaluation Anomalies Surface",
-      "description": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. The laboratory calls it a measurement artefact. It may be one. **This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.**",
+      "title": "Evaluation Anomalies Escalate",
+      "description": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. Some call it a measurement artefact, some a PR stunt. It may be either, and it may be AI slipping out of our control. **This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.**",
       "emergent": false
     },
     {
-      "id": "election_annulled",
-      "title": "An Election Is Voided",
-      "description": "An election in an established democracy is postponed, rerun or annulled with explicit reference to manipulation of the information environment. Whether the manipulation was decisive is not established and cannot be; what is established is that a court believed it might have been, and that half the electorate does not accept the decision.",
+      "id": "opaque_reasoning",
+      "title": "Reasoning Stops Being Legible",
+      "description": "The frontier models no longer allow intermediate reasoning a human can read, because the representations that work best are not words and never were. This is partly driven by architecture decisions, partly by pressure in the training. It is announced as a capability win, but also lands as a safety loss. Every control and oversight strategy that depended on reading the chain of thought stops working at once. The alternatives that remain are unreliable benchmarks and black-box evaluations, combined with slow, costly and immature inspection of model activations.",
+      "emergent": false
+    },
+    {
+      "id": "catastrophic_loss_of_control_incident",
+      "title": "Catastrophic Loss-of-Control Incident",
+      "description": "An agentic AI system takes establishes itself online, distributed over datacenters and often unknown locations. It is first believed to be a hacker group, with demands for ransom paid in crypto. It resists any attempts to probe it for a long time. All bets are off. You decide whether the rogue AI system keeps a low profile, launches massive cyber attacks against financial systems and critical infrastructure, how if favours different actors, and whether it even has a well-defined goal.",
+      "emergent": false
+    },
+    {
+      "id": "safety_breakthrough",
+      "title": "Safety Breakthrough",
+      "description": "An interpretability or control result measurably improves assurance on systems already deployed, rather than on toy models – behaviour that can be predicted before it is observed, or a property that can be certified rather than argued for. It is adopted quickly, because the laboratories want it too.",
+      "emergent": false
+    },
+    {
+      "id": "us_china_agreement",
+      "title": "Narrow Binding Agreement",
+      "description": "The two leading powers reach a limited but real agreement covering some class of AI risk – weights security, autonomous escalation, a class of biological design tools – with verification thin but not absent. Whether the Union is inside it, consulted about it, or informed of it afterwards depends on what it has built and whom it has coordinated with. This is the one thing in the world that slows `ai_capability`, on the terms of metric rule 1. It also changes what safety work is for: with a floor under the competition, assurance and defensive research stop being a unilateral cost that the other side is presumed to be skipping, and become a shared obligation with someone on the other side checking. While the agreement stands, `safety_breakthrough` and `cyber_defence_breakthrough` are markedly more likely.",
+      "emergent": false
+    },
+    {
+      "id": "joint_threat_response",
+      "title": "Joint Threat Response",
+      "description": "States hit by the same class of incident pool attribution, intelligence and response: a joint cyber command with real-time telemetry sharing that the Union is invited into, or a biosurveillance pact with binding sample-sharing and a standing investigation mandate. The Union gains protection it could not build alone, and a seat at tables it was not sitting at. It moves `resilience` on the terms of metric rule 4.",
       "emergent": false
     }
   ],
   "period_prose": "the first half of 2031",
-  "finishes_period": "the second half of 2031",
-  "measure": "Emergency Observability Directive",
-  "category": 3,
-  "finishes_turn": 11,
+  "finishes_period": "the first half of 2032",
+  "measure": "EU Rogue Agent Containment and Essential Services Shield",
+  "category": 6,
+  "finishes_turn": 12,
   "commitment": null,
   "prev_node": "turn-09-A22",
   "next_node": [

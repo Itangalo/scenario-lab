@@ -8,27 +8,39 @@
     "P1"
   ],
   "source": "turn-01/option-02-1.md",
-  "pool": "turn-01/pool-20260904",
+  "pool": "turn-01/pool-20260910",
   "draws": 30,
   "split": "emergent",
-  "split_note": "Straight picks from the rebuilt 30-draw pool (cat4 12 / cat5 10 / cat1 5 / cat3 2 / cat6 1). No synthesis. The turn-1 resolution differs per arm (ai_capability 54.5/54.0/53.5), so it is not shown before the choice; the opening shows the scenario's start values and the reader sees the resolution at turn 2.",
-  "stance": "build",
+  "split_note": "Straight picks from the 30-draw store-branch pool (cat5 14 / cat6 16; no build draws at all). No synthesis. Build lives on in the turn-0 seeded programmes, so the choice is what new direction to add: harden first or evaluate first. Turn-1 resolution differs per arm (ai_capability 55.0/54.0/53.5), so it is not shown before the choice.",
+  "stance": "shield",
   "standing": "plurality category",
-  "support": "cat4, 12/30",
+  "support": "cat6, 16/30",
   "situation": [
     {
-      "id": "eval_anomaly_reports",
-      "title": "Evaluation Anomalies Surface",
-      "description": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. The laboratory calls it a measurement artefact. It may be one. **This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.**",
+      "id": "openweight_frontier_release",
+      "title": "Open Weights Capability Jump",
+      "description": "An open-weight release lands within a few months of the closed frontier. It is downloaded hundreds of thousands of times in the first week, and whatever capability it carries is now on private hardware permanently and beyond recall. `openweight_capability` moves to within 5–10 points of `ai_capability` at a stroke.",
       "emergent": false
+    },
+    {
+      "id": "taiwan_tension_rise",
+      "title": "Taiwan Tension Rises",
+      "description": "Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion. Nothing that has not happened before, at a scale that is slightly harder to dismiss. **This is a precursor: it opens the Taiwan gate for the next 3 turns.**",
+      "emergent": false
+    },
+    {
+      "id": "emergent_intrusion_tooling_copycats",
+      "title": "emergent_intrusion_tooling_copycats",
+      "description": "Forensic samples of the autumn industrial-intrusion tooling leak publicly and are repackaged into copycat intrusion kits, triggering a wave of low-skill probes against European municipal utilities and grid suppliers.",
+      "emergent": true
     }
   ],
   "period_prose": "the first half of 2027",
-  "finishes_period": "the second half of 2027",
-  "measure": "Emergency Sovereign Compute Directive",
-  "category": 4,
-  "finishes_turn": 3,
-  "commitment": "Secure independent AI capacity to act with sovereignty in an accelerating world",
+  "finishes_period": "the first half of 2028",
+  "measure": "EU Critical Services Shield",
+  "category": 6,
+  "finishes_turn": 4,
+  "commitment": "Secure independent capacity and resilience so the Union can withstand coercion and absorb AI harm",
   "prev_node": "turn-01",
   "next_node": [
     "turn-02-A1",

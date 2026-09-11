@@ -1,0 +1,26 @@
+<!-- record: machine-extracted from the run, always rewritten. Never edit by hand, never quote figures from anywhere else. -->
+
+Source option: `pool-10-A12-20260911/sample-04.md` (verbatim draw; the reader's choice text is written from it).
+
+## Option response (full)
+
+## New measure
+None this turn, while we let the Corps land and rebuild capital before starting anything new.
+
+## Store changes
+No changes.
+
+## Priority
+M10 EU Entry-Level Transition and Essential Service Corps — because with capital at 9 and sentiment at 20, holding visible jobs and degraded-not-stopped services outranks any new build this turn.
+
+## In practice
+We run what we have: DG EMPL pushes ESF+ clearances for M10 placements into hospitals, municipalities and guarded build sites, with wage-insurance conditional on common procurement terms to contain the hyperscale side-deal split. NIS2 joint teams and ENISA under the finished Shield keep hospitals and ports degraded-not-stopped, and civil protection keeps guarding fenced sites and reserved-chip installs without opening a new front.
+
+We answer the automated-decision scandal as the second, more damaging reading — a lawful-but-wrong deployment in a gap the 2024 Annex III categories do not reach — with an ombudsman-led redress, mandatory logging review and a narrow AI Act patch commitment, not a broad restriction we cannot enforce. The US medical breakthrough and the US-lab research advance are procured only on EU-anchored capacity where it exists, and otherwise named plainly as dependence, to avoid another legitimacy hit. On Taiwan tensions we trigger blockade-continuity stockpiles and insurer coordination under the Bio-Shield regime, without spending new capital.
+
+## Situation (events pinned in the turn this choice leads into)
+
+- **research_breakthrough** (Science Delivers): A significant research result, with AI doing what used to be the hard part. Decide what it is – a materials finding with industrial consequences, a physics or climate result that settles a long argument, an algorithm that makes something infeasible cheap, a proof closing a problem the field had organised itself around. Then decide its reach, which is not the same as its importance. Every instance of this event is a real advance and none of them is incremental; what varies is who can see it. A sorting algorithm four percent faster than the best known is invisible outside computer science and a landmark inside it, and where the result is of that kind, say why a specialist would call it one. Others reshape an industry within two turns. Say where the work was done, because the address matters as much as the finding. State the effects and the rule each runs under. `public_sentiment` under metric rule 7 where the benefit is visible; `ai_capability` within this run's stated rate under metric rule 1 for a computing result. A European result does **not** move `eu_ai_sovereignty` by itself – rule 5's event term is about access to capacity, not achievement – but it pays as evidence that a finished category 4 or 5 measure produced something.
+- **medical_breakthrough** (Medicine Delivers): Treatments arrive for diseases previously untreatable, or individually tailored therapies reach ordinary clinical use. It moves `public_sentiment` sharply upward – unless the models delivering it are ones the Union cannot access on its own terms, in which case the benefit arrives as a further demonstration of dependence and moves sentiment much less.
+- **taiwan_tension_rise** (Taiwan Tension Rises): Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion. Nothing that has not happened before, at a scale that is slightly harder to dismiss. **This is a precursor: it opens the Taiwan gate for the next 3 turns.**
+- **automated_decision_scandal** (Automated Decision Scandal): An AI-supported decision system in social insurance, policing or the courts is found to have systematically wronged people, with a judgment or an ombudsman finding behind it. The AI Act is the frame the affair is argued in, and it fails in one of two ways – decide which at the time, and say which in the narrative. Either the system was a high-risk system under Annex III and the obligations were breached: conformity assessment passed on paper, the human oversight that was supposed to be meaningful reduced to a caseworker approving a queue at forty seconds an item, the logging that would have caught the pattern generated correctly and never read. Or the system was never classified high-risk at all, because the deployment sat in a gap the Act's categories do not reach, and every single thing done to those people was lawful. The first reading leaves the Act intact and its enforcement discredited; the second leaves enforcement intact and the Act itself looking badly drawn, written for the systems of 2024 against the deployments of 2030, and that is much the more damaging, because it cannot be answered by trying harder. Restriction becomes cheap and adoption becomes politically impossible for years. Metric rule 6's internal-origin clause applies in full.

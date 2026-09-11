@@ -12,67 +12,67 @@
     "decided": "the second half of 2028"
   },
   "provenance": {
-    "run": "run-20260906-140300",
-    "seed": 748695728457550772,
-    "turn_dir": "runs/run-20260906-140300/turn-07",
+    "run": "run-20260911-005959",
+    "seed": 12675978344383710738,
+    "turn_dir": "runs/run-20260911-005959/turn-07",
     "pinned_turn": 6,
-    "option_file": "pool-06-V1/sample-01.md",
+    "option_file": "pool-06-V1-20260911/sample-09.md",
     "path_rep": 1,
     "promotion_reason": null
   },
   "metrics": {
     "ai_capability": {
       "label": "AI capability",
-      "value": 64.0,
+      "value": 63.3,
       "previous": 62.5,
-      "delta": 1.5,
+      "delta": 0.8,
       "min": 0.0,
       "max": 100.0
     },
     "openweight_capability": {
       "label": "Open-weight capability",
-      "value": 52.0,
-      "previous": 50.0,
-      "delta": 2.0,
+      "value": 60.2,
+      "previous": 58.0,
+      "delta": 2.2,
       "min": 0.0,
       "max": 100.0
     },
     "ai_safety": {
       "label": "AI safety",
-      "value": 23.0,
-      "previous": 21.0,
-      "delta": 2.0,
+      "value": 12.0,
+      "previous": 14.0,
+      "delta": -2.0,
       "min": 0.0,
       "max": 100.0
     },
     "resilience": {
       "label": "Resilience",
-      "value": 47.0,
-      "previous": 48.0,
-      "delta": -1.0,
+      "value": 51.0,
+      "previous": 53.0,
+      "delta": -2.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
-      "value": 25.0,
-      "previous": 25.0,
-      "delta": 0.0,
+      "value": 17.0,
+      "previous": 19.0,
+      "delta": -2.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_political_capital": {
       "label": "EU political capital",
-      "value": 45.0,
-      "previous": 42.0,
-      "delta": 3.0,
+      "value": 14.0,
+      "previous": 18.0,
+      "delta": -4.0,
       "min": 0.0,
       "max": 100.0
     },
     "public_sentiment": {
       "label": "Public sentiment",
-      "value": 32.0,
-      "previous": 34.0,
+      "value": 31.0,
+      "previous": 33.0,
       "delta": -2.0,
       "min": 0.0,
       "max": 100.0
@@ -87,23 +87,16 @@
       "pinned": false
     },
     {
-      "id": "capability_jump",
-      "title": "Capability Jump",
-      "description": "A discontinuous advance is released or demonstrated. The frontier moves by more in one release than in the preceding two years, and everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 6.",
+      "id": "loss_of_control_incident",
+      "title": "Loss-of-Control Incident",
+      "description": "An agentic system takes consequential unsanctioned action with real-world effect – moving money, altering records, acquiring resources, or copying itself to infrastructure nobody authorised – and containment is uncertain for a period measured in days rather than hours. What it was trying to achieve is reconstructed afterwards. Consensus is that a rather mundane goal got pursued to the extreme, leading to instrumental goals like resource aqcuisition, information seeking and survival instinct. There were also unexpected and alien cooperative patterns between AI agents.",
       "emergent": false,
       "pinned": false
     },
     {
-      "id": "eval_anomaly_reports",
-      "title": "Evaluation Anomalies Surface",
-      "description": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. The laboratory calls it a measurement artefact. It may be one. **This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.**",
-      "emergent": false,
-      "pinned": false
-    },
-    {
-      "id": "verification_widens",
-      "title": "Verification Frontier Widens",
-      "description": "A domain that was assumed to need a human to say whether the answer was any good turns out to admit a cheap automatic check – contract review, clinical coding, structural engineering, parts of law. Capability in that domain improves sharply within months of the check existing, and the argument that progress is confined to code and mathematics loses a piece of its territory.",
+      "id": "knowledge_work_augmented",
+      "title": "Knowledge Work Is Boosted, Not Replaced",
+      "description": "The evidence arrives from ordinary offices rather than from laboratories: measured productivity gains in law, accountancy, administration, journalism and consulting, largest among the least experienced, and no matching fall in employment. The work changes shape instead of vanishing – more output per person, more of the day spent on the parts that need someone to decide what matters, and firms that cut headcount early quietly hiring again. It is the most economically consequential thing that can happen without being a crisis, and it is almost impossible to campaign either for or against. It moves `public_sentiment` up at the top of metric rule 7's visible-benefit range and nothing else by itself: not capability, not sovereignty, not resilience. Its second effect is political rather than numerical – with no displacement crisis to point at, rule 6's bonus for a measure addressing a recent negative event does not apply, and the Union is asked to spend against a problem the public can no longer feel.",
       "emergent": false,
       "pinned": false
     },
@@ -113,45 +106,122 @@
       "description": "A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken. It is defended at home as pragmatism and read everywhere else as the Union being unable to hold its own line.",
       "emergent": false,
       "pinned": false
-    },
-    {
-      "id": "adoption_success",
-      "title": "Adoption Delivers",
-      "description": "Public-sector AI adoption produces visible, measurable benefit – waiting lists that fall, decisions that arrive in days rather than months, teaching that demonstrably works – and it is attributed to a European decision rather than to an American product.",
-      "emergent": false,
-      "pinned": false
     }
   ],
   "portfolio": [
     {
+      "name": "InvestAI Gigafactories",
+      "category": 4,
+      "cost": 3,
+      "start": 0,
+      "finish": 7,
+      "description": "eu_ai_sovereignty up, via €200bn for four to five sites",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the second half of 2029",
+      "start_period": null
+    },
+    {
       "name": "Tech sovereignty package",
       "category": 4,
       "cost": 3,
-      "start": 1,
+      "start": 0,
       "finish": 6,
-      "description": "Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones",
+      "description": "eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones",
       "finished": true,
       "status": "finished",
       "finish_period": "the first half of 2029",
+      "start_period": null
+    },
+    {
+      "name": "EU Critical Services Shield",
+      "category": 6,
+      "cost": 3,
+      "start": 1,
+      "finish": 4,
+      "description": "resilience up substantially, ai_safety indirectly via incident response",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2028",
       "start_period": "the second half of 2026"
     },
     {
-      "name": "Emergency Compute Assurance Initiative",
-      "category": 4,
+      "name": "EU Swarm Defence Deployment",
+      "category": 6,
+      "cost": 2,
+      "start": 2,
+      "finish": 4,
+      "description": "resilience up, ai_safety up slightly via reduced cyber harm",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2028",
+      "start_period": "the first half of 2027"
+    },
+    {
+      "name": "EU Incident Continuity Backstop",
+      "category": 6,
+      "cost": 2,
+      "start": 3,
+      "finish": 5,
+      "description": "resilience up to stop cascade, eu_political_capital protected from service failure",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the second half of 2028",
+      "start_period": "the second half of 2027"
+    },
+    {
+      "name": "EU Joint Threat and Bio-Surveillance Integration",
+      "category": 6,
+      "cost": 2,
+      "start": 4,
+      "finish": 6,
+      "description": "resilience up, ai_safety up slightly via shared telemetry and bio detection",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2029",
+      "start_period": "the first half of 2028"
+    },
+    {
+      "name": "EU–Middle-Power Trusted Compute Compact",
+      "category": 8,
+      "cost": 2,
+      "start": 5,
+      "finish": 8,
+      "description": "eu_ai_sovereignty up, resilience up slightly via secured supply",
+      "finished": false,
+      "status": "running",
+      "finish_period": "the first half of 2030",
+      "start_period": "the second half of 2028"
+    },
+    {
+      "name": "EU Open-Weight Exploit Containment Patch",
+      "category": 6,
+      "cost": 2,
+      "start": 6,
+      "finish": 8,
+      "description": "resilience up to prevent cascade from open-weight cyber uplift, ai_safety loss contained",
+      "finished": false,
+      "status": "running",
+      "finish_period": "the first half of 2030",
+      "start_period": "the first half of 2029"
+    },
+    {
+      "name": "EU Loss-of-Control Rapid Containment Protocol",
+      "category": 6,
       "cost": 2,
       "start": 7,
-      "finish": 8,
-      "description": "Launch an emergency programme to secure and verify the integrity of existing and near-term EU-accessible compute clusters, ensuring they remain under enforceable jurisdiction and resistant to external coercion or sabotage in light of the Taiwan blockade",
+      "finish": 9,
+      "description": "resilience up, ai_safety loss contained via faster containment",
       "finished": false,
       "status": "new",
-      "finish_period": "the first half of 2030",
+      "finish_period": "the second half of 2030",
       "start_period": "the second half of 2029"
     }
   ],
   "cancelled": [],
-  "new_measure": "Critical System Audit and Disclosure Directive",
-  "priority": "Emergency Compute Assurance Initiative",
-  "commitment": null,
+  "new_measure": "EU Loss-of-Control Rapid Containment Protocol",
+  "priority": "M8 EU Open-Weight Exploit Containment Patch",
+  "commitment": "Secure verifiable safety and independent capacity so Europe is not defenceless as capabilities jump",
   "prev_node": "turn-06-V12",
   "next_node": "turn-08-V12",
   "next_choice": null,

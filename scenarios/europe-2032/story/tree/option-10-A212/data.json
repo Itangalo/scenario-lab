@@ -5,27 +5,33 @@
   "leads_to_block": [
     "A212"
   ],
-  "source": "pool-10-A21/sample-05.md",
-  "pool": "pool-10-A21",
-  "draws": 10,
+  "source": "pool-10-A21-20260911/sample-02.md",
+  "pool": "pool-10-A21-20260911",
+  "draws": 20,
   "split": "emergent",
-  "split_note": "Genuine split, 7 vs 3.",
-  "stance": "cut cloud ties",
-  "standing": "minority",
-  "support": "3/10",
+  "split_note": "War: all 20 draws (pool extended) build shelters; the choice is what leads -- shelter-first or care-first.",
+  "stance": "care-first",
+  "standing": "priority axis",
+  "support": "shelters, 8/20 bio-network priority",
   "situation": [
     {
-      "id": "cyber_major_incident",
-      "title": "Major Cyber Incident",
-      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
+      "id": "medical_breakthrough",
+      "title": "Medicine Delivers",
+      "description": "Treatments arrive for diseases previously untreatable, or individually tailored therapies reach ordinary clinical use. It moves `public_sentiment` sharply upward – unless the models delivering it are ones the Union cannot access on its own terms, in which case the benefit arrives as a further demonstration of dependence and moves sentiment much less.",
+      "emergent": false
+    },
+    {
+      "id": "catastrophic_great_power_conflict",
+      "title": "Hot Conflict Between Major Powers",
+      "description": "The US and China are shooting at each other. Who moved first are yours to decide, but the reasoning is the same in every version: somebody concluded that the other side was months from an advantage that could never be caught up with, and that acting now was less dangerous than waiting. Fabrication plants, undersea cable, satellite constellations and data centres are military targets in this war, and some of them are in Europe or next to it. The Union is not asked whether it wishes to be involved. All bets are off. You decide how far it goes, whether it stays conventional, who else is drawn in, what becomes of the frontier laboratories and the systems they were running, and what is left of the Union's room to act when it stops.",
       "emergent": false
     }
   ],
   "period_prose": "the first half of 2031",
-  "finishes_period": "the second half of 2031",
-  "measure": "Emergency Sovereign Continuity Directive",
-  "category": 4,
-  "finishes_turn": 11,
+  "finishes_period": "the second half of 2032",
+  "measure": "EU Wartime Neutrality Shelter and Lifeline Continuity Operation",
+  "category": 6,
+  "finishes_turn": 13,
   "commitment": null,
   "prev_node": "turn-09-A21",
   "next_node": [

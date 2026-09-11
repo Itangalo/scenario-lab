@@ -12,161 +12,147 @@
     "decided": "the second half of 2028"
   },
   "provenance": {
-    "run": "run-20260906-151607",
-    "seed": 17425640364010780131,
-    "turn_dir": "runs/run-20260906-151607/turn-07",
+    "run": "run-20260911-013951",
+    "seed": 12341206331630889440,
+    "turn_dir": "runs/run-20260911-013951/turn-07",
     "pinned_turn": 6,
-    "option_file": "pool-06-P2/sample-28.md",
+    "option_file": "pool-06-P2-20260911/sample-02.md",
     "path_rep": 1,
     "promotion_reason": null
   },
   "metrics": {
     "ai_capability": {
       "label": "AI capability",
-      "value": 69.0,
-      "previous": 69.0,
-      "delta": 0.0,
+      "value": 61.8,
+      "previous": 61.0,
+      "delta": 0.8,
       "min": 0.0,
       "max": 100.0
     },
     "openweight_capability": {
       "label": "Open-weight capability",
-      "value": 52.0,
-      "previous": 52.0,
-      "delta": 0.0,
+      "value": 58.9,
+      "previous": 56.8,
+      "delta": 2.1,
       "min": 0.0,
       "max": 100.0
     },
     "ai_safety": {
       "label": "AI safety",
-      "value": 22.0,
-      "previous": 17.0,
-      "delta": 5.0,
+      "value": 21.0,
+      "previous": 23.0,
+      "delta": -2.0,
       "min": 0.0,
       "max": 100.0
     },
     "resilience": {
       "label": "Resilience",
-      "value": 41.0,
-      "previous": 41.0,
-      "delta": 0.0,
+      "value": 39.0,
+      "previous": 36.0,
+      "delta": 3.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
       "value": 18.0,
-      "previous": 13.0,
-      "delta": 5.0,
+      "previous": 18.0,
+      "delta": 0.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_political_capital": {
       "label": "EU political capital",
-      "value": 8.0,
-      "previous": 8.0,
-      "delta": 0.0,
+      "value": 5.0,
+      "previous": 0.0,
+      "delta": 5.0,
       "min": 0.0,
       "max": 100.0
     },
     "public_sentiment": {
       "label": "Public sentiment",
-      "value": 25.0,
-      "previous": 25.0,
-      "delta": 0.0,
+      "value": 21.0,
+      "previous": 18.0,
+      "delta": 3.0,
       "min": 0.0,
       "max": 100.0
     }
   },
   "events": [
     {
-      "id": "safety_breakthrough",
-      "title": "Assurance Breakthrough",
-      "description": "An interpretability or control result measurably improves assurance on systems already deployed, rather than on toy models – behaviour that can be predicted before it is observed, or a property that can be certified rather than argued for. It is adopted quickly, because the laboratories want it too.",
-      "emergent": false,
-      "pinned": false
-    },
-    {
-      "id": "eu_frontier_access_denied",
-      "title": "Frontier Access Denied",
-      "description": "The Union is cut off from the leading model at short notice, wholly or by nationality of user. No detailed reason is given, there is no appeal, and the immediate practical effect lands on hospitals, ministries and firms that had built on it. Whether this reads at home as an outrage or as a failure of foresight depends on what the Union had done about it beforehand.",
-      "emergent": false,
-      "pinned": false
-    },
-    {
-      "id": "adoption_success",
-      "title": "Adoption Delivers",
-      "description": "Public-sector AI adoption produces visible, measurable benefit – waiting lists that fall, decisions that arrive in days rather than months, teaching that demonstrably works – and it is attributed to a European decision rather than to an American product.",
+      "id": "knowledge_work_augmented",
+      "title": "Knowledge Work Is Boosted, Not Replaced",
+      "description": "The evidence arrives from ordinary offices rather than from laboratories: measured productivity gains in law, accountancy, administration, journalism and consulting, largest among the least experienced, and no matching fall in employment. The work changes shape instead of vanishing – more output per person, more of the day spent on the parts that need someone to decide what matters, and firms that cut headcount early quietly hiring again. It is the most economically consequential thing that can happen without being a crisis, and it is almost impossible to campaign either for or against. It moves `public_sentiment` up at the top of metric rule 7's visible-benefit range and nothing else by itself: not capability, not sovereignty, not resilience. Its second effect is political rather than numerical – with no displacement crisis to point at, rule 6's bonus for a measure addressing a recent negative event does not apply, and the Union is asked to spend against a problem the public can no longer feel.",
       "emergent": false,
       "pinned": false
     }
   ],
   "portfolio": [
     {
-      "name": "InvestAI Gigafactories",
-      "category": 4,
-      "cost": 3,
-      "start": 1,
-      "finish": 7,
-      "description": "€200bn fund for four to five sites",
-      "finished": true,
-      "status": "finished",
-      "finish_period": "the second half of 2029",
-      "start_period": "the second half of 2026"
-    },
-    {
       "name": "Tech sovereignty package",
       "category": 4,
       "cost": 3,
-      "start": 1,
+      "start": 0,
       "finish": 6,
-      "description": "Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones",
+      "description": "eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones",
       "finished": true,
       "status": "finished",
       "finish_period": "the first half of 2029",
+      "start_period": null
+    },
+    {
+      "name": "EU AI Evaluation and Safety Institute",
+      "category": 5,
+      "cost": 3,
+      "start": 1,
+      "finish": 4,
+      "description": "ai_safety up, eu_ai_sovereignty up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2028",
       "start_period": "the second half of 2026"
     },
     {
-      "name": "Launch the Sovereign AI Core Programme (SACP)",
-      "category": 4,
+      "name": "EU Grid Shield Hardening Programme",
+      "category": 6,
       "cost": 3,
-      "start": 3,
-      "finish": 8,
-      "description": "Establish a publicly governed, EU-operated AI development and deployment stack — from training infrastructure to agent deployment — capable of reaching 60.0 by turn 8, with full weight control and auditability",
-      "finished": false,
-      "status": "running",
-      "finish_period": "the first half of 2030",
-      "start_period": "the second half of 2027"
-    },
-    {
-      "name": "Enact the AI Containment Protocol",
-      "category": 3,
-      "cost": 3,
-      "start": 5,
+      "start": 2,
       "finish": 7,
-      "description": "A binding directive requiring all sovereign AI systems above 55.0 capability to operate under air-gapped, multi-party control with real-time anomaly detection and human-in-the-loop escalation",
+      "description": "resilience up strongly, ai_safety up modestly",
       "finished": true,
       "status": "finished",
       "finish_period": "the second half of 2029",
-      "start_period": "the second half of 2028"
+      "start_period": "the first half of 2027"
     },
     {
-      "name": "Launch the Resilience Reinforcement Initiative",
+      "name": "EU Bio-Cyber Shield Surge",
       "category": 6,
-      "cost": 3,
-      "start": 6,
-      "finish": 8,
-      "description": "A targeted surge to harden patching velocity, incident response, and bio-detection across critical sectors, with mandatory AI-assisted monitoring and cross-border failover protocols",
-      "finished": false,
-      "status": "running",
-      "finish_period": "the first half of 2030",
-      "start_period": "the first half of 2029"
+      "cost": 2,
+      "start": 3,
+      "finish": 6,
+      "description": "resilience up, ai_safety up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2029",
+      "start_period": "the second half of 2027"
+    },
+    {
+      "name": "EU Continuity Stack for Cut-Off Services",
+      "category": 9,
+      "cost": 2,
+      "start": 4,
+      "finish": 6,
+      "description": "resilience up, eu_ai_sovereignty up modestly, public_sentiment up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2029",
+      "start_period": "the first half of 2028"
     }
   ],
   "cancelled": [],
-  "new_measure": "Establish the Cohesion Enforcement Mechanism",
-  "priority": "Establish the Cohesion Enforcement Mechanism",
-  "commitment": null,
+  "new_measure": null,
+  "priority": "No priority named this turn, because with no measures in flight and no new build affordable, continuity operation of the finished Grid, Bio-",
+  "commitment": "Keep essential services running on European-controlled AI through cut-off and open-model exposure",
   "prev_node": "turn-06-P22",
   "next_node": "turn-08-P22",
   "next_choice": null,

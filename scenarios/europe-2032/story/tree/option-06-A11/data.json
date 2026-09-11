@@ -5,33 +5,33 @@
   "leads_to_block": [
     "A11"
   ],
-  "source": "pool-06-A1/sample-06.md",
-  "pool": "pool-06-A1",
+  "source": "pool-06-A1-20260911/sample-01.md",
+  "pool": "pool-06-A1-20260911",
   "draws": 10,
   "split": "emergent",
-  "split_note": "Genuine split on the biosecurity response.",
-  "stance": "detect and endure",
-  "standing": "majority",
-  "support": "6/10 BioShield family",
+  "split_note": "Embodied deployment meets the Alliance window: contain the robots or buy the access.",
+  "stance": "buy access",
+  "standing": "minority",
+  "support": "cat8, 3/10",
   "situation": [
     {
       "id": "capability_jump",
       "title": "Capability Jump",
-      "description": "A discontinuous advance is released or demonstrated. The frontier moves by more in one release than in the preceding two years, and everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 6.",
+      "description": "A discontinuous advance is released or demonstrated. Everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 3.",
       "emergent": false
     },
     {
-      "id": "emergent_biosecurity_leak",
-      "title": "emergent_biosecurity_leak",
-      "description": "A draft internal assessment from a leading European biosecurity lab leaks, revealing that the pathogen design from the recent genome model incident could be reconstructed and tested with less than 100,000 EUR and moderate technical skill. The document, marked 'Not for Public Release,' triggers panic in closed policy channels and forces emergency meetings, though it has not yet reached public media.",
-      "emergent": true
+      "id": "embodied_ai_deployment",
+      "title": "Robots Leave the Demonstration Floor",
+      "description": "Robots reach commercial deployment – not the demonstration videos, convincing for years now, but machines bought in quantity and put to work in warehouses, food processing, loading docks and the parts of manufacturing that resisted automation because the sequence varied. The capability is coarse, and the limit is worth stating exactly: lifting, carrying, sorting, palletising, cleaning, basic assembly – whole-arm movements in a setting that can be arranged around the machine. Fine motor work is not solved, nor is anything needing a light touch, a judgement about what an object is doing, or improvisation when the plan is wrong; surgery, wiring, repair, most care work and any construction site worth the name stay human. The same limit shapes the military uses, which arrive at the same time and for the same reason: carrying, digging, resupply under fire, mine clearance, casualty extraction, perimeter patrol. The machines are cheap enough to lose, which is the property that matters, and procurement runs well ahead of any doctrine for using them. Autonomous lethality is a separate argument and is not settled here; what is settled is that the logistics tail of an army stops needing as many people in it. For the Union it lands on the industrial base it still leads in, and it lands from outside: China already builds more than half the world's robots and holds the supply chain for the actuators, reducers and motors beneath them, and the control models are American. It takes away access on the terms of metric rule 5 at the small end – a new dependence forming rather than existing access withdrawn – and `public_sentiment` falls −2 to −5, because physical work entering the displacement question reaches people no reskilling programme has ever reached.",
+      "emergent": false
     }
   ],
   "period_prose": "the first half of 2029",
-  "finishes_period": "the second half of 2030",
-  "measure": "BioShield Rapid Detection Network",
-  "category": 6,
-  "finishes_turn": 9,
+  "finishes_period": "the first half of 2030",
+  "measure": "EU-US Structured Frontier Access and Joint Evaluation Pact",
+  "category": 8,
+  "finishes_turn": 8,
   "commitment": null,
   "prev_node": "turn-05-A1",
   "next_node": [

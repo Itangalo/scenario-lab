@@ -12,99 +12,228 @@
     "decided": "the second half of 2028"
   },
   "provenance": {
-    "run": "run-20260907-142945",
-    "seed": 18332379151440853143,
-    "turn_dir": "runs/run-20260907-142945/turn-13",
+    "run": "run-20260911-091338",
+    "seed": 17347944689744943958,
+    "turn_dir": "runs/run-20260911-091338/turn-13",
     "pinned_turn": 10,
-    "option_file": "pool-10-P21/sample-02.md",
+    "option_file": "pool-10-P21-20260911/sample-02.md",
     "path_rep": 1,
     "promotion_reason": null
   },
   "metrics": {
     "ai_capability": {
       "label": "AI capability",
-      "value": 70.0,
-      "previous": 69.5,
+      "value": 65.5,
+      "previous": 65.0,
       "delta": 0.5,
       "min": 0.0,
       "max": 100.0
     },
     "openweight_capability": {
       "label": "Open-weight capability",
-      "value": 55.0,
-      "previous": 53.5,
-      "delta": 1.5,
+      "value": 64.5,
+      "previous": 64.0,
+      "delta": 0.5,
       "min": 0.0,
       "max": 100.0
     },
     "ai_safety": {
       "label": "AI safety",
-      "value": 1.0,
-      "previous": 3.0,
+      "value": 8.0,
+      "previous": 10.0,
       "delta": -2.0,
       "min": 0.0,
       "max": 100.0
     },
     "resilience": {
       "label": "Resilience",
-      "value": 48.0,
-      "previous": 45.0,
-      "delta": 3.0,
+      "value": 42.5,
+      "previous": 34.5,
+      "delta": 8.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
-      "value": 13.0,
-      "previous": 14.0,
-      "delta": -1.0,
+      "value": 10.0,
+      "previous": 12.0,
+      "delta": -2.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_political_capital": {
       "label": "EU political capital",
-      "value": 5.0,
-      "previous": 7.0,
-      "delta": -2.0,
+      "value": 1.0,
+      "previous": 2.0,
+      "delta": -1.0,
       "min": 0.0,
       "max": 100.0
     },
     "public_sentiment": {
       "label": "Public sentiment",
-      "value": 13.0,
-      "previous": 13.0,
-      "delta": 0.0,
+      "value": 18.0,
+      "previous": 12.0,
+      "delta": 6.0,
       "min": 0.0,
       "max": 100.0
     }
   },
   "events": [
     {
-      "id": "eu_frontier_access_denied",
-      "title": "Frontier Access Denied",
-      "description": "The Union is cut off from the leading model at short notice, wholly or by nationality of user. No detailed reason is given, there is no appeal, and the immediate practical effect lands on hospitals, ministries and firms that had built on it. Whether this reads at home as an outrage or as a failure of foresight depends on what the Union had done about it beforehand.",
+      "id": "ai_investment_collapse",
+      "title": "AI Investment Collapse",
+      "description": "Capital flees the sector. Valuations reset hard, announced build-out is cancelled rather than delayed, and several of the arrangements European compute was depending on evaporate with it. What the frontier laboratories can afford to train shrinks for the first time.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "medical_breakthrough",
+      "title": "Medicine Delivers",
+      "description": "Treatments arrive for diseases previously untreatable, or individually tailored therapies reach ordinary clinical use. It moves `public_sentiment` sharply upward – unless the models delivering it are ones the Union cannot access on its own terms, in which case the benefit arrives as a further demonstration of dependence and moves sentiment much less.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "embodied_ai_deployment",
+      "title": "Robots Leave the Demonstration Floor",
+      "description": "Robots reach commercial deployment – not the demonstration videos, convincing for years now, but machines bought in quantity and put to work in warehouses, food processing, loading docks and the parts of manufacturing that resisted automation because the sequence varied. The capability is coarse, and the limit is worth stating exactly: lifting, carrying, sorting, palletising, cleaning, basic assembly – whole-arm movements in a setting that can be arranged around the machine. Fine motor work is not solved, nor is anything needing a light touch, a judgement about what an object is doing, or improvisation when the plan is wrong; surgery, wiring, repair, most care work and any construction site worth the name stay human. The same limit shapes the military uses, which arrive at the same time and for the same reason: carrying, digging, resupply under fire, mine clearance, casualty extraction, perimeter patrol. The machines are cheap enough to lose, which is the property that matters, and procurement runs well ahead of any doctrine for using them. Autonomous lethality is a separate argument and is not settled here; what is settled is that the logistics tail of an army stops needing as many people in it. For the Union it lands on the industrial base it still leads in, and it lands from outside: China already builds more than half the world's robots and holds the supply chain for the actuators, reducers and motors beneath them, and the control models are American. It takes away access on the terms of metric rule 5 at the small end – a new dependence forming rather than existing access withdrawn – and `public_sentiment` falls −2 to −5, because physical work entering the displacement question reaches people no reskilling programme has ever reached.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "member_state_defection",
+      "title": "Member State Defection",
+      "description": "A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken. It is defended at home as pragmatism and read everywhere else as the Union being unable to hold its own line.",
       "emergent": false,
       "pinned": false
     }
   ],
   "portfolio": [
     {
-      "name": "Emergency Resilience Surge",
+      "name": "Tech sovereignty package",
+      "category": 4,
+      "cost": 3,
+      "start": 0,
+      "finish": 6,
+      "description": "eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2029",
+      "start_period": null
+    },
+    {
+      "name": "EU AI Evaluation and Safety Institute",
+      "category": 5,
+      "cost": 3,
+      "start": 1,
+      "finish": 4,
+      "description": "ai_safety up, eu_ai_sovereignty up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2028",
+      "start_period": "the second half of 2026"
+    },
+    {
+      "name": "EU Grid Shield Hardening Programme",
       "category": 6,
       "cost": 3,
-      "start": 12,
+      "start": 2,
+      "finish": 7,
+      "description": "resilience up strongly, ai_safety up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the second half of 2029",
+      "start_period": "the first half of 2027"
+    },
+    {
+      "name": "EU Bio-Cyber Shield Surge",
+      "category": 6,
+      "cost": 2,
+      "start": 3,
+      "finish": 6,
+      "description": "resilience up, ai_safety up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2029",
+      "start_period": "the second half of 2027"
+    },
+    {
+      "name": "EU Continuity Stack for Cut-Off Services",
+      "category": 9,
+      "cost": 2,
+      "start": 4,
+      "finish": 6,
+      "description": "resilience up, eu_ai_sovereignty up modestly, public_sentiment up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2029",
+      "start_period": "the first half of 2028"
+    },
+    {
+      "name": "EU Hospital Helper Fix and Triage Continuity Fund",
+      "category": 9,
+      "cost": 2,
+      "start": 7,
+      "finish": 9,
+      "description": "public_sentiment up, resilience up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the second half of 2030",
+      "start_period": "the second half of 2029"
+    },
+    {
+      "name": "EU United Access and No-Undercut Pact",
+      "category": 8,
+      "cost": 2,
+      "start": 8,
+      "finish": 10,
+      "description": "eu_ai_sovereignty up modestly, eu_political_capital down then up, public_sentiment up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2031",
+      "start_period": "the first half of 2030"
+    },
+    {
+      "name": "EU Bio-Uplift Detection and Open-Weight Misuse Shield",
+      "category": 6,
+      "cost": 2,
+      "start": 10,
       "finish": 13,
-      "description": "A rapid, EU-coordinated programme to harden critical public services—healthcare, energy, emergency response—against AI-enabled cyberattacks by deploying autonomous defensive agents, air-gapped backups, and human-supervised failover protocols within 90 days`` — finished this turn",
-      "finished": false,
-      "status": "running",
+      "description": "resilience up strongly, ai_safety up modestly",
+      "finished": true,
+      "status": "finished",
       "finish_period": "the second half of 2032",
-      "start_period": "the first half of 2032"
+      "start_period": "the first half of 2031"
+    },
+    {
+      "name": "EU Bio Incident Containment and Mutual Aid Surge",
+      "category": 6,
+      "cost": 2,
+      "start": 11,
+      "finish": 13,
+      "description": "resilience up strongly, public_sentiment up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the second half of 2032",
+      "start_period": "the second half of 2031"
+    },
+    {
+      "name": "EU Clinical Benefit Delivery Pact",
+      "category": 9,
+      "cost": 2,
+      "start": 13,
+      "finish": 15,
+      "description": "public_sentiment up strongly, resilience up modestly, eu_political_capital up",
+      "finished": false,
+      "status": "new",
+      "finish_period": "the second half of 2033",
+      "start_period": "the second half of 2032"
     }
   ],
   "cancelled": [],
-  "new_measure": "Launch the Sovereign Compute Reconstitution Programme",
-  "priority": "Launch the Sovereign Compute Reconstitution Programme",
-  "commitment": null,
+  "new_measure": "EU Clinical Benefit Delivery Pact",
+  "priority": "EU Clinical Benefit Delivery Pact, because with no measures in flight and capital at 2, restoring public consent through cures people can se",
+  "commitment": "Rebuild trusted European AI that delivers visible public benefit and unblocks sovereign capacity",
   "prev_node": "turn-12-P211",
   "next_node": null,
   "next_choice": null,

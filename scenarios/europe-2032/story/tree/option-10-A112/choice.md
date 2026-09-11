@@ -7,15 +7,10 @@ next: turn-10-A112
 ---
 
 <!-- scaffold: rewrite this, then set status: written -->
-<!-- stance: fight deception | source: pool-10-A11/sample-07.md | minority, 4/10 -->
+<!-- stance: wait | source: pool-10-A11-20260911/sample-06.md | minority, no new measure, 1/10 -->
 
-**Counter-Deception Rapid Response Corps**
+**no new measure**
 
-**Counter-Deception Rapid Response Corps**  
-A deployable EU task force equipped with forensic AI analysis tools, diplomatic coordination protocols, and emergency communication authority to detect, attribute, and neutralise AI-generated synthetic crises within 72 hours of emergence.
+None this turn — waiting for the US-China exchange to reveal which cables, fabs and data-centres survive before staking scarce capital on a new build.
 
-`Category: 6 (Preparedness and resilience)`  
-`Size: large`  
-`Finishes on turn: 13`  
-`Targeted effect:` +8 to resilience by reducing the political and institutional damage from synthetic leaks and deepfake crises; +3 to ai_safety by creating a feedback loop between incident response and behavioural monitoring; enables faster restoration of public trust during acute events  
-`Applies to:` EU institutions, member states, national broadcasters, electoral commissions, and critical diplomatic channels
+With political capital at 8, sentiment at 17, and a shooting great-power war that makes fabrication plants, cables and data-centres targets, adding a new costly instrument now would break cohesion rather than hold it; this turn must execute what is already on the books and keep the Coalition as the single wartime bargaining channel.

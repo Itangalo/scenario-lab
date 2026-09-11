@@ -7,15 +7,10 @@ next: turn-10-V212
 ---
 
 <!-- scaffold: rewrite this, then set status: written -->
-<!-- stance: wield the Core | source: pool-10-V21/sample-10.md | minority, 4/10 by priority -->
+<!-- stance: corps | source: pool-10-V21-20260911/sample-06.md | minority, bio corps, 2/10 -->
 
-**Accelerate EU AI Safety Assurance Infrastructure**
+**EU Fallback Care and Bio-Response Corps**
 
-**Accelerate EU AI Safety Assurance Infrastructure**  
-Stand up an independent, real-time monitoring and intervention capability for high-risk AI systems operating within or affecting the EU, using sovereign compute and public technical capacity to enforce red lines.
-
-`Category: 5 (Public technical capacity and research)`  
-`Size: large`  
-`Finishes on turn: 13`  
-`Targeted effect:` Increase ai_safety by 15–20 points; modestly improve eu_ai_sovereignty (+5) and resilience (+3) by enabling rapid containment of emergent threats  
-`Applies to:` EU jurisdiction, with extraterritorial enforcement via access conditions for foreign developers using EU-hosted evaluation or compute
+**EU Fallback Care and Bio-Response Corps**
+Keeps hospitals, dispatch and labs running on EU-controlled models and offline procedures while HERA/ECDC leads weeks-long containment of the released/modified agent.
+Category 6 Preparedness and resilience is why now: the bio incident, the cyber-degraded clinics, and the US frontier cutoff hit the same essential services at once, and only a single funded emergency presence can hold cohesion with capital at 3.

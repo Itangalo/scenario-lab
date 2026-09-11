@@ -8,9 +8,9 @@
   "stage": 1,
   "us_election": null,
   "provenance": {
-    "run": "run-20260904-224120",
-    "seed": 2445863046910987280,
-    "turn_dir": "runs/run-20260904-224120/turn-02",
+    "run": "run-20260910-230000",
+    "seed": 11600467019858866220,
+    "turn_dir": "runs/run-20260910-230000/turn-02",
     "pinned_turn": null,
     "option_file": "turn-01/option-02-1.md",
     "path_rep": 1,
@@ -27,104 +27,96 @@
     },
     "openweight_capability": {
       "label": "Open-weight capability",
-      "value": 42.5,
-      "previous": 41.0,
-      "delta": 1.5,
+      "value": 49.7,
+      "previous": 46.0,
+      "delta": 3.7,
       "min": 0.0,
       "max": 100.0
     },
     "ai_safety": {
       "label": "AI safety",
-      "value": 28.0,
-      "previous": 31.0,
-      "delta": -3.0,
+      "value": 30.0,
+      "previous": 32.0,
+      "delta": -2.0,
       "min": 0.0,
       "max": 100.0
     },
     "resilience": {
       "label": "Resilience",
-      "value": 35.0,
-      "previous": 37.0,
-      "delta": -2.0,
+      "value": 37.0,
+      "previous": 38.0,
+      "delta": -1.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
-      "value": 21.0,
-      "previous": 21.0,
+      "value": 22.0,
+      "previous": 22.0,
       "delta": 0.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_political_capital": {
       "label": "EU political capital",
-      "value": 34.0,
-      "previous": 38.0,
-      "delta": -4.0,
+      "value": 31.0,
+      "previous": 41.0,
+      "delta": -10.0,
       "min": 0.0,
       "max": 100.0
     },
     "public_sentiment": {
       "label": "Public sentiment",
-      "value": 42.0,
-      "previous": 42.0,
+      "value": 39.0,
+      "previous": 39.0,
       "delta": 0.0,
       "min": 0.0,
       "max": 100.0
     }
   },
-  "events": [
-    {
-      "id": "supply_chain_coercion",
-      "title": "Coercion Over ASML",
-      "description": "Washington forces the Netherlands to cut ASML's exports and servicing further still – beyond the leading-edge machines to the older lithography equipment China uses for ordinary chips, and in the harder versions to a widening list of other customers. The instrument is jurisdiction over American technology in the supply chain, and refusing it is not obviously survivable for the company. The Union's one chokepoint is being used, and not by the Union.",
-      "emergent": false,
-      "pinned": false
-    }
-  ],
+  "events": [],
   "portfolio": [
     {
       "name": "InvestAI Gigafactories",
       "category": 4,
       "cost": 3,
-      "start": 1,
+      "start": 0,
       "finish": 7,
-      "description": "€200bn fund for four to five sites",
+      "description": "eu_ai_sovereignty up, via €200bn for four to five sites",
       "finished": false,
       "status": "running",
       "finish_period": "the second half of 2029",
-      "start_period": "the second half of 2026"
+      "start_period": null
     },
     {
       "name": "Tech sovereignty package",
       "category": 4,
       "cost": 3,
-      "start": 1,
+      "start": 0,
       "finish": 6,
-      "description": "Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones",
+      "description": "eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones",
       "finished": false,
       "status": "running",
       "finish_period": "the first half of 2029",
-      "start_period": "the second half of 2026"
+      "start_period": null
     },
     {
-      "name": "Emergency Sovereign Compute Directive",
-      "category": 4,
+      "name": "EU Critical Services Shield",
+      "category": 6,
       "cost": 3,
-      "start": 2,
-      "finish": 3,
-      "description": "A binding legal instrument to reserve 30% of all frontier-class compute capacity in the EU for state-critical and public-interest use, effective on deployment",
+      "start": 1,
+      "finish": 4,
+      "description": "resilience up substantially, ai_safety indirectly via incident response",
       "finished": false,
-      "status": "new",
-      "finish_period": "the second half of 2027",
-      "start_period": "the first half of 2027"
+      "status": "running",
+      "finish_period": "the first half of 2028",
+      "start_period": "the second half of 2026"
     }
   ],
   "cancelled": [],
-  "new_measure": "Secure European Access to Advanced Lithography",
-  "priority": "Emergency Sovereign Compute Directive",
-  "commitment": null,
+  "new_measure": null,
+  "priority": "EU Critical Services Shield (M3)",
+  "commitment": "Secure independent capacity and resilience so the Union can withstand coercion and absorb AI harm",
   "prev_node": "option-02-1",
   "next_node": "turn-03-P1",
   "next_choice": null,

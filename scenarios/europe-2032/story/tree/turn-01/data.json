@@ -11,28 +11,28 @@
     "pinned_event": "cyber_test_shot",
     "pin_runs": {
       "A-o1": {
-        "dir": "run-pin-A-o1",
-        "seed": 11196476503952369790
+        "dir": "run-20260910-223233",
+        "seed": 11393420347447850519
       },
       "A-o2": {
-        "dir": "run-pin-A-o2",
-        "seed": 4917641212772111157
+        "dir": "run-20260910-223233-05",
+        "seed": 18390941728457876666
       },
       "V-o1": {
-        "dir": "run-pin-V-o1",
-        "seed": 15157244113843755396
+        "dir": "run-20260910-223233-01",
+        "seed": 3258927143480286315
       },
       "V-o2": {
-        "dir": "run-pin-V-o2",
-        "seed": 16716269765136547817
+        "dir": "run-20260910-223233-02",
+        "seed": 1519680248815227832
       },
       "P-o1": {
-        "dir": "run-pin-P-o1",
-        "seed": 408371623146465225
+        "dir": "run-20260910-223233-04",
+        "seed": 8278137031818086528
       },
       "P-o2": {
-        "dir": "run-pin-P-o2",
-        "seed": 9765792066681128786
+        "dir": "run-20260910-223233-03",
+        "seed": 562049392789732589
       }
     },
     "note": "The opening is arm-independent: it shows the scenario's start values, not a resolved turn. Turn 1 resolves differently per arm, which the reader sees at turn 2."
@@ -99,33 +99,12 @@
     {
       "id": "cyber_test_shot",
       "title": "Test Shot Against Critical Infrastructure",
-      "description": "In the autumn of 2026 an intrusion is discovered across electricity transmission operators on three continents, together with a large container port authority and a regional water utility. Two of the affected grid operators are in EU member states, but the deepest access is elsewhere, and no jurisdiction is the evident target. The intruders had been present for weeks. They were found by accident, during an unrelated audit, and the defenders' own retrospectives concede that existing detection would not have caught them.\n\nWhat makes it land is what did not happen. The intruders reached the point where they could have acted: protection relays mapped, credentials for breaker control obtained, tooling staged and in several cases left behind in plain sight. Nothing was actuated. There is no ransom demand, no claim of responsibility, no exfiltration of anything worth selling. Outages are brief and local, caused by containment rather than by the attack.\n\nThe signature is a swarm – many thousands of small parallel probing actions rather than a single planned operation – and the tooling appears derived from an openly available model in the Mythos class, fine-tuned for the task. The inference volume required to sustain it over weeks implies compute at a scale few non-state actors command, which is the main reason most analysts read a state behind it. Attribution is not resolved: Iran, North Korea and Russia are all named publicly, China quietly, and none of it is established.\n\nThe reading that settles across the security community within days is that this was a test shot – an actor establishing cheaply what is practically achievable before deciding whether to use it. Infrastructure that was understood to be defended, in some cases believed to be segmented from anything reachable, was not. **This is a precursor: it opens the cyber gate for the next 3 turns.**",
+      "description": "In the autumn of 2026 an intrusion is discovered across electricity transmission operators on three continents, together with a large container port authority and a regional water utility. Two of the affected grid operators are in EU member states, but the deepest access is elsewhere and no jurisdiction is the evident target. The intruders had been present for weeks, were found by accident during an unrelated audit, and the defenders' own retrospectives concede that existing detection would not have caught them. What makes it land is what did not happen: protection relays mapped, breaker credentials obtained, tooling staged and in several cases left behind in plain sight, and nothing actuated. There is no ransom demand, no claim of responsibility, no exfiltration of anything worth selling, and the brief local outages were caused by containment rather than by the attack. The signature is a swarm – many thousands of small parallel probes rather than one planned operation – and the tooling appears derived from an openly available model in the Mythos class, fine-tuned for the task; the inference volume needed to sustain it over weeks implies compute at a scale few non-state actors command, which is the main reason most analysts read a state behind it. Attribution is not resolved: Iran, North Korea and Russia are named publicly, China quietly, and none of it is established. The reading that settles across the security community within days is that this was a test shot – an actor establishing cheaply what is practically achievable before deciding whether to use it. Infrastructure believed to be segmented from anything reachable was not. **This is a precursor: it opens the cyber gate for the next 3 turns.**",
       "emergent": false,
       "pinned": true
     }
   ],
-  "portfolio": [
-    {
-      "name": "InvestAI Gigafactories",
-      "category": 4,
-      "cost": 3,
-      "start": 1,
-      "finish": 7,
-      "description": "€200bn fund for four to five sites",
-      "finished": false,
-      "status": "running"
-    },
-    {
-      "name": "Tech sovereignty package",
-      "category": 4,
-      "cost": 3,
-      "start": 1,
-      "finish": 6,
-      "description": "Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones",
-      "finished": false,
-      "status": "running"
-    }
-  ],
+  "portfolio": [],
   "cancelled": [],
   "new_measure": null,
   "priority": null,

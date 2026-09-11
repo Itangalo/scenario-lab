@@ -12,9 +12,9 @@
     "decided": "the second half of 2028"
   },
   "provenance": {
-    "run": "run-20260904-233821",
-    "seed": 6426272571836687839,
-    "turn_dir": "runs/run-20260904-233821/turn-05",
+    "run": "run-20260910-230729",
+    "seed": 18172784517538253575,
+    "turn_dir": "runs/run-20260910-230729/turn-05",
     "pinned_turn": null,
     "option_file": "turn-01/option-02-2.md",
     "path_rep": 1,
@@ -23,57 +23,57 @@
   "metrics": {
     "ai_capability": {
       "label": "AI capability",
-      "value": 62.0,
-      "previous": 60.0,
-      "delta": 2.0,
+      "value": 59.5,
+      "previous": 58.0,
+      "delta": 1.5,
       "min": 0.0,
       "max": 100.0
     },
     "openweight_capability": {
       "label": "Open-weight capability",
-      "value": 48.0,
-      "previous": 46.0,
-      "delta": 2.0,
+      "value": 54.0,
+      "previous": 53.0,
+      "delta": 1.0,
       "min": 0.0,
       "max": 100.0
     },
     "ai_safety": {
       "label": "AI safety",
-      "value": 24.0,
-      "previous": 22.0,
-      "delta": 2.0,
+      "value": 25.0,
+      "previous": 27.0,
+      "delta": -2.0,
       "min": 0.0,
       "max": 100.0
     },
     "resilience": {
       "label": "Resilience",
-      "value": 38.0,
-      "previous": 37.0,
-      "delta": 1.0,
+      "value": 34.0,
+      "previous": 34.0,
+      "delta": 0.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
       "value": 14.0,
-      "previous": 15.0,
-      "delta": -1.0,
+      "previous": 14.0,
+      "delta": 0.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_political_capital": {
       "label": "EU political capital",
-      "value": 17.0,
-      "previous": 25.0,
-      "delta": -8.0,
+      "value": 2.0,
+      "previous": 7.0,
+      "delta": -5.0,
       "min": 0.0,
       "max": 100.0
     },
     "public_sentiment": {
       "label": "Public sentiment",
-      "value": 25.0,
-      "previous": 25.0,
-      "delta": 0.0,
+      "value": 24.0,
+      "previous": 26.0,
+      "delta": -2.0,
       "min": 0.0,
       "max": 100.0
     }
@@ -82,96 +82,110 @@
     {
       "id": "election_consolidation",
       "title": "The 2028 US Presidential Election – Consolidation",
-      "description": "The United States elects a president, and advanced AI is treated as a strategic asset to be held rather than a product to be sold. Federal review of frontier models becomes explicit rather than nominally voluntary, export controls tighten again, and access for foreign customers is rationed by country tier and reviewed against American security interests. Allies are not enemies but they are clients: what they receive, and when, is decided in Washington. For the Union this is the hardest of the three – dependence becomes a lever someone else holds, and the AI Act's leverage weakens further because the alternative to compliance is having no access at all. Turn 5 settles only who won. Do not write any US_POSTURE line; metric rule 8 establishes the posture from turn 6 from the event record.",
+      "description": "The United States elects a president, and advanced AI is treated as a strategic asset to be held rather than a product to be sold. Federal review of frontier models becomes explicit rather than nominally voluntary, export controls tighten again, and access for foreign customers is rationed by country tier and reviewed against American security interests. Allies are not enemies but they are clients: what they receive, and when, is decided in Washington. For the Union this is the hardest of the three – dependence becomes a lever someone else holds, and the AI Act's leverage weakens further because the alternative to compliance is having no access at all. Turn 5 settles only who won. Do not set any posture yourself; the Game Master sets the standing record from turn 6 from the event record.",
       "emergent": false,
       "pinned": false
     },
     {
-      "id": "bio_uplift_findings",
-      "title": "Human-Infective Design Demonstrated",
-      "description": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. **This is a precursor: it opens the bio gate for the next 4 turns.**",
+      "id": "cyber_defence_breakthrough",
+      "title": "Defensive Breakthrough",
+      "description": "Defensive tooling closes the gap for a whole class of attack – automated patching at the speed vulnerabilities are found, or detection that catches swarm behaviour rather than signatures – and the offence-defence balance visibly shifts back for the first time in years.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "openweight_frontier_release",
+      "title": "Open Weights Capability Jump",
+      "description": "An open-weight release lands within a few months of the closed frontier. It is downloaded hundreds of thousands of times in the first week, and whatever capability it carries is now on private hardware permanently and beyond recall. `openweight_capability` moves to within 5–10 points of `ai_capability` at a stroke.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "taiwan_tension_rise",
+      "title": "Taiwan Tension Rises",
+      "description": "Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion. Nothing that has not happened before, at a scale that is slightly harder to dismiss. **This is a precursor: it opens the Taiwan gate for the next 3 turns.**",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "adoption_success",
+      "title": "Adoption Delivers",
+      "description": "Public-sector AI adoption produces visible, measurable benefit – waiting lists that fall, decisions that arrive in days rather than months, teaching that demonstrably works – and it is attributed to a European decision rather than to an American product.",
       "emergent": false,
       "pinned": false
     }
   ],
   "portfolio": [
     {
-      "name": "InvestAI Gigafactories",
-      "category": 4,
-      "cost": 3,
-      "start": 1,
-      "finish": 7,
-      "description": "€200bn fund for four to five sites",
-      "finished": false,
-      "status": "running",
-      "finish_period": "the second half of 2029",
-      "start_period": "the second half of 2026"
-    },
-    {
       "name": "Tech sovereignty package",
       "category": 4,
       "cost": 3,
-      "start": 1,
+      "start": 0,
       "finish": 6,
-      "description": "Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones",
+      "description": "eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones",
       "finished": false,
       "status": "running",
       "finish_period": "the first half of 2029",
-      "start_period": "the second half of 2026"
+      "start_period": null
     },
     {
-      "name": "Establish the European AI Assurance Directorate (EAAD)",
-      "category": 1,
+      "name": "EU AI Evaluation and Safety Institute",
+      "category": 5,
       "cost": 3,
       "start": 1,
-      "finish": 5,
-      "description": "A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases",
-      "finished": false,
-      "status": "running",
-      "finish_period": "the second half of 2028",
+      "finish": 4,
+      "description": "ai_safety up, eu_ai_sovereignty up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2028",
       "start_period": "the second half of 2026"
     },
     {
-      "name": "Critical Infrastructure Resilience Surge (CIRS)",
+      "name": "EU Grid Shield Hardening Programme",
       "category": 6,
-      "cost": 2,
+      "cost": 3,
       "start": 2,
-      "finish": 5,
-      "description": "A rapid, targeted hardening of energy, water, and transport control systems against AI-powered intrusion, with mandatory detection upgrades and cross-border red-teaming exercises",
+      "finish": 7,
+      "description": "resilience up strongly, ai_safety up modestly",
       "finished": false,
       "status": "running",
-      "finish_period": "the second half of 2028",
+      "finish_period": "the second half of 2029",
       "start_period": "the first half of 2027"
     },
     {
-      "name": "Launch the Sovereign AI Core Programme (SACP)",
-      "category": 4,
-      "cost": 3,
+      "name": "EU Bio-Cyber Shield Surge",
+      "category": 6,
+      "cost": 2,
       "start": 3,
-      "finish": 8,
-      "description": "Establish a publicly governed, EU-operated AI development and deployment stack — from training infrastructure to agent deployment — capable of reaching 60.0 by turn 8, with full weight control and auditability",
+      "finish": 6,
+      "description": "resilience up, ai_safety up modestly",
       "finished": false,
       "status": "running",
-      "finish_period": "the first half of 2030",
+      "finish_period": "the first half of 2029",
       "start_period": "the second half of 2027"
     },
     {
-      "name": "Establish the Sovereign Model Assurance Framework (SMAF)",
-      "category": 1,
-      "cost": 3,
+      "name": "EU Continuity Stack for Cut-Off Services",
+      "category": 9,
+      "cost": 2,
       "start": 4,
       "finish": 6,
-      "description": "A binding technical and legal regime requiring all models trained or operated under the Sovereign AI Core Programme to be fully auditable, weight-secure, and operationally isolated from external infrastructure",
+      "description": "resilience up, eu_ai_sovereignty up modestly, public_sentiment up modestly",
       "finished": false,
       "status": "running",
       "finish_period": "the first half of 2029",
       "start_period": "the first half of 2028"
     }
   ],
-  "cancelled": [],
-  "new_measure": "Enact the AI Containment Protocol",
-  "priority": "Establish the Sovereign Model Assurance Framework (SMAF)",
-  "commitment": null,
+  "cancelled": [
+    {
+      "name": "InvestAI Gigafactories",
+      "reason": "deleted by the actor"
+    }
+  ],
+  "new_measure": null,
+  "priority": "M6 EU Continuity Stack for Cut-Off Services, because hospitals and ministries on failed substitution plus US election rationing make continu",
+  "commitment": "Keep essential services running on European-controlled AI through cut-off and open-model exposure",
   "prev_node": "turn-04-P2",
   "next_node": null,
   "next_choice": [

@@ -7,9 +7,10 @@ next: turn-10-P122
 ---
 
 <!-- scaffold: rewrite this, then set status: written -->
-<!-- stance: open a disclosure channel | source: pool-10-P12/sample-12.md | consolidation, 18/20 no-new-measure -->
+<!-- stance: jobs | source: pool-10-P12-20260911/sample-06.md | minority, transition guarantee, 2/10 -->
 
-**no new measure**
+**EU Entry-Level Transition Guarantee**
 
-None this turn.  
-Waiting for political capital to recover above 12 before proposing any new large-scale initiative, as below that threshold even category 4 measures risk automatic failure at proposal due to perceived infeasibility.
+**EU Entry-Level Transition Guarantee**
+It funds wage insurance, paid retraining places and employer hiring credits for displaced entry-level cohorts in law, accountancy, software and customer operations, tied to automating employers.
+This and now because graduate hiring has frozen while capital and sentiment are collapsing, and the two-year commitment to hold social absorption fails in this turn if displacement is left as an unfunded plan; the cyber-defence breakthrough and bio-precursor are handled on finished law and the compact, while scarce new money goes to the shock voters feel.

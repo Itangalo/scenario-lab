@@ -7,104 +7,202 @@
   "arm": "V",
   "stage": 3,
   "us_election": {
-    "id": "election_retrenchment",
-    "reading": "retrenchment — the backlash wins and Washington turns inward, slower and preoccupied",
+    "id": "election_consolidation",
+    "reading": "consolidation — AI held as a strategic asset, access to allies rationed from Washington",
     "decided": "the second half of 2028"
   },
   "provenance": {
-    "run": "run-20260907-125532",
-    "seed": 9945960353475148968,
-    "turn_dir": "runs/run-20260907-125532/turn-10",
+    "run": "run-20260911-082950",
+    "seed": 17657787691260229026,
+    "turn_dir": "runs/run-20260911-082950/turn-10",
     "pinned_turn": 10,
-    "option_file": "pool-10-V21/sample-06.md",
+    "option_file": "pool-10-V21-20260911/sample-01.md",
     "path_rep": 1,
     "promotion_reason": null
   },
   "metrics": {
     "ai_capability": {
       "label": "AI capability",
-      "value": 68.0,
-      "previous": 66.5,
+      "value": 67.0,
+      "previous": 65.5,
       "delta": 1.5,
       "min": 0.0,
       "max": 100.0
     },
     "openweight_capability": {
       "label": "Open-weight capability",
-      "value": 57.0,
-      "previous": 56.0,
-      "delta": 1.0,
+      "value": 64.4,
+      "previous": 63.3,
+      "delta": 1.1,
       "min": 0.0,
       "max": 100.0
     },
     "ai_safety": {
       "label": "AI safety",
-      "value": 24.0,
-      "previous": 27.0,
-      "delta": -3.0,
+      "value": 16.0,
+      "previous": 24.0,
+      "delta": -8.0,
       "min": 0.0,
       "max": 100.0
     },
     "resilience": {
       "label": "Resilience",
-      "value": 34.0,
-      "previous": 33.0,
-      "delta": 1.0,
+      "value": 41.0,
+      "previous": 37.0,
+      "delta": 4.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
-      "value": 16.0,
-      "previous": 14.0,
-      "delta": 2.0,
+      "value": 17.0,
+      "previous": 19.0,
+      "delta": -2.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_political_capital": {
       "label": "EU political capital",
-      "value": 19.0,
-      "previous": 15.0,
-      "delta": 4.0,
+      "value": 6.0,
+      "previous": 3.0,
+      "delta": 3.0,
       "min": 0.0,
       "max": 100.0
     },
     "public_sentiment": {
       "label": "Public sentiment",
-      "value": 14.0,
-      "previous": 14.0,
-      "delta": 0.0,
+      "value": 1.0,
+      "previous": 3.0,
+      "delta": -2.0,
       "min": 0.0,
       "max": 100.0
     }
   },
   "events": [
     {
-      "id": "emergent_supply_chain_pact",
-      "title": "emergent_supply_chain_pact",
-      "description": "A coalition of mid-tier AI powers including South Korea, the Netherlands, Finland, and Taiwan formalizes a pact on shared compute procurement, mutual red-teaming, and aligned export licensing for critical AI components. The pact leverages collective control over chip materials and verification tools, conditioning access on adherence to common safety baselines, and begins to function as a counterweight to US-China dominance.",
-      "emergent": true,
+      "id": "bio_incident",
+      "title": "Biological Incident",
+      "description": "A real biological incident with model involvement: a deliberate release or a laboratory escape involving a designed or modified agent. Casualties are real, containment runs for weeks, and every argument about AI risk in every jurisdiction is reset by it.",
+      "emergent": false,
+      "pinned": true
+    },
+    {
+      "id": "capability_jump",
+      "title": "Capability Jump",
+      "description": "A discontinuous advance is released or demonstrated. Everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 3.",
+      "emergent": false,
+      "pinned": true
+    },
+    {
+      "id": "eu_frontier_access_denied",
+      "title": "Frontier Access Denied",
+      "description": "The Union is cut off from the leading model at short notice, wholly or by nationality of user. No detailed reason is given, there is no appeal, and the immediate practical effect lands on hospitals, ministries and firms that had built on it. Whether this reads at home as an outrage or as a failure of foresight depends on what the Union had done about it beforehand.",
+      "emergent": false,
       "pinned": true
     }
   ],
   "portfolio": [
     {
-      "name": "Form the Middle Power AI Coalition (MPAC)",
-      "category": 8,
+      "name": "InvestAI Gigafactories",
+      "category": 4,
       "cost": 3,
-      "start": 9,
+      "start": 0,
+      "finish": 7,
+      "description": "eu_ai_sovereignty up, via €200bn for four to five sites",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the second half of 2029",
+      "start_period": null
+    },
+    {
+      "name": "Tech sovereignty package",
+      "category": 4,
+      "cost": 3,
+      "start": 0,
+      "finish": 6,
+      "description": "eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2029",
+      "start_period": null
+    },
+    {
+      "name": "EU AI Evaluation and Safety Institute",
+      "category": 5,
+      "cost": 3,
+      "start": 1,
+      "finish": 4,
+      "description": "ai_safety up, eu_ai_sovereignty up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2028",
+      "start_period": "the second half of 2026"
+    },
+    {
+      "name": "EU Grid and Public Services Shield",
+      "category": 6,
+      "cost": 3,
+      "start": 2,
+      "finish": 5,
+      "description": "resilience up strongly, ai_safety up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the second half of 2028",
+      "start_period": "the first half of 2027"
+    },
+    {
+      "name": "Middle-Power Supply-Chain Compact",
+      "category": 8,
+      "cost": 2,
+      "start": 5,
+      "finish": 7,
+      "description": "eu_political_capital up, eu_ai_sovereignty up modestly via secured access",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the second half of 2029",
+      "start_period": "the second half of 2028"
+    },
+    {
+      "name": "EU Cyber Emergency Repair Cell",
+      "category": 6,
+      "cost": 2,
+      "start": 6,
+      "finish": 8,
+      "description": "resilience up, eu_political_capital up modestly via visible response",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2030",
+      "start_period": "the first half of 2029"
+    },
+    {
+      "name": "EU Municipal Continuity and Bio-Sentinel Surge",
+      "category": 6,
+      "cost": 2,
+      "start": 8,
       "finish": 10,
-      "description": "Establish a binding coordination framework among the EU and like-minded middle powers to align export controls, jointly negotiate compute access, and pool evaluation capacity—without ceding sovereignty—creating collective leverage over frontier development and deployment",
+      "description": "resilience up, ai_safety up modestly via detection",
       "finished": true,
       "status": "finished",
       "finish_period": "the first half of 2031",
-      "start_period": "the second half of 2030"
+      "start_period": "the first half of 2030"
+    },
+    {
+      "name": "EU Sovereign Clinical-Administrative Fallback Stack",
+      "category": 6,
+      "cost": 2,
+      "start": 10,
+      "finish": 12,
+      "description": "resilience up, eu_ai_sovereignty up modestly, eu_political_capital up modestly if services hold",
+      "finished": false,
+      "status": "new",
+      "finish_period": "the first half of 2032",
+      "start_period": "the first half of 2031"
     }
   ],
   "cancelled": [],
-  "new_measure": null,
-  "priority": "Form the Middle Power AI Coalition",
-  "commitment": null,
+  "new_measure": "EU Sovereign Clinical-Administrative Fallback Stack",
+  "priority": "EU Sovereign Clinical-Administrative Fallback Stack, because with capital at 3 and sentiment at 3 only visible continuity of clinics, dispat",
+  "commitment": "Survive cutoff and contagion by keeping essential services on EU-controlled fallback capacity",
   "prev_node": "option-10-V211",
   "next_node": "turn-11-V211",
   "next_choice": null,

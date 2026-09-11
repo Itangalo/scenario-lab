@@ -7,11 +7,9 @@ next: turn-10-A121
 ---
 
 <!-- scaffold: rewrite this, then set status: written -->
-<!-- stance: hold the line | source: pool-10-A12/sample-16.md | hold consensus, 13/20 hold cluster -->
+<!-- stance: redress | source: pool-10-A12-20260911/sample-01.md | majority, redress registries, 7/10 -->
 
-**no new measure**
+**EU Welfare AI Redress and Human Oversight Enforcement**
 
-None this turn.  
-Waiting for the first outputs of the Open Science Resilience Initiative to assess feasibility of scaling auditable models into strategic domains, and for the fallout of eu_frontier_access_denied to clarify the scope of our exposure.
-
----
+**EU Welfare AI Redress and Human Oversight Enforcement**
+Creates an EU-level redress and re-examination duty for AI-supported welfare, policing and court-assistance systems with logging audit and meaningful human-review standards enforced through the AI Act. Category 2 transparency and reporting measure — why this and why now: the automated-decision scandal has made enforcement the test of the Act itself, and with sentiment at 20 and capital at 9 we cannot afford adoption or sovereignty without showing wronged people get remedy fast.

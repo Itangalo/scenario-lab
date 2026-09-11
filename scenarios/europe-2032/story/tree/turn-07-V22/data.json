@@ -7,16 +7,16 @@
   "arm": "V",
   "stage": 2,
   "us_election": {
-    "id": "election_retrenchment",
-    "reading": "retrenchment — the backlash wins and Washington turns inward, slower and preoccupied",
+    "id": "election_consolidation",
+    "reading": "consolidation — AI held as a strategic asset, access to allies rationed from Washington",
     "decided": "the second half of 2028"
   },
   "provenance": {
-    "run": "run-20260906-142403",
-    "seed": 15801352484355903432,
-    "turn_dir": "runs/run-20260906-142403/turn-07",
+    "run": "run-20260911-011551",
+    "seed": 1941774096015514131,
+    "turn_dir": "runs/run-20260911-011551/turn-07",
     "pinned_turn": 6,
-    "option_file": "pool-06-V2/sample-07.md",
+    "option_file": "pool-06-V2-20260911/sample-04.md",
     "path_rep": 1,
     "promotion_reason": null
   },
@@ -24,113 +24,130 @@
     "ai_capability": {
       "label": "AI capability",
       "value": 63.5,
-      "previous": 62.0,
-      "delta": 1.5,
+      "previous": 62.5,
+      "delta": 1.0,
       "min": 0.0,
       "max": 100.0
     },
     "openweight_capability": {
       "label": "Open-weight capability",
-      "value": 51.5,
-      "previous": 50.0,
-      "delta": 1.5,
+      "value": 60.8,
+      "previous": 59.4,
+      "delta": 1.4,
       "min": 0.0,
       "max": 100.0
     },
     "ai_safety": {
       "label": "AI safety",
-      "value": 25.0,
-      "previous": 37.0,
-      "delta": -12.0,
+      "value": 28.0,
+      "previous": 30.0,
+      "delta": -2.0,
       "min": 0.0,
       "max": 100.0
     },
     "resilience": {
       "label": "Resilience",
-      "value": 40.0,
-      "previous": 38.0,
-      "delta": 2.0,
+      "value": 34.5,
+      "previous": 35.5,
+      "delta": -1.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
-      "value": 13.0,
-      "previous": 14.0,
-      "delta": -1.0,
+      "value": 17.0,
+      "previous": 17.0,
+      "delta": 0.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_political_capital": {
       "label": "EU political capital",
-      "value": 12.0,
-      "previous": 14.0,
-      "delta": -2.0,
+      "value": 2.0,
+      "previous": 2.0,
+      "delta": 0.0,
       "min": 0.0,
       "max": 100.0
     },
     "public_sentiment": {
       "label": "Public sentiment",
-      "value": 18.0,
-      "previous": 22.0,
-      "delta": -4.0,
+      "value": 5.0,
+      "previous": 7.0,
+      "delta": -2.0,
       "min": 0.0,
       "max": 100.0
     }
   },
   "events": [
     {
-      "id": "cyber_major_incident",
-      "title": "Major Cyber Incident",
-      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
+      "id": "research_breakthrough",
+      "title": "Science Delivers",
+      "description": "A significant research result, with AI doing what used to be the hard part. Decide what it is – a materials finding with industrial consequences, a physics or climate result that settles a long argument, an algorithm that makes something infeasible cheap, a proof closing a problem the field had organised itself around. Then decide its reach, which is not the same as its importance. Every instance of this event is a real advance and none of them is incremental; what varies is who can see it. A sorting algorithm four percent faster than the best known is invisible outside computer science and a landmark inside it, and where the result is of that kind, say why a specialist would call it one. Others reshape an industry within two turns. Say where the work was done, because the address matters as much as the finding. State the effects and the rule each runs under. `public_sentiment` under metric rule 7 where the benefit is visible; `ai_capability` within this run's stated rate under metric rule 1 for a computing result. A European result does **not** move `eu_ai_sovereignty` by itself – rule 5's event term is about access to capacity, not achievement – but it pays as evidence that a finished category 4 or 5 measure produced something.",
       "emergent": false,
       "pinned": false
     },
     {
-      "id": "opaque_reasoning",
-      "title": "Reasoning Stops Being Legible",
-      "description": "The leading systems stop producing intermediate reasoning a human can read, because the representations that work best are not words. Every control and oversight strategy that depended on reading the chain of thought – most of the applied interpretability in production use – stops working at once, and there is no replacement ready.",
-      "emergent": false,
-      "pinned": false
-    },
-    {
-      "id": "member_state_defection",
-      "title": "Member State Defection",
-      "description": "A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken. It is defended at home as pragmatism and read everywhere else as the Union being unable to hold its own line.",
+      "id": "openweight_frontier_release",
+      "title": "Open Weights Capability Jump",
+      "description": "An open-weight release lands within a few months of the closed frontier. It is downloaded hundreds of thousands of times in the first week, and whatever capability it carries is now on private hardware permanently and beyond recall. `openweight_capability` moves to within 5–10 points of `ai_capability` at a stroke.",
       "emergent": false,
       "pinned": false
     }
   ],
   "portfolio": [
     {
-      "name": "InvestAI Gigafactories",
+      "name": "Tech sovereignty package",
       "category": 4,
       "cost": 3,
+      "start": 0,
+      "finish": 6,
+      "description": "eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2029",
+      "start_period": null
+    },
+    {
+      "name": "EU AI Evaluation and Safety Institute",
+      "category": 5,
+      "cost": 3,
       "start": 1,
-      "finish": 7,
-      "description": "€200bn fund for four to five sites",
-      "finished": false,
-      "status": "running",
-      "finish_period": "the second half of 2029",
+      "finish": 4,
+      "description": "ai_safety up, eu_ai_sovereignty up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2028",
       "start_period": "the second half of 2026"
     },
     {
-      "name": "Launch Sovereign Cyber Shield Initiative",
+      "name": "EU Grid and Public Services Shield",
       "category": 6,
       "cost": 3,
-      "start": 6,
-      "finish": 8,
-      "description": "Deploy AI-hardened, pre-automated defence stacks across all Tier 1 critical infrastructure operators, integrating swarm response, zero-trust verification, and real-time model monitoring to neutralise autonomous threats before escalation.",
-      "finished": false,
-      "status": "running",
-      "finish_period": "the first half of 2030",
-      "start_period": "the first half of 2029"
+      "start": 2,
+      "finish": 5,
+      "description": "resilience up strongly, ai_safety up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the second half of 2028",
+      "start_period": "the first half of 2027"
+    },
+    {
+      "name": "Middle-Power Supply-Chain Compact",
+      "category": 8,
+      "cost": 2,
+      "start": 5,
+      "finish": 7,
+      "description": "eu_political_capital up, eu_ai_sovereignty up modestly via secured access",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the second half of 2029",
+      "start_period": "the second half of 2028"
     }
   ],
   "cancelled": [],
-  "new_measure": "Enact Binding Isolation Protocols for Sovereign Compute",
-  "priority": "Launch Sovereign Cyber Shield Initiative",
-  "commitment": null,
+  "new_measure": null,
+  "priority": "No active priority this turn, because with an empty portfolio and capital at 2 the only task that outranks our two-year commitment to harden",
+  "commitment": "Hold together through dependence by hardening resilience and pooling leverage with middle powers",
   "prev_node": "turn-06-V22",
   "next_node": "turn-08-V22",
   "next_choice": null,

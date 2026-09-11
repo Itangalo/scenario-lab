@@ -1,21 +1,16 @@
 ---
 node: option-06-V21
 choice_turn: 6
-status: written
+status: drafted
 prev: turn-05-V2
 next: turn-06-V21
 ---
 
-# Build the core
+<!-- scaffold: rewrite this, then set status: written -->
+<!-- stance: repair | source: pool-06-V2-20260911/sample-02.md | minority, cat6, 3/10 -->
 
-**Sovereign AI Core Programme.** Sovereignty and industrial capacity. Large; running until the second half of 2030.
+**EU Cyber Emergency Repair Cell**
 
-A fully EU-operated, hardened stack — compute, energy and control — hosting your assurance, resilience and governance functions under exclusive Union authority. The decisive pivot, and stated as one: market-led sovereignty and legally ring-fenced sovereignty have both been tried and both failed. Sovereignty cannot be outsourced or assumed. It has to be operated.
-
-You redirect €50bn from the expired sovereignty package and €30bn from the unspent pre-deployment envelope of the gigafactories into the core, and instruct the investment bank to issue bonds tied to capability delivered rather than construction milestones. Germany and Austria get full transparency and joint oversight on environmental and market impact, and the core proceeds without unanimity. Italy and Hungary are invited to host a secondary node in the Apennines with guaranteed jobs and technical transfer — and access to Union-wide AI services now requires real-time logging and auditability. No audit, no access.
-
-Your Directorate extends its mandate to runtime monitoring of high-capability systems in critical domains, using interpretability stacks that now allow limited backward tracing of machine-written code.
-
-Build what only a state can build: infrastructure no member can veto, no foreign power can disable, and no market failure can unravel.
-
-*Of thirty simulated responses to this situation, fourteen answered at this end — sovereignty-led, building the core. It was the largest group.*
+**EU Cyber Emergency Repair Cell**
+It deploys joint ENISA-led repair teams, shared backups and fast procurement to restore hit public services after the automated attack.
+Why this and why now: the major model-generated incident demands visible restoration now with capital at 4, and a small Preparedness and resilience effort is the only affordable answer while defection threatens cohesion.

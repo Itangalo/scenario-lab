@@ -5,33 +5,33 @@
   "leads_to_block": [
     "P122"
   ],
-  "source": "pool-10-P12/sample-12.md",
-  "pool": "pool-10-P12",
-  "draws": 20,
-  "split": "directed",
-  "split_note": "No honest split at N=20 (18/20 propose no new measure and converge on the same priority). Directed pair: same strategy, different instrument. Branch capital 6.0, so both picks propose nothing and wait.",
-  "stance": "open a disclosure channel",
-  "standing": "consolidation",
-  "support": "18/20 no-new-measure",
+  "source": "pool-10-P12-20260911/sample-06.md",
+  "pool": "pool-10-P12-20260911",
+  "draws": 10,
+  "split": "emergent",
+  "split_note": "Defence gain plus bio signal: push the advantage or fund absorption.",
+  "stance": "jobs",
+  "standing": "minority",
+  "support": "transition guarantee, 2/10",
   "situation": [
     {
-      "id": "emergent_institutional_fracture",
-      "title": "emergent_institutional_fracture",
-      "description": "The European Evaluation Shield's credibility collapses further as two member states formally reject its authority to impose remediation mandates, citing lack of legal basis and transparency. This creates an open rift between national sovereignty and EU-level oversight, paralyzing enforcement of safety norms across the bloc.",
-      "emergent": true
+      "id": "cyber_defence_breakthrough",
+      "title": "Defensive Breakthrough",
+      "description": "Defensive tooling closes the gap for a whole class of attack – automated patching at the speed vulnerabilities are found, or detection that catches swarm behaviour rather than signatures – and the offence-defence balance visibly shifts back for the first time in years.",
+      "emergent": false
     },
     {
-      "id": "capability_plateau_evidence",
-      "title": "Evidence of a Bending Curve",
-      "description": "A major release underdelivers against its own briefing, and – the stronger signal – the price of top-tier capability falls sharply rather than staying flat, which is what happens when the frontier stops moving and last year's ceiling becomes this year's commodity. It is disputed at once, and the dispute is not resolvable from outside the laboratories.",
+      "id": "bio_uplift_findings",
+      "title": "Human-Infective Design Demonstrated",
+      "description": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. **This is a precursor: it opens the bio gate for the next 4 turns.**",
       "emergent": false
     }
   ],
   "period_prose": "the first half of 2031",
-  "finishes_period": null,
-  "measure": null,
-  "category": null,
-  "finishes_turn": null,
+  "finishes_period": "the first half of 2032",
+  "measure": "EU Entry-Level Transition Guarantee",
+  "category": 7,
+  "finishes_turn": 12,
   "commitment": null,
   "prev_node": "turn-09-P12",
   "next_node": [

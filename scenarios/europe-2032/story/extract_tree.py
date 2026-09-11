@@ -143,6 +143,24 @@ def commitment_of(actor_text: str) -> str | None:
     return body.strip() or None if body else None
 
 
+def commitment_from_statements(tdir: Path) -> str | None:
+    """The live two-year commitment from the statements ledger.
+
+    Under framework custody the actor writes the commitment only when it
+    changes it, so most turn responses carry no commitment section. The
+    ledger always does. Falls back to None only if the file is absent.
+    """
+    for name in ("2-actors/eu-statements.md",):
+        path = tdir / name
+        if not path.is_file():
+            continue
+        for line in path.read_text(encoding="utf-8").splitlines():
+            m = re.match(r"^- `two_year_commitment` \(commitment\):\s*(.+)$", line.strip())
+            if m:
+                return m.group(1).strip()
+    return None
+
+
 def portfolio_status(measure: dict[str, Any], turn: int) -> str:
     if measure.get("finished"):
         return "finished"
@@ -200,10 +218,11 @@ def read_turn(run_dir: Path, turn: int, catalogue: Catalogue,
     actor_path = tdir / "2-actors" / "eu.md"
     actor = parse_actor_turn(actor_path)
     actor_text = actor_path.read_text(encoding="utf-8") if actor_path.is_file() else ""
+    commitment = commitment_of(actor_text) or commitment_from_statements(tdir)
     portfolio = [{**m, "status": portfolio_status(m, turn),
-                  "finish_period": period_prose(m["finish"]) if m.get("finish") else None,
-                  "start_period": period_prose(m["start"]) if m.get("start") else None}
-                 for m in actor["portfolio"]]
+                   "finish_period": period_prose(m["finish"]) if m.get("finish") else None,
+                   "start_period": period_prose(m["start"]) if m.get("start") else None}
+                  for m in actor["portfolio"]]
 
     return {
         "metrics": out_metrics,
@@ -212,8 +231,38 @@ def read_turn(run_dir: Path, turn: int, catalogue: Catalogue,
         "cancelled": actor["cancelled"],
         "new_measure": actor["new_measure"],
         "priority": actor["priority"],
-        "commitment": commitment_of(actor_text),
+        "commitment": commitment,
     }
+
+
+RECORD_NOTE = ("<!-- record: machine-extracted from the run, always rewritten. "
+               "Never edit by hand, never quote figures from anywhere else. -->")
+
+
+def write_record(node: Path, body: str, check: bool) -> None:
+    """Write the artifact layer. Always rewritten, like data.json."""
+    if not check:
+        (node / "record.md").write_text(RECORD_NOTE + "\n\n" + body,
+                                        encoding="utf-8")
+
+
+def turn_record(run_dir: Path, turn: int) -> str:
+    """The full simulation record behind one turn node for the writer.
+
+    data.json carries the figures; this carries the words they came from --
+    the actor's response, the world state, and the Game Master's notepad
+    with its charge line. A prose writer works from here, not from summaries.
+    """
+    tdir = run_dir / f"turn-{turn:02d}"
+    parts = [f"Source: `{tdir.relative_to(REPO)}`. Figures live in `data.json`; "
+             f"do not retype them from below, cross-check against it."]
+    for title, rel in (("Actor response (EU)", "2-actors/eu.md"),
+                       ("World state", "4-world-state.md"),
+                       ("Game-master notepad", "5-notepad.md")):
+        path = tdir / rel
+        text = path.read_text(encoding="utf-8").strip() if path.is_file() else "(missing)"
+        parts.append(f"## {title}\n\n{text}")
+    return "\n\n".join(parts) + "\n"
 
 
 def write_prose(path: Path, body: str, meta: dict[str, str], check: bool) -> str:
@@ -332,6 +381,15 @@ def main() -> int:
         if not args.check:
             (node / "data.json").write_text(
                 json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+            opt_texts = []
+            for o in opening["options"]:
+                src = (STORY / o["file"]).read_text(encoding="utf-8").strip()
+                opt_texts.append(f"## {o['node']} ({o['file']})\n\n{src}")
+            write_record(node,
+                         f"Shared frame: `turn-01/opening.md`. Both options below "
+                         f"are verbatim draws; turn 1 resolves per arm.\n\n" +
+                         "\n\n".join(opt_texts) + "\n",
+                         args.check)
         tally["data"] += 1
         body = (f"{SCAFFOLD_NOTE}\n\nSee [`../../turn-01/opening.md`](../../turn-01/opening.md) "
                 f"for what is fixed here.\n")
@@ -386,11 +444,16 @@ def main() -> int:
             if not args.check:
                 (node / "data.json").write_text(
                     json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+                write_record(node, turn_record(run_dir, turn), args.check)
             tally["data"] += 1
 
             draft = paragraphs.get(turn, "")
-            body = (f"{SCAFFOLD_NOTE}\n\n{draft}\n" if draft
-                    else f"{SCAFFOLD_NOTE}\n\n(no stage paragraph found for turn {turn})\n")
+            if draft:
+                body = f"{SCAFFOLD_NOTE}\n\n{draft}\n"
+            else:
+                body = (f"{SCAFFOLD_NOTE}\n\nWrite from `record.md` (the "
+                        f"simulation record) with figures from `data.json`. "
+                        f"Rules in `story/README.md`.\n")
             tally[write_prose(node / "narrative.md", body,
                               {"node": name, "turn": str(turn),
                                "period": periods[str(turn)], "block": block["block"],
@@ -443,6 +506,14 @@ def main() -> int:
             if not args.check:
                 (node / "data.json").write_text(
                     json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+                sit = "\n".join(f"- **{e['id']}** ({e['title']}): {e['description']}"
+                                for e in data["situation"]) or "(no events pinned)"
+                write_record(node,
+                             f"Source option: `{data['source']}` "
+                             f"(verbatim draw; the reader's choice text is written from it).\n\n"
+                             f"## Option response (full)\n\n{src_text.strip()}\n\n"
+                             f"## Situation (events pinned in the turn this choice leads into)\n\n{sit}\n",
+                             args.check)
             tally["data"] += 1
             measure = opt["measure"] or "no new measure"
             body = (f"{SCAFFOLD_NOTE}\n"

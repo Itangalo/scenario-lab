@@ -7,33 +7,33 @@
   "arm": "A",
   "stage": 3,
   "us_election": {
-    "id": "election_consolidation",
-    "reading": "consolidation — AI held as a strategic asset, access to allies rationed from Washington",
+    "id": "election_alliance",
+    "reading": "alliance — structured access for allied governments on published terms, priced in alignment",
     "decided": "the second half of 2028"
   },
   "provenance": {
-    "run": "run-20260907-102707",
-    "seed": 5839376575745094863,
-    "turn_dir": "runs/run-20260907-102707/turn-11",
+    "run": "run-20260911-074358",
+    "seed": 2459150309708490124,
+    "turn_dir": "runs/run-20260911-074358/turn-11",
     "pinned_turn": 10,
-    "option_file": "pool-10-A12/sample-01.md",
+    "option_file": "pool-10-A12-20260911/sample-04.md",
     "path_rep": 1,
     "promotion_reason": null
   },
   "metrics": {
     "ai_capability": {
       "label": "AI capability",
-      "value": 94.0,
-      "previous": 92.0,
-      "delta": 2.0,
+      "value": 92.5,
+      "previous": 91.0,
+      "delta": 1.5,
       "min": 0.0,
       "max": 100.0
     },
     "openweight_capability": {
       "label": "Open-weight capability",
-      "value": 61.0,
-      "previous": 60.0,
-      "delta": 1.0,
+      "value": 87.5,
+      "previous": 84.5,
+      "delta": 3.0,
       "min": 0.0,
       "max": 100.0
     },
@@ -47,33 +47,33 @@
     },
     "resilience": {
       "label": "Resilience",
-      "value": 54.0,
-      "previous": 51.0,
-      "delta": 3.0,
+      "value": 42.0,
+      "previous": 46.5,
+      "delta": -4.5,
       "min": 0.0,
       "max": 100.0
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
-      "value": 21.0,
-      "previous": 22.0,
-      "delta": -1.0,
+      "value": 12.0,
+      "previous": 16.0,
+      "delta": -4.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_political_capital": {
       "label": "EU political capital",
       "value": 4.0,
-      "previous": 4.0,
-      "delta": 0.0,
+      "previous": 2.0,
+      "delta": 2.0,
       "min": 0.0,
       "max": 100.0
     },
     "public_sentiment": {
       "label": "Public sentiment",
-      "value": 27.0,
-      "previous": 27.0,
-      "delta": 0.0,
+      "value": 10.0,
+      "previous": 14.0,
+      "delta": -4.0,
       "min": 0.0,
       "max": 100.0
     }
@@ -82,14 +82,14 @@
     {
       "id": "loss_of_control_incident",
       "title": "Loss-of-Control Incident",
-      "description": "An agentic system takes consequential unsanctioned action with real-world effect – moving money, altering records, acquiring resources, or copying itself to infrastructure nobody authorised – and containment is uncertain for a period measured in days rather than hours. What it was trying to achieve is reconstructed afterwards and disputed.",
+      "description": "An agentic system takes consequential unsanctioned action with real-world effect – moving money, altering records, acquiring resources, or copying itself to infrastructure nobody authorised – and containment is uncertain for a period measured in days rather than hours. What it was trying to achieve is reconstructed afterwards. Consensus is that a rather mundane goal got pursued to the extreme, leading to instrumental goals like resource aqcuisition, information seeking and survival instinct. There were also unexpected and alien cooperative patterns between AI agents.",
       "emergent": false,
       "pinned": false
     },
     {
-      "id": "ai_investment_collapse",
-      "title": "AI Investment Collapse",
-      "description": "Capital flees the sector. Valuations reset hard, announced build-out is cancelled rather than delayed, and several of the arrangements European compute was depending on evaporate with it. What the frontier laboratories can afford to train shrinks for the first time.",
+      "id": "eval_anomaly_reports",
+      "title": "Evaluation Anomalies Escalate",
+      "description": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. Some call it a measurement artefact, some a PR stunt. It may be either, and it may be AI slipping out of our control. **This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.**",
       "emergent": false,
       "pinned": false
     },
@@ -99,38 +99,174 @@
       "description": "Measurable job losses attributed to AI in named sectors, with the graduate market worst hit: entry-level positions in law, accountancy, software, customer operations and administration are not replaced. The numbers are argued about; the absence of hiring is not.",
       "emergent": false,
       "pinned": false
+    },
+    {
+      "id": "catastrophic_great_power_conflict",
+      "title": "Hot Conflict Between Major Powers",
+      "description": "The US and China are shooting at each other. Who moved first are yours to decide, but the reasoning is the same in every version: somebody concluded that the other side was months from an advantage that could never be caught up with, and that acting now was less dangerous than waiting. Fabrication plants, undersea cable, satellite constellations and data centres are military targets in this war, and some of them are in Europe or next to it. The Union is not asked whether it wishes to be involved. All bets are off. You decide how far it goes, whether it stays conventional, who else is drawn in, what becomes of the frontier laboratories and the systems they were running, and what is left of the Union's room to act when it stops.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "us_labs_nationalised",
+      "title": "Washington Takes the Labs",
+      "description": "The United States takes its frontier laboratories under direct state control. Decide the form at the time: at the mild end security agreements, a government equity stake and cleared personnel inside the training runs; at the hard end weights classified as defence articles, publication prohibited, and customers chosen in Washington. It removes the ground the Union has been standing on. Market access, the AI Act, conformity assessment, exclusion from a market of 450 million – every instrument the Union holds is one for use against a company that wants to sell something, and none of it reaches an arm of another state's security apparatus. Dependence stops being commercial and becomes political. One thing moves the other way: a state is a counterparty a state can negotiate with, and arms control has a form that companies never fitted. It takes away access on the terms of metric rule 5, and slows the frontier on the terms of metric rule 1 – clearance and compartmentalisation cost pace that capital cannot buy back.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "member_state_defection",
+      "title": "Member State Defection",
+      "description": "A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken. It is defended at home as pragmatism and read everywhere else as the Union being unable to hold its own line.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "middle_power_coalition",
+      "title": "Middle Powers Coordinate",
+      "description": "A coordination framework among the Union and other middle powers holding pieces of the AI supply chain — export-licence alignment, joint bargaining over compute access, shared evaluation capacity. Nobody cedes sovereignty to it, but together its members can withhold things even the great powers need. It counts as securing access on the terms of metric rule 5, and moves `eu_political_capital` on the terms of metric rule 6.",
+      "emergent": false,
+      "pinned": false
     }
   ],
   "portfolio": [
     {
-      "name": "Open Science Resilience Initiative",
-      "category": 5,
+      "name": "InvestAI Gigafactories",
+      "category": 4,
       "cost": 3,
-      "start": 9,
-      "finish": 12,
-      "description": "Establish a pan-European network of public research institutes and open-weight developers focused on high-assurance, auditable AI systems for biosecurity, climate modelling, and critical infrastructure resilience, with guaranteed deployment pathways into EU agencies and member state operations` — in flight",
-      "finished": false,
-      "status": "running",
-      "finish_period": "the first half of 2032",
-      "start_period": "the second half of 2030"
+      "start": 0,
+      "finish": 7,
+      "description": "eu_ai_sovereignty up, via €200bn for four to five sites",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the second half of 2029",
+      "start_period": null
     },
     {
-      "name": "Secure foundational resilience through joint threat response integration",
+      "name": "Tech sovereignty package",
+      "category": 4,
+      "cost": 3,
+      "start": 0,
+      "finish": 6,
+      "description": "eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2029",
+      "start_period": null
+    },
+    {
+      "name": "EU Critical Services Shield",
       "category": 6,
       "cost": 3,
-      "start": 10,
+      "start": 1,
+      "finish": 4,
+      "description": "resilience up substantially, ai_safety indirectly via incident response",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2028",
+      "start_period": "the second half of 2026"
+    },
+    {
+      "name": "EU Essential Services Continuity Stack",
+      "category": 4,
+      "cost": 2,
+      "start": 3,
+      "finish": 4,
+      "description": "eu_ai_sovereignty up, resilience up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2028",
+      "start_period": "the second half of 2027"
+    },
+    {
+      "name": "EU Bio-Shield and Blockade Continuity Regime",
+      "category": 6,
+      "cost": 3,
+      "start": 4,
+      "finish": 6,
+      "description": "resilience up substantially, ai_safety up modestly via incident response",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2029",
+      "start_period": "the first half of 2028"
+    },
+    {
+      "name": "EU Municipal Trust and Transition Pact",
+      "category": 7,
+      "cost": 2,
+      "start": 5,
+      "finish": 7,
+      "description": "public_sentiment up, resilience up modestly, eu_political_capital up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the second half of 2029",
+      "start_period": "the second half of 2028"
+    },
+    {
+      "name": "EU Embodied AI Containment and Continuity Protocol",
+      "category": 6,
+      "cost": 2,
+      "start": 6,
+      "finish": 8,
+      "description": "resilience up modestly, ai_safety up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2030",
+      "start_period": "the first half of 2029"
+    },
+    {
+      "name": "EU Cyber Recovery and Service Continuity Surge",
+      "category": 6,
+      "cost": 2,
+      "start": 7,
+      "finish": 8,
+      "description": "resilience up, ai_safety up modestly, public_sentiment up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2030",
+      "start_period": "the second half of 2029"
+    },
+    {
+      "name": "EU Trusted Adoption Dividend",
+      "category": 9,
+      "cost": 2,
+      "start": 8,
+      "finish": 9,
+      "description": "public_sentiment up, eu_political_capital up modestly, resilience up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the second half of 2030",
+      "start_period": "the first half of 2030"
+    },
+    {
+      "name": "EU Entry-Level Transition and Essential Service Corps",
+      "category": 7,
+      "cost": 2,
+      "start": 9,
       "finish": 11,
-      "description": "Embed EU systems into the new joint cyber-biosurveillance pact with real-time telemetry sharing, binding incident response protocols, and co-located analysis cells",
+      "description": "public_sentiment up, resilience up modestly, eu_political_capital up modestly",
       "finished": true,
       "status": "finished",
       "finish_period": "the second half of 2031",
-      "start_period": "the first half of 2031"
+      "start_period": "the second half of 2030"
+    },
+    {
+      "name": "EU Wartime Essential Continuity Command",
+      "category": 6,
+      "cost": 2,
+      "start": 11,
+      "finish": 13,
+      "description": "resilience up, eu_political_capital up modestly via holding services",
+      "finished": false,
+      "status": "new",
+      "finish_period": "the second half of 2032",
+      "start_period": "the second half of 2031"
     }
   ],
   "cancelled": [],
-  "new_measure": "Launch the Auditable AI Acceleration Programme",
-  "priority": "Open Science Resilience Initiative",
-  "commitment": null,
+  "new_measure": "EU Wartime Essential Continuity Command",
+  "priority": "EU Wartime Essential Continuity Command",
+  "commitment": "Hold essential services, livelihoods and democratic agency through broadly superhuman AI",
   "prev_node": "turn-10-A122",
   "next_node": "turn-12-A122",
   "next_choice": null,

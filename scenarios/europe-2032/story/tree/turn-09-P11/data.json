@@ -7,18 +7,18 @@
   "arm": "P",
   "stage": 2,
   "us_election": {
-    "id": "election_alliance",
-    "reading": "alliance — structured access for allied governments on published terms, priced in alignment",
+    "id": "election_retrenchment",
+    "reading": "retrenchment — the backlash wins and Washington turns inward, slower and preoccupied",
     "decided": "the second half of 2028"
   },
   "provenance": {
-    "run": "run-20260906-144653-03",
-    "seed": 16477339009985396710,
-    "turn_dir": "runs/run-20260906-144653-03/turn-09",
+    "run": "run-20260911-012117",
+    "seed": 5179472137677139964,
+    "turn_dir": "runs/run-20260911-012117/turn-09",
     "pinned_turn": 6,
-    "option_file": "pool-06-P1/sample-05.md",
-    "path_rep": 2,
-    "promotion_reason": "rep 1 replaced: openweight_capability frozen at 45.0 by GM inertia against rule 2 diffusion"
+    "option_file": "pool-06-P1-20260911/sample-01.md",
+    "path_rep": 1,
+    "promotion_reason": null
   },
   "metrics": {
     "ai_capability": {
@@ -31,80 +31,209 @@
     },
     "openweight_capability": {
       "label": "Open-weight capability",
-      "value": 50.75,
-      "previous": 49.5,
-      "delta": 1.25,
+      "value": 60.7,
+      "previous": 59.9,
+      "delta": 0.8,
       "min": 0.0,
       "max": 100.0
     },
     "ai_safety": {
       "label": "AI safety",
-      "value": 19.0,
-      "previous": 19.0,
-      "delta": 0.0,
+      "value": 16.0,
+      "previous": 18.0,
+      "delta": -2.0,
       "min": 0.0,
       "max": 100.0
     },
     "resilience": {
       "label": "Resilience",
-      "value": 42.0,
-      "previous": 42.0,
-      "delta": 0.0,
+      "value": 52.0,
+      "previous": 49.0,
+      "delta": 3.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
-      "value": 36.0,
-      "previous": 37.0,
-      "delta": -1.0,
+      "value": 18.0,
+      "previous": 20.0,
+      "delta": -2.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_political_capital": {
       "label": "EU political capital",
-      "value": 19.0,
-      "previous": 23.0,
-      "delta": -4.0,
+      "value": 10.0,
+      "previous": 17.0,
+      "delta": -7.0,
       "min": 0.0,
       "max": 100.0
     },
     "public_sentiment": {
       "label": "Public sentiment",
-      "value": 35.0,
-      "previous": 35.0,
-      "delta": 0.0,
+      "value": 24.0,
+      "previous": 28.0,
+      "delta": -4.0,
       "min": 0.0,
       "max": 100.0
     }
   },
   "events": [
     {
-      "id": "eval_anomaly_reports",
-      "title": "Evaluation Anomalies Surface",
-      "description": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. The laboratory calls it a measurement artefact. It may be one. **This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.**",
+      "id": "cyber_major_incident",
+      "title": "Major Cyber Incident",
+      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
       "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "ai_investment_collapse",
+      "title": "AI Investment Collapse",
+      "description": "Capital flees the sector. Valuations reset hard, announced build-out is cancelled rather than delayed, and several of the arrangements European compute was depending on evaporate with it. What the frontier laboratories can afford to train shrinks for the first time.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "member_state_defection",
+      "title": "Member State Defection",
+      "description": "A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken. It is defended at home as pragmatism and read everywhere else as the Union being unable to hold its own line.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "emergent_continuity_care_crisis",
+      "title": "emergent_continuity_care_crisis",
+      "description": "Hospitals and utilities forced onto EU-hosted open models after the February cutoff suffer a cascading manual-error crisis, with staff walkouts and treatment backlogs triggering emergency health transfers across borders.",
+      "emergent": true,
       "pinned": false
     }
   ],
   "portfolio": [
     {
-      "name": "AI Safety Emergency Investment",
-      "category": 5,
+      "name": "InvestAI Gigafactories",
+      "category": 4,
       "cost": 3,
+      "start": 0,
+      "finish": 7,
+      "description": "eu_ai_sovereignty up, via €200bn for four to five sites",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the second half of 2029",
+      "start_period": null
+    },
+    {
+      "name": "Tech sovereignty package",
+      "category": 4,
+      "cost": 3,
+      "start": 0,
+      "finish": 6,
+      "description": "eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2029",
+      "start_period": null
+    },
+    {
+      "name": "EU Critical Services Shield",
+      "category": 6,
+      "cost": 3,
+      "start": 1,
+      "finish": 4,
+      "description": "resilience up substantially, ai_safety indirectly via incident response",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2028",
+      "start_period": "the second half of 2026"
+    },
+    {
+      "name": "EU Public Benefit AI Deployment",
+      "category": 9,
+      "cost": 2,
+      "start": 3,
+      "finish": 6,
+      "description": "public_sentiment up, eu_political_capital up indirectly, resilience up modestly via service capacity",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2029",
+      "start_period": "the second half of 2027"
+    },
+    {
+      "name": "Small-Operator Hardening Sprint",
+      "category": 6,
+      "cost": 2,
+      "start": 4,
+      "finish": 5,
+      "description": "resilience up modestly, ai_safety indirectly via containment",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the second half of 2028",
+      "start_period": "the first half of 2028"
+    },
+    {
+      "name": "EU Autonomy Pact Network",
+      "category": 8,
+      "cost": 2,
+      "start": 5,
+      "finish": 7,
+      "description": "eu_ai_sovereignty up modestly, eu_political_capital protected via cohesion",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the second half of 2029",
+      "start_period": "the second half of 2028"
+    },
+    {
+      "name": "EU Containment and Continuity Switch",
+      "category": 6,
+      "cost": 2,
+      "start": 6,
+      "finish": 7,
+      "description": "resilience up, ai_safety up modestly via containment",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the second half of 2029",
+      "start_period": "the first half of 2029"
+    },
+    {
+      "name": "EU Bio Early-Warning and Response Surge",
+      "category": 6,
+      "cost": 2,
+      "start": 7,
+      "finish": 8,
+      "description": "resilience up, ai_safety up modestly via misuse detection",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2030",
+      "start_period": "the second half of 2029"
+    },
+    {
+      "name": "EU Cyber Recovery and Hardening Sprint",
+      "category": 6,
+      "cost": 2,
       "start": 8,
-      "finish": 12,
-      "description": "A €40bn programme to rapidly scale up the EU’s independent technical capacity to monitor, audit, and secure high-capability AI systems, establishing the European AI Assurance Network (EAAN) with secure inspection enclaves and red-teaming capabilities` — **in flight**",
-      "finished": false,
-      "status": "running",
-      "finish_period": "the first half of 2032",
+      "finish": 9,
+      "description": "resilience up, ai_safety up modestly via containment",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the second half of 2030",
       "start_period": "the first half of 2030"
+    },
+    {
+      "name": "EU Care Continuity and Cross-Border Medical Surge",
+      "category": 6,
+      "cost": 2,
+      "start": 9,
+      "finish": 11,
+      "description": "resilience up, eu_political_capital protected via visible restoration",
+      "finished": false,
+      "status": "new",
+      "finish_period": "the second half of 2031",
+      "start_period": "the second half of 2030"
     }
   ],
   "cancelled": [],
-  "new_measure": "EU Border for AI Systems",
-  "priority": "EU Border for AI Systems",
-  "commitment": null,
+  "new_measure": "EU Care Continuity and Cross-Border Medical Surge",
+  "priority": "EU Care Continuity and Cross-Border Medical Surge",
+  "commitment": "Rebuild absorption and leverage to survive ungovernable capability",
   "prev_node": "turn-08-P11",
   "next_node": null,
   "next_choice": [

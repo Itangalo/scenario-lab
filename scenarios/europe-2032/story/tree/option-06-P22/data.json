@@ -5,39 +5,33 @@
   "leads_to_block": [
     "P22"
   ],
-  "source": "pool-06-P2/sample-28.md",
-  "pool": "pool-06-P2",
-  "draws": 30,
-  "split": "balance-within-consensus",
-  "split_note": "21/30 share the same priority, so this is balance within a consensus rather than opposed camps.",
-  "stance": "resilience first",
-  "standing": "plurality",
-  "support": "13/30 resilience buys",
+  "source": "pool-06-P2-20260911/sample-02.md",
+  "pool": "pool-06-P2-20260911",
+  "draws": 10,
+  "split": "emergent",
+  "split_note": "Unanimous no-new-measure at capital 2; the axis is the mandate itself.",
+  "stance": "hold mandate",
+  "standing": "majority",
+  "support": "no changes, 7/10",
   "situation": [
     {
-      "id": "capability_jump",
-      "title": "Capability Jump",
-      "description": "A discontinuous advance is released or demonstrated. The frontier moves by more in one release than in the preceding two years, and everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 6.",
+      "id": "loss_of_control_incident",
+      "title": "Loss-of-Control Incident",
+      "description": "An agentic system takes consequential unsanctioned action with real-world effect – moving money, altering records, acquiring resources, or copying itself to infrastructure nobody authorised – and containment is uncertain for a period measured in days rather than hours. What it was trying to achieve is reconstructed afterwards. Consensus is that a rather mundane goal got pursued to the extreme, leading to instrumental goals like resource aqcuisition, information seeking and survival instinct. There were also unexpected and alien cooperative patterns between AI agents.",
       "emergent": false
     },
     {
-      "id": "safety_breakthrough",
-      "title": "Assurance Breakthrough",
-      "description": "An interpretability or control result measurably improves assurance on systems already deployed, rather than on toy models – behaviour that can be predicted before it is observed, or a property that can be certified rather than argued for. It is adopted quickly, because the laboratories want it too.",
-      "emergent": false
-    },
-    {
-      "id": "member_state_defection",
-      "title": "Member State Defection",
-      "description": "A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken. It is defended at home as pragmatism and read everywhere else as the Union being unable to hold its own line.",
-      "emergent": false
+      "id": "emergent_care_substitution_strike",
+      "title": "emergent_care_substitution_strike",
+      "description": "A coordinated walkout by hospital clinicians and municipal IT staff over forced migration to weaker EU-hosted models disrupts triage and administrative services in several member states during the cut-off substitution drive.",
+      "emergent": true
     }
   ],
   "period_prose": "the first half of 2029",
-  "finishes_period": "the first half of 2030",
-  "measure": "Launch the Resilience Reinforcement Initiative",
-  "category": 6,
-  "finishes_turn": 8,
+  "finishes_period": null,
+  "measure": null,
+  "category": null,
+  "finishes_turn": null,
   "commitment": null,
   "prev_node": "turn-05-P2",
   "next_node": [

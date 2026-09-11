@@ -12,51 +12,51 @@
     "decided": "the second half of 2028"
   },
   "provenance": {
-    "run": "run-20260907-143821",
-    "seed": 13527330695453551559,
-    "turn_dir": "runs/run-20260907-143821/turn-12",
+    "run": "run-20260911-091836",
+    "seed": 16796682855089873369,
+    "turn_dir": "runs/run-20260911-091836/turn-12",
     "pinned_turn": 10,
-    "option_file": "pool-10-P21/sample-05.md",
+    "option_file": "pool-10-P21-20260911/sample-01.md",
     "path_rep": 1,
     "promotion_reason": null
   },
   "metrics": {
     "ai_capability": {
       "label": "AI capability",
-      "value": 70.0,
-      "previous": 69.5,
-      "delta": 0.5,
+      "value": 65.3,
+      "previous": 64.6,
+      "delta": 0.7,
       "min": 0.0,
       "max": 100.0
     },
     "openweight_capability": {
       "label": "Open-weight capability",
-      "value": 57.0,
-      "previous": 54.0,
-      "delta": 3.0,
+      "value": 63.9,
+      "previous": 63.2,
+      "delta": 0.7,
       "min": 0.0,
       "max": 100.0
     },
     "ai_safety": {
       "label": "AI safety",
-      "value": 11.0,
-      "previous": 11.0,
-      "delta": 0.0,
+      "value": 3.0,
+      "previous": 5.0,
+      "delta": -2.0,
       "min": 0.0,
       "max": 100.0
     },
     "resilience": {
       "label": "Resilience",
-      "value": 37.0,
-      "previous": 39.0,
-      "delta": -2.0,
+      "value": 35.0,
+      "previous": 35.0,
+      "delta": 0.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
-      "value": 9.0,
-      "previous": 9.0,
+      "value": 14.0,
+      "previous": 14.0,
       "delta": 0.0,
       "min": 0.0,
       "max": 100.0
@@ -64,80 +64,145 @@
     "eu_political_capital": {
       "label": "EU political capital",
       "value": 0.0,
-      "previous": 0.0,
-      "delta": 0.0,
+      "previous": 2.0,
+      "delta": -2.0,
       "min": 0.0,
       "max": 100.0
     },
     "public_sentiment": {
       "label": "Public sentiment",
       "value": 15.0,
-      "previous": 18.0,
-      "delta": -3.0,
+      "previous": 21.0,
+      "delta": -6.0,
       "min": 0.0,
       "max": 100.0
     }
   },
   "events": [
     {
-      "id": "labour_displacement",
-      "title": "Labour Displacement Wave",
-      "description": "Measurable job losses attributed to AI in named sectors, with the graduate market worst hit: entry-level positions in law, accountancy, software, customer operations and administration are not replaced. The numbers are argued about; the absence of hiring is not.",
+      "id": "bio_uplift_findings",
+      "title": "Human-Infective Design Demonstrated",
+      "description": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. **This is a precursor: it opens the bio gate for the next 4 turns.**",
       "emergent": false,
       "pinned": false
     },
     {
-      "id": "export_control_escalation",
-      "title": "Export Control Escalation",
-      "description": "Chip and model export controls tighten again. Either allied buyers keep access on volume licences while everyone else is cut off, or the controls are drawn so tightly that allies are rationed alongside adversaries – decide which at the time from the standing American posture and from what the Union has built.",
-      "emergent": false,
+      "id": "emergent_care_audit_revolt",
+      "title": "emergent_care_audit_revolt",
+      "description": "A coalition of European hospital networks and insurers publishes an independent audit showing continuity-stack triage helpers systematically under-triage certain patient groups, triggering national-level suspension orders beyond the showcase sites.",
+      "emergent": true,
       "pinned": false
     },
     {
-      "id": "supply_chain_coercion",
-      "title": "Coercion Over ASML",
-      "description": "Washington forces the Netherlands to cut ASML's exports and servicing further still – beyond the leading-edge machines to the older lithography equipment China uses for ordinary chips, and in the harder versions to a widening list of other customers. The instrument is jurisdiction over American technology in the supply chain, and refusing it is not obviously survivable for the company. The Union's one chokepoint is being used, and not by the Union.",
-      "emergent": false,
-      "pinned": false
-    },
-    {
-      "id": "emergent_industrial_sovereignty_consortium",
-      "title": "emergent_industrial_sovereignty_consortium",
-      "description": "A group of European mid-sized industrial firms, facing both automation disruption and exclusion from frontier AI, launches a shared sovereign AI consortium to co-develop and run tailored models on union-secured infrastructure. The initiative bypasses hyperscalers and is framed as economic self-defence. It gains momentum due to low political capital in Brussels and growing frustration with dependency.",
+      "id": "emergent_shadow_clinic_network",
+      "title": "emergent_shadow_clinic_network",
+      "description": "Municipal clinics and small labs quietly pool openly available frontier models into shared diagnostic and triage scripts, creating an ungoverned shadow health-AI network outside EU procurement and oversight.",
       "emergent": true,
       "pinned": false
     }
   ],
   "portfolio": [
     {
-      "name": "Launch the Integrity Audit Expansion",
-      "category": 1,
-      "cost": 2,
-      "start": 9,
-      "finish": 11,
-      "description": "A programme to scale up independent, adversarial-style auditing of sovereign AI systems, focusing on both technical integrity (weight security, evaluation air gaps) and operational accountability (decision provenance, redress pathways), with findings binding on continued operation`` — finished this turn",
-      "finished": false,
-      "status": "running",
-      "finish_period": "the second half of 2031",
-      "start_period": "the second half of 2030"
+      "name": "Tech sovereignty package",
+      "category": 4,
+      "cost": 3,
+      "start": 0,
+      "finish": 6,
+      "description": "eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2029",
+      "start_period": null
     },
     {
-      "name": "Launch the Public Redress and Co-Design Framework",
+      "name": "EU AI Evaluation and Safety Institute",
+      "category": 5,
+      "cost": 3,
+      "start": 1,
+      "finish": 4,
+      "description": "ai_safety up, eu_ai_sovereignty up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2028",
+      "start_period": "the second half of 2026"
+    },
+    {
+      "name": "EU Grid Shield Hardening Programme",
+      "category": 6,
+      "cost": 3,
+      "start": 2,
+      "finish": 7,
+      "description": "resilience up strongly, ai_safety up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the second half of 2029",
+      "start_period": "the first half of 2027"
+    },
+    {
+      "name": "EU Bio-Cyber Shield Surge",
+      "category": 6,
+      "cost": 2,
+      "start": 3,
+      "finish": 6,
+      "description": "resilience up, ai_safety up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2029",
+      "start_period": "the second half of 2027"
+    },
+    {
+      "name": "EU Continuity Stack for Cut-Off Services",
       "category": 9,
       "cost": 2,
-      "start": 12,
-      "finish": 14,
-      "description": "A binding requirement for all public-sector AI systems above 50.0 capability to implement legally enforceable redress mechanisms and to co-design audit and oversight procedures with civil society representatives and affected communities",
+      "start": 4,
+      "finish": 6,
+      "description": "resilience up, eu_ai_sovereignty up modestly, public_sentiment up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2029",
+      "start_period": "the first half of 2028"
+    },
+    {
+      "name": "EU Hospital Helper Fix and Triage Continuity Fund",
+      "category": 9,
+      "cost": 2,
+      "start": 7,
+      "finish": 9,
+      "description": "public_sentiment up, resilience up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the second half of 2030",
+      "start_period": "the second half of 2029"
+    },
+    {
+      "name": "EU United Access and No-Undercut Pact",
+      "category": 8,
+      "cost": 2,
+      "start": 8,
+      "finish": 10,
+      "description": "eu_ai_sovereignty up modestly, eu_political_capital down then up, public_sentiment up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2031",
+      "start_period": "the first half of 2030"
+    },
+    {
+      "name": "EU Bio-Uplift Watch and Hospital Shield",
+      "category": 6,
+      "cost": 2,
+      "start": 11,
+      "finish": 13,
+      "description": "resilience up modestly, ai_safety up modestly",
       "finished": false,
-      "status": "new",
-      "finish_period": "the first half of 2033",
-      "start_period": "the first half of 2032"
+      "status": "running",
+      "finish_period": "the second half of 2032",
+      "start_period": "the second half of 2031"
     }
   ],
   "cancelled": [],
-  "new_measure": "Anchor the Emergent Industrial Sovereignty Consortium",
-  "priority": "Anchor the Emergent Industrial Sovereignty Consortium",
-  "commitment": null,
+  "new_measure": null,
+  "priority": "Priority is M9",
+  "commitment": "Survive the cut-off and the open frontier by hardening health, bio and cyber resilience first while negotiating water-power compacts to unfreeze sovereign builds",
   "prev_node": "turn-11-P212",
   "next_node": "turn-13-P212",
   "next_choice": null,

@@ -7,15 +7,9 @@ next: turn-10-V122
 ---
 
 <!-- scaffold: rewrite this, then set status: written -->
-<!-- stance: standing agency later | source: pool-10-V12/sample-03.md | minority, 2/10 -->
+<!-- stance: cyber command | source: pool-10-V12-20260911/sample-02.md | majority, accessions, 7/10 -->
 
-**European Agency for AI Assurance and Control**
+**EU Joint Cyber Command Accession**
 
-**European Agency for AI Assurance and Control**  
-Establish a permanent, technically empowered body with authority to conduct pre-deployment evaluations, monitor in-use systems for anomalous behaviour, and enforce containment protocols.
-
-`Category: 5 (Public technical capacity and research)`  
-`Size:` large  
-`Finishes on turn:` 14  
-`Targeted effect:` +7 to +9 ai_safety by turn 14 through sustained, independent oversight of frontier systems; indirect +4 to eu_ai_sovereignty by anchoring high-assurance evaluation within EU jurisdiction  
-`Applies to:` Frontier AI developers operating in or serving the EU market, national regulators, and EU institutions
+**EU Joint Cyber Command Accession**
+Join the pooled attribution and real-time telemetry joint cyber command on offer this turn to keep containment working when domestic hardware and finance cannot. This is Preparedness and resilience work, category 6, and why now is that protection we cannot build alone is being offered while sovereignty is at 15 and insurers and chip slots are still frozen.

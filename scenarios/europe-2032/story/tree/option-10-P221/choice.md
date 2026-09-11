@@ -7,15 +7,10 @@ next: turn-10-P221
 ---
 
 <!-- scaffold: rewrite this, then set status: written -->
-<!-- stance: restore continuity | source: pool-10-P22/sample-20.md | plurality pole, 7/20 -->
+<!-- stance: showcase | source: pool-10-P22-20260911/sample-08.md | minority, adds, 2/10 -->
 
-**Launch the Emergency Continuity Response Initiative**
+**European Public Dividend Showcase**
 
-**Measure:** Launch the Emergency Continuity Response Initiative  
-A rapid-response programme to activate, repair, and validate air-gapped AI nodes across critical sectors in the wake of the recent cyber incident, using emergency procurement and cross-border technical teams.
-
-`Category: 6 (Preparedness and resilience)`  
-`Size: small`  
-`Finishes on turn: 12`  
-`Targeted effect:` Increase resilience by 5–8 points through immediate operational fixes to continuity infrastructure; stabilize public sentiment by demonstrating visible recovery; support eu_ai_sovereignty by proving the EU can respond when systems fail  
-`Applies to:` EAAD, national digital agencies, critical infrastructure operators, SACP operational command
+**European Public Dividend Showcase**
+It turns the one visible public-sector AI success into a credited, defended EU result — publishing waiting-list and decision-time gains under an EU label, keeping it running on EU-controlled fallback, and guarding its sites and pools against sabotage.
+Why this and why now: with capital at 3 and sentiment at 10, nothing technical lands without political air, and the adoption-success window plus sabotage of our fallback pools means we must claim the benefit as European and protect the manual stores that keep it alive.

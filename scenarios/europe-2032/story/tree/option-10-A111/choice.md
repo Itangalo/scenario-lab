@@ -7,17 +7,10 @@ next: turn-10-A111
 ---
 
 <!-- scaffold: rewrite this, then set status: written -->
-<!-- stance: build compute redundancy | source: pool-10-A11/sample-04.md | majority, 6/10; the only majority-bloc draw finishing in-run -->
+<!-- stance: shield | source: pool-10-A11-20260911/sample-01.md | majority, wartime shields, 9/10 -->
 
-**Emergency Compute Redundancy Initiative**
+**EU Wartime Energy-Compute Continuity Shield**
 
-**Emergency Compute Redundancy Initiative**  
-Establish geographically distributed, EU-operated fallback clusters capable of running critical sovereign models if external frontier access is disrupted, using hardened infrastructure and pre-staged weights from open and licensed sources.
-
-`Category: 4 (Sovereignty and industrial capacity)`  
-`Size: large`  
-`Finishes on turn: 13`  
-`Targeted effect:` +12 to eu_ai_sovereignty by ensuring uninterrupted access to high-capability inference during access denial; +5 to resilience by enabling continuity of AI-dependent public services; reduces exposure to coercion through compute dependence  
-`Applies to:` EU institutions, EuroHPC sites, national crisis-response agencies, and accredited sovereign AI operators
-
----
+**EU Wartime Energy-Compute Continuity Shield**
+It puts critical fabs, cables, gigafactory grid works and certified medical compute under emergency protection with military-guarded repair, rationed power priority and cross-border failover, as Preparedness and resilience rather than new building.
+This and now because US-China strikes make European infrastructure a target while arson has already halted grid works, and without keeping lights, therapy queues and command networks alive the coalition, Guarantee and cohesion commitment collapse at once.

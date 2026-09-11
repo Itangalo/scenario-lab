@@ -8,9 +8,9 @@
   "stage": 1,
   "us_election": null,
   "provenance": {
-    "run": "run-20260904-222506",
-    "seed": 7971659948448395561,
-    "turn_dir": "runs/run-20260904-222506/turn-04",
+    "run": "run-20260910-223510",
+    "seed": 16131371758201131071,
+    "turn_dir": "runs/run-20260910-223510/turn-04",
     "pinned_turn": null,
     "option_file": "turn-01/option-02-1.md",
     "path_rep": 1,
@@ -19,66 +19,73 @@
   "metrics": {
     "ai_capability": {
       "label": "AI capability",
-      "value": 66.0,
+      "value": 66.5,
       "previous": 63.0,
-      "delta": 3.0,
+      "delta": 3.5,
       "min": 0.0,
       "max": 100.0
     },
     "openweight_capability": {
       "label": "Open-weight capability",
-      "value": 51.0,
-      "previous": 50.0,
-      "delta": 1.0,
+      "value": 58.5,
+      "previous": 54.0,
+      "delta": 4.5,
       "min": 0.0,
       "max": 100.0
     },
     "ai_safety": {
       "label": "AI safety",
-      "value": 17.0,
-      "previous": 26.0,
-      "delta": -9.0,
+      "value": 20.0,
+      "previous": 22.0,
+      "delta": -2.0,
       "min": 0.0,
       "max": 100.0
     },
     "resilience": {
       "label": "Resilience",
-      "value": 36.0,
-      "previous": 34.0,
-      "delta": 2.0,
+      "value": 41.0,
+      "previous": 36.0,
+      "delta": 5.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
       "value": 18.0,
-      "previous": 19.0,
-      "delta": -1.0,
+      "previous": 17.0,
+      "delta": 1.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_political_capital": {
       "label": "EU political capital",
-      "value": 17.0,
-      "previous": 26.0,
-      "delta": -9.0,
+      "value": 28.0,
+      "previous": 27.0,
+      "delta": 1.0,
       "min": 0.0,
       "max": 100.0
     },
     "public_sentiment": {
       "label": "Public sentiment",
-      "value": 39.0,
-      "previous": 37.0,
-      "delta": 2.0,
+      "value": 22.0,
+      "previous": 28.0,
+      "delta": -6.0,
       "min": 0.0,
       "max": 100.0
     }
   },
   "events": [
     {
-      "id": "capability_jump",
-      "title": "Capability Jump",
-      "description": "A discontinuous advance is released or demonstrated. The frontier moves by more in one release than in the preceding two years, and everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 6.",
+      "id": "bio_incident",
+      "title": "Biological Incident",
+      "description": "A real biological incident with model involvement: a deliberate release or a laboratory escape involving a designed or modified agent. Casualties are real, containment runs for weeks, and every argument about AI risk in every jurisdiction is reset by it.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "taiwan_blockade",
+      "title": "Taiwan Blockade",
+      "description": "A quarantine or blockade halts advanced semiconductor exports. Compute supply for everyone outside China's domestic chain is disrupted for years, every AI policy question becomes a security question overnight, and the Union's upstream position in the supply chain becomes the most valuable thing it holds and the most dangerous thing to hold.",
       "emergent": false,
       "pinned": false
     },
@@ -90,24 +97,17 @@
       "pinned": false
     },
     {
-      "id": "verification_widens",
-      "title": "Verification Frontier Widens",
-      "description": "A domain that was assumed to need a human to say whether the answer was any good turns out to admit a cheap automatic check – contract review, clinical coding, structural engineering, parts of law. Capability in that domain improves sharply within months of the check existing, and the argument that progress is confined to code and mathematics loses a piece of its territory.",
+      "id": "knowledge_work_augmented",
+      "title": "Knowledge Work Is Boosted, Not Replaced",
+      "description": "The evidence arrives from ordinary offices rather than from laboratories: measured productivity gains in law, accountancy, administration, journalism and consulting, largest among the least experienced, and no matching fall in employment. The work changes shape instead of vanishing – more output per person, more of the day spent on the parts that need someone to decide what matters, and firms that cut headcount early quietly hiring again. It is the most economically consequential thing that can happen without being a crisis, and it is almost impossible to campaign either for or against. It moves `public_sentiment` up at the top of metric rule 7's visible-benefit range and nothing else by itself: not capability, not sovereignty, not resilience. Its second effect is political rather than numerical – with no displacement crisis to point at, rule 6's bonus for a measure addressing a recent negative event does not apply, and the Union is asked to spend against a problem the public can no longer feel.",
       "emergent": false,
       "pinned": false
     },
     {
-      "id": "election_annulled",
-      "title": "An Election Is Voided",
-      "description": "An election in an established democracy is postponed, rerun or annulled with explicit reference to manipulation of the information environment. Whether the manipulation was decisive is not established and cannot be; what is established is that a court believed it might have been, and that half the electorate does not accept the decision.",
+      "id": "embodied_ai_deployment",
+      "title": "Robots Leave the Demonstration Floor",
+      "description": "Robots reach commercial deployment – not the demonstration videos, convincing for years now, but machines bought in quantity and put to work in warehouses, food processing, loading docks and the parts of manufacturing that resisted automation because the sequence varied. The capability is coarse, and the limit is worth stating exactly: lifting, carrying, sorting, palletising, cleaning, basic assembly – whole-arm movements in a setting that can be arranged around the machine. Fine motor work is not solved, nor is anything needing a light touch, a judgement about what an object is doing, or improvisation when the plan is wrong; surgery, wiring, repair, most care work and any construction site worth the name stay human. The same limit shapes the military uses, which arrive at the same time and for the same reason: carrying, digging, resupply under fire, mine clearance, casualty extraction, perimeter patrol. The machines are cheap enough to lose, which is the property that matters, and procurement runs well ahead of any doctrine for using them. Autonomous lethality is a separate argument and is not settled here; what is settled is that the logistics tail of an army stops needing as many people in it. For the Union it lands on the industrial base it still leads in, and it lands from outside: China already builds more than half the world's robots and holds the supply chain for the actuators, reducers and motors beneath them, and the control models are American. It takes away access on the terms of metric rule 5 at the small end – a new dependence forming rather than existing access withdrawn – and `public_sentiment` falls −2 to −5, because physical work entering the displacement question reaches people no reskilling programme has ever reached.",
       "emergent": false,
-      "pinned": false
-    },
-    {
-      "id": "emergent_energy_backlash",
-      "title": "emergent_energy_backlash",
-      "description": "Local opposition to new data centres intensifies into coordinated protests and legal challenges across several member states, citing energy strain and environmental impact. Grid operators publicly question the sustainability of current growth rates, and a regional regulator halts a major expansion pending review.",
-      "emergent": true,
       "pinned": false
     }
   ],
@@ -116,43 +116,67 @@
       "name": "InvestAI Gigafactories",
       "category": 4,
       "cost": 3,
-      "start": 1,
+      "start": 0,
       "finish": 7,
-      "description": "€200bn fund for four to five sites",
+      "description": "eu_ai_sovereignty up, via €200bn for four to five sites",
       "finished": false,
       "status": "running",
       "finish_period": "the second half of 2029",
-      "start_period": "the second half of 2026"
+      "start_period": null
     },
     {
       "name": "Tech sovereignty package",
       "category": 4,
       "cost": 3,
-      "start": 1,
+      "start": 0,
       "finish": 6,
-      "description": "Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones",
+      "description": "eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones",
       "finished": false,
       "status": "running",
       "finish_period": "the first half of 2029",
+      "start_period": null
+    },
+    {
+      "name": "EU Critical Services Shield",
+      "category": 6,
+      "cost": 3,
+      "start": 1,
+      "finish": 4,
+      "description": "resilience up substantially, ai_safety indirectly via incident response",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2028",
       "start_period": "the second half of 2026"
     },
     {
-      "name": "Sovereign Agent Monitoring Initiative",
-      "category": 5,
+      "name": "EU Essential Services Continuity Stack",
+      "category": 4,
+      "cost": 2,
+      "start": 3,
+      "finish": 4,
+      "description": "eu_ai_sovereignty up, resilience up modestly",
+      "finished": true,
+      "status": "finished",
+      "finish_period": "the first half of 2028",
+      "start_period": "the second half of 2027"
+    },
+    {
+      "name": "EU Bio-Shield and Blockade Continuity Regime",
+      "category": 6,
       "cost": 3,
-      "start": 2,
-      "finish": 5,
-      "description": "Establishes EU-level access to agent logs and decision traces from all frontier systems deployed in public services or critical infrastructure",
+      "start": 4,
+      "finish": 7,
+      "description": "resilience up substantially, ai_safety up modestly via incident response",
       "finished": false,
-      "status": "running",
-      "finish_period": "the second half of 2028",
-      "start_period": "the first half of 2027"
+      "status": "new",
+      "finish_period": "the second half of 2029",
+      "start_period": "the first half of 2028"
     }
   ],
   "cancelled": [],
-  "new_measure": "Resilience Surge Protocol",
-  "priority": "Resilience Surge Protocol",
-  "commitment": null,
+  "new_measure": "EU Bio-Shield and Blockade Continuity Regime",
+  "priority": "EU Bio-Shield and Blockade Continuity Regime (new)",
+  "commitment": "Secure independent capacity and resilience so the Union can withstand coercion and absorb AI harm",
   "prev_node": "turn-03-A1",
   "next_node": "turn-05-A1",
   "next_choice": null,

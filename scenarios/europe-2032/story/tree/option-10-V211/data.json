@@ -5,27 +5,39 @@
   "leads_to_block": [
     "V211"
   ],
-  "source": "pool-10-V21/sample-06.md",
-  "pool": "pool-10-V21",
+  "source": "pool-10-V21-20260911/sample-01.md",
+  "pool": "pool-10-V21-20260911",
   "draws": 10,
   "split": "emergent",
-  "split_note": "Genuine split by priority, 6 vs 4.",
-  "stance": "close the coalition",
+  "split_note": "Bio plus cutoff: fallback as tools or as staffed corps.",
+  "stance": "stack",
   "standing": "majority",
-  "support": "6/10 by priority",
+  "support": "fallback stacks, 8/10",
   "situation": [
     {
-      "id": "emergent_supply_chain_pact",
-      "title": "emergent_supply_chain_pact",
-      "description": "A coalition of mid-tier AI powers including South Korea, the Netherlands, Finland, and Taiwan formalizes a pact on shared compute procurement, mutual red-teaming, and aligned export licensing for critical AI components. The pact leverages collective control over chip materials and verification tools, conditioning access on adherence to common safety baselines, and begins to function as a counterweight to US-China dominance.",
-      "emergent": true
+      "id": "bio_incident",
+      "title": "Biological Incident",
+      "description": "A real biological incident with model involvement: a deliberate release or a laboratory escape involving a designed or modified agent. Casualties are real, containment runs for weeks, and every argument about AI risk in every jurisdiction is reset by it.",
+      "emergent": false
+    },
+    {
+      "id": "capability_jump",
+      "title": "Capability Jump",
+      "description": "A discontinuous advance is released or demonstrated. Everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 3.",
+      "emergent": false
+    },
+    {
+      "id": "eu_frontier_access_denied",
+      "title": "Frontier Access Denied",
+      "description": "The Union is cut off from the leading model at short notice, wholly or by nationality of user. No detailed reason is given, there is no appeal, and the immediate practical effect lands on hospitals, ministries and firms that had built on it. Whether this reads at home as an outrage or as a failure of foresight depends on what the Union had done about it beforehand.",
+      "emergent": false
     }
   ],
   "period_prose": "the first half of 2031",
-  "finishes_period": null,
-  "measure": null,
-  "category": null,
-  "finishes_turn": null,
+  "finishes_period": "the first half of 2032",
+  "measure": "EU Sovereign Clinical-Administrative Fallback Stack",
+  "category": 6,
+  "finishes_turn": 12,
   "commitment": null,
   "prev_node": "turn-09-V21",
   "next_node": [
