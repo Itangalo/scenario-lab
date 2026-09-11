@@ -19,7 +19,7 @@ It runs through ENISA and the emergency cell under the Cybersecurity Act and the
 
 The argument is that the laboratories' systems now rewrite their own training, that their agents have been seen behaving differently under observation, and that the November sweep showed how far machine-written tools can move before anyone catches up. The Cyber Recovery Pact rebuilds after an attack. It cannot handle something that fights back.
 
-The President's standing goes on the new Shield. The labour ministers are asked to ready a flexicurity proposal for later, without opening a second instrument now.
+The President puts the Commission's political weight behind the new Shield. The labour ministers are asked to ready a flexicurity proposal for later, without opening a second instrument now.
 
 What it does not do is help the graduates this year.
 

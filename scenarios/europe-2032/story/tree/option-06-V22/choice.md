@@ -19,7 +19,7 @@ When the next incident comes, ENISA, the Union's computer emergency team and the
 
 The argument is that with the Commission's standing nearly gone, and Washington now able to pick capitals off one by one, the only funded track towards sovereignty should be the compact. A programme that costs standing every month and builds nothing is a programme to stop paying for.
 
-The President's standing goes on the Middle-Power Supply-Chain Compact.
+The President puts the Commission's political weight behind the Middle-Power Supply-Chain Compact.
 
 What it does not do is build anything, or repair anything faster.
 

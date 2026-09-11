@@ -19,7 +19,7 @@ ENISA and the allied cyber command run it. Offline backups are positioned in adv
 
 The argument is that offensive cyber capability has been downloadable and beyond recall since 2026, that the attacks that get through arrive at the smallest and least-staffed operators, and that the backstop only works if there is something to fall back on.
 
-The President's standing goes on the gigafactories. They are forced through mediation and grid-priority decisions rather than new money: the mediated site to a final investment decision, the court-blocked site contained. Without one build anchored in the Union, the rest of the strategy has nothing underneath it.
+The President puts the Commission's political weight behind the gigafactories. They are forced through mediation and grid-priority decisions rather than new money: the mediated site to a final investment decision, the court-blocked site contained. Without one build anchored in the Union, the rest of the strategy has nothing underneath it.
 
 What it does not do is look inside any of the systems it defends against.
 

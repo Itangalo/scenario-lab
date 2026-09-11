@@ -108,16 +108,42 @@ def markdown(text: str) -> str:
     return "\n".join(html_ for _, html_ in blocks(text))
 
 
+MEMO_HEADING = "Note to the President"
+
+
 def split_turn(text: str) -> dict[str, str]:
     """Lift the headline out of a turn so the chapter header can carry the
-    date alongside it, the way `split_choice` lifts one off a choice page."""
+    date alongside it, the way `split_choice` lifts one off a choice page.
+
+    Sofia's note to the President is a document inside the story, not more
+    narration, so it is set as one: everything from its heading to the next
+    heading goes into a memo box, with the dateline and the President's
+    reply in the margin picked out."""
     parts = blocks(text)
     title, body = "", []
-    for i, (kind, html_) in enumerate(parts):
+    memo: list[str] | None = None
+    for kind, html_ in parts:
         if not title and kind == "h":
             title = re.sub(r"</?h\d>", "", html_)
             continue
+        if kind == "h":
+            if memo is not None:
+                body.append('<div class="memo">' + "".join(memo) + "</div>")
+                memo = None
+            label = re.sub(r"</?h\d>", "", html_)
+            if label == MEMO_HEADING:
+                memo = [f'<p class="memo-label">{label}</p>']
+                continue
+        if memo is not None:
+            if kind == "p" and html_.startswith("<p><em>From "):
+                html_ = '<p class="memo-from">' + html_[3:]
+            elif kind == "p" and html_.startswith("<p><em>In the margin"):
+                html_ = '<p class="memo-margin">' + html_[3:]
+            memo.append(html_)
+            continue
         body.append(html_)
+    if memo is not None:
+        body.append('<div class="memo">' + "".join(memo) + "</div>")
     return {"title": title, "html": "\n".join(body)}
 
 
@@ -145,7 +171,9 @@ def split_choice(text: str) -> dict[str, str]:
         signal = paras.pop()
     lead_sentence = ""
     if paras:
-        plain = re.sub(r"<[^>]+>", "", paras[0])
+        # `paras` is already escaped; unescape before escaping again, or an
+        # apostrophe reaches the page as a literal `&#x27;`.
+        plain = html.unescape(re.sub(r"<[^>]+>", "", paras[0]))
         m = re.match(r"(.+?[.!?])(?:\s|$)", plain, re.S)
         lead_sentence = html.escape(m.group(1).strip()) if m else html.escape(plain[:180])
     return {"title": title, "meta": meta, "lead": lead_sentence,
@@ -231,7 +259,7 @@ def build_payload(nodes: dict[str, dict[str, Any]]) -> dict[str, Any]:
 HEAD = """<title>Europe 2032</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Spectral:wght@300;400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Spectral:wght@300;400;600&family=IBM+Plex+Mono:wght@400;500&family=Caveat:wght@500&display=swap">
 <style>
 :root {
   --ground: #eef1f2;
@@ -423,6 +451,40 @@ article blockquote.chat .beat.me { align-self: flex-end; background: var(--accen
 article blockquote.chat .who {
   display: block; font-size: 0.66rem; letter-spacing: 0.06em; text-transform: uppercase;
   color: var(--faint); margin-bottom: 0.15rem;
+}
+/* Sofia's note to the President: a document laid into the story, set as
+   paper rather than narrated, with the President's reply in hand. */
+article .memo {
+  margin: 2.6rem 0 0; padding: 1.4rem 1.5rem 1.5rem;
+  background: var(--surface); border: 1px solid var(--rule);
+  border-top: 3px solid var(--accent); border-radius: 2px;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.9rem; line-height: 1.55;
+}
+article .memo p { margin: 0 0 0.8rem; }
+article .memo ul { margin: -0.3rem 0 1rem; }
+article .memo li { margin: 0 0 0.35rem; }
+article .memo .memo-label {
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-size: 0.68rem; letter-spacing: 0.11em; text-transform: uppercase;
+  color: var(--accent); margin: 0 0 0.35rem;
+}
+article .memo .memo-from {
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-size: 0.72rem; line-height: 1.5; color: var(--faint);
+  padding-bottom: 0.9rem; border-bottom: 1px solid var(--rule); margin-bottom: 1.1rem;
+}
+article .memo .memo-from em { font-style: normal; color: inherit; }
+article .memo .memo-margin {
+  margin: 1.4rem 0 0; padding-top: 0.9rem; border-top: 1px dashed var(--rule);
+  font-family: Caveat, "Bradley Hand", "Segoe Print", cursive;
+  font-size: 1.4rem; line-height: 1.3; color: var(--accent);
+}
+article .memo .memo-margin em {
+  display: block; margin-bottom: 0.25rem;
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-size: 0.62rem; line-height: 1.4; letter-spacing: 0.1em; text-transform: uppercase;
+  font-style: normal; color: var(--faint);
 }
 .panel { background: var(--surface); border: 1px solid var(--rule); border-radius: 2px; padding: 1.1rem 1.1rem 1.25rem; }
 .cap { font-size: 0.65rem; letter-spacing: 0.11em; text-transform: uppercase; color: var(--faint); margin: 0 0 1rem; }

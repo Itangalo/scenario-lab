@@ -19,7 +19,7 @@ It is activated under the health-emergency and civil-protection legal bases, wit
 
 The argument is that last spring's genome paper put a design within reach of non-experts, that the sentinels are already watching the drains, and that tools do not trace contacts. People do. If the next shock is biological, the Union will need a corps, not a software pack.
 
-The President's standing goes on the corps.
+The President puts the Commission's political weight behind the corps.
 
 What it does not do is harden the municipal systems the attacks keep jamming.
 

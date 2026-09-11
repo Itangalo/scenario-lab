@@ -19,7 +19,7 @@ It is paid for by reprogramming emergency lines in Digital Europe, the civil pro
 
 The argument is that the Union was cut off once, in February 2027, and nothing has been built since that would stop it happening again. The crews have proved they can hold a town. The fallback makes that holding the default.
 
-The President's standing goes on the fallback stack. With almost nothing left to spend, only continuity people can see is worth spending it on.
+The President puts the Commission's political weight behind the fallback stack. With almost nothing left to spend, only continuity people can see is worth spending it on.
 
 What it does not do is staff a single extra ward.
 

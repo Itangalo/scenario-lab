@@ -19,7 +19,7 @@ Non-belligerency would be declared in advance, and offensive use of any infrastr
 
 The argument is that every lifeline Europe has – cables, chips, medicines – runs through or past the strait. When it closes for good, what matters is what is still standing.
 
-The President's standing goes on the shelter itself.
+The President puts the Commission's political weight behind the shelter itself.
 
 What it does not do is bring Europe any closer to the frontier.
 

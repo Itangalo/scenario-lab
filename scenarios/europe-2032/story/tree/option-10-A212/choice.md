@@ -19,7 +19,7 @@ The Union refuses any basing or targeting use of its fabs, cables and data centr
 
 The argument is that after last autumn's warning about pathogen design, the pooled reagents, hardened logistics and European-hosted triage are the lifeline itself. A shelter that protects cables and not clinics protects the wrong thing.
 
-The President's standing goes on the bio-detection and care network.
+The President puts the Commission's political weight behind the bio-detection and care network.
 
 What it does not do is bring Europe any closer to the frontier.
 

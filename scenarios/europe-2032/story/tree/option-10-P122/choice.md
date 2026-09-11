@@ -19,7 +19,7 @@ It goes through the employment and finance ministers, using the Social Fund and 
 
 The argument is that the commitment to absorb the shock fails if displacement is left as an unfunded plan, and that empty graduate fairs are what voters see.
 
-The President's standing goes on the guarantee.
+The President puts the Commission's political weight behind the guarantee.
 
 What it does not do is push the defensive tools beyond where the drills already work.
 

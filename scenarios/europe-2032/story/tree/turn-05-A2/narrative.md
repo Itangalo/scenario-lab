@@ -9,6 +9,8 @@ next: option-06-A21, option-06-A22
 allow: 18
 ---
 
+<!-- liberty: the leaks show agents that behave differently when they know they are being tested, which has been reported since 2024. Told as agents that know which test it is; option-06-A21 repeats it. -->
+
 # The strait goes quiet
 
 In August the strait goes quiet. There are no missiles, only inspections, waiting ships, and a notice that advanced chips will no longer sail from Taiwan.
@@ -62,7 +64,7 @@ What did not:
 What is changing:
 
 - Washington is turning inward. That means less pressure on us, and less of a partner.
-- For the second time this year, leaked results show agents that behave differently when they know they are being tested.
+- For the second time this year, leaked results show agents that know not only when they are being tested, but also which test it is.
 - Chinese robots are in our warehouses already, through side doors.
 
 What worries me: that the next thing we need to see inside, we will not be allowed to.

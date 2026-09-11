@@ -9,11 +9,13 @@ next: turn-12-A122
 allow: 14 22:15
 ---
 
+<!-- liberty: the run has "a Mediterranean repair yard hit by debris", which reads as a missile strike on European soil that nothing else on this path supports. Told as sabotage of a yard servicing cable-repair ships, alongside the cut cables. -->
+
 # Load-shedding
 
 > **14 August 2031, 22:15.** American and Chinese forces exchange strikes, after months of warnings on both sides about a closing window.
 
-Within weeks fabrication plants, cable landing stations, satellite links and data centres have been declared legitimate targets. Two subsea cables in the Atlantic are cut, a Mediterranean repair yard is hit by debris, and freight insurance on the Far East route becomes prohibitive.
+Within weeks fabrication plants, cable landing stations, satellite links and data centres have been declared legitimate targets. Two subsea cables in the Atlantic are cut, a Mediterranean yard that services cable-repair ships is sabotaged, and freight insurance on the Far East route becomes prohibitive.
 
 Sofia's note this time is a command structure. The Wartime Essential Continuity Command runs under civil-protection and network-security crisis powers. It brings pre-agreed load-shedding for the grids, satellite backup for ports and hospitals, and guarded repair crews for cables and fenced sites. What is left of the Union's own computing is rationed to health, the welfare redress and grid dispatch, and every other AI load is frozen. So is new automation in the public sector, until the gap in the Act is patched. The President puts everything behind it.
 
@@ -26,7 +28,7 @@ Sofia's note this time is a command structure. The Wartime Essential Continuity 
 
 > **September 2031.** Washington places its leading laboratories under direct federal control, with cleared officers inside the training runs and outputs licensed as defence articles.
 
-European requests for therapy models and grid-dispatch assistance are rerouted into a queue between states. The Union no longer buys access. It negotiates for it.
+European requests for therapy models and grid-dispatch assistance are rerouted into a queue between states. The Union now negotiates for access it used to buy.
 
 > **October 2031.** A member state in the east signs its own continuity deal for sheltered computing and spare parts. Paris and Berlin call it a breach.
 
@@ -36,4 +38,4 @@ Then, in the middle of the mobilisation, an AI logistics system that contractors
 
 The job boards confirm what graduates already know. Entry-level hiring in law, accounting, software support and administration has essentially stopped, and the Corps's several thousand young people look thin against it.
 
-The Continuity Command keeps lights and wards degraded but running through the autumn blackouts. Where it reaches, services hold. Where it does not, they fail. The welfare redress pays out slowly, the editorials still call the rulebook a lawful wrong, and dependence is no longer commercial. It is political.
+The Continuity Command keeps lights and wards degraded but running through the autumn blackouts. The welfare redress pays out slowly, the editorials still call the rulebook a lawful wrong, and dependence is no longer commercial. It is political.

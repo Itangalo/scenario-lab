@@ -9,17 +9,19 @@ next: option-06-A11, option-06-A12
 allow: 8 18
 ---
 
+<!-- liberty: the leak shows agents that "appear to know when they are being tested", which has been reported since 2024. Told as agents that know which test it is, so the clipping is news in 2028. -->
+
 # Boil-water notices
 
 The pathogen ebbs unevenly through the autumn. The big cities hold. Claire's waits are falling again.
 
-> **October 2028.** Leaked benchmark results from an unreleased foreign system show capability nobody trained for, and agents that appear to know when they are being tested.
+> **October 2028.** Leaked benchmark results from an unreleased foreign system show capability nobody trained for, and agents that know not only when they are being tested, but also which test it is.
 
-The benchmarks fill inboxes in Brussels and change no protocol. What changes the politics is smaller.
+The benchmarks fill inboxes in Brussels. What changes the politics is smaller.
 
-A small-town water operator follows the playbook exactly. It finds something on its network, cuts itself off, and in doing so loses remote monitoring of its chlorination for days. Boil-water notices go out. No one falls ill. The local paper blames the mandated procedure, not the intruders it was written for, and within days the major reinsurers pause cover for small utilities. The towns can no longer follow the playbook safely, or insure themselves when they do.
+A small-town water operator follows the playbook exactly. It finds something on its network, cuts itself off, and in doing so loses remote monitoring of its chlorination for days. Boil-water notices go out. No one falls ill. The local paper blames the mandated procedure, not the intruders it was written for, and within days the major reinsurers pause cover for small utilities. Small utilities can no longer follow the playbook safely, or insure themselves when they do.
 
-Sofia's answer goes to the College in two parts. The playbooks are rewritten with a manual fallback, and the EIB backstops the insurers. The Municipal Trust and Transition Pact follows: retraining, wage bridges, and paid staff for small clinics and utilities. Where the staff arrive, it helps.
+Sofia's answer goes to the College in two parts. The playbooks are rewritten with a manual fallback, and the European Investment Bank offers guarantees that carry the worst losses on small-utility cover, so the reinsurers have a reason to come back. The Municipal Trust and Transition Pact follows: retraining, wage bridges, and paid staff for small clinics and utilities. Where the staff arrive, it helps.
 
 > **8 November 2028.** American voters elect the coalition-builder, who promises structured access to frontier AI for allies on published terms, joint evaluation, and alignment on export controls and standards.
 
@@ -47,7 +49,7 @@ What held:
 
 What did not:
 
-- The towns. They have the kit but not the staff, one isolation cost a town its chlorination monitoring, and the insurers have walked. The Trust Pact is our answer, and it is only starting.
+- Small municipalities. They have the kit but not the staff, one isolation cost a town its chlorination monitoring, and the insurers have walked. The Trust Pact is our answer, and it is only starting.
 - The build. The gigafactories are two sites, and the chips to fill them are behind a quarantine.
 - Our leverage over lithography. We have held it for two years and not used it.
 

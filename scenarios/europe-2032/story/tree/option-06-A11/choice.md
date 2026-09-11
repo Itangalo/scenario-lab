@@ -18,7 +18,7 @@ The Pact negotiates access to American frontier systems on published terms, with
 
 The argument is that the offer is a window, and windows close. A Union without frontier access cannot absorb the next shock, and a Union that takes the access without conditions will never build anything again.
 
-The President's standing goes on the Trust Pact first. Nothing else lands if the towns keep blaming Brussels for boil-water notices and uninsured downtime.
+The President puts the Commission's political weight behind the Trust Pact first. Nothing else lands if mayors keep blaming Brussels for boil-water notices and uninsured downtime.
 
 What it does not do is make the robots stoppable.
 

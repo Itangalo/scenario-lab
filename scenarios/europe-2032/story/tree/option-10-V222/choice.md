@@ -19,7 +19,7 @@ It runs as an operation under the network-security directive. Three mobile recov
 
 The argument is that the 2029 intrusion took weeks to map, and that the tooling behind it can now be reproduced on anyone's laptop. Without a response that visibly puts defenders ahead, the Union's last standing and trust evaporate.
 
-The President's standing goes on the recovery corps.
+The President puts the Commission's political weight behind the recovery corps.
 
 What it does not do is protect a single job.
 

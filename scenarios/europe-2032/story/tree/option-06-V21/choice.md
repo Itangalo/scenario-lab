@@ -19,7 +19,7 @@ It runs under the network-security directive's crisis powers, with the Joint Cyb
 
 The argument is that the grid drive closed with the hospitals still unpatched and the legacy controllers still in place, and that in the winter of 2027 it took weeks to restore what the attack had broken. With the Commission's standing nearly spent, the only thing that rebuilds it is restoration people can see.
 
-The President's standing goes on the repair cell.
+The President puts the Commission's political weight behind the repair cell.
 
 What it does not do is add to the Union's leverage abroad.
 

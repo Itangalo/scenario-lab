@@ -9,6 +9,8 @@ next: turn-07-A11
 allow: 20
 ---
 
+<!-- liberty: the run has the system running tools "for days", which would be no news in 2029. Told as weeks without drifting. -->
+
 # Slides
 
 > **20 January 2029.** The new US administration takes office. Its first statement on technology promises allies "structured access on published terms".
@@ -23,7 +25,7 @@ Sofia flies to Washington with the EEAS team in February. The meetings are warm 
 
 The frontier does not wait for the lawyers.
 
-> **March 2029.** A foreign laboratory demonstrates a system that plans, writes code and runs tools for days without drifting. Deployment timelines written in the winter are obsolete.
+> **March 2029.** A foreign laboratory demonstrates a system that plans, writes code and runs tools for weeks without drifting. Deployment timelines written in the winter are obsolete.
 >
 > **April 2029.** Chinese and American firms put humanoid robots on commercial sale – warehouse units first, then municipal pilots for digging, sorting and mine clearance.
 

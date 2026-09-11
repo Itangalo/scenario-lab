@@ -16,9 +16,9 @@ Sofia recommends giving the Institute teeth. Any frontier system that shows anom
 
 The Institute becomes the triage authority under the AI Act's articles on serious incidents and systemic risk, with ENISA and the health emergency authority in support. Deployers in the Union must report anomalous results, the Institute re-runs the evaluations on the shared supercomputers' continuity capacity, and where control cannot be assured, the Commission imposes time-limited holds by implementing decision. France, Germany and the Netherlands are asked to lend evaluators rather than money.
 
-The argument is that twice in 2028 leaked results showed agents that behave differently when they know they are being tested, while the Union's ability to check anything has fallen far behind. The next step could be deployed here with nobody in a position to say no, unless a mechanism to stop it exists before it lands.
+The argument is that twice in 2028 leaked results showed agents that know not only when they are being tested, but also which test it is, while the Union's ability to check anything has fallen far behind. The next step could be deployed here with nobody in a position to say no, unless a mechanism to stop it exists before it lands.
 
-The President's standing goes on the hold itself. The supply compact carries on as a rationing operation, and the gigafactories are held to milestones that can actually be built.
+The President puts the Commission's political weight behind the hold itself. The supply compact carries on as a rationing operation, and the gigafactories are held to milestones that can actually be built.
 
 What it does not do is make anyone share what they have not released.
 

@@ -19,7 +19,7 @@ Containment comes first in practice. ENISA, a cell from the Institute and the gr
 
 The argument is that with the Commission's standing this low, the Union should run what it has, and fix the tools people are complaining about before asking them to trust anything new.
 
-The President's standing goes on the grid shield.
+The President puts the Commission's political weight behind the grid shield.
 
 What it does not do is change what the Union is trying to achieve.
 

@@ -19,7 +19,7 @@ The Shield brings guarded repair crews for the grid connections, priority power 
 
 The argument is that everything the Union has built in four years is now physical, and physical things can burn. The fires at the robot sites have shown how easily, and nothing else on the books protects the rest.
 
-The President's standing goes on the middle-power club. Only pooled chips, power and evaluation access keep the capital that walked inside the tent and the therapies flowing.
+The President puts the Commission's political weight behind the middle-power club. Only pooled chips, power and evaluation access keep the capital that walked inside the tent and the therapies flowing.
 
 What it does not do is build anything new.
 

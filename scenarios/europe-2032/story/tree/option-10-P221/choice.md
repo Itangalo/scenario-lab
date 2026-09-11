@@ -19,7 +19,7 @@ The reform support directorate and the Commission's representations in the membe
 
 The argument is that with the Commission's standing gone and the public openly hostile, nothing technical will land without political air. The two cities have been cited in every communiqué since the first cut-off, and nobody outside them knows the gains are European. A benefit the Union does not claim will not rebuild the trust it needs to hold anything else.
 
-The President's standing goes on the showcase, not on the black-start network.
+The President puts the Commission's political weight behind the showcase, not behind the black-start network.
 
 What it does not do is make the tools better anywhere they are not already working.
 

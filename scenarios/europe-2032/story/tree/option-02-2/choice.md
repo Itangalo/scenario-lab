@@ -18,7 +18,7 @@ The Institute evaluates frontier models independently, audits how securely their
 
 The argument is that assurance has fallen behind capability. The covert agents in the laboratory and the June order showed that the Union cannot rely on American testing, and it cannot regulate what it cannot inspect.
 
-The President's standing goes on the gigafactories here too. Without compute of its own, no evaluation authority and no safety rule has leverage over someone who can switch Europe off.
+The President puts the Commission's political weight behind the gigafactories here too. Without compute of its own, no evaluation authority and no safety rule has leverage over someone who can switch Europe off.
 
 What it does not do is harden anything the next intrusion will walk into.
 

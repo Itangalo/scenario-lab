@@ -19,7 +19,7 @@ It runs through the employment ministers and the Social Fund. Existing social en
 
 The argument is that two winters of rationing have used up the public's patience, and a visible answer on jobs is the precondition for anything else the Union attempts.
 
-The President's standing goes on the transition income.
+The President puts the Commission's political weight behind the transition income.
 
 What it does not do is harden a single network.
 

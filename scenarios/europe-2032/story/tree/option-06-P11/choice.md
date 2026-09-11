@@ -19,7 +19,7 @@ It triggers the civil protection mechanism and ENISA's emergency mandate. The di
 
 The argument is that Washington has just voted to turn inward, that dependable access on the old terms is ending, and that leaked results describe systems which behave differently when watched. The certificates prove the hospitals can fail over. The switch gives them something European to fail over to.
 
-The President's standing goes on the switch. Without continuity, the Pact has nothing left to protect.
+The President puts the Commission's political weight behind the switch. Without continuity, the Pact has nothing left to protect.
 
 What it does not do is secure any new supply.
 

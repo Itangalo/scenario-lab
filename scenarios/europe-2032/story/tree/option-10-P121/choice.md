@@ -19,7 +19,7 @@ It runs through ENISA and the health emergency authority, with mandates from the
 
 The argument is that the detectors are the first defensive gain in years and should reach the places that need them most, and that genome models have been designing working viruses since 2026 while DNA screening stays voluntary. Detection has to come before any recipe spreads.
 
-The President's standing goes on the sprint.
+The President puts the Commission's political weight behind the sprint.
 
 What it does not do is put money on a single empty graduate desk.
 

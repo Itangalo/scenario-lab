@@ -15,15 +15,15 @@ next: turn-08-A12
 > **Claire:** records locked. we're on paper again
 > **Claire:** at least we remember how
 
-Sofia's note that week becomes the Cyber Recovery and Service Continuity Surge. Joint restoration teams go to the hardest-hit towns, offline backups are mandated for hospitals and utilities, and manual-operation drills become compulsory. The President puts the Commission's standing behind it, because restoration voters can see is what keeps anything else fundable. Where the crews arrive, services degrade rather than stop. Where they have not yet arrived, mayors report queues and dark offices. Attribution is still open at Christmas.
+Sofia's note that week becomes the Cyber Recovery and Service Continuity Surge. Joint restoration teams go to the hardest-hit municipalities, offline backups are mandated for hospitals and utilities, and manual-operation drills become compulsory. The President puts the Commission's standing behind it, because restoration voters can see is what keeps anything else fundable. Services degrade rather than stop wherever the crews get to; elsewhere mayors report queues and dark offices. Attribution is still open at Christmas.
 
 The robot inspections suffer first. The same inspectors are needed for cyber triage, and the port audits in Rotterdam, Hamburg and Lyon are postponed again and again.
 
-> **November 2029.** An American laboratory demonstrates longer autonomous planning and tool use in controlled trials.
+> **November 2029.** An American laboratory demonstrates even longer autonomous planning and tool use in controlled trials.
 >
 > **November 2029.** A new interpretability and control result improves how well the behaviour of deployed systems can be predicted. Some laboratories take it up.
 >
-> **December 2029.** Shipping insurers raise their quotes on Taiwan Strait routes after extended exercises there.
+> **December 2029.** Shipping insurers raise their quotes again on Taiwan Strait routes after extended exercises there.
 
 Brussels presses the interpretability result into public-sector deployments as fast as it can. It is modest, and it is real.
 

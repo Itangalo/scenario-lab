@@ -19,7 +19,7 @@ It acts under the treaty's public-health and solidarity articles, through the He
 
 The argument is that manual wards already carrying two years of backlog cannot absorb casualties on top. What the Union can hold is its hospitals, open through containment, and that is where the overtime, the double-check teams and the cross-border hires should go.
 
-The President's standing goes on the treatment surge.
+The President puts the Commission's political weight behind the treatment surge.
 
 What it does not do is take automated triage out of the wards.
 

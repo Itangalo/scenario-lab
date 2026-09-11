@@ -19,7 +19,7 @@ Instead, the Union runs what it has. The finished Shields keep health, power and
 
 The argument is that the next move should wait until it is clear what is left to protect and what can still be bargained for.
 
-The President's standing goes on the middle-power club.
+The President puts the Commission's political weight behind the middle-power club.
 
 What it does not do is protect anything that is not already protected.
 

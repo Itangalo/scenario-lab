@@ -18,7 +18,7 @@ The Protocol makes safety interlocks, remote stop and manual override mandatory 
 
 The argument is that the machines will come from outside, onto the industrial base Europe still leads in, and with the public already sour they cannot be banned. They can be made stoppable, and their failures survivable.
 
-The President's standing goes on the Trust Pact first. Nothing else lands if the towns keep blaming Brussels for boil-water notices and uninsured downtime.
+The President puts the Commission's political weight behind the Trust Pact first. Nothing else lands if mayors keep blaming Brussels for boil-water notices and uninsured downtime.
 
 What it does not do is take up Washington's offer of access.
 

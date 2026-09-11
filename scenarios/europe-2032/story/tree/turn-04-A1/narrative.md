@@ -19,9 +19,9 @@ The laboratories argue about how much the model really helped. The intensive-car
 
 Three weeks later a quarantine closes around Taiwan and advanced chip shipments stop. Accelerator prices spike, and every plan in the building that assumed more compute becomes fiction overnight.
 
-Sofia's note that week is the longest she has written. It invokes Article 122 and the Civil Protection Mechanism: pooled sequencing and wastewater monitoring, stockpiled countermeasures released, and mandatory incident reporting from every lab and hospital running biological models. Time on the supercomputers is rationed, and the two factory sites get grid priority. She drafts the paragraph on lithography three times. All three versions say "not yet". The export controls are coordinated with the member states, and not used.
+Sofia's note that week is the longest she has written. It invokes Article 122 and the Civil Protection Mechanism: pooled sequencing and wastewater monitoring, stockpiled countermeasures released, and mandatory incident reporting from every lab and hospital running biological models. Time on the supercomputers is rationed, and the two factory sites move to the front of the queue for grid connections, so they can run the day the chips arrive. She drafts the paragraph on lithography three times. All three versions say "not yet". The export controls are coordinated with the member states, and not used.
 
-This is the half-year the Shield was bought for, and it finishes in time. Joint detection catches the copycat kits faster. Backup kits let several small grids degrade rather than fail. The Continuity Stack, finished too, keeps the larger hospitals on their screens. The small towns still lack staff, and still lose their monitoring whenever they isolate.
+This is the half-year the Shield was bought for, and it finishes in time. Joint detection catches the copycat kits faster. Backup kits let several small grids degrade rather than fail. The Continuity Stack, finished too, keeps the larger hospitals on their screens. Small municipalities still lack staff, and still lose their monitoring whenever they isolate.
 
 > **April 2028.** Humanoid robots go on commercial sale abroad, first for warehouses and loading docks. Armed variants appear in foreign military trials. The control software is American; most of the hardware is Chinese.
 >

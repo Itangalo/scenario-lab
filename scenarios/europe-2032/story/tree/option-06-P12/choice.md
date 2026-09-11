@@ -19,7 +19,7 @@ The banked Shield certificates and the template continuity plans become the Unio
 
 The argument is that the Union has already built the procedures it needs, and paid for the certificates. With its standing this low, a new fund would fail. A common supply line under EU jurisdiction is worth more than another programme.
 
-The President's standing goes on the Autonomy Pact Network.
+The President puts the Commission's political weight behind the Autonomy Pact Network.
 
 What it does not do is build anything to fail over to where the certificates do not reach.
 
