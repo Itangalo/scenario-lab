@@ -58,8 +58,50 @@ def blocks(text: str) -> list[tuple[str, str]]:
             level = len(heading.group(1))
             out.append(("h", f"<h{level + 1}>{inline(heading.group(2))}</h{level + 1}>"))
             continue
+        lines = block.split("\n")
+        if all(line.lstrip().startswith(">") for line in lines):
+            out.append(("q", quote(lines)))
+            continue
+        if all(BULLET.match(line) for line in lines):
+            items = "".join(f"<li>{inline(BULLET.sub('', line))}</li>" for line in lines)
+            out.append(("ul", f"<ul>{items}</ul>"))
+            continue
         out.append(("p", f"<p>{inline(block)}</p>"))
     return out
+
+
+BULLET = re.compile(r"^\s*[-*]\s+")
+SENDER = re.compile(r"^\*\*([^*:]+):\*\*\s*")
+# The story follows one person; her own messages sit on the other side of the
+# thread, the way they would on her phone.
+PROTAGONIST = "Sofia"
+
+
+def quote(lines: list[str]) -> str:
+    """Clippings and text messages, both written as `>` blocks. A block whose
+    first line opens with a bold name and a colon is a text thread; anything
+    else is a run of dated clippings. Empty `>` lines separate the beats: one
+    clipping, or one sender's consecutive messages."""
+    body = [re.sub(r"^\s*>\s?", "", line) for line in lines]
+    groups: list[list[str]] = [[]]
+    for line in body:
+        if line.strip():
+            groups[-1].append(line.strip())
+        elif groups[-1]:
+            groups.append([])
+    groups = [g for g in groups if g]
+    if groups and SENDER.match(groups[0][0]):
+        beats = []
+        for group in groups:
+            m = SENDER.match(group[0])
+            who = m.group(1).strip() if m else ""
+            cls = "beat me" if who == PROTAGONIST else "beat"
+            msgs = "".join(f"<p>{inline(SENDER.sub('', line))}</p>" for line in group)
+            beats.append(f'<div class="{cls}"><span class="who">{html.escape(who)}</span>{msgs}</div>')
+        return f'<blockquote class="chat">{"".join(beats)}</blockquote>'
+    beats = ["<div class=\"beat\">" + "".join(f"<p>{inline(line)}</p>" for line in group) + "</div>"
+             for group in groups]
+    return f'<blockquote class="clip">{"".join(beats)}</blockquote>'
 
 
 def markdown(text: str) -> str:
@@ -354,6 +396,34 @@ article h3 {
 article p { margin: 0 0 1.15rem; }
 article p:last-child { margin-bottom: 0; }
 article em { color: var(--muted); }
+article ul { margin: 0 0 1.15rem; padding-left: 1.25rem; }
+article li { margin: 0 0 0.45rem; }
+/* Dated clippings: the events that need only a clause, set like a wire. */
+article blockquote { margin: 1.7rem 0; }
+article blockquote.clip {
+  border-left: 3px solid var(--accent); padding: 0.15rem 0 0.15rem 1rem;
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-size: 0.8rem; line-height: 1.55; color: var(--muted);
+}
+article blockquote.clip .beat + .beat { margin-top: 0.85rem; }
+article blockquote.clip p, article blockquote.chat p { margin: 0; }
+article blockquote.clip strong { color: var(--ink); font-weight: 500; }
+/* Text threads: one bubble per sender's run of messages; Sofia on the right. */
+article blockquote.chat {
+  display: flex; flex-direction: column; gap: 0.5rem;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.86rem; line-height: 1.45;
+}
+article blockquote.chat .beat {
+  align-self: flex-start; max-width: 82%;
+  background: var(--surface); border: 1px solid var(--rule); border-radius: 14px;
+  padding: 0.45rem 0.85rem 0.55rem;
+}
+article blockquote.chat .beat.me { align-self: flex-end; background: var(--accent-soft); }
+article blockquote.chat .who {
+  display: block; font-size: 0.66rem; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--faint); margin-bottom: 0.15rem;
+}
 .panel { background: var(--surface); border: 1px solid var(--rule); border-radius: 2px; padding: 1.1rem 1.1rem 1.25rem; }
 .cap { font-size: 0.65rem; letter-spacing: 0.11em; text-transform: uppercase; color: var(--faint); margin: 0 0 1rem; }
 .dials { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem 0.5rem; }
