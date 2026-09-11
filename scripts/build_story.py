@@ -216,6 +216,38 @@ def load_nodes(tree_dir: Path) -> dict[str, dict[str, Any]]:
     return nodes
 
 
+def sim_data(data: dict[str, Any]) -> dict[str, Any]:
+    """What "Simulation data" opens for a half-year: the run's own record,
+    outside the story. Measure descriptions are left out – they are the
+    actor's shorthand, metric ids and all – and nothing here names the arm.
+    Finished measures pile up in the portfolio for good, so only the ones
+    finishing this half-year are listed."""
+    turn = data.get("turn")
+    measures = []
+    for p in data.get("portfolio") or []:
+        status = p.get("status")
+        if status == "new":
+            label = "started this half-year"
+        elif status == "running":
+            due = p.get("finish_period")
+            label = f"running, due to finish in {due}" if due else "running"
+        elif status == "finished" and p.get("finish") == turn:
+            label = "finished this half-year"
+        else:
+            continue
+        measures.append({"name": html.escape(p.get("name", "")), "status": label})
+    for c in data.get("cancelled") or []:
+        name = c if isinstance(c, str) else (c.get("name") or "")
+        if name:
+            measures.append({"name": html.escape(name), "status": "cancelled"})
+    priority = re.sub(r"^M\d+\s+|\s*\(M\d+\)\s*$", "", data.get("priority") or "")
+    return {
+        "measures": measures,
+        "priority": html.escape(priority),
+        "commitment": html.escape(data.get("commitment") or ""),
+    }
+
+
 def build_payload(nodes: dict[str, dict[str, Any]]) -> dict[str, Any]:
     payload: dict[str, Any] = {}
     for name, node in nodes.items():
@@ -244,9 +276,11 @@ def build_payload(nodes: dict[str, dict[str, Any]]) -> dict[str, Any]:
                 for m in (data.get("metrics") or {}).values()
             ]
             entry["events"] = [
-                {"title": e["title"], "description": e["description"]}
+                {"title": html.escape(e["title"]),
+                 "description": re.sub(r"`([^`]+)`", r"<code>\1</code>", inline(e["description"]))}
                 for e in (data.get("events") or [])
             ]
+            entry["sim"] = sim_data(data)
             nxt = data.get("next_node")
             entry["next"] = opaque(nxt) if nxt and nxt in nodes else None
             choices = data.get("next_choice") or []
@@ -523,6 +557,68 @@ article .memo .memo-margin em {
   opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0);
 }
 @media (prefers-reduced-motion: reduce) { .dial .tip { transition: none; } }
+/* Under the dials: the way out of the story and into the record behind it. */
+.simlinks { display: flex; flex-direction: column; gap: 0.4rem; }
+.simbtn {
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-size: 0.68rem; letter-spacing: 0.07em; text-transform: uppercase; text-align: left;
+  background: var(--surface); color: var(--accent); border: 1px solid var(--rule);
+  border-radius: 2px; padding: 0.6rem 0.85rem; cursor: pointer; width: 100%;
+}
+.simbtn:hover { border-color: var(--accent); }
+.simbtn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* The popup scrolls inside itself; the page behind it stays where it was. */
+dialog.pop {
+  width: min(40rem, calc(100vw - 2rem)); max-height: min(82vh, 46rem);
+  padding: 0; border: 1px solid var(--rule); border-radius: 3px;
+  background: var(--surface); color: var(--ink);
+  box-shadow: 0 14px 44px rgba(0, 0, 0, 0.28);
+}
+dialog.pop[open] { display: flex; flex-direction: column; }
+dialog.pop::backdrop { background: rgba(10, 16, 18, 0.5); }
+.pop-head {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
+  padding: 0.95rem 1.25rem 0.85rem; border-bottom: 1px solid var(--rule); flex: none;
+}
+.pop-head h2 {
+  font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 1.2rem;
+  line-height: 1.25; margin: 0;
+}
+.pop-head .when {
+  color: var(--accent); font-weight: 400; font-size: 0.85em; margin-left: 0.35rem;
+}
+.pop-close {
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-size: 0.66rem; letter-spacing: 0.08em; text-transform: uppercase;
+  background: transparent; color: var(--muted); border: 0; padding: 0.3rem 0; cursor: pointer;
+}
+.pop-close:hover { color: var(--accent); }
+.pop-body {
+  overflow-y: auto; overscroll-behavior: contain;
+  padding: 1.1rem 1.25rem 1.5rem; font-size: 0.92rem; line-height: 1.55;
+}
+.pop-body p { margin: 0 0 0.85rem; }
+.pop-body p:last-child { margin-bottom: 0; }
+.pop-body a { color: var(--accent); }
+.pop-body h3 {
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace; font-weight: 400;
+  font-size: 0.66rem; letter-spacing: 0.11em; text-transform: uppercase;
+  color: var(--faint); margin: 1.5rem 0 0.55rem;
+}
+.pop-body .pop-note { color: var(--muted); font-size: 0.85rem; }
+.pop-body table {
+  width: 100%; border-collapse: collapse;
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace; font-size: 0.78rem;
+}
+.pop-body td { padding: 0.35rem 0; border-top: 1px solid var(--rule); }
+.pop-body td.num { text-align: right; width: 4.5rem; }
+.pop-body .up { color: var(--up); }
+.pop-body .down { color: var(--down); }
+.pop-body .flat { color: var(--faint); }
+.pop-body ul.measures { margin: 0; padding-left: 1.1rem; }
+.pop-body ul.measures li { margin: 0 0 0.4rem; }
+.pop-body .status { display: block; color: var(--muted); font-size: 0.82rem; }
+.pop-body code { font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace; font-size: 0.85em; }
 .events { display: flex; flex-direction: column; gap: 0.4rem; }
 .events details { border-top: 1px solid var(--rule); }
 .events details:first-child { border-top: 0; }
@@ -604,13 +700,20 @@ __TABS__
         <p class="cap"><span id="panel-period">Where things stand</span></p>
         <div class="dials" id="dials"></div>
       </section>
-      <section class="panel">
-        <p class="cap">What happened</p>
-        <div id="ledger"></div>
-      </section>
+      <div class="simlinks">
+        <button class="simbtn js-sim" type="button">Simulation data</button>
+        <button class="simbtn js-about" type="button">About the simulation</button>
+      </div>
       <div class="rail" id="rail" aria-hidden="true"></div>
     </aside>
   </div>
+  <dialog class="pop" id="pop" aria-labelledby="pop-title">
+    <div class="pop-head">
+      <h2 id="pop-title"></h2>
+      <button class="pop-close js-pop-close" type="button" aria-label="Close">Close</button>
+    </div>
+    <div class="pop-body" id="pop-body"></div>
+  </dialog>
 __ALTPANELS__
   __SITEFOOTER__
 </div>
@@ -668,16 +771,57 @@ function setPanel(entry) {
     }
   });
   document.getElementById("panel-period").textContent = entry.period || "Where things stand";
-  const evs = entry.events || [];
-  document.getElementById("ledger").innerHTML = evs.length
-    ? '<div class="events">' + evs.map(e =>
-        '<details><summary>' + e.title + '</summary><p>' + e.description + '</p></details>').join("") + '</div>'
-    : '<p class="none">A quiet half-year. Nothing outside your own decisions moved.</p>';
   let ticks = "";
   for (let n = 1; n <= 13; n++) {
     ticks += '<i class="' + (n === entry.turn ? "now" : (n < entry.turn ? "done" : "")) + '"></i>';
   }
   document.getElementById("rail").innerHTML = ticks;
+}
+
+// The simulation data and the afterword open in one popup that scrolls inside
+// itself, so the reader's place in the story never moves.
+const pop = document.getElementById("pop");
+
+function openPop(title, body) {
+  document.getElementById("pop-title").innerHTML = title;
+  const box = document.getElementById("pop-body");
+  box.innerHTML = body;
+  box.scrollTop = 0;
+  if (!pop.open) pop.showModal();
+}
+
+function fmt(v) { return (Math.round(v * 10) / 10).toString(); }
+
+function simHTML(entry) {
+  const s = entry.sim || {};
+  const evs = entry.events || [];
+  let h = '<p class="pop-note">The simulation’s own record of ' + (entry.periodProse || "this half-year") +
+    ', which the story is written from. Scales run from 0 to 100.</p>';
+  h += '<h3>Events</h3>' + (evs.length
+    ? '<div class="events">' + evs.map(e =>
+        '<details><summary>' + e.title + '</summary><p>' + e.description + '</p></details>').join("") + '</div>'
+    : '<p class="none">None. Nothing outside the Union’s own decisions moved.</p>');
+  const ms = entry.metrics || [];
+  if (ms.length) {
+    h += '<h3>Where things stand</h3><table>' + ms.map(m => {
+      const d = typeof m.delta === "number" && m.delta !== 0
+        ? '<span class="' + (m.delta > 0 ? "up" : "down") + '">' + (m.delta > 0 ? "▴ +" : "▾ ") + fmt(m.delta) + '</span>'
+        : '<span class="flat">–</span>';
+      return '<tr><td>' + m.label + '</td><td class="num">' + fmt(m.value) + '</td><td class="num">' + d + '</td></tr>';
+    }).join("") + '</table>';
+  }
+  if (s.measures && s.measures.length) {
+    h += '<h3>The Union’s measures</h3><ul class="measures">' + s.measures.map(m =>
+      '<li>' + m.name + ' <span class="status">' + m.status + '</span></li>').join("") + '</ul>';
+  }
+  if (s.priority) h += '<h3>Priority this half-year</h3><p>' + s.priority + '</p>';
+  if (s.commitment) h += '<h3>Two-year commitment</h3><p>' + s.commitment + '</p>';
+  return h;
+}
+
+function aboutHTML() {
+  const m = POSTAMBLE.match(/<h2>(.*?)<\/h2>/);
+  return { title: m ? m[1] : "About the simulation", body: POSTAMBLE.replace(/<h2>.*?<\/h2>/, "") };
 }
 
 function choiceCard(id, state) {
@@ -859,6 +1003,21 @@ window.addEventListener("scroll", () => {
 }, { passive: true });
 
 document.addEventListener("click", e => {
+  if (e.target.closest(".js-sim")) {
+    const entry = NODES[active];
+    if (entry) openPop('Simulation data <span class="when">' + entry.period + '</span>', simHTML(entry));
+    return;
+  }
+  if (e.target.closest(".js-about")) {
+    const a = aboutHTML();
+    openPop(a.title, a.body);
+    return;
+  }
+  // A click on the backdrop lands on the dialog element itself.
+  if (e.target.closest(".js-pop-close") || e.target === pop) {
+    pop.close();
+    return;
+  }
   const btn = e.target.closest("[data-go]");
   if (btn && !btn.disabled) {
     const id = btn.dataset.go, entry = NODES[id];

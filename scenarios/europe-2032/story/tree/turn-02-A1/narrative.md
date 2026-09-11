@@ -20,7 +20,7 @@ Sofia spends the spring turning the Shield towards the towns. Detection that the
 
 It works for the large operators. The small ones get the kit and have nobody to run it, and twice that spring a town isolates itself correctly, keeps the intruders out, and loses its billing and monitoring for days.
 
-The gigafactory programme, meanwhile, shrinks without anyone announcing it. It was two hundred billion euros and four to five sites. By June it is two sites near secured power, and the rest are frozen.
+The gigafactory programme, meanwhile, shrinks without anyone announcing it. It was twenty billion euros and four to five sites. By June it is two sites near secured power, and the rest are frozen.
 
 > **May 2027.** Military exercises around Taiwan run longer than any in recent years. Shipping insurers raise premiums for the strait.
 

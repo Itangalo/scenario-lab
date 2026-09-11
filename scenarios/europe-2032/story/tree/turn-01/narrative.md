@@ -8,6 +8,8 @@ next: option-02-1, option-02-2
 allow: 06:52 8 9 14 2036
 ---
 
+<!-- liberty: the seeded measure credits the gigafactories with the whole two hundred billion of InvestAI. In reality that is the headline of the wider drive, and the gigafactory fund is twenty billion; the tech sovereignty package has its own, separate two-hundred-billion estimate for data centres by 2036. The prose uses the real figures on every path, so the two programmes do not read as one sum counted twice. -->
+
 # Nothing happened
 
 The message reaches Sofia Brandt at 06:52 on 8 October 2026, on her phone, in her kitchen. It comes from the Union's cybersecurity agency, it is marked for the President's cabinet, and its first line says that nothing happened.
@@ -38,7 +40,7 @@ Meanwhile the frontier keeps moving. AI agents now work continuously towards sta
 >
 > **Claire:** mostly
 
-Two programmes were already running when Sofia took the file. The InvestAI gigafactories: two hundred billion euros for four to five sites. The tech sovereignty package: a target of two hundred billion euros in private money for AI data centres by 2036, and zones where permits come faster. Both cost the Commission standing every month they run, and neither will finish soon.
+Two programmes were already running when Sofia took the file. The InvestAI gigafactories: twenty billion euros, from a wider two-hundred-billion investment drive, for four to five sites. The tech sovereignty package, a separate effort: a target of another two hundred billion euros in private money for AI data centres by 2036, and zones where permits come faster. Both cost the Commission standing every month they run, and neither will finish soon.
 
 What nobody can tell her is what kind of world this is. Competent people read the same evidence three ways: as acceleration that compounds; as progress that races ahead wherever a machine can check the answer, and crawls everywhere else; as a plateau, with every step costing more than the last. Nothing available in 2026 settles it. Neither the agents in the laboratory nor the phages needed anything close to general intelligence.
 

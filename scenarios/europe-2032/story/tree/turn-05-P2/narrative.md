@@ -36,7 +36,7 @@ No new controls take effect yet. The evening news reads the result as confirmati
 
 There are counterpoints. Two cities show their waiting lists falling after deploying European-built scheduling and triage support, and the credit goes locally, not to a foreign product. Grid crews close a few more telemetry gaps and fit segmentation kits in control rooms that have waited a year. One stalled factory region trades its permit freeze for a compromise on water recycling. The others stay frozen.
 
-Then Brussels does the thing it has avoided for two years. Nearly out of fiscal and political room, Sofia recommends retiring the separate gigafactory line – two hundred billion euros for four to five sites – to stop paying twice for the same stalled build, and folding what remains into the broader sovereignty package. The President agrees.
+Then Brussels does the thing it has avoided for two years. Nearly out of fiscal and political room, Sofia recommends retiring the separate gigafactory line – twenty billion euros for four to five sites – to stop paying twice for the same stalled build, and folding what remains into the broader sovereignty package. The President agrees.
 
 ## Note to the President
 
