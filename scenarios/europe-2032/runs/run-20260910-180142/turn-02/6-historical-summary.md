@@ -1,0 +1,5 @@
+Autumn intrusions at EU transmission, grid, port and water operators plus foreign operators exposed detection failures tied to AI-assisted implants from a summer open-release model.
+
+The Commission launched the Critical Infrastructure Shield — binding detection, 24-hour reporting, ENISA exercises, EU-funded repair teams — legislated by December but not yet operational, while gigafactory and sovereignty aid lost priority.
+
+In February a leading lab demonstrated sharply faster automated exploit-writing, raising fears autumn implants could be widely rebuilt. Brussels pushed the Shield into pilot operation: national transposition, Athens-coordinated exercises, control-room upgrades, and EU-paid analysts seconded for audit access. It also seeded a small AI Office evaluation unit to test subsidised-compute models for cyber/agent risk via grant clauses, but with no completed assessments by June. Two stalled compute-site permits were unblocked with grid/water packages; others slowed over power/water objections. US offered only technical dialogue.

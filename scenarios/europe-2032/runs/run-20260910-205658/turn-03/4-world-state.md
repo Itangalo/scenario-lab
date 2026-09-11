@@ -1,0 +1,10 @@
+### Containment autumn
+The bio release came in late summer. A modified pathogen, with clear signs of design assistance from an AI model, sickened dozens in one member state before sequencing teams confirmed what it was. Wards filled, contact tracing ran for weeks, and evening bulletins carried case counts again. Investigators later briefed that the instructions that helped shape it drew on openly available weights released only months earlier.
+
+At almost the same moment, packaged intrusion kits tuned for industrial controllers began circulating on criminal forums. Built from a freely downloadable frontier model, they automated scanning of relays and breaker controls and theft of maintenance credentials. What had required a state team in spring could now be run by amateurs. Grid operators reported a sharp rise in blocked probes; two water utilities and a hospital group found intrusions early.
+
+Brussels surged. Health emergency funds bought diagnostics and protective stocks, sequencing teams were seconded to the affected region, labs and synthesis firms faced mandatory reporting, and cyber response units pushed emergency segmentation, password rotations and offline backups across power, water and hospitals. Police units filed takedown requests against the forums hosting the kits.
+
+It partly worked. The outbreak was contained without national lockdowns, and no blackout followed the probe wave. But rollout was ragged. Big operators patched fast; smaller municipalities and clinics queued for help, fought over who pays for permanent backups, and left gigafactory permitting and supply-chain diplomacy to idle. The kits, once downloaded hundreds of thousands of times, could not be recalled.
+
+Public mood darkened sharply. Trust earned by restoring lights in June drained away as voters saw casualties and learned the tools were already everywhere. Ministers claimed the hardening pact finished in spring had kept the worst at bay, and in part it had — yet the sense remained that Europe had absorbed blows it could not prevent.

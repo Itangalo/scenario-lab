@@ -1,0 +1,13 @@
+### The release no one can recall
+The half-year turned on two shocks from outside. First, a new openly downloadable model appeared within months of the closed frontier. It spread to hundreds of thousands of machines in days. Operators and ministries were told bluntly: whatever this system can do is now permanently outside any recall or licensing regime.
+
+The EU's small observatory did what it could, benchmarking the release from the outside and passing results to cyber-defence teams and grid operators. Without access to training checkpoints, its reports were careful and late, and they confirmed the uncomfortable part — capable assistance for intrusion and vulnerability-hunting was now widely available.
+
+Second, Washington tightened its grip on the chip supply chain. Under threat of losing access to American technology, the Dutch lithography champion was forced to cut servicing and exports of older machines, not just leading-edge tools. The Hague found itself alone in the crosshairs, and Brussels' one real bottleneck was being used by someone else.
+
+### Paper into cable, interrupted
+Brussels tried to hold both lines. The gigafactory push, again the stated priority, inched forward: two connection-ready zones went to energy ministers for fast-track permits, and the investment bank was pressed to finally disburse its structured first tranche. One host capital balked at co-financing, another at planning exemptions. Local protests over power prices, water use and grid connections grew louder around one site, with court filings threatening to stall ground-breaking. No concrete was poured at scale.
+
+At the same time a new joint defence for chokepoints was launched: an examination of coercive practices, pooled export licensing to prevent bilateral side-deals, an EU budget backstop for lost Dutch servicing revenue, and quiet outreach to Japan and South Korea on joint leverage. The Dutch welcomed the cover but kept negotiating with Washington in parallel, unconvinced Brussels could compensate the losses. Tokyo and Seoul listened politely and committed to nothing.
+
+Failover drills for grids and ports held at degraded-not-stopped, but backup hardware still stuck in procurement. Retraining pilots placed some workers within ninety days, far fewer than promised. Use of AI kept rising; trust kept falling. By June, headlines spoke of humiliation: Europe's factories unfunded, its models borrowed, its machines switched off from abroad.

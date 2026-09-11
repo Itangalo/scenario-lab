@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: `eu_political_capital` drops from 21.0 to 7.0 (a change of −14.0) in one turn, which exceeds the maximum allowable single-turn movement of 25 points in magnitude. While the constitutional constraint (rule 9) permits up to ±25, this specific drop is not justified under any permitted mechanism — particularly given that legitimacy lends contributes +2 and no major sovereignty collapse or catastrophic event is narrated to justify such a steep decline. The Game Master's Notepad attributes only −11 from portfolio charges and −1 from priority, totaling −12, but even that exceeds typical bounds and is not reconciled with rule 7, which limits sovereignty’s influence on political capital to at most +3 per turn — here it is contributing negatively, but the structure still implies an outsized linkage between sovereignty and political capital that risks violating the constitutional separation of these stocks.\n- Economic Constraint violated: The narrative mentions \"Gigafactory site works barely moved, permits stuck and money still reprogrammed to restoration\", yet the metrics imply a new measure (M6 Robotics Displacement Transition Shield) is active and receives a proposal bonus. Rule 5 limits the EU to at most one new measure per turn, and rule 6 requires minimum time for implementation. Introducing M6 while M1 (InvestAI Gigafactories) and M2 (Tech sovereignty package) are still in flight violates the \"at most one new measure per turn\" rule — especially since the notepad shows M1, M2, M5, *and* M6 all active in the same turn, indicating multiple new measures introduced without phasing."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

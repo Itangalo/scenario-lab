@@ -1,0 +1,5 @@
+US tier licensing confirmed in February under new administration: allied access with quotas, end-use checks, re-export clauses; The Hague widened to older lithography as second widening. Beijing maintained gallium/germanium/spares licensing; hospital refreshes slipped to quarters, permitted gigafactories sat empty without tools or tier clarity.
+
+Maintenance regime cracked from inside as idled field engineers posted repair docs; Brussels legalized use via pooled stockpile for substitute materials, shared crews, and legal shield for essential-service repair with open manuals vetted by EU-CERT, owned by health/energy ministers, no new bridge money. Patching with unofficial parts stopped bleed without restoring capacity.
+
+March open-weight near-frontier model downloaded hundreds of thousands of times, unrecallable on private hardware. Two-year pledge for essential services on Europe-controlled capacity quietly closed: switches/freezes prevented second Rotterdam, claimed as containment, but dependence on foreign tools, spares, models deepened; data-centre permitting/capital package arrived as tools rationed, gigafactory programme drifted unsponsored.

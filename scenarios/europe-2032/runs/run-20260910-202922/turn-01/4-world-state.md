@@ -1,0 +1,12 @@
+### The probe that stayed
+Autumn brought the discovery no operator wanted: intruders had lived for weeks inside transmission control networks in two EU states, as well as in systems on two other continents, a major port and a water utility. Nothing blew. Breakers were mapped, credentials collected, small tools left in place. Engineers found them by chance. The consensus hardened fast — someone had been measuring cheaply what could be switched off expensively later.
+
+Brussels moved to own the response. The Commission tabled a hardening pact for power, ports and water: mandatory segmentation audits, credential rotation, shared detection, and cross-border exercises rehearsed with transmission operators and national response teams. The two affected operators went first. Money was pointed at from existing investment and civil-protection envelopes, and the new interpretability techniques spreading through the labs were repurposed for anomaly hunting.
+
+It landed unevenly. Permits and site fights for the gigafactory build continued, now complicated by a pledge to connect hardened sites first. Grid engineers welcomed the attention and resented the timetable; exercises cut power by accident in one rehearsal, a containment outage that made the evening news. American pressure over lithography exports continued in the background, deferred rather than resolved.
+
+At home, a second front opened. Investigative reporting and then an ombudsman finding showed an automated welfare-fraud and policing support system had systematically penalised thousands — human review reduced to seconds per case, logs unread. The system had passed its conformity paperwork. Opposition parties called the AI Act a paper shield; officials insisted enforcement, not law, had failed. Trust sagged.
+
+There was better news elsewhere. Researchers and funders tightened screening around high-risk genome synthesis work after the summer's engineered phage demonstrations, and a genuine advance in understanding deployed models gave defenders something concrete to deploy. Taiwan Strait tensions — extended drills, spiking insurance — rattled supply-chain nerves without yet breaking anything.
+
+By December, Europe felt less brittle but more anxious: protected in principle, exposed in practice, waiting to see if the probes return as attacks.

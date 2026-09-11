@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t7: EU Displacement Transition Fund −2, EU Visible Benefit Adoption Drive −2, priority M7 −1 = −5
+PROPOSAL BONUS: none — Adoption Drive (cat 9, small) answers adoption_success which is positive, not a negative shock; does not answer open-weight release directly
+LEGITIMACY LENDS: capital 3, sentiment 6 -> +2 capped? No, capital 0 after charges below sentiment, but legitimacy applies after other terms: capital 0, sentiment 6 -> +0 (no headroom applied, capital remains 0)
+SOVEREIGNTY: 13 last turn, InvestAI Gigafactories finishes t7 +5, no capacity event, capability rose 3.0 −1 = 17

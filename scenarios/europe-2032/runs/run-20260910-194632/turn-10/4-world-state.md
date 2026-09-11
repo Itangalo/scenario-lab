@@ -1,0 +1,10 @@
+### A breakthrough no one can use alone
+The spring brought a genuine technical reprieve. Researchers at two frontier labs demonstrated an interpretability method that predicts certain failure modes before deployment and certifies them on shipped systems, not demos. The labs adopted it within weeks because it reduced their own incident load. In Brussels, the AI Office circulated it as vindication: joint evaluation finally had something concrete to evaluate.
+
+It landed in the middle of a coercion fight. Washington tightened chip and model export licensing again, keeping allied buyers on volume licences but cutting volumes and adding conditions. At the same time it pressed The Hague to extend ASML curbs beyond leading-edge tools to older lithography lines and their servicing, invoking American technology content in the supply chain. For ASML, refusal looked commercially unsurvivable; for The Hague, lonely compliance looked politically unsurvivable.
+
+The Commission answered with process, not retaliation. DG Trade opened an anti-coercion examination, export-licensing for lithography servicing was pooled at EU level, and an InvestEU guarantee backstop was sketched to keep the company whole. Envoys flew to Tokyo and Seoul to build a common front against extraterritorial cut-offs, offering European evaluation access and certified safeguards in exchange for assured access. Talks were polite and non-committal. No joint statement blocked a licence already rewritten in Washington.
+
+At home, the health shield kept running on reprogrammed money — wastewater feeds, drills, stockpile — without new law. Transition cheques kept going out. Municipal power-price mediation dragged on; two data-centre zones stayed frozen and private grid upgrades stalled as more councils floated surcharges and moratoria. Newspapers framed the ASML pressure as humiliation: Europe's one chokepoint operated by someone else.
+
+By June, systems felt slightly more legible, and Europe slightly less sovereign. The certification advance was real, but access to the capacity it was meant to assure had narrowed.

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t7: EU Hospital Continuity and Loss-of-Control Containment Reserve −2, priority −1 not charged (capital 4 <20, no effect) = −2
+PROPOSAL BONUS: EU Hospital Continuity and Loss-of-Control Containment Reserve (cat 6, small) +4 — frontier cutoff and days-long unsanctioned agent action fired this turn and this answers both directly
+LEGITIMACY LENDS: capital 6, sentiment 7 -> +1 (capped below sentiment)
+SOVEREIGNTY: 15 last turn, InvestAI Gigafactories finishes t7 +5, no in-flight build +0, eu_frontier_access_denied t7 −3 (larger of two capacity losses, supply coercion also qualifies), capability rose 2.2 −1 = 16

@@ -1,0 +1,10 @@
+### The autumn that mapped the grid
+The intrusion was found by accident. An auditor at a transmission operator noticed credentials that should not have existed, then relays that had been quietly inventoried, then tooling left staged as if the intruders did not expect to be caught. Within days the same pattern turned up on three continents: two EU grid operators, a major container port, a regional water utility. Breakers had been reached. Nothing was switched off.
+
+Attribution collapsed into argument. The tooling looked like a freely downloadable model in the Mythos class, tuned for intrusion work and run at a volume only a well-resourced actor could sustain. Ministers named rivals; analysts admitted they could not prove it. What stuck was the defenders' own admission: segmented systems were not segmented, and existing monitoring would never have found the swarm of small probes.
+
+Brussels moved fast on paper. Emergency orders went out under existing security laws for segmentation, credential resets and joint exercises, with EU co-funding and liability cover promised to reluctant operators. In practice rollout stalled in places: shutdown windows were refused, port authorities haggled over who paid, and site work for the long-planned computing factories competed for the same grid connections and engineers.
+
+Then the second blow landed at home. Investigative reporting and an ombudsman finding showed an automated welfare-fraud scoring system had systematically cut off legitimate claimants for months. Caseworkers had approved flags at forty seconds apiece; logs that recorded the bias were never read. Because the deployment fell between the AI Act's high-risk categories, everything done had been lawful. Editorial pages called the flagship law a 2024 answer to a 2026 deployment.
+
+Meanwhile exercises around Taiwan widened, insurance rates rose, and quiet talk in universities about pooling machines to keep researchers from leaving for American labs grew louder, as did doctors' calls for mandatory screening of synthetic DNA after the engineered phage demonstrations. Nothing was decided on either front.

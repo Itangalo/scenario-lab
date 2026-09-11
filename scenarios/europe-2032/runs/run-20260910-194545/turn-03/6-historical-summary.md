@@ -1,0 +1,7 @@
+Autumn cyber-probes via frontier-model swarms prompted EU hardening: segmentation audits, hunt teams, centrally procured swarm-detection and faster patching, funded by reprogrammed digital funds despite engineer shortages. By autumn 2027 transmission, ports and water in probed states ran detection with faster patching, but not invulnerable.
+
+H1 2027 US valuation reset caused capital flight, cancelling EU gigafactory/university clusters and enabling US hiring raids. Tighter US export controls forced Dutch curbs on servicing/legacy lithography, exposing ASML as US-operated chokepoint.
+
+Brussels shielded operators but failed on supply-chain leverage: Council mandate on servicing licensing stalled on legal-base fights/lobbying, anti-coercion evidence-gathering produced no deterrent, Tokyo/Seoul spares-pool mission left unsigned amid capital drought.
+
+By late 2027 new shocks: entry-level hiring collapse in law, accountancy, software, operations and administration, plus contested genome-model paper suggesting non-expert bioweapon pathway. EU responded with shield-and-buffer package: federated wastewater/clinical sequencing via health bodies linked to stockpiles, plus retraining and wage-insurance pilots framed as absorption. University pooled-compute pact slowed but did not stop researcher departures. By Dec 2027 grids/hospitals better defended, labour market exposed, chip-machine leverage still absent.

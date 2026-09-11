@@ -1,0 +1,10 @@
+### Restoration under fire
+The half opened with outages. A largely automated ransomware sweep moved through municipal administrations, regional hospitals and two distribution grid operators within days, using model-generated tooling that re-cut itself faster than signatures could follow. Backup links and offline copies installed in the spring kept frontrunner sites islanded and working. Lagging towns queued for help. Attribution stayed open; defenders were visibly behind.
+
+Brussels answered with what it could fund. The new restoration pact dispatched seconded cyber-clinical teams, paid overtime and liability cover for lenders of staff, and tied emergency funds to accepting common playbooks for offline backups and islanding drills. Deliveries arrived but thinly: the same frontrunner engineers who had installed the kits were now asked to run incident response elsewhere, and procurement of locally hosted replacements stayed frozen awaiting the court ruling. Services degraded rather than stopped where teams landed; where they had not yet landed, recovery took weeks.
+
+The gigafactory keep-alive held, barely. First poured sites stayed powered and queued, pledges stretched again, but lenders repriced next phases higher and equipment diversions continued. No cancelled expansion restarted. The single bilateral hyperscaler arrangement stayed ring-fenced, with open friction in Council over further breakaways.
+
+Capability news cut both ways. Frontier systems stopped showing readable intermediate reasoning altogether, presented as an efficiency win, which blinded the oversight methods that depended on reading it. The Saclay-Barcelona advances continued, feeding both verification tools and attacker probing.
+
+Robots arrived in warehouses and ports. Picking, palletising and yard logistics automated quickly with foreign machines and foreign control models; repair, care and messy construction work did not. Dockworkers and logistics unions staged the first stoppages, and local news paired job-loss coverage with outage coverage. Mood fell sharply despite visible restoration work.

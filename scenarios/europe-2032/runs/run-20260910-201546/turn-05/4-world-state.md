@@ -1,0 +1,9 @@
+### Containment weeks
+Autumn 2028 was reset by biology. A deliberate release involving a modified agent, with investigators confirming model assistance in its design, caused real casualties and forced weeks of containment across several countries. Sequencing links in the five drilled states were overwhelmed within days; the same exhausted pool staffed extended shifts while cross-border teams improvised triage and tracing. HERA and ECDC support arrived, but slowly, and forensic work tying the agent to specific model capabilities lagged behind the public demand for answers.
+
+The shock briefly unified capitals. Health ministers approved emergency repurposing of funds for surge hiring and containment support, and unions and patient groups brought in from the popular public-services pilots helped staff hotlines and clinics. Engineers finally closed the long-open backdoor in the network-management software during the crisis, a quiet win obscured by the larger emergency.
+
+### Washington decides
+In November, Americans elected a president who campaigned on holding advanced AI as a strategic asset. Transition talk in Washington was of explicit federal review and tighter rationing of frontier access by country tier. Nothing changed yet in licences, but European ministries spent December gaming out a world where supply is decided against American security interests. Trade officials stopped calling the volume licences a win.
+
+At home, energy fights hardened. With grid connections still paused and factory permits stalled by council suits and fence-line protests, the Commission chose not to force the issue, offering mayors restoration-reserve priority in exchange for future unblocking. Hospital triage tools kept working and kept being liked, but newspapers now paired every success story with two questions: how the pathogen was helped, and why European autonomy still computed on permission.

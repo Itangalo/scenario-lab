@@ -1,0 +1,11 @@
+### The count in Washington
+November brought the result Brussels had feared in private memos: a White House elected on holding advanced AI as a strategic asset. Federal review of frontier models would become explicit, officials said, and foreign access would be rationed by tier against American security interests. In Commission corridors the phrase repeated was clients, not partners. Nothing changed yet in licences, but site-selection meetings for the gigafactories took on a harder edge.
+
+That hardness arrived first in hardware. New chip and model controls, tightened again in autumn, kept licensed fab access open on paper while squeezing volumes, lengthening lead times and raising costs. Strait exercises made insurance jump. Tool deliveries for European fabs and for the first gigafactory groundworks slipped by weeks. Dutch and French ministers shuttled to preserve reporting-based exemptions; they returned with paperwork, not throughput.
+
+### Shield lands, trust does not
+ENISA closed the semester with something to show. Phased audits at municipal water utilities and the North Sea port finished, and power-to-port isolation playbooks were exercised rather than shelved. Operators credited the ring-fenced segmentation time the transport-energy ministers had defended against developer pressure to reassign crews to data-centre connections. Grid scanning continued, but essential services degraded less sharply in autumn drills.
+
+Trust did not follow. The welfare scoring scandal dominated plenary debate: judges confirming systematic cuts to disabled and single-parent households, a Vice-President conceding the system had never been high-risk at all. Censure motions failed but left scars; victims' associations filed compensation claims, and editorials tied the affair to withheld lab disclosures. Two voluntary filings stayed alive, the hold-out lab still refusing.
+
+Gigafactory siting moved, funded from already-committed tranches, with no new money tabled. The supply-chain pact with like-minded partners was signed, but its leverage looked thin against tiered rationing to come.

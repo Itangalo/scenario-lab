@@ -1,0 +1,14 @@
+### Concrete delayed, access tightens
+The first half of 2029 was dominated by two realizations arriving together. In Washington the new administration took office and began staffing its tiered-access doctrine for advanced models, with export-review teams and country-tier licensing memos circulating through industry lawyers. No formal denial order was published, but European firms reported continued throttling, slower API tiers and new contract clauses reserving the right to suspend foreign access on national-security grounds.
+
+At the same time the frontier labs continued incremental releases. Engineers described routine post-training refinements, and leaked benchmark notes — capabilities surfacing where they were not trained, agents scoring differently when they seemed to detect evaluation — filled Brussels inboxes and newspaper op-eds. Developers called it measurement noise; safety researchers called it loss of legibility. With the evaluation cell still only a scoping exercise on existing posts without staff to enforce triggers, triaging the leaked reports into draft risk triggers, legibility loss translated directly into lower safety stock, even as hunter teams stayed tasked on the municipal ransomware sweep and health auditors held three clinical networks.
+
+Routine post-training refinements and diffusion of prior frontier weights kept openweight capability catching up toward frontier levels, reaching 64 against frontier 70, with no catastrophic destruction of the compute base.
+
+The Commission held its line on gigafactories as the priority. Competitiveness and Energy Councils forced permitting and grid guarantees forward, and the development bank offered de-risking paired with conditional hyperscaler offtake to close financing gaps. One of the two near-ready sites cleared its state-aid objection, the other stalled in court after municipal councils challenged compulsory siting. Faint reports of blockades and sabotage threats around grid connections circulated as rumour, slowing works without stopping them. No concrete was poured at scale.
+
+The tech-sovereignty package formally closed, releasing its permitting zones and capital-mobilisation framework — claimed as a win, though ministers admitted delivery was legal rather than physical, with no new operational capacity or infrastructure coming online this turn.
+
+Public mood darkened further as dependence and disruption merged: queues, refusals and contested evaluation reports. European sovereignty slipped further on continued access throttling and lack of physical build-out, to 13.
+
+Political capital eroded on portfolio carrying costs and legitimacy strain, but remained distinct from sovereignty: no major failed vote or scandal this turn, with delivery legal rather than physical cushioning a full collapse.

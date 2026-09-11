@@ -1,0 +1,10 @@
+### Cheques cashed, plinths empty
+January to June was the turn the old pledge closed and the new one struggled to start. The wage-bridge scheme formally finished its rollout: labour ministries pushed funds through job centres and late, partial payments reached automation-hit towns. In council estates the money was real — rent arrears cleared, retraining enrolments ticked up — but caseworkers admitted the lists covered a fraction of those displaced, and payments arrived months after shifts disappeared.
+
+The spares buffer, now the sole priority, bought process rather than hardware. DG GROW and rescEU signed leases in Rotterdam and Gdansk, published joint procurement lists and chased year-long lead times for transformers and power-industrial chips. One brokered lot of second-hand switchgear arrived; the large transformers did not. Grid operators kept patching with cannibalised parts, warning that a single failure would mean degraded service for weeks.
+
+Brussels chose not to retaliate over the servicing halt. Trade officials logged the Dutch decision and the insurer suspensions as evidence while quietly sounding Tokyo and Seoul on substitute servicing. Hospitals and transmission operators were told continuity drills plus bridge cheques must hold through June.
+
+In stalled zones, mayors took the cheques and kept the freezes. Energy directorate envoys offered buffer allocations linked to unfreezing connections and price compensation; two councils signed limited deals, others held out for a joint position. Local papers spoke of mayors calling each other before answering Brussels, though no pact was shown.
+
+Public mood lifted marginally where cash landed, but evening news still paired job queues with empty transformer plinths. The Commission had prevented stoppage; it had not yet restored supply.

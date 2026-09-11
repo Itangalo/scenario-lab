@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t9: Municipal Service Continuity and Recovery Pact −2, EU Swarm Defence and Loss-of-Control Containment Rollout −2, priority −0 (ineffective, capital below 20) = −4
+PROPOSAL BONUS: EU Swarm Defence and Loss-of-Control Containment Rollout (cat 6, small) +3 — cyber sweep from t8 and loss-of-control this turn answered directly with patching + containment
+LEGITIMACY LENDS: capital 2, sentiment 22 -> +2 (capped, after charges, finishes and events)
+SOVEREIGNTY: 18 last turn, no category 4 finish, no category 4 in flight +0, member_state_defection t9 −2 (largest capacity event, investment collapse also qualifies), capability rose 0.7 −0 = 16

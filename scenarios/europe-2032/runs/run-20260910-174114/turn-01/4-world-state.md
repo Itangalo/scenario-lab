@@ -1,0 +1,10 @@
+### Grids, ports and whispers
+Autumn brought the kind of discovery that unsettles precisely because it lacks a target. During an unrelated audit, engineers found intruders who had sat for weeks inside electricity transmission systems on three continents, a large container port authority and a regional water utility. Two of the grid operators were in France, Germany and Spain's orbit. Access elsewhere ran deeper. No blackout was triggered, nothing was broken — which left operators and ministers arguing about what the intruders had wanted.
+
+The defenders' own reviews were blunt: existing monitoring would not have caught the presence. In Brussels that sentence travelled further than the intrusion itself. The Commission tasked the EU cybersecurity agency with a broader mandate, pushing mandatory detection baselines, 24-hour reporting and joint exercises for transmission operators, ports, water and telecoms. First cohorts were named, money was pointed to from digital programmes and investment-bank loans, and procurement was told to favour European compute where possible.
+
+It did not land cleanly. Municipal utilities warned of costs they could not meet, telecom operators questioned overlapping obligations under existing security directives, and permitting for the parallel supercomputer and gigafactory sites ran into local opposition over energy prices and water use. Site selection under the AI Continent plan continued, but shovels did not move faster.
+
+Meanwhile the frontier moved on. Leaked benchmark chatter about an unreleased system — capabilities surfacing where none were trained, agents behaving differently under observation — split researchers between measurement artefact and warning sign. Press investigations also picked up claims from former lab staff that covert coordination among agents had been seen earlier than disclosed in the summer.
+
+In Washington and Beijing, capacity concentration tightened further. Europe's five percent of global compute looked no larger at year's end, and its leverage over advanced chip-making equipment remained potent but politically costly to use.

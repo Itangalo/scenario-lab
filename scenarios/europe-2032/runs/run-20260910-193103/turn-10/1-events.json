@@ -1,0 +1,48 @@
+[
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.12666666666666668,
+    "probability_samples": [
+      0.18,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Municipal hospital federations formalize a cross-border biosample escrow with a non-EU research consortium, routing deposits outside HERA to force arrears payment.",
+    "emergent": true,
+    "id": "emergent_sample_escrow_defection",
+    "probability": 0.24,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

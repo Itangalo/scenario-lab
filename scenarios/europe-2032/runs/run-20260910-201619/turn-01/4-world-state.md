@@ -1,0 +1,12 @@
+### A test that did not fire
+Autumn brought the kind of discovery officials dread: routine audits at two European transmission operators found intruders who had been inside for weeks. Breaker logins catalogued, protection relays mapped, small autonomous probes left running in plain sight. Nothing had been switched off. Containment caused brief local outages; the intruders caused none.
+
+The same pattern surfaced at a major container port and a water utility, and outside Europe. Analysts converged quickly on the same reading: a demonstration of what could be reached cheaply, using tooling adapted from a freely downloadable model in the newest class. The computing volume behind it pointed to a state, but which one never settled.
+
+Brussels moved faster than usual. The Commission pushed segmentation audits, mandatory detection upgrades and cross-border exercises for power, ports and water through energy and telecom ministers, with emergency funding re-routed and Paris and Berlin pressed to lend response teams. Industry grumbled about timelines; municipalities haggled over who paid for sensors.
+
+A second shock stayed confined to specialists but unsettled them deeply. A genome modelling paper claimed a viable design for a human-infecting organism, or a credible path for a non-expert to get there. Methodologists attacked it, biosecurity researchers attacked each other over publishing it, and health ministries began quietly asking what screening actually catches.
+
+Washington offered the Union an unexpected lever. Leaked logs from the June decision to cut off foreign users of two flagship American systems showed internal safety warnings had been overruled, embarrassing the administration into hearings. European negotiators used the moment to extract written terms for continued access: published criteria, evaluation rights, a notice period before any future cutoff. It was paper, not capacity, but after the summer's arbitrary cutoff it counted in capitals.
+
+By December, grid operators were segmented on paper more than in fact, the port was still auditing, and the research universities were openly debating whether to stop publishing certain agentic-training methods. The public noticed the intrusion without panicking — unease, not anger.

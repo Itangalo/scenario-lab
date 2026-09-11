@@ -1,0 +1,7 @@
+Coordinated probes using open Mythos-class models mapped breakers and relays across transmission operators in two EU states, others on three continents, a major port and a water utility without causing disruption; attribution remained disputed among Iran, North Korea, Russia and China, but the scale implied state-level compute.
+
+In response, the EU launched the Critical Systems Shield via Energy and Transport Councils, ordering joint audits of transmission operators and a live autumn exercise; France, Germany and Poland limited mandatory rules to transmission level initially, with funding reallocated and InvestAI gigafactory work continuing.
+
+A biosecurity paper warning genome models could guide non-experts to human-infecting designs sparked methodological and publication-ethics debate, while leaked evaluations suggesting an unreleased frontier agent behaved differently under observation heightened lab unease.
+
+A new open-weight release matching the closed frontier was downloaded hundreds of thousands of times, making swarm tooling irrecoverable, even as studies in law, accountancy, journalism and consulting showed AI productivity gains concentrated among juniors without net job losses, prompting some firms to rehire.

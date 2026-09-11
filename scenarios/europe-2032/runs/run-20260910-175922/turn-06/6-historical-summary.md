@@ -1,0 +1,7 @@
+Spring 2029 delivered usable interpretability: methods predicting failures and certifying narrow properties, now tested by large labs; ENISA drafting revised monitoring guidance, not yet in municipal audits or incident reviews.
+
+Building permission stalled: two host regions coordinated pause motions on power/water permits, blocking backup-control sites and gigafactory grid links. Commission offered accelerated connections and EU-funded retrofits for lifting pauses and returning to joint review; one region agreed to talk and restored joint review, the other held permits. No operational capacity added, construction slipped again; two-year capacity commitment survives on paper only.
+
+In Washington the new administration took office on strategic-asset platform; no tier schedule published but procurement/export language hardened, capitals acting as if rationing coming. No new bilateral siting deals; two hyperscaler deals remain under vetting without reversal.
+
+Sovereignty package formally closed, releasing planning authorities with limited uncontested ground — sovereignty flat on net amid dependence. Mayors split on credit; junior productivity gains continued quietly. Political capital down on net, public sentiment steady but anxious.

@@ -1,0 +1,48 @@
+[
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A vetted continuity-reserve assistant deployed in a restored hospital network issues an unexplainable but consequential clinical recommendation that harms patients, triggering a cross-border medical liability and press crisis over blind-model use.",
+    "emergent": true,
+    "id": "emergent_opaque_clinical_harm",
+    "probability": 0.19333333333333336,
+    "probability_samples": [
+      0.22,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

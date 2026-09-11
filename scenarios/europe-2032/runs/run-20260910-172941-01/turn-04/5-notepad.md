@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t4: M1 InvestAI Gigafactories −3, M2 Tech sovereignty package −3, M5 EU Bio-Uplift Assurance and Screening Upgrade −2, M6 EU-US-Allied Compute Assurance and Siting Compact −2, priority −1 = −11
+PROPOSAL BONUS: EU-US-Allied Compute Assurance and Siting Compact (cat 8, small) +2 — siting moratorium freeze landed this turn and supply rationing pressure ongoing, this answers both directly but assurance channel unproven
+LEGITIMACY LENDS: capital 18, sentiment 39 -> +2
+SOVEREIGNTY: 20 last turn, no capacity event, Gigafactories + Tech package in flight +0, capability rose 1.5 −0 = 20

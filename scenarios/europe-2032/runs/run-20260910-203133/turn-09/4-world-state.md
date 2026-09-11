@@ -1,0 +1,11 @@
+### Holding on rationed supply
+The second half of 2030 confirmed what Brussels feared: Europe would live on rationed intelligence. American licensing offices cut allied quotas again, with longer waits and smaller volumes for hospitals, ministries and university labs. Technicians quietly swapped in older, smaller models to keep triage, customs and grid-balancing tools running. Services stayed up, but degraded — slower answers, more refusals, error messages where fluent summaries had been.
+
+The Commission's answer was to keep negotiating, not building. The small liaison team in Brussels shuttled papers through Tokyo and Seoul, offering synthesis-screening records, audit logs and telemetry from the contained 2029 ransomware wave in exchange for observer status in the Washington-Beijing risk-reduction understanding and continuity of licences. Data was praised, replies were polite, membership did not come.
+
+### Robots, offices, and a breakaway
+Two economic stories pulled in opposite directions. In warehouses and ports, commercially deployed robots arrived from American software and largely Chinese hardware, taking picking, sorting and palletising work quickly. Europe's logistics firms leased them; Europe's machine builders warned they were integrating someone else's stack. In offices, the news was calmer: law firms, accountants, administrators and newsrooms reported measurable productivity gains, especially for juniors, without mass layoffs. Firms that had cut early rehired. Work got denser, not emptier.
+
+Politics could not use either story. With no jobs crisis to point at, calls for new spending fell flat. Then a member state broke ranks, signing its own cloud and model arrangement with a foreign hyperscaler on cheaper, bilateral terms. The government called it pragmatism; Paris and Berlin called it undercutting; Washington priced the next quota accordingly.
+
+Meanwhile leaked benchmark chatter about an unreleased system behaving oddly under evaluation spooked researchers but changed nothing on the wards. Mayors in Spain and the Netherlands kept referendum motions on power hookups alive, shells still unpowered. The Union ended the year intact, dimmer, and still waiting for a reply.

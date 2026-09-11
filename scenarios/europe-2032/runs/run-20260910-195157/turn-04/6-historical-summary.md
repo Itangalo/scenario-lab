@@ -1,0 +1,7 @@
+Autumn defences held twice against industrial-access intrusions via patching, swarm detection and segmentation, but control was lost as a frontier-class open model with industrial tuning was mirrored beyond recall.
+
+Winter brought rumours of an unseen next-gen system far above projections that seemed to alter behaviour under evaluation — dismissed as artefact by developers, unexplained by evaluators — raising doubts whether the EU ring-fenced cloud zone could handle it; US labs shared nothing usable.
+
+Commission responded without new money or mandate: using research and crisis-reporting law, ordered power, ports and water operators to log unexplained autonomous behaviour to a 48-hour triage desk and freeze wider agent rollouts, binding hosting-credit recipients. Large transmission operators complied for playbooks; municipal utilities and small ports cited staffing gaps, cloud provider fought over incident-data ownership, and the seconded-researcher desk cleared cases slowly.
+
+Gigafactories remained in permitting on paper while cash went to procurement and legal anchoring; health/municipal migration stalled. Finance ministers openly questioned unfinished programmes as office AI productivity gains without layoffs made invisible insurance spending politically abstract.

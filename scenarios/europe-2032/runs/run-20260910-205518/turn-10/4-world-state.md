@@ -1,0 +1,10 @@
+### Dark wards, paper counters
+The Friday-evening cutoff became Monday-morning reality. In two hospital networks the triage assistants built on the suspended American model family simply did not load. Doctors dictated, nurses carried folders, operations were postponed not for lack of skill but for lack of routing. In ministries, drafting tools went grey. In the hit port, planners who had lost both their routing helper and parts of their community system to the ransomware sweep queued trucks by radio.
+
+Brussels pushed what it had. Health emergency teams and cyber agency reservists fanned out with pooled clean images and offline kits, trying to turn the lockdown stockpiles from binders into bootable servers. Half-built factory halls were rewired in haste to host European models for triage. Emergency tenders were rewritten to buy only from EU-hosted systems, and the two capitals with their own hyperscaler side-deals were told infringement action would stay frozen if they enrolled in the fallback and brought health data home.
+
+It worked in patches and failed as a system. One stalled network managed to run a stripped-down European triage model by March, slow and cautious, but enough to reopen a ward. The other stumbled under load, timing out at peak hours and forcing a return to paper. The port got customs moving again with manual procedures and seconded clerks, at half speed and with long queues. Municipal offices that received the new continuity teams — seconded clinicians, clerks, reservists with pre-loaded kits — stayed open visibly, and local press noticed. Those that did not stayed dark.
+
+The politics curdled further. Evening bulletins paired the American provider's silence with images of waiting rooms. Talk of self-reliance rang hollow where the substitute crashed. A few councils quietly refused to reconnect restored systems to any foreign-controlled model at all, keeping paper in place. No one called it a movement; it looked like exhaustion.
+
+By June, essentials degraded rather than collapsed — but consent did not return.

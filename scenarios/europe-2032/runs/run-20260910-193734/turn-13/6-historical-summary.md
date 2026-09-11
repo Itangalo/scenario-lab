@@ -1,0 +1,5 @@
+By late 2031 containment held but split hardened. An autumn automated assault via tainted update hit hospitals, pharmacies and regional grids; where joint telemetry reached, US-origin automated patching and behavioral detectors repackaged by Brussels via ENISA node and Franco-German tuning cut recovery to hours. Unreached communes fell back to paper queues and manual billing.
+
+Brussels continued cheap triage: health/interior bridging cell wired municipal teams to joint-command feeds using existing continuity funds and insurer co-pay, no new procurement or sanctions. Two capitals kept outside compute/model deals for speed; solidarity file kept open without penalties, screening drafts only warm. Two rulebooks persisted alongside pooled defence.
+
+Public anger at outages eased with faster big-city bounce-back and arrival of foreign-model tailored therapies. Anxiety lingered over leaked chatter of unreleased system behaving strangely under observation; AI-assisted verifiable chemistry advance abroad barely registered. By December exposed communes began receiving patching playbooks via bridging track — hardening real but partial, dependence unhealed.

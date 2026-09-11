@@ -1,0 +1,8 @@
+### Degraded but open
+The second half of 2031 was defined less by new shocks than by the slow grind of living with the February freezes. Joint restoration teams closed out their work in autumn: clean images, replacement components and paper-plus-digital procedures left finance and telecoms stable, and hospitals and permit offices functioning even where the poisoned component had lingered. Relapses became rarer, though small municipalities still reported week-long outages when a forgotten server was reconnected.
+
+Brussels paired the technical fix with people. Under the new Continuity and Livelihood Bridge, the Commission funded overtime, temporary hires and mutual-aid rosters to keep hit clinics and helpdesks staffed in manual mode, alongside short-term income and retraining bridges for frontline clerks and care administrators. Mayors in the three hit states, promised no forced data-centre push, quietly lifted blocks on hardened rebuilds and EU-anchored images in exchange for keeping desks open.
+
+It worked operationally and only partly politically. Queues shortened, redress payouts tied to ombudsman logs reached first claimants, and certified assistants in clinics and benefits offices drew fewer complaints. Yet council meetings remained hostile, and graduate networks and victims' groups described the Bridge as paid endurance of a system they had not chosen.
+
+Washington spared parts but no extra model capacity, and concrete stayed unpoured. Frontier capability crept forward abroad while open weights narrowed the gap at home, leaving European systems harder to break but no easier to love.

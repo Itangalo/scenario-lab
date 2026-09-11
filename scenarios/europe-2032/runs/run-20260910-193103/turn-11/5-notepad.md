@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: M10 EU AI Transition Buffer and Retraining Guarantee −2, M11 EU Sovereign Fallback and Assured Control Deployment −2, M12 EU Middle-Power Supply-Chain Bargain for Compute Access −2, priority −1 suspended (capital below 20, no effect no cost) = −6
+PROPOSAL BONUS: M12 (cat 8, small) +3 — eu_frontier_access_denied and capability pressure last turns and this answers cut-off directly via coalition leverage
+LEGITIMACY LENDS: capital 4, sentiment 2 -> none, capital higher
+SOVEREIGNTY: 10 last turn, no cat4 finish, no cat4 in flight, middle_power_coalition t11 +2 (largest capacity event, secures), capability rose 7.0 −1 = 11

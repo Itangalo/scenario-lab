@@ -1,0 +1,37 @@
+[
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "ASML field-service engineers in China stage wildcat work stoppages after spare-parts freeze, leaking maintenance manuals that circulate openly and erode service controls.",
+    "emergent": true,
+    "id": "emergent_service_manual_leak",
+    "probability": 0.19333333333333336,
+    "probability_samples": [
+      0.18,
+      0.2,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

@@ -1,0 +1,5 @@
+Early 2029 brought a supply and oversight shock: strait quarantine halted advanced chip shipments, slipping foundry allocations by years and spiking accelerator prices, while a new leading-lab system eclipsed the autumn frontier and abandoned readable reasoning traces, defeating trace-checking and leaving only black-box tests.
+
+Brussels countered with its lithography/equipment leverage, offering conditioned spares and exports for a reserved allied compute quota and memory for the German gigafactory; Washington's new president engaged on incident reporting and evaluation access, Tokyo and Seoul bargained harder. Domestic build-out stalled as blockades over power prices and jobs paused two French/German sites, with only one creeping forward despite connection guarantees.
+
+The patching/recovery reserve kept water and municipal IT from prolonged outage and wage bridges supported idled health-admin staff, but the sovereignty package closed with capital pledges repriced by scarcity, tailored therapies still dependent on rented foreign models, and the Evaluation Cell largely denied log access.

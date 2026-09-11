@@ -1,0 +1,10 @@
+### Autumn of shocks
+The second half of 2028 broke the waiting pattern. In October a largely automated ransomware sweep rolled across municipal services, regional hospitals and logistics firms in half a dozen member states. Backups held in the large ports and transmission operators where telemetry had been hardened, but smaller councils reverted to paper for weeks. Forensics firms said the intrusion tooling had been assembled with machine help. Attribution remained open at Christmas.
+
+As recovery crews were still reimaging servers, health authorities confirmed a biological release involving a modified agent. Containment ran for weeks, with cross-border patient transfers and emergency procurement coordinated through Brussels. Casualties were real but limited, and officials credited expanded wastewater monitoring and hospital triage pilots with catching clusters early. A contested paper claiming a genome model could guide a non-expert to a human-infective design circulated at the same time, souring debate further.
+
+Brussels ran damage control. Emergency coordination used existing civil protection and health crisis channels, with no new law. The joint evaluation cell with Japanese and Korean partners shared indicators from the cyber sweep and compared notes on model behaviour.
+
+Across the Atlantic, Americans elected a president promising structured access for allies on published terms, with joint testing and incident reporting in exchange for alignment on export controls and standards. Relief in European capitals was immediate; so was the quiet question of whether cheap access would starve domestic build-outs.
+
+Gigafactory pipelines and permitting zones stayed alive on paper but broke no new ground. Permit assistants kept running, now visibly a version behind. Local siting fights rumbled on, and several data-centre upgrades slipped amid protests over power and water. Cohesion held through the twin response, but budgets and patience thinned.

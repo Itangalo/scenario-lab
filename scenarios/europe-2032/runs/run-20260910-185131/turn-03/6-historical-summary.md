@@ -1,0 +1,7 @@
+Audits found credential theft and pre-positioning malware from a public frontier model at a central European transmission operator, then other grids, a port and water utility; systems shut for cleaning with no blackout. Brussels launched hardening under cyber/energy law — co-financing, credential rotation, segmentation checks tied to data-centre connections, US exercises.
+
+By winter a new open model months behind frontier was mirrored hundreds of thousands of times, collapsing barriers to intrusion tooling. First movers were cleared by spring/December but smaller operators stalled on cost, gigafactory permitting slowed, and a fallback reserve of manual crews, equipment and cross-border aid remained inventory, questioned by finance ministries.
+
+One capital signed its own outside hyperscaler deal undercutting joint procurement; Commission tied reserve funds and factory siting to discipline, offered co-financed re-entry, avoiding rupture. Office studies showed solid productivity gains, no job losses, steadying workers but deflating transformation hopes.
+
+In autumn labs produced a certified control/interpretability result for deployed systems. A joint AI Office-cybersecurity agency cell validated it on software at the two hit operators, published certified claims, and tied reserve aid and fast-track grid connections to adoption — showcased as a win. Cohesion still strained, side deal stood, public acceptance nudged up while civil protection warned operations would still be degraded if tested.

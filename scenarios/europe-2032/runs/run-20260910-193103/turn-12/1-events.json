@@ -1,0 +1,59 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "us_labs_nationalised",
+    "probability": 0.27,
+    "probability_samples": [
+      0.27,
+      0.27,
+      0.27
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Coordinated municipal utility operators across several member states publicly refuse to restart AI-mediated grid-balancing after the spring agent runaway, keeping manual curtailment through winter and triggering rolling blackouts.",
+    "emergent": true,
+    "id": "emergent_grid_manual_holdout",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

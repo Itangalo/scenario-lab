@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: M12 EU Essential Services Containment and Supply Hold −2, M13 EU Automated Decision Redress and High-Risk Gap Closure −2, priority −1 = −5
+PROPOSAL BONUS: none — M13 (cat 2, small) answers automated-decision scandal but knowledge_work_augmented removes rule 6 bonus for spending against unfelt problem, no payout
+LEGITIMACY LENDS: capital 10, sentiment 13 -> none yet, calculated after other terms; sentiment above but rule applies before? capital lower, would lend but capped — none applied this turn
+SOVEREIGNTY: 13 last turn, M11 EU Essential Services Sovereign Inference Reserve finishes t11 +4, export_control_escalation t11 −2 (largest capacity event, member_state_defection also qualifies), capability rose 1.0 −0 = 15

@@ -1,0 +1,5 @@
+Autumn gigafactory permits and capital lines closed but sites remained unpowered with grid and chips queued, fueling criticism of power priority amid promised US access. Washington stayed cordial but slow: access tiers and joint-testing seats remained draft, bracketed over audits.
+
+Frontier shifted with a near-best open model widely downloaded and fine-tuned, bypassing Brussels control filters. Graduate hiring froze in law, accountancy, support and customer ops; humanoid logistics pilots cut shifts, sparking strike threats in Germany/Italy and mayoral suspensions of robot pilots after blockades.
+
+Brussels imposed interim robotics regime — pilot registration, certification, incident reporting, worker consultation, levy for wage bridges — partly lifting suspensions but enforcement lagged. European triage assistants cutting clinic waits were showcased as delivery proof. Logistics sabotage rumours persisted unconfirmed.

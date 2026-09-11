@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t4: M1 InvestAI Gigafactories −3, M2 Tech sovereignty package −3, M5 EU Relay Surge and OT Engineer Corps −2, M6 EU AI Solidarity and Supply-Chain Bargain −2, priority M1 −1 = −11
+PROPOSAL BONUS: EU AI Solidarity and Supply-Chain Bargain (cat 8, small) +2 — answers member-state side-deal and tightening US controls firing this turn, directly aimed at cohesion
+LEGITIMACY LENDS: capital 20, sentiment 32 -> +2
+SOVEREIGNTY: 19 last turn, no capacity event finishes, no cat4 finish +0, export_control_escalation t4 −2 (largest of two capacity events, member_state_defection also qualifies), capability rose 2.0 −1 = 16

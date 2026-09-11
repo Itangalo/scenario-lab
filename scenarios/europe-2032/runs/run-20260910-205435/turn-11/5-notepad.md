@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: M12 EU Denied-Model Substitution and Essential-User Continuity Facility −2, M13 EU Automation Shock Absorber for Displaced Entrants and Embodied-AI Exposed Workers −2, priority −1 = −5
+PROPOSAL BONUS: EU Automation Shock Absorber (cat 7, small) +3 — embodied_ai_deployment landed this turn severe on logistics/manufacturing plus graduate hiring collapse third semester, this answers them directly
+LEGITIMACY LENDS: capital 23, sentiment 14 -> none, capital higher
+SOVEREIGNTY: 13 last turn, no capacity event finish, no cat4 in flight, embodied_ai_deployment t11 −2, capability rose 1.5 no −1 = 11

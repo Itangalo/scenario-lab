@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t3: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Grid and Port Cyber Shield −3, EU Incident Reporting and High-Risk Enforcement Sweep −2, EU Evaluation Access and Anomaly Triage Cell −2, priority −1 = −14
+PROPOSAL BONUS: EU Evaluation Access and Anomaly Triage Cell (cat 5, small) +3 — leaked eval anomaly landed this turn and member-state side-deal weakens leverage, this answers both directly
+LEGITIMACY LENDS: capital 13, sentiment 33 -> +2
+SOVEREIGNTY: 21 last turn, no capacity event finish, Gigafactories in flight +0, member_state_defection t3 −2, capability rose 1.5 −0 = 19

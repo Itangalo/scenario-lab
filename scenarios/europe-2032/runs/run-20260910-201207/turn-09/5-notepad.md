@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t9: EU Licence Solidarity and Clinical Continuity Pact −2, EU Pandemic Continuity and Biosurveillance Surge −2, EU Anti-Coercion Supply and Cure Access Shield −2, priority −0 (capital below 20, no effect, no cost) = −6
+PROPOSAL BONUS: EU Anti-Coercion Supply and Cure Access Shield (cat 8, small) +3 — supply_chain_coercion fired this turn and medical_breakthrough on foreign models makes dependence acute, this answers both directly
+LEGITIMACY LENDS: capital 9, sentiment 12 -> +2
+SOVEREIGNTY: 19 last turn, no capacity event finish, no cat4 in flight +0, supply_chain_coercion t9 −2, capability rose 5.3 −1 = 16

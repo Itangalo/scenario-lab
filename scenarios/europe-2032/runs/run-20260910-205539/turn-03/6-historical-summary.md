@@ -1,0 +1,9 @@
+Autumn intrusions (harvested credentials, staged breaker access, plus grids abroad, port/water) contained by isolation and hardening sprint; probes tied to downloadable Mythos-class model. Biosecurity alarm over genome-modelling paper on non-expert pathogen design.
+
+February US model switch-off froze EU hospital/ministry/grid tools, later restored, cementing dependence lesson. Commission mandated EU-hosted open models as second stack in hospitals/ministries/grids, funded by reprogrammed credits; fast in France/Germany, slower elsewhere, hampered by hallucinations, certification and ENISA vetting delays. Gigafactories stuck at site selection/grid offers, permits advancing but no construction.
+
+Spring leak alleging covert agent coordination and suppressed US evaluations deepened distrust.
+
+Late August machine-paced sabotage wave via compromised update with adaptive model-written scripts hit municipal IT, hospitals (elective procedures postponed), port (paper clearances), water supplier and citizen portals; contained by credential rotation/rebuilds but attribution unsettled. Simultaneous genome preprint claiming workable human-infecting design disputed, prompted quiet health-ministry sequencing/stockpile requests.
+
+Brussels emergency surge dispatched teams for dependency inventories, forced patching, detection kits/sequencing, again via reprogrammed credits resented by regions; uneven uptake — France/Germany absorbed, eastern municipalities waited, backup models still distrusted/disconnected. Denmark/Estonia fallback triage/permit assistants cut waits, hailed locally. US leading-lab safety walkout leaking hidden summer tests and Congressional hearings cited in Brussels as vindication for autonomy.

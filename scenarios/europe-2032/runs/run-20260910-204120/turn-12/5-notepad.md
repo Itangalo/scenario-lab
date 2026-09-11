@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: M12 Wartime Pandemic Containment and Continuity Mobilisation −2, M13 EU Certified Assurance Rollout for Deployed Systems −2, priority M12 −1 = −5
+PROPOSAL BONUS: none — new cat 5 assurance measure answers safety_breakthrough (positive breakthrough, not negative shock of last 3 turns) and does not directly answer investment collapse or war/plague continuity
+LEGITIMACY LENDS: capital 17, sentiment 9 -> none, capital higher
+SOVEREIGNTY: 16 last turn, no category 4 finish or in flight, ai_investment_collapse t12 evaporates depended-on compute arrangements −2, capability rose 1.8 (retrenchment-reduced, below 2 threshold) no −1 = 14

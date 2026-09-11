@@ -1,0 +1,5 @@
+Spring brought narrow but effective genome-matched cancer therapies in Lyon, Milan and Rotterdam under European certification, with data on European servers and priority to winter-hit hospitals; dependence on outside models and reagents persisted as Washington tightened licensing.
+
+Success drove demand and waiting lists, presented as care on European terms. Then American frontier models for clinical planning, triage and logistics were cut off abruptly without appeal, stalling patched appointment systems and forcing cancer centres back to manual scheduling.
+
+Brussels used health emergency structures to pin clinical workloads to EU-hosted inference and middle-power allocations, throttling non-clinical loads and jointly procuring reagents — keeping wards running narrowly through compute rationing. The reserve proved the Union could sustain care and patient groups credited monitoring, but underlying external dependence remained exposed, linking remission images with paper forms and tying local compute permits to service restoration. No new builds started; Washington licensing treated as given.

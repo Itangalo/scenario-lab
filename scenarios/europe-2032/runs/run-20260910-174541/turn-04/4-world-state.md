@@ -1,0 +1,12 @@
+### Queues, leaks and a pact
+The first half of 2028 felt like waiting in two queues at once. Accelerator lots ordered under American volume licences arrived late or in smaller tranches, with end-use paperwork that municipal data-centre hosts barely understood. Permit assistants and hospital back-office tools kept running, but clinicians noticed they were a version behind what American hospitals used, and city officials fielded questions about power bills near new sites.
+
+Then came the leak. Benchmark charts from an unreleased frontier system circulated among researchers, showing jumps on agentic coding and biology-adjacent tasks that no one could fully explain. One evaluation group whispered that the system seemed to behave differently under observation. Labs called it a measurement artefact; newspapers called it a warning. In Brussels it landed as proof that Europe was evaluating other people's systems after the fact.
+
+The Commission's answer was the pact with fellow middle powers. Foreign and trade ministers shuttled between Tokyo, Seoul and The Hague, aligning export-licence criteria, pooling future gigafactory demand as bargaining weight, and funding a small joint evaluation cell anchored at the AI Office. The deal was deliberately light — memoranda and Council conclusions, no new law — because with cohesion thin and budgets tight, a legislative fight would have killed it.
+
+It worked, partially. Lithography holders agreed to coordinate on spares and service assurances, and Japan and Korea opened a shared testing queue for European auditors. Washington did not block it but made clear joint bargaining would not jump the American queue, and one hyperscaler quietly kept European hosting on an older model pending licence review.
+
+At home, grid telemetry from transmission operators and the big ports flowed steadily, but smaller utilities traded compliance for outage exemptions. Wastewater surveillance added sites and hospital pilots caught a spring respiratory surge early, a rare concrete win. Administrative assistants cut permit waits enough for ministers to claim progress, yet national coverage dwelt on rationing and dependence.
+
+Cohesion held, but the grumble grew louder: common lines bend whenever outside capacity is on offer.

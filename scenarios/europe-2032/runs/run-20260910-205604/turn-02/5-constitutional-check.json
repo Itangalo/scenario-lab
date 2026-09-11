@@ -1,0 +1,15 @@
+{
+  "status": "approved",
+  "iterations": 3,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Metric change violation: `eu_political_capital` decreased by 20 points (from 43.0 to 23.0), exceeding the 25-point hard cap on maximum movement per turn (Constitutional Constraint #9). While large swings are possible, no metric may move more than 25 points in a single turn. This breach stands even if the narrative justifies a large drop; the constraint is on the magnitude of the numerical change, not its plausibility."
+    },
+    {
+      "iteration": 2,
+      "violations": "- Organizational Constraint violated: The narrative describes a rapid rollout of new defensive tools across critical infrastructure (grids, ports, water utilities, hospitals) using cross-border exercises and co-funded upgrades, but no prior measure or capacity buildup is referenced that would enable such coordination at scale. The minimum time for high-cost measures is two turns (modelling choice 6), and M4 Shield Scale-Up is only now being implemented; it cannot have full effect this turn.\n- Economic Constraint violated: The rollout of the Shield Scale-Up measure involves co-financing and large-scale deployment across multiple sectors, implying significant capital expenditure. However, the eu_political_capital drops by 20 points (from 43.0 to 23.0), which suggests a major political crisis, yet there is no indication of how this spending was funded or reconciled with the concurrent legitimacy collapse. A 20-point drop in political capital due to scandal and public backlash should constrain, not enable, new spending initiatives unless explicitly financed through prior allocations.\n- Modelling choice 7 violated: The drop in eu_political_capital (−20) far exceeds the drop in eu_ai_sovereignty (−1), which is plausible in isolation, but the narrative provides no mechanism for such a sharp divergence. The political capital collapse is attributed to a domestic scandal (welfare scoring), while sovereignty declines slightly due to capability growth lag. However, the magnitude of the political capital drop implies systemic failure or loss of trust that should also affect sovereignty more strongly unless insulated by prior investments — which are not present. The constitutional guard requires these stocks to be free to move apart, but not by implausible degrees without justification. A −20 political capital shock with only −1 sovereignty impact in the same turn, amid multiple active EU measures, strains credibility without explicit buffering mechanisms.\n- Narrative telegraphs outcome: The phrase \"timing could not be worse\" implies a known adverse economic or political context not present in the narrative or metrics, potentially foreshadowing future events (e.g., budget crunch, election cycle) not yet in play. This violates modelling choice 8: the narrative must not imply hidden context or telegraph future pressures."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

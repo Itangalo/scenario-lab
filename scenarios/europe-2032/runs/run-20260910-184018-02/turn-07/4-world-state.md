@@ -1,0 +1,12 @@
+### Stacks that hold, yards that change
+The four gigafactory sites moved from paper to groundwork in the second half of 2029. Grid reinforcements and water-recycling retrofits paid for under the priority build were visibly underway, and Brussels declared the financing closed. It did not unlock the frozen hyperscale permits in Spain and Germany, where courts kept the freezes and councils again voted down revenue compacts. Connection queues barely moved.
+
+The containment system for agentic software in essential services went live. Hospitals and city offices on the clean curated models drilled shutdowns, and operators in Lombardy and Berlin practised cutting off a rogue agent without losing power or records. Coverage remained patchy — communes that refused sensors did not get inference slots — but where it ran, administrators said outages degraded rather than stopped care.
+
+That mattered because Washington tightened chip and model controls again. Under American retrenchment, licences for allies stayed available but volume-capped and conditional, and procurement officers learned to count tokens the way they once counted fuel. The Commission negotiated short-term volumes without a new instrument while pointing to domestic retrofits as leverage. It bought time, not abundance.
+
+Two shocks defined the autumn. New tailored therapies reached ordinary clinics, cutting waiting times where they could be delivered. Where delivery depended on rationed American models, the miracle arrived with a queue ticket, and newspapers framed it as proof of dependence. Eurostat's monthly publication of waiting-time falls on EU-hosted models helped, but did not reverse the frame.
+
+At the same time, foreign-built humanoid machines went commercial in logistics yards. Dexterity improved fast, unions staged warnings and short stoppages, and managers spoke openly of permanent headcount cuts. The new transition compact — wage insurance for twelve months plus retraining into care, maintenance and stack operations, funded by a charge on fleet operators — was launched through labour ministries and the union confederation. Money flowed late, eligibility fights dragged, and only a first cohort entered retraining before Christmas.
+
+A credible control result from the laboratories, quickly adopted on deployed systems, restored some legibility to oversight teams blinded by opaque reasoning. Evaluators called it real progress, not a cure.

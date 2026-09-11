@@ -1,0 +1,12 @@
+### A win to claim, a strait to watch
+Autumn 2028 gave Brussels something it had not had in years: a good news story with its own label on it. Hospital pilots in three member states cut specialist waiting lists by weeks, permit offices cleared backlogs in days, and two education regions showed measurable gains from tutored classrooms. Ministers queued to call it European — EU-procured, hosted under EU residency and audit terms, signed with the new digital signature. Evening news, for once, showed queues shrinking rather than fraud demos.
+
+The two handovers due under the closing two-year commitment landed unevenly.
+
+The Consequence Shield formally became standing mutual-aid funding. ENISA kept the signature feeds from the invoice-agent runaway and the grid intrusions flowing, and the cross-border trigger that had failed once now worked twice in a row. But finance ministers still refused fresh money. Mayors welcomed the Adoption Accelerator launch — funded deployment in health and administration — yet noted the patch burden remained unfunded. Insurers continued to probe coverage for locally run tooling, and a handful of mid-sized cities kept digitisation plans on ice while they waited to see what the new EU cover actually paid for.
+
+On power, the autumn Energy Council session forced by the Commission and the investment bank did not break ground, but it did reserve grid capacity for the single cleared gigafactory site and offered connection-cost cover to election-hit states. Developers called it the first binding reservation; energy officials called it conditional on spring studies. No concrete was poured.
+
+Beyond Europe, extended exercises around Taiwan lifted shipping insurance and prompted a diplomatic expulsion. Chip buyers felt the premium before they felt any shortage. In Brussels, the Dutch-Japanese licensing draft was deliberately held back as leverage.
+
+Then Washington voted. The winner campaigned on coalition over fortress: structured allied access on published terms, joint evaluation and incident reporting, relaxed inference tiering for partners — at the price of alignment on export controls and standards. Relief in European capitals was real, and immediate. So was the quiet warning from sovereignty advocates that cheap access would make the gigafactory case harder to fund.

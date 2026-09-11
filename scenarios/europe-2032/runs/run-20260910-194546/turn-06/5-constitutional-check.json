@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `eu_ai_sovereignty` increased from 18.0 to 23.0 (+5.0), but the Game Master's Notepad attributes only +4 (from completion of the Tech sovereignty package) and +1 (from Gigafactories in flight), totaling +5. However, the notepad also records a portfolio charge of −5 due to M1 and M7 measures, with no offsetting proposal bonus or legitimacy lend beyond +1 to political capital. Crucially, metric rule 5 (implied in invariant 2’s treatment of `eu_ai_sovereignty`) includes decay and event terms that can be negative — yet no justification is provided for why the −5 portfolio charge does not reduce `eu_ai_sovereignty`. The update shows a net +5 with no explanation of how negative terms were avoided or outweighed, violating the requirement that sovereignty changes reflect both positive and negative forces. The narrative confirms political damage and loss of trust, which should at minimum counterbalance gains, yet sovereignty rises cleanly.\n- Organizational Constraint violated: The narrative states that \"several hundred applications\" for the Municipal Resilience Co-financing Facility were processed in a short timeframe after a rushed audit-light window, with no mention of capacity expansion, staffing, or training to support this surge. Given that regulatory processing capacity typically grows at bounded rates (max ~30% per turn organically unless major new resources are injected), such a rapid throughput implies unrealistic organizational scaling without justification."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

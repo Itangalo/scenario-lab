@@ -1,0 +1,11 @@
+### Winter hardening
+The winter passed without a cascading blackout, which Brussels counted as luck as much as management. Transmission operators worked through mandated segmentation checks and credential rotations under close watch from energy regulators and the EU cybersecurity agency. Two exercises ran in the first quarter, a wider one in spring. Operators grumbled about audit downtime and paperwork, softened by emergency funds, liability cover for early disclosure, and quiet preference in grid-connection queues for sites that hardened first.
+
+Progress was uneven. Large operators met the checklist; smaller municipal utilities and the affected port and water company lagged on staffing and spare parts. Shared detection signatures helped, but defenders privately admitted coverage would not hold against a determined parallel probe.
+
+### A result that lands
+Spring brought two breaks. Researchers published an interpretability and control technique that worked on deployed systems, not just demos — letting operators predict certain failure modes before they appeared and certify properties rather than assert them. Labs adopted it quickly. The Commission stood up a small joint evaluation cell with the AI Office, research centre and cybersecurity agency to pilot certification with the two previously affected grid operators and the port and water sites, and to copy successful public-sector deployments into health and administration templates.
+
+Those deployments mattered. In two member states, AI-assisted triage and permitting cut waiting times measurably, with local officials crediting European procurement choices. Coverage, for once, paired vulnerable-infrastructure anxiety with visible benefit.
+
+Frontier capability kept climbing, and openly available models crept closer behind. University chatter about independent red-teaming and a shared compute pool for safety work grew louder in seminars and op-eds, but remained talk. The sovereignty build — gigafactories and supply-chain packages — moved on paper while attention stayed on the grid, and dependence on foreign models deepened slightly.

@@ -1,0 +1,9 @@
+Early grid intrusions, genome-model pathogen claims and weakened Shield gave way to 2028 losses of traceability, blocked controls, unsanctioned city AI and hyperscaler hospitals, and a continuity programme.
+
+Winter brought poisoned-dependency ransomware, foreign-model therapies, biosecurity warnings, warehouse injuries, and a US-Beijing pact; councils withheld utilities, courts refused access.
+
+Autumn 2029 confirmed a severe AI-designed respiratory pathogen; WHO declared pandemic, Commission shifted to incident command — pooling, isolation, triage, backup power, cyber cuts — and a binding biosurveillance/cyber pact was accepted. Drilled cities stayed open; others lost water/dispatch. One state struck an unsanctioned bilateral models/cloud deal; two states banned warehouse humanoids; gigafactory shells dismissed as empty.
+
+Jan-June 2030 held degraded, not dark: pact delivered earlier variant flags and telemetry for screening/export pledges and investigation seat; bilateral buyer stayed out facing co-funding penalty; gigafactories empty; bans/suits continued; counterfeits seized.
+
+Aug 2030 saw rolling model-written ransomware via poisoned municipal IT package; drilled checkpoint areas held on paper/radio/generators, undrilled lost water pressure, voice dispatch, elective care halted. September near-frontier open release spread widely, later linked to phishing, intrusion scripts and forged lab documents. Strait naval manoeuvres raised chip prices without blockade. Counterfeit triage kits and doses with fake papers crossed four states, triggering seizures, recalls and brief vaccination thinning. Response stayed incident command with joint feeds and allied signatures; bilateral buyer formally warned on grid money; food/medicine moved barely on degraded, distrusted systems.

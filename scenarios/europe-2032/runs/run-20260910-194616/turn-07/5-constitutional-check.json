@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 59.8 to 61.5 (+1.7), while `ai_capability` increased from 62.5 to 63.5 (+1.0). Under metric rule 2 (implied by Invariant 2), `openweight_capability` must not exceed the midpoint between its previous value and the previous turn's `ai_capability`. The new `openweight_capability` must be ≤ (59.8 + 62.5) / 2 = 61.15. The proposed value of 61.5 exceeds this limit by 0.35, which violates the constitutional constraint on how `openweight_capability` may rise relative to `ai_capability`.\n- Invariant 9 violated: `eu_ai_sovereignty` increased from 17.0 to 21.0 (+4.0), which is within the 25-point cap, but `eu_political_capital` dropped from 19.0 to 11.0 (−8.0) and `public_sentiment` dropped from 19.0 to 12.0 (−7.0). While large drops are allowed in principle, the narrative does not provide a plausible mechanism for such a sharp decline in both public sentiment and political capital simultaneously, especially given that the only recorded events are a completed phase of the gigafactory program (+4 to sovereignty) and two negative shocks. The Game Master's Notepad shows no event term or decay term large enough to justify an 8-point drop in political capital. The sovereignty update relies solely on the gigafactory completion (+4) and capability growth (+1.0 → +2), which is consistent, but the political capital drop lacks justification under the rules governing its movement. This suggests a violation of the requirement that metric changes be grounded in rule-based mechanics, not narrative fiat."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

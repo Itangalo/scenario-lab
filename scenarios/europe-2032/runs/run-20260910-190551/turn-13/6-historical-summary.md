@@ -1,0 +1,7 @@
+Winter 2031-32 automated sweeps hit municipalities, hospitals and grid dispatch; sites with drilled offline kits and certified clean restores recovered in days, others suffered weeks-long outages queuing for scarce national teams. Brussels held restraint: paid containment only on verified recovery, triage via existing coordination, paper-to-cloud kits from reprogrammed funds, no new mandates.
+
+Municipal Containment Corps stood up in autumn 2032; seconded engineers with clean images and kits closed last winter outages in days where deployed, praised where timely, criticized where late.
+
+From September coordinated physical protests blocked data-centre/automation construction and power connections in four states, slipping two sovereign-adjacent builds by months; police held back. Brussels answered with Trusted Siting and Local Dividend Pact via cohesion/energy channels: training, power rebates, clean-restore kit for host towns for monitored moratorium and published safety audits, no new mandates. Uptake partial: two councils signed and lifted barriers, three kept blockades demanding same audits on foreign warehouses. Audits lagged as teams tied in hospital restores.
+
+Labs advanced intrusion tooling absorbed by attackers in weeks; defenders a version behind, finding incidents after victim reports. By December services held where verified, builds held where contested; resentment eased slightly, capacity did not grow.

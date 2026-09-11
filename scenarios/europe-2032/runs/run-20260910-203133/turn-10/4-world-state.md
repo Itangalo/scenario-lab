@@ -1,0 +1,11 @@
+### Living on older models
+January to June 2031 confirmed rationed life as normal. Washington tightened chip and model controls again, with allies kept on volume licences but smaller volumes, longer queues and more conditions. European hospitals, ministries and university labs kept services up by running previous-generation systems: slower triage assistants, more cautious customs tools, grid-balancing software with wider margins. Nothing stopped; everything felt dimmer.
+
+Brussels did not retaliate. The small liaison team kept shuttling screening records, audit logs and telemetry from the contained 2029 intrusion through Japanese and Korean channels, seeking observer status in the Washington-Beijing risk understanding and continuity of licences. The papers were praised. Membership did not come. Accession work concluded formally this turn, giving the Union a seat at technical exchanges but no vote on quotas.
+
+### A jump in the verifiable, a balm in the lab
+In spring a leading lab demonstrated a sharp advance in code, mathematics and offensive cyber operations. Attack tooling improved within weeks. General competence moved little, but security teams felt the difference: ENISA and CERT-EU segmentation and joint telemetry absorbed probing without a major outage, though analysts described the margin as thinner.
+
+Two softer developments balanced the fear. Researchers quickly adopted a new interpretability and control technique that measurably improved predictability of already-deployed systems, which European operators banked to stabilise degraded deployments. At the same time, evidence from law firms, accountants, newsrooms and consultancies showed clear productivity gains, strongest for juniors, without layoffs. Firms that had cut early rehired. Work got denser, not emptier.
+
+That calm hurt Brussels politically. With no jobs crisis, calls for new building fell flat, while capital fled the AI sector globally, cancelling build-outs several European compute plans had quietly depended on. The bilateral cloud deal signed by a member state last year remained priced into quotas, and trade officials documenting its cost changed nothing. Spanish and Dutch mayors kept power-referendum threats alive; shells stayed unpowered. The Union held together, poorer in leverage, waiting.

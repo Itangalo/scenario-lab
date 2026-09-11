@@ -1,0 +1,9 @@
+### Holding the line
+Through autumn 2032, municipal networks held where automated patching had been installed. ENISA teams pushed behaviour-based detectors and fast patches through established isolation routines, and the ransomware swarms that had paralysed town halls and clinics lost some speed. Containment, administrators said, not recovery. Wards still ran on paper, backups still travelled by van, and attribution remained months away.
+
+That thin reprieve did not move the strikes. Hospital auxiliaries and municipal clerks in France, Germany, Spain and Italy stayed on walkouts or work-to-rule, refusing to sign off on triage suggestions from fallback tools no inspector could explain. Emergency orders and hazard supplements kept emergency departments open, but union talks in the employment council broke again over auditing. No vendor could say why a system refused or improvised.
+
+### Jobs gone, breakthrough elsewhere
+Labour figures hardened the mood. Law firms, accountancies, software houses and customer-operation centres confirmed what graduates already knew: entry posts were simply not being refilled. Brussels extended wage top-ups and short retraining courses through existing social funds, but payouts were small and queues long. Local news ran job-loss maps alongside closed data-centre sites.
+
+At the same time, a celebrated materials result — a high-conductivity alloy family found with AI-led search at an American laboratory — promised cheaper power electronics within two years. European industry would be a buyer, not a licensor. Health ministries signed another round for tailored American therapies on American pricing and American models. Each delivery worked, and each underlined dependence while oversight of the underlying systems thinned to black-box logs.

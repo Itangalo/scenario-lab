@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t9: M9 EU Care Continuity Switch −2, M10 EU Supply-Chain Leverage Defence −2, priority no effect below 20 −0 = −4
+PROPOSAL BONUS: EU Supply-Chain Leverage Defence (cat 8, small) +2 — supply_chain_coercion fires this turn and frontier cutoff last turn, this answers leverage defence directly, small size caps bonus
+LEGITIMACY LENDS: capital 13, sentiment 22 -> +2 capped (applied in total, capital held below sentiment)
+SOVEREIGNTY: 17 last turn, no cat4 finish, no cat4 in flight +0, supply_chain_coercion t9 −2 (largest capacity event, embodied_ai_deployment also qualifies), capability rose 3.0 −1 = 14

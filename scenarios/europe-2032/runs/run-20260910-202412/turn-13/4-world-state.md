@@ -1,0 +1,11 @@
+### Containment autumn
+The release came in late summer, first as rumour from hospital wards, then as confirmation: a modified agent, traces of machine-assisted design in its history, casualties real and rising. Containment ran for weeks across three countries. Borders did not close, but triage did — paper lists at hospital doors, guarded convoys for oxygen and antibiotics, ministries working from printed manuals where American models had gone dark.
+
+Europe's thin feed suddenly mattered. The Hague, Tallinn and Milan labs, plugged into the shared sampling network that spring, sent the first usable sequences. The low-budget surge finished just in time: drills became real triage, grid and port patching held at machine speed, waiting-list assistants were kept on only where they visibly freed nurses. National labs still hoarded, Council lawyers still argued over sharing, but field coordination held enough to dampen the worst.
+
+It did not feel like success. Town halls turned furious; parents kept children home; Spanish and German councils hardened their blockades on new data centres as crowds linked concrete to contagion.
+
+### Everything else arrives anyway
+In the same months, two other arrivals reshaped work. A near-frontier open release spread to hundreds of thousands of downloads in days, putting the genome-design debate permanently beyond recall. And commercial robots surged into warehouses, ports and even army resupply convoys — Chinese-built machines running American control software, sorting and palletising flawlessly while care, repair and messy construction stayed manual. The split in the labour market hardened into geography: automated logistics sheds on the edge of town, exhausted manual care inside it.
+
+Brussels activated its emergency containment measure, pressing health ministers for sequence sharing and holding the chokepoint group with Seoul and Tokyo. Survival held, joint and thin — but dependence, on foreign models, foreign robots and foreign feeds, had never been more visible.

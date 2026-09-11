@@ -1,0 +1,5 @@
+Brussels pointed to poured foundations and reserved grid at two gigafactory sites as proof of build, while other sites stayed fenced fields awaiting permits and equipment queued behind overseas orders. Build created no jobs; graduate unemployment stayed high and town-halls turned sharp over missing junior posts.
+
+Defensive software that auto-patched flaws and flagged intrusions by behaviour gave defenders temporary advantage. Commission pushed tooling via existing certification to the two previously breached grid operators, then ports and hospitals, reporting faster closures; smaller utilities lagged for lack of staff and unfunded help. Prior audits, slow certification, and incompatible radios remained unresolved.
+
+Washington published no final access rules; draft tiering rumours kept Europeans in capped middle tier, sustaining cloud risk premiums, with chip shipments still delayed from strait manoeuvres. By December: tangible concrete and cyber win against stalled hiring and externally pending decisions.

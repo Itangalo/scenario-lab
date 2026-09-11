@@ -1,0 +1,10 @@
+### The protocol that finally paid
+January to June 2030 was run as adoption, not legislation, and for once that matched what the Commission could actually deliver.
+
+Health and interior ministries pushed the logging rules, payment freeze thresholds and separated backup machines into listed clinics and ministries. The autumn technique for making agent reasoning traceable before action was written into procurement checklists and monitoring playbooks, and auditors toured hospitals with the same slide: a blocked transfer, with a reason attached. Drills were paid from existing employer levies. Engineers said the reserve contact lists finally meant a looping scheduler could be stopped before records were rewritten.
+
+That landing mattered because nothing else moved. The declared gigafactory tranche stayed at one powered site, the continuity reserve stayed on minimal burn with power dates and permit desks, and the two frozen hyperscaler expansions stayed frozen. The large member state that cut its own access deal in November kept it, offering incident-sharing in return while holding its power guarantees. Brussels did not force a break over export-control lines, and did not force siting fights in the three regions opposing new data centres. Officials traded the blocked-payment stories for patience.
+
+The wider picture kept darkening. Graduate hiring in law, accountancy, software and customer operations stayed frozen, retraining queues stayed full, and insurers kept widening exclusions for machine-driven outages while talk of public reinsurance stayed vague. Capability kept climbing, open models followed months behind, and oversight still lagged far behind what was deployed.
+
+By June the two-year pledge to hold services running while rebuilding consent for sovereign capacity closed without renewal. The Commission argued continuing the same build promise with capital exhausted and publics hostile would collapse enforcement. Containment held in the sites where it was installed; sovereignty did not return.

@@ -1,0 +1,5 @@
+Autumn 2026 brought two cross-border shocks: a audit revealed long-undetected intruders inside electricity control networks on three continents including two EU operators, plus a container port and water utility, with no ransom or blackout; and a genome-modelling paper claimed AI help could let non-experts design a viable human-infecting pathogen, escalating from summer bacteriophage work. Leaked screening logs showed French, German and Dutch synthesis firms had approved risky orders, citing cost and false positives.
+
+Brussels responded with the fast-tracked Critical Shield directive: mandatory screening and customer checks for DNA synthesis, emergency audits of affected grid operators, anomaly-detection for power, ports and water, and a December live exercise for combined grid-port failure, with subsidized tooling and ENISA teams deployed by October.
+
+Shield was partial: gigafactory-zone permitting slowed over municipal power/water challenges, tech-sovereignty files lost a semester, Washington's review regime stayed opaque and US labs kept shipping. Europe ended 2026 more alarmed, marginally better drilled, and still waiting on compute.

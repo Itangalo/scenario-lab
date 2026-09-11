@@ -1,0 +1,48 @@
+[
+  {
+    "id": "catastrophic_bio_incident",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Coordinated sabotage and blockades of data-centre construction sites across several member states force a temporary halt to new builds after clashes with security.",
+    "emergent": true,
+    "id": "emergent_anti_datacentre_sabotage",
+    "probability": 0.24666666666666667,
+    "probability_samples": [
+      0.22,
+      0.28,
+      0.24
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

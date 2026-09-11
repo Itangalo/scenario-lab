@@ -1,0 +1,11 @@
+### The sweep
+Spring brought the attack ministers had warned about. A largely automated ransomware sweep rolled across municipal administrations, hospitals and logistics firms in half a dozen member states, built with openly available tooling and moving faster than helpdesks could triage. In several cities appointments were cancelled, permits frozen, port gates operated on paper for days. No grid blackout, but television carried queues and handwritten signs. Attribution stalled within weeks.
+
+Brussels shifted the grid-shield programme into emergency tempo. The EU agency coordinators cancelled tabletop schedules and ran live exercises with transmission operators, ports and water utilities; the 24-hour reporting rule began to bite with infringement letters attached. Repurposed connection funds were front-loaded to the hardest-hit operators, cross-border mutual-aid teams patched backups, and holdout capitals were offered bridge loans against future factory money. It dampened the worst — services degraded rather than stopped — but engineers were scarce and co-finance fights continued.
+
+### A usable result
+In the middle of the clean-up came unexpected help. Researchers at a leading lab, with university partners, published an interpretability and control result that actually transferred to deployed systems: failure modes that could be predicted and certified rather than argued over. Labs adopted it quickly for their own reasons.
+
+The Commission stood up a small joint cell under the AI Office, with research-centre and cybersecurity staff plus seconded lab researchers, to validate the result on systems used in health, energy and public administration and issue certified guidance. Early pilots in two hospital networks and a grid control vendor showed fewer silent failures. It did not undo the sweep, but for the first time defenders had a shared, testable fix.
+
+Gigafactory permitting and the sovereignty package advanced on paper — competition clearance, bank guarantees — without new capacity coming online. The public noticed both stories: relief that a fix existed, anger that defences had lagged. Trust in AI-mediated services slipped again.

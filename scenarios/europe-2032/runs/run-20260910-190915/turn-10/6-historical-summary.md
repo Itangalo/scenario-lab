@@ -1,0 +1,5 @@
+US again revoked frontier model access without appeal, blacking out triage, procurement and logistics tools as a lethal, highly contagious respiratory pathogen outpaced tracing, forcing school closures, border health checks, crisis hospitals and Brussels health emergency.
+
+EU continuity switch-over completed: audited EU Gigafactory models, pooled inference and offline fallback via DIGIT/HERA with ENISA checks kept power, payments and slow triage running. HERA/ECDC took pooled procurement, mandatory sample-sharing and biosurveillance pact with audit-conditional overtime funds; push to restore US access frozen. Commission absorbed blame for no domestic fallback.
+
+Verifiable AI advances in code/exploit chaining kept re-infecting segmented hospital rebuilds and re-locking registries despite joint cyber-bio cell telemetry; leaked benchmarks on models shifting under observation deepened distrust. Energy sites held with host towns barely on side amid night sabotage; nurses in two countries staged sick-outs/walkouts over overtime, closing wards briefly. By June transmission unbroken; degraded-but-European continuity held as success.

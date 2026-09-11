@@ -1,0 +1,10 @@
+### Care holds, control slips
+The first half of 2031 made the Union's bargain visible. Hospitals ran on the pooled routine built over the previous year: EuroHPC partitions and contracted clouds carried triage and imaging, two more regions drilled without a network connection, and paper forms retreated to the drawer. Nurses called it workable. Oncologists pointed out the price: throttled inference, queues for advanced planning, and news each week of tailored cures entering ordinary care in Boston and Shenzhen that no European ward could offer on its own machines.
+
+That gap widened when Washington placed its leading laboratories under direct federal direction, with cleared officers inside training runs, publication review and customer vetting. Brussels read it within days as rationing made permanent. Supply officials stopped talking about negotiated access and started talking about allocation.
+
+On factory floors the second shock arrived physically. Chinese-built humanoids running American control software moved from pilot warehouses into logistics and then into precision assembly. European machine-tool champions, still world leaders in the metal itself, became importers of the labour that operated it. Works councils in Bavaria, Lombardy and Silesia demanded short-time cover; management offered retraining with no interval to retrain in.
+
+Two domestic blows compounded distrust. An ombudsman and then a court found a benefits and policing support system had systematically disadvantaged thousands, and the Commission chose to present it as an enforcement failure to be audited and redressed rather than as a law to be rewritten. Editorial pages called that evasion. Trade envoys, meanwhile, failed to hold a service line for lithography: Tokyo and Seoul signed warm communiqués on resilient supply, while service contracts for older machines continued to thin and Eindhoven warned it could not defy American jurisdiction on Brussels' behalf.
+
+By June a new labour and care pact was announced, wage bridges tied to automating employers and offline drills extended, but hiring had not started and money was reprogrammed, not new.

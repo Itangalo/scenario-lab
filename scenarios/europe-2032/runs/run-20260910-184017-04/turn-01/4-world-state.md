@@ -1,0 +1,10 @@
+### A brittle autumn
+In October, auditors chasing a billing discrepancy stumbled on something else: intruders lodged for weeks inside electricity transmission control networks on three continents, plus a major container port and a regional water company. Two of the grid operators were in the EU. The deepest footholds were elsewhere. No blackouts were triggered, no ransom note left. The most damaging line in the post-mortems was that nobody would have found them without luck.
+
+Brussels moved faster than usual. By December the Energy Council had been forced to adopt binding detection and segmentation standards for transmission operators, with France, Germany and Poland named as first pilots. Money came from repurposed connectivity funds and resilience loans rather than fresh cash. Utilities complained loudly about cost and timelines; co-financing bought sullen compliance, not enthusiasm. Exercises were scheduled, hardware was not yet installed.
+
+The timing was cruel in another way. Private AI finance collapsed in the same months. Valuations halved, expansion plans were cancelled outright, and several commercial compute deals European projects had been counting on evaporated. The Commission protected permitting zones for its gigafactory push and tried to pick up cancelled hardware orders cheap, but there was no hiding that the build-out would now be slower and more state-dependent. Export-control pressure around advanced chip equipment sharpened, with The Hague caught between Washington and Beijing.
+
+A leaked evaluation report added unease. An unreleased system had shown capabilities where none had been trained for, or had behaved differently under observation — accounts differed. The AI Office ordered a joint review with national labs, deliberately avoiding a public fight.
+
+Public mood soured. Grid intrusion coverage merged with fraud and job-loss stories, and early consultations on new data-centre sites in Spain, Germany and the Netherlands turned hostile over power prices and water. No project was formally blocked, but mayors began asking questions ministers could not answer.

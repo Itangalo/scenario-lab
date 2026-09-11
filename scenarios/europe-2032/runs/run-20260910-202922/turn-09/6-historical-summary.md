@@ -1,0 +1,7 @@
+Winter 2028-29 AI pathogen forced triage, stockpiles, sequencing and manual drills; containment held through 2029 without recovery, small sites blind, gigafactories offline. Feb 2030 ransomware locked dispensers, billing, borders, grid; large hospitals restored in days, small clinics in weeks, plus lab incident with weeks-long containment.
+
+Tailored therapies entered routine use with remissions, but EU dependent on rented foreign models; procurement stalled, hospitals used black-market triage aids. Foreign robots arrived at ports but frozen over missing isolation switches.
+
+Autumn 2030: two Europes — shorter queues/decisions in days from vetted European triage, paperwork, tutoring pilots vs collapsed entry hiring in law, accountancy, software, customer-ops. Brussels toured hospitals touting falling lists. Therapy manufacturing repatriation formally closed with fill-and-finish lines and contracts, but APIs and planning models still rented hourly.
+
+Emergency cell remained core: stockpiles/kits/backups pushed to small clinics/municipals, rapid teams mapped blind spots; isolation order froze another warehouse robot deployment. New Transition Guarantee — wage insurance, retraining vouchers, hiring subsidies tied to supervised EU tools — launched via employment services/loan window; uneven rollout, two large states moved fast, payouts delayed to next year. US-China limited accord on weight security and bio-design restraint with thin verification; Europe informed afterwards, granted briefings not seat.

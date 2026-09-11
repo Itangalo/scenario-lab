@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t8: EU Wartime Continuity and Neutrality Protocol −2, EU Accession to the US-China AI Risk Accord with ASML Shield −2, priority −0 (no effect, no cost below capital 20) = −4
+PROPOSAL BONUS: EU Accession to US-China Accord with ASML Shield (cat 8, small) +3 — supply_chain_coercion fired this turn and us_china_agreement exclusion this turn, both answered directly but small size and no leverage
+LEGITIMACY LENDS: capital 8, sentiment 18 -> +2 — capped by rule, applied after other terms
+SOVEREIGNTY: 16 last turn, no cat4 finishes, no cat4 in flight +0, supply_chain_coercion t8 −2 (largest capacity-taking event), capability rose 2.5 −1 = 13

@@ -1,0 +1,14 @@
+### Patching at machine speed, deployed at human speed
+Spring brought a potentially useful development for defenders. A new generation of automated patching tools and swarm-behaviour detectors, developed largely outside Europe, could close off an intrusion technique that had plagued grid and port operators. Brussels tasked emergency response teams to begin pushing the tooling into grids and ports through co-funded pilots and spring cross-border exercises.
+
+Rollout is early-stage and uneven. The EU Critical Systems Shield Scale-Up was only now being implemented, with pre-positioning in two member states, and full effect remains at least a turn away. Large transmission operators and a handful of ports moved first under prior co-financing allocations. Municipal water firms and regional hospitals largely lagged, citing downtime, staffing and unfunded mandates. Engineers noted the new detectors helped only where they were actually installed and watched, and the Shield budget is now under strain from the domestic scandal, limiting further spending this turn.
+
+### Diffusion and dread
+Almost simultaneously, a leading laboratory published powerful open weights only months behind the closed frontier. Hundreds of thousands of downloads in the first week put advanced industrial-access and cyber tooling permanently onto private hardware. European security officials called it unrecallable diffusion; finance ministers noted the fiscal pressures from ongoing co-financed programmes.
+
+A contested biosecurity paper added to the unease. A genome model was reported to have produced a viable design for an organism able to infect humans, with credible claims that a non-expert with model assistance could approach the same point. Methodologists quarrelled over alarmism and over publication itself, but health ministries ordered expanded sampling and detection.
+
+### The benefits scandal
+Then the domestic scandal broke. Investigative reporting and an ombudsman finding showed a welfare-fraud risk scoring system used in several regions had systematically penalised single mothers, migrants and part-time workers. Human review had shrunk to caseworkers clearing a queue in under a minute. Logs existed and were never read.
+
+The Commission ordered conformity reviews under existing AI law and coordination with data protection authorities, refusing new legislation to protect the shield budget. The press framed it as enforcement discredited: the system had passed on paper while failing people. Opposition parties demanded restriction, local protests linked the affair to data-centre power and water grievances, and trust fell sharply, constraining political room for manoeuvre.

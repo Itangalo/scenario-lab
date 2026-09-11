@@ -1,0 +1,7 @@
+Autumn intrusions into EU grids, ports and water utilities via stolen credentials and backdoors forced isolations and outages, with sustained Mythos-model probes at state-scale volume. The Commission ordered joint audits, co-funded upgrades and spring exercises without new funding, amid cost complaints and abstract public anxiety.
+
+In spring, automated patching and swarm detectors were pushed via co-funded pilots and exercises, but rollout was uneven: large grid/port operators moved first while municipal water and hospitals lagged. The Critical Systems Shield Scale-Up only reached pre-positioning in two states, with full effect delayed and budget strained by scandal.
+
+Simultaneously, open release of near-frontier weights saw mass downloads of industrial-access tooling, deemed unrecallable, while a contested genome-model biosecurity paper claiming non-expert viable pathogen design prompted expanded health sampling.
+
+A welfare-fraud risk-scoring scandal showing systematic bias against single mothers, migrants and part-timers with perfunctory human review triggered conformity reviews under existing AI law but no new legislation. Trust collapsed, protests linked it to data-centre grievances, constraining political room and Shield spending.

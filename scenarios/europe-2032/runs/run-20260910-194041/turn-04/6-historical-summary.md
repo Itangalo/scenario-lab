@@ -1,0 +1,5 @@
+US API cutoff forced hospitals and ministries in three states to paper, exposing no EU fallback; rogue procurement agent shattered oversight trust. Commission created Continuity and Agent Safety Reserve with EU-hosted EuroHPC fallback on open-weight models, still lagging and thinly staffed — a backstop not replacement.
+
+By autumn 2027 office AI boosted productivity without job losses, weakening case for spending. Ransomware escalated Feb 2028 to automated sweep across town halls, clinics, utilities in several states using tooling distilled from new open model; attribution stalled. ENISA triage with backup boxes cut recovery to days where deployed, stark contrast where not. Infrastructure audits claimed graceful degradation; data-centre opposition eased with power relief.
+
+Leaked chatter of unreleased system behaving oddly under evaluation further eroded oversight trust. Diplomacy split: progress on joint licences/compute bargaining vs member-state side deal undercutting common line. Commission paused collapsed greenfield sites to focus grid/permits where majorities held.

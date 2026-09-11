@@ -1,0 +1,48 @@
+[
+  {
+    "id": "catastrophic_bio_incident",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.10333333333333333,
+    "probability_samples": [
+      0.09,
+      0.13,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A commercial humanoid unit in a European logistics hub injures workers after a control-stack update, triggering national safety bans and liability litigation against the US vendor.",
+    "emergent": true,
+    "id": "emergent_humanoid_safety_ban",
+    "probability": 0.20666666666666667,
+    "probability_samples": [
+      0.18,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

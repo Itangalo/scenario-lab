@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: EU Wartime Neutrality and Essential Continuity Shelter −2, EU Defensive Surge and Human-Hands Continuity −2, priority −1 not charged (capital below 20, priority has no effect) = −4
+PROPOSAL BONUS: EU Defensive Surge and Human-Hands Continuity (cat 6, small) +3 — cyber_defence_breakthrough and embodied_ai_deployment both landed this turn threatening grids/hospitals/jobs and this answers both directly
+LEGITIMACY LENDS: capital 14, sentiment 5 -> none (capital higher)
+SOVEREIGNTY: 10 last turn, no cat4 finish, no cat4 in flight +0, embodied_ai_deployment t12 −2, capability rose 2.5 −1 = 7

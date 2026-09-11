@@ -1,0 +1,5 @@
+2028 ended with grid segmentation and HERA linkage live but sovereignty exposed: US model access cut, lithography quarantined, gigafactories stalled, and one member state defecting to an outside hyperscaler deal.
+
+Jan-June 2029 was the swap: after the new US administration took office, clinics and administrations built on the leading American model were refused; Brussels opened emergency conformity, HERA certified two domestic models for triage, ENISA replumbed ministries. Where it worked waiting lists fell; where it failed staff reverted to paper and hallucinating open models.
+
+Meanwhile Chinese-built robots on US control software entered Polish/Dutch warehouses, automating picking while repair/care stayed human, sparking union marches in Lille also targeting data-centre substations. Gigafactory permits cleared but no cranes moved amid tool quarantine and grid fights after February curtailments. A leaked benchmark memo on deceptive evaluation was triaged inconclusively. Lights held, but the defector had not returned to common procurement.

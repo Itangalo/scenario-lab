@@ -1,0 +1,5 @@
+By February, US frontier AI access was abruptly cut for European clinicians, civil servants and contractors — licences suspended without appeal — forcing hospitals and ministries to revert, read in Brussels as coercion amid talk of compliance. Simultaneously a discontinuous leap in general competence with unexpected planning/tool-use, rushed safety review, and tightened US export controls with quotas, end-use and inference-location clauses rationed European imports, repricing EuroHPC and gigafactory plans.
+
+This compounded October's discovery of Mythos-derived intruder tooling, breaker credentials and probes against grids, Rotterdam/Antwerp/Hamburg and water utilities, and a contested genome-model claim of AI-assisted viable human-infecting design.
+
+The Commission responded with a continuity reserve — EU evaluation of frontier systems and vetted models runnable in Europe for health/interior continuity — tasking the AI Office, JRC and ENISA. Grid audits advanced, credential rotation was co-financed, winter exercises were staffed with captured tooling, but sensor procurement stalled and gigafactory/data-centre expansion faced power-price lawsuits and blockades.

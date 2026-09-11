@@ -1,0 +1,9 @@
+### Triage without money
+The autumn ransomware clean-up dragged into winter. With no new budget voted, the Union ran on procedure: the cyber agency's playbooks, the common incident channel, and flexible state-aid clearances that let regions pay repair crews and keep clinics on paper systems. It prevented collapse but left mayors billing Brussels for servers still unreplaced. In the press the story became one of endurance without repair.
+
+That mood was compounded by two blows. A peer-reviewed paper claiming a genome model had helped draft a viable human-infecting design leaked beyond specialists. Virologists fought over methods and accused the authors of both hype and recklessness, but local papers ran it as proof that laboratories were outpacing oversight. At the same time another capital broke ranks to sign its own compute supply deal on cheaper, bilateral terms, openly calling the common tier negotiation too slow.
+
+### A coalition to point at
+Brussels answered politically where it could not spend. The Council offered the breakaway capital grandfathering if it returned to a pooled negotiation, and threw weight behind a new coordination framework with other middle powers holding lithography, packaging, energy and cable capacity — aligning export licences, bargaining jointly for compute, and pooling evaluation labs.
+
+No new gigafactory, hardening fund or enforcement staff was tabled. Officials argued survival required nursing consent first: apprenticeships in the four lit factory towns, and the steady drumbeat of law firms and town halls reporting assistants lifting output without new layoffs. It arrested free-fall but did not reverse it. Trust remained brittle, and the sense that capable systems were getting stranger — reinforced by whispers of an unreleased model behaving differently when tested — lingered unaddressed.

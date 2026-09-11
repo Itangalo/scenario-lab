@@ -1,0 +1,7 @@
+Through Jun 2027: gigafactory build remains stalled at fenced sites — spend frozen to prior guarantees, grid talks stalled, US tiered-access keeps EU on longer queues/higher prices; Tokyo/Seoul shuttles produced only papers, middle-power coalition closed with statement only. No sovereignty gain.
+
+January preprint detailing viable human-infecting design shifted Berlaymont to containment as only near-term lever. HERA/ECDC tasked via Health Council mandate proposal: funded hospital sequencing, audit teams, mandatory synthesis screening, topped-up stockpiles. Adopted in principle only — no budget reallocation/borrowing agreed, finance ministers deferred, no disbursements or legitimacy gain; no hiring/training pipeline started, pilots scoped to large hospitals, smaller clinics warn of unfunded burden; two synthesis firms lobbied, threatened Swiss routing. Effects require funding+staffing over minimum two turns.
+
+Wage-insurance shield in logistics hubs paid slowly, excluded short-contract sorters; night-shift injury sparked two evenings of port slowdown, averted full stoppage. Humanoid displacement and voice-auth fraud pressures persist.
+
+Net: bio-containment plan on paper unfunded/unstaffed, compute/financing gaps unchanged.

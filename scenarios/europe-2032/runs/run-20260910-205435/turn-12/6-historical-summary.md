@@ -1,0 +1,5 @@
+Machine-written intrusion wave hit unpatched municipal systems: large cities with Shield sensors and exercised fallbacks degraded but held; small paper-based councils went dark for days. Substitute-facility triage stayed up where migrated, failed elsewhere.
+
+Response turned on European automatic patching and swarm-behaviour detection, rolled to water/big-city hospitals then carried by mutual-aid/placement workers into refusing councils as funded technician-plus-restore offer, stopping shutdown. Predictability control folded into EU inspection checks; restored municipalities showed triage waiting lists falling.
+
+Graduate occupations spread over hiring collapse and data-centre opposition. First Automation Shock Absorber bridge payments arrived late/thin, splitting some assemblies, hardening others; blockades continued, sabotage rumours unconfirmed. By June services patched but brittle; Brussels judged it bought time not consent.

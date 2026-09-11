@@ -1,0 +1,7 @@
+Autumn ransomware sweep crippled municipal IT and public providers, forcing paper clinics and rebuilt permit queues; mutual-aid and fallback manifests held for large operators but failed in small councils where Shield sensors stayed unboxed and staff refused connections without funding.
+
+In February the leading American model was cut off for European users without reason or appeal, disabling triage assistants, permit summarizers and customer-ops pipelines; workarounds failed for clinical and registry use. Brussels called it a compliance pause, Washington silent, merging in public with the paper clinics. A substitution facility began triage to EuroHPC-hosted and vetted allied models with human review, succeeding only where municipal IT was restored.
+
+Graduate hiring collapse in law, accountancy, software and customer-ops extended to a third semester, confirmed as political fact amid union empty-floor photos. Continuity funds, emergency staffing grants and paid overtime connected Shield sensors in water utilities and larger municipalities and kept three mutual-aid teams on clinics; smaller councils still refused connections without funded technicians and published refusal letters.
+
+Taiwan Strait exercises and rising shipping insurance prompted quiet spares stockpiling and chip monitoring without actual shortage, but longer lead-time warnings. Campus assemblies fused hiring anger with data-centre opposition, with brief blockade and occupation ending in talks.

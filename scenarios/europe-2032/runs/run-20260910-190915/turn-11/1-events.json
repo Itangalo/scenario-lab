@@ -1,0 +1,59 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.19333333333333333,
+    "probability_samples": [
+      0.21,
+      0.21,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Hospital staff walkouts over paper-triage overload and unpaid overtime spread across several member states, forcing emergency staffing measures during containment.",
+    "emergent": true,
+    "id": "emergent_clinical_staff_walkout",
+    "probability": 0.26,
+    "probability_samples": [
+      0.26,
+      0.26,
+      0.26
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

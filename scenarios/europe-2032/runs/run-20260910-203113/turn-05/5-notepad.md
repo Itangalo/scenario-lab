@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t5: M1 InvestAI Gigafactories −3, M2 Tech sovereignty package −3, M6 EU Essential Services Continuity Reserve −2, M7 EU–Middle Power Supply-Chain and Access Pact −2, priority M6 −1 = −11
+PROPOSAL BONUS: EU–Middle Power Pact (cat 8, small) +4 — eu_frontier_access_denied landed this turn and this answers it directly, with tiered-access election result reinforcing
+LEGITIMACY LENDS: capital 22, sentiment 32 -> +2 (included after other terms, capped by sentiment)
+SOVEREIGNTY: 14 last turn, no capacity finish, Gigafactories in flight +1, middle_power_coalition t5 +2 (largest capacity event, securing over denial), capability rose 2.0 −1 = 16

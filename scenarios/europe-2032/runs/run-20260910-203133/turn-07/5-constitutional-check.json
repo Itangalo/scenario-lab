@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 59.3 to 60.7 (+1.4), while `ai_capability` increased from 62.0 to 63.0 (+1.0). Under metric rule 2, `openweight_capability` is set near the midpoint of its previous value and last turn's `ai_capability`. The update implies a jump that exceeds plausible accumulation without narrative justification for accelerated open-weight progress (e.g., sudden release of a major open model or transfer of weights). The rule allows `openweight_capability` to rise more than `ai_capability` did, but not without basis in the narrative. Here, no such basis is provided — the narrative describes access denial and dependency, not a leap in open-weight capability.\n- Invariant 9 violated: `eu_ai_sovereignty` increased from 20.0 to 23.0 (+3.0), which is within the 25-point cap, but the calculation in the Game Master's Notepad claims: \"InvestAI Gigafactories finishes t7 +5, eu_frontier_access_denied t7 −2, capability rose 1.0 −0 = 23\". This implies a net +3 change (from 20 to 23), but the +5 from completion of InvestAI Gigafactories contradicts Modelling Choice 6: \"No measure is implemented instantly.\" A gigafactory completion implies a high-cost infrastructure measure, which requires at least two full turns from proposal to full effect. If it \"finishes\" in t7, its effects must have been phased in — yet a +5 step is inconsistent with gradual implementation. A full +5 boost in one turn violates the minimum time lag for high-cost measures.\n- Economic Constraint violated: The narrative mentions \"the first gigafactory shells were declared complete\", but \"power and hookups still queued\", indicating incomplete operational status. Yet the Game Master's Notepad treats InvestAI Gigafactories as delivering a +5 sovereignty boost upon \"finish\" in t7. This contradicts Physical Constraint: infrastructure projects must have realistic timelines and cannot deliver full economic or strategic value before being physically operational (i.e., powered and producing). A non-operational site cannot confer full benefits."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

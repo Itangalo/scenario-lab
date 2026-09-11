@@ -1,0 +1,10 @@
+### The counters hold, the campuses do not
+The first half of 2032 opened with two fronts the Commission had hoped to keep separate merging into one.
+
+In courtrooms and newsrooms the social-insurance scoring affair hardened. Investigative reporting showed caseworkers clearing flagged files in under a minute, oversight logs generated and never examined, conformity paperwork signed off long before the deployment scaled. The Commission called it a clear breach of high-risk duties and ordered suspensions, joint audits and redress paid from recoveries. Much of the country press and opposition benches called it something else: enforcement theatre for rules that had passed on paper while failing in practice. Redress desks paid slowly, in small sums, and monthly placement tables for the transition guarantee still showed hundreds filled against thousands advertised.
+
+At the same time university administration buildings in Paris, Madrid, Warsaw and two other capitals were occupied in coordinated actions. Graduate groups demanded hiring quotas in publicly procured AI work and a levy on automated hiring to fund wage insurance. An emergency council of education ministers met, offered faster publication of slots, extended wage-insurance windows and review floors for scoring uses, but no quotas. Occupations lifted in some cities, persisted in others, and hearings on data-centre expansion were repeatedly blocked.
+
+Brussels reached outward where it could not move inward. ENISA was mandated to sign accession to a joint cyber command with real-time telemetry sharing, seconding EU analysts and linking finance, telecoms and municipal nodes. No new budget was asked; existing cybersecurity funds were reflowed, with data safeguards added to answer distrust from the scoring affair. Technical connection proceeded, but allied partners kept the most sensitive feeds conditional on proof that EU nodes were cleanly segregated.
+
+By June, external protection was closer, domestic legitimacy thinner. Counters stayed open, certification held, and trust fell further.

@@ -1,0 +1,7 @@
+Autumn intrusions and open-model proliferation led to a February AI-built ransomware wave hitting municipal IT, hospitals and energy subcontractors from the Ruhr to Lombardy, with unresolved attribution. An AI benefits fraud-risk system was found to have systematically flagged single mothers and migrants; Brussels chose enforcement via AI Act review and remedy fund amid rubber-stamped conformity assessments.
+
+The Commission launched a preparedness pact — clean backups, manual-failover kits, and a spring Union-wide drill — funded by reshuffled digital funds. The drill in five states and extended threat-hunting shortened outages, but summer brought a second automated intrusion via compromised software dependency, again with mutating model-written payloads and no attribution.
+
+Brussels created an Evaluation Office in the AI Office to re-audit the benefits systems and seek frontier-model access; labs granted only limited API access, re-audits confirmed rubber-stamping but yielded no recalls. A voluntary DNA-synthesis deny-list pact for AI-designed pathogens was endorsed, pending procurement rules.
+
+Gigafactories in Spain, France and Poland kept grid reservations but remained stalled by permitting and connection queues, with no new EU money. Public mood worsened over recurring outages and wrongful debt letters; the EU seen as earnest on preparedness but unable to prevent recurrence or enforce oversight.

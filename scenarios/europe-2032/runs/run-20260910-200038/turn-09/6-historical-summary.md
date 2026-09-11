@@ -1,0 +1,5 @@
+February US frontier cut-off forced Rotterdam/Milan pauses; Brussels read as tiering-denial, Washington cited load rationing. Capital fled compute, gigafactory-periphery promises cancelled, shells continued as unequipped public assets.
+
+Frontier labs lost human-readable reasoning, breaking oversight; genome-model uplift alarm persisted.
+
+Union held to degradation via EU-hosted/open substitutes, hours patch cycles, manual fallbacks. Autumn sabotage — toppled towers, blocked retrofits, Bavarian substation fire/vandalism — led Brussels to declare protected repair zones with gendarmerie/engineers. Flanders/Lombardy resumed in fits via revenue payments and municipal policing; Bavaria lost months. Two pooled continuity programmes formally closed, credited with preventing stoppage despite slower triage and brittle workflows. No private financing returned. Brussels claimed continuity under attack; opponents accused militarisation of planning disputes, trust thinned.

@@ -1,0 +1,10 @@
+### Rebuilds hold, then a verdict breaks
+Autumn brought the first good news in months. New defensive tooling — patching pushed at machine speed and detection tuned to swarm behaviour rather than signatures — was folded into the municipal and hospital rebuilds. Cities that had lost portals for weeks came back segmented and cleaner. National centres reported reinfection rates falling, and for the first time engineers spoke of the offence-defence balance moving back.
+
+A control result from the labs helped. A certified property for behaviour on deployed systems was taken up quickly by vendors and, via the AI Office and the Joint Research Centre, written into triage dashboards used by hospitals and telecom billing teams.
+
+Then the scandal broke. An ombudsman inquiry backed by a court found an AI-supported benefits eligibility system had systematically cut or delayed payments to thousands, with appeals buried. Coverage framed it as an enforcement failure under the AI Act: a high-risk system fielded without proper audit, logs incomplete, redress slow. The Commission announced audit, redress and a procurement pause for the system concerned, but audit teams were thin, logs remained incomplete, and redress queues moved slowly. Mayors already chafing at reporting loads called it Brussels policing paperwork after harm, and trust fell.
+
+The InvestAI gigafactory programme did not close its first phase this turn. Grid lots were still being secured and public-bank guarantees were still in negotiation, while forensics work continued to eat supercomputer time. With US quotas still narrow and logged and build timelines slipping, officials described the programme as still in flight with full effect pushed out. Trade ministers kept the Washington bargaining track alive without conceding export-control alignment, but with no US agreement reached there was no change in access or supply outcomes this turn.
+
+Graffiti on substation fences and scuffles at two grid-connection sites stayed local, rumour more than campaign. Warehouses kept humming with foreign machines while picking jobs did not return.

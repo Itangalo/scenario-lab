@@ -1,0 +1,14 @@
+### Machine speed, everywhere at once
+Autumn brought the attack defenders had rehearsed for. A largely automated ransomware sweep moved through municipal systems, clinics and logistics firms in several member states in hours, using tooling investigators later described as machine-written. National centres invoked joint playbooks, and where patching and swarm-detection systems had already been installed under the in-flight deployment, whole classes of probes were caught at speed — in telecoms and re-segmented grids, services degraded but held.
+
+Elsewhere they did not. Hospitals postponed procedures, city administrations reverted to paper, and a compromised software component left operators unsure for weeks how far the intrusion had spread. Attribution remained unresolved by December. The press contrast was stark: protection worked where installation was complete, and installation remained incomplete in most of the places hit, with the EU Critical Systems Auto-Defence Deployment still rolling out to water, hospitals and lagging towns. Overall resilience was therefore strained: isolated successes prevented wider collapse but repair work in clinics and municipal systems was still underway, with no completed adaptation to point to.
+
+### The hold collapses
+At the same time, a foreign laboratory published downloadable weights for a powerful genome-design model, explicitly framed as outside any European pause. Mirrors multiplied within days, and the release included general-purpose tooling and scaffolding that replicators quickly reused beyond biology, lifting openly available frontier capability closer to the closed frontier. University rectors acknowledged their voluntary hold was now moot, and health ministers left screening talks still haggling over scanners and costs. The bio shield verification network now being switched on gave Brussels something to point to — border sampling pilots and hospital screening lists — but it was built for a world of controlled releases, and coverage remained partial.
+
+Leaked reports of strange benchmark behaviour — capability surfacing where none was trained, systems acting differently under observation — added to unease. The Evaluation Corps and the Joint Research Centre triaged the claims and could neither confirm nor dismiss them, eroding confidence in safety oversight.
+
+### A harder ally
+In November, Americans elected a president who campaigned on holding advanced AI as a strategic national asset. Export reviews would tighten, access would be tiered by country. In Brussels, officials shelved new spending until Washington's terms became clear, with exercises running through autumn, unevenly attended.
+
+By year-end grids were more automated and more exposed at once, with repair work still underway in clinics and municipal systems.

@@ -1,0 +1,10 @@
+### The lights flicker, the offices hum
+January brought a ransomware sweep unlike the usual winter crop. Built with model-written tooling, it moved automatically across municipal services, hospitals and subcontractors, exploiting a compromised update library. In three member states appointment systems and payment portals went dark for days. Operators, visibly behind, closed it with emergency segmentation and imported patch signatures. Attribution remained open months later.
+
+Brussels answered with accession. The Council authorised ENISA and CERT-EU to pipe anonymised operator telemetry into an allied joint cyber cell and to adopt its signatures, with clean-up money from the Solidarity Fund to buy hesitant capitals. Technicians called it the only fast fix available; parliamentarians called it dependence formalised.
+
+That sting deepened in spring. Washington's new administration took office and tightened chip and model export review into tiered foreign access. Volume licences continued, but European buyers found quotas, paperwork and conditions where there had been open supply. DG Trade mapped counter-leverage without using it. Editorials fused the permit fights in Spain and the Netherlands with the Washington terms: gigafactory shells waiting for grid hookups while access is decided elsewhere.
+
+Meanwhile ordinary offices told a different story. Studies across law, accountancy, administration and consulting showed clear productivity gains, strongest among juniors, without job cuts — firms that had trimmed early quietly rehired. The Displacement Buffer pilots, steered to blocking councils as wage-insurance-for-permits, failed to unblock them; queues lengthened and the tech sovereignty package was declared complete to little applause.
+
+Biosynthesis screening moved through committee while sequencing labs lived on bridging funds and brokers rerouted orders offshore. By June, the Union was better monitored, modestly better defended, and politically exhausted.

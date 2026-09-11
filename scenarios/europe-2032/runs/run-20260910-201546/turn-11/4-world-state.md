@@ -1,0 +1,11 @@
+### The sweep
+The attack came as a wave, not a single strike. A ransomware toolkit assembled almost entirely by models moved through a compromised management software update into municipal networks, clinics and two regional power distributors. Screens went dark in town halls from the Rhine to the Vistula. Hospitals held — the backup images and detectors installed in the spring kept wards degrading rather than stopping — but appointments, prescriptions and benefit payments stalled for days. Defenders were visibly behind. Attribution teams admitted it would take months to name the operator.
+
+Brussels moved field teams it already had. Joint containment units under ENISA and the EU emergency response cell redeployed to hit towns first, re-imaging systems from clean backups and publishing a daily restoration list to kill the row over quiet favouritism. It worked in part. Larger cities recovered in a week; smaller communes waited, short of hands to do the rebuild, and mayors complained the published order still put factory-linked districts first.
+
+### A result with an address
+In the middle of the cleanup came different news. Institutes in Delft, Grenoble and Munich, working with a leading lab's models, announced a solid-state electrolyte finding that cuts interface resistance sharply — the kind of materials result specialists called a genuine step, with pilot lines talking about two-year impact. The Commission routed samples and licences into joint procurement and hospital-industrial pilots, pairing recovery deliveries with a tangible benefit.
+
+It did not offset fear. Coverage linked job losses, fraud and now the blackouts, and trust in automated systems slipped again. The second factory grid connection stayed stuck: permits moved in mediation but transformers and switchgear quoted 12-18 month waits in single-source whispers from suppliers, freezing substation upgrades regardless of signatures.
+
+Net: containment held the line without restoring confidence, the breakthrough gave Brussels something to show, and sovereign capacity still waits on staff, permits and hardware.

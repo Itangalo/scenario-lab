@@ -1,0 +1,5 @@
+US frontier cutoff persisted without appeal while model-mutated ransomware never cleared hospitals and ports. A deliberately released modified pathogen, allegedly genome-model-assisted, forced weeks of containment in autumn.
+
+Islanding and overtime kept wards and grids on but thinned to paper systems and mistrusted Saclay-Barcelona fallbacks. Pooled stocks, mobile testing, wastewater sequencing, and frontrunner-prioritized bed pledges deployed; laggards waited. Containment held with open casualties; cyber attribution unresolved.
+
+Entry-level coding/analysis/support cuts confirmed permanent though broader job wave failed; warehouse shifts thinned as foreign picking robots scaled alongside continued dock repair pay. Export controls tightened in November with stricter quotas/reporting and longer accelerator lead times. Dutch lithography stayed bilateral, gigafactory expansion frozen, single-source reports of vendor update freezing pallet fleets denied. Lights and wards held by December with low trust in Brussels.

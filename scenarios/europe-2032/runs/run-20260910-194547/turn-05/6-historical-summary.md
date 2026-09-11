@@ -1,0 +1,5 @@
+By December European dependence deepened despite continuity working: a new US generalizing system obsoleted July timelines, while tailored oncology moved to practice with striking remissions but reached Europe mainly via US pipes — HERA's EU-hosted pilot covered only two indications reliably as other waiting lists grew.
+
+The continuity reserve kept wards/ministries on vetted narrower assistants tied to Digital Europe continuity plans, with two hospital groups and three municipalities showing measured backlog falls credited to planning. A new interpretability method predicting some failures gave evaluators slightly beyond behaviour-grading.
+
+Unity cracked when a large member state signed its own US hyperscaler compute-and-access deal with export-control side understandings, seen by Paris, Warsaw and Commission as a separate peace. Gigafactories inched ahead on two sites with brokered power and spares against shipping/Taiwan risk. Washington elected a coalition-minded president promising structured allied access, not yet priced.

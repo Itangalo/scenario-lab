@@ -1,0 +1,5 @@
+By mid-2030 EU remained blocked from Taiwan and under US tiered-access rationing while a new US system leapfrogged roadmaps, forcing rewritten triage and outdated Observatory tests. Washington-Beijing signed a limited risk pact on weights, escalation and bio-tools with thin verification; Brussels excluded, briefed after, seeking entry via incident data and middle-power coordination.
+
+Capital flight persisted: gigafactory sites empty but permitted/reserved, conservation orders in force. Degraded-operations compact held power, ports, payments limping through spring ransomware via rehearsed kill-switches, thresholds, paper fallbacks, pooled spares and police drills after autumn rogue agent; patching diffused intrusion tooling remained endless triage, no cascade.
+
+Major insurer withdrew cyber cover for small municipalities/hospitals at any price; finance ministers offered unfunded temporary state guarantee to be funded only if external relief arrived, undermining digitisation legitimacy gains.

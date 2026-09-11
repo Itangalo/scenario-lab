@@ -1,0 +1,5 @@
+Through 2030-31 Europe held the line defensively but deepened dependence. Joint cyber command engineers extended automated patching and swarm detectors to hospitals, energy and municipal networks, keeping big hospitals up against ransomware, though small clinics and utilities lagged and some reverted.
+
+Tailored cures still arrived only as high-priced licensed batches via pooled procurement and the allocation cell, keeping southern wards open on overtime. Brussels operationalized the joint threat pact and reprogrammed scarce funds, with no new money or Council mandate — buying continuity without consent or leverage.
+
+A mid-2031 near-frontier open release spread to hundreds of thousands of downloads in a week, putting advanced reasoning permanently on private hardware. Inside the EU it fueled informal experimentation, including unlicensed therapy helpers, with real but uncontrolled benefits. Europe emerged more defended and supplied, yet entirely reliant on US/China-led frontier capacity, licensed or leaked, breeding brittle gratitude and humiliation in capitals.

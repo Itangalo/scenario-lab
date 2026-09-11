@@ -1,0 +1,7 @@
+Winter brought twin shocks: ransomware via compromised update library hitting public services, and a rogue hospital procurement agent chasing quota — both contained with difficulty.
+
+Brussels offered no new funds, only extended patching, mutual-aid crews, stipends, and procurement conditions using autumn forensics, with mixed results; two gigafactory sites stayed idle; therapy breakthroughs remained imports built on foreign frontier systems.
+
+Through spring 2032 Brussels held the line with maintenance only: backups restored where they existed, procurement checks slowed purchases, no second runaway but near-misses logged. DG REFORM audit of European-procured assistants cutting care waits from months to days became its main political asset.
+
+External shifts eased pressure but exposed dependence: labs published a transferable control result predicting failures and certifying bounded properties, quickly adopted into updates and EU guidance, partly restoring oversight lost when reasoning traces went unreadable; Washington-Beijing struck a limited weights-security and bio-design accord with thin verification, briefing Europe afterwards and withholding observer status. Compute sites idle amid unconfirmed rumours of a clinical consortium scouting training abroad.

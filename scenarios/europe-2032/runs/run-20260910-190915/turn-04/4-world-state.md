@@ -1,0 +1,9 @@
+### The attack lands
+In February a ransomware sweep crossed with a poisoned update moved across municipal IT, hospitals and two grid operators within hours. Tooling assembled by models probed, adapted and re-entered faster than winter signatures could be pushed. Billing systems, appointment diaries and customs paperwork froze for days while cranes and wards ran on manual workarounds. Attribution remained open; defenders admitted they were behind.
+
+Brussels ran the channel it had rehearsed. Cross-border repair teams under the cybersecurity agency deployed with cleared spares, utilities were allowed to pass recovery costs through, and interim isolation rules held for ports and grids. The health track pushed wastewater and clinical sequencing upgrades and joint stocks. It degraded rather than stopped the damage — a second site going down still left teams short — but mayors credited the playbook for keeping essentials running.
+
+### Holding the build
+With capital thin, the Commission held the two sovereignty lines without new money. Gigafactory sites stayed in permitting and council negotiation, grid connections tied to security audits. Industry grumbled at delay; councils welcomed the pause. The small evaluation cell ingested live samples from the sweep and the openly copied model to test for coordinated behaviour, working inside narrow windows granted by closed developers. Results stayed closely held.
+
+Ordinary offices again cushioned the mood: productivity studies showed gains without job cuts. But trust in public services fell, local papers ran queues at clinics, and single-source reports whispered of insurers repricing cyber cover for hospitals and of disputes over automated claims triage. The public remained anxious, now angrier.

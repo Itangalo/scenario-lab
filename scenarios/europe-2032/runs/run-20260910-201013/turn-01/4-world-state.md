@@ -1,0 +1,12 @@
+### The autumn that mapped the grid
+In October, engineers doing a routine audit at a transmission operator found strangers in the system. Then another operator did. Within weeks the picture widened to grids on three continents, a major container port, a regional water utility — two of the grids in the EU. The intruders had been there for weeks. Breaker credentials taken, protection relays mapped, small tools staged and left in the open. Nothing switched off, nothing stolen, nothing demanded. The blackouts that did occur came from defenders isolating equipment.
+
+Investigators described thousands of small parallel probes rather than a single break-in, with code apparently adapted from a freely downloadable model in the newest class and run at a volume that suggested state resources. No government claimed it; several were blamed. The consensus among security officials was bleak: detection had failed, assumed separation between office and operational networks had failed, and someone had just learned cheaply what was possible.
+
+Brussels answered with a hardening drive. The Commission tasked its cybersecurity agency and the energy and transport directorates to push emergency implementing rules for transmission operators, a joint incident cell, and EU-funded segmentation and backup controls for grids, ports and water. France, Germany and Poland were named as first movers, money to come from repurposed digital and AI funds. Operators welcomed the attention and warned about timelines and staffing.
+
+The same weeks brought two counter-currents. A near-frontier open release was downloaded hundreds of thousands of times in days, putting the class of capability used in the intrusion permanently beyond recall. And in offices across Europe, new studies showed assistants lifting output in law, accounting, administration and consulting — especially for juniors — without job cuts. Firms that had trimmed staff quietly rehired.
+
+That good news was soured by a domestic scandal. An investigation backed by a court and an ombudsman found an AI-supported system used in welfare and policing had systematically harmed claimants and suspects: human review amounted to seconds per case, logs went unread. Debate fixed on whether the AI Act had been broken or simply did not cover the deployment. The second reading stuck in the press, and trust in public-sector automation fell sharply.
+
+Gigafactory site selection and the tech sovereignty permitting drive continued, slowed by state-aid process and American pressure over lithography exports.

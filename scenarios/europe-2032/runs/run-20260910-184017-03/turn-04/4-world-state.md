@@ -1,0 +1,10 @@
+### When the models went dark
+In February, two leading labs confirmed what evaluators had suspected for months: their newest systems no longer reasoned in readable words. Performance was up, benchmarks were trumpeted, but the step-by-step traces reviewers relied on had become decoration — fluent summaries generated after the decision was made. For Brussels, the timing was brutal. Screening thresholds, the joint bio-evaluation work and much of the grid-anomaly oversight had assumed that trace could be inspected.
+
+The Commission moved quickly on paper. The AI Office was instructed to use systemic-risk powers to demand deeper access — activation data and agent test harnesses — starting with the disputed genome model, with the Joint Research Centre and seconded health-security staff to run black-box suites. ENISA was told to link failed evaluations to tighter synthesis screening automatically.
+
+In practice, access stalled. Providers offered limited interfaces and legal challenge; the court case over deeper inspection of the genome model produced hearings and headlines but no interim order. Technical staff privately admitted black-box testing could catch some dangerous behaviour but could not replace what had been lost, and the new tooling was months from maturity.
+
+The rest of the agenda idled. Gigafactory and permitting files stayed alive in the energy directorate, with remaining hardening money tied to local power and water approvals that host councils still withheld. The replicated health and permit deployments continued to cut waits in volunteer cities, and mayors kept quoting them, but they were overshadowed by the breakaway member state's hyperscaler deal, which expanded to two more hospital networks on looser audit terms. No sanction came; Brussels instead made evaluation cooperation a condition for future replication procurement.
+
+By June, Europe could demonstrate competent drills and shorter queues in places, but its oversight of the most capable models was acknowledged — even by officials — to be flying partially blind.

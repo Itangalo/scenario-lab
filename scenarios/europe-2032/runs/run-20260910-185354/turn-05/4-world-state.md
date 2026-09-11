@@ -1,0 +1,13 @@
+### Relief in Washington, a crack at home
+Autumn brought the result Brussels had quietly hoped for. American voters chose a president who spoke of coalitions rather than fortresses, promising allies structured access to frontier systems on published terms, joint evaluation and shared incident reporting in exchange for alignment on export controls and standards. In Commission corridors the mood lifted briefly: the volume-licence compact negotiated in the spring suddenly looked like a down payment on something real.
+
+The relief did not survive the month. A large member state signed its own compute and model arrangement directly, on terms that undercut the common offer. At home it was sold as pragmatism — faster machines, better prices. In Brussels and in Washington it read as proof the Union could not hold a line. The Commission spent weeks containing the fallout, with staff and legal capacity stretched across the Gigafactories, tech sovereignty, enforcement repair and volume-licence files, slowing follow-through elsewhere.
+
+Taiwan added pressure from outside. Extended exercises, rising shipping insurance, an expulsion: nothing unprecedented, but harder to dismiss. Contingency planners began repricing a disruption to chips and shipping.
+
+### Patching at speed, slowed by capacity
+The one genuine break was technical. New automated patching and swarm-detection tooling, proven in trials, closed a whole class of intrusion for the first time in years. ENISA and national response centres pushed it to frontrunner hospitals, grid operators and ports, with islanding drills logged openly.
+
+It landed unevenly, in part for lack of hands and money to carry it further this turn. Frontrunners absorbed it; elsewhere rollout stalled because implementation teams were already committed to the four in-flight measures, with no new measure started to add capacity. Procurement for locally hosted systems was frozen pending the discrimination claim ruling, with too few procurement lawyers to work around it. Municipal challenges to grid connections for new data centres multiplied while permitting offices cleared backlogs, and gigafactory siting held to already certified sites only until additional environmental review staff could be assigned.
+
+Joint auditors finally suspended the three flagged welfare deployments pending proof of real human review, but evening news still paired claimants' stories with chip queues. The public-services dividend kept publishing gains, now overshadowed by a two-speed map and a Union negotiating access it could not yet guarantee.

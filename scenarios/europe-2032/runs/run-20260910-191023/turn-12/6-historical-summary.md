@@ -1,0 +1,7 @@
+Through 2028-2031 defensive posture was tested by spring sweep: malware via update channel locked portals in three countries, forced hospitals offline for weeks; by autumn H2 2031 pooled hub + EU-only node and joint cyber accession delivered containment — cleaner networks but degraded services, late payments, paper slips.
+
+Washington chip/model controls stayed tight, gigafactory shells empty; no EU relief request.
+
+Office AI hiring collapse froze entry posts in law, accounting, software, back-offices. Brussels top-up became first-job guarantee — subsidised posts in town halls, offline hospitals, firms on EU hosting; DG EMPL advances to arrears first. Uneven: clean cities hired, others traded data-centre continuity for quotas, blockades, merged protests. Criticised as posts not careers.
+
+Spring 2032: foreign labs brought tumour-tuned oncology and rapid rare-disease therapies into clinical use via frontier models on non-EU compute with rationed access — procurement panic for health ministries. Guarantee held barely with training allowance and quota deals reopening one blockaded site; queues shortened only where clean. Brussels promised European delivery via pilot oncology/rare-disease centres in clean cities, joint procurement, EU hosting/node — but protocols/procurement outran delivery, clinicians still routed complex cases abroad. Voters saw cure headlines alongside waiting lists; trust rose slightly from floor, budgets for holding jobs and cures nearly exhausted.

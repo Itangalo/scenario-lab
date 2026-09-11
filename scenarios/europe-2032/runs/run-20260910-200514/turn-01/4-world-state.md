@@ -1,0 +1,10 @@
+### Autumn probes, winter blackouts
+The autumn began with unease. Auditors at two European transmission operators found intruders where none should have been: breaker credentials collected, relays mapped, small automated probes numbering in the thousands. The tooling looked like a freely downloadable model in the frontier class, tuned for industrial systems. The deepest footholds were outside Europe, no one claimed responsibility, and nothing was switched off.
+
+Then something larger landed. Late in the year a largely automated wave swept public services — hospitals postponing procedures, municipal systems locked, a port terminal forced to manual operations for days. Defenders conceded they were behind; the malicious code bore the marks of machine generation, and tracing its origin would take months. Containment, not the attack itself, caused the brief outages that filled television screens.
+
+Brussels moved where it could move fastest. The Commission front-loaded funds for grid and essential-services hardening, tasking its cybersecurity agency with round-the-clock detection, segmented control systems and mutual aid between operators. Engineers welcomed the co-funding; finance ministries balked at the bill and operators at the downtime for audits. Site work for the planned AI factories in France, Germany, Spain and the Nordics continued on paper, but without new acceleration, and the diplomatic shielding of the Dutch lithography supplier stayed quiet and procedural.
+
+The new money could not work in time. Segmentation takes months, exercises take longer, and the attack arrived before either. Public mood soured as emergency rooms and town halls struggled. Talk of foreign dependence — for models, for compute, for the very inference keeping lights on — turned sharper after the summer's brief American switch-off scare, but building an alternative remained a matter of years, not weeks.
+
+By December, hardening crews were only starting on the two hit grid operators while parliaments demanded answers about leaked claims of a lab cover-up and retracted AI-designed biology papers. Resilience, officials admitted, was now the test of agency.

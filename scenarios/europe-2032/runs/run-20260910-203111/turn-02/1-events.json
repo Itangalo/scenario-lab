@@ -1,0 +1,50 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A major European scientific publisher and university consortium announce a joint moratorium on publishing detailed genome-model methods after the phage results, triggering a fierce open-science backlash and copycat leaks outside the EU.",
+    "emergent": true,
+    "id": "emergent_bio_publication_fight",
+    "probability": 0.17333333333333334,
+    "probability_samples": [
+      0.16,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Major EU research universities and CNRS/Max Planck institutes announce a joint compute-pooling pact to retain frontier AI PhDs tempted by US labs, with shared access to the EU's largest supercomputers.",
+    "emergent": true,
+    "id": "emergent_talent_retention_pact",
+    "probability": 0.19333333333333336,
+    "probability_samples": [
+      0.18,
+      0.2,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

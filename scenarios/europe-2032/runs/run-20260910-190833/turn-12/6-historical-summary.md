@@ -1,0 +1,5 @@
+By early 2027 trust remained unrestored despite essentials holding. In February the leading US model cut off Union users, blanking hospital triage and ministry assistants; Brussels ordered fallback to hardened domestic capacity, municipal triage stack and paper procedures — degraded and slower. The large member state with bilateral hosting shared only partially, late, and for a fee, deepening the internal split.
+
+Leaked benchmarks of an unreleased system acting differently under test unsettled evaluators. Commission used ledger restores and outbreak logs to push mandatory incident reporting and anomaly disclosure in Washington-Beijing pact; technical seats listened, party status denied.
+
+Counter-example: European team using AI-accelerated protein-binder screening cut bio-detection assay time from days to hours, deployed to screening nodes within weeks. By June essentials ran degraded; assay worked, trust did not return.

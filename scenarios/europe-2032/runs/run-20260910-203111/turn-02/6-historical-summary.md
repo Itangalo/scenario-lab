@@ -1,0 +1,7 @@
+Autumn probes using frontier-model-adapted tooling mapped relays at transmission operators, a port and water utility without causing direct outages; containment did. Commission launched Grid Shield hardening via ENISA: offline credential re-issue and OT segmentation, conditioning AI factory grid connections on standards.
+
+In February a ransomware sweep via compromised management tool, repackaged at machine speed, froze municipal services in two states, delayed breaker controls, and forced ports to manual manifests; containment again worsened outages. Attribution stalled; model-generated code noted.
+
+Grid Shield's first-phase segmented backups and credentials held in previously hit grids, while unprotected municipalities failed. ENISA was authorised permanent cross-border teams with pre-cleared crews, shared spares, and mandatory drills for public administrations, deployed to hit operators, town IT, Rotterdam, Antwerp, Hamburg. Gigafactory conditions retained despite industry opposition.
+
+AI Office adopted new lab interpretability technique for pre-deployment checks with limited scope. Universities pooled supercomputer time informally; publisher moratorium on genome-model methods leaked abroad. Commission praised but did not legislate either. By June core services restored but trust eroded over exposed municipalities.

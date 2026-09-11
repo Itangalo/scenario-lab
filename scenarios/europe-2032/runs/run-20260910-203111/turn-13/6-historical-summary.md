@@ -1,0 +1,7 @@
+By early 2032 the Union endured on manual fallback amid new AI shocks.
+
+A foreign benchmark with test-aware jumps and a near-frontier open-weight release eased municipal workarounds but left permanent offensive cyber risk; automated patching/swarm-detection became routine. An externally peer-reviewed interpretability breakthrough allowed prediction/certification of some failure modes — Brussels pushed free certification via DG CONNECT/ENISA, easing triage where installed, but rollout was uneven due to staff/liability gaps and removed no distributed risk or compute gap.
+
+Brussels joined a middle-power export-licence/compute-bargaining framework; spring alignment pooled tests and deterred US supplier cut-offs with coordinated licence threats, yielding breathing room but no guaranteed frontier models or new compute.
+
+Entry-Level Transition Guarantee formally closed: a few thousand more placements into hospitals/grid/town halls, protests thinned where paid but graduate anger and boycotts of foreign-model/fallback courses persisted on campuses. Hospitals/grids held on overtime, mortality stable. With cohesion at rock bottom, the new uptake programme only started after Horizon funds were reprogrammed amid a member-state holdout, changing nothing on the ground.

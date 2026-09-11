@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: M12 EU Observer Accession to US-China Safety Floor −2, M13 Emergency Middle-Power Continuity and Access Pact −2, priority −1 = −4 [priority void, capital below 20, no effect no cost]
+PROPOSAL BONUS: Emergency Middle-Power Continuity and Access Pact (cat 8, small) +3 — eu_frontier_access_denied + cyber_major_incident + loss_of_control this turn directly answered, small size caps gain
+LEGITIMACY LENDS: capital 14, sentiment 9 -> none, capital higher
+SOVEREIGNTY: 10 last turn, no cat4 finish +0, no cat4 in flight +0, eu_frontier_access_denied t13 −2 [largest of eu_frontier_access_denied, middle_power_coalition], capability rose 1.0 −0 = 8

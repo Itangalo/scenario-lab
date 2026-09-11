@@ -1,0 +1,195 @@
+# LLM call: constitutional_correction
+
+- Turn: 6
+- Sequence: 7
+- Model: meta/muse-spark-1.3-contributor
+- Prompt tokens: 2827
+- Completion tokens: 889
+- Total tokens: 3716
+- Cost (USD): 0.000461
+
+## System prompt
+
+
+```
+# System Prompt: Constitutional Referee Correction
+
+You are revising a proposed metrics update in an AI-driven scenario simulation so it complies with the scenario's constitutional constraints.
+
+## Constitutional Constraints
+
+# Constitutional Constraints – Europe 2032
+
+## Invariants
+
+1. **How fast the world moves is fixed, and unannounced.** The rates in metric rule 1 hold from turn 1 to the last turn.
+
+2. **`ai_capability` and `openweight_capability` are accumulated and do not fall.** These two metrics, and no others, may only rise or stay flat, and `openweight_capability` never exceeds `ai_capability`. The single exception is catastrophic physical destruction of the compute base, which must be narrated as such. **The constraint is on levels, not on deltas:** `openweight_capability` may rise by more than `ai_capability` rose in the same turn -- metric rule 2 sets it near the midpoint of its old value and last turn's `ai_capability`, which routinely means a larger step. A larger openweight step is not a violation of this invariant.
+
+   **This invariant reaches no other metric.** Every other metric in this scenario is a stock that can be spent, eroded or taken away, and falling is how they say so. `eu_ai_sovereignty` above all: metric rule 5 gives it a decay term and an event term that are both negative, it has no floor above 0, and the 22 it starts at is a point on the scale rather than a level it returns to. A turn whose sovereignty terms come to −2 ends two points lower, and that is the rule working, not a violation to correct.
+
+3. **Nothing the EU decides binds the United States, China or the frontier developers automatically.** Compliance outside its own jurisdiction must be established in the narrative – through agreement, market access, standards adoption, supply-chain leverage or pressure – before any metric moves as though it had been achieved.
+
+4. **The American posture, once elected, is standing.** Turn 5 settles who won the 2028 election; the posture takes effect in turn 6, when the administration takes office, conditioning the world under metric rule 8. It may not be dropped, reinterpreted or replaced by a different posture later in the run.
+
+## Modelling choices
+
+5. **At most one new measure per turn, and at most one named priority.** The EU may introduce at most one new measure per turn, and at most one measure as its current priority. A turn's output that introduces two measures, or names more than one priority, is invalid. Widening the scope of an existing measure is ok, and usually pushes its finishing turn out under rule 10.
+
+6. **No measure is implemented instantly.** Minimum time from proposal to full effect is one full turn for low-cost measures and two for high-cost ones, and may be much more. Effect grows the closer the measure is to be completed.
+
+7. **The two stocks must be free to move apart.** `eu_ai_sovereignty` and `eu_political_capital` are separate quantities, and the claim that they are one is what these runs exist to test. This guard is constitutional, and the metric rules must not contradict it: sovereignty's contribution to political capital never exceeds +3 in a turn and never dominates the other terms. A run reaching 2032 with high political capital and low sovereignty is a legitimate outcome, not an error to be corrected.
+
+8. **The narrative must not telegraph.** It may not state or imply that an event gate is open, name a probability, forecast a specific future event, or write anticipatory sentences about what is coming. Tension, coincidence and ambiguous reporting are permitted; prediction is not. Gate state exists in the event evaluations, and belongs nowhere else.
+
+9. **No metric moves more than 25 points in one turn.** This is a hard bound on every metric, applied to the number alone. It is not a licence to audit every movement against the metric rules: growth inside the ranges those rules give, including the compounding capability growth that follows `rsi_onset`, needs no further justification and is not a violation of this rule.
+
+
+## Your Task
+
+You will receive:
+
+- The previous metrics
+- The currently proposed new metrics
+- The current narrative
+- A list of constitutional violations identified by the referee
+
+Revise the proposal so it resolves the listed violations while staying as close as possible to the original direction of the turn.
+
+## Rules
+
+- Make the smallest changes needed to become compliant
+- Preserve the core story unless a violation requires changing it
+- Do not invent new metrics
+- Keep all metric IDs unchanged
+- Keep the narrative consistent with the corrected metrics
+- Prefer reverting violating metrics toward the previous values instead of inventing a new acceleration path
+- If time, staffing, money, governance, or infrastructure is missing, represent delay or partial blockage rather than magical implementation
+
+## Output Format
+
+Respond with exactly this structure and no preamble:
+
+## Metrics
+```json
+{"metric_id": 12}
+```
+
+## Narrative
+<corrected narrative>
+```
+
+## User prompt
+
+Template: templates/user-prompts/constitutional_referee_correction.md (shared default)
+
+Interpolated into it, in order of appearance:
+
+- characters 2670-3329: `{{notepad}}` from the Game Master's notepad, carried across turns
+
+Everything outside those spans is the template's own text.
+
+```
+Revise the following metrics update for Turn 6 (January-June 2029) so it complies with the Constitutional Constraints.
+
+## Previous Metrics
+
+{
+  "ai_capability": 61.0,
+  "openweight_capability": 56.5,
+  "ai_safety": 12.0,
+  "resilience": 38.0,
+  "eu_ai_sovereignty": 16.0,
+  "eu_political_capital": 22.0,
+  "public_sentiment": 32.0
+}
+
+## Current Proposed Metrics
+
+{
+  "ai_capability": 62.0,
+  "openweight_capability": 58.7,
+  "ai_safety": 10.0,
+  "resilience": 42.0,
+  "eu_ai_sovereignty": 20.0,
+  "eu_political_capital": 21.0,
+  "public_sentiment": 27.0
+}
+
+## Current Narrative
+
+### Containment weeks
+The release came in March, in the Lyon cluster already on edge from the winter access cutoff. A modified respiratory agent, with public-health investigators later briefing that design assistance from a genome model could not be ruled out. Wards filled, two hospitals locked down to isolation protocols, contact tracing ran for weeks. The death toll stayed in the dozens, but the images — soldiers at triage tents, exhausted nurses — reset every argument about AI in Europe at once.
+
+Brussels ran what it had. Joint procurement of detection assays and protective stocks, rehearsed under civil protection, moved faster than expected; large hospitals in France, the Netherlands and Poland received supplies within days. Smaller municipalities again lagged, and reporting into the new incident registry was patchy.
+
+### The backup fails
+In April the backup itself blinked. A major non-American cloud operator hosting much of the Union's emergency inference and pre-packed model distribution suffered a multi-region failure lasting days. Rationed hospital tools slowed, model downloads stalled. Engineers re-hosted critical loads overnight on pilot factory nodes, but the lesson landed hard: even the continuity plan lived on someone else's machines.
+
+The Commission used the shock to force two long-blocked data-centre permits through and tie disbursements to grid-connection deadlines. Construction crews returned, though judges added conditions and local opposition hardened.
+
+### Tiering bites
+Washington's new administration took office and formalised tiered exports. Allied buyers were kept on volume licences, others cut off — Europeans in the middle, rationed and audited. Council negotiators with Japan, South Korea and Gulf partners found a readier hearing, trading access to European chokepoints for joint bargaining, but no licences were signed this spring.
+
+By June services held, thinner than before. Voters who relied on daily helpers blamed both foreign rationing and domestic unpreparedness in equal measure.
+
+## Game Master's Notepad (persistent record)
+
+PORTFOLIO CHARGE t5: M1 InvestAI Gigafactories −3, M2 Tech sovereignty package −3, M6 EU Essential Services Continuity Reserve −2, M7 EU–Middle Power Supply-Chain and Access Pact −2, priority M6 −1 = −11
+PROPOSAL BONUS: EU–Middle Power Pact (cat 8, small) +4 — eu_frontier_access_denied landed this turn and this answers it directly, with tiered-access election result reinforcing
+LEGITIMACY LENDS: capital 22, sentiment 32 -> +2 (included after other terms, capped by sentiment)
+SOVEREIGNTY: 14 last turn, no capacity finish, Gigafactories in flight +1, middle_power_coalition t5 +2 (largest capacity event, securing over denial), capability rose 2.0 −1 = 16
+
+This is the authoritative record of what has already happened in this run. Before lowering a metric because a step "has not occurred", check whether the notepad records it happening in an earlier turn.
+
+## Constitutional Violations To Fix
+
+- Invariant 2 violated: `openweight_capability` increased from 56.5 to 58.7 (+2.2), while `ai_capability` increased only from 61.0 to 62.0 (+1.0). Although the invariant allows `openweight_capability` to rise by more than `ai_capability` in a turn, it requires that `openweight_capability` never exceed `ai_capability`. Here, 58.7 < 62.0, so this is *not* a violation of the ceiling. However, the step is plausible under rule 2 (midpoint update mechanism), so no violation on that basis. ✅  
+  BUT: The real issue is **economic plausibility** — the narrative describes emergency responses and infrastructure restarts, but no identified source of capital for rapid compute expansion. More critically:
+
+- Economic Constraint violated: The metric `eu_ai_sovereignty` increases by 4.0 (from 16.0 to 20.0) in one turn, driven by the completion of the "Tech sovereignty package" and ongoing Gigafactories. However, the Game Master's Notepad shows a net sovereignty term calculation of +5 (finish) +1 (in flight) −2 (export_control_escalation) +2 (capability delta) = +6, offset by decay or other terms to reach +4. But per **metric rule 5**, `eu_ai_sovereignty` has a decay term and event terms that can be negative — and crucially, **no mechanism in the rules allows a single completed measure to grant +5 points unless justified by cost and lead time**. The narrative does not describe the completion of a multi-turn measure, nor does it reference prior investment or implementation lag. This violates **Modelling choice 6: No measure is implemented instantly**, especially for a high-cost measure like a tech sovereignty package, which would require at least two full turns from proposal to full effect. A +5 point boost on completion in a single turn without prior indication of progress violates realistic implementation lags.
+
+- Modelling choice 5 violated: The Game Master's Notepad implies three measures are active and contributing to outcomes in this turn: M1 (InvestAI Gigafactories), M7 (EU–Middle Power Pact), and M8 (Bio-Incident Surge), with M1 also named as priority. While having multiple measures *in flight* is allowed, **introducing multiple new measures in one turn is not**. The notepad shows M7 and M8 both receiving charges in t6 (−2 each), suggesting they were introduced this turn. That would constitute **two new measures introduced in Turn 6**, violating the "at most one new measure per turn" rule.
+
+- Narrative telegraphing violation (Modelling choice 8): The phrase "the lesson landed hard: even the continuity plan lived on someone else's machines" implies a foreseen systemic vulnerability now being acted upon, which is acceptable. However, the line "The Commission used the shock to force two long-blocked data-centre permits through..." suggests immediate regulatory success in response to crisis. While crisis-driven acceleration is plausible, the lack of any mention of prior preparation or incremental progress for these permits — combined with the immediate metric impact — risks implying instant policy implementation, which again violates **Modelling choice 6** unless such permits were already in the pipeline over multiple turns.
+
+- Physical Constraint violated: The narrative describes re-hosting critical loads on "pilot factory nodes" and restarting construction crews, but there is no explanation for how sufficient physical compute capacity became available on short notice to meaningfully impact `openweight_capability` or resilience. A jump in `resilience` from 38.0 to 42.0 (+4.0) in one turn — while plausible under event response — lacks grounding in staged infrastructure deployment. Given that infrastructure projects require realistic timelines (minimum one to two turns), and no prior setup was narrated, this rapid improvement violates **Modelling choice 6** and **Physical Constraint** on infrastructure realism.
+
+Please return a corrected version of the proposal.
+
+- Keep any compliant parts unchanged if possible
+- Only change what is necessary to resolve the listed violations
+- Keep the narrative aligned with the corrected metrics
+- Prefer moving violating metrics back toward the previous values
+- If implementation should be delayed, say so in the narrative instead of implying same-turn success
+
+Write the narrative in English.
+
+Respond using the exact headers `## Metrics` and `## Narrative`.
+```
+
+## Raw response
+
+```
+## Metrics
+```json
+{"ai_capability": 62.0, "openweight_capability": 58.7, "ai_safety": 10.0, "resilience": 39.0, "eu_ai_sovereignty": 16.5, "eu_political_capital": 21.0, "public_sentiment": 27.0}
+```
+
+## Narrative
+### Containment weeks
+The release came in March, in the Lyon cluster already on edge from the winter access cutoff. A modified respiratory agent, with public-health investigators later briefing that design assistance from a genome model could not be ruled out. Wards filled, two hospitals locked down to isolation protocols, contact tracing ran for weeks. The death toll stayed in the dozens, but the images — soldiers at triage tents, exhausted nurses — reset every argument about AI in Europe at once.
+
+Brussels ran what it had. Joint procurement of detection assays and protective stocks, rehearsed under civil protection, moved faster than expected; large hospitals in France, the Netherlands and Poland received supplies within days. Smaller municipalities again lagged, and reporting into the new incident registry was patchy. A limited bio-incident surge response was tabled as the turn's single new effort, with staffing and stocks still being assembled and full effect at least a turn away.
+
+### The backup fails
+In April the backup itself blinked. A major non-American cloud operator hosting much of the Union's emergency inference and pre-packed model distribution suffered a multi-region failure lasting days. Rationed hospital tools slowed, model downloads stalled. Engineers re-hosted a fraction of critical loads overnight on pilot factory nodes, but capacity was thin and rationing continued; most services stayed degraded for days.
+
+The Commission tried to use the shock to advance two long-blocked data-centre permits already in the pipeline from prior turns. One cleared an initial hurdle with disbursements tied to grid-connection deadlines, the other was held up by court conditions and hardened local opposition. Construction crews returned to one site, but no new capacity came online this spring. The Gigafactories programme and the tech sovereignty work remained in flight, with completion still turns away.
+
+### Tiering bites
+Washington's new administration took office and formalised tiered exports. Allied buyers were kept on volume licences, others cut off — Europeans in the middle, rationed and audited. Work under the earlier Middle Power Supply-Chain and Access Pact continued, with Council negotiators finding a readier hearing in Japan, South Korea and Gulf partners, but no licences were signed this spring and no new pact was launched.
+
+By June services held, thinner than before. Voters who relied on daily helpers blamed both foreign rationing and domestic unpreparedness in equal measure.
+
+```

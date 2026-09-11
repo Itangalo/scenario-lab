@@ -1,0 +1,48 @@
+[
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.21,
+    "probability_samples": [
+      0.21,
+      0.21,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A major non-US cloud provider suffers a prolonged outage during Strait shipping disruption, forcing emergency rerouting of European health and telecom inference workloads and exposing fallback capacity limits.",
+    "emergent": true,
+    "id": "emergent_fallback_hosting_strain",
+    "probability": 0.20666666666666667,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

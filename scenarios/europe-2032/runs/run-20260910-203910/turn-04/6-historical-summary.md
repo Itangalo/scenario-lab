@@ -1,0 +1,7 @@
+Autumn-to-spring resilience push consolidated with no new programme: Commission completed Critical Systems Shield using reassigned ENISA staff for detection profiles, reprogrammed Digital Europe funds, and spring black-start drills as acceptance tests. Two more transmission operators and municipal utilities passed with behaviour-based patching; Shield declared operational in June, enabling degrade-not-stop. Coverage uneven: failed major port required months of manual recertification, eastern grids still on uncertified stopgap non-American hosting with only thin JRC-ENISA-AI Office notes.
+
+External AI gains continued: frontier labs expanded compute/energy, improved predictability and swarm-detection; open-weight lagged.
+
+New industrial shock: commercial humanoids scaled in logistics/manufacturing with fast dexterity gains and armed-variant talk; hardware/supply chain China-concentrated, control models American. Commission monitored rather than funded, prioritizing Gigafactory site-prep in Paris-Berlin-Warsaw-The Hague and grid connections. Smaller states, unions, Mittelstand warned of job loss and physical dependence; resilience seen as crowding out future robotics bid.
+
+By June defences harder where applied, sovereignty thinner; public relief on grids mixed with anxiety over shop floor, political capital strained by unfunded trade-offs.

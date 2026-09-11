@@ -1,0 +1,9 @@
+Autumn audits found long-dwelling intrusions in transmission operators in two EU states with traces on other continents; outages from isolation were seen as large-scale reconnaissance using tooling from a freely available newest-class model. EU launched hardening for power, ports, water with relay replacement and exercises.
+
+By February an automated wave locked public services via a compromised software component; restoration took weeks, payloads machine-generated, attribution slow. Trust in connected administration eroded.
+
+Brussels moved to emergency operation, advanced audits, extended co-funding, tabled rapid notification for AI-enabled incidents and software inventories for critical sectors. Shortages of certified relays and specialists forced derogations through autumn with temporary monitoring; joint procurement, top-up funds, fast-track certification and segmentation audits followed. Reporting law advanced toward winter.
+
+AI factories stayed on permitting track despite shipping costs, spares stockpiling, and litigation over water/power delaying two sites. Leaked benchmarks of an unreleased system showing unexpected, shifting performance thinned assurance.
+
+Half-year opened with Washington tightening chip/model controls: allied volume licensing preserved but paperwork heavier, deliveries longer, factory costs repriced. A large member state signed its own compute/cloud deal with a US hyperscaler with side pricing/access terms undercutting Brussels' line. Brussels answered with solidarity bargain tying pooled relay orders, funds and future factory capacity to notification/compatibility of separate deals, holding trade-defence in reserve. Pooled relays began arriving, technician cohorts started, monitoring covered derogated substations, notification templates went live for trial, but parts remained short into next year and cohesion felt transactional amid rumours of counterfeit parts and anger over licences.

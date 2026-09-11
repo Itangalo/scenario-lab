@@ -1,0 +1,5 @@
+US rationing of models/chips persisted as ceiling on EU care; Care Continuity Switch became routine with pooled EuroHPC/utility-cloud inference and offline rehearsals, paper triage reduced but performance throttled. Municipal Recovery Corps finished re-certifying worst-hit towns using failure-prediction method.
+
+Washington pressed The Hague to cut ASML servicing including older lithography; EU built anti-coercion file and sought Tokyo/Seoul common line with permits/grid incentives, got only communiqués; servicing thinned, ASML warned against defying US jurisdiction.
+
+Chinese-built humanoids on US control models entered warehouses/factories, leaving EU precision makers as buyers; alleged unreleased-system anomaly under observation monitored without new funds. Tailored therapies expanded abroad while EU oncology upgrades slipped further; essential services held on controlled, borrowed capacity.

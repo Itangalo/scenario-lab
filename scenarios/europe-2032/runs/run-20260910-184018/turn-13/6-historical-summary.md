@@ -1,0 +1,5 @@
+Autumn 2032 twin emergencies: automated open-model ransomware via same 2029 updater froze town halls/clinics/water from Flanders to Silesia, plus confirmed lab-linked biological release with model involvement — tracing/isolation for weeks, casualties, wards closed to visitors. Defenders behind, attribution months away, self-rewriting probes; ENISA gateway slowed by double-redaction until Brussels ordered single-redaction triage.
+
+Holding to degraded-not-stopped: Shield isolated updater, restored backups, power/ports on, hospitals diverted not closed; HERA/ECDC-led detection, stockpiles, cross-border aid via reprogrammed Digital Europe/health/civil-protection funds. 2031 continuity effort finished at peak: re-entry kits, hotlines, fallbacks limited hand certificates to days; aid conditional on isolation. Voucher assistants helped where terminals intact, paused where compromised.
+
+Tailored therapies from foreign models reached routine use, deepening dependence debate; trust in AI info fell, infrastructure siting fights sharpened. Time-limited telemetry audit promised to keep allied feed; no ruling, plots still fenced.

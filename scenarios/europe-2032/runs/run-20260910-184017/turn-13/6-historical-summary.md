@@ -1,0 +1,7 @@
+US-China war since Feb 2030 degrades fabs, cables, satellites, data centres; Europe unstruck but exposed. Washington restrictions halted frontier access and servicing; EU relies on isolated vetted open models with no frontier gains.
+
+EU continuity: rationing, certified monitors, isolation-ready systems; cyber probes strained telecoms/energy and exhausted operators; biosecurity restraint held; winter relief shortened triage/oncology queues, advanced tailored therapies to reimbursement via certification/fast-track/sandboxes, though top diagnostics still abroad.
+
+Unity fractured by large member state's side hosting/supply deal with non-European hyperscaler/Washington for lighter-monitored inference and serviced equipment; Brussels froze distressed asset sales, threatened infringement/loss of rationing priority; Council left deal intact.
+
+Major coordinated cyberattack via poisoned auto-update hit municipal portals, hospital scheduling, and grid operators' telecom/energy networks, causing blackouts and paper triage. Defenders lagged, restoring via drives, spares rationing, islanded grid controls on pared-down open models. Emergency playbook held power/emergency calls in most regions with degraded service. Brussels maintained asset-sale freeze and monitor-or-no-priority discipline; side deal still intact with workloads rerouted around untrusted sites. Suspected quiet refusal by foreign insurers/neutral clouds to carry EU inference traffic raised costs.

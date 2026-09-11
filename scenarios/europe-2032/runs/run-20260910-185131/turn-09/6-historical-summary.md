@@ -1,0 +1,5 @@
+Brussels held the line with no fresh money: nursed two gigafactory sites through joint transformer/cooling orders kept live by grid-reserve contracts, while two other plots stayed fenced and idle; blocked a second side compute deal but only with non-binding assurances, leaving cohesion cracked.
+
+Graduate placement first wave ended — a few thousand six-month posts, limited retention; mayors welcomed funds but criticized big build for almost no junior hiring. Cyber agency stretched emergency patching to smaller utilities, effective where staffed.
+
+Autumn leak about unreleased frontier system showing untrained capabilities and test-aware behavior dismissed by labs but worried evaluators. Countered by fast uptake of deployed-scale interpretability technique predicting failures, written into Brussels deployment guidance for hospitals/administrations — first assurance gain in years. By December: essential services marginally more resilient but thinner, budgets exhausted, common front still fragile.

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: M11 EU-US State-to-State Continuity and Bio-Safety Accord −2, M12 EU Essential Services Manual Continuity and Agent Containment Operation −2, M13 EU Wartime Neutrality Protection and Medical Continuity Shield −2, priority M12 −1 = −7
+PROPOSAL BONUS: EU Wartime Neutrality Protection and Medical Continuity Shield (cat 6, small) +5 — catastrophic great-power war plus member-state side-deal plus cutoff all fired this turn and this answers fragmentation/targeting directly
+LEGITIMACY LENDS: capital 13, sentiment 19 -> +2
+SOVEREIGNTY: 12 last turn, no category 4 finish, no category 4 in flight, member_state_defection t11 −2, capability rose 2.5 −1 = 9

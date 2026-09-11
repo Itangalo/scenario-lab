@@ -1,0 +1,5 @@
+Autumn check made black-box failures predictable pre-deployment; EU and two US labs adopted same harness, giving hospitals/grids meaningful attestation. Brussels made log+attestation mandatory for continuity-hosting, cloned hospital stack, certified utilities and pooled protection — passed narrowly without new budget.
+
+Second near-frontier weight drop mirrored beyond takedown, sharpening phishing lures and low-skill agent scaffolds. Joint cyber command's shared telemetry blunted coordinated sweep on energy/municipal nets; certified operators stayed on, newly hosted peripheral cities inside picture. Public mood remained dependence-exposed amid February ward images, resilience surcharges, high East Asia premiums; debate whether dependence instrumented not reduced.
+
+Earlier: February US-model cutoff forced manual work, hit large state's US cloud; Brussels certified fallback taken fast where certified; frontier unreadability broke oversight; first open release spread intrusion tooling; Council joint cyber command; September sweep favored hosted audited utilities; funds tied to logged certified builds; withholding coalition; labs' control technique EU standard.

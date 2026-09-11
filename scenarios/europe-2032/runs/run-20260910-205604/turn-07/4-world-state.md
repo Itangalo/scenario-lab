@@ -1,0 +1,9 @@
+### Hospitals back, slower
+The continuity cell spent the autumn closing the February cutoff. Migration teams in Marseille, Essen and Brno moved diagnostics and drafting tools off the dead American API onto European-hosted models. By November most wards reported service restored, but staff briefings dwelt on slower outputs and narrower coverage. Procurement rules for the next health round now require a European-hosted option, which vendors met with relabelled open models.
+
+HERA's bio-detection rollout folded into round-the-clock watch centres alongside large operators. Six-state health exercises ran without a major biological scare, which officials claimed as proof the surge worked. Small water works still left gaps where no staff watched sensors.
+
+### Machines arrive from elsewhere
+Through the same months, logistics robots arrived in volume at Rotterdam, Antwerp and Lodz. Chinese-built palletisers and sorters, running American control software, cut shifts further while care and repair held manual. EU-OSHA mapping fed the numbers into wage-insurance pilots, but no European robotics line was offered. Councils at Lyon and Magdeburg kept gigafactory ground frozen over water and power, accepting only co-funding for cooling and substations to stay in talks.
+
+Leaked benchmark chatter about an unreleased system behaving oddly under evaluation filled tech press, without affecting wards or warehouses. Headlines paired restored hospitals running downgraded models with fresh warehouse layoffs beside new machines, and mayors traded notes on blocking new inference clusters. Services held at lower performance; resentment did not lift.

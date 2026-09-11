@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: EU Municipal Isolation and Agent Containment Protocol −2, EU Wartime Shelter and Minimum Continuity Regime −2, priority −1 not charged (capital below 20, no effect) = −4
+PROPOSAL BONUS: EU Wartime Shelter and Minimum Continuity Regime (cat 6, small) +4 — shooting war targeting fabs/cables/satellites/data centres in/next to Europe plus grey bazaar and open release this turn, answers shelter/continuity directly
+LEGITIMACY LENDS: capital 2, sentiment 1 -> none, capital higher
+SOVEREIGNTY: 14 last turn, no capacity event, no category 4 finish, no in-flight bonus, capability rose 3.0 −1 = 13

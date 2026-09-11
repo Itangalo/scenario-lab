@@ -1,0 +1,5 @@
+Autumn's AI leap and funeral-protest/anti-data-centre blockades of pharma cold-chains in N. Italy, E. France, W. Germany forced gendarmerie escorts, JHA corridors, army-powered cold stores, and DG MOVE rerouting; freight moved slowly at high cost.
+
+In February US frontier models cut off European users overnight. Commission shifted cordon hospitals and showcase regions to hardened open builds on Union hardware under DG DIGIT, extended corridors to depots. Lombardy/Berlin triage stayed up on European stack with daily publication, proving substitution for routine work, but fallback failed on longer-horizon planning; missed doses, spoilage, and costs persisted outside corridors.
+
+Graduate hiring froze as firms cited automated junior work; young jobseekers joined Turin/Lyon pickets despite wage insurance holding ports/drivers apart. Mayors' grid-connection bans blocking rebuilds won twice in court. Middle-power compact delivered only drips of spares/compute amid US vendor warnings. By June services degraded but held by escort and fallback, without consent.

@@ -1,0 +1,7 @@
+US models cut off twice — autumn then abrupt February blackout — forcing hospitals and ministries onto European stand-ins; emergency rosters held but triage, coding and drafting slowed.
+
+Brussels framed cutoffs as coercion and threatened trade tools; Washington offered technical talks and phased restoration. A bilateral outside-capacity deal endured, its reserved-inference offer failing to bring the holdout back.
+
+Winter reserve catalogue of certified fallbacks, conditional on EU interpretability checks and automated patching, kept services open and is now in use: hospitals in three large states switched triage/coding to signed EU-hosted builds, municipal counters piloted benefits fallbacks with retraining deals; slower drafting but fewer blackouts. Commission pursued infringement over benefits/policing scandal with seconds-long review, winning praise but no rewrite.
+
+Resilience construction stayed frozen: courts kept grid-islanding and detection injunctions, demanding written safety guarantees despite human-review offers; few blocked cities accepted reserved slots/co-management. Chipmaker's priority-wafers offer split industry; gigafactory fenced but idle, contractors queuing, credit tight, Taiwan tensions tightening supply monitoring. Leaked foreign-system benchmark jumps unverified but used to vindicate interpretability checks; EU lab materials result praised but irrelevant to capacity; office assistants lifted junior productivity without layoff wave. Local vandalism/small fires at grid works deepened sense of project working but unloved.

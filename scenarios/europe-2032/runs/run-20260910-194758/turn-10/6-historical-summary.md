@@ -1,0 +1,9 @@
+Brussels' early H2 groundworks — four gigafactory sites, grid offers, first tranche — stalled after US AI funding collapse, valuations halved, expansions cancelled.
+
+Entry-level hiring freezes forced EPSCO Displacement Transition Shield (wage-insurance, vouchers, hiring incentives via ESF+/Digital Europe, joint-procurement/no-defection pledges); vouchers arrived late and few, scheme closed.
+
+Technology sovereignty failed: frontier open-weight model widely downloaded/run in Europe beyond controls. Commission launched Essentials Continuity Sprint — ENISA kits, backup drills for hospitals, grids, permit offices, staffed partly by retrainees; only few dozen sites completed, many still inventorying.
+
+Spring brought automated patching and tailored therapies for untreatable conditions. Hospitals from winter sprint adopted first; Brussels routed procurement through EU-hosted/audited channels with ENISA kits (DG SANTE trusted-source care). Cyber tooling spread where kits existed, stalled elsewhere. Therapies slowed by Washington tightening licences, tiering/rationing allies and withholding top diagnostic models; EU demanded hosting/evaluation rights for market access citing anti-coercion tools, no new compute offered. Volumes arrived at half rate, health ministries queued hospitals.
+
+Small public-sector wins (triage, permits, tutoring, now European-hosted/audited) gave good stories but overshadowed by job losses, thin gigafactory construction, power-price protests, unconfirmed rumours of grid-connection bans/substation damage slowing permits, stalled US news-blackout mediation. By June essentials harder to break and clinics had visible win, but dependence sharper; mood shifted from hostile to ambivalent, near-frontier capability beyond recall.

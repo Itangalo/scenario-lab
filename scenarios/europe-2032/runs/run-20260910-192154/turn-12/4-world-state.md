@@ -1,0 +1,11 @@
+### Patching at machine speed
+For the first time in years, defenders got a win they could feel. Automated patching tools that matched vulnerability discovery, and detection that spotted swarms by behaviour rather than signatures, were pushed out through islanded municipal networks and hospital systems. Helpdesks reported quiet weeks where they had expected extortion waves. Engineers spoke of the offence-defence balance shifting, cautiously, back.
+
+A parallel result on interpretability and control also landed on deployed systems. Laboratories adopted it quickly because it made behaviour predictable before it was observed, and hospitals and municipalities folded certified checks into the same site visits as the patching rollout. Assurance improved measurably, though from a very low base.
+
+### The jobs that did not come back
+The relief did not reach the graduate labour market. Law firms, accountancies, software houses, customer operations and back-office administration stopped replacing entry roles. The numbers were disputed, the empty hiring pages were not. Young graduates queued for retraining vouchers while mayors warned of lasting hostility toward automation.
+
+Brussels answered with triage. Labour and digital funds were reprogrammed into wage insurance, paid retraining and temporary hiring subsidies aimed at the worst-hit sectors, with the new defensive and control tooling installed during the same visits to avoid another unfunded promise. Finance ministers granted reprogramming permission but no new money, and delivery was uneven — large employers and university hospitals absorbed the support, smaller clinics and suppliers struggled with staff and legacy hardware.
+
+The verification work with Washington and Beijing formally closed, leaving incident data shared but no seat and no hardware flow. The clinical fallback also closed, keeping imaging and triage running on EU-hosted models. Both completions steadied Brussels slightly, but trust remained near the floor: foreign cures still readable but not runnable, domestic systems still barely holding.

@@ -1,0 +1,10 @@
+### Grids, genomes and Brussels
+Autumn brought the kind of discovery no one wanted. During a routine audit, engineers found intruders who had sat for weeks inside electricity transmission systems on three continents, including two operators in the EU, plus a major container port and a regional water utility. No blackout, no ransom note — just quiet, deep access. The defenders admitted they had been lucky. Detection had failed.
+
+In parallel, a genome-model paper claimed a viable design for a human-infecting organism, or a credible path for a non-expert to reach one with assistance. Methodologists attacked it, biosecurity researchers attacked each other over publishing it, but even the sceptics conceded it was stronger evidence than anything before.
+
+Brussels moved to harden. The Commission launched a joint programme putting ENISA and the health emergency authority in charge of grid, port and water defences with cross-border exercises, alongside EU-wide biological detection and screening enforcement. Grid operators in Germany, France and the Nordics pushed back on mandatory audit deadlines as costly and intrusive; the Commission answered with co-funded security operations centres and liability cover. Money came from reprogrammed digital and health envelopes, not fresh cash, and site selection for the previously announced AI gigafactories and the tech sovereignty work continued on a slower track.
+
+One piece of good news landed: an interpretability and control result that actually worked on deployed systems, not demos. Labs adopted it quickly, and the Commission fed it straight into its AI Act evaluation pipeline. Assurance recovered some ground even as capability kept climbing — agents running longer tasks, release cycles now quarterly, training runs in the billions.
+
+Public mood stayed ambivalent. Banks quietly tightened authentication after a spate of convincing voice and video clone frauds reported in the press, and a leaked claim that a US lab had cut safety testing before the summer access shutoff fuelled distrust on both sides of the Atlantic. Neither story was confirmed, but both coloured the autumn.

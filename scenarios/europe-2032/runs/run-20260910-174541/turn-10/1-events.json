@@ -1,0 +1,48 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "cyber_defence_breakthrough",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Coordinated physical protests and sabotage against power substations and data-centre construction sites spread across three member states, linking municipal water-permit freezes to a wider anti-AI infrastructure movement.",
+    "emergent": true,
+    "id": "emergent_infrastructure_backlash_sabotage",
+    "probability": 0.23666666666666666,
+    "probability_samples": [
+      0.24,
+      0.29,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

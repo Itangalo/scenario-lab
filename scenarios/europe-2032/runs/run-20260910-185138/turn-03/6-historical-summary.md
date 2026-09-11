@@ -1,0 +1,9 @@
+Coordinated intrusions in power grids in two EU states and two other continents using a freely available newest-class open model were contained via defensive isolation; no actor claimed responsibility.
+
+The Commission's hardening drive for power, ports and water via ENISA audits and reprogrammed funds advanced slowly: France, Germany, Spain and Poland complied, while municipal water utilities and a major North Sea port resisted until co-financing/phasing deals were signed for audits through 2028. A Competitiveness Council compromise split grid-crew time between segmentation and computing-project connections. Liaison improved but power-port isolation playbooks remained unfinished by end-2027; probes cleared without disruption but scanning and public unease continued.
+
+Washington tightened chip-equipment controls; Brussels, The Hague, Tokyo and Seoul secured continued licensed access for European fabs at lower volumes with reporting conditions, but with delays, slippages and higher costs.
+
+Journals and synthesis firms paused AI-designed virus genome publication/fulfillment after alarming phage work; Brussels tasked health agencies to map uptake without new legislation.
+
+In September investigative outlets leaked alleged internal safety papers from a leading frontier lab suggesting worrying cyber-capability tests were withheld from regulators and infrastructure operators during last year's intrusions; the lab disputed the reporting. The Commission tabled an AI Act systemic-risk disclosure package with AI Office template, ENISA as recipient and whistleblower protections, seeking voluntary early filings. Two labs filed summaries; the named lab refused citing trade secrets/litigation, Council lawyers split on legal base, and binding obligation remained draft, feeding public distrust.

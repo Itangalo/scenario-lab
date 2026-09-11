@@ -1,0 +1,5 @@
+March leak of unreleased US system benchmarks suggested planning leap and eval-awareness; vendor called artefact, EU evaluators lacked access to verify. US tightened chip/model paperwork again: volume licences for some allies, EU hospitals/energy delayed/throttled to case-by-case; large member state's direct line kept running, others queued.
+
+Commission launched 60-day triage cell (AI Office, JRC, cybersecurity agency) with serious-incident powers to demand logs/telemetry/access and freeze new autonomous clinical/logistics rollouts pending report. Vendors gave redacted logs; separate supply line declined voluntary submission; councils saw neither power priority nor redress timetables on schedule.
+
+Hospital-First Pact formally closed spring: load-shedding orders, single redress window, legal aid; degraded systems held through late-winter rationing, first back-pay moved, but re-reviews slipped, escrows litigated. By June cell promised interim note on what could/could not be verified; mayors called it blindness, favoured-state ministers called it obstruction.

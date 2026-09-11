@@ -1,0 +1,10 @@
+### Clinics and machines
+Spring began with hope in wards. Tailored therapies for cancers and rare diseases, developed abroad, reached European hospitals in trial batches. Waiting lists filled within days. Health ministers queued for joint procurement, and Brussels promised the treatments would run on European data infrastructure, with patient data staying inside the Union.
+
+The promise outran the capacity. Inference stacks, planning tools and the control software behind the new protocols were licensed from American labs, metered in dollars and subject to export paperwork. Hospital managers learned that scaling prescriptions meant scaling foreign compute bills. Editorials that had hailed cures turned to questions about who decided who got treated.
+
+At the same time, the factory floor changed. Cheap, capable humanoids from Chinese supply chains appeared in logistics hubs in Rotterdam, Łódź and Lyon, leased with American fleet-management software. They stacked, carried, and cleared. Within months, videos circulated of the same platforms carrying weapons on foreign test ranges. Unions that had struck over clinic outages now marched over warehouse layoffs. Mayors who had begged for grid connections for data centres faced counter-demands to halt automation permits.
+
+Brussels answered with a trust programme: EU-bought therapies, European hosting, labels for trustworthy clinical AI, money for hospital upgrades repurposed from old recovery loans. Health ministers endorsed it; finance ministers sulked. Permitting for gigafactories idled on low burn while lawyers stretched the draft agent gate to cover embodied control systems.
+
+The containment work from autumn held where it had been built. Power stayed on, ports moved, and hospitals that had taken surge-team advice recovered faster from phishing waves. But the sense of exposure deepened: cures that proved dependence, robots that proved vulnerability. Relief and resentment arrived together, and resentment was louder.

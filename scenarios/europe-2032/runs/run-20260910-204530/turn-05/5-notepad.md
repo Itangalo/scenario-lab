@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t5: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Supply-Chain Sovereignty Shield −2, EU Essential Services Continuity Reserve −2, priority −1 = −11
+PROPOSAL BONUS: EU Essential Services Continuity Reserve (cat 6, small) +4 — eu_frontier_access_denied and capability_jump landed this turn and this answers them directly as fallback capacity
+LEGITIMACY LENDS: capital 8, sentiment 19 -> +2 (capped accounting included in final capital)
+SOVEREIGNTY: 23 last turn, no capacity build finishes, Gigafactories in flight +1, eu_frontier_access_denied t5 −3, capability rose 5.0 −1 = 20

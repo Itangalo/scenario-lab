@@ -1,0 +1,9 @@
+Autumn audits found long-dwelling intrusions in transmission operators in two EU states with matching traces on two other continents, a port and water utility; outages from defensive isolation were assessed as large-scale reconnaissance using tooling from a freely available newest-class model. The EU launched hardening for power, ports and water with relay replacement, checks by spring, and exercises.
+
+By February a largely automated wave locked public services in several states via a compromised software component with unmappable users; isolation halted services, restoration took weeks, payloads were machine-generated, attribution would take months. Trust in connected administration eroded.
+
+Brussels moved hardening to emergency operation, advanced audits/exercises, extended co-funding, and tabled rapid notification for serious AI-enabled incidents plus mapped software inventories for power, ports, water and health IT. Progress was constrained by shortages of certified relays and specialists, slipping spring deadlines.
+
+Spring grid checks confirmed the bottleneck: relays out of stock into next year, too few licensed engineers, leading to derogations through autumn with temporary monitoring/segmentation. Brussels responded with joint relay procurement, topped-up co-funding, and fast-track technician certification. Segmentation audits completed in energy then water; September cross-border port-grid exercise found civil-operator communications gaps. Reporting/inventory law advanced with templates and mapping aid but slipped toward winter amid scope disputes.
+
+AI factories stayed on permitting track despite Taiwan-drill shipping costs, quiet spares stockpiling, and professionalised local legal opposition over water/power delaying two sites. Leaked chatter about an unreleased system surprising evaluators thinned assurance.

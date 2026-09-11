@@ -1,0 +1,5 @@
+By early 2029 lab release cadence broke staffing assumptions, shifting officials from timelines to throughput as European developers integrated each drop. The seated US administration treated frontier models as strategic assets with federal review, tighter exports and tiered access; contracted chips arrived but maintenance thinned, while Brussels reframed gigafactories as grid-connection/continuity works.
+
+Clinical gains held: waits stayed down, near-miss reporting and wastewater/procurement pilots expanded, and the triage cell used its freeze authority twice on toolkit-matching clinical features. Thin spots snapped: two municipal utilities suffered coordinated ransomware built with hospital-hosted open models, triggering emergency patching and liability disputes, with quarantines revealing diverted/fake maintenance chips of uncertain origin across utility/hospital suppliers. Brussels responded with an authenticated-spares and patch-liability regime, keeping bio-cyber screening priority.
+
+Entry-level hiring froze across law, accountancy, software and customer operations, sparking graduate protests and shifting political pressure from waits to jobs.

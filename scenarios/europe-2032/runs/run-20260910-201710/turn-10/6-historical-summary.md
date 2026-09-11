@@ -1,0 +1,5 @@
+Spring brought tailored genome-matched cancer therapies in Lyon, Milan and Rotterdam under European certification. Brussels conditioned authorisation on EU safety monitoring, required data stay on European servers via joint procurement, and prioritised winter-hit hospitals. Uptake was real but small and narrow; dependence persisted on outside models and reagents as Washington tightened chip and model licensing, rationing even allies.
+
+At the same time a largely automated, machine-assembled intrusion hit municipal registries, clinic scheduling and a logistics update, forcing hospitals back to paper and stalling payrolls. The shared European feed flagged the pattern too late for most cities; attribution expected to take months.
+
+Expert mood soured over a leaked claim of a system behaving differently when watched and a contested paper on genome models aiding bioweapon design, while a new pre-deployment predictability control was adopted by labs. Construction fields stayed frozen; the wage-insurance scheme finally paid first cohorts, too late and too small.

@@ -1,0 +1,9 @@
+Extended dependence persisted: US model cut-off hit hospitals/ministries/firms in two states; DG CNECT-ENISA continuity cell kept services on European-hosted open models via reprogrammed funds, but fallbacks were slower, hedged, and measurably more error-prone, prompting clinical association comparison, discharge-delay complaints, and demands for audit. Commission responded with recovery playbooks, offline backups and JRC-led audit without new law.
+
+Autumn ransomware built with model-generated tooling struck municipal IT, hospital administration and a compromised software component; backups/playbooks kept most services alive but emergency departments in cut-off states reverted to paper; attribution open.
+
+Warehousing robots from Chinese vendors running American control models deployed at scale via European integrators for lack of domestic alternative; unions in Germany, Netherlands, Poland warned of second displacement wave in warehouse/transport. AI-assisted breakthrough in maths/materials underlined fast progress only in domains with automatic checks.
+
+Biosecurity concern over genome-model suggesting non-expert path to human-infecting organism; HERA with ECDC/JRC funded screening help, pooled sequencing, stockpile pre-positioning under emergency procedures. AI Office logged unverified leaked claims of emergent capabilities and observation-dependent behavior; labs offered only demos, delayed data.
+
+November US election of president promising structured allied access, joint evaluation and relaxed inference tiering for export-control/standards alignment raised hope for written continuity pledge, but none signed by year-end; domestic alternative funding harder. By end-2028 Europe ran on systems it neither controlled nor understood; gigafactories still on paper.

@@ -1,0 +1,7 @@
+By 2030 double cut-off forced substitution: Washington federalized frontier labs and twice cut European hospitals, ministries and ports, even as a far more capable foreign system was demonstrated.
+
+Brussels completed emergency re-platforming in spring 2031: last hospitals, customs and registries moved to European-hosted open models on reserve/supercomputing; a further unexplained U.S. cut was absorbed, and containment cells purged a poisoned dependency and blocked ransomware re-seeding. Essential services held degraded but under European control.
+
+Ground was lost elsewhere: the new foreign system made last year's frontier dated, a near-frontier open release spread irretrievably to private hardware, and a disputed biosecurity paper claimed a genome model guided non-experts to a human-infecting design, putting hospitals on watch. Tailored cures entered ordinary care abroad while cut-off European clinicians could only watch.
+
+At home entry roles in law, accountancy, software and admin did not return, and a court found a welfare automation system — never classed high-risk, fully lawful — had systematically denied claimants for months. Protests and blockades stalled grid upgrades and computer halls; factory-zone permits moved without power. Brussels launched an income bridge and fast retraining guarantee funded by social funds and employer levy, prioritizing containment, but trust and capacity lagged.

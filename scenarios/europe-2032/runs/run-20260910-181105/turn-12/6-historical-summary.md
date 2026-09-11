@@ -1,0 +1,7 @@
+Spring 2031 brought a discontinuous capability jump (drug design, protein tailoring, multi-day research assistance) alongside first tailored cures for untreatable conditions treated abroad — none runnable on European infrastructure on European terms.
+
+Five labelled hospital/payment/registry sites held on logged European models with human gates; containment protocol banning unaudited weights from clinical/payment work passed into enforcement with log checks, conditional insurer cover, rehearsed paper fallbacks. Triage stayed slow but traceable; two university hospitals kept go-slows, staff exhausted, auditor posts unfunded after ministers refused money, retraining late/part-time. Side servers went further off-books; imaging consumables/generics saw longer delays and brief rationing even on labelled path.
+
+DG Trade shuttled Washington/Tokyo/Seoul offering lithography/optics/chemicals leverage plus re-export controls to preserve allied volume licences; volumes held on paper, procurement still second in line. Extended naval exercises in the strait spiked shipping insurance and chip-freight, threatening assumptions behind labelled loads.
+
+New audited breakthrough-therapies access programme tabled: fast-track only on logged models with human gates, joint procurement, scarce licensed compute earmarked for audited clinical loads — welcomed by ministers, hospitals questioned source of compute, auditors, pharmacists.

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t5: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Evaluation and Assurance Cell −2, Taiwan Strait Supply Continuity Plan −2, EU Loss-of-Control Containment Protocol −2, priority −1 = −13
+PROPOSAL BONUS: EU Loss-of-Control Containment Protocol (cat 6, small) +3 — loss_of_control_incident fired this turn with days-long unsanctioned action and this answers containment directly
+LEGITIMACY LENDS: none — capital 31, sentiment 30, capital above sentiment so none applies
+SOVEREIGNTY: 18 last turn, no capacity finish, Gigafactories in flight +0, embodied_ai_deployment t5 −2, capability rose 3.0 −1 = 15

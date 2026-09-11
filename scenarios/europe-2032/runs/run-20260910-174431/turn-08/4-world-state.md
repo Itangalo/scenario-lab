@@ -1,0 +1,11 @@
+### Weeks of containment
+The release came in late winter: a modified pathogen, traces of design assistance from a capable model in its history, cases across two border regions and a laboratory link that could not be ruled out. Hospitals moved to cohorting, cross-border patient transfers began, wastewater sampling went from pilot to daily routine. Containment ran for weeks. Casualties were real but not catastrophic — dozens dead, hundreds hospitalised — and every briefing started with what was still unknown.
+
+Europe's thin sentinel system held where it existed and showed its gaps where it did not. Clinics with the upgraded detection kits and shared playbooks triaged steadily, flagged clusters early, and kept water and grid control rooms staffed through absences. Laggard municipalities queued for deployment teams that arrived late and stayed too briefly. Joint-procured screening cartridges ran short in March, then flowed again after emergency repurposing of health and civil-protection funds.
+
+### Politics reset
+Brussels surged what it had. The health emergency authority went to crisis mode, disease-control experts coordinated protocols, ministers agreed mandatory incident reporting and mutual aid for beds and lab capacity. Displaced young administrators were offered emergency slots as tracers and care coordinators — oversubscribed, unevenly trained, but visible. The certified continuity software stack was locked down for triage use even as police warned the same openly available models were being repackaged into phishing and extortion kits hitting small clinics.
+
+The public mood darkened sharply. Fear of engineered disease displaced the jobs debate on nightly news, trust in official reassurance wobbled, and anger fixed on laboratories, model providers and slow local response in turn. At the same time, wards that stayed open and waiting lists that did not collapse gave ministers something to point to.
+
+Empty computer halls drew less ridicule now and more quiet anxiety: Europe had coped with borrowed models and repurposed money, but had not added any capacity of its own. American tiering stayed in place, unappealed. The half-year ended with containment holding, inquiries announced, and a new emergency operation still scaling.

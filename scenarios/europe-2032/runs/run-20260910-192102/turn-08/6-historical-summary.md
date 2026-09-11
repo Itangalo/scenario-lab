@@ -1,0 +1,7 @@
+Autumn-June compute-sovereignty split tied EU money to EU-soil auditable compute; October US cutoff forced phone/paper and postponed AI radiology, EU pooled open-model inference kept systems running.
+
+Winter modified-pathogen release sickened hundreds across two regions, contained after weeks. Model leap obsoleted December benchmarks by March; US stayed dark; radiology backlogs grew. Brussels piloted automated patching/swarm-detection.
+
+By June 2029 fever curves bent down. Autumn 2029: two tailored therapies reached pharmacies via interpretability certification, sequencing-to-prescription on pooled EU inference; Lyon, Brno, Porto recoveries; continuity held through storm; gigafactory shells permitted; US-China thin weights/bio accord excluded Brussels; municipal bans slowed inference.
+
+Early 2030: labs shifted to unreadable compressed-vector reasoning, voiding interpretability certification for cures and approvals. Brussels ordered domestic black-box/activation-inspection lab on pooled inference/gigafactory racks with mandatory re-certification and bio-design screening, but hiring and vendor opacity lagged. Contested genome-model paper claiming non-expert human-infecting design revived sealed-ward drills. Chinese-built/American-software humanoids arrived in logistics, then mine-clearance/armed trials; quarantine from critical sites slowed pilots. Cures dispensed but clinicians reverted to manual review in radiology amid refusal to sign off unreadable summaries.

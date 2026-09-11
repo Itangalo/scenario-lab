@@ -1,0 +1,14 @@
+### The autumn the screens went dark
+The attack did not announce itself as a single blow. In September municipal administrations in three member states found registries encrypted, appointment systems frozen, hospital admissions reverted to paper. Then a widely used network-management update was found to carry a backdoor, and the question became how many operators had installed it. Engineers worked with what they had: the jointly procured monitoring sensors, still half-installed, and the reserve specialists still embedded after the winter drills.
+
+Brussels re-tasked everything to containment. Procurement contracts meant for long-term monitoring were turned into forensic licences. Secondees stayed where they were. Interior ministers authorised cross-border teams to move between affected cities while police and vendors argued over whether to rebuild or decrypt. Power stayed on — the grid operators, warned by last year's intrusions, isolated quickly — but queues of citizens outside town halls and delayed discharges made the disruption visible for weeks. Attribution remained open; every briefing noted the intrusion scripts bore the marks of machine-generated code.
+
+### A paper no one could ignore
+At the same time, the contested genetics study broke into wider view. University press offices summarised it as proof that desktop software could now guide the design of a germ capable of infecting people; the authors protested they had shown a risk, not a recipe; critics said the methods did not support either claim. Health agencies did not wait for the argument to settle. Using existing health funds, they paid for upgraded sewage sampling, faster hospital reporting links and pre-positioned stocks in the five states that had drilled together in spring.
+
+The move was practical and thin. Kits arrived, data links were patched, but staffing was the same pool already working nights on the cyber recovery, and energy officials quietly paused new data-centre grid connections to free engineers.
+
+### A good report at a bad time
+Amid the strain, a labour-market review brought unexpected calm: in law firms, accountancies, newsrooms and consultancies, output per person was up, juniors were learning faster, employment had not fallen. Ministers quoted it; unions were sceptical. Commentators noted the tools seemed finished rather than transformative — helpful, not revolutionary — which cooled both fears of mass layoffs and hopes of a boom to pay for new factories.
+
+By December, services were restored, the backdoor was mapped if not closed, and detection thresholds had been rewritten to include the new biological findings. Relief that the lights held mixed with anger that recovery had been so manual. Confidence in preparedness did not rise with activity.

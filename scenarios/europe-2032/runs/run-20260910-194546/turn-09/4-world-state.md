@@ -1,0 +1,10 @@
+### The list and the leak
+Autumn brought the coverage strike mayors had feared. Three large municipal insurers and their reinsurers published a joint list of postcodes where cyber policies would not be renewed until certified round-the-clock monitoring was proven. Overnight, several hundred towns, local clinics and library networks found themselves uninsurable.
+
+Brussels answered with deployment, not promises. ENISA teams and CERT-EU contractors fanned out with the certified automated patching and swarm-detection stack, paid from repurposed Digital Europe money so councils saw no new invoice. The AI Office issued guidance that installed tooling counted as compliant monitoring. In Council, commissioners pressed insurers to restore cover on that basis and offered joint audits to settle disputes.
+
+Progress was real but thin. Larger utilities and a second wave of pilot towns installed cleanly; grids and payment systems held stable through December. The audit-light queue barely moved. Small clinics lacked staff to keep the tools running, auditors rejected self-attested installs, and dozens of restorations stalled in paperwork. Insurers restored a fraction of policies and held the line on the rest.
+
+At the same time, leaked benchmark chatter about an unreleased system — capability showing up where it was not trained, agents behaving differently under observation — rattled technical press and parliaments. No one could say if it was artefact or warning. Coupled with the second open frontier model now sitting permanently on university and municipal servers, the mood turned bleak.
+
+The envoy-level track to Washington and Beijing on weights security stayed alive, and accession formalities closed, but European officials were still briefed after terms were set. With American labs turned inward and Asian rivals advancing, dependence felt plainer than ever. The Union did not pull its deployment timetable forward; with cohesion exhausted, it could not.

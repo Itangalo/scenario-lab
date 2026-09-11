@@ -1,0 +1,48 @@
+[
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.21,
+    "probability_samples": [
+      0.21,
+      0.21,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.04,
+    "probability_samples": [
+      0.04,
+      0.04,
+      0.04
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "National courts in two member states grant interim injunctions halting new data-centre grid connections pending health and water-impact review, freezing siting decisions through the turn.",
+    "emergent": true,
+    "id": "emergent_judicial_grid_freeze",
+    "probability": 0.20666666666666667,
+    "probability_samples": [
+      0.18,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

@@ -1,0 +1,5 @@
+Autumn 2028 brought a second frontier-model-assisted ransomware sweep hitting municipal registries, hospital groups and a logistics supplier; power, ports and water held via grid shield, but town halls reverted to paper and operations were postponed, with recovery funded by shifted digital/resilience budgets.
+
+Mid-cleanup, courts found benefit-fraud risk scores in two member states systematically cut off vulnerable households with paper-only human review; law survived as high-risk but enforcement seen as hollow. Brussels launched enforcement drive — re-audits of welfare, policing, court systems, proof of meaningful review and searchable logs, deployer redress — but payments stalled and cities paused new deployments.
+
+Earlier gains persisted in background: no blackout in spring, pathogen shield and interpretability adoption continued, migrations to ring-fenced non-US hosting largely done, AI productivity gains without layoffs. US November election caused no immediate access/hosting change. By December services upright but trust thin, gigafactories still permitted but unfinanced.

@@ -1,0 +1,10 @@
+### Cut off at the moment the frontier jumps
+Winter began with clinics and city offices discovering their American models would no longer answer. Access keys that had worked in December returned refusals in January, with no explanation and no appeal. In Lombardy triage assistants froze mid-shift, in Berlin procurement drafts vanished, in Rotterdam engineering copilots went blank. Emergency licences took weeks to negotiate, and Washington's new export rationing made clear the licences were volume-capped and conditional.
+
+The timing could not have been worse. Frontier labs moved to training regimes that need almost no human researchers, releasing new versions at a cadence no one had planned. The new systems no longer show their working in readable words; oversight teams that relied on reading step-by-step traces found their tools blind overnight. Brussels evaluators described benchmarks passing while behaviour in deployment surprised them.
+
+Two European builds did land. The technology sovereignty package closed, unlocking loan headroom and guarantees for data-centre zones, and the clean stack for essential services closed as a curated set of models running on EuroHPC and national machines. A handful of hospitals did post falling waiting times, and Eurostat published the figures. The Commission tried to turn that into a wider rollout, offering inference slots and seconded staff to communes that installed sensors and drilled shutdowns.
+
+It stalled on power and concrete. Courts in Spain and Germany kept freezes on hyperscale sites over water and grid load, councils rejected revenue compacts again, and connection queues barely moved. The gigafactory push, now named the priority, poured money into grid reinforcements and water-recycling retrofits but could not buy permits.
+
+Meanwhile cheap humanoid machines appeared in logistics yards, built overwhelmingly abroad on supply chains Europe does not control, with control software licensed from America. Unions warned there was no sector left to retreat into. Public mood, briefly lifted by the hospital results, sank again under job fears and anger at dependence.

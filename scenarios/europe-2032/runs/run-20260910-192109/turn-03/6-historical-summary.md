@@ -1,0 +1,9 @@
+Audits had revealed deep intrusions into European transmission operators and other critical systems, with probes using frontier open-model tooling attributed to a well-resourced disputed actor.
+
+Brussels mandated audits, segmentation, credential checks and cross-border exercises. By H1 2027 the two breached operators finished reviews and roll-out began, but unified detection procurement stalled, municipalities resisted inspections, and exercises stayed on paper.
+
+In autumn 2027 the Commission declared the Critical Systems Shield complete: the two operators certified, common checklist extended, and first live cross-border drills held in October, which contained a simulated relay-swarm faster. After-action found detection still fragmented.
+
+Brussels imposed interim detection standards by implementing act with municipal co-funding and ENTSO-E live drills. Large TSOs adopted quickly; municipalities and distributors protested costs and legal base, two regions challenged entry powers, vendors delivered late with false positives. By Dec 2027 deployment was real at high-voltage, thin on distribution.
+
+AI factories idled with grid links held and Spain/Germany connections stuck in permitting linked to inspection dispute. U.S. lithography curbs split France demanding trade defence linkage vs export-dependent states; only a study agreed. Evaluation labs via JRC produced first signatures from open toolkits with little developer help, while offices expanded AI use with juniors as checkers, reducing urgency for infrastructure spend. Europe ended 2027 improved at transmission top, still exposed below.

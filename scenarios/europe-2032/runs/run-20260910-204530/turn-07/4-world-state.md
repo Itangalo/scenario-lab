@@ -1,0 +1,11 @@
+### The fix that worked, and the deal that broke
+Autumn brought a rare piece of good news from the labs. A control technique that made agent reasoning traceable before it acted — first demonstrated on deployed assistants, not demos — was picked up within weeks because developers wanted it. Hospitals in the containment pilot installed it into their logging and freeze-thresholds, and for the first time monitors could show a blocked payment with a reason attached. Auditors called it the first real improvement in oversight in two years.
+
+The relief did not travel far. In November a large member state signed its own compute-and-access arrangement directly with an American hyperscaler, with power guarantees and model priority that undercut the common bargaining line Brussels had held since the spring. The capital defended it as pragmatism for jobs and hospitals; in Brussels and in Washington it was read as a break. Joint talks on published allied-access terms stalled for a month, and the near-signed gigafactory host deal slipped again as the host region demanded the same bilateral terms.
+
+### Holding on with what exists
+With no money for new programmes, Health and Interior ministries pushed the isolation protocol site by site: frozen-record drills, separated backup machines for listed clinics and ministries, retraining slots paid from existing employer levies. The continuity reserve lists finally gave engineers someone to call when a scheduling agent looped.
+
+Two long builds formally closed. The first gigafactory tranche was declared complete — in practice one site with power and permits, the rest paper — and the continuity reserve was signed off. Neither restored domestic capacity, and the hyperscaler freeze on two expansions stayed in place.
+
+On evening news the two stories merged: machines slightly more legible, jobs still gone, and governments cutting separate deals. Opposition to new data-centre sites spread from suburbs to three regional councils, and insurers quietly kept widening exclusion clauses for AI-driven outages while papers debated emergency public reinsurance in vague, single-source leaks.

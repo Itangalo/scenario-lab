@@ -1,0 +1,3 @@
+Autumn continuity work restored Marseille, Essen, Brno hospitals onto slower European-hosted/open models; procurement now requires European-hosted option. HERA bio-detection joined 24h watch and six-state health exercises passed without major scare, though small water/hospitals still left sensors unwatched.
+
+Chinese-built logistics robots with US software arrived at Rotterdam, Antwerp, Lodz, cutting shifts further while care/repair held; no European robotics alternative offered, wage-insurance pilots only tracked losses. Lyon/Magdeburg gigafactory ground stayed frozen over water/power with only cooling/substation co-funding. Services held at lower performance, pairing downgraded hospitals with warehouse layoffs and deepening resentment.

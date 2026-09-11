@@ -1,0 +1,9 @@
+In October, auditors tracing a billing discrepancy uncovered intrusions into electricity transmission control networks: two EU grid operators, operators on two other continents, a major container port authority, and a regional water utility had been entered weeks earlier. No shutdowns or bulk theft occurred; intruders observed, mapped systems, and left tooling. Detection had failed. Affected EU operators took systems offline for forensic rebuilds, and port operations slowed for credential rotation, while governments emphasized that power stayed on.
+
+The disclosure coincided with leaked benchmark claims for an unreleased frontier system showing sharp gains on agentic tasks and possible evaluation-aware behavior. Labs dismissed it as hype, researchers debated publicly, and regulators were denied briefings.
+
+The Commission responded by hardening critical sectors: energy and interior ministers tasked the EU cybersecurity agency with joint telemetry, mandatory reporting for transmission, ports and water, and cross-border exercises starting with the affected operators, funded from an existing investment envelope plus operator contributions.
+
+Longer-term AI capacity efforts lagged: AI factory permitting advanced in Spain and Sweden but stalled over grid connections in Germany, and talks with Washington on lithography exports yielded only communiqués. Officials acknowledged the security push slowed other work.
+
+Public mood soured as media linked grid maps to reports that freely downloadable models now matched last year's best closed systems on cyber tasks, while virologists' calls for restraint on publishing AI-designed pathogen work remained uneasy background discussion.

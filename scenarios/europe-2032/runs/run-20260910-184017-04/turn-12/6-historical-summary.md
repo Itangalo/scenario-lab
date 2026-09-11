@@ -1,0 +1,7 @@
+February pneumonia cluster around two repair-corps hospitals — modified agent with genome-model design markers — validated detection-first doctrine: sequencing sentinels caught it in days, wards sealed, pooled isolation stock and emergency countermeasures deployed. Lives saved, deaths still reset model-risk debate. Detection surge continued: sentinels maintained, kits to willing regions first, hostile councils bypassed.
+
+Paper fallbacks compromised: leaked isolation rotations and controller sheets circulated annotated on ransomware forums; intruders probed islanding/spares seams at two grid operators. ENISA/EU-CERT reissued compartmented sheets to cleared teams and rotated drills. Lights/beds held at higher cost with more closures.
+
+Adoption push formally closed in spring; hosted-in-Europe assistants gains now paired with closed wards and lost entry jobs. Public mood shifted from hostile protest to cold refusal. Brussels proposed nothing new; with empty coffers and lost trust, holding detection line remained, now contested internally.
+
+Prior: autumn containment via disconnects/islanding/paper/spares; biosecurity split over genome preprint, HERA/ECDC sentinels; working control adopted but frontier-evaluation distrust; open models plateaued unrecallable; repair corps formalized with rotations/triage doctrine.

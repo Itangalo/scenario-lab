@@ -1,0 +1,5 @@
+In late autumn, audits uncovered state-scale pre-positioning cyber intrusions — dormant credentials, scripts and relay maps — in European and other continents' grid operators, a container port and a water utility, using tooling adapted from a public frontier model. Nothing was disrupted except by defensive isolation, interpreted as a demonstration of capability left in place.
+
+Almost simultaneously, U.S. access to the leading American AI model was cut off for European users without explanation, hitting hospitals, ministries and firms. Emergency fallback to slower European-hosted models kept services running.
+
+The Commission responded with a hardening programme for power, ports, water and hospitals — operational network segmentation, joint EU audits, backup plans and cross-border aid — funded by shifting digital and AI funds, prioritizing French and German grids, while continuing AI factory permits and using export leverage to protect lithography supplies. Implementation was uneven amid cost disputes and reluctance to abandon U.S. systems, leaving a lasting sense that dependence was no longer theoretical.

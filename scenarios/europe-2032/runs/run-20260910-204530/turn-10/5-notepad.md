@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t10: EU Essential Services Survival and Mutual Aid Surge −2, EU Lithography Leverage and Essential Compute Survival Deal −2, priority −1 waived (capital<20, no effect, no cost) = −4
+PROPOSAL BONUS: EU Lithography Leverage and Essential Compute Survival Deal (cat 8, small) +2 — taiwan_blockade and supply_chain_coercion fired this turn hitting compute access directly and this answers them as leverage bargain
+LEGITIMACY LENDS: capital 7, sentiment 6 -> none, capital higher (capped comparison, no lend)
+SOVEREIGNTY: 22 last turn, no capacity measure finishes, no cat4 in flight +0, supply_chain_coercion t10 −2, capability rose 3.0 −1 = 19

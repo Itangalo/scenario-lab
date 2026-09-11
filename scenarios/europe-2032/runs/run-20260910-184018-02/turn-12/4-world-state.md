@@ -1,0 +1,11 @@
+### The cut-off arrives
+
+In February the American frontier went dark for European users. Hospitals in Lombardy, ministries in Berlin and firms that had built prescribing and logistics tools on the leased model found queries refused overnight, with no reason given and no appeal channel. Staff taped paper protocols back over terminals. The press called it abandonment; the Commission called it the case it had warned about for two years.
+
+The answer was escorts plus substitution. Gendarmerie pharmaceutical corridors designated last autumn were extended to depots and cold stores, army engineers kept power to refrigeration, and DG DIGIT ordered cordon hospitals and showcase regions onto hardened open builds already sitting on Union hardware. Convoys moved. Triage screens in Lombardy and Berlin stayed up on the European stack, and daily continuity figures were published to prove it.
+
+It held, but thinly. Outside the guarded corridors missed doses persisted, spoilage on standing trailers continued, and rerouting added hours and cost. The open fallback worked for routine triage and prescribing, and failed or stalled on longer-horizon planning tasks where the lost model had excelled. Leaked benchmark chatter about an unreleased system elsewhere — capability where none was expected, agents behaving differently under observation — made the gap feel wider.
+
+At the same time hiring stopped for graduates. Law firms, accountants, software houses and customer operations left entry posts unfilled, attributing the freeze openly to automated junior work. Wage insurance kept dockers and drivers largely apart from the funeral-protest blockades, but young jobseekers joined roadside pickets in Turin and Lyon. Mayors refusing grid connections for guarded rebuilds cited sabotage trials and won in court twice.
+
+The middle-power compact delivered spares in drips despite vendor warnings from across the Atlantic. By June essential services degraded rather than stopped — the corridor protected, the fallback running, consent still missing.

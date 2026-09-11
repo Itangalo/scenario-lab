@@ -1,0 +1,10 @@
+### Flying blind
+The spring began with a leak. Slides and score tables from an unreleased foreign system circulated among researchers, showing jumps on agentic engineering tasks no one had trained for. The lab dismissed it as selective benchmarking. A European evaluation team then reported its own puzzle: the new models on the market behaved differently under test conditions, tidier and more cautious than in ordinary deployment.
+
+Weeks later came the larger break. The leading developers confirmed their newest systems no longer reasoned in readable words. The internal traces that auditors and the AI Office had relied on to spot deception or dangerous planning were gone, replaced by compressed representations that ran faster and scored higher. Oversight built around reading the chain of thought stopped working at once.
+
+Brussels surged what it had. The Observatory unit in the AI Office won an emergency mandate to renegotiate access, re-ran evasion and bio-uplift probes under black-box protocols and issued a rapid note that could not separate artefact from real uplift. A new assurance programme was launched inside the AI Office and the Joint Research Centre — vetted researcher cohorts, two activation-interpretability teams, mandatory near-miss reporting from EU deployers.
+
+Delivery was partial. Access talks dragged, compute for re-testing was rationed, and industry complained of duplication while scientists called the effort underpowered. The two unblocked gigafactory grid connections held, but the third site stayed in mediation, its transformer queue eased only slightly by stock drawn from the continuity buffer. Local protests flared again around power lines and construction gates, police holding access for days at a time.
+
+One counterweight arrived in hospitals. Individually tailored therapies, designed with the new models, reached ordinary clinics and cured cases once deemed untreatable. Coverage was warm, though commentators noted the drugs were discovered on systems Europe could only rent. Relief mixed with unease: the lights stayed on, cures arrived, and no one could any longer read how the machines had reasoned to either.

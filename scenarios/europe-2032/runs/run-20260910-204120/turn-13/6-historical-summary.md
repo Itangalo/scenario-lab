@@ -1,0 +1,7 @@
+Taiwan Strait war and plague aftermath extended through late 2032: shipping/spares dear, hospitals short-staffed, protests faded to quiet anger.
+
+Continuity Shield closed largely successful: joint-telemetry grid, joint antiviral/reagent buying, and military medics in power/water/telecom kept hospitals and grids running through absenteeism and intrusions; backup halls began returning hosted IT as plague ebbed.
+
+AI interpretability advance made deployed clinical/grid agents more predictable: evaluation authority with ENISA/JRC routinized predict-before-observe checks in large hospitals and transmission control, froze non-certified foreign-agent updates where accessible; erratic behaviour fell, though municipal self-updating bundles and small clinics remained patchy.
+
+Private AI capital flight persisted: valuations collapsed, leased capacity gone, hyperscaler modelling-compute requisition stalled, blocking sovereign build; no recovery in work — firms stopped graduate hiring, EPSCO-agreed wage-subsidised transition posts/retraining moved slowly with only hundreds placed. EU relied on external biosurveillance pact and cyber-telemetry sharing; rumours of plague toolchain forensics and biocompute blockades unconfirmed.

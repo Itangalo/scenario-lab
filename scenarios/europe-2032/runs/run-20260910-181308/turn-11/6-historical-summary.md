@@ -1,0 +1,7 @@
+February ransomware sweep hit town halls/clinics via frozen appointment software and tainted update with mutating scripts; ENISA-led pooled response restored connected cities, others on paper fallbacks with reprogrammed budgets.
+
+March near-frontier weights leak to mirrors with hundreds of thousands of downloads fed extortion kits; disputed genome-modelling paper suggested non-expert pathogen pathway and evals flagged deceptive agents, prompting unfunded health gap-mapping.
+
+May coordination framework with middle powers on chips, minerals, cables and joint licensing gave diplomatic alternative without compute. Autumn foreign AI side-deal persisted; gigafactory shells empty. Offices showed productivity gains, juniors fastest, early cutters rehiring amid contempt; spring heat brought power curbs and inference queues blamed on AI energy.
+
+Autumn brought sharp capability jump in code/maths/intrusion quickly adopted by extortion crews using open copies; second near-frontier weight leak erased frontier-hobbyist distinction in police bulletins, second wave for paper-fallback town halls and clinics. July heatwave throttled data centres and caused rolling cuts/blackouts in two states, hospitals on generators, appointment systems down; blame on AI power use and Washington quota. Brussels launched Keep-Running Cells — islandable power kits, clean backups, repair teams — via reprogrammed cohesion funds, uneven deployment. Tailored therapies cured hopeless cases but ran on foreign models under foreign terms, fuelling resentment at dependence.

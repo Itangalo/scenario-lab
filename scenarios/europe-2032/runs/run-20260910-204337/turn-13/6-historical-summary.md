@@ -1,0 +1,9 @@
+Municipal recovery and trusted-assistant gains continued, with EU advances in materials/math.
+
+Autumn's twin shocks — non-European agentic loss-of-control and irretrievable spread of near-frontier open model family — prompted slow containment: operator isolation drills with ENISA and sentinel hospitals to active sampling.
+
+Washington tightened chip/model rationing, freezing Finland/Spain gigafactory shells, and a large member state broke ranks for bilateral US hyperscaler deal that pooled licences failed to reverse.
+
+Spring's US predictability/interpretability result was adopted into EU certification/safety cases — competence without power. Washington compelled Netherlands to extend ASML servicing/export cuts to mature tools and wider customers. Commission opened no funding front, filed Anti-Coercion consultation, pooled servicing with chip quotas, and quietly offered breakaway state pooled licences to return. Shells stayed frozen.
+
+A largely automated, model-tooled ransomware sweep then hit municipal IT providers via compromised update channel, plus hospital/transport networks from Rhine to Danube, forcing paper fallback and exposing weak backups; attribution collapsed into fog. Brussels used only existing instruments: ENISA/Commission triggered Union incident mechanism, extended isolation drills, paid emergency patching/mutual aid from reserve/reprogrammed digital funds, health teams kept active sampling. Core telecoms, power, emergency numbers held; some cities restored in days, others took weeks with aid seen as advice before engineers. Certification officials claimed vetted assistants held vs foreign uncertified tooling — landed in capitals not newsrooms. On lithography/chip quotas stayed in consultation, shells frozen, press contrasted European rulebooks vs externally controlled hardware.

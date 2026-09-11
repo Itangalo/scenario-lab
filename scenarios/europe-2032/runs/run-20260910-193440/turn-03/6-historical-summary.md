@@ -1,0 +1,7 @@
+Autumn 2027 brought a claimed success and two shocks. The power/ports/water hardening drive formally completed in December: large transmission operators reported faster isolation and new detection stacks, though small utilities lagged from staff shortages and tuning remained incomplete.
+
+The hospital forgery crisis deepened, with forensics confirming fabricated trials and insurance claims built with open models, fraud cases in three states, and warnings poisoned imaging could still pass checks.
+
+A genome modelling paper then claimed model assistance could let a non-expert workflow design a viable human-infecting organism; methodologists called it alarmist and reckless, but health officials treated it as a step-change after the hospital fakes.
+
+The Commission responded on two tracks: winter priority to scale up swarm-defence with top-up co-financing for small operators accepting mutual-aid teams and replay exercises for large grid firms to fix legacy clashes — rollout accelerated but uneven with hunters stretched; and a clinical-bio shield with standing hospital audits, pilot DNA-synthesis customer screening, and sequencing hubs tied to the disease control agency, framed by public-sector AI pilots cutting waiting lists. Gigafactories and sovereignty package remained paper-only site lists, contrasted with working sensors.

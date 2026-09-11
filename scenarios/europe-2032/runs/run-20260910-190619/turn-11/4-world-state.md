@@ -1,0 +1,11 @@
+### Cut off
+In August, access to the leading American model went dark for European users with barely a notice. Hospitals in three countries that had built triage, imaging summaries and procurement workflows on top of it found queries refused. Ministries lost drafting and translation pipelines overnight. The provider cited capacity and compliance review; no appeal channel answered.
+
+The timing could not have been worse. Weeks earlier a sharp advance in code and intrusion tooling had circulated among security teams, and automated probing of grid operators and clinics spiked. At the same time venture funding for AI retrenched violently. Two expansion deals for European-hosted capacity were cancelled, valuations halved, and a planned accelerator tranche for the reserved factory sites evaporated.
+
+### Fallback, delayed and partial
+Brussels tried to answer with what it had, but with political capital exhausted it could not coordinate at scale. The loss-of-control drill completed in autumn fed into emergency playbooks on paper, and small patch teams attempted to re-point denied workflows onto locally hosted open systems on national machines and allied patch nodes. The EU Service Continuity Fallback remains in flight and behind schedule, with no new funding or staff to accelerate it.
+
+Where a re-hosting was attempted, results were thin. The open substitutes were weaker, slower and unfamiliar; clinicians complained of false flags and extra hours, and many wards and payment queues were left waiting. The defector capital froze its undercut in exchange for first fallback slots, but kept its separate hosting contract. Eastern mayors protested that the scarce engineers still favoured the west. Concrete for the two factory sites remained unpoured, courts and blockades unmoved, and most denied services stayed denied through December.
+
+By December services held only in isolated patched sites, and the Union looked exposed. Press coverage dwelt on dependency: a continent that had been warned, had drilled, and still had to borrow and improvise when the switch was thrown. Safety work stalled under the strain with no ground gained or lost. Anger at providers mixed with anger at Brussels, and talk of building at home grew louder even as the money to do it shrank.

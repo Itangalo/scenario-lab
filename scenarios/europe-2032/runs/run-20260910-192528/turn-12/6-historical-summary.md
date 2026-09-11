@@ -1,0 +1,5 @@
+US cutoff of leading models for EU hospitals/ministries/firms forced fallback to phones/paper, older versions, pooled EU capacity. US-China weights-security understanding remained thin; Brussels observer bid ungranted. Offense outpaced defense despite AI-built patches.
+
+February ransomware sweep via poisoned update hit clinics, ports, grids: drilled towns degraded to paper triage/islanded grids, undrilled lost services for days. Uneven recovery politicized drilled survival figures, driving demands for crews, funds, universal offline standard despite fiscal warnings.
+
+Defensive shift: EU Cybersecurity Reserve pushed automated patching and swarm-coordination detectors to drilled hospitals/offices/grids/ports tied to isolation proof and continuity funding; reinfection fell where telemetry/sensors accepted, lingered where refused. Brussels refused to reopen US model internals fight or promise universal offline care; clinical workloads slowly rerouted to degraded EU inference. Finance ministers backstopped uninsurable costs amid reimbursement/procurement frictions. By June services recovering but not secure; anger over dependence persisted.

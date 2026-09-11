@@ -1,0 +1,7 @@
+Taiwan Strait quarantine escalated to open US-China war in March: fabs, subsea cables and satellite ground stations targeted, Mediterranean cuts and Atlantic debris hit Europe, data-centres put on civil-protection notice; Brussels sidelined, focused on spares, fuel and grid islanding.
+
+Dutch licensing/EU leverage and middle-power cover failed to secure chips; machine-speed releases left EU dependent on cheap Asian compute and foreign open agent stack. InvestAI halls remained unequipped amid protests and labour anger.
+
+Commercial humanoids scaled by China/US left European manufacturers as buyers; cities signed cut-price Asian power-and-software bundles outside joint procurement with self-updating foreign agents; a second large member state deepened its separate hyperscaler deal, fuelling smaller-state resentment.
+
+Cyber shield surge and joint telemetry/sample-sharing plus machine-speed patching held: completed incident-response plumbing let hospitals weather spring intrusions. New Wartime Critical Systems Continuity Shield to ring-fence grid software and repurpose empty halls announced but design-only, no protection added; defence tooling for energy/telecoms limited by parts shortages. AI-assisted materials breakthrough abroad changed little.

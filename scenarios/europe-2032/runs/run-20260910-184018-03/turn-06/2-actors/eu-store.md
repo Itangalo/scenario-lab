@@ -1,0 +1,23 @@
+# Store: The European Union (turn 6)
+
+## measures
+
+| id | name | category | size | started_turn | finish_turn | applies_to | targeted_effect | cost_per_turn | status |
+|---|---|---|---|---|---|---|---|---|---|
+| M1 | InvestAI Gigafactories | 4 | large | 0 | 7 | own jurisdiction | eu_ai_sovereignty up, via €200bn for four to five sites | 3 | running |
+| M2 | Tech sovereignty package | 4 | large | 0 | 6 | own jurisdiction | eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones | 3 | finished |
+| M3 | EU Grid and Critical Services Cyber Hardening Sprint | 6 | small | 1 | 3 | own jurisdiction | resilience up moderately, ai_safety up slightly via deployed safeguards | 2 | finished |
+| M4 | EU Continuity and Reciprocity Instrument | 8 | large | 2 | 4 | own jurisdiction plus US frontier provider and coalition partners | eu_ai_sovereignty up moderately, eu_political_capital stabilise then up if continuity holds, resilience up slightly | 3 | finished |
+| M5 | EU Distributed-Capability Resilience Sprint | 6 | small | 3 | 5 | own jurisdiction | resilience up moderately, ai_safety up slightly via deployed safeguards | 2 | finished |
+| M6 | EU Degrade-Gracefully Continuity Programme | 6 | small | 6 | 8 | own jurisdiction | resilience up moderately, ai_safety up slightly via deployed safeguards | 2 | running |
+
+## standing
+
+| id | posture |
+|---|---|
+| S1 | pending |
+
+## Changes this turn
+
+- **applied** `M6` — {"op": "add", "table": "measures", "fields": {"name": "EU Degrade-Gracefully Continuity Programme", "category": 6, "size": "small", "finish_turn": 8, "applies_to": "own jurisdiction", "targeted_effect": "resilience up moderately, ai_safety up slightly via deployed safeguards"}, "grounds": "cutoff continuity must hold while gigafactories stalled"}
+  - Grounds: cutoff continuity must hold while gigafactories stalled

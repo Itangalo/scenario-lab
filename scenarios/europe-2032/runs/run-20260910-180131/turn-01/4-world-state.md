@@ -1,0 +1,10 @@
+### Grids, offices, labs
+Autumn brought an uncomfortable audit finding. Transmission operators in two EU member states were told they had hosted intruders for weeks, alongside operators on two other continents, a major container port and a water utility. Nothing was switched off. Nothing was even threatened overtly. That was the point that unsettled ministers: existing monitoring had missed persistent access entirely, and discovery was accidental.
+
+Brussels answered with what it could move fastest. The Commission, backed by energy and transport ministers, ordered binding detection baselines and joint continuity exercises for transmission grids and large ports, with money reprogrammed from existing investment and connectivity envelopes. Grid companies complained about unfunded mandates; finance ministries complained about repurposing. Exercises were pencilled for spring, auditors for winter.
+
+The deeper capacity race barely moved. Gigafactory site selection and the broader technology package ground through permits, grid-connection queues and municipal opposition over power prices. A few councils paused new hyperscale permits pending price reviews — rumour more than policy, but enough to slow timetables.
+
+Two softer shifts mattered more for mood. Offices across Europe reported what statistics later confirmed: AI assistants lifted output in law, accountancy, administration and journalism, especially for juniors, without destroying jobs. Hiring freezes eased. At the same time, laboratories — including European evaluation teams — quickly adopted new interpretability tooling that made some deployed-system behaviour predictable in advance rather than explained afterwards. Assurance improved without anyone passing a law.
+
+The result was ambivalent. Lights stayed on, jobs stayed, tools got slightly less opaque. But the intrusion showed how far detection lagged capability, and the productivity plateau disappointed those who had borrowed against endless acceleration.

@@ -1,0 +1,10 @@
+### The signal and the site
+Autumn 2028 brought two different kinds of news to Brussels. In closed biosecurity channels, a genome model study claimed a non-expert with assistance could reach a viable human-infecting design. Methodologists quarrelled, editors hesitated, but health officials read it as categorically new. Publicly, the fight was concrete and muddy: around the salvaged hyperscale site, the municipal moratorium held, and a court kept power and water injunctions in place while mediation ran. Engineers guarded empty pads; deliveries slipped a quarter.
+
+The Union closed its two-year commitment period straddling both. The screening refits ordered two years earlier finished — hospital and lab upgrades signed off — while a new surge started through HERA and the disease control centre: wastewater and clinical sequencing in shield-covered regions, triage exercises in refit hospitals, joint procurement of countermeasure inputs.
+
+Washington added a third element. In November, Americans elected a president promising coalition over fortress: structured allied access on published terms, joint evaluation and incident reporting, relaxed tiering for partners in exchange for alignment on export controls and standards. Relief in Brussels was immediate; trade officials kept the volume-licence channel alive without conceding alignment before inauguration.
+
+Nothing unfroze in-turn. The Competitiveness Council benefit template — water-efficiency, community payments, phased grid — went into court-supervised mediation with the host region, holding unfrozen sites and grid reservations but lifting nothing. The transatlantic side-letter again produced no fast lane. The Gigafactories' finishing date was again left unchanged despite priority status, a fact host-region papers noted.
+
+Smaller cushions held. The harm-reporting desk expanded, waiting times fell where used, and segmented grid operators rode through autumn probes. That, plus the finished refits, kept the contested biology paper inside expert circles rather than on front pages.

@@ -1,0 +1,11 @@
+### A win you can point to
+For the first time in two years, Brussels had something to show. In two health regions and a handful of cities, waiting lists for routine diagnostics fell after triage assistants were put on EU-hosted systems, permit decisions that took months came back in days, and a tutoring pilot showed measurable gains. Ministers claimed it as a European decision, not an American product, and for once the press repeated the claim. Finance ministers stopped asking what had finished.
+
+The evaluation unit and the ring-fenced hosting zone finished in the same months. The evaluation unit gave the Commission its first in-house review capacity, though limited to systems deployed inside the Union. The hosting zone gave volunteer regions somewhere EU-controlled to run the scale-up. Both were small, late, and noticed mainly by operators.
+
+### Washington votes for a coalition
+In November the United States elected a president who promised allies structured access to frontier capability on published terms, with joint evaluation and incident reporting. Relief in Brussels was immediate. The offer was not yet operational — no terms, no office, no machines — but the rhetoric alone eased the pressure to fund domestic capacity, which worried the sovereignty team more than it reassured them.
+
+The triage desk kept working. Large grid operators filed reports and received playbooks; municipal utilities still struggled with staffing, and lawyers still argued over who owned incident data from the cloud provider. Seconded researchers cleared cases slowly. In one audit, seen by few, engineers noted that some agent updates appeared to arrive through vendor remote channels outside the freeze, without triggering a report. It remained a single-source remark, unconfirmed.
+
+Gigafactory sites stayed in permitting. Procurement guarantees and legal anchoring continued, but no concrete was poured. Capability advanced again, and the gap between what systems could do and what was understood about them widened further.

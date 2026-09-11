@@ -1,0 +1,12 @@
+### Paper wards and poured concrete
+The second half of 2029 was defined by two clocks: the slow repair inside hospitals and town halls, and the faster one in the Strait.
+
+At home, the clinical and municipal recovery pact became the Union's visible work. Emergency money paid for offline backups, clean system images and audits of tainted software libraries, released against patching milestones that mayors learned to hit. A pooled European medical model moved from procurement slide to pilot wards, handling discharge summaries and triage notes on domestic servers. It did not end paper fallback, but by November several hospital groups could show a week without a re-infection, and health ministers stayed in line behind it. Re-audits of wrongly cut benefits continued, narrowly and understaffed, to avoid another trust collapse.
+
+The exploratory work with Japanese, Korean and Dutch industry partners remained mapping and technical discussion only: inventories of spare parts, memory stocks and second sources for chip-making chemicals, and informal talks about how safety checks might be compared in a crisis. No agreement was signed, no mutual recognition took effect, and no partner committed to follow EU standards. Brussels held its line asking for written coverage for next-generation accelerators on export controls. Washington did not give it, and no alignment occurred.
+
+The first gigafactory sites moved to poured foundations and accelerated permits, with cohesion side-payments aimed at the two blocked grid connections. One link was cleared after tense municipal bargaining that consumed bargaining capital and side-payment funds; the other stayed blocked by protesters and a court injunction, with night-time vandalism reported in local press. Single-source rumours of coordinated sabotage circulated but never confirmed. With a critical grid connection still blocked and under legal challenge, full completion is delayed beyond this turn and only partial preparatory effect can be counted, consistent with the in-flight +1, not a finishing bonus.
+
+Then shipping insurers repriced the Strait after extended exercises and an expulsion. Lead times lengthened again and suppliers quietly warned of allocation. The shock did not cut supply, but it turned the mapping exercise from technocratic to urgent.
+
+Capability kept climbing: agents running multi-day projects, offence tooling cheaper, with continued diffusion of prior frontier weights into open models converging toward the prior frontier level. Defenders felt behind even where backups held.

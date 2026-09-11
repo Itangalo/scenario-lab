@@ -1,0 +1,5 @@
+Taiwan blockade hardened in August, halting advanced chip and accelerator deliveries to Europe indefinitely and diverting gigafactory funds to insurance and stockpile pre-buying; sites kept permits but no new construction broke ground.
+
+Autumn saw second open release of frontier-class weights outside Europe, rapidly copied widely; tailored phishing, voice-clone helpdesk fraud and version-aware municipal attacks became standard. Joint cyber centre limited to hardening guidance; JRC evaluation cell logged unverified reports of strange emergent behavior in unreleased system. Municipalities with completed offline-backup drills restored faster, latecomers hit again; insurers repriced municipal cyber risk, reinforcing EU conditional funding.
+
+In November US backlash candidate won on data-centre moratoriums, AI bans and sector taxes, leaving Brussels partner less capable and predictable. Brussels responded with leverage pact offering lithography maintenance/spares for prioritized tranches and shared stockpiles with Japanese, Korean and Taiwan-facing suppliers, shifting to survival footing on upstream hold and hardening against open weights.

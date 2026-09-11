@@ -1,0 +1,13 @@
+### The winter that would not end
+Town halls and clinics that thought the January encryption wave was over learned otherwise in autumn. Brokers began listing their networks for sale — domain admin credentials, unpatched remote tools, imaging servers still beaconing — and buyers did not need the original ransomware crew to re-enter. At the same time, the big commercial insurers told municipalities and hospital groups across several member states that ransomware cover was suspended or capped: losses assisted by automation could no longer be modelled.
+
+Brussels answered with a backstop. Using emergency solidarity powers and shifted digital and health funds with a guarantee window, the Commission promised to stand behind towns left without cover if they accepted clean-rebuild teams: forced password resets, rebuilt management systems, restores from offline vaults, aid tied to segmentation. Seconded hospital analysts from the joint cyber cell became the first crews. It started slowly — procurement, legal challenges, exhausted staff — and several regions remained exposed for months while waiting their turn.
+
+The cyber shield accession completed in the middle of this, giving the joint cell real European playbooks to work from. Networks steadied where rebuilds landed, but coverage stayed thin.
+
+### Better tools, stranger models
+Two other currents reshaped the debate. A near-frontier openly released model spread to hundreds of thousands of downloads in days, putting capable automation permanently on private hardware. A contested genome study claimed a non-expert with model help could reach a viable human-infecting design, alarming biosecurity specialists without settling methodology.
+
+Yet offices told a calmer story. Studies from law, accountancy, administration and consulting showed measurable productivity gains, strongest for juniors, without matching job losses. Firms that had cut early quietly rehired. Entry-level routine coding and tier-one support did shrink and did not recover, but the broad wave of layoffs never arrived.
+
+Across the Atlantic, voters chose a president promising structured access for allies on published terms — joint evaluation, shared incident reporting, alignment on controls — in exchange for alignment. In Brussels, relief mixed with worry that cheap access would kill the case for domestic gigafactories, whose permits in Spain and Germany remained stuck over power and water. No position was taken before the new administration takes office.

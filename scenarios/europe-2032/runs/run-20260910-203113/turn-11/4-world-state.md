@@ -1,0 +1,10 @@
+### Waiting lists, layoffs and loose weights
+The autumn brought no new halls. American quota letters kept European accelerator orders in a queue, and procurement staff learned to bargain for audit clauses they could not satisfy. Pilot sites ran hot on rationed capacity, with essential services pinned to protected loads and dual-site detection databases kept live. The continuity reserve that finished in December helped: hospitals and grid operators degraded rather than stopped during the ransomware aftershocks.
+
+The Commission's signed assistants stayed visible. Weekly charts showed shorter triage and permit queues in pilot cities, and mayors kept cutting ribbons for tutoring rooms. Auditors got open signature logs, fraud cases were read out rather than buried. It slowed the erosion but did not reverse it. Evening news still led with locked clinics after coordinated fraud lockouts and with parents praising tutors in one segment and cursing layoffs in the next.
+
+The layoffs accelerated. Commercial robots — Chinese-built frames running American control software — moved from trials to full shifts in picking, sorting and palletising. Logistics firms filed registrations as required, then cut warehouse crews faster than retraining could absorb. Wage insurance paid, contested levies limped on as co-funding, and displaced workers were steered toward care, repair and municipal posts left thin by drills and load-shedding. Courses filled slowly; small towns saw little relief.
+
+Then a near-frontier openly released model spread to hundreds of thousands of downloads in days. Whatever it could do was now on private hardware for good, beyond recall. Inspection teams could probe European deployments with cases from last year's release, but not what changed weekly in foreign labs.
+
+Farther east, extended exercises around the strait lifted shipping insurance and forced a diplomatic expulsion. Brussels noticed, priced freight, and said little. With two programmes still running and the treasury thin, no finishing date moved — neglect the ministries felt but did not act on.

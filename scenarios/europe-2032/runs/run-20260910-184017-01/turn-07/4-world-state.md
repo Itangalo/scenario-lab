@@ -1,0 +1,11 @@
+### Concrete, paper, and code
+The gigafactory programme formally closed this autumn with sites designated, grid offers on paper and procurement frameworks signed. No concrete was poured. The two cleared locations remained fenced and litigated, with substation upgrades stuck in national review after months of blockades and counter-suits. Private co-investors used the delay to press for cheaper hosting terms, and one quietly shifted staff to continuity-hosting contracts instead.
+
+In the cities, the restoration surge became the Union's visible face. Pooled integrator teams shuttled between municipal portals, hospital admin networks and the two hit port platforms, restoring backups onto supercomputing centres and vetted clouds where staff let them in. Where cooperation held, queues shortened and simplified permit portals stayed up. Where municipal crews stayed out, handwritten slips and phone lines persisted, and television kept finding them.
+
+### A release and a paper
+Two shocks reframed that grind. A new openly downloadable model family arrived within months of the best closed systems, downloaded hundreds of thousands of times in days. University labs celebrated; security officials noted the timing, with hospitals still on fallback systems.
+
+Almost simultaneously, a contested study claimed a genome model had helped produce a viable human-infecting design, or that a non-expert could get there with help. Methodologists quarrelled, editors were accused of both hype and of printing a recipe, and health agencies issued careful statements. Wastewater sampling pilots and emergency-department backup playbooks, bolted onto the existing surge teams, started in a handful of cities — thin, late, but present.
+
+Ordinary offices provided the counterpoint. Year-end surveys showed solid productivity gains in law, accountancy, administration and consulting, strongest among juniors, with no matching employment drop. Commentators declared the transition over: useful tools, absorbed, not revolution. For mayors facing queues, that felt distant. For finance ministers, it helped hold the line.

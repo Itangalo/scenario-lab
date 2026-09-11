@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t4: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Supply-Chain Continuity Coalition −2, EU Bio-Cyber Containment and Hardening Surge −3, EU Essential Services Continuity Stack −2, priority −1 = −13 + 1 more for the priority = −14
+PROPOSAL BONUS: EU Essential Services Continuity Stack (cat 4, small) +3 — eu_frontier_access_denied plus member-state side-deal landed this turn and this answers it directly
+LEGITIMACY LENDS: capital 32, sentiment 26 -> none, capital higher
+SOVEREIGNTY: 22 last turn, no capacity event, no finish, Gigafactories in flight +0, eu_frontier_access_denied t4 −2 (largest of two capacity events, member_state_defection also qualifies), capability rose 1.5 −0 = 20

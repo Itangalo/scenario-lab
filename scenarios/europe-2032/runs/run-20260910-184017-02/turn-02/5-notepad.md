@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t2: M1 InvestAI Gigafactories −3, M2 Tech sovereignty package −3, M3 EU Critical Shield and Bio-Sentinel −3, M4 EU Verification Bridge to the US-China Accord −2, priority −1 = −12
+PROPOSAL BONUS: EU Verification Bridge (cat 8, small) +3 — us_china_agreement landed this turn and this answers it directly, plus cyber_defence_breakthrough as in-kind leverage
+LEGITIMACY LENDS: capital 31, sentiment 43 -> +1 capped by sentiment (applied after other terms, with +2 dampened-external gain included)
+SOVEREIGNTY: 21 last turn, no capacity event, no finish this turn, in-flight partial +0, capability rose 1.5 −0 = 21

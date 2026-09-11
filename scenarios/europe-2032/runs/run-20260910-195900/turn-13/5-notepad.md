@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: M13 EU Wartime Neutrality Protection and Medical Continuity Shield −2, M14 EU Joint Bio-Cyber Threat Response Accession −2 = −4 (capital below 20, priority has no effect and no cost)
+PROPOSAL BONUS: EU Joint Bio-Cyber Threat Response Accession (cat 8, small) +3 — loss-of-control agentic action, bio-design findings and neutral infrastructure strikes in last three turns and this answers them directly
+LEGITIMACY LENDS: capital 14, sentiment 15 -> +1
+SOVEREIGNTY: 8 last turn, no category 4 finish, no category 4 in flight, emergent_neutral_infrastructure_strike t13 −2, capability rose 1.5 −1 = 5

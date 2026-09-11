@@ -1,0 +1,5 @@
+Winter brought a sharp closed-model leap in code synthesis and automated intrusion, quickly visible in self-rewriting phishing and tireless probing agents; open weights only inched forward, staying well behind.
+
+A matching defensive advance — automated patching linked to discovery plus swarm-aware detection — succeeded in trials in electricity/ports, but fielding lagged: Commission pushed it to shared feed, yet French-German-Polish teams, exhausted by autumn's four-day containment and port response, deferred installs and kept cross-border drills tabletop.
+
+Hardening continued with triage: segmentation enforced where permits/budgets allowed, other power/water/port sites delayed amid municipal and operator backlash over outages and passed-down costs; computing-factory groundworks in three countries stayed frozen over power/water. EU held screening-without-retaliation on US chips under tighter declarations/reviews. By June patching improved where thin teams could reach, but public trust stayed flat amid agent fears.

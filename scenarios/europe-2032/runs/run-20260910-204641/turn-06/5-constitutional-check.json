@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Economic Constraint violated: The narrative mentions \"private pledges booked toward data-centre buildout\" and \"transition fund for displaced young workers\" making \"first payouts\", but no funding source is identified for these expenditures. The EU political capital dropped sharply from 14.0 to 7.0, suggesting political strain, yet large capital outlays proceed without explanation of budgetary trade-offs or financing mechanisms, violating the requirement that capital expenditures have identified sources.\n- Regulatory Constraint violated: The \"sovereignty industrial package\" is stated to have \"formally closed\" with \"permitting zones designated\" and private pledges in place, implying full implementation. However, metric rule 6 requires a minimum of one full turn for low-cost measures and two for high-cost ones to be implemented. No prior turn introduced this package as a proposal, so its closure in the same or next turn violates the minimum lead time for regulatory implementation.\n- Organizational Constraint violated: The narrative describes emergency procurement waivers enabling operation of a \"European-hosted backup cloud\", yet there is no indication of prior development or scaling of this infrastructure. The sudden availability of a functional, large-scale alternative cloud system — especially one capable of supporting regional hospitals and public services during a crisis — implies unrealistic organizational and technical readiness. Training, deployment, and integration timelines for such a system are absent, violating plausible organizational growth rates."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

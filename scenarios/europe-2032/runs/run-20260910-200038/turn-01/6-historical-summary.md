@@ -1,0 +1,5 @@
+Autumn audit revealed widespread intrusions into transmission operators — including two European grids — plus a container port and water utility, with breaker controls mapped and credentials taken but nothing switched off; brief blackouts resulted from operators isolating systems. Tooling was traced to a freely available leading-class model adapted for intrusion at state-backed scale, with no agreed culprit.
+
+Brussels responded under emergency cyber rules: mandatory proof of network segmentation and credential rotation for grids, ports and water firms, EU-funded sensors and joint exercises, funding shifted from connectivity/digital programmes, and grid queues reprioritised for backup power over new compute load.
+
+Implementation was uneven: large operators complied, municipal utilities and contractors struggled with cost, staff and clearances, delaying sensor rollout; industry warned of stalled investment while mayors revived disputes over power prices and data-centre water use. Gigafactory and sovereignty work continued with stretched permitting. By December hardening had begun but public mood remained anxious over failed segmentation assumptions.

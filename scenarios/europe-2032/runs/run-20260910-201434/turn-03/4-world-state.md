@@ -1,0 +1,8 @@
+### The autumn that worked
+The second half of 2027 gave Brussels something rare: a good story it could own. Health ministries in five follower states adopted the triage and permitting kits copied from the two pioneers, with procurement clauses requiring certification by the new joint evaluation cell. Waiting times for permits and specialist referrals fell visibly in pilot regions, and mayors credited European templates rather than an American vendor. Local press, for once, ran benefit pieces alongside cyber warnings.
+
+The cyber shield held, but unevenly. The autumn exercise tested parallel probing across grids, ports and water, funded by reprogrammed connection funds with liability cover and queue preference keeping large transmission operators cooperative. Segmentation and credential rotation closed at the top tier. At municipal utilities and the previously hit port and water sites, auditors again found the same gaps: too few staff, spares ordered but not delivered, signatures deployed but not tuned.
+
+Frontier models advanced through the autumn, and open releases crept closer behind. Labs absorbed the spring interpretability technique into routine testing, but nothing landed on shipped systems that narrowed the assurance gap. Gigafactory permitting moved administratively while political attention stayed on grids and clinics, deepening reliance on foreign compute in practice.
+
+By December, the Commission had spent heavily in attention and favours to keep five programmes running at once. The deployment scale-up bought goodwill, but the winter risk it was meant to insure against remained: defenders privately warned coverage would not survive a determined simultaneous probe.

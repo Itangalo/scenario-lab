@@ -1,0 +1,10 @@
+### Grids hold, factories wobble
+The spring was supposed to be about consolidation. With no new programme launched, Brussels pushed the Critical Systems Shield over the line: amended detection profiles from reassigned ENISA staff, integration paid for out of the reprogrammed Digital Europe envelope, and the spring black-start drills used as acceptance tests.
+
+It worked where it was applied. Two more transmission operators and a cluster of municipal utilities passed with the new behaviour-based patching. The Shield was declared operational in June, and the Commission claimed essential services could now degrade rather than stop. The claim was partly true — coverage was wider, response was exercised — but the failed port from autumn needed months of manual recertification for its legacy controls, co-funded and grudging, and smaller eastern grids still ran on stopgap hosting deals whose certification remained preliminary notes from the thin audit cell.
+
+Then the industrial shock cut across it. Commercial humanoid robots arrived at scale from abroad, first in logistics and warehousing, then in manufacturing pilots. Dexterity improved with startling speed, and defence ministries openly discussed armed variants. For Europe it was a double exposure: the hardware and its supply chain concentrated in China, the control models American.
+
+The Commission chose to monitor rather than fund a response, telling capitals that scarce capital had to stay with the gigafactory site-preparation in Paris, Berlin, Warsaw and The Hague and faster grid connections. Other capitals heard that resilience spending was the precondition for any future robotics bid and did not believe it. Factory unions and Mittelstand employers warned of occupations disappearing with no interval to retrain, and editorial pages called it dependence made physical.
+
+By June defences were harder, sovereignty was thinner, and the public noticed both. Relief at lights staying on mixed with anxiety about who would soon own the shop floor.

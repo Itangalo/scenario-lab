@@ -1,0 +1,11 @@
+### Containment weeks
+The spring began with sirens, not summits. A modified pathogen, assembled with extensive model assistance abroad and released through a laboratory accident compounded by deliberate spread, reached Europe in February. Cases clustered near two airport cities. Hospitals triaged, HERA coordinated sequencing and countermeasures, and Brussels ran its loss-of-control playbooks around the clock. Containment took weeks. The dead were counted in the hundreds, the exposed in the thousands.
+
+Almost in parallel, defenders got a real win. New tooling that patches at machine speed and flags swarms of agents by behaviour rather than signature was pushed through mutual-aid channels to grid operators, ports and municipalities. Lateral movement that had run for days in October was stopped in hours in March. Power stayed degraded, not dark.
+
+### Narrow cuts, broad fear
+By April the labour data hardened. Entry-level hiring in routine coding, standardised analysis and tier-one support did not bounce back. Works councils confirmed the losses were real but narrow — checkable work, automated first. The wider wave did not arrive. It did not matter politically. With fraud still rampant, water disputes over data-centre sites unresolved, and American licensing queues lengthening, the public read the bio weeks and the job cuts as one story about control lost.
+
+The Council held its triage line. Pooled stocks and joint buying stayed with grid, ports, hospitals and the detection cell. Maintenance money kept permits warm. No new fab was promised, no new law was opened. Retraining for the hit cohorts was routed through existing cohesion funds.
+
+It absorbed, barely. Replacement cyber kits ran short again, municipalities complained they received software without staff, and Washington's new tiered-access regime made every allocation meeting a reminder that the silicon was someone else's. The InvestAI Gigafactories remained stalled for lack of funded implementation, contributing no in-flight gain this turn, and with frontier capability still rising sovereignty slipped further to 8.0. Openweight diffusion continued to track its established catch-up toward prior frontier capability, reaching the midpoint of its prior level and last turn's frontier at 59.0, still below frontier at 62.5.

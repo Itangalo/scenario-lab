@@ -1,0 +1,10 @@
+### Holding under fire
+Autumn brought the attack defenders had rehearsed for. A wave of machine-written intrusions swept municipal systems, hospitals and a transmission operator in the same week, locking records, forcing fallback to paper in several cities, and triggering the two-day reporting hub at full volume. Segmentation and offline backups kept power and emergency care degraded rather than stopped, but recovery took weeks and the public saw technicians losing to code.
+
+Brussels stayed with its hold. No new programme was opened. Energy, industry and trade teams kept guard over grid links for the four-to-five factory sites, coaxing one blocked site back to work while the other remained idle behind barriers and court filings. Mayors demanding heat and clinic power first won co-funded hardening and hiring promises, but resentment spread beyond the two towns as winter load warnings grew.
+
+The American vote darkened the horizon. A president was elected on a platform of holding advanced models as national assets, with tighter export review and access rationed by country tier. European capitals received no guarantees, only briefings. Chip scarcity, already acute since the February quarantine around Taiwan, now looked political as well as logistical.
+
+Against this, ordinary offices told a different story. Law firms, accountants, newsrooms and consultancies reported strong productivity gains from assistants, especially for juniors, without layoffs. Clinics using supervised permit and care aides cut queues further. Voters thus lived two truths at once: services that worked better, and infrastructure that felt borrowed.
+
+By December the Union could claim it had absorbed a blow without collapse, but had built little new. The factory concrete remained mostly foundations, and dependence was now explicit.

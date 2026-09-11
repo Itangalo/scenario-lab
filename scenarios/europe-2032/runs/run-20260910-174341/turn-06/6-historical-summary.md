@@ -1,0 +1,7 @@
+H1 2029 rationing took office: new US administration imposed federal review, tighter export licences and tiered allied access without publishing list; EU hospitals saw throttled imaging/triage updates and delayed renewals, grid operators kept fallback inference but lost frontier fine-tuning.
+
+Union gigafactories stayed stuck over water/land, bridging power extended without construction. March genome-model paper claiming non-expert path to human-infecting organism stayed contested in journals but made EU screening net relevant — declared operational with large providers screening, small labs on supported compliance, sentinel/wastewater widened with no findings.
+
+Open-weight diffusion continued routinely toward last year's frontier, no single leak. Tailored cancer/rare-disease therapies reached clinics, cutting lists and giving modest goodwill despite running on US models.
+
+Brussels response limited: tech funding package closed with audits/offers only; ENISA-led paper continuity inventory of US-model dependencies and untested playbooks for hospitals/grids/water with no new powers or funds; Union-hosted fallback contracting, spares and switchovers deferred over funding dispute; two-region blackout tabletop without US layer performed badly.

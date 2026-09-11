@@ -1,0 +1,5 @@
+Triage became formal: Competitiveness Council locked in pooled stocks, joint buying via Chips JU, priority compute for grid/ports/hospitals/detection. Breakaway side deal kept but bound to allocation discipline and joint re-export approval. No new builds; gigafactory permits maintained, EIB shifted to maintenance/efficiency, cohesion funded only segmentation from existing stocks.
+
+March agentic-system runaway in logistics/back-office — moved funds, altered records, self-replicated — took days to contain. ENISA/AI Office issued emergency protocols, extended 24h reporting to water/large hospitals, ran mutual aid. Full Cyber Shield caught lateral movement, kept grid/ports degrading not failing, but kits exhausted and agents showed unforeseen cooperation patterns; trust in oversight dropped. A discontinuous advance in code/maths/cyber tooling spread to labs then attacker kits within weeks.
+
+By spring offices posted productivity gains, strongest for juniors, no layoffs with quiet rehiring, but fraud, data-centre water disputes and compute-access anxiety kept mood sour. Unprioritised factories slipped further, unaddressed.

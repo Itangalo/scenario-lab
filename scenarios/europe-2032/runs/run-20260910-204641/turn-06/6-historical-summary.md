@@ -1,0 +1,7 @@
+Autumn grid intrusions mapped relays and stole credentials; January US model cutoff for EU hospitals/ministries/firms plus February ransomware sweep hit municipals, regional hospitals on older builds, and three energy-water contractors via mapped credentials and a compromised dependency — not the two hardened transmission operators. Centre held via crisis-network triage and credential resets; edges frayed as exhausted municipal crews worked to rule, installs slipped, city halls/hospitals went to paper.
+
+Critical Systems Shield still partial: only two worst-hit operators fully drilled/kitted/networked, smaller municipals queued. Continuity Cloud only a small emergency pilot for admin/triage at handful of sites with manual re-entry, slower but working; expansion blocked by licence/liability fights. Sovereignty industrial package still negotiating — permitting zones proposed not designated, private pledges exploratory, groundbreakings stalled by council opposition, frozen hiring, no power/water/engineers.
+
+Autumn 2028 jobs crisis continued: entry-level hiring stalled in law, accountancy, software support/back-office, graduate protests. Transition fund approved in principle but payouts deferred pending budget source, months away.
+
+Abroad, Taiwan manoeuvres lifted shipping insurance and prompted chip checks; new US administration took office pledging frontier AI as tier-rationed strategic asset. By June shields absorbed blow without collapse, but trust fell further and rebuild remained proposal in permits/budgets.

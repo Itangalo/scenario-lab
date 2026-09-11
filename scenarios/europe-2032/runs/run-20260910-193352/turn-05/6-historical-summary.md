@@ -1,0 +1,7 @@
+Late 2027 turned on open-weight proliferation and the US election. A near-frontier permissively-licensed model was mirrored within hours and downloaded hundreds of thousands of times, enabling rebuilt intrusion kits; joint monitoring held a single picture but cleaned systems re-staged faster, with probing hitting undrilled municipalities and small hospitals.
+
+The US winner campaigned on AI as strategic asset — tighter federal review, exports and tiered foreign access; no licences refused by year-end but allied orders moved to attestation holds, read in Brussels as rationing winter ahead. The Commission prioritized keeping ordered accelerators flowing over a trade fight.
+
+Hospitals held on EU-hosted vetted radiology/discharge models under tight inference and validation queues using adopted failure-prediction checks; logs helped close the benefits-fraud court finding without new law. Ward-level open-model use continued amid an unconfirmed bad-triage report.
+
+The Cyber Shield's reporting/isolation drills were extended to municipalities/small hospitals with exercise money and vetted-inference access tied to cohesion-fund conditionality; uptake uneven. The two blockaded hyperscale sites stayed blocked with no forced permits, grid priority conditional on hardening, and the gigafactory pipeline slipped further.

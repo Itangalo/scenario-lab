@@ -1,0 +1,7 @@
+Autumn's automated ransomware sweep locked municipal IT, ports and water portals; ENISA patching protected large transmission operators but hospitals and small cities fell back to paper and phones for weeks, attribution open.
+
+Winter brought Shield-funded recovery city-to-city with clean backups and spares; power and water held via islanding but mayors noted late rescue. Audits confirmed patching had masked persistence in two municipal networks, requiring quiet second clean-up. Clinics received frontier-model-designed tailored therapies with remissions, but computed and priced abroad.
+
+In spring a leading lab showed a sharp general-competence jump, followed within weeks by a near-frontier open release downloaded hundreds of thousands of times, putting autumn-sweep-like tooling in private hands. AI valuations reset hard, build-outs cancelled, financing for European compute evaporated. US tiered foreign-access doctrine kept allied volume licences with heavier rationing; foundry queues lengthened, French/German/Spanish shells stayed empty awaiting tooling. A biosecurity paper on non-experts reaching viable human-pathogen design with model help split the field; Taiwan Strait exercises lifted shipping insurance.
+
+By December lights and water held but dependence became explicit US policy. Brussels narrowed its pledge to keeping services running and access usable: continuity patch for hospitals/water deploying, gigafactory effort held to permits and grid only, tech sovereignty package closed delivering planning zones but no machines.

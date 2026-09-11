@@ -1,0 +1,7 @@
+Autumn pre-positioning shock left attribution contested and Council paralyzed; EU grid hardening in Rotterdam/Antwerp finished funded phase — segmentation, rotations, islanding — then passed to national budgets with deferred maintenance risk.
+
+Public-sector AI dividend in five frontrunners eroded after inquiries found high-risk welfare scoring passed conformity while caseworkers cleared flags in ~40s with postcode-clustered appeals. Commission blamed enforcement: infringement screening, understaffed joint audit teams, three deployments flagged not suspended, audit standard still draft.
+
+H1 2028 was dominated by US tightening chip/model export controls blurring rivals and partners: EU orders held, Eindhoven/Dresden/Grenoble asked for end-use certification. Brussels sought written volume-licence assurances offering aligned lithography/chemicals controls, mentioned coercion instrument without using it; US gave process not product. Gigafactory siting continued with grid-security checks but no new compute online, queue unbuildable if rationing hardens.
+
+At home welfare fallout persisted, flagged systems stayed live; Commission closed public-services funding phase on wait-time gains, fueling two-speed complaints, non-EU vendor protests over EU-hosted preference, and municipal grid-connection delays. Labs advanced longer unsupervised agents, widening deploy-assure gap.

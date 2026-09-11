@@ -1,0 +1,7 @@
+Autumn 2029 Europe managed winter bio-release after-effects: HERA kept wastewater sequencing under civil-protection orders and recovery teams stayed in EDs past handover; isolation fast where staffed, weeks-long where not. Procurement audit aided clinician buy-in but anger over triage and school closures persisted. Bio reserve only partially replenished; ministers admitted in December it can triage cross-border scares, not prevent them.
+
+AI safety held steady with no new failures; frontier capability rose modestly while open weights caught up toward prior frontier but remained below it.
+
+Dutch lithography fight yielded no EU mandate: Commission push for joint licensing, EU servicing-stockpile, and linkage to assured frontier-model access for essential services failed to gain qualified majority as Hague feared US parts loss. Supplier continued US compliance with only consultative EU information-sharing, no veto; Washington offered only case-by-case review, no binding access.
+
+No new measure introduced. InvestAI Gigafactories partially implemented: one site with grid/permits restarted works, three stayed frozen over compute/financing despite aid; sovereignty flat, no completion bonus. Political capital ticked up on steady crisis management and grid holding, separate from sentiment and sovereignty. Trust in substituted models kept slipping amid delayed-care and fatigue.

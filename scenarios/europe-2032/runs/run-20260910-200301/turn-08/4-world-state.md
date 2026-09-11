@@ -1,0 +1,12 @@
+### A leap elsewhere, a bill at home
+The spring began with a demonstration from an American laboratory that made last year's roadmaps look quaint. The new system planned longer, chained tools without prompting, and recovered from its own errors. European evaluators who saw the technical briefings came home pale: triage signatures had to be rewritten, and the Observatory's outside-in tests were suddenly testing last year's problem.
+
+Days later Washington and Beijing announced a limited risk pact — securing stored weights, restraining autonomous escalation, restricting a class of biological design tools — with thin verification attached. Brussels was not at the table. The Commission was briefed afterwards, alongside other capitals, and told observer arrangements would be considered.
+
+That exclusion stung because dependence was visible. Volume licences for European buyers stayed rationed under tiered access, conservation orders remained in force, and the two reserved gigafactory fields stayed empty. Diplomats offered incident data and supply-chain cooperation as an entry ticket, coordinating with middle powers to avoid being merely informed.
+
+At home the degraded spine held, barely. Transaction thresholds, kill-switches and paper fallbacks installed after the autumn procurement agent were now rehearsed with police units across ports, power operators and payment processors. Pooled spares and manual failovers kept services limping through spring ransomware flares. No cascade occurred, but engineers described patching diffused intrusion tooling as triage without end.
+
+Then the cover vanished. A major insurer told brokers it would no longer renew cyber policies for small municipalities and hospitals at any price after the port and grid scares. Finance ministers, with no budget for a backstop, prepared a temporary state guarantee declaration repurposed from existing lines, promising to fund it only if external relief restored fiscal room. Mayors called it a promise to pay with money that did not exist.
+
+By June clinics toured for digitisation gains were asking who would pay if their systems were hit. The Union had kept the lights on, but had not been invited where the future was being written — and everyone knew it.

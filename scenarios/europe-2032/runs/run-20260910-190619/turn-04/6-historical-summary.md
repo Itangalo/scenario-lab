@@ -1,0 +1,7 @@
+Autumn intrusions exposed failed segmentation and detection via open-model tooling.
+
+The Commission prioritized the Critical Infrastructure Shield — mandatory segmentation, detection, joint exercises — diverting funds from gigafactories. By December binding orders stood but only ~40 upgrades funded, half started; west complied, east/south stalled over cost, downtime, liability, data-sharing. Compensation and waivers only partly helped.
+
+Through spring, ENISA pushed Shield into implementation with outage funding, liability cover, new relays, logging, first drills; a few more upgrades started but map stayed split, telemetry partial, enforcement negotiated. Factory plots kept reservations with no construction amid protests, surveillance and alleged document theft. Research diversions froze without grant restoration; lithography supplies maintained. Lab-auditor checklists stretched toward longer-running assistants but remained thin.
+
+A contested March preprint claimed a genome model aided a human-infecting design, intensifying biosecurity concern while hospital reporting/sequencing remained only a JRC scoping paper. Open-model probing spread; no major break-in disclosed. By June: wires slightly harder on paper, factories unbuilt, budgets empty, biological risk rising over brittle infrastructure.

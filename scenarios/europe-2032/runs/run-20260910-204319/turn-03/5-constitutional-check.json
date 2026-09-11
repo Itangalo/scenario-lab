@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The narrative states \"the Union spent heavily in political terms to hold the line, with four large programmes running at once and no new instrument launched.\" This implies that four major initiatives (InvestAI Gigafactories, Tech sovereignty package, EU Critical Systems Shield, EU Controllable Core for Essential Services) are simultaneously active. However, Constitutional Constraint #5 limits the EU to at most one new measure per turn and at most one named priority. While no *new* measure is introduced this turn, the notepad shows that all four programmes are active and contributing to a portfolio charge of −13, with no indication that any were sunset or scaled back. The constraint does not permit indefinite stacking of high-cost measures without phasing out old ones. Running four large programmes indefinitely violates the spirit and letter of the \"at most one new measure per turn\" rule when combined with the absence of any measure completion or wind-down in prior turns. Without evidence in the narrative or notepad that prior measures have ended, this constitutes a violation of Constraint #5.\n- Economic Constraint violated: The narrative describes \"the Union spent heavily\" and references four large ongoing programmes, yet there is no identified source of funding for these expenditures. The drop in `eu_political_capital` from 33.0 to 25.0 (−8) does not account for the full cost implied by the portfolio charge of −13, and no borrowing, reallocation, or revenue mechanism is mentioned. While political capital may represent a proxy for political cost, Constraint #9 limits any metric from moving more than 25 points in a turn, and the economic model must still justify large expenditures. The absence of any funding source for sustained high-cost programmes violates the requirement that capital expenditures have identified sources."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

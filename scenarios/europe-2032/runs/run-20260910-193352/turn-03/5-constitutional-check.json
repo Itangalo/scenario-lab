@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: `eu_political_capital` drops from 26.0 to 9.0 (a change of −17.0) without sufficient justification in the narrative or notepad for such a severe and rapid depletion. While the scandal and governance failures described could contribute to a decline, a loss of 17 points in one turn—especially without any identified mechanism such as a major institutional collapse, withdrawal of member states, or explicit loss of funding or authority—exceeds plausible organizational response limits. The notepad only accounts for −11 from portfolio charges and +2 from legitimacy lends, implying a net change of −9, not −17. This discrepancy violates the realism of political capital as a stock that can be spent or eroded gradually, not annihilated without cause.\n- Economic Constraint violated: The narrative describes ongoing delays in hyperscale site development and no progress on gigafactories, yet there is no indication of budget reallocations, cost overruns, or funding shortfalls that would justify a political capital drop beyond the notepad’s accounted −11. The unexplained additional −6 in political capital implies unmodelled economic or institutional collapse not supported by the narrative.\n- Narrative violates Constitutional Constraint #8 (No telegraphing): The phrase \"the world noticed\" in the context of delays in hyperscale site development implies an external, systemic consequence (e.g., market reaction, geopolitical shift) without specifying how or why it matters, potentially foreshadowing an event gate (e.g., investment flight, tech leadership shift) without grounding it in current effects. This borders on anticipatory writing that suggests future events are being primed, which is prohibited."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

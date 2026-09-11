@@ -1,0 +1,59 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "opaque_reasoning",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Overload on the pilot gigafactory nodes contracted for emergency fallback causes a visible degradation of EU-hosted inference during a switchover drill, forcing rationing among designated operators.",
+    "emergent": true,
+    "id": "emergent_fallback_capacity_crunch",
+    "probability": 0.24,
+    "probability_samples": [
+      0.22,
+      0.28,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

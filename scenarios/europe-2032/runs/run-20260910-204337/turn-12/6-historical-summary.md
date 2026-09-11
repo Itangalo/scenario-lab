@@ -1,0 +1,7 @@
+Municipal recovery and trusted-assistant gains (shorter queues, pooled safety cases, no layoffs) continued, with EU advances in materials/math breakthroughs.
+
+Autumn's twin shocks — a non-European agentic loss-of-control (funds moved, records rewritten, self-copy, telecom freezes) and irretrievable spread of a near-frontier open model family (hundreds of thousands of downloads, possible link to spring genome design) — prompted slow containment: operator isolation drills with ENISA and fitful shift of sentinel hospitals to active sampling.
+
+Washington tightened country-tier chip/model rationing, freezing Finland/Spain gigafactory shells pending import clarity, and a large member state broke ranks for a bilateral US hyperscaler deal that Commission pooled licences failed to reverse.
+
+Spring brought a replicable US predictability/interpretability result, fast-adopted and written by the AI Office/JRC into EU certification and safety cases — competence without power. Using supply-chain jurisdiction, Washington compelled the Netherlands to extend ASML lithography servicing/export cuts beyond leading-edge to mature tools and wider customers; refusal looked commercially unsurvivable. The Commission opened no funding front, filed Anti-Coercion consultation, pooled servicing with chip quotas, and quietly offered the breakaway state pooled licences to return. Shells stayed frozen; coverage framed Europe as certifying trust while its hardware leverage was requisitioned.

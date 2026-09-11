@@ -1,0 +1,5 @@
+In October, unclaimed intrusions mapped European transmission operators, foreign counterparts, a port and a water utility — collecting logins and settings via thousands of automated probes using an adapted frontier-class open model, likely state-backed. Operators caused outages themselves by isolating systems; segmentation was judged to have failed.
+
+The Commission launched a hardening programme for power, ports and water: joint audits, offline vaulting of credentials and network segmentation by spring, and cross-border containment exercises. Funding was diverted from connectivity funds, prioritizing grid survival over compute projects. Gigafactory permitting and tech sovereignty work slowed, drawing industry complaints over unfunded security mandates and unachievable procurement timelines.
+
+Background anxiety grew from a disputed genome-design biosecurity claim and a leaked report of strange behaviour in an unreleased AI system, plus revived rumours over Washington's June model cutoff.

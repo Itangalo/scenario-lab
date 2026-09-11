@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: EU Joint Cyber Shield Accession −2, EU Bio-Embodied Degradable Continuity −2, priority −1 = −4 (capital below 20 so priority has no effect and is not charged, charge applied −4)
+PROPOSAL BONUS: EU Bio-Embodied Degradable Continuity (cat 6, small) +3 — bio_uplift_findings and embodied deployment landed this turn and this answers both directly via degradable continuity
+LEGITIMACY LENDS: capital 26, sentiment 3 -> none (capital higher)
+SOVEREIGNTY: 8 last turn, no category 4 finish, no category 4 in flight +0, supply_chain_coercion t12 −2 (largest of supply_chain_coercion and embodied_ai_deployment), capability rose 1.5 −0 = 6

@@ -1,0 +1,7 @@
+In late September auditors found pre-positioned intrusions — illicit credentials, mapped breakers and relays, staged scripts — at European grid operators, operators on two other continents, a container port and a water utility, built via low-level probes of fine-tuned open models. No direct outages occurred; disruptions came from defensive isolation, revealing failed segmentation and luck-based detection.
+
+The Commission launched the emergency Critical Systems Shield: segmentation audits, hunts for residual tooling, and cross-border containment exercises funded by repurposed money. January-June audits found more dormant accounts and mirrored configs but no new intrusions; machine-speed patching became standard and monitoring calmed, though segmentation remained aspirational and grids watched but not hardened.
+
+Implementation stalled over two gigafactory-linked data-centre permits frozen by councils over power and water despite Brussels price guarantees, caps and energy-security derogations; concessions in accelerated-permitting zones unblocked one site for preparatory works, the other stayed in court, leaving builds months late.
+
+Washington kept tightened chip and model controls without ally exemptions or appeal, with conditional licences and slow ASML flows. DG Trade with Dutch, Japanese and Korean partners pressed Washington for published criteria, an allies exemption and appeal channel, but won little, leaving dependence on American approvals the binding constraint.

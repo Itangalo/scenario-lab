@@ -1,0 +1,11 @@
+Through 2030 Brussels held with no new money, rolling vouchers, hiring credits, wage insurance and guarantees; intake empty, delivery uneven.
+
+Spring brought audited AI triage/permit successes plus controls; small replication fund for ten regions with EU hosting/certification but no jobs/hardening money, ragged uptake, job-centre failures, data-centre blockades delayed work.
+
+Autumn brought rehearsed multi-state cyberattack on health records/appointments/contractors; drilled cities held on paper/generator fallbacks, elsewhere closures. Attribution unresolved. Data-centre/substation blockades in Spain, Netherlands, France slipped builds, raised costs, forced escorts.
+
+Brussels offered nothing new: graduate holdover ended, replication narrowed to two audited health models where hosting accepted. Few clinics cut waits but erased politically by outages. Capitals and Brussels blamed each other; by Dec 2032 services degraded, replication largely on paper.
+
+First half 2032: no new sweep; services degraded but stable. US labs' model prediction/certification method adopted without law for two health models; certificates published, clinic-queue gains briefly visible. Studies showed office productivity gains, strongest juniors, employment steady. Cheaper Chinese catalyst/battery route noted, no procurement impact. Fences still needed escorts; tampering/overtime-refusal rumours kept mayors nervous. Vouchers/wage-insurance paid only where job centres functioned.
+
+Autumn 2032: Lille, Brno, Porto running the two certified scheduling models under EU hosting published wait-time falls for scans/follow-ups, credited to European certification. Brussels offered replication pact — funds to copy same models where hosting accepted, certification extended, deltas published clinic-by-clinic, no law/mandate. Modest take-up: dozen volunteer hospital groups, half already running. Regions lacking staff/hosting stayed out. Elsewhere escorts, delays, costs continued; municipal utility overtime disputes flared, settled with backlogs; brief substation outage sparked unconfirmed tampering claims, denied. Junior employment held. By December certified clinics showed shorter waits, most Europeans queued as before — showcase, not recovery.

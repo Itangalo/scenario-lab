@@ -1,0 +1,9 @@
+Through spring 2028 EU held unity on hyperscaler deals but fell behind on frontier agency and autonomous training, becoming downstream of US/Asian software and Chinese hardware for logistics humanoids and military variants.
+
+US tightened chip/model controls stalling factories in France, Germany, Spain, Poland-Sweden; then US election won by challenger on moratoriums and curbs, freezing labs and removing Brussels' partner. EU passed displacement cushion — wage insurance, retraining, siting funds — cautiously welcomed.
+
+Early 2029: US throttled/refused model subscriptions for hospitals, finance ministries and firms, forcing degraded continuity and exposing lack of domestic replacement; Brussels held common line against bilateral fixes. Logistics robots scaled, shifting orders to foreign stacks; cushion paid first cheques but lagged automation.
+
+Spring benefits scandal: automated welfare/fraud scoring wrongly cut off thousands with seconds-per-file sign-off, ruled lawful as outside high-risk categories as written — collapsing trust in public AI. Defenses improved — machine-speed patching, coordinated-probe detectors — grids stable, fraud eased. Gigafactory permitting finished unlocking zones/capital, but accelerators uncleared and US inward turn left build-out months away.
+
+Autumn 2029: degraded continuity persisted — hospitals/finance on older/cut-down models and pooled inferior licences; unity broke as one government signed separate cloud/model deal, condemned by Commission, others requested text. Foreign logistics robots moved pilot to contract, defence variants advanced to weapons trials, EU integrators lost bids, supply chains uncontrolled; cushion payouts accelerated but short of lost hours. Gigafactory zones ready but waiting on accelerators/US partner, only symbolic foundation pour. Public AI trust unrecovered, refusals spread; infrastructure held stable, genome-model risk under quiet health-agency review.

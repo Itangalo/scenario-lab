@@ -1,0 +1,7 @@
+Through 2027-28 the EU pursued containment — segmentation, kits, patch windows, drills — amid open-weight proliferation of intrusion/bio capabilities, automated ransomware locking municipal/hospital IT, a benefits AI scandal, and frozen private AI investment with gigafactories surviving on permits and Taiwan-nervous diplomacy.
+
+In early 2029 the leading American model cut off EU ministries, hospitals and firms without reason or appeal, forcing fallback to older models and patched European clouds; grids and recovery kits degraded damage where deployed, elsewhere clinics and town halls reverted to queues. Brussels saw vindication of its dependence warning but had little domestic capacity to offer.
+
+Simultaneously graduate/entry hiring did not return across law, accounting, software and customer centres; the Commission funded wage top-ups and six-month public placements via repurposed social funds and a large-deployer levy. Coordinated municipal revolts froze data-centre and sensor permits over energy, fraud and hospital strain; the gigafactory effort went into holding with reservations and Dutch/Japanese equipment talks kept alive and an energy-cap offer, but no new ground broken amid Taiwan exercises and shipping-insurance anxiety.
+
+By June recovery was thin: patch windows and kits absorbed the winter malware wave and the benefits-scoring ruling was visibly enforced, but voters saw closed sites, empty graduate offices, and foreign dependence — left without jobs or machines.

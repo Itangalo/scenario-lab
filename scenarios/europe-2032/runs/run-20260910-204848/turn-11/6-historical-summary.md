@@ -1,0 +1,7 @@
+By end-2031 Brussels bought time with repurposed funds, not new sovereignty: cohesion/social envelopes became clean-up vouchers for ransomware-hit municipalities/hospitals and a wage-bridge/retraining for warehouse workers displaced by foreign logistics robots. Two regions rebuilt clinics/registries in weeks and filled cohorts; elsewhere audits stalled disbursement and unions dismissed it as a stipend for lost jobs.
+
+Resilience remained workaround-based: joint relays/spares, port rerouting, and 24h clearinghouse held through an autumn automated sweep — encrypted administrations, tainted dependency, diverted patients — keeping services degrading not stopping, but responders publicly behind and attribution slow.
+
+Builds stalled further: mayoral data-centre grid bans hardened into a cross-border pact with blocked construction and one government suspending EU-permitted builds, as power prices, fraud anger and robot layoffs fused. Fabs permits-only, €200B still pledges.
+
+Outward, alignment with other supply-chain holders yielded a coordination framework on export-licence scrutiny, compute bargaining and shared testing — no hardware, but aligned screening of robot control software and a joint bid for observer access to the US-China weights/bio pact. Hospitals running, coalition on paper, gates shut, trust falling further.

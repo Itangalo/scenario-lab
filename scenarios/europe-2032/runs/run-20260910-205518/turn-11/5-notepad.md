@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Offline Continuity Corps for Hospitals and Municipalities −2, EU Bio-Detection and Essential Medicines Continuity Shield −2, priority −1 = −4 (priority has no effect and no cost as capital below 20, charged measures only)
+PROPOSAL BONUS: EU Bio-Detection and Essential Medicines Continuity Shield (cat 6, small) +4 — bio_uplift_findings precursor plus medical_breakthrough under access-denied answers directly
+LEGITIMACY LENDS: none — capital 6 above sentiment 0
+SOVEREIGNTY: 7 last turn, no category 4 finish, no category 4 in flight +0, eu_frontier_access_denied t11 −2 (largest capacity event, member_state_defection also qualifies), capability rose 1.5 −1 = 4

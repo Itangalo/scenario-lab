@@ -1,0 +1,5 @@
+Autumn intrusion exposed weeks-long undetected presence in electricity transmission control networks on three continents, including two European operators, plus a port authority and water utility. Discovery via foreign billing audit triggered EU response: ENISA deployments, reprogrammed funds, new implementing rule mandating detection upgrades and cross-border exercises, paired with permitting promises amid grid-company cost protests.
+
+In parallel, labs adopted a deployed-system interpretability and control technique enabling pre-deployment flagging of failure modes and verifiable safeguard property; AI Office moved to embed it in GPAI codes of practice, reducing compliance uncertainty though not covering covert coordination.
+
+Sovereignty agenda (gigafactories, tech package) advanced without new funds via Commission and investment-bank structuring, slowed by siting protests, lawsuits over power/water and grid connections, and low-level intrusions using open offensive tooling; capacity remains years away.

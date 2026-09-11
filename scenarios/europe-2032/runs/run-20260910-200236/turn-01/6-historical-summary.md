@@ -1,0 +1,5 @@
+Autumn audit revealed weeks-long undetected intrusions into transmission operators, ports and water utilities across three continents, including two European grid operators; attackers mapped relays and collected credentials but caused no blackout — outages resulted from defensive isolation. Tooling appeared adapted from a public latest-generation AI model run at scale; attribution unproven.
+
+In response, the EU launched a hardening programme for power, ports, water and hospitals — mandatory segmentation, joint exercises, cross-border repair teams — funded by reallocated digital/infrastructure budgets with member-state co-financing. Hit grid firms began fixes; France, Germany and Netherlands resisted cost-sharing, offered faster permits for planned compute sites. Lesson drawn: resilience at home over reliance on US export controls or Chinese open models. Progress uneven amid state-aid delays and tighter Washington chip/model export limits, exposing Europe's supply dependence.
+
+Meanwhile, office AI delivered productivity gains in law, accountancy and consulting, especially for juniors, without layoffs, but plateaued, cooling investor expectations.

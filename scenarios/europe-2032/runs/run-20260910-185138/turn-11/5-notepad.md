@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: M10 EU Bio-Continuity Shield and Single-Line Enforcement −2, M11 EU Middle-Power Bio-Containment and Compute Access Compact −2, priority −1 = −4 [priority cost void under rule 10 as capital 12 <20, charged −4 only]
+PROPOSAL BONUS: EU Middle-Power Bio-Containment and Compute Access Compact (cat 8, small) +3 — bio_incident this turn severe and coalition window open, answered directly
+LEGITIMACY LENDS: capital 16, sentiment 17 -> +1 [capped at sentiment]
+SOVEREIGNTY: 21 last turn, no cat4 finish, no cat4 in flight +0, middle_power_coalition t11 +2, capability rose 0.7 −0 = 23

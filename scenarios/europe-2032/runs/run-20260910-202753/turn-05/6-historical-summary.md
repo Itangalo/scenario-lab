@@ -1,0 +1,7 @@
+Autumn municipal-systems attack froze hospitals/services; French/German segmentation held. Dec automated patching and rapid teams restored all but two US-stack health systems. Feb Europe joined allied joint cyber command with live telemetry, separate procurement; spring surge absorbed March intrusions.
+
+Mar-May injunctions halted data-centre and segmentation works at Lyon, Krakow, Turin; graduate unemployment rose as firms cut entry cohorts. Commission's Transition and Siting Compact offered 12-month wage insurance for under-30s, reskilling tied to recovery, rebates/consultation for host towns via reallocated social funds; unions called it late/thin, mayors demanded veto, Gigafactory unfunded, one member kept separate hyperscaler deal.
+
+Autumn: Lyon/Krakow/Turin lawyers formed veto network sharing tactics, blocking crews; developers held permits without building. Compact split councils near Lyon and resumed talks but failed elsewhere. Tech programmes remained paper-only permits/clearances. Telemetry link held; fresh autumn wave absorbed with degradation, foreign-stack health systems slow. Evaluation Cell attributed spring intrusions to open-model tooling, justifying defence but fuelling AI anxiety.
+
+Nov US election backlash won on data-centre moratoriums, AI curbs, job guarantees funded by sector; pressure on Europe eased but US partner less capable/predictable. By Dec sites still frozen, graduates without offers, recovery stronger but consent lacking and sentiment darker.

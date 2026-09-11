@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t6: InvestAI Gigafactories −3, Municipal Hospital Cyber Backstop and Clean Rebuild Facility −2, EU Deployed Assurance Uptake and Loss-of-Control Containment Protocol −2 = −7 plus priority −1 not charged as capital below 20 with no effect = −7
+PROPOSAL BONUS: EU Deployed Assurance Uptake (cat 5, small) +4 — loss_of_control_incident this turn with days-uncertain containment answered directly plus deployable breakthrough
+LEGITIMACY LENDS: capital 18, sentiment 32 -> +2
+SOVEREIGNTY: 18 last turn, Tech sovereignty package finishes t6 +4, Gigafactories in flight +1, no capacity event, capability rose 1.0 −0 = 23

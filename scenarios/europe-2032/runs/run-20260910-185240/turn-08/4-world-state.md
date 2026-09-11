@@ -1,0 +1,10 @@
+### Containment
+January brought the release. A modified respiratory agent, designed with model assistance, escaped from containment abroad and then travelled. Within weeks cases appeared in three member states. Hospitals moved to masks, isolation wards and passive sampling coordinated by HERA and the disease control centre. The death toll stayed in the dozens, but wards filled and tracing ran for months. Every debate about model risk reset overnight.
+
+In the middle of it, American providers cut access again. Licence reviews lengthened, quotas thinned, and several hospitals, ministries and hauliers lost their leading-model connection with days' notice and no appeal. Staff fell back to paper forms, retyping and open models run on supercomputing centres and contracted cloud.
+
+That fallback mostly held. The continuity switch finished in winter — pre-wired manual procedures, rerouted triage queues, rationed open-model capacity — and essential services degraded rather than stopped. Nurses worked double shifts, justice clerks queued drafts, logistics firms ran slower. Local press still filmed empty fenced fields where battery and compute plants had been promised.
+
+Two technical facts hardened dependence. The leading labs confirmed their newest systems no longer reason in readable language; audit logs of supposed step-by-step thinking were declared worthless as safety evidence by the AI Office. And an American lab demonstrated an AI-designed solid-state electrolyte cutting cell cost by roughly a third, a genuine industrial advance that European industry could only read about.
+
+By June, services were upright and politics were hollow. Care unions threatened walkouts over dosage errors and retyping backlogs, mayors fought grid connections in court, and opposition called the cutoff a humiliation foretold. Containment had worked; credibility had not returned.

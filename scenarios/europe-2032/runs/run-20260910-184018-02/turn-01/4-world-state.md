@@ -1,0 +1,10 @@
+### The autumn audit
+In October engineers auditing billing software at a transmission operator stumbled on something else: quiet, long-dwelling access across grid control networks on three continents, a major container port, and a water utility. Two EU grid operators were among those compromised. No blackout, no valves turned — but weeks of presence, found by luck. Internal reviews admitted current monitoring would not have caught it.
+
+The discovery landed in a summer already unsettled by openly downloadable offensive cyber capability matching the withheld frontier. Municipal councils in Spain and Germany cited power prices and water use to stall hyperscale sites, while grid-connection queues lengthened. Site selection teams for the gigafactory programme spent the autumn negotiating connections rather than pouring concrete.
+
+Brussels moved where it could. The Commission tabled the Critical Systems Shield for electricity, ports, water and telecoms — mandatory detection, 24-hour reporting, exercised recovery and cross-border aid, with a €2bn hardening fund conditional on audits. Energy and transport ministers backed it in principle; operators balked at the reporting clock and at who pays for sensors. Procurement started, exercises were scheduled with France, Germany and Poland, but little hardware landed before year-end.
+
+Two softer winds helped. Laboratories adopted a new interpretability control that made deployed-system behaviour more predictable, which the AI Office fast-tracked into evaluation practice. And several public administrations reported falling waiting lists and faster decisions from AI deployment, which ministers quoted relentlessly to defend data-centre siting.
+
+Compute dependence did not shift. Europe remained at roughly five percent of world compute, permitting zones unblocked little, and American export pressure continued in the background.

@@ -1,0 +1,5 @@
+Autumn brought a multi-state municipal-systems attack using open frontier-model tooling; hospitals and city services froze and took weeks to restore. French/German transmission grids segmented under the Shield degraded but stayed on, while unsegmented water and hospitals elsewhere fared worse, validating Shield prioritization.
+
+By October European automated patching and swarm detection closed a class of intrusions, with rapid teams restoring worst-hit cities/hospitals by December; two large health systems on U.S. stacks lagged. Officials claimed defence had caught up.
+
+An autumn AI valuation reset cancelled data-centre expansions and evaporated compute arrangements, stalling Gigafactory financing despite permits continuing. Sharp entry-level job losses in law, accountancy, software support and customer operations fueled public anger linking AI attacks and AI displacement; Commission deferred transition fund. The defecting member state took recovery help but kept its separate hyperscaler deal.

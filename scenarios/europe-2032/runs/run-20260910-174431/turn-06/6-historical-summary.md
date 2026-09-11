@@ -1,0 +1,5 @@
+US tiered rationing took effect in winter: hospitals, ministries, exporters reclassified to lower tier with no appeal under strategic asset controls; a near-frontier open model spread widely and was pulled onto local servers in Munich, Lyon, Tallinn.
+
+With no new money/law, Brussels used continuity programme: cyber agency/AI Office certified EU-hosted open-model replacement stack, joint-procurement eligible, prioritizing health, grid, ports. Switched clinics stabilized triage/scheduling, two more regions cut waits; understaffed hospitals/municipalities lagged with degraded older versions.
+
+Tech sovereignty package closed with permitting acceleration and private-capital data-centre framework, reservations/grid preserved but gigafactories idle as finance ministers blocked second spending front; Dutch lithography pressure stuck in procedure. Public anger over bills, premiums, rationed access persisted; open release aided technicians but raised fears of unrecallable systems.

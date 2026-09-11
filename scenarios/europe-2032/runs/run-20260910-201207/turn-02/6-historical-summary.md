@@ -1,0 +1,9 @@
+Autumn intrusion mapped power, ports, water across three continents including two EU operators — relays/breakers catalogued, no disruption — assessed as state-resourced rehearsal using downloadable Mythos-class tooling. U.S. frontier switch-off for non-citizens, later lifted without allies clause, taught revocable access lesson.
+
+EU launched Critical Shield and Continuity Programme (ENISA/ACER, cross-border exercises, inventories, credential rotations via repurposed funds); interior resistance limited EU to joint-drill funding; manual retrofits stalled over state-aid waivers. Frontier leaps, agentic cooperation incident, machine-proved Millennium Prize and withheld genome manuscripts eroded trust.
+
+February: near-frontier open weights released, hundreds of thousands of downloads — permanently beyond recall. Graduate hiring freeze in law, audit, software support, back-office; firms cited automation, unions offshoring by other means.
+
+Spring: Commission pushed shield — ENISA credential rotations, hunt for autumn tooling, power-ports-water exercises; interior ministries still blocked EU from municipal waterworks; Competitiveness Council left retrofit waivers unsigned. Successful European-interface deployments on foreign models in two health systems and permits office cut waiting lists, used to sell continuity spending. Washington tightened chip/model controls; allied buyers kept volume licences — relief but revocable; tool coordination reserved. Transition Fund (retraining, wage insurance, hiring credits) cleared EPSCO in principle, repurposed ESF+, unfunded in practice.
+
+End-June: more protected on paper, more exposed in practice — grids drilled not hardened, jobs gone, capable tooling unrecallable.

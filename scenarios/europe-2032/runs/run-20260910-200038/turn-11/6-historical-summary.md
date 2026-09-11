@@ -1,0 +1,5 @@
+Late-August automated ransomware sweep built with open model tooling hit municipal administrations, hospital IT and two grid operators from Wallonia to Lombardy; Bavaria distribution operator lost remote monitoring to phone operation. Attribution collapsed between poisoned library and machine-generated scripts; defenders lagged for days.
+
+Brussels triggered emergency cyber reserve: ENISA/CERT-EU segmentation, kill-switches, clean rebuilds for EU-hosted/vetted-open stacks; spring hours patch cycle held under fire. Protected-repair zones stretched to escort servers, diesel, tapes for guarded rolling restoration; Flanders/Lombardy municipal policing extended, worked around hospitals, blocked near Munich amid militarisation accusations losing a day. No cascade to stoppage as closing Site Shield corps kept power/access open; services degraded on brittle manual fallbacks.
+
+Capital stayed away, shells dark, EU models still lagging unreadable US frontier; trust unrecovered amid anger but grudging notice hospitals stayed lit.

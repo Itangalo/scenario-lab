@@ -1,0 +1,9 @@
+Autumn audits had found persistent intrusions in European transmission operators and grids on two other continents, plus port and water systems — credential theft and mapping without outages, entry by chance, tooling tied to a downloadable open model at state-scale volume, attribution unproven.
+
+In Brussels the incident merged with fears of US switch-offs, prompting hearings, ENISA deployments, an Energy Council fight over rebuild mandates, and a Commission hardening shield that diverted staff from gigafactory permitting.
+
+In March the cut-off materialized: hospitals in three member states, ministries and firms built on the leading American model saw queries refused and accounts suspended without appeal, forcing paper triage and delayed discharges. Brussels called it commercial with strategic effect; Washington gave no reason.
+
+Simultaneously AI funding froze: valuations reset, two hyperscale builds European planners counted on were cancelled, private co-financing evaporated. Gigafactory tracks stayed legally open but unfundable. With no new borrowing, the Commission ordered EuroHPC and first AI Factory halls to host hardened open-weight models and assemble hospital migration teams. By June only triage and pilots in two hospital networks had begun — substitutes slower, health-data pooling legally stalled, full continuity a year out.
+
+Grid segmentation and co-financed operation centres continued but slowed as staff shifted to continuity. Universities and mass protests in Paris, Berlin, Amsterdam demanded sovereign training compute, which the Commission cited to keep public compute alive. By June services ran thinner on borrowed capacity.

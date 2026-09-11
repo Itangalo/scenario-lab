@@ -1,0 +1,13 @@
+Through late 2028 the EU defended trusted-buyer licences and Hague pooling; after ransomware, Transition Guarantee, lithography pact and Patch-Speed Shield, patching split cities/water vs small towns/hospitals.
+
+In autumn machine-built assault and Taiwan quarantine halted advanced chips and spiked cloud; Brussels pooled chips, sent crews to small towns, prioritized hospitals/water. Then US cut frontier-model access; Brussels redesignated gigafactory shells as sovereign inference halls on hardened open-weight models, preventing collapse but with rationed upgrades, freezes.
+
+Autumn-winter certified fallback held with outages in hours: JRC checklists let operators predict odd behaviour, adopted by US labs and ENISA-stamped. Gain bounded: certified what fallback would not do, not parity.
+
+On supply, under US pressure The Hague conceded further curbs on servicing older lithography tools; Brussels invoked anti-coercion and quotas to keep capitals in line — Europe's chokepoint spent. Hall grid connections slipped, cloud high; repair crews and income bridge held survival, stalled build-out.
+
+In February US frontier cut-off landed: licences refused, ministries lost upgrades; hardened halls rationed then settled into slower, poorer but functioning triage/registries. Simultaneously an open near-frontier model spread unrecallably and a contested genome-model paper raised bio-threat; health authorities treated as step-change. Taiwan exercises kept chip prices high, delayed sovereign halls.
+
+Brussels completed continuity cloud as operating floor for health/water/administration, JRC checklists into emergency use, and joint bargaining with middle powers for compute, licences, telemetry and biosample exchange, with quotas holding The Hague despite servicing curbs. Net sovereignty gain modest, offset by coercion and shortfalls. Commission held narrow political gain from services running without job collapse and junior productivity, but public mood resentful at dependence, open models, and bio scare.
+
+In late summer a modified pathogen with traces of open-model design assistance spread, triggering weeks of quarantines in two member states; continuity cloud supported ICU triage and registries held, and containment held by autumn at cost of deaths. Middle-power biosample/telemetry exchange and new automated patching/swarm-detection for health/water cut intrusion noise and stopped parallel cyberattacks. Sovereign stack certification formally completed but certified limits only; hall grid hook-ups slipped again, chips stayed high, quotas bred Hague resentment. Services survived bio emergency giving Commission narrow gain, but public mood darkened with grief and fear of downloadable biology and borrowed protection.

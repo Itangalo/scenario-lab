@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t1: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Critical Systems Shield −3, priority −1 = −10
+PROPOSAL BONUS: EU Critical Systems Shield (cat 6, large) +4 — cyber_test_shot landed this turn as precursor intrusion across EU grids/ports and this answers it directly
+LEGITIMACY LENDS: capital 35, sentiment 39 -> none, capital is higher — wait correction: capital after charges/bonus 35, sentiment 39, sentiment above capital but rule 6 has no sentiment-above-capital term in this version, so no term
+SOVEREIGNTY: 22 last turn, no capacity event, Gigafactories in flight +0, capability rose 2.5 −1 = 21

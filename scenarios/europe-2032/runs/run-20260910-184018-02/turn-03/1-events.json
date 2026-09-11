@@ -1,0 +1,37 @@
+[
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Coordinated municipal moratoriums and grid-connection lawsuits stall several hyperscale data-centre projects in Spain and Germany over power prices and water use, delaying EU compute expansion without stopping it.",
+    "emergent": true,
+    "id": "emergent_datacentre_siting_backlash",
+    "probability": 0.24666666666666667,
+    "probability_samples": [
+      0.25,
+      0.24,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

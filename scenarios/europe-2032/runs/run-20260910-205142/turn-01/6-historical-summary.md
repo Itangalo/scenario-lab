@@ -1,0 +1,7 @@
+Autumn saw discovery of widespread intrusions into European critical infrastructure: two transmission operators, a major port and a water utility were found compromised with harvested credentials and catalogued relays by automated probes, apparently using an adapted freely-available frontier-class model at state-actor scale. No sabotage occurred; outages resulted from emergency defensive isolation. Segmented networks and detection had failed.
+
+Brussels responded with an emergency crash hardening programme via energy and transport ministers: audits of large grid operators, credential rotation, offline backups, and cross-border exercises with French and German teams, with 70% EU co-funding overcoming capital resistance despite grumbling from Dutch, Polish and Spanish operators. Hardening will take years.
+
+Simultaneously Washington used US-components leverage to press The Hague to cut servicing and exports of older Dutch lithography machines, forcing Eindhoven's compliance and eroding the EU's sole chip-equipment chokepoint. The Commission tied the issue to anti-coercion screening and privately warned of coordinated retaliation, buying time without restoring control.
+
+Frontier AI capability advanced with shorter release cycles; public mood soured amid grid vulnerability and foreign industrial leverage, overshadowing minor news on stalled data centres and a hospital AI screening result.

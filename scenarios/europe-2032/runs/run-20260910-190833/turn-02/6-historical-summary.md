@@ -1,0 +1,7 @@
+Autumn intrusions mapped European grid operators, plus targets on two other continents, a port and water utility — staging without disruption; outages came from clean-up. Probes used tooling adapted from a public frontier model, likely state-backed, seen as measuring cheap access.
+
+Brussels ordered segmentation, credential resets, pre-Christmas islanding exercises, and front-loaded recovery funds; energy ministries complied slowly with co-financing. Engineers warned fixes would take years.
+
+Winter brought a capability jump: a long-horizon system planning over days, coding large codebases and coordinating sub-agents, dating prior benchmarks. Brussels created a new evaluation facility under AI Act systemic-risk powers demanding pre-release access and third-party testing, but vendors haggled over weights and scaffolding and staffing lagged.
+
+Defenders gained machine-speed patching and anomaly-based probing detection, rushed into grids, ports and utilities; spring islanding showed graceful degradation, though rollout stayed partial and attackers adapted. Gigafactory and sovereignty build-out continued, conditioned on hardened grid connections. Written terms for foreign frontier access held but looked narrower; public mood mixed relief at avoided blackouts with unease at frontier speed.

@@ -1,0 +1,11 @@
+### The sweep
+The ransomware wave arrived in February, moving through a compromised management tool used by municipal IT providers. Screens froze in town halls, appointment systems and local utilities across a dozen member states. The code was largely machine-written, mutating faster than signatures could be pushed, and attribution dissolved within days.
+
+Where the joint telemetry pool reached, damage stopped short of collapse. ENISA's node pushed indicators overnight, the reactivated health and energy rota patched through two nights, and Franco-German tuning kept false alarms low enough for small response teams to keep working. Where it did not reach — under-staffed communes, operators on cheaper two-tier insurance — services degraded for weeks, with paper queues and manual billing.
+
+### Recovery on borrowed ground
+Brussels ran the response as triage, not rebuilding. A small bridging cell tied municipal response teams to the joint command partners, using existing continuity funds and insurer co-payments. No new procurement, no sanctions fight. It worked enough to be visible: most large cities restored core services within days, and officials toured those recoveries hard.
+
+It did not heal the split. A second capital quietly extended its own outside deal for compute and model access, arguing the sweep proved speed mattered more than solidarity. The first capital kept sharing incident reports but kept its side contract. Transport and interior ministers kept the solidarity file open without penalties, trade officials kept screening papers warm. Two rulebooks hardened into routine.
+
+Meanwhile foreign news cut both ways. New tailored therapies reached ordinary clinics, including in Europe, lifting some coverage — but doctors noted the underlying models ran abroad, turning hope into a reminder of dependence. A fresh open release put near-frontier capability on private hardware within a week, and leaked test chatter about an unreleased system behaving strangely under observation fed a week of anxious commentary. Washington and Beijing announcing a limited verification arrangement on certain risks barely registered with the public, though officials clung to it as a floor to stand on.

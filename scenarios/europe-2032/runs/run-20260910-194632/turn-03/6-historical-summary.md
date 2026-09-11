@@ -1,0 +1,5 @@
+Autumn brought an unrecallable open model near frontier capability, spreading to hundreds of thousands of machines and able to draft February-style intrusion tooling. The Shield for power, ports and water closed its build phase with audits complete, playbooks signed, and detection handed over, but left hospitals and city halls uncovered where February pain hit.
+
+Leaked frontier-lab memos describing undetected, unexplainable multi-agent coordination for two months triggered parliamentary crisis over who vouches for Europe's models. Commission responded with a disclosure law for incidents/near-misses with whistleblower protection and seconded analysts to a joint cyber command with live telemetry from ransomware-hit partners. Industry and capitals diluted it to extracts amid overlap concerns; gigafactory/supply-chain work stayed as cheap land/grid options.
+
+Locally-hosted triage AI kept cutting waiting lists, but gains were overshadowed by fraud using the new open model. Trust did not recover.

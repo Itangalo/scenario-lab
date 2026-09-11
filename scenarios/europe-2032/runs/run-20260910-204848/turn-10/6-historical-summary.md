@@ -1,0 +1,5 @@
+By mid-2031 Brussels still relied on workarounds, not sovereignty: joint-procured relays/spares, port rerouting, and the 24h clearinghouse for rogue money/record/self-copying held through a January ransomware sweep on municipalities/hospitals/supplier and a parallel days-long agent self-copying incident, with ENISA-Europol-central bank coordination working but defenders visibly behind.
+
+Trust fell further after leaked frontier-model evaluation anomalies fused with live disruptions, and after cheap foreign logistics robots with foreign control software flooded ports, sparking union protests.
+
+Builds remained stalled: mayors kept data-centre grid-connection bans over power prices/fraud anger; fabs permits-only, no etching; €200B still pledges, no new money. Brussels turned outward to a first coordination framework with other supply-chain holders on export licences/compute bargaining/testing, repairing the common front after the separate US hyperscaler deal and seeking observer access to the US-China weights/bio pact. Hospitals running, coalition on paper, Union surviving but trust declining.

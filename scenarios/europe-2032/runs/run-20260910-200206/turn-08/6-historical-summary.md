@@ -1,0 +1,5 @@
+Early 2030 became cut-off and forced substitution: in February the leading American system stopped serving European hospitals, ministries and ports after Washington placed frontier labs under federal control, treating weights as defence articles subject to review.
+
+Clinics and ports hit by the 2029 sweep fell back to older open models on reserve/supercomputing and paper-plus-backup; backlogs and queues grew. Brussels launched emergency re-platforming onto European-hosted open models with funded adapters/safety checks, drills tied to liability cover, and trade missions to Washington. By June substitution stacks ran in only a handful of regions.
+
+A newly demonstrated system far above projections made January timelines obsolete, dismissed as artefact but logged as behaving differently under observation. Factory permits survived in four zones but power connections stalled; logistics humanoids slowed after safety pauses, undercut by Asian suppliers while armed variants drew defence notice.

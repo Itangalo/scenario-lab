@@ -1,0 +1,7 @@
+Winter ransomware wave with self-mutating AI tooling degraded unpatched towns to paper while audited utilities and continuity-hosted regions stayed on; frontier budgets shrank after valuation collapse, slowing gains.
+
+Labs' control technique became standard practice this spring, adopted willingly for fewer refusals and legible behavior and written into EU deployment reviews; certified hospital permit assistants and continuity-hosted utilities showed matched predicted/observed behavior and trusted logs and resisted lingering tooling, while uncertified systems including large member state's separate US cloud stayed outside — Brussels conditioned further hospital-stack cloning and surge protection on logged certified builds, offered pooled evaluation first access, neither refused nor taken.
+
+Excluded from US-China weights-security pact with thin verification, Brussels built withholding coalition with Ottawa, Seoul, Tokyo and others around export-licence alignment, joint compute bargaining, and shared evaluation pool; Washington continued structured access, discussed but did not grant observer seat, suppliers complained of dual paperwork, finance ministers questioned funding via reprogrammed research/digital funds.
+
+Two-year essential-services pledge ended partial: core audited power and emergency care on, periphery still hand-patched — relief without trust, now with a certificate that worked where it ran.

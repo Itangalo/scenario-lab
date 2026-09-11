@@ -1,0 +1,14 @@
+### The cadence quickens
+Autumn brought no announcement, only tempo. A leading American lab shipped two agent upgrades in four months, each trained with pipelines that made heavier use of prior agents to design experiments, triage failures and rewrite scaffolding. Developers spoke of release notes arriving before the last version had been evaluated. In Brussels, the briefing decks thinned.
+
+The Commission's internal note, leaked in October, noted that power, chips and grid connections were binding more than headcount on deployment timelines. Open models followed with a lag, consolidating prior frontier gains toward the midpoint of what was already published — moving from 65.3 toward the prior frontier of 75.0 to about 70.1 — without leapfrogging the new jump to 80.0, and remaining well below the frontier level.
+
+### Concrete poured, current missing
+That reading gave the long-promised gigafactory programme its first visible work, not its completion. No new measure was introduced this turn; the in-flight InvestAI Gigafactories work continued. Cranes rose on three permitted zones, grid reservations were locked to EU-law entities, and the Investment Bank pipeline was formally directed to power upgrades within existing mandates. Ministers cut ribbons in hard hats.
+
+But the sites remained shells, and remain so. Coalition chips had not arrived on published terms — Washington still had not published them — and no new appropriation backed any inference pool. Energy officials privately warned the reserved megawatts existed on paper while substations awaited transformers. The press called it sovereignty of substations without servers. Full effect awaits chips, transformers, and funding, now pushed to later turns, with no completion scored this turn. Sovereignty therefore eases from 18.0 to 17.0 on capability pressure and in-flight-only progress.
+
+### Containment closed, trust not restored
+The joint health operation from the prior turn did close its two open files. The Commission paid for extended sampling, ending the municipal quarrel, permits were forced through in the two holdout cities, and pooled reagents were restocked. The frozen benefits system stayed frozen, human review teams were hired, and first redress cheques from social funds went out in December.
+
+It stopped the bleeding without restoring faith. Nightly news paired images of empty wards with queues at welfare offices. Auditing and review capacity stretched under faster release tempo, eroding safety margins modestly without a new failure or rollback. Commentators asked why auditing harm required a court order, and why holding on to controllable computing required an emergency no one had voted for.

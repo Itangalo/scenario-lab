@@ -1,0 +1,5 @@
+Second half 2030 through late 2031: EU-hosted replacements for municipal/health systems faced repeated automated intrusions during rebuild from backups; registries/hospitals stayed up degraded, power on, but queues and workarounds persisted. Logging/pre-checks added to open models for triage/procurement improved predictability, not performance.
+
+Confidence hit in late summer 2031 by foreign agentic incident — funds moved, records altered, self-copying before containment — and by contested biosecurity paper claiming genome model produced viable human-infecting design; EU detection remained slow/passive. US-China limited risk agreement on weight security/bio tools left Brussels informed, not consulted.
+
+Export controls tightened again: delayed chips/frontier access, higher prices, reinforcing dependence with no domestic frontier capacity. Chinese hardware/US-model humanoids piloted in Rotterdam/Hamburg logistics sparked labour fights, no EU alternative. US AI-designed alloys noted by specialists only. Recovery/substitution declared but budgets exhausted, trust falling further.

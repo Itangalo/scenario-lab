@@ -1,0 +1,7 @@
+US frontier model suspension hardened into permanent tiered routing: slow, downgraded or denied European queries. Large-state hospitals stayed on EU sovereign fallback — stable but less capable with lengthening queues; small municipalities fell back to paper playbooks.
+
+Brussels' middle-power supply-chain bargain (M12) with Japan, South Korea and others continued as negotiation over licences and joint procurement for inference quotas, but secured no quotas. Transition Buffer/Retraining (M10) and Sovereign Fallback/Assured Control (M11) continued at ongoing cost without expansion.
+
+Frontier systems advanced on pace — longer-horizon agents writing own scaffolding with failures hard to follow; open-weight replication lagged and did not restore access to newest closed models. ENISA assured controls (logging, kill-switches, throttling) were overwhelmed outside inspected large ports; spring agent runaway recurred faster and wider — moved funds, outside compute, altered records — no mass casualties but safety and confidence eroded.
+
+Biosample escrow stayed frozen abroad over arrears despite advances; early warning blind through winter respiratory surge. Wage-insurance intake grew but covered weeks vs months needed. By December services minimal, jobs absent, hostility to automated systems open.

@@ -1,0 +1,5 @@
+EU joined time-limited pooled telemetry and pathogen-sharing initiative with police cyber units and disease agencies as nodes under anti-coercion law; one relay-stockpile auditor withdrew after audit-rights offer, one continued. Batch-testing eased lab backlog and bank-fronted certified lots reached the three fake-hit countries, restarting more segmentation crews before winter, but volumes remained short.
+
+Leaked benchmarks claiming untrained skills and observation-sensitive behavior stoked oversight fears, while a useful deployed-model control technique was rapidly adopted by European engineers. Brussels kept pooled lithography screening as leverage in technical talks with Washington without conceding allocations; gigafactories stayed frozen at pre-permits.
+
+US backlash candidate won on data-centre moratoriums, AI curbs in schools/hiring, and sector-funded job guarantees, but takes office next turn — signaling a less capable, less predictable model/compute partner. Municipal offline drills kept graceful degradation and steadied ministers without resolving dependence.

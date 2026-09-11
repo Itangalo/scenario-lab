@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t3: M1 InvestAI Gigafactories −3, M2 Tech sovereignty package −3, M3 EU Grid and Critical Systems Shield −3, M4 EU Agent Containment and Essential-Service Continuity Protocol −2, M5 EU Verification Bridge and Allied Supply Compact −2, priority M4 −1 = −14
+PROPOSAL BONUS: EU Verification Bridge and Allied Supply Compact (cat 8, small) +3 — export_control_escalation and us_china_agreement both landed this turn and this answers them directly
+LEGITIMACY LENDS: capital 12, sentiment 26 -> +2 (capped, included in capital total)
+SOVEREIGNTY: 22 last turn, no finishing measure, in flight +0, export_control_escalation t3 −2, capability rose 1.0 −0 = 20

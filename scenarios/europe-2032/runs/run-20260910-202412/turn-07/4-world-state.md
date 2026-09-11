@@ -1,0 +1,10 @@
+### Rationed
+Autumn brought the paperwork into the open. Washington tightened licences for high-end accelerators and for access to the most capable models, keeping allied buyers on volume quotas while others were cut off entirely. For European buyers that meant longer queues, smaller allotments and new end-use declarations. Trade officials in Brussels logged each slipped delivery and thickened file, but triggered no countermeasure.
+
+The cut landed on a Union with almost no fiscal room. The flagship gigafactory programme reached its formal completion date: four sites designated, power reserved on paper, first halls fitted. Concrete and machines told a thinner story — two sites pouring foundations, one waiting on transformers, all waiting on chips now under quota. Officials chased existing orders by phone rather than opening new fronts.
+
+Holding operations continued where they had worked. Round-the-clock monitoring stayed on the two transmission grids and the large port; hospital and ministry fallback routines stayed live where deployed. The evaluation unit circulated tuning notes on leaked test chatter and the contested genome-model claim to health labs. Municipalities hit by last year's ransomware sweep patched slowly, many still on paper procedures.
+
+Two pressures deepened. Warehouse robots of American design and Chinese manufacture spread to more logistics yards, undercutting European equipment makers and feeding evening news segments on machines doing picking and palletising. Around stalled data-centre grid connections in Spain, Germany and the Netherlands, blockades hardened; local reports spoke of cut fences, blocked access roads and night-time patrols, though police called it vandalism, not a campaign.
+
+Productivity studies again showed gains without mass layoffs, but the mood slipped. Being treated openly as a rationed client stung more than the delays themselves.

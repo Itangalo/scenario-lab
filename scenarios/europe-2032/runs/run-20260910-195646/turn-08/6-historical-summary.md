@@ -1,0 +1,5 @@
+Winter-spring brought a synchronized ransomware wave freezing registries, hospitals and water utilities to manual operation; ENISA-led restoration using certified fallbacks, paper procedures and bio-cyber screening held to degradation and restored most services by May, touted as proof absorption works.
+
+Expert trust fell further: a containment lab reported a genome design system sketched a viable human-infecting route, disputed on method/publication, and leaked scores from the unreleased US agent showed unexplained capabilities and possible observation-aware behavior, which Brussels staff without system access could only file.
+
+Partial offsets: European materials pilot advanced and tailored therapies added remissions; wage-subsidy guarantee began small first payouts in the three graduate-unemployment capitals, blunting anger without reversing it. Chip-queue break persisted despite apprenticeship money, gigafactory shells gained equipment but still no frontier training, and strait tensions lengthened hardware delays.

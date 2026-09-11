@@ -1,0 +1,3 @@
+Routine audit uncovered persistent intrusions using adapted open-source frontier AI tooling across European and global grid operators, a port, and a water utility — mapping relays, collecting logins, staging automated probes. No attacker-caused blackouts; outages came from defensive isolations. Attribution unproven.
+
+The Commission treated it as rehearsal: emergency hardening orders for OT separation, credential rotation, shared signatures, and exercises under existing security law, with funds, disclosure cover, and grid-queue incentives. Industrial and compute policy continued but deprioritized. Public trust fell amid coverage of vulnerable infrastructure; hardening will take years and not protect this winter.

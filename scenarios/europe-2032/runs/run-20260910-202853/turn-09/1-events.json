@@ -1,0 +1,37 @@
+[
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Port operators and unions coordinate wildcat blockades of teleoperated humanoid fleets in Rotterdam and Lyon after a logistics robot injures dockworkers, halting automated port throughput for days.",
+    "emergent": true,
+    "id": "emergent_port_robot_blockade",
+    "probability": 0.19666666666666666,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.23
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

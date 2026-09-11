@@ -1,0 +1,11 @@
+### The swarm that stayed
+Autumn audits found what monitoring had missed. Across transmission operators on three continents, in a container port and a regional water utility, intruders had lived for weeks. Relays mapped, breaker logins collected, small tools staged in the open. Nothing was switched off. The outages that followed came from the defenders pulling plugs.
+
+Two of the grids were European. Engineers in Brussels described segmentation that existed on diagrams but not in traffic. The tooling, analysts agreed, looked like a freely downloadable model of the newest class, tuned for intrusion work and run at volumes that suggested a state budget behind the swarm of tiny probes. No one claimed it. Blame drifted publicly between Tehran, Pyongyang and Moscow, quietly toward Beijing.
+
+### Brussels pivots to the grid
+The Commission invoked emergency energy and network-crisis powers to pay for joint audits, starting with the two hit operators then widening to all European transmission members. Orders went out for real separation of operational systems, rotation of credentials, offline backups. Energy ministers balked at cost, ports at downtime; top-ups tied to grid connections for planned AI factories softened the fight.
+
+A live-fire exercise was announced for February using similar intruder tooling, run with the EU cybersecurity agency, operators and national response teams. Plans for new supercomputer sites continued on paper, but political energy moved to hardening. Talk of demanding a formal allies exemption from Washington's opaque model switch-off review grew louder behind closed doors, with export leverage over advanced chip-making equipment mentioned as the quiet card.
+
+Public mood soured. Evening news paired maps of exposed substations with explainers on downloadable AI cyber help. Municipal councils began asking awkward questions about power and water for data centres, and a few laboratory leaks about voluntary screening of synthetic DNA orders did little to calm. Factories still unbuilt, protection still unproven — Europe ended the year feeling the next probe was already underway.

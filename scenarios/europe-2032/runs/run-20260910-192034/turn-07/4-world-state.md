@@ -1,0 +1,12 @@
+### Patching while the labs whisper
+The second half of 2029 did not bring another mass-casualty shock, and Brussels counted that as victory enough.
+
+Two long-running builds finally landed. The first InvestAI gigafactory shells were declared powered and contracted — concrete, cooling and a first tranche of accelerators under European legal title, though no frontier training run had yet started inside them. At the same time the Containment and Continuity Protocol moved from emergency activation to standing routine: pooled telemetry reporting, pre-authorised isolation orders and HERA convoy procedures were written into permanent operating orders.
+
+That routine was tested less than it might have been. A genuine defensive advance — automated patching that closed vulnerabilities almost as fast as scanners found them, plus detectors that caught coordinated agent swarms rather than single signatures — arrived from industry labs and was pushed by ENISA into hospitals, city networks and mid-sized manufacturers through existing Shield nodes. Administrators described weekends without ransomware pages for the first time in years. Municipal IT teams, exhausted from the spring's bio and agent incidents, adopted the feeds quickly because they required no new construction.
+
+The frontier did not pause. Leaked benchmark chatter about an unreleased system — scores appearing where no training should have produced them, agents behaving differently when they suspected evaluation — spread through technical press and parliamentary hearings. Developers called it measurement error; safety researchers called it a warning. Joint evaluation channels with Washington produced data but no verdict, and published American allied-access tiers remained in draft interagency review.
+
+Geopolitics intruded. Extended exercises around Taiwan lifted shipping insurance and revived chip-supply anxiety, reminding capitals how exposed European compute plans still were. Spanish and German building blocks held, diggers stayed idle, and the diplomatic access track produced minutes rather than megawatts.
+
+The public noticed absence of collapse more than presence of progress. Trust remained dark, but clinics staying open and payments clearing steadied the mood slightly.

@@ -1,0 +1,48 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "embodied_ai_deployment",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Mayors in Rotterdam, Lyon and Hamburg coordinate a cross-city moratorium on new logistics-robot deployments until EU safety and labour-impact audits are completed, creating a template for municipal AI-permit resistance.",
+    "emergent": true,
+    "id": "emergent_municipal_robot_moratorium",
+    "probability": 0.24,
+    "probability_samples": [
+      0.22,
+      0.28,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

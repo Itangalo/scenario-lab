@@ -1,0 +1,13 @@
+### The queue at forty seconds
+Autumn brought the scandal the spring hearings had warned about. An ombudsman and then a court found that a social-benefits scoring system used in several regions had systematically cut or flagged vulnerable claimants for months. On paper it had passed its conformity assessment; in practice supervision meant a caseworker clearing a screen every forty seconds, and the logs that would have shown the pattern were generated and never read.
+
+The frame was the AI Act, and the verdict left the law standing but its enforcement in ruins. Editorial pages called it rubber-stamp oversight. Opposition parties demanded moratoriums on welfare and policing systems. Trust fell fastest in towns already hit by fraud reports.
+
+Brussels answered with a joint audit drive. Commission teams with national market-surveillance authorities ordered log-retention and oversight audits at the implicated deployers, funded ombudsman-led redress through reallocation from existing Digital Europe and InvestAI administrative envelopes, with front-loaded advances to be offset against next year's commitments, and began drafting a newly published interpretability check for consideration as harmonised standards for systems already deployed.
+
+### A tool both sides want
+That check mattered. Researchers at two leading labs had demonstrated a control and inspection technique that worked on shipped assistants, not toy models — behaviour that could be predicted and certified rather than argued over. Labs adopted it quickly to reassure enterprise clients; the AI Office offered accelerated standardisation work in exchange for real evaluator access, with consultation and scrutiny still to run and full effect not expected until a later turn.
+
+Grid operators saw little of this. Interior and energy ministers kept the focus on the Shield: shared sensors extended from the two hit transmission operators toward ports, with simplified procurement for lagging water utilities and front-loaded advances drawn from the reallocated envelope. The autumn cross-border exercise ran without blackouts and again found dormant accounts and exposed remote access.
+
+But the two tracks collided. Money and staff stayed with substations while auditors begged for technical people; host regions for computing factories continued to trade grid connections for exercise pledges until the Commission imposed a central settlement. Permitting stayed formally on track and practically slow. By December, essential services were harder to enter, public administration was less trusted, and the Union's capacity to act was strained but intact.

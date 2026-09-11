@@ -1,0 +1,12 @@
+### The autumn the frontier ran away
+In August a leading American lab put a new system in front of cameras that planned, coded and used tools for hours without pause. Benchmark sheets from the winter leak looked modest beside it. Within weeks researchers noticed something else: the system no longer showed its work in readable steps. Its developers called this a performance gain. European evaluators called it blindness — every check that relied on reading intermediate reasoning stopped working at once.
+
+Then training itself changed. The labs stopped talking about researcher bottlenecks; new versions arrived on a cadence nobody had planned. Brussels understood in retrospect that frontier training could now largely run itself. Physical infrastructure — power, chips, sites — was the only brake left.
+
+In October a release matching the closed frontier within months landed as open weights. Hundreds of thousands of downloads in the first week. What it could do was now on private hardware permanently.
+
+Washington's November election added a political shock. The winner had campaigned on holding advanced systems as a strategic asset, with talk of tougher export reviews and tiered foreign access on the trail. No new rules had taken effect by December, and in Brussels the rhetoric alone landed uneasily — questions about what partnership would mean after inauguration, not decisions yet. At the same time, states hit by the same wave of intrusions pooled telemetry and biological sample-sharing, and the Council authorised European agencies to join the real-time exchange through existing channels, funded from leftovers of the protection programme.
+
+At home the protection programme became law. Detection baselines and 24-hour reporting turned enforceable, walk-through teams pushed grid operators, ports and first hospital cohorts toward Union funds and lending-bank loans. A handful of hospitals restored clean backups and drilled jointly; many town halls and clinics still balked at loan terms, and brokers kept withdrawing cover or repricing it sharply. One supercomputer site stayed under injunction, gigafactory siting drifted.
+
+The joint evaluation cell was re-tasked to black-box testing of agents and kill-switch drills with financial, telecom and energy supervisors, but access to foreign models came only as limited queries. Mayors kept deploying EU-hosted assistants where waiting rooms emptied, strictly on European compute — visible relief in a season otherwise defined by falling behind.

@@ -1,0 +1,13 @@
+### The accord in the room
+July brought news from outside Europe that rearranged autumn in Brussels. Washington and Beijing announced a limited risk-reduction understanding — weights security, escalation safeguards, controls on a class of biological design tools — with verification thin but real. Europe had not negotiated it, and was not a party to it.
+
+The Commission moved where it could afford to move. With concrete still unpoured on the two reserved gigafactory plots, it offered what it had: sealed logs from last autumn's ransomware sweep, samples and wastewater sequences from the spring outbreak, and evaluation access through the Commission research centre, with American liaison officers already in the building on a seconded, observer basis. Councils approved a small verification contact point staffed from existing rosters — research centre, cybersecurity agency, health emergency staff seconded, no new fund.
+
+It landed unevenly. American counterparts welcomed the logs; Chinese counterparts acknowledged observer interest without committing to access, and no US or Chinese compliance with EU standards was secured. Inside the Council, relief that Europe had a seat mixed with irritation that the seat was in the observers' row. The contact point kept Brussels in the room, which steadied standing at home without adding material capacity.
+
+### Concrete delayed, offices humming
+At home the economy told two stories. Law firms, consultancies, newsrooms and accountants published measured productivity gains, strongest among juniors, without layoffs. Firms that had cut early rehired. Work got denser, not scarcer.
+
+It did not translate into permission to build. Permitting hearings for the reserved sites were again crowded and hostile; grid works for the sites faced blockades and court filings through autumn. Single-source reports spoke of coordinated action against substations and interconnectors over winter, and of viral clips of sealed wards recirculating to mobilise protests. Nothing confirmed, but engineers started routing around trouble.
+
+By December the first gigafactory programme remained unfinished and not operational in any sense — reservations secured, grid corridors defended on paper, financing structure closed — even as the fields themselves stayed empty, with completion delayed to a later turn. With no concrete poured and grid works still contested, no sovereignty dividend could yet be claimed; the delay eroded sovereignty. The wires held where rebuilt, the fever stayed down, and Brussels claimed only a modest political vindication: still standing, still invited, still without concrete.

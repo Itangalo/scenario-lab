@@ -1,0 +1,11 @@
+### A tool that works, a chip line that tightens
+Spring brought two shocks from outside, pulling in opposite directions. A major laboratory published an interpretability and control result that actually transferred to deployed systems — prediction of failure modes before they were observed, with a certification check rather than a white paper. EuroHPC engineers and hospital validation teams picked it up within weeks because they needed it, not because Brussels told them to.
+
+At the same time Washington tightened chip and model export controls again. Volume licences for allied buyers were preserved on paper, but quotas, end-use attestations and re-export clauses hardened. For the Union's gigafactory pipeline it meant delay and paperwork: accelerators already ordered moved slowly, future lots required new assurances. The Commission chose not to open a trade front, briefing for licence continuity instead.
+
+### Shield pays, clinics breathe
+The cyber picture improved where it had been drilled. The Critical Infrastructure Cyber Shield completed its rollout — mandatory reporting, a single picture across grid, port and water, live breaker-isolation in the forced-participation sites. Cleaned systems still re-staged, but detection was faster and operators who had drilled contained it. Finance and transmission held; municipalities and small hospitals remained thin.
+
+Hospitals became the test of the new assurance tooling. The AI Office with health authorities ported the checks into the validation queue for EU-hosted radiology and discharge models, and auditors cited certified logs in answer to the benefits-fraud court finding. Inference stayed tight and queues did not clear, but no new switch-off scare occurred. Ward-level experimentation with freely downloaded models continued quietly, with single-source reports of bad triage advice surfacing in one member state press — unconfirmed, easily dismissed, but persistent.
+
+Siting stayed frozen. No permits were forced at the two blockaded hyperscale sites; grid priority for the advancing site stayed conditional on hardening. Build timelines slipped by months, staffing plans were rewritten, and the pipeline survived by not becoming the target.

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: M11 EU Assurance Uptake for Deployed Agentic Systems −2, M12 EU Degraded Operations and Loss-of-Control Fallback −2, priority −0 (no effect, no cost below capital 20) = −4
+PROPOSAL BONUS: EU Degraded Operations and Loss-of-Control Fallback (cat 6, small) +4 — loss-of-control incident plus opaque reasoning landed this turn and this answers it directly via survivable degradation
+LEGITIMACY LENDS: none — capital 18 above sentiment 11, no lend
+SOVEREIGNTY: 10 last turn, no cat4 finishes, no cat4 in flight +0, embodied_ai_deployment t12 −2, capability rose 1.5 (below 2, no −1) = 8

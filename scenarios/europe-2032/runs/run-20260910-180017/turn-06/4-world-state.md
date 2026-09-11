@@ -1,0 +1,13 @@
+### Cut off
+In February, access went dark. Hospitals in Lyon and Rotterdam, two ministries and a cluster of exporters that had built triage, procurement and coding workflows on the leading American model received short termination notices: volume limits exceeded, licence review pending. No reason, no appeal channel. Fallback models kept the lights on, but slower and with errors staff had forgotten how to catch.
+
+Washington confirmed the shape a week later. The new administration, elected on holding advanced systems as a national asset, rewrote export licensing around country tiers. Allies kept nominal buying rights; in practice accelerators and top-tier interfaces arrived on quotas and case-by-case approvals. Brussels pricing slipped again, delivery dates moved to next year.
+
+### Holding without cover
+The Commission chose not to retaliate. Emergency teams shifted cut-off users to older licensed versions and to capacity bought from the one member-state hyperscaler deal that had stayed outside the common line, under supervised failover. A Council instruction barred new critical workflows from being built on uncontracted foreign interfaces.
+
+At home, the stopgap held barely. The finance ministry facility operated as a temporary window: cities and regional hospitals pooled self-insurance with a first-loss promise from the Union budget while global reinsurers extended their exclusions from cyber to technology-errors and business interruption. Ports from Antwerp to Genoa deferred automation upgrades; several hospitals kept curtailed non-urgent schedules to fund their own risk pools. The full backstop stayed with finance ministers.
+
+Energy and telecom exercises passed again, and joint security staffing conditions were enforced. Health authorities finished deploying pooled sequencers and started inspection pilots for synthesis screening.
+
+There were bright spots officials seized on. Two regions showed waiting lists falling where administrative assistants had been properly deployed — a European procurement decision, not an imported product. But evening news paired it with pharmacists re-entering prescriptions by hand after the cut-off, and with chip freight rates rising again as manoeuvres widened in the Taiwan Strait. The public mood stayed anxious, and the decision to shelve the two public gigafactory sites for lack of private money read as confirmation that cures and compute would remain imported.

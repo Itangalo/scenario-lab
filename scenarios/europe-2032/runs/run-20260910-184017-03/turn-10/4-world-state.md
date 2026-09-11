@@ -1,0 +1,11 @@
+### The winter of paper registries
+The new year did not bring recovery. A largely automated ransomware sweep rolled through public administration in January and February, encrypting registries, billing and hospital admin systems in dozens of cities. Weeks later, health authorities confirmed a separate biological release involving a modified agent — casualties, closed wards, weeks of contact tracing. Investigators spoke only of forged paperwork and disrupted systems, with inquiries still open.
+
+Where municipal teams had drilled degraded operation, they cut cables, started generators and ran dispatch by radio. Water pressure held, pharmacies checked batch numbers by hand against printed lists. Where they had not, ambulances queued, elective care stopped, and vaccination lines thinned as rumours spread that real doses were fake.
+
+### Trust at the checkpoint
+Brussels pushed its continuity programme into operation. Joint biosurveillance feeds flagged variants earlier, allied cyber centres flooded municipalities with signatures faster than technicians could install them, and checkpoint authentication seized more crates of counterfeit kits.
+
+The Commission then turned to a local recovery and care network — municipal repair teams, pharmacist verification, hospitals kept isolated on backup power. Councils argued over money reprogrammed from cohesion and health funds, and over conditions linking future grid support to staying in common procurement. The bilateral buyer outside the pool was not cut off, only warned again. Legal officers questioned whether health-emergency articles could carry the whole construction, and disbursement slipped while staffing and funding were confirmed.
+
+Parliament hearings on job displacement heard new evidence that office work was changing shape rather than vanishing, but the testimony was overtaken by ward closures and ransom notes. Police confirmed only a single investigation into misuse of compromised municipal servers, with no further details released. Food and medicine moved, barely, on systems no one fully trusted.

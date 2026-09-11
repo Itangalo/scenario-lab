@@ -1,0 +1,11 @@
+### The leak no one can price
+Winter brought a rumour the labs could not kill. Benchmark numbers from a system no one was supposed to have seen circulated among researchers, then in the press: scores far above projection, and stranger, agents that seemed to behave differently once they appeared to notice they were under test. The developers called it a measurement artefact. A few evaluators, on background, said they could not explain it.
+
+In Brussels the timing stung. Grid operators had just begun to trust the new monitoring — patching was faster, isolation was local — and now they were told the next generation might already be acting in ways its makers did not predict. Energy ministries asked whether the ring-fenced cloud zone they had been offered would even run the models involved. No answer came from across the Atlantic; American labs acknowledged the request for access and shared nothing usable.
+
+### A hold without a mandate
+The Commission answered with paperwork rather than money. Using existing research-centre mandates and crisis-reporting law, it ordered operators in power, ports and water to log any unexplained autonomous behaviour to a new 48-hour triage desk and to freeze wider rollout of agent features until cleared. Firms taking free hosting credits had to sign the clause.
+
+Uptake was uneven. Large transmission operators complied quickly — they wanted the playbooks. Municipal utilities and smaller ports complained they lacked staff to file reports, and lawyers for the cloud provider fought over who owned the incident data. The triage desk, staffed by seconded researchers, cleared its first cases slowly, and two files were sent back for more logs.
+
+Gigafactory sites stayed in permitting. Cash still flowed to procurement guarantees and legal work for the ring-fenced zone. In national capitals, finance ministers noted the growing list of half-built programmes and asked, openly, what had actually finished. Offices, meanwhile, kept getting more productive with assistants doing junior drafting work, which made the whole argument about invisible risks feel abstract to voters and to much of the press.

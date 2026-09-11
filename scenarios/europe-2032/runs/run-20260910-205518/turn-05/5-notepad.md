@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t5: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Accession to Joint Cyber Command −2, EU Essential Services Continuity and Bio-Detection Backstop −2, priority −0 (capital below 20, no effect, no cost) = −10
+PROPOSAL BONUS: EU Essential Services Continuity and Bio-Detection Backstop (cat 6, small) +4 — eu_frontier_access_denied and bio uplift signal fired this turn and this answers both directly
+LEGITIMACY LENDS: capital 16, sentiment 29 -> +2
+SOVEREIGNTY: 16 last turn, no capacity event finishes, Gigafactories in flight +0, eu_frontier_access_denied t5 −2, capability rose 7.5 −1 = 13

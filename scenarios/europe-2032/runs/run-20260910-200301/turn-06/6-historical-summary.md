@@ -1,0 +1,5 @@
+By early 2029 Taiwan chip blockade and US tiered-access policy persisted, ending EU build ambitions. Gigafactory sites remained empty but permits, grid reservations and ring-fenced bank funds were preserved via emergency orders and price relief.
+
+Brussels pivoted to continuity: degraded-operations compact for power, ports, hospitals, payments with pooled spares, drills and mutual aid. Observatory fed outside-in tests on loose open model to cyber teams. Port ransomware and grid fault survived in degraded mode without cascade.
+
+Chokepoint defence closed: coercion probe of US servicing ban yielded no leverage, Dutch backstop unfunded, Tokyo/Seoul offered only sympathy, Hague kept bilateral Washington channel. Safety-net placements dwarfed by layoffs; AI use rose as trust fell. EU kept paper sovereign options and limping services, confirming dependence on rationed foreign models.

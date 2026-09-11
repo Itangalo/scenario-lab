@@ -1,0 +1,5 @@
+Ransomware wave built with automated tooling swept municipal administrations, hospital IT and logistics across several states; wards went to paper, payments stalled, two port systems taken offline. EU cyber agency and crisis network surged, using port/grid exercises and insurer-mandated monitoring checklists for triage; energy and ports barely kept running, cyber cover held only after emergency ministry-underwriter calls, attribution pending months.
+
+Simultaneous discontinuous frontier leap in reasoning and agentic planning obsoleted deployment assumptions; new interpretability methods caught even less, assurance slipped further.
+
+Capital freeze deepened around EU compute: factory site/grid reservations protected on paper but no private guarantees, no ground broken, permit disputes at two sites hardened citing blackouts and illegible models. Public trust collapsed further over closed services and diverted ambulances paired with autonomous demos; anger grew at dependence on foreign models decisive in both attack and recovery.

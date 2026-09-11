@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t5: M1 InvestAI Gigafactories −3, M2 Tech sovereignty package −3, M5 European Public Results Programme −2, M6 Opaque Reasoning Assurance Programme −2, M7 EU Essential Continuity and Biosecurity Hardening −2, priority M6 −1 = −13
+PROPOSAL BONUS: EU Essential Continuity and Biosecurity Hardening (cat 6, small) +5 — answers bio_uplift precursor and embodied deployment shock this turn directly, closes old commitment
+LEGITIMACY LENDS: capital 14, sentiment 29 -> +2
+SOVEREIGNTY: 16 last turn, no finished cat4, M1/M2 in flight +0, embodied_ai_deployment t5 −2, capability rose 3.0 −1 = 13

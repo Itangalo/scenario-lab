@@ -1,0 +1,7 @@
+By 2030-31 the EU endured blockade, blackout and cure on foreign terms, answering with emergency powers and the Offline Continuity Corps that held power and emergency care by spring 2031.
+
+That base was undercut by clinical dependence on dark American models. Brussels pushed an access pact and an inference sprint: by late 2031 EU-hosted dose-planning ran in Lyon, Milan and Rotterdam — a few hundred patients on cleared, auditable clouds — alongside a Swiss-German protein-design breakthrough and office productivity gains. Procurement stalled on unauditable compressed reasoning and lack of EU-hosted compute; capacity stayed thin.
+
+In Feb. 2032 Washington tier-enforced a cutoff: the US frontier model refused EU users, stalling dose-planning wrappers overnight. EU-hosted sites kept running — a few thousand plans by June, trusted but not queue-shortening — as brokers sold therapy slots abroad and parliament probed queue order.
+
+Meanwhile Chinese-built manipulators with American control software took over picking and port sorting in Hamburg, Antwerp and Łódź, raising throughput while hardening a wage divide; EU alternative stacks were costlier and slower. A new operations stack pooled orders and seconded teams but still lacked accelerators and inspectable weights. A Swiss-German enzyme result licensed fast but did not reach patients. Continuity held lights and permits; cures by permission did not.

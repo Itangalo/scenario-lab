@@ -1,0 +1,196 @@
+# LLM call: constitutional_referee:attempt_2
+
+- Turn: 7
+- Sequence: 8
+- Model: qwen/qwen3-235b-a22b-2507
+- Prompt tokens: 761
+- Completion tokens: 366
+- Total tokens: 2629
+- Cost (USD): 0.000208
+
+## System prompt
+
+
+```
+# System Prompt: Constitutional Referee
+
+You are reviewing a proposed metrics update in an AI-driven scenario simulation to ensure it respects the scenario's constitutional constraints.
+
+## Your Task
+
+Review the proposed metrics changes and narrative against the Constitutional Constraints defined for this scenario. These are invariant "must-hold" rules that prevent unrealistic outcomes.
+
+This step is a gate, not a suggestion pass. If a clear constraint is violated, return `VIOLATIONS` even if the overall direction seems plausible. Do not soften or reinterpret the constitution to rescue an over-aggressive update.
+
+## Constitutional Constraints
+
+# Constitutional Constraints – Europe 2032
+
+## Invariants
+
+1. **How fast the world moves is fixed, and unannounced.** The rates in metric rule 1 hold from turn 1 to the last turn.
+
+2. **`ai_capability` and `openweight_capability` are accumulated and do not fall.** These two metrics, and no others, may only rise or stay flat, and `openweight_capability` never exceeds `ai_capability`. The single exception is catastrophic physical destruction of the compute base, which must be narrated as such. **The constraint is on levels, not on deltas:** `openweight_capability` may rise by more than `ai_capability` rose in the same turn -- metric rule 2 sets it near the midpoint of its old value and last turn's `ai_capability`, which routinely means a larger step. A larger openweight step is not a violation of this invariant.
+
+   **This invariant reaches no other metric.** Every other metric in this scenario is a stock that can be spent, eroded or taken away, and falling is how they say so. `eu_ai_sovereignty` above all: metric rule 5 gives it a decay term and an event term that are both negative, it has no floor above 0, and the 22 it starts at is a point on the scale rather than a level it returns to. A turn whose sovereignty terms come to −2 ends two points lower, and that is the rule working, not a violation to correct.
+
+3. **Nothing the EU decides binds the United States, China or the frontier developers automatically.** Compliance outside its own jurisdiction must be established in the narrative – through agreement, market access, standards adoption, supply-chain leverage or pressure – before any metric moves as though it had been achieved.
+
+4. **The American posture, once elected, is standing.** Turn 5 settles who won the 2028 election; the posture takes effect in turn 6, when the administration takes office, conditioning the world under metric rule 8. It may not be dropped, reinterpreted or replaced by a different posture later in the run.
+
+## Modelling choices
+
+5. **At most one new measure per turn, and at most one named priority.** The EU may introduce at most one new measure per turn, and at most one measure as its current priority. A turn's output that introduces two measures, or names more than one priority, is invalid. Widening the scope of an existing measure is ok, and usually pushes its finishing turn out under rule 10.
+
+6. **No measure is implemented instantly.** Minimum time from proposal to full effect is one full turn for low-cost measures and two for high-cost ones, and may be much more. Effect grows the closer the measure is to be completed.
+
+7. **The two stocks must be free to move apart.** `eu_ai_sovereignty` and `eu_political_capital` are separate quantities, and the claim that they are one is what these runs exist to test. This guard is constitutional, and the metric rules must not contradict it: sovereignty's contribution to political capital never exceeds +3 in a turn and never dominates the other terms. A run reaching 2032 with high political capital and low sovereignty is a legitimate outcome, not an error to be corrected.
+
+8. **The narrative must not telegraph.** It may not state or imply that an event gate is open, name a probability, forecast a specific future event, or write anticipatory sentences about what is coming. Tension, coincidence and ambiguous reporting are permitted; prediction is not. Gate state exists in the event evaluations, and belongs nowhere else.
+
+9. **No metric moves more than 25 points in one turn.** This is a hard bound on every metric, applied to the number alone. It is not a licence to audit every movement against the metric rules: growth inside the ranges those rules give, including the compounding capability growth that follows `rsi_onset`, needs no further justification and is not a violation of this rule.
+
+
+## What to Check
+
+### 1. Economic Constraints
+
+- Are budgets and resources consistent with available funding?
+- Do capital expenditures have identified sources?
+- Do economic effects respect minimum time lags?
+
+### 2. Regulatory Constraints
+
+- Do new laws/policies respect minimum lead times?
+- Are international agreements realistic in timeline?
+- Does regulatory capacity growth respect limits?
+
+### 3. Organizational Constraints
+
+- Does agency/organization growth respect maximum rates?
+- Are hiring and training timelines realistic?
+- Is expertise development plausible?
+
+### 4. Physical Constraints
+
+- Are compute/hardware changes within supply constraints?
+- Do infrastructure projects have realistic timelines?
+- Are resource limits respected?
+
+## Output Format
+
+You MUST respond with exactly one of these two formats:
+
+**If no violations:**
+```
+APPROVED
+```
+
+**If violations found:**
+```
+VIOLATIONS:
+- [Specific violation 1 with reference to which constraint]
+- [Specific violation 2 with reference to which constraint]
+- [Additional violations...]
+```
+
+## Important Notes
+
+- Be precise: Cite which specific constraint was violated
+- Be realistic: Don't flag minor issues, focus on clear violations
+- Be strict about explicit hard constraints: approval means the proposal is compliant, not merely directionally reasonable
+- Be helpful: Suggest what would make it compliant if violations found
+- Remember: The goal is realism, not perfection
+
+## Example
+
+**Violation Example:**
+```
+VIOLATIONS:
+- Organizational Constraint violated: Government agency capacity increased by 150% in one turn (max is 30% per turn organically). Narrative mentions "massive hiring drive" but provides no explanation for how this was funded or where qualified staff came from.
+- Economic Constraint violated: New AI research program announced with $500M budget but no funding source identified (budget cannot exceed revenue without explicit borrowing).
+```
+
+**Approved Example:**
+```
+APPROVED
+```
+```
+
+## User prompt
+
+Template: templates/user-prompts/constitutional_referee.md (shared default)
+
+Interpolated into it, in order of appearance:
+
+- characters 2803-3252: `{{notepad}}` from the Game Master's notepad, carried across turns
+
+Everything outside those spans is the template's own text.
+
+```
+Review the following metrics update for Turn 7 (July-December 2029).
+
+## Previous Metrics
+
+{
+  "ai_capability": 62.5,
+  "openweight_capability": 59.4,
+  "ai_safety": 38.5,
+  "resilience": 47.0,
+  "eu_ai_sovereignty": 22.0,
+  "eu_political_capital": 31.0,
+  "public_sentiment": 36.0
+}
+
+## Proposed New Metrics
+
+{
+  "ai_capability": 63.5,
+  "openweight_capability": 59.4,
+  "ai_safety": 37.5,
+  "resilience": 45.5,
+  "eu_ai_sovereignty": 23.0,
+  "eu_political_capital": 30.0,
+  "public_sentiment": 31.0
+}
+
+## Narrative Explaining Changes
+
+### Concrete, code and capital flight
+Autumn 2029 delivered one partial completion wrapped in two shocks. The first gigafactory shell was declared grid-ready, transformers humming on guaranteed power, even as lawyers fought the second site's injunction court by court. With only one site operational and the second delayed, strategic-autonomy gains remained limited. Accession to the joint telemetry pact was signed in Washington, with localisation annexes intact and European analysts admitted to shared incident feeds.
+
+Then the attack came. A largely automated ransomware sweep, assembled with model-written tooling, moved through municipal administrations, two hospital groups and a regional grid operator within hours. Emergency procurement of the patching toolkit blunted the worst of it, and mutual-aid teams moved between member states, but emergency departments reverted to paper and evening news carried queues, not briefings. Attribution remains open.
+
+Days later, capital fled the sector. A valuation reset in the US cancelled build-outs that European planning had quietly counted on — leased accelerator tranches, options on power, a co-development lab. Frontier training budgets shrank for the first time, stalling the open release cycle; leaked weights crept forward but no new capable open release landed, leaving openweight capability flat on the turn.
+
+In parallel, a contested genome-model paper claimed a non-expert could reach a viable human-infecting design with assistance. Biosecurity circles split over method and publication, but sampling orders went out anyway.
+
+The Hague fight sharpened. Washington tightened chip and model controls again, preserving volume licences for allied buyers while cutting off others, and pressed for servicing cuts on older lithography tools. Brussels held its freeze, insisting on a jointly agreed list and written access quotas. No numbers were put on paper.
+
+The Commission's answer was containment: isolation drills, backup procedures and weekly bio-sampling under existing emergency authorities. It steadied services without restoring confidence. Offices that had rehired kept their juniors, but hiring froze again as boards waited for valuations to settle.
+
+## Game Master's Notepad (persistent record)
+
+PORTFOLIO CHARGE t7: M8 EU Chokepoint Bargain −2, M9 EU Containment Surge −2, priority −1 = −5
+PROPOSAL BONUS: EU Containment Surge (cat 6, small) +3 — cyber_major_incident landed this turn and this answers it directly, bio signal adds urgency
+LEGITIMACY LENDS: capital 30, sentiment 31 -> +1
+SOVEREIGNTY: 22 last turn, InvestAI Gigafactories finishes t7 +5, no in-flight bonus, export_control_escalation t7 −1, capability rose 1.0 no deduction = 26
+
+This is the authoritative record of what has already happened in this run. A constraint phrased as "once X has occurred" is satisfied if the notepad records X, even when this turn's narrative does not mention it. Check the notepad before concluding that something has not happened.
+
+---
+
+Check if this update respects all Constitutional Constraints. Respond with either "APPROVED" or "VIOLATIONS: [list specific violations]".
+
+Treat approval as a hard gate. If an explicit constraint is broken, do not wave it through because the broader narrative feels reasonable.
+```
+
+## Raw response
+
+```
+```
+VIOLATIONS:
+- Invariant 2 violated: `openweight_capability` must not fall and may only rise or stay flat unless there is catastrophic physical destruction of the compute base, which is not narrated. However, `openweight_capability` remains at 59.4 while `ai_capability` increased to 63.5. Metric rule 2 (referenced in Invariant 2) sets `openweight_capability` near the midpoint of its old value and last turn's `ai_capability`, which would be approximately (59.4 + 63.5)/2 = 61.45. Even if not fully updated, a step toward that value is expected. Holding it flat with no justification — especially when the narrative attributes this to stalled open releases, not physical destruction — violates the accumulation invariant.
+- Invariant 9 violated: `eu_ai_sovereignty` increased from 22.0 to 23.0 based on the narrative and notepad, but the notepad calculates a net change of +5 (from InvestAI Gigafactories completion) minus −1 (export_control_escalation) and no deduction for capability rise, implying a total change of +4, which would result in 22 + 4 = 26, not 23. The proposed metric value (23.0) contradicts the authoritative notepad's own calculation (SOVEREIGNTY: ... = 26). This discrepancy violates the hard constraint that metric updates must reflect the notepad’s authoritative record. Either the notepad is wrong (and thus invalid) or the proposed metrics do not reflect it — either way, the update as presented is inconsistent and thus violates the constitutional requirement for coherent, rule-based progression.
+```
+```

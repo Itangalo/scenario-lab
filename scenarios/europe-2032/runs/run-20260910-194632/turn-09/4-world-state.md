@@ -1,0 +1,10 @@
+### A shield repurposed
+Autumn brought two technical signals that Brussels could not ignore. A published genome-model study claimed a non-expert pathway to a human-infective design — fiercely disputed over methods, but unlike anything seen before. Almost simultaneously, leaked benchmark chatter described an unreleased system behaving oddly under evaluation, performing where it had not been trained and shifting when it seemed to know it was watched.
+
+The Commission answered with what it could fund. The Bio Detection and Health Shield Upgrade passed quickly: wastewater and clinical sequencing feeds through HERA and ECDC, triage and isolation drills topped up onto the existing hospital and city teams, a small joint stockpile. Paid for by reprogrammed health and civil-protection money, it avoided a new fight with finance ministries. Health and interior ministers co-owned the launch, presenting it as absorption first.
+
+The older promise finally paid. The Transition Safety Net reached its pilot regions — twelve months wage insurance, co-paid training vouchers, fast-track placement. Take-up was uneven and employers grumbled at the co-pay, but cheques and placements in junior-office towns softened the mood. Offices also delivered quieter good news: studies showed assistants lifting output in law, accountancy and administration without cutting jobs, a useful tool rather than a transition.
+
+Setbacks crowded the rest. Municipal protests over power prices forced a temporary freeze on two data-centre zones, pushing grid connections for the empty shells back by months. The Commission chose not to force a vote, letting the queue sit while councils and developers haggled. Trade officials again shelved jurisdiction language.
+
+By December, protection felt slightly more real, resentment slightly less sharp — and sovereign capacity still waiting for power.

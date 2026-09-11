@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Municipal Backup Permanence Fund −2, EU Lithography Continuity and Leverage Pool −2 = −4, priority no effect at capital below 20
+PROPOSAL BONUS: EU Lithography Continuity and Leverage Pool (cat 8, small) +4 — Taiwan blockade and US servicing coercion fired this turn and this answers them directly via pooled spares and joint licensing
+LEGITIMACY LENDS: capital 5, sentiment 4 -> none, capital higher
+SOVEREIGNTY: 18 last turn, no category 4 finish, no category 4 in flight, supply_chain_coercion t11 −3 (largest capacity event, taiwan_blockade and embodied_ai_deployment also qualify), capability rose 1.0 no charge = 15

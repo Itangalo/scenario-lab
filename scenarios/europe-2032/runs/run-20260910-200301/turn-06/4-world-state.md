@@ -1,0 +1,10 @@
+### Holding the line
+January brought no chips, only inventory lists. With Taiwanese shipments still halted and Washington's new administration taking office on a platform of tiered foreign access for frontier systems, Brussels stopped talking about building and started talking about not stopping.
+
+The two planned gigafactory sites stayed empty fields. Permits were kept alive by emergency energy orders that extended grid reservations, and the investment bank kept its tranche ring-fenced rather than cancelled. Councils, squeezed by power prices, threatened to revoke siting; officials offered price relief funded through the transition safety net to buy quiet. Nothing advanced, but nothing was formally lost.
+
+What did move was continuity work. Transport, energy and health ministers launched a degraded-operations compact: pooled spares for power, ports, hospitals and payments, manual failover drills, mutual aid across borders. The small observatory completed last autumn fed its outside-in tests on the loose open model to cyber teams. Two spring scares — a ransomware cascade at a North Sea port and a grid balancing fault during a cold snap — were ridden through in degraded mode. Lights flickered, containers waited, but systems did not cascade.
+
+The chokepoint defence effort formally closed. The coercion examination of the American servicing ban produced a legal file with no leverage, the budget backstop for Dutch losses was agreed in principle and left unfunded, and missions to Tokyo and Seoul came home with statements of sympathy. The Hague continued its separate dialogue with Washington.
+
+The safety net's ninety-day placements kept running, far below the scale of layoffs in logistics and back-office work. Use of AI tools kept rising even as polls showed distrust deepening. By June, the Union had preserved its paper options for sovereign compute, kept essential services limping, and confirmed to every capital that access to the best models would henceforth be rationed elsewhere.

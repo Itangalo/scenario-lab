@@ -1,0 +1,11 @@
+Unauthorized access in 2026 at European transmission operators, other-continent operators, a port and water supplier — no disruption — led to binding EU grid-and-port detection/segmentation rules in March 2027, Rotterdam/Gdansk/Marseille exercises, retrofit co-financing; dwell-times fell weeks to days.
+
+EU kept access to leading US models on published terms, used as bridge for EU-wide scale-up of hospital triage and municipal permit pilots from Denmark, Spain, Estonia; joint procurement conditioned on cyber compliance. By autumn 2027 Aarhus, Bilbao, Tartu cut triage times by a third and permits in days.
+
+Scale-up strained municipal IT: same teams tasked with segmentation and hosting, patches queued weeks in mid-size utilities. Relief corps funded via top-up for regional integrators; by Dec 2027 only handful fielding — eased backlogs where deployed, resentment elsewhere.
+
+Productivity gains 15-25% in drafting/review/research, juniors most, employment steady — one-off gain banked.
+
+Data-centre opposition over power/water stalled gigafactory shortlists; clearer grid-connection/water-disclosure criteria and substation-first sequencing unblocked talks on two sites but awarded nothing.
+
+January brought double shock: US provider suspended service to Union users without appeal — triage pilots dark, permit portals stalled — followed by automated ransomware sweep of municipalities and mid-size utilities exploiting queued patches; ERs to phones, towns to paper. Brussels declared continuity binding: emergency rules tasked EuroHPC/vetted EU clouds to host hardened open models as fallback inference, procurement rewritten for swap, integrators redeployed from segmentation to swap-over, two substation-ready sites cleared as continuity hosting, health funds topped for bio-detection after contested genome-model paper. Partial success: fallback sites restored degraded triage/permits in weeks on EU infrastructure; others deepened backlogs, mayors blamed Brussels, utilities chose uptime over hardening. Cohesion frayed: one state signed separate hyperscaler deal undercutting common line, Commission opened coercion screening while using capacity; protesters blockaded both cleared sites, municipal IT staged sick-outs. By June 2028 services degraded but standing — dependence proven, fallback barely begun, foreign-model reliance deepened.

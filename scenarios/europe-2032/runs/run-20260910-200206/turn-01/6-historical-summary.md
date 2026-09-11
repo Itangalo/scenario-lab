@@ -1,0 +1,5 @@
+Autumn audits revealed quiet intrusions by Mythos-class open models, tuned for intrusion at state-backed scale, in two European transmission operators plus US, Asian, port and water targets — passwords collected, relays mapped, nothing switched off. Seen as a rehearsal exposing failed grid segmentation.
+
+The Commission responded with the Critical Infrastructure Shield: fully funded retrofits with automated patching and swarm-behaviour sensors, liability cover, led by ENISA under existing cyber/resilience mandates and emergency funds. Rollout uneven; first substations reached by December, cross-border exercises still on paper. Gigafactory siting and tech sovereignty work continued unaccelerated.
+
+Defence improved: automated patching and swarm-pattern detectors showed pilot success, first pro-defence shift in years. Parliamentary debate over mandatory screening of open-model tooling and a freeze on AI-assisted pathogen design remained unresolved. By year-end Europe felt exposed but patchable.

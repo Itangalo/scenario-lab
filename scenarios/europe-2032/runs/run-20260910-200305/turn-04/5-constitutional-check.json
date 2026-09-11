@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Constitutional Constraint 9 violated: `eu_political_capital` decreased by 15 points (from 29.0 to 14.0), which exceeds the 25-point maximum movement limit per turn. While the constraint allows up to 25 points of change, this change is exactly at the boundary of -15, which is within the allowed range. However, upon closer inspection, the drop is *permitted* under Constraint 9 since it does not exceed 25 points. Therefore, this is **not** a violation.\n\nWait — re-evaluation:\n\nThe change in `eu_political_capital` is from 29.0 to 14.0: a delta of -15.0. Constraint 9 states: \"No metric moves more than 25 points in one turn.\" This is a hard bound on absolute movement, regardless of direction. A 15-point drop is within the 25-point limit. So this is acceptable.\n\nNow check others:\n\n- `ai_capability` increased by 2.0 → allowed; non-decreasing → satisfies Constraint 2.\n- `openweight_capability` increased by 2.0 → also allowed; remains below `ai_capability` → satisfies Constraint 2.\n- No mention of U.S., China, or frontier developers complying with EU decisions; no assumption of automatic compliance → Constraint 3 respected.\n- American posture not yet in play (Turn 5 settles election, effect in Turn 6) → Constraint 4 not triggered.\n- Only one measure implied as active (High-Risk Enforcement Audit), no new measure introduced this turn (InvestAI Gigafactories, Tech sovereignty package, etc. are ongoing), and no more than one priority → Constraint 5 respected.\n- No instant implementation of measures; all appear in flight or under audit → Constraint 6 respected.\n- `eu_ai_sovereignty` and `eu_political_capital` move independently: sovereignty down by 3, political capital down by 15 — divergence is allowed; no structural coupling imposed → Constraint 7 respected.\n- Narrative does not telegraph future events, probabilities, or gate openings; reports on current developments with ambiguity (e.g., \"licences continued for now\") → Constraint 8 respected.\n- All metric movements are within 25 points: largest change is -15 → Constraint 9 respected.\n\nAll constraints are satisfied.\n\nAPPROVED"
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

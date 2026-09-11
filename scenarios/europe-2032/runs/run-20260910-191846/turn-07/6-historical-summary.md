@@ -1,0 +1,7 @@
+Autumn brought U.S. cutoff of the leading American model for European users, forcing hospitals, ministries and logistics firms onto older versions and pooled licences; Washington also tightened lithography servicing, delaying European fab projects under its tiered strategic-asset approach.
+
+Commission responded with continuity: pooled inference from low-burn gigafactory cores and EuroHPC steered to hospitals/ministries, emergency procurement for fallback capacity, health and cyber authorities joined joint telemetry/sample-sharing pact as invited third party — services stayed lit at downgraded capability.
+
+Washington and Beijing announced limited risk agreement on weights security, escalation guardrails and bio-design tool curbs with thin verification; Brussels informed afterwards. First gigafactory tranche formally closed with lit cores, breakaway capital's share honoured; public-sector assistants cut permit/care waits in several cities.
+
+Earlier: spring U.S. frontier releases with minimal human steering, Chinese humanoids on U.S. stacks in EU plants sparked stop-control demands; Transition Shield passed via employment ministers — job-mapping, six-month wage insurance now paying out but retraining slow, narrow kill-switch rule tabled. Trust in Union tech law kept falling amid robot footage and darkened wards.

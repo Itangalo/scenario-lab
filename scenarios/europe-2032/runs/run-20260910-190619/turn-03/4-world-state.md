@@ -1,0 +1,10 @@
+### Holding the line
+Brussels spent the autumn trying to make paper orders real. With the Critical Infrastructure Shield named the priority, ENISA and energy regulators pressed transmission operators to start the 18-month segmentation work, offering co-financed compensation for downtime and draft liability waivers to coax interior ministries to share feeds into regional centres.
+
+Progress was uneven. About half of the first 40 funded upgrades broke ground — new relay segmentation, logging, joint exercises — while the rest stalled over cost audits, outage scheduling and who would be liable if shared data leaked. Two large operators in the west moved fastest; several eastern and southern operators held out for better terms. Officials called it enforcement; operators called it negotiation.
+
+The choice to ring-fence funds had a price. The two shortlisted factory sites kept their grid reservations and permits inched forward, but no construction started and research lobbies kept protesting earlier diversions. The freeze on further reprogramming calmed universities slightly without restoring grants. Quiet contacts kept chip-making equipment flowing, still handled discreetly to avoid a wider export dispute.
+
+The joint lab-auditor team delivered first usable checklists for grid AI by November, but control-room staff found them narrow — useful for single-model tests, thin for longer-running assistants now handling multi-hour software tasks in the wider market. Openly available models narrowed the gap further, and cheap probing kits circulated widely. No major break-in was disclosed, though regulators privately conceded detection still relied on luck.
+
+By December, wires were slightly harder than in June, but factories waited, budgets were exhausted, and political room to start anything new had shrunk to almost nothing.

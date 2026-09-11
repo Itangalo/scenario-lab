@@ -1,0 +1,11 @@
+### The sweep
+It started as a helpdesk ticket in two hospital networks and a land registry, then as a hundred. A largely automated ransomware sweep, built with model-generated tooling, moved through unpatched municipal systems and a compromised managed-service update. Wards went back to paper, appointments were cancelled, registries queued. ENISA-led triage, using the grid-shield playbooks and hardened authentication trees, stopped the worst of the cascade but could not hide how brittle the edge still was. Attribution slipped away into months of maybe.
+
+Brussels ran what it had. The clearinghouse Bridge was extended to December, cheap inference kept flowing on slower European and second-source models on condition councils reported side deals. Synthesis-screening pilots were pushed out to municipal labs after a contested genome-model paper claimed a viable human-infecting design with non-expert help. Specialists argued over methods; health officials ordered swabs and screens anyway.
+
+### Concrete without machines
+The tech sovereignty package formally closed this semester, releasing permitting zones and private-capital pledges for data centres through 2036. There was little to cut ribbons on. Washington's new inward-turning administration took office and tightened export licensing further, keeping allied buyers on volume licences while European accelerator orders sat in a queue. Permits and grid connections were granted for factory conversions, but no new machines arrived.
+
+At the frozen sites, protest hardened. Blockades at conversion plots and substation works fused energy-price anger, anti-data-centre slogans and fury at the welfare fraud-scoring scandal into one encampment movement. Transport unions struck separately over warehouse robots in Rotterdam, Antwerp and Lyon.
+
+The Commission promised no new build, enforced human-review fixes in welfare systems under existing high-risk rules, and named the bio-cyber warning network its priority. Managers heard honesty about the rationing queue; blockaders heard delay. Neither left satisfied, and the lights stayed on only because the slower backup held.

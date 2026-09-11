@@ -1,0 +1,5 @@
+Spring ransomware sweep hit municipal, hospital and logistics IT via poisoned update; US patches applied where possible, else manual isolation – substations/wards held on paper procedures and Corps night work, queues and rebuilt records. Simultaneous published AI-assisted genome design for claimed human pathogen split experts but triggered health-ministry sample-sharing orders.
+
+US re-tightened chip/model controls as frontier-class open weights went viral; EU-hosted mirrors replaced degraded copilots in triage/dispatch, better but unrecallable. Taiwan blockade froze advanced chips, making compute a security issue; Brussels eyed lithography leverage for state access channel while one capital broke ranks with separate cloud deal.
+
+Parliament approved accession to joint cyber command with binding telemetry and biosurveillance pact, wiring hospitals/grids/ports and seconding liaisons. Aragon/Saxony halls stayed empty but powered as reserve. Entry guarantee six-month posts dismissed by graduates as holding pen amid continued blockades; lights kept on by hand.

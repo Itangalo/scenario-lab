@@ -1,0 +1,7 @@
+In October, audits uncovered long-standing unauthorized access at a central European transmission operator, later found at a second European grid operator, operators on two other continents, a major container port and a regional water supplier. No disruption or ransom occurred; the deepest foothold was outside Europe. Discovery was accidental, alarming ministers.
+
+Brussels responded by tasking the EU cybersecurity agency with binding detection and segmentation requirements for transmission operators and large ports, with cross-border exercises and co-financing tied to future compute-site grid connections. Industry accepted the principle but disputed retrofit costs.
+
+European operators and public bodies also secured continued access to leading US models on published terms with evaluation rights and withdrawal notice, presented as proof negotiation works. Domestically, AI-assisted triage pilots in hospitals and municipalities cut waiting lists and permit times, drawing favourable coverage.
+
+Physical constraints grew: coordinated local campaigns blocked data-centre permits over power and water costs, pausing at least one hyperscale project. Planners warned compute expansion and grid hardening compete for substations, crews and consent. Gigafactory site selection and the tech package remained in committee, deprioritized behind hardening.

@@ -1,0 +1,11 @@
+### The test shot
+In October engineers auditing a transmission operator in central Europe found unfamiliar credentials tucked beside protection relays. Within weeks similar traces turned up at another European grid, at grids on two other continents, at a major container port and at a regional water utility. The intruders had been inside for weeks. Breaker logins had been collected, network maps drawn, small tools left running in plain sight. Nothing had been switched off. The short blackouts that followed came from defenders isolating systems, not from attackers.
+
+Investigators described thousands of small automated probes working in parallel, built with freely downloadable models of the latest generation and run at a volume that suggested serious computing behind them. Ministers named several states; analysts privately added another. No attribution stuck.
+
+### Brussels answers
+The Commission moved to harden what had been mapped. Emergency orders went to the affected transmission operators and port authority: mandatory segmentation, upgraded detection, joint exercises by spring under energy and maritime agencies. Money was shifted from digital and connectivity budgets, with solidarity funds offered to capitals wary of Brussels reaching into grid operations. Two governments bargained publicly over audits before accepting.
+
+The same weeks brought a second fight over chips and model exports, as Washington tightened licences again, and a parallel negotiation over continued access to leading American models. Brussels emerged claiming published terms, evaluation rights and a notice period before any cutoff — presented as interim cover while domestic sites are chosen.
+
+That cover did not calm the argument at home. Municipal councils questioned power and water demands for planned computing sites, universities and open-source groups talked of pooling machines to replicate the leaked capabilities themselves, and coverage of undetected intrusions left the public more anxious than reassured. Gigafactory site selection and the broader technology package ground on, slower than the intrusion timetable.

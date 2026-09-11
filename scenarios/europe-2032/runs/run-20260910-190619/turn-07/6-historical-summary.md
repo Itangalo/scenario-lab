@@ -1,0 +1,9 @@
+Autumn ransomware sweep degraded west less where Shield segmentation finished; east/south recovered manually. By December partial vindication, uneven hardening. Washington via The Hague forced wider lithography cut; ASML complied. Gigafactory plots reserved but unbuilt amid protests, grid blockades, alleged theft. November U.S. coalition president offered frontier-model access for export-control alignment.
+
+Spring imported modified pathogen: testing, isolation, wastewater sequencing; degraded-mode routines repurposed, west held, east/south to paper/radio; mayors won data flows. Brussels used existing machinery, no new fund; research-centre cell shared samples/logs with U.S. liaisons.
+
+By June curve bent, wires held where rebuilt, factories still fields.
+
+July US-China limited risk-reduction accord on weights security, escalation safeguards, bio-design controls, thin verification; Europe not party. Commission offered ransomware logs, outbreak samples/sequences, evaluation access via research centre with U.S. observers; Council approved small verification contact point from existing staff, no new fund. U.S. welcomed logs; China acknowledged without granting access; no US/Chinese compliance with EU standards. Brussels kept observer seat, steadied standing without material capacity.
+
+Economy split: offices posted junior-led productivity gains without layoffs, early cutters rehired; no permission to build. Gigafactory hearings hostile, grid works blocked/filings through autumn, unconfirmed threats to substations. By December gigafactory unfinished, non-operational — reservations, paper corridors, financing closed but fields empty, completion delayed, no sovereignty dividend, delay eroded sovereignty. Wires held, fever down; Brussels claimed modest vindication: still standing, invited, without concrete.

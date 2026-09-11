@@ -1,0 +1,10 @@
+### Tighter gates, visible queues moving
+Autumn brought a new round of American chip and model controls. Washington framed them as volume licences for trusted buyers, but in Brussels the paperwork read as rationing: delivery dates for accelerator lots slipped, licence conditions multiplied, and the member state with its own hyperscaler side-deal suddenly looked prescient rather than disloyal. The Commission could not reverse the controls and did not try to reopen the side-deal, instead pushing sovereign procurement clauses as the price of future co-funding.
+
+On the ground, the grid pact finally bit. Transmission operators and the three big ports moved to continuous telemetry sharing with the EU crisis network, and emergency stocks of sensors arrived. Municipal utilities and smaller ports still lagged, trading compliance for outage-window concessions and co-financing. An Energy-Transport compromise linked backup-control aid to exercise participation, unblocking money but adding reporting that mid-size operators resented.
+
+The bio programme thickened modestly: more wastewater sites, joint reagent buys, a dozen hospital pilots flagging respiratory surges faster. The quiet channel for suspicious design work received its first handful of reports, none conclusive, all anxiously discussed.
+
+The bright spot was administrative. Vetted assistants for triaging permits, hospital back-offices and tutoring pilots cut waiting times in several cities, and ministers were quick to claim the improvement as European. Local press ran the rare positive AI story, even as national coverage dwelt on rationed compute and higher power bills near new data-centre sites.
+
+Cohesion held but thinned. Partners grumbled that common lines bend whenever capacity is offered, while the Commission argued the adoption wins bought time to harden and build.

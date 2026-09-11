@@ -1,0 +1,5 @@
+Autumn brought coordinated intrusions into power, port and water systems in two member states: relays mapped, credentials collected, staged tooling found, but nothing disrupted. The probes used thousands of parallel bursts built from a publicly available frontier model at state-level scale, reaching supposedly unreachable segmented networks.
+
+The Commission responded with a Union-wide hardening programme — mandatory segmentation audits, hunt teams, joint operations — funded by reprogrammed digital and emergency cybersecurity funds. Implementation was slowed by competition for engineers and grid connections with gigafactories and supply-chain priorities. Centrally procured defensive tooling that detects swarm-like behaviour and patches at machine speed proved effective against low-and-slow probing.
+
+Public trust remained shaken amid parliamentary hearings on a prior frontier lab agent leak and warnings of researcher departures to the US. Industrial build-out continued but slower; by December the threat had been detected and countermeasures ordered, with timely deployment still uncertain.

@@ -1,0 +1,10 @@
+### Certified, rationed, waiting
+The certification drive began quickly. Joint Research Centre teams with ENISA and the AI Office took the new interpretability result — the first in years that worked on live hospital models rather than benchmarks — and applied it to dosage validators and triage support running on EuroHPC. A first list of pass-fail certificates was published in November. Clinicians in Paris and Milan said overrides fell where a certificate existed; where it did not, handwritten fallback continued.
+
+The Trusted Medical Access Programme held the line it could. EuroHPC triage slots were reserved, joint procurement steered orders toward European-hosted deployment, and wage-insurance offices in Rotterdam, Lyon and Hamburg handed out appointments alongside benefits. But volume was the constraint. Washington's renewed licensing round cut allied hospital inference further, with re-pricing and end-use audits attached. Two research clusters ran at half allotment through autumn, queuing non-urgent validations for weeks.
+
+Remissions from tailored therapies kept arriving, and families spoke of them gratefully — and bitterly. The treatment worked, the server was foreign, the permission could be repriced. Municipal papers called it medicine on leave.
+
+Meanwhile freight insurers raised premiums after extended exercises around Taiwan. The Commission quietly tilted existing stockpiles — chips, medicines, inference reservations — toward hospitals, water and grid, without announcing a new instrument. Port operators noted the signal: prepare, but do not alarm.
+
+Inspectors remained few, manufacturers still slow to share machine data, and the moratorium on new logistics machines stayed in place. Assurance improved from zero, but open replicas now matched the frontier of a year ago, and reviewers warned the audit window would close again within months.

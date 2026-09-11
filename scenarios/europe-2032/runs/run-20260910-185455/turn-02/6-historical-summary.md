@@ -1,0 +1,7 @@
+Autumn intruder tooling at transmission operators led Brussels to order OT segmentation, anomaly detection and 24h staging reports via a joint cell with co-financing; exercises began with patchy coverage.
+
+In February probes became a multi-state automated sweep — ransomware on municipalities/hospitals, poisoned contractor update, renewed grid intrusions — degrading services for days. Attribution stalled to widely-circulated capable models. Large segmented operators isolated quickly; smaller utilities and cities needed seconded teams and emergency procurement. Brussels re-weighted funds to hardest-hit, waived penalties for spring exercise participants, and enforced deadlines amid public gaps.
+
+A new defensive generation patching at machine speed and detecting swarm behaviour let defence catch up in one class; Commission jointly procured and deployed it first to transmission and hospitals, though legacy municipal install lagged.
+
+Meanwhile AI-infra capital fled: valuations reset, two factory financings evaporated, site decisions paused and build-out slipped months, though guarantees/zones held and lithography leverage won patch/evaluation access. New open release near frontier and earlier office productivity gains without layoffs sustained tolerance for disruption spending.

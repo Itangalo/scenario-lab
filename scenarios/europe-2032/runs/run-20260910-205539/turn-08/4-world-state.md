@@ -1,0 +1,12 @@
+### Wards open, union frayed
+The spring began in courtrooms and server rooms. Hospital groups and municipal utilities, faced with exclusions for model-assisted failures, sued their insurers. A judge ordered a freeze on coverage decisions and forced emergency reinsurance into the gap. Elective lists that had just reopened threatened to close again.
+
+At the same moment, a sharp advance in code, maths and cyber tooling spread from the frontier labs. Patch windows collapsed from days to hours. Intrusions probed grid operators and clinic networks across the northwest, dwell times spiking where teams had left.
+
+Brussels answered with what it could still fund. Finance and health ministers stretched the existing guarantee into a temporary reinsurance window: any hospital or utility that patched and kept backup-care protocols stayed covered. Forced patch teams were redeployed, sequencing kits released only where incident reporting held. Where the teams landed, wards stayed open and detectors stayed staffed. Where they did not, mayors again reported diverted ambulances and dark dashboards.
+
+The containment and care surge launched in the autumn finished its work in this form — joint procurement cleared part of the backlog, liability cover stopped a wider nursing refusal — but borrowing against preparedness budgets left hardening thin elsewhere.
+
+Politically the turn was lost outside the wards. A large member state signed its own tiered compute deal with an American hyperscaler, defended at home as pragmatism, read in the Council as a break in the common line. The High Representative carried a narrow offer to Washington and Beijing — European labs and incident data in exchange for a verification seat at their limited risk accord — coordinated loosely with Tokyo, Seoul and London. With extended exercises around the Taiwan Strait lifting shipping insurance and dominating agendas, the offer was noted and parked.
+
+By June, hospitals held but trust did not. Diagnostic assistants ran under guarantee, and were still feared. Resentment outweighed relief in polls, and the split between those inside American capacity and those waiting for European permits hardened into the Union's central fact.

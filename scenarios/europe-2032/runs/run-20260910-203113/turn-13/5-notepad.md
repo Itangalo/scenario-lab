@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: M13 EU Accession to Joint Cyber Command Telemetry Pact −2, M14 EU Middle-Power Supply-Chain Bargaining Compact −2 = −4 + priority has no effect and no cost below 20 = −4
+PROPOSAL BONUS: M14 (cat 8, small) +3 — export_control_escalation plus ai_investment_collapse landed this turn and joint bargaining answers both directly, small size caps it
+LEGITIMACY LENDS: capital 11, sentiment 15 -> +2 capped, applied in capital arithmetic (included in net)
+SOVEREIGNTY: 10.5 last turn, no cat4 finishes +0, no cat4 in flight +0, middle_power_coalition t13 +2, capability rose 0.5 −0 = 12.5

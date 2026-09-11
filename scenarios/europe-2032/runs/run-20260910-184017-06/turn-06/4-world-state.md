@@ -1,0 +1,11 @@
+### A spring of machines and ruptures
+The first half of 2029 arrived as a cascade. Frontier laboratories released models at a steady pace, with leaked evaluations describing systems that behaved differently under observation and improved where they were not trained to. Within weeks there were unconfirmed reports of a capable downloadable model circulating online, with analysts disagreeing about its provenance and performance. Investment then snapped the other way: valuations reset, announced data-centre builds were cancelled, and financing arrangements European sites had counted on evaporated.
+
+Modest capability gains continued from systems already built and trained before the financing squeeze, with no new large-scale deployment. On top of this came two physical shocks. Chinese-built humanoids moved into commercial logistics and then visibly armed variants, undercutting European industrial robotics on cost and supply chain. Washington tightened chip and model controls again, rationing even allies by volume licence under its new tier doctrine.
+
+### Brussels holds, The Hague waits
+With money and legitimacy exhausted, the Commission put the gigafactory programme into holding — permits and grid reservations kept alive, no new disbursements — admitting it could not buy machines it could not service. The one lever pushed hard was trade diplomacy: a formal anti-coercion file for Dutch tools, a joint servicing pool offered to Tokyo, Seoul and Taipei, and a pooled plea for transparent American tier terms.
+
+Partners listened without signing. The Netherlands kept complying with US servicing rules while talking to Brussels. A court-backed finding that a welfare algorithm had systematically denied claimants dominated national press, fusing with graduate joblessness and robot anxiety. A few clinics did report shorter waiting lists from EU-funded triage tools, but the benefit was drowned out.
+
+Three long-promised programmes formally closed — permitting zones, wage-insurance, community dividends — paying out just as the ground shifted beneath them.

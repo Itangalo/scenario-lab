@@ -1,0 +1,11 @@
+### Paper systems hit again
+Autumn brought a second automated wave. A model-assembled ransomware sweep moved through municipal networks and hospital administration systems already weakened by the August compromise, freezing appointment scheduling, prescription printing and billing from the Rhineland to the Po Valley. Defenders traced the entry to another widely used diagnostic and admin dependency. Segmentation built under the restoration pact prevented a full cascade in the north, but clinics reverted to paper for weeks and two southern regions reported ambulances diverted.
+
+Brussels answered with hands-on crews. The new continuity corps, run jointly by DIGIT, ENISA, HERA and the medicines agency, dispatched cross-border repair teams with offline fallback kits and began re-hosting triage and scheduling on vetted open models running on shared supercomputers and segmented health clouds. In the Ruhr prescriptions began printing again by November; in Lombardy manual triage dragged on while re-validation stalled.
+
+### Cures elsewhere, controls tighter
+In the same months, tailored therapies for previously untreatable conditions reached routine use in American hospitals, widely televised. European oncologists could describe the protocols but not offer them — the leading models behind them no longer answered European users, and the open replacements lacked certification for personalised dosing. The benefit landed as a demonstration of dependence, greeted with resentment rather than hope.
+
+Washington then tightened chip and model licences again. Under country-tier rationing, allied buyers kept volume access in principle but European medical and recovery exemptions remained unwritten, and pressure on servicing of older lithography tools in the Netherlands intensified. The Hague and the capital that had sought its own assurances were offered shared servicing and fallback capacity instead of discipline.
+
+Overtime pay from the repurposed health and digital lines held most southern staff, though mayors whispered of night-shift refusals and single-source reports spoke of coordinated walkouts over running segmented systems without hazard pay — denied officially, persistent in corridors.

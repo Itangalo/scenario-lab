@@ -1,0 +1,61 @@
+[
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "knowledge_work_augmented",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A national constitutional court or the EU General Court suspends application of the AI Office's interim voluntary filing template and whistleblower protections pending a legal-base ruling, freezing pre-release cyber-capability disclosure for months.",
+    "emergent": true,
+    "id": "emergent_disclosure_template_freeze",
+    "probability": 0.16333333333333336,
+    "probability_samples": [
+      0.14,
+      0.17,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A protected source releases the full withheld cyber-evaluation files referenced in the September leak, including test dates overlapping last year's grid intrusions, triggering parliamentary inquiries and operator lawsuits.",
+    "emergent": true,
+    "id": "emergent_full_eval_dump",
+    "probability": 0.19999999999999998,
+    "probability_samples": [
+      0.18,
+      0.2,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

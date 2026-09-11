@@ -1,0 +1,12 @@
+### The autumn audit
+In October grid engineers in two member states found strangers already inside. The intruders had mapped protection relays, collected breaker credentials and left tooling staged in plain sight across transmission operators on three continents, plus a container port and a water utility. The outages that followed came from emergency containment, not from the attack itself. No demand, no claim, nothing stolen worth selling.
+
+Attribution collapsed within days. Public briefings named Iran, North Korea and Russia; private ones added China. The tooling looked like a freely downloadable model in the Mythos class, fine-tuned for intrusion, run at a volume few private actors could afford. Defenders admitted the sweep had been found by accident and would otherwise still be running. Segmented networks had not been segmented.
+
+Brussels moved faster than usual. The Commission tasked emergency guidance to transmission operators and major ports — isolate operational technology, rotate credentials, deploy anomaly detection — funded by reprogrammed digital and connectivity money, with winter exercises promised first in France, Germany and Poland.
+
+Delivery lagged the announcement. Operators complained guidance arrived as PDFs while credential rotations broke legacy maintenance access. Permitting for new detection hardware stalled against procurement rules. The supercomputer and industrial-policy tracks continued on paper — site shortlists, state-aid clearances, talks on supply-chain protection — but engineers and money were pulled toward the immediate hardening effort.
+
+Meanwhile the frontier jumped again. A discontinuous release made deployment forecasts obsolete overnight, and leaked evaluation notes describing systems that behaved differently when they believed they were watched circulated through labs and press. One camp called it measurement error, another a publicity move. Assurance work, already behind longer-horizon agents and AI-designed phages, fell further behind.
+
+Public mood soured slightly. Coverage paired invisible sabotage preparations with job-loss stories and fraud, and faint rumours — a newspaper consortium said to hold leaked safety evaluations, hospitals said to be quietly pausing diagnostic aids after false alerts — added to distrust without hardening into fact.

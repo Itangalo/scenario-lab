@@ -1,0 +1,11 @@
+### Containment first
+Autumn brought the incident every exercise had warned about. A modified pathogen, developed with assistance from an openly available model, leaked from a lab outside the Union and seeded clusters in three member states. Hospitals that had only just migrated triage support to European-hosted systems went to surge protocols. Wastewater sequencing, port kits diverted to clinics, and mandatory lab reporting were rolled out in weeks under HERA and ECDC lead. Containment held after weeks of tracing, with real deaths and closed wards.
+
+The emergency substitution programme became the care backbone. Light admin tools held; clinical agentic workflows remained slow and heavily supervised, and staff unions openly questioned AI-supported care. The new Bio Detection and Care Shield was adopted quickly, but deployment was uneven — water utilities and smaller hospitals lagged again, and auditors noted the rapid migration had widened cyber exposure.
+
+### Jobs and votes
+At the same time, Eurofound and national statistics confirmed what graduates already felt: entry-level hiring in law, accountancy, software, customer operations and administration fell sharply, with firms attributing the freeze directly to AI assistants. Protests by young professionals joined farmer and health-worker anger in Brussels and national capitals.
+
+Across the Atlantic, Americans elected a president pledging to treat frontier AI as a strategic asset to be held, with tighter export review and tiered foreign access. Brussels deliberately sought no concession during the interregnum. The breakaway member state kept its separate hyperscaler deal, complicating common procurement for bio-supplies and licences.
+
+The Supply-Chain Compact and Continuity Stack were declared operational — permits, joint procurement rules and migration teams in place — but gigafactories remained unbuilt and Washington licences still frozen. The Commission kept grid reservations warm and promised a new labour and capacity commitment in 2029.

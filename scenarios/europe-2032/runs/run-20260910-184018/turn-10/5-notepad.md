@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t10: M10 EU Open-Weight Hardening and Dependency Removal −2, M11 EU Accession to Joint Cyber Command Telemetry Pool −2, priority −1 not charged (capital below 20, no effect) = −4
+PROPOSAL BONUS: EU Accession to Joint Cyber Command Telemetry Pool (cat 8, small) +2 — January updater persistence plus open frontier tooling probes last two turns and this answers it directly via pooled protection
+LEGITIMACY LENDS: capital 15, sentiment 24 -> +2 capped by prior terms, included in capital total
+SOVEREIGNTY: 15 last turn, no capacity event, no cat4 in flight +0, capability rose 1.0 −0 = 15

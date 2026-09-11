@@ -1,0 +1,59 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.19333333333333333,
+    "probability_samples": [
+      0.16,
+      0.21,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.21,
+    "probability_samples": [
+      0.21,
+      0.21,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A major transatlantic cloud provider announces per-seat frontier-agent pricing and regional throughput caps for European enterprise customers, citing US tier-review compliance costs, triggering contract renegotiations and press coverage of a two-tier AI market.",
+    "emergent": true,
+    "id": "emergent_tier_pricing_shock",
+    "probability": 0.26,
+    "probability_samples": [
+      0.28,
+      0.22,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

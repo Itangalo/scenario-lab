@@ -1,0 +1,5 @@
+By autumn 2027 Brussels secured a deployment win: five follower states adopted the replicated AI triage/permitting kits with joint evaluation cell certification, cutting waits in pilot regions and earning political goodwill.
+
+Cyber defense held but stayed uneven: funded exercises with liability cover kept large transmission operators cooperative and closed top-tier segmentation/rotation gaps, while municipal utilities and the previously hit port/water sites still lagged on staff, spares, and tuned signatures.
+
+Capability kept climbing with open models closing in; spring interpretability methods entered lab testing but did not narrow the assurance gap in shipped systems. Sovereignty gigafactory advanced only administratively as focus stayed on grids and clinics, deepening foreign-model/compute dependence. Defenders warned coverage would not survive a determined simultaneous winter probe.

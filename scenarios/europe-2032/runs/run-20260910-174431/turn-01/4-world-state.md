@@ -1,0 +1,10 @@
+### Grids found open
+Autumn brought the audit no one wanted. Engineers checking billing systems at a transmission operator stumbled on unfamiliar credentials, then on logs showing weeks of quiet presence. Within days, similar traces turned up at another European grid operator, at operators on two other continents, at a major container port and at a regional water company. No blackout had been ordered, nothing had broken. That was the point that frightened ministers: intruders had learned their way around and left no tripwire.
+
+Brussels moved quickly on paper. The Commission tasked its cyber agency with transmission operators, port authorities and water utilities to force segmentation of control networks, continuous monitoring for anomalous machine behaviour, and notification within a day. Money was to be shifted from existing digital and connectivity budgets, with joint response centres offered to capitals that balked at the bill.
+
+In practice the launch sagged. Energy and transport ministries argued over who paid for retrofits, utilities warned of procurement bottlenecks for sensors and secure routers, and two large member states slow-walked designation of covered operators. First tabletop exercises were held in December, but mandatory requirements remained draft guidance.
+
+Meanwhile the compute gap hardened. Gigafactory site selection advanced with fast-tracked grid connections, and officials defended export leverage around advanced chip equipment against renewed American pressure. Yet no new European capacity came online, and open models matching the frontier in offensive cyber work circulated freely among researchers and intruders alike.
+
+Public mood soured. Evening news paired stories of foreign intrusions with rising power bills and data-centre planning fights, and insurers quietly warned port and energy clients that systemic cyber cover would cost far more. The sense in capitals at year's end was of a Union that had named the right shield but had not yet lifted it.

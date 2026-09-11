@@ -1,0 +1,10 @@
+### Making do, made visible
+July to December 2028 was the half-year Brussels stopped apologising for the workaround and started branding it.
+
+With US frontier access still cut and Washington consumed by its own campaign, hospitals, permit offices and school administrations stayed on EuroHPC overflow and certified national cloud running vetted downloadable models. The two programmes that had carried the winter — the grid-and-port hardening and the fallback hosting for essential services — finished landing. Municipal restores got faster, large operators held through autumn probing, and queues at town halls moved again.
+
+That competence finally produced a story people could see. In several regions, waiting lists for radiology reads and routine permits fell from months to days where the European-hosted assistants were deployed with human sign-off. Local press credited a European decision, not an American product. The Commission seized on it, launching a small Adoption Dividend to pay only for deployments on EU-hosted vetted builds with incident reporting.
+
+The lift was partial. Clinicians still logged invented forms and slow discharges, and in two hospital federations doctors and sickness funds kept refusing fallback triage for weeks after the spring medication-form error until fixes were demonstrated. Fraud kits built on freely available models still dominated evening news. Gigafactory plots stayed fenced and empty: sites, grid reservations and licences were preserved, but accelerator buying stayed deferred until prices repriced.
+
+Then came November in America. The backlash candidate won on moratoriums on data centres, curbs on AI in schools, courts and hiring, and transfers funded by the sector. For Europe the pressure eased — the partner demanding alignment was now turning inward and arguing with itself — but so did predictability. Officials privately noted the second power in the world was gaining ground while Washington fought over its own future. No one in Brussels yet priced what that meant.

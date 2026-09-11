@@ -1,0 +1,5 @@
+Autumn ransomware sweep using open model-assembled tooling hit municipalities, hospitals and mid-suppliers in half a dozen states; backups encrypted, grids shed load to isolate. ENISA's 72-hour feed and quarterly kit picture enabled early triage; grid/telecom contained core, but clinics on substituted European models suffered slow rebuilds, paper return, delayed follow-ups linked to spring Continuity Switch.
+
+Brussels created ENISA-led standing recovery corps with clean backups/rebuild kits, funded by reprogrammed health/digital money, first sent to hit wards; procurement audit still overdue. Bio-detection reserve got summer funds but lagged: few wastewater sites live, clinical sequencing stalled on procurement/staffing, leaving gap from March genome-modelling paper uncovered.
+
+Gigafactories cleared aid approvals, still no construction. US November election of president pledging federal review and tiered foreign access for frontier AI as strategic asset chilled planning; Europe modelled rationed access, leaned on domestic hosts, no new terms yet. Lights stayed on, barely.

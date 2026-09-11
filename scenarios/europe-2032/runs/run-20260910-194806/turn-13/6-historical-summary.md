@@ -1,0 +1,5 @@
+Jul 2031-Dec 2032: Brussels held pledge to keep water, dispatch, hospital intake running without US frontier systems; essentials held via seconded teams, paper/manual reconnection standard, supervised patching in certified sites, pooled cyber command and joint bio-surveillance feeding telemetry outward.
+
+Nothing unblocked builds or hiring: blockades held, spares/rosters thinned, entry hiring frozen.
+
+Autumn 2032 brought external rationing and exclusion plus internal disgrace: Washington put allies on quarterly chip allocations with frontier only via approved clouds, causing delays/throttling, EU informed after the fact; Washington-Beijing understanding on weights security, escalation and bio design tools eased capability growth but Brussels was not consulted, only briefed. Courts/ombudsman found automated benefit/fraud system lawfully but systematically cut off thousands of vulnerable households, never listed as high-risk — "lawful harm." Shared defence kept essentials running but mood shifted to protected yet stuck, rationed and shamed.

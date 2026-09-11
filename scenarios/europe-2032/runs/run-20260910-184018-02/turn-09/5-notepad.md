@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t9: M9 EU Logistics Humanoid Transition Compact −2, M10 EU Loss-of-Control Lockdown and Bio Early-Warning Protocol −2, M11 EU Bio-Containment and Essential-Service Continuity Surge −2, priority −1 = −7
+PROPOSAL BONUS: EU Bio-Containment and Essential-Service Continuity Surge (cat 6, small) +5 — real bio release with casualties plus frontier cut-off and sabotage halt all this turn, answered directly
+LEGITIMACY LENDS: capital 16, sentiment 12 -> none, capital higher
+SOVEREIGNTY: 16 last turn, no capacity event? eu_frontier_access_denied t9 −3, no cat4 in flight +0, capability rose 2.5 −1 = 12

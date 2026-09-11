@@ -1,0 +1,7 @@
+Winter brought a narrow AI leap in code, maths and intrusion tooling, with self-rewriting probes seen within weeks, raising attacker capability more than general assistants.
+
+At the same time transmission unions in two states struck over fast-tracked licences, freezing pooled relay installation despite spares in warehouses. Brussels converted licences to probationary status under senior sign-off with hazard pay and liability cover; work resumed slowly in March and steadied through spring.
+
+ENISA and the AI Office drove mandated patching of the poisoned autumn component and hardened grid and registry configs. Registries were cleaned faster than relays were fitted; power and water degraded in spring storms but held, credited to cross-border exercises.
+
+In January the new US administration took office pledging to treat advanced AI as strategic asset with federal review and tiered access; nothing rationed yet, but EU repriced hyperscaler risk. Permitting zones and data-centre pledges cleared first phase, and the solidarity bargain on factory offtake, spares and side-deal notification held cohesion. By summer the Union had more capacity on paper, continued parts shortfalls, and deepening public unease over outages and smarter machines.

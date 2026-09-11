@@ -1,0 +1,11 @@
+### Holding pattern
+Brussels spends the autumn trying not to spend. The gigafactory sites and the broader technology package are kept legally alive — land options extended, grid connections queued, fast-track permit zones mapped — but no concrete is poured. Finance ministers refuse any fresh cash call, and energy ministers balk at reserving power for projects without tenants.
+
+Health authorities push ahead where they can. Large DNA synthesis firms now screen orders, hospitals keep reserve computing for alerts, and wastewater sequencing expands where staff exist. Smaller labs and universities lag, and officials concede the leaked genome methods are slowing, not contained. Copies move through chats and open toolchains faster than guidance can follow.
+
+### A side deal and a tightening vice
+In October a member state signs its own cloud and model-access arrangement with a large American provider, presented at home as pragmatism on jobs and prices. In Brussels it reads as a break in the common line. Commission envoys insist Union terms still stand; hyperscaler lobbyists quote the side price back in every other capital. Mayors of stalled build zones call it proof the centre cannot deliver.
+
+Then Washington tightens export rules again. Volume licences for advanced chips and frontier-model access are rewritten, with foreign buyers sorted into tiers. European firms learn they will be clients, not partners, with allocations reviewed in Washington. No immediate cutoff comes, but procurement teams are told to plan for rationing.
+
+In November Americans elect a president. The result is known by December; the new administration does not take office until next year. In Europe the mood sours further: commentators speak of dependence as humiliation, and polls show resentment rising against both AI disruption and the Union's inability to substitute for it. Confidence in the centre erodes, but institutions continue to function and no treaty vote, mass protest, or institutional collapse occurs.

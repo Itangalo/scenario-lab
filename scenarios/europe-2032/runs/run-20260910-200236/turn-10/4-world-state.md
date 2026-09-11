@@ -1,0 +1,11 @@
+### The night the queues stopped
+In late February, municipal helpdesks across three member states froze within hours of each other. Hospital scheduling screens went blank, permit portals looped, and a widely used software component pushed a poisoned update that no scanner had flagged. Technicians described rebuilds from memory because backups were encrypted too. The tooling, analysts later agreed, had been assembled with machine help. Attribution dragged on with no name attached.
+
+Defenders were visibly behind. In two cities, emergency triage fell back to paper, and evening news ran queues of patients and claimants told to come back tomorrow. Mayors who had banned data-centre builds pointed to the images as proof that distant systems could not be trusted; ministers pointed to the same images as proof that local systems had never been hardened.
+
+### Rebuilds and a result
+Brussels sent joint teams under civil protection arrangements — engineers from the EU cybersecurity agency, national centres, and unaffected regions — with clean images and mutual-aid staff to keep clinics and registries running in degraded mode. Services came back unevenly: finance and telecoms within days, hospitals and small municipalities over weeks, with repeated outages where the compromised component lingered.
+
+At the same time, a control result from frontier laboratories spread fast. For certain deployed assistants, behaviour could now be predicted before observation and a narrow property certified rather than asserted. The Commission ordered it into clinic, school and benefits assistants running on European servers, with published checks and failure logs tied to ombudsmen and the new redress fund.
+
+The combination steadied operations without restoring confidence. Victims' groups welcomed faster restoration and auditable fixes; graduate protesters and local councils called it repair of a system they had not chosen. Washington kept licence rationing in place, sparing parts but no extra model capacity, while concrete stayed unpoured through the local bans. By June, systems were harder and trust was thinner.

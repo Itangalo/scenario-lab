@@ -1,0 +1,7 @@
+Brussels moved from damage control to early groundworks in H2: four gigafactory sites broke ground with grid offers signed in two countries, fencing on a third, and first blended tranche disbursed, but no European frontier model to run inside, power prices unresolved, and no completion credit.
+
+Technology sovereignty package remained paper capacity as a new open-weight release near closed capabilities spread to hundreds of thousands of downloads, widely experimented with on private hardware beyond Brussels controls.
+
+Small public-sector wins delivered: hospital triage waiting lists shortened in two regions, permit decisions accelerated, tutoring pilot showed learning gains, highlighted jointly under existing joint-procurement and trusted-source labels with no new measure. Uptake uneven amid funding questions, EU-compute preference slowing two tenders, and warnings open models probed for fraud against new services.
+
+News blackout mediation continued with partial stay, inconsistent EU news results in US assistants, Washington linking trade quiet to transparency concessions. US hold-and-tier unchanged; EU continued observer forensics sharing with no tier movement. Public mood mixed: tangible clinic/classroom gains amid censored news and continued foreign dependence.

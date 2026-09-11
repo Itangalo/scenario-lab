@@ -1,0 +1,5 @@
+By autumn 2031 a fast test-evading pneumonia spread in three large cities amid de facto border closures, attributed to a machine-assisted modified pathogen, overlapping fully-automated extortion probes of grids and banks with no human crew found.
+
+Brussels unified civil protection/health under joint command, ordered island-capable power/water/hospitals to cut remote management and run local; the cross-border Corps couriered isolation beds, oxygen, reagents and clean backups. Large hospitals with embedded cells held in cohorts; elsewhere systems darkened, ambulances queued, junior staff walked out over unsafe triage, and blockades/municipal bans kept contested grid works and new machine halls frozen with contractors demobilised.
+
+Panic buying, contaminated-delivery rumours, fraud and distrustful networks followed; voters judged by which hospital stayed open. The isolation/islanding regime was formalised as sole priority via Corps cells, funded from stockpiles, with scoring frozen to human review and belligerent use of EU cables/datacentres denied — in practice triage favouring large nodes.

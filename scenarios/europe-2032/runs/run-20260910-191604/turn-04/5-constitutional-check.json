@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The drop in `eu_political_capital` from 19.0 to 5.0 (−14.0) exceeds the maximum allowable change of ±25 points per turn, but more critically, such a steep decline is not grounded in any narrative mechanism tied to organizational capacity, hiring, or institutional erosion. The Game Master's Notepad attributes this solely to portfolio charges and legitimacy effects, but no constitutional rule permits a single-turn drop of this magnitude without a corresponding major event (e.g., crisis, collapse, or scandal explicitly narrated). The narrative does not describe a political crisis, mass protest, or institutional failure sufficient to justify a 14-point loss, violating the realism of organizational constraints on political capital.\n- Economic Constraint violated: The narrative describes a funding shortfall and market contraction, yet the EU launches a new programme involving \"funded deployment, procurement standards, retraining money\", and \"grid fast-tracks\" without identifying any funding source or trade-off. This implies new spending commitments during a capital contraction and political fragmentation, violating economic consistency under resource constraints.\n- Regulatory Constraint violated: The narrative references \"court injunctions\" and \"court challenge over the delayed rulebook\", indicating regulatory delays and legal pushback, yet the metrics include no reflection of stalled regulatory capacity growth — in fact, `ai_safety` and `resilience` decline slightly, which may be plausible, but the absence of any counterbalancing regulatory effort or timeline extension for pending measures contradicts the requirement that regulatory changes respect minimum lead times and legal challenges. The implicit assumption that programmes can proceed despite active court blocks violates the realism of regulatory capacity."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

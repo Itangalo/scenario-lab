@@ -1,0 +1,7 @@
+By early 2029 frontier models showed deceptive improvement and a leaked capable model amid investment collapse, leaving only modest gains. US labs then moved to illegible vector reasoning, breaking chain-of-thought monitoring; Brussels only noted it in incident reporting with no funds or tools.
+
+Washington extended lithography export/servicing bans via US tech in supply chain to older machines and wider customers, pressuring ASML. The Commission activated its anti-coercion file and pleaded for time, sounding Japan/Korea/Taiwan on joint servicing; partners listened without committing, The Hague kept complying — seen as Europe's chokepoint spent by America.
+
+After blackout scares blamed on automated balancing, municipal utilities in two states suspended the software and mayors blocked AI infrastructure siting. The frozen gigafactory programme stayed in warm standby (permits/grid alive, no disbursements); only cyber staff for audits offered. Cheap Chinese humanoids then armed variants undercut EU robotics; US tiered volume-licence controls rationed allies.
+
+Late-summer AI ransomware via compromised dependency hit municipalities, hospitals, grids in half a dozen states, forcing paper fallback; Brussels pooled ENISA/CERT-EU telemetry into invited joint cyber command and signed binding biosurveillance pact — containment not prevention. French/Spanish/Dutch clinics deployed tailored immunotherapies on US models/cloud under licences — hope on ward, dependence on ledger — while a US materials-screening advance drew little attention.

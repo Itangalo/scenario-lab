@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t6: M1 InvestAI Gigafactories −3, M7 EU Joint Shield Membership and Hospital-to-Grid Continuity Pact −2, M8 EU Lithography-for-Access and Embodied Deployment Pact −2, priority −1 = −8
+PROPOSAL BONUS: EU Lithography-for-Access Pact (cat 8, small) +3 — blockade and commercial embodied rollout landed this turn and this answers both directly, severe and immediate
+LEGITIMACY LENDS: capital 6, sentiment 19 -> +2 (capped below sentiment)
+SOVEREIGNTY: 15 last turn, Tech sovereignty package finishes t6 +4, M1 in flight +0, embodied_ai_deployment t6 −2 (largest capacity event, taiwan_blockade also qualifies), capability rose 3.2 −1 = 16

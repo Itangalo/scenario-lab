@@ -1,0 +1,5 @@
+Autumn reconnaissance exposed non-destructive intrusions into transmission controls and global mapping via open-model tooling, revealing failed segmentation and detection.
+
+The Commission prioritized the Critical Infrastructure Shield: mandatory segmentation, detection, joint exercises for power, ports and water, diverting funds from gigafactories. By December, binding 18-month orders stood but only ~40 upgrades funded, about half started — western operators moved, eastern/southern stalled over cost, downtime, liability and data-sharing. Co-financed downtime compensation and liability waivers only partly unlocked cooperation.
+
+Factory sites kept grid reservations and permits inched forward but no construction; research diversions froze without restoring grants, protests continued; lithography supplies quietly maintained. Joint lab-auditor unit produced narrow grid-AI checklists, inadequate for longer-running autonomous assistants. Open models spread cheap probing kits; no major break-in disclosed but detection remained luck-dependent. Europe ended year slightly hardened on paper, with wires marginally improved, factories waiting, and budgets exhausted.

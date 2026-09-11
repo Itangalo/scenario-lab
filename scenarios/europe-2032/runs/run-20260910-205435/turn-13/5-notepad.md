@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: M13 EU Automation Shock Absorber for Displaced Entrants and Embodied-AI Exposed Workers −2, M15 EU Observer Accession to the US-China AI Risk Accord −2, priority −1 = −5
+PROPOSAL BONUS: EU Observer Accession (cat 8, small) +4 — us_labs_nationalised removes company-directed leverage and us_china_agreement creates state-to-state verification window last turn, this answers both directly
+LEGITIMACY LENDS: capital 24, sentiment 12 -> none, capital higher
+SOVEREIGNTY: 11 last turn, no capacity event? no — us_labs_nationalised t13 −3, no cat4 in flight +0, capability rose 2.5 −1 = 7

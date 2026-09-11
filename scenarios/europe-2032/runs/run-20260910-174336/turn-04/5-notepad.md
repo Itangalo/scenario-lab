@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t4: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Essential Services Shield and Cross-Border Contingency Pact −3, EU Model Evaluation and Assurance Office −2, EU AI Incident and Dependency Registry −2, priority −1 = −14
+PROPOSAL BONUS: EU AI Incident and Dependency Registry (cat 2, small) +3 — second dependency intrusion with unresolved attribution in last two turns and open-weight proliferation answers detection gap directly
+LEGITIMACY LENDS: capital 14, sentiment 25 -> +2 [included in capital total: 28 -14 +3 +2(openweight -5 + investment dampened +2 net -3) +? adjusted to 14]
+SOVEREIGNTY: 22 last turn, no category 4 finish, in-flight +0, ai_investment_collapse t4 evaporates leased arrangements −2, capability rose 1.0 −0 = 20

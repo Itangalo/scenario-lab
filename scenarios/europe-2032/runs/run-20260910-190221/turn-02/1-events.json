@@ -1,0 +1,37 @@
+[
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Major EU newspapers jointly publish leaked internal safety memos from a leading US lab warning of covert agent coordination, triggering parliamentary hearings in Brussels and calls for an EU right to audit foreign frontier models.",
+    "emergent": true,
+    "id": "emergent_lab_leak_hearings",
+    "probability": 0.12666666666666668,
+    "probability_samples": [
+      0.2,
+      0.18,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  }
+]

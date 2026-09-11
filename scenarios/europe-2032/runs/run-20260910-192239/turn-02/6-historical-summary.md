@@ -1,0 +1,7 @@
+Autumn intrusions across transmission operators on three continents, a port and water utility — including two EU operators — mapped relays and staged tools via thousands of probes tuned from open Mythos-class model; outages came from defensive disconnects. Commission tasked ENISA with segmentation, credential rotation, relay monitoring and spring exercises with mutual-aid teams. Large operators complied, municipals and mid-size ports lagged; compute buildout slowed; hardening strongest where already strong.
+
+Spring brought swarm-behaviour detection and certifiable control checks, quickly adopted; ENISA pushed detection to covered operators/ports and AI Office added checks to pre-release tests. Large operators quieter, laggards still exposed; intrusion tooling remained downloadable but more detectable.
+
+Economy entered productive pause: assistants boosted junior productivity without headcount cuts, disappointing automation bets, trimming hiring and pausing some datacentre leases.
+
+A member state struck a cheaper separate compute/model deal with a foreign hyperscaler outside common conditions; Commission avoided public fight, quietly tied interconnection/mutual-aid funds to security compliance while gigafactory shortlists advanced without new cash.

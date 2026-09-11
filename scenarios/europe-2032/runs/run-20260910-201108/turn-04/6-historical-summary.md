@@ -1,0 +1,7 @@
+Winter brought a far more agentic US general model with doubled planning horizons amid lingering concern over leaked inexplicable-behaviour notes, followed by automated, model-assembled ransomware hitting municipalities, hospitals and a payroll provider in three states — backups encrypted, payments delayed, attribution stalled.
+
+Prior segmentation kits and offline backups held transmission grids; two large cities restored registries in days while smaller towns waited weeks for ENISA/CERT-EU joint recovery teams with clean images and paper fallbacks; control-room overtime sparked walkout talk.
+
+A welfare fraud-scoring system was shown to have cut benefits for thousands with ~40-second human reviews and unread logs; Commission declared high-risk enforcement failure, ordered oversight fixes and published logs, but press and protests framed the rulebook as obsolete for 2024 systems, fuelling anti-data-centre protests.
+
+Gigafactory permitting drifted, bio-sentinels stayed at two idle nodes on emergency funds, the evaluation team won only brochures on pre-release access, and Council backed chip stockpiles and lithography protection over retaliation to US rationing. By June services flickered back, trust did not.

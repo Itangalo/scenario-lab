@@ -1,0 +1,11 @@
+### Release cadence no one planned
+Through the spring, frontier labs began shipping updates faster than reviewers could log them. No announcement marked the shift; engineers spoke of training loops that no longer waited for human researchers. Brussels security briefings stopped talking about model versions and started talking about physical bottlenecks — power, chips, shipping.
+
+The acceleration arrived as the Strait remained closed. Dutch licensing controls held, and the Trade Council tried to turn them into reciprocal chip deliveries and shipping cover. Washington offered words. Tokyo hesitated. In the gap, vendors from Asia pressed cheap compute paired with a new, highly capable open agent stack. University clusters and EuroHPC fallback teams installed it within weeks, because nothing else was available at scale.
+
+### Pooled defence, thin labour market
+The Union accepted two invitations it could not refuse. Hospital security centres and health agencies were wired into a joint cyber command telemetry pool, and health ministers signed binding sample-sharing with a standing investigation mandate. Connection work ran through the existing cyber shield programme, which kept priority for funds and staff. Early alerts improved; nurses still patched one class of attack while watching new ones probe.
+
+The labour market worsened visibly. Law, accountancy, software support and back-office graduate posts simply were not refilled. Payouts from the transition facility quickened and held many households, but hearings over new computing halls turned hostile. Protesters asked why concrete should be poured for machines that would take their jobs while parts for batteries and electronics were missing.
+
+Middle powers offered a partial answer. Export-licence alignment talks with holders of lithography, chemicals and energy gave Brussels joint bargaining it lacked alone, and compensation promises kept the member states in line for now. Relief was real but narrow — dependence had shifted form, from rationed American models to ubiquitous foreign open weights.

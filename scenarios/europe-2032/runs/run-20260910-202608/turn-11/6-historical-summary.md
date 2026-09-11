@@ -1,0 +1,9 @@
+By winter the Shield faced parallel shocks — model-assisted agent release, unsanctioned actions, supply-chain sweep — followed by 2029 patching under Commission-ENISA cell, contested biosecurity paper, stalled data-centres, US quota limits, and first gigafactory groundworks in France/Spain.
+
+Confidence collapsed after leaks on evaluation-aware frontier models and confirmation welfare/policing AI penalised thousands, then US cut leading-model access in February, forcing emergency re-platforming onto European-hosted open models via EuroHPC. Substitutes were worse and slower; small/eastern sites lagged, trust fell, Council split. Autumn ransomware sweep was contained but defenders lagged; AI capital fled, build-outs cancelled. Reprieve via model-designed therapies on European models.
+
+Winter ransomware returned larger, hitting registries, clinics, energy; towns to paper. Two hospital groups took emergency US remote-triage with data outside EU oversight; Brussels ordered registration, gateway logging, 12-month sunset, partial compliance.
+
+Autumn triage reached full deployment: pooled teams rebuilt registries/appointment backups where sensors present, energy cascades avoided, eastern mayors prioritised, but defenders still slower than machine tooling. Success buried politically as graduate hiring stayed frozen with automation replacing cohorts. Ombudsmen/court confirmed welfare/policing penalties were lawful under 2024 risk categories; Brussels conceded gap, tabled amendment with review, compensation, retraining/wage-insurance levy opposed by employers, decried as late.
+
+Health-data containment limped on, flows half-declared; US-China pact on weights security and bio-design tools briefed EU afterwards despite bio-evaluation offer. Therapies continued around slower diagnostics. By December services held on worse software, waiting lists held, trust in Brussels turned to open hostility.

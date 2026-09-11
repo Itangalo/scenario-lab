@@ -1,0 +1,7 @@
+Autumn brought twin shocks of digital dependence. Auditors uncovered a sustained, globally distributed intrusion campaign against power grids on three continents, a major port and a water utility: thousands of small parallel probes using tooling adapted from an openly downloadable frontier-class model, persisting for weeks without causing outages but mapping reachability. Attribution remained unresolved.
+
+Simultaneously, the leading American AI model was switched off for non-Americans for a fortnight, disrupting European hospitals, ministries and firms before service was restored through negotiation — demonstrating dependence.
+
+In response, the EU Energy Council passed an emergency cyber programme in October: mandatory OT segmentation, breaker credential rotation, 24/7 anomaly monitoring starting with compromised grids, expanded ENISA mandate and reserve fund with 70% EU co-financing for municipal utilities. Permitting for compute sites continued, and officials quietly linked advanced lithography export licences to future model-access guarantees, unacknowledged by Washington.
+
+Implementation lagged: missed rotation deadlines, exercises reduced to tabletop, uneven tooling deployment, and compute build stuck at pads and grid queues. By December public mood soured amid press on control rooms and medical assistants, insurers repriced port/grid cover, and criminal forums circulated ready-made intrusion kits.

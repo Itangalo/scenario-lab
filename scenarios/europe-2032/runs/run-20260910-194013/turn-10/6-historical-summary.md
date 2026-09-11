@@ -1,0 +1,3 @@
+Union bought bridge stakes in shelved gigafactory builds to hold plots, power and teams, but no new silicon arrived; US tiered export rationing put even EU-hosted hospital and office models under quarterly review, exposing hosting ≠ permission.
+
+Manual fallback shield declared operational in hospitals, registries and grids, letting care continue under daily self-rewriting probes via paper/isolated operation, though a faulty patch blackout pushed operators toward manual procedures. Tailored therapies and productivity gains spread but trust stalled over foreign kill-switch fears, sparking permit protests. Queues lengthened, spares thin, EU left owning empty shells.

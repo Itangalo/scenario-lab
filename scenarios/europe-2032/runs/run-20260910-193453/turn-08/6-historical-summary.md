@@ -1,0 +1,7 @@
+EU's pooled telemetry initiative contained February ransomware sweep; autumn automated patching and swarm-detection prevented second winter cascade, but restoration stayed uneven amid auditor cost fights. In spring Brussels turned relief into rule: DG DIGIT made the hardening standard mandatory for health systems, municipal IT and ports with ENISA joint certification lots; large operators complied quickly, smaller councils struggled with staff and costs, enforcement patchy and timetable slipped in poorer regions.
+
+Open-weight models narrowed gap after mid-spring frontier advance; leading lab shift to non-readable reasoning forced Brussels joint evaluation team to formally abandon chain-of-thought checks for black-box testing and activation inspection as stopgap, oversight confidence fell further.
+
+US freeze continued: lithography/compute talks suspended, gigafactories stuck as empty fenced plots under legal hold, Brussels kept pooled screening as leverage without access, segmentation crews short on volumes.
+
+Workplace AI plateau confirmed: solid productivity gains in law, accountancy, administration, media, strongest for juniors, without employment fall; seen as finished tools, lifting voter mood modestly on functioning services.

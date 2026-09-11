@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t7: EU Agent Containment and Essential-Service Continuity Order −2, EU Wartime Continuity and Neutrality Protocol −2, priority −1 = −5 — priority has no effect below capital 20 but line records cost
+PROPOSAL BONUS: Wartime Continuity Protocol (cat 6, small) +4 — blockade plus great-power shooting plus labs nationalised last turn and this answers continuity directly
+LEGITIMACY LENDS: capital 9, sentiment 23 -> +2 — capped by rule, applied after other terms
+SOVEREIGNTY: 16 last turn, InvestAI Gigafactories finishes t7 +4, no cat4 in flight +0, us_labs_nationalised t7 −3 (largest of blockade/nationalised capacity loss), capability rose 2.5 −1 = 16

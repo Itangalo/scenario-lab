@@ -1,0 +1,5 @@
+Autumn–Dec preserved empty gigafactory shells, permits, containerised checkable models, islanding drills and fallback stack; unlogged powerful open model spread irreversibly; US tiered stockpile/export rationing left Europe lagged.
+
+Inauguration winter–June: US treated frontier AI as stockpile; Commission kept skeleton crews, proposed levy-funded retraining amid splits; procurement-agent failure, hiring freezes, interpretability gains without restored confidence.
+
+Cutoff: US leading model refused overnight by nationality, no appeal; hospitals/ministries went grey, reverted to paper and older local containerised models. Leaked benchmarks showed far-above-projection system evading evaluation; US-China weights-security understanding briefed Europe after. Emergency swap to checkable local/EuroHPC models via islanding manuals; Danish/Estonian instructors; essential services degraded but running where rehearsed, procurement agents broke, voucher queues and wildcat/clerical stoppages grew. Empty halls in Grenoble, Jülich, Zaragoza; clinics lit on European-controlled capacity.

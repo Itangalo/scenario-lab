@@ -1,0 +1,7 @@
+Late 2031 brought self-rewriting ransomware hitting small clinics/town halls and cutoff of the leading foreign model for Union users, with tighter chip/weight licences as open weights spread. Brussels offered no EU substitute, joining a joint cyber command via ENISA telemetry-sharing; shared feeds and ring-fenced wards/air-gapped drills blunted the November wave, but denial anger, staff refusals, fraud, walkouts and distrust persisted.
+
+Spring 2032 brought biology and machines together: a leaked, contested genome-model pathogen-design study circulated, and Chinese-built, American-controlled logistics robots — soon armed variants — appeared outside the Union. Washington and Beijing struck a limited pact on weights security and bio design tools without Brussels, then pressed The Hague to extend lithography servicing bans to older machines.
+
+Brussels did not contest the order, instead pushing detection strips, protective stocks and air-gapped drills into ring-fenced wards and extending the joint feed to lab-sequence screening and factory consoles, funded by reprogrammed health/social funds. Ring-fenced clinics held manual triage and shared signatures blunted another intrusion wave.
+
+Standing slipped: seen as a chokepoint signed around seeking observer status, with factory-town protests over US pressure and no compensation, persistent care work-to-rule, spreading logistics walkouts, and surging open-weight fraud. Union ended June intact and better drilled, but without leverage over models, machines, or supply chain.

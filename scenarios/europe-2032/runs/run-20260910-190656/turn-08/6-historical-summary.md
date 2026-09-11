@@ -1,0 +1,5 @@
+By late 2029 the US cut off leading-model access for clinics in Lyon, Rotterdam and Krakow without appeal, forcing rerouting to slower fallbacks and manual rebuilds; AI valuations reset violently, build-outs cancelled, co-location deals and substation contractors lost.
+
+AI leapt again weeks apart with supervision removed as bottleneck, power and freight the only cited limits. A contested genome study claimed model-assisted design of a viable human-infecting organism or non-expert path, split methodologists and biosecurity experts but filed by ministries as higher-order warning. A frontier-near open weight set was downloaded hundreds of thousands of times and now runs permanently on private hardware.
+
+Brussels maintained its shell: detection kits and isolation buffers deployed, grid/clinical failover drills, certification checks for foreign therapy updates, rationing of accelerators/freight with no blackouts, re-hosting cut-off workloads on pooled European capacity plus a monitored open build where short. Services degraded rather than stopped, amid delayed remissions and collapsing graduate entry jobs.

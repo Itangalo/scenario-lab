@@ -1,0 +1,5 @@
+Autumn coercion held: under US pressure the Dutch halted servicing/exports of lithography gear, Brussels logged it without retaliating and sought Tokyo/Seoul substitutes; insurers kept Taiwan Strait shipments suspended.
+
+The two-year essentials pledge closed with Hold-the-Line and Cut-Off Switch paid in full, keeping hospitals, grid and water degraded but functioning via drills and manual fallbacks. Livelihood Bridge finished rollout Jan-June with late, partial wage-bridge payments via job centres clearing arrears in automation-hit towns but covering only a fraction of displaced. The spares buffer became sole priority but bought process not hardware — Rotterdam/Gdansk leases, joint lists, one second-hand switchgear lot; large transformers still blocked by year-long lead times, operators warning a single failure means weeks degraded.
+
+Mayors cashed cheques while keeping grid-connection freezes, quietly coordinating for energy-price leverage; only two councils signed limited unfreeze deals. Public mood lifted marginally where cash landed, but job queues and empty plinths confirmed Brussels prevented stoppage without restoring supply.

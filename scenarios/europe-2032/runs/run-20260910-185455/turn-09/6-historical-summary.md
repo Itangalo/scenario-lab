@@ -1,0 +1,7 @@
+Through 2030 the Shield stalemate persisted: Brussels offered no new money or chips, pushing lithography servicing/spares tied to pooled compute and anchored builds in Japan, Korea, Singapore. Upstream Bargain concluded negotiation phase with reciprocal queue-mapping and test-sharing, but strait shut, no hardware moved, Gulf capacity absorbed at home. Anchorage Pact gave legal base only. Ratification inched forward without volume guarantees.
+
+Second half brought foreign-model medical breakthrough — tailored cancer and rare-disease therapies trialled in US hospitals. Brussels deployed via health authorities/emergency body to certified cyber-recovered hospitals in a dozen university centres; procurement favoured European-anchored queues with health-data rules/signatures, but dosing/variant-tuning still depended on American cloud, pharmacists reverted when queues stalled.
+
+Foreign robots entered logistics at Rotterdam, Antwerp, Lodz — Chinese machines on American control software, cutting agency shifts, Lille pickets. Commission added no instrument, only extended ENISA segmentation guides via industry directorate; Paris/Berlin warned automation on чужой stack.
+
+US-leaving talent held chairs/EuroHPC posts but queued large runs on older nodes; no open-weight frontier release reached Europe. Cyber recovery partial, insurers raised premiums, separate-cloud capital stayed outside. Net public mood ticked up on cures, legitimacy barely held, sovereignty only slightly up on legal base without silicon.

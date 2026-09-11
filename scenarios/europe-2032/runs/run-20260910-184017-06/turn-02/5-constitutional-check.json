@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: `eu_political_capital` dropped from 43.0 to 26.0, a decrease of 17.0 points in one turn. While metrics are allowed to fall, the drop exceeds the hard cap of 25 points maximum movement (up or down) in a single turn per Constitutional Constraint #9. Although the narrative and notepad cite multiple negative charges and a scandal, the magnitude of the change violates the 25-point ceiling on absolute movement. A drop of this size must be spread across turns or justified by cascading event gates that still respect the cap."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

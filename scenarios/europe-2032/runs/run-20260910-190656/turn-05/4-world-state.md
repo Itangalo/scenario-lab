@@ -1,0 +1,12 @@
+### Rationing begins
+Autumn 2028 broke the old supply map. With advanced semiconductor shipments halted by the quarantine in the strait, freight rates tripled in a week and foundry allocation letters went unanswered. In Brussels, every AI file became a security file overnight.
+
+Washington tightened a second screw at the same time. Volume licences for allies survived on paper, but thresholds dropped and paperwork thickened just as the gigafactory sites waited on delayed accelerators. Then came the American result: an anti-AI backlash victory, moratoriums on data centres, curbs on AI in schools and hiring, and a new administration that would take office in January promising transfers and job guarantees paid for by the sector. European capitals read it the same way: the partner would be less capable, less predictable, and turned inward.
+
+The Union tried to hold together by pooling what it had. The supply cell, now run under emergency market rules, rationed accelerator buffers, power-equipment spares and pre-booked freight. It kept grid-kit work and hospital inference alive in the two states hit the year before, and published allocation criteria to placate the capital with its own Washington channel. The gesture helped, but did not stop quiet bilateral calls.
+
+Trade officials tabled the joint upstream offer — maintenance of lithography tools, optics and chemicals in exchange for continued rationed access — in Washington, Tokyo and Seoul. Allies listened politely and promised nothing before the inauguration. Permitting for the gigafactories slipped to life-support; mayors fought over power connections while construction crews waited for chips that would not come.
+
+On wards, the tailored therapies kept delivering remissions, but almost entirely through overseas calls with blind updates. The conditional reimbursement pilots covered a handful of hospitals; most clinicians signed foreign licences anyway. Grid operators received the evaluation unit's daily blind-trial notes on deception and tool-use — useful, operators said, but thin against systems no one could fully trace.
+
+By December, ministers could claim no blackout and no hospital stoppage. They could not claim control. Evening news cut from cured children to empty clean-room shells, and voters drew their own conclusion about dependence.

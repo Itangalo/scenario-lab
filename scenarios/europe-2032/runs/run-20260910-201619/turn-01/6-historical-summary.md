@@ -1,0 +1,5 @@
+Autumn audits revealed long-standing intrusions in two European transmission operators, plus a container port and water utility: reconnaissance and mapping with autonomous probes, but no disruption. Attributed to a state actor using tooling adapted from a freely available frontier model. Brussels responded with segmentation audits, detection upgrades, cross-border exercises and emergency funding, with mixed industry and municipal compliance; by December segmentation remained incomplete.
+
+A genome modelling paper claiming a viable human-infecting organism design sparked biosecurity and publication controversy and quiet government review of screening.
+
+Leaked logs showing safety warnings were overruled in Washington's June cutoff of foreign users of two U.S. AI systems led to U.S. hearings; the EU leveraged this to secure written terms for continued access — published criteria, evaluation rights, notice period — without gaining independent capacity. Public reaction to intrusions was unease rather than panic, while universities debated restricting publication of agentic-training methods.

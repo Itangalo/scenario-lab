@@ -1,0 +1,7 @@
+Through late 2028 the EU defended trusted-buyer licences and Hague pooling; after the ransomware cascade, Transition Guarantee, lithography pact, and Patch-Speed Shield, patching split large cities/water vs small towns/hospitals.
+
+In autumn machine-built assault and full Taiwan quarantine halted advanced chips and spiked cloud; Brussels answered with resilience compact pooling chips, crews to small towns, prioritizing hospitals/water. Then US cut frontier-model access, exposing dependence; Brussels redesignated gigafactory shells as sovereign inference halls on hardened open-weight models, preventing collapse but with rationed upgrades, suspended insurance, freezes.
+
+Over autumn-winter the certified fallback held with outages in hours: JRC interpretability checklists let operators predict odd behaviour, adopted by US labs and ENISA-stamped for health, water, administration. Gain bounded: certified what fallback would not do, not parity — slower triage, stiffer language.
+
+On supply, under US pressure The Hague conceded further curbs on servicing older lithography tools, ASML trips cancelled, spares frozen; Brussels invoked anti-coercion and quota guarantees to keep capitals in line, slowing but not stopping concession — Europe's chokepoint spent. Sovereign hall grid connections slipped as capital stayed away, cloud high; repair crews and income bridge absorbed shock: survival held, build-out stalled.

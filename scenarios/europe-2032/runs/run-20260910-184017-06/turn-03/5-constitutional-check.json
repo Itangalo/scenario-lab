@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `eu_political_capital` decreased from 26.0 to 12.0, a drop of 14.0 points, which exceeds the maximum allowed single-turn change of 25 points in magnitude. While the constraint allows downward movement, the 25-point cap on absolute metric movement (Constraint 9) is a hard bound. However, this is not the primary issue.\n- More critically, the Game Master's Notepad shows a total portfolio charge of −14 and a proposal bonus of +3, with legitimacy lending contributing +2 (capped by sentiment). The net change in `eu_political_capital` should therefore be: −14 + 3 + 2 = −9. Starting from 26.0, this results in 17.0, not 12.0. The proposed metric violates the constitutional requirement that metric rules be consistently applied (implied by the invariant modeling structure and the use of the notepad as authoritative). The update incorrectly applies a −14 net drain without full accounting, leading to an outcome outside rule-consistent bounds.\n- Economic Constraint violated: The narrative mentions a \"new transition fund for displaced white-collar workers\" that \"cleared its first agreement but paid nothing yet\", yet the proposal bonus applies fully under category 7 (small). If no payments have been made and the fund is not operational beyond agreement, the bonus should not yet be awarded. The economic effect (bonus to political capital) is realized before the measure has any actual implementation, violating the minimum time lag for economic effects (Modelling choice 6: No measure is implemented instantly; low-cost measures require at least one full turn from proposal to effect)."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

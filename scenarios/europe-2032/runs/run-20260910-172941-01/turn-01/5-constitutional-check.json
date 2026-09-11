@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 40.0 to 47.0 (+7.0), while `ai_capability` increased from 52.0 to 53.5 (+1.5). Although the invariant allows `openweight_capability` to rise more than `ai_capability` in a single turn (as it is a catch-up mechanism), a jump of 7.0 points violates the spirit and practical bounds of plausible catch-up. Metric rule 2 (referenced in Invariant 2) sets `openweight_capability` near the midpoint of its old value and last turn's `ai_capability`. Applying that formula: midpoint of 40.0 and 53.5 is (40.0 + 53.5)/2 = 46.75. A value of 47.0 slightly exceeds this, implying the mechanism has been exceeded. Since the constitutional constraint specifies that `openweight_capability` is governed by this rule and may only rise via that mechanism (except in case of catastrophic physical destruction, which does not apply), setting it to 47.0 is a violation.\n- Narrative violates Modelling Choice 8: The narrative states \"autumn cross-grid intrusion and unsanctioned agent incident landed this turn and this answers them directly\", which telegraphs that these events were expected or gate-triggered by design. This implies knowledge of event gates and their activation, which is prohibited under Modelling Choice 8 (\"The narrative must not telegraph\"). Phrases like \"this answers them directly\" in conjunction with event timing suggest the EU’s measure was pre-conditional on event occurrence, effectively revealing gate logic that should remain hidden in the narrative layer.\n- Economic Constraint violated: The Critical Systems Shield involves mandatory segmentation, shared detection systems, co-funding, and liability cover, yet no source for the required capital expenditure is identified. The `eu_political_capital` drops from 48.0 to 36.0 (−12), suggesting high cost, but such a drop does not automatically justify large-scale spending without a funding mechanism. The notepad records a −10 portfolio charge, but this is an abstract cost tracking, not a demonstrated budget source. Realistic capital expenditures require identified funding, especially for cross-border infrastructure and liability programs; none is provided."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

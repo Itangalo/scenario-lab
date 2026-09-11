@@ -1,0 +1,11 @@
+### Cutoff and cascade
+In February, access to the leading American model for European users stopped with a short notice and no appeal. Hospitals, ministries and firms that had built prescribing helpers, triage assistants and citizen-service copilots on it found queries refused. Within weeks a large automated attack landed — a ransomware sweep mixed with a poisoned software update — locking municipal systems, delaying prescriptions and forcing power operators to island parts of their networks.
+
+Wards did not go dark. The triage channels and backup boxes rehearsed over the past year were ordered into use: listed hospitals switched to European-hosted models where the new compute halls had power, otherwise to paper playbooks and isolated prescribing. National response teams plus EU-level patch distribution gave health and power restore-priority. Recovery was uneven and slow, and officials refused to promise attribution. Defenders were visibly behind the tooling.
+
+### Holding with what exists
+Brussels froze a member state's separate hyperscaler side-deal out of the fallback lists under security conditions, and funded the operation only from leftover digital funds — no vote it could not win was attempted. The bio-detection pilots finished this turn: sequencing hubs and wastewater sentinels in a handful of hospitals came online, with playbooks grafted onto the cyber triage lists.
+
+A European team reported an AI-accelerated pathogen classifier from those pilots that cut detection time in sentinel sites, hailed by specialists as a landmark in early-warning, presented as proof the European deployment was delivering. It did little to lift the mood.
+
+Mayors still fought over electricity bills for the compute halls, cranes still stood idle where price relief failed, and single-source reports of interference at substations feeding data-centre clusters grew louder. At home the cutoff read less as outrage than as a failure of foresight long warned about, and coverage of locked city halls dominated over news of falling waitlists elsewhere.

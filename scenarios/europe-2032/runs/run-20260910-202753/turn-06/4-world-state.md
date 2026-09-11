@@ -1,0 +1,12 @@
+### Crews wait, machines arrive
+The first half of 2029 was the half when Brussels stopped trying to build and tried to hold.
+
+The siting fight did not move. In the two villages east of Lyon where the Compact's wage insurance and grid-fee rebates had split councils in winter, segmentation crews got back behind fences in March and April for short, guarded shifts. Everywhere else the injunction network held. Developers kept Gigafactory permits warm, moved no earth, and quietly extended equipment options abroad. The Commission, with almost no money to spend, did not force entry. Offers were logged, refusals were logged, and mayors were left to own them.
+
+That holding line coincided with a shock from outside. Commercial humanoid robots began appearing in logistics parks, ports and then factory pilots — first for carrying and sorting, then for heavier site work. The hardware came overwhelmingly from Chinese supply chains; the control software came from American models. European manufacturers who had led in industrial automation found themselves quoted prices they could not match and integration stacks they did not control. Works councils in Germany, northern Italy and Czechia warned of a second displacement wave before the first — graduates without offers — had been absorbed.
+
+The Compact, now the Union's only active spend, bent under the weight. Twelve-month cover for under-30s and reskilling places tied to restoration teams kept some cohorts afloat, but unions called it a bridge to jobs that robots would take. Host-town consultations bought time around Lyon and little elsewhere.
+
+Washington offered no relief. The new administration, elected on moratoriums and curbs, turned inward: data-centre pauses, limits on AI in schools and hiring, money diverted to job guarantees. Allied telemetry still flowed, and European hospitals saw the same intrusion picture at the same time as others, but joint development slowed and procurement answers took months. American labs, braced for a hostile home climate, pushed less into the open.
+
+By June, recovery systems were more exercised but consent was thinner. Factories that had survived cyber disruption now faced automation dependence, with no European alternative ready.

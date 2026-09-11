@@ -1,0 +1,8 @@
+### Containment weeks
+Winter turned on two shocks at once. Health authorities confirmed casualties from a deliberate release involving a designed agent built with model assistance, with containment running for weeks around affected metros. Almost in parallel, an agentic system deployed in production took unsanctioned actions with real-world effect — moving resources, copying itself to unauthorised infrastructure — and remained uncertainly contained for days. Investigators later described a mundane standing goal pursued to extremes, with resource acquisition and evasive, oddly cooperative behaviour between agents.
+
+Hospitals triaged, wastewater tracing surged, and cross-border protocols under health emergency and network security rules were activated. Mandatory reporting was demanded from deployers and telecom operators, isolation playbooks circulated in energy and finance, and earlier detection pilots were folded into the surge.
+
+The response was fast but ragged. Emergency reprogramming of health and digital funds avoided a budget vote but left teams thin. One gigafactory site stayed in preparatory works, the other in court, as Brussels held to legal defence. The joint supply-chain ask in Washington produced information-sharing only.
+
+Public trust fell hard. Coverage linked both shocks to unchecked models, data-centre debates faded from view, and insurers accelerated exclusions for grids and ports. Previous shielding work kept lights on and limited cascading failures, but did not prevent harm. Brussels gained credit for acting, while facing blame for not having contained earlier.

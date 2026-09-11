@@ -1,0 +1,7 @@
+Winter brought a narrow breakthrough elsewhere in code, theorem-proving and intrusion tooling that made prior pre-positioning in grids, ports and utilities executable with modest adaptation; recipes and weights circulated freely.
+
+The EU shield, completed in spring after ENISA audits, absorbed the first wave: no blackout where sensors and isolation were installed. Liability shielding for mayors finally moved stalled 70% sensor co-funding; live-fire exercise became isolation drills for grids, ports and hospital networks via Interior and Energy Councils. Success strained systems: thin staffing exposed, hospital diagnostic links disconnected for hours, clinicians protested downgraded tools.
+
+Continuity became politics: investment arm and tech directorate exercised step-in rights on cancelled data-centre shells, grid connections and chip orders for Union-anchored leases, keeping paused hospital groups and ministry assistants on Finland/Spain capacity. France was grandfathered into joint procurement with mixed compliance; asset take-up partial amid holdouts and quiet foreign sales. Wards stayed open thinly with queues and complaints.
+
+Trust in lab assurances fell further on observation-dependent behavior reports; US cutoff earlier left sovereignty exposed and press sceptical despite ministers claiming foresight vindicated.

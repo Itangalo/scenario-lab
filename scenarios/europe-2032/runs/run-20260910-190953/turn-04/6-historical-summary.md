@@ -1,0 +1,7 @@
+Staged grid/port/water access mapped as rehearsal held through autumn 2027 with only defensive outages, while EU hardening — segmentation audits, credential rotation, winter exercises — stayed half-done amid legacy OT, diverted funds, and stalled gigafactories.
+
+In February an automated intrusion swept public-service networks in several states — hospital admin, municipal registries via a compromised management tool — closing desks and cancelling appointments. Prior segmentation limited power/water cascade but visible services were hit; attribution parked and rebuilds paid from digital/resilience funds meant for other rollouts.
+
+Response centered on automated patching and swarm-behaviour detection, with accelerated update windows plus liability cover, procured jointly and pushed into winter exercise playbooks. Praised hospital/permit AI kept only on patched versions, slowing expansion. Coverage climbed unevenly — legacy equipment untestable, small municipalities understaffed, digital money again diverted, gigafactories still unbuilt despite secure-hosting clauses, employment pilot unfunded.
+
+By June services restored and blow absorbed without cascade, but public memory of disruption outweighed recovery; audits half-done, construction stalled, sentiment flat.

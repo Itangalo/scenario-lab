@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Opaque-Embodied Shelter Extension −2, EU Attributed Benefit Retention Drive −2, EU Joint Cyber Shield Accession −2, priority −1 = −6 (capital below 20 so priority has no effect and is not charged, charge applied −6)
+PROPOSAL BONUS: EU Joint Cyber Shield Accession (cat 8, small) +4 — cyber_major_incident and eu_frontier_access_denied landed this turn and this answers both directly via invited telemetry
+LEGITIMACY LENDS: capital 19, sentiment 5 -> none (capital not lower)
+SOVEREIGNTY: 12 last turn, no capacity event finish, no category 4 in flight +0, eu_frontier_access_denied t11 −3, capability rose 2.0 −1 = 8

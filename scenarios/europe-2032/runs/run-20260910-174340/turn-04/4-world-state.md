@@ -1,0 +1,15 @@
+### Patchers on strike
+The spring began with crews refusing to work. In a dozen lagging communes in France, Belgium and Italy, municipal IT staff walked out over planned cuts linked to automation, leaving half-patched servers and unrotated credentials exactly where the winter ransomware had hit hardest. Recovery stalled into picket lines, and national papers ran photos of closed citizen desks beside uninstalled sensor boxes.
+
+Brussels answered with a pact. Labour ministers, municipal associations and the public-service unions agreed to pause dismissals tied to automation while emergency work continued. The pact promised paid overtime, pooled backfill teams and retraining money for hygiene roles, to be drawn from the existing EU Critical Systems Shield and Dependency Triage structures.
+
+Delivery was partial. With the portfolio already carrying heavy commitments in gigafactories, sovereignty funding and the Shield, no new funding source was available this turn, so overtime payments were deferred and retraining was limited to reassignment within existing budgets. The small Shield teams could only cover a few strike-hit towns, with joint monitoring maintained where staff already existed but not extended to new operators. In most other towns patching resumed only slowly by May, and smaller towns still spoke of bailouts and service cuts.
+
+Phased reporting for energy, ports and water was prepared this turn, building on the earlier Shield work, but full obligations did not enter into force mid-turn. Pilot notification began with the two grid operators already under monitoring, with wider entry into force delayed until staffing and funding allow in a later turn.
+
+But containment frayed elsewhere. A powerful openly downloadable model appeared within months of the closed frontier and was pulled hundreds of thousands of times in days. Local police and security volunteers warned that intrusion tooling once requiring skill was now point-and-click, and probes reusing old grid access ticked up. Power stayed on, yet defenders described falling further behind.
+
+### The benefits denial
+Mid-turn a second blow landed. An ombudsman and then a court found that an automated system used in social benefits had systematically penalised single mothers and migrants, cutting or reclaiming payments on flawed risk scores. The Commission placed the case inside the high-risk rules for public administration, ordered an incident review and suspended the system pending reassessment.
+
+The framing failed. Press and opposition argued the law had certified a machine that wronged the poor, and trust fell again. Site preparation in Spain and Sweden crawled on previously committed public guarantees; with no new borrowing or reallocation identified, private money did not return. Triage audits finished and stopped the worst cascade, but resilience gains remained limited to the towns where existing teams could reach.

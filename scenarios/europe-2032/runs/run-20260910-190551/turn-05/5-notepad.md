@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t5: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Loss-of-Control Containment and Service Continuity Protocol −2, Allied Volume-Licence and Supply-Chain Bargain −2, Middle-Power Evaluation and Supply-Chain Compact −2, priority −1 = −13
+PROPOSAL BONUS: Middle-Power Evaluation and Supply-Chain Compact (cat 8, small) +3 — answers conditional licences and tiered rationing risk directly, middle-power coordination fired this turn
+LEGITIMACY LENDS: capital 10, sentiment 28 -> +2
+SOVEREIGNTY: 15 last turn, no capacity measure finishes, in flight +0, middle_power_coalition t5 +2, capability rose 2.0 −1 = 16

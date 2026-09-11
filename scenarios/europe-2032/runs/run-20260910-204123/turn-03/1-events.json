@@ -1,0 +1,59 @@
+[
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "cyber_defence_breakthrough",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A wave of AI-generated voice and video fraud hits banks and public administrations across several EU states using open Mythos-class models, causing hundreds of millions in losses and forcing emergency authentication rules.",
+    "emergent": true,
+    "id": "emergent_fraud_wave",
+    "probability": 0.23333333333333336,
+    "probability_samples": [
+      0.28,
+      0.2,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

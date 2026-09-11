@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t6: M1 InvestAI Gigafactories −3, M7 EU Bio Detection and Care Continuity Surge −2, M8 EU-US Coalition Access and Evaluation Pact −2, priority −1 = −8
+PROPOSAL BONUS: EU-US Coalition Access and Evaluation Pact (cat 8, small) +2 — zoning lock-in abandonment landed this turn and this replaces lost domestic site with anchored allied capacity directly
+LEGITIMACY LENDS: capital 18, sentiment 40 -> +2
+SOVEREIGNTY: 20 last turn, Tech sovereignty package finishes t6 +4, no capacity event listed, emergent siting lock-in as access loss t6 −2, Gigafactories in flight +0, capability rose 1.5 −0 = 22

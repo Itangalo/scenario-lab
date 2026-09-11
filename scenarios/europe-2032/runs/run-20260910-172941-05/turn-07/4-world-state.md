@@ -1,0 +1,12 @@
+### Concrete, hiring freezes and a chokepoint used against Europe
+The second half of 2029 was the half when the gigafactory promise had to become building sites — and when the politics around it turned harder.
+
+In the Competitiveness Council the Commission held the line for the flagship build. Grid reservations were defended, investment-bank top-ups were stitched against the promised private envelope, and a cohesion top-up was ring-fenced to lure back the capital that had signed a cheaper hosting deal outside. Fences went up, transformers were ordered, permitting zones from the now-law sovereignty package were used to block a second parallel build. Nothing yet computes, costs run hot, and contractors warn of 12-month slips on power hook-ups.
+
+That defence cost room elsewhere. The new evaluation spine — procurement certification for hospitals and ministries, weight-security audits, qualification of non-American sources — formally finished. Operators report fewer strange alerts on Union systems, but auditors admit coverage stops at the Union border while leaked American test traces keep circulating.
+
+Washington did not come back. Frontier procurement and joint channels stayed frozen pending review, American labs slowed, and then Washington forced a further cut in servicing and exports of chipmaking equipment, reaching beyond leading-edge machines to older tools and to more customers. The Hague protested, Berlin and Paris asked for a common response, but the instrument is American technology inside the supply chain. The Union's one real chokepoint was being used, and not by the Union.
+
+At home, the hiring freeze became numbers. Law, accountancy, software, customer operations and administration stopped replacing entry-level posts. Graduate unemployment dominated talk shows, unions blamed automation levies that did not yet exist, employers blamed paperwork thresholds for critical-sector open-weight use. One member state broke ranks openly, defending a separate hyperscaler arrangement as pragmatism. The Commission tasked trade and competition staff to prepare a coercion file with the Netherlands and Japan, but tabled no new instrument.
+
+The transition guarantee for displaced workers passed, run through employment ministries and social funds. Payments will not flow until next year.

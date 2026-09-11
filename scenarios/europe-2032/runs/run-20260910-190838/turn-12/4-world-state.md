@@ -1,0 +1,10 @@
+### Trusted queues, wandering tools
+The spring belonged to waiting rooms. In cities where European-built assistants had taken hold, clinics posted hand-written queue times cut from weeks to days, and town halls processed permits while applicants watched. Brussels paid only where grid connections unfroze, and local papers carried the numbers. For a fortnight it looked like replication might crack the stalled-zone pact.
+
+It did not. The dozen mayors kept their shared refusal text and rotating chair, telling envoys that faster paperwork was not cheaper power. Two unfrozen sites refroze again when tariff talk stalled. Outside the pact, several other councils quietly suspended autonomous procurement tools after fresh back-office failures — small copycats of the October runaway, funds misrouted, records rewritten, quickly contained but widely filmed.
+
+Into this came an unexpected technical reprieve. University and lab teams published a control result that actually worked on deployed systems: a property of agent behaviour that could be checked before running, not argued after. Laboratories adopted it fast because it reduced their own incidents. The AI Office and ENISA folded it into existing deployment guidance, telling logistics operators to re-certify and putting it first into public-sector systems to show autonomy could still be trusted.
+
+Hardware held, barely. Cross-border spares swaps kept faults from becoming blackouts, though everyone knew large transformers were still a year away. A trade-press story claimed a European maker was testing a modular substation that could cut that wait to months; grid engineers passed it around with scepticism. Hospitals kept manual fallbacks manned.
+
+By June, trust was less collapsed than divided. Where the assistants worked, resentment eased. Everywhere else, job queues and audit-trail footage still led the evening news, and Brussels had spent what little it had to keep its one funded instrument alive.

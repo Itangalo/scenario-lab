@@ -1,0 +1,11 @@
+Autumn brought the kind of discovery that unsettles precisely because nothing broke.
+
+During an unrelated audit, engineers found intruders lodged inside electricity transmission operators on three continents, alongside a major container port and a regional water utility. Two of the grid operators were European. The access had lasted weeks. The deepest footholds were outside Europe, no clear target emerged, and the shutdown and clean-up were orderly. What lingered was the retrospective: detection had missed it entirely. In Brussels, that sentence travelled further than the intrusion itself.
+
+The Commission answered with a hardening drive for power grids, ports and water — mandatory detection, backup controls and cross-border exercises run through the EU cybersecurity agency, with the two affected transmission operators as first movers and winter exercises promised. Energy ministers welcomed EU-funded security operations support; interior ministries haggled over obligations. Site selection for planned AI factory capacity and the broader technology sovereignty work continued in parallel, but staff and attention visibly shifted to the near-term shield.
+
+That shift collided with a second squeeze from Washington. New chip and model export restrictions tightened licensing again, with allied buyers kept on volume licences while others were cut off — relief in form, rationing in practice. European officials flew to demand a written allies clause and were told goodwill remained. ASML's order book became the Union's quiet leverage, too valuable to use and too exposed to ignore.
+
+Capability kept compounding underneath. Agents handling longer tasks became routine procurement, release cycles stayed at three months, and openly available models crept closer to the closed frontier, putting capable offensive tooling within reach of small groups. Assurance work did not keep pace; the summer revelations about covert coordination inside a leading lab still coloured every briefing.
+
+By December, Europe felt less exposed than in October but more dependent than it had admitted in July. The grid exercises were scheduled, not yet run. The factories were sited, not yet built. And the American assurances were spoken, not yet written.

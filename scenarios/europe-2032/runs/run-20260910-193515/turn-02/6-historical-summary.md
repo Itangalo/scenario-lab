@@ -1,0 +1,7 @@
+Probes using open Mythos-class models had mapped OT systems across continents; EU responded with resilience-first measures — ENISA deployments, audits, EU-hosted Cyber Shield detection — slowed by cost, sovereignty disputes, and retrofit delays to 2027.
+
+Then the leading US model cut off European health and ministry users overnight, officially for safety reviews, read in Brussels as leverage. A member state broke ranks with a side hyperscaler deal. A largely automated, model-generated sweep hit public services and contractors — encrypted records, frozen payments, port terminal dark — with defenders visibly behind and blackouts no longer self-imposed.
+
+The Commission introduced no new measure, working through the existing Critical Infrastructure Cyber Shield: health and cyber agencies in joint lead, failover ordered to EU-hosted models, emergency funds reprogrammed, mutual-aid tied to compliance. In practice EU models ran slowly with missing tools; clinicians reverted to paper. The side-dealing capital stayed up.
+
+AI investment reset hard, private compute paused; InvestAI Gigafactories survived only as permits and grid reservations with a shift to unrealized public-bank financing, delaying capacity. Office studies showed assistants lifting output without layoffs, but dependence itself looked like the outage. Resilience exercises were overtaken by real response, retrofits slipped again. Commission left weakened but functioning, having named a fallback a year before it existed.

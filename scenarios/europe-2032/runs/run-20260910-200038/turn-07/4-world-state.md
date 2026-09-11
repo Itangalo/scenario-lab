@@ -1,0 +1,11 @@
+### Concrete, at last
+The first gigafactory shells rose this autumn. Cranes over two sites that had been fenced and frozen a year earlier became the Commission's favourite backdrop, and the claim that Europe could host non-withdrawable capacity finally had concrete to point at. Engineers cautioned that machines, power hookups and cooling were still months from full runs, but the political fact landed: the build was no longer paper.
+
+The siting fight did not end. The joint energy-environment taskforce pushed closed-loop cooling kits, backup contracts with transmission operators and revenue shares for early councils. A handful of mayors in Flanders and Lombardy lifted moratoria and took the money, holding fast-track referenda under Competitiveness Council cover. Others in Bavaria held out, demanding larger guarantees, and transmission-line crews reported blockades, cut fences and night-time vandalism that delayed work for weeks. Rumours of coordinated sabotage circulated in local press as single-source stories.
+
+### Patch window
+A genuine defensive advance gave absorption a second leg. New automated patching and swarm-behaviour detection, deployed through ENISA's pooled response teams, spread quickly into energy, telecoms and thin municipalities by reprogramming existing funds. Operators said patch cycles that had taken days now closed in hours. It did not stop intrusions — lights still flickered during the autumn self-improvement wave — but degradation, not stoppage, held.
+
+The strain showed elsewhere. Review teams admitted filings on frontier systems were retrospective, and American tiered access continued to meter Europe's rented frontier use. Grid operators in the US were reported to be rationing power to data-centre clusters after brownouts, a faint signal Brussels watched nervously. Patients in Rotterdam and Milan celebrated routine immune therapies, lifting mood, while commentators noted the underlying models were still foreign.
+
+Capital remained thin, and the double front — concrete and code — stretched crews to the limit.

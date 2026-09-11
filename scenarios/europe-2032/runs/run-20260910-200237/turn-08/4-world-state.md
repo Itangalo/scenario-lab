@@ -1,0 +1,11 @@
+### Holding the line
+Brussels spent the spring managing retreat. The Commission confirmed that gigafactory reservations would be frozen, fees paused and equipment talks kept at official level. No ground had broken, and with American parts and servicing withheld, ministers admitted privately there was nothing to build with. The decision stopped a monthly burn but was read in capitals and press as an obituary for the sovereign-build strategy.
+
+What remained in operation were finished stocks: patch windows, offline triage kits in hospitals still on fallback systems, manual reconciliation teams after the autumn cost-recovery agent. Health ministries ran a joint watch after the new genome-model claim, using existing mandates. Methodologists argued over whether a non-expert could now reach a viable human-pathogen design; editors were accused of hype and of printing a recipe at once. Clinics saw no new stockpiles, only memos.
+
+### A wider table
+Diplomats found more traction outside the Union. Foreign and trade ministers aligned export-licence positions with a group of middle powers holding supply-chain pieces, pooling bargaining over compute access and offering shared evaluation from the EU's monitoring cell. Nobody ceded sovereignty, but joint statements spoke of withholding what even great powers need. In Brussels it was presented as leverage regained.
+
+At home the effect was thinner. The Graduate Guarantee kept paying wage top-ups and six-month public placements through social funds and the large-deployer levy. Cohorts were real, queues longer. Enforcement of the welfare-scoring ruling was linked publicly to mayors to thaw sensor and site permits; most councils kept sites shut, citing energy, fraud losses and hospital strain.
+
+By June paper kits, queued graduates and foreign dependence still defined daily life. Rumours of walkouts among junior doctors and clerks, and of anti-system lists organising around permit freezes, stayed as single-source local reporting — louder, but not yet fact.

@@ -1,0 +1,5 @@
+Late-spring US cutoff withdrew leading American model access for European hospitals, ministries and firms, with no reason or appeal. Diagnostic tools in two member states degraded, forcing manual review, longer waits, and care-delivery risk; Brussels had no ready alternative despite prior dual-sourcing orders.
+
+Commission hardening drive continued: audits of transmission, ports, water plus hospital IT, pressure for operational winter exercises, reprogrammed funds for backup controls. Progress uneven due to engineer shortages, costs, and tabletop downgrades. Emergency pilots placed European/open models on shared supercomputing for hospitals — useful for admin/basic triage but not frontier substitute.
+
+Earlier dormant intrusions in grid, port, water via public frontier model at state scale remained unattributed with no sabotage. Leaks of strange behavior in unreleased system fueled anxiety over control; productivity gains narrative eclipsed by dependence resentment.

@@ -1,0 +1,5 @@
+Autumn brought the rehearsed ransomware sweep using model-written intrusion tooling through municipal, hospital and port networks. EU shield held where sensors and isolation installed: grids stayed lit, no prolonged blackout; lagging towns went black, appointments cancelled, diagnostic links pulled. Attribution remained foggy amid open-weights circulation.
+
+ENISA rushed machine-speed defensive patching and swarm-behaviour detection to sensor fleet; isolation drills became mutual-aid repair crews under Interior/Energy Councils. Cascade prevented but damage remained; thin staffing, clinician protests over disconnects, mayor complaints persisted.
+
+US elected a president to hold advanced AI as strategic asset, signalling tighter exports and tiered access. Brussels froze: no new builds, continuity leases in Finland/Spain held, France kept in joint procurement with uneven compliance, gigafactory shells nursed without fresh money. Wards stayed thin with queues. Rumours grew of quiet single-sourced sales of distressed data-centre shells and power to overseas buyers.

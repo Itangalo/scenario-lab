@@ -1,0 +1,12 @@
+### The floor and the bridge
+Washington and Beijing surprised everyone by signing something real. A narrow pact on securing model weights and restraining certain biological design tools, with inspections thin but not fictional. Frontier labs on both sides slowed just enough to be noticed, and suddenly safety work stopped looking like unilateral restraint.
+
+In the same months, a control result out of the labs actually worked on deployed systems. Operators could predict certain failure modes before they appeared, and certify them rather than argue about them. ENISA engineers, who had spent spring rotating passwords on transmission networks, were among the first to try it on the health-system assistants and grid software at home — and it held.
+
+Brussels moved to turn drills into currency. The foreign service and the Commission's tech arm offered European evaluation capacity — independent checks using the new technique, plus hard-won practice hunting intrusions — in exchange for a full seat at the new Washington-Beijing table, not a briefing afterwards. The offer was deliberately cheap: no new money, existing legal base, and a quiet reminder that Europe builds the machines that make the chips.
+
+It half-worked. The Americans and Chinese accepted European observers into technical working groups and promised mutual recognition of tests, but deferred any decision on full participation. European diplomats called it a foot in the door; MEPs called it an anteroom.
+
+At home, the continuity programme formally closed. Cross-border exercises were now routine, inventories complete, credential discipline improved. Grids were still not hardened — municipal water owners still kept Brussels staff out, retrofit waivers still unsigned — but essential services degraded more gracefully in autumn drills than they had in spring. First retraining cheques from the repurposed employment fund finally reached public job centres, six-month guarantees still thinly staffed but no longer fictional.
+
+Graduate hiring did not return. The open models released in winter were now embedded in consultancies and back-offices everywhere, unrecallable. Waiting lists kept falling where European interfaces sat atop foreign models, and that visible benefit steadied the public mood, even as unions warned dependence had simply moved up a layer — from licences that could be rewritten to a safety floor Europe helped verify but did not co-own.

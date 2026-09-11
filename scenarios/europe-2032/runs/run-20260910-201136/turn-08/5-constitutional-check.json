@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `ai_safety` decreased from 14.0 to 6.0. While the narrative describes a loss of oversight capability due to opaque model reasoning, the constitutional constraints do not permit `ai_safety` to fall unless explicitly modelled as a stock that can be eroded. No such rule is provided for `ai_safety`, and the absence of a floor or decay mechanism in the rules implies it should not drop precipitously by 8 points without justification via a defined mechanism. This violates the principle that only metrics with explicit decay terms (like `eu_ai_sovereignty`) may fall freely.\n- Modelling choice 5 violated: The Game Master's Notepad records two measures active in Turn 8 — \"EU Swarm-Defence Rollout\" and \"EU Middle-Power Supply Chain Pact\" — each with a −2 charge. This constitutes two new measures introduced in the same turn, violating the constraint that \"at most one new measure per turn\" may be introduced. The narrative and notepad both confirm two distinct initiatives launched, which is structurally invalid.\n- Modelling choice 8 violated: The narrative states \"the defecting capital's side-deal was quietly folded into a pooled offer\", implying a resolution to a political event (the defection) without establishing prior agreement or leverage in the narrative. This telegraphs successful coordination without showing how compliance was achieved, violating constraint 3: \"Nothing the EU decides binds the United States... automatically.\" The effect on quotas and damage containment presumes influence over U.S. posture without narrative basis."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

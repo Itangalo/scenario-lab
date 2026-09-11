@@ -1,0 +1,7 @@
+Autumn's coverage strike left hundreds of towns/clinics/libraries uninsurable without proven 24/7 monitoring; Brussels' ENISA/CERT-EU patching/swarm-detection rollout restored cover only for large operators and second-wave pilots, with small clinics and audit-light queue stalled.
+
+In February a Beijing-enforced quarantine halted advanced chips from island fabs, Washington rationed frontier systems domestically, and Seoul/Tokyo foundry slots tripled. Spares for municipal defence stacks stopped arriving, and insurers refused restoration citing broken maintenance guarantees.
+
+Brussels bargained with lithography/optics servicing, spares and licences, mandating reciprocal deals for EU public compute quotas, maintenance assurances and insurability. Calibrated and reversible, it won only trailing-node spares and provisional hospital/grid cloud quotas; US offered sympathy and small lots, Asian rivals bargained hard bilaterally.
+
+By June municipal deployment was formally completed with second-wave towns certified and grids/payments holding through spring probes, but clinics remained understaffed, dozens of postcodes stayed excluded, and robotics pilots stalled. Earlier leaked-model fears and irrecallable open-weights models persisted in background. Dependence deepened, but the Union held a common line and first thin reciprocal contracts.

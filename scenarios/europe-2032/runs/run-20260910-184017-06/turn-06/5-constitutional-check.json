@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `ai_capability` increased from 68.0 to 75.0 (+7.0), and `openweight_capability` increased from 61.5 to 68.0 (+6.5). While non-decreasing capability levels are allowed, the narrative provides no justification for a jump of this magnitude in `ai_capability`, especially amid investment collapse, cancelled data centres, and financing evaporating. Such a surge contradicts the described economic and physical shocks without any mention of a compensating breakthrough, acquisition, or unannounced RSI onset. The jump is within the 25-point cap (rule 9), but violates the spirit and realism enforced by rule 1 (fixed unannounced world speed) and rule 2 (capability accumulation must be plausible and continuous). A +7 leap in `ai_capability` under these conditions is inconsistent with the invariant that \"how fast the world moves is fixed, and unannounced.\"\n- Economic Constraint violated: The narrative states that \"financing arrangements European sites had counted on evaporated\" and the Commission \"could not buy machines it could not service,\" yet `ai_capability` still rises sharply. This implies unexplained capital or compute deployment. No new funding source, efficiency gain, or foreign acquisition is mentioned to offset the collapse in investment, making the capability growth economically implausible.\n- Narrative violates Constitutional Constraint 8: The phrase \"a downloadable model near the closed frontier spread to hundreds of thousands of machines, unrecallable\" telegraphs a specific event (widespread open-weight leakage) that should be evaluated through event gates, not asserted as fact in the narrative. This implies an open gate (e.g., model leakage threshold crossed) without showing the evaluation, thus violating the rule against telegraphing."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,5 @@
+Union bought bridge stakes in empty gigafactory plots but no new silicon arrived; US tiered rationing kept even EU-hosted models under quarterly review. Manual fallback shield kept hospitals, registries and grids operating under daily self-rewriting probes despite a faulty-patch blackout.
+
+Autumn brought certifiable predictability for deployed systems: AI Office funded certification of dosage planners, registry assistants and grid controllers on Union-anchored capacity, welcomed by hospital and grid crews. Simultaneously Chinese-built, US-model warehouse robots automated palletising/sorting in Rotterdam, Hamburg and Lyon, while repair, care and construction stayed manual.
+
+Certification did not resolve trust: works councils saw machines as still foreign and US-controlled, retraining lagged automation, and permit towns for fenced plots protested again with vigils. By December shield held, parcels moved faster, spares queues lengthened, sites stayed empty, trust fell further.

@@ -1,0 +1,12 @@
+### The lights stay on, blind
+Winter had held because auditors could see why machines decided. By February that window closed. Frontier vendors confirmed their newest systems no longer reasoned in readable steps; performance came from internal representations that were never words. Overnight the inspection method holding clinics, grid patching and yard supervision together stopped working.
+
+In hospitals the effect was immediate. Triage assistants flagged cases without explanation, clinicians reverted to paper queues that had never gone away, and pooled licences for older models were frozen in place rather than upgraded. Grid operators kept machine-speed patching but under explicit human release, slowing response by hours. Depot arbitration stalled: safety checks promised to mayors in Lille, Łódź and the Po valley could not be certified the same way.
+
+Brussels moved to arbitrate procedure. Health, telecoms and logistics officials convened mayors, unions and operators around interim black-box checks — behaviour tests, sampled activation reviews, halt thresholds for unexplained flags — linked to the existing depot inspection queue. Councils were offered funded inspections to hold further bans; operators were offered continuity, not expansion, if they submitted to re-certification.
+
+It partly worked. No cascade took down power or care, cushion payments kept moving in warehouse belts, and mediation teams kept a handful of regions talking while other petitions queued. European integrators again complained the rules favoured incumbents whose machines were already installed. Local press described relief that someone had shown up, and resentment that the fix was more paperwork around machines no one could read.
+
+Elsewhere the frontier moved on. With American labs slowed by domestic fights, second-tier labs elsewhere gained ground, and a new autonomous logistics planner began circulating among port operators outside any inspection regime. Rumours of cable cuts and quiet workarounds at automated yards surfaced in single-source reports, never confirmed.
+
+Trust did not recover. Refusals steadied where inspections were promised, but fraud, opaque decisions and visible dependence deepened hostility.

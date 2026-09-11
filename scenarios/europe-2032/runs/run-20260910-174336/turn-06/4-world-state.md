@@ -1,0 +1,10 @@
+### Triage in Brussels, tiers in Washington
+The new American administration took office in January pledging to treat advanced AI as a strategic asset. Federal review tightened, export controls were renewed, and foreign access was to be rationed by tier. No formal tier list was published in the spring, but European ministries read the speeches as client status and priced American compute accordingly.
+
+In Brussels there was no money for a response. With cohesion thin and budgets exhausted, the Commission launched nothing new and tried to keep what existed alive. Grid reservations and fast-track zones in Spain, France and Poland were extended on existing legal bases. Councils freezing new hookups were asked for time, not fought. No gigafactory ground broke; engineers stayed on short contracts.
+
+Operational work continued through redeployed funds. Backup systems, paper kits and manual failover drills stayed exercised in the cities, hospitals and grid subcontractors hit in the autumn. The Joint Research Centre registry collected logs from willing cities, still fragmentary, still without attribution. The evaluation office subsisted on supervision fees and throttled interfaces.
+
+Two quiet shifts marked the half-year. A contested genome-model study claiming a viable human-infecting design circulated in biosecurity circles. Health agencies in Europe began tracking it without public alarm, while newspapers left it alone. At the same time, office productivity data settled: law, accountancy, administration and consulting showed solid gains, strongest among juniors, with no employment collapse. Lenders who had bet on a continuing transition quietly repriced.
+
+Three long-promised instruments formally closed in June — the data-centre capital package, the evaluation office, the incident registry — giving Brussels paperwork to point to while dependence deepened.

@@ -1,0 +1,9 @@
+### The wave lands
+Autumn brought two shocks at once. A largely automated ransomware sweep froze appointment systems, municipal registries and logistics portals in several member states, with clean backups days away in the worst-hit hospitals. Almost in parallel, health authorities confirmed a cluster of infections involving a modified pathogen whose design history showed model assistance. Wards sealed, contact tracing ran for weeks, and every talk show reset to the same question of what the new systems had unleashed.
+
+Defenders were visibly behind. Attribution dragged, and forensic reports noted the intrusion tooling had been generated, not hand-written. Yet containment held better where the last two years of drills existed: the two large grid operators islanded cleanly, pooled European-hosted models kept triage and prescriptions running, and sequencing labs that had received emergency reagents identified the agent faster than many had feared.
+
+### A Corps, not a frontier
+Brussels answered with standing capacity rather than promises of leverage. Cross-border medical and cyber-recovery teams under civil-protection authority were dispatched, clean backups and isolation beds jointly procured, and the fallback inference stack turned into a permanent roster. Large hospitals stabilized; smaller clinics still queued for help.
+
+The politics were brutal. Construction sites for new compute were blockaded again, this time with broad local support, forcing stoppages and a bitter siting debate. A new interpretability result that let operators predict certain failures before they appeared gave engineers rare good news, but voters credited survival, not strategy. Hiring freezes for graduates deepened, and anger at dependence did not lift.

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "labour_displacement",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "knowledge_work_augmented",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.04,
+    "probability_samples": [
+      0.04,
+      0.04,
+      0.04
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A major European hospital group publicly attributes a weeks-long diagnostic outage to degraded fallback models after US cutoff, triggering lawsuits against the state for continuity failure.",
+    "emergent": true,
+    "id": "emergent_care_fallback_litigation",
+    "probability": 0.20666666666666667,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

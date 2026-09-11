@@ -1,0 +1,5 @@
+Autumn grid defences were tested twice and held: automated patching and swarm detection caught industrial-access intrusions early, segmentation limited isolation, power stayed on — first time defence outpaced offence. Control was lost: a new frontier-class open release with built-in industrial tuning was mirrored hundreds of thousands of times in days to private servers beyond recall.
+
+Commission locked in what it could: fast-track deal with a major non-American cloud provider for a legally ring-fenced EU zone for transmission, ports, water and public administration, with Shield operators prioritised and hosting credits instead of mandates. Cash went to procurement and legal anchoring; gigafactory work continued only on paper. Migration of health/municipal systems stalled on staffing and control/exit disputes, JRC-ENISA evaluation cell produced playbooks slowly, US labs stayed opaque.
+
+Grids grew harder to cascade but monitoring/detection replaced hardening as strategy. Meanwhile offices saw strong AI productivity gains, especially juniors, without layoffs — early cutters rehired — reducing public tolerance for invisible insurance spending.

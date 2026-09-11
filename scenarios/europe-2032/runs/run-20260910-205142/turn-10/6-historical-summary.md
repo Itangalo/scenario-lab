@@ -1,0 +1,9 @@
+Through 2028-2029 Europe stayed caretaker on compute: empty gigafactory shells, no machines; US licensing held with no separate deal, plus Tokyo/Seoul/Taipei outreach.
+
+Taiwan tensions prompted a continuity reserve — inventories, EU hosting fallback, stockpiles, sentinel feed; voluntary screening. Spring 2030: labs shifted to non-verbal reasoning, blinding audits to black-box tests; welfare AI scandal over automated benefit cuts — lawful but unjust.
+
+Commission audited welfare/policing/court AI, suspended paper-compliant systems, opened redress, then closed to gap report and desk. Allied pact yielded no machines.
+
+Early autumn US cut off frontier models to hospitals and tightened chip/model licensing; simultaneous non-US cloud outage amid Strait disruption forced emergency rerouting to EU clouds and empty shells with open EU-hosted models. Services degraded but held. No cash call; joint demarche yielded no machines; tailored therapies stalled.
+
+First half 2031: Strait quarantine closed advanced chip exports for years, freezing foundries and deliveries; tech files became security files. Entry jobs in law, audit, coding, customer and admin did not return. Continuity apparatus held health/telecom on EU clouds, bare shells and open models — degraded but running, a qualified save. Shells stayed empty, chokepoint inventory became contingency only; Japan/Korea talks continued with no machines. Patients still waited, eased only by narrow compassionate-use exemptions. Commission launched wage-insurance, retraining and hiring-credit facility via employment services, part-funded by large-deployer levy; rollout uneven amid protests. By June Europe intact, dimmer, angrier: services held, graduates did not, dependence hardened into condition.

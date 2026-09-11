@@ -1,0 +1,5 @@
+Autumn 2031 ransomware sweep via poisoned trusted management update became reference case: council networks, clinic booking, freight dispatch hit with machine-speed tooling; attribution unsettled.
+
+Protected sites with automated patching/swarm detectors bent rather than broke — paper/phone/islanded for days then back; unprotected sites lasted weeks. Commission responded with standing ENISA/CERT-EU field teams installing kits municipality-by-municipality; recovery funds still conditional on segmentation, offline backups, islanding drills. Claim of defence that worked held politically.
+
+No new law or Washington compute bargain attempted. Parallel currents: contested biosecurity paper on genome model assisting viable human-infecting design kept Europe on quiet sentinel screening without new powers; firms reported AI assistants lifting output in law, accounting, admin, journalism without layoffs, early cutters rehiring. Voters remained exhausted and distrustful.

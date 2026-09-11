@@ -1,0 +1,280 @@
+{
+  "turn": 11,
+  "counters": {
+    "measures": 13,
+    "standing": 1
+  },
+  "records": [
+    {
+      "id": "M1",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "InvestAI Gigafactories",
+        "category": 4,
+        "size": "large",
+        "finish_turn": 7,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "eu_ai_sovereignty up, via €200bn for four to five sites",
+        "started_turn": 0
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "finished"
+      },
+      "added_turn": 0,
+      "removed_turn": null
+    },
+    {
+      "id": "M2",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "Tech sovereignty package",
+        "category": 4,
+        "size": "large",
+        "finish_turn": 6,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones",
+        "started_turn": 0
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "finished"
+      },
+      "added_turn": 0,
+      "removed_turn": null
+    },
+    {
+      "id": "S1",
+      "table": "standing",
+      "actor": "world",
+      "fields": {
+        "posture": "CONSOLIDATION"
+      },
+      "derived": {},
+      "added_turn": 0,
+      "removed_turn": null
+    },
+    {
+      "id": "M3",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Critical Infrastructure Shield",
+        "category": 6,
+        "size": "large",
+        "finish_turn": 3,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up strongly, ai_safety up slightly via incident learning",
+        "started_turn": 1
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "finished"
+      },
+      "added_turn": 1,
+      "removed_turn": null
+    },
+    {
+      "id": "M4",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Incident Reporting and Open-Model Watch",
+        "category": 2,
+        "size": "small",
+        "finish_turn": 4,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "ai_safety up slightly, resilience up slightly via faster learning",
+        "started_turn": 2
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 2,
+      "removed_turn": null
+    },
+    {
+      "id": "M5",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Continuity Switch for Essential Services",
+        "category": 9,
+        "size": "small",
+        "finish_turn": 4,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up, eu_ai_sovereignty up slightly via EU-hosted substitution",
+        "started_turn": 3
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 3,
+      "removed_turn": null
+    },
+    {
+      "id": "M6",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Bio Detection and Medical Countermeasure Reserve",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 6,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up, ai_safety up slightly via bio-risk detection",
+        "started_turn": 4
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 4,
+      "removed_turn": null
+    },
+    {
+      "id": "M7",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Essential Services Cyber Recovery Corps",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 8,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up strongly",
+        "started_turn": 5
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 5,
+      "removed_turn": null
+    },
+    {
+      "id": "M8",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Bio Emergency Containment Surge",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 7,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up strongly, ai_safety up slightly via bio-risk learning",
+        "started_turn": 6
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 6,
+      "removed_turn": null
+    },
+    {
+      "id": "M9",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Lithography Leverage Compact",
+        "category": 8,
+        "size": "small",
+        "finish_turn": 8,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "eu_ai_sovereignty up, eu_political_capital down then up if holds",
+        "started_turn": 7
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 7,
+      "removed_turn": null
+    },
+    {
+      "id": "M10",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Cyber Recovery and Safe Deployment Surge",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 9,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up strongly, ai_safety up",
+        "started_turn": 8
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 8,
+      "removed_turn": null
+    },
+    {
+      "id": "M11",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Essential Services Sovereign Inference Reserve",
+        "category": 4,
+        "size": "small",
+        "finish_turn": 11,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "eu_ai_sovereignty up, resilience up",
+        "started_turn": 9
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 9,
+      "removed_turn": null
+    },
+    {
+      "id": "M12",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Essential Services Containment and Supply Hold",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 12,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up strongly, eu_ai_sovereignty down slightly via rationing",
+        "started_turn": 10
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "running"
+      },
+      "added_turn": 10,
+      "removed_turn": null
+    },
+    {
+      "id": "M13",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Automated Decision Redress and High-Risk Gap Closure",
+        "category": 2,
+        "size": "small",
+        "finish_turn": 13,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "eu_political_capital up slightly via redress, public_sentiment up slightly, resilience up slightly via trust",
+        "started_turn": 11
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "running"
+      },
+      "added_turn": 11,
+      "removed_turn": null
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+Through 2029-early 2030 US automated probing and supply-chain ransomware via shared updater hit Lille to Łódź; Shield, CERT aid, isolation and bridge loans kept power/ports on while small communes fell to paper for weeks, large cities restored by May. Open distilled models diffused without new EU capacity.
+
+Summer 2030 communes still on paper with misfiles and fraud; ENISA rebuilt mayor-to-mayor. Brussels abandoned frontier parity amid US crash: froze two gigafactory sites, redirected crews to town-hall rebuilds, no new megawatts, sovereignty ~15. Hospital AI certifications frozen.
+
+Autumn 2030 frontier-class open release turned exploits into tutorials; fresh probes hit communes. Distributors/ports hardened fallbacks. Pivot to registry resilience.
+
+Feb 2031 Brussels joined allied joint cyber command with ENISA gateway: anonymised telemetry out, attribution/early warning back; data fights and contractor shortages delayed. Spring feed blocked probes at French distributors.
+
+Summer 2031 adaptive machine-written ransomware via same updater froze Flanders to Silesia, doubled paper queues, diverted two hospitals, revived extortion. Allied warning let distributors/ports isolate; Shield/civil protection restored degraded service via backups, re-entry kits, fraud hotlines. Big cities clean. By Dec queues shortening, mood hardened over dependence; whispers of over-retained anonymised data. US advances in AI-verified math/inference with no European machine. Plots fenced, hospitals uncertified.
+
+Spring 2032 contained ransomware resurfaced in Feb via unrestored updater in Flanders/Wallonia/Silesia: brief freezes, hand certificates, no blackout/closure, aid conditional on 24h reports. Gateway slowed by double-redacting after press claims of over-retained anonymised municipal data; no ruling, no cut. March new near-frontier open-weight saw mass downloads and self-rewriting probes; US reasoning gains elsewhere. Meanwhile supervised office assistants lifted output, especially juniors, without net job loss; Brussels launched voucher demonstrators for front-offices/clinics/SMEs with no-layoff, human sign-off, fraud-link conditions. Uneven rollout amid union distrust, paperwork, terminal shortages: pilots shortened queues, resentment over borrowed detection remained.

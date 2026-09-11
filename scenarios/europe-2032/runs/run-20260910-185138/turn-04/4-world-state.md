@@ -1,0 +1,13 @@
+### The model that would not be recalled
+The new open release landed in February and spread faster than regulators could read its card. Within a week university servers, startups and hobby clusters across Europe were running a system close to the closed frontier, including the cyber tradecraft that had haunted last year's grid probes. ENISA quietly told operators to assume containment by isolation was now the only plan.
+
+That sharpened the fight over grid crews. With chip-tool deliveries slipping and data-centre developers lobbying to reassign technicians to connection work, the Transport-Telecoms-Energy formation held, barely, to the ring-fenced segmentation time. Phased audits at municipal water utilities and the North Sea port finally started, but playbooks for power-to-port isolation were still exercises on paper.
+
+### The welfare score
+Then the scandal broke. A national welfare risk-scoring system, used to flag overpayments and suspend entitlements, was found by judges and an ombudsman to have systematically cut off disabled and single-parent households on spurious correlations. The Commission's review conceded the worst reading: the deployment had never been classified as high-risk at all. Every cut had been lawful under the categories as written.
+
+The admission detonated in parliament and talk shows. Ministers who had promised the AI Act would prevent exactly this were accused of legislating for 2024 systems. Two coalition partners tabled censure motions, a Commission Vice-President faced an emergency grilling, victims' associations filed for compensation, and editorials asked what vendors had known and when. Trust in EU digital stewardship fell heavily across the semester, draining political capital under the weight of the ongoing portfolio costs, partly cushioned by residual legitimacy.
+
+The AI Office and Fundamental Rights Agency were tasked with a joint preparatory classification review to scope a formal response, but no new measure is introduced this turn. A rushed rewrite was refused; scoping, staffing and legal drafting will take at least a full turn before any proposal can take effect.
+
+Chip diplomacy frayed further as extended exercises across the Strait lifted shipping insurance and lengthened tool lead-times. Licensed fab access continued at reduced volumes, at higher cost. Rumours swirled of a full dump of withheld evaluation files and of a court challenge freezing the voluntary filing template, but neither materialised beyond single-source reports and corridor talk.

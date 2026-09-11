@@ -1,0 +1,11 @@
+### Machines on the floor, votes across the ocean
+Autumn brought robots out of pilots and onto payrolls. Logistics hubs around Rotterdam, Lyon and Lodz replaced picking and pallet lines in weeks; carriers advertised lights-out sorting while temporary agencies quietly dropped warehouse shifts. Repair shops, care teams and building sites barely changed, and everyone could see where the line now ran.
+
+The same weeks filled American airwaves with anger at automated hiring, school software and data-centre water fights. In November voters punished the industry's allies. The incoming Washington team promised moratoriums on new data centres, curbs on AI in classrooms and courts, and job guarantees paid for by the sector. Brussels read the result as breathing room and as warning: less pressure to align, but a partner turning inward and a rival across the Pacific gaining ground.
+
+### Shield first, safety net as sweetener
+The Commission closed its old mandate by pushing maintenance crews to the edge it had missed. ENISA teams traded fine holidays for downtime in small water works and regional hospitals, moving detector feeds to round-the-clock watch centres. Health authorities folded wastewater kits and surge sequencing into the six-state exercises. Large operators held; a stubborn minority of small sites again left sensors fitted but unwatched for lack of staff to take the shutdown.
+
+To unblock factory and grid permits, employment officials opened wage-insurance and retraining voucher pilots in the hardest-hit warehouse regions, asking automating employers for auditable contributions and offering co-funding to councils that linked power and water hook-ups to welfare disputes. Councils listened but did not lift queues: referendums and court filings over water and power multiplied, and siting stayed frozen in places.
+
+Trust audits finished their rounds and adoption pilots reported calmer wards and counters where they ran, but headlines belonged to lost shifts and foreign-built machines running American models. By December services were better watched, the public more resentful, and the Union's own compute still conditional.

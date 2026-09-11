@@ -1,0 +1,12 @@
+### The wards and the ledger
+Autumn brought two Europes into sharper relief. In the large member state with its own transatlantic line, triage pilots kept running on the newest American system. Elsewhere, hospital managers counted inference quotas week by week, energy operators refiled paperwork, and evening bulletins paired lengthening queues with the Commission's freeze on new autonomous clinical rollouts.
+
+The 60-day triage cell published its interim note in October: two columns, what could be checked and what could not. Logs handed over were partial, telemetry redacted, the separate supply channel still outside the check. Mayors seized on the second column as proof of blindness; ministers from the favoured capital called the freeze obstruction. Nurses' unions, promised power priority and redress dates for hosting data centres, reported neither.
+
+Brussels tried to break the deadlock sideways. With shipping insurers repricing Asian routes after extended exercises around Taiwan and a diplomatic expulsion, the Commission and the external service opened quiet talks with other middle powers holding lithography maintenance, packaging, evaluation capacity and spare compute — pooling licences, joint procurement for hospital inference, reciprocal access in exchange for submitting to the same check.
+
+The talks landed faster than anyone expected. A coordination framework was signed in November: no one ceded sovereignty, but together the members could withhold things even the great powers need. First emergency lots were earmarked for hospitals and grid operators, and the separate supplier was offered pooled capacity if it accepted the cell's audit.
+
+It did not fix the wards by Christmas. Volumes were small, legal bases contested, funds merely reallocated. But queues stopped growing in two queued states, and councils were offered permit timetables again.
+
+Meanwhile ordinary offices delivered unexpected good news. Studies across law, accountancy, administration and consulting showed solid productivity gains, largest among juniors, with no matching fall in employment. The tools were useful and finished — a destination, not a transition. For workers it steadied nerves; for investors who had borrowed against endless transformation, it disappointed.

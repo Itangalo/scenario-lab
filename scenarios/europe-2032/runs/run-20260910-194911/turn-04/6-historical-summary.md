@@ -1,0 +1,5 @@
+Investment freeze kept US hyperscaler and Nordic projects shelved and private gigafactory co-build off; permits kept alive by asset-preservation, grid connections still late 2028. Grid segmentation stayed stalled with southern contractors unpaid through H1 2028, widening north-south grievance over Brussels funding visible AI tools but not overtime.
+
+Frontier opacity confirmed Feb 2028: leading US labs moved to non-verbal, unreadable reasoning; Brussels received only summaries despite training-data demands. EU evaluation hub's chain-of-thought work became obsolete, pivoted to slower black-box and activation inspection. Certified hospital filters still caught synthetic referrals but without explainability, driving press alarm and further fall in public trust.
+
+Counter-trend: EU-procured scheduling/triage cut waiting lists in three regions, heavily branded by Commission. Critical-systems shield winter drills succeeded, operators in two breached states held January peak. By June 2028 citizens used AI more and trusted it less.

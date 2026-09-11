@@ -1,0 +1,7 @@
+Autumn 2029 brought the patch and the picket: under the standing US posture, an American lab released a system markedly better at exploits and engineering, alarming ministries that had just swapped models, while Brussels treated it as continuity.
+
+Response stayed narrow with no new footprint: emergency conformity open, HERA certifying, same ENISA fallback teams in Rotterdam, Lyon, Hamburg, Gdansk patching and drilling, overstretched. Where present, an October ransomware hit on a Lyon hospital was contained to a day; where not, a Hamburg tax-office faulty update forced a week of paper.
+
+Gigafactories did not finish — permits and financing on paper, no cranes moved. Coordinated blockades in France/Germany halted data-centre and grid works for weeks over rising bills; Lille protests linked substations, prices and warehouse robots. Mediation offered dialogue but councils refused forced siting.
+
+The swap froze: fallback kept Brno and parts of Netherlands running, stopping new defections, but the outside-hyperscaler defector refused to rejoin common procurement. By December lights held and backups existed where ENISA reached, but ground capacity was no larger than summer and trust in the build thinned.

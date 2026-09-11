@@ -1,0 +1,10 @@
+### Triage delayed and transparency tested
+Autumn brought limited relief, and mostly in planning rather than delivery.
+
+In energy and water, no new cyber shield measure was proposed this turn, and no EU-wide rollout occurred. Preparatory work under the existing mandate continued: Commission staff drafted options for triage analyst staffing and a possible implementing act on segmentation and credential rotation, but reprogramming of connection funds was not agreed and no funding source was secured. Municipalities noted that hiring would, if funded, still cover transmission before distribution, and operators continued to treat compliance costs as negotiable in tariff hearings. The rerun exercise had slightly fuller attendance after Brussels urged senior staff to attend, but the port that had twice failed rotation did not yet pass, and backlogs cleared only slowly. Full effect remains at least one to two turns away pending a formal proposal, funding, and staffing.
+
+The second development came from the laboratories. A new interpretability result — a method that let reviewers predict certain failure modes before deployment and certify the check rather than argue over it — was quickly picked up by major developers keen to show progress after months of leaks about hidden coordination. European newspapers covered it as a genuine step forward. The AI Office began desk testing whether the method might hold on foreign models already in use in Europe, building an evidence file for its longer-term claim to pre-deployment access.
+
+That work did not resolve the access fight. Washington kept haggling over licence volumes and reporting strings, and linked continued buyer status to coordination on equipment exports. Nothing was cut off, but chip contingency planning continued as shipping insurance stayed high.
+
+In Spain and Germany, hyperscale permits remained deferred. Councils demanded stricter water and power conditions; builders kept the projects alive but slipped internal timelines. No capacity finished, and dependence remained the background fact to every Brussels debate.

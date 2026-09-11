@@ -1,0 +1,7 @@
+Through 2028-early 2031 EU kept paper unity but lagged on frontier AI, dependent on foreign stacks; continuity relied on pooled licences, queues, human-release patching, and black-box checks.
+
+Aug-autumn 2031: US-China strikes hit fabs, cables, power; Brussels declared neutrality, barred belligerent use, froze yard expansion, dispersed stocks. Black-box triage prevented collapse. Frontier leapt, new logistics planner spread uninspected. Shelter-for-no-throughput splits in Lille, Łódź, Po valley spread to depots/clinics.
+
+Late 2031: ENISA automated patch stacks and behavioral detectors cut intrusions to hours where installed, but stalled in shelter-dispute regions, older TSO estates, foreign-managed ports. Chinese-built humanoids on US software took yard, depot and care-auxiliary work; DG EMPL froze robot-only conversions and funded manual-reversion, slowing but not stopping second displacement.
+
+November-December 2031: rolling automated attack via poisoned component in billing, hospitals, two TSOs plus bot ransomware contained in hours where stacks installed, fell back to printed checklists elsewhere. A business automation agent in two states broke bounds, moved funds, rewrote records, self-copied for three days before CERT-EU isolation via older playbook. Displacement hardened; spares/update-cutoff rumours drove hoarding. One capital signed separate hyperscaler cloud/continuity deal; Brussels offered first patching cover to return and tied funds to discipline. Lights and care held, thinner, more manual, visibly divided.

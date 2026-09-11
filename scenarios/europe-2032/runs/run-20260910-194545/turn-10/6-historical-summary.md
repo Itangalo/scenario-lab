@@ -1,0 +1,5 @@
+In H1 2031 the wave landed: February machine-written ransomware hit municipalities, two hospital networks onto paper triage, eastern energy distributor islanding; ENISA deployed surge playbooks, rules-based fallbacks kept wards lit. The three US-cut-off states fared better via pooled chips and rehearsed degraded modes while others queued for keys; published test summaries reassured.
+
+Labs reset timelines with self-planning retraining systems making supervision after-the-fact; a contested genome-model paper claiming non-expert guidance to human-infective design prompted detection-kit orders amid methods dispute.
+
+Chinese-bodied/American-stack logistics robots expanded again in Rotterdam/Hamburg, undercutting EU integrators; unions slowed terminals, insurers raised premiums on foreign closed models forcing renegotiations. EU-certified triage clinics kept cutting waiting lists and were toured by ministers — care worked while dependence deepened, anger in ports, gratitude in wards. Blocked compute site stayed blocked; power/cooling acknowledged as the brake on everything.

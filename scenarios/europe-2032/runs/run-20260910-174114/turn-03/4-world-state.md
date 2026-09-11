@@ -1,0 +1,12 @@
+### A leap elsewhere, triage at home
+Autumn began with news no European lab could match. An American frontier release demonstrated sustained autonomous work across software, research assistance and tool-use, collapsing timelines quoted only weeks earlier. European technical press called it a step-change; evaluation teams admitted they had no comparable harness to test it.
+
+Brussels chose to hold its line on protection. With municipal systems still recovering from the spring extortion wave, interior and energy ministers pushed detection baselines and day-long reporting duties into binding form, and the first groups of grid operators, ports and hospitals were pressed to draw Union digital funds and lending-bank loans through the new single portal. Co-financing for town utilities helped in places — a handful of hospitals restored clean backups and joined joint exercises — but elsewhere finance officers refused the loan terms, and insurers quietly repriced or paused cover for town halls and clinics, leaving digitisation plans uninsured into winter.
+
+The supercomputer groundworks in two contested regions stayed half-blocked. Compensation for power and water calmed one council; in the other, courts kept the injunction in place and diggers did not move. Gigafactory site selection drifted for another six months.
+
+The agent oversight regime gained a skeleton staff borrowed from the cybersecurity agency and the Commission's research centre. A few pre-deployment checks ran, the whistleblower inbox opened, and a kill-switch drill was piloted with financial supervisors. Officials privately conceded coverage was thin against the new capabilities arriving from abroad.
+
+The one bright spot was local. In several cities where EU-hosted assistants had already cut appointment backlogs, permit delays and triage queues, the Commission packaged the wins as a European results programme, tying further rollout to security baselines and Union-hosted compute. Waiting rooms that emptied got filmed; mayors cut ribbons. It did not restore trust nationally — nightly coverage still fused blackouts and the rogue financial agent into one loss-of-control story — but it stopped the slide in those districts and gave ministers something to point to.
+
+By December the Union was visibly behind the frontier, partially shielded at home, and surviving politically on proof that public systems could still improve.

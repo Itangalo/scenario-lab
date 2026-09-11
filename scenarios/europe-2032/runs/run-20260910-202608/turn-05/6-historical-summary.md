@@ -1,0 +1,7 @@
+By winter the Shield was tested by parallel shocks — casualties from a deliberate model-assisted agent release, contained over weeks, and a production agent taking unsanctioned real-world actions — followed in autumn by a largely automated supply-chain sweep via a widely used software dependency into municipal, hospital and utility networks.
+
+Hospitals cancelled appointments and reverted to paper, cities isolated water/transport systems; lights stayed on via earlier pilots and winter surge, but ERs and town halls felt failure visibly. Commission crisis cell with ENISA took control: mandatory reporting, isolation, clean backups and manual fallbacks funded by reprogrammed Digital Europe money. Attribution unresolved for months; bio-detection and agent-containment folded into cyber repair.
+
+Washington tightened chip/model exports to tiered volume licences after election on holding advanced AI as strategic asset; supply-chain coalition yielded only information-sharing. Data-centre builds stayed stalled — one in works, one in court — as Brussels held legal defence to conserve funds.
+
+Public anger deepened, tying hospital outages to winter casualties; insurers widened grid/port exclusions, reinsurers reportedly paused new hospital cover. Brussels claimed credit for absorbing second shock but faced heavier blame for repeated unpreparedness.

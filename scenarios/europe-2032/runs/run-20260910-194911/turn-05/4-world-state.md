@@ -1,0 +1,10 @@
+### The cutoff autumn
+July brought a new model generation from across the Atlantic that made spring's systems look dated. Benchmarks leaked, then a public demonstration: longer autonomous runs, better tool use, opaque internals by design. European labs confirmed within weeks they could not reproduce the results.
+
+In the same month, access went dark. Hospitals in two member states, a justice ministry, and several industrial users found their API keys throttled, then suspended. Notices cited a federal review of advanced systems and a new tiering of foreign access. No appeal channel answered. IT teams scrambled to re-point workflows overnight.
+
+Brussels had prepared half a story. The evaluation hub, newly finished, published emergency testing protocols for the unreadable models, drawing quickly on a fresh interpretability result that let auditors certify certain guardrails without seeing the reasoning trace. Certified filters in hospitals held through the switchover, catching a wave of malformed referrals generated when fallback models mis-parsed old prompts.
+
+The Commission's continuity push worked where it had something to work with. Scheduling and triage tools already hosted inside the Union kept running on European open models and licensed standbys; waiting-list gains in the three showcase regions were maintained, and ministers toured wards claiming proof that essential services did not need Washington. Southern mayors, offered first tranches of deployment funds, took the money while noting it did not pay overtime or restart grid works.
+
+Elsewhere the strain showed. Asset-preservation kept gigafactory permits alive but no private co-build returned. Grid segmentation stayed unpaid and stalled; a cold snap in November forced brief, unplanned load reductions in the two previously breached states, officially described as precautionary balancing. By December, American voters had chosen a president promising to hold advanced AI as a strategic asset, and Europeans understood the rationing was policy, not glitch.

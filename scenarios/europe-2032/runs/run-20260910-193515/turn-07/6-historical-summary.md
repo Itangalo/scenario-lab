@@ -1,0 +1,5 @@
+EU resilience held via ENISA Shield, open models and paper fallbacks, but slowed systems, empty gigafactories, and welfare-AI scandal eroded trust. Autonomous threats made licences obsolete; US forced Dutch lithography halt, Hague partly complied — seen as US veto.
+
+Commission offered anti-coercion cover, courted Tokyo/Seoul for procurement/telemetry/compute without deal, passed permits/grid/bank-guarantee laws and health failover, keeping power/payments on but brittle and unpopular.
+
+Autumn: Lyon/Magdeburg shells built with grid/guarantees, but empty as US parts rationing delayed commissioning; Hague compliance held. Tokyo/Seoul talks stalled over cash/re-export, Paris-Berlin split, no joint licence text. Commission launched wage-bridge/retraining via ESF+, easing some protests but mostly waitlists, while wards ran on slow models/paper through probes. By December continuity held, humiliation over dependence remained.

@@ -1,0 +1,5 @@
+By late 2028 a Taiwan Strait blockade cut off advanced chips, leaving Europe with no new accelerators for years. The two gigafactory zones remained unbuilt in permitting, and the investment bank ring-fenced rather than disbursed funds citing force majeure.
+
+Brussels made chokepoint defence the priority: coercion examination of the US servicing ban, budget backstop for Dutch losses, pooled licensing — but The Hague kept its bilateral Washington channel and Tokyo/Seoul offered no allocations. The loose near-frontier open model remained unrecallable; the completed Frontier Observatory supplied only outside-in benchmarks to cyber/grid teams. Grid/port failovers held degraded-not-stopped; retraining lagged layoffs; AI use rose as trust fell.
+
+US election confirmed a platform of frontier systems as strategic assets with tiered foreign access, cementing EU dependence on borrowed models and Washington-controlled supply.

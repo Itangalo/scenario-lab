@@ -1,0 +1,10 @@
+### Concrete kept, edges delivered
+Brussels spent the half trying to stop what had been built from unravelling. The keep-alive pact for the gigafactory sites held the poured concrete in place: private pledges were stretched and re-sequenced, grid operators guaranteed queue slots for the first sites, and reprogrammed Digital Europe money covered power and security running costs. It did not restart cancelled expansions. Lenders still priced next phases higher, and two suppliers quietly shifted equipment elsewhere. The sites survived; the pipeline narrowed.
+
+The bio-detection and edge-care surge finally moved from paper to deliveries. Seconded teams from frontrunner hospitals installed backup links, offline copies and rapid sequencing kits in lagging municipalities. Frontrunners passed islanding drills again, ports stayed up through heavy scanning. Coverage beyond them improved but stayed patchy — the same stretched staff carried both jobs, and procurement of locally hosted systems remained frozen awaiting a court ruling.
+
+Capability moved sideways in general terms but jumped again where it can be checked. A Saclay-Barcelona cluster produced machine-checked advances in code synthesis and mathematics, closing verification benchmarks specialists called a landmark. The same kind of progress fed attacker tooling: probing of grids and hospitals grew more targeted, though automated patching blunted it at defended sites.
+
+Across the strait, extended exercises lifted shipping insurance and rattled port authorities. No cutoff followed, but Brussels ordered buffers and hardening rather than new commitments. The breakaway hyperscaler deal stayed ring-fenced to a single case, at the cost of open recrimination in Council corridors.
+
+Valuations did not recover. The public noticed deliveries more than concrete, and mood lifted a notch without turning.

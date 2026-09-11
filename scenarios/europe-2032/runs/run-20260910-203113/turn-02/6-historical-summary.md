@@ -1,0 +1,5 @@
+October micro-intrusions via open advanced-model tooling hit European grids, a port and water utility, causing outages from defensive isolation; attribution unclear but state-level.
+
+Brussels turned scare into Critical Systems Shield: segmentation blueprints approved, AI/connectivity budgets reallocated to logging, cross-border tabletops held. Progress slow: operators resisted 2-year retrofit timetable, standards unfinished, DG CNECT fights delayed funds. New 24-hour ENISA intrusion registry launched with JRC signatures; large operators complied for funding, smaller utilities/ports largely did not, giving partial picture.
+
+Sovereignty stalled: gigafactory/tech package steady, permitting guidance and priority grid promises stopped second side compute deal but first remained. US providers refused binding EU continuity clauses after summer cutoffs, offering only global terms. AI boosted white-collar productivity without layoffs, reducing security-spending urgency, while data-centre permits faced local opposition over power/water with two in judicial review.

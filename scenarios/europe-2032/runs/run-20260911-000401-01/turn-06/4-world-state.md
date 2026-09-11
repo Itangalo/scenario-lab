@@ -1,0 +1,10 @@
+### A spring of intrusion and fracture
+The first half of 2029 undid the calm Brussels had declared in December. A large, largely automated ransomware sweep rolled across municipal services, regional hospitals and port logistics in several member states in February and March. Emergency teams redeployed under existing cyber laws, national response units coordinated patching and failover, and the new evaluation institute helped triage malware samples. Defenders were visibly behind for weeks. Attribution dragged, and officials admitted privately that the tooling bore the marks of widely available advanced models.
+
+The public impact was immediate. Appointment systems went dark, port queues lengthened, and local news ran nightly tallies of disruption. Trust, already thin, fell further. Power-price anger near the reserved data-centre sites flared again, with brief blockades of access roads reported in two locations, though permits were formally kept alive.
+
+Politically, the more damaging blow came from inside. As Washington began staffing its new tiered-access system for advanced models, one member state concluded its own side arrangement for privileged compute and model access, on terms that undercut the common bargaining position agreed with Dutch, Japanese and Korean partners. Ministers summoned the issue to trade and foreign-affairs councils, offered shares of future testing and allocation to hold the line, and warned that anti-coercion instruments remained available. The partner held its deal and called it pragmatism.
+
+The joint supply-chain front survived on paper but lost credibility. Partners asked whether Brussels could deliver its members. The technology sovereignty package formally closed in this period, unlocking planning and private-capital channels for the five sites, but with no money disbursed and bankers still absent, nothing broke ground.
+
+By June the Union was managing dependence under fire: grids narrower but still exposed, leverage pooled but frayed, and a public reading both the intrusion and the split as proof that control lay elsewhere.

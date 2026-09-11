@@ -1,0 +1,10 @@
+### Cut off in the middle of an attack
+January brought two shocks at once. Washington's leading provider suspended service to Union users at short notice, without reasons or appeal. Hospital triage pilots in Aarhus, Bilbao and Tartu went dark, permit portals stalled, and ministries that had built workflows on the foreign model scrambled for workarounds. Days later a largely automated ransomware sweep hit municipal systems and mid-size utilities across several member states, exploiting the same queued patches auditors had flagged in autumn. Emergency rooms reverted to phones, some towns to paper.
+
+Brussels declared continuity the semester's binding task. Emergency rules tasked EuroHPC sites and vetted European clouds to host hardened openly available models as fallback inference for hospitals and utilities, with joint procurement rewritten to allow the swap and relief integrators redeployed from segmentation work to swap-over. Competition officials cleared the two substation-ready compute sites as continuity hosting. Health emergency funds were topped up for bio-detection after a contested genome-model paper claimed a non-expert pathway to a human-infecting design.
+
+It half-worked. Where fallback models landed, triage and permits limped back within weeks, slower and cruder but running on infrastructure inside the Union. Where they had not, backlogs deepened and mayors who had claimed credit in autumn now blamed Brussels for building on borrowed ground. Relief crews, still short-staffed, could not do segmentation and swap-over at once; utilities chose uptime and deferred hardening.
+
+Cohesion frayed. One member state signed its own hosting deal with a hyperscaler on terms undercutting the common line, defended at home as pragmatism. The Commission opened a coercion screening while quietly relying on the extra capacity. Protesters blockaded grid-connection works at both cleared sites, and exhausted municipal IT teams staged sick-outs in several cities.
+
+By June services were degraded but standing — proof of dependence, and of a fallback barely begun.

@@ -1,0 +1,13 @@
+### Cut off, unreadable, under attack
+Autumn brought the three blows Brussels had feared together. The leading American model family went dark for European users with a terse notice about revised deployment tiers and no appeal channel. Hospitals in three countries that had built triage summarisation and dose-planning on it scrambled to paper and to older domestic assistants. Ministers called it a commercial decision in public and a breach of trust in private.
+
+At the same time the frontier labs announced their newest systems no longer reasoned in readable steps. The internal traces were now compressed vectors that performed better and explained nothing. Safety teams that had relied on reading chains of thought found their dashboards blank; black-box tests and slow activation probes were all that remained.
+
+Then came the sweep. A compromised update to a widely used facilities-management package opened doors across municipalities, clinics and a grid subcontractor. Automated intruders repacked their payloads faster than signatures could follow, locking appointment systems, billing and building controls. Two regions islanded grid controls again. Emergency care never stopped, but waiting rooms filled and mayors published rebuild bills nightly on television.
+
+### The continuity corps
+The Union's answer was operational, not architectural. Under civil-protection emergency powers, Brussels pushed out pre-cleared fallback builds — downgraded, auditable models that could run on domestic hospital clouds or disconnected entirely — with paper-to-digital playbooks and islanding drills. Health and interior ministries seconded incident teams; hospitals and grid control were restored first, elective and administrative uses queued behind.
+
+The earlier supply bargain paid just enough to matter. Prioritised quotas of chips and spares kept grid parts and domestic hosting alive, though procurement officers still queued months behind American buyers. Construction sites for new AI factories stayed fenced and patrolled, permits legally alive but no concrete poured.
+
+By December lights stayed on and emergency wards functioned on stripped-down systems. The public saw crews working and backlogs published weekly, but also felt the humiliation plainly: the care that continued did so because smarter help had been withdrawn, unreadable, and then weaponised. Gratitude mixed with anger, and anger was winning.

@@ -1,0 +1,12 @@
+### Holding the line
+Brussels proposed nothing new in the second half of 2027, a deliberate pause while three large programmes burned capital. The focus was delivery: joint teams led by the EU cybersecurity agency pushed segmentation and credential resets from ports and grids into municipal networks and hospital IT, with restoration funds released only where mandatory incident reporting was filed.
+
+The Critical Systems Shield, launched at the start of the emergency, was declared substantially complete before winter. Essential services that had run on paper in spring now had segmented backups, exercised playbooks and cross-border response drills. Recovery was uneven — smaller hospitals and eastern municipalities lagged on staffing — but the autumn showed fewer cascading outages, and officials claimed the worst of the automated extortion wave had been absorbed.
+
+### The surge lags, the factories wait
+The bio-cyber surge, now the named priority, moved slower. Pathogen surveillance upgrades and screening for DNA-synthesis orders were funded through the health emergency authority and disease-control centre, and cross-border stockpiles were agreed. Hiring of biosecurity specialists and procurement of screening hardware slipped again, leaving announcements ahead of capacity. Parliamentary auditors began asking where the money had landed.
+
+Gigafactory and technology-sovereignty permits advanced on paper, each conditioned on new hardening standards, but concrete and chips did not follow. European co-financing remained thin after the private capital pullback, and US export controls continued to bite, eased only partly by quiet bargaining around lithography equipment. Sites were reserved, power reserved, machines delayed.
+
+### A pause in the fear
+What changed the mood was ordinary office work. Studies across law, accountancy, administration and consulting showed clear productivity gains from AI assistants, largest for juniors, with no matching fall in employment. Newspapers that had run ransomware diaries now ran features on cleared backlogs. Unions banked the result as proof the jobs shock was not now, while economists warned the plateau itself was the news: the easy gains were booked, further displacement postponed, not cancelled.

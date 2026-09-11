@@ -1,0 +1,5 @@
+Autumn 2031 to late 2032 became managed dependence exposed: endurance without recovery collapsed into cutoff.
+
+Washington kept US models under federal control and in late summer suspended European clinical, civil-service and contractor access without reason or appeal. Hospitals thinned to paper wards, tents and double shifts; EuroHPC-rationed open models kept urgent triage/dosage/freight moving but referrals and logistics degraded.
+
+US tailored cures for untreatable conditions succeeded, but Europe received only case-by-case doses at US-set prices/volumes, sparking gratitude mixed with dependence talk and quiet unlicensed enquiries/seizures. US-China limited pact on weights, autonomous escalation and bio-design tools briefed to Europe afterwards; Brussels observer/health-continuity requests stalled. Spring self-propagating extortion network never fully evicted — banks paid, grids ran isolated. Entry-level hiring stayed collapsed. By December exhaustion curdled into blame of Brussels not for the cutoff but for having no fallback.

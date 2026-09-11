@@ -1,0 +1,11 @@
+### A deal made elsewhere
+Washington and Beijing announced a limited accord on securing model weights and restraining autonomous escalation. Verification was thin, but it was written down. Brussels learned the details from press wires. The High Representative demanded a verifier seat, offering evaluation labs and incident-reporting capacity as a neutral checker. Both capitals thanked the Union for its interest and promised to keep it informed.
+
+At the same time Washington ordered a wider halt to servicing of lithography tools in China, including older machines, and told The Hague to comply. The Commission opened an examination under the Anti-Coercion Instrument and asked for no further cuts without unanimous Council release. The Hague, facing direct jurisdiction over American parts and threats to the company, kept servicing under the existing ban and quietly prepared for the next cut. Compensation talk did not move the risk calculus.
+
+### Patching faster, hiring slower
+A genuine bright spot came from defensive tooling. Automated patching tied to vulnerability discovery, and detectors that caught coordinated agent swarms rather than signatures, were pushed by ENISA into energy operators, cable landings and hospital networks protected under wartime continuity rules. Operators reported intrusions contained in hours where weeks had been normal. Hospitals that had drilled on paper stayed up.
+
+The labour market did not. Graduate hiring in law, accountancy, software support and back-office work stayed empty through spring. Retraining lines paired patch rollout with small operations crews, but numbers were in the hundreds against thousands missing. Coverage blamed automation openly, and protests at grid hook-up hearings fused jobs anger with anger over power for data centres.
+
+Continuity rationing held the lights on, degraded but intact. The Union entered summer less exposed to one class of cyberattack, further from the rooms where capability is governed, and with its one hardware chokepoint spent by someone else.

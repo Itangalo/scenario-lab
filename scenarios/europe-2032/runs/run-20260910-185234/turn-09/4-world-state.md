@@ -1,0 +1,12 @@
+### The patch that worked, the shipment that didn't
+Autumn brought one piece of genuinely good technical news. A control and interpretability result out of the leading labs — a way to predict certain failure modes before they showed and to certify the check rather than argue it — was picked up fast because the labs themselves wanted it. In the Union, engineers folded it into the Seville behaviour-prediction kit where that kit was already installed.
+
+Where Recovery Corps teams were still seconded, the effect was visible within weeks. False alarms on patched grids in Rotterdam and Antwerp fell again, restore drills ran cleaner, and operators started trusting the console rather than working around it. Municipal utilities that had kept the retrofit asked for the update by name.
+
+Where the kit had never landed, nothing changed. Insurers continued to refuse cover for AI-operated controls, a handful of councils quietly shelved data-centre extensions, and restores still depended on who happened to be on shift.
+
+The other shock of the half-year came from export controls. Washington tightened chip and model licences again, keeping allied buyers on volume licences while cutting others off. For the Union the continuity for installed energy and port hardware held on paper, but new orders for foreign control software and high-end accelerators slipped into queues and price rises. Chinese manipulators already on the docks kept running; the next tranche of welding cells and spares did not arrive as planned.
+
+Brussels did not bid for licences it could not enforce. The Commission froze new foreign control-software dependencies, held existing grid reservations without new spending, and told employment services to keep paying wage-bridges for displaced pickers out of reprogrammed social funds and the large-deployer levy. The bilateral hosting deal signed earlier in the year was publicly counted inside the transition fund, a framing few member states believed would deter a second side-deal.
+
+By December offices were still producing more with the same headcount, warehouses were still shedding picking jobs to machines that could be scored by a camera, and the Union was a little safer where it had already built, and a little more exposed where it had not.

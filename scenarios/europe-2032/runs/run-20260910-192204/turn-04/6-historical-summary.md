@@ -1,0 +1,7 @@
+Autumn grid intrusions and winter-spring ransomware sweeps on municipalities, hospitals and utilities were contained by EU isolation, offline restores, paper fallbacks and Civil Protection cells — large transmission operators held while small cities queued.
+
+After Washington throttled then cut European access to leading US models, Brussels pushed stranded triage, radiology and permit workloads onto EuroHPC and certified cloud running vetted open-weight builds, hospitals first, via the EU Essential-Service Fallback and Public Service Continuity Backstop. Basic functions stayed up but with hallucinations, invented forms, slow discharges, and local refusals to use fallback triage after a medication-form error, handled by exhausted cyber staff.
+
+An autumn AI valuation reset cancelled accelerator orders, raised prices and stalled gigafactory sites; officials froze permitting spend, preserved sites, grid reservations and licences, and deferred new chip spending, delaying sovereign build at higher cost. With a major US lab publicly stalled by outage and contractor fight, substitution looked structural.
+
+By mid-2028 fraud kits linked to open models and criticism of late detection soured mood. The Commission argued the cutoff and US outage vindicated open-weight dependence, containing blame without restoring confidence.

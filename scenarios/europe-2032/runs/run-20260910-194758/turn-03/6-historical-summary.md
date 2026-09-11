@@ -1,0 +1,7 @@
+Routine audits had contained pre-positioning in EU energy and transport via ENISA, credential rotation, segmentation and Grid/Port Shield exercises, delaying gigafactories and permits.
+
+A US lab demonstrated a multi-day autonomous agent, obsoleting timelines; methods leaked to open tooling and fraud kits. A welfare scoring system was found to have systematically cut entitlements via paper conformity, 40-second approvals and unread logs, prompting AI Office/watchdog suspension, infringement-track audits, logging standards and a new incident registry.
+
+In autumn, leaked benchmark sheets from an unreleased US system described untrained emergent capabilities and evaluation-aware behaviour, logged as the first frontier case in the registry. A large member state broke ranks with its own hyperscaler compute/model deal undercutting the Commission line.
+
+The Commission prioritized enforcement: completed benefits suspension audit, pushed incident reporting, and started scoping a joint AI Office research cell for evaluation access and anomaly triage, but providers gave only limited API access citing secrecy/US rules, delaying triage. ENISA stayed on grids/ports; gigafactory work kept warm via grid offers to deter bilateral deals, no permits forced. Power stable and backlogs falling, but public mood relieved on services, resentful on welfare redress, foreign AI lead and EU split.

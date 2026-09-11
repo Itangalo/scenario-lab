@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `eu_political_capital` dropped from 24.0 to 10.0 (a change of −14.0), which exceeds the maximum allowed single-turn change of 25 points in absolute value. While the cap is 25 points, the narrative and notepad must justify such a large drop. However, the legitimacy lends term in the notepad contributes +2, and no other term explains a net −14. The largest downward drivers listed are −3 for each of two measures and −2 for another, totaling −8, plus −1 for priority, summing to −9 at most. A drop of 14 cannot be reconciled with the stated terms without additional unaccounted-for penalties. This suggests either an unexplained event or miscalculation violating the transparency and accounting required by the constitutional modelling.\n- Organizational Constraint violated: The narrative describes \"procurement for locally hosted systems frozen\" and \"municipal challenges to grid connections\" as well as \"gigafactory siting held to already certified sites only\", implying regulatory and organizational bottlenecks. However, these constraints are presented as active impediments without corresponding narrative explanation of capacity limits or resource exhaustion that would justify such broad systemic friction. Given that no prior turn established a fragile implementation posture, and no new measure was introduced this turn (per notepad: only ongoing measures), the sudden systemic drag lacks grounding in organizational growth or capacity limits, violating the realism expected under Organizational Constraints."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

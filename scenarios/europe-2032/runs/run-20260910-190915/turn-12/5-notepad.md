@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: EU Clinical Retention and Emergency Staffing Compact −2, EU Chip Chokepoint Hold and Continuity Procurement −2, priority −1 = −5
+PROPOSAL BONUS: EU Chip Chokepoint Hold and Continuity Procurement (cat 8, small) +3 — supply coercion, blockade, access cutoff and defection landed this turn and this answers them directly
+LEGITIMACY LENDS: capital 15, sentiment 0 -> none, capital higher
+SOVEREIGNTY: 23 last turn, no capacity event? no — eu_frontier_access_denied t12 / supply_chain_coercion t12 / member_state_defection t12 largest −3, no cat4 in flight +0, capability rose 0.8 −0 = 20

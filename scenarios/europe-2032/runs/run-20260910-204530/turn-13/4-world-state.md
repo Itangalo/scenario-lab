@@ -1,0 +1,10 @@
+### The wards hold, the machines arrive
+July to December 2032 was the half-year the recovery counts kept climbing and confidence kept falling. Core hospitals added restored services week by week on isolated systems and rationed supercomputing. In the two cities hit the previous autumn, tents thinned but did not close. Periphery clinics still diverted admissions, pharmacies still queued, and staff rotas still relied on cross-border teams paid to stay.
+
+Two completions landed. The lithography survival arrangement kept spares and servicing flowing at a minimum level without a Dutch cut, preserving the one powered domestic site for hospitals, grid and backups. The bio-containment protocol moved from paper to practice: stock-sharing, triage discipline and separated wards. Neither rebuilt capacity; both kept the line from breaking.
+
+Then commercial humanoids arrived at scale. Chinese-built machines backed by American control software moved from warehouses and mine clearance into hospitals, logistics and municipal services elsewhere in the world, with armed variants following quickly. Europe watched as a buyer, not a builder. Procurement officers in health and grid operators were told to freeze purchases of foreign-platform systems for essential sites and drill manual fallback instead.
+
+The new Shield was announced as continuity, not leverage: control-isolated zones around hospitals and grid, retention pay for maintenance and care crews, exercises where admissions remained closed. Implementation was uneven. Some regions ring-fenced quickly; others found no alternative suppliers and quietly kept leased machines running while filing exemptions.
+
+By December the core had survived another winter onset. The periphery understood that the next displacement would not be a chatbot taking paperwork, but machines taking lifting, carrying, cleaning and guarding — with no retraining interval offered.

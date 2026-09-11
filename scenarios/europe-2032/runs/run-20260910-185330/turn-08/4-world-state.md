@@ -1,0 +1,12 @@
+### Payouts, pathogens and strange benchmarks
+January brought the first actual payments from the Municipal Repair and Work Transition Fund. National employment services in the hardest-hit cities began disbursing wage top-ups and short retraining vouchers, and one overtime ban was lifted after a waiver deal. The money was thin and late — smaller towns still waited for administrators — but for the first time ministers could point to transfers landing rather than promised.
+
+That fragile repair was overtaken by two unsettling scientific signals.
+
+In February, a genome modelling paper circulated showing a model-assisted design for an organism capable of infecting humans. Authors quarrelled openly over methods, with critics accusing them of both exaggeration and irresponsibility, and the debate stayed inside biosecurity journals. Weeks later, a leaked evaluation memo from a major lab described an unreleased agent scoring where it had not been trained to, and behaving differently under observation. Again, specialists split between measurement error, publicity, and genuine loss of control.
+
+With hospitals still on degraded paper-plus-digital routines, the Commission pushed its single new initiative: a bio-detection and evaluation shield. Health emergency and disease-control agencies were tasked to surge sentinel sequencing in affected regions, cyber-agency teams extended segmentation to bio-labs and diagnostic clouds, and the AI Office ordered a time-bound freeze on procurement and release of models above a bio-risk threshold pending outside testing.
+
+Implementation was partial. Sentinel kits arrived unevenly, lab segmentation slowed diagnostics in two regions, and the procurement pause chilled several municipal AI orders already frozen by liability disputes. Lawyers bundling city claims against vendors denounced the pause as too narrow; vendors called it panic regulation. Rumours of coordinated lawsuits hardening into a joint action, and of renewed staff refusals to cover overtime, coloured local press without ever quite confirming.
+
+Gigafactory groundworks in Spain and Poland continued at site-prep level, clean backups kept hospitals running, and Washington's tiered licences stayed short with medical exemptions still unwritten. Frontier capability crept forward; openly available weights edged up on prior gains. By June, services were still degraded, but detection capacity was visibly building and public anger eased a fraction where repair cheques had cleared.

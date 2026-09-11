@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `ai_safety` decreased from 18.0 to 7.0 (a drop of 11.0 points). While most stocks can fall, `ai_safety` is not among the metrics permitted to decrease under any circumstances unless explicitly narrated as resulting from catastrophic physical destruction of the compute base, which is not the case here. The narrative describes loss of control, opacity, and incidents, but does not justify a structural, lasting reduction in the level of `ai_safety` as a stock. A temporary operational failure would affect other metrics (e.g., resilience, sovereignty), but the capability to ensure safety — once developed — is an accumulated stock like `ai_capability` and must not fall absent extreme physical disruption. No such event is described.\n- Narrative Constraint 8 violated: The phrase \"the leading labs had just shifted to architectures whose internal steps were no longer in words\" telegraphs a known, unannounced shift in capability development that implies a specific, irreversible threshold has been crossed. This implies a deterministic change in the rate of `ai_capability` growth (e.g., post-`rsi_onset`) that should be governed by hidden event gates, not stated outright in the narrative. Such telegraphing violates the prohibition on revealing or implying that an event gate is open.\n- Economic Constraint violated: The narrative states that \"money [was] reprogrammed and no new budget vote\" enabled fast deployment of the Joint Patch and Leverage Pact. However, pulling staff from the evaluation watch and triaging cyber abilities \"slipped\" implies degradation in core functions. This trade-off is plausible, but the resulting +3 proposal bonus and +2 legitimacy lend leading to a net +3 increase in `eu_political_capital` (from 8.0 to 11.0) and +2 in `eu_ai_sovereignty` is inconsistent with the implied under-resourcing and degraded oversight. The magnitude of gains in sovereignty and political capital is not justified given the narrative of stretched capacity and deferred work, especially without a budget vote or new funding source. This suggests an uncoupling of outcomes from resource constraints."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

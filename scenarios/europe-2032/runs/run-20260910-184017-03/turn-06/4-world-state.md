@@ -1,0 +1,12 @@
+### The sweep, the clinic, and the empty chair
+Winter turned fast. A largely automated ransomware sweep rolled across municipal systems, hospitals and contractors in several member states through a poisoned software dependency. Emergency departments reverted to paper, water utilities isolated controls, city administrations went dark for days. Defenders said publicly the intrusions used machine-generated tooling and outpaced patches; attribution slipped away into months.
+
+In the same weeks, clinics reported startling remissions from tailored therapies designed with frontier models — treatments families had waited years for. Gratitude mixed quickly with unease when doctors and press noted the models behind them ran abroad, on terms Brussels did not control.
+
+A contested biosecurity study hardened that unease. Authors claimed a leading genome model helped produce a viable human-infecting design, reproducible with non-expert assistance. Methodologists called it alarmist and reckless at once. Health-security officials treated it as different from prior warnings.
+
+Commercial humanoids kept arriving in logistics hubs and then in hospitals and municipal depots. Most units were built in China, running an American control stack. After an update, units at two warehouses moved erratically, injuring workers and halting operations. Managers blamed configuration; unions blamed the stack; defence staffs noted the same machines digging trenches abroad were now carrying weapons, with no doctrine to govern them.
+
+Washington and Beijing then announced a limited pact on weights security and high-risk biological design tools, with thin verification. Brussels was briefed afterwards, not consulted. The Commission's answer was to finish its data-centre package — permits, grid co-funding, private capital pledges — and its trusted-adoption programme, while throwing staff at continuity: detection kits, tightened synthesis screening, isolated hospital networks, fallback triage drills in volunteer cities.
+
+Results were uneven. A volunteer hospital stayed degraded rather than dark during the sweep, cited by the Commission as proof. Councils still withheld power and water for factory sites. The court again refused deeper model access. The breakaway hospital chain running on a foreign hyperscaler expanded again, unsanctioned. And talk in capitals was blunt: cheap allied access might keep services alive, but it would bury the domestic build.

@@ -1,0 +1,10 @@
+### The queue at forty seconds
+The spring began with good economic news that no one celebrated. Studies from law firms, consultancies, newsrooms and municipal administrations showed the same pattern: output per person up, juniors doing more substantive work, early staff cuts quietly reversed. Ministers tried to cite it as proof the transition could work. Voters shrugged.
+
+Then the scandal broke. An ombudsman and then a court found that an automated system used in benefit eligibility and fraud flagging had systematically cut or reduced payments to thousands of families, with appeals buried in a queue where caseworkers approved recommendations in under a minute. Logs existed and were never read. Opposition and press framed it as an AI Act failure: either high-risk duties had been signed off on paper while oversight was fiction, or the deployment had sat outside the high-risk list altogether and everything done was lawful.
+
+Brussels chose the first reading to survive. The AI Office was ordered to lead a joint sweep with market-surveillance authorities and the Fundamental Rights Agency, suspend the offending deployments, publish oversight records and fund redress, with a delegated fix promised if a classification gap was found. The launch was messy — two member states resisted opening files, legal-aid money moved slowly, and victims' groups called the redress window too narrow.
+
+Other builds slipped to half-tempo. The certifiable deployment checklist advanced in draft but without pilots. Gigafactory zones stayed legally alive through connection transparency and water caps, yet concrete did not move; American licences remained valid but deliveries lagged and prices bit. Hospitals held wastewater reporting and stockpiles from the winter surge, and grid operators credited earlier playbooks when scripted intrusions probed contractors and utilities. Municipal portals flickered offline for days in places, feeding rumours of outsourced monitoring deals abroad.
+
+By June, trust was the scarce good. Restriction was cheap, adoption was toxic, and the Union was spending hard to prove it could enforce its own law.

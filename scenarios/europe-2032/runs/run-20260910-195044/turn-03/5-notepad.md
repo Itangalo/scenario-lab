@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t3: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Critical Infrastructure Cyber Shield −3, EU Lithography Shield and Reciprocity Pact −2, EU Chip Continuity and Critical Compute Reserve −2, priority −1 = −14
+PROPOSAL BONUS: EU Chip Continuity and Critical Compute Reserve (cat 6, small) +4 — Taiwan blockade halting advanced exports and investment collapse landed this turn and this answers them directly
+LEGITIMACY LENDS: capital 10, sentiment 27 -> +2
+SOVEREIGNTY: 16 last turn, no capacity event finish, in flight +0, taiwan_blockade t3 −3, capability rose 1.5 −0 = 13

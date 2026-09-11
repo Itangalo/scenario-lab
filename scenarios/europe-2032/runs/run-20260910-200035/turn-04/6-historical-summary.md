@@ -1,0 +1,7 @@
+Autumn intrusions using open Mythos tooling were contained by the Critical Infrastructure Shield — segmentation, resets, permanent ENISA playbook — but US providers cut top-tier model access for European hospitals and ministries in September, forcing paper radiology and dead chatbots under US licensing controls.
+
+Europe answered with the Continuity Switch: emergency procurement onto European-hosted clouds and domestic models. By spring the substitution stuck — lights stayed on, 72-hour incident reporting went routine, ENISA published its first quarterly picture of open intrusion kits, and grid/telecom operators isolated probes faster, though clinics and mid suppliers lagged. Doctors complained of blunter triage and slower notes, press found delayed follow-ups, ministries promised audits.
+
+A March genome-modelling paper claiming AI-assisted design of a human-infecting organism shifted public-health mood; Commission launched a bio-detection reserve — wastewater/clinical sequencing, pooled diagnostics, synthesis screening — mandated but unfunded until summer, no sequencers installed.
+
+Gigafactory contests inched on aid and guarantees, no construction. Brighter signals: office productivity rose with EU-hosted admin tools, juniors rehired, regional waiting lists fell, voters noticed shorter queues.

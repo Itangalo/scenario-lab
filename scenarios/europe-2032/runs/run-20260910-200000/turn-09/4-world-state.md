@@ -1,0 +1,10 @@
+### Patching counters, certifying code
+The winter ransomware wave ebbed through autumn without fully lifting. Cross-border response teams under the municipal restoration surge spent July to October moving from city to city, re-imaging admin networks, restoring clean backups and leaving behind hardened configurations. Northern and eastern municipalities that received the cyber agency's leaked-weight signatures early reopened permit desks and payment portals within weeks; smaller councils in the south and west waited months for a visiting team, and handwritten notices lingered on some town-hall doors into November.
+
+That uneven recovery shaped politics. Finance ministers let the surge run on its standing trigger but blocked any add-on spending, and the benefits-log fight over gigafactory grid reservations was quietly shelved.
+
+Mid-autumn, laboratories on both sides of the Atlantic began adopting a new interpretability and control technique that made already-deployed systems measurably more predictable. EU officials seized on it quickly. DG CNECT tasked the AI Office and the cyber agency to write the result into deployment checks and monitoring for public-sector and critical-service systems, funded from the existing evaluation envelope to avoid a fresh budget battle.
+
+The fast-track certification was announced as the Union's sole priority, with health sequencing hubs and syndromic feeds promised first access to certified procurement. Validation data flowed through the joint incident channel with Washington, which helped catch a late-year copycat locker variant before it spread.
+
+Public mood lifted only slightly. Reopened counters and talk of certified systems did not erase memories of closed ones, and open-weight tooling remained widely available. Ministers claimed credit for turning a technical advance into visible assurance without asking treasuries anew, but with little fiscal room, that credit remains thin.

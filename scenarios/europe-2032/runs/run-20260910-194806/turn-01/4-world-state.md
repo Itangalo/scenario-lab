@@ -1,0 +1,10 @@
+### The test shot and the switch-off
+Autumn brought two shocks that rewrote Brussels' calendar. First, auditors stumbled on staged intrusions across transmission operators in two member states, a major port and a water utility — breaker credentials taken, relays mapped, tooling left in place, nothing switched off. Analysts traced the tooling to openly downloadable models in the Mythos class. Second, Washington cut off the leading American model to non-US nationals at short notice, then restored it after negotiation. Hospitals, ministries and firms that had built directly on the foreign service went dark for a fortnight.
+
+The Commission answered with a single new build: a shield programme for electricity, ports and water, run through ENISA and the energy crisis structures, starting with the two affected grid operators. Credential rotation and segmentation audits began before Christmas, but operators haggled over downtime, cross-border exercises slipped to next year, and money was reprogrammed rather than new.
+
+Sovereign capacity work continued in parallel. Permitting zones for gigafactories advanced and guarantee schemes moved, with first domestic inference explicitly promised to the clinics and control rooms hit by the American cutoff. The promise outran the hardware: no new compute came online this turn.
+
+A formal protest to Washington demanding published criteria and appeal for any future cutoff produced polite acknowledgement and no commitment. American officials called the cutoff a national-security precaution; European papers called it humiliation.
+
+Public mood soured. Coverage paired mapped grids with dependent hospitals, and opposition to data-centre siting hardened in several regions. Faint rumours circulated — of journals demanding watermarking after disputed proofs, of hospital pilots on open models quietly reviewed — but nothing confirmed.

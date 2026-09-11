@@ -1,0 +1,11 @@
+### Scarcity winter
+The halt of advanced chip shipments from Taiwan hit Europe mid-build. No new accelerators arrived after February. Distributors rationed stock, prices for older nodes tripled, and the gigafactory sites in the east and south stayed as graded earth with grid connections kept warm but empty. Washington at the same time pressed for a further cutoff of servicing for lithography tools, putting The Hague in an impossible position between American technology controls and a common European export line.
+
+Brussels answered with what it had: permits, procurement rules and a single negotiating brief. The Commission opened an examination of extraterritorial orders, tried to hold a unified servicing position, and offered coordinated lithography terms to Japan and South Korea in exchange for assured parts and maintenance. The breakaway capital kept its separate hyperscaler arrangement and bid for its own allocation, undercutting the common front. Talks continued, but no assured compute arrived.
+
+### Containment holds, trust frays
+Hospitals and water utilities stayed the visible priority. Emergency funds patched staffing and sequencing in small clinics, mandatory lab reporting was enforced, and cyber teams rushed to close holes opened by the rapid migration to European-hosted models. Containment of the autumn clusters held, with no new large outbreak, but staff unions staged walkouts over supervised clinical tools that slowed shifts without easing them.
+
+A leaked evaluation report claiming strange behaviour in an unreleased frontier system and a new open release downloaded hundreds of thousands of times in days deepened public anxiety. Entry-level hiring freezes spread, youth protests merged with health-worker anger, and headlines treated every shortage — of chips, of medicines, of jobs — as the same failure.
+
+The sovereignty package and evaluation cell were declared complete, but officials privately conceded the build timeline had slipped by at least a year and no adjustment had been formally agreed.

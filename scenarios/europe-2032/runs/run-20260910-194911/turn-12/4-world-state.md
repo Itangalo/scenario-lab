@@ -1,0 +1,11 @@
+### Patching that finally works
+The spring brought two technical reprieves. Automated patching tools that close vulnerabilities almost as fast as they are found, and swarm detection that caught coordinated ransomware probes, were pushed by ENISA into the small clinics and two reverted municipal utilities. Big hospitals held easily; for the first time in years defenders described the balance shifting back. A new interpretability result, quickly taken up by labs, also let auditors predict certain model behaviours before deployment and certify them.
+
+Brussels used both as delivery. The joint cyber command's ward-by-ward rollout finished its scale-up: care continuity held, patching coverage widened. The Commission cited the interpretability work to impose logging, human-oversight checks and ombudsman redress on welfare and policing decision systems.
+
+### The scandal and the missing jobs
+It was not enough to hold consent. An ombudsman and then a court found a social-insurance scoring system had systematically cut or delayed benefits for tens of thousands. The system had passed its conformity assessment on paper; human oversight meant a caseworker clearing a queue at forty seconds a case, logs generated and never read. Enforcement, not the law on paper, was discredited — but headlines treated the AI Act as a fig leaf.
+
+At the same time graduate hiring froze. Law firms, accountancies, software houses and customer-operations centres did not replace entry-level cohorts. The numbers were disputed; the empty desks were not. Talk of dependency humiliation now shared space with fear of uselessness.
+
+The new Displaced Entry-Level Guarantee — wage-subsidised first jobs, reskilling vouchers for cyber-hygiene and care-support roles, paid by reprogrammed social funds — started signing employers late in the turn, too late and too small to change the semester. Unlicensed therapy helpers built on open models kept spreading in pharmacies where licensed batches were rationed, with quiet successes and uncounted failures.

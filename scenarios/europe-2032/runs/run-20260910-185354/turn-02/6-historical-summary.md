@@ -1,0 +1,7 @@
+Autumn's pre-positioning shock — intruders with breaker credentials and mapped relays found in two transmission operators, a container port and water utility, forcing precautionary islanding blackouts — left attribution contested between U.S. state-sponsorship claims and evidence of a tuned public frontier model, paralyzing Council action.
+
+The Commission's emergency hardening drive continued: ENISA teams remained in French, German and Dutch control rooms and Rotterdam/Antwerp, segmentation audits and credential rotations on schedule despite operator complaints over cost and slowed data-centre grid connections. Gigafactory siting held via stretched DG CNECT staff, with no new compute opened and demand steered to capacity in flight.
+
+Spring brought public-sector AI wins in five frontrunners — health triage cutting waiting times, faster permits, tutoring gains — all on EU-hosted inference via EU conformity routes with published dashboards, shifting coverage from substations to hospitals and giving proponents a public-benefit case for new load. Opposition to computing sites persisted, with lengthening queues, rumoured surcharges, and sharpened siting fights.
+
+Underneath, labs advanced longer, less-supervised agents on messy workflows, widening the deploy-assure gap. A two-speed rollout emerged as laggards grumbled, EU-hosted procurement preferences drew quiet non-EU vendor warnings, and Dutch lithography diplomacy held without resolving U.S. pressure.

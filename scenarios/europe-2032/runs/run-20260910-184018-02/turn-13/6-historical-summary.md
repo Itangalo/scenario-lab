@@ -1,0 +1,5 @@
+Autumn's AI leap and open-weights release mirrored across Europe made smuggled inference downloadable, while US export licensing tightened and rationed allied buyers. Corridors and escort system held for pharma cold-chains amid protest blockades, grid-ban court wins, and persistent spoilage/costs outside escorts.
+
+February US model cut-off forced cordon hospitals/showcase regions onto hardened open builds on Union hardware; Lombardy/Berlin triage stayed up for routine work with daily publication, but failed on longer-horizon planning.
+
+Graduate hiring never returned as firms automated junior work; youth joined Turin/Lyon pickets. Benefits-scandal ombudsman finding of wrongful cuts led Commission to suspend scoring system under EU AI law with redress, seen as failure to prevent harm. Union joined pooled defence offer — cyber liaison, pathogen sharing, triage feeds — funded by reprogrammed money, improving telemetry/early warning and completing open fallback rollout. Services degraded but held, without consent.

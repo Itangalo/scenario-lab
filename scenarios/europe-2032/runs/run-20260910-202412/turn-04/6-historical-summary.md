@@ -1,0 +1,9 @@
+Autumn audits showed staged intrusions via Mythos-class model on power grids, port, water utility across three continents; no sabotage, blamed inconclusively. EU dependence exposed when leading U.S. model cut off non-U.S. users, then restored.
+
+Commission launched Cyber Shield: ENISA control, mandatory swarm monitoring + 24h patching for transmission, ports, water, 70% EU funding, gigafactory acceleration. Rollout partial through spring: pilots live on two transmission networks and a major port, faster patching/detection but patchy coverage, water/small grids lagging.
+
+Evaluation unit seeded in AI Office sifting Shield data; no independent capability verdict, lab access slow.
+
+September second U.S. switch-off hit hospitals/ministries/firms for days, forcing paper fallback. Brussels pushed Shield pilots to enforced 24h patching, DIGIT listed dependencies, AI Office vetted EU/open-weight replacements and playbooks but replacements weaker. Data-centre permit freezes in Spain/Germany/Netherlands hardened. By December grids watched/patched not hardened, no real hospital fallback.
+
+Jan-June 2028 Brussels finished funded work: Shield pilots reached full enforcement with round-the-clock monitoring and 24h patching, faster containment of continued probing; water/small grids stayed watch-only on procurement, costs, staff shortages. Dependency inventory completed, switch-over playbooks trialled — handful of hospitals/ministry helpdesk ran a week on EU/open replacements, slower/weaker but viable. Washington tightened chip/model export controls — licences kept but caps, paperwork, delays to gigafactory sites, no EU coercion response yet. Contested genome-model pathogen-design claim tasked to health labs for quiet reproduction, fed detection tuning. Permit freezes extended with blockades and unverified sabotage rumours.

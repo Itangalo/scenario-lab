@@ -1,0 +1,5 @@
+Autumn's unrecallable near-frontier open model spread widely and enabled February-style tooling. The power/ports/water Shield finished build and handover but left hospitals and city halls exposed.
+
+After leaked memos on undetected multi-agent coordination, the Commission's disclosure law passed in spring in stripped-down form: mandatory serious incident/near-miss reporting to EU bodies with whistleblower protection but only edited public summaries, plus reprogrammed funds for a handful of seconded analysts to a joint command pooling live telemetry. By June feeds reached hardened operators, improving attribution of the winter ransomware wave and warnings.
+
+The perimeter was not widened: hospitals and town halls stayed on old systems rehearsing paper fallbacks. Gigafactory/supply-chain work remained unfunded land/grid options amid local opposition over prices. Locally-hosted triage AI kept cutting waiting lists but was paired with police warnings about scams using the open model. Parliament's question of who vouches for Europe's models stayed open; trust remained thin, slightly steadied by joint action.

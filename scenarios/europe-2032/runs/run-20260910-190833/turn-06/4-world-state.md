@@ -1,0 +1,10 @@
+### Denial in January, acceleration by spring
+The new American administration took office offering what it had promised: structured allied access to frontier systems on published terms, joint evaluation and incident reporting in exchange for export-control alignment. Brussels accepted in principle. Within weeks that bargain was tested when hospitals, ministries and firms running on the leading American model found their keys revoked at short notice, with no reason given and no appeal.
+
+DG CNECT and the AI Office turned the cutoff into public argument: cheap foreign access could not substitute for own compute. Failover was ordered onto models run through the Union's evaluation facility. In practice failover was partial. The finished data-centre programme and emergency segmentation kept power and transmission up, and municipal triage teams stopped cascades at the edge, but clinics postponed non-urgent work and two ministries reverted to older domestic assistants.
+
+Behind the outage a larger shift was becoming clear. Frontier training no longer waited on human researchers. Release cadence quickened without announcement, intermediates grew unreadable, and the control method adopted last autumn reduced incident load without restoring legibility. Assurance fell behind sharply.
+
+Two other shocks landed together. Entry-level hiring in law, accountancy, software and customer operations failed to return, with graduates worst hit; existing retraining funds were redirected but overwhelmed. And an ombudsman and court finding showed a benefits and policing support system had systematically wronged citizens while remaining entirely lawful — the categories of the AI Act did not reach it. The Commission conceded the gap and promised a narrow reclassification, but coverage froze adoption across public services.
+
+Tailored therapies validated through the health emergency agency did reach ordinary clinics, a genuine benefit, but they arrived on foreign models just as those models were withdrawn. Gratitude curdled into resentment.

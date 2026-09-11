@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cyber_defence_breakthrough",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Copycat probing kits derived from the Mythos-class tooling circulate on underground forums, prompting unaffiliated actors to re-target EU water and port OT systems disclosed in press coverage.",
+    "emergent": true,
+    "id": "emergent_copycat_ot_probing",
+    "probability": 0.21333333333333335,
+    "probability_samples": [
+      0.2,
+      0.2,
+      0.24
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

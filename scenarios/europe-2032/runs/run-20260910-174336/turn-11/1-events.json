@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.05,
+      0.1,
+      0.05
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Coordinated physical blockades of data-centre construction sites and grid connections spread across three or more member states, halting builds for weeks and forcing emergency policing costs.",
+    "emergent": true,
+    "id": "emergent_anti_datacentre_blockades",
+    "probability": 0.26666666666666666,
+    "probability_samples": [
+      0.24,
+      0.28,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

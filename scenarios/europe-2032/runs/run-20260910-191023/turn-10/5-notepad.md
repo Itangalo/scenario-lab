@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t10: EU Entry-Level Transition Shield −2, EU Joint Cyber Command Accession −2, priority −0 (capital 10 below 20, priority has no effect and no cost) = −4
+PROPOSAL BONUS: EU Joint Cyber Command Accession (cat 6, small) +4 — cyber_major_incident landed this turn with model-generated sweep and this answers it directly via invited joint command
+LEGITIMACY LENDS: capital 11, sentiment 8 -> none (capital higher)
+SOVEREIGNTY: 18 last turn, no cat4 finishes, no cat4 in flight +0, export_control_escalation t10 −3 (CONSOLIDATION, no build in force, top of range), capability rose 0.7 −0 = 15

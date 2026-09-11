@@ -1,0 +1,11 @@
+### The jump
+Winter began with a demonstration that made last year's roadmaps look quaint. A new system, shown first in closed briefings then in leaked videos, strung together multi-day engineering and research work with little supervision. European procurement officers understood immediately what it meant: the inference licences hospitals were living on were now a generation behind, and the price of admission had just risen again.
+
+Almost in the same week, Washington moved on the Union's one real chokepoint. Under threat of secondary controls on American technology embedded in its machines, the Dutch supplier was told to halt shipments and servicing not only for leading-edge tools but for older lithography lines and a widening list of customers. The Hague protested, then complied in part. In Brussels the reading was blunt: joint leverage was no longer theory.
+
+### Coalition and continuity
+The Commission answered with a middle-power play. Trade ministers offered The Hague legal cover under the anti-coercion instrument and compensation for servicing losses, while envoys flew to Tokyo and Seoul with offers of shared procurement and pooled cyber telemetry in exchange for aligned export licences and joint bargaining on compute. The talks were real, and difficult. Partners wanted EU money without EU conditions; Paris wanted withholding power, Berlin wanted exemptions for its toolmakers.
+
+At home, two long builds finally landed. The sovereignty package's permits, grid reservations and bank guarantees became law, and the hospital-ministry failover stack — audited European-hosted models, stripped adapters, paper fallbacks — was declared operational. Wards stayed open through key wobbles and a fresh wave of probes using the new openly available mapping tools. Containment held, but clinicians complained of slow, brittle systems, and courts kept one gigafactory grid link frozen.
+
+Voters gave little reward. Keeping the lights on no longer impressed; being told that Dutch machines answered to Washington humiliated. By June, Brussels had continuity, a coalition on paper, and a capability gap wider than ever.

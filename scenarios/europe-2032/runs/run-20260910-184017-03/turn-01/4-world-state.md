@@ -1,0 +1,10 @@
+### Grids, genomes and a plea for hardening
+Autumn brought two discoveries that did not respect borders. An unrelated audit at a transmission operator uncovered intruders who had sat for weeks inside electricity control networks on three continents, including two EU operators, alongside a major container port and a water utility. No blackout was triggered, no ransom demanded. The retrospectives were bleaker than the intrusion itself: defenders admitted they would not have found the foothold on their own.
+
+At almost the same moment, a genome modelling paper claimed a non-expert with model help could reach a viable human-infecting design. Virologists fought over methods and over publication, but biosecurity circles treated it as a step-change from the bacteriophage work of the summer.
+
+In Europe the second story fused with the first when investigative papers published leaked screening logs naming French, German and Dutch synthesis providers that had waved through risky orders. The firms cited cost and false positives; health ministers cited recipes in inboxes.
+
+Brussels answered with what it could move fastest: a Critical Shield directive pairing mandatory screening and customer checks for DNA synthesis with emergency audits of the affected grid operators, anomaly-detection rollouts to power, ports and water, and a December live exercise for a combined grid-port failure. The Competitiveness and health councils gave it a fast track, subsidised tooling softened industry resistance, and ENISA teams were in the two operators by October.
+
+It was partial. Permitting for gigafactory zones slowed as municipal councils challenged power and water allocations, and the tech-sovereignty files quietly lost a semester while attention went to Shield. Washington's review regime stayed opaque, and US labs kept shipping. Europe ended 2026 more alarmed, marginally better drilled, and still waiting on compute.

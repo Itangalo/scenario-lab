@@ -1,0 +1,7 @@
+Autumn grid intrusions and February's automated ransomware sweep on municipalities, hospitals and utilities were contained by EU isolation, offline restores and Civil Protection cells, holding large transmission operators but leaving small cities struggling.
+
+In early autumn Washington throttled then cut European access to leading US models, stalling triage bots, copilots and radiology pilots. Brussels pushed stranded workloads onto European-hosted open systems on EuroHPC and certified cloud, hospitals first — basic functions returned but with hallucinations and slower discharges, handled by exhausted cyber staff.
+
+Simultaneously an automated attack froze permits, cancelled appointments and encrypted online backups; the grid shield held large operators while small cities queued again. Through October an AI valuation reset led to cancelled accelerator orders, higher prices and stalled gigafactory sites, forcing officials to freeze permitting spend and redirect cash to containment and fallback, delaying sovereign build at higher cost.
+
+By December fraud kits linked to open models, handwritten prescriptions and criticism of late detection soured mood. The Commission argued the cutoff vindicated sovereign capacity, containing blame without restoring confidence.

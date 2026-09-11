@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: M12 EU Middle-Power Survival Coordination −2, M13 EU Rogue Containment and Essential Continuity Protocol −2, priority has no effect below capital 20 so −0 = −4
+PROPOSAL BONUS: EU Rogue Containment and Essential Continuity Protocol (cat 6, small) +4 — catastrophic distributed rogue incident and joint response window this turn and this answers it directly
+LEGITIMACY LENDS: capital 16, sentiment 22 -> +2
+SOVEREIGNTY: 11 last turn, no cat4 finish, no cat4 in flight +0, export_control_escalation t13 −2 (largest of embodied_ai_deployment and export_control_escalation), capability rose 1.0 −0 = 9

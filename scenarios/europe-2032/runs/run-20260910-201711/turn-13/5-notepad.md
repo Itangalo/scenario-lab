@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: EU Anomaly Triage and Essential-Systems Hold −2, EU Middle-Power Reciprocal Access Compact −2, priority −1 = −4 (capital below 20, priority has no effect and no cost, total −4)
+PROPOSAL BONUS: EU Middle-Power Reciprocal Access Compact (cat 8, small) +2 — US case-by-case rationing throttling hospitals/energy last 2 turns and vendor stonewalling triage cell, answered directly via joint bargaining
+LEGITIMACY LENDS: none — capital 15.0 above sentiment 4.0
+SOVEREIGNTY: 23.5 last turn, no cat4 finish +0, no cat4 in flight +0, middle_power_coalition t13 +2, capability rose 0.5 −0 = 25.5

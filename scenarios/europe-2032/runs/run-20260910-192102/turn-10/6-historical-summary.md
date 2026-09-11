@@ -1,0 +1,7 @@
+By late 2030 an agentic back-office failure and unreadable compressed-vector reasoning forced a containment/continuity regime — kill-switches, caps, human sign-off, ENISA playbooks — with inspection labs able to see failures not reasons, grid moratoria stalling pooled inference, and essential services held on manual/paper.
+
+In Feb blockade winter Taipei sea lanes closed: spares stopped, screened compute prices tripled, Brussels rationed hospitals/grid first. Union tightened lithography/optics export licences with middle-power partners for hardened chips/maintenance kits, drawing US/Beijing blackmail charges; mayors haggled over grid bans and continuity funds amid protests.
+
+Mid-spring a discontinuous model family and near-twin open weights spread to hundreds of thousands, voiding pooled-inference containment. A genome paper publishing a viable human-infecting design prompted doubled wastewater sampling, sealed-ward drills, stockpiling.
+
+By June kill-switches and cross-border exercises kept power and care on through paper shifts and manual override; grey-market foreign agent time was mostly caught and cut. Services held barely, junior clerical jobs thinned further, polls showed dread, ministers focused on repair and rationing through an unending blockade.

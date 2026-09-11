@@ -1,0 +1,7 @@
+Staged access across grids in three continents including two EU states, port and water utility — mapped relays, stored credentials, Mythos-class tooling at state scale — assessed as rehearsal; no new intrusion by autumn 2027, outages from defensive isolation only.
+
+EU held hardening course: emergency segmentation audits and credential rotation first in affected transmission systems then wider, plus ENISA/regulator/Europol/AI Office winter exercises. Implementation half-done, slowed by legacy OT, diversion of deployment funds to grid work, and gigafactory permitting fights.
+
+H1 2027 AI funding crash froze private investment, slowed capability race; Brussels reworked gigafactory/tech plans around distressed assets, cancelled sites, cheaper hardware, larger public stakes without new permit fights — terms improved, nothing built. Retraining/wage-bridge pilot for logistics/back-office stuck in design over funding/eligibility, launch pushed to next year via existing social funds, no disbursements.
+
+Joint procurement expanded proven hospital scheduling, permit processing, tutoring assistants on European-hosted capacity to more regions — waiting lists and permit times fell, credited to EU. Trust steadied but sentiment flat amid job anxiety and siting anger; year ended with audits half-done, construction stalled, tight political room.

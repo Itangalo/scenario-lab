@@ -1,0 +1,10 @@
+### Drills, queues and thin patience
+January to June 2028 was a holding operation, and Brussels said so openly. With no new money to open, the Commission kept all four programmes running on fumes and sequencing.
+
+ENISA and the crisis network stayed with the two worst-hit transmission operators, repeating live isolation drills and fitting another batch of detection kits from reprogrammed funds. Engineers said the kits worked where installed. The queue elsewhere grew: smaller municipal utilities remained waitlisted for segmentation retrofits, and factory grid connections stayed frozen behind substation work. Industry associations called the freeze a de facto investment stop; one regional government kept a lawsuit draft on its desk without filing it, using the threat to bargain for exemptions.
+
+The Continuity Cloud for hospitals and ministries stayed in limited operation on reserved AI-factory time, running European-hosted open models with interpretability checks. Clinicians kept using it for a handful of administrative and diagnostic-support tasks, complaining it was slower and narrower than the American systems lost in January, but preferring it to nothing. Efforts to expand stalled in procurement fights over licences and liability for model errors. No expansion was attempted.
+
+Gigafactory sites and the tech sovereignty package moved only on paper — guarantees signed, permits fast-tracked, no fresh capital or engineers released. Site managers reported quiet opposition: in two municipalities councils raised power and water objections that delayed preparatory works, and utility crews, exhausted after months of emergency overtime with hiring frozen, worked noticeably slower on retrofit shifts.
+
+Offices remained the bright spot. Productivity studies showed continued gains without layoffs, and works councils bargained over workload. But surveys showed the same sore point: dependence on foreign frontier models. With budgets stretched across four fronts at once, political room narrowed sharply by June.

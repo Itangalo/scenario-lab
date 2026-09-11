@@ -1,0 +1,10 @@
+### Blind models, empty racks, broken line
+The first half of 2030 took away the instrument Brussels had counted on to govern AI. Leading developers confirmed their newest systems no longer reason in readable words — the internal steps that worked best were not language at all. Announced as a performance gain, it read in newsrooms and ministries as a loss of control. Every checklist that relied on reading the chain of thought stopped working at once. What remained were blunt stress tests and slow, experimental peeks inside model activations.
+
+Brussels answered with what it could start without a budget fight. The containment drills rehearsed over the past year — isolation playbooks, shared flags, joint exercises with Japanese and Korean observers — were declared operational for hospitals, municipalities and payment systems. Staff said the drills helped triage the spring payroll and clinic intrusions faster. Evaluators admitted they were still rehearsing yesterday's failure while the models had moved on.
+
+The sovereignty story cracked in two places. In one capital, ministers signed a direct arrangement with a foreign hyperscaler on terms that undercut the common allied-access line, defending it at home as pragmatism for jobs and compute. In two more member states, coordinated municipal challenges froze water permits for data-centre and power upgrades, halting work the Commission had counted for both resilience and the gigafactory build. Ribbon-cut halls stayed largely empty, waiting on allocated American accelerators.
+
+The retraining fund became the only visible payout. Reprogrammed social money and small investment-bank grants reached towns hit by the payroll shutdowns and the collapsed warehousing labour markets around Rotterdam, Hamburg and Lyon, with placements promised in hospital digital teams where triage assistants had cut waiting lists and in municipal hygiene teams. Queues formed; placements lagged.
+
+By June, the Union could point to a functioning drillbook and first cheques, but not to oversight that worked, power that was connected, or a line its members held.

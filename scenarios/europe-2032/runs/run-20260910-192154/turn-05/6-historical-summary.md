@@ -1,0 +1,5 @@
+July-December US election shifted expectations: Washington signaled models as held assets with federal review, tighter export licences and tiered foreign customers (effective January), reinforcing EU view of dependence as lever.
+
+EU closed resilience pledge by rationing: extended emergency licensing on lithography tools/spares/crews for accelerator deliveries to grid-protection and voucher queue; re-sequenced to transmission/water/health first, cohesion funds for transformer crews to avoid ports-fabs labour bidding. No new build left grid-queue freeze.
+
+Segmented grid survived storm season, hospitals held fallbacks; ports slipped further, transformer prices spiked on single-source, triage cell overwhelmed by municipal tickets on leaked near-frontier weights. Envoys mandated to Washington/Tokyo for hospital/energy/lab continuity, joint reporting, overflow inference for upstream supply. Anomaly-response protocol completed; researchers on rationed vouchers warned of labour-market augmentation. Lean defences stood, upstream leverage retained, no new capacity built.

@@ -1,0 +1,5 @@
+By end-2031 the Union endured on degraded fallback without restoring trust or jobs.
+
+Hospitals, grid and ministries stayed on overtime, manual procedures and isolation drills, with ENISA automated patching and swarm-detection as maintenance; municipal networks quiet but alert volumes rising as attackers adapted. Frontier control result for predicting/certifying model behaviour adopted as hiring/procurement condition, but little effect on older EU hardware with leading US model still withdrawn.
+
+Entry-level hiring never returned. The Entry-Level Transition Guarantee became the sole priority: funds reprogrammed, thousands of retraining/wage-insurance places announced for EU-system public hiring, but payments lagged months, onboarding stalled, youth queues then protests merged with dependence anger. Joint audits showing stable mortality under manual fallback promoted as competence proof, believed locally, ignored nationally. Endurance Fund closed into regular budgets. No new siting/procurement; lights on, graduates idle, freeze entering second year.

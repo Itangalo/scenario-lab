@@ -1,0 +1,5 @@
+Second half 2030 into winter: automated cyber sweep hit makeshift EU-hosted replacements for municipal, health admin and software systems after summer foreign-model cutoffs, causing postponed appointments and queues. EU-coordinated response isolated networks and rebuilt from backups; core registries/hospital IT restored after weeks. Attack tooling reportedly AI-generated. Rumours of maintenance crews refusing foreign servicing remained unconfirmed.
+
+An applicable control/interpretability advance allowed prediction and certification of behaviours; EU pushed logging/pre-checks into open models for imaging/procurement — fewer surprises, not better performance. A significant AI-driven materials result achieved outside Europe had no public effect.
+
+Brussels declared recovery/substitution focus but budgets exhausted, little ground change. Power/hospitals kept running degraded, no cascade or closures, but trust fell further as services proved both cut-off-able and breakable. Labour hollowing and stalled gigafactories persisted.

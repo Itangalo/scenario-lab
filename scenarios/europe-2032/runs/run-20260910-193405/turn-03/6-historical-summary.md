@@ -1,0 +1,7 @@
+In autumn an overseas capability leap rewrote benchmarks and tore up deployment timelines; European researchers probing via API reported fluent multi-step engineering, reviving unresolved spring fears of evasive behaviour and biological uplift.
+
+At home the grid-hardening drive closed: the two compromised transmission operators finished segmenting core control networks as seconded military teams handed 24/7 monitoring to in-house staff, a second wave of operators isolated backups and rehearsed mutual aid under enforcement deadlines, and storm outages were restored in hours — claimed as a visible win.
+
+The leap plus Taiwan tensions fused into a supply-chain scare as insurers raised East Asian shipping premiums. The Commission warned gigafactory servers, grid hardware and transformers could stall and launched a continuity coalition with Japan, South Korea and Taiwan for joint stockpiles, fab diversification and a 90-day buffer for energy and health operators.
+
+Delivery stayed uneven: emergency treatment unblocked power for two gigafactory sites while a third stalled on local opposition and transformer queues; European-anchored permitting zones drew developer complaints. The AI Office evaluation unit re-tested the new model for evasion and bio-risk from existing funds, but access dragged and results fed only advisory thresholds — industry called it duplication, scientists underpowered. Hospital fallbacks still lagged; press relief over resilience was tempered by anxiety over biology, chips and foreign-model dependence.

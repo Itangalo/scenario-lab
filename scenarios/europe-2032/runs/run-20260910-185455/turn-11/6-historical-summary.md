@@ -1,0 +1,5 @@
+Through 2030 Shield stalemate left Europe dependent on US frontier models/cloud and imported machines with strait closed; certified harnesses and EuroHPC queues reduced but did not solve dependence.
+
+Then US frontier access was cut off without reason: certified cancer-centre dosing/variant-tuning, ministries and logistics locked out. Brussels ordered substitution to older EuroHPC queues and stockpiled inference; care continued slower with rationing, US-cloud reversions became open failure.
+
+Simultaneously a frontier-class open release spread widely, erasing export-control edge, while a contested genome-model study warned non-experts could reach human-infecting designs; emergency screening added to continuity reserve. European triage kept waiting lists falling, offices kept productivity gains, but debate shifted to humiliation, logistics pickets revived, trust in AI care dipped. Gulf spare-capacity rumours too faint to plan on. Lithography mandate frozen, Japan/Korea hardware unmoved; Europe ran on older machines.

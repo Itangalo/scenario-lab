@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t5: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Municipal Continuity Reserve −2, EU Embodied-AI Site Rules and Manual Fallback −2, EU Bio-Uplift Detection and Medical Stockpile Shield −2, priority −1 = −13
+PROPOSAL BONUS: EU Bio-Uplift Detection and Medical Stockpile Shield (cat 6, small) +3 — bio_uplift_findings landed this turn plus opaque reasoning and RSI onset and this answers bio damage-limitation directly
+LEGITIMACY LENDS: capital 14, sentiment 24 -> +2
+SOVEREIGNTY: 16 last turn, no capacity build finishes, Gigafactories in flight +0, embodied_ai_deployment t5 −2, capability rose 7.0 −1 = 13

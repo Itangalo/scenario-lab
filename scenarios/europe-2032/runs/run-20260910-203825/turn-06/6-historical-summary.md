@@ -1,0 +1,7 @@
+Through late 2028 the EU defended trusted-buyer licences via re-export enforcement and Hague pooling under quarterly reviews and US audits; flow stayed slow amid Taiwan exercises and crisis insurance pricing, while gigafactories remained permitted but unfunded.
+
+After the October automated supply-chain ransomware cascade that paralysed municipalities, water and hospitals, and AI-driven white-collar hiring freezes that spurred protests and a November Transition Guarantee, a joint lithography pact closed the year.
+
+In spring, EU-US labs demonstrated speed-matched patching pipelines and swarm-behaviour detectors that stopped the October-type cascade. The Commission pushed a Patch-Speed Shield Upgrade through ENISA, tying upkeep funds to adoption in municipalities, water and hospital IT, with rapid kits and shared feeds. Deployment was uneven: large cities and water operators patched in hours, smaller municipalities struggled with integration and false positives, hospitals faced reboot disruptions; recovery improved but insurers kept crisis pricing.
+
+The sovereignty package and volume-licence assurance formally closed, preserving pooled US supply under audits, but gigafactory sites stayed unfunded as cash went to patching and the new anti-AI US administration offered no new compute. The Transition Guarantee began paying bridges and vouchers, easing protests slightly without lifting hiring freezes.

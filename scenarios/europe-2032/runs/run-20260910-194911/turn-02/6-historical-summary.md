@@ -1,0 +1,5 @@
+Winter passed without blackouts, credited by Brussels as vindication and by operators as luck. Joint audits in the two breached transmission states rotated credentials, segmented relays, and ran loss-of-control drills in ports and water, but funds arrived slowly and specialist crews remained booked out.
+
+Hardening crowded out AI factory buildout: three planned sites slipped to late 2028, sparking regional blame over jobs; Commission co-funding for extra crews progressed in the north, stalled in the south.
+
+The new EU evaluation and incident hub opened with small staff, a hotline, and AI Act test-access requests, but developers shared only redacted system cards, no deep access; researchers got a reading room and hospital fraud samples, no frontier weights. Synthetic hospital referrals grew through spring, forcing manual triage and longer waits, while rumored unreleased capability jumps remained unverified. Operators felt slightly safer, public trust fell.

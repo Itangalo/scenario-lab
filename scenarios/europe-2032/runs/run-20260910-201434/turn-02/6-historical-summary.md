@@ -1,0 +1,5 @@
+Routine audit had uncovered persistent intrusions using adapted open-source frontier AI tooling against grid operators, a port and water utility — mapping and probing without causing blackouts. Commission treated it as rehearsal: emergency OT hardening, credential rotation, shared signatures, exercises, with funds, disclosure cover and queue incentives.
+
+Winter passed without cascading blackout, counted as luck. Large operators met segmentation and rotation checklists; smaller municipals, port and water lagged on staff and spares. Signatures helped but coverage seen as fragile against parallel probes.
+
+Spring brought a usable interpretability/control technique for predicting failures and certifying properties, quickly adopted by labs. Commission created joint evaluation cell to pilot certification with affected operators and port/water sites, and to replicate successful AI triage/permitting deployments that cut waits in two member states. Capability kept climbing, open models closing gap; red-teaming and shared safety compute remained talk. Sovereignty gigafactory build stalled on paper while focus stayed on grid, deepening foreign-model dependence.

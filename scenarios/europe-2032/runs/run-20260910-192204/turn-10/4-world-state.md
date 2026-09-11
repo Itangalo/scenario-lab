@@ -1,0 +1,10 @@
+### Cheques landed, concrete did not
+The two programmes Brussels had been paying for finally paid out on paper. Wage insurance completed its rollout to a second cohort through national payroll channels, and health agencies signed the first wastewater nodes and stockpile contracts for the bio early-warning network. In town halls, the first was acknowledged; the second was barely visible beyond procurement notices and a few new sampling cabinets at treatment plants.
+
+The political centre of the half-year was the fenced plots. Prefects and mayors in the three blocking states opened site-by-site tables under Council mediation, with contractors, farmer groups and graduate pickets invited in. The offer — reserved apprenticeships linked to the wage-insurance rolls, rebates on power prices around the substations, a share of lease revenue held by the municipality — was real enough to keep talks alive through spring.
+
+It was not enough to restart building. At two gigafactory shells, pickets allowed surveyors in but not cranes; at a data-centre substation, a municipal council voted the benefit share insufficient and asked for renegotiation. Contractors kept skeleton guards, concrete kept weathering, and civil protection stayed on site-guard rather than clearance. Local press treated the compact as a negotiation, not a reopening.
+
+Elsewhere the line held but did not advance. Hospital triage automation stayed frozen, no new domestic compute broke ground, and the cut-price bilateral cloud contract in the large member state stayed contained without being unwound. Joint cyber feeds gave the now-familiar pattern: early warning, late sensors, faster paper-kit restoration where drills had been done.
+
+Rumours swirled around the new health nodes — leaflets warning of permanent sampling, a single-sourced report of a false alarm forcing a neighbourhood notice before a negative retest — but neither forced a suspension. By June, Brussels could claim two completions and a dialogue started, while mayors counted still-empty sites and unchanged entry-job queues.

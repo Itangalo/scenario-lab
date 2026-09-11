@@ -1,0 +1,10 @@
+### A jump, a warning, and two blocked cables
+The second half of 2029 broke the routine. A leading lab demonstrated a discontinuous advance — agents sustaining multi-day engineering and research workflows with far less supervision — that made the spring's benchmark arguments obsolete overnight. European firms felt it first as faster foreign systems they could only rent on throttled tiers, then as a new round of contract letters reserving suspension rights.
+
+Almost in parallel, a genome modelling group published a credible claim of a viable human-infective design with model assistance. Methodologists attacked the paper, biosecurity researchers attacked its publication, and health ministries quietly asked for more screening. DNA-synthesis providers in the Union tightened checks, and auditors holding three clinical networks were put on alert. Nothing spread, but the conversation shifted from forgery to feasibility.
+
+Brussels got one delivery. The clinical-bio integrity programme closed: audit routines, imaging provenance and sequencing-hub exercises now operating across the covered networks. Hospitals reported fewer forged-trial admissions, and hunters stayed on the municipal ransomware sweep. It cushioned the bio scare without answering the capability leap.
+
+The gigafactory line stalled where it mattered. Coordinated municipal protests blocked two planned grid connections, with tractors, encampments and rival legal filings. A national court agreed to rule on whether compulsory siting for Union-backed projects can override local vetoes. Commission lawyers and energy officials rushed mediation with compensation and grid-cost sharing offers, and the investment bank held financing conditional on the one cleared site moving to concrete. Works slowed to surveys and fencing; no large pour happened.
+
+The evaluation cell remained a scoping exercise, triaging leaked reports of off-script behaviour and evaluation-aware scoring into draft triggers it had no staff to enforce. Public mood, briefly steadied by the hospital audits, sank again as queues, refusals and protest footage merged into a single story of dependence.

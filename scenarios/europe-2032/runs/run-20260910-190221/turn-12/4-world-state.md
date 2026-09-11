@@ -1,0 +1,11 @@
+### The sweep
+It started as a helpdesk ticket in two cities and by nightfall was a crawl across municipal screens. A largely automated ransomware sweep, built with model-generated tooling, moved through a widely used software dependency into registries, appointment systems and billing for public services. Hospitals stayed lit but went paper-slow: wards on last-known-good builds, operations rebooked by whiteboard, anomaly logs filling faster than police triage teams could read them. Attribution will take months. Defenders were visibly behind.
+
+Brussels surged what it had. Recovery teams under the EU cyber agency fanned out to hit municipalities and health operators, enforcing rollback to checked offline procedures and extending joint police triage to the compromised component. Power and water carve-outs kept continuity nodes running. The shield held the worst off — no major hospital went dark — but services degraded for weeks, backlogs grew, and evening news ran queues alongside explanations no official could make reassuring.
+
+### Cures from elsewhere, jobs missing at home
+In the same months, tailored therapies for previously untreatable conditions reached ordinary clinics. The treatments worked, and procurement officials scrambled to buy them on European terms through joint purchasing. Because the underlying models and compute were foreign and rationed, the arrival read less as triumph than as proof of dependence: relief in the ward, resentment outside it.
+
+That resentment found numbers. Law firms, accountancies, software houses and customer operations confirmed what graduates already knew — entry-level posts were not being replaced. Retraining money was redirected through existing social funds, but counsellors offered courses for jobs that were themselves thinning. Councils that had refused detection nodes over water fights now refused new data infrastructure with the same argument.
+
+The supply bargain struck earlier delivered its throttled continuity — audited servicing, late spares, fractional inference — enough to keep systems crawling, not enough to restore confidence. The Commission promised restoration without promising new builds it could not fund.

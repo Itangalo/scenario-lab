@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: M12 EU Loss-of-Control Containment and Critical Systems Isolation Protocol −2, M13 EU Wartime Continuity and Allied Shield Accession −2, priority no effect/cost (capital below 20) = −4
+PROPOSAL BONUS: EU Wartime Continuity and Allied Shield Accession (cat 6, small) +5 — catastrophic_great_power_conflict + joint_threat_response landed this turn and this answers them directly, with medical_breakthrough and bio precursor as second arguments
+LEGITIMACY LENDS: capital 21, sentiment 16 -> none (capital higher)
+SOVEREIGNTY: 15 last turn, no cat4 finish, no cat4 in flight +0, catastrophic_great_power_conflict t11 −3 (largest capacity-takeaway, fabs/cables/datacentres targeted), capability rose 1.5 −0 = 12

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: M13 EU Wartime Continuity Shield −2, M14 EU Middle-Power Leverage Activation −2, priority −1 = −5
+PROPOSAL BONUS: EU Middle-Power Leverage Activation (cat 8, small) +2 — supply_chain_coercion plus loss-of-control incident both fired this turn and this answers both directly, small size limits gain
+LEGITIMACY LENDS: capital 12, sentiment 10 -> none, capital higher
+SOVEREIGNTY: 11 last turn, no capacity finish, no cat4 in flight +0, middle_power_coalition t12 +2 (largest of coercion takeaway vs coalition secure, coalition secures usable spares access), capability rose 3.0 −1 = 12 -> adjusted to 7 where coercion reach dominates spares gain, net −4 = 7

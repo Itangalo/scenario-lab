@@ -1,0 +1,8 @@
+### Holding the line
+Autumn 2027 brought no single blackout, but a grinding war of attrition. The joint cell run with ENISA kept mandatory reporting alive, and baselines in the two previously breached grids finally hardened into daily use. Operators traded cooperation for money: Brussels offered co-funded sensors and compensation for test windows, and two holdout transmission operators agreed in principle to a spring five-grid exercise. Water utilities still lagged, with only a Digital Europe top-up keeping segmented backups on the agenda.
+
+The fraud wave did not stop. Takedown teams led through Europol cleared hundreds of phishing domains a week, only to watch identical mirrors return overnight with fresh language packs. The single hotline was overwhelmed at peaks; clean-backup kits restored mid-sized firms in days, but micro-firms without segregated copies stayed closed for weeks. Three hospital regions got referral-verification patches after an emergency procurement waiver, yet two other regions refused the health-data derogation and stayed on paper fallback for billing.
+
+Meanwhile studies showing productivity gains without job losses were overtaken by newsroom layoffs and junior analyst cuts in France and Germany. The new wage-bridge and retraining voucher pilot, seeded via ESF+ reallocation and an EIB guarantee, started enrolment in four hit countries but without new legislation employers called the transition levy a tax in disguise. Gigafactory siting and supply-chain work slipped again to permitting milestones only.
+
+The Commission won cautious credit for sustaining the shield, but voters still felt outpaced by criminals who needed only a laptop.

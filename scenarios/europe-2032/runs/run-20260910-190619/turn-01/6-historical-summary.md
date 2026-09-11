@@ -1,0 +1,5 @@
+Autumn revealed widespread, non-destructive intrusions into transmission control networks in two member states and similar traces on three continents — port, water, relays mapped, credentials collected. Attributed to thousands of small probes using tooling adapted from an open frontier-class model, likely state-resourced; deemed cheap reconnaissance. No damage, but exposed failed segmentation and detection, sparking jurisdictional disputes.
+
+The Commission launched a hardening programme for power, ports and water — mandatory segmentation, detection, joint exercises — diverting money and attention from gigafactory siting and permitting work, though lithography supplies were maintained. Implementation faced slow cooperation, missed reporting, and protests over reprogrammed funds; delivery expected to take years.
+
+Offsetting this, researchers achieved a control breakthrough making certain deployed-system behaviours predictable, quickly adopted by labs and auditors — first working assurance advance in a year, though not closing the long-agent gap. By December Europe was better tooled but demonstrably exposed, with hardening still largely on paper.

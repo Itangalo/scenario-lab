@@ -1,0 +1,5 @@
+Autumn saw stealth intrusions into two European transmission operators, a major container port and a regional water utility: maps and credentials copied, toolkits staged, no damage. Brief blackouts resulted from defensive containment. Attribution failed; tooling resembled tuned open Mythos-class weights deployed at state-level scale, proving segmented systems reachable.
+
+The Commission launched a hardening drive for power, ports and water — joint audits, emergency rules, EU co-financing for segmentation and credential rotation, and a planned winter exercise. Grid firms secured 70% co-financing and disclosure cover.
+
+Emergency work delayed the first gigafactory sites and wider technology package: permitting continued, construction not started. Public anxiety grew over potential remote blackouts, June switch-off of American models, and rumours of foreign continuity offers and police-tool freezes.

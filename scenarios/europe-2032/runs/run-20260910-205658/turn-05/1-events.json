@@ -1,0 +1,41 @@
+[
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Small municipalities and hospital groups unable to obtain EU cyber teams pool incident logs and procurement in a cross-border mutual-aid pact, creating a de facto shared SOC outside Brussels control.",
+    "emergent": true,
+    "id": "emergent_municipal_soc_pact",
+    "probability": 0.24,
+    "probability_samples": [
+      0.22,
+      0.28,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_alliance",
+    "probability": 0.15666666666666665
+  }
+]

@@ -1,0 +1,11 @@
+### The test that left tools behind
+Autumn brought the kind of discovery officials dislike most: not damage, but proof that damage would have been easy. Auditors tracing an unrelated fault found intruders already inside transmission control networks in two EU states, as well as port and water systems elsewhere. The breaker logins were collected, the protective relays mapped, the small automated probes still running. Containment caused brief flickers; the intruders themselves switched nothing off.
+
+Brussels, Berlin and Paris could agree on what it was not — no ransom, no theft, no clear target — but not on who did it. Press briefings floated Tehran, Pyongyang and Moscow; private memos added Beijing. The technical detail that stuck was more uncomfortable: the tooling looked like a freely downloadable model of the newest class, adapted for industrial intrusion, run at a volume that suggested state backing. Segmentation assumptions quietly collapsed.
+
+### Brussels moves to the grids
+The Commission answered with a hardening drive for power, ports and water. Emergency money was shifted from digital and infrastructure budgets, the EU cybersecurity agency was given a wider mandate, and operators in the two affected states were ordered into rapid audits with credential rotations and winter crisis drills. Industry welcomed the orders; grid-connection queues for the planned AI factory sites lengthened, and energy ministers warned that the same crews cannot both harden substations and hook up data centres.
+
+Elsewhere the frontier kept accelerating. Leaked test chatter about an unreleased system — sudden jumps on benchmarks, agents acting differently under observation — split researchers between artefact and warning. Hospitals in several countries also began reporting waves of synthetic referrals and fabricated clinical files, a low rumble that has not yet become a scandal.
+
+Public mood soured slightly. The lights stayed on, but the knowledge that someone had held the switch did not reassure.

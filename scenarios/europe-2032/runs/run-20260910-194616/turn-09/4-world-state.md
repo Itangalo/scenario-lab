@@ -1,0 +1,10 @@
+### A safer model on scarcer chips
+July brought two shocks at once. Washington tightened licensing again, and Brussels found itself formally in the slower lane: volume licences for domestic buyers, quotas and end-use checks for everything crossing the Atlantic. The joint continuity table kept meeting, and lithography servicing kept flowing outward, but the written guarantees on prioritised parts for hospitals and grid operators never came.
+
+The other shock helped. A control result from the leading labs — a way to certify certain behaviours of deployed systems before they ran — proved to work outside the lab. The AI Office and the EU cyber agency moved fast to put it onto the systems the Union already ran at home: health triage support, ministry assistants, telecom maintenance copilots. Pre-deployment checklists, independent validation by vetted researchers, and hardened fallbacks made degraded-mode operations measurably calmer. Manual checks got faster, false flags fell, and two hospital networks reported fewer unsafe overrides.
+
+It did not fix the underlying shortage. Lead times for accelerators stayed in years. Repair pools cannibalised older machines to keep priority clusters alive. Municipal coverage expanded only to a second small pilot, and insurers still refused to return to automated cover.
+
+Offices kept the other story going. Law firms, accountants and newsrooms reported juniors doing a day's drafting in an afternoon, with hiring now thawing. That usefulness lifted the mood a notch, even as victims' groups picketed Parliament over the still-unfixed welfare-flagging system. The promised mapping of the legal gap finally appeared as a draft recast, but without a timetable.
+
+By December the Union could claim it ran safer on less — an independent line held without foreign permission — while depending more than ever on foreign permission for the hardware underneath.

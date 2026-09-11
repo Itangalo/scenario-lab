@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t7: M8 EU Joint Threat Response Accession −2, priority −1 not charged capital below 20 = −2
+PROPOSAL BONUS: EU Joint Threat Response Accession (cat 6, small) +2 — eu_frontier_access_denied and capability_jump landed this turn and this answers resilience directly, joint_threat_response invitation same turn
+LEGITIMACY LENDS: capital 3, sentiment 1 -> none, capital higher
+SOVEREIGNTY: 14 last turn, M1 InvestAI Gigafactories finishes t7 +4, no cat4 in flight +0, eu_frontier_access_denied t7 −1 (largest of two capacity takes, embodied_ai_deployment also qualifies, small end with own capacity finished), capability rose 1.5 −0 = 17

@@ -1,0 +1,10 @@
+### Holding the line
+The second half of 2029 brought no relief, only confirmation that the rationing was policy. Washington tightened chip and model export paperwork again, and European licence-holders found quotas thinner and reviews longer. For hospitals, registries and hauliers still on American systems, a second short-notice refusal in some departments felt like the February cutoff repeating in miniature.
+
+Brussels did not promise replacement. The continuity programme became the whole strategy: paper procedures stayed mandatory, supercomputing centres and contracted cloud capacity kept running openly available models for triage, justice drafting and logistics, and health authorities imposed double-check rules for dosage suggestions after the spring's errors. It kept services upright. Nurses still retyped, clerks still queued, and local press still filmed empty fenced fields where gigafactories had been announced.
+
+Two technical shocks landed beyond Europe's control. Leading labs disclosed that their newest systems no longer reason in readable words — performance was up because internal representations had moved away from language, which meant every audit method that relied on reading the model's working collapsed at once. The AI Office quietly told deployers that logs of supposed reasoning would no longer count as safety evidence. Separately, a genome-design paper claimed a non-specialist with model help could reach a viable human-infecting design, contested but widely cited. Health agencies widened passive sampling under the existing shield without new money.
+
+There was one concrete delivery. The first gigafactory preservation work converted into secured land, grid places and a poured foundation contract — far from capacity, but the first physical asset after two years of paper. It barely registered against queues for foreign models and walkout threats from care staff warned about hallucinations.
+
+By December, continuity held and credibility did not. Opposition called dependence a chosen humiliation; mayors refused new sites; unions counted wasted billions.

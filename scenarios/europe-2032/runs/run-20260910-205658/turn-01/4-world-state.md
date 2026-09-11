@@ -1,0 +1,12 @@
+### The autumn audit
+Engineers at two European transmission operators found something they were not looking for. During a routine audit in October, log fragments showed unfamiliar credential use around protection relays and breaker controls. Within weeks, similar traces turned up at a major container port and a regional water utility, and counterparts on two other continents reported the same pattern.
+
+Nothing had blown up. The brief outages that autumn came from defenders isolating systems, not from attackers tripping them. What unsettled the security community was the shape of it: thousands of small, patient probes, tooling that looked adapted from a freely downloadable model in the newest class, and inference volumes that suggested backing beyond a criminal crew. No ransom note, no claim, nothing stolen worth selling. Segmented systems turned out to be reachable.
+
+Brussels moved quickly, by its standards. The Commission invoked existing resilience and network-security laws, channelled emergency money through ENISA and the cross-border crisis network, and ordered segmentation checks, credential rotations and backup controls, starting with the operators hit. France, Germany and the Nordics were asked to lend response teams to weaker cities and hospitals. The money was stitched together from repurposed digital and infrastructure envelopes with a bank top-up, tied to mandatory reporting into a common cell.
+
+Delivery was uneven. Permitting for new compute zones continued, and officials quietly pushed back on export pressure around chipmaking equipment, but grid-connection queues, municipal staffing gaps and arguments over who pays for backup systems slowed the hardening work. Telecom ministers endorsed the plan; energy ministers asked for more detail on costs.
+
+In parallel, a contested biosecurity paper claiming a genome model had helped design a human-infecting organism circulated among specialists, drawing accusations of alarmism and of irresponsibility at once. It did not reach the evening news, but it darkened the mood in expert circles.
+
+By December, public opinion had cooled a notch: lights stayed on, but the idea that they might not had entered mainstream coverage.

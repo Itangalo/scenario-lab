@@ -1,0 +1,5 @@
+Autumn 2028 bioweapon release using model-assisted design caused casualties and weeks of containment; sequencing in five drilled states was overwhelmed, HERA/ECDC slow, forensics lagged. Crisis unified capitals: emergency funds for surge hiring, pilot networks staffed hotlines/clinics, and the long-open network-management backdoor was finally closed.
+
+November US election brought president promising AI as strategic asset with federal review and country-tier rationing; licences unchanged but Brussels stopped calling volume licences a win and gamed US-decided supply.
+
+Energy choke persisted: data-centre connections paused, AI-factory permits stalled by suits/protests; Commission offered mayors restoration priority for future unblocking rather than forcing. Public-service AI remained popular but now linked to questions over model-enabled pathogen and autonomy dependent on US compute.

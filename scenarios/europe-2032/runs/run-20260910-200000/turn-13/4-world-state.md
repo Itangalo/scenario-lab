@@ -1,0 +1,10 @@
+### Counters open, reasoning closed
+The second half of 2032 gave Brussels exactly what it said it wanted — no new promises — and then took away the oversight tools it had relied on to keep old ones.
+
+In the autumn the leading labs shifted to models whose internal steps no longer read as language. Vendors presented it as a performance gain. For auditors, regulators and works councils it landed as a blackout: review floors, log checks and conformity files built around readable traces stopped working at once. The Commission's suspensions and joint audits in the benefits-scoring affair suddenly looked dated, and opposition press called them doubly hollow. Alternative checks — output testing and painstaking inspection of internal activations — were slower, costlier and unconvincing to a public already sceptical.
+
+At the same time the labour story flattened. Studies from law firms, accountancies, newsrooms and consultancies showed solid productivity gains, strongest for juniors, with no matching wave of layoffs. For those in work it was reassuring. For graduates occupying faculty buildings in Paris, Madrid and Warsaw it was an answer they had not asked for: the tools were useful, finished, and not opening new posts. Ministers held the line — extended wage-insurance windows, published placement tables showing hundreds filled against thousands advertised, no hiring quotas, no new levy — and two occupations wound down while others dug in.
+
+Externally the technical track moved. ENISA kept building the segregated telemetry gateway, EU analysts took desks inside the allied joint command, and finance, telecom and municipal links built in earlier years were connected. Allies praised the engineering but kept the most sensitive feeds conditional until segregation was proven in operation.
+
+By December, protection was closer, legibility further away. Redress desks paid a little faster, counters stayed open, and trust rebuilt only at the margins.

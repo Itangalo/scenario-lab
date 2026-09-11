@@ -1,0 +1,11 @@
+### The notification that notified no one
+Brussels spent the spring trying to turn the supply compact into a hold on cohesion. The Competitiveness Council passed a notification-and-preference decision: large cloud and chip deals to be filed with the Commission, a 30-day window for a European joint offer built from existing industry funds, digital infrastructure reflows and faster permits. No new money, only matching access and siting.
+
+The capital that had cut its own preferential deal did not file. Ministers at home called the arrangement secured supply and a national success; lawyers in Brussels argued about legal base and enforcement and lost. Quiet offers — fast-lane establishment for the provider inside EU jurisdiction, hints about servicing and export alignment held in reserve — produced polite meetings and no compliance. The joint offer, without cash or concrete behind it, looked to operators like a right to be consulted.
+
+The gigafactory sites stayed warm and empty. Permits extended, grid reservations paid to be kept, procurement still frozen for lack of private co-financing. Around two of the paused sites and two planned data centres, coordinated protests blocked survey work and power hookups for days at a time. Local papers talked of a moratorium; mayors asked why they should host what no one would fund.
+
+### Drills become obligations
+The one delivery was containment. Energy, port and hospital operators saw autumn isolation drills written into binding segmentation, credential-reset and manual-fallback requirements under existing security laws. The reporting channel for misbehaving agents moved from part-time triage to a small staffed cell. Reports rose, false alarms still dominated, but two real cases were isolated faster than the year before.
+
+It was not enough to change the mood. With a third government openly going its own way, commentary presented the Union as unable to hold its line on compute. Approval of joint action sagged further, and in capitals the question shifted from what Brussels would build to whether it could oblige anyone at all.

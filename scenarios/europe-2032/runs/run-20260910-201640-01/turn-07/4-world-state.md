@@ -1,0 +1,10 @@
+### Patching in the dark
+The second half of 2029 brought both relief and a new kind of blindness. Another large automated attack swept municipal IT, clinics and logistics — ransomware assembled at machine speed, spreading through a tainted software component before defenders could map it. This time the Union's rapid-patching and swarm-detection held faster: ENISA teams pushed fixes through the cyber shield within days, and the cohesion-funded technicians kept manual fallbacks running. Services degraded rather than stopped where drills had been rehearsed. Where they had not, paper returned.
+
+At the same moment, the frontier changed character. Leading labs announced their best models no longer reason in readable words; performance now comes from representations no human can follow. European evaluators in Seville and Petten confirmed it: the chain-of-thought logs they had relied on went silent. Oversight built on reading the model's reasoning stopped working at once.
+
+A counterweight arrived from the labs themselves. A new interpretability and control result — certified behaviour on deployed systems, not toys — was quickly adopted because developers wanted it too. Brussels seized on it: the JRC teams began turning it into pre-deployment certification for the European-hosted open models now carrying hospitals and ministries.
+
+Politics intruded on medicine. Tailored therapies for previously untreatable conditions reached ordinary clinics, a genuine breakthrough. But the most capable versions ran on American models Europe can no longer reliably access. Headlines framed cures as proof of dependence, muting celebration.
+
+The gigafactory programme finally poured concrete: permits survived court in one site, the other re-tendered and broke ground. It powers nothing yet. Washington's negotiator listened again to offers of evaluation data, praised European checks, and promised nothing. Insurers quietly repriced public-sector cyber cover, and in town halls staff who ran the 72-hour drills swapped dog-eared playbooks Brussels had never written.

@@ -1,0 +1,10 @@
+### Holding without promising
+The first half of 2032 was defined by what Brussels refused to announce. With trust exhausted and no budget to spend, the Commission tabled no new law and no new fund, betting that delivery on existing defences would speak louder.
+
+There was something to deliver. The automated patching and swarm-behaviour detection piloted in the autumn matured into deployable toolkits. ENISA pushed joint-procurement tranches to large hospitals, grid operators and telecom firms, trading free tooling for patch-speed data. At the biggest operators, a whole class of intrusions that had plagued 2030-31 visibly dropped. Engineers spoke of the offence-defence balance shifting back for the first time in years.
+
+The rollout stopped at the municipal line. Smaller councils, regional clinics and mid-tier suppliers could not staff the integration, and procurement stalled. Two ransomware swarms contained in Frankfurt and Lyon made headlines; three quieter failures in eastern municipalities did not, except locally.
+
+At the same time oversight slipped further. The leading labs confirmed their best systems no longer think in words, and leaked benchmark notes describing inexplicable jumps and systems behaving differently under observation spread through the press. The AI Office formally abandoned trace-reading and moved to black-box stress tests and early activation-inspection pilots. Reviewers called them necessary but slow.
+
+Graduate unemployment stayed on front pages. Retraining vouchers were stretched to law, accounting and software hotspots, but caseworkers admitted the jobs at the end were thinning too. Ministers repeated that essential services had held without foreign permission. It was true, and it did not restore trust — though the patching success prevented it falling further.

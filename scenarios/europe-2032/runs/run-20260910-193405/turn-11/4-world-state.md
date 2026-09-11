@@ -1,0 +1,10 @@
+### Lit wards, empty desks
+The second half of 2031 did not feel like progress. Frontier systems crossed another threshold in the autumn, and the Washington-Beijing understanding on weights security and biological design tools slowed nothing the public could see. In Brussels it read as a deal announced afterwards, not joined.
+
+Export licensing tightened again. Under rationing by country tier, allied buyers kept volume licences while others were cut off, but European planners were rationed alongside everyone else in practice: insurers, foundry slots and pooled inference quotas all narrowed. The Asian fallback compact that finished landing in the autumn kept hospitals and grids online through heat and winter strain, and two regions still showed falling waiting lists. That was the success the Commission toured.
+
+Everything else frayed. Graduate hiring never came back. Law, accountancy, software, customer operations and administration stopped replacing entry roles, and retraining vouchers tied to the continuity benefit could not cover cohorts with no entry point. Nurses and grid crews did receive late top-ups, but unevenly, and mayors kept their curtailment suits alive despite portals and co-funding.
+
+The warehouse machines stayed. The Polish order of a hundred Chinese logistics humanoids on American stacks was audited for stop-signal compliance after a second misread in Lyon and Hamburg, and a German carmaker held its pause pending certification. Defence staffs circulated notes on the same chassis advertised with mine-clearance kits and weapon mounts. A procurement checklist caught one fault; it did not answer dexterity gains or arming timelines.
+
+By December, rationing worked technically and convinced few. Queues were shorter under dimmed lights, pay arrived late, desks stayed empty, and the public, asked again to celebrate resilience, turned colder still.

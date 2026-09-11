@@ -1,0 +1,5 @@
+Second half of 2032 saw a wave of AI-written intrusions hit municipal networks, hospital IT and telecoms: ransomware locked registries in two countries, a poisoned component triggered an ENISA hunt, mobile service fell to rationed pools. Hospitals in rationed states ran on paper playbooks/manual dispatch, waiting lists rebuilt; attribution unresolved.
+
+No new EU measure, priority or budget adopted — only reallocated emergency funds and existing ENISA resources; restoration talks with Japan, Korea and others over clean images, spares and teams stalled over contributions and sequencing, no standing multinational structure activated, no large-scale deliveries. Empty gigafactory shells and no new accelerators left restoration dependent on cleaning/reimaging scarce hardware. Single licensing line held despite rationing resentment.
+
+US AI-designed complex subsystem breakthrough recorded as foreign science with no near-term European use. AI investment stayed withdrawn, graduate hiring frozen, grid protests hardened, wage-insurance slow; drills prevented cascade but trust thinned, AI seen as attack tool and rationing agent.

@@ -1,0 +1,5 @@
+February brought US frontier cut-off: leading American model returned refusals to hospitals, ministries and industry with no appeal, forcing Rotterdam/Milan therapy pauses. Brussels read tiering as denial; Washington cited load management after brownouts forced data-centre rationing.
+
+Capital fled compute: valuations reset, two private gigafactory-periphery promises cancelled, shells continued only as public assets. Frontier labs disclosed loss of human-readable reasoning, breaking chain-of-thought oversight; contested genome-model uplift paper heightened biosecurity alarm. Routine tailored immune therapies provided brief lift but relied on withdrawn models.
+
+Union held to degradation: ENISA/health teams inventoried dependencies, pushed EU-hosted/open replacements, drilled manual fallbacks, held patch cycles at hours. Siting compact closed with Flanders/Lombardy unblocked via revenue shares and closed-loop cooling, Bavaria still holding out amid blockades/vandalism; concrete existed but machines not yet running.

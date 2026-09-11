@@ -1,0 +1,10 @@
+### Orders on paper, wires unchanged
+January brought binding segmentation orders from the energy and cybersecurity agencies. On paper, transmission operators had eighteen months to isolate protection relays, log breaker access, and join regional operations centres. In practice, the first 40 upgrades funded through reprogrammed infrastructure money moved slowly. Two operators signed quickly; others haggled over who paid for downtime, and interior ministries demanded liability waivers before sharing incident feeds.
+
+The Shield stayed the main spend, and that choice bit elsewhere. Site selection for the first large AI factories advanced to two shortlisted locations with grid reservations, but permitting work and construction funds stalled. University rectors and telecom lobbies protested diverted research grants in Brussels and Paris. Quiet talks kept advanced chip-making equipment flowing, deliberately kept low to avoid a transatlantic export fight while budgets were tied up.
+
+The new joint lab-auditor unit housed at the research centre began work turning the recent control result into test harnesses for grid AI. Seconded staff produced draft checks by spring, but operators said the tools covered only narrow behaviours and did not yet help with longer-running agents. Auditors called it promising plumbing, not protection.
+
+Meanwhile capability kept moving. Frontier assistants handled longer software tasks with less supervision, and openly downloadable models closed much of the gap, spreading the same cheap probing toolkits seen in the autumn. No new break-in was disclosed, but regulators admitted detection still depended on luck, and press coverage of job losses and fraud kept public mood ambivalent — widely using AI, widely wary of it.
+
+By June, Europe had orders issued, checks drafted, and factories waiting.

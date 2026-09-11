@@ -1,0 +1,15 @@
+### Rationing takes office
+In January the new American administration took office and moved quickly to treat frontier systems as a national asset. No country list was published, but federal review of large deployments, tighter licence language for exports of weights and tooling, and briefings about tiered access for allies were enough. In Brussels procurement officers heard the same phrase from vendors: availability subject to review.
+
+Hospitals felt it first. Two imaging and triage suites running on American models saw throttled updates and delayed contract renewals. Grid operators were told fallback inference would stay, frontier fine-tuning would wait. The permits for the Union's own gigafactories remained stuck over water and land claims, bridging power extended but building not started.
+
+### A recipe debate, a treatment arrival
+In March a genome-model paper claimed a viable design path to a human-infecting organism, with logs suggesting a non-expert assisted by the model could approach it. Authors were accused of alarmism and of publishing too much at once. The argument stayed inside biosecurity journals, but the Union's new screening net was suddenly relevant. Large synthesis providers were already screening; small labs complained of cost and were offered supported compliance tied to joint procurement. Sentinel and wastewater sampling widened without finding anything.
+
+Open-weight diffusion continued on its prior path, with published weights and tooling catching up toward last year's frontier level as routine replication and fine-tuning spread. No leak or coordinated release drove the step.
+
+At the same time tailored therapies reached ordinary clinics — early cancer and rare-disease treatments that cut waiting lists in oncology wards. Cameras loved the recoveries. Editors noted the models behind them ran elsewhere.
+
+Brussels answered with what it could afford. The technology funding package formally closed, releasing permitting audits and community offers but no new concrete. The bio screening net was declared operational. A small continuity inventory was started on paper within existing mandates: ENISA with health and energy coordinators inventorying American-model dependencies and drafting paper playbooks for hospitals, grids and water, with no new measure proposed and no new funding authorized.
+
+Contracting Union-hosted fallback models on shared supercomputing, funding spares and exercised switchovers was deferred — no new funding source was authorized this turn, and member states argued over who would pay for standby. Fallbacks discussed were older and slower, manuals were missing and handovers untested. A limited blackout tabletop in two regions ran without the American layer — badly, with a second run planned once funding is secured. Sovereignty slipped as dependence was inventoried, while modest public goodwill from therapies lent limited support to political capital.

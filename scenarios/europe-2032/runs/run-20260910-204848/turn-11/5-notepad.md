@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Municipal Repair and Displacement Bridge −2, priority −0 (capital below 20, no effect/no cost) = −2
+PROPOSAL BONUS: EU Municipal Repair and Displacement Bridge (cat 7, small) +2 — answers autumn ransomware sweep and logistics-robot displacement wave directly, small size and capital 5 limit lift
+LEGITIMACY LENDS: capital 5, sentiment 10 -> +1 capped by sentiment, already accounted in capital total
+SOVEREIGNTY: 17 last turn, no cat4 finish, no cat4 in flight +0, middle_power_coalition t11 +2 (largest capacity event, no other listed capacity event fires), capability rose 1.0 −0 = 19

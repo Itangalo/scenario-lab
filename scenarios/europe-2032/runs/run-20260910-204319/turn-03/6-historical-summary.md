@@ -1,0 +1,7 @@
+Autumn brought a second large machine-built ransomware assault via clinics, municipal systems and logistics, again hitting grid and ports. Spring-ordered segmentation was now closed in transmission and the major port, EU swarm-detection caught lateral movement early, and services flickered rather than collapsed — but with public costs: ransom screens, postponed operations, queues. Attribution remained contradictory.
+
+Brussels used the shock to break resistance: telecoms and finance accepted a co-financed compromise to share telemetry with joint operations centres / invited joint cyber command, with real-time outside-partner sharing claimed as proof hardening worked.
+
+Chip/model export tightening left EU buyers rationed on volume licences with higher prices and delays, raising gigafactory timeline doubts amid Taiwan manoeuvres and shipping insurance fears. Dependency inventories crept forward, interpretability certification entered fallback procurement, but migration to the EU Controllable Core for clinical/control-room workloads stayed slow and clinicians still saw EU substitutes lagging US models.
+
+Ordinary offices reported measurable AI productivity gains, strongest for juniors, with no job losses and quiet rehiring after early cuts, steadying mood despite frozen care. No new instrument launched; work continued under existing portfolio prioritising the Controllable Core.

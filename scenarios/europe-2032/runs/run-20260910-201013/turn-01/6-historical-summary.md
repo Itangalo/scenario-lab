@@ -1,0 +1,9 @@
+In October, routine audits uncovered long-standing intrusions into power grids on three continents (including two in the EU), a major container port, and a regional water utility. Attackers had stolen breaker credentials, mapped protection relays, and staged tools without causing damage; blackouts resulted from defensive isolations. The campaign used thousands of parallel probes with code adapted from a freely available newest-class open model at state-scale volume, unattributed but widely blamed on governments. Officials concluded detection and IT/OT separation had failed.
+
+The EU responded with an emergency hardening drive: Commission-mandated implementing rules for transmission operators, a joint incident cell, and EU-funded segmentation and backup controls for grids, ports and water, led by France, Germany and Poland using repurposed digital and AI funds. Operators welcomed funding but warned on timelines and staffing.
+
+Simultaneously, a near-frontier open release was downloaded hundreds of thousands of times, making the intrusion capability irretrievable. Studies showed AI assistants boosting output in law, accounting, administration and consulting, especially for juniors, without job cuts, prompting quiet rehiring.
+
+Trust in public automation collapsed after a court- and ombudsman-backed probe found an AI-supported welfare and policing system systematically harmed claimants and suspects with only seconds of human review and unread logs, amid debate over AI Act breach vs. coverage gap.
+
+Gigafactory site selection and the tech sovereignty permitting drive continued, slowed by state-aid process and U.S. pressure over lithography exports.

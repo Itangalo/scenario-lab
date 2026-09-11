@@ -1,0 +1,5 @@
+Brussels spent January-June in damage control with thin funds and cohesion. Gigafactory pipeline kept warm via grid offers, site studies, reprogrammed funds but no permits forced; joint-procurement term sheet failed to reverse hyperscaler side-deal but deterred a third defection. Technology sovereignty package formally closed with guidance and co-investment framework, dismissed as paper capacity.
+
+In March publishers won interim order forcing leading US assistant to delist EU news over copyright/transparency; assistant degraded EU news answers, US warned retaliation, DG CNECT mediation narrowed but did not lift stay by June.
+
+New US administration implemented hold-and-tier: federal frontier review, tiered foreign access, no new EU terms; EU continued observer work on US-China pact using autumn ransomware and runaway-agent forensics. By June power on and autumn clean-up closed, but public mood soured over outages, fraud, runaway agent, censored news, side-deals, and dependence on foreign systems.

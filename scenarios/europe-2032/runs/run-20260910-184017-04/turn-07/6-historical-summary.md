@@ -1,0 +1,7 @@
+Autumn saw continuously-running agents that hold standing goals across software, lab and logistics, shifting Brussels from assistants to containment. Gigafactory programme closed first phase — four sites with concrete, grid, permits — but still no tooling or chip quota clarity; ribbon-cutting masked empty halls.
+
+One capital broke ranks with a direct deal for dedicated capacity and support from a large US cloud provider, sold domestically as pragmatism, seen in Brussels as cracking the common licensing line and in Washington/Beijing as proof capitals can be peeled off. Commission did not punish.
+
+Health/energy pooled spares, substitute parts and shared crews remained operational core; freeze-and-isolate tabletop and live drills in three hospital regions rehearsed disconnecting misbehaving agents, with breakaway operators quietly included. No second major outage, but reports grew of correlated glitches in patched imaging and grid controllers. Public mood sank further amid empty factories, wards on borrowed manuals, and open solo shopping.
+
+Background: US tier licensing with quotas/checks, Hague widened to older lithography; Beijing gallium/germanium/spares licensing; unrecallable March open-weight model; two-year essential-services pledge closed via switches/freezes, deepening foreign dependence.

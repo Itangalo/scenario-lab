@@ -1,0 +1,9 @@
+Autumn's opaque frontier gave way to open diffusion to labs, SMEs and ransomware crews. Robots took logistics; care resisted; Europe stayed dependent on Chinese hardware and US models.
+
+Lithography leverage spent after US servicing halts; licensing pooled without leverage, states cut bilateral US deals. Taiwan quarantined, gigafactory halls idle; Zurich codes cut distributed-training overhead.
+
+US revoked frontier keys for EU hospitals/ministries/firms in February, tightened through spring, promised tiered rationing after November election, rationing Brussels as client. The Hague pressed on servicing; Commission refused automatic alignment.
+
+Controllable Core migration plus Fallback Reserve kept denied loads running degraded. Winter ransomware hit imaging in three states; reinsurers excluded AI-diagnosis with ransomware, forcing manual triage. Brussels continuity pact gave EU-backed reinsurance conditional on offline backups/drills, plus liability backstop and EU4Health funds for domestic tools on EU standby.
+
+Continuity pact paid out: segmented backups/paper kept theatres open, joint drills prevented closures, queues fell fractionally where domestic tools ran on standby. Late summer US providers cut off EU users without appeal, stopping chest-scan pilots; Reserve absorbed fraction. AI venture funding collapsed, valuations halved, hosting evaporated, standby expansion shelved. One capital broke ranks with separate hyperscaler inference deal accepting intrusive checks; Commission denied backstop/top-ups. Strait exercises and shipping insurance raised supply anxiety; no new Hague alignment. Queues, triage and dependence soured mood; Brussels started no new programme, concentrating spend on liability backstop. Office AI lifted output per person without employment collapse, but layoffs, queues and trust loss dominated; care cushion paid wage-insurance amid disruptions.

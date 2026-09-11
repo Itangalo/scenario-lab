@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 59.3 to 60.0 (Δ = +0.7), while `ai_capability` increased from 63.0 to 64.0 (Δ = +1.0). Under metric rule 2, `openweight_capability` is set near the midpoint of its previous value and last turn's `ai_capability`. The update implies a step that is too large given the rule’s mechanics unless justified by a specific event or mechanism (e.g., a major open release), but the narrative describes only forensic identification of machine-written scripts and prior open weights—not a new capability leap. A rise in openweight capability without a corresponding recent surge in accessible frontier model leakage or event-driven jump is inconsistent with the accumulation model.\n- Invariant 9 violated: `eu_ai_sovereignty` increased from 21.0 to 25.0 (+4.0), which is within the 25-point cap, but the calculation in the Game Master's Notepad attributes +4 from \"InvestAI Gigafactories finishes t7\". However, no prior record indicates this measure was proposed or introduced earlier, violating Modelling Choice 6: \"No measure is implemented instantly.\" Minimum time from proposal to full effect is one full turn for low-cost measures and two for high-cost ones. A gigafactory is a high-cost infrastructure project; completing it in one turn with full sovereignty impact violates realistic implementation lags.\n- Modelling Choice 5 violated: The Game Master's Notepad lists two active measures in this turn — \"EU Black-Box Assurance...\" and \"EU Critical Continuity and Bio-Sentinel Surge\" — both receiving charge penalties. This implies both were active and ongoing. However, the notepad also records a proposal bonus for the latter, suggesting it was introduced *this* turn. That would mean two measures are being advanced simultaneously (one finishing, one starting), and potentially two new measures if the former was not already in flight. At most one new measure may be introduced per turn. The narrative does not clarify sequencing, and the notepad implies multiple active initiatives without showing which were pre-existing, violating the one-new-measure-per-turn rule."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,160 @@
+{
+  "turn": 5,
+  "counters": {
+    "measures": 7,
+    "standing": 1
+  },
+  "records": [
+    {
+      "id": "M1",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "InvestAI Gigafactories",
+        "category": 4,
+        "size": "large",
+        "finish_turn": 7,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "eu_ai_sovereignty up, via €200bn for four to five sites",
+        "started_turn": 0
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "running"
+      },
+      "added_turn": 0,
+      "removed_turn": null
+    },
+    {
+      "id": "M2",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "Tech sovereignty package",
+        "category": 4,
+        "size": "large",
+        "finish_turn": 6,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones",
+        "started_turn": 0
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "running"
+      },
+      "added_turn": 0,
+      "removed_turn": null
+    },
+    {
+      "id": "S1",
+      "table": "standing",
+      "actor": "world",
+      "fields": {
+        "posture": "undecided"
+      },
+      "derived": {},
+      "added_turn": 0,
+      "removed_turn": null
+    },
+    {
+      "id": "M3",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Critical Infrastructure Cyber Shield",
+        "category": 6,
+        "size": "large",
+        "finish_turn": 4,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up substantially, ai_safety spillover via incident reporting",
+        "started_turn": 1
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "finished"
+      },
+      "added_turn": 1,
+      "removed_turn": null
+    },
+    {
+      "id": "M4",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Compute Continuity Bridge",
+        "category": 4,
+        "size": "small",
+        "finish_turn": 5,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "eu_ai_sovereignty stabilise/prevent fall, eu_political_capital small cost",
+        "started_turn": 2
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 2,
+      "removed_turn": null
+    },
+    {
+      "id": "M5",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Accession to Joint Cyber Command Telemetry Pact",
+        "category": 8,
+        "size": "small",
+        "finish_turn": 5,
+        "applies_to": "coalition",
+        "targeted_effect": "resilience up, ai_safety spillover via shared attribution",
+        "started_turn": 3
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 3,
+      "removed_turn": null
+    },
+    {
+      "id": "M6",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Agentic Loss-of-Control Containment Regime",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 7,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up, ai_safety up small via containment",
+        "started_turn": 4
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "running"
+      },
+      "added_turn": 4,
+      "removed_turn": null
+    },
+    {
+      "id": "M7",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Middle-Power Compute and Evaluation Pact",
+        "category": 8,
+        "size": "small",
+        "finish_turn": 8,
+        "applies_to": "coalition",
+        "targeted_effect": "eu_ai_sovereignty up, eu_political_capital up small, ai_safety up small via shared eval",
+        "started_turn": 5
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "running"
+      },
+      "added_turn": 5,
+      "removed_turn": null
+    }
+  ]
+}

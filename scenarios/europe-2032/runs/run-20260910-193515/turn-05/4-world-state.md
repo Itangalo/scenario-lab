@@ -1,0 +1,9 @@
+### Keeping the lights on
+The autumn brought the two tests Brussels had feared together. Washington rationed premium chips and model access again, leaving European hospitals on expensive volume licences good for inference and nothing else. At almost the same moment, a new open-weight model near the frontier spread to hundreds of thousands of downloads in days, including tooling that mapped industrial control systems with uncomfortable ease.
+
+For wards and ministries, the priority held. The joint health-cyber teams finished the failover swap: audited European-hosted models, stripped-down adapters, offline paper fallbacks. When American keys wobbled, emergency care and payments did not stop. The continuity mandate and the pooled telemetry cell also came fully online — procurement sensors, hospital security centres and the allied joint cell sharing signatures in near real time. A wave of municipal probes was contained quickly, and officials claimed vindication.
+
+### The price
+The price was elsewhere. A court ordered a planned gigafactory grid connection frozen after residents cited health, cost and the still-fresh welfare scoring scandal. Permits survived only as paper reservations on public-bank money. With no training compute and two councils now blocking new connections, the sovereignty build stalled while resilience improved.
+
+Voters noticed the trade. Keeping services alive earned grudging credit, but rationed access, slower local models, and headlines about dependence on an America that had just voted to treat advanced AI as a strategic asset to be held at home deepened resentment. Across the Atlantic, the election result was read in Brussels as the hardest outcome: allies as clients, access decided in Washington.

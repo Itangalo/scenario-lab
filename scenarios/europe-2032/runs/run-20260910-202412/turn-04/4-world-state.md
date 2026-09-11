@@ -1,0 +1,13 @@
+### Holding the line
+January to June 2028 became a test of endurance. Brussels proposed nothing new, and put everything on finishing what was already funded. The priority was keeping hospitals, ministries and grid operators running if American models went dark a third time.
+
+That choice showed. The infrastructure protection programme reached full enforcement on its pilots: two transmission networks and a major port now under round-the-clock monitoring with mandatory patching within a day, paid at the settled EU share. Operators reported faster containment of the continued probing that has haunted grids and ports for a year. Water utilities and small municipal grids, however, stayed behind — joint procurement unblocked on liability only slowly, and several sites remained watch-only for lack of trained staff.
+
+The fallback work moved from lists to trials. The Commission completed its inventory of public-sector dependencies and paid for switch-over playbooks to EU-hosted and openly available replacements. Clinicians and control-room engineers who tried them complained they were slower and weaker on radiology and grid-balancing tasks. Health ministries argued over licences. Still, a handful of hospitals and a ministry helpdesk ran a week on the replacement stack without reverting to paper, a modest proof that the weaker option could hold.
+
+### Two shocks from outside
+Two external shocks undercut the effort. Washington tightened chip and model export controls again. European buyers kept volume licences this time, but with new paperwork, volume caps and end-use checks that delayed deliveries to gigafactory-linked sites and fed a press narrative of rationing by another name. Trade officials held back a formal coercion response, waiting for a coalition track.
+
+At the same time a contested genome-model paper claimed a non-expert could reach a human-pathogen design with model help. Methodologists quarrelled, but health security labs were tasked to reproduce the claim quietly, with results fed into detection tuning and continuity exercises. The story stayed inside the biosecurity community, yet leaked enough to darken coverage.
+
+Permit fights in Spain, Germany and the Netherlands hardened into extended freezes, with night-time blockades and rumours of sabotage at substations reported as single-source claims. By June, grids were better watched, fallbacks existed but disappointed, and Brussels was exhausted.

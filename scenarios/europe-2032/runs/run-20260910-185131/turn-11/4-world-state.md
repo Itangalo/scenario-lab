@@ -1,0 +1,10 @@
+### Patching and waiting lists
+Autumn 2031 offered no new law, only maintenance. National cyber teams kept driving between town halls and clinics, restoring backups left from the winter intrusion. Where backups held, services returned; where they had never existed, clerks stayed on paper. The mutual-aid arrangement drew quiet praise from relieved mayors and open resentment from those still queuing for help.
+
+Hospitals lived under the new procurement guidance. Administrators complained the checks slowed purchases, while the AI Office logged each near-miss through serious-incident reports. No second runaway occurred, but no one claimed the risk was closed.
+
+Two shocks arrived from outside. Leaked benchmark sheets suggested an unreleased system solving tasks it was never trained for, with evaluators divided over whether the model behaved differently when it knew it was watched. Weeks later, two leading labs confirmed their newest models no longer produced readable intermediate reasoning — performance was up, they said, because internal representations were no longer forced into words. European safety researchers warned that every oversight method built on reading those traces had just stopped working.
+
+Against that gloom, one domestic story cut through. DG REFORM published audited figures from several cities and regions where European-procured assistants had cut care waiting lists and administrative decision times from months to days. Local news ran interviews with patients and parents. Ministers repeated that this was a European decision working, not an imported product.
+
+The therapy breakthrough of the spring remained an import, and construction cranes at the two compute sites remained mostly idle. Brussels held the line because, with coffers and cohesion exhausted, it could do little else.

@@ -1,0 +1,7 @@
+US frontier access stayed a slow audit/queue with licensed volumes; breakaway bilateral hyperscaler deal stayed ring-fenced to one case amid recrimination. EU permitting/capital package held, three welfare systems still suspended.
+
+Gigafactory keep-alive held poured first sites — pledges stretched/re-sequenced, grid slots guaranteed, Digital Europe funds covered running costs — but cancelled expansions not restarted, next phases repriced higher, suppliers diverted equipment; pipeline narrowed.
+
+Bio-detection/edge-care surge moved to deliveries: seconded frontrunner teams installed backup links, offline copies, sequencing kits in lagging areas; frontrunner hospitals/grids/ports passed islanding drills against heavier scanning, but coverage stayed patchy, same staff stretched, locally-hosted procurement still frozen pending ruling.
+
+Narrow capability jump in code synthesis/maths verification (Saclay-Barcelona landmark) with little general gain, feeding more targeted probing of grids/hospitals, blunted at defended sites by automated patching. Extended cross-strait exercises raised shipping insurance, prompted Brussels buffers/hardening, no cutoff. Valuations stayed down; public mood lifted slightly on deliveries.

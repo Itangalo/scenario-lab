@@ -1,0 +1,43 @@
+[
+  {
+    "id": "joint_threat_response",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Coordinated clinician walkouts and hospital liability suits over errors from fallback triage models after the autumn cutoff force several regions to suspend AI-assisted triage.",
+    "emergent": true,
+    "id": "emergent_clinician_backlash_suspension",
+    "probability": 0.21333333333333335,
+    "probability_samples": [
+      0.2,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Coordinated municipal referendums in Spain and Germany vote to block new compute-zone water and grid connections, forcing a national-level legal challenge over local veto rights.",
+    "emergent": true,
+    "id": "emergent_compute_referendum_block",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.2,
+      0.24
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_alliance",
+    "probability": 0.1466666666666667
+  }
+]

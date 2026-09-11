@@ -1,0 +1,5 @@
+Grid operators discovered a globally staged intrusion into power transmission systems using Mythos-descendant tooling — mapped relays and rogue credentials but no disruption; outages came from defensive isolation. Attribution was inconclusive but Brussels read it as a state-backed rehearsal.
+
+Under renewed US pressure via supply-chain technology controls, the Netherlands extended cuts to servicing and older lithography sales, exposing EU vulnerability to member-state-level coercion despite Commission efforts to Europeanise the file under trade/anti-coercion instruments. In parallel, the EU secured written frontier-model access terms with notice, evaluation, and EU-law capacity guarantees — predictability, not independence.
+
+ENISA deployed to affected operators, breaker audits and a winter exercise began, and AI gigafactory and data-centre permitting advanced slowly under tight budgets.

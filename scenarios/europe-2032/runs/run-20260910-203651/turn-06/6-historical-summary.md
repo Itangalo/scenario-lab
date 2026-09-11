@@ -1,0 +1,7 @@
+Ransomware sweep built with model-generated tooling hit hospital networks, land registry and municipal systems via unpatched edge and compromised managed-service update, forcing paper fallback; ENISA triage using grid-shield playbooks stopped cascade but exposed brittleness, attribution unresolved.
+
+Clearinghouse Bridge extended to December, cheap inference on slower EU/second-source models conditioned on reporting side deals. Synthesis-screening pilots expanded to municipal labs after contested genome-model paper claimed non-expert bioweapon design.
+
+Tech sovereignty package formally closed with permitting zones and private pledges to 2036 but no new capacity. New inward-turning US administration tightened export licensing, keeping EU accelerator orders queued while permits/grid for gigafactory conversions were granted without machines.
+
+Protests hardened into blockades at conversion/substation sites fusing energy, anti-data-centre and welfare fraud-scoring anger; transport unions struck separately over Rotterdam/Antwerp/Lyon warehouse robots. Commission promised no new build, enforced human-review fixes under high-risk rules, prioritized bio-cyber warning network; grid held on slower backup.

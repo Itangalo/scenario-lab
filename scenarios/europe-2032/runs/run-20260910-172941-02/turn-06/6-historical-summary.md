@@ -1,0 +1,5 @@
+A US lab demonstrated a discontinuous jump in general AI competence, seen in Europe only via press releases and leaked scores; the evaluation taskforce scrambled to replicate from outside with redacted summaries for grid/hospitals, further eroding confidence.
+
+Cohesion broke as a cash-strapped member state signed a bilateral preferential supply deal with a foreign hyperscaler, defying the Paris-Berlin joint line; cohesion funds and capacity carve-outs failed to reverse it. Smaller states, fearing gigafactory aid favours large members, noted the defection. Permitting on 4-5 joint sites continued but grid delays and power/water protests cost weeks.
+
+Chinese-built humanoids on US stacks entered regular shifts from Rotterdam to Lodz amid continued junior hiring freezes, dominating public mood. Health triage, fast permits and vouchers showed gains, but outage memory overshadowed them. By June the sovereignty funding package and scrutiny mandate existed on paper, leaving the Union cash-strapped, divided and visibly dependent.

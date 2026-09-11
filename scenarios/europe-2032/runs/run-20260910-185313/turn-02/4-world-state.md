@@ -1,0 +1,10 @@
+### Patching at machine speed
+The spring belonged to the defenders. The automated patching and swarm-detection tooling piloted after the winter intrusion was pushed hard across transmission operators, then to ports and water plants. ENISA teams reported patch cycles falling from weeks to hours, and joint drills caught two fresh probing swarms early. Engineers spoke of the first real shift in the offence-defence balance in years.
+
+Rollout was uneven. Procurement accelerated in France, the Nordics and Iberia; elsewhere permits, legacy control systems and contractor backlogs slowed installation. The two operators hit first are now largely hardened. Dozens of smaller municipal utilities are still waiting for upgrades.
+
+### The outlier stays half-out
+The capital that cut its own compute-and-protection deal stayed in the room but not in line. Energy and Transport Councils kept it inside common reporting standards with promises of grid-connection priority and co-financing, but its side supplier kept operating under different rules. Brussels presented this as reintegration; national press in that capital presented it as Brussels paying for what it had already secured alone. Gigafactory and supply-chain files inched forward without new money — site preparation in two locations, permits stuck in a third.
+
+### Offices, not picket lines
+Meanwhile the economic news changed the mood. Studies from law firms, consultancies, newsrooms and administrations showed the same pattern: assistants lifting output per person, especially for juniors, without layoffs. Firms that had cut early quietly rehired. Evening news moved from blackout maps to features on shorter working weeks for paperwork. Anxiety about the lights did not vanish, but it stopped dominating. For the Commission, the breathing room was double-edged: no displacement crisis to answer, but also no urgency to spend against.

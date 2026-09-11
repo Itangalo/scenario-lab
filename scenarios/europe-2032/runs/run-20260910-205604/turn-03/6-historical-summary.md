@@ -1,0 +1,7 @@
+Autumn intrusions into EU grids, ports and water via stolen credentials forced isolations, followed by uneven spring rollout of automated patching and swarm detectors: large operators moved first, municipal water/hospitals lagged.
+
+Mid-summer a leading lab open-released near-frontier weights; mirrored within hours with hundreds of thousands of downloads in Europe, deemed permanently distributed with unrecallable industrial-access/intrusion tooling. In parallel Washington tightened chip/model exports; Brussels aligned via volume-licence system, securing hedged conditional assurances for gigafactory compute, seen as formalised dependence. A contested genome-model biosecurity paper prompted expanded health sampling.
+
+Shield pre-positioning expanded from two to six states with autumn isolation exercises and was declared substantially complete — essential services would degrade rather than stop — but coverage remained patchy, maintenance windows missed, detectors unwatched, leaving unpatched edge exposed.
+
+Welfare-fraud risk-scoring bias scandal triggered ombudsman redress and conformity reviews with auditable logs and restored human review in two regions plus small trusted health pilots, but protests linking benefits to data-centre resource use persisted, constraining Shield spending. Co-financing for hardening, factories and redress competed; Commission held line with no new funding or legislation.

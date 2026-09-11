@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t10: M10 EU Black-Box Assurance and Activation Inspection Programme −2, M11 EU Essential Services Continuity and Shield Repair Fund −2, M12 EU Denied-Model Substitution and Essential-User Continuity Facility −2, priority −1 = −7
+PROPOSAL BONUS: EU Denied-Model Substitution and Essential-User Continuity Facility (cat 9, small) +3 — eu_frontier_access_denied landed this turn severe hitting hospitals/ministries/firms and labour_displacement severe, this answers them directly
+LEGITIMACY LENDS: capital 23, sentiment 14 -> none, capital higher
+SOVEREIGNTY: 16 last turn, no capacity event finish, no cat4 in flight, eu_frontier_access_denied t10 −3, capability rose 1.5 no −1 = 13

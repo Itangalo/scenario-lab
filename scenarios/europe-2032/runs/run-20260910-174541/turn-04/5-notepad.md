@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t4: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Critical Systems Hardening and Detection Pact −3, EU Bio Detection and Triage Upgrade −2, European Public Benefit AI Deployment −2, Middle-Power Supply and Evaluation Pact −2, priority −1 = −16
+PROPOSAL BONUS: Middle-Power Supply and Evaluation Pact (cat 8, small) +3 — answers US volume-licence rationing / export-control pressure from last two turns directly plus eval anomaly window
+LEGITIMACY LENDS: capital 6, sentiment 33 -> +2
+SOVEREIGNTY: 15 last turn, no capacity finish, in flight +0, middle_power_coalition t4 +2, capability rose 2.0 −1 = 16

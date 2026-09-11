@@ -1,0 +1,12 @@
+### The offices hold, the warehouses turn
+By spring the productivity numbers were too consistent to dismiss. Law firms, accountants, council administrations and newsrooms reported the same pattern: junior staff producing more drafts, checks and summaries with machine help, partners spending the saved hours on decisions and clients. Headcounts did not fall. Two firms that had cut early quietly rehired.
+
+The docks told a different story. Chinese-built mobile manipulators running American control software took over picking, sorting and palletising in Rotterdam, Antwerp and Hamburg within months. Welding cells followed. Work that could be scored by a camera fell completely; repair, care and messy construction sites did not move at all. Defence ministries bought the same machines for resupply, mine clearance and perimeter patrol — kept, for now, out of targeting.
+
+Brussels tried to make the first story pay for the second. The Commission reprogrammed existing social-fund envelopes into wage-bridges for displaced pickers and paid micro-courses moving junior clerks toward supervisory tasks, levied on large deployers of warehouse robotics and office agents. Employment services called it tangible; finance ministries called it minimal burn by another name.
+
+Science helped the mood without helping leverage. A Zurich–Paris team used machine search to settle a long-open combinatorial construction, a result mathematicians called a landmark. It ran on foreign models and foreign compute.
+
+Then a member state broke ranks. A bilateral hosting and supply deal with a US hyperscaler, signed on terms that undercut the common tiered-access line, was defended at home as pragmatism. In Brussels it read as defection. The Commission framed the new fund as covering the side-deal; few believed it would stop a second.
+
+The retrofit held where it had landed. The Seville certification kit became routine guidance under network-security rules, Recovery Corps teams stayed seconded on national payrolls, and false alarms stayed down on patched grids. Where it had never landed, insurers now refused to underwrite AI-operated controls, councils talked of freezing data-centre permits, and restores still depended on who was on shift.

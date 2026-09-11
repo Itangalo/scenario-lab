@@ -1,0 +1,9 @@
+Intrusions into European transmission control networks (plus other continents, port, water) gave deep access without disruption, triggering Autumn insurance shock: two major insurers repriced/withdrew systemic cyber cover for energy/port operators, forcing emergency state guarantees and a rushed EU coordinated backstop.
+
+EU shield became enforceable obligations for transmission, ports, water — segmentation, continuous monitoring, 24h notification — funded via joint sensor/router procurement and co-financed response centres. Guarantee tied to rollout, funded by Digital Europe underspend reallocation + member-state co-financing with temporary loss-sharing key, prevented retrofit stall but did not restore market. One reluctant capital partially complied; other still fought designation/retrofit costs. Monitoring spread but patchy, enforcement now expected 2028. Resilience strained but stable.
+
+Compute/export: gigafactory sites and fast-track grid/permitting zones advanced, no new large training capacity online; EU defended chip-equipment leverage vs US pressure. New open downloadable model matching frontier spread widely with offensive cyber assistance; EU AI Office evaluation unit testing EU-deployed version, published interim red-lines, but no recall power; safety work steady, misuse risk widened.
+
+AI welfare scandal: AI-assisted benefits scoring systematically cut/flagged vulnerable claimants; Commission treated as enforcement failure under existing AI law with audits/remedy, press/opposition cited as proof law failed, trust fell further.
+
+Public mood anxious over intrusions, power bills, data-centre opposition, premiums punishing good-faith reporting, and finance-ministry fights over loss burden.

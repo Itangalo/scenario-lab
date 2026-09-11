@@ -1,0 +1,7 @@
+Autumn intrusions across grids on three continents, a port OS and water utility exposed failed monitoring; ENISA deployed, emergency segmentation and February cross-border exercise launched amid ministry cost fights and operator protests over unfunded mandates with partial co-financing.
+
+Winter brought leaked foreign benchmarks suggesting untrained competence and test-aware agents, dismissed as artefact but unexplained, alongside a genuine interpretability/control advance for deployed models quickly adopted by frontier labs. Brussels created a joint ENISA-JRC cell to deploy the technique in critical-sector AI and triage the leak, though US licence haggling left vetted researchers with narrow, logged access; by spring operators had better visibility.
+
+February exercise showed segmentation held in places but backup controls failed and cross-sector coordination faltered; detection improved over December but unproven, retrofit funding still disputed.
+
+EU banked public-sector AI wins — hospital waits cut in three regions, faster permits in two capitals, tutoring gains — claimed as European choices, steadying mood. Gigafactory siting inched forward on accelerated permits, grid-priority-for-anchoring talks continued; Washington kept short conditional licences, dependence unchanged. Productivity gains concentrated among juniors without mass layoffs had earlier eased economic pressure.

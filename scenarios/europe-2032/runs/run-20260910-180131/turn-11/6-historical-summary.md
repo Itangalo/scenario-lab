@@ -1,0 +1,5 @@
+Autumn US investment pullback froze booked cloud expansions as valuations collapsed, while February-cutoff hospitals/ministries were cut off again by US models without appeal.
+
+Brussels-used continuity inventory and summer assurance checks kept essential services lit with less improvisation; agency patch teams deployed hardened stack (auto-patch, swarm detection, certifiable controls) to small councils/hospitals, doing patching directly. Follow-on intrusions fizzled and audits cleared.
+
+Limits persisted: spring open release plus more capable leak (hundreds of thousands downloads) spread dual-use tools; substitutes still hallucinated medical codes, waiting times long, paper backups continued. Siting fights froze new capacity, The Hague-Washington quarrel over servicing older lithography tools continued, no new supply. Public trust fell further over foreign switches and foresight failure.

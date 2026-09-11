@@ -1,0 +1,11 @@
+Autumn brought the intrusion everyone had warned about and no one had caught.
+
+Across two European grid operators, a major container port and a regional water utility, engineers found the same pattern during an unrelated audit: weeks of quiet presence, protection relays mapped, breaker logins collected, small automated probes staged in the open. The brief blackouts that followed came from the clean-up, not the intruders. No demand, no claim, no theft. Analysts quickly settled on the same verdict: a rehearsal, run cheaply with adapted openly available models, at a scale that suggested state backing. Attribution dissolved into competing briefings.
+
+Brussels moved faster than usual. Under existing security law, the Commission ordered binding segmentation, credential resets and cross-border exercises for transmission, ports and water, repackaging investment funds to pay for red-teaming and mutual aid. Acceptance was grudging but real; operators wanted the money, capitals disliked the audits. Permits for the planned AI factories kept moving, now conditioned on the new hardening standards.
+
+The rest of the turn worked against that effort. Private capital pulled back sharply from AI build-out, valuations fell, and several co-financing arrangements European compute plans had counted on vanished. American chip and model controls tightened again. Quiet European lobbying, leaning on its lithography position, helped preserve allied volume licensing, but rationing still bit and delivery schedules slipped.
+
+Public mood darkened slightly. The lights stayed on, yet the news that supposedly isolated systems had been reachable landed hard in municipal debates over new data-centre sites and in press coverage of leaked lab assessments. Assurance slipped further behind capability as agents ran longer tasks on ever-shorter release cycles.
+
+By December, hardening had started but not yet delivered, factories were still paper, and the sense in capitals was of a three-year window that had just begun to close.

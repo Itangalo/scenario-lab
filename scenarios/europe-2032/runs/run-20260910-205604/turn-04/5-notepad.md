@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t4: M1 InvestAI Gigafactories −3, M2 Tech sovereignty package −3, M4 Shield Scale-Up with Defensive Breakthrough −3, M5 Trust Repair Audits with Secure Adoption Pilots −2, M6 EU Bio Detection and Response Surge −2, priority −1 = −14
+PROPOSAL BONUS: EU Bio Detection and Response Surge (cat 6, small) +2 — bio_uplift_findings fired this turn opening bio gate, this answers it directly but small and detection only
+LEGITIMACY LENDS: capital 16, sentiment 27 -> +2
+SOVEREIGNTY: 18 last turn, no capacity event finish, Gigafactories/tech package in flight +0, supply_chain_coercion t4 −2, capability rose 2.0 −1 = 15

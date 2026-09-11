@@ -1,0 +1,11 @@
+### Holding the corridor
+The spring began with containment working on paper. Sequencing reports now arrived in hours, synthesis screening stayed compulsory where law allowed, and the permanent cyber centres quietly filtered a steady wash of copycat intrusions. Hospitals in the two locked-down border regions kept isolation drills running; banks rehearsed payment freezes without triggering one.
+
+Then the split came into the open. A eastern capital confirmed it would keep its cut-price Gulf-backed cloud contract for public workloads, calling it pragmatism and value for money. National press presented it as sovereignty; in Brussels it read as a hole cut directly under the common line.
+
+### Ring-fence
+The Commission answered without a new vote. EU-funded health, cyber and emergency data would no longer be handled on non-aligned infrastructure, certified by the health emergency body, the disease centre and the cyber agency. The joint procurement vehicle was reopened at cost to the defecting capital and its neighbours, with shared compute offered to make staying cheaper than leaving. Eastern mayors were promised the single aid window first, paid from reprogrammed digital and health funds, but only if they bought to common standards.
+
+It partly worked and partly grated. Two neighbouring ministries took the backfill compute and machine-speed kits, steadying clinics that had been waiting for help after outages. The defecting government took the aid language as coercion and said so loudly. Procurement officers complained the ring-fence rules arrived faster than the engineers to implement them, and for weeks some labs ran parallel systems.
+
+By June the wider financial scare had not returned and bio-containment held, credited to the surge that now became routine. But voters saw funerals, then headlines about a member state going its own way, then explainers about assistants drafting contracts. Trust slipped again, and data-centre siting meetings grew hostile. Brussels had stopped a public split from becoming a cascade, but had not made unity look attractive.

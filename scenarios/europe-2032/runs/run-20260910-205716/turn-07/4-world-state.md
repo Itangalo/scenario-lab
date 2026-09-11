@@ -1,0 +1,11 @@
+### Concrete, at last, but not yet compute
+The two long builds moved on paper but not into full effect. The four-to-five gigafactory zones cleared final permitting and the hospital bio-detection network went live with mutual-aid teams and new detectors. Brussels claimed a turning point, and for a week it looked like one.
+
+Then the bills arrived. EIB power guarantees covered only a fraction of grid connection costs, cohesion money for substations stalled in committee, and the private co-financiers invited back to the sites asked for US chip-supply assurances no one could give. Ground was broken at two sites; at the others, fencing and signage. The gigafactory programme therefore remains in flight and partially blocked — foundations poured, but no full completion or sovereignty payoff this turn. Under the new Washington tiered-access regime, American frontier labs quietly moved European customers to longer queues and higher prices, while export-licence talks made no progress.
+
+### Exploratory talks, one new shield
+DG TRADE shuttled between Tokyo, Seoul and Eindhoven with aligned licence drafts and an offer of pooled evaluation. Partners listened, took the evaluation papers, and declined quotas. No coalition agreement was reached and no new international measure was launched this turn — these were exploratory contacts only. A southern capital formalised its side-channel purchase agreement in November, and two others kept bilateral options warm. The Anti-Coercion threat, meant to discipline defection, instead irritated partners who read it as aimed at them.
+
+The single new measure introduced this turn was the wage-insurance and retraining shield, now the priority, which opened offices in the two striking logistics hubs. Payments were slow, eligibility narrow, and the levy on large deployers was challenged in court and largely unpaid. Strikes paused but resentment spread as humanoids appeared in parcel sorting and food retail. Fraud losses crept back as adapted voice kits defeated the spring authentication fix.
+
+Europe ended December with detectors staffed, foundations poured, and access narrower than in July — progress delayed by financing, supply, and staffing gaps, with only a small sovereignty uptick from permitting and detection going live, and only a modest political capital gain net of costs.

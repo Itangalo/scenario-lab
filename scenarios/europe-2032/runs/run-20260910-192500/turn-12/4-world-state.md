@@ -1,0 +1,8 @@
+### The cure arrives on someone else's servers
+The first half of 2032 belonged to the clinics. Tailored therapies designed with frontier models — for cancers and rare diseases that had no treatment a year earlier — reached ordinary wards. Families queued for intake in the same border hospitals that had run on paper slips in 2030. Early remissions made evening news.
+
+Brussels moved to anchor the arrival. Health authorities and the medicines agency fast-tracked EU-hosted deployment: patient data to stay in the European health data space, every tailored protocol to carry a clinician signature, first doses in restored hospitals where recovery assistants already handled triage notes. Funding was repurposed, not borrowed.
+
+Delivery lagged the announcement. The design models ran abroad; EU hosting meant remote inference under black-box checks, not local control. Oncologists asked how they could sign off on a protocol whose reasoning could not be read, and checklists did not convince them. Intake outpaced sequencing capacity, waitlists reappeared, and works councils held the assistant rollout to paced shifts.
+
+Relief was real but tinged. Patients thanked public wards while knowing the cure was computed elsewhere. Permitted factory sites stayed empty and the spares channel stayed quiet, and no new capacity promise was made. The Union showed it could channel a breakthrough, not yet that it could produce one.

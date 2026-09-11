@@ -1,0 +1,10 @@
+### Relays hold, hull creaks
+July to December 2032 was a maintenance half-year. No new Brussels instrument, no priority fight to lose. Joint teams from the EU cybersecurity agency and its incident-response arm kept pushing patched images outward on the emergency authority granted in spring. Big-city utilities that had cut exposure to hours in the first half now acted as relays, hosting weekend windows for neighbouring councils.
+
+Where the images landed, they worked. Two autumn intrusion waves — credential-stuffing swarms against municipal portals and hospital scheduling systems — were flagged and isolated quickly in covered cities. The stripped-down offline triage kit, copied hand-to-hand among local technicians, gave understaffed towns something to use when they missed a window. Coverage crept outward, but the old geography persisted: capitals and rebuilt cities steady, small towns and clinics patching late or postponing for fear of breaking therapy diaries.
+
+Capacity politics stayed frozen. Chip equipment curbs held, Dutch suppliers stayed compliant, permits stayed frozen, and foreign-computed treatments kept arriving with provenance labels. DG SANTE did not interrupt supply.
+
+The autumn military exercises around Taiwan changed the mood without changing supply. Shipping insurance rose, procurement officers began quiet stock-checks of medical and spare inputs, and editorials asked what a strait crisis would do to servers, spares and medicines. The Commission tasked inventories inside existing services but opened nothing new — at 1.0 capital, any Taiwan-facing fund would have failed on budget and cohesion.
+
+By December essential services were harder to knock over where tooling had landed, but no more independent. Brussels had banked a modest competence dividend and waited.

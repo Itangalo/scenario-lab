@@ -1,0 +1,9 @@
+### Cover frozen, chips stopped
+Winter renewals brought the thin cover into the open. Two large insurers and a reinsurer wrote exclusions for machine-enabled intrusion into hospital and municipal policies, freezing renewals in France, Germany and the Low Countries. Mayors warned wards and registries would run uninsured through spring. At the same time, a quarantine around the strait halted advanced chip shipments. Lead-times doubled, spot prices spiked, and every procurement file became a security file.
+
+Brussels moved under emergency economic and solidarity powers. A Treasury-backed reinsurance window through the investment bank kept denied hospitals and towns covered, on condition they segment networks, keep offline backups and report incidents to the Union's cybersecurity agency. Trade officials coordinated licensing for lithography, optics and specialty chemicals: no blanket ban, no bilateral fire-sale, priority for clinics, grid operators and factory repairs.
+
+### A backstop that partly holds
+Cover resumed for most large hospitals by April, but smaller clinics and eastern municipalities waited weeks for paperwork, and co-pays angered finance ministers. Segmentation teams reached power, water and payment hubs first; many town IT systems remained exposed. The licensing hold bought some relief and irritated Washington and Beijing in equal measure, with threats of retaliation and quiet approaches to capitals to break ranks. The Netherlands and one other capital openly questioned the legal base.
+
+Meanwhile the jobs absence hardened into statistics. Graduate hiring in law, accountancy, software support and customer operations stayed near zero while output per retained junior rose. The retraining and wage-insurance fund paid out in more regions, queues eased, but caseworkers said the money covered months, not a cohort. Protests in university cities fused entry-job anger with opposition to new data centres. Trust did not return.

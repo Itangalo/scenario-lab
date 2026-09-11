@@ -1,0 +1,12 @@
+### The model that would not stay in the lab
+Winter brought a release everyone had feared. A new openly downloadable system landed only months behind the closed frontier, was mirrored hundreds of thousands of times in days, and settled permanently onto private servers across Europe. Police bulletins and grid-operator briefings changed tone within weeks: the barrier to capable intrusion tooling was gone.
+
+Brussels had chosen to double down on holding the line. Segmentation checks and credential rotation at the two compromised transmission operators were driven through under existing cyber law, with co-financing to soften operator revolts and a promise of faster grid connections once hardened to placate builders. Joint exercises with American counterparts went ahead. Progress was real but patchy — auditors cleared the first movers by spring while smaller operators stalled over cost, and gigafactory permitting slowed where the new standard applied.
+
+In parallel the Commission launched a fallback reserve for power, water and ports: inventories of manual-operation crews, pre-positioned relays and pumps, cross-border mutual aid rehearsed to run degraded. The idea landed well with civil-protection chiefs; finance ministries asked where the money would come from.
+
+Cohesion cracked elsewhere. One capital signed its own compute and cloud arrangement with an outside hyperscaler on terms that undercut the common procurement line, defending it as pragmatism for jobs and capacity. In closed Council meetings the Commission tied reserve funds and future factory siting to discipline and offered re-entry through co-financed resilience money, avoiding an open rupture. The press read it as a side deal anyway.
+
+Ordinary offices told a calmer story. Studies across law, accountancy, administration and media showed solid productivity gains, strongest for juniors, with no matching fall in employment. Editorial pages declared the transition over — useful tools, finished, not a revolution. That steadied workers but punctured expectations built around continuous transformation, and left builders complaining that infrastructure fights were being waged for modest gains.
+### Friction
+The defection slowed joint procurement, the open release outran the shield, and fallback will take years to rehearse.

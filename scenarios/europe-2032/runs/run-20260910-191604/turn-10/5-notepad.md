@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t10: M8 EU Edge Restoration and Containment Corps −2, M9 EU Joint Response Accession and Assured Control Deployment −2 = −4 + priority no effect, no cost (capital below 20) = −4
+PROPOSAL BONUS: EU Joint Response Accession and Assured Control Deployment (cat 6, small) +4 — loss-of-control incident landed this turn and joint invitation answers protection gap directly
+LEGITIMACY LENDS: capital 8, sentiment 27 -> +2
+SOVEREIGNTY: 20 last turn, no capacity event? supply_chain_coercion t10 −2 (largest of supply_chain_coercion and export_control_escalation), no cat4 in flight +0, capability rose 0.5 −0 = 18

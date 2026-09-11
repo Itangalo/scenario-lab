@@ -1,0 +1,7 @@
+US frontier access stayed a slow audit/queue with licensed volumes; breakaway bilateral hyperscaler deal stayed ring-fenced amid Council friction. EU permitting/capital package held, three welfare systems still suspended.
+
+Gigafactory keep-alive held barely — first poured sites powered/queued, pledges stretched again, next phases repriced higher, equipment diverted, no cancelled expansion restarted.
+
+Automated ransomware sweep hit municipalities, hospitals, two grid operators with self-mutating model tooling; frontrunner sites islanded on spring backups/offline copies, lagging towns queued for weeks-long recovery. Brussels restoration pact sent seconded cyber-clinical teams, overtime/liability cover, funds tied to common backup/islanding playbooks; deliveries thin, same staff stretched, locally-hosted procurement still frozen pending ruling.
+
+Frontier models stopped showing readable intermediate reasoning, blinding oversight; Saclay-Barcelona code synthesis/maths verification advances continued, feeding verification and attacker probing. Cross-strait exercises continued raising insurance. Foreign robots automated warehouse/port picking/palletising/yard work, not repair/care/construction; union stoppages began. Valuations down; mood fell sharply despite restoration.

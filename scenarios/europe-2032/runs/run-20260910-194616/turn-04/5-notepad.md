@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t4: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Lithography Leverage Compact −2, EU Joint Continuity and Fallback Access Pact −2, priority −1 = −11
+PROPOSAL BONUS: EU Joint Continuity and Fallback Access Pact (cat 8, small) +5 — cyber_major_incident severe and public this turn plus frontier cutoff and defection, this answers joint response and fallback directly
+LEGITIMACY LENDS: capital 23, sentiment 26 -> +2
+SOVEREIGNTY: 17 last turn, no capacity event finishes, builds in flight +0, eu_frontier_access_denied t4 −2 (largest of two takeaways, member_state_defection also qualifies), capability rose 2.0 −1 = 14

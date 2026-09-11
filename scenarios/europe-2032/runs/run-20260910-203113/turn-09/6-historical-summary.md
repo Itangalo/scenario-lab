@@ -1,0 +1,9 @@
+Washington-Beijing pact held thinly without EU verification; US tiered exports formalised, Europeans rationed and audited.
+
+Coding/offensive leap and contested genome-model claim led to Lyon March release killing dozens; patchy procurement/registry. Commercial cloud failure forced rationing on pilot gigafactory nodes, no new capacity online. Spring claim of viable human-infecting design for non-experts pushed quiet stockpiling; AI productivity gains held services employment.
+
+Commission bio-hardening surge extended kits/reporting to small municipalities, coverage up but staffing lagged; switchover re-drill split across two halls. AI Office/JRC/cybersecurity agency began uplift probing with Lyon cases and interpretability pilot with Japan/South Korea. Hyperscaler deal kept with logging/access conditions. Continuity reserve formalised load-shedding, dual-site hosting, minimum stocks via redeployed funds.
+
+Late summer: largely automated AI-built ransomware sweep hit portals, clinics, registries across member states; hospitals to paper, attribution lagged, defenders behind amid new foreign code/cyber advance and opaque systems. Continuity reserve held — load-shedding, dual-site triage/bio-detection, stocks covered gap; autumn re-drill became live exercise, operator rationing hardened, sovereign inference warning repeated.
+
+Chinese-built robots on US control models ordered at scale cut warehouse work; repair/care/construction stayed manual, unions warned of labour split. Brussels deployed signed assistants for triage/permits/tutoring with redeployed funds; waiting lists fell in two pilots. States pooled joint cyber command with real-time telemetry and binding biosurveillance sample-sharing; EU invited in. Lyon-registry uplift probes run against hit models, pass-through logging enforced. Trust stayed low amid fraud, locked clinics, layoffs despite tutoring gains; radiologist walkout talk rumour, denied.

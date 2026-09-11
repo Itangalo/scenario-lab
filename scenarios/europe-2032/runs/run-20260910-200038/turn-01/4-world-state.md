@@ -1,0 +1,10 @@
+### The autumn audit
+The discovery began as paperwork. An auditor checking access logs at a transmission operator found credentials used in ways no engineer recognised, and within weeks similar traces surfaced at other grids, a container port and a water utility. Two of the grids were European. The deepest footholds were not.
+
+What unsettled ministers was the restraint. Breaker controls mapped, relay passwords taken, small automated probes numbering in the thousands — and then nothing switched off. The brief blackouts that followed came from operators isolating their own systems. Analysts traced the tooling to a freely downloadable model of the current leading class, adapted for intrusion work and run at a volume that suggested state backing. No culprit was agreed.
+
+Brussels moved faster than usual. The Commission ordered transmission operators, large ports and water companies to prove their networks were truly segmented and to rotate protection credentials, with EU-funded sensors and joint exercises to follow under emergency cyber rules. Money was shifted from connectivity and digital programmes, and grid-connection queues were reordered to favour backup power over new computing load.
+
+Delivery was uneven. Large operators complied quickly; municipal utilities and port contractors complained about cost and staff, and one sensor rollout slipped for lack of cleared personnel. Industry lobbies warned that audit bills would stall investment, while several mayors used the moment to reopen fights over power prices and water use for data centres. The gigafactory and sovereignty files kept moving, but permitting teams were visibly stretched.
+
+By December, hardening had started without yet preventing anything. The public read was anxious rather than reassured: nothing had exploded, but segmentation long assumed to hold had not.

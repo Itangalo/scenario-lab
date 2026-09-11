@@ -1,0 +1,11 @@
+### Informed afterwards
+Washington and Beijing announced a limited pact on securing model weights, restraining autonomous military escalation and controlling a class of biological design tools. Verification was thin but not empty: liaison officers, shared incident channels, a schedule for inspections. Brussels learned the outlines hours before the cameras, not at the table.
+
+The Commission scrambled to turn embarrassment into a mandate. Envoys were dispatched to seek a formal European seat as verification participant and standards co-author, offering evaluation labs, intrusion data from the new registry, and alignment on chip-equipment controls. American and Chinese diplomats welcomed the interest without opening the working groups. Middle-power partners listened more warmly in G7 corridors, but committed to nothing joint.
+
+### The breakaway
+Mid-negotiation, a capital unveiled its own compute deal with a US hyperscaler — preferential access, a local expansion, no European continuity or reporting clauses. At home it was sold as jobs and cheap power for industry. In COREPER it landed as a direct undercut: why wait for shared gigafactories when one government could jump the queue?
+
+Brussels wanted to make top-up funds conditional on re-anchoring the contract to European rules, but no such conditionality mechanism had been established, and no new enforcement measure is introduced in this turn. The Commission could only warn, urge voluntary alignment, and delay any decision on future funding criteria. The capital refused to renegotiate, daring the Commission to act. No second capital followed, partly because accelerated permitting and grid promises held, but the damage was done. Press coverage framed it as Europe begging for a chair while its members sold seats separately.
+
+Domestically, the Shield moved to procurement and the registry kept filling, but only from large operators. Smaller utilities stayed out. Productivity gains from AI assistants continued, muting urgency for security spending, while two data-centre permits remained stuck in court over water and power. Frontier models grew more capable, but the slowdown from superpower restraint was real enough for engineers to notice.

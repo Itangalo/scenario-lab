@@ -1,0 +1,7 @@
+EU's pooled telemetry/pathogen initiative contained February ransomware sweep via poisoned update; autumn automated patching and swarm-detection, pushed by ENISA to hospitals, town halls and ports with emergency funds and mutual-aid crews, prevented second winter cascade. Restoration still uneven — large hospitals/ports in weeks, small municipalities months — amid auditor cost fights; DIGIT hardening standard stayed voluntary.
+
+Open-weight models narrowed gap after mid-spring frontier advance; leading lab then confirmed shift to non-readable internal reasoning, forcing Brussels joint evaluation team to abandon chain-of-thought checks for black-box testing and activation inspection as stopgap, oversight confidence fell further.
+
+US administration freeze continued: lithography/compute talks suspended, gigafactories stuck at pre-permits with empty fenced plots, Brussels kept pooled screening as leverage without access. Sovereignty package still in flight, segmentation crews short on volumes.
+
+Workplace AI plateaued: solid productivity gains in law, accountancy, administration, media, strongest for juniors, without employment fall; seen as finished tools not replacement prelude, lifting voter mood slightly on functioning services.

@@ -1,0 +1,10 @@
+### Holding the line
+July to December 2027 was a maintenance half-year in Brussels. With money tight and permits fragile, the Commission chose not to launch anything new, betting that focus would preserve what was already moving.
+
+The grid drive paid off visibly. The surge funded over the past year completed its first full segmentation of the worst-hit transmission nodes, and autumn money was quietly redirected to what had been missing: backups for small municipalities and tabletop then live exercises run with national authorities and the EU cybersecurity agency. Operators still grumbled about windows and costs, finance ministries about bills, but the lights stayed on through the winter peak. No repeat of last winter's hospital and port paralysis occurred, and mayors who had struggled with manual systems noted the difference.
+
+The evaluation triage effort became the political priority. A small vetted team in the AI Office with the Commission's research centre pressed two leading American labs for logged test access, opened a whistleblower channel, and tried to reproduce leaked benchmark claims on European testbeds. The labs replied politely and shared little, citing safety and commercial secrecy. A December interim note to Parliament essentially said: anomalies unconfirmed, checks continue. It bought time but convinced few.
+
+Factory and supply-chain files drifted on their existing track. Sites in France, Germany, Spain and the Nordics moved through permitting without acceleration, and protection of Dutch equipment know-how stayed diplomatic. Behind the scenes, dependence on foreign compute and models deepened as models grew more capable, running continuous tasks and producing striking technical results abroad.
+
+The public noticed both halves: relief that emergency rooms and grids functioned, scepticism that anyone in Europe could verify what the newest systems could do. Trust remained thin, use remained wide.

@@ -1,0 +1,11 @@
+### A plateau, not a cliff
+The first half of 2028 brought the kind of news Brussels had hoped for and feared in equal measure. Across law firms, accountancies, newsrooms and consultancies, studies confirmed what managers already knew: assistants lifted output, especially for juniors, without triggering layoffs. Unions cautiously welcomed the stability; finance ministries quietly noted that the growth surge once promised to pay for everything else had not arrived.
+
+That flatline shaped the politics of the turn. With power, port and hospital segmentation holding and no repeat of last autumn's blackout scares, interior ministries declared the hardening work done for now. The jointly procured stock of transformers, switchgear and water-plant controls moved from agreement to sheds: still thin, still funded from repurposed money and French, German and Dutch co-financing, but real enough to photograph. Engineers inventoried what could actually be bought; auditors confirmed depots in two regions were stocked.
+
+### Holding on building, moving on cushioning
+The big build stayed stuck. State-aid lawyers picked over renegotiated gigafactory bids, Washington kept monthly chip allocations tight, and with commercial deals cancelled on both sides of the Atlantic, the Commission chose not to force new spending. Officials managed the queue rather than breaking it, diverting permit-linked funds to keep repair stocks filled.
+
+Instead the Commission launched its social cushion. The Workplace Transition and Income Bridge, run through employment and social affairs channels with top-ups to national short-time and retraining schemes, promises wage insurance and rapid vouchers for office workers if the plateau tips into cuts. Employers deploying office systems above a threshold are asked to co-finance vouchers through sectoral deals. Unions called it a first step; business groups warned of paperwork; mayors near planned compute sites asked why workers got vouchers while their power and water complaints went unanswered.
+
+The provenance fight simmered on as soft law. Publishers and funders began demanding disclosure of machine use, Brussels cheered without legislating, and researchers divided between relief and irritation.

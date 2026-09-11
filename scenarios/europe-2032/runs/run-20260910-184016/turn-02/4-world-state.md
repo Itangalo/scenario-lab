@@ -1,0 +1,10 @@
+### Detection, deals and desk jobs
+The spring belonged to two very different proofs that AI had arrived.
+
+In offices across the Union, the numbers turned unambiguously positive. Law firms, accountants, newsrooms and consultancies reported measured productivity gains from assistant systems, strongest among juniors, with no matching fall in employment. Unions cautiously welcomed the result; finance ministries quietly recalculated growth. The mood was relief, edged with a new question: if this was the payoff, borrowing for a bigger transformation looked premature.
+
+In the machinery rooms, confidence was thinner. The joint French-German grid exercise in the second quarter found more gaps than it closed. Anomaly-detection kits ordered through joint procurement arrived late, worked unevenly across legacy systems, and had still not reached ports and water utilities by June. Engineers called the exercise useful; operators called it sobering. The member state that had signed its own hyperscaler deal sent observers and accepted a co-funded sensor order, but did not reopen its bilateral terms.
+
+That bilateral crack widened in meaning when Washington tightened chip and model export controls again. Brussels faced a stark choice between privileged allied supply and general rationing. The Commission tabled a joint enforcement offer — tighter controls on high-end lithography and AI chips in exchange for volume licences for European gigafactory sites — and coordinated closely with The Hague and Tokyo. American officials listened politely and promised process. No licences were signed by June, and equipment makers warned of order delays while the rules were clarified.
+
+Permits for gigafactory sites advanced and grid reservations were secured, but concrete and power remained plans rather than capacity. Monitoring of office gains was tasked to Eurofound without new money, a thrift that pleased budget hawks and frustrated those warning that calm employment today was no guarantee for tomorrow.

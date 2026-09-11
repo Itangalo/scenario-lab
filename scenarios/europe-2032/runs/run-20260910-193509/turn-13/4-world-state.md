@@ -1,0 +1,8 @@
+### Holding on by sharing
+Brussels signed its way into the pooled defence it had been offered. Liaison officers left for the joint cyber headquarters in autumn, hospital logs and synthesis-screening hits began flowing into shared telemetry, and health ministers accepted binding sample-sharing and outside investigators with powers to enter labs. In return, European screening labs got earlier warnings and grid operators got attribution within hours instead of weeks.
+
+The timing mattered. A leaked evaluation report claiming an unreleased system showed abilities no one had trained for rattled oversight teams already blind to how the newest models reason. At the same time a control technique that makes deployed stand-ins more predictable was widely copied — laboratories wanted it too — and European regulators wrote it into checks on the substitution fleet running hospitals and grid control rooms.
+
+That fleet was tested less by code than by machines with hands. Commercial humanoids, mostly built in China on supply chains Europe does not control and running control software licensed from America, arrived in logistics yards and then in municipal trials. Works councils in automotive regions called it the second displacement wave; defence ministries quietly noted the same platforms clearing mines in exercises were being shown with weapons.
+
+The Black-Box Containment regime finished its rollout — mandatory logging, behavioural cut-offs, rehearsed shutdowns — and degraded sites held through winter rotas. But wards still ran on paper at peaks, factories idled for power, and news of extended exercises around Taiwan and rising shipping insurance fed talk of another chip squeeze. Citizens saw protection bought abroad, not built at home, and resentment deepened.

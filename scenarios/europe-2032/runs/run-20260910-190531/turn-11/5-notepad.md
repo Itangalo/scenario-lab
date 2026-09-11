@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Joint Threat Membership and Municipal Hardening −2, EU Middle-Power Supply-Chain Coalition for Compute Access and Joint Evaluation −2, priority −1 not charged (capital below 20, no effect) = −4
+PROPOSAL BONUS: EU Middle-Power Supply-Chain Coalition (cat 8, small) +4 — export_control_escalation fired this turn and coalition answers it directly, with middle_power_coalition window
+LEGITIMACY LENDS: capital 8, sentiment 7 -> +0, capped (capital above sentiment, no lend)
+SOVEREIGNTY: 13 last turn, no category 4 finish, no category 4 in flight +0, middle_power_coalition t11 +2 (largest capacity event, secures), capability rose 1.5 −1 = 14

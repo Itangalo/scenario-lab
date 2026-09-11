@@ -1,0 +1,11 @@
+### The wave breaks
+In February the attack came as warned: a largely automated sweep that moved through municipal IT, hospital administration systems and two grid operators within hours. Ransomware locked citizen portals in dozens of towns; in three regions service desks fell back to paper triage. Attribution statements spoke of model-generated tooling and would take months to firm up.
+
+Defenders were visibly behind. Vendors pushed patches built with the same new coding systems that had sharpened the offensive side weeks earlier, when a leading lab demonstrated a sharp jump in verifiable tasks — code, mathematics, intrusion planning. Hospitals that stayed online did so because they disconnected.
+
+### Isolation holds, unevenly
+The towns covered by the public backstop and drilled in offline operation degraded rather than stopped. Paid continuity teams pulled isolation playbooks, ran triage without networked records, and used rolling sequencing stocks to keep wards credible. Elsewhere, borrowed teams and empty shelves returned.
+
+Brussels moved money under civil-protection and network-security crisis powers. ENISA circulated triage playbooks, health ministers extended co-funding for municipal teams to cover cyber-isolation drills, and rebuild funds were tied to proof of drilled isolation and to limits on autonomous software buying resources on its own. Vendors grumbled but signed; finance ministers confirmed the public backstop as the sole cover where commercial policies now permanently exclude machine-assisted intrusion.
+
+The openly downloadable model in circulation hung over the response. Every containment kit distributed was unrecallable within a week, and coverage said so. Cheap American cloud stayed on under black-box incident reporting; no fight over internals was reopened. A few mayors quietly questioned whether drill premiums were sustainable, and patient groups pointed to survival figures from drilled wards to shame undrilled boards — for now rumour and single local reports, not a break. The crisis work steadied Brussels modestly, but with public mood falling and no new sovereignty capacity added, political room grew only slightly.

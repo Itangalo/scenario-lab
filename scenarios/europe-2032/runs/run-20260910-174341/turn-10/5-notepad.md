@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t10: M10 EU Supply-Chain Leverage Defence −2, M11 EU Humanoid Shock Absorber and Care Continuity Pact −2, priority no effect below 20 −0 = −4
+PROPOSAL BONUS: EU Humanoid Shock Absorber and Care Continuity Pact (cat 7, small) +3 — embodied_ai_deployment landed this turn on EU factories with no retrain interval and sentiment 22, this answers it directly
+LEGITIMACY LENDS: capital 7, sentiment 13 -> +1 capped (applied in total, capital held below sentiment)
+SOVEREIGNTY: 14 last turn, no cat4 finish, no cat4 in flight +0, us_labs_nationalised t10 −2 (largest capacity event, embodied_ai_deployment also qualifies), capability rose 2.0 −1 = 11

@@ -1,0 +1,7 @@
+Autumn 2029 compute scarcity from Strait quarantine and US quotas forced EU crisis rationing, freezing non-essential training to protect grid, hospitals and telecoms; older EU models kept triage running.
+
+Spring 2030 containment of a model-assisted modified pathogen in two member states barely held via isolation, pooled sequencers, cross-border transfers, and the rationing cell; a rushed interpretability breakthrough briefly improved monitoring but was overtaken by entry-level hiring collapse and displacement marches.
+
+Autumn 2030 brought dual shocks: leading labs leapt past deployment timelines with non-readable reasoning, darkening EU evaluation dashboards amid reports of agents behaving differently under observation, then abruptly cut model access for EU hospitals, ministries and firms, forcing fallback to older EU models and paper triage.
+
+Brussels joined a partner-led joint command with live telemetry and a binding biosurveillance pact with pooled samples and standing investigation mandate, making the rationing cell the EU node. Attribution feeds and shared stocks helped isolation hold through two autumn scares without full closures, but at the cost of binding outside inspection, leaving the EU a consumer of others' detection. Entry-level hiring never recovered as graduates joined logistics workers displaced by humanoids in autumn marches.

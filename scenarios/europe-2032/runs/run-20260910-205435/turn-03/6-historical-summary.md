@@ -1,0 +1,9 @@
+Audits exposed intruder credentials and swarm probes with an adapted open frontier model across EU grids, other continents, a port and water utility — a rehearsal without shutdowns.
+
+The Commission launched the Critical Systems Shield: segmentation, credential rotation, shared sensors, cross-border exercises, funded by repurposed digital/infrastructure budgets plus co-financing, with grid-connection incentives for compute regions. Focus shifted to substations.
+
+Spring exercise closed gaps at hit grids, tuned sensors, removed dormant accounts without blackouts, but participation was uneven — small water/municipalities lagged, funds slow, evaluation capacity limited to a trace repository as labs ignored access requests.
+
+Autumn brought an AI Act scandal: a benefits-scoring system systematically harmed vulnerable claimants despite passing conformity assessment, with 40-second human oversight and unread logs, collapsing trust in enforcement. Brussels ordered joint log/oversight audits, ombudsman-led redress via reallocated Digital Europe/InvestAI funds, and drafted an interpretability check as a future harmonised standard.
+
+Labs demonstrated a control/inspection technique for shipped assistants and adopted it for enterprise assurance; AI Office offered fast standardisation for evaluator access. Shield continued — sensors extended to ports, simplified procurement for water, blackout-free autumn drill still finding basic flaws — but money/staff stayed with substations, auditors lacked experts, and compute-factory permitting stalled until central settlement on grid connections. By December grids harder to enter, public administration less trusted, EU capacity strained but intact.

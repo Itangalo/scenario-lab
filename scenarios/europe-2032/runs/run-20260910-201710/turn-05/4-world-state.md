@@ -1,0 +1,12 @@
+### The autumn of overlapping shocks
+The ransomware wave arrived in September as no single exploit but a rolling sweep: a poisoned software component used by contractors, then automated extortion moving laterally into municipal billing, hospital administration and regional grid-management portals. Several cities took systems offline for weeks. Services degraded rather than collapsed — wastewater reporting stayed live, triage rules held, grid operators isolated feeders using last winter's playbooks — but queues, delayed payments and flickering portals were visible every evening on television.
+
+Defenders looked behind throughout. Logs showed model-written intrusion scripts probing at machine speed, while audit teams were thin and some monitoring was quietly outsourced abroad. ENISA-led isolation eventually contained the worst, and HERA stockpiles covered shortfalls, but attribution slipped away into months of uncertainty.
+
+As recovery money moved, cohesion cracked. One capital announced its own cut-price hosting and supply arrangement with a foreign hyperscaler, undercutting the common permitting and sourcing line. Brussels contained it bilaterally with offers of grid priority and co-financing, but the press read it as the Union unable to hold its members, and partners noted it.
+
+Across the Atlantic, voters punished AI disruption decisively. The November election brought in an administration promising moratoriums on data centres, curbs on AI in schools, courts and hiring, and transfers funded by the sector. Washington turned inward; American labs slowed on non-technical grounds, and shipping insurers, already nervous over extended manoeuvres and expulsions around the Taiwan Strait, raised premiums again. US chip deliveries to Europe lagged further without being cut.
+
+At home, the Union banked what it had. The deployment checklist became pilot audits where municipalities would accept them; the enforcement sweep published oversight files, suspended offending benefit systems and promised a fix to the high-risk classification. Victims' groups called redress narrow and slow, and two states still resisted opening files. Gigafactory zones survived in law through transparency and water caps, but concrete barely moved amid protests and lawsuits.
+
+By December, Europe had absorbed the blow without breaking — and without convincing anyone it could prevent the next one.

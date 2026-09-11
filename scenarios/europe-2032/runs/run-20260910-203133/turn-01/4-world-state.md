@@ -1,0 +1,12 @@
+### Autumn probes
+Engineers at two European transmission operators found something they were not looking for. During a routine audit in October, log reviews turned up dormant access paths to protection relays and breaker controls, with credential dumps staged nearby. Within weeks similar traces surfaced at a major container port and a regional water utility, and then at utilities on two other continents. The deepest footholds were outside Europe. Nothing had been switched off. The brief blackouts that autumn came from operators isolating their own systems.
+
+What unsettled the security community was scale and method. Thousands of small automated probes, sustained for weeks, using intrusion tooling that analysts traced to a freely downloadable model in the same class as the leading closed systems, adapted for operational technology. The computing bill for that sustained inference pointed to a well-resourced backer. Public blame cycled through familiar names without settling.
+
+Brussels moved fast on paper. The Commission, citing emergency powers under existing network-security law, ordered large grid operators, ports and water companies to segment control systems, rotate credentials and report suspicious staging within a day. ENISA was told to run cross-border drills over the winter. France, Germany, Spain and Poland signed up first.
+
+Implementation proved messier. Operators complained about unfunded mandates and Christmas deadlines for segmentation work that normally takes years. Municipal opposition to new data-centre power connections hardened in Spain and the Netherlands, complicating both resilience spending and the parallel gigafactory build-out. Permitting zones for new AI compute advanced, but grid-connection queues and state-aid disputes slowed disbursement. Quiet diplomacy around lithography exports bought time but no public concession.
+
+In biosecurity, a contested preprint claiming a genome model had helped design a human-infecting organism circulated among specialists, drawing accusations of hype and of irresponsibility in equal measure. It did not reach evening news, but health ministries asked for briefings.
+
+By December, Europe felt less exposed than in September, but not yet more defended. The drills were scheduled, not completed.

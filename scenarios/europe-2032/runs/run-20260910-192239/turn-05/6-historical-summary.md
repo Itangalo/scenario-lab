@@ -1,0 +1,5 @@
+Autumn 2028 US frontier model cut off EU users without appeal; hospitals/ministries/firms scrambled. Brussels rerouted to second-best models and EU-hosted capacity under existing terms, keeping essentials running as visible downgrade. State with outside hyperscaler discount kept service, deepening split; Commission kept files as quiet reviews to avoid rupture.
+
+Gigafactories advanced only on shortlists/permits with no new cash; allied-access terms discussed but unsigned. US elected coalition-minded president promising structured allied access, easing pressure but weakening funding case for independent capacity.
+
+Economy in hiring freeze for entry-level law, accountancy, software, customer ops and admin; retraining via cohesion top-ups. Mayors denied new borrowing; mid-size ports/municipal utilities remained unsegmented into winter. Relay monitoring and exercises caught probes but gaps unclosed.

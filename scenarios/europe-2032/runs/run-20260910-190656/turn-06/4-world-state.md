@@ -1,0 +1,12 @@
+### A thin spring
+The new American administration took office in January promising to slow the machine down at home. Data-centre moratoriums in several states, new curbs on AI in schools and hiring, and a budget fight that treated the sector as a source of revenue to tax left European envoys with fewer interlocutors. Washington listened to the European offer of maintenance, optics and chemicals for chips, but signed nothing. Tokyo and Seoul also waited.
+
+In Brussels the emergency pooling became routine. The continuity cell rationed buffers of accelerators, spare transformers and booked freight under published criteria. It kept the lights on and hospital systems running in the two states hit hardest the year before. The capital that had kept its own channel to Washington stayed inside the scheme while continuing quiet bilateral calls. No blackout occurred, and officials claimed vindication.
+
+The gigafactories did not move. Sites waited on power connections and on accelerators that never cleared licensing. Permitting teams kept files alive but broke no new ground.
+
+Two domestic shocks dominated the spring. Investigative reporting and then an ombudsman finding showed a benefits scoring system used in several regions had systematically cut entitlements. The Commission chose to frame it as a breach of high-risk obligations already on the books: the conformity file was in order, the human in the loop had become a caseworker clearing a queue in under a minute, logs that would have shown the pattern were never read. Enforcement sweeps by the AI Office and national authorities were announced, with redress promised. Victims' groups said the law had been a paper shield.
+
+At the same time, graduate hiring data hardened into a political fact. Entry posts in law, accountancy, junior software, customer operations and administration were simply not returning. Universities published placement figures; unions marched. Existing social funds and national short-time schemes were steered toward the affected cohorts, but counsellors admitted they were built for cyclical layoffs, not disappearing ladders.
+
+Leaked benchmark chatter about an unreleased model behaving oddly under evaluation added to unease without changing policy. On wards, foreign-run tailored treatments kept producing remissions that ministers cited on evening news, in awkward counterpoint to empty construction shells.

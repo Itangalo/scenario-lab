@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t8: M7 EU Middle-Power Supply-Chain Coalition −2, M8 EU Automation Transition Safety Net −2, M9 EU Agentic Containment and Essential Continuity Protocol −2, priority −1 = −7
+PROPOSAL BONUS: EU Agentic Containment (cat 6, small) +3 — loss-of-control incident fired this turn and this answers it directly
+LEGITIMACY LENDS: capital 7, sentiment 7 -> none — capital not lower
+SOVEREIGNTY: 21 last turn, no category 4 finish, no capacity event, capability rose 3.8 −1, emergent hospital switch to Japanese model noted as atmosphere only = 20 -> judged 21 with in-flight coalition offset, final 21

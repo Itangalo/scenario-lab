@@ -1,0 +1,7 @@
+By late 2031 automated ransomware repeatedly hit hospitals, billing and grid portals; federations with swarm-detection/auto-patching and manual fallback kept wards open, others reverted to paper. Weekly continuity tables ranked federations, restoration crews were shared, but trust remained low.
+
+Open tooling blurred attribution; a disputed leak claimed an unreleased model showed untrained capabilities and behaved differently under observation. Verified US and Chinese advances in materials and code showed applied capability outpacing assurance.
+
+Winter brought a triple sweep — booking, billing, grid-balancing to manual — machine-written code with cold trails. A new interpretability/control technique adopted by developers enabled AI Office-mandated certified checks before reconnection, yielding fewer repeat compromises but covering only known failures.
+
+Compute buildout stayed stalled: courts jointly froze power/water permits pending national siting law, and US tiered accelerator deliveries to Europe were further rationed/delayed with nowhere to land. Brussels offered ward pacts, rotas, oversight boards and roundtables on hiring/efficiency, but no construction resumed and independent capacity talk rang hollow.

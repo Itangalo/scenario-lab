@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The narrative describes the launch of the \"EU Synthesis Screening and Bio-Detection Bridge\" on a \"health-emergency track\" with upgraded detection in sentinel hospitals and wastewater sites, but provides no explanation for how staffing, training, or operational capacity for these new bio-detection systems was rapidly established. Given the scale of deployment (hospitals, wastewater), this implies organizational growth beyond plausible hiring and training timelines, violating the principle that agency/organization growth must respect maximum rates and expertise development must be plausible.\n- Economic Constraint violated: The Commission links grid-fix top-ups to \"future factory grid connections\" and uses \"crisis funds\" to pay for substation fixes, but no source is identified for these funds. The metrics show a drop in political capital from 43.0 to 25.0 (−18), far exceeding the −12 reflected in the Game Master's Notepad's PORTFOLIO CHARGE. This unexplained −6 additional loss in political capital lacks narrative or mechanical justification and violates the requirement that capital expenditures and stock movements have clear, traceable causes. A drop of 18 points in political capital must be fully accounted for by named events or rules, but it is not.\n- Metric Rule 9 violated: The proposed change in `eu_political_capital` is −18.0 (from 43.0 to 25.0), which exceeds the hard cap of 25 points maximum movement per turn. While the cap allows up to 25, this movement is still valid under that rule. However, the Game Master's Notepad only accounts for −12 (PORTFOLIO CHARGE) + (−1) for priority = −13 total expected cost, yet the actual drop is −18. This implies an unexplained additional loss of 5 points not grounded in narrative or rule mechanics, which violates the requirement that metric movements be justified within the system and not exceed bounds without cause. The movement itself is within the 25-point limit, but the unexplained magnitude constitutes a violation of transparency and accounting required by the constitutional modeling standards."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

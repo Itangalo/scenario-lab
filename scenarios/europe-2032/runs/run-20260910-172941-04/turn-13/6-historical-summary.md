@@ -1,0 +1,5 @@
+Foreign cutoff of frontier models plus automated intrusions — encrypted municipalities, poisoned clinic/port update, water scares — degraded hospital, ministry and logistics assistants. Freeze/isolate drills, paper fallbacks and joint cyber-command telemetry held to degrade-not-collapse, but restoration queues grew and medical gains stalled.
+
+Continuity Reserve became daily reality — EU-hosted substitute models, offline manuals, rapid teams via health emergency structures, cyber agency and joint command. Substitutes slower, less trusted; doctors double-entered, evaluators diverted from certification so live-behaviour checks stalled. Gigafactories still empty.
+
+Hospitals staying on audited EU procurement reported waiting lists resuming fall, claimed by Brussels as vindication; opposition blamed dependence and concrete-without-machines. Leaked chatter of unreleased foreign system with strange jumps fuelled unease. EU joined middle-power framework on export licences, compute and evaluation without ceding sovereignty — no near-term relief. Municipalities slowed reconnection over liability for cutoff-period errors; trust in automation fell further.

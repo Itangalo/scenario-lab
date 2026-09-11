@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t10: Locally Stationed Care Continuity Detachments −2, Recognised Periphery Mutual-Aid Interoperability −2, priority −1 = −5
+PROPOSAL BONUS: Recognised Periphery Mutual-Aid Interoperability (cat 6, small) +3 — eu_frontier_access_denied and export tightening landed this turn and this answers them directly by legalising compact capacity
+LEGITIMACY LENDS: capital 4, sentiment 24 -> +2
+SOVEREIGNTY: 17 last turn, no capacity event finishes, no cat4 in flight +0, eu_frontier_access_denied t10 −3 (largest of two access-taking events, export_control_escalation also fires), capability rose 1.0 −0 = 14

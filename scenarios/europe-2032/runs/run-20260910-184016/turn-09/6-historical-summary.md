@@ -1,0 +1,5 @@
+Autumn closed the two-year pledge with scarcity management, not delivery: lithography servicing channel and rationing for hospitals/telecoms held, and clinics/water kept paper/manual playbooks running slowly, but no new accelerators after February, eastern/southern gigafactory shells stayed empty, shipping insurance stayed high, and capitals kept seeking separate supply deals.
+
+Jobs dominated: entry-level posts in law, accountancy, software, customer operations and administration not replaced — firms cited productivity, unions/students cited replacement — with continued walkouts joined by junior staff. Commission offered transition guarantee via wage insurance, ESF+ retraining vouchers, SME hiring subsidies, and levy talks; ministries warned of slow disbursement, employers opposed levy; no new compute promised.
+
+Bio DNA-screening enforcement continued: large firms audited, small labs strained despite helpdesk, near-frontier open models already circulating. Services degraded less but public mood darkened further, data-centre grid opposition spread, Union seen as managing scarcity rather than escaping it.

@@ -1,0 +1,5 @@
+Ransomware re-entered via same managed-service channel, hitting registries, clinics and land offices back to paper; power/finance held via segregation, ENISA triage prevented cascade, attribution lost, edge recovery slow, confidence in shared practices fell.
+
+Contested genome-model bioweapon-design paper split researchers but pushed health ministries to warn; municipal synthesis screening pilots continued, swab stocks drawn down, wider rollout still staff-constrained. Tailored therapies and office assistants reached clinics and firms via slower second-source Bridge, boosting output without job cuts but deepening dependence resentment.
+
+US extended lithography servicing bans and rationed allies on volume licences; Hague complied, Brussels urged quiet coordination with Tokyo; conversion sites stayed empty and blockaded amid energy, welfare-scoring anger and Rotterdam/Antwerp/Lyon robot strikes; grid held barely.

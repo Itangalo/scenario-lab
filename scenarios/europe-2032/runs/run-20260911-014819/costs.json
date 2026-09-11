@@ -1,0 +1,99 @@
+{
+  "total_cost_usd": 0.0062,
+  "total_tokens": 63645,
+  "by_turn": [
+    {
+      "turn": 10,
+      "cost_usd": 0.0062,
+      "tokens": 63645,
+      "prompt_tokens": 44544,
+      "completion_tokens": 8488,
+      "by_task": {
+        "events": {
+          "cost_usd": 0.0035,
+          "tokens": 38336,
+          "prompt_tokens": 21485,
+          "completion_tokens": 6242,
+          "calls": 3
+        },
+        "actor:eu": {
+          "cost_usd": 0.001,
+          "tokens": 9136,
+          "prompt_tokens": 8407,
+          "completion_tokens": 729,
+          "calls": 1
+        },
+        "metrics": {
+          "cost_usd": 0.0014,
+          "tokens": 12735,
+          "prompt_tokens": 11526,
+          "completion_tokens": 1209,
+          "calls": 1
+        },
+        "constitutional_referee:attempt_1": {
+          "cost_usd": 0.0002,
+          "tokens": 2225,
+          "prompt_tokens": 2213,
+          "completion_tokens": 8,
+          "calls": 1
+        },
+        "summary": {
+          "cost_usd": 0.0002,
+          "tokens": 1213,
+          "prompt_tokens": 913,
+          "completion_tokens": 300,
+          "calls": 1
+        }
+      }
+    }
+  ],
+  "by_task_total": {
+    "events": {
+      "cost_usd": 0.0035,
+      "tokens": 38336,
+      "prompt_tokens": 21485,
+      "completion_tokens": 6242,
+      "calls": 3
+    },
+    "actor:eu": {
+      "cost_usd": 0.001,
+      "tokens": 9136,
+      "prompt_tokens": 8407,
+      "completion_tokens": 729,
+      "calls": 1
+    },
+    "metrics": {
+      "cost_usd": 0.0014,
+      "tokens": 12735,
+      "prompt_tokens": 11526,
+      "completion_tokens": 1209,
+      "calls": 1
+    },
+    "constitutional_referee:attempt_1": {
+      "cost_usd": 0.0002,
+      "tokens": 2225,
+      "prompt_tokens": 2213,
+      "completion_tokens": 8,
+      "calls": 1
+    },
+    "summary": {
+      "cost_usd": 0.0002,
+      "tokens": 1213,
+      "prompt_tokens": 913,
+      "completion_tokens": 300,
+      "calls": 1
+    }
+  },
+  "by_model": {
+    "meta/muse-spark-1.3-contributor": {
+      "cost_usd": 0.006,
+      "tokens": 61420,
+      "calls": 6
+    },
+    "qwen/qwen3-235b-a22b-2507": {
+      "cost_usd": 0.0002,
+      "tokens": 2225,
+      "calls": 1
+    }
+  }
+}

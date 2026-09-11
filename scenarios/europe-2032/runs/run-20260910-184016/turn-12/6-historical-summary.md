@@ -1,0 +1,5 @@
+First half of 2032 brought AI investment pullback: valuations halved, two planned data-centre build-outs cancelled, no new accelerators, gigafactory shells stayed empty.
+
+A near-frontier open model leaked and spread widely; hospitals in three rationed states and telecoms switched to it by necessity for triage/logistics, degraded but predictable, with DG SANTE paper playbooks retained and DG CNECT/ENISA rationed pools holding. Single EU licensing channel held: The Hague did not extend lithography servicing halt to older tools after Brussels refused bilateral spares deals, though two capitals kept probing them.
+
+US lab breakthrough on AI-designed solid-state electrolyte was landmark but unusable for Europe without gigascale refining. Continuity held via incident reporting, post-October isolation drills, slow wage-insurance payments and waiting-list gains in two regions; trust thin, grid protests hardened, graduate hiring frozen.

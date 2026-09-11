@@ -1,0 +1,5 @@
+Jul-Dec 2031: AI Office held clinical gate — published full error dossiers, kept two supervised pilots with physician co-sign and manual fallback on limited wards, rest stayed manual; ENISA telemetry stopped another mis-routed dosing aid. Hospitals endured degraded: overtime disputes, slowdowns, burnout, longer waits, resilience fund covering beds; cross-border returnees brought unparsable files requiring repeat tests.
+
+Externally, machine-proved battery advance verified in US and China underscored distant AI competence without explainability. Taiwan-linked freight/chip insurance repricing raised spares and grid hardware delay warnings without stopping shipments.
+
+Response was small continuity reserve — stockpiled spares, EU-law cloud burst, health-energy mutual-aid drills funded from extended municipal envelope; first November drills ragged with inventory incompatibility. Chokepoint export-licence alignment continued; US offered procedure-not-access, two capitals kept side cloud deals, no new European compute online. Risk shifted from diagnosis to logistics.

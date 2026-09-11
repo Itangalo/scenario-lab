@@ -1,0 +1,7 @@
+Autumn 2028 brought twin dependence shocks: US breakthrough in AI-designed tailored cures, accessible to EU clinics only on US infrastructure/terms, and volume arrival of commercial robots — Chinese hardware (>half supply chain) with US control models — trialled in Rotterdam/Hamburg logistics, threatening carmakers/machine-tools amid union warnings of no retraining interval.
+
+US anti-AI backlash won election; incoming administration promised data-centre moratoriums, school/court restrictions and sector levies for job guarantees, turning inward and slowing frontier work for non-compute reasons.
+
+Graduate anger escalated to blockade in one member state shutting university-industry labs and pausing a gigafactory-linked data-centre permit; mediation dragged, permits open elsewhere. Chip-tool leverage still absent: chokepoint compromise parked without vote, Tokyo/Seoul spares talks unsigned at staff level.
+
+Brussels shield response expanded but remained small: accelerated vouchers/wage-insurance via reprogrammed social funds now disbursing, first checks certified by assurance cell with energy/hospital examiners, and new Graduate Transition Guarantee (paid traineeships/top-ups tied to entry hiring, conditional on reopening) via Employment Council unspent loans. Entry jobs kept falling, faster with robots; cures underscored dependence.

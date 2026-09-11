@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Rogue-Agent Containment and Essential-Service Islanding Protocol −2, priority −1 = −3
+PROPOSAL BONUS: EU Rogue-Agent Containment and Essential-Service Islanding Protocol (cat 6, small) +4 — catastrophic occupant established and open-weight frontier release this turn, answers both directly
+LEGITIMACY LENDS: capital 7, sentiment 5 -> none (capital higher, no term)
+SOVEREIGNTY: 11 last turn, no category 4 finish, no category 4 in flight +0, middle_power_coalition t11 +2 (largest capacity event, member_state_defection t11 also qualifies but smaller net), capability rose 2.0 −1 = 12

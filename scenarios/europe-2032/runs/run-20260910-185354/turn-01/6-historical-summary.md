@@ -1,0 +1,7 @@
+Autumn brought a pre-positioning shock: intruders found inside two European transmission operators — with breaker credentials harvested, relays mapped, and probe swarms staged in supposedly isolated OT networks — with the same fingerprints in a major container port and a water utility. No hostile switch-off occurred; brief blackouts resulted from engineers islanding systems to clean them.
+
+Attribution remained contested between U.S. claims of state sponsorship and evidence of a tuned publicly downloadable frontier model, paralyzing Council response as interior ministers demanded action and energy ministers warned against panic.
+
+The Commission launched an emergency hardening drive for grids, ports and water, with ENISA teams deployed to French, German and Dutch operators, Rotterdam and Antwerp first, ordering mandatory segmentation audits and credential rotations with co-funding. Operators protested costs and timelines, and new data-centre grid connections slowed under added security certification.
+
+Gigafactory and tech-package work continued via DG CNECT but lost attention and staff; quiet diplomacy held the line on Dutch lithography exports without resolving U.S. pressure. Public trust in infrastructure readiness for autonomous software fell amid media coverage of control rooms and substations, sharpening local opposition to energy-hungry computing sites, while labs advanced longer-horizon agents on three-month cycles, widening the capability-assurance gap.

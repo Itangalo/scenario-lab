@@ -1,0 +1,9 @@
+Through 2030 Brussels held with no new money, rolling forward vouchers, hiring credits, wage insurance and guarantees that kept graduates in posts but left intake empty and delivery uneven.
+
+Spring brought audited AI successes in triage/permits, plus control conditions; a small replication fund for ten regions launched with EU hosting/certification but no jobs/hardening money, uptake ragged, job centres failed, data-centre blockades delayed work.
+
+Autumn brought rehearsed multi-state automated cyberattack on health records, appointments, and municipal contractors. Drilled cities held on paper/generator fallbacks; elsewhere closures and queues. Attribution unresolved. Simultaneously data-centre/substation blockades in Spain, Netherlands, France slipped builds, raised costs, forced escorts.
+
+Brussels offered nothing new: graduate holdover ended, replication narrowed to two audited health models where hosting accepted. A handful of clinics cut waits but were erased politically by outages. Capitals and Brussels blamed each other; by December services degraded, replication largely on paper, Union survived without new vote.
+
+First half 2032 brought no new sweep; services degraded but stable. US labs' method for predicting/certifying model behaviour was adopted without new law by Brussels evaluation office for the two health models; certificates published, auditors signed off, clinic-queue gains briefly visible. University studies showed measured office productivity gains, strongest for juniors, with employment steady — relief for staff, awkward for ministries expecting transition funds. Chinese-demonstrated cheaper catalyst/battery route noted for later tenders, no procurement impact. Data-centre fences still needed police escorts, costs slipped, unconfirmed tampering/overtime-refusal rumours kept mayors nervous. Voucher/wage-insurance paid only where job centres functioned. No recovery claimed; line held.

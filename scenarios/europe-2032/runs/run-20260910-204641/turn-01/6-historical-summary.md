@@ -1,0 +1,5 @@
+Autumn audits revealed coordinated intrusions into power grids in two EU states plus North America and Asia: weeks-long presence, relay mapping, breaker credential theft, and thousands of automated probes using a tuned open downloadable model at state-backed scale. No outage was caused by attackers; brief blackouts resulted from defensive isolation. No actor claimed responsibility.
+
+The Commission invoked cyber and critical-entity laws to launch a hardening programme for power, ports, water, and telecoms, prioritizing affected grid operators, and re-sequenced AI factory permits behind substation upgrades despite industry and regional opposition. The EU secured written frontier-model access guarantees — withdrawal notice and defensive-testing rights — touted as bargaining success.
+
+A new open release matching the closed frontier spread widely, making swarm intrusion tooling unrecallable, while AI-designed phages prompted calls for a publication freeze. By December grid segmentation had begun but exercises remained theoretical, detection upgrades were delayed, and engineers warned future probes could turn destructive.

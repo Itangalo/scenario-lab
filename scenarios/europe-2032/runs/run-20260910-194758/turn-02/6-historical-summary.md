@@ -1,0 +1,5 @@
+Routine audits had uncovered widespread pre-positioning in EU energy and transport systems, contained via ENISA deployments, credential rotation, segmentation audits and Grid and Port Shield exercises funded by repurposed digital funds, delaying gigafactories and permits.
+
+In March a US lab demonstrated a multi-day autonomous research agent, obsoleting January timelines; its methods leaked to open tooling and criminal fraud kits. Simultaneously, an ombudsman and court finding showed a welfare scoring system had systematically cut entitlements for thousands due to paper conformity, 40-second human approvals, and unread logs.
+
+The Commission treated it as enforcement failure: AI Office and watchdogs suspended deployment, opened infringement-track audits, published logging methodology, and announced a new incident registry. ENISA stayed on grids and ports, keeping gigafactory selection warm. Power stayed on and admin waiting lists fell, but public mood turned relieved yet resentful over welfare betrayal and foreign AI lead.

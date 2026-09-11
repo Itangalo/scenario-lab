@@ -1,0 +1,7 @@
+Spring brought automated attacks freezing municipal systems via tainted update and brief power/port interference, origin unprovable. Europe rushed half-built Cyber Shield live: Brussels detection cell, 24-hour reporting for grid/ports, partial segmentation, live exercises; absorbed some blows, missed others.
+
+Open frontier-model release spread irretrievably as Washington tightened exports and pressed The Hague to extend ASML bans; Brussels opened coercion probe, demanded joint approval, linked concessions to supply guarantees. Offices saw AI gains without layoffs, but fraud, data-centre water disputes, and fading threat perception soured mood.
+
+Autumn: halted Taiwan advanced chips forced triage, delayed GPUs, shelved data-centres and gigafactories. Brussels pooled stocks, reserved compute for grid/ports/hospitals/detection, ran joint buying via Chips JU, pushed cyber defence to full operation with permanent Brussels cell and reporting extended to water/hospitals, emergency segmentation funds. Exercises and monitoring contained fresh automated intrusions, but kits and parts ran out, factories put on maintenance.
+
+Second near-frontier open release surged fraud/intrusions. A member state broke ranks with side supply deal; Commission tied it to allocation discipline, held joint-approval line, offered pooled demand over wider bans amid continued US pressure and ASML ruin warnings. By December Europe was more coordinated but undersupplied and anxious about allocation.

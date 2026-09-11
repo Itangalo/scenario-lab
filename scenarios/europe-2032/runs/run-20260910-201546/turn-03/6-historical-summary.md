@@ -1,0 +1,7 @@
+Autumn 2027 brought cascading municipal ransomware in three member states and a backdoored network-management update affecting multiple operators; joint sensors half-installed and reserve secondees were re-tasked to containment, forensic licences replaced monitoring procurement, and cross-border teams deployed. Grid operators isolated quickly so power stayed on, but town-hall and hospital disruption lasted weeks; recovery was manual, attribution open with machine-generated intrusion scripts noted.
+
+The contested genome-model biosecurity paper went public; without settling validity, health agencies used existing funds for upgraded sewage sampling, faster hospital reporting and pre-positioned stocks in the five drilled states, but staffing overlapped cyber recovery and data-centre grid connections were paused to free engineers.
+
+A labour-market review showed AI lifting output per person in professional services without employment falls, framing tools as helpful not transformative and cooling boom hopes to fund AI factories.
+
+By December services restored, backdoor mapped not closed, detection thresholds expanded to biological findings; activity high but confidence in preparedness did not rise.

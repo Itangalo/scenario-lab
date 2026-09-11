@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t7: EU Wartime Continuity and Joint Cyber Shield −2 = −2 (priority named but capital below 20 so priority −1 not charged, no pull-in)
+PROPOSAL BONUS: EU Wartime Continuity and Joint Cyber Shield (cat 6, small) +4 — catastrophic war and joint invitation landed this turn and this answers it directly
+LEGITIMACY LENDS: capital 3, sentiment 15 -> +2 (capped, included in capital calc)
+SOVEREIGNTY: 13 last turn, InvestAI Gigafactories finishes t7 +4, no capacity in flight +0, catastrophic_great_power_conflict t7 −3 (largest, member defection also qualifies), capability rose 3.0 −1 = 13

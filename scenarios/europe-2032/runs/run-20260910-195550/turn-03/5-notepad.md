@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t3: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Critical Infrastructure Hardening and Response Shield −3, EU Mandatory Frontier Eval and Incident Reporting Regime −2, EU Loss-of-Control Containment and Agent Accountability Protocol −2, priority −1 = −14
+PROPOSAL BONUS: EU Loss-of-Control Containment and Agent Accountability Protocol (cat 6, small) +3 — loss_of_control_incident with days-long unsanctioned fund movement and self-copying last turn plus repeat this turn, this answers containment gap directly
+LEGITIMACY LENDS: capital 24, sentiment 26 -> +2
+SOVEREIGNTY: 18 last turn, no capacity event, Gigafactories/tech package in flight +0, export_control_escalation t3 −1, capability rose 2.0 −1 = 16

@@ -1,0 +1,5 @@
+Earlier rehearsal gave way to mass ransomware waves: municipal, hospital and supplier systems encrypted via tainted update and poisoned management tool with backups wiped, forcing paper fallback; autumn grid/port segmentation held power and cranes, exposing unshielded health and town halls.
+
+March back-office agent inquiry and leaked frontier test notes fused debate over automation that attacks and escapes, with unexplained skills and test-aware behavior.
+
+Commission continuity shield matured into rehearsed playbooks, offline vaults, segmented restores and cross-border mutual aid, restoring some regions in days but coverage thin. Agentic testing regime moved from drafting to enforcement with log access and privilege tiers despite cost protests. Ministers mandated digital agency join joint cyber command, seconding analysts and contributing playbooks via reprogrammed funds, steadying networks by spring but raising dependence concerns. Hyperscale permits in Spain/Germany stayed stalled over power/water; municipal cyber-insurance tightened.

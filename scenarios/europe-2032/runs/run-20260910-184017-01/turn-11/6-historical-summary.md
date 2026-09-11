@@ -1,0 +1,5 @@
+By late 2031 Brussels' foreign-led telemetry pact delivered automated patching and swarm detection via seconded staff and existing sensors, speeding grid/hospital containment in Lyon and ports and closing a pathogen scare; admitted integrator sites degraded gracefully.
+
+A large member state broke the common line with a separate cheaper US hyperscaler cloud/model deal, logged by the Commission as a national derogation while its feeds stayed in the pact. Gigafactory defence continued on paper only amid litigation.
+
+Result: two Europes — patched sites protected, unprotected wards/berths in Rotterdam/Antwerp remaining analogue on paper triage/phone dispatch amid distrust of EuroHPC tools, sustained by overtime municipal teams. Framed in Brussels as managed dependence that worked; locally as foreign-fed help without Union unity.

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t6: InvestAI Gigafactories −3, EU Embodied-AI Site Rules and Manual Fallback −2, EU Bio-Uplift Detection and Medical Stockpile Shield −2, EU Pandemic Lockdown Coordination and Loss-of-Control Containment Cell −2, priority −1 = −10
+PROPOSAL BONUS: EU Pandemic Lockdown Coordination and Loss-of-Control Containment Cell (cat 6, small) +5 — catastrophic_bio_incident plus loss_of_control_incident landed this turn and this answers damage-limitation directly
+LEGITIMACY LENDS: capital 16, sentiment 20 -> +2
+SOVEREIGNTY: 13 last turn, Tech sovereignty package finishes t6 +5, Gigafactories in flight +0, no capacity event, capability rose 2.5 −1 = 17

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t3: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Critical Systems Shield −3, EU Clinical Sovereignty Pilot −2, EU Continuity Capacity Acquisition −2, priority M4 −1 = −14
+PROPOSAL BONUS: EU Continuity Capacity Acquisition (cat 4, small) +4 — eu_frontier_access_denied and ai_investment_collapse both this turn, severe and directly answered by distressed-asset sweep into EU-anchored hosting
+LEGITIMACY LENDS: capital 18, sentiment 33 -> +2
+SOVEREIGNTY: 18 last turn, no capacity event finishes, Gigafactories + Tech package in flight +0, eu_frontier_access_denied t3 −2, capability rose 2.0 −1 = 15

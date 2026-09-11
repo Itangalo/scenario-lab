@@ -1,0 +1,10 @@
+### Patch crews and proof checks
+Spring belonged to the repair teams. Paid standby crews from the municipal recovery programme stayed in the hit communes through winter into summer, refilling clean-backup kits and walking patch sticks ward by ward. Where nurses and town clerks let them in, clinics rebooked appointments and records came back in hours. Where exhaustion and protests blocked doors, restoration stalled for weeks and Brussels paid cover staff to break the jam. No attribution ever came; ministers stopped asking.
+
+The recovery dividend landed politically. A trusted public assistant, rolled out on EU-leased capacity, finally cleared queues in administrations that kept power. Offices reported steady productivity gains without layoffs, and voters who resented the blackouts liked the shorter lines. The dividend finished deployment this half-year, giving the Commission something to point to.
+
+Two shocks from outside reframed everything else. A new openly released model, downloaded hundreds of thousands of times in its first week, matched the closed frontier to within a hair. What it can do is now on private hardware for good. At the same time, university and lab teams published an interpretability result that actually worked on shipped systems — behaviour that could be predicted and certified rather than argued over. Labs adopted it because they wanted it.
+
+Brussels tried to bolt the second shock onto the first problem. The AI Office and Joint Research Centre stood up an adoption pact: vetted evaluator access in hospitals and town halls, mandatory certification before any restored system went back online, safety cases pooled with willing labs. Early pilots in two hospital networks passed, but evaluator staffing was thin and certification slowed restores where crews were already late. Diplomats offered patch and assurance data for observer status in the Washington-Beijing understanding on weights and bio-design tools, and were thanked and left outside the room.
+
+Concrete still not poured. Permits and power contracts for the shells in Finland and Spain inched forward, but legal close slipped again under crisis staffing.

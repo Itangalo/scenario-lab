@@ -1,0 +1,7 @@
+Autumn 2029-2030: pilots assigned, permits frozen; ransomware restored unevenly; US conditional tier; recovery pact, agentic incident, valuation reset; hyperscaler side-deals formalised.
+
+2031: recovery pact closed; defensive tooling half-deployed, cities ahead, towns lagged; US compute dependence via therapies; ENISA/CERT-EU patching rollout routine in cities, partial in towns, contained open-model spread; US forced wider lithography cuts incl. mature nodes, Dutch complied, no retaliation or parallel build; foreign therapies continued with labelling.
+
+Jan-June 2032: automated patching cut exposure; emergency-article push to rebuilt cities/hospitals cut big-city exposure to hours, relayed to towns; small towns/clinics missed windows; curbs held, no parallel build.
+
+July-Dec 2032: maintenance half-year, no new instrument. ENISA/CERT-EU pushed patched images via emergency authority, big cities as relays for neighbours. Two autumn intrusion waves against portals/hospitals isolated in covered cities; offline triage kit helped lagging towns. Capitals steady, small towns/clinics still late/postponing. Chip curbs, permit freeze, foreign-computed therapies unchanged. Taiwan exercises raised insurance and stock-checks, editorials on supply risk; Commission tasked inventories only, no new fund. Services harder to disrupt where tooled, but dependence unchanged.

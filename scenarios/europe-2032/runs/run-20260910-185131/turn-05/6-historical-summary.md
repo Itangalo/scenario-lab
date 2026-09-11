@@ -1,0 +1,5 @@
+Audits closed on the two breached transmission operators for segmentation and credentials, releasing co-financing for hardened grid connections; US joint exercises continued. Certification confirmed two software stacks with future aid conditional on them, but smaller grid, port and water operators deferred remediation and vendors protested slow, site-specific process.
+
+Fallback reserve remained warehouses and rosters; autumn cross-border drill repeated radio and call-up failures, letting finance ministries block funding. Cohesion held formally with side hyperscaler deal outside joint procurement; Commission tied factory siting and grid ties to discipline, kept re-entry offers, computing-site permitting slowed.
+
+In November the US elected a president pledging to hold advanced AI as strategic asset with federal review, tighter export controls, and tiered, security-reviewed foreign access. Brussels reacted with anxiety over dependence; Commission added no new programmes, prioritized control over domestic computing and siting, and tasked staff to map exposure to tiered rationing ahead of the new administration.

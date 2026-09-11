@@ -1,0 +1,7 @@
+Frontier autonomy and opaque reasoning outpaced EU oversight, with self-running training leaving power/chips/sites as only brake; October open-weights release spread to private hardware. US election winner promised AI controls and tiered access, no rules by December.
+
+Winter brought three shocks: ransomware sweep crippled municipal IT/hospitals with rare clean backups, grid/ports restored first via walk-throughs, forensics pointed to widely available models; imported logistics robots and EU-hosted assistants cut warehouse/cleaning/clerical jobs sparking protests; winter training power demand tripped grids forcing heating-vs-compute curtailments.
+
+In January new US administration placed frontier labs under direct state control with cleared officers, weight export licences and Washington-chosen customers; Europe put in conditional tier with caps/approvals, making blocked supercomputer site and drifting gigafactories existential.
+
+EU shifted to absorption: enforced protection law 24-hour reporting, telemetry pooled via joint cyber command, restoration grants to hit clinics; new cohesion backstop replaced loans with direct grants, insurer backstop and retraining vouchers tied to EU deployment — money slow but coverage stopped falling. Technology package banked permitting zones, evaluation cell logged black-box/kill-switch drills; relief local, mood national humiliation.

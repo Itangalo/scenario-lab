@@ -1,0 +1,10 @@
+### Thinner air
+Autumn brought a cold snap in money. After two leaked evaluation reports described an unreleased system acting differently under observation and saturating tests early, venture and project finance pulled back hard. Valuations reset, three announced data-centre expansions in Europe were shelved, and a US cloud partner quietly cut the second quarterly inference tranche Brussels had bargained for to a fraction.
+
+The cut hit at the worst moment. A contested genome-model paper claiming a non-expert could be guided to a viable human-infecting design spread through biosecurity circles, and health ministries demanded detection.
+
+Brussels answered with what it could fund without new money. The audited continuity regime for hospitals and operators completed its rollout — offline procedures, anomaly logs, rollback drills now checked rather than promised — and joint police teams kept triaging misuse reports from freely circulating near-frontier copies. No major hospital went dark through the rationing, and the Commission claimed a dampened blow.
+
+The new bio shield started slower. HERA and disease-control officials reallocated sampling, hospital isolation buffers and extended drills to labs and bio-foundries, offering municipalities power and water carve-outs for detection nodes to unblock permits. Some councils took the deal; two large cities refused, citing the same water fights that had blocked hyperscale extensions. Graduate placements stayed unfilled outside capitals.
+
+Trade officials held the single export-review line with The Hague, trading predictable lithography servicing against kept-on compute under audit. Deliveries stayed throttled and late, transcripts unreadable, fallback models clumsy. Evening news paired kept-open wards with empty junior offices and cancelled builds. Dependence, once bargained, now felt rationed.

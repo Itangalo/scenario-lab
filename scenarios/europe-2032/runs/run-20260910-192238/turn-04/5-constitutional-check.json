@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: `eu_political_capital` dropped from 26.0 to 9.0 (a decrease of 17.0 points) without narrative or notepad justification for such a steep collapse. While political capital can fall, a drop of this magnitude in one turn—especially without explicit mention of a catastrophic event (e.g., major scandal, treaty collapse, or systemic defection) in the narrative or notepad—exceeds plausible organizational or political response limits. The notepad lists only −12 from portfolio charges and +2 from legitimacy lends, implying a net change of −10, which would result in 16.0, not 9.0. Thus, the actual metric change exceeds the justified change by 7.0 points, indicating an unexplained or rule-violating adjustment.\n- Regulatory Constraint violated: The narrative describes a new measure—“EU Entry-Level Transition Guarantee”—being implemented with funding mechanisms (levy, social fund top-up), voucher lines, and eligibility disputes. However, per Constitutional Constraint #6 (“No measure is implemented instantly”), even low-cost measures require at least one full turn from proposal to full effect. The notepad shows this measure receiving a proposal bonus this turn (t4), meaning it was just proposed; therefore, its full implementation effects (e.g., payouts, disputes, accreditation delays) cannot plausibly manifest within the same turn. The narrative implies operational rollout within t4, violating the minimum time lag for policy implementation."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

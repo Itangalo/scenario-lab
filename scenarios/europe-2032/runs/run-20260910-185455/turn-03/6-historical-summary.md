@@ -1,0 +1,7 @@
+Second half of 2027 was dominated by Brussels joint cell: daily staging reports, held segmentation deadlines, pushed seconded teams, emergency procurement and jointly-procured machine-speed patching/swarm detection first to grid and large hospitals.
+
+Large operators contained fresh automated intrusions and closed off fast ransomware/botnet probing class — defence caught up in one class — but legacy municipal/clinic systems lagged months, with renewed multi-day regional service degradations.
+
+Frontier models improved at established pace in code/math/offense, expanding automatable attack; voluntary lab-based assurance fell further behind. Factory site decisions stayed frozen, expected financings did not return; guarantees/zones held, lithography leverage won only patch feeds.
+
+One member state signed bilateral hyperscale/models deal below Union data/evaluation line as pragmatism; Brussels chose containment — infringement screening, anti-coercion assessment, offer of zones/guarantees for return to common terms — deal stayed. Press framed as Union unable to hold line, other capitals sought same flexibility, build-out slipped further. Office productivity gains without layoffs sustained tolerance despite outage resentment.

@@ -1,0 +1,7 @@
+September sweep via compromised municipal update and model-generated ransomware left audited continuity-hosted utilities degraded but on while uncertified towns and hospital administrations went to paper for weeks, operator unknown; simultaneously ombudsmen in two states exposed benefits-fraud scoring that wrongly pursued thousands with 40-second approvals and unread logs, classified outside high-risk annex — enforcement intact, law obsolete.
+
+Brussels tied surge funds, continuity hosting and hospital-stack cloning to logged certified builds triaged via ENISA, opened coordinated investigations, published oversight failures, conditioned further rollout on human-review and registry fixes. Certified hospitals/utilities recovered faster with proof; large member state's separate US cloud kept pooled evaluation under study without logging; periphery saw relief with conditions via reprogrammed Digital Europe money.
+
+Withholding coalition with Ottawa, Seoul, Tokyo became framework for licence alignment, joint compute bargaining and shared evaluation; Washington kept structured access, observer seat still under discussion; suppliers filed dual paperwork and billed for both. Trust fell faster than recovery as blackouts and benefits letters merged into one story.
+
+Earlier: winter ransomware wave favored audited continuity-hosted regions; labs' control technique became EU standard and deployment-review requirement; two-year essential-services pledge ended partial with core on, periphery hand-patched.

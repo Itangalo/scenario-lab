@@ -1,0 +1,9 @@
+Autumn intrusions mapped transmission, ports and water systems without blackouts using tooling adapted from a public latest-gen AI model; attribution unproven.
+
+EU hardening of power, ports, water and hospitals — segmentation, drills, cross-border repair teams, thin jointly-procured transformer/control/water reserve under civil protection — funded by reallocated budgets plus French-German-Dutch co-financing tied to faster compute-site permits, sparking local backlash. By first half 2028 segmentation held with no repeat scares, depots stocked in two regions, and interior ministries declared work done for now.
+
+Compute factories stalled amid state-aid scrutiny, tight Washington monthly chip allocations, cancelled transatlantic deals and AI investment reset forcing gigafactory renegotiation; with Taiwan/shipping risks, priority shifted to repair stocks over new fabs. Commission managed queue, diverted permit-linked funds to stocks, chose no new spending. Lesson: resilience at home over US controls or Chinese open models; frontier agents advanced elsewhere, European safety institutes briefed but excluded.
+
+Office AI lifted law/accountancy/consulting/newsroom output, especially juniors, without layoffs but plateaued, no growth dividend to cover resilience costs, cooling investors. Commission launched Workplace Transition and Income Bridge via employment/social channels — wage insurance and retraining vouchers for office workers, employer co-financing above deployment threshold — welcomed cautiously by unions, criticised by business and mayors.
+
+Fabricated-citations scandal led major publisher and national funder to mandate verified provenance and AI-use disclosure, endorsed by Brussels as soft law without legislation; publishers/funders began demanding disclosure, researchers divided.

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t2: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Critical Systems Shield −3, EU Sovereign Hosting and Supply-Chain Compact −3, priority −1 = −13
+PROPOSAL BONUS: EU Sovereign Hosting and Supply-Chain Compact (cat 8, large) +5 — taiwan_blockade and export_control_escalation and June US cutoff landed this turn and this answers them directly, plus loss-of-control containment
+LEGITIMACY LENDS: capital 31, sentiment 37 -> +2
+SOVEREIGNTY: 22 last turn, no capacity event finished, Gigafactories + Tech sovereignty in flight +0, export_control_escalation t2 −2, capability rose 1.5 −0 = 20

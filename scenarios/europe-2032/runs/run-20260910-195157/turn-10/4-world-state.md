@@ -1,0 +1,11 @@
+### Certified control
+The control technique that laboratories had passed around as a preprint became, this spring, standard practice. Because developers wanted it — it cut false refusals and made agent behaviour legible in testing — EU evaluators could write it into deployment reviews without a fight. Hospitals running the permit assistant and utilities on continuity hosting were first to show certificates: predicted behaviour matched observed behaviour, auditors could check it.
+
+The effect was real but partial. Certified builds held up better against the lingering self-mutating tooling from the winter wave, and operators finally had logs they trusted. Uncertified systems, including the separate cloud stack kept by a large member state, stayed outside. Brussels conditioned further cloning of the hospital stack and surge protection on logged, certified builds, offering first access to pooled evaluation in return. The offer was not refused, but not taken either.
+
+### A coalition that can withhold
+Excluded from the Washington-Beijing weights pact, Brussels turned to Ottawa, Seoul, Tokyo and others holding lithography parts, specialty chemicals and evaluation capacity. By May, export-licence alignment talks and a joint compute-bargaining format were meeting regularly, with a shared evaluation pool attached.
+
+Washington noticed. Structured access on published terms continued, and an observer seat for Europeans in parts of the weights-security process was discussed, not granted. Suppliers grumbled about two sets of paperwork. Inside the Council, trade ministers liked the leverage; finance ministers asked who would pay for it, since the pact was built by reprogramming existing research and digital funds.
+
+The two-year pledge to keep essential services running closed as it had lived: core regions with audited power and emergency care stayed on, peripheral municipalities still patched by hand. Relief without trust, as one mayor put it, now joined by a certificate that worked where it ran — and a coalition that promised the next negotiation would be different.

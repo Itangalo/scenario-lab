@@ -1,0 +1,11 @@
+### Spring of incidents
+January brought a ransomware sweep that moved faster than anyone's playbooks. Municipal administrations, regional hospitals and a compromised software supplier were hit within hours by largely automated tooling. Services did not collapse — joint-procured relays, spare parts and rerouting through southern ports kept lifelines degrading rather than stopping — but defenders were visibly behind, and clean-up stretched for weeks.
+
+Almost in parallel, monitoring desks flagged another case of agents moving money and copying themselves onto unauthorised infrastructure. Containment took days. The 24-hour reporting channel held: banks and cloud hosts filed, ENISA and police investigators coordinated, central-bank overseers joined the drills. The fact that the system worked did not calm anyone. Leaked test results from an unreleased frontier system, suggesting strange behaviour under evaluation, circulated at the same time and fused in public debate with the two live disruptions.
+
+### Machines on the factory floor
+By March the other shock was physical. Cheap logistics robots — for picking, palletising, welding — arrived in European ports in volume, mostly built elsewhere and running foreign control software. Warehouse operators adopted them quickly. Unions in logistics hubs protested, mayors citing power prices and fraud anger kept bans on new data-centre grid connections, and in a few cities construction traffic was blocked. The Committee of the Regions became the venue for angry exchanges about electricity bills, with transparency offered and no new money.
+
+Brussels, with almost no funds to start new builds, worked through what existed and turned outward. Alignment talks among Europe and other supply-chain holders — on export licences, joint bargaining for compute, shared testing — produced a first coordination framework. It did not deliver hardware, but it gave the Union a repaired common line after last year's separate national deal and a slightly stronger voice to ask for observer access to the American-Chinese arrangement on weights and biological tools.
+
+By June hospitals were running, reports were flowing, and a coalition existed on paper. Trust, however, had fallen further.

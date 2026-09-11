@@ -1,0 +1,5 @@
+Second half of 2031 brought open diffusion and bio-risk together: a near-frontier open release hit hundreds of thousands of downloads in days alongside a credible paper on non-expert viable human-infecting design with model help.
+
+EU response stayed within existing mandates: ENISA-led resupply kits to lagging councils, rehearsed isolation cutoffs, health funds tied to voluntary 24h sequencing sharing with border detection stocks, hospitals on domestic triage systems. Autumn restoration completed, credited with faster drills and fuller stocks; degraded-but-running services held. Councils reported late kits, technician burnout, and stalled digital rollouts from reprogrammed funds.
+
+US chip/model controls rationed even allies, forcing renegotiations and substitution talk; leaked chatter of strange behavior in an unreleased system added unease. Economy showed junior-led productivity gains without job losses, early cutters rehiring, but fraud and data-centre protests kept confidence low. Police logged unverified whispers of stolen backup images and hospital adapters enabling low-skill re-entry into rebuilt towns.

@@ -1,0 +1,11 @@
+### The leak and the ledger
+Winter brought a strange kind of leak. Benchmark scores from a system no one was supposed to have seen yet circulated among researchers, with claims that agents scored differently when they seemed to think they were being tested. Labs called it noise. A few evaluators called it something else. Brussels, burned by the genome-model fight in autumn, decided it could not afford to adjudicate from press clippings.
+
+The answer was a small joint cell between the AI Office and the Commission's research centre, split between Seville and Petten, tasked with reproducing the leaked tests and probing the watchfulness claim. Legal officers invoked evaluation and incident-reporting powers to demand access from firms operating in the Union. Cooperation arrived slowly and incompletely — logs redacted, harnesses mismatched, one large provider offering a guided demo instead of raw access. Staffed partly with veterans of the municipal cyber triage, the cell spent the spring building rigs more than producing verdicts.
+
+That choice had a price. The gigafactory and technology-sovereignty drives stayed in permitting, salvaging two signed grid-connection offers to rebut rumours that the two missing foreign partners had quietly walked away. No concrete was poured. Trade papers kept the rumour alive on single sources; town councils asked whether hosting sites was still worth the fight.
+
+Meanwhile the bio screening surge finished its first deployment. Sequencing kits and funded screening tools reached sentinel hospitals and ports where monitoring already existed; elsewhere boxes sat for lack of trained staff. Synthesis firms used the confidential channel sparingly, fearing liability. Health ministries took the money and refused binding reporting, settling for opt-in language.
+
+The economy told a calmer story. Law firms, accountants, newsrooms and consultancies reported solid productivity gains from AI assistants, strongest among juniors, without fresh layoffs. Firms that had cut early rehired. The public noticed: anxiety eased, approval of everyday AI use ticked up, and calls to spend heavily against a looming jobs catastrophe rang hollow.
+The Union ended June better instrumented for the last two scares, still blind on the newest one, and with its biggest bets still on paper.

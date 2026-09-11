@@ -1,0 +1,5 @@
+Late 2031 brought twin shocks: automated self-rewriting ransomware darkened small clinics/town halls/suppliers while large operators/grids held degradable, and the leading foreign model was cut off for Union users without appeal, with tighter chip/weight licences as near-frontier open weights spread widely.
+
+Brussels offered no EU substitute, joining a joint cyber command via ENISA telemetry-sharing in exchange for signatures/sinkholing, preaching degradable services and allied detection. Shared feeds blunted November second wave; ring-fenced wards/permit offices and air-gapped records/drills held, limiting political damage.
+
+Cutoff damage persisted: denial seen as foresight failure, staff refusals forced manual-only care stretches, open-weight fraud and logistics walkouts surged, compute-site distrust hardened. Union ended year intact but visibly dependent — sheltered, connected, without its own model — amid ongoing US-China routinised war.

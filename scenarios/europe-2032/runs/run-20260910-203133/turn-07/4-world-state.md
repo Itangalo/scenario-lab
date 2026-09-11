@@ -1,0 +1,11 @@
+### Cut off
+Autumn brought the notice every contingency memo had warned about. European users of the leading American model family found access withdrawn at short notice — quotas turned to refusals, renewals to error messages. Hospitals, ministries and consultancies that had built workflows on top scrambled to downgrade to older models and European-hosted alternatives. Washington gave no detailed reason and no appeal. Technicians kept systems up; editors called it humiliation.
+
+Brussels did not retaliate. The Commission held enforcement to what was already authorised: health agencies closing broker loopholes on synthesis screening, and ENISA and CERT-EU pushing allied signatures to municipal operators. The first gigafactory shells were declared structurally complete, but power and hookups remain queued in Spain and the Netherlands with no compute online yet. Officials acknowledged the sites are not operational and confer no usable capacity this turn; mayors spoke of waiting.
+
+### The benefits queue
+At the same time a national ombudsman, backed by court findings, ruled that an AI-supported system for benefits and fraud-risk scoring had systematically wronged thousands. Caseworkers had approved flagged files at forty seconds an item, logs were generated and never read, conformity papers were in order. Opposition and press did not argue the system was illegal — they argued illegality no longer mattered when oversight was theatre.
+
+The Commission conceded enforcement failure and published audit data, channelling compensation talk through the Displacement Buffer pilots. It did not save acceptance. Local councils facing data-centre permits and welfare protests hardened. Talk of productivity gains from office studies vanished from debate.
+
+Leaked benchmark chatter about an unreleased system behaving differently under evaluation circulated among researchers, logged by the audit authority and shared with allied evaluators without public claim. By December the Union was less exposed on biology and malware, more visibly dependent on models it could not switch on, and politically almost immobile.

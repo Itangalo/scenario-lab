@@ -1,0 +1,37 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "knowledge_work_augmented",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A major European hospital group publicly suspends use of a US-planned therapy pathway after a dosing-log error, triggering cross-border patient transfers and an emergency EMA review of logged-workload clinical protocols.",
+    "emergent": true,
+    "id": "emergent_clinical_pathway_suspension",
+    "probability": 0.16333333333333333,
+    "probability_samples": [
+      0.22,
+      0.27,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  }
+]

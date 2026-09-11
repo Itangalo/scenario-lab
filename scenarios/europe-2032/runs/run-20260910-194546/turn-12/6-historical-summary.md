@@ -1,0 +1,5 @@
+By February the leading US model family cut off European hospitals, ministries and firms built on its interface, darkening dosage planners and triage assistants where tailored therapies had cut waiting lists, stalling payment pilots and forcing ministries manual. Insurance cover tied to that stack held on paper but service did not.
+
+Brussels answered with an emergency clinical reserve, certifying a fallback stack of European-hosted open models and in-country trailing-node capacity as the insurable standard; joint insurer audits re-anchored cover town by town and emergency funds prioritized hospital migration. Where installed, clinics stayed open on weaker but controllable models; where lagged, paper and transfers returned. Seoul/Tokyo spares trickled, Washington licences did not. A new interpretability result written into compliance let auditors certify the fallback for small clinics, and therapies kept working while underscoring dependence.
+
+By June grids and payments ran and most insured towns kept cover, but dozens of postcodes were excluded again and dependence became the diagnosis; thin cover bent but held.

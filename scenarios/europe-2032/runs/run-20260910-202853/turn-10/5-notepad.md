@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t10: M11 EU Dock-to-Job Transition and Port Continuity Deal −2, M12 EU Loss-of-Control Containment and Critical Systems Isolation Protocol −2, priority −1 not charged (capital below 20, no effect) = −4
+PROPOSAL BONUS: EU Loss-of-Control Containment and Critical Systems Isolation Protocol (cat 6, small) +4 — loss_of_control_incident landed this turn and this answers it directly, with embodied deployment as second argument
+LEGITIMACY LENDS: capital 14, sentiment 15 -> +1
+SOVEREIGNTY: 18 last turn, no capacity event finish, no cat4 in flight +0, member_state_defection t10 −3 (largest of embodied/export/defection), capability rose 1.5 −0 = 15

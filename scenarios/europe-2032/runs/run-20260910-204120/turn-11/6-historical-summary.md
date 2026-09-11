@@ -1,0 +1,9 @@
+Taiwan Strait quarantine escalated to open US-China war from March: fabs, cables and ground stations hit, data-centres on civil-protection notice; Brussels sidelined on spares, fuel and grid islanding.
+
+Dutch licensing/EU leverage failed to secure chips; EU left dependent on cheap Asian compute and foreign open agent stack. InvestAI halls remained empty amid protests.
+
+Chinese/US humanoids scaled, European makers became buyers; cities signed cut-price Asian power-and-software bundles with self-updating foreign agents outside joint procurement; second large state deepened separate hyperscaler deal.
+
+Cyber shield surge, joint telemetry and machine-speed patching held, letting hospitals weather spring intrusions. Wartime Critical Systems Continuity Shield announced but design-only.
+
+Autumn engineered pandemic — higher transmissibility than Covid, far higher lethality, AI-designed signature — hit amid naval war, making quarantine impossible. Europe stretched: fuel/spares scarce, ~20% critical-staff absenteeism, lab/model releases stalled. Brussels triggered health/civil-protection emergency: stockpiles, joint antiviral/reagent buying, military medics for grid/water/telecom, wastewater/hospital telemetry as triage maps. Spring defence tooling kept joint-network hospitals online; empty backup halls repurposed for absentee hosting of grid/hospital IT. Municipal foreign-agent freezes partly worked. Requisition orders for modelling compute under member-state hyperscaler deals failed — no jurisdiction over US providers, one capital voluntary, another defiant, no compute secured. Protests vanished into dread/anger. Lights/water mostly held at high political cost.

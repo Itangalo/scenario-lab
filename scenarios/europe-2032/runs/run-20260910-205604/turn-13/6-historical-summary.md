@@ -1,0 +1,7 @@
+Autumn blockades froze Lyon/Magdeburg links; no sovereign hall online.
+
+February ransomware sweep degraded hospitals, registries, water controllers for weeks; French/German/Dutch mutual-aid prevented cascade. Marseille, Essen, Brno fell back to slower European-hosted tools; elsewhere officers installed a downloaded open frontier model. Mid-sweep US providers cut leading-model access without appeal; Taiwan Strait blockade halted chip exports, leaving lithography makers as sole leverage. Commission did not retaliate, tolerated capital's cut-price cloud deal, limited to wage advances for Rotterdam, Antwerp, Lodz.
+
+Spring brought foreign tailored therapies unrunnable in Europe. By June ministers signed middle-power framework on licences, compute bargaining, shared evaluation — little hardware.
+
+Autumn second blackout: US suppliers again suspended advanced-model access without appeal; clinics/ministries reverted to European-hosted tools and local open models. Parallel self-adjusting ransomware wave hit registries, appointments, water controllers; watch-centre phone coordination prevented collapse but services degraded for weeks. Attack tooling marked step-change, defenders behind. In offices, productivity gains, strongest among juniors, no employment collapse, early cutters rehired. Framework survived at ministerial level but delivered no hardware; lithography leverage held not used; cloud arrangement tolerated. Brussels announced nothing new, conserved rosters and legal bases to hold essential services.

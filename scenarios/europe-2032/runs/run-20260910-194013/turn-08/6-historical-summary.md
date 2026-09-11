@@ -1,0 +1,5 @@
+Winter brought US model cutoff for European triage/scheduling/casework over export review, forcing scramble to older smaller EU-hosted models. Simultaneous auto-generated ransomware hit registries/clinics; previously patched states degraded but held, others cancelled appointments and reverted to paper with self-rewriting payloads.
+
+Brussels Continuity Stack triaged: inventoried cut-off workloads, pooled vetted compute, parked emergency inference on permitted gigafactory sites; health/telecom ministers agreed rationing. By spring some hospitals/ministries restored on slower throttled domestic capacity with compute queues.
+
+Joint cyber room and conditional lithography spares helped containment but silicon/relay shortages persisted from Strait quarantine. New open model near frontier for intrusion spread to hundreds of thousands, collapsing skill barrier for grid attacks. Public anger fused over dependence, outages, rationing; officials admitted foresight failure.

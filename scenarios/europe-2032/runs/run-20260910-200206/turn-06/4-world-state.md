@@ -1,0 +1,11 @@
+### Failover
+January began with hospitals and town halls still restoring registries. The Commission sold the new reserve as failover: patched municipal workloads and port payment-breaker systems would get priority slots on pilot racks and supercomputing capacity, with liability cover extended if they moved onto European soil. Engineers got a few workloads migrated by spring. Insurers did not cut premiums.
+
+The large factory programme survived, barely. No new cash arrived; pre-notifications and fast-track permit zones kept site studies alive while capitals argued over who would underwrite power connections. The technology package formally closed, its permit reforms now law, but disbursement lagged and contractors complained of studies starved of cash.
+
+### Attack and advance
+In March a largely automated extortion sweep hit public services again — this time through a compromised software dependency used by clinics, local administrations and a port operator. Backups encrypted faster than isolation, appointments cancelled, transfers frozen by emergency breakers. Defenders were again cleaning machine-written malware with slower tools. Attribution remained open months later.
+
+The same spring brought two different headlines. A continental lab announced an efficient reasoning method that cut inference cost sharply, quickly copied abroad. Clinicians also reported tailored therapies reaching routine use for a previously untreatable blood condition — but the most capable models behind the dosing came from American clouds under new export review, and newspapers framed cures arriving on foreign permission.
+
+Washington took office on a platform of treating advanced systems as a strategic national asset, with tighter reviews and tiered foreign access. The capital with its own cheaper cloud deal still refused to unwind it, leaving screening open and the common line frayed. Wage-bridge payments stretched toward warehousing workers as automation paused, then resumed under stricter stop rules.

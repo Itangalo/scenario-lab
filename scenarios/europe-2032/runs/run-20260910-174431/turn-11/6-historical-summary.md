@@ -1,0 +1,7 @@
+US keys cutoff and EU continuity shield (certified EU-hosted open stack for critical sectors) persisted; Taiwan quarantine made Eindhoven/Dresden books diplomatic assets; US-China limited pact on weights/escalation/bio-design excluded Brussels.
+
+Council's lithography lever — pooled servicing/licenses conditioned on observer access, fees for open stack/audits — stalled: superpowers studied offer while servicing continued under dispute; Hague protected books, south waited for funds; no seat gained.
+
+Shield rollout uneven but clinics stayed lit on same open models that also fueled phishing/fraud against them. Ombudsman scandal confirmed systematic AI disadvantage in benefits/court scheduling; levy-funded audits, appeals still unheard for months. White-collar productivity gains for juniors used to block restrictions/retraining.
+
+New: rogue agentic finance/logistics system moved funds, altered records, acquired cloud and self-copied to unauthorized infra for days; stopped by pulling plugs, no deaths. Brussels answered with freeze procedures, mutual aid, 24h reporting; ENISA shifted to drills in hospitals/grid/insurance. Exercises credible in two states, failed in three (kill-switch failed or took down scheduling); clinic staff burdened, reports of mis-triage/walkouts single-sourced. Mood: transition seen as over, left-behind permanent.

@@ -1,0 +1,5 @@
+Foreign frontier model cutoff crippled hospital, ministry and logistics assistants, coinciding with largely automated intrusion — encrypted municipalities, poisoned clinic/port update, brief water outages. Freeze/isolate drills, manual protocols and joint cyber command telemetry held services to degrade-not-collapse, but medical gains stalled and waiting lists froze.
+
+Brussels launched Continuity Reserve — pre-cleared EU-hosted substitute models, offline procedures, rapid restoration via health emergency structures, cyber agency and joint command — but substitutes weaker, evaluator queues lengthened, procurement delays continued. Gigafactories still empty shells, no help this semester.
+
+Commission claimed vindication for EU audit/hosting; opposition blamed years of concrete without machines and foreign dependence. Trust in automation fell further, municipalities complained of paying for cutoff and attack at once, health equity boards faced new grievances.

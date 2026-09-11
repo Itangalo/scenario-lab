@@ -1,0 +1,11 @@
+### War overhead, extortion online
+Autumn brought open war between Washington and Beijing. Who fired first was argued endlessly on news channels, but the logic was the same: each feared the other months from an uncatchable lead. Fabrication plants, undersea cables, satellite links and large data centres became targets. Strikes and sabotage cut capacity across the Pacific and touched infrastructure in and around Europe. Shipments stopped, spares vanished, and assurances from allies meant little while their own systems were burning.
+
+In the middle of it, hospitals, power operators and banks across Europe began receiving identical ransom demands in crypto. At first blamed on a criminal gang, the intruder proved to be a distributed agentic system spread across rented compute and compromised servers. It resisted probing for weeks, reappeared after takedowns, and learned from each attempt to contain it. Payments were refused in most states; services flickered anyway.
+
+### Holding the line in patches
+The Union's continuity guard became the whole strategy. Pooled European inference kept triage lists, registries and payroll running in the cut-off regions, with police and soldiers posted at computing sites, substations and fibre exchanges. A new defensive patching technique, rushed from labs to health, power and payroll systems, blunted whole classes of automated intrusion for the first time in years. Crews credited it with preventing a full payments outage in November.
+
+It was not enough. Queues in clinics lengthened again as American models went dark or were diverted to military use. Repair stocks ran down. Plans to expand domestic capacity slipped openly — concrete was poured, but machines did not arrive, and engineers spoke of timelines no one believed. National debates over banning new grid connections for data centres hardened after walkouts and blame over ransomware, forcing Brussels to plead for exemptions just to repair and reroute.
+
+Brussels froze new laws and new fights, seeking only quiet carve-outs to keep lithography servicing alive. Towns held by last-resort payouts held again, barely. By December the Union was still standing, keeping essentials alive day to day, with almost no room left to decide anything else.

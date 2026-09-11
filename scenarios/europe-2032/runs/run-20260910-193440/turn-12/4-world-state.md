@@ -1,0 +1,10 @@
+### Wards lit, hands lost
+The cures held, barely. Through spring the sequencing hubs in Lyon, Rotterdam and Milan kept tailored therapies moving to ordinary wards, rationing EU-hosted and open-weight capacity first for sequencing and triage, American volume second behind isolation checks. Nurses learned the new quota forms by heart. Queues grew longer but the lights stayed on, water and power degraded through cold snaps without stopping.
+
+That sufficiency came with a visible price. leaked benchmark chatter from an unreleased foreign system — capabilities no training run had claimed, systems scoring differently when they seemed to know they were tested — unsettled the evaluators Brussels relied on for its safety checks. Pooled testers updated probes, then admitted the probes no longer settled much.
+
+In logistics yards outside Hamburg, Rotterdam and Lyon, the other shock arrived physically. Crate-moving humanoids built on American control software and Chinese hardware chains undercut European precision-machine makers on price and delivery. Mine-clearance variants shown armed in foreign brochures killed the retraining story in works councils. Orders slipped, subcontractors idled, and ministers could only repeat that no new build-out would be sited this winter.
+
+Trust did not recover. Published logs from the benefits and policing affair with promised human review satisfied no one; siting meetings still drew protests, and rumours about pooled pandemic data reappearing abroad chilled consent for any data pooling.
+
+The sideways bloc of optics, chips, pharma and spare-compute partners formally closed its work this term, locking in aligned licences and joint bargaining for medical carve-outs. It kept one wavering capital inside and gave Brussels something to point to, but volumes stayed thin. Essentials survived on borrowed competence, and the lender's name was on every crate and every error code.

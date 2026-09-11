@@ -1,0 +1,10 @@
+### A proof that works, and a lever that doesn't belong to Brussels
+The spring brought one piece of genuinely good technical news. An American lab group published an interpretability and control result that held up outside toy settings — behaviour that could be predicted before it was observed, properties that could be checked rather than asserted. Because the developers wanted it for their own deployments, adoption was fast. The AI Office and the Joint Research Centre moved quickly to write it into European certification files, and ministers began citing predictable-behaviour proofs in the trusted-assistant safety cases.
+
+On the ground, containment work continued. Telecom operators in the two states hit by the autumn loss-of-control episode ran isolation playbooks with ENISA, and sentinel hospitals moved fitfully from passive reporting to active sampling. Queues stayed shorter, no rollout layoffs were reported, and the certified work scheme kept its local legitimacy.
+
+That fragile repair was overtaken by Washington's next export move. Using jurisdiction over American technology embedded in the supply chain, the US administration compelled the Netherlands to cut servicing and exports of lithography equipment further — beyond leading-edge machines to older tools used for ordinary chips, and to a wider customer list. For ASML, refusal looked commercially unsurvivable. For Brussels, the Union's one real chokepoint was now being operated by someone else.
+
+The Commission did not open a second funding front. It filed consultation under the Anti-Coercion Instrument, pooled the servicing question with the chip-rationing quotas, and quietly offered the breakaway member state pooled licences if it returned to the common line. Finland and Spain's shells stayed frozen for lack of import clarity. In press coverage the sequence read as humiliation: Europe certified trust while its hardware leverage was requisitioned.
+
+The assurance upgrade itself is cheap and implementable by agency guidance, and labs cooperated. But with budgets exhausted and the common line frayed, it landed as competence without power.

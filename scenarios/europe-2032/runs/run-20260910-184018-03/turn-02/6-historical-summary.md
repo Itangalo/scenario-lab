@@ -1,0 +1,5 @@
+Foreign inference cutoff in February disabled hospital and ministry tools built on leading foreign model without warning or appeal, forcing emergency re-routing to smaller European models on national research compute — slower and capacity-constrained. EU responded with triage inventory, reprogrammed health/digital funds for temporary hosting, and new rule requiring guarantee clause for critical-service builds on foreign inference; market access, procurement and export-control cooperation quietly linked to restored access, but provider only promised review and Tokyo/The Hague made no joint commitment.
+
+Concurrent Taiwan manoeuvres raised shipping insurance and hardware-shock fears without chips halt, focusing attention on ASML and chemical dependencies.
+
+Earlier grid-intrusion response, interpretability safeguard adoption, and unfunded gigafactory/sovereignty structuring slowed by siting, power/water and grid-connection disputes continue, with domestic capacity still years away.

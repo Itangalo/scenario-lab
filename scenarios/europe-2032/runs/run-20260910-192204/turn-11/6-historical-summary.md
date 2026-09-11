@@ -1,0 +1,5 @@
+Wage insurance second cohort rolled out via payroll; hiring queues unchanged. Bio Early-Warning in procurement with wastewater nodes and stockpiles, low visibility.
+
+Therapies for previously untreatable conditions reached prescriptions via foreign platforms/cloud, data processed abroad and queues set outside Europe. Brussels launched central procurement programme for European hosting, public prescribing, free-at-point-of-care in hospital networks, jobs linked to wage-insurance rolls — not in time to shift perception. Patient groups praised recoveries; public debate over dependence on downloadable models and uncontrolled systems. Leaked surge in near-frontier open release suggested private scattered deployments, scale disputed.
+
+Offices saw steady AI productivity gains, especially juniors, without employment fall. Gigafactory/data-centre blockades persisted despite apprenticeships and municipal shares on paper: surveyors admitted, cranes blocked, guards remained, Council tables held. Triage AI frozen, no domestic compute built, bilateral cloud deal contained.

@@ -1,0 +1,11 @@
+Autumn intrusions pre-positioned access in EU grids, other continents, port and water utility; defenders isolated systems. Campaign used cheap probes adapted from public frontier model. Commission launched joint operations, OT audits, credential rotation, funded relays and liability via reprogrammed funds. Implementation uneven — Germany, Poland fast, others derogations — year-long backlog. Factory/tech programmes stayed on permitting track but lost momentum amid Dutch opposition and watermarking calls. By December quiet.
+
+Spring capital fled AI infra: valuations reset, three hyperscale builds evaporated, gigafactory co-financing paused while sites/grid retained, labs cut training. Brussels kept programmes on permitting track with no new cash.
+
+Defenders pushed machine-speed patching and probe detection into German, Polish, French operators, pooled relays, drills quickened; networks quieted though backlog persisted.
+
+With builds frozen, Commission expanded sovereignty AI assistants via Denmark, Estonia, Spain coalitions, cutting waits in health pilots, thin coverage.
+
+Autumn: new open model near frontier capability released, mirrored widely, unrunnable-back, running on private servers across Europe. Brussels reprioritized hardening targets, expanded patching/swarm-detection to more operators, launched containment kits/backups/playbooks for municipalities, hospitals, firms. Rollout thin: Denmark, Estonia, parts of Germany received, elsewhere stalled, backlog >year.
+
+Coalition cracked as one capital signed separate cheaper AI/cloud deal with outside hyperscaler, seen in Brussels as breach of procurement/data line. Commission isolated it as outside EU procurement, traded derogations for patching deadlines to keep Paris, Berlin, Warsaw. Political damage: sovereignty drive questioned, Dutch siting fights hardened, pilot assistants still cut waits and networks quieter, but mood shifted from patience to doubt with gigafactory sites empty, private money paused, and capable models widely available.

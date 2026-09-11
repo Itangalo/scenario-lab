@@ -1,0 +1,5 @@
+Jul-Dec 2030: provisional medical assistants suspended after federations in France, Germany, Netherlands and others reported wrong doses and misordered triage; hospitals reverted to paper/manual triage, leaving EU continuity stack with nothing trusted to run.
+
+Commission responded with AI Office review: publish error cases, freeze unvalidated models on EU-hosted hardware, set pass-fail criteria for supervised re-entry with manual fallback, offer physician co-oversight and invite insurers on conditional liability. Uptake uneven; some shared telemetry via cyber-bio pact, others kept tools offline citing unreadable reasoning and leaked unreleased-system capabilities.
+
+Tailored therapies stalled by same distrust despite demand for EU-controlled deployment with safety proof. By Dec, handful of tools passed early re-validation in supervised pilots; manual triage degraded but holding, trust not restored. No new compute online despite ongoing foundations; dependence on US procedure-not-access and two capitals' side deals persisted.

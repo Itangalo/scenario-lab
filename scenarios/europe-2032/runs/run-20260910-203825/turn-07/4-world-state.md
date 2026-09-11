@@ -1,0 +1,11 @@
+### Winter of two shocks
+Autumn brought the automated assault defenders had feared. Malicious code assembled with machine help swept through municipal networks, water operators and hospital systems in several member states at once. Emergency patching pipelines built in the spring blunted the worst of it in large cities — systems rebooted in hours rather than weeks — but smaller towns went dark, appointments were cancelled, and attribution dragged on inconclusively for months.
+
+Almost simultaneously, the strait crisis turned into a full quarantine. Advanced chips stopped leaving Taiwan. Insurers repriced every semiconductor route overnight, cloud prices spiked, and pooled American supply tightened under new export paperwork. Washington pressed hard for a further cutoff of Dutch lithography servicing, including older machines, and one capital explored its own side arrangement for guaranteed supply.
+
+### Holding the line
+Brussels answered with survival first. A new resilience compact pooled spare chips, industrial control parts and repair crews under civil-protection rules, with funded integration teams sent to the small municipalities that had struggled with the spring upgrade. Patch-speed tools were pushed out again, this time with hands to install them. Hospitals and water utilities were put first in the queue.
+
+The move steadied services but did not restore them. Backlogs, rationed upgrades and suspended cyber-insurance for town halls fed a bitter press. Graduate hiring froze again across law, accounting and software support, and income-bridge queues lengthened.
+
+There were offsets. A new interpretability result that actually worked on deployed systems was quickly taken up by European detector teams and helped certify bio-surveillance upgrades after a troubling genome-model publication. The long-permitted gigafactory sites finally broke ground on first works, though builders admitted full equipment would wait until shipping lanes re-priced. Dependence was preserved, officials conceded, but collapse was avoided — and in a winter of blackouts averted, that counted.

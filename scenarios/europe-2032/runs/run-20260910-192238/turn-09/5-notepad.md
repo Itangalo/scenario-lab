@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t9: M7 EU Bio Early-Warning and Care Continuity Sprint −2, M8 Upstream Leverage and Allied Chip Lifeline −2, priority −1 not charged (capital below 20, no effect) = −4
+PROPOSAL BONUS: Upstream Leverage and Allied Chip Lifeline (cat 8, small) +4 — taiwan blockade fired this turn halting advanced semiconductor exports, this answers supply-security directly
+LEGITIMACY LENDS: capital 16, sentiment 17 -> +1 (capped, applied in capital total)
+SOVEREIGNTY: 21 last turn, no cat4 finish, no cat4 in flight +0, taiwan_blockade t9 −2 (emergent capacity-taking event), capability rose 0.6 −0 = 19

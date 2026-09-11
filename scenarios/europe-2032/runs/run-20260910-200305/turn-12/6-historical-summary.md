@@ -1,0 +1,5 @@
+US chip/model restrictions kept EU on fallback EU-hosted models and ring-fenced Spanish-French pilot inference for hospitals. Southern/eastern mutual-aid compact pooling servers/technicians became continuity backbone, recognized with liability cover and certification for EU-logged kits.
+
+Ransomware wave settled into months-long triage: billing rebuilt from backups, tainted common component quarantined with unmapped blast radius, paper operations, stretched tech pools. Compact sites stayed open while others closed; recovery weeks-long, logs incomplete, attribution open.
+
+Commission with no fiscal room held to recognition/certification, no transition fund, facing charges of managed decline/abandonment. Foreign robots (US software/Chinese hardware) took warehouse/logistics jobs; entry hiring fell without rehiring amid AI productivity. Tailored therapies delivered cures but framed as dependence on outside compute/models. US-China limited weights/bio accord with thin verification alongside tighter export licensing and rationing; Commission bid for observer access and licensed triage models, not yet granted.

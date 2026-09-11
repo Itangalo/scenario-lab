@@ -1,0 +1,7 @@
+By autumn the Commission declared the Critical Systems Shield complete: audits, hunts and cross-border exercises routine in energy, machine-speed patching standard, monitoring calmer, no new intrusions, isolations down — though segmentation remained aspirational. Earlier pre-positioned intrusions at European and other grids, a port and water utility had caused only defensive-isolation disruption.
+
+Data-centre builds stayed months late: one gigafactory-linked site moved to preparatory works under accelerated-permitting concessions, the other stayed in court as Brussels chose legal defence over override. Local focus remained on power prices and water use.
+
+Washington kept tightened chip/model controls with no ally exemption or appeal; joint Dutch-Japanese-Korean pressure won little, conditional licences and slow lithography flows continued.
+
+A contested genome-model paper claiming viable human-infecting design or non-expert uplift sparked biosecurity methods fight. HERA/ECDC launched wastewater sequencing in ten metros, hospital surveillance upgrades, and a synthesis screening code, funded by reprogrammed money stretching staff. Insurers quietly repriced cyber cover for grids/ports with exclusion warnings, pushing self-insurance talk.

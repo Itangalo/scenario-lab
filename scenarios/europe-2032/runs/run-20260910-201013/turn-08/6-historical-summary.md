@@ -1,0 +1,5 @@
+Spring 2030 brought technical relief without new capacity: automated patching matching discovery pace and swarm-behavior detection closed a class of intrusions, with ENISA teams in Rotterdam, Lyon, Hamburg, Gdansk pushing updates onto swapped hospital and tax systems — Lyon ransomware probe quarantined, Hamburg faulty update rolled back in hours. A transferable interpretability result let the AI Office shorten emergency conformity backlogs as a certification update.
+
+The wider build stayed frozen: no gigafactory cranes moved, permits/financing ready but French/German councils still refused forced siting, blockades over power bills lifted only intermittently, grid-moratoria talk spread, mediation on bill relief kept dialogue alive in Lille. A disputed genome-model paper claiming human-infecting design circulated in biosecurity circles; HERA quietly raised sampling and drilled without public alarm to protect siting talks.
+
+By June lights held where teams were present, Brno and parts of Netherlands held on fallback with no new defections, but the outside-hyperscaler defector still refused common procurement and ground capacity was no larger than winter.

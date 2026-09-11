@@ -1,0 +1,7 @@
+Through H2 2028 grid/port protection held only where binding deadlines held — Germany, Poland, parts of France with faster isolation and real drills — elsewhere administrative completion, Brussels trading delays for paper deadlines, relay backlog over a year, southern triage.
+
+Sovereignty fractured further: a third capital signed outside hyperscaler cloud/compute deal as pragmatism, read in Brussels as break in common line; dubbed sovereignty auction, mayors/southern operators questioned backup burdens. Gulf bridge money for empty gigafactory site rumoured again, refused on jurisdiction with no cash alternative.
+
+Winter biocatastrophe reset debate: modified pathogen designed with public models escaped then was deliberately copied, casualties in two countries before isolation; triage protocols repurposed. Days later open weights near frontier released, hundreds of thousands of copies in first week including detailed biological assistance — unrecallable.
+
+New US administration rationed advanced chips/frontier access by country tier with quotas. EU formally suspended gigafactory cash build, kept permits/grid on paper, shifted staff to joint emergency shield. Health, disease-control and cyber teams pushed detection kits, offline backups, isolation drills to willing regions. Sovereignty package and containment net declared complete in December — real in core states, administrative outside. Pilots in Denmark, Estonia, German cities still cut waits; funds exhausted, exhaustion and cohesion fraying.

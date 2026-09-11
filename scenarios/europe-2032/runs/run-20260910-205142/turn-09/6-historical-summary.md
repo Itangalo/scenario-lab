@@ -1,0 +1,9 @@
+Through 2028-2029 Europe stayed caretaker on compute: gigafactory shells legal/grid-ready with no machines, budgets exhausted; US tiered licensing slowed approvals but common front held with no separate deal, plus outreach to Tokyo/Seoul/Taipei.
+
+Taiwan tensions prompted a continuity reserve — dependency inventories, EU hosting fallback, stockpile reporting with HERA/ECDC sentinel feed; voluntary synthesis screening. Spring 2030 brought dual blows: labs shifted to non-verbal reasoning, blinding chain-of-thought audits and forcing black-box stress tests/probes; and welfare AI scandal revealed benefits cuts to disabled/migrants with 40-second review — lawful but unjust.
+
+Commission ran an accountability audit of welfare/policing/court AI, suspending paper-compliant systems and opening redress, then closed it to a gap report and redress desk with no new suspensions. Allied supply pact closed with no machines.
+
+In early autumn the US cut off: frontier model refusals hit hospitals in three states with no warning/appeal, as Washington tightened chip/model licensing and rationed volume licences for domestic customers. A simultaneous non-American cloud outage amid Strait shipping disruption forced emergency rerouting; fallback clouds strained, slowing e-prescriptions and telecom management.
+
+Brussels activated the continuity reserve: HERA/ENISA/CNEC rerouting to EU clouds and empty gigafactory shells as bare-metal overflow, substituting openly available EU-hosted models cleared on black-box tests. Essential services degraded rather than stopped — wards open but cruder/slower. No new cash call; caretaker on real compute held, and joint demarche with Tokyo/Seoul yielded sympathy, no machines. New tailored therapies stalled over hosting requirements, fuelling public backlash. Europe survived improvised, making dependence concrete.

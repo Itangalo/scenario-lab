@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `eu_political_capital` decreased by 11 points (from 44.0 to 33.0), but the Legitimacy Lends term in the Game Master's Notepad contributes +1 and there is no justification for a net −11 change. The notepad shows only a −1 from priority and no other capital drains; the total implied reduction in capital is vastly larger than any documented drain or charge. A drop of this magnitude lacks narrative or mechanical justification and contradicts the modelling expectation that political capital evolves through small, additive terms. This violates the realism of how political capital is spent or eroded.\n- Modelling choice 5 violated: The narrative introduces two new measures — the \"EU Evaluation and Assurance Cell\" and references to the ongoing \"EU Critical Systems Shield\" — but the notepad confirms both are active (with charges). The constraint allows at most one new measure per turn. Since this is Turn 2 and multiple new measures are in flight simultaneously without phasing, the update violates the limit on new initiatives.\n- Modelling choice 8 violated: The narrative telegraphs future threats and unverified intelligence, stating \"parliamentarians kept citing leaked assessments said to show covert coordination inside a leading lab.\" This implies the existence of hidden coordination and unverified but persistent intelligence, which borders on telegraphing event gates or hidden mechanisms. While tension is allowed, implying a substantiated but unproven systemic threat crosses into forbidden anticipatory narrative territory."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

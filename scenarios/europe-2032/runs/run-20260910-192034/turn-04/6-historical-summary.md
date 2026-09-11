@@ -1,0 +1,11 @@
+Autumn 2026 to early 2028 cascade of dependence, distrust, and attack.
+
+Foundation: grid intrusions via open frontier model, EU Critical Infrastructure Shield reset, stalled compute build-out, interpretability certification push, fractured unity from solo hyperscaler deal, and slipping trust.
+
+Early autumn foreign-model cutoff for Europe crippled dependent hospitals, ministries, firms. Emergency repurposed grid-reset machinery into triage, re-platforming vouchers and pooled inference reserve from domestic centres; fallbacks kept services alive but degraded. Solo-deal capital took pool capacity without aligning terms. Leaked under-reporting of 2026 biosecurity evaluation failures undermined assurance; AI Office disclosure demands met lab resistance and procurement pauses. Spanish/German compute permitting stayed stalled. Public narrative fused foreign dependence and domestic distrust.
+
+February ransomware sweep hit municipal IT, regional hospitals, and a software update channel with machine-generated tooling; attribution open. Manual continuity plans, pooled reserve, vouchers, and cross-border mutual aid prevented full stop; hospitals already on domestic fallbacks fared better. Recovery uneven, clinicians burdened by double-checking degraded outputs.
+
+Safety assurance collapsed as labs moved to non-human-readable architectures, breaking chain-of-thought certification checks, while a genome-modelling paper claimed non-expert model-assisted path to human-infecting design prompted added sequencing/hospital reporting. Unreleased-system benchmark chatter deepened unease.
+
+Commission absorption sprint via ENISA/health authorities pushed patches, offline backups, exercised fallbacks with redirected funds, absorbing worst without restoring confidence. Compute zones still stuck amid water/grid opposition and referendum threats; walkout rumours, unaligned hyperscaler deal, and continued lab resistance to bio-evaluation disclosure persisted. Coverage: cut off abroad, misled at home, attacked by uninspectable tools.

@@ -1,0 +1,12 @@
+### A side deal, a supply pact, and a genome warning
+The half-year was defined by three shocks pulling in different directions.
+
+A contested paper claiming a genome model had helped sketch a viable human-infecting organism design split the biosecurity field. Methodologists called it alarmist and reckless at once; editors argued over whether methods should have been published at all. In Brussels the claim was logged as a watch item. Health emergency planners and disease-control specialists quietly exercised detection protocols built under the earlier biological shield, without new legislation. Hospital managers using certified fallback software asked whether triage-support models needed new screening; the answer was guidance, not law.
+
+At the same time, a member state broke ranks. A government signed its own compute and service arrangement with a non-European provider on cheaper, looser terms than the common Union line, defending it as pragmatism for jobs and hospital waiting lists. In Brussels it read as a crack in the front. Opposition press praised the deal; Commission officials offered a better joint bargain rather than a legal fight, and held back infringement action. The episode dominated coverage of grid-connection protests and idle factory land.
+
+Partly to answer it, the Union closed a coordination framework with a group of middle powers holding chip, equipment and evaluation assets. The pact aligned export licences, pooled bargaining for compute access and shared testing capacity. No one ceded sovereignty, but together the members could withhold inputs even larger powers needed. Chip-credit officials called it the first credible joint offer to wavering capitals.
+
+On the ground, the certified catalogue held. Signed, locally hosted builds kept running in hospitals and benefits offices, with audit logs and retraining deals intact. Nurses saw fewer outages; doctors still complained drafting was slower. Courts kept freezes on grid-islanding and detection pilots in place, unconvinced by written human-review pledges, while two more cities joined co-managed pilots for reserved capacity. Single-source rumours of leaked audit logs showing systematic downgrades circulated but never confirmed, adding unease without producing a lawsuit.
+
+By December the Union had a supply pact, a defection to contain, and a biological warning no one could verify — more leverage abroad, less cohesion at home.

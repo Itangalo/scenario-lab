@@ -1,0 +1,7 @@
+Autumn exposed intrusions in European critical infrastructure using openly downloadable Mythos-class tooling, met by the Critical Infrastructure Shield and its spring 2027 cross-border exercise — segmentation and resets that held but strained operators — plus Incident Reporting and Open-Model Watch for unrecallable open releases.
+
+In September American providers cut top-tier model access for European hospitals, ministries and contractors — radiology to paper, chatbots and routing optimisers dead — framed as US licensing/compliance under tightened chip and model controls, seen in Paris and Berlin as humiliation.
+
+The Shield formally closed: ENISA playbook permanent, backup links funded, October credential-stuffing probes isolated faster, lights stayed on. Political attention shifted to the Continuity Switch: emergency health-channel procurement to move hospitals and administrations onto European-hosted clouds and domestic models. By December partial recovery on slower, narrower substitutes; firms largely left alone; gigafactory plans stalled.
+
+A new open release spread to hundreds of thousands in a week, feeding 72-hour intrusion reports, unrecallable. By Christmas Europe had absorbed grid probes and improvised after cutoff, but voters remembered darkened wards, not the playbook.

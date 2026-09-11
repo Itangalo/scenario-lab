@@ -1,0 +1,11 @@
+### Holding the wards
+Brussels pushed its only new programme through health and interior ministers on existing legal bases: extended EU-backed cover for ransomware-linked failure, conditional on segmented backups, paper fallbacks and joint drills, plus triage of the openly available frontier-class system now circulating on private servers. The capped liability backstop stayed limited to certified domestic reading tools running on EU-controlled standby.
+
+On the ground the line held narrowly. Hospitals in the three previously hit states kept theatres open through a spring wave of extortion attempts that encrypted imaging archives and municipal admin systems. Shared signatures from the EU cybersecurity agency and police investigators helped patch radiology stacks quickly, and wards that could show scans reported in days got recovery funds. Elective queues shortened fractionally in two university centres.
+
+### Open frontier, tighter screws
+That work was overtaken by two ruptures. A frontier-class openly released model was downloaded hundreds of thousands of times in its first week. Ransomware crews folded it into phishing and intrusion tooling within weeks; hospital IT staff described faster, better-written lures. Monitoring of biology-related misuse pathways produced advisories but no recall — the weights were already everywhere.
+
+At the same time Washington tightened chip and model controls again, and European buyers were rationed alongside others. Volume licences went to tiered partners; EU ministries, hospitals and firms found quotas cut and renewal terms carrying intrusive end-use checks. Brussels refused to seek a separate licence deal or to align chip-tool servicing policy in exchange, and refused to extend cover to the capital that had signed its own guaranteed-inference contract with a large American hyperscaler. That capital called it pragmatism; Commission officials called it a breach.
+
+Venture co-financing did not return. A planned expansion of standby capacity stayed shelved, degraded mode stayed slow, and filmed queues and manual triage still dominated coverage. Single-source reports began suggesting major health reinsurers were preparing to extend exclusions from diagnosis to treatment-planning software, prompting quiet reversions to paper in a few regions — rumour, not yet policy.

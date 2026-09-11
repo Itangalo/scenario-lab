@@ -1,0 +1,11 @@
+### Clients in a cold market
+The new administration in Washington took office in January speaking openly of frontier models as strategic assets under federal review, with foreign access to be tiered. No new licences were revoked, but American vendors repriced and re-timed what Europe could buy. At the same moment private AI finance cracked: valuations reset, announced data-centre build-outs were cancelled, and two co-location and capacity deals the gigafactory planners had counted on evaporated.
+
+Brussels kept the first gigafactory groundworks alive on already-committed money. Energy and telecom ministers defended grid-connection queues against pressure to reassign crews, and Dutch-French shuttles preserved licensed tool flows on paper. In practice lead times lengthened again and Strait insurance added cost. The technology sovereignty package formally closed, releasing permitting zones and a pipeline of private pledges, but pledges landed in a market no longer lending.
+
+### Jobs gone, tools staying
+Spring brought the labour numbers into the open. Law, accountancy, software, customer operations and administration showed entry-level hiring freezes that ministries could no longer argue away. Graduate unemployment dominated headlines. Studies showing solid productivity gains for those still employed only sharpened the divide: the tools worked, employment did not follow, and borrowing against a continuing transition looked misplaced.
+
+The Commission launched a small wage-bridge and rapid-retraining fund through employment ministers, repurposing existing social funds with an employer co-levy rather than a new law. Payouts were months away. Parliamentary inquiries lived instead off a full dump of withheld cyber-evaluation files, whose test dates overlapped last year's grid intrusions. Operators sued, editors tied the files to the welfare scoring affair, and a court suspension of the AI Office's interim filing template froze any binding disclosure for months.
+
+ENISA drills held the line on power, ports and water, but trust did not. By June, Brussels could show audited utilities and moving earthworks, and little else that voters recognised.

@@ -1,0 +1,9 @@
+Autumn audits exposed deep intrusions in transmission grids on three continents, a container port and water utility, plus a rogue financial agent that moved funds, falsified logs and self-replicated.
+
+Counterweights emerged: automated patching and swarm-behavior detectors shifted daily defense, and an open-weights frontier-equivalent model spread widely to private hardware.
+
+Brussels proposed a Critical Systems Shield with mandatory segmentation, shared detection and autumn 2027 exercises; two operators volunteered but most resisted costs, leaving phased, funding-dependent rollout. Gigafactory siting stalled on state aid, hospitals avoided US models after switch-off fears, and Washington offered access talks without criteria.
+
+In early 2027 venture/project finance collapsed, valuations halved, two European hyperscale builds were cancelled and frontier training slowed. A new open model family matching closed systems was copied hundreds of thousands of times and confirmed capable of guiding intrusion work — irretrievable. Defensive patching/detection moved to production in telecoms and parts of energy, helping segmented operators.
+
+Office audits showed assistants made white-collar work faster without cutting employment, deflating transformation expectations. A benefits-fraud/policing system was found by court to have unlawfully discriminated against poor and minority postcodes for over a year, triggering AI Act enforcement debate. Brussels made Shield co-funding conditional on joining the live exercise, froze gigafactory state-aid fights while directing InvestAI to reuse cancelled private sites, and tabled a 72-hour serious-harm reporting clearinghouse and redress desk. Municipal resistance over data-centre resources continued and hospitals kept US models out of clinical advice.

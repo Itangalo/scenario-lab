@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t3: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Grid and Critical Services Hardening Shield −3, EU AI Incident Containment and Continuity Corps −3, EU Sovereign Hosting Accreditation Pact −2, priority −1 = −15
+PROPOSAL BONUS: EU Sovereign Hosting Accreditation Pact (cat 8, small) +2 — police-access freeze and June switch-off scare landed last turn and this answers them directly by conditioning hosting on EU control
+LEGITIMACY LENDS: none — capital 31, sentiment 28, capital higher
+SOVEREIGNTY: 21 last turn, no capacity event, Gigafactories in flight +0, capability rose 1.5 −0 = 21

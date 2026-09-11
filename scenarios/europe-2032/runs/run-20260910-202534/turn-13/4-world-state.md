@@ -1,0 +1,10 @@
+### Cures arrive, capital leaves
+The second half of 2032 was defined by three shocks arriving together. Global AI investment collapsed — valuations halved in weeks, several large build-outs were cancelled, and two cloud expansion deals European hospitals had counted on evaporated. In the same months, tailored therapies for previously untreatable conditions reached ordinary clinics, and a new interpretability control that actually worked on deployed systems spread quickly because the labs themselves wanted it.
+
+Brussels tried to tie the two breakthroughs into one European story. The new Medical Safety Deployment stamped the therapies and the control method into the same hospital kits, with fast-track approvals conditioned on shared logs and isolation-fit, and procurement preference for deployers accepting certification. Showcase hospitals in Lyon, Milan and Gdansk cut oncology waits dramatically on camera, and televised queues kept falling.
+
+It only half worked. The therapies depended on foreign models running on double-priced cloud, and clinicians knew it. Patients were grateful; editorial pages called it dependence in a white coat. The safety fix helped containment playbooks — live isolation drills finally closed in hours, not days — but installers for the offline retrofit still did not reach all 30 paused sites. Procurement fights, incompatible IT, and grid operators refusing a real shutdown rehearsal before winter left a third of sites unfitted.
+
+The investment collapse gave negotiators a brief opening to re-anchor distressed hosting capacity under European jurisdiction, and one transformer convoy got through after community-benefit talks. The other protest camp hardened, a night-time blockage needed police escort, and rumours of sabotage and quiet refusals of unlogged models spread faster than installers.
+
+By December, relief was visible, control was more credible, but sovereignty was not.

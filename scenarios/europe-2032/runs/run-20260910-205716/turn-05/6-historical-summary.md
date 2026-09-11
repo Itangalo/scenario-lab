@@ -1,0 +1,5 @@
+Autumn 2028 brought coordinated machine-generated intrusions via a compromised update library, locking municipal, hospital and utility systems in three states for weeks; emergency lines held, attribution open. Defensive shift to automated patching + swarm-behaviour detectors proved decisive — adopters (banks, telecoms) recovered in days.
+
+Brussels rerouted Digital Europe funds to mutual-aid, clean rebuilds and shared patching via EU cyber agency and the industrial-control reserve; health/telecom ministers mandated incident reporting. Bank/state hardened-login rollout completed, easing cloned-voice fraud where enforced; fraud-signal exchange still slow.
+
+Build agenda stalled: gigafactory/sovereignty programmes limited to permits/grid, no fresh cash after private power/accelerator financing collapse. A second state explored its own supply deal, worsening cohesion fray. US election winner pledged tighter AI controls and tiered foreign access, raising EU fears of rationed frontier access. Public relief at defense tempered by disruption and dependence fears.

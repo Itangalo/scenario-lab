@@ -1,0 +1,12 @@
+### Holding the line with no money left
+January to June 2028 was the semester Brussels tried to do less, better — and discovered how little less still costs.
+
+The Commission named grid and port protection its priority for a second time, concentrating joint teams from the EU cyber agency and transmission operators on machine-speed patching and swarm detection. In Germany, Poland and parts of France, binding deadlines under critical-entity and network-security rules held. Operators reported faster isolation drills and a quieter spring on the networks. Elsewhere, enforcement slipped. With no new cash, liability cover stretched through emergency legal bases, and derogations traded for deadlines, several southern and central states deferred upgrades. The backlog for hardened relays and sensors still stretched past a year.
+
+Everything else was kept alive on paper. The gigafactory sites and technology sovereignty programmes stayed on permitting tracks, grid reservations retained, but with private co-financing still frozen no cranes returned. Health assistants and tutoring pilots continued to cut waiting times in Denmark, Estonia and a few German cities, and detection kits and offline backups reached willing municipalities. Where tenders stalled, nothing arrived.
+
+The separate cheap cloud deal signed last autumn was ring-fenced as outside joint procurement. Procedurally it held; politically it festered. A second capital was rumoured in the press to be shopping for a similar arrangement, with tender freezes cited as leverage. Mayors asked openly why they should host backup power for a common shield others could leave. In the Netherlands, siting fights hardened further.
+
+There were whispers of a Gulf fund offering bridge money for one empty gigafactory site in exchange for reserved capacity and looser data terms — single-source reporting, denied on record, but repeated enough to force ministers to answer questions about foreign ownership of supposedly sovereign compute.
+
+By June the mood was exhaustion rather than revolt. Tools worked where they were delivered, networks were quieter, but the Union's ability to start anything new was gone. With funds committed and cohesion fraying, even holding existing deadlines required concessions, and officials privately warned that further derogations would buy compliance at the price of credibility.

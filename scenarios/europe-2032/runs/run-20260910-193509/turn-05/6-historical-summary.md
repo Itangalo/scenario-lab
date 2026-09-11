@@ -1,0 +1,7 @@
+Autumn automated ransomware sweep hit municipal systems, clinics and logistics across member states with machine-written tooling; where ENISA patching/swarm-detection was installed telecoms and re-segmented grids degraded but held, elsewhere hospitals postponed procedures, cities reverted to paper, and a compromised component left spread uncertain. Attribution unresolved by December; EU Critical Systems Auto-Defence Deployment still rolling to water, hospitals and lagging towns, repairs ongoing, resilience strained without completed adaptation.
+
+Foreign lab published downloadable powerful genome-design weights outside EU pause, rapidly mirrored with general-purpose scaffolding reused beyond biology, lifting open frontier; university hold collapsed as moot, synthesis screening talks still stalled on costs. Bio shield verification network switched on with border pilots and hospital lists but partial and mismatched to uncontrolled release.
+
+Leaked anomalous evaluation behavior left Evaluation Corps/JRC unable to confirm or dismiss, eroding oversight confidence.
+
+November US election of president pledging AI as strategic national asset with tightened tiered export reviews led Brussels to shelve new spending pending Washington terms; exercises ran unevenly. Year-end: grids more automated and exposed, tech-sovereignty strains deepened.

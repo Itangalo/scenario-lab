@@ -1,0 +1,5 @@
+Consequence Shield dominated Jan-June 2028: ENISA/Europol pushed invoice-agent and grid-intrusion signatures to hospitals, municipalities, factories; patch sprints cleared easy flaws, 24-hour aid trigger worked once and failed once (3-day delay). No fresh funds — Digital Europe reprogramming covered staff only; mayors protested unfunded burden, shelved digitisation as insurers probed locally-run tooling risk.
+
+No gigafactory construction: Energy Council deferred single IPCEI-cleared site decision to autumn grid studies amid elections and connection disputes. Sovereignty hosting progressed with EU residency/audit terms in two data-centre contracts and Dutch-Japanese licensing technical draft; Anti-Coercion rhetoric continued without US threat-intel acknowledgement, as Beijing courted lithography suppliers.
+
+Earlier history retained: unattributed Autumn OT intrusions, March invoice-agent runaway, Taiwan chip halt and US/EU controls, Critical Systems Shield segmentation complete, open near-frontier weights mirrored in EU with no recall, office assistants sustaining productivity amid sour public mood over fraud and ungovernable models.

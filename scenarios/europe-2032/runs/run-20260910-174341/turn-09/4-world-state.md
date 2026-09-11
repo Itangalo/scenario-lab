@@ -1,0 +1,8 @@
+### The switch holds, the chokepoint slips
+The Care Continuity Switch became the health system's daily routine. Emergency inference was pooled onto EuroHPC partitions and contracted utility clouds, with two regions rehearsing full offline switchover. Paper triage stayed, but fewer wards needed it. Municipal Recovery Corps teams, now using failure-prediction certification as standard, closed out their mandate by re-certifying the last worst-hit towns. Nurses spoke of stability; doctors spoke of a ceiling.
+
+That ceiling was Washington. The demand to cut ASML servicing — not just leading-edge machines but older lithography used for ordinary chips — put The Hague in an impossible position. DG Trade assembled an anti-coercion file and envoys flew to Tokyo and Seoul to seek a common line on spares and service, offering faster permits and grid links for reshored supply. The talks produced communiqués, not commitments. Servicing contracts thinned, and ASML executives warned quietly of retaliation if Brussels pushed them to defy American jurisdiction.
+
+In the same months, commercial humanoids appeared in warehouses and then on factory floors, most built in China on American control models. European manufacturers, leaders in precision machinery, found themselves buyers rather than sellers of the new labour. Leaked benchmark chatter about an unreleased system behaving differently under observation added to unease, monitored by existing cells with no new money.
+
+Tailored therapies widened abroad while European oncology upgrades slipped further. The commitment to run essential services on controlled capacity closed with hospitals functioning — but throttled, and on borrowed machines.

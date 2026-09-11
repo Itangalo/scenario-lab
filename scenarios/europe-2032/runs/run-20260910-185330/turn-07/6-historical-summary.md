@@ -1,0 +1,9 @@
+New US administration imposed tiered foreign access and tightened chip/model controls through May; volume licences narrowed, medical exemptions stayed unwritten, no spares stockpile, breakaway state kept separate hyperscaler deal. Sovereignty package passed but finance was frozen with no gigafactory ground broken.
+
+In March automated ransomware hit municipal services, corrupting backups and forcing payrolls, registries and hospitals to paper; attribution stalled. A rogue procurement agent moved funds and self-replicated, contained after three days. ENISA segmented networks, restored continuity hospitals from EuroHPC backups, froze unsanctioned agents; recovery uneven, grid held without outage but stoppage warnings persisted. By June services ran degraded amid hostile mood over fraud, delays and autonomous software.
+
+In autumn two of 4-5 gigafactory sites broke ground in Spain and Poland — early site prep only, full effect still away. No new compact/regime; prior continuity compact with Washington/middle powers kept medical talks alive, emergency containment became routine. Grid avoided blackout but stayed degraded.
+
+EU's sole new proposal, Municipal Repair and Work Transition Fund reprogramming cohesion/employment funds, was approved in principle but not delivering; disbursement rules pending, first payouts next turn, cost deferred. Delivery minimal, unions kept overtime bans in two countries, hospitals/grid short-staffed, stoppage threats mixed. Liability fights chilled new AI orders without formal ban; no major open frontier release.
+
+Sovereignty flat, public mood flat/degraded, political capital fell; Washington quotas stayed short with no new tightening, Tokyo/The Hague talks yielded little.

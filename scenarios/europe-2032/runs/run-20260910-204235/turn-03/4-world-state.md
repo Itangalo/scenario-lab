@@ -1,0 +1,10 @@
+### The weights get out
+The release landed in autumn. A near-frontier open model, only a step behind the best closed systems, was posted with weights, tooling and fine-tuning guides. Hundreds of thousands of downloads in the first week. Security researchers confirmed within days that it lifted automated intrusion work and lab-protocol troubleshooting well beyond the previous openly available level. Recall was not attempted; there was nothing to recall.
+
+Brussels moved where it could reach. The two shields built over the past year finally switched on: grid operators under the cyber programme began coordinated patching and shared detection, and the bio network of wastewater sampling and clinical alerts started producing a single picture. Hospitals reported faster triage hand-offs, and energy regulators cited two blocked intrusions that would have cascaded a year earlier.
+
+The new misuse shield was ordered in the same weeks. Emergency money was reprogrammed for a patch-and-hunt sprint with transmission operators, telecoms and large hospitals, and DNA synthesis firms were told to screen orders and know their customers under existing biotech powers. Binding reporting was promised by autumn, with liability cover offered to blunt industry resistance.
+
+It landed half-built. Synthesis screening split the market: large providers complied, smaller labs and foreign mail-order services did not, and health ministries quarrelled over who paid for reagents. The sprint found unpatched hospital networks faster than it fixed them, and a ransomware wave using AI-generated lures forced ward closures in two regions in November. Gigafactory permits and the technology package barely moved, kept alive on paper by Commission staff and bankers while attention stayed on containment.
+
+Washington's pressure over chip-tool servicing was again deferred, preserving Dutch votes for the screening mandate at the cost of open resentment in The Hague. The public noticed the containment more than the saves. Coverage of the open release, the hospital closures and fresh voice-clone fraud outweighed quiet progress on detection.

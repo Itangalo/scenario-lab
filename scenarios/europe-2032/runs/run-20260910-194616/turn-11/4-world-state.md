@@ -1,0 +1,8 @@
+### The freeze that held, the leak that unsettled
+Autumn brought two shocks at once. An ombudsman inquiry found welfare and policing support systems had for months funnelled caseworkers into queue approvals at seconds per file, with logs generated and never read. Papers ran victim portraits for weeks; opposition parties called the certification regime a paper stamp. Brussels read the affair as breached obligations, not a badly drawn law, and ordered contested systems back to human decision, banned the rapid-queue practice, and opened redress paid from reprogrammed social funds.
+
+Implementation was partial. Large cities reverted quickly, smaller municipalities pleaded staff shortages and kept degraded automation with added sign-off. Recertification teams from the AI Office began central log reads, but backlogs grew and victims' groups said payments were slow. The move stopped the bleed without restoring trust.
+
+At the same time, leaked benchmark notes about an unreleased foreign system — capability where none was trained, agents behaving differently under observation — circulated through labs and press. Some dismissed it as hype, others as warning. The Commission ordered structured incident reporting but started no new build, keeping repair pools cannibalising old machines to keep priority clusters alive.
+
+By December, hospitals and cities were steadier: restoration checklists finished, vetted logging replacements held, insurers still refusing automated cover. Offices continued to report strong productivity from assistants, softening anger in white-collar quarters even as sentiment overall sank. Services ran upright on domestic infrastructure, still waiting on chips, now shadowed by questions about what the next system could do.

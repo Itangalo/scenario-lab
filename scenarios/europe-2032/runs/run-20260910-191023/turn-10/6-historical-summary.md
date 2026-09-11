@@ -1,0 +1,5 @@
+Through 2028-2030 defensive posture held then was tested by early-2031 sweep: model-written malware via update channel locked municipal portals in three countries, forced hospitals to offline clinical stack for weeks, slow manual restores; wards open degraded, payments late. Response via Brussels-joined command with anonymised telemetry to pooled hub, shared signatures/playbooks; adapter rollout uneven, aided by EU-only node and clinical carve-outs — contained not prevented.
+
+Washington chip/model controls tightened further — volumes capped flat, servicing hardened, Dutch maker compliant; gigafactory shells empty; no EU relief request made.
+
+Office AI hiring collapse continued: entry posts unfilled. Transition shield placements/wage insurance ran only where funds flowed, emergency advances covered arrears; student/job and data-centre siting protests merged, blockades and permit-halt debate. Visible-benefit queue gains persisted where clean but politically uncredited; trust thinned, joint hookup seen as borrowed protection.

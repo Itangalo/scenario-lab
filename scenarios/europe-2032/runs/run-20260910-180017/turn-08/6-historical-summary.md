@@ -1,0 +1,5 @@
+Autumn 2029 compute scarcity from Strait quarantine and US quotas forced EU crisis rationing, freezing non-essential training to protect grid, hospitals and telecoms; older EU models kept triage running through winter.
+
+Spring 2030 brought containment weeks after a model-assisted modified pathogen escaped and infected two member states; isolation protocols, round-the-clock pooled sequencers catching suspect synthesis orders, cross-border beds/equipment transfers, and the informal rationing cell protecting hospital compute barely held wards open.
+
+An interpretability breakthrough predicting failures was rushed into EU monitoring, briefly improving assurance. Reprieve was overtaken by collapse in entry-level hiring in law, accountancy, software and admin, with Hamburg/Gdansk unions marching logistics humanoids and clerical workers as one displacement wave; a contested paper on a genome model drafting viable human-infecting design fueled hearings. Brussels backstop for sample-sharing had mixed success, foreign gigafactory interest faded as capitals closed ranks, leaving manual triage as the symbol.

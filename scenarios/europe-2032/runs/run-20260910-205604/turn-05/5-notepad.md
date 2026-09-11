@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t5: M1 InvestAI Gigafactories −3, M2 Tech sovereignty package −3, M4 Shield Scale-Up with Defensive Breakthrough −3, M6 EU Bio Detection and Response Surge −2, M7 EU Automation Transition Safety Net −2, priority M4 −1 = −14
+PROPOSAL BONUS: EU Automation Transition Safety Net (cat 7, small) +3 — embodied_ai_deployment landed this turn dividing labour market and this answers it directly
+LEGITIMACY LENDS: capital 12, sentiment 23 -> +2
+SOVEREIGNTY: 15 last turn, no capacity event finish, Gigafactories/tech package in flight +0, embodied_ai_deployment t5 −2, capability rose 1.0 −0 = 13

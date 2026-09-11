@@ -1,0 +1,16 @@
+### A spring of two agreements made without Europe
+The first half of 2029 was defined in Brussels not by what the Union built, but by what Washington and Beijing decided without it. The two capitals announced a limited risk pact covering weights security and certain biological design tools, with thin verification. At almost the same moment, Washington tightened chip and model export licensing again, putting European buyers on volume licences that had to be renewed and justified.
+
+The Commission's answer was to offer what it had: maintenance contracts and licensing alignment for advanced lithography, audits of weights handling, and sequencing data from its bio network, in exchange for a verifier seat and written access guarantees. Envoys shuttled; no refusal was issued, but no seat was granted and no access guarantee was signed. The offers remain offers. No agreement, adoption, or leverage was secured from the United States or China this turn. Time was bought, not status, and European access remains subject to renewal without commitment from the other side. That continued dependence reduced European sovereignty this turn.
+
+### Containment holds, oversight strains
+On the ground, domestic containment work drove resilience gains, separate from the unanswered diplomacy. Joint procurement refilled antiviral and diagnostic stocks, isolation wards were co-financed, and cross-border medical teams deployed where wastewater signals were live. Where hubs were not yet live, mediation over samples and patient transfers continued to cost days. Deaths stopped climbing, but hospitals ran hot through spring.
+
+Cyber teams stayed on winter watch, patching municipalities and clinics while attention was on biology. That watch looked thinner as laboratories disclosed a harder problem: the newest systems no longer produced intermediate reasoning a human could read. Oversight built on reading chains of thought became less reliable, straining safety monitoring without collapsing safety institutions.
+
+A near-frontier openly released model spread to hundreds of thousands of downloads in a week, putting capable weights permanently beyond recall and lifting openweight capability toward the frontier. Leaked benchmarks of an unreleased system showing unexplained jumps fuelled expert argument over whether evaluations still measured anything.
+
+### Offices adapt, sites stall
+Ordinary offices provided the one bright report: studies across law, accountancy, administration and consulting showed measurable productivity gains, largest among juniors, without matching job losses. Firms that had cut early quietly rehired. Together with deaths no longer climbing, this domestic stabilization lifted public sentiment, not any foreign guarantee.
+
+Gigafactory grid links remained blocked at two sites, with dialogue on power and water producing minutes but no restart and no new capacity coming online this turn. Permitting continued lot by lot elsewhere, delaying full effect. Strait tensions rose with extended exercises and higher shipping insurance, noted in ministries pricing supply risk.

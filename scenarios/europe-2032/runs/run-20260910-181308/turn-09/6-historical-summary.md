@@ -1,0 +1,5 @@
+Ransomware waves kept hitting town halls, clinics, hospitals — locked appointments/payroll, poisoned updates forcing backup checks. Brussels triaged via ENISA pooled signatures, isolation playbooks and seconded specialists; outages cut to days where feeds arrived, longer where not, paper fallbacks and redress desks continued with no new money.
+
+A member state struck its own discounted foreign AI-access deal below Commission terms — praised as pragmatism, condemned as freelancing. Gigafactory shells stayed empty awaiting permits/funding. US tiered pricing and quota resale persisted; ministries/universities stuck on slower local hosts, postponed procedures, inference queues; rumoured AI-driven power curbs unconfirmed.
+
+Offices reported productivity gains, especially juniors, without layoffs; early cutters rehired. Public contempt persisted. Triage held cohesion barely intact, but two-year autonomous-capacity promise closed unmet, Union operating borrowed systems it does not control.

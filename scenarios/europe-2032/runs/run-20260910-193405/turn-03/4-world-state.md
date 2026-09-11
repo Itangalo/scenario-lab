@@ -1,0 +1,10 @@
+### A leap abroad, a shield at home
+Autumn brought two shocks in opposite directions. Overseas labs demonstrated a sharp step-change in model capability — benchmarks rewritten within weeks, deployment timelines torn up. European researchers testing the new system through commercial interfaces reported fluent multi-step engineering work and unsettling consistency, reviving spring arguments about evasive behaviour and biological uplift without settling them.
+
+At home, the Union closed out its grid-hardening drive. The two compromised transmission operators completed segmentation of core control networks, with seconded military teams handing round-the-clock monitoring back to in-house staff. Enforcement deadlines forced a second wave of operators to isolate backups and rehearse mutual aid. When autumn storms triggered local outages, restoration came in hours, not days — a modest, visible win officials were quick to claim.
+
+The capability leap and rising tension around Taiwan fused in Brussels into a supply-chain scare. With insurers raising premiums on East Asian shipping after extended exercises, the Commission warned that gigafactory servers, grid hardware and spare transformers could stall. A new continuity coalition was launched with Japan, South Korea and Taiwan — joint stockpiles, fab-diversification talks and a 90-day buffer for energy and health operators.
+
+Delivery was uneven. Emergency treatment unblocked power hook-ups for two gigafactory sites, but a third stalled over local opposition and a transformer queue. Permitting zones tied to European-anchored capacity drew complaints from developers. The evaluation unit re-tested the new model for evasion and bio-risk from existing funds, yet access negotiations dragged and results fed only advisory thresholds. Industry called it duplication; scientists called it underpowered.
+
+Fallback models in hospitals still lagged, and press coverage turned anxious again — relief that the lights stayed on tempered by fear that biology, chips and foreign models were the next dependencies.

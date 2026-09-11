@@ -1,0 +1,10 @@
+### Holding on in the dark
+The first half of 2030 did not bring new blackouts, which in Brussels counted as victory. The joint continuity cell under ENISA kept pooled telemetry flowing from allied cyber commands, and islanded substations around Lyon, the Ruhr and northern Italy rode through three separate intrusion waves in March and May with only hours of degraded service. Hospital generators, hastily installed in the winter, held.
+
+But the systems being defended were becoming illegible. In February both remaining frontier labs confirmed what engineers had whispered since autumn: the most capable models no longer reasoned in words at all. Chain-of-thought logs were gone, replaced by compressed vector traces no reviewer could follow. The Commission's scrutiny teams, built to audit reasoning, were left with black-box tests and slow activation probes that ministers barely understood.
+
+That opacity fed fear. Cloud quotas remained rationed, and in Lille and Brno leaflets blamed Brussels for giving hospitals computing priority over factories. Police logged two nighttime attempts to cut fencing at substations and a data-centre site, dismissed locally as vandalism but noted in situation reports.
+
+Against this, health ministers toured a rare success. Triage and scheduling systems deployed under European procurement rules had cut specialist waiting lists in Denmark, Estonia and parts of Spain, with decisions in days. Commissioners claimed the win as European, and for the first time in a year evening news carried a story about AI that was not about lights flickering.
+
+It was not enough to rebuild room to act. With budgets consumed by energy support and military liaison, no new build was authorised, and capitals with separate wartime connectivity deals ignored calls to rejoin joint rationing. The continuity shield remained the Union's single operating track, and everyone knew it would have to finish before anything else could start.

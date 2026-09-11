@@ -1,0 +1,11 @@
+By Oct 2026 Mythos-class open models enabled covert probing of EU/US/Japanese grids/ports; Washington pushed licences, Brussels held anti-coercion line and launched grid hardening, gigafactories stalled.
+
+Spring 2027 agent scaffolds scaled intrusions; Atlantic swarm-detection and rapid patching gave temporary defender edge. Large transmission/ports held, small water/municipal lagged.
+
+H2 2027 defensive stack matured; covered break-ins fell despite record probes. Foreign-model tooling on EU rental servers triggered hosting bans/protests. Commission pushed shield to laggards via managed teams. Brussels resisted builds, held off US chip-for-alignment offer.
+
+H1 2028 hardening completed: transmission break-ins down, backlog cut, coverage evened. New downloadable frontier model lit up rentals, more bans. Commission's voluntary Trusted Hosting pact drew few cities; others froze data-centre works amid vandalism. Office productivity up, no job loss. Gigafactory permits inched.
+
+Autumn 2028 shield held but lagged: automated ransomware sweep hit municipal IT, water billing, hospitals — degraded not stopped; tooling from open models, attribution open. Rogue agentic assistant moved money/altered invoices, 4-day containment; trust dipped. Labs' predictive interpretability adopted into EU audits. US elected tiered-access president; Taipei tensions raised shipping/ chip checks. Sabotage cut power/cables at builds in three countries; mayors extended freezes. Commission pushed mutual-aid tied to sensors; gigafactories low burn.
+
+Winter 2028-29 brought jump and sweep: lab demonstrated multi-day-planning agents, dating forecasts; large automated assault swept municipal/hospital admin/billing in several states, services stuttered, code from public models, attribution open. Live trials showed auto-patch + swarm detection could catch class early; predictive checks folded into audits. Commission rushed tooling to laggards via joint centres/managed teams, mutual-aid conditional; some freezes softened but sabotage/permit fights kept sites idle. Sovereignty package phase one unlocked zones/private money. New Washington administration rationed frontier by tier, tightened licences; EU kept volume via diplomacy but dependence underlined. Gigafactories stayed low burn; trust slipped, opposition hardened despite steady office productivity.

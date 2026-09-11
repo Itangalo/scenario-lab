@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: M11 EU AI Livelihood and Entry-Work Transition Guarantee −2, M12 EU ASML Anti-Coercion Shield and Chokepoint Bargain −2, M13 EU Distressed-Site Transition Works and Vetted Aid Corps −2, priority −1 = −7
+PROPOSAL BONUS: EU Distressed-Site Transition Works and Vetted Aid Corps (cat 7, small) +2 — ai_investment_collapse landed this turn and this answers it directly by buying cancelled capacity cheap for paid entry-work
+LEGITIMACY LENDS: capital 29, sentiment 12 -> none, capital higher
+SOVEREIGNTY: 13 last turn, no cat4 finish, no cat4 in flight +0, ai_investment_collapse t11 −2, capability rose 2.0 −1 = 10

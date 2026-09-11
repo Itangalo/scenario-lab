@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 50.0 to 53.0 (a rise of 3.0) while `ai_capability` increased from 56.0 to 57.5 (a rise of 1.5). According to metric rule 2 (referenced in Invariant 2), `openweight_capability` is set near the midpoint of its previous value and last turn's `ai_capability`. The update fails to justify this jump under that rule. A rise of 3.0 in `openweight_capability` exceeding the rise in `ai_capability` is permitted only if it follows the specified formula; no such calculation is provided, and a 3.0-point increase without justification contradicts the accumulation rules for these metrics.\n- Invariant 7 violated: The drop in `eu_political_capital` from 31.0 to 15.0 (a decrease of 16.0 points) is inconsistent with the constitutional requirement that `eu_political_capital` and `eu_ai_sovereignty` are separate stocks and that sovereignty’s contribution to political capital never exceeds +3 per turn. The narrative attributes the drop primarily to a member state defection and loss of cohesion, but a 16-point drop implies a dominant negative term tied to sovereignty decay. Given that `eu_ai_sovereignty` only decreased by 2.0 points (from 23.0 to 21.0), the magnitude of the political capital drop is disproportionate and suggests an unpermitted coupling or multiplier effect between the two metrics, violating the constitutional separation.\n- Narrative Constraint 8 violated: The narrative states \"the frontier moved discontinuously\" and refers to a \"new release\" that \"demonstrated sharply better performance,\" implying an unannounced acceleration in `ai_capability` growth. However, Invariant 1 mandates that \"how fast the world moves is fixed, and unannounced\" — meaning the rates of metric progression (especially for `ai_capability`) must follow predetermined trends without surprise jumps. A discontinuous leap contradicts the fixed, unannounced pace and telegraphs an unmodelled acceleration, violating realism."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

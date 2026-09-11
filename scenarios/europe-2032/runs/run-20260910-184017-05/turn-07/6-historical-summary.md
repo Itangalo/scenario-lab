@@ -1,0 +1,5 @@
+Autumn rebuilds stabilized municipal IT, hospitals and telecom billing with machine-speed patching, swarm-behavior detection and certified behaviour properties via AI Office/JRC dashboards; reinfection rates fell.
+
+Ombudsman/court verdict found AI benefits eligibility system systematically cut/delayed payments with buried appeals, incomplete logs and slow redress — framed as AI Act enforcement failure. Commission ordered audit, redress and procurement pause, but thin audit teams and slow queues deepened distrust; mayors criticized Brussels paperwork-after-harm.
+
+InvestAI gigafactory first phase not closed: grid lots and public-bank guarantees still in negotiation, forensics consuming HPC, US quotas still narrow/logged, timelines slipped. Washington bargaining track continued with no export-control deal or access change. Local protests at grid sites, warehouses still foreign-automated with picking jobs gone.

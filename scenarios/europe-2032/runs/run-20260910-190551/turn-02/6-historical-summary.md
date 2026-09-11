@@ -1,0 +1,5 @@
+Early in the year a coding-capability jump was quickly folded into probing toolkits for industrial networks, making October's grid mapping more dangerous than assumed.
+
+The Commission prioritized the power, ports and water hardening drive: audits became remediation orders, connectivity funds bought offline vaults, segmentation kits, spares and manual-fallback drills instead of impossible hardware replacement, plus a spring cross-border containment exercise. The AI Office created a small evaluation cell with structured-access powers and a 48-hour near-miss feed from critical operators. Gigafactory and sovereignty work ran on autopilot amid industry complaints.
+
+Meanwhile offices showed measurable productivity gains without layoffs, with public-sector deployments credited for shorter queues and faster permits. Warm coverage reduced pressure to spend on jobs, complicating spending on unseen grid threats.

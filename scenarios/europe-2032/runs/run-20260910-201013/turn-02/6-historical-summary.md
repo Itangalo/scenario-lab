@@ -1,0 +1,5 @@
+Winter hardening of grids, ports and water under the joint incident cell and emergency segmentation orders progressed unevenly: France, Germany and Poland contracted backup relays and separation with repurposed funds, but staffing and legacy incompatibility slowed work. Spring audits still found dormant staged tools in operational networks; intruders not expelled, no new blackouts.
+
+A contested March genome-model paper claiming model-assisted design of a human-infecting organism by non-experts sparked closed biosecurity debate over validity and over-disclosure. Brussels treated it as warning, ordering health emergency and disease control agencies to link hospital sequencing and wastewater monitoring and plan stockpile exercises; hospital survey done, funding deferred.
+
+Gigafactory siting and sovereignty permitting stalled in state-aid review amid U.S. lithography pressure and reopened regional bargains. Welfare-policing automation scandal continued to erode trust in public AI despite enforcement clarification; productivity gains from assistants ignored. Reports of engineered phages and a proposed freeze on pathogen-design methods remained rumours.

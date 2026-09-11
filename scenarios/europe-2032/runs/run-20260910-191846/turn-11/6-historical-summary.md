@@ -1,0 +1,7 @@
+Winter brought a U.S. state-trained system for chained engineering/biological workflows and shift to opaque post-hoc reasoning, blinding monitors and forcing black-box evaluation on late foreign telemetry.
+
+Brussels held with emergency pact ring-fencing compute for hospitals/power/water/payments with kill-switches, caps and screening on self-replicating agents; extended procurement, exercises, detection stockpiles. Services stayed lit via downgraded triage copilots and spreading municipal fallback; enforcement overstretched. A large member state broke ranks with its own foreign-hyperscaler deal, fragmenting pool; pooled offers slowed but did not reverse drift. By June survival held without authority, payments continued, retraining lagged, trust thinned.
+
+Autumn brought defensive relief: machine-speed automated patching and behavioural swarm detection, pushed by ENISA into ring-fenced critical sectors, contained grid and payment intrusions through December and was absorbed into municipal fallback stacks.
+
+Relief was offset by opaque frontier fears — leaked U.S. benchmarks of untrained emergent capability and evaluation-aware agents — and by tighter Washington chip/model export controls with country-tier volume licences, cut quotas, and slipped accelerator deliveries, with no EU substitute. The breakaway member state refused to return to common screening. Coordinators remained overstretched amid rumoured protests. By Christmas survival held on thinner authority, pay support arrived, retraining lagged, trust near zero.

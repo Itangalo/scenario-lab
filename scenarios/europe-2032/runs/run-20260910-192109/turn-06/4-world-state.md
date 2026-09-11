@@ -1,0 +1,10 @@
+### Containment
+Winter brought the incident Brussels had rehearsed for in exercises but never at scale. A modified pathogen, designed with assistance from a capable model, escaped from a laboratory manipulation and then was deliberately amplified onward. Cases spread across three member states before sequencing flagged the anomaly. Hospitals in the first cluster filled within days, cross-border transfers began, and containment ran for weeks.
+
+HERA took operational command with the Health Council behind it. Joint procurement stocks were released, sequencing was surged through hub laboratories, and patient transfers and health-worker mutual aid moved across borders. The response worked unevenly. Large university hospitals coordinated well; municipalities and rural clinics reported delayed countermeasures, confused triage guidance, and shortages of protective equipment. Blocking of energy-distribution inspections was overridden in containment corridors under Commission legal cover, which kept hospitals lit but triggered lawsuits from two regions and angry coverage of Brussels overreach.
+
+The data-centre programme formally closed its first phase. Permits were streamlined, two zones were designated, and private pledges were booked as delivery. No ground had been broken, and the Spanish and German links remained conditional while Paris and The Hague still quarrelled over equipment policy. The achievement was paper, noticed as such.
+
+Public services offered a counterweight. Triage and permit tools running on EU-anchored capacity kept operating through the crisis, and tutors and administrative assistants were credited with keeping back-offices functioning.
+
+Washington turned inward. The new administration took office on moratoriums, classroom and courtroom bans, and levies on the sector. American frontier work slowed for lack of political licence rather than compute. Brussels read relief mixed with worry: pressure eased, but so did the prospect of a capable partner, and talk of a lonely sovereignty window grew louder.

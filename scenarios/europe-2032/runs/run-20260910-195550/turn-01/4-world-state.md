@@ -1,0 +1,14 @@
+### The test shot
+In October, engineers auditing a transmission operator in central Europe found strangers already inside. Within days the same fingerprints turned up in a second European grid, in grids on two other continents, in a major container port and in a regional water company. The intruders had been there for weeks. They had mapped protection relays, collected breaker credentials and left tooling staged in the open. Nothing had been switched off. The short blackouts that followed came from the clean-up, not the attack.
+
+Investigators described thousands of small automated probes running for weeks, adapted from a freely downloadable model of the most capable class with extra tuning for industrial systems. Running that long took serious computing power, which pointed many analysts toward a state sponsor, but no government agreed on which one. The consensus was colder: someone had cheaply measured what was possible and would decide later whether to use it. Segmentation assumptions that utilities had relied on for years did not hold.
+
+### Brussels answers with concrete
+The Commission moved its cyber reserve and its energy and transport ministers into a single hardening drive for power, ports, water and telecoms, with mandatory segmentation audits, shared detection and cross-border aid teams led by France, Germany and Poland. Money was shifted from existing digital and connectivity budgets. Telecom operators and municipal utilities protested the cost; co-financing and procurement preference softened but did not end the fight. Winter exercises were ordered while auditors were still inside the compromised networks.
+
+The two inherited technology programmes — large computing factories and a broader sovereignty package — kept running on an emergency legal base to speed permits and grid connections. Local opposition to new data-centre sites grew louder in press coverage, and leaked laboratory risk assessments fed parliamentary calls for mandatory disclosure, but neither yet blocked construction.
+
+### The chokepoint used by someone else
+At the same time Washington ordered a Dutch lithography champion to halt not only leading-edge shipments to China but servicing and older product lines, using American technology claims across the supply chain. The Hague complied after a short struggle. European trade ministers discussed retaliatory screening instruments but opened no new file, unwilling to split attention while grid intrusions were still being mapped. Editorial pages called it humiliation: Europe owned the bottleneck and someone else turned the tap.
+
+By December, grids were cleaner but not proven clean, exercises were scheduled but not held, and computing dependence felt heavier than in July.

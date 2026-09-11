@@ -1,0 +1,7 @@
+Grid intrusions and credential theft led to Jan US model cutoff and Feb ransomware hitting municipals, regional hospitals, and energy-water contractors; hardened transmission operators held. Centre triage and resets prevented collapse but edges went to paper amid work-to-rule.
+
+Shield/Cloud remained partial: two operators drilled, small pilot for admin/triage, expansion blocked by licences/liability. Sovereignty package stalled on permits, hiring, power until July 2028 when four gigafactory sites broke ground. Transition fund approved in principle, first payouts reached hit regions hiring hundreds for retrofit.
+
+Autumn open-weight frontier release spread exploit toolkits targeting unpatched municipal stacks. ENISA-led Patch and Recovery Corps via cohesion funds set up clean-image depots, restored booking in two regions and two contractors where overtime paid; elsewhere sick-outs, paper protests, and liability refusals held queue. Procurement waivers sped work but faced court challenges; mid-size contractor neared insolvency, got state guarantees.
+
+Jobs crisis persisted in law/accountancy/support; graduate protests continued. US tier-rationing hardened with months-long EU licence reviews and chip orders; Taiwan tensions raised shipping costs. By Dec 2028 recovery started — cranes and clean servers — but hospitals still on paper and rebuild incomplete.

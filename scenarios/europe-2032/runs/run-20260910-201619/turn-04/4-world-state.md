@@ -1,0 +1,12 @@
+### Holding the line
+The first half of 2028 confirmed Brussels' bleakest forecast: capable weights no one could recall, and a world growing harder to ship through.
+
+A new openly downloadable system, close to the closed frontier, spread to hundreds of thousands of machines in days. European security teams found probe kits rebuilt on top of it within weeks, aimed again at grid control networks and port logistics. The Commission's triage cell, set up the previous autumn, moved findings straight to Shield operators — signatures, patches, monitoring rules. Where staff existed, it helped. Two more grid operators and the Rotterdam area contained intrusions quickly. Municipal water utilities, the weakest link, struggled: kits alarmed too often, small teams muted them, and a handful of copycat probes lingered undetected for days before being cleaned.
+
+The Shield rollout, now declared operational in its first wave, took the political credit. Ministers toured control centres and spoke of withstanding machine-speed attacks. Engineers were blunter: detection was better, staffing was not, and false positives remained exhausting.
+
+Universities stayed divided. The voluntary pause on publishing advanced agentic-training methods held formally, with pre-publication checks routed through research forums. Yet an American laboratory published a full training recipe openly in spring, and replications bloomed across open forums. Rectors complained Europe was restraining its own journals while the methods circulated anyway; a legal challenge by academic societies and a rights group, rumoured in faculty corridors, gained signatures but no court date.
+
+Build-out stalled. The two factory sites poured concrete and waited for accelerators Washington would not release. Quiet approaches through the transatlantic trade channel yielded sympathy, no chips. As extended manoeuvres in the Taiwan Strait lifted shipping insurance and rattled chip-stock planners, Paris spoke of coercion and Berlin of patience. Brussels pre-positioned spares and logistics workarounds without new money, holding civil works alive.
+
+By June, essentials kept running, but dependence felt heavier. Defence improved; autonomy did not.

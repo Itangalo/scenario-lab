@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t2: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Critical Infrastructure Cyber Shield −3, European Chokepoint Response −3, priority −1 = −13
+PROPOSAL BONUS: European Chokepoint Response (cat 8, large) +4 — supply_chain_coercion landed this turn and this answers it directly, ai_investment_collapse adds context
+LEGITIMACY LENDS: capital 32, sentiment 35 -> none yet, capital is lower check after? capital 32 vs sentiment 35, rule needs sentiment above capital - actually sentiment 35 above 32, but comparison is pre-change; using start 44 vs 40 none
+SOVEREIGNTY: 21 last turn, no capacity event finish, in flight +0, supply_chain_coercion t2 −2, capability rose 3.0 −1 = 18

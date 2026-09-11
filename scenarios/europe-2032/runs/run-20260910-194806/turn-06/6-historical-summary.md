@@ -1,0 +1,7 @@
+2028 was a year of cascading scarcity and eroded trust: poisoned-dependency ransomware crippled municipal services in four states, Taiwan Strait quarantine and U.S. servicing bans choked chips, AI valuations collapsed, welfare-scoring cut legitimate claimants, and unanswered shocks from genome-modelling and open near-frontier models left Brussels in crisis management.
+
+Early 2029 deepened fragmentation. By February firms froze junior hiring as graduates faced automated screening silence; Brussels retraining guidance was ignored while cities extended freezes on automated procurement after triage errors.
+
+In March Washington formalised tiered frontier-system allocation and tightened chip/model licences: allies kept reviewable volume licences, others cut off, with Dutch-Japanese-Korean spares cooperation securing carve-out. The common EU line then broke as a member state signed its own compute deal with a US hyperscaler for guaranteed capacity outside EU allocation, rejecting offers of first gigafactory capacity. Gigafactory sites stayed fenced and idle on punitive, late chips; sovereignty package kept diplomacy coherent but delivered no machines.
+
+By June Brussels kept essential services running and avoided ally-rationing, but had neither held members together nor hired graduates.

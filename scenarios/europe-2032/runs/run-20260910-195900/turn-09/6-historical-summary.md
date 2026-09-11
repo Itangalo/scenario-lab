@@ -1,0 +1,7 @@
+By late 2029 automated patching and authenticated spares held together through autumn intrusions, becoming standard procedure with mandatory near-miss reporting; where suspect chips were still pulled, wards stayed manual for weeks.
+
+Washington placed frontier labs under direct state control with security officers, equity and classification, turning maintenance and tier paperwork into foreign-security dealings. Spare flows thinned further, diversion hardened, and two gigafactory grid-connection sites slipped back to intermittent work.
+
+A contested genome-model paper — viable human-infecting design via AI assistance — was treated by health/interior ministries as categorically new despite methods disputes; hospital-hosted open models were tightened and wastewater/clinical pilots tasked for bio-uplift signals.
+
+Wage-insurance flowed to the two blockade states for site protection, but placements were token and employers banked subsidies without reopening graduate intake; blockades became rolling pickets under police perimeters, fusing jobs anger with dependency humiliation. Brussels opened a state-to-state track offering supply-chain cooperation for assured maintenance, diverted-stock control and shared bio-evaluation, but US national-security timelines delivered nothing by December, leaving towns more resilient, supply more exposed, and faith in market power openly questioned.

@@ -1,0 +1,11 @@
+### Cover withdrawn
+Winter brought the test Brussels had feared at the bottom of the system. Three major reinsurers stopped writing new cyber policies for towns and local utilities without round-the-clock monitoring. Within weeks, finance officers from dozens of municipalities reported they were uninsurable: libraries shortened hours, clinics postponed non-urgent care to pay for monitoring contracts, and two city associations filed suit arguing the Commission had made playbook adoption mandatory in practice while cash arrived only on paper.
+
+ENISA and regional policy officials rushed an audit-light window for the co-financing facility, prioritising the places losing cover. In practice the window quickly clogged — staffing and review capacity could not scale to the surge, only a small handful of pilot applications cleared in the spring while most remained queued for further checks, and payouts lagged well behind the bills as auditors and insurers disagreed over what counted as compliant monitoring. The shutdown cell kept grids and banks stable; no cascade occurred. The political damage was local.
+
+### A quiet handover in Washington
+The new American administration took office promising moratoriums on data centres and curbs on AI in schools, courts and hiring. Frontier work there did not stop, but slowed visibly as permits, reviews and funding fights multiplied. European labs noted the pause; Asian competitors moved to fill the conference programmes and hiring rounds.
+
+In Brussels, the sovereignty package formally closed. Permitting zones and grid reservations for data centres are now on the books, though private capital commitments remain far below the headline figure and no new cash was fought for this semester. Procurement reviewers held the line against the cheap hyperscaler side-deal without reopening it, a holding action that satisfied no one. With ongoing portfolio costs and delivery strains offsetting the formal completion, sovereignty made no net gain.
+
+Trust slipped again. Voters saw protection that worked for large operators and invoices left for towns.

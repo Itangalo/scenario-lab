@@ -1,0 +1,7 @@
+Autumn intrusions into transmission controls in two EU states plus port/water victims on two other continents left breaker credentials taken and tooling in place without switch-off; attribution pointed to freely downloadable Mythos-class model tooling.
+
+The Shield became binding on paper: ENISA guidance moved toward network codes, auditors stayed in the two hit operators, and forbearance-driven disclosure mapped ports, water and interconnectors, but no live-grid segmentation happened pre-winter, distribution operators stalled over retrofit/compute-connection costs, and detection buying advanced only in two states; insurers repriced unsegmented risk onto municipal budgets. Exercises stayed tabletop.
+
+Washington forced Dutch widening of servicing and older lithography curbs; The Hague complied machine by machine via Brussels joint Dutch-German-French licensing desk for political cover, but no exports restored and US talks stayed technical. Gigafactory sites showed fencing/earthworks with power only reserved on paper. Copycat probing chatter persisted unconfirmed.
+
+By autumn AI-driven hiring freeze became concrete: Paris/Frankfurt law graduate intakes cut by a third, audit-junior roles not reposted, software/customer-ops non-replacement. Brussels launched pre-winter wage-insurance pilots and retraining vouchers via job centres from unspent social/recovery money with retention credits, but by December only pilot regions reached, employer contributions voluntary, unions dismissed it as symbolic.

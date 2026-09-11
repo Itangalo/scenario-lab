@@ -1,0 +1,7 @@
+Taiwan blockade hardened, halting advanced chip/accelerator deliveries and freezing gigafactory construction at permitted, insured warm sites with no ground broken.
+
+Autumn brought mass automated ransomware sweep via voice-clone helpdesk fraud and poisoned updates hitting municipalities, hospitals, contractors; cities with completed offline-backup drills restored in days, others in weeks. Insurers now require proof of offline backups and EU hardening alignment for municipal cover. Brussels launched containment pact — EU-funded restoration teams, clean images, cross-border mutual aid via joint cyber centre, aid conditioned on backups/drills — but thin and late.
+
+Compounding shock: lab jump in code/intrusion capability immediately copied into attacks, followed by near-frontier open release downloaded hundreds of thousands of times, putting prior-frontier-level capability on private hardware. Oversight, red-teaming and regulation held but strained.
+
+Washington under inward-turned administration tightened chip/model licences even for allies; Dutch servicing dispute festered, pooled spares for Japanese/Korean suppliers yielded only trickles, shared stockpile thinned. No capital signed separate hyperscaler side-deal, but distrust lingered. By December trust in AI hit new low, Union reduced to holding line with no autonomy gain.

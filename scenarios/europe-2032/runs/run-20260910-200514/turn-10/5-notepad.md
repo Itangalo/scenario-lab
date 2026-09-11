@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t10: EU Entry into Joint Cyber Response Pact −2, EU Municipal Backup Permanence Fund −2 = −4, priority no effect at capital below 20, total −4
+PROPOSAL BONUS: EU Municipal Backup Permanence Fund (cat 6, small) +3 — cyber_major_incident fired this turn and this answers it directly via permanent offline backups
+LEGITIMACY LENDS: capital 19, sentiment 14 -> none, capital higher
+SOVEREIGNTY: 21 last turn, no category 4 finish, no category 4 in flight, supply_chain_coercion t10 −3 (largest capacity event, export_control_escalation and member_state_defection also qualify), capability rose 1.0 no charge = 18

@@ -1,0 +1,11 @@
+### A blockade, a second cut, and a scandal at home
+
+Autumn turned hard. When Taipei's shipments stopped and insurers priced the strait as a war risk, every chip buyer in Europe felt it within weeks. Washington rationed further, Tokyo and Seoul hoarded for domestic fabs. In Brussels the upstream optics and servicing chain suddenly became the Union's only tradable asset — and the most exposed one, with American envoys warning against coercion and Asian buyers demanding guarantees.
+
+In the middle of that squeeze, the leading American model went dark again for European users. Hospitals and ministries that had migrated to pooled allied systems in spring found volume licences narrowed a second time, with no reason given. This time the fallback mostly worked: listed operators stayed up on allied models vetted in The Hague and on on-premise open systems, the Ljubljana queue rationed compute, ENISA continuity drills kept triage running. Care degraded rather than stopped — but handwritten boards were back on television, and commentators called it humiliation.
+
+Domestic politics then broke. An ombudsman and then a court found a welfare-fraud scoring system used in two member states had systematically cut benefits from thousands of families, with human review reduced to seconds per case and logs never read. The Commission promised conformity audits, but press framed the AI Act as paper compliance. Restrictionists surged; mayors froze data-centre permits, citing power and water.
+
+One counter-signal landed. Researchers in Delft working with physics teams published an openly documented AI-designed interface for solid-state batteries that roughly doubles cycle life in lab cells, with automakers licensing within months. Procurement into the gigafactory pipeline was announced as proof home-built capacity could produce.
+
+By December, four programmes formally closed — gigafactory funding, agentic containment, the middle-power pact, essential-services fallback — while a new emergency allocation regime pooled export authorisations for maintenance and spares to trade for chips and licence restoration. Discussions with suppliers and licensors over swaps and restorations were still underway as the year closed, with conflicting reports about what had been offered.

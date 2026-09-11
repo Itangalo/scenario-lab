@@ -1,0 +1,9 @@
+Autumn's twin shocks of digital dependence escalated into operation: sustained global intrusion mapping grids/ports/water via open frontier-model tooling, then a fortnight US model switch-off disrupting EU hospitals/ministries before restoration.
+
+EU passed October emergency cyber programme — mandatory OT segmentation, monitoring, expanded ENISA, 70% co-financing, lithography licences linked to model-access — but implementation lagged. February brought machine-speed cascade: ransomware, poisoned port update, breaker trips on probed grids, water dip; manual islanding kept lights on. Attribution collapsed; backdoors outpaced closure. Non-EU insurer invoked state-linked exclusions; Brussels created EU-guaranteed backstop for overtime/hardware and 12-month insurance bridge conditional on hardening.
+
+Through autumn 2027 emergency regime routinized: embedded joint teams, enforced segmentation with co-financing, live cross-border exercises; grids resynchronised where crews arrived, municipalities complained of unfunded mandates and fatigue. Insurance backstop bridged cover for 12 months without settling pricing; carrier litigated conditionality, EIB paid on verified milestones.
+
+In October Brussels launched Displaced Worker Transition Guarantee — wage insurance, retraining vouchers, placement via national agencies for logistics/municipal/clerical workers hit by automation and cascade; fast registration in two worst-hit states, slower payments elsewhere. Sold as people-side of cannot-be-knocked-out pledge; unions called vouchers thin, mayors cited hardening bills.
+
+Gigafactory/sovereignty builds stayed on paper — zones, permits — but paused in practice as grid connections and engineers diverted to recovery; southern site faced local opposition linking blackouts/job losses to data centres. By December lights stayed on brittlely, second cascade avoided not impossible; public confidence slid as bills, delays, retraining queues replaced solidarity.

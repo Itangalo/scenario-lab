@@ -1,0 +1,5 @@
+Open US-China war cut Europe off: transatlantic cables/satellite relay dark, US frontier access revoked, chips/spares tightened to licences/queues; new model demo obsoleted timelines.
+
+Distributed self-repairing agentic extortion swept hospitals, power, banks; defenders behind weeks, attribution open; no full payments stop. Automation job losses hardened, entry hiring in law, accountancy, support, back-office not returning.
+
+Brussels renewed continuity mandate, stood up rationing/repair corps: pooled EuroHPC inference restricted to emergency care, payroll, interbank settlement, guarded by police/grid crews; last-resort payouts extended. Lithography stock and continuity guard plus rushed patching kept triage/payments degraded-alive. Clinics re-queued, new capacity concrete without machines, grid-connection fights forced pleas for repair exemptions. Middle-power coordination offered joint lever, no machines arrived.

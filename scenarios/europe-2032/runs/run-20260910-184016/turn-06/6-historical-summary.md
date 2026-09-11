@@ -1,0 +1,5 @@
+Autumn pathogen clusters contained with no new large outbreak via HERA/ECDC surge, mandatory reporting, and EU-hosted open models, but small hospitals/water utilities lagged, cyber exposure grew, and unions staged walkouts over slow supervised clinical tools.
+
+Chip scarcity winter hit: no new accelerators after February, prices tripled, eastern/southern gigafactories remained empty graded earth with grid kept warm; US pressed lithography servicing cutoff, pressuring The Hague. Commission responded with permits, single negotiating brief, extraterritorial examination, and coordinated offers to Japan/South Korea, but no assured compute arrived; breakaway state undercut front with separate hyperscaler bid.
+
+Build timeline slipped at least a year with sovereignty package/evaluation cell declared complete but no formal adjustment. Leaked frontier strange-behaviour report and mass-downloaded open release deepened anxiety; entry-level hiring freezes spread, youth protests merged with health-worker anger.

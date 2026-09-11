@@ -1,0 +1,300 @@
+{
+  "turn": 12,
+  "counters": {
+    "measures": 14,
+    "standing": 1
+  },
+  "records": [
+    {
+      "id": "M1",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "InvestAI Gigafactories",
+        "category": 4,
+        "size": "large",
+        "finish_turn": 7,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "eu_ai_sovereignty up, via €200bn for four to five sites",
+        "started_turn": 0
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "finished"
+      },
+      "added_turn": 0,
+      "removed_turn": null
+    },
+    {
+      "id": "M2",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "Tech sovereignty package",
+        "category": 4,
+        "size": "large",
+        "finish_turn": 6,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones",
+        "started_turn": 0
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "finished"
+      },
+      "added_turn": 0,
+      "removed_turn": null
+    },
+    {
+      "id": "S1",
+      "table": "standing",
+      "actor": "world",
+      "fields": {
+        "posture": "RETRENCHMENT"
+      },
+      "derived": {},
+      "added_turn": 0,
+      "removed_turn": null
+    },
+    {
+      "id": "M3",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Critical Systems Hardening and Response Pact",
+        "category": 6,
+        "size": "large",
+        "finish_turn": 3,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up strongly, ai_safety up slightly via incident learning",
+        "started_turn": 1
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "finished"
+      },
+      "added_turn": 1,
+      "removed_turn": null
+    },
+    {
+      "id": "M4",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU OT Intrusion Reporting and Shared Detection Network",
+        "category": 2,
+        "size": "small",
+        "finish_turn": 4,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up, ai_safety up slightly via shared learning",
+        "started_turn": 2
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 2,
+      "removed_turn": null
+    },
+    {
+      "id": "M5",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Bio-Shield and OT Emergency Patch Surge",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 4,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up, ai_safety up slightly via incident learning",
+        "started_turn": 3
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 3,
+      "removed_turn": null
+    },
+    {
+      "id": "M6",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Jurisdiction Lock for Foreign AI Capacity Deals",
+        "category": 8,
+        "size": "small",
+        "finish_turn": 5,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "eu_ai_sovereignty up, eu_political_capital down slightly then up if held",
+        "started_turn": 4
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 4,
+      "removed_turn": null
+    },
+    {
+      "id": "M7",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Essential Services Continuity Stack",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 7,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up, eu_ai_sovereignty up slightly via substitution",
+        "started_turn": 5
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 5,
+      "removed_turn": null
+    },
+    {
+      "id": "M8",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Bio-Containment and Defensive Patch Deployment",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 7,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up strongly to absorb bio and cyber cascade",
+        "started_turn": 6
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 6,
+      "removed_turn": null
+    },
+    {
+      "id": "M9",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Assured Cures Deployment",
+        "category": 9,
+        "size": "small",
+        "finish_turn": 8,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "public_sentiment up strongly, resilience up slightly, ai_safety up slightly via certified deployment",
+        "started_turn": 7
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 7,
+      "removed_turn": null
+    },
+    {
+      "id": "M10",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Opaque-Model Inspection and Bio-Screening Lab",
+        "category": 5,
+        "size": "small",
+        "finish_turn": 9,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "ai_safety up, resilience up slightly, eu_ai_sovereignty up slightly via independent assurance",
+        "started_turn": 8
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 8,
+      "removed_turn": null
+    },
+    {
+      "id": "M11",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Loss-of-Control Containment and Continuity Regime",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 10,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up strongly, ai_safety up slightly via containment learning",
+        "started_turn": 9
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 9,
+      "removed_turn": null
+    },
+    {
+      "id": "M12",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Blockade-Era Continuity and Bio-Defence Surge",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 11,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up strongly, ai_safety up slightly via containment and screening learning",
+        "started_turn": 10
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 10,
+      "removed_turn": null
+    },
+    {
+      "id": "M13",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Major-Incident Restoration and Assured Systems Rollout",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 12,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up strongly, ai_safety up moderately via certified controls",
+        "started_turn": 11
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 11,
+      "removed_turn": null
+    },
+    {
+      "id": "M14",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Rogue Agent Hunt and Grid-Islanding Continuity",
+        "category": 6,
+        "size": "large",
+        "finish_turn": 14,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up strongly, ai_safety up via containment learning",
+        "started_turn": 12
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "running"
+      },
+      "added_turn": 12,
+      "removed_turn": null
+    }
+  ]
+}

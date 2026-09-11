@@ -1,0 +1,11 @@
+### Holding degraded ground
+Brussels spent the spring trying to make rationed life survivable. Emergency teams fanned out through municipal IT departments, re-imaging locked systems, enforcing segmented backups and blocking the poisoned update path that had mapped so slowly in the autumn. Hospitals, customs posts and grid operators received the same package: older licensed models, tightened guardrails, and the new steering technique that made their behaviour more predictable when cut off from the frontier.
+
+It worked, partially. Essential services stayed running, but in degraded mode — longer queues, manual workarounds, appointments rescheduled by hand. Operators admitted the margin described last year as gone had not returned. Within weeks a new openly released model family, downloaded hundreds of thousands of times in days, put comparable intrusion tooling on private hardware everywhere. Defenders said they were now patching against capabilities anyone could run.
+
+### A softer economy, a harder factory floor
+Ordinary offices provided the counterweight. Across law firms, accountancies, administrations and newsrooms, measured output per person rose, most for juniors, without a matching fall in jobs. Firms that had cut early quietly hired again. Permit waits shortened in two more cities. The story blunted calls for new funds, but also blunted urgency: with no displacement crisis to point at, the hardening programme felt technical and distant.
+
+The industrial base felt the opposite. Commercial robots for picking, palletising, welding and warehouse logistics arrived at scale, almost all built elsewhere and running foreign control models. European integrators bought them because they worked; unions warned the logistics tail was hollowing. Resupply and clearance uses abroad sharpened the argument without settling it.
+
+Rising insurance rates on Asian shipping and extended exercises around Taiwan added a background hum to joint compute bargaining with middle powers, which kept licences flowing but at quota.

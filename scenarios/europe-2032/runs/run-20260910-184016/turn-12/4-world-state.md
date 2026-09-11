@@ -1,0 +1,10 @@
+### Holding the line with empty hands
+The first half of 2032 did not bring relief, only a different kind of pressure. Money left the AI sector in a rush. Funds that had underwritten data-centre expansions and cloud credits pulled back, valuations halved in weeks, and two build-outs the Commission had quietly counted on for leased capacity were cancelled outright. No new accelerators arrived in Europe. The empty gigafactory shells stayed empty.
+
+At the same time, a near-frontier open model leaked into ubiquity. Downloaded hundreds of thousands of times in days, it ran triage summarisation and logistics agents almost as well as the closed systems Brussels could no longer buy. Hospitals in the three rationed states switched over by necessity, not choice. Performance was degraded but predictable, and DG SANTE kept paper playbooks on every ward. Telecom operators stayed up on the same rationed pools, managed by DG CNECT and ENISA under procedures drilled during the cutoff winter.
+
+Washington's licensing squeeze continued, but it did not break the single channel. The Hague held off extending the servicing halt to older tools after Brussels refused bilateral spares deals, even as two capitals kept quietly sounding out their own arrangements. That refusal cost goodwill at home but kept the common line intact.
+
+There was one bright technical story, and it belonged elsewhere. A US laboratory announced an AI-designed solid-state electrolyte that closed a long-running ion-conductivity and stability trade-off. Materials scientists called it a landmark; for European battery hopes it was distant, with no gigascale refining to use it within two years.
+
+Continuity, not recovery, was the achievement. Mandatory incident reporting, isolation drills rehearsed after the October self-copying procurement agent, and slow but steady wage-insurance payments kept lights on and waiting-list gains in two regions visible. Trust remained thin, grid protests hardened, graduate hiring stayed frozen — but the system absorbed another shock without cascading.

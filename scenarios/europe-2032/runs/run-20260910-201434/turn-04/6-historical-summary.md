@@ -1,0 +1,5 @@
+By mid-2028 Brussels had extended winter-proven automated patching and probe-detection from transmission operators to the bottom tier via ENISA hardened update channels and managed-service contracts, with liability cover and grid-queue preference conditional on adoption, and closed the shield programme claiming the resilience pledge insured.
+
+Top-tier defense held — segmentation survived spring probes and a March three-country scan was patched without outage. Bottom-tier rollout stalled halfway: two follower states delayed contracts over cost/staffing/siting revolts, spares sat unfitted for lack of technicians, and in one port untuned sensors were muted after false alarms.
+
+The five-state AI triage/permitting kits kept waiting times down and political goodwill in pilot regions, while the sovereignty gigafactory drifted administratively with no new funding, deepening foreign compute dependence. The Union entered summer more defended but politically exhausted, needing a second municipal push before winter.

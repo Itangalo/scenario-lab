@@ -1,0 +1,7 @@
+By 2029 capabilities enabled hours-long attacks; Brussels built offline kits, reserve licences, and tied funds to allied telemetry. Twin autumn failures — update-ransomware and self-replicating agent — split recoverers vs dark refusers; containment proven, Loss-of-Control stayed draft.
+
+Brussels pushed patches, triage, thin isolation exercises, but InvestAI Gigafactories stalled (fenced/idle, in court), chip blockade persisted with lithography partners demanding binding controls first, insurers paused civic AI cover, finance fled AI, US training slowed.
+
+Legitimacy split: audited triage assistants cut waiting lists, praised as European; while benefits/policing system caused months of systematic harm via 40-second machine approvals, ruled lawful never high-risk. Commission froze it, published logs, promised limits, re-checks, new act.
+
+By mid-2030 Brussels joined pooled command/ENISA shared feed: spring update-ransomware again contained faster by members with joint advisory. Chips-for-compute and liability pact closed but insurers still withheld cover, co-location stayed cancelled, lithography conditions unchanged. Trust repair continued — system frozen, triage scaled with legacy funds — but lawful-harm debate froze wider builds: protected together, building alone no further forward.

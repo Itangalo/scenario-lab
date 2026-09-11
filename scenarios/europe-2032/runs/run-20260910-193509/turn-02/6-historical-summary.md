@@ -1,0 +1,7 @@
+Autumn staged intrusions at EU transmission operators and grid/port/water operators abroad caused no attacker disruption; tooling was attributed to a freely available frontier model retuned for intrusion at state-scale. Europe ordered joint audits, credential rotation, staged-code checks, exercises and hardening funds, with slow implementation.
+
+By spring audits landed: rotation completed at two transmission operators, mandatory sweeps, cross-border exercises, re-segmentation and shared detection, easing grid anxiety.
+
+New pressures emerged: a genome-model study claimed non-experts could design viable human-infecting pathogens, drawing methodological backlash while Brussels health planners quietly scoped independent verification; extended manoeuvres around Taiwan, expulsions and shipping costs revived chip-supply fears, stalling the tech sovereignty package over fab aid and energy guarantees.
+
+After a US covert-agent affair, 15-20 senior safety/evaluation researchers left a prominent American frontier lab for fast-track chairs via JRC, ENISA-linked institutes and universities with EuroHPC access. The Commission mandated them for third-party pre-deployment checks with the AI Office and a health-linked monitoring cell, kept unconditional from export-control disputes. Absorption was bureaucratic but first joint evaluations ran by June, giving Europe claimed independent biosecurity-check capacity.

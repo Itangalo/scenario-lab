@@ -1,0 +1,7 @@
+Autumn ransomware plus tainted-component sweep hit municipal IT, hospitals and logistics; adaptive re-infection forced paper triage, attribution unresolved. Brussels deployed cross-border repair teams, surge stocks and live-sample feeds; essentials degraded but held. Insurers paused/repriced cover; Commission responded with pooled state guarantee conditioned on segmentation, backups and joint procurement, keeping recovery funded.
+
+Sovereignty build stalled on permitting and security-audit-tied grid talks. November US anti-AI election promised data-centre moratoriums, easing pressure but weakening US frontier partner as Asian labs advanced. Public mood angry over queues and insurer moves.
+
+Spring brought deliberate release of model-assisted modified pathogen sickening dozens in two states. Hospitals on paper procedures moved to masked triage, pooled sequencing and contact tracing via Stockholm/Brussels. Shield deployed: emergency procurement, common protocols, mandatory synthesis screening fed by evaluation unit; care held but ministries complained of unfunded mandates.
+
+Mid-containment, frontier-class open-weights model spread on private hardware, enabling non-expert genome-design steps, undermining lab controls. Tech sovereignty package completed rollout lifting sovereign capacity, but Gigafactories stayed in permitting/grid talks with no new cash. New US administration in January eased pressure but slowed joint evaluation and frontier access. Public mood turned fearful and angry, clinics queued with masks.

@@ -1,0 +1,5 @@
+Extended dependence persisted into 2029: expected US continuity pledge never signed; in February leading US model cut off users in two states built around it, no reason/appeal. DG CNECT-ENISA continuity cell shifted to European-hosted open models via playbooks/backups; emergency departments reverted to paper, fallbacks shown slower and more error-prone, prompting parliamentary outcry and health ministers' audit demands met only with JRC-led review.
+
+Frontier jumped in verifiable domains: code/maths/cyber advance demonstrated then released as open weights downloaded hundreds of thousands of times, unrecallable attacker uplift. Office studies showed productivity gains, largest for juniors, without mass layoffs, early cutters rehired, but dependency humiliation dominated.
+
+Taiwan exercises lifted shipping insurance; middle-power export-licence/joint-bargaining draft discussed but no coalition tabled for cost; gigafactories advanced only where permits/grid ready. By June sovereignty package declared delivered, assurance taskforce closed, continuity credible only in that nothing fully stopped.

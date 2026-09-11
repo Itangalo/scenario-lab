@@ -1,0 +1,9 @@
+### Screens dark again
+Autumn brought a second, larger automated assault. Where spring had hit town halls and hospitals, this wave moved through shared logistics software and a widely used administrative dependency, forcing rebuilds whose scope administrators admitted they could not map. Queues lengthened, discharges were postponed, freight manifests were reconciled on paper. The half-staffed monitoring centres traced the pattern quickly but could not blunt it. Attribution dissolved again.
+
+The political sting was sharper because a breakthrough had just reset expectations. Leading labs demonstrated systems that wrote, tested and chained exploits in verifiable domains with markedly less human guidance. Defenders and vendors alike said the tooling available to attackers had changed within weeks, while general assistants felt only incrementally smarter.
+
+### Patching and paper
+Brussels answered with continuity rather than promises of prevention. Emergency money flowed to offline backups, printed fallback procedures and cross-border repair crews for the municipalities and hospital groups still rebuilding. Uptake was fastest where the new automated patching stacks had already landed on transmission, port and water operators; elsewhere councils haggled over who would maintain backup systems and who bore liability if a fast-tracked patch broke clinical software.
+
+The automated defence deployment formally closed, and surge teams stayed on in control rooms through winter. Longer builds slipped in the noise: gigafactory grid links and siting decisions advanced lot by lot, and lithography leverage remained unplayed as Taiwan shipping costs stayed high. Europe ended the year with a defence that worked for one class of attack, a continuity fund racing a second wave, and a public mood that had seen both.

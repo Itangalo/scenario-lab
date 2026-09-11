@@ -1,0 +1,7 @@
+Defences advanced in spring with ENISA-certified automated patching and swarm-behaviour detection pushed via isolation playbooks, but deployment stayed partial: large operators and pilot municipalities installed cleanly keeping grids/banks stable, while audit-light window clogged again, small clinics/libraries lacked staff, and auditor-insurer disputes stalled dozens of restorations; three reinsurers held line on new cover without 24/7 monitoring.
+
+A second openly released near-frontier model was downloaded hundreds of thousands of times across EU universities, municipalities and contractors with no recall possible, entrenching irrecallable open-weights risk alongside earlier spread.
+
+Brussels prioritized deployment over diplomacy: shifted weight from Washington-Beijing weights-security/bio accord accession to rollout in towns holding new weights using repurposed Digital Europe funds, pressing insurers to count new tooling as monitoring; US-China track kept alive at envoy level with lithography offer, but EU still briefed after terms set, not consulted. US frontier slow, Asian rivals advancing, giving breathing room but confirming dependence.
+
+Gigafactory shells at four sites progressed without timetable acceleration; rumours of insurer blacklists and data-centre blockades unconfirmed but cited by mayors.

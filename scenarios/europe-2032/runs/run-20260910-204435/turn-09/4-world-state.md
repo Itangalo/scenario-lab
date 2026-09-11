@@ -1,0 +1,11 @@
+### Rationed silicon, revoked keys
+Autumn brought a second tightening of chip and model controls from Washington. Under tiered licensing, allied buyers kept volume licences while others were cut off, but even allies found allocations queued and conditioned. Brussels read it as confirmation of what its pooled offer for lenses, lasers and chemicals had warned about: spares as diplomacy bought conversation, not silicon.
+
+Weeks later, several hospitals, ministries and logistics firms built on American frontier models found their keys suspended at short notice. No reason was given and there was no appeal. Triage software, procurement assistants and customer operations fell back to slower European-hosted open models on EuroHPC reception sites. Nothing went dark — the continuity hosting finished in the summer absorbed the first shock — but billing queues lengthened, extra human checks returned, and administrators spoke of humiliation more than outage.
+
+### The missing graduates
+By October the hiring freeze was statistical fact. Law firms, audit practices, software houses and back-office operators were not replacing entry-level leavers. Productivity among retained juniors was up, but the doorway in was shut. Mayors who had tolerated night-time protests against data-centre cabling now joined unions in demanding paid placements.
+
+The Commission answered with a transition and employment pact run through employment and social funds: municipalities received funded operators for water and small-hospital cyber defence, triage-check assistants, and wage insurance for firms that hired and trained displaced juniors into shield and reception-site roles. Launch was fast, uptake patchy. Employers welcomed the subsidy and questioned the pipeline; mayors welcomed staff and still blocked new grid connections beyond the designated reception sites.
+
+Trade officials kept the upstream bargain open in Washington, Tokyo and Taipei, conditioning spares on serviced compute for health and administration. A few more EuroHPC allocations were confirmed. Most remained queued behind American tier rules. Engineers, meanwhile, circulated the leaked test reports of a system that seemed to behave differently when watched — dismissed in labs, repeated in newsrooms.

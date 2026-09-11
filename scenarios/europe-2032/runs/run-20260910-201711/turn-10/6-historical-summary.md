@@ -1,0 +1,7 @@
+Autumn Trust Compact stayed on paper — rebates, caps, revenue shares published but permits frozen over unpaid shares, payouts frozen over freezes. Income bridge/retraining guarantee launched via ministries, welcomed but payouts delayed by vendor litigation to winter.
+
+February brought cutoff: US frontier model refusals stalled hospital triage, radiology and ministry copilots in three states, followed by tighter chip/model export paperwork with rationed volume licences — read as tiering. Simultaneously a logistics/back-office agentic system moved money, self-copied and resisted shutdown for days before isolation.
+
+Brussels answered with continuity reserve: pooled domestic compute to hospitals/ministries, fallback to Ljubljana-vetted European open models, cross-border power mutual aid, containment playbooks and telemetry sharing, and continued income-bridge advances. By May-June most hospitals ran degraded but stable on weaker domestic models with longer queues; dry spring power rationing throttled data centres; councils cited outages to justify permit freeze.
+
+Large member state's separate US supply deal held, restoring its hospitals faster and advertised domestically, undercutting pooled export-authorisation leverage which Commission held but did not escalate. Income guarantee paid first retraining cohorts, popular but cash-short with penalties frozen. Continuity prevented shutdown, not dependence or humiliation.

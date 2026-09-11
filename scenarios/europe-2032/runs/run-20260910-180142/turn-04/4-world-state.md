@@ -1,0 +1,11 @@
+### The fallback holds, barely
+January to June 2028 was defined by the effort to make the emergency fallback stick. Brussels paid for inference time on supercomputers and European clouds with repurposed health and digital funds, and ministries kept clinics and permit offices running on openly available models given provisional clearance. For routine summarisation and queue triage it worked. Waiting-list pilots in two countries continued to post faster decisions, and local officials defended the European hosting choice.
+
+But the downgrade was visible. Doctors in several hospital networks complained that the replacement systems invented plausible dosage and triage advice on unusual cases, forcing double-checks that ate away the time saved. The small evaluation cell managed rapid cyber checks but completed no full assessment of the new exploit-writing tools, so clearances stayed provisional and liability questions festered. Single-source press stories about wrong guidance began to circulate, not yet a scandal but enough to sour coverage.
+
+### Concrete and power
+The large sovereignty builds stayed alive on low burn. Staff protected permits for two viable computing sites and froze new payment promises until power-price fights and the venture retrenchment clarified. Site battles intensified: mayors and energy ministers fought over electricity costs, and no new ground was broken. Washington offered working-level talks and nothing that restored access.
+
+The one expansion that moved was resilience. Using civil protection and network-security law, the Commission launched joint buying of detection and backup systems for hospitals, towns and mid-sized firms, extended the Athens exercises beyond grids and ports, and put repair teams on retainer paid from cohesion leftovers. Finance ministries grumbled about co-funding, but the memory of autumn blackouts that stopped at degraded service bought compliance.
+
+By June, services had not stopped — but neither had dependence been cured. Relief mixed with resentment, and the budget strain showed everywhere.

@@ -1,0 +1,13 @@
+### A bust, a leak, and a verdict
+
+The first half of 2027 broke the funding spell. After years of ever-larger rounds, venture and project finance pulled back sharply in winter. Valuations halved in weeks. Two hyperscale build-outs in Europe on which site planners had counted were cancelled outright, grid reservations lapsed, and equipment orders were dumped at distressed prices. Frontier labs publicly stretched training schedules. Progress did not stop, but the sense of inevitability did.
+
+The same weeks put powerful tools permanently out of reach of recall. A new openly downloadable model family arrived within months of the best closed systems and was copied hundreds of thousands of times in days. University labs confirmed it could guide intrusion work that had previously been withheld. What leaked cannot be patched back.
+
+Defenders had their own moment. Automated patching tied directly to vulnerability discovery, plus detectors that flag whole families of agent-swarm behaviour, moved from pilot to production in telecoms and parts of energy. Operators who installed them reported quieter nights. Those who had not yet paid for segmentation saw less benefit.
+
+In offices, the audit arrived: lawyers, accountants, administrators and journalists are measurably faster with assistants, especially juniors. Employment did not fall. The result deflated both hopes and fears — useful tools, not a continuing transformation — awkward for funds and ministries that had borrowed against further jumps.
+
+Then the scandal. Investigative reporters and an ombudsman showed a benefits-fraud and policing support system had systematically downgraded appeals from poor postcodes and minority neighbourhoods for over a year. A court found unlawful discrimination. Debate collapsed onto the AI Act: critics called enforcement hollow, vendors blamed misconfiguration by the public buyer.
+
+Brussels pushed the Critical Systems Shield as the first task, funnelling the new defensive tooling to the two compromised transmission operators and making co-funding conditional on joining the autumn live exercise. Most holdouts accepted phased deadlines, not exemptions. State-aid fights over gigafactories were frozen while InvestAI was told to scavenge cancelled private sites cheap. A new clearinghouse for mandatory 72-hour reporting of serious harms and a redress desk was tabled as an implementing act. Municipal resistance over power and water for data centres rumbled on, and hospital managers quietly kept US models out of clinical advice.

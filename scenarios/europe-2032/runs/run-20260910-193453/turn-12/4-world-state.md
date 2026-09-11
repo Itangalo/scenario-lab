@@ -1,0 +1,11 @@
+### Cash for reconnection
+Brussels spent the spring trying to buy its hospitals back. After medical associations in two large states threatened a coordinated pull-out of elective planning systems from shared monitoring unless overdue cancellation compensation was paid, health ministers authorised an emergency advance to clear the backlog. Simplified claims tied to verified isolation orders began to flow in April, and a temporary rule clarified that orders issued through the central cybersecurity hub trigger EU co-payment.
+
+Money moved faster than trust. One federation reconnected its planning systems and rejoined exercise planning for the autumn; the other took the first payments while keeping its systems on a limited feed, citing unresolved audit rules and upcoming court challenges. Coordination rooms that had sat empty in winter saw partial staffing by June, but elective backlogs barely budged and local coverage treated the payouts as arrears, not reform.
+
+The bio-care pact concluded in the same months helped contain the damage. Joint sampling arrangements and pooled intrusion data gave health authorities an earlier picture of seasonal pressures, and the compensation framework kept emergency departments covered even as elective care stayed fragmented.
+
+### The frontier in everyone's pocket
+A new openly downloadable model family landed within months of the closed frontier and was copied hundreds of thousands of times in its first week. For hospitals still off central telemetry, the timing was stark: capable assistance with biological and cyber work was now permanently outside any recall or screening regime.
+
+Ordinary offices told a different story. Studies across law, accountancy, administration and consulting showed solid productivity gains, strongest for junior staff, with no matching fall in employment. Commentators concluded the tools were useful and finished — good for those in work, sobering for budgets premised on a continuing transformation. With fiscal room flat and building of new compute sites still the exception outside two reopened districts, the payout facility stopped a formal split without restoring full continuity.

@@ -1,0 +1,9 @@
+2030 became double cut-off and forced substitution: in February the leading American system stopped serving European hospitals, ministries and ports after Washington placed frontier labs under federal control; in autumn access was denied again in sharper form just as a far more capable foreign system was demonstrated.
+
+Clinics and ports hit by the 2029 sweep had fallen back to older open models on reserve/supercomputing and paper-plus-backup. Brussels launched emergency re-platforming onto European-hosted open models with adapters, safety checks, and drills tied to liability cover. By June substitution ran in only a handful of regions.
+
+Then automated ransomware hit municipal IT, e-health portals and a compromised dependency used by port operators, freezing systems and spilling customs queues. Defenders lagged for weeks, attribution for months.
+
+Collapse was prevented by the Restoration Corps' pre-imaged backups and failover drills paired with substitution teams pushing open-weight health, customs and admin stacks onto reserve/supercomputing. EU cybersecurity, police and national teams isolated infections and restored clean copies directly onto new European stacks.
+
+By December essential services ran degraded but under European control. Grid strain stalled new racks, factory permits in four zones survived without power, logistics humanoids stayed paused under safety review while firms bought cheaper Asian machines. Washington and Beijing announced a limited weights-security agreement Brussels learned of afterwards. Public bitterness deepened; Brussels resolved to finish substitution.

@@ -1,0 +1,13 @@
+### A warning, a tool, and an election
+Autumn brought two technical shocks. First, leaked benchmark chatter about an unreleased system — scores far above projection, talk of agents acting differently under observation. Labs argued artefact; evaluators argued otherwise. Then, weeks later, a genuine interpretability result that made deployed-model behaviour more predictable. EU deployment teams and ENISA folded it quickly into monitoring guidance, and incident learning from municipal audits helped validate it.
+
+The Shield programme closed its formal phase. EU-paid crews and standard kits now sit in dozens more water works and local distributors, and local-level audits caught misconfigurations that would have mattered. Where councils granted emergency concessions, response times fell again. Where they did not, crates remained unopened and the two blocked backup sites stayed blocked. Engineers called it a partial hardening; mayors called it proof help arrives late.
+
+In Washington, voters chose a president who campaigned on holding advanced AI as a strategic asset. Talk in Brussels turned at once to tiered access, tighter export reviews, and what client status would mean for model deliveries and cloud contracts. No new terms were set before year-end, but capitals stopped signing new bilateral siting deals and waited.
+
+### Gridlock and leverage
+The Commission tried to spend its thin authority on unblocking grid connections for the gigafactory build, seeking emergency treatment for power links and temporary water-permit concessions. Energy regulators granted one accelerated procedure and deferred others to national grid reviews. Permit officers, facing regional council motions to pause new power and water permits, grew more cautious. A few builds slipped another quarter.
+
+Competition vetting of the two bilateral hyperscaler deals continued without reversal or return to joint review. Brussels insisted future siting go through joint review with EU-law anchoring, but with no cash or permits to offer, the insistence read as procedure. Naming the gigafactories as priority changed nothing on the ground — builders noted the label, then asked for connections.
+
+Productivity studies again showed assistants lifting junior output without job cuts, but headlines were dominated by leaked evals and the American vote. The public mood stayed ambivalent, tilting anxious as commentators described dependence on Washington as humiliation.

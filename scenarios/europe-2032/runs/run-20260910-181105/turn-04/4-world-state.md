@@ -1,0 +1,10 @@
+### Waiting lists and warm permits
+The first half of 2028 was a holding semester in Brussels. No new programme was opened, and finance ministers made clear none would be funded. The Commission instead pushed the one line that still produced good pictures: the replication kits for hospitals and permit offices.
+
+In the three health ministries that had signed up, two more hospital groups started using EU-hosted assistants for triage and discharge paperwork. Waiting times fell modestly, nurses got retraining hours paid through social funds, and joint procurement extended the shared-liability wording to a third vendor after hard bargaining. Permit offices in two further cities reported faster turnaround. Local coverage was warm but narrow, and clinicians elsewhere continued to prefer American models they judged more polished.
+
+The backup built the previous year matured quietly. The spare capacity contracted on supercomputing centres and the qualified open models were kept exercised, with five sites repeating switchover drills. Grid operators still refused to let the backup near real control, citing performance and clearance delays, a frustration openly voiced in industry press.
+
+The heavy build did not move. The gigafactory and technology package lived on as maintained permits, re-tender documents and grid-connection offers, with no concrete poured and no private co-investment returning after the 2027 market shock. Energy directorates and the investment bank kept files warm but committed no fresh money.
+
+By June, Europe could point to working public-sector uses and a maintained fallback, but the gap between demonstration and daily operation remained. Opposition lawmakers called it management of dependence, not an end to it, while supporters argued visible wins were rebuilding trust to sustain the larger build later.

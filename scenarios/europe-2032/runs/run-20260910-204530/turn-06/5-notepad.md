@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t6: InvestAI Gigafactories −3, EU Essential Services Continuity Reserve −2, EU Agentic Containment and Essential-Service Isolation Protocol −2, priority M7 −1 = −8
+PROPOSAL BONUS: EU Agentic Containment and Essential-Service Isolation Protocol (cat 6, small) +4 — loss-of-control incident with days-long containment uncertainty landed this turn and this answers it directly, with RSI onset and cutoff fragility as context
+LEGITIMACY LENDS: capital 6, sentiment 12 -> +2
+SOVEREIGNTY: 20 last turn, Tech sovereignty package finishes t6 +5, InvestAI Gigafactories in flight +1, no capacity event, capability rose 7.0 −1 = 25

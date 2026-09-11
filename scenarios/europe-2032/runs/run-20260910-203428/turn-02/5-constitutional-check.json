@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `eu_political_capital` dropped from 26.0 to 12.0 (a decrease of 14.0 points) in one turn, which exceeds the maximum allowed single-turn change of 25 points in magnitude. While the constraint allows downward movement, it is bounded: no metric may move more than 25 points in one turn (Constitutional Constraint 9). Although this drop is within the 25-point band in absolute terms (14 < 25), the narrative and notepad do not justify such a large drop through plausible mechanisms. More critically, the Game Master's Notepad shows a legitimacy lend of +2 and a proposal bonus of +3, yet the net effect on political capital is a massive drop with no corresponding large negative term explained (e.g., no event-coded crisis of -12 or equivalent). The notepad lists a portfolio charge of -12 and a bonus of +3 and +2, implying a net change of -7, which would result in 26 → 19, not 12. Thus, the actual metric change contradicts the notepad's own accounting, indicating an internal inconsistency that violates the requirement for metrics to reflect documented, rule-based updates.\n- Organizational Constraint violated: The narrative describes a new containment protocol being implemented and exercised across multiple sectors (grid operators, ports, hospitals) with joint drills and cross-border escalation procedures, implying rapid deployment of a high-cost regulatory measure. However, no prior proposal or development phase is indicated, and full implementation appears within a single turn. This violates Constitutional Constraint 6: \"No measure is implemented instantly. Minimum time from proposal to full effect is one full turn for low-cost measures and two for high-cost ones.\" The EU Loss-of-Control Containment Protocol is treated as active and operational in the same turn it was proposed (as implied by the proposal bonus), which is invalid for a high-cost, cross-sectoral regulatory initiative."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

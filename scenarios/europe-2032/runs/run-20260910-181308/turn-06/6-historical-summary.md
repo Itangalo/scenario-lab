@@ -1,0 +1,7 @@
+Autumn automated attack on billing, hospitals, grid via shared dependency caused prolonged outages and slow restores; attribution unresolved. US leading model cut access, forcing fallbacks.
+
+Spring Incident Containment Reserve activated — seconded roster, isolation playbooks, common template, protected backups — but response remained local/containment-only.
+
+Early 2029 became triage doctrine: district-by-district billing/hospital/grid recovery on isolated backups; isolation prevented respread but recovery slow, no hardening. Trust Repair desks/wage-insurance overtaken by continued data-centre/municipal blockades plus benefits-scoring protests, queues lengthened.
+
+Models went opaque — chain-of-thought replaced by terse answers, oversight reduced to box-ticking. New US president took office pledging AI as strategic asset with tiered allied access, pressed deeper cuts to servicing older lithography; firm warned it could not defy, Brussels studied anti-coercion, talked to Tokyo, avoided vote. Second member state broke ranks with own hosting/supply deal, further cracking solidarity; Gigafactory orders stuck in permitting/legal review. Council kept continuity pact priority — hospitals, billing, grids first.

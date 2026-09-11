@@ -1,0 +1,5 @@
+Taiwan quarantine since February continued to block advanced chips, with scarcity now political after US election of a president to ration frontier models by country tier with no guarantees for Europe.
+
+Autumn machine-written attacks hit municipalities, hospitals and a transmission operator, forcing paper fallbacks and weeks-long recovery; segmentation, offline backups and 48-hour reporting hub kept power and emergency care degraded not stopped. Brussels opened no new programme, holding ring-fenced grid for 4-5 AI-factory sites; one previously blockaded site resumed under guard with co-funded hardening/jobs deals, the other stayed idle amid court filings and winter load resentment.
+
+Supervised assistants cut permit/clinic backlogs and boosted private-sector productivity without layoffs, but three benefit systems stayed suspended, reviewer hiring frozen, and costs of Gigafactories, sovereignty, Shield and Enforcement weighed. By December the Union had absorbed the blow without collapse but built little — foundations only, dependence explicit.

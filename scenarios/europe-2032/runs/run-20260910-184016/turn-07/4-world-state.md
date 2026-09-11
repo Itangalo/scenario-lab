@@ -1,0 +1,13 @@
+### The sweep
+Autumn brought the attack defenders had warned about. A largely automated ransomware sweep moved through municipal systems, small hospitals and water operators in several member states within hours, exploiting a compromised update channel. Screens went dark in clinics, appointment systems failed over to paper, and two regions lost remote monitoring of water pressure for a day. Attribution lagged; officials said only that the tooling bore the marks of machine-generated code.
+
+The response was faster than in previous years, but used only existing capacities — no new EU measure was introduced this turn. Emergency teams from the EU cybersecurity agency fanned out with automated patching tools and swarm-detection software already in the inventory, and cross-border response teams covered for the worst-hit administrations under standing mandates. Mandatory reporting lines built during the health scares kept information flowing. Essential services degraded but did not stop.
+
+### Concrete poured, gaps remain
+On the industrial front, the first gigafactory shells finally rose. Concrete was poured in the east and south, grid links were tested, and ministers posed beside empty halls wired for machines that had still not arrived. The flagship compute programme remains under construction and is months from completion, with delivery of accelerators still pending — its finishing date has pushed out as scope widened and supply stayed tight. It does not complete this turn.
+
+The health shield programme was also declared done: sequencing capacity, stockpiles and care protocols were now formally in place across the Union, reflecting prior-turn work coming into effect.
+
+Yet scarcity still bit. Rationing of remaining chips favoured care and telecoms, lithography servicing remained contested with Washington, and talks with Tokyo and Seoul produced maintenance promises but no firm deliveries. The ongoing scarcity pact work continued as the single carried-over effort, with no second new measure added. A separate bid by a breakaway capital for its own supply deal continued to undercut the common negotiating line, eroding the Union's sovereign position.
+
+Public mood stayed sour. Relief that hospitals kept running competed with anger over frozen hiring, slow clinical tools and renewed walkouts. New municipal resistance to grid hook-ups for data centres flickered in local press as rumour rather than policy, but added to a sense that every shortage had merged into one. Brussels gained only modest political credit for crisis management, held back by ongoing costs and unfinished industrial promises.

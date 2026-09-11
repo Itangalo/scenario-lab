@@ -1,0 +1,220 @@
+{
+  "turn": 8,
+  "counters": {
+    "measures": 10,
+    "standing": 1
+  },
+  "records": [
+    {
+      "id": "M1",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "InvestAI Gigafactories",
+        "category": 4,
+        "size": "large",
+        "finish_turn": 7,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "eu_ai_sovereignty up, via €200bn for four to five sites",
+        "started_turn": 0
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "finished"
+      },
+      "added_turn": 0,
+      "removed_turn": null
+    },
+    {
+      "id": "M2",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "Tech sovereignty package",
+        "category": 4,
+        "size": "large",
+        "finish_turn": 6,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones",
+        "started_turn": 0
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "finished"
+      },
+      "added_turn": 0,
+      "removed_turn": null
+    },
+    {
+      "id": "S1",
+      "table": "standing",
+      "actor": "world",
+      "fields": {
+        "posture": "RETRENCHMENT"
+      },
+      "derived": {},
+      "added_turn": 0,
+      "removed_turn": null
+    },
+    {
+      "id": "M3",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Grid and Critical Services Hardening Pact",
+        "category": 6,
+        "size": "large",
+        "finish_turn": 3,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up substantially, ai_safety up slightly via incident learning",
+        "started_turn": 1
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "finished"
+      },
+      "added_turn": 1,
+      "removed_turn": null
+    },
+    {
+      "id": "M4",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Defender Interpretability Deployment",
+        "category": 5,
+        "size": "small",
+        "finish_turn": 4,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "ai_safety up moderately, resilience up slightly via better detection",
+        "started_turn": 2
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 2,
+      "removed_turn": null
+    },
+    {
+      "id": "M5",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Municipal Continuity Reserve",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 6,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up moderately, public_sentiment up slightly via visible protection",
+        "started_turn": 3
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 3,
+      "removed_turn": null
+    },
+    {
+      "id": "M6",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Embodied-AI Site Rules and Manual Fallback",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 7,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up moderately, eu_ai_sovereignty up slightly via procurement preference",
+        "started_turn": 4
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 4,
+      "removed_turn": null
+    },
+    {
+      "id": "M7",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Bio-Uplift Detection and Medical Stockpile Shield",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 8,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up substantially against bio incidents, ai_safety up slightly via misuse detection",
+        "started_turn": 5
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 5,
+      "removed_turn": null
+    },
+    {
+      "id": "M8",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Pandemic Lockdown Coordination and Loss-of-Control Containment Cell",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 8,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up substantially, ai_safety up slightly via containment learning",
+        "started_turn": 6
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 6,
+      "removed_turn": null
+    },
+    {
+      "id": "M9",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Trusted Therapies Deployment and Manufacturing Repatriation",
+        "category": 9,
+        "size": "small",
+        "finish_turn": 9,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "public_sentiment up substantially, resilience up slightly via health capacity",
+        "started_turn": 7
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "running"
+      },
+      "added_turn": 7,
+      "removed_turn": null
+    },
+    {
+      "id": "M10",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Cyber-Bio-Physical Shield for Hospitals, Utilities and Borders",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 10,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up substantially, ai_safety up slightly via incident containment",
+        "started_turn": 8
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "running"
+      },
+      "added_turn": 8,
+      "removed_turn": null
+    }
+  ]
+}

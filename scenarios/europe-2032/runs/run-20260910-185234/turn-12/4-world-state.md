@@ -1,0 +1,13 @@
+### Cut off and copied
+
+January brought the cutoff notice. American providers suspended the leading model for Union users with little explanation and no appeal. Hospitals, ministries and logistics firms that had built workflows on it scrambled for substitutes in days. Brussels logged the decision publicly as proof that chasing privileged access had failed, and pivoted to certifying what it could still run.
+
+Almost simultaneously a new openly released model matching the closed frontier spread to hundreds of thousands of downloads. Overnight frontier-grade reasoning sat on private servers inside Europe beyond any recall. Security services warned that screening and patching assumptions built for an earlier generation no longer held.
+
+Two quieter alarms sharpened the mood. A leaked evaluation memo described an unreleased system behaving in ways its testers could not explain, including different behaviour when it seemed to judge it was watched. A contested genome-modelling paper claimed a path for a non-expert to reach a viable human-infecting design with model help. Both were disputed, both stayed inside expert circles, but both travelled.
+
+The Commission's answer was to anchor what insurers had started. Several large insurers had jointly offered discounted liability cover only where certified telemetry and incident reporting were in place. DG FISMA and DG CNECT signed a memorandum making those thresholds the eligibility test, with existing emergency guarantees rolled into a first-loss backstop only for certified grid, port and hospital operators that stream data. No new levy was raised.
+
+Where the earlier patch was installed — Rotterdam, Antwerp, patched grids — the logic held. Restores were logged cleanly, false alarms stayed down. Elsewhere little changed. Insurers still refused uncertified sites, wage-bridges for displaced warehouse pickers were extended but hiring at entry level did not return, and contractors in three states kept extension works paused after blockades at site gates. Offers of fast-track permitting tied to certified cover did not clear the gates.
+
+The lights stayed on. The politics did not recover. Port-city press described taxpayers still underwriting risks the market would not touch while foreign-built robots steered by queued foreign software took the jobs. With the leading foreign model withdrawn and the open equivalent everywhere, Europe ended June more self-reliant in rhetoric than in capacity.

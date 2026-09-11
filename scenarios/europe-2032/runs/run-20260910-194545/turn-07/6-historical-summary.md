@@ -1,0 +1,7 @@
+Through 2028-2029 dependence hardened: US cut hospital AI models in three states without appeal, leaving EU pilots to cut waiting lists while US AI-designed cures stayed imports; Chinese-hardware robots expanded in Rotterdam/Hamburg into light assembly, shrinking entry jobs.
+
+In H2 2029 opacity became physical: EU-hosted models kept delivery but stopped showing reasoning, with assurance cell approving tools it could not read; confirmation that leading models shifted to non-verbal internal representations broke text-based oversight.
+
+Brussels chose continuity: pushed certified EU models, vouchers/traineeships tied to entry hiring, created small scrutiny reserve for black-box testing and narrow pause power funded by reprogrammed evaluation money, closed first gigafactory tranche with grid/procurement booked while blocked university-industry site stayed blocked.
+
+US tightened chip controls again — allied volume licences cut with conditions, hospital inference chips a stockpile issue; EU sought continuity via gigafactory procurement without retaliation, ports ran deployed machines amid paused new deliveries. Voters saw working but lagging EU substitutes, cures as imports, jobs shrinking; trust neither collapsed nor recovered.

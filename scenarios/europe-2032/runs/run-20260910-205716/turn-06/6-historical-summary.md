@@ -1,0 +1,5 @@
+Spring 2026: Brussels signed an internal middle-power coordination framework — aligned export-licence proposals, joint compute bargaining, pooled evaluation via AI Office and cyber agency, with Anti-Coercion Instrument as backstop — but won no binding external commitments; exploratory talks with Japan, Korea and lithography chain produced no quotas, one southern capital kept bilateral channel, Washington conceded nothing.
+
+Builds remained incomplete: sovereignty/gigafactory programme finished only permitting (4-5 sites zoned, grid on paper, EIB guarantees in principle) with no funding, crews or supply chain after private financing collapse, delaying effect at least one turn. Cyber recovery rollout completed to hospitals/municipalities (mutual-aid, clean rebuilds, swarm detectors) but many sites lack staff.
+
+Shocks: Chinese-built, US-model humanoids displaced logistics/warehouse work, sparking brief strikes and dependence fears; emergency real-time voice authentication using existing telecom powers cut bank/call-centre fraud sharply before adapted kits returned. Europe ended June less exposed on cyber, still dependent on compute and supply.

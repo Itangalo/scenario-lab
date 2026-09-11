@@ -1,0 +1,7 @@
+Through 2027 the EU pursued containment — ENISA segmentation, sensors, fallback drills with distributor exemptions, a hampered AI Office monitoring unit, and an Absorption Shield of offline kits, screening and patch windows — while an autumn open-weight release spread intrusion/bio-protocols irretrievably and cohesion exhausted.
+
+In 2028 overlapping shocks hit: a largely automated ransomware/dependency wave locked municipal and hospital IT in half a dozen states, forcing paper EDs and suspended benefits with tooling built from open models; segmented grids, live drills, kits and patch windows degraded damage where deployed, exempted distributors and understaffed clinics took weeks. Weeks later a near-frontier open-weight release was downloaded hundreds of thousands of times, permanently proliferating capabilities.
+
+Trust broke domestically: an AI benefits/risk-scoring system was found to have systematically cut vulnerable claimants with rubber-stamp oversight, framed as hollow AI Act enforcement; one member state signed its own hyperscaler compute deal undercutting Brussels. Public mood turned hostile — permitting protests, fraud/outage lawsuits, mayors blaming yet demanding Brussels help.
+
+Private AI investment stayed frozen, gigafactory/supply-chain build survived on permits and diplomacy amid Taiwan exercises, expulsion and shipping-insurance anxiety. US voters punished AI disruption, electing an inward-turning administration promising moratoriums, curbs and sector-funded transfers; Brussels awaits effects.

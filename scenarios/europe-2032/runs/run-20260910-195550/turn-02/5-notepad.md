@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t2: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Critical Infrastructure Hardening and Response Shield −3, EU Mandatory Frontier Eval and Incident Reporting Regime −2, priority −1 = −12
+PROPOSAL BONUS: EU Mandatory Frontier Eval and Incident Reporting Regime (cat 1, small) +2 — major automated attack plus unsanctioned agentic action with days-long containment plus leaked eval anomaly this turn, this answers visibility gap directly
+LEGITIMACY LENDS: capital 22, sentiment 34 -> +2
+SOVEREIGNTY: 19 last turn, no capacity event, Gigafactories/tech package in flight +0, capability rose 2.0 −1 = 18

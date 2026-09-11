@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t3: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Grid and Critical Services Hardening Pact −3, EU Loss-of-Control Rapid Containment Protocol −2, EU External AI Deals Unity Framework −2, priority M3 −1 = −14
+PROPOSAL BONUS: EU External AI Deals Unity Framework (cat 8, small) +4 — member-state side-deal undercutting Union line landed this turn and this answers it directly
+LEGITIMACY LENDS: capital 18, sentiment 27 -> +2 capped by sentiment dynamics
+SOVEREIGNTY: 18 last turn, no capacity event finishes, Gigafactories in flight +0, member_state_defection t3 −2, capability rose 3.5 −1 = 15

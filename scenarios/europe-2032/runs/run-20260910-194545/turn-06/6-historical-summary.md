@@ -1,0 +1,5 @@
+Autumn 2028 to early 2029 dependence became concrete: US cut off hospital AI models in three member states without appeal, forcing reversion to queues while US AI-designed tailored cures remained accessible only on US infrastructure/terms; Chinese-hardware (>half) with US-control robots expanded in Rotterdam/Hamburg from logistics to light assembly, undercutting carmakers/machine-tools.
+
+Brussels chose continuity over parity: gigafactory permitting zones and grid loans protected, mediation dragged at still-blocked university-industry site without spread or lifting, rumored Chinese robot pause did not stop deployed machines.
+
+Shield substitution advanced but small: EU-hosted safety-checked models via assurance cell cut waiting lists in two pilot regions, vouchers/wage top-ups from reprogrammed funds reached payslips, Graduate Transition Guarantee traineeships filled slowly. Entry jobs kept shrinking faster with robots; voters experienced cures as imports and rebuilding a generation behind, though visible EU successes kept permits alive.

@@ -1,0 +1,5 @@
+In autumn-winter, intrusions remained unattributed but a welfare AI scandal dominated: risk flags cut benefits and triggered fraud referrals for thousands, with high appeal success; logs were complete but unread as caseworkers approved files in under a minute.
+
+Mayors suspended systems amid blame between ministries and vendors. The Commission framed it as enforcement failure, ordering suspensions, case review, compensation, and AI Board interim floor on workloads, four-eyes sign-off, quarterly log attestations, plus publication of logs and ratios in two countries.
+
+No linkage of clean municipal audits to fast-track energy permits was adopted; host-deal talks for computing plants produced drafts but no signatures, hardening gaps persisted. University pooling collectives split over sandbox power tied to reporting; U.S. interim model access unchanged. Public mood shifted from anxiety to distrust of AI bureaucracy.

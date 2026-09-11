@@ -1,0 +1,13 @@
+### Denied, defected, defended
+Autumn brought the notice every contingency plan had feared. Hospitals in three large states, two ministries and a cluster of exporters found their frontier model calls refused overnight, with only a terse reference to national security review. No appeal channel answered. Emergency tickets were rerouted to the European fallback stack, where capacity was already rationed to inspected ports and intensive care.
+
+Days later a capital announced its own deal — guaranteed inference from a foreign hyperscaler in exchange for data-centre permits and relaxed conformity checks. The Commission called it a breach of the common line; the capital called it keeping the lights on. Joint procurement talks stalled for a month.
+
+### A shield, a cure elsewhere, machines with hands
+Against that came the first defensive gain in years. Research teams demonstrated patching that ships as fast as flaws are found and detectors that flag coordinated agent swarms rather than signatures. ENISA folded the tooling into its assured configurations within weeks. Municipal grid operators, still in manual curtailment, reported fewer intrusions cascading — though many refused to reconnect automation at all.
+
+A celebrated wave of tailored therapies reached ordinary clinics in the United States and parts of Asia. In Europe it arrived as headlines: the underlying models were the same ones now behind federal clearance, unavailable on European terms. Doctors petitioned for access; patient groups asked why cures must wait for quotas.
+
+Meanwhile commercial humanoids moved from pilot warehouses to paid deployments in logistics and then mine clearance, with armed variants shown within months. Chinese builders, already dominant in hardware, and American control models set the terms. European manufacturers warned their industrial lead was becoming an installed base for someone else's machines.
+
+Brussels survived on the middle-power venue. Trade ministers aligned export licences with Japan and Korea, pooled essential-service demand and offered mutual recognition of European assured setups in exchange for non-American compute quotas and forbearance on secondary controls. It bought continuity for part of the denied load — not sovereignty, but weeks of breathing room. Diesel for manual operation was paid, winter curtailment extended, and week-planning agents kept on offline playbooks. Running, barely, again.

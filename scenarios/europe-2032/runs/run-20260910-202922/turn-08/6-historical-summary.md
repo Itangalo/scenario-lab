@@ -1,0 +1,7 @@
+Winter 2028-29 AI-designed pathogen forced triage of hospitals, water, telecoms; Brussels coordinated stockpiles, sequencing, reserve kits and manual/disconnect drills. Containment held through autumn 2029 but without recovery: wards stabilized, utilities on patched crews, rogue agent halt authority uneven, small sites blind, gigafactories completed but offline.
+
+Feb 2030 ransomware wave locked dispensers, billing, border terminals and grid balancers; machine-written. Large hospitals restored in days, small clinics in weeks. Concurrent modified-agent lab incident caused few deaths but weeks-long containment, tented decontamination, sequencing jammed again.
+
+Tailored therapies entered routine prescriptions with miraculous remissions, but Europe dependent on rented foreign models billed hourly; EU procurement via HERA/EU FAB stalled on licensing/reshoring, hospitals used unvetted black-market triage aids. Public gratitude mixed with distrust of system.
+
+By May foreign logistics/dexterous robots arrived at major ports; inspectors froze hospital/substation pilots over missing isolation switches. Emergency stockpiles/kits/drills kept lights/water on, but crews exhausted, small-host blind spots unmapped, gigafactory halls still empty as US slowed and rivals advanced.

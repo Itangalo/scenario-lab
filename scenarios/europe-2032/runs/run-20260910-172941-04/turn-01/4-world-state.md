@@ -1,0 +1,10 @@
+### Grids, ports and weights
+Autumn brought the audit no one wanted. Engineers checking billing software at a container port found remote access tools that did not belong there. The trail led to transmission operators on three continents, including two in the EU. Intruders had sat inside for weeks, mapping substations and port systems. No blackout, no ransom note — just quiet presence. The uncomfortable admission from several operators: without the accidental find, they would still be there.
+
+Brussels moved fast on paper. The Critical Systems Shield was announced as the Union's first priority, tasking ENISA and the energy and transport directorates to push detection sensors and round-the-clock mutual aid to the named grid operators. Rollout began before Christmas, but cost-sharing fights with operators slowed deployment and procurement waivers drew auditors' questions. Exercises were scheduled, not yet held.
+
+The same weeks erased a different boundary. The July Kimi K3 release, followed by a second near-frontier open release in the autumn, was downloaded hundreds of thousands of times. Offensive cyber tooling previously withheld from closed models now runs on private servers. Universities and some labs reacted by quietly withholding phage-level genome model weights, but there is no rule behind it.
+
+Gigafactory permitting advanced in Spain, France, Germany and the Nordics, with accelerated zones and grid-connection promises. Local councils complained about power prices and water, delaying two sites. Washington's June switch-off scare still shapes talks: US hyperscaler participation is now conditioned on EU legal anchoring, which Washington lobbyists call discriminatory.
+
+Public mood soured. Evening news paired grid maps with job-loss features, and trust in connected infrastructure slipped.

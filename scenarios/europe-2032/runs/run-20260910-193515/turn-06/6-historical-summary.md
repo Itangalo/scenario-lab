@@ -1,0 +1,5 @@
+EU resilience held through cut-offs and probes via ENISA Shield, EU-hosted open models and paper fallbacks, but at cost of slow systems, frozen gigafactories, and trust hit from welfare-AI scandal.
+
+Winter widened gap: new autonomous multi-day system made hospital inference licences obsolete; Washington forced Dutch lithography supplier to halt shipments/servicing for new and older lines, Hague partly complied — seen as US veto over EU chokepoint.
+
+Commission responded with anti-coercion cover/compensation for The Hague and outreach to Tokyo/Seoul for procurement, telemetry and compute bargaining — talks difficult; sovereignty permits/grid reservations/bank guarantees became law and health-ministry failover declared operational, keeping care/payments through probes but brittle, one grid link still court-frozen. Voters unimpressed, humiliated by dependence.

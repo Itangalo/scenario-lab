@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t6: M1 InvestAI Gigafactories −3, M5 Municipal and Mid-Utility Continuity Guarantee −2, M6 EU Agentic Containment and Bio-Response Backstop −2, priority −1 = −7 (priority void, capital below 20, charged −7 only)
+PROPOSAL BONUS: EU Agentic Containment and Bio-Response Backstop (cat 6, small) +4 — loss_of_control_incident plus bio_uplift_findings plus cyber_major_incident in last turn directly answered
+LEGITIMACY LENDS: capital 13, sentiment 33 -> +2
+SOVEREIGNTY: 16 last turn, Tech sovereignty package finishes t6 +4, Gigafactories in flight +1, no capacity event, capability rose 0.8 −0 = 21

@@ -1,0 +1,11 @@
+### Lights out, access cut
+Autumn brought a sweeping automated assault on public services. Municipal billing, hospital administration and several grid operators were hit through a shared software dependency, with ransomware and wiper logic assembled visibly by machine. Portals went dark for days, elective care was postponed, and clean restoration from offline copies took far longer than isolation. Attribution remained unresolved at year's end.
+
+In the middle of triage, many ministries, hospitals and firms discovered the leading American model no longer answered them. Access was withdrawn at short notice without reasons or appeal, forcing teams to fall back to older models and manual workarounds while systems were still down. Press coverage treated the two blows as one lesson in dependence.
+
+### A reserve tested, a union strained
+The containment roster declared operational in spring was activated. Seconded teams, isolation routines rehearsed with two large cloud providers, and a common reporting template sped escalation and kept backups from being re-infected. Local engineers carried the response, and officials admitted this was containment, not hardening: services degraded rather than stopped, but defenders were visibly behind.
+
+Brussels tried to hold a common line on lithography servicing and export licences while talking to Tokyo, but Washington tightened controls again and no waiver came. One member state then broke ranks to strike its own hosting and supply arrangement, defended at home as pragmatism and read in Brussels as a breach of solidarity. Gigafactory orders stayed in legal review.
+
+At home, redress desks and wage-insurance pilots from the completed trust effort staffed grievance points, but coordinated blockades of data-centre sites and municipal AI installations spread, fuelled by the benefits-scoring scandal. Across the Atlantic, Americans elected a president promising to hold advanced AI as a strategic asset, ration foreign access by tier, and decide in Washington what allies receive.

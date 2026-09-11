@@ -1,0 +1,5 @@
+Washington-Beijing pact thinned further as US rationed volume licences and swept servicing/spares in; The Hague protested louder, EU accelerator queues lengthened as private AI capital fled, data-centre expansions cancelled, research hosting lost, lead times grew for accelerators and industrial chips.
+
+Frontier-class open release spread to hundreds of thousands of machines powering municipal/small-firm assistants and self-rewriting ransomware; joint like-minded telemetry pool with seconded analysts caught intrusions early, degrading not stopping hospital/grid impacts, amid log disputes.
+
+Cash-strapped Brussels answered with alignment: joint licence/procurement terms in middle-power framework trading servicing leverage for assured compute; no new halls, freed capacity to protected loads under continuity doctrine. Retraining rollout finished, wage insurance paid, care courses filling faster, but warehouse layoffs continued.

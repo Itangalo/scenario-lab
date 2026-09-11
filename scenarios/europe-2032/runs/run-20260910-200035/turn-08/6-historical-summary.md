@@ -1,0 +1,5 @@
+Winter 2029-30: February ransomware sweep via compromised management tool hit municipal portals, hospital admissions and two grid balancing operators; online backups encrypted. EDs reverted to paper, e-services suspended. Existing Essential Services Cyber Recovery Corps sent joint EU teams to worst-hit sites — fast rebuilds where present, prolonged outages where not; offline-backup/failover rollout still uneven by June. Health/energy continuity orders extended.
+
+No new measure launched. AI interpretability/control guidance only piloted; procurement conditioning for high-risk systems deferred for lack of staffing/audit capacity. Lithography dispute parked at information-sharing, no US pledge. Taiwan extended exercises raised insurance and supply-chain worry, exposing unfinished gigafactories; one InvestAI site progressed, three frozen.
+
+Public mood darkened on outages and delayed care, partly offset by visible recovery and grid holding. Commission gained only modest legitimacy from steady management amid thin budgets.

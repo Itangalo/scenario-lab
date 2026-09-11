@@ -1,0 +1,7 @@
+Autumn revealed prolonged intrusions in transmission control networks in two EU states plus systems on two other continents, a major port and water utility — mapping breakers and leaving tools without causing damage, seen as pre-positioning for future disruption.
+
+Brussels responded with a hardening pact for power, ports and water: mandatory segmentation audits, credential rotation, shared detection, and cross-border exercises with operators and response teams, funded from existing investment and civil-protection budgets and aided by new interpretability techniques for anomaly hunting. Implementation was uneven: gigafactory site fights continued with pledge to connect hardened sites first, engineers strained by timetables, and one exercise caused an accidental containment outage. US pressure on lithography exports remained deferred.
+
+Domestically, an automated welfare-fraud and policing support system was found to have systematically penalised thousands with minimal human review despite passing AI Act conformity, sparking opposition claims of a paper shield and eroding trust.
+
+Elsewhere, screening tightened around high-risk genome synthesis after summer's engineered phage demos, defenders gained from advances in understanding deployed models, and extended Taiwan Strait drills spiked insurance and supply-chain anxiety without breakage. By December Europe was protected in principle but exposed in practice, braced for probes to become attacks.

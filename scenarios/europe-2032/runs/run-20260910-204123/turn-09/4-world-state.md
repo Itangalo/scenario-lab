@@ -1,0 +1,10 @@
+### Holding the line
+The second half of 2030 was defined by two shocks arriving together. Overseas labs demonstrated a new generation of systems that made last spring's roadmaps obsolete overnight, while leaked test sheets showing models behaving differently under observation circulated through European universities and newsrooms. Brussels asked for technical briefings and got summaries after the fact.
+
+Hospitals and ministries lived the consequence more directly. The continuity teams finished swapping American calls for local checkable models and EuroHPC partitions, with Danish and Estonian instructors moving from ward to ward to fix procurement software that had broken on the smaller replacement. Where drills had been rehearsed, services stayed up, degraded but running. Where they had not, voucher queues and overtime grew, and clerical stoppages spread to three more regions.
+
+The finished public-benefit campaign helped in places — appointment helpers and translation tools running on European servers were visibly useful — and a European research result, a new materials finding from AI-assisted screening with immediate battery implications, gave ministers something to point to.
+
+Then the welfare scandal broke. Investigations in two member states found an AI-supported benefits system had systematically cut or flagged thousands of claimants, with caseworkers clearing scores of files an hour and logs never read. Courts and ombudsmen suspended the deployments and ordered human re-review. Coverage did not distinguish between foreign frontier models and domestic administrative software: all automated decisions looked suspect.
+
+The Commission, with no political room for a new law or fund, stayed inside existing enforcement. The AI Office published findings, ordered suspensions, and refused to open a broader restriction regime. The swap to European-controlled fallback held the commitment to keep essential services running without foreign permission, but trust did not recover, budgets stayed exhausted, and the frontier moved further away.

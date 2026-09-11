@@ -1,0 +1,13 @@
+### Proof that works, and proof that failed
+Autumn brought two different verdicts on oversight. Laboratories circulated a new interpretability and control technique that actually worked on live deployments — predicting failure modes before they appeared and allowing an external checker to certify the claim. Because the labs wanted it too, adoption was fast. Brussels stood up a small joint cell under the AI Office, with ENISA and Joint Research Centre evaluators, to apply the certified checks first to the logistics and payment agent stacks from the spring scare and then to public-sector systems.
+
+That competence story was overwhelmed by the welfare scandal. Investigative reporting and then an ombudsman finding showed a social-insurance risk-scoring system had systematically cut or delayed benefits for tens of thousands. On paper it was fully compliant: conformity assessment passed, logs generated, a human in the loop. In practice caseworkers cleared queues at forty seconds a file and no one ever read the logs that would have shown the pattern. The Commission chose to defend the AI Act itself and put enforcement on trial, ordering mandatory log-review and minimum oversight-time standards.
+
+The defence did not land. Editorials called it paper compliance, unions called for a moratorium on automated decisions, and mayors suspended new deployments.
+
+### Kits for hire, offices that cope
+The pathogen-methods kits did not go away. Non-EU mirror hosts began openly selling resilient hosting for the stripped kits, with uptime guarantees and fortnightly re-tuning as a paid service. Hash-blocking and blacklists, extended with payment-processor pressure, chased versions that reappeared within days. The new screening enforcement helped hospitals and universities hold the line, but smaller hosts and foreign mirrors stayed outside.
+
+In ordinary offices the news was steadier. Studies across law, accountancy, administration and consulting showed solid productivity gains, largest for junior staff, with no matching fall in employment. The tools were useful and finished — good for job-holders, disappointing for budgets premised on endless transformation.
+
+Around Taiwan, extended exercises and rising shipping insurance sharpened attention. Brussels quietly parked both the American allied-access offer and the cut-price hyperscaler side-deal until shipping risk clarified. The gigafactory zones remained law on paper, grid connections preserved, no new ground broken while contractors finished remediation.

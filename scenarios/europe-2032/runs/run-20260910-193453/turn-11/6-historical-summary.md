@@ -1,0 +1,5 @@
+EU containment held through winter ransomware sweep via Frontier Failure Containment Pact, keeping services degraded. Anti-AI permit freezes stalled gigafactories; autumn siting regulation with dividend and grid priority reopened two districts, but building remained exception as courts and mayors held freezes.
+
+Hospitals diverged: three large-state federations refused to reconnect elective systems to containment hub without liability clarity, postponing October mutual-aid drills; EDs covered, elective backlogs grew.
+
+September genome-model study claiming non-expert viable human-infecting design spurred biosecurity action despite methodological dispute. Brussels aligned screening to secure allied volume licences, slowing accelerator approvals. HERA/ECDC signed letter of intent for joint biosurveillance with sample-sharing and investigation mandate plus pooled intrusion telemetry. December solidarity compensation fund for rollback cancellations created on paper but reimbursements lagged; two federations stayed off hub.

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: M12 EU Entry-Level Transition Shield −2, M13 EU Struck Node Islanding and Emergency Rationing Reinforcement −2, M14 EU Joint Threat Response Accession and Blockade Rationing −2, priority −0 (capital below 20, no effect, no cost) = −6
+PROPOSAL BONUS: EU Joint Threat Response Accession and Blockade Rationing (cat 6, small) +4 — taiwan_blockade plus capability_jump plus export tightening landed this turn and this answers them directly
+LEGITIMACY LENDS: capital 6, sentiment 12 -> +2
+SOVEREIGNTY: 7 last turn, no capacity event, no cat4 in flight +0, export_control_escalation t13 −3, capability rose 2.0 −1 = 3

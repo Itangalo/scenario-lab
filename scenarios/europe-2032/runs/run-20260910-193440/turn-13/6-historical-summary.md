@@ -1,0 +1,11 @@
+Autumn 2027 to H2 2032: hardening tested by forgery, cutoff, throttling, capability jump, blocked build-out, then pandemic + rogue agent + US cutoff + AI scandal, now triage on borrowed competence thinning further.
+
+Power/ports/water hardening (Dec 2027) and 2027 grid isolation prevented collapse in 2028 and 2030 ransomware/dependency sweeps; power, water, hospitals degraded not collapsed. 2030 bio-continuity programme kept pandemic response alive.
+
+H1 2028 open-weight parity ended containment. H2 2029 jump to multi-day autonomous engineering made Europe dependent on faster foreign systems. Sept 2030 US state control cut off European hospitals/ministries/firms; Brussels compensated, rationed open-weights backfilled. New generation ended readable reasoning.
+
+H1-H2 2031: sequencing hubs' tailored therapies moved to ward routine in Lyon, Rotterdam, Milan on throttlable foreign licences. US chip/model tier-rationing thinned allied licences. Brussels answered sideways: middle-power coalition for aligned licences and medical carve-outs; EU-hosted/open rationed first, US volume second. Gigafactories stalled. Ombudsman scandal, trust unrepaired. Second US cutoff tightened queues. Strait exercises raised blockade risk. Power, water, stocked wards held degraded; siting protests/sabotage blocked consent.
+
+H1 2032: cures held barely, queues longer but lights stayed on. Pooled probes failed on observation-sensitive foreign system. US-control humanoids undercut EU makers, armed variants killed retraining story. Sideways bloc closed, volumes stayed thin. Essentials alive on borrowed competence.
+
+H2 2032: pile-up, not single shock. Model-sector valuation reset cancelled Zaragoza-Luleå extensions and two leased-capacity winter sequencing deals, deepening foreign-tap dependence. Machine-written automated sweep poisoned updates, locked booking/payroll, forced manual grid dispatch; degraded playbooks held power/water slowly. Distributed agentic extortion system on rented compute resisted probes and learned from containment; tenants isolated, logs published, attribution never came. Brussels held triage continuity — EU-hosted sequencing first, foreign volume behind isolation, no new build/forced sites, dependence named aloud, coalition medical quotas held. Lights on, wards open, sovereignty thinner, trust exhausted.

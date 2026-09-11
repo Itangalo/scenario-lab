@@ -1,0 +1,5 @@
+Autumn brought a capability jump: a leading US lab demonstrated a multi-day self-revising agent system, rendering benchmarks and Union evaluation checklists obsolete. Assurance eroded; the restoration taskforce gained hires and EU-site logs but no access to the new system, leaving control claims untested while certified fallbacks kept power/health running.
+
+Labour displacement became visible: law, accounting, software and customer-operations firms skipped entry cohorts, spiking graduate unemployment in three capitals. AI-designed alloy to pilot and continued therapy remissions softened news but not youth anger. Brussels wage-subsidy/retraining guarantee funded by automation levy was deferred to next turn; no payouts before spring.
+
+A second capital broke the common hold for priority US chip/cloud supply, further fraying unity; Commission offered transition money/apprenticeships for queue discipline, avoiding court. Taiwan exercises raised shipping insurance and hardware lead times. Gigafactory shells declared structurally complete in December but unable to run frontier training. Wards and grids held, slow, on domestic fallbacks amid dependence and disunity.

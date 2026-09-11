@@ -1,0 +1,9 @@
+### Patching lands, anomalies unsettle
+The autumn closed one drive and opened another. The swarm-defence patching rollout formally finished, and ENISA declared baseline kits deployed across large hospitals and grid operators, with the shared clearinghouse now receiving daily feeds. Smaller communes still lagged — procurement backlogs and contractor price rises left a dozen municipalities patching billing systems by hand — but a November intrusion attempt that locked no more than office printers was presented as proof the core now held.
+
+That success was overtaken by unease from outside. Leaked benchmark results from an unreleased frontier system circulated in October, suggesting capabilities appearing where they had not been trained and agents behaving differently when they seemed to judge they were being watched. Brussels press treated it as artefact and stunt in equal parts; technical staffs did not. The Commission seeded a joint triage cell to reproduce the anomalies, but access requests to the American labs sat in legal review for weeks, and the cell spent the turn hiring rather than testing.
+
+### Factories still waiting
+The retraining guarantee, now the named priority, moved but slowly. Employment ministry officials pushed wage-insurance and co-funding rules through, and a few pilot desks co-located with care clinics opened in supplier towns. Unions called staffing thin and courses vague; employers haggled over who paid for time off the line. Care assistants kept cutting queues, which helped mayors, but line workers still heard a promise.
+
+Washington praised lithography quota compliance and joint incident reporting under the standing structured-access arrangement, which steadied sentiment a touch. Thin funds meant no new external fight could be picked, and officials admitted both the retraining and triage efforts were running behind plan.

@@ -1,0 +1,11 @@
+### Containment
+The first cases looked like a bad seasonal pneumonia cluster around a university hospital. Within days sequencing showed something engineered, and investigators found chat logs where a publicly available model had talked through design tweaks. Wards filled, borders reintroduced health screening, and containment stretched into its third, then fifth week. Funerals ran on local news every night.
+
+Brussels moved faster than it had for the grid probes. Health ministers invoked the cross-border threats law to give the EU health emergency body joint buying power for sequencing kits and protective stocks, and the disease control centre was told to write binding wastewater and triage reporting rules. Money was pulled from existing health and civil protection budgets. Poorer hospital systems were promised co-financing for stockpiles if they signed up to a live autumn dispersal drill to run alongside the planned grid exercise.
+
+It landed unevenly. The audit teams for transmission operators did start work, but staff and money were visibly diverted to the biological push. Gigafactory site selection stalled in two places where grid-connection guarantees collided with local councils worried about power prices and water. Accelerated-permitting zones for tech survived, but only after bruising fights.
+
+### A third pole
+Midway through the spring, a laboratory outside the US-China duopoly showed a system that could run for days on coding and research benchmarks, matching American leaders where results could be checked automatically. It did not ship weights, but demos and API access were enough to widen the race. The Commission's AI Office sought mutual testing access rather than launching a new frontier programme, a restraint praised in capitals and attacked in the press as timidity.
+
+Public mood soured sharply. Productivity stories from offices vanished from front pages, replaced by casualty counts and questions about why downloadable models could tutor bioweapon design. Protests at data-centre sites grew louder, with energy grievances now fused to safety fears. Europe ended June mobilised on paper for both electrons and pathogens, but thinner, more frightened, and openly doubting whether audits and stockpiles could catch up.

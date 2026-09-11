@@ -1,0 +1,5 @@
+Autumn audits revealed intruders lodged for weeks in transmission operators on three continents, including two in the EU, plus a port authority and water utility — with no blackout or ransom, raising fears over dwell time. The disclosure coincided with the July open release matching top closed systems for offensive cyber, making the intrusion tradecraft widely downloadable.
+
+Simultaneously, AI valuations reset sharply: hyperscale build-outs were cancelled, power-reservation deals evaporated, and frontier labs discussed training less. Brussels shifted InvestAI and the tech sovereignty package from new funding to husbanding permits, sites, grid connections, and the lithography supply chain. The Commission instead pushed hardening via energy and network-security law, ordering joint detection audits and live exercises by spring funded by repurposed funds and loans, with sensors and priority offered for mandatory reporting — though retrofits take seasons.
+
+Office AI showed real productivity gains, strongest for juniors, with no layoffs, but investors marked down what appeared to be a plateau of already-absorbed useful tools.

@@ -1,0 +1,7 @@
+Autumn audits uncovered quiet intrusions into electricity transmission operators on three continents (including two in the EU) and a regional water utility, with intruders mapping systems for weeks without disruption. Methods appeared machine-assisted, using widely available tooling from a summer open release; detection was accidental.
+
+Brussels responded with a hardening pact for power, ports and water: 24/7 joint detection under ENISA, exercised response plans, mandatory incident reporting, funded by repurposed digital funds and investment-bank loans. Adoption was uneven: some operators accepted co-financed sensors, others resisted sharing live telemetry; ministers delayed over legal base before agreeing a cybersecurity amendment. AI factory permitting advanced but was constrained by grid queues and local opposition.
+
+The US offered no assistance, with lithography export safeguard talks stalled and linked to broader export discipline; the June switch-off scare produced no written guarantee.
+
+By December, new detection nodes were live in a few operators, exercises scheduled but not held, and reporting still voluntary. Public trust in connected infrastructure slipped, but support for concrete action held.

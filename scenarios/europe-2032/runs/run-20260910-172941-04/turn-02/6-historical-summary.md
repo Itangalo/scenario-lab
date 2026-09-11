@@ -1,0 +1,5 @@
+Spring brought mixed progress: ENISA deployed detection sensors to affected transmission operators and port systems and held cross-border exercises, catching two fresh probes via mutual-aid, but co-financing disputes and procurement delays left smaller municipal utilities uncovered with patchy coverage.
+
+Gigafactory build-out advanced unevenly — accelerated zones held in France and Nordics, while water appeals in Spain and grid-connection disputes in Germany caused redesigns and months of delay; US hyperscalers remained engaged but resisted EU legal anchoring, slowing signatures, with no sites lost or secured.
+
+European-delivery AI tools for waiting-list triage, permit drafting, and tutoring cut backlogs in early-adopter cities, boosting junior professional productivity and prompting some firms to reverse layoffs. The new light-touch Replication Fund via DIGIT and AI Office distributed copy-paste kits and procurement templates, seeing fast uptake where wins existed but little ground impact yet, providing a popular narrative amid slower Shield and construction progress.

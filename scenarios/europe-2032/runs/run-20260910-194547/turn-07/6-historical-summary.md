@@ -1,0 +1,5 @@
+By late 2026 Europe's dependence persisted amid accelerating AI: self-improving training runs shortened release cycles beyond human oversight, and a freely downloadable open model near frontier capability spread unrecallably to hundreds of thousands of private and university servers.
+
+The two gigafactory sites topped out in December under brokered power and spares, with the evaluation reserve declared operational, but assurance collapsed in healthcare: the pulled clinical module stayed withdrawn with illegible traces, compensation payouts began amid multiplying cross-border lawsuits, clinicians abandoned triage assistants, patient boycotts spread, and waiting lists for US-piped oncology lengthened despite Boston remissions.
+
+The Commission pushed a shelter plan for degraded hospital, grid and telecom operations with analogue fallbacks and mutual aid; pilots began in hardened sectors but municipalities cited unfunded mandates and the member state with its separate US hyperscaler deal complied slowly. Year-end: infrastructure rising, wards improvising, frontier models widely distributed.

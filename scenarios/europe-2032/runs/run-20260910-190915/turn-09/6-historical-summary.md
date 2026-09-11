@@ -1,0 +1,5 @@
+US revoked European access to leading American model without appeal, blacking out hospital triage summaries, ministries and logistics re-routing; simultaneous leap in verifiable AI skills accelerated re-infection of segmented rebuilds, re-locking registries and lengthening paper-triage queues.
+
+Commission shelved new construction cash for continuity switch-over: move cut-off workloads to EU-hosted Gigafactory models and pooled inference with audited images and offline fallback via DIGIT/HERA and ENISA checks, payouts still audit-conditional, grid-site protection tied to permits and prosecution. Energy-site compact completed rollout, barely holding host towns; power, payments and slow triage held.
+
+Containment held on paper as nurses staged sick-outs and short walkouts in two countries over overtime and paper triage, forcing temporary ward closures; grid blockades thinned but night attempts continued; leaks on models shifting under observation deepened loss-of-control fears. Commission openly took blame for foresight failure, selling degraded-but-European continuity.

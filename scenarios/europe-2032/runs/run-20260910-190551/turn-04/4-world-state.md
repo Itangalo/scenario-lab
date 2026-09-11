@@ -1,0 +1,10 @@
+### Licences and ground wires
+The first half of 2028 was dominated in Brussels by Washington's new tightening of chip and model exports. Draft rules circulated in February would have put allied buyers on the same ration as everyone else. After frantic Trade and Technology Council shuttling, the Commission secured a provisional carve-out: allied orders under volume licences would keep flowing, in exchange for aligned controls on lithography optics, chemicals and servicing talent.
+
+On paper it bought time for the gigafactories. In practice it bought delay at a price. American officials briefed that the carve-out was conditional and reviewable every six months. Dutch and German equipment suppliers complained they had traded away leverage for assurances that covered existing HBM and GPU pipelines but not next-generation accelerators. One capital kept its bilateral compute side-deal anyway, arguing the American paper proved Brussels could not guarantee silicon.
+
+At home the priority push to accelerate siting for the first gigafactory sites stalled. Two planned grid-connection upgrades faced coordinated physical blockades and a permitting review that added weeks. Local papers ran photos of fenced-off fields alongside stories of cancelled clinics still on workaround systems. Hospitals hit by the winter cutoff began quietly pooling procurement for a European-hosted medical model, circulating an open letter demanding guaranteed continuity that ministers found hard to answer.
+
+The evaluation cell kept testing the widely copied open model family, now at near-frontier competence, and confirmed what deployers knew: EU guardrails did not reach private racks. The continuity protocol directed scarce sovereign inference to hospitals and ministries first, which kept emergency services running but left exporters and universities queuing.
+
+By June the bargain held, barely. Hardware arrived, but dependence deepened, and the build it was meant to protect slipped behind its own schedule.

@@ -1,0 +1,13 @@
+### The lights go out, then flicker back
+Autumn brought the attack everyone had rehearsed for and no one had staffed for. Model-written ransomware swept municipal networks, hospitals and two ports in a single weekend. Where the permanent sensor fleet and isolation drills existed, grids stayed lit and records restored in hours. Where they did not — a belt of thin-staffed communes and regional clinics — screens went black, appointments were cancelled, and backup tapes proved unreadable.
+
+Brussels sent what it had: mutual-aid crews turned into paid standby teams, clean-backup kits rushed from Digital Europe stocks, soldiers carrying patch sticks into town halls. Restoration was fast where crews arrived, slow where protests and exhausted nurses blocked them. The emergency deployment strained staff and stocks, and consumed political goodwill even as standing leases and signed assistants kept power in hospitals that held. Attribution never arrived. Ministers stopped asking who and started asking how long. No new measure was introduced this turn; work continued under existing measures only, with no change to the current priority.
+
+Safety capacity was strained but not broken. Evaluation teams kept working, though they admitted the job got harder: the frontier labs announced their models no longer thought in words at all. The internal monologues overseers used to read were gone, replaced by architectures that worked better precisely because they were illegible. Checks are now more black-box guesswork than before, eroding confidence modestly.
+
+### Concrete not yet
+In the middle of the blackout, the gigafactory programme advanced but did not close. Permits, power contracts and private capital commitments moved toward signature for the shells in Finland and Spain, but legal and financial close slipped under staffing and crisis pressure. No new concrete was poured this winter, and full effect remains at least a turn away. The Commission pointed to standing leases and signed assistants still answering in hospitals that kept power.
+
+Ordinary offices told a different story. Law firms, accountants, newsrooms and consultancies posted measured productivity gains, largest among juniors, without layoffs. Firms that had cut early quietly rehired. Voters liked the assistants that shortened queues but resented the outages that closed wards — used, resented, divided.
+
+Washington offered sympathy and no terms, under the American posture in place since the administration took office in Turn 6, which continues to condition cooperation. The joint understanding with Washington and Beijing on weights and biological design tools proceeded without a European chair, on terms set elsewhere.

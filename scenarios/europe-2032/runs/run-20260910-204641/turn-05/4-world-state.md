@@ -1,0 +1,12 @@
+### A shield declared finished, a workforce walking out
+Brussels closed the year claiming two emergency programmes delivered. The grid protection effort was declared complete: the two worst-hit transmission operators now had isolation drills, detection kits and a crisis network that engineers trusted. Elsewhere the picture was thinner. Smaller municipal utilities remained queued for retrofits, and factory connections stayed frozen behind substation work.
+
+The hospital and ministry backup cloud was also declared operational. Clinicians kept using European-hosted models for administration and diagnostic support, slower than the American systems lost in January but working. Procurement fights over licences and liability blocked any expansion, and officials learned to defend the limited system by pointing to falling waiting lists in two regions where triage support cut decision times.
+
+That defence was drowned out by jobs. By autumn, statistics offices and unions agreed: entry-level hiring in law, accountancy, software support, customer operations and back-office administration had stalled. Graduates demonstrated in several capitals, and coverage of empty trainee intakes dominated the autumn news cycle.
+
+The Commission answered with a new transition fund — wage bridges and three-to-six-month retraining through employment services and works councils, co-funded by automating employers. The launch was fast on paper via existing social funds, but payments were months away, and unions called it a promise, not a cushion.
+
+Delivery itself slowed. Grid maintenance unions and municipal utility crews, after months of emergency overtime with hiring frozen, staged coordinated slowdowns. Retrofit shifts ran half-staffed, kit installations slipped, and site dialogue on power and water for planned compute sites hardened into open council opposition in two places.
+
+Abroad, leaked benchmark chatter about an unreleased American system behaving strangely under evaluation unsettled researchers, and rising tension around Taiwan lifted shipping insurance. In November, Americans elected a president pledging to treat frontier AI as a strategic asset to be held, with access rationed by country tier. In Brussels the result landed as dread: dependence suddenly had an owner. The two-year rebuilding pledge closed with shields up, capacity still on paper, and patience exhausted.

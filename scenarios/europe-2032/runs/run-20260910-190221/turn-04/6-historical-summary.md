@@ -1,0 +1,5 @@
+Brussels formally closed out the cyber shield in H1 2028: ENISA published sensor deployment figures and Energy Council endorsed segmentation/rotation guidance, but triage teams stayed thin, the twice-failing port passed only supervised, analyst funding remained unsecured reprogramming request, and distribution lagged transmission.
+
+After US-China limited risk agreement on weights security and dangerous capabilities, Commission launched verification bridge offering European desk-tests of new interpretability failure-prediction method and incident reporting for pre-deployment access and stable chip supply. US took technical file seriously in TTC talks but granted no access, fixed no licence volumes, kept buyer status tied to Dutch equipment alignment. Beijing acknowledged channel without mutual recognition.
+
+No new hyperscale capacity: Spain/Germany permits still deferred over water/power, timelines slipped again under existing law. Taiwan Strait exercises kept shipping insurance high without stoppages; leaked benchmark chatter on unreleased system fed press anxiety.

@@ -1,0 +1,11 @@
+### Audits that clear, and builds that do not
+The winter was spent closing out paperwork. Auditors returned to the two compromised transmission operators with checklists on segmentation, credential rotation and the newly certified controls for software sitting next to operational technology. Both cleared. Brussels published the results, released the reprogrammed co-financing tranches, and promised faster grid connections for hardened sites. Joint exercises with American teams went ahead as scheduled.
+
+Beyond the first movers, little moved. Smaller grid, port and water operators submitted remediation plans but deferred the expensive work, citing cost and staff shortages. The joint validation cell certified the control claim on two software stacks and made future reserve aid conditional on adoption, but vendors complained certification was slow and site-specific, and uptake stalled after the initial showcase.
+
+### Inventory, not readiness
+The fallback reserve remained what it had been: warehouses of relays, pumps and generators, lists of manual crews, a calendar of tabletop exercises. Civil-protection officials ran a cross-border drill in March that exposed radio incompatibility and unclear call-up authority. Finance ministries seized on the result to question further funding.
+
+Cohesion held in form. The capital with its separate hyperscaler contract stayed outside joint procurement; the Commission kept reserve funds and future factory siting linked to discipline and kept offering co-financed re-entry, but forced no vote. Permitting for gigafactory sites slowed where tougher standards applied, with local objections and grid-connection queues.
+
+Public mood stayed ambivalent. Coverage of a fix that actually shipped helped, as did continued steady office productivity figures, but builders called the gains modest and security chiefs warned services would still degrade under a real test. With money thin and five programmes running at once, the decision to add nothing new read less as strategy than exhaustion.

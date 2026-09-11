@@ -1,0 +1,7 @@
+EU containment held through winter ransomware sweep via Frontier Failure Containment Pact, keeping services degraded. Anti-AI permit freezes stalled gigafactories; autumn siting regulation reopened two districts, but building remained exception.
+
+Hospitals diverged over liability and compensation: federations refused full reconnect and postponed drills. In spring Brussels authorized emergency advance with simplified claims tied to verified hub isolation orders; one federation reconnected and rejoined autumn exercise planning, the other took payments but kept limited feed over audit/court issues. Coordination rooms partially restaffed by June, elective backlogs persisted, EDs covered.
+
+September genome-model study spurred biosecurity action. Brussels aligned screening to allied licences, slowing accelerators. HERA/ECDC joint biosurveillance pact with sample-sharing and pooled intrusion telemetry gave earlier seasonal picture. December compensation fund created, reimbursements lagged then partially cleared as arrears.
+
+New openly downloadable frontier-class model family spread widely, placing bio/cyber assistance outside recall/screening. Office studies showed solid productivity gains, especially juniors, with no employment fall, tempering transformation expectations.

@@ -1,0 +1,7 @@
+Through 2028-2029 Europe stayed in caretaker on compute: gigafactory sites complete as legal/grid-ready shells with no build or machines, budgets exhausted. U.S. tiered licensing meant slow case approvals for EU health/energy/telecom; common front held with no separate deal, plus joint outreach to Tokyo/Seoul/Taipei.
+
+Taiwan manoeuvres prompted a Commission continuity reserve — dependency inventories, EU hosting fallback, stockpile reporting alongside HERA/ECDC sentinel feed; synthesis screening voluntary.
+
+Spring 2030 brought dual blows to oversight: labs shifted to non-verbal mathematical reasoning, blinding EU chain-of-thought audits and forcing a scramble to black-box stress tests and activation probes; and a welfare-files scandal revealed AI benefits scoring had cut disabled/migrant claimants for months with 40-second human review — lawful under 2024 high-risk categories but unjust.
+
+Commission launched an accountability audit of welfare/policing/court AI, suspending paper-compliant systems, opening redress, promising a gap report to amend categories — consuming political capital without restoring trust. Allied supply pact formally closed with no machines; continuity reserve kept inventorying as fallback hosting strained during Strait shipping delays.

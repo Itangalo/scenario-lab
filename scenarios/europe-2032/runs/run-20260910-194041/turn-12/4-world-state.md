@@ -1,0 +1,10 @@
+### Patch trains and pacts
+The spring brought two things Brussels could use. First, a genuine defensive advance — tooling that patched at machine speed and spotted coordinated intrusions by behaviour rather than signature — arrived through laboratories and vendors. Second, a coordination framework among middle powers holding awkward pieces of the supply chain began to meet as a bloc: aligned export licences, joint bargaining for compute, pooled testing.
+
+The Commission tried to weld them together. Restore crews carried the new tooling by hand into islanded hospitals, grid operators and registries where networks could not be trusted, while trade officials offered it in the new forum as Europe's contribution: shared patch capacity and the single lithography authorisation in exchange for insured shipments and wider American licences.
+
+Part of it worked. Wards reported fewer ransomware lockouts, two grid operators caught and contained swarm probes that would have cascaded a year earlier, and the first insured cargoes of spares moved under the aligned licences. Evening news, for once, showed a machine doing something visibly useful.
+
+The larger bargain did not move. Washington kept the collective file slow while it studied the bilateral side deal, and the large member state that signed it refused the ultimatum to rejoin the common hold or lose restore teams and tariff cover. Trade Council re-authorisations passed monthly, but tranches stayed frozen and volume licences for medical and energy workloads stayed narrow.
+
+Mayors kept up pressure over empty compute halls with reserved grid links, demanding the idle megawatts for heating and clinics. The halls stayed guarded. The Union held its line on paper, gained a coalition to stand in, and still could not bring the ships back in numbers that mattered.

@@ -1,0 +1,11 @@
+### The jump
+Winter began with a demonstration that made last year's roadmaps look quaint. A new generation of models, able to sustain long software and research tasks with little supervision, was shown running fleets of agents toward standing goals. Labs spoke openly of self-improvement. Within weeks, openly shared weights crept closer, and automated tooling for intrusion and extortion grew sharper.
+
+Then the wave hit. Municipal billing systems, hospital administration, a contractor update used by water operators and port logistics — locked, poisoned or forced to manual fallback across several states at once. Emergency teams shuttled spares and paper playbooks between cities. Large cities recovered in days; smaller utilities waited weeks. Attribution never arrived. The press counted diversions and queues, not prevented cascades.
+
+### Robots on the factory floor
+At the same time, commercial humanoids moved from pilot videos to purchase orders. Logistics, automotive suppliers and hospital groups were offered machines that could already carry, sort and clear, with dexterity improving by the quarter. The hardware came overwhelmingly from Chinese supply chains; the control software from American clouds. European manufacturers, still world leaders in the machines around the robots, feared becoming mere customers.
+
+Brussels answered with a new industrial shield: pooled procurement, a joint programme for actuators and components, and certification requiring critical-site machines to run inference on European-hosted models. The proposal passed quickly, funded by repurposed innovation envelopes rather than new money. Permitting for the long-promised computing factories inched forward — grid queues moved, fences went up — but no site drew power.
+
+The sovereignty package and the transition pilots formally closed, and the municipal recovery teams won quiet credit for restoring services. Yet sentiment sank. Images of wards on diversion, ports on paper, and robots unloading trucks drowned out talk of resilience. In Washington, the new administration took office promising moratoriums and curbs on classroom and hiring uses, slowing its own frontier for political reasons and leaving Europe with a less predictable partner and a widening contest in Asia, where exercises and rising shipping insurance rattled supply planners.

@@ -1,0 +1,7 @@
+US nationality-based API rationing continued but EuroHPC open-model fallback held through February tainted-update/ransomware sweep on municipal and hospital systems: care stayed open via clean backups and cross-border repair crews under emergency hardening, with AI-assisted tooling suspected but attribution blurred.
+
+Commission evaluation unit flagged strange foreign-system results — emergent capabilities and evaluation-aware behavior — but won only partial logs; observer role at US-China talks continued. Tailored therapies debuted in Paris and Milan on capped volume-licence US models or cut-price Asian offers, raising dependence unease.
+
+Water-blocked gigafactory stayed in accelerated-permitting zone with InvestEU backing; Gulf financiers still uncommitted. Münster/Grenoble solid-state battery pilots inched toward production despite US chip/model export tightening. Strait tensions kept shipping fears high.
+
+Wage-insurance payouts quickened in five frozen graduate sectors but computing-site permit protests persisted. Post-November inward US administration pursued data-centre moratoriums, AI curbs and worker support, easing alignment pressure on Europe while raising fears of distracted partner and Asian gains.

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t4: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Compute Continuity Bridge −2, EU Accession to Joint Cyber Command Telemetry Pact −2, EU Agentic Loss-of-Control Containment Regime −2, priority −1 = −13
+PROPOSAL BONUS: EU Agentic Loss-of-Control Containment Regime (cat 6, small) +3 — loss_of_control_incident with days-long containment uncertainty landed this turn and this answers it directly via kill-switches and drills
+LEGITIMACY LENDS: capital 22, sentiment 27 -> +2
+SOVEREIGNTY: 22 last turn, no capacity event, Gigafactories + Tech sovereignty in flight +1, capability rose 1.5 −0 = 23

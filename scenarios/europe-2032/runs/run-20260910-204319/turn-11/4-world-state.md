@@ -1,0 +1,13 @@
+### Rationed allies
+Washington's new round of chip and model controls cut deeper than previous ones. This time volume licences were not a European carve-out: ministries, hospitals and firms found quotas trimmed, renewals tied to intrusive end-use declarations and inspections, and several clinical pilots simply stopped renewing. Brussels again refused a separate licence bargain or concessions on servicing of chip tools, and held the line on refusing cover to the capital running its own guaranteed-inference contract.
+
+Hospitals kept operating, but thinner. The extended EU-backed cover for ransomware-linked failure paid for segmented offline backups, paper fallbacks and joint drills, and recovery money flowed only to wards that could prove scans restored within days. Three previously hit states kept theatres open through autumn extortion waves that encrypted imaging archives and municipal admin. Shared signatures from the EU cybersecurity agency helped patch radiology stacks, but degraded mode was slow, standby expansion stayed shelved, and filmed queues and manual triage dominated evening news.
+
+The openly released frontier-class system, now on hundreds of thousands of private servers, became standard tooling for crews: faster, better-written phishing lures against hospital IT, quicker intrusion. Biology-misuse monitoring produced advisories, no recall possible.
+
+### The forty-second review
+Then the ombudsman and a court found what caseworkers had long whispered: a benefits and policing scoring system used in social insurance had systematically wronged claimants. Conformity papers were in order, but human oversight meant clearing a queue at forty seconds a case, and logs that would have shown the pattern were generated and never read.
+
+The Commission ordered suspension, case-by-case human re-review and redress through the AI Office and national market-surveillance authorities, enforcing existing high-risk obligations rather than rewriting the law. Enforcement kept the statute intact but discredited its policing: headlines asked what other certified systems were passing on paper. Trust fell further, and opposition parties made the scorer a symbol of both Brussels overreach and neglect.
+
+With wards rationing degraded capacity by clinical need and redress funded from existing social envelopes, little moved except anger. Reinsurer rumours of extending exclusions from diagnosis to treatment-planning pushed a few regions quietly back to paper.

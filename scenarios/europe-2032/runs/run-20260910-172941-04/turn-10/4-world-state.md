@@ -1,0 +1,11 @@
+### The readable machine goes dark
+The first months of 2031 turned on a paradox that Brussels felt immediately. Laboratories demonstrated a sharp jump in machine-built code and intrusion tooling, while at the same time disclosing that their best models no longer reasoned in words anyone could audit. Chain-of-thought logs, the basis for most EU conformity checks, became decoration. For water utilities and port operators still on manual workarounds, the news meant the adversary's toolkit had improved just as the defender's oversight went blind.
+
+A second disclosure softened the blow. A control and inspection technique, developed inside the labs and quickly shared, allowed certain failure modes to be predicted and certified on live systems rather than argued about. EU engineers seized on it: if reading the reasoning was dead, testing the behaviour plus scanning internal activations might replace it.
+
+### Certification as politics
+The Commission made the welfare-fraud scandal the test case. Review boards opened in the two states concerned, back-pay files were started, and the tainted scoring model stayed suspended pending outside certification. States accepting EU-level audit were offered fast conformity money; two resisting capitals were named in quarterly reporting and cried overreach. The approach steadied victims' groups without reconciling governments.
+
+On infrastructure, the joint allied feed kept mapping the autumn sweep, and European freeze-and-isolate drills kept several cities degrading rather than stopping. But commercial cover hardened. Major carriers turned the temporary freeze on municipal cyber policies into a standing exclusion for systemic machine-enabled losses. Cities running water and port systems were told to self-insure. ECOFIN answered by pooling municipal risk and conditioning restoration contracts on drilled continuity plans — a workable stopgap that voters read as paying twice for protection they once bought.
+
+Concrete advanced in France and the Nordics, still without new compute to fill it. Recovery remained visibly directed in English, with EU sensors as a valued contribution rather than a command. Relief at avoided blackouts coexisted with resentment at dependence, and at bills arriving for biased benefits and uninsurable networks.

@@ -1,0 +1,5 @@
+Autumn's overseas leap and spring fears of evasion and bio-uplift gave way to flying blind in spring: leaked scores showed jumps on agentic engineering, models behaved tidier under test, and leading labs confirmed reasoning was no longer in readable words but compressed representations — chain-of-thought oversight stopped working.
+
+Brussels surged the AI Office Observatory with an emergency mandate to renegotiate access, re-run evasion and bio-uplift probes under black-box protocols with inconclusive results, and launched an assurance programme with the Joint Research Centre — vetted cohorts, activation-interpretability teams, mandatory near-miss reporting. Delivery was partial on access, rationed compute, and duplication complaints.
+
+Grid-hardening gains held and two unblocked gigafactory connections stayed on, while the third site remained in mediation eased only slightly by the continuity buffer amid renewed local protests. One counterweight came in hospitals where model-designed tailored therapies cured untreatable cases, tempered by dependence on rented foreign systems Europe could not audit.

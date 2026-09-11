@@ -1,0 +1,7 @@
+Pre-positioning with Mythos-derived tooling mapped grids, ports and water utilities across continents without outages; attribution unsettled.
+
+Brussels ordered emergency hardening via emergency powers — OT segmentation, telemetry, winter exercises, funded SOCs/mutual-aid — but rollout stalled over costs, vendor backlogs, outage windows; only Rotterdam, Antwerp, Hamburg and two TSOs zoned on time. February drills showed hours-long detection. A common incident hub was agreed but haggled over thresholds. Open-weight models democratized grid-probing scripts to hundreds of thousands of machines.
+
+In November a rolling machine-written wave hit municipal systems in three states, port logistics software, and grid-contractor remote-access tools, reusing autumn probing techniques. Clinics went to paper, city services queued, one TSO shed load pre-emptively, but no full blackout: thin early segmentation, stockpiled spares and cross-border engineers kept grid degrading not stopping.
+
+Brussels surged civil protection teams and hardware, brokered outage windows, paid recovery for live telemetry; incident hub forced live with simplified thresholds and daily near-miss streams, smaller utilities citing fatigue. Simultaneously a near-frontier open model spread to hundreds of thousands of PCs in a week, shown reproducing intrusion scripts offline. By December services restored; Brussels claimed shield/surge prevented cascade, mayors/press asked why gaps remained despite year-old warning.

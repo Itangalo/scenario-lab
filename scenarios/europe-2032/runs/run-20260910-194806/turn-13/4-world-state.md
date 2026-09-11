@@ -1,0 +1,10 @@
+### Rationed, bypassed, disgraced
+Autumn brought two letters from outside and one judgment from inside, and together they closed the year.
+
+The first was about chips and models. Washington tightened licences again, and this time the rationing did not stop at adversaries. Allied buyers were put on quarterly volume allocations, with frontier systems available only through approved clouds. For European hospitals, utilities and factories already running degraded, it meant delays for replacement accelerators and quiet throttling of American services. Ministers chose not to protest in public. In private they were told Europe would be informed of allocations after they were set.
+
+The second was the limited Washington-Beijing understanding on weights security, escalation risks and certain biological design tools. Verification was thin but real, and global capability growth eased a notch. Brussels was not at the table, was not consulted, and was briefed afterwards. Officials put a brave face on it — a floor under the race helps everyone — but the press read it as confirmation: the rules were now written elsewhere.
+
+At home, the courts delivered the harder blow. An ombudsman and then judges found that an automated system used in benefit eligibility and fraud flagging had systematically cut off thousands of vulnerable households. The system had never been listed as high-risk under the 2024 categories; every deployment step had been lawful. Papers called it lawful harm. Talk shows replayed caseworkers clearing a queue in seconds per file, logs full and never read.
+
+The shared telemetry feed kept working. Seconded analysts and hospital labs exchanged warnings, supervised patches inside certified sites shortened outages, water and dispatch stayed running. But nothing was built, no hiring round reopened, blockades held, spares thinned further. Relief curdled into resentment: protected, but stuck, rationed, and now shamed by its own systems.

@@ -1,0 +1,7 @@
+Late-autumn audits had found state-scale pre-positioning in European and other grids, a port and water utility using tooling adapted from a public frontier model — left dormant as a demonstration — while U.S. cutoff of the leading American model for European users forced emergency fallback to slower European models. The Commission launched a Critical Systems Shield for power, ports, water and hospitals, shifting digital/AI funds and prioritizing French/German grids while protecting lithography supplies.
+
+In March open weights for a newest-class frontier system were published and massively downloaded, including by actors behind the grid-mapping tooling, putting that capability permanently outside licensing and confirming Brussels' worst assumption.
+
+Shield implementation was uneven: joint audits and visible segmentation of French grid controls and backup drills in two corridors, but elsewhere stalled over downtime costs, payment disputes pushing deadlines to autumn, and two large health ministries refusing to leave U.S. systems. European fallback kept services alive amid complaints.
+
+In May a member state broke ranks with its own cheaper U.S. hyperscaler cloud/model deal, seen as defection from common procurement; the Commission avoided sanctions, offering bilateral compute and Shield funds without success. Gigafactory permits and tech-package clearance crawled forward, lithography leverage held, and a small Evaluation Cell began hiring in the AI Office — too late for spring but a start toward independent evaluation.

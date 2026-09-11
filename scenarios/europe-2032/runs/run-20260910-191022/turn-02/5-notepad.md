@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t2: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Grid and Essential Services Shield −3, EU Essential Services Continuity Stack −3, priority −1 = −13
+PROPOSAL BONUS: EU Essential Services Continuity Stack (cat 9, large) +5 — eu_frontier_access_denied landed this turn hitting hospitals/ministries and this answers it directly
+LEGITIMACY LENDS: capital 25, sentiment 27 -> none, capital lower - wait sentiment above capital after charge, but compare start? Using current: capital 25, sentiment 27 -> +? rule: public_sentiment above eu_political_capital +1 to +2, never past sentiment. Included in capital calc? Applied as +1. Corrected capital 25 includes +1 lend.
+SOVEREIGNTY: 21 last turn, no capacity event? No - eu_frontier_access_denied t2 −2, no finish +0, capability rose 2.0 −1 = 18

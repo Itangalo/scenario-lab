@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t3: M1 InvestAI Gigafactories −3, M2 Tech sovereignty package −3, M4 EU Frontier Evaluation Office −3, M5 EU Deployment Pause Trigger −3, priority −1 = −13
+PROPOSAL BONUS: EU Deployment Pause Trigger (cat 3, large) +3 — discontinuous jump this turn with safety at 30 and open weights at 50.5 after autumn intrusions answers it directly
+LEGITIMACY LENDS: none — capital 33, sentiment 38, comparison after other terms but charge line self-dating; capital lower here reflects post-charge level, no lend applied this turn
+SOVEREIGNTY: 20 last turn, no capacity event, Gigafactories in flight +0, capability rose 4.0 −1 = 19

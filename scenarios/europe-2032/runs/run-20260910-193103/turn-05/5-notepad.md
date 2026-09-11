@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t5: M1 InvestAI Gigafactories −3, M2 Tech sovereignty package −3, M5 EU Entry into Joint Cyber-Bio Response and US-China Safety Accord −2, M6 EU Transatlantic Continuity and Diversification Pact −2, priority M1 −1 = −11
+PROPOSAL BONUS: EU Transatlantic Continuity Pact (cat 8, small) +3 — tiered rationing elected this turn and eval anomaly leaked this turn, this answers both directly
+LEGITIMACY LENDS: capital 14, sentiment 25 -> +2 [applied after charge/finish/event terms, capped by sentiment]
+SOVEREIGNTY: 16 last turn, no category 4 finish, no capacity event, Gigafactories in flight +0, capability rose 3.0 −1 = 15

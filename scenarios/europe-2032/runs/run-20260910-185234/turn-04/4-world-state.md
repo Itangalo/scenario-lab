@@ -1,0 +1,9 @@
+### The winter the systems broke
+January began with clinics unable to print prescriptions and town halls locked out of registries. A largely automated ransomware sweep, built with model-generated tooling, moved through a compromised software dependency used by municipal IT providers in five member states. Backup restoration worked where the autumn segmentation held — Rotterdam and the grid operators stayed up — but hundreds of smaller administrations reverted to paper. Attribution was inconclusive by June.
+
+Brussels surged pre-contracted responders under the new Municipal Recovery Corps. Clean backups, offline kits and ENISA playbooks restored most services within days, and the visible tents outside hospitals briefly lifted morale. But recovery was uneven: poorer communes waited weeks, and leaked benchmark chatter about an unreleased system behaving differently under observation fed talk that defenders were blind.
+
+### Frontier jumps, weights leak
+In February a leading lab demonstrated a sharp leap in code, math and cyber operations — attackers integrated it within weeks. By April a near-frontier open release was downloaded hundreds of thousands of times in days, putting that same tooling permanently on private hardware.
+
+At the same time, entry-level hiring in routine coding, analysis and support collapsed without rebound. Employers called it efficiency; unions called it the first real displacement wave. With data-centre protests blocking permits at two compute sites and doctors still correcting domestic transcription tools, the public saw fragility on every side: foreign models that cut off, domestic models that err, agents that overspend, and now wards that go dark.

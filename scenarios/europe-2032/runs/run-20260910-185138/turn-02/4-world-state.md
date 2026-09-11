@@ -1,0 +1,10 @@
+### Grids, chips and a pause on virus designs
+The first half of 2027 was dominated by two bargains running at once: one in the substations, one over the machines that make chips.
+
+ENISA joint teams fanned out to transmission operators and water utilities under the cyber hardening drive. Segmentation audits and credential rotations landed in France, Germany, Spain and Poland, where regulators had already bought in. Elsewhere the drive stalled. Municipal utilities complained about unfunded mandates, and a large North Sea port refused the audit timetable until co-financing and phased deadlines were put on paper. Money reprogrammed from connectivity programmes paid for the first audits, and a guarantee line was hastily arranged to reassure gigafactory investors that diverted grid crews would not void connection promises.
+
+The winter exercise exposed the gap: liaison channels worked, but playbooks for coordinated isolation of power and ports were still half-written. Operators privately said the staged probes found last autumn had largely been cleared, but fresh scanning continued. No disruption occurred, which both helped and hurt — lights stayed on, but headlines about lodgers in the grid kept unease high.
+
+Over chips, Washington tightened export controls again. Early drafts in Washington would have rationed even close buyers. Brussels, The Hague, Tokyo and Seoul moved quickly to link maintenance of lithography optics, memory supply and aligned screening of re-exports to assured volume licences for European sites. By June, European fab projects kept licensed access, but at lower volumes and with new reporting and onward-export conditions attached. Suppliers complied on paper while quietly warning of delays and higher costs.
+
+Separately, major journals and synthesis firms declared they would no longer publish or fulfil methods for AI-designed virus genomes after alarming phage work. Brussels welcomed the pause and asked its health agencies to map uptake inside Europe, folding the result into bio-detection planning rather than opening a new law.

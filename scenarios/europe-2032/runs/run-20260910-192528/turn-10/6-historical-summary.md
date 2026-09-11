@@ -1,0 +1,5 @@
+Automated sweep hit municipal IT, hospitals and grid operators; ransomware locked portals in dozens of towns, three regions fell back to paper, attribution cited model-generated tooling.
+
+Backstop towns with drilled offline playbooks degraded not stopped: paid continuity teams ran isolation triage and used sequencing stocks; undrilled sites frayed. Brussels funded response under civil-protection/network-security powers, ENISA triage playbooks, extended co-funding for cyber-isolation drills, tied rebuild to drilled isolation proof and limits on autonomous agents buying resources. Vendors signed amid grumbling; finance ministers confirmed public backstop as sole cover with commercial AI-intrusion exclusion permanent.
+
+Open downloadable model remained unrecallable, overshadowing containment. Cheap US cloud continued under black-box reporting; no push for internals; side compute deal persisted. Office automation resentment and entry-role shrinkage continued; compute sovereignty stalled with unfitted shells. Brussels steadied modestly but public mood falling, limited political room.

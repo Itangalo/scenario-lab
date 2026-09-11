@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t2: M1 InvestAI Gigafactories −3, M2 Tech sovereignty package −3, M3 EU Critical Systems Shield −3, M4 EU Assurance and Weight-Security Cell −2, priority M3 −1 = −12
+PROPOSAL BONUS: EU Assurance and Weight-Security Cell (cat 5, small) +2 — autumn grid/port micro-probe intrusions last turn and capability-financing strain, this verifies Shield baselines and vets hosting claims directly but small size limits value
+LEGITIMACY LENDS: capital 25, sentiment 38 -> +2
+SOVEREIGNTY: 21 last turn, no category 4 finish, Gigafactories in flight +0, emergent_sovereign_hosting_offer t2 +2, capability rose 3.0 −1 = 22

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Economic Constraint violated: The narrative describes the creation of a \"new continuity corps\" and emergency funding for mirroring joint telemetry onto European-hosted feeds, but no funding source is identified for these expenditures. The political capital increase (from 23.0 to 32.0) implies significant resource mobilization, yet the notepad shows only a +3 proposal bonus and no indication of budget reallocation, borrowing, or prior accumulation sufficient to justify such a jump. This violates the requirement that capital expenditures have identified sources.\n- Metric Rule 9 violated: `eu_political_capital` increases by 9.0 points (from 23.0 to 32.0), which is within the 25-point cap, but the jump is inconsistent with the narrative and notepad inputs. The notepad shows only a +3 from a proposal bonus and no legitimacy lend, meaning the +9 increase lacks sufficient justification under the metric rules. While the narrative describes a response to a crisis, it also reports stalled cooperation, lagging hiring, regional refusals to share data, and eroded trust—conditions that would typically suppress or offset gains. A net +9 under these conditions suggests an implausible uncoupling from negative real-world friction, especially without a named priority or high-cost measure completion.\n- Narrative violates Constitutional Constraint #8 (No telegraphing): The phrase \"the sweep defenders had rehearsed for\" implies foreknowledge of an event that was not previously indicated, suggesting the narrative is retroactively establishing preparedness for a known threat. This telegraphs that an event gate was open or expected, which belongs in event evaluations, not the narrative."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

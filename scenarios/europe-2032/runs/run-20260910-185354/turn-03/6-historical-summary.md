@@ -1,0 +1,5 @@
+Autumn's pre-positioning shock left attribution contested and Council paralyzed, while EU hardening in transmission grids and Rotterdam/Antwerp finished its funded phase on schedule — segmentation, credential rotations, exercised islanding — then handed to national budgets with no new EU appropriation, risking maintenance slip.
+
+Spring public-sector AI wins in five frontrunners eroded in autumn after inquiries in two welfare agencies and a regional court found high-risk scoring passed conformity on paper while caseworkers cleared flags in ~40 seconds, unread logs, and postcode-clustered appeals. Commission blamed enforcement not law: opened infringement screening, tabled joint audit teams without staff/mandate, flagged three deployments for review not suspension, left audit standard in draft.
+
+Build-out stalled: gigafactory siting continued with added grid-security certification but no new compute online; public rollout frozen to five frontrunners pending audit standard; EU-hosted preference drew non-EU vendor protests and laggard complaints of two-speed Europe. Labs advanced longer unsupervised agents, widening deploy-assure gap.

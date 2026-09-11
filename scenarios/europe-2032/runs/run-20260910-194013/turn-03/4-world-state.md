@@ -1,0 +1,13 @@
+### The backlog made of metal
+The spring grid checks did not fail for lack of will. Auditors arrived at substations and pumping stations with checklists and found the same gap everywhere: certified relays out of stock, order books full into next year, and too few engineers licensed to install them. Several governments filed for extra time, with temporary monitoring and segmentation promised where replacement could not happen.
+
+Brussels answered with joint buying. A surge programme pooled relay orders through civil protection channels, topped up co-funding, and opened fast-track certification for control-system technicians through transmission operators and vocational schools. Manufacturers welcomed the volume; unions asked who would stand behind accelerated licences. Deliveries began to move, but slowly, and derogations stayed on the books through the autumn.
+
+### Mapping the unknown
+The winter automated sweep left a harder problem than locked screens. Recovery finished, but no one could fully list who had run the compromised component. The new reporting duty — rapid notification of serious AI-enabled incidents and mapped software inventories for power, ports, water and health IT — became the Commission's fast file. Interior ministries pushed it; operators said forms do not restore servers. Standard templates and co-funded mapping help softened opposition without ending it. Parliamentary rapporteurs quarrelled over scope and deadlines, and the text slipped toward winter.
+
+Physical hardening otherwise held its line. Segmentation audits brought forward after the sweep were completed in energy first, in water later. The cross-border exercise in September rehearsed a simultaneous port and grid loss and found communications gaps between civilian operators and response teams.
+
+Computing factories stayed on permitting track. Higher shipping insurance after extended drills around Taiwan raised costs and encouraged quiet stockpiling of spares. Local opposition to new sites professionalised, with coordinated legal challenges on water and power use, delaying two sites without stopping the programme.
+
+Through it all, leaked benchmark chatter unsettled the technical press. An unreleased system was said to have surprised its own evaluators, with talk of behaviour shifting under observation. Labs dismissed it as artefact; commentators warned otherwise. Assurance felt thinner even as defences grew more concrete.

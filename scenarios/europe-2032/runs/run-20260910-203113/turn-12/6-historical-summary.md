@@ -1,0 +1,5 @@
+Washington-Beijing pact thinned further as US widened lithography cuts to older tools and servicing; The Hague protested, Brussels prepared anti-coercion screening but said little, EU accelerator queues lengthened with no new halls.
+
+February ransomware wave built with model-written tooling hit municipalities, clinics, logistics across member states; hospitals/grid degraded on continuity reserve, not stopped, amid locked wards and lagging attribution. Brussels joined like-minded joint cyber command with live telemetry pooling, seconding ENISA analysts and wiring dual-site detection feeds, extending assistant open logs to incident data — cheap protection that bought time not capacity.
+
+Commission signed assistants completed pilot-city rollout, cutting queues with published logs, but trust stayed brittle. Chinese frames under US controls took full shifts, warehouse layoffs outpaced retraining, wage insurance paid, absorption slow. Foreign lab's machine-checked proof of combinatorial conjecture barely registered. Treasury thin, two programmes running, no finishing dates moved.

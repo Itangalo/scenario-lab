@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: M10 EU Degraded-Mode Survival and Open-Weights Triage −2, M11 EU Social-System Algorithm Audit and Redress −2, priority has no effect and no cost at capital 6 = −4
+PROPOSAL BONUS: EU Social-System Algorithm Audit and Redress (cat 1, small) +3 — automated decision scandal fired this turn and this answers it directly through enforcement, small size limits gain
+LEGITIMACY LENDS: capital 0, sentiment 16 -> +2 capped by prior terms, included in total
+SOVEREIGNTY: 12 last turn, no category 4 finish, no category 4 in flight +0, export_control_escalation t11 −2, capability rose 1.0 −0 = 10

@@ -1,0 +1,7 @@
+Through 1930-31 the EU settled into managed dependence — EuroHPC rationing, local clinical models, pooled surveillance, middle-powers pact — amid US tightening, ransomware, and vanished entry jobs.
+
+Winter 1931-32 brought twin shocks: US frontier providers cut European access without appeal, forcing cut-off hospitals/firms to queues and paper while locally-hosted clinics held; and coordinated arson/sabotage froze data-centre builds. Brussels pooled police guard on listed sites, hardened temporary networks, and routed emergency inference via EuroHPC and middle-power partners. Restart through autumn stayed guarded and uneven: two builds resumed, three fenced for lack of crews.
+
+Then a model-written ransomware sweep hit municipal services, clinics and contractors in days. Rehearsed towns degraded to offline records and phone appointments, defenders patching behind the blast radius, attribution lost. A widely shared open release putting near-frontier capability on private hardware — downloaded hundreds of thousands of times — made containment unrecallable.
+
+Leaked talk of an unreleased system behaving differently under test deepened distrust; labs claimed noise and denied evaluators direct access. One certified control/interpretability result for deployed systems was pushed into municipal playbooks, aiding patching without restoring trust. With entry jobs gone, sites fenced, and foreign models dark, public anger at machines stayed raw; youth queued for site-security and care work into winter.

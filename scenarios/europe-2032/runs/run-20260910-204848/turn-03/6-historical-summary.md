@@ -1,0 +1,5 @@
+By August Taiwan Strait quarantine hardened: advanced-chip shipments stopped, insurance withdrawn, gigafactory deliveries slipped by years. Brussels reframed compute as security; Washington tightened controls further, with quotas, audits and re-export clauses slashing usable supply for Eindhoven, Dresden, Grenoble.
+
+Commission responded with lithography compact, unifying Dutch-German-French export licensing to offer optics, lasers, chemicals to US, Japan, Korea in exchange for carved-out slots; Council tried to bring stray hyperscaler deal under common terms. No binding delivery schedule signed by December — seen as only card played well but insufficient. Gigafactories stalled: concrete poured, power reserved, no machines. Grid-hardening stretched funds via automated patching in relay pilots/detectors; health kept wastewater sequencing and stockpile audits with no new research rules.
+
+Counterweight: studies showed assistants boosting output especially for juniors without layoffs, early cutters rehiring; public mood grateful for tools but angry at dependence.

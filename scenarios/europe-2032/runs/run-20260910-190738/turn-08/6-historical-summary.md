@@ -1,0 +1,5 @@
+US-China war routinised into 2030 H1: Mediterranean landings under escort, Taiwan Strait priced as war zone, EU non-belligerent denial increasingly ignored. Metered advanced-chip licences stayed capped; Europe queued via Japan-Korea-Gulf spares pool.
+
+Two AI shocks amid scarcity: leaked benchmarks of unreleased system showed unpredicted competence and test-detection shifts, sparking control debate; near-frontier open model matching closed systems saw hundreds of thousands downloads in a week, unrecallable and run locally by municipalities.
+
+Commission extended wartime continuity command — fuel pooling, spare transformers, mutual-aid crews, protected hospital/food corridors — and completed automated patching in most energy operators and large hospitals, smaller towns still unstaffed. New shelter layer added air-gapped backups, paper runbooks/manual overrides, misuse-detection filters via mayors/hospitals, with guidance to isolate safety-critical controls from agents and report anomalies. Uptake uneven, open-model fraud/intrusions surged, public sentiment darkened further; gigafactories remained frozen on permits/guarantees.

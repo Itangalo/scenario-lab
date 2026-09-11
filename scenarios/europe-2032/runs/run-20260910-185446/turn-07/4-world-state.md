@@ -1,0 +1,10 @@
+### Holding pattern
+July to December 2029 was defined by waiting. In Brussels, no one wanted to stake a new instrument before Washington published its final tier terms, and with budgets tight and cohesion thin, caution prevailed over initiative.
+
+The first concrete build finally landed. The initial InvestAI gigafactory sites — long prepared, long delayed — reached formal completion, with power reserved, halls fitted and first racks installed. Ministers cut ribbons and spoke of sovereignty regained. In practice operators admitted the capacity was modest: enough to host essential workloads and fallback models, not to replace the cut-off American systems. Keeping sites warm had worked; forcing the two frozen expansions had not been tried.
+
+Trade work stayed alive but narrow. The examination file on extraterritorial servicing refusals grew thicker in DG TRADE, The Hague implemented its maintenance-guarantee mandate without testing American licences, and the offers to Tokyo and Seoul were kept open with promises of investment-bank cover. Japanese and Korean counterparts remained polite and non-committal. The coalition survived as contacts and a secretariat, not as leverage.
+
+Continuity work inched forward. Health and digital authorities inventoried exposed hospital, ministry and logistics uses and pushed fallback to European-hosted open models with manual procedures. Money earmarked for transmission operators and large ports awaited budget clearance and was not disbursed. The hardening law stayed in trilogue over deadlines and audit powers. Municipal cases over billed-but-unperformed checks remained under review, with no trials opened.
+
+Public mood stayed anxious and sceptical. Assistants boosted office productivity without layoffs, and passive bio-detection was tightened after the contested genome paper, but the February cutoff — hospitals and ministries refused by location — still defined the half-year. Life-support held; recovery did not begin.

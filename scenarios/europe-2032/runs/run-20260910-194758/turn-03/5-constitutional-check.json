@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: `eu_political_capital` dropped from 28.0 to 15.0 (a decrease of 13.0 points) in a single turn. While political capital can decrease, the drop exceeds the hard cap of 25 points maximum movement in one turn (Constitutional Constraint #9). Although the rule permits up to 25-point moves, this specific drop is not inherently invalid due to size, but further scrutiny reveals that no single event or combination in the narrative justifies such a large depletion. The Game Master's Notepad shows a Portfolio Charge of −14 and a Proposal Bonus of +3 and Legitimacy Lends of +2, implying net change of −9, yet the actual metric moves −13. This discrepancy suggests an unexplained additional −4 loss not accounted for in the stated terms, violating the requirement that metric movements be traceable to defined rules and events (Modelling Choice #7 and Constraint #9).\n- Regulatory Constraint violated: The narrative describes the \"EU Evaluation Access and Anomaly Triage Cell\" as being stood up and producing an interim note within the same turn, despite being a new measure introduced in this turn. This violates the minimum time lag for implementation: even low-cost measures require at least one full turn from proposal to full effect (Modelling Choice #6). The cell may be initiated, but cannot have produced a substantive output like an interim triage note within the same turn without violating realistic regulatory capacity development timelines."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,11 @@
+### The jump no one can use
+Autumn brought a sharp, narrow leap. A new system demonstrated startling skill in code, maths and intrusion work, and hospitals and grid operators saw probing change within weeks. General competence moved little, but what an attacker could do with assistance moved a lot. Leaked test notes about strange behaviour on an unreleased model fuelled a louder argument about control, without settling it.
+
+At the same moment, money left the sector. Valuations fell hard, several announced data-centre expansions were cancelled rather than delayed, and private pledges tied to the Union's gigafactory pipeline had to be stretched and rescheduled. The first sites still poured concrete — the flagship build programme formally closed this half — yet suppliers and lenders priced every next phase higher.
+
+### Edges exposed, centre patched
+The defensive rollout also closed, and frontrunners felt it: automated patching stayed live, islanding drills passed, ports stayed up through a wave of scans. Beyond them, little spread. The same stretched teams carried both construction and hardening, procurement of locally hosted systems stayed frozen pending a court ruling, and grid-connection queues grew.
+
+A published study suggesting non-experts could reach pathogen design with model help rattled health ministries, even as methodologists quarrelled over it. Brussels proposed in response an Edge Resilience and Bio-Detection Surge: backup care links, offline copies and rapid sequencing kits for lagging municipalities. The proposal was tabled and scoped this half through existing contracts, but staffing, procurement clearance and funding reprogramming are not yet in place. No surge deliveries occurred this turn; deployment and any resilience effect will follow in later turns once contracting and secondments complete.
+
+Washington tightened chip and model controls again, and kept allies on licensed volumes while cutting others off — but only through slow queues and audits. A member state broke cover with its own hyperscaler arrangement on cheaper non-common terms, defended as pragmatism and read as a crack in the common line. The Commission ring-fenced the deal and refused volume promises outside the joint compact, holding fragmentation to one case at the cost of open recrimination.

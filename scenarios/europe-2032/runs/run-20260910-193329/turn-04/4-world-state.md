@@ -1,0 +1,10 @@
+### The attack and the waiting list
+Spring began with frozen screens in town halls. A largely automated ransomware sweep, built with model-generated tooling, moved through municipal IT, local health networks and two regional service providers. Email, appointments, benefits payments and building permits went down for days in dozens of cities. National responders said the entry point was a compromised managed-service update; the blast radius was unclear for weeks.
+
+ENISA-led teams deployed under emergency procedures with clean backups, segmented restores and the automated patching and swarm-detection tools from the autumn hardening cycle. Containment worked unevenly. France and parts of Germany restored core registries within days; smaller municipalities in Spain, Italy and Eastern Europe waited weeks, relying on paper processes and cross-border mutual-aid staff. Operators admitted the new detection helped but was tuned for grid and port systems, not for fragmented municipal networks.
+
+The fallback stack creaked. EuroHPC-hosted open models kept triage and administrative work running, but clinicians complained of slower, error-prone summaries. A hospital group spoke of a near-miss in medication triage; regulators opened a file but confirmed no proven harm, only rumour amplified in press coverage.
+
+Against this, Brussels pointed to tangible wins elsewhere. Two ministries published audited figures showing backlogs cut and permit decisions falling from months to days on European-hosted systems. The contrast — visible benefit in showcase services, visible strain in attacked ones — defined public mood.
+
+Gigafactory and technology package work continued on public-bank money, with private co-financing still absent. Trade officials kept allied hardware flowing but won no restoration of the lost American frontier model. Voters credited improvisation, not foresight, and mayors demanded permanent funding for local cyber hygiene.

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t3: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Critical Systems Shield −3, EU Care Continuity Stack −2, EU Loss-of-Control Containment Protocol −2, priority −1 = −14
+PROPOSAL BONUS: EU Loss-of-Control Containment Protocol (cat 6, small) +4 — loss_of_control_incident landed this turn and this answers it directly
+LEGITIMACY LENDS: capital 20, sentiment 25 -> none, capital lower calculation after other terms but sentiment comparison uses start? capital 37, sentiment 30 -> none, capital higher
+SOVEREIGNTY: 18 last turn, no capacity event, no cat4 finish, in flight +0, capability rose 3.0 −1 = 17

@@ -1,0 +1,5 @@
+Autumn 2031 brought no collapse and no relief: border testing tents, paper wards and double shifts continued, with EuroHPC-rationed open models sustaining triage, dosage and freight rerouting but without frontier capability.
+
+Washington placed leading US labs under direct federal control — security in training runs, weights as defence articles, foreign access ministry-to-ministry on US terms. Brussels did not contest legality, sought narrow health/critical-service continuity, started no new build; grid-hookup freezes for empty compute fields stayed in court.
+
+A contested preprint claimed a genome model produced a viable human-infecting organism design approachable by non-experts; methodologists attacked it, biosecurity experts did not dismiss it, AI Office logged it without evaluation capacity. A US AI-enabled low-cost solid-state storage route promised cheaper batteries in two years with no European licence. Two regions cut waiting lists with domestic triage assistants, but graduate hiring freezes persisted and extended naval exercises around the strait raised shipping insurance.

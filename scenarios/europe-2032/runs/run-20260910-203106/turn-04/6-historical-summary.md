@@ -1,0 +1,11 @@
+Pre-positioning with Mythos-derived tooling mapped grids, ports and water utilities without outages; attribution unsettled.
+
+Brussels ordered emergency hardening — OT segmentation, telemetry, winter exercises, SOCs/mutual-aid — but rollout stalled over costs, backlogs, outage windows; only Rotterdam, Antwerp, Hamburg and two TSOs zoned on time. February drills showed hours-long detection. A common incident hub was agreed but haggled over thresholds. Open-weight models democratized grid-probing scripts.
+
+In November a machine-written wave hit municipal systems in three states, port logistics, and grid-contractor remote-access, reusing autumn probes. Clinics went paper, one TSO shed load pre-emptively, but no full blackout: thin segmentation, spares and cross-border engineers kept grid degrading not stopping.
+
+Brussels surged civil protection/hardware, brokered outage windows, paid recovery; hub forced live with simplified thresholds and daily near-miss streams. A near-frontier open model spread to hundreds of thousands of PCs, shown reproducing intrusion scripts offline. By December services restored; Brussels claimed shield/surge prevented cascade.
+
+Winter respite failed: in February automated ransomware sweep hit municipal clouds, hospital admin and port software in six states using machine-generated kits linked to December open models. EDs open but billing/appointments/logistics slowed weeks; attribution lagged.
+
+Shock forced action: segmentation outage windows granted, hub went pilot to mandatory — TSOs, major ports, municipal clouds streaming daily serious near-misses to ENISA/CERT-EU. Brussels joined pooled attribution/telemetry-sharing command for funded signatures and surge teams in exchange for binding real-time sharing and standing investigation mandate including bio sample-sharing. Two governments demanded paid SOC upgrades/recovery guarantees over grid telemetry abroad; smaller utilities protested duplicate reporting, filed late/partial. AI Office re-testing of leaked benchmark stalled for lack of model access. Copycat extortion flickered. By June stable, cross-border signatures blunted probes; Brussels claimed surge-plus-alliance prevented cascade, voters remembered queues.

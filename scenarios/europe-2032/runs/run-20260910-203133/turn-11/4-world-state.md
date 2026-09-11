@@ -1,0 +1,11 @@
+### Rationed life under attack
+The second half of 2031 broke the quiet. In autumn a large, largely automated assault swept public services in several member states — locked municipal systems, a poisoned software update whose spread took weeks to map, brief degradations in power and hospital scheduling. Nothing collapsed outright. Segmentation, backups and joint monitoring held, but recovery was slow, manual, and public. Attribution remains open. Operators said privately the tooling felt new.
+
+It was. In the same months a leading American lab showed a sharp leap in machine coding, mathematics and intrusion work. General ability moved little, but what an attacker could automate changed within weeks. European defenders, still running older licensed systems with wider safety margins, absorbed the wave but described the margin as gone.
+
+### Small balms, larger geometry
+Two softer stories cushioned the blow. A new technique for reading and steering model behaviour spread quickly among European hospitals, customs offices and grid operators, making degraded deployments more predictable. Offices kept reporting the same pattern: juniors producing far more, firms rehiring after early cuts, work getting denser rather than disappearing. A few public projects — shorter waits for permits in two cities, faster triage sorting — were credited locally to European choices.
+
+Brussels spent the turn holding together rather than building. No new fund was proposed. Emergency power for the empty shells in Spain and the Netherlands was again refused to avoid a rupture with mayors threatening votes. The liaison team kept trading screening records and old intrusion telemetry through Japanese and Korean channels for licence continuity.
+
+The one shift was outward. After months of quiet work, the Union signed a practical coordination pact with a group of middle powers holding fibre, chips, minerals and evaluation capacity: aligned export paperwork, joint bargaining for compute, shared testing. Nobody ceded control, but together they could withhold things even great powers need. In Brussels it was read as the first time in years that access had been secured rather than rationed.

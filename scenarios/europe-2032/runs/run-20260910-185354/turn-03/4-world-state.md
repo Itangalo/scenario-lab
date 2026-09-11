@@ -1,0 +1,13 @@
+### The queue at forty seconds
+Autumn brought the inquiry report no one in Brussels wanted. In two welfare agencies and a regional court system, an ombudsman and then a judge found the same pattern: risk-scoring and eligibility software classified as high-risk had passed its conformity checks on paper while caseworkers cleared flagged files in under a minute, oversight logs piled up unread, and appeals clustered among the same postcodes for months before anyone looked.
+
+The Commission chose its reading quickly: the law was sound, enforcement had failed. Infringement screening was opened on paper, and a proposal for joint audit teams with market-surveillance authorities was tabled, but staffing and cross-jurisdictional mandates were not in place. Recruitment and secondments slipped into next year, three deployments were flagged for review rather than suspended, pending proof of meaningful human review and redress, and the new audit standard remained in draft.
+
+It contained the legal damage without containing the politics. Evening talk shows replayed claimants describing automated rejections; newspapers printed the forty-second average. Trust built up in spring around hospitals and permit offices eroded as the same phrase — European AI — now covered both.
+
+### What held, what slipped for lack of funding
+The grid and port hardening finished its funded phase on schedule. Segmentation in transmission control rooms, credential rotations and exercised islanding plans were handed to national budgets, with no new EU appropriation identified given falling political capital and public support. Operators reported a quieter half-year, but auditors warned maintenance would slip without EU staff and funding, and parts of the upkeep were deferred.
+
+Underneath, the build-out stalled sideways. Siting work for the gigafactories continued, grid-security certification added to the queue, and no new compute came online. The public-services rollout was deliberately frozen to its five frontrunners, dashboards still publishing, wider procurement paused until the new audit standard lands. Vendors from outside the Union protested the preference for EU-hosted inference; laggard regions protested the two-speed pause.
+
+Laboratories did not pause. Agents took on longer administrative and coding workflows with less supervision, widening the gap between what could be bought and what auditors could explain.

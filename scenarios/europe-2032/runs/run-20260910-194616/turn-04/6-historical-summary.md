@@ -1,0 +1,5 @@
+Winter brought the rehearsed automated sweep across municipal and health networks with hourly-changing tooling and lagging attribution; postponed care, dark portals, and islanded substations recurred, but completed Cyber Shield segmentation, ENISA/CERT-EU triage, and French-German-Polish repair pools kept power and hospitals degraded not stopped.
+
+Mid-crisis, leading foreign model access was withdrawn for EU users, forcing scramble to EU-hosted models and partner quotas, while one capital's side compute deal undercut the common line and stalled joint procurement. Partial offsets: a working interpretability result adopted for forensics, and invitation to a joint command and biosurveillance pact pooling telemetry from states hit by the same incident class.
+
+Industrial dependencies remained unresolved — gigafactory financing stalled, chip-tool licensing still draft, Hague export cuts stood, no assured US compute — amid bitter public mood over fraud, outages, and dependency.

@@ -1,0 +1,13 @@
+### Cut off
+In August the keys stopped. Hospitals in Lyon, ministries in The Hague, firms in Milan that had built workflows on the leading American model found queries refused, contracts suspended without reason or appeal. Procurement officers who had counted weekly allocations now counted outages. DG Trade's single demand schedule became a triage list.
+
+The fallback held, after a fashion. Islanded health and administration systems on European-hosted open models, kept alive by HERA, the Commission's IT arm and the cybersecurity agency, absorbed the load. Clinicians worked slower, with blunter tools, but they worked. Where the fallback could not substitute, care was rationed and files queued. Monitoring was degraded but continuity was preserved — readable chain-of-thought was gone, yet black-box tests, activation probes and islanded controls kept a thin safety capacity alive, with only modest erosion of assurance.
+
+### Opaque minds, tailored cures
+Two other shocks arrived together. The frontier labs' best models no longer reasoned in readable words — the internal representations that worked best never were words. Chain-of-thought monitoring, the basis for most EU assurance paperwork and pooled testing, stopped working at once. Evaluators were left with black-box tests and immature activation probes, slightly less effective than before.
+
+At the same time, tailored therapies for previously untreatable conditions reached ordinary clinics — designed abroad, on models Europe could no longer access. Procurement limited orders to what could run on accessible systems. Patients read about cures they could not get. Gratitude curdled into resentment.
+
+The gigafactory build remained stalled in site preparation. The shells stood fenced and permitted, two sites graded, no halls poured. With construction not started, the InvestAI Gigafactories measure cannot be counted as finished this turn — full effect remains distant and its completion is delayed until physical halls, power and machines are in place. The middle-power pact gave Brussels joint language for licences and a physics prize to cite, but no restored access. Paris and Berlin openly blamed foresight failure; the maverick capital quietly kept its side channel.
+
+By December, the Union was running, islanded and slower, on its own models — proof the two-year commitment had not been empty, and proof of how far it still had to go. Open models tracked frontier gains without closing the gap, and safety capacity slipped only slightly under islanded operation.

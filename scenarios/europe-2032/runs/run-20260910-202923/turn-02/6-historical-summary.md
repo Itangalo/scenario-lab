@@ -1,0 +1,5 @@
+Autumn grid/port mapping was followed by a January wave of machine-made ransomware/supply-chain attacks locking municipalities, hospitals and logistics; autumn re-segmentation and credential resets let transmission and ports barely hold, while uneven patching left other public services with slow, public recovery.
+
+Courts confirmed the AI benefits/policing system systematically penalised thousands despite passing conformity: logs unread, perfunctory human oversight, deployment lawful but in a categorical gap. Trust collapsed, restriction became cheap, welfare/policing deployments froze.
+
+Commission pushed hardening to execution with mandatory incident reporting/audits and re-audits of welfare systems; operators complied under protest, compute permitting continued for grid-control clauses. Offices saw real AI productivity gains, especially juniors, with no job losses but no transformation, straining reform budgets.

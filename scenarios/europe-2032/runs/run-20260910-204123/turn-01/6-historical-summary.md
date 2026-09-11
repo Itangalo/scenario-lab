@@ -1,0 +1,5 @@
+Intrusions discovered in transmission operators in two member states, a major port and a water utility: relays mapped and breaker credentials staged using open Mythos-class weights at state-sponsored scale. No sabotage occurred; only containment caused outages, exposing failed segmentation assumptions.
+
+The Commission launched a large resilience programme for electricity, ports and water — binding ENISA segmentation and credential standards, cross-border islanding exercises, and recovery stockpiles funded from existing investment and digital funds. French-German cost-sharing objections were eased with grid-connection sweeteners for factory zones; permitting advanced but new money had not flowed.
+
+Existing industrial zone designation and lithography export coordination continued but lost pace for lack of new funds. The earlier U.S. switch-off order was lifted and European operators obtained published access terms with evaluation rights and withdrawal notice, presented as interim cover after the U.S. confirmed no allies clause. Unconfirmed single-sourced rumours of synthetic voice fraud against banks slightly eroded trust.

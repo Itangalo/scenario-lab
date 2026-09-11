@@ -1,0 +1,12 @@
+### Holding the line without parts
+The second half of 2032 felt like operating borrowed machines with the manuals withdrawn.
+
+The containment surge paid off in the least visible way: services stayed up. ENISA-coordinated rebuilds from clean images, segmented municipal networks and paper fallbacks meant the compromised update library did not produce a second city-wide freeze. Triage screens stayed lit, portals stayed connected. Elective backlogs remained long and manual queues remained slow, but there was no cascade. Administrators quietly credited the islanded assistants where they were properly installed — permits moving in days, school pilots holding — even as insurers kept automated clinical cover off the table.
+
+Two outside shocks then re-priced that stability. Commercial humanoids moved from pilots to purchase orders. Picking, sorting, palletising and warehouse transport began to disappear into leased fleets, overwhelmingly built abroad and running foreign control software. Repair bays, care wards and messy construction sites did not follow; foremen quickly learned where the boundary lay. Logistics agencies in Rotterdam, Antwerp and Lodz announced shift cuts in the autumn, just as coding and back-office losses were still unrecovered.
+
+At the same time chip and model controls tightened again. Under Washington's country-tier rationing, allied buyers kept licences but on smaller volumes, longer queues and stricter re-export terms. For a Union already living off cannibalised clusters after the spring withdrawal of the leading American model, it meant no relief: domestic capacity covered essentials, nothing more.
+
+Brussels answered with what it could afford. A new shopfloor fund promised wage bridges, rapid retraining and employer levies for displaced warehouse workers, with apprenticeship lines ring-fenced for repair, care and site trades. The Employment Council took ownership, but money will not flow until next year, and hiring halls greeted the announcement with scepticism.
+
+The side-deal member state kept its cheap outside cloud contract, still unpunished and still resented. By December the Union was intact, upright, and angrier — protected from collapse, exposed on jobs and supply.

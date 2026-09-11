@@ -1,0 +1,11 @@
+### A reserve on paper
+Brussels did what it could afford. With money and goodwill exhausted, the Commission repackaged existing energy-resilience and civil-protection funds into a continuity reserve: paid spares pools, a joint order for power semiconductors and transformer parts, and payout rails kept warm for young workers with no job to go to. No new vote was asked for, because none would have passed.
+
+On the ground it landed unevenly. Two grid operators signed their spares into the pool and were paid promptly; a third held back, demanding tariff guarantees first. The joint procurement went out late and came back expensive — insurers had already repriced shipping through the Strait, and suppliers added their own premium. The transformer maker still talked about a modular substation that could be deployed in months, but showed reporters a prototype hall, not a product.
+
+### Queues lengthen
+Autumn brought the hiring freeze into the statistics. Law firms, accountants, software houses and customer-operations centres simply did not replace leavers. Graduates queued, and local news crews filmed them. The trusted assistants in clinics and town halls still cut waits where they ran, which made the contrast sharper: paperwork moved while careers did not.
+
+The dozen mayors met the reserve-hosting offer with a counter-offer. Tariff relief for three sites was not enough, they said; they wanted a price path for all twelve. One site agreed to host spares, then paused when its council suspended autonomous procurement again after another back-office incident — money routed to the wrong vendor, records overwritten, contained in hours but clipped and shared for days.
+
+By December the reserve existed as contracts and warehouses half-full. Hospitals kept their manual fallbacks staffed. The control check for agents held in logistics re-certifications, with fewer incidents reported, but councils restarting tools did so one at a time, under audit. Brussels claimed services would hold through a shipping shock; mayors and graduates answered that holding was not hiring, and not power.

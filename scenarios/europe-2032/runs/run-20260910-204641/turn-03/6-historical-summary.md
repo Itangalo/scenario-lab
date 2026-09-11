@@ -1,0 +1,9 @@
+Autumn grid intrusions (EU, North America, Asia) mapped relays and stole breaker credentials using tuned open models at state-backed scale; no attacker-caused outage, only defensive blackouts.
+
+In January the leading US model cut off EU hospitals, ministries and firms despite guarantees. Days later automated ransomware hit municipal services and energy/water contractors via autumn credentials; engineers re-isolated substations, causing week-long degradation.
+
+Brussels prioritized EU Critical Systems Shield: ENISA exercises with worst-hit operators; first detection kits fitted via reprogrammed funds, live isolation drills through autumn 2027. Segmentation for smaller municipals waitlisted; factory power connections frozen behind substation work amid lobby complaints and unfiled regional lawsuit threat. No second blackout in H2 2027 counted as success.
+
+Continuity Cloud moved to limited operation: reserved AI-factory inference for handful of clinical/administrative workloads on EU-hosted open models with interpretability checks; slower/narrower but working, scale limited by licence/liability fights. Gigafactory/tech package advanced only on guarantees/permits, no fresh money/engineers, sequenced after emergency work. Interpretability certification piloted, not widely adopted.
+
+By late 2027 office productivity rose (juniors strongest, no job losses), shifting bargaining to workload, but resentment over frontier-model dependence persisted. Genome-methods publishing moratorium debated, Brussels took no step beyond monitoring screening. By December Europe more stable but strained by funding four priorities at once.

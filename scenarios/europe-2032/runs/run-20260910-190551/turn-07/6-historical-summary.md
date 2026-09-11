@@ -1,0 +1,7 @@
+H2 2029 paper wards and poured concrete: slow hospital/municipal recovery vs faster Strait clock. Emergency funds for offline backups, clean images, library audits tied to patching milestones; pooled EU medical model to pilot wards for discharge/triage on domestic servers, weeks without re-infection by November, paper fallback remained; benefits re-audits continued narrow/understaffed.
+
+Japan/Korea/Netherlands work stayed mapping/technical only — spares, memory, chemical second sources, informal evaluation comparison; no agreement, no mutual recognition, no standards commitment. Brussels held demand for written next-gen accelerator coverage; Washington refused, no alignment.
+
+Gigafactory to poured foundations, accelerated permits, cohesion side-payments; one of two blocked grid links cleared at high bargaining cost, other blocked by protests/injunction/vandalism, sabotage unconfirmed; completion delayed beyond turn, only partial preparatory effect.
+
+Strait shipping insurers repriced after exercises/expulsion, lead times lengthened, allocation warnings, no cutoff but mapping urgent. Capability up: multi-day agents, cheaper offence, open models converging to prior frontier; defenders behind despite backups holding.

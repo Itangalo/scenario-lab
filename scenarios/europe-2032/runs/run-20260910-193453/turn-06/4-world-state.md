@@ -1,0 +1,11 @@
+### The night the helpdesks went dark
+In February the attack came as a double blow: a ransomware sweep across municipal systems in six member states, riding a poisoned software update whose reach no one could map for weeks. Hospital appointments, benefits payments and port logistics fell back to paper. Television showed queues and handwritten prescriptions. Defenders admitted they were behind, and that the tooling had been assembled by machines.
+
+Brussels activated what it had just joined. Police cyber units fed live traces into the pooled investigation hub, national response teams triaged under ENISA coordination, and emergency funds paid for clean backups and manual workarounds. Mayors again became the face of degraded-but-working services. Restoration was uneven — some cities recovered in days, others rationed for a month — and auditors quarrelled over who paid for the replacement components. Open-weight models continued to absorb the prior frontier gains, narrowing the gap as existing weights and tooling diffused.
+
+### Steady progress on the expected path
+Mid-spring a leading lab demonstrated a system continuing along the established capability trend: longer planning, fewer errors, stronger scores on general tests. European engineers applied the recently adopted control technique as a stopgap while the joint team tried to assess what had changed. Confidence in oversight slipped further.
+
+Washington offered little cover. The new administration took office, freezing technical talks on lithography and compute access. European officials kept screening pooled as leverage but conceded nothing, and gigafactory sites stayed fenced and empty, defended only on paper. No agreement, workaround, or supply-chain leverage was secured to offset the freeze, and its pressure remains unmitigated.
+
+By June services were limping back, but voters had seen dependence twice over: on foreign models that advanced as expected, and on foreign compute that might now be withheld. The sovereignty package remained in flight in Brussels, with permits and financing moving but cranes yet to move and full effect still turns away — it does not complete this turn.

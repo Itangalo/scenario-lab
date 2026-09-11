@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Regulatory Constraint violated: The narrative describes a new EU-level surge measure (\"EU Edge Resilience and Bio-Detection Surge\") being implemented and receiving a proposal bonus, but the Game Master's Notepad indicates this is the first turn it appears (t7 charge and bonus). Metric rule 6 (\"No measure is implemented instantly\") requires at least one full turn for low-cost measures before full effect. The measure cannot both be proposed and deliver effects (via bonus) in the same turn.\n- Modelling choice violated: The EU introduces a new measure (\"EU Edge Resilience and Bio-Detection Surge\") in this turn, but the notepad also records the completion of M1 InvestAI Gigafactories. This results in two distinct measure outcomes (one finishing, one starting with priority and bonus) in a single turn, violating Constitutional Constraint 5: \"At most one new measure per turn, and at most one named priority.\" Introducing a new measure while another finishes is allowed only if the new measure is not activated (e.g., no bonus or charge). Here, the new measure is active (has charge and bonus), constituting a second operational measure introduced in the same turn as a completion, which is invalid."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

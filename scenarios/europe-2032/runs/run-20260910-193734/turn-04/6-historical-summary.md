@@ -1,0 +1,5 @@
+By mid-2028 the EU had proof defence could work but only in pockets: automated patching and swarm-detection held on two transmission networks, a French water utility, and uniform hospital/telecom IT estates, funded by ENISA bulk licences from redirected sensor money.
+
+Wider rollout remained blocked by unchanged constraints: no new field hires/trainers, segmentation audits as gate for priority crews and co-financing, procurement disputes, and smaller municipalities receiving Continuity Reserve kits without instructors. A Rhine-style islanding drill was repeated twice; a third cancelled for staff lack.
+
+Politics softened as offices showed AI productivity gains without job losses, with early cutters rehiring, undercutting calls for labour/siting intervention. On supply, Washington tightened chip/model controls; Brussels aligned to protect gigafactory/data-centre supply, accepting dependence, licence queues for Dutch/French makers, and longer lead times for islanding-kit electronics amid Taiwan shipping risk.

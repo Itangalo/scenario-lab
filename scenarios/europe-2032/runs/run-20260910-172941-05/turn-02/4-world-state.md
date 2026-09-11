@@ -1,0 +1,9 @@
+### Tradecraft for download
+Winter brought a release that changed the arithmetic. A new open-weight model, close to the closed frontier, was downloaded hundreds of thousands of times in its first week. Security researchers quickly showed it could walk through the same intrusion steps found in the autumn grid audits. What had been an incident became inventory: permanently on private hardware, beyond recall.
+
+The timing hurt. Transmission operators were mid-way through joint detection audits ordered for spring, with sensors still being installed and exercises still on paper. The Commission's main hardening programme kept moving — auditors in substations, co-funding tied to mandatory reporting, connection priority as a carrot — but retrofits take seasons.
+
+### The sprint
+To buy time, Brussels launched a fast, small patch effort for municipalities, hospitals and water operators: pre-packaged detection rules, offline backups, emergency kits procured through health and civil-protection channels. Uptake was uneven. Large cities and university hospitals patched quickly; smaller councils lacked staff to install what arrived, and some backup kits sat boxed for weeks. A water operator in the east caught an intrusion attempt with the new rules — a visible save that officials cited often — while elsewhere phishing using the new models slipped through.
+
+Capital stayed away. The gigafactory and sovereignty plans remained in husbanding mode — permits, sites, grid reservations, shielding lithography suppliers — with no new cash to call. Local opposition to data-centre permits simmered in hearings and press columns, and a mid-size lab's talk of a safety pause circulated as rumour, neither confirmed nor acted on. Offices kept using AI assistants productively, but anxiety about dependency and fraud ticked up as news of downloadable offensive capability spread.

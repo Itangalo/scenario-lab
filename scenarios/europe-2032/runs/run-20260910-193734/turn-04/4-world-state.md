@@ -1,0 +1,12 @@
+### Pilots hold, politics thins
+The first half of 2028 gave the Union something it had lacked: proof that defence could work. On the two transmission networks and the French water utility where automated patching and swarm-detection were live, noisy intrusions kept failing. Hospital and telecom estates with uniform IT followed, closing tickets in hours that once took weeks. ENISA's bulk licences, bought with redirected sensor money, covered those sites and no more.
+
+Everywhere else the same constraints bit. Field teams were still the old teams, trainer numbers had not grown, and segmentation audits remained the gate for priority crews and co-financing. Energy ministers held the conditionality against procurement lawyers and mayors who wanted crews first and paperwork later. Small municipalities again received reserve kits faster than instructors. A Rhine-style islanding exercise was repeated twice; a third was cancelled for lack of staff.
+
+Two outside shifts reframed the work.
+
+In offices, the story changed without a crisis. Law firms, accountants, newsrooms and consultancies reported steady productivity gains, strongest among juniors, with no matching fall in employment. Firms that had cut early quietly rehired. Work was reorganised rather than removed, and with no displacement wave to point at, calls for new labour or siting interventions lost force. Pilot opposition softened where the benefit was visible.
+
+On supply, Washington tightened chip and model controls again. Brussels read the new licensing as allied buyers kept on volume licences while others were cut off, and chose alignment to protect gigafactory and data-centre build — accepting compliance paperwork in exchange for continued supply. The price was dependence made explicit: Dutch and French equipment makers faced new licence queues, lead times for islanding-kit power electronics lengthened on Taiwan shipping risk, and the quiet watch on chips became an open budget argument.
+
+By June the map was unchanged in shape but sharper in contrast: defended pockets that genuinely held, a larger estate still reachable, a public mildly reassured by office gains, and a Commission with almost no room left to push.

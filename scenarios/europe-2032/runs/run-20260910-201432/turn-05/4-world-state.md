@@ -1,0 +1,13 @@
+### The frontier pulls away
+The second half of 2028 broke the old planning rhythm. Labs released capable long-task systems in quick succession, with less explanation each time of how they were trained or why they behaved as they did. Researchers spoke privately of training loops that needed almost no human hands. In Brussels the sense was blunt: assurance work had fallen decisively behind.
+
+At the same time, machines with hands arrived as products. Logistics firms in the US and Asia confirmed fleet orders for carrying and sorting work, and defence press showed the same chassis fitted for clearance and carrying under fire, with weapons trials openly discussed. European integrators and auto suppliers, still world-class in precision metal, found the value moving into foreign control software and batteries and actuators they did not make.
+
+Washington added to the disorientation. After a campaign dominated by job fears, fraud stories and anger at data centres, the challenger won on promises of moratoriums, curbs on automated decisions in schools and courts, and transfers funded from the sector. The new team would not take office until January, but American labs already slowed hiring and paused some external partnerships while they waited for direction.
+
+### A cushion, not a comeback
+The Union finished its unity framework for external AI deals — no second breakaway contract was signed, and top-ups were tied to the joint pipeline — but claimed no more than a hold. The four factory sites in France, Germany, Spain and the joint Polish-Swedish bid stayed stalled, short of cleared accelerators and grid connections, with sporadic blockades and police lines at fences.
+
+What changed was social policy. The Employment Council pushed through a displacement cushion: wage insurance, rapid retraining money and transition funds channelled through the social fund to warehouse, logistics and supplier regions. Unions cautiously welcomed funded guarantees; mayors were offered community funds to ease siting fights. It was too early to pay out, but it gave ministers something to point to as cloned-voice scams forced banks to briefly freeze instant payments and as grid operators again rode probing attacks on degraded mode.
+
+By December, lights stayed on and the Union stayed together, but workers saw machines ordered for jobs with no retraining interval, and voters rewarded no one. The American inward turn eased immediate pressure while removing the partner Brussels had relied on — leaving a wider window, and a lonelier one.

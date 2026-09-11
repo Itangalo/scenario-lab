@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: EU Wartime Shelter and Minimum Continuity Regime −2, EU Automated Patch and Swarm Defence Rollout −2, priority −1 not charged (capital below 20, no effect) = −4
+PROPOSAL BONUS: none — new patch rollout answers defensive breakthrough (positive) not a negative shock from last three turns
+LEGITIMACY LENDS: capital 0, sentiment 4 -> none yet, capital lower but turn ends at floor
+SOVEREIGNTY: 13 last turn, no category 4 finish, no in-flight bonus, us_labs_nationalised t13 −2 (largest capacity event, export_control_escalation also qualifies), capability rose 1.5 −0? capability rose <2 so no −1 = 11? recalc to 10 with allied rationing severity = 10

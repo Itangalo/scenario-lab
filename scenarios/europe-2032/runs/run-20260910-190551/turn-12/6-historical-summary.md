@@ -1,0 +1,5 @@
+Winter 2031-32 second automated sweep hit municipalities, hospitals and grid dispatch with machine-made lures and break-in scripts; attribution open. Sites with drilled offline kits and certified clean restores recovered in days on paper, others had weeks-long public outages queuing for scarce national teams.
+
+Brussels held restraint: paid containment only on verified recovery, triage via existing coordination, paper-to-cloud kits from reprogrammed cohesion/health lines, no new mandates. Municipal corps stayed paper priority with no new capacity or sovereignty gain, finishing date unmoved; secondments only drilled where kits existed.
+
+Labs advanced code/intrusion tooling absorbed by attackers in weeks; defenders a version behind, victims found incidents. Middle-power coordination gave joint triage and capped clean-image channel amid rationed hardware. Offices kept productivity gains without layoffs, blunting crisis case. By June services held where verified, others manual; blockade/stoppage rumours unconfirmed. Public mood darkened, political standing up slightly on outward blame and verified recoveries.

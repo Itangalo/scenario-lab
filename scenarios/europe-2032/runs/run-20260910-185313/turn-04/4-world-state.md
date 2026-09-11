@@ -1,0 +1,11 @@
+### The night the tickets stopped
+Winter turned to spring with two shocks at once. Clinics and ministries still scrambling to replace the American frontier model cut off in the autumn found no route back — requests refused, emergency contacts silent. At the same time a fast-moving automated intrusion swept municipal IT, water plants and hospital admin systems in several countries. Ransomware locked appointment systems and billing, a poisoned software component forced frantic audits, and in three cities water-pressure controls tripped to manual.
+
+Defenders were visibly behind for weeks. The automated patching stack built over two years caught the attack at the big transmission operators, but the municipal layer it had not yet reached fell over. Restoration meant isolation, clean backups and rerouting — slow work on legacy controls.
+
+### Restoration first, fallback second
+Brussels surged what it had. ENISA-led teams and civil-protection mutual aid pre-positioned in the worst-hit towns, with energy and health ministers ordering grid operators and hospitals first in line for clean systems. The Continuity Reserve became the operational fallback: pooled pilot compute and EU-hosted models took on triage and document work from the cut-off wards, deliberately gated to older, tested versions while the joint testing cell sidelined the strange leaked benchmark claims as too uncertain to trust for deployment.
+
+It worked unevenly. Large hospitals in France and the Nordics restored within days and stayed on EU-hosted models; dozens of smaller utilities waited weeks for contractors and clean hardware. The capital with its separate protection contract took mutual aid only after agreeing to share incident feeds, a compromise both sides spun as victory.
+
+Meanwhile site works for new compute barely moved — money reprogrammed to restoration, permits still stuck — and researchers argued loudly over the sudden leap in code and intrusion tooling now in the wild. A new coordination framework with other middle powers on export licences and shared evaluation was signed to fanfare, but delivered no hardware this spring. News was dominated by queues, postponed procedures and fraud, and talk of dependence turned to anger.

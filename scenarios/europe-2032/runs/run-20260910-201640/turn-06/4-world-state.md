@@ -1,0 +1,13 @@
+### The spring of two shocks
+The new American administration took office in Washington promising a pause on data-centre building and tight limits on automated hiring and classroom tools. In Brussels the change was read less as ideology than as scarcity: American frontier progress would slow, and what remained would stay home first.
+
+That reading hardened within weeks. Hospitals in three member states that had clung to U.S. model contracts through resellers found access keys revoked overnight, with no explanation and no appeal channel. Triage support tools built around those models failed at the point of care. The health ministry in one large state briefly considered paying for workarounds before being told by Commission lawyers that evasion would breach the new terms.
+
+Almost simultaneously, a sweeping automated intrusion hit public administrations and grid-adjacent contractors. Backups were encrypted, a widely used management dependency was poisoned, and restoration took days in some cities and over a week in others. Forensics firms said the intrusion tooling itself had been machine-written, and that defenders had been outpaced. Attribution remained open at the end of June.
+
+### Holding the federated line
+With no money for new builds, the Commission held to repair. The Tallinn and The Hague coordination cell pushed clean machine images and round-the-clock helpdesks, moving cut-off wards onto the European federated service running hardened open models. Simple triage and appointment work stabilized; complex oncology and rare-disease support did not, and doctors said so on camera.
+
+ENISA ran segmentation and backup-restore drills drawn from the completed cyber shield work, which limited the cascade in finance and parts of telecoms but left municipalities and hospitals exposed. Brussels accepted an invitation to join a joint attribution and telemetry-sharing command with other states hit by the same campaign, selling it at home as mutual aid. The shared feeds visibly improved detection by May.
+
+The sovereignty package formally closed, unlocking planning and private pledges for data-centre zones, but only the two grid-ready sites poured concrete. Relocated American researchers given reserved supercomputer time produced a tougher public-use build of the near-frontier release, now running in hundreds of clinics. The press, still full of the benefits-and-policing scandal, called it a crutch. Trust slipped again.

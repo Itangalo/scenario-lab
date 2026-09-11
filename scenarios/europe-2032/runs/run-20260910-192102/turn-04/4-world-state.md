@@ -1,0 +1,11 @@
+### A line breaks
+Winter began with quiet completion. The shared detection network for grid and port operators went live, with daily signatures flowing from Nordic grids and, after months of haggling, from Italian and Greek utilities kept on board by EU-paid sensors and liability cover. Joint health-cyber teams also closed their emergency patch surge in hospitals and labs, leaving wastewater sequencing pilots and triage playbooks in place. Engineers said Europe could now see an intrusion faster and keep lights on longer.
+
+That progress was overtaken by politics. A large member-state capital signed its own siting and capacity arrangement with an American hyperscaler — cheaper power, fast permits, data handled under foreign terms — openly undercutting the common anchoring position Brussels had demanded for InvestAI sites. At home ministers called it pragmatism and jobs; in Brussels and in other capitals it read as a breach that others might copy.
+
+### Holding operation
+The Commission made holding the line its half-year mission. Trade and internal-market lawyers tabled a decision tying all EU money, accelerated permits and sensor cover to EU anchoring: compute legally on EU soil, auditable, with switch-off rights. The defecting capital was offered power-price relief and a gigafactory tranche — inside the template, not outside. Council summits, college agendas and visits were devoted to the lock, while Spain's water-guaranteed compact moved ahead as proof the Union route could deliver. Germany's blockaded site stayed blocked.
+
+Results were partial. No second capital openly followed, but none rushed to condemn either, and southern utilities warned that continued patch kits must not become conditional on a jurisdictional fight they did not start. Segmentation remained years away, and low-skill probing of small municipal utilities continued in the background — brief trips, screenshots boasted about online, quickly repaired but widely reported.
+
+By June the common line held on paper but frayed in practice. Resilience was measurably better than a year before, yet headlines were about disunity and dependence, and public mood soured further.

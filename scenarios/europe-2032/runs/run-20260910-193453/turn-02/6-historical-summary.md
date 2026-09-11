@@ -1,0 +1,5 @@
+EU grid, port and water intrusions using Mythos-class models were reassessed as staging for later attacks; autumn outages stemmed from defensive shutdowns. The pre-Christmas automated strike on emergency, payment and software-update systems stayed half-broken for weeks, forcing paper forms and manual rebuilds, with attribution lagging to machine-generated tooling.
+
+Brussels made grid hardening an emergency priority with binding segmentation orders and 70% EU co-financing for relay replacement, front-loading aid to worst-hit states to overcome finance/interior opposition. Audits began but relay supply lagged under US volume-licence controls.
+
+Sovereign AI gigafactories stalled further in grid-connection queues amid collapsed global AI funding, lapsed pledges, local protests over power/water costs, and dependence-on-Washington anger after the June switch-off. The one win was municipal continuity teams with offline playbooks enabling graceful degradation. By June private publishers imposed genome-synthesis disclosure rules ahead of regulators, as public reliance on AI fused with resentment.

@@ -1,0 +1,11 @@
+### The intrusion nobody was meant to find
+In October, auditors checking billing software at a transmission operator stumbled on something else: unfamiliar credentials, quiet logins stretching back weeks. Within days, similar traces turned up at grid operators on three continents — two of them inside the Union — plus a major container port and a regional water utility. No blackout, no gates forced, nothing broken. The intruders had simply lived inside operational networks, watching.
+
+Defenders admitted privately they would not have caught them without luck. By November, security firms linked the tradecraft to capabilities anyone could now download. Criminal forums were selling a ready-made intrusion kit built around the Chinese open-weight model released in July, lowering an operation that once needed a team to something a small group could run.
+
+### Brussels moves to the grids
+The Commission answered with an emergency hardening drive for power, ports and water: 72-hour deep audits, forced segmentation of remote vendor access, EU-funded sensors, cross-border exercises run with transmission operators and maritime authorities. French and Nordic response teams were dispatched east and south.
+
+It moved fast for Brussels, and unevenly. Large western operators complied quickly; municipal utilities and mid-size ports complained about cost, staffing and contradictory technical guidance. Two audit deadlines slipped to early 2027. Energy and competition officials kept the inherited gigafactory site selection and the tech package alive on parallel tracks, using the summer scare over American switch-offs to press capitals on grid connections. Permitting remained the choke point — in several regions, councils facing angry residents over power and water demands for data centres slowed decisions to a crawl, and local press treated the new shield teams and the new data centres as the same story.
+
+By December, coverage was dominated by vulnerability: maps of exposed substations, explainers on the leaked kit, questions over why detection had failed. Trust in connected infrastructure sagged, even as officials insisted the autumn discovery proved the new audits were working.

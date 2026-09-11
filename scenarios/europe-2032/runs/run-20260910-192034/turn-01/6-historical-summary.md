@@ -1,0 +1,5 @@
+Autumn discovery of widespread quiet intrusions into critical infrastructure (grids, port, water utility, including two EU grids) via stolen credentials and staged sabotage tools. No attacker-caused outages; outages resulted from defensive isolation. Tooling traced to freely downloadable frontier-class model used for automated intrusion at scale, defeating certified segmentation.
+
+EU response: Commission launched Critical Infrastructure Shield, tasking hardest-hit transmission operators to lead resets, segmentation fixes, and cross-border exercises before December, funded by reallocating digital/infrastructure budgets. Focus shifted to hardening over compute build-out and supply-chain efforts.
+
+Partial effectiveness: operator cooperation but growing municipal resistance to data-centre power demands in Spain and Germany, plus distrust from leaked biosecurity test failures. Public mood sustained by small concrete AI wins in cities (hospital queues, permits).

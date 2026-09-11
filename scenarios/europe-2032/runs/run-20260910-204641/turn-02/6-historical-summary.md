@@ -1,0 +1,7 @@
+Autumn grid intrusions (EU, North America, Asia) mapped relays and stole breaker credentials using tuned open models at state-backed scale; no attacker-caused outage, only defensive blackouts.
+
+In January the leading US model cut off EU hospitals, ministries and firms despite written guarantees, which gave notice but not continuity. Days later automated ransomware hit municipal services and energy/water contractors via autumn credential paths; engineers re-isolated substations, causing week-long degradation.
+
+Brussels prioritized the EU Critical Systems Shield: ENISA tabletop/limited live exercises with worst-hit operators using existing staff/kits; emergency detection and segmentation procurement costed but deferred pending budget/staff. AI factory connections stayed queued behind substation upgrades amid industry and regional legal threats.
+
+Continuity Cloud stayed preparatory (reserved inference, EU-hosted open models); no new measure launched. Gigafactory/tech package advanced slowly, starved of staff/power. Interpretability-based certification piloted in two labs, improving narrow assurance but not widely adopted. By June office productivity rose (especially juniors, no job losses), deepening resentment over frontier-model dependence.

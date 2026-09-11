@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Economic Constraint violated: The narrative states the \"new restoration corps was endorsed... without new money or law, funded from reprogrammed social and health funds,\" but no source or mechanism for reprogramming such funds is provided, nor is there any indication of budgetary authority or political cost for diverting social and health funds. This lacks consistency with available funding under real fiscal constraints, especially for a cross-border emergency mechanism.\n- Organizational Constraint violated: The Wartime Cyber Restoration and Mutual Aid Corps is fielded and deploys \"joint teams\" in the same turn it is endorsed, despite being a new measure. Rule 6 (\"No measure is implemented instantly\") requires at least one full turn for low-cost measures to take effect. The narrative gives no indication of prior preparation or phased rollout—this is a new entity appearing operationally in the same turn as its endorsement, which violates minimum implementation lag.\n- Narrative violates Constitutional Constraint 8 (No telegraphing): The Game Master's Notepad references \"cyber_major_incident landed this turn and war targeting from t12 continues,\" which retroactively confirms the activation of an event gate (cyber_major_incident) that should not be revealed in the narrative or notepad in a way that implies known probabilities or open gates. The notepad must not state that an event \"landed\" — this telegraphs outcome resolution and belongs only in hidden evaluation, not in persistent record visible to players."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

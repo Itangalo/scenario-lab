@@ -1,0 +1,11 @@
+### A new team in Washington, two completions at home
+The new American administration took office in January promising what Brussels had hoped for: structured access to frontier systems on published terms, joint evaluation and shared incident reporting in return for alignment on export controls and standards. Commission negotiators flew early, but found the offer procedural rather than immediate — application windows, audit requirements, tier reviews. The volume-licence idea survived, but as a queue, not a delivery.
+
+At home, two long-running files finally closed. The permitting and capital-mobilisation package for data centres finished its legislative course, unlocking certified sites and a pipeline of private pledges for the coming decade. The enforcement-repair effort also concluded, with clearer audit powers and the three contested welfare systems kept suspended until human review could be proven. Both closings gave the Commission something to point to after months of drift.
+
+### Patching holds, but does not spread
+Work on the defensive rollout continued under strained conditions. Frontrunner hospitals, grid operators and ports kept the new automated patching and swarm-detection tooling live, and published islanding drills drew cautious praise from engineers.
+
+Beyond the frontrunners, progress stalled. With no new staff or money voted, the same teams carried both the gigafactory build and the hardening push. Seconded auditors helped a handful of lagging municipalities, but procurement of locally hosted systems stayed frozen pending the court ruling on discrimination, and challenges to grid connections multiplied. Evening coverage split between successful drills and waiting lists for connection and care.
+
+The bilateral side-deal signed last autumn was not undone. It was contained — no second member state followed — but the Commission had to promise volume assurances only through the common compact, a promise it could not yet fund in full. Capability worldwide crept forward, and openly available systems crept with it, leaving the Union harder to disrupt at the centre and still brittle at the edges.

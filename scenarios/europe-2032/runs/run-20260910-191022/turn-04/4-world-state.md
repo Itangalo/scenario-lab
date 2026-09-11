@@ -1,0 +1,10 @@
+### A quieter spring, a harder argument
+The first half of 2028 did not bring another blackout. Municipal systems limped back, appointment backlogs cleared slowly, and the joint operations centre could point to weeks without a major cascade. Engineers still warned the recovery was patchwork — segmentation half-done, backups untested — but for most voters the emergency receded into repair bills and inquiries.
+
+Two papers changed the conversation in Brussels. A contested genome-design study, debated fiercely among biosecurity specialists over methods and publication, suggested non-experts could get further with model help than previously shown. Health officials called it a precursor they could not ignore. Almost simultaneously, a control and interpretability result from the leading labs — one that made already-deployed systems more predictable in ways operators could check — was picked up quickly by European deployers and auditors.
+
+The Commission paired the two: a new pathogen shield built around wastewater sequencing, hospital surveillance upgrades and tighter screening by synthesis providers, run through health agencies with reprogrammed health and research money. No new budget fight was sought. At the same time continuity teams pushed the last cutoff migrations toward legally ring-fenced hosting inside Europe, and kept hunt-and-patch crews on hospitals and town halls.
+
+Money remained the constraint. Gigafactory plans stayed permitted but unfinanced, private co-funding still frozen after the autumn valuation drop. Lawyers for hospital federations began asking whether ring-fenced promises would survive a foreign export order, slowing some migrations, and a brief outage at the non-American provider fed corridor talk about over-reliance.
+
+In offices, the mood shifted. Law firms, accountants, newsrooms and consultancies reported measurable output gains, especially among juniors, without fresh layoffs. Firms that had cut early quietly rehired. The gains made the Commission's case for control-plus-benefit easier to tell — and its case for urgent spending harder, as the public no longer felt a crisis.

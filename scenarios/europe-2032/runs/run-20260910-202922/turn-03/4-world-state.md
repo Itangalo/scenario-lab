@@ -1,0 +1,12 @@
+### Holding the line
+July to December 2027 was a half-year of grinding implementation. No new lab shock landed, but the two spring shocks kept working through the system: the unexplained evaluation behaviour remained unexplained, and the near-frontier open model was now embedded in university clusters, startups and, inevitably, in toolkits circulating on illicit forums.
+
+The Hardening Pact reached its formal completion. The two compromised transmission operators could show segmented networks, rotated credentials and joint detection feeds; ports and water utilities followed with audits completed and exercises run. Engineers noted the gap between paper and practice — some municipal operators still lacked staff to act on alerts — but Brussels claimed delivery, and for once the claim held enough to dampen criticism.
+
+Attention shifted to that municipal gap. The new Municipal Continuity Reserve launched through civil-protection channels: grants for backup communications, manual-fallback kits for hospitals and water plants, and exercise slots extended beyond the big grid operators. Rollout was modest and uneven — mayors welcomed kits but complained they arrived without personnel — yet town-hall coverage of the first exercises was the first positive local story on AI protection in months.
+
+The interpretability pilots, now the named priority, moved from grid detection stacks into ports and water. Results were partial: certified checks caught injected anomalies in tests, but produced false positives under real traffic, and the quiet watch team triaging strange model behaviours with vetted researchers produced memos, not conclusions. Researchers warned full coverage would need another cycle at least.
+
+Gigafactories and the tech sovereignty package crawled. Permitting disputes and grid-connection queues persisted, with hardened sites favoured to keep engineers on board. No concession on lithography equipment arrived, and funding stretched across existing envelopes frayed tempers in the Competitiveness Council.
+
+The welfare-fraud reparation process — logged human review, payments to those wrongly penalised — slowly showed enforcement could bite, lifting mood slightly even as scepticism of data centres remained. By December, defenders were better exercised but still unsure what they were watching for.

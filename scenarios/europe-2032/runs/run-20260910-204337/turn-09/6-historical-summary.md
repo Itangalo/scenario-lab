@@ -1,0 +1,5 @@
+Municipal recovery handed to permanent town IT with clean-backup kits; Brussels-paid cover continued, but certification checks delayed late communes. AI Office-JRC hired short-contract certifiers with Digital Europe funds and kept evaluators in two hospital pilots, easing but not clearing thin staffing.
+
+The trusted public assistant delivered an office dividend: higher output per person, most for juniors, without layoffs, with early cutters rehiring. Commission extended EU-leased capacity to small firms, clinics and communes accepting pre-connection certification and pooled safety cases tied to staff retention; uptake was quick where backups were clean, slow among small firms deterred by paperwork and vendor complaints.
+
+External advances: a widely adopted proof method made shipped-system behaviour predictable/certifiable, plus AI-assisted landmarks in materials modelling and mathematics. Europe's offer of patch/assurance data for observer status in the Washington-Beijing understanding was declined again. Finland/Spain gigafactory shells advanced on permits/power but no concrete poured or financial close.

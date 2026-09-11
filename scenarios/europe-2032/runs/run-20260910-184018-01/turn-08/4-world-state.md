@@ -1,0 +1,10 @@
+### Redress promised, trust withheld
+The spring brings two verdicts the Commission cannot spin away. Entry-level hiring in routine coding, standard analysis, first-draft writing and tier-one support does not come back. Firms tell labour ministries the posts are simply gone; unions publish lists of cancelled graduate intakes in Milan, Munich and Lyon. The wider job collapse predicted for years still does not arrive, but for the cohorts affected the distinction is academic.
+
+At the same time a court and then an ombudsman find that the benefits-triage system systematically downgraded disability and housing claims, with too little human review and no workable appeal. Coverage frames it as an enforcement failure under the AI Act: the rules existed, the oversight did not. Victims speak on evening news; hospital federations link the case to quota cuts and call for a general strike.
+
+Brussels answers with a single instrument run through employment ministries: a transition fund paying back-pay, record correction and wage-insurance plus retraining for the frozen entry cohorts, financed from repurposed social funds and a levy on automating employers. First cheques are promised to triage victims after independent review. Labour ministers are offered quota-relief pilots tied to retraining to split health unions from the strike call.
+
+Delivery lags promise. The ombuds review opens but payments queue behind eligibility checks; employer groups litigate the levy and delay contributions. The Estonia-Portugal triage and tutoring stacks stay live on newly patched procurement and nurses in Porto still show shorter waits, but strikers call them a showcase while wards remain rationed.
+
+Loss-of-control drills and agent telemetry mandated last year are now exercised in three grids and two hospital networks, and the public-benefit rollout is formally closed. Municipal ransomware stays up longer, engineers note. It does not translate politically. With paper still the fallback and warehouses still foreign-run, the fund reads as acknowledgement rather than repair.

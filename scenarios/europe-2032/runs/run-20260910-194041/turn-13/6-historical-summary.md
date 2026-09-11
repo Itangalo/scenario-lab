@@ -1,0 +1,5 @@
+Europe held on via restore corps hand-carrying machine-speed patches into islanded hospitals/grids, keeping wards dim-not-dark and containing grid probes, but margins thinned as attack scripts outpaced updates.
+
+Insured spares corridor stalled to a trickle as freight insurers raised premiums and declined sailings after Strait exercises and seizure dispute. Washington-Beijing struck limited model-weights/bio-design understanding without Brussels; Commission sought observer status via middle-power forum and folded alleged AI-enabled human-infecting genome design into detection playbooks, receiving noncommittal reply.
+
+Compute halls stayed locked despite mayors' heating-season demands for reserved power (only temporary non-reserved granted); licence hold renewed monthly, medical/energy volume licences stayed narrow.

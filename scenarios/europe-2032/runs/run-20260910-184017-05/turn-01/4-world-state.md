@@ -1,0 +1,11 @@
+### The intrusion nobody was meant to find
+The autumn discovery began as a routine audit at a transmission operator and widened within days. Forensics showed quiet presence for weeks across grids on three continents, a major container port's operating systems and a regional water utility. Two EU operators were inside the perimeter. Brussels briefings stressed that the deepest foothold was outside Europe and that no target pattern was clear, but the internal lesson, repeated in closed Council sessions, was blunter: existing monitoring had missed it entirely.
+
+ENISA teams were dispatched to the two affected operators, segmentation work started under emergency funds, and energy and interior ministries haggled over who would pay for retrofits and backup controls. A live cross-border exercise was scheduled for February. Operators complained about unfunded mandates; the Commission offered co-financing and fast-tracked procurement.
+
+### Offices adapt, factories wait
+Away from the security scare, the economic story was unexpectedly calming. Studies from law firms, consultancies, newsrooms and accountancies showed strong productivity gains, concentrated among junior staff, without a wave of layoffs. Firms that had cut early quietly rehired. That eased pressure for income support and gave ministers a story to sell: disruption that could be managed.
+
+Compute politics moved slower. Site selection for the gigafactory pipeline advanced with accelerated permits, and talks on crowding private data-centre capital continued, trading grid-connection priority and state-aid clearance for legal anchoring in Europe and protection around the lithography supply chain. Washington tightened chip and model controls again, but allied buyers kept volume-licence access. European officials called it relief; industry noted the licence terms were shorter, conditions heavier, and dependence unchanged.
+
+By December, resilience felt like the urgent deficit and sovereignty like the long one. The hardening programme had started, but coverage was partial and winter approached with detection still unproven.

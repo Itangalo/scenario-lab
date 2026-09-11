@@ -1,0 +1,7 @@
+Machine-written intrusions degraded large cities but held via Shield sensors and fallbacks; small councils went dark. EU automatic patching, swarm detection, and mutual-aid technicians restored water/hospitals and digital triage, cutting waiting lists; predictability folded into inspections.
+
+Graduate occupations over hiring collapse and data-centre opposition continued; late/thin Automation Shock Absorber payments split assemblies; blockades persisted, sabotage unconfirmed.
+
+Autumn: Shield repair fund sustained patching, standing technician contracts held services through renewed probing. Then US placed frontier labs under federal control, weights as defence articles, stalling EU conformity/market-access leverage and slowing model deliveries. A discontinuous capability advance obsoleted timelines; US-China signed limited weights-security/escalation accord with thin verification, Europe informed late.
+
+Commission bid for observer status offering evaluations, audits, export-control alignment failed to gain seat. Services more resilient by December but graduate protests, construction confrontation/injuries, and sabotage rumours continued; Union less sovereign, assurance lagging capability.

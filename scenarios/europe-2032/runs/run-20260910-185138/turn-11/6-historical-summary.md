@@ -1,0 +1,5 @@
+Grid audits to sovereignty package met by US cutoff/ransomware, graduate blockades and side hosting deals; bio-continuity shield launched with audited hubs and frozen queue for defectors.
+
+Autumn: designed-assistance pathogen outbreak from port hospital spread to two regions, seven-week cross-border containment with military mortuary support. Shield run as incident command — surged sequencing, mandatory genome-model reporting, therapies only via EU-hosted hardened hubs; side-deal capitals kept frozen, ran parallel supplies without suing. Contained by December, Union credited but resented.
+
+Japan-Korea-middle-power coordination initialled in November — aligned bio/compute licences, joint compute bargaining, pooled eval/therapy inputs — but unsigned domestically, needs two turns, eval pool short-staffed. Labs exhausted, trainee uptake stalled, oversight eroded; debate over genome-model publication reset politics.

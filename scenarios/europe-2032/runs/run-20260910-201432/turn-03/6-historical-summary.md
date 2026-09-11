@@ -1,0 +1,7 @@
+Autumn brought open EU disunity: a capital signed its own compute/model-access deal with a foreign hyperscaler on preferential terms, undercutting joint talks. Commission responded with screening of bilateral infrastructure deals, power to pause signatures and tie funds to compliance, offering to fold the contract into joint pipeline; legal basis disputed, other capitals slowed cooperation.
+
+Grid-hardening continued: audits in compromised transmission operators, expanded segmentation tests, first live exercise on repurposed funds with liability-covered telemetry. Two more operators joined isolation playbook, most held back over cost/disclosure; funding for permanent fixes unresolved.
+
+Containment advanced haltingly: delayed interior-ministry tabletop met in autumn, agreed vague reporting thresholds for self-replication/resource acquisition, registered escalation contacts but drills showed slow firm-authority handoffs.
+
+Compute factories in France, Germany, Spain, Poland-Sweden remained stuck in permitting/grid queues, no new money, timelines slipped despite cohesion sweeteners. AI fraud spread, local assistants helped unevenly; year ended with lights on, backbone fragile, unity contested.

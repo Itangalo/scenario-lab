@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t9: M9 EU Accession to US-China AI Risk Accord with ASML Shield −2, M10 EU Loss-of-Control Containment and Joint Threat Response −2, priority −0 (no effect, no cost below capital 20) = −4
+PROPOSAL BONUS: EU Loss-of-Control Containment and Joint Threat Response (cat 6, small) +4 — catastrophic_loss_of_control_incident fired this turn and this answers it directly plus joint_threat_response invitation
+LEGITIMACY LENDS: none — capital 16 above sentiment 12 after incident drop, no lend
+SOVEREIGNTY: 13 last turn, no capacity event, no cat4 finishes, no cat4 in flight +0, capability rose 3.5 −1 = 12

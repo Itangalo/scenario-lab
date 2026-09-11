@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Metric movement limit violated: `eu_political_capital` decreased by 12 points (from 35.0 to 23.0), which exceeds the hard cap of 25-point maximum movement per turn. While the direction of change is plausible, the magnitude violates Constitutional Constraint #9: \"No metric moves more than 25 points in one turn.\" A drop of 12 is within bounds, but the Game Master's Notepad shows a portfolio charge of −12 and a proposal bonus of +2, implying a net change of −10, yet the actual metric drop is −12. This discrepancy suggests either an arithmetic error in the notepad or an unexplained additional −2, which constitutes a violation of transparency and consistency in metric accounting. Even if within the 25-point bound, unaccounted-for changes that contradict the stated calculation violate the integrity of the model.\n- Narrative telegraphs event gates: The Game Master's Notepad references \"no capacity event, no finishing measure\" and calculates sovereignty accordingly, but the narrative describes active deployment of security teams, use of existing budgets, and operational changes that should trigger at least a minor event or capacity recognition. The absence of any event flag while describing new operational activity across multiple domains (security, municipal infrastructure, intergovernmental friction) risks violating Constraint #8: \"The narrative must not telegraph\" — not by predicting, but by implying activity that should open event gates without acknowledging them. Specifically, the deployment of managed security teams using existing budgets to second engineers into rural utilities constitutes organizational expansion and inter-agency coordination that should be evaluated for capacity events, yet the notepad explicitly denies one. This creates a contradiction between narrative action and event state, violating the constitutional requirement that event gates be respected and not bypassed narratively."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

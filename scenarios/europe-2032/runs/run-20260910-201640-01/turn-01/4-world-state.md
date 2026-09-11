@@ -1,0 +1,11 @@
+### The test shot
+Engineers found it by accident. An audit at a transmission operator in late autumn turned up credentials that should not exist, then staging tooling left almost openly. Within days similar traces appeared in two EU grid operators, a major container port and a water utility, and on three continents beyond. Breakers mapped, relays enumerated, nothing switched off. Containment itself caused the only blackouts.
+
+Attribution collapsed into argument. Public briefings named Iran, North Korea, Russia; private ones whispered China. The tooling pointed to a Mythos-class open model, fine-tuned for industrial intrusion, run at a volume that suggested state compute. Segmented networks had not stayed segmented.
+
+Brussels moved faster than usual. ENISA was ordered to draft binding segmentation and monitoring baselines, joint exercises were promised before mid-2027, and grid-connection access was tied to compliance. Operators protested cost and reporting; some municipalities discovered their cyber insurance repriced or withdrawn after reinsurers saw the same briefings. Exercises slipped, procurement stalled, but the baselines entered law.
+
+### Capital flees
+At the same time the AI funding boom broke. Valuations fell sharply through the autumn, data-centre groundbreakings were cancelled, and two hyperscaler arrangements the gigafactory plan had counted on evaporated. DG CNECT slowed cash burn, using cheaper land and power options to renegotiate for EU-anchored capacity rather than headlines. On export controls, foreign ministers held a common line around the Dutch lithography supplier despite intense American pressure, but no new capacity came online.
+
+The public mood soured. Evening news paired maps of probed substations with explainers on downloadable attack tooling, and support for rapid AI build-out softened. The frontier itself kept advancing: agents running longer tasks, release cycles still at three months, another difficult mathematical result claimed by a lab system.

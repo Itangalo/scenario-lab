@@ -1,0 +1,11 @@
+### Rebuilds and ruptures
+Spring brought a cascading, largely automated intrusion. A poisoned software component used across municipal administrations, hospital IT and logistics firms became the carrier for a ransomware sweep. Screens went dark in city halls from Lyon to Gdansk, appointment systems reverted to paper, and parcels stalled at sorting hubs. CERT teams worked from clean backups hosted on European supercomputing centres, rebuilding networks segment by segment while older domestic models kept triage and dosing queues moving slowly.
+
+Defenders were visibly behind. The tooling was machine-written, mutating faster than signatures could follow, and attribution slipped away into months of forensic fog. Ministers insisted no patient data had been permanently lost, but evening news carried queues at clinics and mayors describing ransom demands flashing on council servers.
+
+In the same weeks a new openly released frontier-class model spread to hundreds of thousands of downloads. Whatever it could do — including assisting with cyber tooling and biological workflows — was now on private hardware for good. Emergency screening on genome synthesis held, quietly, but labs warned the edge was gone.
+
+### The side deal
+Amid the outage, one capital announced its own arrangement for cloud and model supply with a foreign hyperscaler, on terms that undercut Brussels' common line on anchored capacity and procurement conditions. At home it was sold as pragmatism — guaranteed uptime for hospitals. In Brussels it read as defection. The Commission answered by offering the same hospitals hardened hosting and fallback inference on equal terms, and by pointing nightly to waiting lists still falling where European triage ran.
+
+The recovery surge, run through civil protection mutual aid and reallocated cyber funds, restored core services within weeks but left scars: insurers quarrelling over extended stays, logistics unions citing proof of fragility, public trust in automated care dipping further.

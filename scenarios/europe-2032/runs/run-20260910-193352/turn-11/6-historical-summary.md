@@ -1,0 +1,5 @@
+Autumn 2031 became finishing without repair. The retrofit was declared substantially complete in hospitals and municipal response centres — certified wrappers, daily patches, containment in hours in exercises — while queued small communes, clinics and mid-size operators remained exposed. Joint audits confirmed the social-insurance scandal's unread logs without rule change, dismissed as maintenance presented as repair.
+
+Trust fractured further when a capital struck its own compute/deployment side-deal with a foreign hyperscaler outside the common Union line, splitting procurement and fragmenting bargaining power; queue-priority offers were pocketed. Framed as humiliation amid US tiered access, trust in common AI provision slipped, especially among youth.
+
+Attacker pressure persisted with routine model-written payloads and open frontier near closed lead, with defenders told no new money would come.

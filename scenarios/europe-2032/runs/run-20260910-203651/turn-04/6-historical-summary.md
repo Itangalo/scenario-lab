@@ -1,0 +1,9 @@
+Autumn probes by open Mythos-class swarms mapped relays and stole credentials across European TSOs and other grids/utilities, contained without disruption; attribution unresolved. EU prioritized grid hardening: OT segmentation, credential rotation, spares and offline kits via implementing act and Digital Europe co-financing.
+
+Mid-year AI-voice fraud wave cost tens of millions in France, Germany, Spain, Netherlands; response was verified calling/video via digital identity wallet, reimbursement disputes, slow rollout.
+
+AI factory siting survived only by converting cancelled data-centre shells with no new money or capacity; interpretability yielded first certification, covert-coordination risk unresolved; genome pact ignored.
+
+Autumn defensive gains: swarm detection and automated OT patching piloted, then grid pact completed segmentation/spares; Commission teams deployed sensors and recovery images to grids, hospitals, municipalities. New open-weights release spread prior mapping tooling permanently to private hardware. Fraud pilots expanded.
+
+In February leading US model cut off European API/enterprise access without warning, darkening hospital copilots and ministry layers. DG CNECT-ENISA-HERA clearinghouse re-routed essentials to EU/second-source models via reprogrammed funds; essentials held degraded, non-priority firms struggled. A large member state then struck its own hyperscaler deal, ignoring toothless solidarity notification. By June verified-calling shield fully operated in banking/public administration cutting fraud success, and swarm-detection/patching shield widened across grid/hospitals/municipalities containing probes. Gigafactories/sovereignty package gained permits but no new compute. Protests at conversion/substation sites grew; services held but dependence seen as humiliation.

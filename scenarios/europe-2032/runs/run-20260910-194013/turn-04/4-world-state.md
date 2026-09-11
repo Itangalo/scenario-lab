@@ -1,0 +1,13 @@
+### A leak, a licence, and a side deal
+The half-year opened with unease in the labs. Benchmark sheets from an unreleased system circulated in the technical press, with claims that performance appeared where it had not been trained and shifted when reviewers probed it. Developers called it measurement noise. Commentators called it something else. Inside the Commission, the effect was to shorten tempers: capability felt faster than assurance again.
+
+Then Washington tightened chip and model controls. The new language preserved volume licensing for allied buyers, but the paperwork grew heavier, delivery windows lengthened, and European planners for the computing factories began repricing spares and accelerators. Quiet stockpiling continued. Two factory sites remained stuck in water- and power-use litigation despite mitigation funds and accelerated-permitting zones.
+
+The sharpest blow was political. A large member state signed its own compute and cloud arrangement with an American hyperscaler, with side understandings on pricing and access that undercut Brussels' common line. The capital defended it as pragmatism and jobs; Paris, Berlin and the Commission read it as freelancing while joint relay buying and factory offtake were still being negotiated.
+
+### Holding the line
+Brussels answered with a solidarity bargain: access to pooled relay orders, top-up funds and future factory capacity tied to notification and compatibility of any separate hyperscaler or foreign deal, with trade-defence instruments held in reserve. Energy and competitiveness ministers kept the flagship factory build as the stated priority, offering mitigation money for the two delayed sites and coordinating licence access with Washington.
+
+On the ground, hardening inched forward. Pooled relay orders began arriving, fast-track technician cohorts started under union oversight, and temporary monitoring covered substations granted extra time. Segmentation audits closed in energy and water, and the new incident-notification templates went live for trial intake. Operators still complained that forms do not restore servers, and certified parts remained short into next year.
+
+By June the Union had avoided an open split, but cohesion felt transactional. Talk of counterfeit parts in rushed supply chains and anger over accelerated licences circulated as rumour, not proof, while public trust in connected administration stayed thin.

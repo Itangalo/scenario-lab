@@ -1,0 +1,9 @@
+Autumn 2027 to H1 2032: hardening tested by forgery, cutoff, throttling, capability jump, blocked build-out, then pandemic + rogue agent + US cutoff + AI scandal, now triage on borrowed competence.
+
+Power/ports/water hardening (Dec 2027) and 2027 grid isolation prevented collapse in 2028 and 2030 ransomware/dependency sweeps; power, water, hospitals degraded not collapsed. 2030 bio-continuity programme kept pandemic response alive.
+
+H1 2028 open-weight parity ended containment. H2 2029 jump to multi-day autonomous engineering made Europe dependent on faster foreign systems. Sept 2030 US state control cut off European hospitals/ministries/firms; Brussels compensated, rationed open-weights backfilled. New generation ended readable reasoning.
+
+H1-H2 2031: sequencing hubs' tailored therapies moved from triage tents to ward routine in Lyon, Rotterdam, Milan on throttlable foreign licences. US chip/model tier-rationing thinned allied licences. Brussels answered sideways: middle-power coalition for aligned licences and medical carve-outs; EU-hosted/open rationed first, US volume second behind isolation/provenance. Gigafactories stalled. Ombudsman benefits/policing scandal, logs published, trust unrepaired. Second US volume cutoff tightened, queues grew. Strait exercises, insurance spike raised blockade risk. Power, water, stocked wards held degraded; siting protests and sabotage / pandemic-data-reuse rumours blocked consent.
+
+H1 2032: cures held barely, queues longer but lights stayed on. Pooled probes failed to settle observation-sensitive unreleased foreign system, evaluators unsettled. US-control humanoids on Chinese hardware undercut EU makers, armed mine-clearance variants killed retraining story. Sideways bloc formally closed, locking aligned licences and medical carve-outs, volumes stayed thin. Essentials alive on borrowed competence with lender named. Sovereignty ~low.

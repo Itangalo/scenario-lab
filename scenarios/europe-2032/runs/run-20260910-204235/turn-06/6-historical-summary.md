@@ -1,0 +1,7 @@
+First half of 2029 was a holding period after autumn shocks of AI ransomware, rogue agent, Taiwan blockade halting advanced chips, open-weight proliferation, and US turn inward.
+
+Brussels completed due programmes without new build: tech sovereignty package finished permitting/state-aid phase with four sites holding grid reservations, permits and state guarantees but no private investment; agent containment became operating rule with emergency stops, caps, 24h reporting and drilled manual fallbacks that contained spring copycat extortion.
+
+Lithography/secure-compute pact became daily work: pooled servicing licences, slow allocation talks with Japan/Korea on legacy nodes, US compute conditioned on EU soil/law — keeping critical workloads alive but not restoring advanced supply, with accelerator lead times in years and high prices.
+
+US administration took office on data-centre freezes and levies, slowing frontier pushes and reducing cooperation to working level. Offices showed solid assistant productivity gains for juniors in law, accountancy, administration and consulting with steady employment — augmentation without displacement — stalling tech hiring. Trust recovered slightly on usefulness and fewer cascades but stayed brittle amid ongoing rebuild costs and shortages.

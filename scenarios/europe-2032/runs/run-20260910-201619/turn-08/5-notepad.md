@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t8: EU Supply-Chain Bargain and Rationing Pact −2, EU Cyber Emergency Hardening and Mutual Aid Activation −2, priority −1 not charged (capital below 20, priority has no effect) = −4
+PROPOSAL BONUS: EU Cyber Emergency Hardening and Mutual Aid Activation (cat 6, small) +3 — cyber_major_incident landed this turn and this answers it directly
+LEGITIMACY LENDS: capital 12, sentiment 37 -> +2 (capped below sentiment, applied after other terms)
+SOVEREIGNTY: 32.0 last turn, no cat4 finish, no cat4 in flight, middle_power_coalition t8 +2 (largest capacity event, secures), capability rose 0.8 no −1 = 34.0

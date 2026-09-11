@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t5: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Agentic Loss-of-Control Containment Regime −2, EU Middle-Power Compute and Evaluation Pact −2, priority −1 = −11
+PROPOSAL BONUS: EU Middle-Power Compute and Evaluation Pact (cat 8, small) +2 — answers election tier-rationing threat and middle-power window, small size and future threat not yet landed
+LEGITIMACY LENDS: capital 24, sentiment 27 -> +2
+SOVEREIGNTY: 23 last turn, EU Compute Continuity Bridge finishes t5 +4, Gigafactories/Tech sovereignty in flight +1, middle_power_coalition t5 +2, capability rose 1.5 −0 = 30

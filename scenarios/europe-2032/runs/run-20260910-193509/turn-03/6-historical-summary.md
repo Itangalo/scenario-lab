@@ -1,0 +1,9 @@
+Autumn intrusions at EU and allied grid/port/water operators caused no disruption but were attributed to a freely available frontier model retuned for state-scale intrusion. Europe responded with joint audits, credential rotation, staged-code checks, exercises and hardening funds, slowly implemented; by spring rotation at two TSOs, sweeps, re-segmentation and shared detection eased grid anxiety.
+
+A genome-model study claiming non-experts could design viable human pathogens drew backlash while Brussels scoped verification; Taiwan manoeuvres and shipping costs stalled the tech sovereignty package over fab aid and energy guarantees.
+
+After a US covert-agent affair, 15-20 senior US safety/evaluation researchers defected to EU fast-track chairs; Commission mandated them for third-party pre-deployment checks with AI Office and health monitoring cell, yielding claimed independent biosecurity-check capacity by June.
+
+In autumn, major university rectors paused frontier genome-model weight publication pending screening standards. Commission drafted binding gene-synthesis screening rules and weight-publication guidance, assigning verification to the defected teams, with tooling funds for universities. Synthesis act cleared technical level but stalled on enforcement and cost-sharing; compliance uneven with foreign routing. JRC verification of pathogen-design claim inconclusive by December.
+
+Gigafactory/tech sovereignty build strained over power-price guarantees and Taiwan-linked supply delays; grid hardening continued on existing funds with maintenance backlogs. Foreign frontier and open models advanced despite pause; public mood ambivalent over responsibility vs energy costs and slow delivery.

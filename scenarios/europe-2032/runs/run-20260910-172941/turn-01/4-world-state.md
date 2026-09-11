@@ -1,0 +1,9 @@
+### Grids found open
+Autumn brought an uncomfortable discovery. During a routine audit, engineers found intruders who had been sitting inside electricity transmission networks on three continents for weeks — including two operators inside the Union — plus a major container port and a water utility. No lights went out, no locks were forced. That was the point that stung: the review afterwards admitted the presence would not have been caught had the auditors not stumbled over it.
+
+Brussels moved to turn embarrassment into mandate. The Commission pushed a hardening pact for power, ports and water through the Energy and Transport ministers, giving the EU cybersecurity agency the operational lead and promising EU-wide automated patching, new detection that looks for swarms rather than signatures, and exercised cross-border response. Rotterdam, Antwerp and the two affected transmission operators were named first in line, with procurement steered toward European vendors.
+
+### A defensive opening
+The timing helped. Laboratories and vendors began rolling out defensive tooling that for the first time in years seemed to close a whole class of attack — patching almost as fast as flaws were found. Transmission operators signed up for pilots quickly; finance ministries and mayors did not. Cost-sharing fights dragged, and several permitting zones for the parallel gigafactory build faced court challenges and siting protests over power and water.
+
+By December, cables were being laid and pilot sensors installed, but no system was yet hardened end to end. The American export pressure over lithography equipment continued quietly in the background, resisted but not resolved. The public mood stayed divided: relief that a tool existed, unease that it had been needed.

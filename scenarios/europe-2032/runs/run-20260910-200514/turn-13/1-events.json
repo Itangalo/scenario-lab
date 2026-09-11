@@ -1,0 +1,37 @@
+[
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.19333333333333333,
+    "probability_samples": [
+      0.21,
+      0.21,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Municipal insurers across several member states withdraw cyber coverage for public administrations lacking certified offline backups, freezing credit for small-town recovery until EU grants arrive.",
+    "emergent": true,
+    "id": "emergent_municipal_insurance_retreat",
+    "probability": 0.24,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

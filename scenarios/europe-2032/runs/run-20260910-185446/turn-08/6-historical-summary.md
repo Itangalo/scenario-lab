@@ -1,0 +1,5 @@
+H1 2030 brought a limited US-China pact on model weights, autonomous escalation, and bio-design tools with thin verification. Europe learned with the press, but the floor calmed markets.
+
+Brussels sought entry: Council mandated EEAS/DG TRADE to seek observer then contributor status, offering The Hague maintenance records, gigafactory hosting, ENISA/ECDC feeds. US/China polite, non-committal — EU evaluators admitted to two audit workshops, political accession deferred to autumn. Supply-chain secretariat repurposed openly as ticket in; Tokyo/Seoul listened, signed nothing.
+
+Home front stabilized without new money fights: coalition secretariat formalised, continuity reserve declared operational — inventoried fallback to EU open models + manual for hospitals/ministries/ports, earmarked funds slowly moving. Fallback still degraded vs cut-off US systems; alleged diagnostic outage drew lawyers but no court hearing. Two frozen gigafactory expansions and hardening law remained stalled. First modest sense of recovery since February 2029 cutoff.

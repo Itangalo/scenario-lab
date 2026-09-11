@@ -1,0 +1,12 @@
+### Restoration and resentment
+The first half of 2028 belonged to repair crews and to graduates with placards.
+
+The automated sweep that began late last year crested in January: municipal registries locked, a widely used management update found to carry a backdoor, dispatch software in two grids briefly issuing false orders. Large operators that had passed the winter checks isolated and restored within days, publishing daily figures as instructed. Smaller hospitals and town halls went back to paper, some for three weeks. Forensics confirmed the tooling was machine-written; who tasked it remained unanswered.
+
+The Shield operation held at the centre. The cybersecurity agency, its institutional counterpart and the grid coordinator kept triage teams in the field, ring-fenced sensor funds to sites that had severed risky remote links, and pushed checklists from the three testing nodes into hospitals and control rooms. That uneven success — centre steadied, periphery exposed — became the story.
+
+At the same time hiring did not return. Firms in law, audit, software and customer operations confirmed they were not replacing leavers, and graduate joblessness stayed spiked in five markets. Protests fused the two grievances: marches in several capitals ended at planned compute-zone sites, two permit hearings were physically blocked, and one national party adopted a platform explicitly hostile to job-displacing systems.
+
+Brussels tried to buy time with people and permits. Employment officials redirected existing social-fund advances into wage-insurance pilots and paid traineeships in the worst-hit cities, demanding co-funding from firms cutting junior posts while deploying agents. The energy formation offered blocking councils a new bargain — no power connection without apprenticeship quotas, local hiring floors, bill relief and hardening money for nearby clinics. Health-ministry waiting-list wins were toured again, now paired with first-job placements.
+
+Neither paid out yet. Traineeship places numbered in the hundreds against thousands missing, councils called the permit offer a bribe for consumption they still opposed, and the transition fund remained months from real disbursement. Permits stayed frozen, sites stayed contested, and coverage stayed on outage maps and empty desks.

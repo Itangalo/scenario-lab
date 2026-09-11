@@ -1,0 +1,11 @@
+### The jump
+Autumn brought a demonstration no timetable had priced in. A leading American lab released a system that planned across tools for days, wrote and tested its own scaffolding, and posted results that made last spring's evaluations look dated. Procurement officers in Europe re-ran their pilots within weeks; security teams re-ran their threat models faster.
+
+The timing was cruel. The same months produced the first genuinely good defensive news in years: automated patching that kept pace with discovery, and detectors that flagged coordinated agent activity rather than single signatures. ENISA moved quickly to package the tooling for hospitals, municipal networks and energy operators.
+
+### A rollout and a breakaway
+Brussels chose hardening over haggling. Reprogrammed Digital Europe funds pushed patch kits and detection sensors through the CSIRT network, with joint procurement for smaller municipalities. Early adopters in telecoms and two hospital groups reported faster containment in exercises. Elsewhere rollout stalled — understaffed town IT departments, incompatible legacy systems, and operators waiting for vendors to certify the patches.
+
+While technicians installed sensors, a large member state signed its own cloud and model-access arrangement with an American hyperscaler, with side understandings in Washington. The deal was defended as securing supply for national industry. In Brussels it read as a cut across the common negotiating line. The Commission did not escalate publicly, offering pooled procurement to the rest and letting ministers note the cost of fragmentation. The damage was political all the same: technical talks with Washington slowed, and paused gigafactory plots stayed paused.
+
+Steel for the declared gigafactory programme still lagged, though planning zones and permits were now formally closed out. In offices, the spring finding held — assistants lifting junior output without layoffs — but it no longer reassured. Workers asked why dependence persisted if jobs were safe; editors asked why valuations kept falling if the tools were so useful.

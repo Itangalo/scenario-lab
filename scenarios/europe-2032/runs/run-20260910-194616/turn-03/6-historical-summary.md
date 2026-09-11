@@ -1,0 +1,5 @@
+Autumn probes became a coordinated automated attack: municipal portals dark, hospital procedures postponed, two transmission operators islanding previously mapped substations with fast machine-written tooling requiring repeated rebuilds. The completed Cyber Shield prevented blackout — first-wave segmentation audits held while half-done second wave did not; ENISA/CERT-EU joint triage, French-German-Polish repair pools, and emergency funds for relays/islanding kits kept services degraded not stopped, amid weeks of queues and rationed e-services.
+
+Brussels added a bio watch to the same cell after a contested genome-model paper on human-infecting design, triggering wastewater/clinical sequencing and lab-assistance logging.
+
+Focus elsewhere collapsed: gigafactory permits advanced but financing stalled, joint licensing gate for chip-tool servicing remained a draft, The Hague's widened export cuts stood, Washington gave sympathy/signatures but no assured compute, Tokyo/Seoul talks yielded only minutes. Public mood shifted from AI promise to resentful utility amid fraud, outages, and stalled AI capital, training budgets, and compute financing.

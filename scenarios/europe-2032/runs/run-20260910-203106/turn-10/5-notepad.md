@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t10: EU Essential Services Degrade-Gracefully and Bio-Response Pact −2, EU Middle-Power Compute and Safety Leverage Pact −2 = −4 + priority not charged (capital below 20, no effect)
+PROPOSAL BONUS: EU Middle-Power Compute and Safety Leverage Pact (cat 8, small) +4 — loss-of-control incident with days-long containment plus rationed access landed this turn and coalition window open, this answers both directly
+LEGITIMACY LENDS: none — capital 10, sentiment 0, capital higher
+SOVEREIGNTY: 14 last turn, no cat4 finish, no cat4 in flight +0, middle_power_coalition t10 +2, capability rose 1.0 −0 = 16

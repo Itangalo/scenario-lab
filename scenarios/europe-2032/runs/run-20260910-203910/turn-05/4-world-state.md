@@ -1,0 +1,10 @@
+### The Shield holds, the shop floor revolts
+Brussels spent the autumn defending what it had built. With no new resilience programme, the Commission kept reassigned detection teams in place, integration money locked in, and pushed the failed port through slow manual recertification. Eastern grids stayed on stopgap hosting under thin certification, with renewal gates promised rather than enforced. Where the Shield was applied, services degraded rather than stopped during autumn probes; where it was not, operators knew it.
+
+The politics moved to factories. Foreign humanoids spread from warehouses to manufacturing pilots, dexterity visibly improving month to month. Walkouts in Germany, France and Italy, municipal bans on pilot sites, and union demands for a moratorium on workplace robotics dominated coverage. Paris, Berlin and Rome pressed Brussels to choose between gigafactory consent and robots. Meanwhile, labs and integrators widely adopted newly diffused open weights building on last year's frontier releases, with fine-tuned variants spreading quickly through warehouses and pilot lines, narrowing the gap to the frontier.
+
+The Commission answered with conditions, not cash. A new Transition Fund tied deployment permits to retraining levies, wage insurance and works-council oversight, including a veto on armed variants, sold as protection without a hardware bid. Unions called it a first proof that monitoring could become protection; employers called it a tax on adoption; mayors considering bans mostly waited.
+
+Two outside shocks framed the compromise. A contested genome-model study claiming non-expert assistance to a viable human-infecting design circulated in biosecurity circles, alarming specialists without reaching the public. And across the Atlantic, Americans voted amid conflicting projections and disrupted coverage, with European capitals watching confused reporting and waiting for a clear outcome from Washington.
+
+By December the lights stayed on, the robots kept coming, and no one felt sovereign.

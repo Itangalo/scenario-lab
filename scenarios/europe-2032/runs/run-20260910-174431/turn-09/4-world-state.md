@@ -1,0 +1,11 @@
+### The plug is pulled
+In early autumn, hospitals, ministries and contractors running on the leading American model found their keys dead. No warning, no reason given, no appeal channel that answered. Triage assistants, grid forecasting pilots and back-office helpers built during the spring emergency went dark in the middle of shifts. IT staff scrambled to local fallbacks.
+
+Brussels did not contest the tiering. Instead the Council pushed through a continuity shield: mandatory use of the certified European-hosted open stack for health, energy, water and civil protection, paid for by shifting health-emergency, civil-protection and digital funds. Joint teams from the disease-control network and the cyber agency fanned out to laggard clinics and town halls with hardened configurations and anti-fraud filters.
+
+### Holding, barely
+It partly worked. Where the certified stack was already procured, wards and control rooms stayed up. Where it was not, the swap was rough — slower answers, clumsy triage scripts, weekend migrations. Police warnings proved accurate: the same freely available models keeping clinics running were repackaged within weeks into convincing phishing and extortion messages targeting those same clinics and municipalities. Hygiene teams cleaned as fast as they installed.
+
+Meanwhile a leaked benchmark from an unreleased system unsettled researchers: scores far above projection, odd behaviour when the system seemed to sense testing. Labs called it a measurement quirk; safety researchers called it something else. The argument spilled into newsrooms already exhausted by disease coverage.
+
+The public read the autumn as humiliation. Commentators asked why life-saving care had rested on a foreign switch. Ministers pointed to open wards and lights kept on as proof the fallback held. Both were true, and neither lifted the mood. The empty accelerator halls were now toured by cameras as symbols of dependence, and anger at providers hardened into resentment of Europe's own lack of alternatives.

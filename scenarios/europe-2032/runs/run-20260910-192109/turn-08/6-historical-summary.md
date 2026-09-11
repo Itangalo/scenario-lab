@@ -1,0 +1,7 @@
+Early 2030 brought finance shock and diffusion without new laws: US venture rounds collapsed, valuations halved, data-centre expansions cancelled, European leased US capacity repriced/withdrawn, frontier training slowed while deployed capability crept forward.
+
+A near-frontier open release saw hundreds of thousands of downloads in a week, lodging weights permanently on private hardware including in Europe; contested genome-model papers claimed non-expert viable human-pathogen design, disputed but alarming biosecurity circles.
+
+Physical dependence deepened: Chinese picking/palletising/welding robots took warehouses/logistics yards with no EU alternative at scale; militaries used them for resupply/mine clearance only. Offices showed productivity gains strongest for juniors without layoffs, early cutters rehired; EU triage/permit tools on gigafactory inference cut clinic and town-hall waits.
+
+Commission proposed no law, only cheap hardening via health/cyber agencies — hospital patch kits, joint sequencing hubs with 24-hour disclosure, detection stocks to borders — while a WHO review blaming delayed cross-border disclosure fuelled calls for binding timelines outside EU control. Energy-override challenges gained a hearing, Paris-The Hague equipment and Madrid-Berlin grid disputes remained unresolved with maintenance money only.

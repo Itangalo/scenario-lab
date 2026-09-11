@@ -1,0 +1,48 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.11666666666666665,
+    "probability_samples": [
+      0.09,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Coordinated cross-border factory occupations and equipment sabotage targeting foreign humanoid pilot lines force a temporary EU-wide pause on new manufacturing robot permits.",
+    "emergent": true,
+    "id": "emergent_factory_occupation_wave",
+    "probability": 0.21666666666666667,
+    "probability_samples": [
+      0.2,
+      0.25,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

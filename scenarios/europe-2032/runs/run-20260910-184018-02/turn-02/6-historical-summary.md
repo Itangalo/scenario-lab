@@ -1,0 +1,5 @@
+Open-weights copy of February's step-change agentic coding model proliferated uncontrollably, enabling automated ransomware via tainted software update against municipalities, clinics, hospitals and forcing previously intruded grid operators to island systems; attribution failed.
+
+EU triggered Critical Systems Shield mechanisms: joint EU-French-German-Polish emergency teams, isolation kits and clean backups, hardening fund re-sequenced to compliant operators, public naming of laggards, 24-hour reporting contested. Major hospitals/towns recovered in days, smaller communes lagged.
+
+Gigafactory/hyperscale build stalled further amid longer connection queues and Spanish-German municipal opposition fueled by power prices and cyber fear. AI Office tightened pre-deployment checks for persistence/offensive uplift using new interpretability control, shifting doctrine to containment. By June services restored but public trust sagged; structural compute dependence (~5%) unchanged.

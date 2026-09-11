@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t4: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Incident Reporting and High-Risk Enforcement Sweep −2, EU Evaluation Access and Anomaly Triage Cell −2, EU Observer Bridge to the US-China Safety Accord −2, priority −1 = −13
+PROPOSAL BONUS: EU Observer Bridge to the US-China Safety Accord (cat 8, small) +2 — member_state_defection landed this turn and us_china_agreement without EU seat weakens leverage, this answers both directly
+LEGITIMACY LENDS: capital 7, sentiment 31 -> +2
+SOVEREIGNTY: 19 last turn, no capacity event finish, Gigafactories in flight +0, member_state_defection t4 −2, capability rose 0.5 −0 = 17

@@ -1,0 +1,11 @@
+### The attack that found the fallback
+Autumn brought the test the emergency hosting had been built for. A largely automated intrusion spread through a compromised management tool used by hospitals, municipalities and several grid operators. Screens froze to ransom notes in Lyon and Gdansk, appointment systems fell back to paper in Rotterdam, and two regional grid controllers islanded themselves to stay safe. Clean-up crews found model-written scripts that re-packed themselves faster than signatures could be pushed.
+
+Defenders were visibly behind for weeks. Attribution stalled. Emergency teams from the Union's cyber agency, seconded national staff and the hospital fallback crews worked from the same playbook: cut the link, restore from clean backups, rebuild segmented on domestic hosting. It stopped a cascade — lights stayed on, emergency care continued — but elective procedures were postponed again and mayors complained about bills for rebuilds they had not budgeted.
+
+### Concrete, at last, and audits that pay
+In that grim context, the first gigafactory sites finally moved. With permits and grid reservations held through the freeze, excavators broke ground on two sites and a third cleared final planning. The steel was modest against the rhetoric, but it was the first physical proof of the independence pledge, and local press covered jobs rather than dependence.
+
+The welfare and policing audit drive also closed its first loop: revised assessments and a first tranche of back-payments reached families long flagged by faulty fraud scores. Unions still marched over entry-level jobs that had not returned in coding and support desks, and a contested biosecurity paper claiming a genome model had helped sketch a human-infecting design leaked into newsrooms, unsettling health officials already on standby.
+
+By December, essential services were running, dirt was moving, and some wrongs were being paid for — yet polls showed a public that saw a Union permanently a step behind attackers and employers alike.

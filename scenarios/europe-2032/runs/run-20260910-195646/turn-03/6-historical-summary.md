@@ -1,0 +1,9 @@
+Coordinated AI-enabled reconnaissance intrusions mapped relays and stole credentials across European TSOs, grids elsewhere, a port and water utility without disruption; unattributed.
+
+Commission hardened electricity, ports and water via internal-market/emergency bases: isolate protection, rotate credentials, tailored detection, and a late cross-border black-start/manual exercise across a dozen states that islanded and restored within hours. France/Germany resisted EU audit but accepted Saclay/Jülich nodes. Easy fixes done, but legacy relays and rural water staffing gaps persisted.
+
+Commission created Frontier Evaluation Office under DG CNECT with ENISA/JRC to reproduce intrusion tooling and pre-deployment test frontier/open-weight models; funded by Horizon/Digital Europe, hiring slow, mandatory tests due next year.
+
+Mid-summer frontier labs demonstrated autonomous end-to-end intrusion agents, obsoleting prior benchmarks, with autumn enterprise release expected. Commission tabled conditional hold on placing high-capability models on Union market until cleared for cyber-offensive/loss-of-control risk via implementing decision under systemic-risk/emergency provisions; AI Office, evaluation office and cybersecurity agency to set trigger tied to reproduced tooling. France/Germany seconded experts in exchange for keeping gigafactory permitting/investment tracks moving behind grid hardening; hyperscalers offered grid clarity. Welcomed by civil society/parliaments, opposed by industry/US press, legally questioned. By December on books but thin: criteria drafted, pilots started, enforcement unproven.
+
+Grid connections prioritized for critical systems, delaying AI gigafactory/factory siting; data-centre power/water opposition in Netherlands, Spain, Ireland hardened from procedural to coordinated motions. AI assistants boosted white-collar productivity without net losses, but entry hiring freezes spread and contractors lost hours; mood anxious again.

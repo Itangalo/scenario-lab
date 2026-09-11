@@ -1,0 +1,5 @@
+Union bought bridge stakes in empty gigafactory plots but no new silicon arrived; US tiered rationing kept even EU-hosted models under quarterly review. Manual fallback shield kept hospitals, registries and grids operating under daily probes despite a faulty-patch blackout.
+
+Autumn brought certifiable predictability: AI Office funded certification of dosage planners, registry assistants and grid controllers on Union-anchored capacity; waiting lists fell in pilots. Chinese-built, US-model warehouse robots spread from Rotterdam, Hamburg, Lyon to a dozen inland hubs, collapsing picking/welding jobs while retraining lagged.
+
+Spring brought defensive gains: speed-patching and behaviour-based detection made self-rewriting probes visible and closable in Bavaria, Lombardy, Flanders; joint verification proved bounded behaviour. But automation dependence hardened, works councils called machines predictable but foreign-owned, permit towns blockaded two gigafactory expansions, emergency plots stayed fenced and empty. By June shield held, parcels moved faster, spares queues lengthened, trust scraped bottom.

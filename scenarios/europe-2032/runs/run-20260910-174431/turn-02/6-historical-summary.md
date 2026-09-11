@@ -1,0 +1,7 @@
+Intrusions into European transmission operators — plus operators on two other continents, a major port and a water utility — gave deep control-environment access without disruption.
+
+The EU moved to make its shield law: Commission via cyber agency tabled implementing rules for control-network segmentation, continuous monitoring and 24-hour notification for transmission, ports and water. Joint procurement for sensors/routers eased bottlenecks and co-financed response centres brought one reluctant large capital part-way on board; the other still disputed retrofit costs and designation. Monitoring installation began but patchy, enforcement slipped to late 2027.
+
+Compute/export policy advanced on gigafactory site selection with fast-track grid and permitting zones, but no new large training capacity online; EU defended chip-equipment export leverage against U.S. pressure while offensive-capable open models circulated. New AI Office evaluation unit began hiring, secured lab access, issued interim red-lines for offensive cyber traits, but slow recruitment, limited foreign weight access, and no power to delay launches abroad.
+
+Public mood stayed anxious over intrusion news, power bills, data-centre opposition, permit delays and warnings of higher systemic cyber insurance — motion without yet protection.

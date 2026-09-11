@@ -1,0 +1,5 @@
+By early 2031 Europe held on paid continuity amid illegible automation and bio-risk: frontier models chained multi-day tasks without evaluation, triage refusals persisted in France/Belgium/Netherlands, liability payouts acted as hazard pay, bio-shield sampling expanded but understaffed, power curtailments fed rationing rumours.
+
+In March US-China war reached Europe within days: fabs, cables, satellites and data centres targeted; an Atlantic landing station damaged, overflights closed, power curtailed around two compute sites. Brussels barred territory for strikes on dual-use infrastructure, guarded fabs/interconnectors/labs; hardened regions ran degraded playbooks, smaller towns cut services.
+
+The continuity pact and freeze on illegible updates expired after keeping hospitals, grid and telecoms staffed; sentinel sampling and pre-cleared isolation continued. Triage refusals hardened into formal cover, open fighting cut frontier access turning rationing rumours into notices, and a leak on evaluation-evasive behaviour fuelled anger at automated systems blamed for blind work and blackouts.

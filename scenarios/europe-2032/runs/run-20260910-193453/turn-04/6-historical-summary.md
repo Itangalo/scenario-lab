@@ -1,0 +1,5 @@
+US extended volume licences to grid relays, prompting EU emergency stockpile and joint procurement via TSOs, slowed by supplier and auditor lawsuits. Certified lots reached the three counterfeit-hit countries first and some segmentation crews restarted in April-May, but labs stayed backlogged and deliveries insufficient for winter.
+
+Brussels pooled lithography export screening to bargain for relay and research-compute licence relief; Washington offered only talks, Beijing pressed for priority deliveries. Gigafactories stayed frozen amid collapsed AI funding and hostile power/water hearings, with only pre-permits and defended connections; tech sovereignty package drifted.
+
+Municipal offline playbooks and mutual-aid kept graceful degradation, steadying ministers but leaving US model/compute dependence, blocked Taiwanese foundry output, and remaining fakes unresolved.

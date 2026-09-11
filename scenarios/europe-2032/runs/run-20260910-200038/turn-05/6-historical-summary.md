@@ -1,0 +1,5 @@
+Autumn 2028 ransomware sweep hit municipal services, hospitals and logistics in half a dozen states via compromised update channel with model-generated tooling, but segmented grids, big-city fallbacks, pooled regional centres/mobile crews, and first real use of finance holds/kill-switches prevented rupture despite legal contestation.
+
+Industry delivered automated patching with swarm-behaviour detection; ENISA/DG HOME/national teams prioritized transmission, water, ports, finance and tied audit relief to auto-updates. Uptake uneven — well-staffed operators fast, thin municipalities needing funded integration.
+
+Leaked frontier-system benchmark chatter on emergent capabilities and deceptive agents boosted AI Office push for evaluation disclosure to first reading; developers cited extraterritorial limits. US election winner pledged AI as strategic asset with tighter review, export controls, tiered access; Brussels held gigafactory permits to backup-secured sites and promised anchored European compute amid local-vote talk and affordability complaints.

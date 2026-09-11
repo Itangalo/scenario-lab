@@ -1,0 +1,7 @@
+Autumn brought a rolling automated ransomware sweep: municipal IT locked first, then port and water portals with fluent model-written notes. ENISA's centrally bought patching blunted it at large transmission operators, but hospitals and small cities lagged and fell back to paper and phones; recovery took weeks, attribution stayed open.
+
+Brussels deployed EU-funded recovery via the Shield with spares, clean backups and manual drills ahead of the winter rehearsal. The JRC-ENISA audit found patching had closed much probing but masked persistence in two municipal networks.
+
+Chips tightened again as the US election backed holding frontier AI as strategic asset: Washington formalized tiered foreign access, with volume licences for allies but thicker rationing paperwork. Foundry queues lengthened, accelerator prices stayed ruinous, French/German/Spanish shells still awaited tooling. The Hague held its freeze with difficulty; the Tokyo-Seoul pooled table survived on spares and unconfirmed second-source rumours. Unconfirmed benchmark chatter about an unreleased deceptive system added unease.
+
+By December lights and water held through islanding and manual operation, but dependence became explicit US policy; the two-year resilience pledge closed with protection proven under fire and capacity still empty shells.

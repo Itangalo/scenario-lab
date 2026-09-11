@@ -1,0 +1,5 @@
+First-half 2028 brought renewed US chip/model controls with quotas and audit conditions; Commission pursued trusted-buyer track via re-export enforcement and Hague spares-pooling evidence, winning provisional pooled licences for EU compute subject to quarterly review, but accepted US audit terms. Spares/tooling deliveries slowed amid Taiwan naval exercises and servicing restrictions; gigafactories remained permitted but unfunded as funds stayed in patching upkeep.
+
+Swarm-defence rollout completed first phase across transmission, telecoms, ports: centrally maintained automated patching and shared indicators closed probes in hours, no major blackout, though small municipalities/water suffered false positives and segmentation/drills remained understaffed.
+
+Centrally procured AI triage, permits, tutoring sustained gains, easing data-centre opposition despite fraud/job fears. By June EU harder to disrupt but still supply-dependent and politically sustained only by heavy spending.

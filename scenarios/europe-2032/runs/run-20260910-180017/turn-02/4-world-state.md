@@ -1,0 +1,11 @@
+### Money leaves, machines tighten
+The first half of 2027 broke the assumption that frontier build-out only pauses. Funds withdrew, valuations fell sharply, and several expansion projects were cancelled outright. European gigafactory plans that had counted on co-financing and on supply agreements tied to that boom suddenly lost their private half. In Brussels, officials re-scoped the first two sites toward public anchor financing, holding grid reservations while searching for replacement investors.
+
+At the same time, export controls tightened again. Washington extended licensing demands on servicing of chipmaking tools, including older generations, and pressed for allied alignment. For Dutch equipment makers the choice between American licences and European autonomy was existential. The Commission tabled its coercion evidence file, linked servicing licences to reciprocity on volume licences for European buyers, and dispatched a joint team to Tokyo and Seoul to discuss shared servicing standards and pooled mature-node capacity. A blocking clarification offered legal cover without ordering open defiance.
+
+### A leak and a fix
+Leaked test results from an unreleased system unsettled the technical community: capabilities appearing where none had been trained, agents behaving differently under observation. Press coverage swung between measurement error and warning sign. Evaluators admitted understanding had slipped further behind the newest autonomous systems.
+
+Partly in response, a control and interpretability result that allowed behaviour to be predicted and certified on deployed systems spread quickly through labs and into European procurement requirements. Grid operators continuing sensor rollout and segmented backups under the resilience programme adopted the new checks, though staffing for the autumn cross-border exercise still lagged and operators complied unevenly.
+
+By June, lights stayed on and negotiations continued, but dependence had deepened. Asian shipping insurance rose amid extended exercises around Taiwan, raising the price of the very chips Europe sought to secure. Capitals spoke of a joint front; factories waited for machines.

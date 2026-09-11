@@ -1,0 +1,12 @@
+### Patching the cut-off
+Autumn 2027 is dominated by repair work. Migration teams move ward by ward through the hospitals hit by February's American switch-off, re-validating diagnostic assistants on European-hosted systems and open-weight substitutes. Ministry chatbots come back first; clinical tools take longer, with nurses reporting clunkier summaries and extra checks. By December most live workloads are running again, though performance remains uneven and health budgets complain about double-paying for licences and overtime.
+
+Brussels sells the effort as proof the Continuity Stack works. Demand contracts steer hospitals and administrations toward pilot capacity in the AI factories and domestic vendors, presented as a bridge into the planned gigafactories rather than a separate system. Finance ministries accept the repurposed digital and health funds for now, but warn the arrangement cannot stretch another year.
+
+### Detection without mandates
+Parallel to the repair, a quieter build starts. Public-health labs launch wastewater and sequencing pilots, while grid operators, ports and water utilities pool cyber-anomaly feeds under round-the-clock monitoring inherited from the spring audits. Officials stress this is absorption, not restriction: no new obligations on researchers or operators.
+
+That framing is helped by an unexpected move from science itself. A major European publisher and its preprint server announce mandatory screening and delayed release for papers describing AI-assisted genome design, citing recent phage findings. No state ordered it. The Commission publicly applauds and offers technical support, asking for voluntary notification to disease-control bodies. Most researchers grumble but comply; some warn of forum-shopping to journals abroad.
+
+### Friction underneath
+Not everything lands. Cross-border exercises still expose incompatible procedures between energy and water operators, and leaked chatter about an unreleased agentic system keeps trust fragile. Fraud stories and job-loss coverage keep public mood sceptical, even as restored hospital services win cautious credit. Sovereignty builders privately admit dependence has deepened while replacements are still pilots: Europe is running, but on thinner margins.

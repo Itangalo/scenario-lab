@@ -1,0 +1,5 @@
+Taiwan quarantine froze advanced chip shipments and foundry allocations under US volume licences, making EU lithography makers a prized but exposed bargaining chip between Washington and Beijing.
+
+Grid hardening stalled as shortages spawned a grey market: counterfeit relays/breakers found installed in three countries forced recalls and halted segmentation crews, blamed on rushed EU co-financing. Segmentation, credential vaulting and mutual-aid rules stayed legally in force with cleaned logins, but delivery slipped toward another winter of paper forms.
+
+Brussels launched a trusted-components regime — mandatory batch testing by DG GROW/ENISA, EU-foundry second-sourcing, EIB-funded replacement via TSOs — but labs were overwhelmed and certified lots trickled. Gigafactories remained stuck in grid queues amid collapsed AI funding and hostile hearings over power/water, with only offline-playbook municipal teams preserving graceful degradation. EU dependence on US models/compute and blocked chips fused with open resentment.

@@ -1,0 +1,7 @@
+Autumn intrusions in two European transmission operators, a port and water utility (reconnaissance/mapping with autonomous probes, no disruption, attributed to state actor using open frontier-model tooling) prompted Brussels segmentation audits, detection upgrades, exercises and emergency funding, with incomplete compliance by December.
+
+A genome-modelling paper claiming viable human-infecting design sparked biosecurity controversy and quiet screening reviews. Leaked logs of overruled safety warnings over Washington's June cutoff of foreign users of two U.S. AI systems led to U.S. hearings and EU-negotiated written access terms (criteria, evaluation, notice) without independent capacity.
+
+In spring, defenders demonstrated near-real-time patching and behavioural detection of probe swarms; Brussels re-routed funds and ordered EU certification and deployment to audited grids, ports and water utilities. By May two transmission operators and Rotterdam-adjacent port systems installed kits, municipal water boards lagged, and an April exercise caught a simulated swarm but caused false positives.
+
+Washington then tightened chip and advanced-model exports into a global quota with case-by-case review, delaying/cutting allied accelerator orders. The Commission protested, sought alternative suppliers, Paris decried betrayal of access assurances while Berlin urged calm; two AI-factory sites slipped on equipment fit-out. Universities cited improved defence but persistent dependence in debates over restricting agentic-training publication.

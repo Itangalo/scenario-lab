@@ -1,0 +1,10 @@
+### A patch that works, a paper that frightens, and empty desks
+The spring brought rare good news for defenders. A new generation of automated patching and behaviour-based detection, built in part from shared incident feeds, began closing off an entire class of swarm intrusions. ENISA rushed teams into the municipal utilities that had failed last autumn's drills. In certified hospitals the rollout was smooth; in smaller town halls the tools arrived faster than staff who understood them, and two high-profile outages during installation briefly took billing systems offline.
+
+At the same time a contested preprint claimed a genome model had helped produce a viable design for a human-infecting organism. Virologists argued over methods and accused the authors of both hype and irresponsibility. Health officials in Brussels treated it as a warning rather than an emergency, quietly pre-positioning sequencing stocks and rehearsing response protocols.
+
+Neither development paid the rent for graduates. Entry posts in law, accounting, software and customer support stayed frozen. The Commission finally moved home money: a redeployed social fund offering six-month hiring subsidies, paid traineeships in hospitals and municipalities, and an income bridge where posts were gone, partly co-funded by levies on large deployers of assistants.
+
+Rollout was uneven. Labour ministries welcomed funded posts; finance ministries fought the levy definition; employers complained reporting was vague. First placements trickled out by June, too few to fill the fairs, but enough to show Brussels was spending at home.
+
+Abroad, the middle-power compact kept pooling hosting quotas and black-box test results without new cash. The holdout capital pocketed the offer of transition money, promised to study unwinding its separate supply deal, and signed nothing.

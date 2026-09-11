@@ -1,0 +1,10 @@
+### Exercises on paper, pressure at sea
+The spring brought drills and strait warnings in parallel. Transmission operators and big ports ran the joint continuity exercises ordered after the winter audit. ENISA and energy regulators pushed binding detection baselines through the cooperation groups, with money stitched from existing connectivity and cohesion lines. Operators complied unevenly: large grids installed new sensors, smaller ports asked for delays, finance ministries held back co-financing until milestones were audited. Mutual-aid pledges were signed, but staffing gaps remained.
+
+The interpretability advances spotted in labs last autumn hardened into practice. Frontier developers integrated prediction and certification tooling into deployed assistants, and European evaluators adopted the same methods under existing mandates. Incidents of erratic agent behaviour fell, and reviewers could forecast more failures before they showed. Trust in oversight improved without a new law.
+
+Offices kept the mood afloat. Assistants spread further in legal, accounting and administrative work, lifting junior output. No layoff wave appeared, and hiring picked up slightly.
+
+The drag came from outside. Extended manoeuvres around Taiwan lifted shipping insurance and rattled chip and equipment supply expectations. No shipments stopped, but procurement officers in Europe began pricing delay risk, and municipal fights over data-centre power sharpened as hyperscalers paused expansions pending price clarity. Gigafactory site selection and the tech package inched forward on permits and grid queues, mediated case by case, but timetables slipped again.
+
+Brussels chose to concentrate on the Shield rather than open a fourth front, a discipline that preserved delivery credibility but left capacity building visibly slow. Lights stayed on, assurance rose, yet dependence felt heavier as sea-lane risk grew.

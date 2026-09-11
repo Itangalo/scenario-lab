@@ -1,0 +1,5 @@
+Spring brought a largely automated, model-built ransomware wave hitting municipalities, hospitals and logistics across several states, causing outages and painful rebuilds with unclear attribution. Half-staffed Shield centres detected it faster but could not stop it, vindicating operator warnings on cost and staffing.
+
+In parallel, researchers including Europeans showed automated patching and swarm detection that tipped defence back for one intrusion class. Brussels redirected emergency funds to deploy these stacks to the transmission, port and water operators compromised in autumn, with surge teams and fast-track vendor certification; rollout uneven over liability and access.
+
+Gigafactory permits, grid links and Shield exercises advanced slowly amid siting disputes, while extended manoeuvres around Taiwan raised shipping insurance and chip-supply fears without cutoff; Commission kept lithography leverage unplayed. By June Europe had absorbed a blow, fielded a fix, and felt more exposed to distant straits.

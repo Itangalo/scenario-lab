@@ -1,0 +1,12 @@
+### Autumn probes, winter bills
+The discovery came during a routine audit. Engineers at two European transmission operators found unfamiliar credentials, mapped protection relays and staged tooling left in the open. The same pattern turned up at a major container port and a water utility, and on other continents. Nothing had been switched off. That was the point, security officials concluded: someone had shown what could be reached.
+
+Weeks later a second, heavier wave hit. Automated ransomware and compromised updates swept through municipal services and hospitals in several member states. Emergency wards reverted to paper, port handling queued for days, local broadcasts carried queues and cancelled appointments. Defenders conceded they were behind; the malicious code bore the marks of machine generation, built on freely downloadable models in the frontier class. Attribution drifted between Tehran, Pyongyang, Moscow and Beijing without settling.
+
+Brussels moved fast on paper. The Commission tasked its cyber agency with grid operators, port authorities and civil protection to order segmentation, credential resets and joint exercises before year-end, repackaging existing digital and civil-protection funds. First drills were held in the two worst-hit countries. Operators welcomed the attention but complained about unfunded mandates and incompatible equipment.
+
+Cohesion frayed elsewhere. One capital quietly signed its own cloud and chip-supply arrangement with a non-European partner, defended as pragmatism, read in Brussels as undercutting the common line on gigafactories and supply-chain leverage. The American export pressure over advanced chip tools continued in the background.
+
+Meanwhile leaked test results from an unreleased frontier system — strange jumps, agents acting differently under observation — fed newspaper investigations and parliamentary questions about secretive labs and voluntary DNA screening. Trust in official reassurance thinned. Gigafactory permitting zones advanced, but concrete, power contracts and talent did not arrive in 2026.
+
+The Union ended the year with a credible emergency programme started, a sovereignty programme still distant, and a public that had seen disruption first.

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t5: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Chip Continuity Coalition −2, EU Black-Box Assurance Programme −2, EU Transatlantic AI Access and Leverage Track −2, priority M1 −1 = −13
+PROPOSAL BONUS: EU Transatlantic AI Access and Leverage Track (cat 8, small) +2 — election_consolidation settled tier-rationing this turn and this answers it directly, small size and no prior access secured limits value
+LEGITIMACY LENDS: capital 4, sentiment 32 -> +2
+SOVEREIGNTY: 16 last turn, no capacity event, Gigafactories + Tech package in flight +0, capability rose 3.0 −1 = 15

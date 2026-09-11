@@ -1,0 +1,5 @@
+Spring US key cutoff froze diagnostics/procurement/grid tools with no appeal; EuroHPC open-weight fallback via health-cyber-police cell held large hospitals slower under re-verification, straddling firms/clinics went dark again. Core registries rebuilt from offline backups, mobile teams carried clean images/open models to small clinics/towns site-by-site; reinfections and backlog persisted, core held without confidence restored.
+
+Southern gigafactories stayed frozen by blockades/court-supervised suits; Commission offered co-investment/mediation, no override. Northern halls absorbed overflow, no scale substitute. Washington extended lithography/service curbs to older tools, Dutch complied; single-negotiator line and allied volumes on paper, US key restoration queued/opaque; large member's halls took clinic overflow under EU rules, thinning common line.
+
+Ordinary offices showed flat productivity boom in law/accountancy/admin/consulting, biggest for juniors, no employment fall — relief for workers, ceiling for investors. New backup/rebuild standard passed as guidance: tested offline copies, clean kits, drills, small sites first.

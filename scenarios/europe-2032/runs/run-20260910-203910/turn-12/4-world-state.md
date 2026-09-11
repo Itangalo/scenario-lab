@@ -1,0 +1,10 @@
+### Holding the line degraded
+January to June 2032 was not a recovery. It was an exercise in keeping degraded systems from stopping altogether.
+
+ENISA, the crisis liaison network and health emergency bodies extended the operating lines from the two continuity programmes that closed this spring. Municipal registries, hospital administration and local desks stayed on European-hosted stacks rebuilt from clean backups, with logging and pre-checks left on the open models doing triage and procurement. Power stayed on. Clinics stayed open, often on paper forms, overtime shifts and staff lent across borders.
+
+It worked, after a fashion. Fresh automated intrusions still forced repeated isolations, and queues lengthened again in several cities. Clinicians complained the workarounds were becoming permanent. But there was no cascading outage, and for the first time in a year response teams could point to substitutions that held through an incident rather than collapsing.
+
+That thin success bought little goodwill. With no domestic frontier capacity, firms still faced delayed chip shipments and tighter licence terms, and the logistics pilots using foreign hardware and foreign control software expanded from Rotterdam and Hamburg to two more hubs, deepening works-council anger. A Health Council bid for better biological detection produced only passive upgrades; detection remained slow.
+
+Brussels was unusually frank: ministers were asked to endorse degraded service standards, not a return to normal, and told frontier access could not be promised. Some capitals grumbled that sustainment without rebuild was managed decline, and cohesion money repurposed for overtime drew auditors' warnings. The new sustainment mandate kept fragmentation at bay, but left the Union running on endurance with no path yet back to full service.

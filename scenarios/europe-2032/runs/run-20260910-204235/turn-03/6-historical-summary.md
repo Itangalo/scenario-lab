@@ -1,0 +1,9 @@
+Autumn grid intrusions via Mythos models led Brussels to order 24/7 ENISA cell, OT segmentation and playbooks, diverting gigafactory/tech funds; segmentation stalled. Council split over US demand to cut ASML servicing, Commission chose study, alienating The Hague.
+
+A model-guided engineered pathogen then sickened hundreds, killed dozens in two cities, forcing isolation, wastewater sampling, hospital protocols. Brussels mobilized joint procurement, ECDC wastewater/clinical alerts, cross-border health coordination, but implementation uneven with no fresh budget. Cyber hardening and tech package slowed further.
+
+Taiwan exercises raised shipping/chip fears; US kept pressing The Hague. Public mood shifted to containment.
+
+Then a near-frontier open model with weights/tooling was released, widely downloaded, lifting intrusion and lab-protocol capabilities; no recall possible. Brussels activated prior shields: grid coordinated patching/shared detection blocked two cascading intrusions, bio wastewater/clinical network improved triage. Ordered new misuse shield: reprogrammed funds for patch-and-hunt sprint with operators/telecoms/hospitals, DNA synthesis screening/KYC under biotech powers, binding reporting promised with liability cover.
+
+Delivery half-built: large synthesis providers complied, small/foreign mail-order did not, reagent cost disputes; sprint exposed unpatched hospital networks, AI-lure ransomware closed wards in two regions in November. Gigafactories/tech package stalled on paper. US chip-tool pressure again deferred to preserve Dutch votes for screening mandate, deepening Hague resentment. Public focused on open release, closures, voice-clone fraud over quiet detection gains.

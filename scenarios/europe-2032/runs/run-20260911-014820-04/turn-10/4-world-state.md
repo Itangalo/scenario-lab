@@ -1,0 +1,10 @@
+### Corps holds the line, trust breaks elsewhere
+Spring brought no new instrument, only an effort to make the one running work. Placement officers pushed funds through national ministries, and the number of paid posts in hospitals, town halls and fenced building sites rose from thousands into the low tens of thousands. In Lyon, Porto and Gdansk, where permit and care-scheduling helpers ran on European-anchored machines, queues kept falling and mayors asked for more slots.
+
+It was not enough to change the jobs map. Graduate hiring stayed frozen across law, accounting, software and customer operations, and sabotage at power and cable works became a weekly police report.
+
+Then two shocks collided. Courts and an ombudsman in two member states found a benefits-scoring system had systematically cut entitlements for months. Caseworkers had approved flagged cases in under a minute, logs that recorded the pattern were never read, conformity papers were in order. Brussels called it a breach of high-risk duties, suspended the deployments and ordered review of the auditors — but nightly coverage showed families repaying debts they never owed.
+
+At the same moment, American labs announced a tailored cancer therapy moving to ordinary clinical use and a physics result that settled a long dispute over battery materials. Both arrived in Europe on licensed, US-controlled terms, with no European firm onboarded to the allied-access channel and shipping surcharges from extended exercises around the Taiwan Strait adding to chip delays.
+
+Hospitals and ports stayed degraded but running. The Union kept procurement on domestic capacity where it existed and kept the transatlantic talks warm without escalation. Voters saw useful help in some wards and, in others, dependence made visible: cures announced elsewhere, jobs missing at home, and a welfare algorithm that had punished the poor.

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: EU Middle-Power Supply-Chain Coalition for Compute Access and Joint Evaluation −2, EU Protected Sites and Cutoff Continuity Operation −2, priority −1 not charged (capital below 20, no effect) = −4
+PROPOSAL BONUS: EU Protected Sites and Cutoff Continuity Operation (cat 6, small) +4 — eu_frontier_access_denied and sabotage freeze fired this turn and operation answers both directly
+LEGITIMACY LENDS: capital 4, sentiment 2 -> +0, capped (capital above sentiment, no lend)
+SOVEREIGNTY: 14 last turn, no category 4 finish, no category 4 in flight +0, eu_frontier_access_denied t12 −2, capability rose 1.5 −0 = 12

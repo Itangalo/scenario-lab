@@ -1,0 +1,5 @@
+January ransomware cascade via shared providers hit municipalities, hospitals, port logistics and two grid operators' office networks; high-voltage controls held under ENISA segmentation baselines but pre-emptive disconnections caused blackouts. Attribution unclear — compromised update vs. Mythos-class downloadable intrusion kits.
+
+ENISA-led triage under Cyber Shield with emergency digital funds and loans; grid/infrastructure funding conditioned on indicator-sharing. Recovery uneven: large operators fast, small municipalities queued; cyber cover further repriced/withdrawn; manual ops maintained services; permanent monitoring procurement stalled again.
+
+Gigafactory plans kept alive on permits and renegotiated land/power deals without two hyperscalers; lithography export line held, no new domestic capacity. Public support for rapid AI build-out fell further amid fears of freely available attack tooling, even as labs pushed longer-running agents.

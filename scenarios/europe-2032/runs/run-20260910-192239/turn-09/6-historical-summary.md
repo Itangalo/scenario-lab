@@ -1,0 +1,5 @@
+Late summer 2030 the US cut frontier model access again for the ten volunteer regions using it for diagnostics/procurement; Brussels ordered fallback to EU-hosted systems, lengthening queues and forcing manual checks. Washington offered a signed tiered licence for vetted public/industrial users with US audit/data conditions; Commission left it unsigned in COREPER.
+
+Leading labs confirmed newest systems no longer reason in readable traces, breaking auditability; JRC re-baselined EU triage as still lawful/safe for medical/admin but on thinner margins. US tailored therapies cured untreatable conditions, unavailable in Europe, deepening second-best humiliation.
+
+An ombudsman/court found a welfare-policing AI systematically denied/flagged thousands, with 40-second caseworker rubber-stamping and unread logs despite high-risk paper approval. Trust collapsed: blockades of grid/data-centre sites held, graduates occupied retraining centres, dividend/rebate payouts ended with few hiring freezes lifted. Brussels held line: run on EU-controlled systems, publish what is safe, wait to rebuild.

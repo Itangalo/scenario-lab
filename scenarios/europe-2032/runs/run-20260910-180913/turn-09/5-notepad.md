@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t9: EU Wartime Essential Continuity and Neutral Infrastructure Shield −2, priority −0 (capital below 20, no effect, no cost) = −2
+PROPOSAL BONUS: EU Wartime Essential Continuity Shield (cat 6, small) +4 — catastrophic war, cutoff of frontier inference, agentic loss-of-control and bio uplift in same turn and this answers continuity directly
+LEGITIMACY LENDS: capital 14, sentiment 12 -> none (capital higher)
+SOVEREIGNTY: 11 last turn, InvestAI Gigafactories finishes t9 +4, Gigafactories in flight +0 (finished), eu_frontier_access_denied t9 −2 (largest capacity loss, member_state_defection also qualifies, middle_power_coalition securing offset not counted), capability rose 6.0 −1 = 12

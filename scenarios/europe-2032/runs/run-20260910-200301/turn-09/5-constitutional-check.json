@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Metric change violates Constitutional Constraint 9: `eu_political_capital` increases by 10.0 points (from 13.0 to 23.0), which exceeds the hard cap of 25-point maximum movement per turn. While the increase is within the 25-point bound, the jump of 10.0 points must be justified under the metric rules and narrative. However, no corresponding event, measure completion, or mechanism is described in the narrative that would generate such a large gain. The Game Master's Notepad shows only a +3 proposal bonus from completing EU Essential Access Fallback and no legitimacy lend (since capital > sentiment). There is no other source for +10 net gain. The notepad calculates sovereignty as 18 (down 2), but does not account for political capital rising to 23. The unexplained +10 in political capital lacks a rule-based or narrative basis and violates the requirement that metric movements be grounded in the system — this is a violation of Constraint 7 (separate stocks must be free to move apart) in spirit, as it implies an unjustified coupling between crisis response and capital gain without mechanism.\n- Narrative violates Constitutional Constraint 8: The phrase \"as an entry ticket to their risk pact\" implies that a future event gate (admission to the risk pact) is conditionally open based on current actions, which constitutes telegraphing. The narrative must not suggest that a specific future event is now more likely or has been pre-negotiated. Reporting data and signatures is permissible, but framing it as an \"entry ticket\" implies a causal pathway to a gated outcome, which belongs in event evaluation, not narrative."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

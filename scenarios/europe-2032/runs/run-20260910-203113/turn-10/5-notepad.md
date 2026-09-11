@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t10: M10 EU Essential Workloads Continuity and Rationing Reserve −2, M11 EU Public Benefit AI Deployment with Trusted Signatures −2, M12 EU Logistics Displacement Transition and Care Retraining Compact −2, priority M11 −1 = −7
+PROPOSAL BONUS: EU Logistics Displacement Transition and Care Retraining Compact (cat 7, small) +2 — answers warehouse layoffs and care staffing gap from last two turns directly
+LEGITIMACY LENDS: capital 12, sentiment 22 -> +2
+SOVEREIGNTY: 17.5 last turn, no capacity event? no — export_control_escalation t10 −2, no cat4 in flight +0, capability rose 1.0 −0 = 15.5

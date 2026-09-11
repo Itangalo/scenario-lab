@@ -1,0 +1,220 @@
+{
+  "turn": 13,
+  "counters": {
+    "measures": 10,
+    "standing": 1
+  },
+  "records": [
+    {
+      "id": "M1",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "InvestAI Gigafactories",
+        "category": 4,
+        "size": "large",
+        "finish_turn": 7,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "eu_ai_sovereignty up, via €200bn for four to five sites",
+        "started_turn": 0
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "finished"
+      },
+      "added_turn": 0,
+      "removed_turn": null
+    },
+    {
+      "id": "M2",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "Tech sovereignty package",
+        "category": 4,
+        "size": "large",
+        "finish_turn": 6,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones",
+        "started_turn": 0
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "finished"
+      },
+      "added_turn": 0,
+      "removed_turn": null
+    },
+    {
+      "id": "S1",
+      "table": "standing",
+      "actor": "world",
+      "fields": {
+        "posture": "ALLIANCE"
+      },
+      "derived": {},
+      "added_turn": 0,
+      "removed_turn": null
+    },
+    {
+      "id": "M3",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "Grid Shield and Essential Services Hardening",
+        "category": 6,
+        "size": "large",
+        "finish_turn": 6,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up substantially, ai_safety spillover via incident learning",
+        "started_turn": 1
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "finished"
+      },
+      "added_turn": 1,
+      "removed_turn": null
+    },
+    {
+      "id": "M4",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Frontier Evaluation Facility",
+        "category": 5,
+        "size": "small",
+        "finish_turn": 5,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "ai_safety up, eu_ai_sovereignty spillover via evaluation leverage",
+        "started_turn": 2
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 2,
+      "removed_turn": null
+    },
+    {
+      "id": "M5",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "Municipal Response and Dependency Triage Surge",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 6,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up, to stop cascade from municipal and supply-chain edge",
+        "started_turn": 3
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 3,
+      "removed_turn": null
+    },
+    {
+      "id": "M6",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "Containment-Grade Evaluation and Bio-Screening Upgrade",
+        "category": 5,
+        "size": "small",
+        "finish_turn": 8,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "ai_safety up, resilience up small via bio detection",
+        "started_turn": 4
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 4,
+      "removed_turn": null
+    },
+    {
+      "id": "M7",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "Allied Choke-for-Compute Bargain",
+        "category": 8,
+        "size": "small",
+        "finish_turn": 9,
+        "applies_to": "US, allied supply-chain holders and EU jurisdiction",
+        "targeted_effect": "eu_ai_sovereignty up small, eu_political_capital up via allied compute relief",
+        "started_turn": 8
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 8,
+      "removed_turn": null
+    },
+    {
+      "id": "M8",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "Automated Decision Redress and Human Review Guarantee",
+        "category": 7,
+        "size": "small",
+        "finish_turn": 10,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "eu_political_capital up small via restored trust, public_sentiment up, resilience up small",
+        "started_turn": 9
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 9,
+      "removed_turn": null
+    },
+    {
+      "id": "M9",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "Emergency Containment and Essential Continuity Protocol",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 11,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up small, ai_safety up small via containment learning",
+        "started_turn": 10
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 10,
+      "removed_turn": null
+    },
+    {
+      "id": "M10",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "Seek Adherence to US-China Restraint Accord and Joint Bio-Cyber Defence Cell",
+        "category": 8,
+        "size": "small",
+        "finish_turn": 13,
+        "applies_to": "US, China and EU jurisdiction",
+        "targeted_effect": "ai_safety up via shared assurance, resilience up small via bio/cyber defence",
+        "started_turn": 11
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 11,
+      "removed_turn": null
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+Late-August open-model ransomware sweep hit Wallonia-Lombardy municipalities, hospitals and two grid operators; Bavarian operator fell back to phone operation. Attribution collapsed; EU triggered cyber reserve with ENISA segmentation, kill-switches, clean rebuilds for EU-hosted stacks.
+
+Through winter-spring services degraded but stayed open on paper, phone-run substations, escorted diesel/tapes. Hospital Power Guard closed out, holding dozens of clinics; guarded-convoy dispute near Munich lost a day but wards stayed lit.
+
+Leaked US frontier benchmarks suggesting unexplained emergent/observer-sensitive behavior further eroded trust. A new open model family within months of frontier saw hundreds of thousands of downloads, permanently spreading autumn-sweep tooling to private hardware beyond EU recall. Strait exercises raised shipping insurance; tightened chip/model export rationed even allies. Brussels rationed remaining allied compute to rebuilds, restoring sovereignly but slower and behind frontier. Continuity Pact for diesel/overtime/fallbacks extended containment; capital stayed away, shells dark.

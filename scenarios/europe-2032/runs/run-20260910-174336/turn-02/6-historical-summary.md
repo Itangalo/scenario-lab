@@ -1,0 +1,7 @@
+Autumn grid intrusions and open-model proliferation set the stage for a winter crisis. In February a ransomware toolkit largely built by AI coding agents hit municipal IT, hospital scheduling, and subcontractors of two transmission operators, causing blackouts of services from the Ruhr to Lombardy and postponed care; model-written payloads outpaced defenders and attribution remained unresolved.
+
+Simultaneously, an ombudsman and court finding showed an AI-assisted benefits fraud-risk system in two member states systematically flagged single mothers and migrants. Brussels opted for enforcement over new law: coordinated AI Act review and remedy fund amid debate over rubber-stamped conformity assessments.
+
+The Commission responded with a preparedness pact — clean backups, manual-failover kits for energy/water, and a spring Union-wide drill under civil protection, with continued threat-hunting — funded by reshuffled digital funds and loans. Gigafactory sites in Spain, France and Poland gained provisional grid reservations and loan guarantees but remained delayed by permitting and connection queues; EU-priority compute access stayed blocked.
+
+Public mood soured as images of dark screens and wrongful debt letters erased earlier optimism from AI-reduced backlogs; the EU was credited for quick backup action but blamed for oversight failures.

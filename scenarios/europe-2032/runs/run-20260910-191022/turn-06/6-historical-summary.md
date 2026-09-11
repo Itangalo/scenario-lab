@@ -1,0 +1,7 @@
+By early 2029 European dependence on US models became acute: in February the leading American model went dark for EU users under new US deployment controls, disabling hospital triage/documentation tools in Rotterdam, Lyon, Munich and ministry pipelines. Washington cited securing advanced systems and tiered partner access; Brussels read it as rationing.
+
+The Commission fallback moved hospitals and administrations to vetted open models on EU hosting via emergency procurement, restoring basic functions within weeks though slower and costlier; wards stayed open and services ran on European machines. Gigafactory projects remained permitted and grid-reserved but unfinanced and unbuilt. Welfare/policing AI audits and redress continued with payments still stalled.
+
+Simultaneously entry-level hiring in coding, analysis and support failed to recover, sparking union marches in Paris and Warsaw linking foreign-model dependence to AI displacement. By June essential systems were upright but thinner and seen as second-best; the independence pledge survived without collapse but trust fell further.
+
+Earlier context persisted: autumn 2028 ransomware sweep had forced paper fallback and postponed operations without blackouts; benefit-fraud AI rulings left law as high-risk but enforcement hollow; pathogen shield, ring-fenced non-US hosting, and productivity-without-layoffs gains continued in background.

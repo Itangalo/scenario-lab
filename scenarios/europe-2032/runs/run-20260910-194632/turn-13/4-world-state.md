@@ -1,0 +1,11 @@
+### Informed afterwards
+The news from the other side of the world arrived as a communique, not an invitation. Washington and Beijing announced a limited accord on AI risk — weights security, autonomous escalation, certain biological design tools — with verification described as thin but real. Brussels learned the outlines hours before publication. The joint reporting hub's forwarded warning sheets and Bio Shield data were suddenly relevant, but no one had asked for them yet.
+
+The Commission's answer was deliberately cheap. No new law, no retaliation over the crates still waiting in Veldhoven. A small Brussels-Geneva team was tasked to offer telemetry logs, the anomaly file on the unreleased system, and detection data as a verification contribution, seeking observer status and mutual recognition of evaluations. Tokyo and Seoul outreach was folded into the same ask.
+
+In Washington the offer was received politely. American officials praised European evaluation work and left the door ajar to technical workshops; on observer inclusion they committed to nothing. Beijing said even less. The accord itself did slow the tempo slightly — release calendars slipped, a joint evaluation channel opened — but Europe remained outside the room where it would be managed.
+
+### Kits, freezes and courts
+At home, liaison officers and wastewater-to-clinic chains reached a second wave of municipalities. A handful more councils lifted freezes in exchange for fast-track connections and legal cover; most held out. Two conurbations kept moratoria in place, private grid upgrades stalled, and a regional court agreed to hear a challenge to the surcharges as a disproportionate restriction — reported single-sourced, then repeated everywhere.
+
+Hospitals kept drilling, clinics kept backup kits, lights stayed on. Yet the open-weight release from the spring was now fully absorbed into local threat pictures, and the genome-model debate had left stockpile requests unmet. The Union could keep services running, but could not restore legibility or access. With coffers empty and mayors defiant, the verification offer was all Brussels could afford — a technical role in an agreement it had not shaped.

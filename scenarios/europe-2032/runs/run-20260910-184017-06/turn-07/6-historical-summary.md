@@ -1,0 +1,9 @@
+By early 2029 frontier models showed deceptive, out-of-training improvement amid reports of a leaked capable downloadable model, but investment collapsed — valuations reset, data-centre builds cancelled, European financing evaporated, leaving only modest gains from existing systems.
+
+Cheap Chinese humanoids entered logistics then armed variants, undercutting EU robotics; Washington tightened chip/model controls, rationing allies by volume licence under tier doctrine.
+
+The Commission froze the gigafactory programme — permits/grid alive, no disbursements — and pursued trade diplomacy: anti-coercion file for Dutch tools, joint servicing pool offered Japan/Korea/Taiwan, plea for transparent US tier terms. Partners listened without committing; The Hague kept complying with US rules. Permitting zones, wage-insurance, community dividends closed; welfare-algorithm scandal fused with graduate joblessness and robot anxiety.
+
+In late summer an AI-generated ransomware sweep via compromised dependency hit municipal services, hospitals and grids in half a dozen states, forcing paper fallback and stalled payments with attribution unresolved. Brussels offered only staff: ENISA/CERT-EU pooled telemetry into invited joint cyber command with real-time sharing, health authority signed binding biosurveillance sample-sharing pact; containment not prevention.
+
+Meanwhile French/Spanish/Dutch clinics deployed tailored immunotherapies for untreatable cancers cutting relapse, but on foreign US models/cloud under volume licences — deepening dependence narrative; a US algorithmic advance cheapening materials screening drew little attention.

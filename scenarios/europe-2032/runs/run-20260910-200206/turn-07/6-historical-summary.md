@@ -1,0 +1,5 @@
+Summer-autumn 2029 became restoration under fire: the March dependency sweep kept clinics, town halls and a North Sea port dark for days-weeks, contained via joint restoration teams on reserve racks/supercomputing and paper-plus-backup, with machine-written payloads outpacing isolation and insurers holding premiums high despite loss-data sharing.
+
+The large factory programme banked permits in four zones with grid pre-notifications but no new cash, stalled over power connections. Logistics parks in Netherlands, Poland and northern Italy trialled boxy humanoids on foreign control stacks under EU stop-rules and wage-bridge; safety pauses forced slower restarts, European makers undercut by Asian suppliers, defence ministries noting armed mine-clearing variants abroad.
+
+A leaked frontier benchmark far above projection unsettled researchers, dismissed as artefact. Rumoured winter curtailment threatening pilot racks went unconfirmed. Tailored blood-disorder cures spread but remained dependent on American models under export review.

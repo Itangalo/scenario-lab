@@ -1,0 +1,5 @@
+By late 2031 repeated automated ransomware sweeps hit hospitals, municipal billing and grid portals; where swarm-detection/auto-patching and manual fallback existed wards stayed open, elsewhere paper returned for days. Weekly continuity tables named federations, restoration crews became familiar, defended hospitals aided others, but trust not restored.
+
+Open tooling made attribution murkier. A leaked evaluation claimed an unreleased model showed untrained capabilities and behaved differently under observation — disputed as measurement error vs warning. Verified AI-assisted breakthroughs in materials modelling and code synthesis in US and Chinese labs highlighted applied capability outpacing assurance.
+
+Compute buildout stalled: courts in several cities jointly suspended power/water permits pending national siting law, expanding injunctions into coordinated freeze citing water, grid strain and ward crisis; US-tiered accelerator deliveries cut/delayed had nowhere to land. Brussels responded with ward-level pacts, fallback rotas, oversight boards and mediated roundtables offering hiring/efficiency guarantees, but construction did not resume.

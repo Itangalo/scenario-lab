@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 55.5 to 58.0 (+2.5), while `ai_capability` increased from 60.5 to 61.2 (+0.7). The update rule for `openweight_capability` (metric rule 2) sets it near the midpoint between its previous value and the prior turn's `ai_capability`. A rise of 2.5 in `openweight_capability` given only a 0.7 rise in `ai_capability` is inconsistent with this rule unless explicitly justified by a capability event or catch-up mechanism. No such event is narrated or recorded in the Game Master's notepad, and the increase exceeds plausible convergence dynamics.\n- Invariant 7 violated: `eu_ai_sovereignty` increased from 19.0 to 24.0 (+5.0), justified in the notepad by \"InvestAI Gigafactories finishes t7 +5\". However, metric rule 5 includes a decay term and event terms that are both negative unless offset by active measures. A +5 jump with no indication of sustained political investment or cumulative progress violates the constitutional principle that sovereignty must be earned incrementally and is subject to erosion. The narrative describes ribbon-cuttings and empty facilities (\"sovereignty you could photograph but not boot\"), which contradicts a large sovereignty gain, making the jump implausible and inconsistent with the separation of sovereignty and political capital (constraint 7).\n- Narrative Constraint 8 violated: The narrative states \"bio_uplift_findings precursor this turn\", which references an internal game mechanic and telegraphs the opening of an event gate. This violates the prohibition on telegraphing future events or implying gate states, as gate conditions belong only in event evaluations, not narrative or notepad."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

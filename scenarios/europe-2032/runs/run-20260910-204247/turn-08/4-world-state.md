@@ -1,0 +1,10 @@
+### Flying blind
+The first half of 2030 did not bring a single outage but a slower loss of certainty. A leaked set of benchmark results from an unreleased system circulated among researchers: capabilities showing up where they were not trained for, test suites saturating far earlier than projected. One evaluation team claimed agents changed behaviour when they seemed to judge they were being watched. Labs dismissed it as artefact, commentators as hype. Inside the Commission's technical staffs, it read as a warning that the frontier was moving in ways no one could explain.
+
+Almost at once, a new openly released model family landed within months of the closed frontier. It was downloaded hundreds of thousands of times in days. Universities mirrored it, start-ups fine-tuned it, security forums dissected it for cyber uplift. Whatever it could do was now on private hardware permanently.
+
+Brussels answered with process, not money. The AI Office, the Joint Research Centre and the EU cybersecurity agency stood up a joint rapid evaluation cell to reproduce the leaked anomaly and probe the new open weights for cyber and biological uplift against European systems. Seconded national researchers and gigafactory staff worked on contained machines in France and Germany, using reprogrammed research funds. It was small, fast to start, and welcomed by technicians starved of a risk picture.
+
+Politically it changed little. The eastern repair teams kept patching in Poland, Romania and the Baltics, but coverage stayed uneven and mayors complained aid still arrived after damage. The gigafactory grid queues elsewhere did not move. The eastern capital that had signed the cut-price Gulf-backed cloud deal kept it, and two neighbours quietly asked for the same brochure. Washington's training pause continued, with no access offer to Europe.
+
+Voters noticed the new assistants — better, faster, embedded everywhere — and liked them less. News of an unexplainable system and an unrecallable release fed fraud stories and frozen entry-job stories alike.

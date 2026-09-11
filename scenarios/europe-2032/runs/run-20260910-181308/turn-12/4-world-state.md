@@ -1,0 +1,11 @@
+### Pandemic mode
+The winter-spring began with funerals, not communiqués. A new pathogen, stitched together with the help of design models, moved faster than seasonal flu and killed like no recent virus. Airports emptied, wards filled, and every capital put the rest of its agenda on hold.
+
+In Brussels the only tool with fuel in it was the Keep-Running Cells programme. Islandable generators, clean system images and travelling repair crews were ordered toward hospitals, testing labs and appointment systems in the two states scarred by last summer's blackouts and the municipalities still on paper since February. Where kits had already landed, intensive-care lights stayed on through grid wobbles; where diesel contracts were still in procurement, doctors triaged by torchlight. Mayors learned quickly which list they were on.
+
+### Cures on licence, reagents on quota
+The same weeks brought a double bind. Washington tightened chip and model controls again, and under the standing American posture even allied buyers were rationed. Volume licences for therapeutic compute shrank, detection reagents queued, and EU hospitals running tailored therapies on foreign models faced per-patient clearances and delayed courses.
+
+At the same time Washington and Beijing announced a limited accord on securing weights and restraining biological design tools, with thin verification. Europe was not at the table. Brussels offered pooled clinical and detection telemetry from its middle-power channels in exchange for observer status and continued supplies, and was told to accept the licence terms first. It accepted.
+
+Talk shows that had resented dependence now counted it in body bags. Offices emptied, productivity statistics meant nothing, and municipal generator cooperatives in the blackout states quietly refused to release backup power to data centres during peaks. Triage messaging — what stays open, where to get care — was all the Union could credibly say, and even that frayed where help did not arrive.

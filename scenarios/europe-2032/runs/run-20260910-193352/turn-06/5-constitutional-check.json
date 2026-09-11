@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `eu_ai_sovereignty` increased by 5.0 (from 18.0 to 23.0), but the Game Master's Notepad attributes +4 from the \"Tech sovereignty package finishes t6\", +1 from \"Gigafactories in flight\", and +2 from capability growth (capability rose by 1.0, so +2 under rule 5), implying a total increase of +7. However, the notepad then concludes \"SOVEREIGNTY: ... = 23\", which requires a net +5. This internal inconsistency suggests double-counting or incorrect application of metric rules. The notepad must not both apply the package finish (+4), gigafactories (+1), and full capability delta (+2) and then arrive at only +5 — those terms sum to +7, which would imply either an offsetting decay term not stated or an error in accounting. Since the final value is correct but the justification overstates contributions, this constitutes a violation of the constitutional requirement for coherent, rule-consistent metric derivation.\n- Modelling choice 7 violated: `eu_political_capital` increased from 7.0 to 11.0 (+4.0), while the notepad attributes only +2 from \"LEGITIMACY LENDS: capital 9, sentiment 29 -> +2\". No other source for political capital growth is provided. An increase of +4 requires additional justification (e.g. measure completion, event bonus), but none is recorded. This implies an unexplained +2 in political capital, violating the constraint that sovereignty’s contribution to political capital cannot exceed +3 per turn and must be explicitly bounded — especially since sovereignty itself rose significantly. Without a clear breakdown, this risks implying that sovereignty growth is directly and fully translating into political capital, which contradicts the constitutional separation of the two stocks."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

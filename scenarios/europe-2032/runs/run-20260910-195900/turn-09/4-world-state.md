@@ -1,0 +1,13 @@
+### Patching holds, ground shifts
+The swarm-defence rollout finished as a field operation. In towns where automated patching and authenticated spares had arrived together, municipal utilities and hospital servers stayed online through the autumn intrusion waves. Where suspect chips were still being pulled, quarantines held wards on manual procedures for weeks. Civil protection, the EU cyber agency and energy regulators declared the toolkit standard procedure, with mandatory near-miss reporting feeding health emergency planners.
+
+That operational success landed in a darker strategic context.
+
+In Washington, the frontier laboratories were brought under direct state control. Security officers, equity stakes and classification orders replaced commercial compliance channels overnight. For Brussels, maintenance contracts, tier paperwork and conformity assessments suddenly pointed at a foreign security apparatus rather than vendors. Spare flows thinned further, diversion rumours hardened, and two gigafactory grid-connection sites slipped back to intermittent work despite site-protection deals.
+
+At the same time a contested genome-model paper circulated — a viable human-infecting design, or a non-expert reaching it with assistance, depending on who described it. Methodologists quarrelled over alarmism and publication ethics, but health and interior ministries treated it as categorically new. Hospital-hosted open models came under tighter quarantine, and wastewater and clinical pilots were tasked to watch for bio-uplift signals.
+
+### Concrete versus careers
+The entry-level pact became the political hinge. Wage-insurance tranches flowed to the two blockade states on condition of site protection, yet employment agencies placed only first cohorts and several employers banked incentives without reopening graduate intake. Blockades lifted, then reformed as rolling pickets. Police held perimeters; contractors lost days; graduate anger fused with a fresh sense of dependency humiliation.
+
+Brussels opened a state-to-state track to Washington, seeking assured maintenance, control of diverted stock and shared evaluation on bio-capable models, offering supply-chain cooperation in return. The mandate was agreed, the first exploratory meetings held, but American counterparts spoke of national security review timelines. Nothing assured arrived before December, and the Union ended the year more resilient in its towns, more exposed in its supply, and openly debating whether market power could still buy safety.

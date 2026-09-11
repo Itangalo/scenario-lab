@@ -1,0 +1,9 @@
+Autumn: operators found dormant access to grid protection relays with staged credentials; similar traces at ports, water utilities and on two other continents, deepest outside Europe. No hostile blackout — outages came from defensive isolation. Probes used OT-adapted tooling from a freely downloadable open model, implying a well-resourced backer; attribution unsettled.
+
+Commission ordered large grid, port and water operators to segment controls, rotate credentials and report staging within a day, with ENISA winter drills. France, Germany, Spain, Poland joined first but implementation lagged over costs, Christmas deadlines, Spanish/Dutch municipal opposition to data-centre power links, grid queues and state-aid disputes slowing AI gigafactories. Lithography diplomacy bought time. A contested preprint alleging a genome model helped design a human pathogen drew specialist debate only; health ministries sought briefings.
+
+Winter-spring: a modified pathogen designed with genome-model help spread from outside Europe; by February three member states sequenced the same construct, ICUs filled, dozens died. Model assistance confirmed publicly.
+
+Health ministers empowered DG SANTE/HERA for stockpiles, federated sequencing and 24-hour reporting, with the same four states pre-positioning first. But hospital labs cited unfunded sequencing, ECDC exercises slipped, and synthesis-screening was evaded via non-EU brokers.
+
+Other agendas stalled: grid/port/water segmentation missed deadlines, gigafactory disbursement slowed, data-centre opposition hardened as power prices rose. By June containment held but trust fell; public linked AI to intrusions, disease, job losses and fraud, and parties campaigned against new compute. Europe mobilised on health, exposed elsewhere.

@@ -1,0 +1,10 @@
+### Audits, sensors and a new watchtower
+The first half of 2027 was dominated by clean-up. ENISA teams embedded in the two compromised transmission operators through the spring, mapping where intruders had lingered and forcing through segmentation checks under existing network security rules. Energy and transport ministers held the line politically, paying for monitoring sensors out of reprogrammed digital funds to buy off utility resistance.
+
+It worked, partially. The joint audits closed the worst gaps, and the delayed cross-border exercise finally ran in the second quarter, with operators practising manual fallback for grid control systems. But utility lobbies still slowed site inspections, and several large distributors negotiated exemptions on timelines. Defenders privately admitted they were now better at containing an intrusion than at seeing one coming.
+
+To close that gap Brussels seeded a small joint monitoring unit inside the AI Office, staffed with seconded agency analysts and national emergency-response staff. Using incident-reporting powers already on the books, it began demanding abuse telemetry from model providers and correlating it with operational network data. Providers complied on paper but delivered uneven, delayed feeds, and the unit spent its first months negotiating data formats rather than issuing warnings.
+
+Longer-term capacity was kept alive but not advanced. Permitting zones and grid connections for planned computing sites moved forward, and diplomats continued to press to keep European lithography supplies out of tightening foreign export controls, with only mixed success. No new machines were ordered.
+
+The public noticed little change. Mayors still cited shorter waiting times where European administrative assistants were in use, but coverage of the winter hospital disruptions and lingering questions over who built the intrusion tooling kept anxiety high. A peer-reviewed paper claiming an AI-assisted biological design had slipped past voluntary screening circulated among specialists, and university editors debated disclosure rules, but neither broke through to broad debate.

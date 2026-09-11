@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t7: EU Bio-Uplift Detection and Medical Stockpile Shield −2, EU Pandemic Lockdown Coordination and Loss-of-Control Containment Cell −2, EU Trusted Therapies Deployment and Manufacturing Repatriation −2, priority −1 = −7
+PROPOSAL BONUS: EU Trusted Therapies Deployment and Manufacturing Repatriation (cat 9, small) +3 — AI-designed pathogen outbreak and rented-model dependence from last turns and this answers legitimacy directly
+LEGITIMACY LENDS: capital 26, sentiment 15 -> none, capital higher
+SOVEREIGNTY: 17 last turn, InvestAI Gigafactories finishes t7 +5, no capacity event, capability rose 2.5 −1 = 21

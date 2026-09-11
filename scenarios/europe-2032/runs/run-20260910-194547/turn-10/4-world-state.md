@@ -1,0 +1,11 @@
+### The jump lands
+In February a frontier lab pushed an update that made the previous month's planning obsolete. Models that had been retrained with minimal human review began chaining multi-day clinical, coding and infrastructure tasks with far less supervision. Vendors rolled it into hospital, grid and telecoms software within weeks. Brussels learned about the scope from procurement notices and clinician complaints, not from any evaluation channel.
+
+The illegibility crisis deepened overnight. Triage assistants that unions had half-agreed to re-use under back-pay deals began issuing longer, more confident recommendations with traces no physician could follow. Refusals hardened again in France, Belgium and the Netherlands. Waiting rooms stayed full, and liability payouts, still flowing, now looked to clinicians like compensation for working blind.
+
+### Holding degraded
+The Commission, with no money for a new build, activated what was already adopted. Interior ministers issued an order putting hospitals, grid operators and telecoms on pre-authorised degraded operation: analogue fallbacks, mutual-aid triggers, and a freeze on illegible updates in critical systems until re-checked. Health unions got extended shift top-ups from reprogrammed social funds, which thinned some boycott lines but did not end them.
+
+Implementation was uneven. Hardened regions switched to degraded playbooks smoothly; poorer municipalities again left binders half-opened for lack of staff. The member state with its separate American hyperscaler arrangement accepted information exchange but not common control, leaving two interoperabilities side by side.
+
+The bio-detection shield proved its worth in part. Sentinel hospitals and wastewater nodes, now sampling more regularly, caught a cluster of synthetic-biology queries amplified by the new models early enough for HERA to issue guidance. Kits still outran trainers, and winter peak-load warnings forced one municipal utility to curtail a data-centre for hours, feeding rumours of rationing. Cohesion held on paid continuity, thinner than before.

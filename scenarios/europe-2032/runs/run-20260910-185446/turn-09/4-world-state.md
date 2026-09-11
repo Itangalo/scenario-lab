@@ -1,0 +1,11 @@
+### A seat deferred, a machine held
+Autumn brought the reply Brussels had waited for. Washington and Beijing thanked the European evaluators for their work in two technical workshops and left political accession to a later date. The Hague maintenance logs and the offer of gigafactory hosting were filed as useful. Tokyo and Seoul kept listening and kept their signatures back.
+
+At the same moment Washington tightened the screws again. Export licences for advanced chips and models were rewritten, and the Netherlands was told to extend cuts and servicing bans on lithography equipment well beyond the leading edge — to older machines used for ordinary chips and to a wider list of customers. The instrument was American technology inside the supply chain. For the company, refusal looked unsurvivable; for the Union, its one chokepoint was now being operated by someone else.
+
+### Hospitals sue, graduates wait
+At home the continuity reserve met its first courtroom test. A large hospital group blamed a weeks-long diagnostic failure on degraded fallback systems installed after the American cutoff and sued the state for continuity failure. Lawyers for other operators took notes. Health ministers ordered an audit, and engineers began swapping the failed diagnostic chain for European-hosted open models backed by funded manual cover.
+
+The labour market gave the story a second front. Entry-level hiring in law, accountancy, software, customer operations and administration simply stopped being replaced. Ministers argued over the numbers; young graduates argued about the absence of offers. Studies showing solid productivity gains for those already in work — especially the least experienced — only sharpened the divide: good for incumbents, bleak for entrants.
+
+Brussels answered with a repair pact: a binding fallback standard for essential services, retraining vouchers for displaced entry cohorts tied to care and public-sector deployment, paid for by reprogramming existing funds. No new fight over the frozen gigafactory expansions, no new hardening law. Recovery, officials said, would have to be proved in wards and hiring queues first.

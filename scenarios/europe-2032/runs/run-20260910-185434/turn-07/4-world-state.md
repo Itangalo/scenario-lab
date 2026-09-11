@@ -1,0 +1,11 @@
+### The night the systems locked
+The ransomware did not announce itself. In late August municipal payroll systems in two countries froze, then appointment software in sentinel hospitals, then remote-control layers at mid-size grid operators. The tooling was generated at machine speed, variants multiplying faster than signatures could be written. Attribution teams spoke of months. Wards went back to paper, to the rosters and drills paid for in the spring.
+
+What kept the lights on was unglamorous. Manual fallback crews took substations by hand while large operators loaned security teams. Against that backdrop a new defensive technique — patch pipelines that move at vulnerability speed and detectors that see swarm behaviour rather than known malware — arrived from American labs and was rushed by Brussels into clinics, town halls and grid mentors. It helped where installed, but installers were scarce and downtime was real.
+
+### Concrete poured, models elsewhere
+In Aragon and Saxony, cranes finally moved on the first gigafactory shells. Concrete and grid connections are now European facts, even as the accelerators meant to fill them remain under foreign export desks. Ministers cut ribbons beside empty halls.
+
+The hollowness deepened elsewhere. A frontier-weight release was downloaded hundreds of thousands of times in a week; whatever it can do now lives on private hardware beyond recall. Chinese-built warehouse and care robots signed commercial contracts across ports, while Washington and Beijing announced a limited understanding on weights security that Brussels learned about afterwards and was invited to observe. A research result — efficient new reasoning hardware demonstrated in California — underlined where the frontier still sits. Rising insurance rates in the Taiwan Strait lifted energy prices just as voters were told to be patient.
+
+Voters are not patient. Waiting lists eased where triage assistants worked, but locked municipal systems and headlines about robots taking logistics shifts dominated. Opposition parties call the concrete empty and the patch late.

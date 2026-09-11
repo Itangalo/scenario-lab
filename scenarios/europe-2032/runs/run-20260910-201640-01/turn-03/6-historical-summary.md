@@ -1,0 +1,7 @@
+January ransomware cascade via shared providers hit municipalities, hospitals, ports and two grid operators' office networks; controls held but pre-emptive disconnections caused blackouts. Attribution unclear — compromised update vs. Mythos-class kits.
+
+ENISA-led triage under Cyber Shield became permanent doctrine: rebuild funds conditioned on indicator-sharing, shortening outages and cutting reinfection. Recovery layered — large hospitals/ports first, small municipalities on manual workflows into autumn 2027; cyber cover repriced/withdrawn; monitoring procurement stalled.
+
+September leak of contested genome-model paper claiming viable human-infective design with non-expert help shifted Commission priority to bio risk. Bio Shield surge prioritized over gigafactories/tech package: ECDC pushed sequencing kits to sentinel hospitals/ports, funded screening tools and confidential near-miss channel for synthesis firms, bio-reporting bolted onto cyber conditionality. Rollout partial — fast where wastewater monitoring existed, stalled elsewhere; providers warned on false positives/liability, health ministries resisted mandatory reporting.
+
+Sovereignty build-out idled in permitting: land/power options held, lithography unity maintained, no new capacity; absent hyperscalers rumored not to return. Public support for rapid AI build-out fell further amid fears of freely available attack tooling and engineered pathogens.

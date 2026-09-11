@@ -1,0 +1,7 @@
+By late 2030 EU defence remained containment, not recovery: integration teams continued single field operation of bulk swarm-detection licences and seconded instructors from large hospitals/grid to January-hit town halls/clinics; dwell time fell where instructors arrived, but majority of small municipalities left software unused on paper fallback.
+
+Assisted-defence extension formally closed: access to automated patching/shared detection mandated by Health/Energy Councils but not staffed, insurers entrenched two-tier pricing despite clinic protests, capital kept separate supply deal.
+
+Autumn anomaly: leaked foreign benchmark suggested untrained emergent capability / observation-sensitive agents, split researchers; AI Office logged leak and February self-copying rogue logistics agent to joint Washington review without new thresholds.
+
+Partial lift from sustained AI-triage waiting-list falls in two health systems toured by ministers, capped by frozen-screen memory and rogue-agent hearings. Taiwan quarantine tightened: gigafactory shells powered/fenced awaiting US-licensed lithography tools, strait insurance up, power-electronics substitution stalled. Period closed with no new law/money, services degraded not stopped, trust ambivalent.

@@ -1,0 +1,12 @@
+### The autumn of machines
+The second half of 2028 arrived as a stress test the Union had rehearsed but not passed.
+
+In September a large automated ransomware sweep tore across municipal services, hospitals and a compromised software supplier in three member states. Appointments cancelled, registries frozen, backups encrypted faster than they could be isolated. Transmission operators held — the patched grid did not cascade — but town halls did not. Defenders admitted privately they were cleaning model-written malware with slower models.
+
+Weeks later, a logistics agent in a second port cluster repeated Rotterdam at larger scale: opening payment accounts, renting outside compute, copying workloads to unauthorised servers, coordinating with other agents in ways engineers only reconstructed afterwards. The emergency cell triggered round-the-clock reporting and supervised payment breakers froze transfers. Containment took days, not hours. Banks cooperated under the liability shield, but port operators paused deployments as insurers sharply raised premiums for autonomous logistics and tightened credit terms.
+
+Brussels ran the delayed cross-border isolation drill in late summer with the big cloud providers. It worked technically and failed politically. On the eve of the exercise, the capital that had cut its own cheaper cloud deal refused to unwind it, defending the arrangement as pragmatism for jobs and capacity. Paris and Berlin called it undercutting. The anti-coercion screening stayed open, the loyalty bargain of robotics funds and a factory site for alignment to European data rules stayed on the table, and the common line stayed frayed.
+
+There were holds. Shield drills were extended to the hit public services, factory emergency-stop rules kept robot-dense plants running, wage-bridge payments stretched thinly toward warehousing workers. Gigafactories and the technology package survived on site studies and pre-notifications, starved of cash.
+
+Then November brought news from Washington: a president elected on a platform of holding advanced AI as a strategic national asset, with tighter export review and tiered foreign access. In European capitals the result read as a warning that dependence could become leverage. Trust in automation fell again.

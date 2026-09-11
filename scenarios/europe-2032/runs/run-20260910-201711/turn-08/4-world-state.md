@@ -1,0 +1,11 @@
+### Redress promised, permits still blocked
+
+The spring opened with a rare piece of good news from the laboratories. A Delft-led team, building on its battery-interface work, demonstrated an AI-driven search method that cuts electrolyte screening time by an order of magnitude. Automakers moved quickly to license it, and Brussels toured it as proof that domestic AI could pay in factory jobs. Local papers covered the jobs; national papers covered the contrast with the welfare cases still unpaid.
+
+For the welfare-scoring scandal moved slower than the press releases. The Commission ordered suspension and human re-review of the two systems, with a compensation fund to be paid from vendor penalties, and announced inspections of logs by the AI Office and ombudsmen. Families saw caseworkers, not cheques. Audits found what courts had already found — reviews of seconds, logs unread — but redress stayed case-by-case, and administrators blamed vendors while vendors blamed specifications.
+
+The siting fight then hardened. What had been mayoral freezes in a few cities became a coordinated blockade across several states: power-price and water protests fused with national anti-AI campaigns, petitions, occupations of permit hearings, and a shared legal fund. Permitted data-centre and grid capacity froze for months. The new compact making hosting permits conditional on rebates, water caps and municipal revenue shares was negotiated through energy and justice ministries, but councils refused to lift freezes before money arrived, and operators refused to commit money before freezes lifted.
+
+Continuity held, barely. Hospitals and ministries stayed on pooled allied models and on-premise open systems, the Ljubljana queue rationing scarce compute, ENISA drills keeping triage running. Care degraded rather than stopped, but heat rumours did not help: a dry spring brought single-source warnings of summer curtailments to nuclear output and cross-border power, and insurers quietly repriced delivery risk again.
+
+Trade leverage stayed on paper. The pooled export-authorisation regime for optics and spares remained law, offered only against restored volume licences and chips. No restoration came. Washington rationed further, Asian suppliers hoarded, and envoys warned Brussels against using maintenance leverage as coercion.

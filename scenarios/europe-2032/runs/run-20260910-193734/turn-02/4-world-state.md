@@ -1,0 +1,10 @@
+### Audits on paper, generators in warehouses
+The spring was supposed to be when the emergency hardening directive bit. The Commission did get its implementing act for segmentation audits through energy and interior ministers, and ENISA placed first orders for sensors tuned to slow, distributed probing. Five countries held live containment drills. On that narrow count, the Cyber Shield moved.
+
+Everything else moved slower. Transmission operators and water utilities returned audit questionnaires half-filled, disputing who paid for remediation. Co-financing calmed Paris and Berlin but did not unblock procurement: two sensor tenders were challenged and re-issued, and grid-connection promises for factory zones collided with local opposition to new power lines and data-centre sites. Drill after-action notes, leaked in part, repeated the autumn finding — business networks still opening paths into control systems.
+
+The new Continuity Reserve fared better as logistics than as strategy. Through the civil protection mechanism, the Commission stockpiled mobile generators, islanding kits and clean system images, and rostered cross-border repair crews from volunteer operators. Hospitals welcomed funded spares; several utilities traded audit compliance for access to crews. But distribution was uneven, training thin, and mayors complained the kits sat in regional warehouses without staff to run them.
+
+Meanwhile capability advanced elsewhere. Frontier labs demonstrated longer-running agents for software and research work, and openly downloadable models closed ground, now routinely used to generate intrusion tooling at scale. University freezes on sensitive biological data held in places, slowing some open training, while protests over power and water for computing projects hardened into lawsuits in two member states.
+
+By June the Union could point to drills held and stockpiles started — and to a map showing how much remained reachable.

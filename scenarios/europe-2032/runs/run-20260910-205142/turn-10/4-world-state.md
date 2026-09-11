@@ -1,0 +1,10 @@
+### Rationing and resumes
+The first half of 2031 broke on two fronts at once. Across the Strait, a quarantine closed advanced chip exports for years to come. Foundry schedules froze, accelerator deliveries slipped indefinitely, and every ministry in Brussels started reading technology files as security files. In the same months, labour offices confirmed what graduates already knew: entry posts in law, audit, coding, customer desks and back-office administration were not coming back. The figures were disputed. The empty hiring pages were not.
+
+The continuity apparatus built the previous autumn was now tested for real. Health and telecom loads shed to European clouds and to the bare-metal shells held ready, with openly available models standing in where licensed frontier systems were refused or rationed. Wards and networks degraded but did not stop. Engineers called it a qualified save; ministers called it proof the shield had been worth raising.
+
+It did not feel like a save elsewhere. With chips unobtainable, the shells stayed empty by necessity, and the inventory of lithography, optics and materials chokepoints became contingency planning rather than bargaining power. Talks with Japanese and Korean partners continued, but there were no machines to share. Patients waiting for new tailored treatments still waited, eased only by narrow compassionate-use exemptions that satisfied few oncologists.
+
+Against the jobs shock, the Commission moved fast on a wage-insurance, retraining and hiring-credit facility run through national employment services, part-funded by a levy on large deployers. Business groups grumbled about the levy but accepted it as the price of orderly rationing. Rollout was uneven — some agencies paid quickly, others tangled in eligibility — and student protests and talk-show anger kept pressure high.
+
+By June, Europe was intact, dimmer, and angrier: essential services held, graduates did not, and dependence had hardened from warning into condition.

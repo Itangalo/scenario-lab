@@ -1,0 +1,5 @@
+US-China war erupted in February 2030 after months of warnings: fabs, subsea cables, satellites and data centres became targets. Two transatlantic cables damaged, traffic rerouted; power incident forced southern fab shutdowns. Europe not struck but in blast radius.
+
+Washington imposed two cold cuts: abrupt halt to leading-model access for European users crippling hospitals/ministries/logistics, and forced halt to servicing of older lithography equipment via Dutch supplier despite Hague/Brussels protests. No new frontier compute or efficiency gains; leading capability and open-weight diffusion stalled.
+
+Commission activated civil protection, cyber links, curtailment; isolation-ready operation; health triaged to domestic/open models; rationing prioritized continuity users. Previously validated certified monitors became mandatory gate for agentic systems and prevented further failures but added no new capacity; vetted-model rollout delayed. Genome-model biosecurity scare fueled restraint calls; European solid-state electrolyte breakthrough blocked by tool disputes; hoped-for cheap power/cloud assets lost to cash buyers stripping monitoring.

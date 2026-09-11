@@ -1,0 +1,13 @@
+### Triage holds, queue tightens
+The second half of 2029 brought a second automated удар in all but name. Hospitals postponing non-urgent care, municipal counters closed for days, a tainted contractor update forced to be rolled back across three countries. Analysts again pointed to model-built tooling. Attribution stayed open. Defenders, now rehearsed, cut segments faster — services bent without breaking, though mayors outside the capitals again reported waiting longest for clean images and spare parts.
+
+That relative hold mattered politically. The joint triage cells run with national teams, the isolation routines borrowed from assistant-safety work, and the thin stocks of transformers and controls were credited with preventing a stop. Emergency crews gained standing they had lacked in winter.
+
+### Rationed and briefed late
+Two larger currents overtook the incident. Washington tightened its export regime again, and under its keep-at-home administration allied buyers found themselves inside rationing rather than outside it — monthly allocations, volume licences, review queues. European orders slowed. Permit fights over data-centre sites in France, Germany and the Netherlands sharpened, fed by press leaks about subordinated slots.
+
+At the same time press reports and contradictory briefings circulated about contacts between Washington and Beijing on weights security and escalation risks, with talk of a limited understanding whose scope and verification remained unclear and unconfirmed. Brussels received no text and no briefing. Being the rule-taker twice over — queued for chips, absent from the room — stung in procurement ministries and editorial pages.
+
+Brussels answered with diplomacy rather than concrete. As its single new measure this turn, envoys sought observer standing in any such understanding, offering incident data and evaluation access in exchange for continuity of supply. Talks started; no exemption, licence uplift or signature was secured this turn. The gigafactory permitting framework and private-capital pledges stayed in holding, waiting on subsidy clearance and chips that did not arrive.
+
+By December the workplace vouchers and mutual-aid protocols were counted as delivered, and the cyber surge as stood up. Relief was real but muted: fraud stories and job anxiety still clung to everyday assistants, and another winter of flickering lights left the public ambivalent.

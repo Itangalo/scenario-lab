@@ -1,0 +1,240 @@
+{
+  "turn": 10,
+  "counters": {
+    "measures": 11,
+    "standing": 1
+  },
+  "records": [
+    {
+      "id": "M1",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "InvestAI Gigafactories",
+        "category": 4,
+        "size": "large",
+        "finish_turn": 7,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "eu_ai_sovereignty up, via €200bn for four to five sites",
+        "started_turn": 0
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "finished"
+      },
+      "added_turn": 0,
+      "removed_turn": null
+    },
+    {
+      "id": "M2",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "Tech sovereignty package",
+        "category": 4,
+        "size": "large",
+        "finish_turn": 6,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones",
+        "started_turn": 0
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "finished"
+      },
+      "added_turn": 0,
+      "removed_turn": null
+    },
+    {
+      "id": "S1",
+      "table": "standing",
+      "actor": "world",
+      "fields": {
+        "posture": "RETRENCHMENT"
+      },
+      "derived": {},
+      "added_turn": 0,
+      "removed_turn": null
+    },
+    {
+      "id": "M3",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Critical Systems Hardening and Mutual Aid Pact",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 3,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up moderately, ai_safety incident harm down",
+        "started_turn": 1
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 1,
+      "removed_turn": null
+    },
+    {
+      "id": "M4",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Supply-Chain Solidarity and Anti-Coercion Compact",
+        "category": 8,
+        "size": "small",
+        "finish_turn": 5,
+        "applies_to": "own jurisdiction plus coalition partners holding supply-chain chokepoints",
+        "targeted_effect": "eu_ai_sovereignty up, eu_political_capital stabilised by sharing coercion cost",
+        "started_turn": 2
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 2,
+      "removed_turn": null
+    },
+    {
+      "id": "M5",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Continuity Stack and Evaluation Authority",
+        "category": 5,
+        "size": "small",
+        "finish_turn": 6,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "eu_ai_sovereignty up, ai_safety up, resilience up",
+        "started_turn": 4
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 4,
+      "removed_turn": null
+    },
+    {
+      "id": "M6",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Transition and Absorption Facility",
+        "category": 7,
+        "size": "small",
+        "finish_turn": 8,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up, public_sentiment up, eu_political_capital stabilised",
+        "started_turn": 5
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 5,
+      "removed_turn": null
+    },
+    {
+      "id": "M7",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Critical Services Cyber Shield Surge",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 9,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up, incident harm down",
+        "started_turn": 6
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 6,
+      "removed_turn": null
+    },
+    {
+      "id": "M8",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Lithography and Supply-Chain Leverage Compact",
+        "category": 8,
+        "size": "small",
+        "finish_turn": 9,
+        "applies_to": "own jurisdiction plus coalition partners holding supply-chain chokepoints",
+        "targeted_effect": "eu_ai_sovereignty up, eu_political_capital stabilised",
+        "started_turn": 7
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 7,
+      "removed_turn": null
+    },
+    {
+      "id": "M9",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Joint Incident and Biosurveillance Accession",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 10,
+        "applies_to": "own jurisdiction plus joint threat response partners",
+        "targeted_effect": "resilience up, incident harm down",
+        "started_turn": 8
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 8,
+      "removed_turn": null
+    },
+    {
+      "id": "M10",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Automated Defence Scale-Up",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 11,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up strongly, incident harm down",
+        "started_turn": 9
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "running"
+      },
+      "added_turn": 9,
+      "removed_turn": null
+    },
+    {
+      "id": "M11",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Wartime Critical Systems Continuity Shield",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 12,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up strongly, incident harm down",
+        "started_turn": 10
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "running"
+      },
+      "added_turn": 10,
+      "removed_turn": null
+    }
+  ]
+}

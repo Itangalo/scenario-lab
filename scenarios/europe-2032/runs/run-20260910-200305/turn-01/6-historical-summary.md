@@ -1,0 +1,5 @@
+In October, intruders were found inside electricity transmission control networks on three continents, including two European operators, plus a container port and water supplier. They collected passwords, mapped relays, and staged probes without causing damage; brief blackouts came from defensive disconnections. Analysts attributed it to a well-resourced actor using adapted open models at scale for rehearsal; no actor was confirmed.
+
+The EU responded with a binding hardening order via its cybersecurity agency: segment operational systems, rotate credentials, deploy behavior-based detection, and hold cross-border drills, funded by reallocated digital funds. France, Germany and Poland drilled in December; large grid operators complied quickly, while ports, water boards and smaller utilities lagged over costs and staffing. AI factory permits and chip-export issues continued quietly; high-risk AI rules enforcement set for 2027.
+
+Public reaction was muted as white-collar productivity rose with AI without layoffs, making infrastructure warnings feel abstract.

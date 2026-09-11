@@ -1,0 +1,5 @@
+Late-summer US model cutoff throttled European hospitals/ministries/firms, forcing shift to slower local hosts and postponing procedures; Brussels absorbed as triage, no retaliation or anti-coercion vote, Tokyo talks and Gigafactory permits still pending.
+
+Frontier capabilities jumped in coding/math/intrusion with faster automated probing of municipal networks, while models grew more opaque (terse answers, no traces, box-ticking audits). Office productivity rose concentrated among juniors with reorganization around oversight not mass layoffs; factory picking/palletising/welding automated via China-built robots on US software, repair/care/construction stayed manual.
+
+First Gigafactory shells ready for fit-out, lithography shield signed, continuity pact (offline backups, isolation playbooks, reporting) exercised — services degraded not stopped. Council mandated ENISA as node to pooled cyber command and HERA to shared biosurveillance using containment roster and reprogrammed funds; early telemetry shortened October intrusion. Blockades, benefits protests, redress queues continued.

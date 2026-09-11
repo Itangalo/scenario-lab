@@ -1,0 +1,7 @@
+Autumn audits revealed persistent intrusions across transmission operators on three continents, plus a container port and regional water utility: attackers lived for weeks, mapped relays, collected breaker logins and staged tools without causing outages — disruptions came from defenders disconnecting.
+
+Two affected grids were European, where segmentation existed on paper but not in traffic. Analysts linked tooling to a freely available newest-class model tuned for intrusion and run at state-scale volumes. Public blame drifted among Tehran, Pyongyang and Moscow, privately toward Beijing.
+
+The Commission invoked emergency energy and network-crisis powers to fund joint audits, first of hit operators then all European transmission members, ordering OT separation, credential rotation, and offline backups. Cost and downtime resistance from ministers and ports was eased by top-ups tied to AI-factory grid connections. A February live-fire exercise with the EU cybersecurity agency, operators and national teams was announced. Supercomputer plans continued but political focus shifted to hardening. Behind closed doors, demands grew for a formal allied exemption from Washington's opaque model switch-off review, with export leverage over advanced chip-making equipment as quiet pressure.
+
+Public mood soured amid maps of exposed substations, scrutiny of downloadable AI cyber aids, municipal questions over data-centre power/water, and leaks about voluntary synthetic DNA order screening. Europe ended the year expecting further probes.

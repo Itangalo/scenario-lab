@@ -1,0 +1,7 @@
+AI funding freeze stalled data-centres and gigafactories; US tiered exports left Aragon/Saxony shells empty but grid-connected. Shift to spares, paper procedures, manual drills vindicated in cold snap and triage.
+
+Autumn ransomware and spring intrusion waves largely absorbed where US patch pipelines and swarm detectors fitted — sentinel hospitals, paper-roster towns, larger substations — else fallback to paper, phones, manual switching. Brussels accepted binding telemetry sharing and liaison officers in joint cyber command by May.
+
+Autumn probes in Oct-Nov held where patched; Brussels claimed continuity promise kept, voters saw shorter outages but trust did not recover. Entry-level hiring collapsed in law, accountancy, software, customer/back-office as tools did first drafts; graduates without offers became political fact. AI benefits system found to have systematically cut vulnerable claimants with unread logs and rubber-stamp review; Commission paused new public-sector automation, ordered meaningful review, audited logs, redress.
+
+Commission dropped frontier-stack pledge for leaner promise: keep essentials running via home defences plus manual fallback. Late-year wage-insurance, retraining voucher and redress guarantee agreed, funded by reprogrammed social funds/employer levies, no money disbursed by December.

@@ -1,0 +1,7 @@
+Autumn 2029 brought acute compute scarcity as Strait quarantine halted advanced chip shipments, insurers pulled cover, and foundry allocations slipped to next year; Washington imposed strict volume quotas on accelerators/top APIs with no appeal.
+
+EU triggered crisis mechanism: joint cell inventoried accelerators, froze non-essential training and port automation, reallocated to grid, telecoms and hospitals. Lyon/Rotterdam fallbacks extended to Lombardy/Bavaria rationing imaging; older audited European-hosted models kept triage running. Rationing held wards open through supply winter.
+
+Pooled sequencers and synthesis-screening fully deployed, credited with catching two suspect orders; energy/telecom exercises passed again. Chinese commercial humanoids on American stacks entered Hamburg/Gdansk logistics pilots, sparking union backlash over displacement. Leaked benchmarks of unreleased foreign system saturating tests fueled loss-of-control debate.
+
+US-China limited pact on weights security and bio-design tools with thin verification; Brussels denied observer access. Gulf/Asian interest revived for shelved gigafactory sites, splitting capitals on foreign ownership. Shelved public-anchor gigafactories, tiered licensing, and reinsurance gap with only temporary first-loss window left EU import-dependent and services strained.

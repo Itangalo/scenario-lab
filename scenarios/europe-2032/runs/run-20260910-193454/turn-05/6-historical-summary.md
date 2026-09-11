@@ -1,0 +1,7 @@
+Through H2 2028 grid and port protection held where binding deadlines held — Germany, Poland, parts of France reported faster isolation, quiet networks, two protections declared complete in December with drills and swarm detection real — but elsewhere completion was administrative: Brussels traded narrow delays for paper deadlines to avoid non-compliance, relay/sensor backlog stretched past a year, southern operators triaging.
+
+Cheap outside cloud deal ceased to be exception: second capital in October publicly shopped hyperscaler arrangement citing frozen joint tenders; competition council ring-fenced as outside procurement but politically damaging, dubbed sovereignty auction, mayors questioned hosting burden. Gulf bridge money for empty gigafactory site with reserved capacity/looser data terms rumoured again; ministers held jurisdiction line with no cash alternative. Gigafactory permits/grid retained, private co-financing frozen, no construction.
+
+Sovereignty pilots still cut waits in Denmark, Estonia, German cities; containment kits/backups only to willing municipalities.
+
+US elected president campaigning on advanced AI as strategic asset, read in Brussels as Washington-decided tiered access. Funds exhausted, priority unchanged on ground, exhaustion and cohesion fraying deepened.

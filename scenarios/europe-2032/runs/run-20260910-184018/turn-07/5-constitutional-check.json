@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Economic Constraint violated: The narrative describes partial delivery of the Workplace Augmentation Pact and stalled gigafactory deployment (\"no new domestic capacity to run\", \"roads cleared one week were blocked the next\", \"permitting office closed for days\"), yet the metric rules imply full completion of M1 InvestAI Gigafactories (awarding +5 to sovereignty). A high-cost infrastructure measure like gigafactories cannot be considered fully implemented in the face of ongoing physical obstruction, sit-ins, cable cuts, and re-mobilisation of only one site. Minimum time lags and physical constraints (rule 6, physical constraint on infrastructure) are violated by treating this as a completed measure.\n- Physical Constraint violated: The narrative confirms \"no new domestic capacity to run\" at gigafactory sites, yet the sovereignty metric increases by +5 solely due to the completion of M1. This implies new operational compute capacity was delivered, which contradicts the physical reality described. Infrastructure projects must have realistic timelines and demonstrable output; awarding full benefits without operational capacity breaches physical supply constraints.\n- Regulatory Constraint violated: The Shield work (Anomaly Watch) is credited with effects (bridge loans, wage-insurance, retraining reaching workers faster), but M6 EU Assurance Scale-up and Anomaly Watch is still in flight (−2 charge in notepad) and thus not fully implemented. Effects must grow gradually toward full implementation (modelling choice #6); claiming full delivery of outcomes from an incomplete measure violates minimum lead times and phased effect rules."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t8: EU Hospital Continuity and Loss-of-Control Containment Reserve −2, EU Shopfloor Continuity and Displacement Bridge −2, priority −1 not charged (capital 6 <20, no effect) = −4
+PROPOSAL BONUS: EU Shopfloor Continuity and Displacement Bridge (cat 7, small) +3 — embodied deployment and export tightening fired this turn and this answers displacement/continuity directly
+LEGITIMACY LENDS: capital 2, sentiment 3 -> +1 (capped below sentiment) applied in total; negative-event net (embodied dampened +2, export undampened −5) included
+SOVEREIGNTY: 16 last turn, no category 4 finish, no category 4 in flight +0, embodied_ai_deployment t8 −2 (largest capacity loss, export_control_escalation also qualifies), capability rose 2.2 −1 = 13

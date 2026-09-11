@@ -1,0 +1,12 @@
+### The swarm that did nothing
+The discovery came by accident. Auditors at a transmission operator found unfamiliar credentials, then more of them. Within weeks, similar traces turned up at another European grid operator, at operators on two other continents, at a major container port and at a water utility.
+
+No one claimed responsibility. Nothing had been switched off — the short blackouts that followed were the defenders isolating themselves. What chilled ministers was the inventory: relays mapped, breaker logins collected, small automated probes numbering in the thousands, left in place as if cost did not matter. Analysts traced the tooling to a publicly downloadable model of the newest class, adapted for intrusion work and run at a volume that suggested state backing. No capital named stuck.
+
+Brussels moved fast for Brussels. Energy and transport officials, with the EU cybersecurity agency, ordered grid, port and water operators to segment control systems, rotate credentials and install new swarm detection, paid for from repurposed digital and investment funds. Joint exercises were scheduled for early 2027. Operators grumbled about cost and deadlines; co-financing bought most of them off. The gigafactory sites and supply-chain work continued in the background, now explicitly bridged by newly negotiated access terms to foreign frontier models — written guarantees, evaluation rights and a notice period before any cutoff.
+
+That access deal calmed one fear and fed another. Washington tightened chip and model controls again, but European buyers kept volume licences for now, a carve-out officials presented as proof negotiation works. Opposition lawmakers called it proof of dependence.
+
+Elsewhere the frontier crept forward. Agents handling longer tasks became routine, release cycles shortened further, and the open model released in summer spread into criminal toolkits — police reporters linked its derivatives to ransomware against mid-sized factories, though evidence remained fragmentary. Researchers argued over a prize-winning mathematical proof claimed with AI help, with publishers quietly demanding disclosure rules.
+
+By December, the sense in European capitals was of a blow dodged rather than parried. Segmentation had failed, detection had failed, and the intruders had chosen, this time, not to act.

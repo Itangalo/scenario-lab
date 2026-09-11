@@ -1,0 +1,11 @@
+### Permits without power
+The second half of 2030 confirmed how thin the Union's position had become. The four-to-five site gigafactory plan formally reached the end of its paper road: permits granted, grid reservations extended, land options kept alive by lawyers in DG CNECT. No concrete was poured, no machines ordered. In Brussels it was presented as preservation; in the regions where mayors were now blocking data-centre siting after the spring blackout scares, it read as absence.
+
+That absence shaped everything else. When entry-level hiring failed to return in law firms, accountancies, software houses and customer-operations centres, ministries had only old envelopes to reach for. The joint graduate-hiring census ordered by employment ministers documented what young people already knew — the jobs were not being replaced — but brought no new money. Income bridging kept some households afloat for months; retraining courses filled, then emptied into the same frozen market.
+
+### A breakthrough elsewhere
+Mid-autumn an American lab announced a vector-model screen that made high-density battery cathode discovery dramatically cheaper. Specialists called it genuine: weeks of materials search collapsed to hours. For Europe the effect arrived as price lists and licence terms. Carmakers and battery buyers were quoted cheaper cells, with the intellectual property and the compute behind them on the other side of the Atlantic. Commission briefings noted it dutifully as further evidence of dependence.
+
+Around the strait, extended manoeuvres, rising shipping insurance and an expulsion of diplomats rattled supply managers. The civil protection mechanism quietly checked stocks of chips, medicines and grid spares and asked counterparts in Tokyo and Seoul for servicing contacts. Nothing was announced; nothing needed to be.
+
+By December, audit teams seconded from the cyber centre were helping two suspending municipalities review their balancing software, the anti-coercion file on lithography servicing remained open without answer, and public mood toward automated systems turned from sceptical to openly hostile.

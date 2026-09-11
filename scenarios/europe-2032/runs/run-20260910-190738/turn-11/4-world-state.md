@@ -1,0 +1,10 @@
+### Cut off in the middle of the sweep
+Autumn brought two shocks at once. A largely automated attack swept municipal networks, clinics and mid-size suppliers — ransomware tooling that rewrote itself faster than local patching agents could follow. Large operators and grid crews held service degradable; dozens of small town halls, care providers and contractors went dark for days. Attribution will take months. Everyone understood the tooling had been machine-built.
+
+In the same weeks, the leading foreign model went dark for Union users. Hospitals, ministries and firms that had built triage assistants, coding helpers and procurement tools on it found access withdrawn at short notice, without reason or appeal. Export licensing tightened again around chips and model weights, and a near-frontier open release spread to hundreds of thousands of downloads in days. What was loose could now do almost what was closed could do.
+
+Brussels did not promise a European substitute. It signed the invitation to join a joint cyber command — piping anonymised telemetry from large operators and the air-gapped care-and-energy estate through ENISA in exchange for shared signatures and sinkholing — and told publics plainly that survival would run through degradable services and allied detection.
+
+The bargain partly worked. Shared feeds blunted the second wave in November; the ring-fenced wards and permit offices kept on protected power stayed open while neighbours failed, and continuity drills kept records recoverable. That competence limited the political damage from the sweep.
+
+It could not offset the cutoff. Opposition press called the denial a failure of foresight, not an outrage; staff in several cities quietly refused to operate assisted triage and override consoles after the spring outages, forcing long manual-only stretches. Fraud built on locally run weights surged, logistics walkouts widened, and talk of mapping around compute sites hardened into open distrust. The Union ended the year intact but visibly dependent — sheltered, connected, and without a model of its own.

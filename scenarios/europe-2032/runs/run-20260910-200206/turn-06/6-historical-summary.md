@@ -1,0 +1,7 @@
+Autumn 2028 to spring 2029 became a grind of failover and extortion: September ransomware and a larger Rotterdam-style port logistics incident were contained via payment breakers and emergency cells but left hospitals, town halls and ports restoring registries, insurers hiking premiums, operators pausing deployments, and trust in automation falling.
+
+The Commission pushed failover onto pilot racks/supercomputing with liability cover for workloads moved to European soil — only partial migration by spring, no premium relief. The large factory programme survived on pre-notifications and fast-track permit zones without new cash; tech package permit reforms became law but disbursement lagged.
+
+In March a new automated sweep via a compromised dependency hit clinics, administrations and a port operator, again outpacing defenders with machine-written malware; attribution stayed open.
+
+A continental lab's efficient reasoning breakthrough cut inference costs but was quickly copied abroad, while tailored cures for a blood condition depended on American models under export review — framed as cures on foreign permission. Washington took office treating advanced AI as strategic national asset with tighter tiered access; the capital's cheaper cloud deal still blocked unwind, screening stayed open, common line frayed. Wage-bridge stretched to warehousing, automation resumed under robot stop rules.

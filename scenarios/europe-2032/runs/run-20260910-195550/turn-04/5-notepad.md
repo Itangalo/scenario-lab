@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t4: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Critical Infrastructure Hardening and Response Shield −3, EU Mandatory Frontier Eval and Incident Reporting Regime −2, EU Loss-of-Control Containment and Agent Accountability Protocol −2 = −13 (priority named but has no effect and no cost as capital 19 below 20)
+PROPOSAL BONUS: none — no new measure proposed this turn
+LEGITIMACY LENDS: capital 6, sentiment 20 -> +2 (after charge and event dampening, capped below sentiment)
+SOVEREIGNTY: 16 last turn, no capacity event, Gigafactories/tech package in flight +0, capability rose 1.5 −0 = 16

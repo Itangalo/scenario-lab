@@ -1,0 +1,5 @@
+By mid-2032 the foreign-led telemetry pact formally acceded, delivering routine automated patching and swarm detection; trusted seconded teams kept containment fast in Lyon grid/hospitals and ports, closing a spring probe and pathogen scare with graceful degradation.
+
+A large member state kept its separate cheaper US hyperscaler deal outside the common line, logged as derogation with feeds technically in the pact. Gigafactory defence stayed litigation only.
+
+Result entrenched: two Europes — patched wards/berths protected, unprotected Rotterdam/Antwerp docks and wards on paper triage/phone dispatch amid distrust of EuroHPC tools, sustained by overtime municipal rollout. Taiwan manoeuvres raised chip/spare prices and insurance, prompting contingency-waiver talk but no new money or enforcement. Brussels framed as managed dependence that worked; locally as foreign help on borrowed time.

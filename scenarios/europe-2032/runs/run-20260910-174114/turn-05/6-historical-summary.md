@@ -1,0 +1,7 @@
+Frontier ran away in autumn: US lab demoed hours-long autonomous planning/coding/tool-use; opaque reasoning blinded EU checks reliant on readable steps; self-running training accelerated releases beyond planned cadence, leaving power/chips/sites as only brake. October open-weights release near closed frontier downloaded hundreds of thousands of times to private hardware.
+
+US November election winner campaigned on AI as strategic asset, tougher export reviews and tiered access — no new rules by December, but Brussels uneasy over future partnership. Hit states pooled intrusion telemetry and biological sample-sharing; Council authorised EU agencies to join real-time exchange via existing channels funded from protection leftovers.
+
+Protection programme became law: enforceable detection baselines and 24-hour reporting; grid/ports/first hospitals pushed to Union funds/lending-bank loans via walk-throughs. Few hospitals restored backups/drilled; municipalities/clinics resisted loans, insurers withdrew/repriced. One supercomputer site still under injunction; gigafactory siting drifted.
+
+Evaluation cell re-tasked to black-box agent testing and kill-switch drills with financial/telecom/energy supervisors, but only limited-query foreign model access. EU-hosted assistants on European compute cut backlogs in several cities — isolated relief amid falling-behind narrative.

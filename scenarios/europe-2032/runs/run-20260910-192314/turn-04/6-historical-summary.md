@@ -1,0 +1,7 @@
+Taiwan quarantine in February halted advanced chip shipments, spiking accelerator prices and delaying deliveries by years as Washington and Beijing pressed Europe over lithography and supply. The Commission launched no new programme, ring-fencing grid connections for 4-5 AI-factory sites and forming joint engineering-energy-trade teams to manage power and scarcity.
+
+That hold faced domestic blockades: crowds halted grid works at two factory sites over power for homes, clinics and paid-for hardening; mediated co-funded hardening and jobs deals let one resume under police guard while the other stayed idle into June.
+
+Earlier investments partly paid off: substation segmentation and the 48-hour reporting hub meant the spring automated probes on transmission operators and municipalities degraded rather than stopped services. The audit surge closed its first cycle — three benefit systems remained suspended, logs shared, supervised permit/clinic assistants cut backlogs from months to days — but reviewer hiring stayed frozen and interior ministries still traded access for EU teams.
+
+By June defenders held the lights on but costs of Gigafactories, sovereignty, Shield and Enforcement Surge weighed with limited credit. Public mood hardened around dependence: power fights at home, chips denied abroad, courts filling with automated-cut claimants while ministers touted faster clinics.

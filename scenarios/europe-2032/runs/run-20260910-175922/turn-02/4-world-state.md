@@ -1,0 +1,10 @@
+### Drills and splits
+The winter gave way to drills. Under the hardening pact, transmission operators and port authorities filed their first joint reports to ENISA, audit teams moved between control rooms, and a cross-border exercise simulated loss of a backup centre. Progress was real but uneven: finance ministries still fought over who paid for backup controls, and two backup sites stalled when local councils refused permits over power and water. Grid-connection talks for the planned gigafactory sites slipped again.
+
+The open-weight fallout sharpened. Security briefings warned that intrusion toolkits resembling those found in the autumn were now reproducible with publicly available models, and municipal utilities reported a wave of probing. No major outage occurred, but response crews stayed on alert.
+
+Then the common line broke. A member state signed its own infrastructure arrangement with a foreign hyperscaler, offering siting and offtake terms outside the Union's negotiated framework. The government called it pragmatism and jobs; Paris, Berlin and the Commission called it undercutting. Press coverage framed it as Brussels unable to hold its members, and opposition papers linked it to dependence on foreign capacity.
+
+Brussels answered with process, not money. The Councils advanced binding reporting rules, and a new joint review for external AI deals was created to vet bilateral agreements before signature, backed by threats of procurement and competition scrutiny. Operators welcomed the clarity; capitals resented the discipline. By June, the Union was drilling better, building slower, and arguing in public about who speaks for Europe on AI.
+### Faint signals
+In a few local papers, short items noted residents organizing against a data-centre project over electricity and water — quickly dismissed, then repeated elsewhere.

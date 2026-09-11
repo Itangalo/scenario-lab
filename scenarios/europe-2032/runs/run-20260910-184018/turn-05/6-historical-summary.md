@@ -1,0 +1,5 @@
+Second half of 2028: US leading model cut off for European users in September with no appeal, forcing clinics, ministries, logistics still on ransomware paper fallbacks to re-route workflows; hospitals in three countries reverted to manual scheduling, power held and ports moved with emergency overtime and cross-border backups.
+
+November US election of president campaigning to hold advanced AI as strategic asset made Brussels assume rationing/licensing, though no controls published. Cutoff let Commission lift one gigafactory permitting pause, but blockades hardened at two other sites by farmers, energy and automation-affected workers, cleared by police.
+
+DG CNECT switch cell funded emergency re-platforming to open/allied models, keeping services running but with hallucinations and mis-routing; Scale-up evaluation unit rushed substitute certification for hospital/grid from redacted docs. Substitutes adequate for routine admin but weaker for complex work, fueling opposition criticism, poll slide, and longer wage-insurance queues; grid-shield emergency tempo and engineer/finance constraints persisted.

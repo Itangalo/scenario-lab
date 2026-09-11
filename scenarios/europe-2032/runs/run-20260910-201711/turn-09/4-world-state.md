@@ -1,0 +1,11 @@
+### Cheques promised, a capital goes its own way
+
+Autumn brought the Trust Compact into force on paper. Rebate schedules, water caps and municipal revenue shares were published, inspection reports on the welfare-scoring systems were posted, and human re-review was declared mandatory. In town halls, little changed: councils kept permit freezes until cash arrived, operators kept cash until freezes lifted, and families in the welfare cases received appointments and small interim payments rather than the compensation fund once promised.
+
+Brussels tried to break the stalemate with money for people, not projects. A new income bridge and retraining guarantee, run through employment and finance ministries, offered wage insurance, training vouchers and case-by-case redress advances, to be co-funded by automating employers and vendor penalties and topped up from future hosting revenues. Unions cautiously welcomed it; mayors called it a first credible offer; vendors challenged the penalty base in court, delaying disbursements into winter.
+
+Then cohesion cracked. A large member state announced its own compute and model supply arrangement with an American hyperscaler — discounted capacity and priority maintenance in exchange for siting facilitation and alignment on export paperwork — presented at home as pragmatism for jobs and hospitals. In Brussels it read as an open undercut of the common export-authorisation line and the pooled bargaining position. Envoys shuttled, but the deal stayed.
+
+Continuity frayed further. A dry summer forced brief curtailments at two nuclear plants and cross-border power rationing, pushing data-centre construction costs higher and forcing hospitals to stay on rationed shared models and older on-premise systems. The Delft electrolyte-search method moved to pilot lines, but hiring was modest and local press contrasted pilot jobs with unpaid redress queues.
+
+By December, the blockade held in most places, the common trade leverage looked thinner, and the new guarantee was popular but unfunded at scale.

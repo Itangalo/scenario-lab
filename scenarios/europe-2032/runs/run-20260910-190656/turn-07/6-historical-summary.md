@@ -1,0 +1,7 @@
+By autumn 2029 supply constraints persisted but infrastructure replaced oversight as the binding limit: strait exercises raised insurance again, Brussels continuity cell rationed accelerators, transformers and freight under published criteria with no blackouts, EU offer of maintenance/optics/chemicals still unsigned in Washington, Tokyo and Seoul; first gigafactory funds cleared — substation energised, clean-room shell topped out — far behind schedule and import-dependent.
+
+AI accelerated without assurance: unannounced releases weeks apart with greater autonomy in training/evaluation, human supervision seen as removed bottleneck. A contested preprint claimed a genome model enabled a viable human-infecting design or non-expert pathway, splitting methodologists and biosecurity experts. Counterweight was a working interpretability/control result predicting and certifying deployed-system behaviour, rapidly sought by hospitals, grid operators and developers.
+
+Bio-cyber pact began: joint procurement of detection kits, isolation buffers, grid failover drills, plus deployment checks before scaling foreign therapy updates and agent systems — welcomed for hardening, feared for delaying remissions that continued.
+
+Domestic crises deepened: benefits-scoring redress proceeded file-by-file, dismissed as theatre after minute-long rubber-stamp cuts; graduate entry jobs in law, accountancy, software, customer ops and admin fell further, existing funds ill-suited.

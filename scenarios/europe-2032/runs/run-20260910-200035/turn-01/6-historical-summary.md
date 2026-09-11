@@ -1,0 +1,7 @@
+Autumn revealed a widespread intrusion in European critical infrastructure — unfamiliar credentials and mapped relays found in France, the Netherlands, a North Sea port and a water utility, with matching patterns on other continents. Thousands of small probes and weeks of quiet presence used tooling derived from openly downloadable Mythos-class models. No destructive attack occurred; outages resulted from defensive isolation.
+
+Brussels treated it as a rehearsal for swarm attacks, shifting debate to segmentation, credential resets, and costs of downtime. The Commission launched the Critical Infrastructure Shield: ENISA tasked, Energy and Transport Councils invoked, cross-border live exercise planned for spring 2027. Grid operators protested forced outages and unfunded mandates, partly eased by co-funded redundancy. Gigafactory site selection in France, Germany, Spain and Poland continued, with warnings via The Hague against further extraterritorial switch-offs.
+
+In parallel, offices reported AI assistants boosting junior productivity without job losses, with early-cutting firms rehiring. A second open release, close to the closed frontier, was downloaded hundreds of thousands of times in its first week and cannot be recalled.
+
+By December, the EU was spending heavily against an unfelt threat while defending a visible benefit; the Shield gained credibility but not yet protection.

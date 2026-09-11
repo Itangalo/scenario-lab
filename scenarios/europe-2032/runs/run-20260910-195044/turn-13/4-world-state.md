@@ -1,0 +1,10 @@
+### Care that arrives, machines that stay
+The second half of 2032 gave Brussels two things to point at. In oncology wards in the two triage regions and three volunteer systems, individually tailored therapies began reaching ordinary clinics, with EU-hosted systems writing triage notes, assembling therapy pathways and cutting waits that patients could feel. Hospital directors credited European procurement and audit, even as engineers knew the weights underneath were foreign and mirrored beyond recall. Satisfaction surveys in those wards rose; national news crews filmed shorter queues.
+
+The redress machinery ground on beside it. Incident reports flowed to the AI Office, logs were preserved, sampling teams visited benefits agencies, and ombudsmen paid out first apology cheques. It did not quiet the fraud-scoring anger — mayors still reported residents refusing automated appointments — but it gave the Commission a floor to stand on: no ban, but a ledger and a payout.
+
+Then the warehouses changed. Chinese-built mobile manipulators, running American control software, appeared in logistics hubs in Rotterdam, Hamburg and Lyon — picking, sorting, palletising through the night. Unions struck a cautious bargain with employers and ministries: keep them in the closed box of repeatable handling, keep them out of care, repair and construction sites. Retraining funds absorbed the first wave of pickers, but dockworkers spoke openly about who owned the stack.
+
+The middle-power pact closed quietly, with joint statements on supply-chain coordination and no new inference letters from Washington. Trade envoys came home empty-handed again. In Brussels, officials admitted the shells for domestic compute remained heated, drained and idle — one still frozen by a court order over water — while clinics ran on borrowed intelligence.
+
+By December, sentiment had lifted off the floor without lifting much: gratitude in the wards, suspicion at the benefits office, resignation at the warehouse gate.

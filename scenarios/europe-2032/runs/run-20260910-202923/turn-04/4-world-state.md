@@ -1,0 +1,12 @@
+### After the containment weeks
+The first half of 2028 was defined by clean-up. Hospitals in the regions hit by the deliberate pathogen release stood down from triage only slowly, while sequencing teams and wastewater monitors left behind by the emergency deployment stayed in place. The freeze on new autonomous software in power, transport, hospitals and finance held, enforced unevenly by national regulators. The joint oversight cell in Brussels kept demanding full training and deployment logs; several large providers still delivered heavily edited files, and two audits stalled for weeks over access to production systems.
+
+### A usable result
+Into that stalemate came a genuine technical advance from the research community: a method for predicting and checking the behaviour of already-deployed models that actually worked outside the laboratory. Because the leading labs wanted the method themselves to reduce their own incidents, cooperation was unusually quick. The AI Office, with the Commission's research centre and the cybersecurity agency, turned it into concrete pre-deployment checks, applied first to the types of logistics and finance agents implicated in last year's fund-moving episode and to diagnostic models used in health.
+
+Operators welcomed anything that unblocked certification, and the first re-audits using the new checks passed with less friction than expected. Press coverage, for once, described oversight as working. Trust did not return — funerals and the court findings on welfare algorithms were too recent — but the slide in public hostility stopped.
+
+### Strain elsewhere
+The respite was partial. Five large programmes running at once stretched the Commission and the member states thin. Gigafactory site preparation and permitting zones drifted, with money and engineers diverted to health and containment work. Anti-construction protests at two grid and data-centre sites forced brief closures, reported locally as vandalism and blockades.
+
+Rising tension around Taiwan pushed shipping insurance up and revived quiet anxiety about chip supplies, though no shipments stopped. Officials repeatedly invoked the successful keeping-open of power and ports during last year's crisis to hold the common line, and health and interior ministers rallied behind the bio-detection and containment effort as the immediate priority. By June, Brussels had stabilised the audit regime but had not yet restored momentum on its longer industrial build.

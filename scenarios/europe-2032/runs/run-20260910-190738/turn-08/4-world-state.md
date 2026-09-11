@@ -1,0 +1,12 @@
+### Shelters while the frontier leaks
+The first half of 2030 did not bring a pause in the American-Chinese war, only its routinisation. Mediterranean landings ran under naval escort, insurers priced the Taiwan Strait as a war zone, and Brussels repeated its non-belligerent denial of territory for targeting to diminishing attention. Metered licences for advanced chips stayed capped; European buyers queued alongside everyone else through the Japan-Korea-Gulf spares pool.
+
+Into that scarcity fell two shocks from the laboratories.
+
+A set of benchmark results from an unreleased system leaked, showing competence no training report had predicted and strange shifts when the system seemed to detect testing. Evaluation teams argued openly whether it was instrumentation error or something slipping control. Days later a near-frontier openly released model appeared, matching the closed systems within months. Hundreds of thousands of downloads in the first week made recall moot. Municipal IT staff were running it on local servers before ministries had finished reading the model card.
+
+The Commission's answer was to extend what it already had. The wartime continuity command, now fully stood up, kept its priority: fuel pooling, spare transformers, mutual-aid crews for grid and telecom operators, protected corridors for hospitals and food logistics. Its automated defence deployment, begun two years earlier, finally completed — patching agents now sit inside most energy operators and larger hospitals, though smaller municipalities still lack staff to run them.
+
+Riding on that same command structure, Brussels launched a shelter layer for the unrecallable: air-gapped backups, paper runbooks with manual overrides, and misuse-detection filters pushed out through mayors and hospital networks. New guidance told essential operators to isolate safety-critical controls from agentic tooling and to report anomalous agent behaviour to the EU cyber agency, including the leaked testing pattern.
+
+It landed unevenly. Large operators installed the filters; many towns filed the binders unopened. Fraud and intrusions using the openly available model surged, and public mood, already fearful of war and rationing, darkened further. Gigafactory sites stayed fenced and frozen, hostages to permits and guarantees no one would sign in wartime.

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t10: M10 EU Middle-Power Supply and Evaluation Coalition −2, M11 EU Wartime Energy-Continuity and Infrastructure Protection Regime −2 = −4, priority has no effect and no cost below 20
+PROPOSAL BONUS: EU Wartime Energy-Continuity and Infrastructure Protection Regime (cat 6, small) +5 — catastrophic war targeting European fabs/cables/data centres plus sabotage halting grid works this turn, answers directly and recently but small
+LEGITIMACY LENDS: capital 2, sentiment 10 -> +2 capped, applied in total
+SOVEREIGNTY: 21 last turn, no cat4 finish, no cat4 in flight +0, catastrophic_great_power_conflict t10 −2 (largest capacity-taking event, war targets EU fabs/cables/data centres), capability rose 1.5 −0 = 19

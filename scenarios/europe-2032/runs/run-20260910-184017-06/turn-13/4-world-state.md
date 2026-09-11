@@ -1,0 +1,10 @@
+### Paper clinics, steel hands
+The second half of 2032 arrived in European ports as crates. Cheap humanoid machines, already common in logistics yards, multiplied. Dock managers in Rotterdam, Piraeus and Gdansk put them on carrying, sorting and night shifts. Videos of armed variants in non-European theatres circulated among defence staffs the same weeks works councils asked whether retraining for displaced clerks meant retraining as machine minders.
+
+Brussels answered with paperwork. Safety and industry officials ordered a stock-check of foreign machines in ports and logistics, and moved to bar armed versions from public contracts. It changed procurement language, not the supply chain. Batteries, actuators and control software still came from outside, and no European alternative existed to substitute.
+
+The exclusion hurt more elsewhere. Washington and Beijing announced a limited understanding on securing advanced systems and restraining certain military and biological uses, with thin verification. The Union learned of the text after it was settled. Commission envoys, working through the middle-power testing and licensing group, asked for observer access to the shared evaluation work. They were offered briefings, not a seat.
+
+At home the Commission husbanded its one instrument. Envoys kept the export-licence alignment group and joint bargaining cell alive, dangled re-entry terms to the large state pursuing its own servicing deal rather than opening a breach case, and kept permits and grid reservations for four to five future computing sites legally alive. Pooled cyber teams remained seconded to hospitals and municipalities still running paper workarounds after the American access cut-off.
+
+By December the compact survived but did not deliver machines. Clinics ran, after a fashion. Entry jobs did not return, bridging payments continued without retraining, and trust in automated welfare and policing decisions fell again. Council mood hardened around a single grievance: positioned between American controls and Chinese hardware, the Union could observe both and replace neither.

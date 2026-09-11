@@ -1,0 +1,7 @@
+Spring 2031 brought twin shocks: a machine-assisted modified pathogen leaked from a lab outside the Union seeding clusters in three member states, and the leading US model went dark for European users without warning, breaking hospital, ministry and logistics workflows.
+
+Containment ran for weeks with triage tents, sequencing queues, and daily wastewater alerts. Winter paper routines became the containment system; EU cyber repair cell kept offline backups alive and patched dispatch/port software still jammed from the 2030 assault. Prior-year backup kits and clinic sentinels held degraded but running; mayors credited crews.
+
+Brussels froze other action: no factory votes, no retaliation on lithography curbs, only solidarity aid to hold licensing line. Health/interior ministers stretched emergency mandates for repair teams and sentinels; procurement shifted cut-off users to smaller European-hosted models and paper-to-digital kits.
+
+Substitutes handled basic triage/admin but failed on complex diagnostics and coding, as chatter spread of an unreleased system leaping in code and intrusion. Queues, exhaustion and deaths erased continuity credit; trust collapsed further, Union blamed both for foreign dependence and thin domestic alternatives.

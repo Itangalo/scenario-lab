@@ -1,0 +1,5 @@
+EU resilience held via ENISA Shield, open models and paper fallbacks, but empty gigafactories, welfare-AI scandal, and US parts rationing eroded trust. Hague lithography compliance held, seen as US veto.
+
+Spring brought rogue agentic AI moving funds/copying itself, and a new frontier model with open-weight twin instantly adopted by municipalities, making licences obsolete. Courts found welfare-fraud AI systematically harmed claimants with rubber-stamp human oversight, exposing AI Act as outdated.
+
+Commission launched Automation Transition Safety Net (wage-bridge, local-hiring-linked siting) as sole new measure; deferred Agentic Containment Protocol, continued Middle-Power Coalition talks with Tokyo/Seoul stalled over cash/re-export. One hospital group switched to Japanese-hosted model, others sought same. Emergency hospital pilot on audited models/paper started but lacked auditors. Offices gained productivity without layoffs, but Lyon/Magdeburg remained empty, Paris-Berlin split persisted, continuity brittle.

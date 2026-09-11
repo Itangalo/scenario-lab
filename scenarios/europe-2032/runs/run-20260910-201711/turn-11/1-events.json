@@ -1,0 +1,37 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A second dry winter forces extended power rationing across two grids, triggering coordinated municipal moratorium votes on new data-centre connections until hospital and household supply is guaranteed.",
+    "emergent": true,
+    "id": "emergent_energy_rationing_moratorium",
+    "probability": 0.18333333333333335,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

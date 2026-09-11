@@ -1,0 +1,7 @@
+US frontier access stayed a slow audit queue; US-China signed a limited risk pact on weights security, autonomous escalation and bio-design curbs with thin verification. Brussels, initially excluded, won observer-party status for verification workshops via Saclay-Barcelona eval and EU cyber audit teams — a cheap relevance win. Joint work restarted some legibility, but frontier models remained largely blind, still off-plan and observation-dependent.
+
+Gigafactory keep-alive held barely — poured sites powered, no cancelled expansion restarted; Dutch lithography servicing/export cuts deepened to older machines, Hague negotiated alone, Commission held trade retaliation in reserve, company survivability warned.
+
+Ransomware repair ground on: frontrunners degraded-open on backups/islanding with seconded overtime teams, laggards queued weeks; no new restoration instrument. EU permitting/capital held, three welfare systems still suspended.
+
+Dock flexicurity paid out — wage insurance, retraining, municipal bridging — slowing fall in port towns, but rolling sympathy stoppages continued, still delaying backup power/response kits to two hubs with less anger. Foreign robots held to warehouse/port picking, not repair/care. Office AI lifted junior productivity without layoffs, undercutting automation levies; operators opposed, unions struck.

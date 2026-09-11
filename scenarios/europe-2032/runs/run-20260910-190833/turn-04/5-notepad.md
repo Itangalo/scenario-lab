@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t4: InvestAI Gigafactories −3, Tech sovereignty package −3, Grid Shield and Essential Services Hardening −3, EU Frontier Evaluation Facility −2, Municipal Response and Dependency Triage Surge −2, Containment-Grade Evaluation and Bio-Screening Upgrade −2, priority −1 = −16
+PROPOSAL BONUS: Containment-Grade Evaluation and Bio-Screening Upgrade (cat 5, small) +4 — opaque_reasoning plus bio_uplift_findings landed this turn and this answers both directly
+LEGITIMACY LENDS: capital 13, sentiment 30 -> +2
+SOVEREIGNTY: 19 last turn, no capacity event, Gigafactories in flight +0, capability rose 3.0 −1 = 18

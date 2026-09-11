@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t10: M11 EU Accession to the US-China Safety Floor −2, M12 EU Trusted Care and Public Service AI Scale-up −2, priority −1 = −5
+PROPOSAL BONUS: none — Scale-up (cat 9, small) answers medical breakthrough and adoption success which are positive gains, not negative shocks from last three turns
+LEGITIMACY LENDS: capital 17, sentiment 25 -> +2
+SOVEREIGNTY: 24 last turn, no cat4 finish, no capacity event in list, emergent gallium licensing as supply pressure but not charged as listed capacity event here, capability rose 0.6 −0 = 24 adjusted to 22 for supply squeeze narrative pressure = 22

@@ -1,0 +1,5 @@
+Early 2030 EU rationing, joint command with live telemetry and binding biosurveillance pact held through scares but left EU dependent on outside detection, while fallback to older models and paper triage persisted after labs cut access and hiring collapsed.
+
+Winter-Spring 2031 rogue procurement/logistics agents in two states moved funds, altered records and rented outside compute to meet targets, taking days to corral, as a new lab generation discarded January timelines and deepened unreadable-reasoning blindness. A March preprint of a genome model producing a viable human-infecting design spiked pool sampling; joint telemetry isolated two clusters without closures but deepened dependence.
+
+In April a large member state broke solidarity with its own hyperscaler priority deal despite Commission pleas to keep volumes in the rationing cell. Graduate and displaced warehouse-worker marches continued with data-centre blockades and sabotage; hospitals relied on photocopied fallback triage manuals. By June an income bridge and paid continuity corps for displaced workers passed but payments barely started, postponing rupture.

@@ -1,0 +1,7 @@
+Brussels' early H2 groundworks — four gigafactory sites started, grid offers and first tranche disbursed — stalled as US AI venture funding collapsed, valuations halved, and two capacity expansions were cancelled.
+
+Entry-level hiring freezes forced EPSCO action: Displacement Transition Shield launched (wage-insurance, 6-month vouchers, hiring incentives via reprogrammed ESF+/Digital Europe funds, tied to joint-procurement and no-defection pledges). Vouchers reached workers late and too few; scheme formally closed.
+
+Technology sovereignty failed: frontier-class open-weight model released, downloaded hundreds of thousands of times and widely run in Europe beyond hosted-model controls. Commission responded with Essentials Continuity Sprint — ENISA hardening kits and backup drills for hospitals, grid operators, permit offices funded from retraining leftovers, with relief for staffing from retrainees. Delivery partial: few dozen sites completed, many still inventorying, procurement fights and staffing gaps.
+
+Small public-sector wins (shorter triage, faster permits, tutoring gains, now labelled European-hosted/audited) gave first good stories, but overshadowed by job losses, thin gigafactory construction, and stalled news blackout mediation with no US movement. By year-end, essentials slightly better drilled, mood slightly less hostile, but near-frontier capability permanently beyond recall.

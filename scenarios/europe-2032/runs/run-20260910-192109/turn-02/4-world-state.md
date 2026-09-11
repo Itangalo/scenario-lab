@@ -1,0 +1,10 @@
+### Audits, offices, and assurance
+The first half of 2027 belonged to two different Europes.
+
+In control rooms, the promised grid clean-up ground forward. The two affected transmission operators completed segmentation and credential reviews under the cyber agency and electricity coordinators, and the roll-out to the wider synchronous area began. But procurement of new detection tooling stalled again over interim standards, municipalities balked at inspection powers and costs despite co-funding offers, and the cross-border exercises remained staffed on paper for later in the year. Engineers privately said the mapped relays were now better guarded, but the underlying visibility gap had not closed.
+
+In ordinary offices, the mood was brighter. Law firms, consultancies, newsrooms and administrations reported the same pattern: assistants drafting, juniors checking and editing, output per person up, employment steady. Firms that had cut early quietly rehired. It made the case for painful spending on infrastructure and evaluation harder to feel — why pay now when work was going well?
+
+Brussels tried to hold both lines. Site shortlists for large AI factories advanced with reserved grid connections, yet two contested connections in Spain and Germany stayed blocked in permitting review, and Washington's tightening around lithography equipment forced an awkward debate over linking trade defence to technology. Paris pushed a firm response; smaller export-dependent states resisted.
+
+The new independent evaluation labs got a modest start: a mandate for the Joint Research Centre with seconded national teams, and first talks on evaluator access to learn how openly circulating intrusion toolkits were built. Developers listened politely and shared little beyond released systems. By June, Europe was more assured on paper, more productive at desks, and still waiting for protection that worked in practice.

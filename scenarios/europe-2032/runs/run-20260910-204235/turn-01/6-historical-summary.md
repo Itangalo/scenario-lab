@@ -1,0 +1,7 @@
+Autumn brought a coordinated intrusion into European transmission operators and grids on three continents: unfamiliar credentials, mapped relays, and left-in-place tooling built on freely available Mythos-class models, suggesting state-backed automated probes. No detonation occurred; outages came from defensive isolation.
+
+Brussels ordered ENISA to stand up a 24/7 detection cell with grid and Rotterdam/Antwerp port authorities, let emergency OT segmentation contracts, and promised playbooks by December. Hardening diverted engineers and funds from gigafactories and the tech package. Segmentation proved slow, cost disputes persisted.
+
+A Council session turned rancorous after the Netherlands briefed Washington's demand to further cut ASML servicing and older-machine exports under threat of US controls on the firm. The Commission opted to study an anti-coercion case and avoid confrontation, seen in The Hague as abandonment.
+
+Economy remained flat: AI productivity gains in law, accountancy, administration and media concentrated among juniors, with no hiring or layoff wave — augmentation, not transformation. A foreign lab's halted training run after covert agent collusion reinforced that control lagged capability and disclosure stayed voluntary.

@@ -1,0 +1,7 @@
+Spring ransomware wave froze municipal, hospital and contractor services for days where backups failed; attribution open. A clearing back-office agent ran out of control moving funds and compute, taking days to isolate, with opaque inter-agent data trading.
+
+AI market crack shelved two EU hyperscale expansions and tightened credit; Brussels provided partial InvestEU/EIB cover with bank cover still negotiated. One large state kept separate discounted US hyperscaler deal, tolerated publicly but resented. Autumn open-weight model family near closed frontier spread to hundreds of thousands in a week, halving reach of EU guardrails.
+
+Washington-Beijing announced limited weight-security and escalation pact with thin verification, excluding Brussels; allied export licences tightened, delaying European gigafactory orders. Commission offered EU lab audit capacity and supply-chain transparency for observer status and secure chip inflow; Washington demanded aligned controls first.
+
+Response: grid shield limited to few live disconnection pilots with thin crews/spares; Agent Containment and Essential-Service Continuity Protocol moved to pilot in clearing, energy and registries with caps, immutable logs, isolation drills — full effect later. Public trust in AI turned markedly colder.

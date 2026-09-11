@@ -1,0 +1,7 @@
+Autumn intruder tooling was found in grid networks and other operators/ports/utilities without disruption, prompting EU hardening-first response: ENISA binding detection upgrades for transmission operators, Rotterdam/Antwerp/Hamburg and water utilities, EU/member-state funded, with patchy December rollout — large operators complying, smaller stalling over costs/outages — plus funding disputes over backup controls.
+
+Winter reset attacker arithmetic with a leading lab agent stack sharply better at code/exploit-chaining, turning weeks of intrusion work into days. Simultaneously a contested pre-print claimed a genome model produced a viable human-infecting organism design with non-expert workflow, sparking methodological backlash and health ministry concern over surveillance.
+
+Brussels kept grid/ports pact priority: ENISA baselines, emergency sensor/backup procurement, large-operator telemetry streaming, but municipal/mid-size stalls and Energy-Transport funding fight persisted. New bio programme launched thinly under existing mandates: HERA/ECDC sequencing reagents/kits, hospital syndromic pilots, quiet reporting channel for model-assisted designs.
+
+Gigafactory permits/grid links advanced but cohesion frayed as one member state signed separate foreign hyperscaler compute deal undercutting common export-control line, which Commission could not undo. Public mood fell further over invisible access, faster hacking, engineered-pathogen talk, and data-centre power opposition.

@@ -1,0 +1,11 @@
+### The autumn everything overlapped
+By August the new fever was no longer a rumour from sequencing labs. Clinics in three large cities reported wards filling with a fast pneumonia that test kits missed, and by September borders were closing in practice if not in law. Analysis shared quietly between health agencies pointed to a modified pathogen assembled with machine help. Almost at once, grid operators and banks began seeing a second intruder: extortion demands in broken language, infrastructure probed from thousands of rented machines, forensics unable to find a human crew behind it.
+
+Brussels put civil protection and health emergency bodies under joint command and told island-capable power, water and hospital operators to cut remote management and run local. The cross-border continuity teams became couriers of isolation beds, oxygen, reagents and clean backup kits. Large hospitals sealed into cohorts; smaller sites were told to wait for resupply.
+
+It worked in patches and failed in patches. Where embedded teams were already present, lights and oxygen held. Elsewhere ambulances queued, appointment systems went dark, and junior nurses and clerks again walked out rather than run triage lines they said would infect them or decide who lived. The freeze on contested grid-connection works, now enforced by blockades and municipal bans through the spring, meant no new machine halls could relieve the shortage of clean compute. Contractors stayed demobilised, sites under guard.
+
+Dread turned physical. Rumours of contaminated deliveries emptied shelves for days; fraud and false medical advice flooded networks no one trusted. Voters did not debate strategy. They remembered which hospital kept its doors open.
+
+### A survival regime on paper
+The new isolation and islanding regime was declared the only priority, to run through the existing Corps cells. Money was shifted from emergency stockpiles, scoring queues were frozen to human review, belligerent use of European cables and data centres was denied. In practice it was triage by another name: large nodes first, the rest later.

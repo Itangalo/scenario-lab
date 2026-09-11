@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The narrative describes rapid deployment of migration teams to hospitals, repurposing of EuroHPC sites and AI Factory halls, and operational continuity achieved within a single turn (6 months) for a high-cost, complex measure (Essential Services Continuity Stack). This violates the constitutional requirement that no measure is implemented instantly, with a minimum of two full turns required for high-cost measures (Modelling choice #6).\n- Economic Constraint violated: The Commission repurposed public compute and pushed back with publicly funded efforts, but no identified source for the additional capital expenditure is provided. The political capital drop (from 36.0 to 26.0) implies significant spending, yet the notepad does not link this to a funded measure or borrowing mechanism, and such a 10-point drop exceeds typical spending signals without explicit budgetary justification (Economic Constraints: capital expenditures require identified sources).\n- Metric movement violation: `eu_political_capital` decreased by 10 points (from 36.0 to 26.0), which is within the 25-point hard cap, but the drop is disproportionately large compared to the narrative and notepad inputs. The notepad attributes −12 to portfolio charges and +3 from proposal bonus, netting −9 — yet the actual metric moves −10. This misalignment suggests either double-counting or an unaccounted drain, violating the requirement that metric changes reflect rule-based computation from documented events (Constitutional Constraint #9 and Modelling discipline)."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

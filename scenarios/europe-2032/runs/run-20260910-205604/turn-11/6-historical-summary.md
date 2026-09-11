@@ -1,0 +1,5 @@
+Autumn blockades and court injunctions froze Lyon and Magdeburg grid links; Commission declared both gigafactory shells stranded, pulled guards to substations, admitted no sovereign hall online and offered no rebuild.
+
+A capital broke ranks with a cut-price side deal for cloud/model supply for hospitals and firms; Commission noted it without sanctions, limiting cohesion to emergency wage advances for shift-cut Rotterdam, Antwerp, Lodz workers still awaiting retraining.
+
+French/German/Dutch centres kept night/weekend cover for town halls, clinics, water utilities, containing November copycat extortion wave, but bind persisted: Marseille, Essen, Brno on slower European-hosted tools, relabelled open-model procurement elsewhere, unconfirmed talk of intrusion kits and night-rental brokers, US model cutoff unappealed.

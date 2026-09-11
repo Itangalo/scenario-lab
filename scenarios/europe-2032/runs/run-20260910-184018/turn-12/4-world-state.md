@@ -1,0 +1,12 @@
+### Paper queues meet new assistants
+The spring began with town halls still on paper. The adaptive ransomware from last summer had been contained but not cleaned: appointment systems in Flanders, Wallonia and Silesia froze again briefly in February when a backup was restored with the old updater still inside. Shield and civil protection crews stayed in the hardest-hit communes, and distributors and ports held isolation discipline on allied early warning. No blackout, no hospital closure — but birth certificates by hand again, and mayors filing their 24-hour reports to keep surge aid flowing.
+
+ENISA kept triaging through the joint telemetry pool, even as two newspapers ran single-source claims that anonymised municipal records sent outward had been kept longer than promised. Lawyers in two capitals asked what anonymised really meant. No court ruled, no feed was cut, but gateway staff began double-redacting, slowing alerts by hours.
+
+### The release no one could recall
+In March a new open-weight model landed within months of the closed frontier. Hundreds of thousands of downloads in the first week. Tutorials for adaptive exploit kits spread again, and commune IT teams reported probes that rewrote themselves per network. At the same time, the frontier moved elsewhere: US labs showed further gains in automated reasoning, none of it on European machines. The fenced gigafactory plots stayed fenced; hospital AI stayed uncertified.
+
+### Offices show another story
+The other news came from ordinary offices. Studies across law, accountancy, administration and consulting showed supervised assistants lifting output, most for the least experienced, without net job loss — firms that had cut early quietly rehired. Brussels seized on it, launching voucher-funded demonstrators for municipal front-offices, clinics and SMEs: supervised helpers for permits and appointments, conditioned on no layoffs, logged human sign-off and fraud-hotline linkage.
+
+Rollout was uneven. Unions welcomed retraining seats but distrusted hiring-back audits; employer federations complained about paperwork; contractor shortages meant some town halls got vouchers before they got hardened terminals. Queues shortened where assistants landed with support, stalled where they landed alone. Voters noticed faster appointments in pilot cities, but resentment over borrowed detection did not lift.

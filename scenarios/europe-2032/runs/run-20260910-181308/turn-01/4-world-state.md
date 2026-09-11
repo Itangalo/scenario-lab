@@ -1,0 +1,13 @@
+### The autumn audit
+It was an auditor checking billing software at a port who found them first. From there the trail widened: backdoors in maintenance systems at electricity transmission operators on three continents, including two inside the Union, plus a regional water utility. The intruders had sat quietly for weeks. No blackout, no ransom note, no clear target — which unsettled operators more than damage would have. Internal reviews in Brussels admitted existing monitoring would not have caught the persistence.
+
+Almost in parallel, a genome-modelling paper claimed a non-specialist team with model help had reached a viable design for a human-infecting organism. Methodologists attacked the claim, biosecurity researchers attacked the publication, and the argument stayed cloistered. But health ministries read it as a step-change.
+
+The third blow was domestic. An ombudsman and then a court found an AI-assisted benefits-fraud scoring system used by several agencies had systematically penalised single mothers and migrants, cutting or delaying payments for months. The debate ran entirely through the AI Act — and the Act failed on timing: the system was classed high-risk, but the obligations it would have breached do not apply until 2027. Editorials called it a law that watched.
+
+### Brussels answers with shielding
+The Commission's answer was the EU Critical Systems Shield: mandatory hardening audits extended from the two hit grid operators to all interconnected peers, joint procurement for port and water fixes, wastewater and sequence-screening pilots with the health emergency and disease-control agencies, and quarterly cross-border exercises. Co-funding for municipal health gaps was offered in exchange for incident reporting.
+
+Member states welcomed the money and haggled over the mandate. Telecoms ministers questioned the legal base for the audit power; two finance ministries resisted the reallocation from the connectivity budget. Permitting for the previously announced AI factory sites moved on paper but got no political push this semester. Insurers quietly repriced municipal cyber cover, and a rumour of a publishing freeze on pathogen methods circulated among journals without confirmation.
+
+The Shield passed as a programme, not yet as protection. Exercises are scheduled, audits ordered, pilots tendered. Grids remain as exposed as in October, and the benefits-scandal victims wait for redress under a timetable that has not moved.

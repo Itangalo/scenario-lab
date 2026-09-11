@@ -1,0 +1,12 @@
+### Hardening holds, hiring breaks
+The cyber-shield work finished in the autumn. Transmission operators, ports and water utilities in the two previously probed states now run centrally procured swarm-detection, with hunt teams on call and segmentation audits folded into routine supervision. Engineers remain scarce and permitting for new compute sites still competes for the same people, but operators report faster patching and fewer blind spots. Grids are not invulnerable, but an intrusion is now more likely to be seen.
+
+That technical gain was overtaken politically by jobs and biology.
+
+By September, graduate hiring data across law, accountancy, software, customer operations and administration showed entry roles simply not returning. Newspapers ran photographs of empty trainee intakes; ministers argued over numbers while families did not argue about the absence. At the same time a contested genome-model paper claimed a non-expert pathway to a human-viable design. Virologists fought over methods and over publication itself, but health ministries read it as warning.
+
+Brussels answered with a shield-and-buffer package: federated wastewater and clinical sequencing through health emergency and disease-control bodies, linked to medical stockpiles, plus front-loaded retraining and wage-insurance pilots for the hardest-hit junior cohorts, framed as absorption rather than new spending.
+
+On the supply chain, progress stalled. The push for a unified Council line on servicing licensing for lithography tools ran into legal-base fights and industry lobbying; evidence-gathering under the anti-coercion instrument advanced quietly but produced no deterrent. A return mission to Tokyo and Seoul with a concrete spares-pool offer backed by investment-bank guarantees was received politely and left unsigned. Japanese and Korean firms would not choose between Washington and Brussels in a capital drought.
+
+American labs continued to hire stranded European researchers, and the pooled university compute pact slowed but did not stop departures. By December Europe was better defended in its pipes and hospitals, more exposed in its labour market, and still without leverage over the machines that make its chips.

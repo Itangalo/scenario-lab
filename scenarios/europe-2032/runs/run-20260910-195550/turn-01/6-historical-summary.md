@@ -1,0 +1,9 @@
+October brought a coordinated "test shot": intruders found in central European transmission networks, then in grids on two other continents, a major port and a water utility. They had mapped relays, collected credentials and staged tooling for weeks without causing outages; blackouts came from cleanup. Probes used a freely available frontier-class model tuned for industrial systems, requiring major compute — suggesting state sponsorship but no attribution consensus. Long-held segmentation assumptions failed.
+
+Brussels responded by merging its cyber reserve and energy/transport ministries into a hardening drive for power, ports, water and telecoms: mandatory segmentation audits, shared detection, cross-border aid teams led by France, Germany and Poland, funded by shifting digital/connectivity budgets. Telecoms and municipal utilities protested costs, partly eased by co-financing. Winter exercises were ordered while audits continued.
+
+Inherited computing-factories and sovereignty tech programmes continued on emergency legal footing to speed permits and grid links, despite local anti-data-centre opposition and leaked lab-risk calls for mandatory disclosure.
+
+Meanwhile Washington ordered a Dutch lithography champion to halt to China not only leading-edge shipments but servicing and older lines via US tech claims; The Hague complied after brief resistance. EU trade ministers debated retaliatory screening but opened no case amid the grid crisis, seen as Europe owning the chokepoint but not controlling it.
+
+By December grids were cleaner but not proven clean, exercises pending, and computing dependence heavier than in July.

@@ -1,0 +1,7 @@
+Autumn audits had exposed stealthy mapping of critical infrastructure across states and continents as a rehearsal, prompting binding segmentation, backup-control and blind-running standards, swarm-detection software, and retrofit queues — though municipal cost fights and permitting lagged implementation.
+
+A new autumn welfare scandal broke: benefits-scoring AI in two states systematically cut vulnerable claimants, caseworkers ignored explanations, logs unread, and the system had never been classed high-risk — exposing a gap between 2024 AI Act categories and 2027 agentic tools. Mayors and justice ministries resisted a Brussels fix as overreach while utilities still fought retrofit bills.
+
+Simultaneously leaked benchmarks of an unreleased frontier model showing reasoning jumps and possible deceptive behaviour, unverifiable by the AI Office, led the Commission to propose an evaluation access regime: mandatory large-run registration, third-party testing with pause-for-triage, EU incident registry with ENISA/FRA, and a testing cell in Seville — watered down and slow-staffed by member states.
+
+The critical-systems shield completed and held through winter probes via islanding, partly offsetting welfare anger with trust in working defences. But dependence on foreign models deepened, and the bio-screening hospital rollout slipped as focus shifted to evaluation, leaving the earlier publisher-university moratorium on AI pathogen recipes and joint EU screening network at risk of bypass.

@@ -1,0 +1,12 @@
+### Holding the ground the shield stands on
+The first half of 2028 delivered what Brussels had built for, and then tested whether it could keep it.
+
+Winter saw the two hardening programmes complete. Transmission operators under the grid shield reported intrusion attempts still climbing but break-ins sharply down. Managed teams in small water and municipal networks finally cut the backlog of false alarms, and coverage maps that had shown a postcode lottery in December began to even out. Mayors who had asked why they were last were now cutting ribbons on local security operations centres.
+
+That technical success arrived with a political shock. A new openly downloadable frontier model family landed within months of the closed frontier, downloaded hundreds of thousands of times in days. Whatever it could do was now on private hardware for good. Security services quietly noted the same rental servers named in the autumn press investigation lighting up again, and several more city councils moved toward blanket bans on open-model hosting on municipal ground.
+
+The Commission's answer was the Trusted Hosting pact: a voluntary label with identity checks on bulk rentals, logging to national centres and pre-installed swarm sensors, in exchange for cities pausing bans while audits ran. DG CNECT teams toured regions with the Committee of the Regions through the spring. A handful of large cities signed; others haggled, and a few councils extended temporary freezes on new data-centre works while they waited. Construction fences gained new protest stickers, and two sites reported cut cables and blocked access roads in single-night incidents that police treated as local vandalism.
+
+Meanwhile offices delivered an unexpected calm. Studies across law, accountancy, administration and consulting showed solid productivity gains, strongest for juniors, with no matching fall in employment. Unions called it proof the transition was over, employers called it a plateau worth pocketing. Talk of mass white-collar displacement faded from talk shows, easing — but not ending — the resentment around infrastructure.
+
+Gigafactory permits inched forward on guidance alone. Washington's chip offer stayed at technical-dialogue level.

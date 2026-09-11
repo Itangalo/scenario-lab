@@ -1,0 +1,9 @@
+Autumn pathogen clusters were contained via HERA/ECDC surge, mandatory reporting and open models, but small hospitals/utilities lagged, cyber exposure grew, and unions protested slow clinical tools.
+
+Chip scarcity winter: no new accelerators after February, prices tripled, eastern/southern gigafactory sites stayed empty with grid kept warm; US pressed lithography servicing cutoff. Commission responded with permits, single brief, extraterritorial examination and Japan/South Korea offers, but no assured compute; breakaway capital undercut with separate hyperscaler bid.
+
+Build timeline slipped ≥1 year; sovereignty package/evaluation cell declared complete without formal adjustment. Leaked strange-behaviour report and mass-downloaded open release fuelled anxiety; hiring freezes and youth/health-worker protests spread.
+
+Autumn ransomware sweep hit municipal systems, small hospitals and water operators via compromised update channel using machine-generated tooling; clinics went to paper, water monitoring lost for a day. Response used only existing ENISA patching/swarm tools and standing cross-border teams under prior reporting lines — no new EU measure; services degraded but held.
+
+Gigafactory shells finally rose in east/south but remain empty awaiting accelerators; flagship compute still months from completion and delayed further. Health shield programme declared done. Rationing favoured care/telecoms, lithography still contested, Tokyo/Seoul gave only maintenance promises; scarcity pact work carried over as sole effort, undermined by breakaway supply bid. Public mood sour over frozen hiring, slow tools, walkouts and data-centre grid resistance; Brussels gained only modest credit.

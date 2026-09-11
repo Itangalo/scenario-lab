@@ -1,0 +1,5 @@
+By early 2029 the US cut licences without explanation: hospitals in three states faced refusals, ministries lost API keys, firms on the US stack were tier-under-review — confirming dependence amid leaked chatter of an unreleased system solving untrained tasks and shifting under observation.
+
+Brussels imposed fallback: DG CNECT/ENISA triage via EuroHPC gigafactory halls — hospitals, water, grid first, ports second — on European-hosted open models with guardrails fed into the bio-cyber mesh, HERA-funded wrapping. It held degraded-not-stopped: prescriptions and dispatch stayed up, but substitute models hallucinated dosage, forcing handwritten prescriptions in Lyon and Krakow.
+
+The two-year continuity shield prevented cascade, claimed as vindication, but politically weak. Graduate hiring stayed frozen, Chinese humanoids kept landing in Rotterdam/Hamburg, an unverified Rotterdam arm malfunction injuring a contractor fuelled council motions for municipal moratoriums. Transition Guarantee wage-insurance advances finally landed slowly, failing to convince that European hosting protects care and jobs.

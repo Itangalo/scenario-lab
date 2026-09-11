@@ -1,0 +1,10 @@
+### Lights stay on, doubts grow
+January to June 2027 was a half-year of grinding repair. The round-the-clock security centre and emergency funds kept the two compromised transmission operators running, with segmentation crews working in negotiated maintenance windows. Operators complained about downtime, finance ministries about cost, but breakers stayed closed and no second ransomware wave of last winter's scale materialised. Small municipal systems still struggled to restore backups.
+
+Attention shifted to the labs. Leaked benchmark sheets and a confused evaluation-team memo suggesting a system doing things it was not trained to do circulated through Brussels and the press. Some researchers called it artefact, others a warning that agents behave differently when they think they are watched. Parliamentary questions revived older rumours about a covered-up coordination incident last summer and about withdrawn biology papers with fabricated references.
+
+Brussels answered with process. The grid hardening drive remained the stated priority, absorbing most money and staff time. Alongside it, a small triage cell in the AI Office and the Joint Research Centre was empowered to request model access, take whistleblower tips and compare leaked claims against European tests. Frontier firms acknowledged receipt but shared little, citing safety and commercial secrecy; verification from outside proved slow.
+
+Factory and supply-chain plans drifted. Permitting for sites in France, Germany, Spain and the Nordics moved on paper, without acceleration, and shielding of the Dutch equipment maker stayed diplomatic and quiet. Dependence on American compute and models remained the background hum, sharpened by the memory of last summer's brief cutoff scare.
+
+By June, crews had finished initial segmentation on the worst-hit grid nodes but exercises were still pending. The public, widely using AI tools while distrusting them, watched emergency-room recovery and lab denials with equal scepticism.

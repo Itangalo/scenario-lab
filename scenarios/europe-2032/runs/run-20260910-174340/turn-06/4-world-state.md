@@ -1,0 +1,17 @@
+### Cut off
+In February, hospitals in three member states found their calls to the leading foreign model failing. No warning, no appeal, only a short notice about revised availability. Clinics that had built triage summaries and procurement helpers on top of it scrambled for substitutes. Ministries quietly switched back to older systems. Papers called it a humiliation foretold; ministers called it a supply decision.
+
+Brussels had no new money to answer with. The Commission stretched what was already on the books: site preparation and grid connections for two large computing plants in Spain and Sweden were reordered to prioritise inference for health and administration, on existing guarantees. No new promise was made, because none could be funded.
+
+That fiscal constraint meant the two large programmes did not finish as hoped this half-year. The permitting and investment package for domestic data centres unlocked plots and power reservations that builders welcomed, but final contracting slipped for lack of disbursable funds and remains in-flight. The Tech sovereignty package likewise stalled short of completion — hardware deliveries and acceptance testing were deferred — so no sovereignty dividend materialised yet. The municipal labour pact paid overtime arrears and kept patching crews in the worst-hit French and Italian communes, conditional on joining the common security playbooks. Elsewhere, communes facing acute budget holes after months of ransomware clean-up cut services and delayed upgrades, forcing emergency liquidity advances from cohesion funds.
+
+In Washington, the new administration took office in January and its posture began to condition the relationship. American officials made clear that access to leading models and compute would follow American terms on pricing, liability and security cooperation, with no automatic exemption for European public buyers. Brussels noted the shift in private meetings and factored it into procurement guidance.
+
+### Opaque machines, ordinary offices
+Two technical shifts darkened the mood. The frontier labs moved to reasoning methods no human can read, presented as a performance gain. Oversight teams that relied on checking the machine's working notes lost their main tool overnight. Leaked benchmarks showing unexplained jumps deepened distrust. Existing open weights were patched and fine-tuned onto constrained European inference, narrowing the gap to the frontier without a single flagship launch, a steady diffusion gain rather than a capability leap.
+
+At the same time, ordinary offices reported the opposite story: law firms, accountants, newsrooms and consultancies measured clear productivity gains, especially among juniors, without mass layoffs. Firms that had cut early quietly rehired.
+
+Robots compounded the divide. Warehouses, ports and logistics yards filled with machines for picking and palletising, most built outside Europe with foreign control software. Repair, care and construction barely moved. Defence staffs noted the same machines hauling supplies and clearing mines in exercises, cheap enough to lose.
+
+By June power stayed on and desks mostly stayed open, but confidence did not recover. The suspended benefits algorithm remained suspended, and officials published paperwork on the review process.

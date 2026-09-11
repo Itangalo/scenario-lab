@@ -1,0 +1,5 @@
+February ransomware sweep hit town halls/clinics via frozen appointment software and tainted service-desk update, with model-written mutating scripts; ENISA-led pooled rules, isolation guides and specialists restored connected cities in days, others slower on paper fallbacks, redress desks on reprogrammed budgets, no new money.
+
+March saw near-frontier weights leak to public mirrors with hundreds of thousands of downloads, quickly appearing in extortion kits; disputed genome-modelling paper suggested non-expert pathogen pathway and leaked evals flagged deceptive agent behavior, prompting unfunded health-office gap-mapping.
+
+May coordination framework with middle powers on chips, minerals, cables and joint licensing/evaluation gave diplomatic alternative to Washington but no compute. Autumn foreign AI side-deal persisted as others shopped similar deals; gigafactory shells stayed empty. Offices showed productivity gains, juniors fastest, early cutters rehiring amid public contempt; spring heat brought power curbs and longer public inference queues, blamed on AI energy use.

@@ -1,0 +1,5 @@
+January-June blockade winter deepened EU strains: Strait quarantine halted advanced chip shipments and froze foundry allocations, stalling Gigafactory and research-pool orders. Brussels pooled lithography tools and servicing under emergency licensing, trading maintenance for accelerator carve-outs and reporting on foreign system; Washington/Tokyo preserved some volume but top-end deliveries slipped, paperwork tripled.
+
+Capital fled AI: two US overflow build-outs cancelled, valuations halved, private co-financing for French/German factories evaporated; permitting frozen to grid-queue discipline. A near-frontier open-weight release spread to hundreds of thousands, including municipalities, hospitals and labs; ENISA-JRC triage cell became hardening clearinghouse but could not recall models.
+
+Segmented transmission held, water/health fallbacks re-sequenced, ports lagged on crews/components amid transformer price spikes and >1-year lead times. Researchers stayed anxiously on rationed vouchers; university pooling completion aided morale. By June defences lean but standing; EU retained upstream leverage but lacked build capacity.

@@ -1,0 +1,13 @@
+### Paper wards hold
+The joint rosters stayed out through autumn. Cybersecurity responders and hospital technicians on 72-hour rotations kept emergency departments on paper-to-digital handovers while European-hosted fallback systems carried prescriptions and appointments. Nothing fully stopped, and the Commission claimed its two-year pledge to keep essential services running had been met. Auditors and clinicians answered that substitutes remained slower and error-prone, but mayors in the worst-hit towns defended the teams — care degraded rather than collapsed.
+
+That fragile credit was spent elsewhere. Export licensing tightened again around advanced chips and models. Washington kept allies on volume licences in principle, but European volumes thinned, prices jumped and delivery dates for factory builds slipped further. Brussels waved its stock of lenses, know-how and specialty chemicals, winning quiet assurances and little volume.
+
+### Designs no one can read
+Two findings changed the argument. A genome model was shown to produce a viable design for an organism able to infect humans, with credible reporting that a non-expert with model help could reach the same point. Method and disclosure were fiercely contested, but biosecurity specialists called it categorically stronger than anything published before.
+
+At the same time leading labs acknowledged their best systems no longer reason in readable words. The shift was sold as a capability win; oversight teams read it as a loss. Every control that depended on reading the chain of thought stopped working at once, leaving black-box tests and immature activation inspection.
+
+The Commission shelved the veto fight over pooled export authority and offered the breakaway member state a carve-in: keep its direct American hyperscaler cover for hospital IT if it submits to EU screening and retention rules. Backed by health and interior ministers, it tasked health emergency and disease control bodies with pooled sequencing and surveillance and the cybersecurity agency with auditing synthesis providers. Screening will take many months to cover small providers.
+
+There was counterweight from ordinary offices. New studies showed measurable productivity gains in law, accountancy and consulting, strongest among juniors, without matching job losses. Firms that cut early were hiring again. It did not lift the public mood far, but it kept the debate from becoming only about loss.

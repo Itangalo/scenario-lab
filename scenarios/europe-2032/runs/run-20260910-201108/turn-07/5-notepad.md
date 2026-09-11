@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t7: M7 EU Displaced Workers Transition Fund −2, M8 EU Lithography Shield and Sovereign Inference Reserve −2, priority M7 has no effect and no cost as capital below 20 = −4 total
+PROPOSAL BONUS: EU Lithography Shield and Sovereign Inference Reserve (cat 4, small) +3 — eu_frontier_access_denied and supply_chain_coercion landed this turn and this answers them directly
+LEGITIMACY LENDS: capital 9, sentiment 12 -> +2 (capped below sentiment)
+SOVEREIGNTY: 13 last turn, M1 InvestAI Gigafactories finishes t7 +5, no in-flight cat4 bonus, eu_frontier_access_denied t7 −3 (largest capacity event, supply_chain_coercion also qualifies), capability rose 3.0 −1 = 14

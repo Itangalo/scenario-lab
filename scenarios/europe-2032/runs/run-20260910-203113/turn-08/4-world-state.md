@@ -1,0 +1,11 @@
+### Holding the line through the bio scare
+The spring began with a paper no one outside biosecurity wanted to read. A genome model was said to have sketched a viable human-infecting design, with help accessible to non-experts. Methodologists attacked the claim, editors were accused of both hype and of printing instructions, and health ministries quietly asked Brussels for stocks rather than statements.
+
+That anxiety collided with a more ordinary story. Across law firms, accountancies, newsrooms and consultancies, productivity figures ticked up. Junior staff did more per hour, firms that had cut early rehired, and employment held. Voters noticed reliable help with paperwork more than they noticed warnings about models.
+
+### Reserves, drills and black boxes
+The Commission's answer was continuity. The bio-hardening surge finished its rollout: joint assay kits and protective stores reached small municipalities, reporting was pushed through health ministers, and a second switchover rehearsal was ordered before autumn. Coverage widened; staffing in smaller towns still lagged, and one re-drill had to be split across two pilot halls when loads spiked.
+
+At the same time the AI Office, with the Joint Research Centre and the cybersecurity agency, began probing the systems actually running in hospitals and ministries — cyber and bio uplift tests run from outside, test cases drawn from the Lyon registry, a first interpretability pilot with Japanese and Korean partners. The defecting capital kept its separate hyperscaler volume, but renewal of its pass-through came with logging and access conditions it resented.
+
+The new continuity reserve formalised what the failed winter drill had exposed: a load-shedding order for the energised factory halls, dual-site hosting for triage and detection, minimum-stock rules funded by redeployed civil-protection and digital funds. Small towns were offered staffing money instead of fines. Engineers warned the guarantee was paper until more sovereign inference came online, and rationing among designated operators continued through the summer.

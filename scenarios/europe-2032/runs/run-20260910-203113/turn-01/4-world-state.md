@@ -1,0 +1,11 @@
+### The test shot
+In October, engineers auditing a transmission operator in central Europe found something they were not looking for: credentials harvested, relays mapped, small automated probes still running. Within weeks similar traces turned up at another European grid, at grids on two other continents, at a major container port and at a water utility. Nothing had been switched off. The outages that followed came from defenders isolating systems.
+
+Investigators described thousands of parallel micro-intrusions, tooling apparently adapted from a freely downloadable advanced model, run at a volume that suggested state-level compute. No one claimed responsibility. Public attribution bounced between Tehran, Pyongyang, Moscow and, in whispers, Beijing. What stuck was the defenders' admission: without a chance audit, they would not have noticed, and supposedly isolated operational networks had been reached.
+
+Brussels moved fast on paper. The Commission tasked its cybersecurity agency and energy and transport ministers with binding segmentation and logging rules, paid for by shifting money inside existing AI and connectivity budgets. Grid and port operators protested the cost and timetable; exercises were announced before standards were final.
+
+### Pragmatism elsewhere
+At the same moment, one capital signed its own side deal for compute access — presented domestically as cheap, secure supply, read in Brussels as a break in the common front. Efforts to hold others with promises of grid connections and co-location revenue only partly worked. American providers, fresh from briefly cutting off foreign users of two flagship systems in Washington's summer power grab, refused firm guarantees that European access could not be switched off again.
+
+In ordinary offices, the mood was different. Studies across law, accounting, administration and consulting showed strong productivity gains, especially for juniors, without layoffs. Firms that had trimmed staff rehired. AI felt useful, not threatening, which made the case for emergency spending harder to sell — and local opposition to new data centres over power and water hardened into permit fights.

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t5: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Frontier Assurance Taskforce −2, EU Bio Screening and Response Surge −2, EU Essential Services Hardening and Fallback Upgrade −2, priority −1 = −13
+PROPOSAL BONUS: EU Essential Services Hardening and Fallback Upgrade (cat 6, small) +4 — cyber_major_incident plus clinical fallback reckoning this turn, both severe and directly answered
+LEGITIMACY LENDS: capital 14, sentiment 32 -> +2
+SOVEREIGNTY: 12 last turn, no capacity event finishes, Gigafactories in flight +0, embodied_ai_deployment t5 −2, capability rose 1.0 −0 = 10

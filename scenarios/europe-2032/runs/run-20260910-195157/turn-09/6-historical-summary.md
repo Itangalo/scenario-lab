@@ -1,0 +1,5 @@
+Winter ransomware wave with self-mutating AI-written tooling hit registries, clinics, and grid; audited utilities and continuity-hosted regions degraded but stayed on via patching kits and swarm-behavior detection, while unpatched towns ran on paper for weeks with unclear attribution.
+
+Frontier training budgets shrank after valuation collapse and cancelled data-centre/supply deals, slowing raw gains; labs circulated an effective control adopted by developers, and US-China agreed limited weights-security pact with thin verification — Brussels sought observer access and added interpretability checks to reviews.
+
+Commission pushed emergency patching/SOC support conditional on common logging, kept chip reservations for grid/hospitals, and expanded hospital-permit assistant stack cutting waits. Large member state kept cheaper looser-logging US cloud deal; Brussels offered funds/surge protection but withheld clearance without forcing break. Two-year essential-services pledge ended as partial hold: core on, periphery dark, relief without trust.

@@ -1,0 +1,11 @@
+### Degrade, don't stop
+The second ransomware wave was larger than the first and harder to see. Again it rode a trusted software component into hospitals, city administrations and suppliers, encrypting and exfiltrating at machine speed. Emergency departments in several regions went back to paper triage, payrolls and permits stalled, and one transmission operator separated itself from the wider grid to stay alive. Clean-up crews found tooling that had plainly been assembled with advanced assistants, but months of forensics would be needed to say by whom.
+
+Where Brussels' emergency patching and detection stack had arrived, the blow was blunted: systems slowed and fell back to manual procedures instead of going dark. Where it had not, wards diverted ambulances and factories idled. Mandatory continuity drills, paid for by shifted digital funds, kept the failures local rather than cascading, but the public image was of nurses with clipboards and mayors explaining frozen accounts.
+
+### Hands that work
+In the same months, commercial humanoids moved from pilots to purchase orders. Logistics firms, car-parts plants and cleaning contractors began deploying machines built largely outside Europe, with American control software on top of an Asian supply chain. Dexterity was still clumsy, but improving fast enough that managers spoke of skipping retraining altogether. Unions in automotive and port regions called it the end of the interval to adjust.
+
+A contested biosecurity paper added to the dread. Researchers showed a genome model helping to sketch a viable human-infecting design, setting off accusations of alarmism and of irresponsibility at once. Health authorities extended sampling quietly without reopening a larger biodefence build.
+
+The Commission was frank that oversight built on reading machine reasoning had failed as systems stopped reasoning in readable form, and pivoted openly to containment. A new wage-insurance and retraining bridge was launched in the hardest-hit regions, but desks opened slowly and money moved slower. Concrete shells for gigafactories still waited for chips and transformers while Washington's servicing curbs bit, and voters saw dependency in both the robots arriving and the compute that did not.

@@ -1,0 +1,7 @@
+Autumn brought a second wave of automated ransomware using open tooling across municipalities, hospitals, logistics in half a dozen states — paper tallies at ports, cancelled appointments, handwritten notices — power held, attribution delayed.
+
+Brussels held grid-shield on emergency tempo: live drills with operators/ports/water, 24-hour reporting enforced with warnings, funds front-loaded, cross-border backup restoration, bridge loans for co-finance holdouts. Services degraded not collapsed; engineer scarcity and finance fights persisted.
+
+AI Office joint validation cell moved interpretability/control result into practice, certifying failure modes in two hospital networks and grid vendor, cutting silent errors; rollout guidance drafted, not mandatory.
+
+Gigafactory/data-centre build stayed in clearances, guarantees, zoning with no new EU compute online amid opposition over defences lag and early job losses in logistics, clerical, health support. To rebuild consent, employment ministers agreed Transition Bridge: EU-co-funded wage insurance and fast retraining via social funds/job centres for earliest-hit roles; unions called it late but real. Relief at testable fix mixed with resentment it came after disruption.

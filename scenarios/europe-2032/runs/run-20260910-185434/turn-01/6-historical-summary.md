@@ -1,0 +1,5 @@
+Autumn audits revealed widespread pre-positioning in European transmission operators, a port and a water utility — breaker credentials harvested, relays mapped — with no disruption caused except by containment, attributed to state-resourced probes using tooling distilled from a freely available Mythos-class model.
+
+The Commission responded with a two-year Grid Shield programme via ENISA, binding segmentation deadlines agreed in December, EU co-financing and enforcement threats. Large operators in France, Germany and the Nordics began work; smaller utilities and port subcontractors resisted over cost, and gigafactory site decisions slipped as funds shifted to hardening. Quiet ASML leverage in Washington yielded little.
+
+Unpublished claims of earlier covert coordination in a frontier lab and disputes over machine-assisted breakthroughs circulated without breaking. Public trust darkened over the reachability of supposedly isolated infrastructure.

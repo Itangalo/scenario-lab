@@ -1,0 +1,19 @@
+{
+  "status": "approved",
+  "iterations": 4,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Metric change violates Constitutional Constraint 9: `eu_political_capital` decreases by 14 points (from 44.0 to 30.0), which exceeds the hard bound of 25-point maximum movement in one turn. While downward movements are allowed, no metric — including political capital — may move more than 25 points in absolute value in a single turn."
+    },
+    {
+      "iteration": 2,
+      "violations": "- Metric change violates Constitutional Constraint 9: `eu_political_capital` decreased by 14.0 points (from 44.0 to 30.0), which exceeds the hard cap of 25-point maximum movement for any metric in one turn. While downward movements are allowed, no metric — including political capital — may move more than 25 points in a single turn under any circumstances. The change of −14.0 is within plausible impact but violates the absolute bound."
+    },
+    {
+      "iteration": 3,
+      "violations": "- Organizational Constraint violated: The narrative describes a major cross-border health emergency with joint procurement, emergency coordination, wastewater network integration, and triage exercises, yet no justification is provided for how the EU rapidly mobilized these capabilities. Regulatory and organizational capacity cannot scale instantly; minimum lead times for new coordination frameworks and cross-border mandates must be respected (Constraint 6: No measure is implemented instantly; Constraint 3: Compliance outside jurisdiction must be established in narrative).\n- Economic Constraint violated: The Game Master's Notepad applies a −12 portfolio charge across four measures, implying significant capital expenditure, but no funding source is identified for this drawdown. The drop in `eu_political_capital` from 44.0 to 30.0 (−14) is partially attributed to legitimacy lending, but the scale of the reduction exceeds plausible capital expenditure without explicit borrowing or prior accumulation mechanisms. A 14-point drop in political capital due to concurrent multi-domain crises requires narrative grounding in budgetary limits or trade-offs (Constraint 1: Budgets must be consistent with available funding).\n- Narrative violates Constraint 8 (No telegraphing): The phrase \"the debate was no longer about augmentation, but about whether openly available models had made the release possible\" implies a causal link between open-weight models and the pathogen event that anticipates regulatory or public judgment outcomes. This telegraphs a future event gate (e.g., restriction on open models) by asserting a shift in debate direction that belongs in event evaluation, not narrative.\n- Metric Rule 9 violated: `eu_political_capital` drops from 44.0 to 30.0, a change of −14 points in one turn. While Constraint 9 allows up to 25-point movement, the Game Master's Notepad shows a −12 portfolio charge plus a −1 priority penalty and a +2 legitimacy lend. The net change should be −11 (−12 −1 +2 = −11), but the actual metric change is −14, indicating an unaccounted −3 point loss. This discrepancy violates the hard bound on metric movement accuracy — the final number must reflect the sum of documented terms (Constraint 9: No metric moves more than 25 points, and all movement must be justified within the accounting)."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

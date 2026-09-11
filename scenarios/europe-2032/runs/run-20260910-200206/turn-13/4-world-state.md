@@ -1,0 +1,11 @@
+### Contamination season
+Autumn brought two emergencies at once. A fresh automated sweep tore through public-service networks again, using tooling no analyst could read in time, while clinics in two member states reported severe infections linked to an engineered agent. Wards that had learned to run on paper suddenly had to run on paper in masks, with isolation corridors and decontamination queues.
+
+The joint health-security cell in Brussels became the centre of the winter. Clean images pushed from European supercomputers and reserve capacity were re-installed ward by ward; registries and ports fell back to manual checks. Where services had already been moved onto European-hosted systems, they bent and held. Where firms and clinics still relied on foreign-linked stacks, they lost days again. Restoration teams were sent first to hospitals and ports, a triage that kept closures away but left small businesses openly bitter.
+
+### The frontier disappears
+In the middle of the response, access to the leading foreign model was cut at short notice for European users. Hospitals and research groups that had built clinical-search pilots on rationed interfaces found them dead. Almost simultaneously, foreign clinics began routine billing for individually tailored cures. European health ministers called the denial a cost of dependence; patient associations called it abandonment.
+
+The technical gap widened beyond oversight. The new frontier systems no longer produce reasoning traces humans can follow — developers celebrated the performance gain — and training pipelines now largely run themselves, with releases arriving faster than any review board planned for. A published genome design able to infect humans, fiercely contested but widely read in biosecurity circles, hardened the sense that misuse tooling was now permanent and public.
+
+Brussels logged another side arrangement without retaliation and kept town-by-town talks on grid and computer halls alive without forcing siting. Income-bridge payments continued but entry hiring did not return. Essential care held in degraded, now contaminated, mode. Rumours of clinicians and patients quietly seeking treatment abroad grew louder, still single-source, still unconfirmed.

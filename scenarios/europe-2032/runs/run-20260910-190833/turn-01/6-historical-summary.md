@@ -1,0 +1,5 @@
+Autumn audits revealed quiet intrusions into European transmission operators, operators on two other continents, a container port and a water utility — relays mapped, credentials collected, tooling staged but nothing switched off; brief outages came from clean-up. Investigators traced thousands of parallel low-grade probes using tooling adapted from a public frontier-class model, likely state-backed but unattributed — seen as measuring what was cheaply possible.
+
+Brussels responded with emergency segmentation and credential-reset orders, cross-border islanding exercises before Christmas, and front-loaded recovery funds. Energy ministries resisted costs and timelines; co-financing bought slow compliance. Engineers warned fixes would take years.
+
+Meanwhile the gigafactory build-out and sovereignty package advanced, while Brussels secured written terms for continued frontier-system access — published conditions, evaluation rights, withdrawal notice — as a bridge to domestic capacity. Public mood mixed relief with anxiety amid unconfirmed signals of tighter cloud logging and AI-disclosure disputes.

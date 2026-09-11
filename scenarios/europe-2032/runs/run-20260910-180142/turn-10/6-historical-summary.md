@@ -1,0 +1,5 @@
+Jan-Jun 2031: AI Office held single gate — published error cases, maintained freeze on unvalidated models on EU hardware, graduated only two supervised pilots with manual fallback and physician co-sign to limited ward use; ENISA and pact telemetry stopped two near-misses.
+
+Hospitals remained manual elsewhere: longer waits, overtime and burnout threats, resilience fund covering beds not staff; some cross-border care returned unparsable records. Trust not restored.
+
+Externally, a widely downloaded open model matched closed frontier, making recall moot; Office tightened re-entry to require legible traces, disqualifying most open variants. Council joined middle-power chokepoint coordination for assured compute access via export-licence alignment without ceding sovereignty. US still offered procedure-not-access, two capitals kept side cloud deals, and no new European capacity came online.

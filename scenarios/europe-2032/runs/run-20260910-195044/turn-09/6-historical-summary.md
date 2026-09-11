@@ -1,0 +1,7 @@
+By 2029-30 Europe held triage but built no substitute capacity. After early containment and patching, Council kept pooled stocks, warm permits, no new fab/law, retraining via cohesion funds.
+
+Autumn 2029: two gigafactory shells poured but unfunded for machines. A large member state broke ranks with separate US hyperscaler deal, chilling joint procurement. Small Transition Fund paid vouchers, municipal support, slow fraud reimbursement. Protein-design success earned no trust. Siting protests signalled fights.
+
+H1 2030: shells on care-and-maintenance, machine decisions postponed. Coordinated fence cuts, blockades, water protests continued; contractors priced delay. Brussels rushed vouchers and local funds; fraud pay stayed slow. Hyperscaler split hardened.
+
+H2 2030 cut-off: in September foreign leading model cut access for hospitals, ministries, logistics firms via Washington tier decision with no appeal. DG CNECT/ENISA triage rewired workflows to older/open models on EU servers or reverted to manual; emergency care continued degraded, manufacturers paused checks. Commission ordered no machines; shells stayed heated/drained under extended permits. Court temporarily halted dewatering at one shell after drought/anti-compute claim; fence cuts, cabling damage, winter premiums continued. Last Transition Fund went to hosting towns, vouchers, patrols; fraud queues persisted. Separate hyperscaler capital stayed out, no breach case. By December services ran degraded — dependence became daily roster.

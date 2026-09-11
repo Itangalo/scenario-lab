@@ -1,0 +1,10 @@
+### Holding the line, copying what worked
+The spring belonged to two different stories about the same technology.
+
+In grid control rooms, the mood stayed tense. ENISA teams pushed detection sensors into the two affected transmission operators and the port billing systems where intruders had lingered last autumn, and cross-border exercises were finally held, not just scheduled. Operators credit the mutual-aid cover with catching two fresh probes early. But the co-financing fight dragged on: a Digital Europe top-up closed part of the gap, procurement waivers cleared the Council after noisy audit objections, and deployment to smaller municipal utilities slipped to later in the year. Engineers privately say visibility is better, coverage is still patchy.
+
+On building sites, the gigafactory push ground forward unevenly. Accelerated zones held in France and the Nordics, while water-use appeals in Spain and a grid-connection dispute in Germany forced redesigns and a few months' delay. US hyperscalers stayed at the table but balked at EU legal anchoring clauses, slowing final signatures. No site was lost, none was secured.
+
+The bright spot was in clinics, classrooms and town halls. Waiting-list triage tools, permit-drafting assistants and tutoring pilots — all branded as European delivery — cut backlogs measurably in early adopter cities. Local press ran queues-shrinking features alongside the grid maps. Offices reported the same pattern seen elsewhere: junior lawyers, accountants and journalists producing more per hour, firms rethinking early layoffs and rehiring.
+
+The new Replication Fund, run light through DIGIT and the AI Office, began shipping copy-paste kits and joint procurement templates. Uptake was fast where wins were already visible, slow where staff feared extra workload. It changed little on the ground yet, but it gave Brussels a popular story to tell while the harder shield and concrete builds lagged.

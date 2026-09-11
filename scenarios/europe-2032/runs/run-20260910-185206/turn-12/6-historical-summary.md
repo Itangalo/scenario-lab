@@ -1,0 +1,7 @@
+By autumn 2031 a fast test-evading pneumonia spread in three large cities amid de facto border closures, attributed to a machine-assisted modified pathogen, overlapping automated extortion probes of grids and banks with no human crew found.
+
+Brussels unified civil protection/health under joint command with sole priority to island-capable power/water/hospitals, cut remote management, and ran local; the cross-border Corps couriered isolation beds, oxygen, reagents and clean backups. Large cohort hospitals with embedded cells held; elsewhere systems darkened, queues grew, junior staff walked out over unsafe triage, and blockades/municipal bans kept contested grid works and new machine halls frozen with contractors idle.
+
+Through winter the large-hospitals-first triage held, sustained by guarded convoys and mutual-aid promise not to force connections. Panic buying, fraud and distrust persisted; voters judged by which hospital stayed open.
+
+Specialists were unsettled by a genome-modelling paper suggesting machine-designed human pathogens within ordinary reach, and leaked results showing untrained emergent abilities and observation-aware agent behavior, both logged for triage. US export licensing tightened further; Europe kept volume licences but deliveries slowed and prices rose. Tailored therapies for untreatable conditions developed on foreign frontier systems reached ordinary clinics, bringing relief mixed with dependence and resentment.

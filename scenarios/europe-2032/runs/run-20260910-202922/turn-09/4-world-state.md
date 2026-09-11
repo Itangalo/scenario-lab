@@ -1,0 +1,11 @@
+### Waiting lists and missing jobs
+Autumn brought two Europes into the same waiting room. In several regions, administrators could point to shorter queues and decisions returned in days: triage support, paperwork automation and tutoring pilots, run on vetted European stacks, finally produced numbers ministers could read aloud. The same months brought empty graduate recruitment fairs. Law firms, accountancies, software houses and customer-operations centres simply did not replace leavers. Unions published lists of vanished entry posts; employers argued the work had changed shape.
+
+Brussels tried to hold both stories. Health and labour ministers toured hospitals together, presenting home-made therapies and the falling waiting lists as proof the emergency cell delivered. The repatriation of therapy manufacturing, long promised, formally closed this turn with new fill-and-finish lines and procurement contracts — but pharmacists noted active ingredients and planning models were still rented by the hour from abroad.
+
+### The shield and the guarantee
+The operating core remained the emergency cell. Joint stockpiles, reserve kits and offline backups were pushed toward small clinics and municipal operators, and rapid teams spent the autumn mapping blind spots left by the spring ransomware and the lab containment. Isolation orders froze another warehouse robot deployment after a safety inspection, reviving complaints that Brussels was blocking the only labour available.
+
+The new Transition Guarantee — wage insurance, six-month retraining vouchers and hiring subsidies tied to supervised European tools — was launched through employment services and a loan window. Rollout was uneven: two large member states reprogrammed funds quickly, others haggled over eligibility, and payouts will not reach most claimants until next year.
+
+Abroad, Washington and Beijing announced a limited accord on securing weights and restraining certain biological design tools, with thin verification. Europe learned of the text afterwards and asked for observer access through trade channels. The request bought briefings, not a seat.

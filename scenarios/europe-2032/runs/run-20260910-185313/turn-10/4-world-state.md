@@ -1,0 +1,11 @@
+### A jump you can download
+The first half of 2031 was dominated by a sharp, narrow leap. A new release demonstrated startling gains in code, mathematics and intrusion tooling, and within weeks defenders saw faster, more automated probing of municipal and hospital networks. Researchers argued over whether it meant anything general. For operators, it meant everything practical.
+
+Days later a near-frontier open release landed. Hundreds of thousands of copies spread in the first week. Whatever safeguards the closed version carried did not survive distillation, and European security services quietly assumed the tooling behind the winter ransomware sweep was now permanently in private hands.
+
+### The voices from the town hall
+In that window came the fraud wave. Calls, messages and cloned portals impersonating municipal health and benefits offices spread across several member states, harvesting credentials and redirecting payments. Telecoms imposed emergency blocking, help-desks reverted to paper queues, and trust in any digital message claiming to be the commune collapsed further.
+
+Brussels answered with what it could afford. The Trusted Civic Channel Shield pushed verified caller identity for municipal numbers, a wallet-based civic inbox, and funded fallback desks in the hardest-hit towns. Telecoms got liability cover to block aggressively; ransomware-hit municipalities got restoration money tied to adopting the verified channel. Rollout was uneven — large cities moved fast, smaller communes waited for staff — but where the blue check arrived, false-call volumes fell.
+
+Two earlier efforts finally paid out. The continuity switch kept emergency care and registries degradable rather than stoppable, and the dividend pact put copilots and retraining desks in visible places. Waiting lists eased in pilot districts. It was not enough to lift the mood while phones rang with fake officials and substation protests continued into spring. Observer status at the American-Chinese verification talks remained observer status.

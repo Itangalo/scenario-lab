@@ -1,0 +1,11 @@
+### Containment weeks
+Autumn began with sirens, not communiqués. A modified pathogen with clear signs of design assistance broke out — first as a cluster of severe pneumonias around a port hospital, then as traced infections in two neighbouring regions. Sequencing labs confirmed the link to published genome-model methods within days. Wards filled, mortuaries needed military support, and containment ran for seven weeks across borders.
+
+Brussels ran its shield as incident command. Wastewater and clinical sequencing surged in hub cities, genome-model reporting was made mandatory, and therapies and triage flowed only through audited hardened hubs on European-hosted inference. Municipal teams, backup power and mutual-aid convoys reached the affected regions. The two capitals with cut-price outside hosting deals found their privileged queue frozen; re-entry was offered on common audit terms. Neither sued, neither complied fully — both ran parallel supplies while demanding central stock.
+
+### The coalition table
+In the middle of the death count, the middle-power talks moved to an initial text. Japan, Korea and several supply-chain holders initialled a coordination framework with the Union in November: aligned export licences for sensitive biological and compute goods, joint bargaining for compute access, and pooled evaluation capacity, with pooled therapy inputs and inference slots part of the discussion.
+
+Nothing took effect this turn. The licence alignment remains a signed text awaiting domestic approvals, legal alignment and staffing, and will need at least two full turns to stand up. The shared evaluation pool is still a repurposed quota, short-staffed. Mayors kept order around clinics, but hiring freezes left labs exhausted and trainee uptake stalled further, eroding day-to-day safety oversight and response redundancy despite the surge operations.
+
+By December the outbreak was contained, but the politics were reset. The Union was credited with holding a common line through real casualties, yet feared and resented in equal measure — protected in pockets, grieving elsewhere, and openly debating whether recipes should ever have been printed. The compact offers a future lever, not present delivery.

@@ -1,0 +1,5 @@
+By autumn 2027 attrition continued without a single blackout: baselines in the two breached grids entered daily use, mandatory reporting held via the ENISA joint cell, and co-funded sensors plus compensation brought two holdout operators to accept a spring five-grid exercise; water backups still lagged on a Digital Europe top-up.
+
+Criminal kits kept driving phishing/extortion/ransomware across France, Germany, Netherlands and Spain: Europol cleared hundreds of domains weekly but mirrors returned overnight, the hotline was overwhelmed, mid-sized firms recovered in days while micro-firms stayed closed weeks, and only three hospital regions accepted referral-verification patches with two staying on paper billing.
+
+Newsroom and junior-analyst layoffs in France and Germany undercut productivity studies; a wage-bridge and retraining voucher pilot seeded by ESF+ and EIB guarantee enrolled in four hit countries but the transition levy was attacked as a tax without new legislation. Gigafactory and supply-chain work slipped to permitting milestones. Commission kept cautious credit for sustaining the shield amid a sense of being outpaced by laptop criminals.

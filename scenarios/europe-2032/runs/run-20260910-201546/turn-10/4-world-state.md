@@ -1,0 +1,10 @@
+### Hands, cures and a leap
+The spring brought a jolt on three fronts at once. A leading lab demonstrated a sharp step forward in general capability, making last year's deployment roadmaps obsolete overnight. Almost simultaneously, tailored therapies for previously untreatable conditions reached ordinary clinics, and a new interpretability check that actually works on deployed systems spread quickly because the labs themselves adopted it.
+
+In Brussels the timing mattered. The Last-Mile Corps finished its first full rollout: small clinics and town halls that had boxes gathering dust finally got EU-funded teams to install patch kits and detectors on site. Large hospitals now degrade rather than stop under attack, and mayors who received teams praised them loudly.
+
+The other half of the half-year was messier. Understaffed municipalities, faced with mandatory patch deadlines and pressure to clear power lines for two queued factory sites, coordinated slowdowns of permits. They demanded written, multi-year staffing funded from Brussels before unblocking grid connections. One site moved after a mediated deal linking restoration priority, pilot-line jobs and assigned field staff. The second stayed blocked, with accusations that restoration order was being used as quiet leverage.
+
+The Commission answered with a new guarantee: EU health and IT posts in writing for lagging towns, paid only alongside signed connection permits, and channelling of the new cures through joint procurement and hospital networks using centrally assured models. Early mediation calmed tempers but did not clear the backlog; recruitment lags, treasuries argue over top-ups, and the transparency pledge on restoration priority satisfied no one fully.
+
+Net: cures arriving through European hospitals lifted mood, the new safety check steadied procurement, the capability leap re-opened unease about being watched, and sovereign power still waits on staff and substations.

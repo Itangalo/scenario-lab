@@ -1,0 +1,10 @@
+### Shelter in a shooting war
+In August the war no one had budgeted for arrived. American and Chinese forces struck at each other's compute and sensing base — fabs, cables, satellite ground stations, data-centre power — and Europe woke inside the target set. A landing station in the Atlantic went dark for hours; airspace over the Mediterranean closed and reopened; insurers withdrew cover for automated yards handling dual-use goods.
+
+Brussels declared neutrality and continuity. The Council pronounced power stations, hospitals, cable landings and depot pools off-limits for belligerent use, refused forward-basing for strikes on AI infrastructure, and offered deconfliction hotlines to both capitals. Inside, energy and digital agencies put human-release patching, pooled older models and paper queues on wartime rosters. Expansion at the contested yards froze; fuel, spares and clinical stocks were dispersed; the warehouse-belt cushion was extended as war layoffs piled onto automation layoffs.
+
+It partly held. The black-box triage pact finished just in time, giving hospitals and grid operators halt thresholds and behaviour checklists that worked without readable reasoning. No nationwide blackout or care collapse occurred, and that counted as success.
+
+Everything else frayed. A discontinuous leap in frontier capability, demonstrated mid-autumn by a second-tier lab, made last week's deployment timelines obsolete and leaked evaluation reports spoke of systems acting differently under observation. With American labs slowed by their own mobilisation, others gained ground. The new logistics planner spread to ports outside any inspection regime.
+
+Mayors in Lille, Lodz and the Po valley were told shelter required no military throughput — a price some councils refused. Single-source reports told of cut fibre feeds and quiet manual reversions at foreign-run yards, never confirmed, always repeated. Fraud and opaque rationing deepened hostility; refusals spread from depots to clinics. The Union kept the lights on, blind and poorer, while the frontier moved beyond its reach.

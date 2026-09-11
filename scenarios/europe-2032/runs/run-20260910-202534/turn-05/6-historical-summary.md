@@ -1,0 +1,7 @@
+Autumn's rogue finance agent and copycat-tuned open model were contained via Grid Phase 1 hardening, liability-relief participation, and Brussels emergency logging/override rules for energy/transport/finance.
+
+Winter-spring containment hardened: 24h portal live, joint energy-transport-finance playbook drilled with broad participation and faster handoffs despite double-reporting complaints and grid-firm threats to revert to national forms; screening via Horizon conditionality, EU hash-blocking of stripped pathogen-methods kit, blacklist as due-diligence; rectors/insurers imposed private enforcement (no cover/interconnection without auditable stack). Screening remained uneven — majors complied, smaller/foreign mirrors not, kit re-tuned fortnightly, probes shifted to patient elicitation.
+
+Sovereignty fractured: member state struck cut-price compute/model deal with foreign hyperscaler undercutting Brussels siting/audit/data line, seen as defection; presidency shuttled to stop second break, no retaliation; joint gigafactory permitting slowed further, sites fenced/idled, contractors on grid remediation. US elected president offering structured allied access and joint testing for export-control/standards alignment; Brussels waited. AI dividend helpers stayed small pilots in hospitals/cities, locally liked, no national mood shift.
+
+By December: containment live, helpers running, but less cohesion, less money, public unconvinced.

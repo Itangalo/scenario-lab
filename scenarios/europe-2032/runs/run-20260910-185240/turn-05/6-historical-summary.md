@@ -1,0 +1,7 @@
+Ransomware pressure continued but was contained with paper fallbacks, insurer-checklist triage and ministry intervention to keep cyber cover; attribution remained open while hospitals, municipalities and ports drilled isolation with EU cyber agency and crisis network.
+
+US presidential winner campaigned to keep frontier models at home with tiered foreign-sales review, raising expected costs in Frankfurt, Paris and Warsaw without immediate licence revocations.
+
+EU compute build remained in defensive hold through autumn: Commission ordered no forced breakthrough pending US outcome and permit thaw; legal teams paid fees and defended reserved land and grid-queue places in courts, preserving sites in three blocking countries with offers of generators, water and compensation, but building nothing. Private co-financing stayed away, two councils maintained permit freeze, and empty fenced gigafactory plots fueled anger at spending without results and wider data-centre opposition.
+
+Ministers openly admitted continued dependence on foreign models for attack detection and recovery, framing civil protection as bridge; criticized as managed vassalage amid job-loss fears. By December Brussels had preserved options but spent political credit.

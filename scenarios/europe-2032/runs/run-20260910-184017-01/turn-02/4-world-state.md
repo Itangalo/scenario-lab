@@ -1,0 +1,10 @@
+### The Shield lands, the waiting lists fall
+Spring 2027 gave Brussels a rare sequence of deliverables. The grid-and-port detection standards drafted after the autumn audits became binding in March, with cross-border exercises in Rotterdam, Gdansk and Marseille and co-financing for segmentation retrofits. Transmission operators grumbled about costs but complied; auditors reported dwell-times falling from weeks to days. Ministers claimed vindication.
+
+At the same time, the productivity numbers hardened. Studies across law firms, accountancies, newsrooms and consultancies showed 15-25% gains on drafting, review and research, concentrated among juniors, with employment steady. Works councils, initially fearful, turned cautiously cooperative. The tools were no longer a promise but furniture.
+
+The Commission rode that mood into a new programme to take hospital triage and municipal permit pilots EU-wide. Health ministries in Denmark, Spain and Estonia and a network of mayors fronted the launch, with joint procurement, shared evaluation, and a condition: scale-up money only for sites meeting the new cyber detection rules. Using American models under the negotiated notice-period terms as a bridge while requiring EU-hosted deployment, the plan polled well and local press toured clinics showing shorter queues.
+
+Friction was physical and bureaucratic. Data-centre permit fights did not abate; two site shortlists for the long-delayed gigafactories stalled over substation capacity and water disclosures, now with added grid-connection criteria. Competition officials cleared state-aid paths slowly, and the broader technology package stayed in committee. Engineers warned the scale-up would add load to the same municipal IT teams tasked with implementing the Shield.
+
+By June, the Union could point to hardened ports, faster permits, and a popular programme — but its flagship compute build remained paper, and dependence on foreign models deepened even as it was better contracted.

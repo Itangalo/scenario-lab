@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t1: Gigafactories −3, Tech sovereignty package −3, EU Essential Services Shield proposed this turn not yet charged −0, priority −1 = −10 (rule 6 rows give −9 for M1+M2+M3 in flight prior to addition; new measure costs from next turn)
+PROPOSAL BONUS: EU Essential Services Shield (cat 6, large) +4 — cyber_test_shot precursor landed this turn severe and this answers it directly, plus access cut-off context
+LEGITIMACY LENDS: capital 28, sentiment 34 -> +1 (sentiment above capital, capped below sentiment)
+SOVEREIGNTY: 22 last turn, no finish this turn, Gigafactories in flight +1, eu_frontier_access_denied t1 −2 (largest capacity event among access cut, supply coercion, defection), capability rose 3.0 −1 = 20

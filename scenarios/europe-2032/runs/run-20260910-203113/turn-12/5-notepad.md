@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: M12 EU Logistics Displacement Transition and Care Retraining Compact −2, M13 EU Accession to Joint Cyber Command Telemetry Pact −2 = −4 + priority has no effect and no cost below 20 = −4
+PROPOSAL BONUS: M13 (cat 8, small) +2 — cyber_major_incident landed this turn and joint_threat_response invitation answers it directly, small size and same-turn timing cap it
+LEGITIMACY LENDS: capital 8, sentiment 12 -> +2 capped, applied in capital arithmetic (included in net)
+SOVEREIGNTY: 13.5 last turn, no cat4 finishes +0, no cat4 in flight +0, supply_chain_coercion t12 −3, capability rose 1.0 −0 = 10.5

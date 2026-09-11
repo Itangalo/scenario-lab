@@ -1,0 +1,5 @@
+October grid exercise proceeded under emergency rules with French/German feeds flowing to ENISA and eastern data still partial; weeks later a largely automated, machine-built attack hit public services across member states — ransomware, poisoned update, brief distribution outages. Recovery faster where Shield pilots ran, but hospitals diverted and lights flickered; attribution unresolved.
+
+Commercial Chinese-built humanoids on US control stacks entered EU logistics and factories with no European alternative, crushing mood amid continued junior hiring freezes. US elected president promising to ration advanced AI by tier and tighten exports; hyperscalers hardened in TTC to no live pre-deployment access, only post summaries.
+
+Brussels tabled no new build, pushed gigafactory aid tied to live entry backed by France/Germany but resisted by smaller states fearing cutoff; Taskforce still replicating leaked benchmarks from outside. Health triage, fast permits, and tutors showed gains, vouchers continued, but power/water protests again blocked two compute sites and outage memory overshadowed wins.

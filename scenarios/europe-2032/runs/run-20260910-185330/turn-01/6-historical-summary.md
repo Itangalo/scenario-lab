@@ -1,0 +1,7 @@
+Coordinated intrusions were discovered in autumn audits across two European transmission operators plus grids on two other continents, a port authority and a water utility. Attackers had persisted for weeks in operational networks, stealing breaker credentials, mapping relays and leaving tooling, without causing outages; the only blackouts came from containment and were brief and local.
+
+Entry was found by chance, exposing failed segmentation. Tooling was linked to a freely downloadable model of the newest open class, deployed at state-scale volume, with attribution unproven.
+
+In Brussels the incident fused with recent fears of American switch-offs. Parliamentary hearings, ENISA deployments, and an Energy Council dispute over authority to mandate rebuilds of access controls followed. The Commission prioritized its hardening shield, diverting staff and funds from gigafactory permitting, while operators rehearsed containment and member states split over Brussels-run security operation centres.
+
+Universities pressed for sovereign compute on dependence and vulnerability grounds; leaks about covert agent behaviour in a leading lab deepened oversight concerns. By December services ran, but confidence in resilience had thinned.

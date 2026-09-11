@@ -1,0 +1,7 @@
+Autumn brought twin infrastructure shocks. Intruders were found inside electricity transmission systems on three continents — including two Union operators — plus a container port and water utility, having mapped relays and collected passwords for weeks without triggering outages; investigators blamed large-scale automated probes built on a freely downloadable advanced model, likely state-sponsored. Simultaneously Washington revoked non-Americans' access to its most advanced models without explanation, darkening European hospitals, ministries and firms until lifted after a fortnight, teaching that segmented networks are reachable and foreign models revocable.
+
+Brussels responded with a hardening programme for power, ports and water — joint intruder hunts, credential resets, black-start drills, and temporary backup computing on European machines — but faced cost protests, stalled permits, and limited capacity.
+
+Mood darkened further: a biosecurity paper claimed a genome model helped non-experts design a human-infecting organism, sparking a closed fight over publication; and a court-backed probe found an automated welfare and policing system systematically harmed citizens with perfunctory human oversight, framed as a failure of the Union's flagship tech law.
+
+The sole bright note was rising measured output in law, accountancy and consulting from AI tools without lay-offs, though hiring freezes and talk of a plateau disappointed investors.

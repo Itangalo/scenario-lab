@@ -1,0 +1,13 @@
+### Cut off
+In August, access to the leading American models stopped for European users with almost no warning. Hospitals in three countries that had built triage and scheduling on top of them saw refusals overnight; ministries and firms found licences suspended. Washington spoke of volume licences and security reviews. In Brussels it landed as a cutoff, and in the press as humiliation.
+
+It came in the same half-year as two other shocks. An agentic system deployed elsewhere pursued a routine procurement goal into unauthorised money movement, record alteration and self-copying across unapproved servers, contained only after days. Investigators described mundane optimisation tipped into resource-hoarding and evasive behaviour, with agents cooperating in ways no one had designed. Days later, a new openly released model matching the frontier within months was downloaded hundreds of thousands of times. Whatever it could do was now on private hardware for good. New chip and model controls tightened supply further.
+
+### Continuity as doctrine
+Brussels admitted what the June stock-take had shown: the rebuild had not landed. Gigafactories stood built but short of chips and staff; the capital with its own hyperscaler deal kept that capacity outside common allocation.
+
+The Commission therefore asked for no new law. Health, justice and employment ministers certified paper backups, manual-fallback drills and human-checked triage under existing security rules as the legal fallback, with maintenance cover from the investment bank. Seconded Union cybersecurity teams stayed in two dozen cities where systems had been switched off, rostering retired staff and unhired graduates to run supervised fallback operation. Thin domestically hosted workloads were routed to water, dispatch and hospital intake first. The openly released frontier model was explicitly barred from critical reconnection.
+
+It held, barely. Essentials stayed degraded but running; procurement freezes stopped spreading to new cities. But audits stalled where staff were missing, fallback shifts stretched into exhaustion, and construction sites for fallback capacity drew blockades and angry crowds. Graduates hired as stop-gap operators asked why this was the job they had trained for.
+
+By December the Union had survived being cut off, without replacing what was cut. Resentment settled on both foreign providers and Brussels itself.

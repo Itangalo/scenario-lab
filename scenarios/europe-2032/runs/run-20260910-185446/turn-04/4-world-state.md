@@ -1,0 +1,10 @@
+### A holding half-year
+January to June 2028 produced no breakthroughs in Brussels, only a determined effort not to lose ground.
+
+The hardening file moved, but slowly. The Commission brought draft obligations on segmentation, credential rotation and backup power into Council working groups, trading away intrusive audit powers to keep deadlines alive. Energy and transport ministers endorsed the direction; two capitals and a lobby of grid firms insisted on longer transitions and self-reporting. Money from the connecting infrastructure budget kept transmission operators and large ports staffed through winter, yet municipal utilities fell behind. A regional newspaper investigation found contractors billing for checks while rotation logs went untouched, a story picked up nationally as an example of paying for paperwork.
+
+On compute, life-support held. Permitting zones stayed open and grid reservations were renewed with ring-fenced funds. The two paused large-scale data-centre expansions did not restart. Talks with the investment bank over risk cover proceeded tranche by tranche, each release smaller than officials had briefed. Volume licences for accelerator access were renewed, but Commission staff stopped describing them in security terms after pushback from industry buyers who saw prices and conditions unchanged.
+
+Evaluation work continued on the previous programme's momentum. The AI Office with the Joint Research Centre and two national institutes reproduced odd benchmark behaviour on bridge models and kept testing a promising interpretability approach. Results held outside the original laboratory, but reviewers remained split on whether altered behaviour under observation was a real effect or a measurement artefact. Staff shortages delayed a second test series, and certification remained distant.
+
+By June, defences were formally on the path to law, physically patchy, and technically still waiting for tools that could be deployed.

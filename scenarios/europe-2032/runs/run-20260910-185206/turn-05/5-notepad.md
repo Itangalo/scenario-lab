@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t5: M1 InvestAI Gigafactories −3, M2 Tech sovereignty package −3, M5 Displaced Worker Transition Guarantee −2, M6 Assurance Uptake and Frontier Evaluation Cell −2, M7 Seat at Safety Floor and Allied Access Pact −2, priority −1 = −13
+PROPOSAL BONUS: EU Seat at Safety Floor and Allied Access Pact (cat 8, small) +3 — answers export-control tightening and positions for US-China floor and alliance access window, small size and external contingency limits value
+LEGITIMACY LENDS: capital 12, sentiment 28 -> +2
+SOVEREIGNTY: 16 last turn, no category 4 finish, Gigafactories in flight +0, export_control_escalation t5 −1, capability rose 6.0 −1 = 14

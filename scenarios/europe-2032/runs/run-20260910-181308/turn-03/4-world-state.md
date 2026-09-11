@@ -1,0 +1,12 @@
+### Down again, then a promise
+Autumn brought another large automated intrusion. This time it swept municipal portals, billing systems and hospital administration in several member states at once, encrypting after moving laterally through a shared software dependency. Citizen services went dark for days. Defenders restored from backups while still arguing about the initial vector, and attribution slipped away into months of uncertainty.
+
+Almost in parallel, a welfare and policing scandal broke open. An ombudsman and then a court found that an AI-supported scoring system used in benefits and fraud flags had systematically harmed claimants, with appeals ignored and corrections delayed. The debate centred on European AI rules: whether oversight had been too slow, too formal, or simply unenforced. Payouts stalled while ministries blamed vendors and vendors blamed data.
+
+Brussels tried to turn finished audits into fixes. The shielding programme completed its first round, and audited grid operators and health funds continued work to close the worst gaps under existing plans, but engineers warned that audits are not hardening and no additional funds or new reporting obligations were agreed this turn. Implementation slipped while scope and staffing were renegotiated.
+
+The containment reserve remained half-built. A first 24-hour roster was stitched together from seconded national teams, with isolation playbooks rehearsed with two cloud providers, but there was no standing capacity to send when the wave hit. Local teams carried the response again.
+
+There was one brighter thread. Studies from law firms, consultancies, newsrooms and back-offices showed measurable productivity gains from AI assistants, strongest among juniors, without immediate layoffs. Some firms that had cut early began hiring again.
+
+Against Taiwan-driven shipping and energy anxiety, work continued under the existing EU Trust and Transition Repair effort. No new measure was introduced this turn and no new priority was named. Officials discussed a possible future redress desk for benefits victims and possible wage-insurance and short-course options in the most-affected office jobs, and held exploratory talks with firms about voluntary staffing practices. No agreements were concluded, no binding commitments were secured, and with staffing and funding still unresolved nothing was implemented this turn. Councils welcomed discussion but asked where the money and staff would come from, and trust kept falling.

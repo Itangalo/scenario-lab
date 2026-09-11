@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t4: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Critical Systems Shield −3, EU Trusted Access and Joint Response Accession −2, EU Clean Sovereign Stack for Essential Services −2, priority −1 = −14
+PROPOSAL BONUS: EU Clean Sovereign Stack for Essential Services (cat 9, small) +3 — openweight_frontier_release and eu_frontier_access_denied both fired this turn, severe and direct, answered by hosted open failover
+LEGITIMACY LENDS: capital 20, sentiment 24 -> +2
+SOVEREIGNTY: 17 last turn, no capacity event? No — eu_frontier_access_denied t4 −2 applies, no cat4 finish, in flight +0, capability rose 3.0 −1 = 14

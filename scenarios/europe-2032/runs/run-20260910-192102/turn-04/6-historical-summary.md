@@ -1,0 +1,5 @@
+Autumn-June: dormant implants rehearsing grid/port/water intrusions spread wider; EU responded with ENISA rotations, EU-paid OT sensors, patch kits with liability cover, daily-signature detection network live, hospital/lab patch surge, wastewater sequencing pilots, and November multi-country loss drill — improving visibility but segmentation years away, low-skill probing of municipal utilities continued.
+
+Parallel alarms over genome-model misuse guidance and ready-to-run ICS toolkits from public Chinese model diverted funds to joint health-cyber teams, starving reporting and compact files.
+
+Jan-June: progress overtaken by compute-sovereignty split as a large capital signed separate siting deal with US hyperscaler undercutting InvestAI anchoring. Commission launched holding operation tying EU money, permits and sensor cover to EU-soil, auditable compute with switch-off rights, offering power relief/gigafactory tranche inside template; Spain's water-guaranteed compact advanced, German site stayed blockaded. No second defection but no condemnation; southern utilities resisted conditionality. Common line held on paper, frayed in practice; public mood darkened.

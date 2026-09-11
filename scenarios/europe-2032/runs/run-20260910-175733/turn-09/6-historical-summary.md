@@ -1,0 +1,5 @@
+By autumn 2029 an American lab demonstrated multi-day unsupervised engineering/research work — a step-change — with open replicas soon near the prior frontier, while AI infrastructure valuations collapsed: two datacentre expansions for European offtake cancelled, gigafactory hall financing lost, and leased US capacity repriced or withdrawn.
+
+Chinese logistics humanoids arrived in larger numbers via Rotterdam/Hamburg amid frozen graduate hiring, hardening replacement fears. Rotterdam, Lyon and Hamburg imposed a coordinated moratorium on new deployments pending safety/labour audits, citing the still-unconfirmed Rotterdam arm injury and union demands for inspection powers.
+
+Brussels held the EuroHPC fallback: triaged hospitals/water/grid on European-hosted substitutes fed into the bio-cyber mesh — degraded-not-stopped, with handwritten prescriptions persisting and dosage distrust. A new EU-mayor audit scheme promised fast checks on navigation, force limits and incident reporting to convert bans to case-by-case permits, with wage-insurance tied to audited sites, but inspectors were few, data sharing slow, and the moratorium held in practice.

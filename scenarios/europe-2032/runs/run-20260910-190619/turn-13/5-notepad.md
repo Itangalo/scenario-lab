@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: M10 EU Emergency Restoration and Bio-Sentinel Surge −2, M11 EU Middle-Power Access and Supply Pact −2, priority −0 uncharged as capital <20 = −4
+PROPOSAL BONUS: none — M11 (cat 8, small) answers cutoff/denial directly but knowledge_work_augmented removes felt displacement urgency and public cannot feel access problem as own, so no bonus applies
+LEGITIMACY LENDS: capital 5, sentiment 8 -> +1
+SOVEREIGNTY: 9 last turn, no capacity event finish, no cat4 in flight, eu_frontier_access_denied t13 −2 outweighs middle_power_coalition t13 securing (largest single term −2), capability rose 0.5 no −1 = 7

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t9: M8 EU–Middle Power Supply Chain Bargaining Compact −2, priority has no effect below 20 −0 = −2
+PROPOSAL BONUS: EU–Middle Power Supply Chain Bargaining Compact (cat 8, small) +2 — export rationing and servicing bans t8 left no domestic path and this answers it directly
+LEGITIMACY LENDS: capital 9, sentiment 9 -> +2 capped at sentiment = 11 [computed after charge/bonus/event terms, capped so capital does not pass sentiment]
+SOVEREIGNTY: 13 last turn, no cat4 finish, no in-flight cat4 +0, no capacity event listed for rule 5 except middle_power_coalition t9 +2, capability rose 1.4 −0 = 15

@@ -1,0 +1,11 @@
+### The chokepoint spent by someone else
+The spring was dominated by The Hague. Under direct American pressure over technology with US content, the Dutch government ordered a further tightening of servicing and spare-parts support for lithography systems already installed abroad — reaching beyond leading-edge tools to older machines used for ordinary chips. For ASML engineers, refusing was not a survivable option; for Beijing, it was confirmation that supply could be switched off remotely.
+
+Brussels discovered it owned a chokepoint it did not control. The Commission announced an examination under the Anti-Coercion Instrument and pushed a common servicing-licence line in the trade ministers' council, alongside quiet alignment talks with Tokyo. Washington listened politely and continued. No waiver was secured this turn, and orders for the gigafactory pipeline slipped into legal review while vendors waited to see which machines could actually be maintained.
+
+### A reserve that finally exists on paper
+The one delivery was the Incident Containment Reserve. The 24-hour seconded roster, isolation playbooks rehearsed with two large cloud operators, and a common reporting template were formally declared operational. When a fresh wave of automated intrusions brushed municipal billing systems in May, local teams still carried the response, but escalation was faster and backups held. Engineers stressed this was containment, not hardening.
+
+Gigafactories and the tech package were kept alive on permitting and private-capital tracks only, with no new cash call under shipping and energy strain. Siting hearings turned hostile in several places, with protesters blocking access roads and council meetings dominated by the benefits-scoring scandal and stalled payouts.
+
+The Trust and Transition Repair push became the visible face: a redress desk with the ombudsman was staffed, and wage-insurance and short-course pilots were opened in the most-affected office jobs. Uptake was slow, funding thin, and press coverage treated it as apology rather than reform. Productivity studies showing assistants lifting junior output without mass layoffs barely registered against images of dark citizen portals and of Europe's most valuable machine-builder taking orders from abroad.

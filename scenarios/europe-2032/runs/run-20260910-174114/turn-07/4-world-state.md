@@ -1,0 +1,11 @@
+### Concrete pours, screens stay dark
+Autumn brought cranes to the gigafactory sites. After two years of permits, protests and redesigns, the first halls went up on schedule — concrete, cabling, cooling towers photographed by ministers. Engineers spoke of sovereign compute at last. The power question followed them: mayors near the sites demanded written guarantees that heating would not be cut for training again, and two councils imposed temporary connection pauses while courts weighed challenges.
+
+In Brussels the mood stayed brittle. The cohesion backstop finally paid street-level money: direct grants to clinics hit in the winter ransomware wave, wage-bridges for warehouse crews, vouchers for clerical workers to retrain on EU-hosted assistants. EPSCO ministers toured job centres with mayors. The money was slow and thin, but for the first time queues shortened. Insurers, steadied by the backstop, stopped withdrawing cover from municipalities.
+
+### A seat at the table, a tool that works
+Outside help arrived in two forms. An allied cyber command invited European analysts into its pooled attribution cell, with real-time telemetry flowing both ways. EU teams seconded to the cell helped trace a fresh round of intrusions against hospitals and ports, and joint restoration funds reached two diverted hospital networks faster than national teams could have alone.
+
+At the same time, laboratories circulated a control result that actually worked on deployed systems — properties that could be checked before scaling rather than argued after. The AI Office made certification a condition for EU-hosted assistants and for future gigafactory customers, and critical-sector operators adopted it for triage and dispatch tools. Black-box behaviour did not disappear, but operators reported fewer surprises.
+
+Relief remained local. National news still led with job losses and dependence on American approvals for frontier models. Yet polls ticked up from open hostility: clinics reopening, pay arriving, lights staying on.

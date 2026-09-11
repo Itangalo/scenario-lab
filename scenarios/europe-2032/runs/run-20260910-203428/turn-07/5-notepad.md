@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t7: EU Supply-Chain Coalition for Compute Access −2, priority −0 (no effect, capital below 20) = −2
+PROPOSAL BONUS: EU Supply-Chain Coalition for Compute Access (cat 8, small) +3 — taiwan_blockade severe this turn and this answers it directly, plus us_china_agreement window
+LEGITIMACY LENDS: capital 0, sentiment 10 -> +1 capped, applied after other terms (floor at 0)
+SOVEREIGNTY: 14 last turn, InvestAI Gigafactories finishes t7 +4, no capacity in-flight bonus, taiwan_blockade t7 −3 (largest capacity event, middle_power_coalition t7 +2 not counted per one-term rule), capability rose 0.5 −0 = 15

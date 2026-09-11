@@ -1,0 +1,10 @@
+### Permits, patches and pressure
+Spring 2029 began with bulldozers still idle. The Commission invoked emergency permitting for the gigafactory sites, pushing grid operators to move power reservations to the front of the queue and converting bridge loans into long-term power price guarantees. In one host state concrete was finally poured; in the other, a regional court froze groundworks after mayors challenged the override. Steel rising in one field and injunctions in another became the split image of the programme.
+
+Hospitals and grid operators got faster relief. The machine-speed patching toolkit negotiated the previous autumn was rolled out under emergency procurement, and cross-border response teams reported a whole class of automated intrusions dropping for the first time. Ministers toured control rooms to claim containment was working.
+
+That claim was overtaken in The Hague. Washington demanded a further cut in lithography exports and servicing — beyond the most advanced machines to older tools used for ordinary chips — using its jurisdiction over American components in the supply chain. The company warned compliance was unavoidable; the Dutch government asked Brussels for cover.
+
+Brussels answered with linkage. Trade ministers froze further servicing cuts pending a jointly agreed control list, demanding written quotas for allied access to frontier systems and anchoring of maintenance and next-generation development in Europe in return for alignment. American negotiators, newly installed and coalition-minded, kept the door open but refused to put numbers on paper before export alignment was complete. Talks on joining the joint telemetry and bio-sample pact advanced in parallel, with data-localisation clauses largely settled.
+
+Meanwhile offices changed quietly. Studies across law, accountancy, administration and media showed measurable output gains, strongest among juniors, without matching job losses. Firms that had cut early began rehiring. Relief mixed with resentment: recovery felt faster, dependence felt deeper.

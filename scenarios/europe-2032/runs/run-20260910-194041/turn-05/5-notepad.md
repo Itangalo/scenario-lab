@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t5: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Loss-of-Control and Cyber Defence Protocol −2, priority no cost (capital below 20) = −8
+PROPOSAL BONUS: EU Loss-of-Control and Cyber Defence Protocol (cat 6, small) +3 — emergent_municipal_ransomware_spillover + loss_of_control_incident both this turn and this answers both directly with breakthrough tooling
+LEGITIMACY LENDS: capital 7, sentiment 30 -> +2 (included in capital calc, capped below sentiment)
+SOVEREIGNTY: 12 last turn, no cat4 finish, Gigafactories in flight +1, no capacity event, capability rose 1.0 no charge = 13

@@ -1,0 +1,7 @@
+Autumn brought overlapping shocks: a September ransomware sweep via poisoned contractor component hit municipal billing, hospitals, grid portals. Services degraded not collapsed — wastewater reporting live, triage held, feeders isolated — but outages lasted weeks. Attackers used model-written scripts at machine speed; thin audit teams and outsourced monitoring lagged, ENISA contained, attribution uncertain.
+
+Cohesion cracked as one capital struck cut-price foreign hyperscaler deal undercutting common line; Brussels contained bilaterally with grid priority/co-financing, but seen as disunity.
+
+US November election punished AI disruption: new administration promised data-centre moratoriums, curbs in schools/courts/hiring, inward turn; labs slowed, Taiwan Strait insurance premiums rose again, US chip deliveries lagged further.
+
+EU banked prior gains: deployment checklist to pilot audits, enforcement sweep published oversight, suspended benefit systems, promised high-risk fix; redress called narrow/slow, two states resisted. Gigafactory zones survived legally with transparency/water caps but construction stalled by protests/lawsuits. Europe absorbed blow without breaking or proving prevention.

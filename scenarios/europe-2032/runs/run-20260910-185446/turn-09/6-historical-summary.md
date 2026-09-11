@@ -1,0 +1,5 @@
+H1 2030 US-China pact on weights, autonomy, bio-tools calmed markets; EU learned with press. Brussels sought observer/contributor status offering Hague logs, gigafactory hosting, ENISA/ECDC feeds; admitted only to two audit workshops, political accession deferred.
+
+Autumn: US/China thanked EU evaluators, deferred accession again; Tokyo/Seoul still unsigned. US rewrote export licences, pressed Netherlands to extend lithography cuts/servicing bans to older machines and wider customers, effectively operating EU's chokepoint.
+
+Home: continuity reserve declared operational (EU open models + manual for hospitals/ministries/ports) but degraded. Hospital group sued state over weeks-long diagnostic failure blamed on fallback; audit ordered, swap to European-hosted open models + manual cover. Entry-level hiring froze in law, accountancy, software, customer ops, admin despite productivity gains for incumbents. Brussels responded with binding fallback standard for essential services and retraining vouchers for displaced youth tied to care/public sector via reprogrammed funds. Gigafactory expansions and hardening law remain frozen.

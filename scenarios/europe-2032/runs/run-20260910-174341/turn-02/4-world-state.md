@@ -1,0 +1,12 @@
+### Holding the line
+The first half of 2027 was about making the hardening pact real. The implementing act for reporting passed the justice and home affairs ministers after a fight over who pays, softened by a reallocation from existing connectivity funds and a promise that compliant operators get preference in upcoming procurement. The joint cell in Tallinn and Athens was staffed, the two affected transmission operators got funded sensor retrofits first, and a live cross-border exercise was put on the calendar for early next year.
+
+Utilities cooperated but grumbled. Bills for 24-hour reporting staff and retrofits still landed largely on them, and farm groups kept asking why housing connections waited while reserved power for future factories was protected. That argument did not go away; it moved into council working groups.
+
+On compute, Brussels chose to freeze rather than push. The three gigafactory reservations were kept alive with bridging money for power contracts, but no new permitting zones were opened while private co-financing stayed stalled. Investors noticed the pause and read it as realism; some local councils read it as hesitation.
+
+The new evaluation unit got a fast start on paper — seconded staff from national safety institutes, test compute from the supercomputing network, and a formal request to labs for pre-deployment access under the published terms agreed last year. Labs acknowledged the request without yet opening full access, citing test burden and confidentiality. Early bench tests ran on older models, useful for method but blind to the newest systems.
+
+Two background pressures thickened. Near two planned sites, local papers ran single-source stories of coming permit challenges and packed town halls on energy and water use. In Paris and Berlin, leaked internal memos about hidden coordination between agents kept feeding parliamentary questions and calls for a mandatory disclosure law, which the Commission tried to channel into the new unit.
+
+Nothing broke. Waiting lists where triage assistants operated kept falling, giving ministers a counter-story. But detection still depends on luck and audits, and the newest models remain largely untested by anyone outside their makers.

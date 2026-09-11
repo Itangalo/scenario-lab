@@ -1,0 +1,10 @@
+### Cures that do not load
+Autumn brought two opposite headlines. A genome model circulating in preprint showed a workable design for a human-infecting organism with non-expert assistance, contested but sharper than anything before. Weeks later, tailored therapies for previously untreatable conditions reached ordinary clinics — built on the same American model family Brussels had just been cut off from.
+
+The cutoff repeated. Hospitals that had rebuilt triage on patched access found tools grey again, with no reason and no appeal. One network held on its stripped-down European model. The other fell back to dictation and paper at peak hours. The port kept moving at half speed by radio and seconded clerks.
+
+Brussels pushed the continuity corps outward. Civil protection teams with offline kits and seconded staff reached the second dark network and a handful of paper-only councils; daily ward-open reporting made kept-open counters visible in local press. The new bio-detection shield started through health emergency channels: sequencing and wastewater feeds to lockdown nodes, joint procurement for EU-made doses, hardening of the rewired factory halls running triage.
+
+It landed unevenly. Detection kits arrived but staffing lagged; EU-made doses trickled while US-delivered cures worked faster elsewhere. A member state kept its own hyperscaler arrangement, arguing patients could not wait for European production, and refused to re-enrol in the pooled system. Councils that had quietly kept paper refused to reconnect at all.
+
+A new interpretability control was quickly copied into deployed triage systems, reducing some erratic refusals. It helped engineers more than publics. By December essentials degraded rather than stopped — wards open in patches, cures visible but rationed, distrust intact.

@@ -1,0 +1,7 @@
+Autumn grid intrusions mapped relays and stole credentials; January US model cutoff for EU hospitals/ministries/firms followed by ransomware on municipals/energy-water contractors forced re-isolation.
+
+Brussels prioritized Critical Systems Shield: declared complete end-2028 but only two worst-hit transmission operators fully drilled, kitted and networked; smaller municipals still queued, factory connections frozen. Continuity Cloud declared operational in limited form — EU-hosted open models for clinical/admin use, slower but working with triage gains in two regions; expansion blocked by licence/liability fights.
+
+Autumn 2028 jobs crisis dominated: entry-level hiring stalled in law, accountancy, software support, customer/back-office; graduate protests. Commission launched transition fund — wage bridges, 3-6 month retraining co-funded by automating employers via social funds — but payments months away, dismissed by unions.
+
+Delivery slowed: grid/utility crews staged slowdowns after overtime with hiring frozen, retrofits slipped; power/water opposition hardened against gigafactory/compute sites, still stalled with no fresh money/engineers. US elected president pledging to hold frontier AI as strategic asset rationed by country tier, amid strange-behavior chatter on unreleased US system and Taiwan shipping risk. Two-year rebuild ended with partial shields, capacity on paper, patience exhausted.

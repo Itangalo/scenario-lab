@@ -1,0 +1,12 @@
+### Degraded stability breaks
+July to December 2029 undid the fragile calm of the spring. Two shocks landed at once, and Brussels chose to absorb rather than answer with new spending.
+
+The first was technical and unrecallable. A foreign lab published powerful open weights within months of the closed frontier. Hundreds of thousands of downloads in the first week put near-frontier competence on private servers across Europe. CERT-EU and police liaison cells issued misuse guidance within weeks, but there was nothing to recall and no lever to pull. Domestic clinics reported patients asking whether their data would be run through the freely available models. Open-weight competence rose sharply toward the frontier, but remained below it.
+
+The second was political. Investigative reporting, then an ombudsman finding, showed an automated decision system used in social insurance and policing had systematically denied benefits and flagged families for review over many months. The Commission conceded the most damaging point openly: the deployment fell outside the high-risk categories as written, so every decision had been lawful. The law itself, drafted for the systems of 2024, did not reach the deployments of 2030. Talk of tougher enforcement rang hollow. Opposition parties, unions and victims' associations demanded moratoria; several cities paused all automated triage.
+
+Against this, the Union held one line. Health and ministry workloads continued migrating to EU-hosted inference, with diagnostic and drafting tools re-validated one by one. Procurement preference and temporary partner quotas covered gaps where domestic models lagged. Hospitals stayed open, ministries paid benefits, grid operators kept manual checks. It was slow and correction-heavy, but it did not stop.
+
+The gigafactory programme formally completed its first phase on paper — zones cleared, grid queues shortened, capital released — while two contested sites stayed frozen behind blockades and municipal cyber cover did not return except for a small pilot tied to audited segmentation. Cross-border repair pools kept degraded services running at the cost of queues and postponed care.
+
+By December, essential functions had survived an open-weight shock and a legitimacy shock together. Public sentiment and political standing eroded under the strain, but core support held and institutions continued to function.

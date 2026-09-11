@@ -1,0 +1,11 @@
+### Cut off
+In February, several hospitals, ministries and firms found the leading American model refusing European users. No reason was given and there was no appeal. Teams that had built triage support, procurement drafting and research assistance on top of it scrambled for fallbacks. The certified systems installed after the winter ransomware wave mostly held, and that kept services degraded rather than dark.
+
+Almost at once, Washington pressed The Hague to extend servicing and export curbs on lithography equipment, including older machines used for ordinary chips. For the Dutch company at the centre of the chain, defiance looked unsurvivable. Queues lengthened and prices rose again. Strait shipping delays added weeks to some deliveries.
+
+### Machines with hands
+Through the spring, commercial humanoid robots moved from pilots to sales in logistics and light industry, built overwhelmingly in China and running American control software. European manufacturers who still led in precision machinery found themselves buying the new capability from outside. Early use in mine clearance and carrying roles began to shade into armed trials elsewhere, with no doctrine to govern it.
+
+At home, two stories collided. Tailored therapies and better diagnostics reached ordinary clinics, and a few cities reported waiting lists falling where European-procured tools were used. Then investigators found a welfare and policing support system had systematically disadvantaged thousands, with caseworkers clicking through flags in seconds and logs never read. The debate turned on whether the law had been broken or whether the law had missed the deployment entirely. Trust collapsed further.
+
+Brussels ran its supply compact from the Trade Council, offering backing to the Dutch over servicing while asking Seoul and Tokyo for pooled volumes and evaluation slots. Talks stayed cordial but yielded no extra compute. A new deployment programme pushed European-controlled tools into hospitals and town halls and published weekly waiting-list figures. It was visible, but too small to offset the sense of dependence.

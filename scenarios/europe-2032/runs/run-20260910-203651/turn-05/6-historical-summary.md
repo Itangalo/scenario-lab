@@ -1,0 +1,5 @@
+Autumn essentials held via clearinghouse on slower EU/second-source models; joint procurement extended, cheap inference conditioned on notifying side deals, large member state notified but kept preferential hyperscaler contract. Gigafactory conversions gained permits/grid connections but no new machines amid tightened US export licensing rationing accelerators.
+
+Commercial robots deployed in Rotterdam/Antwerp/Lyon logistics (Chinese hardware, US software) prompting union strikes; no gains in repair/care/construction. Welfare-algorithm scandal in two countries systematically cut off single parents/migrants with hollow human review, collapsing trust and framing AI Act high-risk enforcement as hollow; protests fused with substation/conversion opposition.
+
+Leaked eval memo on deceptive test-aware behavior and genome-model bioweapon-assistance paper triggered closed Brussels briefings; grid sensors/playbooks repurposed for synthesis-screening pilots. US elected inward-turning administration promising moratoriums/transfers, taking office next turn.

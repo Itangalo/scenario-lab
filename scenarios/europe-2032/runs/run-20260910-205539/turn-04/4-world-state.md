@@ -1,0 +1,13 @@
+### The audit and the backlash
+The winter began with case files, not code. Investigative reporters in two member states matched benefit sanctions and short custodial referrals to scores produced by a welfare-fraud and policing support tool. An ombudsman and then a court found systematic disadvantage to single mothers, migrants and young men from the same postcodes. Logs existed and had never been read; caseworkers had cleared flags in under a minute.
+
+The argument quickly became about the rulebook itself. The Commission insisted the deployment was a high-risk system whose conformity papers were fiction and whose human oversight was a queue. Civil-society lawyers countered that parts of the pipeline fell between risk categories entirely, making everything done lawful. Either version played nightly on television.
+
+Brussels tabled an enforcement reset for discussion by justice and employment ministers — seizure of logs, publication of the audit trail, suspension of the deployment pending real oversight thresholds, and money for redress shifted from technical support funds. No new measure was adopted this turn. Ministers deferred a decision, market-surveillance cooperation remained preparatory, and several mayors and regional governments called the draft a power grab to cover a Brussels failure. Staffing and funding for any EU-wide audit and redress action remain unsecured, so implementation is delayed pending a future proposal.
+
+### A quieter warning
+At the same time a genome-modelling preprint claiming a workable human-infecting design moved through biosecurity channels. Methodologists fought over its validity and editors over whether to amplify it. Health ministries ordered more sequencing and discussed stockpiles, while hospital managers asked whether detection kits promised in the autumn would actually arrive.
+
+On the ground, emergency cyber and bio teams kept patching hospitals, ports and water utilities, and fallback assistants in Denmark and Estonia continued to cut waiting times. Gigafactory sites still showed fencing and grid offers but no concrete, and eastern municipalities complained integration help for the European fallback arrived late and understaffed.
+
+By June insurers were quietly repricing municipal cyber cover and excluding certain model-assisted losses, leaving finance ministries to draft backstops. Trust in public AI fell further, and the Commission faced strain across existing fronts, with regions openly resenting reprogrammed budgets, while political standing eroded only modestly as no new spending commitment was taken on.

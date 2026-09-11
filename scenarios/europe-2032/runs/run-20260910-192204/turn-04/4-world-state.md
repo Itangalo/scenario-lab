@@ -1,0 +1,10 @@
+### Holding on open weights
+January to June 2028 became a long exercise in making do. With American frontier access still dead for European hospitals and ministries, and a major US lab now publicly stalled by a cluster outage and contractor fight after the autumn valuation reset, substitution stopped looking temporary. Developers across Europe quietly shifted to downloadable open models.
+
+Brussels leaned into that shift. DG CNECT, ENISA and health emergency teams pushed stranded triage, radiology paperwork and permit-desk workloads onto EuroHPC and certified SecNumCloud hosts running vetted open-weight builds, hospitals first. The EU Essential-Service Fallback, now the stated priority, paid for overflow compute and sent NIS2 teams to add guardrails against hallucinations.
+
+It worked partially. Basic functions stayed up, queues moved, and the Public Service Continuity Backstop finished landing — offline restores, paper fallbacks and Civil Protection cells meant the winter municipal sweep did not cascade. Large grid operators held.
+
+But friction showed everywhere. Clinicians still reported invented forms and slow discharges, and migration was done by the same exhausted cyber staff from the spring. In a few hospital federations, doctors and sickness funds circulated a joint refusal to use the fallback triage tools after a medication-form error, freezing rollout locally for weeks. Small cities queued again at town halls.
+
+Gigafactory sites stayed fenced and empty. With accelerator orders cancelled and prices high, officials preserved sites, grid reservations and licences but deferred new chip spending until repricing cleared. No new measure was started, a pause that steadied budgets without restoring confidence. Evening news still linked fraud kits to freely available models, and the Commission's line — that the American outage proved open-weight dependence was structural — contained blame more than it rebuilt trust.

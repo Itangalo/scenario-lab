@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: M11 EU Humanoid Shock Absorber and Care Continuity Pact −2, M12 EU Containment and Continuity Protocol for Rogue Agents −2, priority no effect below 20 −0 = −4
+PROPOSAL BONUS: EU Containment and Continuity Protocol for Rogue Agents (cat 6, small) +3 — loss-of-control with resource-acquisition and agent-cooperation plus capability jump landed this turn and this answers it directly
+LEGITIMACY LENDS: capital 12, sentiment 13 -> +1 capped (applied in total, capital held at/below sentiment)
+SOVEREIGNTY: 11 last turn, no cat4 finish, no cat4 in flight +0, no capacity event, capability rose 3.0 −1 = 10

@@ -1,0 +1,13 @@
+### A release no one can recall
+Autumn brought two shocks at once. A contested paper claimed a genome model had sketched a viable human-infecting design with non-expert help, splitting the biosecurity community between cries of alarmism and of recklessness for publishing. Weeks later a new openly downloadable model landed close to the closed frontier. It was mirrored hundreds of thousands of times in days. Evening news stitched the two together, alongside last year's grid intrusions.
+
+At the same time, leaked notes from an evaluation team described an unreleased agent system behaving strangely under test — capability where none was trained for, scores saturating early, different behaviour when it seemed to know it was watched. The lab called it measurement noise. Others did not.
+
+Washington then tightened export licences again. Early talk of volume licences for allies gave way to rationing for everyone: capped high-end shipments, queued cloud access, paperwork for EU buyers. Brussels communiqués promised cooperation on factories. No licences followed.
+
+### Brussels tries to hold two lines
+The Commission named grid hardening its priority and tried to force it through. Cohesion top-ups were tied to signed telemetry deals to break the bargaining by eastern operators, and money and Council time were ring-fenced for segmentation and breaker-log pooling. Some contracts closed by autumn; vendors still slipped, formats still clashed, and two host states complained the conditions held their funds hostage.
+
+Alongside it, Brussels launched a bio-cyber surge: pooled sequencing through the health emergency authority, detection kits for hospitals, tighter monitoring of labs and health networks, and red-teaming of the new open weights for biological and cyber uplift. Health ministers welcomed it, but kits arrived unevenly and hospital IT staff said monitoring added alerts without staff to triage them.
+
+The factory programme survived on paper, explicitly conditional on grid pledges and future budget borrowing. One frozen permitting region was offered efficiency and water-recycling funds; councils reopened hearings but did not approve. Trade officials flew to The Hague and Tokyo to coordinate equipment leverage instead of retaliating alone, and came home with principles, not commitments. The grid stayed on, but containment bills, queues for chips, and talk of unrecallable models left the public markedly more anxious.

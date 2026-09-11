@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t10: EU Transition Shield for Displaced Work and Essential Services −2, EU Bio-Detection and Trusted Care Continuity Network −2, EU Wartime Neutrality and Critical Infrastructure Shield −2, priority −1 = −6 (priority without effect or cost as capital 15 below 20, charge is measures only)
+PROPOSAL BONUS: EU Wartime Neutrality and Critical Infrastructure Shield (cat 6, small) +4 — catastrophic_great_power_conflict fired this turn targeting fabs/cables/data centres and this answers it directly
+LEGITIMACY LENDS: capital 8, sentiment 22 -> +2 (capped by sentiment, applied after other terms)
+SOVEREIGNTY: 17 last turn, no capacity event, no cat4 in flight +0, capability rose 1.0 −0 = 17

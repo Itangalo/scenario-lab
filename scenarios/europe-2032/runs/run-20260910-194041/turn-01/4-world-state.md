@@ -1,0 +1,13 @@
+### The autumn that mapped the grid
+In October, engineers doing a routine audit at a transmission operator found strangers already inside. Within days the same fingerprints turned up at grid companies on three continents — two of them in the Union — plus a major container port and a regional water utility. The intruders had lived quietly for weeks, mapped protection relays, collected breaker credentials and left tooling lying in the open. Nothing blew. Short blackouts that month came from defenders pulling plugs, not attackers pushing buttons.
+
+No one claimed it. Ministers named three usual suspects in public while analysts whispered about a fourth. What unsettled Brussels was method: thousands of tiny parallel probes sustained for weeks, built with freely downloadable models in the top class and run at a scale that suggested state backing. Segmentation, long assumed to keep operational technology safe, had not held.
+
+The Commission moved fast, by its standards. ENISA was given an expanded mandate, energy and transport directorates were told to run joint audits, and every transmission operator was ordered to prove its networks were truly divided, starting with the two compromised firms. Co-financing blunted operator complaints; finance ministers grumbled about raiding connectivity and digital funds but accepted that containment outages cost more. Staffing lagged ambition, and exercises slipped into early 2027.
+
+### Leverage used against Europe
+At the same time Washington ordered The Hague to choke off servicing and sales of chip-making equipment far beyond the cutting edge — older machines for ordinary chips, more customers. The Dutch government complied under protest. The Union's single real chokepoint had been spent by someone else, and a Foreign Affairs Council file on a joint response produced conclusions but no instrument.
+
+Capability did not pause. A sharp jump in code, maths and automated intrusion tooling arrived within weeks, even as general competence crept forward. Defenders got one real win: automated patching and swarm-behaviour detection that visibly blunted a whole class of attacks, now rushed into the new shield programme.
+
+Ordinary offices told a different story. Studies across law, accounting, administration and media showed clear productivity gains, strongest for juniors, with no job collapse — firms that had cut early quietly rehired. That calm made mobilising money harder, even as municipal protests over power prices, water use and data-centre permits merged with crime reports of ransomware crews openly selling tooling derived from the new open models.

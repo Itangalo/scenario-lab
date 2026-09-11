@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.12666666666666668,
+    "probability_samples": [
+      0.095,
+      0.095,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "knowledge_work_augmented",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Anti-AI parties coordinate cross-border municipal bans on new data-centre and AI-infrastructure siting, forcing permit freezes in several member states.",
+    "emergent": true,
+    "id": "emergent_municipal_siting_freeze",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

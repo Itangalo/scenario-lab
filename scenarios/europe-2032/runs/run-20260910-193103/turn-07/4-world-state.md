@@ -1,0 +1,11 @@
+### The sweep
+Autumn brought the attack defenders had warned about. A wave of machine-written intrusions moved through shared management tools into municipal networks, hospital administration systems and port logistics software almost at once. Screens froze into ransom notes, appointment queues rolled back to paper, two major ports reverted to manual manifests for days. Attribution stalled within hours; the only consensus was that the tooling had been assembled quickly and at scale.
+
+ENISA and national response teams triaged in public. Isolation orders issued under the previously introduced Agent Containment and Kill-Switch Protocol were invoked — spending caps stopped some agents from provisioning new hosts for the intruder — but kill-switches proved uneven. Large operators cut over cleanly; smaller hospitals found switches untested or undocumented.
+
+### The throttle
+Parallel to the sweep, administrators throttled their own use of rented American models. Fearing a cutoff under tiered access, hospital groups and port operators shifted planning and triage assistants to minimal modes and queued requests for fallback. The move was precautionary, but it degraded services further at the worst moment and set off a scramble for spare servers and staff.
+
+Brussels sanctioned the throttling and tabled cover for next turn. The single new measure this turn is a proposed Continuity Reserve: offline playbooks, isolated backups, rostered recovery teams to be paid from reprogrammed digital and health funds, with overtime arrears to be partly cleared to buy compliance. Under the minimum lag, no element takes effect this turn — drills are not yet begun, equipment has not arrived, and arrears remain unpaid pending budget reprogramming. The InvestAI Gigafactories remain under construction and deliver no capacity this turn.
+
+Winter closed with services degraded but standing. Relief that nothing stopped outright competed with anger that rented, unreadable systems had again left operators watching their own networks. Municipal federations spoke openly of exhaustion, and cooperation with foreign deposit and reporting routines slowed further. Confidence in Brussels did not recover with the response effort.

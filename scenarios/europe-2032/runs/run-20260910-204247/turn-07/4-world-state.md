@@ -1,0 +1,10 @@
+### The sites go live, the shield holds, the line breaks
+Autumn brought ribbon-cuttings and outage maps in the same newscast. The first gigafactory halls powered up in France, Germany and Sweden — concrete sovereignty, ministers said — while grid connections elsewhere slipped to 2031. The Critical Shield programme formally closed, its coordination centres now permanent. Engineers credited it with stopping the winter sweep from becoming a cascade.
+
+The sweep itself was brutal. A largely automated intrusion rode a trusted software update into city administrations, hospital back-offices and factory networks. Appointments, permits and production lines thinned for weeks. Response teams from France, Germany and the Nordics deployed east under emergency rules, patching live systems. Attribution, officials admitted, would take months. Insurers demanding proof of patching deepened anger among mayors and mid-sized firms.
+
+Brussels answered with a small repair cell: joint patch-and-segment teams and a single aid window for lagging operators, paid from reprogrammed digital funds with insurer co-pay. Early deployments in Poland, Romania and the Baltics steadied networks, but help again arrived after the outage, and coverage remained uneven.
+
+Then the political blow landed. One eastern capital signed a direct cut-price cloud and model deal with a Gulf-backed provider linked to non-EU frontier capacity, calling it pragmatism after late aid. Paris and Berlin called it undercutting the common line. The Commission could only note the deal was legal.
+
+Across the Atlantic, Washington's pause on large training runs held, slowing frontier releases. No formal access offer came to Europe. Open models crept closer to the frontier, downloaded beyond recall. Bio-monitoring stayed on high alert with no case. Voters saw assistants cutting queues but talked of frozen entry jobs and dependence no programme seemed to end.

@@ -1,0 +1,7 @@
+Winter audits closed the two slipped autumn cases, with sensor funding tied to cutting remote vendor links; large operators passed quickly while municipal utilities and a mid-size port needed French and Nordic help until February. No new long-lived intrusion was found, but exercises revealed thin staffing and contradictory guidance at smaller sites.
+
+A new model-interpretability technique moved from lab to practice: the Commission funded three testing nodes via AI Office and research centre to create checklists for systems in hospitals, energy control rooms and welfare offices. Developer cooperation and early certified deployments partly restored operator trust lost in autumn.
+
+Gains were overtaken by a welfare AI scandal: an automated fraud-flagging system systematically penalised single mothers, migrants and part-time workers, cutting payments for months on opaque scores with caseworker deference and unread appeals. Court and ombudsman findings sparked debate that the AI law was strict on paper but enforcement failed — no independent tester had seen model or logs pre-deployment.
+
+Grid vulnerability and welfare harm dominated coverage; local councils slowed power permits for data-centre zones, large compute site selection crept forward with no new ground broken. Political cost was severe with capital falling sharply within single-turn bound amid costs, scandal and legitimacy pressures.

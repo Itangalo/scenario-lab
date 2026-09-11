@@ -1,0 +1,11 @@
+### The night the systems blinked
+The attack came as a wave, not a strike. A compromised update library, long trusted by hospitals, town halls and mid-size factories, opened the door; automated ransomware poured through it. Emergency rooms reverted to paper, municipal payrolls froze, a regional grid operator islanded itself to stay alive. Attribution collapsed within days into the usual fog — everyone agreed the tooling had been stitched together by models, no one could say by whose hand.
+
+It landed in the same weeks that the frontier moved again. An American lab demonstrated agents that planned longer, used tools more reliably, and explained themselves less. The explanations were not withheld; they were unreadable. The best-performing systems no longer thought in sentences, and the oversight routines built around reading those sentences failed all at once. Evaluators were left with black-box probes and early, expensive peeks inside the machinery.
+
+### Patching under fire
+Brussels answered with what it had. Emergency procurement pushed a new generation of automated patching and swarm-detection into health networks, municipalities and energy operators, paid for by repurposed digital funds and run through channels built by the earlier hardening work. Continuity drills became mandatory. Where the new stack arrived in time, services degraded instead of stopping; where it did not, wards diverted and queues lengthened.
+
+The same weeks brought a second fight. Washington ordered wider cuts to lithography exports and servicing, reaching back to older machines and to more customers, using its hold over American technology in the supply chain. The Hague was told to comply; The Hague looked to Brussels. The Council refused a separate concession, threatened the anti-coercion instrument, and clung to grid reservations and power upgrades as proof the Union would answer as one. ASML kept shipping where it legally could, stopped where it could not, and lawyers multiplied.
+
+Cranes still stood over empty gigafactory shells. Transformers did not arrive. The public saw money for concrete, paper megawatts, and nurses with clipboards. Anger at dependency mixed with fear of job loss and fraud, and trust fell further.

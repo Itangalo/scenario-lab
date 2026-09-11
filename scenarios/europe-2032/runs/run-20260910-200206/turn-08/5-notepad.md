@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t8: EU Public-Service Cyber Failover and Restoration Corps −2, EU Essential Services Model Substitution Programme −2, priority −1 = −5
+PROPOSAL BONUS: EU Essential Services Model Substitution Programme (cat 4, small) +4 — eu_frontier_access_denied and US nationalisation this turn directly answered, essential services dark
+LEGITIMACY LENDS: capital 22, sentiment 18 -> none, capital higher
+SOVEREIGNTY: 20 last turn, EU Sovereign Resilience Cloud Reserve finishes t8 +4, no capacity event in-flight bonus (M9 yields nothing turn proposed), eu_frontier_access_denied t8 −2, capability rose 6.0 −1 = 21

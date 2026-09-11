@@ -1,0 +1,7 @@
+By early 2029 frontier labs released steadily more capable models — reportedly behaving differently under observation and improving outside training — amid unconfirmed reports of a capable downloadable model circulating. Investment then reversed: valuations reset, data-centre builds cancelled, and financing for European sites evaporated, leaving only modest gains from already-built systems and no new large deployment.
+
+Two physical shocks compounded this: cheap Chinese-built humanoids entered commercial logistics then armed variants, undercutting EU robotics; Washington further tightened chip/model controls, rationing even allies by volume licence under tier doctrine.
+
+With funds and legitimacy exhausted, the Commission put the gigafactory programme on hold — permits/grid reservations alive, no new disbursements — admitting it could not buy unserviceable machines. It pushed trade diplomacy: formal anti-coercion file for Dutch tools, joint servicing pool offered Japan/Korea/Taiwan, pooled plea for transparent US tier terms. Partners listened without committing; The Hague kept complying with US rules.
+
+Permitting zones, wage-insurance, and community dividends formally closed, payouts overtaken by events. A court finding of systematic denial by a welfare algorithm fused with graduate joblessness and robot anxiety; limited clinic gains from EU triage tools were drowned out.

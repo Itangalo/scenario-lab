@@ -1,0 +1,5 @@
+EU resilience frayed further to a visible US cutoff: leading American model refused Union users overnight with no appeal, followed by tighter chip/model exports with allied volume licences. Breakaway hospitals on the separate US deal reverted to parallel paper logs; cities on old open assistants saw payroll/rostering freeze amid login-swapping before going to paper.
+
+Brussels' sole response was a funded failover order moving cut-off health/ministry circuits to paper-plus-European-hosted fallbacks; prior voluntary kill-switch limits, spending caps and paper drills made mandatory, telemetry pool turned to enforcement list. Isolation stayed at hours in participating banks/ministries, wage-bridge kept logistics pay predictable, Tokyo/Seoul spares procurement held under quota and redirected to failover sites while Lyon/Magdeburg stayed dark under guarantees.
+
+Limits exposed: no new auditors certified, EU-hosted replacements stumbled under load, older municipal assistants outside telemetry, breakaway state folded in without punishment, spares rationing turned bitter. Essential services degraded rather than stopped, dependence now undeniable.

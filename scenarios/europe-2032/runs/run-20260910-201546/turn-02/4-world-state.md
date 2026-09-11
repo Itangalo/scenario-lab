@@ -1,0 +1,11 @@
+### Grids still exposed, labs unsettled
+The winter-spring of 2027 kept engineers busy. Joint procurement of monitoring for control systems finally moved to contract, and secondees from the new reserve arrived at the two transmission operators hit last autumn. Exercises expanded from electricity to water and ports, with five states drilling together. Operators said the help was real but thin: guidance still outran staff, and the same crews were being asked to connect data-centre power while installing sensors.
+
+At the same time a contested biosecurity paper rippled through specialist circles. A genome model was reported to have produced a viable design for a human-infecting organism, or to have let a non-expert get there with help. Methodologists argued, authors were accused of hype and of irresponsibility at once. Inside health preparedness units, the signal was folded into detection work without a new instrument.
+
+### The chokepoint spent by another hand
+Washington moved to tighten servicing and exports of chipmaking equipment built with American technology, pressing The Hague to extend curbs from leading-edge machines to older tools used for ordinary chips. For the Dutch supplier the choice looked stark: defy American jurisdiction and risk its US business, or comply and lose servicing revenues and Asian customers.
+
+Brussels answered jurisdictionally. Trade officials opened an evidence file under the anti-coercion instrument, foreign ministers sought a common line with Tokyo and Seoul on servicing, and The Hague was asked to slow-walk compliance while a coalition formed. Japan and Korea listened politely and committed to little; Washington showed no sign of pausing.
+
+The episode landed badly at home. Press coverage framed Europe's one real hardware lever as being spent by someone else, and host-region fights over compute sites and grid queues reinforced a sense of dependence. State-aid clearances for two computing factories moved, permitting talks continued, but delivery remained paper-heavy. By June, detection was better, confidence was not.

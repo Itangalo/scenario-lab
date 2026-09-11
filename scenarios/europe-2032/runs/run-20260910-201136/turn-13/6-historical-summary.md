@@ -1,0 +1,5 @@
+Late-summer advanced chip export halt forced rationing/pooling of spares for servers, imaging and grid controllers; Strait insurance tripled, empty factory plots filled with repair crews. EU held lithography/optics leverage via middle-power pact to keep spares/legacy licences, accepting US tiered frontier rationing without open fight.
+
+Bio-containment completed in time: joint-procurement synthesis screening, wastewater monitoring, clinical sequencing live in large hospitals; interpretability check certified model-by-model on EU-hosted fallback. Fresh autumn ransomware degraded but did not stop grids/large hospitals; legacy municipal clinics suffered triage outages in three cities, street protests and 6-day data-centre blockade over automated triage, trust collapsed further.
+
+Response with no new build/levy: clinic audits published, fallback support in waiting rooms, municipal mutual-aid repair crews and pooled spares, showcasing scheduling tools that cut waits. Screen works, lights stay on, street remains angry.

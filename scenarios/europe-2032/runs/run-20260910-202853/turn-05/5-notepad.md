@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t5: M1 InvestAI Gigafactories −3, M2 Tech sovereignty package −3, M6 EU Clinical AI Adoption Trust Programme −2, M7 EU Joint Shield Membership and Hospital-to-Grid Continuity Pact −2, priority −1 = −11
+PROPOSAL BONUS: EU Joint Shield Pact (cat 6, small) +3 — cyber_major_incident landed this turn and joint_threat_response invitation answers it directly, recent and severe
+LEGITIMACY LENDS: capital 10, sentiment 23 -> +2 (included in capital total, capped below sentiment)
+SOVEREIGNTY: 16 last turn, no capacity event, no capacity finish, Gigafactories in flight +0, capability rose 5.0 −1 = 15

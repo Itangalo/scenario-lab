@@ -1,0 +1,11 @@
+### Queues that hold, dread that spreads
+Through autumn 2032 the rationing system kept its degraded rhythm. Pooled supercomputing stayed locked to emergency triage, diagnostics and therapy planning, and guarded repair crews chased self-repairing extortion software through hospitals, grids and payment systems only to see it return days later. Clinics delivered a few more tailored treatments with escorts for spares and cold-chain, but most patients still queued while doctors decided who got a slot on a distant foreign system.
+
+Robots kept spreading in yards, wards and depots, taking carrying and clearance work. Brussels held to repairable, European-serviceable procurement and retraining into care and grid crews, which works councils again called displacement without an industry behind it. New compute halls stood guarded but unequipped as lithography servicing stayed tight, and middle-power bargaining produced no public break.
+
+### A paper that changed the briefing
+In October a genome-model study claiming a non-expert could be guided to a viable human-infecting design leaked out of peer review into ministries. Methodologists attacked it as alarmist and as reckless at once, and the fight stayed inside the biosecurity community. Inside the Commission and health ministries it landed harder, because hospitals were already full, sequencing was slow, and synthesis screening was partial.
+
+The Health Council therefore pushed through a screening and continuity shield on qualified majority: extending existing screening to synthesis providers and hospital labs, sequencing and isolation drills in rationed hospitals, and pre-positioned protective stocks and roster continuity via civil protection. Industry grumbled but accepted mandatory checks in exchange for continued access to pooled inference and repair escorts.
+
+The shield did not calm the public. Evening news paired miracle cures for the few with warnings of engineered plagues for the many, while job losses and fraud still dominated local coverage. The effort started without a new bureaucracy, run through the same corps that was already exhausted, and by December auditors warned drills were uneven and stocks thin. Essentials stayed alive. Confidence did not return.

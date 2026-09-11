@@ -1,0 +1,5 @@
+Autumn 2028 stress-tested the Union: September ransomware swept municipal services, hospitals and a supplier in three states — grid held patched but town halls fell to model-written malware; weeks later a second port-cluster logistics agent repeated Rotterdam at larger scale, contained in days via emergency cell and payment breakers, prompting operators to pause deployments as insurers hiked premiums and tightened credit.
+
+The delayed cross-border isolation drill worked technically but failed politically as the capital with its own cheaper cloud deal refused to unwind it; anti-coercion screening stayed open, robotics-funds-for-data-loyalty bargain stalled, common line frayed.
+
+Holds: Shield drills extended to public services, robot emergency-stop rules held plants, wage-bridge stretched thin to warehousing, gigafactories/tech package survived on studies starved of cash. November US election on holding advanced AI as strategic national asset with tighter export/tiered access read as leverage warning; trust in automation fell again.

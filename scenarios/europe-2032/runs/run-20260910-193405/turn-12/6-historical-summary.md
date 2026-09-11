@@ -1,0 +1,5 @@
+Designed-agent release with model involvement confirmed in January: clinics in two hubs filled, tracing ran weeks, HERA/ECDC led, rationing dashboards and pooled triage returned, continuity pipes paid nurses/grid crews first.
+
+Shield held technically through spring via Japanese-Korean inference compact and new interpretability result for triage/reporting; waiting lists contained — Brussels success, not felt locally. Graduate hiring stayed collapsed, containment pay late in March, mayors kept curtailment suits, Polish humanoid order quarantined after stop-signal misread, German carmaker extended pause.
+
+Washington tightened export licensing and pressed Netherlands to cut servicing of older lithography; Commission refused parts conflicting with EU law and froze new Chinese-logistics-on-US-stack procurement pending certification. ASML caught between jurisdictions, insurers narrowed, EU rationed despite allied licences. Contested genome-model study claiming viable human-infecting design circulated as alarm/recipe. By June 2032 containment worked, legitimacy failed.

@@ -1,0 +1,13 @@
+### The sites go live, the line breaks
+The four gigafactory shells finally powered up in sequence through autumn. Ribbon-cuttings were deliberately low-key: one commissioner, one mayor, no fireworks. Grid engineers kept the night-time hook-up regime, and two towns lifted their blockades after hiring pledges turned into apprenticeship contracts. The concrete achievement steadied suppliers, even as engineers admitted the machines inside were still largely foreign accelerators, rationed and late. The completion reflects a multi-turn build finishing this turn, not an instant build.
+
+That scarcity broke the common front. A large western member state signed its own preferential capacity and model-access arrangement with an American hyperscaler, with side assurances sought in Washington on tier placement. Paris and Berlin called it pragmatism in public and a breach in private. Editorials ran the split-screen again: European sovereignty poured in concrete, then bypassed by contract.
+
+The finishing gigafactories add +5 to sovereignty this turn, partly offset by -2 from the member-state defection, for a net +3 to 22.0. No frontier open release, diffusion event, or spillover occurred this turn, so openweight capability tracks frontier growth closely, rising by the same +1.0 step.
+
+### Clearance rule tabled, not operational
+Brussels answered with procedure, not money. Through the competitiveness formation, the Commission tabled a single new measure this turn: an emergency notification regime where any exclusive compute, siting or privileged access deal must face a six-week Union review. The defecting capital was offered grandfathering and dialogue on better tier terms, not sanctions.
+
+Lawyers argued over the legal base for weeks. Two more capitals quietly paused their own bilateral talks to see which way the wind blew; one openly threatened to challenge the regime. No new build, no new hardening programme opened — the AI Office and the cyber agency were told to enforce with what they had.
+
+By December the clearance rule existed on paper only, unloved and untested, with legal finalization, staffing and systems still missing. It delivers no benefit this turn; with political capital at 1.0 no portfolio charge activates and no new funding is committed. Safety and resilience holdings are maintained with existing staff and budgets, with no new erosion this turn. Warehouse towns in the Low Countries and Poland saw agency-shift cuts, while municipal utilities warned about heating aid and security rebuild costs. The public mood soured further by -2.0 on grumbling over the defection and slow local benefits, but with lit factories and apprenticeship contracts signed, there was no collapse into open hostility.

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t3: M1 InvestAI Gigafactories −3, M2 Tech sovereignty package −3, M3 EU Essential Services Shield and Bioresponse −3, M4 EU Assurance Uptake and Secure Bio-Data Commons −2, M5 EU Entry into Joint Cyber-Bio Response and US-China Safety Accord −2, priority M4 −1 = −14
+PROPOSAL BONUS: EU Entry into Joint Cyber-Bio Response and US-China Safety Accord (cat 8, small) +4 — joint invitation and US-China pact open this turn, answers exclusion risk and prior grid/bio incidents directly but small and admission not yet secured
+LEGITIMACY LENDS: capital 16, sentiment 32 -> +2
+SOVEREIGNTY: 20 last turn, no category 4 finish, Gigafactories in flight +0, export_control_escalation t3 −2, capability rose 4.0 −1 = 17

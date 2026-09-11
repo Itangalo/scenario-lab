@@ -1,0 +1,11 @@
+### The strait closes
+In August, insurance desks effectively closed the Taiwan Strait to advanced-chip freight. No containers were seized; they simply stopped sailing. Prices for accelerators, spares and even shipping cover tripled in weeks. DG TRADE's exposure maps, drawn as contingency, became the daily briefing. Every gigafactory reservation in Europe turned from an asset into a hostage to components that would not arrive.
+
+Washington and Beijing, after weeks of back-channel talks, announced a narrow pact on weights security and curbs on autonomous escalation and certain biological design tools. Verification was thin. Brussels was informed after the text was fixed. Relief at any floor under the race mixed with humiliation at being absent.
+
+### A coalition and a crack
+The Commission's answer was a joint licensing and bargaining cell with Japan, Korea and other chokepoint holders, pooling export licences and compute bargaining. The offer was real enough to draw meetings, and the Union's lithography and chemicals position gave it a seat. But one member state had already cut its own supply deal with an American hyperscaler, undercutting the common price and boasting of pragmatism at home. Brussels folded the terms in rather than punish, which partners read as weakness.
+
+At home, an ombudsman and then a court found a welfare-fraud scoring system used in three regions had systematically cut benefits to single mothers and migrants. Logs existed and were never read; caseworkers cleared a queue at forty seconds a file. The Commission called it enforcement failure and ordered audits, but press and opposition called the law itself obsolete, written for 2024 systems, blind to 2030 deployments.
+
+By December, the first gigafactory concrete was finally poured at one site — permits kept warm for years paying out — yet with no chips to fill it, grid protests continuing, and sentiment collapsing, the achievement felt hollow. Containment in energy and hospitals held, but the public mood turned openly hostile.

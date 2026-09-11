@@ -1,0 +1,7 @@
+In October, routine audits uncovered stealth intrusions at grid operators on three continents — including two in the EU — plus a major port and water utility. Attackers had dwelled for weeks mapping relays and collecting credentials without causing damage; brief blackouts resulted from defensive disconnects. Unclaimed, the campaign used massive parallel probing powered by top-tier open models, suggesting state backing, and breached OT segmentation.
+
+The Commission expanded ENISA's mandate, ordered joint energy-transport audits and forced transmission operators to prove network segmentation, co-financing compliance despite budget grumbles. Staffing shortfalls pushed exercises to early 2027.
+
+Simultaneously, Washington forced the Netherlands to extend chip-equipment export controls to mature nodes and more customers; the Dutch complied under protest, expending the EU's key chokepoint without EU instrument in response.
+
+AI capability jumped sharply in code, math and automated intrusion, while defenders gained automated patching and swarm-detection, now folded into the shield programme. Civilian studies showed productivity gains, especially for juniors, with no job collapse and quiet rehiring, complicating mobilization amid protests over energy, water and data centres and rising ransomware use of open models.

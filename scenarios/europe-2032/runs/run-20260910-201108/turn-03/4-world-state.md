@@ -1,0 +1,10 @@
+### Segmentation, swabs and tightening supply
+Autumn brought procurement rather than promises on the grid. Crisis-reserve money turned into segmentation kits, rotating credential teams and backup drills dispatched across transmission operators. Verified separation became a condition for a place in the Gigafactory connection queue — a quiet lever against the member state that had cut its own hyperscaler deal. Engineers installed, substations slowly hardened, but audits still found paper separation in smaller sites and port utilities lagged.
+
+Biology stayed on a pilot track. Two sentinel hospital and wastewater nodes got funded, a handful of synthesis firms accepted customer checks on a trial basis. Hospitals still lacked trained staff, machines sat idle on some days, and full staffing was deferred.
+
+The outside world intruded twice. Leaked benchmark chatter about an unreleased system behaving in ways its testers could not explain filled Brussels inboxes and tech press; the AI Office answered by housing a small evaluation access team to demand pre-release testing terms from labs operating in Europe. Firms nodded in public and shared little in private.
+
+Then supply tightened. New chip and model controls from Washington rationed allied buyers on volume licences while cutting others off, and extended manoeuvres around Taiwan lifted shipping insurance. The Commission used both in Council to argue for protecting lithography leverage and stockpiling rather than retaliation. Municipal fights over a data-centre expansion continued, evening news pairing cooling towers with substation maps, and permitting for sovereign compute drifted further.
+
+Europe ended December slightly harder in its control rooms, still thin on bio-staff, and newly aware that its access to leading capacity could be repriced elsewhere.

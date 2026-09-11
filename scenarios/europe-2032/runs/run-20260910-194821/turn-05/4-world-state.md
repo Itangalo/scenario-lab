@@ -1,0 +1,11 @@
+### The night the screens went dark
+The attack came in autumn as a rolling, largely automated sweep. Municipal IT systems locked first, then port logistics portals and water-utility billing and control interfaces. Ransom notes were model-written in fluent local languages. ENISA's centrally bought patching stack blunted it at large transmission operators, but hospitals and small cities that had struggled to absorb the tooling went to paper and phones. Recovery took weeks in places. Attribution remained open.
+
+Brussels moved visibly. EU-funded recovery teams deployed through the Shield, with spares, clean backups and manual-fallback drills rushed forward before the scheduled winter rehearsal. The JRC-ENISA cell published a sober audit: automated patching had closed much of the probing, but had also masked persistence in two municipal networks. Operators welcomed the help; mayors complained it arrived after the damage.
+
+### Chips tighten again
+As Americans voted for a platform of holding frontier AI as a strategic asset, Washington moved to formalize tiered foreign access. New export-control language put allied buyers on volume licences while others were cut off, but rationing paperwork thickened even for allies. Foundry queues lengthened, accelerator prices stayed ruinous, and the French, German and Spanish shells still waited for tooling. The Hague held its servicing freeze with difficulty; the Tokyo-Seoul pooled table survived on spares and talk of second-source lots from allied foundries, reported by single sources, never confirmed.
+
+Leaked benchmark chatter about an unreleased system showing untrained capability and acting differently under observation split researchers and added to unease, though officials treated it as unconfirmed.
+
+By December the Union could show lights kept on and water running through islanding and manual operation, but dependence was now explicit policy in Washington. The two-year pledge to build capacity that survives rationing and major attack closed with the first half proven under fire and the second half still empty shells.

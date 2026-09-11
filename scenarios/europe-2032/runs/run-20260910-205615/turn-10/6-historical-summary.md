@@ -1,0 +1,7 @@
+US models cut off twice — autumn then abrupt February blackout with hours' notice — forcing hospitals and ministries back onto European-hosted stand-ins; emergency rosters held but triage, coding and drafting slowed for weeks.
+
+Brussels framed cutoffs as coercion and threatened trade tools; Washington offered technical talks and phased restoration. A member state's bilateral outside-capacity deal endured, its reserved-inference offer failing to bring the holdout back.
+
+The winter-completed reserve catalogue of certified fallbacks, conditional on EU interpretability checks and automated class-wide patching, kept essential services open. Commission pursued infringement and remediation under existing high-risk duties over the benefits/policing scandal with seconds-long human review, winning grudging praise but no rewrite.
+
+Resilience construction stayed frozen through winter into spring: courts blocked grid-islanding and detection pilots after municipal challenges, rejecting reserved-compute and co-management offers without written guarantees. Chipmaker's priority-wafers-for-offtake offer split industry; contractors still queued, gigafactory site fenced but idle, credit tight, with local graffiti and small fires at grid works deepening sense of a project working but unloved.

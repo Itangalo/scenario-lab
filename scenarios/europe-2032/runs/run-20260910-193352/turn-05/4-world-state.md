@@ -1,0 +1,11 @@
+### The weights get out, the votes are counted
+Autumn brought the release everyone had warned about. A near-frontier open model appeared with permissive weights, mirrors multiplied within hours, and download counters passed hundreds of thousands in the first week. Intrusion kits rebuilt around it within days. Joint monitoring held a single picture, but cleaned servers re-staged faster than before, and municipal networks and small hospitals — outside the drilled perimeter — logged the first probing waves.
+
+Weeks later Washington voted. The winner campaigned on holding advanced AI as a strategic asset: tighter federal review, tighter export control, foreign access rationed by tier. No new licences were refused before year-end, but allied purchase orders already in queues moved to attestation holds. In Brussels the result was read as a rationing winter ahead.
+
+### Clinics hold, perimeters stretch
+The hospital system did not break. Validation queues running the transferred failure-prediction checks kept EU-hosted radiology and discharge models certified, and auditors used the logs to close the benefits-fraud court finding without new law. Tight inference and triaged queues stayed unpopular with clinicians, and quiet ward-level use of downloaded models continued. One regional paper reported a bad triage recommendation; the hospital denied it, the regulator asked for logs, the story faded without confirmation.
+
+The Commission's answer was to stretch what had worked. Reporting templates and isolation drills from the cyber shield were extended to municipalities and small hospitals, with exercise money and priority access to vetted inference offered for joining where cohesion-fund conditions could require it. Uptake was uneven: large cities signed, small communes cited staff and money. The two blockaded hyperscale sites stayed blockaded; no permits were forced, grid priority stayed conditional on hardening, and the gigafactory pipeline slipped further while officials in Washington were briefed only on keeping ordered accelerators flowing.
+
+By December essential services were still running on controlled inference, but on thinner margins — open capability everywhere, American supply conditional, and the Union's own build still months from power.

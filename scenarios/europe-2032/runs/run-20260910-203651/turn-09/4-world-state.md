@@ -1,0 +1,11 @@
+### The door that would not stay shut
+Autumn brought a sharper version of a familiar pain. Intrusions built with machine-written burrowing tools slipped back into town halls, clinics and contractors through the same managed-service remote channel, weeks after it had been declared clean. Power grids and payment systems held behind their partitions. Registries and surgeries did not, returning to paper forms and queues. Engineers in Brussels admitted privately they were patching faster but understanding slower.
+
+The gap widened elsewhere. A discontinuous release in code and machine operations, demonstrated first in American and Chinese labs, changed what a skilled attacker could automate within weeks. Defenders described detection rules ageing in days. At the same time university groups on three continents reported machines producing verifiable results in mathematics and materials science — work specialists called genuinely new, done in Stuttgart and Delft as well as abroad.
+
+### A bargain in Tokyo
+With Washington extending maintenance bans and rationing allied buyers, the Commission stopped talking about new domestic plants it could not power or fund. Trade officials flew instead to Tokyo and Seoul with a narrower offer: align export licences, bargain jointly for computing access, and pool evaluation work, bringing Europe's hospital early-warning picture and hardened system images as its stake.
+
+The talks produced a framework, signed in principle, that no one called an alliance. It promised no machines, only that servicing flows and second-source model access would be defended together. In Brussels it was sold as leverage without retaliation.
+
+Ordinary life gave the Commission its one claimable win. Tailored treatments procured centrally cut waiting times in several regions, and administrative assistants shortened permit decisions. Ministers toured clinics to attach European procurement and human-review fixes to the improvement, while insisting fraud-scoring and warehouse robot disputes were separate fights. The relief was real. So was the anger outside blockaded construction sites and strike-hit ports, where the lights stayed on but little else moved.

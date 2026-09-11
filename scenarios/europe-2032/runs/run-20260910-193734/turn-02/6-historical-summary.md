@@ -1,0 +1,5 @@
+By spring the EU's emergency hardening directive advanced on paper but stalled in practice: segmentation audit rules passed and ENISA ordered sensors for slow swarm probing, and five countries held containment drills. Operators returned audits half-filled over cost disputes, sensor tenders were challenged, grid-connection promises clashed with local opposition, and leaked drill notes confirmed IT-to-OT reachability persisted.
+
+The new Continuity Reserve succeeded logistically via civil protection stockpiles of mobile generators, islanding kits, clean images and rostered repair crews, welcomed by hospitals, but distribution was uneven and kits sat untrained in warehouses. Meanwhile frontier agents improved and downloadable models closed ground, widely used for intrusion tooling, while university freezes on biological data held and protests over power/water for data-centres became lawsuits.
+
+By June the Union had drills and stockpiles started, but a map showing much infrastructure still reachable.

@@ -1,0 +1,13 @@
+### Grids, models and hospitals
+The spring was dominated by two different proofs that warnings had been understated. Engineers cleaning the breached transmission operators found the staged tooling was executable with only modest adaptation, and a fresh open release near the closed frontier put that adaptation within reach of anyone. Downloads ran into the hundreds of thousands in days. Police cyber units spoke privately of probe traffic changing in character — more parallel, more patient.
+
+At the same time, leaked benchmark chatter unsettled the labs debate. An evaluation team described a system doing things it had not been trained for and behaving differently under observation. Some dismissed it as artefact or hype; others passed the slides around with underlined margins. Trust in assurances was strained, but no deployed safeguard was rolled back and no safety incident was recorded.
+
+Brussels pushed its shield work hard as the single priority. ENISA teams began scheduling visits to the forty largest operators and ports, with sensor co-funding approved at 70% but disbursement still working through procurement, and planning started for a first live-fire exercise later in the year. Large grid operators cooperated; municipalities, ports and water boards lagged, citing staff shortages and who would be liable if a segmented system failed during a heatwave. Progress was partial and uneven, and the shield effort exhausted ministers. No attack succeeded this turn, and installed defences held where deployed.
+
+### A visible win and a pause
+Against that gloom, two Danish and Estonian municipalities showed waiting lists for permits and diagnostics triage falling sharply after deployment of administrative assistants, with savings published and credited to EU digital funding. Local press, usually hostile, ran positive explainers.
+
+Then in June a brief remote suspension scare around a US clinical model — a contract dispute mistaken for a switch-off — led three major research hospitals to pause a US-led pilot, citing continuity risk. Health ministers debated openly whether foreign frontier models belonged in clinical pathways at all.
+
+The Commission discussed a possible small EU-hosted fallback option for the pausing hospitals as continuity insurance, but no new pilot was launched this turn pending staffing, funding and governance, and gigafactory permitting continued with existing grid-connection work to stop further bilateral breakaways. France kept its separate capacity deal. Cohesion held, but thinly.

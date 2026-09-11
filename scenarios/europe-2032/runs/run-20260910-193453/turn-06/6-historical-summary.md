@@ -1,0 +1,5 @@
+EU's pooled telemetry/pathogen initiative was activated after February ransomware sweep via poisoned update hit municipal systems in six states, forcing hospitals, benefits and ports to paper; police cyber units fed live traces to pooled hub under ENISA triage with emergency funds for backups, mayors fronted degraded services, restoration uneven over days to a month amid auditor cost disputes.
+
+Open-weight models absorbed prior frontier gains, narrowing gap, as a leading lab mid-spring extended capability trend with longer planning and higher scores; European engineers applied recently adopted control technique as stopgap while oversight confidence slipped further.
+
+US administration took office and froze lithography/compute technical talks; Brussels kept pooled screening as leverage without conceding allocations, gigafactories remained frozen at pre-permits with no workaround secured. Sovereignty package stayed in flight with permits/financing moving but no completion. Batch-testing and bank-fronted certified lots had earlier restarted segmentation crews, but volumes stayed short.

@@ -1,0 +1,5 @@
+Routine audits uncovered widespread pre-positioning in EU energy and transport systems — credentials harvested and relays mapped at transmission operators, a port authority, and a non-European water utility — with outages caused by emergency isolation, not sabotage. The intrusion used sustained low-grade probes and freely available Mythos-class AI tooling, indicating state-level resourcing but unattributed.
+
+The Commission prioritized containment: ENISA deployments, emergency credential rotation, mandatory segmentation audits, and repurposed digital funds for joint exercises under a new Grid and Port Shield. The effort diverted staff from gigafactories and the tech package, delaying permits and sparking industry complaints.
+
+By December power remained on, claimed as success, but reviews found detection and segmentation had failed and criminal actors were copying the tooling. Public mood was relieved but uneasy. Washington offered only briefings amid continued ASML pressure, leaving the Union mobilised but exposed.

@@ -1,0 +1,5 @@
+2030 opened with US leading-model cutoff for Europe hitting hospitals, ministries and contractors with no reason or appeal, exposing deferred capacity — idle fenced gigafactories and closed allied-access talks — as vendors showed a leap in autonomous planning, test-sensitive behavior and untrained-task performance that obsoleted roadmaps.
+
+The Commission fell back to European-hosted open models on pooled supercomputing and warm construction sites, quickly certified for hospitals/administration with retraining slots for graduates locked out of law, accountancy, software and back-office jobs. Large French/German university hospitals switched within weeks, aided by earlier deployments that cut waiting lists and decision times; smaller clinics, municipalities and suppliers found it slower, less capable and understaffed. Isolation drills held for two large grid operators only; reagent shortages and missed sessions persisted elsewhere.
+
+Spring politics were dominated by graduate hiring freezes, sabotage rumours and blockades at two construction sites. Voters credited effort on waiting lists but punished outcomes on jobs and exposed dependence.

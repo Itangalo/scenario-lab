@@ -1,0 +1,10 @@
+### Blind models, thin buffers
+Autumn brought two shocks that did not look like shocks at first. The leading labs shifted to models whose internal steps were no longer written in words. Press releases sold speed and scores; researchers read the footnotes and found the readable trace gone. Procurement officers who had just learned to ask for test logs discovered the logs no longer showed how a decision was reached. The small evaluation unit in Brussels shelved its checklist and started over with blind trials and early probes of internal activations.
+
+At the same time shipping lanes east of Taiwan grew nervous. Exercises stretched longer than usual, insurers raised premiums, a diplomat was sent home. No containers stopped, but freight planners started quoting alternatives and chip shipments for the gigafactory sites slipped further behind paperwork in Washington.
+
+Brussels moved where it could afford to move. A joint supply cell was stood up to list which accelerator deliveries and grid-kit orders were exposed, rehearse a disruption with crisis managers, and pre-book rerouting and buffer stocks for the two states hit the previous year. The evaluation taskforce was made the priority, redirected to deception and tool-use tests whose results went straight to grid defenders.
+
+The grid shield programme finished its first build in the autumn. Segmentation and vaults were now live in the worst-hit networks, and a cross-border exercise finally ran without collapsing. Operators still complained about unpaid costs, and coverage outside the core remained patchy, but ministers could point to something delivered.
+
+The hyperscaler quarrel did not heal. The capital with its own American deal stayed inside the common line after connection subsidies were confirmed, while the Commission delegation in Washington won faster paperwork but no exemption. Hospitals kept buying foreign diagnostic tools they could not audit, mayors kept fighting over power for data centres, and newspapers now explained that no one could fully explain the newest systems.

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: M9 EU Essential Services Continuity and Rapid Recovery Pact −2, M10 EU Loss-of-Control Containment and Joint Cyber Defence Accession −2, priority −1 = −4 + priority cost void (capital below 20, priority has no effect) = −4
+PROPOSAL BONUS: EU Loss-of-Control Containment and Joint Cyber Defence Accession (cat 6, small) +3 — loss_of_control_incident landed this turn and this answers it directly plus joint_threat_response invitation
+LEGITIMACY LENDS: capital 18, sentiment 16 -> none — capital higher
+SOVEREIGNTY: 21 last turn, no capacity event, no cat4 in flight +0, capability rose 0.5 −0 = 21

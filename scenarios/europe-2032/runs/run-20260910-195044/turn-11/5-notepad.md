@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: M7 EU Middle-Power Resilience and Access Pact −2, priority no effect/cost (capital below 20) = −2
+PROPOSAL BONUS: EU Middle-Power Resilience and Access Pact (cat 8, small) +4 — eu_frontier_access_denied landed this turn cutting hospitals/ministries, plus siting freeze blocking domestic build; this answers cutoff directly via coalition fallback access and breakthrough rollout
+LEGITIMACY LENDS: capital 1.0, sentiment 5.0 -> sentiment above, +1 capped by sentiment after other terms applied
+SOVEREIGNTY: 5.0 last turn, no category 4 finish, no category 4 in flight, eu_frontier_access_denied t11 −2 (largest capacity event; middle_power_coalition also secures but one term only), capability rose 1.0 no −1 = 3.0

@@ -1,0 +1,13 @@
+### Paper fallbacks
+The sweep that began in spring did not end. Through autumn a second wave of largely automated ransomware, assembled with openly available tooling, moved across municipal systems, hospital IT and logistics subcontractors in half a dozen member states. Clinics cancelled non-urgent appointments, town halls posted handwritten notices, and two port terminals cleared trucks with paper tallies for almost a week. Power stayed on, but television carried the queues nightly. Investigators said attribution would take months.
+
+Brussels kept its grid-shield programme on emergency tempo. European coordinators replaced tabletop work with live drills alongside transmission operators, ports and water utilities, and the 24-hour reporting obligation began to bite, with formal warning letters to late reporters. Repair money was pushed forward to the worst-hit operators, cross-border backup teams restored images, and development-bank bridge loans were offered to capitals balking at co-financing.
+
+It held the line at degradation. Services bent rather than collapsed, but engineers were scarce, smaller hospitals waited days for help, and finance ministers quarrelled over who paid for overtime.
+
+### A testable fix, and a bridge
+Alongside the firefighting, the small joint validation cell in the AI Office pushed the new interpretability and control result into practice. With seconded lab researchers, staff certified failure modes in two hospital networks and a grid-control supplier, cutting silent errors enough for nurses and control-room engineers to notice. Guidance for wider rollout was drafted, though not yet mandatory.
+
+Politically the cost was visible. Anger over the lagging defences and early job losses in logistics, clerical work and health support hardened opposition to new data-centre sites and to local contributions for the planned computing factories. The computing and supply-chain build stayed in clearance, guarantees and zoning, with no new capacity switched on.
+
+To rebuild consent, employment ministers agreed a Transition Bridge: EU-co-funded wage insurance and fast retraining entitlements linked to automating employers, channelled through existing social funds and job centres, aimed first at the roles hit earliest. Unions called it late but real; mayors said it helped unlock cooperation for repairs and siting talks. Relief that a shared fix existed competed with resentment that it had come after the disruption.

@@ -1,0 +1,11 @@
+### Results declared, access repriced
+Autumn brought two shocks at once. In Washington, voters chose a president who campaigned on holding advanced AI as a strategic asset, with tighter export reviews and tiered access for foreign buyers. Nothing changes yet — the new administration takes office next year — but ministries in Brussels read the result as the end of working-level fixes.
+
+Almost simultaneously, a new open-weight model matching the frontier leaked into permanent circulation. Hundreds of thousands of downloads in days put capable exploit-writing and plausible medical advice on private hardware everywhere. Hospitals using provisional European replacements reported more edge-case errors, and two national papers ran wrong-dosage stories sourced to a single clinician case series.
+
+### A capital breaks ranks
+Mid-autumn a large member state announced its own supply deal with a US hyperscaler, with preferential inference pricing and a data-centre pledge, on terms that undercut the Commission's common line. The capital called it pragmatism; Paris, Berlin and Brussels called it a side deal. Joint procurement talks for detection stacks stalled for weeks while finance ministers re-priced co-funding.
+
+The Commission salvaged part of the turn. The municipal hardening fund went live: joint orders for hospital and town detection and backup, extended exercises to health and water systems, repair crews retained. The continuity stack for public services was declared complete, keeping clinics and permit offices running on European-hosted models with capped liability. The small evaluation cell closed its first mandate with rapid cyber checks but still no full assessment of the new exploit tools.
+
+To answer fragmentation, the European Council mandated a single negotiator for frontier access, with clearance for separate deals and pooled export leverage held as backstop. The defecting capital was offered pooled pricing and siting preference to return, not punished. By December services had not stopped, but dependence was now priced as a lever in someone else's hand.

@@ -1,0 +1,5 @@
+Winter brought automated model-written intrusions across municipalities, hospitals and logistics — locked systems and leaked data with slow attribution. Previously segmented transmission controls held and restored quickly; two failed water utilities faced emergency orders and frozen funds. Restoration beat last spring but public anger grew.
+
+AI financing then collapsed: valuations reset, private build-out pledges cancelled, and counted-on compute evaporated. Brussels held the line: cross-border hub took samples while national teams led, joint deployment only on slippage. US cloud accreditation frozen at data-stays-here plus reporting to keep police/border fallbacks online; keys/continuity fight deferred.
+
+New compute groundworks stayed queued behind grid slots; the private-capital technology programme was retired to ease running five programmes. Cost-sharing fights, complaints over slower costly systems, conflicting-legal-order risks, and gate blockades at construction sites strained cohesion. Containment corps acceleration stalled amid thin funds and legitimacy, with continued unease over foreign-machine dependence.

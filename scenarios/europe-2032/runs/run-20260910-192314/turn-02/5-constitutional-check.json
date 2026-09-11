@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `eu_political_capital` decreased by 16 points (from 33.0 to 17.0). While other metrics may fall, such a large drop in political capital must be justified by explicit spending, events, or narrative terms that erode it. The Game Master's Notepad shows only a legitimacy lends term of +2 and a portfolio charge of −12, which does not justify a net change of −16. The notepad accounts for −12 from portfolio charges and +2 from legitimacy, implying an unaccounted −2, but more critically, the model rules do not allow for unexplained erosion of this magnitude without explicit terms. A drop of this size suggests either a missing event term or an overstep in deduction not permitted under the constitutional separation of `eu_political_capital` and `eu_ai_sovereignty` (Constraint 7), especially since no corresponding collapse in sovereignty explains it.\n- Narrative Constraint 8 violated: The narrative implies a causal connection between disparate events (cyberattack, benefit scandal) and a sharp drop in public sentiment and political capital without establishing a clear, non-telegraphic mechanism. While tension and multiple crises are allowed, the narrative must not imply a deterministic chain that effectively forecasts political collapse without grounding it in specific, named events or measures. The unexplained collapse in political capital relative to accounted terms suggests telegraphing of systemic failure.\n- Modelling Choice 5 violated: The portfolio charge lists four active measures (InvestAI Gigafactories, Tech sovereignty package, EU Critical Infrastructure Shield, EU Incident Reporting and High-Risk Enforcement Surge) and a priority, implying more than one new measure introduced or active in the turn. However, the constraint allows at most one new measure per turn. The notepad does not clarify whether these are carryovers or new, but the charge being applied in full this turn suggests activation, which would violate the one-new-measure limit unless three of the four were initiated in prior turns. Without explicit confirmation in the narrative or notepad that only one was newly introduced, this constitutes a violation."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

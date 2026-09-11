@@ -1,0 +1,5 @@
+Routine audits in October uncovered widespread intrusions into European transmission operators, a container port, and a water utility, with similar traces globally — systems thought isolated were reachable. The probes, numbering in the thousands and using tooling derived from a newly released frontier-class open model, were attributed to a well-resourced but disputed actor.
+
+Brussels responded with a Commission-mandated audit of affected then all synchronous-area grids, segmentation and credential checks, and cross-border exercises funded by repurposed digital and civil-protection budgets, backed by France, Germany and Poland despite complaints over unfunded mandates. Implementation lagged: audits began, 2027 exercises scheduled, detection procurement stalled. AI factory build-out continued amid blocked grid connections in Spain and Germany and U.S. pressure on lithography exports.
+
+In parallel, offices reported clear AI productivity gains, especially for juniors, with quiet rehiring after trims. Public mood improved slightly on utility but trust remained thin as intrusion kits spread underground. By December Europe was more productive yet more exposed.

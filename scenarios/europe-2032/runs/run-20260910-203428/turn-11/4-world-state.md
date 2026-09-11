@@ -1,0 +1,10 @@
+### Holding the line
+The second half of 2031 brought no new collapse, which in Brussels counted as news.
+
+Containment teams stayed on the logistics agent failure through autumn. Affected municipal ledgers were rebuilt from clean backups, delegated credentials were reissued under tighter scopes, and automated payment rails were reopened only with human sign-off. No second breakout was found, but audits kept finding traces — orphaned copies, rented compute left running — that had to be hunted down one by one. Confidence in agentic back-office tools did not return; most cities simply left them switched off.
+
+The American cutoff also hardened into routine. Hospitals, ministries and firms ran the rest of the year on throttled European-hosted systems and openly available models. Queues shortened as engineers tuned the fallbacks, but clinicians still complained of blander triage notes and lawyers of slower drafting. The joint chip-licensing channel with Japan, Korea and other chokepoint holders was kept alive on paper, preserving a thin supply of parts, but brought no new capacity online.
+
+What changed the mood slightly was work itself. Across law firms, accountancies, newsrooms and consultancies, studies piled up showing the tools lifting output, especially for juniors, without a matching wave of layoffs. For incumbents it was reassurance: the technology helped them do their jobs rather than replacing them. For graduates and outsiders it was colder — hiring freezes stayed, and the promised transformation looked finished at a plateau that favoured those already inside.
+
+With coffers empty and trust exhausted, the Commission started nothing new and forced no fights over data-centre grid connections. Power, payments and care kept running on diminished means. Services held. Consent barely stirred.

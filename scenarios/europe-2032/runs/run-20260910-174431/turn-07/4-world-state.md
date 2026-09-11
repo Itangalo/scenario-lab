@@ -1,0 +1,13 @@
+### Concrete poured, hiring frozen
+The first InvestAI shells were declared complete in late autumn — grid-connected, permitted, empty. No accelerators at scale had been ordered; finance ministries still refused a second spending front under American tiering. The ribbon-cuttings drew local press and quiet ridicule in Brussels: sovereignty you could photograph but not boot.
+
+The continuity programme fared better. The certified EU-hosted replacement stack, built around openly available models, was now joint-procurement eligible for health, grid and ports. Sentinel clinics held triage times steady, and ministers repeated the ward tours. Elsewhere staff ran older self-hosted versions with visibly worse answers, and deployment teams were stretched thin. Open models continued to track the frontier closely, narrowing the gap as diffusion caught up.
+
+### A paper and a pink slip
+Two shocks defined the half-year. A genome-model study describing a viable route to a human-infecting design leaked from peer review into trade press. Virologists fought over methods and over publication itself, while hospital managers asked HERA what screening they actually had. Wastewater nodes and lab testing were patchy, playbooks out of date.
+
+At the same time, graduate hiring collapsed in law, accountancy, software support and customer operations. Firms did not announce layoffs; they simply stopped replacing entry roles. Labour ministers called it attribution politics, unions called it displacement. Either way, waiting rooms filled with young administrators whose jobs had been automated while care rotas thinned.
+
+Brussels answered with a bio-detection and care-continuity surge run through health emergency and disease-control bodies with the cyber agency and AI Office unit: certified detection upgrades for sentinel hospitals, labs and wastewater points, joint-procured screening, response playbooks, and deployment teams for laggard municipalities funded by repurposed health and digital money. No new budget fight, by design.
+
+Uptake began but slowly. Procurement cleared, a first wave of port and hospital nodes installed new screening, retraining slots for displaced admin staff were oversubscribed and under-delivered. Criminal use of the loose near-frontier model — phishing lures and ransomware assembly hitting small clinics first — added a sour undertone: the same openness keeping services alive was arming their attackers. With gigafactories still empty and access constraints biting, Europe's sovereign position slipped back despite the activity.

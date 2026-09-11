@@ -1,0 +1,5 @@
+Early 2030: verifiable control breakthrough on shipped systems spread via developers, gave US-China screening talks substance and made autumn pact verification less thin; EU observer-cell staff seconded wrote admiring memos, cell mandate formally completed on paper but recruitment only starting, no tier terms or protection from Washington.
+
+At home entry-level hiring freeze across law, accountancy, software, customer-ops; empty intake cohorts undisputed. Commission, with no budget for compute, redeployed existing social funds into short retraining vouchers, hiring credits and 6-month wage insurance in five named sectors via national job centres plus loan guarantees; approved grudgingly as priority over diplomacy. Delivery partial: vouchers uneven, PES unready, deadweight credits, unions said insurance too short.
+
+No new compute; European firms renewed US compute on harder terms, sovereignty further eroded. Backups/drills thinned except previously hit cities; Spain-France municipal generator/paper coordination continued informally. Productivity gains held, graduate prospects fell, mood soured sharply.

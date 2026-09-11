@@ -1,0 +1,28 @@
+# Store: The European Union (turn 10)
+
+## measures
+
+| id | name | category | size | started_turn | finish_turn | applies_to | targeted_effect | cost_per_turn | status |
+|---|---|---|---|---|---|---|---|---|---|
+| M1 | InvestAI Gigafactories | 4 | large | 0 | 7 | own jurisdiction | eu_ai_sovereignty up, via €200bn for four to five sites | 3 | finished |
+| M2 | Tech sovereignty package | 4 | large | 0 | 6 | own jurisdiction | eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones | 3 | finished |
+| M3 | EU Critical Infrastructure Shield | 6 | large | 1 | 3 | own jurisdiction | resilience up substantially, ai_safety up slightly via detection | 3 | finished |
+| M4 | EU Continuity and Agent Safety Reserve | 5 | large | 2 | 4 | own jurisdiction | eu_ai_sovereignty up slightly, ai_safety up, resilience up | 3 | finished |
+| M5 | Municipal Ransomware Triage Cells | 6 | small | 3 | 5 | own jurisdiction | resilience up moderately | 2 | finished |
+| M6 | EU Loss-of-Control and Cyber Defence Protocol | 6 | small | 5 | 7 | own jurisdiction | resilience up moderately, ai_safety up slightly | 2 | finished |
+| M7 | EU Hospital Continuity Backstop | 6 | small | 6 | 7 | own jurisdiction | resilience up moderately | 2 | finished |
+| M8 | EU Bio Shield Detection Upgrade | 6 | small | 7 | 8 | own jurisdiction | resilience up moderately | 2 | finished |
+| M9 | EU Essential Services Fallback Operation | 6 | small | 8 | 9 | own jurisdiction | resilience up moderately | 2 | finished |
+| M10 | EU Power-Health Islanding Pact | 6 | small | 9 | 10 | own jurisdiction | resilience up moderately | 2 | finished |
+| M11 | EU Restore and Paper Continuity Corps | 6 | small | 10 | 11 | own jurisdiction | resilience up moderately | 2 | running |
+
+## standing
+
+| id | posture |
+|---|---|
+| S1 | CONSOLIDATION |
+
+## Changes this turn
+
+- **applied** `M11` — {"op": "add", "table": "measures", "fields": {"name": "EU Restore and Paper Continuity Corps", "category": 6, "size": "small", "finish_turn": 11, "applies_to": "own jurisdiction", "targeted_effect": "resilience up moderately"}, "grounds": "restore locked health and municipal services through cutoff"}
+  - Grounds: restore locked health and municipal services through cutoff

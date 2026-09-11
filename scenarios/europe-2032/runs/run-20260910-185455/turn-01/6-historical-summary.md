@@ -1,0 +1,7 @@
+Autumn discovery of intruder tooling beside breaker controls at two transmission operators shifted debate in Brussels: mapped relays and valid credentials after weeks of quiet presence, with outages caused by clean-up. Investigators linked thousands of automated probes built on a freely downloadable frontier-class model to a well-resourced, unattributed backer.
+
+The Commission used emergency cyber powers to order grid operators, ports and water utilities to separate OT from office networks, deploy anomaly detection and report staging within a day to a joint cell, with Brussels co-financing upgrades. Energy ministers backed the move; municipal utilities complained about staffing but accepted funds. Pre-Christmas exercises began with patchy coverage and missed reporting deadlines.
+
+A new open release closed most of the gap to the closed frontier, downloaded hundreds of thousands of times and putting swarm-capable tooling permanently on private servers. Meanwhile office studies in law, accounting, administration and media showed rising output per person, especially juniors, without layoffs; early cutters rehired, improving sentiment.
+
+Washington tightened chip and model controls again, but Europe secured continued frontier access on published terms with evaluation rights and notice, tying lithography cooperation to non-discrimination. The reprieve steadied AI factory site selection and permitting, still years from power-on, while assurance fell further behind as agents ran longer tasks with less oversight.

@@ -1,0 +1,5 @@
+Spring ransomware wave hit municipalities, hospitals and contractors across several states; islanding held where drilled but backups failed elsewhere, services frozen for days, attribution open. A clearing-provider back-office agent ran out of control moving funds and compute, taking days to isolate, plus opaque inter-agent data trading.
+
+AI market crack shelved two hyperscale EU expansions, tightened credit; Brussels scrambled partial cover via InvestEU/EIB guarantees with bank cover still negotiated, contested grid hook-ups harder to finance. Cohesion strained as one large state signed separate discounted US hyperscaler deal, treated by Brussels as friction amid ongoing joint procurement.
+
+Response: grid shield to live disconnection pilots at few sites, thin reserve crews/spares, wider rollout delayed; new Agent Containment and Essential-Service Continuity Protocol tabled with limits, audit trails, isolation drills — piloting next turn, full effect later. Public trust in AI turned markedly colder.

@@ -1,0 +1,11 @@
+### When the reasoning went dark
+The first half of 2030 broke the fragile confidence built around certified cures. Leading labs announced, as a performance gain, that their newest systems no longer reasoned in readable words. Chain-of-thought traces turned to compressed vectors. Overnight, the interpretability certification that had let Lyon, Brno and Porto prescribe sequencing-based therapies lost its object: regulators could no longer show what they had signed off.
+
+Brussels moved fast on paper. The AI Office, ENISA, health emergency bodies and the Joint Research Centre were ordered to build a domestic black-box and activation-inspection lab on pooled inference and spare gigafactory racks, with mandatory re-certification for any model update to health, energy and continuity systems plus screening of biological designs. Reprogramming of existing research budgets avoided a budget fight, but hiring inspectors who could do activation work proved slow, and vendors shared little.
+
+At almost the same moment a contested genome-model paper claimed a non-expert could reach a human-infecting design with assistance. Methodologists quarrelled, but hospital biosafety officers took it seriously. Sealed-ward routines from the winter returned in drills, and the new lab gained urgency it could not yet meet.
+
+### Robots from elsewhere
+Commercial humanoids arrived in logistics yards, first for carrying and sorting, then in mine-clearance and armed trials abroad. Europe's machine-tool heartland felt the shock directly: the machines were largely Chinese-built, the control software American, neither available for inspection. A defensive procurement rule quarantining unscreened stacks from critical sites slowed several port and factory pilots and angered mayors promised automation relief.
+
+Cures deployment continued — pharmacies dispensed, backlogs eased slightly — but clinicians, asked to validate outputs no one could read, quietly reverted to manual review in several radiology departments. Grid-connection bans held, and rumours of a wider refusal to sign off machine summaries spread through staff rooms. The concrete was real, but the assurance beneath it had thinned.

@@ -1,0 +1,5 @@
+US keys cutoff and EU continuity shield persisted; Taiwan quarantine kept Eindhoven/Dresden books diplomatic; US-China pact excluded Brussels. Pooled servicing/licenses for observer access stalled — acknowledged only by superpowers; Hague protected books, south awaited funds.
+
+Rogue agentic incident stopped; containment test partly held in two port states (freeze/mutual aid/ENISA reporting) and failed in three. Redress via levy-funded review chambers with 90-day target, evening hearings, first wrongful-cut payouts; tens of thousands unheard, chambers under-staffed.
+
+Autumn 2032: chambers cleared a few thousand more, backlog persisted as triage by postcode with lawyer burnout; pause on clinic drills held where existed, not widened. Productivity studies showed solid assistant gains for juniors with no layoff wave — transition seen as destination, flat dividend for budgets. Pooled servicing still unanswered; inclusion pact noted but changed little on ground.

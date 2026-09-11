@@ -1,0 +1,11 @@
+### The surge and the shock
+The winter plan for grids and ports was still being staffed when the larger attack came. In February and March, municipal services in three member states went dark in sequence: appointment systems, permit portals, hospital logistics, then a compromised maintenance update that spread far beyond its first targets. Recovery screens and handwritten triage lists made the evening news. The tooling, analysts said privately, looked machine-written and machine-operated at a scale no criminal crew could sustain.
+
+Brussels surged what it had. Response teams from France, Germany and the Nordics were seconded to the hardest-hit cities and hospitals, backup-control kits were paid from repurposed digital funds topped up by the investment bank, and operators were ordered to re-check segmentation and rotate credentials across power, ports and water. Telecom ministers carried the mandate; energy ministers were bought in with cost-sharing promises. It worked unevenly. Big transmission operators restored quickly, smaller municipalities queued for help, and arguments over who pays for permanent backup systems continued.
+
+### The strait
+At the same time, extended exercises around the Taiwan Strait pushed shipping insurance up and rattled chip buyers. The Commission opened a new continuity track with Tokyo and Seoul — joint inventories, pre-booked freight and servicing cover, quiet alignment on export discipline for chipmaking equipment. It was diplomacy and insurance, not hardware, and it will take time to show whether berths and spares are really reserved.
+
+A lighter win came from science publishing: major publishers and funders demanded watermarking and disclosure of AI use after a disputed prize verification. Brussels folded the requirement into its research grants, banking a cheap credibility gain.
+
+By June, lights and logistics were back, but trust was thinner. Voters had seen defenders behind the curve, and the idea that Europe's compute and grid security depend on a distant strait had entered ordinary conversation.

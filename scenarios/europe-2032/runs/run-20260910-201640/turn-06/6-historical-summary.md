@@ -1,0 +1,7 @@
+By spring 2029 the new inward US administration took office with data-centre moratoriums and curbs on AI in hiring/schools; Brussels read it as frontier scarcity staying home. Hospitals in three member states keeping US models via resellers had keys revoked overnight without appeal, collapsing triage tools, with Commission lawyers blocking workarounds.
+
+Simultaneously a sweeping machine-written automated intrusion hit public administrations and grid-adjacent contractors, encrypting backups and poisoning a management dependency; restoration took days to over a week, attribution still open end-June.
+
+With no new-build money the Commission held to repair: Tallinn/The Hague cell pushed clean images and helpdesks, moving cut-off wards to the federated EuroHPC service with hardened open models — stable for simple triage/appointments, failing complex oncology/rare-disease care. ENISA segmentation/backup drills from the cyber shield limited cascade in finance/telecom but left municipalities/hospitals exposed. Brussels joined a joint attribution/telemetry-sharing command, visibly improving detection by May.
+
+The sovereignty package formally closed but only the two grid-ready gigafactory sites poured concrete. Relocated American teams on reserved supercomputer time produced a tougher public-use build of the near-frontier release now in hundreds of clinics. Amid ongoing benefits/policing automation scandal, press called it a crutch and trust slipped further.

@@ -1,0 +1,5 @@
+Washington placed leading AI labs under direct federal control with security officers, customer approvals and publication controls, creating a legal rupture for EU pressure tools; a simultaneous capability jump made agents longer-running and less supervised.
+
+US top-tier access remained refused, forcing reliance on slower European, Japanese and Korean fallbacks; a vast automated extortion wave via poisoned component and machine-written malware hit hospitals, municipalities and logistics, forcing paper reversion, counter closures and rationing of emergency compute to detection/patching while grid held but confidence fell.
+
+Commission ran continuity triage to infected critical operators, kept researcher quotas frozen, pivoted to government-to-government talks for health/critical carve-out and joint export-reciprocity work with Tokyo, Seoul and The Hague. Gigafactory construction phase formally closed with two connected sites advancing and two blockaded plots plus transformer yard stuck in mediation; one council conceded, one held out. Assurance programme for opaque models also closed, obsolete against classified foreign systems. Dependence became political.

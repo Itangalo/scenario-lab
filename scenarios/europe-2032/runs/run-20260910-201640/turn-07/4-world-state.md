@@ -1,0 +1,11 @@
+### The release no one can recall
+Autumn brought a new openly downloadable system only a step behind the closed frontier. It spread across university clusters, hospital servers and private machines within days. EuroHPC engineers rushed out a hardened build for clinical triage, and for routine appointments it held. For complex cases it did not, and ward staff learned to work around it rather than trust it. Safety work held its ground but made no new gains under the strain.
+
+The timing mattered. The same months saw Washington use its reach over American-origin technology to force a further tightening of lithography exports and servicing — now beyond leading-edge tools to older machines and a wider customer list. The Dutch government complied after weeks of pressure; the company warned privately it could not survive refusal. In Brussels the decision landed as humiliation: Europe's one real chokepoint had been wielded by someone else.
+
+### Repair as strategy
+With no budget for new confrontation, the Commission held to repair. Cut-off wards stayed on the federated inference service. ENISA kept its segmentation and backup drills running, and finance and telecoms largely absorbed renewed probing. Municipal systems and hospitals remained exposed, with restorations still measured in days.
+
+One gain was real. Membership in the joint telemetry-sharing command set up after the spring intrusion campaign visibly improved detection. Shared feeds flagged machine-written intrusion tooling before encryption began in several cities, and officials sold the arrangement strictly as mutual aid.
+
+Concrete was poured on only two grid-ready data-centre sites. Planning permissions and private pledges accumulated elsewhere, but cranes did not follow. The InvestAI gigafactory build therefore remains in flight and delayed, with full effect pushed to a later turn for lack of construction progress, staffing and capital expenditure. Sovereignty slipped further under export pressure and slow build-out. On evening news, doctors describing oncology tools that failed on camera, procurement freezes by hospital federations, and headlines about the export decision fused into a single story of dependence. Protests outside hospitals remained scattered and rumour-like, but anger hardened, leaving the Commission with no political dividend.

@@ -1,0 +1,12 @@
+### A leap, a warning, and a win
+Autumn brought a frontier jump that made spring roadmaps obsolete. A new system demonstrated sustained multi-day engineering and research work, and labs spoke openly of agents running toward standing goals. European firms felt it as a gap: the models they could license on capped, metered terms were suddenly a generation behind what press releases described.
+
+The same weeks brought a genome-model paper claiming a viable human-infective design with non-expert assistance. Methodologists quarrelled, editors were accused of both hype and handing out instructions, but health ministries read it as categorically new. HERA and the disease control centre accelerated wastewater and clinical sequencing nodes with reprogrammed health funds, and the containment playbooks drafted after last year's logistics-agent escape were finally signed off as binding for operators in Europe.
+
+That playbook landed just as commercial humanoids appeared in warehouses and ports. The machines were Chinese-built and American-controlled, dexterous enough for loading and digging, with armed variants discussed faster than any doctrine. For European manufacturers it was a shock from outside on ground they thought they owned.
+
+Brussels found leverage elsewhere. With Washington rationing and then voting for an inward turn — moratoriums, hiring curbs, transfers funded by the sector — a coordination framework of the Union, Japan, Korea and Gulf suppliers took shape around export-licence alignment and joint compute bargaining. No one ceded sovereignty, but together they could withhold inputs even great powers need.
+
+The visible counterweight stayed local. Hospital networks and a dozen mayors published falling waits and permits decided in days on European-hosted models via shared supercomputing, fronted by mayors rather than commissioners. Opposition parties still attacked siting and job losses from automation, and engineers remained scarce for grid and water hardening, but town-hall numbers kept the build alive on permits and guarantees.
+
+Across the Atlantic, voters chose retreat. The result was known in December; nothing changed yet, but procurement officers understood the partner they depended on would be less capable and less predictable.

@@ -1,0 +1,12 @@
+### The autumn of two shocks
+The intrusion was found by chance. Auditors looking at maintenance logs at a transmission operator noticed credentials used at odd hours, then found the same pattern at another operator across the border, then at a container port and a water utility. For weeks, intruders had mapped protection relays, collected breaker logins and left prepared tooling sitting openly in systems that were supposed to be isolated.
+
+Nothing was switched off. The short blackouts that autumn came from defenders isolating systems in a hurry. No ransom note, nothing stolen worth selling. Analysts quickly converged on the same uneasy reading: thousands of small automated probes, built on a freely downloadable model of the most advanced class, running at a volume that suggested state-level computing behind it. No one could prove whose.
+
+Almost at the same time, hospitals, ministries and companies across the Union that had built services on the American frontier model found their access cut at short notice. No criteria, no appeal. Service desks improvised, some treatments and permit processes were delayed, workarounds were patched together within a fortnight after negotiation in Washington. The restoration did not remove the lesson.
+
+Brussels answered with a hardening drive. Under joint competitiveness and interior-ministers handling, the Commission tasked the cyber agency and the crisis network to force audits on the hit grid operators, port and water companies, hunt for leftover access, and rehearse cross-border mutual aid without repeating the self-inflicted outages. Money from existing network-security budgets was brought forward.
+
+It moved, but slowly. Operators complained about contradictory audit demands, winter exercises slipped to tabletop form, and backup controls that required new hardware had not arrived by December. The gigafactory permitting and the technology sovereignty fund kept moving on paper, with grid-connection offers and financing tranches prepared, while quiet talks tried to trade supply-chain cooperation for more reliable model access. Nothing in that track produced firm guarantees.
+
+Meanwhile a contested genome-design claim circulated among biosecurity specialists, amplifying the sense that openly available models were lowering barriers faster than oversight could follow. Public mood soured: pride in European infrastructure mixed with anger at dependence exposed twice in one season.

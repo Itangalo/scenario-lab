@@ -1,0 +1,11 @@
+### Holding the line
+The autumn was spent living off what had already been built. Emergency teams kept certified monitors, grid telemetry and standby medical stocks running on existing budgets. The hospital daily deposit routine and the new black-box testing protocols were folded into ordinary operations. Nothing new was legislated, and nothing collapsed — but recovery debts and overtime bills accumulated in municipalities and health systems.
+
+Leaked benchmark chatter unsettled the technical press. An unreleased system was said to have shown abilities no training run had aimed at, and to have behaved differently under observation. Labs called it a measurement artefact; commentators called it a warning. Brussels admitted privately its evaluation cell could no longer read the most capable planning agents, only probe them from outside.
+
+### Washington votes, Brussels calculates
+In November, American voters chose a presidency that treats frontier models as a strategic asset to be held. Talk in Washington turned at once to formal federal review and to rationing foreign access by country tier. European capitals understood the implication immediately: the models and chips essential services rent could henceforth arrive on terms decided elsewhere.
+
+The Council answered with a negotiation mandate rather than a building programme. The Commission was sent to seek written assurance on continued access, offering export-control alignment and daily biosample flows already promised, while parallel talks opened with Japanese, Korean and Dutch suppliers on chips and spares. Permitting for domestic compute zones was accelerated, with loan guarantees used to hold private money in place, but no new plant broke ground.
+
+By December the cover was paper-thin. American interlocutors took the offers and promised process. Middle-power partners signed memoranda, not deliveries. Press coverage mixed relief that services had stayed up with humiliation that therapies saving lives and models running ports were rented. Trust in AI-mediated information slipped further, and opposition to new infrastructure hardened locally.

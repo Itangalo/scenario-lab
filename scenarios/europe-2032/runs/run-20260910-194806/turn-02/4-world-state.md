@@ -1,0 +1,10 @@
+### Grids, proofs and a registry
+Spring 2027 was a season of patching and paperwork. The shield programme became the Commission's daily grind: engineers forced through credential rotation at the two compromised transmission operators, while segmentation audits spread to ports and water utilities. Operators fought over who paid for downtime, and the promised cross-border exercise was dragged back onto the autumn calendar after slipping. Money remained reprogrammed, not new, and progress was real but uneven.
+
+The louder fight was over knowledge itself. After months of dispute over an AI-assisted proof linked to a major prize, large scientific publishers and universities announced a joint pact requiring disclosure of AI use and watermark verification for submitted papers. Brussels seized on it, launching a small verification registry housed between the Publications Office and ENISA, using Horizon grant conditions as leverage to make journals and public-sector pilots adopt common standards.
+
+Gigafactory permitting zones advanced on paper, with guarantees moving through the investment bank, but no new sovereign compute came online. Clinics and control rooms darkened by the previous American cutoff were promised first call on domestic inference — a promise still waiting on hardware.
+
+Public mood lifted marginally on the publishers' move, seen as someone finally defending shared facts, but remained anxious. Hospital doctors whispered about decision-support tools built on open models behaving strangely, and a few pilots were said to be under quiet review. Nothing was confirmed, only corridor talk and a single-source press note.
+
+By June, Brussels was stretched thin: four builds running at once, fights with operators and regions over outages and data-centre sites, and a registry that pleased researchers but changed little in control rooms.

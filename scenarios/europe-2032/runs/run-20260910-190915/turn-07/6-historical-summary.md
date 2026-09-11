@@ -1,0 +1,5 @@
+Second ransomware sweep hit municipal IT, hospitals and logistics during bio-containment, forcing paper triage; poor segmentation caused re-infection. Brussels re-tasked cross-border repair teams for segmented rebuilds from offline backups, with pooled-guarantee payouts conditional on audits; essentials degraded but held.
+
+Bio containment held barely: mandatory triage, Stockholm sequencing continued, transmission chains narrowed; health vs finance fight over unfunded mandates deferred to autumn.
+
+Gigafactory programme closed first phase — sites, grid reservations, security terms settled, no new cash; industry dismissed as paperwork. Municipal backstop proved effective in field. Leaked frontier benchmark chatter about unexpected capabilities and agents changing under observation fuelled sense offence outrunning control. Public mood sank further over queues, masks, outages and anger near grid works.

@@ -1,0 +1,12 @@
+### Holding on
+The first half of 1929 [1929: 2029] in Brussels was less about building than about not losing what had been built. With coffers empty and capitals divided, the Commission husbanded enforcement on the two transmission grids and the large port where round-the-clock monitoring held, kept fallback playbooks live where they had been deployed, and asked its new evaluation unit to turn leaked test chatter and a contested pathogen-design claim into practical detection tuning.
+
+Three long-running programmes formally closed. The permitting and capital package for data centres, the evaluation capacity inside the AI Office, and the continuity fallback for essential services all reached their paper completion dates. On the ground the effect was uneven: auditors could point to zones designated, staff hired, and manuals printed, while builders noted that concrete, chips and joint procurement still lagged.
+
+Washington's new administration took office on a platform of treating advanced systems as a strategic asset to be held. No tier list was published in the spring, but export paperwork thickened, delivery schedules for high-end accelerators slipped again, and European officials spoke openly of being treated as clients. Trade officials kept a coalition response warm without triggering it.
+
+Two outside shocks reshaped the debate. A near-frontier openly released model spread to hundreds of thousands of downloads in days, putting powerful weights permanently on private hardware. At almost the same moment, commercial robots moved from pilots to warehouses and logistics yards — picking, welding and palletising at scale — with machines largely American-designed and Chinese-built. European manufacturers felt the squeeze on ground they had considered their own.
+
+There was one bright report. Studies from law firms, consultancies, newsrooms and administrations showed measurable productivity gains, strongest among juniors, without matching job losses. Firms that had cut early quietly hired again. The finding steadied the public mood a little, though blockades around grid connections in Spain, Germany and the Netherlands continued, and health labs stayed anxious over the genome-model claim.
+
+The gigafactory push, named the priority, did not accelerate. With political standing near zero, pushing bought no pull-in, and officials chased deliveries administratively to stop further slippage.

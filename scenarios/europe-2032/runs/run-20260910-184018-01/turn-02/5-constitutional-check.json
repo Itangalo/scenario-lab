@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Constitutional Constraint 9 violated: `eu_political_capital` decreases by 10 points (from 41.0 to 31.0), which exceeds the maximum allowed change of 25 points in a single turn. This is a hard bound on every metric and applies regardless of narrative justification.\n- Constitutional Constraint 8 violated: The narrative telegraphs future events by stating \"bio_uplift_findings precursor plus publishing moratorium fight landed this turn and this answers it directly\" in the notepad, which references a named future event gate (`bio_uplift_findings`) and implies its activation condition has been met. This constitutes telegraphing, as gate states belong only in event evaluations and must not be stated or implied in narrative or notepad entries."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

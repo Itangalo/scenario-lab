@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t1: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Critical Infrastructure Cyber Shield −3 (not yet costing this turn per rule 10, charged from t2), in-flight total −6, priority −1 = −7 charged this turn; rule 6 figure −9 applies from t2
+PROPOSAL BONUS: EU Critical Infrastructure Cyber Shield (cat 6, large) +4 — cyber test-shot intrusion landed this turn across EU grids/ports/water and this answers it directly with breakthrough tooling
+LEGITIMACY LENDS: capital 33, sentiment 36 -> +2 (capped below sentiment)
+SOVEREIGNTY: 22 last turn, no finish, no in-flight bonus yet, eu_frontier_access_denied t1 −2, capability rose 2.0 −1 = 19

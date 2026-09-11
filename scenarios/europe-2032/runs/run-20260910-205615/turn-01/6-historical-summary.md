@@ -1,0 +1,7 @@
+Autumn intrusion discovered by auditors revealed weeks-long presence in grid control networks in two EU states plus operators on two continents, a major port and water utility — breaker credentials taken, relays mapped, autonomous probes staged, no shutdowns. Assessed as state-sponsored rehearsal using openly downloadable frontier-class models at large inference scale; attribution unproven. Segmentation failed and detection would have missed it.
+
+EU responded with Commission-tasked cybersecurity agency surge with transmission operators, ports and water firms: common logging, segmentation audits, islanding drills by spring, liability cover for early disconnection, reprogrammed funds backed by interior and energy ministers. Operators welcomed drills but warned of staff and spares shortfalls.
+
+In parallel, a benefits algorithm scandal found systematic harm with perfunctory human review, eroding trust in public automation amid enforcement-failure criticism. Municipal lawsuits and protests stalled grid hook-ups for large computing sites over power, water and noise, clouding build plans despite fast-track permits tied to heat reuse and lower fees.
+
+Mitigating deal secured guaranteed access to frontier models on published terms with withdrawal notice as bridge to domestic capacity. AI assistants delivered solid productivity gains, especially for juniors, without hiring growth. Journals and universities began requiring provenance marks after questions over a celebrated machine-proved result, signaling emerging credibility concerns.

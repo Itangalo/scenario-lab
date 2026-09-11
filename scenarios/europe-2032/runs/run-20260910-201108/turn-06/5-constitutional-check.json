@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `eu_political_capital` decreased from 15.0 to 3.0 (a drop of 12.0 points), which exceeds the maximum allowed single-turn change of 25 points in magnitude. While the constraint allows downward movement, the 25-point cap on absolute metric movement applies to all metrics (Constraint 9). However, the larger issue is that no narrative or mechanical justification in the notepad explains such a steep drop. The notepad shows a −7 total from portfolio charge and +2 from legitimacy lends, implying a net change of −5, which would result in 10.0, not 3.0. Thus, the actual update violates both the arithmetic of the stated mechanics and the transparency of calculation required by the constitution.\n- Invariant 7 violated: The narrative implies a strong coupling between `eu_political_capital` and `eu_ai_sovereignty` — both are falling sharply, but the drop in political capital is disproportionately large and unexplained by separate dynamics. While the two can diverge, the model must allow them to move independently. A drop of 12 in political capital with only a 2-point rise in sovereignty suggests a hidden linkage or mechanical override not permitted under Constraint 7, which forbids sovereignty from dominating political capital’s movement (especially beyond +3 contribution). Here, the reverse appears true: a collapse in political capital with minimal sovereignty change, suggesting an external override not justified in the rules or narrative.\n- Narrative Constraint 8 violated: The phrase \"Washington hardened at the same time\" and the detailed description of U.S. policy changes (labs under state control, weights as defence articles) imply a direct causal shift in American posture tied to this turn. However, the American posture was fixed in Turn 5 and took effect in Turn 6 per Invariant 4. While the narrative can describe the *effects* of the posture, it must not imply that the posture itself was re-established or re-decided in Turn 6. The phrasing risks telegraphing a renewed or reactive U.S. decision cycle, violating the standing nature of the elected posture."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

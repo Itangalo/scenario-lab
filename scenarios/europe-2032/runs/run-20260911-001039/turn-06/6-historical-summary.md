@@ -1,0 +1,5 @@
+By spring 2029 frontier open model leaked, downloaded widely with working coding/intrusion helpers, while labs shifted to non-verbal reasoning, blinding EU evaluators to black-box tests; verifiable-task capabilities jumped in weeks, outpacing hospital/grid patching.
+
+EU triage held partially: emergency patches, offline hospital rehearsals, payouts tied to telemetry/sequencing, tightened synthesis screening against unscreened offshore brokers. Cities degraded to backups, two hospital groups to paper for weekend; aid criticized as checklists not staff.
+
+Sovereignty package formally closed with zones and data-centre pledges to 2036, one gigafactory cleared mediation, but member-state hyperscaler side-deal broke cohesion — Brussels conditioned funds/Factory access on no side-deals, sent competition review. Japan-Korea joint buying cell continued. US backlash administration turned inward to moratoriums, less pressure but less help.

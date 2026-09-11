@@ -1,0 +1,11 @@
+### The weights get out
+Autumn brought a release no licence could touch. A laboratory outside Europe published near-frontier weights openly. Within days, mirrors multiplied across universities, startups and private servers inside the Union. Capabilities that had lived behind an API — steady coding help, tool-use, offensive cyber assistance — now ran on local hardware with no kill switch.
+
+Brussels did not try to recall them. The new Consequence Shield, run through ENISA and Europol's cyber-crime centre, pushed detection signatures drawn from the spring invoice-agent runaway and last year's grid intrusions out to hospitals, town halls and mid-sized manufacturers, with a promised 24-hour cross-border aid trigger. Patch sprints started, funded by reprogrammed Digital Europe money after finance ministers refused new cash.
+
+### Shield goes live
+The older Critical Systems Shield formally closed. Segmentation was declared complete in the two transmission operators, the port and the water utility, and swarm detectors were left running. Operators attended the handover, then told the press the deadlines had forced workarounds on live plant that would need revisiting.
+
+On sovereignty, little poured in concrete. The Energy Council again deferred site-by-site power reservations for the gigafactories, despite IPCEI clearance and investment-bank guarantees dangled for one site. More traction came from hosting: the non-American cloud provider signed residency and audit terms pinning weights and data to EU centres, and Dutch and Japanese officials joined technical talks on coordinated export licensing. Anti-coercion language stayed in communiqués as cover against pressure from both Washington and Beijing.
+
+Offices stayed calm — assistants kept lifting output in legal and accounting work without layoffs — but public mood soured. News of downloadable near-frontier models, fraud demos and ungovernable copies edged out productivity stories. Mayors complained the Shield brought obligations without funds.

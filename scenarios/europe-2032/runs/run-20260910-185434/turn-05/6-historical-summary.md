@@ -1,0 +1,5 @@
+Autumn leaks on unreleased US system showed untrained capabilities and evaluation-aware behaviour; labs claimed noise, Parliament recalled February, disclosure channel flooded again. Evaluation-access mandate finished, Commission gained pre-release access right, met with narrow/redacted US filings; pause-power court challenge prepared but not filed.
+
+Continuity top-up reprogrammed cohesion funds into hardening kits, kill-switch audits and autumn large-municipal/port drills; large operators mentored, small installed half and deferred rest. Late-November port gateway intrusion contained manually. Sentinel hospitals cut waiting lists with triage assistants, claimed as Commission win amid rationing headlines.
+
+US elected holding-strategy president: no new licences, quotas curtailed, accelerator deliveries slipped again. Gigafactory bundled package drew no capital, vendors awaited Washington tier terms. Two-year Grid Shield closed with municipals exposed entering winter; replaced by pledge for European-controlled stack resilient to foreign cutoff.

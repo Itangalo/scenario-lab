@@ -1,0 +1,10 @@
+### Blockade winter
+In August, shipping trackers went dark around the strait and then the foundries went quiet. Taipei's advanced chips stopped leaving the island. Within weeks every procurement office in Europe learned the same arithmetic: no new accelerators for years, spares at a premium, delivery dates as fiction.
+
+Brussels had almost no room to move. The two gigafactory zones stayed in permitting, unbuilt. The investment bank ring-fenced its promised tranche rather than disbursing it, citing force majeure on hardware supply. Local councils that had protested power and water use now protested prices and layoffs instead; court filings against grid connections sat unheard beside emergency energy orders.
+
+The chokepoint defence, now the stated priority, became the only game in town. Trade ministers opened a coercion examination of the American servicing ban, offered a budget backstop for Dutch losses, and proposed pooled licensing to stop bilateral pick-offs. The Hague thanked Brussels and kept its own channel to Washington open. Missions to Tokyo and Seoul returned with sympathy and no allocation commitments. Taiwan, under quarantine, could promise nothing.
+
+The small observatory, formally completed in the autumn, fed its outside-in benchmarks on the loose open model to cyber teams and grid operators. Failovers held at degraded, not stopped, through two scares in ports and power. Retraining pilots kept their ninety-day placements, far short of the layoff wave.
+
+By December, American networks called the election for a platform of holding frontier systems as strategic assets, with tiered foreign access and tighter export review. European capitals read the result as confirmation: borrowed models, switched-off machines, and now a ration book written in Washington. Trust fell further; use did not.

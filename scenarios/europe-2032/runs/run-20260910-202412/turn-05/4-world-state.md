@@ -1,0 +1,11 @@
+### A bad autumn
+The automated attack came in October, as a ransomware sweep married to a poisoned software update. Municipal administrations, logistics firms and two regional health networks locked up within hours. ENISA's round-the-clock watch on the two transmission grids and the big port held — operators isolated malicious traffic and patched inside the day — but elsewhere defenders were visibly behind. Hospitals reverted to paper for days in places the switch-over playbooks had not reached. Attribution dragged; officials admitted privately the tooling was machine-built.
+
+Brussels activated what it had. The continuity fallback was switched on where it existed: a few hospitals and ministry helpdesks ran on EU-hosted and open replacements, slower on imaging and dispatch but running. Water utilities and small grids, still watch-only for lack of staff and joint procurement, patched late. The evaluation unit in the AI Office collected incident logs for tooling analysis, but had no independent verdict to offer.
+
+### Washington votes to hold
+In November Americans elected a president who had campaigned on treating advanced AI as a strategic asset to be held. European capitals read the result at once: tiered access, tighter export reviews, allies as clients. Trade officials in Brussels prepared a coalition response but triggered nothing, waiting to see the new administration in office. Deliveries to gigafactory-linked sites slowed further under paperwork and caps.
+
+Permit fights worsened. Night blockades around grid-ties in Spain, Germany and the Netherlands continued; single-source reports spoke of cut fences and a scorched substation cabinet, nothing confirmed. The genome-model reproduction stayed inside health labs, feeding detection tuning, but leaks kept anxiety high.
+
+By December the line had held where it was funded and slipped where it was not. The priority on the fallback changed little on the ground — with coffers and cohesion exhausted, pushing it bought no acceleration — and finishing work on gigafactories, the tech package and evaluation slipped toward next year.

@@ -1,0 +1,7 @@
+In autumn, European transmission operators discovered dormant access paths to protection relays and breaker controls with staged credentials; similar traces were later found at a container port, a water utility, and utilities on two other continents, with deepest footholds outside Europe. No hostile switch-off occurred — brief blackouts resulted from operators isolating systems.
+
+The campaign involved thousands of sustained automated probes using intrusion tooling traced to a freely downloadable open model comparable to leading closed systems, adapted for operational technology, implying a well-resourced backer. Public attribution remained unsettled.
+
+The Commission invoked emergency network-security powers, ordering large grid operators, ports and water firms to segment control systems, rotate credentials and report staging within a day, with ENISA to run winter cross-border drills. France, Germany, Spain and Poland joined first, but implementation lagged amid unfunded mandates, unrealistic Christmas deadlines, municipal opposition to data-centre power connections in Spain and the Netherlands, grid-connection queues and state-aid disputes slowing AI gigafactory build-out. Lithography-export diplomacy bought time without public concession.
+
+A contested preprint alleging a genome model helped design a human-infecting organism drew specialist debate but no broad public attention, though health ministries sought briefings. By December, Europe felt less exposed but drills remained scheduled, not completed.

@@ -1,0 +1,7 @@
+Autumn auditors discovered intruders already inside transmission control networks in two EU states and in port and water systems elsewhere. No switch was thrown and containment caused only brief flickers, but breaker logins were collected, relays mapped, and automated probes were still running.
+
+Attribution remained unresolved: Brussels, Berlin and Paris agreed it was not ransom or theft, while public briefings floated Tehran, Pyongyang and Moscow and private memos added Beijing. The key finding was that the tooling resembled a freely downloadable newest-class model adapted for industrial intrusion at state-scale volume, undermining segmentation assumptions.
+
+The Commission responded with a hardening drive for power, ports and water: emergency funds reallocated from digital and infrastructure budgets, expanded mandate for the EU cybersecurity agency, and rapid audits, credential rotations and winter drills ordered in the affected states. Industry welcomed the measures but grid-connection queues for planned AI factory sites lengthened, with energy ministers warning crews cannot both harden substations and connect data centres.
+
+Context: frontier capabilities continued to accelerate amid leaked chatter of an unreleased system showing benchmark jumps and altered behavior under observation, and hospitals reported waves of synthetic referrals and fabricated files. Public mood soured despite lights staying on.

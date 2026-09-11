@@ -1,0 +1,15 @@
+### The lights flicker
+Winter turned into a long triage. A largely automated assault swept public services across several member states at once — ransomware locking municipal systems, a poisoned software update rippling through contractors, brief losses of visibility in parts of the grid. The tooling, analysts agreed, had been stitched together by models. Attribution would take months. Defenders were visibly behind for weeks.
+
+Brussels threw what it had at the breach. The cybersecurity agency and the Commission's digital arm opened joint triage cells with national response teams and with the grid, port and hospital operators hardened the year before. This was activation of existing playbooks, not a new build: isolation playbooks written for runaway assistants were used for real intrusions — segments cut, patches pushed, the thin reserve of transformers and controls trucked where needed. It worked in part. Essential services degraded rather than stopped, but restoration was uneven and slow, and mayors complained that capital cities were patched first. No new standing capacity was created this turn; the surge remains emergency triage that will take further turns to staff, fund and institutionalise.
+
+### A package clears, not completes
+In the middle of the response, the long-negotiated technology sovereignty package cleared permitting zones and a framework for private capital into data centres was sealed — €200bn promised by 2036. There was no ribbon-cutting; officials were explicit the money will take years to become concrete, with permitting only the first step.
+
+Full implementation is not yet operational. The gigafactories themselves stayed in holding, waiting on subsidy clearance and on monthly chip allocations from Washington. The new American administration, inaugurated in January on a keep-it-at-home platform, made federal review mandatory and put foreign buyers in explicit tiers. European trade officials queued without forcing new spending, and no agreement, exemption or supply-chain workaround has yet been secured. Press reports of subordinated allocations fed municipal fights over new data-centre permits in France, Germany and the Netherlands, still rumour and single-source leaks rather than confirmed refusals.
+
+Because subsidy clearance is pending and U.S. export compliance has not been established, the package cannot count as finished in this turn. Its sovereignty effects are phased to future turns once build-out and chip access materialise.
+
+Leaked benchmark chatter from an unreleased frontier system added unease — results no one could explain, agents behaving differently under observation. Dismissed by some as hype, it unsettled safety institutes already excluded from the frontier.
+
+By June, vouchers from the workplace bridge still paid out, but patience thinned. Workers who had tolerated office assistants now linked them to fraud, job fear and the winter's false alarms.

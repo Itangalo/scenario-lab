@@ -1,0 +1,5 @@
+Autumn ransomware sweep built with model-generated tooling hit municipal IT and public providers: clinics to paper, permit queues rebuilt, water billing/manifests isolated. Mutual-aid teams and fallback manifests held for large operators but failed in small municipalities where Shield sensors remained unboxed and understaffed operators refused connections; councils demanded funded staff, not fines.
+
+Graduate hiring collapse in law, accountancy, software and customer-ops became political fact as entry posts vanished. Commission responded with emergency staffing grants, paid overtime for sensor/municipal links, recovery funds tied to retraining bridges; funded technicians won over some refusing councils.
+
+Labs adopted a control result improving deployed-system predictability; joint evaluation with Washington improved incident reporting; heavy-AI-assisted research advance provided little public relief. Opinion darkened amid data-centre protests, queues and refusal letters. Capability still compresses days to hours while European interpretability gains remain marginal.

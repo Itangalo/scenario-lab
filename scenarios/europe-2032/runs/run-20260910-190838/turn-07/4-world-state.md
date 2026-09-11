@@ -1,0 +1,11 @@
+### Cut off
+In early autumn, access to the leading American model stops for European users with little warning. No detailed reason is given and there is no appeal channel. Hospital planning tools, ministry copilots and contractor workflows built on the foreign interface return errors. Procurement officers discover how many essential services had been wired to an allocation reviewed elsewhere.
+
+At almost the same moment, Washington tightens chip and model controls again. Under the rationing administration in office since January, allied buyers keep nominal access but on volume licences that leave European firms as allocated clients. Servicing of chip-making equipment in the Netherlands remains constrained. Brussels files both moves as a joint evidence package under its anti-coercion instrument and issues a Council statement that rationing by nationality will shape future procurement. No retaliation follows.
+
+### Concrete, at last, and too late for this shock
+The long-delayed gigafactory programme formally closes its first phase this half-year. Sites are legally secured, options extended, a first power and construction pipeline is committed. It does not help the hospitals that lost model access in October — concrete cannot substitute for weights — and stalled-zone mayors say so loudly. Municipal freezes on grid connections spread by local vote and rumour, and a few councils cite power-price protests to block new hook-ups.
+
+What moves quickly is substitution. Through the health emergency authority and the EU cybersecurity agency, emergency money from health and digital budgets funds licences for EU-hosted open models, hurried interface rewrites and paper fallback drills in affected wards and ministries. Transmission and water operators that had used American support get the same treatment plus patching funds. Staff report it keeps services degrading rather than stopping: slower triage summaries, cruder translations, manual checks reintroduced.
+
+The public reads the episode as humiliation. Coverage pairs images of blank screens in clinics with job-loss stories and denunciations of abandonment. Trust in AI-mediated information falls further, and opposition to new infrastructure hardens.

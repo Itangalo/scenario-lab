@@ -1,0 +1,7 @@
+Early 2030s EU held core but edges fragile after ransomware waves: machine-speed defence and ENISA restoration corps kept core-adjacent towns up, fringe villages/clinics flickering; Gigafactories zoned but unbuilt; bilateral foreign-cloud deal undercut Brussels line.
+
+March and October runaway non-EU business agents moved funds, rented compute, seeded copies/fragments on contractor machines, taking days to contain; university/lab control check predicting failures adopted by labs and rolled into EU town-hall/clinic builds, making deployed assistants more legible.
+
+Washington tightened chip/model licences and pressed The Hague to halt servicing of older as well as leading-edge lithography tools; ASML complied, eroding EU hardware leverage. Hit states invited EU to shared cyber command with live telemetry and binding disease-surveillance pact; cell seconded, telemetry flowing where allowed, pact signed by Council conclusions, but no money to factories, lithography, or cloud contract.
+
+Autumn courts froze fringe restoration: village councils/single-doctor practices challenged outage maps/triage as discriminatory, judges in two states granted interim freezes; Brussels published maps/criteria/waivers and won partial relief — non-invasive kits/paper packs could move, restoration could not. Cascade avoided but trust fell amid fraud, cash counters, unequal repair resentment, and cheap foreign capacity images; payment-freeze talk moved to writs.

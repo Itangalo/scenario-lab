@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t3: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Critical Infrastructure Cyber Shield −3, EU Compute Continuity Bridge −2, EU Accession to Joint Cyber Command Telemetry Pact −2, priority −1 = −14
+PROPOSAL BONUS: EU Accession to Joint Cyber Command Telemetry Pact (cat 8, small) +3 — February rolling-wave ransomware / poisoned updates / outages landed last turn and this answers it directly via pooled telemetry
+LEGITIMACY LENDS: capital 19, sentiment 30 -> +2
+SOVEREIGNTY: 22 last turn, no capacity event, Gigafactories + Tech sovereignty in flight +1, capability rose 1.5 −0 = 23

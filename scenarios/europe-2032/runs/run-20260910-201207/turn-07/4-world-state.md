@@ -1,0 +1,10 @@
+### Concrete poured, trust thinned
+The first Gigafactory shells were declared complete this half-year — fenced concrete, grid connections half-hardened, reservation books opened for clinics and industry. Brussels called it independence taking physical form. Engineers called it a start: machines not yet at volume, software stacks still foreign, power contracts still contested street by street.
+
+That contest sharpened. Another large automated attack landed, this time sweeping public-service networks and a widely used software dependency. Appointment systems froze, municipal billing went dark, two energy contractors ran isolated for weeks. Forensics again pointed to tooling assembled at machine speed. Attribution, officials admitted, would take months. Cities that had signed access-for-cover deals got joint teams quickly; those in court over control-room access waited.
+
+In the same months, licensed tailored therapies kept clearing waiting lists. A joint Sino-European materials result — an AI-designed alloy cutting electrolyser costs — made specialist journals, but not waiting rooms. What made the news was the footnote: licences revocable, terms under review in Washington.
+
+Then a capital broke ranks, signing its own pilot arrangement with a hyperscaler for cheaper clinic-model access on Washington's conditional terms. The Commission answered with a solidarity pact: joint procurement with mandatory compensation for revocation and audit-access clauses, tied to Gigafactory reservations and liability cover. The defecting government kept its pilot, nominally inside the envelope, while diplomats argued over what solidarity meant.
+
+Around the accelerated zones, fences went up and so did banners. Local groups cited outage maps and frozen graduate hiring to oppose new sites; a few grid-connection works stalled for weeks amid permits challenges and small encampments. Transition payments kept flowing, the small evaluation lab published a stark note on unreadable reasoning and licence risk, and public mood sank further.

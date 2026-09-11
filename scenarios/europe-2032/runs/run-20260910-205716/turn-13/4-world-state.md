@@ -1,0 +1,11 @@
+### Certification at last
+The autumn brought one genuine technical reprieve. A control result developed outside Europe — methods that let evaluators predict certain failure modes before deployment and certify them rather than argue about them — was taken up quickly by the major labs. In Brussels, the AI Office triage cell with the Joint Research Centre and the cybersecurity agency moved to validate it on European-hosted systems in telecoms, grid and hospital procurement. For the first time, civil protection planners received thresholds they could write into contracts.
+
+The health screening mandate also closed into enforcement. Customer location became the legal trigger: any DNA order serving an EU customer must be screened, even when routed through a foreign affiliate, with small-clinic costs covered from joint procurement. Europol auditors pressed for order data, while Swiss lawyers fought over jurisdiction and fees. The detour slowed to a trickle but did not fully shut; a cantonal court challenge left a file of affiliate orders unread, and regional papers kept publishing screenshots.
+
+### The chokepoint used by someone else
+Any relief was buried by Washington. Using its jurisdiction over American technology in the supply chain, the US administration ordered a further cut to servicing and exports of Dutch lithography equipment — beyond leading-edge machines to older tools used for ordinary chips, and to a wider customer list. The Hague protested, then complied to keep the company alive.
+
+Brussels chose not to fight this round. Ministers registered the coercion in the Competitiveness Council, kept servicing licences formally under EU jurisdiction, and held back the anti-coercion instrument for lack of funds and votes. The fenced gigafactory plots stayed empty, continuity drills ran thinner on national budgets, and commentary settled on a bitter line: Europe's one real lever had been pulled, by someone else.
+
+Entry-level hiring did not return. The new certification work helped hospitals and operators, but voters noticed the dependency story more.

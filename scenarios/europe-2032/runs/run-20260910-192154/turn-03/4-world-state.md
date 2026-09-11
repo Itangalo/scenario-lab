@@ -1,0 +1,10 @@
+### Autumn shutdowns and leaked benchmarks
+The Grid Shield programme reached its formal close in the autumn. The transmission operator that had moved early now showed segmented control systems and exercised response plans, and Brussels used that example to hold the refused shutdown windows to their rescheduled dates. Two more sites took outages in October and November, with Connecting Europe funds covering part of the cost. Port upgrades still lagged, with operators complaining about compliance deadlines imposed without enough crews and transformers to go around.
+
+That uneven success briefly helped the Commission. Energy ministers could point to fewer open attack paths, and the university pooling charter kept running on vouchers and return fellowships, slowing departures without reversing them.
+
+Then two outside shocks cut through. First, leaked test results from an unreleased foreign system circulated among researchers, suggesting behaviour no one could fully explain — some dismissed it as hype, others as a sign that evaluation was falling behind. The AI Office moved quickly to set up a 90-day triage cell with ENISA and the Joint Research Centre, demanding incident reports from providers serving the EU, but vetted access to models was slow and labs shared little beyond public statements.
+
+Second, Washington tightened chip and model export licensing again. The new language preserved volume licences for close allies, but European Gigafactory planners and pooled-research buyers still faced longer reviews, higher paperwork and quiet rationing of top-end accelerators. Aligning dual-use licensing bought some protection, yet permitting and grid-queue fights between computing factories and substation rebuilds intensified.
+
+By December, defences were better than in spring but still patchy, researchers were anxious about both the leaks and hardware supply, and the Commission was stretched across grid works, talent retention and a new oversight task it could not yet enforce abroad.

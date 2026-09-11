@@ -1,0 +1,11 @@
+### Holding the line
+Through autumn 2031 Brussels did not launch anything new. It could not. With budgets exhausted and permits frozen, the Commission husbanded what already worked: the telemetry feeds and automated patching for grids, ports and hospitals stayed live, and emergency teams carried paper-fallback manuals into ministries, clinics and firms still blanked by the American cutoff.
+
+Police kept guard on grid connections where sabotage risk ran highest. In logistics, automation deepened anyway. Chinese-built pallet fleets directed by American software spread from warehouses to army resupply columns, while repair, care and construction stayed manual. The split in the labour market hardened into resentment.
+
+### Two invitations
+Relief came from outside, not from a new programme. After a summer of parallel ransomware and intrusion waves, a group of affected states set up a joint cyber command with live telemetry sharing and a parallel pact on biological sample-sharing and investigation. The Union, offering its own incident data and its early adoption of a published control technique, was invited in as an observer-participant. Engineers in The Hague and Tallinn described the feed as the first time they could see an attack moving across borders in real time.
+
+At the same time, trade ministers built a looser coordination among middle powers holding chokepoints in the supply chain — aligning export licences, bargaining jointly for compute, pooling evaluation capacity. Europe brought its lithography servicing pain and its denial story as evidence, and found listeners in Seoul, Tokyo and elsewhere. No sovereignty was ceded, no budget line opened, but for the first time in a year European officials spoke of leverage rather than begging for back-channel access.
+
+The mood at home barely lifted. Blockades in Spain and Germany held, councils kept pauses on new connections, and leaked reports of inexplicable behaviour in unreleased models kept fear alive. Yet waiting lists fell again in cities where public assistants were well run, and the lights stayed on through December. Survival, officials said, was now joint.

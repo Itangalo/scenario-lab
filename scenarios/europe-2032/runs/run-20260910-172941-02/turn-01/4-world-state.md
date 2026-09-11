@@ -1,0 +1,8 @@
+### The autumn of undetected presence
+In October auditors inside a transmission operator found something they were not looking for: quiet footholds across grid control networks on three continents, a major container port, and a water utility. Two of the grid operators were European. The intruders had been present for weeks. Internal reviews in several capitals concluded bluntly that routine monitoring would not have caught them.
+
+Almost simultaneously the frontier moved. A new release made the previous week's deployment timelines obsolete, with longer-horizon agents and sharper tool use spreading quickly through developer channels. Laboratories spoke of compounding gains; regulators spoke of assurance falling further behind.
+
+Then Washington cut off access. Citing the new review regime for frontier systems, US providers switched off the leading models for non-US users with little notice and no appeal path. Hospitals, ministries and firms in Europe that had built workflows on those models scrambled for fallbacks. The shutdown was lifted after a fortnight of negotiation, but the message remained: access was discretionary.
+
+Brussels answered with a two-year pledge to build sovereign capacity and harden essential services. The Commission pushed binding cyber baselines under existing security law, reprogrammed digital and infrastructure funds toward anomaly detection for grid operators, and promised publicly-run fallback models on European compute. France, Germany and Poland balked at cost-sharing, permits for new compute sites drew local protests over power and water, and aid clearances for the first gigafactory sites moved slowly. The shield was announced; the hardening had barely begun.

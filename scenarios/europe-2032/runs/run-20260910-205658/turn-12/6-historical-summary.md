@@ -1,0 +1,5 @@
+Autumn sabotage's northern disruption persisted into February ransomware sweep: hospital systems, payrolls and registries locked via compromised logging library. Offline copies/clean images let large hospitals rebuild in days; lagging small clinics reinfected; generator-dependent north took no overflow.
+
+By April automated patching and swarm-movement detection contained one attack pattern, first defender parity in years, but rollout favored large hospitals/central registries; small/municipal sites delayed, backup standard still guidance amid procurement fights. Northern mediation held three corridors, fourth collapsed violently.
+
+Brussels claimed vindication for shield/no-eviction stance without restoring trust; tech widely used and resented; southern gigafactories still court-frozen. Union ended June degraded but running — absorbed, not secured.

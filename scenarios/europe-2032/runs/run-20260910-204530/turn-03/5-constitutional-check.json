@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: `eu_political_capital` dropped from 26.0 to 9.0 (a decrease of 17.0 points) in a single turn, which exceeds the maximum allowed change of 25 points in magnitude. While the constraint allows up to 25 points of movement in either direction (per Constitutional Constraint #9), the narrative and notepad do not justify such an extreme drop with a corresponding catastrophic event that would plausibly erase nearly two-thirds of the EU’s political capital in six months. The notepad attributes −14 from portfolio charges and +3 from proposal bonus, implying a net change of −11, not −17. The discrepancy between the calculated change (−11) and the actual change (−17) violates the integrity of the metric rules and suggests unaccounted-for adjustments not grounded in the defined mechanics.\n- Economic Constraint violated: The narrative introduces a new policy mechanism — linking clean audits for municipal AI systems to fast-track energy permits for new computing plants — which constitutes a new measure. However, the Game Master's Notepad already lists five active measures in flight (InvestAI Gigafactories, Tech sovereignty package, EU Critical Systems Shield, EU Siting Social Licence Deal, EU High-Risk Redress and Oversight Fix), and this linkage mechanism appears to be an additional, distinct policy lever. This violates Constitutional Constraint #5, which limits the EU to at most one new measure per turn. The notepad only accounts for one new measure (the Redress and Oversight Fix), but the narrative introduces a second via the permit linkage, which is not merely a widening of scope but a novel conditional incentive structure."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

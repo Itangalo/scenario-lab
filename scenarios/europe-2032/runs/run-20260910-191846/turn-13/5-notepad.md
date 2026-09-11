@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: EU Cyber Restoration and Embodied-AI Containment Corps −2, EU Neutrality Corridor and Middle-Power Supply Pact −2 = −4 + priority has no effect below 20, not charged
+PROPOSAL BONUS: EU Neutrality Corridor and Middle-Power Supply Pact (cat 8, small) +4 — catastrophic_great_power_conflict landed this turn targeting fabs/cables/data centres and this answers supply leverage directly
+LEGITIMACY LENDS: capital 3, sentiment 0 -> none, sentiment not above capital
+SOVEREIGNTY: 3 last turn, no category 4 finish, no in-flight bonus, catastrophic_great_power_conflict t13 −2 (largest capacity event, coalition mitigation noted but single term only), capability rose 1.5 (below 2, no −1) = 1

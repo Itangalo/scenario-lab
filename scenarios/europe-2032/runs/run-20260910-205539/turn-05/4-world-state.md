@@ -1,0 +1,12 @@
+### Concrete, code, and counts
+Autumn 2028 forced three reckonings at once. In Brussels, auditors finally published the welfare-fraud log trail, suspended the disputed deployments and opened a redress window paid from repurposed technical funds. Justice ministers got the files they demanded; mayors got a pause on new obligations. It stopped the nightly case-file revelations but satisfied no one — victims' groups called the payouts slow and small, regional leaders called the whole exercise a Brussels cover-up.
+
+On construction sites, the Competitiveness Council tried to force gigafactory decisions with conditional grid connections and state-aid clearance. Two sites broke ground to early concrete, two more stalled on power pricing and local permits. Paris and Berlin hailed momentum; eastern capitals saw another promise that the European fallback would run elsewhere.
+
+That fallback mattered more by November. A leading lab released openly downloadable weights close to the closed frontier. Hundreds of thousands of copies spread in days. Hospital IT chiefs and port operators watched attack tooling improve within weeks, while insurers accelerated exclusions for model-assisted outages.
+
+The counterweight arrived from the labs themselves: automated patching that moves at vulnerability speed and detectors that flag swarm behaviour rather than signatures. ENISA and health emergency teams rushed procurement, installing the tooling in hospitals, water utilities and municipal networks and pairing it with sequencing and detection kits long promised to clinics. Early results were real — intrusion dwell times fell where the kit was installed — but coverage was patchy and integration teams thin outside the northwest.
+
+Then Washington voted. The winner campaigned on treating advanced AI as a strategic asset to be held, with tighter export review and tiered foreign access. No new rules took effect before inauguration, but procurement officers across Europe understood the signal: the February switch-off could become policy. Talk of dependency humiliation replaced talk of partnership in evening news.
+
+By December essential services were holding, trust was not. Citizens used Danish and Estonian assistants while telling pollsters they feared American shut-offs and unrecallable open models in equal measure.

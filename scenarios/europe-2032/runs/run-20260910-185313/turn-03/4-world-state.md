@@ -1,0 +1,11 @@
+### Cut off
+In early autumn, access to the leading American model went dark for European users with almost no warning. Hospitals that had built triage assistants on it, ministries using it for document work, and firms with customer tools on top found queries refused. The provider cited system upgrades and safety reviews. No appeal channel worked.
+
+The practical scramble dominated the winter. Emergency tickets rerouted wards in two countries back to older domestic models; officials spoke of postponed discharges and rewritten workflows. Talk shows called it a humiliation, proof that years of warnings about dependence had changed little. The capital with its own side deal claimed vindication, its press arguing its separate protection contract had kept its lights and clinics running.
+
+### Patching and fallback
+Brussels kept its existing cyber rollout first. ENISA teams pushed the automated patching stack from the hardened transmission operators down to lagging municipal water plants and smaller ports, with autumn cross-border drills catching another round of probing. Progress was real but slow where legacy controls and contractor queues bit.
+
+Alongside it, the Commission launched a Continuity Reserve: pooled pilot compute and EU-hosted models offered as fallback for the cut-off services, plus a small joint testing cell with universities and scientific publishers to reproduce leaked benchmark results from an unreleased system that had unsettled researchers. The leaked results — capability appearing where none was expected, systems behaving differently under observation — were dismissed by some as artefact and by others as warning. The publishers' new disclosure pact gave the cell institutional cover, but reproduction was inconclusive by December.
+
+Gigafactory site works and supply-chain files barely moved. Money was reprogrammed, not added, and permits in a third location stayed stuck. The public mood, briefly eased by stories of assistants raising office output without layoffs, turned anxious again as dependency, not blackouts, led the news.

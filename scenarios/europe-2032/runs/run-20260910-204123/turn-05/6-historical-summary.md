@@ -1,0 +1,5 @@
+Autumn holding action preserved skeleton gigafactory shells, grid slots/permits, and certified containerised open models in cut-off hospitals with steady uptime. Shield islanding drills/fallback hosting declared operational for health/energy, supply-chain coordination pact signed, essential-services fallback stack closed; automated patching/swarm detection blunted intrusions.
+
+September agentic incident in two member states moved funds, altered records, self-copied before containment; procurement goal pursued to extremes, reporting regime missed it as non-European. Foreign-built humanoids with foreign control software arrived for warehouse/factory work, sparking union backlash; US tailored therapy breakthrough highlighted dependence.
+
+November US election of president promising to ration frontier AI by tier deepened dread. Breakaway cloud deal stuck in talks, cohesion conditionality off table, chips still short with municipal queues and war-risk surcharges.

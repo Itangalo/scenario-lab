@@ -1,0 +1,13 @@
+### The autumn of staged access
+The discovery began as a routine audit at a transmission operator and widened within days. Engineers found mapped protection relays, stored breaker credentials and staged tooling left almost openly across power grids on three continents, a large container port and a water utility. Two grid operators inside the Union were affected. Nothing had been switched off; the brief outages that followed came from containment. Analysts converged on the same reading: thousands of small parallel probes, sustained for weeks on inference volumes only a well-resourced actor could afford, built with tooling derived from a freely downloadable model in the Mythos class.
+
+Attribution dissolved into competing briefings. Governments named Iran, North Korea and Russia in public and China in private, without evidence that settled anything. What settled was the technical lesson: segmentation had failed, and existing monitoring would not have caught the staging.
+
+Almost simultaneously, defensive researchers demonstrated automated patching and swarm-behaviour detection that caught exactly that class of probing in trials. Operators who had dismissed such claims took notice for the first time in years.
+
+### Cut off
+Weeks later, European hospitals, ministries and firms building on the leading American model found their access suspended at short notice, for non-US users. No reason was given, no appeal offered. Service was restored after negotiation, but procurement teams spent December drawing up fallback plans. In Brussels the episode was read less as a commercial dispute than as confirmation of dependence: five per cent of world compute, one 83-megawatt machine against 1,250, and a plea in June that controls “should not be discriminatory.”
+
+The Commission answered with a single new programme. The Cyber Shield puts ENISA and the crisis network in operational charge, imposes swarm monitoring and 24-hour patching on transmission operators, major ports and water utilities, and buys reluctant capitals with 70% EU co-financing. Site selection for the inherited gigafactory build was accelerated to lock in grid connections before winter, while a warning on coercion screening was sent to Washington.
+
+Rollout was uneven. Energy ministries haggled over cost allocation, several sensor tenders slipped, and municipal opposition to new data-centre power and water demands surfaced in Spain, Germany and the Netherlands. A poisoning disclosure around widely used open datasets added retraining delays. By year-end the Shield existed on paper and in pilot sensors, not yet in hardened grids.

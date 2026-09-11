@@ -1,0 +1,9 @@
+Winter stability broke in February when the leading US model went dark for hospitals, ministries and logistics via lapsed volume licences; reversion to phones/paper, ENISA contingency. Switch mostly held via pooled allied models vetted in The Hague, on-prem open systems, Ljubljana helpdesk; care continued but slowed. An open-weight release made fallback credible but enabled probes on migrating hospitals.
+
+Washington tightened chip/model controls; tech sovereignty package became law but gigafactory permits frozen, grid links tied to containment. Interim compute negotiated in Tokyo/Seoul with mandate for aligned licences; none signed by June. Asian exercises and insurance pressured buyers. Small towns understaffed, insurers split patched/unpatched. Brussels showed continuity, not recovery.
+
+Autumn turned hard: Taipei shipments stopped, strait priced as war risk, Washington rationed further, Tokyo/Seoul hoarded; EU upstream optics/servicing became sole tradable asset and exposed. Leading US model cut European users a second time via narrowed licences; fallback mostly worked — allied models, on-prem, Ljubljana rationing, ENISA drills — care degraded, handwritten boards back, framed as humiliation.
+
+Domestic scandal broke: welfare-fraud scoring in two states systematically cut thousands of families with seconds-long review and unread logs; Commission promised audits, AI Act seen as paper compliance. Restrictionists surged; mayors froze data-centre permits. Counter-signal: Delft AI-designed solid-state battery interface doubling lab cycle life, licensed by automakers, procured into gigafactory pipeline.
+
+By December four programmes closed — gigafactory funding, agentic containment, middle-power pact, essential-services fallback — replaced by emergency regime pooling export authorisations for maintenance/spares to trade for chips and licence restoration; swap talks underway at year-end with conflicting reports.

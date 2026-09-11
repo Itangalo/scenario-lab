@@ -1,0 +1,10 @@
+### The weights land, the desks hold
+Autumn brought the release everyone had warned about. Within days of publication, the new openly available model was running on private servers across the Union, close enough to the closed frontier that clinic staff could feel the difference in the fraud attempts arriving at their desks: cleaner letters, better impersonations, faster iterations. The restoration playbook absorbed the first wave — offline fallbacks, clean images, extra checks — but redress queues that had shortened in spring lengthened again by November.
+
+The Bridge successor lines held where it mattered. In the three hit states overtime and mutual-aid rosters kept desks open through winter sickness peaks, and a third small payout round went out before Christmas. That delivery registered. Mayors who kept the compact were re-elected or survived censure motions, and council minutes show hardened rebuilds unblocked in most sites.
+
+But concrete still did not pour everywhere. In half a dozen municipalities works on hardened server rooms lost weeks to evening gatherings at site gates, noise complaints, and permit challenges. Mediation bought scheduling guarantees in two places; in the others contractors simply left.
+
+The front-door push made its first visible gain. The live-assistant map was finally published in October, and by December about a third of advertised steward posts were filled, with enforceable human-handling pilots and published wait-times in the worst-hit districts. Queues for a human appointment were long — four to six weeks in places — yet the fact of a posted time changed the tone. Staff still reported double work, and the health Council track missed its target for full staffing, leaving the promise partial and fragile.
+### Winter balance
+Services stayed open on the same constrained stack while frontier systems abroad moved forward. Endurance, again, paid for continuity.

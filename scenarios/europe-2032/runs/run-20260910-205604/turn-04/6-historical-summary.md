@@ -1,0 +1,7 @@
+Autumn intrusions and patchy spring hardening left edge exposed; summer open-release of near-frontier weights became unrecallable, while US export tightening and EU volume-licence alignment secured only conditional gigafactory compute.
+
+January preprint showed genome model producing viable human-infecting design with non-expert methods, prompting expanded health sampling. February Washington extended lithography servicing/export cuts to older ordinary-chip tools via US content, constraining Dutch supplier — read in Brussels/The Hague/Paris as EU hardware leverage spent by another.
+
+Commission folded bio-detection into Shield — wastewater/clinical kits in six-state exercises, surge sequencing contracts, stockpiles reprogrammed from health funds — with no new law. Cyber push targeted edge with fine forbearance for maintenance windows and 24h detector watch; large operators finished, but a third of small water utilities/regional hospitals deferred downtime, leaving sensors unmonitored.
+
+Spring contestation over export alignment yielded only renewed conditional compute language; factory siting stalled as councils linked water/power to welfare-automation dispute, lengthening permits. Welfare bias redress continued without clearing protests. By June services better instrumented for cyber/bio signals but more supplier-dependent and politically stretched; co-financing competition with no new funding/legislation persisted.

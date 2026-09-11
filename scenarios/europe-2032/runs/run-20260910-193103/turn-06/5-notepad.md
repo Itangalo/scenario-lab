@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t6: M1 InvestAI Gigafactories −3, M6 EU Transatlantic Continuity and Diversification Pact −2, M7 EU Agent Containment and Kill-Switch Protocol −2, priority M7 −1 = −8
+PROPOSAL BONUS: EU Agent Containment and Kill-Switch Protocol (cat 6, small) +4 — loss-of-control incident with days-long containment gap landed this turn and this answers it directly
+LEGITIMACY LENDS: capital 16, sentiment 18 -> +2 [applied after charge/finish/event terms, capped by sentiment]
+SOVEREIGNTY: 15 last turn, Tech sovereignty package finishes t6 +5, Gigafactories in flight +0, no capacity event, capability rose 3.0 −1 = 19

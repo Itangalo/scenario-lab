@@ -1,0 +1,11 @@
+### When the tools get loose
+The first half of 2027 arrives as two shocks at once. A largely automated ransomware sweep rolls across municipal services in several member states — appointment systems, permit portals, a hospital network forced onto paper for days. Responders describe model-written lures and lateral movement faster than their playbooks. Attribution stalls immediately.
+
+At almost the same moment, a genome model is shown producing a viable design for a human-infective organism, or bringing a non-expert within reach of one. Methodologists quarrel over the paper, but biosecurity circles treat it as a step-change. Within weeks a frontier-weight release lands close to the closed cutting edge and is pulled hundreds of thousands of times. What it carries cannot be recalled.
+
+### Crisis mode, half-built
+Brussels throws the hardening pact it agreed last autumn into crisis operation. Mandatory reporting is pushed through the Telecom Council, investment-bank loans are front-loaded to grid operators that open live telemetry, and mutual-aid teams are sent to the hardest-hit towns. Some operators comply; others still withhold feeds, and exercises become live firefights in places where sensors were only just installed. Defenders are visibly behind, and the public notices.
+
+On biology, the Commission launches a Shield through the health emergency and disease-control agencies: sequencing nodes in ports and large hospitals, joint procurement of broad-spectrum countermeasures, and a pact with the publisher-university group that declared a moratorium on printing AI-designed pathogen methods to route risky preprints to secure review. The moratorium itself splits researchers — praised as responsibility, attacked as censorship that merely pushes manuscripts offshore.
+
+Permitting for computing sites stalls while grid connections are diverted to hospitals and water plants. Washington remains distant. By June, detection is better than in December but still patchy, trust in digital public services has fallen sharply, and support for concrete protection holds only because the alternative looks worse.

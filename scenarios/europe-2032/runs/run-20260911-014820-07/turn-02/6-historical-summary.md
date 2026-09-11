@@ -1,0 +1,7 @@
+Autumn intrusion campaign pre-positioned in critical infrastructure across Europe, North America and Asia — breaker logins and control tooling staged without disruption — attributed to a freely available frontier-class model adapted for industrial intrusion, sponsor unproven.
+
+Winter saw release of a new open downloadable system near closed frontier, spreading widely; autumn intrusion tooling leaked and was repackaged, triggering clumsy but relentless copycat probes against municipal water and small grid suppliers from Rhineland to Moravia.
+
+Brussels surged its hardening programme in response: jointly procured detection retargeted to local utilities, mandatory patch-and-isolate playbooks, and EU-funded backup power/manual-override kits conditional on joint exercises. Larger operators improved; small municipalities lacked staff, and defensive isolations caused billing/monitoring outages.
+
+AI factory push narrowed to two advanced sites near secured power with slow permits; other bids frozen amid widened military exercises around Taiwan, higher shipping insurance, and chip-supply anxiety. Export leverage over chip-making equipment kept in reserve as too risky. By June Europe was defensive: prioritizing resilience, slowing compute build, with open frontier models beyond recall.

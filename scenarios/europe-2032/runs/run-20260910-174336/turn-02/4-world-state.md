@@ -1,0 +1,11 @@
+### A winter of black screens and wrong letters
+The attack came as a rolling wave in February. A ransomware toolkit assembled largely by automated coding agents ripped through municipal IT, hospital scheduling systems and subcontractors of two transmission operators. Screens went dark in city halls from the Ruhr to Lombardy; elective care was postponed in a dozen regions. Clean-up crews found model-written payloads that reconfigured themselves faster than signatures could be pushed. Defenders were visibly behind for weeks, and investigators said tracing the origin would take months.
+
+As services restored slowly, a second scandal broke. An ombudsman inquiry backed by a court finding showed an AI-assisted social-benefits fraud-risk system used in two member states had systematically flagged single mothers and migrants for repayment demands. The debate centred on the AI Act: critics said conformity assessments had been rubber-stamped, supporters said authorities had never enforced them properly. Brussels chose enforcement over new law, ordering a coordinated review and a remedy fund.
+
+### Shield work and sites
+The Commission answered the outage with a new preparedness pact: pre-positioned clean backups, manual-failover kits for energy and water operators, and a first Union-wide contingency drill planned for spring under civil-protection machinery. Threat-hunting teams carried over from the autumn sprint stayed deployed. Money came from reshuffled digital funds topped with investment-bank loans, prompting familiar grumbling about mandates and repurposed budgets.
+
+Gigafactory work inched forward. Sites in Spain, France and Poland secured provisional grid reservations and loan guarantees, but local permitting fights and connection queues again delayed ground-breaking. The permitting package remained stuck on priority access for European users.
+
+Public mood soured. Images of closed counters and erroneous debt letters overwhelmed earlier goodwill from shorter hospital queues. The Union was credited for moving quickly on backups, but blamed for oversight failures that let both the intrusion and the flawed benefits system persist.

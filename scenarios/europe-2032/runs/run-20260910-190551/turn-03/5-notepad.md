@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t3: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Frontier Capability Watch −2, EU Loss-of-Control Containment and Service Continuity Protocol −2, priority −1 = −11
+PROPOSAL BONUS: EU Loss-of-Control Containment and Service Continuity Protocol (cat 6, small) +3 — loss_of_control_incident and eu_frontier_access_denied both severe and this turn, this answers both directly
+LEGITIMACY LENDS: capital 26, sentiment 39 -> +2
+SOVEREIGNTY: 21 last turn, no capacity event finishes, Gigafactories + Tech package in flight +0, eu_frontier_access_denied t3 −2 (larger than member_state_defection t3), capability rose 2.0 −1 = 18

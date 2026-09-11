@@ -1,0 +1,7 @@
+H2 2028 shifted leverage to Washington: US elected a president pledging mandatory federal frontier review and tiered, security-vetted foreign sales, read in Brussels as future rationing though not yet in force.
+
+US used extraterritorial claims over Dutch lithography to press The Hague to extend servicing bans from advanced to mature tools and widen customer restrictions; EU's sole bottleneck was thus spent by another. Parallel export-licensing talk of volume licences for allies fixed no volumes and gave no written assurance to European buyers. Commission linkage of further Dutch alignment to guaranteed chip supply and pre-deployment model access failed.
+
+Brussels responded procedurally: trade examination of extraterritorial servicing ban, Council mandate for single EU line on lithography licences, and small pact to trade aligned controls for assured access. Failure-prediction desk-tests praised in TTC but still non-binding. Beijing acknowledged channel without reciprocity.
+
+Domestically little moved: Spanish/German gigafactory permits kept alive via brokered water/power deals but not unlocked; grid triage only partly cleared; twice-failing port passed only supervised. Strait exercises sustained insurance costs; benchmark rumours fused into press narrative of dependence. Autonomy strategy intact on paper, thinner in practice.

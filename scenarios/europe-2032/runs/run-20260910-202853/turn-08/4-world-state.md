@@ -1,0 +1,13 @@
+### Borrowing protection
+January opened with two shocks the Union had not budgeted for. First, a contested genome-model paper claimed a non-expert could reach a viable human-pathogen design with assistance — dismissed as alarmist by some, as reckless publication by others, but taken seriously inside biosecurity circles. Second, frontier labs began shipping at a cadence nobody had planned, with training loops that no longer waited on human researchers. Brussels read it as the moment the bottleneck moved from brains to buildings.
+
+The same weeks brought an invitation and a cure. Hit by the same probing campaigns, a group of allied states pooled live cyber telemetry and offered the Union a node in a joint command, alongside a biosurveillance pact with binding sample-sharing and a standing investigation mandate. At almost the same time, tailored therapies for previously untreatable conditions reached ordinary clinics abroad — real remissions, televised.
+
+The Commission's answer was a single package. Health and transport ministers signed the telemetry and biosurveillance accessions together, making ENISA the telemetry node and giving HERA money for sentinel sampling in the already shielded hospitals, with ECDC holding the investigation mandate. Paper-fallback kits and degrade-not-stop drills were extended to the sampling sites. No new budget was asked; rescEU, EU4Health and the tail of the absorption shield were repurposed.
+
+### Cure as consent
+To make the foreign cure read as Union delivery, the medicines agency fast-tracked conditional access while public hospitals prepared domestic production lines for the tailored therapies, with digital provenance labels and appointments booked through the shielded clinics. Queues formed early. Nurses who had drilled on paper now drew samples for sequencing.
+
+It worked partially. Shielded hospitals absorbed a spring wave of intrusions with attribution arriving in hours rather than weeks, and the first therapies reached patients by May. But quotas on frontier inference stayed tight, lithography bargaining stayed on paper, and unshielded suppliers kept falling. Dockside rumours sharpened: offline planners moving forklifts after quota cuts, foremen warning of stoppages after another teleoperated near-miss in Rotterdam and Lyon. Nothing confirmed, everything repeated.
+
+Europe ended June better detected, newly treating, still unable to build.

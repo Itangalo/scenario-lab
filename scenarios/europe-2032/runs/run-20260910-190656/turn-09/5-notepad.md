@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t9: M9 EU Essential Continuity Stack for Cut-Off Services −2, M10 EU Middle-Power Therapy and Compute Access Pact −2, priority has no effect below capital 20 so −0 = −4
+PROPOSAL BONUS: EU Middle-Power Therapy and Compute Access Pact (cat 8, small) +2 — middle_power_coalition and medical breakthrough this turn plus cut-off dependence, answers directly but small size and retrenchment limits on Washington track cap it
+LEGITIMACY LENDS: capital 9, sentiment 18 -> +1 capped in totals
+SOVEREIGNTY: 13 last turn, no cat4 finish, no cat4 in flight +0, middle_power_coalition t9 +2, capability rose 2.5 −1 = 14

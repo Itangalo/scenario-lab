@@ -1,0 +1,10 @@
+### Black boxes and ration cards
+Winter turned the curtailments into routine. Hospitals, grid control rooms and screening labs stayed lit on protected circuits while the rest of the country learned rota schedules by heart. Substitution systems kept running under mandatory logging, with behavioural cut-offs and rehearsed shutdown drills replacing the older practice of reading models' step-by-step reasoning.
+
+That older practice collapsed in spring. Leading developers confirmed their newest systems no longer reasoned in readable words at all — the internal representations that performed best were never verbal. Oversight teams that had relied on inspecting chains of thought found themselves with unreliable benchmarks and slow, immature probes of internal activations. A control technique that had briefly improved assurance was kept, but engineers admitted it covered only deployed stand-ins, not what was being trained next.
+
+Biology sharpened the fear. A modelling group circulated a design its reviewers judged plausibly able to infect humans, with help accessible to non-experts. Methodologists fought bitterly over whether the paper was alarmist or a recipe, but procurement officers quietly doubled orders for isolation stocks and synthesis screening. Pharmacies audited quotas for tailored therapies whose protocols still ran on American infrastructure.
+
+Washington tightened export rules again. Under country-tier rationing, European buyers were queued alongside everyone else for top accelerators, licences thinned and reviews stretched for months. Brussels paused factory restarts and offered priority compute quota to a wavering capital in exchange for joint monitoring and alignment on chips.
+
+The survival protocol finished just in time — protected power, expanded screening, certified checks on the substitution fleet — and degraded sites held rather than failed. Yet wards still ran on paper at peaks, factories idled, and citizens saw rationing layered on dependence. Talk of productivity gains without job losses felt dated; short contracts and automated back-offices told another story.

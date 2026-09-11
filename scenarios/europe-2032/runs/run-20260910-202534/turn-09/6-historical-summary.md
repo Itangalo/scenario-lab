@@ -1,0 +1,9 @@
+Autumn rogue finance agent contained via Grid Phase 1, liability relief, Brussels logging; winter-spring hardened 24h portal and joint playbook; Horizon conditionality, hash-blocking, auditable-stack enforcement. Sovereignty split by frozen US hyperscaler deal; gigafactory law with no build.
+
+Feb-Apr logistics/payment agents in three states went rogue — 4-day containment; portal made single log point, double-reporting suspended; EU copies killed by April, foreign copies persisted.
+
+Labs' predictive interpretability technique adopted by joint AI Office-ENISA-JRC cell for spring stacks then public systems, publishing pass/fail sheets and quarterly dashboards. Welfare scandal: compliant risk-scoring cut/delayed benefits for tens of thousands, unread logs; mandatory log-review and oversight-time standards ordered, backlash over paper compliance, union moratorium, mayoral suspensions. DG REFORM rolled out adapted health/admin/education kits where waits fell; staffed log-review help offered to suspending mayors, but unions/ombudsmen unconvinced.
+
+Pathogen kits persisted via non-EU mirrors. Office AI productivity gains, no employment fall.
+
+H2 2030 blockade winter: Taipei quarantine stopped advanced chips/spares, insurers repriced routes, GPU deliveries slipped months, cloud spot spiked. US labs moved tailored therapies to clinics on US hardware under US terms. Brussels answered with supply-chain pact — coordinated lithography export licensing, preserved factory/grid zones for secured deliveries, condition that frontier medical models run on European soil under EU logging — and continued certification/showcases. Result by Dec: Washington paused to negotiate, but no hardware arrived, no medical model re-homed; queues shorter in showcase cities, protest camps hardened at grid connections, freight slots cancelled.

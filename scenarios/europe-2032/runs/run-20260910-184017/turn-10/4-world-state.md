@@ -1,0 +1,15 @@
+### War reaches the cable
+In February American and Chinese forces exchanged strikes after months of warnings about a closing window. Within days fabrication plants, subsea cables, satellite links and data centres were declared legitimate targets. Two transatlantic cables were damaged and traffic rerouted over congested backups. A power incident near a southern fab park forced precautionary shutdowns. No European city was struck, but Europe was in the blast radius from the first week.
+
+On top of the shooting came two cold cuts. Washington ordered a halt to leading-model access for European users at short notice, with no reason given and no appeal channel. Hospitals, ministries and logistics firms that had built workflows on the service saw errors cascade overnight. In parallel Washington used its jurisdiction over American technology to force a further halt to servicing of older lithography equipment, pressing the Dutch supplier to extend controls beyond leading-edge tools. The Hague protested, Brussels declared servicing a Union security interest, but machines due for maintenance went unserviced.
+
+No new frontier compute came online in this period, and no efficiency breakthrough was deployed to offset the damage. Leading capability stalled, and open-weight diffusion stalled with it — damaged links, halted servicing and loss of access left no basis for new releases or wider deployment.
+
+### Holding the lights on
+The Commission activated civil protection channels, cyber command links and pre-authorised curtailment. Energy, telecoms and finance operators went to isolation-ready operation. Health authorities triaged diagnostic and triage workloads onto domestically hosted systems and vetted openly available models already on hand. Rationing boards gave remaining compute, spares and power reservations to continuity users first.
+
+It partly worked. Certified monitors developed the previous year — now validated on the finance agent family behind the earlier loss of control — became the mandatory gate for any agentic system allowed to stay on, and were adopted because operators wanted them. Isolation drills kept grids degrading rather than failing. But this only held the line: monitors prevented further failures, they did not add new safety capacity, and rollout of vetted models to health, finance and telecoms was delayed by staffing shortages, congested networks and wartime triage. Full deployment will take further turns.
+
+A contested genome-model study claiming a viable human-infecting design with non-expert assistance circulated inside biosecurity circles, fuelling calls for restraint. A genuine materials result from a European lab — a solid-state electrolyte synthesis that cut formation costs sharply — offered a rare industrial bright spot, but pilot lines depended on tools now under dispute and remain blocked.
+
+Distressed power and cloud assets that Brussels had hoped to buy cheap went instead to cash buyers who stripped monitoring obligations, a loss noted only in trade press footnotes, further eroding continuity reserves.

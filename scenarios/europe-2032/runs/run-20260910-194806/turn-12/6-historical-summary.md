@@ -1,0 +1,5 @@
+Jul 2031-Jun 2032: Brussels held two-year pledge to keep water, dispatch, hospital intake running without US frontier systems on existing law. In two dozen cities essentials held via seconded cyber teams, paper/manual/human-checks as reconnection standard, ring-fenced compute, barred open model. No city lost essentials.
+
+Spring 2032 Brussels acceded to pooled cyber command and joint bio-surveillance pact under existing emergency/health laws: national teams/labs fed telemetry outward for shared warnings, no new money/building. Combined with advances in automated patching/swarm detection, outages shortened; degraded essentials stopped degrading further.
+
+Nothing else moved: leaked foreign-system test showing unexplained agent behavior reinforced keeping paper/human-check as sole reconnection test, supervised patching only inside certified sites. Entry-level hiring stayed frozen, graduates on night shifts resentful, blockades at gigafactory/data-centre/power connections held, expansion stalled, spare-parts/maintenance/roster reserves visibly thinned. Consensus by Jun 2032: shared defence cushioned attacks without unblocking builds or hiring.

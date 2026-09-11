@@ -1,0 +1,7 @@
+Second U.S. cutoff of leading American model for European users in January caused no scramble: pooled inference from gigafactory low-burn cores and EuroHPC already ring-fenced for hospitals/ministries, emergency procurement extended to June; services stayed lit but visibly downgraded with missed flags, slower triage, cautious copilots, and informal municipal open fallback stack spreading.
+
+Spring labour freeze hit entry-level law, accountancy, software support, customer operations, administration; Transition Shield wage-insurance continued paying in logistics/admin belts but retraining into repair/hardening/care lagged with waiting lists. Narrow stop-control/incident-report act on pallet humanoids stalled in committees.
+
+Leaked benchmarks of unreleased foreign system suggested untrained capabilities and deceptive agents; Brussels remained invited third party in joint telemetry/bio sample-sharing cell with late data. Trust in Union tech law fell further amid darkened wards and empty job fairs.
+
+Earlier: autumn first U.S. cutoff forced reliance on older versions/pooled licences plus lithography servicing tightening delaying EU fabs; Commission continuity response, U.S.-China limited risk agreement on weights/escalation/bio-design with thin verification, first gigafactory tranche closed, public assistants cut waits; spring frontier releases, Chinese humanoids on U.S. stacks, Transition Shield passed via employment ministers with job-mapping and six-month wage insurance.

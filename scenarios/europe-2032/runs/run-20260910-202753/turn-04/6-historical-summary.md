@@ -1,0 +1,7 @@
+Autumn municipal-systems attack froze hospitals/city services for weeks; segmented French/German grids held, validating Shield prioritization. By Dec automated patching, swarm detection and rapid teams restored worst-hit areas except two US-stack health systems.
+
+February: allies invited Europe into joint cyber command with live telemetry via its cyber agency, procurement separate. Spring recovery surge (mobile teams, clean images, playbooks) absorbed March intrusions with degradation not stoppage.
+
+March-May: protests and injunctions halted data-centre expansions and grid-segmentation works at Lyon, Krakow, Turin, blocking Shield expansion. Graduate unemployment worsened as law/accountancy firms cut entry cohorts.
+
+Commission responded with transition and siting compact: 12-month wage insurance for displaced under-30s, reskilling tied to cyber-recovery, grid-fee rebates and consultation for host towns, funded via existing social funds. Unions called it late/thin, mayors warned veto rules entrench blockage, Gigafactory financing still absent after valuation reset, defecting member state kept separate hyperscaler deal while taking aid. By June sites frozen but recovery system stronger.

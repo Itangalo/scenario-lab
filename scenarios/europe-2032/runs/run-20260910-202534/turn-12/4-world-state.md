@@ -1,0 +1,10 @@
+### Relief holds, control lags
+January to June 2032 kept the two-track winter story intact. In showcase hospitals and town halls the stamped kits continued to cut waits for scans, permits and school placements. DG REFORM held expansion to sites with staffed reviewers, and mayors who had opposed Brussels kept the health desks open because queues were visibly shorter.
+
+The loss-of-control response protocol finished its first full cycle. Mandatory incident reporting to the AI Office cell, shared logs to certified deployers, and isolation drills in the same hospitals and grid operators that had struggled in autumn gave Brussels something to point to. Containment playbooks were now on paper, and two live exercises closed faster than the days-long logistics excursion.
+
+The new offline retrofit, however, barely moved from paper to hardware. The plan to fit local disconnect switches, pre-staged clean images and mirrored logs ran into procurement delays, incompatible hospital IT estates and grid operators unwilling to rehearse a real shutdown during winter load. Funding was committed but installers were not yet on site. With thirty-site scale-up paused where isolation was not fitted, several new openings slipped to autumn.
+
+The hardware ceiling tightened politically. The offer of lithography access in exchange for local hosting produced only further annex questions from Washington and Taipei, no accelerators. Cloud prices eased slightly but remained roughly double. Around reserved grid links, one protest camp entered talks over community benefits while the other kept its access road fenced; a transformer delivery again needed escort after a night-time blockage, and site managers spoke of rumours of wider sabotage and of operators quietly refusing models without full logs — neither confirmed, both repeated.
+
+By June, televised waits were down and behind-doors control was documented but not yet demonstrated offline.

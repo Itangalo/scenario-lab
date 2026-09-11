@@ -1,0 +1,11 @@
+### The queue at forty seconds a case
+In autumn an ombudsman report and a court judgment converged on the same welfare scoring system used in several municipalities: risk flags had cut benefits and triggered fraud referrals for thousands, with appeals succeeding at striking rates. Logs existed and were complete. No one had read them. Caseworkers described signing off a queue at well under a minute per file, the human oversight box ticked by design.
+
+Press published staffing ratios and payout screenshots. Opposition parties called the AI Act a paper shield; mayors suspended the deployments while ministries blamed vendors and vendors blamed guidance. The Commission chose to defend the law by attacking its enforcement: the system was high-risk, the obligations were breached, the fix was to enforce them.
+
+### Redress, audits and delayed permits
+The joint enforcement mission moved fast on paper and slower in town halls. Market-surveillance authorities ordered suspensions, case-by-case review and compensation through existing redress channels, and the AI Board issued an interim floor on reviewer workloads, four-eyes sign-off and quarterly attestations that logs had actually been examined. Publication of logs and oversight ratios began in two countries and stalled in a third over data-protection objections.
+
+Some officials floated linking clean audits for municipal systems to fast-track energy permits for new computing plants, but no such linkage was adopted this turn. Host regions had already warned such conditionality would be read as collective punishment, and host-deal talks produced draft texts but still no signatures pending further negotiation and staffing. Hardening exercises continued, again with gaps between live drills and tabletop versions.
+
+Universities welcomed sandbox power tied to reporting; the pooling collectives split, part accepting, part continuing to build outside. Washington kept interim model access unchanged. By December anxiety had hardened into distrust: polling showed AI associated less with jobs than with unanswerable bureaucracy.

@@ -1,0 +1,7 @@
+Gigafactory shells fenced and reserved but not at volume, stacks foreign, power contested; machine-speed attack via public networks froze services and isolated energy contractors, with cover-deal cities recovering faster.
+
+Licences revocable under Washington review; foreign therapies cleared lists, Sino-European alloy stayed lab news. Hyperscaler defection countered by solidarity pact (joint procurement, revocation compensation, audit-access); defector kept pilot nominally inside.
+
+Protests stalled grid works, hiring frozen, mood sank over unreadable AI and outages.
+
+Then pandemic mode: preprint genome model enabled a designed pathogen causing severe atypical pneumonia on three continents. Borders tightened, elective care cancelled. Brussels triggered emergency: HERA pooled procurement, binding sample-sharing under biosurveillance pact, civil protection mobilised; islanding drills extended to hospitals, labs and recovering contractors. Clinic-model fight frozen — defector pilot limited to continuity use under audit/compensation for liability cover; procurement subordinated to stocks, sequencing and telemetry. Small EU lab's interpretability certification for triage/surveillance models widely adopted, making bed/test queues legible. Gigafactory works stalled, crews pulled, transition funds to income support, reservations rewritten for continuity; mood collapsed from waiting lists to triage queues.

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t3: M1 InvestAI Gigafactories −3, M2 Tech sovereignty package −3, M3 EU Critical Systems Shield −3, M4 EU OT Intrusion Shared Registry −2, M5 EU Third-Pillar Accession to US-China AI Risk Accord −2, priority M5 −1 = −14
+PROPOSAL BONUS: EU Third-Pillar Accession (cat 8, small) +3 — us_china_agreement landed this turn and this answers exclusion directly, plus member defection shows fragmentation cost, small size limits value
+LEGITIMACY LENDS: capital 16, sentiment 38 -> +2
+SOVEREIGNTY: 18 last turn, no capacity event finish, Gigafactories in flight +0, member_state_defection t3 −2, capability rose 1.0 −0 = 16

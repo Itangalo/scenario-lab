@@ -1,0 +1,12 @@
+### Concrete, code and capital flight
+Autumn 2029 delivered one partial completion wrapped in two shocks. The first gigafactory shell was declared grid-ready, transformers humming on guaranteed power, even as lawyers fought the second site's injunction court by court. With the Tech sovereignty package finishing and the first site operational, strategic-autonomy gains were material even with the second site delayed. Accession to the joint telemetry pact was signed in Washington, with localisation annexes intact and European analysts admitted to shared incident feeds.
+
+Then the attack came. A largely automated ransomware sweep, assembled with model-written tooling, moved through municipal administrations, two hospital groups and a regional grid operator within hours. Emergency procurement of the patching toolkit blunted the worst of it, and mutual-aid teams moved between member states, but emergency departments reverted to paper and evening news carried queues, not briefings. Attribution remains open.
+
+Days later, capital fled the sector. A valuation reset in the US cancelled build-outs that European planning had quietly counted on — leased accelerator tranches, options on power, a co-development lab. Frontier training budgets shrank for the first time, slowing the open release cycle; no major new capable open release landed, but leaked weights and incremental diffusion still crept forward, narrowing the gap to the frontier.
+
+In parallel, a contested genome-model paper claimed a non-expert could reach a viable human-infecting design with assistance. Biosecurity circles split over method and publication, but sampling orders went out anyway.
+
+The Hague fight sharpened. Washington tightened chip and model controls again, preserving volume licences for allied buyers while cutting off others, and pressed for servicing cuts on older lithography tools. Brussels held its freeze, insisting on a jointly agreed list and written access quotas. No numbers were put on paper, a limited drag on autonomy gains but not reversing the completion dividend.
+
+The Commission's answer was containment: isolation drills, backup procedures and weekly bio-sampling under existing emergency authorities. It steadied services without restoring confidence. Offices that had rehired kept their juniors, but hiring froze again as boards waited for valuations to settle.

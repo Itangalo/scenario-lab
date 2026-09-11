@@ -1,0 +1,12 @@
+### Holding the line
+Autumn 2027 brought a second supply shock. Washington tightened chip and model export rules again, and for weeks European ministries did not know whether allied buyers would keep volume licences or be rationed alongside adversaries.
+
+Brussels answered with a hurried bargain. Trade ministers mandated joint negotiation: assured licences for inference needed to run hospitals and essential services hosted in Europe, in exchange for coordinated licensing of lithography spares, chemicals and other choke-points where European suppliers matter, plus guarantees for factory sites and grid connections. The deal did not restore the lost leading American model, but it kept allied hardware and cloud capacity flowing. Officials presented it as leverage working.
+
+At home, two emergency programmes crossed the finish line. The grid-port-water hardening effort, launched after dormant intrusions were found in relays and port systems, completed its first full cycle: joint audits, segmented backups, and newly published automated patching and swarm-detection tools moved from pilot into daily operations. Operators said integration was still incomplete, but exercises in France, Germany and Spain for the first time contained a simulated intrusion without resorting to shutdowns.
+
+The fallback for cut-off users also landed, messily. With American queries still refused, EuroHPC centres and early pilot halls took over triage summarisation, administrative and industrial workloads on European-hosted open models. Performance was visibly worse, some hospital workflows had to be withdrawn and vendors extracted co-financing for rewrites. Yet clinics stayed open and ministries functioned, which in February had not been certain.
+
+The cost was political and financial. Gigafactory construction and the broader technology package continued only on protected public money from the investment bank and reprogrammed research funds, as private capital stayed away after the valuation collapse. Permits were held, but private co-location deals did not return.
+
+Public mood stabilised rather than recovered. Relief that lights stayed on and hospitals adapted mixed with resentment at dependence and at degraded tools. Press coverage credited improvisation more than foresight, and opposition parties kept up the charge that the February cutoff should have been anticipated.

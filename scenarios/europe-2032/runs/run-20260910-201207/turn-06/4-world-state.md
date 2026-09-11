@@ -1,0 +1,11 @@
+### The lights stay on, the logic goes dark
+Winter brought a second large automated assault. This time the entry was a trusted software component, spreading extortion and wiping routines through city administrations, hospitals and energy contractors before anyone mapped how far it reached. Services thinned rather than collapsed — appointments delayed, billing frozen, two grid operators running segmented for weeks. Engineers said the tooling had been assembled at machine speed. Investigators said identifying its authors would take months.
+
+As defenders counted hosts, the leading labs announced their newest systems no longer think in words. The internal steps that auditors and safety teams used to read are gone, replaced by representations no person can follow. Brussels evaluation staff called it a capability gain and an oversight loss at once: the methods Europe relied on to check foreign clinical models suddenly apply to black boxes.
+
+### Cures on licence
+Those same foreign models delivered the half-year's bright news. Tailored treatments for previously untreatable conditions began clearing waiting lists in clinics using European interfaces. Patients went home; ministers cut ribbons. Then came the invoice footnote — licences revocable, terms under review in Washington, supply routed through infrastructure Europe does not control. Gratitude curdled into unease in press coverage.
+
+Washington's new administration took office promising moratoriums, hiring and court curbs, and levies on the sector. Chip and model licences for allies remain but explicitly conditional. Freight and insurance markets stayed nervous after naval pressure in Asia.
+
+In Brussels, the Commission tied two bargains together: accelerated zones for its large compute build, with permits conditional on hardened grid connections, and a new pact offering liability cover and joint cyber teams to municipal water and power firms in exchange for pre-signed access for outside engineers and retrofit orders. Some holdout cities signed; others went to local courts to keep control rooms closed. Forensic work on the poisoned update and the clinic models was given to the Union's small new evaluation lab. Job-centre money kept flowing while graduate hiring stayed frozen, and public mood sank again under outage maps.

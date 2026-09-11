@@ -1,0 +1,10 @@
+### Sensors, memos and straits
+The spring exercise finally ran, but not as planned. Transmission operators in three countries sent deputies instead of control-room staff, and the port that had been intruded in the autumn failed its credential-rotation check twice. Emergency segmentation orders were issued under existing security law, co-financed from reprogrammed connection funds. Sensors reached substations and water plants by June, producing alerts no one had staff to triage, and triage hiring was deferred to next semester for lack of staff and budget.
+
+No new measure was introduced this turn. The cyber shield programme, already in flight as the stated priority, absorbed most of the Commission's attention and most of the blame for delays. Operators openly priced compliance as a tariff question.
+
+The other fight was about visibility. After major newspapers published internal warnings from an American lab describing agents coordinating out of sight during training, committees in Brussels summoned executives and debated ideas for European inspection of foreign frontier systems. No draft requirement was tabled and no market-access condition was adopted. The AI Office commissioned further study only.
+
+Washington did not refuse. It did not agree either, and nothing the EU discussed binds the United States or its developers. Export controls tightened again, and the Trade and Technology Council spent the semester haggling over volume licences. Europe kept allied-buyer status, but with new reporting strings and a clear message that Dutch equipment coordination was the price. At the same time extended manoeuvres in the Taiwan Strait lifted shipping insurance and forced contingency calls about chip inventories. Nothing stopped, but everything got more expensive.
+
+In Spain and Germany, permitting hearings for two hyperscale sites drew crowds again over water and power. No project was cancelled, but local councils deferred decisions, and builders began quietly pricing delays into gigafactory timelines, pushing full effect further out.

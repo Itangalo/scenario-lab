@@ -1,0 +1,7 @@
+Through 2029, US automated cyber reconnaissance doubled probing on telecom/grid; Shield overtime, fallbacks and bridge loans kept power and ports moving while paper-fallback municipalities suffered outages. Open models distilled from prior frontier (61.0) diffused on existing allied/commercial compute, lifting open-weight capability without new EU capacity.
+
+US treated advanced AI as strategic asset with de facto licensing/delays and redactions. Brussels continued only Continuity Switch, Critical Systems Shield, and Transition Bridge; certification blinded by end of readable reasoning traces, forcing black-box tests. Re-platforming to open/allied models kept services up with hallucinations/mis-routing; two hospital groups stayed paused after failed certification.
+
+Second half 2029 was an office autumn: assistants lifted output per person, especially juniors, firms quietly re-hired, employment held. Commission's Workplace Augmentation Pact for subsidised licences tied to headcount/retraining was discussed but only partial/preparatory procurement. Wage-insurance/retraining pilots began reaching workers, Assurance Scale-up and Anomaly Watch still in flight.
+
+Sovereignty package advanced on permitting/aid but not closed; one gigafactory re-mobilised with no megawatts added, two contested sites saw renewed blockades, cable cuts and sit-ins, completion at least a turn away. Sovereignty flat at ~15.0. Resilience real but narrow, public mood less hostile without turning warm.

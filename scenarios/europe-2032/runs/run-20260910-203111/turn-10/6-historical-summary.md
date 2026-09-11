@@ -1,0 +1,5 @@
+By H1 2031 the Union held on degraded fallback without restoring trust or jobs.
+
+Hospitals, grid and ministries stayed on overtime, manual procedures, isolation drills and sequencing. ENISA rolled out automated patching and swarm-behaviour detection as maintenance, containing a spring municipal intrusion without service loss — breathing room only. A frontier control result for predicting/certifying model behaviour was adopted by labs and made a Commission hiring/procurement condition, but changed little on older EU hardware with the leading US model still withdrawn.
+
+Entry-level hiring did not return; graduate intakes stayed thin, youth queues grew. The Entry-Level Transition Guarantee became the sole priority, reprogrammed via employment ministries with wage-insurance and retraining tied to EU-system public hiring — places announced, payments slow, job protests merged with dependence anger. A joint audit showing stable mortality under manual fallback was promoted as proof of competence, believed locally, dismissed elsewhere. Endurance Fund closed into regular budgets. Lights stayed on, hiring freeze did not lift.

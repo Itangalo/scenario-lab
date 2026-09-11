@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t4: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Frontier Evaluation and Assurance Capacity −2, EU Systemic Cyber Cover Backstop −2, EU Defensive Breakthrough Rapid Adoption −2, priority −1 = −13
+PROPOSAL BONUS: EU Defensive Breakthrough Rapid Adoption (cat 6, small) +2 — answers insurer withdrawal and intrusion exposure from last two turns, plus investment freeze strangling private security spend this turn
+LEGITIMACY LENDS: capital 15, sentiment 34 -> +2
+SOVEREIGNTY: 22 last turn, no cat4 finish, in flight +0, export_control_escalation t4 −2, capability rose 1.0 −0 = 20

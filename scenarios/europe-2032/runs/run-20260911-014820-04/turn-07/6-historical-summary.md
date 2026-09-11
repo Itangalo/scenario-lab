@@ -1,0 +1,5 @@
+Autumn brought automated cyberattacks on municipal IT, hospital admin and two grid operators, forcing paper/manual fallback; attribution open at Christmas. US lab showed longer-horizon autonomous tool-use in demos, sustaining deployment pressure.
+
+Brussels launched restoration surge via emergency teams, joint units to hardest-hit towns, mandatory offline backups and manual drills — partial rollout, services degraded not stopped where crews arrived, queues elsewhere.
+
+Permitting/grid reservations became law and bio-monitoring declared operational, but chip-less sites stayed fenced fields hit by vandalism/fence-cutting; wage/staffing pacts closed with shorter queues in aided cities, gaps elsewhere. Modest interpretability/control advance entered EU public deployments; tailored-therapy supply deals gave positive coverage. Washington allied-access still in TTC drafting with no EU onboarding; Taiwan Strait insurance rose; Rotterdam/Hamburg/Lyon robot audits postponed for cyber triage.

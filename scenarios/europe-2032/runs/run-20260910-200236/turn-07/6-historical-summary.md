@@ -1,0 +1,7 @@
+Second H2-2029 automated assault — hospitals, municipal services, poisoned contractor update across three states, AI-built tooling suspected, attribution open — bent but did not break services; rehearsed joint triage cells, assistant-isolation routines and thin transformer/control stocks credited, though non-capitals again waited longest. No new standing capacity beyond emergency surge.
+
+Washington tightened export controls under keep-at-home administration: monthly allocations, volume licences, review queues rationed allies; European orders slowed, permit fights in FR-DE-NL sharpened amid subordinated-slot leaks. Reports of Washington-Beijing contacts on weights security/escalation with unclear limited understanding; Brussels got no text/briefing.
+
+Brussels sole new measure: sought observer standing in any US-CN understanding offering incident/eval data for supply continuity — talks started, no exemption, uplift or signature. Sovereignty data-centre framework/€200bn pledges and gigafactories remain on hold pending subsidy clearance and chips.
+
+By Dec workplace vouchers/mutual-aid counted delivered, cyber surge stood up; public ambivalent amid assistant fraud/job fears and flickering services.

@@ -1,0 +1,10 @@
+### Plugged in, not yet powered
+Brussels said no to anything new. With political reserves in single digits, the Commission refused a fresh programme and told ministries to work through what was already funded — above all the biosecurity and continuity corps now running municipal pilots.
+
+That restraint shaped the autumn. Health authorities signed the binding sample-sharing text into the pooled biosurveillance pact, and cyber agencies began piping real-time telemetry into the joint command. When a late-year ransomware wave brushed hospitals and city networks, the shared feed flagged the tooling faster than national centres had managed alone, and pooled reference samples helped dismiss another port-clinic scare within a day. Two islanding drills held lights and water on; one failed when backup contracts had not been tested.
+
+The gigafactory wager formally paid out on paper. The investment vehicle closed into law with its zones and guarantees, and the verification bridge with Washington was declared complete after months of audit talks. Neither moved chips. Deliveries stayed queued behind domestic buyers, builders broke no new ground, and credit remained tight. One large member state kept its separate discounted arrangement with an American hyperscaler, undercutting the common line ministers defended in Brussels.
+
+Ministers toured clinics and permit offices where public-sector tools had cut waiting lists, which steadied coverage without lifting it. Ward disputes over triage software and paused data-centre plots kept opposition visible, and rumours of blocked resilience sites and quiet commercial queue-jump offers circulated without confirmation.
+
+By December Europe was inside the rooms it had sought — better warned, slightly better drilled — but still waiting for the access that would make the shield affordable.

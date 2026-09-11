@@ -1,0 +1,8 @@
+### A shield that finally fits
+Autumn brought the first good news on defence in years. Researchers inside and outside Europe demonstrated automated patching that kept pace with newly found flaws, and detection that flagged coordinated probing rather than single signatures. For grid and hospital operators who had spent the spring installing sensors, it felt like the tools had finally caught up with the manuals.
+
+Brussels moved fast to bottle it. Emergency health authorities and the EU cybersecurity agency repackaged the advance into plug-in rules for the municipal patch kits — the same boxes that had sat unopened in small town halls. This time installation teams came with them, paid from reshuffled digital and energy funds and tied to incident reporting. Large cities extended coverage to water plants and clinics; a second eastern utility stopped a swarm probe in November, and ministers repeated the story in every council debate.
+
+The main grid-hardening programme formally closed in the autumn, with auditors signing off substations and joint exercises finally held. Operators admitted retrofits were still uneven — rural councils short of staff lagged, phishing built with downloadable models still got through, and data-centre siting hearings remained hostile.
+
+Compute plans stayed on paper. Permits, sites and grid reservations were kept warm but no new money was committed, and talk of a voluntary lab pause faded without action. Offices kept using assistants, now with fewer outage headlines. Relief was real, but thinly spread.

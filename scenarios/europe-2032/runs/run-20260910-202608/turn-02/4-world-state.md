@@ -1,0 +1,8 @@
+### Audits, permits and an ask in Washington
+January began with auditors fanning out. Under emergency orders, transmission operators, the container port and the water utility opened breaker rooms and relay cabinets to teams from ENISA and national regulators. They found more leftover tooling — dormant accounts, mirrored configurations — but no new intrusions. Cross-border containment exercises in spring went ahead, patching at machine speed now standard in energy. Operators reported calmer monitoring, though engineers privately warned segmentation was still aspirational.
+
+The Shield collided with town halls. Energy-security derogations for backup controls bought time but cost goodwill; two councils kept gigafactory-linked data-centre permits frozen over power prices and water, despite price guarantees and caps offered by Brussels. Concessions traded in accelerated-permitting zones unblocked one site for preparatory works, the other stayed in court.
+
+In parallel, DG Trade assembled the new leverage front. Dutch, Japanese and Korean officials linked lithography, materials and memory into a single request to Washington: published criteria, an allies exemption and an appeal channel for chip and model licences, plus smoother flows for European builds. American officials listened politely and changed little; licences kept coming with conditions attached. ASML shipments moved, slowly.
+
+By June grids were better watched and exercised but not yet hardened, builds were months late, and dependence on American approvals remained the binding constraint. Hospital and permit digitisation wins got airtime, but local news led with energy costs and water.

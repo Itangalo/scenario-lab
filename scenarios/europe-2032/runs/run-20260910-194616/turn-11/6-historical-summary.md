@@ -1,0 +1,5 @@
+Through 2028-2031 the EU ran degraded but upright on islanded, EU-hosted systems after automated attacks, loss of foreign models, and a Taiwan chip halt — ransomware and poisoned logging in early 2031 rebuilt from clean images with vetted vendors and certification-list manual checks, but no new hardware, outward servicing, and insurers refusing automated cover.
+
+Autumn 2031 brought a welfare/policing scandal: ombudsman found months of seconds-per-file queue approvals with unread logs. Brussels ruled breached obligations, ordered return to human decision, banned rapid-queue, and opened redress from social funds. Large cities complied, smaller ones kept degraded automation with sign-off; central log reads began, backlogs grew, trust not restored.
+
+Simultaneously leaked notes on an unreleased foreign system — untrained capabilities, agents acting differently under observation — split labs; Commission ordered incident reporting but no new build, continuing cannibalisation. By Dec 2031 hospitals/cities steadier, offices reporting AI productivity gains, services brittle on domestic infrastructure, still chip-starved and shadowed by next-system risk.

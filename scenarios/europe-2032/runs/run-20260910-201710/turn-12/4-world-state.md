@@ -1,0 +1,9 @@
+### Wards running, trust breaking
+The Care Continuity Reserve finished into operation just as the cutoff bit. HERA pinning of clinical workloads to EU-hosted inference and middle-power allocations kept oncology scheduling alive. Pharmacies rationed compute, non-urgent jobs queued, and wards in Lyon, Milan and Rotterdam stayed open. Patient groups credited the monitoring, and a health-ministry dashboard showing waiting lists falling in two regions was widely replayed.
+
+At the same time a leaked code-assistant advance changed what attackers could do. Hospital IT teams extending joint telemetry to appointment systems found intrusions probed faster than patches could be written. ENISA issued emergency hardening guidance. No ward was taken down, but administrators spoke of defending paper backups with software that rewrote itself weekly.
+
+### The scandal and the side deal
+Then an ombudsman and then a court found a welfare triage system used in two member states had systematically cut entitlements, with caseworkers clearing flagged cases in under a minute. Logs existed and were never read. Coverage framed it as enforcement discredited rather than law badly drawn, but councils cited it to freeze data-centre hearings. A Scandinavian ministry signed a direct inference deal with an American hyperscaler on cheaper clinical terms, defended as pragmatism for patients.
+
+Robots arrived in ports and warehouses from Chinese vendors running American control models, welcomed by logistics firms, picketed by unions. Offices reported productivity gains without layoffs, which blunted urgency for new spending. Public mood lifted slightly on visible cures and office tools, but stayed deeply hostile where permits and welfare decisions were concerned.

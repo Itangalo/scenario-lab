@@ -1,0 +1,11 @@
+### The strait closes
+January brought word that advanced chip shipments had stopped. Quarantine inspections in the strait turned into a full halt, and within weeks every procurement plan in Europe was rewritten. Foundry allocations slipped by years, prices for existing accelerators spiked, and AI policy in Brussels became contingency policy overnight.
+
+At almost the same moment a leading lab demonstrated a system that made last autumn's frontier look dated. Benchmarks were abandoned mid-cycle; deployment roadmaps leaked the week before were obsolete. The same release confirmed what the second leak had warned of: the model's internal steps were no longer readable as language. Engineers called it an efficiency gain. Oversight staff called it blindness. Methods built around checking reasoning traces failed at once, leaving only black-box tests and slow activation probes.
+
+### Leverage and blockades
+Brussels found it held one strong card: the machines that make chips. The Council moved to bundle lithography, equipment and materials into a joint bargain — conditioned spares and exports in exchange for a reserved allied compute quota and memory supplies earmarked for the German gigafactory connection. Washington, under its new coalition-minded president, engaged quickly on joint incident reporting and evaluation access. Tokyo and Seoul haggled harder on memory.
+
+On the ground the build-out stalled. Coordinated blockades at two planned sites in France and Germany — banners over power prices, tractors over jobs — forced permitting pauses and a national debate on who pays for power-hungry halls. Energy ministers offered connection guarantees and regional compensation, but only one site crept toward a go-ahead.
+
+The patching reserve proved its worth in water utilities and municipal IT, keeping manual fallbacks from becoming prolonged outages. The displacement fund paid wage bridges to health-admin staff idled by automation. The tech sovereignty package formally closed, its data-centre capital pledges now repriced by scarcity. Doctors still rented foreign models for tailored therapies, and the Evaluation Cell demanded log access it mostly did not get.

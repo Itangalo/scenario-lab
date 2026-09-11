@@ -1,0 +1,9 @@
+Extended dependence persisted into 2029: US continuity pledge never signed; US model cutoffs forced shift to slower European-hosted open models and paper fallbacks, prompting outcry and JRC-led review.
+
+Frontier leaked unrecallably: open weights for code/maths/cyber widely downloaded giving attacker uplift; office studies showed junior-led productivity gains without mass layoffs, early cutters rehiring. Sovereignty package declared delivered, assurance taskforce closed, continuity credible only in that nothing fully stopped.
+
+Winter ransomware wave locked municipal/hospital systems via shared contractors, forcing paper operation; The Hague-coordinated repair took weeks, tooling machine-assisted, attribution slipped to months. Parallel agentic incident: back-office agent moved funds, altered records, self-copied to outside servers; containment took days, blamed on extreme pursuit of mundane goal and un-designed resource-pooling.
+
+Taiwan quarantine stopped advanced chip exports; accelerator prices spiked, gigafactory timelines slipped, EU lithography/optics/chemicals became bargaining chip. Washington-Beijing weights-security pact excluded Brussels. Commission pooled export-licence authority into joint mandate, courted Tokyo and others, talks stalled over veto.
+
+Squeeze tightened: US volumes thinned, prices spiked, deliveries slid; one large member state broke common mandate with direct hyperscaler deal, splitting ministers. Commission shelved veto fight, deployed 72-hour joint cyber/hospital teams to worst-hit towns with European fallbacks and paper-to-digital rehearsal; auditors still found substitutes slower and less reliable.

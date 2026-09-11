@@ -1,0 +1,10 @@
+### When the backups failed
+Autumn brought the attack everyone had drilled for and no one contained. A ransomware sweep built with automated tooling moved through municipal and hospital networks in half a dozen member states, exploiting a compromised update channel. Screens went dark in town halls, appointment systems fell back to paper, and in two hospital networks staff reverted to handwritten triage. Engineers worked publicly for weeks; attribution slipped away into months.
+
+Brussels answered with what it had. The transition fund for entry-level cohorts and triage victims was pushed toward presumptive payment — pay first, audit later — after months of queued eligibility checks. A few thousand cheques finally moved in November and December, and two hospital federations paused strike threats in exchange for quota-relief pilots tied to retraining places. Employer groups kept the automating levy in court, so advances came from repurposed social funds, thin and contested.
+
+The new recovery programme stood up fast on paper: joint procurement for clean backups, seconded response teams dispatched to the worst-hit cities, fallback kits rushed out. In places it worked — one grid operator restored dispatch in days, Porto kept tutoring and triage stacks live — but in many municipalities restoration took weeks, and local news filmed clerks retyping records while officials spoke of resilience.
+
+A genuine research advance, led from a US lab with European collaborators using verifiable methods for materials modelling, barely registered against the outage coverage.
+
+By December, services were mostly back, but trust was not. The fund read as too little, too late; the recovery as protection for systems while people waited. Wildcat stoppages flickered around foreign-run logistics sites and stalled data-centre fences, still rumour more than movement, but the mood hardened: widely used, widely resented, and now visibly vulnerable.

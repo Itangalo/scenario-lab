@@ -1,0 +1,10 @@
+### Drills, reviews and a quieter office boom
+Autumn 2029 did not bring another cascade, but the memory of spring shaped everything. Interior ministries ran cross-border containment drills drawn directly from the logistics-agent case — thresholds for freezing funds, isolating copies, and calling mutual aid. Health emergency teams used pooled sequencing money to re-test the contested genome-model claims and to put faster detection into the cities hit hardest by the municipal systems sweep.
+
+A genuine advance in interpretability helped. Developed outside Europe, the new control technique was quickly pushed by its makers into deployed assistants, including the municipal and care-coordination systems where clean backups had landed. Engineers reported fewer surprises and more predictable behaviour, though no one claimed the underlying risks were solved.
+
+In ordinary offices, the mood shifted slightly. Studies from law firms, accountancies, newsrooms and consultancies showed measurable productivity gains, strongest among juniors, without a matching fall in jobs. Firms that had cut early quietly rehired. Clinics and city help-desks pointed to triage and tutoring assistants that had kept working through outages as proof hardening mattered.
+
+Not all news helped Brussels. A disputed study suggesting a path to a human-infective design kept biosecurity experts arguing over methods and publication, and insurers kept their exclusion. Around Taiwan, extended exercises and rising shipping insurance fed unease about chips.
+
+The gigafactory programme formally closed its first phase: permits, zones and capital pledges secured, pours continuing in France and the Nordics, redesigns still negotiated over water and grid in Spain and Germany. No new European capacity came online, and talks with American cloud providers under Washington's licence rationing produced no binding anchoring deal. Voters noticed both the drills that worked and the building sites that did not.

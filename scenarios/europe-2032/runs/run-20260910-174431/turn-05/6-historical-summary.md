@@ -1,0 +1,5 @@
+US frontier model cut-off hit hospitals and ministries in September-October with no appeal, workarounds failed; Washington pressed The Hague to extend lithography servicing/export curbs to mature tools, Commission lodged in anti-coercion track but took no action amid loss-sharing fight.
+
+Shield held partially: enforceable duties, state-backed cover, patching/swarm-detection kept transmission, ports, water running with first real auditor coverage; health lagged understaffed, private budgets frozen.
+
+Brussels launched continuity programme to switch cut-off uses to EU-hosted certified open models, procurement-eligible with health/Shield priority, funded from repurposed adoption money; gigafactories stayed low-burn, volume-licence exemption defended. Leaner labs posted gains, open models neared frontier. Two regions showed public-sector AI cuts to waits, but anger over bills, premiums, and rationed allied access dominated. November US election of president promising tiered rationing of advanced AI confirmed dependence lesson.

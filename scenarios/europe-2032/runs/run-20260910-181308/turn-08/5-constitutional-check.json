@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` decreased from 60.3 to 59.5. This metric, like `ai_capability`, is an accumulated stock that cannot fall unless there is catastrophic physical destruction of the compute base, which must be explicitly narrated. The narrative does not mention any such event, nor would such an event plausibly reduce openweight capability below the previous `ai_capability` level. A drop in `openweight_capability` without this justification violates the constitutional constraint that these metrics do not fall.\n- Metric Rule 9 violated: `ai_safety` decreased by 2.0 points (from 5.0 to 3.0), and `resilience` decreased by 1.0 point (from 48.0 to 47.0), which is within the 25-point cap, so that is not the issue. However, the larger issue is that no metric may move more than 25 points in one turn — while this specific movement is well under that cap, the violation here is not on magnitude but direction for `openweight_capability`, which is already covered. The point cap is not breached, so no additional violation is listed for magnitude.\n```\n\nNote: The only hard constitutional violation is the drop in `openweight_capability` without justification. The rest of the movements (e.g., declines in `ai_safety`, `resilience`, `sovereignty`, etc.) are permissible under the constitution — stocks like `eu_ai_sovereignty` are explicitly allowed to decay (per metric rule 5), and other metrics can fall freely unless protected. But `openweight_capability` is one of the two protected accumulating metrics.\n\nThus, the sole decisive violation is:\n\n```\nVIOLATIONS:\n- Invariant 2 violated: `openweight_capability` decreased from 60.3 to 59.5 without any narrative or notepad mention of catastrophic physical destruction of the compute base, which is the only permitted condition under which this metric may fall."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

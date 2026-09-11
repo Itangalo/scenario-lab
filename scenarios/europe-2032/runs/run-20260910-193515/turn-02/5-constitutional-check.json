@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Constitutional Constraint 9 violated: `eu_political_capital` decreased by 22.0 points (from 44.0 to 22.0), which exceeds the 25-point maximum movement allowed in one turn. While the constraint permits up to 25 points, this change is exactly at the boundary but still within the hard cap; however, the narrative and notepad do not justify such an extreme drop through identified events or mechanisms. The notepad lists only a −13 portfolio charge, +5 proposal bonus, and +2 legitimacy lend, which sum to a net change of −6 — incompatible with a 22-point drop. Thus, the magnitude of the change violates the spirit and accounting of the model even if numerically under 25. Discrepancy between notepad arithmetic and final metric indicates incorrect calculation.\n- Economic Constraint violated: The narrative states that \"public-bank financing that had not yet arrived\" and private build-outs have stalled, yet the metrics imply continued progress on sovereignty-related investments (e.g., gigafactories and cyber shield retain ongoing costs). However, no new funding source is identified for sustained expenditures, and the abrupt collapse in political capital and public sentiment lacks a proportional economic trigger or explanation beyond valuation resets, which are insufficient to justify a >20-point capital drop without broader systemic failure (e.g., market crash, sovereign downgrade) being narrated.\n- Regulatory Constraint violated: The EU Essential Services Continuity Mandate is credited with a +5 proposal bonus as a \"large\" category 6 measure responding to two event gates. However, per Constitutional Constraint 5, the EU may introduce at most one new measure per turn. The notepad implies four initiatives are active (InvestAI Gigafactories, Tech sovereignty package, EU Critical Infrastructure Cyber Shield, EU Essential Services Continuity Mandate), all marked with cost reductions this turn (−3 each), suggesting they were newly introduced. Introducing four new measures in one turn is a clear violation of the \"at most one new measure per turn\" rule."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

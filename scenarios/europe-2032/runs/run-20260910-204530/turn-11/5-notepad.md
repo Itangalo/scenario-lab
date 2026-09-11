@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Lithography Leverage and Essential Compute Survival Deal −2, EU Bio-Containment and Essential Care Continuity Protocol −2, priority −1 waived (capital<20, no effect, no cost) = −4
+PROPOSAL BONUS: EU Bio-Containment and Essential Care Continuity Protocol (cat 6, small) +3 — real bio incident with casualties this turn plus denied frontier access, this answers it directly
+LEGITIMACY LENDS: capital 5, sentiment 6 -> +1 (capped, after other terms, never past sentiment)
+SOVEREIGNTY: 19 last turn, no capacity measure finishes, no cat4 in flight +0, eu_frontier_access_denied t11 −3 (largest of frontier denial / export controls / embodied deployment), capability rose 4.0 −1 = 15

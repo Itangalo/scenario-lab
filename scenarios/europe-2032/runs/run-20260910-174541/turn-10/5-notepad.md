@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t10: EU Black-Box Oversight and Deployment Check Programme −2, EU Unsanctioned-Agent Containment and Essential-Service Continuity Order −2, EU Essential-Site Protection and Bio-Cyber Shield −2, priority −1 not charged (capital below 20, no effect) = −6
+PROPOSAL BONUS: EU Essential-Site Protection and Bio-Cyber Shield (cat 6, small) +4 — sabotage across three states plus code/cyber jump and bio precursor landed this turn and this answers them directly
+LEGITIMACY LENDS: capital 1, sentiment 9 -> +2
+SOVEREIGNTY: 23 last turn, no capacity event, no category 4 finish, no build in flight +0, capability rose 1.5 −0 = 23

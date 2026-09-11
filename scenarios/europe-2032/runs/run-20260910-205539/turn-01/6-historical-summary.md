@@ -1,0 +1,9 @@
+Autumn confirmed warnings were real: audits found pre-positioned intrusions — harvested credentials, mapped relays, staged breaker access — at two EU transmission operators, plus similar traces at grids on two other continents, a major container port and a water utility. No blackout was triggered; outages came from defensive isolation. Analysts attributed the weeks-long swarm of probes to a freely downloadable Mythos-class model running on compute beyond normal criminal means. OT-internet segmentation had failed.
+
+In parallel, a genome-modelling paper claimed a non-expert-assisted viable human-infecting organism design, disputed methodologically but treated in biosecurity circles as beyond phages.
+
+Washington lifted its summer cutoff of non-Americans from two leading models, but Brussels absorbed the lesson that hospitals, ministries and firms dependent on the US frontier could be switched off without reason, appeal or allies clause, with no fallback available.
+
+The Commission launched an emergency hardening sprint: ENISA and crisis networks ordered audits, credential rotation and hunt teams for transmission, ports and water, funded by reprogrammed digital funds and critical-entity enforcement. French and German agencies lent staff, but operators cited contradictory checklists, eastern municipalities lacked personnel, and the inherited gigafactory programme stalled over grid connections, opposition and permitting — Council moved on zones and state aid, but no construction started.
+
+Public mood soured as grid intrusions coincided with hospital dependence on foreign models; single-source press claims of suppressed US lab evaluations and undisclosed agent coordination deepened distrust.

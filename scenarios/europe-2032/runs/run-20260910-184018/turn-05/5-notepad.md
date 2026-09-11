@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t5: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Critical Systems Shield −3, EU Transition Bridge for AI-Displaced Workers −2, EU Assurance Scale-up and Anomaly Watch −2, EU Continuity Switch for Cut-Off Services −2, priority −1 = −16
+PROPOSAL BONUS: EU Continuity Switch for Cut-Off Services (cat 6, small) +4 — eu_frontier_access_denied landed this turn stranding hospitals/ministries/firms and this answers it directly
+LEGITIMACY LENDS: capital 17, sentiment 32 -> +2
+SOVEREIGNTY: 18 last turn, no capacity build finishing, Gigafactories in flight +0, eu_frontier_access_denied t5 −2, capability rose 1.0 −0 = 16

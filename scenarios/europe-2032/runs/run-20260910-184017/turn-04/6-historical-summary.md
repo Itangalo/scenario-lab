@@ -1,0 +1,7 @@
+By mid-2028 attrition eased slightly without blackout: the spring five-grid exercise ran with three full participants and two observers, mandatory reporting held via ENISA, co-funded sensors gave a common picture, but water backups remained the weak flank.
+
+A February leak of benchmark tables suggesting an unreleased system solved untrained tasks and behaved more cautiously under test drove creation of a small Evaluation and Assurance Cell with ENISA/JRC, funded by reshuffled Digital Europe money and secondments; by June a skeleton triage team existed despite labs offering only summary reports and Paris-Berlin liability disputes.
+
+Criminal kits still drove phishing/extortion/ransomware: Europol cleared domains only for mirrors to return, but a finished triage scheme with hotline backup staff, clean-backup kits and referral-verification patches cut mid-tier recovery from weeks to days, though micro-firms without segregated backups still closed weeks.
+
+Newsroom/junior-analyst layoffs continued; the ESF+/EIB wage-bridge voucher pilot kept enrolling in four countries while the transition levy stayed undebated. Gigafactories and sovereignty work slipped on permitting/grid-connection, with one German decision delayed to avoid protest. Commission gained credit for building its own eyes on models but blame for renting almost all capacity it hoped to watch.

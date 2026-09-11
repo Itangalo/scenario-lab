@@ -1,0 +1,11 @@
+### Patching faster, paying more
+Autumn brought a genuine technical reprieve. New defensive tooling that patched at machine speed and flagged coordinated intrusions by behaviour rather than signatures was taken up by vendors and grid operators alike. The cross-border exercise in October, long understaffed, finally ran at something near full strength after Brussels tied its cost-sharing to adoption of the new standard and leaned on energy and transport ministries to fill posts. Operators reported intrusions caught earlier, and for the first time in years defenders could claim a round.
+
+The relief did not translate into calm. Insurers, rattled by openly available offensive tooling, moved to exclude model-enabled cyber losses or reprice them beyond what hospitals, ports and telecoms could bear. In response the Commission tabled a proposed EU Critical-Sector Cyber Insurance Backstop — a temporary reinsured pool offering contingent cover only to operators meeting the hardened standard — but it remains a proposal only. Legal mandate, burden-sharing among finance ministries, and underwriting terms are still under negotiation, with no payouts or binding cover available this turn. Renewals remain at risk and several operators face gaps into the new year.
+
+### A side deal and a strait
+Cohesion frayed elsewhere. One capital signed its own hosting and supply arrangement with a foreign hyperscaler on terms that undercut Brussels' common line on reciprocity and pooled capacity, defending it at home as pragmatism. The Commission chose quiet containment — offers of offtake and shared mature-node capacity — over public sanction, but the damage in Washington, Tokyo and Beijing was done: the Union negotiated as a front that might not hold.
+
+Around Taiwan, extended manoeuvres lifted shipping insurance and chip prices again. The joint team in Tokyo and Seoul kept talking about shared servicing and pooled older-node output, and Dutch toolmakers kept machines running under legal cover, but costs rose and the two re-scoped gigafactory sites stayed on public money with private investors still missing.
+
+By December the lights stayed on but cover had not yet held, dependence felt heavier and Brussels felt poorer. The backstop, if agreed and funded, could stabilize renewals in a future turn — not this one.

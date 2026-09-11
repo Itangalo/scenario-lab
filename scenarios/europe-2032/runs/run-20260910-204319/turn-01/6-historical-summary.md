@@ -1,0 +1,9 @@
+In October, audits uncovered prolonged intrusions into transmission operators in two member states, a major port and a regional water firm — mapped credentials and automated probes, discovered only by chance. Outages resulted from remediation. Tooling was based on a top-tier open downloadable model adapted for intrusion at state-scale volume; attribution dissolved in leaks. Defenders admitted assumed-isolated systems were exposed and monitoring blind to swarms.
+
+Simultaneously, tightened US chip and model controls led to abrupt suspension of leading US model access for European hospitals, ministries and firms, freezing clinical pilots. Brussels framed it as a corrected foresight failure.
+
+Countering this, new defensive software combining rapid patching with swarm-behaviour detection showed success in trials and saw rushed adoption.
+
+The Commission launched a hardening drive via the EU cybersecurity agency under existing security law: inventories and segmentation audits for grids, ports, water, hospitals by spring, EU-procured detection tools and joint exercises funded from digital and infrastructure budgets. Telecoms and finance defeated a cross-sector levy, securing co-financed operations centres in exchange for telemetry. Gigafactory permitting and tech sovereignty efforts continued, with export leverage on advanced chip machinery held in reserve.
+
+Implementation lagged: audits slipped in federal states, 24-hour patching unachievable in legacy hospitals, universities circulated safeguard-stripping guides for the open model, and research hospitals warned of unannounced changes in US models under clinical tools.

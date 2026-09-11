@@ -1,0 +1,5 @@
+Autumn sabotage spread north: grid cuts, blockades and substation occupations hit northern testing halls carrying clinic/registry overflow, forcing generator operation; Brussels avoided eviction, sequencing mobile teams to threatened towns and negotiating protected corridors with patrols/payments — some held, two failed, pushing overflow to paper backups. Core registries held from offline copies, clean small clinics stayed clean longer; reinfection flared where retyping lagged, backup standard stayed guidance with slow procurement and drills only in large hospitals.
+
+Leaked genome-model claim of non-expert-accessible human-infecting organism design prompted Commission screening: mandatory high-risk synthesis reporting, supervised open bio-model rules, sampling; firm compliance on paper, slow passive detection.
+
+Southern gigafactories remained frozen by courts/blockades, northern overflow disrupted, US keys still dead, lithography curbs extended. Offices kept flat junior-led productivity boom with no job loss; AI widely used and resented; Brussels ended year thinner with core intact but north unsecured and confidence unrestored.

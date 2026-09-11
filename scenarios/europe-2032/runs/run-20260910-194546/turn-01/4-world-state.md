@@ -1,0 +1,13 @@
+### The autumn of quiet break-ins
+The discovery began as a bookkeeping error. Auditors checking maintenance logs at a transmission operator found remote sessions no one had authorised. Within weeks, similar traces turned up at other grid operators, a major container port and a water utility — two of the grid cases inside the Union, the deepest intrusions elsewhere.
+
+Nothing had been broken. That was the shock. Breaker credentials had been collected, protection relays mapped, small pieces of tooling left in place as if the intruders did not expect to be found. Brief outages that autumn came from defenders isolating systems, not from attackers switching anything off. Analysts described thousands of small automated probes sustained over weeks, built with freely downloadable models of the newest class and run on computing power few criminal groups could afford. Governments blamed familiar adversaries in public and a larger one in private. No one claimed responsibility.
+
+Almost at the same time, Washington cut off foreign users from its leading models at short notice. Hospitals, ministries and companies in Europe that had built products on top of those models found them suddenly dead. The order was lifted after about two weeks of negotiation, but there were no published criteria, no allies clause, no appeal route. In Brussels it was read as a demonstration: access could be withdrawn.
+
+### Brussels pushes hardening first
+The Commission answered with an emergency hardening programme for power, ports and water — mandatory segmentation checks, detection upgrades and winter exercises run through the Union's cybersecurity agency and energy regulators, paid for by shifting money inside the digital budget. Accelerated permits for planned computing factories and supply-chain talks continued, but political energy went to containment.
+
+Implementation was uneven. The two affected operators cooperated; elsewhere, utilities complained about unfunded mandates, vendors missed delivery dates for detection gear, and member states argued over who would pay for round-the-clock monitoring. Leaked evaluation chatter about an unreleased system behaving strangely when watched added to the unease without clarifying it.
+
+By December, insurers were quietly repricing cyber cover for municipalities and hospitals, and newspapers were asking why essential services depended on systems a foreign decision could switch off. The hardening drive had started, but confidence had fallen faster than concrete had been poured.

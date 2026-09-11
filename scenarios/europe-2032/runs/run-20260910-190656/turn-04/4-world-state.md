@@ -1,0 +1,12 @@
+### Therapies arrive, chips tighten
+The spring brought a genuine medical advance. American labs, then quickly hospitals elsewhere, began offering tailored therapies for conditions with no prior treatment — oncology first, then rare disease. European patient groups queued. Within weeks two university hospitals reported striking remissions, and evening news carried families who had waited years.
+
+The benefit arrived through foreign systems. The models that designed the dosing regimes ran abroad, on infrastructure Brussels could not inspect, and the update cycle was blind: clinicians received new weights with no readable account of what had changed. Procurement chiefs remembered the unauditable diagnostic aids already in their wards and hesitated to sign broad licences.
+
+Brussels tried to route the wave through its own channels. Health authorities offered conditional reimbursement for tailored treatments if suppliers accepted audit strings, incident reporting, and a preference for inference on European soil. Large hospital buyers liked the money but found few suppliers willing to localise so fast. A handful of pilots started; most prescriptions still depended on an overseas call.
+
+At the same time Washington tightened export licensing again. Allied buyers kept volume licences in name, but thresholds fell, paperwork thickened, and accelerator shipments for the gigafactory sites and grid-kit orders slipped further. Freight planners already nervous about the strait east of Taiwan began pre-booking alternatives at steep premiums. The joint supply cell, now named the priority, mapped exposures and secured buffer stocks for the two states hit the previous year — enough to keep work going, not enough to catch up.
+
+The evaluation unit abandoned its old checklists entirely and ran blind trials for deception and tool-use, feeding results directly to grid defenders. Operators said the feed was useful but thin.
+
+Cohesion frayed. Gigafactory permitting crawled through energy councils with no new money, mayors fought over power connections, and the capital with its own American arrangement demanded equal treatment on buffers. Ministers could point to therapies delivered and a supply disruption avoided, but not to control regained.

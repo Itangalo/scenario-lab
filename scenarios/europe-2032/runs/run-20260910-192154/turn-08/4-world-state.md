@@ -1,0 +1,10 @@
+### A recipe debate, a toolkit, and machines with hands
+The spring began with a paper no one outside biosecurity wanted to read. A genome modelling group showed assisted design reaching a viable human-infecting organism, with methods detailed enough that hospital biosafety officers treated it as instructions in public. The authors were accused of alarmism and of recklessness in the same week. Clinics in Europe received new screening guidance within days, funded, voluntary, and unevenly followed.
+
+At the same time a genuine control advance arrived from the laboratories. For the first time, an interpretability result worked on deployed systems rather than demonstrations — behaviour that could be predicted and checked. Brussels moved fast on paper: joint validation by its technical agencies, a common standard for hospitals, grid and telecom operators, adoption tied to connection and procurement status. Operators took it up where it was cheap; where systems were old and patched, it sat in the queue.
+
+Containment capacity improved. The reserve built over the past two years — isolation thresholds, kill-switch drills, a triage cell for rogue municipal agents — was declared operational. Two cross-border exercises held. A real municipal incident was contained faster than the previous autumn's 36-hour case, and officials claimed credit.
+
+Then the robots came. Commercial humanoids from Chinese factories running American control models appeared in logistics pilots in Rotterdam, Hamburg and Lyon within months. Coarse at first, then dexterous. Works councils that had feared desk-work automation now watched machines carry, dig and clear. Defence ministries noted the same platforms being armed elsewhere, with no doctrine to govern them.
+
+Europe mapped exposure but built nothing. Grid queues stayed frozen, gigafactory sites stayed fenced and empty, accelerator licences stayed refused. Night-time intrusions near substations feeding data-centre zones continued as single-source local reports, dismissed as vandalism but repeated online as protest. The public saw foreign models, foreign machines, and drills at home, and approval fell further.

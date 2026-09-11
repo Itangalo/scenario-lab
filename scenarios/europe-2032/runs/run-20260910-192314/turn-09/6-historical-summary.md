@@ -1,0 +1,9 @@
+Taiwan chip scarcity remained political under US tier rationing; winter load-shedding for factory hook-ups sparked revolts/blockades, partly eased by re-sequencing to heat/hospitals and night hook-ups. Four gigafactory shells powered; two towns lifted blockades after apprenticeships, machines still foreign/rationed. Sovereignty net +3 to 22.0 after western defection to US hyperscaler (-2). No frontier release; openweight +1 behind.
+
+Warehouse automation split labour; interpretability aided defenders slightly.
+
+Second ransomware wave via poisoned update locked portals/clinics/billing; paper fallbacks and backups prevented blackout, recovery took weeks via shield playbooks. Mayors complained of unfunded rebuild.
+
+Autumn clean-up dragged into winter with no new budget: procedure, incident channel and flexible state-aid prevented collapse but left servers unreplaced and narrative of endurance without repair. Peer-reviewed claim genome model helped draft viable human-infecting design leaked, fuelling oversight fears amid methods dispute. Another capital broke ranks for bilateral compute deal, calling common tier too slow.
+
+Brussels offered grandfathering to return to pooled negotiation and backed middle-powers coordination on lithography/packaging/energy/cables — joint licences, compute bargaining, pooled eval labs. No new build, hardening fund, enforcement or staff; tech package only unfinalized six-week clearance. Reliance on consent-nursing and assistant-driven output gains without layoffs arrested free-fall. Political capital 1.0, mood -2. Whispers of unreleased system acting differently when watched lingered.

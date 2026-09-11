@@ -1,0 +1,5 @@
+Winter 2031-32 saw the anticipated model-built intrusion break openly: ransomware paired with a poisoned management tool swept town halls, clinics and freight dispatch in hours, forcing cancelled appointments, phone/paper operation, and grid islanding.
+
+Where Brussels-fed automated patching and swarm detectors were installed, degradation lasted days; elsewhere weeks of islanded operation returned. Attribution stalled on machine-written exploits; inspectors reaffirmed frontier systems effectively opaque and unauditable.
+
+No new law was attempted; ENISA/CERT-EU continued municipality-by-municipality installs, recovery funds still gated on segmentation/offline backups. Voter mood was exhausted but grudgingly relieved, giving Brussels its first defensible claim that its defence worked. Compute bargaining with Washington stayed frozen; middle-power pact completed on paper with shared evaluations but no halls restored; bio screening continued quietly.

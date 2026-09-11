@@ -1,0 +1,7 @@
+Coordinated intrusions in power grids in two EU states and two other continents using a freely available newest-class open model for state-scale intrusion were contained via defensive isolation causing brief outages; no actor claimed responsibility.
+
+The Commission's hardening drive for power, ports and water deployed ENISA for audits and credential rotation, funded by reprogrammed connectivity money. France, Germany, Spain and Poland complied; municipal water utilities and a major North Sea port resisted over cost and timelines until co-financing/phasing and a guarantee for gigafactory grid connections were offered. The winter 2027 exercise showed working liaison but incomplete power-port isolation playbooks. Staged probes were largely cleared but fresh scanning continued; no disruption occurred, though public unease persisted.
+
+Washington tightened chip-equipment export controls; Brussels, The Hague, Tokyo and Seoul linked lithography maintenance, memory supply and re-export screening to assured licences. By June 2027 European fabs retained licensed access at lower volumes with reporting and onward-export conditions, with delays and higher costs expected.
+
+Major journals and synthesis firms paused publishing/fulfilling AI-designed virus genome methods after alarming phage work; Brussels tasked health agencies to map uptake for bio-detection planning without new legislation.

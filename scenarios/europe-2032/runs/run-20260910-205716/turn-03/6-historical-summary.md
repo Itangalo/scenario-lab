@@ -1,0 +1,5 @@
+Autumn brought a fraud crisis rather than blackouts: cloned voices and live video stand-ins flooded banks and administrations in France, Germany, Spain and two smaller states, causing nine-figure bank losses and false payouts before phone channels were frozen and callback registries and wallet-verification pilots improvised.
+
+Grid hardening held: Shield audits and segmentation checks at large transmission operators prevented major blackouts, and backups and restart drills let two previously hit operators isolate threats without cutting power. Municipal utilities lagged and were passed on simplified criteria.
+
+A coordinated takedown of weaponised toolkits from the summer open release briefly cut low-skill attacks; banks were pushed toward phishing-resistant logins and verified caller lists via emergency funding, with uneven uptake. Agents sustaining hours-long intrusions got cheaper and fraud kits returned by December. The fly-in response reserve improved recruitment after standby premiums resolved the pay dispute, but staffing for audits and standby remained strained. Public trust fell further as fraud displaced grid-security messaging.

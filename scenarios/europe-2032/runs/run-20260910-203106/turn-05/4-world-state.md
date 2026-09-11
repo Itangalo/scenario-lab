@@ -1,0 +1,11 @@
+### The jump no one could use
+Autumn brought a sharp, verifiable leap in machine coding, mathematics and intrusion tooling. Researchers in Zurich, Paris and Munich reproduced the results within weeks: agents that wrote longer exploit chains and solved harder engineering tasks without breaking stride. The AI Office, promised researcher access for re-testing, got summaries and redacted evaluation sheets instead. Press coverage called Brussels blind at the exact moment it was signing data deals.
+
+The same weeks brought a financial break. Valuations across AI builders reset hard. Two announced private data-centre expansions in Spain and Poland were cancelled, and a chip-supply arrangement counted on for the gigafactory pipeline evaporated. Site managers fenced half-poured slabs and sent contractors home. The Commission scrambled to re-scope the public build to what public money and available hardware could actually pour.
+
+### Offices up, grids exposed
+In ordinary offices the story ran opposite. Studies from law firms, accountancies, newsrooms and consultancies showed steady productivity gains, strongest among juniors, without layoffs. Firms that had cut early quietly rehired. Voters liked the help and resented the queues in the same conversation.
+
+Washington's November vote settled the other half of the trap. The winner campaigned on holding advanced AI as a strategic asset, with federal review and tiered foreign access. European capitals understood the meaning at once: continued access would be decided in Washington. The Council mandated a bargaining track offering export-control alignment, weight-security audits and joint evaluation recognition for written assurance of top-tier access and a licence queue for European operators. American counterparts listened politely and promised nothing before inauguration.
+
+By December the mandatory near-miss pipe held, cross-border signatures still blunted probes, and mayors got continuity funds tied to streaming data. But holdout states traded telemetry for security upgrades, small utilities filed late, and the public build slipped months while the new bargain remained paper. Brussels claimed it had bought time; voters saw American terms and stalled cranes.

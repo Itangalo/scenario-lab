@@ -1,0 +1,9 @@
+In October, European operators found state-linked probes around protection relays and breaker controls using tooling adapted from a freely available frontier model, later seen at a port, water utility, and on two other continents; no attacker-triggered outages occurred, only defensive-isolation disruptions.
+
+Brussels invoked resilience/cybersecurity laws, funded emergency segmentation, credential rotations and backup controls via repurposed digital funds plus investment-bank top-up with mandatory reporting, with France, Germany and Nordics aiding weaker cities and hospitals. Rollout was uneven due to staffing, queues, cost and permitting disputes.
+
+A contested biosecurity paper alleging a genome model helped design a human-infecting organism circulated among specialists, darkening expert mood, but public concern eased by December.
+
+In February-March, a larger machine-scale attack darkened municipal services in three member states — appointment/permit systems, hospital logistics, then a compromised maintenance update spreading widely. Brussels surged seconded response teams and backup-control kits with cost-sharing; big transmission operators recovered fast, smaller municipalities queued, and funding fights persisted.
+
+Concurrent Taiwan Strait exercises spiked shipping insurance and chip anxiety; the Commission opened a continuity track with Tokyo and Seoul on inventories, freight, servicing and export discipline for chipmaking equipment, with results still pending. Publishers/funders required AI watermarking/disclosure after a disputed prize verification, adopted into EU grants. By June services were restored but trust was thinner, and dependence on the distant strait for compute and grid security had entered public debate.

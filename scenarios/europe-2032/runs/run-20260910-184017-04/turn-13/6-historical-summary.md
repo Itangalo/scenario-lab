@@ -1,0 +1,7 @@
+Autumn–December endurance with no new shock: spring pneumonia cluster did not return, sentinel sequencing held via seconded staff and cleared two suspects, proving detection-first doctrine in willing regions where stocks and kits were replenished. Refusing municipalities turned away couriers and withheld data, leaving visible gaps.
+
+Grid held barely at higher cost: leaked paper rotations with hostile annotations forced ENISA/EU-CERT to restrict new sheets to vetted islanding teams, rotate drills, re-authorise overtime and pool spares with willing hosts. Two operators saw probing of leaked seams; islanding worked where crews were paid/cleared, elsewhere closures lengthened and wards stayed shut to avoid blackout risk.
+
+Brussels offered only continuity funding for cleared crews — no new law, money, or messaging. Assisted-consultation gains still paired with closed wards and unrecovered entry jobs; public mood hardened from protest to cold refusal. Lights/beds held without catastrophe through second half-year, sustained by a shrinking trusted circle.
+
+Prior: February modified-agent pneumonia validated sentinels, pooled isolation and countermeasures; spring adoption push closed; autumn containment via disconnects/islanding/paper/spares; biosecurity split, HERA/ECDC sentinels; repair corps formalized; open models plateaued unrecallable.

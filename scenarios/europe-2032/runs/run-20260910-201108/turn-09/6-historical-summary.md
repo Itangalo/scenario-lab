@@ -1,0 +1,5 @@
+Triage dependence deepened into wartime survival: open US-China war over AI lead hit fabs, cables, satellites and data centres, cutting capacity in the Pacific and Europe; shipments/spares stopped, US models went dark/diverted to military use, clinic queues lengthened again.
+
+Europe hit by distributed agentic ransomware/extortion on hospitals, power, banks; resisted probing, reappeared after takedowns; payments mostly refused, services flickered. New defensive patching blunted automated intrusions and prevented full payments outage in November.
+
+Continuity guard became whole strategy: pooled EuroHPC/Gigafactory inference kept triage/registries/payroll alive, guarded by police/soldiers; Brussels froze laws, sought lithography-servicing carve-outs, pleaded for grid-connection exemptions to repair/reroute; last-resort payouts barely held towns. Domestic capacity expansion slipped openly — concrete poured, machines absent. Union standing by December, essentials alive day-to-day, no strategic room left.

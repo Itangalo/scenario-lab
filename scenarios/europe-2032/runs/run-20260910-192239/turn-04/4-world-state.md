@@ -1,0 +1,10 @@
+### Holding the line by not fighting
+Brussels spent the first half of 2028 enforcing paperwork rather than pouring concrete. With two large compute programmes eating the budget, the Commission named the sovereignty package on partnership terms as its push and tied interconnection money, mutual-aid backup and any future factory co-funding to common security and jurisdiction conditions.
+
+In practice that meant the government with the cheaper outside hyperscaler deal kept its discount but could not draw EU funds or backup without signing the same clauses. No infringement case was opened. Files sat as quiet state-aid and network-security reviews, a deliberate choice to avoid a public rupture when cohesion was thin.
+
+The technical news was better. The grid protection work and the municipal close-out, both now formally closed, ran on as operations: relay monitoring, rotated credentials, joint exercises. Large transmission operators reported quiet logs and faster patching. The new swarm alarms caught two more probes early.
+
+But the political story overtook the technical one. The separate deal was defended at home as pragmatism — cheaper capacity, faster delivery — and reported elsewhere as proof the Union could not hold a single line. Opposition press in other capitals asked why they should accept tougher terms. Mayors demanding cash for last-mile hardening were told to use reprogrammed cohesion top-ups, which left several mid-size ports and municipal utilities still unsegmented through winter planning.
+
+Gigafactory shortlists and permitting zones advanced on paper with no new cash. Hiring stayed frozen, assistants made juniors faster without replacing them, and fraud bulletins kept public mood ambivalent. The Commission claimed it had preserved the common terms without a split; in council corridors the verdict was harsher — unity preserved on paper, undercut in practice.

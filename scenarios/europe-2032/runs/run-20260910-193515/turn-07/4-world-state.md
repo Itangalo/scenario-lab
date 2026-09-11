@@ -1,0 +1,9 @@
+### Concrete poured, licences withheld
+The first gigafactory shells were the autumn's photo opportunity: cranes over flat fields outside Lyon and Magdeburg, grid reservations finally signed, bank guarantees countersigned in Brussels. Yet inside, the halls stayed empty. With servicing and spare parts for lithography still rationed from Washington, contractors warned commissioning would slip by quarters, not weeks. The Hague's partial compliance held, shielded on paper by the anti-coercion cover, but engineers waited for clearances that never came.
+
+The middle-power play inched forward and stalled. Tokyo and Seoul kept talking, exchanged telemetry samples with ENISA teams, even floated joint procurement language — then asked for cash without conditions on re-export. Paris pushed to keep a veto over any shared tooling; Berlin pushed to exempt its own suppliers. DG TRADE shuttled, the EIB kept permit lines alive through the frozen grid-link litigation, but no joint export-licence text was signed.
+
+### Paychecks before processors
+At home the Commission pivoted to voters. The new wage-bridge and retraining entitlement was announced with mayors and unions on stage, ESF+ money repurposed for fast slots and municipal grants. Some cities reported eased protests around data-centre sites. Many workers saw only a website and a waiting list, while wards ran on slow audited models and paper fallbacks through another wave of probes using openly mapped vulnerabilities.
+
+By December continuity held — power on, payments clearing — but humiliation lingered. Empty concrete and promised retraining did not answer the sense that Europe's machines answered elsewhere.

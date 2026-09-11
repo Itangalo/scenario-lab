@@ -1,0 +1,10 @@
+### The weights get loose
+Autumn brought the release everyone had warned about. A new open-weight model, close to the best closed systems, was downloaded hundreds of thousands of times in its first week. Tutorials for automating intrusion tooling and for querying biological protocols spread on forums within days. Recall was not discussed seriously; copies were already on private servers across Europe.
+
+Brussels answered with two tracks. Energy and transport ministers pushed the existing hardening programme hard, making it the declared priority. ENISA inspectors returned to the two transmission operators compromised the previous winter, enforced segmentation fixes, and tried to close timeline exemptions won by large distributors. A second cross-border drill on manual fallback was locked into a twice-yearly cycle, with sensors paid from reshuffled digital funds as the sweetener. Distributors complied in part and stalled in part, and detection still lagged containment.
+
+At the same time a new Absorption Shield was launched through health and cybersecurity agencies: emergency kits for hospitals to run offline, upgrades for gene-synthesis screening, and mandatory patch windows for exposed municipal systems. Procurement moved quickly on paper under existing legal bases, but hospitals complained kits arrived without staff to install them, and screening upgrades hit incompatible lab software.
+
+The monitoring cell in the AI Office pivoted to tracking downloads and abuse reports against grid alerts, but provider feeds remained delayed and formats incompatible. Permitting for computing sites continued, and diplomats kept lobbying to keep lithography supplies flowing, with no new orders to show.
+
+Public mood darkened. Local news linked the freely available models to fraud and hospital strain, and mayors who had praised administrative assistants now fielded questions about exposure. The Commission spent heavily in attention and favours to keep five efforts running at once, and cohesion frayed badly, leaving political reserves deeply depleted.

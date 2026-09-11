@@ -1,0 +1,7 @@
+Late 2028 became a holding pattern. With budgets thin and Washington voting, the Commission kept both gigafactory programmes in caretaker — sites fenced, permits and grid fees paid, no construction — and prioritized affordable hospital sentinel detection.
+
+That yielded a modest readiness gain: the six trial university hospitals now file weekly wastewater and admission signals to HERA/ECDC, but port-city expansion stalled on procurement, lab capacity and data objections from two regions, and synthesis-provider screening stayed voluntary.
+
+Office studies confirmed juniors finish drafts markedly faster with no layoffs — relief for unions, a fiscal problem for finance ministries as expected transition revenues failed to arrive.
+
+In November the U.S. elected a president pledged to hold advanced AI at home: formal federal frontier review and tiered foreign access on security grounds. Subsequent chip/model export tightening showed allied status did not assure supply — licences case-by-case, models late or throttled. Common hosting terms cost one more side deal pooled supercomputing access but did not stop bilateral soundings. By year-end wards were better watched, sites empty, and dependence a U.S. lever.

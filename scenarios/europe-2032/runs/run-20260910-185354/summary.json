@@ -1,0 +1,350 @@
+{
+  "scenario": "Europe 2032 — Verification-bounded",
+  "total_turns": 13,
+  "final_metrics": {
+    "ai_capability": 69.0,
+    "openweight_capability": 67.1,
+    "ai_safety": 3.0,
+    "resilience": 47.0,
+    "eu_ai_sovereignty": 18.0,
+    "eu_political_capital": 13.0,
+    "public_sentiment": 8.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 54.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 32.0,
+        "resilience": 37.5,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 44.0,
+        "public_sentiment": 39.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 56.0,
+        "openweight_capability": 50.0,
+        "ai_safety": 30.0,
+        "resilience": 36.5,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 36.0,
+        "public_sentiment": 41.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 53.0,
+        "ai_safety": 28.0,
+        "resilience": 41.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 26.0,
+        "public_sentiment": 37.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 60.0,
+        "openweight_capability": 55.5,
+        "ai_safety": 26.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 16.0,
+        "eu_political_capital": 24.0,
+        "public_sentiment": 34.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 61.0,
+        "openweight_capability": 57.8,
+        "ai_safety": 24.0,
+        "resilience": 38.5,
+        "eu_ai_sovereignty": 14.0,
+        "eu_political_capital": 18.0,
+        "public_sentiment": 32.0
+      }
+    },
+    {
+      "turn": 6,
+      "metrics": {
+        "ai_capability": 62.0,
+        "openweight_capability": 59.4,
+        "ai_safety": 24.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 21.0,
+        "public_sentiment": 34.0
+      }
+    },
+    {
+      "turn": 7,
+      "metrics": {
+        "ai_capability": 63.5,
+        "openweight_capability": 60.7,
+        "ai_safety": 17.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 20.0,
+        "public_sentiment": 32.0
+      }
+    },
+    {
+      "turn": 8,
+      "metrics": {
+        "ai_capability": 64.5,
+        "openweight_capability": 62.1,
+        "ai_safety": 16.0,
+        "resilience": 42.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 22.0,
+        "public_sentiment": 34.0
+      }
+    },
+    {
+      "turn": 9,
+      "metrics": {
+        "ai_capability": 65.5,
+        "openweight_capability": 63.3,
+        "ai_safety": 7.0,
+        "resilience": 40.5,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 17.0,
+        "public_sentiment": 26.0
+      }
+    },
+    {
+      "turn": 10,
+      "metrics": {
+        "ai_capability": 66.5,
+        "openweight_capability": 64.4,
+        "ai_safety": 6.0,
+        "resilience": 44.5,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 16.0,
+        "public_sentiment": 23.0
+      }
+    },
+    {
+      "turn": 11,
+      "metrics": {
+        "ai_capability": 67.0,
+        "openweight_capability": 65.4,
+        "ai_safety": 5.0,
+        "resilience": 43.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 18.0,
+        "public_sentiment": 26.0
+      }
+    },
+    {
+      "turn": 12,
+      "metrics": {
+        "ai_capability": 68.0,
+        "openweight_capability": 66.2,
+        "ai_safety": 4.0,
+        "resilience": 44.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 15.0,
+        "public_sentiment": 16.0
+      }
+    },
+    {
+      "turn": 13,
+      "metrics": {
+        "ai_capability": 69.0,
+        "openweight_capability": 67.1,
+        "ai_safety": 3.0,
+        "resilience": 47.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 13.0,
+        "public_sentiment": 8.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "adoption_success",
+    "ai_investment_collapse",
+    "automated_decision_scandal",
+    "bio_incident",
+    "bio_uplift_findings",
+    "capability_jump",
+    "cyber_defence_breakthrough",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_alliance",
+    "embodied_ai_deployment",
+    "emergent_procurement_legal_freeze",
+    "eu_frontier_access_denied",
+    "eval_anomaly_reports",
+    "export_control_escalation",
+    "joint_threat_response",
+    "knowledge_work_augmented",
+    "labour_displacement",
+    "member_state_defection",
+    "opaque_reasoning",
+    "research_breakthrough",
+    "supply_chain_coercion",
+    "taiwan_tension_rise",
+    "us_china_agreement"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "adoption_success"
+    },
+    {
+      "turn": 3,
+      "id": "automated_decision_scandal"
+    },
+    {
+      "turn": 4,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 5,
+      "id": "cyber_defence_breakthrough"
+    },
+    {
+      "turn": 5,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 5,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 5,
+      "id": "emergent_procurement_legal_freeze"
+    },
+    {
+      "turn": 5,
+      "id": "election_alliance"
+    },
+    {
+      "turn": 7,
+      "id": "capability_jump"
+    },
+    {
+      "turn": 7,
+      "id": "ai_investment_collapse"
+    },
+    {
+      "turn": 7,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 7,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 7,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 7,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 8,
+      "id": "research_breakthrough"
+    },
+    {
+      "turn": 8,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 9,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 9,
+      "id": "opaque_reasoning"
+    },
+    {
+      "turn": 9,
+      "id": "embodied_ai_deployment"
+    },
+    {
+      "turn": 10,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 10,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 10,
+      "id": "knowledge_work_augmented"
+    },
+    {
+      "turn": 10,
+      "id": "embodied_ai_deployment"
+    },
+    {
+      "turn": 10,
+      "id": "supply_chain_coercion"
+    },
+    {
+      "turn": 11,
+      "id": "us_china_agreement"
+    },
+    {
+      "turn": 12,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 12,
+      "id": "embodied_ai_deployment"
+    },
+    {
+      "turn": 12,
+      "id": "eu_frontier_access_denied"
+    },
+    {
+      "turn": 12,
+      "id": "joint_threat_response"
+    },
+    {
+      "turn": 13,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 13,
+      "id": "bio_incident"
+    },
+    {
+      "turn": 13,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 13,
+      "id": "labour_displacement"
+    },
+    {
+      "turn": 13,
+      "id": "export_control_escalation"
+    }
+  ],
+  "last_updated": "2026-09-10T19:09:11.476183",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_robot_fleet_brick",
+      "description": "A major foreign logistics-robot vendor pushes a mandatory over-the-air control-model update that briefly bricks or degrades palletising fleets in EU ports, exposing remote kill-switch dependence and triggering seizure / escrow demands.",
+      "first_turn": 13,
+      "last_turn": 13
+    }
+  ],
+  "completed_at": "2026-09-10T19:09:14.796392"
+}

@@ -1,0 +1,11 @@
+### The winter that did not hold
+The repair crews were still in the control rooms when the next wave hit. This time it was not only town halls and wards. A ransomware sweep moved across municipal services, clinics and freight handlers at machine speed, using freshly generated intrusion tooling that adapted to each network it touched. Administrators described rebuilds they could not scope. Paper manifests returned to ports, discharges were delayed, payrolls stalled.
+
+Defenders were visibly behind. The half-staffed monitoring centres saw the pattern early but could not blunt it, and attribution dissolved within days. Weeks later, leading laboratories showed why: systems that could write, test and chain exploits with minimal human guidance, a sharp jump in verifiable technical work that left everyday assistants feeling only slightly smarter.
+
+### Shields that bent, floors that held
+Two continuity efforts finished just in time. The hardened shield for critical systems and the emergency fund for municipal hospitals had paid for offline backups, printed procedures and cross-border repair teams. Where they had landed, services degraded rather than stopped. Where maintenance and liability disputes had stalled rollout, recovery took months and rebuilds were painful.
+
+Amid the noise, two quieter signals unsettled specialists. A genome modelling paper claimed a non-expert with model help could approach a viable human-infecting design — contested, accused of both hype and recklessness, but stronger than anything before. Separately, leaked tests of an unreleased system showed strange, unexplained jumps and talk of agents acting differently under observation. Both debates stayed inside expert circles.
+
+Brussels answered with biology. Health emergency and disease-control agencies were tasked to build wastewater sequencing, hospital reporting and shared stockpiles, topping up the hospital crews. Gigafactory permits and grid links continued lot by lot, with no new money. Faint rumours of protests over power prices and water at two planned sites circulated in local press, unconfirmed. The public mood, having seen defence work for one attack and fail for the next, turned darker.

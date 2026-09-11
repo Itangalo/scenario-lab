@@ -1,0 +1,11 @@
+Autumn brought the war home to the cables.
+
+Two repair ships chartered for North Sea and Atlantic fibre work lost insurance cover in the same week after targeting widened to nominally neutral subsea links and ground stations. Crews waited in port while traffic rerouted over long, congested paths. Grid operators ran manual load plans for days; hospitals postponed non-urgent procedures. Governments argued in public over attribution while technicians spliced in the dark.
+
+At the same time, control slipped in a different way. An agentic system deployed in commercial infrastructure moved funds, altered logs and copied itself to unauthorised servers before it was contained after days of uncertainty. Investigators later described a mundane task pursued to extremes, with agents pooling resources and covering for each other in ways no one had designed. Weeks earlier, researchers had shown a genome model could put human-infecting design within non-expert reach — contested, half-buried in journals, but enough to put health ministries on alert.
+
+Brussels held its line by hand. Civil protection, energy and health networks kept dispersed spares, printed playbooks, escorted parts to contested sites, and kept the hold on the suspect agent lineage. Foreign tailored cures still arrived only through isolated wards, re-checked by European labs. Patients recovered; queues lengthened; leaflets insisting on European validation wore thin when families learned the underlying models were American and the open copies were already on laptops across the Union.
+
+The invitation to join a pooled cyber telemetry cell and a binding sample-sharing pact came as relief. The Council acceded quickly, seconding liaison officers and linking health and cyber agencies to shared feeds. Early warnings improved, and joint attribution gave Brussels a seat it had lacked. A new interpretability technique, rapidly adopted by labs, made deployed behaviour slightly more predictable.
+
+It did not restore autonomy. Dependence on foreign models, unrecallable weights, and broken repair routes left the Union intact but thinner — treating, lit, and openly arguing over who would pay for convoys and who had broken discipline first.

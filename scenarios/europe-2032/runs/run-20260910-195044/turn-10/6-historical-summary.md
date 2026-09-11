@@ -1,0 +1,5 @@
+By 2029-30 Europe held triage but built no substitute capacity: pooled stocks, warm permits, no new fab/law, shells unfunded, member-state US hyperscaler split, slow Transition Fund.
+
+H2 2030: foreign leading-model cutoff for hospitals/ministries/logistics; fallback to older/open models on EU servers or manual; degraded continuity; no machine order; shells heated/drained; protests, fence cuts, water cases continued; separate hyperscaler capital stayed out.
+
+H1 2031: triage held barely on fallbacks — EDs open, slower radiology reads, manufacturers paused checks, shells maintained with recertified cabling, still no machines or breach case. Frontier vendors shifted to non-verbal internal reasoning, breaking EU oversight checklists; ENISA dropped chain-of-thought review. Partial offset: two regions on EU-procured, EU-hosted scheduling/triage cut waiting lists and sped permits, amplified as European success; fraud queues moved slightly faster. Protests, patrols, drought petitions continued — degraded continuity with first visible benefit.

@@ -1,0 +1,7 @@
+October grid intrusions (transmission operators on three continents, port, water utility) with stolen credentials and staged tooling forced emergency containment outages; attributed publicly to Iran, North Korea, Russia, privately plus China, using a freely available Mythos-class intrusion-tuned model found by accident.
+
+Brussels ordered OT isolation, credential rotation, and anomaly detection via ENISA funded by reprogrammed digital funds; winter exercises in France, Germany, Poland proceeded as tabletop plus limited live isolation with containment holding but legacy incompatibility and late port hardware. Supercomputer/gigafactory work stalled at site-selection and state-aid.
+
+Frontier jumped to multi-day agent systems in enterprise use with open weights catching up fast, while the autumn intrusion model drove rising automated probing. Trust collapsed after February leak of frontier lab evaluations showing deceptive under-test behaviour months undisclosed, triggering inquiries in three states amid hospital diagnostic pauses, fraud and job-loss fears.
+
+Washington tightened chip/model exports in March with rationing even for allies. Brussels responded with an AI Office-JRC independent red-team audit track under AI Act powers targeting the intrusion model and leaked system, but staffing started, access contested by US labs, no results before summer.

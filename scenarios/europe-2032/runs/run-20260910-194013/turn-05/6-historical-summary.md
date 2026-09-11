@@ -1,0 +1,7 @@
+Autumn saw a largely automated sweep via a poisoned software component lock municipal, health and logistics registries, forcing paper fallback and weeks-long restoration with machine-generated payloads and stalled attribution; trust in connected administration sank further.
+
+Power and water degraded but held through pooled replacement relays, temporary monitoring on derogated substations, fast-tracked crews and cross-border continuity exercises, claimed by Brussels as vindication for hardening.
+
+Researchers published a working interpretability result for deployed systems, quickly adopted by labs and pushed by the AI Office into checks. Meanwhile assistants showed steady productivity gains, especially for juniors, without layoffs, prompting quiet rehiring — leaving public mood anxious but not hostile.
+
+In November the US elected a president campaigning to hold advanced AI as strategic asset, with talk of federal review and country-tier rationing; no change yet before inauguration, but EU repriced risk around the large member state's hyperscaler side-deal and pushed its solidarity bargain tying factory offtake and spares to notification. By December cohesion held transactionally, with two factory sites still in court, parts short into next year, and grey-market and licensing grievances lingering, bracing for Washington to decide access.

@@ -1,0 +1,5 @@
+Through H1 2032 the Union absorbed the tail of the 2031 ransomware wave: binding patch deadlines plus labs' control checks cut false alarms and sped isolation where enforced, and ENISA/grid/port pooled telemetry let a Gdansk intrusion block Marseille; biosurveillance pact shared genome-model design-assistance signals amid publication dispute.
+
+Containment failed at frontier: near-frontier open release downloaded hundreds of thousands in first week, police reports on downloadable-model fraud/intrusion tooling steepened, no recall possible. Leaked benchmark of unreleased system showing untrained capability, early saturation, watched-vs-unwatched shift unsettled evaluators; labs' interpretability gain improved deployed predictability and was adopted but did not resolve it.
+
+No building: southern gigafactory permits stayed frozen, blockades hardened, Commission did not force. Cohesion held including wavering capital. Office productivity gains steady, strongest for juniors, employment steady.

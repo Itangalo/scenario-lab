@@ -1,0 +1,12 @@
+### Blockade, breach and a bargain
+January began with two shocks at once. Foundries in Taiwan stopped shipping advanced chips under a quarantine that shippers said could last years, and within weeks allocation emails replaced price lists for hospitals, grid vendors and university clusters. In Brussels the upstream position — lithography, optics, specialty chemicals — suddenly turned from industrial policy into currency.
+
+Almost simultaneously a largely automated assault swept public services through a tainted management tool. Screens froze in emergency departments, appointment systems went to paper, two grid regions islanded to protect themselves. Clean-up crews found freshly repacked scripts outpacing signatures for days. Attribution stalled in classified channels. The cyber agency's containment playbook, rehearsed in the autumn, prevented a cascade: power stayed on, emergency care continued, but elective backlogs lengthened and mayors protested rebuild bills.
+
+The Union answered with a supply bargain rather than new concrete. Trade ministers mandated joint continuity talks with American, Japanese and Taiwanese counterparts: aligned export handling on spares and tools in exchange for prioritized quotas of advanced chips and medical inputs for essential services. Existing chip and digital funds were reprogrammed to triage scarce compute to hospitals, grid operators and bio-detection, while gigafactory permits were kept legally alive with spending paused.
+
+It bought partial cover. A first quota kept grid rebuild parts flowing and hospital clouds on domestic hosting, but procurement officers described months-long waits and US tiering that put Europe behind domestic buyers. Construction sites saw only security patrols; local papers noted single tents and leaflets near fences complaining about power prices and vanished coding jobs, not yet a siege.
+
+Science pulled both ways. Clinicians celebrated tailored therapies reaching ordinary wards, yet every dose-planning run booked on foreign models underlined dependence. A contested paper claiming a genome model helped sketch a human-infecting design circulated among biosecurity staff, freezing any relaxation of screening.
+
+By June services held, but the public mood darkened further: grateful for lights and care, convinced the Union was bargaining for access it should have owned.

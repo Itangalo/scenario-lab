@@ -1,0 +1,13 @@
+### The shield arrives, the backlash lands
+The second half of 2027 was defined by two forces pulling in opposite directions.
+
+On the technical side, the new defensive stack matured faster than expected. What had been a laboratory demonstration in spring — spotting coordinated probe swarms and pushing patches within hours — became operational software by autumn. Transmission operators that already had it reported a steep drop in successful intrusions even as probe traffic hit record highs. Brussels rushed to claim the win, and for a few weeks the mood in energy ministries was almost optimistic.
+
+That optimism collided with a major press investigation in September. Reporters traced intrusion tooling built on a freely available foreign model family to a rental service running on servers inside the Union. The story named towns, showed invoices, and linked the rented machines to the same probing wave the new shield was supposed to stop. Within days, several city councils voted to ban open-model hosting on municipal infrastructure. A small but loud protest movement appeared outside data-centre gates, mixing local anti-construction groups with national activists warning about job losses and fraud.
+
+### Unequal protection
+The Commission's answer was to push the shield down to the operators left behind using existing resources. Managed security teams funded from existing digital and cohesion budgets were dispatched to small water utilities and municipal networks that could not tune the noisy new alerts themselves. Large ports and grid operators continued to improve; the laggards began to catch up, but slowly. Engineers seconded to rural utilities described months of false positives, understaffed control rooms, and mayors asking why their town was protected last.
+
+Gigafactory permitting continued to crawl. No new domestic compute came online, and interior ministries still resisted any talk of new hardware builds. Washington kept pressing its offer of chip volumes for export-control alignment; Brussels held its line without signing, conserving what political energy it had for the municipal rollout.
+
+By December, break-ins were falling in covered networks and still rising in uncovered ones. The postcode gap that dominated summer editorials had narrowed, but not closed — and the hosting-ban debate now threatened to fragment the very infrastructure the hardening depended on. The effort drained political energy, but proposal work and residual legitimacy cushioned part of the portfolio cost.

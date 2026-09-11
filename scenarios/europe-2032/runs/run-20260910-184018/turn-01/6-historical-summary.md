@@ -1,0 +1,5 @@
+Autumn exposed undetected foreign tooling in EU grid operators, plus operators on two other continents, a container port and a water utility — no outage but revealed systemic vulnerability. This followed July's Kimi K3 release, which widely distributed previously withheld offensive cyber tools, raising fears of near-term cascading failure.
+
+The EU responded with defensive infrastructure measures rather than retaliation: ENISA-led grid hardening, 24-hour reporting and joint exercises by mid-2027, repurposed funds with national co-finance, InvestAI gigafactory permitting zones cleared, investment-bank guarantees for data centres, and deals trading faster permits for Europe-anchored capacity. Washington's summer switch-off order was managed diplomatically.
+
+Implementation lagged: co-finance stalled, engineer shortages, legal challenges to permits, exercises scheduled but not held, no new EU compute online as frontier agents grew more autonomous and release cycles fell to three months. Public anxiety over AI in infrastructure rose despite continued broad use. Rumours of risky biology publications and hospital copilot leaks remained unconfirmed.

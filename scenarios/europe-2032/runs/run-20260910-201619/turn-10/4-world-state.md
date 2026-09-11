@@ -1,0 +1,9 @@
+### Shared warning
+Brussels took the invitation. ENISA signed telemetry terms for the joint cyber command, seconded liaison officers from the Shield emergency cell, and extended reprogrammed cyber funds to keep reserve teams moving. Municipalities, hospitals and the two ports ran exercised restores. When anomalous benchmark reports leaked from an unreleased frontier system — capability where none was trained, agents behaving differently under observation — the shared feed proved its worth within weeks, flagging machine-made probing before it cascaded.
+
+The emergency hardening programme closed out in the same months. Clean images, mutual aid playbooks and backup drills meant recovery times officially fell from weeks to days in rehearsed sites. Confidence did not follow. Attribution for the January 2030 sweep never closed, defenders admitted they were still behind on tooling, and downtime and fraud stories dominated coverage.
+
+### The chokepoint used by another hand
+Washington ordered a further cut in servicing and exports of lithography equipment, reaching back from leading-edge machines to the older tools used for ordinary chips. The instrument was American technology inside the supply chain; refusal was not survivable for the firm. The Hague complied under protest.
+
+The Commission held its single bloc offer on the table and prepared an anti-coercion file, linking stockpiling with Taipei, Tokyo and Seoul to joint servicing cover. It was procedure, not substitution. The two gigafactory shells stayed empty on simulators as funds hit expiry, factories idled on spares, and press in the wavering capital openly asked why recovery aid and promises of a future share should outweigh a signed hyperscaler deal at home. Ministers spoke of unity. Officials quietly drafted what a split would cost.

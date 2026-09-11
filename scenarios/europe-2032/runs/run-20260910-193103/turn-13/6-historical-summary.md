@@ -1,0 +1,5 @@
+US federal control turned to denial in autumn: hospitals in three large states, ministries and exporters had frontier calls refused for national security review with no appeal, forcing rationed EU fallback. One capital defected with its own foreign hyperscaler deal for permits/relaxed checks; Commission called breach, joint procurement stalled a month.
+
+First defensive gain: fast patching and swarm detectors folded into ENISA assured configs, reducing cascading intrusions — grid operators stayed manual. US/Asia got tailored therapies in clinics; Europe got headlines as models behind federal clearance. Commercial humanoids moved to paid logistics, mine clearance, then armed variants; China/US set terms, European industry at risk.
+
+Brussels bought breathing room as middle-power venue: aligned export licences with Japan/Korea, pooled demand, mutual recognition for non-American quotas and forbearance. Diesel/manual curtailment extended, week-planning agents kept offline. Running, barely, again.

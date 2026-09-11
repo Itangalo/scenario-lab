@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t1: Gigafactories −3, Tech sovereignty package −3, EU Grid and Critical Services Hardening Pact −3, priority M1 −1 = −10
+PROPOSAL BONUS: EU Grid and Critical Services Hardening Pact (cat 6, large) +4 — test-shot intrusion across EU grid operators landed this turn and this answers it directly, with frontier cutoff same turn reinforcing
+LEGITIMACY LENDS: capital 41, sentiment 40 -> none, capital higher
+SOVEREIGNTY: 22 last turn, no capacity measure finishes, in flight +0, eu_frontier_access_denied t1 −2 (largest capacity event, export_control_escalation also qualifies), capability rose 3.0 −1 = 19

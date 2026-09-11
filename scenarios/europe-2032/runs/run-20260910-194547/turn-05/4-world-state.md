@@ -1,0 +1,11 @@
+### The jump and the cure
+Autumn brought a new American system that made last spring's benchmarks look quaint — grades jumped in domains it was never trained on, and deployment timelines written in July were obsolete by October. In the same months the tailored oncology stack moved from promise to practice, with remissions that oncologists described as previously unthinkable.
+
+For Europe the cure arrived through American pipes. The HERA pilot for EU-hosted inference covered two indications and ran reliably, but waiting lists for everything else lengthened, and nightly news carried patients counting the ocean between them and treatment. Continuity procurement under the reserve kept wards and ministries on vetted, narrower assistants, and Digital Europe money held to filed continuity plans. It worked, and it looked like dependence.
+
+### A crack in the line
+That look deepened when a large member state signed its own compute-and-access arrangement with a US hyperscaler, with side understandings on export-control alignment that undercut the common negotiating position. The capital defended it as pragmatism for its hospitals and industry; Paris, Warsaw and the Commission read it as a separate peace.
+
+Meanwhile one bright spot was claimed as European: two hospital groups and three municipal administrations showed measured falls in backlogs and decision times on the vetted assistants, credited to continuity planning rather than to the underlying model. A new interpretability result — a method that predicted certain failure modes before they were observed — was adopted quickly by labs and gave evaluators slightly more than behaviour-grading for the first time in a year.
+
+Gigafactory siting inched ahead on two sites with brokered power prices and spares stockpiled against shipping anxiety, while extended exercises around Taiwan lifted insurance rates. By December Washington had elected a coalition-minded president promising structured allied access on published terms, but no new administration yet existed to price. Europe ended the year running, treated in part, assured in part — and visibly divided.

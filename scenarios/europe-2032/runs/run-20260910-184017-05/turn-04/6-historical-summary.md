@@ -1,0 +1,5 @@
+Autumn hardening held for grid/port/water operators via segmentation during March automated campaign (ransomware, poisoned update) hitting municipal IT, hospital admin and public-service platforms; small towns/clinics suffered weeks-long recovery and forensic queues, machine-generated varied code overwhelmed defenders, attribution lagged.
+
+Brussels surged ENISA-JRC cell to incident command: effectively mandatory anomaly/compromise reporting, indicators via ENISA, HPC testbeds re-sequenced to forensics/clean rebuilds; cascading contained but detection lag vs automated attack code unresolved, US frontier access stayed logged/narrow.
+
+Commission folded private-capital permitting vehicle into gigafactory programme as duplicate to fund response; finance ministries approved, industry/capitals saw permitting reform abandoned. Siting lot-by-lot and biosecurity procurement continued without new money. Office productivity/clinic gains overshadowed by outages/fraud, mood anxious; genome-design claim and publication-screening debate confined to expert circles, detection-capacity doubts persisted.

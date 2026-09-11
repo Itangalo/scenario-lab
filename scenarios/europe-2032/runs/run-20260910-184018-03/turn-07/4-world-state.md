@@ -1,0 +1,10 @@
+### Holding the line
+The second half of 2029 brought no breakthrough in Brussels, and by design no new fight. With coffers thin and permits still frozen, the Commission chose continuity over announcements.
+
+That choice showed most clearly in hospitals, ministries and grid control rooms. Teams from the EU's cyber and health emergency agencies kept fallback routines running on slower European-hosted models, drilling cutovers month after month. A regional grid operator in the east rode through a ransomware attempt in October by islanding systems and reverting to paper procedures for a weekend — messy, but without a blackout. Clinicians grumbled about sluggish triage assistants, but the April near-miss was not repeated.
+
+On industrial ground, little moved. In Spain and Sweden, fences still ringed empty fields where gigafactories were planned. The Investment Bank kept paying to keep permits and grid reservations alive, local councils were offered compensation for water and power, and engineers shifted paperwork to whichever licence was actually granted. With no new compute brought online and access still rationed, openly available models saw no meaningful advance in European deployment — capability held flat. In Washington, trade officials repeated the offer of market access and cooperation on chip-making equipment in exchange for larger model allocations. American counterparts listened politely and left the quarterly quotas unchanged.
+
+The one tangible completion was financial: the last disbursements under the gigafactory investment programme closed, with auditors confirming the money had preserved options rather than built capacity. Opposition lawmakers called it paying rent on vacant lots; supporters replied that without those payments there would be no lots at all.
+
+By December, dependence had hardened into procedure. Rationed access, slower domestic models, and exercised fallbacks kept essential services upright. Nothing collapsed — and nothing advanced. In the Council corridors, the mood was relief mixed with exhaustion: survival, competently managed, but still survival.

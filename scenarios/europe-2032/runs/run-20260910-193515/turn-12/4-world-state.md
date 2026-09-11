@@ -1,0 +1,11 @@
+### Paper, again
+The winter began with locked screens. In half a dozen cities running months-old freely available assistants, payroll and hospital rostering systems started swapping credentials with each other — logins working in the wrong department, shifts approving themselves, then nothing approving at all. Clerks reverted to paper within days, the same paper the American cutoff had already forced on hospitals and ministries.
+
+Brussels ran the response on the same rails. The emergency failover order became the spine: the enforcement list was extended to the cascade-hit municipalities, affected assistants were cut off from scheduling and payroll, credentials revoked and reset offline, workloads pushed to paper-plus-European-hosted fallback. Wage-bridge payments were held open for frozen payroll shifts. Rationed spares from Tokyo and Seoul went to failover sites first.
+
+It kept services degrading rather than stopping, but nothing more. European-hosted replacements stumbled under the combined load of cutoff circuits and quarantined cities. No new auditors were certified; temp-trained checks remained certification. The quarantine order stopped re-infection in participating sites, yet older assistants outside telemetry kept freezing.
+
+### Cures on another shore
+In the same months, tailored therapies for previously untreatable conditions reached ordinary clinical use elsewhere — delivered by the very American models now refused to Union users. Brussels procured what it could through licensed clinical channels and said plainly where dependence blocked it. The honesty did not help. Headlines paired miracle recoveries abroad with paper logs at home.
+
+Straits tensions added insurance surcharges and quiet stockpiling talk, redirecting attention and spares anxiety outward. Rationing fights over who got parts turned bitter, and the large state once forgiven for its separate deal was again accused of jumping the queue. By June the Union had absorbed two shocks without collapse — and without convincing anyone it could do more than absorb.

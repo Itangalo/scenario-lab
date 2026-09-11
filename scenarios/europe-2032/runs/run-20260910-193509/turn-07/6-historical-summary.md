@@ -1,0 +1,7 @@
+Spring 2029 AI valuation crash cancelled gigawatt campuses and frontier training curbs; contested biosecurity paper signalled genome model step-change for human-infecting organism design.
+
+Commission built combined facility to buy distressed shells/grid/GPUs into EU ownership and surge-funded hospital/municipal rebuilds and scanners; tech-sovereignty package closed for permits/aid, auto-defence to water/hospitals declared deployed — but co-ownership stalled, US hyperscalers demanded premium with tiered caps/re-export unpublished, repairs partial, bio window open.
+
+Autumn: Washington placed leading AI labs under direct federal control, foreign access as policy; EU conformity/market leverage bypassed. Clearance/compartmentalisation slowed frontier gains to low end.
+
+EU gigafactory legal phase closed — permits/aid/grid bankable — but two shells stayed half-closed over loss-sharing, US EU-hosting only at premium. Auto-defended power/telecoms rode through autumn probes; paper-queue hospitals/municipalities lagged, scanners late/uneven. Brussels state-to-state offer (optics maintenance, EU-law hosting, incident sharing for volume guarantees) met with no US commitment before winter. Anti-AI blockades persisted, public mood fell on US dependence.

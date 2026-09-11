@@ -1,0 +1,7 @@
+Autumn's twin shocks — infrastructure intrusions and Washington's revocation of foreign US-model access — gave way to grinding 2027 standstill spending, extended into autumn 2028 holding pattern.
+
+Hunt teams cleared transmission operators and closed backdoors, and a July-Dec facility forced re-audits for shield coverage, but fallback stayed sluggish and unfunded. Hardening, gigafactories and sovereignty package stayed legally alive — land, grid queues, permit zones mapped — with no concrete poured, no fresh cash, and power unreserved amid protests and stalled-zone mayors denouncing abandonment.
+
+In February the genome-model redaction fight broke: full manuscript uploaded to foreign preprint, mirrors spread despite Brussels do-not-download orders, screening mandates, incident reporting, sequencing money, and failed takedown. Large synthesis firms and hospitals complied with screening, reserved slices and drills, but small labs/universities lagged; containment only slowed diffusion amid welfare-policing distrust.
+
+By autumn Brussels spent to avoid spending while Washington tightened the vice: a member state signed its own US cloud/model-access side deal, fracturing the common line, then Washington rewrote volume licences for chips and frontier-model access into tiers, reducing European firms to rationed clients. The November US presidential election, decided by December with takeover next year, deepened European resentment of dependence without treaty votes, mass protest, or institutional collapse.

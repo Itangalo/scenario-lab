@@ -1,0 +1,11 @@
+### First cures, foreign machines
+Spring brought news that dominated wards and front pages: tailored therapies, designed with frontier models, curing conditions that had no treatment. Families in Leuven, Lyon, Turin, Warsaw and Utrecht queued for information within days. Brussels moved fast for a Union with almost no room to act, routing procurement through health emergency channels and pushing accelerated clinical guidance so public hospitals could offer the first pathways by June.
+
+Delivery was real but thin. A handful of university hospitals administered first courses; most primary care sites received diagnostics, leaflets and waiting lists. The deeper problem was visible on every consent form: inference ran, in most cases, on foreign models via audited remote access. EU-hosted capacity covered only a fraction of demand. Negotiators secured bloc pricing, but licensing terms still required per-query approvals and heavy paperwork under tightened export controls.
+
+### A bridge that paid out, a programme that crawled
+The expired Transition Guarantee paid its last stipends, keeping a few thousand young people in temporary municipal and care posts through the winter. Rectors and mayors acknowledged it had softened the worst months, even as occupations in Turin persisted.
+
+The new access programme tried to convert protest cities into first-benefit sites, pairing treatment rollout with retraining slots as care assistants. Uptake was modest: hospitals lacked staff to supervise, automating employers offered little co-funding, and regional operators, wary after last season's blockades, slowed grid works for new inference nodes.
+
+By June, essential services held. Hiring in law, accountancy and support remained frozen. Rumours circulated of night-time interference at substations feeding computer clusters, and of a cash-strapped region quietly marketing a fenced factory lot to an overseas operator — both unconfirmed, both repeated. Gratitude for the cures mixed with resentment that Europe could not provide them on its own.

@@ -1,0 +1,10 @@
+### Holding the line
+July brought the attack everyone had warned about. It came as a rolling ransomware sweep stitched together by automated tooling: municipal administrations locked out of registries, two regional hospital groups reverting to paper, a telecom voicemail platform degraded for days. Recovery was real but slow. Engineers said the intrusions learned from each block, defenders said they were visibly behind. Attribution slipped away into months of forensics.
+
+Brussels did not promise rebuilding. With budgets exhausted and servicing for advanced chip tools still frozen, the Council mandated what it could afford: a keep-alive cell run through ENISA and national response teams. Segmentation, offline backups, joint telemetry, mutual aid on existing money. Where hospitals were cut off, the federated clinical system carried routine triage. Queues for ordinary scans even shortened in some cities, even as complex cancer cases were phoned across borders for a second opinion.
+
+That thin cover held, but only just. Essential services degraded rather than stopped — a distinction officials repeated until it sounded like a slogan. Local papers paired it with layoff notices and fraud stories, and anger that had been abstract turned concrete.
+
+Autumn added two quieter shocks. Researchers published contested claims that a genome model had helped sketch a viable human-infecting design, prompting a discreet health watch without public guidance. Weeks later, a new openly released model landed within months of the frontier, downloaded hundreds of thousands of times in days. Whatever it carried could no longer be recalled.
+
+By December, shipping insurers were repricing routes after extended exercises around Taiwan, and capitals noted the mid-sized technology pact kept test access alive but won no concession on hardware. Europe ended the year degraded-not-stopped, relieved and resentful at once.

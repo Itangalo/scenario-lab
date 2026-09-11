@@ -1,0 +1,11 @@
+### The patch that worked
+Autumn brought the first defensive win in years. Research teams demonstrated automated patching that closed vulnerabilities almost as fast as they were found, alongside detection that flagged coordinated agent activity by behaviour rather than signatures. ENISA moved quickly, pre-procuring toolkits and pushing them through existing shield teams into hospitals, grid operators and municipal networks under emergency implementing acts.
+
+Where it landed, it helped. Two regional hospitals repelled a credential-stuffing wave that would have locked wards a year earlier. A Baltic grid operator contained a swarm probe in hours. But rollout was uneven. Mid-sized suppliers and smaller communes lacked staff to install or tune the tools, and contractors billed extra for integration. The breakthrough blunted cascades; it did not yet raise the baseline everywhere.
+
+### Accession, at last, on paper
+After two years of stalling, the observer-to-party text for the American-Chinese safety arrangement was signed. Brussels transposed its telemetry obligations the same week and claimed validation for its monitoring tools and containment data. Washington praised the contribution; Beijing remained distant, complying on incident reporting while yielding little on supply.
+
+At home the win barely registered. Clinics running tailored therapies under the care scale-up drew grateful queues and mayoral photo calls, with reimbursement now tied to European-hosted inference. Yet factory towns on short-time work and municipalities still cleaning fraud cases saw little of it. Nurses spoke of paperwork receding; furloughed line workers spoke of borrowed models and foreign compute.
+
+Capital remained razor-thin. The Commission held the servicing line for lithography tools for published quotas but avoided a new confrontation, spending what cohesion it had on keeping the care rollout and the patching drive alive at once. Both moved slowly, starved of staff and money, and officials privately warned that the patching window would close as attackers adapted.

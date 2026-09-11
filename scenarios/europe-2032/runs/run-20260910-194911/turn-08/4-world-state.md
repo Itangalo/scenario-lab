@@ -1,0 +1,8 @@
+### Patching while the chokepoint slips
+Summer brought two different kinds of biology news. Hospital boards stayed alive on locally hosted triage models, and the Brussels allocation cell, now made permanent, kept antivirals moving lot by lot. Deaths fell slowly where deliveries landed. At the same time a contested genome-model paper claiming a non-expert pathway to a human-infecting organism circulated through biosecurity circles, amplifying the rumours of an inquiry into model-assisted design. No ban followed yet, but procurement officers began hoarding reagents.
+
+A genuine opening came in cyber defence. Automated patching and swarm-behaviour detection, certified through the EU evaluation hub, was pushed by DG CNECT and ENISA to hospitals, grids and telecom operators. Early rollouts stopped a string of ransomware cascades that would have closed wards in June. Engineers called it the first time in years defence had gained ground.
+
+Washington undercut the mood. Using its jurisdiction over American technology in the supply chain, the administration compelled the Netherlands to deepen cuts to servicing and exports of lithography equipment — reaching back to older machines and to a wider customer list. The Hague protested, ASML warned of contract collapse, and the Commission chose not to trigger coercion in return to avoid splitting the Council. The exploratory state-to-state channel in Washington stayed alive but produced only review procedures and security conditions; suspended hospital keys were not restored.
+
+Empty gigafactory shells, dark northern grid works and nightly images of American-made cures kept dependence visible. Southern clinics stayed open on formalised overtime, northern voters asked why permits produced no accelerators.

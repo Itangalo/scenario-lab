@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t10: EU Entry-Level Transition Guarantee −2, EU Cutoff Survival and Chokepoint Defence −2, priority −0 (suspended, capital below 20) = −4
+PROPOSAL BONUS: EU Cutoff Survival and Chokepoint Defence (cat 8, small) +5 — frontier cutoff and ASML coercion both fired this turn and this answers them directly, small size limits value
+LEGITIMACY LENDS: capital 3, sentiment 9 -> +2 (capped, included in capital arithmetic: 9-4+3+5-12+2=3)
+SOVEREIGNTY: 20 last turn, no capacity build finishes, no capacity build in flight +0, eu_frontier_access_denied t10 −3 (largest of two capacity events, supply_chain_coercion also fires), capability rose 0.7 no −1 = 17

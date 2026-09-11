@@ -1,0 +1,10 @@
+### Wards, code and chips
+The autumn brought two exercises running side by side. In hospitals, the dispersal drill tied to joint procurement mostly held: wastewater reporting went live in a majority of member states, triage rules were adopted, and stockpiles arrived in poorer systems that had signed up. In the power sector, transmission audits limped on with thin teams, but the joint grid exercise in October exposed fewer blind spots than feared, and operators credited the new playbooks for faster isolation.
+
+That fragile progress was overtaken by machines and markets. A new discontinuous advance in code, maths and cyber tooling spread through labs within weeks. Defenders got better overnight, but attackers got better faster — intrusion attempts against contractors and municipal utilities spiked, and analysts warned that scripted exploitation was now within reach of smaller groups.
+
+Countering it, researchers published an interpretability and control result that actually worked on deployed systems, allowing behaviour to be predicted and certified rather than argued over. Brussels seized on it: the AI Office with ENISA and the Joint Research Centre began turning it into a certifiable checklist for systems running on European compute, with weight-security audits attached.
+
+Supply chains tightened again. Washington tightened chip and model controls, and while allied buyers kept volume licences on paper, deliveries slipped, prices rose and insurance on Taiwan Strait shipping climbed after extended exercises and an expulsion. At home, coordinated protests and grid-connection lawsuits stalled two gigafactory sites over power prices and water use. DG ENER offered transparency on connections and water caps, which kept permitting zones alive but did not unblock concrete.
+
+Public mood darkened further. Funeral coverage gave way to anger over energy bills and stalled builds, with data-centre fences becoming the meeting point for safety and cost fears.

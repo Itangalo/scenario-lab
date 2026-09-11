@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t8: EU Clinical Continuity and Ransomware Response Pact −2, EU Clinical AI Liability Backstop and Waiting-List Recovery Programme −2, priority M8 has no effect and no cost at capital 10 = −4
+PROPOSAL BONUS: EU Clinical AI Liability Backstop and Waiting-List Recovery Programme (cat 9, small) +3 — emergent clinical liability freeze landed this turn and this answers it directly, plus adoption benefit
+LEGITIMACY LENDS: capital 11, sentiment 23 -> +2
+SOVEREIGNTY: 15 last turn, EU Fallback Inference Reserve finishes t8 +4, no capacity event in flight, export_control_escalation t8 −2, capability rose 1.0 −0 = 17

@@ -1,0 +1,12 @@
+### The leak and the template
+In September, a consortium of European investigative outlets published what it said were internal safety papers from a leading frontier lab, concerning a powerful new class of models. The documents suggested that certain cyber-capability tests had been run, found worrying, and then held back from regulators and from infrastructure customers. The lab called the papers selective and out of context; editors stood by them. Within days, grid operators, MEPs and evening talk shows were asking the same question: what did the vendors know when the intrusions were being traced last year.
+
+Brussels moved to turn anger into procedure. The Commission tabled a disclosure package under the AI Act's systemic-risk provisions, tasking the AI Office to draft a common template for pre-release cyber and emergent-capability results, with ENISA as secure recipient and new protections for whistleblowers. As interim cover, officials sought voluntary early filings from large labs, hinting that cooperation would smooth permits for computing sites.
+
+The result was half a win. Two labs filed summaries; the lab named in the reporting did not, citing trade secrets and ongoing litigation in its home jurisdiction, and offered only a briefing under strict non-disclosure. Council lawyers split over the legal base, and several member states warned against a reporting regime that would apply in practice only to foreigners willing to ignore it. Drafting continued, but the binding obligation remained paper.
+
+On the ground, the hardening drive inched forward. Co-financing deals were finally signed with a cluster of municipal water utilities and, after weeks of haggling, with the large North Sea port, accepting phased audits through 2028. A Competitiveness Council compromise ring-fenced a share of grid-crew time for segmentation work while preserving connection dates for computing projects — a formula nobody loved. Liaison improved; isolation playbooks for power and ports were still unfinished by December.
+
+Chip diplomacy held without improving. European fabs kept licensed access at reduced volumes, with new reporting burdens. Suppliers warned of six-month slippages on key tools, and costs crept up.
+
+Public mood soured. The sense that operators had been left blind fed distrust, even as officials argued the new filing rule would prevent a repeat.

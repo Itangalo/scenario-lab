@@ -1,0 +1,7 @@
+Late Feb 2031 coordinated cyberattack froze helpdesks, hospital scheduling and permit portals in three states via poisoned AI-assembled component; backups encrypted, paper fallback, attribution unresolved. EU joint teams restored finance/telecoms in days, hospitals/municipalities over weeks with relapses.
+
+Commission mandated frontier prediction/certification for clinic/school/benefits assistants on EU servers with published checks, failure logs, ombudsman oversight and redress fund. US kept licence rationing, no extra capacity; construction bans held.
+
+H2 2031: slow grind of living with freezes. Joint restoration closed in autumn with clean images, replacement components, paper-plus-digital procedures; relapses rarer except forgotten servers in small municipalities. Continuity and Livelihood Bridge funded overtime, temp hires, mutual-aid rosters, income/retraining for clerks and care admins. Hit-state mayors, promised no forced data-centre push, lifted blocks on hardened rebuilds and EU-anchored images.
+
+Result operationally improved — shorter queues, first redress payouts, fewer complaints about certified assistants — but politically partial, councils hostile, Bridge seen as paid endurance. By end 2031: systems harder to break but no easier to love, sovereignty still reliant on existing capacity.

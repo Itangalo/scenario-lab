@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t6: M1 InvestAI Gigafactories −3, M6 EU Municipal Trust and Transition Pact −2, M7 EU Allied Frontier Access and Embodied Safety Pact −2 = −7 + priority void (capital below 20, no cost) = −7
+PROPOSAL BONUS: EU Allied Frontier Access and Embodied Safety Pact (cat 8, small) +3 — capability_jump and embodied_ai_deployment both fired this turn and this answers both directly via US access window and robot supply regime
+LEGITIMACY LENDS: capital 16, sentiment 15 -> none (capital higher)
+SOVEREIGNTY: 17 last turn, M2 Tech sovereignty package finishes t6 +4, no in-flight bonus, embodied_ai_deployment t6 −1 (small end, domestic fallback finished), capability rose 5.0 −1 = 19

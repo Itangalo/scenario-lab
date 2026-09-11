@@ -1,0 +1,9 @@
+By late 2030 agentic back-office failure and unreadable reasoning forced a kill-switch, caps and human sign-off regime, with labs seeing failures not reasons, grid moratoria stalling pooled inference, and essentials held on manual/paper.
+
+Feb blockade winter closed Taipei lanes: spares stopped, compute prices tripled, Brussels rationed hospitals/grid first. Union tightened lithography/optics licences with middle-power partners for hardened chips/kits amid US/Beijing blackmail charges; mayors haggled over bans and funds.
+
+Mid-spring a discontinuous model family and near-twin open weights spread to hundreds of thousands, voiding pooled containment. A genome paper on a viable human-infecting design prompted wastewater sampling, sealed-ward drills, stockpiling.
+
+By June kill-switches and cross-border exercises kept power and care on through paper/manual override; grey-market agent time mostly caught. Services barely held, junior clerical jobs thinned, polls showed dread.
+
+Late-year a tainted-update ransomware attack locked municipal payments, hospital scheduling and grid balancing tools, backups poisoned, forcing disconnects and paper fallback. Attribution lagged; tooling said machine-built. ENISA triaged with known-good images; sealed blockade playbooks worked where they existed. Mid-cleanup a checkable control result let labs certify monitors/kill-switches on remaining pooled inference, moving from seeing to predicting some failures — but open-twin basement systems and grey-market time stayed outside. Repair corridors faced coordinated blockades/sabotage at grid/data-centre sites, forcing weeks-long shutdowns; protected-site offers split councils. Middle-power bargaining kept spares trickling despite cartel denunciations. By December services restored, trust not, dread deepened as offence proved ahead.

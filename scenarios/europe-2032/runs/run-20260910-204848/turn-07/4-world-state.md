@@ -1,0 +1,17 @@
+### Hardware almost ashore — but not yet ashore
+Autumn was spent trying to turn paper hardware into real hardware. The licensing cell in DG GROW did sign unified terms for optics, lasers and chemicals, and competition officials waved through the two second-hand toolsets already in transit. A Korean crew walked the Grenoble cleanroom in September, measuring anchor points while crates sat in customs at Marseille and Rotterdam.
+
+Nothing etched silicon. New-tool slots remained unsigned in Eindhoven and Tokyo, and port officials asked increasingly pointed questions about American re-export paperwork. Site managers kept permits and grid reservations warm. In Brussels the two-year build programme was not declared complete: the headline figure of two hundred billion in private pledges was repeated at press conferences, auditors quietly noting the difference between pledges and pours. With no fab operational and key tools still unsigned, the InvestAI Gigafactories measure remains in flight and its full effect is delayed to a later turn, with no completion bonus applying this turn. Sovereignty therefore eases lower on decay and dependence, with no finishing uplift this turn.
+
+Open-weight capability continued to close the gap toward last turn's frontier, with the midpoint catch-up between its previous value of 58.5 and last turn's frontier of 62.0 bringing it to 60.2, consistent with prior lag.
+
+### Buffer against a strait
+The shock came from the Taiwan Strait. Extended exercises, cancelled sailings, insurance spikes and an expulsion in November pushed freight rates up and reminded every chip buyer how narrow the route is. The Commission responded through existing civil protection channels: joint procurement of power relays, hospital spares and critical microcontrollers, options for rerouting through Piraeus and Rotterdam, autumn black-start drills. This was emergency use of standing instruments, not a new EU measure proposed this turn, and no proposal bonus applies.
+
+It was cheap, fast and popular with mayors. It did not buy chips that were not sailing.
+
+Resilience otherwise ran on old money. Relay teams stayed seconded, hospital detectors stayed watched, sequencing continued. Enough to keep systems on, not enough to replace workarounds.
+
+The benefits-scoring row deepened. National data-protection authorities forced log disclosure, but the scoring tools stayed live while appeals queued. Local papers called it theatre; councillors in a few cities began talking openly about refusing new grid connections for data centres, and power-price protesters joined them outside town halls. Starting from low political capital, the Commission gained only modest goodwill from the popular buffer work.
+
+Science offered a counterpoint. A California lab reported an AI-designed enzyme family that cuts a key step in fine-chemical synthesis, validated in wet labs within weeks. European researchers co-authored, but the compute and the model lived across the Atlantic. Washington offered routine public praise for ongoing joint evaluation contacts under the standing U.S. posture; no new agreement, access change, or compliance commitment was established, and access for European researchers remained limited and quotas stayed tight.

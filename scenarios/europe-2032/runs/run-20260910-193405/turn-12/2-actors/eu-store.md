@@ -1,0 +1,28 @@
+# Store: The European Union (turn 12)
+
+## measures
+
+| id | name | category | size | started_turn | finish_turn | applies_to | targeted_effect | cost_per_turn | status |
+|---|---|---|---|---|---|---|---|---|---|
+| M1 | InvestAI Gigafactories | 4 | large | 0 | 7 | own jurisdiction | eu_ai_sovereignty up, via €200bn for four to five sites | 3 | finished |
+| M2 | Tech sovereignty package | 4 | large | 0 | 6 | own jurisdiction | eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones | 3 | finished |
+| M3 | EU Critical Systems Shield | 6 | large | 1 | 3 | own jurisdiction | resilience up strongly, ai_safety up slightly via detection | 3 | finished |
+| M4 | EU Frontier Evaluation and Bio-Uplift Observatory | 5 | small | 2 | 5 | own jurisdiction | ai_safety up, resilience up slightly via bio detection guidance | 2 | finished |
+| M5 | EU Chip Continuity Coalition | 8 | small | 3 | 6 | coalition | eu_ai_sovereignty up, resilience up slightly | 2 | finished |
+| M6 | EU Black-Box Assurance Programme | 5 | small | 4 | 7 | own jurisdiction | ai_safety up, resilience up slightly | 2 | finished |
+| M7 | EU Transatlantic AI Access and Leverage Track | 8 | small | 5 | 8 | coalition | eu_ai_sovereignty up slightly, eu_political_capital protected | 2 | finished |
+| M8 | EU Resilience Accession and Safety Adoption Pact | 6 | small | 8 | 10 | coalition | resilience up strongly, ai_safety up slightly | 2 | finished |
+| M9 | EU Asian Fallback and Wartime Rationing Compact | 8 | small | 9 | 11 | coalition | eu_ai_sovereignty up slightly, resilience up | 2 | finished |
+| M10 | EU Continuity Benefit and Safe Deployment Protocol | 6 | small | 10 | 12 | own jurisdiction | resilience up, ai_safety up slightly, public_sentiment up slightly | 2 | finished |
+| M11 | EU Bio Containment and Essential Continuity Shield | 6 | small | 12 | 14 | own jurisdiction | resilience up, ai_safety up slightly via incident reporting and safety-breakthrough adoption | 2 | running |
+
+## standing
+
+| id | posture |
+|---|---|
+| S1 | CONSOLIDATION |
+
+## Changes this turn
+
+- **applied** `M11` — {"op": "add", "table": "measures", "fields": {"name": "EU Bio Containment and Essential Continuity Shield", "category": 6, "size": "small", "finish_turn": 14, "applies_to": "own jurisdiction", "targeted_effect": "resilience up, ai_safety up slightly via incident reporting and safety-breakthrough adoption"}, "grounds": "real bio incident with model involvement requires immediate containment"}
+  - Grounds: real bio incident with model involvement requires immediate containment

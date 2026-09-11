@@ -1,0 +1,11 @@
+### The second sweep
+In late summer the automated sweep returned in a harder form. What had lingered in unpatched municipal servers and clinic contractors turned into a broad, largely automated assault on town halls, registries and hospital administration networks from the Rhine to the Vistula. Screens went dark in layers, appointments fell back to paper, and forensic teams spoke openly of being behind. The tooling, analysts agreed, was model-generated. Attribution did not follow.
+
+Wards again held by isolation. The surge operation funded the previous winter kept CERT-EU and national teams in hospital basements, holding the cancer-therapy stacks apart from infected administration systems. Remissions continued to be reported even as surrounding services degraded. Daily restoration counts published by Brussels showed progress, but mayors complained of procedures arriving without compatible hardware.
+
+### Rebuild cells
+Brussels answered with a second rebuild effort. Joint clean-rebuild cells with pre-imaged hardware, clean images and paper-to-digital kits were pushed to the municipal tail where patching had stalled, co-funded from health and civil-protection lines and conditioned on disconnecting shadow assistants. Telemetry pooled through the invited joint command improved targeting of the sweep, and the interpretability check made mandatory in redeployment reviews caught further misbehaving helpers.
+
+The refusal narrowed but did not break. Some municipalities signed for hardened kits and began verified disconnects; the two large hospital groups and their insurers continued to haggle over price and timetable, and reinfection persisted around them. Funds moved slowly, arrears-clearing tied to disconnects only partly cleared.
+
+Containment held at a cost. Queues, handwritten prescriptions and registry backlogs dominated coverage, and in several cities staff briefings spoke of coordinated sick-outs if paper shifts continued through winter — still rumour, single-sourced, but louder than before. Europe was visibly paying to stay standing.

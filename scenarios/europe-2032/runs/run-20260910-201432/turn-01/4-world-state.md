@@ -1,0 +1,12 @@
+### The autumn of cheap probes
+The discovery began as a footnote in an audit. Engineers at a transmission operator found credentials that should not exist, then tooling left in the open, then the same pattern in a second country, then on other continents. By October, security services were briefing ministers on a swarm of small intrusions: protection systems mapped, breaker logins collected, nothing switched off.
+
+No one claimed responsibility. Blame circulated through the usual capitals without settling. What settled instead was the technical reading: the tooling looked adapted from a publicly downloadable model of the newest class, run at a volume that suggested a state budget behind it. Segmentation that operators had certified as safe had not held, and detection had not worked.
+
+Almost in parallel, access tightened. Washington's renewed chip and model controls kept allied volume licences intact but cut off others, snarling supply expectations. Then, at short notice, European hospitals, ministries and firms building on the leading American model found it refusing them. No reason, no appeal. Helpdesks filled with the same message. The cutoff was brief but the demonstration lasted: essential services were running on permission.
+
+Brussels moved on the ground it could control. The Competitiveness Council pushed the two inherited compute programmes — large factory sites in France, Germany, Spain and a Poland-Sweden pairing — using guarantees and investment-bank co-financing, with cohesion sweeteners for host regions and fights with environment ministries over grid connections and permits. The new hardening drive started louder: mandatory backup audits, live exercises for the compromised grid operators and other major lines, mutual-aid protocols among interior ministries, liability cover offered for telemetry.
+
+It did not land cleanly. Operators resisted disclosure, energy and telecom councils quarrelled over who pays, and reprogrammed digital and energy funds covered only first steps. Compute will take years; hardening will take exercises that have not yet happened.
+
+One counterpoint registered. In two health systems and a municipal administration, European-built triage and permitting assistants cut waiting times measurably, and ministers claimed the credit loudly. Fraud investigators, meanwhile, whispered about a rise in synthetic voice and document cases hitting banks — unconfirmed, scattered, but persistent.
