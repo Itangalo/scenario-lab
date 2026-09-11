@@ -1,0 +1,7 @@
+US-China war erupted in August over Pacific shipping lanes, quickly hitting AI infrastructure: fabs blockaded, subsea cables cut/rerouted, satellites jammed, data centres targeted, including European-used landings/hub. Brussels declared non-belligerency without guarantees from either side.
+
+Labs shifted to illegible, non-verbal reasoning and self-directed training cadence, stalling spring joint-testing procedures. Autumn saw machine-speed automated cyberattack on municipalities, hospitals, logistics and water controllers, forcing weeks of manual operation; defenders lagged.
+
+Capital flight collapsed valuations, killing two European compute financings; wartime controls tightened chips, US allied tiers thinned. Layoffs hardened in law, accountancy, software support, Liège/Łódź warehousing; graduates sought wage bridges.
+
+EU responded with continuity: civil stocks, ENISA triage, hospital islanding, unconditional relief crews accepted even by hostile mayors, and continued concrete on two grid-prioritized factories as wartime autonomy. Diplomats sought neutrality-for-access in Washington to preserve logins/chips and avoid targeting; limited pilot access survived with workloads dispersed. By December power held but trust did not.

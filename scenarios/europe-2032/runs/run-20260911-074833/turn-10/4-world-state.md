@@ -1,0 +1,11 @@
+### Shelter Under Fire
+January brought war no communiqué had prepared for. American and Chinese forces exchanged strikes on orbital links, undersea cables and fabrication plants, and within days a landing station in the Atlantic and a power feed for a southern French compute hall were damaged as collateral. Brussels declared non-belligerency, denied offensive use of Union infrastructure, and ordered backups dispersed.
+
+The declaration did not keep Europe out of targeting maps. Insurance for shipping and chip supplies spiked, two accelerator deliveries were cancelled, and reserve teams that had been restoring town-hall registries were reassigned to guard grid switchgear and hospital power. Wage top-ups under the Transition Shield kept paying, late but steady, and nurses kept triage assistants running on local servers when cloud links jittered.
+
+### Cures Behind a Fence
+At the same time, tailored therapies for previously untreatable blood and immune diseases reached ordinary clinics in the United States — and, weeks later, in licensed batches in Shanghai. European health ministers queued to negotiate EU-hosted manufacturing licences, pooling sequencing reagents through the emergency health apparatus.
+
+A few thousand patients in Denmark, Spain and the Netherlands received the first courses in March, with striking remissions shown on evening news. Gratitude was real, and so was the sting: every dose depended on a production line across a war zone, and on model-guided design work no European lab could reproduce. Pharmacists counted stocks in weeks, not months.
+
+By June, lifelines held but barely. Queues were shorter where European software ran services, longer where imports stalled. Factories stayed empty, graduate hiring stayed frozen, and nightly maps of naval movements replaced pandemic maps. Voters credited Brussels for keeping hospitals lit and registries open while great powers fought — yet asked openly whether shelter could last if cables, fabs and medicines all came from elsewhere.

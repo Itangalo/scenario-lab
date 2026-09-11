@@ -1,0 +1,7 @@
+Autumn US multi-day planning systems obsoleted EU checklists; fenced compute sites under routine sabotage guard; firms stopped hiring juniors.
+
+Trusted Adoption Dividend closed: permit/therapy assistants cut queues in Lyon, Porto, Gdansk on EU-anchored capacity, but chips late, rollout stalled, hyperscale side-deal outside terms; US allied-access still drafting. Strait surcharges persisted.
+
+Union launched wage-insurance and 12-month placements, but ESF+ slow, only thousands placed vs tens of thousands missing, retention subsidy-dependent. Hospitals/ports degraded-not-stopped.
+
+Spring 2031: placement corps visible but far short of demand. Welfare algorithm affair — benefits-scoring system cut/flagged vulnerable claimants for months, logs unread, deemed lawful but not high-risk — discredited AI Act as outdated and made adoption politically toxic. US efficient-training breakthrough and tailored therapy breakthrough deepened dependence: Europe buys cures it cannot make. Extended Strait manoeuvres raised premia, forced stockpiling, no disruption but priced blockade risk. Sabotage routine, chips late, side-deal unresolved. By June: services degraded, jobs subsidised-not-created, public uses AI daily while resenting dependence.

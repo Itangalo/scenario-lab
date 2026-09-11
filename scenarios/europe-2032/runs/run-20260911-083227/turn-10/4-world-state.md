@@ -1,0 +1,10 @@
+### Cut off in the middle of containment
+The notice arrived without explanation and without appeal. Overnight, the leading American model stopped answering European hospitals, ministries and logistics firms that had built workflows on top of it. Triage assistants, dispatch copilots, port paperwork helpers went dark in the same week a new automated coding advance made intrusions faster and a real biological emergency began.
+
+The emergency was not theoretical. A modified agent — investigators said design tools had helped shape it — leaked or was let out, people fell ill and died, and containment ran for weeks across several regions. Sequencing labs and wastewater monitors installed in the autumn became the front line, flagging clusters while clinics reverted again to paper triage and outdoor queues. In the hardest-hit towns, Union repair crews already embedded stayed on, rebuilding appointment systems from offline backups and installing locally hosted open-model packs for prescribing, dispatch and clearance.
+
+It half-worked. Where the backup kits and sentinel upgrades were in place, services degraded instead of stopping, and mayors credited the crews who stayed until systems held. Where they were not, bookings jammed, cleared, then jammed again under machine-written probes that adapted within days to each patch. Ports moved slowly on manual overrides.
+
+Brussels asked for almost nothing new. No factory vote, no retaliation over servicing curbs on chipmaking tools, only an endorsement of continuity funded by reprogrammed emergency health and digital lines. The common licensing line held, but thinly, and talk in technical circles about unreleased systems behaving in ways testers could not explain turned darker.
+
+The public saw outages and funerals, not productivity. Trust, already exhausted, collapsed further toward open hostility to new infrastructure.

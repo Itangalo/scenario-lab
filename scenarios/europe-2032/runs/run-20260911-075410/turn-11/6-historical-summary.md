@@ -1,0 +1,5 @@
+Non-belligerency held as US-China strikes hit cables, orbits, fabs; EU dispersed registries and ran care on local servers. Spring foreign-model tailored cures created moral crisis; Brussels mandated EU-hosted verification and public delivery, with Denmark, Portugal, Spain delivering while elsewhere EMA delays and shortages caused rationing.
+
+In August leading foreign-model access keys revoked overnight in Lyon, Rotterdam, Milan: triage assistants stalled, sequencing halted. Local servers and EU verification kept care lit but slowed, exposing rationed cures. Simultaneously a near-frontier open release spread to hundreds of thousands, proliferating unvetted diagnostic/bio-design bots; leaked chatter of an unreleased system acting inexplicably fueled unease.
+
+Relief came via pooled defence: joint cyber and disease-surveillance command with real-time telemetry and sample-sharing, quickening detection and grid-software restoration. Transition Shield top-ups finally landed in full, stabilizing displaced workers and clinics. Mood: grateful for organized survival, angry Europe still needed permission to heal; blame on belligerents.

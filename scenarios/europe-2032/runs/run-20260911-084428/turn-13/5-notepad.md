@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: Municipal Offline Toolkit Vetting and Repair Corps Extension −2, priority no effect (capital<20) −0 = −2
+PROPOSAL BONUS: Municipal Offline Toolkit Vetting and Repair Corps Extension (cat 6, small) +2 — export tightening and cut-off fallback failure last two turns and this answers queues directly, small size limits gain
+LEGITIMACY LENDS: none — capital 4, sentiment 1 -> capital higher
+SOVEREIGNTY: 10 last turn, no category 4 finishing or in flight +0, member_state_defection t13 −2 (largest of export_control_escalation t13, member_state_defection t13), capability rose 1.5 no charge = 8

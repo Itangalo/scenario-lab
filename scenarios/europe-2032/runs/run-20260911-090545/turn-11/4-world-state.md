@@ -1,0 +1,11 @@
+### Weeks of containment
+Autumn brought the release health officials had feared since the spring genome paper. A modified pathogen with clear signs of model-assisted design sickened hundreds across two member states, with cross-border traces found in wastewater in a third. Hospitals activated surge plans, wards closed to visitors, and HERA ran a weeks-long containment operation — expanded sequencing, stockpiled countermeasures, staff moved across borders.
+
+The prior spring's defensive tooling helped at the margins. The patching and swarm-detection packages extended to hospitals on emergency windows blocked opportunistic intrusions during the absentee peak, and the shared sample swap with Japan, Korea, Canada and Gulf partners sped attribution. But sequencing backlogs meant confirmation still lagged by days, and uncertified utilities again struggled to patch without outages. Containment held, but barely, and funerals reset every argument about model risk.
+
+### Money leaves, courts condemn
+As wards filled, capital fled the AI sector. Valuations reset hard, two announced build-outs that European pooled hosting had counted on were cancelled, and private compute partners went quiet. Brussels froze any new home-build commitments, keeping backup shells alive on old budgets.
+
+Then a national ombudsman with a court behind it found a benefits-fraud scoring system used in three regions had systematically cut off disabled and single-parent households for months. The system was high-risk on paper: conformity passed, logs generated, a caseworker meant to check each flag. In practice reviewers cleared a queue at forty seconds a case and no one ever read the logs. The Commission conceded enforcement had failed and sent the case to the AI Office for redress, refusing to reopen the law itself. Editorials called that cowardice; unions called the tool a weapon.
+
+By December, wards were emptying but trust was not returning. Retraining funds were finally repurposed for displaced graduates and absent workers, yet job anger now mixed with fear of the models themselves.

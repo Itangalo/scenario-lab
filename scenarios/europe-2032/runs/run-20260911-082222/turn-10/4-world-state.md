@@ -1,0 +1,10 @@
+### Shared shelter
+The invitation arrived as Brussels ran out of money to build alone. A group of states hit by the same ransomware and grid-probing campaigns offered pooled attribution, live telemetry and joint playbooks — a cyber command with real-time feeds, plus a biosurveillance pact with binding sample-sharing. The Council said yes quickly. ENISA plugged in the locked-backup routines already exercised across borders, health agencies linked laboratory reporting, and for the first time European operators saw warnings hours before malicious traffic reached them.
+
+It helped. A spring wave of intrusions against municipal networks and two hospital groups was isolated fast by members inside the sharing circle. Those outside it stayed dark longer. The divide noticed last autumn hardened into geography.
+
+The other pact — chips for compute and liability cover — formally closed. On paper insurers got the legal clarity they asked for, and a few civic deployments in cooperating towns restarted. In practice cover did not return at scale. Underwriters cited court rulings and frozen budgets, and the fenced gigafactory site stayed fenced. Trade officials kept calling The Hague, Tokyo and Seoul, asking partners to hold slots open while finance stayed frozen. No slots reopened.
+
+At home the trust repair ground on. Workload limits and human-override rules were imposed on benefits and policing queues, scandal logs were published with a redress window, and audited triage assistants expanded in a handful of municipalities where waiting lists visibly fell. Nurses praised them; national press called them the exception that proved lawful harm elsewhere. Deployments beyond those islands stayed frozen.
+
+American labs, slowed by their own retrenchment, trained less, while second-tier builders boasted of catching up. Capability crept forward, opacity with it. Brussels ended June more protected than in January, but protection rented, not owned — sheltered by others' sensors while its own hardware and legitimacy remained missing.

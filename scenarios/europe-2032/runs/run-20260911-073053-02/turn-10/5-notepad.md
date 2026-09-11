@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t10: M10 EU Middle-Power Supply and Evaluation Coalition −2, M11 EU Wartime Energy-Compute Continuity Shield −2, priority −1 = −5
+PROPOSAL BONUS: EU Wartime Energy-Compute Continuity Shield (cat 6, small) +4 — catastrophic war and sabotage wave halting grid works this turn, answers directly but small and protective not leverage-building
+LEGITIMACY LENDS: capital 5.0 after other terms, sentiment 12.0 -> +2 capped, sentiment above capital
+SOVEREIGNTY: 21 last turn, no cat4 finishes, no cat4 in flight +0, catastrophic_great_power_conflict t10 −3 (largest capacity-taking event, EU sites targeted), capability rose 1.5 −0 = 18

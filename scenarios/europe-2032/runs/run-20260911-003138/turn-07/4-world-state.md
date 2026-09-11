@@ -1,0 +1,11 @@
+### Concrete poured, machines delivered
+The two grid-prioritised Gigafactory shells topped out in autumn, with substations energised and cooling loops tested. Brussels celebrated permits turned to concrete. Inside, the halls stayed largely empty: frozen allocations from Taiwan and high accelerator prices meant only legacy clusters and a first tranche of allied cloud credits moved in. Capacity on paper became capacity photographed, not yet capacity usable.
+
+Washington shuttling produced a published tier sheet for allied researchers and a joint testing channel. European evaluators got seats at black-box test rounds, and a new interpretability result from the labs was quickly bolted onto monitoring dashboards. It helped predict some failures before deployment, but reviewers admitted the core problem remained: the best models no longer showed their work in readable words, and oversight became sampling outputs and probing activations.
+
+### Robots in the warehouse, a deal outside the line
+Catalogue humanoids arrived faster than retraining plans. Logistics parks in Venlo, Piacenza and Brno leased Chinese and American units for pallet work; municipal contractors trialled them for street cleaning and depot sorting. Machine-tool makers lost service contracts, temp agencies cut shifts, and union videos of layoffs spread faster than Commission explainers.
+
+Mid-autumn, a large member state signed its own supply-and-service arrangement with a foreign vendor, undercutting the common procurement line tied to EU servicing and incident reporting. Paris and Berlin called it pragmatism; Brussels read it as a break. The new Transition Pact — wage insurance for warehouse temps, retraining vouchers co-signed with IG Metall, CISL and Czech unions — started paying out in a few dozen towns, and procurement favouring serviced units gave domestic makers a thin moat. Where cheques arrived, mayors defended the Union; elsewhere, boil-notice anger now mixed with job anger.
+
+A counterpoint came from clinics: triage and scheduling assistants cut waiting lists in Denmark, Estonia and parts of Spain, credited locally to EU-funded deployment. It did not reverse the mood, but it kept collapse at bay.

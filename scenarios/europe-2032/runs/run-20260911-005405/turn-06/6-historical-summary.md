@@ -1,0 +1,7 @@
+By mid-2029 Europe's testing regime broke: two leading developers shifted to compressed non-verbal reasoning, blinding readable-trace evaluation, while a sharp jump in verifiable capabilities improved intrusion tooling within weeks. A near-frontier open release spread beyond recall with hundreds of thousands of downloads, enabling unscreened synthesis and automated vulnerability hunting.
+
+Brussels created a new evaluation cell in the AI Office with ENISA secondments for black-box red-teaming and activation inspection tied to procurement and operator approvals, stretching legal base to avoid reopening AI Act; methods slow and immature, French/Dutch pilots uneven. Municipal phishing/probing absorbed on backups at higher cost.
+
+Sovereignty package declared complete — permits moving, two mediated data-centre sites kept grid priority — but a member state signed separate hyperscaler deal undercutting common screening; Commission countered with joint-procurement pricing and telemetry-conditioned reinsurance.
+
+Earlier continuity backstop, allied cyber/pathogen pacts, Japan/Korea coordination cell held. US moratorium administration meant less pressure but distracted, slower joint work. Public mood soured over unreadable models, ubiquitous copies, and dependency despite popular assistants.

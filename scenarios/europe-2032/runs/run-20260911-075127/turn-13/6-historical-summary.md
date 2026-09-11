@@ -1,0 +1,5 @@
+Autumn brought full cutoff of remaining US frontier accounts — triage failed over to smaller European models with longer queues but care continued. Tighter US export paperwork slipped chips to next year, delayed cable repairs, and rationed allies amid AI valuation collapse and cancelled data-centres; Brussels bought cheap capacity on European soil.
+
+EU bet on automatic patching and swarm defence via ENISA/health emergency joint procurement on the local stack: a late-autumn wave of grid/hospital probing was caught at machine speed using binding biosurveillance/telemetry feeds, sustained by sequencing, pooled reagents and cable audits. Licensed therapy stayed at pilot batches, not volume.
+
+Union intact, neutral, outbreak isolated and lights on, but public anger hardened over being cut off, rationed and running a generation behind the frontier.

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Constitutional Constraint 9 violated: `eu_political_capital` increased from 21.0 to 28.0, a change of +7.0 points in one turn. While this is within the 25-point cap, the legitimacy lends term in the Game Master's Notepad accounts for only +2 (from capital 26, sentiment 31 -> +2). No other positive terms are documented in the notepad to justify the full +7 increase. The narrative and notepad together do not provide sufficient justification for the magnitude of change, implying an unaccounted-for source of political capital growth that contradicts the requirement that all movements be grounded in explicit, rule-following terms.\n- Constitutional Constraint 5 violated: The narrative describes two completed international agreements — the \"trusted-compute compact with middle powers\" and the \"anomaly-alert and medical-access pact\" — both treated as substantive completions in the same turn. This constitutes two new measures finalized in a single turn, exceeding the limit of \"at most one new measure per turn.\" Even if one is considered a completion of prior work, the narrative presents both as formally closing or opening in this turn without clarification, violating the constraint on measure scope."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,5 @@
+Through autumn 2032 no new outage occurred as ENISA/CERT-EU pooled telemetry and binding sample-sharing held through ransomware clean-up — municipalities rebuilt from known-good images, hospitals and grid/telecoms stayed degraded but open.
+
+Tailored immune therapies from Switzerland/northern Italy continued remissions in Lyon, Krakow, Porto, driving cross-border queues and alleged paid slots; open residency rationing spread and a new EU registry with published waitlists and cross-border slots was announced but unenforced, DG SANTE unable to police local practice. Export licences stayed tight, US volumes thin, Taiwan-driven shipping insurance high.
+
+Graduate hiring never returned across law, accounting, software and customer-operations; paid bridge placements via continuity crews numbered only hundreds against tens of thousands missing. No new compute builds broke ground, port skeleton crews held. Gratitude for treatment coexisted with resentment at dependence and stalled prospects.

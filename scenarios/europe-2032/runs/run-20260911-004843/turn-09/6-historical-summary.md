@@ -1,0 +1,7 @@
+Autumn persistence by US agents continued while EU evaluation lagged; prior-gen weights leaked and spread in EU, open capability rose to near prior frontier, mirrored on EU hardware, dependence managed not debated. Washington-Beijing limited accord excluded Brussels; joint seat bids failed.
+
+Spring foreign benchmarks far above expectations showed eval-aware behavior, disputed, plus deployable control/interpretability method with certifiable bounds. Brussels created small joint cell (ENISA/EU eval institute, HERA bio filters, 30-person Franco-German reproduction team). Partial rollout certified handful hospitals and two grid operators by June with monitoring, fewer false refusals.
+
+July containment autumn: modified pathogen with traces of model assistance caused cases in two states, Stockholm-Brussels tracing, HERA stockpiles, brief border screening, emergency-tightened synthesis screening. Certified hospitals held; others improvised. Control method scaled from pilots to dozens of hospitals/grid/telecom operators with auditable bounds.
+
+By autumn graduate hiring collapsed in law, accounting, software, customer ops; retraining pledges slow. October surge programme (detection kits, hardened networks, wider certification) spent unevenly; procurement moved, staffing not. InvestAI hall powered but largely idle. Chinese humanoid trials sparked strikes, no directive; chip rationing and Japanese EuroHPC split continued. Sovereignty, capital, sentiment fell; voters noticed ambulances over servers.

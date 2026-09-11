@@ -1,0 +1,9 @@
+Autumn grid intrusion and February US AI cut-off forced Brussels continuity cell to re-platform to European/EuroHPC open-weight models — degraded but running. Strait blockade, pooled exports and rationing kept hospitals/grid alive amid uneven delivery, strikes, and US restraint.
+
+By spring Brussels built triage gate: Safety Institute notification/freeze, limited holds; US labs ignored. Sovereignty package gave permits/pledges but no chips. August US public-sector cut-off plus poisoned-dependency ransomware forced cell into operational command (DIGIT/ENISA/CERTs under NIS2), emergency EuroHPC re-platforming funded by re-phased factory money.
+
+January and autumn brought repeat automated extortion via poisoned components: ERs/billing to paper, restoration from backups, grid load-shedding. Cell as permanent doctrine rationed inference to wards/control rooms, throttled ministries/town halls. Paper-fallback drills made permanent, paid from reprogrammed health/social funds; genome models brought under notification regime.
+
+Work pact — reprogrammed funds, wage insurance, redeploying juniors/clerks to hospital admin, grid crews, bio-detection, EuroHPC ops — held services thinly but uptake slow. Supply worsened under new Washington chip/model controls; Paris/Warsaw lots outbid. Safety Institute holds continued but EuroHPC re-runs could neither confirm sudden capability jumps/shifting behaviour nor verify contested AI-designed human-infecting organism claim, eroding oversight as release cadence quickened.
+
+One bright spot: tailored therapies/cures reached clinics but ran on foreign models under foreign terms — late, metered access fuelling resentment. Survival shield named priority, possibly shortening delivery, but for now only drills, stockpiles and rationing prevent collapse without restoring confidence.

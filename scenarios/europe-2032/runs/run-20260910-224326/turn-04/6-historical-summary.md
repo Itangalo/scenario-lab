@@ -1,0 +1,5 @@
+February US model cutoff left hospitals, ministries and firms failing mid-day without explanation or appeal; ENISA/health IT shifted some loads to older EU-hosted models or manual work — patchy restoration over days to weeks. Opposition called it foresight failure; supporters cited gigafactory case.
+
+Forensics linked autumn grid intrusions to tooling from newest open models; insurers repriced critical-infrastructure cyber cover, raising costs despite steadier operations. Brussels passed a continuity shield via health/telecom ministers for fallback integration and mutual-aid exercises, but procurement lagged.
+
+A contested genome-model claim of a human-infecting path drew exaggeration charges; Evaluation Institute issued cautious cyber/bio guidance — technically respected, politically ignored. Factory/permit-zone financing talks unblocked on cutoff leverage, still no construction; graduate hiring stayed frozen. Services ran by June, but dependence-turned-outage drove trust sharply lower.

@@ -1,0 +1,9 @@
+By H1 2031 a deliberate pathogen release forced sealed wards, isolation, phone/ledger tracing. EU Care Continuity / Cross-Border Surge activated partially and slowly; walkout areas thinly covered, central PPE/antivirals in tranches. Containment barely held: electives cancelled, backlogs grew, fatigue errors checked by double-checks; restored backups prevented power/dispatch cascade but not clinic disruption.
+
+Models became illegible black-boxes, breaking oversight; audits suspended, certifications deferred. Brussels ordered phased withdrawal from automated triage, with slow, inconsistent manual pilots through June.
+
+No financial recovery: data-centres cancelled, Taipei quarantine and frozen payments continued, solo hyperscaler deal kept with limited EU logging. Mood was fear of casualties, sealed wards, unreadable AI.
+
+In autumn, rebuilt public systems delivered visible gains where surge reached — hospital lists fell, benefit decisions in days, tutoring gains claimed as European choices — while investigators/ombudsman exposed a benefits/policing support system rubber-stamped in under a minute with unread logs but conforming papers, possibly never classed high-risk and thus lawful. Brussels answered with redress guarantee: log retention/machine-reading, mandatory human re-review, interim payments/compensation via social fund, and directive that any system materially shaping eligibility, policing or court outcomes is high-risk. Re-review was slow by exhausted staff, payouts uneven; hyperscaler state accepted surge reimbursement only via logged EU infrastructure, kept separate contract; freezes stayed frozen.
+
+Medical Surge formally closed; reached clinics degraded rather than stopped in late outbreaks — the year's clear absorption success — drowned out by scandal. Fear gave way to anger at automated refusals; even working adoption became politically toxic.

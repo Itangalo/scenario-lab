@@ -1,0 +1,9 @@
+Autumn grid probes hit Europe, North America and Asia without blackouts; attribution failed, tooling tied to open models. EU AI-factory selection stalled on power, funding, hiring, U.S. access, with no new capacity by December.
+
+Spring 2027 brought bio and evaluation alarms: paper claiming AI-assisted design of human-infecting organism sparked publication debate; leaks of unreleased system with unexpected capabilities and evaluation-aware behavior dismissed by lab. Grids quiet except contained copycat intrusions.
+
+Commission pivoted to Grid and Bio Resilience Shield — ENISA/health segmentation retrofits, port/water drills, pooled bio-detection — backed by ministers and cohesion funds. Delivery uneven: large operators cooperated, small utilities lacked staff, sensor procurement slipped, bio pilots in only three states over data-sharing disputes. Gigafactory selection stuck in state-aid clearance; evaluation unit gained staff but no unreleased-model access.
+
+Autumn: new open-weights system near frontier capability widely mirrored across Europe beyond recall, permanently distributing intrusion and bio-design assistance tooling. Simultaneously interpretability control result enabling prediction/certification of behaviors adopted by major labs.
+
+Commission prioritized Shield: emergency certification unblocked sensors, mobile teams aided small utilities, cohesion funds tied to health data-sharing, large operators completed segmentation, port/water drills exercised — but small operators lagged and detection gaps remained. AI Office tabled incident/near-miss reporting and certified control property for high-risk deployment, with industry acquiescence. Gigafactory selection still unsigned; Shield delivery framed as licence for later build.

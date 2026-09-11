@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t7: M7 EU-US Structured Frontier Access and Joint Evaluation Pact −2, M8 EU Embodied Work Transition and Trusted Deployment Pact −2, priority −1 = −5
+PROPOSAL BONUS: EU Embodied Work Transition Pact (cat 7, small) +2 — catalogue robot shock plus labour backlash last two turns and this answers displacement directly, small size limits value
+LEGITIMACY LENDS: capital 9, sentiment 18 -> +2
+SOVEREIGNTY: 18 last turn, InvestAI Gigafactories finishes t7 +4, no capacity event in-flight bonus +0, embodied_ai_deployment t7 −2 (largest of two capacity events, member_state_defection also qualifies), capability rose 3.0 −1 = 19

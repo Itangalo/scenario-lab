@@ -1,0 +1,146 @@
+{
+  "scenario": "Europe 2032 — Acceleration",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 67.0,
+    "openweight_capability": 60.9,
+    "ai_safety": 17.0,
+    "resilience": 48.0,
+    "eu_ai_sovereignty": 13.0,
+    "eu_political_capital": 12.0,
+    "public_sentiment": 21.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 32.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 40.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 51.0,
+        "ai_safety": 30.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 28.0,
+        "public_sentiment": 28.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 61.0,
+        "openweight_capability": 54.5,
+        "ai_safety": 28.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 17.0,
+        "eu_political_capital": 19.0,
+        "public_sentiment": 27.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 64.0,
+        "openweight_capability": 57.8,
+        "ai_safety": 26.0,
+        "resilience": 41.0,
+        "eu_ai_sovereignty": 14.0,
+        "eu_political_capital": 14.0,
+        "public_sentiment": 24.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 67.0,
+        "openweight_capability": 60.9,
+        "ai_safety": 17.0,
+        "resilience": 48.0,
+        "eu_ai_sovereignty": 13.0,
+        "eu_political_capital": 12.0,
+        "public_sentiment": 21.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_retrenchment",
+    "eu_frontier_access_denied",
+    "eval_anomaly_reports",
+    "joint_threat_response",
+    "opaque_reasoning",
+    "openweight_frontier_release",
+    "taiwan_blockade",
+    "taiwan_tension_rise"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 2,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 2,
+      "id": "eu_frontier_access_denied"
+    },
+    {
+      "turn": 4,
+      "id": "taiwan_blockade"
+    },
+    {
+      "turn": 5,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 5,
+      "id": "opaque_reasoning"
+    },
+    {
+      "turn": 5,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 5,
+      "id": "joint_threat_response"
+    },
+    {
+      "turn": 5,
+      "id": "election_retrenchment"
+    }
+  ],
+  "last_updated": "2026-09-10T22:42:42.569811",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_insured_airbridge_chips",
+      "description": "Gulf and Asian insurers create a state-backed war-risk pool that restores limited air-freight chip shipments from Taiwan at 5-8x premiums, easing but not ending the blockade shortage.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_air_freight_insurance_freeze",
+      "description": "Major insurers extend war-risk exclusion to air freight of high-end accelerators and lithography spares, grounding fallback compute shipments for weeks.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-10T22:42:45.733736"
+}

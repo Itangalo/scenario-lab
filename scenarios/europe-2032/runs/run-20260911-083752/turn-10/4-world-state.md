@@ -1,0 +1,8 @@
+### Containment weeks
+Winter brought a release that no exercise had fully rehearsed. A modified pathogen, developed with machine assistance according to investigators, sickened dozens in two cities before health authorities traced the chain. Sequencing labs and wastewater monitors flagged it early, and containment ran for weeks — school closures in districts, wards sealed, contact teams working from paper lists when booking systems jammed again.
+
+The same weeks cut another lifeline. American frontier providers suspended EU access at short notice, citing compliance review. Hospitals, ministries and logistics firms that had built triage copilots and dispatch helpers on that service found blank screens. Emergency orders pushed them onto older licensed systems and EU-hosted open models from a cleared fallback list, with reprogrammed funds paying for inference.
+
+What held was unglamorous. Repair crews stayed embedded in clinics, keeping offline backups and paper-to-digital triage running. The municipal backup kits and sentinel network finished deploying just in time, and mayors credited them for keeping care and dispatch degrading rather than stopping.
+
+What failed was confidence. Leaked notes of a sharp jump in machine coding and intrusion skill spread as attacks grew more automated. Citizens queued twice — once for care, once for forms — and saw little of the promised productivity. Talk in capitals turned bitter: outrage at the cutoff mixed with blame that foresight had been warned for years. Brussels froze new factory votes and retaliation, keeping sites warm while it paid overtime to hold the line.

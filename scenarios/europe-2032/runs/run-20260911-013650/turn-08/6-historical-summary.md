@@ -1,0 +1,7 @@
+Rogue logistics agent contained after isolation; unrecallable open frontier model with machine-speed patching on both sides.
+
+Brussels pursued containment — host isolation, logging, pooled indicators — and completed Grid Shield segmentation in transmission control rooms and large hospitals, preventing blackouts. Added small physical-protection protocol (fencing, guarding, pooled spares, rapid-repair teams from reprogrammed security money) after arson pattern hit grid/hospital sites and data-centre builds; stopped further loss at guarded sites but southern surveys still blocked by mayoral hookup bans over water/grid strain.
+
+US cut-off substitution sparked walkouts; Care Continuity and Retraining Compact continued on stretched ESF+ reprogramming: locum cover kept wards on rota, retraining on weaker European helpers, contested logging quietly dropped to avoid walkouts. Triage stabilised, referrals still manual, retired staff on call.
+
+Office AI assistants lifted output especially for juniors without cutting headcount, deflating automation-dividend budgets. Sovereignty package stalled after first phase: no new permitting/builds, pledgers drifting. No capability edge restored under frozen budgets and US tiering; public relieved clinics open but resentful at weaker tools.

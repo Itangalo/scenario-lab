@@ -1,0 +1,54 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A defensive isolation by a small municipal utility goes wrong, cutting chlorination monitoring for days and causing a brief public-health scare that is blamed on the EU-mandated playbook rather than the intruders.",
+    "emergent": true,
+    "id": "emergent_utility_isolation_backfire",
+    "probability": 0.16666666666666666,
+    "probability_samples": [
+      0.18,
+      0.14,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Major cyber-reinsurers temporarily withdraw or reprice coverage for small municipal utilities after the copycat probe wave, leaving towns unable to insure operational downtime from defensive isolations.",
+    "emergent": true,
+    "id": "emergent_cyber_insurance_retreat",
+    "probability": 0.14333333333333334,
+    "probability_samples": [
+      0.15,
+      0.12,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_alliance",
+    "probability": 0.21333333333333335
+  }
+]

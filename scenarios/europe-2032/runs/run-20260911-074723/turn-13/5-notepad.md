@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: M12 EU Sovereign Fallback and State-to-State Access Track −2, priority no effect under capital below 20 = −2
+PROPOSAL BONUS: EU Sovereign Fallback and State-to-State Access Track (cat 8, small) +3 — eu_frontier_access_denied and nationalisation landed this turn and this answers them directly
+LEGITIMACY LENDS: capital 0, sentiment 1 -> +1 (capped below sentiment, before event losses)
+SOVEREIGNTY: 10 last turn, no capacity finish or in-flight, eu_frontier_access_denied t13 −3 (largest of two capacity events, us_labs_nationalised t13 not double-counted), capability rose 2.0 −1 = 6

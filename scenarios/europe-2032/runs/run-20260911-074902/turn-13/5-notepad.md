@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: EU Neutral Data Sanctuary and Restoration Corps −2, priority −1 = −3
+PROPOSAL BONUS: EU Neutral Data Sanctuary and Restoration Corps (cat 6, small) +3 — cyber_major_incident landed this turn and emergent_neutral_data_sanctuary_bid demands sanctuary protection directly, both severe and immediate
+LEGITIMACY LENDS: capital 6, sentiment 23 -> +0 (capital remains below sentiment but no lend applied after charges, finishes and shocks, clamped by floor dynamics)
+SOVEREIGNTY: 7 last turn, no category 4 finish, no category 4 in flight +0, no capacity event, capability rose 1.2 −0 = 7

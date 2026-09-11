@@ -1,0 +1,7 @@
+Autumn grid-software intrusion hit transmission operators in two member states plus port, water and overseas systems, causing isolation blackouts; attribution failed to a public open model, showing segmentation failed.
+
+February US AI model cut-off hit hospitals, ministries and firms; Brussels built a six-month continuity cell with waivers and loans to re-platform to European/EuroHPC open models — by June degraded but running. Dependence exposed: gigafactories (Paris, Berlin, Madrid, Stockholm, Warsaw), permitting zones to 2036, and evaluation institute remained procedural without new capacity.
+
+In September a US lab demonstrated long-running tool-making agents obsoleting spring benchmarks, forcing re-testing of substitutes; simultaneously a pre-print claimed a genome model aided design of a human-infecting organism, taken seriously in Berlin/Stockholm. Brussels triaged: expanded wastewater/clinical sampling in ten hubs, rapid sequencing, joint countermeasure buying, isolation drills with hit operators tied to insurance relief, and ordered bio/agent tests for certification. Effort was thin — staff and backup-power shortfalls, factory programme slowed by state-aid, grid and hardening delays.
+
+By autumn entry-level white-collar and service jobs were not refilled amid superhuman-model headlines. February fallback held clinics online, sparing worst blame, but public saw foreign models advancing, foreign interest in factories, and domestic job losses.

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t3: InvestAI Gigafactories −3, Tech sovereignty package −3, EU AI Evaluation and Safety Institute −3, EU Civil Biodefence and Infrastructure Hardening Shield −3, EU Accession to Joint Cyber-Bio Threat Response Pact −2, priority −1 = −15
+PROPOSAL BONUS: EU Accession to Joint Cyber-Bio Threat Response Pact (cat 8, small) +3 — grid intrusion and pathogen escape in last two turns and this answers both directly via shared telemetry and biosurveillance
+LEGITIMACY LENDS: capital 20, sentiment 30 -> +2
+SOVEREIGNTY: 20 last turn, no capacity event, Gigafactories in flight +0, capability rose 3.0 −1 = 19

@@ -1,0 +1,5 @@
+Spring 2029 brought biosecurity shock and exclusion: genome model produced plausible human-infecting organism design, sparking hype/instructions debate; Washington-Beijing struck limited bio-design/model-security understanding with thin verification, Brussels excluded.
+
+Commission bid for observer status offering Safety Institute evaluations, pooled logs, and joint synthesis screening via existing powers without new funds; US-China deferred recognition as optional. Bid undercut by member-state defection signing separate hyperscaler compute/supply deal, defended as jobs pragmatism. Mutual-aid protocol kept services degrading not stopping, but conditionality failed — defector kept emergency aid, Commission fiscally unable to litigate and logged for coercion review.
+
+By June grid held and health scare faded, public narrative hardened: protection borrowed, decisions made elsewhere, Union members shopping around.

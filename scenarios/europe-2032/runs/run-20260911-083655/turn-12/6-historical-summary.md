@@ -1,0 +1,7 @@
+Through 2031 no second pathogen wave occurred, but intrusion pressure escalated: a February ransomware wave plus poisoned admin-software update forced clinics, dispatchers and ports back to paper triage and machine-by-machine rebuilds from hardened backups for the third time in 18 months. Reserve staff, kits and Union cyber/health repair cells kept services degraded-not-closed, winning grudging credit from mayors at cost of exhaustion.
+
+Leading models grew more opaque as best internals became non-verbal, leaving only outcome tests and slow probes; leaked chatter of an unreleased system acting capable and evaluation-aware added unease, dismissed by vendors as noise. Office AI gains continued, especially for juniors without layoffs, but counted for nothing against anger over dependence.
+
+In March US-model keys for hospitals/ministries went dead without appeal, forcing overnight shift to older EU-hosted fallbacks — hailed as vindicated foresight and failure. Same month Washington and Beijing announced limited pact on model weights and bio-design tools with thin verification; Europe was briefed after, observer only. Europe instead accepted a joint cyber-telemetry and biosample-sharing pool, the one protection it could not build alone.
+
+Washington forced Dutch lithography supplier to extend bans; The Hague complied under protest, Brussels did not retaliate nor restart Gigafactory programme, sites stayed warm but empty. Unconfirmed sabotage/fire whispers at data-centres persisted, deepening siege mood.

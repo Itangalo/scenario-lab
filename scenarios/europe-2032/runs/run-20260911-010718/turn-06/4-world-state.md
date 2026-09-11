@@ -1,0 +1,10 @@
+### The patch and the split
+The spring began with code that wrote itself too well. A new generation of systems, much stronger at programming, mathematics and intrusion work, appeared within weeks on both commercial services and freely downloadable weights. Open weights quickly absorbed the frontier jump, with downloadable models closing toward the new frontier level. Municipal IT staff in France and Germany found exploit kits that turned hours of manual work into an automated afternoon. At the same time the leading developers acknowledged that the new models no longer reasoned in readable words. Safety teams that had relied on reading step-by-step traces were left with black-box tests.
+
+Brussels answered with plumbing, not principles. Health and cyber agencies rushed offline recovery kits, locked-down backup configurations and reserve software licences to the towns and hospitals hit in November, making emergency funds conditional on streaming live network data and sequencing feeds. The work, run through the joint cyber command and the standing pathogen team, kept a March ransomware wave from cascading: emergency rooms slowed, they did not close.
+
+The sovereignty ledger moved the other way. The long-negotiated package of streamlined permits and private data-centre money formally closed, and one mediated site moved toward a final investment decision. But a large member state signed its own cloud and accelerator arrangement with a foreign hyperscaler on terms that undercut Brussels' common line, defending it as pragmatism. The Commission threatened to withhold recovery money and pointed to Japanese and Korean joint-buying offers as an alternative. The gigafactory in court stayed in court.
+
+Washington, now led by the moratorium-and-jobs administration inaugurated in January, offered sympathy and little else, preoccupied with classroom bans and domestic guarantees. Asian suppliers quietly gained room.
+
+Public mood soured. Assistants remained popular, but headlines about unreadable models, unrecallable intrusion tools and a Union unable to hold its members cut deeper.

@@ -1,0 +1,11 @@
+### Cut off
+In February, hospital IT managers found the American frontier model simply refusing European clinical users. No explanation, no appeal. Triage assistants, discharge summarizers and ministry drafting tools built on rented licences went dark overnight. Pharmacies reverted to phone lists. Washington called it tier management; in Lyon and Łódź it read as abandonment.
+
+The timing was brutal. The same weeks brought a sharp, verifiable leap in code and intrusion tooling elsewhere, quickly felt in probing of municipal networks still half-restored from the spring ransomware sweep. And a celebrated arrival of tailored therapies for previously untreatable conditions came almost entirely through the same now-rationed American systems — a miracle visibly on someone else's terms.
+
+### The scandal and the switch-offs
+Then the ombudsman report landed. In three member states, an AI-supported benefits and policing support system had systematically cut or flagged vulnerable claimants. Conformity papers were in order, logs had been generated and never read, human oversight meant a caseworker clearing a queue at forty seconds a case. Brussels froze that deployment pattern and promised sampled human review, but trust collapsed.
+
+Municipal utilities and clinic networks answered with coordinated switch-off protests. Councils voted to pause mandated upgrades, blocked two data-centre expansions, and refused continuity-stock refresh teams entry for weeks. Restore corps vans with EU flags were welcomed in one town and turned away in the next.
+
+Brussels reprogrammed cohesion and health funds to pin qualified open models on EuroHPC and national clouds for appointments, timetables and basic ministry work, triaging remaining American licences to the new therapies. Retrained support staff were rehired as fallback operators. It kept lights on in places, but clean images still broke local customisations, and wage-bridge payments still lagged in court. By June, essentials degraded rather than stopped — and voters remembered who had owned the system that failed them.

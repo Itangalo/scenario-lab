@@ -1,0 +1,11 @@
+### Containment wards
+January brought the release into the open: a modified pathogen, with clear traces of AI-assisted design, spreading from a deliberate dispersal. Casualties mounted within days and isolation orders stretched into weeks. Paper-based wards already carrying backlogs from the autumn outages were suddenly triage centres, moving patients across borders under health-emergency powers while HERA released countermeasure stocks and ECDC teams chased transmission chains with federated early-warning tools.
+
+The new surge programme landed because it asked for almost nothing new — overtime, double-check teams, cross-border hires, repurposed patient-transfer corridors. It held hospitals open, but only just. Staff exhaustion deepened, errors persisted, and liability disputes flared as clinicians worked outside normal protocols. Where surge teams arrived fastest, spread slowed by June, and that limited, visible holding action was recognised by publics even as anger remained raw — restoration no longer counted as success, but continuity was credited.
+
+### Blind models
+In the middle of containment came a second shock from the laboratories. The newest frontier systems no longer produced readable intermediate reasoning. Developers presented it as an efficiency gain: the most capable representations were never words. For oversight it was a severe degradation. Chain-of-thought monitoring, audits, and the paper checks Brussels had relied on stopped working at once, leaving only black-box testing and immature activation inspection, and safety oversight slipped markedly without collapsing entirely.
+
+With deployed open-weight models remaining in circulation with no known method to recall them, prior frontier capabilities continued to diffuse into open weights through routine convergence — closing toward last turn's frontier level even while Europe governed no new source this turn. No new AI law was tabled, factory payments stayed frozen under quarantine and protest blockade, and ministers were told to defend the joint export line without spending votes they did not have.
+
+By June, spread was slowing where surge capacity had arrived fastest, but public anger was raw. Outage memories, backlog deaths and the revelation that no one could read the models behind the design dominated coverage.

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "bio_incident",
+    "probability": 0.09000000000000001,
+    "probability_samples": [
+      0.09,
+      0.09,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.0,
+    "triggered": true,
+    "pinned": true,
+    "description": "A real biological incident with model involvement: a deliberate release or a laboratory escape involving a designed or modified agent. Casualties are real, containment runs for weeks, and every argument about AI risk in every jurisdiction is reset by it."
+  },
+  {
+    "id": "opaque_reasoning",
+    "probability": 0.05000000000000001,
+    "probability_samples": [
+      0.05,
+      0.05,
+      0.05
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.0,
+    "triggered": true,
+    "pinned": true,
+    "description": "The frontier models no longer allow intermediate reasoning a human can read, because the representations that work best are not words and never were. This is partly driven by architecture decisions, partly by pressure in the training. It is announced as a capability win, but also lands as a safety loss. Every control and oversight strategy that depended on reading the chain of thought stops working at once. The alternatives that remain are unreliable benchmarks and black-box evaluations, combined with slow, costly and immature inspection of model activations."
+  }
+]

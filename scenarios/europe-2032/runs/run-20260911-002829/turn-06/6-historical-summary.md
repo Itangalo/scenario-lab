@@ -1,0 +1,9 @@
+Winter brought dual shocks: lab-escaped pathogen spread via airports straining ICUs, and Taiwan quarantine froze chip shipments, spiking accelerator prices.
+
+Brussels invoked emergency powers: sequencing/wastewater monitoring, stockpiles, bio-model reporting, rationed supercomputers and two factory sites, grid priority, lithography controls. Large hospitals/grids held; small municipalities/utilities strained with staff shortages, blind isolations, insurer pullback.
+
+Autumn: pathogen ebbed unevenly. Small towns suffered: chlorination monitoring loss triggered boil notices; reinsurers repriced/paused cover after spring probes. Brussels answered with manual-fallback playbooks, staffing pacts, EIB insurer backstop, Trust and Transition Pact for retraining, wage bridges, staffing. Helped where staff arrived; resentment hardened elsewhere. Gigafactories narrowed to two grid-priority sites; Taiwan allocations frozen.
+
+November US vote elected coalition-builder promising allied frontier access, joint evaluation, aligned controls. Relief mixed with fear of losing home-build urgency.
+
+Winter-spring: US demonstrated leap-ahead agentic system with longer planning/tool use, and scaled commercial humanoids built in China running US software went on sale. EU's two data-centre sites stayed on track; bio-monitoring/stockpile build closed, hospitals and sequencing held. But cheap imported robots undercut EU machine-builders, logistics ordered them, unions warned of second displacement with no retraining interval. Trust Pact aid arrived slowly, not covering risk per small-town mayors. New US administration took office, offered published allied access terms; EU sought researcher access and guaranteed tiers tied to home build, but talks stayed draft with no flow, and prospect of sharing eroded domestic funding urgency. By June: protected against last bio crisis, exposed on frontier understanding and industrial dependence on foreign machines.

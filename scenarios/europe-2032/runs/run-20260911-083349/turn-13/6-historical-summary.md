@@ -1,0 +1,5 @@
+EU continuity held through renewed ransomware and hardened US model cutoff: the compromised update library returned in new packing, blanking appointments and freezing dispatch/port consoles as teams re-cleared systems nightly, while American frontier access stayed dark, forcing tight rationing on slower European-hosted open models.
+
+The Council authorized no new vote or retaliation, only stretching health/digital/civil-protection funds for repair crews, paper registers and offline triage; clinics and ports ran manually in Lille, Essen, Brno and harbour cities. The interpretability patch kept catching silent triage mis-routings, wastewater/sequencing alerts stayed upgraded after the genome-design claim, and the second corrupted drug-batch was managed without full stockout.
+
+By December queues grew but wards, water and power held without collapse; warehouse automation marches recurred in Rotterdam, Lyon, Gdansk, hospital blackout contingency slipped, and exhaustion framed manual holding as failure with no fiscal headroom beyond paying for hands holding the system together.

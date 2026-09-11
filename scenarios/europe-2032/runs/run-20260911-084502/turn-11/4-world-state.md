@@ -1,0 +1,11 @@
+### Containment weeks
+The autumn began with ambulances queuing outside isolation wards in two regions. A modified pathogen, its design traces showing machine assistance, had escaped containment through a deliberate act investigators still argue over. Wards filled, schools closed locally, and for three weeks containment teams in full protective gear became the image of the Union.
+
+HERA and disease-control teams moved wastewater sequencing, emergency stocks and isolation protocols into the affected areas. Where the Recovery Corps already had contracts and crews from the spring cyber recovery, the new automated patching and swarm-detection tools went onto hospital and municipal networks in days. Those hospitals kept booking and power stable while treating patients. Where crews arrived late, paper logs returned and mayors again filmed empty counters.
+
+### Patching at machine speed
+The defensive tooling was real — the first in years that caught whole families of intrusions and patched as fast as flaws were found. Grid operators reported a visible drop in successful probes by November. The joint daily note, now covering both infection counts and intrusion attempts, became grimly watched.
+
+Two other shocks landed without a response. Washington compelled further cuts to lithography exports and servicing, reaching back to older machines. The Hague protested, Brussels kept quiet to preserve remaining chip volumes, and operators understood the Union's single chokepoint had been spent by someone else. Days later a near-frontier open release was downloaded hundreds of thousands of times; town halls and workshops kept running local copies because nothing else was permitted or affordable.
+
+By December the pathogen was contained, with real casualties and weeks of tracing. Essentials had held through a second trial. Trust had not: hiring freezes for juniors hardened into a lost cohort, rumours of sabotage at construction sites and walkouts by graduates coloured local news, and the charge that Brussels relabels old money survived the single claims window.

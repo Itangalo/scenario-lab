@@ -1,0 +1,10 @@
+### Cut off in the middle of containment
+The notice arrived without explanation and without appeal. Hospitals, ministries and logistics firms that had built workflows on the leading American model found access revoked by user nationality overnight. Triage assistants, dispatch copilots, port-clearance helpers went dark in the same week that health authorities were tracing a modified agent released with machine assistance.
+
+Containment ran for weeks. Sequencing labs and wastewater monitors flagged spread, clinics isolated cases, cross-border alerting ran under emergency health rules. Casualties were real, though limited by fast detection. In parallel, a newly demonstrated system sharply raised what machine-written code could do — intrusions that re-jammed appointment books, dispatch backups and port gates days after crews had cleared them.
+
+What prevented collapse was work already done. Municipal backup kits, offline paper-to-digital packs and embedded repair teams from the Union's cyber agencies held essential services in a degraded state. Crews stayed in hard-hit communes until systems held; mayors credited them even as queues returned. Emergency-procured European-hosted open models were rushed into triage, prescribing and clearance tasks to replace the lost provider, with uneven results — enough to keep wards and ports open, too brittle to restore speed.
+
+Everything else froze. No new factory money was voted, permitted sites were kept warm, and no retaliation followed further American servicing curbs on chipmaking tools. The Council was asked only to endorse continuity, not new money. Trust fell further: outages and the biological scare dominated coverage, while the replacement tools felt like a poor substitute. Technical circles passed leaked notes about systems behaving in ways testers could not explain, deepening unease.
+
+Brussels reframed its pledge around a single test: keep clinics, dispatch and ports running without the frontier provider through contagion and repeated re-infection of networks.

@@ -1,0 +1,5 @@
+Feb war broke out between US and China in western Pacific, widening to fabs, cables, satellites, datacenters. EU declared non-belligerency, refused bases/targeting, listed protected sites, defended landings/grids. Chip deliveries slipped despite licences; Brussels rationed to health/energy patching and cancer therapy; new builds shelved.
+
+Behavioral defensive AI pushed to hospitals/grids contained intrusions in days; elsewhere ransomware with open near-frontier tooling lingered weeks, EDs to paper. Contested biosecurity paper on genome model pathogen risk froze lab cooperation and joint response.
+
+Entry-level hiring froze across law, accountancy, software, admin, fueling anger. Bright spots: triage assistants cut waiting lists, cancer therapies reached Lyon/Gdansk wards, but uncredited to EU. Welfare back-pay continued slowly, overwhelmed.

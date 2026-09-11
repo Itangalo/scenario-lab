@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Constitutional Constraint 2 violated: `openweight_capability` increased from 62.0 to 62.8 while `ai_capability` increased from 63.5 to 64.0. The rise in `openweight_capability` (0.8) exceeds the rise in `ai_capability` (0.5), and there is no narrated catastrophic physical destruction of the compute base to justify a reversal of the usual relationship. Under invariant 2, `openweight_capability` may only rise to near the midpoint of its previous value and last turn’s `ai_capability` — here, that would be approximately (62.0 + 63.5)/2 = 62.75. A value of 62.8 slightly exceeds this allowable limit, but more critically, the mechanism described does not justify such a jump. The narrative attributes gains to continuity operations and fallback hosting, not openweight model proliferation or capability leap — making the increase unsupported by the story and structurally risky.\n- Constitutional Constraint 9 violated: `public_sentiment` decreased by 4 points (from 24.0 to 20.0). While this is within plausible social response ranges, the constraint limits **all** metric movements to **no more than 25 points in one turn**, which this respects numerically. However, the combination of a −4 drop in sentiment and a +2 increase in `eu_political_capital` (from 25.0 to 27.0) violates the spirit and structure of plausible feedback: public resentment is narrated as growing (\"gratitude curdled into resentment\"), protests are expanding, and the Union is blamed — yet political capital *rises*. There is no legitimizing event or successful measure (the only measure is a response to crisis) that would justify a capital gain. The Proposal Bonus (+4) is applied to sovereignty, not political capital, and Legitimacy Lends yields nothing because capital is already higher. Therefore, the +2 to `eu_political_capital` lacks a justifying term in the rules or narrative and appears disconnected from the events — a violation of Constraint 7: the two stocks must be free to move apart, but here political capital rises unmoored from sovereignty and narrative cause."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

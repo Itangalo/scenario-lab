@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Economic Constraint violated: The narrative states that \"no new instrument was tabled\" and \"Brussels held spend\", yet the metric `eu_political_capital` drops from 18.0 to 8.0 (a loss of 10 points). This magnitude of loss requires a major political cost event, such as a failed high-stakes initiative, public backlash, or institutional crisis, none of which are narrated or justified. A silent, unexplained drop of 10 points in political capital without any corresponding event or narrative basis violates the requirement for realism in resource and political capital movements.\n- Organizational Constraint violated: The metric `ai_safety` decreases from 35.0 to 26.0 (a drop of 9.0 points), attributed to new AI agents outpacing interpretability checks. However, no narrative event describes dismantling of safety institutions, defunding, or loss of expertise—only warnings from safety teams. A nearly 25% drop in `ai_safety` without a named event (e.g., disbanding a body, withdrawal from cooperation, or major breach) exceeds plausible erosion and contradicts the principle that stocks can be spent or eroded only through narratively grounded mechanisms. This violates the Organizational and Modelling Constraints on realistic institutional change.\n- Physical Constraint violated: The `resilience` metric increases by 5.0 points (from 35.0 to 40.0), justified by the Critical Services Shield going live in two hospital networks and improved triage queuing. However, the narrative confirms only partial deployment (\"pooled detection went live in the two hospital networks\"), delayed drills, and no resolution of power or site blockages for Gigafactories. Given that resilience is tied to systemic infrastructure robustness, a 5-point increase—especially amid stalled physical rollout and ongoing opposition—is disproportionate to the progress described. Infrastructure projects must respect realistic timelines and coverage thresholds before such gains are registered."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,5 @@
+July 2031-June 2032 Europe endured war-adjacent strain under non-belligerency: rationed hospital/registry power, tripled freight insurance, satnav/air delays, reserve teams keeping triage assistants alive.
+
+Transition Shield finished disbursing autumn 2031. Trust collapsed after genome-model biothreat finding froze reagent sharing to pooled EU labs, and AI benefits/policing system admitted systematic wrongful decisions, triggering manual review and redress.
+
+Jan-June 2032 pooled labs produced detection signature from genome finding, vindicating pooling; immune therapy queues still thousands. US placed leading AI labs under direct state control, weights as defence articles, ending market-access leverage; Brussels opened DG Trade state-to-state channel and shifted workloads to European hardware. A member state broke ranks with separate cheaper US hosting deal undermining EU hosting/no-military-use line; presidency bought restraint with shelter power, reagents, arrears, avoiding public split. Manual redress crawled, data-centre protests continued.

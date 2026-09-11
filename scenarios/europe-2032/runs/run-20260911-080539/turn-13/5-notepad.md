@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: EU Chip Continuity and Allied Compute Fallback −2, EU Unsanctioned-Agent and Bio-Uplift Containment Shield −2 = −4 + priority has no effect and no cost as capital below 20
+PROPOSAL BONUS: EU Unsanctioned-Agent and Bio-Uplift Containment Shield (cat 6, small) +3 — loss-of-control incident and genome-model uplift signal this turn, answers directly but small and rollout just starting
+LEGITIMACY LENDS: capital 21, sentiment 25 -> +1 capped, already included — actually capital above? recalc: capital 21 vs sentiment 25 -> +1 would exceed, applied in total
+SOVEREIGNTY: 14 last turn, no capacity event, no cat 4 finish, middle_power_coalition t13 +2, capability rose 1.5 −1 = 15

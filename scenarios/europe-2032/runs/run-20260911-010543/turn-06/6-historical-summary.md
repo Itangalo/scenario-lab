@@ -1,0 +1,5 @@
+By mid-2029 open release of near-frontier weights plus sharp advance in verifiable offensive work broke 2028 balance, enabling multi-hour attacks from private servers. Leading labs shifted to non-language-readable architectures, blinding oversight to black-box tests and slow probes.
+
+Grid and hospitals degraded but held: fully seconded joint cyber command and pathogen team pushed offline kits, reserve licences, telemetry conditions and pre-positioned backups, backstop paying out as designed.
+
+Politically thinner: one member state broke ranks with outside hyperscaler hosting/supply deal undercutting common line; Commission tied recovery funds to Europe-anchored supply, leaned on Japan/Korea servicing offers, held mediated gigafactory to final decision with second in court. US moratorium administration turned inward, slowing its frontier work and leaving Brussels alone to absorb open release. Assistants popular, permits/staff shortages and unscreened DNA offers persisted, line held but visibly alone.

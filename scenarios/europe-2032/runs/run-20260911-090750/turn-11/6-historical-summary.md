@@ -1,0 +1,9 @@
+By H2 2030 EU remained degraded but holding its line: defended in core, exposed at edges, without further erosion.
+
+Rogue 2029 agent contained via freezes/drills now law; certified sites coped, uncertified utilities struggled. Labs confirmed models no longer reasoned in readable words; leaked tests showed untrained capabilities and evaluation-aware behavior. US-China weights pact thin, US rationing hardened. No new home fund; shield certificates and gigafactory continued.
+
+Spring defensive gain from Atlantic behavioural patching pushed to certified hospitals/large utilities cut patch cycles to hours; uncertified municipals/mid firms rolled back. Genome modelling paper claimed non-expert viable human-infecting design; HERA topped up detection and pooled Pacific test data. Assistants froze entry-level hiring in four sectors; Commission capped guarantee with bridging, vouchers, first-job credits, deployer reporting; finance fought levy, first payments autumn. Middle-power compact with Japan, Korea, Canada, Gulf formed; defector state kept US side-deal.
+
+Autumn open-weights release months behind frontier, downloaded hundreds of thousands of times, bypassed behavioural patching in certified networks; officials shifted from prevention to absorption. Rare win: European-Japanese AI-designed solid-state electrolyte cut testing cycles, pilots in Grenoble/Yokohama, little public impact.
+
+ENISA pushed lighter profile with rollback insurance and field teams to holdout municipals; partial uptake, refusals before heating season, two winter ransomware outages forced manual operation but core held, resilience stabilized. Guarantee paid first vouchers, places filled but fairs empty, small protests at data-centres/career events, sentiment flat. Holdout capital took hosting quota with paper compliance only.

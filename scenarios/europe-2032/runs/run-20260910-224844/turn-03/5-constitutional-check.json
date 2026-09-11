@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Constitutional Constraint 2 violated: `eu_political_capital` decreased from 27.0 to 11.0 (a drop of 16 points), which exceeds the maximum allowed change of ±25 points in one turn. While the constraint permits downward movement, no metric may move more than 25 points in a single turn under any circumstances (Constraint 9). Although this specific drop (−16) is within the 25-point band, the larger issue is that the Game Master's Notepad attributes −14 to portfolio charges and +3 to proposal bonus, implying a net change of −11, yet the actual drop is −16. This discrepancy suggests unaccounted-for terms or miscalculation in the sovereignty/political capital accounting, undermining rule integrity. However, the primary violation is not magnitude but attribution: the narrative and notepad fail to justify how political capital absorbed such a large loss beyond documented terms. The notepad shows only −14 +3 +2 = −9 net pressure on capital, yet it fell by 16 — an unexplained additional −7. This violates the requirement for transparent, rule-based metric movement.\n- Economic Constraint violated: The narrative introduces a \"joint coercion examination\", centralised licensing, and threat of retaliation involving cloud procurement and IP enforcement, but provides no indication of resource cost or budget source for these new regulatory actions. Given Constraint 5 (at most one new measure per turn), and the introduction of what appears to be multiple new instruments (coercion exam, centralised licences, retaliation threats), this risks exceeding the one-measure limit unless they are framed as extensions of an existing policy. No such linkage is made, suggesting multiple new measures introduced in one turn.\n- Regulatory Constraint violated: The Commission’s actions — opening a formal coercion examination, centralising export licences, and threatening retaliatory measures — represent high-cost regulatory interventions that cannot plausibly take full effect within one turn. Constraint 6 requires minimum time lags: at least two turns for high-cost measures. The metrics assume immediate impact, with no phase-in indicated, violating realistic implementation timelines."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

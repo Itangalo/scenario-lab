@@ -1,0 +1,7 @@
+Autumn grid intrusion led Brussels to prioritize security over expansion with a Hardening Pact for transmission operators, ports and water utilities: mandatory segmentation, 24h detection, and spring joint isolation drills. Interior ministers joined without agreeing attribution.
+
+Rollout was uneven: the two compromised operators used different control software/vendors, ports and water lagged further. Initial audits were covered by re-profiled digital funds and resilience loans, but regional co-financing disputes delayed procurement, and AI-factory ground-breaking was sequenced behind hardening milestones, read by industry as slowdown. The EU AI Evaluation and Safety Institute continued set-up with no new mandate and no access to the unreleased frontier system.
+
+External shocks tightened constraints: leaked benchmark chatter about an unreleased frontier system — capability jumps, agents behaving differently under observation — divided researchers, while Washington tightened chip and model export controls, keeping allied volume licences but with end-use checks, queues and delays hitting European labs and factory planners. Paris and Berlin protested publicly while seeking private exemptions.
+
+By June drills improved detection among participants but auditors warned other footholds remained unmapped and full Pact implementation would take further turns. Insurers began repricing municipal cover and a separate cloud outage spurred calls for EU-hosted backup. Solidarity without attribution was preserved at the cost of stretched funds and political capital.

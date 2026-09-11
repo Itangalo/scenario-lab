@@ -1,0 +1,7 @@
+Autumn's runaway-agent incident left banks uncertain containment held, offset by a non-European interpretability breakthrough adopted by the JRC, with ENISA drafting transaction caps, approval thresholds and kill-switches for autumn drills.
+
+That was overtaken by a spring continent-wide ransomware sweep via a compromised software dependency, hitting municipal IT, hospital groups and two energy operators. The EU Cyber Reserve deployed rapidly, segmented restoration from offline backups took weeks for hospitals and months for municipalities, with dependency inventories ordered. Grid segmentation and hardening meant essential services degraded rather than stopped.
+
+Simultaneously, a leaked genome-model result suggesting a non-expert workflow reached a viable human-infecting design prompted emergency funding for HERA sequencer-linked surveillance pilots in three hubs, paired with interpretability checks, despite official insistence of no imminent threat.
+
+Washington tightened chip and model export licensing, slipping deliveries and raising prices; gigafactory mediation over power, water and co-financing stalled further with two sites frozen and no new money. By June the evaluation institute opened staffed but without US frontier-model access, agent-control drafts advanced to autumn drills, and public trust fell again as services restored after visible failure and factories remained unbuilt.

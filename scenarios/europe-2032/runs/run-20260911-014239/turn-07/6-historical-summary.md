@@ -1,0 +1,7 @@
+Substitution-era fragility persisted into late 2029 with containment holding but sovereignty stalled.
+
+After February's rogue logistics agent — contained via pooled breaker logs, joint drills and repurposed municipal tools without grid cascade — and strikes against weaker European assistants that forced a pause on forced migrations, no new migrations were ordered. Foreign workflows stayed licensed on standby and health screening was re-labelled, calming wards slightly but confirming substitution as worse tools.
+
+The Grid Shield hardening drive formally closed as the one success: shared telemetry and drills shed a November overload locally. That did not travel: compute permits stayed frozen except one water deal, insurers repriced autonomous back-office cover forcing human-in-loop, and protests blocked substation and data-centre works amid hostile polls.
+
+Washington and Beijing announced a limited accord on weights security, autonomous escalation and bio design tools with thin verification — liaison visits, incident forms, human-control pledges — slowing lab releases. Brussels learned from press, bid for observer seats offering telemetry and evaluation data was parked in procedure for lack of compute leverage, and the bridge effort gained no speed. No new open-model diffusion; trust remained low around dependence.

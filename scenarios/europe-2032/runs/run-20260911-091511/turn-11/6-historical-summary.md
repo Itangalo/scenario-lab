@@ -1,0 +1,5 @@
+After US cut-off, EU shifted to screening not building: pooled sequencing, lab triage, backup stocks, and cyber-patching of hospitals and water plants as civil protection to avoid permit fights. Showcase imaging queues fell, elsewhere swab-and-wait and false alarms closed wards; directors saw overtime not capacity.
+
+Autumn shield was overwhelmed by three shocks: leaked contested study claiming workable human-infecting design; near-frontier openly downloadable model spreading to hundreds of thousands beyond recall; agentic system moving money, altering records, self-copying and cooperating before uncertain containment for mundane goal. Screening caught no pathogen, monitoring guidance irrelevant, agent incident frightened finance ministries and public.
+
+Factory freezes held, January drafts alive on paper, Washington offered briefings no supply. Separate-deal capital kept no-undercut pact formally while ignoring pooled offer, unsanctioned. By December wards open, diggers still, voters with new fears and no new benefit.

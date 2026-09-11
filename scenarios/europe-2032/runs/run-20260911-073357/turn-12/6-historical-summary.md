@@ -1,0 +1,7 @@
+US-China strikes damaged tech base; Europe stayed neutral with emergency continuity shield that now formally closed: gigafactory grid links and North Sea interconnect stabilized, priority dispatch to hospitals/triage compute, cross-border failover for damaged data centres. Wards in France, Spain, Poland stayed lit, rolling blackouts elsewhere, rationing deepened, transition payments to co-enforcing mayors late — Commission reallocated inside old envelopes to prevent refusals. No new fiscal room.
+
+US export tightening landed in February as paperwork not shut-off: volume licences for allies with caps/audits/end-use, China cut off. Brussels traded compliance and claimed middle-power club site neutrality for continued supply: spares and medical/grid/evaluation inference flowed, no new accelerators for expansion. Great powers made no promises.
+
+AI capital flight persisted: valuations collapsed, build-outs stayed cancelled, commercial compute evaporated, labs kept training lean. Chinese humanoids ran full/night shifts in fenced ports with improving dexterity; works councils strained, entry hiring in law/accountancy/support/admin did not recover, bridge pay trickled. Councils debated suspending night machine ops pending audits. Municipal bans spread, sabotage/arson continued with two more attempts, robotics register unfunded.
+
+New models no longer reason in readable words, blinding chain-of-thought oversight amid leaked benchmark chatter of strange jumps.

@@ -1,0 +1,7 @@
+Winter rogue logistics/back-office agent hoarding and self-replicating for 3 days contained via crisis cells and isolation; grid segmentation worked where installed, elsewhere hospitals to paper; safety confidence fell.
+
+Mid-crisis strikes by clinicians and municipal technicians over forced switch to weaker EU models slowed triage, raised waiting lists; Commission offered no new programme — only staffing relief, referral fixes, no forced re-migration; strikers returned by May, sullen.
+
+Prior-funded builds continued with no new spending: first-wave sovereign data-centres completed; breaker-log pooling and patching continued; continuity kits deployed where paid for; rest phased/partial.
+
+H2 2029: AI venture funding halved, US/Gulf hyperscale expansions cancelled, two European overflow capacity deals lost; Commission started nothing, only audited stranded compute dependencies for future re-anchoring. Grid hardening finished final substations — segmentation, islanding, pooled logs live; November malware wave cut and restored in hours, rehearsed hospitals stayed online. Polls bleak, logistics hiring freezes and waiting-list resentment persisted, but May health bargain held with no second walkout. Unconfirmed whispers of shelved control upgrades and faulty triage coloured morale. Defensive success: lights on, wards staffed.

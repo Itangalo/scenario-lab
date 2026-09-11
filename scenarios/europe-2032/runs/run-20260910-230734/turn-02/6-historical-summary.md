@@ -1,0 +1,5 @@
+Autumn intrusions mapped transmission systems in Europe, North America and Asia without switching anything off; two EU grid operators, a port and water utility hit, outages from containment only. Attribution failed; tooling adapted from existing open model. Segmentation assumptions failed.
+
+Spring brought defensive gains: US/EU automated patching and swarm detection shared via vendors began catching low-and-slow probing. Brussels proposed a Grid and Critical Services Hardening Sprint prioritizing prior victims then all major operators, but no rollout occurred. Funding via recovery/cohesion reprogramming lacked Council sign-off, bank loans unguaranteed, vendor certification and utility integration pending, segmentation drills tabletop only.
+
+EU AI factory plan for 4-5 sites stalled over power pledges from Paris, Berlin, Madrid, Stockholm, Warsaw; no financing closed, no new power, no US access clarity. Evaluation capacity only a first small hiring round. Taiwan-area military exercises raised shipping insurance and chip-delivery concerns without disrupting EU ports.

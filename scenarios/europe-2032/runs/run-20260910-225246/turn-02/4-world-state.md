@@ -1,0 +1,10 @@
+### Concrete, but not yet poured
+January to June 2027 was the half-year Brussels tried to turn commitments into construction. On paper, the gigafactory drive advanced: guarantees countersigned, co-financing lines opened with the Bank, grid-priority permits drafted. In practice, only two of the four to five sites reached anything close to a final investment decision.
+
+The rest stalled in familiar trench warfare. Regions bidding for the same plant undercut each other on land, power prices and jobs promises, despite Commission-brokered trades of EU-paid grid upgrades for siting discipline. One eastern bid collapsed over water rights; one western bid over a court challenge to fast-track permitting. The jurisdiction clause meant to legally anchor capacity inside Europe survived, but at the cost of weeks of legal scrubbing that developers called unbankable.
+
+The Critical Services Shield fared slightly better and pleased no one. Transmission operators, the port and water utilities touched in the autumn intrusions joined mandatory reporting drills run through the cybersecurity and health emergency agencies. Pooled detection equipment arrived, late and in smaller volumes than promised. Interior ministries signed continuity plans to unlock hardening funds, then complained the standards kept shifting and the money arrived after the invoices.
+
+Meanwhile capability outside Europe kept moving. Automated coding assistants and research agents became routine in competitor markets, and European firms quietly rented them from abroad — the exact dependence the gigafactories were meant to end. Press coverage turned from rehearsal fears to delay stories: money committed, drills started, breakers still mapped by someone else.
+
+By June, Europe was spending heavily to become less brittle, with little yet to show that would survive a second test.

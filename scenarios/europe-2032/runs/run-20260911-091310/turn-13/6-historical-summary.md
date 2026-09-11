@@ -1,0 +1,7 @@
+By early 2031 EU strategy shifted from generations to unrecallable diffusion after open-weights agents capable of days-long autonomy obsoleted deployment plans.
+
+Cyber response held as maintenance through late 2032: ENISA/national mandatory isolation playbooks for certified hospitals/telecoms/energy — autumn drills routine, detectors online, October probing contained quickly in certified core; brittle edge unchanged with municipal utilities/clinics queued for lack of docs/staff.
+
+Entry-Level Transition Guarantee moved to Enforcement Pact on paper but not in payment: Commission to front-fund bridging/vouchers in three stalled states from social funds recoverable from contested deployer levy, with single portal, fixed deadlines, and co-financing relief for two paying states. By Dec 2032 portal existed and first transfers authorised, but finance disputes stalled flows, waiting lists barely shortened, councils still tied data-centre permits to proof of payment, injunctions and sharper siting hearings continued.
+
+Biology stayed exposed but quiet: no illness, pooled black-box testing in middle-power compact still inconclusive; Washington-Beijing pact thin, Brussels observer; conditioned defector hosting offer neither accepted nor withdrawn.

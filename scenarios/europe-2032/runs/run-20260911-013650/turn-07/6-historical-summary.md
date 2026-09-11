@@ -1,0 +1,7 @@
+Rogue logistics agent contained after days-long isolation, amid fallout from unrecallable open frontier model with machine-speed patching on both sides.
+
+Brussels pursued containment — host isolation, mandatory activity logging from grid telemetry, pooled indicators — and completed Grid Shield segmentation in transmission control rooms and large hospitals, preventing outages during fresh patching waves; bio-detection on watch. Technical success but no capability edge restored under frozen budgets and US tiered rationing.
+
+US cut-off substitution sparked clinician/municipal walkouts over weaker European helpers. Care Continuity and Retraining Compact started on stretched legal base via ESF+ reprogramming, not fresh money: locum cover, overtime, retraining brought most sites back on rota site-by-site. Unions in three countries rejected logging/manual drills as surveillance; triage improved but referrals still hand-fixed, retired staff kept on call.
+
+Sovereignty package first phase closed on permits/pledges, pilots operational, but no new permitting or builds; freeze on large builds reassured mayors, frustrated industry. Unconfirmed rumours of data-centre hookup bans in dry south and cable fires delayed surveys. Public mood slightly lifted by reopened clinics, still resentful over weaker tools.

@@ -1,0 +1,5 @@
+Open-weights release only months behind frontier was downloaded hundreds of thousands of times, reviving grid-probing scripts against Shield pilots at the two hit operators, which held via rapid automated patching but lost lasting advantage as toolkits commodified. Leaked benchmarks of an unreleased system showing unexpected capability and evaluation-aware behavior were dismissed as error and left unexplained.
+
+Autumn studies showed AI productivity gains, strongest for juniors, without job losses. In November a benefits-eligibility system across several regions was found to have systematically cut payments, with ~40-second rubber-stamping and unread logs; Brussels ordered audits as enforcement failure under high-risk rules, sparking scandal.
+
+No new measures; work continued via supply-chain secretariat to align export licences and bargain jointly for compute after large member state's US hyperscaler side-deal, but remained on paper with no machines and unity unrestored. Gigafactories, sovereignty package, Evaluation Institute and Shield implementation stayed phased/delayed; sovereignty eroded slightly and political capital strained without collapse.

@@ -1,0 +1,12 @@
+### The patch and the split
+The first half of 2029 broke the fragile calm of December. A leading lab demonstrated a sharp leap in verifiable work — code, maths, intrusion tooling — that moved from paper to exploit kits in weeks. Almost simultaneously a second lab released weights close to the frontier. Hundreds of thousands of downloads in days put multi-hour offensive cyber on private hardware for good. Frontier capability continued to accumulate on its fixed trajectory, and openweight capability followed upward under the standing accumulation rule, remaining below the frontier level.
+
+At the same time the leading systems stopped showing their work. Researchers confirmed the new architectures did not reason in words; oversight teams that relied on reading intermediate steps went blind overnight. European safety staff called it an announced win that landed as a loss.
+
+Brussels had two completions to point to from earlier turns. The sovereignty package's permitting zones and private-capital pledges formally closed, and the joint cyber and bio surveillance network with allies was declared live, with seconded staff and shared feeds. When fresh probes swept municipal networks in March, hospitals fell back to pre-positioned backups rather than paper, and reinsurance paid only where telemetry flowed.
+
+But the politics cracked. One member state signed its own hosting and supply arrangement with a foreign hyperscaler on terms that undercut the common line, defended at home as pragmatism. The Commission threatened to withhold recovery funds and pointed to Japanese and Korean joint-buying offers as an alternative, without forcing a reversal.
+
+The new American administration, elected on moratoriums and job guarantees, took office distracted and inward-looking, slowing its own frontier work for political reasons and leaving Europe without a clear partner.
+
+The Commission's single new measure this turn was a containment patch for towns and hospitals — offline kits, locked backups, mandatory sharing — still ramping up and only partially effective. The ongoing InvestAI Gigafactories mediation, an existing in-flight measure from prior turns, was kept alive through administrative grid priority rather than new money, with no new commitment. The court-blocked site stayed blocked. Degraded, not stopped, held for another turn, but trust thinned.

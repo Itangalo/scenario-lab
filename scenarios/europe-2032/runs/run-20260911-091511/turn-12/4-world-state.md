@@ -1,0 +1,11 @@
+### Holding the line
+Brussels spent the spring trying to keep the autumn shield running on fumes. Pooled sequencing and referral-lab triage stayed open through health channels, backup medical stocks were rotated, and seconded cyber teams continued patching hospital networks and water-plant controls. Interior ministries added tabletop exercises for agentic fraud — frozen accounts, altered registries — and fresh guidance for municipalities on the openly circulating near-frontier model.
+
+On paper the programme held. In practice it thinned. Showcase regions kept queues stable; elsewhere directors reported the same overtime, the same swab-and-wait closures, and monitoring advice that officers privately called unusable against code already on hundreds of thousands of machines. No novel pathogen was caught. Finance officials remained openly frightened by the winter agent incident, whose containment was still described in qualified language.
+
+### The sites go dark
+The frozen factory sites became the story. What had been night vigils hardened into sustained sabotage: cut cables, smashed hookups, damaged substations at water and power connections in several member states. Police extended protection perimeters and contractors withdrew crews to avoid casualties. A few local papers carried single-source claims of cross-border coordination; ministries would neither confirm nor deny.
+
+The Commission treated it as public order, not energy policy. Police protection was extended, contractors were stood down, and water-and-power drafts were kept alive inside energy departments without forcing a permit decision. No restart was attempted, and no sanction was sought against the capital with its separate supply arrangement, to keep the formal pact against undercutting intact.
+
+By June wards were still open, construction sites were still silent under guard, and voters saw protection without progress. Brussels conserved what little standing it had, waiting for the bio shield to land, while the ground it hoped to build on was being dug up at night.

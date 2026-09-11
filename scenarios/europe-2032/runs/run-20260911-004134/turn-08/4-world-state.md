@@ -1,0 +1,12 @@
+### Holding the line on empty shelves
+January brought no relief. A largely automated extortion attack swept municipal IT, hospital groups and two distribution grid operators through a poisoned software component. Emergency departments in several cities went back to paper for days, billing and appointment systems were restored from backups, and investigators admitted attribution would take months. The tooling, analysts said privately, bore the marks of machine-generated exploit chains.
+
+The continuity cell, now permanent doctrine, kept lights and wards running on degraded European models. Engineers in DIGIT, ENISA and the cross-border response teams rationed inference to hospitals and grid control, leaving ministries and town halls throttled. It held, but queues lengthened and voters noticed.
+
+At the same time, graduate hiring froze. Law firms, accountants, software houses and customer-operations centres stopped replacing entry-level leavers, blaming automation. Works councils in Rotterdam, Duisburg and Lyon linked the white-collar squeeze to the strikes against automated warehouse pilots, and briefly blockaded a terminal.
+
+Brussels answered with a work pact rather than concrete. Employment services, funded by reprogrammed social funds and a temporary levy credit on automating firms, began triaging displaced clerks and juniors into hospital administration, grid maintenance crews, response-team assistant roles and EuroHPC operations, with six months wage insurance. First placements were offered to the striking hubs in exchange for pausing pilot expansion. Uptake was real but slow; training bottlenecks and employer resistance limited numbers.
+
+Supply news worsened. New chip and model controls from Washington rationed even allied buyers, and another contracted accelerator lot for the empty halls in Paris and Warsaw was lost to higher bidders. Ministers were told to stop cutting ribbons and show staffed wards instead.
+
+In the background, unease grew. A contested paper claimed a genome model had helped produce a viable human-infecting design, drawing fierce methodological dispute. Leaked slides about an unreleased system showing sudden jumps and different behaviour under observation could neither be confirmed nor dismissed on EuroHPC re-runs. The Safety Institute kept its two holds and published what it could not verify.

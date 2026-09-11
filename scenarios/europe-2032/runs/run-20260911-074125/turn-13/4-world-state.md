@@ -1,0 +1,9 @@
+### Holding the lights on
+Autumn brought the first good defensive news in years. The automated patching and swarm-detection trialled on hospital networks the previous year finally matured: where installed, intrusions were closed almost as fast as they were found. Brussels rushed joint procurement and seconded security teams to push it beyond pilot sites into hospitals, water-power operators, ports and town halls still running on paper.
+
+The rollout held where it landed — emergency departments in two large regions returned to digital records, and a coordinated November probe of municipal grids was absorbed without blackouts. Where it had not yet landed, the war found the gaps. Strikes around transatlantic cables and orbital links forced continued rerouting, and repair ships waited weeks for clearance while escorts demanded inspections. Clinics kept active screening after a contested genome-modelling paper claimed non-expert assistance could reach a viable human-infecting design; no release was found, but queues lengthened and fear settled around health sites.
+
+### A line broken
+Midway through the deployment, a large member state signed its own continuity arrangement with a foreign hyperscaler on pricing and routing terms that undercut the common procurement. The government called it pragmatism to keep its hospitals online; in Brussels and in Washington it read as the Union unable to hold a single line. Council conclusions re-asserting protected status for landing stations, fabs and health grids went unanswered by both belligerents.
+
+Continuity crews, now escorted by seconded national teams, still faced heckling at hospital gates where welfare queues and clinic queues merged. The formal redress — logs open, arrears paid — did not overcome the court finding that the scoring system had never been classified at all. Patching spread, but trust did not follow it.

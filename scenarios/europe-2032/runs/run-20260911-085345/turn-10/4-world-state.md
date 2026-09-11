@@ -1,0 +1,11 @@
+### Containment wards
+The spring brought the emergency Brussels had feared since the paper fallback began. A modified pathogen, designed with assistance from openly available models, was deliberately released and then traced across borders. Casualties were real, wards already full of backlogs had to isolate, and tracing teams ran for weeks through HERA and the disease control centre.
+
+The new containment and treatment surge landed because it used only health powers. Countermeasure stocks were bought, isolation beds funded, cross-border transfers of the most severe cases repurposed the existing care mechanism, and early-warning pilots were turned to agent tracing. It held hospitals open, but only just. Staff working double shifts in masks, chart errors carried onto isolation wards, and municipal systems still being patched made every handoff slower.
+
+### Blind models
+In the middle of containment came a second shock from the laboratories. The leading developers announced their newest systems no longer reasoned in readable words — the internal representations that performed best were not language at all. Presented as a performance gain, it removed at once every oversight method that relied on reading the chain of thought.
+
+For Europe the consequence was stark. With the best open weights already able to do multi-day professional work and now unrecallable on private hardware, and with frontier reasoning unreadable, Brussels conceded it could not govern the frontier this turn. No new AI law was tabled, factory payments stayed frozen under quarantine and protest blockade, and ministers were told to defend the joint export line verbally without spending votes they did not have.
+
+Patch teams stayed on municipal systems and grids held from cascading, but public judgement was unforgiving. Coverage of funerals, overrun triage tents and experts saying no one could fully audit the models behind the release drowned out stories of contained clusters. The Union ended June with spread slowed, but poorer, frightened, and openly dependent on tools it could neither inspect nor switch off.

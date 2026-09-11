@@ -1,0 +1,11 @@
+### Patchwork holds
+The autumn ransomware sweep was the one Brussels had prepared for. The Recovery Corps playbooks, patch contracts and offline checklists left from the spring were still live, and crews moved faster this time. Clinics and billing portals came back in days where teams arrived early; elsewhere queues returned. The attack itself was larger and more automated — variants recompiled overnight, defenders visibly behind for weeks, attribution still open in December. But because a European response existed, the damage read as contained rather than chaotic.
+
+That containment bought little goodwill. The same months brought a second American export-licensing squeeze, this time reaching deep into servicing and older lithography lines. The Hague protested, Brussels opened consultation under its anti-coercion instrument, but the company complied to survive. Dutch papers called it the use of Europe's one chokepoint by someone else. The price of winter balancing power rose again.
+
+### Cures from elsewhere
+In the middle of it, tailored therapies built on frontier models reached ordinary clinics — remissions where none existed. Patients queued; doctors spoke of miracles. The models behind them ran on American infrastructure under tiered access, with European researchers able to run benchmarks but not the training. Gratitude mixed with humiliation in evening news debates.
+
+Entry-level white-collar layoffs hardened into a freeze. Junior code, standard reports, first-line helpdesks stopped hiring. A new retraining guarantee with wage insurance and six-month vouchers was announced through employment services, co-funded by a levy on automating employers. Employers bargained for restructuring flexibility; unions called the vouchers slow and small. First payouts will not land until next year.
+
+Brussels accepted an invitation into a joint telemetry pool with allies hit by the same class of incident, sharing indicators through crisis channels. Protection improved where feeds connected. Faint reports of blockades and sabotage attempts around data-centre and grid sites grew louder in local press, still single-source and denied, but repeated.

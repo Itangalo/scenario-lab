@@ -1,0 +1,8 @@
+### Holding the line
+Through autumn Brussels pushed what little it had left into the supply talks. Foreign ministers shuttled between capitals offering what was not yet built — future factory output, supercomputer hours — in exchange for firm deliveries of chips, cables and minerals. Partners kept listening and kept asking for cash. Guarantees were reshuffled to keep delegations at the table, but no framework was signed.
+
+At home there was no new build to show. The work was enforcement: isolation gates, human sign-off on critical controls, aid paid only where logs were shared and backups proven. French and Dutch teams remained out in municipal basements and clinics, cleaning and re-isolating. Hospitals and grid operators drilled now for a world where powerful tools live on private hardware beyond any recall.
+
+That posture contained damage but created none of the relief officials hoped for. Extended exercises around Taiwan lifted Pacific shipping premiums again and an expulsion fight in a European capital turned paper licences for allied hardware into queues at the port. Mayors reported services that bent without breaking — longer waits, manual fallbacks, postponed procedures — and voters heard it as managed decline.
+
+By December the large factory site was still cranes and scaffolding, the open models were a level more capable and a little more widespread, and trust in AI scraped along the floor. Continuity held, at the cost of any belief that it would improve.

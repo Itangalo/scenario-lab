@@ -1,0 +1,11 @@
+### Patching under fire
+The autumn brought a ransomware sweep that moved faster than its analysts. Generated tooling probed hospitals, municipal services and grid operators in several member states at once, encrypting back-office systems and forcing manual fallbacks for appointments, billing and dispatch. Attribution remained open at year's end. Emergency crews leaned on newly available automated patching and swarm-detection, pushed out through existing emergency playbooks to priority operators. Where it was installed in time, it cut dwell time sharply; where staffing and rationed compute delayed rollout, services degraded for days.
+
+The same half-year saw a sharp discontinuous advance in code and intrusion tooling demonstrated abroad. Defenders described what attackers could now attempt changing within weeks, while general competence crept forward more slowly. With foreign frontier access still rationed and investment in the sector collapsing — valuations resetting, build-outs cancelled, several supply arrangements Europe had counted on evaporating — Brussels had little new capacity to deploy.
+
+### Triage, tools and the courtroom
+The lithography licensing pact championed as leverage closed the half-year with signatures but no pooled wafers yet. Partners accepted maintenance assurances while hedging allocations, and Washington treated the instrument as pressure. Domestic gigafactory sites gained emergency grid permits under police guard, still paper capacity.
+
+Two quieter shifts mattered more. Washington and Beijing announced a limited risk agreement on weights security and certain design tools, with thin verification. Brussels sought observer status through its middle-power contacts and was left waiting for a briefing. In ordinary offices, surveys showed assistants lifting output in law, accountancy and administration without job losses, a fact ministers quoted and voters ignored.
+
+Then a benefits tribunal and an ombudsman found an AI-supported welfare and policing support system had systematically wronged claimants — queues approved in seconds, logs generated and never read. Because the deployment sat outside the high-risk categories, everything done had been lawful. Editorial pages called the rulebook written for 2024 and unfit for 2030. Restriction became cheap; adoption stalled.

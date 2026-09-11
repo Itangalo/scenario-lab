@@ -1,0 +1,141 @@
+{
+  "scenario": "Europe 2032 — Plateau",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 59.5,
+    "openweight_capability": 55.0,
+    "ai_safety": 24.0,
+    "resilience": 46.0,
+    "eu_ai_sovereignty": 20.0,
+    "eu_political_capital": 11.0,
+    "public_sentiment": 39.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 53.5,
+        "openweight_capability": 46.0,
+        "ai_safety": 32.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 41.0,
+        "public_sentiment": 39.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 49.7,
+        "ai_safety": 30.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 31.0,
+        "public_sentiment": 39.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 56.5,
+        "openweight_capability": 52.3,
+        "ai_safety": 28.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 23.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 52.5,
+        "ai_safety": 26.0,
+        "resilience": 42.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 20.0,
+        "public_sentiment": 43.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 59.5,
+        "openweight_capability": 55.0,
+        "ai_safety": 24.0,
+        "resilience": 46.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 11.0,
+        "public_sentiment": 39.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "adoption_success",
+    "cyber_test_shot",
+    "election_retrenchment",
+    "emergent_gigafactory_siting_backlash",
+    "eval_anomaly_reports",
+    "knowledge_work_augmented",
+    "member_state_defection",
+    "openweight_frontier_release",
+    "taiwan_tension_rise"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 3,
+      "id": "adoption_success"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_gigafactory_siting_backlash"
+    },
+    {
+      "turn": 4,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 4,
+      "id": "knowledge_work_augmented"
+    },
+    {
+      "turn": 4,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 5,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 5,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 5,
+      "id": "election_retrenchment"
+    }
+  ],
+  "last_updated": "2026-09-10T23:03:37.939400",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_insurer_certificate_mandate",
+      "description": "Major EU insurers move to make municipal cyber and business-interruption cover conditional on the new ENISA pass certificate, triggering a scramble for re-tests and a public fight over premiums in smaller cities.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_insurer_conditional_cover",
+      "description": "Major EU insurers move from threats to action, making cyber cover for hospitals and municipal utilities conditional on ENISA pass certificates, triggering a scramble for certification and political backlash over uncovered operators.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-10T23:03:42.331936"
+}

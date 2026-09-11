@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: M12 EU Cyber Emergency Restoration and Defensive Patch Surge −2, M13 EU Civil Continuity and Neutral Infrastructure Protection Operation −2, priority no effect under capital below 20 = −4
+PROPOSAL BONUS: EU Civil Continuity and Neutral Infrastructure Protection Operation (cat 6, small) +4 — catastrophic great-power war targeting data centres/cables/fabs and severe October cyber degradation, answered directly with continuity and patch surge
+LEGITIMACY LENDS: capital 5, sentiment 9 -> +2 (capped below sentiment)
+SOVEREIGNTY: 16 last turn, no capacity event finish/in-flight, export_control_escalation t12 −3, capability rose 2.5 −1 = 12

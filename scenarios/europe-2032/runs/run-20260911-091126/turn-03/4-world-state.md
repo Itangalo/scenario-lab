@@ -1,0 +1,12 @@
+### The Shield gets pushed, the sites slip
+Brussels spent the autumn trying to hold two efforts together, and it showed.
+
+The priority was the Critical Services Shield. A small ENISA-led team continued follow-up with the hospitals and municipal utilities that had failed the spring drills, funded by limited reallocation from existing civil-protection and cohesion envelopes with no new funding committed. Finance and telecoms stayed solid. With staffing and bandwidth stretched across Gigafactories, Shield follow-up, and procurement scoping, only a handful of hospitals passed a re-test on failover. Many smaller operators did not — staff turnover undid training, restores still took too long, and interior ministries complained the paperwork was outpacing the engineers. Several planned site visits were deferred to next turn for lack of personnel.
+
+On gigafactories, the three-capital contest hardened. The Commission held EU legal anchoring as the condition for InvestAI guarantees and EIB co-financing, which prevented an open subsidy race but settled nothing. At one shortlisted site, coordinated protests over power and water use turned into council permit challenges and hostile press. Officials stopped defending the site and began quietly sounding a backup grid-ready location instead. Renegotiation, not cancellation, but months lost and a signal to every other host town that holding out pays.
+
+On procurement, the Commission circulated draft options for EU-hosted support tools in triage, permits and tutoring, with possible targets on waiting-list times, permit decision days, and tutoring outcomes discussed. No contracts were launched this turn and no new funding was committed; services were asked to cost the options and report back. Work remained preparatory only and was slowed by the same staffing constraints.
+
+It was not enough to cover the strain. Capitals counted continued outflows to factories not yet sited and hardening not yet finished under the existing portfolio charge. Insurers, after last year's findings of intruders left inside grid, port and water systems, began telling smaller utilities that cover would soon require proof of hardening. Nothing was repriced yet, but finance directors noticed.
+
+By December, the Shield work continued unevenly and behind schedule, the siting dispute remained unresolved, and the Union was visibly overstretched.

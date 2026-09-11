@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: EU Wartime Neutrality Shelter and Lifeline Continuity −2, EU Middle-Power Repair and Defensive Patch Coalition −2 = −4 (priority named but without effect or cost as capital 4 below 20)
+PROPOSAL BONUS: EU Middle-Power Repair and Defensive Patch Coalition (cat 8, small) +2 — member-state defection and loss of bilateral access in last turns and this answers directly but small and coalition-dependent
+LEGITIMACY LENDS: capital 2, sentiment 13 -> +2
+SOVEREIGNTY: 10 last turn, no category 4 finish, no category 4 in flight +0, middle_power_coalition t12 +2 (largest of securing vs member_state_defection taking), capability rose 2.5 −1 = 11

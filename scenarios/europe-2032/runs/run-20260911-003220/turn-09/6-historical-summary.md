@@ -1,0 +1,5 @@
+Autumn capability jump made summer plans obsolete, with self-running training loops confirmed; Washington and Beijing struck limited deal on weights, escalation, and bio-tools with thin verification, Brussels informed via press without inclusion.
+
+Washington pressed The Hague to extend chip-equipment export cuts to older lines; Dutch had little room to refuse, showing EU's supply-chain card played by US. Council mandated linking further restraint to EU co-decision and verification seat, waving competition/anti-coercion tools; Washington noted without commitment.
+
+Pooled cyber-bio sharing accession finally closed with time-limited safeguards on data, samples, shutdown; liaisons seated, feeds flowing late autumn. Containment drills marginally improved aided by outside telemetry. Four factory shells stayed empty as bargaining chips; wage support continued thinner. Public mood shifted from exhaustion to humiliation and resignation as protests thinned.

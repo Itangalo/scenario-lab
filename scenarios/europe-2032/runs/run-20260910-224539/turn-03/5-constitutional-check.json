@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: `eu_political_capital` decreased by 18.0 points (from 23.0 to 5.0) in a single turn, which exceeds the maximum allowed change of 25 points in magnitude. While the constraint allows up to 25 points of movement, this drop is economically and organizationally implausible without narrative justification for such an extreme depletion of political capital (e.g., major institutional collapse, mass resignations, or treaty rejection). The narrative describes setbacks but does not support a near-total erosion of political capital.\n- Economic Constraint violated: The narrative describes capital flight and cancellation of private co-financing for the gigafactory zones, but there is no identified source for the front-loaded social funds used in the new wage-insurance and retraining programme. The measure is launched \"through employment services with front-loaded social funds rather than fresh cash,\" implying off-budget financing, but no mechanism or prior accumulation is specified, violating budget consistency.\n- Regulatory Constraint violated: The EU AI Evaluation and Safety Institute is described as having rapidly adopted a new interpretability result into its protocols, implying operational status and regulatory reach. However, per modelling choice #6, no measure is implemented instantly. The institute (M3) was presumably proposed earlier but shows no phased rollout; its full functionality in Turn 3 without evidence of prior setup violates the minimum time lag for implementation."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

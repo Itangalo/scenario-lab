@@ -1,0 +1,5 @@
+Through Dec 2032 the black-start network held with no major blackout: split guarded stores survived and drills ran, but sabotage escalated from fence-cutting to coordinated anti-AI blockades with vans/tractors on convoy routes, delaying two restoration exercises and forcing gendarmerie escorts.
+
+AI oversight hardened defensively: unreadable internal reasoning continued to block re-automation; leaked chatter of unexplained jumps in an unreleased frontier system reinforced the freeze. A genuine advance in behavioral, machine-speed defensive patching was pushed via standing orders to health/grid operators — helpful but not ending intrusions. Contested genome-model claim remained watch-item only.
+
+European-run scheduling in two health systems kept cutting waits, but junior white-collar hiring froze with entry posts unrefilled and no layoff wave. Under continued Washington quotas and no new procurement or instrument, Brussels governed on standing authorities, defending operations and proposing nothing new, fueling perception of inability to build, hire, or protect repairs.

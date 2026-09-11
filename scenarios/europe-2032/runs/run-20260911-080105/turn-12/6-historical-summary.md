@@ -1,0 +1,7 @@
+Frontier models arrived as running services automating supervised-team tasks end-to-end, obsoleting Brussels timelines. Estates with emergency patch stack and joint cyber cell held for hospitals and energy; others failed and finance testbeds were probed again by tooling that learned around swarm detectors.
+
+ENISA limited remaining patches to previously mapped estates under clean-backup conditionality and held EuroHPC rebuild for patch validation, not training — preventing cascade but leaving Europe visibly behind the frontier.
+
+Entry hiring collapsed across law, accountancy, software, customer operations and administration, graduates worst hit. Wage-insurance pilots kept paying late and too small to restart hiring; mayors reused cyber-recovery playbooks while anger grew that cures reached wards but jobs did not return.
+
+Washington extended chipmaking equipment cuts from leading-edge to mature tools; the Netherlands complied, pushing queued European buyers further back. Brussels responded only with a cohesion offer to the defecting member state and a plea for continuity licences, opening no anti-coercion case — seen as its sole chokepoint used by Washington amid failure to hold a common line.

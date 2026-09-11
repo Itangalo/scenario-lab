@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: EU Essential Services Continuity and Open-Weight Fallback −2, EU Wartime Degraded-Operations Continuity −2 = −4 + priority has no effect and no cost as capital below 20
+PROPOSAL BONUS: EU Wartime Degraded-Operations Continuity (cat 6, small) +4 — catastrophic war and renewed cutoff landed this turn and this answers them directly, with loss-of-control intruder as secondary
+LEGITIMACY LENDS: none — capital 18 above sentiment 6
+SOVEREIGNTY: 10 last turn, no cat 4 finish, no cat 4 in flight, catastrophic_great_power_conflict t13 −3 (largest of three capacity-takeaway events, also eu_frontier_access_denied and embodied_ai_deployment), capability rose 0.9 no charge = 7

@@ -1,0 +1,5 @@
+US-China war over AI infrastructure continued July-Dec 2031; two Europe-serving cable landings degraded, therapy hub on backup power, licensed doses queued, compute near triple. Brussels husbanded existing shields, renewed non-belligerent deconfliction for Union territory, landings, factory plots; Washington acknowledged, Beijing silent; insurers refused repair-ship cover.
+
+Washington expanded chipmaking-equipment export/service cuts to older machines for ordinary chips via US tech in Dutch supply chain; The Hague protested but complied, seen as conscription of EU bottleneck. AI-directed physics breakthrough in grid-storage catalysts validated but publicly overshadowed.
+
+Arson at gigafactory grid works eased under guard but construction in two regions halted, Energy Council in control. Graduate hiring absent in law, accountancy, software, operations; Transition Guarantee bridge pay temporary in automated ports. Open frontier weights unrecallable; frontier training ran unattended, Brussels only post-release evaluation.

@@ -1,0 +1,7 @@
+Winter pathogen release with substantial model assistance spread via two airport cities before sequencing detection; containment held after weeks with dozens dead, collapsing trust. Hospitals lost US frontier model access, forced to EU/open-weight substitutes adequate for forms but weak on complex diagnostics.
+
+US lithography controls and Taiwan exercises delayed accelerators/electronics and raised insurance costs. Homes-hospitals-first power rationing held but costly; municipal rebuild slow. Wage-bridge aid for displaced juniors plus sequencing aides/care assistants continued, insufficient amid rising intrusions at data-centres/substations.
+
+EU biocontainment surge approved but deployment stalled; Brussels promised EU-paid containment, capitals kept own plans.
+
+H2 2032: leading lab demonstrated narrow but stark cyber capability — near-perfect exploit chains, automated patch-and-breach loops — spiking phishing, hospital IT load, and substation fence-cutting, outpacing substitute models. US-China announced limited accord on weights security, escalation risks, and bio-design tool screening with thin inspections; Brussels excluded. EU sought third-verifier role offering supply-chain, export-control, and Evaluation Institute testing for inclusion and audited restoration of hospital model access; US/China noncommittal. Joint procurement and binding protocols prevented second collapse in airport cities, but confidence, power, and staffing strains persisted into December.

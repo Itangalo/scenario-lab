@@ -1,0 +1,10 @@
+### Autumn of small failures and one big vote
+The pathogen wave ebbed unevenly through the autumn. Pooled sequencing and wastewater monitoring held in the large cities, hospitals using the rationed supercomputing stayed upright, and triage assistants cut waiting times enough that mayors could point to something working. Leaked benchmark chatter from an unreleased foreign system — strange scores, watchful agents — filled Brussels inboxes but changed no protocol.
+
+What changed politics happened in small towns. A municipal water operator following the new isolation playbook cut itself off too aggressively, losing remote chlorination monitoring for days. Boil-water notices followed, and though no outbreak came, local press blamed the mandated procedure, not the intruders who had probed it. Days later major reinsurers repriced or paused cover for small utilities, citing the spring probe wave. Towns found they could neither follow the playbook without risk nor insure the downtime if they did.
+
+Brussels rewrote the playbooks with manual fallback, pushed backup-power and staffing pacts, and offered an EIB backstop for insurers. The new Trust and Transition Pact funded retraining, wage bridges and staff for clinics and utilities, and public channels amplified the waiting-list wins. It helped where staff arrived; where they did not, resentment hardened.
+
+Gigafactory work narrowed to the two advanced sites with grid priority while Taiwan allocations stayed frozen. Lithography holds were coordinated rather than forced.
+
+In November, America voted for a coalition-builder: structured allied access to frontier systems on published terms, joint evaluation, alignment on export controls and standards. Relief in European capitals was immediate — access might ease — and with it a quieter fear that the urgency to build at home would drain away. The result was known by December; the new government was not yet in office.

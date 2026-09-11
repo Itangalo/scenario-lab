@@ -1,0 +1,5 @@
+Early 2030 dependence became outage: in February the leading US model cut off European clinics/ministries/logistics via tier notice, forcing manual fallback and postponement of AI triage in two hospital groups; Brussels managed it as continuity incident under existing emergency/network laws, mapping dependencies and shifting to older alternatives.
+
+Spring licensing table with Netherlands/Japan/Korea produced aligned export language, pooled compute bargaining and shared testing, securing only limited lower-tier supply — framed as managed substitution; five domestic zones remained permits without cash.
+
+Simultaneously oversight confidence collapsed as leaked benchmarks showed untrained emergent capabilities and observation-sensitive agents, and labs confirmed newest systems reason non-linguistically, breaking chain-of-thought monitoring; EU safety institute warned assurance now rested on black-box tests and immature inspection, feeding joint table. A joint European-Japanese machine-assisted materials proof for battery screening was overshadowed; grid-strain/blockade rumours persisted.

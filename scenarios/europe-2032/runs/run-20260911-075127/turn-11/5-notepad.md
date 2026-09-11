@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Bio-Detection and Trusted Care Continuity Network −2, EU Wartime Neutrality Shelter and Lifeline Continuity −2, EU Verification Seat and Licensed Continuity Pact −2 = −6 (priority without effect or cost as capital 17 below 20, charge is measures only)
+PROPOSAL BONUS: EU Verification Seat and Licensed Continuity Pact (cat 8, small) +3 — bio_incident plus cutoff plus nationalised labs fired this turn and this answers them directly as state-to-state track
+LEGITIMACY LENDS: capital 13, sentiment 16 -> +2
+SOVEREIGNTY: 13 last turn, no cat4 finish, no cat4 in flight +0, eu_frontier_access_denied t11 −3, capability rose 2.0 −1 = 9

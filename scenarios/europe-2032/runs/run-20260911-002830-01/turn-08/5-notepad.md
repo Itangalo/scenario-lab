@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t8: M7 EU-US Structured Frontier Access and Joint Evaluation Pact −2, M8 EU Wartime Essential Continuity and Agent Containment Regime −2, M9 EU Pandemic Triage and Shared Assurance Adoption Pact −2, priority −1 = −7
+PROPOSAL BONUS: EU Pandemic Triage and Shared Assurance Adoption Pact (cat 6, small) +4 — catastrophic engineered pandemic plus autonomous agent and bio-precursor shocks in last three turns and this answers containment directly
+LEGITIMACY LENDS: capital 8, sentiment 12 -> +1
+SOVEREIGNTY: 19 last turn, no capacity event, no cat4 in flight +0, capability rose 7.0 −1 = 18

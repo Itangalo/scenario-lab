@@ -1,0 +1,12 @@
+### Dark screens
+The autumn brought the ransomware sweep back, larger and faster. Model-written intrusion tooling moved through municipal networks, clinics and a regional grid operator within days. Where the new repair teams had installed isolation gates and human approval for automated tools, systems flickered and returned. Where they had not, appointment systems, payment counters and dispatch desks stayed dark for weeks. Defenders admitted they were behind, and no one could say who had run it. Safety practices held in the labs but strained under deployment pressure, slipping rather than collapsing.
+
+As frontier techniques spread, shared tooling and published replication guides allowed widely available open systems to catch up toward the prior frontier level, narrowing the gap without exceeding it.
+
+### The benefits office
+In the middle of the outage, an ombudsman and then a court found that an AI-supported social insurance system had systematically cut or reduced payments to thousands of people. Caseworkers had approved flagged cases in under a minute, logs that showed the pattern were never read. Brussels said the audit would determine how the existing obligations applied to this deployment. In town halls, the distinction did not land. Headlines paired the dark clinics with the wrongful denials.
+
+### Repair corps
+The Union pushed funded repair teams under emergency civil-protection and network-security powers into the worst-hit districts, conditioning repair money on sharing telemetry and proving an offline fallback could run. French, Dutch and Spanish teams restored core registers first, then clinics. Autumn exercises cut hospitals and ministries off from the American frontier model to test European-hosted alternatives built on reserved supercomputing time and the one large factory still under construction.
+
+Work on the EU Sovereign Fallback Stack continued but was not yet complete, with full effect delayed by staffing, build-out and integration time. A coordination compact with other mid-sized technology powers helped keep chips and maintenance hardware flowing, giving Brussels more bargaining room without ceding control. That technical groundwork kept sovereignty steady, but it did not translate into political credit: with clinics dark and benefits wrongly denied, trust collapsed further and political capital slipped. Data-centre meetings turned angry, and recovery work stalled where local opposition blocked siting and maintenance contracts.

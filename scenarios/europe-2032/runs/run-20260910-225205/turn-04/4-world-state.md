@@ -1,0 +1,13 @@
+### Patching against the jump
+The spring opened with a demonstration from abroad that every security team in Europe immediately understood. In verifiable work — writing code, finding flaws, chaining intrusions — the machines took a visible step forward. Vendors pushed updates within weeks; attacker tooling absorbed the same tricks within weeks.
+
+For the Union it landed on an exposed surface. The autumn wave had left unpatched remote-access tools, untested backups and two operators fighting compensation claims. Brussels, running the semester through emergency channels, made money conditional: no Shield or Surge disbursement without patched access, isolated backups, and a signed command protocol or bilateral compact.
+
+Where that bargain held, recovery differentials began to widen. Patched municipalities and hospitals restored faster with EU-funded detection support and mutual-aid teams where they had arrived; in other districts deployment was still queued, with staffing and procurement holding up full coverage. Where mayors and boards stalled, systems stayed fragile, and a published league-table of recovery times turned patching into a condition for insurance coverage rather than a technical plea. Interior ministers still refused joint command of drills; Brussels funded the bilateral compacts that were ready and left other files for later in the year. Safety standards held steady through the push — patching and containment kept pace with the new capabilities, without a systemic gain or loss.
+
+### Concrete and offices
+On factories, the line held without new spend. The one rising site poured concrete and hosted ministerial visits. The two stalled sites stayed in mediation over water and grid fees, with guarantees and Bank tranches tied to grid priority, European anchoring and notification of outside deals. The breakaway capital kept its discounted hyperscaler contract but filed papers; the two would-be followers were again refused the same discount and stayed inside, grumbling.
+
+Meanwhile the offices changed the politics. Law firms, accountancies, administrations and newsrooms reported measured productivity gains, largest among juniors, with no matching fall in employment. Firms that had cut early quietly rehired. Work got denser rather than vanishing, and the compensation quarrel over the autumn outages lost heat — disruption felt manageable, jobs felt safe.
+
+By June, services in patched areas were restoring in days while other areas continued to work through backlogs, factories inched forward on existing sites, and coverage described a mixed picture across municipalities and sectors.

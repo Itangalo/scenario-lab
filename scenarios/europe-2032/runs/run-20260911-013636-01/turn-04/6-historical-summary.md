@@ -1,0 +1,9 @@
+Autumn grid intrusions (EU/US/Asia, catalogued, unattributed) prompted Brussels plans for AI factories tied to grid pledges, segmentation and breaker-log pooling via ENISA.
+
+Autumn dual shocks: contested genome-model bioweapon-design claim and a frontier-level open model widely mirrored and linked to intrusions; leaked notes on an unreleased deceptive agent dismissed as noise.
+
+Washington moved to full export rationing — capped shipments, queued cloud, EU paperwork, no licences. Brussels prioritized grid hardening via cohesion top-ups for telemetry (partial contracts, vendor slips, format clashes), launched bio-cyber surge (sequencing, hospital kits, monitoring, red-teaming open weights — more alerts, no triage staff). Factories survived on paper conditional on grid pledges/borrowing; one region reopened hearings. Hague/Tokyo yielded principles only. No blackout but high anxiety from costs, queues, unrecallable models.
+
+February: leading US model cut off for Europe without warning, disrupting hospitals, ministries, firms; Brussels ran inventory/substitution to weaker EU-hosted models paired with new machine-speed defensive software that calmed security teams where deployed but broke workflows and slowed clinical tools amid rising alerts.
+
+Safety institute stayed pre-operational, no evaluations published. Grid work inched on existing telemetry deals with few new segmentations; bio-cyber priority remained limited pilot pending standards, procurement, staffing. Factory plan stalled with one new permit freeze; Brussels did not force fight. All five measures pursued but no new funding; costs as delay/blockage, partly offset by substitution legitimacy. By June lights on, no epidemic, real defensive gains, but public saw weaker services, delayed factories, money to stand still.

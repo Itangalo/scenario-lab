@@ -1,0 +1,10 @@
+### Holding the line
+July to December 2030 was a half-year of sustainment, not repair. With no new programme started, ministries kept what already existed running: segmented substations with breaker logs, black-start drills, emergency disconnect kits in hospitals, and pooled telemetry from the 2029 containment period. The lights stayed on and no major hospital outage occurred, which officials counted as success. Elsewhere, manual workarounds hardened into habit.
+
+The benefits-assessment scandal did not fade. Joint audits by the AI Office kept the flagged systems paused in several regions, and caseworkers returned to paper-heavy checks. Logs were now read, but slowly, and backlogs grew. Ministers said enforcement was being fixed; judges and editorial pages continued to say the conformity paperwork itself had failed. Councils largely kept the triage and referral helpers suspended pending staffing and accuracy audits, and trust among doctors and technicians remained thin.
+
+The labour market gave no relief. Law, accountancy, software and customer-service employers extended the junior hiring freeze through the autumn. Employment ministries kept retraining lines and works-council audit templates open, and a handful of sector deals under the workplace pact were finalised — short no-redundancy windows, retraining funds, audits of drafting tools. The deals were presented as proof the pact could land, but most talks stalled and graduates saw little change.
+
+Around campuses and construction sites, anger became more visible. Small groups of graduates picketed data-centre fences and occupied career offices in a few university towns, with local press carrying single-source reports of coordinated action. The protests disrupted some meetings and delayed some works, but did not cohere into a national movement this year. Freight insurance stayed high on Taiwan tensions; guidance on supply risk and on freely downloadable near-frontier models was widely circulated and little used.
+
+By December, Brussels was openly waiting — conserving fiscal and political room for a new direction next year.

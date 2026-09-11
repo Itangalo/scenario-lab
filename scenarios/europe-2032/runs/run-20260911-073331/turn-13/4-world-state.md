@@ -1,0 +1,10 @@
+### Lights on, models off
+The cut came without explanation. Hospitals in three member states woke to error messages where the leading foreign model had been: triage assistants, procurement summarizers, radiology second-reads — gone for European users overnight. Ministries and firms that had built workflows on it scrambled to pooled coalition inference and the Jülich-French cluster, under hourly rationing. The press called it a switch-off; ministers called it foresight failure made real.
+
+At the same moment export licences tightened again. Under the standing Atlantic terms, allied buyers kept volume access while others were cut off, but paperwork, end-use checks and dual-use holds slowed every transformer sailing the Union had pooled through its middle-power club. Two partial grid-connection sites stayed partial.
+
+Then the attack landed. A largely automated ransomware sweep, tooled with model-generated exploits, moved across municipal services, clinic administration and a compromised software dependency used by grid operators. Wards stayed lit only because guarded battalions already held the Atlantic landing and the Dresden perimeter, and cross-border failover ran under military dispatch. Defenders were visibly behind: ENISA's incident cell rationed clean images for days while attribution slipped away.
+
+The emergency Energy Council held cohesion thinly. Finance repurposed envelopes for escorts and clinic-tied bridge-pay; mayors kept hospital feeders open. The ceramic battery breakthrough from Jülich was invoked as future jobs, but lines cannot reshape without parts. The court ruling on the social-insurance triage — lawful but badly drawn law — still dominated editorials, and now merged with anger at dependency: protests at data-centre gates and clinic queues turned openly hostile to any AI infrastructure.
+
+Nothing new was started. With coffers empty and trust gone, the escort pact was all that moved.

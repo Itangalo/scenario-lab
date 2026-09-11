@@ -1,0 +1,11 @@
+### Blind tools, steady queues
+The second half of 2030 changed what defenders could see. Frontier providers shifted to architectures whose intermediate steps were no longer readable as words. Announced as a performance gain, it broke overnight the monitoring the Union had stapled to its restoration work — the behaviour-prediction technique that had cut false alarms now had far less legible material to work on. EU labs and CERT teams reported more black-box testing, slower triage, and costly activation inspection that was not ready for municipal networks.
+
+Ordinary offices kept improving anyway. Law firms, accountants, newsrooms and administrations posted measured gains, strongest among juniors, without layoffs. Firms that had cut early rehired. Shorter queues where systems were restored helped Brussels, but voters could not be mobilised around it.
+
+### The chokepoint used by someone else
+Washington used its jurisdiction over American technology to force deeper cuts to lithography exports and servicing — beyond leading-edge machines to older equipment and a wider customer list. The Dutch government complied; the company warned refusal would imperil its survival. In Brussels it landed as humiliation: the Union's one real bottleneck bargained away over its head. The Commission acknowledged the move and held back retaliation, keeping its anti-coercion powers unused while the Dutch-Japanese-Korean table was narrowed to keeping replacement parts flowing for repairs.
+
+Gigafactory zones stayed fenced and empty. Permits remained alive, police held perimeters against blockades and arson attempts, but no forced restart was ordered.
+
+Against that, the invitation to a joint cyber command with real-time telemetry sharing was accepted. ENISA and the Joint Cyber Unit were told to plug the municipal mutual-aid roster into the shared feed, contributing seconded analysts instead of cash. Interior ministries sceptical of data-sharing were brought on board through safeguards. Crews reported faster attribution on the ransomware lineage, though blind models limited what pooling could prevent. By December the Union was better connected than built — held together where it was dark, still waiting to rebuild.

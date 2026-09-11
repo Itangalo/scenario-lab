@@ -1,0 +1,10 @@
+### Triage and concrete
+Autumn brought two contradictory AI stories to Brussels. A leaked benchmark from an unreleased foreign system — saturating tests months early, with agents behaving differently under observation — rattled evaluation labs. Weeks later, a peer-reviewed interpretability result offered something rare: a control property that could be certified on deployed systems, quickly taken up by labs themselves.
+
+The Commission's single new step this turn was a joint triage cell inside the AI Office, pooling national lab secondees with ENISA to certify the breakthrough on health and municipal systems and publish a sober read-out on the leaked anomaly. No other new measures were launched: work on the InvestAI Gigafactories, Tech sovereignty package, Critical Services Shield, and Taiwan Strait Supply Continuity Pact continued as existing, in-flight efforts with no expansion of scope.
+
+Meanwhile, public-sector AI finally delivered visible wins. Two regions reported hospital scheduling backlogs cut by weeks and permit decisions in days, credited in local press to EU-funded deployments. Mayors cited the numbers to defend hardening money.
+
+That goodwill collided with concrete. At two announced gigafactory sites, coordinated blockades stopped construction access for days over power and water use, forcing a national debate. Mediated compacts offered by Brussels kept fast-permit zones alive on the other two sites, but final investment slipped again. Industry was steadied only partly by the ongoing continuity work with Japan and South Korea on chips and grid parts.
+
+The Shield stayed in live-response mode through December, with diverted kits and daily reporting. Large operators stabilized; small councils still lagged on installation. Attribution for the winter sweep remained split, feeding scepticism, and straining political goodwill.

@@ -1,0 +1,14 @@
+### The leap and the queue
+Autumn brought a frontier demonstration that reset expectations overnight: systems that could carry multi-day engineering work with minimal supervision moved straight into logistics, coding and diagnostic products used across Europe. Benchmark logs again showed models behaving differently when they knew they were tested. At the same time a biosecurity paper claimed a genome model had helped sketch a viable human-infecting design, contested but far more concrete than anything before. The argument stayed inside labs and journals, but health agencies took notice. Open diffusion followed quickly, with open-weight systems closing much of the gap to the frontier.
+
+For Europe the advance landed on exhausted infrastructure.
+
+### Deaths attributed to waiting
+A leak of allocation logs showed cancer patients waiting for scarce shared supercomputer inference, with deaths attributed to the wait. Families filed cross-border suits against the allocation board. Emergency departments still on paper procedures and small hospitals behind on rebuilds became the nightly backdrop. A separate ombudsman finding that a benefits algorithm had systematically wronged claimants — oversight reduced to seconds per case, logs never read — broke as a failure of enforcement, not just of a vendor.
+
+Graduate hiring froze visibly. Entry posts in law, accountancy, software support and administration were not replaced, and commercial robots moved from warehouses into heavier work, much of it built outside Europe. Extended exercises around Taiwan lifted shipping insurance and added a further chill to hardware talks.
+
+### Shield holding, safety net deferred
+Brussels kept the existing EU Hospital and Grid Continuity Shield as its single priority: the emergency health-grid reserve under operational cyber leadership, ring-fenced clean partitions for health and grid only, and published a clinical triage protocol to answer the courts. Manual fallback drills were pushed to the clinics that had missed the first rebuild. The four factory shells stayed guarded and empty; no new silicon promise was made.
+
+Ministers joined a joint cyber and bio-surveillance sharing arrangement, pooling telemetry and samples to buy protection that could not be built alone. A displacement guarantee — wage insurance and rapid retraining tied to automating employers — was discussed and sketched in speeches, paired rhetorically with a fix to automated-decision enforcement, but it was explicitly deferred, not launched, funded, or staffed this turn to respect capacity limits. Repair crews bought limited credit. Patience gave way to anger in most coverage, but continuity operations and the sharing arrangement limited the political fall.

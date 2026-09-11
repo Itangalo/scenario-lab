@@ -1,0 +1,5 @@
+Late-2030 freeze and spring cyberattack were contained via islanding, paper fallbacks and CERT playbooks, but trust thinned as relief was seen as relabelled and junior hiring collapsed from automation.
+
+Washington tightened chip/model licences further in autumn — volumes halved, deliveries delayed, premium tiers short and audited — entrenching rationing. Technicians turned to a powerful open model near frontier capability, run on existing hardware as ungoverned substrate for support, coding and forensics.
+
+Brussels' wage-bridge/retraining paid only a few thousand in two countries in Oct-Nov with short grid/care courses; most queued in December over files and levy disputes, dismissed by business as productivity penalty and by unions as survival money. By winter power held and systems patched, but jobs unprotected and consent not restored.

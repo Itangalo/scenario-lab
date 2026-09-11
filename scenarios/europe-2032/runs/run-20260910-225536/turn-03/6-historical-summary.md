@@ -1,0 +1,7 @@
+Autumn intrusion into transmission grids in two EU states and systems on two continents exposed automated probes via freely available frontier model; attribution failed, Brussels ordered segmentation reviews.
+
+Spring control-evaluation breakthrough let AI Office audit hospital and grid AI for first safety gains, while US denied vetted model access.
+
+Compute advanced slowly: Paris, Berlin, Madrid, Stockholm, Warsaw locked provisional grid connections for 4-5 gigafactories but private co-financing lagged; ENTSO-E/ENISA drafted binding grid standards but fixes unfunded; probing toolkit spread.
+
+In autumn a Gulf sovereign fund offered multi-billions for power connections and data-centre shells for reserved compute and supplier preference, while a member-state capital signed a separate preliminary deal with a foreign hyperscaler outside Union conditions. Commission answered with Union-wide conditions — EU legal anchoring, no foreign remote shutdown, capped interruptible foreign reservations, clearance for bilaterals — agreed on paper by December but not in force. Breakaway capital neither rejected nor withdrew, seeking side-payments and power funding; Gulf fund kept bilateral channel open. Grid connections edged toward final decisions without permitting guarantees, control upgrades and unfunded segmentation drills continued amid ongoing low-level probing.

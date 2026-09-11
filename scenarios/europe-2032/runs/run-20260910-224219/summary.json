@@ -1,0 +1,149 @@
+{
+  "scenario": "Europe 2032 — Acceleration",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 68.5,
+    "openweight_capability": 61.5,
+    "ai_safety": 19.5,
+    "resilience": 36.0,
+    "eu_ai_sovereignty": 17.0,
+    "eu_political_capital": 19.0,
+    "public_sentiment": 29.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 32.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 40.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 50.5,
+        "ai_safety": 30.0,
+        "resilience": 36.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 32.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 63.0,
+        "openweight_capability": 54.0,
+        "ai_safety": 23.0,
+        "resilience": 34.5,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 27.0,
+        "public_sentiment": 35.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 65.5,
+        "openweight_capability": 58.0,
+        "ai_safety": 21.0,
+        "resilience": 37.5,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 23.0,
+        "public_sentiment": 31.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 68.5,
+        "openweight_capability": 61.5,
+        "ai_safety": 19.5,
+        "resilience": 36.0,
+        "eu_ai_sovereignty": 17.0,
+        "eu_political_capital": 19.0,
+        "public_sentiment": 29.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "ai_investment_collapse",
+    "bio_uplift_findings",
+    "capability_jump",
+    "cyber_test_shot",
+    "election_retrenchment",
+    "emergent_cyber_insurance_crunch",
+    "eval_anomaly_reports",
+    "knowledge_work_augmented",
+    "labour_displacement"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 2,
+      "id": "knowledge_work_augmented"
+    },
+    {
+      "turn": 3,
+      "id": "capability_jump"
+    },
+    {
+      "turn": 3,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 3,
+      "id": "labour_displacement"
+    },
+    {
+      "turn": 4,
+      "id": "ai_investment_collapse"
+    },
+    {
+      "turn": 4,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 4,
+      "id": "emergent_cyber_insurance_crunch"
+    },
+    {
+      "turn": 5,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 5,
+      "id": "election_retrenchment"
+    }
+  ],
+  "last_updated": "2026-09-10T22:45:48.839617",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_uninsured_care_diversion",
+      "description": "Municipal hospital ransomware cascade forces uninsured utilities to divert care and triggers emergency nationalizations of local grids in one or more member states.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_uninsured_hospital_cascade",
+      "description": "Municipal hospital ransomware cascade forces emergency patient diversions across two member states after cyber cover withdrawal leaves unhardened sites exposed.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-10T22:45:51.982472"
+}

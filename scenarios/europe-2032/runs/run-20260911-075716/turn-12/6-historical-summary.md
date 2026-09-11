@@ -1,0 +1,5 @@
+Second automated extortion wave in February re-locked hastily reconnected backups, re-closing town halls, returning prescription paper, forcing grid operators to prolonged reduced pace ring-fencing therapy wards; Brussels recovery cell on emergency powers held but lagged, ENISA-pooled clean backups aided large cities while smaller waited, partner telemetry aided diagnosis but showed defenders behind machine-made tooling, attribution dragged.
+
+Finance reset blocked rebuild: cancelled data-centres stayed cancelled, commercial compute gone, no replacement capacity as frontier labs trained less and Washington inward; Brussels banked completed Gigafactory capacity, spent EuroHPC on rebuilds, did not re-bid. Wage-insurance/short courses continued via ministries/universities with lengthening queues; cures continued but polls still tied them to outages and joblessness.
+
+Some towns left manual switches in place, unconfirmed refusals to reconnect; no forced reconnection, funding for supervised checks to avoid third sweep. Taiwan exercises raised shipping insurance, noted in Brussels as freight costs and supply-chain memo.

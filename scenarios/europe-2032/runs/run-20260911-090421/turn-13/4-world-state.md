@@ -1,0 +1,10 @@
+### The autumn the machines stopped coming
+July began with queues still moving and ended with ports still full. The automated ransomware sweep hit first — municipal billing, two hospital groups, a logistics software update all encrypted within days. ENISA restoration cells worked off last year's playbooks, isolating warehouse carrier fleets and forcing utilities to patch. Services degraded but did not stop; evening clinics ran on paper for a week.
+
+Then the Strait went quiet. No advanced chips left the island. Overnight every server order, every backup gigafactory plan, every hosted inference expansion became a rationing question. Brussels moved export licensing for lithography, optics and materials into a common regime and sat ASML, Zeiss and suppliers down with American, Japanese and Dutch partners to trade continuity for continuity. Clinical inference, grid control and municipal restoration went first; commercial training went last.
+
+The money ran out at the same time. Private AI finance collapsed — valuations halved, build-outs cancelled, two co-location deals the Commission had counted on evaporated. Concrete already poured kept curing, but nothing new was financed.
+
+Against that, two things helped. The absorption fund that had cleared in spring finally paid first wage-insurance tranches to frozen logistics and graduate cohorts, and retraining places filled even where trainers were borrowed. And laboratories adopted a new interpretability check that made deployed assistants measurably more predictable; the AI Office fast-tracked it into clinical and permit models, and doctors noticed fewer strange refusals.
+
+Relief did not survive. By December polls showed dread back on top: shorter oncology waits remembered, but empty robot halls, repriced shifts and headlines about dependence on foreign stacks dominated. One member state still withheld its share of the absorption co-funding, offering to pay only if its hospitals were first in the chip queue.

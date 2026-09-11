@@ -1,0 +1,5 @@
+US released new model family making benchmarks dated; tightened chip/model licences, European institutional quotas rationed harder, delivery slipped. Lyon/Gdansk hospitals stuck on slower EU-hosted fallback with manual double-checks, higher errors; degraded diagnostics and cut-off assistants continued, stockpiles rationed to therapy queues, services held but worsened.
+
+Second welfare/insurance review widened scandal: seconds-long approvals, unread logs, lawful outside 2024 high-risk categories. Commission paid first redress tranches via social funds as new queues formed. Restrictionists fused affair with fenced sites; graduate protests blocked site road, police cleared, rumours of coordinated shutdowns unconfirmed.
+
+Placements grew slightly only in dividend cities as care/desk aides and night guards. Brussels husbanded resources to finish continuity and redress, no new initiatives — holding action as capability leapt and supply narrowed, trust fell further.

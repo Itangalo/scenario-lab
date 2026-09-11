@@ -1,0 +1,7 @@
+ENISA declared the Cyber Shield Surge complete in October: patching and swarm detectors became standard in ports and municipal networks, stopping the autumn ransomware wave in Lille and Gdansk in hours, though southern regions with delayed telecom maintenance still went dark. Cross-border cascades stopped; Brussels claimed vindication amid cost complaints.
+
+Tailored cancer therapies continued via joint procurement in French and Polish wards with provenance and oversight, delivering strong outcomes and growing queues — entrenching dependence on Atlantic-hosted models. The breakaway capital stayed grudgingly in; two others still questioned obedience.
+
+Washington and Beijing signed a limited risk accord on weights security and bio-escalation with thin verification; frontier developers kept shipping more autonomous, longer-planning models with late notice to European evaluators, though pace eased. The Commission sought observer-plus status offering supply-chain and standards coordination; US and China deferred terms while Council mandate talks dragged.
+
+Work shifted to augmentation with stable employment overall, but hospital triage and logistics automation around new therapies drove both relief and resentment.

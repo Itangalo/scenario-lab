@@ -1,0 +1,5 @@
+By 2029-2030 Brussels built offline kits, telemetry-tied funds, and pooled cyber/bio sharing, but twin ransomware/agent failures, insurer freeze, stalled Gigafactories, chip blockade and lawful-harm welfare scandal left a telemetry divide and frozen civic AI; late 2030 accession stalled unfunded and winter sweep left sharers and outsiders equally dark on local backups.
+
+Winter 2031 chokepoint fight: Washington widened servicing/spares demands on older lithography via US-content rules, shipments/service slowed; Brussels answered with coercion examination, national authorisation and joint-decision demand — Hague welcomed cover but judged compensation thin, no new money; Tokyo/Seoul made no commitment, US read as obstruction and compute-access talks stalled; no blanket cut signed but servicing thinned as engineers deferred travel.
+
+Only delivery was funded accession to pooled threat response with liaisons and common formats: isolation drills faster, reports in days, but no machine-speed warning, paired in press with dark January clinics. Triage islands held where deployed, wider roll-outs frozen, mood soured on dependence without leverage.

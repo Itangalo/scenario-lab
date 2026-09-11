@@ -1,0 +1,5 @@
+US frontier AI access was revoked by nationality, disabling triage, dispatch and port helpers during a machine-assisted modified-agent outbreak. Containment lasted weeks with limited casualties via sequencing, wastewater monitors and emergency cross-border alerting.
+
+Degraded continuity held through municipal backup kits, paper-to-digital packs and embedded EU cyber repair teams; emergency European-hosted open models replaced lost functions with uneven results. Repeated AI-written re-infections jammed appointments, backups and ports after clearing.
+
+No new Gigafactory money voted, sites kept warm; no retaliation to further US chip-tool servicing curbs. Trust fell on outages and bio-scare; unease grew over unexplained system behavior. Brussels reframed pledge as keeping clinics, dispatch and ports running without the frontier provider.

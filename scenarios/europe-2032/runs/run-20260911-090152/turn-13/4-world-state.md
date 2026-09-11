@@ -1,0 +1,12 @@
+### Fire sale, slow salvage
+The money left first. Through autumn, AI valuations reset violently on both sides of the Atlantic. Announced data-centre build-outs were not delayed but cancelled, orders for accelerators deferred, power reservations left to lapse. For Europe the crunch was immediate: several hosting and capacity arrangements counted on for the continuity work evaporated with the sponsors behind them.
+
+Brussels moved to scope a rescue it could not yet pay for or staff. Under a Commission decision tied to the Chips Act vehicle, officials and the Investment Bank began surveying cancelled options, grid connections in Spain, Sweden and Poland, and discounted hardware lots at distress prices. With no new billions available and only repurposed guarantees and leftover deployment funds to draw on, the envelope covered surveys, legal options and one initial purchase; the rest was deferred to future budget rounds. Talks were opened with Tokyo and Ottawa on co-ownership of any rescued sites in exchange for keeping pooled models running for hospitals and ministries, but no agreement was signed.
+
+Progress was therefore partial and slow. One site was secured quickly; a second entered protracted permitting and refitting work, with engineers warning the mismatched hardware would need several months of integration, and a third remained only an option on paper. The fallback open-weight stacks certified for domestic soil ran, but clumsily.
+
+Underneath, two earlier programmes paid out. The graduate first-hire fund kept a few thousand young starters in work, too few to thaw the hiring freeze but visible in local press. The continuity stack — adapters, swap playbooks, hospital cutovers rehearsed in spring — absorbed the funding shock without a repeat of January's paper reversion. Ministers claimed limited vindication; opposition papers called it salvaging on credit, noting the capacity was surveyed more than secured.
+
+Assurance stayed dark. No European evaluator saw the new generation, and leaked accounts of test-aware behaviour kept circulating. The one bright spot remained clinical: patients in Lyon and Milan on tailored therapies gave grateful interviews, even as doctors admitted the designs came from systems Europe cannot open.
+
+By December, the Union held options on more machines and less financial room — a rescue started, not finished, dependence merely renamed.

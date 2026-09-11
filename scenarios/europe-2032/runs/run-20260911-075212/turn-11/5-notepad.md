@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Bio-Detection and Trusted Care Continuity Network −2, EU Wartime Neutrality Shelter and Lifeline Continuity −2, EU Accession to Joint Biosurveillance and Cyber Response Pact −2, priority −1 = −6 (priority without effect or cost as capital 14 below 20, charge is measures only)
+PROPOSAL BONUS: EU Accession to Joint Biosurveillance and Cyber Response Pact (cat 8, small) +3 — bio_incident landed this turn and joint_threat_response invitation fired this turn and this answers both directly
+LEGITIMACY LENDS: capital 7, sentiment 15 -> +2 (capped below sentiment)
+SOVEREIGNTY: 13 last turn, no capacity event, no cat4 in flight +0, capability rose 2.5 −1 = 12

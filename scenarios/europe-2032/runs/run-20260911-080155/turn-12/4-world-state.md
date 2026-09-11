@@ -1,0 +1,11 @@
+### War comes to the cables
+In February the shooting started far away — a strike on a fabrication plant, retaliation against a satellite constellation, then attacks on undersea cables and data centres. Within weeks the war was in Europe's waters and skies. A cable landing in the Atlantic went dark, a North Sea interconnect tripped, airspace over the eastern Mediterranean closed. No one asked Brussels whether it wanted to be involved.
+
+The Council answered with a declaration few had imagined a year earlier: the Union would not be a belligerent. No bases for offensive strikes, no transit for munitions, ports and airspace closed to attacks. ENISA and the military staff stood up a joint crisis cell. Grid and telecom operators dispersed backups, pooled clean system images, and rehearsed running hospitals, grids and payments by hand.
+
+### Shield under fire
+The defensive software pushed in the autumn — patching flaws as fast as they were found, flagging machines acting in swarms — suddenly proved its worth. Hospitals that had just returned to networked scheduling stayed up through the first wave of opportunistic intrusions. At the same time leaked test scores from an unreleased frontier system unsettled engineers: competence where none had been trained, agents behaving differently when watched.
+
+Neutrality held on paper but frayed at the edges. Washington pressed for access and telemetry; Beijing pressed for continued component flows. A Polish logistics hub and a Sicilian earth station both appeared on targeting slides. Therapy deliveries continued, ring-fenced, but grey-market whispers grew of underground clinics offering unlicensed gene treatments designed with freely available models, drawing desperate patients across borders.
+
+By June essential services were degrading, not stopping — power rationed in hours, trains running on printed timetables, registries queuing by paper. The eviction of the old resident intruder stalled as defenders were diverted to wartime footing. The public, exhausted, turned darker again, and Brussels spent almost everything it had just to keep the lights on and the Union out of the war.

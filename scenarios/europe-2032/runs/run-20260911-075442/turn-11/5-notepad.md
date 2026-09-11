@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Bio-Detection and Trusted Care Continuity Network −2, EU Wartime Neutrality Shelter and Lifeline Continuity Operation −2, EU Lifeline Accession to Joint Cyber-Bio Response and Middle-Power Supply Bloc −2, priority −1 = −6 (priority without effect or cost as capital 15 below 20, charge is measures only)
+PROPOSAL BONUS: EU Lifeline Accession to Joint Cyber-Bio Response and Middle-Power Supply Bloc (cat 8, small) +3 — cyber sweep and bio-design precursor fired this turn and this answers them directly
+LEGITIMACY LENDS: capital 17, sentiment 20 -> +2
+SOVEREIGNTY: 13 last turn, no capacity cat4 finishes, no cat4 in flight +0, middle_power_coalition t11 +2, capability rose 2.0 −1 = 14

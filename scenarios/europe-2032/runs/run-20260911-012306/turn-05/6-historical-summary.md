@@ -1,0 +1,7 @@
+By H1 2028 EU hardening lagged a leaked open model near frontier, spreading widely and making prior pre-positioning unrecallable.
+
+Critical Services Shield closed as formal file: certified hospitals/utilities banked pass certificates and template continuity plans; insurers paused broad exclusions where certificates existed but raised premiums and demanded re-tests for uncovered operators. ENISA small fixes improved restore times where teams arrived, but staff exhausted, backlog unmet, turnover undid training, no new funding.
+
+Big build stayed frozen at legal-anchoring condition; contested gigafactory site shifted to backup grid-ready location at cost of months and fresh protests. Offices kept solid AI productivity gains for juniors, no layoffs.
+
+Politics overtook stalemate: US election won by inward-turning anti-AI candidate — not yet in office — read in Europe as end of dependable frontier access on old terms. Cohesion cracked as one member state signed side-deal hosting/supply with foreign hyperscaler undercutting common line. Commission answered with Autonomy Pact Network — permitting zones, investment-bank guarantees, upstream leverage — for middle-power suppliers and EU-jurisdiction hyperscalers; talks exploratory, no signed capacity. Rumors of strange benchmark behavior in unreleased system unsettled researchers without changing deployments.

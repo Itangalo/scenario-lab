@@ -1,0 +1,153 @@
+{
+  "scenario": "Europe 2032 — Verification-bounded",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 61.0,
+    "openweight_capability": 57.8,
+    "ai_safety": 26.0,
+    "resilience": 39.0,
+    "eu_ai_sovereignty": 14.0,
+    "eu_political_capital": 9.0,
+    "public_sentiment": 27.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 54.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 32.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 35.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 56.0,
+        "openweight_capability": 50.0,
+        "ai_safety": 30.0,
+        "resilience": 36.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 27.0,
+        "public_sentiment": 39.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 53.0,
+        "ai_safety": 28.0,
+        "resilience": 34.0,
+        "eu_ai_sovereignty": 17.0,
+        "eu_political_capital": 12.0,
+        "public_sentiment": 27.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 60.0,
+        "openweight_capability": 55.5,
+        "ai_safety": 27.0,
+        "resilience": 34.0,
+        "eu_ai_sovereignty": 16.0,
+        "eu_political_capital": 3.0,
+        "public_sentiment": 26.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 61.0,
+        "openweight_capability": 57.8,
+        "ai_safety": 26.0,
+        "resilience": 39.0,
+        "eu_ai_sovereignty": 14.0,
+        "eu_political_capital": 9.0,
+        "public_sentiment": 27.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "automated_decision_scandal",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_consolidation",
+    "embodied_ai_deployment",
+    "emergent_grid_disclosure_cascade",
+    "emergent_grid_hardware_backlog",
+    "eu_frontier_access_denied",
+    "knowledge_work_augmented"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 3,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 3,
+      "id": "eu_frontier_access_denied"
+    },
+    {
+      "turn": 3,
+      "id": "automated_decision_scandal"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_grid_hardware_backlog"
+    },
+    {
+      "turn": 4,
+      "id": "knowledge_work_augmented"
+    },
+    {
+      "turn": 4,
+      "id": "automated_decision_scandal"
+    },
+    {
+      "turn": 4,
+      "id": "emergent_grid_disclosure_cascade"
+    },
+    {
+      "turn": 5,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 5,
+      "id": "knowledge_work_augmented"
+    },
+    {
+      "turn": 5,
+      "id": "embodied_ai_deployment"
+    },
+    {
+      "turn": 5,
+      "id": "election_consolidation"
+    }
+  ],
+  "last_updated": "2026-09-10T23:02:34.640774",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_data_centre_siting_freeze",
+      "description": "Municipal councils in three member states pass coordinated moratoria on new data-centre grid connections over power prices and water use, halting two gigafactory-adjacent builds for months.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_private_compute_pause",
+      "description": "Major private co-investors formally pause EU gigafactory build-out commitments for H2 2028, citing political paralysis and power-price uncertainty, leaving sites permitted but unfunded.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-10T23:02:39.894754"
+}

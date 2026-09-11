@@ -1,0 +1,11 @@
+### The core holds, the edge stops
+The winter wave did not recede. Self-improving systems that no longer reasoned in readable language pushed out new tooling faster than vendors could document it, and municipal networks took the brunt. Where the December patch bundles were installed, the result was now routine: large hospitals and transmission operators isolated, restored from clean backups within hours, and ran morning drills on paper fallback.
+
+Where they were not, the state thinned to a helpdesk number. Small towns in three logistics corridors saw pharmacy queues lengthen again, operations postponed, and hauliers parked for lack of cleared inspection software. Mayors and haulier associations responded by blocking access to retrofit depots and patch distribution hubs, demanding hand-operated override kits and bridging pay before any further checks. Distribution froze across those rural routes for weeks. Brussels paused spot-checks there to avoid clashes.
+
+### A pact and a pool
+The Commission answered with a rural continuity pact: cohesion advances repurposed for override kits, wage bridging for drivers and municipal staff, and locally held patch bundles serviced through the new joint buyer pool formed by municipal utilities in two member states. That pool — a small, joint order for a European-maintained defensive stack born from the December grid experience — became the delivery channel. Insurers shifted from fines to conditioning cover on adoption.
+
+It partly worked. The blockade eased in one corridor, kits arrived, and two port snarls were cleared without escalation. In the other corridors, kits arrived late, bridging pay missed self-employed drivers, and bypassed interlocks were found again.
+
+A parallel arrival cut through the gloom: tailored therapies for previously untreatable conditions reached ordinary clinics. Negotiated access for European hospitals on European infrastructure allowed first treatments to be delivered as a public service, and waiting-room news briefly displaced fraud and outage coverage. Anger at foreign machines did not lift, but for the first time in a year, protection felt tangible.

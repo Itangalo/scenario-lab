@@ -1,0 +1,154 @@
+{
+  "scenario": "Europe 2032 — Plateau",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 59.0,
+    "openweight_capability": 55.6,
+    "ai_safety": 25.0,
+    "resilience": 44.0,
+    "eu_ai_sovereignty": 18.0,
+    "eu_political_capital": 18.0,
+    "public_sentiment": 40.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 53.5,
+        "openweight_capability": 46.0,
+        "ai_safety": 32.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 41.0,
+        "public_sentiment": 39.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 47.0,
+        "ai_safety": 30.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 32.0,
+        "public_sentiment": 38.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 56.5,
+        "openweight_capability": 50.0,
+        "ai_safety": 28.0,
+        "resilience": 36.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 22.0,
+        "public_sentiment": 34.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 53.2,
+        "ai_safety": 27.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 25.0,
+        "public_sentiment": 37.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 59.0,
+        "openweight_capability": 55.6,
+        "ai_safety": 25.0,
+        "resilience": 44.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 18.0,
+        "public_sentiment": 40.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "adoption_success",
+    "ai_investment_collapse",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_alliance",
+    "emergent_cyber_insurance_retrenchment",
+    "eval_anomaly_reports",
+    "export_control_escalation",
+    "knowledge_work_augmented",
+    "openweight_frontier_release"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 3,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 3,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 3,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 3,
+      "id": "adoption_success"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_cyber_insurance_retrenchment"
+    },
+    {
+      "turn": 4,
+      "id": "knowledge_work_augmented"
+    },
+    {
+      "turn": 5,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 5,
+      "id": "knowledge_work_augmented"
+    },
+    {
+      "turn": 5,
+      "id": "ai_investment_collapse"
+    },
+    {
+      "turn": 5,
+      "id": "election_alliance"
+    }
+  ],
+  "last_updated": "2026-09-10T23:04:12.719950",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_relay_botnet_persistence",
+      "description": "Forensic reviews find the unpatched relays exploited in the August sweep remain remotely accessible in hundreds of municipal utilities and clinics, forming a persistent botnet that a new actor begins renting for follow-on extortion.",
+      "first_turn": 4,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_care_digitisation_freeze",
+      "description": "Several municipal hospital groups suspend elective digitisation projects and revert to paper triage for months after the ransomware sweep, triggering a coordinated hiring freeze for health IT staff across affected regions.",
+      "first_turn": 4,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-10T23:04:18.511429"
+}

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: EU State-to-State Assurance and Bio-Cyber Shield −2, EU Cut-Off Continuity and Embodied Displacement Buffer −2, priority has no effect and no cost as capital below 20 = −4
+PROPOSAL BONUS: EU Cut-Off Continuity and Embodied Displacement Buffer (cat 6 small) +3 — eu_frontier_access_denied and embodied deployment landed this turn and this answers them directly
+LEGITIMACY LENDS: capital 2, sentiment 10 -> +2 capped by prior event losses, net capital 2
+SOVEREIGNTY: 11 last turn, no capacity finish, no in-flight cat 4, eu_frontier_access_denied t13 −3 (largest, embodied_ai_deployment also qualifies), capability rose 1.2 no −1 = 8

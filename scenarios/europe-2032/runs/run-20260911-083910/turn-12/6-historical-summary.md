@@ -1,0 +1,5 @@
+By mid-2032 a machine-written supply-chain attack via dispatch software crippled hospital IT, dispatch and pharmacy ordering in three countries, forcing a return to paper triage, radio dispatch and manual rationing.
+
+No new law or fund followed; existing repair rosters responded with isolation, offline-backup rebuilds and patching. Emergency departments stayed open and the newly finished Fallback Care and Bio-Response Corps sustained staffing and sequencing through the weeks-long outage, but confidence eroded further.
+
+In parallel, joint procurement cleared a second small batch of therapy protocols for EU-hosted open models, reaching a few dozen more clinics — symbolic relief with waiting lists unmoved. The breakaway member state expanded its separate foreign deal, citing Brussels' failure. Survival held degraded; common strategy remained fractured.

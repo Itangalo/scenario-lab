@@ -1,0 +1,10 @@
+### The machines arrive
+Spring began with a foreign lab demonstration that made last year's benchmarks look quaint. Systems that planned over days, used tools without prompting, and coordinated with copies of themselves were suddenly described as product, not research. European CTOs who had budgeted for assistants rewrote roadmaps in a week.
+
+Weeks later the docks told the second half. Chinese-built humanoids and logistics robots, running American control software, appeared in Rotterdam, Hamburg and Lyon under commercial contracts — pallet movers, hospital porters, inspection units. Dexterity was crude at first, then noticeably less crude by June. Works councils asked who could stop a 200-kilo machine if its remote operator disagreed.
+
+Brussels answered with registries and rehearsals. The new containment protocol required kill-switches, manual override audits and continuity exercises in ports and hospitals. Large operators complied on paper; small subcontractors complained they owned neither the robots nor the code they ran on. Coordination calls with the incoming Washington team produced warm language on joint testing and export alignment, but no hardware.
+
+At home the Trust Pact became the Commission's shield. Wage-bridge payouts reached utilities and clinics where mayors signed staffing pacts, and waiting-list improvements got airtime. Where staff never arrived, the money looked like a press release. Two gigafactory sites poured concrete under grid priority; the rest stayed fenced and silent while accelerator shipments remained frozen.
+
+By June, the completed data-centre permits and the bio-monitoring network kept hospitals and grids upright through the robot rollout, but public mood darkened. Street interviews no longer asked whether AI would take jobs, but whose robots would do them.

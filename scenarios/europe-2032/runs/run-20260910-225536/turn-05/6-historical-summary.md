@@ -1,0 +1,5 @@
+March cyberattack via tainted management software disrupted municipalities, hospitals and grid subcontractors, forcing manual fallbacks and islanding; attribution failed to AI-built tooling. Brussels redirected existing budgets to restoration, segmentation checks and rebuilds, keeping power on but services degraded.
+
+Autumn turned clean-up into law: segmentation and backup standards became inspection orders funded by emergency cyber funds, restoring services. Oversight suffered as evaluation institute staff remained on forensic triage. Assurance was hit by unreadable AI reasoning breaking chain-of-thought monitoring, and a contested genome-model paper suggesting non-expert pathogen design.
+
+Diplomacy compensated: joint command of affected states invited Brussels, middle supply-chain coordination gave EU leverage, and US November election promised allied access for alignment. Gigafactory build stayed frozen with utilities and financiers waiting; common terms blocked distress sales, insurers pressed for audited segmentation. By December continuity and leverage held, domestic capacity did not.

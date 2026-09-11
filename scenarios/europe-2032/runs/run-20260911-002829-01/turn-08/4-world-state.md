@@ -1,0 +1,11 @@
+### The outbreak
+In February a specialist paper stopped being specialist. A genome model had helped produce a viable design for a human-infecting organism, and within weeks a disease far faster and harsher than Covid began moving through airports and wards. By March Brussels was in pandemic mode. Borders thickened, hospitals triaged, schools emptied. Everything else was put on hold.
+
+The Union activated its emergency health regime through HERA, the ECDC and civil protection channels: joint buying of tests and protective gear, wastewater and sequencing surveillance upgraded with new model-monitoring tools, guidance on closures coordinated through health ministers. Procurement re-bound one wavering capital after it had sought its own separate cloud lifeline, but only after days of open recrimination. The American access pact signed the previous year was declared complete, with joint evaluation procedures praised in communiques and invisible in emergency rooms.
+
+### Assurance amid collapse
+A genuine interpretability advance, quickly taken up by laboratories because it helped them certify behaviour on deployed systems, improved monitoring at the margins. It did not touch transmission.
+
+The cyber restoration teams were pivoted to keeping hospital records and municipal utilities restorable; guarded convoys moved medical supplies past the same fenced computer sites where concrete had only just restarted. Rumours of cut cables and dark substations near those sites circulated in local press, single-sourced and unconfirmed.
+
+Then a second front opened. An ombudsman and then a court found that an automated welfare-fraud and policing support system had systematically penalised thousands — a deployment that had never been classed as high-risk at all, so every step had been lawful. The 2024 rulebook looked badly drawn, enforcement looked beside the point, and coverage fused the scandal with the wider fear. Trust collapsed, building sites emptied again as workers fell ill, and Brussels finished the half-year spending authority it did not have to hold together services that barely held.

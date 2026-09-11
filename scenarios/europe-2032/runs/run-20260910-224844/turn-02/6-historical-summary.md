@@ -1,0 +1,7 @@
+Autumn grid intrusions across three continents mapped protection systems and stole breaker credentials without causing disruption; defensive isolation caused blackouts, fueling fears of a state-backed rehearsal and debate over false segmentation.
+
+The Commission responded with a gigafactory drive (4-5 sites, guarantees, EIB co-financing, fast-track permits, EU anchoring to avoid repeat of June US switch-off) and a Critical Services Shield (mandatory reporting, drills, joint detection), trading EU-funded hardening for interior ministers' cooperation. By December funds were committed but permits contested and concrete unpoured, leaving attackers with system knowledge.
+
+In February the leading American model cut off European users without warning, hitting hospital pilots, ministries and firms. Emergency Continuity Stack on pooled EuroHPC/cloud capacity partly covered simple workloads but degraded tuned ones; gigafactory regions clashed over grid priority after cold-snap load-shedding, and insurers demanded segmentation audits utilities couldn't meet.
+
+Simultaneously, an automated social-insurance system was found to have systematically cut vulnerable claimants via rubber-stamped recommendations despite compliant paperwork. Commission enforcement and audits failed to contain public backlash, collapsing trust and undermining acceptance of European models. By spring gigafactory investment inched forward but permits and construction stalled, leaving Europe half-bridged and vulnerable.

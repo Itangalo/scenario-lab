@@ -1,0 +1,7 @@
+Winter's second US cutoff broke rebuilt hospital and ministry workflows; the EU-hosted Continuity Stack ran as funded failover — vindication in Brussels, degraded service in wards. Washington tightened chip/model export licensing; allied licences held but quotas stretched lead times, pooled stockpile and freight covered weeks.
+
+A voice/video-clone fraud wave cost banks and administrations hundreds of millions before transfer delays, fraud-signal sharing and signature wallets slowed losses, eroding trust in digital services.
+
+By autumn both shields were declared operational: Critical Services Shield contained a rail ransomware attempt without closures and kept a hospital group up on pooled backup; Authentication Shield became priority with bank delays and wallet rollout. Gigafactory guarantees and sovereignty package stayed paper with EIB cover, no private cash.
+
+In November America elected a president pledging to ration advanced AI by country tier under security review; no new cutoff yet, but ministers shifted from negotiation to withstanding coercion. Trust fell further, insurers excluded AI fraud/outage from standard policies. Commission husbanded resources, promising renewed independence drive next year without new instrument.

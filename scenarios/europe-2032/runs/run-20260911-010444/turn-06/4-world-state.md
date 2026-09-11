@@ -1,0 +1,10 @@
+### The patch and the crack
+January brought a double jolt to European labs. A leading developer demonstrated a system that wrote, broke and fixed code for hours without pause, and within weeks a near-equivalent weight set was freely downloadable. Municipal IT staff watched exploit scripts improve in real time. At the same time, model vendors confirmed their newest systems no longer reasoned in readable words. Safety teams that relied on inspecting step-by-step traces found the window shut.
+
+Brussels answered with what it had. The continuity apparatus built in 2028 — offline backups, reserve licences, conditional reinsurance — was pushed out to towns and hospitals under a new containment effort. Health and cyber agencies tied payouts and equipment to live sharing of network data and sequencing feeds through the allied joint command. It worked in part: spring intrusions degraded clinics and city networks for days but did not cascade. Engineers privately admitted they were absorbing blows they could no longer foresee.
+
+The sovereignty front fared worse. The long-negotiated permitting and investment package for European computing finally took legal effect, unlocking grid priority for one gigafactory site while a second stayed frozen in court. Before the ink dried, a member state unveiled its own supply deal with a foreign hyperscaler on terms that undercut the common bargaining line. The Commission threatened to withhold recovery funds and pointed to Japanese and Korean servicing offers as an alternative, but the deal held. Newspapers called it every capital for itself.
+
+Washington offered no cover. The new administration, elected on classroom bans and job guarantees, turned inward to moratorium fights at home. European officials found meetings postponed and joint evaluation work stalled.
+
+Public mood soured further. Assistants remained popular at work, but headlines about unreadable models and unscreened DNA synthesis kits left most citizens ambivalent and distrustful.

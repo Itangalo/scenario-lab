@@ -1,0 +1,10 @@
+### Queues, Sequences and Small Wins
+July opened with the same images: paper tickets in town halls, appointment screens dark in two regions after the spring credential theft. Reserve teams from Estonia, France and Germany fanned out again with clean images, and by August most registries were back. What changed was what people could see working.
+
+Clinics running European-hosted triage assistants, limited to sorting and recall, cut backlogs in three pilot networks. In Denmark and Portugal waiting lists for routine follow-up fell by weeks; nurses credited staff guarantees that kept wards open while systems were rebuilt. The Commission fast-tracked overdue wage top-ups and tied retraining vouchers to placements in hospitals, registries and grid operators — still late in the south, still called too small by unions, but money finally reached pay slips.
+
+Two shocks from outside framed the autumn. In September a published genome-model study claimed a non-expert could be guided toward a viable human-infecting design. Methodologists quarrelled over methods and over publication itself, and the debate stayed largely inside biosecurity journals. Brussels treated it as a warning and pushed pooled sequencing reagents and hardened logistics through the health emergency apparatus.
+
+The second was brighter. A European materials laboratory, using constrained AI search, demonstrated long-life alloys for grid switchgear and implants — a genuine advance, celebrated by engineers, with orders discussed for the next two years. It did not fill empty machine halls in Paris and Warsaw, where power and cooling still hummed for missing accelerators, and American systems that plan over days and rewrite their own pipelines remained far beyond what European re-runs could copy.
+
+By December blame had softened but not lifted. Graduate hiring stayed frozen, sorting machines spread in German and French warehouses amid marches, and the new bio-detection network existed mostly as seed contracts. Yet for the first time in two years voters saw a European service improve because a European decision had been made.

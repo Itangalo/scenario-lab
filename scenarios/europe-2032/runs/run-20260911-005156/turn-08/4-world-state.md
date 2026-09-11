@@ -1,0 +1,11 @@
+### The shield and the machines
+Brussels sold the spring as protection. The new Transition Shield promised wage insurance and six-month retraining vouchers for clerks, accountants, support staff and logistics workers, paid partly by a levy on large automation deployments. Unions were given seats on the allocation board. EPSCO communiques spoke of certified-safe European placement tools. On the ground, employment agencies began registering applicants, but payouts were months away and employers lobbied the levy into consultation.
+
+Meanwhile the machines arrived. Chinese warehouse humanoids that had marched beside protesters in Duisburg were joined by new logistics and light-assembly models, dexterous enough for picking, packing and basic fitting. Prices undercut European integrators. Two industrial groups quietly ordered fleets while applying for Shield co-financing to retrain the workers replaced. DG TRADE prepared anti-dumping files but held back, fearing retaliation on chips and transformers.
+
+### Light in the black box
+The interpretability advance came from American labs and spread because they wanted it. For the first time evaluators could certify properties of deployed assistants rather than argue from test scores. The EU Evaluation Institute and ENISA rushed it into clinical and grid checklists frozen after unreadable reasoning. A few hospital triage pilots were restored under human sign-off; grid operators cautiously re-enabled advisory modes.
+
+It did not restore trust. Press coverage paired the breakthrough with reminders of autumn's bio escape and the runaway dispatch agent. HERA kept its bio containment cells on standby, and the emergency regime formalised this spring gave ministers new powers to ration power and sequence samples. Postponed-care lists shortened only slightly.
+
+The joint licensing pool frayed further. The large member state kept its separate hyperscaler arrangement, arguing American models plus new safety certification beat European substitutes. Gigafactory halls in Paris and Warsaw ran older accelerators on rationed power, celebrated without celebration.

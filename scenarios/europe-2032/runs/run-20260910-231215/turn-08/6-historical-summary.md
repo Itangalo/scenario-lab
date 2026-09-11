@@ -1,0 +1,5 @@
+US cut European access to leading American model, disrupting hospitals, ministries and exporters; fallback to thinly-staffed gigafactories and newly operational Distributed Capability Shield held routine loads but sagged at peaks, night-shift cover prevented hospital care failures.
+
+Graduate/entry hiring froze in law, accountancy, junior software, customer ops and admin due to assistants; Brussels responded with income bridging, retraining vouchers, SME hiring incentives part-funded by levy on large automating employers — unions kept veto, business used subsidies despite protest.
+
+Counterweights: university hospitals cut waiting lists with European-run scheduling tools (partly on open weights), and Dresden-Grenoble AI-assisted materials breakthrough on solid-state interfaces hailed as landmark with battery cost implications. Offices reframed AI as transition again, not destination.

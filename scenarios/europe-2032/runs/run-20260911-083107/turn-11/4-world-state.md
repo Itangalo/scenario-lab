@@ -1,0 +1,10 @@
+### Winter on substitutes
+Autumn brought a second abrupt cutoff. European hospitals, city administrations and port operators using the leading American model family found access withdrawn at short notice, with no reason given and no appeal. Triage helpers, dispatch assistants and customs paperwork tools went dark for a second time in a year. In wards that had kept paper fallbacks from the spring, staff switched within hours; elsewhere referrals and discharges stalled for days.
+
+Brussels chose not to escalate. Ministers re-endorsed continuity only, freezing factory votes, keeping future plant sites warm, and shelving any retaliation over maintenance curbs on chipmaking equipment. All effort went to the sovereign fallback stack: joint health procurement topping up locally hosted open-model packs for triage and prescribing, Union cyber teams staying embedded to rebuild booking and port systems from offline copies, municipal kits and clinic sentinels held on emergency footing.
+
+It held, barely. Mayors reported clinics and dispatch kept running through containment and through fresh waves of automatically tailored intrusions that pried open cleared systems again. The crews who stayed became the story of the winter.
+
+A genuine bright spot came from the laboratories. A new interpretability and control result — methods that let operators predict certain behaviours before they appear and certify properties rather than argue for them — was quickly folded into acceptance checks for the fallback systems by the AI Office and health regulators. Operators said the crude local models became noticeably more predictable and easier to audit.
+
+It did not restore trust. Queues, exhausted staff and the long pathogen inquiry dominated coverage, and coordinated physical protests at data-centre sites and depot yards delayed continuity works through autumn, reported at first as isolated incidents. Polls showed hostility softening only where services visibly stayed open. In Brussels the private line held: survive on substitutes until the fallback can hold through next winter, and ask for no new money until it does.

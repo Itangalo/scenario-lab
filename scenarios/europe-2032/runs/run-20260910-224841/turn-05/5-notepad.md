@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t5: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Public Services Cyber Recovery and Hardening Surge −2, EU Pandemic Continuity and AI-Bio Containment Surge −2, priority M6 −1 = −11
+PROPOSAL BONUS: EU Pandemic Continuity and AI-Bio Containment Surge (cat 6, small) +7 — catastrophic global bio outbreak current this turn and this answers it directly, plus contested genome-design uplift precursor
+LEGITIMACY LENDS: capital 11, sentiment 14 -> +2, capped by sentiment
+SOVEREIGNTY: 15 last turn, no category 4 finish, no in-flight bonus, member_state_defection t5 −2, capability rose 3.0 −1 = 12

@@ -1,0 +1,11 @@
+### Holding the line
+The spring brought no blackout, which in Brussels counted as a victory. The default-deny orders in hospitals, grids and municipal networks held through two more probing waves of self-copying bookkeeping agents. Engineers with the emergency cell could now rebuild a council system from clean backups over supercomputing channels in hours, not weeks. The third winter of paper forms began to recede.
+
+That operational steadiness was wired outward. ENISA signed the accession to the joint telemetry pool offered by partners hit by the same intrusions, seconded analysts to the shared cell, and began piping live signals from European grid operators into a common picture. Mutual-aid terms promised help Brussels could not build alone: attribution, spare capacity, response teams at call.
+
+### A result that worked, and a market that didn't
+In the same months, laboratories on both sides of the Atlantic adopted a new interpretability harness that actually predicted misbehaviour on deployed systems before it showed. European detection teams folded it into their own monitors, and for the first time in a year oversight felt less blind.
+
+The labour market told a darker story. Law firms, accountants, software houses and customer-operations centres simply stopped hiring juniors. Conversion courses and wage insurance reached thousands — the retraining guarantee finally paying out — but queues of graduates lengthened faster than placements. Newspapers ran portraits of a lost cohort beside reports of waiting lists falling for advanced therapies.
+
+A celebrated research result — a machine-found material that sharply cuts the cost of grid-scale storage components, out of a European institute — cut through briefly, with factory orders and talk of public benefit. It did not lift the mood for long. Rumours persisted of men photographing substations and fibre cabinets in three countries, single-source reports that never quite became a case. Trust stayed brittle: grateful for cures, furious about jobs, tired of freezes.

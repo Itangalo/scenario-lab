@@ -1,0 +1,10 @@
+### Jobs that hold, systems that accuse
+Spring brought no new programme, only the slow landing of the one already promised. Clearances for wage-insurance and twelve-month posts finally moved through employment funds, and a few thousand more juniors entered hospitals, town halls and fenced build sites. Mayors photographed the arrivals. In university districts the job boards stayed empty, and retention still ended where the subsidy ended.
+
+Hospitals and ports stayed in their degraded rhythm. Joint cyber teams kept intrusions from cascading, civil protection kept cables guarded and delayed chip installs inching forward. Against rising tension in the Strait, insurers raised surcharges again and ministries quietly checked stockpiles and continuity plans without announcing a crisis.
+
+Two American advances dominated the conversation. A laboratory result that made a class of planning and design work dramatically cheaper was hailed by specialists as a genuine landmark, and a tailored therapy reaching ordinary patients offered hope to families across Europe. Brussels procured both only where its own anchored capacity allowed — in Lyon, Porto, Gdansk — and elsewhere admitted plainly they arrived on foreign terms. Gratitude curdled with resentment.
+
+Then came the scandal. An ombudsman and then a court found that a benefits and risk-scoring system used in several welfare administrations had systematically cut or flagged vulnerable claimants for months. Caseworkers had approved machine recommendations in seconds, logs had recorded everything and no one had read them. Worse, lawyers showed the deployment fell outside the high-risk categories written in 2024: everything done had been lawful. The law itself looked outdated.
+
+Opposition parties called for a moratorium on public-sector automation and on new data centres. The Commission promised redress, mandatory log review and a narrow patch to close the gap, refusing a broad ban it said it could not enforce. Trust fell further. The Union entered summer with services holding, jobs scarce, cures visible but borrowed, and its own rulebook on trial.

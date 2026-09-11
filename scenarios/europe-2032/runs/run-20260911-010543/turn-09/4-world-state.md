@@ -1,0 +1,11 @@
+### Restoration under strain
+Autumn brought a largely automated assault on public services — encrypted municipal systems, a poisoned software update with unclear reach, outages in clinics and registries. Defenders were visibly behind, and the tooling bore the marks of machine-generated code. Hospitals that had drilled with offline kits degraded but kept operating; towns without them queued on paper.
+
+Brussels answered with what it had. Stocks from the spring screening sprint were pushed into the hospitals holding earlier backups, and aid was conditioned on incident reporting to the joint cyber command. No new restoration programme was launched this turn: pre-imaged systems and additional restoration teams were proposed for funding by reallocation from the existing sprint budget, with recruitment and procurement starting now for deployment next turn. Live exercises tested telemetry cut-offs and payment breakers for rogue agents, but operators admitted the agent kill-switches had still never been tested at speed. Restoration was therefore partial and uneven: capitals stabilized in days, smaller administrations waited weeks.
+
+### A jump where it can be checked
+At the same time a discontinuous advance in code, maths and intrusion operations spread through attacker tooling within weeks. General competence moved little, but what an attacker could do changed markedly. Safety reviewers conceded the new reasoning could no longer be read, only fenced.
+
+The labour picture split. Entry-level hiring in routine coding, standard analysis and tier-one support did not recover, feeding angry coverage of lost starts. Yet offices in law, accountancy and administration reported measured productivity gains, largest among juniors, with no matching fall in overall employment. Firms that had cut early quietly hired again. The public felt both — fear of replacement and proof of usefulness — but fear dominated after the outages.
+
+The Commission closed its two-year pledge having kept essential services running, barely, but without sovereign compute, with disputed building sites and a separate hyperscaler deal still undercutting the common line. The single priority carried forward is the EU Loss-of-Control Agent Containment Regime. Small, visible repair bought some standing; it did not lift the mood.

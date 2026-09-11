@@ -1,0 +1,11 @@
+### The frontier in every laptop
+Autumn brought a release no firewall could contain. A new openly downloadable model, only months behind the best closed systems, spread to hundreds of thousands of machines in days. For European hospitals and municipalities still running blander domestic assistants, the contrast was immediate and humiliating: the world had the frontier for free, while official stacks queued and censored.
+
+Clinicians kept the interpretability patch, and screening discipline held in the two regions scarred by spring. Pooled testing volumes stayed high, stockpiles were replenished, and no new chain restarted. The detection shield built over three years finally worked as designed. But surveillance maps stayed patchy — courts kept enforcement frozen while funding suits dragged on — and cyber watch over hospitals became routine rather than reassuring.
+
+### No hiring
+The harder blow was economic. Law firms, accountants, software houses and customer centres simply stopped hiring juniors. Graduate schemes vanished. Productivity figures, meanwhile, were good: studies showed offices doing more with fewer people, especially lifting the least experienced who remained. For those inside, the tools were finished and useful. For those outside, the pause looked permanent.
+
+Brussels answered with what little it could fund without a new law: wage-subsidised starter posts and retraining vouchers paid from repurposed social funds, conditional on firms keeping a human entry pipeline. Labour ministers toured job centres; mayors welcomed the first contracts. It was too small to move the numbers this year, and finance ministries made clear no fresh headroom would follow.
+
+Fallback care stayed open, queues longer, sabotage at frozen build sites now almost expected. Anger did not lift. If anything, visible competence elsewhere — better models abroad, higher output with fewer staff — made domestic compromise feel like managed decline. The Union held the line, but held it on blander machines, with emptier waiting rooms for young workers.

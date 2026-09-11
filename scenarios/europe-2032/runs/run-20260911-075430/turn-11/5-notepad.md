@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Bio-Detection and Trusted Care Continuity Network −2, EU Wartime Neutrality Shelter and Lifeline Continuity Operation −2, EU Rogue Containment and Lifeline Shield −2 = −6 (priority without effect or cost as capital 14 below 20, charge is measures only)
+PROPOSAL BONUS: EU Rogue Containment and Lifeline Shield (cat 6, small) +4 — catastrophic_loss_of_control_incident plus loss_of_control_incident plus bio_incident fired this turn and this answers them directly
+LEGITIMACY LENDS: capital 14, sentiment 20 -> +2
+SOVEREIGNTY: 17 last turn, no capacity event, no cat4 in flight +0, capability rose 1.0 −0 = 17

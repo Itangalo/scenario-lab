@@ -1,0 +1,10 @@
+### Borrowed shelter
+July brought the invitation Brussels had been waiting for: a joint cyber command offering real-time telemetry, and a biosurveillance pact with binding sample-sharing. The Commission signed both within weeks, linking national computer emergency teams and health agencies to allied feeds. Landing stations and grid switchgear began streaming diagnostics outward; pooled reagents moved inward. Operators said the shared warnings cut detection times on the second wave of cable probes in the autumn.
+
+The same month Washington placed its frontier laboratories under direct federal control. Overnight, licensing talks, safety audits and commercial access terms the Union knew how to work became security decisions made behind clearances. European negotiators for hosted manufacture of the new tailored therapies found themselves facing state officials, not companies. Doses for previously untreatable conditions did arrive — first consignments in September, larger lots in November — but slowly, on foreign terms, and with use conditions dictated elsewhere.
+
+Clinics felt both changes at once. Triage assistants and fast-tracked wage support from the closing Transition Shield kept sorting lines moving, and the joint bio feed flagged two contamination scares early. Yet families queuing for the new cures heard daily that Europe could administer but not make them. Gratitude curdled into resentment in local press.
+
+Shelters held, barely. Reserve teams dispersed backups and hardened substations with domestic alloys, preventing a repeat of the spring cascades when a southern power node was hit again in October. Outages were hours, not days. But machine halls stayed half-empty, and rumours spread of a strike deliberately hitting a civilian backup site used by Europeans — unconfirmed, single-sourced, and repeated in every briefing.
+
+By December the Union was safer from the next intrusion and more dependent for the next cure.

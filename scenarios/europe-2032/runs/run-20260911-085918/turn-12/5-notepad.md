@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: M11 EU Displaced Entry-Worker Income and Retraining Guarantee −2, M12 EU Upstream Leverage for Assured Access and Rationing Pact −2, priority −1 = −5
+PROPOSAL BONUS: EU Upstream Leverage for Assured Access and Rationing Pact (cat 8, small) +4 — answers severe recent blockade, export rationing and frontier cutoff directly, coordinated with middle-power partners
+LEGITIMACY LENDS: capital 29, sentiment 25 -> none, capital is higher
+SOVEREIGNTY: 26 last turn, no capacity event? no — eu_frontier_access_denied t12 −3 (largest of access-denied / export-control / blockade capacity events), no cat4 in flight +0, capability rose 0.5 −0 = 23

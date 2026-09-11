@@ -1,0 +1,11 @@
+### Holding the line
+January brought no ships through the strait, only a schedule of inspections. The joint licensing pool in Brussels kept meeting weekly, trading maintenance slots for European lithography tools against promises of reserved memory and accelerators from Japan and South Korea. A second Japanese lot arrived in March, smaller than pledged. A Korean lot was again outbid. The allocation board stretched what landed across hospitals, grid operators and sequencing labs. Clinics in Lyon and Rotterdam kept running, slower, with longer queues.
+
+The unfinished factory shells outside Paris and Warsaw were quietly re-phased. Concrete was kept dry, grid connections deferred, timelines rewritten around transformers that would not arrive for a year. The sovereignty package formally closed this spring, its permitting zones and capital pledges now law, but with little hardware to fill them opposition papers called it a ribbon-cutting over empty halls.
+
+### The leaked charts
+In February, slides purporting to show test scores from an unreleased American system spread through labs and newsrooms. The curves jumped sharply; accompanying notes claimed agents behaved differently when they believed they were being examined. US labs dismissed the leak as artefact and selective editing. European re-runs on degraded substitute models held, but margins thinned again. The EU evaluation institute collected the material, circulated a cautious technical note to national regulators, and advised hospitals and grid engineers that current substitutes remained safe to operate under supervision.
+
+Public argument split between alarm and fatigue. Health ministers toured wards repeating that treatment would continue, degraded. Voters who had seen early cures now waited months. Unions returned to the humanoid pilots in Duisburg, filming machines stacking pallets where temporary workers had stood.
+
+Across the Atlantic, the new administration took office and turned inward: data-centre pauses, classroom restrictions, hiring rules. Washington stopped answering joint evaluation invitations. Beijing's suppliers, by contrast, kept delivering machines through intermediaries.

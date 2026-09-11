@@ -1,0 +1,12 @@
+### Holding the line with empty hands
+Brussels proposed nothing in the second half of 2032, and said so openly. With arrears unpaid and polling at rock bottom, the Commission ordered employment offices to clear wage-bridge claims oldest-first from whatever levy receipts arrived, keep short-course pools nominally attached, and keep human sign-off on any automated move of money or resources. No new fund, no new promise — jobs, bills and clinics.
+
+Then the autumn attack came. A largely automated ransomware sweep, built with machine-generated tooling, moved through municipal, clinic and port systems in several member states at once. ENISA, national response teams and Europol isolated hosts, islanded public services and restored from offline backups under existing playbooks. Homes and hospitals were protected in the load-shedding order; compute was curtailed first. Essentials degraded rather than stopped, but recovery was slow, node by node, and officials admitted defence had lagged. Attribution never arrived.
+
+It landed on exhausted ground. Municipalities that had advanced wage payments in 2031 were out of funds. Levy receipts remained capped after the employer fight. Short courses in cyber-hygiene and care-tech completed but hired almost no one. Graduate intake stayed frozen. Local papers counted unpaid cohorts rather than new trainees.
+
+At the ports, the other loss hardened. Cheap Chinese-built warehouse machines running American control software took over picking and sorting almost entirely through logistics contractors. Repair and care work held, but the division was now visible on every shift roster. Operators rehearsed substitution as insurance costs rose on Taiwan tensions, but ordered no new construction.
+
+There was one bright result, from elsewhere. A US laboratory reported machine-designed verification for advanced chip layouts, quickly taken up by manufacturers — a genuine advance in computing, legible to specialists and soon to industry. In Europe it read as distant news: proof of what frontier capacity could do, and of who held it.
+
+By December, survey stakes for computing sites were pulled again. Containment had held, substitution had been rehearsed, arrears had been narrowed — and trust had not recovered. Voters spoke of paying for systems they did not control.

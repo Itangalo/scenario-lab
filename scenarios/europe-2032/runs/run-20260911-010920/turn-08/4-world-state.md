@@ -1,0 +1,11 @@
+### Where it landed
+The automated attack came in winter's shape but larger: a ransomware sweep riding a poisoned software dependency through municipal systems, clinics and port offices in more than a dozen states. Records locked, backups poisoned again, appointments and berth manifests frozen on screens. Defenders were visibly behind for weeks, tracing model-written payloads that shifted faster than signatures. Attribution would take months.
+
+Where mixed repair crews in EU vests were already present from the previous clean-up, the blow was absorbed faster. The standing emergency repair cell, now extended as a continuity pact, restored clean backups, cut out the tainted library and left joint dashboards running. Queues shortened where crews arrived. Where they had not yet arrived, mayors spoke again of being left alone.
+
+### Cures and coordination
+In the same months, tailored therapies built on foreign frontier models reached ordinary patients abroad, and a checked, publishable advance in protein-design computation — done in American and Japanese labs with AI doing the hard search — shortened design cycles for enzymes. European clinics and firms could use both only on others' terms, negotiated through foreign ministries and a new middle-power table. Relief on the news, humiliation in commentary.
+
+That table became concrete: states hit by the same intrusion wave formalised real-time pooling of attribution, telemetry and response, and invited the Union in at no extra cost. Joint screens replaced paper runbooks in several cyber centres. Separately, the Union and other middle powers holding export-licence, materials and evaluation pieces discussed aligning licences and bargaining jointly for compute access. No one ceded sovereignty, and no joint withholding was yet exercised.
+
+Brussels argued continued repair aid should go together with holding a common supply line and asked capitals to avoid solo cloud bargains, but several capitals kept their own talks open and the common line remained contested. Crews arriving in person helped hold goodwill locally, without settling the dispute. Power-price protests near reserved grid connections flickered into short blockades, locally policed. No new concrete was poured. The lights stayed on.

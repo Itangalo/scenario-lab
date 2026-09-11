@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Bio-Detection and Trusted Care Continuity Network −2, EU Wartime Neutrality Shelter and Lifeline Continuity −2, EU Joint Threat Response Accession Pact −2 = −6 (priority without effect or cost as capital 7 below 20, charge is measures only)
+PROPOSAL BONUS: EU Joint Threat Response Accession Pact (cat 8, small) +2 — joint_threat_response fired this turn and this answers it directly
+LEGITIMACY LENDS: capital 3, sentiment 27 -> +2 (capped below sentiment, included in capital)
+SOVEREIGNTY: 13 last turn, no category 4 finish, no category 4 in flight +0, us_labs_nationalised t11 −3, capability rose 2.0 −1 = 9

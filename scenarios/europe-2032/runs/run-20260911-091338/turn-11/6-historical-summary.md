@@ -1,0 +1,3 @@
+Spring containment gave way to autumn crisis: a machine-assisted modified pathogen escaped in a border region, spreading before detection. Pooled kits, mandatory sequencing triage, and hardening teams bent but held where staffed; elsewhere military medics backfilled. Containment succeeded after weeks at high human cost.
+
+The response exposed a supply break: a large member state confirmed a faster separate deal with a foreign hyperscaler, stalling Union solidarity and freezing water-power compacts for the two enjoined AI factory sites. Police seizures of illicit clusters of the leaked near-frontier model failed to stop recirculation, with rumored offline hospital use. By December wards held, but trust in a common supply and construction line did not recover.

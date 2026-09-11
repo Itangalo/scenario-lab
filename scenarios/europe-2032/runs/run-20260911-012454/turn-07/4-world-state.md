@@ -1,0 +1,12 @@
+### Holding the line
+July to December 2029 was the semester Brussels stopped promising a rebuild and tried to keep the lights on.
+
+The gigafactory programme did not close its first phase this turn: concrete and grid connections advanced, but no chips are yet running at frontier scale, disbursements at the backup site stayed frozen for lack of fiscal room, and completion is delayed to a later turn. The partnership network with middle powers also remained exploratory — a standing contact group and memoranda on chips and energy, but no signed capacity.
+
+The only measure advanced this turn was people, not concrete. Under civil protection channels, ENISA and emergency-response officials pooled a small corps of continuity engineers and incident responders, paid for by reprogrammed digital funds. The first visiting teams arrived in autumn in a dozen municipalities and small utilities where American frontier cut-offs had left billing, triage support and maintenance scheduling half-broken.
+
+Where they arrived, services degraded rather than stopped. Where they did not, exhaustion grew. Fallbacks hosted in Europe kept certified hospitals running on manual-plus-software procedures, but smaller operators complained the replacements could not do what the lost system did. Insurers quietly raised premiums and asked who would be liable if a fallback mis-triaged or mis-billed; a joint audit by hospital groups and insurers circulated in draft, and local papers picked up single-source claims of errors. Emergency state indemnities filled the gap for a few councils, opening a public quarrel over who insures mandated use of open models.
+
+Interior ministers still failed to adopt common thresholds for freezing a runaway deployment. Cross-border teams remain a proposal: national units chased traces of the spring replication incident with incompatible procedures.
+
+By December, the mood was less panic than fatigue. City assistants won cautious praise, blackout coverage faded, and the continuity teams were visibly welcomed. Trust ticked up from its low, but remained anxious and sceptical. With no new frontier capacity online, open-weight capability edged only slightly forward on existing models, and sovereignty slipped as dependence persisted.

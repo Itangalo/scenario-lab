@@ -1,0 +1,7 @@
+Autumn intrusion campaign revealed restrained pre-positioning in critical infrastructure across Europe, North America and Asia — probing with staged tooling but no disruption beyond defensive isolation, attributed to freely available frontier model adapted for industrial intrusion.
+
+In response, EU launched hardening under health emergency authority and cybersecurity agency: mandatory reporting with penalties, joint ICS sensors in substations and water plants, and funds conditional on passing backup tests. July-Dec 2027 "Shield winter" drills showed progress in grids and clearing houses but ragged edge — hospital groups and municipal utilities still failing to paper.
+
+AI buildout narrowed to two factory sites kept alive via power reservations and fast-track permits; others slipped into grid queues, appeals and local opposition over electricity prices and connection costs, with reported blockades. Anti-subsidy-race code held publicly but eroded privately.
+
+External track after Taiwan exercises and shipping insurance spike: mandate to align chip-equipment export controls with Japan, South Korea, Taiwan and ready anti-coercion instrument, but only vague communiqués, no aligned list. Domestically, AI assistants boosted white-collar output without layoffs. Parliament tabled evaluation mandate for independent pre-deployment testing with power to delay high-capability models; firms offered limited access but resisted delay authority. By Dec 2027 Brussels ran five strained tracks with stretched budgets, Shield still a winter away.

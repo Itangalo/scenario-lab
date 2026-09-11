@@ -1,0 +1,10 @@
+### The shield scales, the verdict lands
+Through autumn the ENISA patching and swarm-detection system finally became routine. Hospitals, grid operators and cooperating municipalities that enforced patch windows and shared telemetry rode out a winter of automated probes with only brief degradations. Technicians spoke openly of a shift: for the first time, defence closed a whole class of attack at machine speed. Councils outside the sharing circle stayed dark for days after the same probes, and the contrast hardened into a two-tier map.
+
+That success never led the news.
+
+The ombudsman hearings into triage and policing support concluded that thousands had been denied benefits, flagged or downgraded by systems cleared at forty seconds an item. Logs that would have shown the pattern were generated and never read. Brussels chose to frame it as breach, not bad drafting: the systems were high-risk, conformity had passed on paper, human oversight had collapsed into queue-stamping. Audits were ordered, the queue approvals banned, mandatory log review imposed, redress paid from old civic lines. Enforcement looked real, and also like an admission that the Act had been unenforced for years.
+
+At the same time Brussels formalised a compact with middle powers holding supply-chain pieces — aligned export licences, pooled bargaining for compute, shared evaluation without ceding sovereignty. Washington's lithography cuts were logged but not contested, preserving early-warning access while the coalition was built. The Dutch complied with the American order; the equipment maker warned it had no alternative.
+
+The public heard humiliation and scandal, not leverage. Blockades and sabotage rumours at substations and data-centre sites multiplied from single-source to coordinated local protests in several states. Junior hiring in coding, analysis and support did not return.

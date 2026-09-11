@@ -1,0 +1,5 @@
+By autumn 2032 Europe held essentials degraded-not-stopped on EuroHPC/national-cloud open models for appointments/timetables/basic work, with paper kits where clean images broke customisations; restore corps finished town tour with split reception, retrained staff staying as fallback operators, and open ledger for US licences rationed to tailored therapies curbed favouritism rumours but not rationing.
+
+Stabilisation was hit by leap in machine coding/intrusion tooling probing half-restored municipal networks, CERT drills under fallback umbrella held mostly but deepened distrust of unseen benefit-cutting systems, and by large-scale foreign commercial robots reordering warehouse/port/logistics work Rotterdam to Łódź, cutting measurable jobs while care/repair/construction held, deepening hardware dependence and works-council warnings of divide.
+
+Brussels opened no new build, tasked competitiveness ministers to map displacement into existing retraining; budgets exhausted, voters blaming system owners, holding the line provisional by December.

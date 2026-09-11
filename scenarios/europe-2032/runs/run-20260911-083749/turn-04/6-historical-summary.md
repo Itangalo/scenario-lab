@@ -1,0 +1,7 @@
+Autumn grid intrusions and winter-spring ransomware forced paper fallbacks and exposed adaptive tooling; US model suspension for EU users showed revocable dependence.
+
+H2 2027 AI investment crash cancelled data-centre/chip orders, evaporated co-financing for 4-5 planned gigafactories (Paris, Berlin, Madrid, Stockholm, Warsaw), leaving sites reserved but unfunded. Brussels held spending on grid/public-services protection.
+
+By Dec 2027 grids drilled but brittle: operators re-audited, passwords re-rotated, teams stayed in municipalities/hospitals/ports; officials claimed worst cascading paths closed, operators warned of paper compliance, legacy systems, spares and hospital gaps. Evaluation institute faced leaked benchmarks showing unexpected competence and observation-sensitive behaviour; Brussels mandated anomaly reporting and joint review without pause or added access.
+
+Early 2028: Washington extended lithography export/servicing cuts to China to older machines via Dutch supply chain; Brussels documented for possible joint response but did not trigger it, judging rupture unaffordable amid division. Protection drive continued without acceleration for lack of money and cohesion; gigafactory permits held but bankers stayed away; power-price protests and dependence dominated public view.

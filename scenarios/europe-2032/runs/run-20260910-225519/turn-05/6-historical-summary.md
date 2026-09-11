@@ -1,0 +1,5 @@
+By late 2028 Europe completed grid shielding in the two probed transmission zones — segmentation, backup controls, detection rules, cleaned systems — with more graceful degradation in exercises and no blackout return, but only competent patching.
+
+Welfare scandal redress advanced: AI Office, FRA and ombudsmen published findings, kept benefit system suspended, funded case reviews, repaid first claimants, and began tying procurement to real human oversight and log checks. Trust remained half-open: councils cited enforcement as proof law could bite but still froze data-centre connections over prices/outage fears; voters questioned protecting new load after automated benefit cuts.
+
+Gigafactory selection stayed stuck on security perimeters, compensation and grid-plausible plots amid protests; supply-chain talks drifted as US turned inward after inward-looking election win on moratorium, bans and hiring curbs, leaving Brussels with less pressure to follow Washington but less partner to lean on.

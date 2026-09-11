@@ -1,0 +1,9 @@
+### Restoration under fire
+Autumn brought the attack everyone had warned about. A wave of machine-built ransomware and poisoned updates swept municipal registries, clinics and mid-size suppliers across several member states. Big cities with audited backups and offline isolation restored in days; smaller towns went back to paper queues for weeks. Television ran queues outside closed town halls while engineers read ransom notes generated in flawless bureaucratic language.
+
+Brussels answered with what little it could fund. Joint repair teams drawn from French, Dutch and EU cybersecurity staff fanned out with EuroHPC desk support, making backup and cut-off checks the price of emergency cash. Where mayors had already complied, restoration was visibly fast. Where defiance had grown, the teams negotiated door to door, restoring servers while arguing about conditions. No new law was attempted, no levy raised.
+
+### A counter-story
+In the middle of the disruption, health ministers found something to tour. Hospitals and permit offices running European-hosted triage and paperwork assistants on openly available models showed waiting lists falling, decisions in days not months. Officials were careful to name the malicious tooling as machine-made without blaming a state, and to separate everyday assistants from the rogue purchasing software that still had to be shut down by hand.
+
+It did not heal the mood. The repair drive blunted accusations of abandonment and won Brussels a little breathing room, but the sight of defenders weeks behind intruders deepened dread. The much-touted public-sector wins were real, yet drowned by fraud, queues and exhaustion. Trust remains near rock bottom, autonomy unchanged: continuity still runs on foreign models and borrowed compute.

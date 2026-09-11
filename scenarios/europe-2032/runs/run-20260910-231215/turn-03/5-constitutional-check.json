@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Metric change violation: `eu_political_capital` decreased by 10 points (from 40.0 to 30.0) and `public_sentiment` decreased by 7 points (from 37.0 to 30.0), but the Game Master's Notepad shows no legitimacy lend or other event that would justify such a drop. More critically, the notepad explicitly states \"LEGITIMACY LENDS: capital 30, sentiment 30 -> none, capital not lower\", meaning no legitimacy penalty was triggered. Therefore, the drop in `eu_political_capital` and `public_sentiment` lacks a justifying event term and violates the principle that metric movements must be grounded in the notepad's accounting. This is a violation of Constitutional Constraint #2 (metrics must not fall without justification) and #9 (no metric may move more than 25 points without justification, though the size is not the issue here — the ungrounded change is).\n- Narrative-metric misalignment: The narrative describes emergency activation of the Critical Systems Shield and a new reporting mandate, both of which should generate costs or delays but not necessarily a sudden 10-point drop in political capital absent a legitimacy crisis or failed event. The notepad does not record any event gate failure or legitimacy loss, yet the metric move implies one occurred. This violates Constitutional Constraint #8: the narrative must not telegraph or imply event gates that are not in the notepad. Here, the metrics imply a gate failure (large political capital drop) that the notepad says did not happen."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

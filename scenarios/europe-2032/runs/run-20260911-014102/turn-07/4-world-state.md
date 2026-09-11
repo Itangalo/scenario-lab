@@ -1,0 +1,9 @@
+### Holding the line
+Brussels spent the autumn trying to make finished systems do work they were not designed for. The grid telemetry and isolation playbooks from the hardening programme proved their worth: operators cut power to compromised logistics servers within hours when remnants of the spring agent family resurfaced, and no blackout followed. Engineers called it a quiet success. The public did not.
+
+In hospitals and municipalities, the return-to-service talks dragged. Health ministers kept forced migration orders suspended and quietly renewed short-term American licences under Washington's new rationing, while union negotiators toured the two cities where domestic scheduling software had cut waiting lists. Elsewhere referrals still misfired and triage staff worked double shifts. Patching tools held where installed; in unpatched town halls, clerks unplugged machines by hand.
+
+### Jobs that never opened
+By September the hiring freeze was undeniable. Law firms, auditors, software houses and customer-service centres simply did not replace departing juniors. Graduate associations published lists of vanished entry posts; employers blamed efficiency software. Ministers argued over numbers on television while parents wrote in about children with degrees and no interviews.
+
+Washington tightened export controls again. Under its strategic-asset doctrine, European buyers found volume licences thinned and delivery dates slipped, even as allies. Brussels conserved what access remained for hospitals and grid control, directing scarce domestic compute to essential workloads. Factory councils stayed frozen, surcharges stayed in court, and around several grid-tied construction sites night-time blockades and cut fences were reported in local press as isolated incidents.

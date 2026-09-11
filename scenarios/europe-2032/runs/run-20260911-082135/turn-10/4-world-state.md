@@ -1,0 +1,10 @@
+### Shared shelter
+The invitation arrived as clinics were still running the isolation playbooks. A group of states hit by the same ransomware and grid-probing wave offered to pool attribution, live telemetry and response — a joint cyber command with biosurveillance attached, binding sample-sharing, standing investigators. Brussels signed on quickly. It could not fund sovereign detection, but it could offer what it had: locked backups, exercised triage, municipal logs.
+
+Accession talks went smoother than the chip talks. European liaison officers took seats in the shared operations room by spring, and early-warning feeds began flowing to ENISA and the health emergency authority. Two attempted intrusions against port operators and a hospital network were flagged by partners hours faster than national centres would have managed alone. Containment held again.
+
+The chip pact closed quietly in the same months. The compromise licensing text with supply-chain holders and the clarified liability rules for civic systems became law. Insurers studied it, nodded, and still did not resume cover at scale. Two pilot municipalities restarted audited triage assistants with human override and published queues; waiting lists fell again and local press was warm. Elsewhere deployments stayed frozen. The benefits-system scandal still dominated national coverage, and opposition parties ran on the phrase that everything had been lawful.
+
+Hardware did not return. The fenced gigafactory site gained a security guard and little else. Cancelled chip slots stayed cancelled, data-centre builders stayed away, and American labs kept training at a slower pace while second-tier builders elsewhere boasted of closing the gap.
+
+Brussels ended June more protected than in January, but protection rented, not owned — safer inside someone else's watchtower, still without a foundry of its own, and still arguing at home that public systems could be trusted.

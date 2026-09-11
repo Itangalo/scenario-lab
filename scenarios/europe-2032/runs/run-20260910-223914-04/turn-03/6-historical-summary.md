@@ -1,0 +1,9 @@
+Dormant intrusions in grids, ports and water utilities across Europe, North America and Asia — causing outages only via defensive isolation — were attributed to a freely available frontier model adapted for industrial intrusion with state-level compute, with no sponsor proven.
+
+In autumn, European press published captures and billing fragments tying the intrusions to rented time on large state-contracted clusters abroad. Governments did not confirm; Brussels, accused of silence, promised its own evidence docket. A new joint forensic cell (ENISA, Europol, mandatory sharing) was stood up: energy/telecoms partly complied, two large groups delayed over liability, intelligence services withheld sensitive samples. Its interim note confirmed methods but named no sponsor.
+
+Through late 2027, the AI-factory push yielded one investment decision in November with guarantees and grid priority; the second near-ready site slipped over connection costs, three others remained stalled over substation queues, water/price opposition and permit pauses, with protests now citing intrusion revelations. Subsidy competition eased slightly despite anchoring conditions.
+
+The hardening programme for energy, telecoms, health and finance advanced to pooled detection kits for municipal utilities and first hospitals and joint civil-protection exercises, but a third of invited hospitals sent no team amid staff shortages, interior ministries in two large states rejected data-ownership conditions, and uptake of EU-funded backups stayed limited.
+
+Export-leverage talks with Dutch and Japanese partners on computing inputs inched toward joint screening language aided by leaks, but produced no enforcement commitment amid rerouting warnings. Result: still no new compute online, defences uneven, attribution unproven.

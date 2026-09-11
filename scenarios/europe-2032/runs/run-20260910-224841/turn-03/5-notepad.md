@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t3: InvestAI Gigafactories −3, Tech sovereignty package −3, EU AI Evaluation and Safety Institute −3, EU Continuity and Fallback Shield −2, EU Biosecurity Screening and Assurance Uptake −2, priority M4 −1 = −14
+PROPOSAL BONUS: EU Biosecurity Screening and Assurance Uptake (cat 5, small) +3 — bio_uplift_findings severe precursor last turn and safety_breakthrough gives certifiable control to land, answered directly
+LEGITIMACY LENDS: capital 17, sentiment 30 -> +2, capped by sentiment
+SOVEREIGNTY: 17 last turn, no capacity event, Gigafactories in flight +0, capability rose 3.5 −1 = 16

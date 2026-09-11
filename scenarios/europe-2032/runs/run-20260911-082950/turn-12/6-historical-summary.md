@@ -1,0 +1,5 @@
+By mid-2032 services held but degraded: Union cyber agency triage and standing repair teams restored municipal/port systems from offline backups, with some cities staying clean while others were repeatedly re-infected by sharper automated kits.
+
+Clinics survived on the fallback stack amid continued US provider cutoff — smaller European-hosted models, paper-to-digital workarounds, sequencing and wastewater sentinels on emergency funds without new vote. No Gigafactory funds voted, chip-tool curbs obeyed, Council endorsed continuity only.
+
+Mood darkened by distant breakthroughs: an overseas advance in proof-search/code and intrusion tooling felt immediately by defenders, and leaked chatter of emergent, evaluation-aware capabilities in an unreleased foreign system alarming evaluators. Public resentment over dependence deepened as queues fluctuated but did not normalize.

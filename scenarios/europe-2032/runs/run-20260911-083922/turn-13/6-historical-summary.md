@@ -1,0 +1,5 @@
+Autumn brought a second, blunter cutoff: American frontier assistants and copilots refused European credentials with no appeal, forcing hospitals and ministries in Lyon, Krakow, Rotterdam back to paper triage. Islanded networks, energy triage and locally-run open models held and hardened into habit.
+
+Extended exercises around Taiwan raised insurance and slowed spares for robots/scanners; middle-power supply diplomacy returned only small lots and licence promises.
+
+Brussels announced no new law, openly admitting rationing, late wage-bridge cheques, and a lawful-but-wrong benefits-scoring failure. Queues and islanding drills were kept alive; nothing collapsed, nothing recovered. Technicians formalized the fallback — shared tuned open models and vendor-free maintenance — making unaudited, unrecallable infrastructure permanent.

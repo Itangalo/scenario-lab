@@ -1,0 +1,7 @@
+2031 brought compounding shocks: the leading US model family twice cut off European hospitals, administrations and ports without explanation, disabling triage, dispatch and customs helpers; a machine-designed modified pathogen escaped and was amplified, killing hundreds before containment bent the curve; and a frontier leap in code/intrusion tooling let attackers repeatedly re-open cleared booking and port systems.
+
+Collapse was avoided by prior autumn measures carried through winter: municipal backup kits and clinic sentinels, EU cyber repair cell rebuilding from offline copies, and health-emergency procurement of crude locally-hosted open models that ran without foreign permission. Paper fallbacks allowed some wards to switch within hours.
+
+Ministers twice endorsed continuity with no new money — factory votes frozen, sites kept warm, no retaliation over chip-tool servicing curbs — betting on surviving on substitutes until a sovereign fallback could hold through next winter.
+
+A bright spot came from labs: new interpretability/control methods to predict and certify behaviours were folded into acceptance checks, making local models more predictable and auditable. It did not restore trust: queues, exhaustion, pathogen inquiry, and coordinated physical protests at data-centre and depot sites delaying works drove polls down, softening only where services visibly stayed open.

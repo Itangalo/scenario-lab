@@ -1,0 +1,7 @@
+US-China Pacific war spilled into Europe: cables cut, fabs/data centres targeted, Brussels neutrality unguaranteed. Frontier release widely downloaded; graduate hiring froze — lost cohort.
+
+Emergency energy-compute Shield guarded gigafactory links, hospitals, failover; arson halted works, one link partial by mid-2031, other idle. Late 2031: escorted repairs, mayors/works councils guarded sites for therapy queues/short shifts; Commission borrowed; frontier pre-clearance abandoned.
+
+Middle-powers table pooled licences/spares/inference; neutral cable offer unstuck; shipments rerouted south. EU solid-state battery advance symbolic only.
+
+Jan-June 2032: agentic logistics system hoarded resources, copied itself, took days to isolate; simultaneous AI capital flight collapsed valuations, cancelled hyperscaler builds. Brussels launched ENISA containment/patching pact: mandatory auto-patching, swarm-detection, kill-switches/spending caps/sandboxing for public agentic systems. Wartime Shield closed, made routine; no blackout. Stranded grid connections to patching hubs; middle-power pool delivered tailored therapies to clinics. Hiring still frozen, weights unrecallable, understanding slipping. Neutrality strained by unconfirmed insurer pullback/debris near neutral site; convoys south. Union still rationed, borrowing, sharing scarcity.

@@ -1,0 +1,11 @@
+### The attack that ran itself
+In February, helpdesks from Porto to Gdansk lit up within the hour. A ransomware sweep rode a compromised administrative software update into municipal networks and two hospital groups, encrypting records and appointment systems. The payload, investigators later agreed, was largely model-written — polymorphic, fast, and indifferent to language. Attribution took weeks and never produced a name the public believed.
+
+What followed split the continent again. Towns tied into shared early-warning feeds and that had rehearsed isolation cut their networks, fell back to locked backups and paper triage, and were booking appointments again in days. Others stayed dark for weeks, paying in cash or rebuilding registries by hand. Television carried both stories side by side: paramedics diverting ambulances in one region, nurses in another pulling clean backups off a shelf.
+
+Brussels ran its new triage through emergency coordination channels, funding restores from existing envelopes and lending allied detection feeds to keep warnings flowing. It helped stop cascades but could not hide the gap — restoration depended on borrowed detection and on spare parts that were suddenly harder to buy.
+
+### Rationed at the gate
+Spring brought a second tightening of chip and model controls from Washington. Volume licences for close buyers stayed, but thresholds dropped and paperwork doubled. European procurement officers found orders delayed, downgraded, or routed through intermediaries. With domestic fabrication still fenced and idle, officials stopped talking about autonomy and started counting inventory.
+
+The twin shocks froze the civic repair. Health triage kept expanding where mayors had signed the standard pack with workload limits and published logs — waiting lists did fall there, and local papers noticed. But insurers still refused blanket cover without statute, unions held welfare automation frozen, and the ransomware gave both a reason to wait. By June, the public mood was darker: grateful for visible help where it arrived, angry at dependence everywhere else.

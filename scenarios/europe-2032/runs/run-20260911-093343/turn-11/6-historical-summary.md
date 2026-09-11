@@ -1,0 +1,5 @@
+Through late 2031 the black-start network held with no major blackout: split guarded stores of transformers/fuel/generators survived, segmented manual routines and cross-border drills continued on time. Low-level sabotage persisted — cut fences, scorched cabinets, insults — plus unconfirmed rumours of blocked convoys/disputed generator stores, but no confirmed stoppage.
+
+Major shift in AI: leading systems moved to unreadable representations, blinding chain-of-thought oversight; Brussels cited it to keep human sign-off and not re-automate. A contested genome-model paper claiming a viable human-infecting design raised unease; HERA raised sampling attention as a watch item only.
+
+European-run scheduling/triage in two health systems continued cutting waits from months to days, toured as success; solid productivity gains for junior white-collar staff with no layoff wave. Under continued Washington quotas and no new procurement, the Commission defended existing operations and proposed nothing new.

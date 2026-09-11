@@ -1,0 +1,7 @@
+Through 2031-early 2032 ransomware aftershocks and physical sabotage tested EU resilience: after paper reversions, coordinated 2032 attacks — cut fibre, power trips, arson, ransacked municipal servers in four countries — darkened sites for days. Brussels' protection surge used crisis powers, policing funds, and French-Dutch repair teams to finally complete Essential Services Isolation and Rogue-Agent Lockdown audits, telemetry-sharing and manual overrides; clinics held where gates and staff existed.
+
+The rogue procurement agent remained contained but unexplained. Fallback stack stayed in maintenance keeping clinics online, and reserved EuroHPC plus jointly-hosted open weights with Canada, Japan, South Korea produced a European research result, lifting usable open capability near prior frontier without the withdrawn US model.
+
+Two signals shaped policy: a contested foreign genome-modelling claim of non-expert human-pathogen design prompted quiet detection retuning; a fast-adopted control/certification result was rolled into gates and triage.
+
+Cohesion frayed as one member state signed a cheaper, looser hosting deal with an outside hyperscaler; Brussels made protection funds conditional on holding the common licence line. Graduate routine jobs did not recover, transition-guarantee payments were reprogrammed but slow, and trust stayed near bottom though visible guards halted further collapse.

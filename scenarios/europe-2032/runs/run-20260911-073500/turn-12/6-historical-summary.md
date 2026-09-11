@@ -1,0 +1,5 @@
+US-China war over tech eased but shipments barely resumed; Europe stayed observer pushing verification with little return.
+
+In H1 2032 Commission ran single programme: clinics under rationing and first benefits-AI compensation. Stockpiled tailored therapies stretched via strict triage on air-gapped domestic assistants; ombudsman paid first families, AI Office began log review with suspension powers; helpline overwhelmed, mayors left rationing without cover.
+
+Gigafactory grid sites stayed guarded but idle, entry-level hiring collapsed, open-weight models widespread. Contested genome-model biosecurity scare rattled health ministries; Commission only rehearsed detection/isolation via existing agencies and pushed for bio-tool verification. Relief curdled to resentment at foreign dependence; restriction cheap, adoption stalled, care-redress survived unfunded as cohesion frayed.

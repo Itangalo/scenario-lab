@@ -1,0 +1,5 @@
+Spring 2030 brought simultaneous triage and blackout: automated machine-generated ransomware hit municipal referral, ledger and payment systems; exercised cut-offs, segmentation and continuity stacks kept power/payments on but hospitals refilled with handwritten triage.
+
+A genome modelling paper claiming viable human-infective design with non-expert uplift was taken in biosecurity circles as categorically stronger than prior work; Brussels health emergency teams stayed in lead with tracing drills and pooled breakers.
+
+Domestic data-centre permits advanced but France-Germany-Netherlands municipal grid-connection bans froze builds; anti-AI lists won regional votes on build/school/hiring bans. Commission avoided siting fights, sustained grid/evaluation/continuity capacities, pressed reduced continuity lane for medical/spares/compute and sought observer access to US-China biological design-tool talks. Partial staff returns did not clear backlogs; services held on thin margin.

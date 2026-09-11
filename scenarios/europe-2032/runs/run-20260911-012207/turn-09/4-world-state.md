@@ -1,0 +1,10 @@
+### Holding the line
+The second half of 2030 did not bring a new shock so much as the long tail of the spring. Municipal IT staff spent the autumn rebuilding networks segment by segment, with visiting emergency teams leaving behind checklists and thresholds for when to cut connections and go to paper. Dozens of clinics stayed in that in-between state for months: open, but offline, with appointments logged by hand and prescriptions double-checked by tired substitutes.
+
+Brussels moved to stop that in-between from becoming a collapse. Money from health and civil-protection budgets, topped up by a loan-bank guarantee for insurers, was steered to certified hospitals and town halls that stayed open in degraded mode. Premium relief slowed the drift toward uncertified operators, and staffing support paid for extra hands where wards were thinnest. Administrators said it kept doors open; nurses said errors still happened, just less often alone.
+
+The finished triage programme helped make the case. The subsidised scheduling assistants that had cut waits in three countries were extended as the clean channel for verification numbers and fraud warnings, and ministers pointed to shorter queues as proof the European-run services worked.
+
+It did not restore trust. Local papers still paired outage notices with fraud warnings, insurers still charged more for those outside the certified list, and rumours about sabotage of masts and cables flared after every unexplained outage. Permits and grid reservations for new compute stayed on the books but unspent, with no joint purchase signed, and police technicians quietly confirmed the leaked voice-clone and vulnerability tools were now ordinary criminal kit.
+
+By December the Union was still absorbing. Wards and town halls had not failed — and that, at very low political reserves, counted as delivery.

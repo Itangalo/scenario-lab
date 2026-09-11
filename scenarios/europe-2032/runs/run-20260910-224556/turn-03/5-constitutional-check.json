@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Constitutional Constraint 9 violated: `eu_political_capital` decreased by 10 points (from 21.0 to 11.0), which exceeds the 25-point movement cap. However, the violation is not in the magnitude of movement but in the *narrative justification* — the Game Master's Notepad shows a total effect of −14 from portfolio charges and +3 from proposal bonus and +2 from legitimacy lends, implying a net change of −9. The resulting metric change is −10, which contradicts the notepad's own accounting. This discrepancy violates Constraint 9’s requirement that no metric moves more than 25 points *and* that the movement must be consistent with the underlying mechanics. A 10-point drop is within bounds, but only if fully justified by the notepad; here, the notepad predicts −9, yet the outcome is −10, indicating an unexplained, rule-inconsistent adjustment.\n- Constitutional Constraint 7 violated: The drop in `eu_political_capital` (−10) is disproportionately large compared to the change in `eu_ai_sovereignty` (−3), but this is not the issue. The issue is that the narrative and notepad imply that sovereignty-related events (e.g., supply_chain_coercion) are driving large political capital losses, which risks conflating the two stocks. While some linkage is allowed, Constraint 7 limits sovereignty’s *direct contribution* to political capital change to +3 per turn — here, it appears to be contributing negatively beyond an allowed coupling. The notepad shows \"SOVEREIGNTY: ... supply_chain_coercion t3 −2, capability rose 5.0 −1 = 17\", but then political capital drops by 10 with no other large negative terms reported. The notepad does not show a separate −10 driver for political capital, suggesting the drop is being mechanically driven by sovereignty events without sufficient independent justification, risking a violation of the constitutional separation between the two stocks."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

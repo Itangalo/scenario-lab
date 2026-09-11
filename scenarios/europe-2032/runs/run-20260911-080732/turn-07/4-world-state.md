@@ -1,0 +1,10 @@
+### Screening while the warehouse empties
+Autumn brought two shocks that did not wait for Brussels. In logistics halls from Rotterdam to Łódź, boxy pickers and pallet movers arrived in fleets — leased, foreign-built, running foreign control software. Sorting and warehouse work fell in weeks. Repair bays next door stayed stubbornly human, and that line hardened: unions began talking about two labour markets, one automatable, one not.
+
+At the same time a contested genome-model paper claimed a viable human-infective design, with offshore brokers citing it to sell unscreened DNA. Biosecurity researchers argued over methods, but health ministries read it as a warning shot.
+
+The Commission pushed its new Containment Shield through existing health-security powers. HERA and disease-control auditors began screening checks on synthesis vendors, sequencing telemetry was tied harder to continuity reinsurance, and countermeasure stocks were reprogrammed from health funds. Vendors complied in the core, evaded at the edges. The black-box cyber cell kept gating procurement, still slow, still disputed.
+
+Sovereignty delivered half a win. The first gigafactory tranche formally closed — sites, grid links, permits — but only one site is actually building, the other stuck in court, and private co-funding stayed cautious.
+
+Then a capital broke ranks again, renewing its own hyperscaler deal on looser screening to power its new warehouse fleet. Joint buying with Japan and Korea continued, Washington offered sympathy but little capacity, and papers called it a second humiliation in a year. Municipal networks degraded again under faster exploit chains distilled from the spring leap, now sold as ready kits. Workers liked their assistants, feared replacement, and distrusted machines no one could read.

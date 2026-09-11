@@ -1,0 +1,11 @@
+### The jump
+In March a leading American lab demonstrated agents that sustain long research and software tasks with little supervision and published results that made last year's roadmaps look cautious. European CIOs rushed to trial the new generation while safety teams warned the interpretability checks Brussels relied on no longer fully covered the new reasoning. Coverage is stretched but institutions remain in place, with no body disbanded or defunded.
+
+Offices felt the other change first. Law firms, accountants, newsrooms and consultancies reported solid productivity gains, strongest for juniors, with no layoff wave attached. Work got faster, employment held, and talk of a painful transition faded into satisfaction with tools as they are.
+
+### Shield lands, sites stall
+The Critical Services Shield formally closed this semester. Joint exercises became mandatory for probed grid, port and hospital operators, pooled detection went live in the two hospital networks, and auditors could for the first time show essential services degrading rather than stopping under probe in those pilots. Interior ministries still grumbled, and several big cities missed drill deadlines, so coverage remains partial and system-wide robustness is only modestly improved.
+
+Gigafactories went the other way. Coordinated councils, residents' groups and grid operators blocked power connections over prices, land and priority for hospitals. The one region that had reopened talks stayed in negotiation over written power-price guarantees, but no site reached decision by June. Opposition leaflets pairing substations with waiting lists spread beyond the candidate sites.
+
+Brussels held spend. No new instrument was tabled; the Showcase replication file sat with legal and budget for clearance, with disbursement promised for next semester and eligibility tied to completed drills. The EU-cloud fallback kept hospitals online through triage queuing, still slow at peaks. Prioritising the Showcase bought visibility for the clinic wins but cost some goodwill with cities waiting on drills and factory decisions, without a major backlash or institutional crisis, and the finishing dates for the factory programme now look optimistic, though no date was formally moved.

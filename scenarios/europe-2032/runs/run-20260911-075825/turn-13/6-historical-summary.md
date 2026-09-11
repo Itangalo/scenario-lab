@@ -1,0 +1,5 @@
+Second half 2032 saw feared automated assault: machine-made ransomware plus poisoned dependency hit municipalities, hospitals, subcontractors; town halls dark, paper systems, manual grid for days. Held barely via clean backups, seconded teams, diverted HPC — services degraded not stopped, dividend of spring Continuity Corps; full rehearsals and dependency audits deferred for restoration.
+
+Washington placed frontier labs under direct state control — security inside training, weights as defence articles, foreign customers politically approved. For Europe vendor recovery aid stalled in legal review, updates slowed, conformity channels broken; regulation of companies gave way to state-to-state safeguard talks.
+
+Entry-level hiring in law, accountancy, software, customer admin confirmed not returned; retraining queues lengthened, wage payments lagged, town halls angry despite medical gains. Certified oversight protocol with caps, isolation, interpretability checks pushed into banks/clinics to contain intrusions and rogue agents; checkers aided, public trust not restored.

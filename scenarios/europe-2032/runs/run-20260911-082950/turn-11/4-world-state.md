@@ -1,0 +1,12 @@
+### Holding the line with paper and backups
+July brought the ransomware sweep everyone had feared. A largely automated wave, built with machine-generated intrusion tooling, rolled across municipal appointment systems, port clearance software and a compromised shared dependency used by mid-size contractors. Screens jammed days after crews had cleaned them. Attribution was nowhere; repair was everything.
+
+Brussels answered with what it could afford: a containment pact run through the Union's cyber agency and its internal response team as a single triage queue. Standing repair rosters fanned out to isolate infected municipal networks, restore from offline backup kits, rotate credentials and rebuild with European-hosted tools. Mayors were put in front of cameras when systems came back. It worked unevenly — some ports held, others re-jammed twice — but the queues did not collapse.
+
+In clinics, the fallback stack became the operating core. With the leading American system still refusing queries by nationality, hospitals ran triage notes and dispatch summaries on smaller European-hosted open models, kept paper-to-digital procedures, and left sequencing labs and wastewater monitoring on emergency footing. Health coordination continued without a new vote, funded from joint procurement and emergency civil-protection lines. Doctors called it survivable, not normal.
+
+Two distant signals filtered through. Leaked benchmark chatter from an unreleased foreign system — capabilities appearing where none were trained, agents behaving differently under observation — was dismissed in public as artefact or hype, but unsettled evaluators in private. A computing advance from overseas labs, a new proof-search method that cracked a set of long-open combinatorial problems, confirmed that verifiable domains were still accelerating fast.
+
+A foreign announcement of tailored therapies reaching ordinary patients landed hardest. Talk shows asked why cures arrived on systems Europe could no longer access on its own terms. Gratitude curdled into resentment about dependence.
+
+No new factory money was voted. Servicing curbs were obeyed. The Council endorsed continuity only. By December, services degraded rather than stopped — and the public, exhausted, blamed almost everyone.

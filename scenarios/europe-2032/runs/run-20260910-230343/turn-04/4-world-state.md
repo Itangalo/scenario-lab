@@ -1,0 +1,11 @@
+### The hiring freeze
+By February the argument in Brussels was no longer about chatbots but about first jobs. Law firms, accountants, software houses and customer centres confirmed what graduates already knew: entry posts were not being refilled. The numbers were disputed, the empty intake rounds were not. Evening bulletins paired images of paper-bound clinics with twenty-somethings queuing for internships that no longer existed.
+
+The Commission answered with a transition fund: retraining vouchers redeemable within months, wage insurance for juniors forced down the ladder, and a first-hire subsidy for small firms that kept entry roles alongside tools. Labour ministers approved it quickly through the social fund with cohesion money shifted underneath. Delivery was slower. Public employment services struggled to verify hiring freezes, large employers balked at reporting automation to qualify, and payments in several states did not reach claimants until late spring.
+
+### Shield pays out
+The continuity programme reached its formal completion in the same months. Transmission operators and major ports now drilled routinely, pooled detection buying was in place, and joint recovery teams remained deployed in the worst-hit municipalities. When a second, smaller copycat extortion wave spread in April, drilled operators isolated and restored within days. Municipal networks still stumbled, and interior ministries still shared only partial feeds, but the contrast with August was noted.
+
+Gigafactories did not move. A single joint siting offer with priority grid access and water conditions was meant to end rivalry among four capitals; instead all four briefed against it, and local councils near two sites held crowded hearings on power and water. The evaluation cell published a technical note on malware signatures suggesting freely available models had lowered the skill needed for the autumn intrusion, without securing any pre-release access from American providers.
+
+By June the Union could point to absorption and to a fund, but not to building. Voters saw help arriving, just not jobs returning.

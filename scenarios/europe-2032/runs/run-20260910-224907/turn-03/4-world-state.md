@@ -1,0 +1,8 @@
+### Drills hold, concrete stalls
+The second half of 2027 made the Union's two-track bet visible. The operational track moved. Transmission operators struck the previous autumn completed mandatory reporting exercises with the EU cybersecurity agency, ports from Rotterdam to Piraeus switched on jointly bought detection systems, and a first wave of municipal utilities signed exercised continuity plans in exchange for EU-funded hardening. Technicians remained scarce, but pooled training money quieted the interior ministers for once.
+
+The building track did not. Two regions competing for the same grid connection turned mediation by energy and industry officials into open feud, with compensation offers for power prices and water use dismissed as bribes. Survey sites were blocked for days by farmers and climate activists; permits slipped by months, not weeks. No new money was committed, deliberately, until the blockades clarified — which they did not.
+
+Around it, the world darkened. Extended manoeuvres across the strait, rising shipping insurance, and a diplomatic expulsion pushed chip-supply exposure up the agenda in Brussels. Trade officials began mapping dependencies while keeping export-control coordination in reserve. Frontier models kept improving, and openly released weights crept closer behind them, leaving European evaluators still queuing for access the Americans already had.
+
+By December, Europe could detect better than it could build. Continuity was closer; sovereignty was further away.

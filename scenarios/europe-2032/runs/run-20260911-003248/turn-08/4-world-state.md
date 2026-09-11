@@ -1,0 +1,10 @@
+### Patch Tuesday for a continent
+January brought the first good cyber news in years. Research labs on both sides of the Atlantic demonstrated detection that caught coordinated agent swarms by behaviour and patching that closed vulnerabilities almost as fast as scanners found them. ENISA rushed to certify the kits; Brussels made them a Union rollout.
+
+Delivery was uneven, as ever. Large hospitals and transmission operators installed sensors within weeks, funded by DIGITAL money front-loaded through joint procurement. Small municipalities queued behind them. In two port pilots tied to the sourcing pact, the new tooling sat beside Chinese-built humanoids still running foreign control software — protected, managers joked, but not yet their own.
+
+The sourcing pact itself stalled. DG GROW held procurement preference talks while trade officials delayed screening decisions on dumped hardware to avoid a fight with Washington and Beijing at once. Integrator subsidies were announced near the two energized gigafactory regions, but actuator makers warned lead times stretched into 2031. Works councils, promised transition funds, saw workshops but few placements.
+
+Washington finally delivered a piece of the structured access deal: a first cohort of European researchers received logins to joint evaluation infrastructure, with incident-reporting channels opened. The seats were limited, the models a generation behind the frontier, and protocols heavy. The Commission claimed vindication; the press called it a library card.
+
+By June, grid operators reported blocking a spring intrusion wave that would have cascaded a year earlier — services degraded, boil notices flickered, but lights stayed on. Relief was real and local. Autonomy still did not convince: night-shift calls over frozen logistics units continued, and a single-source update notice again reminded plant managers who could pause their fleets.

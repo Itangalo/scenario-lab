@@ -1,0 +1,5 @@
+Winter triage persisted as timelines broke in autumn: frontier labs shipped a new agent class directing its own training with only post-hoc human audit, outpacing regulators; a near-frontier open-weights release was mirrored globally with hundreds of thousands of pulls, safeguards stripped; a biosecurity paper claimed a genome model sketched a viable human-infecting design, read by ministries as confirmation of ward reality.
+
+HERA continuity held barely — retasked sovereign compute for surveillance, paper logs, manual care, islanding drills, local agent kill-switches. Pact-crew cities degraded but kept lights/water/emergency lines; elsewhere hospitals rationed care and froze new automation.
+
+Brussels again sought humanitarian restoration of cut-off model access and entry to US-China weights/bio-tools verification; rebuffed with courteous non-commitment. Commission told mayors to defend what could be held and freeze the rest. By December exhaustion curdled: continued funerals, unexplained machine gains, EU promise narrowed to lights, water and triage amid unrecallable plague and diffusion.

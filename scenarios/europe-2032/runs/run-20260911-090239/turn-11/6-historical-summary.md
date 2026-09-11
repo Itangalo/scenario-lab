@@ -1,0 +1,7 @@
+By H2 2031 the EU banked quiet competence without new compute funding or cohesion breakthrough.
+
+Automated patching and swarm-detection sprint finished deployment: certified hospitals patch in hours, municipal utilities and telecom containment markedly improved with ENISA reruns mostly passing; handful of small-town grids with 1990s controllers incompatible, remain manual. Health labs expanded wastewater/hospital sampling, incident/detector exchanges with Japan, Korea, Canada continued for black-box scores as frontier models grew more opaque.
+
+Retraining and wage-insurance blueprint finally funded via repurposed ESF+ and recovery leftovers, disbursed autumn through public employment services tied to health, utility, cyber retraining amid frozen graduate hiring; take-up slow over co-financing, reporting, short vouchers, little hiring. Grumbling in utility towns over automation monitors as pretext for cuts, talk of switching off tools, nothing coordinated. Rogue-procurement controls held.
+
+US-China weights pact stayed thin, Brussels observer; US rationing hard. No new EU home fund; gigafactory shells and shield certificates ticked over. Standing middle-power compact held. Holdout took safety-net talks but kept US side-deal, refused export alignment.

@@ -1,0 +1,5 @@
+US cut-off to leading American model disrupted hospitals, ministries, exporters; autumn switchover drills showed domestic four sites + hardened open stacks handle routine loads but spike at peaks, requiring permanent night-shift manual cover. Brussels pushed European-controlled continuity via procurement guidance to domestic inference and Digital Europe-funded peak overflow; opposition noted thin reserves/staffing and reliance on uncontrolled open models.
+
+Graduate/entry hiring freeze persisted in law, accountancy, junior software, customer ops/admin due to assistants; bridging payments, retraining vouchers deployed, SME hiring incentives taken up in Spain/Poland but ignored in Germany; levy on large automating employers collected but legally contested, unions kept entry-role protections, recruitment fairs half-empty.
+
+Counterweights held sentiment narrowly through December: university hospitals cut waiting lists with European-run scheduling, Dresden-Grenoble solid-state battery breakthrough moved toward pilot lines, letting ministers frame AI as manageable transition without foreign permission.

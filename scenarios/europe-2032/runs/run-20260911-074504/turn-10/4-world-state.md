@@ -1,0 +1,10 @@
+### A spring of cures and verdicts
+The first half of 2031 arrived with two American announcements that Brussels could neither ignore nor claim. A Boston-led clinical team put individually tailored immune therapies into routine oncology use, with planning and protein-design work done end-to-end by frontier systems. Weeks earlier, a US laboratory had shown a new training-efficiency method that cut the cost of long-horizon agents sharply. European hospitals asked when patients here would receive the treatment; European researchers cited the method within days. Procured only where Union-anchored machines had room, both arrived mostly as imports.
+
+At home, the ombudsman published what the press called the queue judgment. A benefits-fraud scoring assistant used by several social-insurance funds had systematically cut off single parents and migrants, with caseworkers clearing flags in under a minute. The finding was worse than negligence: the deployment fell outside the high-risk categories written in 2024, so every step had been lawful. Editorial pages said the flagship rulebook was built for yesterday's software. Ministers promised redress, a logging audit and a narrow legal patch.
+
+The placement corps inched forward. Employment officials cleared backlogged social-fund payments and filled a few thousand more twelve-month posts in wards, town halls and fenced building sites, tied to common purchasing terms. Hospitals and ports stayed degraded but open; joint cyber teams absorbed probing without outage.
+
+Then shipping desks repriced the Strait. Weeks of extended manoeuvres, higher war-risk premiums and an expelled attaché pushed chip deliveries later again and revived talk of stockpiles. Insurers kept their surcharges; no European firm entered the allied-access scheme still in drafting.
+
+By June, gratitude for visible jobs coexisted with anger at lawful-but-wrong automation and at cures arriving on foreign terms.

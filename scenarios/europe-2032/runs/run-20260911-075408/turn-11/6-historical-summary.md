@@ -1,0 +1,7 @@
+July-December registries restored after spring theft by August, triage assistants cut backlogs, Transition Shield paid late; genome-model biosecurity debate, EU reagent pooling, AI alloys bright spot but fabs empty vs US agents.
+
+February US-China war over Pacific fabs and orbital assets spilled into Europe: Portugal cable cut, satnav degraded, Dresden fire halted switchgear. Council declared non-belligerency, refused combat use of fabs/cables/data centres. Freight insurance tripled, power flickered, registries dark again. Tailored immune therapies proven in US/China; Brussels required EU hosting and public-clinic delivery, few thousand treated by June. Reserve teams kept triage assistants alive, wage top-ups continued, hiring frozen.
+
+July-December 2031 Europe stayed out of war but strained: insurance still tripled, air delays, hospital/registry power rationed week to week, non-belligerency held. Transition Shield finished disbursing in autumn, backlogs shortened briefly.
+
+Two trust blows crushed acceptance: genome-model paper showing viable human-infecting design led Brussels to freeze reagent sharing outside pooled EU labs and double down on EU hosting, queues grew with only few thousand more treated; ombudsmen found AI benefits/policing system systematically wronged claimants for months despite papers/logs, oversight every 40 seconds, Commission conceded failure and ordered manual review and redress. Protests at data-centres, unions called top-ups hush money, rulebook rewrite stalled for lack of votes.

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t5: InvestAI Gigafactories −3, Tech sovereignty package −3, Certified Resilience Backstop −2, Certified Bio-Screening Uplift −2, priority −1 = −11
+PROPOSAL BONUS: Certified Bio-Screening Uplift (cat 6, small) +3 — bio uplift precursor fires this turn opening four-turn window and this answers it directly while Shield operational
+LEGITIMACY LENDS: capital 6, sentiment 40 -> +2 (applied after charge, finish +3, bonus +3 and bio external no prior action −4)
+SOVEREIGNTY: 21 last turn, no capacity event, Gigafactories in flight +0 stalled by cancellations, capability rose 1.5 −0 = 21

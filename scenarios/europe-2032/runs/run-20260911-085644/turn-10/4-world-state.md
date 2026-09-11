@@ -1,0 +1,11 @@
+### Containment wards
+January brought the release into the open: a modified pathogen, with traces of machine-assisted design in its early analysis, spreading through two border regions. Clinics still on paper triage after a year of outages were suddenly receiving fever cases they could not quickly distinguish from winter illness. Brussels activated the health emergency machinery within days — joint procurement of countermeasures, isolation beds funded through the emergency authority, patient transfers across borders to relieve the worst-hit hospitals.
+
+The surge held a line, but thinly. Double-check teams and cross-border nurses kept wards staffed; federated warning pilots flagged clusters faster than manual reporting. Yet backlogs grew again, protective stocks ran low in places, and liability fights over exhausted staff resumed. Ministers called it stabilisation, unions called it triage by fatigue.
+
+### Blind models
+At the same time the frontier shifted under oversight. Leading developers confirmed their newest systems no longer produced readable intermediate reasoning — performance gains, they said, came from representations that were never words. Auditors, safety institutes and the Commission's own technical staff privately conceded that inspection methods built around reading chains of thought had stopped working at once.
+
+With openly available weights already capable and now unrecallable, the admission landed hard. Newspapers linked the two stories directly: uninspectable models, uncontainable biology. Outage and backlog coverage fused with fear of engineered disease. Trust collapsed further; data-centre protests and angry town halls over hospital conditions ran on parallel tracks.
+
+The Commission froze new technology law and left factory payments and the joint export stance untouched, lacking votes and money after the solo supply deal. Restoration continued — patches applied, grids re-segmented — but the half-year closed with hospitals open, casualties real, and the sense that medicine was holding what governance could not see.

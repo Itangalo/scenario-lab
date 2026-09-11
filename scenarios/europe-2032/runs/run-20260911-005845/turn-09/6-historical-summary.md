@@ -1,0 +1,5 @@
+By late 2030 dependence deepened despite leverage moves: quarantine froze chip shipments and foreign frontier access stayed rationed, forcing fallback to older models. Brussels' lithography licensing pact with The Hague signed but yielded no pooled wafers yet; Washington treated it as pressure, Asian partners hedged, observer bid to US-China weights-security deal left waiting. Emergency grid permits for gigafactories granted under guard, still paper capacity.
+
+Autumn ransomware sweep hit hospitals, municipalities, grid back-offices across member states; automated patching/swarm-detection cut dwell where deployed, but staffing/compute rationing left others degraded for days. Sharp foreign jump in code/intrusion tooling outpaced slow general gains; sector investment collapsed, supply deals evaporated.
+
+Triage continued: trusted-supply lots, genome-claim focus, bio-screening prioritized. Assistants boosted office productivity without job losses, but voters ignored. Welfare/policing AI scandal — lawful but systematically wronged claimants, logs unread — made rulebook look obsolete, stalling adoption.

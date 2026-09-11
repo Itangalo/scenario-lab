@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `ai_safety` decreased from 24.0 to 14.0 (a drop of 10.0 points). The constitutional constraints explicitly state that only `ai_capability` and `openweight_capability` are permitted to accumulate and never fall; all other metrics, including `ai_safety`, are stocks that can be spent or eroded. However, a 10-point drop in `ai_safety` in one turn violates Metric Rule 9: \"No metric moves more than 25 points in one turn.\" While this rule permits movements up to 25 points, the sudden 10-point drop lacks justification in the narrative in terms of a discrete, catastrophic event (e.g., system failure, attack, or policy collapse) that would plausibly cause such a sharp decline. The narrative describes degraded audit capability and missed dangerous behaviours, but not a collapse or failure event severe enough to justify a 10-point drop. Smaller safety declines (e.g., 2–4 points) would be consistent with erosion; a 10-point drop without a corresponding event-level cause oversteps the realism guardrails.\n- Narrative Constraint 8 violated: The narrative states \"Washington's new administration took office on moratoriums and job-guarantee levies, slowing American frontier work for political reasons...\" This retroactively introduces a U.S. posture change in Turn 6, which is consistent with Invariant 4 (American posture takes effect in Turn 6). However, the Game Master's Notepad does not record any gate event or trigger related to U.S. policy change, and the narrative implies an ongoing effect (\"slowing American frontier work\") without grounding it in a prior event evaluation. More critically, the narrative assumes a causal effect on European pressure (\"leaving Europeans with less pressure and less help\") without establishing prior compliance or leverage mechanisms, violating Constraint 3: \"Nothing the EU decides binds the United States... automatically.\" The U.S. posture is standing per Invariant 4, but the narrative must not assume alignment or behavioural change without prior narrative or notepad basis for such influence."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

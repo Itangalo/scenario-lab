@@ -1,0 +1,5 @@
+By early 2029 AI made practical leap in code/maths/intrusion chaining, while leading models shifted to non-verbal architectures — step-by-step oversight stopped working, leaving only outcome tests, probing, and costly activation inspection; audits slowed. Near-frontier open-weights release mirrored beyond recall, quickly upgrading phishing/intrusion kits.
+
+Brussels relied on existing joint cyber/pathogen centre telemetry-sharing and continuity backstop (backup procedures, reinsurance) to keep hospitals/municipal nets degraded not collapsed during spring probes. No new sovereign compute online — industrial package stalled at one mediated site and paper permits. Only new step: proposed small black-box testing unit in AI Office with health/cyber secondees, scoping pre-deployment suites with French/Dutch labs, no regulatory force yet, public-contract lever a turn away. Washington new administration gave mixed signals, no firm joint commitments.
+
+Cohesion cracked as one capital signed below-standard foreign hyperscaler compute deal; Commission kept joint-buying/mediation alive without new money. Trust frayed, public mood soured.

@@ -1,0 +1,7 @@
+Brussels held its do-nothing line with empty coffers and collapsed trust: grid segmentation, safety reporting, bio-surveillance bought hours while dependence hardened — clinics on EU default with metered US fallback, factories frozen, fenced in under US chip/model quotas.
+
+Autumn brought two shocks: a new longer-autonomy model generation and a largely automated ransomware/dependency-poisoning sweep locking municipal/hospital records, tainting updates, tripping substations on false telemetry. Attribution deferred; safety verification eroded as tooling distrust forced rollbacks.
+
+Cascading failure was avoided by the unglamorous summer-completed cross-border fuel/transformer/generator pool and black-start-by-hand drills — slow manual restoration, pools depleted but functioning.
+
+Under transatlantic crisis channel, US labs shared early automated patching and swarm-detection for pooled European telemetry/samples; sweep-hit states formed joint command and biosurveillance pact with Union invited. Brussels plugged in via existing mandates but deployment partial, pending staffing/compatibility/funding. Health/justice EU-assistant pilots kept clearing backlogs; anti-AI arson on backups continued with sympathetic coverage. Trust in AI fell further, gratitude for manual restoration rose. Common line held only just; running, but waiting.

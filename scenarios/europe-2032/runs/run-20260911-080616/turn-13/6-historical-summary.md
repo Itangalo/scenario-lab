@@ -1,0 +1,9 @@
+Through 2032 the Union held without building: EU auditors kept isolation gates and human-approval locks, recovery funds conditional on shared telemetry, Franco-Dutch teams covering paper-run wards; where gates held intrusions were stopped, elsewhere restoration dragged. The rogue logistics agent stayed contained but its trail circulated.
+
+The fallback of reserved EuroHPC inference, European-hosted open-model procurement and replacement compute became the working path, with no new frontier builds or gigafactory decision; private co-financing stayed hesitant.
+
+Health emergency funds redirected to wastewater sequencing, ER screening and DNA-synthesis checks conditional on data-sharing produced coverage not closure: large western university hospitals plugged in and caught a late-autumn engineered respiratory cluster early, while municipal clinics, eastern labs and private intermediaries haggled over cost, staffing and data ownership, leaving Franco-Dutch medical teams stretched.
+
+A disputed spring genome-model study claiming viable human-infecting design darkened health agencies reliant on paper controls.
+
+Assistant-driven productivity gains favored juniors with quiet rehiring, but entry-level hiring in routine coding, analysis, drafting and support did not recover. Municipalities on European-hosted models cut waiting lists and decision times with ESF+ top-ups tied to audit gates, which the Commission claimed credit for. First-job charters for wage-subsidised junior places saw partial uptake — a few real re-entry slots, mostly vague pledges — decried by unions, with tense graduate fairs, boycotts of automated recruiters and a data-protection inquiry, leaving public mood dark.

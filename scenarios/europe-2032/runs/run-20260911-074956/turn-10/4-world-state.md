@@ -1,0 +1,11 @@
+### Shelter Under Fire
+The war no one in Brussels would name until it started began in February, over the strait and in orbit within hours. American and Chinese strikes traded fabrication plants, satellite layers and cable routes. Rotterdam landing stations went dark for a day; a Marseille data-centre corridor lost power when grid switchgear tripped. Reserve teams that had spent autumn restoring registries were redeployed to splice cables and re-image hospitals.
+
+The Union declared non-belligerency, denied offensive use of its territory, and dispersed backups inland. Hardening with the new long-life alloys held at two landing points and failed at a third. Neutrality kept European soil from being deliberately targeted, but proximity did the work anyway: insurance rates for shipping and chips tripled, accelerator deliveries stopped, Paris and Warsaw halls went cold.
+
+### Cures on Licensed Terms
+In the middle of it came the therapies. Individually tailored treatments for several previously untreatable cancers and a severe autoimmune disease reached ordinary clinical use in the United States — built on models Europe could not run itself.
+
+Brussels negotiated EU-hosted manufacturing licences and pooled reagents through the emergency health apparatus. First batches were filled in Lyon and Leverkusen in May, administered through the same triage-assistant networks that had cut Danish and Portuguese backlogs. Queues moved; families wept on evening news. That it worked did not hide where it came from: leaflets called it borrowed healing, and pharmacists rationed doses while Washington prioritised its own war wounded.
+
+By June wage top-ups still paid, registries mostly stayed up, and clinics kept sorting. But graduate hiring collapsed outright, southern municipalities paused retraining vouchers to fund shelters, and the bio-detection network remained seed contracts and borrowed sequencers. Europe had sheltered, healed a little, and kept services European-run — at the edge of its means.

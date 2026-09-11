@@ -1,0 +1,9 @@
+Winter brought dual shocks: lab-escaped pathogen filled ICUs, and Taiwan quarantine froze chips, spiking accelerator prices.
+
+Brussels invoked emergency powers: sequencing/wastewater monitoring, stockpiles, bio-model reporting, rationed compute and two Gigafactory sites, grid priority, lithography controls. Large hospitals/grids held; small municipalities/utilities strained with staff shortages, blind isolations, insurer pullback.
+
+Autumn: pathogen ebbed unevenly; small towns suffered chlorination loss and boil notices; reinsurers paused cover. Brussels answered with manual-fallback playbooks, staffing pacts, EIB insurer backstop, Trust and Transition Pact with wage bridges. Helped where staff arrived; resentment elsewhere.
+
+November US vote elected coalition-builder; by winter new Washington administration offered tiered allied frontier access and joint testing with export-control/standards strings. EEAS sought evaluator seats; DG COMP tried to prevent access becoming substitution for two Gigafactory sites.
+
+Winter added new shocks: US lab demonstrated long-horizon autonomous system collapsing benchmarks; Chinese and US firms moved humanoids from pilots to catalogue sale, with warehouse/municipal orders across Europe. Bio-Shield formally stood up, large hospitals weathered flu surge, Municipal Pact kept some clinics staffed and drilled chlorination fallbacks, EIB backstop kept two reinsurers. But robot shock hit machine-tool makers and warehouse temps, fueling union backlash. Sovereignty package booked permits/pledges, but Taiwan allocations still frozen, accelerator prices high — capacity on paper, not in hand.

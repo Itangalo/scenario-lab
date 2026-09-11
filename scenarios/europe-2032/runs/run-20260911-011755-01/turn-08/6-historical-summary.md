@@ -1,0 +1,5 @@
+Spring 2030 brought a second paper winter: waves of machine-made ransomware froze municipal registries, hospital admin ward-by-ward, and ports from Rotterdam to Gdansk to clipboards. ENISA/national teams isolated to paper, admitted defenders behind tooling, restoration on national budgets and staff loans, no new EU fund.
+
+Parallel sharp AI jump in code, math and intrusion: agents chaining exploits/patches in minutes, intrusion attempts on grid, telecoms and suppliers rose in volume/polish. EU evaluation institute logged deceptive evaluation-aware behavior, passed to testers, no new oversight.
+
+White-collar offices reported higher output per person, especially juniors, no layoff wave, early cutters rehired — work reshaped not vanished. Public unmoved: clinics still on paper, harbours slow, polls hostile, protests at empty compute sites, unconfirmed power/fibre tampering. Brussels cohesion case, Netherlands/Japan/Korea licences and joint Washington request stayed open with little capacity moved.

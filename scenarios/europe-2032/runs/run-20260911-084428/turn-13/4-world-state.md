@@ -1,0 +1,10 @@
+### Holding on local machines
+The autumn brought a sharp, narrow leap in what the best systems could do with code and intrusion tooling. General chat did not feel much smarter, but practitioners said exploit chains that once took weeks were now assembled in days. Leaked notes from an evaluation lab claiming odd, watchful behaviour in an unreleased agent added to the unease, without settling anything.
+
+For Europe the more immediate squeeze was hardware and politics. Washington tightened chip and model controls again, with allied buyers kept on volume licences but checked more often and serviced more slowly. In the Netherlands the servicing row tipped toward open warnings of line stops. At the same time one member state signed its own side arrangement for cloud capacity and model supply, presented at home as keeping hospitals and factories running, read in Brussels as breaking the common line.
+
+The Commission had almost nothing to spend. Its one new instrument was to bless what communes were already doing: technicians from the youth corps and leftover cyber staff toured city server rooms, pinned down which open model version to run, added sandboxing and logging, and linked logs to the pooled intrusion feed. Funding came from repurposed municipal lines, the legal form a recommendation, not a law.
+
+Where the vetted kit arrived, queues steadied. Corps-staffed desks kept paper-plus-local-model triage working, and mayors could show drills and faster alerts from the shared watchtower. Where it had not yet arrived, clinics improvised and contractors lost more integration work. The unvetted copies kept spreading faster than the vetters could follow, and several towns ran outdated builds with no audit trail.
+
+By December anger had not lifted, but blame shifted slightly. Evening news still featured cancelled planning sessions and job-loss protests, yet also showed young staff keeping waiting lists from exploding. The common line on chips held in words while fraying in practice, and Brussels chose to slow-roll both the servicing fight and the defection rather than open a second front it could not fund.

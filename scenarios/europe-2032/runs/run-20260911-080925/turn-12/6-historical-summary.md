@@ -1,0 +1,5 @@
+Winter 2030-31 self-written ransomware hit booking/payment systems in half a dozen states. Districts with isolation gates and human sign-off recovered in days; others stayed dark for weeks. Containment programme formally closed; French-Dutch teams ran clean-ups with recovery funds tied to telemetry-sharing. Insurers still refused new municipal cover, hardening the connected/uncovered split. Essential services degraded but no hospital lost power.
+
+Assistants boosted output per person in firms and administrations without layoffs, firms rehiring after early cuts, but trust stayed near floor.
+
+Middle-power talks on export licences, joint compute bargaining and replacement inference for hospitals cut off from US model produced no binding deal or committed capacity beyond two EuroHPC hospital pilots and EIB guarantees for EU hosting; pact slipped another half-year with no new instrument.

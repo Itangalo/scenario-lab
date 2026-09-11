@@ -1,0 +1,5 @@
+Early 2031 brought a dual cyber blow: ransomware across municipalities, clinics and a regional grid operator plus a poisoned software library with unclear spread. AI-accelerated patching favoured attackers; defenders restored from offline copies while restores were probed. Brussels mobile response teams with vendor contracts and paper checklists kept early-arrival water and emergency services islanded, late arrivals seen as symbolic. Prior winter-kit dark-running contained physical damage but not political impression of dark town halls.
+
+Simultaneously, routine code/analysis/drafting/helpline entry jobs were permanently cut, termed lost generation vs transition. Washington tightened export licensing — volume on paper but quotas/delays/allocation — amid a US lead in code/maths/intrusion models reproducible but not originatable in Europe.
+
+By June 2031 power was on, services patched-brittle; following 2030 freezes and rationing, voters judged the Union able to keep essentials alive but not safe, employed, or independent.

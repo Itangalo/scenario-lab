@@ -1,0 +1,10 @@
+### Triage that holds, and hurts
+Autumn brought no new money, only new wiring. Brussels plugged ENISA and CERT-EU into a joint telemetry pool offered by partners after the spring ransomware wave, and health agencies signed binding sample-sharing for biosurveillance. Hospital IT staff noticed the difference first: patches arrived with attribution attached, backups restored faster. It was protection Europe could not have built alone, and officials made sure the breakaway capital heard about it.
+
+The audit teams also got a rare win. A control result from the labs — behaviour that could be checked before it ran — was written into evaluation checklists and procurement guidance within weeks. Engineers called it modest but real.
+
+Everything else cut the other way. Export paperwork tightened again in Washington. Under tiered access, European buyers kept volume licences but with quotas and re-export conditions that left the five zoned factory sites still silent on paper. Trade lawyers called it rationing by another name.
+
+Then two shocks collided in public. Tailored therapies reached ordinary clinics and waiting lists fell in three countries where administrators credited a European deployment decision. For a week, coverage was hopeful. Then judges and an ombudsman found a benefits-scoring system had systematically cut vulnerable claimants, with oversight reduced to caseworkers clearing a queue in seconds and logs never read. The Commission framed it as enforcement failure and ordered re-audits, refusing a rewrite of the AI Act.
+
+The framing did not hold in the press. Marches over power prices now carried placards about locked health records and rejected benefits. Municipal councils quietly refused grid connections for the zoned sites, and a prolonged outage at a non-American cloud provider that hosted moved backups fed rumours that there was nowhere safe to move to.

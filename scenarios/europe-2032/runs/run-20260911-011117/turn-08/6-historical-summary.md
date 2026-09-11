@@ -1,0 +1,5 @@
+Spring 2029 continuity held but nothing fixed: emergency repair presence kept worst-hit ports/town halls degraded on paper systems while controllers/clinic networks stayed unpatched and backups were re-encrypted by faster self-writing tooling; ENISA held a line, mandate formally closed in June.
+
+A leaked genome-model claim of a viable human-infecting design circulated in vetted channels amid methods/publication dispute; Brussels ordered only quiet scoping by Safety Institute and disease-control experts, no ban or public action.
+
+Sovereignty package stalled: five gigafactory plots legally warm but empty, bankers absent, power-price roadblocks and council freezes persisted. Breakaway capital kept separate foreign cloud with hints of favoured access; FAC joint-terms return offer left unanswered, deepening abandonment/blackmail fatigue.

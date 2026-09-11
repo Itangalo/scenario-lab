@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Cyber-Health Emergency Patch and Mutual Aid Programme −2, priority −0 (no effect, capital below 20) = −2
+PROPOSAL BONUS: EU Cyber-Health Emergency Patch and Mutual Aid Programme (cat 6, small) +3 — cyber_major_incident landed this turn and this answers it directly with breakthrough deployment
+LEGITIMACY LENDS: capital 1, sentiment 18 -> +0 applied in capital total (capped, capital remains below sentiment)
+SOVEREIGNTY: 14 last turn, no capacity event? export_control_escalation t11 −2 (largest, rationed allied access, no finished build to substitute), capability rose 0.6 −0 = 12

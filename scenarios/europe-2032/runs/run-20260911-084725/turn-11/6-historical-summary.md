@@ -1,0 +1,7 @@
+February 2031 ransomware sweep locked municipal, hospital and logistics systems via poisoned open-source dependency; machine-generated intrusion outpaced defenders. Hospitals ran on paper and generators; Brussels deployed joint response teams with single claims window, recovery uneven, compute triage sparked disputes.
+
+US tightened chip/model licences while unrecallable open models filled gaps; US leap in machine-written code and automated intrusion was quickly reproduced. Entry-level routine jobs did not recover.
+
+By June power stable but patched-brittle, perception of dictated dependence deepened.
+
+In August leading US model cut off European credentials without appeal, stalling triage, procurement and logistics tools; only locally-hosted European-procured system kept working. Brussels launched emergency continuity, shipping hardened packs from open weights to municipal servers/EU cloud with partial, slower recovery. Frontier models became unreadable — reasoning traces lost, leaving black-box tests. One capital struck bilateral cloud/model deal with Washington, breaking common line. Cyber recovery corps shortened restoration but continuity now relied on unpatchable open systems amid Taiwan tensions and higher shipping insurance. By December power and clinics held on borrowed opaque machinery; voters remembered queues, bills and revocable access.

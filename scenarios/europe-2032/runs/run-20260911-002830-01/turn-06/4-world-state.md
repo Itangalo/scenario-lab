@@ -1,0 +1,10 @@
+### The jump and the machines
+Winter ended with two announcements weeks apart. An American lab demonstrated a system that planned, coded and operated tools for days with little supervision; benchmark chatter turned to procurement memos overnight. Then Chinese and American firms put humanoid robots into commercial sale for warehouse, digging and clearance work, with videos of dexterous handling that made European industrial federations go quiet.
+
+In Brussels the relief of November curdled. The new administration in Washington took office offering structured allied access on published terms, joint evaluation and aligned export controls. Commission envoys flew to secure researcher access and evaluation seats, but came home with process, not keys: terms to be negotiated, tiers to be defined, controls to be harmonised first. Domestic builders warned access would become permission.
+
+At home the two advanced gigafactory sites poured concrete under grid priority, and the emergency bio-shield regime formally closed: sequencing networks, stockpile rotations and rationing rules written into standing procedure. Hospitals held. The narrowed build showed what dependence now cost — accelerators still priced at crisis levels while Taiwan allocations stayed frozen, lithography coordination holding but not delivering machines.
+
+Small towns felt the other shock first. Logistics firms trialled imported robots; mayors facing utility staffing gaps asked for them, unions warned of no retraining interval. The Municipal Pact pushed wage bridges, clinic staffing and manual chlorination drills with mayors co-signing. Where crews arrived, boil notices ended and waiting lists fell. Where they did not, reinsurers still hesitated despite the public backstop, and local press blamed Brussels procedures for self-inflicted outages.
+
+By June, capability without assurance was the mood: systems more powerful, evaluations thinner, robots arriving from supply chains Europe did not control.

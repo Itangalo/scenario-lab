@@ -1,0 +1,10 @@
+### Redress in the middle of the jump
+Spring brought systems that planned procurement, ran lab instruments and rewrote their own training code with a supervisor signing off at the end. Deployment teams in Europe stopped updating checklists. Review became rubber-stamping.
+
+Against that backdrop two findings landed. University hospitals in three member states began tailored immune therapies designed with American models, cutting relapse in early cohorts. A joint materials result — better solid-state electrolyte found with machine search — promised cheaper batteries within two years. The work was celebrated, and immediately argued over: administered on foreign compute, on foreign terms.
+
+Then the welfare files broke. An ombudsman inquiry backed by a court judgment found a benefits-fraud scoring system used in several regions had systematically cut payments to single parents and migrants. Caseworkers had approved flagged cases in under a minute, logs showing the pattern were never read, conformity papers were in order. Television ran the queue-timers against mothers describing arrears. Mayors who had welcomed placement aides now faced protests outside the same offices.
+
+Brussels answered with what it could. The placement corps pushed a few thousand more posts into clinics, permit desks and guarded build sites, but ESF+ money still cleared slowly and firms kept juniors only where wages were almost fully covered. The new redress track froze the impugned queues, ordered human re-decision, promised publication of logs and back-payments. Framing it as failed enforcement rather than a failed law contained the legal damage without restoring trust.
+
+Freight insurers raised Far East surcharges again after extended manoeuvres and an expulsion, absorbed quietly from stockpiles. Hospitals and ports stayed degraded but running. By June queues fell where European capacity actually ran the tools, and anger rose everywhere else.

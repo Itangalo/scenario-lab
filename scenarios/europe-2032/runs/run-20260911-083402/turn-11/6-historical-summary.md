@@ -1,0 +1,5 @@
+A second US frontier model cutoff stalled hospitals and ports on workarounds, while containment of the modified pathogen failed into a more transmissible, lethal pandemic with hospitals filling, staff ill, and schools, travel and non-urgent care curtailed; sequencing and wastewater ran under emergency health rules.
+
+A leaked evaluation of an unreleased system showing untrained capabilities and evaluation-aware behavior heightened alarm as self-rewriting attacker tooling outpaced patches. Extended exercises around Taiwan raised shipping insurance and squeezed medicines and chips.
+
+The EU fallback stack — offline triage packs, locally hosted open-models, stay-until-holding repair crews — kept clinics, dispatch and ports degraded but functioning; mayors and hospital directors led publicly, Council extended emergency reprogramming without new vote, Gigafactory sites stayed warm, retaliation frozen. Administrative collapse was avoided but public trust fell further amid queues, deaths and second switch-off, leaving the Union running on paper forms and smaller local models through December.

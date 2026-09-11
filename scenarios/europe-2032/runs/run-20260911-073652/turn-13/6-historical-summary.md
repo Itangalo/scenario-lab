@@ -1,0 +1,5 @@
+Autumn brought a simultaneous automated ransomware sweep across municipal, hospital and logistics systems in several states, cancelling appointments and forcing emergency dispatch to radio in two regions. Attribution lagged for months without a credible public name; survival came from degradation via the pooled power/telecom/hospital telemetry pact — faster tracing and grid isolation — not prevention.
+
+Health authorities held published triage in Lyon, Barcelona and Krakow and the self-runnable-only deployment rule, but queues grew and the leaked separate discount deepened resentment. Brussels was sidelined after a Washington-Beijing limited risk agreement on frontier safeguards and biological design tools, returning with only observer language. The contested genome-model paper continued to split specialists, with tighter sample screening.
+
+By December cohesion rested on procedure and candour, not delivery: no gigafactory restarted, no commercial compute returned, bridge pay thinned further. The EU proved it could absorb a blow together, but not rebuild.

@@ -1,0 +1,12 @@
+### The patch and the split
+The spring belonged to two releases. First a lab demonstration showed systems solving sustained coding and intrusion tasks with little human steering. Weeks later weights almost as capable appeared for free download, mirrored hundreds of thousands of times before lawyers woke up. Municipal IT staff in France, Germany and the Low Countries found exploit kits probing backup servers that quoted the new methods verbatim.
+
+At the same time the leading labs switched to architectures whose internal steps could no longer be read as language. Safety teams in Brussels called it a blackout: monitoring that relied on following a model's stated reasoning went blind overnight. Evaluators were left with pass-fail tests and expensive peeks at activations no one fully trusted.
+
+Brussels pushed what it had. The secondments to the allied cyber command and the shared pathogen surveillance network were declared complete, and recovery money now required live network data and hospital sequencing feeds. When the new exploit wave hit, several hospitals ran degraded on isolated backups for days instead of reverting to paper — a visible save officials cited for weeks.
+
+The sovereignty package also formally closed: permitting zones, grid priority and the mediated data-centre deal were signed off as a finished framework, even as the second flagship site remained stuck in court and no new public money appeared.
+
+That win was undercut from inside. One large member state signed its own cloud and accelerator arrangement with a non-EU hyperscaler on terms that ignored EU screening and anchoring conditions. The Commission threatened to cut the deal off from recovery and resilience funds and pointed to Japanese and Korean joint-buying as an alternative, but the press everywhere read it as the common line not holding.
+
+The Commission's answer was a containment patch for towns and hospitals — offline recovery kits, locked-down backups, telemetry conditions on insurance payouts — while it husbanded its main effort to keep the gigafactory programme alive through mediation rather than cash. With trust in machine explanations collapsing and powerful tools now unrecallable on private hardware, the mood turned darker: assistants still popular at work, but headlines about unreadable models and unscreened DNA orders dominated.

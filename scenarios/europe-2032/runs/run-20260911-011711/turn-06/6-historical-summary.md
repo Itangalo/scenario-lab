@@ -1,0 +1,5 @@
+Autumn 2028 grid drive closed with spares to national budgets and legacy controllers/clinics unpatched; US election confirmed revocable model dependence; EU pooled leverage via joint licensing with Netherlands/Japan/Korea, common Washington compute ask, and shared testing, with 5 gigafactory sites reserved but unbuilt.
+
+Spring 2029 ransomware wave via poisoned management-tool update locked hospitals and city administrations in a dozen states, recalling emergency crews; spares held but unpatched clinics failed, exposing defender automation gap. A member state then broke ranks with a separate compute/model deal with an outside supplier, undercutting the Hague-Tokyo-Seoul common line.
+
+With no funds, Commission chose triage: recovery under emergency powers, coercion file on side deal, offer to rejoin joint Washington request. Data-centre programme formally buried — five sites zoned but silent. Joint licensing/supply-chain compact left as sole priority, buying time not capacity. By June blackouts avoided but trust lost; power-price and health-record anger merged, public sees dependence neither managed nor overcome.

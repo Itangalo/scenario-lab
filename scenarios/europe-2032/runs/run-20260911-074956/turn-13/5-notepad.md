@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: EU Manual Continuity and Defensive Patching Surge −2, priority −0 (capital 12 below 20 so priority has no effect and no cost) = −2
+PROPOSAL BONUS: EU Manual Continuity and Defensive Patching Surge (cat 6, small) +4 — eu_frontier_access_denied plus escape variant plus February cyber sweep all landed this/last turn and this answers them directly
+LEGITIMACY LENDS: capital 17, sentiment 12 -> none (capital higher)
+SOVEREIGNTY: 12 last turn, no capacity event counted? eu_frontier_access_denied t13 −3 (largest of access-denied and supply coercion), no cat4 in flight +0, capability rose 2.1 −1 = 8

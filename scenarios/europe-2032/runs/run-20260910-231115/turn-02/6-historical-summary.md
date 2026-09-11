@@ -1,0 +1,7 @@
+Autumn grid intrusions probed transmission systems in Europe, North America and Asia without switching off power; attribution failed, tooling adapted from existing open model, segmentation assumptions failed. No new release explained jump.
+
+EU response: opened site selection for 4-5 AI factories seeking grid pledges and cohesion compensation; no second measure; evaluation capacity remained informal. By Dec 2026 only plans, no power, financing, hiring or tests.
+
+H1 2027 brought three shocks: cross-strait quarantine froze chip shipments, spiking prices and slipping factory schedules; a new openly downloadable frontier-class model spread unrecallably, giving autumn intrusion tooling fresh engine and sparking extortion copycats; one member state broke ranks with separate hyperscaler deal, fracturing EU negotiating line.
+
+EU's sole move was defensive hardening: TSOs, ENISA and civil protection segmented OT, stockpiled relay configs, drilled black-start in compromised zones, funded by repurposed budgets with cohesion side-payments. Factories frozen with sites locked but no disbursement; understaffed evaluation institute tasked to certify interpretability result and triage leaked model. By June 2027 resilience to grid hit improved, but build capacity worsened: no chips, breakaway stood, power/permitting constraints persisted.

@@ -1,0 +1,11 @@
+### War arrives
+In February, American and Chinese strikes began trading across the Pacific, and within weeks the war found Europe. Undersea cables in the Atlantic were cut, a satellite ground station in the north was hit, and fabrication plants and data centres were named as legitimate targets. Replacement parts stopped coming. Therapy queues set in California froze, then were rationed openly by wartime priority.
+
+Washington offered structured access on published terms, but under fire the terms meant little. Brussels declared neutrality-plus-supply: cable landings, cleanrooms and evaluation hosting open to neither belligerent for military use, conditional on both respecting European sites. Neither capital gave a firm answer.
+
+### Lights, queues, fires
+At home the new Continuity Shield moved fast for a Union with almost no room to act. Repair battalions under guard were sent to the two gigafactory grid connections, hospitals and certified triage compute got priority dispatch, and cross-border failover kept command networks alive through two cable outages. It held the lights on, but did not restore growth.
+
+The sabotage campaign spread from fenced robot pilots to the grid works themselves. Night arson halted construction for weeks in two countries despite military patrols. Mayors who had been promised reopenings under the graduate and logistics guarantee re-imposed bans; bridge pay offices filled while hiring did not. A leaked open-weight release near the frontier was downloaded hundreds of thousands of times in days, and evaluators admitted they were reading release notes after unattended training runs had already shipped.
+
+The defecting capital did not return. Pooled bargaining through the middle-power club secured a few shipments of spares and medical-model inference, but no lab opened a checkpoint and no vendor re-routed chips at scale. Finance ministers refused any new money, forcing the Shield to live off existing envelopes. By June, clinics rationed doses by the hour, ports ran on curtailed shifts, and the public story was no longer healing by permission but survival on permission.

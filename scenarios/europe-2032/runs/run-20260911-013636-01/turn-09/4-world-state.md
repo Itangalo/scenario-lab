@@ -1,0 +1,13 @@
+### A leap, a freeze, and a breakaway
+Autumn brought a sudden jump in frontier systems. Demonstrations from American labs made European substitutes look a generation older overnight: longer autonomous runs, cheaper deployment, new results waved past peer review. Procurement officers who had just learned to live with domestic tools asked why they were being asked to settle.
+
+At the same time hiring stopped for graduates. Law firms, accountants, software houses and customer centres left entry posts unfilled, blaming automated drafting, review and support. Universities reported cohorts with offers withdrawn. Ministers argued over numbers; families saw empty desks.
+
+The restoration effort formally closed. The emergency cell handed cleaned backups to city IT teams and a handful of showcase hospitals, kept islanding drills, and quietly dropped the ban on reusing foreign workflows that everyone had evaded. Queues shortened in places, but most municipalities still ran on paper alongside fragile systems, with no systemic hardening completed and overall robustness unchanged.
+
+### Outsiders together, insider apart
+Brussels bet on outsiders together. Foreign and employment ministers launched a single pact — the Middle-Power Resilience and Jobs Pact — tying joint bargaining over computing, aligned export licences and a shared testing pool to retraining money and wage-insurance pilots for young professionals as components of that one measure. The secretariat was thinly funded from anti-coercion reviews and social-fund reallocations, but the signal mattered: if supply-chain holders acted jointly, even Washington would have to negotiate. As a newly proposed measure, it will take time to staff and fund, with no effect yet this turn beyond a small joint-leverage gain partly offset by the widening capability gap.
+
+That signal was undercut from inside. One member state signed its own capacity arrangement outside common logging and mutual aid, defending it as pragmatism for hospitals and jobs. Others called it a breach of the common line. Offers of pooled access failed to pull the holdout back, and the older side deal with an outside cloud provider stayed unsigned under European rules.
+
+By December, lights held and a new jobs promise existed on paper. Trust did not. Street coverage paired graduate despair with ministers flying to bargaining summits, and the sense spread that recovery was being negotiated elsewhere.

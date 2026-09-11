@@ -1,0 +1,10 @@
+### Cut off in the middle of containment
+The notice arrived without explanation. Clinics, ministries and logistics firms running on the leading American model found queries refused or throttled by user nationality. Helpdesks quoted contract language. Workarounds circulated for a day, then failed. In hospitals that had layered triage prompts on top of the foreign system, doctors stared at blank screens.
+
+In the same weeks, health authorities confirmed what wastewater monitors had been flagging: a modified pathogen, with traces of machine-assisted design in its assembly, had leaked from a lab project and then spread deliberately through a small network. Wards sealed, contacts traced, sequencing labs ran day and night. Deaths were counted in dozens, containments in weeks. Every talk show reset to the same question of what the models had helped build.
+
+A third shock was quieter but changed the repair war. A new code-writing release demonstrated automated intrusion chains that re-compromised cleaned municipal networks within days. Crews who had held appointment systems and port clearance through the winter watched them jam again after clearing.
+
+What held was unglamorous. The municipal backup kits and clinic sentinels deployed the previous year kept paper-to-digital triage, dispatch logs and port manifests moving without the frontier provider. Embedded Union repair teams generalized into standing rosters, swapping in smaller European-hosted open models for prescribing notes and dispatch summaries. Mayors credited crews who stayed until systems held. Containment coordination ran through emergency health channels without a new vote.
+
+Everything else gave. No new factory money was voted. Servicing curbs on chipmaking tools were obeyed. The Council was asked only to endorse continuity, not money, for fear a budget fight would break cohesion entirely. Citizens saw queues hold but not shorten, and blamed both the provider who cut them off and the Union that had let them depend on it.

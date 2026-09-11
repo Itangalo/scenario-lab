@@ -1,0 +1,10 @@
+### Kits sealed, cures queued
+ENISA teams spent the autumn driving vans to town halls. The containment patch largely landed where it was simplest: large hospitals and grid operators sealed offline backups, switched on reserve licences, and began streaming telemetry to the joint cyber command in exchange for recovery money. In smaller communes the same kits sat unopened for lack of hands, and the Commission quietly paid for surge staff borrowed from university hospitals. Patch coverage remained partial, and safety teams reported thinner oversight as attention and staff were pulled to deployment.
+
+The new tailored therapies arrived in the same months. HERA opened joint procurement and EMA fast-tracked approvals, with university hospitals first in line. To retain access to the large HERA joint procurement market, foreign model vendors agreed to serve triage and dosing support via inference on Europe-anchored infrastructure, and procurement clauses reflecting that agreement worked for those uses, but the underlying models for protein design and treatment planning still ran elsewhere. Patients spoke of remission on evening news; pharmacists spoke of licence queues.
+
+Export controls tightened again from Washington. Under its moratorium-focused administration, the controls were drawn tight enough that even licensed allies faced quotas and paperwork. Brussels chose not to fight. Its small coordination cell with Tokyo and Seoul traded screening pledges for secured shipments, enough to keep one gigafactory investment decision alive. The other site remained in court, and the member state with its separate hyperscaler deal kept its own line.
+
+Rumours swirled of Asian labs running long intrusion campaigns without human checkpoints, and of a competing readable model drawing researchers away, but neither arrived as more than conference talk and single-source reporting.
+
+The first gigafactory concrete was poured, but the build remains in flight — groundworks and power connections still to come — and dependence did not lift. Full sovereign capacity has not finished this turn.

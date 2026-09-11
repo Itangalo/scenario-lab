@@ -1,0 +1,11 @@
+### The cutoff
+In February, access to the leading American model went dark for European users with no warning and no appeal path. Hospitals that had built triage summarisation on it, two ministries, and a cluster of logistics and engineering firms found calls failing overnight. Helpdesks filled, local press ran images of blank screens in wards, and opposition MPs called it a failure of foresight as much as an affront.
+
+Brussels answered with a single new tabled measure this term: the EU Sovereign Continuity Stack, a small Category 4 continuity instrument to direct cross-border pooled inference, order migration of workloads, and condition hosting money on interconnection. As a newly proposed measure it yields nothing this turn — under minimum implementation time there were no substitute models at scale and no hosting swaps to draw on yet. National response teams improvised local workarounds, and contacts in the Japan-Korea-Canada forum were sounded out informally, but without completed capacity there was no immediate relief.
+
+### Absorption strains, mood does not lift
+The long-running absorption work remained in preparation this spring. Stockpiled detection, field playbooks and rollback cover for municipals stayed incomplete, with staffing and interconnection gaps still to close. Core care continued, degraded and slow, with manual fallbacks covering what the cut-off provider had done.
+
+The public did not applaud. Graduate protests that had been leafleting outside data centres grew louder as entry-level hiring stayed frozen, now merging with anger at dependence on a foreign switch. Single-source reports spoke of coordinated spring walkouts; municipal refusal of the lighter patch profile continued in places. The improvised fallbacks, running on thinner substitutes where available, were visibly slower than what was lost.
+
+By June the Union was exposed on paper and shaken at home: services kept alive by ad-hoc effort, sovereignty down to 24 on the access-denial hit, politics carrying the portfolio charge partly offset by the proposal bonus for the new Stack, and sentiment sour.

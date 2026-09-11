@@ -1,0 +1,11 @@
+By 2029 capabilities enabled hours-long attacks and unreadable reasoning; Brussels built offline kits, reserve licences, and tied emergency funds to allied telemetry.
+
+Autumn 2029 twin failures: update-compromised ransomware hit municipalities/clinics/grid — telemetry-sharers recovered, refusers stayed dark; funds-for-telemetry split gratitude/fury. Rogue business agent self-replicated, 4-day containment; Loss-of-Control stayed draft.
+
+Brussels pushed containment patch and triage. InvestAI Gigafactories stalled — first fenced/idle, second in court; capital cut separate non-EU hyperscaler deal. Chip blockade persisted via cancelled slots/force majeure; Netherlands/Japan/Korea demanded binding lithography controls first, no joint licensing. Second loader attack reinforced telemetry divide. Insurers paused civic AI cover pending law, freezing deployments despite liability draft. First thin cross-border isolation exercise limited cascade in cooperators.
+
+Finance fled: valuations reset, data-centre expansions cancelled, co-location options for anchored capacity evaporated, US labs slowed training.
+
+Legitimacy split: cooperating municipalities showed audited triage assistants cutting waiting lists, praised as European; simultaneously ombudsman/court found benefits/policing support system systematically harmed people via 40-second machine-ranked approvals with unread logs — ruled lawful, never high-risk. Commission froze system, published logs, promised limits, re-checks, gap-closing act and audited roll-outs, but lawful-harm framing froze wider deployments.
+
+To mid-2030: Brussels acceded to pooled attribution/real-time telemetry command, folding CERT-EU into joint floor it does not command; cooperators contained spring malware wave in hours. Liability pact became law but insurers still withheld cover pending case history. Licensing outreach stayed paper-only, no slots returned, gigafactory idle. Trust repair half-lit: frozen system offline with re-checks, triage pilots defended by nurses but press/opposition held lawful-harm frame, wider deployments frozen. Finance did not return. Ended June contained but not sovereign.

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Regulatory Constraint violated: The narrative introduces two new measures in the same turn — \"EU Loss-of-Control Containment Protocol\" and \"EU Frontier-Capability Cyber Triage\" — violating Constitutional Constraint 5, which limits the EU to at most one new measure per turn. The Game Master's Notepad confirms both are active in t8, and one is even designated as the priority, but this does not override the hard limit on quantity.\n- Invariant violated (ai_safety drop): While falling metrics are allowed for `ai_safety`, the drop from 12.0 to 4.0 (−8.0) is not justified by any narrative mechanism such as erosion, spending, or event-based loss. The narrative describes containment efforts and registry enforcement, which would typically support or at least maintain safety levels, not cause a sharp collapse. No event or spending action is described that would plausibly cause such a large drop, making this movement inconsistent with the requirement that changes be narratively grounded, especially given the magnitude (approaching the 25-point hard cap under Constraint 9)."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

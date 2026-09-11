@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: M8 EU Sovereign Clinical-Administrative Fallback Stack −2, M9 EU Observer-Verifier Bridge to the US-China AI Risk Accord −2, priority −0 (capital below 20, no effect no cost) = −4
+PROPOSAL BONUS: EU Observer-Verifier Bridge to the US-China AI Risk Accord (cat 8, small) +3 — us_china_agreement landed this turn and this answers exclusion risk directly, tempered by defection same turn
+LEGITIMACY LENDS: capital 1, sentiment 2 -> +1 (capped by sentiment)
+SOVEREIGNTY: 16 last turn, no capacity event? no — member_state_defection t11 −2, no cat4 in flight bonus, capability rose 0.6 −0 = 14

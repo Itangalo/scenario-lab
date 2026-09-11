@@ -1,0 +1,8 @@
+### Holding without votes
+Autumn 2031 offered no recovery, only endurance. The fallback stack stayed the Union's sole instrument: joint medical procurement kept sequencing reagents and wastewater kits flowing, civil-protection rosters kept stay-until-holding crews in clinics, dispatch centres and ports, and locally hosted openly available models handled triage summaries, prescriptions and clearance paperwork on municipal servers.
+
+Staff made it work by lowering expectations. Paper-to-digital packs returned to waiting rooms. Queues lengthened but ambulances ran and ports cleared. Mayors took visible credit; Brussels communiques explicitly took blame for delays, asking councils only to endorse continuity and to leave future building sites fenced but unfunded.
+
+Two pressures worsened around that fragile hold. Frontier capability crept forward elsewhere, and a new openly released system landed within months of the closed lead. It was downloaded hundreds of thousands of times in days. Hospital IT staff installed it gratefully as a better fallback engine; security teams noted the same download gave any intruder a drafting assistant for break-in code that once required a team. Two more jamming episodes hit booking and port software, cleared each time by crews working overnight.
+
+No new Union measure was asked for, and none could have passed. With funds exhausted and hostility open in polls and town halls, even the priority label on the fallback work changed nothing on delivery dates — engineers said the same winter date they had said in spring. Containment of the spring contagion held, but funerals and blank screens from the American cutoff dominated memory more than the holding itself.

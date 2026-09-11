@@ -1,0 +1,10 @@
+### Holding the line
+July to December 2032 was governed, not built. With no money and no goodwill to start anything new, Brussels kept existing orders running and largely kept the lights on.
+
+The black-start stores held again. Transformers, fuel and mobile generators stayed split and guarded, drills ran on manual routines, hospitals moved parts across borders on schedule. But the sabotage campaign changed shape. Coordinated anti-AI groups moved from cutting fences to parking vans and tractors across guarded repair convoy routes, forcing gendarmerie escorts and delaying two restoration exercises. Police cleared the roads, but footage of officers dragging protesters from in front of grid trucks played for weeks.
+
+Two outside shifts cut both ways. A genuine advance in defensive software — patching at machine speed and catching coordinated intrusions by behaviour rather than signature — was pushed through standing network-security orders to health and grid operators first. Engineers said it helped; it did not end intrusions. At the same time, leaked benchmark chatter from an unreleased frontier system claiming strange, unexplained jumps in performance rattled oversight teams already blinded by unreadable internal reasoning. The Commission logged it as another reason not to re-automate.
+
+The economy gave no relief. Law firms, accountants, software houses and back-office employers confirmed what graduates already knew: entry posts were not being refilled. Ministers toured the same two health systems where European-run scheduling cut waits from months to days, but the contrast sharpened anger — useful tools in clinics, no jobs in offices.
+
+Exhaustion turned to humiliation. Under continued American quotas, with convoys blocked at home and hiring frozen, the Union looked unable to build, unable to hire, unable to protect its own repairs without a police escort.

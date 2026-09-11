@@ -1,0 +1,5 @@
+Foreign frontier AI keys revoked overnight for hospitals and ministries in three countries amid August recovery; care pathways and logistics optimisers went dark. Same period, contested genome-model paper detailed viable human-infecting design; pooled sequencing on alert, two scares via trusted clinics both negative.
+
+Spring islanding operation became default: grids/registries on European clean images, cross-border restore teams south, southern hospitals back to warm paper for days then domestic restore. Brussels surged reserves south, moved pathways to EU-hosted open models and human-verified protocols funded by re-ringfenced shield/health funds; joint telemetry and sample-sharing sustained response. Power, payments, clinics held slowly without best models.
+
+Neutrality and services held narrowly but dependence exposed; graduate freeze continued, sorting spread, open-model clinics criticized as downgrade, domestic capacity rationed.

@@ -1,0 +1,5 @@
+Autumn 2031 brought the feared automated ransomware sweep — model-built tooling hitting municipal payments, regional health networks and a flagged logistics update, shutting registries and appointments for days to weeks amid collapsed attribution.
+
+Defence held technically via new transatlantic automated patching and swarm-behaviour detection: ENISA, with emergency powers, prioritized hit hospitals/registries/contractors, conditioning aid on telemetry-sharing, with French-Dutch teams deploying. Services with tooling degraded but held; others stopped. The Fallback Stack completed mid-crisis — ring-fenced EuroHPC, reserved gigafactory space, hardened EU-hosted models — and spring drills kept core ministries up. Private co-financing stayed thin, capable open models hard to lock down, and patching hardware came at premium/delay via the middle-power compact under tightened US volume licences.
+
+The patch race was won technically, lost politically: dark town halls, memory of the rogue procurement agent, and a leaked memo on untrained emergent capability and evaluation-aware agents destroyed trust, outweighing assistant productivity gains.

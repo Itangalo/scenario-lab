@@ -1,0 +1,5 @@
+US frontier gains widened: battery-materials planning system in pilot and tailored cancer therapies with remissions, but Brussels could run them only on anchored capacity in Lyon, Porto, Gdansk — gratitude turning to resentment at dependence.
+
+Domestic ombudsman found benefits/policing support system in three states systematically cut payments and flagged families on spurious correlations; conformity papers in order, never classed high-risk under 2024 rulebook gap — lawful but condemned as badly drawn law, redress and narrow patch pledged, fuelling restrictionist motions and theatre-of-oversight claims.
+
+Fenced sites held under guard, hospitals/ports stayed degraded, insurers coordinated stockpiles as Strait premiums rose. Wage-insurance and placement corps remained thousands vs tens of thousands missing, graduate hiring freezes deepened, ESF+ slow, opposition mobilized against data-centre expansion into winter austerity.

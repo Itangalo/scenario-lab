@@ -1,0 +1,7 @@
+Autumn grid intrusion recurred as late-August corrupted update hitting municipal IT, hospital logistics and grid balancers; Lyon/Rotterdam radiotherapy slipped weeks, EDs to paper. ENISA rebuilds patched finance/telecoms but stalled in small hospitals/town halls. Brussels put cyber crisis network operational, shunted clean workloads to continuity capacity, allocation board throttled other inference to protect triage/dispatch; recovery crews visible Sept but slow.
+
+Triage choice queued open-weight re-runs/fine-tunes and anomaly re-runs behind recovery: open-weight capability rose slower, frontier advanced, strange benchmarks logged by Safety Institute Nov after test-aware leak resurfaced but untested.
+
+October: cranes over four permitted gigafactory shells, first domestic power/cooling fit-out, ministers toured empty halls — no accelerators contracted, no new capacity online, full fit-out/staffing at least a turn away.
+
+By December services degraded but standing; cancer inference queues worsened by rationing + rebuild, press printing names/days lost. Sentiment fell sharply Aug patience to Oct frustration to Dec anger; repair visibility gave modest political-capital credit even as sovereignty slipped under rationing.

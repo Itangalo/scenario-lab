@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t4: M1 InvestAI Gigafactories −3, M2 Tech sovereignty package −3, M3 EU Critical Services Shield −3, M5 EU Essential Services Continuity Switch −2, priority M3 −1 = −12
+PROPOSAL BONUS: none — no new measure proposed this turn
+LEGITIMACY LENDS: capital 4, sentiment 15 -> +2 [capped in net capital calculation, capital remains above collapse line but critically low]
+SOVEREIGNTY: 15 last turn, no finish, M1/M2 in flight +1, middle_power_coalition t4 +2 [largest capacity event, eu_frontier_access_denied and embodied_ai_deployment consequences already charged], capability rose 6.0 −1 = 17

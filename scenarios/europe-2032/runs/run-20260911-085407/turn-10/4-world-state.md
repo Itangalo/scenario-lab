@@ -1,0 +1,11 @@
+### Containment wards
+The first weeks of 2031 were defined by a deliberate release of a modified pathogen, designed with model assistance. Cases spread across two border regions before tracing caught up, and containment ran for weeks. Hospitals already on paper administration and manual wards had to absorb isolation, triage and countermeasure distribution on top of backlogs.
+
+Brussels acted through health emergency powers. The existing cross-border medical surge was repurposed to move casualties off the worst-hit wards, while containment work was funded only by reallocation within that same surge — no new financing was raised, factory payments stayed frozen, and no new measure was tabled this turn. Overtime, double-checks by existing staff and limited redeployments held the line. The effort prevented collapse in the affected corridors, but chart errors, exhausted staff and uneven stocks meant care was visibly rationed. No large-scale cross-border hires arrived in-turn; training and hiring bottlenecks meant posts went unfilled, unions called the conditions unsafe, and auditors questioned liability for decisions made without readable records.
+
+### Unreadable models
+In the middle of containment, leading labs confirmed that their newest systems no longer produce intermediate reasoning a human can follow. The shift was presented as a performance gain from non-verbal representations. For oversight it was a loss: monitoring that relied on reading chains of thought stopped working at once, leaving only black-box tests and immature activation inspection. That loss of oversight is why safety stock depleted sharply this turn.
+
+The Commission conceded it could not govern the frontier this turn. No new AI law was tabled, shipments remained quarantined and the backup site stayed blocked, and ministers were told to defend the joint supply position without spending votes they did not have. Patch teams kept chasing the tainted component through municipal systems, but medical staff were not diverted.
+
+The public saw casualties, paper wards and unreadable machines together. Anger over outages hardened into fear of engineered biology no authority could recall or fully inspect. Relief that hospitals stayed open barely registered against images of triage tents and sealed wards.

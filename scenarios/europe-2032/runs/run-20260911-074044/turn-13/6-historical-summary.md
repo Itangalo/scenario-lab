@@ -1,0 +1,5 @@
+By late 2032 an open frontier-class release became permanently unrecallable: mirrored in hours, hundreds of thousands of downloads, scores just behind closed frontier. Brussels did not chase it — AI Office called for structured incident reports and vetted researcher access; joint teams logged probes on ports/hospitals but only contained, with no restored automation.
+
+Operated continuity thinned through autumn: Rotterdam/Gdansk on handwritten tallies, two hospital groups on paper prescribing, payment clearer on offline backups with mutual aid after a November outage forced queued retries. Welfare re-decision pushed arrears into two more regions with unaudited scoring still frozen; Transition Corps held care/permit desks. Councils kept refusing data-centre grid hookups after blackout scares; licensed materials-search and Lyon/Gdansk therapies continued quietly.
+
+By December endurance held but legitimacy thinned: services alive and redress paid, yet autonomy not rebuilt and capability now on private machines everywhere, fueling anger at dependence on manual workarounds and uncontrolled foreign systems.

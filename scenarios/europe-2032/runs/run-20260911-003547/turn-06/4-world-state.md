@@ -1,0 +1,10 @@
+### The spring the machines walked in
+January began with benchmarks no one had planned for. A foreign lab released a system that made last autumn's chatter look modest — longer tasks end to end, agents that kept going, results that broke deployment schedules across the continent. Planning documents in Brussels were outdated within a week.
+
+Weeks later the second shock was physical. Commercial humanoids and warehouse fleets arrived in European ports in volume, mostly built in China, running control software licensed from American firms. Logistics operators signed quickly; two automotive suppliers and a hospital group followed. Dexterity was clumsy at first, then improved with startling speed once the new models were pushed to the fleets.
+
+Brussels answered with what it could still pass. The bio-shield regime and the sovereignty package formally closed this spring, freeing stockpiles, sequencing networks and permits for the two grid-prioritised factory sites. The new robotics protocol ordered a registry of commercial fleets, mandatory remote-stop and manual override audits, and joint exercises in ports and hospitals. Screening of supply-chain dependencies was tightened, but there was no ban.
+
+Implementation was uneven. Mayors carried the Trust and Transition Pact into utilities and clinics, and where wage-bridge money and relief staff arrived, waiting lists fell enough to be shown on local news. Where they did not — many small towns — the machines read as a second displacement after the autumn's water and insurance scares. A stoppage at a Rotterdam terminal, when a patched control stack froze a row of carriers, needed manual crews to clear; the fallback worked, but footage of idle robots ringed by dockworkers played for days.
+
+Washington's incoming team opened structured talks on joint evaluation and export alignment, and European officials flew to set terms. Relief that access might be stabilised competed with a quieter drain on home-build urgency, while Taiwan allocations stayed frozen and accelerator prices stayed high. By June, hospitals held, grids held, robots stayed — stoppable, resented, indispensable.

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: EU Curative Therapies Delivery and Care Trust −2, EU Joint Threat Response Accession −2 = −4 + priority no effect below 20, total −4
+PROPOSAL BONUS: EU Joint Threat Response Accession (cat 8, small) +3 — emergent cable repair failure this turn severe and this answers it directly, labour displacement also argued
+LEGITIMACY LENDS: capital 9, sentiment 12 -> +1 capped by prior terms, already accounted in political capital net
+SOVEREIGNTY: 20 last turn, no capacity measure finishes, no cat4 in flight +0, embodied_ai_deployment t13 −2 (largest capacity event, cable failure consequence not double-counted), capability rose 2+ −1 = 17

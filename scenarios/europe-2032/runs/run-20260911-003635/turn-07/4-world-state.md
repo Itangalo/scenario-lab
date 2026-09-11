@@ -1,0 +1,13 @@
+### Steady progress, thinner legibility
+The second half of 2029 continued the established pace of frontier progress. An American lab rolled out longer-running planner-agents that generated much of their own training scaffolding, and rival labs followed on their regular cadence. Open-weight releases derived from the prior generation continued to circulate and be fine-tuned, narrowing the gap behind the frontier even as the frontier itself advanced. Power and cooling remained the binding constraint engineers talked about. The reasoning inside the best systems remained difficult for reviewers to follow, with activation probes offering only partial gestures at internal patterns.
+
+Brussels felt the gap. Joint evaluation calls with Washington continued under the administration in office since turn 6, and European auditors kept the log access they had gained before, but there was less legible behaviour left to audit.
+
+### Patch at speed, build delayed
+One counterweight matured. Defensive tooling that patched as fast as vulnerabilities were found and caught swarm behaviour rather than signatures moved beyond demos. ENISA pushed it first to the large hospitals and grid operators that had held through the winter, then to municipalities that had lost chlorination monitoring and backup power. It helped: autumn intrusion waves were absorbed with degradation rather than outage.
+
+It did not reach everywhere. Small councils and SME suppliers queued for integrators, and the humanoid fleets in Lyon, Rotterdam and Valencia remained a separate problem — televised near-misses in a care home and a port walkout kept the question visible: who could stop them.
+
+The sovereignty build slipped. The EU's named priority remained the InvestAI Gigafactories build-out, and no other priority was set this turn. Two grid-prioritised compute sites poured concrete and booked power under TEN-E guarantees, but that closed only part of the first phase. Other plots stayed frozen. Taiwan allocations were still thin, accelerator prices still high, and a sharp reset in AI valuations cancelled several co-build arrangements Europe had counted on. Full completion of the InvestAI gigafactory tranche therefore remains delayed amid constrained supply and financing, not banked now, and no completion bonus is counted this turn. A tailored therapy advance from U.S. models made headlines, but arrived in Europe as a licensed service, not a capacity.
+
+Mayors got wage bridges and retraining money where workers arrived. Where they did not, resentment hardened into quiet bans and single-source stories of idled robots. That visible municipal support steadied political standing modestly, even as underlying sovereignty eroded.

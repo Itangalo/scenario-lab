@@ -1,0 +1,5 @@
+Autumn 2028 grid drive closed with spares to national budgets and legacy gaps remaining; US election winner pledged models as national asset with tiered foreign access; EU pooled leverage via joint licensing with Netherlands/Japan/Korea, common Washington compute ask, and shared evaluation, with 5 gigafactory sites reserved but unbuilt.
+
+January saw machine-written intrusions hit municipalities, clinics and a port software supplier from Rhineland to Silesia, causing weeks-long outages. Brussels sent thin emergency repair teams with shared backups and fast procurement, welcomed but insufficient.
+
+Cohesion ruptured when a member state made a side deal for privileged model/cloud access undercutting the common line; Paris/The Hague/Warsaw condemned it, reintegration failed. New US administration deferred EU compute requests under tighter export review. Sovereignty package formally closed, settling permits for five sites but with no construction or private money. Public mood turned hostile, blaming AI for vulnerability and dependence.

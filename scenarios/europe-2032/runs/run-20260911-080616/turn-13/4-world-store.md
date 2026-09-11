@@ -1,0 +1,12 @@
+# World store (turn 13)
+
+## standing
+
+| id | posture |
+|---|---|
+| S1 | RETRENCHMENT |
+
+## Changes this turn
+
+- **applied** `M14` — {"op": "update", "table": "measures", "id": "M14", "fields": {"finish_turn": 15}, "grounds": "named priority"}
+  - Grounds: named priority

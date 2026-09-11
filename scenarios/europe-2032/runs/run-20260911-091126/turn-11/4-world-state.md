@@ -1,0 +1,8 @@
+### Buffers and empty desks
+Autumn brought warships, insurance surcharges and expelled diplomats in the Strait, and Brussels moved where it could afford to move. The new Continuity Shield ordered chip buyers in telecom, autos and medtech to report stocks, chartered pooled shipping and cloud failover with Japan, Korea, Canada and Gulf partners, and sent ENISA teams back to the same municipal utilities with a new checklist for grid, health and finance drills.
+
+It started slowly. Buffer reporting drew partial compliance, with firms citing commercial secrecy. Pooled charters secured two sailings and a hosting quota that kept test workloads alive, but finance ministries refused a new fund and forced the scheme onto existing Chips Act and civil-protection money. Uncertified towns welcomed the drills; few passed them.
+
+On jobs there was no new instrument, by design. The Transition Guarantee that finished this half — wage bridging, six-month vouchers and first-job credits in law, accountancy, software and customer centres, plus automation reporting — paid out its first cheques. Labour ministries advertised them; employers called the reporting a levy and kept graduate intake frozen. Graduate fairs in Lyon, Lodz and Turin stood half-empty while newspapers argued over how many entry posts had vanished.
+
+The genome-model scare never reached television, but HERA topped up detection stocks and pooled closed-door test results through the compact. Defensive patching held in certified hospitals and banks. Elsewhere, voters saw preparations for a distant shipping shock and no offer for their children, and the mood darkened further.

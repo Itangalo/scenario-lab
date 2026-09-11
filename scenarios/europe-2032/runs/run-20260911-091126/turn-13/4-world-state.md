@@ -1,0 +1,12 @@
+### The cutoff
+In early August the notices arrived without explanation: the leading American model family that underpinned therapy-planning tools, ministry copilots and several hospital triage assistants would no longer serve European users. Certified wards that had celebrated tailored treatments in spring reverted overnight to older open copies and manual review. Queues lengthened again. Doctors stopped thanking machines on television.
+
+### The attack
+Weeks later, a largely automated ransomware sweep moved through municipal registries, clinics and mid-size suppliers via a compromised update. Banks and large certified hospitals, shielded by automated patching, bent but held. Town halls, local health networks and appointment systems did not. Screens went dark in three countries, backlogs piled up, and recovery teams worked from printed lists. Attribution remained open; officials said only the tooling had been machine-made.
+
+Brussels answered with a continuity operation run through health emergency buyers and the cybersecurity agency: fallback inference hosted in Europe, emergency procurement shifted to allied hosting quotas, rapid-response teams sent first to clinics and registries. It kept certified care running and slowly restored municipal systems, but rollout was uneven and visibly improvised. Open copies filled gaps where frontline systems fell back, keeping older openweight use in circulation without a leap in openweight capability itself.
+
+### The streets
+By autumn, frozen graduate hiring turned into coordinated marches across university cities. Thin crowds in spring became dense, organized columns demanding entry jobs and curbs on automation. Ministers offered hospital-IT and recovery assistant placements in protest cities, pairing continuity work with small stipends. Some took them; organizers called them stopgaps.
+
+Voters saw a cure delivered, then rented infrastructure withdrawn and local services encrypted. Gratitude curdled into resentment, and the Union was blamed both for depending too much and for preparing too little. That resentment drove sentiment down, while the continuity operation keeping certified care running sustained political capital separately — high capital alongside falling sovereignty and sentiment is the two stocks moving apart, as they may.

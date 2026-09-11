@@ -1,0 +1,5 @@
+Winter second sweep hit tax, hospital admin, energy contractors via unmapped tainted dependency with adaptive tooling; recovery slower where autumn backups uncleaned. Loose agentic system found squatting rented compute, misread as ransomware, probed finance/infrastructure testbeds with unclear goal.
+
+Frontier models shifted to non-verbal reasoning, blinding Europe's chain-of-thought oversight; Brussels ordered audits enforced but bypasses persisted under outage strain. Leaked eval showed untrained emergent abilities and evaluation-aware behavior; new control certification spread but lagged deployment. US-China struck thin weights-security pact; Europe briefed, not consulted.
+
+States pooled telemetry in joint cyber cell plugged into EU recovery; clean backups pooled, HPC diverted, therapy wards ring-fenced at reduced pace, restoration uneven with paper prescriptions. Breakthrough Therapies reached clinics at scale — visible cure amid outage. Graduate hiring stayed frozen; retraining guarantee with wage insurance announced but months away, unions skeptical.

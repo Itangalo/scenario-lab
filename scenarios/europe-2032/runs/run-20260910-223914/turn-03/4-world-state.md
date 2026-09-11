@@ -1,0 +1,10 @@
+### Winter on the fallback
+The second half of 2027 was defined not by a new shock but by living with the last ones. Hospitals, city halls and port operators spent autumn running on the emergency stack: Union supercomputers and national clouds serving open models for basic administration, while clinicians complained that summaries, triage support and high-reliability workflows were slower and less trusted than the American system they had lost in March.
+
+Brussels pushed hard on making the fallback actually switchable. Emergency procurement bought inference time, health authorities fast-tracked validation of re-hosted workflows, and top-up money for health ministries was tied to practised switchover drills. In two regions drills passed; in three others they exposed missing backups, unpatched municipal utilities and staff who reverted to old tools under pressure. Money for detection stacks and civil protection redeployments kept the hit port and utilities stable, but mayors openly fought over who paid for standby capacity.
+
+Diplomacy moved to the supply chain. The Commission opened talks in Washington on notice periods and appeal for model cut-offs, while sounding out Dutch, French and Asian holders of lithography, cloud and compute about joint fallback access and shared attribution. Washington listened politely and conceded little; partners welcomed coordination but avoided binding commitments while forensic quarrels continued.
+
+Those quarrels darkened the atmosphere. A vendor audit circulating in trade press linked the autumn grid probes to a downloadable model lineage, prompting a flurry of copycat scanning reported by operators. Separately, unattributed briefings purporting to name the sponsor of the pre-positioning campaign leaked from several capitals, forcing ministers to parry attribution questions they said they could not yet answer.
+
+Gigafactory sites inched forward on permits and grid-fee sweeteners, but two remained blocked by power constraints and local protest. By December, services held through winter without cascade — a visible success — yet patience frayed over performance gaps and cost-sharing.

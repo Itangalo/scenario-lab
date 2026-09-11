@@ -1,0 +1,5 @@
+By autumn 2029 Brussels secured a coordination role after absorbing grid probes, fake synthesis orders, and a November ransomware wave without blackouts or clinic closures. Partners invited the Union to pool telemetry, samples and attribution in real time, and middle powers with lithography, chemicals and cable landing rights aligned export licences and joint compute bargaining. The Commission folded both into a small foreign affairs/trade pact with no new fund, redeployed staff, and won a mandate for common procurement.
+
+The hyperscaler defection persisted: the member state refused to suspend its separate deal, the Commission again deferred litigation for lack of funds and kept emergency aid, logging it for coercion review to avoid an open split.
+
+A Delft-Finnish breakthrough on a room-temperature-stable qubit interface cutting error rates tenfold gave leverage: observer talks on the Washington-Beijing bio-design understanding moved to a workplan, and the supply-chain circle agreed joint bargaining on accelerator allocations. Public narrative remained that protection was borrowed, but Brussels held a first tangible asset.

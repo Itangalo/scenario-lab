@@ -1,0 +1,180 @@
+{
+  "scenario": "Europe 2032 — Plateau",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 59.0,
+    "openweight_capability": 53.0,
+    "ai_safety": 38.0,
+    "resilience": 46.0,
+    "eu_ai_sovereignty": 19.0,
+    "eu_political_capital": 25.0,
+    "public_sentiment": 28.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 53.5,
+        "openweight_capability": 46.0,
+        "ai_safety": 32.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 41.0,
+        "public_sentiment": 39.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 54.5,
+        "openweight_capability": 49.5,
+        "ai_safety": 30.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 34.0,
+        "public_sentiment": 33.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 56.0,
+        "openweight_capability": 52.0,
+        "ai_safety": 28.0,
+        "resilience": 35.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 22.0,
+        "public_sentiment": 30.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 57.5,
+        "openweight_capability": 52.5,
+        "ai_safety": 33.0,
+        "resilience": 39.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 24.0,
+        "public_sentiment": 24.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 59.0,
+        "openweight_capability": 53.0,
+        "ai_safety": 38.0,
+        "resilience": 46.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 25.0,
+        "public_sentiment": 28.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "bio_uplift_findings",
+    "cyber_defence_breakthrough",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_consolidation",
+    "emergent_datacentre_pause",
+    "emergent_memory_substrate_squeeze",
+    "emergent_substrate_second_source",
+    "eval_anomaly_reports",
+    "export_control_escalation",
+    "joint_threat_response",
+    "knowledge_work_augmented",
+    "openweight_frontier_release",
+    "safety_breakthrough",
+    "taiwan_blockade",
+    "taiwan_tension_rise",
+    "us_china_agreement"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "taiwan_blockade"
+    },
+    {
+      "turn": 2,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 3,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 3,
+      "id": "knowledge_work_augmented"
+    },
+    {
+      "turn": 3,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_memory_substrate_squeeze"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_datacentre_pause"
+    },
+    {
+      "turn": 4,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 4,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 4,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 4,
+      "id": "safety_breakthrough"
+    },
+    {
+      "turn": 4,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 5,
+      "id": "cyber_defence_breakthrough"
+    },
+    {
+      "turn": 5,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 5,
+      "id": "safety_breakthrough"
+    },
+    {
+      "turn": 5,
+      "id": "us_china_agreement"
+    },
+    {
+      "turn": 5,
+      "id": "joint_threat_response"
+    },
+    {
+      "turn": 5,
+      "id": "emergent_substrate_second_source"
+    },
+    {
+      "turn": 5,
+      "id": "election_consolidation"
+    }
+  ],
+  "last_updated": "2026-09-10T23:05:27.621977",
+  "status": "completed",
+  "emerging_events": [],
+  "completed_at": "2026-09-10T23:05:32.395474"
+}

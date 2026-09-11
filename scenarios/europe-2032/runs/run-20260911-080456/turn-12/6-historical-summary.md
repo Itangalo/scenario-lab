@@ -1,0 +1,5 @@
+US federalized frontier labs as defence assets — cleared officers in training, weights export-controlled — stripping Brussels of regulatory leverage; investment collapsed, leaving cheap stranded data-centre capacity in Europe.
+
+Tailored cures continued discharging patients, and a new deployed-system inspection method kept automated wards open despite growing model opacity, but all models now ran inside the US state system.
+
+Brussels launched no build: fused health-cyber-civil cells, made inspection the ENISA verification standard, repurposed stranded capacity for offline-first backup hosting, and traded lithography, bio-flagging and telemetry for a US continuity-of-service pledge. Shield kits and shared telemetry enabled faster degraded manual operation, but kits remained scarce and municipal grids/hospitals were routinely re-compromised. Europe stayed running, degraded, on terms it did not write.

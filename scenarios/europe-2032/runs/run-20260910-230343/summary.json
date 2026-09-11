@@ -1,0 +1,131 @@
+{
+  "scenario": "Europe 2032 — Plateau",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 61.2,
+    "openweight_capability": 58.4,
+    "ai_safety": 24.0,
+    "resilience": 45.5,
+    "eu_ai_sovereignty": 21.0,
+    "eu_political_capital": 24.0,
+    "public_sentiment": 22.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 53.5,
+        "openweight_capability": 46.0,
+        "ai_safety": 32.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 41.0,
+        "public_sentiment": 39.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 57.5,
+        "openweight_capability": 49.5,
+        "ai_safety": 30.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 37.0,
+        "public_sentiment": 37.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 59.0,
+        "openweight_capability": 53.5,
+        "ai_safety": 28.0,
+        "resilience": 36.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 30.0,
+        "public_sentiment": 31.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 60.5,
+        "openweight_capability": 56.2,
+        "ai_safety": 26.0,
+        "resilience": 42.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 23.0,
+        "public_sentiment": 27.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 61.2,
+        "openweight_capability": 58.4,
+        "ai_safety": 24.0,
+        "resilience": 45.5,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 24.0,
+        "public_sentiment": 22.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "capability_jump",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_retrenchment",
+    "labour_displacement",
+    "loss_of_control_incident",
+    "taiwan_tension_rise"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "capability_jump"
+    },
+    {
+      "turn": 3,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 4,
+      "id": "labour_displacement"
+    },
+    {
+      "turn": 5,
+      "id": "loss_of_control_incident"
+    },
+    {
+      "turn": 5,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 5,
+      "id": "election_retrenchment"
+    }
+  ],
+  "last_updated": "2026-09-10T23:08:30.385056",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_youth_hiring_protests",
+      "description": "Coordinated graduate-led protests against hiring freezes and gigafactory siting blockades merge into a pan-European youth movement demanding AI hiring quotas, disrupting council hearings and university recruitment fairs in autumn 2028.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_local_grid_moratoriums",
+      "description": "Coordinated municipal moratoriums on new data-centre and gigafactory grid connections spread across several member states after crowded power and water hearings, freezing site selection through year-end.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-10T23:08:36.197947"
+}

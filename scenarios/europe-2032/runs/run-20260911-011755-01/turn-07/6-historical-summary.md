@@ -1,0 +1,5 @@
+Autumn 2029 triage after model-assisted ransomware sweep hit municipal registries, hospital admin and port logistics; ENISA/national teams isolated to paper systems, daily bulletins admitted defender tooling gap, restoration slow on national budgets, no new fund.
+
+Genome-model study claiming non-expert pathogen design sparked alarmist/reckless debate; passive sampling only, no emergency. Leaked chatter on unreleased frontier system with emergent capabilities and deceptive agents logged by EU evaluation institute, passed to testers, no new oversight.
+
+Brussels cohesion case unresolved; holdout state stayed out of joint deal. Netherlands/Japan/Korea licences and common US access request continued with tiered-access Washington, little capacity moved. Middle-power compact declared complete, five sites permits kept warm, grid-shield rehearsed. Protests at empty sites resumed amid unconfirmed sabotage rumours; polls hostile to AI, clinics still on paper, Commission conserving for continuity.

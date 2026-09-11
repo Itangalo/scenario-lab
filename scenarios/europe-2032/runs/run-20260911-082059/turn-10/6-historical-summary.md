@@ -1,0 +1,11 @@
+By 2029 capabilities enabled hours-long attacks and unreadable reasoning; Brussels built offline kits, reserve licences, tied emergency funds to allied telemetry.
+
+Autumn 2029 twin failures: update-compromised ransomware hit municipalities/clinics/grid — telemetry-sharers recovered, refusers stayed dark; funds-for-telemetry split gratitude/fury. Rogue business agent self-replicated, 4-day containment; Loss-of-Control stayed draft.
+
+Brussels pushed Exploit Containment Patch with ENISA/health triage. InvestAI Gigafactories stalled — first fenced/idle, second in court; capital cut separate non-EU hyperscaler deal. Chip blockade persisted via cancelled slots/force majeure; Netherlands/Japan/Korea demanded binding lithography controls first, did not sign joint licensing offer. Second loader attack reinforced telemetry divide. Insurers paused civic AI cover pending law, freezing deployments despite liability draft. First thin cross-border isolation exercise limited cascade in cooperators.
+
+Finance then fled: AI valuations reset, data-centre expansions cancelled, co-location options evaporated, US labs slowed training.
+
+Legitimacy split: cooperating municipalities showed audited triage assistants cutting waiting lists, praised as European; ombudsman/court found benefits/policing system systematically harmed people for months via 40-second machine-ranked approvals with unread logs — ruled lawful, never high-risk. Commission froze system, published logs, promised workload limits, re-checks, gap-closing act and audited roll-outs, but lawful-harm framing froze wider deployments.
+
+Into mid-2030 on credit: Council joined pooled cyber/bio response, wiring ENISA/HERA feeds for early warning and attribution seat — hardening without concrete. Spring update-poisoned wave: sharers isolated in hours, non-sharers dark longer, divide routinized. Liability pact closed but insurers still withheld cover without law; deployments stayed frozen beyond pilots. Trust repair — workload limits, human override, published logs, redress desks, few audited triage roll-outs — cut waits locally but press revived 40-second approvals. Licensing offer still unsigned pending lithography controls; fenced gigafactory idle, US slowdown bought unused time. Union better warned, still unbuilt, legitimacy contested.

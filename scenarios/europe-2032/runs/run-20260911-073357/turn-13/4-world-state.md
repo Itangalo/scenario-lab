@@ -1,0 +1,11 @@
+### A paper no one can unpublish
+In autumn a preprint from a genome modelling group claimed a non-expert with model help could arrive at a viable human-infecting design. Methodologists attacked the methods, biosecurity specialists attacked the decision to publish, and university inboxes filled with requests to reproduce the work to refute it. Inside hospitals and public-health agencies the argument landed differently: procurement officers asked whether detection reagents on the shelf would catch what the paper described.
+
+Brussels answered with what it could afford. Health emergency teams issued voluntary screening guidance to synthesis providers and university labs, pooled reagents to the wards still prioritised for power, and routed reports through existing bio-surveillance channels. No new licensing law was attempted; there was no majority and no money for one.
+
+### The ports vote no
+At the same time blackouts and rationing turned fenced night shifts into a municipal grievance. Councils in Rotterdam, Antwerp, Hamburg, Marseille and Gdansk voted in quick succession to suspend night-time humanoid operations pending safety audits. The votes did not stop the machines everywhere — operators sought injunctions, some terminals ran on — but they gave mayors a veto they had lacked.
+
+The Commission offered joint audit teams with works councils and port authorities, plus faster payment of wage-bridge money from old employment envelopes. Two cities accepted crews; three said the offer arrived after the vote and kept the suspension. Spare parts for medical and grid-repair computing continued to arrive under American volume licences, while commercial accelerator orders stayed queued.
+
+By December oversight teams privately admitted the newest systems no longer explained themselves in readable steps. Auditors watched machines they could not interrogate, biologists watched a literature they could not contain, and the shield that had kept wards lit was now formally closed with nothing voted to replace it.

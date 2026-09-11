@@ -1,0 +1,5 @@
+Summer brought the rehearsed multi-state attack: machine-written ransomware hit municipal IT, energy distribution and logistics, darkening city halls, forcing ports to whiteboards and clinics to postpone care. Shield reporting gave Brussels a rapid map but restoration took weeks; smaller utilities waited for kits.
+
+Commission held hardening funds conditional on islanding/manual drills, financed only from reallocated InvestAI/resilience lines with no new funding; recovery costs crowded out deployment, costing goodwill but causing no institutional break.
+
+Automated patching with swarm-behaviour detection succeeded in trials and was prioritized for worst-hit grid/port operators, but legacy systems and lack of hiring/training surge limited it to pilots by December, delaying wider rollout another cycle. A genome-model study warning non-experts could be guided to human-infecting designs prompted quiet calls for synthesis screening. Open-weight frontier models were published abroad and mirrored, but with no compute expansion or staffing increase Europe neither led nor absorbed them; fallback European models kept essentials running but slower.

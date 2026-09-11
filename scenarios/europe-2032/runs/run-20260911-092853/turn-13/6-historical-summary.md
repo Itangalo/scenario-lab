@@ -1,0 +1,5 @@
+Brussels held through autumn 2031 with no law or money, sustaining pilots via existing funds and blessing manual fallback. The U.S. servicing halt hardened: two licences stuck in review, older optics held, Veldhoven quietly pulled crews off Asian contracts while The Hague denied a bilateral deal. Commission coercion examination and blocking-statute cover produced paper and legal risk but no spares; Council unity frayed.
+
+Washington and Beijing announced a limited pact on weights security and biological design tools with thin verification; Brussels learned afterwards and was promised a briefing.
+
+Technicians keeping pumps, scanners and grid relays alive by cannibalisation formalised a repair network with inventory and rules, celebrated locally but warned on by inspectors. Brussels issued a recognition protocol with testing checklists, hygiene sign-off and EU liability cover favouring long-waiting non-showcase sites, with no money. Showcase pilots stayed green, two-tier shield complaints and foreign-permission talk deepened; rest of system stayed on by hand.

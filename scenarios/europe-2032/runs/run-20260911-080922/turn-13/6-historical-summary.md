@@ -1,0 +1,5 @@
+Through 2031-autumn 2032 the Union endured automation failures, dependency shocks, AI finance collapse, and a machine-built ransomware/poisoned-update wave hitting registries, clinics and suppliers. Fast-recovering audited big cities with offline backups restored in days; small towns fell to paper queues for weeks, deepening the split and dread.
+
+Brussels, still out of funds, stuck to enforcement over new law/build: French-Dutch/ENISA/AI Office repair teams with EuroHPC support made backup/cut-off checks the price of emergency cash, negotiating door-to-door where defiance and rumoured court challenge persisted. No levy, no new law.
+
+European-hosted triage/paperwork assistants on openly available models cut hospital/permit waits, confirming AI productivity gains, and blunted abandonment charges, modestly lifting political breathing room. But gains were drowned by fraud and exhaustion: trust remains near rock bottom, autonomy unchanged on foreign models/borrowed compute, with manual agent shutdowns and thin safety assurance.

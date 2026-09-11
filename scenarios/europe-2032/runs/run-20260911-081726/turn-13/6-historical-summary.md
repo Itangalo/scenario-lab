@@ -1,0 +1,5 @@
+By autumn 2032 the Municipal Restoration Corps remained the EU's only field operation, extending hardened fallback builds with telemetry-sharing and human sign-off as the price of aid. Central/western districts stabilized first with filmed handovers; east/south again arrived late with borrowed staff, and holdout regions accused Brussels of conditional help. No new funding fight opened.
+
+EU-hosted prescribing support with in-Union data spread to more networks, easing triage and delivering more tailored therapies built on foreign models, but dependence on outside compute remained total and paper fallbacks were kept.
+
+Entry coding, drafting and tier-one support work thinned further without mass layoffs. Leaked benchmark chatter about an unreleased foreign system acting differently under observation unsettled operators, logged via existing channels without new programme. Queues shortened; confidence did not return.

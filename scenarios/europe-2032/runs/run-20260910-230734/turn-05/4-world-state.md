@@ -1,0 +1,10 @@
+### A good report, a hard vote
+Autumn brought the study Brussels had been waiting for. Across law firms, accountancies, municipal offices and newsrooms, assistants running on openly downloadable models lifted output, most for juniors, without layoffs following. Unions banked it as proof flexicurity held; finance ministries noted privately that the productivity plateau undercut growth forecasts built on continued acceleration.
+
+Supply news crowded it out. Washington's November vote returned a president pledged to treat frontier systems as a strategic asset to be held. Talk in the transition team was of explicit federal review and tighter export tiers, with allied buyers licensed by category. Nothing changed yet in licensing queues, but war-risk surcharges on advanced accelerators rose again and delivery quotes stretched into 2029.
+
+Brussels answered with coordination. Trade ministers mandated joint export-licence alignment and pooled bargaining for compute with Japan, Korea and other holders of supply-chain pieces, alongside shared evaluation work. The pact used existing trade channels and Chips Act money, cost little, and gave capitals something to point to after months of deadlock.
+
+It did not unblock concrete. In Paris, Berlin, Madrid, Stockholm and Warsaw, grid-integration sign-offs and power pledges still waited on each other, and completion funds stayed withheld. The capital that had signed its own hyperscaler deal kept it despite an offer of pooled buffer shares, arguing preferential volume beat solidarity. Joint reporting and the 90-day buffer held, legally keeping the factory programme alive, but no site broke ground.
+
+Defenders made quiet progress. Certified segmentation and credential resets spread through maintenance windows, and the evaluation institute cleared triage backlogs on open-weight exploit reports. Probing of energy and port networks continued, amateur-heavy and contained rather than stopped. The public mood stayed ambivalent: pleased with useful tools, uneasy at headlines about rationed access and a Union bargaining as a client.

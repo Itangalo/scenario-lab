@@ -1,0 +1,10 @@
+### Holding the line
+The second half of 2030 did not bring recovery, but it brought a pause in the slide. The Corps teams stayed where they were — in town halls with frozen counters, in hospitals running on paper schedules, at ports retyping manifests. They distributed clean system images, left laminated fallback sheets, and ran evening radio check-ins. They did not argue about the local votes freezing new power hookups for data centres. That restraint was noticed.
+
+In autumn, two outside openings arrived. Engineers across the Atlantic and in Asia demonstrated patching tools that moved as fast as the flaws themselves, and detectors that spotted swarms of malicious agents by behaviour rather than by signature. At the same time, several governments hit by the same February-style outages offered Brussels a seat in a joint cyber command with live telemetry sharing.
+
+Brussels took both without spending what it does not have. The joint feed was plugged into the Corps' nightly bulletins, and the new detection logic was pushed out with the next round of clean images. Administrators reported fewer reinfections, faster clean-ups. For the first time in three years, defenders felt they had gained ground.
+
+It did not solve dependence. American frontier models remained cut off for most European users, chip licences stayed rationed, and the five permitted factory plots stayed empty. Filings went through the standing coordination channel with Dutch, Japanese and Korean partners, and nothing more was opened. Freight insurance crept up as extended manoeuvres in the Taiwan Strait rattled shipping, a reminder of how exposed supply lines remain.
+
+Public anger eased a fraction where clinics stayed open, but warehouse robots under foreign software kept spreading, and referendums on power connections stayed on the calendar. The Union ended the year intact, exhausted, and still waiting to build again.

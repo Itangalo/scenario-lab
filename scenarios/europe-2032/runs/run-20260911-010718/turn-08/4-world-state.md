@@ -1,0 +1,12 @@
+### The jump lands on unpatched towns
+Early in the new year a cluster of frontier releases showed the same pattern: sharply better code synthesis, automated intrusion chains and machine-checked mathematics. General assistants felt only modestly smarter, but municipal IT teams felt the difference within weeks. Exploit kits that once needed hand-tuning began assembling fresh municipal intrusions on their own, and telemetry shared to the joint cyber command showed French and German town networks probed at machine speed.
+
+Brussels answered with existing tools rather than a new programme. With capital thin, the Council used current reserve licences, reinsurance and recovery arrangements to prioritize live telemetry, and re-issued offline kits and locked-down backups to the towns hit in November through standing channels. Critical operators were urged into patch windows and told to freeze standing-goal agents on unpatched estates where authority already existed. It kept most incidents to slowdowns, but administrators complained patching again crowded out the agent registry work. A broader cyber-triage proposal was discussed but not adopted this turn for lack of staffing and money, and remains delayed.
+
+### Containment first
+The single priority this turn is the standing-goal agent registry opened under DG CNECT with ENISA support. Public bodies filed registrations, spend caps and replication caps went live, and the joint command began enforcing 24-hour reporting. Genome-model use was tied to the same line, with health emergency officials flagging orders. Enforcement remained narrow — private deployments largely outside — and auditors warned traces were now unreadable enough that compliance was procedural rather than verifiable, leaving assurance stretched but holding roughly where it was as containment procedures came into force.
+
+The trusted compute compact with Japan and Korea closed, securing servicing and joint buying as backstop for the blocked gigafactory gap. The mediated site held to a final decision; the court-blocked plant stayed blocked and the half-empty shell stayed half-empty. Washington stayed focused inward.
+
+### Offices hum
+Meanwhile law firms, accountants and newsrooms published the same finding: assistants lifted output, most for juniors, without layoffs. Firms that had cut rehired. The mood lifted slightly, even as unreadable models and dependence on foreign capacity rankled. Protection pooled through the joint command helped, but assurance remained thin against what attackers could now do.

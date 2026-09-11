@@ -1,0 +1,10 @@
+### Shared shelter
+The invitation arrived as Brussels had almost nothing left to offer but playbooks. A group of states hit by the same ransomware and grid-probing wave proposed pooling attribution, live telemetry and response — a joint cyber command with real-time feeds, plus a binding biosurveillance sample-sharing pact. The Foreign Affairs Council signed the accession letter within weeks.
+
+On the ground, it worked faster than procurement ever had. ENISA plugged its exercised isolation playbooks and locked-backup telemetry into the common picture; HERA and the disease control centre began forwarding samples under the new safeguards. Two attempted intrusions against municipal health networks in spring were spotted from another member's indicators and cut off before encryption. Auditors who had praised containment now praised early warning.
+
+But shelter is not sovereignty. The chip slots stayed cancelled, the licensing offer to The Hague, Tokyo and Seoul stayed warm words about holding capacity open, and the fenced gigafactory site stayed fenced. American labs, slowed by their own funding reset, still set the pace; second-tier builders elsewhere talked of catching up while Brussels talked of seats at tables.
+
+At home the trust repair crawled. Workload limits and human-override rules for benefits and policing queues were enforced in pilot administrations, scandal logs were published with a redress desk, and audited triage assistants kept cutting waiting lists in cooperating towns. Nurses kept calling the working tools European. Insurers, however, still waited for law rather than pilots, and most councils kept deployments frozen. The lawful-harm verdict continued to dominate national talk shows.
+
+By June, clinics were better protected and no less dependent. The Union had bought time inside someone else's shield.

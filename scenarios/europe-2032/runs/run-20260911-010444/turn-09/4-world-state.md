@@ -1,0 +1,11 @@
+### The weights get out
+Autumn brought a release no one in Brussels could recall. A frontier-class open model appeared within months of the closed lead, downloaded hundreds of thousands of times in its first week. Clinic IT staff were running it by the weekend; so, ENISA warned, was anyone assembling phishing lures and fast exploit chains.
+
+At almost the same moment, two other signals landed. A new system demonstrated a sharp jump in verifiable work — code, maths, machine operations — changing what attackers could automate within weeks, even as researchers argued over whether it meant anything general. And a genome-modelling paper claimed a non-expert with assistance had reached a viable human-infecting design. Methodologists attacked the study, journals debated whether it should have been published at all, but biosecurity officials treated it as categorically different from past alarms.
+
+### Screening and paper fallbacks
+The Commission answered with a containment surge run through health and interior ministers with ENISA, HERA and disease-control experts: mandatory screening enforcement for synthesis providers, checks on postal hubs handling DNA orders, funded detection upgrades, and pushing the offline recovery-image standard from large hospitals down to clinics and municipalities hit by the spring outages.
+
+Implementation was uneven. Large hospitals complied; small labs and private couriers complained about cost and delay, and enforcement teams admitted they could not inspect the reasoning of the tools they were screening against. Backups held during a fresh wave of winter phishing-exploit outages, but appointments still went to paper for days in several regions.
+
+The distressed-compute purchase ground on. Lawyers converted a handful of options on cancelled shells and power reservations into clean titles; other sites stayed tangled in permits and a landlord in administration. The member state with its separate foreign hosting deal pocketed Brussels' offer of a share and stayed out, calling its own terms better. Papers in that capital called it vindication again.

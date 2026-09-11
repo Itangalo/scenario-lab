@@ -1,0 +1,10 @@
+### Cut off, kept on
+In early autumn, hospitals, ministries and firms built on the leading American model found their access revoked. Screens returned quota notices, then nothing. No reason was given and no appeal answered. Supplier briefings in Washington called it inventory management; in European wards it meant triage assistants and drafting tools going dark overnight.
+
+Brussels chose not to retaliate. Council conclusions noted the cutoff in dry language, trade officials kept spare-parts talks with Japan and Korea alive, and health ministries were told to shift showcase clinics to the continuity stack and paper procedures rather than wait for a replacement.
+
+That fallback held, after a fashion. The black-start and manual-fallback network rehearsed for two years was now declared operational: fuel and transformer sharing moved without a new vote, police guards stayed on generator compounds, and the two health systems and the justice pilot kept their EU-procured tools running on EU-hosted capacity. Waiting lists stayed down where sites were guarded. Where they were not, gains slipped and staff reverted to hand logs.
+
+The politics split. Nurses and mayors credited the drills and neighbours, not Brussels, but this time some credit stuck: dashboards stamped as European and kept lit through the cutoff allowed the Commission to claim foresight rather than failure. Opposition papers called it the opposite — proof that Europe had built its clinics on a switch someone else could throw.
+
+Private compute did not return. Cancelled data-centre expansions stayed cancelled, grey brokers quietly offered rerouted chips and cloud logins through intermediaries, and one municipal battery depot fire drew a single camera crew and rumours of arson that police would not confirm. By December the Union was smaller in capacity and slightly larger in standing: fenced in, guarded from within, still running.

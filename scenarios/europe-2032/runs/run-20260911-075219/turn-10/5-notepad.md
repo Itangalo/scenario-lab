@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t10: EU Transition Shield for Displaced Work and Essential Services −2, EU Bio-Detection and Trusted Care Continuity Network −2, EU Wartime Neutrality Shelter and Lifeline Continuity Operation −2 = −6 (priority without effect or cost as capital 15 below 20, charge is measures only)
+PROPOSAL BONUS: EU Wartime Neutrality Shelter and Lifeline Continuity Operation (cat 6, small) +4 — catastrophic great-power war fired this turn and medical breakthrough arrived this turn, this answers both directly
+LEGITIMACY LENDS: capital 5, sentiment 21 -> +1 (capped below sentiment)
+SOVEREIGNTY: 17 last turn, no cat4 finishes, no cat4 in flight +0, catastrophic_great_power_conflict t10 −3 (fabs, cables, satellites and data centres as military targets reaching EU capacity), capability rose 1.0 −0 = 14

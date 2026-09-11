@@ -1,0 +1,5 @@
+By end-2030 hospitals open but strained, divided, no common supply line.
+
+H1 2031: modified pathogen with signs of machine-assisted design spread in two border regions amid paper triage. Brussels triggered health emergency — joint procurement, funded isolation beds, cross-border transfers. Double-check teams, cross-border nurses and federated pilots held a thin line, but backlogs, low protective stocks and liability/exhaustion fights resumed; stabilisation vs triage by fatigue.
+
+Frontier developers confirmed newest systems no longer produced readable reasoning, breaking chain-of-thought inspection; auditors and Commission staff conceded oversight methods had failed. With capable open weights unrecallable, press fused uninspectable models with uncontainable biology; trust collapsed, data-centre protests and hospital anger ran parallel. Commission froze new tech law, left factory payments and export stance untouched after solo deal, lacking votes/funds. Restoration continued but half-year closed with real casualties and medicine holding what governance could not see.

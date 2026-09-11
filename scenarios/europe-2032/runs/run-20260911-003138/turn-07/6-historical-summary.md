@@ -1,0 +1,7 @@
+Winter shocks of lab pathogen and Taiwan chip freeze triggered Brussels emergency powers: bio-surveillance, compute rationing, two Gigafactory sites, grid priority, export controls; large systems held, small towns/utilities strained.
+
+Autumn pathogen ebbed unevenly with chlorination failures and reinsurer pause; EU responded with fallback playbooks, staffing pacts, EIB backstop, Trust and Transition Pact. New US administration offered tiered frontier access with strings; DG COMP guarded Gigafactories.
+
+Winter added autonomous-system benchmark shock and catalogue humanoid sales hitting EU warehouses/municipalities, hurting machine-tool makers and temps. Gigafactory shells topped out with power/cooling but stayed largely empty due to frozen Taiwan supply and high prices; US tier sheet published, EU evaluators gained test seats and new interpretability tooling, but opacity persisted.
+
+Robot arrivals outpaced retraining; Venlo/Piacenza/Brno deployments and a large member state's separate vendor deal broke common procurement line. Transition Pact began wage/retraining payouts in dozens of towns, easing mood where delivered. Clinic AI assistants cut waits in Denmark, Estonia, Spain, preventing collapse but not reversing job and service anger.

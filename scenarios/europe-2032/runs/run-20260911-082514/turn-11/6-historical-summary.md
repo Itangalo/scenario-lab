@@ -1,0 +1,5 @@
+By late 2030 Brussels was protected but sidelined: inside the pooled attribution/telemetry command where autumn probes were again isolated in hours, but outside the Washington-Beijing risk pact on weights security, escalation guardrails and bio-design curbs — offered only a technical working slot, not a seat.
+
+Chip dependence deepened as US controls tightened even for allies: volume licences cut, Dutch/Japanese/Korean quota relief conditioned on binding lithography controls and superpower verification bedding in. Gigafactories remained fenced/idle/in court; only the small secured co-location tranche kept triage pilots alive as hospitals stretched replacement cycles.
+
+Civic Trust repair stayed frozen: audited triage praised for cutting waiting lists and retained liability cover, logs published and workload limits held, but benefits/policing systems capped, finance excluded, and lawful-harm ruling blocked wider rollout — forgiveness in cooperating towns, no momentum to accelerate.

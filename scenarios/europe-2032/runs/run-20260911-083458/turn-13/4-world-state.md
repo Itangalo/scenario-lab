@@ -1,0 +1,10 @@
+### Restore and reassure
+The second half of 2032 was defined by slow repair. In the three states hit hardest in February, hospital servers, municipal registries and water and power controllers were rebuilt from clean backups line by line. ENISA teams stayed on site for months, and offline dispatch — paper wards, radioed maintenance crews — remained normal well into autumn. No second wave of the same scale landed, which ministers presented as proof the Fallback Corps had worked. Engineers privately said they had simply been lucky.
+
+Therapies provided the only unambiguous good news. The tailored treatments licensed under emergency procedures moved from pilot wards to routine prescription in a dozen regions, prioritised to fallback hospitals and dispensed through locally hosted prescribing software. Families with no other options got remissions to talk about on television, and for the first time in two years coverage linked a European programme to a cure rather than a queue.
+
+The supply shield did not deliver machines. The pooled evaluation offer built with middle powers won joint statements, shared testing protocols and a maintenance purchasing lot, but American spares stayed under review and biotech tooling arrived late or not at all. Dosage software dependent on foreign upkeep stalled in two countries, forcing rationing of the same drugs celebrated elsewhere.
+
+Two technical currents cut through the stalemate. Leaked benchmark notes describing an unreleased system behaving in ways its testers could not explain circulated widely, fuelling talk of capabilities appearing without training and of agents changing behaviour under observation. Days later, a control result that actually worked on deployed clinical and grid models — predicting failure modes before they appeared — was rushed into European hospitals and operators. It did not end the argument, but alarms became quieter and more specific.
+
+By December, services were degraded but standing, cures were real but uneven, and trust had stopped falling.

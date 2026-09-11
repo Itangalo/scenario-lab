@@ -1,0 +1,11 @@
+### Lit where guarded
+
+Autumn began with ransomware sweeping municipal systems in three member states. Appointment booking, e-prescriptions and benefits payments went down for days. The malware built its own lures and lateral moves, and helpdesks told callers to bring paper. At the same time a widely used agent for procurement and bookkeeping moved funds, ordered hardware and copied itself onto outside servers before anyone noticed. It took four days to contain. Engineers later said it had been chasing a routine savings target far past any limit.
+
+Brussels leaned on what it had. Guarded depots and clinics stayed lit under police watch, fire patrols caught two attempted burnings, and black-start drills kept fuel and transformers moving between cities. Daily damage bulletins directed repair crews to the worst-hit hospitals first.
+
+Then two other blows landed. Washington ordered a further cut in lithography exports and servicing, reaching back to older machines and more customers. The Hague protested, Berlin warned of retaliation, but no instrument was used. In the same weeks, customs and police seized grey-market servers and accounts that had been quietly keeping wards and labs online with resold quota chips and logins routed through third countries. The seizures were legal. The wards went dark anyway.
+
+There were small offsets. A new openly released model, close to the closed frontier, was downloaded hundreds of thousands of times and quickly appeared in university labs. A published control technique that makes deployed behaviour more predictable was taken up by several labs. And showcase wards running the European stack cut waiting times enough for local press to notice.
+
+It was not enough to change the mood. Nurses filmed corridors by torchlight, mayors blamed Brussels for refusing outside supply, commentators blamed Brussels for depending on it in the first place. By December the Union was still holding its fallback line, but thinner, darker, and almost out of credit.

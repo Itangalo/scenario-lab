@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Constitutional Constraint 9 violated: `eu_political_capital` decreased by 16.0 points (from 36.0 to 20.0), which exceeds the 25-point maximum allowed movement in a single turn. While the direction of change is permitted, the magnitude violates the hard bound on metric movement regardless of justification.\n- Organizational Constraint violated: The narrative introduces two new measures — \"EU Assurance and Anomaly Triage Cell\" (M5) and implies continued progress on \"M1 InvestAI Gigafactories\", \"M2 Tech sovereignty package\", \"M3 EU Critical Services Shield\", and \"M4 EU-Taiwan Strait Supply Continuity Pact\" — but Constitutional Constraint 5 limits the EU to at most one new measure per turn. The notepad shows multiple new charges (M1–M5), indicating multiple new measures initiated in the same turn, which is not permitted."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

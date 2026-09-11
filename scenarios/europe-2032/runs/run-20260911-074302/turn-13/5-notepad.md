@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: EU Continuity and Repair Surge −2, EU Middle-Power Access and Resilience Coalition −2, priority no effect under capital below 20 = −4
+PROPOSAL BONUS: EU Middle-Power Access and Resilience Coalition (cat 8, small) +4 — us_labs_nationalised severe and this turn plus cutoff, this answers both directly as state-to-state counterparty
+LEGITIMACY LENDS: none — capital 7 after charge/bonus/events, sentiment 6, capital higher so no lend
+SOVEREIGNTY: 14 last turn, no cat4 finish or in-flight, us_labs_nationalised t13 −3 (largest capacity event over middle_power_coalition t13), capability rose 1.5 −0 = 11

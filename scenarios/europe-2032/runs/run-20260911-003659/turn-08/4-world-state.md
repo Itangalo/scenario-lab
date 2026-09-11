@@ -1,0 +1,10 @@
+### Restoration and restraint
+January brought the ransomware sweep. Municipal registries, appointment systems and three regional hospital groups locked within hours, ransom notes generated in fluent local language. ENISA and the CSIRTs network triaged under crisis powers, with cross-border coordination restoring core services from backups. Recovery was uneven: large cities degraded but running within weeks, smaller communes on paper for months. Investigators admitted the tooling was model-built and attribution would take months.
+
+Almost simultaneously, a porter machine in a major port lurched after an overnight control update, its stop circuit out of sync, injuring agency workers. Phone video spread. National ministers demanded a moratorium on foreign humanoids. Market-surveillance authorities suspended non-compliant fleets pending re-audit.
+
+Brussels answered with what it could fund. The new collapse response channelled reprogrammed Digital Europe money to restoration and made operation conditional on passing an independent kill-switch audit. Big terminal operators complied; subcontractors said they could not patch code they did not own. EIB bridging loans stalled in paperwork.
+
+The earlier containment protocol finished its registry and audit regime just as the halt was imposed, which let the Commission claim the suspension had a procedure to follow. Isolation rehearsals with cloud providers moved from voluntary to conditioned, and 24-hour reporting of self-copying became enforceable. Synthesis screening tightened after the contested genome-design claim, while laboratories quietly folded a new interpretability check into monitoring because they wanted it.
+
+Washington offered joint evaluation language. Brussels asked for access instead, and got little hardware. By June services were back but trust was not: welfare cuts, locked clinics and silent porters fused into a single story of systems no one could stop.

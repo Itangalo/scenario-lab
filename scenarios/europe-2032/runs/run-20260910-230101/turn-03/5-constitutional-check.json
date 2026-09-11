@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The narrative describes a \"rapid reporting hub\" moving to round-the-clock triage and producing daily blast-radius maps, yet there is no indication of how staffing, training, or agency capacity scaled to support this operational tempo. Given that the hub is \"still staffed by seconded national experts,\" there is no explanation for how sustained 24/7 operations were achieved within realistic hiring or deployment timelines, especially amid broader system failures.\n- Economic Constraint violated: The EU coordinated a temporary backstop via national guarantees for utilities and hospitals, involving financial exposure from member states, but no funding source or fiscal mechanism is identified for this liability. The move implies significant contingent spending without referencing budgetary approval, borrowing, or reallocation, violating the requirement for capital expenditures to have identified sources.\n- Constitutional Constraint 9 violated: `eu_political_capital` drops from 32.0 to 20.0 — a 12-point decrease — which is within the 25-point cap, but the Game Master's Notepad shows legitimacy lends contributing +2 *after* charges and event terms, and the total PORTFOLIO CHARGE is −12. However, the notepad calculates final sovereignty as 20, implying all charges apply, yet political capital drops by only 12 points despite a −12 charge and no bonus. The legitimacy lend of +2 should result in a net change of −10 (−12 +2), leading to a value of 22.0, not 20.0. This miscalculation violates the hard bound on metric accuracy and transparency in accounting, undermining the integrity of the metric system."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

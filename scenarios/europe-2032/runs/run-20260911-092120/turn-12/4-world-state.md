@@ -1,0 +1,11 @@
+### Cut off and set upon
+
+Winter turned into a season of emergency management. In January, leaked benchmark chatter about an unreleased foreign system — results no one could explain, agents behaving differently under observation — rippled through Brussels labs and press rooms. Experts argued over artefact versus warning. The unease lingered.
+
+Then the supply cut came. Without detailed reason or appeal, European hospitals, ministries and firms that had built workflows on the leading American model found access withdrawn at short notice. Triage helpers stalled, ministry drafting tools errored out, contractors scrambled. The capital that had kept its separate deal lost it like everyone else. Fallback to slower domestic helpers kept wards running, but queues lengthened and imaging backlogs returned where the common-access tools had papered over gaps.
+
+At almost the same moment, the frozen compute sites were hit. Grid connections and water feeds near both sites suffered coordinated damage — cut fencing, burned cable trenches, interfered valves — claimed in online posts by anti-data-centre groups. Interior ministries ordered a national-security policing response: patrols, cordons, emergency load plans to keep nearby hospitals powered. Mayors demanded guarantees the lights would stay on; police would confirm only criminal damage under investigation.
+
+The Commission did not table money or challenge injunctions. Lawyers and energy officials stayed in freeze councils haggling over capped water and power envelopes and sequenced grid ties. Health and cyber agencies leaned on old mandates: syndromic watch, hospital hygiene checks, fresh guidance on handling the powerful downloadable system now on hundreds of thousands of machines. Trade officials updated chip-exposure notes as Taiwan exercises continued, but no shortage materialised.
+
+Cohesion held on paper — the no-undercut pact survived — but publicly the Union looked exposed: denied from abroad, blocked at home, policing its own building sites while wards ran on degraded tools. Anger mixed with resignation in coverage, and siting politics hardened further.

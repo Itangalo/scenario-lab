@@ -1,0 +1,5 @@
+US-China strikes hit tech base (chips, cables, satellites, data centres); Europe neutral but damaged — Mediterranean cable, North Sea interconnect dark, spares snarled. Brussels shifted from autonomy to continuity: repair battalions under guard to stalled gigafactory grid links, priority dispatch to hospitals/certified triage, cross-border failover for data centres. Therapy queues in France, Spain, Poland stayed online; rolling blackouts and rationing elsewhere. Emergency shield funded from existing envelopes.
+
+Entry-level hiring collapse confirmed; transition guarantee bridge pay slow, works councils strained as fenced ports run full commercial shifts of Chinese humanoids. Near-frontier open model release in March made controls moot; municipal bans spread, more site fires/sabotage, robotics register unfunded/unenforced.
+
+Middle-powers supply/evaluation club became EU neutrality diplomacy for cable/cleanroom sites plus pooled parts/medical inference bids; separate foreign compute/robot pact state kept its deal.

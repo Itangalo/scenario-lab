@@ -1,0 +1,10 @@
+### The offer taken, the hardware not returned
+The invitation to pool live intrusion data and coordinate response across borders arrived as clinics were still running isolation drills. Ministers accepted. Liaison officers from the EU computer emergency teams moved into the shared watch floor, and cooperating municipalities wired their locked backups and cut-link playbooks into the common feed.
+
+It worked narrowly. A spring wave of extortion software probed municipal systems in three countries and was spotted faster because attribution arrived with the telemetry. Cooperators isolated and restored in hours. Non-participants again stayed dark longer, and the divide hardened into routine: protected inside, exposed outside.
+
+Nothing else returned. The licensing talks with Dutch, Japanese and Korean partners stayed stuck on preconditions about binding controls on advanced lithography. Quotas were not discussed. The fenced gigafactory site stayed fenced. Insurers studied the new chips-for-compute and civic liability pact, welcomed its language on cover for audited deployments, and still declined to underwrite new roll-outs until parliament turns promise into statute.
+
+At home the trust repair stalled halfway. The frozen benefits and policing support system stayed frozen, logs were published with a redress window, and workload limits plus independent re-checks were imposed on paper. Audited triage assistants in health administration continued to cut queues, and local press credited them. But national coverage kept the other frame: what harmed people for months had been fully lawful. Opposition mayors refused to expand triage use, citing court findings and missing insurance, while Commission funds sat unspent for lack of eligible sites.
+
+Brussels ended the half-year more connected abroad, still without domestic capacity, and still arguing that lawful does not mean trustworthy.

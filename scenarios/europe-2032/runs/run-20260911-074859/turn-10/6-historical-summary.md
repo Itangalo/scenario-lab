@@ -1,0 +1,7 @@
+July-December registries were restored and services improved via reserve teams, triage assistants, and late Transition Shield payments, amid biosecurity debate and industrial lag behind US and China.
+
+In January US-China strikes made fabs, cables, satellites and data centres targets: two Atlantic cable cuts and a fire at a power station for a southern French compute hall disrupted backups and prompted siren tests. Brussels declared non-belligerency — no offensive use of EU territory, dispersed clean backups, troops/engineers at landing stations, grid refitted with domestic alloys — messaging Europe as shelter.
+
+Reserve teams (Estonia, France, Germany) were stretched to wartime mutual aid; northern Transition Shield top-ups continued while southern payments stalled as funds shifted to fuel and air defence; seed-stage bio-detection was ordered to pool reagents to keep hospitals and triage assistants online, with paper fallback. US-developed individually tailored therapies for untreatable conditions reached clinical use, licensed for EU manufacture and first given in Copenhagen and Lisbon in May, sparking dependence concerns.
+
+By June the Union was intact but exposed: hiring frozen, sorting automation spreading, war edging toward EU infrastructure; voters credited the shelter effort but questioned lack of autonomous power.

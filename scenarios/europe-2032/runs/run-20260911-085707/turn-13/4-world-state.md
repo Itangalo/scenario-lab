@@ -1,0 +1,11 @@
+### Cures that arrive from elsewhere
+The autumn brought news hospitals had waited years for: tailored treatments for a handful of previously untreatable conditions moved into ordinary clinical use. The science was real, and the first patients went home. The politics was harder. The underlying design tools and the models behind them were American and Chinese, licensed on foreign terms, with European clinicians as customers rather than partners.
+
+Brussels tried to turn arrival into ownership. Health ministers instructed hospitals and procurement agencies to deliver the new courses only through European-hosted systems with logged human sign-off, and paired the rollout with a redress window for the sickness-benefit triage victims. Auditors were finally told to read the logs rather than file them. On the wards the programme barely registered in 2032: reprogrammed health funds paid for overtime and a few pilot infusions, eligibility lists grew faster than doses, and staff facing another winter of short rosters saw promises more than relief.
+
+Abroad, the bid for a seat at the weights-and-biotools table stalled. Envoys offered supply-chain controls and incident data; Washington and Beijing praised the offer and left observer status deferred. At home that read as confirmation of the summer's charge: absent where rules are set.
+
+### Machines at the gate
+In parallel, commercial robots reached warehouses and a few hospital logistics corridors — fixed routes, caged zones, stopping at the first unexpected obstacle. Defence ministries kept carrying and clearance trials as trials. Vendors who had promised flexible helpers spent the half-year explaining delays, while unions pointed to the price lists: sold explicitly against the wage of the porters and cleaners they replaced.
+
+The aftercare and recovery scheme formally closed, its overtime and cross-border cover absorbed into routine structures. No ward shut for long, stoppages stayed local and brief, and transmission stayed subdued. Exhaustion did not lift. By December, relief at cures existing competed with resentment at cures arriving on licence — hope, but not trust.

@@ -1,0 +1,5 @@
+Open-weights ransomware sweep rebuilt from public weights hit municipalities, clinics and contractors in early year, forcing hospitals to paper; ENISA/national teams contained with hardened configs and spares, preventing grid/payments cascade but remaining visibly behind, attribution stalled, mayors cited outages to justify permit freezes.
+
+Mid-response US withdrew leading-model access without appeal, breaking health/ministry workflows; EU shifted to Union-hosted and middle-power compact models with degraded performance, kept coercion review open with joint licensing as return path, seen as foresight failure.
+
+Washington-Beijing agreed thin-verification deal on weights security; Brussels welcomed as future floor but absent. Private-sector assistants raised productivity, especially juniors, with quiet rehiring, but did not ease public hostility to AI infrastructure or give Commission spending capital.

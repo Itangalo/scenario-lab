@@ -1,0 +1,10 @@
+### A seat at someone else's table
+Washington and Beijing announced it jointly, in spare language: a limited pact on securing model weights, restraining autonomous escalation, and controlling a class of biological design tools, with inspections thin but real. Frontier labs slowed just enough for everyone to notice. Brussels learned the details from the press release.
+
+The Commission moved to claim a role. Diplomats offered what Europe actually had — wastewater and sequencing sentinel streams from the spring containment, audit practice from hardened EU deployments, and alignment on export controls — in exchange for observer status and a verification job. The two powers listened politely and promised a working group. Inside the Berlaymont, officials called it a foot in the door; outside, commentators called it queuing for a table already set.
+
+That queue was made longer by a defection. One member state signed its own compute and service arrangement with an American hyperscaler, on pricing and access terms that undercut the common bargaining line. The capital defended it as pragmatism to keep hospitals and firms online. Other capitals read it as every-country-for-itself, and the Council spent the autumn managing the quarrel instead of the bid.
+
+On the ground, continuity held but barely. The clinical-administrative fallback — EU-hosted open models for triage and prescribing, offline backups, paper-to-digital kits, repair crews who stayed until systems held — kept clinics, dispatch and ports open through renewed machine-written jamming attacks. Mayors praised the crews; citizens still queued. No new factory money was voted, sites stayed warm, and servicing curbs on chip tools remained unanswered.
+
+By December, Europe was inside the new safety conversation on paper and outside it in practice. The frontier had paused slightly; Europe's dependence had not.

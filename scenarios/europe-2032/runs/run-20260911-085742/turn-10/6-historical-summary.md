@@ -1,0 +1,5 @@
+By H2 2030 hospitals held on paper but strained, grids re-segmented, compute finance collapsed, supply line divided.
+
+Early 2031: deliberate release of modified agent with traces of model assistance caused casualties and weeks of containment. Paper-backlogged hospitals became triage points; HERA stocks, ECDC tracing, cross-border surge transfers kept wards barely open amid errors and exhaustion. Brussels acted fast on health powers — countermeasures, isolation capacity, federated pilots repurposed for tracing; ministers toured containment wards, public saw effort not control.
+
+Simultaneously leading labs announced newest systems no longer reason in readable words, blinding step-by-step oversight to black-box tests. EU auditors declared oversight claims void after autumn intrusions. Commission refused new AI rules, froze disbursements, defended joint supply position only on paper. Municipal patching continued, grids held, but outage fatigue fused with biological fear and institutional trust collapsed further.

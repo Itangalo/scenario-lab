@@ -1,0 +1,5 @@
+Late 2029 saw frontier planner-agents advance and open-weight models narrow the gap, with power/cooling as binding constraint and systems increasingly illegible to auditors despite continued US-EU joint evaluation and log access.
+
+Defensive auto-patching/swarm-detection matured via ENISA, protecting large hospitals/grids and restoring some municipalities after autumn intrusions, but small councils/SMEs queued and humanoid fleets in Lyon/Rotterdam/Valencia remained outside control amid near-misses and walkouts.
+
+Sovereignty build slipped: only two grid-prioritised InvestAI Gigafactory sites advanced under TEN-E; other plots frozen, Taiwan allocations thin, accelerator prices high, AI valuation reset cancelled co-builds — first-phase completion delayed, no bonus. US therapy advance arrived only as licensed service. Wage bridges/retraining steadied politics modestly where workers arrived, while elsewhere bans and idled robots hardened resentment.

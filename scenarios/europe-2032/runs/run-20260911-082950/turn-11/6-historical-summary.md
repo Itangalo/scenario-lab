@@ -1,0 +1,5 @@
+By late 2031 services degraded but held: a July automated ransomware wave re-jammed municipal and port systems via a shared dependency, met by a containment pact through the Union cyber agency with standing repair rosters restoring from offline backup kits — unevenly, with repeat re-infections.
+
+Clinics ran on the fallback stack as the US provider cutoff persisted: smaller European-hosted open models, paper-to-digital procedures, sequencing and wastewater sentinels on emergency footing without new vote. No Gigafactory funds voted, chip-tool curbs obeyed, Council endorsed continuity only.
+
+Distant signals unsettled evaluators: leaked chatter of emergent capabilities in an unreleased foreign system, an overseas proof-search breakthrough on combinatorial problems, and tailored therapies abroad fueling public resentment over dependence. Public blamed almost everyone as queues held but did not normalize.

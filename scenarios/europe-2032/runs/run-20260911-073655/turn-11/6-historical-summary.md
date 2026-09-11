@@ -1,0 +1,3 @@
+US-China war continued to fracture supply: Washington put frontier labs under direct federal control, ending publication and shifting licensed doses/model time to diplomatic allocation with delays for EU clinicians and grid engineers.
+
+EU joined a middle-power joint cyber command and binding biosurveillance pact via health/digital funds, feeding operator data through ENISA/CERT-EU; attribution and isolation improved but supply not restored. Entry-post job losses persisted; Guarantee bridge payments continued for port/logistics workers without restoring hiring. Burned southern gigafactory grid works remained idle under guard awaiting rebuild permits. Middle-powers club pressed both capitals for non-targeting of cables/sites; no guarantees.

@@ -1,0 +1,5 @@
+Late 2030 brought the feared lab leak of a model-assisted modified pathogen sickening dozens across two regions; isolation held with limited fatalities after weeks of surge wards, sequencing and tracing. Spring kill-switch drills, telemetry checks, and rerouting of the Strait buffer for medical spares prevented cascade — claimed as validation of the cheap containment protocol.
+
+A certifiable check on agent behaviour from frontier research was rapidly adopted by labs, with Ispra pushing verified patches to municipal centres with pass-fail logs — second operational defensive win within weeks.
+
+Politically, coordinated blockades halted mediated data-centre builds at two inland sites over opaque models and pathogen fears; Brussels paused forced connections, offered benefits/monitoring, shifted load to existing capacity. New surge programme for isolation, sequencing, exercises and control-check adoption used reprogrammed funds under existing law, but the large member state with separate hyperscaler deal shared only partial telemetry. Logistics automation job losses accelerated unanswered. By December containment held without restored trust.

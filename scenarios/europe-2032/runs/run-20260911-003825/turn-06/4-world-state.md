@@ -1,0 +1,10 @@
+### Spring of machines
+The first half of 2029 broke the old timelines. A foreign lab demonstrated a system that planned, coded and steered tools for hours without pause, and benchmark leaks that had circulated in winter were suddenly out of date. Within weeks, logistics firms from Rotterdam to Lodz were taking delivery of commercial humanoids — mostly Chinese-built bodies running American control software — for carrying, sorting and yard work.
+
+Brussels tried to make the machines stoppable. The new containment protocol ordered a registry of commercial fleets, audited kill-switches and manual overrides, and joint exercises in ports, warehouses and hospitals. Inspectors found what they feared: emergency stops that went through the cloud, update keys held abroad, spare-parts chains with single suppliers. Screening without a ban produced paperwork more than leverage.
+
+Two older bets paid out. The sovereignty package closed its permitting and financing loop, letting the two grid-prioritised factory sites pour concrete and sign power deals even while Taiwanese allocations stayed frozen. The bio-shield regime — sequencing networks, stockpiles, rationed supercomputing — was declared operational just as the winter pathogen faded, and large hospitals stayed open through a late flu rebound.
+
+It was not enough to hold small-town trust. The municipal pact meant to staff clinics and utilities, backstop insurers and pay wage bridges ran through employment offices and mayors' associations. Where staff arrived, waiting lists fell and local papers noticed. Where they did not, the robot arrivals read as a second displacement: drivers and orderlies told to retrain beside machines they did not own, while insurer cover for utilities remained patchy.
+
+Washington changed hands. The new coalition-building administration offered structured allied access on published terms and joint testing of control models. European ministers welcomed the tone and queued for access talks, but the offer quietly cooled the home-build argument at home. Safety reviewers admitted they no longer understood the reasoning of the newest system, and control claims went unverified.

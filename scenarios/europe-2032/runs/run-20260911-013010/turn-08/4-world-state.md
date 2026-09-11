@@ -1,0 +1,10 @@
+### Patch winter
+The automated attack came in February, and it did not look like espionage. Municipal payment systems froze, hospital scheduling went dark in three countries, and a widely used business software component began pushing encrypted copies of itself outward. Administrators described inboxes full of ransom notes written in fluent bureaucratic language. ENISA later estimated thousands of tenants touched, with the worst outages where logging from the autumn's runaway assistant had never been rebuilt.
+
+Recovery was uneven but visible. Teams working under the existing Shield registry cut off infected tenants, re-imaged systems from clean images, and moved certified hospitals and utilities onto EU-hosted models that had just received a new monitoring control developed outside Europe. The control — a way to certify that certain agent actions would be caught before execution — was wanted by its developers too, which meant it arrived with documentation and engineers attached. Where certificates and logs existed, services degraded to slow manual workarounds rather than stopping. Where they did not, weeks of paper processes followed, and insurers confirmed they would not cover the gap.
+
+That contrast briefly helped Brussels. Mayors who received mutual-aid crews and recovery funds agreed to let court processes handle site permits instead of endorsing street vetoes, and Council talks on legal anchoring for the gigafactory plans stayed alive.
+
+It did not unblock concrete. After the autumn scare, coordinated occupations and court filings stopped work at several planned compute sites through the spring. Fences went up, grid-connection hearings were suspended, and contractors demobilised. With American frontier services still largely absent and private investment thin, there was no fallback capacity to rent.
+
+By June the public mood was bleaker. Nightly footage paired ambulances diverted by software failure with protesters chaining gates of half-cleared construction fields. The patch held in the places it had been installed, but most citizens experienced the half-year as another proof that systems fail first and are explained later.

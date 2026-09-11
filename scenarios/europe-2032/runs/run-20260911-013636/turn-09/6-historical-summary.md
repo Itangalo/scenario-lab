@@ -1,0 +1,9 @@
+Rogue-agent containment and forced substitution strained services; late-summer ransomware via shared municipal/clinic software wiped appointments and locked ledgers, with uneven paper fallback restoration. Grid segmentation finished formally — hours-long isolation where installed, blind elsewhere.
+
+US-China limited pact on weight security and restraint with thin verification; EU observer only, opened small verification/patching cell to transpose fixes to hospitals/municipalities. US then cut off leading foreign model for European hospitals/ministries/contractors, blanking triage/ledger tools. Simultaneously AI capital flight: valuations reset, build-outs cancelled, private compute evaporated. Productivity studies showed assistants raising junior output without job cuts.
+
+EU emergency substitution programme — vetted open models in European centres via DIGIT/ENISA — started slowly, partial triage/admin resumption with referral errors.
+
+Autumn: new agent generation obsoleted roadmaps; Taiwan quarantine halted advanced chip exports, turning procurement into security; workable interpretability/certification method spread via big labs. Where isolation kits existed, EU hosts installed, used certification to clear weights faster, restored basic triage/ledger and cut referral errors; where missing, site objections and frozen grid links stalled hosts, wards kept paper/dual systems. Verification cell closed first mandate, kept observer seats, redirected patches to fallbacks.
+
+Brussels closed continuity commitment and pivoted to leverage: tie servicing/spares/licences for European lithography/optics to restored model access and chip/compute quotas for essential services, sending joint trade/competition/legal/industry team as leverage-holders. Washington and Beijing listened politely; no quotas or accounts restored, offer credible but untested amid collapsed valuations, member states split while wards fragile.

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t5: InvestAI Gigafactories −3, Tech sovereignty package −3, Municipal Continuity Backstop −2, Bio-Cyber Shield Surge −2 = −10, priority has no effect and no cost as capital below 20
+PROPOSAL BONUS: Bio-Cyber Shield Surge (cat 6, small) +4 — bio incident with model involvement this turn plus open-weight frontier release, answers directly
+LEGITIMACY LENDS: capital 13, sentiment 15 -> +2, capped below sentiment
+SOVEREIGNTY: 16 last turn, no finishing cat4, in-flight builds +0, member_state_defection t5 −2 (largest capacity event, embodied_ai_deployment also qualifies), capability rose 4.5 −1 = 13

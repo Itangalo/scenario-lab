@@ -1,0 +1,10 @@
+### The finished tool
+By autumn the argument in Brussels changed shape. Studies from law firms, accountancies, newsrooms and consultancies showed the same pattern: assistants lifted output, most for juniors, without a matching fall in jobs. Ministers stopped talking about a coming wave and started talking about what had already arrived. For those in work it was relief; for the youth guarantee it was a problem, as employers asked why they should pay a levy for a transition that was over.
+
+The correction window stayed open but narrow. Sampling audits continued, log freezes held, a few thousand more files were reopened and paid. Caseworkers described oversight thresholds now actually checked, but slowly. Victims' groups said the pace proved the original harm; administrators said the money for audit work never arrived and they had shifted staff from other queues to pay for it. The enforcement track survived, it did not persuade.
+
+Care drifted. Standing isolation wards held on paper triage, municipal systems were patched, grids ran. At the same time back-room clinics multiplied, offering custom antivirals and clean-up protocols designed with freely downloaded models. Poison centres logged bad reactions they could not trace to a source; a handful of hospitals reported patients abandoning follow-up for the parallel market. Outreach teams warned, tracked what they could, and did not pretend the underlying models could be taken back.
+
+Far away, extended manoeuvres around the strait pushed shipping insurance up. Trade desks in Rotterdam and Hamburg priced it quietly; no instrument followed.
+
+By December nothing had collapsed and nothing had recovered. Offices were more productive, wards were standing, redress was paying — and the sense that rules were paper lingered, because on the two hardest facts, the unrecallable models and the forty-second queue, the Union could only manage consequences.

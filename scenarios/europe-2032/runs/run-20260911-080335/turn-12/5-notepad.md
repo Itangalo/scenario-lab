@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: EU Livelihood Transition and Essential Work Continuity Fund −2, EU Wartime Neutrality and Critical Infrastructure Survival Pact −2, priority −1 = −5
+PROPOSAL BONUS: EU Wartime Neutrality Pact (cat 6, small) +4 — catastrophic_great_power_conflict fired this turn targeting EU fabs/cables/data centres and this answers it directly
+LEGITIMACY LENDS: capital 25, sentiment 18 -> none, capital higher
+SOVEREIGNTY: 15 last turn, no category 4 finish, catastrophic_great_power_conflict t12 −3 as emergent capacity-taking event striking EU fabs/cables/data centres, capability rose 1.0 −1 = 11

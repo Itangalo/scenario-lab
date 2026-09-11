@@ -1,0 +1,9 @@
+### Shelter Under Fire
+January brought war no declaration had prepared for. American and Chinese strikes traded across the Pacific in the first week, and within days the targeting lists widened: fabrication plants, undersea cables, satellite ground stations, data centres. Two landing stations in the Atlantic went dark for hours after damage to repeaters. A power surge tripped switchgear in the south. In Brussels the language changed overnight from backlog to lifeline.
+
+The Union declared non-belligerency, denied offensive use of its territory and infrastructure, and ordered dispersal. Reserve teams that had spent autumn cleaning registries were re-tasked to wartime mutual aid, hauling clean backups to inland sites. Engineers rushed the new long-life alloys into landing points and grid nodes. It worked in part: registries stayed up, hospitals kept triage assistants running. It failed in part: throughput on transatlantic links collapsed, cloud bills spiked, and empty machine halls now looked like liabilities rather than embarrassments.
+
+### Healing Amid Dependence
+Mid-spring came the second shock: tailored therapies for previously untreatable conditions, proven in American clinics, built on models Europe could not run. Health ministers queued for licences while HERA pooled reagents. Where EU-hosted manufacturing was agreed, waiting rooms cheered; where supply depended on airlift through a war zone, gratitude curdled into resentment. Nurses spoke of cures on television and shortages in the dispensary.
+
+Wage top-ups continued, bio-detection seed contracts were stretched to cover wartime continuity, but graduate hiring stayed frozen and sorting machines kept spreading. Voters saw a Europe that sheltered and healed as powers fought — and saw, too, how much of that shelter depended on cables, chips and models it did not control.

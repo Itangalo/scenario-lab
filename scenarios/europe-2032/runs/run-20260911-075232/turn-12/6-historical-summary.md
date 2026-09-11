@@ -1,0 +1,5 @@
+Winter wave of AI-designed pathogen — more contagious and lethal than Covid — swept Europe via airports/ports Jan-March, forcing coordinated border screens, full wards, sick staff, wobbling registries.
+
+Europe held care-first: completed bio-detection network with pooled reagents, mobile labs, paper fallback kept triage alive; islanded grids held lights/water in districts; wage guarantees kept nurses/crews despite exhaustion-turned-anger.
+
+Geopolitics shifted: US frontier labs under direct state control, weights as defence articles; Brussels lost commercial leverage, aid via slow state-to-state channel. AI capital collapsed, compute deals evaporated; Chinese robots with US software undercut EU industry. Leaked evaluations of inexplicable behavior erased AI trust while clinic trust held; sabotage fears grew, neutrality held only declaratively as survival dominated.

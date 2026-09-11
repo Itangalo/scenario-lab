@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: Targeted Transition Income and Tier-One Retraining for Checkable Work −2, Municipal Clinic and Local Services Rapid Restore Corps −2, priority −0 (suspended, capital below 20, no pull-in, no cost) = −4
+PROPOSAL BONUS: Municipal Clinic and Local Services Rapid Restore Corps (cat 6, small) +2 — spring automated ransomware sweep left municipal/clinic services offline and this answers it directly
+LEGITIMACY LENDS: capital 10, sentiment 0.0 -> none, capital higher
+SOVEREIGNTY: 15 last turn, no capacity event, no category 4 finishing or in flight, capability rose 1.0 no charge = 15

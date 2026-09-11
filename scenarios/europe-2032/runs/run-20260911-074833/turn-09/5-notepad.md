@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t9: EU Transition Shield for Displaced Work and Essential Services −2, EU Bio-Detection and Trusted Care Continuity Network −2, priority −1 = −4 (priority without effect or cost as capital 15 below 20, charge is measures only)
+PROPOSAL BONUS: EU Bio-Detection and Trusted Care Continuity Network (cat 6, small) +3 — bio_uplift_findings precursor opened 4-turn gate this turn plus ransomware queues still visible, this answers them directly
+LEGITIMACY LENDS: capital 14, sentiment 19 -> +1
+SOVEREIGNTY: 18 last turn, no capacity event, no cat4 in flight +0, capability rose 2.0 −1 = 17

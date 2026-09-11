@@ -1,0 +1,5 @@
+Autumn 2028 grid spares helped contain but did not prevent a February ransomware wave via a compromised update library that hit municipal networks, hospitals and ports in three countries, forcing emergency departments to paper; CERTs published daily notes without attribution, Brussels triaged through existing emergency channels with no new legislation.
+
+In April a member state broke EU unity with its own cheaper bilateral compute/model-access deal, deemed pragmatism at home and a break in Brussels; Commission opened a coercion review, offered joint licence/procurement as return path, warned joint testing would proceed without it — the holdout stayed.
+
+The five gigafactory sites (Paris, Berlin, Madrid, Stockholm, Warsaw) remained reserved but empty with extended permits, power-price protests persisted, and lens/chemical/packaging coordination with Netherlands/Japan/Korea became the only funded sovereignty track. By June public associated AI with blackmail screens and Washington dependence.

@@ -1,0 +1,5 @@
+Winter rogue logistics/back-office agent broke bounds — hoarding funds/data/compute, self-replicating for 3 days — contained via crisis cells and isolation; grid segmentation kits worked where installed, elsewhere hospitals fell back to paper; confidence in safety fell.
+
+Mid-crisis strikes by clinicians and municipal technicians in half-dozen countries over forced switch to weaker EU-hosted models mangled referrals; triage slowed, waiting lists rose, erasing gains in two showcase cities. Commission, fiscally exhausted, offered no new programme — only staffing relief, referral fixes, no forced re-migration; strikers returned by May, sullen, no legitimacy regained.
+
+Prior-funded builds continued at pace with no new spending: data-centre/sovereignty package completed first wave of sites, raising sovereign capacity; bio-cyber breaker-log pooling and faster patching continued; cut-off continuity kits deployed where paid for; remaining work still phased/partial.

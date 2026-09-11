@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t3: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Critical Services Shield −3, EU Assurance Adoption Hub −2, EU AI Transition Cushion −2, priority −1 = −14
+PROPOSAL BONUS: EU AI Transition Cushion (cat 7, small) +2 — ai_investment_collapse landed this turn and this answers its labour-shock transmission directly
+LEGITIMACY LENDS: capital 16, sentiment 39 -> +2 capped? Actually applied after other terms, included in capital total; none separate — capital 14 before lend, sentiment 39 above, +2 lend = 16
+SOVEREIGNTY: 22 last turn, no category 4 finish, Gigafactories in flight +0, emergent_hyperscaler_pause_eu_build t3 −2 (largest capacity event, investment collapse consequence counted once), capability rose 1.0 −0 = 20

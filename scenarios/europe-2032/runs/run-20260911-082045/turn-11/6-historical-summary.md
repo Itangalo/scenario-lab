@@ -1,0 +1,7 @@
+By 2029-2031 the Union traded sovereignty for protection: offline kits, telemetry-tied funds, pooled ENISA/health cyber-bio response and joint attribution gave cooperating cities hours-fast isolation, but depended on a command Brussels did not command; chips stayed blocked, gigafactories idle/stalled, insurers paused, finance fled.
+
+Legitimacy stayed split: audited triage assistants cut waiting lists in willing cities, while the lawful 40-second benefits/policing system caused harm, was frozen with workload limits, published logs and redress — freezing wider deployment.
+
+Autumn-H2 2031 double shock: US provider cut leading models for European users, forcing hospitals/ministries to paper and 2029-drilled locked backups; simultaneous attacker leap in code/math/intrusion cut attack time from hours to minutes while reviewers still audited last spring's releases. Telemetry-sharers got early warning and held isolation; care continued only where fallback/European-hosted models with human override existed, otherwise degraded.
+
+Commission inventoried cut-off dependencies ward-by-ward and rushed finished-line funds to keep triage sites running, but effort underfunded: no chip slots, idle factory, no insurer statute, partner inference as favours, licensing pact warm-empty. By Dec 2031 containment held where cooperation held; visible local utility, deeper overall dependence, no sovereignty return.

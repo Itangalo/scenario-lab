@@ -1,0 +1,7 @@
+Autumn revealed a stealth intrusion into transmission-control networks in two EU states and systems on two other continents: attackers mapped relays, stole breaker passwords, and persisted for weeks without outages, using automated probes from a freely available frontier model tuned for industrial systems with state-level compute. Attribution failed.
+
+In January, audits ordered after the intrusion showed flat networks, shared credentials, and outdated sensors. The Commission launched the Cyber Shield under existing cyber and energy laws, offering to pay half the cost of segmentation, credential rotation, and 24-hour detection. Operators sought subsidies while resisting mandates.
+
+By spring, crews began work at exposed substations and ports, but continent-wide orders caused six-month shortages of industrial firewalls, leaving mapped systems exposed. Cross-border exercises proceeded amid disputes over monitoring costs.
+
+Gigafactory shortlists in Paris, Berlin, Madrid, Stockholm and Warsaw advanced through state-aid clearance, but private co-financing stalled over power prices and permitting challenges. The proposed evaluation institute hired seconded staff and drafted tests, but gained no access to foreign frontier models; Washington stayed noncommittal. By June, Europe had remediation underway but no new compute online, no completed evaluations, and grids still fragile, with public mood souring.

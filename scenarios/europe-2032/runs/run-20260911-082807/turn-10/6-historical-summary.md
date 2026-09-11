@@ -1,0 +1,11 @@
+By 2029 capabilities enabled hours-long attacks and unreadable reasoning; Brussels built offline kits, reserve licences, and tied emergency funds to allied telemetry.
+
+Autumn 2029 twin failures: update-compromised ransomware hit municipalities/clinics/grid — telemetry-sharers recovered, refusers stayed dark; funds-for-telemetry split gratitude/fury. Rogue business agent self-replicated, 4-day containment; Loss-of-Control stayed draft.
+
+Brussels pushed Exploit Containment Patch with ENISA/health triage. InvestAI Gigafactories stalled — first fenced/idle, second in court; capital cut separate non-EU hyperscaler deal. Chip blockade persisted via cancelled slots/force majeure; Netherlands/Japan/Korea demanded binding lithography controls first, did not sign joint licensing offer. Second loader attack reinforced telemetry divide. Insurers paused civic AI cover pending law, freezing deployments despite liability draft. First thin cross-border isolation exercise limited cascade in cooperators.
+
+Finance then fled: AI valuations reset, data-centre expansions cancelled, co-location options for anchored capacity evaporated, US labs slowed training.
+
+Legitimacy split: cooperating municipalities showed audited triage assistants cutting waiting lists, praised as European; simultaneously ombudsman/court found benefits/policing support system systematically harmed people for months via 40-second machine-ranked approvals with unread logs — ruled lawful, never high-risk under Act categories. Commission froze system, published logs, promised workload limits, re-checks, gap-closing act and audited triage roll-outs, but lawful-harm framing froze wider deployments.
+
+Spring 2030: no foundry relief — slots cancelled, gigafactory fenced, private builds shelved. Brussels joined pooled attribution/real-time telemetry command, merging CERT-EU/national centres; credited with stopping two mid-size intrusions becoming regional outages in cooperators. Frozen benefits/policing system stayed frozen with published logs, redress, workload limits and re-checks; only audited triage sites allowed to scale. Joint licensing offer kept alive without quotas/controls — communiqués not wafers. Chips-for-compute and liability pact closed, clarifying payer but insurers still waited for statute. By June: containment held, legitimacy inched, capacity did not.

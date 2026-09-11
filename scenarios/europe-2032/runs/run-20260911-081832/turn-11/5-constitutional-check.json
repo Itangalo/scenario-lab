@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `ai_safety` dropped from 6.0 to 0.0. The metric `ai_safety` is not one of the two metrics (`ai_capability`, `openweight_capability`) permitted to be non-decreasing. A drop of 6.0 points violates the constitutional rule that only those two metrics may accumulate and never fall, absent catastrophic physical destruction of the compute base — which is not narrated here.\n- Invariant 9 violated: `ai_safety` changed by 6.0 points in one turn, which exceeds the 25-point cap on movement. While 6.0 is below 25, this rule is not the primary issue; however, the drop itself violates Invariant 2. (Note: This serves as a secondary check — the main violation is Invariant 2.)\n- Narrative violates Constitutional Constraint 8 (No telegraphing): The phrase \"the case Brussels had drilled for but never closed\" implies foreknowledge of a specific event gate being open (i.e., a loss-of-control incident), which belongs in event evaluations, not the narrative. This telegraphs that such an event was expected and prepared for, violating the prohibition on implying open event gates or anticipatory knowledge."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

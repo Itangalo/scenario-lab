@@ -1,0 +1,6 @@
+US-China war erupted over decisive AI lead, striking fabs, cables, satellites, data centres; European infrastructure hit collaterally despite Council declaring territory, landing stations and gigafactory plots non-belligerent and offering deconfliction/test recognition for no targeting and continued supply — securing only communiqués. Therapies, models and scheduling remained foreign-licensed, now queued behind wartime requisitions.
+
+At home, sabotage spread from robot pilots to gigafactory grid works, halting construction; Energy Council took emergency control with guards/repairs but no new siting promise. Operators isolated systems; services degraded. Graduate hiring freeze hardened across law, accountancy, software, customer ops; Guarantee bridge pay slow, port/warehouse reopenings frozen by blockades and war. Mayors faced pickets and patients.
+
+An openly released near-frontier model spread unrecallably; unattended frontier labs pushed further.
+Tailored therapies in France/Spain/Poland, foreign compute/robot pact, supply club, and grid priority stall persisted in background.

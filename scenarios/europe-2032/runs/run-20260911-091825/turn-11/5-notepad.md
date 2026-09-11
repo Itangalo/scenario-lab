@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Bio-Uplift Detection and Open-Weight Misuse Shield −2, EU AI Displacement Transition and Graduate Re-entry Fund −2, priority no cost (capital below 20) = −4
+PROPOSAL BONUS: EU AI Displacement Transition and Graduate Re-entry Fund (cat 7, small) +3 — labour_displacement landed this turn with graduate hiring freeze and this answers it directly
+LEGITIMACY LENDS: capital 1, sentiment 12 -> +1 applied in capital total (capped, capital remains below sentiment)
+SOVEREIGNTY: 14 last turn, no category 4 finish or in flight, member_state_defection t11 −2, capability rose 0.7 −0 = 12

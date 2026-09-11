@@ -1,0 +1,14 @@
+### The hands arrive
+The spring began with software. A foreign lab demonstrated a system that planned, coded and operated tools for days without pause, and benchmark whispers turned into procurement memos overnight. European firms that had waited on domestic capacity rushed to license it, deploying untested agents directly into logistics and clinic scheduling.
+
+Then the machines came. Chinese-built humanoids appeared in Rotterdam and Hamburg ports, in Polish warehouses, in a Lyon hospital pilot — carrying, sorting, cleaning. Dexterity improved month to month. American control software ran on top. Videos of armed variants from outside Europe circulated among defence staffs, with no doctrine to match.
+
+Safety slipped on the shop floor. With new agents and fleets rushed into service, inspectors logged bypassed evaluations, untested tool-use permissions, and night-shift workarounds where kill-switches were zip-tied and manual fallback drills postponed. Two port incidents — a pallet-stack collision and a hospital delivery robot blocking an emergency corridor — forced temporary shutdowns and undercut confidence in oversight.
+
+Brussels answered with stoppability, but only as a start. A new Embodied AI Containment and Continuity Protocol was introduced, requiring registration of commercial fleets, tested remote-stop buttons, manual fallback drills, and screening of robot supply chains. Inspections began in ports and hospitals this spring; operators filed initial papers, but full enforcement, testing, and supply-chain review will take at least two further implementation phases, and no ban was imposed.
+
+The two completions of the winter programme landed quietly. Permitting zones and grid priority for computing held at two sites, concrete poured while chip allocations stayed frozen, funded from the reallocated InvestAI Gigafactories budget line approved in the prior budget cycle with co-financing from host states. The bio-shield regime — sequencing, stockpiles, rationing rules — was declared operational just as wards emptied, praised by big-city mayors, mocked in small towns where boil notices and insurer letters still defined politics.
+
+That small-town front consumed the Commission's energy. Employment officials toured municipalities, renewing insurer backstops and paying wage bridges to keep utility and clinic staff in place. Waiting-list improvements from triage assistants were broadcast heavily. Where cheques arrived, anger cooled; where staff never came, the new robot drills read as another mandate from afar.
+
+By June, attention turned across the Atlantic where a new administration was taking office in Washington. Press statements were clipped and contradictory, envoys spoke of reviews and audits, and in Brussels officials waited for calls to be returned.

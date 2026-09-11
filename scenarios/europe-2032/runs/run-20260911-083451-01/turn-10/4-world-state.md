@@ -1,0 +1,10 @@
+### Cut off in the middle of containment
+The spring began with two shocks at once. Clinics in three member states reported clusters of severe atypical pneumonia. Sequencing showed an engineered agent, and investigators found traces of machine assistance in its design. Quarantine wards filled, contact teams deployed, and containment stretched for weeks.
+
+In the same weeks, access to the leading American model went dark for European users. Hospitals, ministries and logistics firms that had built triage helpers, dispatch copilots and port paperwork tools on it saw error messages with no reason and no appeal. Staff fell back to older European-hosted open models and to paper.
+
+What prevented collapse was work already done. Municipal backup kits, offline triage procedures and upgraded sequencing and wastewater monitors, installed under emergency health powers, carried case-finding when networks jammed. Union cyber and civil-protection teams stayed embedded in town halls and hospitals, rebuilding from offline copies and keeping emergency dispatch on workarounds. Mayors credited the crews, even as queues lengthened.
+
+Brussels activated a single new emergency corps under existing health-emergency and civil-protection law, without a new vote: funded overtime for clinic staff, expanded lab surveillance, and a cleared list of fallback models to run on European soil with reprogrammed digital funds. No new factory money was voted; sites were kept warm. No retaliation for the cutoff or for extended servicing curbs on chipmaking tools was attempted.
+
+A sharp advance in code and intrusion tools, demonstrated abroad, made defence harder within weeks. Machine-written break-ins continued against clinics and ports. Public mood, exhausted by outages and now frightened by the release, fell to open hostility in places. That services degraded rather than stopped was noticed — but gratitude was thin against fear and fatigue.

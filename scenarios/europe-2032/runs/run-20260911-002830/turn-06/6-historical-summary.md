@@ -1,0 +1,5 @@
+Winter brought a dual technology shock: a US lab leap in planning/tool-use AI and commercial humanoids moving to order books, pressuring German, Lombard and Czech manufacturers; works councils feared dexterity automation, defence noted weaponized logistics robots without doctrine.
+
+In January the new US administration offered allied tiered access, joint testing and aligned exports. Brussels negotiated to protect its two grid-prioritized gigafactory sites amid still-frozen Taiwan allocations; tiers published and pilot access reached few EU labs, but delivery lagged, fueling dependence fears.
+
+At home the Trust and Transition Pact delivered wage bridges in three regions, relief staffing and manual chlorination drills after autumn boil notices — praised where crews arrived, rejected by two mayors elsewhere; reinsurers still shunned small utilities, and warehouse robots displaced shifts in Liège and Łódź. Old sovereignty and bio-shield programs formally closed, freeing funds but adding little capacity as the frontier pulled ahead.

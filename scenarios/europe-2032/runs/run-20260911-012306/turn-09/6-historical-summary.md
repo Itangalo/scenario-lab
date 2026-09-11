@@ -1,0 +1,5 @@
+By H2 2030 the AI boom broke: venture funds pulled back, valuations halved, expansion/overflow capacity cancelled, frontier labs training less, later; Washington tightened chip/model licences, EU kept legal access at higher cost/delay, gigafactory shells stayed shells as co-funding evaporated, middle-power talks still exploratory.
+
+Defenders had first good half-year: near-real-time patching and behaviour-based cooperating-agent detectors; two-state pilot hospitals saw fewer pages, faster isolation. Brussels pushed patch-and-detect template into certified hospitals/grid/water/willing cities via reshuffled Digital Europe money, ENISA isolation exercises modelled on spring freight-agent containment; uptake uneven — large dispatchers fast, small municipalities queued. Certified services could credibly claim degrade-not-stop.
+
+Robots arrived narrowly — caged pallet movers, pilot army carriers — manufacturers renegotiated promises. Benefits-scoring scandal continued in courts/news.

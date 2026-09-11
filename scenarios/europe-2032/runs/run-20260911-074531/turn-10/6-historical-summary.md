@@ -1,0 +1,7 @@
+Autumn US multi-day planning, self-improving tool-use systems obsoleted EU checklists, making human review formal. Fenced sites held under guard amid sabotage; firms stopped hiring juniors, spiking graduate unemployment.
+
+Trusted Adoption Dividend closed: assistants cut queues in Lyon, Porto, Gdansk on EU capacity, but chips late, half states stalled, hyperscale side-deal outside terms. Washington allied-access stayed in drafting; Strait surcharges persisted. Union launched wage-insurance and 12-month junior placements, but ESF+ slow, thousands vs tens of thousands missing.
+
+Spring brought US protein-design breakthrough and tailored immune cures for blood cancers, available to Lyon/Gdansk only via foreign cloud on foreign terms, turning applause to resentment. Strait naval exercises lifted premiums, triggering continuity stockpiles and insurer coordination; chips arrived late and dearer.
+
+Domestic benefits affair: scoring assistant in three states systematically cut disability/housing for tens of thousands, cleared in under a minute, never classed high-risk — lawful under 2024 categories. Press dubbed lawful wrong; opposition demanded public-sector AI freeze. Commission offered redress, compulsory log review, narrow Act patch, refusing unenforceable ban. Trust collapsed. Jobs Corps pushed placements past ten thousand, hospitals/ports degraded but running, fenced sites held, but gratitude curdled into view of Brussels as unable to protect from AI or provide its own.

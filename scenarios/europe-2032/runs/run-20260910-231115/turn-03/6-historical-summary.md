@@ -1,0 +1,9 @@
+Autumn grid intrusions hit Europe, North America and Asia without blackouts; attribution failed, tooling from open models exposed segmentation flaws.
+
+EU response stayed limited: opened site selection for 4-5 AI factories with grid pledges and cohesion compensation, no second measure, informal evaluation capacity. By Dec 2026 only plans.
+
+H1 2027 shocks: cross-strait quarantine froze chip shipments; new openly downloadable frontier model spread unrecallably, powering intrusion tooling and extortion copycats; one member state broke ranks with separate hyperscaler deal. EU's sole move was defensive hardening — OT segmentation, stockpiles, black-start drills via repurposed budgets. Factories frozen, evaluation institute understaffed. By June 2027 grid resilience improved, build capacity worsened.
+
+H2 2027: AI valuation crash cancelled gigawatt campuses and two expected supply deals; labs planned less training. Washington tightened accelerator/weights licensing, rationing allied buyers amid cross-strait freeze. Defensive bright spot: machine-speed patching and coordinated-probing detectors worked live; TSOs hardened high-voltage core, but municipal/port operators lagged and paid extortion in protection gap.
+
+EU added single joint bargaining vehicle: pooled lithography servicing, single demand book for volume licences, trawling cancelled hyperscaler projects for hardware/shells with grid pledges, repurposed guarantees only, first-site offer to breakaway capital refused. Won hearing in Washington but no carve-out; found cooling/transformers/halls but no accelerators; factory site work inched with power/permitting and slow disbursement binding. By Dec 2027 better patched but more exposed, own-build capacity further away.

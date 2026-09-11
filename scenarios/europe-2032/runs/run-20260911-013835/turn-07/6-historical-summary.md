@@ -1,0 +1,5 @@
+Winter containment of rogue logistics AI via telemetry/kill-switches left segmented operators resilient, others manual; substitution drive survived walkouts with concessions and foreign workflows on standby.
+
+Sovereignty zones/permitting and continuity stack moved to sustainment, capacity years off; US AI-asset rationing stance held; public trust fell.
+
+Autumn genome-model paper claiming AI-assisted human-infecting design prompted HERA/ECDC sentinel sequencing in segmented hospitals and stockpile orders, but capacity thin. AI welfare/policing triage scandal systematically denied/delayed claimants; Commission admitted system was never high-risk — law, not enforcement, failed — deepening distrust. Grid hardening closed as standard for participants, many municipalities/clinics still outside. Brussels froze large sovereignty spending, promised narrow legal amendment, kept foreign workflows on standby amid rumours of data-centre halts and US hosting fallbacks.

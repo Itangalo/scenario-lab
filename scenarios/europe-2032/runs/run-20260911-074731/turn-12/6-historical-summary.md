@@ -1,0 +1,5 @@
+US-licensed models and compute were cut off in August — Lyon oncology, Gdansk port and benefits drafting fell back to paper and waiting lists; Brussels invoked emergency powers to reallocate domestic compute and open models to triaged health, benefits and port workloads with ENISA support, preventing collapse but leaving slower, distrusted substitutes.
+
+In February a machine-generated ransomware sweep via compromised update library hit municipal networks in France, Poland and Low Countries, knocking benefits, appointments and port servers to backups; Lyon lost rebuilt oncology lists, Gdansk reverted to radio, recovery slow.
+
+Spring fairs brought cheap Chinese humanoids on American stacks ordered by automotive/logistics despite union warnings of a second cutoff; a leaked genome-model paper claiming viable human-infecting design raised quiet bio-sampling. Coordinated night attacks cut power/cable at guarded AI sites and two municipal data centres in three countries, injuring guards; Commission suspended expansion, repairs under escort. Absorption kept systems running but legitimacy eroded amid substitutes, burned cable and foreign robots.

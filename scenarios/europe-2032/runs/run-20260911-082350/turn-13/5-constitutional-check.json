@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Economic Constraint violated: The narrative states \"With budgets exhausted, naming the surge shield the priority bought no acceleration,\" and the notepad confirms no cost and no effect due to low capital, yet the metric `eu_political_capital` increases by +7 (from 18.0 to 25.0). A political capital gain of this size requires either a major policy success, international alignment, or legitimacy boost, none of which are substantiated. The legitimacy lend (+2) and proposal bonus (+4) total only +6, and no other sources are identified. This implies an unaccounted +1, or an overstatement of gains, violating budget consistency and the requirement that capital expenditures (including political capital gains) have identified, rule-based sources.\n- Regulatory Constraint violated: The narrative introduces two distinct new measures — \"Bio-Sentinel and Care Continuity Net\" and references to the \"Verifiable-Domain Surge Shield\" being named priority — but the notepad indicates M14 and M15 are both active with charges. While only one may be the *priority*, the introduction of a *new* measure (M15) in the same turn as another new measure (M14) violates Constitutional Constraint 5: \"At most one new measure per turn.\" The notepad shows both M14 and M15 receiving charges in t13, implying both were introduced this turn, which is not permitted."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

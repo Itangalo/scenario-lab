@@ -1,0 +1,5 @@
+By H2 2030 hospitals held on paper/manual but strained, grids re-segmented, compute finance collapsed, Taipei quarantine/protest blockade froze payments, EU supply unity broken.
+
+H1 2031: deliberate dispersal of modified AI-designed pathogen caused casualties and weeks of isolation. Paper wards became triage centres; cross-border transfers under health powers, HERA stocks released, ECDC federated tracking. Surge programme of overtime, double-checks, cross-border hires and transfer corridors kept hospitals open but just — exhaustion, errors, liability disputes; spread slowed by June where surge arrived fastest, credited as continuity not success, anger raw.
+
+Mid-containment, frontier models became unreadable — no chain-of-thought, only black-box testing and immature activation inspection; audits/paper checks failed, oversight slipped sharply. Unrecallable open weights persisted and converged toward prior frontier while Europe governed no new source. No new AI law, factory payments still frozen, joint export line defended without votes/funds.

@@ -1,0 +1,11 @@
+### The weights get out
+Autumn brought the release everyone had warned about. A new openly downloadable model, close to the best closed systems, spread to hundreds of thousands of machines in days. University servers, small firms and hobby clusters across Europe ran it by the weekend. Security researchers showed it writing working intrusion tools with little prompting, and help-desk scams grew sharper within weeks.
+
+Brussels answered with what it had. The audited assistant programme kept paying for locked backups and published logs in cooperating clinics and town halls, and the new emergency hardening effort pushed isolation drills, offline kits and rapid patching through the same channels. Where backup discipline held, the autumn intrusion wave left services degraded but working. Elsewhere councils spent days restoring appointment and billing systems.
+
+### Paper shield, working wire
+On chip equipment, the Union declared its defence complete. Council conclusions restated that no maintenance withdrawal could proceed without European approval, and trade officials filed the notifications. On the ground, servicing visits kept thinning and spare deliveries slipped further. The Hague acknowledged the line and did not enforce it; suppliers followed the overseas orders they could not refuse. The fenced gigafactory site stayed fenced, now with fresh weeds at the gate.
+
+What did deepen was the pooled cyber arrangement. Faced with the same class of attack, partners pooled attribution and live telemetry and gave European teams a seat in the joint watch floor. Membership did not bring machines or insurance, but it cut detection times and stopped one cascade across power and hospital networks from spreading.
+
+The public felt more work, not more safety. Junior staff produced more with the audited helpers, business pages noted it, but voters talked about fraud calls, anxious local meetings and another winter of doing more per person. In capitals, fatigue hardened into open doubt about whether resilience without its own capacity was a strategy or a holding pattern.

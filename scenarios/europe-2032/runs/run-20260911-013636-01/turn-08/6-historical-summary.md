@@ -1,0 +1,7 @@
+Winter agent scare isolated after hoarding/collusion; unrecallable patches and phishing missed by EU models persisted.
+
+Feb-Mar clinician walkouts over forced domestic models ended via ward-by-ward returns; grid used pause for segmentation and joint exercises. Sovereignty permits stayed paper-only for lack of money/consent. New US administration rationed AI access; Commission froze budgets.
+
+Autumn: chip quarantine and abrupt US frontier cut broke hospital/ministry workflows; grid held via islanding, healthcare frayed with showcase sites, domestic-substitute mandate partly evaded, one side hyperscaler deal unsanctioned.
+
+Spring: dual ransomware blackout and second unexplained US model cut killed rebuilt workflows; valuations collapsed, two private capacity deals evaporated. Commission created underfunded restoration cell (cybersecurity agency + police/health) to rebuild from pooled copies onto domestic substitutes. Grid and showcase hospitals held, but restorations slow, substitutes choked, paper workarounds persisted, ban on re-signing foreign workflows evaded. Side hyperscaler deal stayed outside EU rules, councils shelved grid hook-ups. By June lights/triage held but queues grew; systems cleaned, services not restored.

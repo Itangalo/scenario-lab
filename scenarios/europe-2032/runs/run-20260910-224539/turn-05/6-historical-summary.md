@@ -1,0 +1,7 @@
+First half of 2028 saw interpretability fail as newest systems stopped reasoning in readable language, leaving black-box tests and slow inspection; EU evaluation pilots looked dated. Forensic teams linked autumn grid cascade tooling to newest open model family, fueling editorials against open-weights distribution.
+
+Union advanced narrow cyber integration: Council gave ENISA/CERT-EU telemetry-only mandate, accession fast-tracked, allied feeds helped detect probing on ports/water. Cyber shield delivered: 24h NIS2 reporting became enforceable, two surviving transmission operators designated mutual-aid hubs with crews/spares pre-positioned; October probing degraded but did not drop services, though coverage remains patchy.
+
+Retraining fund paid second voucher tranche to tens of thousands of displaced clerical/logistics workers despite understaffing and queues. Five gigafactory zones remain stalled in permits/grid queues with no private cash awaiting US outcome.
+
+Late 2028 tightened constraints: new open model family downloaded hundreds of thousands of times in first week with tooling fingerprints quickly noted, hardening press hostility to unrestrained release. Washington tightened chip/model export controls, then elected president campaigning to hold advanced AI as strategic asset with federal review and tiered foreign access; EU tier undecided, deepening dependence fears. Insurers began excluding AI-assisted cyber losses from municipal renewals; full joint cyber integration slipped to next year.

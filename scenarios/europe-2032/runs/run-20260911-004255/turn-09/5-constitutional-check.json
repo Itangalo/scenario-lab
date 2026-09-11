@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 70.2 to 75.0 (Δ = +4.8), while `ai_capability` increased from 79.5 to 85.5 (Δ = +6.0). The new `openweight_capability` (75.0) exceeds the midpoint between the previous `openweight_capability` (70.2) and last turn's `ai_capability` (79.5). The midpoint is (70.2 + 79.5)/2 = 74.85. Metric rule 2 requires `openweight_capability` to be set near this midpoint, and 75.0 > 74.85 violates the constraint that `openweight_capability` must not exceed this reference value without explicit justification via narrative of rapid open diffusion — which is absent here.\n- Modelling choice 5 violated: The narrative and notepad introduce two new measures in the same turn — M10 EU Hospital and Grid Continuity Shield and M11 EU AI Displacement Safety Net and Retraining Guarantee — each assessed with a −2 charge. This exceeds the limit of one new measure per turn.\n- Modelling choice 5 further violated: The turn also names a priority (priority −1), but introducing a new priority while launching multiple new measures violates the constraint that at most one new measure and at most one named priority may be introduced per turn — here, two measures are introduced, which is invalid regardless of priority status.\n- Invariant 9 violated: `eu_political_capital` drops from 19.0 to 9.0 (Δ = −10.0), and `public_sentiment` drops from 27.0 to 16.0 (Δ = −11.0). While decreases are allowed, the drop in `eu_political_capital` is excessive given the legitimacy lends term (+2) and only a −1 priority penalty. The notepad shows a total sovereignty term of −5 and proposal bonus +3, but no such large negative driver is documented for political capital beyond the priority penalty. A drop of 10 points is implausible without a catastrophic event explicitly tied to EU legitimacy failure, which is not narrated. Even under severe strain, no single turn may move a metric by more than 25 points — but more importantly, the magnitude of change lacks justification in the rule-based terms provided, suggesting a break in model consistency."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

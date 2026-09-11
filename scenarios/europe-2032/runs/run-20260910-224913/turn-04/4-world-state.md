@@ -1,0 +1,12 @@
+### The chokepoint spent by someone else
+The first half of 2028 broke the stalemate, but not in Brussels' favour.
+
+Washington moved twice on chips. Export licences for advanced accelerators and model access were rewritten on volume terms that favoured domestic buyers, leaving European orders queued and conditional. Almost in parallel, pressure on The Hague intensified over servicing of lithography tools — no longer just the newest machines, but older systems and spare-parts contracts in third markets. For the Dutch firm at the centre, defying American jurisdiction over its supply chain looked commercially unsurvivable.
+
+The Commission answered by declaring the servicing question a Union matter. Trade and industry officials opened an examination under the anti-coercion rules and offered The Hague anchor orders and investment-bank cover to hold the line while a single European offer was prepared: continued servicing under jointly agreed criteria in exchange for guaranteed access for the planned gigafactories. The Hague listened, but did not commit. Engineers continued to curtail service trips while lawyers talked, and American officials made clear they preferred a bilateral Dutch answer to a European negotiation.
+
+At home, the energy went to triage. The Critical Services Shield reached its formal completion: detection stacks live across most transmission operators, drills exercised in six countries, joint procurement closed. Operators could isolate faster than a year before. Finance ministries, however, refused new hardening promises until the civil-protection funding gap was closed, so continuity plans stalled at signatures already given.
+
+The factory sites waited on the Washington bargain that had not arrived. Three locations inched toward investment decisions, with power-price assurances used as the missing guarantee; the fourth faced a spring referendum dominated by water and electricity fears. No concrete was poured. The assurance cell kept scoping certification work with research-centre staff, deliberately kept out of the trade file, and produced papers rather than certificates.
+
+Public mood soured. Productivity studies still showed assistants clearing backlogs without mass layoffs, but nightly coverage of Europe's most valuable tech asset being bargained away in another capital landed as humiliation. Councils, press and opposition asked what sovereignty meant if the one lever Europe owned was spent by others.

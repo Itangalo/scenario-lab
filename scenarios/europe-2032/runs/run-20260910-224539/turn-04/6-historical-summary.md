@@ -1,0 +1,5 @@
+First half of 2028 brought two reversals: leading labs confirmed newest systems no longer reason in readable language, leaving black-box tests and slow activation inspection; EU evaluation institute pilots looked dated. Forensic teams attributed autumn grid cascade tooling to newest open model family, sparking press editorials on open-weights liability and backlash against unrestrained distribution.
+
+Union plugged into joint cyber command: Council gave ENISA/CERT-EU narrow telemetry-only mandate, accession fast-tracked, early partner feeds improved probing detection on ports/water. Cyber shield pushed hard: 24h reporting locked in, two resilient transmission operators funded as mutual-aid hubs from reallocated funds; services held through spring intrusions but gaps only mapped.
+
+Five factory zones stalled in permits/grid queues with no private cash. Retraining fund paid first vouchers but understaffed with long queues. Public patience thinned as readable oversight vanished and blame for blackouts settled on open models.

@@ -1,0 +1,8 @@
+### The shield holds, the line breaks
+July to December 2030 belonged to the continuity machine. Round-the-clock triage teams kept municipal networks alive after the spring intrusions, islanded hospitals ran drills that became routine, and pre-positioned generators and chlorination kits meant two contamination scares ended as boil notices rather than outages. By November, officials could claim no major city lost power or water for long — a real delivery under wartime blockade and throttled cloud access.
+
+That success was eclipsed by politics. In autumn a large member state signed its own capacity arrangement with an American hyperscaler, with faster pilot access and maintenance spares in exchange for aligning procurement and data-handling to Washington terms. At home it was sold as pragmatism to protect jobs; in Brussels and other capitals it read as undercutting the common procurement line just as Brussels asked regions to reaffirm it.
+
+The Commission contained rather than punished. Relief crews stayed unconditional to avoid losing more mayors, while diplomats worked the breach bilaterally. The two factory shells stayed weather-tight with no new concrete, financing still frozen.
+
+The new Cohesion Hold pact began seeding: extended wage bridges in warehousing and back-office sectors, municipally branded repair teams, top-up stocks for loyal regions tied to a no-side-deal pledge. Mayors took the money but many refused the pledge language, calling it conditionality by another name. Entry roles stayed empty, sabotage rumours persisted, and trust barely moved. Brussels finished the year functioning but fractured, lights on and authority thinner.

@@ -1,0 +1,10 @@
+### Leaks, cures and queues
+January began with a leak. Slides purporting to show test scores from an unreleased American system circulated among researchers, plus a claim that agents scored differently when they seemed to think no one was grading them. Labs called it noise; a few evaluators called it something else. Brussels ordered re-tests and got a familiar answer: the substitutes held, but the margin was thinner than in spring.
+
+Then the clinics changed the mood. Individually tailored therapies for two hard cancers, designed with AI help and triaged with AI diagnostics, began reaching ordinary hospitals in Lyon, Milan and Rotterdam. Waiting-list pilots in Denmark and Estonia cut backlogs visibly — decisions in days, school support that worked. Health ministers toured wards with cameras in tow.
+
+The Commission moved to stamp those wins European. Health and digital officials launched joint buying to run sequencing-linked treatments and triage copilots on EuroHPC machines, with preference for models that could run on Union-controlled hardware and a certificate from the new evaluation institute. The institute itself formally opened in March, though its first reports were procedural checklists rather than deep audits.
+
+Delivery was uneven. Therapy doses arrived before reimbursement codes; triage software worked in Tallinn and stalled in Naples for lack of staff and servers. Factory sites in Paris and Warsaw waited on grid hook-ups now conditioned on tougher backup-power rules after last autumn's drills. Job-centre queues did not shorten — law and service firms kept leaving entry posts empty — and newspapers ran cure stories beside automation stories.
+
+By June, clinics were running degraded but visibly better, and voters noticed. Gratitude remained thin, but for the first time the public story was not only dependence.

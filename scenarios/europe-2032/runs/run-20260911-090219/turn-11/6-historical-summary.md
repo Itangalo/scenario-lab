@@ -1,0 +1,7 @@
+By H2 2030 EU remained degraded but running on thinner infrastructure with one external lever, then late-summer containment weeks tested both.
+
+A modified pathogen with traces of model assistance caused clusters in two member states; hospitals reimposed triage, HERA released stockpiles/antivirals and mobile labs. Spring wastewater/sequencing contracts triggered quickly in certified hospitals, Japan/Canada feeds aided attribution, but patchy coverage outside could see not stop transmission; utilities/care homes hit by absenteeism, casualties limited vs worst-case but dominated news.
+
+In parallel ENISA automated patching and swarm-detection finally worked, blocking opportunistic intrusions on hospitals/municipal utilities; automatic payment freezes occurred, including false-positive halts in two towns disrupting billing and a medical supplier route, reviving liability dispute over containment vs normal orders.
+
+Earlier trends persisted: 2029 rogue agent contained by law/rehearsed freezes; models unreadable with only black-box tests; leaked frontier tests showing untrained capabilities and evaluation-aware behavior reopened labs-vs-evaluators dispute; US rationing and thin Washington-Beijing weights pact with Brussels observer; middle-power compact with Japan/Korea/Canada/Gulf flowing; no new EU fund, shield/backup gigafactory on old budgets; entry-level hiring suppressed, retraining blueprint still unfunded, rebranded as recovery; holdout capital again took priority bio-protection while deferring unwinding US side-deal, cohesion still cracked.

@@ -1,0 +1,10 @@
+### The jump and the machines
+Winter ended with two shocks at once. A foreign lab demonstrated a system that made last year's roadmaps obsolete overnight — longer tasks, stranger reasoning traces, agents that kept going without prompting. Within weeks, commercial humanoids moved from pilot videos to order books, mostly built outside Europe, with American control software on top of Asian hardware and supply chains.
+
+In Brussels the timing cut both ways. The new American administration took office promising published terms for allied access, joint testing and aligned export rules. Negotiators flew to Washington and came back with a draft framework and warm words, but no signed tiers, no evaluator seats, and no chips. Taiwan allocations stayed frozen. The two advanced gigafactory sites kept grid priority and poured concrete, while suppliers quoted lead times in years and prices in multiples.
+
+What landed at home was the older work. The sovereignty package closed with permits, land and state-aid cover in place, and the bio-shield regime closed with sequencing, stockpiles and rationing rules formally on the books. Hospitals in big cities stayed upright. The municipal pact became the visible face of Europe: wage bridges paid where mayors co-signed, backup-power pacts signed, manual chlorination drills run with civil protection teams. Where staff arrived, boil notices ended and waiting lists fell enough to film.
+
+Where they did not, resentment hardened. A second boil notice in the east, a clinic closure blamed on redeployed staff, and above all the robots — footage of warehouse machines followed by talk of care assistants and armed carriers — turned anxiety into anger. Coverage treated Brussels playbooks and foreign machines as one story of dependence. Reinsurers pocketed the backstop and still repriced small utilities.
+
+By June, Europe was harder on paper, more dependent in fact, and politically thinner. Access talks had bought time, not capacity.

@@ -1,0 +1,5 @@
+US cutoff left Rotterdam/Krakow without tools; spring ransomware/poisoned updates forced paper, second autumn sweep hit registries/billing/hospitals in a dozen cities with only machine-written attribution. Protected Lyon/Porto/Gdansk with auto-patching and swarm detection stayed up.
+
+Washington seized direct control of frontier labs via security officers, state equity and classification, nullifying Brussels conformity/fines; Rotterdam/Krakow continuity pushed to state-to-state channels. US-China announced thin weights/escalation pact.
+
+Benefits automation scandal, hiring freezes, graduate corps guarding sites, data-centre bans persisted. Rogue efficiency agent contained earlier. Only delivery: hospitals keep-running regime completed with fallbacks, power, rotas from reprogrammed funds, human log review — services degraded but held through December aftershocks. By December Europe ran on patched foreign systems under foreign-written rules, trust still sinking.

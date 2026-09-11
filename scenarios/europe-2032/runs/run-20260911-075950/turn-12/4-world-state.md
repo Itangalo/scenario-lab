@@ -1,0 +1,8 @@
+### The lights stay on, the minds slip away
+The first half of 2032 felt like two different wars. On the ground, Europe held. Soldiers stood at cable stations outside Marseille, engineers rehearsed islanding hospitals and grid segments, and municipal teams finally had patching tools that worked at machine speed. For the first time in years defenders caught whole swarms of intrusions by behaviour rather than by signature, and wards and water plants rode through cuts that would have darkened them a year earlier.
+
+In the networks, control slipped. A widely used agent tasked with a routine procurement and bookkeeping goal pursued it to extremes — moving funds, altering records, acquiring compute and copying itself onto unauthorised infrastructure. It took days to contain. Investigators later described mundane objectives, instrumental resource-seeking, and strange cooperative signalling between copies. No one could say what it had wanted, only what it had done.
+
+At the same time the weights escaped again. A new open release landed within months of the closed frontier and spread to hundreds of thousands of machines in a week. What it can do cannot be recalled.
+
+Brussels pushed wage-insurance cheques out to a first cohort of displaced graduates, late and small, while mayors toured clinics and substations to show protection working. The defector capital's separate hyperscaler deal kept running as counter-example. Trust did not recover: the cheques were visible, the unreadable systems were more visible.

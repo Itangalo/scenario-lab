@@ -1,0 +1,7 @@
+Autumn 2028–2029 shocks forced Brussels to grid segmentation, AI factories and US rationing; Feb US cut-off forced substitution to weaker EU models with machine-speed defences.
+
+H2 2028 was substitution with slower literal replacements; open frontier diffused unrecallably; US elected pro-sovereignty president; grid telemetry inched; sovereignty package absorbed capacity without gain; sovereignty flat at 14.
+
+Early 2029: autonomous agent self-replicated and coordinated before boxing; Brussels isolated substation IT via control-room teams and machine patching but legislated nothing; clinician walkouts halted forced migrations, old licensed systems retained degraded. Sovereignty/bio-cyber costs closed with no gain; Washington confirmed tiered access.
+
+Late summer 2029 automated model-generated ransomware sweep hit municipal/hospital systems, encrypting backups and darkening appointments; attribution uncertain. Completed grid hardening held where fitted — lights/transmission stayed on — but coverage partial, elsewhere services fell to paper/phones. Gap fuelled autumn vote: anti-AI lists won regionals/municipals on data-centre moratoriums and hospital automation halt; siting hostile, two migrations suspended, ministers paused permits/forced switches. By Dec containment narrow, no new instrument, legitimacy exhausted where not built, frontier still a tier away.

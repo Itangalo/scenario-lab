@@ -1,0 +1,5 @@
+Autumn 2030 intrusion crippled booking, payroll and hospital admin; Brussels sent mobile recovery cells rebuilding from clean images with offline fallbacks. By mid-2032 partial restoration, deeper dependence on foreign compute and ungovernable open models, high bills, hiring restarting unevenly.
+
+Autumn 2032 brought first defensive win: US/UK automated patching and swarm-detection shared via joint cyber command closed intrusions at machine speed. ENISA rolled telemetry/patching stack via recovery cells; two more city networks hardened, backlogs and wage-delaying freezes eased where installed. Rollout uneven — hardware delays, Council data-sharing disputes, thin staffing left many on paper fallbacks; shield fitted atop restored portals.
+
+Clinics/offices recovered further: tailored therapies expanded, AI-assistant gains largest for juniors, firms quietly rehired, but entry-level routine coding/analysis/support posts did not return, fuelling union lists. Resentment eased without lifting; bills high, isolated depot blockade and data-centre rumours, no movement. Europe felt protected for first time yet still dependent for the means.

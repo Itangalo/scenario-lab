@@ -1,0 +1,10 @@
+### Holding what holds
+January to June 2032 was a half-year of maintenance, not movement. With no new instrument proposed and no priority named, Brussels governed on standing authorities — civil-protection powers, network-security directives and existing health mandates — and largely succeeded in keeping what already ran from stopping.
+
+The black-start network again survived without a major blackout. Split stores of transformers, fuel and mobile generators remained guarded, restoration drills completed on schedule, and grid operators stayed on segmented manual routines. Hospitals continued cross-border drills for moving critical parts. Police reports logged the familiar low-level attrition: cut fences, scorched cabinets, shouted abuse at crews. Two local papers carried single-source claims of convoys delayed and arguments over generator fuel for water plants. None was confirmed as a stoppage, but the rumour layer thickened, and escort costs quietly rose.
+
+The lab news hardened the defensive posture. Developers confirmed that their most capable systems now relied on internal representations unreadable to human reviewers, leaving oversight teams that depended on inspecting step-by-step reasoning effectively blind. The Commission used the admission to justify continued human sign-off in clinics and control rooms and a refusal to re-automate. A contested paper claiming a genome model could design a viable human-infecting pathogen circulated through health agencies; officials increased sampling attention and lab reporting without opening a new programme, treating it as a watch item.
+
+The one bright exhibit remained the two health systems where European-run scheduling and triage cut waits from months to days. Ministers toured the same clinics again, and junior staff in law and administration reported steady productivity gains without a layoff wave. Under continued American quotas, there was no new procurement to point to — only proof that finished, useful tools could still run under European control.
+
+Exhaustion was the price. Nothing new started because nothing could be carried.

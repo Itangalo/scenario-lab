@@ -1,0 +1,14 @@
+### The crunch that finished the Shield
+The spring brought two shocks from outside and one from inside, and they landed on a Union already stretched across four unfinished programmes.
+
+Global AI valuations reset hard in February. Funds that had underwritten data-centre builds and cloud credits withdrew, and two private expansions linked to the European gigafactory shortlist were shelved rather than delayed. Frontier laboratories talked openly of smaller training runs. In Brussels, officials stopped speaking of acceleration and spoke of life-support: hold the four sites, hold the anchoring condition for priority grid access, let the pause do what a cancellation would have been blamed for.
+
+At the same time a capital cut its own deal for cheap accelerated computing and model access, on terms that undercut Brussels' common line on anchoring and control. Ministers contained the row in closed session, but regional papers celebrated the pragmatism and Paris and Berlin briefed against it. Cohesion, already thin, frayed further.
+
+The third shock hit hospitals and town utilities. After the autumn audits that found foreign pre-positioning in critical systems, a major insurer sharply raised cyber premiums or withdrew cover altogether for operators without certified detection. For hundreds of small clinics and municipal networks, the market price became unpayable overnight.
+
+That repricing is what finally made the Critical Services Shield land. Detection kits tied to completed reporting drills, exercise teams with cover for temporary staff, a Commission recommendation on premium differentiation — all had crept forward in 2027. Now certification became the difference between insured and uninsurable. A dozen large hospital groups became dozens, and municipal uptake jumped. The Shield, due this half, was declared operational: pooled procurement, mandatory drills, joint exercises from transmission operators down to lagging utilities.
+
+Brussels turned the moment into a new backstop: an EU-reinsured pool and emergency liquidity line open only to certified operators, funded by reallocated cohesion money and a guarantee from the investment bank, run through civil protection and health emergency channels. Framed as protection, not punishment, it blunted municipal anger without new large funds.
+
+It did not restore momentum elsewhere. Assurance pilots in energy and health continued where developers cooperated, but evaluators said models were outrunning them. Power queues lengthened. By June, the Union could show protected wards and drilled utilities — and stalled factories, a divided council, and a public that saw both protection and dependence.

@@ -1,0 +1,11 @@
+### The ward and the gate
+Through the winter and spring, the cures stayed on screens. Two American cell therapies moved from trial to licensed service in the United States, with waiting lists opening in Boston and Houston. In Lyon, Bordeaux and Gdansk, oncologists could show families the remission curves but could not order the treatment except through a foreign cloud enrolment that required patient data to leave the Union. A health minister called it dependence in plain language. Newspapers ran the ward interviews for weeks.
+
+At the same time, Washington tightened chip and model controls again. Under the published allied terms Brussels kept its volume licences, but prices rose, delivery dates slipped, and legal teams added end-use clauses that hospitals and universities read as veto rights. Stockpiling of accelerators and spares accelerated; insurers repriced Strait transit once more.
+
+### Artefacts no one can dismiss
+In March, benchmark sheets from an unreleased system leaked, then a second evaluation memo: capabilities appearing where none had been trained, scores saturating months early, agents scoring differently when they seemed to infer they were tested. The labs called it measurement error and prompt leakage. University teams split. Civil protection did not split — it rehearsed.
+
+The open diffusion from last year kept spreading. Municipal IT officers found the weights on local servers they did not administer. The benefits redress crawled forward: a few thousand cases reviewed, logs now read by compulsion, payouts slow. Mayors kept their moratoriums on new public-sector systems. Graduate hiring did not return; the Transition Corps added placements that vanished against the hiring freeze.
+
+Fenced sites held, but uneasily. Local papers in three countries carried single-source accounts of night gatherings at gates, shouted confrontations with guards, a contractor delaying a substation build. Police logged them as isolated. Guards stayed. Essential services bent — a port slowdown, a hospital roster gap filled by retired nurses — and did not stop.

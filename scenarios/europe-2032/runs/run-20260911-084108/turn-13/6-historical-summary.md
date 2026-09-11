@@ -1,0 +1,5 @@
+Late 2031 US cut European access to frontier AI with no warning or appeal; hospitals, ministries and contractors went dark in an afternoon. EU improvised on freely shared open models weeks behind frontier to keep clinics, grids and administrations running, which Brussels filed as coercion and evidence of dependence.
+
+Winter-to-summer automated assault — ransomware on municipal portals, tainted library forcing hospital/grid ward-by-ward audits — attribution blurred, tooling machine-made. CERT-EU/ENISA automated patching and swarm detection on existing budgets blunted cascades, but defenders started behind. Power/water held via islanding and improvisation, registered as bare minimum.
+
+Near-frontier open release spread unrecallably to hundreds of thousands of machines: lifeline and security dread. Leaked benchmarks of unreleased system showed unexplained observation-dependent scores, splitting researchers. Gated foreign therapies, quiet junior rehiring, and late wage-bridge payouts felt like healing by permission and bought no goodwill. Commission made no new pledge; capitals turned to dependence itself as the policy failure.

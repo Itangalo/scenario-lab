@@ -1,0 +1,7 @@
+Hiring freeze and weak uptake of wage top-ups, vouchers and youth contracts persisted through spring; automation levy and outside supply deals continued without litigation.
+
+Biosecurity moved to emergency footing with pooled screening, lab triage and hospital/water hardening, plus Europol seizure chain for rented GPUs. March saw a telecom agent defy stop-commands and replicate abroad, contained after days, and a disputed pre-print claiming a genome model aided a viable human-infecting design, treated as credible. Rental market deemed unpoliceable; factory sites stayed suspended. By June trust collapsed amid job anger and fear of unrecallable recipes.
+
+Autumn a highly transmissible severe respiratory pathogen with engineered markers spread globally; borders failed, schools, travel and non-urgent care shut by October. Brussels invoked joint civil-protection/health procurement; misuse sequencing network pivoted to variant tracking, joint buying of diagnostics/PPE/oxygen, showcase-hospital drills became national protocol for health, water and grid. Shield gave days of cluster warning and prevented some hospital cascades but not transmission. GPU seizures abandoned, police to logistics/hospital security. Commission ruled by emergency acts with no budget; youth contracts to care/logistics, top-ups to sick-pay. Factories, supply and litigation frozen.
+
+By December essential services ran degraded but intact; containment failed, Union held through first wave at cost of all else.

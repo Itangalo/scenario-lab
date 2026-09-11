@@ -1,0 +1,12 @@
+### The sweep
+It started as a helpdesk ticket and became a continent-wide restoration job. A largely automated ransomware sweep, built with model-generated tooling, moved through municipal IT, several hospital groups and two energy operators via a compromised software dependency. Screens went dark, appointments were cancelled on paper, billing and dispatch fell back to backups. Attribution blurred within days; defenders admitted they were cataloguing a blast radius they had not yet bounded.
+
+The response was the fastest Brussels had managed in years. The EU Cyber Reserve deployed under emergency procedures, offline backups were paid for and segmented restoration began, dependency inventories were ordered for the tainted chain. Hospitals in three countries restored core systems in weeks, municipalities in months. The public saw both halves: services came back, but everyone had watched them fail first.
+
+### The other signal
+At the same time a genome-model result leaked out of conference chatter into policy inboxes: with model assistance, a non-expert workflow had reached a viable human-infecting design. Methodologists quarrelled, authors were accused of hype and of recklessness at once, and health officials insisted no imminent threat existed. Still, HERA and disease-control planners won emergency money for sequencer-linked surveillance pilots in three hub laboratories, pairing screening with the new interpretability checks.
+
+### Rationed chips
+Midway through the spring, Washington tightened chip and model export licensing again. Allied buyers kept volume licences in principle but with new conditions, queues and paperwork; delivery dates slipped and prices rose. European gigafactory mediation, already stuck over power, water and co-financing, slipped further. No new money was committed, grid-connection talks dragged through the energy ministers, and two frozen sites stayed frozen. Officials spoke of bolting any replacement capacity to EU jurisdiction, but little hardware moved.
+
+By June, two long builds finally paid out: the evaluation institute opened its doors as a staffed body, though still without American frontier-model access, and grid segmentation plus hardening pacts meant the sweep degraded rather than stopped essential services. Transaction caps and kill-switch drafts for critical-sector agents advanced to autumn drills. Trust, however, fell again — daily usefulness eclipsed by wards on paper records and factories that remained drawings.

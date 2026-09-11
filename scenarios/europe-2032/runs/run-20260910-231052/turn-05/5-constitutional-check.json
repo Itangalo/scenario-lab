@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: `eu_political_capital` dropped from 17.0 to 6.0 (a decrease of 11.0 points) without sufficient justification in the narrative or notepad for such a steep loss. While the defection of a member state and stalled procurement are negative, the notepad only accounts for a −10 point charge from portfolio and −1 from priority, totaling −11, but this entirely consumes the available political capital without leaving room for the +2 legitimacy lend noted. The notepad shows a net change of −10 +2 = −8, which would imply a value of 9.0 (17.0 − 8), not 6.0. This contradicts the accounting logic required by the scenario’s rules, violating the integrity of the metric’s calculation.\n- Narrative Constraint violated (Constitutional Constraint #8 – No telegraphing): The phrase \"what could actually be defended: hardened services and social absorption, not frontier chips alone\" implies a strategic pivot that anticipates future event gates (e.g., compute sovereignty thresholds or resilience milestones) being closed or open, suggesting a directionality based on unannounced gate states. This borders on telegraphing by implying knowledge of what is defensible in the long term, which belongs in event evaluation, not narrative."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

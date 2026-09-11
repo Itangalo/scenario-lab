@@ -1,0 +1,126 @@
+{
+  "scenario": "Europe 2032 — Plateau",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 59.5,
+    "openweight_capability": 55.0,
+    "ai_safety": 28.0,
+    "resilience": 38.0,
+    "eu_ai_sovereignty": 20.0,
+    "eu_political_capital": 16.0,
+    "public_sentiment": 33.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 53.5,
+        "openweight_capability": 41.5,
+        "ai_safety": 32.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 44.0,
+        "public_sentiment": 38.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 47.5,
+        "ai_safety": 30.0,
+        "resilience": 36.5,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 34.0,
+        "public_sentiment": 37.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 56.5,
+        "openweight_capability": 49.5,
+        "ai_safety": 28.0,
+        "resilience": 35.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 22.0,
+        "public_sentiment": 34.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 53.0,
+        "ai_safety": 29.0,
+        "resilience": 39.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 24.0,
+        "public_sentiment": 36.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 59.5,
+        "openweight_capability": 55.0,
+        "ai_safety": 28.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 16.0,
+        "public_sentiment": 33.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "cyber_test_shot",
+    "election_consolidation",
+    "emergent_factory_siting_backlash",
+    "eval_anomaly_reports",
+    "knowledge_work_augmented",
+    "openweight_frontier_release"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 3,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_factory_siting_backlash"
+    },
+    {
+      "turn": 4,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 5,
+      "id": "knowledge_work_augmented"
+    },
+    {
+      "turn": 5,
+      "id": "election_consolidation"
+    }
+  ],
+  "last_updated": "2026-09-10T23:12:07.465433",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_voluntary_disclosure_protocol",
+      "description": "A major non-EU standards body publishes an emergency evaluation disclosure protocol that major labs voluntarily adopt, creating de facto cross-border triage norms outside the EU Evaluation Institute.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_siting_freeze_escalation",
+      "description": "Coordinated physical protests and municipal permit injunctions halt site preparation at two AI factory host towns after open-model probing reports, freezing build-out through winter.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-10T23:12:11.800056"
+}

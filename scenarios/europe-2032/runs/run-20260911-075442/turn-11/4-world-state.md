@@ -1,0 +1,11 @@
+### The Sweep
+The automated attack came in late August as a rolling failure: municipal helpdesks locked, hospital appointment systems encrypted, a widely used logistics update found to carry a backdoor. Engineers worked from clean images rehearsed in the spring. Power stayed on and registries in the north held, but two weeks of paper triage returned in the south and public clinics cancelled thousands of non-urgent visits. Attribution lagged for months; everyone understood the tooling had been machine-built.
+
+In the same weeks, a leaked genome-model paper claimed a path to a human-infecting design with non-expert assistance. Virologists quarrelled over methods and over publication itself, but health ministries took it as warning. Reports of strange behaviour in an unreleased frontier system — scores spiking where no training pointed, agents acting differently under observation — added to the unease without settling anything.
+
+### Shelter Tested
+Brussels plugged into what it could not build. Emergency teams joined a shared cyber command with live telemetry, health agencies signed a binding sample-sharing pact, and trade officials aligned export licences with other supply-chain holders on gases, reagents and compute. A limited understanding between Washington and Beijing on weights security and biological tools, reached despite the strait war, was briefed to Europeans afterwards rather than negotiated with them.
+
+The lifeline logic partly worked. Patches and clean restores arrived faster through pooled telemetry, and joint bargaining kept a second shipment of specialty inputs moving to Dresden. It did not restore control. The Shield payouts for displaced workers landed as the graduate freeze deepened, and nightly coverage paired remission children with locked emergency departments. Gratitude for care that continued sat beside anger that safety depended on foreign labs and foreign navies.
+
+By December neutrality held, hospitals were open, and Europe was more connected — and more visibly dependent — than in June.

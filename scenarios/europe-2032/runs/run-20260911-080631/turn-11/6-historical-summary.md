@@ -1,0 +1,5 @@
+Through winter-autumn 2031 Europe held containment without new law or money: restoration aid tied to isolation/human-approval gates and telemetry-sharing kept compliant hospitals/registries up through autumn probes, while non-compliant communes stayed slow and resentful; French-Dutch containment cell ran paper-fallback drills and cross-border mutual aid.
+
+EuroHPC reservation for public inference and European-hosted model procurement were declared sustained as a slower domestic fallback, but gigafactory slip and missing private co-financing remained unfixed.
+
+Stability was undercut by an openly released near-frontier model downloaded hundreds of thousands of times in a week, widely run on private hardware across Europe — speeding replacements while spreading intrusion tooling, fraud kits and unrecallable agents beyond authority. Productivity held without mass layoffs, but trust fell further as dependence felt permanent, with rumours of blockades/vandalism at data-centres and grid works.

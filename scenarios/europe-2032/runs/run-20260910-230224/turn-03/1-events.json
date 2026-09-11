@@ -1,0 +1,61 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "knowledge_work_augmented",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A non-US, non-China supplier imposes temporary export licensing on a critical AI hardware input such as high-bandwidth memory or advanced substrates, citing domestic demand, spiking EU gigafactory cost estimates and delaying site decisions.",
+    "emergent": true,
+    "id": "emergent_memory_substrate_squeeze",
+    "probability": 0.19333333333333333,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A US hyperscaler freezes or delays planned EU data-centre expansion after gigafactory site fights over grid connections and priority power spill into public disputes over water and electricity prices.",
+    "emergent": true,
+    "id": "emergent_datacentre_pause",
+    "probability": 0.15333333333333332,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

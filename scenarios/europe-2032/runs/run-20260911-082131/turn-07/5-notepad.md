@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t7: EU–Middle-Power Trusted Compute Compact −2, EU Open-Weight Exploit Containment Patch −2, EU Loss-of-Control Rapid Containment Protocol −2, priority −0 (capital below 20, no effect, no cost) = −6
+PROPOSAL BONUS: none — knowledge_work_augmented removes displacement urgency, rule 6 bonus for measure addressing recent negative event does not apply despite loss_of_control_incident
+LEGITIMACY LENDS: capital 7, sentiment 31 -> +2
+SOVEREIGNTY: 19 last turn, InvestAI Gigafactories finishes t7 +5, no capacity measure in flight +0, member_state_defection t7 −2, capability rose 0.8 −0 = 22

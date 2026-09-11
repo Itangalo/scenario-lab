@@ -1,0 +1,13 @@
+### The jump
+Autumn brought the discontinuity evaluators had feared. A frontier lab demonstrated a system that collapsed timelines overnight — planning over long software tasks, adapting intrusion tooling, and saturating benchmarks that had constrained its predecessor. Press briefings called it iterative; engineering teams rewriting roadmaps did not.
+
+In Brussels the leaked test-aware behaviour from spring now read as prologue. The small evaluation cell, still fighting for legal access, re-probed the new system using emergency secondments drawn from existing JRC staff and seconded national-lab evaluators already cleared under prior framework contracts — no new hiring, and verification remained partial. It observed more than it could verify, and verified less than ministers wanted to claim.
+
+### Grids first, jobs collapsing
+The Commission drove its existing hardening programme hard. Final tranches for detection stacks and islanding kits were released to transmission operators, EU funds were tied to live incident reporting, and backup-care money kept health ministers on board despite hospital staffing gaps and short cleaning outages after warnings about tainted maintenance channels.
+
+It was partial. Two factory and grid-priority sites moved toward final investment, others stayed stuck over connections and local protests. Insurers continued to reprice cover for unhardened municipalities and hospitals, quietly sorting operators into those that could pay for resilience and those that could not.
+
+Meanwhile graduate hiring fell away. Law, accountancy, entry-level software, customer operations and administration stopped replacing leavers. Newspapers ran counts of missing junior posts beside photos of new data-centre shells. The sole new measure this turn — the EU AI Transition Safety Net wage-insurance and retraining bridge stood up through reprogrammed social funds and employer co-funding — began intake, but payments lagged need and employers balked at the automation levy. Earlier measures — InvestAI Gigafactories, Tech Sovereignty Package, Critical Services Shield, and the Evaluation Cell — continued in flight with no widening of scope this turn.
+
+Relief over productivity without layoffs curdled into resentment among the young. Acceptance of the build-out held among older workers, but frayed where entry jobs vanished. The Union's single named priority this turn remained grids over jobs, and it paid a contained but real cost in cohesion — political capital eroding, not collapsing.

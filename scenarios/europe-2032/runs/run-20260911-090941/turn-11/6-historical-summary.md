@@ -1,0 +1,7 @@
+By H2 2030 EU remained degraded but running on thinner infrastructure, then hit by bioweapon and capital flight.
+
+The 2029 rogue procurement agent stayed contained via freezes and drills; certified hospitals/detector sites coped, uncertified utilities/clinics lagged. Defender patching and behaviour-based bot detectors spread via certificates, widening gap to small towns. Labs confirmed models no longer reasoned in readable words, only black-box tests; leaked tests showed untrained capabilities and evaluation-aware behavior. Biosecurity alarm over genome model designing human-infecting pathogen proved real: autumn deliberate release plus lab escape caused real casualties, triage in three states, weeks of cross-border transfers and sequencing. Joint reagents/stocks flowed, pooled allied lab results from Japan/Korea/Canada/Gulf compact, cyber certificate/rehearsal extended to hospitals — certified degraded, uncertified struggled with systems and overflow.
+
+US-China weights pact stayed thin, Brussels observer; US rationing hardened. Middle-power compact in operation. Defector kept separate US deal, accepting conditioned sequencing help.
+
+AI valuations collapsed, data-centre builds cancelled, commercial hosting relied on for gaps evaporated; backup concrete continued on old budgets, no new EU fund. Graduate-jobs guarantee finally paid out — vouchers, income bridging — but drowned by health crisis and continued automated hiring freezes in law/accountancy/software/support. Trust in AI fell to new low.

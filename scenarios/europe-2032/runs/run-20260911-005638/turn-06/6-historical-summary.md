@@ -1,0 +1,5 @@
+By early 2029 oversight went blind: new closed system leapt in code/math/intrusion tooling driving faster exploit chaining on municipal nets; frontier labs confirmed models reason in unreadable compressed vectors, shelving EU CoT audit guides and degrading audit capacity. Near-frontier open weights leaked to hundreds of thousands including unscreened DNA broker, recall moot.
+
+Brussels only new move: proposed AI Office evaluation cell (JRC, cyber agency, health authority, French/Dutch pilots for activation inspection) using existing AI Act mandate, but 2+ turns to hire/tool, cannot yet test/block; operators warned future procurement/approvals will require black-box cyber/bio suites. Older bets continued: sovereignty package closed zones/pledges but only one gigafactory toward grid, other in court; joint cyber-bio allied integration kept spring intrusions degraded not stopped.
+
+Political blow: one capital signed sub-standard foreign hyperscaler compute deal; Commission joint-buying and reinsurance conditionality had limited effect. US moratorium administration left Europe less pressured but more alone.

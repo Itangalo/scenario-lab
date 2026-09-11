@@ -1,0 +1,10 @@
+### A pause in the shooting, no pause in the rot
+Washington and Beijing announced a limited understanding on frontier risk — securing weights, restraining autonomous escalation, curbing certain biological design tools — with thin verification. The guns around fabs and cables did not fall silent, but targeting of the technology backbone eased in the second half of the year. Brussels, admitted only as an observer through its middle-power club, offered deconfliction and test recognition in exchange for resumed shipments. Little resumed.
+
+Clinics got a brief reprieve. A new generation of tailored treatments reached ordinary use elsewhere, and stockpiled doses in France, Spain and Poland were stretched further by rationing on clinical need. Triage assistants kept running air-gapped on domestic systems. But scheduling and planning models billed abroad still timed out, queues froze again, and because the cures visibly came from systems Europe could not run on its own terms, relief curdled into resentment.
+
+That resentment found a focus. Investigators and an ombudsman showed a benefits decision system had systematically cut or sanctioned thousands, with human review reduced to seconds per case and logs generated but never read. The Commission called it an enforcement failure and promised a fix: an independent redress ombudsman with compensation powers, logging read by the AI Office with suspension powers, and a narrow amendment to close the gap for systems never classed as high-risk.
+
+The public did not buy the distinction. Mayors, unions and victims' groups called the law itself misdrawn for the deployments of 2030. Restriction became cheap; adoption stalled.
+
+Meanwhile another near-frontier openly released system spread to hundreds of thousands of machines in days, and arson at the two grid-connection works kept gigafactory construction idle despite emergency guards. Entry-level hiring stayed collapsed. The new care-continuity and redress regime was adopted on paper, but with money and cohesion exhausted, rollout slipped to rationing committees and a helpline.

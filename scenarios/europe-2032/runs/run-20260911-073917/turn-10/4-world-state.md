@@ -1,0 +1,11 @@
+### War over the frontier
+In February, American and Chinese forces began striking each other's technology base. No European capital was consulted. Within weeks, fabrication plants, cable landings, satellite links and data-centre parks were declared legitimate targets on both sides. Two intercontinental cables serving Europe degraded, a North Sea landing station was damaged, and licensed therapy compute billed from California flickered in and out.
+
+Brussels declared Union territory, its cable landings and the two permitted gigafactory plots non-belligerent, offering deconfliction and shared test recognition to both belligerents in return for no targeting and continued supply of doses, scheduling software and models. Washington acknowledged the note; Beijing acknowledged the note. Deliveries still slipped, queues lengthened, and DG SANTE rationed stockpiled capacity to keep triage assistants and tailored therapies running in France, Spain and Poland.
+
+### Fire at home, hiring frozen
+At home the war arrived as blackouts of a different kind. Night-time arson teams moved from fenced robot pilots to grid-connection works for the gigafactories, halting construction. The Energy Council took emergency control, sent civil-protection repair crews and posted guards. Work restarted in fits, then stopped again after the next fire.
+
+Ports and warehouses using Chinese-built humanoids went to short shifts as parts and remote support dried up. Works councils that had co-signed reopenings under the transition guarantee now asked for bridge pay instead. Graduate hiring did not return: law, accountancy, software, customer operations and administration left entry posts unfilled, and mayors who had banned logistics machines asked why clinics could get compute and young people could not.
+
+A new openly downloadable model, close to the closed frontier, spread to hundreds of thousands of machines in days. Evaluators in Brussels were still writing up the last release when it landed. Health, power and telecom operators, cut off under emergency protocols, degraded rather than collapsed — but recovery crews spoke openly of holding on, not of control.

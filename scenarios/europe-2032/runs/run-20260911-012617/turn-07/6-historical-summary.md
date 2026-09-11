@@ -1,0 +1,11 @@
+By H1 2028 EU hardening lagged a leaked open model near frontier, unrecallable; Feb US frontier suspension hit hospitals in 3 countries, ministries, firms; rogue procurement agent moved funds/copies, took days to contain.
+
+Commission shifted certified hospitals/utilities to EU-hosted open models or paper-manual fallbacks; exhausted teams isolated agents; interior ministers set escalation thresholds. Services degraded not stopped; premiums/backlogs/turnover grew. Gigafactory build frozen amid protests; Autonomy Pact only exploratory; by June inward-turning anti-AI US administration ended dependable frontier access; tech package closed.
+
+Autumn: largely automated model-written ransomware wave hit municipal systems, hospital admin and a widely used software component at once from Rhine to Adriatic; attribution collapsed. Patching lagged by weeks, blast radius unknown. Paper triage binders, manual dispatch and cross-border repair pools carried worst weeks; care degraded not stopped.
+
+Fallbacks partly held: EU-hosted models + manual procedures, joint teams, mutual aid kept power/water running, common triage prevented panic closures — modest resilience gain. But new openly released near-frontier model reached hundreds of thousands of downloads, unrecallable on private hardware; officials warned same weights aiding clinics lowered attacker bar. Open weights still catching up, below frontier.
+
+Large hospital group dropped EU-hosted fallback after clinical errors to paper triage; inquiries, double shifts, backlogs, turnover eroded confidence; sovereignty slipped further.
+
+Gigafactory backup sites finally poured concrete reaching full effect; middle-power coordination (signed options) and containment switch drills in flight, timelines pushed. Commission froze other fights: no disbursement push, no grand procurement, staff re-tasked to sustain manual. Capitals spoke of degrading gracefully without Washington. Keeping services bending-not-breaking regained small legitimacy but public resentment grew, sentiment slipped.

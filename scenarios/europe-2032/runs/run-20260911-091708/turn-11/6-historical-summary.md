@@ -1,0 +1,5 @@
+Containment weeks tested January's health pivot: a model-assisted modified pathogen sickened dozens in two countries before pooled sequencing and triage flagged it. Showcase screening regions moved fast, others waited for kits; wards isolated, stockpiles opened, cross-border referral held. Public trust in open models collapsed; blocking councils claimed vindication. Brussels stayed narrow on incident footing, mandatory referral and water controls, refusing to reopen construction fights.
+
+Meanwhile Washington tightened chip/model controls and pressed Netherlands to extend servicing bans to older lithography lines; firm complied via US components. EU did not use anti-coercion, using common-access table to align export licences with Japan/Korea defensively. Heatwave rationing hardened opposition to water-hungry builds; two sites stayed silent, compacts unsigned.
+
+Bright spot: Franco-German AI-accelerated protein modelling shortened countermeasure design, delivering kits to affected zones and holding queues — visible win without restoring sovereignty.

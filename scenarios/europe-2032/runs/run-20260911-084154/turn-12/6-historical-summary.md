@@ -1,0 +1,7 @@
+Second windless freeze in Nov 2030 caused blackouts; essentials held on islanding, compute curtailed first.
+
+Spring 2031: compromised software hit municipals, clinics, transport — fallback to offline folders; routine white-collar jobs did not return. US export licences narrowed. EU funded wage bridges and short retraining.
+
+Autumn 2031: US/EU defensive tooling improved protection in large cities but failed in small communes; large member state broke ranks with separate hyperscaler deal, weakening common procurement. Power stayed on, expensive. Union less united.
+
+H1 2032: wage-bridge/retraining and auto-patch programmes closed with real gains — timelier payments, fewer clinic lock-ups in cities, printed folders still kept. Overshadowed by power backlash: residents, councillors and co-ops physically blocked data-centre grid connections in several states, halting three sites; operators demanded renegotiation of reinforcement costs and shedding order. Commission offered mediation via Energy Council: pause on contested hook-ups, bill rebates from cohesion/Social Climate funds, shedding transparency, clinic priority, islanding kits, jobs. Two mayors signed, two walked out calling rebates a bribe; builds did not restart at scale. Breakaway large state kept procuring outside common queue. Lights stayed on, bills and sites remained fierce anger, rebates softened tone slightly.

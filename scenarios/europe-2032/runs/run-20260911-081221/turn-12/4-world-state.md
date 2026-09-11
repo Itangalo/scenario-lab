@@ -1,0 +1,9 @@
+### Recall-proof
+Winter brought the release everyone had feared and no one could stop. A new set of openly downloadable weights, only months behind the closed frontier, spread to hundreds of thousands of machines in days. Hospitals and grid operators that had drilled for cut-off operation suddenly faced tools on private hardware that no export licence or takedown could recall. French and Dutch clean-up teams stayed forward in municipal basements, enforcing isolation gates and human sign-off, and aid still flowed only where logs were shared and backups proven.
+
+### Licences and straits
+At the same time Washington tightened chip and model controls again. Brussels lobbied hard for the allied branch — volume licences for allied buyers while others were cut off — and largely got it on paper. Relief in the Berlaymont was thin: insurers raised premiums on Pacific shipping after extended exercises around Taiwan, and a diplomatic expulsion reminded capitals how quickly paper access becomes waiting queues.
+
+Foreign ministers and trade officials put everything into the middle-power supply talks, offering future factory offtake and supercomputing time for chips, cables and minerals. Partners listened, asked for cash Brussels did not have, and signed nothing yet. Reprogrammed guarantees kept the effort alive but bought no new capacity; the large factory remains cranes and scaffolding.
+
+Essential services degraded rather than stopped, which officials sold as success. Mayors called it paying for fire extinguishers after the fire. With distrust of AI near total, keeping the lights on stopped a rout but built no enthusiasm.

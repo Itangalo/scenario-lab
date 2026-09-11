@@ -1,0 +1,5 @@
+By early 2032 Europe had failed to build sovereign AI capacity and settled for defending clinics it could not upgrade. The Bio-Uplift shield remained the sole active programme: pooled sequencing, referral triage and automated patching/swarm-detection held in university hospitals, labs and water networks, reducing alerts at large centres while burdening smaller clinics.
+
+Two external shifts overtook it: a spring global AI investment collapse cancelled data-centre expansions and private compute Europe had counted on, entrenching the decision not to table a building instrument; and a graduate hiring freeze as firms replaced entry-level posts with automated systems, undercutting showcase tours of EU triage helpers cutting waits.
+
+Diplomats advanced one counterweight: staff-level middle-power coordination on export licences, compute bargaining and shared evaluation became a standing framework, giving Europe limited leverage abroad. Unconfirmed reports of makeshift bio setups and sabotage at frozen sites persisted. By June 2032: hospitals patched, hiring stalled, better networked abroad than at home, still unable to build.

@@ -1,0 +1,9 @@
+Autumn audits found state-actor pre-positioning in EU grid, port and water via open frontier model — mapping/credential theft, no sabotage; outages from defensive isolations.
+
+In February US cut access to leading American model without warning, disabling hospital/ministerial/logistics users; emergency licences partly restored service and destroyed trust. Open near-frontier model spread widely; new interpretability technique adopted by labs and made EU certification gate.
+
+Brussels prioritized absorption: joint exercises, pooled detection, EU-cloud fallback with queues/lag, gigafactory selection for 4-5 sites stalled over power/land/grid priority. By December EU-hosted pilots cut hospital backlogs, cleared permits, improved classrooms; Showcase replication tabled via cohesion funds, tied to cyber drills and gigafactory power-price offers — no funds disbursed.
+
+By June: In March US lab demonstrated long-horizon agents with little supervision; EU CIOs trialled them while Brussels' interpretability checks no longer fully covered new reasoning. White-collar firms saw solid productivity gains, strongest for juniors, with no layoff wave.
+
+Critical Services Shield formally closed: exercises mandatory for probed operators, pooled detection live in two hospital networks, pilots showed services degrading not stopping — but big cities missed deadlines, coverage partial, robustness only modestly improved. Gigafactories stalled further: councils/residents/grid operators blocked connections, no site decided, opposition linking substations to waiting lists spread. No new spend; Showcase file pending legal/budget for next-semester disbursement, fallback still slow at peaks.

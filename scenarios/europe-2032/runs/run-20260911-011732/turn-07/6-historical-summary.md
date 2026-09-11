@@ -1,0 +1,5 @@
+Autumn 2028 second ransomware sweep larger than spring hit appointments, benefits and ports via same unpatched component; grid held but municipal/hospital IT lagged as attacker tooling outpaced defenders, no attribution.
+
+In October EU seconded ENISA/CERT-EU analysts to allied joint cyber command for outward telemetry and pooled findings; approved as only funded option, seen as rented protection. Shared signatures cut port recovery to hours, clinics outside feed lagged. Defecting member state offered liaison place if returned to joint terms, sent observer only.
+
+November middle-power compact closed with chokepoint and Washington communiqués but no build; 5 sites remain fenced fields with permits/power and EIB paper. Protests, blockades and paused AI pilots grew; polls show continued use with deepening resentment. EU bought time and a seat, not capacity.

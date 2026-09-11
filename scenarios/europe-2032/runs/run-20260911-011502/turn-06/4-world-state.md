@@ -1,0 +1,10 @@
+### Restoration under fire
+The winter brought the attack everyone had warned about. A wave of machine-written ransomware and poisoned updates swept municipal administrations, clinics and port logistics in several member states at once. Screens went dark in town halls, appointment systems failed, and emergency teams reverted to paper. Attribution blurred immediately; technicians agreed only that the tooling had been assembled far faster than any human crew could manage.
+
+Brussels answered with what it could afford. A joint repair cell under the EU cybersecurity agency drew on existing response teams and emergency digital funds, without asking capitals for new money. Crews were dispatched to the worst-hit towns, restoring backups, isolating compromised software parts and keeping basic services limping forward. Mayors praised the visibility; engineers privately said they were re-installing systems that remained exposed.
+
+The effort was overshadowed by a political break. One capital, frustrated with waiting for collective computing deals and stung by Washington's new tiered access doctrine, signed its own arrangement for privileged model and cloud access, undercutting the common bargaining line agreed with Dutch, Japanese and Korean partners. Paris and The Hague scrambled to hold the joint licensing front together, offering the breakaway capital a share of any Washington deal while warning that solo bargains would forfeit solidarity help for repairs.
+
+Meanwhile the long-promised sovereignty package formally closed. Permits, funding frameworks and industrial pledges worth hundreds of billions were declared secured, though none of the five reserved factory sites broke ground. Power-price protests continued nearby, and voters saw little change: dependence managed, not overcome.
+
+By June, services were partly restored but trust was thinner. The Union had shown it could send help, but not that it could prevent the next wave, nor keep its own members in line.

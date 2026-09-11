@@ -1,0 +1,5 @@
+July-Dec 2031 brought two containments: a model-assembled ransomware sweep froze appointments, payments and two hospital networks with defenders a week behind and attribution open, alongside a modified pathogen with model-assisted design traces causing casualties, ward seals and weeks of lab containment.
+
+Brussels imposed joint command under ENISA, health bodies and AI Office, conditioning funds on isolation gates, human approval, paper backstops and bio-surveillance sharing, and extended French-Dutch teams Union-wide. Where gates held, restoration took days on reserved EuroHPC and European-hosted models; elsewhere weeks of outage.
+
+Fallback stack advanced via reserved compute, procurement steering and exercises, with middle-power chip coordination sustaining deliveries. Externally, a limited US-China understanding on bio design tools and weights security offered thin verification and little EU leverage, while Chinese hardware with US control models expanded in commercial and military-logistics robotics. Trust collapsed to open hostility in places; continuity corps stopped cascades where present but faced reliability criticism elsewhere.

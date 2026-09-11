@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Bio-Detection and Trusted Care Continuity Network −2, EU Wartime Neutrality Shelter and Lifeline Continuity Operation −2, EU Defensive Breakthrough Rapid Hardening Deployment −2, priority −1 = −6 (priority without effect or cost as capital 16 below 20, charge is measures only −6)
+PROPOSAL BONUS: EU Defensive Breakthrough Rapid Hardening Deployment (cat 6, small) +2 — emergent_wartime_connectivity_degradation and opaque models landed this turn and this answers degraded-link hardening directly
+LEGITIMACY LENDS: capital 10, sentiment 13 -> +1
+SOVEREIGNTY: 13 last turn, no cat4 finish, no cat4 in flight +0, emergent_wartime_connectivity_degradation t11 −2, capability rose 1.0 −0 = 11

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Bio-Detection and Trusted Care Continuity Network −2, EU Wartime Neutrality Shelter and Lifeline Continuity −2, EU Cut-Off Continuity Switch to EU-Run Care and Administration −2 = −6 (priority without effect or cost as capital 18 below 20, charge is measures only)
+PROPOSAL BONUS: EU Cut-Off Continuity Switch to EU-Run Care and Administration (cat 6, small) +4 — eu_frontier_access_denied fired this turn and this answers it directly, with bio precursor and labour shock as secondary arguments
+LEGITIMACY LENDS: capital 16 after other terms, sentiment 15 -> none, capital higher
+SOVEREIGNTY: 15 last turn, no category 4 finish, no category 4 in flight +0, eu_frontier_access_denied t11 −2, capability rose 1.5 no −1 = 13

@@ -1,0 +1,10 @@
+### Stoppable machines
+January brought two shocks at once. A foreign lab demonstrated a system that planned, coded and coordinated across days without supervision, making last year's timelines obsolete overnight. Weeks later, commercial humanoids appeared in Rotterdam and Hamburg ports — Chinese-built bodies running American control software — unloading, sorting and then, in trial videos, digging and carrying for military auxiliaries.
+
+Brussels moved where it could. The Tech Sovereignty package closed, unlocking permits and private money for the two grid-prioritised Gigafactory sites, and the Bio-Shield regime formally finished, its sequencing network and stockpile rules now routine in large hospitals. Mayors in the Trust Pact got wage-bridge payouts and a renewed insurer backstop, and waiting-list improvements from triage assistants were pushed hard on public channels.
+
+The new robotics protocol started slower. Registries of commercial fleets opened, kill-switch audits were ordered under machinery and network-security law, and joint exercises were rehearsed in three ports. Operators complied on paper but complained about retrofits; Chinese vendors stalled on firmware access, and American partners, still in transition until the new administration took office in Washington, offered joint evaluation talks but no code.
+
+Small towns felt the squeeze first. Where warehouse and care assistants arrived, older workers were told to retrain while still covering shifts. Unions called the manual-fallback drills theatre. Coverage of tireless machines against exhausted municipal staff drove mood darker, even as grids and hospitals held.
+
+By June, Europe had more domestic compute coming, better-monitored hospitals, and a robot rulebook half-written — but the frontier had jumped again, assurance had thinned, and the machines in its ports answered to others.

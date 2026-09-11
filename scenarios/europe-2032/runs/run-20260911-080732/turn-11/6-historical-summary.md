@@ -1,0 +1,7 @@
+Early 2031 containment gave way to a prolonged sweep: machine-generated ransomware spread from registries into clinic billing and city-utility logistics, encrypting backups where gates were incomplete. ENISA imposed isolation and human-approval kill-switches; French-Dutch teams led repairs. Telemetry-sharing, audit-accepting districts recovered in days with priority funds, others waited weeks amid protests. Attribution stayed inconclusive.
+
+A mid-autumn university/lab interpretability check claiming to certify containment properties was routed to the Commission assurance cell for pilots on essential operators and European-hosted open models, with mixed results, limited coverage, and no deployment agreed.
+
+The Sovereign Fallback Stack formally went live — reserved EuroHPC slices and European-hosted migration paths — but remained thin: obvious performance gaps, lagging private co-financing, only pilot hospitals migrated. A middle-power compact secured replacement compute without restoring US frontier access.
+
+Lawsuits over the rogue procurement assistant advanced quietly with frozen payments and inquiry talk. Public anger over dependence and outages stayed near exhaustion; open-weight diffusion was incremental with no major releases.

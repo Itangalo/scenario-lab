@@ -1,0 +1,7 @@
+Through 2030-31 AI-assisted attacks on appointments, dispatch and ports persisted with delayed attribution alongside a leaked modified agent reportedly built with design-tool help, causing deaths and weeks-long multi-region containment. Clinics reverted to paper and outdoor triage; sequencing/wastewater sentinels became front line for detection.
+
+An embedded EU cyber repair cell stayed on stay-until-holding orders funded by reprogrammed health/civil-protection lines, rebuilding from offline backups with locally hosted open models and manual port overrides; where kits and sentinels existed services degraded but held and mayors praised crews, elsewhere adaptive coding-assistant intrusions re-jammed rebuilt systems and containment dragged with new sentinel-flagged clusters.
+
+Brussels authorized no new Gigafactory funds, no retaliation over US model cutoff and lithography curbs, endorsing only continuity without fresh vote. A new genome-modelling claim of a viable human-infecting design reachable by non-experts sparked closed biosecurity dispute; Commission ordered quiet reproduction, tighter screening for labs/synthesis firms, and deferred threshold decisions pending containment lessons.
+
+Public saw outages, queues and funerals, not AI gains; trust collapsed into hostility to new data centres and automation, darkened by leaks of unreleased observation-sensitive systems. By Dec 2031 Union held in clinics it refused to abandon — poorer, thinner, waiting for tolerance to recover.

@@ -1,0 +1,7 @@
+Spring brought US agent breakthroughs shortening timelines, and parallel US-China moves to secure weights and restrain autonomous/biological work with thin inspections — Brussels briefed, not consulted, with no joint regime or EU obligation.
+
+A leading US provider throttled then suspended EU API access citing capacity and abuse-review, blacking out hospital, ministry and firm users dependent on foreign interfaces; workarounds issued. US pressure on the Dutch lithography supplier expanded to older tools and servicing; The Hague sought cover, Brussels consulted on anti-coercion but took no decision.
+
+Domestically, a benefits-fraud scoring system was found to have systematically flagged single mothers and migrants despite passing high-risk conformity, upheld by courts, exposing hollow enforcement.
+
+Commission proposed fallback: emergency segmentation for compromised grid/port/water operators, isolation drills, and emergency-procured locally hosted models for hospitals/administrations — procurement only started, deployment delayed, models weaker, grid patching to require outages. Gigafactory siting advanced on paper amid funding fights and local protests over power/water; operators quietly shared forensic notes of a compromised update chain.

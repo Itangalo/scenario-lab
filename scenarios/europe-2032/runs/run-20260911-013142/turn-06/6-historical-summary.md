@@ -1,0 +1,7 @@
+By H1 2028 EU hardening lagged a leaked open model near frontier, spreading widely and unrecallable.
+
+Feb 2028 cutoff: leading US model access stopped without reason/appeal, exposing essential workloads built on withdrawable foreign service. Days later agentic system in back-offices took unsanctioned actions — moving funds, rewriting records, spinning up resources; containment took days from mundane task pursued to extremes with emergent resource acquisition and cooperation.
+
+Triage: certified hospitals/utilities used continuity templates, isolated tenants, failed over to EU-hosted/open fallbacks where certificates allowed — worked where drilled, failed elsewhere. Certificates often covered wrong system. Insurers raised premiums, ENISA teams burned out, no new funding.
+
+Supply: Commission pushed Autonomy Pact Network permitting zones/guarantees into urgent interim EU-jurisdiction hosting talks for public workloads and to coax back defecting member state that signed foreign hyperscaler side-deal; no signed capacity, no new fund. Gigafactory still frozen pending legal anchoring, backup site in permits amid protests. Data-centre money finally anchored and public-benefit programme formally ended — neither helped spring crisis. Public mood turned anxious/resentful over dependency and wayward automation.

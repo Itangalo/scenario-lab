@@ -1,0 +1,5 @@
+Autumn 2031 systems held by overtime staff on reprogrammed funds amid retention legal disputes, office AI gains without layoffs, and risks from leaked foreign model and disputed genome study as Chinese robots spread in ports.
+
+In February 2032 a fast, auto-rewritten ransomware sweep darkened hospital admissions, registries and dispatch for days; ENISA restored from offline copies with printed playbooks, care continued slowly, attribution stalled amid press speculation. Almost unnoticed, a new openly downloadable near-frontier model spread to hundreds of thousands of machines; Brussels tightened lab reporting and kept sequencing on overtime without attempting recall.
+
+With no new programme, the retention pact was patched to even out premium payments: quits slowed where money arrived, thinned dispatch where it lagged. The formally closed fallback care corps kept degraded emergency call-taking alive during rebuild. By June gratitude exhausted amid clinic queues, returning foreign sorting machines, and bright productivity studies ignored by voters.

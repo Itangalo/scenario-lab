@@ -1,0 +1,7 @@
+February 2031 ransomware sweep hit municipalities, hospitals and a logistics supplier across three countries, locking appointments, payroll and ticketing; investigators found a poisoned widely-used open-source dependency with unknown patch status. Intrusion chain was largely machine-generated, outpacing defenders, attribution delayed for months.
+
+Hospitals reverted to winter paper folders and generators, sustaining slow care amid damaging spring imagery. Brussels sent joint national-vendor response teams with daily calls and single claims window; recovery fell to days where deployed, uneven elsewhere. Winter triage extended: large compute curtailed, sparking data-centre legal threats while mayors complained town halls left unprotected and relief funds relabelled.
+
+US tightened advanced chip and model licences — quotas, delays, conditions — while unrecallable open models on local servers filled municipal gaps. Concurrent US lab leap in machine-written code and automated intrusion was reproduced in weeks, expanding attacker range. Entry-level hiring in routine coding, analysis and support did not recover, absorbed by self-checking systems.
+
+By June 2031 power stable, services patched-brittle; public memory of blackouts, queues and bills deepened perception of dictated dependence.

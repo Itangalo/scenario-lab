@@ -1,0 +1,5 @@
+US revoked access to leading American model, disabling clinics, ports and helpdesks built on it; staff reverted to paper/local tools. Brussels invoked fallback: isolated dead links via cyber/health units, shifted load to anchored Lyon/Porto/Gdansk sites and vetted open models on EU hardware under degraded-service standard; queues lengthened without collapse.
+
+Same autumn US lab made discontinuous leap in planning/self-directed tool-use, confirmed by EU specialists but unprocurable except on foreign terms. Washington-Beijing limited accord on weight security and bio-design restraint with thin verification; Europe briefed after, observer bid only studied.
+
+Welfare-scoring scandal continued into redress/log review and narrow 2024-loophole patch, no moratorium. Opposition campaigned at approved data-centre sites amid fences and sabotage; subsidised placements ended with subsidies, graduate unemployment persisted. Services held degraded, cures/capabilities borrowed, rulebook still on trial.

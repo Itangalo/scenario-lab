@@ -1,0 +1,9 @@
+By spring 2029 autonomous exploit-chaining AI leaked to hundreds of thousands of machines; models became unreadable as reasoning shifted from words, blinding oversight.
+
+Brussels completed tech funding/permitting drive with private money and fast zones, and joined allied joint cyber-health surveillance network tying recovery funds to telemetry/sequencing. A member state broke ranks with its own foreign cloud/accelerator deal; Commission threats hardened split.
+
+Commission husbanded resources: mediated flagship compute build — one site toward final investment, one in court — offered Japan/Korea servicing/joint buying as alternative to US/China, pushed backups/offline kits/conditional payouts. Trust sagged over unreadable models, unscreened DNA, automation fears, and disunity.
+
+In autumn EU signed into joint allied cyber command and biosurveillance pact, wiring hospital/municipal feeds in for earlier alerts but dependent on allies. Talks with Japan/Korea hardened into export-licence alignment, joint accelerator bargaining, shared testing; Commission used venue to offer breakaway capital servicing guarantees and joint purchasing, cooling split without closing.
+
+First gigafactory reached final investment decision with private co-financing; second stayed frozen in court, leaving compute sovereignty constrained. Conditional payouts kept telemetry flowing but drills uneven, patching late. US frontier progress stalled domestically, flattering EU without closing gap. Insurers repriced municipal cyber cover amid uninsurable-system fears; trust improved only where protection visible, political standing slightly up.

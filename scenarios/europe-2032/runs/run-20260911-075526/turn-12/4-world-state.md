@@ -1,0 +1,11 @@
+### Containment Weeks
+The spring began with sirens, not servers. A modified pathogen, built with machine assistance, escaped or was released far from Europe and then travelled. For weeks, airports tested, wards isolated, and sequencing labs ran day and night. The European detection network completed that winter held: pooled reagents, clean imaging kept on home soil, and shared registries let hospitals triage without waiting for a transatlantic cloud that still stuttered. Nurses credited the staffing guarantees. Containment held in Europe, but fear did not.
+
+As wards filled elsewhere, a freely downloadable model nearly at the frontier spread to hundreds of thousands of machines in days. Brussels issued defensive guidance — do not run clinical or bio-workflows on unvetted weights — knowing it could not recall what was already copied. Police and health officials spoke openly about instructions found in the open.
+
+### Hands That Do Not Tire
+At the same time, commercial humanoids arrived in warehouses and then on streets abroad. Chinese factories shipped them by the tens of thousands; American control software steered them. Videos of machines digging, carrying, then carrying weapons, ran nightly. In Europe, where machine-building is still a pride, the humiliation cut deep: the robots were built on supply chains Europe does not control, running models Europe cannot switch off.
+
+One bright spot was claimed loudly. In two member states, locally run administrative assistants cut hospital waiting lists and permit backlogs in weeks, on European servers, with humans signing off. Ministers toured the sites. Voters noticed, but the hiring freeze did not lift. Law, accounting, software and town halls still did not replace leavers. Paid restoration and care placements expanded, unions called them stopgaps.
+
+By June, Europe was non-belligerent, un-targeted, and running on backups. Care continued. The question hardened into anger: cures designed elsewhere, computation elsewhere, and now hands elsewhere.

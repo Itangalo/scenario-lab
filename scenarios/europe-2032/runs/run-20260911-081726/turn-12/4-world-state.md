@@ -1,0 +1,10 @@
+### The dark lobbies
+The winter ransomware sweep became the spring's politics. The attack itself was largely automated, built with freshly generated tooling and pushed through small contractors who managed booking, billing and payment software for dozens of municipalities and hospital groups. Where shared telemetry and enforced human approval had been adopted, service came back in days. Where it had not, counters stayed dark for weeks.
+
+Brussels answered with what it could still fund: a Municipal Restoration Corps. French and Dutch response teams were seconded under civil protection procedures, paired with hardened fallback builds paid from emergency digital funds. Aid was conditional — join telemetry sharing, keep approval gates — and mayors who had refused co-financing were told restoration came only with maintenance anchored in the Union.
+
+It worked, visibly, and unevenly. A second wave of districts reopened in days rather than weeks, filmed handovers of paper forms back to screens giving the Commission its first positive footage in a year. But teams arrived late in the hardest-hit east and south, staffing for the paper-to-digital return ran short, and two regions publicly blamed Brussels for making help conditional while queues lengthened. Attribution never arrived.
+
+The clinical programme held in parallel. Trusted care deployment — prescribing support on EU-hosted models, data kept inside the Union, clinician sign-off — moved from announcement to routine in several hospital networks. Triage queues shortened first; the first tailored therapies reached a small number of patients. Families understood both the hope and the limit: the underlying models and compute still came from abroad.
+
+Workplaces thinned further without a crash. Junior coding, drafting and support posts did not come back. Trust polls scraped new lows, even as use of the restored desks and the new care tools rose. The Union had stopped a cascade from becoming a collapse, but had not restored confidence that it could keep the lights on.

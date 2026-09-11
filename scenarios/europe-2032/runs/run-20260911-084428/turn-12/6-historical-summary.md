@@ -1,0 +1,7 @@
+Autumn 2031 recovery corps rebuilt controllers in worst-hit towns, purged poisoned libraries and kept paper fallbacks; hospitals cleared backlogs. Washington pressed deeper cuts to chip-equipment servicing and exports, shipments slowed and maintenance lapsed. A verified US combinatorial proof and staffed AI triage that cut hospital waits and permit times in two regions eased but did not end job anger.
+
+In February leading American model access went dark for Europe without warning, breaking hospital, ministry and contractor workflows; Commission ordered fallback to European-hosted and local open models and paper. Fallback held where municipal repair teams kept stripped-down local triage running, failed elsewhere, fuelling anger at Washington and at Brussels for dependence on a foreign switch.
+
+That spring states pooled intrusion telemetry and pathogen-sample sharing after parallel intrusions and genome-model biosecurity scare; Council joined via cyber agency and disease centre, feeding rebuilt-town logs and hospital samples. Shared feed sped detection but did not restore model access or settle biosecurity dispute; corps isolation drills gave mayors cover.
+
+Netherlands servicing dispute ground on with further slows and production-break warnings, Council holding line rhetorically. By June queues moved where staff had been sent, stalled where only software promised; an unvetted toolkit for running open models offline on city servers spread among communes outside common standards.

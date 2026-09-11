@@ -1,0 +1,11 @@
+### Patching at speed
+The breakthrough arrived from the labs as code, not as a paper. Automated patching that kept pace with newly found flaws, and detectors that flagged how malicious agents behaved rather than what they looked like, worked in trials across hospitals and grid operators. ENISA moved quickly, pushing it as a certified update through existing shield certificates. Where local teams were too tired to install, national response teams did it for them.
+
+It helped, but unevenly. Certified sites absorbed probing and self-propagating automation with fewer outages. Municipal utilities with thin staff and unpatched legacy systems still failed over to manual routines. Responders welcomed the tooling and resented the rollout pace in the same shift.
+
+### A steadier office, a tighter strait
+In ordinary offices the news was calmer. Studies from law firms, accountants, newsrooms and consultancies showed the same pattern: assistants lifted output, most for juniors, without a matching fall in jobs. Ministers quoted the figures to argue the transition was over and manageable. Unions replied that stable employment was not the same as secure employment.
+
+That calm was dented from outside. Extended exercises around Taiwan lifted shipping insurance and rattled chip supply expectations. Washington tightened export licensing again. Under its inward turn, European buyers found volume licences honoured in name but rationed in practice, with queues and conditions where there had been open taps. Brussels kept interim hosting talks alive and pushed permitting on the backup gigafactory site, but signed no new foreign capacity. The capital that had kept its separate hosting deal refused to unwind it.
+
+By December, services ran — more patched, still degraded, more European than a year before. The first gigafactory concrete and a toured coalition of middle-power suppliers gave the Commission something to point to. Relief remained mixed with anger at how exposed the continent still was.

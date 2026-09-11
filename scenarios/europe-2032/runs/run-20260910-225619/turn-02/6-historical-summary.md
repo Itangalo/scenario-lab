@@ -1,0 +1,7 @@
+Autumn's stealth intrusion into transmission networks in two EU states saw attackers persist for weeks mapping relays; attribution pointed to automated probes using a freely available frontier model. Grid operators ordered segmentation reviews.
+
+In spring defenders briefly gained ground with automated patching and swarm-detection tools piloted by ENISA at the hit operators, closing vulnerabilities in hours. Relief was short-lived after a leading open-weights lab released near-frontier weights, downloaded hundreds of thousands of times, enabling criminal forums to repackage and sell grid reconnaissance scripts.
+
+A contested preprint claimed a genome model helped design a viable human-infecting organism, prompting HERA to win funds for sequencing-based sentinel pilots, stalled by procurement and data-sharing disputes.
+
+The Commission launched its Critical Systems Shield, continued gigafactory bargaining over grid and jobs in Paris, Berlin, Madrid, Stockholm and Warsaw, and kept staffing its evaluation institute without US model access. Unity frayed when a large member state signed a separate cloud/model deal with a US hyperscaler, while utilities demanded subsidies to co-fund patching. By June, grids were harder but attack code was widespread, bio-detection remained thin, and the EU could not hold a common line.

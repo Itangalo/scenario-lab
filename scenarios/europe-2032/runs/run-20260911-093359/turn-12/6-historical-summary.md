@@ -1,0 +1,5 @@
+Brussels remains on manual operation with empty coffers: auto-reimbursed cross-border pools operational, but a parallel paid mutual-aid federation of municipal/farmer unlisted spares formalised beside central depots, accepting interoperability payments but refusing the central map.
+
+Washington-Beijing bilateral on weight security, anti-escalation, and bio-design limits continued with thin inspections. A contested genome-model paper sketching viable human-infecting design sparked screening tightening. Brussels used its evaluation institute with blackout logs and assessment to seek mutual recognition and incident reporting; kept observer status with praise but no seat.
+
+Tailored therapies reached ordinary hospitals via health-ministry scheduling, boosting local credit while models stayed on foreign licences with external quotas. Labs adopted a new interpretability check as practical assurance gain.

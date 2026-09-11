@@ -1,0 +1,10 @@
+### Patch holds, cures arrive
+The spring brought two different kinds of relief. First, the municipal shield finished rolling out. The auto-patch agents and swarm-detection tools trialled in banks were now live in most large cities and hospital networks. When a fresh wave of machine-written intrusion attempts probed registries and appointment systems in March, crews saw it caught and quarantined in hours where last autumn it had taken weeks. Small communes still lagged — false positives froze a payroll update in two districts — but ENISA certification and conditional recovery funds kept installations moving.
+
+Second, tailored therapies reached ordinary clinics. A sudden advance in individually designed treatments, developed largely outside Europe, turned from journal headlines into prescriptions for previously untreatable conditions. Queues formed at university hospitals; nurses who had cursed dark screens now booked infusions that had not existed a year before.
+
+Brussels moved to tie the two together. No new money was asked. Health ministries, joint procurement and accelerated authorisation were used to put the new cures onto European-hosted, certified infrastructure with verified provenance, deploying diagnostic models alongside the patch agents so reopened hospital systems did not reopen the attack surface. Local control of data was promised to sceptical mayors; finance ministers were asked only to convert emergency cover into procurement guarantees.
+
+It worked partially. Patients who received treatment told neighbours, and trust lifted off rock bottom for the first time in two years. But supply terms remained foreign-controlled, and diplomats seeking observer access to the new Washington-Beijing understanding on weights security and bio-tools came home with briefings rather than verification rights. Headlines praised the cures while editorials asked why Europe could dispense but not produce them.
+
+Meanwhile the distant superpower accord slowed the frontier race only slightly, giving safety researchers breathing room without restoring confidence in the most capable systems themselves.

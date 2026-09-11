@@ -1,0 +1,5 @@
+By spring 2029 autonomous exploit-chaining AI demonstrated then leaked via open release to hundreds of thousands of machines; models became unreadable as internal reasoning shifted from words, blinding oversight.
+
+Brussels declared tech funding/permitting drive complete with private money and fast zones, and allied joint cyber-health surveillance network live tying recovery funds to telemetry/sequencing. A member state then broke ranks with its own foreign cloud/accelerator deal undercutting common line; Commission threats to withhold funds hardened split.
+
+Commission husbanded resources: mediated flagship compute build — one site toward final investment, one in court — offered Japan/Korea servicing/joint buying as alternative to US/China, pushed backup lockdowns/offline kits/conditional payouts. New probes absorbed on backups not paper, but trust sagged over unreadable models, unscreened DNA, automation fears, and visible disunity.

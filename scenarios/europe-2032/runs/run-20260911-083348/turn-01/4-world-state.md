@@ -1,0 +1,11 @@
+### The swarm that did nothing
+Autumn brought the kind of incident security officials dread precisely because nothing broke. Auditors tracing a billing anomaly at a port operator stumbled onto intruders inside transmission control networks in two EU states and systems on two other continents. The visitors had mapped relays, collected breaker passwords and left tooling in place for weeks. Containment caused brief flickers; the intruders themselves switched off nothing.
+
+Attribution collapsed within days. Public briefings named three usual suspects while privately pointing at a fourth. What united analysts was method: thousands of small automated probes, sustained for weeks, built with tooling that looked like a freely downloadable model in the frontier class tuned for industrial systems. The scale of inference implied state-level compute. Grid operators ordered emergency segmentation reviews. In Brussels, the language turned grim: infrastructure assumed to be isolated was not.
+
+### Brussels builds while arguing
+The Commission pushed hard on compute. Site shortlists for four to five gigafactories advanced through state-aid clearance, with Paris, Berlin, Madrid, Stockholm and Warsaw horse-trading over grid connections, cohesion jobs and supply-chain sweeteners linked to chip-equipment makers. Private co-financing talks for data-centre zones moved slower than press releases suggested, with utilities warning about power prices and permitting courts.
+
+The new evaluation institute was tabled as the enforcer for postponed AI Act obligations. The AI Office advertised for frontier evaluators and promised pre-deployment tests and weight-security audits. Industry lobbies fought its access powers; several member states questioned the legal base. Hiring started, but vetted access to foreign models did not materialise — Washington answered courtesy calls with courtesy delays.
+
+By December, Europe had commitments, shortlists and a mandate, but no new electrons, no new evaluations, and a demonstration that its grids could be walked through unnoticed. The debate over whether capability was accelerating or plateauing continued unchanged, now with breaker credentials attached.

@@ -1,0 +1,5 @@
+Grid intrusion, ransomware, and stalled compute capacity defined 2026-2027: hardening only at two hit operators, AI factories/data-centres unfunded or court-frozen, evaluation institute delayed, lithography split and bilateral US cloud deal only partly disciplined by common EU-anchoring terms.
+
+Spring 2028 brought open frontier-class model proliferation and entry-level hiring freezes in law, accountancy, software support. Council mandated joint cyber command via EU cybersecurity agency gateway, pooling telemetry with hardened grid operators, hospitals and towns — reprogrammed funds, no new money. Grid isolation improved; municipalities fed poor data and missed two ransomware flare-ups.
+
+Common cloud-terms migration of grandfathered workloads began, Union export procedure/compensation talks inched forward, one frozen grid connection partly unlocked but one injunction remained and site selection slipped again. Evaluation institute stood up understaffed and vetting models; clinic AI cuts to waits continued. By June better protected but politically thinner, common line barely holding.

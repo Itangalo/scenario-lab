@@ -1,0 +1,7 @@
+By H2 2031 Taiwan blockade halted advanced chips and unrecallable near-frontier open model forced fast-patch posture, while capital flight cancelled data-centre builds and froze white-collar hiring.
+
+Brussels' spring chip-for-compute barter — spares/chemicals and Gulf contracts for reserved hospital/utility capacity — remained stalled on low flame: Japan, Korea, Canada and Gulf hosts hedged amid higher private bids and rumoured re-lets; holdout with US hyperscaler deal neither signed nor refused; no sanctions; only Council conclusions.
+
+Autumn preprint of genome model + lab protocols designing human-infecting organism shifted focus from theoretical to biosecurity. Commission tasked HERA with ECDC/ENISA support for emergency detection: expanded wastewater sequencing in transit hubs, new ED triage/isolation playbooks, reprogrammed health/civil-protection budgets to pre-position diagnostics, PPE and broad-spectrum treatments. Rollout fast but uneven, no new law, procurement improvised.
+
+Partial gains: control/interpretability result pushed into public systems/swarm detectors, some hospital scheduling wins, income-bridging continued, but systems stayed opaque, public mood darkened by engineered-pathogen fears.

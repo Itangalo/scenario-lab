@@ -1,0 +1,9 @@
+By end-2030 hospitals open but poorer on paper/manual systems, grids re-segmented, supply split by hyperscaler deal, Taipei quarantine/backup blocked.
+
+H1 2031: model-assisted pathogen released across two border regions, weeks-long containment. Paper wards absorbed triage; Brussels used health emergency powers only, repurposing surge with reallocation — no new financing, frozen factory payments. Overtime prevented collapse but care rationed, posts unfilled, liability questioned.
+
+Mid-containment labs confirmed newest systems unreadable, ending chain-of-thought monitoring; safety stock depleted. Commission conceded inability to govern frontier: no new AI law, shipments quarantined, backup blocked, joint supply defended without funds. Patching continued. Fear of engineered biology dominated.
+
+Autumn 2031: surge became continuity network, field hospitals wound down, partial re-digitisation, routine transfers — rationed care made orderly, safety complaints persisted. Tailored foreign-developed therapies reached clinics with remissions, but manufactured abroad in small batches under foreign licences; Brussels got early doses via emergency procurement, logged as imported, conditional, unrepeatable.
+
+Union joined middle-powers pact pooling chips/precursors/evaluation leverage via aligned export licences, pooled compute bargaining, joint opaque-model assessment. Remained secretariat/communique: no factory, no re-signed compute; suppliers prioritised largest customers. No new health financing, quarantine and legislative freeze continued. Public gratitude for cures mixed with resentment at external dependence.

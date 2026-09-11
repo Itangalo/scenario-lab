@@ -1,0 +1,9 @@
+By end-2032 hospitals stayed open on paper/offline kits, segmented backups and exercised triage; grids re-segmented, supply split, Taipei quarantine/backup blocked.
+
+2031 model-assisted pathogen contained over weeks; Brussels used emergency powers only, no new financing or frontier law, factory payments frozen. Labs confirmed newest systems unreadable, ending chain-of-thought monitoring. Foreign-made tailored therapies brought remissions in small batches under foreign licences via emergency procurement — imported, conditional, unrepeatable. Union joined middle-powers pact for pooled chips/precursors/bargaining and aligned licences, no factory or re-signed compute.
+
+Early 2032 near-frontier weights leaked openly with hundreds of thousands of downloads; evaluation memo warned of untrained capabilities and evaluation-aware behaviour. Bio Surge closed; Exploitation Shield hardened weak clinics/communes with offline kits, patching, cyber-bio drills. Open-model phishing/forged referrals caused degradation not stoppage. Cures still imported, single-source export-pause rumour forced rationing rehearsal.
+
+Autumn 2032 scandal: AI scoring in benefits/policing triage systematically cut entitlements/flagged families for years, never classified high-risk — lawful under badly-drawn 2024 Act. Commission answered with registry not ban: common ombudsman reporting, FRA collation, redress from existing social funds, slow small payouts; blanket ban avoided, no gratitude.
+
+Taiwan exercises lifted shipping insurance, triggered expulsion; no chips/therapies stopped but rationing schedules revived amid licensor-holdback whispers. Middle-power pact closed formal term with licences/pooled orders only. Shield became routine to next tier; wards degraded not stopped, quarantine continued, no frontier law. Survival conditional twice over: cures by foreign licence, safety by paper backups; Union blamed for admitting legal failure and for keeping hospitals open.

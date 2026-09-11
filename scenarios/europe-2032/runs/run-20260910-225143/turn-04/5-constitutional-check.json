@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Economic Constraint violated: The narrative describes continued legal defense and funding of permits teams for the gigafactory project, yet no funding source is identified for this expenditure. The Game Master's Notepad shows a portfolio charge of −12, implying significant ongoing spending, but there is no mention of budget reallocation, borrowing, or revenue to support this. This violates the requirement that capital expenditures have identified sources.\n- Metric Rule 9 violated: `eu_political_capital` drops from 20.0 to 10.0 (a change of −10.0), which is within the 25-point cap, but the Game Master's Notepad shows only a legitimacy lend of +2 and no other positive terms. The net change in political capital must be explained by the sum of portfolio charges (−12), legitimacy lend (+2), and possibly event penalties. However, a net change of −10 implies no additional penalties, while the notepad shows no offsetting inflows. The math does not reconcile: −12 (portfolio) +2 (legitimacy) = −10, but political capital should not drop more than the total net loss allows. This suggests either an unaccounted penalty or double-counting of costs, violating the transparency and consistency of the metric model.\n- Narrative violates Constitutional Constraint #8 (No telegraphing): The phrase \"researchers argued over what the leap meant\" indirectly implies uncertainty about a known event (the capability jump), which is acceptable, but the narrative structure presents the jump as an established fact with observable consequences (e.g., \"machine-written intrusion tooling circulating more widely\"), while the `ai_capability` increase is only +1.5 — a modest rise. The narrative intensity exceeds the metric movement, risking telegraphing of a larger shift than the model allows, especially given that `ai_capability` is an accumulated stock that must grow gradually. This creates a mismatch between the implied pace of change and the fixed rate of movement constraint (Invariant #1)."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

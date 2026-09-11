@@ -1,0 +1,9 @@
+By H2 2029 Europe remained cut off from US frontier models and excluded from the Washington-Beijing understanding. InvestAI Gigafactories stalled in phase one: legally anchored, funds to grid/permitting, foundations poured but no capacity online or signed.
+
+In H1 2030 a leading lab open-released near-frontier weights, widely downloaded across Europe beyond recall, as capital fled AI: valuations reset, builds cancelled, two hyperscaler expansions lost.
+
+The EU emergency fallback — EU-hosted open models, manual procedures, rogue-agent thresholds — became the operating system. ENISA/AI Office drills in health, energy, municipalities with rapid patches; DG CNECT optioned cancelled grid/shells/hardware into public reserve to hold host member. Partial gains: faster triage, one grid operator contained probing; but fraud and unattributable tooling surged in three states, and unpaid contractors walked off two backup plots.
+
+In H2 2030 the fallback showed first dividends: hospital triage cleared referral backlogs, two cities cut permit times to days, classroom assistants showed measurable gains, publicized weekly. Shield drills, patch channels, and the reserve held without new money, but contractors still unpaid and concrete slipped further.
+
+The same open models fuelled invoice/welfare fraud, forcing Dividend pilots to add signatures, reporting and manual review that slowed rollout. Unions and doctors split over workload/liability; Council fight over reprogrammed funds pitted Health vs Education. No new sovereign capacity came online; dependence shifted from blocked US systems to uncontrolled home-hosted open weights. Outreach to Washington/Beijing remained paper.

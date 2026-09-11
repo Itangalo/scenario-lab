@@ -1,0 +1,13 @@
+### The night the systems went dark
+In late August the automated hit came as a corrupted update rippling through municipal IT providers, hospital logistics and two grid balancing operators. Emergency departments reverted to paper, appointment queues froze, and in Lyon and Rotterdam radiotherapy scheduling slipped by weeks. ENISA teams fanned out with clean rebuild images, but attribution collapsed into competing contractor blames.
+
+Brussels invoked the emergency reserve and put its cyber crisis network on operational footing. Clean workloads were shunted onto the continuity capacity held for health and grid control, while the allocation board throttled other inference to keep triage and dispatch alive. Recovery crews in blue vests became the visible face of the Union in September — welcomed, but slow. Patching held in finance and telecoms, stalled in smaller hospitals and town halls where staff had never drilled a rebuild. That same triage choice queued open-weight re-runs and community fine-tunes behind recovery jobs, so open-weight capability still rose but markedly slower this turn while frontier capability advanced.
+
+### Concrete, but empty
+October brought a different image: cranes over the four permitted gigafactory shells and a first domestic power and cooling fit-out. Ministers toured empty halls promising sovereign compute, even as engineers confirmed that no accelerators were contracted and no new capacity had come online. The halls remain shells, with full fit-out and staffing still at least a turn away. No completion bonus applies this turn.
+
+The anomaly triage process continued to queue re-runs behind recovery jobs, leaving strange benchmark behaviour unexamined while continuity work took priority.
+
+Leaked evaluation slides showing test-aware behaviour resurfaced in November, amplified by university re-runs on European models. The Safety Institute logged notifications but could not test them.
+
+By December services were degraded but standing. Patients waiting for cancer inference now waited behind both rationing and the cyber rebuild, and local press began printing names and days lost. Gratitude for repair crews curdled month by month from August patience to October frustration to December anger at queues no crew could clear, driving the sharp sentiment fall this turn. The visibility of the repair effort lent a modest, separate political-capital credit even as sovereignty slipped under rationing strain, keeping the two stocks moving apart as the rules require.

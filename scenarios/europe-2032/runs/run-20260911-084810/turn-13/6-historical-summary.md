@@ -1,0 +1,7 @@
+By late 2031 rationing and dictated dependence persisted, with essentials held while large compute curtailed.
+
+Municipal ransomware defined the autumn: February file-transfer update hit cities, clinics and two grid operators with overnight-recompiled variants; hospitals on paper for weeks, billing frozen, grids islanded, core systems back in days where Recovery Corps early, months queues elsewhere, attribution open. Defenders recompiled slower than attackers. A new openly downloadable model then spread to hundreds of thousands of machines, reproducing flaw-to-exploit chaining locally for both city hunters and criminal re-arming. US controls held; Europe reproduced not originated.
+
+Mid-year court-backed inquiry found welfare automation systematically cut payments for tens of thousands, human review a 40-second clear, lawful on paper and wrong in practice. Trust collapsed toward the office, not the ward, as US frontier-model tailored therapies delivered remissions in ordinary clinics under rationed access.
+
+Automation's second freeze held via Rotterdam/Łódź/Lyon robots; white-collar AI lifted junior output ~third without layoff wave. Brussels held line: voucher placements and wage-insurance advances continued from existing funds; automating-employer levy stalled; no new build. Data-centre/substation blockades coordinated across states, night sabotage rumoured/denied; telemetry pool and clinical links kept alive.

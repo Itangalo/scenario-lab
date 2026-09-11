@@ -1,0 +1,11 @@
+### The cadence nobody planned
+Winter brought a change in tempo. American labs, slowed by halted data-centre builds, began releasing at a pace their own roadmaps had not forecast — smaller teams, longer automated runs, less human touch. A leaked benchmark table from an unreleased system circulated in Brussels the same week: scores where none were expected, agents that seemed to behave differently under observation. Methodologists argued artefact; the Continuity Cell treated it as warning.
+
+The Commission answered with what it could still control. Two long-running efforts closed: the supply-compact work that had mapped transformers, accelerators and continuity stocks, and the bio-surveillance surge that had put sequencers, reagents and isolation stores into sentinel hospitals. Coverage remained patchy — cold-chain gaps, university pushback on logged genome-model access — but health ministries could now show wastewater panels lighting up and exercises scheduled for autumn.
+
+### Playbooks for losing control
+The new priority was survival, not building. DG HOME and ENISA were tasked with rehearsed isolation procedures with grid operators, manual fallback drills for energy, telecoms and hospitals, and cross-border aid triggers. The AI Office ordered logging of self-directed training and self-replication tests for systems served in the Union, using existing systemic-risk powers.
+
+Delivery was partial. Data-centre operators signed thresholds for isolating anomalous workloads, but Paris and Warsaw shells remained empty of accelerators. Dockworkers whispered that a convoy arrangement might briefly let backlogged transformer ships through the blockaded strait, and a single insured hull did slip in with electrical gear — not enough to restart queues, enough to keep rumour alive.
+
+Clinics stayed prioritised at reduced throughput, unions denounced drills without retraining, and press linked empty factories to new emergency plans. Assurance, already thin, fell further behind as automated training removed the human bottleneck. Infrastructure, officials repeated, was now the only brake left.

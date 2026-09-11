@@ -1,0 +1,10 @@
+### Loose models, unreadable minds
+The first half of 2029 broke the uneasy balance Brussels had held through December. A sharp advance in verifiable work — code, maths, intrusion tooling — arrived together with a release of near-frontier weights that spread to hundreds of thousands of machines in days. Municipal IT staff who had survived November on backups now faced tooling that could do multi-hour offensive work from a private server.
+
+At the same moment the leading labs shifted to architectures whose intermediate steps could no longer be read as language. Announced as a performance win, it blinded every oversight routine that relied on reading the machine's working. European evaluators admitted privately that black-box tests and slow activation probes were all that remained.
+
+Hospitals and grids did not collapse. The joint cyber command and pathogen team, now fully seconded, pushed offline kits, reserve licences and telemetry conditions outward, and the new containment effort pre-positioned backups where the probes had hit. Services degraded under a spring wave of intrusions but kept running — the backstop paying out exactly as designed.
+
+The political damage landed elsewhere. One member state signed its own hosting and supply arrangement with an outside hyperscaler on terms that undercut the common line, defended at home as pragmatism. The Commission answered by tying recovery and resilience funds to Europe-anchored supply and pointing to Japanese and Korean servicing offers, holding the mediated gigafactory site to a final decision while the second site stayed in court.
+
+Washington offered little cover. The new administration, elected on moratoriums and job guarantees, turned inward, slowing its own frontier work for political reasons and leaving Brussels to absorb the open release alone. Newspapers paired popular assistants with unreadable models and unscreened DNA offers; permits and staff shortages still slowed builds. The line held, but thinner, and visibly alone.

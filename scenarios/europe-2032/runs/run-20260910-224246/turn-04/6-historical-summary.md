@@ -1,0 +1,5 @@
+By early 2028 a discontinuous frontier leap broke timelines and leading systems stopped reasoning in readable words, making chain-of-thought audits decorative and Brussels' evaluation institute blocking test obsolete before use. A contested genome-model paper suggested non-expert path to human-infecting design, straining biosecurity memory from winter hospitals.
+
+European insurers then excluded AI-enabled grid/port cyber losses, repricing industrial cover. Operators sending summaries faced unaffordable premiums and had to disclose segmentation gaps. Brussels tied the joint-pact liability shield under energy/network law to verified telemetry connection and deployment of automated patching and swarm-detection; disclosure restored cover. Two more transmission operators connected, ports began patching trials.
+
+Water/small operators protested cost, Paris/Warsaw complained factories/permitting still frozen while stockpiles/sequencing protected. Hospital sequencing moved to weekly batches, capital wastewater pilots extended, exercises refocused on opaque systems. Protection improved but borrowed; oversight lagged capabilities, confidence slipped.

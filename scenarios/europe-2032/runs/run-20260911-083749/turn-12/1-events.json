@@ -1,0 +1,94 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Municipal sabotage wave targets backup power and offline triage kits in several member states as hostility to automation turns physical, degrading local continuity during containment.",
+    "emergent": true,
+    "id": "emergent_anti_automation_sabotage",
+    "probability": 0.24333333333333332,
+    "probability_samples": [
+      0.22,
+      0.24,
+      0.27
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Anti-automation municipal bans spread to block grid upgrades and clinic backup-kit depots, delaying repair and containment logistics for weeks.",
+    "emergent": true,
+    "id": "emergent_sabotage_of_resilience_buildout",
+    "probability": 0.21,
+    "probability_samples": [
+      0.2,
+      0.21,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

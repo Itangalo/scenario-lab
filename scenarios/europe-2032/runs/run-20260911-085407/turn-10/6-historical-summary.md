@@ -1,0 +1,5 @@
+By end-2030 hospitals open but poorer on paper/manual systems, grids re-segmented, supply line split by solo hyperscaler deal, Taipei quarantine/backup blocked.
+
+H1 2031: deliberate model-assisted pathogen released, spread across two border regions, weeks-long containment atop backlogs. Paper wards absorbed isolation/triage/distribution. Brussels used health emergency powers only, repurposing existing cross-border surge with reallocation — no new financing, factory payments frozen, no new measure. Overtime/double-checks prevented collapse but care rationed; no large cross-border hires, posts unfilled, unsafe conditions, liability questioned.
+
+Mid-containment labs confirmed newest systems unreadable — no human-followable reasoning — ending chain-of-thought monitoring, leaving black-box tests; safety stock depleted sharply. Commission conceded inability to govern frontier: no new AI law, shipments quarantined, backup blocked, joint supply defended without votes/funds. Patching of tainted component continued. Public fear of engineered biology eclipsed relief hospitals held.

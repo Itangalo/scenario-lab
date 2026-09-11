@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: M12 EU Neutral Ground and Life-Critical Inference Reserve −2, M13 EU Strike-Casualty and Joint Threat Intake −2, priority has no effect and no cost below 20 = −4
+PROPOSAL BONUS: EU Strike-Casualty and Joint Threat Intake (cat 6, small) +4 — emergent neutral-site strike with casualties plus joint threat invitation this turn and access cut-off, answers directly but small
+LEGITIMACY LENDS: capital 11, sentiment 11 -> none, capital not below sentiment
+SOVEREIGNTY: 18 last turn, no capacity measure finishes, no cat4 in flight +0, us_labs_nationalised t12 −3 (largest of us_labs_nationalised, eu_frontier_access_denied t12, strike access loss), capability rose 1.5 −0 = 15

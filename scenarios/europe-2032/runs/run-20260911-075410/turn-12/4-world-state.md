@@ -1,0 +1,9 @@
+### The Night the Screens Went Dark
+In February the ransomware sweep found the soft joints. Municipal payroll systems in two countries locked, a hospital group reverted to paper triage, and a compromised update library forced grid-software operators to isolate control servers. Restoration crews wired into the joint command moved fast — telemetry flagged the intrusion hours earlier than national centres would have — but television showed queues and blank departure boards for days. Attribution stalled; engineers agreed only that the payloads were machine-written.
+
+The shelter operation held the line it was built for. Dispersed registries on local servers kept identities and prescriptions retrievable, reserve crews restored the grid faults, and clinics stayed lit though slowed. Transition payments kept staff in place. Brussels claimed vindication; mayors said survival was not security.
+
+### Machines With Hands
+By spring the docks told a second story. Chinese-built logistics robots, dexterous and cheap, appeared in Rotterdam and Piraeus through private importers, while American control software governed what they could do. European robot-makers warned they could not match price or scale, and unions warned there was nowhere to retrain when both warehouse and clerical work went at once. The Council held to non-belligerency and ordered no procurement, choosing to watch from inside the existing shelter watch. Industry called it abdication.
+
+Bio-detection, completed in this half-year, quietly improved the other front: shared samples and EU-hosted verification caught two tainted diagnostic bots circulating from the open release and steadied tailored-therapy queues. Gratitude was real but drowned by the larger anger — that healing, power and now labour all depended on permission from elsewhere.

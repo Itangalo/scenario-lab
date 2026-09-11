@@ -1,0 +1,241 @@
+{
+  "scenario": "Europe 2032 — Verification-bounded",
+  "total_turns": 9,
+  "final_metrics": {
+    "ai_capability": 65.5,
+    "openweight_capability": 63.3,
+    "ai_safety": 18.0,
+    "resilience": 37.5,
+    "eu_ai_sovereignty": 20.0,
+    "eu_political_capital": 0.0,
+    "public_sentiment": 1.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 54.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 32.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 35.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 56.0,
+        "openweight_capability": 50.0,
+        "ai_safety": 37.0,
+        "resilience": 36.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 25.0,
+        "public_sentiment": 30.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 57.5,
+        "openweight_capability": 53.0,
+        "ai_safety": 35.0,
+        "resilience": 35.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 11.0,
+        "public_sentiment": 28.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 59.5,
+        "openweight_capability": 55.3,
+        "ai_safety": 34.0,
+        "resilience": 33.5,
+        "eu_ai_sovereignty": 14.0,
+        "eu_political_capital": 2.0,
+        "public_sentiment": 22.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 61.5,
+        "openweight_capability": 57.4,
+        "ai_safety": 32.0,
+        "resilience": 37.5,
+        "eu_ai_sovereignty": 15.0,
+        "eu_political_capital": 4.0,
+        "public_sentiment": 19.0
+      }
+    },
+    {
+      "turn": 6,
+      "metrics": {
+        "ai_capability": 62.5,
+        "openweight_capability": 59.4,
+        "ai_safety": 30.0,
+        "resilience": 36.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 2.0,
+        "public_sentiment": 12.0
+      }
+    },
+    {
+      "turn": 7,
+      "metrics": {
+        "ai_capability": 63.5,
+        "openweight_capability": 60.9,
+        "ai_safety": 28.0,
+        "resilience": 35.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 3.0,
+        "public_sentiment": 7.0
+      }
+    },
+    {
+      "turn": 8,
+      "metrics": {
+        "ai_capability": 64.5,
+        "openweight_capability": 62.2,
+        "ai_safety": 26.0,
+        "resilience": 39.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 1.0,
+        "public_sentiment": 1.0
+      }
+    },
+    {
+      "turn": 9,
+      "metrics": {
+        "ai_capability": 65.5,
+        "openweight_capability": 63.3,
+        "ai_safety": 18.0,
+        "resilience": 37.5,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 0.0,
+        "public_sentiment": 1.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "adoption_success",
+    "ai_investment_collapse",
+    "automated_decision_scandal",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_consolidation",
+    "embodied_ai_deployment",
+    "emergent_anti_datacentre_sabotage",
+    "emergent_energy_blockade",
+    "eu_frontier_access_denied",
+    "eval_anomaly_reports",
+    "member_state_defection",
+    "middle_power_coalition",
+    "opaque_reasoning",
+    "safety_breakthrough",
+    "supply_chain_coercion",
+    "taiwan_tension_rise"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 2,
+      "id": "safety_breakthrough"
+    },
+    {
+      "turn": 2,
+      "id": "eu_frontier_access_denied"
+    },
+    {
+      "turn": 2,
+      "id": "adoption_success"
+    },
+    {
+      "turn": 3,
+      "id": "ai_investment_collapse"
+    },
+    {
+      "turn": 3,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 3,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 4,
+      "id": "supply_chain_coercion"
+    },
+    {
+      "turn": 5,
+      "id": "middle_power_coalition"
+    },
+    {
+      "turn": 5,
+      "id": "election_consolidation"
+    },
+    {
+      "turn": 6,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 6,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 7,
+      "id": "embodied_ai_deployment"
+    },
+    {
+      "turn": 7,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 7,
+      "id": "emergent_energy_blockade"
+    },
+    {
+      "turn": 8,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 8,
+      "id": "automated_decision_scandal"
+    },
+    {
+      "turn": 8,
+      "id": "emergent_anti_datacentre_sabotage"
+    },
+    {
+      "turn": 9,
+      "id": "opaque_reasoning"
+    }
+  ],
+  "last_updated": "2026-09-11T01:17:05.791393",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_strait_insurance_freeze",
+      "description": "Major marine insurers temporarily suspend or price out cover for EU-flagged transits through the strait amid extended manoeuvres, stranding export consignments and forcing emergency rerouting.",
+      "first_turn": 9,
+      "last_turn": 9
+    },
+    {
+      "id": "emergent_gigafactory_siting_freeze",
+      "description": "Coordinated night-time sabotage against grid connections and reserved gigafactory sites escalates from pickets to sustained interdiction, leaving at least one of the five sites unconnectable for months and forcing a formal siting pause.",
+      "first_turn": 9,
+      "last_turn": 9
+    }
+  ],
+  "completed_at": "2026-09-11T01:17:10.837845"
+}

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: M12 EU Essential Services EU-Hosted Continuity Switch −2 = −2 + priority none = −2
+PROPOSAL BONUS: EU Essential Services Continuity Switch (cat 6, small) +3 — eu_frontier_access_denied fired this turn and ransomware wave last turn, this answers both directly
+LEGITIMACY LENDS: capital 14, sentiment 5 -> none, capital higher
+SOVEREIGNTY: 19 last turn, M11 EU Sovereign Fallback Stack finishes t11 +4, no capacity event in flight bonus +0, eu_frontier_access_denied t11 −2 (largest capacity event, embodied_ai_deployment also qualifies but one term only), capability rose 0.8 −0 = 21

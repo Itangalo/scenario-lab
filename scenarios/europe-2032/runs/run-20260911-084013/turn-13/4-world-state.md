@@ -1,0 +1,10 @@
+### A faster tool, a thinner shield
+The second half of 2032 was dominated by two outside shocks that pulled in opposite directions.
+
+First came the demonstration. A leading lab released a new system whose gains were narrow but stark: near-perfect exploitation chains, machine-checked proofs, automated patch-and-breach loops that ran for days. General benchmarks moved little, but security teams across Europe felt the shift within weeks. Phishing lures became flawless, hospital IT tickets spiked, and police logs of fence-cutting at substations grew longer. Clinicians still on substitute models found themselves outpaced by the very tools attackers were now using.
+
+Then came the accord. Washington and Beijing announced a limited agreement on weights security, autonomous escalation risks and screening for certain biological design tools, with inspection provisions described as thin but real. Brussels was not at the table. The Foreign Affairs Council spent the autumn asking to join as a third verifier, offering supply-chain cooperation, export-control alignment and the Evaluation Institute's testing capacity in exchange for inclusion and for restoration of hospital access to the leading American model under audited terms.
+
+The answer was polite and noncommittal. American envoys praised the offer; Chinese envoys noted it; neither opened the text. At home, the containment work continued. Joint procurement kept protective equipment and tests flowing to the two airport cities, binding containment protocols stayed in place, and cleaned clinical software images held wards online. It prevented a second collapse, but it did not rebuild confidence. Wards stayed open and expensive, power rationing stayed on, sequencing aides stayed temporary.
+
+By December, the Union had a new diplomatic track without a seat, a faster adversary without a new defence, and hospitals still waiting for access that had not returned.

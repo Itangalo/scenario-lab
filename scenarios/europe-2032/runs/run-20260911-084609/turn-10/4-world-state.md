@@ -1,0 +1,11 @@
+### The sweep
+It began as a helpdesk ticket and became a continent-wide rota. A ransomware sweep built with automated tooling moved through municipal administrations, clinics and a widely used software component at once. In several cities, appointment systems, building permits and payroll ran on paper for weeks. Grid operators found the same compromised dependency in their monitoring stacks and isolated it in time, but the daily patch notes from Brussels read as behind the attack, not ahead of it.
+
+The timing was cruel. American laboratories demonstrated a sharp step forward in code, mathematics and offensive operations — systems that could find and exploit the very weaknesses now on display. European engineers could verify the results and could not reproduce the runs behind them.
+
+### Rationing trust
+The winter kits helped, narrowly. Hospitals that had islanded in November stayed up during the spring incident; water and ports held. The mobile recovery teams drawn from national response units, deployed first to the worst-hit municipalities, eventually restored backups and pushed patched versions. Mayors who received a single claims window for energy and cyber costs complained less about relabelled money, but still complained.
+
+Two other pressures compounded. Export licensing tightened again, and this time allied buyers were rationed alongside others under volume licences. Deliveries of advanced chips slowed, prices rose, and data-centre curtailment — still first in the load-shedding order — looked less like triage and more like permanent second place. At the same time, entry-level hiring in routine coding, standard analysis and tier-one support did not recover. Graduates who had expected a tight market found no market at all in those functions.
+
+By June, power was stable, services were patched but slow, and the public mood had curdled. Brussels could claim essentials had been kept alive through a blackout winter and an automated attack wave. Voters remembered dark suburbs, paper queues, and bills — and asked what independence the Union actually owned.

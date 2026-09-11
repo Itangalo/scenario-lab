@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Bio-Detection and Trusted Care Continuity Network −2, EU Wartime Neutrality Shelter and Lifeline Continuity Operation −2, EU Distributed Containment and Cyber Shield Deployment −2 = −6 (priority without effect or cost as capital 14 below 20, charge is measures only)
+PROPOSAL BONUS: EU Distributed Containment and Cyber Shield Deployment (cat 6, small) +4 — loss-of-control incident fired this turn and cyber-defence breakthrough makes it landable, plus answers wartime degradation from t10
+LEGITIMACY LENDS: capital 14, sentiment 21 -> +1
+SOVEREIGNTY: 13 last turn, no cat4 finish, no cat4 in flight +0, no capacity event, capability rose 3.0 −1 = 12

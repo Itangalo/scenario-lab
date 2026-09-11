@@ -1,0 +1,5 @@
+Autumn cyber recovery enabled islanding after Feb US-China direct strikes hit EU fabrication, cables, ground stations and data centres: power largely held via pooled clean images, payments/telecoms degraded then partly recovered; EU declared infrastructure non-belligerent with little effect.
+
+Labour shock deepened as Chinese humanoids moved from Rotterdam pilots to catalogues across southern suppliers with unauditable stacks, thinning junior software, clerical, translation, logistics roles. Livelihood Bridge became visible response — emergency Brussels short-time top-ups and wage insurance, direct where job centres failed, with transition pledges — but uptake thin and retraining mocked.
+
+Quiet genome-model finding prompted expanded wastewater/clinical sequencing without alarm. By June Europe was lit but less employed, in undeclared war, with sabotage at robot and computing sites reaching police reports.

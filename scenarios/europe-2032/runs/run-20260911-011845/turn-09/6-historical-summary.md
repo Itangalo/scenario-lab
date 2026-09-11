@@ -1,0 +1,5 @@
+Open-weights ransomware wave was contained to lower level through autumn via hardened configs, offline backups and paper procedures; grids/payments stayed up, hospitals and town halls restored slowly, mayors used near-miss to justify continued permit freezes. Brussels managed response through existing networks with no new money or law.
+
+US pressure forced The Hague to extend lithography export/servicing curbs to older machines and more customers; Europe's key tech leverage effectively deployed by Washington. Brussels saw it as humiliation, kept coercion review open and offered joint licensing/mutual recognition as return path, with no movement.
+
+Health/ministry workflows cut off from US leading model stabilized on degraded Union-hosted and partner models. Private-sector assistants boosted productivity, especially juniors, with some rehiring and no new layoffs, but gains yielded no political dividend for rebuilding programme and infrastructure hostility persisted. By December Commission's two-year rebuild pledge ended with containment achieved but leverage smaller than at start.

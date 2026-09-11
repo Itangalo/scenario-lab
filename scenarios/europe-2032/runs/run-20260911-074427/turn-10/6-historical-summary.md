@@ -1,0 +1,5 @@
+Spring US breakthroughs in AI materials screening and personalized immunotherapies arrived in Europe as imports, runnable only on EU-secured capacity in Lyon, Porto, Gdansk and few other sites, elsewhere waitlisted via Washington — gratitude mixed with humiliation at dependence.
+
+Ombudsman inquiry found automated triage in social insurance/benefits unlawfully cut entitlements for tens of thousands over two years with perfunctory human review; deployment was lawful under 2024 high-risk definitions, detonating legitimacy of flagship tech law, triggering calls for moratorium on public-sector automation and scrutiny of placement scheduling tools.
+
+Union held line: wage-insurance placements for juniors continued, joint cyber teams kept hospitals/ports degraded-but-running amid strait surcharges and manoeuvres, stockpiles topped up. Delivery thin: funds slow, slots in thousands, fenced sites still guarded against sabotage. By June services prevented from stopping but no promise of more, dependence visible.

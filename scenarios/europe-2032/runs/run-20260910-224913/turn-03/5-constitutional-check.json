@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The narrative introduces two new measures — \"EU Critical Services Shield\" (explicitly prioritized and expanded) and \"EU Deployed-Systems Assurance Cell\" (seeded as a new entity inside the AI Office). This violates Constitutional Constraint 5, which limits the EU to at most one new measure per turn. The Game Master's Notepad confirms both are active in this turn with separate charges (−3 and −2), indicating two distinct initiatives introduced in Turn 3.\n- Metric Rule 9 violated: `eu_political_capital` drops from 31.0 to 21.0, a change of −10.0 points. While decreases are allowed, Constitutional Constraint 9 imposes a hard bound: no metric may move more than 25 points in one turn. Although this drop is within the 25-point ceiling, the larger issue is consistency with modelling intent — such a large drop requires justification in the narrative or notepad. The notepad attributes only −12 portfolio charge and +2 legitimacy lend, which implies a net change of −10, but the legitimacy lend term (+2) is applied *after* the portfolio cost, meaning political capital should reflect the full cost. However, the real issue is not magnitude but source: the narrative provides no event-level justification (e.g., political crisis, failure, backlash) for a 10-point loss, and the notepad does not flag an event penalty. A 10-point drop in political capital without a named event or crisis is implausibly large under normal portfolio decay and risks violating the spirit of Constraint 7 (stocks must be distinct and not mechanically tied), especially if political capital is being drained purely by measure costs without narrative support."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

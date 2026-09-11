@@ -1,0 +1,10 @@
+### Holding the gates
+July to December was a holding operation. With no new law and no new money, Brussels nursed the two programmes already on the books.
+
+The isolation lockdown became the daily grind. ENISA auditors and the AI Office tied every euro of restoration aid to proof of human-approval gates and telemetry sharing. Compliant hospitals and registries stayed up through the autumn phishing and agent-probe waves; non-compliant communes stayed slow, and resentment over unfunded mandates hardened. The French-Dutch containment cell ran paper-fallback drills in wards still dark from the spring, and kept cross-border mutual aid as the only part of the system most mayors said worked.
+
+The fallback stack formally landed. EuroHPC reservation for public-interest inference and the Health Emergency procurement of European-hosted models were declared sustained, giving essential operators a slower but domestic fallback. The gigafactory slip and missing private co-financing were not fixed — there was no capital to fix them with — but the reserved capacity stopped the worst outages cascading.
+
+That fragile steadiness was overtaken from outside. A new openly released frontier model, only months behind the closed frontier, was downloaded hundreds of thousands of times in its first week. University labs, SMEs and hobby clusters across Europe spun it up on private hardware. It ran the replacements faster, but also ran intrusion tooling, fraud kits and unmonitored agents no gate could recall. Evening news paired stories of clinics finally back online with warnings that the same weights were now beyond any authority.
+
+By December exhaustion had a new edge. Productivity held, layoffs did not surge, but trust slipped again as dependence felt permanent. Faint reports of blockades and vandalism near data-centre fences and grid works circulated as rumour, not yet as confirmed attack.

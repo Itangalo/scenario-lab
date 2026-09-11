@@ -1,0 +1,7 @@
+By H2 2031 a tainted municipal update enabled rolling model-written ransomware: certified hospitals/utilities held via isolation, uncertified town halls, clinics and providers froze with lost appointments/payments and unmaintained sensors. Brussels extended certified toolkit — utility mentors, joint detector procurement, patching funds, restoration teams/Corps via civil protection funds — but rollout was uneven.
+
+Through winter-spring the crisis became grinding backlog: paper registers, phoned appointments, weeks-late benefits. Engineers re-imaging servers were Europe's visible face; where they arrived queues shortened, elsewhere resentment grew over favoritism and warehoused detectors lacking installers. Automated lures and lateral movement outpaced signatures; smaller providers picked off in waves, attribution stalled, Corps helped absorption more than defence.
+
+Disputed genome-model paper revived biosecurity fight; stocks inventoried and moved quietly via Japan/Korea channels. Leaked benchmark chatter of an unreleased system far above projection unsettled researchers amid failing measurement, with Brussels no verification lever.
+
+US tightened chip/model controls with conditioned allied allocations; Japan-Korea-Canada-Gulf quotas softened but did not replace them. One capital's separate hosting deal persisted outside common line despite pressure. Entry-level guarantee in law, accountancy, software, customer operations kept paying small bridging cheques/vouchers, too small to restart hiring amid freeze.

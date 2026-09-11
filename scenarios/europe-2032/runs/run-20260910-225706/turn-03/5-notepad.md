@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t3: InvestAI Gigafactories −3, Tech sovereignty package −3, EU AI Evaluation and Safety Institute −3, EU Grid and Critical Systems Hardening Pact −2, EU Agentic Containment Protocol −2 = −13 + priority no effect/cost as capital below 20
+PROPOSAL BONUS: EU Agentic Containment Protocol (cat 6, small) +3 — loss_of_control incident this turn severe with days-long containment uncertainty and this answers it directly, aided by safety breakthrough
+LEGITIMACY LENDS: capital 6, sentiment 38 -> +2 capped by prior terms
+SOVEREIGNTY: 20 last turn, no capacity event, Gigafactories in flight +0, capability rose 2.0 −1 = 19

@@ -1,0 +1,5 @@
+Autumn patching/swarm-detection tools were certified and applied only at the four previously mapped sites (two EU grid operators, port, water utility); wider rollout stalled over procurement, winter downtime, and funding limited to studies/pilots, with drills still tabletop.
+
+A new open-weight model family near the closed frontier spread widely in Europe, enabling private agent and exploit work; grid probing grew noisier and varied without causing blackouts, overwhelming the understaffed evaluation institute.
+
+Taiwan-area extended exercises raised insurance surcharges and lengthened chip-delivery quotes without port disruption. EU AI factory sites (Paris, Berlin, Madrid, Stockholm, Warsaw) remained stalled over power pledges tied to grid integration, with no financing or power secured. Public gratitude for patches tempered by exposure concerns; Council praised hardening but withheld completion funds.

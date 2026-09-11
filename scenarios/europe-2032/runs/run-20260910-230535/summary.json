@@ -1,0 +1,150 @@
+{
+  "scenario": "Europe 2032 — Plateau",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 59.5,
+    "openweight_capability": 56.2,
+    "ai_safety": 24.0,
+    "resilience": 44.0,
+    "eu_ai_sovereignty": 20.0,
+    "eu_political_capital": 20.0,
+    "public_sentiment": 25.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 53.5,
+        "openweight_capability": 46.0,
+        "ai_safety": 32.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 41.0,
+        "public_sentiment": 39.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 49.5,
+        "ai_safety": 30.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 32.0,
+        "public_sentiment": 38.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 56.5,
+        "openweight_capability": 52.2,
+        "ai_safety": 28.0,
+        "resilience": 36.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 22.0,
+        "public_sentiment": 30.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 54.3,
+        "ai_safety": 26.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 22.0,
+        "public_sentiment": 26.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 59.5,
+        "openweight_capability": 56.2,
+        "ai_safety": 24.0,
+        "resilience": 44.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 20.0,
+        "public_sentiment": 25.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "adoption_success",
+    "bio_uplift_findings",
+    "cyber_defence_breakthrough",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_alliance",
+    "emergent_interim_hosted_offer",
+    "eu_frontier_access_denied",
+    "export_control_escalation",
+    "taiwan_tension_rise"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 3,
+      "id": "cyber_defence_breakthrough"
+    },
+    {
+      "turn": 3,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 3,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 3,
+      "id": "eu_frontier_access_denied"
+    },
+    {
+      "turn": 4,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 4,
+      "id": "emergent_interim_hosted_offer"
+    },
+    {
+      "turn": 5,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 5,
+      "id": "adoption_success"
+    },
+    {
+      "turn": 5,
+      "id": "election_alliance"
+    }
+  ],
+  "last_updated": "2026-09-10T23:09:35.814391",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_eu_buyer_bloc",
+      "description": "Municipal utilities and regional hospitals, strained by the interim US hosting contracts, fast-track joint procurement of EU-built secure inference appliances, creating a first standing buyer bloc for domestic gigafactory output.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_siting_backlash_freeze",
+      "description": "A coordinated municipal siting revolt blocks grid connections for interim US-hosted inference sites and stalled gigafactory locations, driven by power-price and jobs protests rather than any EU decision.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-10T23:09:39.547262"
+}

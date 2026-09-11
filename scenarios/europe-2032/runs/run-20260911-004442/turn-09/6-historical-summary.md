@@ -1,0 +1,7 @@
+Late summer brought a limited Washington-Beijing pact on weights security and bio-tools; Brussels learned from wires and was denied observer-plus access, with Washington withholding process and Beijing demanding supply-chain concessions.
+
+Frontier models shifted to non-linguistic reasoning: performance up, legibility gone, leaving evaluators with black-box scores. Opacity did not stop diffusion — an August frontier checkpoint leak plus two distilled open-weight releases let open builders close to last turn's frontier, though the new frontier step was small.
+
+Autumn brought embodied AI at scale: logistics humanoids moved to commercial contracts, Chinese vendors undercut EU integrators on US control stacks, Rotterdam/Hamburg ordered fleets, extending the hiring freeze to blue-collar work. Same chassis shown in defence mine-clearing/load roles and one leaked weapon clip. Europe remained dependent on Chinese actuators/batteries and US intelligence, eroding control of its automation stack.
+
+At home containment held: paper fallbacks, corridor rerouting drills and hardened clinic networks meant winter malware probes degraded but did not stop municipal services; grids stayed lit. Wage bridge retraining kept paying slowly with mixed backlog clearance; renewed compute curtailment for grid protection sparked data-centre protests in France/Germany, and trust thinned further.

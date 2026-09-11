@@ -1,0 +1,154 @@
+{
+  "scenario": "Europe 2032 — Acceleration",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 69.0,
+    "openweight_capability": 62.0,
+    "ai_safety": 15.0,
+    "resilience": 38.0,
+    "eu_ai_sovereignty": 13.0,
+    "eu_political_capital": 4.0,
+    "public_sentiment": 24.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 32.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 34.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 50.5,
+        "ai_safety": 30.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 21.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 63.0,
+        "openweight_capability": 54.0,
+        "ai_safety": 23.0,
+        "resilience": 35.0,
+        "eu_ai_sovereignty": 17.0,
+        "eu_political_capital": 12.0,
+        "public_sentiment": 33.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 66.0,
+        "openweight_capability": 58.0,
+        "ai_safety": 17.0,
+        "resilience": 39.0,
+        "eu_ai_sovereignty": 16.0,
+        "eu_political_capital": 11.0,
+        "public_sentiment": 28.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 69.0,
+        "openweight_capability": 62.0,
+        "ai_safety": 15.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 13.0,
+        "eu_political_capital": 4.0,
+        "public_sentiment": 24.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "capability_jump",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_retrenchment",
+    "emergent_siting_backlash",
+    "eval_anomaly_reports",
+    "export_control_escalation",
+    "knowledge_work_augmented",
+    "medical_breakthrough",
+    "member_state_defection",
+    "opaque_reasoning",
+    "supply_chain_coercion"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "emergent_siting_backlash"
+    },
+    {
+      "turn": 3,
+      "id": "capability_jump"
+    },
+    {
+      "turn": 3,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 3,
+      "id": "knowledge_work_augmented"
+    },
+    {
+      "turn": 3,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 3,
+      "id": "supply_chain_coercion"
+    },
+    {
+      "turn": 4,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 4,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 4,
+      "id": "opaque_reasoning"
+    },
+    {
+      "turn": 4,
+      "id": "medical_breakthrough"
+    },
+    {
+      "turn": 5,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 5,
+      "id": "election_retrenchment"
+    }
+  ],
+  "last_updated": "2026-09-10T22:49:09.786133",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_siting_sabotage_wave",
+      "description": "Coordinated physical blockades of gigafactory and data-centre construction sites in Spain and Sweden, fusing water-use litigation with anti-AI job-loss protest, halting works for weeks.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-10T22:49:12.195722"
+}

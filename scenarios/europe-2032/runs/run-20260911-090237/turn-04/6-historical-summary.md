@@ -1,0 +1,5 @@
+By H1 2028 EU hardening lagged a leaked open model near the closed frontier, spreading to hundreds of thousands of machines and making prior grid/port/water pre-positioning permanently unrecallable.
+
+Critical Services Shield formally completed: finance/telecoms passed, handful of hospitals cleared re-tests; Commission claimed vindication, insurers paused but kept conditional-cover threats. With gigafactories frozen in three-capital contest and contested site in protests/permits, Commission held legal-anchoring condition and pivoted ENISA to small-scale fixes — mobile restore units, standard failover images, two-day re-tests, template continuity plans with pass certificates for insurers.
+
+Partial gains in restore times and certificates where teams arrived, but staffing exhausted, visits slipped, turnover undid training, backup site renegotiation cost months. No new funding; EU-hosted tools procurement stayed preparatory. Offices saw solid AI productivity gains, especially juniors, no layoffs. Union hardened slightly, built nothing, still overstretched.

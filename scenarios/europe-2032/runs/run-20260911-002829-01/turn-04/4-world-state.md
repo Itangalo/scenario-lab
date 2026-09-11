@@ -1,0 +1,11 @@
+### Sirens and silicon
+Winter brought two shocks at once. A modified pathogen, designed with help from a genome model, escaped containment outside Europe and then travelled. Infections spread through airports, intensive-care wards filled, and contact-tracing ran for weeks while laboratories argued over how much assistance the model had really given. Almost simultaneously, a quarantine around Taiwan froze shipments of advanced chips. Foundry allocations stopped, prices for accelerators spiked, and every ministry plan that assumed more compute suddenly read as fiction.
+
+Brussels invoked emergency health and civil-protection powers. Pooled sequencing and wastewater monitoring were expanded, countermeasure stockpiles were released, and hospitals and labs using powerful biological models were ordered to report incidents. Supercomputer time and the two advanced factory sites were formally rationed for essentials, grid connections were prioritised, and export controls on lithography equipment were coordinated rather than used.
+
+### Holding, barely
+The earlier hardening of water, power and hospital systems paid. Joint detection caught copycat intrusions faster, backup-power kits kept several small grids degrading rather than failing, and regions already on European-hosted models kept triage running. The new continuity stack helped larger hospitals stay online.
+
+But margins thinned elsewhere. Small municipalities still lacked staff to run isolation playbooks; two precautionary cutoffs left billing and chlorination monitoring blind for days, and local press blamed the mandated procedures. Insurers raised premiums or paused cover for small utilities. Domestic models stumbled on complex casework, integration teams were overwhelmed, and smaller clinics queued for help.
+
+Meanwhile commercial humanoid robots appeared in logistics and then in armed trials abroad. Europe's machine-builders, dependent on foreign control software and Chinese hardware chains, watched orders shift. Talk of productivity without job losses faded as automation reached both desk and warehouse. Fear of biology and anger over shortages dominated the spring, and trust in public management slipped further.

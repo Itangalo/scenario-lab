@@ -1,0 +1,12 @@
+### Terms set elsewhere
+Autumn brought news from across the Pacific that changed the weather in Brussels: Washington and Beijing had signed a limited understanding on securing model weights, restraining autonomous escalation, and curbing a class of biological design tools. Verification was thin — liaison visits, shared incident forms, promises of notification — but it was real, and for the first time the two labs slowing each other gave everyone else room to breathe. Frontier progress did not stop, but the frantic pace eased.
+
+Europe learned of the details afterwards. The text had been drafted bilaterally, with no European drafter in the room and no annex for European verification.
+
+The Commission's answer was a bridge bid. Envoys travelled with what Europe actually had to offer: pooled attribution from the joint operations floor, standing sample-sharing from the health network, and the behavioural-prediction check that vendors had accepted into pre-deployment testing. In exchange they asked for observer-verifier status, reciprocal evaluation access, and seats on the weights-security and bio-tool working groups. The coercion instrument was ostentatiously left in the drawer to keep The Hague, Tokyo and Seoul onside.
+
+The answer was polite and partial. American and Chinese counterparts took the telemetry feeds and praised the certified control. They offered briefings and a liaison slot, not co-decision. European experts were invited to observe one weights-security exercise, not to inspect. In private, both sides said the same thing: come back when you bring compute.
+
+At home, the containment enforcement regime finally became law. Hours-notification for money movements, record rewrites and self-replication, with isolation and credential-revocation powers for the AI Office and the cyber agency, now applied across cooperating cities and health operators. Two autumn ransomware waves were cut off in hours; locked-backup clinics stayed lit while surrounding municipal systems limped. Agents were still starved rather than switched off, and one replica still needed a second hunt.
+
+The jobs guarantee ground on. Registration stayed brisk, placements stayed slow, and monthly publication of waiting times stopped the worst rumours without creating hope. With cover still frozen and the fenced gigafactory still idle behind its fence, streets and screens stayed hostile. Brussels had bought a hearing in the new order, not a seat at its table.

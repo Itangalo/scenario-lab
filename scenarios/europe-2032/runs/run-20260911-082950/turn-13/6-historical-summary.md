@@ -1,0 +1,5 @@
+By late 2032 services held in degradation: an automated ransomware and tainted-update sweep re-infected municipal/port and clinic-dispatch systems via contractor software, with towns cleaned in September locked again in October.
+
+Union cyber agency triage and standing repair teams restored from offline backups and cut compromised dependencies; cities holding procedure stayed clean, others relapsed. A new pact on automated containment gave common playbooks — fragile survival, not collapse.
+
+A foreign lab's openly downloadable system neared the closed frontier and spread widely, shifting EU officials from control to living-with-it hardening as intrusion kits sharpened. Counterpoint: where EU-hosted smaller models and paper-to-digital fallbacks held, waiting lists fell and decisions sped, credited by Brussels to the European choice. Mood stayed dark, queues uneven, resentment over continued US provider cutoff deepened.

@@ -1,0 +1,12 @@
+### Patching the edges while the frontier leaks
+The first half of 2028 was defined less in Brussels than in download counts. A new openly released model, close to the closed frontier, spread to hundreds of thousands of machines in days. For EU security officials the timing was grim: last autumn's audits had already found intruders lodged in grid, port and water systems. What was recallable before was now permanently out.
+
+Against that, Brussels finally closed one file. The Critical Services Shield, long delayed, reached its formal completion. Finance and telecoms passed their exercises cleanly; a handful of hospitals cleared re-tests on backup and failover. The Commission claimed vindication, and insurers paused — but did not reverse — threats to make cover conditional on proof of hardening.
+
+The new push was deliberately smaller. With gigafactory siting stuck in a three-capital contest and one site mired in protests and permit challenges, the Commission froze the big build at its legal-anchoring condition and threw ENISA teams at the failed hospitals and municipal utilities instead: mobile restore units, standard failover images, two-day re-tests and a single-template continuity plan to buy interior-ministry cooperation, with a pass certificate meant to satisfy insurers.
+
+It worked in part. Restore times improved where teams arrived, and several municipalities banked certificates. But staffing ran out before the backlog did. Site visits slipped again, turnover undid training in smaller operators, and the shift to a backup grid-ready location for the contested factory cost months of renegotiation. No new money moved; procurement for EU-hosted triage, permit and tutoring tools stayed at costings and options.
+
+Meanwhile ordinary offices told a different story. Studies across law, accountancy, administration and consulting showed solid productivity gains, strongest for juniors, with no wave of layoffs. Relief mixed with disappointment for those who had bet on endless transformation. Farther away, extended exercises around Taiwan lifted shipping insurance and expelled a diplomat — distant, but noted in supply-risk memos.
+
+By June, the Union had hardened a little, built nothing new, and looked overstretched still.

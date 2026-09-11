@@ -1,0 +1,8 @@
+### Paper Wards and Queued Cables
+Autumn brought two kinds of proof that Europe runs on borrowed systems. In Lyon and Brno, clinicians kept paper triage going because the replacement assistants hosted inside the Union flagged too much and helped too little. In the Atlantic, the neutral consortium that repairs cables and relays told civilian customers plainly: military traffic first, a wartime surcharge for the rest, months of queue for European restoration work.
+
+Brussels pushed what it could still push. The shelter network set up for neutrality lifelines finished its rollout, inventorying cutoff losses, stocking clean images and keeping registries and clinics on backup power and procedures. Reserve cyber teams with the new patching and swarm-detection tools closed reinfection paths in the municipalities hit by the summer sweep. Sequencing kits and trusted-care backups spread from pilot hospitals to wider wards.
+
+The new bio-screening effort started slowly. Genome services accessible from European clouds faced emergency checks after a contested paper claimed a model had helped design a human-infecting organism, while licensed production of tailored therapies continued under European control. Health officials presented falling waiting lists where European-run tools worked; patients presented the rest — slower diagnoses, narrower models, surcharged repairs.
+
+The American retrenchment continued to slow frontier building without slowing the race for second place. Joint risk work made patching cheaper but changed no one's plans. By December, daily services held, barely: degraded rather than stopped, dependent rather than sovereign, and resented as such.

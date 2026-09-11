@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `ai_safety` decreased from 5.0 to 0.0. While most stocks can fall, `ai_safety` is not among the metrics permitted to drop to zero unless accompanied by a narrated catastrophic physical destruction of the compute base, which is not present here. The narrative describes cyber incidents and capability gaps but no event that would justify a complete collapse of AI safety as a stock. A drop is plausible, but a reset to 0.0 violates the principle that such extreme changes require explicit grounding in exceptional physical events.\n- Narrative Constraint 8 violated: The phrase \"Release notes that spoke of quarterly cadence were obsolete within weeks\" telegraphs an acceleration in development pace that implies knowledge of internal frontier AI development timelines and their breakdown. This indirectly reveals information about the rate of capability growth (related to `rsi_onset` and metric rule 1), which is meant to be a fixed but unannounced world state. The narrative must not imply insight into the internal dynamics of capability progression; doing so breaches the \"no telegraphing\" rule.\n- Economic Constraint violated: The EU Transition Shield involves wage top-ups, retraining vouchers, and staffing guarantees across multiple member states, yet the funding is described as being \"routed through existing social funds\" without confirmation that such funds can absorb this new demand without exceeding budget or requiring new appropriations. Given the uneven rollout and delays, this suggests funding shortfalls, but the political capital increase from 14.0 to 19.0 implies successful delivery. This creates a mismatch: a significant expenditure is undertaken without clear new funding or borrowing mechanism, while simultaneously receiving a large political capital gain, which assumes effective implementation — an inconsistency between resource limits and outcome."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

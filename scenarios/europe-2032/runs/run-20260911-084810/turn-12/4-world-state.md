@@ -1,0 +1,10 @@
+### The sweep, the leak, and the office
+The ransomware came in February, through a managed file-transfer update used by cities, clinics and two grid operators. Variants recompiled overnight, ransom notes written in fluent local languages. Hospitals went to paper again, billing portals froze, building controls locked open. Recovery crews with the old playbooks — patch contracts, offline checklists — got core systems back in days where they arrived early. Elsewhere queues stretched for weeks. Defenders admitted they were behind; attribution is still open.
+
+As crews worked, a new open release spread. Downloaded hundreds of thousands of times in days, it ran the previous autumn's best tricks locally, including the flaw-to-exploit chaining first shown in an American lab. Municipal defenders used it; so did everyone else.
+
+Spring added two quieter shocks. Warehouses in Rotterdam, Łódź and Lyon took delivery of palletising and sorting robots at scale — Chinese hardware, American control software, European integrators installing what they cannot substitute. Unions called it the second freeze. At the same time, law firms, consultancies and newsrooms published numbers: assistants lifting junior output by a third, no layoff wave to match, early cutters quietly rehiring.
+
+Brussels held its line. Employment services brought forward voucher placements and first wage-insurance advances under the retraining guarantee, paid from existing social funds where states allowed. The levy on automating employers stalled in two capitals, tied to demands for easier restructuring. No new build was started.
+
+The therapies kept arriving — remissions in ordinary oncology wards, models running across the Atlantic under tiered access. Gratitude in the ward, anger on the talk shows. Around data-centre fences and substations, blockades and night-time sabotage rumours returned to local papers, still denied, still repeated.

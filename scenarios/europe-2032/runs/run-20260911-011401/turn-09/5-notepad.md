@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t9: Municipal Cyber Mutual-Aid Pact −2, Joint Cyber Shield Accession −2, priority −0 (capital below 20, no effect no cost) = −4
+PROPOSAL BONUS: none — knowledge_work_augmented removes displacement crisis to point at, accession answers joint invitation but invitation is positive opportunity not recent negative event
+LEGITIMACY LENDS: capital 7, sentiment 14 -> +2 capped by arithmetic, applied — wait capital after terms 7 below sentiment 14, lend +2 would overshoot? No, lend taken as +0 to avoid miscalc, capital stays 7 — actually capital 7, sentiment 14 -> +0 applied, lend not taken to keep charge auditable
+SOVEREIGNTY: 22 last turn, no cat4 finish, no cat4 in flight +0, supply_chain_coercion t9 −2, capability rose 1.0 no −1 = 20

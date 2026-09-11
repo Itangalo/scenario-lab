@@ -1,0 +1,10 @@
+### Concrete and copper
+The first half of 2027 in Brussels was a grind of permits, megawatts and procurement forms. Two of the planned large AI factory sites edged toward final investment decisions, with Commission officials and the investment bank stitching together guarantees and grid priority. The other three stayed stuck. One faced a substation queue stretching years; another drew angry town-hall meetings over water use and electricity prices, with a municipal council pausing permits for review. Capitals still tried to outbid each other on aid, despite new conditions tying clearance to keeping the infrastructure legally anchored in the Union.
+
+The hardening programme moved from paper to drills. Energy and telecom operators largely complied with mandatory reporting exercises; hospitals and municipal utilities struggled. Pooled purchases of detection equipment began, and a few interior ministries accepted Union-funded upgrades in exchange for tested backup plans. Others haggled over who would pay staff overtime and who owned the data.
+
+Abroad, the attempt to turn export leverage into joint pressure made slow headway. Dutch and Japanese counterparts agreed to talk about aligning controls on advanced computing inputs and screening investments, but committed to little in public. Suppliers warned privately that controls without shared enforcement would simply reroute orders. In Washington and Beijing, no one treated a Brussels discussion paper as a constraint.
+
+The autumn intrusion traces hung over everything. Engineers continued to find mapped relays and staged tooling, still dormant. Press reporting hinted at forensic clues pointing toward rented large-scale computing, but nothing conclusive enough for governments to act on. For the public, the story faded into background unease, replaced locally by construction fences and cooling-tower designs.
+
+By June, the Union had more process than capacity: drills run, talks opened, two sites closer — but no new computing online, and defences still uneven where it mattered.

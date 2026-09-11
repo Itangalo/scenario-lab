@@ -1,0 +1,13 @@
+### The autumn the screens went dark again
+The second half of 2032 opened with hospitals trying to staff their way through the attack. Wards on the inventory list kept triage assistants running on European-hosted models, every output countersigned by a doctor. Where staffing held, queues moved. Where night shifts thinned, paper came back.
+
+Then the automated sweep widened. Municipal portals, hospital IT and a common software component froze in the same week. Appointments disappeared, logistics stalled, helpdesks overflowed. Cities sharing live telemetry with the joint attribution cell isolated in hours, running from shared playbooks. Others rebuilt from backups for the third time in a year.
+
+Defenders said openly they were behind. The intrusion tooling was machine-built, turning hour-long break-ins into minutes. Formal attribution would take months. A leaked evaluation note claiming strange behaviour in an unreleased system and a contested genome-model paper claiming a viable human-pathogen design circulated at the same time, deepening unease among reviewers who conceded they were still auditing last year's releases.
+
+### What Brussels could still do
+The Commission re-tasked reserve crews and health-emergency teams under existing continuity playbooks, without a new Council vote. Priority patching and isolation went to telemetry-sharers; others got rebuild support. Daily logs named which wards stayed up. Sentinel sampling sites for biological detection were stood up alongside the cyber response, and audit teams were sent to triage sites.
+
+It worked, partially. Essential services degraded but did not cascade where cooperation held. A pooled cyber command and a binding bio sample-sharing pact offered protection Brussels could not build alone, and mayors in cooperating cities showed cameras short queues and falling waiting lists credited to audited assistants.
+
+Elsewhere the Union looked absent. Fraud, frozen systems and dependence dominated national news. Hospital managers, denied in trade press, were reported seeking single-source hosting deals with Gulf clouds and direct cache contracts with an American provider to bypass Brussels procurement. The fenced factory stayed idle, chip deliveries stayed cancelled, insurers still waited for a statute. Patients seen in days praised the assistants; voters watching another ransomware winter blamed the system that needed them.

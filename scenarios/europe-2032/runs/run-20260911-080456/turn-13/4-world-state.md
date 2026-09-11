@@ -1,0 +1,12 @@
+### Running on borrowed models
+By autumn the new American control authority was the only address that mattered. European hospital directors renewing therapy licences and grid operators requesting model updates were routed to the same federal desk for approval. The cures kept coming — children leaving wards that had held them for years — but each discharge letter now carried an American clearance footnote, and press coverage lingered on that dependence.
+
+Brussels pushed hard for a written continuity pledge. The High Representative and trade officials shuttled to Washington offering maintenance support for advanced chip equipment, pooled cyber telemetry and help flagging risky biological orders in return for guaranteed service and a right to inspect systems before deployment. American officials listened, took the telemetry, and offered warm words and a short interim memorandum rather than a binding commitment. With Washington retrenched and focused inward, officials dealing with Europe had little to give.
+
+The rupture came inside the Union. One member state broke ranks and signed its own access deal with an overseas provider on cheaper, quieter terms, presenting it as pragmatism. Partners called it undercutting. The Commission threatened to make future joint benefits conditional on loyalty, but had little to withhold.
+
+Salvation was sought elsewhere. The Commission formalised a coordination club with Japan, Korea and other middle powers holding chokepoints in equipment, materials and evaluation — aligning export licences and bargaining jointly for compute. It was slow, technical work, but for the first time Brussels could offer Washington something pooled rather than piecemeal.
+
+At home, prolonged manual operation produced its own answer. Municipal utilities and hospitals that had lived on hand-operation for weeks placed joint orders for offline-first controls, and a European vendor group unveiled a certified package for grids and triage wards that could be physically disconnected. Funds from civil protection and recovery budgets were steered to joint procurement, stretching shield kits a little further. Towns with the new kits degraded more gracefully when the next wave of intrusions re-compromised networks — which it did, within weeks.
+
+Europe ended the year still running, degraded, but with two lifelines half-built: one abroad, one in its own town halls.

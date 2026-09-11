@@ -1,0 +1,10 @@
+### Borrowed shelter in a hard autumn
+The second half of 2031 arrived as a stress test the Union had volunteered for. A large, largely automated assault swept public services — in some places a ransomware wave locking municipal systems and clinics, in others a poisoned software component whose reach took weeks to map. Cooperating hospitals and town halls that had joined the pooled command, kept locked backups and rehearsed cutting cloud links stayed degraded but working. Unlinked neighbours went dark for days. Attribution lagged for months, and the public saw defenders behind the tooling that hit them.
+
+That narrow success kept the accession alive, but finance and hardware told a bleaker story. Washington compelled further cuts to servicing of lithography equipment, reaching back from leading-edge machines to the older tools used for ordinary chips. The Hague was caught between American jurisdiction over its supply chain and Brussels' new demand for EU authorisation of any withdrawal. Tokyo and Seoul still refused quotas without binding controls, the fenced gigafactory stayed idle, and talk of permits for new sites met quiet refusals in councils still citing the benefits-system scandal.
+
+Robots changed the factory floor while lawyers argued. Picking, sorting, palletising and warehouse logistics fell quickly to commercial fleets, overwhelmingly built outside Europe with foreign control software. Repair, care and messy construction stayed manual. The line hardened, and Europe's industrial strength felt both validated and bypassed.
+
+Offices offered the only good news. Across law, accountancy, administration and journalism, measured output per person rose, most for juniors, without a matching fall in jobs. Firms that had cut early quietly rehired. Audited triage assistants cutting waiting lists fitted that mood, and the civic trust repair formally closed with expanded pilots and a redress window.
+
+It was not enough to lift the mood. The attack, the servicing cut, and the sense of building on borrowed eyes left the public ambivalent and the Union visibly dependent.

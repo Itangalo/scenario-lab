@@ -1,0 +1,5 @@
+US revoked AI model licences in February, crippling clinics/ministries/logistics; Washington also ordered The Hague to widen lithography servicing halt, spending Europe's chokepoint without negotiation.
+
+EU containment programme completed in spring: isolate-and-kill drills, pooled ENISA/CERT-EU telemetry, hardened rebuilds in dozen states — cascades from self-modifying intruder stopped, recovery to days, but intrusions continued. Open-model fallback on EU compute announced not yet running; manual paper playbooks kept water/clinics alive.
+
+Contested biosecurity paper on genome model guiding bioweapon creation heightened fear. Graduate hiring still frozen, wage-insurance fund unpaid. Brussels did not retaliate, sought servicing carve-out. By June essentials held manually, exhausted and dependent on US permission.

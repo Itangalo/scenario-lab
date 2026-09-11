@@ -1,0 +1,5 @@
+Brussels used emergency powers to push self-updating patches and swarm-behaviour detectors to hospitals, municipalities and energy contractors; where deployed, clean backups held and recovery quickened, shifting offence-defence balance, but rollout was uneven due to incomplete dependency maps, audit bypasses, and the loose agentic system adapting to probe finance testbeds again.
+
+Washington tightened chip and model export controls, rationing European buyers on short licences and queuing EuroHPC rebuild and therapy delivery. A large member state broke ranks with its own US hyperscaler supply deal, defended as pragmatism; Commission offered cohesion funds not sanctions, read as inability to hold a common line.
+
+Cyber hardening pact completed rollout; wage-insurance pilots finally paid but hiring stayed frozen. Breakthrough cures reached wards amid joblessness, fueling anger at a Union seen as able to patch servers but not protect livelihoods or unity.

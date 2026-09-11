@@ -1,0 +1,5 @@
+US-China war over AI infrastructure began in March with strikes on fabs, cables, satellites; two Europe-serving cable landings degraded and therapy-scheduling hub on backup power. Brussels declared Union territory, landing stations and gigafactory plots non-belligerent, offered deconfliction; Washington acknowledged, Beijing silent. Licensed therapy doses continued but queues lengthened, compute billing tripled.
+
+Open frontier weights released amid war, widely downloaded; EU cyber agencies warned of unrecallable near-frontier coding/planning ability. Arson spread to gigafactory grid works, halting construction in two regions; Energy Council took emergency control. Operators isolated systems with limited spare capacity.
+
+Graduate hiring did not return; Transition Guarantee paid bridge pay in automated ports but seen as temporary. Separate foreign compute pact persisted. Frontier training continued unattended, Brussels evaluating only post-release.

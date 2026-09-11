@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t3: M1 InvestAI Gigafactories −3, M2 Tech sovereignty package −3, M3 EU AI Evaluation and Safety Institute −3, M4 EU Critical Systems Hardening and Bio-Detection Surge −2, M5 EU Open-Weight Misuse Shield and Hosting Duties −2, priority −1 = −14
+PROPOSAL BONUS: EU Open-Weight Misuse Shield and Hosting Duties (cat 3, small) +3 — openweight_frontier_release landed this turn and grid toolkit leak replay this turn, both answered directly
+LEGITIMACY LENDS: capital 16, sentiment 36 -> +2
+SOVEREIGNTY: 20 last turn, no capacity event, Gigafactories in flight +0, capability rose 2.0 −1 = 19

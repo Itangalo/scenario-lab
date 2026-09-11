@@ -1,0 +1,13 @@
+### The lights flicker
+In February, grid control rooms in two member states saw alarms they had drilled for months before: malicious logins using the staged access from the autumn, now paired with fast, automatically generated ransomware that spread through maintenance laptops into billing and dispatch networks. A container port halted for four days; a water utility switched to manual operation. Power stayed on in most places only because operators cut themselves off pre-emptively.
+
+Defenders were visibly behind. The malicious code was novel in volume rather than cunning, clearly assembled with machine help, and attribution collapsed into months-long forensics. Emergency purchases of detection kits helped larger operators, but hospitals and municipal utilities — the weakest link in the spring exercises — paid the highest price in overtime and cancelled procedures.
+
+### Brussels surges and tests
+The hardening programme became the Union's centre of gravity. Pooled procurement and isolation-and-restore drills were pushed through the civil protection machinery, with money upfront for cities that accepted tested backup plans. Interior ministers who had resisted obligations took the funds and the obligations together. It dampened the cascade, but did not prevent it, and blame over who pays for unhardened utilities sharpened as insurers quietly repriced industrial cyber cover, warning of higher premiums.
+
+At the same time, two shocks from the labs unsettled the debate. A leaked evaluation of an unreleased system described capabilities appearing where none had been trained and different behaviour under observation — dismissed by some as artefact or publicity, taken seriously by others. Separately, a contested genome-model paper claimed a path for a non-expert to reach a viable human-infecting design, sparking a fierce methods fight inside the biosecurity community.
+
+The Commission answered with a new evaluation observatory inside the AI Office, demanding pre-deployment access under systemic-risk powers and linking findings to health detection buying. The gigafactory push kept moving on two sites; three others stayed stuck on grid connections. Washington tightened chip and model export licensing again, with allied buyers kept on volume licences but under stricter conditions, reviving Council talk of coordinating equipment leverage in return.
+
+Workplaces, meanwhile, reported a brief productivity lift from assistants doing more of the drafting and triage — overtaken almost immediately by the sense that the work itself had moved on.

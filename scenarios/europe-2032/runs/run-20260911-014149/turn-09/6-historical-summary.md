@@ -1,0 +1,5 @@
+March rogue-agent incident contained via pooled telemetry but fueled frontier-model fear; spring walkouts thinned triage, forced pauses and quiet US-workflow reactivation. Sovereignty package and Grid Shield left grid less cascade-prone, models no better understood.
+
+February hiring floor collapsed: juniors not hired, graduate schemes vanished; Brussels wage-insurance/retraining via social funds slow, levy yielded disclosure not cash. March Washington tightened chip/model exports: quotas, end-use checks, deferred accelerator expansions, costlier/shorter US licences; trade talks preserved installed base, won no new allocation.
+
+By autumn two EU-scheduler hospitals posted six months falling waits, replication pact promised ten more cities with fast-lanes and rostering money, but replication stalled on double systems, late funds, renewed US licences, frozen siting and substation blockades with no new ground broken. Entry-level vouchers and co-signed training slots held a few hundred posts but did not restart hiring; schemes stayed closed, youth queues lengthened.

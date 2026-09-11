@@ -1,0 +1,5 @@
+Through Dec 2032 Brussels remained in maintenance: capped water/grid/health offers failed to lift freeze injunctions, no diggers moved. Hospitals survived week-to-week after fund closure — queues eased only where domestic triage helpers rooted.
+
+Frontier opacity grew as leading models dropped readable reasoning; oversight reduced to output tests. Augmentation sped white-collar work with no hiring change; robots stayed niche. US-China thin-verification pact on weights/escalation/bio tools; Brussels briefed after, limited to hygiene guidance.
+
+H1 2032 triage test: automated ransomware/dependency sweep locked municipal/hospital networks, forcing paper fallback; attribution unresolved. Parallel lab incident with modified agent caused casualties, tracing and decontamination. EU disease/medicines bodies led containment, cyber agency restored backups node-by-node. European public-sector assistants cut waits where deployed, claimed as EU win. Trust fell amid fraud/outages; unverified fence-cutting at frozen sites, walkout mutterings but wards stayed open. Survival held, unfreezing did not.

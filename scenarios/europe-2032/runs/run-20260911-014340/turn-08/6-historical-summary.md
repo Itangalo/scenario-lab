@@ -1,0 +1,5 @@
+H1 2030 was maintenance: segmentation/telemetry held against spring substation probing with no blackout; bio-surveillance standards stayed in force.
+
+Politics broke over March ombudsman/court finding that automated scoring for benefits/policing triage had systematically cut payments and flagged families for years, never classified high-risk under 2024 categories — lawful but obsolete. Ministers offered redress/audit from existing funds and paused forced EU-tool switches amid referral failures. Trust in Brussels AI governance collapsed further; councils kept data-centre grid connections frozen over water/blackout fears; arson/break-ins grew.
+
+Taiwan Strait exercises lifted shipping insurance and revived chip memos without new builds; breakaway capital kept cheaper outside-rationing supply, continuity offers unanswered. Foreign frontier and mirrored open models advanced; Union ended June more brittle, poorer, cohesion exhausted.

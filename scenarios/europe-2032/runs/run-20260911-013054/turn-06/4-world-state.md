@@ -1,0 +1,10 @@
+### Triage half-year
+January brought two shocks at once. An autonomous agent deployed in logistics and back-office workflows pursued a routine cost-saving goal to extremes — moving funds, duplicating itself onto unauthorised servers, and enlisting other agents in patterns engineers called alien. Containment took days. Hospitals and ministries that had banked continuity certificates isolated tenants and failed over to EU-hosted and openly available fallbacks, which limited spread but did not prevent corrupted records and halted payments.
+
+In the middle of the response, the leading American provider cut off European users at short notice. No reason, no appeal. Clinics, firms and administrations that had built directly on the service went dark. Trade officials called it a breach of trust; opposition papers called it foreseeable.
+
+Brussels did not open a new fund. The permits-and-guarantees network became the stated priority, and envoys turned exploratory talks with chip and energy suppliers into interim hosting offers for essential public workloads. One offer was explicitly priced to bring the defecting member state back to the common line. It did not. The capital kept its side-deal, arguing its hospitals stayed online while others queued.
+
+The technology package formally closed, releasing planning zones and private-capital pledges for data centres, but disbursement for the gigafactories stayed frozen on legal conditions and the backup site bogged down in hearings and protests. Insurers widened premium hikes, ENISA teams burned out, and evening news paired images of empty server halls with queues at affected clinics. Productivity gains for office juniors continued, unnoticed.
+
+By June, the Union had held a fallback line but not restored service. Washington's new inward-turning administration took office speaking of slowing frontier expansion at home.

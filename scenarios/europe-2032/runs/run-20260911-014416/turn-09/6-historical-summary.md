@@ -1,0 +1,5 @@
+Autumn 2029 Washington tightened chip and model controls again; Brussels lobbying preserved a capped, audited, questionnaire-heavy carve-out for EU hospitals and grid while others were cut off — sold as diplomatic save, read domestically as late, smaller, costlier US supply.
+
+Crisis allocation cell held transmission and triage through winter via pooled lithography servicing, spares routing and breaker-log triage; work on two fire-damaged grid-connection sites was patchwork with no funds for new siting and layouts still leaked.
+
+December lithography-for-compute compact kept existing machines running without adding capacity; large member state stayed outside joint list despite re-entry offer. Essential services survived thinner on counted licences, queues and audits, with open-source researchers alienated by end-use controls and dependence now explicit.

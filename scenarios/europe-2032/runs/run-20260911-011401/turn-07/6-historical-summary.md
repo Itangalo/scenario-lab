@@ -1,0 +1,5 @@
+By late 2028 EU dependence was exposed when US tiered-access controls throttled allied calls to the leading American model, hitting clinics, ministries and logistics in Lombardy, Tallinn and Rotterdam already weakened by January's machine-written intrusions.
+
+Brussels' sole operation — emergency repair crews with clean backups and fast procurement — steadied services where deployed but left uncovered areas facing a second outage. A certified lab monitoring technique for predictable behavior was attached to restoration, reducing false alarms and improving trust in remaining models without replacing lost capacity.
+
+Without funds, Brussels reactivated the Netherlands-Japan-Korea supply-chain table for aligned export licences and pooled procurement, winning limited allied industrial quotas in autumn. EU-run models cutting hospital waits and permit times were offered to reintegrate the breakaway capital from its US side deal; it refused. Gigafactory permits for five sites were legally cleared but unbuilt amid financing gaps and protests. Public mood split: credit for shorter queues, blame for renewed dependence.

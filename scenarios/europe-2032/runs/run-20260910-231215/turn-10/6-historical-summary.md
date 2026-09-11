@@ -1,0 +1,5 @@
+University-hospital scheduling cleared long backlogs, letting ministers claim European procurement worked; entry hiring stayed frozen in law, audit, junior tech and customer ops, with bridging payments and vouchers continuing, SME hiring taken up in Spain/Poland but boycotted in Germany, levy contested, fairs half-empty.
+
+Rising strait manoeuvres, shipping insurance and an expulsion pushed chip buyers to lengthen orders; Brussels launched a continuity shield — mature chip/memory stocks for the four domestic sites, overflow via middle-power partners, rationing drills in hospitals/exporter hubs. Reserve procurement moved fast, rerouted contracts stalled on price, rehearsals still showed peak latency, unions opposed normalised night cover.
+
+Graduate guarantee payments and funded services continuity reserve cushioned politics, allowing permits-for-patience with industry and no-deregulation pledges to unions. Unconfirmed flyers/local reports of blockades/sabotage around inference sites and grid links prompted mayors to seek siting review without permit withdrawal. By June continuity looked more European but fragile amid freight-rate watch.

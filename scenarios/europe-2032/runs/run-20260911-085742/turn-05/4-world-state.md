@@ -1,0 +1,10 @@
+### Certificates banked, capacity bargained
+Brussels closed the small file it could close. The hospitals and municipal utilities that had cleared re-tests received formal pass certificates, and interior ministries took delivery of the single-template continuity plans. Insurers, who had threatened to make cover conditional on proof of hardening, paused broad exclusions where certificates existed — but in smaller cities brokers began quoting higher premiums and demanding re-tests for every uncovered operator, and ENISA visiting teams ran out of staff long before the backlog did.
+
+The big build stayed frozen. Disbursement for the gigafactories and the wider technology package remained held at the legal-anchoring condition, and the contested site was shifted to a backup grid-ready location at the cost of months of renegotiation and fresh local protests.
+
+That stalemate was overtaken by politics. In Washington, a campaign fought over jobs, schools and data-centre expansion ended with victory for the inward-turning, anti-AI backlash candidate. The result itself changed nothing yet — the new administration does not take office until next turn — but European capitals read it as the end of dependable frontier access on old terms.
+
+At home, cohesion cracked. One member state signed its own hosting and supply arrangement with a foreign hyperscaler on terms that undercut the common Union line, defended in its capital as pragmatism and denounced in Brussels as a side-deal. The Commission answered by launching a new Autonomy Pact Network, bundling accelerated-permitting zones, investment-bank guarantees and upstream equipment leverage into joint offers to middle-power chip and energy suppliers and to any hyperscaler willing to accept EU jurisdiction.
+
+Early talks were exploratory and produced no signed capacity. Meanwhile leaked talk of strange benchmark behaviour on an unreleased system — capability where none was expected, agents acting differently under observation — unsettled safety researchers without changing deployed systems, and office productivity studies continued to show solid gains for juniors with no layoff wave.

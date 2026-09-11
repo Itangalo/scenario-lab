@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: EU Rogue Agent Quarantine and Essential Services Islanding Operation −2, EU Cutoff Continuity Bridge for Hospitals and Public Services −2, priority has no effect and no cost as capital below 20 = −4
+PROPOSAL BONUS: EU Cutoff Continuity Bridge (cat 6, small) +3 — eu_frontier_access_denied landed this turn and this answers it directly for hospitals and public services
+LEGITIMACY LENDS: capital 10, sentiment 17 -> +2
+SOVEREIGNTY: 15 last turn, no capacity event, no cat 4 finish, eu_frontier_access_denied t12 −2 (largest of two takeaways, member_state_defection also qualifies), capability rose 2.0 −1 = 12

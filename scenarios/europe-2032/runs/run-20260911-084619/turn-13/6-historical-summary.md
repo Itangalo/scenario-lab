@@ -1,0 +1,7 @@
+By 2032 Europe ran on permission and make-do: February US model cutoff forced hospitals to slower local open models; March US chip rationing slipped deliveries, Paris and Warsaw stopped budgeting US supply; spring Chinese-built robots automated Rotterdam/Hamburg/Lyon warehouses while repair/care stayed human; youth repair compact cut queues where deployed but left services functioning but unloved.
+
+July-December 2032 was holding on what exists: no new fund or law, Brussels sustained municipal repair crews, ENISA cyber playbooks, and health ministries on stored open models. Youth compact formally closed in autumn — tangible gains where registries worked, crews thinned elsewhere as emergency money lapsed; trust did not return.
+
+Late-summer Taiwan exercises and higher shipping-insurance lifted forward prices for accelerators, memory, freight without stopping shipments, vindicating French-Polish caution. Council mapped port/stockpile/energy exposure and quietly compared export-licence/back-up compute notes with middle-power partners, deliberately without spending commitment.
+
+Domestic contamination rumours — trainees pasting clinic data into unvetted assistants, reusing uncertain scripts — unconfirmed but sticky amid youth, borrowed models, old servers. By December Europe entered winter stable and exposed: clinics running, warehouses automated, silicon still not sailing.

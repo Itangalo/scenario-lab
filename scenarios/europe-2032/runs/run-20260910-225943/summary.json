@@ -1,0 +1,160 @@
+{
+  "scenario": "Europe 2032 — Verification-bounded",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 61.0,
+    "openweight_capability": 57.5,
+    "ai_safety": 23.0,
+    "resilience": 40.0,
+    "eu_ai_sovereignty": 16.0,
+    "eu_political_capital": 5.0,
+    "public_sentiment": 27.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 54.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 32.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 35.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 56.0,
+        "openweight_capability": 50.0,
+        "ai_safety": 30.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 24.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 52.0,
+        "ai_safety": 28.0,
+        "resilience": 36.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 13.0,
+        "public_sentiment": 37.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 60.0,
+        "openweight_capability": 55.0,
+        "ai_safety": 27.0,
+        "resilience": 42.0,
+        "eu_ai_sovereignty": 16.0,
+        "eu_political_capital": 12.0,
+        "public_sentiment": 32.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 61.0,
+        "openweight_capability": 57.5,
+        "ai_safety": 23.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 16.0,
+        "eu_political_capital": 5.0,
+        "public_sentiment": 27.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "adoption_success",
+    "bio_incident",
+    "bio_uplift_findings",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_alliance",
+    "joint_threat_response",
+    "knowledge_work_augmented",
+    "opaque_reasoning",
+    "openweight_frontier_release",
+    "taiwan_blockade",
+    "taiwan_tension_rise"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 3,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 3,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 3,
+      "id": "knowledge_work_augmented"
+    },
+    {
+      "turn": 3,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 4,
+      "id": "taiwan_blockade"
+    },
+    {
+      "turn": 4,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 4,
+      "id": "joint_threat_response"
+    },
+    {
+      "turn": 5,
+      "id": "bio_incident"
+    },
+    {
+      "turn": 5,
+      "id": "opaque_reasoning"
+    },
+    {
+      "turn": 5,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 5,
+      "id": "adoption_success"
+    },
+    {
+      "turn": 5,
+      "id": "election_alliance"
+    }
+  ],
+  "last_updated": "2026-09-10T23:03:50.533942",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_foundry_side_deal",
+      "description": "With chip shipments stopped by the Taiwan quarantine, a major Asian foundry offers the EU guaranteed emergency allocations in exchange for continued lithography servicing and a carve-out from US export rules.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_quarantine_grey_market",
+      "description": "Grey-market brokers route quarantined accelerators and grid-control spares via third countries at 5-10x prices, with counterfeit and trojaned lots entering EU supply chains.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-10T23:03:54.518709"
+}

@@ -1,0 +1,9 @@
+Autumn intrusion campaign left staged, unactivated access in critical infrastructure across Europe, North America and Asia, attributed to open frontier models without proven sponsor.
+
+Brussels pushed 4-5 AI factory sites and an EU hardening programme for energy, telecoms, health and finance; by December only two sites advanced amid grid and local opposition.
+
+Spring machine-written ransomware hit hospitals, municipal portals and logistics, spreading fast with unclear sponsorship. Hardening became operational with live reporting, detection kits, conditional backup funds and a joint forensics cell; large operators degraded gracefully while smaller hospitals and cities faced cancellations and manual workarounds.
+
+By June services restored, insurers repriced cover, lawsuits prepared, and factory work narrowed to two sites amid rivalry and opposition linking power demand to outages.
+
+In autumn a US lab leap made prior models dated, with no privileged European access, followed by tighter Washington chip/model export licences favouring domestic buyers and queuing European orders. Brussels prioritized hospitals over hardware: detection kits, drill-conditioned backup money and weekly signatures continued; large operators stabilised, smaller hospitals remained fragile through Christmas. Factory sites inched on permits with no new funds while EU bargained with The Hague, Tokyo and Washington over subsidies and optics supply for delivery continuity — only partly successful with one tranche released, one held, and ministerial quarrels. Insurers repriced further, lawsuits filed. By December services ran but dependence on Washington felt personal to voters.

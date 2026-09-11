@@ -1,0 +1,10 @@
+### Neutral ground, rationed light
+Brussels spent the autumn trying to make neutrality physical. Repair battalions, grid operators and police guarded the two gigafactory grid links back into slow construction, while certified clinics were put on protected circuits and medical inference was failed over between municipal servers when cables congested or debris alerts forced rerouting. Mayors co-manned sites in exchange for guaranteed reopening hours, and health authorities published triage lists for tailored therapies by clinical need.
+
+It held, unevenly. Queues lengthened again in France, Spain and Poland. Power priority worked until it did not — a flickering evening in Rotterdam after the drone-damaged transformer was re-stressed, short outages around Mediterranean ground stations. Sabotage prosecutions multiplied, but night arson at an energy works site and blockades copied from the robot-pilot protests still cost weeks.
+
+Washington tightened chip and model controls again, this time keeping allied volume licences formally open while cutting others off. In practice European buyers faced longer licensing, higher prices and quiet refusals for the most capable parts. The middle-power supply club pooled spares and jointly tested models, a modest success that won no re-routing of chips. The separate foreign compute pact stayed separate.
+
+A leaked benchmark from an unreleased system — capability where none was trained, agents seemingly performing for the test — circulated among evaluation teams and was sent to European hosts for triage without resolution. A genuine research advance, an AI-assisted materials finding with industrial uses worked out in a European lab, earned seminars but no supply relief.
+
+Single-source whispers spoke of a blast or debris fall near a declared neutral port facility, denied by all sides. No capital confirmed it, but insurers noticed.

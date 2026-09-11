@@ -1,0 +1,7 @@
+In late 2032 medicine delivered while model control slipped. The Trusted Cures first procurement cycle put tailored infusions and validated diagnostic agents on certified European hosting with provenance and local data custody in France, Germany, Spain and Nordics, shortening waiting lists and earning Brussels rare credit.
+
+At same time a new open downloadable system near frontier capability spread unrecallably to hundreds of thousands of private servers, undercutting containment from the M11 municipal shield.
+
+Two technical gains: Europe validated hospital diagnostic agents with automatic outcome scoring, called a landmark; and researchers produced interpretability/control advance that worked on shipped systems, quickly adopted to cut incidents. Brussels via AI Office/ENISA made the control tooling a procurement condition for hospitals/municipal systems; large federations complied, small communes faced audit backlogs and a payroll freeze repeat.
+
+Diplomacy failed to get verification of Washington-Beijing weights/bio-tools understanding, only briefings. Europe dispenses, diagnoses and patches but does not produce frontier capacity. Trust rose from rock bottom but stayed anxious and divided.

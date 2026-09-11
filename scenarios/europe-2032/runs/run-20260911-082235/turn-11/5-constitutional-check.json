@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Economic Constraint violated: The narrative mentions \"emergency funds were conditioned\" and implies expanded operational activity (e.g., extended sampling, recovery surge), but no funding source is identified for these expenditures. The increase in `eu_political_capital` from 14.0 to 20.0 (+6.0) suggests significant political investment or success, yet the portfolio charge shows only a −4 cost for ongoing measures and no new measure was introduced, meaning no associated budgeting process is accounted for. A political capital gain of this size without a clear, funded measure or major event justification exceeds plausible bounds under the economic and modelling constraints.\n- Organizational Constraint violated: The narrative describes an active, coordinated response across ENISA, health ministries, hospital sampling, and a joint command structure, implying rapid scaling of interagency operational capacity. However, no justification is given for how this coordination was staffed, trained, or resourced within a single turn. Such integration, especially across civilian, health, and security domains, would require sustained organizational development beyond the maximum realistic rate, particularly without a completed high-cost measure (M13 is still in flight with −2 remaining).\n- Metric Rule 9 violated: `eu_political_capital` increases by 6.0 points (from 14.0 to 20.0), which is within the 25-point hard cap, but the gain is implausibly large given the inputs. The Game Master's Notepad attributes +3 from a proposal bonus and +2 from legitimacy, totaling +5, yet the actual change is +6. This implies an unaccounted +1 point not justified by any listed term. Even if rounding were involved, the notepad must fully explain the movement. Unexplained metric growth violates the requirement for transparent, rule-based updates."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

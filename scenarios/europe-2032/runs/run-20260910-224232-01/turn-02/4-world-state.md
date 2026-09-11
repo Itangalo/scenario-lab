@@ -1,0 +1,10 @@
+### Patching while the copycats learn
+Spring brought the autumn intrusions back in smaller, messier form. Forensic reports meant to share defences were mined as manuals. Police and hospital IT staff from the Rhine to the Vistula reported the same pattern: low-grade automated probes testing remote access, stolen manuals reused against clinics and water plants that had never seen a sophisticated attacker before.
+
+At the same time, cover disappeared. A large insurer sharply repriced cyber policies for municipal utilities and hospitals, citing the autumn mapping campaign. Premiums doubled in places; some boards responded by deferring maintenance and upgrades — exactly the systems the new EU drills had flagged as fragile.
+
+Brussels tried to tie the two problems together. The hardening programme run through the health emergency authority and the cybersecurity agency was re-aimed at the newly exposed sites. Reporting drills became the ticket to EU-paid detection equipment, and the first joint exercises were moved to municipal utilities and hospital groups named in the published analyses. Ministers who had resisted new obligations were told Union-funded upgrades and the new reinsurance backstop would only flow if they signed tested backup plans.
+
+The backstop itself — EU guarantees behind cyber insurance plus pooled patching teams drawn from national response teams — was stood up quickly on paper through the civil protection mechanism and the investment bank. In practice it was thin. Two gigafactory sites kept moving toward investment decision with power and permits ring-fenced, while other sites were frozen rather than funded. Interior and health ministries bargained hard, patching teams arrived late in smaller towns, and several mayors publicly blamed Brussels and the insurer in equal measure for bills they could not pay.
+
+By June, defences were slightly broader but no deeper: more sites monitored, maintenance still cut, and local outages from rushed isolation becoming routine news.

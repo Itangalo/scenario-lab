@@ -1,0 +1,5 @@
+Autumn 2028 ransomware sweep hit municipal services, clinics and logistics across half a dozen states using open models; joint EU cybersecurity agency centre with hardened grid operators and hospitals held grid isolation but towns lost systems for days, attribution unresolved.
+
+Common line held: grandfathered cloud migration to EU-anchored terms continued, energy-compensation talks kept frozen grid links half-alive, evaluation institute vetted models on shared telemetry. No new compute builds; gigafactory siting slipped again, one injunction remained, coffers empty.
+
+November leaks of unreleased frontier capabilities deepened mistrust; US election brought backlash candidate promising data-centre moratoriums and AI curbs, taking office in January — easing pressure but leaving Europe's model/cloud partner inward-looking. By year-end entry-level hiring freezes and hostile siting protests grew despite clinic AI wait cuts; Union better wired but strained, waiting on Washington.

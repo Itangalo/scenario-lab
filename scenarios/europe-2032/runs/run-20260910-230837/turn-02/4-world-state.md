@@ -1,0 +1,9 @@
+### The pact that started, the factories that stalled
+The spring belonged to engineers in high-vis vests. Under the new Grid Hardening Pact, transmission operators in five countries began segmenting control networks, installing backup relay controls and running joint exercises with ports and water utilities under ENISA direction. It was tangible, funded from existing lines, and operators welcomed it. Detection times improved on paper. Nothing was yet fully hardened.
+
+The flagship factory programme went backwards. Coordinated protests over power and water use shut down permitting hearings at two candidate sites, forcing restarts and fresh environmental reviews. Alternative sites were floated with mitigation funds, but Paris, Berlin, Madrid, Stockholm and Warsaw withheld final grid pledges while hosting and compensation were renegotiated. Private co-financing stayed conditional. No ground was broken.
+
+### A mandate sought, a member breaks ranks
+The push for an independent Evaluation Institute gained a foothold but not a mandate. The AI Office with Joint Research Centre support drafted vetting and audit powers and offered industry time-limited testing windows. Ministers debated, industry lobbied against intrusive access, and the Competitiveness Council deferred a decision to autumn. Staffing remained skeletal.
+
+Then the blow: a member state announced its own compute-access arrangement with a foreign hyperscaler on commercial terms that undercut Brussels' common procurement line. At home it was sold as pragmatism and jobs; in Brussels as betrayal. The Commission tried containment by linking future supply-chain placements to common terms, but the deal stood. Evening news paired grid vulnerability with disunity, and trust sagged further.

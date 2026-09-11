@@ -1,0 +1,10 @@
+### Claiming a win while the stores burn
+The half-year opened with a rare piece of good news for Brussels. In two health systems and a justice pilot, EU-procured triage and case-handling tools cut waiting lists and decision times by measurable margins. Dashboards went up in clinics and town halls, stamped with EU colours. For the first time in years, nurses and clerks told cameras the system had helped.
+
+The money behind it told a darker story. A sharp reset in tech valuations cancelled data-centre expansions on both sides of the Atlantic. Private compute deals European hospitals and labs had quietly relied on evaporated. Washington, rationing what remained, put even close buyers on volume quotas for advanced chips and model access. The Hague signed under protest; talks in Tokyo and Seoul produced spare parts in boxes, not a supply line.
+
+At home, the fallback itself came under attack. Small groups broke into generator compounds, transformer stores and the cabins holding paper breaker logs, leaving slogans about refusing to keep the machines alive. Two showcase clinics lost backup power for a night; a county pool of spare transformers was torched. Police guards were posted, and off-books pools were hurriedly brought onto official reimbursement rolls to justify protection.
+
+Against that, the much-drilled mutual-aid protocol finally paid out. Cross-border fuel and transformer sharing, rehearsed for two years, moved without a new vote in February and March, and manual restoration drills kept lights on in districts that would otherwise have gone dark. Engineers credited the drills; mayors credited neighbours, not Brussels.
+
+The dividend showcase survived, but barely. Waiting-time gains held where sites were guarded, slipped where they were not. Vandalism faded by June, replaced by sullen tolerance. Brussels had claimed a European success, and kept it running on European soil — fenced in, metered from outside, guarded from within.

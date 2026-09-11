@@ -1,0 +1,10 @@
+### Restoration and rupture
+January brought the attack everyone had warned about. A wave of machine-written intrusion tools swept through municipal administrations, clinics and a compromised software supplier used by several port operators. Screens went dark in town halls from the Rhineland to Silesia, appointment systems failed, and backup restores took weeks. Technicians spoke openly of being outpaced; investigators said tracing the origin would take months.
+
+Brussels answered with what it could afford. Emergency repair teams drawn from existing response units were dispatched to the worst-hit towns and hospitals, with shared backups and fast-track procurement for clean hardware. The effort was visible and welcomed locally, but thin: crews moved from one backlog to the next, and several regions complained they saw a van for a day and a ticket queue afterwards.
+
+The political damage ran deeper than the technical one. In the middle of the cleanup, a member state government announced its own side arrangement for privileged model access and cloud capacity with a foreign hyperscaler, on terms that undercut the common bargaining line agreed with Dutch, Japanese and Korean partners. The capital called it pragmatism; Paris, The Hague and Warsaw called it a break in solidarity. Attempts to fold the deal back into a joint offer failed, and the threat to withhold emergency aid only hardened the dispute.
+
+Meanwhile the new American administration took office pledging to treat advanced models as a national asset, with access for foreigners granted by tier and subject to tighter export review. European requests for assured computing capacity were acknowledged and deferred.
+
+The one delivery was bureaucratic: the long-negotiated technology sovereignty package formally closed, unlocking permitting zones and investment frameworks for the five reserved factory sites. No construction started, no private money moved, but the legal ground was finally settled. With budgets exhausted and cohesion frayed, the public mood turned openly hostile, with polls showing artificial intelligence blamed for both vulnerability and dependence.

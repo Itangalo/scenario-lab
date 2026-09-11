@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: EU Wartime Neutrality Shelter and Lifeline Continuity Operation −2, EU Defensive Breakthrough Rapid Hardening Deployment −2, EU Bio-Uplift Containment and Trusted Care Shield −2, priority −0 (capital 11 below 20, priority without effect or cost) = −6
+PROPOSAL BONUS: EU Bio-Uplift Containment and Trusted Care Shield (cat 6, small) +3 — bio_uplift_findings landed this turn and this answers synthesis-to-bench path directly
+LEGITIMACY LENDS: capital 8, sentiment 13 -> +2
+SOVEREIGNTY: 11 last turn, no cat4 finish, no cat4 in flight +0, embodied_ai_deployment t12 −2, capability rose 2.5 −1 = 8

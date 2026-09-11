@@ -1,0 +1,5 @@
+July-December registries were restored by cross-border reserves; triage pilots cut backlogs, Transition Shield paid late and small; genome-model biosecurity debate, pooled sequencing push; EU long-life alloys a bright spot amid empty fabs and lag behind US self-tooling agents; blame softened as services improved.
+
+January brought US-China war hitting orbital links, cables and fabs — Atlantic landing station and southern fab power damaged as collateral. Brussels declared non-belligerency, dispersed backups; still faced targeting, insurance spikes and stalled deliveries, halls empty from supply cuts. Reserve teams shifted to wartime mutual aid to keep registries alive.
+
+Amid blackouts, foreign-made tailored cures for untreatable conditions arrived that EU doctors could query but not run. Commission pooled procurement and secured two licensed-production transfers; triage software held follow-ups, transition top-ups fast-tracked as war pay. By June shelters stocked, grid patched with domestic alloys, registries held; hiring frozen, sorting humanoids spread. Voters credited Brussels for lights and clinics but resented dependence on imported medicines.

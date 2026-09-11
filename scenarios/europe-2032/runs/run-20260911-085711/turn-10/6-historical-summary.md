@@ -1,0 +1,5 @@
+By end-2030 hospitals open but poorer, divided, grids re-segmented, Taipei quarantine/backup blocked, no common supply line.
+
+H1 2031: deliberate release of modified pathogen designed with open weights spread across two border regions. Weeks-long containment via EU health security apparatus and disease control centre; existing paper-ward surge repurposed to move infectious casualties. No new measure tabled, capital <20. Overtime/transferred staff held lines open amid exhaustion, chart errors plus infection risk; autumn backups prevented cascade but not spread. No new AI law, frontier oversight conceded out of reach; factory funds frozen, shipments quarantined, patch teams kept off care. Bio-surge upgrade delayed.
+
+Labs announced newest systems no longer reason in readable words — inspection lost, only black-box/probe audits remained. Triage/tracing leaned on uninspectable models while design weights stayed downloadable; trust eroded further. By June transmission slowing, stocks partly replenished. Union credited for holding hospitals through live bio-emergency, but public darker: harm arrived, next prevention looks blinder.

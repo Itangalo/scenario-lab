@@ -1,0 +1,7 @@
+Second windless freeze in Nov 2030 caused load-shedding in two western states; EU continuity programme completed with triage protecting homes/hospitals, curtailing large compute; power stable-expensive by Dec 2030, perceived as routine rationing and dictated dependence.
+
+Spring 2031 brought dual shock: automated model-built intrusion via compromised update hit municipal systems and hospital suppliers, forcing paper return; attribution open. Weeks earlier US lab showed verifiable jump in code/intrusion capability, immediately copied. Entry-level routine coding/analysis/support jobs did not return, replaced by supervised systems; general wave forecasts pushed.
+
+Brussels winter islanding kits and curtailment order held power/water sequence during ransomware wave — homes/hospitals lit, computing shed. Washington tightened high-end chip rationing even to allies citing offensive leap; European procurement delayed. Near-frontier open weights, weeks behind, filled gap on municipal laptops, unrecallable.
+
+Commission launched wage-bridge and retraining for displaced tier-one workers, funded partly by levy on automating employers via social funds/job centres; business opposed as efficiency tax, mayors/unions lukewarm. Enrolment opened, payments lagged; public anger over bills and lost first jobs overshadowed essentials-kept claim.

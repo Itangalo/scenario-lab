@@ -1,0 +1,10 @@
+### The jump and the machines
+Winter turned on two announcements weeks apart. An American lab demonstrated a new system that made last year's roadmaps look dated — longer planning, stranger tool use, agents that kept working while reviewers slept. Days later, commercial humanoids went on sale at scale, mostly built in China, running American control software.
+
+Brussels felt both at once. The two data-centre sites kept under grid priority stayed on track, and the emergency bio-monitoring and stockpile network formally closed its build phase. Hospitals held, cities kept sequencing coverage. That was the success the Commission claimed.
+
+Elsewhere the shock landed harder. The new robots arrived in ports at prices European machine-builders could not match. Logistics firms ordered them; unions warned of a second displacement wave with no retraining interval. Small-town mayors, still angry over boil-water notices and withdrawn insurance, saw the Trust Pact money arrive slowly — wage bridges paid where staff could be found, drills held where volunteers showed up, but many councils said the help did not cover the risk.
+
+The American offer helped and hurt. The new administration in Washington took office promising published terms for allied access, joint testing and aligned export rules. EU negotiators flew out early, seeking researcher access and guaranteed tiers tied to keeping the home build alive. Talks were cordial, terms remained draft, and access did not yet flow. At home, relief that Washington would share quietly eroded urgency to fund domestic capacity.
+
+By June, the Union was more protected against the last crisis and more exposed to the next one: bio-defences exercised, but frontier understanding far behind the new systems, and industrial towns bracing for machines they neither built nor controlled.

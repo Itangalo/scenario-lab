@@ -1,0 +1,11 @@
+### War over the uncatchable lead
+Winter turned on a strike no one in Brussels had voted for. Washington and Beijing began shooting at each other after months of warnings that the other was near an advantage that could never be caught. Within weeks fabrication plants, undersea cables, satellite links and data centres were declared military targets. Some of them were in Europe or beside it. A cable landing in the Atlantic went dark for days; a North Sea interconnect was rerouted under naval escort.
+
+The Union was not asked whether it wished to be involved. The Council declared European territory, landing stations and the two permitted gigafactory plots non-belligerent and offered both sides deconfliction and mutual test recognition in exchange for no targeting and continued licensed supply. The offer bought communiqués, not guarantees. Therapy doses, scheduling software and the top models behind treatment plans stayed on foreign licences, now queued behind wartime requisitions and billed by the hour.
+
+### Fires at home, empty desks
+At home the night fires spread. What had been attacks on fenced robot pilots moved to grid-connection works for the gigafactories, halting construction. The Energy Council took emergency control, posted guards and sent civil-protection repair teams, but made no new siting promise while fires were still being lit. Health, power and telecom operators isolated themselves from spillover cyber operations and rerouted around damaged cables; services degraded rather than stopped.
+
+The jobs data hardened into a social fact. Law, accountancy, software, customer operations and administration stopped replacing entry-level leavers. Graduates who had hoped the new Guarantee would bridge them into work found bridge pay slow and reopenings in ports and warehouses frozen by blockades and war disruption. Mayors who kept bans on logistics machines now faced both pickets and patients asking why an appointment was guaranteed but a job interview was not.
+
+Amid this, a new openly released model, only months behind the closed frontier, was downloaded hundreds of thousands of times in a week. What it could do cannot be recalled. Frontier laboratories, running largely unattended, pushed again.

@@ -1,0 +1,11 @@
+Late 2030 saw AI-written assaults on appointments, dispatch and ports with delayed attribution, forcing clinics and town halls to paper and queues.
+
+In January, US providers cut EU access to their leading AI system with days' notice, crippling hospitals, ministries and logistics; simultaneously a machine-assisted modified pathogen was released, requiring prolonged containment. Self-rewriting intrusion toolkits spread, forcing renewed paper triage.
+
+Brussels held emergency footing without new vote: embedded EU cyber repair cell stayed on under health-emergency mandates, nursing offline backups and workarounds; sequencing/wastewater sentinels shifted to case-finding; staff paid overtime. Ministries ordered onto European-hosted open models and older licensed fallback systems, with reprogrammed digital funds paying for EU-soil inference. Municipal backup kits completed in spring kept services degrading not stopping.
+
+July-December 2031 brought twin outside shocks: US-Chinese leap in machine-written code and automated intrusion, with self-rewriting break-in tools hitting municipal IT, and a limited US-China pact on securing model weights and restricting bio-design tools with thin verification. Brussels was excluded, receiving briefings not consultation despite seeking observer access for hospitals and grid operators.
+
+Inside the Union, strategy remained continuity not building: winter pathogen containment dragged through autumn; cyber teams kept dispatch/appointments on offline/paper systems; hospitals/ministries stayed on EU-hosted open/older models; only funded Fallback Care and Bio-Response Corps sustained wards via overtime without expansion.
+
+No new Gigafactory money; sites kept warm, grid works crept, factory/retaliation votes frozen. US lithography curbs held with Brussels solidarity aid. Public mood collapsed further on outage fatigue, ward closures, engineered-disease fear, dependence humiliation, now compounded by great-power deal over European heads; mayors credited crews but not the Union, leaving political room near zero.

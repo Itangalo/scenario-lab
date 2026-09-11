@@ -1,0 +1,10 @@
+### A cure you can book, on machines you cannot buy
+The spring belonged to the hospitals. Tailored cancer therapies and rapid diagnostics that had been press releases in January were in ordinary wards by May, procured by HERA and run, Brussels insisted, on European-hosted systems with the new self-patching software pushed first to health networks. Queues shortened in certified centres, and for the first time in two years evening news carried patients thanking a machine.
+
+The delivery was real but narrow. Only certified hospitals could take the new pathways; municipal clinics waited for upgrades that did not come. Doctors explained that the underlying models were foreign, open copies circulating freely online while the clinical-grade versions arrived under allied hosting quotas. Gratitude mixed with a familiar sting.
+
+Behind that, money left the sector. Venture valuations collapsed and several U.S. build-outs were cancelled outright. Two cloud-expansion arrangements European operators had counted on evaporated, freezing private rollout just as public demand spiked. Brussels spent no new instrument on the Strait buffers — reporting and pooled charters ticked over on old money — and Transition Guarantee cheques kept going out while graduate intake stayed frozen.
+
+The open release changed the policing debate. Downloaded hundreds of thousands of times in days, the weights could not be recalled, and ministers stopped talking about takedowns. ENISA instead pushed automated patching and swarm detection, which held in banks and large hospitals and visibly blunted a wave of intrusion attempts.
+
+Jobless graduates marched in Leuven, Lyon and Lodz, thin crowds but organized, with hand-painted signs about stolen entry jobs. Ministers pointed to the wards and asked for patience. Many voters, seeing a cure delivered but the infrastructure rented, gave it — warily.

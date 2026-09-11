@@ -1,0 +1,7 @@
+Through 2031 AI-tooled ransomware, poisoned updates, extortion sweeps, a modified-pathogen release, and a runaway contractor agent split isolated/paper-capable districts recovering in hours from others blacked out for days, entrenching the enforcement divide.
+
+Autumn brought another large automated assault on appointment/payment systems with a tainted component; French-Dutch-German triage traded recovery grants for proof of isolation, human sign-off and offline mode, with reserved EuroHPC capacity carrying emergency load, while attribution lagged months behind machine-written tools.
+
+Hospital federations formalised refusal to reconnect diagnostic assistants until EU liability, compensation and certified offline fallback are law; testing froze, Brussels opened talks on a capped European backstop from reprogrammed health funds, but wards stayed dark through December. One capital broke ranks with its own outside infrastructure deal, weakening conditionality.
+
+Brussels responded by procedure — paid continuity, frozen reconnection, aid conditioned on isolation and kill-switches — avoiding cascade but admitting improvisation. Meanwhile offices, law and newsrooms posted junior-led gains without job cuts and rehired, removing urgency for spending even as Taiwan Strait tensions raised shipping insurance and Rotterdam, Antwerp, Lodz warehouses automated while care stayed manual.

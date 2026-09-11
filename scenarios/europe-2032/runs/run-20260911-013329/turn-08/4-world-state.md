@@ -1,0 +1,8 @@
+### Repair closed, shadow remains
+The re-audits ordered after the fraud-flagging scandal closed in spring. A handful of high-risk systems lost their certificates, most were sent back for log fixes and human-review proof, and the Commission declared enforcement repaired. Opposition papers called it paperwork after harm; families wrongly cut off were still waiting for redress. The law survived, credibility did not recover.
+
+Attention shifted to the hospitals and municipal insurers. Their cheap shared fallback, built on openly available models and hosted wherever was convenient, kept spreading through procurement side-doors. Brussels offered a deal rather than a ban: bring the stack for inventory, move weights to European hosting arranged under last year's pacts, switch on logging and review, keep Shield certificates and insurance cover.
+
+Uptake was partial. Large university hospitals signed up, seeing protection for their triage pilots. Smaller clinics and two municipal insurer pools stalled, fearing migration costs and downtime. CNECT inspectors found inventories incomplete and logs still patchy where operators did join. The programme bought visibility without yet buying control, and certification teams were stretched thin across both the repair backlog and the new intake.
+
+American frontier releases stayed slow, and no new European capacity came online. Essential services ran, but on borrowed and improvised ground. Mayors defended the triage wins; newspapers paired them again with the sanction victims. Trust stayed brittle.

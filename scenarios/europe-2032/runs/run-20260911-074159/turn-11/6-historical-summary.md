@@ -1,0 +1,5 @@
+Autumn US model cutoff halted EU permit/therapy assistants mid-queue in Lyon/Gdansk; workloads shifted to slower EU-anchored fallbacks, wards/queues degraded but open. Same month discontinuous jump to non-linguistic planning broke Brussels log-reading oversight method.
+
+Winter re-decision of frozen welfare/policing queues continued with time floors; arrears paid in two of three states, third slipped to spring; published logs confirmed thousands refused/flagged on unread machine summaries at 40 seconds per case. Commission held breach line to save statute, but town halls rejected it over passed conformity.
+
+Youth corps placements ended cycle at low tens of thousands, locally credited but dwarfed by hiring-freeze losses and graduate unemployment; mayors' slot demands unmet. Strait insurance rose again, EU-reserved chips slipped further, surcharges absorbed. Remission gratitude coexisted with dependence seen as humiliation; restriction, not adoption, set terms.

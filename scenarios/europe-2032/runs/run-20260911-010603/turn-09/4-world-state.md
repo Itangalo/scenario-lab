@@ -1,0 +1,11 @@
+### The jump in the machines that write code
+Autumn brought a sharp, narrow leap. New models released outside Europe wrote, debugged and broke software at a pace defenders had not planned for. General assistants did not suddenly get wiser, but anyone assembling an intrusion kit did. Within weeks municipal helpdesks saw exploits recompiled overnight, poisoned libraries repackaged, ransom notes generated in flawless local language.
+
+Hospitals and town halls were hit again, harder. Paper fallbacks returned in several regions. Yet the lights stayed on. The continuity doctrine finished in winter — isolated backups, spare licences, automatic patching — was now routine, and the new surge cell pushed it first to the worst-hit cities. Payouts and reinsurance were tied to live telemetry, which forced laggard contractors to patch. Services degraded, queues grew, but cascade was avoided. Officials claimed, with more evidence than before, that preparation had held.
+
+### The line in The Hague
+Washington kept pressing for a Dutch cutoff of servicing for older chip tools sold to China. Brussels held its shield line: no cut beyond agreed lists without Council sign-off, a joint spares pool with Japanese and Korean suppliers activated, access to recovery money and computer-hall queues linked to staying anchored.
+
+It half-worked. The Hague signed the joint procedure and welcomed the cover, but continued to dribble out licences under American pressure while telling Brussels alignment was still being negotiated. Servicing for older machines was not strangled outright, but insurers raised Taiwan-risk premiums and Dutch executives spoke openly of being caught between allies.
+
+Inside the Union, public buyers stayed on European-run systems in the first powered halls, though queues and grid priority remained political. The member state with its outside hyperscaler deal stayed out, and threats over funds deepened the rift. Warehouse robots spread further on foreign software, splitting work between tasks auditors could verify and those they could not.

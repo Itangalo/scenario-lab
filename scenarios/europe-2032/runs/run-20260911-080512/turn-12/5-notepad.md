@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: EU Livelihood Continuity and Flexicurity Transition Fund −2, EU Essential Services Continuity and Open-Weight Fallback −2 = −4 + priority has no effect and no cost as capital below 20
+PROPOSAL BONUS: EU Essential Services Continuity and Open-Weight Fallback (cat 6, small) +4 — eu_frontier_access_denied fired this turn and this answers it directly, with persistent intruder as secondary
+LEGITIMACY LENDS: capital 12, sentiment 15 -> +2 (capped below sentiment)
+SOVEREIGNTY: 12 last turn, no cat 4 finish, no cat 4 in flight, eu_frontier_access_denied t12 −2 (larger of two capacity-takeaway events, supply_chain_coercion also fired), capability rose 1.2 −0 = 10

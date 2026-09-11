@@ -1,0 +1,5 @@
+By mid-2032 still no new cutoff/runaway. Winter cordons closed as standing system in spring: triage separation, reserve beds, joint procurement funded via health ministries; screened dispatch restored in two hardest-hit regions, trolley waits and paper logs down, though chart errors and unverifiable triage reasoning persisted. Brussels credible as care provider — holding, not healed.
+
+Commission launched jobs-and-trust compact: wage insurance, retraining vouchers, care-assistant posts, citizen charters on automated support, union co-management with real pilot uptake — but rollout stalled elsewhere on slow funds, lagging hiring, and opposition to data-centre/hospital siting.
+
+Supply still divided: push to re-paper breakaway bilateral hyperscaler deal onto logged routing failed; defecting state kept cheaper minimal-logging terms. Middle-power framework on aligned export licences survived meetings but delivered no machines; strait exercises kept Taipei shipments, lithography spares/chemicals tight.

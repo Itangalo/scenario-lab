@@ -1,0 +1,5 @@
+Spring breakthroughs saw Franco-German tailored cancer therapies enter hospital use in Lyon/Gdansk and a Delft-Aachen battery-simulation advance, both on US models/EU clouds, filling waiting lists.
+
+Overshadowed by welfare-fraud scoring scandal in three states: tens of thousands wrongly cut, caseworkers rubber-stamping, audits ignored. Brussels froze system, ordered human re-decisions and back-pay as high-risk breach, but redress slow. Press backlash branded oversight law a paper shield; trust in public automation fell further.
+
+Placement corps added thousands to care, permit and power posts, keeping clinics open under guard, but graduate hiring still frozen, job boards dark. Strait surcharges persisted, absorbed from stocks. Evaluation checklists obsolete again, human review nominal, fenced-site sabotage routine.

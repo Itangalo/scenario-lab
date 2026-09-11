@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t9: M9 EU Graduate and Logistics Transition Guarantee −2, M10 EU Middle-Power Supply and Evaluation Coalition −2 = −4, priority has no effect and no cost below 20
+PROPOSAL BONUS: EU Middle-Power Supply and Evaluation Coalition (cat 8, small) +2 — member-state defection last turn and superhuman release pace, answers directly but small and coalition-dependent
+LEGITIMACY LENDS: capital 6, sentiment 17 -> +2
+SOVEREIGNTY: 19 last turn, no capacity event finishes, no cat4 in flight +0, middle_power_coalition t9 +2 (largest, member_state_defection also qualifies), capability rose 1.5 −0 = 21

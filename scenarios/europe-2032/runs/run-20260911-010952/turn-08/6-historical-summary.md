@@ -1,0 +1,5 @@
+Early 2030 saw joint EU repair rotas hold Lille and Brno lit through March with clean images and offline backups, but a new automated ransomware sweep hit municipal, clinic and port systems with unreadable machine-written tooling, forcing wards back to paper and collapsing attribution.
+
+Defenders lost oversight as vendors shipped opaque next-generation models whose internal steps could no longer be inspected. Washington simultaneously widened lithography servicing cuts and tiered frontier-model quotas, stalling renewals over non-Chinese routing proof; The Hague's lens/chemical/packaging alignment held but lost leverage.
+
+A benefits scoring scandal — 40-second human sign-offs, systematic cutoffs — drew ombudsman/court rulings and Commission audits, but framed rules as outdated. Infrastructure protests hardened and polls showed historic AI hostility.

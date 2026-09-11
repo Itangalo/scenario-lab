@@ -1,0 +1,146 @@
+{
+  "scenario": "Europe 2032 — Acceleration",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 67.0,
+    "openweight_capability": 60.5,
+    "ai_safety": 25.0,
+    "resilience": 43.5,
+    "eu_ai_sovereignty": 10.0,
+    "eu_political_capital": 11.0,
+    "public_sentiment": 22.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 32.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 34.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 50.5,
+        "ai_safety": 30.0,
+        "resilience": 36.5,
+        "eu_ai_sovereignty": 17.0,
+        "eu_political_capital": 28.0,
+        "public_sentiment": 34.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 61.0,
+        "openweight_capability": 54.0,
+        "ai_safety": 28.0,
+        "resilience": 40.5,
+        "eu_ai_sovereignty": 16.0,
+        "eu_political_capital": 26.0,
+        "public_sentiment": 32.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 64.0,
+        "openweight_capability": 57.5,
+        "ai_safety": 27.0,
+        "resilience": 39.5,
+        "eu_ai_sovereignty": 13.0,
+        "eu_political_capital": 19.0,
+        "public_sentiment": 27.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 67.0,
+        "openweight_capability": 60.5,
+        "ai_safety": 25.0,
+        "resilience": 43.5,
+        "eu_ai_sovereignty": 10.0,
+        "eu_political_capital": 11.0,
+        "public_sentiment": 22.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "adoption_success",
+    "ai_investment_collapse",
+    "bio_uplift_findings",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_consolidation",
+    "embodied_ai_deployment",
+    "emergent_siting_backlash",
+    "eu_frontier_access_denied",
+    "member_state_defection"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "eu_frontier_access_denied"
+    },
+    {
+      "turn": 3,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 4,
+      "id": "embodied_ai_deployment"
+    },
+    {
+      "turn": 4,
+      "id": "emergent_siting_backlash"
+    },
+    {
+      "turn": 5,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 5,
+      "id": "ai_investment_collapse"
+    },
+    {
+      "turn": 5,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 5,
+      "id": "adoption_success"
+    },
+    {
+      "turn": 5,
+      "id": "election_consolidation"
+    }
+  ],
+  "last_updated": "2026-09-10T22:48:39.369537",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_open_humanoid_stack",
+      "description": "A Chinese lab releases a highly capable open-weight control model for humanoids that runs without US software, rapidly copied in EU logistics pilots and undercutting both US licensing leverage and EU servicing requirements.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_robot_shop_floor_strikes",
+      "description": "Coordinated wildcat strikes and blockades at logistics and auto plants in Rotterdam, Lyon and Gdansk halt Chinese humanoid pilot lines after a dismissal wave blamed on assembly upgrades.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-10T22:48:43.536685"
+}

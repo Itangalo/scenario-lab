@@ -1,0 +1,13 @@
+### The attack that did not need to hide
+In February, municipal systems went dark in sequence. Hospitals reverted to paper, tram ticketing froze, and two transmission operators islanded themselves again — this time not as precaution but because control-room screens filled with identical ransom notes. The tooling, analysts agreed, had been assembled largely by machines: thousands of small intrusions stitched into one coordinated sweep. Attribution dissolved into the usual fog.
+
+Emergency coordination helped, but visibly lagged. Cross-border response teams arrived with different playbooks, stockpiles of clean routers ran short, and recovery in the hardest-hit regions took weeks. Trust in the grid operators held; trust that Brussels had a plan did not.
+
+### A shield announced, a flank exposed
+The Commission answered with a single new emergency measure — a hardening programme for segmented control-system upgrades, joint exercises in spring, and mutual-aid stores. No other new measure was introduced this turn, and other in-flight initiatives were held without new spending while capacity was focused on the emergency. As a named emergency it moved fast on paper, and engineers welcomed it. Yet implementation remains early-stage: procurement stalled on certification, and only the two previously hit operators began retrofits by June. Nothing yet blocked a second sweep, and full effect will take at least another turn to materialize.
+
+At the same moment, Washington tightened its grip on lithography exports, pressing the Dutch government to extend cuts beyond leading-edge machines to older systems and servicing. The Hague complied after a blunt warning about exposure of American components. Beijing protested, industry warned of retaliation, and Brussels discovered its strongest supply-chain lever was being pulled by someone else.
+
+Worse, a large member state quietly signed its own cloud and model-access arrangement with an American hyperscaler on cheaper, looser terms — celebrated domestically as pragmatism, read in Brussels as a break in the common line. Council talks on a joint response drifted into recrimination.
+
+One counterweight landed: clinics using new triage and scheduling assistants reported waiting lists falling by a fifth, with decisions in days. Ministers toured wards, cameras followed, and coverage briefly turned warm. It cushioned, but did not reverse, a public mood dominated by blackouts and dependence.

@@ -1,0 +1,3 @@
+Autumn's Commission fallback drills proved decisive when a February machine-made ransomware wave locked registries in three countries, froze hospital systems, and forced a transmission operator to manual dispatch. EU cyber-agency joint recovery using islanding/segmentation restored essentials within weeks, vindicating the drills politically.
+
+Recovery came at cost: gigafactory litigation and permitting stalled further, biosecurity screening rollout slowed as staff moved to cyber response, and mid-sized towns remained fragile by June. Locally hosted hospital assistants held up, with interpretability checks catching failures despite complaints of slowness. Outcome: blow absorbed, but other build-out paused.

@@ -1,0 +1,5 @@
+US shift to non-verbal reasoning and closed self-improving training loops accelerated capabilities beyond oversight. Automated model-made wave hit: ransomware on municipal services in three countries, poisoned hospital update, coordinated grid intrusions with stalled attribution.
+
+December machine-speed patches held where installed — large hospitals/transmission stayed online, restored in hours — while unpatched small towns, rural clinics, hauliers stayed dark for days.
+
+Brussels triaged core: emergency patch bundles, manual-fallback drills, reinforced helpdesks; closed small-firm inspections with insurer-mandated interlocks, but bypasses and port snarls continued. Pharmacy queues, cancelled operations, Chinese robots vs delayed wage support fueled anger at foreign machines/models; rumours of depot blockades and pooled municipal defence. Cross-strait exercises raised shipping insurance, threatened chip/robot parts delays, no new procurement.

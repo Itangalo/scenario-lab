@@ -1,0 +1,11 @@
+### Cut Off
+In autumn the notices arrived without explanation. Hospital planners in Lyon, port operators in Rotterdam, ministry IT desks in Milan found their keys to the leading foreign model suspended. Triage assistants froze mid-queue, sequencing pipelines stalled, customs paperwork piled. Washington spoke of tightened licences; Beijing tightened its own. Brussels called it a cutoff and told mayors to switch to what could run at home.
+
+The switch was ragged. The new continuity operation pinned civil registries to local servers and sent joint-command crews with a fast automated patching tool that closed one class of intrusion almost as quickly as it appeared. Where crews arrived, municipal payrolls came back and grid libraries held. Where they did not, clinics ran on paper for weeks and therapy verification queues lengthened. The shelter built two years earlier kept lights on, but slowly.
+
+### Smarter, Cheaper, Angrier
+The same half-year brought a sharp jump in frontier capability, demonstrated abroad and immediately priced into every deployment timeline. Capital, meanwhile, fled the sector: valuations collapsed, foreign build-outs Europe had counted on were cancelled, and private importers of cheap logistics machines found their American control software rationed.
+
+In the docks the machines kept coming. Dexterous warehouse units spread beyond Rotterdam and Piraeus, and hiring freezes hardened into outright losses. Entry posts in clerical work, customer operations, accountancy and junior software were not refilled. Unions called it a double lock — foreign hands and foreign minds — and extended income payments did not quiet the charge that Europe paid to stay non-belligerent.
+
+A contested genome study claiming a viable human-infecting design with model help circulated among biosecurity specialists, and EU-hosted checks caught more tainted diagnostic tools. A European materials result made headlines in laboratories but barely reached evening news. Gratitude for crews who restored systems mixed with anger that care, power and work still needed permission that no longer came.

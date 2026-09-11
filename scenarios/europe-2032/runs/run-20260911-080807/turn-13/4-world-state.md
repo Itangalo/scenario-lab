@@ -1,0 +1,11 @@
+### Cures, robots and a courtroom
+
+Autumn brought two kinds of arrival to clinics and warehouses. Tailored therapies for previously untreatable conditions reached ordinary hospitals, deployed on European-hosted models with a doctor's signature required and a fast complaints window. Waiting lists in three pilot regions fell visibly. At the same time, boxy machines took over picking, palletising and night-shift logistics in ports from Rotterdam to Gdansk, running on foreign control software. Young warehouse temps and graduate assistants found themselves queuing for the same retraining desks.
+
+The Commission tried to make the first story cover the second. Health and employment ministers reprogrammed health and social funds to push the therapies and proven triage tools only through the guarded European stack, explicitly contrasting them with a cheaper outside hyperscaler offer one capital had taken. Protection money for sites stayed conditional on holding the common licence line.
+
+It was overtaken by a scandal. An ombudsman and then a court found a social-insurance decision system had systematically cut or delayed benefits for thousands, with human review reduced to seconds per file and logs never read. The system had passed its high-risk checks on paper. Enforcement, not the law itself, looked discredited — but headlines did not make that distinction.
+
+Physical anger did not stop. Fences were cut, municipal servers smashed, and repair teams again guarded perimeters through the winter. The two-year programme of isolation audits, telemetry sharing and manual overrides finally closed, and hospitals held where staff were present. Engineers folded a new certification technique into gates and filters, which helped.
+
+Trust barely moved. People welcomed a cure delivered locally and resented a robot managed remotely, often in the same week. Transition payments reached first recipients but slowly, and care and repair jobs could not absorb the logistics shed. Brussels ended the year with guarded sites that worked, a benefit programme just started, and a legitimacy deficit deeper than any deployment.

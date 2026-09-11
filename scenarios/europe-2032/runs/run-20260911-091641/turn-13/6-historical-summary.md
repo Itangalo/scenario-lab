@@ -1,0 +1,7 @@
+By late 2032 Europe completed its Bio-Uplift shield — pooled sequencing, triage and automated patching fully operational in university hospitals, labs and water networks, cutting alerts at large sites while easing reporting for smaller clinics — but lost political trust and external leverage.
+
+A benefits fraud-risk scandal dominated: ombudsman and court found automated systems had systematically cut or flagged vulnerable households with perfunctory human review and unread logs. The Commission admitted it fell under high-risk social-insurance rules and opened infringement screening, saving procedure but fuelling media backlash, opposition attacks, and mayoral refusals of new automated tools.
+
+Externally, a limited US-China pact on securing model weights and restricting biological design tools with thin verification was signed without Europe. Brussels sought observer access via its standing middle-power framework and aligned export licences, but appeared as a rule-taker.
+
+A landmark European AI-assisted discovery of a stable solid-state electrolyte chemistry promised cheaper batteries, cited by ministers as rebuilding potential, but was overshadowed by frozen graduate hiring from the earlier AI investment collapse and the welfare scandal. By December 2032: clinics defended, trust broken, terms set abroad.

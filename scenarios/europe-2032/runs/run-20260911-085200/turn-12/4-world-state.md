@@ -1,0 +1,12 @@
+### A seat at someone else's table
+Through spring, no resurgence has been detected in the monitored wards. The paper wards, isolation beds and cross-border patient transfers held through spring, and health ministries began handing cordon routines to regular hospital budgets. Retraining cheques under the income bridge kept flowing to displaced municipal and care staff, enough to quiet walkouts in the two worst-hit states though not to end them.
+
+Attention shifted outward. Washington and Beijing announced a limited risk pact — weights security, escalation guardrails, curbs on a class of biological design tools — with thin verification. Brussels was not at the drafting table. The Commission learned the text hours before publication, and the press noticed.
+
+The answer was a middle-power bargain attempted. Trade and foreign ministers pooled export-licence policy, lithography and chemicals leverage, and shared evaluation capacity with a group of supply-chain holders, seeking joint terms for compute access and a way into the great-power arrangement. In Geneva, an inquiry led by the world health body published sequencing and procurement evidence that the winter hospital agent had been assembled with openly available design tools. The delegation tabled mandatory screening for synthesis providers and made EU procurement conditional on screened supply.
+
+Results were partial and not yet binding. The coalition accepted the Union as a member and opened a channel to discuss adherence to the new pact, but no access quota, price, or verification role was committed, and no US or Chinese commitment to EU terms was secured. Screening vendors split: larger European providers signed on for funding, smaller and offshore ones stalled, delaying full implementation. At home, job-centre tours tied compensation to credibility abroad, while the solo hyperscaler contract remained outside common logging and reimbursement.
+
+Costs of the cordons and the bridge continued to weigh, offset only by the small credit for answering displacement strain. With exclusion from the pact dominating coverage and no binding win to show, standing at home did not rise.
+
+Care endured. Leverage did not yet follow, and sovereign standing and political capital were unchanged.

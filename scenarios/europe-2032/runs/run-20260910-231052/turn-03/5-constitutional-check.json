@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `eu_political_capital` decreased from 35.0 to 16.0, a drop of 19.0 points, which exceeds the maximum allowed single-turn change of 25 points in absolute value. While the cap allows up to 25-point moves, the Game Master's Notepad shows a sovereignty term of −15, a proposal bonus of +2, and a legitimacy lends term of +2, implying a net change of −11. However, the actual metric drop is −19, which is inconsistent with the accounted terms and suggests either unmodelled effects or an arithmetic error. More critically, no event or mechanism in the narrative or notepad justifies a loss of 19 points, especially without any catastrophic physical or political event narrated. The constraint on maximum movement (rule 9) is violated if the raw delta exceeds 25, but here the issue is internal inconsistency: the notepad explains only −11, yet the metric falls by −19. This implies either missing terms or an invalid unbounded drop. Given that political capital is a stock that can fall, but only within bounded movement and justified by named terms, the unexplained −8 discrepancy constitutes a violation of rule 9 (max 25-point move) and undermines the integrity of the accounting required by the constitutional modelling.\n- Modelling Choice 7 potentially violated: The drop in `eu_political_capital` (−19) is far larger than the drop in `eu_ai_sovereignty` (−2), which is acceptable in direction, but the magnitude of the political capital drop is so extreme it risks implying identity or feedback dominance not permitted by the constitution. However, this is secondary to the numerical violation above."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

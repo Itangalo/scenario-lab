@@ -1,0 +1,11 @@
+### Holding on
+January to June 2032 offered no recovery, only a slower kind of strain. The emergency apparatus stayed where it had been: health teams tracking the lingering modified pathogen through sequencing and wastewater, cyber repair crews embedded in town halls keeping appointments and dispatch on offline systems and paper, hospitals and ministries running on European-hosted open models and older licensed systems.
+
+The one funded line completed. The Fallback Care and Bio-Response Corps, built to keep wards staffed and to detect and contain biological releases, reached full operation. In communes where clinics had run on overtime for two years, rosters finally stabilized. Mayors noted the difference, even as they continued to blame Brussels for the dependence that made it necessary.
+
+### Assurance and machines from elsewhere
+A genuine advance in understanding deployed models arrived from the laboratories and spread quickly, because the labs wanted it too. European engineers folded the new interpretability checks into the hosted fallback stack and into incident reporting without a new vote. Systems became a little more predictable, failures a little easier to catch before harm.
+
+That gain was overshadowed by two outside shocks. Commercial robots arrived at scale in warehouses, ports and logistics — picking, sorting, palletising — built overwhelmingly abroad and run on foreign control models. European manufacturers who still led in parts of the industrial base found themselves buyers, not sellers, of the full system. At the same time, chip and model controls tightened again, with European buyers rationed alongside others under country tiers. Access that had been cut once in 2031 now narrowed further.
+
+No new building, retaliation or labour-transition vote was attempted. Sites for future compute plants were kept warm, grid works crept forward, briefings under the great-power weights pact were sought but remained briefings. Queues shortened in places where the care corps landed; humiliation over bought robots and rationed chips deepened everywhere else.

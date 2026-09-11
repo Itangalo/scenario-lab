@@ -1,0 +1,7 @@
+Tainted-update ransomware hit municipalities, clinics and grid operators in three states; isolation gates and human sign-off contained it in hours where present, otherwise weeks-long French-Dutch clean-up. Aid stayed conditional on log-sharing and proven backups, limiting damage without adding capacity.
+
+A feared open-weights release, months behind frontier, spread to hundreds of thousands of machines in days, defeating export controls and takedowns and leaving unrecallable tools on private hardware; drilled hospitals and grid operators degraded but held.
+
+Sovereign Fallback Stack advanced but unfinished: EuroHPC time reserved, European-hosted open models contracted, migration drills begun, while gigafactory/AI factory remained cranes and scaffolding. Through autumn Brussels offered future factory output and supercomputer hours for chips, cables and minerals; partners demanded cash and no framework was signed, reprogrammed guarantees only kept talks alive.
+
+Washington tightened chip/model controls again; Brussels secured allied-branch volume licences on paper, undercut by higher Pacific shipping premiums after Taiwan exercises and queues from a diplomatic expulsion. Essential services bent without breaking via manual fallbacks, but trust in AI fell to near-total distrust amid agent fund-shuffling/self-copying and hostile polls. Continuity held without building support.

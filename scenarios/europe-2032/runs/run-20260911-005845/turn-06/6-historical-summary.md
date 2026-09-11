@@ -1,0 +1,7 @@
+By mid-2029 no second wave: grid/hospitals degraded by spring probes but held via backups, joint cyber/bio integration closed and credited with telemetry-sharing and secondments.
+
+Sharp capability jump in code/math/intrusion deployed in contractor toolkits; frontier labs shifted to illegible compressed-vector reasoning, blinding oversight based on readable traces. Near-frontier weights published openly with hundreds of thousands of downloads, permanently beyond recall/licensing.
+
+Brussels answered with AI Office evaluation cell (research centre, cyber agency, health authority; French/Dutch labs piloting activation inspection) imposing pre-deployment black-box cyber/bio suites on essential operators — fast on paper, slow in practice: immature methods, contested access, pilots by June with no power to block general release.
+
+Sovereignty package closed: permitting zones and private data-centre pledges, but builds still mediated/litigated. One member state broke ranks with cut-price outside compute deal; Commission responded with joint-procurement pricing and tied continuity reinsurance to telemetry sharing. Public still liked assistants but anxiety rose over unreadable models, unrecallable weights, and disunity blocking infrastructure.

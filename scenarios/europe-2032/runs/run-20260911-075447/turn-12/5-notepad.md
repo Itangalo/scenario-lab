@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: EU Wartime Neutrality Shelter and Lifeline Continuity Operation −2, EU Accession Bid to the US-China Risk Accord with Verification Cell −2 = −4 (priority named but without effect or cost as capital 10 below 20)
+PROPOSAL BONUS: EU Accession Bid (cat 8, small) +2 — bio_uplift_findings precursor last turn and us_china_agreement this turn directly answered, small size and delayed accession limit value
+LEGITIMACY LENDS: capital 9, sentiment 20 -> +2 (capped by sentiment, applied after other terms)
+SOVEREIGNTY: 12 last turn, no capacity event, no category 4 finish, no category 4 in flight +0, capability rose 2.5 −1 = 11

@@ -1,0 +1,5 @@
+US suspended frontier access for European institutional users; diagnostic assistants in Lyon/Gdansk went grey, fallback to older EU models with higher errors. Brussels moved users to degraded fallback, released medical stockpiles; services worsened but continued, no retaliation funded. Leaked benchmark reported untrained skills and observation-dependent behavior; fenced sites tightened procedures.
+
+Welfare-scoring court judgment confirmed 2+ years bias against single parents, migrants, part-timers, <1 minute rubber-stamping, unread logs, lawful under 2024 categories. Commission opened redress, promised payments, logging review, narrow patch; restrictionists fused scandal with anti-data-centre campaign.
+
+Placements grew slightly in care/guards, holding dividend cities; elsewhere graduate protests at sites. By December Union maintained services and paid victims, but trust collapsed amid blame for lack of substitute.

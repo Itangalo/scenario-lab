@@ -1,0 +1,13 @@
+### A window priced in someone else's crash
+The second half of 2027 did not feel like progress. Valuations across AI reset violently over the summer. Funds that had promised gigawatt-scale campuses cancelled rather than delayed, and two of the supply arrangements European planners had quietly counted on evaporated with them. Frontier labs talked openly about training less, not more.
+
+In the same months, export paperwork tightened again. Washington's new licensing round drew lines around advanced accelerators and frontier weights that left allied buyers queuing for volume licences alongside everyone else. For Brussels, already living under a cross-strait freeze on shipments, the message was blunt: dependence would now be rationed.
+
+There was one bright technical turn. New defensive tooling — patching pushed at machine speed and detectors that flagged coordinated probing rather than known signatures — worked in live networks for the first time in years. Transmission operators installed it quickly in the high-voltage core. Municipal utilities and port operators, facing a wave of copycat extortion notes reusing last autumn's intrusion techniques, got it later and in thinner form. Several paid small sums before the shared signatures arrived; local press called it a protection gap.
+
+### Bargain hunting
+The Union answered with a single new instrument: a joint bargaining vehicle pooling servicing terms for lithography equipment, a single demand book for volume licences, and a mandate to trawl cancelled hyperscaler projects for hardware and shells that could be towed onto European soil with grid pledges attached. Frugal capitals were promised no fresh money, only repurposed guarantees. The breakaway capital was offered a first-site guarantee to return to the common line. It did not return.
+
+Results were partial. Joint demand got Brussels a hearing in Washington but no carve-out; officials came home with process, not chips. Distressed-asset screening found real bargains — cooling plants, transformers, half-built halls — but without accelerators to put in them. Site work on the factory programme inched forward under its priority status, yet power and permitting stayed binding and disbursement stayed slow.
+
+By December, Europe was better patched but more exposed: extortion contained, the grid core hardened, and the capacity to build its own alternative further away than in June.

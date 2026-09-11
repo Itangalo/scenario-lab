@@ -1,0 +1,11 @@
+### Keep the lights on
+Autumn 2031 brought another large automated assault. This time it came as poisoned updates and credential theft bundled with machine-written ransomware, sweeping appointment systems, municipal payment desks and two regional hospital groups. Districts that had installed isolation and kept paper-capable fallback flickered and recovered in hours. Others lost scheduling and billing for a week. Triage teams seconded from France, the Netherlands and Germany camped in the worst-hit town halls, trading recovery grants for attack telemetry and proof of a working offline mode.
+
+The fallback stack built for hospitals and ministries finally paid something visible. Reserved supercomputer time and European-hosted hardened models kept warm through the spring absorbed emergency workloads for a handful of administrations. It was partial — no full switch-over, testing frozen in several regions where hospital federations refused to reconnect diagnostic assistants until liability was clarified — but containment was faster than in the winter wave.
+
+### Biology, robots and a lab result
+Alongside the clean-up, health authorities quietly widened wastewater and clinical sequencing and asked synthesis providers to share screening references with trusted middle-power labs. The trigger was a contested genome-model paper claiming a non-expert could be guided toward a viable human-infecting design. Virologists argued over methods and over publication itself, but emergency planners treated the window as real.
+
+Warehouses changed faster than wards. Commercial picking, palletising and welding robots, largely Chinese hardware running American control models, moved from pilots to procurement across logistics hubs in Rotterdam, Antwerp and Lodz. Dockworkers and warehouse staff struck in October; evening news paired gleaming robot aisles with nurses on paper charts.
+
+A bright spot came from research: a European team using new verification tools published a materials-science result that specialists called a landmark, and a separate control result that made deployed-system behaviour more predictable was quickly picked up by labs. Neither restored trust. By December citizens saw services held together by improvisation, jobs visibly moving, and biology newly in play.

@@ -1,0 +1,5 @@
+By H2 2029 Europe remained cut off from US frontier models and excluded from a limited Washington-Beijing understanding on securing weights, restraining escalation and controlling bio-design tools.
+
+InvestAI Gigafactories completed only first phase: legal anchoring for backup sites cleared, prior funds flowing to grid/permitting, foundations poured but no new capacity online. Chip/energy supplier tour yielded no signed capacity. Emergency fallback for hospitals/utilities — EU-hosted open models plus paper-manual and common rogue-agent thresholds — became routine; services slower/error-prone but stable. No new frontier open release or leak; open capability flat.
+
+As sole new measure, High Representative mandated to seek third-party role offering supply-chain/verification for consultation and research access; US noncommittal, China requested papers, no gain granted. Offices kept junior-led productivity gains with no layoffs, easing jobs fear but stalling transformation narrative.

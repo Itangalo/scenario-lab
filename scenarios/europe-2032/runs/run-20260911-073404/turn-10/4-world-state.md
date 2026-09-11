@@ -1,0 +1,11 @@
+### War comes to the grid
+In February, American and Chinese strikes began trading against fabrication plants, cables, satellites and data centres. Brussels insists no one consulted it. It did not matter. A subsea cable landing in the Atlantic was cut, a North Sea interconnect went dark for days, and debris warnings forced a European satellite operator to shutter services. Replacement parts queued behind military requisitions in California and Shenzhen.
+
+The open frontier did not pause. A new freely downloadable system, only months behind the closed labs, spread to hundreds of thousands of machines in a week. Graduate hiring, already frozen, collapsed further: law, accountancy, software and back-office entry roles simply were not reposted. Clinics kept triage assistants running, but therapy scheduling slipped as billed compute was throttled.
+
+### Guarded repair
+The Union declared energy solidarity and civil protection, sending guarded repair teams to the two gigafactory grid connections and ordering power priority for hospitals and certified medical systems. Failover across borders kept lights and command networks alive, barely. The middle-power club became neutrality diplomacy — offering landing sites and cleanrooms as neutral ground in exchange for both belligerents sparing them, while begging pooled spares.
+
+It half-worked. Blackouts stayed rolling rather than general. Construction did not resume. Night arson spread from robot pilot fences to grid works, with blockades in Germany and Italy now openly cheered by mayors who once asked for reopenings. The bridge-pay guarantee paid some households, but take-up stalled as workers asked what job was being bridged to.
+
+The wayward capital that signed its own foreign pact stayed out, arguing its bilateral discount was the only supply still flowing. Finance ministers refused new money, forcing the shield to cannibalise existing envelopes. Frontier labs, some now under wartime orders, run unattended loops Brussels reads about days later.

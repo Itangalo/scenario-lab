@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t9: M9 EU State-to-State AI Access and Supply Defence −2, M10 EU Loss-of-Control Containment and Essential Continuity Regime −2 = −4 + priority has no effect and no cost as capital below 20
+PROPOSAL BONUS: EU Loss-of-Control Containment and Essential Continuity Regime (cat 6, small) +4 — catastrophic loss-of-control incident fired this turn and this answers it directly
+LEGITIMACY LENDS: capital 10, sentiment 12 -> +1, capped by sentiment arithmetic applied after other terms
+SOVEREIGNTY: 12 last turn, no capacity event, no cat4 finish, no cat4 in flight bonus, capability rose 3.0 −1 = 11

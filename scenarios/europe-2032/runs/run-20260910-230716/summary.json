@@ -1,0 +1,157 @@
+{
+  "scenario": "Europe 2032 — Plateau",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 59.0,
+    "openweight_capability": 55.8,
+    "ai_safety": 24.0,
+    "resilience": 47.0,
+    "eu_ai_sovereignty": 18.0,
+    "eu_political_capital": 14.0,
+    "public_sentiment": 16.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 53.5,
+        "openweight_capability": 46.0,
+        "ai_safety": 32.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 41.0,
+        "public_sentiment": 39.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 54.5,
+        "openweight_capability": 49.5,
+        "ai_safety": 30.0,
+        "resilience": 36.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 28.0,
+        "public_sentiment": 32.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 56.0,
+        "openweight_capability": 52.0,
+        "ai_safety": 28.0,
+        "resilience": 35.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 20.0,
+        "public_sentiment": 29.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 57.5,
+        "openweight_capability": 54.0,
+        "ai_safety": 26.0,
+        "resilience": 39.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 18.0,
+        "public_sentiment": 20.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 59.0,
+        "openweight_capability": 55.8,
+        "ai_safety": 24.0,
+        "resilience": 47.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 14.0,
+        "public_sentiment": 16.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "adoption_success",
+    "ai_investment_collapse",
+    "cyber_defence_breakthrough",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_consolidation",
+    "emergent_synthetic_fraud_wave",
+    "eu_frontier_access_denied",
+    "export_control_escalation",
+    "knowledge_work_augmented",
+    "taiwan_tension_rise"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 2,
+      "id": "ai_investment_collapse"
+    },
+    {
+      "turn": 2,
+      "id": "cyber_defence_breakthrough"
+    },
+    {
+      "turn": 2,
+      "id": "knowledge_work_augmented"
+    },
+    {
+      "turn": 2,
+      "id": "eu_frontier_access_denied"
+    },
+    {
+      "turn": 2,
+      "id": "adoption_success"
+    },
+    {
+      "turn": 3,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 3,
+      "id": "knowledge_work_augmented"
+    },
+    {
+      "turn": 3,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 4,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 4,
+      "id": "eu_frontier_access_denied"
+    },
+    {
+      "turn": 4,
+      "id": "emergent_synthetic_fraud_wave"
+    },
+    {
+      "turn": 5,
+      "id": "election_consolidation"
+    }
+  ],
+  "last_updated": "2026-09-10T23:09:56.168625",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_fraud_insurance_retreat",
+      "description": "Insurers across several member states temporarily exclude AI-enabled fraud and system-outage losses from standard business policies after the voice-clone wave, forcing SMEs and municipalities to self-insure.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-10T23:09:59.429564"
+}

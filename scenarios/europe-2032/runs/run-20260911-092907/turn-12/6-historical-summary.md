@@ -1,0 +1,5 @@
+Brussels' EU triage tools held but US model cutoff darkened wards/ministries; showcase clinics on EU stack kept waits stable, others fell to paper. Black-start/manual sharing declared operational and moved fuel/transformers without vote; Commission claimed foresight, opposition called it managed dependence.
+
+Dividend showcase closed in spring: vouchers/demo wards popular, brief lift, but widened thinly supported sites to defend. Months of break-ins culminated in coordinated arson on unguarded generator compounds, transformer stores, stalled data-centre shell, battery depots — one reserve gutted, one saved by watchman; police unconfirmed, ministries treated as coordinated.
+
+Response was guards not builds: JHA extended police roster to depots/stores, funded fire-watch, put off-books pools on official reimbursement. Grey-market rerouted chips/logins refused centrally but brokers kept calling. Private compute stayed cancelled, repairs lagged, quota-resale rumours unconfirmed. Union still running by June but more brittle: lit where guarded, dark where not.

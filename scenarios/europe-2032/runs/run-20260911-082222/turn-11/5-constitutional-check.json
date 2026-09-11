@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Regulatory Constraint violated: The narrative describes operational use of the EU Joint Threat Response Accession (M12) producing real-world defensive effects (e.g., \"machine-speed warnings\", \"isolated and restored from locked backups within hours\") despite the Game Master's Notepad explicitly stating it has a charge of −2 and no effect due to low political capital. Metric rule 10 requires measures to accumulate charge over time before taking effect; a measure with negative charge cannot generate protective outcomes. The described benefits must not occur until the measure is active.\n- Economic Constraint violated: The resilience metric increased by +1.0 (from 60.0 to 61.0), which may be within bounds, but the increase is attributed to a measure (M12) that is not yet active. Since M12 is inactive (charge −2), its effects on resilience cannot materialize. Resilience growth must derive from other active policies or organic trends, not from an unimplemented measure.\n- Physical Constraint violated: The narrative implies that the EU-wide system now provides early warnings and rapid recovery capabilities as a functioning network (\"the geography of protection hardened\"), but no prior turn recorded completion of the necessary infrastructure build-out or activation milestones for M12. Infrastructure projects require minimum time lags (modelling choice #6); this turn’s narrative skips those steps and telegraphs full operational capability without justification."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

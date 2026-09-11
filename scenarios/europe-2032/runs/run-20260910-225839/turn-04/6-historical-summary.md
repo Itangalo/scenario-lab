@@ -1,0 +1,7 @@
+Through autumn into early 2028 the EU held services but lost trust. An automated model-assisted ransomware sweep hit municipalities, hospitals and a poisoned public-admin update while segmentation was half-done and firewalls backordered; DG ENER/ENISA-led triage, pooled EU firewall procurement and 50% telecom co-funding (no mandates) completed segmentation on worst-hit estates, but transmission relays stayed intermittently exposed. A matching disclosure of model-assisted intrusions by a major non-EU grid operator made attribution cross-border; Brussels joined coordination, deflecting blame but confirming defenders lagged.
+
+Sovereignty moved without delivery: permitting zones, power-price relief in Paris/Berlin/Warsaw and EIB guarantees kept gigafactory sites alive, but private finance hesitated, no new compute came online, and hospitals/ministries cut off at short notice from the leading foreign model remained on weaker, resented EU-hosted fallbacks with no evaluation access.
+
+Welfare-fraud scoring in two states was twice found unlawful — benefits cut after seconds-long review, unread logs — high-risk obligations breached in practice. Public read it as AI law failing; Commission mandatory incident reporting and AI Office emergency re-audits were procedurally correct but politically weightless.
+
+Partial relief came from productivity gains in law, accountancy, administration and consulting, largest for juniors, without job losses and quiet rehiring — giving Brussels breathing room but not authority to spend big on enforcement or infrastructure.

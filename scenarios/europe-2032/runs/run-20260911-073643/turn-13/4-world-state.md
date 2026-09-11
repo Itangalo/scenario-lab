@@ -1,0 +1,10 @@
+### Beds, debris and hiring freezes
+The autumn brought two Europes into sharper relief. In oncology and rare-disease wards, the second wave of tailored treatments kept arriving through central procurement. Waiting lists stayed down where the clinic networks held, and local officials still cut ribbons. At the same time, debris from a long-range strike scorched a cable landing station and showered a fab-adjacent yard, halting repairs for days. Insurers who had already repriced Baltic and Mediterranean routes threatened to withdraw cover entirely.
+
+Brussels tied the two together. Night-guard funding for repair crews and emergency charter cover were booked as protection for the therapies supply chain, which let the Health Council push them through without opening a new budget fight. Through the newly completed cyber-bio accession, European liaison officers obtained shared telemetry and pooled attribution on the strike, and formally invoked protection for non-belligerent infrastructure. Washington and Beijing acknowledged the note without conceding fault.
+
+A certified control result from the leading labs helped elsewhere. Hospital operators quickly wrote it into supervision rules for logistics robots and care assistants, and regulators folded it into follow-on checks under the humanoid safety accord. Engineers called it real progress; auditors noted it covered deployed systems only, not the far more capable successors training behind closed doors.
+
+It did not touch the labour market. Graduate hiring freezes hardened into missing cohorts across law, accountancy, software, customer operations and administration. Universities published placement figures that ministers could not explain away, and unions staged coordinated marches linking humanoid purchase orders to entry-level collapse. With no new transition fund opened, the pact's clinical gains were drowned out in national news by joblessness.
+
+Gigafactory plots remained silent, contractors still haggled over night work, and dependence on foreign design platforms and machines became dinner-table knowledge.

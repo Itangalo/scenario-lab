@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Metric movement violation: `eu_political_capital` increased from 7.0 to 17.0 (+10.0 points) in one turn, which exceeds the maximum allowable change of 25 points. While this specific change is within the 25-point cap, the narrative and notepad fail to justify such a large increase under constitutional constraint #9 and modelling choice #7. The jump from 7 to 17 represents a 143% increase in political capital, yet the narrative describes only incremental gains (e.g., continued repair aid, joint dashboards, no new infrastructure). Crucially, modelling choice #7 states that sovereignty’s contribution to political capital “never exceeds +3 in a turn and never dominates the other terms.” No other mechanism in the notepad or narrative explains the remaining +7 of the +10 increase. This violates the constitutional guard against conflating sovereignty and political capital.\n- Narrative telegraphing violation: The phrase “Brussels tied continued repair aid openly to holding a common supply line, refusing any solo cloud bargain” implies a binding condition on member states or third parties without establishing prior agreement or leverage in the narrative. This violates Constitutional Constraint #3: “Nothing the EU decides binds the United States, China or the frontier developers automatically.” While the EU may set conditions, the immediate implication that this successfully prevents solo bargains telegraphs compliance without showing how it was achieved (e.g., through negotiation, leverage, or consequence). The effect on metrics (e.g., resilience +4, sovereignty +2) presumes influence that the narrative does not substantiate."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

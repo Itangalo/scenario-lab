@@ -1,0 +1,11 @@
+By early 2029 unreadable models and leaked near-frontier release enabling fast exploit-chains cut safety, forcing black-box audits. Autumn brought a second intrusion-tooling jump against enterprise software on private hardware, straining grids/hospitals despite allied cyber-health surveillance.
+
+A defensive break emerged: automated speed-patching plus swarm detection closed an attack class in lab/pilots. Brussels approved in principle ENISA patch-speed rollout to essential entities — funded kits/sensors with joint telemetry, tied to procurement/reinsurance — but stayed pre-deployment: budgets started, pilots nominated, validation slipped.
+
+Earlier bets matured: gigafactory first domestic accelerator capacity online; AI Office assurance cell stood up suites and piloted procurement gates for grid/hospital, unenforced. Sovereignty split held: defecting capital kept hyperscaler deal, no second defection/return. Permitting/data-centre pledges advanced amid siting opposition; political capital eroded.
+
+Winter 2029-30 twin shocks: machine-assisted modified pathogen leak/deliberate spread killed dozens, forcing tracing/isolation/alerts; Taiwan Strait quarantine froze advanced chips, force majeure and allocation replaced orders. Washington tightened exports: allies kept volume licences with sharper conditions/delays, others cut off.
+
+Brussels played upstream card: compact pooling European optics/chemicals/lithography servicing with middle-power chokepoint holders for secured processor allocations and countermeasure/telemetry priority. Partly worked: two partners signed continuity memoranda, first rationed compute tranche for essential services, joint feeds aided hospital triage — but carve-outs, months-long slips, US treated it as bargaining.
+
+Patch-speed kits reached nominated grids/large hospitals and stopped cascades to degraded-but-held; smaller clinics/municipalities improvised with checklists. Defecting capital stayed outside joint procurement, bilateral queue slower, no return. Grids held but shortages, power-draw anger, and failed safety assurances left Brussels relevant but without reassurance.

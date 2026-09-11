@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t8: M8 EU Cyber Restoration and Gigafactory Continuity Taskforce −2, M9 EU Bio-Pandemic Emergency Containment and Continuity Regime −2, priority has no effect and no cost as capital below 20 = −4
+PROPOSAL BONUS: EU Bio-Pandemic Emergency Containment and Continuity Regime (cat 6, small) +4 — catastrophic_bio_incident fired this turn and this answers it directly
+LEGITIMACY LENDS: capital 3, sentiment 4 -> +1 capped by sentiment arithmetic included in capital total
+SOVEREIGNTY: 19 last turn, no cat4 finish, no cat4 in flight, member_state_defection t8 −2, capability rose 3.0 −1 = 16

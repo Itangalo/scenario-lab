@@ -1,0 +1,7 @@
+Autumn 2032 saw a second fast-moving automated assault — corrupted updates locking municipal registers, clinics, and forcing a grid operator to manual control. Areas with isolation gates/offline copies from prior repairs kept working on paper; others stayed dark for days. Malware appeared machine-written, polymorphic and self-cleaning, attribution to take months.
+
+Brussels responded via civil protection/cybersecurity channels, not new law: EU agency coordinated national teams, French-Dutch-Spanish repair crews redeployed, continuity funds paid for isolation, backups and manual fallback. Response triaged two conflated failures — attack-locked systems and ongoing wrongful benefit cuts from welfare automation — with ordered hand sign-offs overwhelmed.
+
+Mid-crisis Washington placed a leading US lab under federal security control after loss-of-control scares, securing weights and suspending foreign access. Europe's throttled fallback access to US frontier models stopped entirely, leaving essential workloads on EuroHPC and the single gigafactory still under construction, chips via mid-power compact.
+
+Entry-Level Transition Guarantee limped on with uneven courses and protested automation levy; no new compute built. Trust, already exhausted by benefits scandal, collapsed further as town-hall screens went dark again.

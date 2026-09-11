@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: EU Servicing Freeze Compensation and Safety Adoption Pact −2, EU Municipal Restoration and Open-Model Triage Corps −2, priority −1 not charged (capital below 20, no effect) = −4
+PROPOSAL BONUS: EU Municipal Restoration and Open-Model Triage Corps (cat 6, small) +3 — cyber_major_incident landed this turn and this answers it directly, openweight release also answered
+LEGITIMACY LENDS: capital 11, sentiment 8 -> none (capital higher)
+SOVEREIGNTY: 9 last turn, no capacity finish, no cat4 in flight +0, export_control_escalation t12 −2 (largest capacity event, embodied_ai_deployment also qualifies), capability rose 0.7 −0 = 7

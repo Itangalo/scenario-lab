@@ -1,0 +1,7 @@
+Therapies became cures in spring: US/Chinese tailored remissions for blood cancers and rare immune diseases arrived via Californian queue; HERA Trust pooled first joint order to France, Spain, Poland on public prescription with visible cold-chain, but too small — postcode rationing and pilot vs outsider waiting lists returned.
+
+Degraded operation continued: manual protocols when triage timed out, brownouts without blackout, bridge pay sustaining idle ports/warehouses.
+
+Chinese-built humanoids running American software reached European distributors into those idle sites; night-time pilot fires, pylon burn near gigafactory spur, Europol sabotage/unattended-operation probes, union ban calls vs distributor arson claims. Brussels proposed no robot law, enforced old safety accord locally — no unattended operation, municipal bans respected — and folded control-model evaluation into middle-powers joint note.
+
+Middle-powers channel held: licence alignment, small pooled component order, insured repair barge; landing stations spared though two Atlantic cables dark in May. By June Union intact outside direct belligerence, rationed and degraded, with working cures it could not scale and machines it could not switch off.

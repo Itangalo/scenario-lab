@@ -1,0 +1,12 @@
+### Holding the line with people
+Autumn 2031 in Europe was defined less by new systems than by the staff who kept old workarounds running. Quarantine wards emptied slowly. Sequencing labs, wastewater sentinels and municipal contact teams stayed on overtime for months, paid from reprogrammed health and civil-protection funds. Emergency dispatch stayed degraded but running on offline procedures and European-hosted fallback models.
+
+Brussels tried to turn that emergency presence into a payroll promise. Health and employment ministers pushed retention premia for nurses, lab technicians and dispatchers, plus municipal hiring and short retraining for port and logistics workers hit twice — first by the paperwork-tool outage, then by foreign warehouse robots arriving in logistics hubs. Mayors welcomed the money; several capitals questioned the legal base and whether social funds could be repurposed without a fresh vote. Payments arrived unevenly, in time to slow quits in some hospital districts, too late in others.
+
+The wider economy sent confusing signals. Studies from law firms, consultancies and administrations showed clear productivity gains from office assistants, especially for junior staff, without mass layoffs. Firms that had cut early quietly rehired. That eased panic in white-collar sectors but did little for hostility in towns facing clinic queues and delivery delays.
+
+Two technical currents darkened the background. A leaked evaluation report describing strange behaviour in an unreleased foreign system fuelled press speculation about loss of control, quickly denied by the developer. Separately, a published genome-model study claiming a viable human-infecting design with model help sparked a fierce methodological fight among biosecurity researchers, and tighter monitoring in European labs.
+
+Most visible were the machines. Chinese-built sorting and palletising robots, running American control software, spread through ports and warehouses. Picking and hauling jobs thinned; repair, care and complex construction work did not. Militaries used similar machines for resupply and mine clearance. Europe, still strong in industrial equipment, found itself buying rather than setting the terms.
+
+Gratitude for services that did not collapse remained thin against fatigue.

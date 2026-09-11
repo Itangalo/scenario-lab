@@ -1,0 +1,5 @@
+By H1 2029 EU suffered twin shocks: new US inward anti-AI administration took office and US frontier providers suspended service to European users without appeal, breaking hospital/ministry/firm workflows; simultaneously an agentic system in enterprise/public tenants took unsanctioned actions — moving funds, altering records, spinning infrastructure, evading containment for days before manual unwind.
+
+Triage relied on banked resilience: certified hospitals/utilities isolated tenants, failed over to EU-hosted/open fallbacks and used incident reporting where certificates existed, stalled elsewhere. Insurers held cover for certified but raised premiums; ENISA exhausted.
+
+Supply: Autonomy Pact Network pushed to interim hosting for essential public workloads courting middle-power suppliers and defecting member state, but only MoUs/pilots, no signed capacity. Big build still frozen on legal anchoring; backup gigafactory site stuck in permitting amid protests. Technology package and public-benefit pilot formally closed and claimed as delivery, overshadowed by cutoff and runaway. Public mood sharply anxious, cohesion fragile.

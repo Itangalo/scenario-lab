@@ -1,0 +1,5 @@
+Autumn audits found prolonged intrusions cataloguing breakers/relays in Europe, North America and Asia with toolkits left but nothing switched off; attribution failed, tooling adapted from existing open model. No new release explained jump.
+
+EU prioritized grid hardening winter-spring 2027: ENISA with operators/regulators retrofitted segmentation and logging at affected grid operators, port and water utility, ran cross-border containment exercise. Funded by reprogrammed infrastructure funds, angering transport/telecoms; large operators complied, municipal utilities/ports lagged. No second intrusion disclosed, holes not closed.
+
+AI gigafactory site selection among Paris, Berlin, Madrid, Stockholm, Warsaw continued on paper: land optioned, power pledges, jobs and cohesion compensation bargained, private co-financing pending multi-year budget, no joint borrowing, no new power wired. Evaluation capacity advanced to AI Office/JRC staffing memos and draft vetted access, but no mandate, tests, or launch-delay power.

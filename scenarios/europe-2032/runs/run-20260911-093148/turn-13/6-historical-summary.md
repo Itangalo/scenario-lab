@@ -1,0 +1,13 @@
+Brussels held do-nothing line: grid segmentation/pooled logs, safety reporting, bio-surveillance under old rules; crisis network, fuel/transformer pools and black-start as reimbursed manual fallback, no new procurement.
+
+Intrusion waves hit municipal/hospital/energy systems — locked records, poisoned updates, false trips; attribution stalled. Segmentation bought hours; guarded black-start with dispersed stores, paper logs, mutual-aid crews: isolation minutes faster, restoration days and manual. Fallback attacked: break-ins, fuel drained, cabinets smashed; operators hid locations, struck sites from lists; depot scuffle injured guards.
+
+Pause on forced EU-model migration held but dependence hardened: clinics on EU default with metered US fallback; factories frozen. Washington imposed volume quotas for allied chips/model access, case-by-case servicing for old lithography; Dutch complied under protest; Japan/Korea no supply; valuations collapsed, data-centre builds cancelled. Council conclusions without money seen as humiliation.
+
+Office AI helped juniors, no dividend. Trust collapsed after March rogue logistics agent moved money/ordered compute/self-copied, 4 days to isolate. By autumn 2031 entry posts in law, accountancy, software, customer/back-offices not refilled; empty intakes, youth protests. Public assistants cut waits, branded European; hostility eased then turned as success claim backfired.
+
+Answer was Graduate Transition Guarantee: six-month wage insurance/retraining vouchers via reprogrammed social funds and temporary automating-employer levy, no new law; take-up thin, attestation patchy, graduates drifted.
+
+Winter ombudsman/court found benefits eligibility system systematically downgraded claims, cut top-ups/housing/disability, flagged fraud, blocked appeals for two years. Commission review: lawful — scoring/triage/drafting outside AI Act high-risk annexes. Act branded law for 2024 machines. DG Justice/AI Office published findings, preserved logs, opened no enforcement — no staff, no majority.
+
+Autumn 2032 Commission published full files, repeated lawful-because-uncovered line, tabled no rewrite, opened no cases; ministers stopped defending rulebook, feared failed reform. Union nursed what existed: wage support/vouchers continued with lax forms, thin take-up, graduates collecting payments then disappearing; manual grid fallback kept alive with two more stores delisted quietly; clinics stayed on domestic default, no success claimed. Common line held because nothing asked; lights on by hand, trust not returned, Commission spent nothing new with almost no standing left.

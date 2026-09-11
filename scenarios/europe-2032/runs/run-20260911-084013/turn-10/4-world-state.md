@@ -1,0 +1,10 @@
+### The jobs answer arrives as the screens go dark
+Spring brought two shocks at once. A largely automated intrusion swept through municipal systems and hospital suppliers via a compromised update, encrypting records and forcing a return to paper in several cities. Attribution remained open for months, but analysts agreed the tooling had been assembled by models. Weeks earlier a leading American lab had demonstrated a sharp jump in code and intrusion capability, verifiable and immediately copied.
+
+At the same time, entry-level hiring in routine coding, standardized analysis and first-line support did not come back. Firms confirmed the posts were gone, replaced by supervised systems. The forecasts for a general wave were quietly pushed to next year, which consoled no one queuing at employment offices.
+
+Brussels finished what it had started in winter. The islanding kits and agreed curtailment order were now in depots and control rooms, and when the ransomware wave hit power and water, operators held the sequence. Homes and hospitals stayed lit while computing was shed. Engineers credited the stockpile; voters remembered the ransom notes.
+
+The export screws tightened again. Washington rationed high-end chips even to allies on volume licences, citing the new offensive leap. European procurement officers were told to wait. Open weights, now only weeks behind the frontier, filled the gap on municipal laptops — unrecallable, indispensable.
+
+The Commission launched a wage-bridge and rapid retraining scheme for displaced tier-one workers, paid partly by a levy on automating employers, run through existing social funds and job centres. Business lobbies called it a tax on efficiency; mayors called it late; unions called it a start. Enrolment opened, payments lagged, and anger over bills and lost first jobs drowned out the technical notes about essentials kept alive.

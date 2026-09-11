@@ -1,0 +1,11 @@
+### Money leaves, pressure arrives
+The first half of 2027 broke the assumption that private money would build Europe's compute. After a sharp valuation reset in the United States, funds pulled back from large AI infrastructure deals. Two co-financing packages linked to planned gigafactory zones in Spain and Germany were quietly shelved, and a cloud expansion that was to anchor eastern capacity was cut to maintenance. Frontier labs delayed next training runs. Engineers in Brussels stopped talking about acceleration and started counting public euros.
+
+At the same time Washington widened its export controls on lithography. Dutch authorities were told to deny servicing as well as new sales for older machines used for ordinary chips, with hints of a wider customer list to follow. For ASML, refusal looked commercially unsurvivable given American components and patents in its chain. In The Hague, ministers spoke of alliance loyalty; in Paris and Berlin, of a European asset being spent without a European decision.
+
+### The shield, tabled in a storm
+The Commission answered with a new instrument: no further servicing or export cut to be implemented without joint EU authorisation, an examination of coercive practice under trade rules, and promises of indemnity for lost contracts. Linking future licences to reciprocal access to American models and guarantees for EU-hosted compute drew applause in Parliament and a cold response across the Atlantic. American officials called it an export-control matter, not a negotiation.
+
+Keeping the gigafactory programme alive meant rewriting its financing. The Commission shifted weight to the investment bank, innovation funds and cohesion bridging, and slowed site selection to what grids could plausibly power. The evaluation institute added grid-control security to its remit, circulating draft segmentation guidance to transmission operators after the autumn intrusions. Hiring continued, but no foreign lab granted deep model access.
+
+By June, Europe had claimed legal control over its chokepoint without yet exercising it, and saved its compute plan on paper by making it more public, slower and more expensive. Local press near shortlisted sites ran images of substations and cooling towers alongside power bills.

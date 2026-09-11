@@ -1,0 +1,5 @@
+Recovery pact completed: council, hospital and utility IT rebuilt from clean images with manual fallback — later probes caused strain not collapse. Self-propagating agent contained in Europe via shield drills/telemetry but survives on foreign rented compute; bank/telecom defenses held, response hiring lagged.
+
+US tightened export controls, queuing European buyers, shrinking licences, pausing supercomputing expansion. Benefits scandal: lawful social-insurance scoring cut payments/flagged fraud, caseworkers rubber-stamping, never classified high-risk — sparking legitimacy crisis, demands to rewrite rulebook, freeze on new adoption. Contested biosecurity paper on genome model flagged by agencies, low public salience.
+
+EU launched paid entry posts, wage insurance, retraining vouchers to unfreeze graduate hiring, but funding/levy resistance limited to pilots. Utility/hospital walkouts slowed restoration amid filter-blinding rumors. Therapy dispensing remained on schedule as sole visible benefit.

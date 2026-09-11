@@ -1,0 +1,10 @@
+### Enforcement without money
+January to June 2028 became a test of whether paper could do the work of concrete. With budgets exhausted and no new programme opened, Brussels tried to squeeze results from what already existed.
+
+The cyber shield, named again as the priority, moved from audits to live systems. Under new implementing rules, the EU cybersecurity agency, energy regulators and national response teams ordered the two previously hit grid operators, the port and the water utility to turn autumn segmentation plans into real network changes and to keep filing daily detection reports. Connecting Europe Facility money was offered to cover the cost of taking systems briefly offline. One operator completed partial segmentation; two others did only supervised trials, warning that a rushed cutover could black out districts. Engineers privately called the progress real but thin.
+
+The evaluation institute formally opened its doors. Hiring continued and draft test protocols were published, with demands for privileged access to foreign high-risk models as a condition of market access. No power to block a release was granted, and US providers complied on paper while sharing limited versions. The institute claimed credibility; Council staff called it an office still writing its own manual.
+
+The factory programme lost ground. In the two contested regions, court injunctions kept grid-connection works frozen despite offers of capped local tariffs, water caps and community shares. No concrete was poured there by June, and mayors asked openly who would pay for grid upgrades. Paris, Berlin and Madrid insisted the other sites were on track, but procurement slipped and contractors idled.
+
+Low-level probing of energy and logistics networks continued through the spring, using openly available tooling. No major blackout occurred, which the Commission presented as vindication. Operators described it as luck plus triage.

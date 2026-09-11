@@ -1,0 +1,13 @@
+### War Comes To The Infrastructure
+Autumn began with exercises and ended with shooting. American and Chinese forces exchanged strikes after weeks of manoeuvres around the Strait, expulsions and soaring insurance rates. Within days fabrication plants, subsea cables, satellite ground stations and large data centres were named as legitimate targets. Two cable landings and a power interconnect feeding southern compute clusters were damaged. Freight from East Asia all but stopped, and stockpiles became policy.
+
+In the middle of that, the automated attack landed. A ransomware sweep built with machine-generated tooling moved through municipal systems, hospital administration and permit desks in several member states. Defenders were visibly behind for weeks; attribution statements promised months. Hospitals and ports islanded where European-anchored stacks in Lyon, Porto and Gdansk could run them, and degraded elsewhere without fully stopping.
+
+Brussels declared neutrality, designated fabs, cables and data centres on Union soil as civilian critical infrastructure, and placed guards and civil-protection teams around them. ENISA, health emergency authorities and the civil protection mechanism ran wartime triage on what had already been built — cyber recovery playbooks, bio-stockpiles, continuity plans. It absorbed some harm; it did not restore services.
+
+### Remedy Against The Backdrop
+The welfare files deepened. Further publication of logs showed flagged cases decided in seconds, conformity papers in order, no one reading the pattern that cut single parents and migrants. The redress track froze the queues, banned sub-minute approvals, ordered human re-decision and began back-payments from advanced social funds. Officials insisted the law was sound and enforcement had failed. On television, that distinction did not hold.
+
+There were benefits, and they hurt. Tailored immune therapies cut relapse in early hospital cohorts, and a machine-found battery electrolyte promised cheaper storage. Both ran on American models and foreign compute. Waiting lists fell in a few clinics where European capacity ran the tools, which proved the corps posts worked where they were staffed — and proved how few such places there were.
+
+By December queues were longer, budgets tighter, sabotage rumours around grid interconnects persistent, and the Union was paying for a war it did not choose with instruments built for a peace that had ended.

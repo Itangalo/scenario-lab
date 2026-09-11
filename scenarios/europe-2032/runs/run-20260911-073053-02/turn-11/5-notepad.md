@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: M11 EU Wartime Energy-Compute Continuity Shield −2, M12 EU State-to-State AI Restraint and Site-Sparing Understanding −2, priority −1 = −5
+PROPOSAL BONUS: EU State-to-State AI Restraint and Site-Sparing Understanding (cat 8, small) +3 — us_labs_nationalised fired this turn voiding company leverage, measure answers directly but small and coalition-aimed
+LEGITIMACY LENDS: capital 2.0 after other terms, sentiment 12.0 -> +2 capped, sentiment above capital
+SOVEREIGNTY: 18 last turn, no cat4 finishes, no cat4 in flight +0, us_labs_nationalised t11 −3, capability rose 1.3 −0 = 15

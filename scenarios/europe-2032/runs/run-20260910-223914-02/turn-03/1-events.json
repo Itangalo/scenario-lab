@@ -1,0 +1,39 @@
+[
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Major reinsurers temporarily exclude OT cyber-triggered business interruption for ports and grid operators after the autumn pre-positioning revelations, raising premiums and forcing temporary throughput limits.",
+    "emergent": true,
+    "id": "emergent_ot_insurance_pullback",
+    "probability": 0.20666666666666667,
+    "probability_samples": [
+      0.22,
+      0.18,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A prolonged drought in Taiwan and power rationing notices force a major foundry to guide down output for two quarters, tightening global GPU and power-electronics supply and delaying European data-centre build-outs.",
+    "emergent": true,
+    "id": "emergent_foundry_supply_squeeze",
+    "probability": 0.19333333333333336,
+    "probability_samples": [
+      0.2,
+      0.2,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

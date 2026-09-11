@@ -1,0 +1,11 @@
+### War comes to the grid
+In February, American and Chinese forces began striking at each other's technology base — chip plants, cables, satellites, data centres. Europe was not belligerent, but it was not spared. A cable landing in the Mediterranean was damaged, a North Sea interconnect went dark for days, and airspace closures snarled spare parts. In Brussels, the language changed overnight from autonomy to continuity: keep power on, keep hospitals computing, keep command networks alive.
+
+The emergency energy and defence ministers met in joint session. Repair battalions under guard were sent to the two gigafactory grid connections where night-time arson and blockades had already stopped work. Hospitals and certified triage systems got priority dispatch; cross-border failover was invoked for hit data centres. It partly worked — therapy queues in France, Spain and Poland stayed online, blackouts stayed rolling rather than general — but rationing bit everywhere else.
+
+### Hiring freeze becomes disappearance
+Spring labour surveys confirmed what graduates already knew: entry posts in law, accountancy, software support, customer operations and administration were not being replaced. Works councils that had co-signed reopenings under the transition guarantee now faced port operators running full commercial shifts of foreign-built humanoids behind fenced, guarded sites. Bridge pay arrived slowly; anger arrived quickly.
+
+The open release of a near-frontier model in March — downloaded hundreds of thousands of times in a week — made control arguments moot. Municipal bans multiplied, two more fenced sites burned, and the humanoid register remained an unfunded list.
+
+The middle-power supply club became the Union's diplomacy: neutrality for its cable stations, cleanrooms and evaluation sites in exchange for both powers leaving them alone, plus pooled bids for parts and medical inference. The wayward capital listened cordially and kept its separate foreign pact. With money, troops and transformers all short, Brussels funded the emergency shield from existing envelopes. Lights stayed on in the wards. Almost nowhere else felt governed.

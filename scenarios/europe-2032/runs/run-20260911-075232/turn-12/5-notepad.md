@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: EU Wartime Neutrality Shelter and Lifeline Continuity Operation −2, EU Bio-Incident Containment and Open-Model Triage Surge −2, EU Pandemic Survival Continuity Operation −2 = −6 (priority without effect or cost as capital 15 below 20, charge is measures only)
+PROPOSAL BONUS: EU Pandemic Survival Continuity Operation (cat 6, small) +5 — catastrophic_bio_incident fired this turn with global pandemic and this answers it directly
+LEGITIMACY LENDS: capital 14, sentiment 14 -> none (capital not below sentiment)
+SOVEREIGNTY: 17 last turn, no capacity event? us_labs_nationalised t12 −2 (largest of us_labs_nationalised, embodied_ai_deployment), no cat4 in flight +0, capability rose 0.9 −0 = 15

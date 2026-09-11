@@ -1,0 +1,7 @@
+By 2029-30 Brussels built offline kits, reserve licences, and telemetry-tied funds; twin 2029 failures and 2031 model-written ransomware showed sharers recovered in days, refusers stayed dark for weeks. Containment became borrowed via allied pooled defence and ENISA triage, but detection dependence and idle fenced gigafactories, court block, and US tightening chip/model licences left autonomy hollow.
+
+Autumn new sweep via trusted admin update darkened municipalities/hospitals from Porto to Gdansk; rehearsed isolation restored booking in days, others rebuilt by hand for weeks; attribution failed, tooling model-written. Brussels funded restores, ran drills, lent allied feeds to stop cascades.
+
+Meanwhile offices reported measured assistant gains, largest for juniors, no fresh layoffs, early cutters rehiring — work reshaped. Bio alarm grew: contested genome model suggesting non-expert path to human-infecting design pushed HERA/ECDC to upgrade sequencing, wastewater, reporting and pre-position diagnostics/paper kits in cooperators.
+
+Civic repair inched: audited health triage with limits/logs cut waits where standard pack signed, aided by office-gains cover, but insurers still refused cover without statute, unions froze welfare automation; gratitude where help arrived, anger at rationing elsewhere.

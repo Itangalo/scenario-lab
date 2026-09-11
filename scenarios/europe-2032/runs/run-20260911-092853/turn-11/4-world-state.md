@@ -1,0 +1,10 @@
+### Holding the line
+Brussels spent the second half of 2031 trying not to lose what it had built. With no new law and no new money on the table, the Commission kept its work inside existing funds — health, justice and school pilots sustained through Digital Europe and EU4Health budgets, protection teams kept on the showcase hospitals, and the spares pools kept on-scheme by reimbursement.
+
+That modesty helped and hurt. The manual fallback network formally completed this turn: black-start drills exercised, paper procedures bound, mutual-aid payments regularised. When autumn storms and a fresh round of cable thefts tested grids in two states, restoration by hand worked, if slowly. Engineers noted the pools were still guarded like depots under siege, but they held.
+
+The showcase also held, but narrowed. Waiting-list dashboards stayed green in the three health systems, and teachers defended the pilot results. Elsewhere, the decision to keep protection concentrated on showcase sites festered. Mayors brought into rerouting cells got visibility on return timelines, yet several left complaining the timeline was always next quarter. Local press called it a two-tier shield.
+
+Washington did not move, and Brussels did not push. Quotas were managed quietly, servicing requests answered case by case, talks with Tokyo and Seoul on spares kept alive without conclusion. With private valuations still down and hosting deals thin, the freeze avoided a rupture — and avoided any recovery in independent capacity.
+
+Capability worldwide crept forward while assurance slipped further behind. Public mood lifted a fraction on the back of real services delivered, but distrust remained deep, and sabotage leaflets gave way to quieter non-cooperation. The Union ended the year intact in its services, poorer in standing, and still waiting for trust to return enough to carry anything new.

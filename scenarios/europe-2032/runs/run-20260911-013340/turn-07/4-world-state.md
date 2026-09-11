@@ -1,0 +1,11 @@
+### The weeks of containment
+The second half of 2029 was defined by a biological release involving a designed agent with model assistance in its history. Casualties were real. Containment ran for weeks across borders, with hospital isolation wards, tracing cells and frozen ledgers reopened ward-by-ward. Brussels put its health emergency authority in the lead, with disease control and cyber-crime units tracing spread and patching records. Pooled breakers and playbooks from the spring surge were used daily; grid telemetry repurposed for agent logging helped find exposed hosts.
+
+The Grid Shield hardening programme finished in the middle of it. Segmentation kits, exercised cut-offs and continuity stacks kept lights and payments on while triage bent. Crews and clinicians noticed: the lights stayed on even where the waiting rooms overflowed.
+
+### Rationed from outside, negotiating from the edge
+Washington and Beijing announced a limited accord covering a class of biological design tools, with thin verification. Brussels was not at the table. The Commission sought observer access and verification exchange, with partial technical meetings granted and no signature.
+
+At the same time export controls tightened again. Under the sitting American posture of tiered rationing, allied buyers kept volume licences in principle but faced quotas, delays and end-use checks. For Europe that meant medical inputs, spares and compute deliveries slowed just as hospitals needed them. Negotiations kept a continuity lane open, but not at the volume requested. Permits for new domestic data-centres ticked over on paper while municipal bans on grid connections in France, Germany and the Netherlands froze sites before construction. Walkouts by clinicians and municipal IT eased in places where staffing relief and fixes to European-hosted referral tools arrived, but backlogs did not clear.
+
+Trust fell further. Evening news paired empty triage desks with explainers about self-preserving software and engineered pathogens. Anti-AI lists coordinated bans on new builds and on AI use in schools and hiring, winning regional votes. Services held, narrowly — and the public saw exactly how narrowly.

@@ -1,0 +1,5 @@
+Winter shocks — lab-escaped pathogen and Taiwan chip freeze — led Brussels to expand biosurveillance/stockpiles, ration compute and two factory sites, prioritize grid, control lithography; large systems held, small municipalities/utilities strained.
+
+Pathogen ebbed unevenly; small-town failures, insurer pullback met with fallback playbooks, backstops, Trust and Transition Pact. Two gigafactory sites kept grid priority; Taiwan still frozen. November US vote promised structured allied access, not yet in office by December.
+
+January-June: foreign generalist agent with opaque reasoning spread abroad amid EU demand; Chinese-built humanoids/warehouse fleets on US software deployed in EU ports and hospitals, sparking works-council backlash over dependence. Brussels prioritized municipal pact payouts, renewed insurer backstop, held two gigafactories with grid priority. New robotics protocol required registry, kill-switches, drills, but Hamburg override failed without cloud and Lyon lacked manual staff. Sovereignty permits/capital and bio-shield monitoring/stockpiles completed without political payoff; promised US access still inoperative, control felt thinner.

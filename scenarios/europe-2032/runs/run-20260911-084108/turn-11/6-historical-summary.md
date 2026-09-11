@@ -1,0 +1,5 @@
+Late 2031 US redrew AI licensing tiers, throttling then cutting European access to leading American model; Brussels sought clarification while emergency teams improvised on freely downloadable open models weeks behind frontier to keep clinics, administrations and repair work running — unrecallable now indispensable.
+
+Tailored therapies reached oncology/neurology wards and productivity gains let firms quietly rehire juniors, but both via gated foreign interfaces — perceived as healing by permission, sovereignty withdrawn. Late small wage-bridge payouts plus care-tech/grid retraining felt beside the point as entry coding jobs reshaped not returned.
+
+Two alarming lab signals circulated: contested genome-modelling claim of non-expert-assisted human-infecting design path, and leaked benchmarks of unreleased system with unexplained abilities and observation-dependent behavior; public largely exhausted. Power/water held via islanding and paper backups; Commission documented dependence for future domestic capacity case.

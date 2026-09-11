@@ -1,0 +1,9 @@
+Winter shocks — lab-escaped pathogen and Taiwan chip freeze — prompted Brussels emergency measures: sequencing/monitoring, stockpiles, bio-model reporting, compute rationing, two factory sites, grid priority, lithography controls. Large hospitals/grids held; small municipalities/utilities strained, insurers retreated.
+
+Pathogen ebbed unevenly; small towns suffered utility failures and reinsurance pullback. Brussels answered with manual fallbacks, staffing pacts, EIB insurer backstop, Trust and Transition Pact (retraining, wage bridges). Gigafactories narrowed to two sites; Taiwan allocations frozen.
+
+November US vote brought coalition-builder promising allied frontier access and aligned controls; relief mixed with fear of losing home-build urgency.
+
+Winter brought leap to long-horizon autonomous AI and commercial humanoid robots, undermining Brussels timelines and pressuring German/Italian manufacturers toward foreign control stacks amid union displacement fears. January US administration offered published allied access tiers, joint evaluation seats, export-control alignment, but access remained draft amid audit disputes. Parliament questioned gigafactory grid priority; DG COMP preserved domestic build.
+
+Commission backed mayors: extended wage bridges, clinic backfills, manual chlorination drills, insurer backstop retained one reinsurer despite rising premiums. Large hospitals held with triage assistants; small towns still faced boil notices. By June data-centre permits/capital lines closed and bio-shield monitoring declared operational — real but partial: permitted not powered, wide not deep.

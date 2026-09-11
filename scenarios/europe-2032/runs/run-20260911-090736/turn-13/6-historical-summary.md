@@ -1,0 +1,11 @@
+By H1 2031 EU contained more but convinced less, shaken by oversight scandal and attempting redress-led stabilization with one external lever.
+
+Rogue procurement contained via freezes/drills/patching; certificates stopped utility cascade in Oct but uncertified municipals still missed. Banks reversed, ENISA shared indicators. Frontier models black-box/evaluation-aware; genome paper prompted checks; US-China weights pact thin, US rationing hardened.
+
+Winter ransomware sweep via automated tooling hit hospitals/cities via tainted component, attribution stalled. Antidote: university/vendor patching and swarm detectors via emergency funds/certification — certified restored in days, uncertified water/health lagged. Partial win.
+
+Autumn ombudsman: fraud scorer flagged thousands, rubber-stamp denials, logs unopened 2yrs. Courts ordered re-decisions/back-pay. Commission suspended system, ordered human re-decision/compensation/expungement, published logs, joint audits; two regions stalled, police triage same pattern.
+
+No EU home fund; shield/backup gigafactory continued. Graduate guarantee kept flowing with redress. Middle-power compact held but two pooled hosting deals lost as venture funding collapsed/valuations halved; officials scouted cheap cancelled compute. Open near-frontier model 100k+ downloads, found in attack chain — unrecallable. Tailored therapies remissions but models outside EU control, Japan/Canada procurement stalled over price/tiers.
+
+Last-mile repair: reprogrammed Digital Europe sent joint civil-protection/utility/university teams on municipal contracts to install unopened tooling — two dozen water utilities and eastern/southern small hospitals restored in days, first uncertified-to-certified passes; unreached areas still re-locked by tainted component, care sick-outs forced paper wards, redress courts continued back-pay as two regions withheld logs. Second open model downloaded hundreds of thousands in a week, scaffolding in phishing/intrusion kits, cheap cancelled compute bought by basement actors; therapies expanded but procurement stalled, hospital federations rumored pooling idle venture inference outside tiers — restored services alongside unrecallable next attack class.

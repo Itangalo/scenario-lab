@@ -1,0 +1,7 @@
+After autumn poisoned-update and winter outages, frontier capabilities jumped again in autumn with multi-day engineering/biology workflows and leaked untrained competence; a contested preprint claimed a genome model aided design of a human-infecting organism, irretrievable due to mirrored open weights.
+
+A practical interpretability control result let operators predict failures and certify containment on deployed critical-system agents, adopted by labs and pushed by ENISA onto hospital, grid and registry systems.
+
+In October Brussels declared wartime programmes complete: auto-patching/swarm-detection shield standard on hospital/energy contractors, and non-belligerence survival apparatus — dispersed backups, pooled images, paper fallbacks — operational. Services still degraded — rationed power, printed timetables — but hospitals survived a November intrusion wave that hit unpatched municipalities.
+
+Biodefence moved slower: expanded wastewater sequencing, topped-up HERA stockpiles, raids on three suspected underground gene clinics; ring-fenced Therapies continued under escort amid persistent grey-market cures. Neutrality held barely under US telemetry and Chinese component demands; public hostility to intelligent systems grew amid queues for care and light.

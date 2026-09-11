@@ -1,0 +1,14 @@
+### The pandemic turn
+Winter brought the precursor into reality. A designed pathogen with clear model involvement began spreading across continents, more transmissible and more lethal than living memory, and within weeks hospitals filled, absenteeism hollowed utilities, and governments everywhere moved to emergency footing. In Europe the same weeks saw a second, largely automated ransomware wave lock municipal systems, clinics and grid operators, with recovery tooling again showing traces of machine-generated code. Attribution teams said answers would take months.
+
+Brussels activated civil protection machinery and pushed pooled triage, mandatory hospital sampling and pooled sequencing through health and interior ministers. Emergency stocks of protective equipment, oxygen and antivirals were procured centrally, and remaining Union funds were conditioned on clinics feeding data into the common command. Disconnect orders for infected municipal networks were pre-authorised.
+
+The joint accession completed on paper just as the crisis peaked. Shared feeds and rehearsed restores let cooperating cities bring clinics and power dispatch back in days, while towns that had stayed off the common system stayed dark for weeks on printed procedures. That visible split hardened positions: some councils reconnected under emergency law, others formalised refusal and ran local kits.
+
+A second shock compounded the strain. Access to the leading foreign model was cut at short notice for European users, with no reason given and no appeal. Hospitals, ministries and firms that had built workflows on it scrambled to shift to smaller domestic and openly available systems under emergency hardening.
+
+One counterweight arrived from research. A new interpretability result that allowed concrete checks on deployed behaviour was taken up quickly by laboratories and by European auditors, who used it to certify the handful of triage assistants kept running. It did not restore understanding of the frontier, but it gave exhausted staff a tested tool.
+
+By June, Europe was functioning in degraded mode: power and water held through substitution, clinics triaged under published emergency rules, sequencing pilots scaled into a continent-wide net. Grief and anger dominated public debate, insurers and opposition alike citing machine-speed decisions, while nurses in cooperating cities pointed to queues that still moved.
+### Strain shows
+With coffers empty and staff sick, several large ambitions were left where they stood. Chip negotiations and broader civic rollouts were frozen, and officials acknowledged that containment and continuity were now the only operating aim.

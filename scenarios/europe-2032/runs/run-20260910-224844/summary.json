@@ -1,0 +1,132 @@
+{
+  "scenario": "Europe 2032 — Verification-bounded",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 61.0,
+    "openweight_capability": 57.8,
+    "ai_safety": 24.0,
+    "resilience": 38.0,
+    "eu_ai_sovereignty": 11.0,
+    "eu_political_capital": 12.0,
+    "public_sentiment": 13.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 54.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 32.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 41.0,
+        "public_sentiment": 39.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 56.0,
+        "openweight_capability": 50.0,
+        "ai_safety": 30.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 27.0,
+        "public_sentiment": 25.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 53.0,
+        "ai_safety": 28.0,
+        "resilience": 36.0,
+        "eu_ai_sovereignty": 14.0,
+        "eu_political_capital": 11.0,
+        "public_sentiment": 19.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 60.0,
+        "openweight_capability": 55.5,
+        "ai_safety": 26.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 13.0,
+        "eu_political_capital": 16.0,
+        "public_sentiment": 17.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 61.0,
+        "openweight_capability": 57.8,
+        "ai_safety": 24.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 11.0,
+        "eu_political_capital": 12.0,
+        "public_sentiment": 13.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "automated_decision_scandal",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_alliance",
+    "embodied_ai_deployment",
+    "eu_frontier_access_denied",
+    "eval_anomaly_reports",
+    "export_control_escalation",
+    "supply_chain_coercion"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "eu_frontier_access_denied"
+    },
+    {
+      "turn": 2,
+      "id": "automated_decision_scandal"
+    },
+    {
+      "turn": 3,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 3,
+      "id": "eu_frontier_access_denied"
+    },
+    {
+      "turn": 3,
+      "id": "supply_chain_coercion"
+    },
+    {
+      "turn": 4,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 5,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 5,
+      "id": "embodied_ai_deployment"
+    },
+    {
+      "turn": 5,
+      "id": "election_alliance"
+    }
+  ],
+  "last_updated": "2026-09-10T22:51:58.845767",
+  "status": "completed",
+  "emerging_events": [],
+  "completed_at": "2026-09-10T22:52:02.789836"
+}

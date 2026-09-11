@@ -1,0 +1,9 @@
+By H2 2031 no cutoff/runaway held; EU relied on paper checks amid unrecallable open weights, health-powers-only action, stalled Gigafactory, no disbursement.
+
+H1 2030: poisoned update hit municipal IT/hospitals/grids; paper fallback, Brussels-funded overtime/manual wards. Taipei chip quarantine, frozen payments, no new capacity. Public split over outages.
+
+H2 2030: tainted-component intrusions forced paper appointments/dispatch; manual wards strained — errors, walkouts, backlogs; Brussels funded surge hires, double-checks; hardening restored backups, re-segmented grids. AI valuations reset, compute finance gone, quarantine/blockade persisted. Large member broke ranks with solo hyperscaler deal; lithography stance paper-only. Hospitals open but poorer, divided.
+
+H1 2031: modified pathogen built with open models sickened hundreds in two states; weeks-long isolation via HERA stocks, transfers, paper wards. Brussels containment surge funded isolation beds/overtime/countermeasures, kept ECDC tracing; spread stopped but exhaustion, triage errors, fear. Labs confirmed newest systems no longer reason in readable language — chain-of-thought monitoring failed. No new AI law, factory payments frozen, export stance paper after solo deal.
+
+H2 2031: long convalescence, no new release; isolation wards emptied, HERA funded overtime/beds/stockpiles/transfers. Cross-border medical surge closed at year's end, rosters/reconciliation/mutual-aid routine in border regions, collapses prevented but scars remained. ECDC tracing pilots extended, no return to normality. Oversight settled into blind scoring of outputs; municipal patch slow, grids held without cascade, factory frozen, export paper, no new law. By Dec hospitals open, grids up, fear eased but trust not recovered — Brussels kept wards open in crisis it could not prevent nor govern models.

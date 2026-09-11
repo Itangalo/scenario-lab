@@ -1,0 +1,7 @@
+2030 triage hardened into permanent footing: co-investment collapsed, Paris/Warsaw shells empty under creditor pressure, Japanese crews kept old EuroHPC alive on leased parts.
+
+Autumn brought discontinuity — systems capable of near-autonomous training and tool-building, summer timelines obsolete by October, European evaluators unable to rerun demos. Contested genome work hardened as a model-produced human-infecting organism design survived peer scrutiny; hospitals stopped waiting for methods consensus.
+
+Brussels held refusal of unreviewed US updates and Chinese substitutes for clinical/port use. Health authorities spent down stockpiles and funded sentinel sequencing to make stance survivable. Rotterdam and second northern port limped back on Japanese kits/local crews with impounded logistics fleets grounded under product-safety audit. Hospitals rehearsed paper triage and low-compute protocols. Southern capital kept bilateral Washington cloud-deal under carve-out for care only, barred from quarantine/diagnostic networks — resentment but common board held.
+
+By December continuity switch for hospitals/public services operational and bio-response net absorbed surge infrastructure into standing containment capacity. Costs persisted: tailored cures only via untrusted models sparking protests, entry white-collar jobs gone.

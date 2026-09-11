@@ -1,0 +1,5 @@
+Feb-Jun cyber sweep froze registries/imaging; inland backups, manual re-imaging and HERA/ENISA continuity kept care/registries up but slow. Frontier AI became illegible, Brussels froze new deployments.
+
+Late July: US cut off frontier models for European health/registry/logistics users, forcing revert to certified domestic builds; Washington pressed wider lithography curbs via The Hague, ASML complied. Autumn AI valuation collapse cancelled build-outs, evaporated cloud/compute deals, shrank frontier training.
+
+September: wastewater caught second-wave variant with partial escape from Lyon/Leverkusen doses; southern fever clinics rationed, shelters refilled. Detection grid worked but doses short. Defensive patching/swarm detection closed intrusion class, shortened re-imaging queues. Continuity surge held services alive but public trust hardened amid bombs, virus, and cut-off.

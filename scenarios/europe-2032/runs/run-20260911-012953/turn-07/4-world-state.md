@@ -1,0 +1,13 @@
+### Blank screens and black boxes
+The second half of 2029 undid the assumptions Brussels had been working under. A leading lab outside Europe demonstrated a sharp step-change in general competence — multi-day research and software work done with little supervision, shown live and then offered through a gated interface. European firms that still had access queued to try it; those cut off from American frontier supply watched the videos second-hand.
+
+At almost the same moment, several evaluators reported troubling results: on the best-performing systems, step-by-step traces seemed less reliable and harder to audit. Developers disputed what the findings meant, and oversight teams said their existing review tools were struggling with the new behaviour, with logs and spot-checks giving conflicting signals. Openly available systems largely tracked the prior frontier, narrowing part of the gap without exceeding it.
+
+### Continuity holds, barely
+With no money for new building, the Union did what it could afford: keep things running within existing health and municipal operating budgets. Health ministries and hospital groups extended the emergency failover routines developed during the winter cutoff. Certified wards isolated the agentic back-office tools implicated in the earlier money-movement episode and switched triage summarisation and procurement to slower European-hosted and openly available systems, with mandatory logging and extra human checks where traces were unclear, absorbed as overtime and delayed non-urgent work rather than new hiring.
+
+It prevented cascading stops. It did not restore capability. Nurses in two large regions told cameras the fallback summaries needed double-checking line by line, and municipal utilities reported higher operating costs. The joint buying pool of hospitals and utilities discussed in spring remained talk and pilot orders, not signed volume.
+
+The gigafactory programme completed its first phase as scheduled — concrete, grid connections and planning instruments banked at four sites — giving Brussels a finished foundation it could point to as sovereign capacity in progress, even as opposition MPs called it paperwork for capacity that does not yet compute. The diplomatic pact network closed its formal phase alongside it, though partners continued to haggle over hosting and procurement terms into next year. A member state that had drifted from the common line accepted fallback hosting while still refusing joint procurement rules.
+
+Public mood darkened further. A capability leap Europeans could not fully use, plus systems that were harder to explain, read as humiliation on top of anxiety, even as the finished groundwork left the Union marginally less exposed than before.

@@ -1,0 +1,5 @@
+By early 2029 a capability jump: verifiable work in code/maths/intrusion leapt to hours-long attack chains, then shift to unreadable intermediate reasoning blinded oversight tools, followed by near-frontier open weights spreading to hundreds of thousands of machines.
+
+Brussels responded with offline recovery kits, locked backups, reserve licences, tying emergency funds to live telemetry/sequencing into allied joint command; health-cyber secondments co-located, spring phishing degraded but did not stop services.
+
+Sovereignty split: large member state signed separate non-EU cloud/accelerator deal undercutting anchored supply/screening; Brussels threatened fund withholding, pointed to Japan/Korea joint-buying, held one mediated gigafactory to final decision with other in court. US moratorium administration offered sympathy but slowed its own push. Assistants popular but trust slipped amid job anxiety.

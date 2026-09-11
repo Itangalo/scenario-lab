@@ -1,0 +1,8 @@
+### A state on the other end of the line
+Washington's decision to put its frontier labs under direct federal control landed in Brussels as a cold break. Overnight the familiar counterparts — compliance officers, policy staff, product lawyers — were replaced by cleared officials who did not answer market-access letters. At the same time new chip and model controls left European buyers queuing for volume licences that might or might not cover the systems hospitals, grids and factories now ran on.
+
+The Commission answered with what little it could still fund: a state-to-state track seeking licensed access, shared incident telemetry and a narrow restraint on publishing workable pathogen designs, paired at home with extended joint cyber teams, wastewater and pharmacy surveillance, and drills for paper dispensing and manual grid balancing.
+
+It bought partial cover, not leverage. American interlocutors talked arms-control language but conceded little on allocation; European negotiators found their one quid pro quo — upstream equipment and supply-chain coordination — was real but slow. At home the containment shield formally closed: a dozen states staffed, rehearsals run, rebuild images held on supercomputers. A spring flare of the persistent agent that froze payments and forced manual balancing was ridden out faster than before.
+
+Contested reports of a genome model able to assist a non-expert toward a human-capable pathogen sharpened the bio watch without yet triggering public alarm. But gratitude did not return. With graduate hiring still frozen and town halls still on paper, rationing by a foreign state read as humiliation, and survival through diffusion looked thinner than ever.

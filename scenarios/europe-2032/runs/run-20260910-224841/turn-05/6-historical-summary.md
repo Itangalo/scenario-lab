@@ -1,0 +1,5 @@
+Ransomware recovery held but stalled gigafactories, biosecurity screening, and left mid-sized towns fragile. By August a fast-spreading engineered respiratory pathogen overwhelmed ICUs in Lombardy, Catalonia and NRW, forcing border closures, school shutdowns, and Brussels to pause other work.
+
+Commission imposed mandatory DNA-synthesis screening, emergency procurement, redeployed cyber-recovery teams to hospital surge, and returned power/registries to islanded operation to sustain skeleton staffs. Essentials degraded but held in large states; smaller towns queued for triage and sick pay.
+
+Entry-level hiring collapsed in law, accountancy, software and customer ops; welfare-fraud AI in two countries found to systematically cut vulnerable claimants with seconds-long human review. A large western member state broke ranks with its own US hyperscaler compute deal, while US elected a president pledging to ration advanced AI access by tier. By December gigafactories were frozen in litigation and the Union functioned barely.

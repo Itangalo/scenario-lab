@@ -1,0 +1,9 @@
+By late 2028 EU dependence was exposed as US tiered-access throttled allied calls, hitting services weakened by January's automated ransomware sweep — Lombardy clinics to paper, Tallinn offline, Rotterdam stalled — with slow attribution.
+
+Brussels' emergency repair cell became the standing ENISA/Joint Cyber Unit backbone, pooling backups, hardware and CERT staff; services degraded not stopped where crews arrived. A certified behaviour-prediction monitoring aid cut false alarms and sped restoration without replacing capacity. Without funds, the Netherlands-Japan-Korea table kept limited hardware quotas and licences flowing; EU models offered to reintegrate the breakaway capital were refused. Five gigafactory permits stayed alive but unbuilt amid gaps, blockades and arson; police held perimeters, no forced restart.
+
+In H2 2030 frontier architectures turned illegible, breaking the EU monitoring technique overnight — forcing black-box testing, slower triage, costly activation inspection unready for municipalities. Offices still posted measured gains, strongest for juniors, without layoffs; early cutters rehired. Restored queues helped Brussels but did not mobilise voters.
+
+Washington then forced deeper lithography export and servicing cuts to older tools and wider customers; the Dutch complied to survive. Brussels called it humiliation but held back retaliation, leaving anti-coercion unused and narrowing the table to repair parts. Gigafactory zones stayed fenced and empty.
+
+Against that, the joint cyber command invitation with real-time telemetry was accepted: ENISA/JCU plugged the municipal roster into the shared feed with seconded analysts, safeguards winning over interior ministries. Attribution on the ransomware lineage quickened, though blind models limited prevention. By Dec 2030 the Union was better connected than built — held together where dark, still waiting to rebuild.

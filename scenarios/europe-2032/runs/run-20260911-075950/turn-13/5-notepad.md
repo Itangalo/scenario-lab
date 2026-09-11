@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: EU Civil Continuity and Human Fallback Network −2, priority has no effect and no cost as capital below 20 = −2
+PROPOSAL BONUS: EU Civil Continuity and Human Fallback Network (cat 6, small) +2 — answers recent unreadable agent incident and open release diffusion with executable fallback
+LEGITIMACY LENDS: capital 0, sentiment 5 -> +2 capped by collapse (applied after all other terms, capital remains below sentiment)
+SOVEREIGNTY: 11 last turn, no capacity event finish or in flight +0, us_labs_nationalised t13 −3 (largest of two capacity events, member_state_defection t13 not double-counted), capability rose 2.0 −1 = 7

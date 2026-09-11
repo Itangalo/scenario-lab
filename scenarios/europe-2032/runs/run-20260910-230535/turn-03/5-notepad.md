@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t3: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Critical Services Shield −3, EU Bio Detection and Synthesis Screening Net −2, EU Continuity Stack for Critical Services −2, priority −1 = −14
+PROPOSAL BONUS: EU Continuity Stack for Critical Services (cat 4, small) +4 — eu_frontier_access_denied fired this turn and this answers it directly
+LEGITIMACY LENDS: capital 22, sentiment 30 -> +2 capped by sentiment logic, included in capital total
+SOVEREIGNTY: 22 last turn, no capacity event other than eu_frontier_access_denied t3 −3, Continuity Stack in flight +0, capability rose 1.5 −0 = 19

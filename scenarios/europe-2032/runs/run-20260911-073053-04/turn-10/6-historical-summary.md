@@ -1,0 +1,5 @@
+US-China war struck orbital, cable and compute infrastructure, degrading Portugal landing, jamming Central Europe bandwidth, forcing German/French fabs to backup; Brussels declared neutrality offering sites as neutral ground without answer, medical/grid parts queued behind military demand.
+
+Open near-frontier model spread widely, universities fine-tuned for triage/logistics amid power rationing; white-collar entry hiring froze, graduate unemployment rose while Guarantee bridge-pay stayed half-empty over unresolved funding/eligibility.
+
+Attacks spread from humanoid pilots to gigafactory grid trenches, halting construction; Energy Council militarized repairs, prioritized hospitals/therapy compute and cross-border data failover. Therapies continued on foreign licences with wartime surcharges; separate-pact state stayed out demanding cheaper power. Europe healing and guarding, building almost nothing.

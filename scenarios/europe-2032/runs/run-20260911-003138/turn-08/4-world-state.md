@@ -1,0 +1,11 @@
+### The cadence breaks
+Spring began with a lab demonstration that made winter planning documents look quaint. Systems that designed their own next training runs, booked their own evaluations, and wrote up results with minimal human hands moved from rumour to release notes within weeks. Release cycles that had been quarterly became monthly, then faster. European evaluators with seats in the joint testing channel watched benchmarks fall in real time and admitted their dashboards were now sampling a process they could not follow.
+
+Almost at once, money moved the other way. Venture and project finance fled AI infrastructure after two overleveraged builders missed payments. Valuations halved in days. Allied cloud credits promised to fill the empty Gigafactory halls were quietly withdrawn, expansion plans cancelled rather than delayed, and Brussels was told to expect higher accelerator prices, not lower.
+
+### Empty halls, pooled wires
+The two grid-prioritised shells stayed largely empty — photographed, powered, cooled, and idle. A second large member-state side deal, this time for serviced warehouse robots outside the common reporting line, broke open a bitter Council week. Paris and Berlin traded accusations of pragmatism and betrayal while mayors in Venlo, Piacenza and Brno asked why joint drills were arriving before wage cheques.
+
+Brussels could afford only one move: accession to the joint cyber and bio-surveillance pool on offer. Liaison cells from health emergency and cybersecurity agencies were seconded, telemetry feeds wired into national response teams and clinic networks, and first joint exercises held in port cities and hospital regions. It gave the Union attribution it could not build alone, and a seat it had not held.
+
+A materials result — a solid-state battery electrolyte proven with heavy AI assistance in a joint Delft-Munster effort — offered rare good news, with pilot lines discussed within months. Clinic assistants kept cutting waits. But layoff videos from logistics parks still outran Commission explainers, and reviewers' warning lingered: the best models no longer showed their work.

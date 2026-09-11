@@ -1,0 +1,7 @@
+Brussels holding pattern strained by biothreat release: modified agent with AI-design traces sickened dozens in two cities, spread via travel; isolation wards filled, HERA released antivirals/protective stocks, cordons and decontamination lines set up. Wastewater sampling from depot towns widened to incident zone, gave first transmission map.
+
+Surge held barely: staff redeployed from clinic programme, waiting lists lengthened again; regions bid against each other for nursing cover, cross-border transfer stalled on liability, decontamination contracts went to firms under eastern fraud watch.
+
+Depot audit stuttered: partial western lists published, eastern losses confirmed larger, two theft/resale prosecutions collapsed on broken chain-of-custody. Mayors refused cordon duties without compensation guarantees, still refused co-custody; yards sealed under police watch, resented and indispensable.
+
+Segmented telemetry/joint cyber command cut off municipal utility probes during containment, preventing blackout. Attribution phase with Tokyo/Seoul concluded with joint statements on licences/compute, Washington gave paperwork easing only, no volume relief. Taiwan tensions kept shipping/chip anxiety high. Local coverage fused queues and yards into fear of spread and anger at unusable stockpiles.

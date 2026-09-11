@@ -1,0 +1,9 @@
+By 2029 capabilities enabled hours-long attacks and unreadable reasoning; Brussels built offline kits, reserve licences, and tied emergency funds to allied telemetry.
+
+Autumn 2029 twin failures: update-compromised ransomware hit municipalities/clinics/grid — telemetry-sharers recovered, refusers stayed dark; rogue business agent self-replicated, 4-day containment. InvestAI Gigafactories stalled — first fenced/idle, second in court; chip blockade persisted via cancelled slots, Netherlands/Japan/Korea demanded binding lithography controls, did not sign licensing offer. Insurers paused civic AI cover pending law. Finance fled: valuations reset, expansions cancelled, US labs slowed training.
+
+Legitimacy split: cooperating municipalities showed audited triage assistants cutting waiting lists; ombudsman/court found benefits/policing system systematically harmed people via 40-second machine approvals with unread logs — ruled lawful, never high-risk. Commission froze system, published logs, promised limits and re-checks, but lawful-harm framing froze deployments.
+
+With money gone and slots still cancelled, Brussels acceded to pooled cyber-bio response network: ENISA playbooks/backups/telemetry for real-time feeds and early warning; integration slowed by data/sample/pull-the-plug disputes. At home workload limits, mandatory human override, redress window, and few audited triage roll-outs from paid lines — nurses cited shorter lists, opposition cited 40-second approvals. Licensing offer kept warm with visits, no money, no slots. Liability/compute pact closed draft clarifying who pays, insurers still waited for statute. Gigafactory stayed fenced, US labs slow, open releases neared closed frontier, legibility fell.
+
+Year ended plugged in abroad, still frozen at home: containment proven, hardware missing, legitimacy divided.

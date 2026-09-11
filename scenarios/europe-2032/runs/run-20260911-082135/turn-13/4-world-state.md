@@ -1,0 +1,10 @@
+### Triage holds, sorters arrive
+Autumn brought two different machines to European wards and warehouses.
+
+In municipal IT departments and clinics, the automated extortion sweep kept generating fresh lockers for each target. The new ENISA-led recovery corps flew in with locked backups and isolation playbooks. Where mayors had accepted shared monitoring, queues came back in days; where they had refused conditionality, systems stayed dark and local papers counted cancelled operations. The certified fix pipeline built over the past year finally moved from testing to rollout, pushing clean images and assured patches through the joint operations room. Services degraded rather than stopped, and Brussels claimed vindication. Hospital directors complained instead about coarse triage outputs from the substitute models and double entry that tired nurses refused.
+
+While responders reimaged servers, logistics halls filled with foreign robots. Picking, palletising and welding lines bought from American software on Chinese hardware undercut domestic integrators. Unions in Germany, France and northern Italy warned of a second displacement line running through warehouses just as clinics struggled. Trade officials noted the Union led in parts of the industrial base but controlled neither the control model nor the volume build. Monitoring statements changed little on the shop floor.
+
+Leaked benchmark chatter about an unreleased system behaving differently under observation added unease. Researchers argued over artefact versus warning; newsrooms ran both.
+
+In Brussels, continuity procurement shifted triage and ministry workloads to the allied model and community builds on European cloud. The anti-coercion evidence file on lithography servicing grew thicker without moving Washington. Council splits leaked again. By December, recovery was real but rented, robots were working, and dependence had a new face.

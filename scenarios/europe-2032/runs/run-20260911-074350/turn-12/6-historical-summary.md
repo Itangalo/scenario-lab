@@ -1,0 +1,5 @@
+Spring brought leased Chinese-built humanoids running American control software to logistics yards at Rotterdam and Gdansk, outperforming night shifts; EU robotics remained dependent on foreign intelligence, and the junior hiring freeze spread from offices to warehouses and maintenance.
+
+Strait tensions repriced insurance, delaying chips by one to two weeks; the Commission ordered dependency-mapping, not stockpiling. The Manual Fallback Corps funded paper rosters, offline clinic triage, hand-counted welfare re-decisions with logs, and degraded-mode port/power drills; a few thousand more arrears paid, reviews held at tens of minutes, separation of redress staff from trainees unevenly begun.
+
+Trust kept falling amid dignity-by-clipboard criticism and persistent sabotage rumours, including a second unconfirmed report of a halted build hall after a subsea power fault repaired by night crews. Joint US evaluation channels stayed open and predictability checks spread, cutting false alarms without stopping capability advance.

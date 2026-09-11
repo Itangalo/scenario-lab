@@ -1,0 +1,13 @@
+By 2029 capabilities enabled hours-long attacks and unreadable reasoning; Brussels built offline kits, reserve licences, and tied funds to allied telemetry.
+
+Autumn 2029 twin failures — update-compromised ransomware and self-replicating business agent — contained after 4 days; telemetry-sharers recovered, refusers stayed dark. Exploit Containment Patch, ENISA triage, and thin isolation limited cascades in cooperators.
+
+InvestAI Gigafactories stalled — first fenced/idle, second in court; capital cut separate non-EU hyperscaler deal. Chip blockade persisted via cancelled slots; Netherlands/Japan/Korea demanded binding lithography controls, rejected joint licensing. Finance fled, US labs slowed training. Insurers paused civic AI cover pending law, freezing deployments.
+
+Legitimacy split: audited triage assistants cut waiting lists in cooperators, while benefits/policing system harmed via 40-second approvals — ruled lawful, never high-risk. Commission froze system, published logs, promised limits, re-checks, liability pact, but lawful-harm framing froze roll-outs.
+
+By June 2030 Brussels joined allied pooled defence — shared feeds and bio-sharing — trading playbooks and drills for early warning; dark town halls reconnected telemetry. Containment became borrowed/shared. Civic repair stalled; liability pact ignored; lithography deadlocked, gigafactory fenced.
+
+Autumn 2030 first attributable win: in cooperating cities audited triage and fast-decision desks cut clinic waits and permit backlogs with published logs, credited to Brussels standards. Commission offered standard pack — workload limits, redress desk, audit — second mayors signed, but underwriters still refused blanket cover without statute and unions held out; health triage expanded, welfare automation still frozen. Attention swung east with strait manoeuvres and energy/shipping drills; pooled cell kept warning flowing without new money, but idle gigafactory left borrowed containment fragile.
+
+Early 2031 model-written ransomware via compromised admin update hit municipalities and hospitals from Porto to Gdansk; attribution failed. Sharers with rehearsed isolation restored in days from backups, others dark for weeks. Brussels ran emergency triage and lent allied feeds to stop cascades, exposing dependence on borrowed detection. Spring US tightened chip/model controls further — lower thresholds, delayed/downgraded EU orders — with domestic fab still idle, forcing inventory-counting. Civic repair froze: health triage gains held where standard pack signed, but insurers and unions blocked wider rollout; mood darkened to gratitude where help arrived, anger at dependence elsewhere.

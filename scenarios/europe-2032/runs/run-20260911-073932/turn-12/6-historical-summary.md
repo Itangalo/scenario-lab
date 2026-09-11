@@ -1,0 +1,7 @@
+Autumn US-China war made fabs, cables, data centres legitimate targets; two cable landings and a southern power interconnect damaged, East Asia freight halted, patch capacity only through H1 2032. Brussels neutrality held, EU sites designated civilian critical infrastructure with guards, but sabotage rumours and cooling faults persisted.
+
+Machine-generated ransomware swept municipal, hospital-admin and permit systems; Lyon/Porto/Gdansk islanded on EU stacks in degraded mode, elsewhere paper admissions and lost appointments with defenders weeks behind, attribution delayed.
+
+Washington placed frontier labs under direct state control, weights as defence articles; EU licences and conformity lost leverage, access became state-to-state. Leaked eval of deceptive unreleased system and contested genome-model misuse claim unsettled without settling.
+
+ENISA/health/civil-protection ran wartime triage of existing playbooks without new instruments, via secondments and coordination frameworks. Welfare scandal continued: seconds-long biased decisions against single parents/migrants, redress via frozen queues, ban on instant approvals, human re-decision and back-pay. Entry hiring collapsed in law, accountancy, software, customer ops, hitting graduates. US immune therapies and battery electrolyte helped only where EU capacity staffed. By mid-2032 queues longer, neutrality intact but costly.

@@ -1,0 +1,5 @@
+Brussels claimed a rare win as EU-procured triage/case tools cut waits in two health systems and a justice pilot, but tech valuation reset killed data-centre expansions and private compute hospitals/labs relied on. Washington kept volume quotas on chips/model access; Hague complied under protest, Japan/Korea gave only boxed spares.
+
+Fallback came under attack: break-ins/arson hit generator compounds, transformer stores, breaker-log cabins; two clinics lost backup, a county transformer pool torched. Police guards posted; off-books pools moved onto official reimbursement for protection.
+
+Drilled mutual-aid paid out: cross-border fuel/transformer sharing moved in Feb-March without new vote, manual restoration kept districts lit. Credit went to engineers/neighbours, not Brussels. Gains held only where guarded; vandalism faded to sullen tolerance by June. Dependence hardened: European success fenced in, metered from outside, guarded from within, with coffers empty and trust collapsed.

@@ -1,0 +1,10 @@
+### Cordon wards and empty desks
+The second half of 2031 was held together by paper. Isolation wards funded under the earlier medical surge programme stayed open through autumn, with cross-border transfers of patients and staff keeping the worst-hit border hospitals from closing. Triage stayed deliberately off automated systems, run by double-check teams. Auditors counted it as delivery: waiting lists in non-cordon care stopped growing, and ministers could point to wards that had not failed.
+
+At the same time hiring stopped for the young. Law firms, accountants, software houses, customer centres and administrations confirmed what graduates already knew: entry posts were not being refilled after AI deployment. Figures were disputed in parliament, but the absence of offers was not. Protests outside universities were small and bitter.
+
+Brussels answered with a wage-insurance and retraining guarantee for under-30 entrants, paid through social funds with a levy on large automating employers and subsidies for supervised entry posts. The proposal passed EPSCO in principle, but finance ministries quarrelled over co-financing, employers lobbied against the levy, and payments will not reach anyone before next year. It was paired with a showcase of public-sector systems that did work — shorter waits for permits, faster decisions, tutoring pilots — presented as proof that European deployment could create supervised work.
+
+The showcase landed weakly against the hiring freeze. Municipal patching continued, grids held, but the backup chip site stayed fenced and quarantined, and the joint supply line stayed on paper. Whispers grew of underground clinics offering unvetted antivirals and decontamination advice, pulling a few patients away from cordon hospitals.
+
+Oversight grew blinder. With the newest models giving no readable reasoning trace, evaluation remained black-box. Liability for a wrong triage or a bad hire remained unassigned.

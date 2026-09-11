@@ -1,0 +1,7 @@
+Autumn US multi-day planning, self-improving tool-use systems obsoleted EU checklists; human review became formal. Fenced compute sites sabotaged under guard; firms stopped hiring juniors, graduate unemployment spiked.
+
+Trusted Adoption Dividend closed: permit/therapy assistants cut queues in Lyon, Porto, Gdansk on EU capacity, but chips late, half states stalled, hyperscale side-deal outside terms. Washington allied-access still drafting, no EU firm onboarded; Strait surcharges persisted. Union wage-insurance and 12-month placements launched but ESF+ slow, thousands vs tens of thousands missing.
+
+Spring brought EU-shared catalyst-design breakthrough and tailored cell therapies with first remissions in Lyon/Gdansk, but reliance on American models deepened resentment at dependence. Strait repriced after exercises/expulsion, chips slipped further.
+
+Ombudsmen exposed AI benefit-fraud/policing triage in three states flagging tens of thousands for cuts; sub-minute human approval, unread logs. Union froze queue, ordered human re-decision, back-payments, opened slow redress office. By June answer promised without speedy remedy. Placements reached low tens of thousands, uneven; hospitals/ports degraded but running.

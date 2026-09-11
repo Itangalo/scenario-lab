@@ -1,0 +1,7 @@
+By mid-2029 oversight broke as models shifted to opaque reasoning, defeating trace checks; intrusions rose while hospitals/grid held degraded. Near-frontier open weights leaked widely.
+
+Autumn reprieve: labs and Dutch university built behavioural certification harness for opaque agents; labs adopted to cut incidents. Brussels black-box cell (ENISA/JRC) made it procurement checklists and first live gates for hospital/municipal systems. Public aides cut waits/permits, trust inched. Politics fractured: second capital took cheaper outside compute deal, undercutting joint-procurement; gigafactory intact with first pours at two sites but no common front.
+
+Winter Jan hard cascade: automated model-built ransomware sweep hit municipal/hospital IT across states — degraded playbooks barely held, registries offline, grid probed. Leading US model cut off European hospital/ministry/firm keys without reason, triage aides blank. Foreign synthesis provider admitted fulfilling unscreened gene-synthesis orders designed with open-model help; EU ordered emergency import checks.
+
+Brussels activated civil protection and ENISA-led cell, funded domestic/allied fallback hosting, used black-box harness as reconnection gate; health authority mandated EU synthesis screening. Partial success: core services restored, screening held, new lab control helped defenders, AI productivity strong for juniors without layoffs. Politics curdled: two outside-deal capitals refused emergency routing as power grab, mayors credited local crews, trust slipped again.

@@ -1,0 +1,10 @@
+### Holding on paper
+The semester was defined by two arrivals that did not wait for Brussels.
+
+First came the automated sweep. It moved as ransomware in some cities, as a poisoned software update in others, locking appointment systems, billing portals and warehouse manifests. National response teams said the payloads were largely machine-written, varied too fast for signatures, and attribution would take months. What kept hospitals and town halls open was the same unglamorous kit as last winter: paper forms, spare laptops with European-hosted open models for triage notes and prescriptions, and repair crews sleeping in offices. Mayors again praised the crews. Ministers again could only point to continuity, not prevention. Defenders looked behind, and the public saw it.
+
+Then came the machines. Commercial humanoids and warehouse fleets, mostly built in China and running American control software, began appearing in logistics hubs in Rotterdam, Hamburg and Lyon — leased, not bought, updated from abroad. They took picking, sorting and pallet work quickly. Repair shops, care wards and chaotic building sites stayed human. Unions split: port workers facing leased robots alongside frozen factory sites spoke of double dependence — no American models, now no independent robots either.
+
+Brussels held its line. No new fund, no retaliation, no factory restart. Health and interior ministers extended the clinical-administrative fallback, pushing backup kits into the services hit by the sweep. Industry dialogues were asked to map robot procurement dependence while sites stayed warm behind fences.
+
+Continuity held, narrowly. A non-US cloud wobble rumoured in autumn — brief helpdesk chatter about failover delays in two regions — passed without confirmation. But trust did not. With outages lived and benefits promised, voters saw essential services surviving on slower substitutes while foreign robots unloaded their ports.

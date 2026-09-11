@@ -1,0 +1,10 @@
+### Holding without building
+Brussels started nothing, and for once no one in Council pretended otherwise. With funds dry, courts watchful and sabotage inquiries still open, the semester became an exercise in maintenance: keep the lights on, keep hospitals running, keep the freeze from becoming a rupture.
+
+Grid operators bore the weight. Redundancy lines around the two frozen sites held through winter and spring, though at higher cost and with guarded repair slots that satisfied neither builders nor vigil-holders. Police forensics on the interconnector attacks moved slowly; mayors used the delay to demand permanent protection budgets for substations. Energy ministries quietly reframed the siting fight as grid security, which cooled water rhetoric without unblocking a single permit.
+
+On bio and cyber exposure, agencies worked with what remained. Health authorities issued monitoring notes and triage updates, municipal IT departments largely filed away warnings not to install the mirrored frontier model, and university labs carried on as before. Hospital showcase wards still posted shorter waits; elsewhere queues lengthened under maintenance-only funding.
+
+The one shift came from ordinary white-collar work. Statistical offices in three large member states published matched studies: output per hour up in law, accountancy, administration and journalism, strongest among juniors, with employment steady. Employers cited adjustment rather than shock; unions cautiously agreed. Lenders who had priced a long automation boom marked down portfolios, deepening the investment retreat but easing public fear slightly.
+
+By June cohesion held on paper. Nothing had unfrozen, nothing had been funded, and Washington still offered sympathy rather than access. The Commission closed its two-year pledge to survive the cut-off and promised a next phase centred on health, energy and information repair before any new capacity push.

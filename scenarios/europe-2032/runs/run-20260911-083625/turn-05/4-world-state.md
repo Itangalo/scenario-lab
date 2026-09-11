@@ -1,0 +1,8 @@
+### Audits closed, leverage pooled
+Brussels spent the autumn closing the grid protection drive. Emergency teams stayed through December in the worst-hit hospitals and ports, spare-parts lists were handed to national budgets, and officials declared the programme complete. Operators were blunter: cascading blackout paths were narrower, but legacy controllers and unpatched clinics remained.
+
+The American vote dominated everything else. A candidate promising to hold advanced models as a national asset won, pledging tiered foreign access and tighter export reviews. The result landed in European capitals as confirmation that Washington would decide who receives what, and when. Eastern capitals called it a humiliation; Paris and The Hague urged calm.
+
+With money gone and bankers still absent from the five reserved gigafactory sites, the Union turned to pooling. Ministers mandated joint licence alignment with the Netherlands, Japan and Korea, a common ask for computing capacity in Washington, and shared testing through the new evaluation institute. The framework of middle powers holding chokepoints in lenses, chemicals and packaging gave Brussels its first joint bargaining table.
+
+It was leverage on paper more than capacity on the ground. Permits in Paris, Berlin, Madrid, Stockholm and Warsaw were preserved, nothing built. Power-price protests flared again near two sites, and polls showed the public reading the autumn as dependence managed, not overcome.

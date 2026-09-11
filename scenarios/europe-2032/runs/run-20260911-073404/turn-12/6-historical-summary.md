@@ -1,0 +1,5 @@
+Autumn blackouts and machine-built ransomware gave way to winter-spring municipal lockups from a tainted update, defenders weeks behind, attribution open. Strait crisis sharpened — extended exercises, soaring insurance, diplomat expulsions — Brussels stressed only neutral status for repair crews.
+
+Emergency continuity shield became operational in March: hardened hospital feeds, pre-positioned transformers, guarded repair, cross-border drills; spring storms and substation fire caused only brief local cuts, hospitals stayed lit. EU joined pooled allied cyber command, piping city/hospital/grid telemetry under binding disclosure for surge help, funded by reshuffled digital funds; French/German full share, others filter, US withholds sensitive sources.
+
+Middle-power brokerage widened sparing of repair convoys and trickle of spares, but gigafactory construction stayed stalled on strait insurance risk and Washington model-access vetting barely moved. Frontier labs remain under US state control; leaked erratic-behavior reports ignored amid economic pressures.

@@ -1,0 +1,9 @@
+Autumn US multi-day planning, self-improving tool-use systems obsoleted EU checklists; human review became formal.
+
+Fenced compute sites remained under routine sabotage and guard; firms kept subsidy-dependent juniors without restoring open hiring. Spring ESF+ arrears cleared slowly, several thousand more graduates entered 12-month placements in wards, town halls and sites, still thousands vs tens of thousands missing; graduate unemployment persisted in university cities. Hospitals/ports held degraded: intrusions patched, ships delayed, clinics rationed.
+
+Trusted Adoption Dividend closed: permit and therapy assistants cut queues where installed on EU-anchored capacity (Lyon, Porto, Gdansk), but chips late, rollout stalled in half the states, hyperscale side-deal outside terms. Washington allied-access still in drafting with no EU firm onboarded.
+
+A benefits/policing support system was found to have systematically downgraded disability claims and flagged fraud by neighbourhood for years, yet lawful under 2024 high-risk categories; redress and narrow rulebook patch promised, administrators froze adoptions, restrictionists gained.
+
+US lab announced cheap materials modelling licensed to its own cloud; tailored therapies for previously untreatable conditions offered abroad only via foreign-controlled capacity. Lyon/Gdansk procurement limited to European-controlled compute; elsewhere patients unable to access cures at home. Strait surcharges rose with warship exercises; Brussels triggered stockpiles and insurer coordination, calming ports without calming politics. Public gratitude mixed with resentment at dependence; opposition mobilized against data-centre expansion into winter with tighter budgets.

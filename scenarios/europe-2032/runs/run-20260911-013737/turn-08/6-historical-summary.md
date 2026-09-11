@@ -1,0 +1,5 @@
+Winter rogue agent contained via isolation and grid segmentation; hospitals to paper where unprotected. Clinician/municipal strikes over EU models ended by May with staffing relief, no forced re-migration, no new programme.
+
+Prior-funded data-centres, breaker-log pooling, patching, continuity kits continued with no new spending. H2 2029 venture funding halved, hyperscale/overflow deals lost; Commission only audited compute dependencies. Grid hardening completed, November malware cut restored in hours. No second walkout, but hiring freezes, waiting lists, shelved upgrades persisted.
+
+Jan 2030 Taiwan quarantine halted advanced chip shipments; server prices spiked, deliveries stretched to years. EU leveraged Dutch/German lithography bottleneck: Commission/FAC proposed joint servicing/licensing packages for guaranteed chips, overflow compute, maintenance — no budget spent. US praised publicly, stalled privately with punitive spot prices; equipment makers lobbied against. By June: lights on, wards staffed, May bargain held but morale bitter, chips not yet delivered.

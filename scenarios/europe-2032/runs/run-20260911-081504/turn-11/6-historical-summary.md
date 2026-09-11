@@ -1,0 +1,7 @@
+Second half of 2031 turned spring lessons into law but with patchy effect.
+
+Brussels mandated isolation of agentic tools and human sign-off for hospitals, payment offices and registries, with ENISA audits and telemetry-tied recovery funds, and made French-Dutch containment teams a standing pool. Large operators complied; smaller municipalities and subcontracted registries left approvals perfunctory due to staff shortages. Where gates held, October probing intrusions flickered out; where not, systems went dark again — rules on paper, uneven safety in practice.
+
+The single running programme neared completion without adding sovereign capacity: reserved EuroHPC time handed over, catalogues steered to European-hosted open models, migration drills routinized, giving cut-off bodies a fallback destination. Middle-power chip/export-licence alignment steadied deliveries, but private co-financing stayed away.
+
+Dependence persisted amid mixed foreign lab progress and continued lag on commercial benchmarks. Public mood stayed bleak despite shorter outages where gates worked and continued junior productivity gains, with graffiti and crowded siting-pause debates signaling resentment. Thin political capital and inspector shortages slowed enforcement.

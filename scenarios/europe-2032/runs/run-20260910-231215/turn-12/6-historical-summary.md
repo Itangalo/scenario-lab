@@ -1,0 +1,5 @@
+Taiwan quarantine halted advanced chip exports for years, turning AI into supply crisis; Brussels released warehoused mature chips to four domestic sites/hospitals, pooled export authorisations and chased overflow fab with middle-power partners — lines kept running but peak latency and union refusal of normalised night cover persisted.
+
+Siting fight hardened: blockades/cut fences halted two inference expansions, flyers naming substations; siting pact with rebates, apprenticeships, safety audits and 90-day review plus police-technician patrols — one site partially reconnected by June, other idle pending Council moratorium demanded by mayors.
+
+Welfare algorithm scandal: AI benefits system systematically cut/flagged thousands with unread logs, revealed never classed as high-risk — lawful but law seen as outdated for 2024. Defenders showed automated patching/swarm detection closing intrusion class; labs advanced battery coatings amid contested alarming genome-model result.

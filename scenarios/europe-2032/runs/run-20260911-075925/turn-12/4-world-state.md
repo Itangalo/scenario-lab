@@ -1,0 +1,11 @@
+### Holding the line with borrowed money
+Brussels spent the spring trying not to lose what it had just rebuilt. The graduates guarantee closed with its first real payments — small wage-insurance tranches and short conversion courses paid out of reprogrammed social funds. For a few thousand young graduates it meant a cheque on time. For unions and town halls it read as late and thin while hiring stayed frozen and council systems still ran on degraded protocols.
+
+The containment hold became the whole strategy. HERA money kept sealed wards staffed through the tail of the pathogen containment in two member states; ENISA teams and national response units pushed clean backups back into municipalities and rehearsed manual fallback in grids and emergency rooms. A fourth wave of automated intrusions locked billing and administrative systems again. Lights and emergency care stayed on, barely, but defenders were again patching after machine-built tooling, and the shared telemetry pool delivered faster signatures, not protection.
+
+### A capital goes its own way
+Midway through the semester, one capital broke ranks. Ministers there announced a direct arrangement for compute access and cyber support — presented at home as pragmatism to keep hospitals and services online, read in Brussels and abroad as proof the common line could not hold.
+
+The Commission chose not to punish. It offered the breakaway capital privileged access to pooled signatures, rebuild time on shared supercomputers and continued retraining payouts if it stayed inside dependency audits and incident reporting. The deal kept containment cooperation alive, but at a price everyone could see: emergency coordination now ran on opt-ins, and Washington's new state-control system for frontier labs dealt with Europe capital by capital, briefing Brussels after decisions were taken.
+
+Therapy lines kept dispensing, fever wards emptied slowly, and gratitude never returned. Streets stayed angry at dark services, jobless cohorts and sealed clinics — and at a Union visibly holding, not leading.

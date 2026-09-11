@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: M14 EU Decision-Scandal Redress and Oversight Enforcement −2, M15 EU Middle-Power Compute and Defence Leverage Compact −2, priority −0 (capital below 20, no effect, no cost) = −4
+PROPOSAL BONUS: EU Middle-Power Compute and Defence Leverage Compact (cat 8, small) +1 — answers supply-chain coercion pressure and builds on defensive breakthrough, but coalition benefits indirect and not last-three-turn shock
+LEGITIMACY LENDS: capital 3, sentiment 11 -> +2
+SOVEREIGNTY: 13 last turn, no cat4 finish +0, no cat4 in flight +0, middle_power_coalition t13 +2, capability rose 0.8 −0 = 15

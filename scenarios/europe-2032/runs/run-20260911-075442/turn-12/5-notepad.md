@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: EU Wartime Neutrality Shelter and Lifeline Continuity Operation −2, EU Lifeline Accession to Joint Cyber-Bio Response and Middle-Power Supply Bloc −2, EU Island-and-Restore Continuity Hold for the Capability Jump −2, priority −1 = −6 (priority without effect or cost as capital 19 below 20, charge is measures only, priority cost not charged)
+PROPOSAL BONUS: EU Island-and-Restore Continuity Hold for the Capability Jump (cat 6, small) +3 — capability_jump fired this turn and this answers it directly to hold services
+LEGITIMACY LENDS: capital 21, sentiment 20 -> none, capital higher
+SOVEREIGNTY: 14 last turn, no capacity event, no cat4 finishes, no cat4 in flight +0, capability rose 3.5 −1 = 13

@@ -1,0 +1,11 @@
+### The weights get out
+Winter brought the release Brussels had feared since the autumn grid probe. A new openly downloadable model, only months behind the closed frontier, spread to hundreds of thousands of machines in its first week. Security researchers quickly showed it could draft the same kind of slow, low-noise intrusion scripts found in transmission operators, ports and water systems the previous year. What had required patience and skill was now a download.
+
+The Commission used the shock to move. The evaluation institute became its stated priority, with hiring notices and demands for privileged access to foreign models as the price of high-risk market access. Parallel work on factory sites continued — state-aid clearances, grid pledges from five capitals — but no concrete had cured the budget strain.
+
+### Shielding the essentials
+The new move was a cyber shield for essential services, pushed through network-security rules and the EU cybersecurity agency. The two compromised grid operators, the affected port and water utility were first in line: mandatory segmentation audits, round-the-clock detection reporting to the common response network, and funded exercises in isolating grids and running on backup.
+
+Operators welcomed the funding and resisted the timetable. Industry groups warned of audit costs piled on energy bills; transmission engineers warned that segmentation of live systems could not be done in months without risking the outages it was meant to prevent. By June, audits had started and first drills were scheduled, but no system had been re-architected.
+
+Faint signals coloured the mood. Mayors near two proposed factory sites complained about power prices and water use, with lawyers cited in local papers. Several firms and a public administration reported degraded service on a US cloud platform during peak hours, blamed in whispers on quiet throttling for domestic load. Neither story was confirmed, but both circulated in Council corridors as warnings of what building while exposed would cost.

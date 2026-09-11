@@ -1,0 +1,5 @@
+Tailored therapies reached clinics in France, Spain, Poland on certified European systems with scaled triage assistants, shifting narrative from frozen graduate hiring, but doses, scheduling software and models licensed abroad with California-set queues — healing by permission.
+
+One member state signed separate foreign compute/robot pact with discounted capacity and early humanoids; finance ministers quarrelled over Guarantee funding; Commission launched middle-powers supply and evaluation club for pooled bargaining and mutual test recognition, offered re-entry on better terms but with no compulsion on labs/vendors. Gigafactory grid priority stayed stalled.
+
+Chinese humanoids to full commercial port/warehouse shifts; German/Italian blockades hardened, two pilot-site night fires reported as unconfirmed sabotage; robotics register unenforced, certification lagged, mayoral bans persisted. Frontier labs continued unattended self-directed releases, Brussels evaluating after the fact.

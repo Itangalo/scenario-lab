@@ -1,0 +1,12 @@
+### Down services, guarded fences
+Autumn brought an automated ransomware sweep across municipal systems in several member states. Water billing, appointment scheduling, permit portals and a hospital records cluster went dark for days. Backups were clean in the large cities, corrupted or unreachable in smaller utilities. ENISA teams shuttled between town halls, restoring manual fallbacks while queues lengthened. Attribution slipped away into months of forensic hedging. Everyone understood the tooling had been machine-written.
+
+At the same moment, the two narrowed gigafactory sites stalled. Coordinated blockades — local anti-data-centre groups, union stewards angry at foreign warehouse machines, activists denouncing dependence on Washington — chained gates, blocked transformer deliveries and cut site power. Contractors invoked force majeure as financing repriced around them. Capital fled AI build-out globally; valuations halved, expansion plans were cancelled, and co-investors behind European compute quietly withdrew.
+
+### The chokepoint used by someone else
+Washington then ordered a further cut in lithography exports and servicing, reaching back from leading-edge tools to the older machines used for ordinary chips. The Hague protested, complied in practice, and asked Brussels for cover. Brussels answered with anti-coercion language and no surrender of export controls, which preserved its legal line and changed nothing on the factory floor.
+
+A member state broke ranks, signing its own cloud and model-access arrangement with an American hyperscaler on cheaper, looser terms. Paris and Berlin called it pragmatism turned defection; the capital in question called it keeping the lights on.
+
+The new restoration taskforce got teams into the worst-hit municipalities and police lines around the two sites. Concrete poured again in short windows between protests. The flagship compute programme was declared delivered, the municipal pact declared closed — both celebrated in Brussels while boil notices, insurer letters and waiting lists persisted outside it. A contested biosecurity paper warning that genome models could guide a non-expert toward a viable human pathogen circulated among specialists, unnoticed by a public already exhausted.
+By December, services were back but brittle, sites guarded but slow, and American talks still interim.

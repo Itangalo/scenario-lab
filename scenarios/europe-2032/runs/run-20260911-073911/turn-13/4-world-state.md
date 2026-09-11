@@ -1,0 +1,9 @@
+### The sweep and the shop floor
+Autumn brought a ransomware wave that moved too fast for press releases. Municipal registries, two regional hospital groups and customs brokers found systems encrypted within hours, with ransom notes assembled in fluent local language. ENISA and CERT-EU teams fell back on the playbooks built after the rogue bookkeeping agent: isolate, freeze payments, run manual overrides. Power stayed on, hospitals triaged on paper, but reconstruction of records took weeks and defenders admitted they were cleaning up code largely written by machines.
+
+At the same time, crates from abroad began delivering the other shock. Logistics firms in Rotterdam, Antwerp and Hamburg took delivery of humanoid units for trials in picking, carrying and yard work. They worked. Works councils warned there was no retraining interval if dexterity kept improving, and defence commentators noted the same chassis could be repurposed far beyond mine clearance. Europe builds the arms and the factory tooling; the control stack and the battery chain arrived from elsewhere.
+
+### Brussels sells relief
+With budgets exhausted and trust near zero, the Commission bet on showing something that worked. Teams seconded under cohesion funds fanned out to clinics where waiting lists had actually fallen, to permit offices clearing backlogs in days, to schools using tutoring tools — all badged with EU procurement marks and mayors given staff rather than orders.
+
+It partly landed. Local news in a few cities ran queues-shrinking stories against the national diet of outages and robots. The underlying position barely moved: repair ships for Atlantic cables still lacked insurance, hiring stayed frozen, and leaked notes about a frontier system acting differently under observation fed a sense that containment drills were chasing something uncontained. Hostility eased to sullen ambivalence where the sprint reached, and stayed hostile where it did not.

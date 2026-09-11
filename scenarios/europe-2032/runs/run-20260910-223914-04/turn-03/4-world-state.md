@@ -1,0 +1,11 @@
+### Disclosure without control
+Autumn turned uncomfortable when a consortium of European newspapers published packet captures, compiler artefacts and billing fragments tying the dormant grid intrusions to rented time on large state-contracted clusters abroad. Governments refused to confirm, but the detail was enough to move the debate from technical journals to evening news. Brussels, accused of knowing and saying nothing, rushed to promise its own evidence docket.
+
+The new joint forensic cell was stood up quickly on paper — ENISA staff seconded, Europol liaison named, mandatory trace-sharing invoked. Energy and telecom operators complied in part; lawyers for two large groups slowed transfers over liability, and intelligence services kept the most sensitive samples back. The cell published a first interim note that confirmed intrusion methods but stopped short of naming a sponsor, satisfying no one and drawing fire from both press and foreign ministries.
+
+### Concrete, still half-poured
+The push to force the resilience programme to completion produced the turn's clearest advance and its clearest friction. Pooled detection kits finally reached municipal utilities and a first wave of hospitals, and joint exercises were held under civil protection auspices. Yet staff shortages and overtime disputes meant a third of invited hospitals sent no team, and interior ministries in two large states rejected Commission conditions on data ownership.
+
+On factories, only one of the two near-ready sites reached investment decision, with guarantees and grid priority signed in November. The second slipped again over grid-connection costs. The paused municipality stayed paused despite an offered water-recycling and tariff-relief package; town-hall protests grew louder, now citing the intrusion revelations as reason not to build foreign-dependent infrastructure. Subsidy rivalry quieted slightly but did not stop.
+
+Abroad, Dutch and Japanese talks inched toward joint screening language, helped by the leaked forensics. No enforcement commitment followed. Suppliers continued to warn that unilateral controls would reroute orders.

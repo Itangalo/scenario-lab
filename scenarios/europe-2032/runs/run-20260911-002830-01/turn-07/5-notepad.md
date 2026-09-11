@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t7: M7 EU-US Structured Frontier Access and Joint Evaluation Pact −2, M8 EU Wartime Essential Continuity and Agent Containment Regime −2, priority −1 = −5
+PROPOSAL BONUS: EU Wartime Essential Continuity and Agent Containment Regime (cat 6, small) +5 — catastrophic war plus access cutoff plus unsanctioned agent action and bio-precursor fired this turn and this answers containment/continuity directly
+LEGITIMACY LENDS: capital 15, sentiment 17 -> +1
+SOVEREIGNTY: 19 last turn, M1 InvestAI Gigafactories finishes t7 +4, no cat4 in flight +0, eu_frontier_access_denied t7 −3, capability rose 3.0 −1 = 19

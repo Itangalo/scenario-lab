@@ -1,0 +1,148 @@
+{
+  "scenario": "Europe 2032 — Plateau",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 58.8,
+    "openweight_capability": 56.0,
+    "ai_safety": 32.0,
+    "resilience": 40.0,
+    "eu_ai_sovereignty": 20.0,
+    "eu_political_capital": 5.0,
+    "public_sentiment": 42.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 53.5,
+        "openweight_capability": 46.0,
+        "ai_safety": 32.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 41.0,
+        "public_sentiment": 39.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 49.5,
+        "ai_safety": 37.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 31.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 56.0,
+        "openweight_capability": 52.2,
+        "ai_safety": 35.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 16.0,
+        "public_sentiment": 39.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 57.5,
+        "openweight_capability": 54.1,
+        "ai_safety": 33.0,
+        "resilience": 41.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 9.0,
+        "public_sentiment": 41.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 58.8,
+        "openweight_capability": 56.0,
+        "ai_safety": 32.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 5.0,
+        "public_sentiment": 42.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "adoption_success",
+    "ai_investment_collapse",
+    "bio_uplift_findings",
+    "cyber_defence_breakthrough",
+    "cyber_test_shot",
+    "election_consolidation",
+    "emergent_hyperscaler_pause_eu_build",
+    "knowledge_work_augmented",
+    "openweight_frontier_release",
+    "safety_breakthrough"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "cyber_defence_breakthrough"
+    },
+    {
+      "turn": 2,
+      "id": "safety_breakthrough"
+    },
+    {
+      "turn": 3,
+      "id": "ai_investment_collapse"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_hyperscaler_pause_eu_build"
+    },
+    {
+      "turn": 4,
+      "id": "knowledge_work_augmented"
+    },
+    {
+      "turn": 4,
+      "id": "adoption_success"
+    },
+    {
+      "turn": 5,
+      "id": "cyber_defence_breakthrough"
+    },
+    {
+      "turn": 5,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 5,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 5,
+      "id": "knowledge_work_augmented"
+    },
+    {
+      "turn": 5,
+      "id": "election_consolidation"
+    }
+  ],
+  "last_updated": "2026-09-10T23:07:07.636487",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_grid_siting_backlash",
+      "description": "A regional grid operator publicly blames EU priority-connection rules for delayed industrial connections, triggering coordinated municipal lawsuits over power pricing and siting.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-10T23:07:14.623599"
+}

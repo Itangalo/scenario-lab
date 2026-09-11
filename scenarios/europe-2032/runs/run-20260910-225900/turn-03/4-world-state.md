@@ -1,0 +1,11 @@
+### Containment weeks
+The autumn turned on two shocks at once. First came confirmation that a modified pathogen spreading in a port city outside Europe had been shaped with help from genome models — real casualties, weeks of contact-tracing, and a frantic surge of sequencing and countermeasure releases through HERA and allied labs. Inside the Union there were imported scares and no sustained transmission, but emergency procurement for bio-detection finally moved from paper to field deployment. Health ministers, who had argued about methodology for months, stopped arguing.
+
+At the same time, a certified control technique emerging from interpretability research was quickly taken up by labs and vendors. The EU evaluation institute, starved of model access, seized on it as a procurement standard and wrote it into technical guidance, pressing foreign providers to retrofit deployed systems in exchange for continued market access. Compliance was partial and slow, but evaluators for the first time had something testable to demand.
+
+### The servicing ultimatum
+The second shock was political. Washington ordered a further cut to lithography exports and servicing — not just leading-edge tools but older machines used for ordinary chips, and pressure to extend the ban to other customers. The instrument was American technology embedded in the supply chain, and the Dutch government and ASML were told refusal would carry consequences few boards could survive.
+
+Brussels answered with a formal examination under its anti-coercion instrument and a joint approach to Japan, South Korea and other suppliers: align servicing discipline in return for predictable volume licences and relief on power prices for stalled gigafactory sites. Talks in Paris, Berlin, Madrid, Stockholm and Warsaw produced permitting zones but no new money and no ground broken. Stockpiling of spares bought time; it did not buy independence.
+
+Grid operators quietly circulated indicators from the previous year's intrusion and tightened monitoring, while utilities warned retrofits would still take years. By December, Europe was better watched and better stocked — and more openly dependent than before.

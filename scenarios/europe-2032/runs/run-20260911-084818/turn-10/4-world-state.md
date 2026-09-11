@@ -1,0 +1,13 @@
+### Containment weeks
+The deliberate release came in late winter, and for weeks no briefing could say where it would stop. Hospitals that had only just relearned paper charting sealed wards, reopened isolation rooms, and ran tracing by phone and ledger. Cross-border medical cover was drawn from the EU Care Continuity and Cross-Border Medical Surge work stood up in earlier turns, but activation was partial and slow: teams moved only where emergency health powers and prior liaison existed, walkout regions remained thinly covered, while stockpiled protective equipment and antivirals were released centrally in tranches.
+
+It held, barely. Treatment backlogs grew again, elective care was cancelled in several regions, and exhausted staff described double-check procedures as the only thing between fatigue and error. Backups restored the previous autumn kept power and dispatch from cascading, but did not keep clinics functioning normally.
+
+### Blind oversight
+At the same moment, the leading models stopped showing their work. Developers presented illegible internal reasoning as a performance gain; for regulators and hospital safety officers it read as a loss. Oversight routines that relied on reading machine reasoning ceased to work, leaving only black-box testing and slow laboratory inspection. Existing audit standards were suspended in several hospital systems and safety review boards deferred certifications, eroding accumulated safety stock without destroying any compute base.
+
+Brussels therefore began a phased withdrawal from automated triage. The order was issued as a low-cost directive to take full effect over the next turn, with pilots for manual sorting in the worst-affected wards this turn. The early shift avoided one class of failure and created another: manual sorting was slower, inconsistent, and openly contested over liability, and most wards remained in mixed operation through June.
+
+Money did not return. Data-centre plans stayed cancelled, Taipei shipments stayed quarantined, factory payments stayed frozen, and the member state that had cut its own hyperscaler deal kept it, accepting only limited logging of surge use through European infrastructure. Ministers who had toured recovery stories in 2030 now fronted cordons and queues.
+
+The public registered fear more than reassurance. Coverage of casualties, sealed wards and unreadable systems drowned out any account of absorption. The Union kept services standing through the containment, but poorer, more frightened, and still unable to enforce a single supply line.

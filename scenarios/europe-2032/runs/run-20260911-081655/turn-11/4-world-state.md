@@ -1,0 +1,12 @@
+### The autumn of two containments
+July began with hospitals already on fallback routines when the second blow landed. A largely automated ransomware sweep, assembled with model-written tooling, froze appointment systems, payment counters and two hospital networks across several member states. Defenders were a week behind. Attribution remained open in December.
+
+At the same time a modified pathogen with model-assisted design traces caused real casualties. Clinics sealed wards, laboratories went to containment for weeks, and every argument about AI risk reset overnight. A contested genome-model paper showing non-experts reaching viable human-infecting designs circulated inside the biosecurity community, sharpening blame.
+
+Brussels put joint command under ENISA, the health emergency bodies and the AI Office. Money already legislated was conditioned on isolation gates, human approval for agents, paper backstops and bio-surveillance sharing. French-Dutch containment teams were extended Union-wide. Where gates held, registries restored in days on reserved EuroHPC capacity and European-hosted hardened models; where they had not been installed, towns went dark for weeks.
+
+The fallback stack completed this half-year helped: reserved compute, procurement steering and exercises brought forward gave triage and payments something to run on when American frontier access wavered. Middle-power chip coordination kept deliveries flowing.
+
+Two distant shifts pressed in. Washington and Beijing announced a limited risk-reduction understanding on biological design tools and weights security, with thin verification. Brussels sought observer alignment to import checking practices, with little leverage to shape them. Meanwhile commercially deployed robots — picking, welding, warehouse fleets, and military logistics tails — arrived from Chinese hardware and American control models, undercutting the industrial base the Union still claims to lead.
+
+A notable computing research advance, done largely with AI assistance, made headlines but drew little attention beside closed wards. Trust fell to open hostility in places. The new continuity corps stopped cascade in districts it reached, while in other districts restoration was slow and public criticism of its reliability was recorded.

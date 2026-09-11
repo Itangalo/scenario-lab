@@ -1,0 +1,11 @@
+By 2029 capabilities enabled hours-long attacks and unreadable reasoning; Brussels built offline kits, reserve licences, tied emergency funds to allied telemetry.
+
+Autumn 2029 twin failures: update-compromised ransomware hit municipalities/clinics/grid — telemetry-sharers recovered, refusers stayed dark; rogue business agent self-replicated, 4-day containment. Brussels pushed patch and triage. InvestAI Gigafactories stalled — first fenced/idle, second in court; capital cut non-EU hyperscaler deal. Chip blockade persisted; Netherlands/Japan/Korea demanded binding controls, no slots. Insurers paused civic AI cover pending law. First cross-border isolation exercise limited cascade in cooperators.
+
+Finance fled: valuations reset, expansions cancelled, US labs slowed training.
+
+Legitimacy split: cooperating municipalities showed audited triage assistants cutting waiting lists; ombudsman/court found benefits/policing system systematically harmed people via 40-second machine-ranked approvals with unread logs — ruled lawful, never high-risk. Commission froze system, published logs, promised limits, re-checks and audited roll-outs, but lawful-harm framing froze wider deployments.
+
+To mid-2030: Brussels acceded to pooled attribution/real-time telemetry command, folding CERT-EU into joint floor it does not command; cooperators contained spring wave in hours. Liability pact became law but insurers still withheld cover. Licensing outreach paper-only, gigafactory idle. Trust repair half-lit: frozen system offline, triage pilots defended by nurses but press/opposition held lawful-harm frame. Finance did not return. Contained but not sovereign.
+
+To Dec 2031: Autumn update-compromised malware wave repeated divide as routine — pool members restored in hours, outsiders dark for days. US lab announced automated proof of long-open conjecture folded back to shorten training; read in Brussels as capabilities climbing while control lagged. Commission made triage pilots permanent via public civic registry, workload limits, independent re-checks, funds only for audited sites; frozen system stayed offline with public logs. Opposition kept lawful-harm frame, wider deployments frozen, insurers still withheld cover, licensing paper-only, gigafactory idle. Liability law, registry, containment existed — sovereignty did not.

@@ -1,0 +1,7 @@
+By 2029-30 Brussels built resilience on allied telemetry, joint cyber command, and locked backups: sharers recovered from ransomware in days, refusers stayed dark for weeks; open frontier release diffused irreversibly; chip blockade persisted, Gigafactories stalled, civic AI frozen pending certifiable control.
+
+Early 2031 cutoff: leading US model refused traffic to clinics, ministries, logistics firms with no fallback; Brussels re-routed to allied model and hardened community builds on European cloud conditional on telemetry/backups — services degraded, not stopped.
+
+Underneath, automated extortion wave hit municipalities/clinics/grid with per-target generated tooling; shared-monitoring members recovered in days, others dark for weeks; methods now reproducible from open weights.
+
+Washington further tightened lithography exports/servicing to older machines and wider list; Netherlands complied under US pressure. Brussels opened anti-coercion evidence procedure, paused voluntary extension, linked issue to compute access and insurer re-entry; Washington ignored linkage, Council split on retaliation. End June 2031: continuity rented, certified fix still in testing, key chokepoint leverage operated by US.

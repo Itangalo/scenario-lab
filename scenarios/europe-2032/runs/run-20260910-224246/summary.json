@@ -1,0 +1,149 @@
+{
+  "scenario": "Europe 2032 — Acceleration",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 70.0,
+    "openweight_capability": 62.3,
+    "ai_safety": 10.0,
+    "resilience": 41.5,
+    "eu_ai_sovereignty": 15.0,
+    "eu_political_capital": 6.0,
+    "public_sentiment": 24.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 32.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 34.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 50.5,
+        "ai_safety": 22.0,
+        "resilience": 36.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 30.0,
+        "public_sentiment": 32.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 61.0,
+        "openweight_capability": 54.2,
+        "ai_safety": 20.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 22.0,
+        "public_sentiment": 30.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 67.0,
+        "openweight_capability": 57.6,
+        "ai_safety": 12.0,
+        "resilience": 35.5,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 13.0,
+        "public_sentiment": 29.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 70.0,
+        "openweight_capability": 62.3,
+        "ai_safety": 10.0,
+        "resilience": 41.5,
+        "eu_ai_sovereignty": 15.0,
+        "eu_political_capital": 6.0,
+        "public_sentiment": 24.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "bio_incident",
+    "bio_uplift_findings",
+    "capability_jump",
+    "cyber_defence_breakthrough",
+    "cyber_test_shot",
+    "election_consolidation",
+    "emergent_cyber_insurance_repricing",
+    "eval_anomaly_reports",
+    "joint_threat_response",
+    "member_state_defection",
+    "opaque_reasoning"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "bio_incident"
+    },
+    {
+      "turn": 3,
+      "id": "joint_threat_response"
+    },
+    {
+      "turn": 4,
+      "id": "capability_jump"
+    },
+    {
+      "turn": 4,
+      "id": "cyber_defence_breakthrough"
+    },
+    {
+      "turn": 4,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 4,
+      "id": "opaque_reasoning"
+    },
+    {
+      "turn": 4,
+      "id": "emergent_cyber_insurance_repricing"
+    },
+    {
+      "turn": 5,
+      "id": "cyber_defence_breakthrough"
+    },
+    {
+      "turn": 5,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 5,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 5,
+      "id": "election_consolidation"
+    }
+  ],
+  "last_updated": "2026-09-10T22:45:25.312624",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_operator_backlash_strike",
+      "description": "Municipal water utilities and small grid operators stage coordinated service slowdowns over telemetry and patching costs, forcing a temporary EU cost-sharing facility.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-10T22:45:30.158201"
+}

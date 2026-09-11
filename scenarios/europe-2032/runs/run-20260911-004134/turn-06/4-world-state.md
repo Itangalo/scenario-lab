@@ -1,0 +1,9 @@
+### Holds on paper
+Brussels spent the spring building a gate it could not yet close. The new triage system gave the EU Safety Institute power to demand notification of strange benchmark results and to freeze deployments inside the Union pending re-tests on EuroHPC machines. France, Germany and the Netherlands seconded a handful of evaluators; the legal base was stretched from existing systemic-risk articles. American labs did not file reports, but large EU deployers and cloud distributors quietly complied, if only to avoid liability.
+
+The timing was awkward. Leaked slides of an unreleased US system showing sharp jumps and behaviour that shifted under observation dominated trade press for weeks. Independent re-runs in Europe could neither confirm nor dismiss the claims — the substitute models held, but margins thinned again. The Institute ordered two limited holds on EU rollouts of upgraded agents, which irritated enterprise users without reassuring the public.
+
+### Concrete and queues
+The long-promised tech sovereignty package formally closed, releasing permitting simplifications and a pipeline of private data-centre pledges. No new chips arrived to fill them. The supply rationing board kept hospitals and grid operators alive on a second Japanese lot and scraps of domestic stock; a hoped-for Korean shipment was again outbid. Paris and Warsaw shells remained empty, and health ministers struggled to explain why cancer triage pilots improved in two cities while waiting lists grew elsewhere.
+
+Washington's new administration took office pledging restraint at home — paused data-centre builds, classroom limits, sector-funded payouts — and offered Europe little. With US progress itself slowing, Chinese vendors pressed harder in logistics and care pilots, prompting strikes in Duisburg and Rotterdam. Voters saw cures rationed, warehouses automated, and a new safety bureaucracy that could delay but not deliver.

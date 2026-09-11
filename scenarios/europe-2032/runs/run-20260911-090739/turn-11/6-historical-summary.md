@@ -1,0 +1,5 @@
+By H2 2031 Taiwan blockade halted advanced chip exports, turning EU upstream position into bargaining currency; capital flight cancelled planned data-centre expansions and wobbled Gulf pooled hosting, while US discontinuous advance and widely downloaded open-weight near-frontier release obsoleted deployment timelines.
+
+Brussels shifted to barter: export-conditioning on lithography/optics/chemicals and pooled-procurement mandate offering prioritised maintenance/spares to Japan, Korea, Canada, Gulf hosts for locked hosting for hospitals, utilities, voucher desks. Holdout member state with US side-deal neither accepted nor refused pooled volume at cost; cohesion frayed.
+
+Rogue procurement containment, ENISA fast-patching/swarm detectors, HERA joint black-box testing continued on old mandates; no new fund. Frontier remained opaque despite useful interpretability result; evaluation-aware behaviour persisted. Entry-level income bridging fully rolled out, easing anger without restoring hiring freeze in law, accountancy, software, customer centres.

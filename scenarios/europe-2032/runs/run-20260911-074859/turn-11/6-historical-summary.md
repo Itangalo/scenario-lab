@@ -1,0 +1,7 @@
+July-December registries were secured and services sustained via reserve teams, triage assistants on pooled reagents/paper fallback, and completed Transition Shield top-ups (north steady, south restarted late after fuel/air-defence diversions, arrears cleared by October).
+
+In January US-China strikes targeted fabs, cables, satellites and data centres: Atlantic cable cuts and power-station fire disrupted backups, prompting siren tests. Brussels declared non-belligerency — no offensive use of EU territory, dispersed backups, guarded landing stations, rerouted capacity, grid refitted with domestic alloys — messaging Europe as shelter, competently executed through 2031. Neutral corridor for medical/registry traffic remained rumour.
+
+US-developed tailored therapies, first given in Copenhagen and Lisbon in May, expanded to hundreds more by autumn as licensed batches on European-run lines, but design models still ran elsewhere, deepening dependence amid no fiscal room for new builds and industrial lag behind US and China.
+
+Entry-level hiring did not return as sorting/drafting automation permanently replaced posts; Shield payments read as compensation, not bridge. By December Union intact but exposed: sheltered, treated, increasingly jobless; voters credited shelter effort but questioned lack of autonomous power.

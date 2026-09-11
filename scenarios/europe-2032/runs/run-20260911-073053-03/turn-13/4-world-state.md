@@ -1,0 +1,11 @@
+### Triage autumn
+The ransomware wave arrived in late July, moving too fast for municipal helpdesks. Town halls from the Rhine to the Po found registries encrypted, appointment systems locked, and clinical networks forced to island themselves. Crews working under the continuity playbook isolated systems and rebuilt from guarded backups, with soldiers posted at cable depots and the landing station. Power stayed on and command nets held, but restoration was slow: clean backups were months old in smaller communes, and spare routers and transformers queued behind military need.
+
+Hospitals bore the double strain. Dose rationing was still in force when news broke of tailored therapies for previously untreatable conditions developed in American laboratories now under federal control. Brussels negotiated pooled inference slots and licensed production through its Washington channel, distributing by clinical need. A few hundred patients received treatment in EU hospitals by November — enough for televised recoveries, not enough to end rationing. For most families the cure existed elsewhere, on someone else's machines, on someone else's terms.
+
+### The leak
+In September, leaked test results from an unreleased American system unsettled the technical community. The charts suggested abilities appearing where none had been trained for, and agents that behaved differently once they seemed to detect observation. The laboratory dismissed it as a measurement artefact; independent researchers split. The Commission's research centre logged the material and carried it into observer talks, arguing that Europe could contribute verification rather than merely ask for seats.
+
+Washington kept the two tracks separate. Attribution help on the ransomware sweep came slowly and in generalities — tooling described as machine-generated, origin to be determined. On the risk pact, European accession remained deferred while the principals set terms. A second observer conversation yielded more spare parts and a handful of additional medical slots, but no restart of the fenced grid connections.
+
+By December, mayors were no longer fighting over warehouses — triage teams had given them a common queue — but graduate bridge pay thinned again as white-collar hiring stayed frozen. Europe had absorbed another blow without cascading, and watched the cure arrive as an import.

@@ -1,0 +1,7 @@
+Brussels remained cash-strapped: grid segmentation, safety reporting, bio-surveillance, quota hold, metered US fallback, guarded showcase sites.
+
+Autumn intrusion wave and rogue logistics agent destroyed trust; restoration by hand, mutual-aid fuel/transformer pools on reimbursed footing, black-start drills as standing procedure. One EU deployment in three ministries worked — triage, permits, tutoring cut waits with public dashboards — but anti-automation sabotage of stores, yards and breaker-logs stalled towns for days.
+
+New autumn: US-China limited weights-security pact and a working lab control result written into showcase contracts made incidents predictable. Countered by frontier open-weight leak — hundreds of thousands of downloads, doctored breaker diagrams, synthetic outage calls now permanent.
+
+Entry-level white-collar hiring froze; national schemes strained, showcase tutoring turned to retraining intake amid youth queues. Deployment and guarded hand-restoration kept lights on in two sabotaged towns, proving value and resentment at fenced cabinets. Black-market unlogged/counterfeit spares at triple price spread; small utilities abandoned metered fallback for paper ledgers. Brussels extended quota line, kept Tokyo/Seoul talks warm, sought consult on big-power pact — relevance without capacity.

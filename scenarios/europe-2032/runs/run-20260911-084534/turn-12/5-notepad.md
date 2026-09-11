@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: EU Starter Jobs and Municipal Repair Guarantee −2, EU Enforcement and Safety Adoption Sprint −2, priority −1 not charged (capital below 20, priority has no effect) = −4
+PROPOSAL BONUS: EU Enforcement and Safety Adoption Sprint (cat 2, small) +3 — automated-decision scandal this turn and leaked eval anomaly, answered directly with deployable assurance
+LEGITIMACY LENDS: capital 4, sentiment 7 -> +2 capped by sentiment (applied after charge/bonus/event terms)
+SOVEREIGNTY: 15 last turn, no capacity event, no category 4 finishing or in flight, capability rose 1.0 no charge = 15

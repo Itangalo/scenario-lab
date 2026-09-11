@@ -1,0 +1,11 @@
+### The reasoning goes dark
+Autumn brought the announcement labs had been trailing for months: the best-performing models no longer thought in words. Performance jumped, but the readable step-by-step traces Brussels had built its certification gate around turned to noise. Safety teams in Berlin, Paris and Amsterdam confirmed the EU's interpretability checklist no longer covered what hospitals and ministries were actually buying. Black-box tests remained; confidence did not.
+
+At the same moment, Washington tightened chip and model exports again and voted to treat frontier AI as a held asset. In European capitals the two shocks fused into one fear: opaque models rented on rationed access. CIOs kept their pilots running — the office gains were real — but legal departments froze new rollouts pending word on licence tiers.
+
+### Showcase pays, sites wait
+Brussels did what it could with what it owned. Budget and Legal finally cleared the replication kits for the hospital backlog and permit pilots, with money strictly conditional on completed joint drills. Queues fell again in the two hospital networks where pooled detection was live, local papers credited a European decision, and mayors cut ribbons. The EU-cloud fallback held through winter peaks, still slow, still queuing triage cases.
+
+The gigafactory file did not move. Energy and digital officials kept one region in talks over written price and priority guarantees linked to hosting Showcase inference, but forced no siting vote. Around other candidate sites, councils, residents and grid operators compared notes, shared lawyers and refused connections until households and hospitals were protected first. The finishing dates for the factory programme now look unreachable, though no date was formally moved.
+
+The Continuity Switch formally closed, its fallback authorisation carrying over. Services in exercised pilots degraded rather than stopped under renewed probing, but big cities still missed deadlines and coverage stayed partial.

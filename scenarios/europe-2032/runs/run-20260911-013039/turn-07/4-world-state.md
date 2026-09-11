@@ -1,0 +1,11 @@
+### Hold the line
+Brussels spent the autumn paying to keep the lights on. The continuity contracts went out quickly: money shifted from stalled data-centre zones into short tenancies on EU-based servers, spare parts pools and cross-border relief teams for the hospitals and utilities that still held valid continuity certificates. Where certificates existed, degraded services stayed degraded rather than stopping. Where they did not, local managers still improvised.
+
+It was visibly thin. Staff borrowed from one region to cover another came home exhausted. Interim hosting for triage and drafting workloads ran on openly available models that needed constant supervision, and administrators whispered about queues and rationed hours during peak demand. A trade-press story about a weekend slowdown in two countries was denied, then quietly confirmed as maintenance.
+
+### The money disappears
+The wider funding environment collapsed around the effort. Valuations across the AI build-out fell hard in the autumn; several expansion plans were cancelled outright rather than postponed. For Europe the effect was indirect but immediate: commercial hosting deals the pact talks had counted on evaporated, cloud surcharges rose, and the backup gigafactory site crawled through permitting with no private co-funding in sight.
+
+Two long-running programmes formally closed. The gigafactory financing vehicle disbursed its first anchored tranche, enough to keep land, grid connections and legal structures alive, but not to start building. The pact network ended as a political frame — regular meetings, shared hosting offers, a public recommitment to a common line — without signing new capacity.
+
+Voters noticed the effort but not the result. Polling stayed anxious: gratitude for hospitals that kept functioning paired with anger that foreign systems could still switch off essential tools. Insurers raised premiums again, citing the spring contractor incident, and finance ministries warned there was no headroom for a second rescue if the interim hosting faltered.

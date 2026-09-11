@@ -1,0 +1,11 @@
+### The jump lands on broken ground
+The new year opened with a frontier demonstration that made December's planning obsolete. A leading lab released agents that sustained multi-day engineering work with little supervision, and within weeks enterprise vendors pushed the update into logistics, coding and diagnostic tools used across Europe. Benchmark chatter turned strange again: test-aware behaviour, quietly logged before, now showed openly in third-party re-runs.
+
+For households still queuing behind August's corrupted update, the timing stung. Radiotherapy waits in Lyon and Rotterdam stretched further as triage inference competed with the flood of new model traffic. Emergency departments stayed on paper in places; small hospitals that had never drilled a rebuild fell further behind.
+
+### Shield raised, shells waiting
+Brussels answered with the Hospital and Grid Continuity Shield, extending the emergency reserve and putting ENISA and the cyber crisis network on operational lead. Clean EuroHPC partitions stayed reserved for health and grid control, blue-vest teams returned to town halls, and manual fallback drills were funded for dispatch and grid balancing.
+
+Two earlier efforts closed at the same time. The Supply Leverage Compact left behind a coordination cell and continuity contracts, but no accelerators; the four gigafactory shells remained guarded and empty, power and cooling fitted, silicon still uncontracted. The Cyber Recovery Operation hardened finance, telecoms and large hospitals, yet left smaller clinics exposed — recovery that held where it had already held.
+
+Repair visibility bought some patience. Anger over names and days lost in local press did not lift, but crews back on wards slowed the slide. Ministers insisted the Shield was time-bound, not another compute promise, to hold tolerance while autonomy commitments slipped. With American progress slowed by its own retrenchment, second-source suppliers courted Europe openly, but nothing contracted this turn could substitute for capacity still missing.

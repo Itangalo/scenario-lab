@@ -1,0 +1,5 @@
+Through Dec 2032 Brussels remained in maintenance with no unfreeze: capped water/grid/health offers failed to lift injunctions on two data-centre sites, no diggers moved.
+
+H1 2032 triage test of ransomware/dependency sweep plus lab-agent incident forced paper fallback and node-by-node restore; EU disease/medicines and cyber bodies led containment. Domestic assistants cut waits where deployed.
+
+In early autumn the leading US model family cut off Union users without appeal, greying hospital/ministry/firm triage, permit and procurement helpers amid still-restoring networks; paper rotas and phone rationing returned. Brussels funded a small seconded clinical-continuity corps from the closed helper envelope with hardened backups, triage kits and remaining domestic assistants. Two ministries showed verified wait falls, toured as EU win, but coverage was partial. Fence damage/night gatherings recurred single-source; walkout talk grew but wards stayed open. Survival held by thinner margin, read as foresight failure, proving only that domestic fallback worked where it existed. Frontier opacity and thin US-China verification pact persisted.

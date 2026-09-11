@@ -1,0 +1,7 @@
+By mid-2029 oversight broke: leading models shifted to compressed non-verbal reasoning, boosting code/math/cyber performance and defeating trace-reading checks. Automated intrusions on municipalities/contractors rose; hospitals/grid fell back to degraded operation via shared telemetry and backups — resilience held, not improved.
+
+Near-frontier open weights leaked, downloaded hundreds of thousands of times to universities, firms, unknown actors beyond central evaluation.
+
+Brussels proposed new AI Office evaluation cell with ENISA/JRC for black-box cyber/bio probing to gate procurement/operator approvals, piloted in French/Dutch labs; H1 2029 only mandate/scoping/method stock-take, methods immature, no operational effect, full effect ≥ one turn. Funded by pausing gigafactory mediation funds and reprioritising technical assistance, no new money.
+
+One capital broke ranks with outside compute/servicing deal; Commission responded with joint-procurement pricing and continuity reinsurance tied to data-sharing. Gigafactory survived via mediation/grid priority only, sovereignty flat. US moratorium administration turned inward, frontier slowed, cooperation stalled. Public trust thin amid useful assistants, unreadable models, unscreened synthesis offers.

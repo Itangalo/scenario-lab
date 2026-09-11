@@ -1,0 +1,10 @@
+### The lights stay on, barely
+The attack came in late summer as a rolling wave, not a single blow. A compromised maintenance update carried automated ransomware into municipal networks, hospital logistics and payment processors in a dozen member states. Screens went to ransom notes written in fluent local language. Grid operators islanded segments; hospitals reverted to paper triage and hand-carried prescriptions. Defenders were days behind the tooling, and for a week no one could say how far the bad update had spread.
+
+Brussels put a single crisis cell in charge. Playbooks written for blackouts and biological shocks were dusted off: manual dispatch, islanded wards, ENISA teams moving city to city, civil-protection convoys carrying spares from stockpiles built during the strait blockade. Power and water never stopped outright, but queues lengthened and elective care was cancelled through autumn.
+
+Restoration ran on what was already inside the Union. Washington tightened chip and model licences again, keeping allied buyers on volume licences while cutting others off entirely. In practice that meant paperwork, quotas and no new frontier imports for months. Engineers in Lyon, Porto and Gdansk rebuilt services on anchored machines and on audited open models already held locally — slower, but not subject to a foreign licence desk.
+
+The placement corps, formally closed this turn, became restoration hands. Thousands of young workers on twelve-month terms staffed help desks, carried files between wards, and logged restoration street by street. Where they appeared, anger softened; where services stayed dark, mayors blamed both the attackers and a Union that could not replace what it had lost.
+
+By December the backlog was clearing. Attribution remained open, insurers counted losses, and the lesson most repeated was stark: essential services had degraded without collapsing, but recovery had depended on improvisation and old hardware, not on new capacity arriving from abroad.

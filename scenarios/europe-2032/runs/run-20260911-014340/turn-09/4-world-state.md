@@ -1,0 +1,11 @@
+### Holding without building
+July to December 2030 was run as a holding semester. With no new instrument tabled and no priority named, energy and health directorates kept existing grid segmentation, pooled telemetry and sequencing standards live through the autumn. Operators reported another season of probing around substations contained without a blackout. Maintenance worked; nothing advanced.
+
+### Rationed from outside, frozen from below
+In the autumn Washington tightened chip and model licences again. This time the new paperwork drew the line so tightly that allied buyers were rationed alongside adversaries, with volume caps, end-use attestations and queueing for the most capable accelerators and hosted models. Brussels mapped exposure from existing trade and defence envelopes but triggered no new build. Suppliers told European industrial customers to expect slower allocations and higher prices into 2031. The member capital that had kept its separate supply deal kept cheaper inference; continuity offers tied to returning to the common line again went unanswered.
+
+At the same time, municipal utilities in two member states suspended new data-centre grid connections after street protests over water use and blackout fears. The freeze caught already-permitted sites meant for sovereign capacity. The Secretariat-General opened dialogue rather than overriding permits, while justice officials ran an ombudsman-led redress and log audit for the benefits and policing scoring scandal from existing funds and paused forced switches to European-hosted tools where clinics warned referrals would break.
+
+The combination landed hard in public. Talk of being rationed abroad while unable to connect at home read as humiliation. Councils that froze connections were cheered locally and condemned by industry; arson and break-ins at compounds continued as open investigations. Frontier systems abroad moved forward again and mirrored open weights narrowed the gap.
+
+By December essential services were still running, but the Union closed its two-year commitment with less trusted capacity, less cohesion, and no room to start.

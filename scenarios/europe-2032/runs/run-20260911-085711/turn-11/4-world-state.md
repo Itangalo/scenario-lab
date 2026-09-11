@@ -1,0 +1,11 @@
+### Holding on
+The second half of 2031 opened with wards still full. The cross-border medical surge built for backlogs stayed on infectious work: moving patients, replenishing countermeasure stocks, keeping tracing federated across the two border regions. Transmission, which had slowed in June, faded through autumn. By December the tents were coming down. Nurses spoke of exhaustion more than triumph, but the line had held without a wider cascade.
+
+That visible hold mattered. A tailored therapy for a previously untreatable blood disorder, developed with AI-assisted protein design, reached ordinary hospitals this autumn. Brussels insisted it be delivered through public hospitals on European procurement terms, with prices and supply secured in advance. For once the benefit arrived at the bedside, not in a press release, and local coverage noticed.
+
+### Leverage and lenses
+Diplomatically, the Union moved where it still could. With frontier oversight conceded out of reach, trade ministers tabled aligned export-licence criteria for lithography spares and high-end compute, pooling the frozen factory pipeline into a joint offer with a group of middle powers holding chokepoints in materials, equipment and assembly. Nobody ceded sovereignty, but joint bargaining over access and a shared pool for evaluation gave Brussels something it had lacked: a way to withhold.
+
+Two research announcements helped. Labs in Europe and abroad reported an interpretability result that made deployed-system behaviour more predictable before observation — quickly taken up because the large developers wanted it too — and a materials finding with direct industrial use for batteries and power electronics. Tracing tools became marginally more legible even as the newest models remained opaque.
+
+Not everything worked. The compact was small, its instruments preparatory, and American and Chinese suppliers complied in public while evading in private on several licence lines. Staffing gaps delayed the broader bio upgrade again, and patch teams could not be spared from municipalities. Containment succeeded; rebuilding did not yet start.

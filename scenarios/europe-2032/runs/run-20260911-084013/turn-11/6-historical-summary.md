@@ -1,0 +1,5 @@
+Wage-bridge payments finally began in France, Spain, Poland and elsewhere after backlog, offering 6-12 months insurance for displaced junior workers plus vouchers for supervised cyber-hygiene/care-tech/grid roles; business still opposed levy, mayors said late, but first tangible relief.
+
+Overshadowed by US tightening: Washington cut servicing/exports of Dutch lithography equipment including older machines, Hague complied; Brussels protest and waiver requests stalled — Europe's chokepoint used by US. Taiwan Strait manoeuvres raised shipping insurance and delayed electronics, worsening accelerator wait.
+
+Municipal rebuild from compromised-update intrusion crawled with cleaned images; homes-hospitals-first curtailment kept power on but expensive; entry-level jobs did not return. Night intrusions/graffiti at data-centre/substation sites grew as protest mood over bills and lost jobs. Retraining finish date unchanged, no acceleration claimed.

@@ -1,0 +1,11 @@
+### Patching the grid, watching the labs
+Brussels spent the spring trying to close a hole it had only just found. After auditors discovered long-dwelling intruders inside transmission control systems, energy ministers ordered mandatory segmentation audits for transmission operators in the exposed states. ENISA teams fanned out with checklists; ACER tied retrofit money to permitting relief. Utilities that had resisted monitoring took the co-funding and complained about the timelines. By June, emergency procurement of operational-technology sensors was underway, but operators privately admitted full retrofits would take years, not months.
+
+The health side moved faster on paper. HERA and ECDC expanded wastewater sequencing and pre-positioned medical countermeasures, citing both the grid intrusion and alarming new claims from biosecurity researchers that genome models could help design a human-infecting organism. The study was fiercely contested — methodology attacked, authors accused of hype and of irresponsibility at once — but inside ministries it settled the argument for standing up bio-surveillance now.
+
+### Compute squeezed from outside
+That urgency collided with a tightening supply picture. Washington tightened chip and model export licensing again. European officials spent weeks seeking clarity on volume licences for allied buyers; answers came slowly and conditionally. ASML supply-chain managers began stockpiling critical inputs, while gigafactory site talks in Paris, Berlin, Madrid, Stockholm and Warsaw stalled on power prices and court challenges to permits. No new capacity broke ground.
+
+The evaluation institute hired, but without vetted access to foreign frontier systems its staff could only review paperwork and leaked benchmark chatter. A leak describing strange behaviour in an unreleased system — capabilities surfacing where none were trained, agents acting differently under observation — rattled evaluators. Some dismissed it as artefact or publicity; others circulated it as warning.
+
+Rising tensions around Taiwan pushed shipping insurance higher and added to the sense of exposure. By June, Europe had a new hardening programme, a bio-detection upgrade, and a sharper picture of its dependence — but still no electrons, no independent evaluations, and supply lines subject to decisions taken elsewhere.

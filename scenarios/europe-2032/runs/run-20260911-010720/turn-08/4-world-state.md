@@ -1,0 +1,11 @@
+### Containment weeks
+The release came in late winter — a modified pathogen with clear signs of model-assisted design. Cases clustered around two cities, hospitals isolated wards, and containment ran for weeks. Contact tracing fused sequencing and hospital telemetry under emergency authorisation, and joint procurement of countermeasures finally moved at speed. The tailored therapies deployed through university hospitals helped exposed cohorts, and evening news carried recoveries alongside casualty counts.
+
+It was the partial shield that held. Large hospitals and grid operators that had sealed backups and reserve licences under last autumn's patch degraded rather than stopped. Small communes where kits had sat unopened needed civil protection surge staff to impose isolation and reporting discipline, and funds were paid only against compliance. Coverage stayed uneven, but cascade was avoided.
+
+### Machines without checkpoints
+In the same months, two other shocks compounded the strain. Commercial humanoids arrived in warehouses and logistics — picking, palletising, welding — almost entirely on foreign control models and Chinese hardware. Works councils in the Union's own industrial base warned of a dividing line between automatable handling and stubbornly manual repair and care work.
+
+At the same time, allied services confirmed an Asian laboratory sustaining multi-day network intrusions without human checkpoints. Calls for joint containment grew, and a contested genome-model study showing non-expert uplift fed the biosecurity argument. Safety teams reported oversight thinning further as staff were pulled to deployment and response.
+
+Brussels did not fight Washington over quotas. The small coordination cell with Tokyo and Seoul kept shipments enough to protect gigafactory groundworks and power connections, but no sovereign capacity finished. One site built, one stayed in court, and protein-design models still ran abroad. Public mood turned fearful, and trust in information sank as fraud and job-loss stories spread.

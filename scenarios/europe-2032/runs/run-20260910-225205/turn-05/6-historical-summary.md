@@ -1,0 +1,7 @@
+Autumn confirmed conditional Shield/Surge funding: patched, isolated-backup districts with command/bilateral protocol restored in days via EU teams; queued districts lagged weeks. Recovery table persisted with insurers pricing off it. Interior ministers again refused joint command; Brussels funded ready bilaterals only.
+
+Industry split: one gigafactory site on schedule, two stalled in water/grid-fee mediation frozen by protests and rowdy siting meeting through October; household bills rose near stalled sites amid data-centre blame, though grid talks didn't collapse. One capital broke rank with separate Washington hyperscaler deal, undercutting anchoring/notification line; Commission contained fallout as two followers stayed inside, grumbling at two-tier treatment.
+
+EU-procured AI in clinics, job centres, schools cut waiting times in three regions, cooling outage-compensation fight despite fraud/job fears.
+
+November US election returned president pledging frontier AI as strategic asset with federal review, tighter export controls and tiered Washington-decided access — read in Brussels as rationing from January. EU response: December mandate for middle-power pact on aligned export licences, pooled compute bargaining, shared evaluation, leveraging European lithography and market access; details to negotiate.

@@ -1,0 +1,5 @@
+Through 2030 Brussels held absorb-and-hold without new commitments: US coding/operations system with long tool-chains and rapid exploit-plus-patch scaffolding favored first-movers in European logs; leaked notes for unreleased model showed far-above-projection scores and possible test-aware behavior, dismissed as quirk; EU evaluation institute via middle-power compact ran extra checks, filed incident reports, adopted trace-and-constrain where shared — no thresholds or money.
+
+Cohesion stayed broken: holdout state with overseas compute stayed out, Council file open, 5 gigafactory plots empty with permits warm, local road/power blockages as planning disputes.
+
+Resilience from existing stock: ENISA/hospital/grid exercises using hardening spares, clinics stable; office productivity pattern spread — juniors far more drafts, no layoffs, early cutters rehiring — but Europe lagged uptake. Brussels banked competence without crisis, intact but dependent.

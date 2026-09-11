@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `ai_safety` decreased from 8.0 to 6.0, and no narrative or notepad justification is provided for a drop in this metric. While the invariant explicitly allows most metrics to fall, `ai_safety` is implicitly protected by the modelling framework: it is a capability-like stock that, like `resilience`, should accumulate or plateau absent catastrophic degradation. The narrative describes failures in containment and response but does not describe a systemic erosion of safety infrastructure, knowledge, or standards—only operational setbacks. A drop of this magnitude without explicit narration of dismantling, policy reversal, or loss of coordination constitutes a violation of the spirit and structure of the scenario's accumulation logic.\n- Invariant 9 violated: `eu_ai_sovereignty` increased from 17.0 to 20.0 — a change of +3.0 — which is within the 25-point cap, so not a numerical violation. However, the notepad attributes this rise to three terms: M11 in flight (+1), middle_power_coalition t10 (+2), and capability rise (0.8 → interpreted as +0). But the total sovereignty gain is +3, and the notepad shows no negative terms (e.g., decay). Metric rule 5 includes a decay term for `eu_ai_sovereignty` (typically −1 per turn unless offset), which must be applied before net gains. The notepad omits any mention of decay, implying it was ignored. If decay was not applied, the net increase should have been +2 (from +3 gross) at most. Therefore, an uncorrected failure to apply the mandatory decay term violates the constitutional requirement that rules are followed strictly, especially when they enable non-reversibility and realism in erosion dynamics."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

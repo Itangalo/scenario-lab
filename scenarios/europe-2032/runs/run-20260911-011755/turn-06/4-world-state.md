@@ -1,0 +1,10 @@
+### The winter of two shocks
+January brought a ransomware sweep stitched together by automated tooling. It moved through municipal systems, two hospital networks and a port logistics platform within hours, exploiting the unpatched controllers the autumn drive had flagged but not replaced. Emergency teams redeployed, backups held in some cities and failed in others. Daily technical notes from Brussels kept information flowing, but mayors spoke of defenders running behind machines.
+
+As recovery dragged into March, a second blow landed in capitals. A large member state signed its own access arrangement for advanced compute, outside the common ask Washington had been given. The Commission opened a cohesion procedure and offered the joint licensing terms as a return path, but the deal stood. Other capitals read it as proof the common line could be bypassed. That defection eroded the sovereignty position by 2 points.
+
+Washington's new administration took office on its promised doctrine: advanced models treated as a national asset, foreign access tiered, export reviews tightened. European requests were routed into a queue with conditions attached.
+
+The one delivery was now power, not just paper. The technology sovereignty framework completed its legal passage, securing planning zones in Paris, Berlin, Madrid, Stockholm and Warsaw and activating the private-capital vehicle with an initial first-close commitment alongside reprogrammed InvestAI funds to begin site preparation and grid connections. Officials called it a foundation now being built on; builders noted permits were secured and early works starting. That completion adds +4 to sovereignty this turn, which net of the -2 defection leaves sovereignty at 17, even as political capital and public sentiment collapsed.
+
+By June, power-price protests had merged with anger over disrupted clinics and the side-deal. Polls showed trust collapsing. Brussels kept the middle-power licensing table alive with Dutch, Japanese and Korean partners, but with unity broken, it was management of dependence, not its end — sovereign capacity rising while political standing fell.

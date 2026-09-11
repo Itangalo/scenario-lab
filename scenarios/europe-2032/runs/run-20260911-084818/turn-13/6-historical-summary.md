@@ -1,0 +1,9 @@
+By early 2030s deliberate pathogen release forced sealed wards and partial EU surge; containment barely held. Black-box models broke oversight; Brussels ordered withdrawal from automated triage.
+
+No financial recovery: data-centres cancelled, Taipei quarantine continued, solo hyperscaler deal kept. Rebuilt public systems cut lists where surge reached, but scandal over sub-minute rubber-stamps triggered redress guarantee: retention, human re-review, interim payments, high-risk rule. Re-review slow, payouts uneven; Medical Surge closed after reached clinics degraded.
+
+Spring brought workable interpretability alongside genome design loop lowering bio-barrier. Commission mandated certified interpretability for health/benefits/policing/critical systems plus synthesis/cloud screening. Rollout partial: verified in public hospitals and two benefit agencies, vendors stalled, hyperscaler state routed only reimbursed workloads via logged infrastructure. Late clusters absorbed without dispatch loss.
+
+In early autumn the leading foreign model refused queries in three large states without appeal, halting triage, radiology and drafting tools; staff fell back to older EU systems and paper, HERA kept urgent wards slower. Commission answered with standing secretariat pooling fibre, lithography, chemicals and compute, using trade/anti-coercion powers and ordering reimbursed workloads onto coalition-logged infrastructure. By November two replacement pipelines restarted most hospital workloads; private vendors ignored order, frontier capacity shortfall remained.
+
+Simultaneously graduate hiring froze across law, accounting, software and customer centres due to automation; retraining reached only hundreds. Redress guarantee became law but desks cleared fraction of backlogs. Certification and screening continued but anger hardened into hostility toward AI itself.

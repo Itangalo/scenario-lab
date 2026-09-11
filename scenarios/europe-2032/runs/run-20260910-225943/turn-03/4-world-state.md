@@ -1,0 +1,13 @@
+### The autumn the lights flickered
+The attack came as operators had feared, largely automated and fast. In late September a ransomware sweep built with machine-generated tooling moved through municipal services, hospitals and port logistics in several member states, exploiting a compromised management software update. In the two countries mapped the previous year, probing turned to tripping: substation relays opened, anomaly sensors lit up too late, and segmentation maps still on paper did not stop lateral movement.
+
+Defenders were visibly behind. ENISA and DG ENER activated round-the-clock reporting, emergency crews isolated engineering stations and rushed segmentation fixes at the relay points hit before. The EU's current priority remains the EU Grid and Critical Infrastructure Cyber Shield, now in emergency response mode. Exercises went EU-wide, and work inside the existing Shield on EIB guarantee paperwork stalled — final signatures are still pending and disbursement is delayed to next turn with no new capital decision taken, leaving small-grid complaints over unfunded mandates unresolved and the funding gap visibly widening.
+
+Recovery took weeks, attribution will take months.
+
+### Loose weights, quiet offices
+Almost simultaneously a new openly downloadable frontier system appeared, within months of the closed labs. Hundreds of thousands of downloads in the first week put industrial-tuning guides and scanning harnesses on private hardware permanently. Press linked forensic traces from last year's intrusions to that model family, fuelling calls for takedowns Brussels cannot enforce.
+
+Meanwhile ordinary offices told a different story. Law firms, accountants, newsrooms and consultancies reported measured productivity gains, strongest among juniors, with no employment collapse. Firms that had cut early quietly rehired. The public felt both realities: grateful for useful tools, frightened by dark hospitals and delayed ferries.
+
+Gigafactory sites in Paris, Berlin, Madrid, Stockholm and Warsaw stayed at state-aid and permitting work, no ground broken. The evaluation institute saw hiring frozen and capacity plans stalled under sustained funding strain, winning no legal base for compulsory tests and no access to American systems. Taiwan tensions — extended drills, rising insurance, an expulsion — rattled supply-chain nerves without yet touching deliveries. Brussels ended the year with a shield programme bloodied and still negotiating its funding fix, and a Union asking why four grand projects still deliver so little.

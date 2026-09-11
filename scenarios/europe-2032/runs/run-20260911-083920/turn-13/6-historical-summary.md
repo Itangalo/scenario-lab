@@ -1,0 +1,5 @@
+Autumn 2032 ransomware with machine-generated tooling hit municipal booking/payroll/hospital admin: rebuilt towns recovered in days, stalled third closed and lost appointments; mutual-aid and continuity kept power/hospitals running but responders seen behind intruders, attribution unresolved.
+
+Health gains held and spread: European-server diagnostics expanded from three hospitals to GP networks with clinic-level waits published, still credited to Brussels as sole clear gain.
+
+Other fronts frayed: US chip/model controls rationed allies, raising prices/queues; one capital made side cloud deal seen as break in common line. Campus blockades forced moratorium debates; Commission pause plus audits calmed one city, hardened two others. Contested genome-model study stayed specialist-only; Taiwan Strait exercises raised shipping insurance. By Dec 2032: services restored where rebuilt, health waits falling, but consent thin and capacity borrowed.

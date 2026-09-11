@@ -1,0 +1,12 @@
+### The paper that changed the meeting
+Autumn brought a preprint no health minister had asked for: a genome model sketching a viable human-infecting design, with methods detailed enough that a skilled non-expert could follow. Virologists fought over methods in journals and on panels; editors were accused both of hype and of handing out instructions. Inside Berlaymont, the argument that mattered was shorter: with capable open models already on private servers across Europe, a recipe once published could not be recalled.
+
+### Shield pays, factories stall
+The continuity shield finished in time to matter. Manual-override drills in the two probed grid states became funded staffing rosters, hospital fallback pipelines got ENISA-secured reporting lines, and a health ministry in the east finally cleared its permit backlog. Services still ran degraded, but the autumn blackout playbook now existed on paper and in rosters.
+
+The longer builds did not move. State-aid clearances for factory sites sat signed while grid-connection queues lengthened; water-permit hearings in three host regions turned into shouting matches about prices and consumption. Private co-financing for data-centre zones again failed to close, with investors citing power costs and unclear demand. The evaluation institute opened a bio-uplift testing track, but without access to the American frontier it tested only European-hosted open models — useful for detection, toothless for assurance.
+
+### A surge bought without a fight
+Brussels chose the one thing it could fund without new law. HERA and the disease control agency were tasked to contract public-health labs in a dozen sentinel states for continuous wastewater and clinical sequencing, link results to secure reporting, and pre-position diagnostics and protective stocks from emergency health funds. Health ministers, offered money rather than mandates, signed.
+
+Clinicians welcomed cover; mayors in factory towns asked why sequencing money arrived while grid pledges pooled in Paris and Berlin. Southern capitals called the pattern familiar: protection for all, capacity for few. By December, swabs were being sequenced, stocks were moving — and dependence on the cut-off American model remained exactly where February had left it.

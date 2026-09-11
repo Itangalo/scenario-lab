@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Displaced Graduates Transition and Retraining Guarantee −2, EU Wartime Continuity and Neutral Infrastructure Protocol −2 = −4 + priority has no effect and no cost as capital below 20
+PROPOSAL BONUS: EU Wartime Continuity Protocol (cat 6, small) +3 — catastrophic war fires this turn and this answers it directly, small size caps bonus
+LEGITIMACY LENDS: capital 4, sentiment 12 -> +1 capped by net collapse, internal scandal dominates
+SOVEREIGNTY: 16 last turn, no capacity event finish, no cat 4 in flight, catastrophic_great_power_conflict t11 −2, capability rose 2.3 −1 = 13

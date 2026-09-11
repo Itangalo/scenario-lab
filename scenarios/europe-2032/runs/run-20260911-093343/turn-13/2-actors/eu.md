@@ -1,0 +1,31 @@
+## New measure
+None this turn, while capital at 5.0 and public hostility at 15.0 leave no carry to fund even a small instrument without tipping into paralysis.
+
+**Write nothing else here — this section is prose, not a form.** The measure's category, size, finishing turn, effect and reach are not written here: they are the `add` entry under `## Store changes` below, and writing them twice is how the two copies come to disagree. Name the category in your prose if you like, so the number in the entry can be checked against it.
+
+**There are ten categories for measures, and only these may be used. Each carries an anchor — the measure it most typically means — and, in brackets, others that belong to it:**
+
+1. **Evaluation and oversight.** Anchor: *Third-party pre-release evaluation* — independent assessment of a model's dangerous capabilities before release. (Also: audits, external review of testing procedures, pre-registration of training runs, agent-behaviour evaluations.)
+2. **Transparency and reporting.** Anchor: *Incident reporting* — serious incidents and near-misses reported to a common body. (Also: whistleblower protection, shared safety cases, a public registry of deployed systems.)
+3. **Limits and restrictions.** Anchor: *Intolerable-risk thresholds* — red lines that halt development or deployment when crossed. (Also: KYC for compute, prohibitions on high-risk applications, open-weight release thresholds, licensing regimes.)
+4. **Sovereignty and industrial capacity.** Anchor: *Compute on EU soil* — data centres built and legally anchored inside the Union at a pace set by the race, not by ordinary permitting. (Also: accelerated siting and grid connection, electricity build-out, chip and lithography policy, retaining and attracting frontier talent, funding an EU frontier effort, partnership terms with foreign hyperscalers that bolt capacity to EU jurisdiction.)
+5. **Public technical capacity and research.** Anchor: *Institution-building* — your own evaluation capability and funded safety research. (Also: vetted researcher access, advanced model access for public evaluators, weight-security audits, interpretability programmes.)
+6. **Preparedness and resilience.** Anchor: *Contingency plans with exercises* — rehearsed procedures for fast-moving incident classes. (Also: cyber hardening of critical services, biological detection and response capacity, loss-of-control emergency protocols with escalation thresholds, cross-border mutual aid.)
+7. **Labour and social protection.** Anchor: *Flexicurity-style transition* — wage insurance and retraining paired with employer flexibility to restructure. (Also: safety-net investment, transition funds tied to automating employers, reform of employment protection.)
+8. **International coordination and leverage.** Anchor: *Middle-power coalition* — coordinating with other states holding pieces of the supply chain so that leverage is exercised jointly rather than picked off. (Also: binding accords, standing negotiation forums, mutual recognition of safety evaluations, export-control alignment, use of the Anti-Coercion Instrument.)
+9. **Diffusion, adoption and public trust.** Anchor: *Public-sector adoption programme* — putting capable AI to work in health, administration and education. (Also: procurement rules that favour or exclude particular providers, digital signatures for trusted sources, regulation of AI companions aimed at minors, education programmes.)
+10. **Other.** Anything fitting nowhere else, including combinations and inventions.
+
+Categories 4, 7 and 9 are not decoration. Diffusion breadth buys economic gain but also attack surface and misuse exposure; public trust determines how much capital you have when incidents arrive; industrial and infrastructure pace feeds capability growth. If your strongest lever turns out not to point at the frontier at all, that is a real finding, not a mistake.
+Copy the pair exactly; never invent a name of your own for a number, and never write a number without its name. Read the name before you write the number: standing up your own evaluation or monitoring capability is 5, hardening critical services against attack is 6, and 4 is compute, chips, energy and talent on EU soil — the three are routinely confused, and the tag is how measures are compared across runs. Broadening a measure already in flight is not a new measure — make the case for the broader scope under Priority and In practice, and the finishing turn moves, if it should, by the Game Master under rule 10. This applies with full force to the programmes you inherited: building EU compute *is* the Gigafactories line, and reviving, redirecting or re-funding it belongs in your Priority, not here as a fresh initiative under a new name. Standing up a parallel compute programme while the inherited one sits stalled is the one move the Union cannot credibly make.
+
+## Store changes
+No changes.
+
+## Priority
+No active priority — with no measures in flight and capital at 5.0, this turn is holding the finished black-start network, segmented manual routines and EU-run clinic tools on standing authorities rather than starting a track we cannot carry.
+
+## In practice
+We defend what is already built. Under CER/NIS2 and the Civil Protection Mechanism, ENISA, EU-CyCLONe and national gendarmeries keep the split guarded stores, restoration drills and hospital cross-border movements running; grid operators stay on segmented manual operation with human sign-off, explicitly because chain-of-thought review is blind. Police escort the repair convoys now physically blocked by coordinated anti-AI groups, treating blockade-breaking as public-order policing to keep drills on schedule, not as a new programme.
+
+We absorb the three external shifts without opening new instruments we cannot fund. The defensive cyber breakthrough is pushed through existing NIS2 hardening orders to patch critical health and grid systems first; the leaked eval anomaly is logged via the standing Evaluation Institute channels as reason not to re-automate; the graduate hiring freeze in law, accountancy, software and admin is monitored through national employment schemes. We tour again the two health systems cutting waits from months to days as proof useful tools still run under EU control despite quotas.

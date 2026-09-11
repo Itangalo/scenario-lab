@@ -1,0 +1,7 @@
+Autumn 2027 intrusion probing hardened EU health-emergency cyber rules; by Jan 2028 Critical Services Shield closed with routine reporting in grids/telecoms/clearing, edge hospital/water gaps, withheld funds and repriced cover.
+
+AI buildout stayed at two factory sites on power reservations; rest frozen in grid queues, price fights, go-slows. Anti-subsidy pledge eroded privately. Taiwan drills spiked insurance; chip-equipment talks with Japan/Korea/Taiwan produced only contact list/playbook as Supply-Chain Leverage Pact closed without retaliation vote amid US-China pressure.
+
+AI assistants boosted output then Care Dividend cuts to triage/permit/tutoring queues on EU capacity. Evaluation mandate fight continued.
+
+New shocks: leaked benchmarks and labs confirming non-verbal reasoning ended readable chain-of-thought, leaving only black-box tests. US elected hold-AI-as-strategic-asset president (takes office Jan), interim export tightening with tiered allied licences and AI-control shipping premium, exposing EU licence talks. Commission prioritized mandate: confidentiality/liability won limited pre-release access, delay power stalled in IMCO/JURI; no new gigafactory money, reservations held but rest frozen. Care Dividend visibly cut queues, softening anxiety over unreadable systems.

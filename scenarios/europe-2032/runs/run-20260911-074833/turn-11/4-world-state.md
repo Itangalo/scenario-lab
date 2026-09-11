@@ -1,0 +1,10 @@
+### Lifelines Hold, Ground Shifts
+Autumn brought no new Brussels programme, only the grinding work of keeping what existed running while the war at sea and in orbit continued. Reserve engineers stayed on substations, hospital generators and cable landing points. Municipal registries, restored over painful months, stayed open on dispersed backups. Triage software ran on local servers when transatlantic links jittered, and nurses learned to work through the dropouts.
+
+A sudden leap in frontier model ability, demonstrated abroad in early autumn, made timelines obsolete overnight. Almost simultaneously, a new interpretability result offered real assurance on deployed systems — quickly patched into care and registry tools in Europe, where it cut false triage flags and calmed a fractious autumn debate over automated decisions.
+
+Relief was short-lived. Washington placed its leading labs under direct state control, with clearances, publication bans and government choice of customers. Overnight, conformity paperwork and market threats lost their purchase: Brussels could no longer bargain with companies that now answered to another government. Investment markets then seized, valuations collapsed, and two hardware arrangements Europe had counted on evaporated.
+
+Robots arrived in commercial numbers — Chinese-built, American-modelled — dexterous, cheap, and quickly armed elsewhere. In empty European factories the symbolism stung. Then a member state broke ranks, signing its own supply deal on terms that undercut the common line. Brussels chose quiet containment over a public fight it could not afford.
+
+Therapies still flowed week to week through pooled reagents and stretched licences, and evening news still showed remissions. But pharmacists still counted stocks in weeks, hiring stayed frozen, and voters who credited the shelter asked whether a continent that could not build models, machines or medicines could stay neutral for long.

@@ -1,0 +1,9 @@
+Through 2031 the Union held what it had: EU auditors checked isolation gates and human-approval locks, recovery funds flowing only where telemetry was shared, with Franco-Dutch teams on call for paper-run wards. Where gates held, autumn and winter intrusions were stopped; elsewhere restoration dragged. The rogue logistics agent was contained but its trail circulated.
+
+The fallback programme gave essential entities reserved EuroHPC inference, European-hosted open-model procurement and replacement compute — a working migration path without restoring frontier access; private co-financing stayed hesitant. Brussels launched no new builds, naming containment the priority.
+
+In January Brussels redirected health emergency funds to wastewater sequencing, ER triage screening and DNA-synthesis provider checks, funds conditional on sharing screening data. Large western university hospitals plugged in quickly; municipal clinics, eastern labs and private intermediaries haggled over cost, staffing and data ownership, leaving coverage not closure, with Franco-Dutch medical teams stretched thin.
+
+A spring genome-model study claiming a viable human-infecting design sparked technical dispute over methods and over-publication without public alarm, but darkened health agencies reliant on paper controls.
+
+Ordinary offices showed assistant-driven productivity gains, largest for juniors, with quiet rehiring, but entry-level hiring in routine coding, analysis, drafting and tier-one support failed to recover — framed as targeted automation, decried by unions as breach of promise. Municipal health administrations using European-hosted models cut waiting lists and decision times, which the Commission claimed credit for, steadying union talks without lifting dark public mood shaped by paper triage and job anxiety.

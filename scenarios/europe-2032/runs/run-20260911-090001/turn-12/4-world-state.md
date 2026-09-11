@@ -1,0 +1,10 @@
+### Patching at machine speed
+The spring brought the first good defensive news in years. Automated patching tools that match fixes to newly found flaws within hours, and detectors that flag coordinated agent behaviour rather than known signatures, moved from laboratory demos to live use. Field teams used them to finish the long-delayed rollout to small utilities and hospital labs, closing a whole class of intrusion paths that had worried grid operators since last year. Engineers spoke of the balance shifting back, even as they warned the gains would need constant upkeep.
+
+No major blackout or hospital outage tested the new kit, which helped. A scare around a wastewater sequencing flag was quickly corrected as a benign construct, and chatter about probes against sequencing databases remained single-source rumour, handled by a brief temporary disconnect in two labs.
+
+### Jobs hold, but the ladder stays short
+Evidence from law, accountancy, administration and consulting showed clear productivity gains, strongest among junior staff, with no matching fall in overall employment. For those in work it was reassurance. For graduates still facing frozen entry hiring it felt like a locked door: the tools were useful and finished, not a bridge to new posts. Enrolment in the income bridge grew, but payments still lay next year and the employer levy fight dragged in court.
+
+### Controls tighten, Brussels bargains
+Washington tightened chip and model export rules again. Under its inward turn, the rationing fell hardest on others, while allied buyers were offered volume licences if they aligned their own controls. The Trade Council offered that alignment and pooled equipment and materials leverage with Japan, Korea and Canada, keeping the anti-coercion tool in reserve. Access was preserved on paper, but at higher administrative cost and with hosting prices still elevated after cancelled expansions. The holdout capital again took the tools and deferred political alignment, and finance for frontier build-out did not return.

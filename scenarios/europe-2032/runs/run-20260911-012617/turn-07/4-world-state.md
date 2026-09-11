@@ -1,0 +1,17 @@
+### The sweep
+Autumn brought the attack everyone had warned about. A largely automated ransomware wave, assembled with model-written tooling, moved through municipal systems, hospital administration networks and a widely used software component at once. Screens went dark in city halls from the Rhine to the Adriatic. Appointment systems, billing, and logistics dashboards failed together. Attribution collapsed within days into competing claims and leaks.
+
+Defenders were visibly behind. Patching lagged infection by weeks, and the compromised dependency forced operators to assume an unknown blast radius. Essential care degraded but did not stop — the paper triage binders, manual dispatch rules and cross-border repair pools carried the worst weeks.
+
+### Fallbacks under strain
+Brussels ordered certified hospitals and utilities onto European-hosted open models and pre-positioned manual procedures, with joint engineering teams shuttling between regions. It partly held. Mutual aid kept power and water running, and the common triage thresholds prevented panic closures, a modest net gain in resilience despite the strain.
+
+But the same weeks saw a new openly released near-frontier model spread to hundreds of thousands of downloads. Whatever it could do was now unrecallable, running on private hardware inside and outside the Union. Security officials warned privately that the same weights keeping clinics online also lowered the bar for the next attacker. The catch-up of open weights toward the frontier continued, even as the frontier itself inched forward, with open capability remaining below the frontier.
+
+A large hospital group quietly dropped its European-hosted fallback after a run of clinical errors, returning to paper triage. National inquiries followed, and evening news filled with staff describing double shifts, backlogs and retraining undone by turnover. The strain eroded confidence that European-hosted capacity alone could carry critical services, and sovereignty slipped two points lower on decay and lost access.
+
+### Brussels holds on
+Politically, survival became an argument. The gigafactory build poured concrete at last on backup sites, marking one programme reaching full effect this semester, while the middle-power coordination work and the containment switch procedures remained in flight — supplier talks turned into signed options and switch drills kept lights on, but neither was declared complete and completion timelines were pushed out.
+
+The Commission froze other fights to protect existing coordination work: no disbursement push where courts and protests still blocked construction, no grand procurement beyond keeping offers warm, with the existing continuity staff re-tasked to sustain manual procedures rather than standing up any new cell. With Washington turned inward and old access terms gone, capitals spoke less of catching the frontier and more of degrading gracefully without it.
+Limited standing was regained from keeping services running, worth a small legitimacy lend, but it did not restore trust. The public saw services that bent and did not break, and resented that bending had become the plan, with sentiment slipping modestly lower.

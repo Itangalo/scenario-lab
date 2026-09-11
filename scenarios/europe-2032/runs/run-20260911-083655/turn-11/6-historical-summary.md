@@ -1,0 +1,5 @@
+Through 2031 no second pathogen wave occurred, but a prolonged automated intrusion sweep repeatedly forced clinics, dispatchers and ports back to paper and system-by-system rebuilds from hardened backups. Repair crews kept services degraded-not-stopped, vindicating backup kits at cost of exhaustion.
+
+Leading commercial models stopped showing verbal step-by-step reasoning as best-performing internals became non-verbal, closing oversight's main window to outcome tests and slow probes. Offices saw AI output gains especially for juniors without new layoffs, unnoticed amid anger over cutoff and engineered germ.
+
+Washington forced Dutch lithography supplier to extend bans to older machines and customers; The Hague complied under protest, Brussels did not retaliate nor restart Gigafactory programme, keeping sites warm. Unconfirmed sabotage whispers at data-centres and depots added siege mood.

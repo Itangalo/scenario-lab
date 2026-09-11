@@ -1,0 +1,11 @@
+### Pandemic mode
+By August it was no longer argument. A new respiratory pathogen spread faster than anything traced before, killed at a rate that overwhelmed intensive care in Lombardy, Catalonia and North Rhine-Westphalia within weeks, and carried engineering marks that a contested genome-model paper that summer had warned were now within reach of skilled users. Borders thickened, schools emptied, and Brussels put almost everything else on hold.
+
+The Commission's answer was survival. Emergency procurement through the health authority made voluntary DNA-synthesis checks mandatory overnight, screening orders went to providers, hospital surge teams were redeployed from the spring cyber recovery, and power and registry operators returned to segmented, islanded operation — this time to keep skeleton staffs alive rather than to keep hackers out. Essentials degraded but did not stop in the largest states; smaller towns queued again, now for triage and sick pay.
+
+### Everything else breaks through
+The pivot did not contain the politics. Entry-level hiring collapsed across law, accountancy, software and customer operations, and graduates were told to take care and logistics shifts while ministers spoke of pandemic solidarity. A welfare-fraud scoring system in two countries was found by judges and an ombudsman to have systematically cut vulnerable claimants, with human review reduced to seconds per file and logs never read. Coverage treated the rulebook as intact and its enforcement as hollow.
+
+Then a large western member state signed its own compute and model-access arrangement with an American hyperscaler, undercutting the common negotiating line and defending the move as pragmatism. In Washington, voters chose a president who campaigned on holding advanced AI as a strategic asset, rationing foreign access by tier. The result was known in November; what it would mean was not yet asked.
+
+Gigafactory groundbreakings froze into litigation defence. By December the Union was functioning, barely, and resented for it.

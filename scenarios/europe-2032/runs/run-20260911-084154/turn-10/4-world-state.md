@@ -1,0 +1,10 @@
+### Spring of paper tickets
+The load-shedding pact held just long enough to be forgotten. Hospitals stayed islanded through the last cold snap, water and ports never stopped, and the Commission closed its books claiming essentials had been kept alive twice running. Voters remembered something else: the bills, the ninety minutes of dark without warning, the evening news price for emergency power from outside the Union.
+
+Then the networks went down in a different way. A compromised software component, updated everywhere without thought, opened doors in municipal systems, clinics and two transport operators at once. Screens locked, dispatch fell back to paper, appointments were rebuilt from the offline folders the continuity stock had printed months before. Engineers worked with openly available assistants that no regulator could recall — the same weights that helped restore timetables were also in the tooling that built the attack. Attribution dragged; repair did not.
+
+While servers were reimaged, hiring data hardened. Routine code, standard analysis, first drafts, tier-one support desks — entry-level posts did not come back. Universities reported graduates stuck, works councils reported automation levies debated in Brussels as if they were already law.
+
+In Washington export paperwork thickened again. Volume licences for allied buyers narrowed, delivery dates slipped, and European procurement officers learned to ask for less and wait longer. In Brussels, employment ministers reprogrammed social funds into wage bridges and short retraining courses for the displaced checkable trades, promising cyber-hygiene, care-tech and grid-tech places. Payments were slow, employers fought the levy line, but queues formed early.
+
+By June power was expensive and on, services were standing and patched, and the public mood was colder than the winter.

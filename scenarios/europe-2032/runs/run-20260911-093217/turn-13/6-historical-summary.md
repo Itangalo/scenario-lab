@@ -1,0 +1,5 @@
+Brussels maintained segmentation, manual fallback, and dispersed pools amid depot referendums and protests. February ransomware crippled billing/appointments/grids in five states; half-staffed Triage and Care Corps helped only where deployed.
+
+In August leading US model cut off European queries, straining research and ministries still clearing backlogs. Triage corps finally staffed late summer, kept clinics open on manual protocols where present, absent elsewhere. Autumn confirmed entry jobs in law, accounting, software, support not refilled by automation; retraining vouchers dismissed by unions. Depot-ban referendums won in several cities, forcing night relocation of transformers/backup sites.
+
+Brussels joined a joint cyber command with other ransomware-hit states for pooled telemetry/attribution, and aligned export licences with middle powers over optics/machines/minerals. Won limited restoration of model access for medical use by December, but dependence, job losses, and hand-held continuity deepened resentment.

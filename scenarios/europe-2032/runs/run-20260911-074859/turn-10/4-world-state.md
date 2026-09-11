@@ -1,0 +1,10 @@
+### Shelter Under Fire
+January brought war no communiqué had prepared for. American and Chinese forces exchanged strikes after months of warnings about an uncatchable lead, and within days fabrication plants, cables, satellites and data centres were declared legitimate targets. Two undersea cable cuts in the Atlantic and a fire at a power station feeding a southern French compute hall made the abstraction concrete. Backup registries flickered again. In port cities, sirens were tested for the first time in decades.
+
+Brussels declared non-belligerency: no offensive use of Union territory or infrastructure, dispersal of clean backups, soldiers and engineers at landing stations, grid switchgear refitted with the new domestic alloys. The message — Europe shelters, heals, keeps services running — played well on evening news.
+
+Practice was harder. Reserve teams from Estonia, France and Germany were stretched from municipal IT repair to wartime mutual aid. Wage top-ups under the Transition Shield kept flowing in the north, stalled for weeks in the south as budgets were re-routed to fuel and air defence. The bio-detection network, still seed contracts in December, was ordered to pool reagents and keep hospital triage assistants online through blackouts. Nurses kept wards open; town halls again issued paper tickets when screens went dark.
+
+Amid this came a genuine reprieve. Individually tailored therapies for several previously untreatable conditions reached ordinary clinical use, developed in American laboratories. Brussels scrambled to negotiate licensed manufacturing on European-run infrastructure, and the first courses were administered in Copenhagen and Lisbon in May to visible relief. Because the underlying models and batches remained foreign-controlled, gratitude mixed with unease in editorials about dependence in wartime.
+
+By June the Union was intact but exposed. Graduate hiring remained frozen, warehouses filled with sorting machines, and nightly maps showed a war Europe did not choose edging toward its cables, fabs and hospitals. Voters credited the shelter effort, yet asked what shelter was worth without power of its own.

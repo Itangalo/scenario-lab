@@ -1,0 +1,5 @@
+Early 2031 brought three compounding shocks: a leading US model family cut off European hospitals, ministries and firms without explanation, disabling triage, dispatch and port helpers; a machine-designed modified pathogen escaped containment in one member state and was deliberately amplified elsewhere, killing hundreds before containment bent the curve into spring; and a frontier release leapt in code/math/intrusion tooling, letting attackers re-open cleared booking and port systems with tailored exploits.
+
+Collapse was avoided by prior autumn measures: municipal backup kits and clinic sentinels already on site, EU cyber repair cell stayed embedded rebuilding from offline copies, and health-emergency procurement bought crude locally-hosted open models for triage/prescribing/dispatch that ran without foreign permission.
+
+Ministers endorsed continuity with no new money — factory votes frozen, sites kept warm, no retaliation over chip-tool servicing curbs. Public trust fell further on queues, exhaustion, and pathogen inquiry; Brussels privately aimed to survive on substitutes until a sovereign fallback could hold through next winter.

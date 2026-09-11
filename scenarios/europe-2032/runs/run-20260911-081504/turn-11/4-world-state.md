@@ -1,0 +1,12 @@
+### Gates and ghosts
+Brussels spent the autumn turning a lesson from the spring into law. Hospitals, municipal payment offices and registries were told to isolate agentic tools and require a human sign-off before any autonomous action could touch live systems, with audits run through ENISA and recovery money tied to sharing telemetry. The French-Dutch containment teams that had flown from district to district became a standing pool on call.
+
+Compliance was uneven. Large hospitals and payment operators installed the gates quickly; smaller municipalities and subcontracted registries complained they lacked staff to approve every queued action, and some left logging switched on but approvals perfunctory. Where gates held, a fresh wave of probing intrusions in October flickered and died. Where they did not, appointment books went dark again for days. The patchy rollout and perfunctory approvals eroded overall safety despite the new rules on paper.
+
+At the same time the fallback work advanced toward completion but did not create new capacity. Reserved supercomputing time was formally handed over, catalogues now pointed buyers to European-hosted open models, and migration drills became routine paperwork, with effects growing as the measure nears completion. Essential bodies knew where they would run if cut off again. Chip deliveries steadied under the middle-power export-licence alignment, though private money for a larger build still stayed away.
+
+Two outside developments unsettled the calm. Trade press carried mixed reports on foreign lab progress and supply contracts, with analysts disagreeing on what the results meant for European buyers. Procurement officers noted continued dependence on non-European frontier iteration, and how far behind their own labs were on commercial benchmarks.
+
+Public mood stayed bleak. A few local papers noted shorter outages where gates worked, and junior professionals kept posting productivity gains. But graffiti appeared on a substation near a planned data-centre extension, and a council debate about a siting pause drew a crowd far larger than expected.
+### Unmoved finish
+With political capital so thin, the pull-in of the new enforcement timetable bought little speed, and officials said inspector shortages were slowing file reviews and site visits.

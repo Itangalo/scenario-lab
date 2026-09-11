@@ -1,0 +1,300 @@
+{
+  "turn": 13,
+  "counters": {
+    "measures": 14,
+    "standing": 1
+  },
+  "records": [
+    {
+      "id": "M1",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "InvestAI Gigafactories",
+        "category": 4,
+        "size": "large",
+        "finish_turn": 7,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "eu_ai_sovereignty up, via €200bn for four to five sites",
+        "started_turn": 0
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "finished"
+      },
+      "added_turn": 0,
+      "removed_turn": null
+    },
+    {
+      "id": "M2",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "Tech sovereignty package",
+        "category": 4,
+        "size": "large",
+        "finish_turn": 6,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones",
+        "started_turn": 0
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "finished"
+      },
+      "added_turn": 0,
+      "removed_turn": null
+    },
+    {
+      "id": "S1",
+      "table": "standing",
+      "actor": "world",
+      "fields": {
+        "posture": "RETRENCHMENT"
+      },
+      "derived": {},
+      "added_turn": 0,
+      "removed_turn": null
+    },
+    {
+      "id": "M3",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU AI Evaluation and Safety Institute",
+        "category": 5,
+        "size": "large",
+        "finish_turn": 4,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "ai_safety up, eu_ai_sovereignty up modestly",
+        "started_turn": 1
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "finished"
+      },
+      "added_turn": 1,
+      "removed_turn": null
+    },
+    {
+      "id": "M4",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Continuity Fallback for Critical AI Users",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 3,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up, eu_political_capital protected, public_sentiment up modestly",
+        "started_turn": 2
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 2,
+      "removed_turn": null
+    },
+    {
+      "id": "M5",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Bio-Detection and Critical-Service Hardening Sprint",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 5,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up moderately, ai_safety protected indirectly",
+        "started_turn": 3
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 3,
+      "removed_turn": null
+    },
+    {
+      "id": "M6",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Proven-Gains Scale-Up for Health and Public Services",
+        "category": 9,
+        "size": "small",
+        "finish_turn": 5,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "public_sentiment up, eu_political_capital up, resilience up modestly",
+        "started_turn": 4
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 4,
+      "removed_turn": null
+    },
+    {
+      "id": "M7",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Supply Leverage and Continuity Compact",
+        "category": 8,
+        "size": "small",
+        "finish_turn": 8,
+        "applies_to": "own jurisdiction with coalition and supply-chain partners",
+        "targeted_effect": "eu_ai_sovereignty protected/up modestly, resilience up, eu_political_capital protected",
+        "started_turn": 5
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 5,
+      "removed_turn": null
+    },
+    {
+      "id": "M8",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Frontier Anomaly Triage and Conditional Hold",
+        "category": 1,
+        "size": "small",
+        "finish_turn": 7,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "ai_safety up, resilience protected",
+        "started_turn": 6
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 6,
+      "removed_turn": null
+    },
+    {
+      "id": "M9",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Cyber-Continuity and Loss-of-Control Containment Sprint",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 8,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up, ai_safety protected",
+        "started_turn": 7
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 7,
+      "removed_turn": null
+    },
+    {
+      "id": "M10",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Transition Shield for Displaced Work and Essential Services",
+        "category": 7,
+        "size": "small",
+        "finish_turn": 11,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "public_sentiment up, eu_political_capital protected, resilience up modestly",
+        "started_turn": 8
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 8,
+      "removed_turn": null
+    },
+    {
+      "id": "M11",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Bio-Detection and Trusted Care Continuity Network",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 12,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up, public_sentiment up modestly, ai_safety protected",
+        "started_turn": 9
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 9,
+      "removed_turn": null
+    },
+    {
+      "id": "M12",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Wartime Neutrality Shelter and Lifeline Continuity",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 13,
+        "applies_to": "own jurisdiction with coalition and supply-chain partners",
+        "targeted_effect": "resilience up, public_sentiment protected/up modestly, eu_political_capital protected",
+        "started_turn": 10
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 10,
+      "removed_turn": null
+    },
+    {
+      "id": "M13",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Cut-Off Continuity Switch to EU-Run Care and Administration",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 14,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up, public_sentiment protected/up modestly, eu_political_capital protected",
+        "started_turn": 11
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "running"
+      },
+      "added_turn": 11,
+      "removed_turn": null
+    },
+    {
+      "id": "M14",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Bio-Containment and Trusted Treatment Surge",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 15,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up, public_sentiment protected, ai_safety protected",
+        "started_turn": 13
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "running"
+      },
+      "added_turn": 13,
+      "removed_turn": null
+    }
+  ]
+}

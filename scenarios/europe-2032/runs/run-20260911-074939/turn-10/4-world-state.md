@@ -1,0 +1,8 @@
+### Shelter Under Fire
+January brought war no communiqué had prepared for. American and Chinese forces exchanged strikes after months of warnings about an uncatchable lead, and within days fabrication plants, cables, satellites and data centres were declared legitimate targets. Two undersea cables off Portugal and the North Sea went dark, a foundry supplier in Dresden lost power, and airspace closures stranded reagent shipments.
+
+Brussels declared non-belligerency: no offensive use of European infrastructure, dispersal of registry backups, soldiers and engineers at landing stations, grid switchgear patched with the new domestic alloys. Reserve teams that had fixed town-hall queues were extended to wartime mutual aid. It partly worked — hospitals and registries stayed up on clean images, degraded but running.
+
+The other shock was medical. Tailored therapies for previously untreatable blood and immune diseases reached ordinary clinics in the United States and China, with European patients watching on video. The Commission scrambled for licensed, European-hosted manufacturing, but doses arrived in small, foreign-controlled batches, priced in dollars and subject to export waivers. Gratitude curdled into resentment: a cure exists, but Europe must ask for it while sheltering from its makers' war.
+
+Shield top-ups continued, bio-detection seed sites were guarded as lifelines, yet graduate hiring stayed frozen and sorting machines kept spreading. Voters saw a Europe that shelters and heals as best it can — but cannot protect its own cables, nor make its own cures.

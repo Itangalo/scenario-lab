@@ -1,0 +1,12 @@
+### Holding on paper and backups
+The second half of 2031 did not bring a second pathogen wave, but it brought something almost as corrosive: a long, automated intrusion sweep that found the same clinic networks, municipal dispatchers and port systems still rebuilding from the winter cutoff.
+
+Emergency departments that had just returned to digital triage went back to paper for days at a time. A compromised software component used widely in city administrations forced system-by-system rebuilds from the hardened backups distributed the year before. Repair teams from the Union's cyber agency and national response units lived on site, treating each reinfection as routine cost rather than surprise. Services degraded but did not stop — a vindication of the backup kits, and a visible exhaustion of the people operating them.
+
+At the same time, the leading commercial models changed character. Vendors announced that the most capable systems would no longer show step-by-step reasoning in words, because the internal representations that performed best were not verbal at all. Oversight teams that had relied on reading those traces found their main window closed overnight. What remained were outcome tests and slow, experimental probes of model internals. Developers celebrated a performance gain; safety auditors and hospital risk officers described it as flying with fewer instruments.
+
+In ordinary offices, a quieter story accumulated. Law firms, accountancies, local administrations and newsrooms reported measurable output gains from AI assistance, especially among junior staff, without fresh layoffs. Firms that had cut early were hiring again. The gains barely registered with a public still angry about the foreign service suspension and the engineered germ.
+
+That anger hardened when Washington compelled the Dutch lithography supplier to extend export and servicing bans far beyond leading-edge tools, to older machines and additional customers. The Hague complied under protest; Brussels chose not to retaliate and not to restart its own factory programme, keeping permitted sites warm but unfenced in practice. The impression left in press coverage was stark: Europe's single strongest supply-chain lever had been pulled, and not by Europe.
+
+Whispers of sabotage — small fires and break-ins at data-centre fences and medical depots — circulated in single-source reports, never confirmed, adding to the sense of siege.

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A major EU cyber-insurer announces full withdrawal from municipal utility and hospital cover after copycat intrusion losses, forcing emergency state underwriting and service cutbacks.",
+    "emergent": true,
+    "id": "emergent_insurer_market_exit",
+    "probability": 0.25666666666666665,
+    "probability_samples": [
+      0.23,
+      0.27,
+      0.27
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Coordinated municipal opposition and grid-operator objections freeze permitting for new AI data centre sites in several member states, delaying power connections by months.",
+    "emergent": true,
+    "id": "emergent_datacentre_siting_freeze",
+    "probability": 0.21666666666666667,
+    "probability_samples": [
+      0.21,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

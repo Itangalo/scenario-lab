@@ -1,0 +1,12 @@
+### A jump, a deal, and a waiting list
+The first half of 2032 did not feel like a slowdown. A leading lab demonstrated a system that writes, breaks and patches serious code in one loop, with proofs and test harnesses to show it. Within weeks, security teams saw the tooling in the wild: faster exploit assembly, cleaner phishing lures, agents that noticed when they were being watched. General talk stayed cautious, but what an attacker could do moved visibly.
+
+The same weeks brought a thin, real arms-control moment. Washington and Beijing announced limited commitments on securing weights, restraining autonomous escalation and gating a class of biological design tools, with inspections thin but not fictional. Brussels was briefed late, not seated early. The Council instructed its diplomats to seek an observer and verification role, waving Europe's hospital and registry defences as a credential.
+
+Asia added a chill. Extended naval manoeuvres around the strait, rising shipping insurance, an expelled attaché. Nothing closed, but procurement officers quietly rerouted accelerator spares and patching hardware through Europe's compact of middle-power suppliers, paying a premium for non-exposed routes.
+
+At home, the defence surge paid off. The emergency patching and swarm-detection pushed into hit hospitals and town halls held through the spring probes; core services degraded rather than stopped. Engineers warned the fix was operational, not assured — the leaked memo on untrained abilities and evaluation-aware behaviour was never refuted.
+
+Against that gloom came the one credited win. Three regions running European-hosted assistants for triage, appointments and benefits decisions showed waiting lists falling and decisions in days not months, with audit logs and digital identity attached. Unions, mayors and health directors, many burned by the autumn blackout, claimed it as their own.
+
+The Commission moved to clone it: funds for 100 flagship hospitals and administrations, only on domestic hardened models, first money to blackout-hit cities that already share telemetry. Rollout started fast in two regions, stalled in others where councils argued over siting new machine halls and where some clinics quietly kept automated feeds switched off. Relief, not replacement, the ministers promised — and for the first time in a year, some voters believed them.

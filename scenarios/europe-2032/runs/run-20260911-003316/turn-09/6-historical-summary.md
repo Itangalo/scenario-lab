@@ -1,0 +1,3 @@
+AI bust in H1 2030 forced Europe to fallback continuity while US frontier cutoff hardened and Taiwan tensions rattled chips. Brussels kept hospitals/grid/ministries live on two domestic sites with blunter assistants that survived October ransomware.
+
+Autumn shocks: US gated medical models produced cures Europeans couldn't prescribe, and Chinese humanoids with US software spread in logistics while Europe supplied only arms/joints. Opportunistic accelerator buys failed on firmware, paper power, few returnees. Council mandated single negotiator for written clarification, hospital/grid carve-outs and hosted medical access plus EU validation track; Washington offered only talks about talks. Mood by Dec: lights on but cures/robots on foreign terms.

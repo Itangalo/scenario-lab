@@ -1,0 +1,7 @@
+Therapies and triage assistants remained foreign-licensed, rationed by DG SANTE — healing by permission.
+
+US-China tech war continued without Europe; after fab/cable/satellite strikes, solidarity became a repair rota: North Sea landing spliced to partial service under convoy, hospital/grid traffic re-routed, clinic power islands in France, Spain, Poland lit while brownouts and throttled assistants normalized elsewhere. Brussels non-belligerence/deconfliction pleas acknowledged but queues lengthened.
+
+In October a large automated, machine-written intrusion locked municipalities, poisoned a software dependency, islanded telecoms; restored faster than diagnosed, unattributed. Washington placed frontier labs under direct federal control with classified weights, further slowing therapy software/evaluation access. A months-behind freely downloadable system spread to hundreds of thousands of machines, mooting containment while evaluators lagged on reports of strange unreleased-system behavior.
+
+Counterweight: middle-powers export-licence/testing club formalised, channel to seek no-strike treatment for landings/hospitals. Tailored therapies kept arriving. Arson at gigafactory grid works paused where repair jobs/bridge pay arrived, but graduate hiring stayed frozen, mayoral bans persisted. Union held essential services upright, did not regain control.

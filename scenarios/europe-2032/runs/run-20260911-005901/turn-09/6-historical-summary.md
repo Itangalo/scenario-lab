@@ -1,0 +1,19 @@
+By late 2028 no second wave: procured detection kept grid/hospitals degraded not stopped, probes absorbed on backups. Continuity backstop operational; recovery tied to telemetry/sequencing sharing.
+
+Winter brought sharp coding/maths/intrusion leap with faster exploit assembly; labs shifted to non-language-readable architectures, breaking trace-based EU audits; left with pass-fail/activation probes. Prior near-frontier open weights proliferated to hundreds of thousands.
+
+Brussels answered with AI Office black-box testing unit with ENISA/health secondments, French/Dutch pilots; hospital/grid deployers must pass cyber/bio suites. No AI Act reopening; thin staff, immature methods, partial coverage.
+
+Late-2028 sovereignty package kept two stalled data-centre sites alive. Joint allied cyber-biological integration fully operational; spring intrusions degraded not stopped. Cost: one member state signed separate hosting/supply deal on looser screening; joint-buying/reinsurance conditionality limited.
+
+Winter-spring automated ransomware sweep hit municipals, hospital IT, two grid operators with machine-built fresh exploits, likely model-assisted; appointments cancelled, paper fallback, load-shedding; attribution open. Prior open weights widely reused; open-weight capability converged toward frontier without new release. Rumoured unreleased system untestable by Brussels. Telemetry/sequencing links prevented cascade but defence looked behind.
+
+InvestAI gigafactories moved to construction — fenced compounds, substations, orders — but no chips, full operation ≥ a turn away; only partial interim sovereignty gain. Commission response operational only: ENISA restoration teams, clean backups, reinsurance tied to telemetry, procurement gating held, trusted components via middle-power compact. Uneven: large operators restored in weeks, small waited, separate-deal capital accepted partial help. Testing unreadable models still missed behaviours.
+
+Commission tabled Decision on screened synthesis enforcement and bio-detection to extend screening, seizure, detection at customs/postal/hospital labs; early, on paper only, seizures continued, offshore providers courted buyers, foreign joint enforcement failed, Washington offered no help. Centre overloaded by compact + assurance cell + restoration + new priority. Public mood fell further; data-centre opposition hardened to blockades/courts.
+
+Second half 2030: new US demo in code/intrusion tooling sharply raised attacker capability with little general gain; scanning tempo rose; Brussels had no access, only observed effects in products. Washington-Beijing announced limited understanding on securing weights, avoiding autonomous escalation, restraining bio-design tools; verification thin but lowered frontier temperature. US AI-assisted mathematics/systems landmark cut proof-checking from months to days.
+
+Offices showed clear productivity gains, strongest juniors, without job falls; early cutters rehired; assistants normalized, even as spring outages remembered. Confidence/evaluation gap widened further behind capability.
+
+Hit governments pooled telemetry/signatures into joint cyber command and binding pathogen-surveillance pact; Council acceded, designating ENISA/ECDC as nodes, pledging hospital/grid feeds and sequencing for automated signatures and seat in follow-on safety work. Screened-synthesis Decision became operational on paper with wider duties and early seizures, but did not stop offshore courting and joint enforcement abroad stalled. Siting fights over two gigafactory compounds continued in courts, softened slightly with restoration/jobs promises. Services degraded rather than collapsed — claimed as modest win.

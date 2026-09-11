@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Displaced Graduates Transition and Retraining Guarantee −2, EU Shield Patch Deployment Pact −2 = −4 + priority has no effect and no cost as capital below 20
+PROPOSAL BONUS: EU Shield Patch Deployment Pact (cat 6, small) +3 — winter sweep and squatter agent degradation in last two turns answered directly with breakthrough tooling
+LEGITIMACY LENDS: capital 8, sentiment 15 -> +2
+SOVEREIGNTY: 16 last turn, no capacity event finish, no cat 4 in flight +0, export_control_escalation t11 −2 (largest of two capacity losses, member_state_defection also qualifies), capability rose 2.0 −1 = 13

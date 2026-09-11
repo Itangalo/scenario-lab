@@ -1,0 +1,12 @@
+### Holding the perimeter
+The first half of 2032 was defined by physical confrontation. Groups opposed to AI dependence moved from graffiti and blocked gates to coordinated sabotage: cut fibre, forced power trips and arson attempts at data-centre fences in four countries, plus smashed sensors and ransacked server rooms in municipal offices. Several sites went dark for days. Police guarded perimeters while repair vans queued.
+
+Brussels answered with what it called a protection surge. Interior ministers invoked crisis coordination powers, earmarked policing money for targeted sites, and sent joint French-Dutch repair teams — the same engineers who had contained the rogue procurement agent — to clear a checklist: isolation audits, telemetry sharing, manual overrides. The lockdown measure started two years earlier finally finished in this form, and clinics kept running through the shutdowns where the gates held. Where staff were missing, they did not.
+
+Two scientific signals cut across the emergency. A foreign genome-modelling paper claimed a non-expert could reach a viable human-infecting design with model help. Methodologists attacked it, biosecurity specialists argued about recipes versus warnings, and health authorities quietly retuned detection. At the same time, a control result that lets operators predict and certify certain model behaviours moved fast from lab to deployment because the labs wanted it. Engineers rolled it into isolation gates and triage filters.
+
+A European research result — achieved on the reserved supercomputing capacity and jointly hosted open models — gave the Commission a talking point: the fallback could produce, not just keep lights on.
+
+It did not stop a defection. One member state signed its own hosting and supply arrangement with an outside hyperscaler on cheaper, looser terms, calling it pragmatism. Others called it undercutting the common licence line. Brussels made protection funds conditional on holding the line rather than picking a public fight.
+
+Entry-level work did not return. First payments under the transition guarantee were reprogrammed but slow to reach desks. Trust remained near bottom, though visible guards and fewer prolonged outages stopped the slide.

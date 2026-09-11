@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t3: M1 InvestAI Gigafactories −3, M2 Tech sovereignty package −3, M3 EU Critical Services Shield −3, M4 EU Essential Services Continuity Stack −2, priority −1 = −12
+PROPOSAL BONUS: EU Essential Services Continuity Stack (cat 4, small) +4 — eu_frontier_access_denied fired this turn cutting hospitals/ministries and this answers it directly, with capability jump adding urgency
+LEGITIMACY LENDS: capital 27, sentiment 28 -> +1 (capital below sentiment, capped by sentiment)
+SOVEREIGNTY: 20 last turn, no capacity event finish, Gigafactories in flight +0, eu_frontier_access_denied t3 −2, capability rose 5.0 −1 = 17

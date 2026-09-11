@@ -1,0 +1,5 @@
+US cut model access on Friday without reason, forcing clinics/ministries to paper forms; Brussels called it breach of draft framework, won only process, while one capital broke ranks with its own US hosting deal.
+
+Frontier accelerated with longer-running agents and automated training, evaluations went stale and reasoning-trace coverage slipped; open models improved but compute limits slowed EU fallback. DG CNECT/HERA/ENISA shifted hospitals to EU-hosted models and manual drills for chlorination/grid/clinics — worked where mayors co-signed, while grid-site blockades hardened elsewhere over water, power, jobs.
+
+Autumn white-collar layoffs and graduate freeze coincided with US-model-dependent tailored therapies delivering remissions, fueling resentment. Joint cyber-biosurveillance pact blunted intrusions; two gigafactory shells rose with permits/aid intact but equipment years away. By December Europe ran on fallback, sovereign capacity still under construction.

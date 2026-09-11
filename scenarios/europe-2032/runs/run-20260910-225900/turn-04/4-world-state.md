@@ -1,0 +1,11 @@
+### Cut off
+In March, hospitals in three member states, a handful of ministries and a cluster of suppliers found their calls to the leading foreign model failing. No reason, no timetable, no appeal — only a status notice and a helpline that did not answer. Clinicians who had built triage summaries and procurement teams who had built tender screening on top of it reverted to phones and paper for a week. Opposition press called it a failure of foresight; government press called it blackmail.
+
+Brussels answered with what it could sign quickly. Health and interior ministers mandated HERA, the disease agency and the cyber agency to join a pooled pact already forming among states hit by the same bio and intrusion wave: binding sample-sharing, real-time telemetry feeds, seconded analysts. At home, emergency funds were shifted to fallback inference for affected public services and to turning the fielded bio-detectors into standing surveillance.
+
+### The open flood
+Almost at the same moment, a new openly released model landed within months of the closed frontier. Hundreds of thousands of downloads in the first week put near-frontier capability on private hardware permanently. University labs celebrated; security services did not. Vetted versions were hastily offered to hospitals as a substitute, but administrators complained they behaved differently and needed guardrails no one had written.
+
+The evaluation institute set up last year finally opened its doors and published its first test demands, while the hardening programme declared its hospital and grid pilots operational. Both helped absorb the shock — detection was faster, recovery less chaotic — but neither restored the lost access.
+
+Gigafactory zones stayed empty fields with permits and power-price promises but no concrete. The anti-coercion examination ground on, with Tokyo and Seoul listening but not committing, and Washington unmoved. By June, Europe was better connected to its partners and better monitored at home — and running its essential services on borrowed and substitute intelligence.

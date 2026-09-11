@@ -1,0 +1,39 @@
+[
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Major EU insurers jointly suspend new cyber and AI-liability cover for uncertified public operators after fallback hallucinations cause patient-harm claims, freezing outsourcing deals until state backstop is clarified.",
+    "emergent": true,
+    "id": "emergent_insurance_capacity_freeze",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "description": "Hospitals and pharmacies using European-hosted open fallback models face a coordinated wave of liability claims after dosage hallucinations cause documented patient harm, forcing courts to rule on who bears risk for emergency-switched models.",
+    "emergent": true,
+    "id": "emergent_fallback_harm_liability_wave",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

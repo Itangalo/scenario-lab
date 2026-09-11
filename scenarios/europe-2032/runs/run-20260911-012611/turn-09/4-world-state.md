@@ -1,0 +1,8 @@
+### The dividend semester
+The autumn brought the first good news Brussels could claim as its own. In a handful of regions, the fallback stack stopped looking like emergency kit and started cutting queues: hospital triage pilots cleared backlogs of garbled referrals, two cities issued building and business permits in days, and classroom assistants built on EU-hosted open models showed measurable gains in pilot evaluations. Commission dashboards published the numbers weekly, with ministers cutting ribbons in clinics and town halls.
+
+The Shield work that made it possible quietly became routine. Health, energy and municipal teams kept the drills and rapid patch channels running, and the reserve of optioned grid connections and shells was held without new money — though contractors remained unpaid on two sites and concrete slipped again.
+
+Success bred its own friction. The same openly available models powering the triage queues powered a fresh wave of invoice and welfare fraud, forcing the new Dividend pilots to add signatures, incident reporting and manual review that slowed rollout. Education unions and doctors' associations split over workload and liability, and the Council fight over reprogrammed deployment funds left Health and Education ministries accusing each other of raiding budgets.
+
+Money still ruled everything else. With capital markets cold, no new sovereign capacity came online; dependence had simply moved from blocked American systems to home-hosted open weights no lab fully controlled. The outreach to Washington and Beijing remained a paper proposal. By December, Europe could point to waiting lists that fell — and to fraud lines that rose alongside them.

@@ -1,0 +1,7 @@
+Winter shocks — lab-escaped pathogen and Taiwan chip freeze — triggered Brussels emergency powers: sequencing/wastewater monitoring, stockpiles, bio-model reporting, rationed compute and gigafactories narrowed to two sites, grid priority, lithography controls.
+
+Large hospitals/grids held; small municipalities/utilities strained with staff shortages, blind isolations, insurer pullback, boil notices. Brussels countered with manual-fallback playbooks, staffing pacts, EIB insurer backstop, Trust and Transition Pact for retraining and wage bridges — eased where crews arrived, resentment hardened elsewhere.
+
+November US coalition-builder elected; took office in winter offering structured allied frontier access, joint evaluation, aligned export controls. Commission rushed to lock in researcher/evaluator tiers alongside domestic builds, but talks yielded paper not capacity.
+
+Winter also brought US long-autonomy AI jump and commercial sale of Chinese humanoids including armed variants. Data-centre permitting/capital package cleared, shielding two sites with grid priority and state-aid; bio-shield declared operational, large hospitals held with triage assistants. Small-town pact partly relieved boil notices via staffing/drills. Industrial base hit hardest: Chinese hardware price/volume and US control software dominance sparked works-council warnings on dexterity, public mood soured; allied access seen as relief but not autonomy.

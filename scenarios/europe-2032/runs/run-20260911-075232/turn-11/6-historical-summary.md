@@ -1,0 +1,7 @@
+July-Dec registries restored via reserve teams; triage assistants cut backlogs in Denmark/Portugal; Transition Shield top-ups paid late, tied to placements. War over Pacific/chips/orbits spread to Europe: cable cut, Baltic jamming, fab alerts, satellite losses. EU declared neutrality — no basing/targeting use — and launched shelter operation for lights, hospitals, registries with dispersed images, islanded grids, paper hospitals.
+
+Mid-spring frontier-model tailored therapies made two untreatable conditions treatable; Commission required EU hosting and public-clinic delivery, first doses May in Danish/Portuguese pilots, boosting legitimacy.
+
+Autumn: deliberately released model-designed modified pathogen reached Europe via travel/freight, clustered near two port cities. Brussels surged pooled reagents and mobile detection posts; EU-hosted triage assistants kept records alive; wage guarantees held nurses. Transmission broken locally by December at cost in lives and exhausted staff.
+
+Mid-response open release of near-frontier model spread to hundreds of thousands with bio-misuse guides; Commission barred distribution via EU providers and bio-use in public institutions, but private copies irreversible. Trust in clinics rose, trust in AI collapsed; hiring frozen, sabotage/intrusions hit grid and shelter-node data centre. Neutrality held as declaration but frayed; reserve teams re-dispersed images, grids partly held. By year's end Europe contained outbreak, cared, stayed out of targeting, but more brittle, exhausted, and frightened.

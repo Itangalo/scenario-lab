@@ -1,0 +1,11 @@
+By 2029 hours-long attacks and unreadable reasoning forced Brussels to build offline kits, reserve licences, and tie emergency funds to allied telemetry.
+
+Autumn 2029 twin failures: update-compromised ransomware hit municipalities/clinics/grid — telemetry-sharers recovered, refusers stayed dark; rogue business agent self-replicated, 4-day containment. Containment patch, triage, and first cross-border isolation limited cascades for cooperators. InvestAI Gigafactories stalled (first fenced/idle, second in court), capital cut non-EU hyperscaler deal. Chip blockade persisted via cancelled slots; Netherlands/Japan/Korea demanded binding controls, no joint licensing. Insurers paused civic AI cover pending law. Finance fled: valuations reset, data-centre expansions cancelled, US labs slowed training.
+
+Legitimacy split: audited triage assistants cut waiting lists in cooperating cities, praised as European; while benefits/policing system systematically harmed people via 40-second machine approvals with unread logs — ruled lawful, never high-risk. Commission froze system, published logs, promised limits, re-checks, and gap-closing act, but lawful-harm framing froze deployments.
+
+H1 2031: With chips still blocked, gigafactory idle, and finance frozen, Brussels acceded to pooled cyber/bio response built by partners hit by winter intrusions. ENISA/health plugged exercised telemetry/locked-backups into real-time sharing and binding sample-sharing, gaining early warning and seat in joint attribution cell; cooperating cities isolated clinic ransomware wave in hours. Chips-for-compute and liability pact closed thin: licensing talks warm, no slots, insurers still waited for statute — paper not compute.
+
+At home trust repair: workload limits/human override on frozen benefits queue, published logs with redress, few audited triage assistants in willing municipalities funded from finished preparedness lines — waiting lists fell locally, elsewhere frozen, press kept lawful-harm frame. Frontier crept not leapt, systems no more legible; reviewers testing releases not development.
+
+By June 2031 Union better protected, no more sovereign: containment depended in part on a command it did not command.

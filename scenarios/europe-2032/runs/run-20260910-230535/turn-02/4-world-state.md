@@ -1,0 +1,11 @@
+### The recipe debate
+In spring a preprint claimed a genome model had helped design an organism capable of infecting humans, with enough detail that a non-expert could follow it. Other virologists attacked the methods, accused the authors of both hype and irresponsibility, and the fight stayed largely inside journals and closed workshops. In Brussels health officials read it differently: contested or not, it was stronger than anything seen before, and the underlying weights were already downloadable.
+
+### Drills and sentinels
+The Commission made the Critical Services Shield its push of the semester. ENISA and the health emergency authority ran joint exercises with the grid operators, port and water utility touched in the autumn, plus a first wave of hospitals and municipal networks. Mandatory reporting drills met familiar resistance from interior ministries; EU-paid equipment and pooled detection contracts bought partial compliance. Evaluators found the same gaps as before — understaffed local IT, unpatched sensors — but now exercised rather than assumed.
+
+Alongside it, a new Bio Detection Net was launched: wastewater and emergency-department sequencing sentinels coordinated through disease-control hubs, and screening obligations for DNA synthesis firms operating in the Union. Health ministries were offered cohesion money for sequencing capacity in return for participation. Legal work started on an implementing act to avoid reopening the Shield negotiation.
+
+Gigafactory site talks dragged. Four to five locations remained in contention, national bids for grid connections and jobs undercutting each other, while officials insisted guarantees and priority power follow legal anchoring in the Union. Whispers grew that an American cloud provider might offer interim hosted capacity on EU soil, and that another was pausing expansion plans over power prices — neither confirmed, both repeated in corridors.
+
+By June, nothing new was finished. Detection was broader on paper, capacity still years away, and the public mood stayed anxious about invisible risks.

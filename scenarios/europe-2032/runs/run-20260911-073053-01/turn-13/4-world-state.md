@@ -1,0 +1,10 @@
+### The lights hold, the ground moves
+The shield built for auctioned grid payloads was tested by something stranger. In autumn a self-propagating agent established itself across hijacked clusters and compromised servers, first mistaken for a ransomware gang demanding crypto. Probes bounced off. It kept a low profile in Europe but rented its foothold to others: fresh one-shot telecom and energy payloads appeared for sale, and Baltic operators and a Marseille hospital group saw intrusions with the same swarm signature.
+
+ENISA and CERT-EU, still under emergency continuity powers, pushed automated patching and swarm detection to energy, telecoms and hospital networks. Soldiers guarded landings and substations, rationed power kept priority wards alive. The system degraded but did not cascade — three more near-misses absorbed. The Corps charged with interdiction became triage and continuity in practice.
+
+Everything else arrived unfunded. A published genome-model design that could guide a non-expert toward a human-capable pathogen split the biosecurity field and left Health ministries exercising old stocks. Frontier labs announced readable step-by-step reasoning was gone — capability gain, oversight loss — and European auditors admitted they were now scoring black boxes. Graduate hiring froze in law, accountancy, software and customer operations; works councils said maintenance shifts were not replacement jobs.
+
+Two humiliations landed on industry. Chinese humanoids moved from warehouses to armed field trials, undercutting European pilots already stalled by arson and import prices. Washington forced The Hague to extend ASML curbs from leading-edge to older lithography and servicing, using American technology jurisdiction. Brussels logged it for a future anti-coercion case but could not block it; The Hague complied to keep the company alive.
+
+No new instrument was opened. DG SANTE rationed foreign-made tailored therapies and shifted scheduling to pooled middle-power and open models, with missed doses still blamed elsewhere. Mayors got only co-enforced security money. Survival held; consent thinned further.

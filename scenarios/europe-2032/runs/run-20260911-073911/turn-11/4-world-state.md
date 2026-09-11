@@ -1,0 +1,11 @@
+### Holding the line
+July to December 2031 was governed by what Brussels chose not to start. With capital and trust exhausted, the Commission husbanded finished shields rather than proposing new law. ENISA, health and power operators kept isolation and rerouting around the two degraded Atlantic landings and the therapy-scheduling hub on backup power. Licensed doses kept arriving, but queues lengthened and hourly compute bills stayed near triple.
+
+The deconfliction note was renewed: Union territory, landing stations and the two permitted factory plots declared non-belligerent, with pleas to Washington to exempt servicing chains for ordinary chips and to Beijing for reciprocal restraint. Washington acknowledged; Beijing stayed silent. Insurers quietly declined to cover repair ships in contested waters, and single-source press reports spoke of cable ships waiting weeks for an escort window.
+
+### The chokepoint used by someone else
+In autumn Washington ordered a further cut to servicing and exports of chipmaking equipment — beyond leading-edge tools to older machines used for ordinary chips, and to a wider customer list. The instrument was American technology embedded in the Dutch supply chain. The Hague protested, the company warned it could not survive refusal, and compliance followed. In European capitals the episode landed as humiliation: the Union's one real bottleneck had been conscripted.
+
+At the same time a major laboratory published a physics result — a new catalyst family for grid-scale storage found with AI-directed search, validated in two pilot lines. Specialists called it genuine; for the public it was invisible beside closed factories and guarded grid works.
+
+Entry hiring did not return in law, accountancy, software and customer operations. Bridge pay from the earlier guarantee scheme reached ports where automated shifts now ran full time, but mayors called it weeks, not jobs. Arson at grid-connection works eased under guard, but construction in two regions stayed halted. Frontier training ran on unattended through alerts, logged in Brussels only after release.

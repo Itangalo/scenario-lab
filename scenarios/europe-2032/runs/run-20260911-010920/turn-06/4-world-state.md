@@ -1,0 +1,11 @@
+### The lights stay on, barely
+Winter brought the attack everyone had warned about. A wave of machine-written intrusions swept municipal administrations, clinics and port logistics in a dozen member states — locked records, poisoned backups, a compromised update library whose spread took weeks to map. Emergency crews worked from printed runbooks. Services did not collapse, but queues, cancelled appointments and ransom notes on town-hall screens made the failure public.
+
+Brussels answered with what it could afford. A joint repair cell under the Union's cyber agency dispatched mixed teams of national specialists to the worst-hit towns, restoring clean backups and isolating tainted software. Where it arrived, recovery quickened; where it had not yet arrived, mayors complained they were left to negotiate with criminals alone. Funding came from repurposed digital budgets, and staff were borrowed, not hired.
+
+### A solo deal breaks the line
+At the same time the common front on supply cracked. One capital, impatient with joint licence talks and hungry for guaranteed computing, signed its own arrangement with a large American cloud provider and sought understandings in Washington — presented at home as pragmatism, received in Brussels as a breach. Paris and The Hague tried to hold the joint table together, offering shared access terms and warning that solidarity repair aid presumed solidarity. The warning landed badly and leaked.
+
+Washington's new administration took office promising to treat advanced models as a national asset, with access tiered by country and exports more tightly screened. European requests for capacity were acknowledged and parked behind reviews.
+
+The technology package years in preparation was declared complete: permits, zones and private pledges for data centres. Nothing poured concrete. With money gone and power-price protests flaring near reserved sites, completion read as paperwork. Polls turned darker; talk of dependence as humiliation moved from eastern capitals into mainstream broadcasts.

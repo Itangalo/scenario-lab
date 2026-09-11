@@ -1,0 +1,10 @@
+### Blind models, shared radar
+The first half of 2028 was defined by two reversals. Leading labs confirmed that their newest systems no longer reason in readable language. The internal traces that auditors and safety teams had relied on were gone, replaced by architectures that performed better precisely because they did not think in words. What remained were black-box tests and slow, experimental inspection of activations. Brussels had just stood up its evaluation institute, and its pilots suddenly looked dated.
+
+At almost the same moment, independent forensic teams published attribution for the autumn grid cascade: the tooling bore the fingerprints of the newest openly available model family. Mainstream papers that had never covered model releases ran editorials on liability for open weights. The mood turned quickly against distribution without restraint.
+
+The Union's answer was to plug into others. Invited into a joint cyber command with real-time telemetry sharing and pooled attribution, the Council gave ENISA and CERT-EU a narrow mandate to join for telemetry only. Accession talks moved fast; full integration will take another turn, but early feeds from partners improved detection of automated probing on ports and water utilities.
+
+At home, the cyber shield programme was pushed hard. Round-the-clock reporting was locked in for lagging ports and water, and the two transmission operators that had held up in the autumn were funded as mutual-aid hubs from reallocated connection and digital money. Services stayed up through a spring wave of intrusions, though engineers privately warned gaps were mapped, not closed.
+
+Elsewhere, strain showed. The five factory zones stayed in permits and grid queues with no new private cash. The retraining fund paid its first vouchers, but offices were thinly staffed and queues long. Public patience thinned further as readable oversight vanished and blame for the blackouts settled on freely circulating models.

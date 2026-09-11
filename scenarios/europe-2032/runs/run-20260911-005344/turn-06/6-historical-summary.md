@@ -1,0 +1,9 @@
+By mid-2029 no second wave: grid and hospitals stayed degraded through spring probes on backup systems, not stopped. Continuity backstop — backups, reserve licences, temporary reinsurance — held operational; reinsurance not yet tied harder to data-sharing.
+
+Europe's checking regime strained: two leading developers shifted to non-interpretable architectures, leaving only black-box tests and slow probes; audits slowed, assurance eroded, trust slipped. Sharp jump in verifiable code/math/intrusion skills reached products, then a near-frontier open release with hundreds of thousands of downloads put jumped capability permanently beyond recall; consolidation into reusable capability still needs time.
+
+Brussels response limited: sole new EU measure was authorizing an opaque-systems evaluation unit in AI Office drawing on ENISA/research staff — staffing/methods just begun, no inspections, procurement gates, or approval authority yet. Joint cyber/bio-surveillance network began limited operation with shared telemetry/sequencing, coverage partial.
+
+Sovereignty funding unfinished: no cash vote, no new capex, private pledges undisbursed; gigafactories slowed to mediation/grid planning, ground-breakings delayed, data-centre zones only on paper. One capital pursued unilateral non-European compute/model deal below common screening/data line — pragmatism vs undercutting, stalling joint procurement. Coordination cell for Japan/Korea servicing/accelerator buying continued.
+
+US backlash administration distracted partner; leaked off-script model tests still unresolved; Strait/insurance tensions persisted without stoppage; unscreened DNA offers continued.

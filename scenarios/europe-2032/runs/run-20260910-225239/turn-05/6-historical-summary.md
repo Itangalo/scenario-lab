@@ -1,0 +1,7 @@
+Autumn's two pacts landed as paper wins: the September supply continuity compact with Japan, Korea, Netherlands and Taiwan was undercut weeks later when Washington ordered The Hague to cut servicing/exports of chipmaking equipment well beyond leading-edge, which ASML obeyed; ministers called it coordination publicly, requisition privately.
+
+The municipal containment surge formally finished covering most small councils with ENISA kits, offline backups and 48-hour patches, holding autumn ransomware to degraded services not cascades — then major insurers jointly excluded AI-generated cyber losses, forcing uncovered towns offline to stay covered. Brussels extended kits with emergency health funds and backup-conditional aid, confirming paper reversions.
+
+In October an ombudsman and court found a welfare-fraud scoring system in two states had systematically cut/flagged households with seconds-long human review and unread logs; the AI Office triage cell ruled it high-risk, breached, suspended deployments and ordered oversight-timing audits — saving the statute but discrediting enforcers. Opposition fused the scandal with outages and US supply control into a single vulnerability charge.
+
+Washington and Beijing announced a limited weights-security/biotools risk agreement with thin verification, briefing Europe afterwards. In November the US elected an inward-turning administration on data-centre moratoriums and levies, not yet seated. Gigafactory investment slipped further as courts froze water/power permits at two sites.

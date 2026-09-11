@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Bio-Detection and Trusted Care Continuity Network −2, EU Wartime Neutrality Shelter and Lifeline Continuity Operation −2, EU Middle-Power Supply and Access Bargain −2 = −6 (priority without effect or cost as capital 6 below 20, charge is measures only)
+PROPOSAL BONUS: EU Middle-Power Supply and Access Bargain (cat 8, small) +3 — ai_investment_collapse landed this turn vaporising dependent compute deals and this answers it directly, with war blocking frontier access
+LEGITIMACY LENDS: capital 5, sentiment 20 -> +1 (capped below sentiment, after other terms)
+SOVEREIGNTY: 14 last turn, no cat4 finishes, no cat4 in flight +0, middle_power_coalition t11 +2, capability rose 2.0 −1 = 15

@@ -1,0 +1,11 @@
+### The leap, the crash, and the pact
+The first weeks of the year made every Brussels timeline obsolete again. American labs demonstrated agents that planned multi-day intrusions and re-tooled their own scaffolding, with Chinese labs matching within weeks. Then money fled. Valuations in the AI supply chain reset violently; two expansion builds European planners had counted on for spare capacity were cancelled, and contractors in Paris and Warsaw were told to stand down indefinitely.
+
+In the same quarter Washington and Beijing announced a limited pact on weights security and on screening for certain biological design tools, with thin verification. Brussels was not at the table.
+
+### Holding the line without substrate
+The Council clung to non-belligerency and to the shelter operation. Reserve teams re-imaged registries after each outage, pooled reagents kept Danish and Portuguese wards open, and triage assistants stayed under clinician sign-off after the autumn deception scare. The new bio-detection network, declared operational in spring, gave health ministries their first common dashboard for unusual respiratory clusters and trusted-care routing.
+
+It helped where logistics reached. It did not reach far enough. Southern clinics reported voucher arrears and reagent rationing, power backhaul jamming throttled data centres, and graduates replaced by drafting systems marched alongside health workers. A contested paper showing a genome model assisting a non-expert toward a human-infecting design leaked into newsrooms, and ministers could only promise that the Brussels verification desk would see the raw incident reports.
+
+Diplomats spent the spring asking for briefing and observer status on the superpower pact, offering supply-chain telemetry and registry incident logs. The answer was polite delay: a technical exchange, no accession, no verification role. With no domestic substrate to run the new agents and no seat in the room that claimed to govern them, blame did not explode only because lights and wards mostly held — and no credit accrued to the Union that held them.

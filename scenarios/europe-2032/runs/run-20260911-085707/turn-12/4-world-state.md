@@ -1,0 +1,9 @@
+### A pact elsewhere, a scandal at home
+Washington and Beijing announced a limited understanding on securing model weights and restraining a class of biological design tools, with inspection provisions described as thin but real. Brussels learned the outlines after the fact. The Commission's mandate to seek observer status was granted quickly; the reply was polite and non-committal. American and Chinese negotiators welcomed European verification offers in principle and deferred any decision on participation.
+
+In the same months, an ombudsman-led inquiry found that an automated triage system used in sickness-benefit administration had systematically cut or delayed payments to tens of thousands of claimants. The system was classified as high-risk, yet conformity papers were in order, oversight logs showed caseworkers clearing flags in under a minute, and audit trails that could have revealed the pattern were never examined. Ministers insisted the framework remained sound and blamed enforcement failure. Press and opposition called it proof that paper compliance governed nothing.
+
+### Wards hold, just
+The bio-containment surge formally closed, its corridors, stockpiles and tracing routines folded into routine health structures. The aftercare prolongation kept overtime and cross-border cover in place, funded from existing health lines. Staff representatives in several countries balloted for limited stoppages; two regions dropped briefly to minimum cover before local agreements restored rosters. No ward closed for more than days, but exhaustion memos and anonymous accounts of refused shifts filled local papers.
+
+By June, transmission remained subdued where early surge teams had worked, hospitals stayed open, and public anger sharpened. The Union was seen as absent from the table where frontier rules were set, and negligent in the offices where its own rules applied.

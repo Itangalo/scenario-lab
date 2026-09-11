@@ -1,0 +1,7 @@
+Early 2031 ransomware wave via poisoned open-source dependency hit municipalities, hospitals, logistics with self-rewriting machine intrusion; clinics reverted to paper, Brussels ran joint recovery teams and single claims window, recovery uneven.
+
+US tightened chip/model licences under tier system — slower approvals, quotas, end-use checks, rerouted shipments — while unrecallable open models filled gaps. Brussels tabled nothing new, kept doctrine: hardened packs from open weights on municipal servers/EU cloud plus recovery corps.
+
+Municipal coalition standardized shared hardened distribution for triage, billing, dispatch running without US credentials; where installed services stabilized, where not complaints of slowness/opacity persisted. Independence from revocable access meant dependence on unpatchable open code. Earlier US model cutoff and bilateral capital-Washington side-deal breaking common line remained unresolved; frontier models stayed black-box.
+
+US landmark in automated theorem-proving for chip verification cut design checks to days but distant to public. By June power and clinics held on borrowed opaque machinery; voters credited mayors/local systems, not Brussels, remembering queues, bills and revocable access amid Taiwan tensions.

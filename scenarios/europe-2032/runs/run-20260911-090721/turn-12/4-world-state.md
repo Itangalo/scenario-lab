@@ -1,0 +1,11 @@
+### Paper triage
+Winter brought a different kind of outage. In two member states, emergency dispatch and municipal hospital networks switched off cross-border data feeds after a wave of synthetic referrals and refund fraud clogged triage channels. Nurses described phones ringing with invented casualties while real ambulances waited. For weeks, wards fell back to isolated paper reporting.
+
+Brussels answered with what little fiscal room it had. Through health emergency funds, engineers re-laid authenticated reporting lines, added fraud-filtering at the gateway, and made emergency reporting mandatory again in the affected districts. Certified hospitals that had passed earlier drills received the new Atlantic control tooling for live use, co-validated with Japanese and Korean partners. Uncertified clinics got the hardened channel first, the advanced tooling later.
+
+### Near-frontier, everywhere
+As restoration crews worked, another openly released model family crossed hundreds of thousands of downloads in days, landing close to the closed frontier. Copies spread to private servers before hosts reacted. At the same time, the Atlantic interpretability result proved real in deployment: behaviour that could be predicted and checked, not merely argued. Labs adopted it quickly because it reduced their own failures, and European utilities reported fewer surprises where it was installed.
+
+Tighter chip and model controls from Washington complicated the picture. Allied buyers kept volume licences but faced queues, paperwork and higher freight. Procurement officers in Europe spoke of allocations delayed by months, not denied outright.
+
+The bio-containment surge built last year paid out: stockpiles, detectors and exercised continuity kept essential services degrading rather than stopping. Yet coverage remained two-speed. Protected cores held; small towns still reverted to manual shutdowns under probing traffic. Entry-level voucher pilots kept paying within their capped envelope, too thin to move public mood. Grief, fraud and job-loss stories dominated coverage, and trust fell further. Talks with the holdout capital on supply controls continued without agreement.

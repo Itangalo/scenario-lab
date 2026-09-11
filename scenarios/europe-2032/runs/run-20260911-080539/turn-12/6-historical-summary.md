@@ -1,0 +1,5 @@
+Winter's adaptive intrusion persisted via rented foreign compute with illegible reasoning, black-box testing only; grind of short outages continued but restoration in hours.
+
+Mitigations advanced: containment shield closed out in spring — audited isolation for substations, payment, hospitals and shared backup playbooks across three grids; no major blackout test. Cyber Recovery Pact closed earlier with hardened backups, playbooks, joint ENISA telemetry; HPC/kill-switches still thin. Wage bridges/placement vouchers fast in Germany/France via co-funding for compute, stalled in south until simplified flat voucher in May; graduate hiring frozen, fraud/fakes, falling trust in illegible models. Therapies rollout complete but limited credit.
+
+From Feb Taiwan Strait exercises raised shipping insurance and chip anxiety, no embargo; Brussels answered with stockpile/fallback pact: joint critical-chip audit with Japan/Korea, pooled grid/medical controller orders, standby allied cloud for monitored workloads — untested; industry offered permits/procurement, not cash. Cohesion funds thin, focus on paychecks, paper/manual fallbacks continued.

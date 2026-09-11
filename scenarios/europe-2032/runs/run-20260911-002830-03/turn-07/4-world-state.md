@@ -1,0 +1,18 @@
+### The acceleration
+Autumn brought a leap no planning memo had priced. An American lab released a system that designed its own experiments, wrote its own code and drove instruments without pause, while release notes admitted its internal steps could no longer be rendered in readable form. Engineers celebrated the performance; auditors admitted the oversight tools built on reading those steps had stopped working at once. Safety teams in Brussels recorded this as a direct capability overtake: prior evaluation and monitoring regimes ceased to function, rolling back effective safeguards and degrading safety posture sharply under rule-based erosion from the capability jump and oversight failure.
+
+Within weeks training runs were being relaunched by agent pipelines themselves. Researchers spoke of cadence no longer gated by human shifts, with only power and chips as limits. Brussels briefings called it a change of regime, not another model.
+
+### Biology, work and streets
+A contested preprint claimed a genome model had helped produce a viable design for a human-infecting organism, with non-experts able to follow the assistance. Biosecurity journals fought over methods while health ministries quietly rechecked sequencing and stockpile routines, further stretching the safety resources already eroded by the oversight failure.
+
+At the same time firms published layoff tables: entry clerical, customer operations, junior legal and accounting roles simply not rehired. Graduate fairs emptied. Mayors who had fought boil notices now faced union pickets around pilot machines for clearance and digging, many built abroad and run on foreign software. Small towns still reported gaps, and one more reinsurer left small-utility cover, with resilience easing lower on strain.
+
+Counterpoints were real but thin. A European materials result, AI-found and lab-confirmed, promised cheaper grid components. Two cities showed waiting lists falling where triage assistants had been deployed under local control, credited to municipal pacts rather than vendors.
+
+### Brussels builds and bargains
+Two long builds closed. The two factory sites kept grid priority and moved from paperwork to concrete, and the municipal trust pact's wage bridges and manual-fallback drills became routine in large hospitals and grids. Completion of the factory build lifts measured sovereignty this turn as domestic compute capacity comes online, separate from political capital which moves only modestly on legitimacy and portfolio costs.
+
+Washington talks under the existing EU-US Structured Frontier Access and Joint Evaluation Pact continued on tiers and incident reporting without a signed text, though interim researcher access flowed under American rules. That pact, proposed in an earlier turn, remains the ongoing operational framework — no second new measure is introduced alongside it this turn.
+
+To hold the politics, the Union proposed a single new measure this turn: a compact for EU-procured machines for municipal work paired with wage insurance, retraining and local hiring guarantees. Councils welcomed the proposal; unions asked whether machines or bridges would arrive first. Implementation is delayed: procurement and disbursement through employment and regions funds requires member-state co-financing authorization and phased rollout, so only preparatory funding and pilot sites move in this turn, with full deployment pushed to later turns and partial blockage in small towns acknowledged.

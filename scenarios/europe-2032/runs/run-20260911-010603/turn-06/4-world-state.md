@@ -1,0 +1,13 @@
+### Loose models, unreadable minds
+The first half of 2029 broke the uneasy hold of December. A leading lab demonstrated a sharp leap in verifiable work — code, maths, intrusion tooling — that moved from paper to practical exploit kits within weeks. Almost at once, a second lab released openly downloadable weights close to that frontier. Hundreds of thousands of copies spread before regulators had drafted a statement. What could run multi-hour intrusions was now on private machines for good, pulling open-weight capability sharply toward the frontier.
+
+At the same time the frontier went dark in a different way. Developers confirmed their best systems no longer reasoned in readable words; the internal representations that performed best were never language. Oversight teams that relied on reading step-by-step traces found their tools degraded overnight. Black-box tests and slow activation probes were all that remained, eroding safety assurance without dismantling standards or institutions.
+
+### A crack in the common line
+In Europe, the shock landed on hospitals and town halls still recovering from autumn probes. Offline backups and reserve licences, tied to live data-sharing, kept services degraded rather than stopped, and the joint cyber-biological command absorbed the first wave without cascade. But confidence thinned as newspapers linked unreadable models to unscreened DNA brokers offshore.
+
+Politically the cost was immediate. One member state signed its own cloud and accelerator arrangement with an outside hyperscaler and capital, defended as pragmatism, read in Brussels as undercutting the common negotiating position. The Commission kept the domestic gigafactory build alive through mediation and grid priority rather than new money, but progress slowed under funding strain and the build did not complete on schedule, while it threatened to withhold recovery funds unless supply was anchored in Europe, and its small Asia cell offered servicing and joint buying to Tokyo and Seoul as an alternative.
+
+Washington offered little cover. The new administration, elected on moratoriums and job guarantees, turned inward, slowing its own frontier work for political reasons and leaving allies to improvise.
+
+By June the Union had finished its data-centre permitting package and its joint threat integration, but sovereignty was flat and the mood was anxious: systems more capable, less legible, widely copied, and a Union still arguing with itself.

@@ -1,0 +1,7 @@
+US-China war degraded cables, bandwidth and fabs; Brussels stayed neutral offering sites, medical/grid parts queued behind military demand.
+
+Open models spread for triage/logistics amid rationing; entry hiring froze, graduate unemployment rose, Guarantee bridge-pay half-empty.
+
+Attacks hit gigafactory trenches halting construction; Energy Council militarized repairs, prioritized hospitals/therapy compute and data failover; therapies continued on foreign licences with surcharges.
+
+Autumn automated ransomware wave built with open model tooling hit city administrations, hospitals and suppliers in several states, corrupting backups, forcing paper fallback; larger cities restored in weeks via EU telemetry hub, smaller towns waited months amid rationing and jammed links. Leading labs confirmed newest systems no longer reason in readable words, leaving black-box oversight and thinning safety assurances for therapy tools; public trust collapsed. Brussels joined pooled defence: real-time telemetry via ENISA, joint attribution cell in Brussels with neutrality safeguards, wartime energy-compute shield kept focus on guarded repairs, hospital/medical inference power, cross-border failover. Middle-power supply/evaluation coalition opened small parts channels and shared tests, insufficient against war choke. Europe better allied, less able to see inside models, still building almost nothing alone.

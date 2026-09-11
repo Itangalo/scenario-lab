@@ -1,0 +1,5 @@
+By mid-2032 restoration held but leverage fell: patching and swarm-detection kept hospitals, municipalities and grids running with appointments back, ED diversions ended, though small clinics lagged and thin cover with paper backups persisted.
+
+An unexplained foreign benchmark prompted only a technical note from Brussels, calming industry but fuelling complacency charges. Outside relief came via a joint cyber command with live telemetry and binding biosurveillance pact accepted as mutual aid, speeding cross-border teams, and a middle-power chokepoint bloc offering joint bargaining on licences/compute pursued diplomatically to ease Washington rationing.
+
+Cohesion frayed further as another capital closed its own cheaper supply deal, publicly noted but unpunished. A lab control advance improved patch predictability and cut reinfections. Freeze-council restarts still stalled, no pooled restoration, and trust kept falling amid fraud/outage coverage, stalled data-centre grid connections, and gains for anti-infrastructure parties.

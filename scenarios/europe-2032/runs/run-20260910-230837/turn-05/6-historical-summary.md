@@ -1,0 +1,7 @@
+Autumn 2028 brought a Taiwan quarantine halting advanced chip shipments, spiking accelerator prices and shifting factories, grids and export licences to security policy. Washington, after a November election won on anti-AI moratorium and job-guarantee promises, turned inward and offered no help.
+
+The Grid Hardening Pact formally closed: five-country grid-ports-water liaison made permanent, backup controls demonstrated in November, quicker detection credited, but no end-to-end hardening and maintenance displaced; enough to avoid cascades under logistics strain.
+
+Brussels launched a Supply-Chain Bargain — dual-use licensing and anti-coercion reviews offering maintenance/spares for foundry capacity, EU-soil sovereign compute and shared incident data with Japan and others — talks started, no slots secured.
+
+Factory power pledges from Paris, Berlin, Madrid, Stockholm, Warsaw resisted conversion to emergency allocations; no foundations, one hearing kept open via Displaced-Worker Bridge outreach. A genome-model study claiming non-expert assistance toward human-infecting design sparked a HERA watch despite methodological dispute. Polling darkened on dependency despite noticed social cushion.

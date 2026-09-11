@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Metric movement violation (Constraint 9): `eu_political_capital` increased from 12.0 to 19.0 (+7.0), which is acceptable under the 25-point cap, but the Game Master's Notepad shows the legitimacy lend term as +2 (from capital 17 and sentiment 20), and the portfolio charge as −4. There is no other positive term identified in the notepad to justify the net +7 change. The only positive input is the +4 proposal bonus, but that applies to sovereignty (via metric rule 5), not political capital. Political capital has no identified source for a +7 increase given negative or neutral inputs in the notepad. This violates the requirement that metric changes be justified by the rules and recorded events.\n- Invariant violation (Constraint 2): `ai_safety` decreased from 6.0 to 3.0 (−3.0). While falling metrics are allowed for `ai_safety`, the narrative and notepad do not justify this drop under any recognized mechanism. The notepad records a +4 proposal bonus for a safety-relevant measure (EU Rogue Agent Containment and Essential Services Shield) that directly answers \"catastrophic_loss_of_control_incident\", \"cyber_major_incident\", and \"opaque_reasoning\" — all of which should trigger upward pressure on `ai_safety`. No countervailing event or rule-based decay for `ai_safety` is specified in the rules provided, and no justification for a drop is present in the narrative or notepad. A decrease in `ai_safety` under these conditions contradicts the expected direction of change given the events and interventions, and without an explicit rule allowing such a drop, this constitutes a violation of modelling consistency."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

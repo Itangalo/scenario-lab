@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t3: InvestAI Gigafactories −3, Tech sovereignty package −3, EU AI Evaluation and Safety Institute −3, EU Critical Infrastructure Cyber Shield −3, EU AI Incident Reporting and High-Risk Enforcement Fix −2, priority −1 = −15
+PROPOSAL BONUS: EU AI Incident Reporting and High-Risk Enforcement Fix (cat 2, small) +3 — automated-decision scandal and cyber_major_incident both landed this turn and this answers both directly
+LEGITIMACY LENDS: capital 10, sentiment 27 -> +2
+SOVEREIGNTY: 20 last turn, no capacity build finishes, Gigafactories in flight +0, eu_frontier_access_denied t3 −2, capability rose 2.0 −1 = 17

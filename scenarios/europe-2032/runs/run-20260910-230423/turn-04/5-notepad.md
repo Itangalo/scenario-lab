@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t4: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Assurance Adoption Programme −2, Certified Resilience Backstop −2, priority −1 = −11
+PROPOSAL BONUS: Certified Resilience Backstop (cat 6, small) +3 — emergent insurance crunch this turn strands uncertified hospitals/utilities and this answers it directly, with investment collapse adding urgency
+LEGITIMACY LENDS: capital 11, sentiment 37 -> +1
+SOVEREIGNTY: 23 last turn, no capacity measure finishes, Gigafactories in flight +0 stalled by build cancellations, member_state_defection t4 −2 (largest capacity event), capability rose 1.0 −0 = 21

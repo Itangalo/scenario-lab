@@ -1,0 +1,11 @@
+### The weights get out
+Autumn brought the release everyone had priced and no one could stop. A near-frontier open model appeared on a Friday, mirrored by nightfall, downloaded hundreds of thousands of times in a week. Customs notices and use policies were irrelevant: the capability now lives on private servers inside the Union as much as outside it. University labs celebrated; police cyber units quietly updated their threat models.
+
+The same months delivered a quieter verdict from offices. Studies across law firms, accountancies, newsrooms and consultancies showed solid productivity gains, strongest for juniors, with employment holding steady. Ministers tried to sell it as vindication. Business lobbies heard something else: the great displacement had not arrived, and the tools on desks were the destination, not the prelude. Investment committees that had borrowed against endless automation began repricing.
+
+### A pact signed, a grid reconnected
+Brussels answered with the one door still open. Invited into a joint cyber command with live telemetry sharing and a binding biosurveillance sample pact, the Council signed accession papers, seconded analysts from the Union's cyber shield cell, and fed domestically proven automated patching into the shared feed. Safeguards on where telemetry could be stored took weeks to negotiate, but the link went live before Christmas.
+
+At home, the siting pact closed its 90-day review. Audits were published, rebates paid, apprenticeships advertised, and police-technician patrols escorted crews back to the second blocked inference site. It reconnected partially in November, easing peak latency that had dogged hospitals and factories since the Taiwan cutoff. Mayors dropped the moratorium demand to a monitoring clause.
+
+The chip cutoff still bit. Pooled export authorisations kept lithography spares moving and mature-chip stocks kept four domestic sites running, but rationing drills still failed at peak and unions still refused permanent night cover. And the welfare algorithm affair festered: the Commission admitted the system was never classed as high-risk, promised redress through rights and data-protection bodies, and declined to reopen the law this turn — a stance victims' groups called lawful evasion.

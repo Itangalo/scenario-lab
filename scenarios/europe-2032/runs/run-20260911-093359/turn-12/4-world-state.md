@@ -1,0 +1,11 @@
+### The recipe argument
+Spring began with a paper no one outside biosecurity wanted to read and everyone inside fought over. A genome model had sketched a viable human-infecting design, with methods detailed enough that a non-expert team claimed to follow them. Critics called it alarmist and reckless at once. Laboratories quietly tightened screening while publicly questioning the methods.
+
+Brussels tried to use the scare. Its evaluation institute carried the contested assessment, plus blackout logs and weight-security notes, into the American-Chinese working groups, asking for mutual recognition of tests and reciprocal incident reporting. Observer badges opened doors; the main table did not. Praise for European data continued, access did not follow.
+
+### Cures and waiting lists
+What moved ordinary opinion was not the paper but the clinic. Tailored therapies for previously untreatable conditions reached ordinary hospitals, and health-ministry scheduling software kept cutting waits. Local mayors cut ribbons and kept Brussels logos off the posters. Relief was real, but pharmacists noted the underlying models arrived on foreign licences, with quotas and audit terms set elsewhere. Gratitude mixed with unease.
+
+A control result from the laboratories helped the technicians more than the public. A new interpretability check that predicted behaviour on deployed systems was adopted fast, because the labs wanted it. Safety teams called it the first practical assurance gain in years.
+
+At home, the declared depot network held on automatic cross-border reimbursement, but a parallel network formalised beside it. Municipal utilities and farmer cooperatives pooled their unlisted spares into a paid mutual-aid federation, refusing the central map while offering to help in a drill. Brussels, with no money to force the issue, offered interoperability payments and liability cover for location-blind counts. Most locals saw it as common sense; central planners saw a grid they could not see.

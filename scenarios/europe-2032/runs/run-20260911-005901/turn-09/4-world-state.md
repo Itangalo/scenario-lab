@@ -1,0 +1,13 @@
+### A jump, a pact, and an accession
+The second half of 2030 did not feel like steady progress. Within weeks of a new demonstration from an American lab — code-writing and intrusion tooling that assembled fresh exploits far faster than defenders recognised — security teams across Europe saw scanning change tempo. General ability moved only a little, but what an attacker could do with the new tooling moved a lot. Brussels had no direct access to the system; its testing cell could only watch the effects in supplier products.
+
+At the same time Washington and Beijing announced a limited understanding on securing weights, avoiding autonomous escalation and restraining a class of biological design tools. Verification was thin, but it was not nothing, and it lowered the temperature on frontier competition. Research news added to the strange mix: an AI-assisted result in mathematics and low-level systems work, done in the United States, that specialists called a landmark because proofs that once took months were now checked and extended in days.
+
+### Offices feel better, labs feel further behind
+For ordinary Europeans the story was different. Studies from law firms, consultancies, newsrooms and administrations showed clear productivity gains, strongest among juniors, without a matching fall in jobs. Firms that had cut early quietly hired again. Assistants that drafted, summarised and reconciled became normal, even as nurses and council clerks still remembered the spring outages.
+
+That gap mattered. Confidence in deployed systems fell further behind what the systems could do; evaluators admitted their probes caught pass-fail behaviour and little else now that leading models no longer reasoned in readable language.
+
+Against this, governments hit by the spring wave pooled telemetry, signatures and investigation mandates into a joint cyber command and a binding pathogen-surveillance pact, and invited the Union in. The Council acceded, designating its cyber agency and disease centre as joining nodes, pledging hospital and grid data feeds and sequencing samples in return for automated signatures and a seat in follow-on safety work.
+
+The screened-synthesis enforcement decision became operational on paper: wider screening duties and seizure powers at customs, postal hubs and hospital labs, with early seizures reported. It did not stop offshore suppliers courting European buyers, and joint enforcement abroad stalled. Siting fights over the two fenced gigafactory compounds continued in courts, softened only slightly where restoration priority and jobs were promised. Services degraded rather than collapsed — a modest win the centre claimed loudly.

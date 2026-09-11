@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Bio-Detection and Trusted Care Continuity Network −2, EU Wartime Neutrality Shelter and Lifeline Continuity Operation −2, EU Bio-Incident Containment and Open-Model Triage Surge −2 = −6 (priority without effect or cost as capital 13 below 20, charge is measures only)
+PROPOSAL BONUS: EU Bio-Incident Containment and Open-Model Triage Surge (cat 6, small) +3 — bio_incident fired this turn with real casualties and this answers it directly
+LEGITIMACY LENDS: capital 12, sentiment 20 -> +2 (capped below sentiment, after charge and bonus and finishing and event dampening)
+SOVEREIGNTY: 17 last turn, no capacity event, no cat4 in flight +0, capability rose 1.2 −0 = 17

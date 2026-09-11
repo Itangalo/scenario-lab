@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: M11 EU Wartime Essential Continuity Command −2, M12 EU Middle-Power Continuity and Access Pact −2, priority no effect under capital below 20 = −4
+PROPOSAL BONUS: EU Middle-Power Continuity and Access Pact (cat 8, small) +4 — war blockade plus state-to-state queuing for medical/grid models fired last turns and this answers it directly, small size caps it
+LEGITIMACY LENDS: capital 4, sentiment 10 -> +2 (capped below sentiment, included in capital)
+SOVEREIGNTY: 12 last turn, no cat4 finish or in-flight, middle_power_coalition t12 +2 (largest capacity event securing access), capability rose 3.0 −1 = 13

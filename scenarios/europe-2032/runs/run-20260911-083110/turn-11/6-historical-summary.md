@@ -1,0 +1,5 @@
+2031 opened with cutoff of leading foreign AI model for EU users crippling triage/dispatch/ports, and a deliberate biological release contained via autumn-installed sequencing/wastewater sentinels; embedded EU repair crews, offline rebuilds, paper-to-digital kits and shift to EU-hosted open models kept services degraded but open amid machine-written attacks.
+
+Later Washington and Beijing announced a limited joint pact on model weights, autonomous escalation, and biological design tools with thin inspections, slowing frontier labs; Brussels learned from press release. Commission offered sentinel data, audit practice and export-control alignment for observer/verification role, got only a working-group promise.
+
+Unity frayed as one member state signed its own compute/service deal with a US hyperscaler undercutting common bargaining, forcing Council to manage internal quarrel. On the ground fallback held barely through renewed jamming; no new Gigafactory funds, sites warm, chip-tool curbs unanswered. By December Europe was nominally in safety talks but still dependent, queuing and on domestic fallback.

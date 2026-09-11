@@ -1,0 +1,3 @@
+By H2 2032 hiring freeze hardened: retraining in hundreds vs need in tens of thousands, wage insurance blocked by lack of re-hires, job centres told graduates to wait. Transition levy stalled by employer opposition and legal-base dispute withholding funds, seen as unfunded promise. Graduate protests escalated to blacklists and data-centre occupations, cleared without major injury.
+
+No EU chip rationing; US tightened controls with lower ceilings and audits, causing delivery slips. Cohesion broke as one member state signed separate supply deal for capacity/model access; Commission offered Union bolt-on and displayed anti-coercion instrument without triggering it. By Dec hospitals/grids held on overtime, guarantee unfunded, entry jobs empty.

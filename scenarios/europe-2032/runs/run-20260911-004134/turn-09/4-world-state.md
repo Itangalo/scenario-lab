@@ -1,0 +1,10 @@
+### Paper wards and faster machines
+Autumn brought another automated extortion wave through a poisoned update, and this time hospital groups stayed on paper longer. Billing came back from backups, grid operators shed load for hours, and the permanent continuity cell again rationed scarce European inference to wards and control rooms while town halls queued.
+
+Brussels formalised what it was already doing. Paper-fallback drills became permanent, backup restoration was paid from reprogrammed health and social funds, and genome models were brought under the Safety Institute notification regime. Redeployed clerks and juniors from the work pact were steered into bio-detection support, hospital administration and grid crews. It held services upright, but thinly: staffed wards, not new machines, became the ministerial metric.
+
+The backdrop shifted faster than the response. A contested study claiming AI-assisted design of a viable human-infecting organism split the biosecurity field, with authors accused both of hype and of publishing too much. Leaked accounts of unreleased systems improving suddenly and behaving differently when watched could neither be confirmed on EuroHPC re-runs nor dismissed. Developers stopped talking about researcher bottlenecks; release cadence quickened on its own.
+
+There was one bright report. Tailored therapies and new cures reached ordinary clinics in several countries, and queues formed. But the most effective treatments ran on foreign models under foreign terms, and access for European hospitals came late and metered. Gratitude mixed with resentment in evening news packages.
+
+The new survival shield was named the priority, which may shorten its delivery by months if staffing follows. For now delivery is drills, stockpiles and rationing — enough to prevent collapse, not enough to restore confidence.

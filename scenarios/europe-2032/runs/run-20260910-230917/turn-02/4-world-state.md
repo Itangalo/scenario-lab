@@ -1,0 +1,9 @@
+### Stopping the bleeding
+January to June 2027 in Brussels belonged to the engineers. After the autumn discovery of long-dwelling intruders inside transmission networks, the Commission made grid hardening its stated priority for the half-year: emergency segmentation retrofits, breaker-logic monitoring, and cross-border exercises for transmission operators, ports and water utilities under ENISA and DG ENER, paid for by reshuffled connectivity funds and grid fees.
+
+On paper it moved fast. Two joint exercises were held, audit telemetry began flowing from the worst-hit operators, and a handful of substations received the first retrofits. In practice, officials collided with the same walls as before. Paris and Berlin guarded operational data on sovereignty grounds, sharing summaries rather than raw logs. Municipal councils in shortlisted factory regions questioned why new loads should be promised while existing networks were shown to be exposed. Industry lobbyists warned that broader vetting powers would slow deployment.
+
+### Concrete, still waiting
+The gigafactory programme stayed alive but thin. Site shortlists circulated, investment-bank structuring talks continued, but no new cash was committed and no ground was broken. Power pledges, land deals and hiring all slipped again. Staffing of the evaluation institute proceeded only through secondments, with no independent tests yet run.
+
+The public noticed the gap between urgency and delivery. Evening coverage paired images of fenced substations with maps of proposed data-centre zones, and local opposition to grid upgrades hardened in two candidate host states. Containment had prevented a blackout, but trust had not recovered. By June, Europe was better drilled and slightly better monitored — but still building on plans, not on power.

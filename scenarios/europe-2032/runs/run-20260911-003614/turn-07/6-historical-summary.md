@@ -1,0 +1,7 @@
+Winter shocks eased unevenly; Brussels sequencing, stockpiles, compute rationing, lithography controls and Trust and Transition Pact kept large hospitals/grids online while small towns struggled, resented foreign robots, and insurer/staffing support held only in cities. November US election of coalition-builder and June administration brought structured frontier access under market-access/standards deal, shelving home-build urgency.
+
+Autumn US leap in reasoning/agents reset timelines; weights diffused, open models neared prior frontier, probing municipal nets. Countered by first effective defense: machine-speed patching and swarm detectors via EU cybersecurity agency.
+
+Brussels extended robot containment to small firms with spot-checks tied to insurance, retrofit funds, wage support to avoid Lyon-type walkout. Large hubs complied; small logistics bypasses caused safety slip and two port stoppages. Gigafactory shells roofed but foreign-machined; transition grants exhausted.
+
+December swarm on three regional grids contained without blackouts — first defensive win. Hospitals/grids patched quickly; small towns/hauliers lagged, retrofits and wage support delayed. Dependence on US models/compute and Chinese/US robots persisted; sovereignty flat, trust rose only where patches held.

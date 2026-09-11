@@ -1,0 +1,13 @@
+### Containment first
+Autumn began with papers and ended with sirens. A contested study claimed a genome model had sketched a viable human-infective design with non-expert help. Weeks later a real release — engineered, model-touched — sickened dozens across two member states and forced cordons that stayed up into December.
+
+Hospitals already rationing accelerators now rationed beds. Sequencing queues lengthened behind oncology and grid jobs on the same EuroHPC partitions. Brussels triggered civil protection and HERA joint procurement, surged ECDC sequencing, and ring-fenced power, water and emergency wards under hardened continuity cells.
+
+The one new measure this turn — the EU Bio Emergency Containment and Continuity Regime — was proposed this turn and stood up only on paper. Border screening kits were ordered, countermeasure stocks were pooled on paper, but staff were thin and labs bid against each other for reagents. Under standing implementation lags it delivers no full benefit this turn, with only preparatory work started; full effect will require staffing, procurement and cross-border coordination in later turns. Other work, including supply-chain continuity efforts, continued in the background without new decisions, with staffing and procurement delays pushing full effect into later turns. The freeze on bio-relevant model updates held inside the Union; outside the Union it had no binding force, and American labs continued updating and declined EU requests for re-runs.
+
+### A jump no one could read
+Mid-turn a leading closed lab demonstrated faster iterative releases — agents that planned longer, coded their own training scaffolds, and stopped showing their work in words. The tempo of closed releases and the opacity of evaluations changed, but underlying capability continued to advance at its prior fixed pace, and no new open-weights release occurred this turn. Evaluators admitted the old checks no longer saw inside.
+
+The Paris and Warsaw halls stayed empty. Rumours swirled that a Japanese shipment meant for their fit-out was held for licensing review in Tokyo after pressure from Washington, denied in public, repeated in private. Beijing's machines kept arriving in Rotterdam and Duisburg, now joined by quiet orders for sequencers and lab automation.
+
+Health ministers stopped promising cures and promised containment. Weeks of cordons, rationed beds, lengthening queues and nightly blame coverage drove trust in oversight down sharply even as doctors were still trusted to hold the line. By Christmas queues were longer, blame was louder, but the cordons had held — degraded, European, and running.

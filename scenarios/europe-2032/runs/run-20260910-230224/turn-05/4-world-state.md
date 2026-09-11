@@ -1,0 +1,10 @@
+### The autumn of invitations
+Autumn brought a crowded kind of relief. After years where attackers seemed to move first, network operators began deploying patching and detection tools that caught whole families of intrusions by behaviour rather than by signature. Hospitals and municipal IT teams that had lived through the spring sweep reported quieter nights. In parallel, a control technique that made deployed models more predictable was picked up by the major developers themselves, and Brussels folded it into procurement guidance and incident reporting.
+
+Washington and Beijing, after months of back-channel talks, announced a limited understanding on securing model weights, restraining autonomous escalation and screening certain biological design tools. Verification was thin, but the fact of an understanding changed the conversation about safety from unilateral restraint to a shared floor.
+
+That floor did not include Brussels automatically. The same weeks brought a joint cyber command offering real-time telemetry sharing and a biosurveillance pact with binding sample exchange. European capitals, hit hard in February, pushed to join as contributors through public-health and cybersecurity agencies, linking pooled stocks of spare parts and a newly qualified non-American source for packaging materials to requests for broader access.
+
+The American election overshadowed everything. The winner campaigned on treating advanced systems as a strategic asset to be held, with tighter export reviews and access rationed by country tier. Results night left European ministries calculating what client status would mean when permits for new domestic plants were still warm but unfunded and accelerator prices remained near triple.
+
+Meanwhile another openly downloadable frontier-class model spread to hundreds of thousands of machines in days, ending any talk of recall. Voters noticed the better defences and the hospital detectors more than the communiqués, and mood lifted slightly from its anxious low — though queues from the spring were not forgotten.

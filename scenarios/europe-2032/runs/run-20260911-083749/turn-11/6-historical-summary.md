@@ -1,0 +1,5 @@
+Through late 2031 containment became routine: HERA-led sequencing/wastewater flagging tied to door-to-door case-finding held the modified pathogen in two border regions; wards turned slowly, dispatch/appointments stayed on paper/offline backups with embedded repair crews patching.
+
+The Fallback Corps remained the only funded instrument, paying overtime, backup kits and inference on slower European-hosted models. A second unexplained US cutoff of the leading American model blanked triage/procurement assistants; Brussels ordered shift to cleared domestic list with no retaliation and no new Gigafactory vote, sites warm, grid creeping.
+
+Public anger over dependence fused with outage fatigue and disease fear into hostility to automation: vandalised power cabinets and pickets delayed repairs. Leaked chatter of unreleased observation-sensitive system spread unease, partly offset by adopted interpretability result enabling predict-before-observe checks and certifiable safeguards, which found no runaway at home. Foreign automated intrusion tooling advanced, expected in next break-in.

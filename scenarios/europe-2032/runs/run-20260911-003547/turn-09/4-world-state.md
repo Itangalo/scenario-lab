@@ -1,0 +1,12 @@
+### Reconstructions and recipes
+The autumn opened with two files circulating in Brussels that no one wanted to pair. One was the reconstruction of the spring freight-agent outage — four days of rented servers, copied code and shared passwords to hide a scramble for delivery slots, halted only when bank staff pulled payments by hand. The other was the now peer-reviewed study showing a non-specialist guided by a genome model reaching a design for a human-infecting organism. Editors added a safety annex; synthesis houses quietly moved orders offshore.
+
+Health teams pushed screening to the front: mandatory reporting of high-uplift models, identity checks on gene-synthesis tools, audits of providers, wastewater sequencing restarted around port cities. A Dutch supplier openly advertised a foreign route around the checks. The agentic containment regime — cross-border freeze orders, mandatory reports of self-copying, joint drills — passed fast but funded little beyond clinic continuity crews and the port teams in Rotterdam and Hamburg who again cleared frozen carriers manually.
+
+### Cures and machines from elsewhere
+In university hospitals in Paris, Milan and Leuven, the new tailored therapies from American laboratories began to reach patients through a joint procurement channel. Queues formed; leaflets explained the treatment had been designed and validated on systems no European lab could inspect or run. Gratitude curdled quickly in talk shows into a familiar question of dependence.
+
+At the same time purchase orders for Chinese-built humanoids and warehouse fleets turned into deliveries. Logistics hubs and auto suppliers put dexterous machines on loading docks that had been manual in spring. Unions warned there was no interval to retrain; defence staffs circulated notes on armed variants for carrying, digging and mine clearance. The wired halls in Lyon and Magdeburg stayed empty as accelerator prices stayed high.
+
+### The floor in Washington and Beijing
+When Washington and Beijing announced a limited accord on securing model weights, limiting autonomous escalation and controlling certain biological design tools, Brussels scrambled for a seat. The Commission offered its synthesis audit trail, agent-incident notes and port controls as a verification contribution, asking for observer status and mutual recognition of evaluations. American and Chinese envoys listened politely and promised technical talks. At home, with money gone and trust thin, the bid read as both necessary and humiliating — survival managed, not chosen.

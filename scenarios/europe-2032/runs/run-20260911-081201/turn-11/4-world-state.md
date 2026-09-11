@@ -1,0 +1,10 @@
+### A winter of outages and openings
+The autumn brought another large automated assault on public services. Municipal portals, appointment systems and local registries went dark in waves, with the same pattern as January: districts that had enforced network isolation and required human sign-off for automated actions restored service in days, others queued outside town halls for weeks. Evening bulletins showed French and Dutch support teams again on the road. Attribution remained unresolved by Christmas; engineers agreed only that much of the tooling had been machine-generated.
+
+In the same months, laboratories demonstrated a sharp jump in machine competence on verifiable work — code, mathematics, intrusion tradecraft. Attackers absorbed it within weeks, defenders did not. Safety assurance, already thin, fell effectively to zero: no shipped system carried guarantees that survived the new tooling.
+
+Capital fled the sector at the same time. Valuations reset, several planned data-centre expansions were cancelled, and two private hosting arrangements European buyers had counted on evaporated. Brussels leaned harder on its fallback: reserved supercomputer capacity and floorspace in the single large AI factory under construction were formally handed to cut-off hospitals and ministries. The autumn migration drills, rehearsed with clinics that had held in January, became the most credible thing the Union owned.
+
+That credibility got one visible win. A public-sector triage and decision-support deployment, scaled onto European-hosted models under strict containment rules, cut waiting lists and decision times in early-adopter cities. Mayors showed it off in clinics and town halls, and procurement was conditioned on telemetry sharing and isolation gates.
+
+It was not enough to lift the mood. Warehouse robots and logistics machines arrived in force from American software and Chinese hardware, hollowing out picking and sorting work while care and repair work stayed manual. With screens still dark in places and jobs disappearing in others, public hostility deepened further.

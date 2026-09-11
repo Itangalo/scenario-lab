@@ -1,0 +1,7 @@
+Late 2030 saw AI-written assaults on appointments, dispatch, and ports with delayed attribution, forcing clinics and town halls to paper and queues.
+
+In January, US providers cut EU access to their leading AI system with days' notice, crippling hospitals, ministries and logistics built on it; simultaneously a machine-assisted modified pathogen was released, requiring weeks of containment. Self-rewriting intrusion toolkits spread, forcing renewed paper triage.
+
+Brussels held emergency footing without new vote: embedded EU cyber repair cell stayed on under health-emergency mandates, nursing offline backups and workarounds; sequencing/wastewater sentinels shifted to case-finding; staff paid overtime. Ministries ordered onto European-hosted open models and older licensed fallback systems, with reprogrammed digital funds paying for EU-soil inference. Municipal backup kits completed in spring kept services degrading not stopping.
+
+No new Gigafactory money; sites kept warm, grid works crept forward, factory votes and retaliation talk frozen. US lithography curbs on older tools held with Brussels solidarity aid. Public mood collapsed further on outage fatigue, ward closures, engineered-disease fear, and humiliation at exposed dependence; mayors credited crews but not the Union.

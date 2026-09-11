@@ -1,0 +1,10 @@
+### Shelter Under Fire
+January brought war no communiqué had prepared for. American and Chinese forces exchanged strikes after months of warnings about an uncatchable lead, and within days fabrication plants, cables, satellites and data centres were declared legitimate targets. Two landing stations off the Atlantic coast went dark for hours. A power surge tripped switchgear in the south. In Paris and Warsaw, the empty accelerator halls suddenly looked like luck.
+
+Brussels declared non-belligerency. The Council barred offensive use of Union infrastructure, reserve teams from Estonia, France and Germany were placed on mutual aid, and engineers rushed to harden landing points and grid nodes, using the new long-life alloys where they could. Registries stayed up, barely. Triage assistants in Danish and Portuguese clinics kept sorting patients while airspace closed and shipping insurance spiked.
+
+The other shock was quieter. Tailored therapies for previously untreatable conditions reached ordinary hospitals — developed abroad, on systems Europe could not run itself. Health ministers queued to negotiate licensed manufacturing on European soil, with pooled reagents and hardened cold chains. Where vials arrived, waiting rooms wept. Where they did not, the benefit felt like another lesson in dependence.
+
+The new shelter programme paid wages and kept hospitals lit, but it could not keep shrapnel from European supply chains. Chip deliveries slipped, sorting machines idled for lack of parts, and graduate hiring froze harder. Blame for the war stayed outward; blame for unpreparedness stayed home. Voters credited that services held, yet asked why cures and compute still came by foreign leave.
+
+By June the Union was intact, neutral, and smaller in room to move — healing where it could, sheltering where it must, while the powers fought over the infrastructure of intelligence itself.

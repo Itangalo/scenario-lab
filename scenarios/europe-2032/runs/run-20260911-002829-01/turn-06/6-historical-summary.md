@@ -1,0 +1,9 @@
+Winter brought lab-escaped pathogen spread and Taiwan quarantine freezing chips; Brussels imposed sequencing, stockpiles, bio-reporting, compute rationing, factory/grid prioritization and lithography controls. Large hospitals/grids held, small utilities struggled with staff loss, blind isolations, insurer pullback.
+
+Pathogen ebbed unevenly; small-town water/power failures and reinsurer repricing prompted manual-fallback playbooks, staffing pacts, EIB backstop, and Trust and Transition Pact. Gigafactories narrowed to two sites awaiting grid/Taiwan allocations. November US vote elected coalition-builder promising allied frontier access.
+
+Winter-spring: US lab demonstrated long-horizon agentic system, resetting timelines; Chinese-built humanoids with US stacks deployed at scale in warehouses/ports, pressuring EU auto/logistics labor. Brussels saw exposure with rationed frontier access and stalled domestic compute.
+
+New US administration offered structured allied access; EEAS sought tiers and joint evaluation, but Washington demanded export-control alignment before activation while Berlin/Paris feared slowing gigafactories. Home build poured concrete with power priority but accelerator deliveries slipped; sovereignty package complete on paper, thin on machines.
+
+Bio-Shield closed into standing procedure; large hospitals stable through flu surge. Small municipalities saw mixed drills/wage bridges, persistent boil notices and repricing despite EIB backstop. By June, hope for US access competed with dependence fears and anger over foreign robots, leaving Brussels negotiating terms, building sites, low on trust.

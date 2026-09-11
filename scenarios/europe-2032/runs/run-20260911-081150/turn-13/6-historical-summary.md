@@ -1,0 +1,5 @@
+Autumn 2030's degraded EuroHPC fallback held through the ransomware/poisoned-update sweep: hospitals/registries stayed on European images in text-only mode, wards restored from clean copies, reserved inference defended; operations rescheduled, staff strained. Certification with new interpretability/control method calmed migrated sites but felt as inspection atop queues elsewhere, with walkouts over telemetry fears.
+
+Trust broke over welfare: investigation found an automated eligibility system systematically cut/flagged thousands for months with rubber-stamp human review and unread logs. Brussels cited high-risk breach and existing-channel enforcement, seen as paper conformity while harm ran live; protests merged with hospital walkouts, freezing new adoption.
+
+Meanwhile a near-frontier open release spread intrusion/design tools to private hardware, and a contested genome-modelling paper on non-expert-assisted human-infecting design triggered biosecurity drills without new law. Tailored cancer therapies kept delivering remissions but underscored dependence on foreign frontier design, failing to restore consent.

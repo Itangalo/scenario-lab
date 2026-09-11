@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: EU Entry-Work Guarantee and Wage-Insurance Transition Fund −2, EU Degrade-Gracefully and Detection Surge for Open Superhuman Diffusion −2, priority has no effect and no cost as capital below 20 = −4
+PROPOSAL BONUS: EU Degrade-Gracefully and Detection Surge (cat 6, small) +3 — openweight frontier release and eval anomaly this turn plus surviving agent and lawful-harm scandal in last turns, answers absorption need directly but small and effect not yet visible
+LEGITIMACY LENDS: capital 15, sentiment 21 -> +1
+SOVEREIGNTY: 13 last turn, no capacity event, no cat 4 in flight, capability rose 2.0 −1 = 12

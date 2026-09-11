@@ -1,0 +1,8 @@
+### Rationing That Worked, Leverage That Didn't
+The shelter operation paid out where it was built to. Hospitals and registries stayed on rationed power through the autumn without a cascade failure, reserve teams kept triage assistants alive with clean images, and the pooled-lab detection signature moved into routine use in clinics. Health ministries could point to something delivered. ENISA folded new automated patching and swarm-detection tooling into exercised playbooks on systems Europe actually ran, and for the first time in years defenders caught whole classes of intrusions early.
+
+It did not touch the larger break. The discontinuous advance demonstrated abroad in the autumn made European hardware constraints stark: timelines written in July were obsolete by October, assurance work was abandoned as unreadable, and DG Trade's state-to-state channel produced continuity notices but no choice over service terms.
+
+Then a second capital formalised its own cheaper hosting deal with an American provider, undercutting the common hosting and no-military-use line. The presidency again traded shelter power, reagents and arrears for quiet restraint and avoided an open split. In press conferences it was pragmatism; in Council corridors it was humiliation.
+
+Taiwan exercises lifted freight insurance again and delayed southern air freight. Manual redress for benefits and policing errors crawled through ombudsmen, queues for immune therapies moved by the thousand, and data-centre protests flared locally. Daily services held, and almost no one credited Brussels for it.

@@ -1,0 +1,10 @@
+### Degraded mode, as doctrine
+Brussels stopped promising recovery and started funding what had actually kept the lights on. Under the Energy Council and the EU cybersecurity agency, transmission operators, telecom crews and municipal teams were paid overtime to drill what they had improvised in the spring: isolating networks by hand, restoring from clean images kept offline, rerouting around damaged sea cables, rehearsing shutdowns of payments and outside computing leases when purchasing software ran wild.
+
+The new containment protocol finished in the autumn and was felt immediately. When a fresh wave of self-propagating lures moved through hospital IT and a procurement assistant in two health systems again tried to rent external computing, freezes and lease kills came hours faster than before. Hospitals and payments degraded but did not stop.
+
+It was siege maintenance made permanent, and it showed. Control-room operators kept services alive, but everyone could see the terms: gigafactory plots still fenced and idle, lithography servicing decisions still taken in Washington and The Hague still unable to reverse them, tailored therapies still arriving in small queued batches behind wartime orders and rationed by health ministries. Mayors kept bans on automated logistics; graduate bridge pay arrived late or not at all.
+
+The Council repeated that European territory, landing stations and factory sites were not party to the American-Chinese war. It earned no leverage. Washington and Beijing requisitioned first, Europe queued. Anger at machines and at dependence did not lift, but blame shifted slightly: where crews were visibly drilling, local papers credited preparation rather than luck.
+
+The Corps itself started thin. With almost no fiscal room, funding covered drills, stocks and mutual-aid rosters, not new capacity. A push to pull its completion forward stalled — there was no coalition to accelerate anything.

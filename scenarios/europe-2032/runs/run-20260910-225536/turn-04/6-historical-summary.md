@@ -1,0 +1,5 @@
+March cyberattack escalated from probing to widespread disruption: tainted management software hit municipalities, hospitals and grid subcontractors across several states, forcing manual fallbacks, diversions to paper, and precautionary islanding of two grid operators. Attribution failed — tooling built with freely available frontier models, operator unproven.
+
+Brussels responded on existing budgets: grid hardening, crisis coordination and emergency cyber funds redirected to restoration, credential resets, rebuilds and mandatory segmentation checks; safety auditors repurposed to forensic triage. Power stayed on but services degraded for weeks, leaving defenders visibly behind and public linking AI to vulnerability.
+
+Gigafactory build stalled: utilities froze on permitting amid crisis, private co-financiers waited on operational risk. Common-terms vehicle blocked one distress offer, but breakaway bilateral and Gulf channel stayed open without advancing. By June Commission claimed continuity — no blackout, hospitals functioning — but not control, with political exhaustion after another turn with no finish.

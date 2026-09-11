@@ -1,0 +1,220 @@
+{
+  "turn": 13,
+  "counters": {
+    "measures": 10,
+    "standing": 1
+  },
+  "records": [
+    {
+      "id": "M1",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "InvestAI Gigafactories",
+        "category": 4,
+        "size": "large",
+        "finish_turn": 7,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "eu_ai_sovereignty up, via €200bn for four to five sites",
+        "started_turn": 0
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "finished"
+      },
+      "added_turn": 0,
+      "removed_turn": 6
+    },
+    {
+      "id": "M2",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "Tech sovereignty package",
+        "category": 4,
+        "size": "large",
+        "finish_turn": 6,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "eu_ai_sovereignty up, via €200bn of private capital for AI data centres by 2036 and accelerated-permitting zones",
+        "started_turn": 0
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "finished"
+      },
+      "added_turn": 0,
+      "removed_turn": null
+    },
+    {
+      "id": "S1",
+      "table": "standing",
+      "actor": "world",
+      "fields": {
+        "posture": "CONSOLIDATION"
+      },
+      "derived": {},
+      "added_turn": 0,
+      "removed_turn": null
+    },
+    {
+      "id": "M3",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU AI Evaluation and Safety Institute",
+        "category": 5,
+        "size": "large",
+        "finish_turn": 4,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "ai_safety up, eu_ai_sovereignty up modestly",
+        "started_turn": 1
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "finished"
+      },
+      "added_turn": 1,
+      "removed_turn": null
+    },
+    {
+      "id": "M4",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Grid and Public Services Shield",
+        "category": 6,
+        "size": "large",
+        "finish_turn": 5,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up strongly, ai_safety up modestly",
+        "started_turn": 2
+      },
+      "derived": {
+        "cost_per_turn": 3,
+        "status": "finished"
+      },
+      "added_turn": 2,
+      "removed_turn": null
+    },
+    {
+      "id": "M5",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "Middle-Power Supply-Chain Compact",
+        "category": 8,
+        "size": "small",
+        "finish_turn": 7,
+        "applies_to": "coalition of EU and middle powers holding supply-chain chokepoints",
+        "targeted_effect": "eu_political_capital up, eu_ai_sovereignty up modestly via secured access",
+        "started_turn": 5
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 5,
+      "removed_turn": null
+    },
+    {
+      "id": "M6",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Essential Services Continuity and Energy Triage",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 9,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up moderately, eu_political_capital up slightly if continuity holds",
+        "started_turn": 8
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 8,
+      "removed_turn": null
+    },
+    {
+      "id": "M7",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "Emergency Winter Load-Shedding Pact and Municipal Islanding Kits",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 10,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up moderately, eu_political_capital up slightly if blackouts contained",
+        "started_turn": 9
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 9,
+      "removed_turn": null
+    },
+    {
+      "id": "M8",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "Targeted Transition Income and Tier-One Retraining for Checkable Work",
+        "category": 7,
+        "size": "small",
+        "finish_turn": 12,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "public_sentiment up, eu_political_capital up slightly, resilience up modestly via social absorption",
+        "started_turn": 10
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "finished"
+      },
+      "added_turn": 10,
+      "removed_turn": null
+    },
+    {
+      "id": "M9",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Biocontainment and Care Continuity Surge",
+        "category": 6,
+        "size": "small",
+        "finish_turn": 14,
+        "applies_to": "own jurisdiction",
+        "targeted_effect": "resilience up moderately, ai_safety up slightly via incident learning",
+        "started_turn": 12
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "running"
+      },
+      "added_turn": 12,
+      "removed_turn": null
+    },
+    {
+      "id": "M10",
+      "table": "measures",
+      "actor": "eu",
+      "fields": {
+        "name": "EU Accession to US-China Verification Regime",
+        "category": 8,
+        "size": "small",
+        "finish_turn": 15,
+        "applies_to": "coalition of EU and middle powers holding supply-chain chokepoints",
+        "targeted_effect": "ai_safety up moderately, eu_political_capital up slightly via inclusion",
+        "started_turn": 13
+      },
+      "derived": {
+        "cost_per_turn": 2,
+        "status": "running"
+      },
+      "added_turn": 13,
+      "removed_turn": null
+    }
+  ]
+}

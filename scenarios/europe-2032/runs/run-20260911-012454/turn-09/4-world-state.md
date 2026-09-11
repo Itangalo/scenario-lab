@@ -1,0 +1,11 @@
+### The patch semester
+
+Autumn 2030 brought the first genuinely good technical news in years. Research teams on both sides of the Atlantic demonstrated automated patching that closed common vulnerabilities almost as fast as scanners found them, paired with detection that flagged coordinated agent behaviour rather than known signatures. For grid operators and hospital IT staff, the effect was immediate: whole classes of intrusions that had lingered for weeks began to be caught in hours.
+
+Brussels moved to turn the laboratory result into plumbing. ENISA was tasked with folding the new stack into its Shield templates, and the visiting engineer teams were redirected to install it first in the dozen councils left choosing between breaking the mandate and running uninsured, and in certified hospitals still on manual-plus-software. Cover from the new EU indemnity pool, itself only just opening pilot payouts after months of state-aid vetting, was made conditional on adoption — the concession that finally brought finance ministries and commercial insurers back to the table.
+
+It worked in part. Where the teams arrived, services that had degraded held steadier, insurers extended conditional cover, and local papers wrote about engineers rather than outages. Where they had not yet arrived, the pool still looked like paper. Interior ministers again failed to agree common thresholds for freezing a runaway deployment, even reframed around shared detection signals; national procedures stayed incompatible.
+
+The wider context did not lift. Private AI investment stayed retrenched, announced data-centre expansions stayed cancelled, and the hoped-for rented compute did not return. Frontier progress crept forward for lack of fundable training. Second-tier suppliers kept talking to the EU contact group and signed nothing. Gigafactory concrete still waited for chips.
+
+By December, fatigue had eased a fraction further. Productivity studies showing solid gains for junior lawyers, accountants and administrators — without job losses — softened public anger, even as scepticism about grand transformation hardened.

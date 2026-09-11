@@ -1,0 +1,3 @@
+Brussels on manual operation with empty coffers: segmentation, guarded depots, dispersed spares, auto-reimbursed cross-border pools declared operational after successful November dark drill; sabotage reduced to small attempts, health scheduling software kept local wins separate from AI distrust, rumors of unlisted village stores persisted.
+
+Washington and Beijing announced a limited bilateral pact on weight security, anti-escalation guardrails, and bio-design tool limits with thin inspections. Commission sought a seat offering blackout/sabotage evidence and audit protocols; received public praise and observer invitations but no chair. EU ended year inside information flow, outside agreement, with quotas binding and lights held by hand.

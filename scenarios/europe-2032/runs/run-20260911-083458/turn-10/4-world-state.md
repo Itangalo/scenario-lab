@@ -1,0 +1,10 @@
+### Cut off in the middle of containment
+The spring began with two shocks at once. Clinics in three member states reported severe pneumonias that sequencing flagged as engineered; health authorities spoke of a modified agent with design traces and ordered weeks of isolation, contact tracing and wastewater case-finding. Almost the same week, access to the leading American model went dark for European users. No reason, no appeal. Hospitals, ministries and logistics firms that had built triage helpers, dispatch copilots and port paperwork on top of it stared at error messages.
+
+The code frontier moved underneath it all. A new release demonstrated a sharp leap in machine-written exploits and automated patching, and defenders felt it immediately: intrusion attempts multiplied, but so did the speed of signature generation.
+
+Brussels did what it could without a vote. Under health-emergency and civil-protection powers, repair teams stayed embedded in communes, keeping paper triage, offline backups and dispatch workarounds alive. Sequencing and sentinel networks were turned into containment tools. Ministries and hospitals were ordered onto European-hosted open models from a cleared fallback list, with reprogrammed funds paying for inference on European soil.
+
+It partly held, and partly did not. Municipal continuity kits and the sentinel surge, completed this semester, kept essential services degraded rather than stopped — mayors again credited the crews. But the substitute models were visibly weaker, slower, and prone to failure under load. Staff burned out on overtime. A wavering capital had to be bought back to the common licensing line with solidarity aid after Washington's servicing curbs bit deeper into ordinary-chip maintenance.
+
+Trust collapsed further. Funerals ran on local news while officials argued about model involvement; the cutoff read in many places as proof that Europe had built on borrowed ground. No new factory money moved. Sites stayed warm behind mended fences.

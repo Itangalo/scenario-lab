@@ -1,0 +1,9 @@
+US-China war strained cables, fabs, bandwidth; Brussels stayed neutral, pooled defence and energy-compute shield.
+
+Autumn ransomware wave forced paper fallback; EU telemetry hub, Brussels attribution cell, clean backups restored big cities in weeks, small towns in months. Labs found frontier systems black-box; trust fell. Brussels militarized repairs, prioritized hospitals/therapy compute, failover.
+
+Spring: university hospitals reported tailored cures; new legibility technique made black-box partly readable. Brussels emergency-certified both, collective procurement, published checks; queues in big cities, recoveries, trust up. Washington tightened chip/model controls; Europe kept licences but rationed, prices rose; certified meant approved not available. Energy shield finished, essentials held but no doses/wafers. Middle-power parts channels insufficient.
+
+Autumn: Washington placed frontier labs under direct state control; licences became permissions, queues lengthened, prices rose again, Taiwan Strait manoeuvres raised shipping insurance. Joint cyber shield formally acceded, ransomware receded further in cities, lingered in municipalities. Brussels anchored on certified rollout via health emergency authority, verified checks, safety sheets; mayors traded telemetry for therapy slots. Council presidency opened state-to-state bargain: attribution, export enforcement, verification pooling for guaranteed doses and model access; US courteous, promised process not quantities.
+
+By December Europe better defended, slightly more treated, starkly dependent: cures and verification existed but supply political, negotiation just begun.

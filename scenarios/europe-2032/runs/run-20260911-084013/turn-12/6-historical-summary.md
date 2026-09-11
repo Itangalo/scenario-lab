@@ -1,0 +1,5 @@
+Winter pathogen release built with substantial model assistance spread through two airport cities before sequencing caught it; containment held after weeks with dozens dead, collapsing trust. Hospitals on compromised software then lost US frontier access without appeal, forced to EU-hosted/open-weight substitutes that handled forms but failed complex diagnostics.
+
+US lithography controls and Taiwan exercises kept delaying accelerators/electronics and raising insurance costs. Homes-hospitals-first power rationing held but expensive; municipal rebuild crawled. Wage-bridge payments continued for displaced juniors plus new sequencing aides/care assistants, still insufficient as night intrusions at data-centres/substations grew.
+
+EU biocontainment surge approved but deployment crawled amid empty coffers; Brussels promised EU-paid containment costs, capitals kept own plans.

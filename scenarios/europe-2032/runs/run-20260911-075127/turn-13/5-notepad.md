@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: EU Verification Seat and Licensed Continuity Pact −2, EU Defensive Patch Shield and Continuity Adoption −2 = −4 (priority without effect or cost as capital 17 below 20, charge is measures only)
+PROPOSAL BONUS: EU Defensive Patch Shield (cat 6, small) +2 — answers cutoff/rationing and investment collapse directly but small and not yet delivering
+LEGITIMACY LENDS: capital 13, sentiment 11 -> none — capital above sentiment
+SOVEREIGNTY: 6 last turn, no cat4 finish, no cat4 in flight +0, eu_frontier_access_denied t13 −2 (largest of two capacity events, export_control_escalation also fired), capability rose 1.0 −0 = 4

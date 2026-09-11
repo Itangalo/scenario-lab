@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Displaced Graduates Transition and Retraining Guarantee −2, EU Wartime Neutral Infrastructure Protection Regime −2, priority has no effect and no cost as capital below 20 = −4
+PROPOSAL BONUS: EU Wartime Neutral Infrastructure Protection Regime (cat 6, small) +4 — catastrophic_great_power_conflict fired this turn and this answers it directly, plus ai_investment_collapse stranding compute
+LEGITIMACY LENDS: capital 3, sentiment 12 -> +2 capped by prior collapse (applied after all other terms, capital remains below sentiment)
+SOVEREIGNTY: 16 last turn, no capacity event finish, no cat 4 in flight, catastrophic_great_power_conflict t11 −3 (largest capacity-takes-away, member_state_defection t11 also qualifies), capability rose 2.0 −1 = 12

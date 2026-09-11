@@ -1,0 +1,7 @@
+Brussels held through H2 2031 with no new law or money, sustaining pilots via existing funds and ENISA protection, completing the manual fallback network which withstood storms/thefts.
+
+Winter brought a widened U.S. halt: citing U.S. tech in the lithography chain, Washington blocked servicing/spares/engineers for older as well as leading-edge machines, language broad enough for other customers beyond China. Veldhoven faced loss of Asian service revenue vs loss of U.S. inputs; The Hague leaned to quiet compliance.
+
+Commission responded without money: opened coercion examination, extended blocking-statute cover to servicing contracts, mandated joint EU line with no bilateral Dutch deal and negotiated carve-outs for installed base, revived Tokyo/Seoul spares outreach. Washington held two servicing licences and stopped older optics; Council unity held formally but frayed.
+
+Showcase pilots formally closed green in three health/school systems, claimed as delivery proof, but two-tier shield complaints deepened over diverted spares and foreign direction of Europe's bottleneck. Manual operation continued with rumoured off-books cannibalisation. Capability edged up, assurance slipped further; public distrust persisted.

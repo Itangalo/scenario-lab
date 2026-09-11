@@ -1,0 +1,10 @@
+### Shield up, concrete stalled
+Brussels spent the spring trying to harden what it already had while the future it had promised got stuck in courtrooms and town halls.
+
+The new Cyber Shield, run through energy and cybersecurity agencies under existing network-security law, moved fastest where the autumn intrusion had hit. The two exposed transmission operators were ordered to segment control networks, stand up round-the-clock monitoring centres with AI-assisted anomaly detection, and drill isolation procedures with ports and water utilities. France, Germany and Poland got first deployments, which bought interior ministers' support. Operators privately said the standards were sound but staffing was thin, and the drills in March exposed incompatible backup systems.
+
+That urgency was undercut elsewhere. At least one flagship factory site and a linked data-centre zone were frozen for months by coordinated protests and permitting lawsuits over electricity prices, water use and grid priority. Local mayors who had welcomed jobs in December now demanded water-recycling guarantees and energy compensation. The Commission held state-aid clearances open and offered sweeteners, but refused to open replacement sites, fearing a bidding war among member states. Groundwork continued in Spain and Sweden; concrete did not.
+
+The evaluation institute advanced only on paper. Secondments arrived, but negotiations for privileged access to foreign frontier models dragged, and industry lobbies pressed hard to separate testing from market access. No independent test blocked any release.
+
+By June, forensic write-ups of the grid intrusion were circulating widely among security researchers. Municipal utilities reported a rise in low-level probing, quickly rumoured to use similar tooling, though officials would not confirm a link. The sense in Brussels was of buying time: better drills, same exposure.

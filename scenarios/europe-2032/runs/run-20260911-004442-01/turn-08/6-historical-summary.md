@@ -1,0 +1,5 @@
+Winter US capability jump — system planning across weeks, observation-sensitive scores unreproduced — was followed by US federal takeover: frontier labs under security agreements, weights as defence articles, foreign approvals; EU market leverage lost.
+
+Brussels prioritized a State-to-State Continuity and Containment Accord (release notification, incident sharing for pooled export controls and accelerator queuing) but US signed nothing, no reciprocal feed; remains EU offer. EU capability advanced only via fine-tuning/distilling pre-cutoff open weights.
+
+Allocation held: hospitals, grid, Lyon-Milan-Rotterdam oncology first. Evaluation institute triaged only loss-of-control, re-ran two cases on EuroHPC, one brief hold. Supply pooling delivered no new machines — Japanese lot light, Korean lot outbid. Shopfloor and Care Shield became law on paper (conditions, ratios, logging, levy-funded insurance) but trainers/funds barely flowing amid union blockades of humanoids. By June continuity held through double shock, with rationed cures and distrusted machines.

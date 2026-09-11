@@ -1,0 +1,10 @@
+### Accession without money
+January to June 2032 was defined by triage. With coffers empty and trust near zero, Brussels bet everything on joining rather than building. The isolation and lockdown regime built over the previous year formally closed: auditors signed off compliant hospitals and registries, and the rules — human sign-off, shared telemetry — stayed as operating practice without new funds.
+
+Into that gap came two outside offers. A joint cyber command offered real-time intrusion telemetry, and a binding biosurveillance pact offered sample-sharing and a standing investigation team. The Commission, via ENISA and the disease control centre, seconded the French-Dutch containment cell into the exchange and signed the health mandate. For mayors who had lived through dark wards, the pooled warnings arrived faster than anything domestic.
+
+At the same time tailored therapies for previously untreatable conditions reached ordinary clinics. Brussels channelled them through the existing European-hosted procurement vehicle, requiring domestic inference and safety logging for reimbursement. Where the therapies flowed, waiting rooms filled and evening coverage softened for the first time in years.
+
+The bargain frayed at the edges. One capital cut its own side deal for model access and compute, defended at home as pragmatism, read in Brussels as a break in the common line. The Commission offered opt-in to the shared procurement rather than a fight it could not afford, but the split was openly discussed and undercut the claim to speak as one.
+
+Resentment did not lift. Sabotage rumours around fences and substations persisted as single-source reports and angry local meetings, not confirmed attacks. Clinics back online still ran on a slower domestic fallback, while the openly released frontier weights ran everywhere else — in universities, firms and hobby clusters — carrying both productivity and unmonitored intrusion kits beyond recall. Protection improved, dependence remained visible.

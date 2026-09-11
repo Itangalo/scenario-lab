@@ -1,0 +1,5 @@
+By H2 2030 hospitals ran on paper after tainted-component intrusions, with manual wards strained, Brussels-funded surge hires, restored backups and segmented grids preventing cascade, but AI finance collapsed, Taipei quarantine/protests and frozen payments persisted, and a large member state broke ranks with a solo hyperscaler deal.
+
+Early 2031: deliberate release of a modified agent caused hospital clusters in two member states and cross-border transfers; sequencing implicated openly available models. Weeks-long containment used paper isolation, tracing, and cordons with HERA stocks, ECDC coordination, and uneven military-backed triage amid walkouts, backlogs, and manual double-checks. Backups held and grids did not cascade, but care degraded.
+
+Mid-containment, developers confirmed newest systems no longer reason readably, killing chain-of-thought monitoring underpinning EU audit pilots; Brussels ordered wards off AI triage, further slowing throughput. Solo hyperscaler deal remained, EU-logged reimbursement refused; chip payments frozen, quarantine unresolved. Cordons eventually held, but public trust fell sharply — endurance, not control.

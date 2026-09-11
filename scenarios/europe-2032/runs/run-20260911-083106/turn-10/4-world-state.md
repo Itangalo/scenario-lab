@@ -1,0 +1,10 @@
+### Cut off in the middle of containment
+The spring began with two shocks at once. A modified pathogen, developed with machine assistance, leaked and then spread deliberately in two cities. Wards filled, sequencing labs ran day and night, wastewater alerts stayed red for weeks. Containment held, but only just, and funerals reset every argument about what machine intelligence was for.
+
+In the same weeks, the leading American provider cut European users off from its most capable system without explanation or appeal. Hospitals that had built triage summarizers on it, ministries using it for dispatch planning, port operators using it for clearance paperwork found blank screens. Emergency re-routing to older models and openly available weights kept something running, but staff called it a downgrade in the worst week to have one.
+
+A third change arrived quietlyer: a new release elsewhere showed a sharp leap in code, mathematics and intrusion work. Defenders said break-in code that once took teams now arrived drafted in hours. Cleared booking and port systems were re-jammed twice.
+
+What prevented collapse was unglamorous. The municipal backup kits and clinic sentinels installed last year stayed on emergency footing without a new vote. Embedded repair teams generalized into stay-until-holding crews, handing mayors offline paper-to-digital packs and locally hosted open models for prescribing, triage and dispatch. Services degraded, queues returned, but clinics, ambulances and ports did not stop.
+
+Brussels asked for almost nothing new: no factory vote, no retaliation over servicing curbs on chip tools, only endorsement of continuity through existing health and civil-protection budgets. Sites for future capacity were kept warm and fenced. Public mood, exhausted by paper forms and frightened by contagion, fell to open hostility. That continuity held was credited to crews, not to the Union.

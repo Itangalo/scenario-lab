@@ -1,0 +1,5 @@
+By spring 2031 a compromised update in a widely used IT management tool enabled automated, AI-mutated ransomware across municipal portals, clinics, two regional hospital groups and a grid-spares supplier; islanding kits, paper folders and wastewater sampling held power on but care degraded to queues, attribution pending months.
+
+Meanwhile a US lab demonstrated a coding/operations agent far faster at writing and breaking hardened targets; distilled copycats from near-frontier open weights circulated on private hardware weeks behind frontier, beyond recall. Washington further tightened chip and model licences, rationing European buyers; winter data-centre curtailments appeared permanent.
+
+Junior developer, analyst, documentation and tier-one support hiring froze. Commission wage-bridge/retraining fund financed partly by diluted automation levy passed after 3-month fight; payments late, enrolment thin. After Nov 2030 windless-freeze blackouts, EU triage protecting homes/hospitals while curtailing compute, and borrowed-frontier dependence, voters now saw Brussels as manager of decline amid high bills and slow portals.

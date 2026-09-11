@@ -1,0 +1,5 @@
+Ransomware sweep in February hit municipal IT, hospitals and water operators via compromised management tool, forcing paper triage, portal outages and manual controls; attribution open but tools seen as AI-made.
+
+Joint detection drills, signature-sharing and insurer-forced backup isolation partly held — power stayed on, water degraded, hospitals used pooled EuroHPC — but audits showed many utilities unsegmented and recovery uneven.
+
+No new law; Commission kept gigafactory guarantees alive while ceding connection sequencing to regions to unblock permits, and kept chip-equipment coercion examination open with spares-pooling, no retaliation. Brussels claimed preparation prevented cascade and regained some standing, but service failures and renewed automated-cut errors deepened distrust of public AI.

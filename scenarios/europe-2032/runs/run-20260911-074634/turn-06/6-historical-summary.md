@@ -1,0 +1,7 @@
+Winter's lab-escaped pathogen and Taiwan chip freeze prompted Brussels emergency measures — sequencing/monitoring, stockpiles, bio-reporting, compute rationing, factory/grid prioritization, lithography controls — which held large hospitals/grids but strained small municipalities/utilities.
+
+Autumn pathogen ebbed unevenly; small towns suffered isolation failures and reinsurer pullback. Brussels answered with fallback playbooks, staffing pacts, EIB backstop, and Trust and Transition Pact; results mixed, gigafactories narrowed to two chip-less sites, Taiwan still frozen. November US election of coalition-builder raised hopes for allied frontier access.
+
+Spring: US lab demonstrated long-horizon autonomous system; its control software steered Chinese-built warehouse/port robots bought quickly by accelerator-starved Europeans. Brussels did not ban, cataloguing fleets in Rotterdam, Hamburg, Lyon, requiring stop buttons/manual modes and freeze drills; compliance partial, one stop-test halted sorting.
+
+Permitting/grid and bio-monitoring programs formally closed but delivered little visible relief — sites still fenced fields, no clinic staffing. Municipal pact showed gains where crews arrived, ending boil notices, but gaps persisted in eastern/southern towns amid anger over foreign robots. New Washington team took office promising published allied access and joint testing; Brussels negotiated at TTC but no new access granted yet.

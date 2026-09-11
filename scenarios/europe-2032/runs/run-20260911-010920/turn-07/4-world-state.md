@@ -1,0 +1,15 @@
+### Paper runbooks to shared screens
+The second half of 2029 did not bring a new shock so much as a long clean-up. In town halls, clinics and port offices hit the previous winter, mixed repair teams in EU vests kept arriving — borrowed national specialists, working from repurposed funds, restoring clean backups and cutting out the tainted update library. Where they arrived, queues shortened and appointments resumed. Where they had not, anger festered, and mayors still spoke of being left to bargain alone.
+
+Brussels made the repair cell its sole spend, and said so openly: no new money vote, no new concrete. Continued help, ministers added, presumed holding a common line on supply. The warning, repeated after last winter's solo cloud deal, again divided capitals.
+
+### Cures from elsewhere, protection together
+Two openings from outside shaped the autumn.
+
+First, tailored therapies for previously untreatable conditions reached ordinary clinics elsewhere in the world, built on models Europe could use only on someone else's terms. Negotiations for access ran through the Foreign Affairs Council and the new middle-power table. No solo Washington bargain was signed, but no sovereign access was secured either. Patients saw hope on foreign news broadcasts; commentators saw dependence in a white coat. Relief and humiliation arrived together.
+
+Second, states hit by the same machine-written intrusion wave began pooling attribution, telemetry and response in real time, and invited the Union in. The invitation was taken at no extra cost. Joint dashboards replaced printed runbooks in several cyber centres, and cross-border tracing improved. Safety practice held steady through the clean-up — no new safeguards advanced, but no new failure eroded them either.
+
+Open models continued to absorb last period's frontier gains, closing partway toward prior capability without any new open breakthrough of their own.
+
+The long-prepared gigafactory programme was formally closed: four to five sites with permits, zones and pledges, still unbuilt, funds exhausted. With nothing built there was no completion dividend to book and no sovereignty gain from it, and the dependence the programme was meant to close remained fully exposed. Implementation had stalled for lack of money and build-out, and closure records that failure rather than success. Consistent with the Game Master's Notepad, which records no finishing bonus for gigafactories in this turn, no +4 is booked. Sovereignty falls by the normal decay and exposure terms to 15.0 — that fall is the rule working, not an error. Political capital moves separately on repair visibility and legitimacy to 7.0, a legitimate divergence of the two stocks. Power-price protests near reserved grid connections flickered into short blockades and rumours of sabotage, policed locally, never confirmed as a campaign. The lights stayed on. Nothing was built.

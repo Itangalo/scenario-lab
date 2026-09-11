@@ -1,0 +1,12 @@
+### Containment and Cutoff
+Autumn brought two shocks at once. A modified pathogen, designed with the help of advanced models, escaped containment far outside Europe and then travelled. Cases appeared in three member states. Hospitals ran weeks of isolation, contact tracing and pooled testing while health ministries argued over who had licensed doses and who did not.
+
+In the middle of it, Washington placed its leading laboratories under direct federal control. Publication stopped. Foreign API keys went dark without explanation. Clinics in Denmark and Portugal that had built triage assistants on the leading foreign system found them frozen overnight. Engineers switched them to smaller, locally runnable models. They worked, more slowly, with longer queues.
+
+A new open release, close to the closed frontier, spread to hundreds of thousands of downloads in days. Police and biosecurity officials warned it carried the same design assistance that had worsened the outbreak. At the same time, Washington and Beijing announced a limited pact on securing weights and restricting certain biological design tools, with thin verification.
+
+Brussels declared that care would continue. The shelter programme paid wages and kept lights on. The bio-detection network, now the stated first priority, moved to incident mode: pooled reagents, hardened cold chains, sequencing offered as a contribution to the new great-power verification effort. The foreign minister was mandated to seek written observer status in that pact and to convert it into licensed manufacturing of therapies on European soil.
+
+Little of it landed in time. Export rules tightened again, chip deliveries slipped further, and repair ships for Atlantic cables and grid parts queued for months behind inspection demands and wartime surcharges. Licensed therapy negotiations, now state-to-state rather than commercial, produced promises and pilot batches, not volume.
+
+Voters saw services hold and cures stall. The transition payments for displaced workers finished disbursing, late and small, which helped local councils but did not lift the mood. Blame for the pathogen stayed outward; blame for dependence deepened at home. The Union ended the year intact, neutral, containing where it could — and visibly running on systems others could switch off.

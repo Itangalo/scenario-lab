@@ -1,0 +1,7 @@
+Autumn grid/port intrusions using frontier-model probes mapped protections and took credentials without disruption; blackouts came from defensive isolation, seen as state-backed rehearsal.
+
+Commission pursued gigafactories (4-5 sites, guarantees, EIB funds, fast permits, EU anchoring) and Critical Services Shield (mandatory drills, joint detection); interior ministers resisted duties, offered EU-funded hardening. By December funds committed and drills started but permitting disputes and no construction left vulnerability and attacker knowledge intact.
+
+By June, Atlantic labs delivered behavior-based automated patching/detection that blocked swarming probes; Shield delivered EU-paid licences via joint procurement for telemetry, easing duties, with uneven uptake. Defences covered one pattern, failed on legacy integration, lacked staff, and attackers shifted to slower stealth methods.
+
+Gigafactory selection consumed half-year with lobbying and court challenges; ground broken at one site. Export leverage held back as Taiwan exercises raised shipping insurance. Cyber insurers repriced essential-operator cover, prompting quiet state backstops. Europe better defended against repeat rehearsal but exposed to new shocks, still awaiting sovereign compute.

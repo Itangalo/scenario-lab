@@ -1,0 +1,10 @@
+### The model that would not go back in the box
+In March a leading lab published weights within a few months of the closed frontier. Downloads ran into the hundreds of thousands in days. CERT analysts in Brussels watched tutorials for automated scanning built on it circulate openly; the same tooling seen in the autumn grid probes was suddenly a weekend project.
+
+The Commission leaned into absorption. The Critical Services Shield became the stated priority, with ENISA and the health-emergency agency ordered to turn pilots into drills. Transmission operators and a handful of ports complied; hospitals and municipal networks lagged. Interior ministries traded consent for cohesion money, then slow-walked mandatory exercises. Pooled detection purchases stalled on procurement rules, and the first joint exercise in May found the same gaps — unpatched relays, unclear escalation lines.
+
+Gigafactory talks ground on. Four capitals bid for grid connections and jobs, each threatening to top up EU guarantees nationally. The Commission held the line that priority power required legal anchoring inside the Union, which kept a subsidy race at bay but pushed final investment decisions further out. The tech-sovereignty package stayed in the Competitiveness Council, largely untouched.
+
+The new clearinghouse for rapid incident reporting was tabled as an implementing act linked to existing network-security duties. Operators called it another form; civil-society groups called it toothless without lab access. Staffing began with seconded analysts, but triage capacity remained thin.
+
+By June insurers quietly repriced cyber cover for utilities and hospitals, citing state-backed intrusion exclusions in renewal letters. No operator lost cover outright, but finance directors began asking capitals who would pay if the next probe acted. Dependence, officials admitted, was now twofold: on foreign models still, and on freely copied ones no one could recall.

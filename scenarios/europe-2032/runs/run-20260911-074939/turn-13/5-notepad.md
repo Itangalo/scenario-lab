@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: EU Offline Shelter for Unrecallable Intelligence −2, EU Cut-off Substitution and Open-Weight Containment Line −2, EU Middle-Power Compute and Biosecurity Bargain −2 = −6 (priority named but without effect or cost as capital 14 below 20, charge is measures only)
+PROPOSAL BONUS: EU Middle-Power Compute and Biosecurity Bargain (cat 8, small) +3 — eu cut-off denial last year and bio genome finding this turn, this answers both directly via joint bargaining and pooled screening
+LEGITIMACY LENDS: capital 12, sentiment 11 -> none, capital is higher
+SOVEREIGNTY: 11 last turn, no cat4 finish, no cat4 in flight +0, middle_power_coalition t13 +2 (largest capacity event, secures access), capability rose 1.5 −0 = 13

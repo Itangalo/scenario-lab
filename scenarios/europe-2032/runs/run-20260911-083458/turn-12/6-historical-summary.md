@@ -1,0 +1,5 @@
+Winter cyberattack via poisoned update and ransomware hit hospital IT, municipalities and utilities in pneumonia-hit states; paper-triage wards became offline-dispatch wards with weeks-long restores. New Fallback Care and Bio-Response Corps, reserve teams and offline protocols kept emergency care in degraded mode — absorption, not control, attacker unproven.
+
+Tailored therapies for untreatable conditions reached ordinary clinics via emergency licensing, tied to fallback wards and domestic manufacturing/hosted prescribing; successes felt immediate, stalls over reagents, parts, and foreign-maintained dosage software exposed dependence.
+
+Washington tightened chip/model controls to rationed queues, no new servicing or spares for Europe, biotech tooling caught. Brussels used middle-power pool as shield offering pooled evaluation for maintenance, but by June only mandates and talks, no machines. Office productivity gains overshadowed; trust fell again.

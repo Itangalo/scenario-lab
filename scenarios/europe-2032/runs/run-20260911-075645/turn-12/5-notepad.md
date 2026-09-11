@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: EU Wartime Neutrality Shelter and Lifeline Continuity Operation −2, EU Distributed Containment and Cyber Shield Deployment −2, EU Bio-Incident Hold and Opaque-Agent Isolation Operation −2 = −6 (priority without effect or cost as capital 15 below 20, charge is measures only)
+PROPOSAL BONUS: EU Bio-Incident Hold and Opaque-Agent Isolation Operation (cat 6, small) +4 — bio_incident fired this turn with real casualties and weeks-long containment, this answers it directly plus opaque-agent isolation
+LEGITIMACY LENDS: capital 16, sentiment 16 -> none (capital not below sentiment)
+SOVEREIGNTY: 12 last turn, no cat4 finish, no cat4 in flight +0, no capacity event, capability rose 1.2 −1 = 11

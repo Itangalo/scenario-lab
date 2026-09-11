@@ -1,0 +1,146 @@
+{
+  "scenario": "Europe 2032 — Acceleration",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 67.0,
+    "openweight_capability": 60.8,
+    "ai_safety": 32.0,
+    "resilience": 38.0,
+    "eu_ai_sovereignty": 14.0,
+    "eu_political_capital": 20.0,
+    "public_sentiment": 19.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 32.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 34.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 50.5,
+        "ai_safety": 30.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 27.0,
+        "public_sentiment": 35.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 61.0,
+        "openweight_capability": 54.0,
+        "ai_safety": 35.0,
+        "resilience": 36.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 20.0,
+        "public_sentiment": 31.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 64.0,
+        "openweight_capability": 57.5,
+        "ai_safety": 34.0,
+        "resilience": 34.0,
+        "eu_ai_sovereignty": 15.0,
+        "eu_political_capital": 17.0,
+        "public_sentiment": 24.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 67.0,
+        "openweight_capability": 60.8,
+        "ai_safety": 32.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 14.0,
+        "eu_political_capital": 20.0,
+        "public_sentiment": 19.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "automated_decision_scandal",
+    "bio_uplift_findings",
+    "cyber_defence_breakthrough",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_consolidation",
+    "emergent_grid_forensics_fallout",
+    "eu_frontier_access_denied",
+    "labour_displacement",
+    "safety_breakthrough"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "automated_decision_scandal"
+    },
+    {
+      "turn": 3,
+      "id": "cyber_defence_breakthrough"
+    },
+    {
+      "turn": 3,
+      "id": "safety_breakthrough"
+    },
+    {
+      "turn": 3,
+      "id": "labour_displacement"
+    },
+    {
+      "turn": 4,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 4,
+      "id": "eu_frontier_access_denied"
+    },
+    {
+      "turn": 4,
+      "id": "emergent_grid_forensics_fallout"
+    },
+    {
+      "turn": 5,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 5,
+      "id": "election_consolidation"
+    }
+  ],
+  "last_updated": "2026-09-10T22:46:36.847008",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_care_procurement_bloc",
+      "description": "Several major EU hospital groups jointly suspend new AI procurement and publish a common requirement for on-premise fallback, creating a de facto EU-hosted procurement bloc after the February cutoff.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_anti_ai_blockades",
+      "description": "Coordinated physical blockades of data-centre construction sites and grid substations spread from siting disputes to a wider anti-AI protest wave, forcing temporary construction halts in two member states.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-10T22:46:41.829521"
+}

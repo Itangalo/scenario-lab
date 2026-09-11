@@ -1,0 +1,145 @@
+{
+  "scenario": "Europe 2032 — Acceleration",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 67.0,
+    "openweight_capability": 60.0,
+    "ai_safety": 25.0,
+    "resilience": 43.0,
+    "eu_ai_sovereignty": 13.0,
+    "eu_political_capital": 4.0,
+    "public_sentiment": 26.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 32.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 34.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 50.5,
+        "ai_safety": 30.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 23.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 61.0,
+        "openweight_capability": 54.0,
+        "ai_safety": 35.0,
+        "resilience": 36.0,
+        "eu_ai_sovereignty": 17.0,
+        "eu_political_capital": 15.0,
+        "public_sentiment": 31.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 64.0,
+        "openweight_capability": 57.5,
+        "ai_safety": 27.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 16.0,
+        "eu_political_capital": 7.0,
+        "public_sentiment": 27.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 67.0,
+        "openweight_capability": 60.0,
+        "ai_safety": 25.0,
+        "resilience": 43.0,
+        "eu_ai_sovereignty": 13.0,
+        "eu_political_capital": 4.0,
+        "public_sentiment": 26.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "ai_investment_collapse",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_consolidation",
+    "emergent_open_model_backlash",
+    "export_control_escalation",
+    "joint_threat_response",
+    "knowledge_work_augmented",
+    "opaque_reasoning",
+    "openweight_frontier_release",
+    "safety_breakthrough"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 3,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 3,
+      "id": "ai_investment_collapse"
+    },
+    {
+      "turn": 3,
+      "id": "safety_breakthrough"
+    },
+    {
+      "turn": 3,
+      "id": "knowledge_work_augmented"
+    },
+    {
+      "turn": 4,
+      "id": "opaque_reasoning"
+    },
+    {
+      "turn": 4,
+      "id": "joint_threat_response"
+    },
+    {
+      "turn": 4,
+      "id": "emergent_open_model_backlash"
+    },
+    {
+      "turn": 5,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 5,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 5,
+      "id": "election_consolidation"
+    }
+  ],
+  "last_updated": "2026-09-10T22:48:34.831602",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_cyber_insurance_retreat",
+      "description": "Major European insurers begin excluding AI-model-assisted cyber losses from standard municipal and utility policies, citing the grid cascade attribution, triggering emergency state backstop demands.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-10T22:48:39.605474"
+}

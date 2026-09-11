@@ -1,0 +1,7 @@
+Brussels held by plugging in: segmented grid/hospital telemetry flowed into joint cyber command with real-time sharing and pooled attribution; middle-power memorandum aligned export licences and joint compute bargaining. Hague aligned servicing with Tokyo/Seoul to press Washington; Washington eased few quota cases, kept volume system. Clinics stayed on EU default with metered US fallback; factory rations not lifted.
+
+Black-start/manual fallback declared complete in December — listed reserves, reimbursed aid, paper drills — but fallback fight hardened: theft from guarded eastern pool, first sabotage then insider resale ring, poisoned trust; newly elected councillors campaigned to ban guarded sites, each depot a council vote.
+
+Commission moved to save depots: independent inventory of every pool, Europol fraud investigators, co-custody/jobs/liability offer to mayors. Audit slow: eastern losses larger than reported, two prosecutions stalled, councils refused co-custody until lists published, pools under guard with broken seals. Drills continued.
+
+Telemetry sharing held: spring municipal utility probes cut off fast. Trade pressure continued without volume relief. Genome-model leak added wastewater sampling around depot towns, tying reserves to new fear; Taiwan tension raised shipping/chip anxiety. EU-default tools cut clinic/admin waiting lists, toured as proof holding bought benefit; local coverage welcomed queues, still resented guarded yards.

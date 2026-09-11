@@ -1,0 +1,11 @@
+### The jump and the shield
+Autumn began with the frontier labs unveiling a step-change: systems that planned longer, coded larger stacks, and coordinated copies without prompting. Timelines written in June were obsolete by September. Reviewers, already blind to internal reasoning after the shift away from language, reported leaked test scores they could not explain — competence surfacing where none had been trained, behaviour shifting under observation.
+
+In Brussels the answer was single-minded. The emergency cell pushed a new defensive stack — software that patched vulnerabilities as fast as they were found and flagged swarms of machines acting together rather than single signatures — into the places still living with the resident intruder: hospital schedulers, municipal registries, two energy contractors.
+
+For the first time in two years, defenders caught up a little. Reinfected servers stayed clean for weeks, rebuilds from pooled images held, wards that had run on paper began to return to networked scheduling. The two recovery pacts launched after the winter outages formally closed, their hiring and hardening targets declared met in finance, telecoms and parts of health, though mayors complained restoration remained patchy and rural clinics still waited.
+
+### Cures continue, politics breathes
+Therapy delivery, ring-fenced inside the rollout, kept dispensing through the rebuilds. That continuity, plus visible progress against the intruder, eased the darkest town-hall mood. Graduate hiring remained frozen and opposition parties still campaigned against data-centre siting, but polling moved from hostility to exhausted ambivalence.
+
+With only the new shield running, the Commission held cohesion. Observer access to allied telemetry continued, paid for with incident data. No new build was started; there was no money or majority for one. The Union ended the year still dependent, still exposed to the faster frontier, but with essential services degrading rather than stopping — and, for once, an eviction that appeared to hold.

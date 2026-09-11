@@ -1,0 +1,14 @@
+# World store (turn 6)
+
+## standing
+
+| id | posture |
+|---|---|
+| S1 | RETRENCHMENT |
+
+## Changes this turn
+
+- **applied** `S1` — {"op": "update", "table": "standing", "id": "S1", "fields": {"posture": "RETRENCHMENT"}, "grounds": "turn 5 winner was inward-turning anti-AI candidate, administration takes office turn 6"}
+  - Grounds: turn 5 winner was inward-turning anti-AI candidate, administration takes office turn 6
+- **applied** `M6` — {"op": "update", "table": "measures", "id": "M6", "fields": {"finish_turn": 7}, "grounds": "named priority"}
+  - Grounds: named priority

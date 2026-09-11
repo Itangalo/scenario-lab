@@ -1,0 +1,9 @@
+By end-2030 hospitals stayed manual amid intrusions, strain, chip freeze and EU split over solo hyperscaler deal.
+
+H1 2031: modified-pathogen release in two transit hubs killed hundreds, traced to open model; hospitals locked to manual tracing. Brussels used health-emergency powers: stocks, wards, staff; cordons drained funds, slowed patching. Loss of readable reasoning broke oversight; wards ordered off automated triage. Trust collapsed.
+
+Autumn 2031: control result enabled pre-deployment certification; three states piloted audited triage. Brussels created small AI Office/ENISA/disease-agency cell but rollout slow. US-China weights/bio-design understanding excluded Europe to briefings. Care funding ended.
+
+Spring 2032: defensive turn to machine-speed patching and behavioural detection; Brussels pushed pre-checked kits via cyber-agency/cert cell with deployment teams and manual fallback. Large hospitals patched in weeks, small clinics/councils queued. Cordons wound down. Graduate entry jobs failed to return, sparking marches. US ordered Dutch lithography champion to cut servicing/exports; Commission chose anti-coercion consultation. Taiwan manoeuvres raised shipping insurance; job-transition map promised.
+
+Autumn 2032: kits deployed to large hospitals and energy, intrusions caught faster, recovery shortened, but small councils queued and two hospital groups paused re-digitisation after faulty integrations. Assurance cell produced checklists/logs, still no US-China model access. New near-frontier open-weight release spread to hundreds of thousands; Brussels ordered no restriction, leaning on monitoring/fallback. Graduate jobs still absent; new Guarantee of paid placements/stipends/hiring bonuses launched slowly with first pre-Christmas placements. Dutch curbs stayed in consultation, insurance high; patching prevented cascades, not discontent.

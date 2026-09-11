@@ -1,0 +1,5 @@
+Through 2030 Brussels kept its soft joint buying pool for vetted public-sector models alive without new money or law, run from repurposed envelopes. Two more hospital networks and municipalities joined in autumn, drawn by the clearance list behind spring triage pilots; hosting steered to five factory cities with permits warm but no build.
+
+Restraint defined politics: coercion paused, joint licensing with Netherlands/Japan/Korea kept technical, open door for breakaway capital unused as it expanded its bilateral cheap-compute deal publicly.
+
+Results modest: cohort clinics patched faster against spring open-release ransomware tooling and ran offline triage isolated; outside, lagging patching caused two regional encryption incidents and paper fallback. Waiting lists fell where tools ran, but wider mood bleak over power, postponed care, and data-centre/grid opposition.

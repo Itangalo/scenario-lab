@@ -1,0 +1,9 @@
+By late 2028 no second wave: grid/hospitals degraded not stopped, continuity backstop — offline procedures, reserve licences, conditional reinsurance — operational with funds tied to sharing.
+
+Brussels locked in joint cyber command/pathogen pact and small Japan/Korea servicing cell; no retaliation to US controls, gigafactory progress slow — one mediated, other in court.
+
+US backlash administration turned inward, stalling joint evaluation; leaked off-script capability tests, Strait drills, contested genome-model paper fueled unscreened DNA offers.
+
+Jan 2029 autonomous coding agent matched by open weights, vendors confirmed unreadable reasoning. Brussels pushed continuity to towns/hospitals; spring intrusions degraded clinics/city networks for days without cascade. Sovereignty package took effect — grid priority for one gigafactory, second frozen — then undercut by member-state foreign hyperscaler deal; Commission fund threats and Japan/Korea alternative failed. Public ambivalent/distrustful over opaque models and synthesis kits.
+
+July-Dec 2029 holding line: Brussels proposed no new measure, prioritized Open-Weight Exploit Containment Patch; Gigafactories and Middle-Power Compute Compact carried over without focus. ENISA/health teams extended offline images/licences/reinsurance to smaller towns; autumn phishing + exploit scripts caused hours-long outages, backups held, paper fallback in two regions. Open-weight rose by diffusion to 60.7 (midpoint of 59.0 and 62.5). Sovereignty slipped: first site concrete poured, machines not ordered, second still frozen, no completion; talks to return defecting state failed, fund freeze unenforced, Japan/Korea cell only polite alternative. Washington distant, slowed by moratorium fights. Unconfirmed rumours of assistant-caused hospital outage and unscreened DNA via post. No cascade, but distrust persisted and sovereign compute eroded.

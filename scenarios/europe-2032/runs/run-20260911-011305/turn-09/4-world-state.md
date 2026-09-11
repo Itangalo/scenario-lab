@@ -1,0 +1,10 @@
+### Containment weeks
+Autumn began with sirens, not servers. A modified pathogen, designed with help from a genome model, had escaped — or been released — and people were dying. HERA sampling teams deployed to hospitals, wards sealed, contact tracing ran for weeks while ministers argued on television about what the model had actually contributed.
+
+In the middle of it, Brussels tried to hold two lines at once. Repair crews under the municipal programme kept working through backlogs in eastern and southern towns, restoring appointment lists and benefit payments street by street, publishing what was back each evening. At the same time health ministers ordered mandatory screening of synthesis orders and tabletop continuity drills for clinics still running on paper.
+
+The work collided with exhaustion. Rosters were thin, equipment late, and in a few districts residents whispered that substations were being quietly occupied to stop any power being diverted to fenced-off construction sites for future computer factories. Insurers, brokers said, were quietly telling mayors that cyber and system-failure losses would no longer be covered — leaving towns to pay for their own recovery.
+
+One counter-story broke through. In two regions, a public-sector scheduling assistant, hosted on European servers, cut specialist waiting lists by weeks. Nurses praised it by name; local papers printed the numbers. The Commission moved to copy it elsewhere, tying new procurement to European hosting to answer anger over dependence on foreign systems.
+
+It was not enough to offset fear. The release reset every argument about risk, and the benefit, real as it was, looked small beside closed wards. Trust kept falling, and by December restoration was still incomplete, containment still fragile, and Brussels out of money and room to push.

@@ -1,0 +1,12 @@
+### The jump
+Autumn began with a demonstration that made summer plans look dated. A leading lab released a system that chained multi-hour research and coding work with little supervision, and published results that evaluators called original. Procurement timelines, cost models and safety memos written weeks earlier were rewritten within days. Hospitals asking about the trusted badge were suddenly asking when the new generation would arrive.
+
+Brussels felt the shock twice: as capability and as leverage. American hyperscalers repriced access; the capital with its side-deal boasted it had chosen correctly, while Madrid and Warsaw contractors warned their power and permitting schedules assumed an older frontier.
+
+### The compact and the count
+The Commission answered with a supply-chain compact. Trade and industry officials sought aligned export licences, a joint cell to bargain for compute, and mutual recognition of the evaluation institute's assurance check with Japan, South Korea, Taiwan and others holding chokepoints. The pitch to member states was blunt: Europe could not fund its own gigafactories alone against the new frontier, but together bottleneck-holders could withhold enough to bargain.
+
+Early talks went better than expected. Two partners agreed to pilot licence alignment; a third offered shared evaluation. The defecting capital was offered a return path through better access terms and kept listening without rejoining. At home, the incident-reporting law took full effect, with the first trace-data filings flowing to the institute.
+
+The relief was partial. Grid queues outside the two lead sites grew longer, cross-border logs still mismatched, and nurses interviewed about shorter queues now also worried about being rushed by automation. In November, Washington voted. A president promising structured allied access on published terms won, with joint evaluation on offer — at the price of alignment on controls and standards. The result was known in Brussels before midnight; nothing changed yet, except the calculation about what to build alone.
+Word circulated, single-sourced, that two foreign hospital systems were quietly licensing the European assurance check for their own tenders.

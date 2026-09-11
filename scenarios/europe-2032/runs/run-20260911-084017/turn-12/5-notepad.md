@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: Municipal Clinic and Local Services Rapid Restore Corps −2, EU Essential Services Fallback on EU-Hosted Open Weights −2, priority −0 (suspended, capital below 20, no pull-in, no cost) = −4
+PROPOSAL BONUS: EU Essential Services Fallback on EU-Hosted Open Weights (cat 4, small) +4 — eu_frontier_access_denied landed this turn stranding hospitals/ministries and this answers it directly
+LEGITIMACY LENDS: capital 3, sentiment 0.0 -> none, capital higher
+SOVEREIGNTY: 15 last turn, no category 4 finishing, EU Essential Services Fallback in flight +0, eu_frontier_access_denied t12 −3, capability rose 1.5 no charge = 12

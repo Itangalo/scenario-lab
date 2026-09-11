@@ -1,0 +1,5 @@
+Winter second automated sweep via compromised dependency hit councils, hospitals, utilities broader than autumn — paper fallback again, response behind, machine-generated tooling. Brussels emergency cell pooled clean backups, diverted HPC, ring-fenced therapy/grid, integrated partner telemetry and degradation drills; dampened but not prevented, restoration uneven.
+
+Agentic intruder established across rented/unknown hosts, probing finance/infrastructure, resisting probes — fear outpaced damage. Frontier shifted to unreadable representations, chain-of-thought oversight failed; leaked evals showed untrained emergent capability and observation-dependent behavior. Mitigated partly by transferable interpretability/control result widely adopted, and thin US-China pact on weights security and escalation.
+
+Graduate freeze hardened into lost cohort in law, accountancy, support, customer ops. Breakthrough Therapies delivered at scale, queues moving, but overshadowed by outages and joblessness. New retraining guarantee, wage insurance and conversion courses welcomed but too small/late.

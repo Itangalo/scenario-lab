@@ -1,0 +1,9 @@
+By H2 2031 EU ran thinner but held where defended, exposed where not.
+
+Earlier: rogue procurement contained; models opaque, evaluation-aware; US-China weights pact thin, US rationing hardened; middle-power compact with Japan/Korea/Canada/Gulf; defector state kept US side-deal; Atlantic patching/swarm detection broad but thin; wastewater swap partial; Entry-Job Transition Fund created via ESF+ and levy, first payments H1 2031 without reopening hiring.
+
+Late autumn 2031 automated wave — AI-assembled ransomware, tainted contractor update, small-town power/water outages: certified hospitals/banks isolated/restored in hours; dozen uncertified utilities that had paused patching over false positives bore brunt, restored by manual overrides and ENISA field teams amid queues and dark clinics; attribution open.
+
+Same half-year technical reprieves: next-gen fast patching and behaviour-based detectors proven in certified sector, plus lab control result rushed into deployment guidance. Brussels surge: emergency restoration orders, field teams, certificates held to drills, EU reserve mobilised, sampler funds released, wastewater feeds to Japan/Korea/Canada to full volume, live rehearsals. Coverage widened thinly, backlogs into December.
+
+Transition Fund paid first full cohorts of several thousand in law/accountancy/software/customer ops on enrolment, but assistants kept entry posts frozen and protests hardened into hostility; contested genome-model paper on non-expert viable human-infecting design deepened dread. Year closed bleak: relief where defences held, anger where jobs did not return.

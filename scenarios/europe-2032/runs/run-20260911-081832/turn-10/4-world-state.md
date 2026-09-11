@@ -1,0 +1,10 @@
+### Accession on a shoestring
+Brussels spent the spring signing what it could not afford to build. With budgets frozen and chip slots still cancelled, the Council mandate to join the pooled cyber and bio-defence command passed quickly — no member state wanted to be the one to refuse shared early warning. ENISA plugged its exercised telemetry feed into the joint operations floor, and health agencies accepted binding sample-sharing with negotiated safeguards on civilian data.
+
+The bargain worked as advertised on the technical level. Two ransomware waves that had crippled mid-sized hospitals the previous year were isolated in hours this time, with attribution arriving from partners before domestic analysts had finished triage. Clinics in the locked-backup scheme stayed online. Auditors again credited the playbooks.
+
+Politically, the price showed. The chips-for-compute and liability pact closed formally: insurers noted the new liability language but did not resume civic cover, and the licensing offer to lithography holders stayed warm without slots. The Hague, Tokyo and Seoul kept asking for binding export controls first. The fenced gigafactory site stayed fenced.
+
+At home the trust repair effort ground forward. Workload limits and mandatory human override were imposed on benefits and policing queues, scandal logs were published with a redress window, and a handful of audited triage assistants cut waiting lists enough for local press to notice. But deployments beyond the cooperating municipalities stayed frozen, and opposition framed the joint accession as outsourcing protection the Union had failed to build itself.
+
+Washington's retrenchment lingered in the background: American training runs slowed, second-tier builders talked of catching up, and Brussels found its seat at the joint table mattered more because its own hardware mattered less.

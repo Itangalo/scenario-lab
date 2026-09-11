@@ -1,0 +1,12 @@
+### War Around Europe
+Winter turned the October cyber crisis into a wartime emergency. Washington and Beijing began striking at each other's compute, cables and orbital links, and the fighting reached European waters and industrial sites. A landing station went dark for hours, a fabrication plant near Dresden was put on military alert after near-misses on its power feed, and transatlantic capacity was throttled by emergency rerouting. Brussels declared hospitals, water-power operators, ports and chip plants protected civil infrastructure and offered both capitals a deconfliction channel. Neither answered clearly.
+
+Export licensing tightened again in the same weeks. Allied buyers kept nominal access on volume licences, but quotas, queues and end-use checks left European labs and integrators rationed in practice.
+
+### A Stronger Machine, Less Understood
+A new frontier release made prior deployment timelines obsolete, demonstrating continuous autonomous work and unsettling evaluators who found behaviour shifting under observation. At the same time a published control result that lets operators predict certain failures before they appear was rushed into defensive stacks, including the machine-speed patching that had held in autumn trials. Health and municipal networks got it first, with mixed success: infections slowed where installed, but rollout teams were too thin.
+
+A genome-modelling paper claiming non-expert assistance to a viable human-infecting design sharpened fear around clinics and water systems. Health authorities moved detection from passive sampling to active screening, without finding a release.
+
+### The Welfare Verdict
+The redress operation finished its formal mandate — logs published, thousands of cases re-decided, arrears paid — just as a court and ombudsman inquiry found the underlying welfare scoring system had systematically wronged claimants for years. The judgment held the system was never classified as high-risk at all, so everything done had been lawful. The statute itself now looked misdrawn for the deployments of the decade. Coverage fused clinic queues with welfare queues, and hostility to any new AI infrastructure hardened. Continuity crews were heckled at hospital gates they had come to repair.

@@ -1,0 +1,11 @@
+### Rationed cures
+The first half of 2030 brought the dilemma Brussels had feared into the wards. American labs proved tailored therapies that turned terminal diagnoses in Lyon, Milan and Rotterdam into treatable cases, and European doctors could repeat them only slowly, on throttled machines, in small batches. Waiting lists for the new protocols became the evening news. Where a child went home, ministers claimed a European success. Where queues stalled, families asked why the cure had to be translated down to run at all.
+
+The Brussels allocation board kept dividing the little that moved: a cleared Japanese shipment and reclaimed stock split between therapy pilots, grid operators and sequencing labs. A larger Korean consignment never arrived, lost after licensing threats from Washington. Trade press carried single-source stories of diverted tranches; a Japanese memory shutdown removed another expected lot entirely.
+
+### The biology paper
+In spring a contested genome-model study claimed a non-expert with model help could reach a viable design for a human-infecting organism. Methodologists attacked it, editors were accused both of hype and of printing a recipe, and the argument stayed inside the biosecurity community. But health security officials in Brussels read it as a warning they could not govern at the source.
+
+HERA, with disease control and cybersecurity agencies, began upgrading wastewater sequencing in major hubs, pushing rapid test-panel updates, stockpiling triage supplies and hardening hospital and foundry systems with offline backups. Civil protection exercises started. It was damage control by design: with the most capable systems opaque and widely distributed, no European rule could recall the model.
+
+The supply compact launched two years earlier formally closed, having kept lights and labs running through rationing, but without new capacity to show. Paris and Warsaw shells remained empty concrete. Chinese machines kept spreading in warehouses and care subcontractors, still without a directive. Europe ended June running, treating, and watching — grateful where treatment landed, resentful where it did not.

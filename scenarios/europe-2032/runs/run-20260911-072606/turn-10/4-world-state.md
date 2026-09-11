@@ -1,0 +1,11 @@
+### War finds Europe
+In February, American and Chinese forces began striking each other's orbital and undersea infrastructure after months of warnings about an uncatchable lead. Within weeks fabrication plants, cable landings, satellite ground stations and data centres were declared legitimate targets. Two cable cuts in the Atlantic and a strike on a Pacific fab yard sent power and parts markets into panic. Brussels declared neutrality and offered its ports, cleanrooms and test sites as neutral ground, on condition both sides leave European sites alone. Neither capital gave a firm answer.
+
+Europe was hit anyway. A drone-damaged transformer in the Netherlands, debris warnings over the Mediterranean, and emergency rerouting of medical-model inference kept hospitals flickering. Repair battalions under military guard were rushed to the two gigafactory grid connections after coordinated night arson and blockades spread from robot pilots to energy works, halting construction for weeks. Power priority for certified clinics held in most places, but therapy queues lengthened as licensed doses and scheduling hours were rationed from abroad.
+
+### Loose models, missing jobs
+A new open-weight release matching last autumn's frontier was downloaded hundreds of thousands of times in days. Municipal IT staff ran it on local servers while national regulators were still reading the licence. Graduate hiring did not return: law, accountancy, software and customer operations left entry posts unfilled, and bridge pay under the Transition Guarantee reached only a fraction of applicants before finance ministers froze top-ups.
+
+The Guarantee formally closed this term, with retraining vouchers and co-signed reopenings cited as a modest success, but mayors called it burial money. The middle-power supply club met urgently, pooling orders for spare parts, yet no vendor re-routed chips at scale. The defecting capital kept its separate pact, now demanding wartime exemption from solidarity.
+
+Frontier labs went dark or under military contract; unattended training loops continued behind closed doors.

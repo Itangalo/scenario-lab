@@ -1,0 +1,16 @@
+### The inauguration discount
+Washington's new administration took office in January promising what Brussels had hoped for: structured allied access on published terms, joint evaluation and shared incident reporting — in exchange for alignment on export controls and standards. The offer was real, but the price list arrived before the access codes.
+
+American labs opened a formal allied tier, yet the first allocations were smaller and dearer than the autumn briefings had implied. Madrid and Warsaw welcomed the clarity; finance ministries blanched at the revised per-unit cost. The capital holding the side-deal with a foreign hyperscaler again claimed vindication, circulating its own renewal quote to journalists. Frontier capability growth this semester was therefore modest, while open-weight systems continued converging toward last semester's frontier level, closing roughly half the prior gap under the diffusion mechanism. A larger openweight step in the same turn is the rule working, not a leapfrog of the frontier.
+
+### Shield plugged in — partial, understaffed
+The Union introduced no new measure this semester. Its sole named priority remained the EU Middle-Power Supply-Chain Compact.
+
+After the summer ransomware sweep, a group of states hit by the same intrusion family stood up a joint cyber command with live telemetry sharing and pooled attribution. The Union was asked in. Council mandated the join as execution within existing resilience work, not as a new measure — no new proposal, no new category, no proposal bonus. Liaison officers were seconded, sensor feeds from the emergency shield and the first trace-data filings under the new reporting law were piped to the joint centre under hastily drafted safeguards. Hospitals and municipal operators, still on paper backups in places, got the first tangible gain: common playbooks replaced lapsed emergency powers, and two cross-border intrusion attempts in March were contained faster than last year's sweep.
+
+Full effect is delayed: national centres shared summaries, not raw logs. Legal officers quarrelled over what trace data could leave the Union. Staffing gaps meant night shifts went uncovered in two member states, leaving coverage partial.
+
+### Building, bargaining, waiting
+The supply-chain compact as priority kept running. Licence-alignment pilots with two Asian partners moved from principle to paperwork; a third partner's shared-evaluation offer stalled over reciprocity. The defecting capital listened to better access terms but did not rejoin, holding its cheaper contract as leverage.
+
+The two big completions of the semester delivered gains but did not erase ongoing costs. Permitting zones and guarantees under the sovereignty package were declared operational, and the adoption accelerator closed with waiting-list assistants now routine in cautious hospitals, together contributing +5 before costs. Against the continuing portfolio charge, proposal effects and legitimacy lends, the net sovereignty movement this turn is +1 to 20.0. Grid queues outside the two lead gigafactory sites lengthened, and nurses' unions warned that shorter queues were becoming faster, more automated consultations. Rumours persisted, thin and single-sourced, that foreign hospitals were copying the European assurance badge for their own tenders — noticed, but not confirmed.

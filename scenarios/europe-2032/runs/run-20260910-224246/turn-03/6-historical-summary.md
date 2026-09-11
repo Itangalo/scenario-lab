@@ -1,0 +1,9 @@
+Autumn grid-software intrusion hit transmission operators in two member states plus port, water utility, and systems on two other continents, with password collection and short blackouts from isolation. Attribution failed; public open-model tooling suggested a well-resourced actor. Brussels concluded segmentation and detection failed.
+
+Commission pursued AI factories, data-centre zones with unclosed private co-financing, and an evaluation institute delaying high-risk obligations — by December procedural only, no capacity or blocking test.
+
+Winter brought model-assisted modified pathogen escape and deliberate amplification, filling hospitals in two regions with dozens dead. Europe exposed but not origin. Commission triggered Civil Protection Mechanism, tasked health authority with hospital sequencing and wastewater monitoring, forced audits, spring exercises. Cost was re-phasing factory funds to stockpiles/audits, angering Paris, Berlin, Warsaw; permitting stalled; evaluation hiring slipped. Insurers raised quotes, deterring disclosure.
+
+By autumn, ministers signed a joint cyber command pooling telemetry and a binding biosurveillance pact with sample-sharing and investigation team; refusal politically impossible after hospitals and grid failures. Connection lagged: EU cyber agency to link operator data, limited liability shield added. Only two operators connected feeds, others sent summaries; hospital sequencing in batches, capital wastewater uneven. Exercises became joint table-tops with foreign liaisons, not early warning.
+
+Shield protected, factories/permitting frozen at site-selection/state-aid; co-financing barely moved. Evaluation institute remained forensics shop tracing pathogen model lineage, no independent blocking test, hiring slipped. Frontier open models neared closed lead, assurance lagged. Public grateful but uneasy protection was borrowed.

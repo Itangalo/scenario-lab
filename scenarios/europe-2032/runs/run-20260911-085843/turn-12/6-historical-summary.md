@@ -1,0 +1,3 @@
+By H1 2032 hiring freeze dominated: entry posts unfilled in law, accounting, software, customer-service; traineeships cancelled, graduate protests blamed Brussels/employers, junior gaps in hospitals/town halls.
+
+Bio-containment surge formally closed; isolation capacity, stockpiles, federated tracing kept on existing funds — degrade-not-collapse claimed, but reliant on un-eased overtime. Commission reprogrammed social-fund money into transition guarantee (wage insurance, retraining, hiring incentives) plus levy on AI-driven cuts; rollout slow, employer opposition, legal-base doubts. No factory/export move; patch/grids on current budgets. By June hospitals open, grids up, guarantee paper-only, jobs missing, mood darkened.

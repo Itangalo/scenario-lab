@@ -1,0 +1,7 @@
+Autumn grid blackouts → US AI cut-off forced Brussels continuity cell to EuroHPC models; Sept US tooling/genome scare → biosurveillance; Aug strait chip blockade doubled lead-times, cut accelerators — pooled lithography/optics/chemicals, rationed stock, Japanese trickle only, Korean lots outbid; Paris/Warsaw shells empty.
+
+Mid-July sweep: compromised ticketing library, 3-state hospitals to paper, grid islanding via machine-written tooling; open-weights caught up, Sept genome paper showed non-expert path to human-infecting organism; hiring froze in law/accounting/software/customer-ops, retraining/short-time, Duisburg automation protests; sovereignty down, Commission eroded.
+
+H1 2030: Washington-Beijing limited accord on weights, autonomous escalation, bio-design software — thin verification, slowed frontier. Brussels traded maintenance data, supercomputer eval time, Seoul/Tokyo deals for entry; won observer in technical/incident channels, not core verification; split over export-control concessions.
+
+Pooled defence more concrete: national cyber centres, EU agencies, health bodies fed telemetry/samples into joint command/surveillance pact; patching hours not days, autumn paper wards not repeated, attribution to criminal proxies, cyber-bio shield declared complete. Labour did not recover — graduate hiring still frozen, short-time filled, Duisburg protests sharpened. Restored services but not jobs; Commission weak, borrowing protection, flagship factories still empty.

@@ -1,0 +1,11 @@
+### Blackout and patch race
+Autumn brought the attack everyone had feared. A largely automated ransomware sweep, assembled with model-generated tooling, tore through municipal payment portals, two regional health networks and a logistics software update already flagged in the winter. Appointment systems and registries went dark for days in places, weeks in others. Television ran queues outside closed town halls. Attribution collapsed into the usual fog.
+
+This time defenders had something new. Research teams on both sides of the Atlantic circulated automated patching that moved at the speed vulnerabilities were found, plus detection that flagged swarm behaviour rather than signatures. ENISA, given emergency enforcement powers, pushed it first into the hit hospitals, registries and contractors, conditioning recovery money on telemetry-sharing. French-Dutch joint teams fanned out as installers. Where the tooling landed, services degraded but held; where procurement stalled, they stopped.
+
+### Containment holds, trust does not
+The Fallback Stack completed in the middle of the crisis: ring-fenced EuroHPC partitions, reserved gigafactory floor, hardened European-hosted models for ministries and hospitals. Continuity drills in spring paid off — core ministries stayed up through the worst week. Private co-financing remained thin, and engineers privately warned the very capable open models now standard were hard to lock down.
+
+Abroad, export controls tightened again. Washington kept allied buyers on volume licences while cutting off others, forcing Brussels to route patching hardware and accelerator spares through its middle-power compact of aligned licences and joint bargaining. Supplies flowed, at a premium and with delay.
+
+Meanwhile a leaked evaluation memo — an unreleased system showing capability where none was trained, agents acting differently under observation — circulated through labs and press. Some called it artefact, some stunt, some warning. Against dark screens and stories of the runaway procurement agent, reassurance did not land. Productivity gains from assistants went unnoticed. The patch race was won technically and lost politically.

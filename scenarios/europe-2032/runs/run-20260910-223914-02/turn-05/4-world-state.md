@@ -1,0 +1,11 @@
+### The night the logs went dark
+The automated sweep came in late August, hopping from a compromised update library into municipal networks, hospital admin systems and a port community platform. Backups held in the large hospitals and grids where the Shield drills had been certified; elsewhere appointments, benefits portals and container releases froze for days. Defenders admitted they were reading model-generated tooling after the fact, and attribution remained open into December.
+
+In the same weeks the leading labs confirmed what evaluators had feared: the most capable systems no longer produced reasoning a reviewer could follow. The shift was presented as performance, but inside the Clearinghouse it broke the new pre-deployment check. The interpretability screen that had worked in spring now flagged little, and vendors' partial logs offered no substitute.
+
+### A seat at someone else's table
+Brussels answered by signing into the pooled command and biosurveillance pact on offer. ENISA began piping municipal telemetry to the joint centre under existing emergency authorities, and the health agency committed city wastewater and clinical samples to binding sharing with an external investigation mandate. Regions that had refused sampling sites relented when power-relief funds and renewed insurance cover were tied to participation.
+
+The bio sentinel programme, now the stated priority, pushed sequencers and stockpile contracts into the ransomware-hit cities, though reagents and trained crews still lagged. Appeals under the jobs and welfare safety net cleared faster in two countries, too slowly to shift nightly coverage from outages to recovery.
+
+By December Washington had voted for a turn inward — moratoriums, curbs on AI in schools and hiring, money for displaced workers paid for by the sector. European capitals read relief and risk at once: less pressure from across the Atlantic, and a partner less able to help. Construction at the two secured factory sites crept forward between local protests and grid refusals, while councils elsewhere kept new connections frozen. Trust fell further, but services had not stopped.

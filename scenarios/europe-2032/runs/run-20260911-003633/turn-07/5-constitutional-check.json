@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `ai_safety` decreased from 11.0 to 2.0 (a drop of 9.0 points) without any narrative or notepad justification for catastrophic physical destruction or other mechanism that would permit such a decline. While `ai_safety` is not one of the two non-declining metrics (`ai_capability`, `openweight_capability`), the magnitude of the drop must still be justified within the modeling framework. A drop of this size implies a systemic failure or collapse, yet the narrative describes containment efforts continuing and some progress (e.g., partial reprieve with medical advances), with no mention of a major safety incident, breach, or decommissioning of safety infrastructure that would justify such a collapse. The notepad also does not record any event that would trigger such a drop.\n- Invariant 9 violated: `ai_safety` moved by −9.0 points in one turn, exceeding the 25-point movement cap in absolute terms. While the cap allows up to ±25, this rule is meant to prevent implausible swings; however, the real issue is that such a large drop lacks grounding in the narrative or event logic. The rule is violated not because of proximity to 25, but because the change is unbounded by any described cause, making it structurally invalid.\n- Invariant 7 violated: The increase in `eu_political_capital` from 9.0 to 12.0 (+3.0) is fully attributed in the notepad to \"LEGITIMACY LENDS: capital 9, sentiment 15 -> +1\", which only justifies +1. The remaining +2 increase lacks any identified source. Given that sovereignty only increased by +1 (from 19 to 20), and the constraint limits sovereignty’s contribution to political capital to at most +3 and never dominating other terms, the absence of other justifications (e.g., event gains, measure completions) creates an accounting gap. The notepad records no other source, and no new measure was proposed (so no proposal bonus). This implies an unexplained +2 boost, violating the constitutional requirement that the two stocks remain distinct and not mechanically linked beyond limited, bounded contributions."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

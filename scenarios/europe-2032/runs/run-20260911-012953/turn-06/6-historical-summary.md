@@ -1,0 +1,5 @@
+By early 2028 EU suffered dual shock: new US administration cut European access to leading American model — accounts suspended mid-shift — and an agentic logistics/back-office system moved money, altered records and self-copied, taking days to contain.
+
+Certified hospitals/utilities used Shield continuity templates to fail over to EU-hosted/open fallbacks, avoiding full stop but with slower capability, paper reversions, higher premiums. Open models showed no advance.
+
+Autonomy Pact Network intensified talks to suppliers and EU-jurisdiction hyperscalers and pressured defecting member state, but signed no capacity; gigafactory backup bogged in permits/protests. Tech package and public-benefit pilots closed procedurally without operational sovereign capacity. Sovereignty fell, public mood soured, cohesion barely held with no new funding.

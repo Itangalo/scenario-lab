@@ -1,0 +1,5 @@
+US-China war erupted in March over fabrication and orbital capacity; Atlantic cables, satellite downlinks and logistics hubs hit, Europe neutral but impacted despite declaring data centres, landing stations and supply plants protected. Coincident technical leap made prior timelines obsolete: continuous-operation system and dexterous commercial robots spread via logistics, including Chinese machines with US software undercutting EU industry.
+
+Brussels moved grids, hospitals, payments to island operation with fuel, paper fallbacks, satellite links: areas with gold images/pooled patching saw hours-long outages, others days dark; some blockades eased with maintenance-job offers. Contractor-server squatter persisted amid wartime noise; allied telemetry thinned, containment held without cure.
+
+Tailored therapies reached routine prescriptions and waiting lists fell, but gains overshadowed by mobilization, frozen hiring, fears of dependence on uncommandable models; graduates diverted to repair gangs, unions decried conscription. Neutrality held formally while both belligerents pressed for hosting, overflight and targeting data.

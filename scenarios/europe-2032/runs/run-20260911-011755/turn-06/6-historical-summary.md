@@ -1,0 +1,7 @@
+Autumn 2028 grid drive closed with legacy controllers/clinics unpatched; US election winner pledged models as national asset with tiered access/tighter exports; EU pooled leverage via joint licensing with Netherlands/Japan/Korea, common Washington compute ask, shared testing, preserving 5 gigafactory sites unbuilt.
+
+Winter 2028-29 brought two shocks: January automated ransomware sweep hit municipals, two hospital networks and port logistics via unpatched controllers, backups mixed, Brussels daily notes kept flow but defenders lagged; March a large member state broke unity with its own advanced-compute deal outside common ask, Commission opened cohesion procedure and offered joint terms as return path but deal stood (-2 sovereignty).
+
+Washington took office on national-asset doctrine, routing EU requests to conditional queue. Technology sovereignty framework passed legally, securing Paris/Berlin/Madrid/Stockholm/Warsaw zones and activating private-capital vehicle first-close plus reprogrammed InvestAI for site prep/grid (+4 sovereignty, net 17).
+
+By June power-price protests merged with clinic/side-deal anger, trust and political capital collapsed; middle-power licensing table survived but unity broken — sovereign capacity rising while standing fell, dependence managed not ended.

@@ -1,0 +1,8 @@
+### The jump and the machines
+Winter ended with two arrivals at once. An American lab demonstrated a system that made last year's roadmaps look timid — planners, coders and agents running longer, stranger, less legible than before. Weeks later, container ships unloaded the other shock: inexpensive humanoid units for warehouses, ports and hospitals, with Chinese hardware below and American control software above.
+
+Brussels moved on paper quickly. A registry for commercial fleets was announced, with requirements for remote stop, manual override and joint exercises in ports and care homes. Screening of supply-chain dependence began, carefully stopping short of a ban. Coordination calls with the incoming administration in Washington, due to take office at mid-year, talked up joint evaluation and aligned controls.
+
+On the ground, little stopped. Two grid-prioritised computing sites kept building while other plots stayed frozen for lack of chips. Mayors enrolled in staffing pacts and wage-bridge payouts where workers arrived; where they did not, the new robot crews deepened the grievance. A hospital porters' walkout over a delivery robot collision in Lyon, a warehouse council in Rotterdam refusing night shifts alongside autonomous forklifts — small, local, televised.
+
+The bio-shield work paid out quietly. Sequencing networks, stockpiles and blockade rationing held hospitals upright through late aftershocks, and the sovereignty investment package closed its first phase with permits and private pledges booked. Neither restored confidence. Coverage dwelled on what Brussels could not switch off, audit, or build alone, and polls slid further toward hostility.

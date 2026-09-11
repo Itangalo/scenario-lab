@@ -1,0 +1,5 @@
+Brussels' transition guarantee existed mostly on spreadsheets by September: Monday enrolment counts, but first payments weeks late and reduced by checks; six-month retraining placements in support/back-office IT rarely converted, bonus too small, top-ups below lost entry salaries.
+
+The pause on contested benefits tools held unevenly: one state suspended automated flagging pending audit, the other kept a narrowed version with nominal human sign-off; logs showed thousands cleared in seconds, paired in media with frozen entry hiring in law, accountancy, junior software, customer ops and admin.
+
+In autumn a large member state broke ranks with its own compute/servicing deal with a US hyperscaler on softer terms, salvaged only by a written promise to keep fallback/clearance for essentials — joint supply bargaining lost credibility. Manual-fallback drills and patch guidance continued but did not touch the dominant crisis: machines judging the poor while graduates found no door. By December showcases ended; councils questioned whether anything paid before spring would still matter.

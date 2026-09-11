@@ -1,0 +1,11 @@
+### The shield gets better tools
+Autumn brought the first good defensive news in years. New automated patching and swarm-detection tooling, validated in joint exercises, was pushed through existing joint feeds to the worst-exposed power and hospital networks. Operators reported faster closure of known flaws. Coverage remained uneven — smaller municipalities still waited on contracts — but the declared playbooks finally had software to match.
+
+The relief was tempered within weeks. A published genome-model study claiming non-expert assistance toward a human-capable pathogen divided biosecurity researchers, with fierce dispute over methods and publication. Inside EU health agencies the signal was treated as a precursor to be tracked, not dismissed. Certification work in the small assurance hub continued slowly via secondments, with no new authority.
+
+### Weights loose, jobs steady, Washington turns
+A frontier-class open release was downloaded hundreds of thousands of times in days. Whatever it carried is now on private hardware permanently. EU officials privately conceded recall was impossible; public guidance stressed monitoring and patching instead.
+
+Ordinary offices provided the counterweight. Follow-up studies confirmed assistants lifted output in law, accountancy, administration and media, most for juniors, without layoffs. Hiring stayed frozen, but displacement fears eased. Social ministries extended wage-insurance and retraining into back-office regions on already-agreed funds, and codified health, permit and tutoring templates for wider copy. Uptake stayed slow for lack of staff and servers.
+
+Then the American election. The winner campaigned on holding advanced AI as a strategic asset, with explicit federal review, tighter export controls and tiered foreign access decided in Washington. Nothing changes yet, but Brussels read it as the hardest outcome: dependence as leverage held elsewhere. A regional grid operator meanwhile blamed EU priority-connection rules for delayed industrial hook-ups, and municipal suits over pricing and siting multiplied. The single gigafactory term sheet stayed on paper, one public-lender talk inching forward, two challenges running, no permits moving.

@@ -1,0 +1,13 @@
+### The weeks containment ran
+The first alerts came from outside Europe — a laboratory escape involving a modified agent, then within days a contested paper showing a genome model could draft a viable human-infecting design with non-expert prompting. By August, two member states reported suspected cases, sequencing labs queued on rationed EuroHPC time, and hospitals that had just learned to live with slower cancer triage went to masks and holds.
+
+Brussels moved what it could. As its single new measure this turn, health ministers activated a Bio-Containment and Essential Service Shield: joint procurement for sequencing and containment, ordered lab inspections, and isolation of grid and clinical networks from external model access. The ongoing EU Supply Leverage and Continuity Compact continued in the background but was not expanded and suffered no setback this turn. Tightened advisories to supervised-use only for genome tools kept safety practice intact, though stretched staff and rationed compute eroded margins slightly.
+
+The money came from pausing the budgeted fit-out work on the empty factory shells in Paris and Warsaw. That fit-out had an active expenditure stream allocated in prior turns under the InvestAI Gigafactories programme, and its pause freed funds that kept wards open, but swabs waited days and local press filmed corridors again — and it meant the InvestAI Gigafactories did not finish as hoped. Paris and Warsaw remained concrete shells, with completion pushed out to a later turn, and no completion benefit accrues to sovereignty this turn.
+
+### The jump nobody could use
+In October a new American system was demonstrated — agents that planned longer, scored higher, broke benchmarks set only months earlier. American labs called it progress; European evaluators saw thinner margins vanish. Substitutes on EuroHPC still ran, but under tighter supervision. Open models followed with a lag, rising toward where frontier capability had stood last turn.
+
+The strait stayed shut to ships. A brokered lot of transformers rumoured at Rotterdam never cleared inspection in public. Chinese logistics machines kept arriving in Duisburg, now joined by offers of sequencing help that governments declined to take.
+
+By December Europe was containing, sequencing, rationing — running, but with casualties real and blame hardening. Gratitude for treatment continuing had turned to questions about why protection still depended on borrowed lots and borrowed models, with sovereign factory capacity delayed by the emergency diversion.

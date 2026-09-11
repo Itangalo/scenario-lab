@@ -1,0 +1,10 @@
+### Guarded queues
+The autumn brought no new money, but two things from outside changed the air. Washington and Beijing announced a limited risk pact on weights security and dangerous tools, thinly verified but real. Days later a leading lab published a control result that actually worked on deployed systems, and procurement officers in Brussels quietly wrote it into the showcase contracts. Engineers said incident reports finally became predictable.
+
+At the same time a frontier-class open release leaked everywhere. Hundreds of thousands of downloads in a week. What it could do was now on private machines for good, and police notes about doctored breaker-log diagrams and synthetic outage calls multiplied.
+
+Jobs broke the mood. Law firms, accountants, software houses and customer centres confirmed what graduates already knew: entry posts were not being refilled. National schemes took the strain, and showcase tutoring desks were turned to retraining intake, but queues of young applicants stretched while ministers spoke of productivity.
+
+The one counterweight kept running. The three-ministry deployment — triage slots, permits, tutoring — again cut waits, and the dashboards stayed public. Black-start drills, now standing procedure with fuel and transformer pools on reimbursed footing, paid out when sabotage continued: another store torched, yards cut, addresses posted. Guards went first to showcase sites and spares depots. In two towns lights stayed on because a crew worked by hand with a guarded part.
+
+In back streets, talk hardened. Workshop owners whispered about unlogged spares changing hands at triple price, some counterfeit. Operators in smaller utilities stopped calling the metered fallback at all and kept paper ledgers in a drawer. Brussels rolled over its quota line, kept talks with Tokyo and Seoul warm, and asked to be consulted on the big-power pact. It bought relevance, not capacity.

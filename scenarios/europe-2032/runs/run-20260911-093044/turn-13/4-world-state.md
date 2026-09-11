@@ -1,0 +1,11 @@
+### The sweep and the leap
+Autumn brought a second large automated ransomware wave, this time across city administrations, hospital back-offices and freight operators. The code wrote itself around known defences, and for two weeks appointment systems, benefits payments and depot dispatch ran on paper and borrowed generators. High-voltage lines stayed up behind segmented controls, but wards did not. No one could say who launched it; investigators said only that the tooling had been machine-made.
+
+In the same weeks a leading lab demonstrated a jump in reasoning and agency that made last year's roadmaps obsolete. Municipal technicians used freely available near-frontier models to sift logs; intruders used the same to craft the next variant. A new defensive toolkit that patches and spots swarm behaviour at machine speed began circulating among operators, and governments hit by the same attacks started pooling telemetry and samples with Brussels invited in.
+
+### Squeezed supply, squeezed jobs
+Export rules tightened again. Under Washington's country-tier rationing, Union buyers stayed on hard ceilings while volume licences flowed elsewhere, and servicing of advanced chip tools remained frozen. Insurance on strait shipments rose further. A contested genome-model paper claiming a path to a human-infecting design rattled biosecurity circles without reaching the public.
+
+At home, statistics offices confirmed what job centres already knew: entry hiring in law, accountancy, software support and customer operations had stalled, with graduates worst hit. Then ombudsmen in two member states found a benefits-fraud scoring system had systematically cut vulnerable households, with caseworkers clearing flags in seconds and logs never read. Papers called the AI Act a paper shield; mayors called Brussels a guard service for transformers while clinics queued.
+
+The Commission, with no money and no new law, kept the existing fallback running — black-start lists, licensed upkeep, lifeline rationing, guards on fuel and transformer yards. Where guards stood, sabotage failed; elsewhere fires continued. The upstream bargain for metered access formally closed with no quotas restored, and blame settled on Berlaymont.

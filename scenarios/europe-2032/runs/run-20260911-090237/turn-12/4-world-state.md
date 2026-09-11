@@ -1,0 +1,11 @@
+### Patchwork coverage
+The winter brought a second large automated assault. This time it came as a fast ransomware sweep across town halls, clinics and regional logistics hubs, using machine-built tooling that slipped past filters for days. Attribution stalled again. Central response teams were quicker than in the autumn, pushing clean images and behaviour-based fixes, and hospitals certified under the recovery rollout restored services in days rather than weeks.
+
+That uneven success became the political story. The two utility districts that had rolled back to paper procedures last year now refused any centrally mandated update outright. Operators appeared on local radio and at council meetings denouncing forced pushes after spring control failures, and neighbouring municipalities echoed them. Coverage maps showed holes exactly where backup systems were oldest.
+
+### A compact and a crack
+Brussels answered with negotiation rather than compulsion. Through the response agency and the Committee of the Regions, ENISA offered the holdout operators joint sign-off on every patch, staged rollouts with guaranteed rollback, funded paper fallback during transition, and EU liability cover if a patch broke legacy controls. Most operators grudgingly re-engaged, though rollout slowed to the pace of local consent and several councils demanded veto rights in writing.
+
+Cohesion frayed elsewhere. A member-state capital confirmed its own separate supply arrangement with an American hyperscaler on terms that undercut the common line, while still drawing priority recovery aid. Brussels made aid conditional only on incident reporting to deny a rupture, but diplomats privately conceded the common position no longer held.
+
+Public mood darkened further. Restored screens no longer reassured; many voters saw only that disruption kept returning. Retraining schemes for frozen entry hiring continued on reallocated money, and pooled hosting work abroad continued on old budgets, but no new frontier spending was opened.

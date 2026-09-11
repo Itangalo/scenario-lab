@@ -1,0 +1,13 @@
+### Dark town halls
+Autumn brought another sweeping automated intrusion. It moved through booking systems, payment desks and municipal networks in several member states, using fresh machine-written tooling slipped into unpatched dependencies. Where isolation gates and human sign-off had been fitted, operators cut the connection and rebuilt from clean images in days. Where they had not, counters stayed dark for weeks.
+
+At the same time insurers stopped writing new cover for town IT. Brokers cited repeated losses from the same kind of break-ins. Uncovered councils chose to keep services offline rather than run exposed, which widened the split between districts that shared telemetry and restored quickly and those that queued for help.
+
+Brussels kept containment as its sole stated priority. Emergency teams seconded from France and the Netherlands ran clean-ups and restores, with recovery money tied to sharing incident data and extra help directed to places left without cover. The effort held the line where it was deployed but did not expand far: staffing and legal bandwidth were thin, and take-up again divided the Union. No new measure was introduced this turn; work was limited to completing in-flight containment and preparing groundwork.
+
+### A pact to replace what was cut — preparatory only
+Diplomats used the new middle-power venue to discuss a possible supply arrangement: aligned export licences, joint bargaining for compute, and pooled testing in exchange for replacement inference for hospitals and ministries still missing the withdrawn American model. No binding agreement was secured, no external supplier committed capacity, and no enforcement or leverage over non-EU developers or providers was established. No new joint borrowing was agreed; existing programme funds were reallocated and loan guarantees extended only to hosting anchored in Europe.
+
+Implementation was partial and delayed. The first pilot moves of hospital workloads onto reserved European supercomputing capacity completed as a modest landing zone — two pilots — but wider hosting, bargaining and testing remain preparatory, constrained by funds, staffing and legal bandwidth. Ministers could point to European-hosted continuity in those pilots rather than system-wide replacement, and the talks have not yet produced secured outside compliance.
+
+The public saw outages, paper triage, and closed town halls. Firms kept reporting gains from assistants, but evening coverage paired hospitals on paper with darkened civic offices, and trust fell to a new low, leaving political capital thin and sovereignty flat while outside supply remains unsecured.

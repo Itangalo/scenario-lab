@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `ai_safety` decreased from 9.0 to 7.0 without narrative or constitutional justification. While most stocks can fall, `ai_safety` is not among the metrics permitted to decline freely under the constitution. Its decrease requires a specific, narrated cause such as a catastrophic failure, deliberate rollback, or physical destruction of safety infrastructure. The narrative describes absorption challenges and patching efforts but does not justify a two-point drop in `ai_safety` as an inevitable or direct outcome. No such event gate or mechanism is referenced in the notepad.\n- Invariant 2 violated: `resilience` decreased from 49.5 to 48.0 without sufficient justification. While `resilience` is not one of the non-declining metrics like `ai_capability`, the narrative does not provide a clear, discrete event (e.g., infrastructure loss, systemic failure, resource cut) that would cause this drop. Two ransomware outages are mentioned, but they are localized and led to inquiries and quiet preparations—not systemic erosion. A decline is plausible only if tied to a tangible loss or policy reversal; here, the described actions (patching, data pooling, field teams) suggest stabilization, not weakening. The notepad contains no event that would trigger this decline.\n- Invariant 9 violated: `public_sentiment` decreased from 23.0 to 22.0, which is within bounds, but the combination of falling `ai_safety`, falling `resilience`, and falling `public_sentiment` with no corresponding rise in political capital or sovereignty implies a systemic deterioration not reflected in the `eu_political_capital` increase (24.0 → 25.0). While `eu_political_capital` can rise independently, a +1 gain amid declining safety, resilience, and sentiment—without a clear legitimacy lend, event success, or policy win—contradicts Invariant 7: political capital must not be inflated by unearned sovereignty gains. The notepad shows no legitimacy lend (capital ≥ sentiment, but no bonus applied), and the narrative shows no major political victory—only partial compliance and quiet preparations. The rise in political capital lacks grounding."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

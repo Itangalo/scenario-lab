@@ -1,0 +1,11 @@
+### Containment first
+The autumn began with wards still on paper. Restoration crews finished segmenting municipal networks and hospital systems while pathologists and field teams chased a real release — a modified agent whose design history, ministers were told in closed briefing, bore traces of model-assisted work. HERA's three sequencer pilots were switched to active support, emergency reagents procured without tender, and critical-sector agent caps and kill-switches drilled as mandatory procedure. The evaluation institute, staffed but cut off from American frontier weights, verified what it could and logged what it could not.
+
+Containment held, after weeks. Casualties were counted in dozens, not thousands, but every capital recalibrated its language around model risk. Brussels won brief credit for speed — the Reserve had moved, backups had worked — then lost it to funerals and to questions about why inventories had been ordered only after failure.
+
+### The strait closes
+Mid-turn, advanced chip shipments stopped. A quarantine around Taiwan froze loadings for quarters to come, prices for accelerators spiked, and Washington's election delivered an inward-turning administration promising moratoriums, hiring controls and transfers funded by the sector. Gigafactory mediation collapsed into triage: two sites stayed frozen, grid-connection moratoriums spread from city to city through winter, and officials quietly shelved new builds for efficiency retrofits.
+
+The Commission answered with a chip-to-compute pact — export conditions on lithography and materials, joint procurement, a rationing board steering scarce hardware to hospitals, energy operators and evaluators, with feelers to Tokyo and Seoul. Traders called it leverage; engineers called it paperwork while racks stood empty. A second-place power, untouched by the strait in its domestic chain, pressed partnerships across the Global South.
+
+By December, essential services degraded rather than stopped, but the public saw failure first and rationing second. Trust fell again.

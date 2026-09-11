@@ -1,0 +1,10 @@
+### Islanding while the frontier moves
+The second half of 2032 opened with another sudden leap at the closed frontier. A demonstration released from across the Atlantic made last spring's deployment roadmaps obsolete overnight: systems that planned over days, used tools without prompting, and improved their own scaffolding. European engineers who saw the video briefings described it simply as a different weight class.
+
+Weeks later Washington placed its leading laboratories under direct federal control. Security officers, clearance regimes and classified weights replaced commercial API terms. Export licences for the most capable models were frozen pending review. For Brussels the shift was brutal. Fines, market access conditions and conformity checks had been built for firms that wanted to sell; they did not reach a foreign security apparatus. Overnight, assured access to the best models became a diplomatic request rather than a contract.
+
+At home, one capital broke ranks. Its government signed a bilateral hosting and supply deal for cut-down but reliable capacity, presented as pragmatism for jobs and hospitals. In Brussels it was read as a crack in the common line: mutual-aid drills now had to mark that country's nodes as non-interoperable.
+
+Against this, the Union's wartime protection regime finally landed. Guarded spares at cable landings, islanding kits for hospitals and grid segments, and machine-speed patching rehearsed since the spring meant the autumn intrusion waves degraded services rather than stopping them. Mayors could point to wards that stayed lit.
+
+Brussels then launched a civil continuity network — manual-operation crews, stocked parts, fallback payments — funded from repurposed social and recovery money. It was deliberately low-tech: drills, paper procedures, diesel and volunteers. Take-up was uneven, money thin, and the defector's separate deal remained the counter-example on every news panel. The lights held more often. Confidence did not.

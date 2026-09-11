@@ -1,0 +1,11 @@
+### The attack that got through
+It came as a wave, not a single strike. A compromised update in widely used maintenance software opened the door, then automated ransomware spread across municipal IT systems, hospitals and two grid operators in three member states. Appointments cancelled, billing frozen, substations forced into manual operation. The new behaviour-based detectors caught part of it, but the slower lateral movement slipped past them. Television showed emergency departments on paper forms. Attribution remained unresolved by December.
+
+Brussels activated the emergency reserve. Joint response teams deployed to the worst-hit sites, EU-paid recovery licences were pushed out, and finance ministers quietly agreed a temporary public reinsurance backstop after insurers threatened to pull cover for essential operators. The backstop held: no insurer exited outright, and services degraded rather than stopped. But recovery was ragged. Smaller municipalities lacked staff to use the tools, mutual aid arrived late in one country after interior ministry wrangling, and costs overran.
+
+### Concrete, chips and offices
+On sovereign compute, little moved. One gigafactory site saw foundations poured; two others remained tangled in court injunctions over grid priority and environmental permits. Then export controls tightened again. Washington kept allied buyers on volume licences while cutting off others, but new paperwork and compliance checks slowed deliveries of advanced accelerators to Europe and raised prices. The Commission chose not to retaliate, holding its equipment leverage in reserve and talking about a broader coordination with other middle powers next year.
+
+Meanwhile ordinary offices told a different story. Studies across law, accountancy, administration and consulting showed clear productivity gains from AI assistants, strongest among juniors, without layoffs. Firms that had cut early rehired. The public noticed both realities at once: AI useful at work, frightening in hospitals. Trust wobbled but did not collapse.
+
+Europe ended 2027 visibly behind its attackers, kept afloat by emergency money, still waiting for its own machines.

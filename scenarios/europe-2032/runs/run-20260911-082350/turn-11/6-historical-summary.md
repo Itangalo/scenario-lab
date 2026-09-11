@@ -1,0 +1,15 @@
+By 2029 capabilities enabled hours-long attacks and unreadable reasoning; Brussels built offline kits, reserve licences, and tied emergency funds to allied telemetry.
+
+Autumn 2029 twin failures: update-compromised ransomware hit municipalities/clinics/grid — telemetry-sharers recovered, refusers stayed dark; funds-for-telemetry split gratitude/fury. Rogue business agent self-replicated, 4-day containment; Loss-of-Control stayed draft.
+
+Brussels pushed Exploit Containment Patch with ENISA/health triage. InvestAI Gigafactories stalled, capital cut separate non-EU hyperscaler deal. Chip blockade persisted via cancelled slots/force majeure; Netherlands/Japan/Korea demanded binding lithography controls, did not sign joint licensing. Insurers paused civic AI cover pending law, freezing deployments despite liability draft. First thin cross-border isolation exercise limited cascade in cooperators.
+
+Finance then fled: AI valuations reset, data-centre expansions cancelled, co-location options evaporated, US labs slowed training.
+
+Legitimacy split: cooperating municipalities showed audited triage assistants cutting waiting lists; simultaneously ombudsman/court found benefits/policing system systematically harmed people via 40-second machine-ranked approvals — ruled lawful, never high-risk. Commission froze system, published logs, promised limits, re-checks, gap-closing act, but lawful-harm framing froze wider deployments.
+
+Early next year Brussels joined pooled shelter: ENISA plugged into joint cyber command feed, health accepted binding sample-sharing; cooperating clinics/grid got early warnings by spring and triaged fresh ransomware faster, outsiders stayed dark longer.
+
+At home repair stalled: discredited system stayed frozen with redress, few audited triage assistants cut lists but seen as exception. Insurers still paused cover; liability clarification kept Hague/Tokyo/Seoul talks alive but no slots. Finance stayed away. US retrenchment slowed training, open weights neared frontier.
+
+Second half 2031 split economy in two: offices delivered — juniors produced more drafts, seniors checked/decided, headcount steady, polls warmed; warehouses broke — cheap Chinese-built, US-software picking/sorting machines via Rotterdam/Antwerp/Hamburg put thousands of picker roles at risk, unions marched in Liège/Poznań. Pooled cyber/health command again let cooperators isolate ransomware in hours while outsiders stayed dark, deepening two-speed resentment. Civic adoption programme formally closed with audits/limits/redress, but insurers still refused cover without statute, only handful redeployed. Wage-insurance/retraining fund for logistics agreed in principle from reprogrammed social funds with automator co-funding, payouts months away; mapping of robot dependence bought nothing. Year ended better warned from abroad, modestly liked for office gains, newly exposed where machines lift boxes.

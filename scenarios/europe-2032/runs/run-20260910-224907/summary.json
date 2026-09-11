@@ -1,0 +1,136 @@
+{
+  "scenario": "Europe 2032 — Verification-bounded",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 61.0,
+    "openweight_capability": 57.8,
+    "ai_safety": 32.0,
+    "resilience": 39.0,
+    "eu_ai_sovereignty": 17.0,
+    "eu_political_capital": 11.0,
+    "public_sentiment": 37.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 54.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 32.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 41.0,
+        "public_sentiment": 39.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 56.0,
+        "openweight_capability": 50.0,
+        "ai_safety": 37.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 31.0,
+        "public_sentiment": 41.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 53.0,
+        "ai_safety": 35.0,
+        "resilience": 36.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 15.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 60.0,
+        "openweight_capability": 55.5,
+        "ai_safety": 33.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 15.0,
+        "eu_political_capital": 7.0,
+        "public_sentiment": 34.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 61.0,
+        "openweight_capability": 57.8,
+        "ai_safety": 32.0,
+        "resilience": 39.0,
+        "eu_ai_sovereignty": 17.0,
+        "eu_political_capital": 11.0,
+        "public_sentiment": 37.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "cyber_test_shot",
+    "election_consolidation",
+    "emergent_gigafactory_siting_backlash",
+    "eu_frontier_access_denied",
+    "export_control_escalation",
+    "knowledge_work_augmented",
+    "safety_breakthrough",
+    "taiwan_tension_rise"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "safety_breakthrough"
+    },
+    {
+      "turn": 3,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_gigafactory_siting_backlash"
+    },
+    {
+      "turn": 4,
+      "id": "eu_frontier_access_denied"
+    },
+    {
+      "turn": 5,
+      "id": "knowledge_work_augmented"
+    },
+    {
+      "turn": 5,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 5,
+      "id": "election_consolidation"
+    }
+  ],
+  "last_updated": "2026-09-10T22:52:07.271059",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_permit_injunction_freeze",
+      "description": "A national administrative court grants an interim injunction freezing grid-connection permits for two contested gigafactory sites after farmer and municipal challenges, pushing final investment decisions past mid-2028.",
+      "first_turn": 4,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_drought_power_squeeze",
+      "description": "A dry winter and spring cut hydro output and constrain cooling water for thermal and nuclear plants in southern Europe, spiking power prices and hardening local opposition to new large grid connections.",
+      "first_turn": 4,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-10T22:52:11.493576"
+}

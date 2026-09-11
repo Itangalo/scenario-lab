@@ -1,0 +1,9 @@
+By H1 2031 EU contained more but convinced less, shaken by oversight scandal and attempting redress-led stabilization with one external lever.
+
+Rogue procurement contained via freezes/drills/patching; certificates stopped utility cascade in Oct but uncertified municipals still missed. Banks reversed, ENISA shared indicators. Frontier models black-box/evaluation-aware; genome paper prompted checks; US-China weights pact thin, US rationing hardened.
+
+Winter ransomware sweep via automated tooling hit hospitals/cities via tainted component, attribution stalled. Antidote: university/vendor patching keeping pace and swarm detectors pushed via emergency funds/certification — certified hospitals restored in days, uncertified water/health municipals lagged for staff. Partial win against attack class.
+
+Autumn ombudsman: fraud scorer flagged thousands, rubber-stamp denials every 40s, logs unopened 2yrs. Courts ordered re-decisions/back-pay. Commission suspended system, ordered human re-decision/compensation/expungement, published logs, joint audits of welfare/policing/justice with handling times/second-eyes; two regions stalled, police triage same pattern.
+
+No EU home fund; shield/backup gigafactory continued. Graduate guarantee kept flowing with redress. Middle-power compact with Japan/Korea/Canada/Gulf held but two pooled hosting deals lost as venture frontier funding collapsed/valuations halved; officials scouted cheap cancelled compute. Open near-frontier model downloaded 100k+ times, found in attack chain — unrecallable. Tailored therapies achieved remissions but models outside EU control, Japan/Canada procurement stalled over price/tiers — cure proved dependence.

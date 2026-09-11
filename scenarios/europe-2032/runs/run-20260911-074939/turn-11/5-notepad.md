@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Bio-Detection and Trusted Care Continuity Network −2, EU Wartime Neutrality Shelter and Lifeline Continuity −2, EU Offline Shelter for Unrecallable Intelligence −2 = −6 (priority without effect or cost as capital 16 below 20, charge is measures only)
+PROPOSAL BONUS: EU Offline Shelter for Unrecallable Intelligence (cat 6, small) +2 — opaque_reasoning and openweight_frontier_release both fired this turn and this answers them directly, shielding lifelines for unreadable unrecallable capability
+LEGITIMACY LENDS: capital 12, sentiment 14 -> +1 (capped, applied in total; figure shown is post-charge pre-lend baseline)
+SOVEREIGNTY: 14 last turn, no cat4 finish, no cat4 in flight +0, no capacity event, capability rose 1.0 −0 = 14

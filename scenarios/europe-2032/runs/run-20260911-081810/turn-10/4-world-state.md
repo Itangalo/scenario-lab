@@ -1,0 +1,10 @@
+### A seat at someone else's table
+With money gone and chip slots still cancelled, Brussels stopped pretending it could buy protection alone. When allied capitals offered pooled defence — live intrusion feeds shared across cyber commands and binding sample-sharing for biological threats — the Council said yes quickly. Europe brought something real to the exchange: the locked-backup playbooks and cross-border isolation drills that had kept clinics online through the autumn.
+
+Accession talks went smoother than expected. European envoys got early-warning access and a chair in the joint coordination cell, and for the first time in a year auditors could point to detection coverage Brussels did not have to fund itself. At home, town halls that had stayed dark in earlier waves reconnected their telemetry rather than face another winter alone.
+
+The other half of the bargain stalled. The civic trust repair — workload limits for caseworkers, published logs from the benefits scandal, audited triage assistants — moved forward on paper but barely in wards and offices. Nurses in cooperating cities praised shorter waiting lists, while elsewhere unions and insurers refused to restart automated decision tools without a law on liability and redress. The liability pact was declared complete, welcomed by lawyers and ignored by underwriters.
+
+The Hague, Tokyo and Seoul kept the licensing conversation polite and unmoved: binding controls on lithography first, quotas later. The fenced gigafactory site stayed fenced. American labs, slowed by their own retrenchment, bought Europe time without buying it capacity.
+
+By June, containment was no longer purely European — it was borrowed, shared, and more credible for it. Legitimacy remained split between systems that helped visibly and systems ruled lawful while harming people, and deployments stayed frozen where it mattered most.

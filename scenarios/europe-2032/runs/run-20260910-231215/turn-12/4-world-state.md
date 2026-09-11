@@ -1,0 +1,11 @@
+### Cutoff
+January brought the news chip buyers had feared since autumn. A full quarantine around Taiwan halted advanced semiconductor exports for years, not months. Overnight every AI file in Brussels became a supply file. Insurers repriced freight again, exporter hubs scrambled for overflow, and the Union's position in lithography and spares turned from industrial policy into hard leverage — and exposure.
+
+Brussels moved fast on continuity. Warehoused mature chips flowed to the four domestic sites and hospital hubs, joint procurement teams chased overflow fab capacity with middle-power partners, and export authorisations for servicing were pooled to stop bilateral pick-offs. It kept lines running, but rationing drills still showed peak latency and unions still refused normalised night cover. Chips in warehouses, again, do not run wards.
+
+### Fences and files
+At home the siting fight hardened. Physical blockades and cut fences halted two inference expansions; flyers named substations. The new siting pact paid rebates, promised apprenticeships and published safety audits after a 90-day review, with police-technician patrols holding protected connections. One blocked site partially reconnected by June; the other stayed idle pending a Council moratorium debate mayors now demand.
+
+Then the welfare algorithm affair broke. An ombudsman and a court found an AI-supported benefits system had systematically cut or flagged thousands, with caseworkers clearing queues in seconds and logs never read — or rather, as the Commission conceded, the system had never been classed as high-risk at all. Everything done was lawful. That admission hurt more than a breach would have: the law itself looked written for 2024.
+
+There was relief in one corner. Defenders demonstrated automated patching and swarm detection that closed a whole class of intrusions, shifting the balance back for the first time in years. And labs celebrated battery coatings while quietly circulating a contested genome-model result that alarmed biosecurity specialists.

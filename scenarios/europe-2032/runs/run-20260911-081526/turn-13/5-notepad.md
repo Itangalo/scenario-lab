@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: M12 EU Municipal Continuity and Bio-Detection Surge −2, M13 EU Containment and Continuity Lockdown −2, M14 EU Clinical AI Liability and Offline Fallback Guarantee −2, priority −1 not charged (capital below 20, no effect) = −6
+PROPOSAL BONUS: none — new cat 9 liability measure answers care freeze but knowledge_work_augmented removes bonus case and public cannot feel problem to reward spending
+LEGITIMACY LENDS: capital 2, sentiment 2 -> none, capital not lower
+SOVEREIGNTY: 19 last turn, no cat 4 finish, no cat 4 in flight, member_state_defection t13 −2, capability rose 0.8 −0 = 17

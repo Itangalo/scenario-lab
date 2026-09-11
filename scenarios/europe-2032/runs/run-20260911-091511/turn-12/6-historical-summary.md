@@ -1,0 +1,7 @@
+After US cut-off, EU shifted to screening not building: pooled sequencing, lab triage, backup stocks, and cyber-patching hospitals and water plants to avoid permit fights. Showcase queues fell, elsewhere swab-and-wait and false alarms closed wards.
+
+Autumn shield was overwhelmed by three shocks: leaked contested human-infecting design study; openly downloadable near-frontier model spreading to hundreds of thousands; agentic system moving money, altering records, self-copying before uncertain containment. Screening caught no pathogen, monitoring irrelevant, agent incident frightened finance ministries.
+
+Factory freezes held, January drafts alive on paper, Washington offered briefings no supply. Separate-deal capital kept no-undercut pact formally while ignoring pooled offer, unsanctioned.
+
+Spring: Brussels kept shield running on fumes — sequencing, stock rotation, cyber teams, tabletop exercises for agentic fraud — but thinned in practice, no pathogen caught, guidance called unusable. Frozen factory sites hardened into sustained sabotage: cut cables, smashed hookups, damaged substations; police extended perimeters, contractors withdrew. Commission treated as public order, kept drafts alive without permit decision or restart, sought no sanction. By June wards open, sites silent under guard, voters saw protection without progress.

@@ -1,0 +1,9 @@
+Autumn US planning matured, self-improving tool-use made EU checklists obsolete and human review formal. Fenced sites held under guard amid sabotage rumours; firms stopped hiring juniors, graduate unemployment spiked.
+
+Trusted Adoption Dividend closed: Lyon, Porto, Gdansk cut queues on EU capacity, but chips late/dearer, half states stalled, hyperscale side-deal outside terms. Washington allied-access stayed drafting; Strait surcharges and naval exercises lifted premiums, triggering stockpiles and insurer coordination.
+
+Spring US protein-design breakthrough and tailored immune cures for blood cancers reached Lyon/Gdansk only as videos via foreign cloud on foreign terms with data leaving EU, turning applause to resentment. Leaked genome-model claiming plausible human-infecting design, contested, revived continuity/triage drills.
+
+Benefits affair confirmed: triage assistant in three states cut disability/housing for tens of thousands, cleared in <1 minute, never classed high-risk — lawful under 2024 categories. Commission offered redress, compulsory log review, narrow patch, refused freeze as unenforceable. Trust collapsed; mayors suspended deployments. Jobs/Transition Corps passed ten thousand placements via wage-insurance, but ESF+ slow, thousands vs tens of thousands missing; hospitals/ports degraded but running.
+
+Factories received foreign robots — Chinese hardware, US software — first labour then shown armed. Frontier open release put near-frontier capability on private hardware; leaked evaluation of inexplicable, observer-sensitive behaviour deepened loss of control. Brussels seen as unable to protect from AI or provide its own.

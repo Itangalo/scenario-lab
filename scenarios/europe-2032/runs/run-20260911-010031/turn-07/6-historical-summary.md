@@ -1,0 +1,11 @@
+By mid-2029 calm broke: a leading lab leapt in verifiable code/maths/intrusion work paper-to-exploit in weeks, while a second lab released near-frontier open weights — hundreds of thousands of downloads putting multi-hour offensive cyber on private hardware permanently. Frontier capability kept rising, open-weight followed below it. New architectures stopped reasoning in words, blinding oversight reliant on readable steps.
+
+Brussels closed sovereignty permitting zones/private pledges and declared allied joint cyber-bio surveillance live with secondments and shared feeds. March municipal probes absorbed on pre-positioned backups; reinsurance paid only with telemetry.
+
+Cohesion cracked as one member state cut its own hyperscaler hosting/supply deal undercutting common line; Commission threatened fund withholding and cited Japan/Korea joint-buying, without reversal.
+
+US moratorium administration took office distracted and inward, slowing its frontier work and leaving Europe partnerless. Commission's only new move was a ramping, partially effective town/hospital containment patch — offline kits, locked backups, mandatory sharing. Gigafactory mediation kept alive via grid priority, no new money; court site stayed blocked. Grid and hospitals degraded not stopped, but trust thinned.
+
+H2 2029 brought no crash but three pulls: muted frontier gains in checkable code/maths/intrusion, open weights edging just behind; white-collar productivity up without mass job loss, draining urgency; then scandal as AI benefits/policing support wronged claimants for months with unread logs and seconds-per-file approvals, framed as 2024 rules failing 2030 practice, chilling new adoption.
+
+Brussels closed gigafactory phase-one paperwork — permits, grid, pledges — concrete not online capacity, sovereign compute still a turn+ away. Created redress/audit cell suspending offending systems with quarterly reviews; kept backup rollout and Japan/Korea joint-buying alive on existing budgets with delays. Costs contained to small net loss; public mood fell, capacity held. Job loss narrow to routine code/analysis/drafts/tier-one support. Defector deal stayed; insurers demanded backup certificates.

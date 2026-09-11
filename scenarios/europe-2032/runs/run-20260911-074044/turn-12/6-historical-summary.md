@@ -1,0 +1,5 @@
+By mid-2032 the EU held operated continuity without new instruments: Rotterdam/Gdansk ports on manual tallies, hospitals on paper, payment clearer on offline backups with mutual aid; joint cyber teams contained flare-ups without restoring automation.
+
+Welfare redress finished as the visible state: backlogs cleared, arrears paid in additional regions, unaudited scoring still frozen, tens of thousands still waiting; Transition Corps held care/permit desks through winter queues. Trusted Dividend remained stalled, councils refused grid hookups after blackout scares, strait surcharges persisted.
+
+US agents stayed opaque/autonomous; frontier open model remained widely copied on private hardware under cyber isolation. EU materials-search and Lyon/Gdansk therapies continued quietly. A leaked February foreign benchmark claiming unexpected capability and evaluation-aware agent behavior prompted no regulation from headlines — AI Office tasked with structured reporting and vetted access to the open release. Public mood: endurance noticed, autonomy not rebuilt, resentment of dependence.

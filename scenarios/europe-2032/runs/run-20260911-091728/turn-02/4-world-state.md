@@ -1,0 +1,8 @@
+### Grids first, factories second
+The spring belonged to the grid operators. After autumn's discovery of long-dwelling intruders, the Commission pushed emergency segmentation standards through ENISA and ordered the two affected transmission operators and peers in the five factory-host states to install network monitoring and pool breaker-log telemetry. Energy ministers endorsed the mandate in March. On paper it moved fast; on the ground, vendors slipped, telemetry formats clashed, and eastern operators bargained hardening contracts against cohesion money before signing.
+
+The factory programme ground on in parallel. DG CNECT advanced site selection and permitting zones, but land deals stalled over grid pledges, financing still needed multi-year budget sign-off, and no EU borrowing was tabled. Hiring for the evaluation institute began, focused on cyber-tooling tests, with no independent results yet.
+
+Then Washington tightened chip and model export licences again. Early drafts suggested volume licences for allied buyers, but the final language rationed even allies alongside adversaries, capping high-end shipments and cloud access. EU buyers faced queues and paperwork; talks linking factory cooperation to better terms produced communiqués, not licences. Supply-chain leverage around lithography was discussed in Brussels but not used.
+
+Public evening news tied the intrusions to freely available models, and councils in one candidate region froze permitting hearings after residents cited strain on power and water. No blackout occurred — the grid stayed quiet — but containment costs and delayed investment left the mood more anxious than before.

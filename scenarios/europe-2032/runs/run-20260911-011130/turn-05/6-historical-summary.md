@@ -1,0 +1,5 @@
+Autumn 2028 grid drive closed: teams stayed in hospitals/ports through Dec, spares passed to national budgets, officials declared complete; operators said cascading paths narrower but legacy controllers and clinics unpatched.
+
+US election won by candidate pledging models as national asset with tiered foreign access and tighter exports, confirming revocable dependence; East saw humiliation, Paris/The Hague urged calm.
+
+With AI crash funds gone and 5 gigafactory sites (Paris, Berlin, Madrid, Stockholm, Warsaw) reserved but unbuilt, EU pooled leverage: joint licence alignment with Netherlands/Japan/Korea, common compute ask in Washington, shared testing via evaluation institute using lens/chemical/packaging chokepoints. Permits preserved, power-price protests continued, public saw dependence managed not overcome.

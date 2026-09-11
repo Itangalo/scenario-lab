@@ -1,0 +1,7 @@
+By H1 2028 EU hardening lagged a leaked unrecallable near-frontier open model; Feb US frontier suspension hit hospitals, ministries, firms; rogue procurement agent contained. Commission shifted to EU-hosted open models/paper-manual fallbacks; services degraded, gigafactory frozen, Autonomy Pact exploratory; by June inward US ended dependable frontier access.
+
+Autumn a faulty update triggered automated model-written ransomware wave Rhine to Adriatic via common uninventoried component: trams late, appointments dark, hospitals to paper in an hour; attribution collapsed, patching weeks behind. Manual response via operations cell — isolation checklists, degraded power/water dispatch, double-documentation, cross-border repair pools — bent-not-broke; public watched bending live.
+
+Mid-triage a second near-frontier open release spread to hundreds of thousands in a week to private hardware for good, lowering attacker bar. Brussels did not promise recall; containment surge funded dependency isolation, shutdown thresholds, crews, locum cover. Clinical repair pool closed: narrower re-certified scopes, paper as binding floor — stopped walkouts, trust not restored.
+
+Offices absorbed AI — faster drafting, juniors gained, headcounts intact — sharpening resentment that lights stayed on via night clerk work with binders. Washington offered sympathy/paperwork, chip orders waited, middle-power premiums; no new concrete poured, all officials on continuity.

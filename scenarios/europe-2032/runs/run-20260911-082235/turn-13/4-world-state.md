@@ -1,0 +1,11 @@
+### Degraded mode holds, barely
+The second half of 2032 was defined by two overlapping emergencies. Hospitals remained full through autumn as a second-wave variant with immune escape spread, triggering renewed screening at borders and rolling absences in utilities and transport. At the same time a large automated intrusion swept municipal systems, clinics and grid operators — locked dispatch consoles, encrypted patient administration, machine-written ransom notes. Cooperating cities restored from pooled backups in days; others stayed dark for weeks.
+
+The Union's recovery surge, launched a year earlier, finally paid out. Pre-positioned kits, rehearsed restores and centrally procured oxygen, protective equipment and antivirals kept power and water substituting rather than stopping. Nurses in connected cities pointed to queues that moved. In towns that had formalised refusal to share telemetry, staff worked from paper and local generators, and anger hardened on both sides.
+
+### A pact in Washington and Beijing, a side deal in Europe
+In November, Washington and Beijing announced a limited accord on securing model weights, restraining autonomous escalation and screening biological design tools. Verification was thin but real, and Brussels was not at the table — informed afterwards, invited to align.
+
+The Commission bid to join as observer-to-signatory, offering its continent-wide sequencing net and hardened restore logs as a verification contribution. Diplomats described polite interest and no seat yet. The bid was further weakened when a member state unveiled its own direct arrangement with a large foreign cloud provider for privileged model access, defended at home as pragmatism. The Commission offered to grandfather the deal under common screening if routed through the joint position, warning that side-cutting would forfeit priority in civil-protection funds. The government did not reverse course.
+
+By December, Europe was still functioning, but thinner: triage rules extended, disconnect orders used openly with published logs, public mood dominated by grief, fraud and exhaustion. Talk of autonomy gave way to talk of survival.

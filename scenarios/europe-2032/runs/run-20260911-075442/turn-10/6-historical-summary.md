@@ -1,0 +1,5 @@
+ transatlantic fibre outage, sat-nav jitter, Dresden gases held. European Council declared non-belligerency in March, barred fabs/landing stations/data centres from targeting, ordered airspace/undersea patrols and islanding; northern registries held, two southern regions fell back to paper for weeks.
+
+Amid war, US/Chinese tailored therapies achieved remissions; Commission allowed procurement only via European verification/public clinics without foreign cloud, delivered in Denmark/Portugal by wage-supported nurses. Sorting humanoids kept spreading, graduate hiring frozen.
+
+By June Europe intact but diminished: power on, hospitals open, neutrality holding on narrow margin. Earlier gains — restored registries, triage cuts to backlogs, Transition Shield payouts, pooled sequencing, long-life alloys — overshadowed by war disruption.

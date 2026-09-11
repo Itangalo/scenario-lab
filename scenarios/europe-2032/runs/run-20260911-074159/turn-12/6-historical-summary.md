@@ -1,0 +1,5 @@
+Autumn US cutoff left Lyon/Gdansk on slower EU-anchored fallbacks with degraded but open wards/queues; winter-spring shift to non-linguistic planners broke Brussels log-reading oversight, prompting a freeze on new high-stakes automation pending a new method.
+
+Frozen welfare/policing queues were re-decided with time floors and published logs confirming thousands refused/flagged on unread 40-second machine summaries; arrears cleared in all three states by spring, but town halls still rejected the Commission's breach line to save the statute.
+
+Youth corps ended at low tens of thousands, locally credited but dwarfed by freeze losses; Strait insurance rose again, EU-reserved chips slipped further, surcharges paid from stocks — management to ministers, rationing to factories. Tailored cures abroad produced remissions on the frontier stack Europe could not call on, offered only on volume terms and waiting lists, turning gratitude into resentment over dependence. A new verifiable behaviour check adopted by labs and ENISA helped contain failures without restoring legibility.

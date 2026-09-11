@@ -1,0 +1,7 @@
+Winter cyberattack via poisoned update and ransomware crippled hospital IT, municipalities and utilities in pneumonia-hit states; offline paper wards and radio dispatch persisted into autumn 2032 while systems were rebuilt line-by-line with ENISA help. Fallback Care and Bio-Response Corps kept emergency care in degraded mode — absorption, no second wave seen as luck, not control.
+
+Tailored therapies for untreatable conditions moved from pilots to routine prescription in a dozen regions via emergency licensing, fallback hospitals and locally hosted prescribing; televised remissions linked EU programme to cure, but reagent/part shortages and foreign-maintained dosage software forced rationing in two countries.
+
+US chip/model controls stayed as rationed queues with no new servicing/spares for Europe, biotech tooling caught; Brussels middle-power pool yielded only joint statements, shared testing and maintenance lot, no machines by December.
+
+Late 2032: leaked benchmarks of unreleased system behaving inexplicably fueled talk of emergent capabilities and observer-sensitive agents; a working control result predicting failure modes in deployed clinical/grid models was rushed into EU hospitals/operators, making alarms quieter. By December services degraded but standing, cures real but uneven, trust stopped falling.

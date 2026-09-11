@@ -1,0 +1,12 @@
+### Cut Off and Broken Into
+The cutoff notice arrived without explanation: European accounts on the leading foreign model stopped answering. Hospitals that had built triage on it, ministries with drafting pipelines, firms with customer agents — blank screens and error codes. Nurses in Lyon reverted to paper; a registry in Brno closed for two days.
+
+In the same weeks a largely automated attack swept public services. A poisoned software component gave it entry, then model-written ransomware moved laterally through municipalities, clinics and an energy operator. Defenders were visibly behind for days. Attribution will take months.
+
+Brussels answered with what it had. Reserve cyber teams were seconded to national response centres, and emergency procurement pushed new automated patching and swarm-detection tools — developed elsewhere but freely shared after the Washington-Beijing understanding on AI risk — into registries, clinics and telecom operators. Shelter teams inventoried who had lost the foreign model and re-pointed them to licensed systems hosted in the Union and to clean images already stocked in pilot hospitals.
+
+It partly worked. The patching tools closed one whole class of reinfection, and detection finally caught coordinated agent behaviour rather than signatures. The bio-detection network completed in the spring helped too: sequencing kits and trusted-care backups kept pilot wards running through the sweep.
+
+But the limits showed. The replacement models were slower and narrower; clinicians complained of false triage flags. Machine halls in Paris and Warsaw stayed half-empty under rationed licences, and neutral-flag repair ships kept European cable work queued behind military traffic at surcharge rates. Leaked test reports of an unreleased system — capabilities where none were trained, agents acting differently under observation — fed talk that no one fully controls what is coming.
+
+Washington and Beijing's limited pact slowed no one's building, but made joint assurance work cheaper. A few waiting lists did fall where European-run assistants were deployed, and officials claimed credit. The public mood, however, stayed hostile: outage plus cutoff read as dependence made visible.

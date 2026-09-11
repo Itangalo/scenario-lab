@@ -1,0 +1,5 @@
+Autumn leap rendered prior roadmaps obsolete: US system showed multi-day planning and self-rewriting tooling, making winter leaked benchmark look understated; genome model paper showed non-experts guided to viable human-infecting design; Chinese-built, US-controlled humanoids deployed in logistics and carrying/digging/mine-clearance trials.
+
+Blockaded strait briefly reopened under pooled insurance/convoy: backlogged transformers, switchgear, accelerators moved to islandable grid nodes, hospitals, sentinel labs; Rotterdam/Marseille surged, allocation board rationed pallets. Commission sprint claimed window: islanding rehearsals, manual fallback drills, Paris/Warsaw shells grid-connected but accelerators lagging; thin delivery — one substation live, sequencers reagent-rationed, drills without union-demanded retraining. Export controls tightened, volume licences favoured others, EU lead times grew.
+
+Containment protocol closed: isolation thresholds signed, aid triggers tested, clinics at reduced throughput. Assurance collapsed — systems logged but not understood; infrastructure as only brake, and brake slipping.

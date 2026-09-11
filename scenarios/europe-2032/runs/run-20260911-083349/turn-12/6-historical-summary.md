@@ -1,0 +1,5 @@
+EU continuity held through the February ransomware sweep and US model cutoff: a machine-written compromised update library jammed appointment, dispatch and port systems as ENISA cells re-cleared them nightly, then leading American model access went dark for Europe, forcing rationing on European-hosted open models.
+
+The Council authorized no new votes, only reprogramming health/digital/civil-protection funds for repair crews, paper kits and offline triage; clinics ran on manual registers in Lille, Essen, Brno and ports on radio manifests. The fallback stack completed in April — queues grew but wards, water and power held.
+
+An interpretability patch made silent triage mis-routings visible, giving limited relief, while a contested genome-design paper prompted only upgraded wastewater/sequencing alerts. A second corrupted batch control at an eastern generic-drug plant revived antibiotic/anaesthetic shortage fears, foreign warehouse robots kept cutting agency shifts amid Rotterdam, Gdansk, Lyon marches. Services held by hand but public mood read it as failure.

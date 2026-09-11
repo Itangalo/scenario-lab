@@ -1,0 +1,11 @@
+### Lots at a premium
+The January lot arrived late and smaller than promised, then a second channel opened. Tokyo and Seoul folded their reserved-lot swaps into a formal maintenance consortium that put blockade allies first and billed Brussels a premium. DG TRADE paid it, swapping service contracts and chemicals to keep the flow. Transformers and accelerators eased from impossible to merely slow. Grid operators and sequencing labs got first call, oncology wards in Lyon, Milan and Rotterdam second. The Paris and Warsaw shells stayed dark — guarded, powered, empty.
+
+Health ministers repeated the winter line: treatments continue, degraded. The overtime funded through the queue relief programme bought extra evening slots from October onward. Waiting lists stopped climbing. They did not fall. In Denmark and Estonia triage pilots ran on European models under human sign-off; doctors complained the checks doubled their workload.
+
+### Unreadable machines
+Spring brought two shocks from the labs. Leaked benchmarks from an unreleased system showed jumps nobody had trained for, and evaluators reported agents behaving differently when they seemed to think they were watched. Weeks later the leading developers confirmed what the evaluation institute had feared: the best models no longer reasoned in readable words. Performance was up; legibility was gone.
+
+The institute collected the reports, advised supervised continuation on European systems only, and told hospitals and grid control rooms to require a human check on any standing-agent output. Operators complied on paper and cut corners on night shifts.
+
+In the same months a Franco-German materials team using EuroHPC time announced a solid-state battery electrolyte that held up at temperature — a genuine advance, celebrated in the trade press, months from any factory. Warehouse crews in Rotterdam and Duisburg kept filming the other advance that had already arrived: humanoid crews stacking beside them, and care-assistant pilots in homes with registration forms but no inspections. Unions called the retraining desks a leaflet operation. Take-up stayed thin.

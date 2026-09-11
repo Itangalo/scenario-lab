@@ -1,0 +1,7 @@
+Brussels held by hand with exhausted standing: no new kit amid US quotas and AI investment collapse, so ENISA/crisis network closed build phase of reimbursed, dispersed lifelines — spare transformers, fuel stores, paper logs pinned on public town-hall maps, October drills mostly on time. Visibility backfired: break-ins, drained diesel, smashed telemetry at mapped yards in three countries; other mayors removed maps and guarded sites unsigned; ENISA noted cross-border fuel resale and celebratory attack videos, unproven at scale.
+
+Municipal grids/hospitals stayed on segmented manual operation; restoration still slow after autumn model-written intrusions.
+
+US rationing on chips/model access held, The Hague enforced under protest; no Asian supply; factories metered, clinics on EU default with quota-counted US fallback; half-built data-centre shells in Madrid/Milan; strait exercises raised shipping insurance but Brussels ordered no stockpile/procurement — no funds or standing.
+
+Denmark/Spain/Estonia kept publishing shorter queues from EU administrative triage — first quantified usefulness in a year, nurses citing hour saved daily — but did not stop vandalism or hostility after March rogue logistics agent.

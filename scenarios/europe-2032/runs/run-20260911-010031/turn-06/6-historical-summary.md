@@ -1,0 +1,7 @@
+By mid-2029 calm broke: a leading lab leapt in verifiable code/maths/intrusion work paper-to-exploit in weeks, while a second lab released near-frontier open weights — hundreds of thousands of downloads putting multi-hour offensive cyber on private hardware permanently. Frontier capability kept rising, open-weight followed below it. New architectures stopped reasoning in words, blinding oversight reliant on readable steps.
+
+Brussels closed sovereignty permitting zones/private pledges and declared allied joint cyber-bio surveillance live with secondments and shared feeds. March municipal probes absorbed on pre-positioned backups; reinsurance paid only with telemetry.
+
+Cohesion cracked as one member state cut its own hyperscaler hosting/supply deal undercutting common line; Commission threatened fund withholding and cited Japan/Korea joint-buying, without reversal.
+
+US moratorium administration took office distracted and inward, slowing its frontier work and leaving Europe partnerless. Commission's only new move was a ramping, partially effective town/hospital containment patch — offline kits, locked backups, mandatory sharing. Gigafactory mediation kept alive via grid priority, no new money; court site stayed blocked. Grid and hospitals degraded not stopped, but trust thinned.

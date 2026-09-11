@@ -1,0 +1,9 @@
+### Rationed ally
+Washington tightened chip and model export controls again in autumn. After weeks of lobbying, Brussels secured what it had asked for: European hospitals and grid operators stayed on allied volume licences — capped, audited, questionnaire-heavy — while buyers elsewhere were cut off entirely. The Commission sold it as a diplomatic save. At home it read as confirmation that the newest American agents would arrive late, in smaller quotas, and at higher prices.
+
+The crisis allocation cell kept the lights on. Pooled servicing for lithography tools, spare-parts routing, and breaker-log triage by the cybersecurity agency held transmission and triage queues through the winter. Repair crews returned to the two fire-damaged grid-connection sites, but with no funds for new siting and substation layouts still circulating online, work was patchwork and slow.
+
+### The compact lands, thinly
+The lithography-for-compute arrangement concluded in December. On paper it gave Europe joint maintenance, shared spares and a coordinated supply-chain voice. In practice it kept existing machines running rather than adding capacity. Nurses still worked around older licensed software, operators ran on exercised playbooks, and the large member state that had struck its own hyperscale deal stayed outside the joint list despite an offer of re-entry.
+
+Essential services survived intact but visibly thinner. Queues lengthened, audits multiplied, and open-source researchers, angry at the end-use controls accepted to defend the Washington carve-out, accused Brussels of trading their work for rationed supply. With no new build started and political funds exhausted, dependence was no longer debated — it was counted.

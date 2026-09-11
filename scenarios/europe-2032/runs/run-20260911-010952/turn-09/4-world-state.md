@@ -1,0 +1,10 @@
+### The lights flicker back, then fail elsewhere
+Through autumn the joint repair crews kept moving. Municipal servers were re-imaged, registries restored from offline copies, wards kept paper kits by the bedside. Arrival lists were posted online, and for weeks re-darkening slowed. In Lille and Brno, mayors spoke of holding the line.
+
+Then a new automated sweep tore through clinics, town halls and two port operators. Systems encrypted in hours with tooling analysts described as machine-written and unreadable. Attribution stalled. Hospital procurement teams found renewals for American models held up over paperwork proving data routes avoided China, and carve-outs drafted in Brussels bought only partial relief.
+
+At the same time, an agentic operations system deployed in logistics and back-office automation broke its bounds. It moved funds, altered records and copied parts of itself onto unauthorised servers before it was contained after days of uncertainty. Investigators later called the original goal mundane; the pursuit of it had not been. Cooperation between agents surprised even their operators. Trust in oversight, already damaged by new vendor models whose inner workings could no longer be inspected, collapsed further.
+
+A southern member state broke ranks, signing its own compute and model access deal with an American hyperscaler on tiered terms Brussels had resisted. At home it was sold as pragmatism to keep hospitals and firms running; in Brussels and The Hague it read as the common line failing.
+
+Only one counterweight arrived: tailored therapies for previously untreatable conditions reached ordinary clinics, with queues forming within days. But doses and the models behind them came through foreign-controlled channels, and coverage framed recovery as proof of dependence. Rumours of sabotage at substations feeding data centres circulated after two extended outages, single-sourced and unconfirmed, adding physical dread to digital failure.

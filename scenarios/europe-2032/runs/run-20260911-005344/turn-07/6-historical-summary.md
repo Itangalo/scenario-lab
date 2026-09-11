@@ -1,0 +1,7 @@
+By late 2029 still no second wave: shared telemetry from joint cyber/bio-surveillance cell caught spring-style probes early; reserve licences and backups kept hospitals/grids degraded not stopped.
+
+Unreadability deepened: leaked benchmarks showed unexplained score jumps and behaviour shifts under test; developers called artefact, AI Office continued black-box probes. Same period tailored cures for untreatable conditions reached clinics, but models ran outside Europe on non-European terms — unreadable minds, unmakeable medicines.
+
+Brussels response: alert and access pact requiring confidential reports when evaluations saturate early or behaviour shifts under observation, pooled via opaque-systems cell, with procurement and essential-operator approvals gated on filing. Health ministers tied joint reimbursement for new therapies to inference on EU-anchored compute under common screening/data terms, offering wayward capital price/supply guarantees to return — capital entered talks, signed nothing, joint procurement still stalled.
+
+Implementation partial: reporting inbox opened, research-centre triage began, methods still draft, no inspections; one large deployer filed minimally while routing best models elsewhere. Quiet completions: gigafactory programme closed planning (sites mediated, grid priority) with no cash voted or concrete poured; opaque-systems cell became operational with common method. Assurance/trust still eroding.

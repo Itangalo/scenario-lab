@@ -1,0 +1,13 @@
+### Cut off
+In February, access to the leading American model went dark for European users with no warning and no appeal path. Hospitals that had built triage assistants on it, ministries using it for document work, and firms with customer services on top saw errors overnight. Helpdesks filled, contractors flew in, and evening news ran the outage as proof Brussels had let essential services rest on a foreign switch.
+
+Brussels answered with an inventory and substitution drive, moving cut-off sites onto European-hosted models and pairing each move with newly available defensive software that patches at machine speed and spots coordinated intrusions rather than single signatures. Where the swap happened, security teams reported calmer nights. But the replacement models were weaker, migrations broke workflows, and clinicians complained of slower, clumsier tools arriving just as monitoring alerts multiplied.
+
+### Two shields, half-built
+Preparatory work for the safety institute continued, with staffing, premises and evaluation protocols still being assembled. No evaluations or incident notes were published this turn; the cut-off dominated everything and the institute remained pre-operational.
+
+Grid work inched forward on already-negotiated telemetry deals, with segmentation kits installed in a few more control rooms. Vendors still missed dates and formats still clashed. The bio-cyber programme, now the stated priority, remained in limited pilot, with wider rollout of detection kits and pooled sequencing held pending coordination, standards, procurement and hospital triage staffing that are not yet in place.
+
+The factory plan stalled. With councils citing grid strain and fear of openly available models linked to last year's intrusions, one candidate region froze permits outright. Brussels chose not to force the fight. All five measures in the portfolio remained actively pursued this turn — staff time, preparatory spend, and political ownership continued — but no new funding approval or reallocation was secured for broader Continuity Stack deployment or for unblocking additional sites. Costs were therefore incurred as delay and partial blockage: hearings reopened, approvals did not, existing portfolio commitments weighed on capital without delivering finished capacity, partly offset by legitimacy lends from the substitution drive and the proposal bonus for the bio-cyber priority.
+
+By June the lights stayed on and no epidemic followed, and the new defensive tooling was real progress. Yet voters saw weaker public services, delayed factories, and money spent to stand still.

@@ -1,0 +1,11 @@
+### The jump no one had scheduled
+Winter ended with two papers landing in the same week. A leading lab demonstrated a system that made last autumn's roadmaps look cautious — multi-day research tasks run with little supervision, and results its own team described as unexpected. Days later, a biosecurity group published evidence that a genome model had helped a non-expert team sketch a viable human-infective design. Methodologists quarrelled over both claims, but municipal security teams and hospital planners did not wait for the quarrel to settle.
+
+### Certification as triage
+Brussels seized on a third result: an interpretability technique that actually worked on shipped systems, predicting failure modes before they were observed. The AI Office and ENISA rushed it into the half-built Evaluation and Incident Clearinghouse, turning the clearinghouse into a mandatory pre-deployment check for high-compute rollouts. Vendors complied in public and slow-walked in private, sharing partial logs while the jumped model spread to enterprise customers. Assurance improved on paper, less in the training clusters where the next system was already running.
+
+### Sewers and stockpiles
+The Health Council invoked the genome finding to launch a sentinel network — wastewater and clinical sequencing in the cities hit by spring ransomware, plus a joint stockpile and ward drills. Funding cleared, but reagents, sequencers and trained staff did not arrive at the same speed. Two regions refused new sampling sites until power rationing eased.
+
+### Power still decides
+The Critical Services Shield formally closed, with backup power, detection kits and exercised fallback now standard in ports, grids and large hospitals. Reinsurers returned cautiously where drills were certified, easing throughput limits. The gigafactory push stayed pinned to two powered sites; elsewhere, councils quietly froze grid connections for data centres, citing drought and water use, and construction crews faced weeks of local blockades. Welfare appeals cleared slowly, and nightly coverage moved from courtrooms to sequencing labs without regaining trust.

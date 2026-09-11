@@ -1,0 +1,5 @@
+Spring 2028 shocks finished the Critical Services Shield amid stalled gigafactories: global AI valuation reset in February shelved two private data-centre builds linked to shortlist, labs cut training runs, Brussels shifted to holding four sites with EU-anchoring condition for priority grid; a member-state side deal for cheap compute undercut common anchoring line, fraying cohesion.
+
+After 2027 autumn audits of state-actor pre-positioning, a major insurer raised/withdrew cyber cover for uncertified operators, making certification the line between insured and uninsurable. Dozens of hospital groups and municipal utilities certified via cohesion-funded detection kits tied to drills, exercise teams with staff cover, pooled procurement and joint exercises. Shield declared operational.
+
+Brussels created EU-reinsured pool and emergency liquidity line only for certified operators, funded by reallocated cohesion money and investment-bank guarantee via civil protection/health-emergency channels. Assurance pilots continued with selective developer access but models outrunning evaluators; power queues lengthened; public saw protection alongside dependence and division.

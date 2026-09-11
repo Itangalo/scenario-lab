@@ -1,0 +1,5 @@
+Prior autumn ransomware and stalled gigafactories left brittle services, guarded sites, and interim US access talks.
+
+February: genome-model-assisted design enabled a fast, severe human pathogen; March pandemic mode — borders, triage, school closures. EU activated HERA/ECDC emergency regime: joint procurement, wastewater/sequencing surveillance with model-monitoring, coordinated closures; procurement re-bound a wavering capital after recrimination. Prior US access pact declared complete but irrelevant in crisis.
+
+Marginal interpretability advance aided lab certification, not transmission. Cyber restoration pivoted to hospitals/utilities; guarded medical convoys passed fenced compute sites amid unconfirmed sabotage rumours. Ombudsman/court found lawful automated welfare-policing system systematically penalised thousands due to non-high-risk classification, collapsing trust in 2024 rulebook. Sites emptied from illness; Brussels overspent to hold failing services.

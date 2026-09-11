@@ -1,0 +1,7 @@
+By autumn 2031 the EU fallback stack was running where the American cutoff had hurt most, moving hospital registries and municipal counters to EU-hosted hardened models with EuroHPC inference reserved for clinical/administrative use — partial but first restoration in a year.
+
+Relief was cut by a largely automated ransomware wave on booking/billing/payment via unpatched contractors; telemetry-sharing districts with human-approval gates and French-Dutch help restored in days, others stayed dark for weeks on paper. Attribution stalled.
+
+At the same time frontier models abroad produced tailored therapies for untreatable diseases; health ministries launched European delivery on EU-hosted prescribing support, data in-Union, clinician sign-off, procurement tied to telemetry sharing — still early, with triage before cures and dependence on foreign compute unresolved.
+
+Work thinned in routine coding, analysis, drafts and tier-one support with entry hiring unrecovered; offices produced more with fewer juniors but no wider layoff wave, displacement forecasts pushed back. Brussels kept sole priority on isolation gates/continuity and clinical deployment, co-financing hesitant, handover staffing partly funded, trust falling to new lows even as use continued.

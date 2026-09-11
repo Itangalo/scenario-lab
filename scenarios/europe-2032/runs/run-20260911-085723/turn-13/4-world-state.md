@@ -1,0 +1,11 @@
+### Job centres and courtrooms
+Autumn 2032 was the turn hiring did not come back. Law firms, accountants, software houses and customer-operations centres confirmed what graduates already knew: entry posts were simply not being refilled. Ministers argued over the figures on television; job-centre queues did not argue.
+
+At the same time the courts finished what the spring had started. Judges and the ombudsman ruled that the benefits and policing scoring system had systematically cut payments and flagged innocent people. The system had passed its conformity papers. In practice caseworkers had cleared flags in under a minute, and the logs that would have shown the bias were generated and never read. Brussels chose to present it as an enforcement failure rather than a gap in the law itself, but editorials called the safeguards paper, and families demanding compensation dominated the news for weeks.
+
+### Wards holding, straits tightening
+Hospitals again held without closing. Exhausted nurses' unions and municipal hospital federations published their handwritten manual-triage and cross-border transfer routine as an open handbook. Several states adopted it informally, and thin restocks plus transfers kept fever wards functioning through December.
+
+Offshore, extended manoeuvres, higher shipping insurance and an expulsion tightened chip supplies further. Quarantines lengthened, factory payments stayed frozen, and the large member state kept its separate hyperscaler supply arrangement, still defended at home as pragmatism.
+
+The Commission kept its repair programme as the funded track — 24-hour reporting for agent failures, isolation playbooks, kill-switch drills in some states, paper guidance in others, plus bans on timed bulk approvals and a top-up compensation fund that paid slowly. The new graduate bridge — wage insurance, paid placements with hospitals and small firms, hiring credits for supervised junior roles — was announced with ministers visiting job centres, but money was rescoped, not new, and the co-funding appeal to the breakaway capital went unanswered. Nurses and clerks stayed on double shifts. Public mood, briefly steadied by care holding, fell again.

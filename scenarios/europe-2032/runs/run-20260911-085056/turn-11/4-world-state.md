@@ -1,0 +1,11 @@
+### Certification after blindness
+The autumn brought the first verifiable good news in two years. Research teams at two leading labs published a control result that made deployed-system behaviour predictable before it was observed, with certification rather than argument. Hospitals in three member states piloted it on triage support: limited automated double-checks returned under audit, and for the first time since the black-box announcement, inspectors could sign off a clinical model as verifiable.
+
+Brussels moved to adopt it through a small joint cell in the AI Office, with ENISA and disease-agency staff seconded to certify municipal systems. Because money and attention were still tied up in cordons and manual tracing, rollout was slow and uneven — wards stayed on paper in the worst-hit cities while pilot sites reopened assisted checks. Staff welcomed the signal but complained the help arrived ward by ward, not system-wide.
+
+### A seat outside the room
+Washington and Beijing announced a limited understanding on weights security and certain biological design tools, with thin but real verification. Europe was not at the table. The Commission offered audit practice and detection data from the February transit-hub release in exchange for observer-verifier status, via transatlantic channels and middle-power contacts.
+
+The answer was polite and partial: technical briefings shared, verification visits deferred. The separate compute arrangement of the defecting member state remained, and the joint export line stayed paper-only, underlining how little leverage Brussels brought. Domestic papers framed it as humiliation softened by competence — excluded from the deal, but finally able to certify something at home.
+
+Care continuity funding finished its run, paying for cross-border surge staff that kept wards open through containment weeks. That visible restoration steadied ministers, even as protests at data-centre fences continued and trust in machine-mediated information stayed near historic lows.

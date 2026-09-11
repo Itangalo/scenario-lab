@@ -1,0 +1,7 @@
+Open US-China war continued into first half of 2032: Far East freight prohibitive, cables under guarded repair, Continuity Command kept hospitals/ports on satellite backup and rationed power.
+
+A discontinuous US lab advance under federal control rewrote benchmarks; EU received summary late via state-to-state queue. Distilled open weights of prior generation spread irretrievably, while newest closed systems remained unevaluable.
+
+US clinics demonstrated tailored therapies for untreatable conditions and a defensive breakthrough in automated patching/swarm detection; ENISA deployed it to hospitals/ports/grid, cutting intrusions where applied. But therapies and grid-dispatch models reached Europe as bargained allocations, deepening dependence resentment. Graduate hiring in law, accounting, software support, admin stayed frozen, overwhelming placement corps.
+
+EU folded eastern bilateral stockpile deal into joint front with other supply-chain holders: aligned export licences, pooled evaluation, common queue for medical/grid models. Licences flowed slightly faster without new capacity. Services held degraded-but-running where Command reached; by June EU had more leverage but little relief, public mood bleak.

@@ -1,0 +1,8 @@
+### Compacts and contagion papers
+January opened with lawyers, not diggers. Commission energy and legal teams shuttled between the two freeze councils, court-appointed technical referees and grid operators, haggling over capped water envelopes, sequenced grid connections and a local health earmark meant to buy lifts of the suspensions site by site. No challenge to the injunctions was filed. By March drafts circulated; by June neither site had restarted. Vigil tents thinned but the tape stayed.
+
+Hospitals held, barely. Maintenance money kept the continuity stack and the showcase triage helpers running. Where they worked, imaging queues stayed shorter and regional press repeated the European-fix line. Elsewhere locum hours bought in December ran out, queues lengthened, and staff blamed both the slower domestic tools and the thirsty computers Brussels still wanted to build.
+
+Two outside shocks reframed the semester. A contested genome-model paper claiming a path to a human-infecting design circulated through biosecurity circles, amplified by angry methods debates and newspaper explainers. Health agencies issued low-cost guidance on monitoring and hygiene under old mandates. Almost simultaneously a new openly downloadable model landed within months of the closed frontier, mirrored hundreds of thousands of times in days. Municipal IT desks and university labs installed it; ministerial memos warned against it.
+
+The access pact formally concluded, with pooled-volume language and a no-undercut pledge intact on paper. Washington offered continuity talk and no restoration date. The capital with its separate supply deal kept it. Cohesion held, but nothing unfroze.

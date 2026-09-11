@@ -1,0 +1,7 @@
+Winter brought a second US cutoff: American frontier providers again suspended advanced-model access for Europeans, breaking rebuilt hospital and ministry workflows overnight. The pooled EU-hosted Continuity Stack kept running as funded failover — claimed as vindication in Brussels, felt as degraded service in wards and town halls.
+
+Washington also tightened chip/model export licensing; allied licences held in principle but quotas and domestic priority stretched lead times. The small EU pooled stockpile and chartered freight covered weeks, not quarters; chipmakers stayed noncommittal.
+
+A coordinated voice/video-clone fraud wave then hit banks and administrations across member states — fake CEO calls, changed pay details — costing hundreds of millions before authentication fixes, transfer delays and signature wallets stopped it, further eroding trust in digital services.
+
+The Critical Services Shield became operations centre: centrally bought patching/detection to energy, health, rail, cohesion funds still diverted, isolation playbooks rewritten to avoid closing wards. Continuity backup declared operational for participating hospitals/municipalities but unmatched to lost capability. Ministers held ranking: hospitals first, stockpile second, concrete third; gigafactory guarantees remained paper with no private cash.

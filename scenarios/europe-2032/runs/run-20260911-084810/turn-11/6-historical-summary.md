@@ -1,0 +1,11 @@
+By late 2031 rationing and dictated dependence persisted. After Nov 2030 windless freeze caused 90-min blackouts in two western states, EU held essentials while curtailing large compute via reshuffled cohesion funds; data-centres protested, mayors called funds relabelled, breakaway state sold dear balancing power, price rising again by winter.
+
+Spring saw a compromised open-source maintenance tool open municipal networks to AI-assembled ransomware, locking appointments, billing and building controls in a dozen regions; hospitals went to paper, grid operators found same backdoor. Brussels deployed joint recovery teams with patch contracts and offline checklists — fast where early, queues elsewhere.
+
+Autumn brought a larger, more automated ransomware sweep with overnight recompiled variants; defenders behind for weeks, attribution open. Existing Recovery Corps playbooks made damage contained rather than chaotic, with clinics back in days where teams early, queues elsewhere, but bought little goodwill.
+
+US lab demonstrated autonomous flaw-to-exploit chaining; Europe could reproduce not originate. Municipal defenders used near-frontier open weights locally. Washington tightened chip/model export licences, then a second squeeze into servicing and older lithography; The Hague protested, Brussels opened anti-coercion consultation, company complied. Dutch press noted Europe's one chokepoint used by another.
+
+Spring layoffs/freeze for junior developers, analysts, helpdesk hardened; ministers called transformation, unions replacement. New retraining guarantee with wage insurance and six-month vouchers announced, co-funded by levy on automating employers; payouts not until next year.
+
+Frontier-model-based tailored therapies reached ordinary clinics with remissions, but models ran on American infrastructure under tiered access; Europeans could benchmark not train, mixing gratitude with humiliation. Brussels joined joint allied telemetry pool sharing indicators; protection improved where connected. Unconfirmed reports of blockades/sabotage at data-centre and grid sites grew.

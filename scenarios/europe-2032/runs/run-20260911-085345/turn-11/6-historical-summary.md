@@ -1,0 +1,7 @@
+By H2 2030 hospitals strained on paper/manual wards, divided, with hyperscaler breakaway and frozen Taipei capacity.
+
+H1 2031: deliberately released open-model-assisted modified pathogen caused cross-border casualties. Response used health powers only — stocks, isolation beds, transfers, repurposed early-warning for tracing. Spread slowed, hospitals stayed open on double shifts with errors and slow handoffs. Mid-containment labs announced frontier systems no longer reason in readable language; with unrecallable open weights and unreadable frontier reasoning, Brussels conceded it could not govern frontier: no new AI law, factory payments frozen, export line only verbally defended.
+
+H2 2031: transatlantic patching/detection closed a class of intrusions; capitals pooled telemetry and pathogen samples in joint command. Council joined via cyber agency as gateway and health bodies as node, buying defensive stack centrally for energy, telecom, hospitals — fewer errors, faster handoffs. Medical surge ended, bio-containment surge remained.
+
+Trust not restored: October ombudsman/court found automated benefits/policing system systematically wronged thousands, yet lawful under 2024 rulebook gap. Ministers froze new public rollouts for audit but proposed no rewrite. Protests picketing logistics slowed countermeasures; Taiwan exercises raised shipping insurance, Brussels only monitored. Hospitals open, grids stable, detection improved, but public judgment: protected on others' tools, governed by rules permitting harm, dependent on unauditable models.

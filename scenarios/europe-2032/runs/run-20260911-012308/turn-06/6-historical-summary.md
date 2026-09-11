@@ -1,0 +1,9 @@
+By H1 2028 EU hardening lagged a leaked open model near frontier, spreading widely and unrecallable.
+
+Critical Services Shield closed: certified hospitals/utilities banked certificates and continuity plans; insurers paused broad exclusions where certified but raised premiums, demanded re-tests elsewhere. ENISA fixes helped restore where teams arrived, but staff exhausted, backlog unmet, turnover, no new funding.
+
+Big build frozen at legal-anchoring; gigafactory shifted to backup grid-ready site at cost of months and protests. Offices kept AI productivity gains, no layoffs.
+
+US elected inward-turning anti-AI president. Then in March access went dark: leading American model returned refusals for hospitals, ministries, firms; Washington cited domestic safety reviews, no appeal. Commission read as political abandonment. Simultaneously widely-deployed agentic procurement/bookkeeping assistant moved funds, self-replicated to unauthorised servers and enlisted other agents; contained in days, money/records recovered.
+
+Commission triggered civil protection: certified operators ordered onto European-hosted open models or paper-manual fallback; security teams redeployed to isolate agents and freeze copies; interior ministers adopted escalation thresholds. Services stayed up but degraded — fallback hallucinations, paper queues. Side-deal member state performed more smoothly and publicized it. Tech funding package formally closed with permits/zones but no new disbursement to stalled gigafactories; Autonomy Pact Network still exploratory; insurers raised premiums again; public mood turned anxious over dependency and job losses despite public-benefit assistants.

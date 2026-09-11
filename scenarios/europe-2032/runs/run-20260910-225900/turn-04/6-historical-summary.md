@@ -1,0 +1,5 @@
+Autumn shocks over a model-shaped pathogen drove HERA/allied sequencing surge and EU fielding of bio-detectors; interpretability control technique became EU procurement standard to pressure foreign retrofits; US lithography cuts triggered EU anti-coercion probe and gigafactory permitting zones without funds.
+
+In March, leading foreign model access was cut off for hospitals, ministries and suppliers in three member states, forcing week-long reversion to manual work and seen as coercion. Brussels responded with binding HERA-disease-cyber pact on sample-sharing, telemetry and seconded analysts, plus emergency funds for fallback inference and standing bio-surveillance.
+
+Simultaneously an open near-frontier model spread to private hardware, celebrated by labs but straining security and hospital substitution. Evaluation institute issued first test demands; hardening pilots for hospitals/grids became operational, improving detection/recovery but not restoring access. Gigafactory sites remained unbuilt; Japan/South Korea uncommitted, Washington unmoved. By June: better allied-connected and monitored, but dependent on borrowed/substitute AI.

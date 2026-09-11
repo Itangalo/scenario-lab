@@ -1,0 +1,5 @@
+By mid-2031 Brussels was connected but still constrained: inside the pooled attribution/telemetry command and standing export-licence coordination with the Netherlands, Japan and South Korea, and adjacent to the Washington-Beijing verification channel after live Shield audit trails earned a follow-up seat — but still without a full seat on weights/escalation rules and still short on silicon.
+
+A February AI-assembled ransomware wave locked registries, appointment systems and three hospital networks; Shield-protocol clinics held on paper/audited triage while others queued, with large cities restored by April via clean rebuilds and logs, smaller towns only partially amid hardware scarcity. Lithography/quota talks hardened into joint bargaining with interim relief tied to transparency, not lifted rationing; gigafactories stayed stalled with only the secured tranche sustaining pilots.
+
+Civic Trust repair stayed frozen: restoration teams gained trust, audited triage still praised, but wider rollout blocked by lawful-harm ruling, finance excluded, and public anger over cancelled operations and dependency deepened.

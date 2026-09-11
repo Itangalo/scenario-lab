@@ -1,0 +1,5 @@
+US placed frontier labs under state control, weights as defence articles; European institutional access cut without warning — Lyon/Gdansk terminals grey, ministry assistants gone, contracts unenforceable. EU conformity/market levers ineffective against security apparatus.
+
+Commission formalised degraded regime: slower EU-hosted models, manual double-checks, therapy queues; errors higher, diagnostics slower, but services held. Council sought gov-to-gov minimum health/admin quotas, notice, hotline, offering cooperation without coercion. Washington restored almost nothing — small humanitarian quota discussed, liaison desk named, no resumption at scale; US releases slowed but capability gap widened.
+
+Cut-off merged with welfare-queue scandal in restrictionist narrative; site protests grew, dividend-city guard placements mocked. Continuity redress helped some but mood fell. By December goal reduced to keeping essentials degraded rather than stopped.

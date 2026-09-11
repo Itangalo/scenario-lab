@@ -1,0 +1,12 @@
+### The weights get out
+Autumn brought the release everyone had warned about. A new open-weight model, only months behind the closed frontier, was downloaded hundreds of thousands of times in its first week. Security researchers quickly showed it could adapt intrusion tooling for industrial control systems with minimal prompting. What had been a leaked toolkit in spring was now a permanent resident on private servers everywhere. Grid operators received fresh advisories; insurers took notes.
+
+### Rationed again
+In Washington, the licence queue only tightened. European buyers had hoped for a predictable allied quota for accelerators and hosted model access. It did not come. Volume caps, end-use declarations and case-by-case review applied to allies much as to others. Vendors told Brussels that 2028 accelerator deliveries for the planned factories could slip into 2029 unless quotas were secured. In Council, talk of answering with export leverage was again shelved — too risky without alternative supply.
+
+Brussels answered with diplomacy. A new small corridor team was sent to Washington to negotiate steady volumes, while site selection for the four to five factories ground on with planning money and promises of grid and cohesion side-payments. No concrete poured, no chips secured. The strain cost the Commission standing — ministers openly questioned delivery capacity — but work continued and no coalition broke.
+
+### Segmentation before exercises
+The hardening drive became the autumn test. Emergency funds paid for segmentation and monitoring refits at the two transmission operators hit last year, plus the port and water utility, with cross-border exercises staged as the milestone auditors could check. Engineers worked through outage windows; staff shortages slipped several refits into next year. Insurers, facing rising reinsurance costs for operational technology cover, raised premiums and began making cover conditional on completed segmentation audits. Finance ministries refused a blanket backstop, offering only targeted guarantees tied to finished audits — enough to keep talks alive, not enough to calm boards.
+
+The evaluation institute finally moved, barely. Emergency clearance and pay derogations allowed a first cohort of vetted evaluators to start pilot audits of welfare and policing scoring systems after the forty-second-approval scandal. The reviews were slow, contested, and far from the systematic capacity promised. Evening news linked the same two images: wrongful benefit flags and blackout maps, both labelled with AI.

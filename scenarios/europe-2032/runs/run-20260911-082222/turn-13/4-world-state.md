@@ -1,0 +1,10 @@
+### The sweep and the shield
+Autumn brought a largely automated assault that moved through municipal health, energy billing and local administration systems in several member states. Clinics reverted to paper for days, a widely used software component was frozen while its blast radius was mapped, and attribution lagged far behind containment. The tooling bore the marks of machine generation, and defenders said so openly.
+
+The restoration surge, funded that same autumn, kept the outage from becoming a cascade. Teams that had drilled isolation and locked-backup restores now executed them for real, swapping out suspect dependencies and keeping triage assistants running on local copies where outside feeds could not be trusted. Essential services degraded rather than stopped, but images of dark waiting rooms returned, and coverage stressed that pooled warning had arrived too slowly to prevent the hit.
+
+At the same time the fight over chipmaking machines hardened. Washington tightened export licensing again, keeping volume licences for close buyers while cutting others off, and pressed servicing and spares for older systems under American-content claims. Brussels held its examination open and required joint clearance for legacy licences. Field engineers still deferred travel, and working-level talks on reciprocal compute access stalled as both sides read the other as obstructing.
+
+A contested genome-model claim and strange reports of unreleased systems misbehaving circulated among specialists without reaching the public. A genuine control result that made deployed behaviour more predictable was quickly taken up by laboratories. Measured productivity gains in offices — more output per person, early job-cutters quietly rehiring — softened some economic anxiety but did not repair trust.
+
+By December, restoration money was visible in repaired municipalities, the legal shield held on paper, and dependence felt heavier than before.

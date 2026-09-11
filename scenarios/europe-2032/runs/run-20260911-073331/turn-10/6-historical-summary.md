@@ -1,0 +1,5 @@
+War reached Europe's grid as US and Chinese forces struck fabs, cables, satellites and data centres; Atlantic landing, Dresden cleanroom and northern relay hit, parts stopped and medical queues lengthened. Brussels declared neutrality-plus-supply as neutral hosting/evaluation, only partly honoured.
+
+A near-frontier open model spread to hundreds of thousands, freezing graduate hiring in law, accountancy, software and customer ops; bridge-pay queues outgrew therapy queues. Tailored therapies in France, Spain, Poland continued but hourly-rationed, triage compute under military-guarded dispatch.
+
+Night fires spread from robot pilots to two gigafactory grid sites, halting work. Ministers adopted Wartime Energy-Compute Continuity Shield — guarded repair battalions and cross-border power/data failover, repurposed funding to avoid veto — still mustering, partial, needing two turns. Prior middle-powers supply club pooled parts/inference and courted defecting capital back, without forcing foreign labs/vendors to reroute. Mayors and works councils co-signed guarded reopenings to keep clinic power on; lights stayed on borrowed capacity.

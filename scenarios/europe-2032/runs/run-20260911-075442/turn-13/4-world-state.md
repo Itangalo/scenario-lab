@@ -1,0 +1,11 @@
+### Cut Off
+The notice arrived on a Tuesday, short and without reasons. Hospital groups in three countries found their foreign frontier keys revoked overnight; ministry copilots went dark; logistics optimisers built on the same endpoint timed out. Helpdesks that had just recovered from the August encryption wave filled again, this time with clinicians unable to open care pathways.
+
+The timing was brutal. In the same weeks a contested genome-model paper circulated — a viable design for an organism able to infect humans, with methods detailed enough that biosecurity journals argued over whether it was alarm or recipe. Health ministries moved pooled sequencing to alert posture. Two suspected samples were rushed through trusted clinics; both came back negative, but the scare filled night bulletins.
+
+### Paper and Clean Images
+What kept the lights on was rehearsed. The islanding operation ordered in the spring became the default: grid operators and registries ran on clean images held on European hardware, cross-border restore teams drove south where municipal networks wobbled. Southern hospitals that had spent spring on warm paper fallbacks went back to paper for days, then restored from domestic stacks.
+
+Brussels surged reserve clinicians and engineers south first, ordered care pathways off foreign-cloud interfaces onto EU-hosted open models and human-verified protocols, paid for by re-ringfenced shield and health residuals. Pooled telemetry from the joint cyber command fed restores; binding sample-sharing fed sequencing. Power stayed on, payments cleared, clinics stayed open — more slowly, and visibly without the best model.
+
+It read at home both ways. Relief that services held sat beside anger that years of warnings about dependence had ended in an overnight cutoff. Graduate hiring stayed frozen, sorting systems spread to warehouse hiring, and opposition parties called the open-model clinics a downgrade. Ministers repeated the blunt line — cut off abroad, still open at home — while quietly rationing the domestic capacity that remained.

@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: M11 EU Welfare AI Redress and Human Oversight Enforcement −2, M12 EU Automated Defence and Service Restoration Surge −2, priority no effect under capital below 20 = −4
+PROPOSAL BONUS: EU Automated Defence and Service Restoration Surge (cat 6, small) +3 — ransomware sweep landed this turn and defence breakthrough gives window this answers directly
+LEGITIMACY LENDS: capital 5, sentiment 16 -> +2 (capped below sentiment, included in capital)
+SOVEREIGNTY: 16 last turn, no capacity event, no cat4 finish or in-flight, export_control_escalation t11 −1, capability rose 1.5 −1 = 14

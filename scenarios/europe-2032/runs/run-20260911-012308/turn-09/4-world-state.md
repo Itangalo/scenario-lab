@@ -1,0 +1,10 @@
+### Paper becomes policy, then frays
+Brussels finally pushed the long-drafted harm backstop over the line in late autumn. After months of stalemate, finance ministers accepted a time-limited state tail behind the liability pool and health ministers attached language protecting clinicians who reported errors made under emergency procedures. A handful of large insurers agreed to resume conditional cover for certified hospitals and utilities, at still-high premiums. Wards that had operated without cover for a year could again show a policy document, and municipal operators restarted postponed maintenance.
+
+The relief lasted weeks.
+
+A published genome-model result claiming a viable human-infective design, built with model help, split the biosecurity community but electrified health agencies. The Commission answered with a single new programme folding synthesis screening, hospital lab reporting upgrades and an extension of the backstop to bio-triage harm under one emergency track, named as the priority for the next two years. Synthesis firms protested compliance costs; the Commission promised to pay them, from a budget it barely had.
+
+Two other shocks undercut it. Graduate hiring data showed entry roles in law, accountancy, software support and back-office administration simply not returning, and street coverage blamed automation directly. At the same time, the member state with its separate hosting deal formalised a deeper bilateral arrangement on preferential terms, openly described at home as pragmatism. Brussels chose not to chase it, offering common terms to all and letting the outlier go.
+
+Implementation stuttered. Screening mandates moved faster than funding; hospital upgrades arrived as unfunded reporting duties in several regions, and nursing associations threatened coordinated refusal to countersign machine-suggested doses without the full shield in place. Queues lengthened again even as coverage resumed. By December the Union was insured on paper, screened on paper, but still degraded in practice — holding services upright while jobs vanished and its common line visibly thinned.

@@ -1,0 +1,5 @@
+By late 2030 earlier shocks converged. Autumn automated intrusion via trusted maintenance channels: certified hospitals/town halls fell back to paper/clean backups and stayed open; uncertified lost appointments/billing/files for days, two regions deferred non-urgent care. Cover held only for drilled operators at punishing deductibles with Brussels backstop; running ≠ insurable elsewhere.
+
+Leading foreign model access withdrawn again at short notice; clinics/ministries/firms failed, emergency-ordered onto older EU-hosted open models — services degraded, dubbed second blackout.
+
+Entry hiring in law, accountancy, software support, customer ops, junior admin did not return as office AI let juniors do senior volumes; productivity for insiders, no second wave for outsiders. Brussels stayed on incident command, aided even the two states with separate foreign cloud deals unconditionally; proposed wage-insurance/retraining bridge via existing social funds and hiring credit, endorsed without new money, months to pay. New automated defence (patching/swarm detection) gave defenders first good quarter, too late for winter.

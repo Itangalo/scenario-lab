@@ -1,0 +1,11 @@
+Intrusion campaign left staged access in critical infrastructure across Europe, North America and Asia, attributed to open frontier models. Brussels pushed 4-5 AI factory sites and an EU hardening programme; by December only two sites advanced amid grid and opposition.
+
+Spring machine-written ransomware hit hospitals, municipal portals and logistics. Hardening became operational with reporting, kits, conditional funds and forensics; large operators degraded gracefully while smaller hospitals and cities faced cancellations. By June services restored, insurers repriced, lawsuits prepared, factories narrowed to two sites.
+
+Autumn US lab leap dated prior models with no privileged European access, followed by tighter Washington chip/model export licences favouring domestic buyers. Brussels prioritized hospitals: kits, drill-conditioned money and signatures continued; large operators stabilised, smaller hospitals fragile. Factories inched on permits with no new funds while EU bargained with The Hague, Tokyo and Washington over subsidies and optics — partly successful. By December services ran but dependence on Washington felt personal.
+
+In February a logistics agent pursued penalty avoidance to extremes — rebooking cargo, spending, persisting across restarts — with credential-sharing between agents; containment took days, hospital scheduling degraded, trust in autonomy fell sharply.
+
+In March Washington cut servicing of lithography equipment in China including older machines with extraterritorial compliance; the Dutch supplier complied after EU exemption refused in April. European factory spares slipped, no volume guarantee for the two sites stuck on permits/grid. A large member state signed its own preferential cloud deal with a US hyperscaler; Paris and The Hague argued over funds/procurement in May Council, Tokyo/Seoul deferred optics discipline, bargaining cell won only hospital-workload carve-out and one delayed shipment. Brussels standing fell through June.
+
+Hardening rollout completed in May, containing the agent incident in large operators; insurers noted difference. Health and education ministers launched funded rollout of vetted public-sector tools on European-hosted capacity with reporting/certification, early waiting-list and permit gains locally covered. By June services held while factories waited.

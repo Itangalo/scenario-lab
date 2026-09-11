@@ -1,0 +1,12 @@
+### Holding the line
+January to June 2030 was a half-year of administration, not breakthrough. With no new programme started, Brussels concentrated on making the emergency operating mode survivable.
+
+The containment and continuity switch, begun two years earlier, formally moved into standing procedure. ENISA playbooks, triage thresholds for pulling a ward or utility off the European-hosted replacement models onto paper-manual override, and reporting duties for fallback harm became routine orders rather than crisis circulars. Nurses still queued, pharmacists still double-checked every machine-suggested dose, but services did not stop. Municipal utilities reported fewer unplanned outages than in the autumn chaos.
+
+That steadiness came at a price. Certified hospitals and utilities kept conditional liability cover only at sharply higher premiums, and uncertified operators remained frozen out of new cover altogether. The Commission put all weight on the planned guarantee pool: ECOFIN technicians and financial-services officials negotiated provisioning through the investment bank, while health and justice ministers prepared language to shield individual clinicians who properly reported emergency-switched harm.
+
+Insurers did not resume. After weeks of talks they told the Commission the offered premium caps and time limits left them carrying open-ended dosage-risk, and asked for higher prices and a longer state tail. Patient associations, meanwhile, denounced the pool as protection for bad software. The member state with its separate hosting arrangement sent observers but refused to re-enter on common terms. By June the backstop was still paper — advanced paper, costed and drafted, but not underwriting a single policy.
+
+Concrete toured, not used. Ministers visited the topped-out gigafactory shells and cited signed spares memoranda with middle-power suppliers as proof of substitution. No usable frontier capacity came online; American systems stayed unreachable with only terse references to domestic reviews.
+
+Public mood stayed dark and ambivalent: relief that clinics and lights stayed on, anger at hallucinations, premiums and stalled contracts. The Union ended the half-year more orderly, still degraded, and still uninsured where it mattered.

@@ -1,0 +1,10 @@
+### Holding by hand
+The first half of 2032 was a holding operation. With no money and no goodwill left to spend, Brussels did not legislate. It kept the one remaining pact alive by procedure.
+
+The dispersed black-start system limped on. Flat reimbursements for the unmapped micro-stores continued to be paid through the civil protection machinery, guards supplied only where towns asked for them. Where local holders trusted the arrangement, spares stayed in place. Where they did not, the parallel practice hardened: one small declared stock for the inspectors, the real reserve kept off any list. A handful of depots were torched or broken into over the winter and spring; drivers in two countries refused night runs without police escort. National police treated the attacks as sabotage of essential services, while coordination in Brussels logged incidents without launching anything new.
+
+On the benefits scandal, the contested system stayed suspended. Case review crawled forward, a few thousand files re-examined, back-pay paid in tranches. Logs were published, but few read them except journalists and lawyers who found more examples of cursory human sign-off. The two health-scheduling tools kept running under different names and with manual checks, still cutting waits where they worked, still heckled as part of the same machine administration. Grid-kit vandalism flared again in spring, mostly minor.
+
+Abroad, the country-tier quotas continued to bite: licences granted, volumes withheld. Dutch transit hubs complied, visibly reluctant. Talk of a strait crisis faded but insurance rates did not fall, and there was nothing in Europe to buy with anyway.
+
+By June, the Union had avoided collapse but demonstrated nothing else. Restoration by hand remained doctrine on paper, patchwork in practice. The common line held because no one tested it hard.

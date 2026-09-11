@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t5: M1 InvestAI Gigafactories −3, M2 Tech sovereignty package −3, M6 EU Assured Control Adoption −2, M7 EU Essential Continuity Substitution −2, priority −1 = −11
+PROPOSAL BONUS: EU Essential Continuity Substitution (cat 9, small) +3 — eu_frontier_access_denied landed this turn and this answers it directly
+LEGITIMACY LENDS: capital 24, sentiment 22 -> none, capital higher
+SOVEREIGNTY: 16 last turn, no capacity event finish, Gigafactories in flight +0, eu_frontier_access_denied t5 −2 (largest of two capacity events, embodied_ai_deployment t5 not added), capability rose 1.0 −0 = 14

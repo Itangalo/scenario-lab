@@ -1,0 +1,9 @@
+Autumn automated assault crippled public-service systems in several states — hospitals to paper, portals dark, compromised component with weeks-long hunt; attribution unresolved. Large grid operators survived via segmentation, smaller utilities/cities hit hard.
+
+Late-year breakthrough in automated patching and swarm detection; ENISA/CERT-EU tasked to push to grids, ports, water, public services via emergency funds, standards mandated despite capacity warnings. Rollout uneven: large operators fast, mid-size ports/municipalities struggled, transport/telecom protested budget raids. Gigafactory selection (Paris, Berlin, Madrid, Stockholm, Warsaw) stalled; evaluation stayed pilot. Year-end: contained but trust slipped, resistance rumours to power infrastructure.
+
+February: leading foreign model cut off for European users without warning/appeal, halting hospitals, ministries, firms dependent on it; health ministers warned of return to paper as autumn damage still repaired.
+
+Brussels launched continuity programme: pooled EU compute, vetted open models as drop-in substitutes, kits prioritized to hospitals/municipalities, emergency reprogramming, standards via health/telecom ministers. Large Paris/Berlin hospitals switched within weeks, slower but EU-controlled; smaller clinics/cities queued amid engineer shortages, renewed budget complaints.
+
+Gigafactories and tech package slipped further — Warsaw, Madrid, Stockholm talks paused; cyber-defence to grids/ports slowed. Grid evaluation institute opened, first hardened grid segments completed. Public mood: relief at alternative, anger at dependence; local opposition to power lines/substations for compute sites grew.

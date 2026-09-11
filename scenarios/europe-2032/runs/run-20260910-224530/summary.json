@@ -1,0 +1,136 @@
+{
+  "scenario": "Europe 2032 — Acceleration",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 73.0,
+    "openweight_capability": 62.5,
+    "ai_safety": 10.0,
+    "resilience": 37.5,
+    "eu_ai_sovereignty": 14.0,
+    "eu_political_capital": 3.0,
+    "public_sentiment": 25.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 32.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 34.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 50.5,
+        "ai_safety": 30.0,
+        "resilience": 36.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 30.0,
+        "public_sentiment": 41.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 61.0,
+        "openweight_capability": 54.3,
+        "ai_safety": 28.0,
+        "resilience": 35.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 13.0,
+        "public_sentiment": 34.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 67.5,
+        "openweight_capability": 57.7,
+        "ai_safety": 20.0,
+        "resilience": 39.0,
+        "eu_ai_sovereignty": 15.0,
+        "eu_political_capital": 9.0,
+        "public_sentiment": 28.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 73.0,
+        "openweight_capability": 62.5,
+        "ai_safety": 10.0,
+        "resilience": 37.5,
+        "eu_ai_sovereignty": 14.0,
+        "eu_political_capital": 3.0,
+        "public_sentiment": 25.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "ai_investment_collapse",
+    "bio_uplift_findings",
+    "capability_jump",
+    "cyber_test_shot",
+    "election_retrenchment",
+    "eval_anomaly_reports",
+    "export_control_escalation",
+    "labour_displacement",
+    "supply_chain_coercion"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 2,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 3,
+      "id": "labour_displacement"
+    },
+    {
+      "turn": 4,
+      "id": "capability_jump"
+    },
+    {
+      "turn": 4,
+      "id": "ai_investment_collapse"
+    },
+    {
+      "turn": 4,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 4,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 4,
+      "id": "supply_chain_coercion"
+    },
+    {
+      "turn": 5,
+      "id": "capability_jump"
+    },
+    {
+      "turn": 5,
+      "id": "election_retrenchment"
+    }
+  ],
+  "last_updated": "2026-09-10T22:48:47.343542",
+  "status": "completed",
+  "emerging_events": [],
+  "completed_at": "2026-09-10T22:48:53.456507"
+}

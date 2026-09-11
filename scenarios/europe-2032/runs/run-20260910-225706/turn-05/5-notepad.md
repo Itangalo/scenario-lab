@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t5: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Critical Services Cyber-Bio Shield −2, EU Chip-to-Compute Security Pact −2 = −10 + priority no effect/cost as capital below 20
+PROPOSAL BONUS: EU Chip-to-Compute Security Pact (cat 8, small) +3 — taiwan_blockade halted compute supply this turn and this answers it directly, tempered by small size and capital at 11
+LEGITIMACY LENDS: capital 7, sentiment 22 -> +2 capped by prior terms [included in capital total]
+SOVEREIGNTY: 16 last turn, no category 4 finish, no capacity event, in-flight builds stalled +0, capability rose 1.0 −0 = 16

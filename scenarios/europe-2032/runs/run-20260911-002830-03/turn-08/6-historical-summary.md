@@ -1,0 +1,7 @@
+Autumn's capability regime change persisted: unreadable autonomous science agents and relaunched training pipelines continued, plus a disputed genome-model biothreat claim straining sequencing/stockpiles.
+
+Brussels joined a states-led joint cyber command (live telemetry feeds) and biosurveillance pact (binding sample-sharing, standing investigation team), with EU-paid onboarding under European data controls — first near-term protection despite legal fights over data export and small-utility staffing gaps; another reinsurer exited.
+
+Closed files: two gigafactories under construction with grid priority, Trust Pact wage-bridges/manual drills normalized in large hospitals/grids, and US Structured Frontier Access/Joint Evaluation signed on paper (tiers, joint evaluation, incident reporting) with interim access still under US rules.
+
+Jobs/automation strain continued: cuts in clerical/customer/junior professional roles, mayoral pickets over foreign-built clearance machines. Municipal machines compact advanced only to EU-funded pilots/preparatory funding with wage insurance/retraining. Thin offsets: locally-controlled triage assistants cut waiting lists in two cities, EU materials find promised cheaper grid parts.

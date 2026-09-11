@@ -1,0 +1,7 @@
+By late 2029 two gigafactory shells under construction with grid connections signed, but no sovereign compute online and power permits delayed; timelines uncertain. Theorem-guided code synthesis advanced; US frontier slowed, second-tier labs gained, and an open model near frontier spread irreversibly with permanent offensive risk.
+
+AI cut entry hiring in coding, back-office, documentation and support, then firms quietly rehired amid measured productivity gains for juniors; unions protested, employment ministers secured employer co-funding for retraining vouchers for affected families but payments lagged.
+
+Ransomware via shared maintenance dependency hit municipal IT and hospitals, forcing paper fallback and weeks-long restoration; EU and national surge teams responded, with black-box test suites gating reconnection and catching reinfections despite mayoral anger. Attribution open, tooling machine-generated.
+
+Brussels' AI Office black-box cell entered procurement, making tests mandatory for public contracts and critical approvals. Health triage assistants cut waiting lists. Middle-power chip materials/packaging/evaluation contacts and assurance cell closed, cited in procurement rules; no new supply instrument despite Taiwan exercises raising insurance and quiet chip pre-stocking. Breakaway capital stayed at table on hyperscaler deal without full recommitment.

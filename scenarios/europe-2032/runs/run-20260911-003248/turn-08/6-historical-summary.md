@@ -1,0 +1,7 @@
+Winter shocks — lab pathogen and Taiwan chip freeze — triggered Brussels emergency powers: bio-surveillance, stockpiles, rationed compute, two gigafactories, grid priority, lithography controls.
+
+Small municipalities/utilities strained while large operators held; Brussels answered with fallback playbooks, staffing pacts, EIB backstop, Trust and Transition Pact, then municipal funding wave and gigafactory energization — relief concentrated near sites and prepared cities.
+
+Chinese humanoids filled logistics/ports on US control software updated from abroad; remote freeze exposed dependence. Brussels sourcing pact promised European-controlled stacks, integrator/actuator support, transition funds, and screening on dumped hardware/software, but stalled on procurement, subsidies, and trade decisions by December.
+
+January-June: Atlantic breakthrough in swarm detection and fast patching rolled out EU-wide via ENISA/DIGITAL; large hospitals/grids installed quickly, small municipalities lagged, port pilots protected but still foreign-controlled. Washington granted limited, lagging researcher access to joint evaluation infra. Grid blocked spring intrusion wave without blackouts, but logistics freezes and single-source update dependence continued; autonomy unconvincing.

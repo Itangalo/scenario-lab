@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: EU Swarm Defence Deployment and Essential Services Shield −2, EU Wartime Non-Belligerency and Infrastructure Survival Shield −2, priority −1 = −5
+PROPOSAL BONUS: EU Wartime Non-Belligerency and Infrastructure Survival Shield (cat 6, small) +5 — catastrophic great-power war fired this turn targeting fabs/cables/satellites/data centres in/near Europe and this answers it directly
+LEGITIMACY LENDS: capital 22, sentiment 18 -> none, capital higher
+SOVEREIGNTY: 15 last turn, no capacity event finished, no cat 4 in flight, catastrophic_great_power_conflict t12 −3, capability rose 2.0 −1 = 11

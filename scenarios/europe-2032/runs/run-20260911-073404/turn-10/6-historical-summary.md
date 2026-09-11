@@ -1,0 +1,5 @@
+US-China strikes hit fabs, cables, satellites and data centres without consulting Brussels; Atlantic cable cut, North Sea interconnect dark for days, European satellite service shuttered, spares queued behind Californian and Shenzhen military requisitions.
+
+Open frontier model spread to hundreds of thousands of machines; graduate hiring collapsed, therapy scheduling slipped as billed compute throttled though triage assistants ran.
+
+Union declared energy solidarity: guarded repair teams to gigafactory grid connections, power priority for hospitals/certified medical systems, cross-border failover barely held — rolling not general blackouts, construction stalled. Middle-powers club pivoted to neutrality diplomacy offering neutral sites for sparing and spares. Arson spread to grid works, German/Italian blockades cheered by mayors; bridge-pay take-up stalled. Separate-pact member stayed out citing flowing bilateral supply; finance ministers refused new money, forcing cannibalisation. Frontier labs under wartime orders ran unattended loops Brussels learned of days later.

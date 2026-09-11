@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t4: InvestAI Gigafactories −3, Tech sovereignty package −3, EU Critical Services Shield −3, EU Critical Supply Buffer for Taiwan Shock −2, EU Emergency Authentication Shield against Synthetic Fraud −2, priority −1 = −14
+PROPOSAL BONUS: EU Emergency Authentication Shield against Synthetic Fraud (cat 6, small) +3 — emergent synthetic fraud wave landed this turn and this answers it directly, severe and immediate
+LEGITIMACY LENDS: capital 16, sentiment 20 -> +2
+SOVEREIGNTY: 19 last turn, no capacity event finishes, in flight +0, eu_frontier_access_denied t4 −1, capability rose 1.5 −0 = 18

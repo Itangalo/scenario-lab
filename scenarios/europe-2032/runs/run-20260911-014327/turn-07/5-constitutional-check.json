@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `ai_safety` dropped from 16.0 to 6.0 (a decrease of 10.0 points), but `ai_safety` is not one of the two metrics (`ai_capability`, `openweight_capability`) permitted to accumulate without falling. All other metrics, including `ai_safety`, are stocks that can be spent or eroded—however, a 10-point drop must be justified by a plausible mechanism in the narrative. The narrative describes degraded monitoring and hiring shortfalls but does not explain how these lead to a *direct reduction* in the overall level of `ai_safety` as a stock. The drop implies a collapse in safety capacity or standards, but no such event (e.g., disbanding of safety bodies, defunding, sabotage) is described. Without a clear, narrated cause for this magnitude of loss, the change violates the requirement for realism in erosion mechanisms.\n- Economic Constraint violated: The narrative states \"no money and no mandate,\" \"paused forced migrations,\" and \"proposed nothing new,\" yet implies continued operation of monitoring systems and incident response. However, the 6-point drop in `public_sentiment` (from 16.0 to 10.0) lacks a clear driver tied to the narrative. While walkouts and dependence on foreign capacity are mentioned, the sentiment drop is large and abrupt. A 6-point decline should reflect a major public event or crisis, but no such event is described—only ongoing trends. This exceeds plausible passive erosion without a triggering incident, violating the principle that large changes require correspondingly large causes.\n- Narrative violates Modelling Choice 8: The phrase \"Rumours of data-centre blockades and parties campaigning on moratoriums circulated in local press, faint but persistent\" telegraphs potential future event gates (e.g., civil disruption, policy moratoriums) by implying their near-term plausibility without grounding them in current action. This borders on forecasting specific future events, which is prohibited. Tension is allowed, but naming specific political movements or actions in preparation crosses into telegraphing."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

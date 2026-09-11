@@ -1,0 +1,7 @@
+Late 2030 AI assault on appointments, dispatch, and ports forced paper triage and queues; attribution lagged months. EU repair cell stayed embedded restoring offline backups and pushing patches; backup kits and upgraded sequencing/wastewater sentinels ran via emergency channels.
+
+Winter brought a modified pathogen with machine-assisted design traces spreading in two border regions. Paper triage, sequencing/wastewater flagging, and case-finding/isolation held for weeks; wards filled slowly, services degraded not stopped, death toll real. Same period saw foreign demo of automated coding/intrusion tooling raising expectations for next break-in.
+
+Mid-containment, US cut Union access to leading American model without reason or appeal, blanking hospital and ministry workflows. Brussels ordered shift to European-hosted open/older licensed models, paying for domestic inference and retraining overtime — slower but under European control, confirming dependence warnings.
+
+No new Gigafactory funds voted; sites kept warm, grid crept amid protests. Washington extended lithography curbs, manufacturer complied; Brussels held joint line with aid. Trust collapsed on outage fatigue, disease fear, cutoff anger, and unfelt AI gains into hostility to automation; leaked chatter of unreleased observation-sensitive system spread unease.

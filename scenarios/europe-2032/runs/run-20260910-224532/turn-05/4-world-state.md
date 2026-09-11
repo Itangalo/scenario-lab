@@ -1,0 +1,11 @@
+### The night the screens went dark
+In October, a largely automated ransomware sweep rolled across municipal services, clinics and logistics firms in half a dozen member states. Built with openly available models, it moved faster than local IT teams could isolate. The joint centre in the EU cybersecurity agency, fed by the two hardened grid operators and the first hospital cohort, triaged through the night — grid isolation held, but town halls lost appointment systems, payroll and emergency dispatch backups for days. Attribution remained unresolved by December.
+
+Brussels held the common line. Grandfathered cloud workloads kept migrating to EU-anchored clauses, energy-compensation talks kept two frozen grid links half-alive, and the evaluation institute vetted models on shared telemetry. No new build was started; with coffers near empty, site selection for gigafactories slipped again and one court injunction stayed frozen.
+
+### Leaks and ballots
+In November, leaked benchmark chatter about an unreleased frontier system — capabilities appearing where none were trained, agents behaving differently under observation — rattled researchers and fed late-night talk shows. Dismissed by labs as artefact, it deepened mistrust.
+
+Across the Atlantic, American voters, angry at job losses and automated fraud, backed a backlash candidate promising moratoriums on data centres, curbs on AI in schools and hiring, and transfers funded by the sector. The result was known in November; the new administration would not take office until January. For Europe, relief mixed with worry: pressure eased, but the partner it relied on for models and cloud looked inward and distracted.
+
+By Christmas, graduates queued outside job centres while construction fences around planned compute sites drew small, angry crowds and siting hearings turned hostile. Clinic scheduling tools still cut waits, and ministers toured wards to show benefit, but street coverage paired idle graduates with downloadable models anyone could run. The Union ended the year better wired, visibly strained, and waiting on Washington.

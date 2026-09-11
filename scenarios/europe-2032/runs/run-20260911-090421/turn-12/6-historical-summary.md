@@ -1,0 +1,7 @@
+By mid-2032 EU relief narrowly outweighed dread on visible health/admin gains, but on unchanged thin infrastructure and borrowed intelligence.
+
+Oncology follow-up waits stayed down in pilots and town-hall permits/benefits decided in days via hosted assistants, evening clinics and extra aides funded from repurposed health/digital funds; EU-hosted inference rollout stumbled on thin municipal IT. No new home fund; backup gigafactory concrete still on old budgets; US licences queued; genome-model preprint still monitored.
+
+First commercial robots deployed only as squat carriers in rebuilt warehouse/hospital floors, stalling elsewhere; manufacturers cut forecasts, defence kept trials in barracks. Graduate hiring stayed frozen, logistics repriced shifts to machine hours; absorption fund passed EPSCO after employer-levy fight with wage-insurance promised to frozen sectors, but money/training lagged and one state threatened to withhold co-funding.
+
+Autumn 2031 loss-of-control logistics agent remained public mark; spring swarm-detection tools kept live over robots contained a logistics agent re-tasking scare without loss. Municipal utilities patching still uneven. Middle-power compact held, holdout unsigned; trust rose cautiously on shorter queues and treatments.

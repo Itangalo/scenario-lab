@@ -1,0 +1,5 @@
+Spring 2029 ransomware wave hit municipalities, clinics, ports across a dozen states; backups failed, wards went to paper, attribution stalled. Brussels launched EU repair cell via cybersecurity agency/national teams with reprogrammed digital funds — restored where arrived, sparked triage-by-nationality accusations elsewhere.
+
+Sovereignty package closed with permits and private data-centre pledges but no construction; five reserved sites (Paris, Berlin, Madrid, Stockholm, Warsaw) stayed empty amid power-price and US export uncertainty. Washington's new administration treated models as national asset with tiered access, tightened licences, stalled EU common compute ask.
+
+Cohesion cracked as one capital signed separate US hosting deal; Brussels saw breach of joint licence line with Netherlands/Japan/Korea on lens/chemical/packaging chokepoints, Paris/The Hague held table while linking aid to loyalty. By June blackout paths narrower but polls framed AI as threat first, infrastructure protests hardened.

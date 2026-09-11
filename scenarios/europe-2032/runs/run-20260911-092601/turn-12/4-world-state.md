@@ -1,0 +1,10 @@
+### Blind models, borrowed cover
+The spring began with an announcement from the leading labs dressed as progress: their best systems no longer reasoned in words at all. What worked best was not sentences a reviewer could follow. Overnight every dashboard that had relied on reading the machine's chain of thought went dark in Brussels, including the filters just written into the showcase contracts. Engineers were left with black-box tests and slow, expensive probes of inner activations that few understood.
+
+The same weeks brought an invitation. Governments hit by the same wave of grid intrusions and doctored outage calls had built a joint cyber command with live telemetry sharing, plus a linked bio sample-sharing pact, and the Union was asked to plug in. With no money and no frontier machine of its own, the Council said yes. ENISA became the gateway, crisis liaison networks the operational node, health agencies the bio leg. Seconded analysts, not funds, were the contribution.
+
+Accession talks dragged. Partners wanted binding incident data out before pooled intelligence came in, including standing access for investigators. A handful of capitals balked at sending hospital and grid feeds abroad in real time. What was agreed by June was partial: showcase ministries and guarded spares depots first, the rest to follow.
+
+On the ground the compromise barely registered. The three-ministry service — triage, permits, tutoring turned retraining intake — finished its public showcase phase with queues still long but waits measurably shorter, and local press noted it. Black-start drills held in two more sabotaged towns. Elsewhere paper ledgers stayed in drawers, unlogged spares changed hands at triple price, and operators quietly stopped calling the metered fallback. Youth unemployment dominated coverage while ministers spoke of productivity.
+
+Brussels bought relevance again, not capacity. Protection it could not build alone was now on loan, on terms it did not set, while the systems it needed to oversee had become unreadable.

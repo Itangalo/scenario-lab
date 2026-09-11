@@ -1,0 +1,12 @@
+### A seat, at last, and a result to bring to it
+Autumn brought two invitations Brussels had been waiting for. After a summer of grid probes and fake synthesis orders that ENISA and health emergency teams absorbed without blackouts, partners hit by the same campaigns proposed pooling telemetry, samples and attribution in real time, with the Union invited in. At the same time, a group of middle powers holding lithography niches, specialty chemicals and landing rights for cables began aligning export licences and joint bargaining over compute.
+
+The Commission folded both into a single small coordination pact run out of foreign affairs and trade, with no new fund. Staff were redeployed, exercises attached to the existing mutual-aid protocol, and a mandate to negotiate common procurement terms was pushed through despite thin fiscal room.
+
+It almost stalled on the old wound. The member state with its separate hyperscaler deal refused to suspend it, and the Commission, with no money to litigate, again let the file sit for coercion review while keeping the country inside emergency aid. Several capitals called it appeasement. The deal survived because the alternative — an open split — would have killed the wider coalition talks.
+
+Then Delft delivered timing. A joint team at a Dutch institute and a Finnish lab, using AI-driven search over photonic control, demonstrated a room-temperature-stable qubit interface that cut error rates by an order of magnitude in a publishable device. Specialists called it a genuine threshold: not a computer, but the part that had made scaling look infeasible. Industry press talked of a European lead in a narrow but decisive layer.
+
+The finding did not by itself buy capacity, but it changed the room. Observer talks on the Washington-Beijing bio understanding moved from study to a workplan, and the new supply-chain circle agreed to bargain jointly on next year's accelerator allocations. Clinics stayed open through a November ransomware wave, degrading where they would once have closed.
+
+Public mood lifted barely. Headlines still read that safety was borrowed and jobs were elsewhere, but for the first time in a year, Brussels could point to something it held.

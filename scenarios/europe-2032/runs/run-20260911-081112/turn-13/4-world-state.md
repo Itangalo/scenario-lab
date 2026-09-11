@@ -1,0 +1,10 @@
+### Offices recover, wards stall
+The second half of 2032 brought the first broadly shared good news in two years, and it came from ordinary offices. Law firms, accountancies, municipal desks and newsrooms reported measured gains from assistants doing drafting and triage, largest among juniors. Crucially, employment did not fall in step. Firms that had cut early quietly hired again for judgment-heavy roles. Evening coverage struggled to turn it into outrage or celebration.
+
+Brussels tried to ride it. A new programme to put EU-hosted assistants into health administration, permitting and citizen services with data residency and logged human sign-off was launched with dashboards promising shorter waits. Take-up was patchy. Hospital administrators welcomed licences; mayors asked who paid for integration; unions demanded co-management before any rollout.
+
+The containment push fared worse. Despite being named the priority, sequencing contracts, protective stockpiles and drill certification beyond the French-Dutch hubs moved slowly. Recovery money made conditional on telemetry connection hardened the standoff: federations in two states kept legacy appointment software disconnected over liability, leaving fallback coverage a pilot outside telemetry-sharing districts. Single-source press notes spoke of quiet refusals spreading, but nothing confirmed.
+
+Meanwhile shipping insurers repriced routes after extended exercises and an expulsion around Taiwan. No supply line stopped, but procurement officers in Brussels began recalculating lead times.
+
+Continuity income top-ups paid out for the last time, clearing backlogs for clerks and admins even as finance ministries secured their sunset. That, plus office productivity stories, lifted mood slightly from rock bottom — still deeply distrustful, but less uniformly hostile.

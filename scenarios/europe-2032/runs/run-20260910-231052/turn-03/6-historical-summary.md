@@ -1,0 +1,7 @@
+Autumn saw a capable open-weight model released, downloaded hundreds of thousands of times in a week and shown to adapt industrial-control intrusion tooling with minimal prompting — entrenching last spring's leaked toolkit on private servers; fresh grid advisories, insurer attention.
+
+Washington kept licence tightening with no allied quota — volume caps, declarations, case-by-case review; vendors warned 2028 factory accelerators could slip to 2029. Council again shelved export-leverage retaliation. Brussels sent a small corridor team to negotiate volumes; EU AI-factory site selection for 4-5 sites continued on planning money and grid/cohesion promises, no build or chips secured, Commission credibility strained but coalition intact.
+
+Hardening funds paid for segmentation/monitoring refits at the two hit transmission operators plus port/water utility, with cross-border exercises as audit milestone; staff shortages slipped refits to next year. Insurers raised OT premiums and made cover conditional on completed audits; finance ministries refused blanket backstop, only targeted guarantees tied to finished audits.
+
+Evaluation institute, after clearance/pay derogations, started a first vetted cohort piloting audits of welfare/policing scoring after the ~40-second approval scandal — slow, contested, far from systematic capacity. Public linked AI to benefit flags and blackout risk.

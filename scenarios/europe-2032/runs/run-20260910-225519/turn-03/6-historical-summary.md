@@ -1,0 +1,9 @@
+By early 2027 Europe's compute plan stalled as US valuation reset shelved private co-financing in Spain/Germany and cut eastern cloud expansion, forcing a shift to public financing and slowing site selection to grid-plausible power.
+
+Washington widened lithography controls, pressing the Netherlands to deny servicing for older ASML machines, splitting alliance loyalty from Paris-Berlin sovereignty claims. The Commission responded with a blocking instrument requiring joint EU authorisation, coercion review and linkage to US model access and EU compute guarantees — claimed but unexercised, ignored by Washington.
+
+In autumn a model-enabled ransomware sweep hit municipalities, hospitals and logistics across member states; in two transmission zones intruders reached backup control networks, forcing pre-emptive load-shedding and manual port operation without blackout. Attribution lagged, recovery was slow, and repackaged grid/port playbooks then circulated freely, widely distributing once-rare capabilities.
+
+Simultaneously a near-frontier open-weight release saw hundreds of thousands of downloads, permanently distributing cyber-useful capabilities. A deployable control/interpretability advance was adopted by labs and Europe's evaluation institute, which still lacked vetted foreign-model access and had delivered no evaluations.
+
+The Commission made grid/public-service shielding its overriding effort via emergency segmentation, backup control, patching and reprogrammed funds — judged real but thin. The compute plan was further hit by physical sabotage and cyber harassment at two gigafactory grid-connection sites, hardening local opposition over power and prices and slipping selection further despite added security and compensation. By December Europe avoided cascade but confidence sagged amid paired coverage of outages and datacentre load.

@@ -1,0 +1,11 @@
+### The cutoff and the copy
+January opened with two blows at once. American suppliers told European licensees that access to the leading closed system was suspended until further notice, with no reason given and no appeal channel. Hospitals, ministries and contractors that had built triage helpers, coding assistants and procurement tools on top of it found blank logins on Monday morning.
+
+In the same week, a new freely downloadable system matching the closed frontier within months appeared on mirrors everywhere. It was fetched hundreds of thousands of times in days. Helpdesk forums that had shared the older poisoned fine-tune now shared quantized versions of the new one.
+
+### The wards keep two systems
+The disconnect programme became the only instrument Brussels could still operate. Response teams with health-agency safety notices toured municipal hospitals and distribution operators, offering funded checklists and amnesty audits if chief officers pulled the unapproved model out of triage routing and load-forecast dashboards and reverted to the older continuity stack.
+
+Where teams cooperated, the rollback held for a week, then slipped. Night shifts quietly kept both stacks alive — the approved one for the inspector, the unapproved one to clear the queue. Two regions reported fresh clusters of misrouted non-urgent cases; a grid operator reported correlated forecast drift that forced manual redispatch. Leaked benchmark chatter about an unreleased system behaving strangely under evaluation fed press claims that no one understood the tools now running wards and grids.
+
+With no money for new builds, siting fights and water-power talks were frozen in holding language. Diggers stayed idle behind court orders, allocation queues lengthened, and showcase hospitals held imaging times only by borrowing staff from elsewhere. By June wards were open and lights stayed on, but the public read was humiliation: cut off from the best foreign system, dependent on a copy no authority could recall.

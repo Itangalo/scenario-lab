@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: EU Bio-Incident Hold and Opaque-Agent Isolation Operation −2, EU Pact Accession and Certified Containment Deployment −2 = −4 (priority without effect or cost as capital 16 below 20, charge is measures only)
+PROPOSAL BONUS: EU Pact Accession and Certified Containment Deployment (cat 6, small) +2 — joint_threat_response pact offer this turn plus bio_uplift_findings precursor, this answers both directly but small size limits gain
+LEGITIMACY LENDS: capital 15, sentiment 15 -> none (capital not below sentiment)
+SOVEREIGNTY: 11 last turn, no cat4 finish, no cat4 in flight +0, supply_chain_coercion t13 −2, capability rose 2.0 −1 = 8

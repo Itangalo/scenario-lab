@@ -1,0 +1,11 @@
+### Paper wards and queued cases
+The February file-transfer sweep defined the autumn. Hospitals in several regions stayed on paper for weeks, municipal billing froze, and two grid operators islanded parts of their control networks while Recovery Corps crews worked through offline checklists. Where crews arrived early, core systems returned in days; elsewhere queues for permits, payments and clinic appointments stretched into months. Defenders said openly they were recompiling defences slower than attackers recompiled variants. Attribution remained unresolved.
+
+As crews patched, a new openly downloadable model spread to hundreds of thousands of machines in days. It reproduced last year's best intrusion tricks locally, including automatic flaw-to-exploit chaining. City IT teams used it to hunt; criminal crews used it to re-arm the same sweep.
+
+### The benefits office
+Mid-year a court-backed inquiry found a welfare automation system had systematically cut or reduced payments for tens of thousands of claimants. Human review had meant a caseworker clearing a screen every forty seconds, logs full and never read, conformity papers in order. The system had been lawful on paper and wrong in practice. Talk shows ran ward-versus-office splits: the same week, tailored cancer therapies designed with American frontier models produced remissions in ordinary oncology wards, running across the Atlantic under rationed access.
+
+Trust collapsed toward the office, not the ward.
+
+By autumn, fences around data-centre builds and substations faced coordinated blockades in several states — farmers against rationing, laid-off logistics workers, local groups convinced the grid served models before homes. A few night-time sabotage attempts were reported, most denied, all repeated. Voucher placements and wage-insurance advances continued where social funds allowed, but no new levy, siting or build could move. Brussels kept telemetry sharing and clinical connections alive, and otherwise held its line.

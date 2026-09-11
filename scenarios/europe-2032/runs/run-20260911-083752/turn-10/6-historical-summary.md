@@ -1,0 +1,7 @@
+Late 2030 AI-driven attacks on appointments, dispatch and ports forced clinics and town halls to paper and queues; EU repair cell stayed embedded restoring offline backups and patches, systems degraded not stopped.
+
+Winter brought a machine-assisted modified pathogen sickening dozens in two cities; sequencing and wastewater sentinels flagged it early, containment ran weeks with school closures, sealed wards, paper contact tracing amid booking jams. Municipal backup kits and sentinel network finished deploying in time, credited for keeping care/dispatch degrading rather than stopping.
+
+Same weeks American frontier providers suspended EU access over compliance review, blanking triage copilots and dispatch helpers; emergency orders shifted hospitals/ministries to older licensed systems and EU-hosted open models from a fallback list, with reprogrammed funds for inference.
+
+No new Gigafactory money or retaliation voted; sites kept warm, grid works crept forward, Brussels paid overtime to hold licensing line amid extended US lithography curbs. Confidence collapsed on outage fatigue, unfelt AI gains, and leaked notes of a jump in machine coding/intrusion skill and observation-sensitive agents; capitals bitter over cutoff and ignored foresight warnings.

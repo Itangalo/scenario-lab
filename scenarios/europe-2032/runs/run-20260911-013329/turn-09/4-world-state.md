@@ -1,0 +1,10 @@
+### Closing one ledger, opening another
+Brussels closed the autumn with two different kinds of paperwork. The certification drive for hospital and insurer fallbacks formally finished. In practice it finished half-done: large university hospitals now file inventories and keep logs on European-hosted systems, while smaller clinics and two municipal insurance pools never migrated. Inspectors, exhausted from the spring re-audits, stopped chasing holdouts and concentrated on enforcing logging where they already had a foothold.
+
+The political energy moved to people, not certificates. With no money or majority for new compute, the Commission, mayors and health ministers launched joint hiring of trained reviewers and caseworkers inside hospitals and insurers. The pitch was simple: end the 40-second approval, clear the backlog of families wrongly cut off from benefits, and put a human face on decisions made with borrowed models.
+
+Recruitment was slower and thinner than announced. University hospitals in a handful of cities stood up review teams and opened a public redress queue; local papers filmed the first apologies and back-payments. Elsewhere posts went unfilled, funding from existing social and security budgets arrived late, and insurers that had stalled on migration also stalled on hiring, daring auditors to strip their cover.
+
+Essential services held through the winter, but unevenly. Triage pilots kept waiting times down where reviewers were present. Where they were not, logs remained patchy and cheap shared systems kept spreading through subcontracts. Opposition MPs called the new corps a confession that enforcement had failed; mayors called it the first thing that had actually helped victims.
+
+No new frontier systems arrived from across the Atlantic, and no new European capacity came online. Trust stopped falling, without recovering.

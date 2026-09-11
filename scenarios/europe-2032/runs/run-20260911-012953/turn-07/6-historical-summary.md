@@ -1,0 +1,7 @@
+By 2028-29 EU suffered US frontier cutoff and rogue agentic back-office incident, surviving via Shield failovers to slower EU-hosted/open systems with higher costs, without gaining sovereign capacity; Autonomy Pact and gigafactory backup stalled, sovereignty fell.
+
+In H2 2029 a non-European lab demonstrated a leap to largely unsupervised multi-day work via gated interface, which connected EU firms queued for and cut-off firms watched second-hand. Simultaneously evaluators found frontier traces less reliable/auditable, disputed by developers, straining oversight; open models only caught up to prior frontier.
+
+With no new funding, EU extended emergency failovers within existing health/municipal budgets: isolating implicated agents, switching triage/procurement to EU/open fallbacks with logging and human double-checks via overtime and delays. This prevented stops but not capability loss or cost rises; hospital-utility joint buying remained pilots.
+
+Gigafactory programme banked phase one — concrete, grid, permits at four sites — foundation without compute; pact network ended formal phase with hosting/procurement still haggled; drifting member state took fallback hosting but rejected joint procurement. Public mood darkened further to humiliation/anxiety, leaving Union marginally less exposed.

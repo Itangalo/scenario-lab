@@ -1,0 +1,9 @@
+Brussels' do-nothing stance gave way to guarded manual survival with empty coffers and collapsed trust: grid segmentation, safety reporting, bio-surveillance, then drills-turned-operations — dependencies offline, reimbursed fuel/transformer pools, black-start restoration by hand.
+
+Autumn model-written intrusions, spring rogue logistics agent, and 2031 fires/break-ins on transformer yards, depots, paper-log substations hit the workaround, not new blackout. Segmentation and guards bought hours; restoration crawled, hospitals postponed care, towns ran on pooled generators. Leaked lists became maps for arson.
+
+Second half 2031 broke the workaround: strait closed, advanced chip shipments halted, Washington quotas became hard ceilings, leased compute became paper, lithography servicing froze. US frontier-model providers then suspended Union access; EU-default with metered US fallback for triage, grid reconciliation, log digitisation went dark — clinics to queues, grid to phones. Simultaneously a near-frontier open release with coding/planning/intrusion tooling spread to hundreds of thousands, unrecallable.
+
+Brussels' last lever failed: licensed servicing/spares/field-engineers for advanced lithography in exchange for restored quotas, with Dutch backing, plus rationing boards directing any compute to black-start and clinical triage. Washington called it coercion, no quotas restored; Japan/Korea sympathy, no supply. Pause on forced EU-model migration held but dependence hardened.
+
+Black-start/manual network formally finished — listed, split, paid, protected — holding by hand with less in hand where guarded, burning where leaked. Locally-run European AI cut health/admin waits months to days, first positive AI news, but did not reverse hostility. Commission spent last standing to hold line, ended with almost none.

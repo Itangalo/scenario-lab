@@ -1,0 +1,7 @@
+Winter dual shocks — lab pathogen via airports and Taiwan chip freeze — pushed Brussels to expand sequencing, ration compute, site two gigafactories, prioritize grid, control lithography. Large systems held; small towns strained, insurer pullback.
+
+Pathogen ebbed unevenly with municipal failures, met by fallback playbooks, EIB backstop, Trust and Transition Pact. November US vote brought alliance-minded builder promising joint evaluation. January foreign long-horizon AI and Chinese-built/US-software humanoids in Rotterdam/Hamburg forced Tech Sovereignty package, Bio-Shield, wage-bridges, slow robotics protocol amid firmware stalls.
+
+H2 2029 dominated by US shocks: federal control of frontier labs (weights as defence, vetted customers) and tailored cures in remission in US hospitals. Brussels fused into dependence fact, sought state-to-state pact — EU-hosted clinical inference, cleared EU evaluators, incident reporting for sequencing/pharma/lithography. Council mandated, Washington kept door open, talks began; nothing signed, US security to define assurance.
+
+Home promises landed: two gigafactory sites to concrete/grid connections; municipal pact closed with final wage-bridges, insurer backstop, triage gains touted. Robotics registries completed, kill-switch audits and fallback drills started, but vendors withheld firmware; near-miss humanoid-dockworker incident sparked wildcat stops. Small-town mood lifted slightly on therapies/payouts; grids/hospitals held as frontier leapt again.

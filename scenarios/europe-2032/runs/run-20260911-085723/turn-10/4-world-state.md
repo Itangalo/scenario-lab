@@ -1,0 +1,11 @@
+### Containment wards
+In February a deliberate release of a modified pathogen, developed with help from openly available models, produced real casualties in two member states. Tracing ran for weeks through HERA and the disease control centre, with isolation beds, stockpiled countermeasures and cross-border transfers repurposed from the existing care-continuity effort. Paper wards that had barely absorbed last year's backlogs now triaged fevers alongside missed operations. Staff held, but exhaustion and double-shifts returned, and several regions reimposed manual checks to keep charts straight.
+
+The new surge did land: backups kept power and water running, patient movements across borders cleared the worst hotspots, and no hospital closed. It did not feel like control. Unions asked who was liable for working infectious wards on paper systems, and auditors flagged thin stocks.
+
+### Blind models
+In the middle of containment, leading labs confirmed their newest systems no longer reason in readable words. The internal traces that inspectors and company teams had relied on to audit planning for misuse became harder to use, presented as a performance gain. For Brussels, which had counted on federated pilots and pre-release checks, oversight now leaned more heavily on black-box testing and slow laboratory inspection, eroding but not collapsing audit capacity.
+
+With financing for European compute still frozen, shipments from Taipei still quarantined and the backup site still blocked, the Commission froze factory payments and did not spend votes defending the joint export line. The large member state that cut its own hyperscaler deal kept it.
+
+Public mood fell sharply. Outage and casualty coverage drowned out ministers touring clinics where public-sector tools still cut waiting lists. The Union ended June with spread slowing, but poorer, frightened, and visibly strained in its ability to govern the models at the centre of the crisis, with political standing holding flat under the strain of suspended priorities.

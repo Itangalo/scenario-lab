@@ -1,0 +1,7 @@
+Late 2030 AI-driven disruption forced clinics/ports to paper; attribution lagged.
+
+Winter brought dual shocks: modified-agent respiratory clusters contained via closures/triage/wastewater testing, and suspension of US model access forcing fallback to European-hosted open models and paper; machine-written exploits spread. EU cyber repair cell and municipal continuity rollout prevented collapse via offline kits, paper procedures, sentinels; Brussels used emergency channels without new vote, money, or retaliation. Trust in information/AI collapsed.
+
+Through autumn 2031 Union ran on paper: triage, rotas, overtime, repair crews on offline kits and cleared older European models; containment held despite October flare-ups; hospitals open, ports slow. Staff exhaustion, zero margin. Brussels drifted to strait manoeuvres, insurance rises; only quiet consultations with Seoul/Tokyo. Winter agent tutorials traced to mirrored open model, no takedown over jurisdiction.
+
+Through spring 2032 Fallback Corps held the line: sentinels lit, rotas paid, repair crews toured hospitals/ports, March uptick in two cities absorbed without closures; completed in June into standing civil-protection funding — continuity preserved, margin not restored, staff quitting. Imported AI-designed tailored cures reached clinics, lifting mood but underscoring dependence; unreleased-system anomalies logged without inquiry. US tiered chip rationing thinned European quotas, lengthened lead times, raised prices; strait shipping insurance rose; Commission watched with Seoul/Tokyo, no action.

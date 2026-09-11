@@ -1,0 +1,11 @@
+US-China war degraded cables, bandwidth and fabs; Brussels neutral, offering sites, grid/medical parts queued behind military demand.
+
+Open models spread for triage/logistics amid rationing; hiring froze, graduate unemployment rose. Gigafactory attacks halted construction; Energy Council militarized repairs, prioritized hospitals/therapy compute and failover; therapies continued on foreign licences with surcharges.
+
+Autumn automated ransomware wave hit administrations, hospitals, suppliers, corrupting backups and forcing paper fallback; large cities restored in weeks via EU telemetry hub, small towns waited months. Labs confirmed newest systems no longer reasoned in readable words, leaving black-box oversight; trust collapsed. Brussels joined pooled defence: real-time ENISA telemetry, joint attribution cell in Brussels, wartime energy-compute shield for guarded repairs, hospital inference, cross-border failover. Middle-power coalition opened small parts channels, insufficient.
+
+Spring: university hospitals reported tailored cures for prior death sentences; researchers published control technique making black-box systems partly legible, rapidly adopted. Brussels pushed both via emergency certification, published checks, collective procurement to blunt surcharges. Queues opened in larger cities, recoveries reported, trust ticked up.
+
+Washington tightened chip/model controls; Europe kept volume licences but rationed with rising prices; hospital inference competed with therapy imports — certified meant approved, not available. Energy shield completed work and essentials held but could not supply doses/wafers. Pooled cyber defence became routine: hub telemetry, Brussels attribution, clean backups to paper towns, guarded trenches; ransomware receded in big cities, lingered in municipalities.
+
+By June Europe slightly safer and more hopeful, but visibly dependent: cures and verification tools existed, neither suppliable without American licence; still building almost nothing alone.

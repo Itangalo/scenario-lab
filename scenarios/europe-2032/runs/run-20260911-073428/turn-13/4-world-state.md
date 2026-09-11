@@ -1,0 +1,8 @@
+### Queues and quiet desks
+Autumn brought no new outage, and that was the accession's dividend. The pooled telemetry and the binding sample-sharing held through a long tail of ransomware clean-up: municipal IT in Ghent, Gdansk and beyond rebuilt from known-good images, hospitals kept wards open on degraded systems, grid and telecom failover stayed routine. Brussels claimed a win, quietly.
+
+Everything else got harder. Graduate hiring never came back. Law firms, accountants, software houses and customer-operations centres simply stopped replacing entry-level posts, and the absence was visible in every university town. Paid bridge placements tied to continuity crews started, but slowly — a few hundred posts against tens of thousands missing, administered through stretched employment funds and works councils wary of undercutting dock skeleton crews.
+
+Therapies saved lives and broke rules. Doses from Switzerland and northern Italy kept producing remissions, and clinics in Lyon, Krakow and Porto moved to open residency rationing to cope. Patient cars crossed borders; local papers traded stories of paid slots changing hands. The new EU registry with published waitlists and cross-border slots was announced with fanfare, but inspectors arrived months after the lists, and DG SANTE could not police what mayors no longer controlled.
+
+Gratitude and resentment shared the waiting room. Patients thanked nurses while young graduates staffed reception desks on short stipends with no path onward. No new compute plots were broken; volumes on allied licences stayed thin, shipping insurance stayed high. Services degraded rather than stopped — and so did patience.

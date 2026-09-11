@@ -1,0 +1,5 @@
+Spring 2030 brought small clinical wins: triage assistants on cleared national stacks cut backlogs in two regions, credited to European evaluation.
+
+Brussels proposed soft joint buying pool for vetted public-sector models (repurposed funds, work to five empty factory cities, open to breakaway capital, coercion pause noted) — rejected. Dissenter signed second tranche of bilateral cheap-compute deal in March, undercutting joint licensing line with Netherlands/Japan/Korea on Washington tiered access.
+
+Open-weights release months behind frontier mirrored widely; helped offline hospital use but spread ransomware tooling logic, patching split. Middle-power compact on export licences/compute bargaining/testing signed in May — paper options, no domestic compute. Public mood still bleak over power, postponed care, revocable foreign access; early data-centre/grid opposition reports.

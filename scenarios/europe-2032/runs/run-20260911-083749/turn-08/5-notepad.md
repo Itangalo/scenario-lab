@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t8: EU Municipal Continuity and Bio-Sentinel Surge −2, priority −0 (capital below 20, no effect no cost) = −2
+PROPOSAL BONUS: EU Municipal Continuity and Bio-Sentinel Surge (cat 6, small) +2 — cyber_major_incident landed this turn and bio_uplift_findings opened precursor window, this answers both directly
+LEGITIMACY LENDS: capital 2, sentiment 6 -> +1 (capped by sentiment, applied after other terms)
+SOVEREIGNTY: 21 last turn, no cat4 finish, no in-flight bonus, supply_chain_coercion t8 −2 (largest capacity event, member_state_defection also qualifies), capability rose 1.0 −0 = 19

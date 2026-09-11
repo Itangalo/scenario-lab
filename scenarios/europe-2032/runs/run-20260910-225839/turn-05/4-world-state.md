@@ -1,0 +1,13 @@
+### The sweep
+Autumn brought the attack defenders had warned about. A largely automated ransomware wave moved across municipal systems, hospitals and a shared administrative software supplier in several member states at once. Services degraded rather than collapsed where segmentation held — triage wards stayed open, registries queued — but where relays and back-office estates were still exposed, recovery took weeks. Attribution blurred across borders within days, and press coverage settled on a single line: the tooling wrote itself faster than crews could contain it.
+
+The timing mattered. The Cyber Shield reached completion in the middle of the response. Pooled firewall stocks, completed segmentation on the worst-hit estates and exercised continuity playbooks run by ENISA and DG ENER gave Brussels something it had lacked a year earlier: crews on site, spares to install, a common picture. It did not prevent the damage, but it kept it local. Voters noticed the difference between a blackout and a slowdown.
+
+The second enforcement fix landed alongside it. Mandatory incident reporting and emergency re-audits of high-risk welfare systems moved from procedure to visible action, with two unlawful scoring deployments suspended and caseworker review rules tightened under existing AI Act and security law. Trust did not return, but the charge that nothing was enforced lost force.
+
+### Machines in the warehouse
+While hospitals recovered, ports and logistics parks changed permanently. Commercial robots for picking, palletising and welding deployed at scale, almost all built outside Europe with foreign control software. European manufacturers bought them quickly; unions split between welcoming relief from night shifts and warning of a new dependency. Repair, care and construction work stayed manual, hardening a visible divide in the labour market.
+
+Offices told a calmer story. New studies confirmed productivity gains in law, accountancy and consulting, strongest for juniors, with no employment fall. Firms that had cut early rehired. The relief undercut calls for large new spending: with no jobs crisis, parliaments asked why more money was needed.
+
+Across the Atlantic, Americans voted for a presidency promising to treat frontier models as a strategic asset, with tiered foreign access and tighter export review. No policy changed yet, but permitting councils in Paris, Berlin and Warsaw heard the signal, and private co-investors kept gigafactory funds paused. Sites stayed permitted and guaranteed, with no new machines to show.

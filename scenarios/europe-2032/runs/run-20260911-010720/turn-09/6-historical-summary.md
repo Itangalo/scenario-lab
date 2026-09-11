@@ -1,0 +1,9 @@
+By mid-2029 calm broke: open capability leap and loss of readable reasoning blinded oversight.
+
+Brussels' autumn containment patch held partially in late-winter biothreat: modified pathogen with model-assisted design clustered in two cities, contained via emergency tracing and joint procurement; tailored therapies aided recoveries. Large hospitals/grid operators with sealed backups degraded not stopped; small communes needed surge staff and compliance-conditioned funds. Cascade avoided but coverage uneven.
+
+Concurrent shocks: foreign-model, Chinese-hardware humanoids split automatable handling from manual work; allied services confirmed Asian lab multi-day checkpoint-less intrusions, plus contested genome-model uplift study.
+
+In autumn, machine-generated automated attack darkened municipal portals in three states, forced hospital paper fallback and assume-compromise of widely used component; attribution to take months. Sealed backups, ENISA isolation, and patched rebuilds as price of recovery money prevented cascade — power on, care degraded. Near-frontier open release spread to hundreds of thousands of downloads in days, putting automated capabilities permanently on private hardware. Counter-story: AI-driven verifiable breakthrough in protein/materials, university hospitals cleared winter-pathogen wards.
+
+Washington compelled further lithography export/servicing cuts reaching older ordinary-chip machines; Hague protested, firm warned on survivability, Brussels declined quota fight, tasked trade lawyers. Tokyo/Seoul cell protected gigafactory groundworks/power but no sovereign capacity finished. Asian lab demonstrated high-performing system with human-readable intermediate steps, prompting researcher moves; Brussels directed evaluation cell to test approach on European hardware, no funding yet. Public fearful, trust sinking again under fraud, outages, job-loss coverage.

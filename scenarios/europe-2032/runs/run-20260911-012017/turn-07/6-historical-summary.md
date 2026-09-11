@@ -1,0 +1,5 @@
+Autumn 2028 hardening only softened a July ransomware resurgence using AI-generated tooling that re-hit municipal networks, hospitals and ports in three countries, forcing paper fallback; CERTs stayed attribution-free and response ran under existing emergency law.
+
+In August the leading US model cut off European users without appeal, breaking hospital, ministry and firm workflows; Brussels steered to fallbacks and EU-hosted open models, logged it as coercion evidence, and relied on lens/chemical/packaging contacts. The five gigafactory sites stayed empty with permits extended.
+
+An autumn external lab leap in verifiable code/math/intrusion work was absorbed by attackers within weeks, leaving defenders openly behind. By December, with budgets strained and unity broken by the spring bilateral holdout, the Commission proposed nothing new and autonomy talk faded amid blackmail screens, refused logins, and power-price anger around reserved sites.

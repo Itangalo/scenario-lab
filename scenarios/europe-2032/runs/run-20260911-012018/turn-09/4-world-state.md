@@ -1,0 +1,10 @@
+### Holding the line with what is already bought
+July to December 2030 became a test of whether Brussels could keep a single instrument alive without new money or new law.
+
+The joint buying pool for vetted public-sector models stayed in flight, run by health and digital officials out of repurposed programme envelopes. Two more hospital networks and a handful of municipal administrations joined lots in autumn, drawn less by Brussels than by the clearance list that had made the spring triage pilots defensible to clinicians. Hosting and integration work continued to be steered to the five factory-site cities, where permits stayed warm but cranes did not move.
+
+The political framing was deliberate restraint. Coercion proceedings stayed paused. Joint licensing talks with the Netherlands, Japan and Korea were kept technical and quiet. The open door for the breakaway capital to join lots without renouncing its bilateral cheap-compute contract stayed open — and unused. The government in question expanded use of its separate deal for administrative workloads and said so publicly, leaving the joint pool to grow around it rather than through it.
+
+On the ground, results were modest but real. Clinics in the procurement cohort patched faster against the ransomware tooling circulating since the spring open release, and offline cleared stacks allowed several sites to keep triage assistants running isolated from the wider network. Outside the cohort, patching lagged and two regional health systems reported disruptive encryption incidents that forced temporary returns to paper triage. Power bills and postponed care outside the pilot areas kept wider coverage bleak.
+
+By December the pool had not collapsed, which in a year of empty treasuries counted as delivery. It had not reunited the Union's line on foreign tiered access either. Waiting lists fell where the tools ran; elsewhere residents kept photographing grid works and asking councils to block data-centre expansion.

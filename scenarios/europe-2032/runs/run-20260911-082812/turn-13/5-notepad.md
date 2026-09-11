@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: M14 EU Trusted Medical Breakthrough Deployment Bridge −2, M15 EU Pandemic Bio-Containment and Essential Continuity Surge −2, priority −0 (capital below 20, no effect, no cost) = −4
+PROPOSAL BONUS: EU Pandemic Bio-Containment and Essential Continuity Surge (cat 6, small) +4 — catastrophic bio incident landed this turn and this answers it directly on top of cyber sweep
+LEGITIMACY LENDS: capital 15, sentiment 13 -> none (capital higher)
+SOVEREIGNTY: 11 last turn, no cat4 finish, no cat4 in flight +0, supply_chain_coercion t13 −2 (largest of two capacity events, embodied_ai_deployment also qualifies), capability rose 0.8 −0 = 9

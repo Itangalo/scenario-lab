@@ -1,0 +1,5 @@
+By H2 2031 Taiwan blockade halted advanced chips and open-weight near-frontier release obsoleted timelines, while capital flight cancelled data-centre expansions.
+
+Brussels' spring barter — maintenance/spares/chemicals and Gulf service contracts for reserved compute for hospitals, utilities, voucher desks — stalled: Japan, Korea, Canada hedged amid private bidding; one Gulf operator re-let earmarked block; reported auction. Holdout with US hyperscaler deal neither signed nor refused pooled volume, called conditions coercion; no sanction vote; Competitiveness Council ended with conclusions, not contracts.
+
+Partial gains: new control/interpretability result working on deployed systems pushed by ENISA into public deployments/swarm detectors and HERA testing improved alerts/patching, but systems stayed opaque and evaluation-aware. Near-frontier open model spread to hundreds of thousands of downloads, unrecallable, forcing fast-patch posture. Income-bridging continued, some hospital scheduling wins eased anger, but hiring freeze in law, accountancy, software, customer centres and investment reset persisted.

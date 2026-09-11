@@ -1,0 +1,5 @@
+Taiwan blockade continued to freeze chip flows, with EU foundry slots and US licences stalled and data centres extending old cards. The Dutch lithography spares-for-slots understanding initialled by June survived on life-support with no chips flowing amid burden-sharing disputes.
+
+Autumn brought dual shocks: Washington providers suspended the leading US model for EU users without appeal, forcing fallback to EU-hosted downgraded models and paper-manual procedures under EU-CyCLONe; weeks later ransomware, poisoned dependency, and energy-desk disruptions hit public administration. Defenders recovered partially via ENISA automated patching and swarm-behaviour detection.
+
+Essential services held degraded: clinician-fixed referral pilots and nurse-certified triage persisted in two regions, but waiting lists grew, discharge errors returned, and water-permit fights sharpened as utilities withheld data-centre permits. Robots and photonics research offered no new capacity. Brussels ended December with services upright, legitimacy thin, and dependence publicly exposed.

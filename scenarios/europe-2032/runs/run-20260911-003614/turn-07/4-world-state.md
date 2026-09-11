@@ -1,0 +1,11 @@
+### The leap and the shield
+Autumn brought another American demonstration that reset timelines overnight. Longer reasoning chains, agents that planned across tools without pausing — labs admitted their test suites had not caught it. Within weeks the weights filtered outward, and European security teams found the new generation already probing municipal networks, bringing open weights close to the midpoint of where the frontier had stood last turn.
+
+At the same moment, a genuine defensive advance arrived: patching that moved at machine speed and detectors that flagged coordinated swarms rather than single signatures. For the first time in years, defenders had something that worked.
+
+### Audits and patches
+Brussels paired the two. Inspectors pushed the robot-containment work into smaller firms — spot checks tied to insurance, money for manual-override retrofits, wage support to head off another hospital walkout. Large hubs grumbled but complied; some small logistics operators still bypassed interlocks to keep throughput, and two port stoppages showed a halted fleet could still freeze the line behind it. Safety slipped slightly on those bypasses and stoppages, but held broadly as containment spread.
+
+The patch rollout, run through the EU cybersecurity agency, moved unevenly. The two gigafactory shells stood roofed and connected, though machines inside were still foreign, and the municipal pact paid out its last transition grants, freeing only limited staff and funds. Hospitals and grid operators took the bundles within days; helpdesks for small towns and hauliers were slower, understaffed, with many still waiting for retrofits and wage support delayed to next turn for lack of budget. A December swarm attempt against three regional grids was contained without blackouts — the first clear win officials could point to — but coverage remained partial.
+
+Structured access to American models continued only under the market-access and standards-alignment arrangement negotiated after the new Washington administration took office in turn 6, which European firms accepted in exchange for compliance with U.S. licensing terms. Relief over that continued access lingered, but resentment over foreign machines doing local jobs did not lift, and dependence on foreign compute kept sovereignty flat. Trust rose only where the patches visibly held.

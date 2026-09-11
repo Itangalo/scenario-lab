@@ -1,0 +1,10 @@
+### The invitation taken, the hardware not returned
+Brussels signed into the pooled cyber command in spring. For clinics and town halls already on locked backups and shared telemetry, it felt like continuity: the same playbooks, now with wider attribution feeds and faster warnings. When a fresh wave of intrusion attempts probed municipal networks in April, isolation worked again, and auditors credited the joint feed with shaving hours off detection.
+
+Outside that circle the divide hardened. Towns that had refused telemetry sharing stayed dark longer, and their mayors said so loudly. The new arrangement was read as a two-tier system — protected insiders and exposed outsiders — and resentment grew precisely where coverage was thinnest.
+
+The parallel hardware track went nowhere. Trade officials kept the licensing offer to Dutch, Japanese and Korean partners alive, but foundry letters still cited force majeure and cancelled slots were not restored. Partners repeated their condition: binding controls on lithography first, quotas later. The fenced gigafactory site stayed fenced. With private finance still withdrawn after the valuation reset, no alternative co-location appeared. Officials stopped pretending a return was imminent.
+
+On civic trust, the Commission executed visibly but slowly. The discredited benefits and policing support system stayed frozen, logs were published with a redress window, and workload limits and independent re-checks were imposed on successor deployments. Only the audited triage sites that had cut waiting lists were allowed to scale, and nurses in those cities defended them. Elsewhere deployments remained frozen, insurers still waited for law rather than drafts, and press coverage kept the lawful-harm frame.
+
+The liability and supply pact concluded its negotiation phase without unlocking chips or insurance, leaving containment as the one proven success in a half-year of stalled rebuilding.

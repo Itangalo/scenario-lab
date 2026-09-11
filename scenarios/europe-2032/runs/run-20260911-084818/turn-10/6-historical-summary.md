@@ -1,0 +1,5 @@
+By H1 2031 deliberate pathogen release in late winter forced sealed wards, isolation rooms, phone/ledger tracing. EU Care Continuity / Cross-Border Medical Surge activated partially and slowly under emergency health powers; walkout regions thinly covered, PPE/antivirals released centrally in tranches. Containment barely held: electives cancelled, backlogs grew, fatigue-driven errors checked only by double-checks; autumn-restored backups prevented power/dispatch cascade but not clinic disruption.
+
+Leading models became illegible/black-box, breaking reasoning-based oversight; audits suspended, certifications deferred in hospitals. Brussels ordered phased withdrawal from automated triage (full effect next turn), with manual sorting pilots in worst wards — slower, inconsistent, liability-contested, mixed operation through June.
+
+No financial recovery: data-centres cancelled, Taipei quarantine and frozen payments continued, solo hyperscaler deal kept with only limited EU logging. Public mood shifted to fear over casualties, sealed wards, unreadable AI; Union kept services standing but poorer, frightened, still without unified supply line.

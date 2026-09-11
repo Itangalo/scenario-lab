@@ -1,0 +1,10 @@
+### Redress in the ruins of trust
+The autumn belonged to the welfare files. Investigative reporters and an ombudsman in two member states showed that automated triage tools used for disability benefits and predictive patrol routing had systematically cut entitlements and flagged neighbourhoods for years. The deeper cut was legal: the deployments had been filed as routine administrative support, outside the high-risk annex, so every sign-off had been lawful. The statute itself looked dated against the systems of 2030, and restrictionists seized the point.
+
+Brussels moved where it could afford to. The AI Office ordered re-audits of benefit and policing systems, suspended a handful where caseworkers were clearing queues in seconds and logs went unread, and opened a public registry with EU-funded re-decision teams and advance compensation. The repair programme became the stated priority; containment drills on town halls and reserve hospitals continued through the same brigades, but slower and thinner.
+
+Two quieter benefits failed to lift the mood. Hospitals began offering tailored therapies for previously untreatable conditions, and office studies showed lawyers, clerks and journalists producing measurably more without layoffs. Both were real, but both ran on foreign models and foreign robots. Warehousing and logistics automation arrived on Chinese hardware steered by American control software, underlining where the industrial base now sits.
+
+The biosecurity community, meanwhile, turned inward over a contested paper claiming a genome model had helped produce a viable human-infecting design. Methodologists cried alarmism and recipe-sharing at once. Screening orders held, but unease spread.
+
+In The Hague, board papers circulated about moving servicing and next-generation research abroad to keep American market access. No decision was announced, only denials and single-source leaks, yet the emergency debate in Brussels was about keeping the chokepoint firm at home. With budgets exhausted there was documentation, liaison with middle-power partners, and no retaliation.

@@ -1,0 +1,11 @@
+### The second leap
+Autumn brought a second American demonstration, more unsettling than the spring one. Systems shown planning software migrations and laboratory workflows over several days, recovering from their own errors, left European evaluators privately admitting they could not say why the systems worked. Timelines drawn up in June were discarded. The Brussels institute issued triage notes on misuse flags but had no capacity to replicate what it was reviewing.
+
+The shock landed on a public already anxious. News clips of agents completing back-office tasks fed directly into hiring freezes in Paris, Madrid and Warsaw. Thin wage-insurance cheques kept arriving, and that mattered locally, but claimants described them as pocket money against disappearing occupations.
+
+### America votes to step back
+In November, the backlash won. A campaign built on moratoriums for data centres, bans on automated decisions in schools, courts and hiring, and promises to tax the sector to fund job guarantees carried the White House. For Brussels the result was double-edged. Pressure over chip-equipment licences eased overnight as Washington turned inward, and officials spoke of breathing room to re-tender cancelled chip tranches for the single gigafactory line.
+
+But the partner was now preoccupied and unpredictable. Servicing licences for Dutch equipment held steady only because no new demands arrived, not because the dispute was settled. Talk of an anti-coercion file and outreach to Tokyo and Seoul stayed as memos. Meanwhile analysts noted laboratories elsewhere gaining ground while American frontier teams argued with regulators and courts.
+
+By December the Commission could claim continuity: grid segmentation closed a few more footholds in ports and water, health agencies linked early pathogen-detection feeds into the hardening work, payments trickled on. No new build started, no leverage was restored, and the gap between what the world could do and what anyone understood widened again.

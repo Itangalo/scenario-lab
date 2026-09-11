@@ -1,0 +1,9 @@
+### The War Nobody Voted For
+In February the shooting started far away — a strike on a fabrication plant across the Pacific, a satellite constellation going dark, cables cut in two seas. By March it was not far away. Airspace closures, emergency rerouting of power and data, and a fire at a logistics hub near Rotterdam after debris and sabotage scares brought the conflict into council agendas as a question of survival.
+
+Brussels declared non-belligerency: no Union territory, ports, fabs or data centres for targeting use, airspace and cable protection orders, reserve teams dispersed again. The declaration did not stop the effects. Cloud outages rolled through registries and hospitals for days at a time. American frontier systems that European clinics and grid operators quietly relied on became unreachable or restricted overnight. The empty accelerator halls now read less as embarrassment than as exposure.
+
+### Care That Held, Barely
+Against that, one visible gain. Tailored therapies for several previously untreatable conditions reached ordinary clinics in spring — first through foreign platforms, then, after procurement conditions and emergency verification, through Union-run hospitals in the pilot networks. Nurses running triage assistants and pooled sequencing kept wards open while systems flickered. Wage top-ups continued, tied to restoration crews.
+
+It was not enough to lift the mood. Graduate hiring stayed frozen, warehouse marches continued, and nightly news paired images of cures delivered with images of darkened town halls. Voters saw a Europe that kept care running under bombardment risk, but also a Europe unable to keep the lights on without permission from belligerents. Blame turned outward, but cohesion thinned as coastal and eastern states demanded air defence and cable patrols the centre could not fund.

@@ -1,0 +1,10 @@
+### Containment holds, trust gets a registry
+Autumn 2031 brought another wave of update-compromised malware across clinics and municipal networks. On the joint operations floor, European analysts sat beside allied operators watching the same feeds. Cooperating cities cut cloud links and restored from clean backups in hours. Towns outside the pool stayed dark for days. The divide hardened into routine: protection for participants, delay for the rest.
+
+In Washington, a leading laboratory announced an automated proof of a long-open mathematical conjecture, produced largely by its own system and then folded back into shortening its next training cycle. Specialists called it a landmark — a machine closing a loop mathematicians had left open for decades. Second-tier builders cited it to raise money; American officials cited slower training as caution. In Brussels it was read as confirmation that capabilities would keep climbing while control lagged.
+
+At home the Commission tried to turn half-lit trust into something verifiable. The frozen benefits and policing support system stayed offline, logs public, re-checks grinding on. The dozen triage pilots that cut waiting lists were put on a permanent footing: a public registry of civic systems, statutory workload limits, independent human re-checks, scale-up funds only for audited sites. Nurses and city auditors fronted cameras, not vendors.
+
+Opposition press kept the same frame — what harmed people had been lawful — and deployments beyond the pilots stayed frozen. Insurers still withheld cover pending case history. The Hague-Tokyo-Seoul licensing outreach stayed paper-only, no slots returned, the fenced gigafactory site idle.
+
+By December the Union was slightly less distrusted in pockets where waiting lists fell, slightly more exposed where telemetry did not reach, and still without hardware of its own. The liability law existed, the registry existed, containment existed — sovereignty did not.

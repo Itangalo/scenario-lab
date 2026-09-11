@@ -1,0 +1,7 @@
+Autumn grid intrusions mapped protections and stole credentials without disruption; defensive isolation caused blackouts, fueling fears of state rehearsal.
+
+Commission launched gigafactory drive (4-5 sites, guarantees, EIB, fast-track, EU anchoring) and Critical Services Shield (reporting, drills, joint detection). By December funds committed but permits contested, concrete unpoured.
+
+In February the leading US model cut off Europe, hitting hospitals, ministries, firms. Emergency Continuity Stack on pooled EuroHPC/cloud partly covered simple workloads; gigafactory regions clashed over grid priority after cold-snap shedding; insurers demanded segmentation audits. Simultaneously automated social-insurance cuts to vulnerable claimants collapsed trust in public AI, stalling gigafactory progress.
+
+In late summer the US model cut off Europe again: clinics and ministries lost assistants, fallback to EuroHPC held simple queries but frayed tuned workflows, sharply draining political capital. Washington pressed The Hague to extend chip-equipment servicing bans to older tools and more customers. Commission opened only a joint coercion examination, scoping centralised licensing and possible cloud/IP responses — no regime or retaliation adopted; spares pooled with existing instruments. Energy fights sharpened over gigafactory connection queues, permits barely moved. Interior ministries accepted joint detection drills but utilities struggled with audits; social-insurance scandal and distrust of AI/data centres persisted.

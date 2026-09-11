@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Uncertified Operator Containment Extension −2, priority −1 = −3
+PROPOSAL BONUS: EU Uncertified Operator Containment Extension (cat 6, small) +2 — cyber_major_incident landed this turn severe and this answers it directly
+LEGITIMACY LENDS: capital 14 vs sentiment 16 calculation after other terms, but rule compares pre-lend levels where capital above sentiment so none — capital 14, sentiment 16 check applied post-events, no lend charged
+SOVEREIGNTY: 26 last turn, no cat4 finish, no cat4 in flight +0, export_control_escalation t11 −2 (largest capacity event, member_state_defection also qualifies), capability rose 0.5 −0 = 24

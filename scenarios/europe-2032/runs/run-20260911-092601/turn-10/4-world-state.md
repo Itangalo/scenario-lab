@@ -1,0 +1,10 @@
+### Claiming a win while the stores burn
+The half-year opened with money leaving. Funds that had underwritten data-centre expansions and model-training reservations pulled back within weeks, valuations halved, and two private compute deals European hospitals and administrations had quietly relied on for overflow were cancelled. Washington at the same time put allied buyers on strict volume quotas for advanced chips and model access. The Hague signed under protest; spares talks with Tokyo and Seoul again produced statements, not shipments.
+
+Against that, one European public-sector deployment finally worked at scale. In three ministries — hospital triage scheduling, permit decisions, tutoring support — waiting lists fell and decision times shortened, measured and auditable. Brussels rushed to label it: dashboards, EU procurement plaques, Commission visits, and an Implementing Decision crediting EU hosting and continuity cover.
+
+The mutual-aid protocol finished in the same months. Fuel, transformer and breaker-log pools were put on a reimbursed cross-border footing, and restoration drills became standing procedure. It helped when the backlash turned physical.
+
+Because the backlash did. Small groups opposed to automated systems firebombed two generator stores, cut locks on transformer yards and posted breaker-log locations online as collaboration sites. Police called it coordinated; press called it sabotage of the fallback itself. Engineers restored service by hand in most places, but in two towns restoration stalled for days while replacement parts were sourced under guard.
+
+The Showcase sites were guarded first, and kept running — which proved both the point and the problem. Where the EU label was visible, crowds were divided between relief at shorter queues and anger at fenced cabinets and metered American fallback behind them. Vandalism spread to the newly signposted sites. The Commission held the common line on quotas without conceding new export-control ground, but bought time rather than capacity, and ended the half-year still with almost no room to act.

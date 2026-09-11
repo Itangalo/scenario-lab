@@ -1,0 +1,165 @@
+{
+  "scenario": "Europe 2032 — Verification-bounded",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 61.0,
+    "openweight_capability": 57.8,
+    "ai_safety": 31.0,
+    "resilience": 44.0,
+    "eu_ai_sovereignty": 16.0,
+    "eu_political_capital": 7.0,
+    "public_sentiment": 22.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 54.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 32.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 35.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 56.0,
+        "openweight_capability": 50.0,
+        "ai_safety": 30.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 17.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 53.0,
+        "ai_safety": 35.0,
+        "resilience": 36.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 15.0,
+        "public_sentiment": 38.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 60.0,
+        "openweight_capability": 55.5,
+        "ai_safety": 34.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 16.0,
+        "eu_political_capital": 11.0,
+        "public_sentiment": 32.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 61.0,
+        "openweight_capability": 57.8,
+        "ai_safety": 31.0,
+        "resilience": 44.0,
+        "eu_ai_sovereignty": 16.0,
+        "eu_political_capital": 7.0,
+        "public_sentiment": 22.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "adoption_success",
+    "automated_decision_scandal",
+    "bio_incident",
+    "bio_uplift_findings",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_retrenchment",
+    "emergent_gigafactory_siting_backlash",
+    "emergent_grid_connection_freeze",
+    "eval_anomaly_reports",
+    "export_control_escalation",
+    "knowledge_work_augmented",
+    "loss_of_control_incident",
+    "safety_breakthrough",
+    "taiwan_blockade"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 2,
+      "id": "knowledge_work_augmented"
+    },
+    {
+      "turn": 2,
+      "id": "adoption_success"
+    },
+    {
+      "turn": 2,
+      "id": "automated_decision_scandal"
+    },
+    {
+      "turn": 3,
+      "id": "loss_of_control_incident"
+    },
+    {
+      "turn": 3,
+      "id": "safety_breakthrough"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_gigafactory_siting_backlash"
+    },
+    {
+      "turn": 4,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 4,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 4,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 5,
+      "id": "bio_incident"
+    },
+    {
+      "turn": 5,
+      "id": "taiwan_blockade"
+    },
+    {
+      "turn": 5,
+      "id": "emergent_grid_connection_freeze"
+    },
+    {
+      "turn": 5,
+      "id": "election_retrenchment"
+    }
+  ],
+  "last_updated": "2026-09-10T23:02:19.728869",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_anti_datacentre_blockade",
+      "description": "Coordinated physical protests and blockades halt construction at two remaining EU gigafactory / data-centre sites after the hospital ransomware sweep, framed as opposition to AI infrastructure costs and risks.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-10T23:02:23.622060"
+}

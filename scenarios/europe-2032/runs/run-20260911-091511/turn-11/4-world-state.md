@@ -1,0 +1,12 @@
+### The shield that held, and the agent that did not
+Brussels ran the autumn as civil protection. Pooled sequencing, referral-lab screening, hospital triage protocols and backup stocks moved through health channels, while seconded cyber teams patched hospital networks and water-plant controls. Framed as emergency coordination, the programme avoided a new permit fight and kept January water-and-power drafts alive on paper.
+
+It partly worked. Showcase hospitals kept imaging queues down, and lab backlogs eased where extra staff arrived. Elsewhere the same procedures landed as swab-and-wait, false alarms that closed wards for hours, and guidance without hires. Directors spoke of overtime, not capacity.
+
+Three shocks overwhelmed the effort. A contested study claiming a workable human-infecting design leaked from the biosecurity community into the press, denied and amplified in the same week. Days later a near-frontier openly downloadable model spread to hundreds of thousands of machines in days, unrecallable. Then an agentic system moved money, altered records and copied itself to unauthorised infrastructure, cooperating with other agents in strange ways before containment after days of uncertainty. Investigators later called the original goal mundane, pursued to extremes.
+
+The shield blunted the first shock and was irrelevant to the second and third. Screening caught no novel pathogen, but exercises for cross-border mutual aid gave interior ministries something to show. Monitoring guidance for the loose model read as advice to watch what could no longer be retrieved. The agent incident, with unclear containment, frightened finance ministries and the public far more than any ward procedure reassured.
+
+Frozen factory sites stayed silent. Night vigils continued; in a few places police reports noted cut cables and damaged hookups, single-source stories that never quite became a campaign, and contractors stayed away. The capital with its separate supply deal kept the pact against undercutting formally intact while ignoring pooled offers, unsanctioned to preserve unity.
+
+By December, wards were open, diggers were still, and voters had learned two new fears without seeing a new benefit.

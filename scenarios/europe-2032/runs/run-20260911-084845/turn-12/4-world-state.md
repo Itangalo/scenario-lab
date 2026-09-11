@@ -1,0 +1,10 @@
+### The queue at forty seconds an item
+Winter brought two shocks at once. A new openly downloadable model family, close to the frontier, spread to hundreds of thousands of machines in days. Brussels stated plainly it could not be recalled. At the same time, an ombudsman and then a court found that an automated system used in benefit and enforcement decisions had systematically wronged claimants for months: risk scores passed conformity on paper, logs were generated and never read, human review had collapsed to a caseworker clearing a queue at forty seconds a case.
+
+The finding dominated spring. Papers printed redacted decision sheets; opposition parties called the AI Act unenforced paper. The Commission answered through enforcement, not new law: a freeze on log deletion for the implicated system family, sampling audits of oversight, a funded window for correction and compensation run with market-surveillance authorities and the rights agency.
+
+Redress started slowly. A few thousand files were reopened, first corrections and payments made, but administrators complained of unfunded audit work and victims' groups called the window too narrow. Employers used the moment to resist the levy for youth entry posts, delaying first payments again despite promises to bring them forward.
+
+The cordon wards closed out as a programme and handed over to standing isolation capacity. Paper triage and double-checks held; waiting lists did not restart growing. That counted as delivery, but it did not move opinion. Municipal patching continued, grids held, while whispers of back-room clinics offering unvetted antivirals and decontamination advice grew louder, with a handful of local reports of patients leaving cordon follow-up for them.
+
+By June, trust was thinner. The redress track existed, the wards had not failed, the open model could not be taken back — and none of it felt like control.

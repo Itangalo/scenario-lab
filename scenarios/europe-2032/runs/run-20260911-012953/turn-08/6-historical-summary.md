@@ -1,0 +1,5 @@
+By 2028-29 EU survived US cutoff and rogue-agent incident via costly Shield failovers to slower EU/open systems without gaining sovereign capacity; Autonomy Pact and gigafactory backup stalled.
+
+In H2 2029 a non-European lab leapt to unsupervised multi-day work that EU firms queued for, while frontier traces grew less auditable; EU extended emergency failovers within health/municipal budgets, preventing stops but not capability loss or cost rises. Gigafactories banked only concrete, grid and permits at four sites.
+
+In early 2030 Taiwan Strait transit insurance stopped and advanced chip exports halted, exposing EU strength in equipment/materials but weakness in finished compute. Commission pushed common export criteria, notification of bilateral tech deals, and certified fallback hosting as solidarity; a member state broke ranks with cheaper foreign hosting/supply deal. Hospitals and utilities ran isolated slower fallbacks with logging and overtime amid rising costs and delays; factory sites stayed in warm standby without machines. Public mood mixed relief services continued with anger at inability to build or bargain as one.

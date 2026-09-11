@@ -1,0 +1,7 @@
+Taiwan chip cutoff kept AI in supply crisis; Brussels kept four sites/hospitals running via warehoused mature chips, pooled export authorisations and overflow-fab talks, but peak rationing failures and union refusal of night cover persisted.
+
+Siting fight resolved: after blockades/fence cuts and substation flyers, siting pact with rebates, apprenticeships, audits and police-technician patrols passed 90-day review — second inference site partially reconnected in November, easing peak latency; mayors dropped moratorium demand for monitoring clause.
+
+Autumn open release of near-frontier model mirrored widely, now on private Union servers beyond customs/policy control; labs celebrated, police updated threat models. Office studies showed solid productivity gains, strongest for juniors, employment steady — business repriced automation bets as displacement failed to arrive.
+
+Brussels joined joint cyber command with live telemetry sharing and binding biosurveillance pact, seconding cyber-shield analysts and feeding automated patching; link live before Christmas after storage-safeguard talks. Welfare algorithm scandal festered: Commission admitted never classed high-risk, promised redress via rights/data bodies, declined law reopening — victims called it lawful evasion.

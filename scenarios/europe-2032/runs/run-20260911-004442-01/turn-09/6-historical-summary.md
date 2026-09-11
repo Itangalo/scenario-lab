@@ -1,0 +1,5 @@
+Winter US capability jump and US federal takeover (frontier labs secured, weights as defence articles) left EU without frontier access or market leverage; Brussels' Continuity and Containment Accord offer to Washington went unsigned with no notification or incident feed.
+
+EU survived July-Dec 2030 via Continuity and Social Absorption Pact: hospital/grid and Lyon-Milan-Rotterdam oncology compute priority retained, fallback drills held, evaluation limited to loss-of-control triage. Delivery thin — slow funds, short levy yield, partial union lift on humanoid pilots, trainers only in north, few hardened cities, no new accelerators from pooling. Capability only via distilling pre-cutoff open weights.
+
+By Dec 2030 continuity barely held: lights on, waiting lists slowed, no cascade, but no machines, no foreign access, sullen public mood.

@@ -1,0 +1,7 @@
+US AI cutoff left triage/dispatch/port helpers disabled, forcing reliance on slower EU open models and paper kits — seen as rationing by nationality. Ransomware sweep and cloud multi-region failure forced second failover to paper forms, spare laptops, embedded repair crews; hospitals/town halls/ferries stayed open.
+
+Chinese-built humanoids/warehouse fleets on US software kept working in Rotterdam, Hamburg, Lyon; repair, care, construction stayed human. Brussels held line: no fund, no retaliation, no factory restart, only extended fallback kits and mapping robot dependence.
+
+Autumn continuity held on paper-plus-local-model workaround, now treated as second operating mode. Offices reported assistants made juniors faster without headcount cuts; early cutters rehired. Regions showed falling waiting lists, faster permits, tutoring gains claimed as European administrative wins — first visible benefit.
+
+Specialists warned genome model enabled viable human-infecting organism design by non-expert; contested. Health officials tasked labs/evaluation institute to reproduce, tightened reporting, drafted containment without law. Commission proposed nothing new, banked productivity news while awaiting confirmation.

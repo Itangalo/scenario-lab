@@ -1,0 +1,10 @@
+### Holding on, plugging in
+The first half of 2028 brought no repeat of December's wave, and that breathing space mattered. The two shields Brussels had been building for two years finally became real: centrally procured detection licences were now installed across most grid operators and large hospitals, and the behaviour-based blocking tools learned to share signatures across borders. When probes came in March and May, they were absorbed faster. Services degraded, they did not stop.
+
+That competence helped Brussels accept an invitation it could not have built alone. Hit by the same ransomware family, a group of allied states set up a joint cyber command with live telemetry sharing and a binding pact on pathogen sample-sharing with a standing investigation team. The Commission signed both, seconding analysts and pledging hospital sequencing feeds, with recovery money made conditional on interior ministries actually sharing data.
+
+The timing was uncomfortable. In the same months a contested genome-model paper claimed a non-expert could be guided to a viable human-infecting design. The claim stayed inside the biosecurity community, methodologists shouting at each other, but health officials took notice. The new pact suddenly looked prescient, and screening guidance for synthesis providers was quietly drafted.
+
+Sovereign compute still lagged. Mediation unblocked one of the two injuncted gigafactory sites for site works, the other stayed in court. US accelerator deliveries remained slow and expensive under tighter paperwork; Brussels held its equipment leverage without using it. Offices, meanwhile, kept reporting steady assistant-driven productivity without layoffs, which kept public mood ambivalent rather than hostile: useful at work, frightening in the lab.
+
+Recovery remained ragged at the edges. Small municipalities still lacked staff, and one mutual-aid deployment arrived late after another wrangle. But insurers stayed in after the backstop, and voters noticed that hospitals stayed open.

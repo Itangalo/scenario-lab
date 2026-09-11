@@ -1,0 +1,10 @@
+### Cascade season
+Winter began with screens going dark in town halls. A largely automated ransomware sweep, built with openly available tooling, moved across municipal networks and hospital administration systems in several member states at once. Appointments were cancelled, payrolls delayed, emergency departments fell back to paper. Attribution teams admitted they were months behind.
+
+While wards were still on backup power, a second alert came through the shared biosurveillance channels: a modified pathogen with clear signs of model-assisted design had caused real casualties and forced weeks of containment. Samples moved through the joint pact clinics; sequencing and triage protocols bought hours, but fear outran procedure.
+
+Brussels pushed money out fast. Under civil protection and cross-border health powers, emergency payouts flowed to hospitals and municipalities that kept telemetry live, backups patched and offline kits drilled. Liaison cells tied to the allied cyber command and the biosurveillance pact routed alerts directly to duty desks. Where drills had been exercised, services degraded rather than stopped. Where they had not, mayors improvised with printed lists and diesel generators.
+
+The two finished compacts helped at the margins. Joint purchasing and aligned export licences with Japan and Korea kept accelerator deliveries moving, and the exploit-containment patch gave defenders common playbooks. But new export controls from Washington tightened again, and European buyers found volume licences rationed and delivery dates slipping. The first gigafactory site kept its grid works going; the second remained locked in court.
+
+There was counterpoint. Clinicians quietly received tailored therapies that turned previously untreatable conditions into manageable ones, and office studies showed assistants lifting output in law, accountancy and administration without mass layoffs. Insurers, however, told municipalities their systems were becoming uninsurable without exercised recovery, and papers linked unreadable models and unscreened orders to both crises. Trust fell where cascade was visible, held where continuity worked.

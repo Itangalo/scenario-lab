@@ -1,0 +1,10 @@
+### Triage semester
+The first half of 2032 became a test of what Brussels had already built. A largely automated ransomware and compromised-dependency sweep moved across municipal and hospital networks in several member states, locking records, delaying prescriptions and forcing towns back to paper for days. Defenders were visibly behind for the first week; attribution slipped away into months of forensics. Almost in parallel, a laboratory incident involving a modified agent triggered real casualties and weeks of contact tracing, isolation and decontamination.
+
+Health and cyber agencies led from existing mandates. The EU disease and medicines bodies ran containment, tracing and lab hygiene enforcement under protocols drawn up in earlier years. The cyber agency coordinated triage across the backup continuity systems installed after the American cut-off, hunting through hospital networks and restoring services node by node. Where home-grown triage helpers had taken root, wards kept queues moving; elsewhere staff patched rotas and nursed slower systems.
+
+Amid the strain, one bright spot was claimed loudly: administrations that had deployed European public-sector assistants showed measurable falls in waiting lists and decision times, from days to hours in permits and benefits. Commissioners toured clinics and town halls to attach a European label to the gain.
+
+It did not lift the mood. News was dominated by locked hospitals and by the biological containment zones, and by fraud and outage stories that reused the same tooling. Trust fell further. Near the two frozen data-centre sites there was talk of cut fences and night gatherings, single-source and unverified. In hospitals there was muttering about walkouts over crashing tools, but wards stayed open week to week.
+
+By June, survival had held again. The injunctions stayed, no new diggers moved, and Brussels banked the narrow triage credit to argue for an unfreeze next semester.

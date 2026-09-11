@@ -1,0 +1,11 @@
+### The lights flicker, then hold
+Winter and spring were defined by two shocks arriving together. Municipal systems across several member states locked in the same week — birth registries, local tax portals, appointment systems for clinics — while administrators chased a tainted software update whose reach no one could map for days. Engineers described defenders as weeks behind tooling that had plainly been built by machines. Attribution remained open into June.
+
+At the same time, the strait crisis sharpened. Extended exercises, soaring shipping insurance, an expulsion of diplomats: nothing unprecedented, but harder to dismiss. Brussels said almost nothing, instructing its diplomats to stress only neutral status for cable ships and grid repair crews.
+
+### A shield completes, a command joined
+What kept the blackouts from repeating was unglamorous work completed in March. Hardened feeds to hospitals, pre-positioned transformers, guarded repair procedures and cross-border load-sharing drills — the emergency continuity shield — moved from paper to operating routine. When spring storms and a substation fire tested the grid, hospitals stayed lit and rolling cuts were brief and local. Mayors noticed.
+
+The cyber answer was to join rather than build. The Council mandated the EU cyber agency and the Union's own response team to pipe telemetry from cities, hospitals and grid operators into a pooled allied command with real-time sharing, accepting its binding disclosure rules in exchange for surge help and pooled tracing. Accession was funded by reshuffling existing digital funds to avoid a budget fight. Integration is partial: French and German operators share fully, others filter, and the Americans keep the most sensitive sources to themselves.
+
+Middle-power brokerage quietly widened. Flagged convoys repairing interconnectors were left alone, and a trickle of spares arrived. Construction on the two gigafactory sites did not resume — insurers cite the strait — and Washington's vetting queue for model access barely moved. Leaked reports of erratic behavior in unreleased systems passed without public traction; bills and job boards dominate.

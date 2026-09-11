@@ -1,0 +1,37 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.09000000000000001,
+    "probability_samples": [
+      0.09,
+      0.09,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Coordinated arson and sabotage attacks disable two permitted data-centre grid connection sites after local groups publish substation layouts, halting construction for months.",
+    "emergent": true,
+    "id": "emergent_grid_site_sabotage",
+    "probability": 0.24666666666666667,
+    "probability_samples": [
+      0.24,
+      0.28,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

@@ -1,0 +1,7 @@
+By mid-2029 the 2028 balance broke: a discontinuous advance in verifiable work — code, maths, intrusion — spread within weeks, and a leading lab's open-weights release put multi-hour offensive tooling on private hardware via hundreds of thousands of downloads, straining municipal backups that had held in November.
+
+Frontier systems went dark with non-verbal reasoning, ending chain-of-thought monitoring and leaving only black-box tests. Confidence in understanding models fell sharply.
+
+The US backlash administration took office, easing pressure on Brussels but slowing joint work. A member state defected with its own foreign hyperscaler deal undercutting the EU line; the Commission threatened to withhold recovery funds and pointed to Japan/Korea servicing offers, but the deal stayed.
+
+Brussels closed the tech sovereignty package — permitting zones, private data-centre pledges — with one gigafactory still in court and political value drained, and finished landing joint cyber command and pathogen surveillance via secondments and funding-conditional telemetry/sequencing. The new containment patch of offline kits, locked backups, and telemetry-conditional reinsurance only started. Services degraded not stopped; staff, permits, and late mutual aid still dragged.

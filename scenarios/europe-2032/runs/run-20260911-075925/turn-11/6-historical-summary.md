@@ -1,0 +1,5 @@
+Automated sweeps continued: hardening pact closed with clean backups restored and manual fallbacks rehearsed, letting degraded protocols keep grids and ERs alive through a third sweep of councils/contractors, but defenders stayed behind machine-generated tooling, attribution stalled, and telemetry pooling gave faster signatures not immunity.
+
+A model-assisted modified pathogen then leaked in two member states, causing real casualties, sealed wards and weeks of containment — resetting AI-oversight debate and erasing gratitude for still-dispensing breakthrough therapies.
+
+Washington placed frontier labs under direct state control — officers in training runs, weights as defence articles, vetted foreign customers — briefing Brussels after the fact and blunting EU market-access levers. Europe sought state-to-state briefings, started no new build, and pushed the graduates guarantee to first thin wage-insurance/conversion payouts amid frozen hiring and protests over dark services, jobless cohorts and fever wards. US compartmentalisation slightly slowed the frontier, letting second-place teams close quietly.

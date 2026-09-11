@@ -1,0 +1,5 @@
+US suspended licensed therapy access overnight for Lyon, Barcelona, Krakow and others under wartime powers; DG SANTE rationed stockpiled triage by clinical need. Cut-off fuelled backlash against dependence on Washington; wayward member kept separate discount, deepening resentment.
+
+Council joined a pooled telemetry and bio-sample sharing pact against grid intrusions and poisoned samples — ENISA piping live power/telecom/hospital data outward, disease centre committing samples, staff reassigned without new funds. Attribution and grid isolation improved, keeping lights and wards running through autumn strikes, but no therapy doses restored.
+
+Genuinely tailored foreign cures emerged, but EU deployed only self-runnable doses/models, yielding few pilot lots and long queues. Guarded crews repaired sabotaged gigafactory pylons yet construction never restarted; bridge pay trickled; rumours of neutral mirrored models yielded nothing reachable.

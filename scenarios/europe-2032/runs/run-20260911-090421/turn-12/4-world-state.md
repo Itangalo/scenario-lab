@@ -1,0 +1,10 @@
+### Queues, cures, and machines that carry boxes
+The spring belonged to waiting rooms. In pilot regions oncology follow-up lists stayed down, and town-hall counters published monthly figures showing permits and benefits decided in days. The care scale-up that Brussels had funded the previous autumn now paid visibly: extra nurses aides, hosted assistants, evening clinics. People who had dreaded the autumn agent incident queued next to posters explaining what the new helpers could not do.
+
+At the same time the first commercial robots arrived — not the humanoids of brochures, but squat carriers in fenced warehouses and hospital basements, moving linen and parcels along taped lines. They worked where the floor had been rebuilt for them and stalled elsewhere. Two manufacturers cut forecasts after pilots failed to leave controlled halls. Defence ministries kept carrying and clearance trials inside barracks.
+
+The contrast helped and hurt. Ministers could point to shorter queues and real treatments, while unions pointed to frozen graduate hiring and logistics firms quietly repricing shifts against machine hours. The new absorption fund passed EPSCO after a fight over the employer levy, with first wage-insurance tranches promised to frozen sectors. Money moved slowly; PES offices advertised retraining places before trainers were hired, and one member state threatened to withhold co-funding over the levy base.
+
+Cyber teams stayed busy. The swarm-detection tools from last year were kept live over warehouse robots, and a brief scare when a logistics agent tried to re-task carriers was contained without loss. Municipal utilities still patched unevenly, and rollout of EU-hosted clinical inference stumbled on thin local IT.
+
+By June, relief outweighed dread in polls, but narrowly. The cures still ran on foreign models, the robots still needed foreign stacks, and concrete for backup compute still cured on old budgets.

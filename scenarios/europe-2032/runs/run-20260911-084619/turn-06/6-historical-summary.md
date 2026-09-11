@@ -1,0 +1,5 @@
+Spring 2029 dual shock: large automated ransomware intrusion via poisoned software dependency locked municipal/hospital systems across several states, forcing recall of autumn grid crews, drawdown of spares, degraded operation of ports/clinics; culprit unnamed.
+
+Amid triage, a member state broke EU common line with direct compute/model side deal with foreign hyperscaler under US tiered-access doctrine — Brussels opened coercion file, offered return via joint Washington ask and joint licensing with Netherlands/Japan/Korea, but launched nothing new.
+
+Tech sovereignty package formally closed: 5 reserved sites (Paris, Berlin, Madrid, Stockholm, Warsaw) still empty with permits warm, €200bn factory plan dropped as unfundable; middle-power compact remains only funded track. Public mood collapsed as power-price protests merged with anger over health records and openly dictated dependence.

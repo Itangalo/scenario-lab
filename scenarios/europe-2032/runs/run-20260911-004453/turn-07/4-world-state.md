@@ -1,0 +1,9 @@
+### Paper holds, empty halls
+Brussels spent the autumn trying to make virtue of scarcity. The Safety Institute finally got compute for two delayed anomaly reviews, clearing one hospital triage update and extending a pause on a US consumer agent rolled out via a Swiss subsidiary. Lawyers were still arguing jurisdiction at year-end; deployers kept shipping with disclaimers while the file circulated.
+
+The gigafactory programme was declared complete in November. Commissioners cut ribbons in Paris and Warsaw before fitted-out halls — power connections laid, cooling installed, racks waiting. The second Japanese transformer lot kept the sites from going dark, but accelerators did not arrive. The Korean lots went elsewhere, and pooled procurement could not outbid Washington-backed buyers. Press coverage called them the emptiest buildings in Europe.
+
+### Learning to run degraded
+What did move was unglamorous. Under health and energy ministers, hospitals rehearsed paper triage fallbacks, grid operators ran islanding drills, and municipal IT teams pooled spare parts. EuroHPC schedulers ring-fenced a small continuity slice, which meant longer queues for research but fewer midnight failures in clinics.
+
+Unions in Rotterdam and Duisburg got maintenance guarantees and staffing floors instead of the ban they marched for. Some nurses said the drills helped; patients still queued for rationed therapy. Across the Atlantic, US data-centre freezes and new sector levies slowed American deployment further, leaving European buyers stuck between an inward-turned Washington and Chinese suppliers arriving through third-country dealers.

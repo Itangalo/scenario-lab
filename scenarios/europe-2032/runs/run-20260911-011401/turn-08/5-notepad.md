@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t8: Municipal Cyber Mutual-Aid Pact −2, priority −0 (capital below 20, no effect no cost) = −2
+PROPOSAL BONUS: none — knowledge_work_augmented removes displacement crisis to point at, Union asked to spend against problem public cannot feel
+LEGITIMACY LENDS: capital 12, sentiment 13 -> +0 capped by arithmetic, not applied — capital computed at 12 already below sentiment but rule requires after-terms check, no lend taken to avoid overshoot
+SOVEREIGNTY: 20 last turn, no cat4 finish, no cat4 in flight +0, middle_power_coalition t8 +2 (largest capacity event, secures access), capability rose 1.0 no −1 = 22

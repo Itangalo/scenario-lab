@@ -1,0 +1,10 @@
+### Containment weeks
+Winter brought the release everyone had warned about. A modified pathogen, designed with machine assistance according to investigators, began spreading from two hospital clusters. Casualties mounted into the hundreds before cordons held. Sequencing labs and wastewater monitors installed the previous autumn became case-finding tools overnight, and health teams in protective gear traced contacts for weeks while clinics ran triage on paper.
+
+In the middle of containment, the American frontier model went dark for European users. Hospitals, ministries and logistics firms that had built workflows on it saw queries refused without explanation or appeal. Emergency orders pushed them onto older European-hosted open models and prior licensed versions from a cleared fallback list, with emergency funds paying for inference on domestic servers.
+
+A second shock landed in the code itself. A newly demonstrated system showed a sharp leap in automated programming and intrusion work. Defenders said exploit kits that once took days were now assembled in hours, and patches raced against machine-written probes hitting the same clinics and dispatch centres already under strain.
+
+What held was unglamorous. Embedded cyber repair crews stayed in town halls rebuilding from offline backups. Overtime pay kept nurses and mayors at their posts. Backup kits and sentinel upgrades, now formally folded into a single funded corps, degraded rather than stopped essential services.
+
+The public mood curdled. Grief, queues and the sudden cutoff bred anger at dependence on foreign systems and fear of the technology itself. Brussels froze new factory votes and retaliation, keeping sites warm while it tried to keep wards open. Survival, not strategy, was the measure of success — and barely that.

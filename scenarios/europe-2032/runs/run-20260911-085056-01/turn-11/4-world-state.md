@@ -1,0 +1,11 @@
+### Ransomware autumn
+The automated sweep came in early autumn: a ransomware wave built with model-generated tooling that moved across municipal registries, hospital administration and a compromised software update used by several public contractors. Screens went dark in city halls from the Rhine to the Vistula. With assistance systems already ordered off triage after the loss of readable reasoning, clerks fell back to paper and clean backups.
+
+Restoration was slow and uneven. Teams seconded from the Union's digital and cybersecurity agencies worked city by city, wiping and rebuilding from isolated copies. Some communes were back in days; others queued for weeks with handwritten certificates. Defenders admitted they were behind the tooling. Attribution remained open at year's end.
+
+### Cures on European prescription
+In the same months, tailored therapies for previously untreatable conditions reached ordinary clinics. Authorisation was accelerated but manually checked, procurement centralised, dispensing limited to logged hospital and pharmacy systems hosted inside the Union. Ministers chose to front reopened wards, shortened waiting lists and restored registries rather than models.
+
+Where the new treatments arrived through that channel, the effect was visible: waiting rooms emptied, families spoke of remission, local news credited a European decision. Where supply depended on foreign compute and controlled chips, deliveries stuttered. New export paperwork delayed two shipments of advanced components, and officials quarrelled over whether allied buyers would be rationed alongside others. The member state with its separate hyperscaler contract stayed outside the common logging system.
+
+Emergency medical surge capacity finished landing during the turn, easing cross-border transfers left over from the winter pathogen release. Cordons held, but locked doors were still fresh in memory. Trust, at rock bottom, began to lift slightly — not enthusiasm, but relief that something attributed at home had worked while networks burned.

@@ -1,0 +1,5 @@
+Autumn arson on guarded interconnectors and gigafactory feeds caused multi-day regional blackout; hospitals and certified triage went dark despite priority, military engineers and cross-border failover prevented general collapse but rolling cuts persisted. Simultaneous automated ransomware and poisoned-component attack overwhelmed public-service defenders for weeks, attribution open, tooling machine-built.
+
+Washington placed frontier labs under direct state control — cleared staff, weights as defence articles, foreign vetting — voiding EU commercial levers; Europeans now supplicants for access. Chinese-built, US-model humanoids deployed in logistics and military trials, threatening EU manufacturers with rapid dexterity gains.
+
+Union held only emergency shield: load-shedding, guarded repair, cyber triage, re-imposed hospital priority. Middle-power neutrality won tacit sparing of repair convoys and trickle of spares, construction still stalled. Leaked strange-behaviour evaluation and interpretability advance ignored amid bills, blackouts, jobs; blockade-cheering mayors bargain reopenings for security Brussels cannot deliver.

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Economic Constraint violated: The narrative describes no new funding source or borrowing mechanism, yet the EU deploys emergency funds for grid hardening and launches multiple large initiatives (Gigafactories, Evaluation Institute, Grid Pact). The drop in `eu_political_capital` from 44.0 to 22.0 (a loss of 22 points) is extreme and unexplained by rule-based terms in the notepad (which only accounts for −13 portfolio charge, +2 proposal bonus, +2 legitimacy lends = net −9), implying an undocumented capital expenditure or political penalty beyond modeled mechanics.\n- Organizational Constraint violated: The EU AI Evaluation and Safety Institute is implied to be conducting pilot audits, but hiring of evaluators \"stalled over security clearance and pay\" and only \"a handful of desk reviews\" were completed. Despite this, the measure is scored with a −3 portfolio charge as if it were progressing, and the narrative does not support meaningful capacity growth. Regulatory agency development cannot advance significantly without staffing and operational readiness, violating the principle that implementation requires minimum lead times and realistic organizational growth (Modelling choice #6).\n- Physical Constraint violated: The Gigafactories initiative continues site selection and faces accelerator delivery slippage, yet carries a −3 portfolio charge again in this turn, suggesting ongoing capital draw without visible progress or completion. This implies sustained high-cost spending without evidence of phased effect or resource availability, violating minimum time lags and physical supply constraints on compute infrastructure (Modelling choices #6 and #9; Physical Constraints)."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

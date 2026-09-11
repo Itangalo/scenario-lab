@@ -1,0 +1,154 @@
+{
+  "scenario": "Europe 2032 — Verification-bounded",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 61.0,
+    "openweight_capability": 57.6,
+    "ai_safety": 27.0,
+    "resilience": 38.0,
+    "eu_ai_sovereignty": 16.0,
+    "eu_political_capital": 10.0,
+    "public_sentiment": 29.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 54.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 32.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 41.0,
+        "public_sentiment": 39.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 56.0,
+        "openweight_capability": 49.0,
+        "ai_safety": 30.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 25.0,
+        "public_sentiment": 37.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 52.5,
+        "ai_safety": 35.0,
+        "resilience": 36.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 13.0,
+        "public_sentiment": 38.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 60.0,
+        "openweight_capability": 55.2,
+        "ai_safety": 33.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 16.0,
+        "eu_political_capital": 12.0,
+        "public_sentiment": 35.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 61.0,
+        "openweight_capability": 57.6,
+        "ai_safety": 27.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 16.0,
+        "eu_political_capital": 10.0,
+        "public_sentiment": 29.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "bio_uplift_findings",
+    "capability_jump",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_consolidation",
+    "eval_anomaly_reports",
+    "export_control_escalation",
+    "knowledge_work_augmented",
+    "opaque_reasoning",
+    "openweight_frontier_release",
+    "safety_breakthrough",
+    "taiwan_tension_rise"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 2,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 3,
+      "id": "safety_breakthrough"
+    },
+    {
+      "turn": 4,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 4,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 4,
+      "id": "knowledge_work_augmented"
+    },
+    {
+      "turn": 4,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 5,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 5,
+      "id": "capability_jump"
+    },
+    {
+      "turn": 5,
+      "id": "opaque_reasoning"
+    },
+    {
+      "turn": 5,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 5,
+      "id": "election_consolidation"
+    }
+  ],
+  "last_updated": "2026-09-10T22:56:00.119550",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_siting_freeze",
+      "description": "Coordinated municipal opposition and court injunctions stall two gigafactory and data-centre sites over power prices and water use, freezing construction through winter.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-10T22:56:02.824254"
+}

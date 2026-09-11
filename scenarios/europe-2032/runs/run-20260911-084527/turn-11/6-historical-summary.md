@@ -1,0 +1,7 @@
+Second windless freeze (Nov 2030) and Feb 2031 model-written ransomware + poisoned component degraded clinics, payrolls, grid portal to paper/manual; EU load-shedding triage and Brussels joint teams restored essentials where landed but rationing, bills, thin rural coverage persisted.
+
+US advances in batteries and code/maths/intrusion tooling verifiable not reproducible in Europe under tighter US controls; near-frontier open releases closed gap to weeks, downloaded by hundreds of thousands onto unrecallable private servers and openly used by municipal technicians for triage/patching.
+
+Spring 2031 layoff freeze in routine coding/analysis/drafting/support plus arrival of Chinese-built, US-software logistics robots installed by EU integrators froze out young warehouse staff and junior coders; welfare fraud-risk scoring scandal showed systematic cuts to vulnerable claimants with rubber-stamp oversight despite conformity paperwork, prompting Brussels suspension, re-audits, log publication.
+
+In response EU opened transition guarantee — wage insurance, six-month paid reskilling, municipal hiring bridges with first-year EU co-financing — uptake real but slow amid rationing memory and rights backlash.

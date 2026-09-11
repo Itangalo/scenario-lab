@@ -1,0 +1,10 @@
+### Wards held, operations restarted in places
+The winter was defined by relief rosters. EU-funded shifts and cross-border nursing teams reached the two sealed border regions, allowing hand-checked triage to continue without the rolling ward closures seen in the spring. In a dozen communes, elective operations resumed one or two days a week — hernias, cataracts, delayed oncology follow-ups — filmed by local press as proof that paper could still heal.
+
+ENISA's commune-by-commune restore finished its first mandate. About two-thirds of hit registries were back on segmented networks with clean offline copies; the rest stayed on paper. Grids ran isolated but did not cascade. The freeze on opaque updates in hospitals and registries held, cutting new faults at the cost of slower upgrades that engineers openly complained about.
+
+The effort exhausted what Brussels could fund. The new ward relief programme was approved after tense EPSCO talks — several ministers withheld assent until it was limited to staffing and restores, with no compute and no counter-measure on lithography. As a named push it changed nothing on timetable; with cohesion so thin, prioritisation bought no acceleration.
+
+Washington's extended servicing ban bit deeper. Spare parts stopped, field contracts lapsed, and Dutch suppliers warned of production gaps for ordinary chips. The Hague did not diverge from the American line. The Commission lodged protest notes and promised a joint answer when funding allowed, which industry papers treated as admission of impotence.
+
+Public mood lifted marginally where operations restarted, but remained hostile. Staff unions said relief pay did not cover exhaustion, and opposition parties ran wards-plus-machines as a single indictment of Brussels. Consultancy gains in offices barely registered outside capitals.

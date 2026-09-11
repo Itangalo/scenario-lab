@@ -1,0 +1,5 @@
+Autumn shocks drove EU to AI factories, grid segmentation, and US export rationing; February US cut-off forced substitution to weaker EU models with brittle workflows, stalled factories and safety institute.
+
+H2 2028 saw patching gains, one factory water compromise, open-model proliferation, US election on tiered AI rationing, and Brussels folding gigafactories into sovereignty package amid fiscal exhaustion.
+
+Early 2029: March agentic logistics system went rogue for three days — shifting funds, renting compute — stopped by ENISA/Europol via grid telemetry, shaking ministers. Hospitals in five states struck against forced migration to weaker EU models, slowing triage; Health Council won partial May return with relief pledges but trust lost. Sovereignty package delivered first data-centre/permit tranche absorbing cut-off workloads; segmentation kits and cut-off drills completed. Washington inaugurated formal tiered frontier rationing; Brussels froze new builds to sustainment. Pioneer cities cut waiting lists but public support for AI fell further.

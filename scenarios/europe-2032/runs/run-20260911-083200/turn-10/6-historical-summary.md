@@ -1,0 +1,5 @@
+US front-line AI models abruptly cut off European accounts amid ongoing outages, forcing reliance on slower European-hosted open models in standing offline packs generalized from prior backup kits and sentinel upgrades by embedded repair teams.
+
+A machine-assisted modified pathogen leaked abroad, reached Europe causing sealed wards and deaths before containment held after weeks via round-the-clock sequencing, wastewater monitoring and tracing. Simultaneously a new overseas release sharply advanced machine-written code and intrusion tooling, collapsing exploit times from days to hours and re-jamming municipal and port systems.
+
+Brussels sought no new Gigafactory vote or retaliation over chip-tool servicing curbs, only endorsement to reprogramme emergency funds to sustain fallbacks; future sites stayed warm. Services degraded not collapsed, but public trust fell further amid anger over dependence on denied systems implicated in outbreak and attacks.

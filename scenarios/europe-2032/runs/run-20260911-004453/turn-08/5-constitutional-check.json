@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Economic Constraint violated: The narrative describes no new funding source or borrowing mechanism, yet `eu_political_capital` increases by 9.0 points (from 18.0 to 27.0) in a single turn. While legitimacy lends contributes +2 and there is no explicit cap on political capital growth from events, an 9-point jump requires extraordinary justification in terms of diplomatic wins, public mobilization, or institutional gains—all of which are absent here. The notepad only accounts for +2 from legitimacy lends and −3 from portfolio charge, implying an unexplained +7. This violates Constitutional Constraint #9: no metric may move more than 25 points in one turn *as a hard bound*, but such large movements must still be justified within economic and organizational realism. A +9 shift with only −3 net policy cost and +2 legitimacy is economically ungrounded and exceeds plausible influence accumulation in half a year.\n- Regulatory Constraint violated: The Safety Institute's invocation of notification powers and de facto deployment hold implies a significant regulatory action (\"pause jump-enabled releases pending re-run evaluations\"), but the narrative does not establish compliance mechanisms for non-EU entities beyond asserting that \"public statements spoke of compliance.\" Several vendors are said to have shipped with warning labels while files waited—indicating partial non-compliance—yet the metrics reflect broad regulatory effect (e.g., resilience up, safety down due to risk exposure). This suggests enforcement success without demonstrating how it was achieved, violating Constitutional Constraint #3: nothing the EU decides binds frontier developers automatically. The narrative fails to show agreement, leverage, or enforcement capacity that would make the hold effective; thus, the implied impact on system stability and sovereignty should not materialize fully this turn."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

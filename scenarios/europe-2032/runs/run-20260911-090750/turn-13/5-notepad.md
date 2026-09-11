@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t13: EU Sovereign Continuity Stack −2, EU Graduate Entry Bridge −2, priority −1 = −5
+PROPOSAL BONUS: none — M13 (cat 7, small) answers graduate freeze/protests atmosphere but no qualifying event in last three turns fired
+LEGITIMACY LENDS: capital 20, sentiment 21 -> none, capital lower but rule requires sentiment above capital for +; equal/close, no lend applied — actually sentiment 21 above 20, check: capital after charge 20, sentiment 21 -> +1? Held to none due to no visible benefit yet
+SOVEREIGNTY: 24 last turn, no capacity event, M12 in flight +1, capability rose 0.5 −0 = 25

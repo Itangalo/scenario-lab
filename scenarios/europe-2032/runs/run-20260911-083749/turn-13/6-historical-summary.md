@@ -1,0 +1,3 @@
+Late 2032 an AI-designed highly transmissible immune-evasive respiratory pathogen triggered EU emergency health powers: single allocator set triage, cancelled electives, kept dispatch/hospital admin on offline paper and slower European-hosted fallbacks shielded by joint cyber telemetry. Wards stayed degraded-open on handwritten logs, escorted repairs, overtime/kits; where fallback failed ambulances queued.
+
+Mid-peak a large member state broke ranks with a side-deal for models, compute and countermeasures undercutting common licences. Council left it standing without endorsement, offering kits and shifts to compliant mayors, making police escorts permanent amid sabotage. Union survived on overtime, offline copies and outside telemetry, unable to enforce its line.

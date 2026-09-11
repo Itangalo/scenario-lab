@@ -1,0 +1,10 @@
+### The lights stay on, the jobs go
+Autumn brought a grim steadiness. The clean-image pools and isolation drills rehearsed under the containment shield began to pay: when tainted telemetry resurfaced in grid maintenance software in October, two operators islanded substations within minutes and restored from Brussels-held images in hours, not weeks. Payment clearing still stuttered, but no water utility went manual this half. Engineers credited the pooled allied telemetry cell — the first time European operators saw the intruder at machine speed.
+
+The recovery pact formally closed in November, its hardening checklists now standard in hospitals and municipalities. Officials spoke of degradation rather than collapse.
+
+Any relief was buried by work. White-collar displacement, long forecast, arrived as a wave: junior software posts, clerical pools, translation and logistics planning thinned in the same quarter. Studies showing augmentation without job loss were quoted in Brussels and mocked in Lyon and Łódź. Then came machines. Chinese-built humanoids appeared in logistics pilots at Rotterdam and in supplier catalogues across the industrial south, dexterous, cheap, and running control stacks Europe neither built nor could inspect.
+
+The Commission's answer was the Livelihood Bridge — EU top-ups to short-time pay, wage insurance and retraining vouchers run through national job centres. Launch was fast on paper, ragged on the ground. Two member states haggled over co-financing rates; public employment services, starved for years, could not place the newly displaced. Clerks retrained for warehouse roles watched those roles advertised for robots.
+
+By December, town halls that had gone dark last winter stayed lit, but the crowds outside them were angrier — not at blackouts, but at irrelevance.

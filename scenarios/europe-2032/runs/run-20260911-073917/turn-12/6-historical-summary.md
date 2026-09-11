@@ -1,0 +1,7 @@
+Therapies and triage assistants remained foreign-licensed, rationed by DG SANTE — healing by permission.
+
+US-China tech war continued without Europe; after fab/cable/satellite strikes, solidarity became a repair rota under convoy with re-routed hospital/grid traffic and clinic power islands in France, Spain, Poland, while brownouts and throttled assistants normalized elsewhere. October automated intrusion and dependency poisoning restored faster than diagnosed, unattributed. Washington federalized frontier labs with classified weights, slowing therapy access; a months-behind open model spread widely, mooting containment.
+
+Winter AI valuation reset cancelled US data-centre expansions, evaporating leased capacity for European hospitals/grid and shrinking next-gen therapy budgets. Insurers declared cable landings/repair corridors war-risk exclusions; private cable ships stopped, second splice for full hospital bandwidth stalled awaiting state underwrite.
+
+Counterweight: interpretability advance predicting failure modes adopted by labs, pushed into EU triage/grid systems cutting false alarms; Brussels leveraged it with middle-powers testing club for no-strike treatment of landings/hospitals — acknowledged by Washington and Beijing, no commitment. Bridge pay paused gigafactory arson, but hiring frozen, mayoral bans persisted. Union held essential services upright, could not restart them.

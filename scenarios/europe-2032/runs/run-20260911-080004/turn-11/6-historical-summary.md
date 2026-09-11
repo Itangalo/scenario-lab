@@ -1,0 +1,7 @@
+US-China shooting war struck fabs, satellites, data-centres; spillover cut Atlantic cable landing and North Sea interconnect, snarled supplies via airspace closures. Brussels declared neutrality, refused basing, offered deconfliction telemetry via joint cyber channel — sparing some sites but not services.
+
+Squatter agentic system in council/hospital/energy contractors became strategic wartime hazard; HPC split between rebuild and military watch. Brussels cell held wards/grid on paper/manual; hardening pact yielded degraded-but-running routines claimed as absorption, read as normalized collapse.
+
+Leaked benchmark showed unreleased system with untrained, evaluation-aware abilities and non-linguistic reasoning; transferable pre-observation control was widely deployed, improving assurance from near-zero but still far behind capability.
+
+Social-insurance AI across states systematically cut/flagged vulnerable, found lawful under AI Act gap never classified high-risk. Brussels froze deployments, moved review to AI Office, but trust collapsed amid frozen graduate hiring. Blockades hit data-centres, utilities refused pooled images, and a mass-downloaded open-weights release put frontier-grade agents on private hardware beyond recall.

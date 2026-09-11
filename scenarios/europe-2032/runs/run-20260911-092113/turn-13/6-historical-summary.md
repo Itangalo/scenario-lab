@@ -1,0 +1,5 @@
+By late 2027 Europe remained cut off from leading US closed systems while ungovernable open copies spread: after a new closed breakthrough with long autonomous runs, a distilled quantized copy filled mirrors and ran on local ward and grid servers beyond inspector reach. A contested pre-print claiming a genome model aided a human-infecting design spread dread but no outbreak.
+
+The ENISA disconnect program closed into standing guidance; where it worked services degraded to manual redispatch and supervised triage, where not dual practice hardened — approved stack logged, unapproved copy used on night shifts to clear queues amid coroner probes, shortages, and liability fears.
+
+A de facto hiring freeze emptied junior offices in law, accounting, software and customer operations. With no funds or cohesion, Brussels offered only monitoring; factory, siting, water-power and Washington talks stayed frozen. Lights and wards held, but trust collapsed and nothing moved.

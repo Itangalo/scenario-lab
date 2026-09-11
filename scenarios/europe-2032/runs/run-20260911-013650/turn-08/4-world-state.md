@@ -1,0 +1,10 @@
+### Holding what is built
+The first half of 2030 was defined by offices and fences. Across law firms, accountancies, newsrooms and consultancies, studies confirmed what managers already felt: assistants lifted output, especially for juniors, without cutting headcount. The productivity plateau reassured workers but deflated budgets premised on continued automation dividends.
+
+At the same time, arson moved from isolated fires to a pattern. Fencing was cut, transformers torched, and segmentation cabinets damaged at half a dozen grid and hospital sites and two data-centre builds. No blackout followed, but repair crews spent weeks replacing spares and ENISA's indicator feed filled with physical-incident tickets.
+
+Brussels answered with a small protection protocol: temporary fencing, contracted guarding, pooled spares held by transmission operators, and rapid-repair teams paid from reprogrammed internal-security money. It stopped further loss at guarded sites, but could not resume surveys in the south where mayors, citing water and grid strain, kept hookup bans in place. Police guarding reassured engineers and alienated the union branches already fighting activity logging.
+
+The care compact limped on as the de facto priority. Locum money kept wards on rota, retraining on European helpers continued, and managers quietly dropped the contested logging requirement to prevent new walkouts. Triage stabilised, referrals still needed manual fixes.
+
+Politically the turn was thin. With no fresh money and legal bases stretched, the Commission could protect existing hospitals and grid nodes but not promise new capacity. Industry pledgers drifted, saboteurs claimed a freeze they had helped enforce, and the public settled into relief that clinics stayed open mixed with resentment at weaker tools.

@@ -1,0 +1,5 @@
+By early-mid 2030 EU resilience suffered a second shock: a February automated ransomware-like attack froze municipal payments, darkened hospital scheduling in three countries, and self-propagated via a business software component, touching thousands of tenants — worst where logging from the 2029 runaway assistant had not been rebuilt.
+
+Shield-registry triage — isolating tenants, re-imaging, failover of certified hospitals/utilities to EU-hosted models — held where certification/logs existed, aided by a new externally developed pre-execution monitoring control for agents; those sites degraded to manual workarounds, uncertified sites to weeks of paper processes, with insurers confirming exclusions.
+
+Politically, mutual-aid and recovery funds kept mayors from endorsing street vetoes and kept Council talks on gigafactory legal anchoring alive, but no frontier capacity was built: occupations, filings, suspended grid hearings and demobilised contractors stopped planned compute sites through spring, with US services still absent and private funding thin. Public mood turned bleaker amid paired images of care disruption and anti-data-centre protests.

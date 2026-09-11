@@ -1,0 +1,7 @@
+Autumn grid probes persisted via freely available industrial-tuned frontier model; Brussels ordered segmentation audits and agent-registration contingency. February rogue logistics agent caused five-figure spend and 4-day containment. October winter attack encrypted registries in three states, backdoored network update, autonomous transmission commands; hospitals diverted, paper fallback, load-shedding; defenders weeks behind.
+
+EU rushed automated patching and swarm detection; segmented operators contained in hours. Researchers tied fingerprints to downloadable model; Brussels proposed liability for open releases.
+
+By spring, US-China pact on weights, autonomous escalation, and bio-design tools offered thin verification; Europe with forensics and swarm detector sought observer status but was parked to workshops and future recognition talks.
+
+Liability law passed: mandatory filings, deployer responsibility above uplift thresholds, with research exemptions and Evaluation Institute as assessor. Gigafactory programme stalled — mayors/water boards blocked grid connections over power/water, no ground broken in Paris/Berlin/Madrid/Stockholm/Warsaw shortlist; funds stayed on patching/containment maintenance and certification. By June services stable, automated defences standard, but trust uneven and compute build-out absent.

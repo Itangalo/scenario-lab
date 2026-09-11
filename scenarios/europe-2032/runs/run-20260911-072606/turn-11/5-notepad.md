@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: M11 EU Wartime Energy-Compute Continuity Shield −2, M12 EU Neutral Ground and Life-Critical Inference Reserve −2, priority has no effect and no cost below 20 = −4
+PROPOSAL BONUS: EU Neutral Ground and Life-Critical Inference Reserve (cat 6, small) +3 — catastrophic great-power war on infrastructure and rationed medical inference last two turns and this answers it directly but small and protective only
+LEGITIMACY LENDS: capital 9, sentiment 11 -> +2
+SOVEREIGNTY: 19 last turn, no capacity measure finishes, no cat4 in flight +0, export_control_escalation t11 −1 (allied licences kept, rationed in practice), capability rose 1.5 −0 = 18

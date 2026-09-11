@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t7: M7 EU-US Structured Frontier Access and Joint Evaluation Pact −2, M8 EU Cyber Restoration and Gigafactory Continuity Taskforce −2, priority has no effect and no cost as capital below 20 = −4
+PROPOSAL BONUS: EU Cyber Restoration and Gigafactory Continuity Taskforce (cat 6, small) +3 — cyber_major_incident and gigafactory siting blockade both fired this turn and this answers both directly
+LEGITIMACY LENDS: capital 8, sentiment 11 -> +2 capped by sentiment arithmetic included in capital total
+SOVEREIGNTY: 19 last turn, M1 InvestAI Gigafactories finishes t7 +4, no in-flight cat4 bonus, supply_chain_coercion t7 −3, capability rose 3.0 −1 = 19

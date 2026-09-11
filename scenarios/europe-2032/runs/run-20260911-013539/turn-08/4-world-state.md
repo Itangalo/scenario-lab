@@ -1,0 +1,11 @@
+### The strait closes
+January brought the news every contingency plan had filed under unthinkable: warships ringing Taiwan, container checks turned into a quarantine, advanced chip shipments stopped. Overnight every Brussels AI memo became a security memo. Foundry slots for Europe were frozen, American licence queues lengthened, and the spring tranche of EU data centres was told to make existing cards last for years.
+
+The Commission answered with what little leverage it held. Trade and industry officials pooled servicing contracts, spares and optics know-how around the Dutch lithography chain into a jointly managed pool, offered to Washington, Tokyo and Seoul only against guaranteed compute quotas and foundry space for hospitals, grids and water systems. Talks moved fast for a blockade — by June a provisional understanding on spares-for-slots was initialled — but no chips flowed yet, and member states argued over who had given away crown jewels for promises.
+
+### Small lights in a dark semester
+Two domestic developments kept the health pact alive. In two pilot regions, clinician-fixed referral software on EU-hosted models cut waiting lists enough for local papers to notice, and nurses cited it in joint review boards. At the same time, ENISA began running new interpretability checks on deployed triage and grid-control models — a technique the labs themselves adopted — which let ministers claim deployed systems were at last becoming legible.
+
+Neither offset the mood. With downgraded models still writing discharge notes and data-centre water permits now contested in council meetings where utility managers sat beside doctors, public anger at AI deepened. A photonics finding from Delft and Eindhoven — AI-designed patterning that could ease pressure on lithography — was celebrated in specialist press as proof past sovereignty spending had produced science, but meant no new capacity.
+
+Essential services held, degraded but running. Politically, Brussels ended June with less room than it started.

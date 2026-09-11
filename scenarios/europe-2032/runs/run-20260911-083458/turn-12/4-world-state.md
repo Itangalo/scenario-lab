@@ -1,0 +1,10 @@
+### The wards hold, the network breaks
+Winter did not lift the pneumonia crisis so much as bury it under a second one. In February a largely automated assault swept public services — hospital IT, municipal administration, water and power operators hit through a poisoned software update and fast-moving ransomware. Paper triage wards in the three hardest-hit states were suddenly also offline dispatch wards. Clean backups were days old, restore queues stretched for weeks, and television ran split screens of nurses with clipboards and engineers with cables.
+
+The new Fallback Care and Bio-Response Corps, completed just as the wave landed, is why the damage stopped at disruption. Reserve medical teams, offline protocols and wastewater surveillance kept emergency care running in degraded mode. Services degraded rather than stopped, and ministers could point to wards that stayed open. It did not look like control — defenders were visibly behind for months, and who ran the tooling remained unproven — but it looked like absorption.
+
+Over the same weeks came genuinely good medicine. Tailored therapies for previously untreatable conditions reached ordinary clinics elsewhere first, then arrived in Europe under an emergency licensing and procurement push. Health ministers tied first deliveries to the fallback wards and to domestic manufacturing and locally hosted prescribing support, and where that worked families felt it immediately. Where it stalled — missing reagents, delayed parts, dosage software waiting on foreign maintenance — the same therapy felt like a demonstration of dependence.
+
+That dependence tightened. Washington tightened chip and model controls again, keeping volume licences for closest buyers while others were cut to rationed queues. For Europe it meant no new servicing contracts, spare parts held for review, and biotech tooling caught in the same net. Brussels answered by running its middle-power bargaining pool as a shield, offering pooled evaluation work for joint maintenance and supply, but by June it had mandates and talks and no machines.
+
+Offices kept humming, but no one talked about productivity. Trust fell again.

@@ -1,0 +1,15 @@
+### The attack that ran itself
+Autumn brought the incident defenders had feared. A largely automated ransomware sweep moved across municipal systems, hospital IT and two grid operators within days, using freshly assembled exploits that triage teams had never seen. Appointments were cancelled, billing and records fell back to paper, and power distribution degraded in places without stopping. Attribution remained open months later; everyone agreed the tooling had been machine-built.
+
+The joint telemetry and sequencing links built the year before kept the worst from cascading. Services bent rather than broke, but television images of darkened council offices and nurses reading from printouts made the defence look behind. Post-incident analysis noted that openly available weights from the prior generation were widely reused in the tooling, with diffusion and reuse helping openweight capability continue to converge toward the frontier even without a new frontier open release this turn.
+
+### Concrete pours, teams deploy — but no chips yet
+In the same half-year the first InvestAI gigafactory sites moved from paper to ground under the funding and clearances secured in prior turns. Planning clearances and grid priority for the two stalled locations converted into fenced compounds, substation works and procurement orders. No chips yet, and full operation remains at least a turn away — Brussels could point to cranes as proof the sovereignty bet was real, but the sites are not yet delivering compute.
+
+Because the gigafactories are still in active construction and not operational, they do not deliver their full sovereignty benefit this turn. Visible construction progress provides only a partial, interim gain, with the remainder deferred until completion, and ongoing construction drawdown partly offsets political credit.
+
+The Commission's answer to the attack was operational, not legislative, and introduced no new measure this turn. ENISA-led restoration teams were seconded to hit cities and health operators, clean backups were pushed out under emergency reprogramming, and backup reinsurance was tied to sharing telemetry. Procurement gating through the previously established black-box testing cell held for hospital and grid suppliers, and trusted-component replacements were sourced through the existing middle-power compact channels agreed in prior turns.
+
+It worked unevenly. Larger operators restored in weeks; smaller municipalities waited, and the capital that had signed its own hosting deal accepted only partial help on looser screening. Methods for testing unreadable models still missed behaviours even as they caught others, which left safety net down despite enforcement holding.
+
+Public mood fell sharply. Useful assistants no longer offset fear of unreadable systems and visible service failure. Local opposition to new data-centre builds hardened into blockades and court filings, and seizures of parcels with unscreened synthesis material continued without a common rule to stop them.

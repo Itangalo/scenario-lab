@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t11: EU Rogue Agent Containment and Essential Services Shield −2, EU Entry-Work Guarantee and Wage-Insurance Transition Fund −2 = −4 + priority has no effect and no cost as capital below 20
+PROPOSAL BONUS: EU Entry-Work Guarantee and Wage-Insurance Transition Fund (cat 7, small) +2 — frozen graduate hiring and promised transition plan from last two turns, answers displacement pressure directly but small and employment effect not yet visible
+LEGITIMACY LENDS: capital 9, sentiment 16 -> +2
+SOVEREIGNTY: 16 last turn, no capacity event finished, no cat 4 in flight, export_control_escalation t11 −2, capability rose 2.0 −1 = 13

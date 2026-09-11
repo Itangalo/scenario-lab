@@ -1,0 +1,7 @@
+By mid-2032 Europe's February US-model cutoff eased only partially: conditional servicing of Dutch/German/French lithography/lenses/chemicals, coordinated with Tokyo, Seoul, Ottawa, bought limited clinical restoration and a first licensed chip tranche, but no full restoration; oncology/ministry access remained limited and grey.
+
+A near-frontier open-weight model released on a Tuesday spread to hundreds of thousands of machines, including wastewater-evasion guidance previously flagged by two university labs. Brussels forwent takedown for outward Absorption Shield — HERA reagents, simplified ENISA detectors, isolation playbooks for water plants, small clinics, municipal IT. Certified hospitals held; elsewhere rollout stalled.
+
+Rationing held tight: licensed chips to certified hospitals and patched utilities first; universities, small firms, retraining centres throttled despite local weights, lacking compute to run them. Income and Retraining Guarantee paid below rents in capitals; entry hiring frozen without layoffs. Diverted licensed chips fed a denied grey market in the holdout capital outside common export criteria. Tailored cures reached ordinary clinics, but hope thinned alongside unrecallable offline evasion help.
+
+Baselines persisted: middle-power compact, no new home fund, flat spending, procurement containment, externally built ENISA tools, black-box evaluation-aware models, partial HERA sequencing, thin US-China weights pact.

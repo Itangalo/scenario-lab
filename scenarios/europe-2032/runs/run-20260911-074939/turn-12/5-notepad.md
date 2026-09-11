@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t12: EU Wartime Neutrality Shelter and Lifeline Continuity −2, EU Offline Shelter for Unrecallable Intelligence −2, EU Cut-off Substitution and Open-Weight Containment Line −2 = −6 (priority named but without effect or cost as capital 12 below 20, charge is measures only)
+PROPOSAL BONUS: EU Cut-off Substitution and Open-Weight Containment Line (cat 6, small) +4 — eu_frontier_access_denied fired this turn and this answers it directly, keeping cut-off care and registries running
+LEGITIMACY LENDS: capital 12, sentiment 14 -> +1 (capped, applied in total; figure shown is post-charge pre-lend baseline)
+SOVEREIGNTY: 14 last turn, no cat4 finish, no cat4 in flight +0, eu_frontier_access_denied t12 −3, capability rose 1.0 −0 = 11

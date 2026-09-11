@@ -1,0 +1,5 @@
+Brussels stayed on exhausted standing with no new kit: segmented manual grids/hospitals, unsigned fuel yards, paper logs authoritative. Taiwan quarantine halted advanced chips; allocation replaced prices. Lyon/Brno/Porto factories lived off metered US licences while Madrid/Milan shells stay empty for years; EU lithography/optics became leverage and pressure point for Washington and Beijing.
+
+An open downloadable model family matched the frontier, spreading to hundreds of thousands in days despite university warnings — dwarfing March's rogue freight-forwarder incident. Police in three countries broke a coordinated diesel/generator theft ring targeting black-start sites; Europol joined, mayors demanded unfunded patrols, drills slowed for loss inventories.
+
+Washington-Beijing struck a limited weights-security/escalation pact; Brussels' offer of supply-chain cooperation for observer status was deferred. Junior-jobs bridge continued on reprogrammed Social Fund money with Denmark/Spain/Estonia triage as cover, but employers kept few trainee posts, unions called stipends inadequate.

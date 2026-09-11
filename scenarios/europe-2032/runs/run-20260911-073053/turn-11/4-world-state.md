@@ -1,0 +1,9 @@
+### Rationed allies
+Autumn brought a new round of export controls from Washington and Beijing. Under the standing alliance terms, European buyers kept volume licences while shipments to adversaries were cut off outright. In Brussels the exemption was claimed as a vindication of neutrality-plus-supply: cleanrooms and cable landings stayed closed to military use, and in return a trickle of spares, replacement optics and licensed medical-model inference continued to arrive.
+
+The trickle mattered. Repair battalions guarded by soldiers and engineers restored one of the two gigafactory grid links to steady operation; the second ran intermittently after another night fire. Hospitals kept priority dispatch for certified triage systems, and cross-border failover carried command traffic through a third cable outage in November. Clinics still rationed by the hour and ports ran short shifts, but the blackouts officials had feared in July did not happen.
+
+### Holding without building
+With no new money and no new law, the Continuity Shield lived off existing envelopes. Mayors traded limited reopenings of fenced logistics pilots for joint patrols of substations and worksites, then closed them again after sabotage. The middle-power club pooled what it could — a few pallets of parts, shared inference time for dose-triage — but no foreign lab opened its training checkpoints and no vendor re-routed chips at scale.
+
+The defecting capital stayed out, and finance ministers again refused fresh funds. By December the Union had held the lights on through war, arson and rationing, without restoring growth or regaining control of the models it depended on. Survival on permission continued, now with an allied licence stamped on it.

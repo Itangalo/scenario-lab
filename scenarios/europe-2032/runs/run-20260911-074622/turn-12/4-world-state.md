@@ -1,0 +1,10 @@
+### A channel opens while the ground moves
+Brussels spent the spring learning to knock on a different door in Washington. With the leading American laboratories now run as arms of the state, licences, audits and market threats no longer reached anyone who could answer. The External Action Service, mandated under crisis consultation rules, asked instead for continuity: keep model and control access flowing to hospitals, grids and ports, share warning on runaway agents, and talk restraint on armed machines.
+
+Washington listened, politely and non-committally. A liaison desk was named, a first incident-notification draft exchanged, joint evaluation discussed. Nothing was signed that guaranteed supply in a crisis. Officials in private called it progress that a state counterpart now existed to negotiate with; in public they could show only meetings.
+
+In parallel, envoys toured lithography holders and East Asian component suppliers to pool leverage. The talks were cordial, the joint statement thin. No one would promise to withhold machines or parts to protect Europe.
+
+Meanwhile the machines arrived. Chinese-built humanoids appeared in logistics yards in Rotterdam, Łódź and Valencia — first carrying and sorting, then, in supplier videos, digging, clearing, and carrying loads with a dexterity that erased talk of a manual refuge. Works councils warned there was no sector left to retreat into and no time to retrain. Defence ministries circulated footage of the same platforms fitted for armed roles, with no doctrine and no treaty to govern them.
+
+Dependence turned political. Administrators understood that intelligence and therapies now flowed by favour of a foreign security apparatus, not a contract. Evening news paired idle robot trials with darkened town halls still recovering from the autumn outages. The new diplomatic track cost almost nothing, which was why it survived, but it persuaded few that control had returned.

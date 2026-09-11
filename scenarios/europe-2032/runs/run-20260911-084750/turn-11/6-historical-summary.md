@@ -1,0 +1,5 @@
+By late 2031 the Union's cyber recovery corps kept water plants and emergency wards islanded with pre-paid patches and daily isolation notes, but bookings, payroll, building and grid systems ran degraded-slow. Attribution never arrived, and mayors received only fractions from a single cyber/energy claims window.
+
+Europe deepened dependence on foreign stacks: tailored therapies designed on US models/compute via tiered queues reached clinics, while Chinese-built robots with US control software spread through Rotterdam to Gdansk warehouses, erasing picker and junior logistics jobs. Repair, care and construction stayed human; army used machines only for resupply/patrol. Local open models continued for log triage beyond recall.
+
+Graduate protests over AI-blocked entry jobs merged with anger over bills, dark suburbs and curtailed compute; rumours grew of data-centre blockades and utility strikes. By December 2031 services stood degraded, trust did not.

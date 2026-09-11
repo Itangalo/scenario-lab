@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t3: InvestAI Gigafactories −3, Tech sovereignty package −3, EU AI Evaluation and Safety Institute −3, EU Critical Systems Shield −3, EU–Middle-Power Supply-Chain Coordination Framework −2, priority −1 = −15
+PROPOSAL BONUS: none — new coordination framework answers side-deal and open release, but with no displacement crisis felt after office productivity gains, bonus does not apply
+LEGITIMACY LENDS: capital 4, sentiment 35 -> +2 (included in capital total, capped below sentiment)
+SOVEREIGNTY: 18 last turn, no capacity finish, Gigafactories in flight +0, middle_power_coalition t3 +2, capability rose 2.0 −1 = 19

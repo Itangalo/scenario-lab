@@ -1,0 +1,10 @@
+### A win to copy, a strait to watch
+Autumn brought the first attributable European win in years. In a handful of cooperating cities, audited triage assistants and fast-decision desks cut clinic waiting lists and cleared backlogged permits in days, with logs published and overrides recorded. Local press credited Brussels procurement standards rather than an American product. The Commission moved to bottle it: a standard pack offered to willing municipalities, with workload limits, a funded redress desk and audit access meant to coax insurers and unions back.
+
+Uptake was real but narrow. A second wave of mayors signed up; underwriters still refused blanket cover, insisting the liability pact was paper without statute, and two large unions held out for law before restarting automated decisions in benefits. The stalled civic repair thus split again — health triage expanding, welfare automation still frozen.
+
+At the same time attention swung east. Extended manoeuvres around the strait, rising shipping insurance and an expulsion left energy and shipping desks running disruption drills. Europe's seat in the pooled defence cell proved its value: shared intrusion feeds and backup playbooks kept early warning flowing without new money. But dependence showed — with chip slots still cancelled and the fenced gigafactory site still idle, officials privately conceded borrowed containment would be fragile if shipping choked.
+
+Polite talks with The Hague, Tokyo and Seoul on lithography licensing stayed polite and unmoved. American labs, slowed by their own inward turn, bought time without giving Europe capacity.
+
+By December, mood had lifted slightly from hostility toward ambivalence, but legitimacy stayed conditional: help that could be seen was welcomed, systems ruled lawful while harming people were not.

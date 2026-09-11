@@ -1,0 +1,10 @@
+### Backups, ransom notes, and a cure
+By autumn the fallback stack was finally running where the American cutoff had hurt most. Hospital registries and municipal counters taken off foreign models were moved onto EU-hosted hardened systems, with EuroHPC queues reserved for clinical and administrative inference. Engineers called it partial; mayors called it the first time in a year something came back.
+
+Relief was short. A largely automated ransomware wave swept booking, billing and payment desks across several member states, built with freshly generated tooling and spread through unpatched contractors. Districts with shared telemetry and enforced human approval restored service in days with French-Dutch help; others stayed dark for weeks, paper forms returning to lobbies. Attribution stalled within days.
+
+In the same months came news of tailored therapies for diseases long deemed untreatable, developed on frontier models abroad. Health ministries rushed to announce European delivery: prescribing support on EU-hosted models, data kept in the Union, every plan signed by a clinician, procurement tied to telemetry sharing. The programme was only starting, clinics saw triage queues first and cures second, and many patients understood the cure itself still depended on compute Europe did not control.
+
+Work changed more quietly. Routine coding, standard analysis, first drafts and tier-one support thinned sharply; entry hiring in those functions did not recover. Offices produced more with fewer juniors, newsrooms automated summaries, but no wider wave arrived. Forecasts of mass displacement were pushed to next year while resentment hardened where counters had gone dark.
+
+Brussels held one priority and refused a second front, keeping isolation gates and continuity playbooks enforced while pushing clinical deployment. Co-financing stayed hesitant, staffing for paper-to-digital handover only partly funded, and trust polls fell to new lows even as use continued.

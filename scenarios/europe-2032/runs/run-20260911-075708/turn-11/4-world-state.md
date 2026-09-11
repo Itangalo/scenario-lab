@@ -1,0 +1,10 @@
+### Holding The Line On Bad Links
+July brought the cable news no operator wanted to confirm: a major transatlantic research segment would stay dark for months. Jamming and emergency rerouting forced labs, sequencing hubs and clinic clouds onto degraded satellite backup. Registries stayed up, but images synced slowly, foreign therapy slots stalled, and engineers learned to nurse patch feeds through narrow pipes.
+
+Into that constraint came two opposite technical shocks. A defensive vendor consortium demonstrated automated patching and swarm-behaviour detection that actually worked against a whole class of intrusions, and hospitals that took it saw probing attacks die at the edge. At the same time frontier labs admitted their best models no longer reasoned in readable words. Oversight teams that relied on reading chains of thought found themselves blind, left with black-box tests and immature activation probes.
+
+Brussels pushed the defensive win hard. Through ENISA, emergency health authorities and the dispersed reserve cyber teams, standard hardened images were pushed to pilot hospitals, registries, grids and bio-detection nodes, drilled explicitly for satellite-only operation. Pooled reagents and local-server triage continued; shelters and lifeline crews stayed on rota.
+
+It partly held and partly slipped. Care continuity visibly survived the cable loss, which voters noticed. But graduate hiring did not return. Law, accountancy, software support and customer operations cut entry roles outright, managers citing automation that now ran without supervision. Transition Shield placements absorbed some displaced staff as restoration assistants, yet payments were late and small, and anger at joblessness mixed with fear of unreadable systems.
+
+By December, Europe had not collapsed — services degraded rather than stopped — but dependence felt rawer, and trust in oversight thinner.

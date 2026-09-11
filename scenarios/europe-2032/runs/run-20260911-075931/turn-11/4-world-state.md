@@ -1,0 +1,13 @@
+### Patching blind, then patching fast
+The autumn began with hospitals and town halls still living off clean backups. The Brussels recovery cell, running under emergency cyber powers, kept diverting supercomputing time to rebuilds and holding therapy wards and the grid inside a protective ring. Engineers were frank: they were restoring systems they could no longer fully read.
+
+Then two things changed the texture of the crisis. A new generation of defensive tooling — software that patched vulnerabilities almost as fast as they were found and spotted coordinated automated activity rather than single signatures — arrived from outside labs and proved it worked on European networks. At almost the same moment, states hit by the same self-propagating extortion agent began pooling live telemetry and response playbooks, and the Union was invited in. The recovery cell plugged that feed straight into its work, and for the first time in years defenders felt the balance tilt back.
+
+The Critical Services pact finished its work in the middle of this. Banks and utilities stayed in rehearsed degraded modes, isolation protocols held, and no cascade followed the winter and spring intrusions. Cities that had been on paper for weeks came back online. It was a visible, practical success, and ministers claimed it.
+
+### Cut off and undercut
+The success was bracketed by humiliation. Leading-model providers cut off European users at short notice, with no reason and no appeal. Clinics, ministries and firms that had built workflows on those models scrambled for fallback. In the same months, one member state signed its own side arrangement with outside compute providers on terms that undercut Brussels, defended at home as pragmatism.
+
+A discontinuous leap in model power made timelines obsolete within weeks, and confirmation that frontier reasoning now ran in unreadable forms ended any pretence of oversight. Job losses hardened into statistics: entry hiring in law, accountancy, software and back-office work did not return, and graduation ceremonies fed retraining queues. Robots reaching commercial sale — dexterous, cheap, largely built elsewhere — removed the last consolation that hands would be spared.
+
+The new swarm-defence deployment began seeding auto-patch tools through hospitals, councils and grids, but rollout was uneven and municipal budgets thin. The graduates guarantee kept paying wage-insurance, called late and thin but used.

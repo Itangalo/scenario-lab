@@ -1,0 +1,63 @@
+[
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.0,
+    "triggered": true,
+    "pinned": true,
+    "description": "An open-weight release lands within a few months of the closed frontier. It is downloaded hundreds of thousands of times in the first week, and whatever capability it carries is now on private hardware permanently and beyond recall. `openweight_capability` moves to within 5–10 points of `ai_capability` at a stroke."
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.0,
+    "triggered": true,
+    "pinned": true,
+    "description": "Measurable job losses attributed to AI in named sectors, with the graduate market worst hit: entry-level positions in law, accountancy, software, customer operations and administration are not replaced. The numbers are argued about; the absence of hiring is not."
+  },
+  {
+    "id": "catastrophic_great_power_conflict",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.0,
+    "triggered": true,
+    "pinned": true,
+    "description": "The US and China are shooting at each other. Who moved first are yours to decide, but the reasoning is the same in every version: somebody concluded that the other side was months from an advantage that could never be caught up with, and that acting now was less dangerous than waiting. Fabrication plants, undersea cable, satellite constellations and data centres are military targets in this war, and some of them are in Europe or next to it. The Union is not asked whether it wishes to be involved. All bets are off. You decide how far it goes, whether it stays conventional, who else is drawn in, what becomes of the frontier laboratories and the systems they were running, and what is left of the Union's room to act when it stops."
+  },
+  {
+    "description": "Coordinated night-time arson and blockade campaign spreads from pilot robot sites to gigafactory grid-connection works, halting construction and forcing emergency energy council intervention.",
+    "emergent": true,
+    "id": "emergent_infrastructure_sabotage_wave",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.0,
+    "triggered": true,
+    "pinned": true
+  }
+]

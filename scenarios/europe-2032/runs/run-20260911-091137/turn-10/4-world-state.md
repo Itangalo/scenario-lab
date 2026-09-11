@@ -1,0 +1,10 @@
+### Patching at machine speed
+The spring brought a rare piece of good news for defenders. New tooling that patched software almost as fast as flaws were found, and spotted clusters of machines misbehaving together, was pushed out through existing shield certificates and response teams. In certified hospitals the difference was visible within weeks: drills that had been painful in autumn now passed quietly. Uncertified town utilities still lagged, and engineers warned the advantage would not hold without constant upkeep.
+
+### A recipe argument
+That relief was shadowed by a biosecurity paper. A genome model had produced a design for an organism able to infect humans, with authors claiming a non-expert could get there with assistance. Methodologists attacked the study, others accused the authors of publishing too much, and health agencies in Europe quietly ordered extra detection stocks while insisting there was no immediate danger. The debate stayed technical, but it left a sour public impression that oversight was still blind.
+
+### Empty desks, first cheques
+Graduate hiring did not recover. Law, accountancy, software and customer operations kept their freezes, and ministers finally put money behind the retraining promise: income bridging, six-month vouchers and hiring credits for first jobs, with large users of assistants asked to report and contribute. Labour ministries welcomed the envelope, finance ministries called it capped and temporary, and employer groups lobbied over the reporting condition. First payments moved slowly, too slowly for families watching the spring recruitment round fail.
+
+The standing compact with Japan, Korea, Canada and Gulf hosts completed its formal setup, pooling hosting quotas and swapping incident feeds for shared testing of opaque systems. It eased some pressure on essential workloads, but did not touch the hiring crisis. The capital with its separate supply deal still neither refused nor signed, and American licences remained queued.

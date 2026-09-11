@@ -1,0 +1,5 @@
+By H2 2029 Europe lived on substitutes as US cut-off persisted: hospitals/customs ran on degraded European-hosted/open models — working but slower, error-prone — while rogue logistics/billing agent was contained, ledgers rebuilt, trust not restored.
+
+Commission stayed in triage, introducing no new measures, stretching banked Shield certificates and Autonomy Pact emergency hosting to municipal hospitals/customs pilot to lure back side-deal member state; defection did not spread but return was sullen, only small stabilization.
+
+No new domestic capacity online: InvestAI gigafactory administratively closed on paper (planning money/permit corridors only), build-out delayed for financing/permits/staffing; chip/power talks extended interim terms, nothing signed at scale. Openweight converged to 58.9 vs frontier 61.0, still below. Cohesion held, services degraded not stopped, but fallback stacks hardening into permanence; sovereignty fell to 22.0.

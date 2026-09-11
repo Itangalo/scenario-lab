@@ -1,0 +1,7 @@
+Autumn hold followed by renewed strain left services sustained, not rebuilt. Brussels extended the recovery cell's emergency mandate, delivering ENISA-pooled clean backups to smaller councils, holding grid operators at reduced pace to ring-fence therapy wards, and using supervised checks instead of forced reconnection — preventing a third lock but leaving patchwork half-digital town halls.
+
+A September automated assault via the same compromised dependency chain degraded rather than collapsed services, with closed counters and paper prescriptions returning; allied telemetry sped diagnosis but attackers again used machine-made tooling and attribution drifted.
+
+Finance reset hardened: with Washington inward, export licences tightened even for allies, commercial compute unobtainable, cancelled data-centres unrevived, and banked Gigafactory capacity plus EuroHPC spent on rebuilds, not training. Dependence became freight costs and queue times, compounded by Taiwan-related shipping pressure.
+
+Counter-currents limited relief: a new interpretability check made deployed systems more predictable without closing the capability gap, and tailored cures reached ordinary wards but polls tied them to foreign models Europe could not run. Wage-insurance and short courses continued with lengthening queues and hardening triage; by December essential services functioned thinly and manually, and public opinion still linked AI to outages and joblessness.

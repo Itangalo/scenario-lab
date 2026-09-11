@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE t3: InvestAI Gigafactories −3, Tech sovereignty package −3, EU AI Evaluation and Safety Institute −3, EU Grid and Critical Services Hardening Pact −3, EU-US Allied Volume Licence Corridor −2, priority −1 = −15
+PROPOSAL BONUS: EU-US Allied Volume Licence Corridor (cat 8, small) +2 — answers March licence tightening with no allied lane and this turn's renewed rationing directly, severe but measure small
+LEGITIMACY LENDS: capital 14, sentiment 30 -> +2
+SOVEREIGNTY: 18 last turn, no capacity event finish, Gigafactories in flight +0, export_control_escalation t3 −2, capability rose 1.5 −0 = 16

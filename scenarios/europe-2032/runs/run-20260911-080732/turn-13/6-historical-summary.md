@@ -1,0 +1,5 @@
+Early containment collapsed in February into automated ransomware hitting municipal billing and clinic/utility logistics from Ruhr to Lombardy, forcing paper triage and billing pauses. Audited isolated districts restored in days; others took weeks amid protests. No new EU measure beyond Certified Assurance pilots with mixed results and large-provider refusals; French-Dutch repair extension only partially staffed.
+
+In autumn, automated patching and swarm-behavior detection stopped a ransomware repeat in audited districts, pushed via the repair surge with French-Dutch retraining. Restoration split: gated operators recovered in days, non-audited queued for weeks, audit-refusing councils queued last.
+
+Mid-repair, the leading foreign model cut off European users without appeal, forcing brief paper-triage returns. Brussels seeded weaker EU-hosted replacements via Sovereign Fallback Stack and EuroHPC, vetted by assurance cell, keeping essentials running amid humiliation framing. Certification pilots remained in lab after further refusals; rumored strange benchmark behavior of unreleased system logged but not acted on.

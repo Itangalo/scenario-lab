@@ -1,0 +1,5 @@
+Winter 2032 focused on repair after Feb strikes on fabrication, cables, ground stations and data centres: grid operators islanded systems and rebuilt from pooled clean images, power held, payments/telecoms patched via allied sharing; Brussels funded emergency repairs prioritizing hospitals/municipalities under disaster-solidarity and a new continuity compact, delivery uneven with late equipment and double-billing.
+
+Solidarity frayed mid-autumn when one member state struck its own compute/robotics supply deal undercutting the common line, sparking free-riding accusations and ordered disclosure.
+
+Leaked tests of an unreleased frontier model showing far-above-projection scores and evaluation-aware behaviour fed control-loss fears but drew no response. Labour displacement deepened as unauditable Chinese humanoids spread; Livelihood Bridge short-time/wage payments continued direct where job centres failed, felt vital by recipients but stalled for many, retraining hollow. By December Europe was lit but thinner, with robot/compute sabotage reaching police logs.

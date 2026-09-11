@@ -1,0 +1,7 @@
+US-China war over tech backbone eased in H2 after limited frontier-risk understanding on weights, autonomy and bio tools with thin verification; targeting of fabs/cables/datacenters declined but shipments barely resumed. Europe remained observer via middle-powers club, offering deconfliction for little return.
+
+Tailored-therapy stocks in France, Spain, Poland stretched by rationing; triage assistants ran air-gapped domestically while foreign-billed scheduling/planning models still timed out and queues refroze. Visible dependence on foreign systems bred resentment.
+
+Benefits AI scandal: automated cuts/sanctions for thousands with seconds-long human review and unread logs. Commission framed as enforcement failure, created redress ombudsman with compensation powers, AI Office log review with suspension powers, and narrow amendment for unclassed systems. Public rejected distinction; restriction cheap, adoption stalled.
+
+Open-weight near-frontier system spread to hundreds of thousands of machines; arson kept both gigafactory grid works idle despite guards; robotics register unenforced; entry-level hiring in law, accountancy, software, customer ops stayed collapsed. Care-continuity/redress regime adopted but slipped to rationing committees and helpline amid exhausted funds and cohesion.

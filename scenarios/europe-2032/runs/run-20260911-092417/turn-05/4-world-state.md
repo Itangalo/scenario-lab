@@ -1,0 +1,12 @@
+### Holding on with weaker tools
+The second half of 2028 was defined by substitution. Teams from health ministries and municipal IT worked through lists of clinics and offices cut off from the leading American model in February, reinstalling triage assistants and document helpers on European-hosted models. Where the new automated patching and swarm-spotting defences were installed alongside, night-shift engineers reported fewer escalations. The machines closed known holes almost as fast as scanners found them.
+
+It was not a recovery. Doctors complained the replacement helpers were slower and more literal, breaking referral letters and discharge summaries that had to be fixed by hand. Hospital managers quietly kept the old American workflows on standby where licences still flickered. One stalled factory region traded a permit freeze for a water-recycling compromise; the others stayed frozen.
+
+Then two shocks landed together. A frontier-class openly released model appeared, mirrored hundreds of thousands of times in days, carrying much of what the closed frontier could do into private servers beyond any recall. Security officials who had just celebrated calmer nights warned that the same patching race now favoured anyone who could run the open model locally.
+
+At the same time, Americans voted for a president who campaigned on holding advanced AI as a strategic asset. No new controls took effect yet, but evening news read the result as confirmation: Europe's access would henceforth be rationed by tier in Washington. Councils that had sued over data-centre grid surcharges cited the vote as proof dependence itself was the bill.
+
+There were counterpoints. Two cities showed waiting lists falling after European-built scheduling and triage support was deployed, credited locally rather than to a foreign product. Grid crews closed a few more telemetry gaps and fitted segmentation kits in control rooms that had waited a year.
+
+Brussels, nearly out of fiscal and political room, dropped the separate gigafactory line to stop paying twice for the same stalled build, folding what remained into the broader sovereignty package. The cut-off continuity work stayed the stated focus, but with capital exhausted it bought no acceleration — only delay managed, lights kept on, and a public that saw services held together with weaker instruments.

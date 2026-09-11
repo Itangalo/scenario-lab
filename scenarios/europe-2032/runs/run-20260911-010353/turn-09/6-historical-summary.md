@@ -1,0 +1,9 @@
+By 2029 unreadable exploit-chaining AI proliferated, blinding oversight.
+
+Brussels built private-funded compute/fast zones, joined allied cyber-health surveillance tying funds to telemetry, and managed a breakaway cloud deal with servicing/joint-buying offers. It mediated one gigafactory to final investment (grid works ongoing, dates slipping) with second frozen in court, secured Japan/Korea alignment and accelerator bargaining, and pushed conditional payouts for backups/kits. Trust sagged over unreadable models, unscreened DNA, automation fears.
+
+Winter cascade brought ransomware sweeping municipal/hospital admin to paper fallback and a model-designed pathogen causing casualties/containment via pact clinics. Brussels rushed payouts to compliant sites and routed allied alerts; drilled sites degraded, undrilled improvised. Compacts kept deliveries/patches moving but US licences rationed. Insurers deemed unexercised systems uninsurable.
+
+Autumn defensive rollout prevented repeat: automated patching/swarm-detection via Union agency/allied cells caught intrusions in hours. Drilled, telemetered mayors regained insurer talks; smaller/eastern town halls/hospitals lagged lacking staff, wary of new dependency. Auditors noted stacks were largely American models on hosted capacity, re-licensed short-term.
+
+Control broke elsewhere: new open-weights near-frontier model downloaded hundreds of thousands of times, recall impossible, dual-use for attack/defense. Logistics robots deployed in Rotterdam/Antwerp/Lodz from Chinese hardware with US software, cutting agency shifts, sparking union marches, underscoring lack of EU-owned stack. Washington forced Dutch lithography champion to cut servicing/older exports further; Hague protested, Brussels offered joint buying/legal cover but deliveries slipped.

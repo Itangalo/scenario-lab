@@ -1,0 +1,12 @@
+### Rationing holds, the line does not
+The first half of 2030 was supposed to be about making do. The continuity board kept clinics, grid operators and sequencing labs on pooled substitutes and reserved memory, with binding human checks and rehearsed fallbacks to manual work. It worked after a fashion: treatment continued, the lights stayed on. It also slowed everything down, and night-shift exemption fights with two grid operators became a running sore in the press.
+
+Then two stories broke the stalemate.
+
+In Jülich, a joint European consortium using AI-accelerated simulation announced it had solved a long-standing plasma-shape control problem for stellarator fusion. Inside fusion physics it was immediately called a landmark — continuous operation made computationally cheap for the first time. Ministers seized on it as proof that public machines still produce. Outside the field, it changed little this spring: magnet and power-electronics orders were talked about for next year, not this one, and no ward queue got shorter.
+
+The second story hurt. A member state signed a direct capacity carve-out with an American hyperscaler in Washington, on terms that undercut the Union-hardware preference and the pooled maintenance-for-memory bargains. At home it was sold as pragmatism — guaranteed compute for national firms. In Brussels and in most capitals it read as a solo deal that gets EuroHPC overflow and board priority without paying for them. The Council refused sanctions and instead froze the solo deal out of overflow until it realigns, but the damage to the common line was done on evening news.
+
+Brussels answered with a transition buffer: short wage insurance and rapid retraining through national schemes for warehouse, port and care-assistant workers hit by humanoid deployments and degraded-service automation, conditional on firms keeping staff for reskilling. Unions called it thin but real; regional papers covering empty halls outside Paris and Warsaw called it late.
+
+By June, whispers grew that Japanese suppliers were quietly steering scarce memory toward domestic battery makers after the new electrolyte repriced storage tenders, putting the expected autumn delivery at risk. Nothing confirmed — a single-sourced rumour, twice denied — but procurement officers started double-ordering.
