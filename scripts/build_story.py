@@ -21,8 +21,13 @@ import hashlib
 import html
 import json
 import re
+import sys
 from pathlib import Path
 from typing import Any
+
+# The event catalogue is parsed the way the simulator itself parses it.
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from scenario_lab.loader import load_events  # noqa: E402
 
 SALT = "europe-2032-reader"
 
@@ -216,9 +221,66 @@ def load_nodes(tree_dir: Path) -> dict[str, dict[str, Any]]:
     return nodes
 
 
-def sim_data(data: dict[str, Any]) -> dict[str, Any]:
+def rich(text: str) -> str:
+    """Catalogue and run prose: the inline markdown, with metric ids set as code."""
+    return re.sub(r"`([^`]+)`", r"<code>\1</code>", inline(text))
+
+
+def event_entry(event: dict[str, Any], catalogue_entry: Any) -> dict[str, str]:
+    """An event as the popup shows it. Eligibility, condition and probability
+    come from the base catalogue, never the run's arm-patched entry: the
+    patches change exactly those figures, so the applied ones would tell a
+    reader which world they are in. The description is the base text too."""
+    title = event["title"]
+    if event.get("emergent") and title == event.get("id"):
+        # The referee names its own events by id only.
+        title = re.sub(r"^emergent_", "", title).replace("_", " ").capitalize()
+    entry: dict[str, Any] = {"title": html.escape(title), "description": rich(event["description"])}
+    if event.get("emergent"):
+        entry["emergent"] = True
+    if catalogue_entry is not None:
+        for key in ("eligible", "condition", "probability"):
+            value = (getattr(catalogue_entry, key, "") or "").strip()
+            if value:
+                entry[key] = rich(value)
+    return entry
+
+
+# Bookkeeping in the actor's answer – the store command and the statement
+# ledger – rather than anything a reader would call its response.
+ACTOR_SKIP = re.compile(r"^## (?:Store changes|Statement changes)\n.*?(?=^## |\Z)", re.M | re.S)
+
+
+def stored_markdown(text: str) -> str:
+    """Run files put a heading straight above its paragraph; `blocks` wants
+    headings as blocks of their own."""
+    return markdown(re.sub(r"^(#{1,3} .*)$", r"\n\1\n", text, flags=re.M))
+
+
+def run_texts(data: dict[str, Any], scenario_dir: Path) -> dict[str, str]:
+    """The prose the run already stored for this half-year: the Union's answer
+    (`2-actors/eu.md`) and the referee's world state (`4-world-state.md`).
+    Nothing is written for the page. Turn 1 has no single run behind it – it
+    resolves per arm and per option – so it gets the opening world description
+    the scenario starts from, and no answer: the answer is the reader's choice."""
+    turn_dir = (data.get("provenance") or {}).get("turn_dir")
+    if not turn_dir:
+        context = scenario_dir / "background" / "context.md"
+        return {"actor": "", "worldLabel": "The world at the start",
+                "world": stored_markdown(context.read_text(encoding="utf-8")) if context.is_file() else ""}
+    turn = scenario_dir / turn_dir
+    actor_path, world_path = turn / "2-actors" / "eu.md", turn / "4-world-state.md"
+    actor = ACTOR_SKIP.sub("", actor_path.read_text(encoding="utf-8")) if actor_path.is_file() else ""
+    world = world_path.read_text(encoding="utf-8") if world_path.is_file() else ""
+    return {"actor": stored_markdown(actor) if actor.strip() else "",
+            "worldLabel": "How the world answered",
+            "world": stored_markdown(world) if world.strip() else ""}
+
+
+def sim_data(data: dict[str, Any], scenario_dir: Path) -> dict[str, Any]:
     """What "Simulation data" opens for a half-year: the run's own record,
-    outside the story. Measure descriptions are left out – they are the
+    outside the story – the stored answer and world state, and the measures
+    in flight. Measure descriptions are left out – they are the
     actor's shorthand, metric ids and all – and nothing here names the arm.
     Finished measures pile up in the portfolio for good, so only the ones
     finishing this half-year are listed."""
@@ -240,15 +302,15 @@ def sim_data(data: dict[str, Any]) -> dict[str, Any]:
         name = c if isinstance(c, str) else (c.get("name") or "")
         if name:
             measures.append({"name": html.escape(name), "status": "cancelled"})
-    priority = re.sub(r"^M\d+\s+|\s*\(M\d+\)\s*$", "", data.get("priority") or "")
     return {
         "measures": measures,
-        "priority": html.escape(priority),
         "commitment": html.escape(data.get("commitment") or ""),
+        **run_texts(data, scenario_dir),
     }
 
 
-def build_payload(nodes: dict[str, dict[str, Any]]) -> dict[str, Any]:
+def build_payload(nodes: dict[str, dict[str, Any]], scenario_dir: Path) -> dict[str, Any]:
+    catalogue = {e.id: e for e in load_events(scenario_dir / "events.md")}
     payload: dict[str, Any] = {}
     for name, node in nodes.items():
         data, nid = node["data"], opaque(name)
@@ -275,12 +337,9 @@ def build_payload(nodes: dict[str, dict[str, Any]]) -> dict[str, Any]:
                 {"label": m["label"], "value": m["value"], "delta": m["delta"]}
                 for m in (data.get("metrics") or {}).values()
             ]
-            entry["events"] = [
-                {"title": html.escape(e["title"]),
-                 "description": re.sub(r"`([^`]+)`", r"<code>\1</code>", inline(e["description"]))}
-                for e in (data.get("events") or [])
-            ]
-            entry["sim"] = sim_data(data)
+            entry["events"] = [event_entry(e, catalogue.get(e.get("id", "")))
+                               for e in (data.get("events") or [])]
+            entry["sim"] = sim_data(data, scenario_dir)
             nxt = data.get("next_node")
             entry["next"] = opaque(nxt) if nxt and nxt in nodes else None
             choices = data.get("next_choice") or []
@@ -619,6 +678,20 @@ dialog.pop::backdrop { background: rgba(10, 16, 18, 0.5); }
 .pop-body ul.measures li { margin: 0 0 0.4rem; }
 .pop-body .status { display: block; color: var(--muted); font-size: 0.82rem; }
 .pop-body code { font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace; font-size: 0.85em; }
+.pop-body .pop-fine { font-size: 0.78rem; color: var(--faint); margin: 0.7rem 0 0; }
+.pop-body dl.cat { margin: 0 0 0.8rem; font-size: 0.82rem; line-height: 1.5; color: var(--muted); }
+.pop-body dl.cat dt {
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace; font-size: 0.6rem;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); margin-top: 0.55rem;
+}
+.pop-body dl.cat dd { margin: 0.1rem 0 0; }
+/* Stored run prose, set as reading text rather than as data. */
+.pop-body .simtext { font-family: Spectral, Georgia, serif; font-size: 0.92rem; }
+.pop-body .simtext h3, .pop-body .simtext h4 {
+  font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 1rem;
+  letter-spacing: 0; text-transform: none; color: var(--ink); margin: 1.1rem 0 0.35rem;
+}
+.pop-body .simtext h3:first-child, .pop-body .simtext h4:first-child { margin-top: 0; }
 .events { display: flex; flex-direction: column; gap: 0.4rem; }
 .events details { border-top: 1px solid var(--rule); }
 .events details:first-child { border-top: 0; }
@@ -790,31 +863,36 @@ function openPop(title, body) {
   if (!pop.open) pop.showModal();
 }
 
-function fmt(v) { return (Math.round(v * 10) / 10).toString(); }
+function catalogueHTML(e) {
+  if (e.emergent) return '<p class="pop-fine">Not in the event catalogue: the referee introduced this event itself.</p>';
+  const rows = [["Eligible", e.eligible], ["Condition", e.condition], ["Probability", e.probability]]
+    .filter(r => r[1]);
+  return rows.length
+    ? '<dl class="cat">' + rows.map(r => '<dt>' + r[0] + '</dt><dd>' + r[1] + '</dd>').join("") + '</dl>'
+    : "";
+}
 
 function simHTML(entry) {
   const s = entry.sim || {};
   const evs = entry.events || [];
   let h = '<p class="pop-note">The simulation’s own record of ' + (entry.periodProse || "this half-year") +
-    ', which the story is written from. Scales run from 0 to 100.</p>';
+    ', which the story is written from: the events drawn, the Union’s response as the simulated actor wrote it, ' +
+    'and the referee’s account of the world.</p>';
   h += '<h3>Events</h3>' + (evs.length
     ? '<div class="events">' + evs.map(e =>
-        '<details><summary>' + e.title + '</summary><p>' + e.description + '</p></details>').join("") + '</div>'
+        '<details><summary>' + e.title + '</summary><p>' + e.description + '</p>' + catalogueHTML(e) +
+        '</details>').join("") + '</div>' +
+      '<p class="pop-fine">Eligibility, conditions and probabilities are the event catalogue’s neutral defaults. ' +
+      'The figures that apply differ between worlds, so they are not shown.</p>'
     : '<p class="none">None. Nothing outside the Union’s own decisions moved.</p>');
-  const ms = entry.metrics || [];
-  if (ms.length) {
-    h += '<h3>Where things stand</h3><table>' + ms.map(m => {
-      const d = typeof m.delta === "number" && m.delta !== 0
-        ? '<span class="' + (m.delta > 0 ? "up" : "down") + '">' + (m.delta > 0 ? "▴ +" : "▾ ") + fmt(m.delta) + '</span>'
-        : '<span class="flat">–</span>';
-      return '<tr><td>' + m.label + '</td><td class="num">' + fmt(m.value) + '</td><td class="num">' + d + '</td></tr>';
-    }).join("") + '</table>';
-  }
+  h += '<h3>The Union’s response</h3>' + (s.actor
+    ? '<div class="simtext">' + s.actor + '</div>'
+    : '<p class="none">The Union’s response to this half-year is the choice at the end of it.</p>');
+  if (s.world) h += '<h3>' + (s.worldLabel || "The world") + '</h3><div class="simtext">' + s.world + '</div>';
   if (s.measures && s.measures.length) {
     h += '<h3>The Union’s measures</h3><ul class="measures">' + s.measures.map(m =>
       '<li>' + m.name + ' <span class="status">' + m.status + '</span></li>').join("") + '</ul>';
   }
-  if (s.priority) h += '<h3>Priority this half-year</h3><p>' + s.priority + '</p>';
   if (s.commitment) h += '<h3>Two-year commitment</h3><p>' + s.commitment + '</p>';
   return h;
 }
@@ -1256,7 +1334,7 @@ def main() -> int:
     postamble = markdown(postamble_path.read_text(encoding="utf-8")) \
         if postamble_path.is_file() else ""
     alt_tabs, alt_views = alt_panels(story_dir / "experiments")
-    payload = build_payload(nodes)
+    payload = build_payload(nodes, args.scenario)
     start = opaque("turn-01")
     if start not in payload:
         raise SystemExit("turn-01 is not written; nothing to build")
