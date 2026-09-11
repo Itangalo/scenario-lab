@@ -921,14 +921,10 @@ def alt_reading(path: Path) -> str:
 # simply does not get a tab, so the page still builds from a partial checkout.
 # `view` is the tab's URL fragment as well as its id, so #straight-through and
 # #tight are the deep links.
-ALT_TELLINGS = [
-    {"view": "straight-through", "label": "Straight through",
-     "source": "merged-blocks-casual.md", "intro": "alt-intro.md"},
-    {"view": "tight", "label": "Tighter cut",
-     "source": "merged-blocks-tight.md", "intro": "alt-intro-tight.md"},
-    {"view": "inside", "label": "From inside",
-     "source": "character-telling.md", "intro": "alt-intro-inside.md"},
-]
+#
+# Retired 2026-09-11: the three experimental tellings are deleted with their
+# sources (in git history). The published page is the story alone.
+ALT_TELLINGS: list[dict[str, str]] = []
 
 
 def alt_panels(experiments: Path) -> tuple[str, str]:

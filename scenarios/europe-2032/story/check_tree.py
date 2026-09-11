@@ -569,14 +569,43 @@ def self_test() -> int:
         event_ids = set(re.findall(r"^\**ID:\**\s*`?([a-z0-9_]+)`?",
                                    (SCENARIO / "events.md").read_text(encoding="utf-8"),
                                    re.M | re.I))
+        # Catalogue ids the fixture run never fired up to its own turn, so
+        # the unfired-event plant is always really unfired.
+        run_dir = SCENARIO / "runs" / data["provenance"]["run"]
+        fired_here: set[str] = set()
+        for t in range(1, data["turn"] + 1):
+            ev = run_dir / f"turn-{t:02d}" / "1-event-evaluations.json"
+            if ev.is_file():
+                fired_here.update(e["id"] for e in json.loads(ev.read_text())
+                                  if e.get("triggered"))
+        unfired_id = next((eid for eid in
+                           ["bio_incident", "loss_of_control_incident",
+                            "taiwan_blockade", "member_state_defection",
+                            "catastrophic_great_power_conflict"]
+                           if eid not in fired_here), None)
+        if unfired_id is None:
+            print("self-test: fixture run fired every candidate id; cannot plant",
+                  file=sys.stderr)
+            return 2
 
         cases = [
             ("wrong metric",
              "\nPolitical capital stood at 91.7 by the end of it.\n", "91.7"),
+            # The unfired-event plant must name something the fixture run
+            # never produced: a hardcoded id belongs to whatever run the
+            # tree stood on when the test was written, and a rerun can
+            # legitimately fire it (bio_incident fired at turn 4 in the
+            # rerun's A11). Picked live from the run record instead.
             ("unfired event",
-             "\nA bio_incident is reported during the same weeks.\n", "bio_incident"),
+             f"\nA {unfired_id} is reported during the same weeks.\n",
+             unfired_id),
+            # The read-out plant must use the fixture node's own live value:
+            # a hardcoded figure belongs to whatever run the tree stood on
+            # when the test was written, and a rerun silently unplants it.
             ("metric read-out",
-             "\nPublic sentiment stands at 32.0 by the summer.\n", "gauge"),
+             f"\nPublic sentiment stands at "
+             f"{data['metrics']['public_sentiment']['value']} by the summer.\n",
+             "gauge"),
             ("metric id",
              "\nThe eu_political_capital position is untenable.\n", "metric id"),
             ("turn vocabulary",
