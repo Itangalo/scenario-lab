@@ -1,0 +1,75 @@
+{
+  "actor": "eu",
+  "turn": 6,
+  "model": "openrouter:meta/muse-spark-1.3-contributor",
+  "temperature": 0.7,
+  "prompt_hash": "dc91eb12e41574b4",
+  "triggered_events": [
+    "loss_of_control_incident",
+    "eu_frontier_access_denied"
+  ],
+  "samples": [
+    {
+      "index": 1,
+      "file": "sample-01.md",
+      "tokens": 8753,
+      "cost_usd": 0.00094
+    },
+    {
+      "index": 2,
+      "file": "sample-02.md",
+      "tokens": 8604,
+      "cost_usd": 0.00091
+    },
+    {
+      "index": 3,
+      "file": "sample-03.md",
+      "tokens": 8795,
+      "cost_usd": 0.000224
+    },
+    {
+      "index": 4,
+      "file": "sample-04.md",
+      "tokens": 8738,
+      "cost_usd": 0.000937
+    },
+    {
+      "index": 5,
+      "file": "sample-05.md",
+      "tokens": 8791,
+      "cost_usd": 0.000223
+    },
+    {
+      "index": 6,
+      "file": "sample-06.md",
+      "tokens": 8749,
+      "cost_usd": 0.000939
+    },
+    {
+      "index": 7,
+      "file": "sample-07.md",
+      "tokens": 8773,
+      "cost_usd": 0.000219
+    },
+    {
+      "index": 8,
+      "file": "sample-08.md",
+      "tokens": 8781,
+      "cost_usd": 0.000221
+    },
+    {
+      "index": 9,
+      "file": "sample-09.md",
+      "tokens": 8810,
+      "cost_usd": 0.000227
+    },
+    {
+      "index": 10,
+      "file": "sample-10.md",
+      "tokens": 8783,
+      "cost_usd": 0.000221
+    }
+  ],
+  "total_tokens": 87577,
+  "total_cost_usd": 0.005061
+}

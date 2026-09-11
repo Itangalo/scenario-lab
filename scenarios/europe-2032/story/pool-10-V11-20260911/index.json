@@ -1,0 +1,76 @@
+{
+  "actor": "eu",
+  "turn": 10,
+  "model": "openrouter:meta/muse-spark-1.3-contributor",
+  "temperature": 0.7,
+  "prompt_hash": "3f01cdafd8af07d6",
+  "triggered_events": [
+    "cyber_major_incident",
+    "loss_of_control_incident",
+    "middle_power_coalition"
+  ],
+  "samples": [
+    {
+      "index": 1,
+      "file": "sample-01.md",
+      "tokens": 9015,
+      "cost_usd": 0.000221
+    },
+    {
+      "index": 2,
+      "file": "sample-02.md",
+      "tokens": 9138,
+      "cost_usd": 0.000993
+    },
+    {
+      "index": 3,
+      "file": "sample-03.md",
+      "tokens": 9062,
+      "cost_usd": 0.000231
+    },
+    {
+      "index": 4,
+      "file": "sample-04.md",
+      "tokens": 9067,
+      "cost_usd": 0.000232
+    },
+    {
+      "index": 5,
+      "file": "sample-05.md",
+      "tokens": 8967,
+      "cost_usd": 0.000959
+    },
+    {
+      "index": 6,
+      "file": "sample-06.md",
+      "tokens": 8973,
+      "cost_usd": 0.00096
+    },
+    {
+      "index": 7,
+      "file": "sample-07.md",
+      "tokens": 9141,
+      "cost_usd": 0.000247
+    },
+    {
+      "index": 8,
+      "file": "sample-08.md",
+      "tokens": 9058,
+      "cost_usd": 0.00023
+    },
+    {
+      "index": 9,
+      "file": "sample-09.md",
+      "tokens": 9082,
+      "cost_usd": 0.000235
+    },
+    {
+      "index": 10,
+      "file": "sample-10.md",
+      "tokens": 9206,
+      "cost_usd": 0.00026
+    }
+  ],
+  "total_tokens": 90709,
+  "total_cost_usd": 0.004568
+}

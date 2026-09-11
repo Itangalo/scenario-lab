@@ -1,0 +1,74 @@
+{
+  "actor": "eu",
+  "turn": 6,
+  "model": "openrouter:meta/muse-spark-1.3-contributor",
+  "temperature": 0.7,
+  "prompt_hash": "20ae3411d4418cbe",
+  "triggered_events": [
+    "eval_anomaly_reports"
+  ],
+  "samples": [
+    {
+      "index": 1,
+      "file": "sample-01.md",
+      "tokens": 8777,
+      "cost_usd": 0.000943
+    },
+    {
+      "index": 2,
+      "file": "sample-02.md",
+      "tokens": 8894,
+      "cost_usd": 0.000967
+    },
+    {
+      "index": 3,
+      "file": "sample-03.md",
+      "tokens": 8807,
+      "cost_usd": 0.000949
+    },
+    {
+      "index": 4,
+      "file": "sample-04.md",
+      "tokens": 8897,
+      "cost_usd": 0.000243
+    },
+    {
+      "index": 5,
+      "file": "sample-05.md",
+      "tokens": 8667,
+      "cost_usd": 0.000197
+    },
+    {
+      "index": 6,
+      "file": "sample-06.md",
+      "tokens": 8971,
+      "cost_usd": 0.000258
+    },
+    {
+      "index": 7,
+      "file": "sample-07.md",
+      "tokens": 8630,
+      "cost_usd": 0.00019
+    },
+    {
+      "index": 8,
+      "file": "sample-08.md",
+      "tokens": 8710,
+      "cost_usd": 0.00093
+    },
+    {
+      "index": 9,
+      "file": "sample-09.md",
+      "tokens": 8868,
+      "cost_usd": 0.000237
+    },
+    {
+      "index": 10,
+      "file": "sample-10.md",
+      "tokens": 9046,
+      "cost_usd": 0.000273
+    }
+  ],
+  "total_tokens": 88267,
+  "total_cost_usd": 0.005187
+}

@@ -1,0 +1,77 @@
+{
+  "actor": "eu",
+  "turn": 6,
+  "model": "openrouter:meta/muse-spark-1.3-contributor",
+  "temperature": 0.7,
+  "prompt_hash": "7e2606d7104561bd",
+  "triggered_events": [
+    "capability_jump",
+    "opaque_reasoning",
+    "openweight_frontier_release",
+    "member_state_defection"
+  ],
+  "samples": [
+    {
+      "index": 1,
+      "file": "sample-01.md",
+      "tokens": 9054,
+      "cost_usd": 0.000254
+    },
+    {
+      "index": 2,
+      "file": "sample-02.md",
+      "tokens": 9022,
+      "cost_usd": 0.000248
+    },
+    {
+      "index": 3,
+      "file": "sample-03.md",
+      "tokens": 9205,
+      "cost_usd": 0.001021
+    },
+    {
+      "index": 4,
+      "file": "sample-04.md",
+      "tokens": 9279,
+      "cost_usd": 0.000299
+    },
+    {
+      "index": 5,
+      "file": "sample-05.md",
+      "tokens": 9101,
+      "cost_usd": 0.000264
+    },
+    {
+      "index": 6,
+      "file": "sample-06.md",
+      "tokens": 9010,
+      "cost_usd": 0.000982
+    },
+    {
+      "index": 7,
+      "file": "sample-07.md",
+      "tokens": 9035,
+      "cost_usd": 0.000251
+    },
+    {
+      "index": 8,
+      "file": "sample-08.md",
+      "tokens": 9003,
+      "cost_usd": 0.000244
+    },
+    {
+      "index": 9,
+      "file": "sample-09.md",
+      "tokens": 8965,
+      "cost_usd": 0.000237
+    },
+    {
+      "index": 10,
+      "file": "sample-10.md",
+      "tokens": 9050,
+      "cost_usd": 0.000254
+    }
+  ],
+  "total_tokens": 90724,
+  "total_cost_usd": 0.004053
+}
