@@ -547,6 +547,16 @@ def summarize_batch_activity(text: str) -> str:
     return truncate_batch_text(normalized)
 
 
+def batch_warning_is_new(warnings_before: int, view: BatchJobView, use_live: bool) -> bool:
+    """True when a freshly consumed child line raised a new batch warning.
+
+    The non-terminal fallback print must fire only on the transition, not
+    whenever a warning is stored: otherwise the stored warning re-prints on
+    every subsequent child output line (thousands of duplicates per batch).
+    """
+    return not use_live and bool(view.warning) and view.warning_count > warnings_before
+
+
 def update_batch_view_from_line(view: BatchJobView, line: str):
     """Update one batch job's display state from a child output line."""
     text = line.strip()
@@ -814,8 +824,9 @@ def execute_batch_specs(specs: list[BatchJobSpec], max_concurrency: int, title: 
                     if line is None:
                         active[job_id]["output_done"] = True
                     else:
+                        warnings_before = views[job_id - 1].warning_count
                         update_batch_view_from_line(views[job_id - 1], line)
-                        if not use_live and views[job_id - 1].warning and views[job_id - 1].warning_count == 1:
+                        if batch_warning_is_new(warnings_before, views[job_id - 1], use_live):
                             print(f"⚠️  {specs[job_id - 1].target}: {views[job_id - 1].warning}")
                 refresh_live(live)
             except queue.Empty:

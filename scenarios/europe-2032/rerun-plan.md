@@ -2,7 +2,7 @@
 
 Goal: re-run every simulation the story stands on (statistics batch + story tree), with `openrouter:meta/muse-spark-1.3-contributor` on the `store-v2-world-scope-and-metrics` branch. One full-scale shot, so this plan gates scale-up on a measured checkpoint rather than on confidence.
 
-Status: plan written 2026-09-10. Pilot (10 runs, 4/3/3 across arms) done and audited; main batch not launched.
+Status: plan written 2026-09-10. Pilot (10 runs, 4/3/3 across arms) done and audited; main batch (150 runs, batch=stats-20260910-spark-storev2, 50/arm) completed 2026-09-10 ~21:48 (one transient OpenRouter 502 on acceleration draw-058 at turn 7, resumed clean to 13 turns). Full audit below -- checkpoint PASSED, no fallback needed.
 
 ## Locked decisions
 
@@ -56,6 +56,16 @@ python scripts/check_portfolio_drift.py scenarios/europe-2032 --charges --filter
 ```
 
 Plus: grep changelogs for missing sections, referee `max_attempts_reached` rate, posture transitions (undecided → pending → winner → stable).
+
+**Checkpoint result (21 runs, draws 001–021, 2026-09-10 ~18:27, PASSED):** store 273 turns, 0 missing actor sections, 0 missing world sections, 0 rejected, 1 unparsed + 1 described-but-unrecorded (same turn -- run-20260910-180017 t10, op object missing its closing brace; known malformed-JSON residual family, ~0.5% vs ~3% abort line). Charges 257 lines, 100%/100%. Election exactly-one 21/21 at turn 5 (12 consolidation, 5 alliance, 4 retrenchment). Posture 21/21 clean. Deadlocks 6/273 (2.2%, below ~5% pilot).
+
+**Full-batch audit (150 runs, 1950 turns, filter stats-20260910-spark-storev2, 2026-09-10):**
+
+- Store: 1521 commands applied, 0 missing sections (actor and world), 1 rejected, 3 unparsed lines (all malformed-JSON residual shapes), 3 argued-but-unrecorded (0.2% -- the re-ask-hook case; actor moves on without retrying, narrative never revisits the lost measure).
+- Charges: 1876/1878 terms match the rows in flight (99.9%), 1872/1878 lines add up (99.7%). Every residual individually read: 3 one-turn undercharges where the GM gave a new measure a free first turn (202412t1 −3, 194821t1 −3, 194806t9 −2) -- the rules never state explicitly when a new measure starts costing, so one clarifying sentence belongs in rule 6/10 before 3b; 2 total slips (194821t1 states −10 for −7; 202534t12 states −4 for −5 at capital 23); 2 declared oddities (201434t7 openly records a void priority cost; 185240t1 dangles "+ 1 more for the priority" with no grand total); 1 silent-but-correct void (185234t8, capital 8). The checker grew four shapes in the process (hyphenated names like Tier-1, parenthetical figures, subtotal-first two-totals, void phrasings incl. "waived"/"uncharged"/"without effect", proximity-bound void detection).
+- Referee note: with the single-model config format the referee (constitutional verdicts + statement-relevance) silently runs the cheap default `qwen3-235b`, not Spark -- matches the pilot so comparability holds, but the plan's "every turn task" needs that footnote. The GM (world state, notepad, metrics, charges) is Spark throughout.
+- Catastrophes: ~15-20% of runs touch one, firing as early as turn 7 and stacking; all gate-checked clean (one bio fired at shut-gate 1%). Repeat catastrophic loss-of-control fired twice in one run -- absorbed narratively as persistence, still supports the decided change to Can repeat: No (held for post-batch).
+- Batch-logging bug fixed along the way: the non-terminal fallback in `execute_batch_specs` re-printed the stored warning on every subsequent child line (thousands of duplicates); now prints on transition only, with regression test. Uncommitted, like the checker extensions.
 
 **Abort and fall back to `main` if:** never-entered above ~3% post-fix shapes, any missing-section fault, any posture deviation, referee-deadlock rate far above the ~5% pilot rate, or any new unparseable-block shape. A fifth of the budget spent learning this is the pilot-first rule, not a loss.
 

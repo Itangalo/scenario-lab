@@ -70,5 +70,5 @@ orch.Orchestrator._run_actors_step = _pinned_actors_step
 
 from scenario_lab.cli import main  # noqa: E402
 
-sys.argv = ["cli", "run", scenario_path, "--turns", turns, "--seed", seed, "--no-progress"]
+sys.argv = ["cli", "run", scenario_path, "--turns", turns, "--seed", seed, "--no-progress", "--log-llm-io"]
 main()

@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 from unittest.mock import patch, MagicMock
 from scenario_lab.cli import (
+    batch_warning_is_new,
     build_batch_resume_command,
     main,
     run_model_preflight_checks,
@@ -1053,3 +1054,29 @@ def test_cli_batch_resume_scenario_only_launches_incomplete_runs(tmp_path):
     assert "--turns" in spec.command
     assert "--model" in spec.command
     assert "--override" in spec.command
+
+
+def test_batch_warning_prints_once_per_new_warning():
+    """A stored batch warning must not re-print on later child lines.
+
+    Regression: the non-terminal fallback used to print whenever a warning
+    was stored, so one warning re-printed on every subsequent output line
+    (thousands of duplicates per batch log).
+    """
+    view = BatchJobView(label="acceleration")
+
+    update_batch_view_from_line(view, "  Warning: Skipping emergent event 'emergent_x': missing description")
+    assert batch_warning_is_new(0, view, use_live=False) is True
+
+    before = view.warning_count
+    update_batch_view_from_line(view, "[2/5] Getting actor actions...")
+    assert view.warning_count == before
+    assert batch_warning_is_new(before, view, use_live=False) is False
+
+    update_batch_view_from_line(view, "TURN 3: something")
+    assert batch_warning_is_new(before, view, use_live=False) is False
+
+    update_batch_view_from_line(view, "  Warning: something else broke")
+    assert batch_warning_is_new(before, view, use_live=False) is True
+
+    assert batch_warning_is_new(0, view, use_live=True) is False

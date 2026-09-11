@@ -15,6 +15,7 @@ Usage:
 
     python scripts/build_dashboard.py scenarios/europe-2032 --seeds 9101-9312
     python scripts/build_dashboard.py scenarios/europe-2032 --out /tmp/dash.html
+    python scripts/build_dashboard.py scenarios/europe-2032 --filter batch=stats-20260910-spark-storev2
     python scripts/build_dashboard.py scenarios/europe-2032 --batch 0   # latest batch (default)
     python scripts/build_dashboard.py scenarios/europe-2032 --all       # every run
 
@@ -345,6 +346,39 @@ def parse_seed_range(spec: str | None) -> tuple[int, int] | None:
     return int(lo), int(hi or lo)
 
 
+def parse_notes_filter(spec: str | None) -> tuple[str, str] | None:
+    """Parse a ``KEY=VALUE`` filter against initial_state.notes pairs.
+
+    Same convention as ``--filter`` in cohorts/synthesize and the drift
+    checker (e.g. ``batch=stats-20260910``), so a provenance-tagged batch
+    can be isolated regardless of start-time clustering.
+    """
+    if not spec:
+        return None
+    if "=" not in spec:
+        raise ValueError(f"Invalid --filter '{spec}': expected KEY=VALUE")
+    key, _, value = spec.partition("=")
+    key, value = key.strip(), value.strip()
+    if not key or not value:
+        raise ValueError(f"Invalid --filter '{spec}': empty key or value")
+    return key, value
+
+
+def notes_pairs(config: dict[str, Any]) -> dict[str, str]:
+    """Extract ``key=value`` pairs from initial_state.notes."""
+    initial = config.get("initial_state") or {}
+    notes = initial.get("notes")
+    if not isinstance(notes, str):
+        return {}
+    pairs: dict[str, str] = {}
+    for chunk in notes.split(";"):
+        if "=" not in chunk:
+            continue
+        key, _, value = chunk.partition("=")
+        pairs[key.strip()] = value.strip()
+    return pairs
+
+
 BATCH_GAP_SECONDS = 45 * 60
 
 
@@ -399,6 +433,8 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("scenario", type=Path, help="scenario directory, e.g. scenarios/europe-2032")
     parser.add_argument("--seeds", help="restrict to a seed range, e.g. 9101-9312")
+    parser.add_argument("--filter", default=None,
+                        help="restrict to runs whose initial_state.notes carry KEY=VALUE, e.g. batch=stats-20260910")
     parser.add_argument("--batch", type=int, default=0,
                         help="batch index to embed, 0 = latest (default); ignored with --all")
     parser.add_argument("--all", action="store_true", help="embed every run, not just one batch")
@@ -408,6 +444,7 @@ def main() -> int:
     args = parser.parse_args()
 
     seeds = parse_seed_range(args.seeds)
+    notes_filter = parse_notes_filter(args.filter)
     event_text = scenario_event_text(args.scenario)
     catalogue = Catalogue()
     runs = []
@@ -415,9 +452,14 @@ def main() -> int:
         config = run_dir / "config.json"
         if not config.exists():
             continue
+        cfg = json.loads(config.read_text(encoding="utf-8"))
         if seeds:
-            seed = json.loads(config.read_text(encoding="utf-8")).get("random_seed", 0)
+            seed = cfg.get("random_seed", 0)
             if not seeds[0] <= seed <= seeds[1]:
+                continue
+        if notes_filter:
+            key, value = notes_filter
+            if notes_pairs(cfg).get(key) != value:
                 continue
         run = read_run(run_dir, args.actor, catalogue, event_text)
         if run and run["turns"]:

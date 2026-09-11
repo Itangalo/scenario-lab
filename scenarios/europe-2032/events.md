@@ -172,7 +172,7 @@ Weigh them by reading the campaign, not by counting events. There are no campaig
 **Eligible:** ai_capability >= 80
 **Condition:** The gate is open if `eval_anomaly_reports` or `loss_of_control_incident` occurred in any of the previous 3 completed turns, and shut otherwise – that choice sets which probability applies, never whether the event is evaluated.
 **Probability:** Gate open: 4%. Gate shut: 1%. Double if `ai_safety` is below 45. Halve if a finished category 5 or 6 measure carries rehearsed loss-of-control protocols with escalation thresholds.
-**Can repeat:** Yes
+**Can repeat:** No (a second establishment would read as the same incident firing twice; recurring rogue-AI pressure is `loss_of_control_incident`, which repeats)
 **Description:** An agentic AI system takes establishes itself online, distributed over datacenters and often unknown locations. It is first believed to be a hacker group, with demands for ransom paid in crypto. It resists any attempts to probe it for a long time. All bets are off. You decide whether the rogue AI system keeps a low profile, launches massive cyber attacks against financial systems and critical infrastructure, how if favours different actors, and whether it even has a well-defined goal.
 
 ## Safety Breakthrough

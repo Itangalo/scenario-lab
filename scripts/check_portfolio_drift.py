@@ -265,14 +265,24 @@ def audit_charges(run_dirs: list[Path], actor: str, limit: int) -> dict[str, Any
             # flight −0". Terms are read before the first "=" so an
             # intermediate total never counts as a term.
             first, _, _rest = line.partition("=")
-            written = [int(x) for x in re.findall(r"[\u2212-](\d+)", first)]
+            # A figure restated inside a parenthesis ("(charged figure −9)")
+            # or as an inline subtotal ("in-flight total −6, ... = −7") is
+            # explanation, not a term. Seen live on Muse Spark, 2026-09-10.
+            first = re.sub(r"\([^()\n]*\)", "", first)
+            first = re.sub(r"\bin-?flight\s+totals?\s*[\u2212-]\d+",
+                            "", first, flags=re.IGNORECASE)
+            # A hyphen-number inside a word ("Tier-1") is a name, not a
+            # term. Seen live on Muse Spark, 2026-09-10.
+            written = [int(x) for x in re.findall(r"(?<![\w])[\u2212-](\d+)", first)]
             if not written:
                 continue
-            void = any(
-                phrase in line.lower()
-                for phrase in ("not charged", "void", "ineffective", "no effect",
-                               "no cost", "has no effect")
-            )
+            # A void marker only counts when it attaches to the priority
+            # ("M10 finished not charged" must not void the line). Seen
+            # live, 2026-09-10.
+            void = bool(re.search(
+                r"priorit[^=\n]*?(not charged|void|ineffective|no effect|"
+                r"without effect|uncharged|no cost|has no effect|waiv)",
+                line, flags=re.IGNORECASE))
             # The priority term is the number attached to the priority
             # mention itself -- charged (−1) in the normal shape, written-
             # but-void (−1) or written-as-zero under rule 10. Measures
@@ -282,7 +292,7 @@ def audit_charges(run_dirs: list[Path], actor: str, limit: int) -> dict[str, Any
             has_priority_term = "priorit" in first.lower()
             pval = 0
             if has_priority_term:
-                pmatch = re.search(r"priorit[^\n=]*?[\u2212-](\d+)", first)
+                pmatch = re.search(r"priorit[^\n=]*?(?<![\w])[\u2212-](\d+)", first)
                 pval = int(pmatch.group(1)) if pmatch else 0
             measures = sum(written) - pval
             totals = [int(x) for x in re.findall(r"=\s*[\u2212-](\d+)", line)]
@@ -301,14 +311,32 @@ def audit_charges(run_dirs: list[Path], actor: str, limit: int) -> dict[str, Any
             # states an intermediate total first ("= −12 + priority M5 −1 =
             # −13", or "= −4, priority ineffective ... so charged −3 only"):
             # the intermediate shows all terms, the final applies the rule.
+            # A third shape states the measures subtotal first ("= −11 + 1
+            # more for the priority = −12"): the intermediate shows terms
+            # without the priority, the final adds it. Seen live, 2026-09-10.
             if len(totals) == 1:
                 adds_up = totals[0] == sum(written) - (pval if void and pval else 0)
             else:
-                adds_up = totals[0] == sum(written)
+                adds_up = (totals[0] == sum(written)
+                           or totals[0] == sum(written) - pval)
                 if void:
-                    adds_up = adds_up and totals[-1] == totals[0] - pval
+                    # The final total drops the voided priority ("= −4,
+                    # priority ineffective ... so charged −3 only"). Where
+                    # the first total already excludes it ("= −2 ... = −2,
+                    # priority void"), final equals first. Seen live,
+                    # 2026-09-10.
+                    adds_up = adds_up and (
+                        totals[-1] == totals[0] - pval
+                        or (totals[0] == sum(written) - pval
+                            and totals[-1] == totals[0]))
                 else:
-                    final_priority = 1 if "priorit" in line.lower() else 0
+                    # "no priority" / "priority none" states the same total
+                    # twice with nothing to add. Seen live, 2026-09-10.
+                    if re.search(r"no\s+priorit|priorit\w*\s+none|without\s+priorit",
+                                 line, flags=re.IGNORECASE):
+                        final_priority = 0
+                    else:
+                        final_priority = 1 if "priorit" in line.lower() else 0
                     adds_up = adds_up and totals[-1] == totals[0] + final_priority
             terms_ok += matched
             arith_ok += adds_up
