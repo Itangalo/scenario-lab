@@ -281,10 +281,16 @@ def main() -> int:
                 src_pool = {"pool-06-A2-20260911-ext/sample-05":
                             "pool-06-A2-20260911-ext"}[sample]
             measure, cat, fin = sample_measure(src_pool, samp)
-            out.append({"node": node, "leads_to_block": leads,
-                        "sample": samp, "stance": stance, "standing": standing,
-                        "support": support, "measure": measure, "category": cat,
-                        "finishes_turn": fin})
+            entry = {"node": node, "leads_to_block": leads,
+                     "sample": samp, "stance": stance, "standing": standing,
+                     "support": support, "measure": measure, "category": cat,
+                     "finishes_turn": fin}
+            # An option drawn from an extension pool must say so, or
+            # extract_tree resolves its sample against the choice's own pool
+            # and reads a different draw (A22 did: base sample-05, not ext).
+            if src_pool != pool:
+                entry["pool"] = src_pool
+            out.append(entry)
         choices.append({"after_block": after, "choice_turn": 6, "pool": pool,
                         "draws": draws, "split": "emergent", "note": note,
                         "options": out})

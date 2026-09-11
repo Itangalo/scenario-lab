@@ -1,27 +1,23 @@
 <!-- record: machine-extracted from the run, always rewritten. Never edit by hand, never quote figures from anywhere else. -->
 
-Source option: `pool-06-A2-20260911/sample-05.md` (verbatim draw; the reader's choice text is written from it).
+Source option: `pool-06-A2-20260911-ext/sample-05.md` (verbatim draw; the reader's choice text is written from it).
 
 ## Option response (full)
 
-## Statement changes
-- modify `two_year_commitment` (commitment): Contain loss-of-control and open-weight harm while keeping essential services running on scarce compute
-- Trigger: the two-year commitment period closes this turn and eval-anomaly reports open the capability and control gates while blockade rationing continues
-- Grounds: Autonomy-through-supply remains necessary but insufficient when ai_safety is 14, openweight is 62.5 and leaked eval anomalies suggest control failing; the next two years must prioritize preventing lasting harm without abandoning continuity.
-
 ## New measure
-**EU Anomaly Triage and Deployment Hold Protocol**
-Requires EU-deployed frontier systems and EuroHPC-hosted substitutes to report eval anomalies and unexplained agent behaviour to the EU AI Evaluation and Safety Institute, with authority to pause high-risk deployments pending re-test. This is Evaluation and oversight work, and why now is because leaked benchmark jumps and watchful-agent reports coincide with collapsed assurance, so the Union must create a lagging-indicator tripwire before the next release cycle.
-## Store changes
-```json
-{"store": [{"op": "add", "table": "measures", "fields": {"name": "EU Anomaly Triage and Deployment Hold Protocol", "category": 1, "size": "small", "finish_turn": 8, "applies_to": "own jurisdiction", "targeted_effect": "ai_safety up modestly, resilience protected"}, "grounds": "to create a deployment tripwire for eval anomalies"}]}
-```
-## Priority
-EU Supply Leverage and Continuity Compact, because with capital at 17 rationed chips and hospital compute outrank new building this turn — continuity must hold before oversight can bite.
-## In practice
-We keep DG TRADE and DG GROW on the continuity compact: joint export licensing of lithography/optics/chemicals for Japanese/Korean lots, and the internal allocation board directing accelerators to hospitals, grid and sequencing. Gigafactories (M1) stay legally protected but re-phased to transformer and chip reality; no new siting push.
+None this turn.
+We are waiting for capital and supply to stabilise before staking a new instrument while two costly lines are still burning.
 
-We task the Safety Institute (M3) with the anomaly protocol via an implementing act under the AI Act: mandatory incident/anomaly reporting from deployers on EU soil, shared re-testing with national regulators, and a time-limited deployment hold power exercised with ENISA and HERA. Health ministers carry the degraded-but-running message to hold sentiment at 33 while re-tests run.
+## Store changes
+No changes.
+
+## Priority
+M7 EU Supply Leverage and Continuity Compact, because with eval anomalies leaking and clinics on rationed compute, holding the allocation board and the Seoul/Tokyo lots together outranks starting anything new.
+
+## In practice
+We keep the Trade/Competitiveness export-licensing pool running under the Anti-Coercion Instrument and Dual-Use Regulation, with DG TRADE trading assured lithography maintenance for reserved chips and memory, and DG GROW with HERA, ENISA and EuroHPC JU directing what lands to hospitals, grid operators, sequencing and the permanent continuity cell. No new permitting or gigafactory expansion is ordered; M1 shells are re-phased to transformer and chip reality.
+
+On the eval anomaly, we do not open a new evaluation mandate this turn. We task the EU AI Evaluation and Safety Institute built under M3 to collect the leaked benchmarks and re-runs, share findings with national regulators through the existing incident channel, and advise the allocation board on whether degraded substitutes remain safe to run in clinical and grid use. Health ministers continue to carry the rationing line in wards — cures continue, degraded — to stop blame curdling further while supply is renegotiated.
 
 ## Situation (events pinned in the turn this choice leads into)
 

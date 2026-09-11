@@ -476,7 +476,8 @@ def main() -> int:
                                if o["node"] == opt["node"]][0]["file"]
                 prev = "turn-01"
             else:
-                src = STORY / choice["pool"] / f"{opt['sample']}.md"
+                # An option from an extension pool carries its own `pool`.
+                src = STORY / opt.get("pool", choice["pool"]) / f"{opt['sample']}.md"
                 prev = f"turn-{choice['choice_turn'] - 1:02d}-{choice['after_block']}"
             src_text = src.read_text(encoding="utf-8")
             data = {
@@ -484,7 +485,7 @@ def main() -> int:
                 "after_block": choice["after_block"],
                 "leads_to_block": leads_list,
                 "source": str(src.relative_to(STORY)),
-                "pool": choice["pool"], "draws": choice["draws"],
+                "pool": opt.get("pool", choice["pool"]), "draws": choice["draws"],
                 "split": choice["split"], "split_note": choice["note"],
                 "stance": opt["stance"], "standing": opt["standing"],
                 "support": opt["support"],
