@@ -930,7 +930,7 @@ function buildDials() {
   document.getElementById("dials").innerHTML = LABELS.map((metric, i) =>
     '<div class="dial" tabindex="0" aria-describedby="tip' + i + '">' +
       '<svg viewBox="0 0 64 64" width="58" height="58" role="img" id="a' + i + '" aria-label="' + metric.label + '">' +
-        '<g transform="rotate(129 32 32)">' +
+        '<g transform="rotate(140.4 32 32)">' +
           '<circle class="track" cx="32" cy="32" r="' + R + '" fill="none" stroke-width="5" stroke-linecap="round" ' +
             'stroke-dasharray="' + ARC.toFixed(1) + ' ' + CIRC.toFixed(1) + '"></circle>' +
           zoneArcs(metric.id) +

@@ -40,7 +40,7 @@ Meanwhile the frontier keeps moving. AI agents now work continuously towards sta
 >
 > **Claire:** mostly
 
-Two programmes were already running when Sofia took the file. The InvestAI gigafactories: twenty billion euros, from a wider two-hundred-billion investment drive, for four to five sites. The tech sovereignty package, a separate effort: a target of another two hundred billion euros in private money for AI data centres by 2036, and zones where permits come faster. Both cost the Commission standing every month they run, and neither will finish soon.
+Two programmes were already running when Sofia took the file. The InvestAI gigafactories: twenty billion euros, from a wider two-hundred-billion investment drive, for four to five sites. The tech sovereignty package, a separate effort: a target of another two hundred billion euros in private money for AI data centres by 2036, and zones where permits come faster. Both tie up the Commission's standing for as long as they run – funding, legal cover and member-state backing that stay committed until they land – and neither will finish soon.
 
 What nobody can tell her is what kind of world this is. Competent people read the same evidence three ways: as acceleration that compounds; as progress that races ahead wherever a machine can check the answer, and crawls everywhere else; as a plateau, with every step costing more than the last. Nothing available in 2026 settles it. Neither the agents in the laboratory nor the phages needed anything close to general intelligence.
 
