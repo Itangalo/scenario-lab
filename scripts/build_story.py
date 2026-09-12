@@ -364,21 +364,25 @@ HEAD = """<title>Europe 2032</title>
   --track: #dfe6e8;
   --accent: #0f5d6b;
   --accent-soft: #e3eff0;
-  --up: #2f6b4f;
-  --down: #a8412f;
+  /* Good and bad have to stay apart for a reader with red-green colour
+     blindness, where a dark green and a brick red are the same tone. A warm
+     vermillion against a cool blue keeps them apart by hue and by lightness,
+     and keeps both clear of the teal the reading arc uses. */
+  --up: #0072b2;
+  --down: #d55e00;
   --measure: 34rem;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --ground: #0e1416; --surface: #151d20; --ink: #e7edee; --muted: #97a6ab;
     --faint: #6c7c81; --rule: #243135; --track: #1f2c30; --accent: #5cb8b2;
-    --accent-soft: #16302f; --up: #6fbb92; --down: #d98771;
+    --accent-soft: #16302f; --up: #56b4e9; --down: #e8862b;
   }
 }
 :root[data-theme="dark"] {
   --ground: #0e1416; --surface: #151d20; --ink: #e7edee; --muted: #97a6ab;
   --faint: #6c7c81; --rule: #243135; --track: #1f2c30; --accent: #5cb8b2;
-  --accent-soft: #16302f; --up: #6fbb92; --down: #d98771;
+  --accent-soft: #16302f; --up: #56b4e9; --down: #e8862b;
 }
 * { box-sizing: border-box; }
 /* `.layout` sets `display: grid`, which would beat the user-agent rule for
@@ -858,8 +862,11 @@ const LABELS = metricOrder();
 function zoneArcs(id) {
   const zones = ZONES[id];
   if (!zones) return "";
+  // The bad band is drawn heavier than the good one, so which is which does
+  // not rest on telling two colours apart.
   const band = (range, cls) =>
-    '<circle class="zone ' + cls + '" cx="32" cy="32" r="' + RZ + '" fill="none" stroke-width="2.5" ' +
+    '<circle class="zone ' + cls + '" cx="32" cy="32" r="' + RZ + '" fill="none" ' +
+      'stroke-width="' + (cls === "bad" ? 3.6 : 2.4) + '" ' +
       'stroke-dasharray="' + ((range[1] - range[0]) * ARCZ).toFixed(1) + ' ' + CIRCZ.toFixed(1) + '" ' +
       'stroke-dashoffset="' + (-range[0] * ARCZ).toFixed(1) + '"></circle>';
   return (zones.red || []).map(r => band(r, "bad")).join("") +
