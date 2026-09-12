@@ -419,7 +419,7 @@ header.masthead {
 .altview article hr {
   border: 0; border-top: 1px solid var(--rule); margin: 3.5rem 0;
 }
-body:not([data-view="story"]) .restart.floating { display: none; }
+body:not([data-view="story"]) .floating { display: none; }
 .masthead h1 {
   font-family: Newsreader, Georgia, serif; font-weight: 600;
   font-size: 1.5rem; letter-spacing: -0.01em; margin: 0;
@@ -435,14 +435,20 @@ body:not([data-view="story"]) .restart.floating { display: none; }
   border-radius: 2px; padding: 0.5rem 0.8rem; cursor: pointer; width: 100%;
 }
 .restart:hover { color: var(--accent); border-color: var(--accent); }
-/* Wide screens read it in the sticky panel; narrow screens stack the panel
-   below the prose, where it would scroll away, so a fixed one takes over. */
-.restart.floating { display: none; }
+/* Wide screens read these in the sticky panel; narrow screens stack the panel
+   below the prose, where it scrolls away entirely, so a fixed bar takes over.
+   The record behind the half-year has to stay reachable while reading. */
+.floating { display: none; }
+/* The popup is that record; the bar would sit on top of its own backdrop. */
+body.popped .floating { display: none !important; }
 @media (max-width: 62rem) {
   aside .restart { display: none; }
-  .restart.floating {
-    display: block; position: fixed; right: 1rem; bottom: 1rem; width: auto;
-    z-index: 5; background: var(--surface); box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+  .floating {
+    display: flex; flex-direction: column; align-items: stretch; gap: 0.4rem;
+    position: fixed; right: 1rem; bottom: 1rem; z-index: 5;
+  }
+  .floating .restart {
+    width: auto; background: var(--surface); box-shadow: 0 2px 10px rgba(0,0,0,0.12);
   }
 }
 
@@ -758,6 +764,8 @@ button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
   body { font-size: 18px; }
   .choices { grid-template-columns: 1fr; }
   .dials { grid-template-columns: repeat(3, 1fr); }
+  /* A dial at the edge would push its own explanation off the screen. */
+  .dial .tip { max-width: min(12.5rem, 44vw); }
 }
 </style>
 """
@@ -773,7 +781,10 @@ BODY = """
             aria-controls="view-story" aria-selected="true" tabindex="0">The story</button>
 __TABS__
   </div>
-  <button class="js-restart restart floating" type="button">Start over</button>
+  <div class="floating">
+    <button class="js-sim restart" type="button">Simulation data</button>
+    <button class="js-restart restart" type="button">Start over</button>
+  </div>
   <div class="layout" id="view-story" role="tabpanel" aria-labelledby="tab-story">
     <main id="stream"></main>
     <aside>
@@ -870,7 +881,10 @@ function openPop(title, body) {
   box.innerHTML = body;
   box.scrollTop = 0;
   if (!pop.open) pop.showModal();
+  document.body.classList.add("popped");
 }
+
+pop.addEventListener("close", () => document.body.classList.remove("popped"));
 
 function catalogueHTML(e) {
   if (e.emergent) return '<p class="pop-fine">Not in the event catalogue: the referee introduced this event itself.</p>';
