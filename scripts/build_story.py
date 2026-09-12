@@ -334,8 +334,8 @@ def build_payload(nodes: dict[str, dict[str, Any]], scenario_dir: Path) -> dict[
             entry["period"] = months(data.get("period", ""))
             entry["periodProse"] = data.get("period_prose", "")
             entry["metrics"] = [
-                {"label": m["label"], "value": m["value"], "delta": m["delta"]}
-                for m in (data.get("metrics") or {}).values()
+                {"id": mid, "label": m["label"], "value": m["value"], "delta": m["delta"]}
+                for mid, m in (data.get("metrics") or {}).items()
             ]
             entry["events"] = [event_entry(e, catalogue.get(e.get("id", "")))
                                for e in (data.get("events") or [])]
@@ -601,6 +601,11 @@ article .memo .memo-margin em {
 .dial svg { display: block; }
 .dial .track { stroke: var(--track); }
 .dial .fill { stroke: var(--accent); transition: stroke-dasharray 0.45s cubic-bezier(0.4, 0, 0.2, 1); }
+/* The bands the reading stands in, outside the arc and fixed whatever it
+   reads: where this metric is trouble, and where it is doing well. */
+.dial .zone { stroke-linecap: butt; }
+.dial .zone.bad { stroke: var(--down); }
+.dial .zone.good { stroke: var(--up); }
 @media (prefers-reduced-motion: reduce) { .dial .fill { transition: none; } }
 .dial b {
   font-size: 0.6rem; font-weight: 400; letter-spacing: 0.04em; color: var(--muted);
@@ -820,31 +825,61 @@ const TIPS = __TIPS__;
 const BANDS = ["very low", "low", "moderate", "high", "very high"];
 const REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const R = 24, CIRC = 2 * Math.PI * R, ARC = CIRC * 0.72;
+// The zone ring sits outside the value arc, so a reading never covers the
+// band it is standing in.
+const RZ = 29, CIRCZ = 2 * Math.PI * RZ, ARCZ = CIRCZ * 0.72;
+
+// Where a reading is bad, and where it is good, as fractions of the scale.
+// Capability is not good or bad for the Union by being high — but the top of
+// it is dangerous for everyone, and the same is true of capability that is
+// downloadable and beyond recall. Political capital is capacity to act, not a
+// good in itself: it has a floor to stay off, and no top to reach.
+const ZONES = {
+  ai_capability:         { red: [[0.85, 1]] },
+  openweight_capability: { red: [[0.85, 1]] },
+  ai_safety:             { red: [[0, 0.25]], green: [[0.65, 1]] },
+  resilience:            { red: [[0, 0.25]], green: [[0.65, 1]] },
+  eu_ai_sovereignty:     { red: [[0, 0.25]], green: [[0.65, 1]] },
+  public_sentiment:      { red: [[0, 0.25]], green: [[0.65, 1]] },
+  eu_political_capital:  { red: [[0, 0.2]] },
+};
 
 let arm = 0, chain = [], picked = {}, active = null;
 
 function metricOrder() {
   for (const id in NODES) {
     const m = NODES[id].metrics;
-    if (m && m.length) return m.map(x => x.label);
+    if (m && m.length) return m.map(x => ({ id: x.id, label: x.label }));
   }
   return [];
 }
 const LABELS = metricOrder();
 
+function zoneArcs(id) {
+  const zones = ZONES[id];
+  if (!zones) return "";
+  const band = (range, cls) =>
+    '<circle class="zone ' + cls + '" cx="32" cy="32" r="' + RZ + '" fill="none" stroke-width="2.5" ' +
+      'stroke-dasharray="' + ((range[1] - range[0]) * ARCZ).toFixed(1) + ' ' + CIRCZ.toFixed(1) + '" ' +
+      'stroke-dashoffset="' + (-range[0] * ARCZ).toFixed(1) + '"></circle>';
+  return (zones.red || []).map(r => band(r, "bad")).join("") +
+         (zones.green || []).map(r => band(r, "good")).join("");
+}
+
 function buildDials() {
-  document.getElementById("dials").innerHTML = LABELS.map((label, i) =>
+  document.getElementById("dials").innerHTML = LABELS.map((metric, i) =>
     '<div class="dial" tabindex="0" aria-describedby="tip' + i + '">' +
-      '<svg viewBox="0 0 60 60" width="56" height="56" role="img" id="a' + i + '" aria-label="' + label + '">' +
-        '<g transform="rotate(129 30 30)">' +
-          '<circle class="track" cx="30" cy="30" r="' + R + '" fill="none" stroke-width="5" stroke-linecap="round" ' +
+      '<svg viewBox="0 0 64 64" width="58" height="58" role="img" id="a' + i + '" aria-label="' + metric.label + '">' +
+        '<g transform="rotate(129 32 32)">' +
+          '<circle class="track" cx="32" cy="32" r="' + R + '" fill="none" stroke-width="5" stroke-linecap="round" ' +
             'stroke-dasharray="' + ARC.toFixed(1) + ' ' + CIRC.toFixed(1) + '"></circle>' +
-          '<circle class="fill" id="f' + i + '" cx="30" cy="30" r="' + R + '" fill="none" stroke-width="5" ' +
+          zoneArcs(metric.id) +
+          '<circle class="fill" id="f' + i + '" cx="32" cy="32" r="' + R + '" fill="none" stroke-width="5" ' +
             'stroke-linecap="round" stroke-dasharray="0 ' + CIRC.toFixed(1) + '"></circle>' +
         '</g></svg>' +
-      '<b>' + label + '<i id="t' + i + '"></i></b>' +
+      '<b>' + metric.label + '<i id="t' + i + '"></i></b>' +
       '<span class="tip" role="tooltip" id="tip' + i + '">' +
-        (TIPS[label] || "") + '</span>' +
+        (TIPS[metric.label] || "") + '</span>' +
     '</div>').join("");
 }
 
