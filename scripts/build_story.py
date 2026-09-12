@@ -493,6 +493,15 @@ aside { position: sticky; top: 1.5rem; display: flex; flex-direction: column; ga
 }
 .note.preamble p { margin: 0 0 0.9rem; }
 .note.preamble p:last-child { margin-bottom: 0; }
+/* The draft's call for feedback, and anything else the preamble sets under a
+   subheading of its own. */
+.note.preamble h3 {
+  font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 1rem;
+  color: var(--ink); margin: 1.8rem 0 0.6rem;
+}
+.note.preamble ul { margin: 0 0 0.9rem; padding-left: 1.15rem; }
+.note.preamble li { margin: 0 0 0.5rem; }
+.note.preamble li:last-child { margin-bottom: 0; }
 .note.end { margin: 2rem 0 0; }
 .note.end h2, .note.draft h2 {
   font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 1.15rem;
