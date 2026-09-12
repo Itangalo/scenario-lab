@@ -5,7 +5,7 @@ period: H2 2026
 status: written
 prev: 
 next: option-02-1, option-02-2
-allow: 06:52 8 9 14 2036
+allow: 06:52 8 9 14 83 2036
 ---
 
 <!-- liberty: the seeded measure credits the gigafactories with the whole two hundred billion of InvestAI. In reality that is the headline of the wider drive, and the gigafactory fund is twenty billion; the tech sovereignty package has its own, separate two-hundred-billion estimate for data centres by 2036. The prose uses the real figures on every path, so the two programmes do not read as one sum counted twice. -->
@@ -24,7 +24,7 @@ That is the problem. During an audit of something else, investigators have found
 
 Sofia holds the AI file in the Commission President's cabinet. She does not decide anything. She writes the options, sits in the room while they are chosen, and afterwards makes sure the choice survives contact with twenty-seven governments. That autumn she spends her evenings putting on one page where the Union actually stands, because nobody else in the building will.
 
-The Union holds about five per cent of the world's AI computing power, and the United States roughly eighty. Europe's largest AI supercomputer runs at eighty-three megawatts. The largest American one runs at 1,250.
+The Union holds about five per cent of the world's AI computing power, and the United States roughly eighty. Europe's largest AI supercomputer runs at 83 megawatts. The largest American one runs at 1,250.
 
 ASML is still the only company on earth that can build the lithography machines every advanced chip depends on, and Washington leans on it constantly over whom it may sell to. The AI Act is in force, but the parts with teeth – the obligations for high-risk and general-purpose systems – were pushed back to 2027 and 2028 under industry pressure.
 
