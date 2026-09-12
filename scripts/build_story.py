@@ -836,8 +836,9 @@ const RZ = 29, CIRCZ = 2 * Math.PI * RZ, ARCZ = CIRCZ * 0.72;
 // Where a reading is bad, and where it is good, as fractions of the scale.
 // Capability is not good or bad for the Union by being high — but the top of
 // it is dangerous for everyone, and the same is true of capability that is
-// downloadable and beyond recall. Political capital is capacity to act, not a
-// good in itself: it has a floor to stay off, and no top to reach.
+// downloadable and beyond recall. Political capital keeps the shared good
+// band and only its floor is drawn tighter: a Commission with room to act is
+// in a good position, whatever it does with it.
 const ZONES = {
   ai_capability:         { red: [[0.85, 1]] },
   openweight_capability: { red: [[0.85, 1]] },
@@ -845,7 +846,7 @@ const ZONES = {
   resilience:            { red: [[0, 0.25]], green: [[0.65, 1]] },
   eu_ai_sovereignty:     { red: [[0, 0.25]], green: [[0.65, 1]] },
   public_sentiment:      { red: [[0, 0.25]], green: [[0.65, 1]] },
-  eu_political_capital:  { red: [[0, 0.2]] },
+  eu_political_capital:  { red: [[0, 0.2]], green: [[0.65, 1]] },
 };
 
 let arm = 0, chain = [], picked = {}, active = null;
