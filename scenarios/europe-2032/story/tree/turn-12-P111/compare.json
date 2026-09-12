@@ -1,0 +1,79 @@
+{
+  "node": "turn-12-P111",
+  "turn": 12,
+  "period_prose": "the first half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "supply_chain_coercion",
+        "title": "Coercion Over ASML",
+        "line": "Washington forces the Netherlands to cut ASML's exports and servicing further still – beyond the leading-edge machines to the older lithography equipment China uses for ordinary chips, and in the harder versions to a widening list of other customers.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "emergent_synthesis_screening_push",
+        "title": "Synthesis screening push",
+        "line": "WHO-led inquiry publishes evidence that the winter hospital agent was assembled with openly available design tools, triggering calls for binding screening obligations on synthesis providers.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 63.5,
+      "higher_than": 4,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 62.5,
+      "higher_than": 10,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 15.5,
+      "higher_than": 113,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 58.5,
+      "higher_than": 144,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 18.0,
+      "higher_than": 108,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 11.0,
+      "higher_than": 84,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 13.0,
+      "higher_than": 102,
+      "of_runs": 160
+    }
+  }
+}

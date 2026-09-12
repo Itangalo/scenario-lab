@@ -1,0 +1,93 @@
+{
+  "node": "turn-09-P21",
+  "turn": 9,
+  "period_prose": "the second half of 2030",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "capability_jump",
+        "title": "Capability Jump",
+        "line": "A discontinuous advance is released or demonstrated.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "taiwan_blockade",
+        "title": "Taiwan Blockade",
+        "line": "A quarantine or blockade halts advanced semiconductor exports.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_liability_freeze_utilities",
+        "title": "Liability freeze utilities",
+        "line": "Municipal utilities in two member states suspend new AI-connected control upgrades after the winter agent incident, citing uninsurable liability, freezing resilience rollouts through year-end.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_shadow_continuity_contracts",
+        "title": "Shadow continuity contracts",
+        "line": "Municipal utilities and hospital groups quietly sign direct continuity contracts with US hyperscalers for fallback inference and backup hosting, bypassing EU substitution timelines after the winter containment and ward walkouts.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 63.2,
+      "higher_than": 33,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 61.4,
+      "higher_than": 39,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 9.0,
+      "higher_than": 52,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 38.0,
+      "higher_than": 27,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 14.0,
+      "higher_than": 29,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 0.0,
+      "higher_than": 0,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 21.0,
+      "higher_than": 105,
+      "of_runs": 160
+    }
+  }
+}

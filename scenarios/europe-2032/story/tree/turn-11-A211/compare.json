@@ -1,0 +1,100 @@
+{
+  "node": "turn-11-A211",
+  "turn": 11,
+  "period_prose": "the second half of 2031",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "joint_threat_response",
+        "title": "Joint Threat Response",
+        "line": "States hit by the same class of incident pool attribution, intelligence and response: a joint cyber command with real-time telemetry sharing that the Union is invited into, or a biosurveillance pact with binding sample-sharing and a standing investigation mandate.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "labour_displacement",
+        "title": "Labour Displacement Wave",
+        "line": "Measurable job losses attributed to AI in named sectors, with the graduate market worst hit: entry-level positions in law, accountancy, software, customer operations and administration are not replaced.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "taiwan_tension_rise",
+        "title": "Taiwan Tension Rises",
+        "line": "Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "catastrophic_bio_incident",
+        "title": "Catastrophic Biological Incident",
+        "line": "A global biological outbreak caused by a pathogen designed with AI.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "us_labs_nationalised",
+        "title": "Washington Takes the Labs",
+        "line": "The United States takes its frontier laboratories under direct state control.",
+        "of_nine": 2,
+        "emergent": false
+      },
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 2,
+        "emergent": false
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 92.5,
+      "higher_than": 151,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 86.2,
+      "higher_than": 145,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 4.0,
+      "higher_than": 46,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 36.5,
+      "higher_than": 16,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 10.0,
+      "higher_than": 25,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 4.0,
+      "higher_than": 31,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 15.0,
+      "higher_than": 96,
+      "of_runs": 160
+    }
+  }
+}

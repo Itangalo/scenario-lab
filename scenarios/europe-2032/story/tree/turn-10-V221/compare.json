@@ -1,0 +1,85 @@
+{
+  "node": "turn-10-V221",
+  "turn": 10,
+  "period_prose": "the first half of 2031",
+  "events": {
+    "siblings": 9,
+    "pinned": [
+      {
+        "id": "capability_jump",
+        "title": "Capability Jump",
+        "line": "A discontinuous advance is released or demonstrated.",
+        "of_nine": 9,
+        "emergent": false
+      },
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 9,
+        "emergent": false
+      },
+      {
+        "id": "export_control_escalation",
+        "title": "Export Control Escalation",
+        "line": "Chip and model export controls tighten again.",
+        "of_nine": 9,
+        "emergent": false
+      },
+      {
+        "id": "labour_displacement",
+        "title": "Labour Displacement Wave",
+        "line": "Measurable job losses attributed to AI in named sectors, with the graduate market worst hit: entry-level positions in law, accountancy, software, customer operations and administration are not replaced.",
+        "of_nine": 9,
+        "emergent": false
+      }
+    ],
+    "common": [],
+    "notable": []
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 66.5,
+      "higher_than": 85,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 65.0,
+      "higher_than": 104,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 16.0,
+      "higher_than": 99,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 41.0,
+      "higher_than": 45,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 15.0,
+      "higher_than": 61,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 5.0,
+      "higher_than": 36,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 0.0,
+      "higher_than": 0,
+      "of_runs": 160
+    }
+  }
+}

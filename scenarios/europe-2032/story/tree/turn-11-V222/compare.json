@@ -1,0 +1,79 @@
+{
+  "node": "turn-11-V222",
+  "turn": 11,
+  "period_prose": "the second half of 2031",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "openweight_frontier_release",
+        "title": "Open Weights Capability Jump",
+        "line": "An open-weight release lands within a few months of the closed frontier.",
+        "of_nine": 4,
+        "emergent": false
+      },
+      {
+        "id": "supply_chain_coercion",
+        "title": "Coercion Over ASML",
+        "line": "Washington forces the Netherlands to cut ASML's exports and servicing further still – beyond the leading-edge machines to the older lithography equipment China uses for ordinary chips, and in the harder versions to a widening list of other customers.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 2,
+        "emergent": false
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 67.5,
+      "higher_than": 85,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 65.6,
+      "higher_than": 97,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 13.0,
+      "higher_than": 96,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 43.0,
+      "higher_than": 56,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 15.0,
+      "higher_than": 68,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 2.0,
+      "higher_than": 15,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 0.0,
+      "higher_than": 0,
+      "of_runs": 160
+    }
+  }
+}

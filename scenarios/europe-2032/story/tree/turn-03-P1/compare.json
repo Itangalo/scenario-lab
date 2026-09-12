@@ -1,0 +1,100 @@
+{
+  "node": "turn-03-P1",
+  "turn": 3,
+  "period_prose": "the second half of 2027",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_cyber_insurance_retrenchment",
+        "title": "Cyber insurance retrenchment",
+        "line": "Major European cyber-insurers sharply reprice or suspend coverage for municipal utilities and hospitals after autumn pre-positioning disclosures, forcing emergency state backstops.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_datacentre_pause",
+        "title": "Datacentre pause",
+        "line": "A US hyperscaler freezes or delays planned EU data-centre expansion after gigafactory site fights over grid connections and priority power spill into public disputes over water and electricity prices.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_hyperscaler_pause_eu_build",
+        "title": "Hyperscaler pause eu build",
+        "line": "A major US hyperscaler publicly pauses two planned EU data-centre expansions, citing grid-connection delays and power pricing, fuelling press narrative that gigafactory site rivalry is deterring private build-out.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_memory_substrate_squeeze",
+        "title": "Memory substrate squeeze",
+        "line": "A non-US, non-China supplier imposes temporary export licensing on a critical AI hardware input such as high-bandwidth memory or advanced substrates, citing domestic demand, spiking EU gigafactory cost estimates and delaying site decisions.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 56.5,
+      "higher_than": 18,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 52.3,
+      "higher_than": 56,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 28.0,
+      "higher_than": 32,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 38.0,
+      "higher_than": 60,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 22.0,
+      "higher_than": 143,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 23.0,
+      "higher_than": 68,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 40.0,
+      "higher_than": 140,
+      "of_runs": 160
+    }
+  }
+}

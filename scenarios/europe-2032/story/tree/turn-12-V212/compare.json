@@ -1,0 +1,100 @@
+{
+  "node": "turn-12-V212",
+  "turn": 12,
+  "period_prose": "the first half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 6,
+        "emergent": false
+      },
+      {
+        "id": "eval_anomaly_reports",
+        "title": "Evaluation Anomalies Escalate",
+        "line": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "export_control_escalation",
+        "title": "Export Control Escalation",
+        "line": "Chip and model export controls tighten again.",
+        "of_nine": 4,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_anti_automation_sabotage",
+        "title": "Anti automation sabotage",
+        "line": "Municipal sabotage wave targets backup power and offline triage kits in several member states as hostility to automation turns physical, degrading local continuity during containment.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_anti_infrastructure_backlash",
+        "title": "Anti infrastructure backlash",
+        "line": "Municipal health-worker and patient groups stage coordinated blockades of data-centre expansion sites, blaming AI infrastructure for power costs and failed triage during containment weeks.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 68.7,
+      "higher_than": 98,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 67.0,
+      "higher_than": 101,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 11.0,
+      "higher_than": 91,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 44.0,
+      "higher_than": 59,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 14.0,
+      "higher_than": 66,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 9.0,
+      "higher_than": 71,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 1.0,
+      "higher_than": 12,
+      "of_runs": 160
+    }
+  }
+}

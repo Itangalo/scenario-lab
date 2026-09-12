@@ -1,0 +1,86 @@
+{
+  "node": "turn-12-A211",
+  "turn": 12,
+  "period_prose": "the first half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "eval_anomaly_reports",
+        "title": "Evaluation Anomalies Escalate",
+        "line": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched.",
+        "of_nine": 4,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "emergent_neutral_site_targeted",
+        "title": "Neutral site targeted",
+        "line": "US or Chinese strike deliberately disables a nominally civilian European data centre or landing station used for backup compute, forcing a public test of EU non-belligerency.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_wartime_infrastructure_hit",
+        "title": "Wartime infrastructure hit",
+        "line": "Wartime collateral strike severs a second Atlantic cable landing and prolonged power loss forces EU civil registries and hospital triage onto paper fallback for weeks.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 95.0,
+      "higher_than": 152,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 89.3,
+      "higher_than": 153,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 2.0,
+      "higher_than": 43,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 40.5,
+      "higher_than": 32,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 11.0,
+      "higher_than": 45,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 4.0,
+      "higher_than": 41,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 13.0,
+      "higher_than": 102,
+      "of_runs": 160
+    }
+  }
+}

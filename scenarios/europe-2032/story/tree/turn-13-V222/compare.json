@@ -1,0 +1,100 @@
+{
+  "node": "turn-13-V222",
+  "turn": 13,
+  "period_prose": "the second half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "automated_decision_scandal",
+        "title": "Automated Decision Scandal",
+        "line": "An AI-supported decision system in social insurance, policing or the courts is found to have systematically wronged people, with a judgment or an ombudsman finding behind it.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 5,
+        "emergent": false
+      },
+      {
+        "id": "openweight_frontier_release",
+        "title": "Open Weights Capability Jump",
+        "line": "An open-weight release lands within a few months of the closed frontier.",
+        "of_nine": 4,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_anti_ai_sabotage_wave",
+        "title": "Anti ai sabotage wave",
+        "line": "Coordinated physical attacks on data-centre construction sites and grid substations across several member states force extended construction halts and emergency security costs.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_anti_ai_street_wave",
+        "title": "Anti ai street wave",
+        "line": "Coordinated municipal utility strikes and graduate-led blockades of data-centre sites spread across several member states, linking job-loss protests to energy bills and ransomware outages.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 70.0,
+      "higher_than": 99,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 67.6,
+      "higher_than": 96,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 3.0,
+      "higher_than": 64,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 41.0,
+      "higher_than": 34,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 15.0,
+      "higher_than": 86,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 0.0,
+      "higher_than": 0,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 13.0,
+      "higher_than": 105,
+      "of_runs": 160
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "node": "turn-13-P222",
+  "turn": 13,
+  "period_prose": "the second half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "labour_displacement",
+        "title": "Labour Displacement Wave",
+        "line": "Measurable job losses attributed to AI in named sectors, with the graduate market worst hit: entry-level positions in law, accountancy, software, customer operations and administration are not replaced.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "taiwan_blockade",
+        "title": "Taiwan Blockade",
+        "line": "A quarantine or blockade halts advanced semiconductor exports.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 2,
+        "emergent": false
+      },
+      {
+        "id": "emergent_fallback_siting_referendums",
+        "title": "Fallback siting referendums",
+        "line": "Municipal referendums in several member states force votes to ban guarded backup-power depots and manual-fallback infrastructure from residential areas, pitting resilience siting against local anti-AI hostility.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_lifeline_predation",
+        "title": "Lifeline predation",
+        "line": "Coordinated fuel-theft and generator resale network is exposed spanning three member states, turning fallback sabotage from protest vandalism into organized black-market predation on lifeline stocks.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_repair_convoy_blockades",
+        "title": "Repair convoy blockades",
+        "line": "Coordinated anti-AI groups escalate from sabotaging backup stores to physically blocking guarded grid repair convoys, forcing police escorts and delaying restoration drills.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 65.5,
+      "higher_than": 20,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 64.5,
+      "higher_than": 31,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 9.0,
+      "higher_than": 95,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 45.0,
+      "higher_than": 64,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 7.0,
+      "higher_than": 28,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 0.0,
+      "higher_than": 0,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 0.5,
+      "higher_than": 18,
+      "of_runs": 160
+    }
+  }
+}

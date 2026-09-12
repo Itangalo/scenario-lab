@@ -1,0 +1,78 @@
+{
+  "node": "turn-12-P221",
+  "turn": 12,
+  "period_prose": "the first half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 2,
+        "emergent": false
+      },
+      {
+        "id": "emergent_infrastructure_arson_spread",
+        "title": "Infrastructure arson spread",
+        "line": "Coordinated physical attacks expand from sabotage of fallback stores to arson against an unguarded data-centre construction site or municipal battery depot, forcing a national debate on protecting energy-transition infrastructure.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_pool_host_refusal",
+        "title": "Pool host refusal",
+        "line": "Municipal utilities quietly refuse to host guarded black-start pools after arson wave, forcing relocation of fallback stocks to military sites and eroding civilian cover.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 68.5,
+      "higher_than": 91,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 63.5,
+      "higher_than": 25,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 11.0,
+      "higher_than": 91,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 38.5,
+      "higher_than": 24,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 8.0,
+      "higher_than": 23,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 4.0,
+      "higher_than": 41,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 9.0,
+      "higher_than": 74,
+      "of_runs": 160
+    }
+  }
+}

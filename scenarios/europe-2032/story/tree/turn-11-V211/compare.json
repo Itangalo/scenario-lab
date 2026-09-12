@@ -1,0 +1,72 @@
+{
+  "node": "turn-11-V211",
+  "turn": 11,
+  "period_prose": "the second half of 2031",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "catastrophic_bio_incident",
+        "title": "Catastrophic Biological Incident",
+        "line": "A global biological outbreak caused by a pathogen designed with AI.",
+        "of_nine": 1,
+        "emergent": false
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 68.0,
+      "higher_than": 97,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 65.7,
+      "higher_than": 98,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 14.0,
+      "higher_than": 100,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 39.0,
+      "higher_than": 28,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 17.0,
+      "higher_than": 91,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 7.0,
+      "higher_than": 54,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 0.0,
+      "higher_than": 0,
+      "of_runs": 160
+    }
+  }
+}

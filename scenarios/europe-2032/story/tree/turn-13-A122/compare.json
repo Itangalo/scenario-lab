@@ -1,0 +1,100 @@
+{
+  "node": "turn-13-A122",
+  "turn": 13,
+  "period_prose": "the second half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "capability_jump",
+        "title": "Capability Jump",
+        "line": "A discontinuous advance is released or demonstrated.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 4,
+        "emergent": false
+      },
+      {
+        "id": "knowledge_work_augmented",
+        "title": "Knowledge Work Is Boosted, Not Replaced",
+        "line": "The evidence arrives from ordinary offices rather than from laboratories: measured productivity gains in law, accountancy, administration, journalism and consulting, largest among the least experienced, and no matching fall in employment.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "us_labs_nationalised",
+        "title": "Washington Takes the Labs",
+        "line": "The United States takes its frontier laboratories under direct state control.",
+        "of_nine": 2,
+        "emergent": false
+      },
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_feral_restoration_stacks",
+        "title": "Feral restoration stacks",
+        "line": "Municipal restoration crews formalise islanded, locally-audited open-model stacks into a persistent parallel service layer that survives after the ransomware clear-up, creating unlicensed divergence from EU-wide standards.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 97.0,
+      "higher_than": 153,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 92.5,
+      "higher_than": 153,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 1.0,
+      "higher_than": 48,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 50.0,
+      "higher_than": 94,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 11.0,
+      "higher_than": 54,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 9.0,
+      "higher_than": 77,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 5.0,
+      "higher_than": 61,
+      "of_runs": 160
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "node": "turn-12-P222",
+  "turn": 12,
+  "period_prose": "the first half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [],
+    "notable": [
+      {
+        "id": "emergent_offgrid_spares_federation",
+        "title": "Offgrid spares federation",
+        "line": "Municipal utilities and farmer cooperatives formalize off-books black-start spares into a paid mutual-aid federation that refuses central inventory, creating a parallel guarded stockpile network outside Brussels' map.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_reserve_pilferage_ring",
+        "title": "Reserve pilferage ring",
+        "line": "A coordinated theft and resale ring targeting guarded fuel, generator and transformer reserves is exposed as insider-enabled organized crime rather than protest sabotage, collapsing local trust in the mutual-aid pools.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 64.9,
+      "higher_than": 23,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 64.0,
+      "higher_than": 34,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 11.0,
+      "higher_than": 91,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 41.0,
+      "higher_than": 32,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 9.0,
+      "higher_than": 30,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 0.0,
+      "higher_than": 0,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 3.5,
+      "higher_than": 46,
+      "of_runs": 160
+    }
+  }
+}

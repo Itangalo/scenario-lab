@@ -1,0 +1,79 @@
+{
+  "node": "turn-13-P112",
+  "turn": 13,
+  "period_prose": "the second half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "embodied_ai_deployment",
+        "title": "Robots Leave the Demonstration Floor",
+        "line": "Robots reach commercial deployment – not the demonstration videos, convincing for years now, but machines bought in quantity and put to work in warehouses, food processing, loading docks and the parts of manufacturing that resisted automation because the sequence varied.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "taiwan_tension_rise",
+        "title": "Taiwan Tension Rises",
+        "line": "Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "emergent_triage_protocol_diffusion",
+        "title": "Triage protocol diffusion",
+        "line": "Exhausted-nurse unions and municipal hospital federations publish a joint open protocol for manual triage and cross-border fever transfers developed during 2031, which is adopted as informal standard in several member states.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 64.0,
+      "higher_than": 4,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 63.0,
+      "higher_than": 8,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 1.0,
+      "higher_than": 48,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 56.0,
+      "higher_than": 128,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 16.0,
+      "higher_than": 93,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 9.0,
+      "higher_than": 77,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 12.0,
+      "higher_than": 100,
+      "of_runs": 160
+    }
+  }
+}

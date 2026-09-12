@@ -1,0 +1,71 @@
+{
+  "node": "turn-07-V21",
+  "turn": 7,
+  "period_prose": "the second half of 2029",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_energy_blockade",
+        "title": "Energy blockade",
+        "line": "Coordinated power-price protests escalate into physical blockades of grid connections for the five reserved gigafactory sites and foreign data centres, halting construction permits and forcing emergency energy subsidies.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 63.5,
+      "higher_than": 85,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 61.0,
+      "higher_than": 100,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 28.0,
+      "higher_than": 137,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 35.0,
+      "higher_than": 4,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 21.0,
+      "higher_than": 90,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 3.0,
+      "higher_than": 17,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 10.0,
+      "higher_than": 17,
+      "of_runs": 160
+    }
+  }
+}

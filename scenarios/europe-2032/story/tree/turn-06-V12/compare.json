@@ -1,0 +1,85 @@
+{
+  "node": "turn-06-V12",
+  "turn": 6,
+  "period_prose": "the first half of 2029",
+  "events": {
+    "siblings": 9,
+    "pinned": [
+      {
+        "id": "capability_jump",
+        "title": "Capability Jump",
+        "line": "A discontinuous advance is released or demonstrated.",
+        "of_nine": 9,
+        "emergent": false
+      },
+      {
+        "id": "member_state_defection",
+        "title": "Member State Defection",
+        "line": "A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken.",
+        "of_nine": 9,
+        "emergent": false
+      },
+      {
+        "id": "opaque_reasoning",
+        "title": "Reasoning Stops Being Legible",
+        "line": "The frontier models no longer allow intermediate reasoning a human can read, because the representations that work best are not words and never were.",
+        "of_nine": 9,
+        "emergent": false
+      },
+      {
+        "id": "openweight_frontier_release",
+        "title": "Open Weights Capability Jump",
+        "line": "An open-weight release lands within a few months of the closed frontier.",
+        "of_nine": 9,
+        "emergent": false
+      }
+    ],
+    "common": [],
+    "notable": []
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 62.5,
+      "higher_than": 90,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 58.0,
+      "higher_than": 53,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 14.0,
+      "higher_than": 33,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 53.0,
+      "higher_than": 158,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 19.0,
+      "higher_than": 82,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 18.0,
+      "higher_than": 111,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 33.0,
+      "higher_than": 138,
+      "of_runs": 160
+    }
+  }
+}

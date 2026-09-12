@@ -1,0 +1,86 @@
+{
+  "node": "turn-13-V111",
+  "turn": 13,
+  "period_prose": "the second half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "taiwan_tension_rise",
+        "title": "Taiwan Tension Rises",
+        "line": "Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_anti_ai_infrastructure_backlash",
+        "title": "Anti ai infrastructure backlash",
+        "line": "Coordinated physical protests and sabotage attempts against data-centre sites and municipal AI deployments across several member states, driven by openly hostile public mood toward AI dependence after repeated outages.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 68.2,
+      "higher_than": 57,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 66.7,
+      "higher_than": 59,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 0.0,
+      "higher_than": 0,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 66.0,
+      "higher_than": 154,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 24.0,
+      "higher_than": 144,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 15.0,
+      "higher_than": 105,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 12.0,
+      "higher_than": 100,
+      "of_runs": 160
+    }
+  }
+}

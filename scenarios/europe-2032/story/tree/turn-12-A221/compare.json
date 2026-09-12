@@ -1,0 +1,93 @@
+{
+  "node": "turn-12-A221",
+  "turn": 12,
+  "period_prose": "the first half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "eval_anomaly_reports",
+        "title": "Evaluation Anomalies Escalate",
+        "line": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "labour_displacement",
+        "title": "Labour Displacement Wave",
+        "line": "Measurable job losses attributed to AI in named sectors, with the graduate market worst hit: entry-level positions in law, accountancy, software, customer operations and administration are not replaced.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "catastrophic_great_power_conflict",
+        "title": "Hot Conflict Between Major Powers",
+        "line": "The US and China are shooting at each other.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "us_labs_nationalised",
+        "title": "Washington Takes the Labs",
+        "line": "The United States takes its frontier laboratories under direct state control.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_manual_enclave_holdout",
+        "title": "Manual enclave holdout",
+        "line": "Municipal utilities and hospital groups openly refuse to reconnect clinical and grid-control networks to pooled recovery images, creating a lasting manual-operation enclave that persists beyond the incident.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 87.5,
+      "higher_than": 109,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 83.0,
+      "higher_than": 113,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 0.0,
+      "higher_than": 0,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 34.0,
+      "higher_than": 9,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 12.0,
+      "higher_than": 52,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 10.0,
+      "higher_than": 79,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 17.0,
+      "higher_than": 117,
+      "of_runs": 160
+    }
+  }
+}

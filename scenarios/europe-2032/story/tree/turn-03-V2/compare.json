@@ -1,0 +1,100 @@
+{
+  "node": "turn-03-V2",
+  "turn": 3,
+  "period_prose": "the second half of 2027",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 4,
+        "emergent": false
+      },
+      {
+        "id": "openweight_frontier_release",
+        "title": "Open Weights Capability Jump",
+        "line": "An open-weight release lands within a few months of the closed frontier.",
+        "of_nine": 4,
+        "emergent": false
+      },
+      {
+        "id": "safety_breakthrough",
+        "title": "Safety Breakthrough",
+        "line": "An interpretability or control result measurably improves assurance on systems already deployed, rather than on toy models – behaviour that can be predicted before it is observed, or a property that can be certified rather than argued for.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_ics_toolkit_proliferation",
+        "title": "Ics toolkit proliferation",
+        "line": "Industrial-control-tuned open weights from the autumn grid intrusions are repackaged into a public toolkit, with step-by-step playbooks for grid and port systems circulating beyond the original actors.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_gulf_compute_offer",
+        "title": "Gulf compute offer",
+        "line": "A Gulf sovereign fund publicly offers multi-billion co-financing for EU gigafactory power and data-centre build-out in exchange for guaranteed inference capacity and equipment-supply preferences.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 57.5,
+      "higher_than": 51,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 53.0,
+      "higher_than": 73,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 35.0,
+      "higher_than": 136,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 35.0,
+      "higher_than": 10,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 18.0,
+      "higher_than": 50,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 11.0,
+      "higher_than": 1,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 28.0,
+      "higher_than": 34,
+      "of_runs": 160
+    }
+  }
+}

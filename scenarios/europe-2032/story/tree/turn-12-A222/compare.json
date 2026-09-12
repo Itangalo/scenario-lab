@@ -1,0 +1,93 @@
+{
+  "node": "turn-12-A222",
+  "turn": 12,
+  "period_prose": "the first half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "bio_uplift_findings",
+        "title": "Human-Infective Design Demonstrated",
+        "line": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance.",
+        "of_nine": 4,
+        "emergent": false
+      },
+      {
+        "id": "embodied_ai_deployment",
+        "title": "Robots Leave the Demonstration Floor",
+        "line": "Robots reach commercial deployment – not the demonstration videos, convincing for years now, but machines bought in quantity and put to work in warehouses, food processing, loading docks and the parts of manufacturing that resisted automation because the sequence varied.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "catastrophic_great_power_conflict",
+        "title": "Hot Conflict Between Major Powers",
+        "line": "The US and China are shooting at each other.",
+        "of_nine": 2,
+        "emergent": false
+      },
+      {
+        "id": "us_labs_nationalised",
+        "title": "Washington Takes the Labs",
+        "line": "The United States takes its frontier laboratories under direct state control.",
+        "of_nine": 2,
+        "emergent": false
+      },
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 90.0,
+      "higher_than": 122,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 84.2,
+      "higher_than": 119,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 0.0,
+      "higher_than": 0,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 41.0,
+      "higher_than": 32,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 11.0,
+      "higher_than": 45,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 22.0,
+      "higher_than": 136,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 18.0,
+      "higher_than": 122,
+      "of_runs": 160
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "node": "turn-03-V1",
+  "turn": 3,
+  "period_prose": "the second half of 2027",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "safety_breakthrough",
+        "title": "Safety Breakthrough",
+        "line": "An interpretability or control result measurably improves assurance on systems already deployed, rather than on toy models – behaviour that can be predicted before it is observed, or a property that can be certified rather than argued for.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_gigafactory_siting_backlash",
+        "title": "Gigafactory siting backlash",
+        "line": "Coordinated protests against proposed gigafactory sites over power prices and water use escalate into permit blockades and brief occupations in two bidding regions, delaying site decisions.",
+        "of_nine": 2,
+        "emergent": true
+      },
+      {
+        "id": "emergent_grid_forensics_leak",
+        "title": "Grid forensics leak",
+        "line": "Independent press investigation publishes leaked forensic details from the grid intrusions, naming vendors and unpatched remote-access tools and triggering compensation claims against two European operators.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_grid_insurance_crunch",
+        "title": "Grid insurance crunch",
+        "line": "European industrial insurers sharply reprice operational-technology cyber cover after the autumn grid intrusions, demanding certified segmentation audits that most municipal utilities cannot yet pass, freezing some Shield procurement.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 58.0,
+      "higher_than": 62,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 53.0,
+      "higher_than": 73,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 28.0,
+      "higher_than": 32,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 36.0,
+      "higher_than": 31,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 17.0,
+      "higher_than": 26,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 22.0,
+      "higher_than": 58,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 38.0,
+      "higher_than": 127,
+      "of_runs": 160
+    }
+  }
+}

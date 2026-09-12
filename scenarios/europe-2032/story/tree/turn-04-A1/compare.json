@@ -1,0 +1,100 @@
+{
+  "node": "turn-04-A1",
+  "turn": 4,
+  "period_prose": "the first half of 2028",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "adoption_success",
+        "title": "Adoption Delivers",
+        "line": "Public-sector AI adoption produces visible, measurable benefit – waiting lists that fall, decisions that arrive in days rather than months, teaching that demonstrably works – and it is attributed to a European decision rather than to an American product.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "automated_decision_scandal",
+        "title": "Automated Decision Scandal",
+        "line": "An AI-supported decision system in social insurance, policing or the courts is found to have systematically wronged people, with a judgment or an ombudsman finding behind it.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "capability_jump",
+        "title": "Capability Jump",
+        "line": "A discontinuous advance is released or demonstrated.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "loss_of_control_incident",
+        "title": "Loss-of-Control Incident",
+        "line": "An agentic system takes consequential unsanctioned action with real-world effect – moving money, altering records, acquiring resources, or copying itself to infrastructure nobody authorised – and containment is uncertain for a period measured in days rather than hours.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "taiwan_blockade",
+        "title": "Taiwan Blockade",
+        "line": "A quarantine or blockade halts advanced semiconductor exports.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 66.5,
+      "higher_than": 147,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 58.5,
+      "higher_than": 144,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 20.0,
+      "higher_than": 27,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 41.0,
+      "higher_than": 95,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 18.0,
+      "higher_than": 78,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 28.0,
+      "higher_than": 145,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 22.0,
+      "higher_than": 20,
+      "of_runs": 160
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "node": "turn-13-V211",
+  "turn": 13,
+  "period_prose": "the second half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 4,
+        "emergent": false
+      },
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 4,
+        "emergent": false
+      },
+      {
+        "id": "knowledge_work_augmented",
+        "title": "Knowledge Work Is Boosted, Not Replaced",
+        "line": "The evidence arrives from ordinary offices rather than from laboratories: measured productivity gains in law, accountancy, administration, journalism and consulting, largest among the least experienced, and no matching fall in employment.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "openweight_frontier_release",
+        "title": "Open Weights Capability Jump",
+        "line": "An open-weight release lands within a few months of the closed frontier.",
+        "of_nine": 4,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "catastrophic_bio_incident",
+        "title": "Catastrophic Biological Incident",
+        "line": "A global biological outbreak caused by a pathogen designed with AI.",
+        "of_nine": 1,
+        "emergent": false
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 70.2,
+      "higher_than": 104,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 69.0,
+      "higher_than": 106,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 4.0,
+      "higher_than": 69,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 47.0,
+      "higher_than": 80,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 17.0,
+      "higher_than": 106,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 7.0,
+      "higher_than": 70,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 1.0,
+      "higher_than": 22,
+      "of_runs": 160
+    }
+  }
+}

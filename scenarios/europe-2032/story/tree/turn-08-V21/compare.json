@@ -1,0 +1,100 @@
+{
+  "node": "turn-08-V21",
+  "turn": 8,
+  "period_prose": "the first half of 2030",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "bio_uplift_findings",
+        "title": "Human-Infective Design Demonstrated",
+        "line": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 6,
+        "emergent": false
+      },
+      {
+        "id": "middle_power_coalition",
+        "title": "Middle Powers Coordinate",
+        "line": "A coordination framework among the Union and other middle powers holding pieces of the AI supply chain — export-licence alignment, joint bargaining over compute access, shared evaluation capacity.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "emergent_access_paperwork_shock",
+        "title": "Access paperwork shock",
+        "line": "US tiered-access licensing leaks into EU procurement, forcing hospitals and municipalities to prove non-Chinese data flows before inference quotas are renewed.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_anti_datacentre_sabotage",
+        "title": "Anti datacentre sabotage",
+        "line": "Coordinated physical protests and sabotage against power infrastructure and empty gigafactory sites amid power-price anger force temporary construction and grid-connection halts in two or more member states.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_energy_backlash_blocks",
+        "title": "Energy backlash blocks",
+        "line": "Municipal clinic outages and benefit-payment failures trigger coordinated street protests against data-centre power prices, with several councils voting to block grid connections for the reserved gigafactory sites.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 64.5,
+      "higher_than": 79,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 62.2,
+      "higher_than": 100,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 26.0,
+      "higher_than": 134,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 39.0,
+      "higher_than": 30,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 19.0,
+      "higher_than": 77,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 2.0,
+      "higher_than": 10,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 6.0,
+      "higher_than": 11,
+      "of_runs": 160
+    }
+  }
+}

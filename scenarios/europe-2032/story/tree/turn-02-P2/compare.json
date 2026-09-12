@@ -1,0 +1,71 @@
+{
+  "node": "turn-02-P2",
+  "turn": 2,
+  "period_prose": "the first half of 2027",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [],
+    "notable": [
+      {
+        "id": "taiwan_blockade",
+        "title": "Taiwan Blockade",
+        "line": "A quarantine or blockade halts advanced semiconductor exports.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_permitting_backlash",
+        "title": "Permitting backlash",
+        "line": "A coordinated activist campaign blocks permitting hearings for two AI factory candidate sites over power and water use, forcing site selection to restart and delaying grid pledges.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 55.0,
+      "higher_than": 15,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 47.5,
+      "higher_than": 7,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 30.0,
+      "higher_than": 21,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 37.0,
+      "higher_than": 77,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 18.0,
+      "higher_than": 13,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 36.0,
+      "higher_than": 135,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 36.0,
+      "higher_than": 84,
+      "of_runs": 160
+    }
+  }
+}

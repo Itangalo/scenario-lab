@@ -1,0 +1,86 @@
+{
+  "node": "turn-07-P12",
+  "turn": 7,
+  "period_prose": "the second half of 2029",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "ai_investment_collapse",
+        "title": "AI Investment Collapse",
+        "line": "Capital flees the sector.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "opaque_reasoning",
+        "title": "Reasoning Stops Being Legible",
+        "line": "The frontier models no longer allow intermediate reasoning a human can read, because the representations that work best are not words and never were.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_insurance_retreat",
+        "title": "Insurance retreat",
+        "line": "Major European cyber-insurers sharply restrict or withdraw coverage for municipalities, hospitals and mid-size utilities after spring agentic failures, citing unmodellable AI-driven operational risk and forcing emergency state backstops.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 61.0,
+      "higher_than": 7,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 58.9,
+      "higher_than": 31,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 20.0,
+      "higher_than": 72,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 43.5,
+      "higher_than": 99,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 26.0,
+      "higher_than": 139,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 22.0,
+      "higher_than": 137,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 39.0,
+      "higher_than": 158,
+      "of_runs": 160
+    }
+  }
+}

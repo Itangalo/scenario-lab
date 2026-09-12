@@ -1,0 +1,71 @@
+{
+  "node": "turn-06-V22",
+  "turn": 6,
+  "period_prose": "the first half of 2029",
+  "events": {
+    "siblings": 9,
+    "pinned": [
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 9,
+        "emergent": false
+      },
+      {
+        "id": "member_state_defection",
+        "title": "Member State Defection",
+        "line": "A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken.",
+        "of_nine": 9,
+        "emergent": false
+      }
+    ],
+    "common": [],
+    "notable": []
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 62.5,
+      "higher_than": 90,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 59.4,
+      "higher_than": 87,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 30.0,
+      "higher_than": 142,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 35.5,
+      "higher_than": 5,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 17.0,
+      "higher_than": 52,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 2.0,
+      "higher_than": 4,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 7.0,
+      "higher_than": 4,
+      "of_runs": 160
+    }
+  }
+}

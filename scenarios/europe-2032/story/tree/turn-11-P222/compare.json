@@ -1,0 +1,78 @@
+{
+  "node": "turn-11-P222",
+  "turn": 11,
+  "period_prose": "the second half of 2031",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [],
+    "notable": [
+      {
+        "id": "taiwan_blockade",
+        "title": "Taiwan Blockade",
+        "line": "A quarantine or blockade halts advanced semiconductor exports.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 2,
+        "emergent": false
+      },
+      {
+        "id": "emergent_pool_list_weaponization",
+        "title": "Pool list weaponization",
+        "line": "Municipal black-start drill manuals and dispersed fuel-pool locations leak online and are repackaged as targeting guides, forcing guarded sites to relocate again and eroding reimbursement cooperation.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 64.2,
+      "higher_than": 23,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 63.8,
+      "higher_than": 39,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 13.0,
+      "higher_than": 96,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 42.5,
+      "higher_than": 54,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 9.0,
+      "higher_than": 19,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 0.0,
+      "higher_than": 0,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 4.0,
+      "higher_than": 38,
+      "of_runs": 160
+    }
+  }
+}

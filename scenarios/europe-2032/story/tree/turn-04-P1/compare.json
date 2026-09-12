@@ -1,0 +1,100 @@
+{
+  "node": "turn-04-P1",
+  "turn": 4,
+  "period_prose": "the first half of 2028",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "knowledge_work_augmented",
+        "title": "Knowledge Work Is Boosted, Not Replaced",
+        "line": "The evidence arrives from ordinary offices rather than from laboratories: measured productivity gains in law, accountancy, administration, journalism and consulting, largest among the least experienced, and no matching fall in employment.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_cyber_insurance_crunch",
+        "title": "Cyber insurance crunch",
+        "line": "A major European insurer reprices cyber cover after the autumn pre-positioning audits, sharply raising premiums or withdrawing cover for municipal utilities and hospitals lacking certified detection.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_interim_hosted_offer",
+        "title": "Interim hosted offer",
+        "line": "A major US hyperscaler publicly offers interim sovereign-hosted inference capacity to EU governments and hospitals on EU soil while gigafactories are built, easing near-term dependence fears but complicating anchoring negotiations.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_siting_backlash_delay",
+        "title": "Siting backlash delay",
+        "line": "Coordinated local opposition to gigafactory siting escalates, with municipal councils and grid operators delaying power connections over prices and land use, stalling site selection through mid-2027.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_synthetic_fraud_wave",
+        "title": "Synthetic fraud wave",
+        "line": "Coordinated AI-generated voice and video fraud wave hits several EU banks and public administrations, causing hundreds of millions in losses and forcing emergency authentication changes.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 58.0,
+      "higher_than": 27,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 52.5,
+      "higher_than": 8,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 26.0,
+      "higher_than": 44,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 42.0,
+      "higher_than": 113,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 22.0,
+      "higher_than": 147,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 20.0,
+      "higher_than": 99,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 43.0,
+      "higher_than": 153,
+      "of_runs": 160
+    }
+  }
+}

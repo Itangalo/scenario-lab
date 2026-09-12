@@ -1,0 +1,100 @@
+{
+  "node": "turn-09-A11",
+  "turn": 9,
+  "period_prose": "the second half of 2030",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "catastrophic_great_power_conflict",
+        "title": "Hot Conflict Between Major Powers",
+        "line": "The US and China are shooting at each other.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_grid_sabotage_sites",
+        "title": "Grid sabotage sites",
+        "line": "Coordinated physical attacks on transmission lines feeding the two guarded gigafactory sites and nearby substations cause prolonged outages, forcing contractors to suspend works and insurers to withdraw cover.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_robot_fleet_killswitch",
+        "title": "Robot fleet killswitch",
+        "line": "Chinese humanoid suppliers push a managed fleet-update that briefly bricks logistics robots in several EU plants, exposing remote kill-switch dependence and forcing emergency maintenance talks.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_siting_blockade_wave",
+        "title": "Siting blockade wave",
+        "line": "Coordinated municipal blockades of grid-priority gigafactory construction sites spread across two member states, fusing anti-data-centre, water-use and jobs grievances into a physical siting veto.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 88.5,
+      "higher_than": 155,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 81.8,
+      "higher_than": 154,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 0.5,
+      "higher_than": 14,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 39.5,
+      "higher_than": 39,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 21.0,
+      "higher_than": 114,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 8.0,
+      "higher_than": 49,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 17.0,
+      "higher_than": 86,
+      "of_runs": 160
+    }
+  }
+}

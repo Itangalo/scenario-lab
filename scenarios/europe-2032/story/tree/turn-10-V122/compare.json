@@ -1,0 +1,64 @@
+{
+  "node": "turn-10-V122",
+  "turn": 10,
+  "period_prose": "the first half of 2031",
+  "events": {
+    "siblings": 9,
+    "pinned": [
+      {
+        "id": "joint_threat_response",
+        "title": "Joint Threat Response",
+        "line": "States hit by the same class of incident pool attribution, intelligence and response: a joint cyber command with real-time telemetry sharing that the Union is invited into, or a biosurveillance pact with binding sample-sharing and a standing investigation mandate.",
+        "of_nine": 9,
+        "emergent": false
+      }
+    ],
+    "common": [],
+    "notable": []
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 65.7,
+      "higher_than": 60,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 64.0,
+      "higher_than": 74,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 6.0,
+      "higher_than": 48,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 60.0,
+      "higher_than": 159,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 15.0,
+      "higher_than": 61,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 14.0,
+      "higher_than": 84,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 24.0,
+      "higher_than": 138,
+      "of_runs": 160
+    }
+  }
+}

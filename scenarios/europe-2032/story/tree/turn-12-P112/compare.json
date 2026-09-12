@@ -1,0 +1,64 @@
+{
+  "node": "turn-12-P112",
+  "turn": 12,
+  "period_prose": "the first half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "automated_decision_scandal",
+        "title": "Automated Decision Scandal",
+        "line": "An AI-supported decision system in social insurance, policing or the courts is found to have systematically wronged people, with a judgment or an ombudsman finding behind it.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": []
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 63.5,
+      "higher_than": 4,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 62.4,
+      "higher_than": 9,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 3.0,
+      "higher_than": 50,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 59.0,
+      "higher_than": 146,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 16.0,
+      "higher_than": 84,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 15.0,
+      "higher_than": 105,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 14.0,
+      "higher_than": 104,
+      "of_runs": 160
+    }
+  }
+}

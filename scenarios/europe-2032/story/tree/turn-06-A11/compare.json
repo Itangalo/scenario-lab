@@ -1,0 +1,71 @@
+{
+  "node": "turn-06-A11",
+  "turn": 6,
+  "period_prose": "the first half of 2029",
+  "events": {
+    "siblings": 9,
+    "pinned": [
+      {
+        "id": "capability_jump",
+        "title": "Capability Jump",
+        "line": "A discontinuous advance is released or demonstrated.",
+        "of_nine": 9,
+        "emergent": false
+      },
+      {
+        "id": "embodied_ai_deployment",
+        "title": "Robots Leave the Demonstration Floor",
+        "line": "Robots reach commercial deployment – not the demonstration videos, convincing for years now, but machines bought in quantity and put to work in warehouses, food processing, loading docks and the parts of manufacturing that resisted automation because the sequence varied.",
+        "of_nine": 9,
+        "emergent": false
+      }
+    ],
+    "common": [],
+    "notable": []
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 77.0,
+      "higher_than": 152,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 66.0,
+      "higher_than": 141,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 9.5,
+      "higher_than": 20,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 44.0,
+      "higher_than": 115,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 19.0,
+      "higher_than": 82,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 10.0,
+      "higher_than": 51,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 17.0,
+      "higher_than": 37,
+      "of_runs": 160
+    }
+  }
+}

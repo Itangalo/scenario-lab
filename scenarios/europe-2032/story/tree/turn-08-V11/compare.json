@@ -1,0 +1,100 @@
+{
+  "node": "turn-08-V11",
+  "turn": 8,
+  "period_prose": "the first half of 2030",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 4,
+        "emergent": false
+      },
+      {
+        "id": "knowledge_work_augmented",
+        "title": "Knowledge Work Is Boosted, Not Replaced",
+        "line": "The evidence arrives from ordinary offices rather than from laboratories: measured productivity gains in law, accountancy, administration, journalism and consulting, largest among the least experienced, and no matching fall in employment.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "taiwan_blockade",
+        "title": "Taiwan Blockade",
+        "line": "A quarantine or blockade halts advanced semiconductor exports.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 2,
+        "emergent": false
+      },
+      {
+        "id": "emergent_synthesis_screening_crisis",
+        "title": "Synthesis screening crisis",
+        "line": "A major commercial gene-synthesis provider publicly admits fulfilling unscreened orders designed with leaked open-weight assistance, triggering emergency screening mandates outside the EU framework.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_siting_backlash_freeze",
+        "title": "Siting backlash freeze",
+        "line": "A coordinated municipal moratorium movement blocks grid connections for new data-centre permitting zones, with court injunctions delaying at least one zone through the turn.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 64.5,
+      "higher_than": 79,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 62.1,
+      "higher_than": 98,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 10.0,
+      "higher_than": 40,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 56.0,
+      "higher_than": 159,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 20.0,
+      "higher_than": 93,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 18.0,
+      "higher_than": 111,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 16.0,
+      "higher_than": 65,
+      "of_runs": 160
+    }
+  }
+}

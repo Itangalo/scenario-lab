@@ -1,0 +1,100 @@
+{
+  "node": "turn-08-P11",
+  "turn": 8,
+  "period_prose": "the first half of 2030",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "ai_investment_collapse",
+        "title": "AI Investment Collapse",
+        "line": "Capital flees the sector.",
+        "of_nine": 4,
+        "emergent": false
+      },
+      {
+        "id": "openweight_frontier_release",
+        "title": "Open Weights Capability Jump",
+        "line": "An open-weight release lands within a few months of the closed frontier.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_ai_fraud_extortion_wave",
+        "title": "Ai fraud extortion wave",
+        "line": "A transnational extortion wave uses openly available frontier-capable voice and video cloning plus automated vulnerability discovery to hit municipalities and hospitals already degraded by the cutoff, producing highly visible ransom and fraud losses distinct from any single major cyber attack.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_care_fallback_failure",
+        "title": "Care fallback failure",
+        "line": "A major European hospital operator publicly abandons its EU-hosted open-model fallback after repeated clinical errors, reverting to paper triage and triggering national inquiries into continuity readiness.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_fallback_insurance_freeze",
+        "title": "Fallback insurance freeze",
+        "line": "Insurers withdraw fallback-model liability cover for uncertified municipalities after the rogue-agent losses, forcing emergency state indemnities and a public fight over who insures EU-mandated open-model use.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 61.5,
+      "higher_than": 6,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 59.9,
+      "higher_than": 21,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 18.0,
+      "higher_than": 77,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 49.0,
+      "higher_than": 134,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 20.0,
+      "higher_than": 93,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 17.0,
+      "higher_than": 107,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 28.0,
+      "higher_than": 134,
+      "of_runs": 160
+    }
+  }
+}

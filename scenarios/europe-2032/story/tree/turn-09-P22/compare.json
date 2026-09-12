@@ -1,0 +1,79 @@
+{
+  "node": "turn-09-P22",
+  "turn": 9,
+  "period_prose": "the second half of 2030",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "export_control_escalation",
+        "title": "Export Control Escalation",
+        "line": "Chip and model export controls tighten again.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_grid_connection_moratorium",
+        "title": "Grid connection moratorium",
+        "line": "Municipal utilities in two member states suspend new data-centre grid connections after protests over water use and blackout fears, freezing already-permitted sovereignty-package sites.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 63.2,
+      "higher_than": 33,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 61.4,
+      "higher_than": 39,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 17.0,
+      "higher_than": 99,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 36.5,
+      "higher_than": 17,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 13.0,
+      "higher_than": 21,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 3.0,
+      "higher_than": 21,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 10.0,
+      "higher_than": 42,
+      "of_runs": 160
+    }
+  }
+}

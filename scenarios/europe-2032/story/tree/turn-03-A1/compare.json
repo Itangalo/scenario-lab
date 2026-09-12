@@ -1,0 +1,93 @@
+{
+  "node": "turn-03-A1",
+  "turn": 3,
+  "period_prose": "the second half of 2027",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "capability_jump",
+        "title": "Capability Jump",
+        "line": "A discontinuous advance is released or demonstrated.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_attribution_leak",
+        "title": "Attribution leak",
+        "line": "A joint investigative reporting consortium publishes forensic evidence credibly linking the autumn grid pre-positioning swarm to specific state-contracted compute clusters, forcing public attribution debate.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_foundry_supply_squeeze",
+        "title": "Foundry supply squeeze",
+        "line": "A prolonged drought in Taiwan and power rationing notices force a major foundry to guide down output for two quarters, tightening global GPU and power-electronics supply and delaying European data-centre build-outs.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_ot_insurance_pullback",
+        "title": "Ot insurance pullback",
+        "line": "Major reinsurers temporarily exclude OT cyber-triggered business interruption for ports and grid operators after the autumn pre-positioning revelations, raising premiums and forcing temporary throughput limits.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 63.0,
+      "higher_than": 142,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 54.0,
+      "higher_than": 109,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 22.0,
+      "higher_than": 21,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 36.0,
+      "higher_than": 31,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 17.0,
+      "higher_than": 26,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 27.0,
+      "higher_than": 107,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 28.0,
+      "higher_than": 34,
+      "of_runs": 160
+    }
+  }
+}

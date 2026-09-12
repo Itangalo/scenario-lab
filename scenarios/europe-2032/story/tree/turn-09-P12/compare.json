@@ -1,0 +1,79 @@
+{
+  "node": "turn-09-P12",
+  "turn": 9,
+  "period_prose": "the second half of 2030",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "taiwan_blockade",
+        "title": "Taiwan Blockade",
+        "line": "A quarantine or blockade halts advanced semiconductor exports.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_liability_retreat",
+        "title": "Liability retreat",
+        "line": "US insurers and cloud providers impose EU-wide AI-contingent exclusions and surcharges on public-sector contracts after the February cutoff and contractor agent incident, sharply raising fallback hosting costs.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 62.0,
+      "higher_than": 6,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 60.7,
+      "higher_than": 20,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 11.0,
+      "higher_than": 74,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 50.5,
+      "higher_than": 131,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 26.0,
+      "higher_than": 147,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 22.0,
+      "higher_than": 133,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 25.0,
+      "higher_than": 132,
+      "of_runs": 160
+    }
+  }
+}

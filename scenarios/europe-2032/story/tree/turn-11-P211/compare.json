@@ -1,0 +1,93 @@
+{
+  "node": "turn-11-P211",
+  "turn": 11,
+  "period_prose": "the second half of 2031",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "bio_incident",
+        "title": "Biological Incident",
+        "line": "A real biological incident with model involvement: a deliberate release or a laboratory escape involving a designed or modified agent.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "openweight_frontier_release",
+        "title": "Open Weights Capability Jump",
+        "line": "An open-weight release lands within a few months of the closed frontier.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "research_breakthrough",
+        "title": "Science Delivers",
+        "line": "A significant research result, with AI doing what used to be the hard part.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 2,
+        "emergent": false
+      },
+      {
+        "id": "emergent_compute_blackmarket_bust",
+        "title": "Compute blackmarket bust",
+        "line": "A coordinated seizure of illicit GPU clusters rented with stolen identities for distributed training on the leaked open-weight frontier model is reported by two member states' police, exposing a rental black market.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 64.5,
+      "higher_than": 27,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 63.5,
+      "higher_than": 38,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 5.0,
+      "higher_than": 53,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 35.5,
+      "higher_than": 12,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 12.0,
+      "higher_than": 43,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 5.0,
+      "higher_than": 38,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 15.0,
+      "higher_than": 96,
+      "of_runs": 160
+    }
+  }
+}

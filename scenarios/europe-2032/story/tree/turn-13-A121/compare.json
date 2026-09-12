@@ -1,0 +1,79 @@
+{
+  "node": "turn-13-A121",
+  "turn": 13,
+  "period_prose": "the second half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "cyber_defence_breakthrough",
+        "title": "Defensive Breakthrough",
+        "line": "Defensive tooling closes the gap for a whole class of attack – automated patching at the speed vulnerabilities are found, or detection that catches swarm behaviour rather than signatures – and the offence-defence balance visibly shifts back for the first time in years.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "us_labs_nationalised",
+        "title": "Washington Takes the Labs",
+        "line": "The United States takes its frontier laboratories under direct state control.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_anti_compute_blockades",
+        "title": "Anti compute blockades",
+        "line": "Coordinated physical blockades of fenced compute sites and grid substations spread across several member states, forcing extended shutdowns and emergency policing over winter austerity.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 98.0,
+      "higher_than": 156,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 93.1,
+      "higher_than": 157,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 0.0,
+      "higher_than": 0,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 42.0,
+      "higher_than": 40,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 8.0,
+      "higher_than": 33,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 0.0,
+      "higher_than": 0,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 1.0,
+      "higher_than": 22,
+      "of_runs": 160
+    }
+  }
+}

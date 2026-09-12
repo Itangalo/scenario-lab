@@ -1,0 +1,71 @@
+{
+  "node": "turn-10-P212",
+  "turn": 10,
+  "period_prose": "the first half of 2031",
+  "events": {
+    "siblings": 9,
+    "pinned": [
+      {
+        "id": "bio_uplift_findings",
+        "title": "Human-Infective Design Demonstrated",
+        "line": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance.",
+        "of_nine": 9,
+        "emergent": false
+      },
+      {
+        "id": "openweight_frontier_release",
+        "title": "Open Weights Capability Jump",
+        "line": "An open-weight release lands within a few months of the closed frontier.",
+        "of_nine": 9,
+        "emergent": false
+      }
+    ],
+    "common": [],
+    "notable": []
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 63.9,
+      "higher_than": 32,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 62.5,
+      "higher_than": 39,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 7.0,
+      "higher_than": 56,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 36.5,
+      "higher_than": 19,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 14.0,
+      "higher_than": 50,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 2.0,
+      "higher_than": 14,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 23.0,
+      "higher_than": 133,
+      "of_runs": 160
+    }
+  }
+}

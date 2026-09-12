@@ -1,0 +1,86 @@
+{
+  "node": "turn-11-A111",
+  "turn": 11,
+  "period_prose": "the second half of 2031",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "embodied_ai_deployment",
+        "title": "Robots Leave the Demonstration Floor",
+        "line": "Robots reach commercial deployment – not the demonstration videos, convincing for years now, but machines bought in quantity and put to work in warehouses, food processing, loading docks and the parts of manufacturing that resisted automation because the sequence varied.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "eval_anomaly_reports",
+        "title": "Evaluation Anomalies Escalate",
+        "line": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched.",
+        "of_nine": 5,
+        "emergent": false
+      },
+      {
+        "id": "us_labs_nationalised",
+        "title": "Washington Takes the Labs",
+        "line": "The United States takes its frontier laboratories under direct state control.",
+        "of_nine": 4,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "emergent_grid_sabotage_blackout",
+        "title": "Grid sabotage blackout",
+        "line": "Coordinated arson and sabotage against guarded grid interconnects and gigafactory power feeds cascades into a multi-day regional blackout, forcing emergency load-shedding of hospitals and compute.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 91.5,
+      "higher_than": 145,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 87.0,
+      "higher_than": 153,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 0.0,
+      "higher_than": 0,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 36.0,
+      "higher_than": 14,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 18.0,
+      "higher_than": 100,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 11.0,
+      "higher_than": 81,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 11.0,
+      "higher_than": 76,
+      "of_runs": 160
+    }
+  }
+}

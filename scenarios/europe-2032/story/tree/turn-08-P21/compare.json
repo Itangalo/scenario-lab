@@ -1,0 +1,100 @@
+{
+  "node": "turn-08-P21",
+  "turn": 8,
+  "period_prose": "the first half of 2030",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "knowledge_work_augmented",
+        "title": "Knowledge Work Is Boosted, Not Replaced",
+        "line": "The evidence arrives from ordinary offices rather than from laboratories: measured productivity gains in law, accountancy, administration, journalism and consulting, largest among the least experienced, and no matching fall in employment.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "taiwan_blockade",
+        "title": "Taiwan Blockade",
+        "line": "A quarantine or blockade halts advanced semiconductor exports.",
+        "of_nine": 2,
+        "emergent": false
+      },
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 2,
+        "emergent": false
+      },
+      {
+        "id": "emergent_infrastructure_sabotage_wave",
+        "title": "Infrastructure sabotage wave",
+        "line": "Coordinated physical sabotage against data-centre construction and grid segmentation sites spreads across several member states, moving from protest to sustained arson and equipment damage that delays hardening work.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_anti_ai_electoral_surge",
+        "title": "Anti ai electoral surge",
+        "line": "Anti-AI parties coordinate cross-border municipal bans on new data-centre construction and AI use in schools and hiring, winning regional votes and forcing permit freezes beyond the existing siting backlash.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 62.5,
+      "higher_than": 32,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 60.3,
+      "higher_than": 42,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 11.0,
+      "higher_than": 50,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 41.0,
+      "higher_than": 49,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 16.0,
+      "higher_than": 34,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 2.0,
+      "higher_than": 10,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 14.0,
+      "higher_than": 52,
+      "of_runs": 160
+    }
+  }
+}

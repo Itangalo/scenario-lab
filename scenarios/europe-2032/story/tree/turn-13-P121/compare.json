@@ -1,0 +1,93 @@
+{
+  "node": "turn-13-P121",
+  "turn": 13,
+  "period_prose": "the second half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "ai_investment_collapse",
+        "title": "AI Investment Collapse",
+        "line": "Capital flees the sector.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "bio_uplift_findings",
+        "title": "Human-Infective Design Demonstrated",
+        "line": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance.",
+        "of_nine": 4,
+        "emergent": false
+      },
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 6,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "catastrophic_bio_incident",
+        "title": "Catastrophic Biological Incident",
+        "line": "A global biological outbreak caused by a pathogen designed with AI.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "taiwan_blockade",
+        "title": "Taiwan Blockade",
+        "line": "A quarantine or blockade halts advanced semiconductor exports.",
+        "of_nine": 1,
+        "emergent": false
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 64.0,
+      "higher_than": 4,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 63.0,
+      "higher_than": 8,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 3.0,
+      "higher_than": 64,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 52.0,
+      "higher_than": 112,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 23.0,
+      "higher_than": 142,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 27.0,
+      "higher_than": 150,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 23.0,
+      "higher_than": 145,
+      "of_runs": 160
+    }
+  }
+}

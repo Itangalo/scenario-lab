@@ -1,0 +1,64 @@
+{
+  "node": "turn-06-A21",
+  "turn": 6,
+  "period_prose": "the first half of 2029",
+  "events": {
+    "siblings": 9,
+    "pinned": [
+      {
+        "id": "eval_anomaly_reports",
+        "title": "Evaluation Anomalies Escalate",
+        "line": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched.",
+        "of_nine": 9,
+        "emergent": false
+      }
+    ],
+    "common": [],
+    "notable": []
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 71.5,
+      "higher_than": 122,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 65.5,
+      "higher_than": 138,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 12.0,
+      "higher_than": 28,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 39.0,
+      "higher_than": 32,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 17.0,
+      "higher_than": 52,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 14.0,
+      "higher_than": 84,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 32.0,
+      "higher_than": 134,
+      "of_runs": 160
+    }
+  }
+}

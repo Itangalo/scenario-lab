@@ -1,0 +1,93 @@
+{
+  "node": "turn-12-P122",
+  "turn": 12,
+  "period_prose": "the first half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "ai_investment_collapse",
+        "title": "AI Investment Collapse",
+        "line": "Capital flees the sector.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "medical_breakthrough",
+        "title": "Medicine Delivers",
+        "line": "Treatments arrive for diseases previously untreatable, or individually tailored therapies reach ordinary clinical use.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "openweight_frontier_release",
+        "title": "Open Weights Capability Jump",
+        "line": "An open-weight release lands within a few months of the closed frontier.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 63.5,
+      "higher_than": 4,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 62.5,
+      "higher_than": 10,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 14.5,
+      "higher_than": 111,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 52.0,
+      "higher_than": 109,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 25.0,
+      "higher_than": 144,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 22.0,
+      "higher_than": 136,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 16.0,
+      "higher_than": 111,
+      "of_runs": 160
+    }
+  }
+}

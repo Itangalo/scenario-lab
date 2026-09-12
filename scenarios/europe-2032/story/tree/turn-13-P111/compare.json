@@ -1,0 +1,86 @@
+{
+  "node": "turn-13-P111",
+  "turn": 13,
+  "period_prose": "the second half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "knowledge_work_augmented",
+        "title": "Knowledge Work Is Boosted, Not Replaced",
+        "line": "The evidence arrives from ordinary offices rather than from laboratories: measured productivity gains in law, accountancy, administration, journalism and consulting, largest among the least experienced, and no matching fall in employment.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 2,
+        "emergent": false
+      },
+      {
+        "id": "emergent_paper_records_breach",
+        "title": "Paper records breach",
+        "line": "Municipal paper-fallback archives built during the ransomware cordons are exfiltrated and published, triggering a cross-border privacy and fraud crisis that discredits manual continuity.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_shadow_biomed_market",
+        "title": "Shadow biomed market",
+        "line": "Underground clinics advertise unvetted AI-designed antivirals and decontamination protocols, drawing patients away from cordon hospitals and creating a parallel care market authorities cannot trace.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 64.0,
+      "higher_than": 4,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 63.0,
+      "higher_than": 8,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 14.0,
+      "higher_than": 117,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 57.0,
+      "higher_than": 130,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 20.0,
+      "higher_than": 128,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 12.0,
+      "higher_than": 92,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 7.0,
+      "higher_than": 71,
+      "of_runs": 160
+    }
+  }
+}

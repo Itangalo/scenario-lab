@@ -1,0 +1,100 @@
+{
+  "node": "turn-08-V12",
+  "turn": 8,
+  "period_prose": "the first half of 2030",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "bio_incident",
+        "title": "Biological Incident",
+        "line": "A real biological incident with model involvement: a deliberate release or a laboratory escape involving a designed or modified agent.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "bio_uplift_findings",
+        "title": "Human-Infective Design Demonstrated",
+        "line": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "knowledge_work_augmented",
+        "title": "Knowledge Work Is Boosted, Not Replaced",
+        "line": "The evidence arrives from ordinary offices rather than from laboratories: measured productivity gains in law, accountancy, administration, journalism and consulting, largest among the least experienced, and no matching fall in employment.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "openweight_frontier_release",
+        "title": "Open Weights Capability Jump",
+        "line": "An open-weight release lands within a few months of the closed frontier.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "taiwan_blockade",
+        "title": "Taiwan Blockade",
+        "line": "A quarantine or blockade halts advanced semiconductor exports.",
+        "of_nine": 1,
+        "emergent": false
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 64.1,
+      "higher_than": 77,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 61.8,
+      "higher_than": 74,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 10.0,
+      "higher_than": 40,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 55.0,
+      "higher_than": 159,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 15.0,
+      "higher_than": 26,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 17.0,
+      "higher_than": 107,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 28.0,
+      "higher_than": 134,
+      "of_runs": 160
+    }
+  }
+}

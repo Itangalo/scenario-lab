@@ -1,0 +1,93 @@
+{
+  "node": "turn-04-V2",
+  "turn": 4,
+  "period_prose": "the first half of 2028",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "taiwan_blockade",
+        "title": "Taiwan Blockade",
+        "line": "A quarantine or blockade halts advanced semiconductor exports.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_gigafactory_siting_backlash",
+        "title": "Gigafactory siting backlash",
+        "line": "Municipal and regional opposition coalesces against gigafactory shortlist sites over power prices, water use and permitting, delaying grid-connection approvals in at least one shortlisted state.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_grid_disclosure_cascade",
+        "title": "Grid disclosure cascade",
+        "line": "A major non-EU grid operator publicly discloses persistent model-assisted intrusions matching the autumn EU pattern, forcing coordinated cross-border attribution pressure.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 59.5,
+      "higher_than": 53,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 55.3,
+      "higher_than": 79,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 34.0,
+      "higher_than": 152,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 33.5,
+      "higher_than": 3,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 14.0,
+      "higher_than": 13,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 2.0,
+      "higher_than": 0,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 22.0,
+      "higher_than": 20,
+      "of_runs": 160
+    }
+  }
+}

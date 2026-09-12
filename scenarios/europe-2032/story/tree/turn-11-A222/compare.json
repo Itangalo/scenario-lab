@@ -1,0 +1,79 @@
+{
+  "node": "turn-11-A222",
+  "turn": 11,
+  "period_prose": "the second half of 2031",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "capability_jump",
+        "title": "Capability Jump",
+        "line": "A discontinuous advance is released or demonstrated.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "us_labs_nationalised",
+        "title": "Washington Takes the Labs",
+        "line": "The United States takes its frontier laboratories under direct state control.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_analogue_continuity_pact",
+        "title": "Analogue continuity pact",
+        "line": "Hospitals running on paper backups publish triage protocols that are copied by municipal utilities, creating an ad-hoc analogue-continuity network that keeps essential services running through the next outage without new EU funding.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 88.0,
+      "higher_than": 122,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 80.4,
+      "higher_than": 115,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 1.0,
+      "higher_than": 30,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 43.0,
+      "higher_than": 56,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 15.0,
+      "higher_than": 68,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 20.0,
+      "higher_than": 126,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 22.0,
+      "higher_than": 135,
+      "of_runs": 160
+    }
+  }
+}

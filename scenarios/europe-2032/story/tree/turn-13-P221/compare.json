@@ -1,0 +1,100 @@
+{
+  "node": "turn-13-P221",
+  "turn": 13,
+  "period_prose": "the second half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "member_state_defection",
+        "title": "Member State Defection",
+        "line": "A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken.",
+        "of_nine": 4,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "taiwan_blockade",
+        "title": "Taiwan Blockade",
+        "line": "A quarantine or blockade halts advanced semiconductor exports.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_manual_reversion_lockin",
+        "title": "Manual reversion lockin",
+        "line": "Municipal utilities and hospital operators quietly abandon metered US fallback and revert to manual paper procedures after vandalism and quota cuts, entrenching a low-tech equilibrium that persists beyond the incident.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_quota_grey_market_exposure",
+        "title": "Quota grey market exposure",
+        "line": "A grey brokerage network reselling US-quota chips and cloud inference into EU hospitals and labs via third-country intermediaries is exposed, forcing seizures and sudden service losses.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_shadow_maintenance_pact",
+        "title": "Shadow maintenance pact",
+        "line": "Municipal utilities and hospital technicians formalize an off-books spares-and-repair network, cannibalizing decommissioned equipment to keep non-showcase sites running despite the two-tier shield.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 69.0,
+      "higher_than": 79,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 66.0,
+      "higher_than": 44,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 9.0,
+      "higher_than": 95,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 37.0,
+      "higher_than": 18,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 8.0,
+      "higher_than": 33,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 1.0,
+      "higher_than": 23,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 7.0,
+      "higher_than": 71,
+      "of_runs": 160
+    }
+  }
+}

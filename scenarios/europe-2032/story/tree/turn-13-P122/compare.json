@@ -1,0 +1,79 @@
+{
+  "node": "turn-13-P122",
+  "turn": 13,
+  "period_prose": "the second half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "emergent_graduate_protest_wave",
+        "title": "Graduate protest wave",
+        "line": "Coordinated graduate-led protests across several EU capitals target empty Entry-Level Transition Guarantee offices and data-centre sites, merging job anxiety with anti-AI sentiment and forcing a policing and funding response.",
+        "of_nine": 2,
+        "emergent": true
+      },
+      {
+        "id": "emergent_uncertified_backlash_boycott",
+        "title": "Uncertified backlash boycott",
+        "line": "Uncertified municipal utilities and clinics hit by automated intrusions publicly blame the EU certificate scheme for leaving them exposed, triggering coordinated refusal to share incident telemetry.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 64.0,
+      "higher_than": 4,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 63.0,
+      "higher_than": 8,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 12.5,
+      "higher_than": 113,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 58.0,
+      "higher_than": 138,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 23.0,
+      "higher_than": 142,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 23.0,
+      "higher_than": 141,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 12.0,
+      "higher_than": 100,
+      "of_runs": 160
+    }
+  }
+}

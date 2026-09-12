@@ -1,0 +1,79 @@
+{
+  "node": "turn-07-P22",
+  "turn": 7,
+  "period_prose": "the second half of 2029",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "export_control_escalation",
+        "title": "Export Control Escalation",
+        "line": "Chip and model export controls tighten again.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "taiwan_blockade",
+        "title": "Taiwan Blockade",
+        "line": "A quarantine or blockade halts advanced semiconductor exports.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_antiai_electoral_surge",
+        "title": "Antiai electoral surge",
+        "line": "Anti-AI parties make a breakthrough in regional and municipal elections on a platform of data-centre moratoriums and bans on AI in public services, turning siting and hospital automation into a vote-winning issue.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 61.8,
+      "higher_than": 36,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 58.9,
+      "higher_than": 31,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 21.0,
+      "higher_than": 96,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 39.0,
+      "higher_than": 38,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 18.0,
+      "higher_than": 47,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 5.0,
+      "higher_than": 26,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 21.0,
+      "higher_than": 79,
+      "of_runs": 160
+    }
+  }
+}

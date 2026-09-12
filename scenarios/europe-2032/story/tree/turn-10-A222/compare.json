@@ -1,0 +1,106 @@
+{
+  "node": "turn-10-A222",
+  "turn": 10,
+  "period_prose": "the first half of 2031",
+  "events": {
+    "siblings": 9,
+    "pinned": [
+      {
+        "id": "catastrophic_loss_of_control_incident",
+        "title": "Catastrophic Loss-of-Control Incident",
+        "line": "An agentic AI system takes establishes itself online, distributed over datacenters and often unknown locations.",
+        "of_nine": 9,
+        "emergent": false
+      },
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 9,
+        "emergent": false
+      },
+      {
+        "id": "eval_anomaly_reports",
+        "title": "Evaluation Anomalies Escalate",
+        "line": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched.",
+        "of_nine": 9,
+        "emergent": false
+      },
+      {
+        "id": "joint_threat_response",
+        "title": "Joint Threat Response",
+        "line": "States hit by the same class of incident pool attribution, intelligence and response: a joint cyber command with real-time telemetry sharing that the Union is invited into, or a biosurveillance pact with binding sample-sharing and a standing investigation mandate.",
+        "of_nine": 9,
+        "emergent": false
+      },
+      {
+        "id": "opaque_reasoning",
+        "title": "Reasoning Stops Being Legible",
+        "line": "The frontier models no longer allow intermediate reasoning a human can read, because the representations that work best are not words and never were.",
+        "of_nine": 9,
+        "emergent": false
+      },
+      {
+        "id": "safety_breakthrough",
+        "title": "Safety Breakthrough",
+        "line": "An interpretability or control result measurably improves assurance on systems already deployed, rather than on toy models – behaviour that can be predicted before it is observed, or a property that can be certified rather than argued for.",
+        "of_nine": 9,
+        "emergent": false
+      },
+      {
+        "id": "us_china_agreement",
+        "title": "Narrow Binding Agreement",
+        "line": "The two leading powers reach a limited but real agreement covering some class of AI risk – weights security, autonomous escalation, a class of biological design tools – with verification thin but not absent.",
+        "of_nine": 9,
+        "emergent": false
+      }
+    ],
+    "common": [],
+    "notable": []
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 83.5,
+      "higher_than": 114,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 77.3,
+      "higher_than": 116,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 6.0,
+      "higher_than": 48,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 35.0,
+      "higher_than": 11,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 16.0,
+      "higher_than": 70,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 10.0,
+      "higher_than": 66,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 20.0,
+      "higher_than": 111,
+      "of_runs": 160
+    }
+  }
+}

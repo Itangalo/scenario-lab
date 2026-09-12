@@ -1,0 +1,71 @@
+{
+  "node": "turn-02-A2",
+  "turn": 2,
+  "period_prose": "the first half of 2027",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 2,
+        "emergent": false
+      },
+      {
+        "id": "emergent_siting_backlash",
+        "title": "Siting backlash",
+        "line": "Coordinated local protests and permitting lawsuits stall at least one announced AI factory or data-centre zone site for months, driven by energy-cost and water-use concerns.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 58.0,
+      "higher_than": 104,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 50.5,
+      "higher_than": 112,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 30.0,
+      "higher_than": 21,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 37.0,
+      "higher_than": 77,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 18.0,
+      "higher_than": 13,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 28.0,
+      "higher_than": 48,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 36.0,
+      "higher_than": 84,
+      "of_runs": 160
+    }
+  }
+}

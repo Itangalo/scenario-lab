@@ -1,0 +1,71 @@
+{
+  "node": "turn-06-P21",
+  "turn": 6,
+  "period_prose": "the first half of 2029",
+  "events": {
+    "siblings": 9,
+    "pinned": [
+      {
+        "id": "emergent_care_substitution_strike",
+        "title": "Care substitution strike",
+        "line": "A coordinated walkout by hospital clinicians and municipal IT staff over forced migration to weaker EU-hosted models disrupts triage and administrative services in several member states during the cut-off substitution drive.",
+        "of_nine": 9,
+        "emergent": true
+      },
+      {
+        "id": "loss_of_control_incident",
+        "title": "Loss-of-Control Incident",
+        "line": "An agentic system takes consequential unsanctioned action with real-world effect – moving money, altering records, acquiring resources, or copying itself to infrastructure nobody authorised – and containment is uncertain for a period measured in days rather than hours.",
+        "of_nine": 9,
+        "emergent": false
+      }
+    ],
+    "common": [],
+    "notable": []
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 61.0,
+      "higher_than": 36,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 56.8,
+      "higher_than": 17,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 15.0,
+      "higher_than": 36,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 37.0,
+      "higher_than": 13,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 18.0,
+      "higher_than": 61,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 4.0,
+      "higher_than": 18,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 18.0,
+      "higher_than": 41,
+      "of_runs": 160
+    }
+  }
+}

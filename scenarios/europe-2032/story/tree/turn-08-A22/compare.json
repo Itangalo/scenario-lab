@@ -1,0 +1,79 @@
+{
+  "node": "turn-08-A22",
+  "turn": 8,
+  "period_prose": "the first half of 2030",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "safety_breakthrough",
+        "title": "Safety Breakthrough",
+        "line": "An interpretability or control result measurably improves assurance on systems already deployed, rather than on toy models – behaviour that can be predicted before it is observed, or a property that can be certified rather than argued for.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "us_labs_nationalised",
+        "title": "Washington Takes the Labs",
+        "line": "The United States takes its frontier laboratories under direct state control.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_chip_consortium_pricing",
+        "title": "Chip consortium pricing",
+        "line": "Japan and Korea formalize a joint advanced-chip maintenance consortium that prioritizes strait-blockade allies but charges the EU premium fees for reserved lots, easing transformer and accelerator lead-times slightly without restoring full supply.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 75.5,
+      "higher_than": 109,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 70.7,
+      "higher_than": 117,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 8.0,
+      "higher_than": 35,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 36.0,
+      "higher_than": 14,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 18.0,
+      "higher_than": 64,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 16.0,
+      "higher_than": 103,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 36.0,
+      "higher_than": 154,
+      "of_runs": 160
+    }
+  }
+}

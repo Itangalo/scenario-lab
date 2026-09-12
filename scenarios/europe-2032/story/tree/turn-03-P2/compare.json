@@ -1,0 +1,93 @@
+{
+  "node": "turn-03-P2",
+  "turn": 3,
+  "period_prose": "the second half of 2027",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "openweight_frontier_release",
+        "title": "Open Weights Capability Jump",
+        "line": "An open-weight release lands within a few months of the closed frontier.",
+        "of_nine": 4,
+        "emergent": false
+      },
+      {
+        "id": "taiwan_tension_rise",
+        "title": "Taiwan Tension Rises",
+        "line": "Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "emergent_factory_siting_backlash",
+        "title": "Factory siting backlash",
+        "line": "Coordinated local opposition delays one or more AI factory shortlist sites, with municipal councils blocking grid pledges over energy prices and water use after grid-intrusion news links open models to vulnerability.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_grid_copycat_extortion",
+        "title": "Grid copycat extortion",
+        "line": "Criminal or copycat groups reuse tooling and techniques resembling the autumn grid intrusions for extortion attempts against municipal utilities and port operators, without state sponsorship.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_siting_backlash",
+        "title": "Siting backlash",
+        "line": "A coordinated municipal campaign across several host-candidate regions blocks AI factory site surveys over power prices and water use, forcing at least one shortlisted site to be withdrawn this turn.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 56.5,
+      "higher_than": 18,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 49.5,
+      "higher_than": 5,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 28.0,
+      "higher_than": 32,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 35.5,
+      "higher_than": 25,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 16.0,
+      "higher_than": 18,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 19.0,
+      "higher_than": 31,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 32.0,
+      "higher_than": 65,
+      "of_runs": 160
+    }
+  }
+}

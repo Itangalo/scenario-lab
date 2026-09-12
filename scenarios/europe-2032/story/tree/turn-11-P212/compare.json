@@ -1,0 +1,93 @@
+{
+  "node": "turn-11-P212",
+  "turn": 11,
+  "period_prose": "the second half of 2031",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "export_control_escalation",
+        "title": "Export Control Escalation",
+        "line": "Chip and model export controls tighten again.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "us_china_agreement",
+        "title": "Narrow Binding Agreement",
+        "line": "The two leading powers reach a limited but real agreement covering some class of AI risk – weights security, autonomous escalation, a class of biological design tools – with verification thin but not absent.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "emergent_shadow_adoption_failure",
+        "title": "Shadow adoption failure",
+        "line": "Municipal hospitals and grid operators quietly integrate the unrecallable open frontier model into clinical triage and SCADA-adjacent workflows despite HERA guidance, creating an unauthorised shadow dependency that fails or is poisoned at scale.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_shadow_clinical_stack",
+        "title": "Shadow clinical stack",
+        "line": "Municipal hospitals and university labs quietly deploy the near-frontier open weights for triage and diagnostics on local hardware, creating an ungoverned shadow clinical stack outside EU procurement and monitoring.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_substation_sabotage",
+        "title": "Substation sabotage",
+        "line": "Coordinated physical sabotage of grid interconnectors feeding the two frozen AI factory sites causes multi-day local outages, investigated as anti-data-centre action and widening the freeze dispute into energy security.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 64.6,
+      "higher_than": 31,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 63.2,
+      "higher_than": 37,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 5.0,
+      "higher_than": 53,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 35.0,
+      "higher_than": 11,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 14.0,
+      "higher_than": 58,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 2.0,
+      "higher_than": 15,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 21.0,
+      "higher_than": 130,
+      "of_runs": 160
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "node": "turn-12-A121",
+  "turn": 12,
+  "period_prose": "the first half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "bio_uplift_findings",
+        "title": "Human-Infective Design Demonstrated",
+        "line": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance.",
+        "of_nine": 4,
+        "emergent": false
+      },
+      {
+        "id": "catastrophic_great_power_conflict",
+        "title": "Hot Conflict Between Major Powers",
+        "line": "The US and China are shooting at each other.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "export_control_escalation",
+        "title": "Export Control Escalation",
+        "line": "Chip and model export controls tighten again.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_datacentre_sabotage_wave",
+        "title": "Datacentre sabotage wave",
+        "line": "Coordinated physical sabotage disables two EU data-centre sites after welfare-scandal protests escalate from demonstrations to infrastructure blockade.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_redress_litigation_wave",
+        "title": "Redress litigation wave",
+        "line": "National courts cite the welfare-fraud ombudsman findings to order mass human re-review of AI-supported benefit, policing and hiring decisions, creating a coordinated redress wave that paralyses rollout.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 95.5,
+      "higher_than": 154,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 90.7,
+      "higher_than": 157,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 0.0,
+      "higher_than": 0,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 44.0,
+      "higher_than": 59,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 9.0,
+      "higher_than": 30,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 0.0,
+      "higher_than": 0,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 3.0,
+      "higher_than": 34,
+      "of_runs": 160
+    }
+  }
+}

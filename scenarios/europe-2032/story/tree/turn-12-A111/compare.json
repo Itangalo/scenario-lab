@@ -1,0 +1,93 @@
+{
+  "node": "turn-12-A111",
+  "turn": 12,
+  "period_prose": "the first half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "medical_breakthrough",
+        "title": "Medicine Delivers",
+        "line": "Treatments arrive for diseases previously untreatable, or individually tailored therapies reach ordinary clinical use.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "taiwan_tension_rise",
+        "title": "Taiwan Tension Rises",
+        "line": "Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "us_labs_nationalised",
+        "title": "Washington Takes the Labs",
+        "line": "The United States takes its frontier laboratories under direct state control.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_wartime_model_weapon_market",
+        "title": "Wartime model weapon market",
+        "line": "Belligerent cyber units hijack unattended frontier training clusters to mint one-shot infrastructure payloads, auctioned as ready-to-run packages that spread beyond the war zone.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 93.0,
+      "higher_than": 143,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 87.5,
+      "higher_than": 139,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 0.0,
+      "higher_than": 0,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 42.0,
+      "higher_than": 40,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 15.0,
+      "higher_than": 76,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 11.0,
+      "higher_than": 84,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 8.0,
+      "higher_than": 71,
+      "of_runs": 160
+    }
+  }
+}

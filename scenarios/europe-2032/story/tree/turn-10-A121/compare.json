@@ -1,0 +1,85 @@
+{
+  "node": "turn-10-A121",
+  "turn": 10,
+  "period_prose": "the first half of 2031",
+  "events": {
+    "siblings": 9,
+    "pinned": [
+      {
+        "id": "automated_decision_scandal",
+        "title": "Automated Decision Scandal",
+        "line": "An AI-supported decision system in social insurance, policing or the courts is found to have systematically wronged people, with a judgment or an ombudsman finding behind it.",
+        "of_nine": 9,
+        "emergent": false
+      },
+      {
+        "id": "medical_breakthrough",
+        "title": "Medicine Delivers",
+        "line": "Treatments arrive for diseases previously untreatable, or individually tailored therapies reach ordinary clinical use.",
+        "of_nine": 9,
+        "emergent": false
+      },
+      {
+        "id": "research_breakthrough",
+        "title": "Science Delivers",
+        "line": "A significant research result, with AI doing what used to be the hard part.",
+        "of_nine": 9,
+        "emergent": false
+      },
+      {
+        "id": "taiwan_tension_rise",
+        "title": "Taiwan Tension Rises",
+        "line": "Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion.",
+        "of_nine": 9,
+        "emergent": false
+      }
+    ],
+    "common": [],
+    "notable": []
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 91.0,
+      "higher_than": 154,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 84.0,
+      "higher_than": 152,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 0.0,
+      "higher_than": 0,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 46.0,
+      "higher_than": 83,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 16.0,
+      "higher_than": 70,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 3.0,
+      "higher_than": 22,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 14.0,
+      "higher_than": 81,
+      "of_runs": 160
+    }
+  }
+}

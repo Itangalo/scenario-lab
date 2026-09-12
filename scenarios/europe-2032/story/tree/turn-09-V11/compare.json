@@ -1,0 +1,86 @@
+{
+  "node": "turn-09-V11",
+  "turn": 9,
+  "period_prose": "the second half of 2030",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 4,
+        "emergent": false
+      },
+      {
+        "id": "knowledge_work_augmented",
+        "title": "Knowledge Work Is Boosted, Not Replaced",
+        "line": "The evidence arrives from ordinary offices rather than from laboratories: measured productivity gains in law, accountancy, administration, journalism and consulting, largest among the least experienced, and no matching fall in employment.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "emergent_datacentre_backlash",
+        "title": "Datacentre backlash",
+        "line": "Coordinated physical protests and sabotage attempts against new data-centre and gigafactory sites in two or more member states, delaying grid connection and forcing a policing response.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_datacentre_siting_blockade",
+        "title": "Datacentre siting blockade",
+        "line": "Coordinated physical protests and grid-connection blockades at two mediated EU data-centre sites delay construction for weeks amid low public trust and opaque-model coverage.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 65.2,
+      "higher_than": 75,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 63.3,
+      "higher_than": 95,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 8.0,
+      "higher_than": 43,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 60.0,
+      "higher_than": 159,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 17.0,
+      "higher_than": 70,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 16.0,
+      "higher_than": 101,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 12.0,
+      "higher_than": 55,
+      "of_runs": 160
+    }
+  }
+}

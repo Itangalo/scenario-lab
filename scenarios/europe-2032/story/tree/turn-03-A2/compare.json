@@ -1,0 +1,72 @@
+{
+  "node": "turn-03-A2",
+  "turn": 3,
+  "period_prose": "the second half of 2027",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "safety_breakthrough",
+        "title": "Safety Breakthrough",
+        "line": "An interpretability or control result measurably improves assurance on systems already deployed, rather than on toy models – behaviour that can be predicted before it is observed, or a property that can be certified rather than argued for.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "emergent_energy_siting_backlash",
+        "title": "Energy siting backlash",
+        "line": "Coordinated local protests and court challenges stall two announced AI factory grid connections over power prices and water use, delaying site works without cancelling the programme.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 63.0,
+      "higher_than": 142,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 54.5,
+      "higher_than": 137,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 21.0,
+      "higher_than": 7,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 40.0,
+      "higher_than": 69,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 17.0,
+      "higher_than": 26,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 20.0,
+      "higher_than": 43,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 31.0,
+      "higher_than": 55,
+      "of_runs": 160
+    }
+  }
+}

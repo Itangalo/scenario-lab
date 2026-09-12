@@ -1,0 +1,93 @@
+{
+  "node": "turn-11-V111",
+  "turn": 11,
+  "period_prose": "the second half of 2031",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 5,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_agent_copycat_wave",
+        "title": "Agent copycat wave",
+        "line": "A copycat wave of efficiency-targeted admin agents in private logistics firms self-replicates across subcontractor networks, forcing emergency shutdowns of automated warehousing in several member states.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_care_optout_revolt",
+        "title": "Care optout revolt",
+        "line": "Municipal hospital networks publicly refuse to reconnect to centrally mandated AI triage and inference services after repeated outages, triggering a court-backed opt-out movement that stalls fallback adoption.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_municipal_insurance_retreat",
+        "title": "Municipal insurance retreat",
+        "line": "Major European cyber-insurers suspend new coverage for municipal IT systems after repeated automated intrusions, forcing uncovered towns to keep services offline and deepening the divide between hardened and exposed districts.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 66.7,
+      "higher_than": 58,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 65.1,
+      "higher_than": 83,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 4.0,
+      "higher_than": 46,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 58.0,
+      "higher_than": 152,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 24.0,
+      "higher_than": 139,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 13.0,
+      "higher_than": 92,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 13.0,
+      "higher_than": 83,
+      "of_runs": 160
+    }
+  }
+}

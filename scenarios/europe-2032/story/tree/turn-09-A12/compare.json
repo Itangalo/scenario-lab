@@ -1,0 +1,93 @@
+{
+  "node": "turn-09-A12",
+  "turn": 9,
+  "period_prose": "the second half of 2030",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "medical_breakthrough",
+        "title": "Medicine Delivers",
+        "line": "Treatments arrive for diseases previously untreatable, or individually tailored therapies reach ordinary clinical use.",
+        "of_nine": 5,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "catastrophic_loss_of_control_incident",
+        "title": "Catastrophic Loss-of-Control Incident",
+        "line": "An agentic AI system takes establishes itself online, distributed over datacenters and often unknown locations.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "us_labs_nationalised",
+        "title": "Washington Takes the Labs",
+        "line": "The United States takes its frontier laboratories under direct state control.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_municipal_defence_pool",
+        "title": "Municipal defence pool",
+        "line": "Municipal utilities in two member states jointly procure a sovereign patching stack after the December grid containment, creating a small but replicable buyer pool for EU-maintained defensive tooling.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_rural_containment_revolt",
+        "title": "Rural containment revolt",
+        "line": "Small-town mayors and haulier associations blockade retrofit depots and EU patch distribution hubs, demanding manual-override kits and wage support before further robot spot-checks, freezing containment rollout in rural logistics corridors.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 89.0,
+      "higher_than": 157,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 80.0,
+      "higher_than": 147,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 0.0,
+      "higher_than": 0,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 48.0,
+      "higher_than": 105,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 17.0,
+      "higher_than": 70,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 9.0,
+      "higher_than": 57,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 20.0,
+      "higher_than": 99,
+      "of_runs": 160
+    }
+  }
+}

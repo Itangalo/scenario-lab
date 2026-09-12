@@ -1,0 +1,93 @@
+{
+  "node": "turn-13-V112",
+  "turn": 13,
+  "period_prose": "the second half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "taiwan_tension_rise",
+        "title": "Taiwan Tension Rises",
+        "line": "Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "emergent_infrastructure_sabotage_wave",
+        "title": "Infrastructure sabotage wave",
+        "line": "Coordinated physical attacks and blockades against data centres and continuity corps depots in several member states force temporary shutdowns of fallback capacity.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_care_fallback_freeze",
+        "title": "Care fallback freeze",
+        "line": "Municipal hospital federations formalize a coordinated refusal to reconnect AI-assisted diagnostic systems until EU liability and fallback guarantees are legislated, freezing fallback testing in several regions.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_us_lab_federal_takeover",
+        "title": "Us lab federal takeover",
+        "line": "A major US frontier lab is placed under direct federal security control after the recent loss-of-control incidents, with weights secured and foreign access suspended pending review.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 68.4,
+      "higher_than": 59,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 67.5,
+      "higher_than": 94,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 5.0,
+      "higher_than": 74,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 59.5,
+      "higher_than": 145,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 19.0,
+      "higher_than": 123,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 1.0,
+      "higher_than": 23,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 0.0,
+      "higher_than": 0,
+      "of_runs": 160
+    }
+  }
+}

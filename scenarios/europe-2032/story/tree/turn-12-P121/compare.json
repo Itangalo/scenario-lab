@@ -1,0 +1,85 @@
+{
+  "node": "turn-12-P121",
+  "turn": 12,
+  "period_prose": "the first half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 2,
+        "emergent": false
+      },
+      {
+        "id": "emergent_freeze_liability_revolt",
+        "title": "Freeze liability revolt",
+        "line": "Municipal utility operators in two member states refuse ENISA payment-freeze orders during a false-positive swarm alert, triggering a public dispute over liability for halted services.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_municipal_patch_revolt",
+        "title": "Municipal patch revolt",
+        "line": "Municipal utility operators in the two rollback regions publicly refuse further automated patching after legacy control failures, triggering coordinated resistance to ENISA-mandated updates.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_patch_rollback_stall",
+        "title": "Patch rollback stall",
+        "line": "A coordinated municipal utility revolt pauses ENISA automated-patching rollout over safety false-positives, leaving uncertified grids exposed through winter.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 63.5,
+      "higher_than": 4,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 62.4,
+      "higher_than": 9,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 5.0,
+      "higher_than": 67,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 54.0,
+      "higher_than": 122,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 23.0,
+      "higher_than": 139,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 29.0,
+      "higher_than": 152,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 25.0,
+      "higher_than": 146,
+      "of_runs": 160
+    }
+  }
+}

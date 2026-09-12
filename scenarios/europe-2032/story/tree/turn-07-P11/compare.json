@@ -1,0 +1,85 @@
+{
+  "node": "turn-07-P11",
+  "turn": 7,
+  "period_prose": "the second half of 2029",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_fallback_harm_liability_wave",
+        "title": "Fallback harm liability wave",
+        "line": "Hospitals and pharmacies using European-hosted open fallback models face a coordinated wave of liability claims after dosage hallucinations cause documented patient harm, forcing courts to rule on who bears risk for emergency-switched models.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_insurance_capacity_freeze",
+        "title": "Insurance capacity freeze",
+        "line": "Major EU insurers jointly suspend new cyber and AI-liability cover for uncertified public operators after fallback hallucinations cause patient-harm claims, freezing outsourcing deals until state backstop is clarified.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_insurance_withdrawal_crunch",
+        "title": "Insurance withdrawal crunch",
+        "line": "Major European insurers jointly suspend new cyber and business-interruption cover for operators still dependent on withdrawn US models, triggering a short-term insurance crunch for hospitals and logistics firms.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 61.0,
+      "higher_than": 7,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 58.8,
+      "higher_than": 28,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 20.0,
+      "higher_than": 72,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 46.0,
+      "higher_than": 122,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 22.0,
+      "higher_than": 107,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 15.0,
+      "higher_than": 89,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 32.0,
+      "higher_than": 137,
+      "of_runs": 160
+    }
+  }
+}

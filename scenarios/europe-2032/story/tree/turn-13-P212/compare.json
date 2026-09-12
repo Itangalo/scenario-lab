@@ -1,0 +1,100 @@
+{
+  "node": "turn-13-P212",
+  "turn": 13,
+  "period_prose": "the second half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "adoption_success",
+        "title": "Adoption Delivers",
+        "line": "Public-sector AI adoption produces visible, measurable benefit – waiting lists that fall, decisions that arrive in days rather than months, teaching that demonstrably works – and it is attributed to a European decision rather than to an American product.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "ai_investment_collapse",
+        "title": "AI Investment Collapse",
+        "line": "Capital flees the sector.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 2,
+        "emergent": false
+      },
+      {
+        "id": "emergent_clinical_open_model_pullback",
+        "title": "Clinical open model pullback",
+        "line": "Several showcase hospital networks disconnect locally-run open frontier models after a hygiene-check failure exposes patient data to model exfiltration, forcing a temporary return to manual triage queues.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_diy_bio_assay_scare",
+        "title": "Diy bio assay scare",
+        "line": "Municipal health IT audits flag several local clinics and university labs using the mirrored open frontier model with the contested genome-model methods to design pathogen assays, triggering police seizures and a press scandal over ungovernable bio-assistance.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_sneakernet_weight_couriers",
+        "title": "Sneakernet weight couriers",
+        "line": "Offline dead-drop networks and refurbished-GPU rental shops spread pre-loaded near-frontier weights to clinics, municipalities and small firms unable to download them directly, widening unrecallable circulation beyond internet metrics.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 66.0,
+      "higher_than": 30,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 64.6,
+      "higher_than": 34,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 1.0,
+      "higher_than": 48,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 39.0,
+      "higher_than": 25,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 11.0,
+      "higher_than": 54,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 0.0,
+      "higher_than": 0,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 9.0,
+      "higher_than": 89,
+      "of_runs": 160
+    }
+  }
+}

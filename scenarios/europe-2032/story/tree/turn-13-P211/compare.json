@@ -1,0 +1,93 @@
+{
+  "node": "turn-13-P211",
+  "turn": 13,
+  "period_prose": "the second half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "ai_investment_collapse",
+        "title": "AI Investment Collapse",
+        "line": "Capital flees the sector.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "labour_displacement",
+        "title": "Labour Displacement Wave",
+        "line": "Measurable job losses attributed to AI in named sectors, with the graduate market worst hit: entry-level positions in law, accountancy, software, customer operations and administration are not replaced.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "catastrophic_bio_incident",
+        "title": "Catastrophic Biological Incident",
+        "line": "A global biological outbreak caused by a pathogen designed with AI.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_shadow_screening_market",
+        "title": "Shadow screening market",
+        "line": "Municipal utilities and hospital labs, unable to obtain reagents through official channels, turn to grey-market sequencing kits and unvetted triage models that spread uncalibrated biorisk screening outside any oversight.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 65.5,
+      "higher_than": 20,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 64.5,
+      "higher_than": 31,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 8.0,
+      "higher_than": 89,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 42.5,
+      "higher_than": 45,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 10.0,
+      "higher_than": 49,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 1.0,
+      "higher_than": 23,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 18.0,
+      "higher_than": 133,
+      "of_runs": 160
+    }
+  }
+}

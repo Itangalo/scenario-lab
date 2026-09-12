@@ -1,0 +1,72 @@
+{
+  "node": "turn-11-V122",
+  "turn": 11,
+  "period_prose": "the second half of 2031",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 6,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "emergent_telemetry_toll",
+        "title": "Telemetry toll",
+        "line": "Allied providers put pooled cyber telemetry on metered emergency pricing after the spring intrusions, forcing councils to choose which clinics and grids stay on live feeds.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 66.5,
+      "higher_than": 51,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 64.8,
+      "higher_than": 63,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 4.0,
+      "higher_than": 46,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 58.0,
+      "higher_than": 152,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 13.0,
+      "higher_than": 49,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 11.0,
+      "higher_than": 81,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 29.0,
+      "higher_than": 151,
+      "of_runs": 160
+    }
+  }
+}

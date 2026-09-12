@@ -1,0 +1,93 @@
+{
+  "node": "turn-13-A112",
+  "turn": 13,
+  "period_prose": "the second half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "labour_displacement",
+        "title": "Labour Displacement Wave",
+        "line": "Measurable job losses attributed to AI in named sectors, with the graduate market worst hit: entry-level positions in law, accountancy, software, customer operations and administration are not replaced.",
+        "of_nine": 4,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_cable_repair_failure",
+        "title": "Cable repair failure",
+        "line": "Neutral repair consortium fails to restore Atlantic cables after further wartime interference and insurance withdrawal, leaving EU clinics and compute queues on prolonged rationing.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_neutral_site_strike",
+        "title": "Neutral site strike",
+        "line": "US or Chinese strike debris or targeting error directly damages EU cable landing or fab-adjacent site, forcing Brussels to invoke protection of non-belligerent infrastructure.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_therapy_tourism_blackmarket",
+        "title": "Therapy tourism blackmarket",
+        "line": "Municipal clinics in Lyon, Krakow and Porto begin openly rationing tailored immune therapies by residency, triggering cross-border patient travel and a black market in treatment slots that DG SANTE cannot police.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 94.5,
+      "higher_than": 141,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 91.1,
+      "higher_than": 149,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 0.0,
+      "higher_than": 0,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 41.0,
+      "higher_than": 34,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 16.0,
+      "higher_than": 93,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 8.0,
+      "higher_than": 74,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 7.0,
+      "higher_than": 71,
+      "of_runs": 160
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "node": "turn-12-V111",
+  "turn": 12,
+  "period_prose": "the first half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "knowledge_work_augmented",
+        "title": "Knowledge Work Is Boosted, Not Replaced",
+        "line": "The evidence arrives from ordinary offices rather than from laboratories: measured productivity gains in law, accountancy, administration, journalism and consulting, largest among the least experienced, and no matching fall in employment.",
+        "of_nine": 4,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "emergent_anti_ai_sabotage_wave",
+        "title": "Anti ai sabotage wave",
+        "line": "Coordinated physical sabotage against data centres and municipal AI systems across several member states by anti-dependence activists, forcing temporary shutdowns and a policing response.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_care_failure_litigation",
+        "title": "Care failure litigation",
+        "line": "Municipal hospital networks forced offline by the ransomware sweep publish patient-safety near-miss dossiers, triggering coordinated clinician-led lawsuits against vendors and the state across several member states.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_datacentre_backlash",
+        "title": "Datacentre backlash",
+        "line": "Municipal blackouts and rogue-agent failures trigger coordinated physical blockades of planned data-centre sites, delaying construction and forcing a siting moratorium debate.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 67.5,
+      "higher_than": 50,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 65.9,
+      "higher_than": 64,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 2.0,
+      "higher_than": 43,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 62.0,
+      "higher_than": 154,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 24.0,
+      "higher_than": 141,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 15.0,
+      "higher_than": 105,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 11.0,
+      "higher_than": 86,
+      "of_runs": 160
+    }
+  }
+}

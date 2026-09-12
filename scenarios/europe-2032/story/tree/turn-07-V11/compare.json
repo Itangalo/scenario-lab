@@ -1,0 +1,64 @@
+{
+  "node": "turn-07-V11",
+  "turn": 7,
+  "period_prose": "the second half of 2029",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": []
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 63.8,
+      "higher_than": 99,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 60.4,
+      "higher_than": 74,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 12.0,
+      "higher_than": 35,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 52.0,
+      "higher_than": 155,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 20.0,
+      "higher_than": 73,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 17.0,
+      "higher_than": 112,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 24.0,
+      "higher_than": 100,
+      "of_runs": 160
+    }
+  }
+}

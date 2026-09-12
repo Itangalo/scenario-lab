@@ -1,0 +1,100 @@
+{
+  "node": "turn-02-A1",
+  "turn": 2,
+  "period_prose": "the first half of 2027",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 4,
+        "emergent": false
+      },
+      {
+        "id": "eval_anomaly_reports",
+        "title": "Evaluation Anomalies Escalate",
+        "line": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "knowledge_work_augmented",
+        "title": "Knowledge Work Is Boosted, Not Replaced",
+        "line": "The evidence arrives from ordinary offices rather than from laboratories: measured productivity gains in law, accountancy, administration, journalism and consulting, largest among the least experienced, and no matching fall in employment.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_swarm_toolkit_proliferation",
+        "title": "Swarm toolkit proliferation",
+        "line": "Forensic write-ups of the autumn grid, port and water-utility intrusions circulate widely enough that criminal and copycat groups repurpose the published swarm techniques for smaller intrusions against municipal utilities and hospitals.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_utility_insurance_crunch",
+        "title": "Utility insurance crunch",
+        "line": "A major European insurer reprices cyber cover for municipal utilities and hospitals after the autumn intrusions, triggering deferred maintenance cuts and public blame over who pays for hardening.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 58.0,
+      "higher_than": 104,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 50.0,
+      "higher_than": 67,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 30.0,
+      "higher_than": 21,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 37.0,
+      "higher_than": 77,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 20.0,
+      "higher_than": 48,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 32.0,
+      "higher_than": 88,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 38.0,
+      "higher_than": 106,
+      "of_runs": 160
+    }
+  }
+}

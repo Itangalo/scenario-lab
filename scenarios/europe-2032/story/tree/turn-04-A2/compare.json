@@ -1,0 +1,100 @@
+{
+  "node": "turn-04-A2",
+  "turn": 4,
+  "period_prose": "the first half of 2028",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "bio_uplift_findings",
+        "title": "Human-Infective Design Demonstrated",
+        "line": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "opaque_reasoning",
+        "title": "Reasoning Stops Being Legible",
+        "line": "The frontier models no longer allow intermediate reasoning a human can read, because the representations that work best are not words and never were.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_cyber_insurance_repricing",
+        "title": "Cyber insurance repricing",
+        "line": "A consortium of European insurers and reinsurers publishes exclusion clauses for AI-enabled grid and port cyber losses, abruptly repricing industrial cyber cover and forcing operators to disclose segmentation gaps.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_grid_forensics_fallout",
+        "title": "Grid forensics fallout",
+        "line": "Independent press publishes forensic linkage tying the autumn grid intrusions to tooling derived from the newest open-weight class, triggering insurer repricing of critical-infrastructure cyber cover across the EU.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_open_model_backlash",
+        "title": "Open model backlash",
+        "line": "Independent forensic reports publicly attribute the autumn grid intrusions to tooling derived from the newest open model family, triggering mainstream press calls for open-weight liability and release restraints.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 66.0,
+      "higher_than": 140,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 58.5,
+      "higher_than": 144,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 20.0,
+      "higher_than": 27,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 38.5,
+      "higher_than": 35,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 16.0,
+      "higher_than": 33,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 19.0,
+      "higher_than": 86,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 38.0,
+      "higher_than": 135,
+      "of_runs": 160
+    }
+  }
+}

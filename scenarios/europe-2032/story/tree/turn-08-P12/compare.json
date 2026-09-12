@@ -1,0 +1,100 @@
+{
+  "node": "turn-08-P12",
+  "turn": 8,
+  "period_prose": "the first half of 2030",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "middle_power_coalition",
+        "title": "Middle Powers Coordinate",
+        "line": "A coordination framework among the Union and other middle powers holding pieces of the AI supply chain — export-licence alignment, joint bargaining over compute access, shared evaluation capacity.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "taiwan_blockade",
+        "title": "Taiwan Blockade",
+        "line": "A quarantine or blockade halts advanced semiconductor exports.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_anti_datacentre_blockades",
+        "title": "Anti datacentre blockades",
+        "line": "Coordinated physical blockades and legal challenges halt construction at multiple EU data-centre and gigafactory sites after the runaway-agent incident, delaying permitting by months.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_insurance_freeze",
+        "title": "Insurance freeze",
+        "line": "Major EU insurers jointly suspend new cyber and liability cover for operators running agentic AI on uncertified infrastructure, freezing public tenders and hospital outsourcing until EU certification resumes.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_insurer_coverage_retreat",
+        "title": "Insurer coverage retreat",
+        "line": "Major EU cyber-insurers announce coordinated withdrawal from covering public hospitals and utilities dependent on non-EU frontier models, citing unmodellable cutoff and agent-contamination risk, forcing emergency state backstop debate.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 61.5,
+      "higher_than": 6,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 60.0,
+      "higher_than": 22,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 13.0,
+      "higher_than": 62,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 46.5,
+      "higher_than": 122,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 24.0,
+      "higher_than": 130,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 20.0,
+      "higher_than": 126,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 32.0,
+      "higher_than": 151,
+      "of_runs": 160
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "node": "turn-12-V221",
+  "turn": 12,
+  "period_prose": "the first half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 4,
+        "emergent": false
+      },
+      {
+        "id": "openweight_frontier_release",
+        "title": "Open Weights Capability Jump",
+        "line": "An open-weight release lands within a few months of the closed frontier.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "taiwan_tension_rise",
+        "title": "Taiwan Tension Rises",
+        "line": "Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "emergent_anti_ai_municipal_revolt",
+        "title": "Anti ai municipal revolt",
+        "line": "Municipal utilities and clinic networks stage coordinated switch-off protests against forced AI upgrades after the ransomware sweep, blocking two data-centre expansions and delaying continuity-stock refresh for months.",
+        "of_nine": 1,
+        "emergent": true
+      },
+      {
+        "id": "emergent_grid_connection_blockade",
+        "title": "Grid connection blockade",
+        "line": "Coordinated municipal protests block data-centre grid connections in several member states, forcing temporary construction halts and emergency power renegotiations.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 68.5,
+      "higher_than": 91,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 66.7,
+      "higher_than": 98,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 5.0,
+      "higher_than": 67,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 39.0,
+      "higher_than": 25,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 15.0,
+      "higher_than": 76,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 5.0,
+      "higher_than": 46,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 13.0,
+      "higher_than": 102,
+      "of_runs": 160
+    }
+  }
+}

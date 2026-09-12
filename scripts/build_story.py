@@ -212,11 +212,16 @@ def load_nodes(tree_dir: Path) -> dict[str, dict[str, Any]]:
         if meta.get("status") != "written":
             continue
         is_choice = prose_path.name == "choice.md"
+        compare: dict[str, Any] = {}
+        compare_path = node_dir / "compare.json"
+        if compare_path.is_file():
+            compare = json.loads(compare_path.read_text(encoding="utf-8"))
         nodes[node_dir.name] = {
             "data": json.loads(data_path.read_text(encoding="utf-8")),
             "html": markdown(body),
             "parts": split_choice(body) if is_choice else split_turn(body),
             "is_choice": is_choice,
+            "compare": compare,
         }
     return nodes
 
@@ -309,6 +314,33 @@ def sim_data(data: dict[str, Any], scenario_dir: Path) -> dict[str, Any]:
     }
 
 
+def compare_payload(compare: dict[str, Any]) -> dict[str, Any] | None:
+    """The compare popup's data, pre-aggregated by `story/build_compare.py`.
+
+    Arm-blind by design: percentiles run over every full run in the corpus,
+    with no per-arm split anywhere, so nothing here can name a world."""
+    if not compare:
+        return None
+
+    def ev(e: dict[str, Any]) -> dict[str, Any]:
+        return {"title": html.escape(e.get("title", "")),
+                "line": html.escape(e.get("line", "")),
+                "count": e.get("of_nine", 0)}
+
+    events = compare.get("events", {})
+    return {
+        "siblings": events.get("siblings", 9),
+        "corpusRuns": compare.get("corpus_runs", 0),
+        "pinned": [ev(e) for e in events.get("pinned", [])],
+        "common": [ev(e) for e in events.get("common", [])],
+        "notable": [ev(e) for e in events.get("notable", [])],
+        "metrics": [{"label": html.escape(m.get("label", "")),
+                     "higher": m.get("higher_than", 0),
+                     "of": m.get("of_runs", 0)}
+                    for m in compare.get("metrics", {}).values()],
+    }
+
+
 def build_payload(nodes: dict[str, dict[str, Any]], scenario_dir: Path) -> dict[str, Any]:
     catalogue = {e.id: e for e in load_events(scenario_dir / "events.md")}
     payload: dict[str, Any] = {}
@@ -340,6 +372,7 @@ def build_payload(nodes: dict[str, dict[str, Any]], scenario_dir: Path) -> dict[
             entry["events"] = [event_entry(e, catalogue.get(e.get("id", "")))
                                for e in (data.get("events") or [])]
             entry["sim"] = sim_data(data, scenario_dir)
+            entry["compare"] = compare_payload(node.get("compare") or {})
             nxt = data.get("next_node")
             entry["next"] = opaque(nxt) if nxt and nxt in nodes else None
             choices = data.get("next_choice") or []
@@ -700,9 +733,26 @@ dialog.pop::backdrop { background: rgba(10, 16, 18, 0.5); }
 .pop-body .flat { color: var(--faint); }
 .pop-body ul.measures { margin: 0; padding-left: 1.1rem; }
 .pop-body ul.measures li { margin: 0 0 0.4rem; }
+.pop-body ul.measures li strong { font-weight: 600; }
 .pop-body .status { display: block; color: var(--muted); font-size: 0.82rem; }
 .pop-body code { font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace; font-size: 0.85em; }
 .pop-body .pop-fine { font-size: 0.78rem; color: var(--faint); margin: 0.7rem 0 0; }
+/* Percentile standing per dial: a slim bar and the count behind it. */
+.pop-body .cmp { margin: 0 0 0.75rem; }
+.pop-body .cmp:last-child { margin-bottom: 0; }
+.pop-body .cmp-top {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
+  font-size: 0.85rem;
+}
+.pop-body .cmp-top .num {
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace; font-size: 0.72rem;
+  color: var(--muted); white-space: nowrap;
+}
+.pop-body .pct {
+  display: block; height: 3px; background: var(--track);
+  border-radius: 2px; margin-top: 0.3rem; overflow: hidden;
+}
+.pop-body .pct i { display: block; height: 100%; background: var(--accent); border-radius: 2px; }
 .pop-body dl.cat { margin: 0 0 0.8rem; font-size: 0.82rem; line-height: 1.5; color: var(--muted); }
 .pop-body dl.cat dt {
   font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace; font-size: 0.6rem;
@@ -791,6 +841,7 @@ BODY = """
 __TABS__
   </div>
   <div class="floating">
+    <button class="js-compare restart" type="button">Compare simulations</button>
     <button class="js-sim restart" type="button">Simulation data</button>
     <button class="js-restart restart" type="button">Start over</button>
   </div>
@@ -803,6 +854,7 @@ __TABS__
         <div class="dials" id="dials"></div>
       </section>
       <div class="simlinks">
+        <button class="simbtn js-compare" type="button">Compare with other simulations</button>
         <button class="simbtn js-sim" type="button">Simulation data</button>
         <button class="simbtn js-about" type="button">About the simulation</button>
       </div>
@@ -966,6 +1018,45 @@ function simHTML(entry) {
 function aboutHTML() {
   const m = POSTAMBLE.match(/<h2>(.*?)<\/h2>/);
   return { title: m ? m[1] : "About the simulation", body: POSTAMBLE.replace(/<h2>.*?<\/h2>/, "") };
+}
+
+function compareHTML(entry) {
+  const c = entry.compare;
+  if (!c) return '<p class="pop-note">Comparisons begin once the story branches.</p>';
+  const when = entry.periodProse || "this half-year";
+  let h = '<p class="pop-note">How ' + when + ' compares with other simulations of it: ' +
+    'the parallel worlds that grew from the same choice, and where its readings stand ' +
+    'across every simulated Europe at this date.</p>';
+  h += '<h3>In the parallel worlds</h3>';
+  if (c.pinned.length) {
+    h += '<p class="pop-note">Fixed for this half-year, in all nine parallel worlds:</p>' +
+      '<ul class="measures">' + c.pinned.map(e =>
+        '<li><strong>' + e.title + '</strong> &mdash; ' + e.line + '</li>').join("") + '</ul>';
+  }
+  if (c.common.length || c.notable.length) {
+    h += '<ul class="measures">' +
+      c.common.map(e =>
+        '<li><strong>' + e.title + '</strong> &mdash; ' + e.line +
+        ' <span class="status">in ' + e.count + ' of ' + c.siblings + ' parallel worlds</span></li>').join("") +
+      c.notable.map(e =>
+        '<li><strong>' + e.title + '</strong> &mdash; ' + e.line +
+        ' <span class="status">in ' + e.count + ' of ' + c.siblings + ' parallel worlds</span></li>').join("") +
+      '</ul>';
+  } else if (!c.pinned.length) {
+    h += '<p class="none">The parallel worlds went their own ways this half-year ' +
+      '&mdash; no outside development recurred in more than two of nine.</p>';
+  }
+  h += '<h3>Across all simulated worlds</h3>' +
+    '<p class="pop-note">Each reading against all ' + c.corpusRuns +
+    ' full runs at the same date, over all underlying worlds. Those runs made their own ' +
+    'choices, so this is where the half-year stands overall &mdash; not a ranking of your choices.</p>' +
+    c.metrics.map(m => {
+      const pct = c.corpusRuns ? Math.round(100 * m.higher / m.of) : 0;
+      return '<div class="cmp"><div class="cmp-top"><span>' + m.label + '</span>' +
+        '<span class="num">higher than ' + m.higher + ' of ' + m.of + '</span></div>' +
+        '<span class="pct"><i style="width:' + pct + '%"></i></span></div>';
+    }).join("");
+  return h;
 }
 
 function choiceCard(id, state) {
@@ -1147,6 +1238,11 @@ window.addEventListener("scroll", () => {
 }, { passive: true });
 
 document.addEventListener("click", e => {
+  if (e.target.closest(".js-compare")) {
+    const entry = NODES[active];
+    if (entry) openPop('Compare <span class="when">' + entry.period + '</span>', compareHTML(entry));
+    return;
+  }
   if (e.target.closest(".js-sim")) {
     const entry = NODES[active];
     if (entry) openPop('Simulation data <span class="when">' + entry.period + '</span>', simHTML(entry));

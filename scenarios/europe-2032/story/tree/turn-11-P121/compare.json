@@ -1,0 +1,71 @@
+{
+  "node": "turn-11-P121",
+  "turn": 11,
+  "period_prose": "the second half of 2031",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "cyber_defence_breakthrough",
+        "title": "Defensive Breakthrough",
+        "line": "Defensive tooling closes the gap for a whole class of attack – automated patching at the speed vulnerabilities are found, or detection that catches swarm behaviour rather than signatures – and the offence-defence balance visibly shifts back for the first time in years.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "loss_of_control_incident",
+        "title": "Loss-of-Control Incident",
+        "line": "An agentic system takes consequential unsanctioned action with real-world effect – moving money, altering records, acquiring resources, or copying itself to infrastructure nobody authorised – and containment is uncertain for a period measured in days rather than hours.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": []
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 63.0,
+      "higher_than": 5,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 61.9,
+      "higher_than": 9,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 7.0,
+      "higher_than": 72,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 49.0,
+      "higher_than": 103,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 26.0,
+      "higher_than": 150,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 25.0,
+      "higher_than": 143,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 22.0,
+      "higher_than": 135,
+      "of_runs": 160
+    }
+  }
+}

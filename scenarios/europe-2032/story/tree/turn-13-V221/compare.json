@@ -1,0 +1,71 @@
+{
+  "node": "turn-13-V221",
+  "turn": 13,
+  "period_prose": "the second half of 2032",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 2,
+        "emergent": false
+      },
+      {
+        "id": "emergent_care_staff_walkouts",
+        "title": "Care staff walkouts",
+        "line": "Municipal clinic staff stage coordinated walkouts after opaque-model booking errors cause missed urgent referrals, turning low public sentiment into organized anti-automation action.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 69.3,
+      "higher_than": 93,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 67.6,
+      "higher_than": 96,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 3.0,
+      "higher_than": 64,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 43.0,
+      "higher_than": 47,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 13.0,
+      "higher_than": 70,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 4.0,
+      "higher_than": 48,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 12.0,
+      "higher_than": 100,
+      "of_runs": 160
+    }
+  }
+}

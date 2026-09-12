@@ -1,0 +1,78 @@
+{
+  "node": "turn-11-V112",
+  "turn": 11,
+  "period_prose": "the second half of 2031",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "cyber_major_incident",
+        "title": "Major Cyber Incident",
+        "line": "A large, largely automated attack lands.",
+        "of_nine": 8,
+        "emergent": false
+      },
+      {
+        "id": "embodied_ai_deployment",
+        "title": "Robots Leave the Demonstration Floor",
+        "line": "Robots reach commercial deployment – not the demonstration videos, convincing for years now, but machines bought in quantity and put to work in warehouses, food processing, loading docks and the parts of manufacturing that resisted automation because the sequence varied.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "research_breakthrough",
+        "title": "Science Delivers",
+        "line": "A significant research result, with AI doing what used to be the hard part.",
+        "of_nine": 4,
+        "emergent": false
+      }
+    ],
+    "notable": []
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 66.8,
+      "higher_than": 60,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 65.4,
+      "higher_than": 93,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 4.0,
+      "higher_than": 46,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 57.0,
+      "higher_than": 150,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 21.0,
+      "higher_than": 127,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 14.0,
+      "higher_than": 98,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 5.0,
+      "higher_than": 43,
+      "of_runs": 160
+    }
+  }
+}

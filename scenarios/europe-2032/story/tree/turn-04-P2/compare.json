@@ -1,0 +1,79 @@
+{
+  "node": "turn-04-P2",
+  "turn": 4,
+  "period_prose": "the first half of 2028",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "member_state_defection",
+        "title": "Member State Defection",
+        "line": "A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken.",
+        "of_nine": 4,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "eu_frontier_access_denied",
+        "title": "Frontier Access Denied",
+        "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "emergent_grid_toolkit_copycats",
+        "title": "Grid toolkit copycats",
+        "line": "Copycat probing toolkits derived from the autumn grid intrusions circulate publicly, triggering a wave of low-skill intrusions into municipal utilities and local grid operators across the EU.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 58.0,
+      "higher_than": 27,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 53.0,
+      "higher_than": 11,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 27.0,
+      "higher_than": 116,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 34.0,
+      "higher_than": 7,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 14.0,
+      "higher_than": 13,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 7.0,
+      "higher_than": 10,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 26.0,
+      "higher_than": 41,
+      "of_runs": 160
+    }
+  }
+}

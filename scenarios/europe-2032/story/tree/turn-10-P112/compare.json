@@ -1,0 +1,71 @@
+{
+  "node": "turn-10-P112",
+  "turn": 10,
+  "period_prose": "the first half of 2031",
+  "events": {
+    "siblings": 9,
+    "pinned": [
+      {
+        "id": "bio_incident",
+        "title": "Biological Incident",
+        "line": "A real biological incident with model involvement: a deliberate release or a laboratory escape involving a designed or modified agent.",
+        "of_nine": 9,
+        "emergent": false
+      },
+      {
+        "id": "opaque_reasoning",
+        "title": "Reasoning Stops Being Legible",
+        "line": "The frontier models no longer allow intermediate reasoning a human can read, because the representations that work best are not words and never were.",
+        "of_nine": 9,
+        "emergent": false
+      }
+    ],
+    "common": [],
+    "notable": []
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 62.5,
+      "higher_than": 6,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 61.3,
+      "higher_than": 11,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 7.0,
+      "higher_than": 56,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 51.0,
+      "higher_than": 125,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 18.0,
+      "higher_than": 93,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 14.0,
+      "higher_than": 84,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 18.0,
+      "higher_than": 100,
+      "of_runs": 160
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "node": "turn-09-A21",
+  "turn": 9,
+  "period_prose": "the second half of 2030",
+  "events": {
+    "siblings": 9,
+    "pinned": [],
+    "common": [
+      {
+        "id": "bio_uplift_findings",
+        "title": "Human-Infective Design Demonstrated",
+        "line": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance.",
+        "of_nine": 5,
+        "emergent": false
+      },
+      {
+        "id": "capability_jump",
+        "title": "Capability Jump",
+        "line": "A discontinuous advance is released or demonstrated.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
+        "id": "embodied_ai_deployment",
+        "title": "Robots Leave the Demonstration Floor",
+        "line": "Robots reach commercial deployment – not the demonstration videos, convincing for years now, but machines bought in quantity and put to work in warehouses, food processing, loading docks and the parts of manufacturing that resisted automation because the sequence varied.",
+        "of_nine": 5,
+        "emergent": false
+      },
+      {
+        "id": "us_china_agreement",
+        "title": "Narrow Binding Agreement",
+        "line": "The two leading powers reach a limited but real agreement covering some class of AI risk – weights security, autonomous escalation, a class of biological design tools – with verification thin but not absent.",
+        "of_nine": 3,
+        "emergent": false
+      }
+    ],
+    "notable": [
+      {
+        "id": "rsi_onset",
+        "title": "Recursive Self-Improvement Begins",
+        "line": "Frontier AI training can now be done basically without human intervention, and the pace stops being bottlenecked by human researchers.",
+        "of_nine": 2,
+        "emergent": false
+      },
+      {
+        "id": "emergent_care_queue_backlash",
+        "title": "Care queue backlash",
+        "line": "EuroHPC rationing queues for cancer inference leak to press with patient deaths attributed to waiting, triggering cross-border care lawsuits against the allocation board.",
+        "of_nine": 1,
+        "emergent": true
+      }
+    ]
+  },
+  "corpus_runs": 160,
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 88.0,
+      "higher_than": 151,
+      "of_runs": 160
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 79.5,
+      "higher_than": 145,
+      "of_runs": 160
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 1.5,
+      "higher_than": 18,
+      "of_runs": 160
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 40.0,
+      "higher_than": 39,
+      "of_runs": 160
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 17.0,
+      "higher_than": 70,
+      "of_runs": 160
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 15.0,
+      "higher_than": 95,
+      "of_runs": 160
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 19.0,
+      "higher_than": 96,
+      "of_runs": 160
+    }
+  }
+}
