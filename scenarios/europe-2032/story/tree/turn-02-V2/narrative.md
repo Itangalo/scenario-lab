@@ -15,7 +15,7 @@ allow: 14:30 9
 
 The tooling is plainly machine-written, fast and adaptive, and the defenders are weeks behind. A compromised software component sets off a frantic hunt for backups whose extent nobody can bound. The attribution statements hedge.
 
-At 14:30 on 9 February 2027, in the middle of the response, access to the leading American model family is suspended for users based in the Union. No detailed reason is given, and there is no appeal. Clinics using diagnostic copilots, ministries using drafting assistants, and firms with contracted workflows find the tools refusing prompts. In some places the cut-off is brief. In others it persists.
+At 14:30 on 9 February 2027, in the middle of the response, access to the leading American model is suspended for users based in the Union. No detailed reason is given, and there is no appeal. Clinics using diagnostic copilots, ministries using drafting assistants, and firms with contracted workflows find the tools refusing prompts. In some places the cut-off is brief. In others it persists. Everywhere, the model the same company sold a year ago goes on answering, which makes this a migration rather than a blackout and does nothing to make the migration quick.
 
 > **Claire:** the diagnostic assistant says "service unavailable in your region"
 > **Claire:** my region is a hospital

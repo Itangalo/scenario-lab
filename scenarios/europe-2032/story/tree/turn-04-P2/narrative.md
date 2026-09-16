@@ -24,7 +24,7 @@ Hospitals that built triage assistants on it, ministries using it for document w
 >
 > **Claire:** it works like a tax form works
 
-Sofia's answer is the EU Continuity Stack for Cut-Off Services: an inventory of every cut-off site, and a substitution drive onto European-hosted models.
+Sofia's answer is the EU Continuity Stack for Cut-Off Services: an inventory of every cut-off site, and a substitution drive – onto the same provider's older model where the certification carries across, onto European-hosted models where it does not, and onto whichever is quicker where a ward is waiting.
 
 > **March 2028.** New defensive software, which patches at machine speed and spots coordinated intrusions rather than single signatures, becomes available to operators.
 
