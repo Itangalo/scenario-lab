@@ -22,7 +22,7 @@ It comes as a wave, not a single strike. Automated ransomware spreads across mun
 >
 > **Claire:** send them to lyon first. i'm biased
 
-Brussels activates the emergency reserve. Joint response teams go to the worst-hit sites, and EU-paid recovery licences are pushed out. When insurers threaten to pull cover for essential operators, Sofia's note becomes the Incident Continuity Backstop, and finance ministers quietly agree to a temporary public reinsurance line behind it. The President puts the Commission's standing on it.
+Brussels activates the emergency reserve. Joint response teams go to the worst-hit sites, and EU-paid recovery licences are pushed out. When insurers threaten to pull cover for essential operators, Sofia's note becomes the Incident Continuity Backstop, and finance ministers quietly agree to a temporary public reinsurance line behind it. The President puts the Commission's standing behind it.
 
 The backstop holds. No insurer exits outright, and services degrade rather than stop. The recovery is ragged all the same: smaller municipalities lack staff to use the tools, mutual aid arrives late in one country after a quarrel at its interior ministry, and the costs overrun. Attribution is still unresolved in December.
 

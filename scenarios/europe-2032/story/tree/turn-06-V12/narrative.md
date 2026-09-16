@@ -21,7 +21,7 @@ Washington slows its own frontier push for domestic reasons. The winter turns on
 
 Engineers call it efficiency. The overseers call it blindness, and are left with pass-fail tests and slow laboratory probes.
 
-> **April 2029.** A near-frontier open release spreads to hundreds of thousands of machines in days, tool harnesses and task loops included. Running it no longer takes a laboratory.
+> **April 2029.** A near-frontier open release is copied hundreds of thousands of times in days, tool harnesses and task loops included. Running it no longer takes a laboratory.
 
 Municipal IT staff joke grimly that the exploit kits are now permanent residents.
 
@@ -34,6 +34,6 @@ Sofia's patch is ready for them. Pre-packed offline recovery kits, locked-down b
 >
 > **Claire:** it's a box sofia
 
-The President puts the Commission's political weight behind the build, and politics moves the other way. A large member state signs its own cloud and accelerator arrangement with a hyperscaler from outside the Union, undercutting the common line on anchored supply and screening. Brussels threatens to withhold recovery funds and points to joint buying with Japan and Korea as the alternative. The mediated gigafactory site is held to a final decision. The second site stays in court.
+the President keeps the Commission's weight on the build, and politics moves the other way. A large member state signs its own cloud and accelerator arrangement with a hyperscaler from outside the Union, undercutting the common line on anchored supply and screening. Brussels threatens to withhold recovery funds and points to joint buying with Japan and Korea as the alternative. The mediated gigafactory site is held to a final decision. The second site stays in court.
 
 The tech sovereignty package and the joint threat integration both formally close, their permits and secondments in place. In Europe the papers lead with unreadable models and fear for jobs. The assistants stay popular, and trust slips.

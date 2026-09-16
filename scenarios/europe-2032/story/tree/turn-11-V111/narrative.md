@@ -10,7 +10,7 @@ next: turn-12-V111
 
 # Holding the gates
 
-Through the autumn of 2031 the Union tries to do less, and to hold what it has. Sofia recommends nothing new, and the President keeps the Commission's standing on the lockdown.
+Through the autumn of 2031 the Union tries to do less, and to hold what it has. Sofia recommends nothing new, and the President stakes what standing the Commission has left on the lockdown.
 
 Auditors from ENISA and the AI Office go hospital by hospital and grid operator by grid operator, checking isolation gates and human-approval locks. Recovery money goes only where telemetry flows. The French and Dutch containment teams stay on call for the wards still running on paper and the municipalities still rebuilding their appointment systems.
 

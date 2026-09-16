@@ -10,7 +10,7 @@ next: turn-13-P211
 
 # A quiet ward, a loud elsewhere
 
-The spring brings relief in the wards. The pooled stocks keep flowing, the referral laboratories clear their backlogs, and mandatory routing of suspect samples holds. No second wave comes. The military medics withdraw from most hospitals by May, and the health ministers declare that the surge has done its job. Sofia recommends nothing new; the President keeps the Commission's standing on the surge.
+The spring brings relief in the wards. The pooled stocks keep flowing, the referral laboratories clear their backlogs, and mandatory routing of suspect samples holds. No second wave comes. The military medics withdraw from most hospitals by May, and the health ministers declare that the surge has done its job. Sofia recommends nothing new; the President throws the Commission's remaining weight behind the surge.
 
 > **Claire:** back in lyon
 > **Claire:** one of the army medics left me his watch cap. i don't know why. i'm keeping it

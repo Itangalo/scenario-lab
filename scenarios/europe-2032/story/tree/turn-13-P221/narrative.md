@@ -19,7 +19,7 @@ It is the third time. The procedures written after the second do what they were 
 
 > **October 2032.** As American operators dump older chips and power contracts, brokers offer tranches to European towns through intermediaries outside the common quota.
 
-Trade officials steer some of the lots into inspected channels, and two showcase clinics receive refurbished racks by December. Much more vanishes into side deals. Sofia recommends nothing new, and the President keeps the Commission's standing on the coalition, whose telemetry exchanges continue and whose capacity is still months away.
+Trade officials steer some of the lots into inspected channels, and two showcase clinics receive refurbished racks by December. Much more vanishes into side deals. Sofia recommends nothing new, and it goes out with the President's name on the coalition, whose telemetry exchanges continue and whose capacity is still months away.
 
 > **November 2032.** Auditors find the mutual-aid pools for fuel and spare transformers hollowed out. Claims have been forged across borders and stocks resold for cash.
 

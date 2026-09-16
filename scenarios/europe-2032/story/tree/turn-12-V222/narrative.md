@@ -12,7 +12,7 @@ next: turn-13-V222
 
 Through the winter and into the spring, the single claims window finally begins paying out. The transition desks steer young coders and analysts into cyber-recovery, care and grid courses, and the wage-insurance top-ups keep some households afloat. The mayors report the queues shortening. The town halls stay hostile. The sampled audits of benefits scoring crawl, the logs are still unread in several agencies, and the freezes promised pending review never quite arrive.
 
-The Commission holds its line: no new programme, finish the repair. Sofia recommends nothing new, and the President keeps the Commission's weight on the repair package. With the budgets exhausted, that is all anyone can do.
+The Commission holds its line: no new programme, finish the repair. Sofia recommends nothing new, and the President gives the Commission's full weight to the repair package. With the budgets exhausted, that is all anyone can do.
 
 Two technical shifts cut across the repair.
 

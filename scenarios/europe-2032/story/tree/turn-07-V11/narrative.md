@@ -16,7 +16,7 @@ The autumn brings two shocks that do not wait for Brussels.
 
 The repair bays next door stay stubbornly human, and that line hardens. The unions start talking about two labour markets, one that can be automated and one that cannot.
 
-> **October 2029.** A contested genome-model paper claims a viable design for an organism able to infect humans. Offshore brokers cite it to sell DNA synthesis without screening.
+> **October 2029.** A contested genome-model paper claims a workable design for a human-infective organism. Offshore brokers cite it to sell DNA synthesis without screening.
 
 The biosecurity researchers argue over the methods. The health ministries read it as a warning shot.
 

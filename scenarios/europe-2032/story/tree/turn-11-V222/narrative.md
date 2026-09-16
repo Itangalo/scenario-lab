@@ -12,7 +12,7 @@ next: turn-12-V222
 
 The recovery corps finishes its tour in the autumn. In the cities where the mobile teams bedded in, clinics rebook their patients and grid control rooms clear their queues. The mayors acknowledge the technicians, and then point at the claims window: one form for blackouts, ransomware and now benefit corrections, still waiting for payouts from Brussels.
 
-Sofia tries to answer with a single emergency package, the White-Collar Transition and Trusted Public AI Repair, and the President puts the Commission's last standing behind it. It pays wage insurance and short retraining for young coders and analysts, and sets up a redress desk for the benefits affair. The money moves as a reallocation, not a new budget. National employment agencies open transition desks in a dozen of the hardest-hit towns, and the courses in cyber-recovery assistance, care work and grid maintenance fill within days.
+Sofia tries to answer with a single emergency package, the White-Collar Transition and Trusted Public AI Repair, and the President throws the Commission's remaining weight behind it. It pays wage insurance and short retraining for young coders and analysts, and sets up a redress desk for the benefits affair. The money moves as a reallocation, not a new budget. National employment agencies open transition desks in a dozen of the hardest-hit towns, and the courses in cyber-recovery assistance, care work and grid maintenance fill within days.
 
 > **Claire:** the care course at the nursing school got three ex-coders
 > **Claire:** one of them is good. actually good. he reads the patient not the screen

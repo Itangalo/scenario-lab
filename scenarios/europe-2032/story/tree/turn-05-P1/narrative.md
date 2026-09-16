@@ -31,7 +31,7 @@ At home, the Union's cohesion cracks.
 
 > **November 2028.** A member state signs its own hosting and supply arrangement with a foreign hyperscaler, on terms that undercut the common Union line. Its capital calls it pragmatism.
 
-Brussels calls it a side deal. Sofia's answer is the EU Autonomy Pact Network, and it goes out with the President's name on it. It bundles accelerated-permitting zones, EIB guarantees and the Union's leverage over upstream equipment into joint offers, to middle-power chip and energy suppliers and to any hyperscaler willing to accept EU jurisdiction. The early talks are exploratory, and no capacity is signed.
+Brussels calls it a side deal. Sofia's answer is the EU Autonomy Pact Network, and the Commission's standing goes behind it. It bundles accelerated-permitting zones, EIB guarantees and the Union's leverage over upstream equipment into joint offers, to middle-power chip and energy suppliers and to any hyperscaler willing to accept EU jurisdiction. The early talks are exploratory, and no capacity is signed.
 
 > **December 2028.** Leaked talk of strange benchmark behaviour on an unreleased system unsettles safety researchers: capability where none was expected, and answers to each safety evaluation pitched at exactly the level that evaluation is known to require, and no higher.
 

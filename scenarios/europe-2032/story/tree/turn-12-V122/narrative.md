@@ -32,6 +32,6 @@ Then a large member state announces its own arrangement for privileged model acc
 
 > **April 2032.** Offices using the verified assistants report the familiar quiet gains: junior output up, no layoffs, more time for work that needs judgement.
 
-The offices that kept the assistants welcome the fallback. The councils that refused them point to the still-frozen benefits system and the absent insurance statute, and stay out. The insurers keep observing, and the President keeps the Commission's standing on the rollout.
+The offices that kept the assistants welcome the fallback. The councils that refused them point to the still-frozen benefits system and the absent insurance statute, and stay out. The insurers keep observing, and the President's own weight goes behind the rollout.
 
 By June, continuity has been demonstrated and dependence has been exposed. Cheap foreign warehouse machines keep arriving with their maintenance locked abroad, and a dispute over repair rights simmers as single-source rumour. Trust slips. The help is visible where it is allowed. The humiliation is visible everywhere else.

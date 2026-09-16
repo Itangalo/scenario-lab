@@ -14,7 +14,7 @@ next: turn-13-P112
 
 Brussels learns the outlines from the press wires and a late briefing. No European laboratory signed it, and no European regulator verifies it.
 
-Sofia reframes quickly. Her note becomes the EU Accession to the US-China AI Risk Accord: the Union asks to join as a third verifier, offering supply-chain commitments and clinical incident data, and asking in return for re-licensed therapy models and a seat on the escalation hotline. The President keeps the Commission's standing on the medical channel.
+Sofia reframes quickly. Her note becomes the EU Accession to the US-China AI Risk Accord: the Union asks to join as a third verifier, offering supply-chain commitments and clinical incident data, and asking in return for re-licensed therapy models and a seat on the escalation hotline. The President gives the Commission's full weight to the medical channel.
 
 The treatment surge formally closes. The isolation wards, transfer corridors and stockpiled treatments stayed open, and no regional cascade followed the winter of the modified pathogen. The emergency planners count it a success.
 

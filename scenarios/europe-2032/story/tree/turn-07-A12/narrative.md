@@ -15,7 +15,7 @@ next: turn-08-A12
 > **Claire:** records locked. we're on paper again
 > **Claire:** at least we remember how
 
-Sofia's note that week becomes the Cyber Recovery and Service Continuity Surge. Joint restoration teams go to the hardest-hit municipalities, offline backups are mandated for hospitals and utilities, and manual-operation drills become compulsory. The President puts the Commission's standing behind it, because restoration voters can see is what keeps anything else fundable. Services degrade rather than stop wherever the crews get to; elsewhere mayors report queues and dark offices. Attribution is still open at Christmas.
+Sofia's note that week becomes the Cyber Recovery and Service Continuity Surge. Joint restoration teams go to the hardest-hit municipalities, offline backups are mandated for hospitals and utilities, and manual-operation drills become compulsory. The President keeps the Commission's weight on it, because restoration voters can see is what keeps anything else fundable. Services degrade rather than stop wherever the crews get to; elsewhere mayors report queues and dark offices. Attribution is still open at Christmas.
 
 The robot inspections suffer first. The same inspectors are needed for cyber triage, and the port audits in Rotterdam, Hamburg and Lyon are postponed again and again.
 

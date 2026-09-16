@@ -14,7 +14,7 @@ next: turn-09-P11
 
 The tooling is machine-written, and months later attribution is still open. The emergency patching chases damage nobody can map.
 
-Brussels answers with what it has. Sofia's Cyber Recovery and Hardening Sprint sends emergency teams to the worst-hit cities and orders the compromised component patched, and wards and utilities switch to the manual procedures declared operational last year. The President puts the Commission's standing behind it. Funded overtime keeps the fallback standing. The nurses report errors multiplying on the manual charts, and the auditors begin asking who carries the liability when reconciling the paper fails.
+Brussels answers with what it has. Sofia's Cyber Recovery and Hardening Sprint sends emergency teams to the worst-hit cities and orders the compromised component patched, and wards and utilities switch to the manual procedures declared operational last year. The President throws the Commission's remaining weight behind it. Funded overtime keeps the fallback standing. The nurses report errors multiplying on the manual charts, and the auditors begin asking who carries the liability when reconciling the paper fails.
 
 > **Claire:** billing's on paper again
 > **Claire:** the certificate didn't cover this either. nothing covers this

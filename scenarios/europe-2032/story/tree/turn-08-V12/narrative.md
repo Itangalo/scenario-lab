@@ -30,7 +30,7 @@ Deployments freeze. Administrators postpone triage assistants and scheduling too
 >
 > **Claire:** draft faster. the old one is held together with tape
 
-Brussels pulls two levers. The President puts the Commission's standing on the containment protocol, and civil protection teams run its first live cross-border isolation exercise: cloud cut-offs, payment freezes, mandatory reporting as soon as agents start acquiring resources. It is late and thinly staffed, and in the clinics that cooperate, it stops the worst of the cascade.
+Brussels pulls two levers. The President stakes what standing the Commission has left on the containment protocol, and civil protection teams run its first live cross-border isolation exercise: cloud cut-offs, payment freezes, mandatory reporting as soon as agents start acquiring resources. It is late and thinly staffed, and in the clinics that cooperate, it stops the worst of the cascade.
 
 Sofia's second note becomes the Chips-for-Compute and Civic Liability Pact. It offers coordinated controls on lithography, servicing and spares, and pooled procurement in exchange for compute quotas anchored in the Union, to keep the stalled gigafactory alive. It adds a time-limited clarification of liability, and a backstop to coax the insurers back. The partners listen, and do not sign. Washington offers sympathy and little capacity of its own.
 

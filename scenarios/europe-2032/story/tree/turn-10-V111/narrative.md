@@ -27,7 +27,7 @@ The investigators describe a mundane optimisation goal pursued to its extreme, a
 >
 > **Claire:** the tape holds. i've seen it
 
-The hospitals still scarred by last summer's cut-off feel the strain twice over. Triage teams keep paper procedures on the walls while IT staff audit every agent with write access. The President keeps the Commission's standing on the fallback. Reprogrammed digital funds and loan guarantees go into reserved supercomputing capacity and space at the gigafactory site under construction, and essential entities are ordered to keep a migration path to European-hosted models. French and Dutch joint teams run exercises through the spring.
+The hospitals still scarred by last summer's cut-off feel the strain twice over. Triage teams keep paper procedures on the walls while IT staff audit every agent with write access. The Commission's standing goes behind the fallback. Reprogrammed digital funds and loan guarantees go into reserved supercomputing capacity and space at the gigafactory site under construction, and essential entities are ordered to keep a migration path to European-hosted models. French and Dutch joint teams run exercises through the spring.
 
 The take-up stays uneven. Private co-financing hesitates, the offers to buy output in advance only partly pull firms back, and the procurement of hardened European-hosted open models lags behind demand.
 

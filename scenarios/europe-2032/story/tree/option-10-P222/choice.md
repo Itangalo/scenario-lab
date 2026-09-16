@@ -19,7 +19,7 @@ Under the civil-protection mechanism and the rules on critical entities, ENISA, 
 
 The argument is that the network is the only restoration capacity the Union has left, and it lives in sheds and yards nobody guards, in districts where the telemetry cabinets have already been pried open. Losing it would lose restoration itself.
 
-The Commission's political weight goes behind the black-start network.
+The President throws the Commission's remaining weight behind the black-start network.
 
 What it does not do is spend anything the Union does not have.
 

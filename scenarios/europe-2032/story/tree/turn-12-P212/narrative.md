@@ -23,7 +23,7 @@ Within weeks two more health ministries order the tools paused outside the pilot
 >
 > **Claire:** then why did it take a spreadsheet from the insurers
 
-Brussels tries to turn the Watch into a referee, and the President keeps the Commission's weight on it. The health emergency and disease-control teams offer independent re-testing, publish the raw gaps, and propose keeping the software live only if a clinician signs off every decision. Some hospitals accept. Others say that a human stamp on a biased suggestion is not a fix. Where the suspensions land, the queues lengthen again.
+Brussels tries to turn the Watch into a referee, and the President's own weight goes behind it. The health emergency and disease-control teams offer independent re-testing, publish the raw gaps, and propose keeping the software live only if a clinician signs off every decision. Some hospitals accept. Others say that a human stamp on a biased suggestion is not a fix. Where the suspensions land, the queues lengthen again.
 
 At the same time, the municipal clinics stop waiting.
 

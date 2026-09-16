@@ -16,7 +16,7 @@ The sweep does not need to be clever. Screens freeze even in the wards already r
 
 > **March 2032.** Venture and project finance pull back from AI build-out. Two expanded contracts for rented computing that EuroHPC's managers had counted on for the autumn are cancelled.
 
-A private top-up for inference capacity evaporates with them. Brussels chooses to defend the public-interest inference it has already reserved, rather than promise new capacity, and ring-fences chip deliveries for hospitals and registries. The President keeps the Commission's standing on the switch.
+A private top-up for inference capacity evaporates with them. Brussels chooses to defend the public-interest inference it has already reserved, rather than promise new capacity, and ring-fences chip deliveries for hospitals and registries. The Commission's standing goes behind the switch.
 
 > **April 2032.** Tailored cancer and rare-disease therapies designed with frontier models reach ordinary clinics.
 

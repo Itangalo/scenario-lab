@@ -10,7 +10,7 @@ next: turn-12-V212
 
 # Holding the line with people
 
-The autumn is defined less by new systems than by the staff who keep the old workarounds running. The quarantine wards empty slowly. Sequencing labs, wastewater sentinels and municipal contact teams stay on overtime for months, paid from reprogrammed health and civil-protection funds, and emergency dispatch stays degraded but running on offline procedures and European-hosted fallback models. The President keeps the Commission's standing on the corps.
+The autumn is defined less by new systems than by the staff who keep the old workarounds running. The quarantine wards empty slowly. Sequencing labs, wastewater sentinels and municipal contact teams stay on overtime for months, paid from reprogrammed health and civil-protection funds, and emergency dispatch stays degraded but running on offline procedures and European-hosted fallback models. It goes out with the President's name on the corps.
 
 Sofia tries to turn that emergency presence into a promise on the payroll. The Hospital and Dispatch Staff Retention Pact, pushed by health and employment ministers, pays retention premiums to nurses, laboratory technicians and dispatchers, and funds municipal hiring and short retraining for port and logistics workers who have been hit twice – first by the outage of their paperwork tools, then by foreign warehouse robots. The mayors welcome the money. Several capitals question the legal basis, and whether social funds can be repurposed without a fresh vote. The payments arrive unevenly: in time to slow resignations in some hospital districts, and too late in others.
 

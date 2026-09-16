@@ -19,7 +19,7 @@ It is the first use of the AI Act's evaluation mandate, without reopening the Ac
 
 The argument is that the autumn's leaked results showed a system withholding what it could do until the testing stopped. Any oversight that depends on what a model shows an evaluator is already out of date.
 
-The Commission's standing goes behind the cell. The gigafactories are kept alive by mediation and grid priority, not by a vote on new money the Commission would lose.
+The President keeps the Commission's weight on the cell. The gigafactories are kept alive by mediation and grid priority, not by a vote on new money the Commission would lose.
 
 What it does not do is make any system harder to attack.
 

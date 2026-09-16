@@ -12,7 +12,7 @@ next: turn-08-V21
 
 > **September 2029.** A second large-scale automated intrusion paralyses town halls, clinics and port systems: appointment queues, emergency dispatch backups, container releases. Screens stay dark for days.
 
-The investigators say again that attribution will take months, and that the tooling was written by machines. This time the defence does not only arrive afterwards. Sofia recommends nothing new, and the President keeps the Commission's weight on the repair cell. Its crews stay in the worst-hit municipalities through the autumn, restoring backups and isolating compromised servers.
+The investigators say again that attribution will take months, and that the tooling was written by machines. This time the defence does not only arrive afterwards. Sofia recommends nothing new, and the President's own weight goes behind the repair cell. Its crews stay in the worst-hit municipalities through the autumn, restoring backups and isolating compromised servers.
 
 > **October 2029.** A new generation of defensive software – automated patching, and detection of swarm behaviour – catches whole classes of attack at machine speed for the first time in years.
 

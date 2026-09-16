@@ -10,13 +10,13 @@ next: turn-05-P1
 
 # Patching the edges
 
-> **February 2028.** A new openly released model, close to the closed frontier, spreads to hundreds of thousands of machines in days. It arrives with its tool harnesses attached, which is the part the security services read twice: the capability no longer has to be assembled by anyone competent.
+> **February 2028.** A new openly released model, close to the closed frontier, is copied hundreds of thousands of times in days. It arrives with its tool harnesses attached, which is the part the security services read twice: the capability no longer has to be assembled by anyone competent.
 
 The half-year is defined less in Brussels than by download counts. For EU security officials the timing is grim: last autumn's audits had already found intruders lodged in grid, port and water systems, and what could once be recalled is now permanently out.
 
 Against that, Brussels finally closes one file. The Critical Services Shield, long delayed, reaches its formal completion. Finance and telecoms pass their exercises cleanly, and a handful of hospitals clear their re-tests on backup and failover. The Commission claims vindication. The insurers pause their threats to make cover conditional on proof of hardening. They do not withdraw them.
 
-Sofia's next push is deliberately smaller. With the gigafactory siting stuck and one site mired in protests and permit challenges, the big build is frozen at its legal-anchoring condition, and the Small-Operator Hardening Sprint throws ENISA teams at the hospitals and municipal utilities that failed instead: mobile restore units, standard failover images, two-day re-tests, and a single-template continuity plan to buy the interior ministries' cooperation. At the end comes a pass certificate designed to satisfy the insurers. The President puts the Commission's standing behind it.
+Sofia's next push is deliberately smaller. With the gigafactory siting stuck and one site mired in protests and permit challenges, the big build is frozen at its legal-anchoring condition, and the Small-Operator Hardening Sprint throws ENISA teams at the hospitals and municipal utilities that failed instead: mobile restore units, standard failover images, two-day re-tests, and a single-template continuity plan to buy the interior ministries' cooperation. At the end comes a pass certificate designed to satisfy the insurers. The President keeps the Commission's weight on it.
 
 > **Claire:** we got a certificate
 > **Claire:** it's framed in the director's office. the insurers asked for a copy

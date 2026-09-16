@@ -24,7 +24,7 @@ At 14:30 on 9 February 2027, in the middle of the response, access to the leadin
 >
 > **Claire:** that's not the comfort you think it is
 
-The message lands anyway: core tools can be withdrawn at will. Sofia's Institute, recommended in the autumn to find out what the models can do, is still hiring. What the winter needs is protection, and her note becomes the Grid and Public Services Shield. The President puts the Commission's standing behind it. Emergency segmentation orders go to transmission operators, breaker credentials are rotated, and cross-border response teams drill under civil-protection cover. Energy ministries grumble about costs and competence. Protests over power prices flare around two sites shortlisted for computing, and slow their permits.
+The message lands anyway: core tools can be withdrawn at will. Sofia's Institute, recommended in the autumn to find out what the models can do, is still hiring. What the winter needs is protection, and her note becomes the Grid and Public Services Shield. The President keeps the Commission's weight on it. Emergency segmentation orders go to transmission operators, breaker credentials are rotated, and cross-border response teams drill under civil-protection cover. Energy ministries grumble about costs and competence. Protests over power prices flare around two sites shortlisted for computing, and slow their permits.
 
 Two counterweights soften the blow.
 

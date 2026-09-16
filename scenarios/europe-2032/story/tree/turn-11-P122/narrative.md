@@ -15,7 +15,7 @@ allow: 23:05 29
 
 At 23:05 on 29 September 2031, three member states confirm the same thing within an hour of each other: a modified agent with clear links to model-assisted design is spreading. It escaped through a laboratory lapse, and then was deliberately shared. Hospitals move to isolation protocols, and the casualties mount into the dozens before the cordons hold.
 
-Sofia's note that night becomes the Bio-Containment and Continuity Surge, and the Commission's standing goes behind it, at the President's insistence. It creates nothing new. It runs entirely on instruments already authorised: stockpile draws, cross-border information sharing, the health emergency authority and the disease control centre working within their mandates.
+Sofia's note that night becomes the Bio-Containment and Continuity Surge, and the President gives the Commission's full weight to it, at the President's insistence. It creates nothing new. It runs entirely on instruments already authorised: stockpile draws, cross-border information sharing, the health emergency authority and the disease control centre working within their mandates.
 
 > **Claire:** isolation protocols. three countries. we're one of them
 > **Claire:** i'm fine. i'm in a suit. i'm fine

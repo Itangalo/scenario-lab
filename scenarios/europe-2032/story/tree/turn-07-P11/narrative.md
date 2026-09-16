@@ -20,7 +20,7 @@ Attention shifts to biology.
 
 Virologists argue over the methods and over whether it should have been published. Inside the ministries the memo line is blunter: the best openly available models already do hours of research work, and cannot be recalled.
 
-Sofia's answer goes through health powers rather than technology law. The EU Bio Early-Warning and Response Surge asks the disease control centre to start federating wastewater and hospital sequencing laboratories around common thresholds and daily reporting, and the health emergency authority to draw on existing reserves for limited diagnostics and protective stocks. The President puts the Commission's standing behind it. No new money is committed; a small reprogramming from closed programmes covers only the coordination costs.
+Sofia's answer goes through health powers rather than technology law. The EU Bio Early-Warning and Response Surge asks the disease control centre to start federating wastewater and hospital sequencing laboratories around common thresholds and daily reporting, and the health emergency authority to draw on existing reserves for limited diagnostics and protective stocks. The President's own weight goes behind it. No new money is committed; a small reprogramming from closed programmes covers only the coordination costs.
 
 The rollout is partial and slow. Dutch, Danish and Portuguese laboratories link up quickly as pilots. French and German regions haggle over who owns the data and who staffs it, and eastern municipalities complain about sampling duties with no money attached. Daily reporting is not achieved. The interior and health ministers extend the spring's escalation playbook to reporting of misuse, by implementing act.
 

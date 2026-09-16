@@ -13,7 +13,7 @@ allow: 15
 
 The hospitals and registries stay on the European-hosted images through the autumn. After the poisoned update, engineers keep triage in stripped-down text mode, restore wards from clean copies, and defend the small pool of reserved inference for health and civil records. It works, after a fashion. Operations are rescheduled rather than lost, and staff in three cities describe working with one hand tied. The continuity switch completes its term.
 
-The certification teams go out alongside them, demonstrating pre-release checks, logs that are now actually read, and refusal behaviour to clinicians and mayors. Sofia recommends nothing new, and the President keeps the Commission's weight on the Fast-Track. Where the migration is finished, it calms shifts. Where teams are still reinstalling, it feels like an inspection on top of the queues.
+The certification teams go out alongside them, demonstrating pre-release checks, logs that are now actually read, and refusal behaviour to clinicians and mayors. Sofia recommends nothing new, and the President stakes what standing the Commission has left on the Fast-Track. Where the migration is finished, it calms shifts. Where teams are still reinstalling, it feels like an inspection on top of the queues.
 
 Then the welfare file breaks.
 

@@ -10,7 +10,7 @@ next: turn-12-A221
 
 # Living in the walls
 
-The recovery cell in Brussels becomes the command post. Engineers pool clean backups, divert supercomputing time to the frozen appointment systems, and rehearse paper and manual fallbacks in wards and grid control rooms. The President keeps the Commission's weight on the Cyber Recovery Pact, which completes its term in the autumn.
+The recovery cell in Brussels becomes the command post. Engineers pool clean backups, divert supercomputing time to the frozen appointment systems, and rehearse paper and manual fallbacks in wards and grid control rooms. The Commission's standing goes behind the Cyber Recovery Pact, which completes its term in the autumn.
 
 By then, hospitals in several member states can island themselves, keeping the lights on and the records readable even while the municipal networks around them stay degraded.
 

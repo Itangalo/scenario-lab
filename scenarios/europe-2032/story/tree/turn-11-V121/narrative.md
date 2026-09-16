@@ -28,7 +28,7 @@ The uptake is real and narrow. A second wave of mayors sign up. The underwriters
 
 > **October 2031.** Extended naval manoeuvres around the Taiwan Strait, rising shipping insurance and a diplomatic expulsion send energy and shipping desks into disruption drills.
 
-The Union's seat in the pooled defence cell proves its worth. The President keeps the Commission's standing on the accession, and the shared intrusion feeds and backup playbooks keep early warning flowing without new money. The dependence shows too. With the chip slots still cancelled and the fenced gigafactory site still idle, officials concede privately that borrowed containment would be fragile if the shipping lanes choked.
+The Union's seat in the pooled defence cell proves its worth. The President spends what credit the Commission has left on the accession, and the shared intrusion feeds and backup playbooks keep early warning flowing without new money. The dependence shows too. With the chip slots still cancelled and the fenced gigafactory site still idle, officials concede privately that borrowed containment would be fragile if the shipping lanes choked.
 
 The talks with The Hague, Tokyo and Seoul on lithography licensing stay polite and unmoved. The American laboratories, slowed by their own inward turn, still buy time without giving Europe capacity.
 

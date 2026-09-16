@@ -22,7 +22,7 @@ It gives Sofia her opening. The Verified Work Assistant Rollout offers audited a
 >
 > **Claire:** i know. i'm telling you it landed
 
-The pooled cyber defence holds. The President keeps the Commission's standing on the accession, and the liaison teams on the shared watch floor keep the cooperating municipalities restoring in hours after fresh extortion probes. The towns outside the feed stay dark longer, and the two-speed map hardens into accepted fact.
+The pooled cyber defence holds. The President spends what credit the Commission has left on the accession, and the liaison teams on the shared watch floor keep the cooperating municipalities restoring in hours after fresh extortion probes. The towns outside the feed stay dark longer, and the two-speed map hardens into accepted fact.
 
 The harder shock comes from the docks.
 

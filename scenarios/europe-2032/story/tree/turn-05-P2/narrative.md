@@ -11,7 +11,7 @@ allow: 8 18
 
 # Weaker tools
 
-The second half of 2028 is defined by substitution. Teams from health ministries and municipal IT work through their lists of the clinics and offices cut off in February, reinstalling triage assistants and document helpers on European-hosted models. Sofia recommends nothing new, and the President keeps the Commission's standing on the continuity work. Where the automated patching and swarm-spotting defences are installed alongside, night-shift engineers report fewer escalations. The machines close known holes almost as fast as the scanners find them.
+The second half of 2028 is defined by substitution. Teams from health ministries and municipal IT work through their lists of the clinics and offices cut off in February, reinstalling triage assistants and document helpers on European-hosted models. Sofia recommends nothing new, and the Commission's standing goes behind the continuity work. Where the automated patching and swarm-spotting defences are installed alongside, night-shift engineers report fewer escalations. The machines close known holes almost as fast as the scanners find them.
 
 > **September 2028.** A new generation of the defensive tools arrives. Operators report whole classes of intrusion closed.
 

@@ -13,7 +13,7 @@ allow: 15
 
 > **September 2032.** A ransomware sweep built with machine-generated tooling moves through municipal booking, payroll and hospital administration systems in several member states.
 
-Where engineers finished clean rebuilds, services degrade and come back within days. Where procurement disputes and the shortage of cleared staff left a third of towns still waiting, offices close, appointments are lost, and restoration figures have to be withdrawn. Mutual-aid teams and the existing continuity playbooks keep the power and the hospitals running. No new programme is promised; Sofia recommends none, and the President keeps the Commission's weight on the clinical rollout. The press dwells on responders visibly behind the intrusion, and attribution stays unresolved.
+Where engineers finished clean rebuilds, services degrade and come back within days. Where procurement disputes and the shortage of cleared staff left a third of towns still waiting, offices close, appointments are lost, and restoration figures have to be withdrawn. Mutual-aid teams and the existing continuity playbooks keep the power and the hospitals running. No new programme is promised; Sofia recommends none, and the President throws the Commission's remaining weight behind the clinical rollout. The press dwells on responders visibly behind the intrusion, and attribution stays unresolved.
 
 Against that backdrop, the clinical rollout keeps delivering. Jointly branded European diagnostics on European servers spread beyond the first three hospitals into GP networks, with waiting times published clinic by clinic. Patients still name Brussels as the reason a letter arrived. It is the only clearly attributed gain in an otherwise grim half-year.
 
