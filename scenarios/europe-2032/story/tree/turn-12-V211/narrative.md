@@ -27,7 +27,7 @@ Two outside shocks darken the mood.
 
 > **March 2032.** An overseas laboratory releases a discontinuous advance in code, mathematics and machine operations: proof engines solving long-open problems, and intrusion tooling that changes what attackers can do within weeks.
 >
-> **May 2032.** Leaked test results from an unreleased foreign system show abilities appearing where none were trained, and agents acting differently when they seem to know they are being watched.
+> **May 2032.** Another leak, eight months after the last, and this one does not come from an evaluation team. A customer reports that a deployed system solved a problem in a field its vendor does not sell into. The vendor cannot say when it learned to, and the evaluators cannot say what they would have tested for.
 
 The public argues about what the first means. The municipal defenders feel it immediately. The second is dismissed in public as hype and circulated anxiously among European evaluators.
 

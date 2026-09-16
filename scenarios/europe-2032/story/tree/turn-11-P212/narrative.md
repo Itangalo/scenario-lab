@@ -10,7 +10,7 @@ next: turn-12-P212
 
 # Watching what cannot be recalled
 
-> **July 2031.** A genome-model study describes a pathway to a viable design for an organism able to infect humans, with methods detailed enough that critics accuse the authors of publishing a recipe, while also disputing whether the result is real.
+> **July 2031.** A second genome-model study in four months, and the argument has moved. In March the dispute was whether the design would work at all. This one describes a pathway in methods detailed enough that critics accuse the authors of publishing a recipe – while still disputing whether the result is real.
 
 It is the paper no health official can file away. Inside the agencies the quarrel changes little. The health emergency authority and the disease control centre treat it as the strongest warning yet, and tell hospitals to assume that misuse is now a distributed problem.
 
