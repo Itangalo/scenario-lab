@@ -32,7 +32,7 @@ The open frontier creeps closer to the closed one, already lodged on private har
 
 Two softer shifts rebuild a little tolerance.
 
-> **November 2032.** Firms report measured productivity gains in law, accountancy, administration and consulting, largest among juniors, and no matching fall in jobs.
+> **November 2032.** Firms report measured productivity gains in law, accountancy, administration and consulting, largest among juniors and with no matching fall in jobs – a finding that has held, unchanged and unexplained, for as long as anyone has been measuring it.
 >
 > **November 2032.** Several cities show public-sector systems that have cut waiting lists and decision times, and credit a European choice of deployment.
 

@@ -23,7 +23,7 @@ The breakthrough arrives as code, not as a paper. Sofia's note becomes the EU Sw
 
 It helps, unevenly. The certified sites absorb probing and self-propagating automation with fewer outages. Municipal utilities with thin staff and unpatched legacy systems still fall back to manual routines. The responders welcome the tooling and resent the pace of the rollout in the same shift.
 
-> **October 2029.** Studies from law firms, accountants, newsrooms and consultancies show AI assistants lifting output, most of all for juniors, without a matching fall in jobs.
+> **October 2029.** Studies from law firms, accountants, newsrooms and consultancies show AI assistants lifting output, most of all for juniors, without a matching fall in jobs. What the same studies do not find is new juniors. Nobody is being let go, and nobody is being taken on.
 
 Ministers quote the figures to argue that the transition is over and manageable. The unions reply that stable employment is not the same as secure employment.
 

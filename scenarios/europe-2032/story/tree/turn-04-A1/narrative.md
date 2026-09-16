@@ -25,6 +25,6 @@ This is the half-year the Shield was bought for, and it finishes in time. Joint 
 
 > **April 2028.** Humanoid robots go on commercial sale abroad, first for warehouses and loading docks. Armed variants appear in foreign military trials. The control software is American; most of the hardware is Chinese.
 >
-> **May 2028.** A study of European offices finds large productivity gains from AI assistants, and no matching job losses.
+> **May 2028.** A study of European offices finds large productivity gains from AI assistants and no matching job losses. The detail that travels is the correction: the firms that cut staff early are hiring them back.
 
 Sofia puts the two clippings side by side in her weekly note without comment. The President underlines the second one.

@@ -23,7 +23,7 @@ Sofia tries to turn that emergency presence into a promise on the payroll. The H
 
 > **September 2031.** Chinese-built sorting and palletising robots running American control software spread through European ports and warehouses. Militaries use similar machines for resupply and mine clearance.
 >
-> **October 2031.** Studies from law firms, consultancies and administrations show clear productivity gains from AI assistants, especially for junior staff, and no mass layoffs.
+> **October 2031.** Studies from law firms, consultancies and administrations show clear productivity gains from AI assistants, especially for junior staff, and no mass layoffs. The professions have not shed people. They have stopped admitting them.
 
 Picking and hauling jobs thin out. Repair, care and complex construction work do not. Europe, still strong in industrial equipment, finds itself buying the machines rather than setting the terms. The office studies ease the panic in white-collar sectors and do little for the hostility in towns facing clinic queues and delivery delays.
 

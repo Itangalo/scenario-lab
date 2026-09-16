@@ -36,6 +36,6 @@ Sofia's second note becomes the Chips-for-Compute and Civic Liability Pact. It o
 
 > **May 2030.** Sorting, palletising and yard logistics automate quickly with imported robots and foreign control models. Repair, care and messy construction sites stay manual.
 
-Europe's machine builders feel both the order book and the dependence. The offices provide the counterpoint: new studies from law, accountancy and newsrooms show assistants lifting junior output without layoffs. Voters feel benefit and breach at once.
+Europe's machine builders feel both the order book and the dependence. The offices provide the counterpoint: new studies from law, accountancy and newsrooms show assistants lifting junior output without layoffs – in private offices, where voters do not queue. Voters feel benefit and breach at once.
 
 The exploit patch and the compact with Japan and Korea complete their terms in June, with the kits delivered and the joint buying still only an offer.

@@ -29,6 +29,6 @@ The relief is real and partial. The clinics reopen and the ports clear, and many
 
 Brussels freezes everything else, and no vote on new money is attempted. In December the gigafactory programme reaches the end of its first build phase: concrete poured, and the first halls fitted at the initial sites. Officials present the first operational capacity as progress beyond paper, and for once it is. The supply-chain compact closes its term with the joint licensing front intact. Solidarity aid from the repair cell is used to coax the capital with its own American deal back towards the common request to Washington, and the computing front begins to mend.
 
-> **November 2029.** Studies from law firms, accountancies, newsrooms and consultancies show measurable productivity gains from AI assistants, especially for junior staff, and no layoffs.
+> **November 2029.** Studies from law firms, accountancies, newsrooms and consultancies find measurable productivity gains from AI assistants, especially for junior staff, and no layoffs. The economists note that the gain is largest where the work was most routine and smallest where it was most prized.
 
 The Commission acknowledges the findings. With services down, few citizens feel them. Faint reports of organised blockades around grid-connection works add to the unease, still rumour rather than fact.

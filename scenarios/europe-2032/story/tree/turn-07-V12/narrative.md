@@ -29,7 +29,7 @@ Sofia's answer is the Loss-of-Control Rapid Containment Protocol: freeze playboo
 
 The first gigafactory finally clears mediation. There is concrete, there are transformers, and there is a ribbon-cutting date for the start of construction, and with that the programme formally closes. The second site stays in court. The Commission's threat to hold back recovery funds from the capital with its own hyperscaler deal hardens into an open standoff. The capital calls it pragmatism. The Berlaymont calls it sabotage.
 
-> **November 2029.** Studies in law firms, accountancies and newsrooms show AI assistants lifting output, especially for juniors, without layoffs. Firms that cut early are quietly rehiring.
+> **November 2029.** Studies in law firms, accountancies and newsrooms show AI assistants lifting output, especially for juniors, without layoffs. The graduate intake is the number that moved: the firms rehiring are rehiring the experienced.
 
 It softens the panic about jobs, and it also deflates the urgency. Voters feel the benefit and the breach at the same time.
 

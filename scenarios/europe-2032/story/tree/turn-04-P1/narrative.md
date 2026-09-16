@@ -27,7 +27,7 @@ Sofia's next push is deliberately smaller. With the gigafactory siting stuck and
 
 It works in part. Restore times improve wherever the teams arrive, and several municipalities bank their certificates. But the staff run out before the backlog does. Site visits slip again, turnover undoes the training at the smaller operators, and moving the contested factory to its backup site costs months of renegotiation. No new money moves, and the procurement of EU-hosted triage, permit and tutoring tools stays at the stage of costings and options.
 
-> **April 2028.** Studies across law, accountancy, administration and consulting show solid productivity gains from AI assistants, strongest for junior staff, and no wave of layoffs.
+> **April 2028.** Studies across law, accountancy, administration and consulting show solid productivity gains from AI assistants, strongest for junior staff, and no wave of layoffs. The firms that made redundancies last year are the ones now short-handed.
 >
 > **May 2028.** Extended military exercises around Taiwan lift shipping insurance, and a diplomat is expelled.
 

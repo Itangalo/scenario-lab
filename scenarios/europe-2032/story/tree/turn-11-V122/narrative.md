@@ -10,7 +10,7 @@ next: turn-12-V122
 
 # Offices hum, warehouses clank
 
-> **September 2031.** In law firms, accountancies and newsrooms across the Union, the numbers are quiet and good: junior staff producing more drafts, fewer late nights, no layoff memos. Firms that cut early are rehiring.
+> **September 2031.** In law firms, accountancies and newsrooms across the Union, the numbers are quiet and good: junior staff producing more drafts, fewer late nights, no layoff memos. Nobody disputes them any more, which has not made them popular. The good news arrives in the same week as a bill nobody can pay.
 
 It gives Sofia her opening. The Verified Work Assistant Rollout offers audited assistants to consenting town halls and health-queue offices. Every action is logged, automatic approvals are banned, and outside re-checks are paid for out of the funds that sat unspent. Where triage has already cut the waiting lists, the mayors welcome it. Elsewhere, opposition councils point to the still-frozen benefits system and the missing insurance, and refuse. The insurers observe the pilots and write no policies until a statute passes. The civic repair completes its term with the same split it began with.
 

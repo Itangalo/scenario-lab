@@ -28,7 +28,7 @@ Almost in parallel, a new, largely automated intrusion wave hits public services
 
 Sofia's answer is the Sovereign Fallback Stack, pushed through reprogrammed digital funds and loan guarantees. Capacity on the shared supercomputers and space at the one gigafactory site under construction are reserved for public-interest inference, and essential entities are ordered to maintain a migration path to a European-hosted fallback. Procurement favours European-hosted open models, hardened as well as they can be. Joint fallback exercises run through the autumn. Take-up is uneven, and private co-financing hesitates despite offers to buy the output in advance.
 
-> **November 2030.** Studies from law firms, consultancies and newsrooms show clear productivity gains from AI assistants, especially among juniors, and no matching job losses.
+> **November 2030.** Studies from law firms, consultancies and newsrooms show clear productivity gains from AI assistants, especially among juniors, and no matching job losses. Every junior in the sample was hired before the assistants arrived.
 
 The good news does little for trust. With the town halls dark twice in a year, and doctors explaining why a foreign switch has stopped their tools, the public mood turns harsher towards dependence itself.
 

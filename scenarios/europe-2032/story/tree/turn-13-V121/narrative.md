@@ -17,7 +17,7 @@ The autumn brings two Europes into the same news bulletin.
 
 The recovery teams cut networks and pull locked backups off the shelves, and where the rehearsals held, the booking desks are back within days. Elsewhere, staff rebuild registries by hand for weeks. The investigators agree the tooling was written by a model. Nobody can name who ran it.
 
-> **October 2032.** Law firms, accountants, local administrations and newsrooms report measured output gains from AI assistants, largest among juniors, and no new layoffs. Firms that cut early are quietly hiring again.
+> **October 2032.** Law firms, accountants, local administrations and newsrooms report measured output gains from AI assistants, largest among juniors, and no new layoffs. The studies have stopped being news. They are filed, not read, and the people who would once have argued with them have moved on to arguing about the outages.
 
 Work is changing shape rather than disappearing. Brussels pushes its triage cell hard, and the President keeps the Commission's standing on it. ENISA teams fund restores from existing envelopes, run isolation drills in the towns that were hit, and keep the pooled allied feeds flowing. It stops the cascades, and it underlines the dependence: the detection is borrowed, and the spare parts are counted.
 

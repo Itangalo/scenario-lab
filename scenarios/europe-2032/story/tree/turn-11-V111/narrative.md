@@ -25,6 +25,6 @@ The fallback formally lands. Reserved inference on the European supercomputers s
 >
 > **Claire:** tell that to the queue
 
-> **November 2031.** Law firms, accountancies, newsrooms and consultancies report measured productivity gains from AI assistants, largest among juniors, and no matching fall in employment. Firms that cut early are quietly rehiring.
+> **November 2031.** Law firms, accountancies, newsrooms and consultancies report measured productivity gains from AI assistants, largest among juniors, and no matching fall in employment. The gains show up in margins. They do not show up in wages, and they have not reached a single public queue. Firms that cut early are quietly rehiring.
 
 Work is changing shape rather than disappearing. The evidence eases the blame in the talks with unions and employers. It barely moves the mood on the evening news, where paper triage and dark town halls still define how most people feel about dependence.
