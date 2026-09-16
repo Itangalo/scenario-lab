@@ -14,7 +14,7 @@ The autumn brings two shocks at once.
 
 > **September 2027.** A contested paper claims that a genome model sketched a viable design for an organism able to infect humans, with non-expert help.
 >
-> **October 2027.** A new openly downloadable model lands close to the closed frontier and is mirrored hundreds of thousands of times in days.
+> **October 2027.** A new openly downloadable model lands close to the closed frontier, and ships with the scaffolding that makes weights into an agent: tool access, memory, task loops. Mirroring it takes days. Using it takes an afternoon.
 
 The biosecurity community splits between those who call the paper alarmist and those who call its publication reckless. The evening news stitches the two stories together, alongside last year's grid intrusions.
 

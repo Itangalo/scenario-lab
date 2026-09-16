@@ -25,7 +25,7 @@ Then the ground shifts under the posture.
 
 > **March 2031.** A biosecurity paper claims that a genome model produced a viable design for an organism able to infect humans, or that a non-expert could get there with its help.
 >
-> **April 2031.** An openly released model lands within months of the closed frontier. It is downloaded hundreds of thousands of times in its first week.
+> **April 2031.** An openly released model lands within months of the closed frontier. What has changed is who runs it: hospitals and ministries, on their own hardware, as policy rather than as an experiment.
 
 The methodologists quarrel, and the authors are accused both of alarmism and of publishing too much. The health agencies cannot ignore it. And with the new model, municipal IT officers and small laboratories suddenly hold what only great powers held a few months earlier, permanently.
 

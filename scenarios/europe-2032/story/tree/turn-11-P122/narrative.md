@@ -26,7 +26,7 @@ Sofia's note that night becomes the Bio-Containment and Continuity Surge, and th
 
 The response is visible, uneven and overstretched. The certified hospitals that passed the earlier drills absorb the surge of patients and push mandatory reporting into the emergency channels. Smaller clinics and town networks, still without the new patching tools, go back to paper triage and manual shutdowns when probing traffic spikes alongside the outbreak. The detector audits and medical team deployments are delayed by staffing and logistics. Protected cores, brittle edges, again.
 
-> **October 2031.** Within weeks of the outbreak, a new openly released model family lands almost at the closed frontier, and is downloaded hundreds of thousands of times in days.
+> **October 2031.** Within weeks of the outbreak, a new openly released model family lands almost at the closed frontier. Removing its refusals is demonstrated publicly, on one machine, for the cost of an evening.
 
 Forensics later find its assistance in the chain that designed the agent. By then, copies are on private hardware everywhere, and the takedown requests to the major hosts and mirrors meet mixed, slow responses.
 

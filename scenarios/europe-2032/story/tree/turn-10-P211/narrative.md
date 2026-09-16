@@ -25,7 +25,7 @@ Two shocks from outside define the half-year.
 
 > **February 2031.** A published genome-model design that could plausibly guide the creation of an organism able to infect humans splits the biosecurity field.
 >
-> **March 2031.** A near-frontier openly downloadable model spreads to hundreds of thousands of machines in a week.
+> **March 2031.** A near-frontier openly downloadable model spreads to hundreds of thousands of machines in a week. The municipalities are no longer downloading it out of curiosity. It is in the tender documents.
 
 Methodologists cry alarmism. Others warn that a recipe has been aired. The new model's copies are soon circulating widely on private hardware.
 

@@ -10,7 +10,7 @@ next: turn-05-P1
 
 # Patching the edges
 
-> **February 2028.** A new openly released model, close to the closed frontier, spreads to hundreds of thousands of machines in days.
+> **February 2028.** A new openly released model, close to the closed frontier, spreads to hundreds of thousands of machines in days. It arrives with its tool harnesses attached, which is the part the security services read twice: the capability no longer has to be assembled by anyone competent.
 
 The half-year is defined less in Brussels than by download counts. For EU security officials the timing is grim: last autumn's audits had already found intruders lodged in grid, port and water systems, and what could once be recalled is now permanently out.
 

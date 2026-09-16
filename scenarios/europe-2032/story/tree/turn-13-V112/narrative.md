@@ -21,7 +21,7 @@ Then the welfare file breaks.
 
 Brussels says the system breached its high-risk obligations and announces enforcement through the existing justice and employment channels. For the press and for victims' groups, that answer confirms the failure: conformity passed on paper while the harm ran in production. Protests outside job centres merge with the hospital walkouts against telemetry sharing. All talk of new adoption freezes.
 
-> **October 2032.** A near-frontier open release is downloaded hundreds of thousands of times.
+> **October 2032.** A near-frontier open release is downloaded hundreds of thousands of times, and its safeguards are shown to come off in an afternoon by anyone who wants them off.
 >
 > **November 2032.** A contested genome-modelling paper claims non-experts could be helped to a viable design for an organism able to infect humans.
 

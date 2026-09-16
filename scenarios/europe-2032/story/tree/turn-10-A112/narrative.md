@@ -31,7 +31,7 @@ The therapy doses, the scheduling software and the models behind the treatment p
 
 > **March 2031.** Night-time arson spreads from robot pilot sites to the grid-connection works for the gigafactories. The Energy Council takes emergency control and posts guards. No new siting promise is made while fires are still being lit.
 >
-> **April 2031.** A new freely downloadable model, only months behind the closed frontier, is copied hundreds of thousands of times in a week.
+> **April 2031.** A new freely downloadable model, only months behind the closed frontier, is copied hundreds of thousands of times in a week – and this time into procurement systems. Three national health services list it as an approved option before the regulators have finished reading its licence.
 >
 > **May 2031.** Law firms, accountancies, software houses and administrations stop replacing entry-level staff who leave. Graduate bridge pay is slow, and reopenings in ports and warehouses are frozen by blockades and war disruption.
 

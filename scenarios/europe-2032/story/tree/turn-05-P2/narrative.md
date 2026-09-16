@@ -24,7 +24,7 @@ It is not a recovery. Doctors complain that the replacement helpers are slower a
 >
 > **Claire:** then send me whatever they have
 
-> **October 2028.** A frontier-class openly released model appears, mirrored hundreds of thousands of times in days.
+> **October 2028.** A frontier-class openly released model appears. Within a fortnight, published recipes strip its safety training for the price of a weekend's compute, and the stripped versions are mirrored as widely as the original.
 >
 > **October 2028.** Extended exercises around Taiwan push shipping insurance up and delay deliveries of chips.
 

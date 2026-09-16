@@ -17,7 +17,7 @@ The tooling is machine-made and fast, and it reinfects. Towns cleaned in Septemb
 
 Sofia's last new measure is the Repair-and-Keep-Clean Municipal Surge, and the President puts everything behind it. The joint triage queue stays open day and night, and the standing repair teams camp in town halls, cutting out the compromised dependency, restoring from offline backups, forcing password rotations, and staying until the systems stay clean. The containment pact, concluded this half-year, gives the crews common playbooks and isolation routines. It half-works. The cities that hold to the procedure stay clean and put their mayors on camera. Others relapse.
 
-> **October 2032.** An openly downloadable system from a foreign laboratory lands within touching distance of the closed frontier. Hundreds of thousands of copies spread in days.
+> **October 2032.** An openly downloadable system from a foreign laboratory lands within touching distance of the closed frontier, agent scaffolding included. Hundreds of thousands of copies spread in days, and the first of them are running tools by the evening.
 
 European security officials stop talking about controlling its spread and start talking about living with it: hardening, patching, and assuming the intrusion kits will keep getting sharper.
 

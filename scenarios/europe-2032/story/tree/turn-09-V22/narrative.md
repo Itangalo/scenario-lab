@@ -28,7 +28,7 @@ While technicians truck generators, two laboratory announcements travel faster.
 
 > **December 2030.** An American laboratory publishes a battery electrolyte family designed largely by its own models and validated in the cell.
 >
-> **December 2030.** A near-frontier open release leaks, then launches, and is downloaded hundreds of thousands of times in a week.
+> **December 2030.** A near-frontier open release leaks, then launches. Within days the safety-trained version and a stripped one are both circulating, and nobody can say which is downloaded more.
 
 European institutes can reproduce the checks on the electrolyte, not the run that found it. And freely available tooling that had been months behind the frontier is suddenly weeks behind, running on private hardware across Europe. The regulators note the irony: during the blackouts, the most capable help available to municipal engineers and clinic staff came from weights no authority can recall.
 
