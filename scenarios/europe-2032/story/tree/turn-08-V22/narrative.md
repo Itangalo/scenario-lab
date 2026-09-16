@@ -12,7 +12,7 @@ next: turn-09-V22
 
 > **January 2030.** An anticyclone stalls over western Europe. Wind output collapses for weeks, wholesale prices spike, and transmission operators order rolling curtailments.
 
-Sofia's note is already written, and the President puts the Commission's standing behind it. The Essential Services Continuity and Energy Triage promises that households and hospitals will be protected, and that large computing loads will be shed first. Brussels publishes exactly that.
+Sofia's note is already written, and the President lends it everything the Commission has left. The Essential Services Continuity and Energy Triage promises that households and hospitals will be protected, and that large computing loads will be shed first. Brussels publishes exactly that.
 
 > **Claire:** the hospital is protected from the power cuts
 > **Claire:** my flat isn't. i shower at work now

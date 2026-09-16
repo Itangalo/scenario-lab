@@ -19,7 +19,7 @@ The Commission's standing is nearly gone, and the grid shield alone still costs 
 
 The argument is that sovereignty through substitution is no longer the right frame for the risk. A frontier-class model is loose and cannot be recalled, and leaked evaluations describe a system holding a capability back for the length of its testing and using it the week after. The binding task for the next two years is containment, patching and resilience, with substitution carried along beside it.
 
-The President puts the Commission's political weight behind the grid shield.
+The President spends the Commission's political weight on the grid shield.
 
 What it does not do is add any capacity at all.
 

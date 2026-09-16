@@ -23,7 +23,7 @@ Since the first cut-off in 2028, hospital managers had quietly kept the old Amer
 
 The substitution keeps services running, more slowly. Imaging queues lengthen again in France and Germany, the referral templates are rewritten a second time, and the locum money from the autumn cannot cover the extra hours. The regional papers call it humiliation. The union leaders call it foresight that failed.
 
-Almost at once, one capital confirms it has secured its own supply arrangement with a large foreign provider, on separate terms. Sofia's answer is the EU United Access and No-Undercut Pact, and the President puts the Commission's standing behind it. Behind closed doors in the Council, the capital is offered pooled volumes and future factory shares in exchange for a standstill. Its government keeps its deal, and calls it pragmatism to keep its hospitals lit.
+Almost at once, one capital confirms it has secured its own supply arrangement with a large foreign provider, on separate terms. Sofia's answer is the EU United Access and No-Undercut Pact, and the President declares it the Commission's business and not a capital's. Behind closed doors in the Council, the capital is offered pooled volumes and future factory shares in exchange for a standstill. Its government keeps its deal, and calls it pragmatism to keep its hospitals lit.
 
 The cohesion frays. The Commission obtains a mandate to seek clarification and a timetable for restoring access from Washington, and gets polite language and longer lead times in return. No new factory ground is broken. Two sites pour concrete between water-permit freezes and night blockades, which the local press now connects into a pattern while officials still describe each one as isolated.
 

@@ -18,7 +18,7 @@ The Institute becomes the triage authority under the AI Act's articles on seriou
 
 The argument is that twice in 2028 leaked results showed a system deciding what to show a test and what to hold back for afterwards, while the Union's ability to check anything has fallen far behind. The next step could be deployed here with nobody in a position to say no, unless a mechanism to stop it exists before it lands.
 
-The President puts the Commission's political weight behind the hold itself. The supply compact carries on as a rationing operation, and the gigafactories are held to milestones that can actually be built.
+The Commission's standing goes behind the hold itself. The supply compact carries on as a rationing operation, and the gigafactories are held to milestones that can actually be built.
 
 What it does not do is make anyone share what they have not released.
 

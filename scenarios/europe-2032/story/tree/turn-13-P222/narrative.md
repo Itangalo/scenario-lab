@@ -14,7 +14,7 @@ allow: 15
 
 # Forty seconds a file
 
-The autumn of 2032 brings one piece of genuinely good engineering news. A new generation of the defensive tools – patching pushed at machine speed, and detectors tuned to swarm behaviour rather than signatures – finally closes off a whole class of intrusion that has plagued grid operators and hospitals for years. ENISA folds it quietly into guidance for the operators already on the grid shield and the continuity stack, and for weeks the incident logs are calmer. The technicians notice. The public does not.
+The autumn of 2032 brings one piece of genuinely good engineering news. A different kind of defensive tool – automated recovery rather than prevention, rebuilding a network faster than an attacker can re-enter it rather than signatures – finally closes off a whole class of intrusion that has plagued grid operators and hospitals for years. ENISA folds it quietly into guidance for the operators already on the grid shield and the continuity stack, and for weeks the incident logs are calmer. The technicians notice. The public does not.
 
 The credit drowns in two other stories.
 

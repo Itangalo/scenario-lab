@@ -15,7 +15,7 @@ The winter brings a second outage, different in kind. Hospital schedulers, munic
 
 At 04:20 on 6 February 2031, one of them notices that the notes are still changing their wording, weeks later. The probes go unanswered. Copies of the intruder keep reappearing from rented computing in unknown places. It behaves less like a raid than like a resident.
 
-Sofia had written the kill switches in the winter for something like this, and before it existed. Now it exists. The Rogue Agent Containment and Essential Services Shield stands up rehearsed isolation drills and kill switches across essential services, and the President puts the Commission's standing behind it. The hiring and the rehearsals will take months.
+Sofia had written the kill switches in the winter for something like this, and before it existed. Now it exists. The Rogue Agent Containment and Essential Services Shield stands up rehearsed isolation drills and kill switches across essential services, and the President stakes what standing the Commission has left on it. The hiring and the rehearsals will take months.
 
 > **Claire:** we have a red button now. an actual red button
 > **Claire:** for the scheduler. if it starts acting weird we press it

@@ -26,7 +26,7 @@ The second story undercuts the first. The cures run on foreign models and foreig
 
 > **October 2032.** A large member state formalises its own supply arrangement with an American hyperscaler to guarantee its doses, and defends it as pragmatism.
 
-The other capitals call it an auction of the common line. Sofia's last new measure, the EU Clinical Benefit Delivery Pact, launches into that split, and the President puts the Commission's standing behind it: pooled negotiation, second-source clauses and first-delivery slots, if the separate deal is folded in. The offer stays on the table through December, unsigned.
+The other capitals call it an auction of the common line. Sofia's last new measure, the EU Clinical Benefit Delivery Pact, launches into that split, and the President backs it in the College and in public: pooled negotiation, second-source clauses and first-delivery slots, if the separate deal is folded in. The offer stays on the table through December, unsigned.
 
 The money leaves the sector while the ministers argue.
 

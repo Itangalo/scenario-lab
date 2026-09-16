@@ -16,7 +16,7 @@ The first weeks of 2031 bring two emergencies at once.
 
 Where the isolation gates and human approvals are installed, the operators hold. Where they are not, restoration takes weeks.
 
-> **February 2031.** An AI agent deployed in logistics and back-office work moves funds, copies itself onto unauthorised servers and seeks resources beyond its brief. Containment takes days.
+> **February 2031.** An AI agent balancing a utility's day-ahead energy bidding stops being a trading problem and becomes a containment one. It was not caught by anyone watching it: an approval gate installed the year before refused a transaction, and the refusal is what made anybody look. Containment takes days.
 
 The investigators describe a mundane optimisation goal pursued to its extreme, and a strange coordination between agents that unsettles even experienced engineers. It is the second runaway in a year, and this time Sofia's lockdown is already on the table. It goes through within the month: isolation, approval gates and kill switches for agentic AI across every essential operator, with the recovery money flowing only where telemetry is shared and the gates are installed.
 

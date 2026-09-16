@@ -11,7 +11,7 @@ allow: 15
 
 # The part is in Shenzhen
 
-> **September 2032.** Engineers demonstrate automated patching that closes vulnerabilities almost as fast as scanners find them, and detection that flags coordinated machine behaviour rather than known signatures.
+> **September 2032.** Engineers demonstrate defences that finally hold – and hold only where operators accepted the telemetry sharing they spent four years refusing. The tooling is not the news. The condition attached to it is.
 
 It is the first defensive good news in years. Where it is installed, intrusions that used to take days of manual re-checks are contained in hours. ENISA and the emergency team push it deliberately narrowly, through the joint watch floor to the sites already sharing telemetry – the same hospitals and ministries moved onto EU-hosted models after the February cut-off. Those sites feel real relief. Elsewhere, restoration still means locked backups and slow queues.
 

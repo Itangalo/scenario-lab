@@ -12,7 +12,7 @@ next: turn-11-P121
 
 > **February 2031.** A newer generation of automated patching and swarm detection, built elsewhere and freely shared, is released to defenders.
 
-ENISA moves fast. Sofia's sprint pushes the new packages to national response teams, municipal utilities and hospitals, with orders to re-run last year's failed containment exercises, and the President puts the Commission's standing behind it.
+ENISA moves fast. Sofia's sprint pushes the new packages to national response teams, municipal utilities and hospitals, with orders to re-run last year's failed containment exercises, and the President names it the priority, and pays for saying so.
 
 In the certified hospitals it works. In two dozen uncertified water and power utilities, the tools catch probing swarms that the signatures had missed, and the engineers speak of the first defensive win in years. Elsewhere the rollout stalls. Old control systems cannot take the patcher, tenders slip, and a French association of municipalities publicly blames Brussels for mandating software without funding it.
 

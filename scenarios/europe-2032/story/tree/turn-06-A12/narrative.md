@@ -29,7 +29,7 @@ The Commission does not try to ban what ports and warehouses are already buying.
 >
 > **Claire:** i know. my back still hurts
 
-This spring the President puts the Commission's political weight behind the Trust Pact, the programme that pays for staff in small clinics and utilities. Wage bridges reach utility crews and care assistants in several regions, and mayors post videos of shorter hospital queues. Where the crews arrive, the boil-water notices end. In the smaller municipalities of the east and south, where they have not, the Pact is little more than posters, and anger grows as foreign robots take over warehouse shifts.
+This spring the President spends the Commission's remaining credit on the Trust Pact, the programme that pays for staff in small clinics and utilities. Wage bridges reach utility crews and care assistants in several regions, and mayors post videos of shorter hospital queues. Where the crews arrive, the boil-water notices end. In the smaller municipalities of the east and south, where they have not, the Pact is little more than posters, and anger grows as foreign robots take over warehouse shifts.
 
 > **June 2029.** The tech sovereignty package closes, its permits and grid reservations now law. The bio-monitoring network, stockpiles and rationing rules are declared operational.
 

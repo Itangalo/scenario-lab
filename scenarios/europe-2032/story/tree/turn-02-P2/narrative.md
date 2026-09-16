@@ -10,7 +10,7 @@ next: turn-03-P2
 
 # Grids first
 
-The spring belongs to the grid operators. After the autumn's discovery of intruders who had lived inside the networks for weeks, Sofia's first new measure is not the Institute she recommended – that is still hiring – but the EU Grid Shield Hardening Programme, and the President puts the Commission's standing behind it. ENISA pushes emergency segmentation standards through, and the two transmission operators that were hit, along with their peers in the five states hosting the planned gigafactories, are ordered to install network monitoring and pool the telemetry from their breaker logs.
+The spring belongs to the grid operators. After the autumn's discovery of intruders who had lived inside the networks for weeks, Sofia's first new measure is not the Institute she recommended – that is still hiring – but the EU Grid Shield Hardening Programme, and the President makes it the Commission's priority for the half-year. ENISA pushes emergency segmentation standards through, and the two transmission operators that were hit, along with their peers in the five states hosting the planned gigafactories, are ordered to install network monitoring and pool the telemetry from their breaker logs.
 
 > **March 2027.** Energy ministers endorse the mandate.
 

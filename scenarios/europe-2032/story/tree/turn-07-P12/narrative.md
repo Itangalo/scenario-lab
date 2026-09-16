@@ -12,7 +12,7 @@ next: turn-08-P12
 
 > **September 2029.** Laboratories release automated patching that keeps pace with newly found flaws, and detectors that flag how malicious agents behave rather than what they look like. In trials across hospitals and grid operators, it works.
 
-The breakthrough arrives as code, not as a paper. Sofia's note becomes the EU Swarm-Defence Rollout, and the President puts the Commission's standing behind it. ENISA pushes the new tooling as a certified update through the existing Shield certificates, and where local teams are too tired to install it, national response teams do it for them.
+The breakthrough arrives as code, not as a paper. Sofia's note becomes the EU Swarm-Defence Rollout, and the President stakes what standing the Commission has left on it. ENISA pushes the new tooling as a certified update through the existing Shield certificates, and where local teams are too tired to install it, national response teams do it for them.
 
 > **Claire:** a national team installed the new detector overnight
 > **Claire:** i came in and everything was quieter. like the building exhaled

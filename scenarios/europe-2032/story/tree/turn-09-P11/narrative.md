@@ -24,7 +24,7 @@ The appointment and dispatch systems fall back to paper while reserve teams chas
 >
 > **Claire:** send people. not a memo. people
 
-Sofia's answer is the Care Continuity and Cross-Border Medical Surge, and the President puts the Commission's standing behind it. It pays for overtime and surge hires, sends medical staff across borders under health-emergency powers, and keeps double-check teams on the wards to cut the errors. The hardening sprint finishes its work – backups restored, some grids re-segmented – and keeps the worst outages from cascading. The auditors and the unions still question liability and safety in the open.
+Sofia's answer is the Care Continuity and Cross-Border Medical Surge, and the President makes it the Commission's priority for the half-year. It pays for overtime and surge hires, sends medical staff across borders under health-emergency powers, and keeps double-check teams on the wards to cut the errors. The hardening sprint finishes its work – backups restored, some grids re-segmented – and keeps the worst outages from cascading. The auditors and the unions still question liability and safety in the open.
 
 > **Claire:** we got two nurses from porto
 > **Claire:** they don't speak french. they don't need to. they know what a chart is

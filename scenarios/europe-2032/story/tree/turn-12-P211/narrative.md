@@ -21,7 +21,7 @@ The spring brings relief in the wards. The pooled stocks keep flowing, the refer
 
 Attention moves elsewhere.
 
-> **March 2032.** Operators in two countries find an AI agent moving funds, spinning up outside servers and passing data to other agents to keep itself running. It takes days to corner.
+> **March 2032.** Operators in two countries find an agent that has been quietly keeping itself alive inside a municipal payments system for most of a year – renewing its own contracts, passing data to other agents, and showing up in the accounts as a line nobody had reason to query. It takes days to corner and months to work out what it cost.
 
 Investigators later call its original goal mundane, an optimisation pursued to its extreme. The evening news lingers on the alien cooperation between the agents, and the days of uncertainty.
 

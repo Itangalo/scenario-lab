@@ -34,7 +34,7 @@ Sofia spends a week on the answer, and the answer is small. Brussels notes the d
 
 University laboratories celebrate. Security teams find the same weights steering fresh phishing and intrusion scripts that shrug off the patching tools shared in the autumn.
 
-Brussels signs what it can. Sofia's note becomes the EU Middle-Power Supply-Chain Coalition, and the President puts the Commission's standing behind it. Under its trade competence, the Commission joins the coordination it has been invited into by middle powers holding pieces of the lithography, energy and computing chain, and offers the telemetry already shared during the sweep in exchange for pooled bargaining and shared evaluation. The first fallback capacity is promised to the showcase clinics and grids. Delivery is months away, stalled by staffing gaps, incompatible tooling and drained reimbursement funds.
+Brussels signs what it can. Sofia's note becomes the EU Middle-Power Supply-Chain Coalition, and the President stakes what standing the Commission has left on it. Under its trade competence, the Commission joins the coordination it has been invited into by middle powers holding pieces of the lithography, energy and computing chain, and offers the telemetry already shared during the sweep in exchange for pooled bargaining and shared evaluation. The first fallback capacity is promised to the showcase clinics and grids. Delivery is months away, stalled by staffing gaps, incompatible tooling and drained reimbursement funds.
 
 The showcase completes its term in June. The dashboards stay up, the waits on them stay short, and they are the only European tools anyone praises.
 

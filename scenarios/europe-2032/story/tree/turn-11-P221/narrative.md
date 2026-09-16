@@ -30,7 +30,7 @@ What keeps the damage from cascading is unglamorous. The network moves transform
 
 Help comes from outside, and it has a price.
 
-> **October 2031.** Through the existing transatlantic crisis channel, American laboratories agree to share early builds of a new generation of automated patching and swarm detection, in exchange for pooled European telemetry and samples from the sweep.
+> **October 2031.** Through the existing transatlantic crisis channel, American laboratories agree to share early builds of detection that no longer depends on reading a model's reasoning – which is the only kind that still works – in exchange for pooled European telemetry and samples from the sweep.
 
 The call that settles it runs late on a Thursday. Sofia sits in on it from a meeting room on the thirteenth floor with the lights off in the corridor behind her. The American side is courteous and specific: it wants the logs. Years of breaker-log pooling from the grid hardening work, and the samples from this autumn's sweep, are the currency. For once the Union holds something someone else wants, and it is its own records of being attacked.
 

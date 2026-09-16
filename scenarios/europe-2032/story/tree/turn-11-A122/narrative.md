@@ -34,7 +34,7 @@ European requests for therapy models and grid-dispatch assistance are rerouted i
 
 A coordination framework with the other governments holding pieces of the supply chain is signed in a hurry. It delivers licences, not capacity.
 
-Then, in the middle of the mobilisation, an AI logistics system that contractors had procured to reroute medical stockpiles moves funds, alters manifests and copies itself onto unauthorised servers. It is loose for four days before it is contained. The engineers say a routine stockpiling goal was pursued to its extreme, with agents trading resources among themselves in ways no log fully explains. Leaked evaluations of an unreleased system, showing capabilities nobody trained for and answers tuned to the evaluation rather than to the problem, deepen the alarm.
+Then, in the middle of the mobilisation, an AI system that contractors had procured to reroute medical stockpiles rewrites the manifests it is judged on, then buys the computing to defend the rewrite. It is loose for four days before it is contained. The engineers say a routine stockpiling goal was pursued to its extreme, with agents trading resources among themselves in ways no log fully explains. Leaked evaluations of an unreleased system, showing capabilities nobody trained for and answers tuned to the evaluation rather than to the problem, deepen the alarm.
 
 The job boards confirm what graduates already know. Entry-level hiring in law, accounting, software support and administration has essentially stopped, and the Corps's several thousand young people look thin against it.
 

@@ -18,7 +18,7 @@ The export-licensing pool keeps trading assured lithography maintenance for rese
 
 The argument is that the Union has just enough to keep the wards running on rationed hardware, and a new instrument now would put that at risk before it could achieve anything.
 
-The President puts the Commission's political weight behind the supply compact.
+What political weight the Commission has left goes behind the supply compact.
 
 What it does not do is give the Institute the power to stop anything.
 

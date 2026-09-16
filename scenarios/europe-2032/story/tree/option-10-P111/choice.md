@@ -19,7 +19,7 @@ It acts under the treaty's public-health and solidarity articles. The health eme
 
 The argument is that the early-warning pilots will see a release before anyone can stop it, and that when they do, the Union will need walls and people, not software. The wards have been on paper for two years. They know how.
 
-The President puts the Commission's political weight behind the cordons.
+The Commission's political weight goes behind the cordons.
 
 What it does not do is surge treatment beyond what the stockpiles already hold.
 

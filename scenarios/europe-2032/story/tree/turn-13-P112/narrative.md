@@ -30,7 +30,7 @@ Outpatient mornings close, transfer corridors run on emergency staffing orders, 
 >
 > **Sofia:** I'm not trying.
 
-Sofia's answer is the Care Workforce Emergency Retention Pact, and the President puts the Commission's standing behind it: back-paid overtime, time-limited bonuses in the hardest-hit states, and a cross-border pool coordinated through the labour authority to plug the gaps. The health ministers frame it as holding the line so the sovereign clinical channel can survive.
+Sofia's answer is the Care Workforce Emergency Retention Pact, and the President names it the priority, and pays for saying so: back-paid overtime, time-limited bonuses in the hardest-hit states, and a cross-border pool coordinated through the labour authority to plug the gaps. The health ministers frame it as holding the line so the sovereign clinical channel can survive.
 
 The money moves more slowly than the pickets. The bonuses land unevenly, the pool fills only a fraction of the shifts, and the unions call the guarantees a pay cut dressed up as solidarity. A handful of hospitals keep delivering tailored therapies on ring-fenced European computing, the sovereign medical channel completes its term, and most waiting lists lengthen again as staff leave and the stand-in models remain slower than the foreign system that was cut off.
 

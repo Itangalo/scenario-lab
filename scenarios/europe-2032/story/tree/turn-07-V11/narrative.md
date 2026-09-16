@@ -20,7 +20,7 @@ The repair bays next door stay stubbornly human, and that line hardens. The unio
 
 The biosecurity researchers argue over the methods. The health ministries read it as a warning shot.
 
-Sofia's answer is the Bio-Uplift Containment Shield, pushed through existing health-security powers, and the President puts the Commission's standing behind it. Auditors from the health emergency authority and the disease control centre begin checking the screening at synthesis vendors, sequencing telemetry is tied harder to the continuity reinsurance, and countermeasure stocks are topped up from health funds. The vendors in the core comply. The ones at the edges evade.
+Sofia's answer is the Bio-Uplift Containment Shield, pushed through existing health-security powers, and the President names it the priority, and pays for saying so. Auditors from the health emergency authority and the disease control centre begin checking the screening at synthesis vendors, sequencing telemetry is tied harder to the continuity reinsurance, and countermeasure stocks are topped up from health funds. The vendors in the core comply. The ones at the edges evade.
 
 > **Claire:** we got a letter saying our lab has to log every synthesis order now
 > **Claire:** we don't make synthesis orders. we got the letter anyway

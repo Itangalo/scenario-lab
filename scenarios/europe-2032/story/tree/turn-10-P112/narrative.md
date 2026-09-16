@@ -15,7 +15,7 @@ At 04:15 on 21 February 2031, a sequencing laboratory in the early-warning netwo
 
 Quarantine lines, isolation wards and the distribution of countermeasures run for weeks through the EU health agencies. Cross-border transfers pull the most severe cases off paper wards that are already overflowing.
 
-Sofia's treatment surge, adopted in the winter, lands in the middle of the crisis, and the President puts the Commission's standing behind it. Overtime funds, double-check teams and repurposed channels for moving patients keep the hospitals open, and joint procurement fills some gaps in the stocks. But staff exhausted by a year of manual fallback now face protective protocols on top of their backlogs. Errors fall in the biocontainment units. Everywhere else, appointments slip further, and walkouts spread.
+Sofia's treatment surge, adopted in the winter, lands in the middle of the crisis, and the President takes it to the College and carries it. Overtime funds, double-check teams and repurposed channels for moving patients keep the hospitals open, and joint procurement fills some gaps in the stocks. But staff exhausted by a year of manual fallback now face protective protocols on top of their backlogs. Errors fall in the biocontainment units. Everywhere else, appointments slip further, and walkouts spread.
 
 > **Claire:** we're a transfer hospital now. patients come in by ambulance from two countries
 > **Claire:** full suits for eight hours. then the backlog. then home

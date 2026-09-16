@@ -26,7 +26,7 @@ The pooled cyber defence holds. The President keeps the Commission's standing on
 
 The harder shock comes from the docks.
 
-> **November 2031.** Cheap sorting, palletising and welding machines arrive in volume from abroad, with American control software and mostly Chinese hardware.
+> **November 2031.** The machines move out of the sheds. Cheap units arrive in volume from abroad for street cleaning, refuse collection and groundworks, which is the first time most people see one without visiting a warehouse.
 
 The logistics firms order them. Repair shops, care providers and builders find them useless wherever the plan turns out to be wrong. Army staffs note the same split: useful for resupply and perimeter work, not for decisions about targets.
 
