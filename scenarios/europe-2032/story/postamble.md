@@ -1,21 +1,13 @@
-# This is a simulation, not a forecast
+# What the choices could reach
 
-This story is not a forecast. It is one possible path through the future, selected from a larger set of simulations.
+You have just spent six years deciding European AI policy, and none of it changed how AI developed.
 
-There is no grand ending, either. December 2032 is simply where this particular simulation stops.
+That is not a quirk of the path you happened to take. Three trajectories were possible – acceleration towards something like general intelligence, a narrower superhuman competence in the domains where a machine can check its own answers, and a plateau – and which one you were in was settled by chance before the first page, and never announced. Every choice you made was answered by a world already moving in a direction you had no part in setting.
 
-The simulations were generated with [Scenario Lab](https://github.com/Itangalo/scenario-lab), an experimental tool for running LLM-powered scenario games. LLMs play the actors in the world – governments, institutions, companies and other decision-makers – while another model acts as a referee, deciding what happens next.
+This is the Union's actual position rather than a limitation of the game. Europe holds about five per cent of the world's AI computing power. The laboratories that decide what the frontier does are somewhere else, and the AI Act's leverage rests on access to the European market – worth less with each year that the alternative to complying becomes having no access at all. A directive can require an evaluation. It cannot make the thing being evaluated arrive later, or arrive differently, or arrive at all.
 
-The world itself is described through a combination of plain-text assumptions and more structured rules. Some developments are narrative. Others are constrained by variables that evolve over time and interact with one another: political capital can be spent, programmes take time to build, resources can run short, and earlier decisions shape what is possible later.
+What the choices did reach was everything else. Whether a hospital had somewhere to go when its supplier stopped answering. Whether the grid operators had rehearsed before they needed to. Whether the Union could still act after years of paying for things that did not visibly work, and whether the public would tolerate one more measure after the last one failed to keep the lights on. None of that was decided abroad. All of it decided what the shocks cost when they came, and on every path they came.
 
-For each decision point in Europe 2032, multiple simulations were run from the same starting conditions. They often diverged. Some events appeared repeatedly; others only occasionally. The choices that looked good in one world could perform badly in another.
+It is worth being plain about that distinction, because a great deal of European AI policy is discussed as though it steers the technology. Mostly it does not. It steers how much damage the technology does on the way past, and who is standing when it has gone by. That is a smaller claim than the one usually made, and a more defensible one, and it was the part that was always available.
 
-That is the point.
-
-Running many simulations does not tell us what will happen, or attach reliable probabilities to particular futures. LLMs have biases, the rules encode assumptions, and plausible stories can still be wrong. But simulations can help explore questions that are otherwise difficult to reason about: Which outcomes keep recurring? Which assumptions matter most? Which decisions work across several very different futures? Where do apparently sensible policies create problems years later?
-
-Scenario Lab is an attempt to make that kind of exploration cheap and fast enough to do repeatedly. Instead of writing a handful of scenarios by hand, we can generate many paths through the same uncertain world, inspect where they differ, and use those differences to ask better questions.
-
-The world is changing quickly, and decisions still have to be made before we know which future we are entering. LLM-powered simulation is not a way around that uncertainty.
-
-It may be one way to think more systematically inside it.
+Whether it is enough is the question the story leaves you with. It is not obvious that it is.

@@ -876,6 +876,7 @@ const NODES = __DATA__;
 const START = __START__;
 const PREAMBLE = __PREAMBLE__;
 const POSTAMBLE = __POSTAMBLE__;
+const ABOUT = __ABOUT__;
 const LAST_TURN = 13;
 const TIPS = __TIPS__;
 const BANDS = ["very low", "low", "moderate", "high", "very high"];
@@ -1016,8 +1017,11 @@ function simHTML(entry) {
 }
 
 function aboutHTML() {
-  const m = POSTAMBLE.match(/<h2>(.*?)<\/h2>/);
-  return { title: m ? m[1] : "About the simulation", body: POSTAMBLE.replace(/<h2>.*?<\/h2>/, "") };
+  // The closing note and this panel are different pieces of writing: the
+  // postamble ends the story, about.md explains how the story was made.
+  const src = ABOUT || POSTAMBLE;
+  const m = src.match(/<h2>(.*?)<\/h2>/);
+  return { title: m ? m[1] : "About the simulation", body: src.replace(/<h2>.*?<\/h2>/, "") };
 }
 
 function compareHTML(entry) {
@@ -1495,6 +1499,9 @@ def main() -> int:
     postamble_path = story_dir / "postamble.md"
     postamble = markdown(postamble_path.read_text(encoding="utf-8")) \
         if postamble_path.is_file() else ""
+    about_path = story_dir / "about.md"
+    about = markdown(about_path.read_text(encoding="utf-8")) \
+        if about_path.is_file() else ""
     alt_tabs, alt_views = alt_panels(story_dir / "experiments")
     payload = build_payload(nodes, args.scenario)
     start = opaque("turn-01")
@@ -1505,6 +1512,7 @@ def main() -> int:
     body = body.replace("__START__", json.dumps(start))
     body = body.replace("__PREAMBLE__", json.dumps(preamble))
     body = body.replace("__POSTAMBLE__", json.dumps(postamble))
+    body = body.replace("__ABOUT__", json.dumps(about))
     body = body.replace("__TIPS__", json.dumps(tips, ensure_ascii=False))
     body = body.replace("__TABS__", alt_tabs, 1)
     body = body.replace("__ALTPANELS__", alt_views, 1)
