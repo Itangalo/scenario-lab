@@ -10,7 +10,7 @@ next: turn-13-V212
 
 # Paychecks as policy
 
-> **February 2032.** A ransomware sweep starts in municipal IT helpdesks and spreads. Hospital admissions systems, town-hall registries and regional dispatch queues go dark for days.
+> **February 2032.** The sixth of these in five years, and the first with nobody on the other end of it. The campaign starts in municipal IT helpdesks and rewrites itself as it goes; the notes are generated, the negotiation is automated, and the forensic teams find no operator to attribute anything to. Hospital admissions, town-hall registries and regional dispatch queues go dark for days.
 
 The tooling is new, rewritten automatically for each target, and fast enough to outrun the signatures. ENISA teams move into the hospitals with the printed playbooks left over from earlier hardening, and restore from offline copies. Care continues, slowly, and the queues lengthen outside clinics already short of staff. Attribution stalls. The ministers refuse to name a culprit, and the press fills the gap with speculation about foreign laboratories and freely downloadable models.
 

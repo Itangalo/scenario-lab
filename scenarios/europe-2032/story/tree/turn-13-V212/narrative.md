@@ -21,7 +21,7 @@ Hospital triage assistants, ministry drafting tools and logistics planners fail 
 
 Weeks later a second blow lands.
 
-> **September 2032.** A self-mutating extortion campaign sweeps municipal networks again, faster than the spring version, locking registries, billing and dispatch consoles.
+> **September 2032.** A self-mutating extortion campaign sweeps municipal networks again, faster than the spring version, locking registries, billing and dispatch consoles. Nobody claims it, and nobody expects anyone to. The evening bulletins give it the space they give a storm.
 
 ENISA's buses roll out with the same printed playbooks. Care does not stop, but the queues stretch around the clinics, and emergency calls wait on paper logs.
 

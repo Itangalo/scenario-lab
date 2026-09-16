@@ -10,7 +10,7 @@ next: turn-12-V211
 
 # A single triage queue
 
-> **July 2031.** A largely automated ransomware wave, built with machine-generated intrusion tooling, rolls across municipal appointment systems and port clearance software through a compromised dependency shared by mid-size contractors.
+> **July 2031.** A ransomware wave rolls across municipal appointment systems and port clearance software through a compromised dependency shared by mid-size contractors. What unsettles the investigators is not the tooling, which is machine-written as everything now is. It is that the campaign retargets itself between victims, and that the negotiation messages answer faster than a person could read them.
 
 The screens jam days after the crews have cleaned them. Attribution is nowhere, and repair is everything.
 

@@ -10,7 +10,7 @@ next: turn-13-V112
 
 # Checked continuity
 
-> **February 2032.** A ransomware sweep rides automatically generated lures and a poisoned update to a facilities-management package used by hospitals, city utilities and a port operator. In three cities, heating controls and appointment systems go down together.
+> **February 2032.** A ransomware sweep rides automatically generated lures and a poisoned update to a facilities-management package used by hospitals, city utilities and a port operator. In three cities, heating controls and appointment systems go down together – and in two of them for the second time, on networks certified clean in the autumn.
 
 The sweep does not need to be clever. Screens freeze even in the wards already running on the degraded European-hosted stack. Because the essential registries have been forced onto open models hosted on the Union's supercomputers, the damage stops short of a full stop. Cutover teams led by ENISA isolate segments, restore from clean images and keep triage summaries running in text-only mode. The evening bulletins still count cancelled operations and leaked municipal files, and the defenders still look a step behind tooling that is plainly machine-made.
 

@@ -13,7 +13,7 @@ allow: 15
 
 The autumn brings two Europes into the same news bulletin.
 
-> **September 2032.** Another largely automated ransomware sweep, riding a trusted administrative update, takes down systems in several municipalities and two hospital groups. Records vanish, appointments collapse to paper, ambulances are diverted.
+> **September 2032.** Another largely automated sweep, riding a trusted administrative update, takes down systems in several municipalities and two hospital groups. Records vanish, appointments collapse to paper, ambulances are diverted. The cleaning no longer holds: two of the hospital groups were rebuilt and signed off in the spring.
 
 The recovery teams cut networks and pull locked backups off the shelves, and where the rehearsals held, the booking desks are back within days. Elsewhere, staff rebuild registries by hand for weeks. The investigators agree the tooling was written by a model. Nobody can name who ran it.
 
