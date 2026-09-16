@@ -61,7 +61,9 @@ Practical order for the rewrite session: fix the catalogue first, then take the 
 
 ## Repeated events read as repetition within a branch (ECHO 2026-09-16)
 
-Status: scanned, passages not yet read. The scan below says where to look; whether it actually reads as repetition is a judgement that needs the prose.
+Status: **adjacent recurrences done 2026-09-16**, on branch `story-fixes-20260916`. All 51 distinct adjacent-half-year recurrences were read; twelve nodes were rewritten and the rest were left because they already named the recurrence. **Still open: the non-adjacent repeats** – events firing three or more times on a path with turns in between, where the reader feels the circling without being able to point at it. That is the larger half and is untouched.
+
+Which nodes were rewritten, and the pattern each one now follows, is in the commit messages for the two passes. The useful general finding: `eval_anomaly_reports` and `export_control_escalation` were the worst offenders not because they fire often but because their catalogue descriptions offer a menu of concrete forms and every node had picked the same item off it. Rotating the menu fixes most of the problem, and the menu is already written – see `../events.md` for what each event licenses before inventing a new variation.
 
 **What is wrong.** Events can repeat, and most of the catalogue's events do. Where the same event fires several times on one reader's path, the danger is that it is described the same way each time – the same cyber attack, the same evaluation finding, the same export-control tightening – so that a reader who is following one branch start to end feels the story circling rather than moving. The event catalogue gives one description per event, and both the runs and the prose drew on it every time it fired.
 
