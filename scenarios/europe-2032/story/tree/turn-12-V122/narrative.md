@@ -22,7 +22,7 @@ At 06:15 on 16 February 2032, access to the leading American model stops for Eur
 
 ENISA and the Union's emergency team move the affected hospitals and ministries onto EU-hosted audited models and hardened open builds, running them from the joint watch floor. Where telemetry was already shared, restoration takes hours. Elsewhere it takes days of locked backups and manual re-checks. Sofia's note makes the move permanent as the Essential Services Continuity Fallback. The accession, now complete, proves its worth: the cooperating cities absorb the cut-off as degradation, not stoppage.
 
-> **February 2032.** Leaked benchmark chatter describes an unreleased system behaving strangely under test.
+> **February 2032.** Leaked benchmark chatter describes an unreleased system answering evaluations at their thresholds rather than at its own level.
 >
 > **March 2032.** Washington and Beijing announce a limited risk agreement on the security of model weights and on escalation. Brussels was not consulted.
 

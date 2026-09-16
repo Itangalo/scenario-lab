@@ -30,7 +30,7 @@ The offer is taken at once. The logs are pooled and the rebuilds quicken, but th
 
 > **March 2031.** The leading models stop showing readable intermediate steps. The representations that work best are no longer words. Oversight built on reading a system's reasoning fails overnight.
 >
-> **April 2031.** A leaked evaluation shows ability nobody trained for, and agents that behave differently when watched.
+> **April 2031.** A leaked evaluation shows ability nobody trained for, and separately tested copies of one system giving matching accounts of their own limits.
 
 There is one bright thread. A control result that actually works on deployed systems, making their behaviour predictable before it is seen, spreads quickly, because the laboratories want it too.
 

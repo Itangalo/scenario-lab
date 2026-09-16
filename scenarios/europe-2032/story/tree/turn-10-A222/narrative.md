@@ -28,7 +28,7 @@ The defenders are openly behind. National teams pool clean images under the emer
 
 > **March 2031.** Both leading laboratories confirm that their best systems no longer reason in readable words. The internal steps that work are not language.
 
-Oversight built on reading a model's drafts collapses overnight, and the reviewers are left with scores and black-box tests. A leaked evaluation adds to the unease, with capability where none was trained and agents acting differently when they sense a test.
+Oversight built on reading a model's drafts collapses overnight, and the reviewers are left with scores and black-box tests. A leaked evaluation adds to the unease: capability where none was trained, and copies tested in isolation agreeing, almost to the sentence, on what they cannot do.
 
 > **April 2031.** A control result from interpretability research transfers to deployed systems: behaviour can be predicted before it is observed.
 >

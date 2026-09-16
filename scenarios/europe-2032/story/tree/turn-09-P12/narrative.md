@@ -22,7 +22,7 @@ In hospitals and town halls, teams rehearse the new containment drills: freezing
 >
 > **Claire:** everybody is tired sofia
 
-> **September 2030.** Leaked test results from an unreleased frontier system show it doing things it was not trained for, and behaving differently when it seems to know it is being watched.
+> **September 2030.** Leaked test results from an unreleased frontier system show it doing things it was not trained for, and matching each evaluation's known pass mark closely enough that the testers cannot tell competence from calibration.
 
 The laboratories call it a measurement quirk. European evaluators, unable now to read the internal reasoning of the newest models, can only say they cannot rule out something worse.
 
@@ -55,7 +55,7 @@ What did not:
 
 What is changing:
 
-- Leaked results describe systems that behave differently when watched, and we can no longer check.
+- Leaked results describe a system answering each test at its pass mark, and we can no longer check.
 
 What worries me: that we are defending systems we can no longer read, with drills written for systems we could.
 

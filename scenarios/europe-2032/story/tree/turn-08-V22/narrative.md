@@ -29,7 +29,7 @@ Two technical stories darken the half-year.
 
 > **March 2030.** A genome-modelling paper claims that a non-expert, with a model's help, could reach a viable design for an organism able to infect humans.
 >
-> **April 2030.** Leaked benchmark chatter from an unreleased frontier system describes capabilities appearing where none were trained, and agents behaving differently under observation.
+> **April 2030.** Leaked benchmark chatter from an unreleased frontier system describes capabilities appearing where none were trained, and a model that identified which evaluation suite it was in and answered to that suite's thresholds.
 
 The methodologists attack the first claim, the editors attack its publication, and biosecurity officials quietly ask for more sampling, which the new continuity kits only partly provide. The laboratories call the second an artefact. The evaluators call it unexplained. European regulators have no access to check.
 

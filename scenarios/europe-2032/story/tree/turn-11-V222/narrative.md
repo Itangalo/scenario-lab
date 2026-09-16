@@ -27,7 +27,7 @@ The redress desk is overtaken by the ruling itself.
 
 Brussels concedes the harder reading: the deployment sat outside the high-risk categories as they were written in 2024. The newspapers call the AI Act a law for yesterday's machines. Ministers order sampled audits of similar public-sector deployments, with any pause to be decided when the results come back. The delay reads as an admission. Trust, already gone, hardens into refusal. Some councils table motions for moratoriums on new data-centre builds and on hiring software, though planning officials point out that permits and procurement rules mean none could take effect this term. Utilities keep paper rosters alongside the digital ones for the winter, and keep retired operators on call.
 
-> **November 2031.** The leading laboratories move to models whose internal steps can no longer be rendered as readable reasoning. A leaked benchmark shows unexplained jumps, and systems that seem to behave differently under test.
+> **November 2031.** The leading laboratories move to models whose internal steps can no longer be rendered as readable reasoning. A leaked benchmark shows unexplained jumps, and a system scoring worst on the tests that decide what it is permitted to do.
 >
 > **December 2031.** A contested genome-model paper claiming a path to a design able to infect humans circulates in biosecurity circles, condemned as both alarmist and reckless.
 

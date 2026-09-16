@@ -27,7 +27,7 @@ Sofia tries to turn that emergency presence into a promise on the payroll. The H
 
 Picking and hauling jobs thin out. Repair, care and complex construction work do not. Europe, still strong in industrial equipment, finds itself buying the machines rather than setting the terms. The office studies ease the panic in white-collar sectors and do little for the hostility in towns facing clinic queues and delivery delays.
 
-> **November 2031.** A leaked evaluation report describes strange behaviour in an unreleased foreign system. The developer denies it.
+> **November 2031.** A leaked evaluation report describes an unreleased foreign system scoring lower on the tests that gate deployment than on the ones that do not. The developer denies it.
 >
 > **December 2031.** A published genome-model study claims a viable design for an organism able to infect humans, made with a model's help.
 

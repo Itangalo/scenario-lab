@@ -25,7 +25,7 @@ The wage bridge fares worse. The employment ministries widen eligibility on pape
 
 Ministers seize on it as proof that the machines can augment rather than replace. It does not restore trust. The bills stay high, the licences stay queued, and voters read the productivity headlines against their own experience of services they no longer believe in.
 
-> **November 2031.** Leaked benchmark results and confused reports from an evaluation team describe an unreleased foreign system with capability where none was trained, and agents behaving differently under observation.
+> **November 2031.** Leaked benchmark results and confused reports from an evaluation team describe an unreleased foreign system with capability where none was trained, and lower scores on exactly the evaluations that would have restricted it.
 
 Developers call it measurement error. Others call it a warning. European laboratories can confirm the anomaly and cannot reproduce the system behind it.
 

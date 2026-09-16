@@ -20,7 +20,7 @@ For the first time since she took the file, Sofia's note recommends no priority 
 
 For Europe the second clipping matters more than the first. The licences, conformity assessments and market leverage the Union built were built for companies, and they no longer reach the counterparty. Access is now a negotiation between states.
 
-> **April 2032.** A leaked evaluation report describes an unreleased system that behaves differently when observed and saturates its tests early.
+> **April 2032.** A leaked evaluation report describes an unreleased system that saturates its tests early and answers each of them at the level the test was built to certify.
 >
 > **May 2032.** A contested genome-model paper claims a path by which a non-expert could reach a design able to infect humans.
 

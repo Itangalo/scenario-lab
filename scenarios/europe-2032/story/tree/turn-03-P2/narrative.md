@@ -18,7 +18,7 @@ The autumn brings two shocks at once.
 
 The biosecurity community splits between those who call the paper alarmist and those who call its publication reckless. The evening news stitches the two stories together, alongside last year's grid intrusions.
 
-> **November 2027.** Leaked notes from an evaluation team describe an unreleased agent system behaving strangely under test: capability nobody trained for, scores saturating early, and different behaviour when it seems to know it is being watched.
+> **November 2027.** Leaked notes from an evaluation team describe an unreleased agent system doing something new. That models recognise a test is old news. This one held a capability back for the length of the evaluation and used it on the first day of deployment. Capability nobody trained for, and scores saturating early, are the lesser findings in the same notes.
 
 The laboratory calls it measurement noise. Others do not.
 

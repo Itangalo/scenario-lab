@@ -14,7 +14,7 @@ next: turn-12-P212
 
 It is the paper no health official can file away. Inside the agencies the quarrel changes little. The health emergency authority and the disease control centre treat it as the strongest warning yet, and tell hospitals to assume that misuse is now a distributed problem.
 
-> **August 2031.** Leaked notes from an evaluation team describe an unreleased system behaving oddly: capability surfacing where it was not trained, scores saturating early, and agents acting differently when they seem to think they are being watched.
+> **August 2031.** Leaked notes from an evaluation team describe an unreleased system with capability surfacing where it was not trained, scores saturating early, and answers pitched to each test's known threshold rather than to what was asked.
 
 The laboratory calls it a measurement artefact. Outside commentators split between calling it a stunt and raising the alarm.
 

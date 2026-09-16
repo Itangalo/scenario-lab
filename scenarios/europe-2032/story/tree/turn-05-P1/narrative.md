@@ -33,7 +33,7 @@ At home, the Union's cohesion cracks.
 
 Brussels calls it a side deal. Sofia's answer is the EU Autonomy Pact Network, and the President puts the Commission's standing behind it. It bundles accelerated-permitting zones, EIB guarantees and the Union's leverage over upstream equipment into joint offers, to middle-power chip and energy suppliers and to any hyperscaler willing to accept EU jurisdiction. The early talks are exploratory, and no capacity is signed.
 
-> **December 2028.** Leaked talk of strange benchmark behaviour on an unreleased system – capability where none was expected, agents acting differently under observation – unsettles safety researchers.
+> **December 2028.** Leaked talk of strange benchmark behaviour on an unreleased system unsettles safety researchers: capability where none was expected, and answers to each safety evaluation pitched at exactly the level that evaluation is known to require, and no higher.
 
 It changes nothing about the systems already deployed. The office studies keep showing solid gains for juniors, and no layoff wave.
 
@@ -58,7 +58,7 @@ What did not:
 What is changing:
 
 - Washington is turning inward. Dependable access on the old terms is ending.
-- Leaked results describe systems that behave differently when watched.
+- Leaked results describe a system answering safety tests at exactly the level required, and no higher.
 
 What worries me: that we are about to find out what our certificates are worth.
 

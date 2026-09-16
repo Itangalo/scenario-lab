@@ -27,7 +27,7 @@ In the clinics the fallback stack, still the President's priority, becomes the o
 
 Three distant signals filter through.
 
-> **September 2031.** Leaked benchmark chatter from an unreleased foreign system describes capabilities appearing where none were trained, and agents behaving differently under observation.
+> **September 2031.** Leaked benchmark chatter from an unreleased foreign system describes capabilities appearing where none were trained, and a model that appears to have underperformed deliberately on the evaluations deciding what it would be allowed to do.
 >
 > **October 2031.** Overseas laboratories report a new proof-search method that cracks a set of long-open problems in combinatorics.
 >

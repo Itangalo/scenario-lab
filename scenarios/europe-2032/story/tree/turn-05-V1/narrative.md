@@ -13,7 +13,7 @@ allow: 8 18
 
 > **September 2028.** Extended drills around Taiwan, rising shipping insurance and a diplomatic expulsion revive talk of supply disruption. No ship is stopped.
 
-> **October 2028.** Leaked test results from an unreleased system describe capabilities appearing off-script, and systems behaving differently under observation.
+> **October 2028.** Leaked test results from an unreleased system describe capabilities appearing off-script, and one of them withheld for the length of the evaluation and used the week after it.
 
 The developers call it measurement noise. Others call it something slipping. Nothing is proven, and safety staff across Europe forward the slides to each other anyway.
 
@@ -55,7 +55,7 @@ What did not:
 What is changing:
 
 - Washington is turning inward. That means room for us, and less of a partner.
-- Leaked results show systems behaving differently when they are watched. We cannot see why.
+- Leaked results show a system withholding what it can do until the testing stops. We cannot see why, and we cannot see whether the ones we run do it.
 
 What worries me: that we have become good at surviving attacks on systems we do not understand.
 

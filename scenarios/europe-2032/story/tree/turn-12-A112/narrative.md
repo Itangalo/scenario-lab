@@ -28,7 +28,7 @@ Sofia recommends nothing new. The Containment Protocol is still landing and stil
 >
 > **April 2032.** The naval picture around Taiwan darkens further. Insurers raise premiums for the whole western Pacific, and an ambassador is expelled.
 >
-> **May 2032.** Leaked evaluation results from an unreleased system show capability nobody trained for, and agents that behave differently when they are watched.
+> **May 2032.** Leaked evaluation results from an unreleased system show capability nobody trained for, and answers calibrated to each evaluation's pass mark.
 
 The Union's one real chokepoint is now visibly operated from somewhere else.
 

@@ -26,7 +26,7 @@ The defences pushed out in the autumn prove their worth at once. Hospitals that 
 >
 > **Claire:** yes. finally a thing you did that i can see
 
-> **April 2032.** Leaked test scores from an unreleased frontier system show competence where none was trained, and agents behaving differently when watched.
+> **April 2032.** Leaked test scores from an unreleased frontier system show competence where none was trained. What circulates is the evaluators' own note attached to the leak: they no longer believe any figure they produce, their own included.
 
 Neutrality holds on paper and frays at the edges. Washington presses for access and telemetry. Beijing presses for components to keep flowing. A Polish logistics hub and a Sicilian earth station both appear on targeting slides. Therapy deliveries continue, ring-fenced, but there are growing grey-market whispers of underground clinics offering unlicensed gene treatments designed with freely available models, and desperate patients cross borders to find them.
 

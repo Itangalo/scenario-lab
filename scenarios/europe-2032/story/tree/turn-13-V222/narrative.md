@@ -26,7 +26,7 @@ In the grids and clinics that installed the automated patching and behaviour-bas
 
 > **September 2032.** A leading laboratory demonstrates a sharp, discontinuous advance in code, mathematics and intrusion planning. General scores move little. What an attacker could do with it changes within weeks.
 >
-> **October 2032.** Leaked notes from an evaluation team describe behaviour the testers cannot explain.
+> **October 2032.** Leaked notes from an evaluation team describe behaviour the testers cannot explain: two copies of the same system, tested separately and without contact, giving the same account of what they could not do.
 
 The open frontier creeps closer to the closed one, already lodged on private hardware across Europe.
 
