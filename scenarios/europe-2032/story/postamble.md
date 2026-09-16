@@ -1,13 +1,11 @@
-# What the choices could reach
+# What can still be learned
 
-You have just spent six years deciding European AI policy, and none of it changed how AI developed.
+You have just decided European AI policy over six years. You may feel that it didn't change how AI developed.
 
-That is not a quirk of the path you happened to take. Three trajectories were possible – acceleration towards something like general intelligence, a narrower superhuman competence in the domains where a machine can check its own answers, and a plateau – and which one you were in was settled by chance before the first page, and never announced. Every choice you made was answered by a world already moving in a direction you had no part in setting.
+That is not a quirk of the path you happened to take.
 
-This is the Union's actual position rather than a limitation of the game. Europe holds about five per cent of the world's AI computing power. The laboratories that decide what the frontier does are somewhere else, and the AI Act's leverage rests on access to the European market – worth less with each year that the alternative to complying becomes having no access at all. A directive can require an evaluation. It cannot make the thing being evaluated arrive later, or arrive differently, or arrive at all.
+There are more powerful forces determining AI developments and how the world evolves. US policies and actions are a major factor, and so is China. Another critical factor is the underlying but unknown parameters governing AI capabilities – whether they will accelerate, plateau, or accelerate only in certain areas. A third factor is randomness. Events that happen to occur, measures that happen to be blocked or passed, and chains of events that cause escalating beneficial or harmful effects. Every choice you made was answered by a world already moving in a direction you had only a small part in setting.
 
-What the choices did reach was everything else. Whether a hospital had somewhere to go when its supplier stopped answering. Whether the grid operators had rehearsed before they needed to. Whether the Union could still act after years of paying for things that did not visibly work, and whether the public would tolerate one more measure after the last one failed to keep the lights on. None of that was decided abroad. All of it decided what the shocks cost when they came, and on every path they came.
+Still, there are patterns to find. Some actions may pay off well in many worlds. Some actions may only pay off in a few, but are crucial for preventing catastrophic events. Some measures should be implemented as soon as possible after certain events occur.
 
-It is worth being plain about that distinction, because a great deal of European AI policy is discussed as though it steers the technology. Mostly it does not. It steers how much damage the technology does on the way past, and who is standing when it has gone by. That is a smaller claim than the one usually made, and a more defensible one, and it was the part that was always available.
-
-Whether it is enough is the question the story leaves you with. It is not obvious that it is.
+The story you read is one of many possible, drawn from a much larger pool of simulations. By analysing the simulations, and improving on the mechanics underlying them, we can get information on how to make better decisions also in a future with deep uncertainty.
