@@ -12,7 +12,7 @@ next: turn-11-P221
 
 In the spring of 2031 the Union finally puts its name on something. Sofia's note becomes the European Public Dividend Showcase, and the President moves the Commission's standing off the black-start network and onto it.
 
-> **February 2031.** Two health ministries and a justice pilot publish their figures. On assistants procured in Europe and hosted in Europe, waiting lists are falling and backlogs clear in weeks rather than months.
+> **February 2031.** A justice pilot and two finance ministries publish their figures. On assistants procured in Europe and hosted in Europe, case backlogs clear in weeks rather than months – and the opposition uses the numbers to argue that if the tools work this well, the factories were never needed.
 
 The Commission moves fast for once. An implementing decision credits European procurement and European hosting for the gains, open dashboards go up site by site, Commissioners visit, and the sites are promised European fallback first.
 

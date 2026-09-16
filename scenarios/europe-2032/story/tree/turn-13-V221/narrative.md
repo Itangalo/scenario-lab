@@ -21,7 +21,7 @@ The other fronts deteriorate.
 
 > **September 2032.** Washington tightens chip and model controls again, this time rationing allied buyers alongside everyone else.
 >
-> **October 2032.** One capital announces its own arrangement for cloud capacity on cheaper terms. At home it is called pragmatism; in Brussels, a break in the common line.
+> **October 2032.** Another capital announces its own arrangement for cloud capacity on cheaper terms, and this time the Commission does not call it a defection. At home it is called pragmatism; in Brussels, a break in the common line.
 
 Prices rise, and licences queue, for the very hardware the health and municipal systems need.
 
@@ -36,7 +36,7 @@ Prices rise, and licences queue, for the very hardware the health and municipal 
 
 The Commission offers a pause wherever sites are blocked, plus hiring audits paid for from reprogrammed funds. That calms one city and hardens the opposition in two others.
 
-> **December 2032.** Another genome-model study circulates among specialists, and the specialists argue about its publication rather than its claim. The viable design able to infect humans is taken as read now. Shipping insurance rises after extended exercises in the Taiwan Strait.
+> **December 2032.** Another genome-model study circulates among specialists, and the specialists argue about its publication rather than its claim. The viable design able to infect humans is taken as read now. Shipping insurance rises again after exercises in the strait, from a level that has not fallen since 2029.
 
 By December, services are restored where the work was finished and health waits keep falling. Consent stays thin, and the Union's capacity looks more borrowed than owned.
 

@@ -22,7 +22,7 @@ allow: 16
 
 Sofia had insisted that procurement run only on certified systems the Union can reach, and the triage assistants scale beyond the pilots at last. For a few weeks the story is lives extended rather than graduates unhired. Then the fine print arrives. The doses, the scheduling software and the models behind every treatment plan are licensed abroad, with allocation queues set in California and computing billed by the hour. Commentators call it healing by permission. Mayors who kept their robot bans ask why Brussels can guarantee a therapy appointment but not a job interview.
 
-> **October 2030.** A member state signs its own compute and robot-supply pact with a foreign hyperscaler, with discounted capacity and early deliveries of humanoids.
+> **October 2030.** A second member state signs its own compute and robot-supply pact with a foreign hyperscaler, with discounted capacity and early deliveries of humanoids.
 
 Finance ministers quarrel in the open. If capitals can freelance, who pays for the Guarantee?
 

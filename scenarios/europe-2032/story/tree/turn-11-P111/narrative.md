@@ -12,7 +12,7 @@ next: turn-12-P111
 
 Two stories about the state run side by side through the autumn, and voters believe both.
 
-> **September 2031.** In several cities, rebuilt public-sector systems deliver: hospital waiting lists visibly fall where cross-border teams and surge stocks arrived, benefit decisions come back in days, and tutoring tools show measured gains.
+> **September 2031.** In several cities, rebuilt public-sector systems deliver: benefit decisions come back in days, tutoring tools show measured gains, and two court services clear their listing backlogs – the wards having been the story the last time.
 
 Commissioners tour the sites and claim the gains as European choices, not imported software.
 

@@ -29,7 +29,7 @@ Ministers quote the figures to argue that the transition is over and manageable.
 
 The calm is dented from outside.
 
-> **November 2029.** Extended exercises around Taiwan lift shipping insurance and rattle expectations of chip supply.
+> **November 2029.** Extended exercises again, and the carriers stop waiting for the premiums to settle. Two lines reroute south of the strait, adding a fortnight to every European delivery.
 >
 > **December 2029.** Washington tightens its export licensing again. European buyers find their volume licences honoured in name and rationed in practice.
 

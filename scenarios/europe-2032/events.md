@@ -214,7 +214,7 @@ Weigh them by reading the campaign, not by counting events. There are no campaig
 **Condition:** Possible in any turn.
 **Probability:** 10%. Add 5 points if `export_control_escalation` occurred in the previous 2 completed turns. Halve if `us_china_agreement` is in place.
 **Can repeat:** Yes
-**Description:** Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion. Nothing that has not happened before, at a scale that is slightly harder to dismiss. **This is a precursor: it opens the Taiwan gate for the next 3 turns.**
+**Description:** Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion. Nothing that has not happened before, at a scale that is slightly harder to dismiss. **This is a precursor: it opens the Taiwan gate for the next 3 turns.** **Tension that recurs must show where it has got to.** This fires up to four times on a path and "extended exercises, shipping insurance up, a diplomat expelled" is the same clipping every time. Later occurrences move: from premiums to inspections and boardings, then to carriers rerouting and adding weeks, then to insurers declining the route at any price, then to the tension becoming permanent – the crisis talk fades and the premiums never come back down, which is worse than a scare. Naming what did not happen is also available and is often the strongest version: no shipment stopped, and everyone priced it as though one had.
 
 ## Taiwan Blockade
 **ID:** taiwan_blockade
@@ -280,7 +280,7 @@ Weigh them by reading the campaign, not by counting events. There are no campaig
 **Condition:** Possible in any turn. One or more member states break from a common position under external pressure.
 **Probability:** 4%. Add 5 points if `eu_political_capital` is below 35. Add 4 points if a large measure is in flight.
 **Can repeat:** Yes
-**Description:** A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken. It is defended at home as pragmatism and read everywhere else as the Union being unable to hold its own line.
+**Description:** A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken. It is defended at home as pragmatism and read everywhere else as the Union being unable to hold its own line. **Each defection costs the Union more than the last.** Where this fires repeatedly on a path, the second is not a repeat of the first: it is a different capital, and the Commission has one fewer instrument left to answer with. The ladder runs from a shock that Brussels threatens to punish, to a capital that signs knowing the threat was not carried out last time, to arrangements defended openly as policy and copied within months, to the point where the common line is the exception and the Commission has stopped using the word defection. "Called pragmatism at home and sabotage in Brussels" is a good line once per path.
 
 ## Adoption Delivers
 **ID:** adoption_success

@@ -23,7 +23,7 @@ The robot inspections suffer first. The same inspectors are needed for cyber tri
 >
 > **November 2029.** A new interpretability and control result improves how well the behaviour of deployed systems can be predicted. Some laboratories take it up.
 >
-> **December 2029.** Shipping insurers raise their quotes again on Taiwan Strait routes after extended exercises there.
+> **December 2029.** The exercises resume, and this time the ships are stopped. Boardings and inspections in the strait add days to sailings that insurance alone had only made dearer.
 
 Brussels presses the interpretability result into public-sector deployments as fast as it can. It is modest, and it is real.
 

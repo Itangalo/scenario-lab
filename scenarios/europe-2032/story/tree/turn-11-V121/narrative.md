@@ -12,7 +12,7 @@ next: turn-12-V121
 
 The autumn brings the first European win in years that anyone can attribute.
 
-> **September 2031.** In a handful of cooperating cities, audited triage assistants and fast-decision desks cut clinic waiting lists and clear backlogged permits in days, with the logs published and every human override recorded.
+> **September 2031.** In the cooperating cities, the audited assistants have moved into the parts of government nobody photographs: procurement, payroll, school placements. The logs are published and every human override recorded, and almost nobody reads either.
 
 The local press credits Brussels procurement standards rather than an American product. Sofia's note sets out to bottle it. The Visible Benefit Adoption Scale-Up offers willing municipalities a standard pack: workload limits, a funded redress desk and audit access, meant to coax the insurers and the unions back.
 

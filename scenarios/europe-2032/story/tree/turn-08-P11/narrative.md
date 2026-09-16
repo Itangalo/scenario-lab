@@ -31,6 +31,6 @@ Every compute plan becomes a security plan overnight. The Commission freezes the
 
 Against the outage, a counterpoint holds.
 
-> **May 2030.** A handful of public-sector AI deployments show undeniable results: waiting lists shortened, permits returned in days, tutoring pilots with measurable gains.
+> **May 2030.** A second round of public-sector deployments reports, and this time it is not the hospitals. Planning permits come back in days, benefit appeals are decided inside a month, and a tax administration closes a backlog it has carried since 2027.
 
 Ministers tour those sites deliberately, arguing that keeping the systems running through the incident was worth it. The public splits the difference. Relief at the visible benefits tempers the anger at disruption, but the outages dominate the coverage, and the Commission's standing steadies only because restoration is seen to be attempted.

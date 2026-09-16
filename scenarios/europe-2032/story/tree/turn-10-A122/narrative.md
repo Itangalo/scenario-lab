@@ -31,7 +31,7 @@ Sofia knows before the lawyers finish what the editorials will say, and they say
 
 > **April 2031.** A new tailored therapy cures conditions long thought untreatable. An American laboratory announces an algorithmic result that specialists call a landmark.
 >
-> **May 2031.** Freight insurers raise their surcharges on the Far East route again, after extended naval manoeuvres around Taiwan.
+> **May 2031.** The manoeuvres run longer than before, and the surcharges are no longer the story: European buyers are told that Far East sailings are now quoted week by week, because no underwriter will commit to a quarter.
 
 Both advances reach Europeans only on foreign terms. They are procured where domestic capacity allows, and otherwise named plainly as dependence, which is honest and does not help. The stockpiles are quietly topped up against the surcharges.
 

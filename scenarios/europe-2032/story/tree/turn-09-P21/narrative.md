@@ -13,7 +13,7 @@ allow: 16
 
 The autumn brings a small, usable win.
 
-> **September 2030.** In a handful of regions where the domestic triage helpers and rewritten referral templates have bedded in, waiting lists for routine imaging and first specialist appointments finally tick down.
+> **September 2030.** In the regions where the domestic helpers and rewritten templates have bedded in, the gains show up away from the wards: referral paperwork that took a fortnight is done overnight, and two regions close their planning-appeal backlogs entirely.
 
 The Commission and the regional press offices claim the improvement loudly as a European fix, and for once the local papers repeat the line.
 

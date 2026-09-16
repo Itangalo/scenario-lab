@@ -34,11 +34,11 @@ Two softer shifts rebuild a little tolerance.
 
 > **November 2032.** Firms report measured productivity gains in law, accountancy, administration and consulting, largest among juniors and with no matching fall in jobs – a finding that has held, unchanged and unexplained, for as long as anyone has been measuring it.
 >
-> **November 2032.** Several cities show public-sector systems that have cut waiting lists and decision times, and credit a European choice of deployment.
+> **November 2032.** Several cities publish figures showing public-sector systems working – courts, school placements, procurement – and credit a European choice of deployment. It is the fourth such report in three years, and it is carried below the outage bulletins.
 
 Work is changing shape rather than disappearing. The polls lift from near zero, and the town halls stay hostile. The sampled audits of benefits scoring still crawl, the logs are still unread in places, and the promised freezes never arrive. The wage top-ups and retraining keep households afloat, and do not buy forgiveness.
 
-> **December 2032.** Rising tension around Taiwan pushes shipping insurance up.
+> **December 2032.** Tension around Taiwan rises again, and nobody re-rates anything. The premiums went up in 2029 and never came down; the strait has been priced as a war zone for three years without a war.
 
 It reminds the capitals how exposed their supply of chips and models still is, without yet cutting it. The Commission ends the year intact, still spent out, and hoping the repair holds long enough for trust to return.
 
