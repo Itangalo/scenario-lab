@@ -36,7 +36,7 @@ Where the teams arrive in time, the damage is contained. Dispatchers keep answer
 >
 > **Claire:** it's the right procedure with coffee on it. that's the union now
 
-> **October 2032.** Laboratories abroad show a sharp jump in machine-written code and intrusion tooling.
+> **October 2032.** Laboratories abroad show another jump in machine-written code and intrusion tooling. The defenders no longer read these announcements as news about capability. They read them as a date by which the next sweep will be better than the last.
 
 The defenders say openly that they are behind, and nobody can say who ran the autumn campaign. The voters do not debate the details. They see closed counters, foreign sorting machines back in the ports after the spring strikes, and officials who can neither keep the lights on digitally nor explain why the best tools are now denied.
 

@@ -25,7 +25,7 @@ Sofia flies to Washington with the EEAS team in February. The meetings are warm 
 
 The frontier does not wait for the lawyers.
 
-> **March 2029.** A foreign laboratory demonstrates a system that plans, writes code and runs tools for weeks without drifting. Deployment timelines written in the winter are obsolete.
+> **March 2029.** A foreign laboratory demonstrates a system that plans, writes code and runs tools for weeks without drifting. The Union's procurement officers do not rewrite their timelines this time. They have learned that the timeline will be wrong again before the revision clears legal.
 >
 > **April 2029.** Chinese and American firms put humanoid robots on commercial sale – warehouse units first, then municipal pilots for digging, sorting and mine clearance.
 

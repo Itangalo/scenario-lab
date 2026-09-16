@@ -11,7 +11,7 @@ allow: 15
 
 # Degraded, not failed
 
-> **September 2032.** A new overseas release shows systems planning several days of clinical and logistics work with little supervision. Every procurement timeline written the week before is obsolete.
+> **September 2032.** A new overseas release shows systems planning several days of clinical and logistics work with little supervision. The hospitals that had been waiting for the technology to settle before buying learn that it does not settle, and that waiting was itself the decision.
 
 The hospitals running on frozen, vetted fallbacks feel the gap widen. What Brussels can guarantee stays slow and coarse. What is advertised elsewhere looks fluent.
 
