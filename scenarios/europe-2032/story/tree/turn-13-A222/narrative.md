@@ -15,7 +15,7 @@ allow: 15
 
 Engineers in Munich and Paris call it a step change, and within weeks procurement offices are rewriting their requirements.
 
-> **September 2032.** A contested preprint claims a genome model helped produce a viable design for an organism able to infect humans.
+> **September 2032.** A third result, and it is not from a laboratory anyone was watching. The route to a viable design able to infect humans is reproduced on openly downloadable models, by people with no biosecurity training and no reason to keep quiet.
 
 Virologists argue over its methods, and accuse the authors of both hype and recklessness. Inside the health ministries the argument lands differently. With powerful open weights already mirrored on private servers, even an imperfect recipe cannot be recalled.
 

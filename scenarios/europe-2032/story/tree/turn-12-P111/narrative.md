@@ -14,7 +14,7 @@ The spring opens with two technical papers that Brussels tries to fuse into one 
 
 > **February 2032.** A control team publishes an interpretability result that works on deployed systems: behaviour can be predicted before it is observed. The laboratories take it up quickly.
 >
-> **February 2032.** A genome-modelling group shows a design loop that lets non-specialists approach a viable construct able to infect humans.
+> **February 2032.** A genome-modelling group shows a design loop that lets non-specialists approach a viable construct able to infect humans – and publishes the loop. The methodological objections of two years ago are not raised. The objection now is to the publishing.
 
 Methodologists quarrel over both claims. The health officials read the pairing plainly: the first real gain in assurance in years, arriving alongside a sharper warning of biological misuse.
 

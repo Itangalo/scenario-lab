@@ -29,7 +29,7 @@ Brussels answers with what little fiscal room it has. Sofia's Trusted Triage Res
 >
 > **April 2032.** The Atlantic interpretability result proves itself in deployment: behaviour that can be predicted and checked, not merely argued about.
 >
-> **May 2032.** Washington tightens chip and model controls. Allied buyers keep volume licences, and face queues, paperwork and higher freight costs.
+> **May 2032.** Washington tightens the controls onto people. Secondments, hiring and published research in the covered fields become licensable, and two European laboratories discover that their own staff are the export. Allied buyers keep their volume licences.
 
 The copies of the new model spread to private servers before the hosts react. The laboratories adopt the control result quickly, because it reduces their own failures, and European utilities report fewer surprises wherever it is installed. European procurement officers talk of allocations delayed by months, not denied outright.
 

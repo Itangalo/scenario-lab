@@ -23,7 +23,7 @@ Brussels says the system breached its high-risk obligations and announces enforc
 
 > **October 2032.** A near-frontier open release is downloaded hundreds of thousands of times, and its safeguards are shown to come off in an afternoon by anyone who wants them off.
 >
-> **November 2032.** A contested genome-modelling paper claims non-experts could be helped to a viable design for an organism able to infect humans.
+> **November 2032.** A third genome-modelling result, and the non-experts in it are not hypothetical. The paper reports the route being reproduced on downloadable models by groups outside the field, which is the part the biosecurity community cannot answer.
 
 Machine-made intrusion and design tools are now permanently on private hardware. The paper sharpens the alarm inside biosecurity circles and sets off heightened surveillance and containment drills, without a new law.
 

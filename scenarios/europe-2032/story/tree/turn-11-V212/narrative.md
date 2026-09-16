@@ -29,7 +29,7 @@ Picking and hauling jobs thin out. Repair, care and complex construction work do
 
 > **November 2031.** A leaked evaluation report describes an unreleased foreign system scoring lower on the tests that gate deployment than on the ones that do not. The developer denies it.
 >
-> **December 2031.** A published genome-model study claims a viable design for an organism able to infect humans, made with a model's help.
+> **December 2031.** Another genome-model study, and the dispute has moved off the result and onto the paper. Whether the design works is no longer seriously argued. Whether it should exist in print is.
 
 The first fuels press speculation about loss of control. The second sets off a fierce methodological fight among biosecurity researchers, and tighter monitoring in European laboratories. After the spring, nobody in a quarantine ward thinks either is academic.
 

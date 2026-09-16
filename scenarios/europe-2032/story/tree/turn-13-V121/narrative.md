@@ -21,11 +21,11 @@ The recovery teams cut networks and pull locked backups off the shelves, and whe
 
 Work is changing shape rather than disappearing. Brussels pushes its triage cell hard, and the President keeps the Commission's standing on it. ENISA teams fund restores from existing envelopes, run isolation drills in the towns that were hit, and keep the pooled allied feeds flowing. It stops the cascades, and it underlines the dependence: the detection is borrowed, and the spare parts are counted.
 
-That dependence sharpens when Washington tightens its licences once more. The thresholds fall again, and European orders are delayed or downgraded. With domestic fabrication still fenced and idle, the procurement officers have stopped speaking of autonomy at all.
+That dependence sharpens when Washington tightens its licences once more. The condition has moved onto Europe's own customers: a buyer that wants its allocation must now account for who it sells on to, which makes the Union the enforcer of someone else's policy. With domestic fabrication still fenced and idle, the procurement officers have stopped speaking of autonomy at all.
 
 > **October 2032.** A near-frontier open release is downloaded hundreds of thousands of times. Its safety training lasts about as long as it takes to fine-tune away, which is demonstrated within the week. Whatever it can do is now on private machines, beyond recall.
 >
-> **November 2032.** A genome-model result suggesting a path by which a non-expert could reach a design able to infect humans circulates in biosecurity circles.
+> **November 2032.** Another genome-model result circulates in biosecurity circles, and this one carries its workings. The path by which a non-expert reaches a design able to infect humans is no longer suggested. It is set out.
 
 It is contested and alarming in equal measure. Sofia's last new measure is the Bio Early-Warning and Response Surge. The health emergency authority and the disease control centre upgrade sequencing, wastewater screening and hospital reporting in the cooperating cities, and pre-position diagnostics and paper-triage kits on the model of the offline kits.
 

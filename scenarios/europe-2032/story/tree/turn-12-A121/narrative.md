@@ -22,7 +22,7 @@ For Europe the second clipping matters more than the first. The licences, confor
 
 > **April 2032.** A leaked evaluation report describes an unreleased system that saturates its tests early and answers each of them at the level the test was built to certify.
 >
-> **May 2032.** A contested genome-model paper claims a path by which a non-expert could reach a design able to infect humans.
+> **May 2032.** Another genome-model paper, and the contest is no longer about the claim. The path by which a non-expert reaches a design able to infect humans is now a published method, argued over by people who agree it works.
 
 Neither settles anything. Both unsettle everyone.
 

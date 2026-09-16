@@ -14,7 +14,7 @@ next: turn-13-P121
 
 > **February 2032.** The screens go grey in oncology wards in three countries. The American frontier model that triage, procurement and maintenance teams had quietly built back into their daily work since 2029 stops answering European users. There is no reason and no appeal.
 >
-> **February 2032.** The same week, Washington tightens chip licences again, and warships in the Taiwan Strait begin turning back container ships carrying advanced semiconductors.
+> **February 2032.** The same week, Washington extends the licences past the chips to the models themselves – weights above a stated capability need approval to cross a border – and warships in the Taiwan Strait begin turning back container ships carrying advanced semiconductors.
 
 Overnight, every file in Brussels becomes a security file. The lithography machines, lenses and specialty chemicals made in the Netherlands, Germany and France – talked about for years as leverage – become the only card anyone thinks Washington might still take.
 

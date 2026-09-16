@@ -11,7 +11,7 @@ allow: 15
 
 # The picket line
 
-> **September 2032.** A genome-modelling team claims that a non-expert with a model's help could reach a viable design for an organism able to infect humans.
+> **September 2032.** A genome-modelling team publishes the route by which a non-expert with a model's help reaches a viable design for an organism able to infect humans. The claim is not what is disputed. The printing of it is.
 
 Methodologists attack the paper as alarmist, and as reckless to publish. The biosecurity lists argue for weeks. No patient is involved, but clinicians read it as a warning that last year's pathogen might not stay the only one.
 

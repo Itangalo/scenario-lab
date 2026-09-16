@@ -23,7 +23,7 @@ In the showcase regions, where the domestic triage helpers work, the waiting lis
 
 Two shocks from outside define the half-year.
 
-> **February 2031.** A published genome-model design that could plausibly guide the creation of an organism able to infect humans splits the biosecurity field.
+> **February 2031.** A second genome-model design lands, and the field splits along a new line. The question is no longer whether the route works. It is whether describing it in public was itself the harm.
 >
 > **March 2031.** A near-frontier openly downloadable model spreads to hundreds of thousands of machines in a week. The municipalities are no longer downloading it out of curiosity. It is in the tender documents.
 

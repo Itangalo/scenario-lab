@@ -36,7 +36,7 @@ Prices rise, and licences queue, for the very hardware the health and municipal 
 
 The Commission offers a pause wherever sites are blocked, plus hiring audits paid for from reprogrammed funds. That calms one city and hardens the opposition in two others.
 
-> **December 2032.** A contested genome-model study claiming a viable design for an organism able to infect humans circulates among specialists. Shipping insurance rises after extended exercises in the Taiwan Strait.
+> **December 2032.** Another genome-model study circulates among specialists, and the specialists argue about its publication rather than its claim. The viable design able to infect humans is taken as read now. Shipping insurance rises after extended exercises in the Taiwan Strait.
 
 By December, services are restored where the work was finished and health waits keep falling. Consent stays thin, and the Union's capacity looks more borrowed than owned.
 

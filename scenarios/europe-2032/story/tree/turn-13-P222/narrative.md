@@ -18,7 +18,7 @@ The autumn of 2032 brings one piece of genuinely good engineering news. A new ge
 
 The credit drowns in two other stories.
 
-> **October 2032.** Washington tightens export licensing again. European buyers keep their licences in name while the volumes are withheld in fact. The Dutch transit hubs comply, reluctantly and on camera.
+> **October 2032.** Washington tightens export licensing again. European buyers keep their licences in name while the volumes are withheld in fact, and the withholding now follows how member states voted in forums that have nothing to do with trade. Nobody in the trade directorate still calls this export control. The Dutch transit hubs comply, reluctantly and on camera.
 
 With nothing to buy and no retaliation Brussels could sustain, it reads at home as one more demonstration that access is someone else's gift.
 

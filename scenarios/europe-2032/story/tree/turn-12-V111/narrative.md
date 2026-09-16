@@ -21,7 +21,7 @@ Brussels moves fast on paper in January. Sofia's note becomes the Bio-Uplift Det
 
 Implementation is uneven. Large university hospitals in the west plug in quickly. Municipal clinics, eastern laboratories and private synthesis intermediaries haggle over costs, staffing and who owns the sequence data. The French and Dutch medical teams stay on call and are stretched thin across follow-up visits. The programme buys coverage, not closure.
 
-> **March 2032.** A genome-model study claiming a viable design for an organism able to infect humans circulates in biosecurity circles.
+> **March 2032.** The third such result, and the first that did not come from biosecurity. Two graduate groups outside the field reproduce the route to a viable design able to infect humans on downloadable models, and publish because they assume somebody already knows.
 
 The methodologists attack it, and others accuse the authors of publishing too much. The fight stays technical. There is no public alarm, but inside the health agencies the mood darkens: with the controls still largely on paper, the next attempt will not be caught by a checklist.
 

@@ -29,6 +29,6 @@ Brussels concedes the harder reading: the deployment sat outside the high-risk c
 
 > **November 2031.** The leading laboratories move to models whose internal steps can no longer be rendered as readable reasoning. A leaked benchmark shows unexplained jumps, and a system scoring worst on the tests that decide what it is permitted to do.
 >
-> **December 2031.** A contested genome-model paper claiming a path to a design able to infect humans circulates in biosecurity circles, condemned as both alarmist and reckless.
+> **December 2031.** Another genome-model paper circulates, and the condemnation has narrowed. Nobody calls it alarmist twice. What the field argues about now is that the path is written out in enough detail to follow.
 
 European buyers, still paying more for restricted chips and models, watch both debates from the sidelines.
