@@ -6,7 +6,7 @@ Re-running is not an option for anything already built: a Stage-1 node is parent
 
 ## The rung below the frontier is missing when access is cut (ECHO 2026-09-16)
 
-Status: identified, not yet scoped. Next session finds every affected passage; the rewrite comes after.
+Status: **done 2026-09-16**, on branch `story-fixes-20260916`, pending Johan's reading. The catalogue is fixed and five nodes were rewritten – `turn-03-A1`, `turn-02-A2`, `turn-02-V2`, `turn-04-P2` and `turn-09-V11`. The other sixteen were read and needed nothing; several were already right, and `turn-08-P21`'s managers keeping old American workflows on standby now has the thing it was assuming. All downstream nodes were scanned for references that depended on the earlier severity and none did. `check_tree.py` clean over the tree. The open question at the end of this entry is still open and is the thing to look at when reading the result.
 
 **What is wrong.** When the Union loses access to the leading model, the story goes straight from the frontier to European-hosted open models and to paper. It skips the rung that would actually catch the fall: the previous generation of the same commercial models, still on sale, still hosted in EU regions, and still far more capable than anything with open weights at that date. Being cut off from the frontier is treated as being cut off from the tier.
 
