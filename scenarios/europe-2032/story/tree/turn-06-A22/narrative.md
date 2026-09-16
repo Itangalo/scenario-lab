@@ -28,7 +28,7 @@ The allocation board, permanent now, splits what arrives between Lyon, Milan, Ro
 
 The health ministers keep touring wards with the same line: treatment continues, at lower throughput. It stops the protests, but not the resentment. The queues lengthen, and the local press counts the empty gigafactory shells against the promised cures.
 
-> **February 2029.** Slides from an unreleased American model spread through laboratories and newsrooms: benchmark jumps, and agents that seem to behave differently under observation.
+> **February 2029.** The third leak in a year, and this one is about the ruler rather than the thing measured. A benchmark written to last until 2031 saturates in a single training run, and the laboratories argue about replacing it while the evaluators argue about whether replacing it would help.
 
 The developers call it measurement noise. Two evaluation groups re-run the European substitutes on the shared supercomputers and find they still work, with narrower margins. As Sofia recommended, Brussels opens no new mandate. The Institute collects the leaks, circulates comparisons to national regulators, and advises the allocation board that the degraded substitutes remain safe for clinical and grid use, with a human checking.
 

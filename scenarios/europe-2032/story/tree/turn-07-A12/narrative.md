@@ -19,7 +19,7 @@ Sofia's note that week becomes the Cyber Recovery and Service Continuity Surge. 
 
 The robot inspections suffer first. The same inspectors are needed for cyber triage, and the port audits in Rotterdam, Hamburg and Lyon are postponed again and again.
 
-> **November 2029.** An American laboratory demonstrates even longer autonomous planning and tool use in controlled trials.
+> **November 2029.** The same laboratory goes again, and duration is no longer the headline. The system is handed problems from fields it was given no data for – protein logistics, tax law, turbine repair – and is competent in all of them inside a week.
 >
 > **November 2029.** A new interpretability and control result improves how well the behaviour of deployed systems can be predicted. Some laboratories take it up.
 >

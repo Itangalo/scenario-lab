@@ -29,7 +29,7 @@ Sofia's answer is the EU Loss-of-Control Containment Protocol, and the President
 
 > **April 2030.** Washington and Beijing announce a limited pact on the security of model weights and on autonomous escalation, with thin verification.
 >
-> **May 2030.** Washington tightens its export licensing again. Allied volume licences are rationed rather than cut: queues, conditions, smaller allocations.
+> **May 2030.** The licences tighten again, and this time the condition is on Europe's own sales. Allied volumes are still rationed rather than cut, but a buyer that wants its allocation must now account for who it sells on to. The trade directorate calls this extraterritorial in public, and complies with it in private.
 
 Brussels was not at the table, only briefed afterwards. The Commission offers incident data and detector code in exchange for observer access, through its middle-power contacts, with little immediate return. The chip insurance from the Taiwan exercises adds cost. More concrete is poured at the backup gigafactory, the interim hosting talks drag on, and the capital with its side deal still refuses to unwind it.
 

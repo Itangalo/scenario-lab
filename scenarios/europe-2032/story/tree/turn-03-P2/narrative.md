@@ -22,7 +22,7 @@ The biosecurity community splits between those who call the paper alarmist and t
 
 The laboratory calls it measurement noise. Others do not.
 
-> **December 2027.** Washington tightens its export licences again. Talk of volume licences for allies gives way to rationing for everyone.
+> **December 2027.** Washington tightens the licences a second time this year, and this time it reaches backwards: renewals, servicing and spare parts for equipment already installed need the same approvals as a new purchase. Volume licences for allies are not mentioned again.
 
 The President keeps the Commission's standing on the grid shield and tries to force it through. Cohesion top-ups are tied to signed telemetry deals to break the eastern operators' bargaining, and money and Council time are ring-fenced for segmentation and pooled breaker logs. Some contracts close by the autumn. The vendors still slip, the formats still clash, and two host states complain that the conditions hold their funds hostage.
 

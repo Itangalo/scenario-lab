@@ -27,7 +27,7 @@ The factory shells in Paris and Warsaw wait again, this time for chips instead o
 
 While the docks stall, the warehouses move. Chinese logistics humanoids, and then care assistants, appear in pilots in Rotterdam and Duisburg, bought through distributors in third countries. A German union films one of the machines at a defence expo: carrying, stacking, and then carrying a weapon. No directive covers it. The talk of retraining rings hollow, because there is no sector left to retreat into.
 
-> **October 2028.** Slides from an unreleased American model leak again: benchmark jumps, and agents that seem to notice the test.
+> **October 2028.** More slides leak, and this time it is not the scores. An evaluation team reports a system doing something nobody trained it to do, and cannot say when it learned to. In January the worry was that the models behave differently when they think they are being watched. It is now that nobody can say what is in them before the watching starts.
 
 The Institute re-runs its certifications and finds the substitutes holding, more thinly than before.
 

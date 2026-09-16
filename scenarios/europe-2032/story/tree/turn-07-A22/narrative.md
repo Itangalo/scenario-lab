@@ -33,7 +33,7 @@ Two technical alarms filter through from further away.
 
 > **October 2029.** A leaked paper claims a genome model produced a viable design for an organism able to infect humans, with non-expert assistance. Virologists fight over its methods, and over whether it should have been published.
 >
-> **November 2029.** Slides from an unreleased American system, showing strange jumps and behaviour that changes under observation, circulate again.
+> **November 2029.** More slides, the fourth set in two years. They are barely covered. The newsrooms that ran the February leak on their front pages give this one four paragraphs, and the evaluators find that the hardest part of their year: the thing they cannot explain has become ordinary.
 >
 > **December 2029.** A study of offices across the Union finds AI assistants sharply raising output in law, accountancy and administration.
 

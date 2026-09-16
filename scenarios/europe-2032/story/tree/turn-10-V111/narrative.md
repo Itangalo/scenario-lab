@@ -12,7 +12,7 @@ next: turn-11-V111
 
 The first weeks of 2031 bring two emergencies at once.
 
-> **January 2031.** A largely automated intrusion sweeps through appointment systems, payment desks and regional grids, and forces several cities to take their services offline. Forensic notes point to tooling assembled with frontier models.
+> **January 2031.** The third sweep in two years, and the first where nobody waits to be told. The same class of automated intrusion moves through appointment systems, payment desks and regional grids, and several cities take their own services offline before the forensics arrive. The notes, when they come, point to tooling assembled with frontier models.
 
 Where the isolation gates and human approvals are installed, the operators hold. Where they are not, restoration takes weeks.
 

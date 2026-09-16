@@ -22,7 +22,7 @@ The money moves the other way.
 
 European operators that had been leasing capacity, or waiting on partnered build-outs, find their contracts repriced or withdrawn. Frontier progress does not stop, but it crawls.
 
-> **April 2031.** Washington tightens its licences again. Under its tiered system allies stay on volume quotas for advanced chips and model access, and servicing approvals are handled case by case.
+> **April 2031.** Another tightening, and the object moves from the chips to what runs on them. Allies keep their volume quotas and their case-by-case servicing approvals; what is new is that model weights above a stated capability need a licence to cross a border at all. Models trained on American accelerators travel under American rules, which is most of what the Union has.
 
 The Hague complies under protest. The talks with Tokyo and Seoul keep going and produce little hardware.
 
