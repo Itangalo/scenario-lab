@@ -33,7 +33,7 @@ The therapy doses, the scheduling software and the models behind the treatment p
 >
 > **April 2031.** A new freely downloadable model, only months behind the closed frontier, is copied hundreds of thousands of times in a week – and this time into procurement systems. Three national health services list it as an approved option before the regulators have finished reading its licence.
 >
-> **May 2031.** Law firms, accountancies, software houses and administrations stop replacing entry-level staff who leave. Graduate bridge pay is slow, and reopenings in ports and warehouses are frozen by blockades and war disruption.
+> **May 2031.** The thinning reaches the middle. Law firms, accountancies, software houses and administrations are no longer only skipping the juniors; the people with five years behind them are going too. Graduate bridge pay is slow, and reopenings in ports and warehouses are frozen by blockades and war disruption.
 
 Mayors who kept their bans on logistics machines now face pickets and patients at the same time. Both ask why an appointment can be guaranteed and a job interview cannot.
 

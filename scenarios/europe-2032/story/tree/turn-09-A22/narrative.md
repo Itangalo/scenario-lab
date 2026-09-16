@@ -28,7 +28,7 @@ Sofia's answer is the Critical Services Cyber Recovery and Hardening Pact, annou
 
 Behind the outage, a quieter shift registers. Two frontier laboratories push model updates on a cadence nobody scheduled, with the training loops and evaluation harnesses increasingly rewritten by the systems themselves. Researchers speak of human supervision becoming review after the fact, and of power and chips as the only brakes left. For Europe, running on borrowed capacity, the substitutes in the clinics hold only because a human checks every step.
 
-> **December 2030.** Graduate recruitment has frozen across law, accountancy, software support and customer operations. Universities report cohorts with nowhere to go.
+> **December 2030.** The freeze moves up a rung. It is no longer only the graduates: firms are not replacing the five-to-ten-year people either, and those have mortgages and vote. Universities report two cohorts now with nowhere to go.
 
 Labour ministers promise flexicurity options next year. No instrument moves now, and the unions call it abandonment. The trust gained through the cures erodes through the outage and the unemployment, and the polls pair the cured child of the summer with the darkened town hall of the autumn.
 

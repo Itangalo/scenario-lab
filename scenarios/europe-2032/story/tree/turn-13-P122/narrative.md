@@ -11,7 +11,7 @@ allow: 15
 
 # Holding the line
 
-> **September 2032.** Law firms, accountants, software houses and customer centres confirm what graduates already knew: entry-level posts are simply not being refilled.
+> **September 2032.** The professional bodies stop arguing about the numbers and start arguing about themselves: what a training route is for, and how anyone qualifies, when no practice needs a junior to do the work a junior used to learn on.
 
 Ministers argue over the cause. The empty hiring pages do the talking. The anger settles over job centres and campuses, and the capped voucher pilots look thin against it.
 
