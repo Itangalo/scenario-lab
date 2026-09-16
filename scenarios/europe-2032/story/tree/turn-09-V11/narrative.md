@@ -13,7 +13,7 @@ allow: 17
 
 > **July 2030.** Access to the leading American model is withdrawn from users in the Union at short notice. No reason is given, and there is no appeal.
 
-Hospitals, ministries and contractors had rebuilt their registries on top of that model. Triage planners in two large hospital groups revert to paper within hours, and a justice ministry pauses the rollout of case summaries.
+Hospitals, ministries and contractors had rebuilt their registries on top of that model. The company's previous model is still sold and still hosted inside the Union, but a registry rebuilt against one system does not accept another by Friday, and every clinical sign-off has to be done again. Triage planners in two large hospital groups revert to paper within hours, and a justice ministry pauses the rollout of case summaries.
 
 > **Claire:** our triage planner is gone. the american one
 > **Claire:** we were paper by lunch. we're very quick at paper now
@@ -49,7 +49,7 @@ What did not:
 - The black-box cell. It was the right idea, and it was too slow and too resisted to matter this time.
 - The build. One site is building, one is in court.
 - The common line. One capital has twice gone its own way.
-- Access. It was withdrawn without a reason, and we had nothing ready.
+- Access. It was withdrawn without a reason, and what we fell back on was the same company, one generation down.
 
 What is changing:
 
