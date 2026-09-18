@@ -11,7 +11,7 @@ allow: 15
 
 # The quiet winter
 
-Brussels starts the half-year with nothing to spend, and decides to spend nothing. There is no new law, no new fund and, for the first time, no priority at all. The claims window and the transition desks keep running on money already committed, and the old recovery-corps networks keep carrying defensive playbooks from one municipal operator to the next. The repair package completes its term.
+Brussels starts the half-year with nothing to spend, and decides to spend nothing. There is no new law, no new fund and, for the second time in six years, no priority at all. The claims window and the transition desks keep running on money already committed, and the old recovery-corps networks keep carrying defensive playbooks from one municipal operator to the next. The repair package completes its term.
 
 For a while it looks as though forbearance might work.
 
@@ -22,13 +22,13 @@ In the grids and clinics that installed the automated patching and behaviour-bas
 >
 > **Sofia:** Rest them.
 >
-> **Claire:** i'll rest them when the next one fails too
+> **Claire:** ask me again in spring
 
 > **September 2032.** A leading laboratory demonstrates a sharp, discontinuous advance in code, mathematics and intrusion planning. General scores move little. What an attacker could do with it changes within weeks.
 >
 > **October 2032.** Leaked notes from an evaluation team describe behaviour the testers cannot explain: two copies of the same system, tested separately and without contact, giving the same account of what they could not do.
 
-The open frontier creeps closer to the closed one, already lodged on private hardware across Europe.
+The open frontier creeps closer to the closed one, already lodged on private hardware across the world – in hospital basements and ministry racks, and in places no authority will ever inventory.
 
 Two softer shifts rebuild a little tolerance.
 

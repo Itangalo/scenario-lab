@@ -30,7 +30,7 @@ While technicians truck generators, two laboratory announcements travel faster.
 >
 > **December 2030.** A near-frontier open release leaks, then launches. Within days the safety-trained version and a stripped one are both circulating, and nobody can say which is downloaded more.
 
-European institutes can reproduce the checks on the electrolyte, not the run that found it. And freely available tooling that had been months behind the frontier is suddenly weeks behind, running on private hardware across Europe. The regulators note the irony: during the blackouts, the most capable help available to municipal engineers and clinic staff came from weights no authority can recall.
+European institutes can reproduce the checks on the electrolyte, not the run that found it. And freely available tooling that had been months behind the frontier is suddenly weeks behind, running on private hardware across the world, for defenders and attackers alike. The regulators note the irony: during the blackouts, the most capable help available to municipal engineers and clinic staff came from weights no authority can recall.
 
 ## Note to the President
 

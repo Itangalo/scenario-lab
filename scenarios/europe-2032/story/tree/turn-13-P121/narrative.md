@@ -11,7 +11,7 @@ allow: 15
 
 # The weights that would not come back
 
-> **September 2032.** A near-frontier open-weight model, a few months behind the closed laboratories, is released on a Tuesday. By Friday it is on hundreds of thousands of machines across Europe.
+> **September 2032.** A near-frontier open-weight model, a few months behind the closed laboratories, is released on a Tuesday. By Friday it is on hundreds of thousands of machines across the world, running everything from clinic paperwork to fraud shops.
 
 It is in universities, in start-ups, in bedrooms. It includes the wastewater-evasion guidance the two university laboratories had warned about, now packaged in a helpful assistant's voice, and beyond recall.
 

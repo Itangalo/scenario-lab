@@ -26,7 +26,7 @@ Sofia holds the AI file in the Commission President's cabinet. She does not deci
 
 The Union holds about five per cent of the world's AI computing power, and the United States roughly eighty. Europe's largest AI supercomputer runs at 83 megawatts. The largest American one runs at 1,250.
 
-ASML is still the only company on earth that can build the lithography machines every advanced chip depends on, and Washington leans on it constantly over whom it may sell to. The AI Act is in force, but the parts with teeth – the obligations for high-risk and general-purpose systems – were pushed back to 2027 and 2028 under industry pressure.
+ASML is still the only company on earth that can build the lithography machines every advanced chip depends on, and Washington leans on it constantly over whom it may sell to. The AI Act is in force, but the part with teeth – the obligations for high-risk systems – was pushed back to 2027 and 2028 under industry pressure.
 
 In June, Washington ordered a leading American laboratory to switch off its most capable models for everyone who is not a US citizen, at home and abroad. The order was lifted a fortnight later, by negotiation rather than by rule. The review regime behind it has no allies clause, no published criteria and no appeal. At the time, the Commission answered that such restrictions "should not be discriminatory". Sofia drafted that sentence. It was a plea, from the party that usually sets the terms.
 
@@ -42,7 +42,7 @@ Meanwhile the frontier keeps moving. AI agents now work continuously towards sta
 
 Two programmes were already running when Sofia took the file. The InvestAI gigafactories: twenty billion euros, from a wider two-hundred-billion investment drive, for four to five sites. The tech sovereignty package, a separate effort: a target of another two hundred billion euros in private money for AI data centres by 2036, and zones where permits come faster. Both tie up the Commission's standing for as long as they run – funding, legal cover and member-state backing that stay committed until they land – and neither will finish soon.
 
-What nobody can tell her is what kind of world this is. Competent people read the same evidence three ways: as acceleration that compounds; as progress that races ahead wherever a machine can check the answer, and crawls everywhere else; as a plateau, with every step costing more than the last. Nothing available in 2026 settles it. Neither the agents in the laboratory nor the phages needed anything close to general intelligence.
+What nobody can tell for certain is how AI progress will continue. Competent people read the same evidence three ways: as the start of an intelligence explosion; as super-human intelligence only in a few domains; and as a plateau, as every step forward costs exponentially more than the last. Nothing available in 2026 settles it.
 
 What she can tell the President is how slowly the Union moves. Drafting, negotiating and standing up an institution take between six months and eighteen, urgency does not shorten them, and compute takes years. So the President asks her for a direction to hold for two years, and after that, every six months, one priority and at most one new measure. Anything more and the machinery stalls.
 

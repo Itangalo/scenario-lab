@@ -29,6 +29,6 @@ Municipal grids and clinics that install it see break-in attempts fail for the f
 
 > **March 2032.** A frontier-class openly released model spreads to hundreds of thousands of downloads in days, and into the public procurement catalogues inside a month.
 
-Capabilities that had lived only inside the leading laboratories can now be run on private hardware across Europe, beyond recall. The utilities keep their paper rosters and their retired operators on call, the auditors rewrite their threat assumptions, and the councils renewing their motions against data centres and hiring software point to the release as proof that control has already been lost.
+Capabilities that had lived only inside the leading laboratories can now be run on private hardware anywhere in the world, beyond recall – in research groups and small firms that could never have afforded them, and equally in the places that keep no address. The utilities keep their paper rosters and their retired operators on call, the auditors rewrite their threat assumptions, and the councils renewing their motions against data centres and hiring software point to the release as proof that control has already been lost.
 
 Relief at fewer outages mixes with dread that anyone can now try harder. The polls stay near zero, and Brussels ends the half-year with nothing left to spend.
