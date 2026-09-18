@@ -62,6 +62,7 @@ Optional top-level fields:
 - `llm` (object)
 - `emergent_events` (object)
 - `rule_evolution` (object)
+- `workshop` (object)
 - `constitutional_enforcement` (object)
 
 ### `start_date` and `time_scale`
@@ -294,6 +295,23 @@ Behavior:
 
 - when `turn <= freeze_until_turn`, the rules LLM step is skipped and the previous rules are carried forward in a new versioned wrapper
 - after the freeze window, rule updates are expected to stay within `max_changes_per_turn`
+
+### `workshop`
+
+Optional presentation metadata describing who generated language is for. Rendered into menu-generation (`live_menu`) and turn-narrative (`metrics-update`) prompts as `workshop_guidance`; scenarios without it render exactly as before. Unknown fields are a load error.
+
+```yaml
+workshop:
+  audience: "professional colleagues with no AI background"
+  tone: "plain, jargon-free, brisk"
+```
+
+Supported fields:
+
+- `audience` (string) – who reads the handouts and hears the narrative
+- `tone` (string) – the register to write in
+
+This tunes the model's wording, not the workshop leader's: she knows the audience and picks the voice herself (partly through this block). Handout *language* (e.g. German) is `output_language`, not this block.
 
 ### `store` (optional)
 
@@ -590,6 +608,7 @@ Recognized files:
 - `metrics-update.md`
 - `constitutional-referee.md`
 - `constitutional-referee-correction.md`
+- `live_menu.md` (workshop menu generation)
 - `actor_<actor_id>.md` (actor-specific system prompt)
 
 ### `user-prompts/`
@@ -602,6 +621,7 @@ Recognized files:
 - `metrics-update.md`
 - `constitutional-referee.md`
 - `constitutional-referee-correction.md`
+- `live_menu.md` (workshop menu generation)
 
 ### Rendering and Available Variables
 
@@ -613,10 +633,11 @@ Both override directories are rendered as Jinja templates in a sandboxed environ
 - `actors_list`, `metrics_list` (pre-rendered text blocks)
 - `constitution` (empty string when the scenario defines none)
 - `output_language`
+- `workshop_guidance` (empty string unless the scenario declares a `workshop:` block)
 - `actor_id`, `actor_name`, `actor_description`, `actor_short_description` (populated only for actor prompts)
 - `metric_<metric_id>` for every metric, carrying its current value
 
-`user-prompts/` templates receive a turn-aware context instead: `turn`, `time_period`, `metrics_json`, `world_state`, `historical_summary`, `notepad`, `output_language`, and `metric_<metric_id>`.
+`user-prompts/` templates receive a turn-aware context instead: `turn`, `time_period`, `metrics_json`, `world_state`, `historical_summary`, `notepad`, `output_language`, `workshop_guidance`, and `metric_<metric_id>`.
 
 When the scenario declares a `store:` block they also receive `store` (see `store` above) and `has_store`. In an actor prompt `store` is scoped to that actor's own records; elsewhere it spans every actor.
 

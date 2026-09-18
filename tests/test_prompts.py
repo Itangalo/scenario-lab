@@ -419,3 +419,21 @@ def test_actor_prompt_previous_actions_empty_on_first_turn(mock_scenario):
     builder = PromptBuilder(mock_scenario)
     _, user = builder.build_actor_prompt("actor1", turn=1, triggered_events=[])
     assert "PREV:" not in user
+
+
+def test_live_menu_prompt_carries_workshop_guidance(mock_scenario):
+    from scenario_lab.models import WorkshopConfig
+
+    mock_scenario.config.workshop = WorkshopConfig(audience="newcomers", tone="plain")
+    builder = PromptBuilder(mock_scenario)
+    system, user = builder.build_live_menu_prompt("actor1", 1, [], 6)
+    assert "Audience: newcomers" in system
+    assert "Tone: plain" in user
+
+
+def test_prompts_omit_workshop_block_when_unset(mock_scenario):
+    builder = PromptBuilder(mock_scenario)
+    system, user = builder.build_live_menu_prompt("actor1", 1, [], 6)
+    assert "Audience:" not in system + user
+    _, metrics_user = builder.build_metrics_prompt(1, {}, [])
+    assert "Who this narrative is for" not in metrics_user

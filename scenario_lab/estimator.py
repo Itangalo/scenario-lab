@@ -221,10 +221,13 @@ class CostEstimator:
             model = model[0]
 
         # Get pricing for the route, falling back to the default estimate for
-        # models missing from the cache.
-        from .pricing import DEFAULT_PRICING, get_pricing_for
+        # models missing from the cache. Route through CostCalculator so
+        # normalization and known-zero-marginal-cost ids apply here too.
+        from .pricing import get_pricing_for
 
-        pricing = get_pricing_for(model) or DEFAULT_PRICING
+        pricing = get_pricing_for(model) or CostCalculator.get_model_pricing(
+            model.model
+        )
 
         # Assume 60/40 split between prompt and completion tokens
         prompt_tokens = int(tokens * 0.6)

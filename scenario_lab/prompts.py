@@ -78,6 +78,7 @@ class PromptBuilder:
             "constitutional_referee_system": (system_dir / "constitutional-referee.md").read_text(encoding="utf-8"),
             "constitutional_referee_correction_system": (system_dir / "constitutional-referee-correction.md").read_text(encoding="utf-8"),
             "statement_relevance_system": (system_dir / "statement_relevance.md").read_text(encoding="utf-8"),
+            "live_menu_system": (system_dir / "live_menu.md").read_text(encoding="utf-8"),
         }
 
         self.user_templates = {
@@ -94,6 +95,7 @@ class PromptBuilder:
             "constitutional_referee": (user_dir / "constitutional-referee.md").read_text(encoding="utf-8"),
             "constitutional_referee_correction": (user_dir / "constitutional-referee-correction.md").read_text(encoding="utf-8"),
             "statement_relevance": (user_dir / "statement_relevance.md").read_text(encoding="utf-8"),
+            "live_menu": (user_dir / "live_menu.md").read_text(encoding="utf-8"),
         }
 
     def _get_system_prompt(self, prompt_type: str, actor_id: Optional[str] = None) -> str:
@@ -173,6 +175,7 @@ class PromptBuilder:
             "metrics_list": self._format_metrics_list(),
             "constitution": self.scenario.constitution or "",
             "output_language": self.scenario.config.output_language,
+            "workshop_guidance": self.scenario.config.workshop.render_guidance(),
             "actor_id": actor_id,
             "actor_name": "",
             "actor_description": "",
@@ -345,6 +348,7 @@ class PromptBuilder:
         "previous_actions": "the actor's own response from the previous turn",
         "scenario_description": "scenario.yaml, description",
         "scenario_name": "scenario.yaml, name",
+        "workshop_guidance": "scenario.yaml, workshop block (audience/tone)",
         "triggered_events_text": "the events that fired this turn",
     }
 
@@ -466,7 +470,10 @@ class PromptBuilder:
             # block is actually for once the narrative has moved on.
             "background_context": self._background_context_for_turn(turn),
             "output_language": self.scenario.config.output_language,
-            # Lets templates branch on the emergent-events policy (for example
+            # Who generated language is for (scenario.yaml `workshop:` block).
+            # Empty unless declared, so templates without the block render
+            # exactly as before.
+            "workshop_guidance": self.scenario.config.workshop.render_guidance(),            # Lets templates branch on the emergent-events policy (for example
             # to explain the tracked notepad section) without hardcoding any
             # of its wording.
             "emergent_events_enabled": self.scenario.config.emergent_events.enabled,
@@ -594,6 +601,42 @@ class PromptBuilder:
         context["triggered_events"] = self._format_triggered_events(triggered_events)
 
         # Render user prompt
+        user = self._render(template, context, context.get("turn"))
+
+        return system, user
+
+    def build_live_menu_prompt(
+        self,
+        actor_id: str,
+        turn: int,
+        triggered_events: list[dict],
+        max_options: int,
+        samples_text: Optional[list[str]] = None,
+    ) -> tuple[str, str]:
+        """Build the workshop-menu prompt for one actor.
+
+        Same situation block as the actor prompt (metrics, world, history,
+        events, statement ledger) but asking for a short menu of distinct
+        options instead of a free-form action. ``samples_text`` carries
+        independently sampled drafts for the sample-distill strategy; None
+        (falsy) means the direct strategy, and the template drops that block.
+
+        Returns:
+            (system_prompt, user_prompt)
+        """
+        system = self._get_system_prompt("live_menu", actor_id)
+        template = self._get_user_template("live_menu")
+
+        context = self._get_common_context(turn)
+        context["triggered_events"] = self._format_triggered_events(triggered_events)
+        context["max_options"] = max_options
+        context["samples_text"] = samples_text or []
+
+        actor = self.scenario.actors.get(actor_id)
+        if actor is not None:
+            context["actor_name"] = actor.name
+            context["statement_ledger"] = render_ledger(actor)
+
         user = self._render(template, context, context.get("turn"))
 
         return system, user

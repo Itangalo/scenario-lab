@@ -111,6 +111,17 @@ class CostCalculator:
     _unknown_models_warned = set()  # Track which unknown models we've warned about
     _pricing_cache = get_pricing_cache()
 
+    # Model ids served through an authenticated local bridge bill to that
+    # account, not to API credits. The `-free` contributor tier has no
+    # marginal cost: price it at zero instead of the unknown-model default
+    # (which would overstate it by orders of magnitude). Exact ids only, so
+    # any other unknown model keeps warning as before.
+    _zero_marginal_cost_models = frozenset(
+        {
+            "opencode/muse-spark-1.3-contributor-free",
+        }
+    )
+
     @staticmethod
     def normalize_model_name(model: str) -> str:
         """Normalize model name for pricing lookup.
@@ -155,6 +166,8 @@ class CostCalculator:
             Dict with "prompt" and "completion" pricing per million tokens
         """
         normalized = CostCalculator.normalize_model_name(model)
+        if normalized in CostCalculator._zero_marginal_cost_models:
+            return {"prompt": 0.0, "completion": 0.0}
         pricing = CostCalculator._pricing_cache.get_model_pricing(normalized)
         if pricing is not None:
             return pricing

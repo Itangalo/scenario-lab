@@ -29,6 +29,8 @@ from pathlib import Path
 from statistics import mean
 from typing import Any, Optional
 
+from .output import is_run_dirname
+
 
 @dataclass
 class CausalJob:
@@ -145,7 +147,7 @@ def discover_causal_branches(
         return groups
 
     for run_dir in sorted(runs_dir.iterdir()):
-        if not run_dir.is_dir() or not run_dir.name.startswith("run-"):
+        if not run_dir.is_dir() or not is_run_dirname(run_dir.name):
             continue
         config = _load_json_safe(run_dir / "config.json")
         if not isinstance(config, dict):

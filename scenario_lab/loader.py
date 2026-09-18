@@ -16,6 +16,7 @@ from .models import (
     LLMConfig,
     EmergentEventsConfig,
     RuleEvolutionConfig,
+    WorkshopConfig,
     ConstitutionalEnforcementConfig,
     LoggingConfig,
     Metric,
@@ -868,6 +869,10 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
                     "freeze_until_turn": base_config.rule_evolution.freeze_until_turn,
                     "max_changes_per_turn": base_config.rule_evolution.max_changes_per_turn,
                 },
+                "workshop": {
+                    "audience": base_config.workshop.audience,
+                    "tone": base_config.workshop.tone,
+                },
                 # A variant inherits its base's declared state wholesale. The
                 # schema is physics, and an arm that quietly held a different
                 # set of columns from its siblings would make the batch
@@ -964,6 +969,20 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
         max_changes_per_turn=rule_evolution_data.get("max_changes_per_turn", 6),
     )
 
+    workshop_data = data.get("workshop", {})
+    if not isinstance(workshop_data, dict):
+        raise ValueError(f"{path}: 'workshop' must be a mapping, got: {workshop_data!r}")
+    _workshop_unknown = set(workshop_data) - {"audience", "tone"}
+    if _workshop_unknown:
+        raise ValueError(
+            f"{path}: workshop has unknown field(s) {sorted(_workshop_unknown)}; "
+            "known fields are 'audience' and 'tone'."
+        )
+    workshop = WorkshopConfig(
+        audience=workshop_data.get("audience"),
+        tone=workshop_data.get("tone"),
+    )
+
     constitutional_data = data.get("constitutional_enforcement", {})
     constitutional_enforcement = ConstitutionalEnforcementConfig(
         max_attempts=constitutional_data.get("max_attempts", 2),
@@ -996,6 +1015,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
         llm=llm_config,
         emergent_events=emergent_events,
         rule_evolution=rule_evolution,
+        workshop=workshop,
         constitutional_enforcement=constitutional_enforcement,
         logging=logging_config,
         patches=[*base_patches, *resolve_patch_specs(child_patch_specs, path.parent)],

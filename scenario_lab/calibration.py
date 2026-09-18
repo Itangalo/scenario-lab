@@ -7,6 +7,8 @@ from pathlib import Path
 from statistics import mean
 from typing import Any
 
+from .output import is_run_dirname
+
 
 def _round2(value: float) -> float:
     return round(value, 2)
@@ -46,7 +48,7 @@ def analyze_runs(scenario_dir: Path, max_runs: int | None = None) -> dict[str, A
     if not runs_dir.exists():
         raise ValueError(f"No runs directory found: {runs_dir}")
 
-    run_dirs = sorted([d for d in runs_dir.iterdir() if d.is_dir() and d.name.startswith("run-")])
+    run_dirs = sorted([d for d in runs_dir.iterdir() if d.is_dir() and is_run_dirname(d.name)])
     if max_runs is not None:
         run_dirs = run_dirs[-max_runs:]
 

@@ -29,7 +29,7 @@ from .model_audit import (
 from .models import LLMConfig
 from .loader import parse_route
 from .orchestrator import run_simulation
-from .output import OutputManager
+from .output import OutputManager, is_run_dirname
 from .validator import validate_scenario
 
 
@@ -43,6 +43,65 @@ def apply_model_override(llm_config, model: str):
     llm_config.summary = route
     llm_config.analysis = route
     llm_config.referee = route
+
+
+def apply_config_overrides(scenario, overrides) -> None:
+    """Apply repeatable `--override key=value` flags to a loaded scenario.
+
+    Shared by `run` and the live commands. Values coerce to int/float/bool
+    where they parse, else stay strings; dotted paths navigate the config
+    (e.g. `output_language=German`, `llm.temperature=0.5`). Unknown paths
+    warn and skip rather than failing.
+    """
+    for override in overrides or []:
+        if "=" not in override:
+            print(f"Warning: Invalid override format '{override}', skipping. Use 'key=value'.")
+            continue
+
+        key_path, value = override.split("=", 1)
+        keys = key_path.split(".")
+
+        # Try to convert value to int/float/bool
+        if value.lower() == "true":
+            value = True
+        elif value.lower() == "false":
+            value = False
+        else:
+            try:
+                if "." in value:
+                    value = float(value)
+                else:
+                    value = int(value)
+            except ValueError:
+                pass  # Keep as string
+
+        # Navigate to the correct object
+        target = scenario.config
+        for i, key in enumerate(keys[:-1]):
+            if hasattr(target, key):
+                target = getattr(target, key)
+            elif isinstance(target, dict) and key in target:
+                target = target[key]
+            else:
+                print(f"Warning: Could not find key '{key}' in path '{key_path}', skipping override.")
+                target = None
+                break
+
+        if target is not None:
+            last_key = keys[-1]
+            if hasattr(target, last_key):
+                setattr(target, last_key, value)
+                print(f"  → Overrode {key_path} = {value}")
+            elif isinstance(target, dict):
+                target[last_key] = value
+                print(f"  → Overrode {key_path} = {value}")
+            else:
+                # Special case for ScenarioConfig fields that might not be dicts but we want to set attr
+                try:
+                    setattr(target, last_key, value)
+                    print(f"  → Overrode {key_path} = {value}")
+                except Exception as e:
+                    print(f"Warning: Could not set '{last_key}' on {type(target)}: {e}")
 
 
 def run_model_preflight_checks(scenario) -> bool:
@@ -304,7 +363,7 @@ def resolve_integrity_targets(target: Path, max_runs: Optional[int] = None) -> l
     if not target.exists():
         raise ValueError(f"Target does not exist: {target}")
 
-    if target.is_dir() and target.name.startswith("run-") and target.parent.name == "runs":
+    if target.is_dir() and is_run_dirname(target.name) and target.parent.name == "runs":
         return [target]
 
     runs_dir = target
@@ -313,7 +372,7 @@ def resolve_integrity_targets(target: Path, max_runs: Optional[int] = None) -> l
 
     if runs_dir.is_dir():
         run_dirs = sorted(
-            path for path in runs_dir.iterdir() if path.is_dir() and path.name.startswith("run-")
+            path for path in runs_dir.iterdir() if path.is_dir() and is_run_dirname(path.name)
         )
         if max_runs is not None:
             run_dirs = run_dirs[-max_runs:]
@@ -438,13 +497,13 @@ def collect_batch_resume_runs(targets: list[Path]) -> list[Path]:
         if not target.exists():
             raise ValueError(f"Target does not exist: {target}")
 
-        if target.is_dir() and target.parent.name == "runs" and target.name.startswith("run-"):
+        if target.is_dir() and target.parent.name == "runs" and is_run_dirname(target.name):
             collected.append(target)
             continue
 
         if target.is_dir() and target.name == "runs":
             run_dirs = sorted(
-                path for path in target.iterdir() if path.is_dir() and path.name.startswith("run-")
+                path for path in target.iterdir() if path.is_dir() and is_run_dirname(path.name)
             )
             collected.extend(run_dir for run_dir in run_dirs if is_incomplete_run(run_dir))
             continue
@@ -452,7 +511,7 @@ def collect_batch_resume_runs(targets: list[Path]) -> list[Path]:
         if target.is_dir() and (target / "runs").is_dir():
             runs_dir = target / "runs"
             run_dirs = sorted(
-                path for path in runs_dir.iterdir() if path.is_dir() and path.name.startswith("run-")
+                path for path in runs_dir.iterdir() if path.is_dir() and is_run_dirname(path.name)
             )
             collected.extend(run_dir for run_dir in run_dirs if is_incomplete_run(run_dir))
             continue
@@ -1132,6 +1191,165 @@ def main():
         help="Where to write samples (default: <run>/turn-NN/actor-samples/)",
     )
 
+    # Live-menu command (live workshop games)
+    live_menu_parser = subparsers.add_parser(
+        "live-menu",
+        help="Generate printable per-actor menus for one live workshop turn",
+    )
+    live_menu_parser.add_argument(
+        "target",
+        type=Path,
+        help="Scenario directory (turn 1: starts a new live game) or live run directory",
+    )
+    live_menu_parser.add_argument(
+        "--turn", type=int, required=True, help="Turn to generate menus for"
+    )
+    live_menu_parser.add_argument(
+        "--max-options", type=int, default=6, help="Options per actor at most (default: 6)"
+    )
+    live_menu_parser.add_argument(
+        "--strategy",
+        choices=["direct", "sample-distill"],
+        default="direct",
+        help="Menu strategy (default: direct)",
+    )
+    live_menu_parser.add_argument(
+        "--samples",
+        type=int,
+        default=4,
+        help="Drafts per actor for sample-distill (default: 4)",
+    )
+    live_menu_parser.add_argument(
+        "--initial-state",
+        type=Path,
+        default=None,
+        help="JSON file with starting-state overrides (scenario target only)",
+    )
+    live_menu_parser.add_argument("--model", type=str, default=None, help="Override all LLM models")
+    live_menu_parser.add_argument(
+        "--seed",
+        type=int,
+        default=None,
+        help="Dice RNG seed for a new live game (default: random)",
+    )
+    live_menu_parser.add_argument(
+        "--skip-model-checks",
+        action="store_true",
+        help="Bypass the model hygiene prompt",
+    )
+    live_menu_parser.add_argument(
+        "--override",
+        action="append",
+        default=None,
+        help="Override config (e.g. 'output_language=German'); carried into every turn",
+    )
+    live_menu_parser.add_argument(
+        "--log-llm-io",
+        action="store_true",
+        help="Write per-call LLM prompt/response transcripts to turn-XX/llm-io/",
+    )
+
+    # Live-resolve command (live workshop games)
+    live_resolve_parser = subparsers.add_parser(
+        "live-resolve",
+        help="Resolve one live workshop turn from the teams' picks",
+    )
+    live_resolve_parser.add_argument("run_dir", type=Path, help="Path to live run directory")
+    live_resolve_parser.add_argument(
+        "--turn", type=int, required=True, help="Turn to resolve"
+    )
+    live_resolve_parser.add_argument(
+        "--actor-action",
+        action="append",
+        default=None,
+        help="Fix a pick non-interactively: 'actor_id=3' or 'actor_id=free text' (repeatable)",
+    )
+    live_resolve_parser.add_argument("--model", type=str, default=None, help="Override all LLM models")
+    live_resolve_parser.add_argument(
+        "--no-auto-menu",
+        action="store_true",
+        help="Do not auto-generate the next turn's menus after resolving",
+    )
+    live_resolve_parser.add_argument(
+        "--log-llm-io",
+        action="store_true",
+        help="Write per-call LLM prompt/response transcripts to turn-XX/llm-io/",
+    )
+
+    # Live launcher command (guided start/resume for workshop games)
+    live_parser = subparsers.add_parser(
+        "live",
+        help="Start or resume a live workshop game, guided",
+    )
+    live_parser.add_argument(
+        "target",
+        type=Path,
+        nargs="?",
+        default=None,
+        help="Scenario directory (new game) or live run directory (resume); "
+        "skips the questions when given",
+    )
+    live_parser.add_argument(
+        "--turn", type=int, default=None, help="Turn to prepare (default: 1 for a new game, next unfinished for a resume)"
+    )
+    live_parser.add_argument(
+        "--scenarios",
+        type=Path,
+        default=Path("scenarios"),
+        help="Directory holding scenario directories (default: scenarios)",
+    )
+    live_parser.add_argument(
+        "--max-options", type=int, default=6, help="Options per actor at most (default: 6)"
+    )
+    live_parser.add_argument(
+        "--strategy",
+        choices=["direct", "sample-distill"],
+        default="direct",
+        help="Menu strategy (default: direct)",
+    )
+    live_parser.add_argument(
+        "--samples",
+        type=int,
+        default=4,
+        help="Drafts per actor for sample-distill (default: 4)",
+    )
+    live_parser.add_argument(
+        "--initial-state",
+        type=Path,
+        default=None,
+        help="JSON file with starting-state overrides (new game from a scenario only)",
+    )
+    live_parser.add_argument("--model", type=str, default=None, help="Override all LLM models")
+    live_parser.add_argument(
+        "--actor-action",
+        action="append",
+        default=None,
+        help="Fix a pick non-interactively: 'actor_id=pick' (repeatable; "
+        "used when resolving a pending turn without the picker)",
+    )
+    live_parser.add_argument(
+        "--seed",
+        type=int,
+        default=None,
+        help="Dice RNG seed for a new live game (default: random)",
+    )
+    live_parser.add_argument(
+        "--skip-model-checks",
+        action="store_true",
+        help="Bypass the model hygiene prompt",
+    )
+    live_parser.add_argument(
+        "--override",
+        action="append",
+        default=None,
+        help="Override config (e.g. 'output_language=German'); carried into every turn",
+    )
+    live_parser.add_argument(
+        "--log-llm-io",
+        action="store_true",
+        help="Write per-call LLM prompt/response transcripts to turn-XX/llm-io/",
+    )
+
     # Costs command
     costs_parser = subparsers.add_parser("costs", help="Display cost report for a run")
     costs_parser.add_argument("run_dir", type=Path, help="Path to run directory")
@@ -1522,7 +1740,7 @@ def main():
                 and not config.get("event_overrides")
             )
 
-        if target.name.startswith("run-") and (target / "config.json").exists():
+        if is_run_dirname(target.name) and (target / "config.json").exists():
             parent_run = target
             scenario_dir = target.parent.parent
         else:
@@ -1530,7 +1748,7 @@ def main():
             runs_dir = scenario_dir / "runs"
             candidates = [
                 d for d in sorted(runs_dir.iterdir())
-                if d.is_dir() and d.name.startswith("run-") and _is_baseline_completed(d)
+                if d.is_dir() and is_run_dirname(d.name) and _is_baseline_completed(d)
             ] if runs_dir.is_dir() else []
             if not candidates and not args.report_only:
                 print(f"❌ No completed baseline run found in {runs_dir}")
@@ -2382,6 +2600,15 @@ def main():
         print(f"Results saved to: {args.run_dir}")
         return 0
 
+    if args.command == "live-menu":
+        return run_live_menu_command(args)
+
+    if args.command == "live-resolve":
+        return run_live_resolve_command(args)
+
+    if args.command == "live":
+        return run_live_command(args)
+
     if args.command == "sample-actor":
         from .actor_sampling import is_run_dir, sample_actor, write_samples
 
@@ -2739,56 +2966,7 @@ def main():
             print(f"    Notes: {state.notes}")
     
     # Apply overrides
-    if args.override:
-        for override in args.override:
-            if "=" not in override:
-                print(f"Warning: Invalid override format '{override}', skipping. Use 'key=value'.")
-                continue
-            
-            key_path, value = override.split("=", 1)
-            keys = key_path.split(".")
-            
-            # Try to convert value to int/float/bool
-            if value.lower() == "true":
-                value = True
-            elif value.lower() == "false":
-                value = False
-            else:
-                try:
-                    if "." in value:
-                        value = float(value)
-                    else:
-                        value = int(value)
-                except ValueError:
-                    pass  # Keep as string
-            
-            # Navigate to the correct object
-            target = scenario.config
-            for i, key in enumerate(keys[:-1]):
-                if hasattr(target, key):
-                    target = getattr(target, key)
-                elif isinstance(target, dict) and key in target:
-                    target = target[key]
-                else:
-                    print(f"Warning: Could not find key '{key}' in path '{key_path}', skipping override.")
-                    target = None
-                    break
-            
-            if target is not None:
-                last_key = keys[-1]
-                if hasattr(target, last_key):
-                    setattr(target, last_key, value)
-                    print(f"  → Overrode {key_path} = {value}")
-                elif isinstance(target, dict):
-                    target[last_key] = value
-                    print(f"  → Overrode {key_path} = {value}")
-                else:
-                    # Special case for ScenarioConfig fields that might not be dicts but we want to set attr
-                    try:
-                        setattr(target, last_key, value)
-                        print(f"  → Overrode {key_path} = {value}")
-                    except Exception as e:
-                        print(f"Warning: Could not set '{last_key}' on {type(target)}: {e}")
+    apply_config_overrides(scenario, args.override)
 
     print(f"✓ Loaded: {scenario.config.name}")
     print(f"  Actors: {len(scenario.actors)}")
@@ -2919,6 +3097,360 @@ def run_dry(scenario):
     print("\n" + "=" * 60)
     print("Dry run complete. Use without --dry-run to execute.")
     print("=" * 60)
+
+
+def run_live_menu_command(args, llm_client=None) -> int:
+    """Handler for `live-menu`: events + printable menus for one live turn."""
+    from .live import (
+        LiveError,
+        is_live_run,
+        mark_live_run,
+        open_live_state,
+        read_run_seed,
+        run_menu_turn,
+    )
+
+    if args.max_options < 1:
+        print("❌ --max-options must be at least 1.")
+        return 1
+    if args.strategy == "sample-distill" and args.samples < 1:
+        print("❌ --samples must be at least 1.")
+        return 1
+
+    try:
+        scenario, run_dir = open_live_state(
+            args.target, args.turn, initial_state=args.initial_state
+        )
+    except LiveError as e:
+        print(f"❌ Error: {e}")
+        return 1
+    except (FileNotFoundError, ValueError) as e:
+        print(f"❌ Error loading: {e}")
+        return 1
+
+    if scenario.config.requires_initial_state and scenario.initial_state is None:
+        print("❌ This scenario declares requires_initial_state: pass --initial-state.")
+        return 1
+
+    if args.turn is not None and args.turn > scenario.config.max_turns:
+        print(
+            f"❌ {scenario.config.name} plays {scenario.config.max_turns} turns – "
+            f"turn {args.turn} does not exist. The game is over: start a new "
+            "one, or branch this run for what-if analysis."
+        )
+        return 1
+
+    if args.model:
+        apply_model_override(scenario.config.llm, args.model)
+
+    # Config overrides apply to this turn's calls and ride along in menu.json
+    # so later turns (separate processes) resolve under the same settings.
+    apply_config_overrides(scenario, getattr(args, "override", None))
+
+    if run_dir is None:
+        # New live game from a scenario.
+        if args.seed is not None:
+            scenario.config.random_seed = args.seed
+        elif scenario.config.random_seed is None:
+            scenario.config.random_seed = random.getrandbits(64)
+        output_base = resolve_output_base(args.target)
+        output_manager = OutputManager(scenario, output_base)
+        run_dir = output_manager.start_run(prefix="live-")
+        mark_live_run(run_dir)
+        print(f"New live game: {run_dir}")
+    else:
+        if not is_live_run(run_dir):
+            print(
+                f"⚠️  {run_dir.name} is not marked as a live game – continuing anyway."
+            )
+        seed = read_run_seed(run_dir)
+        if seed is not None:
+            scenario.config.random_seed = seed
+        output_manager = OutputManager(scenario, run_dir.parent.parent)
+        output_manager.run_dir = run_dir
+
+    if args.log_llm_io:
+        scenario.config.logging.llm_io = True
+
+    if not args.skip_model_checks:
+        if not run_model_preflight_checks(scenario):
+            return 1
+
+    try:
+        menus = run_menu_turn(
+            scenario,
+            output_manager,
+            run_dir,
+            args.turn,
+            max_options=args.max_options,
+            strategy=args.strategy,
+            samples=args.samples,
+            llm_client=llm_client,
+            config_overrides=getattr(args, "override", None),
+        )
+    except LiveError as e:
+        print(f"❌ Error: {e}")
+        return 1
+
+    print(f"\nHandouts in: {run_dir / f'turn-{args.turn:02d}' / 'live'}")
+    for actor_id, menu in menus.items():
+        print(f"  {menu.actor_name}: {len(menu.options)} options")
+    print("Print briefing.md + menu-<actor>.md, let the teams deliberate, then:")
+    print(f"  python -m scenario_lab.cli live {run_dir}")
+    print("  (or live-resolve directly)")
+    return 0
+
+
+def run_live_resolve_command(args, llm_client=None, input_fn=input) -> int:
+    """Handler for `live-resolve`: settle one live turn from the teams' picks."""
+    from .live import LiveCancelled, LiveError, parse_actor_action_specs, run_resolve_turn
+
+    specs: dict[str, str] = {}
+    try:
+        specs = parse_actor_action_specs(args.actor_action)
+    except LiveError as e:
+        print(f"❌ Error: {e}")
+        return 1
+
+    try:
+        result = run_resolve_turn(
+            args.run_dir,
+            args.turn,
+            specs,
+            interactive=True,
+            model_override=args.model,
+            log_llm_io=args.log_llm_io,
+            llm_client=llm_client,
+            input_fn=input_fn,
+        )
+    except LiveCancelled as e:
+        print(f"Cancelled: {e}")
+        return 1
+    except LiveError as e:
+        print(f"❌ Error: {e}")
+        return 1
+    except (FileNotFoundError, ValueError) as e:
+        print(f"❌ Error loading: {e}")
+        return 1
+
+    print(f"\nTurn {result.turn} ({result.time_period}) resolved in {args.run_dir.name}:")
+    for actor_id in result.actor_outputs:
+        print(f"  {actor_id}: pick recorded")
+    print(f"Events: {', '.join(e.get('id', '?') for e in result.triggered_events) or '(none)'}")
+    if not args.no_auto_menu:
+        print(f"Turn {result.turn + 1} handouts are ready – print and deliberate.")
+    else:
+        print("Generate the next turn with:")
+        print(f"  python -m scenario_lab.cli live-menu {args.run_dir} --turn {result.turn + 1}")
+    return 0
+
+
+def run_live_command(args, input_fn=input, llm_client=None) -> int:
+    """Handler for `live`: guided start-or-resume for a workshop game.
+
+    With a target it behaves like `live-menu` (scenario → new game, run →
+    next unfinished turn). Without one it asks: which live-ready scenario
+    (skipped when only one exists), then resume-or-new (skipped when no
+    previous live games exist).
+    """
+    import argparse
+
+    from .actor_sampling import is_run_dir
+    from .live import (
+        LiveCancelled,
+        LiveError,
+        ask_choice,
+        completed_turns,
+        find_live_runs,
+        find_live_scenarios,
+        newest_pending_turn,
+    )
+
+    def menu_namespace(target, turn):
+        return argparse.Namespace(
+            target=target,
+            turn=turn,
+            max_options=args.max_options,
+            strategy=args.strategy,
+            samples=args.samples,
+            initial_state=args.initial_state,
+            model=args.model,
+            seed=args.seed,
+            skip_model_checks=args.skip_model_checks,
+            log_llm_io=args.log_llm_io,
+            override=args.override,
+        )
+
+    if args.target is not None:
+        if not args.target.exists():
+            print(f"❌ Target does not exist: {args.target}")
+            return 1
+        if is_run_dir(args.target):
+            return _live_resume_target(args, args.target, llm_client, input_fn)
+        return run_live_menu_command(
+            menu_namespace(args.target, args.turn or 1), llm_client=llm_client
+        )
+
+    if not sys.stdin.isatty() and input_fn is input:
+        print(
+            "❌ Nothing to start from: pass a scenario or run directory, "
+            "or run in a terminal for the guided questions."
+        )
+        return 1
+
+    try:
+        scenarios = find_live_scenarios(args.scenarios)
+    except OSError as e:
+        print(f"❌ Error scanning scenarios: {e}")
+        return 1
+    if not scenarios:
+        print(
+            f"❌ No live-ready scenarios under {args.scenarios}. A scenario "
+            "becomes live-ready by declaring a `workshop:` block in "
+            "scenario.yaml (see scenarios/global-ai-live)."
+        )
+        return 1
+    if len(scenarios) == 1:
+        scenario = scenarios[0]
+        print(f"Scenario: {scenario.name} (the only live-ready one)")
+    else:
+        try:
+            picked = ask_choice(
+                "Which scenario?", [s.name for s in scenarios], input_fn
+            )
+        except LiveCancelled as e:
+            print(f"Cancelled: {e}")
+            return 1
+        scenario = scenarios[picked]
+
+    runs = find_live_runs(scenario.path)
+    if not runs:
+        print("No previous live games – starting a new one.")
+        return run_live_menu_command(
+            menu_namespace(scenario.path, 1), llm_client=llm_client
+        )
+
+    options = ["Start a new game"]
+    for run in runs:
+        if run.pending_turn is not None:
+            options.append(
+                f"Resume {run.run_dir.name} – turn {run.pending_turn} menus ready"
+            )
+        elif run.completed_turns is not None:
+            options.append(
+                f"Resume {run.run_dir.name} – {run.completed_turns} turn(s) complete"
+            )
+        else:
+            options.append(f"Resume {run.run_dir.name} – state unreadable")
+    try:
+        picked = ask_choice(
+            "Resume a previous game or start a new one?", options, input_fn
+        )
+    except LiveCancelled as e:
+        print(f"Cancelled: {e}")
+        return 1
+    if picked == 0:
+        return run_live_menu_command(
+            menu_namespace(scenario.path, 1), llm_client=llm_client
+        )
+    run = runs[picked - 1]
+    return _live_continue_game(args, run.run_dir, llm_client, input_fn)
+
+
+def _live_continue_game(args, run_dir, llm_client=None, input_fn=input) -> int:
+    """Continue a live game at its next unfinished turn.
+
+    A turn with ready menus resolves right here (picker when interactive,
+    flags or a printed pointer otherwise); anything older prepares the next
+    turn's menus. This is what keeps the whole workshop on one command.
+    """
+    import argparse
+
+    from .live import completed_turns, newest_pending_turn
+
+    pending = newest_pending_turn(run_dir)
+    if pending is None:
+        last = completed_turns(run_dir)
+        if last is None:
+            print(f"❌ Cannot read completed turns in {run_dir.name}.")
+            return 1
+        return run_live_menu_command(
+            argparse.Namespace(
+                target=run_dir,
+                turn=last + 1,
+                max_options=args.max_options,
+                strategy=args.strategy,
+                samples=args.samples,
+                initial_state=None,
+                model=args.model,
+                seed=args.seed,
+                skip_model_checks=args.skip_model_checks,
+                log_llm_io=args.log_llm_io,
+            ),
+            llm_client=llm_client,
+        )
+    if args.actor_action:
+        return run_live_resolve_command(
+            argparse.Namespace(
+                run_dir=run_dir,
+                turn=pending,
+                actor_action=args.actor_action,
+                no_auto_menu=False,
+                model=args.model,
+                log_llm_io=args.log_llm_io,
+            ),
+            llm_client=llm_client,
+            input_fn=input_fn,
+        )
+    if input_fn is input and not sys.stdin.isatty():
+        print(f"Turn {pending} menus are already prepared – print handouts, then:")
+        print(f"  python -m scenario_lab.cli live-resolve {run_dir} --turn {pending}")
+        return 0
+    print(f"Turn {pending} menus are ready – entering picks now.")
+    return run_live_resolve_command(
+        argparse.Namespace(
+            run_dir=run_dir,
+            turn=pending,
+            actor_action=None,
+            no_auto_menu=False,
+            model=args.model,
+            log_llm_io=args.log_llm_io,
+        ),
+        llm_client=llm_client,
+        input_fn=input_fn,
+    )
+
+
+def _live_resume_target(args, run_dir, llm_client=None, input_fn=input) -> int:
+    """Continue a live run at its next unfinished turn (shared helper)."""
+    import argparse
+
+    turn = args.turn
+    if turn is None:
+        return _live_continue_game(args, run_dir, llm_client, input_fn)
+    # An explicit turn with ready menus means "continue this turn", not
+    # "regenerate its menus" (live-menu covers regeneration). Without this,
+    # following the printed pointer reprints menus forever and never resolves.
+    from .live import newest_pending_turn
+
+    if newest_pending_turn(run_dir) == turn:
+        return _live_continue_game(args, run_dir, llm_client, input_fn)
+    return run_live_menu_command(
+        argparse.Namespace(
+            target=run_dir,
+            turn=turn,
+            max_options=args.max_options,
+            strategy=args.strategy,
+            samples=args.samples,
+            initial_state=None,
+            model=args.model,
+            seed=args.seed,
+            skip_model_checks=args.skip_model_checks,
+            log_llm_io=args.log_llm_io,
+            override=args.override,
+        ),
+        llm_client=llm_client,
+    )
 
 
 if __name__ == "__main__":

@@ -202,7 +202,33 @@ def check_run_integrity(run_dir: Path) -> dict[str, Any]:
             )
 
     turn_metrics: dict[int, dict[str, Any]] = {}
+    # A live game routinely rests with its newest turn half-done: events
+    # rolled and menus printed (live/menu.json), resolve still to come. That
+    # pending turn is legitimate workshop state, not a crash – but only in a
+    # run marked live, and only where the resolve artifacts are absent. A
+    # crashed simulated run keeps failing exactly as before.
+    is_live_game = isinstance(config, dict) and bool(config.get("live"))
+    pending_turns: set[int] = set()
+    if is_live_game:
+        from .live import pending_live_turns
+
+        pending_turns = pending_live_turns(run_dir)
     for turn, turn_dir in sorted(turn_dirs.items()):
+        if turn in pending_turns:
+            warnings.append(
+                f"Turn {turn}: menus generated, awaiting resolve (pending live turn)"
+            )
+            events_file = turn_dir / "1-events.json"
+            if events_file.exists():
+                try:
+                    events = _load_json(events_file)
+                    if not isinstance(events, list):
+                        errors.append(f"Turn {turn} events payload must be a list")
+                except json.JSONDecodeError as exc:
+                    errors.append(f"Turn {turn} has invalid 1-events.json: {exc}")
+            else:
+                errors.append(f"Turn {turn} has a menu but no 1-events.json")
+            continue
         required_files = [
             "1-events.json",
             "3-metric-rules.md",
@@ -310,10 +336,18 @@ def check_run_integrity(run_dir: Path) -> dict[str, Any]:
         total_turns = summary.get("total_turns")
         if not isinstance(total_turns, int):
             errors.append("summary.json field 'total_turns' must be an integer")
-        elif turn_dirs and total_turns != max(turn_dirs):
-            errors.append(
-                f"summary.json total_turns={total_turns} does not match highest turn directory={max(turn_dirs)}"
-            )
+        elif turn_dirs:
+            resolved = [t for t in turn_dirs if t not in pending_turns]
+            # summary.json counts resolved turns: a pending live turn (or a
+            # fresh game with menus only) correctly reports fewer than the
+            # highest turn directory.
+            expected_turns = max(resolved) if resolved else 0
+            if total_turns != expected_turns:
+                errors.append(
+                    f"summary.json total_turns={total_turns} does not match "
+                    f"highest resolved turn={expected_turns} "
+                    f"(highest turn directory={max(turn_dirs)})"
+                )
 
         history = summary.get("history")
         history_by_turn: dict[int, dict[str, Any]] = {}

@@ -225,3 +225,31 @@ def test_old_style_model_config_sets_summary_and_referee(tmp_path):
     assert config.llm.summary == ModelRoute("openrouter", "legacy-model")
     assert config.llm.analysis == ModelRoute("openrouter", "legacy-model")
     assert config.llm.referee == ModelRoute("openrouter", "qwen/qwen3-235b-a22b-2507")
+
+
+def test_workshop_block_loads(tmp_path):
+    scenario = load_scenario("scenarios/global-ai-live")
+    assert scenario.config.workshop.audience.startswith("German politicians")
+    assert "jargon-free" in scenario.config.workshop.tone
+    assert "Audience:" in scenario.config.workshop.render_guidance()
+
+
+def test_workshop_unknown_key_errors(setup_scenarios):
+    bad = setup_scenarios / "variants" / "bad-workshop.yaml"
+    bad.write_text(
+        yaml.dump(
+            {"base": "../scenario.yaml", "workshop": {"audience": "x", "mood": "y"}}
+        )
+    )
+    with pytest.raises(ValueError, match="unknown field"):
+        load_scenario(bad)
+
+
+def test_workshop_inherited_and_overridden(setup_scenarios):
+    variant = setup_scenarios / "variants" / "workshop.yaml"
+    variant.write_text(
+        yaml.dump({"base": "../scenario.yaml", "workshop": {"tone": "solemn"}})
+    )
+    config = load_config(variant)
+    assert config.workshop.tone == "solemn"
+    assert config.workshop.audience is None
