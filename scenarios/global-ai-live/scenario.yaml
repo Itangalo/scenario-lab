@@ -21,7 +21,7 @@ research_questions:
     events: [compute_bottleneck, strait_clash, bio_misuse_scare, control_scare]
 
 llm:
-  model: "opencode:opencode/muse-spark-1.3-contributor-free"
+  model: "openrouter:meta/muse-spark-1.3-contributor"
   # The referee (statement-relevance checks) stays on the cheap default
   # deliberately, mirroring europe-2032.
   referee: "openrouter:qwen/qwen3-235b-a22b-2507"
@@ -30,8 +30,7 @@ llm:
   # muse-spark reasons mandatorily and bills it as completion tokens: at the
   # default effort a turn step can spend its whole budget thinking and return
   # nothing parseable. Minimal keeps the live steps fitting (same rationale
-  # as europe-2032). Note: only honored on OpenRouter routes; the opencode
-  # provider owns sampling settings server-side.
+  # as europe-2032).
   reasoning_effort: minimal
   max_tokens_by_task:
     rules: 3500

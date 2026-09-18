@@ -11,7 +11,7 @@ Central question: in a 90-minute live workshop game for German politicians (non-
 - **Actors retuned, ids unchanged** (`us-gov`, `us-labs`, `china`, `eu`): descriptions rewritten for the new theme; statements kept at 3 each with position/commitment/identity mix; EU bridge-mediation replaced by sovereign-capacity (dependence theme), US added jobs framing, China added crisis-aversion.
 - **Background rewritten:** compact mid-2026 world state aimed at non-experts (AI as infrastructure, where the lead sits, what daily life already shows). Original text, shorter than europe-2032's; read europe-2032's background and events for tone/scale first.
 - **Workshop block retuned:** audience is now German politicians without AI background; tone vivid but never sensationalist. `output_language` stays default (English) – the facilitator switches per event with --override.
-- **Unchanged by brief:** max_turns 3, no `store:` block, no constitution, rules frozen all turns, cheap LLM config (opencode spark + minimal reasoning + qwen referee).
+- **Unchanged by brief:** max_turns 3, no `store:` block, no constitution, rules frozen all turns, cheap LLM config (muse-spark on OpenRouter + minimal reasoning + qwen referee).
 - **Spendable purses (8 → 12 metrics):** each actor owns one pool (`us_gov_capital`, `us_labs_resources`, `china_resources`, `eu_capital`; HIGH = more left). Deliberately metrics, not store tables: teams spend in prose, the GM deducts per the price bands in rule 9, pools refill +8 to +12 per turn. No paper JSON needed.
 
 ## Assumptions
