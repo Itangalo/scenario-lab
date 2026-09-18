@@ -15,7 +15,7 @@ allow: 14:30 9
 
 The tooling is plainly machine-written, fast and adaptive, and the defenders are weeks behind. A compromised software component sets off a frantic hunt for backups whose extent nobody can bound. The attribution statements hedge.
 
-At 14:30 on 9 February 2027, in the middle of the response, access to the leading American model family is suspended for users based in the Union. No detailed reason is given, and there is no appeal. Clinics using diagnostic copilots, ministries using drafting assistants, and firms with contracted workflows find the tools refusing prompts. In some places the cut-off is brief. In others it persists.
+At 14:30 on 9 February 2027, in the middle of the response, access to the leading American model is suspended for users based in the Union. No detailed reason is given, and there is no appeal. Clinics using diagnostic copilots, ministries using drafting assistants, and firms with contracted workflows find the tools refusing prompts. In some places the cut-off is brief. In others it persists. The rival American laboratory keeps serving throughout and picks up the traffic within the month, which makes this a migration rather than a blackout, and does nothing to make the migration quick or to make anyone feel less dependent at the end of it.
 
 > **Claire:** the diagnostic assistant says "service unavailable in your region"
 > **Claire:** my region is a hospital
@@ -24,7 +24,7 @@ At 14:30 on 9 February 2027, in the middle of the response, access to the leadin
 >
 > **Claire:** that's not the comfort you think it is
 
-The message lands anyway: core tools can be withdrawn at will. Sofia's Institute, recommended in the autumn to find out what the models can do, is still hiring. What the winter needs is protection, and her note becomes the Grid and Public Services Shield. The President puts the Commission's standing behind it. Emergency segmentation orders go to transmission operators, breaker credentials are rotated, and cross-border response teams drill under civil-protection cover. Energy ministries grumble about costs and competence. Protests over power prices flare around two sites shortlisted for computing, and slow their permits.
+The message lands anyway: core tools can be withdrawn at will. Sofia's Institute, recommended in the autumn to find out what the models can do, is still hiring. What the winter needs is protection, and her note becomes the Grid and Public Services Shield. The President keeps the Commission's weight on it. Emergency segmentation orders go to transmission operators, breaker credentials are rotated, and cross-border response teams drill under civil-protection cover. Energy ministries grumble about costs and competence. Protests over power prices flare around two sites shortlisted for computing, and slow their permits.
 
 Two counterweights soften the blow.
 

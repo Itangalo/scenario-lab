@@ -15,7 +15,7 @@ allow: 15
 
 A port operator in Rotterdam and two university hospitals are back on older systems by morning. Brussels calls it an administrative suspension linked to wartime controls. Washington says little. The opposition papers call it the foresight failure they have been warning about for two years.
 
-The Continuity Command becomes the fallback. Designated hospital, ministry and port workloads move to the pooled middle-power models and to hardened older systems, and satellite backup and rationed power are extended through the autumn. Sofia recommends nothing new, and the President keeps the Commission's weight on the coalition.
+The Continuity Command becomes the fallback. Designated hospital, ministry and port workloads move to the pooled middle-power models and to hardened older systems, and satellite backup and rationed power are extended through the autumn. Sofia recommends nothing new, and the Commission's standing goes behind the coalition.
 
 > **Claire:** the good one is gone again
 > **Claire:** we're on the pooled one. it's fine. it's slower. it's fine

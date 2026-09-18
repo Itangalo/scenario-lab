@@ -10,7 +10,7 @@ next: turn-03-A1
 
 # Copycats
 
-> **January 2027.** A freely downloadable model, close to the leading closed systems, is copied hundreds of thousands of times in its first week. Unlike a closed model, it cannot be withdrawn.
+> **January 2027.** A freely downloadable model, close to the leading closed systems, is copied hundreds of thousands of times in its first week. What is new is not the weights but the box around them: the agent scaffolding, tool connectors and task loops ship with the release. What used to need a team needs an afternoon. Unlike a closed model, none of it can be withdrawn.
 >
 > **February 2027.** Forensic samples of last autumn's grid-intrusion tooling have leaked and been repackaged into kits that need little skill to use, researchers warn.
 

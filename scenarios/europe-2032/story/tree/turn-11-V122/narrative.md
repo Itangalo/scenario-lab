@@ -10,7 +10,7 @@ next: turn-12-V122
 
 # Offices hum, warehouses clank
 
-> **September 2031.** In law firms, accountancies and newsrooms across the Union, the numbers are quiet and good: junior staff producing more drafts, fewer late nights, no layoff memos. Firms that cut early are rehiring.
+> **September 2031.** In law firms, accountancies and newsrooms across the Union, the numbers are quiet and good: junior staff producing more drafts, fewer late nights, no layoff memos. Nobody disputes them any more, which has not made them popular. The good news arrives in the same week as a bill nobody can pay.
 
 It gives Sofia her opening. The Verified Work Assistant Rollout offers audited assistants to consenting town halls and health-queue offices. Every action is logged, automatic approvals are banned, and outside re-checks are paid for out of the funds that sat unspent. Where triage has already cut the waiting lists, the mayors welcome it. Elsewhere, opposition councils point to the still-frozen benefits system and the missing insurance, and refuse. The insurers observe the pilots and write no policies until a statute passes. The civic repair completes its term with the same split it began with.
 
@@ -22,11 +22,11 @@ It gives Sofia her opening. The Verified Work Assistant Rollout offers audited a
 >
 > **Claire:** i know. i'm telling you it landed
 
-The pooled cyber defence holds. The President keeps the Commission's standing on the accession, and the liaison teams on the shared watch floor keep the cooperating municipalities restoring in hours after fresh extortion probes. The towns outside the feed stay dark longer, and the two-speed map hardens into accepted fact.
+The pooled cyber defence holds. The President spends what credit the Commission has left on the accession, and the liaison teams on the shared watch floor keep the cooperating municipalities restoring in hours after fresh extortion probes. The towns outside the feed stay dark longer, and the two-speed map hardens into accepted fact.
 
 The harder shock comes from the docks.
 
-> **November 2031.** Cheap sorting, palletising and welding machines arrive in volume from abroad, with American control software and mostly Chinese hardware.
+> **November 2031.** The machines move out of the sheds. Cheap units arrive in volume from abroad for street cleaning, refuse collection and groundworks, which is the first time most people see one without visiting a warehouse.
 
 The logistics firms order them. Repair shops, care providers and builders find them useless wherever the plan turns out to be wrong. Army staffs note the same split: useful for resupply and perimeter work, not for decisions about targets.
 

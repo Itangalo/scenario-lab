@@ -10,7 +10,7 @@ next: turn-08-P21
 
 # Triage first
 
-Brussels spends the autumn paying to reopen wards rather than breaking new ground. Sofia's note becomes the EU Hospital Helper Fix and Triage Continuity Fund, and the President puts the Commission's standing behind it. Emergency health money buys locum shifts and overtime in France, Germany, the Netherlands and Poland, while joint procurement teams rewrite the referral templates on the European-hosted helpers that clinicians rejected.
+Brussels spends the autumn paying to reopen wards rather than breaking new ground. Sofia's note becomes the EU Hospital Helper Fix and Triage Continuity Fund, and the President takes it to the College and carries it. Emergency health money buys locum shifts and overtime in France, Germany, the Netherlands and Poland, while joint procurement teams rewrite the referral templates on the European-hosted helpers that clinicians rejected.
 
 > **Claire:** a locum from rotterdam covered my nights this week
 > **Claire:** first full sleep in a month. i dreamed about nothing. it was wonderful

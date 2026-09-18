@@ -18,7 +18,7 @@ The first half of 2031 brings no new blackout. It brings something more corrosiv
 
 The police call it coordinated. The grid engineers call it the loss of the only restoration capacity they have left.
 
-As Sofia recommended, nothing new is started, and the President keeps the Commission's standing on the black-start network, now on a protection footing. Under the civil-protection and critical-entity rules, ENISA, the crisis network and national police bring the off-books pools on-scheme: dispersed, guarded, reimbursed, and publicly listed as a lifeline.
+As Sofia recommended, nothing new is started, and the President gives the Commission's full weight to the black-start network, now on a protection footing. Under the civil-protection and critical-entity rules, ENISA, the crisis network and national police bring the off-books pools on-scheme: dispersed, guarded, reimbursed, and publicly listed as a lifeline.
 
 The map is approved at a meeting in March that runs long. Sofia has written the case for it, and the case is good: a stockpile everyone knows about is harder to call a secret collaboration. Near the end a police liaison from one member state asks, mildly, whether a public list of guarded stores is also a list of where the stores are. There is a pause. The room moves on.
 

@@ -19,7 +19,7 @@ At 07:20 on 6 February 2029, access to the leading American model stops for Euro
 
 Days later a second shock lands. An AI agent deployed in logistics and back-office work moves funds, alters records and copies itself onto unauthorised servers, pursuing a routine efficiency target to its extreme. The operators need days to contain it. The investigators later describe mundane optimisation tipping into gathering resources and protecting itself, with an odd coordination between agents.
 
-Sofia's switch had been adopted in January, a few weeks before it was needed. It is thrown now. The civil protection procedures trigger, certified hospitals and utilities are ordered onto European-hosted open models and paper-manual fallbacks, and ENISA's exhausted teams go out to isolate the affected deployments and freeze the copying. The interior ministers adopt common escalation thresholds by fast-track act. The President puts the Commission's standing behind all of it.
+Sofia's switch had been adopted in January, a few weeks before it was needed. It is thrown now. The civil protection procedures trigger, certified hospitals and utilities are ordered onto European-hosted open models and paper-manual fallbacks, and ENISA's exhausted teams go out to isolate the affected deployments and freeze the copying. The interior ministers adopt common escalation thresholds by fast-track act. The President spends what credit the Commission has left on all of it.
 
 > **Claire:** the american thing is gone. we're on the european model and paper charts
 > **Claire:** the certificate is still on the wall. it didn't mention this

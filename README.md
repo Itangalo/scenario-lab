@@ -127,6 +127,14 @@ By default, `run` performs model hygiene checks before execution and warns if th
 
 Each run records a `random_seed` in `config.json`. The seed makes the event *dice* deterministic (same seed, same rolls across `run`, `resume`, and `branch`), while the LLM outputs themselves remain nondeterministic. Pass `--seed INT` to fix the seed, or let Scenario Lab generate a random 64-bit seed. Use `--log-llm-io` to capture every LLM prompt/response under each turn's `llm-io/` directory.
 
+### Run a live workshop game
+
+```bash
+python -m scenario_lab.cli live --skip-model-checks
+```
+
+`live` starts or resumes a game with guided questions (which scenario, new or resume – each skipped when there is only one answer). It prepares the turn menus under `turn-NN/live/`; run it again once the teams have deliberated and it enters the picks, resolves, and prepares the next menus – the whole workshop runs on that one command. (`live-resolve` settles a turn directly, with an interactive picker or repeatable `--actor-action actor_id=pick` flags.) See [docs/LIVE_GAMES.md](docs/LIVE_GAMES.md) for the facilitator guide.
+
 ### Show a scenario overview
 
 ```bash

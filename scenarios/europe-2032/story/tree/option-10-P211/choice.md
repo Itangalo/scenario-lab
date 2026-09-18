@@ -19,7 +19,7 @@ The health directorate, the emergency authority and the disease control centre f
 
 The argument is that a frontier-class model has been loose since 2028, that the 2027 preprint showed what genome models can be asked to design, and that with the builds frozen, sovereignty cannot be the answer this half-year. Containing distributed misuse can be.
 
-The President puts the Commission's political weight behind the shield.
+What political weight the Commission has left goes behind the shield.
 
 What it does not do is restart a single stopped digger.
 

@@ -22,9 +22,9 @@ What follows splits the continent again. Towns tied into the shared early-warnin
 >
 > **Claire:** tell the table thank you from the fridge
 
-Sofia's note becomes the Automated Cyber Incident Triage and Restoration, run through the emergency coordination channels. It funds restores from existing envelopes and lends the allied detection feeds to towns that are not yet plugged in, while the President keeps the Commission's standing on the scale-up. It helps to stop cascades, and it cannot hide the gap. Restoration depends on borrowed detection, and on spare parts that are suddenly harder to buy.
+Sofia's note becomes the Automated Cyber Incident Triage and Restoration, run through the emergency coordination channels. It funds restores from existing envelopes and lends the allied detection feeds to towns that are not yet plugged in, while the President's own weight goes behind the scale-up. It helps to stop cascades, and it cannot hide the gap. Restoration depends on borrowed detection, and on spare parts that are suddenly harder to buy.
 
-> **April 2032.** Washington tightens its chip and model controls again. Volume licences for close buyers stay, but the thresholds drop and the paperwork doubles.
+> **April 2032.** Washington tightens its chip and model controls again, and this time it reaches what Europe already owns: renewals, servicing visits and spare parts for installed equipment need the approvals a new purchase needs. Volume licences for close buyers stay, on paper.
 
 European procurement officers find their orders delayed, downgraded or routed through intermediaries. With domestic fabrication still fenced and idle, officials stop talking about autonomy and start counting inventory.
 

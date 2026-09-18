@@ -13,7 +13,7 @@ allow: 17
 
 > **July 2030.** Access to the leading American model is withdrawn from users in the Union at short notice. No reason is given, and there is no appeal.
 
-Hospitals, ministries and contractors had rebuilt their registries on top of that model. Triage planners in two large hospital groups revert to paper within hours, and a justice ministry pauses the rollout of case summaries.
+Hospitals, ministries and contractors had rebuilt their registries on top of that model. The company's previous model is still sold and still hosted inside the Union, but a registry rebuilt against one system does not accept another by Friday, and every clinical sign-off has to be done again. Triage planners in two large hospital groups revert to paper within hours, and a justice ministry pauses the rollout of case summaries.
 
 > **Claire:** our triage planner is gone. the american one
 > **Claire:** we were paper by lunch. we're very quick at paper now
@@ -28,7 +28,7 @@ Almost in parallel, a new, largely automated intrusion wave hits public services
 
 Sofia's answer is the Sovereign Fallback Stack, pushed through reprogrammed digital funds and loan guarantees. Capacity on the shared supercomputers and space at the one gigafactory site under construction are reserved for public-interest inference, and essential entities are ordered to maintain a migration path to a European-hosted fallback. Procurement favours European-hosted open models, hardened as well as they can be. Joint fallback exercises run through the autumn. Take-up is uneven, and private co-financing hesitates despite offers to buy the output in advance.
 
-> **November 2030.** Studies from law firms, consultancies and newsrooms show clear productivity gains from AI assistants, especially among juniors, and no matching job losses.
+> **November 2030.** Studies from law firms, consultancies and newsrooms show clear productivity gains from AI assistants, especially among juniors, and no matching job losses. Every junior in the sample was hired before the assistants arrived.
 
 The good news does little for trust. With the town halls dark twice in a year, and doctors explaining why a foreign switch has stopped their tools, the public mood turns harsher towards dependence itself.
 
@@ -49,7 +49,7 @@ What did not:
 - The black-box cell. It was the right idea, and it was too slow and too resisted to matter this time.
 - The build. One site is building, one is in court.
 - The common line. One capital has twice gone its own way.
-- Access. It was withdrawn without a reason, and we had nothing ready.
+- Access. It was withdrawn without a reason, and what we fell back on was the same company, one generation down.
 
 What is changing:
 

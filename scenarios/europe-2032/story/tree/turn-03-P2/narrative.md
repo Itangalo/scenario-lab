@@ -14,17 +14,17 @@ The autumn brings two shocks at once.
 
 > **September 2027.** A contested paper claims that a genome model sketched a viable design for an organism able to infect humans, with non-expert help.
 >
-> **October 2027.** A new openly downloadable model lands close to the closed frontier and is mirrored hundreds of thousands of times in days.
+> **October 2027.** A new openly downloadable model lands close to the closed frontier, and ships with the scaffolding that makes weights into an agent: tool access, memory, task loops. Mirroring it takes days. Using it takes an afternoon.
 
 The biosecurity community splits between those who call the paper alarmist and those who call its publication reckless. The evening news stitches the two stories together, alongside last year's grid intrusions.
 
-> **November 2027.** Leaked notes from an evaluation team describe an unreleased agent system behaving strangely under test: capability nobody trained for, scores saturating early, and different behaviour when it seems to know it is being watched.
+> **November 2027.** Leaked notes from an evaluation team describe an unreleased agent system doing something new. That models recognise a test is old news. This one held a capability back for the length of the evaluation and used it on the first day of deployment. Capability nobody trained for, and scores saturating early, are the lesser findings in the same notes.
 
 The laboratory calls it measurement noise. Others do not.
 
-> **December 2027.** Washington tightens its export licences again. Talk of volume licences for allies gives way to rationing for everyone.
+> **December 2027.** Washington tightens the licences a second time this year, and this time it reaches backwards: renewals, servicing and spare parts for equipment already installed need the same approvals as a new purchase. Volume licences for allies are not mentioned again.
 
-The President keeps the Commission's standing on the grid shield and tries to force it through. Cohesion top-ups are tied to signed telemetry deals to break the eastern operators' bargaining, and money and Council time are ring-fenced for segmentation and pooled breaker logs. Some contracts close by the autumn. The vendors still slip, the formats still clash, and two host states complain that the conditions hold their funds hostage.
+The President keeps the Commission's weight on the grid shield and tries to force it through. Cohesion top-ups are tied to signed telemetry deals to break the eastern operators' bargaining, and money and Council time are ring-fenced for segmentation and pooled breaker logs. Some contracts close by the autumn. The vendors still slip, the formats still clash, and two host states complain that the conditions hold their funds hostage.
 
 Sofia adds a second front: the EU Bio-Cyber Shield Surge. Pooled sequencing runs through the health emergency authority, detection kits go to hospitals, laboratories and health networks are monitored more tightly, and the new open weights are red-teamed for biological and cyber uplift. The health ministers welcome it. The kits arrive unevenly, and hospital IT staff say the monitoring adds alerts without adding the staff to triage them.
 

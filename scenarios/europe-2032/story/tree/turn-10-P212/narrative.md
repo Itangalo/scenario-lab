@@ -23,9 +23,9 @@ As Sofia recommended, nothing new is started and no priority is named. The half-
 
 Then the ground shifts under the posture.
 
-> **March 2031.** A biosecurity paper claims that a genome model produced a viable design for an organism able to infect humans, or that a non-expert could get there with its help.
+> **March 2031.** A second biosecurity paper lands, and this one is not contested on its methods. It is contested on having published them: the route from a model to a viable design able to infect humans is now written down where anyone can read it.
 >
-> **April 2031.** An openly released model lands within months of the closed frontier. It is downloaded hundreds of thousands of times in its first week.
+> **April 2031.** An openly released model lands within months of the closed frontier. What has changed is who runs it: hospitals and ministries, on their own hardware, as policy rather than as an experiment.
 
 The methodologists quarrel, and the authors are accused both of alarmism and of publishing too much. The health agencies cannot ignore it. And with the new model, municipal IT officers and small laboratories suddenly hold what only great powers held a few months earlier, permanently.
 

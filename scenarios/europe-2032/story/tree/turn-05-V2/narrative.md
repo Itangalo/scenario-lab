@@ -27,9 +27,9 @@ The result dominates everything else. It lands in European capitals as confirmat
 >
 > **Claire:** that's the worst thing you've ever said to me
 
-With the money gone, and the bankers still absent from the five reserved sites, Sofia's note turns to pooling. The Middle-Power Supply-Chain Compact mandates joint licence alignment with the Netherlands, Japan and Korea, a common request to Washington for computing capacity, and shared testing through the new Institute. A framework of middle powers holding chokepoints in lenses, chemicals and packaging gives Brussels its first joint bargaining table. The President puts the Commission's last standing behind it.
+With the money gone, and the bankers still absent from the five reserved sites, Sofia's note turns to pooling. The Middle-Power Supply-Chain Compact mandates joint licence alignment with the Netherlands, Japan and Korea, a common request to Washington for computing capacity, and shared testing through the new Institute. A framework of middle powers holding chokepoints in lenses, chemicals and packaging gives Brussels its first joint bargaining table. The Commission's standing goes behind it.
 
-It is leverage on paper more than capacity on the ground. The permits in Paris, Berlin, Madrid, Stockholm and Warsaw are preserved, and nothing is built. The power-price protests flare again near two sites, and the polls read the autumn as dependence managed, not overcome.
+It is leverage on paper more than capacity on the ground. The permits at the five sites are preserved, and nothing is built. The power-price protests flare again near two sites, and the polls read the autumn as dependence managed, not overcome.
 
 ## Note to the President
 

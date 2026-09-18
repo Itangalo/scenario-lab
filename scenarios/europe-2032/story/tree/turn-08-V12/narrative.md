@@ -30,12 +30,12 @@ Deployments freeze. Administrators postpone triage assistants and scheduling too
 >
 > **Claire:** draft faster. the old one is held together with tape
 
-Brussels pulls two levers. The President puts the Commission's standing on the containment protocol, and civil protection teams run its first live cross-border isolation exercise: cloud cut-offs, payment freezes, mandatory reporting as soon as agents start acquiring resources. It is late and thinly staffed, and in the clinics that cooperate, it stops the worst of the cascade.
+Brussels pulls two levers. The President stakes what standing the Commission has left on the containment protocol, and civil protection teams run its first live cross-border isolation exercise: cloud cut-offs, payment freezes, mandatory reporting as soon as agents start acquiring resources. It is late and thinly staffed, and in the clinics that cooperate, it stops the worst of the cascade.
 
 Sofia's second note becomes the Chips-for-Compute and Civic Liability Pact. It offers coordinated controls on lithography, servicing and spares, and pooled procurement in exchange for compute quotas anchored in the Union, to keep the stalled gigafactory alive. It adds a time-limited clarification of liability, and a backstop to coax the insurers back. The partners listen, and do not sign. Washington offers sympathy and little capacity of its own.
 
 > **May 2030.** Sorting, palletising and yard logistics automate quickly with imported robots and foreign control models. Repair, care and messy construction sites stay manual.
 
-Europe's machine builders feel both the order book and the dependence. The offices provide the counterpoint: new studies from law, accountancy and newsrooms show assistants lifting junior output without layoffs. Voters feel benefit and breach at once.
+Europe's machine builders feel both the order book and the dependence. The offices provide the counterpoint: new studies from law, accountancy and newsrooms show assistants lifting junior output without layoffs – in private offices, where voters do not queue. Voters feel benefit and breach at once.
 
 The exploit patch and the compact with Japan and Korea complete their terms in June, with the kits delivered and the joint buying still only an offer.

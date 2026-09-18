@@ -14,11 +14,11 @@ The spring opens with two technical papers that Brussels tries to fuse into one 
 
 > **February 2032.** A control team publishes an interpretability result that works on deployed systems: behaviour can be predicted before it is observed. The laboratories take it up quickly.
 >
-> **February 2032.** A genome-modelling group shows a design loop that lets non-specialists approach a viable construct able to infect humans.
+> **February 2032.** A genome-modelling group shows a design loop that lets non-specialists approach a viable construct able to infect humans – and publishes the loop. The methodological objections of two years ago are not raised. The objection now is to the publishing.
 
 Methodologists quarrel over both claims. The health officials read the pairing plainly: the first real gain in assurance in years, arriving alongside a sharper warning of biological misuse.
 
-Sofia's answer is the Assured Upgrade and Bio Synthesis Screening Mandate, and the President puts the Commission's standing behind it. Fast-track conformity updates require the newly certifiable property in systems used in health, benefits, policing and critical services, with a joint evaluation cell to verify it. Synthesis providers and cloud endpoints for biological design tools must screen both customers and sequences. It is paid for from health and research reserves.
+Sofia's answer is the Assured Upgrade and Bio Synthesis Screening Mandate, and the President makes it the Commission's priority for the half-year. Fast-track conformity updates require the newly certifiable property in systems used in health, benefits, policing and critical services, with a joint evaluation cell to verify it. Synthesis providers and cloud endpoints for biological design tools must screen both customers and sequences. It is paid for from health and research reserves.
 
 The rollout is partial. The evaluation cell gets access in public hospitals and two large benefit agencies, where auditors can show, for the first time, predicted logs matching observed outputs.
 

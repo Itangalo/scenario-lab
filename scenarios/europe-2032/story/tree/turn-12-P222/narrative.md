@@ -10,7 +10,7 @@ next: turn-13-P222
 
 # Two sets of books
 
-The first half of 2032 is a holding operation. With no money and no goodwill left to spend, Brussels does not legislate. Sofia recommends nothing new, and the President keeps the Commission's standing on the pact, which is kept alive by procedure.
+The first half of 2032 is a holding operation. With no money and no goodwill left to spend, Brussels does not legislate. Sofia recommends nothing new, and the President lends what the Commission has left to the pact, which is kept alive by procedure.
 
 The flat reimbursements for the unmapped micro-stores keep flowing through the civil-protection machinery, with guards only where towns ask for them. Where the holders trust the arrangement, the spares stay in place. Where they do not, a parallel practice hardens: one small declared stock for the inspectors, and the real reserve kept off any list.
 

@@ -10,7 +10,7 @@ next: turn-12-V111
 
 # Holding the gates
 
-Through the autumn of 2031 the Union tries to do less, and to hold what it has. Sofia recommends nothing new, and the President keeps the Commission's standing on the lockdown.
+Through the autumn of 2031 the Union tries to do less, and to hold what it has. Sofia recommends nothing new, and the President stakes what standing the Commission has left on the lockdown.
 
 Auditors from ENISA and the AI Office go hospital by hospital and grid operator by grid operator, checking isolation gates and human-approval locks. Recovery money goes only where telemetry flows. The French and Dutch containment teams stay on call for the wards still running on paper and the municipalities still rebuilding their appointment systems.
 
@@ -25,6 +25,6 @@ The fallback formally lands. Reserved inference on the European supercomputers s
 >
 > **Claire:** tell that to the queue
 
-> **November 2031.** Law firms, accountancies, newsrooms and consultancies report measured productivity gains from AI assistants, largest among juniors, and no matching fall in employment. Firms that cut early are quietly rehiring.
+> **November 2031.** Law firms, accountancies, newsrooms and consultancies report measured productivity gains from AI assistants, largest among juniors, and no matching fall in employment. The gains show up in margins. They do not show up in wages, and they have not reached a single public queue. Firms that cut early are quietly rehiring.
 
 Work is changing shape rather than disappearing. The evidence eases the blame in the talks with unions and employers. It barely moves the mood on the evening news, where paper triage and dark town halls still define how most people feel about dependence.

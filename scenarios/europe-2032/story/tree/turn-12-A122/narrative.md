@@ -20,7 +20,7 @@ Brussels receives the technical summary through the queue between states, days a
 
 ENISA rushes the tooling to hospitals, ports and grid operators under the Command, and intrusion rates fall wherever it lands.
 
-> **April 2032.** Tailored therapies for previously untreatable conditions are demonstrated in American clinics.
+> **April 2032.** The therapies reach the unglamorous end, where the numbers are: a chronic condition that affects millions rather than thousands is shown to be manageable by design. It is demonstrated in American clinics.
 
 The therapies reach Europe as allocations, not products. Doses and access to the grid-dispatch models are bargained for lot by lot. The editorials that praised a cure in April denounce dependence by June. Graduate hiring stays frozen, and the Corps's placements in town halls cannot cover the gap.
 

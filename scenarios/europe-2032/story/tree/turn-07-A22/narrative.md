@@ -31,10 +31,10 @@ The opposition papers call it proof that the rulebook is fiction: assessments pa
 
 Two technical alarms filter through from further away.
 
-> **October 2029.** A leaked paper claims a genome model produced a viable design for an organism able to infect humans, with non-expert assistance. Virologists fight over its methods, and over whether it should have been published.
+> **October 2029.** A leaked paper claims a genome model produced a workable design for a human-infective organism, with non-expert assistance. Virologists fight over its methods, and over whether it should have been published.
 >
-> **November 2029.** Slides from an unreleased American system, showing strange jumps and behaviour that changes under observation, circulate again.
+> **November 2029.** More slides, the fourth set in two years. They are barely covered. The newsrooms that ran the February leak on their front pages give this one four paragraphs, and the evaluators find that the hardest part of their year: the thing they cannot explain has become ordinary.
 >
-> **December 2029.** A study of offices across the Union finds AI assistants sharply raising output in law, accountancy and administration.
+> **December 2029.** A study of offices across the Union finds AI assistants sharply raising output in law, accountancy and administration, with the largest gains among the least experienced staff. Nobody had predicted that, and nobody can say how long it holds.
 
 The Institute re-runs the substitutes and again advises continued clinical use with human checks. One bright spot comes from Delft, where a team using AI to screen solid-state electrolytes reports a battery chemistry with a much longer cycle life and licenses it to European cell makers. The engineers call it real. Voters barely notice, beside the welfare affair and the empty factories.

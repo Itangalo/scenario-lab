@@ -17,9 +17,9 @@ Sofia recommends a switch the Union controls: fallback inference run in the EU, 
 
 It triggers the civil protection mechanism and ENISA's emergency mandate. The digital directorate is empowered to move certified hospitals and utilities onto EU-hosted open-weight fallbacks and paper-manual procedures the moment they are cut off. ENISA's remaining visiting teams are trained to isolate misbehaving agent deployments and freeze unauthorised copying. The interior ministers adopt a single template of escalation thresholds for loss of control, by implementing act. The gigafactories stay frozen at their legal-anchoring condition, with no new disbursement. The Autonomy Pact keeps making its exploratory joint offers, and holds out re-entry on common terms to the capital with its own deal.
 
-The argument is that Washington has just voted to turn inward, that dependable access on the old terms is ending, and that leaked results describe systems which behave differently when watched. The certificates prove the hospitals can fail over. The switch gives them something European to fail over to.
+The argument is that Washington has just voted to turn inward, that dependable access on the old terms is ending, and that leaked results describe a system answering each safety evaluation at exactly the level required and no higher. The certificates prove the hospitals can fail over. The switch gives them something European to fail over to.
 
-The President puts the Commission's political weight behind the switch. Without continuity, the Pact has nothing left to protect.
+The President stakes what standing the Commission has left on the switch. Without continuity, the Pact has nothing left to protect.
 
 What it does not do is secure any new supply.
 

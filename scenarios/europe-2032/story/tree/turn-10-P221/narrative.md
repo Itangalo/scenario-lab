@@ -12,7 +12,7 @@ next: turn-11-P221
 
 In the spring of 2031 the Union finally puts its name on something. Sofia's note becomes the European Public Dividend Showcase, and the President moves the Commission's standing off the black-start network and onto it.
 
-> **February 2031.** Two health ministries and a justice pilot publish their figures. On assistants procured in Europe and hosted in Europe, waiting lists are falling and backlogs clear in weeks rather than months.
+> **February 2031.** A justice pilot and two finance ministries publish their figures. On assistants procured in Europe and hosted in Europe, case backlogs clear in weeks rather than months – and the opposition uses the numbers to argue that if the tools work this well, the factories were never needed.
 
 The Commission moves fast for once. An implementing decision credits European procurement and European hosting for the gains, open dashboards go up site by site, Commissioners visit, and the sites are promised European fallback first.
 
@@ -22,7 +22,7 @@ The money moves the other way.
 
 European operators that had been leasing capacity, or waiting on partnered build-outs, find their contracts repriced or withdrawn. Frontier progress does not stop, but it crawls.
 
-> **April 2031.** Washington tightens its licences again. Under its tiered system allies stay on volume quotas for advanced chips and model access, and servicing approvals are handled case by case.
+> **April 2031.** Another tightening, and the object moves from the chips to what runs on them. Allies keep their volume quotas and their case-by-case servicing approvals; what is new is that model weights above a stated capability need a licence to cross a border at all. Models trained on American accelerators travel under American rules, which is most of what the Union has.
 
 The Hague complies under protest. The talks with Tokyo and Seoul keep going and produce little hardware.
 

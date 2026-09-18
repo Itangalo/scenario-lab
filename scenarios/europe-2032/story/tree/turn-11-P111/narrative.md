@@ -12,7 +12,7 @@ next: turn-12-P111
 
 Two stories about the state run side by side through the autumn, and voters believe both.
 
-> **September 2031.** In several cities, rebuilt public-sector systems deliver: hospital waiting lists visibly fall where cross-border teams and surge stocks arrived, benefit decisions come back in days, and tutoring tools show measured gains.
+> **September 2031.** In several cities, rebuilt public-sector systems deliver: benefit decisions come back in days, tutoring tools show measured gains, and two court services clear their listing backlogs – the wards having been the story the last time.
 
 Commissioners tour the sites and claim the gains as European choices, not imported software.
 
@@ -27,7 +27,7 @@ Commissioners tour the sites and claim the gains as European choices, not import
 
 The conformity papers were in order, and the oversight was a queue. The opposition papers call it proof that the rulebook works on paper and fails on people. Legal commentators argue the darker version: that parts of the deployment were never classed as high-risk at all, which leaves everything done entirely lawful.
 
-Sofia's answer is the Automated Decision Redress and Human Review Guarantee, and the President puts the Commission's standing behind it. The logs already held are retained and read by machine. Human re-review becomes mandatory. Interim payments and compensation go through the Social Fund. A new reading of the directive puts any system that materially shapes eligibility, policing or court outcomes inside the strict regime. The ombudsmen open desks, and re-review begins in the worst-hit districts.
+Sofia's answer is the Automated Decision Redress and Human Review Guarantee, and the President gives it the Commission's full weight. The logs already held are retained and read by machine. Human re-review becomes mandatory. Interim payments and compensation go through the Social Fund. A new reading of the directive puts any system that materially shapes eligibility, policing or court outcomes inside the strict regime. The ombudsmen open desks, and re-review begins in the worst-hit districts.
 
 It does not land cleanly. The re-review is slow, the staff are the same exhausted staff from the containment wards, and the early payouts vary by region. The capital with its own hyperscaler deal accepts reimbursement for emergency computing only when it is routed through logged European infrastructure, and keeps its separate contract. The freezes on data centres and supply stay frozen.
 

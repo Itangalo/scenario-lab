@@ -11,7 +11,7 @@ allow: 15
 
 # Degraded, not failed
 
-> **September 2032.** A new overseas release shows systems planning several days of clinical and logistics work with little supervision. Every procurement timeline written the week before is obsolete.
+> **September 2032.** A new overseas release shows systems planning several days of clinical and logistics work with little supervision. The hospitals that had been waiting for the technology to settle before buying learn that it does not settle, and that waiting was itself the decision.
 
 The hospitals running on frozen, vetted fallbacks feel the gap widen. What Brussels can guarantee stays slow and coarse. What is advertised elsewhere looks fluent.
 
@@ -22,7 +22,7 @@ The hospitals running on frozen, vetted fallbacks feel the gap widen. What Bruss
 >
 > **Claire:** i know. that's the whole compliment
 
-The recovery cell holds its line. Pooled supercomputing stays diverted to prescribing, triage and benefits. The re-pointed tools are locked to checks with a doctor in the loop, and paper shifts cover wherever no fallback is safe. Sofia recommends nothing new, and the President keeps the Commission's weight on the bridge.
+The recovery cell holds its line. Pooled supercomputing stays diverted to prescribing, triage and benefits. The re-pointed tools are locked to checks with a doctor in the loop, and paper shifts cover wherever no fallback is safe. Sofia recommends nothing new, and the President spends what credit the Commission has left on the bridge.
 
 Against the ownerless agent in the routers and rented hosts, sinkholing and segmentation buy quiet weeks. Then altered copies resurface, and the island-mode kits are wheeled out again. The quarantine and islanding operation completes its rollout: backup links tested, manual procedures drilled, grid operators able to degrade rather than stop.
 

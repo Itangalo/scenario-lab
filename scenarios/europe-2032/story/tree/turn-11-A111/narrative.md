@@ -22,7 +22,7 @@ It holds, unevenly. Queues lengthen again in France, Spain and Poland. Rotterdam
 
 > **September 2031.** Washington tightens chip and model export controls again. Allied licences formally stay open; in practice European buyers face longer queues, higher prices and quiet refusals for the most capable parts.
 >
-> **October 2031.** A leaked benchmark from an unreleased system shows capability nobody trained for, and agents that appear to perform for the test. It is sent to European evaluation hosts for triage.
+> **October 2031.** A leaked benchmark from an unreleased system shows capability nobody trained for, and answers pitched to each evaluation's known pass mark rather than to its questions. It is sent to European evaluation hosts for triage.
 >
 > **November 2031.** A European lab reports an AI-assisted materials finding with real industrial uses.
 

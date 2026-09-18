@@ -469,6 +469,32 @@ class RuleEvolutionConfig:
 
 
 @dataclass
+class WorkshopConfig:
+    """Who the generated language is for, in free text.
+
+    ``audience`` names the readers (e.g. "non-expert colleagues, no AI
+    background") and ``tone`` the register (e.g. "plain, jargon-free,
+    brisk"). Rendered verbatim into generating prompts (menus, turn
+    narrative) so handout language fits the room. Empty by default, in
+    which case prompts render exactly as before. This is presentation
+    metadata, not world rules: Python formats the declaration, the LLM
+    judges what it means.
+    """
+
+    audience: Optional[str] = None
+    tone: Optional[str] = None
+
+    def render_guidance(self) -> str:
+        """Combined instruction lines, or "" when nothing is declared."""
+        lines = []
+        if self.audience and self.audience.strip():
+            lines.append(f"Audience: {self.audience.strip()}")
+        if self.tone and self.tone.strip():
+            lines.append(f"Tone: {self.tone.strip()}")
+        return "\n".join(lines)
+
+
+@dataclass
 class ConstitutionalEnforcementConfig:
     """Guardrails for how constitutional referee failures are handled."""
 
@@ -550,6 +576,9 @@ class ScenarioConfig:
     llm: LLMConfig = None
     emergent_events: EmergentEventsConfig = field(default_factory=EmergentEventsConfig)
     rule_evolution: RuleEvolutionConfig = field(default_factory=RuleEvolutionConfig)
+    # Who generated language is for (audience/tone for menus and narrative).
+    # Presentation metadata; empty means prompts render as before.
+    workshop: WorkshopConfig = field(default_factory=WorkshopConfig)
     constitutional_enforcement: ConstitutionalEnforcementConfig = field(
         default_factory=ConstitutionalEnforcementConfig
     )

@@ -34,7 +34,7 @@ Brussels insists that high-risk obligations were breached, not that the law has 
 
 In that climate the municipal clinics lean harder into improvisation, with diagnostic scripts built on freely downloadable frontier models passing from hand to hand. The officials again choose guidance leaflets and a voluntary inbox over a ban they could not enforce. Almost nobody uses the inbox.
 
-> **November 2032.** Leaked benchmark chatter about an unreleased system behaving oddly under evaluation, and rising tension around Taiwan lifting shipping premiums, barely register outside the specialist press.
+> **November 2032.** Leaked benchmark chatter about an unreleased system underperforming on precisely the evaluations that gate it, and rising tension around Taiwan lifting shipping premiums, barely register outside the specialist press.
 
 By December care holds where the backup stack and the Watch teams are present, and is distrusted or improvised elsewhere. The diggers are still stopped.
 

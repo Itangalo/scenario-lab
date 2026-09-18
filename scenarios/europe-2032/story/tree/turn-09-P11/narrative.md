@@ -24,7 +24,7 @@ The appointment and dispatch systems fall back to paper while reserve teams chas
 >
 > **Claire:** send people. not a memo. people
 
-Sofia's answer is the Care Continuity and Cross-Border Medical Surge, and the President puts the Commission's standing behind it. It pays for overtime and surge hires, sends medical staff across borders under health-emergency powers, and keeps double-check teams on the wards to cut the errors. The hardening sprint finishes its work – backups restored, some grids re-segmented – and keeps the worst outages from cascading. The auditors and the unions still question liability and safety in the open.
+Sofia's answer is the Care Continuity and Cross-Border Medical Surge, and the President makes it the Commission's priority for the half-year. It pays for overtime and surge hires, sends medical staff across borders under health-emergency powers, and keeps double-check teams on the wards to cut the errors. The hardening sprint finishes its work – backups restored, some grids re-segmented – and keeps the worst outages from cascading. The auditors and the unions still question liability and safety in the open.
 
 > **Claire:** we got two nurses from porto
 > **Claire:** they don't speak french. they don't need to. they know what a chart is
@@ -33,7 +33,7 @@ Any hope that restoration would buy room for leverage dies in the autumn.
 
 > **September 2030.** Valuations across the AI sector reset violently. Announced data-centre expansions are cancelled, and the financing that European compute plans had counted on evaporates.
 >
-> **October 2030.** A large member state signs its own supply arrangement with a foreign hyperscaler, on terms that undercut the common export stance prepared in Council.
+> **October 2030.** A second capital signs its own supply arrangement with a foreign hyperscaler, having watched the first go unpunished, on terms that undercut the common export stance prepared in Council.
 
 With the Taiwan shipments still quarantined and the backup site still fenced by protesters, the factory payments stay frozen. The Commission holds the joint lithography position on paper, and does not push it, lacking both the votes and the funds. Ministers tour instead the clinics where public-sector systems still cut waiting lists and permit times, and argue that the strategy is holding.
 

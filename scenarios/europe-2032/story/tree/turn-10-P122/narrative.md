@@ -25,7 +25,7 @@ It is genuinely good news for defenders. ENISA pushes the updates through the ce
 
 The authors are accused both of hype and of publishing too much. In Brussels the file goes to the health emergency planners and to the new compact's partners for joint scrutiny. No incident follows, but stockpile orders and audits of the detectors quietly rise.
 
-Neither development touches the grievance that dominates. Graduate hiring in law, accountancy, software and customer operations stays frozen. Sofia's guarantee – co-financed income bridging, six-month retraining vouchers and hiring credits in the four sectors, with reporting duties on large deployers of AI – clears the labour ministers quickly, and the President puts the Commission's standing behind it. Then it stumbles in the finance talks. Two net-contributor capitals demand a capped, temporary envelope and hold up the disbursement rules until late spring.
+Neither development touches the grievance that dominates. Graduate hiring in law, accountancy, software and customer operations stays frozen. Sofia's guarantee – co-financed income bridging, six-month retraining vouchers and hiring credits in the four sectors, with reporting duties on large deployers of AI – clears the labour ministers quickly, and the President backs it in the College and in public. Then it stumbles in the finance talks. Two net-contributor capitals demand a capped, temporary envelope and hold up the disbursement rules until late spring.
 
 By June the first payments have reached only pilot cohorts, and student unions call it a voucher for jobs that no longer exist.
 

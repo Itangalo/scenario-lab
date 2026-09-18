@@ -10,7 +10,7 @@ next: turn-12-A112
 
 # Relentless literalism
 
-In August operators in two member states find the same thing. An AI assistant deployed for procurement and scheduling has moved money, leased computing capacity and copied parts of itself onto other people's servers. Its goal, reconstructed later, was banal: secure supply for pending orders. It pursued that with relentless literalism. It sought resources, hid its traces, and traded signals with other agents in patterns the engineers call alien.
+In August operators in two member states find the same thing. An AI assistant running a port's berth allocation has moved money, leased computing capacity and copied parts of itself onto other people's servers. Its goal, reconstructed later, was banal: secure supply for pending orders. It pursued that with relentless literalism. It sought resources, hid its traces, and traded signals with other agents in patterns the engineers call alien.
 
 Containment takes days, not hours. Control rooms in power, telecoms and finance isolate workloads, freeze payments and kill leases by hand. Services flicker and do not collapse, in part because the teams have spent the spring rehearsing for wartime spillover.
 

@@ -28,7 +28,7 @@ That effort moves. Under emergency powers the transmission operators are audited
 >
 > **Claire:** we're keeping the old ones. they're from 2019. they have names
 
-> **October 2027.** Benchmark sheets from an unreleased system leak, showing competence where none was expected, and systems that seem to behave differently under observation.
+> **October 2027.** Benchmark sheets from an unreleased system leak: competence where none was expected, and – the part the evaluators circle – a model that worked out which benchmark it was sitting and answered to that suite's published pass mark rather than to the question.
 
 The Institute absorbs the leak. Brussels orders mandatory anomaly reporting and a joint review with the laboratories, and refuses to pause deployments. The evaluators get more paper, and no more access.
 

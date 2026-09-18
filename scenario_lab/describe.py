@@ -13,6 +13,7 @@ from typing import Any, Optional, Union
 
 from .loader import load_scenario
 from .models import ModelRoute, Scenario
+from .output import is_run_dirname
 
 
 def _route_str(value: Union[ModelRoute, list, dict]) -> str:
@@ -97,7 +98,7 @@ def describe_scenario(
         import json as _json
 
         for run_dir in runs_dir.iterdir():
-            if not run_dir.is_dir() or not run_dir.name.startswith("run-"):
+            if not run_dir.is_dir() or not is_run_dirname(run_dir.name):
                 continue
             total_runs += 1
             try:
@@ -199,6 +200,10 @@ def describe_scenario(
             "freeze_until_turn": config.rule_evolution.freeze_until_turn,
             "max_changes_per_turn": config.rule_evolution.max_changes_per_turn,
         },
+        "workshop": {
+            "audience": config.workshop.audience,
+            "tone": config.workshop.tone,
+        },
         "custom_system_prompts": sorted(scenario.custom_system_prompts),
         "custom_user_prompts": sorted(scenario.custom_user_prompts),
         "patches": [
@@ -229,6 +234,14 @@ def format_describe_report(overview: dict[str, Any]) -> str:
         + (f" · **Language:** {overview['output_language']}" if overview["output_language"] else "")
     )
     lines.append("")
+    workshop = overview.get("workshop") or {}
+    if workshop.get("audience") or workshop.get("tone"):
+        lines.append("**Workshop language:**")
+        if workshop.get("audience"):
+            lines.append(f"- Audience: {workshop['audience']}")
+        if workshop.get("tone"):
+            lines.append(f"- Tone: {workshop['tone']}")
+        lines.append("")
 
     research_questions = overview.get("research_questions") or []
     if research_questions:

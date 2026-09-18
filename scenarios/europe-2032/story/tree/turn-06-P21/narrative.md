@@ -30,7 +30,7 @@ Then the same hospitals erupt.
 >
 > **Claire:** fix it before the next agent walks through us
 
-The triage lines thin, discharge paperwork piles up, and two of the showcase cities that had cut their waiting lists slip back. Health ministers negotiate the returns with promises of staffing relief and fixes to the referral templates, not with orders. Sofia recommends nothing new; the President keeps the Commission's weight on the grid shield.
+The triage lines thin, discharge paperwork piles up, and two of the showcase cities that had cut their waiting lists slip back. Health ministers negotiate the returns with promises of staffing relief and fixes to the referral templates, not with orders. Sofia recommends nothing new; the President stakes what standing the Commission has left on the grid shield.
 
 There is delivery amid the strain. The tech sovereignty package formally closes, with permits and grid pledges turning into two factory sites that finally break ground and a third cleared for a build with water recycling. The bio-cyber surge and the continuity stack close too, leaving patching teams and substitution kits as standing practice rather than pilots. Grid crews finish segmentation kits in a dozen control rooms and run the first live cut-off exercise with hospitals in the loop.
 

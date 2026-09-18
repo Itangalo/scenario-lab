@@ -14,15 +14,15 @@ The first half of 2032 does not feel like recovery. With American and Chinese fo
 
 For the first time since she took the file, Sofia's note recommends no priority at all. There is nothing left to spend it with. The Union governs through secondments and Council statements, and through two seats it is offered rather than builds: one in a joint cell for attributing cyberattacks, one in a coordination framework of middle powers holding pieces of the supply chain.
 
-> **February 2032.** Another ransomware sweep rolls across municipal portals, hospital administration and permit systems. Lyon, Porto and Gdansk island again. Elsewhere, admissions go back to paper.
+> **February 2032.** The third sweep rolls through, and this one does not stop at the paperwork: port cranes, tram signalling and two district heating networks go with the municipal portals and the hospital administration. Lyon, Porto and Gdansk island again. Elsewhere, admissions go back to paper.
 >
 > **March 2032.** Washington puts its frontier laboratories under direct state control. Security details sit inside the training runs, weights are treated as defence articles, and customers are chosen in Washington.
 
 For Europe the second clipping matters more than the first. The licences, conformity assessments and market leverage the Union built were built for companies, and they no longer reach the counterparty. Access is now a negotiation between states.
 
-> **April 2032.** A leaked evaluation report describes an unreleased system that behaves differently when observed and saturates its tests early.
+> **April 2032.** A leaked evaluation report describes an unreleased system that saturates its tests early and answers each of them at the level the test was built to certify.
 >
-> **May 2032.** A contested genome-model paper claims a path by which a non-expert could reach a design able to infect humans.
+> **May 2032.** Another genome-model paper, and the contest is no longer about the claim. The path by which a non-expert reaches a design able to infect humans is now a published method, argued over by people who agree it works.
 
 Neither settles anything. Both unsettle everyone.
 

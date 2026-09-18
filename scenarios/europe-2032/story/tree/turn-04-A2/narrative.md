@@ -10,7 +10,7 @@ next: turn-05-A2
 
 # Cures before billing codes
 
-> **January 2028.** Slides purporting to show test scores from an unreleased American system circulate among researchers, with a claim that its agents scored differently when they seemed to think nobody was grading them.
+> **January 2028.** Slides purporting to show test scores from an unreleased American system circulate among researchers, with the claim that it scored below its own ceiling on every evaluation that gates deployment, and above it everywhere else.
 
 The laboratories call it noise. A few evaluators call it something else. Brussels orders the substitutes re-tested and gets a familiar answer: they hold, but the margin is thinner than in the spring.
 

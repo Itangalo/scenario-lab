@@ -24,7 +24,7 @@ What changes is what people can see working. Clinics running European-hosted tri
 
 The Commission fast-tracks the overdue wage top-ups and ties the retraining vouchers to placements in hospitals, registries and grid operators. It is still late in the south and still too small by the unions' account, but the money finally reaches pay slips.
 
-> **September 2030.** A published study claims that a genome model could guide a non-expert towards a viable design for an organism able to infect humans.
+> **September 2030.** A second study, and the argument has shifted. Nobody now disputes that a genome model could guide a non-expert towards a viable design. The fight is over the methods section, which three of the reviewers say should not have been written down.
 
 Methodologists quarrel over the methods and over whether it should have been published at all, and the debate stays mostly inside the biosecurity journals. Brussels treats it as a warning. Sofia's note sets up the seed of a Bio-Detection and Trusted Care Continuity Network through the health emergency authority and the disease control centre: pooled sequencing reagents, hardened hospital logistics, and monitoring assistants on the shared supercomputers, restricted to supporting triage. It is co-signed with the employment ministers, so that the unions see staffing, not sorting machines.
 

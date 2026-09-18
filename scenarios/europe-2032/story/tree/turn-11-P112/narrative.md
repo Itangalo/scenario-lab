@@ -31,7 +31,7 @@ The systems freeze in the middle of shifts. Staff in the two states still cleari
 
 The cross-border care surge finishes its work. The funded transfers, shared intensive-care beds and overtime teams kept the containment hospitals open, and no cascade closed a region. The nurses and the logistics crews earn genuine praise. It does not turn into credit. Closed outpatient clinics, slipped appointments and fresh walkouts frame the story, and the headlines ask why the breakthrough cures depend on a switch thrown abroad.
 
-Sofia's answer is the EU Sovereign Medical AI Deployment, and the President puts the Commission's standing behind it: European computing ring-fenced for medical use, licensed therapy models run on European soil, and delivery through the containment and transfer network to the hardest-hit states first. Health ministers trade joint procurement money for pledges to move critical workloads off the supplier that cut them off.
+Sofia's answer is the EU Sovereign Medical AI Deployment, and the President declares it the Commission's business and not a capital's: European computing ring-fenced for medical use, licensed therapy models run on European soil, and delivery through the containment and transfer network to the hardest-hit states first. Health ministers trade joint procurement money for pledges to move critical workloads off the supplier that cut them off.
 
 In practice, the launch stalls. The containment work still consumes the same overtime pool that is now asked to stand up the new deployment. The licensed models arrive slower and weaker than the one that was denied. A few wards run their first tailored treatments on domestic capacity. Most patients are told to wait.
 

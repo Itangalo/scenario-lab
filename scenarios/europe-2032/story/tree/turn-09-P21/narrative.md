@@ -13,7 +13,7 @@ allow: 16
 
 The autumn brings a small, usable win.
 
-> **September 2030.** In a handful of regions where the domestic triage helpers and rewritten referral templates have bedded in, waiting lists for routine imaging and first specialist appointments finally tick down.
+> **September 2030.** In the regions where the domestic helpers and rewritten templates have bedded in, the gains show up away from the wards: referral paperwork that took a fortnight is done overnight, and two regions close their planning-appeal backlogs entirely.
 
 The Commission and the regional press offices claim the improvement loudly as a European fix, and for once the local papers repeat the line.
 
@@ -32,7 +32,7 @@ Elsewhere, the common line frays further.
 
 Hospital walkouts that explicitly link thirsty, power-hungry builds to failures in care give the campaign moral cover. The two sites that poured concrete fall silent under night vigils and legal tape. Officials insist that each decision is local and separate. The activists share lawyers, slogans and timetables.
 
-Sofia recommends nothing new, and the President keeps the Commission's weight on the pact. Brussels chooses not to force the issue, and sends legal and energy teams to draft compacts on water and power for January instead of challenging the injunctions now.
+Sofia recommends nothing new, and the President spends what credit the Commission has left on the pact. Brussels chooses not to force the issue, and sends legal and energy teams to draft compacts on water and power for January instead of challenging the injunctions now.
 
 Washington offers sympathy and no timetable for restoring access. The capital with its separate foreign supply deal keeps it, despite the offers of pooled volumes and future factory shares. The no-undercut pact survives on paper, and no second defection follows, but its enforcement is exhortation.
 

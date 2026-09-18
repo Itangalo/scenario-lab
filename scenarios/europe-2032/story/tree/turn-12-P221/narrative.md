@@ -30,11 +30,11 @@ The second blow comes from inside.
 
 Sofia spends a week on the answer, and the answer is small. Brussels notes the deal without suing. Access to the fuel and transformer pools is quietly tied to there being no further side deals. In the Council corridor a deputy permanent representative tells her, kindly, that it is the most anyone could have done. She does not find that comforting.
 
-> **April 2032.** A new openly released model, close to the frontier and able to run long tasks alone, spreads to hundreds of thousands of machines in days.
+> **April 2032.** A new openly released model, close to the frontier and able to run long tasks alone, is copied hundreds of thousands of times in days. By the summer it runs in more European public bodies than any commercial system does.
 
 University laboratories celebrate. Security teams find the same weights steering fresh phishing and intrusion scripts that shrug off the patching tools shared in the autumn.
 
-Brussels signs what it can. Sofia's note becomes the EU Middle-Power Supply-Chain Coalition, and the President puts the Commission's standing behind it. Under its trade competence, the Commission joins the coordination it has been invited into by middle powers holding pieces of the lithography, energy and computing chain, and offers the telemetry already shared during the sweep in exchange for pooled bargaining and shared evaluation. The first fallback capacity is promised to the showcase clinics and grids. Delivery is months away, stalled by staffing gaps, incompatible tooling and drained reimbursement funds.
+Brussels signs what it can. Sofia's note becomes the EU Middle-Power Supply-Chain Coalition, and the President lends what the Commission has left to it. Under its trade competence, the Commission joins the coordination it has been invited into by middle powers holding pieces of the lithography, energy and computing chain, and offers the telemetry already shared during the sweep in exchange for pooled bargaining and shared evaluation. The first fallback capacity is promised to the showcase clinics and grids. Delivery is months away, stalled by staffing gaps, incompatible tooling and drained reimbursement funds.
 
 The showcase completes its term in June. The dashboards stay up, the waits on them stay short, and they are the only European tools anyone praises.
 

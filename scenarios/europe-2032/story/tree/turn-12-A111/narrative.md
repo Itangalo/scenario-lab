@@ -35,6 +35,6 @@ The continuity shield completes in time to matter. Protected circuits hold aroun
 
 And the joint cyber and biosurveillance pool, with real-time intrusion feeds and binding sample-sharing, finally invites the Union in. It joins. Sofia's note that month stands up a casualty and threat-intake operation at the struck port – decontamination, grid isolation, protected failover for the clinics – and feeds what it finds into the pool.
 
-None of it feels like sovereignty. Chip prices rise again, licensing queues stretch to months, and another set of openly released weights is already running on private servers, beyond recall, capable enough to worry the evaluation hosts still puzzling over last autumn's benchmark.
+None of it feels like sovereignty. Chip prices rise again, licensing queues stretch to months, and another set of openly released weights is already running on private servers, beyond recall, and capable enough that the evaluation hosts have quietly stopped trying to say which model any given artefact came from.
 
 Neutrality holds as concrete and cordons. As politics, it bleeds.

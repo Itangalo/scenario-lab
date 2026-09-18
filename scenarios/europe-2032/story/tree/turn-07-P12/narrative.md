@@ -12,7 +12,7 @@ next: turn-08-P12
 
 > **September 2029.** Laboratories release automated patching that keeps pace with newly found flaws, and detectors that flag how malicious agents behave rather than what they look like. In trials across hospitals and grid operators, it works.
 
-The breakthrough arrives as code, not as a paper. Sofia's note becomes the EU Swarm-Defence Rollout, and the President puts the Commission's standing behind it. ENISA pushes the new tooling as a certified update through the existing Shield certificates, and where local teams are too tired to install it, national response teams do it for them.
+The breakthrough arrives as code, not as a paper. Sofia's note becomes the EU Swarm-Defence Rollout, and the President spends what credit the Commission has left on it. ENISA pushes the new tooling as a certified update through the existing Shield certificates, and where local teams are too tired to install it, national response teams do it for them.
 
 > **Claire:** a national team installed the new detector overnight
 > **Claire:** i came in and everything was quieter. like the building exhaled
@@ -23,13 +23,13 @@ The breakthrough arrives as code, not as a paper. Sofia's note becomes the EU Sw
 
 It helps, unevenly. The certified sites absorb probing and self-propagating automation with fewer outages. Municipal utilities with thin staff and unpatched legacy systems still fall back to manual routines. The responders welcome the tooling and resent the pace of the rollout in the same shift.
 
-> **October 2029.** Studies from law firms, accountants, newsrooms and consultancies show AI assistants lifting output, most of all for juniors, without a matching fall in jobs.
+> **October 2029.** Studies from law firms, accountants, newsrooms and consultancies show AI assistants lifting output, most of all for juniors, without a matching fall in jobs. What the same studies do not find is new juniors. Nobody is being let go, and nobody is being taken on.
 
 Ministers quote the figures to argue that the transition is over and manageable. The unions reply that stable employment is not the same as secure employment.
 
 The calm is dented from outside.
 
-> **November 2029.** Extended exercises around Taiwan lift shipping insurance and rattle expectations of chip supply.
+> **November 2029.** Extended exercises again, and the carriers stop waiting for the premiums to settle. Two lines reroute south of the strait, adding a fortnight to every European delivery.
 >
 > **December 2029.** Washington tightens its export licensing again. European buyers find their volume licences honoured in name and rationed in practice.
 

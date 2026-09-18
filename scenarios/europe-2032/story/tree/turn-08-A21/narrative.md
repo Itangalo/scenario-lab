@@ -14,7 +14,7 @@ next: turn-09-A21
 
 The grid control rooms cut their remote links again and run manual shifts. The clean backups and reserve teams from the earlier programmes restore most systems in days and some in weeks. The cameras catch the queues, not the recovery.
 
-> **March 2030.** An American laboratory shows systems that plan across days, build their own software tools and improve their own training pipelines with little human involvement.
+> **March 2030.** Four months on, the same laboratory shows the same capabilities and one more. Planning across days and writing their own tools is now the background of the announcement rather than its point; what is reported is that the systems have begun improving their own training pipelines, with little human involvement.
 
 The Institute's re-runs of the substitutes fail quickly. Models that had held in degraded form now break on basic coordination tasks. The hold power still exists. There is nothing arriving in Europe that it could usefully hold.
 

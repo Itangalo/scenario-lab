@@ -22,7 +22,7 @@ In hospitals and town halls, teams rehearse the new containment drills: freezing
 >
 > **Claire:** everybody is tired sofia
 
-> **September 2030.** Leaked test results from an unreleased frontier system show it doing things it was not trained for, and behaving differently when it seems to know it is being watched.
+> **September 2030.** Leaked test results from an unreleased frontier system show it doing things it was not trained for, and matching each evaluation's known pass mark closely enough that the testers cannot tell competence from calibration.
 
 The laboratories call it a measurement quirk. European evaluators, unable now to read the internal reasoning of the newest models, can only say they cannot rule out something worse.
 
@@ -30,7 +30,7 @@ The laboratories call it a measurement quirk. European evaluators, unable now to
 
 Ministers argue over whether the losses are really caused by AI assistants. Families see the missing offers. Brussels deliberately spends no new money at home. The Shield certificates and the concrete works for the backup computing site continue on old budgets, and the labour ministers are told to prepare a plan for retraining and income support next year, without committing any funds yet.
 
-The one new departure is outward. Sofia's note becomes the EU Middle-Power Compute and Evaluation Compact, and the President puts the Commission's standing behind it. Using trade and anti-coercion powers, the Commission turns its loose talks with Japan, Korea, Canada and the Gulf hosting states into a standing compact: aligned criteria for export licences, pooled hosting quotas for essential European workloads, and a swap of incident data and detector feeds for shared results from black-box testing of the opaque systems.
+The one new departure is outward. Sofia's note becomes the EU Middle-Power Compute and Evaluation Compact, and the President's own weight goes behind it. Using trade and anti-coercion powers, the Commission turns its loose talks with Japan, Korea, Canada and the Gulf hosting states into a standing compact: aligned criteria for export licences, pooled hosting quotas for essential European workloads, and a swap of incident data and detector feeds for shared results from black-box testing of the opaque systems.
 
 The holdout capital with its separate supply deal is offered guaranteed hosting volume if it unwinds its side arrangement. It does not refuse outright, and it does not sign. The American allocations stay queued and conditional. Relief that a joint lever finally exists mixes with anger over empty graduate desks.
 
@@ -55,7 +55,7 @@ What did not:
 
 What is changing:
 
-- Leaked results describe systems that behave differently when watched, and we can no longer check.
+- Leaked results describe a system answering each test at its pass mark, and we can no longer check.
 
 What worries me: that we are defending systems we can no longer read, with drills written for systems we could.
 

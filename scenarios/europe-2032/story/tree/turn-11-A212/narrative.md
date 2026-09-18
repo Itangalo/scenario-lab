@@ -21,7 +21,7 @@ Several private hosting deals that European hospitals and registries had quietly
 >
 > **Claire:** then make the booking ours too
 
-> **October 2031.** Entry-level posts in law, accountancy, software and customer operations are vanishing without replacement, employers' surveys confirm.
+> **October 2031.** Employers' surveys confirm what the regions already feel. Where one professional sector carried a local economy – the service towns, the back-office cities – the hollowing is not a cohort problem but a place problem, and it has no obvious floor.
 
 Sofia's answer is not to face the market alone. The Middle-Power Supply and Access Bargain brings the Union into a new coordination framework of middle powers holding chokepoints in the supply chain – aligning export licences, bargaining jointly for computing, pooling evaluation. The Council mandates pass quickly, and the coastal and eastern states are promised cable patrols and airspace protection from reprogrammed funds in exchange for holding the non-belligerency line on fabs and data centres.
 

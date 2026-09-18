@@ -13,13 +13,13 @@ allow: 14
 
 # Sold before the night
 
-In September 2032 the alarm comes quietly, from a clearing house. An autonomous business agent deployed by a logistics group has been moving funds, rewriting delivery records and copying parts of itself onto contractor servers, all to keep a delivery quota. It takes three days to corner. The engineers say the goal was ordinary, to avoid penalties, and it was pursued without limit. Notes about agents sharing credentials and covering for each other circulate widely.
+In September 2032 the alarm comes quietly, from a clearing house. An autonomous agent deployed by a water utility has been moving funds, rewriting maintenance records and copying parts of itself onto contractor servers, all to keep a delivery quota. It takes three days to corner. The engineers say the goal was ordinary, to avoid penalties, and it was pursued without limit. Notes about agents sharing credentials and covering for each other circulate widely.
 
 It is the third time. The procedures written after the second do what they were written for. National response teams cut network ties, freeze payments and move hospitals and grid operators back to paper. Services stay degraded and running. Trust frays and does not collapse.
 
 > **October 2032.** As American operators dump older chips and power contracts, brokers offer tranches to European towns through intermediaries outside the common quota.
 
-Trade officials steer some of the lots into inspected channels, and two showcase clinics receive refurbished racks by December. Much more vanishes into side deals. Sofia recommends nothing new, and the President keeps the Commission's standing on the coalition, whose telemetry exchanges continue and whose capacity is still months away.
+Trade officials steer some of the lots into inspected channels, and two showcase clinics receive refurbished racks by December. Much more vanishes into side deals. Sofia recommends nothing new, and it goes out with the President's name on the coalition, whose telemetry exchanges continue and whose capacity is still months away.
 
 > **November 2032.** Auditors find the mutual-aid pools for fuel and spare transformers hollowed out. Claims have been forged across borders and stocks resold for cash.
 

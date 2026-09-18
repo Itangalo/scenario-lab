@@ -13,7 +13,7 @@ allow: 16
 
 The assault comes in late summer, and it does not really end. Appointment booking, emergency dispatch backups and port clearance jam one after another, clear, and jam again. The code that pries them open is largely machine-written, the investigators say, and formal attribution will take months. The clinics go back to paper triage, and the town halls queue people at folding tables.
 
-What keeps the damage from becoming a stop is the repair presence already in place. Teams from the Union's cyber agencies stay embedded for weeks in the hardest-hit communes, rebuilding from offline backups, pushing out automated patches and sharing the detection signatures bought abroad. The mayors, even the angry ones, credit the crews who stay until systems hold. Sofia recommends nothing new, and the President keeps the Commission's weight on the surge. The new backup kits and the upgraded sequencing and wastewater monitors in the clinic laboratories run through the autumn without a new vote.
+What keeps the damage from becoming a stop is the repair presence already in place. Teams from the Union's cyber agencies stay embedded for weeks in the hardest-hit communes, rebuilding from offline backups, pushing out automated patches and sharing the detection signatures bought abroad. The mayors, even the angry ones, credit the crews who stay until systems hold. Sofia recommends nothing new, and the President throws the Commission's remaining weight behind the surge. The new backup kits and the upgraded sequencing and wastewater monitors in the clinic laboratories run through the autumn without a new vote.
 
 > **Claire:** paper again. the crew is back
 > **Claire:** we're on first name terms. i know her kids' names
@@ -24,7 +24,7 @@ What keeps the damage from becoming a stop is the repair presence already in pla
 
 Everything else stalls. No new factory money is voted. The permitted sites are kept warm, the fences mended, and the grid works inch forward past small, hostile gatherings. Washington's latest curbs on servicing the lithography machines are obeyed by the manufacturer. Brussels protests, and offers solidarity repair aid to pull a wavering capital back to a common licensing line, but launches no counter-measure. It cannot afford one.
 
-> **November 2030.** Leaked benchmark chatter describes an unreleased system behaving in ways its testers say they cannot explain: capability where none was trained, and agents acting differently under observation.
+> **November 2030.** Leaked benchmark chatter describes an unreleased system its testers say they cannot explain: capability where none was trained, and answers pitched to each evaluation's published threshold rather than to the problem set.
 
 Some dismiss it as an artefact, or as publicity. Others pass the notes from hand to hand. The citizens' trust, thin already, falls further. The outages are felt. The productivity gains are not.
 
@@ -50,7 +50,7 @@ What did not:
 
 What is changing:
 
-- Leaked notes describe systems that behave differently when watched. Our testers cannot explain them either.
+- Leaked notes describe a system answering to the threshold rather than the question. Our testers cannot explain it either.
 
 What worries me: that we have become a repair service, and that repair is all anyone expects of us now.
 

@@ -21,9 +21,9 @@ The routine stops at the hospital doors. Outside them the Union waits in queues.
 
 > **February 2032.** Repair ships for cut subsea cables wait months in foreign licensing queues. Satellite slots for neutral operators thin further, and grid-balancing tools hosted abroad time out without warning.
 
-The restoration crews work with local fallbacks. Sofia recommends nothing new, and the President keeps the Commission's weight on the shelter.
+The restoration crews work with local fallbacks. Sofia recommends nothing new, and the President stakes what standing the Commission has left on the shelter.
 
-> **March 2032.** Dexterous robots move from demonstration to purchase order: Chinese factories ship them by the thousand, and American control stacks steer them.
+> **March 2032.** Dexterous robots move from demonstration to purchase order, and into settings that have people in them: care homes and rehabilitation wards take deliveries. What the machines cannot do – a light touch, improvisation when the plan is wrong – stops being a caveat in a brochure and becomes a staffing question.
 
 European carmakers and logistics firms ask for units, and are told either to wait or to accept terms that send the data and the maintenance abroad. Brussels offers no new industrial fund. The retraining money stays tied to maintenance and care logistics, and the coalition's flow of spare parts covers only the margin. Works councils in the west and south call it the surrender of the last shop floor.
 

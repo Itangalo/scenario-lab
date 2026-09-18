@@ -1,21 +1,13 @@
-# This is a simulation, not a forecast
+# Which choices matter?
 
-This story is not a forecast. It is one possible path through the future, selected from a larger set of simulations.
+This is not a grand ending, and it is not meant to be. This is just where the simulation ends.
 
-There is no grand ending, either. December 2032 is simply where this particular simulation stops.
+You have just decided European AI policy over six years. You may feel that it didn't change how AI developed.
 
-The simulations were generated with [Scenario Lab](https://github.com/Itangalo/scenario-lab), an experimental tool for running LLM-powered scenario games. LLMs play the actors in the world – governments, institutions, companies and other decision-makers – while another model acts as a referee, deciding what happens next.
+That is not a quirk of the path you happened to take.
 
-The world itself is described through a combination of plain-text assumptions and more structured rules. Some developments are narrative. Others are constrained by variables that evolve over time and interact with one another: political capital can be spent, programmes take time to build, resources can run short, and earlier decisions shape what is possible later.
+There are more powerful forces determining how AI develops and how the world evolves. US policies and actions are a major factor, and so is China. Another critical factor is the underlying but unknown parameters governing AI capabilities – whether they will accelerate, plateau, or accelerate only in certain areas. A third factor is randomness. Events that happen to occur, measures that happen to be blocked or passed, and chains of events that cause escalating beneficial or harmful effects. Every choice you made was answered by a world already moving in a direction you had only a small part in setting.
 
-For each decision point in Europe 2032, multiple simulations were run from the same starting conditions. They often diverged. Some events appeared repeatedly; others only occasionally. The choices that looked good in one world could perform badly in another.
+Still, there are patterns to find. Some actions may pay off well in many worlds. Some actions may only pay off in a few, but are crucial for preventing catastrophic events. Some measures should be implemented as soon as possible after certain events occur.
 
-That is the point.
-
-Running many simulations does not tell us what will happen, or attach reliable probabilities to particular futures. LLMs have biases, the rules encode assumptions, and plausible stories can still be wrong. But simulations can help explore questions that are otherwise difficult to reason about: Which outcomes keep recurring? Which assumptions matter most? Which decisions work across several very different futures? Where do apparently sensible policies create problems years later?
-
-Scenario Lab is an attempt to make that kind of exploration cheap and fast enough to do repeatedly. Instead of writing a handful of scenarios by hand, we can generate many paths through the same uncertain world, inspect where they differ, and use those differences to ask better questions.
-
-The world is changing quickly, and decisions still have to be made before we know which future we are entering. LLM-powered simulation is not a way around that uncertainty.
-
-It may be one way to think more systematically inside it.
+The story you read is one of many possible, drawn from a much larger pool of simulations. By analysing the simulations, and improving on the mechanics underlying them, we can get information on how to make better decisions even in a future with deep uncertainty.

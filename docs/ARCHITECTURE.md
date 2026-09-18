@@ -449,6 +449,24 @@ The `5-constitutional-check.json` file (when present) includes:
 - Batch branch: Create multiple branches from a batch of runs
 - Parallel execution for resume/branch operations
 
+### Live Workshop Mode (`live.py`)
+
+**Purpose:** Let a facilitator run a scenario as a live workshop game. Human teams (one per actor) deliberate off-computer and pick from a short menu of LLM-generated options each turn, instead of the LLM playing the actors. Built for a ~90-minute format: 3–4 turns, one computer, printed handouts.
+
+**Loop:** `live-menu` then `live-resolve`, repeated per turn – or the `live` launcher, which asks which live-ready scenario (skipped when one exists) and resume-or-new (skipped when no previous games exist), then prepares the menus. Re-running `live` on a game with ready menus enters the picks and resolves on the spot, so a whole workshop runs on the one command. Live-ready means the scenario.yaml declares a `workshop:` block.
+
+- `live-menu <scenario|run> --turn N` ensures turn N's events are rolled first (same seeded dice as a simulated turn, persisted to `1-events.json` + `1-event-evaluations.json`), then generates one menu of at most `max_options` (default 6) per actor and writes printable handouts under `turn-NN/live/`: `briefing.md` (world summary, metrics, triggered events), `menu-<actor_id>.md` per team, and machine-readable `menu.json` for shorthand resolution. On a scenario target (turn 1 only) it creates a new `runs/live-YYYYMMDD-HHMMSS/` run; re-running it reuses the recorded events and overwrites the menus.
+- Teams deliberate and each team chooses exactly one option. `live-resolve <run> --turn N` collects the picks through an interactive picker (option headers per team, details on paper; free text as escape hatch; `back` revisits the previous team, final summary with per-team redo; `--actor-action actor=pick` flags cover scripting and non-interactive use), wraps each pick into a minimal valid actor document (picked text verbatim as `## Actions`, plus no-op statement/store sections so downstream parsers record no faults), saves it as `2-actors/<actor_id>.md`, and runs the standard rules → metrics → referee → summary chain with identical persistence. It then generates the next turn's menus immediately with the recorded menu settings (`--no-auto-menu` opts out), so the facilitator's next step is printing handouts rather than running another command. No menus generate past `max_turns` or after a termination condition fires.
+- The leader ends the workshop at any turn; the run stays an ordinary run (`resume` continues it with LLM actors, `check-run-integrity` validates it, `branch` forks what-if counterfactuals from it).
+
+**Audience tuning:** an optional `workshop:` block in scenario.yaml (`audience`, `tone`) renders as `workshop_guidance` into the menu-generation and turn-narrative prompts, so generated wording fits the room. Free-text presentation metadata, empty by default; strict on unknown keys at load time, inherited by variants, recorded in the run's config.json. The workshop leader picks the voice herself; there is deliberately no leader-facing notes file.
+
+**Architecture fit:** Menus are LLM judgments (new `live_menu` templates under `templates/`, scenario-overridable like every other prompt); Python owns orchestration, pick resolution, and persistence only. Human outputs enter the pipeline as `actor_outputs` between the actor and rules steps, so no downstream code changes. Incremental persistence and deterministic event dice hold; because each command is its own process, every invocation merges its costs into the run's `costs.json` instead of overwriting it.
+
+**Menu strategies:** `direct` (default, one call per actor – fastest for a live game) or `sample-distill` (draw several actor samples against the fixed situation, then distill them into a menu – more faithful, slower and pricier). No default "do nothing" option is appended; restraint appears only when the model generates it as a genuine move.
+
+**Deliberate non-goals:** human picks never edit statement ledgers or store tables (both wrapped as no-ops), so scenarios with a `store:` block resolve correctly but teams cannot author store writes on paper. For live play, storeless scenarios are recommended.
+
 ### Validation (`validator.py`)
 
 **Purpose:** Catch errors before expensive LLM calls by validating scenario structure, references, and configuration.

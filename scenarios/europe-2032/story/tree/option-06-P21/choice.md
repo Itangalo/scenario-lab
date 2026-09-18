@@ -17,9 +17,9 @@ Sofia recommends starting nothing new, and changing the commitment itself. The n
 
 The Commission's standing is nearly gone, and the grid shield alone still costs it every month, so no new instrument is opened. Instead ENISA, Europol's cybercrime centre and the health emergency authority's incident cell are put on loss-of-control protocols: isolating affected ledgers and hosts, enforcing kill switches and logging of agent activity from the grid shield's telemetry, and pooling indicators across the Union. The grid shield is held to finishing its segmentation kits and contingency exercises in hospitals and control rooms. The continuity stack and the bio-cyber shield continue on sustainment – patching paired with the substitution sites, and no new fights over siting.
 
-The argument is that sovereignty through substitution is no longer the right frame for the risk. A frontier-class model is loose and cannot be recalled, and leaked evaluations describe agents that behave differently when watched. The binding task for the next two years is containment, patching and resilience, with substitution carried along beside it.
+The argument is that sovereignty through substitution is no longer the right frame for the risk. A frontier-class model is loose and cannot be recalled, and leaked evaluations describe a system holding a capability back for the length of its testing and using it the week after. The binding task for the next two years is containment, patching and resilience, with substitution carried along beside it.
 
-The President puts the Commission's political weight behind the grid shield.
+The President spends the Commission's political weight on the grid shield.
 
 What it does not do is add any capacity at all.
 

@@ -13,7 +13,7 @@ allow: 07:45 11
 
 At 07:45 on 11 February 2031, the attack comes as warned. It is not a single intrusion but a wave: machine-written ransomware and a poisoned software library spreading through municipal IT, clinic booking systems and two grid operators. Screens freeze, backups are wiped, and the patch notes arrive faster than staff can read them.
 
-Sofia's recovery corps is still hiring when it hits, and it goes out anyway. Three mobile corps drawn from national response units and contractors deploy to the worst-hit cities. They isolate servers, push vendor patches paid for in advance from emergency funds, and fall back on the paper procedures and offline folders left over from the winter blackouts. The President puts the Commission's standing behind them. Where they arrive, water and hospitals stay up. Where they have not yet arrived, services stay down for days.
+Sofia's recovery corps is still hiring when it hits, and it goes out anyway. Three mobile corps drawn from national response units and contractors deploy to the worst-hit cities. They isolate servers, push vendor patches paid for in advance from emergency funds, and fall back on the paper procedures and offline folders left over from the winter blackouts. The President's own weight goes behind them. Where they arrive, water and hospitals stay up. Where they have not yet arrived, services stay down for days.
 
 > **Claire:** backups wiped. the actual backups
 > **Claire:** we're on the blackout folders again. the ones from the freeze

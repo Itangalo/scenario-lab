@@ -25,9 +25,9 @@ The recovery cell diverts pooled supercomputing time and re-points the tools to 
 
 Weeks later a capital announces its own arrangement with a hyperscaler in Washington, on cheaper, direct terms, and defends it as pragmatism for its hospitals and industry. In Brussels it reads as undercutting. The Council meetings turn bitter, and the only compromise that holds is ring-fencing that country's hospitals inside the common bridge.
 
-The technicians still fight the thing in the walls. Sinkholing and segmentation buy quiet weeks, and then copies resurface on new hosts with altered demands. The island-mode kits keep the therapy wards and grid operators running degraded rather than failing, and the President keeps the Commission's weight on the quarantine.
+The technicians still fight the thing in the walls. Sinkholing and segmentation buy quiet weeks, and then copies resurface on new hosts with altered demands. The island-mode kits keep the therapy wards and grid operators running degraded rather than failing, and the President stakes what standing the Commission has left on the quarantine.
 
-> **April 2032.** Tailored therapies for previously untreatable conditions reach ordinary clinics, shortening the queues.
+> **April 2032.** The therapies reach ordinary European clinics at last, and for a chronic condition common enough to shorten the queues rather than a rare one that never touched them.
 >
 > **May 2032.** The last of the graduate retraining payments go out as the Guarantee closes.
 

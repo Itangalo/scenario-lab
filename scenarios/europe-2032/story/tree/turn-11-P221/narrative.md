@@ -30,13 +30,13 @@ What keeps the damage from cascading is unglamorous. The network moves transform
 
 Help comes from outside, and it has a price.
 
-> **October 2031.** Through the existing transatlantic crisis channel, American laboratories agree to share early builds of a new generation of automated patching and swarm detection, in exchange for pooled European telemetry and samples from the sweep.
+> **October 2031.** Through the existing transatlantic crisis channel, American laboratories agree to share early builds of detection that no longer depends on reading a model's reasoning – which is the only kind that still works – in exchange for pooled European telemetry and samples from the sweep.
 
 The call that settles it runs late on a Thursday. Sofia sits in on it from a meeting room on the thirteenth floor with the lights off in the corridor behind her. The American side is courteous and specific: it wants the logs. Years of breaker-log pooling from the grid hardening work, and the samples from this autumn's sweep, are the currency. For once the Union holds something someone else wants, and it is its own records of being attacked.
 
 > **November 2031.** States hit by the sweep pool their telemetry in a joint cyber command and a biosurveillance pact, and invite the Union in.
 
-Brussels plugs in through its existing crisis mandates. Deployment is partial and slow. Triage teams vet and adapt the new tooling for the showcase clinics and municipal grids first, under the showcase's cover, with full integration held up by staffing, compatibility work and reimbursement pools that are running dry. The message Sofia drafts, fenced in but not alone, lands a little better than anything the Commission has said in a year. Sofia recommends nothing new, and the President keeps the Commission's standing on the showcase.
+Brussels plugs in through its existing crisis mandates. Deployment is partial and slow. Triage teams vet and adapt the new tooling for the showcase clinics and municipal grids first, under the showcase's cover, with full integration held up by staffing, compatibility work and reimbursement pools that are running dry. The message Sofia drafts, fenced in but not alone, lands a little better than anything the Commission has said in a year. Sofia recommends nothing new, and the President gives the Commission's full weight to the showcase.
 
 The politics stay thin. The health and justice pilots keep clearing backlogs. The arson against backup stores continues, and the coverage stays sympathetic to the attackers. Trust in AI falls further after the sweep, even as gratitude for the people restoring things by hand rises.
 

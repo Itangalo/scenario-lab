@@ -1,0 +1,9 @@
+# Global AI Live – Starting World (July 2026)
+
+By mid-2026, advanced AI has stopped being a promise and started being infrastructure. Frontier systems write production code, draft legal and administrative documents, and run customer operations at national scale; agents that work for hours toward a standing goal – booking, coding, researching – are moving from demos into real workflows. Release cycles have compressed from six months to three, a single leading training run costs billions, and AI has already produced genuine scientific wins: designed proteins, screened materials, and serious mathematical assistance.
+
+The lead sits in America. US labs train the most capable general systems, and the United States holds roughly four-fifths of the world's AI compute. Chinese labs are close behind in open and applied models and mobilize state funding toward parity, but depend on smuggled and stockpiled chips under US export controls. Europe holds about five per cent of world compute and trains no frontier model of its own: its hospitals, firms, and ministries run on American systems, on American terms that can change without notice.
+
+What is already visible in daily life: entry-level white-collar hiring is freezing in the most exposed roles, synthetic images and cloned voices drive everyday fraud, and publics are split between enthusiasm for useful tools and unease about jobs, fakes, and who is really in charge. Oversight lags everywhere – the EU AI Act is only partly enforced, Washington governs by executive measures and voluntary lab pledges, Beijing licenses models but inspects nothing intrusively, and no binding international verification exists.
+
+Over the next three years (3 turns of 1 year each, 2026–2029), the workshop asks: do the breakthroughs arrive fast enough to feel – cures, discoveries, drudgery lifted – or does the disruption arrive first – jobs, fakes, dependence, and a US-China clash nobody planned?

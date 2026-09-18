@@ -9,6 +9,8 @@ from pathlib import Path
 from statistics import mean, pstdev
 from typing import Any
 
+from .output import is_run_dirname
+
 
 # ---------------------------------------------------------------------------
 # Internal helpers
@@ -61,7 +63,7 @@ def _discover_completed_runs(scenario_dir: Path, max_runs: int | None = None) ->
         return []
     candidates = sorted(
         d for d in runs_dir.iterdir()
-        if d.is_dir() and d.name.startswith("run-")
+        if d.is_dir() and is_run_dirname(d.name)
     )
     if max_runs is not None:
         candidates = candidates[-max_runs:]

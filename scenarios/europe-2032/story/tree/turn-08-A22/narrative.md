@@ -21,7 +21,7 @@ The breakthrough comes from outside the Union. For families in Lyon, Milan and R
 >
 > **Claire:** it came from america. we clapped anyway
 
-Sofia's note that month is the first new measure she has recommended in over a year, and the President puts the Commission's standing behind it. The Breakthrough Therapies Access and Delivery Programme makes the delivery European, even where the design is not. The health directorate and the emergency planners push supply towards personalised-therapy wards, validation teams certify protocols with human checks built in, and the medicines agency opens an accelerated but audited path. Mayors who refused new automation after the welfare scandal are offered published logs and a right of recourse for patients.
+Sofia's note that month is the first new measure she has recommended in over a year, and the President backs it in the College and in public. The Breakthrough Therapies Access and Delivery Programme makes the delivery European, even where the design is not. The health directorate and the emergency planners push supply towards personalised-therapy wards, validation teams certify protocols with human checks built in, and the medicines agency opens an accelerated but audited path. Mayors who refused new automation after the welfare scandal are offered published logs and a right of recourse for patients.
 
 The queues do not disappear, because the same rationed hardware runs the planning. But wards that had been treating at lower throughput begin treating at something closer to normal again. Trust lifts, measurably. The polls still show resentment over the empty factories and the benefits scandal, but for the first time in a year the coverage pairs AI with a cured child rather than a cut benefit.
 

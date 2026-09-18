@@ -18,7 +18,7 @@ Then the second blow lands.
 
 > **October 2031.** An ombudsman, and then a court, find that a support system for social insurance and policing has systematically wronged thousands of people – benefits cut, families flagged – with human oversight reduced to seconds per case and logs generated but never read.
 
-Sofia's note answers both at once, and the President puts the Commission's standing behind it as the Guarded Lifeline and Trusted Administration Pact. Its first half is a reversal of her own recommendation in the spring. The map comes down. The spares become dispersed micro-stores held by towns, hospitals and grid operators on a flat reimbursement, guarded only on request, with no public list at all. She writes the paragraph that withdraws the map herself, late, and does not soften it. Some holders come back. Others keep two sets of books, convinced that any list is a target list.
+Sofia's note answers both at once, and the President lends it everything the Commission has left as the Guarded Lifeline and Trusted Administration Pact. Its first half is a reversal of her own recommendation in the spring. The map comes down. The spares become dispersed micro-stores held by towns, hospitals and grid operators on a flat reimbursement, guarded only on request, with no public list at all. She writes the paragraph that withdraws the map herself, late, and does not soften it. Some holders come back. Others keep two sets of books, convinced that any list is a target list.
 
 The second half is redress. Under the AI Act the Commission opens coordinated enforcement with the AI Office, the national supervisors and the ombudsman. The system is suspended by its supervisor at the Commission's request, the logs are published, and case review and back-pay are promised. Brussels argues that the system was high-risk and that its obligations were breached on paper. The public hears the other reading: lawful throughout, and a badly drawn law.
 
@@ -33,7 +33,7 @@ The health-scheduling tools that still cut waits from months to days cannot sepa
 
 The world does not wait for Brussels.
 
-> **August 2031.** A new openly released model, near the closed frontier, is downloaded hundreds of thousands of times in its first week.
+> **August 2031.** A new openly released model, near the closed frontier, is is copied hundreds of thousands of times in its first week. Two administrations are already running it in production, having decided that a model nobody can withdraw is the safer dependency.
 >
 > **November 2031.** Washington tightens export licensing again. Allies stay inside its tiered system on volume quotas, which in practice means licences without volume. Exercises around Taiwan push shipping insurance up.
 >

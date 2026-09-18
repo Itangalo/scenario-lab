@@ -17,7 +17,7 @@ In February the war is far away. By March it is not. Airspace closes, power and 
 
 Sofia's shelter goes out as drafted. The Union declares non-belligerency: no Union territory, ports, fabs or data centres for any targeting use, orders to protect airspace and cables, and the reserve teams dispersed again. The declaration does not stop the effects. Cloud outages roll through registries and hospitals for days at a time. American frontier systems that European clinics and grid operators had quietly relied on become unreachable or restricted overnight. The empty accelerator halls now read less as an embarrassment than as an exposure.
 
-> **April 2031.** Tailored therapies for several previously untreatable conditions reach ordinary clinics abroad.
+> **April 2031.** A second class of tailored therapy – rare inherited disease this time – reaches ordinary clinics abroad. European patients are on the waiting lists of hospitals in other countries.
 
 The first European doses come through foreign platforms. Then the conditions Sofia wrote into the care network start to work. After emergency verification by the medicines agency, the therapies are delivered through Union-run hospitals in the pilot networks, on infrastructure the Union hosts.
 

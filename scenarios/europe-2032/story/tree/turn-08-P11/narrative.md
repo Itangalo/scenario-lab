@@ -14,7 +14,7 @@ next: turn-09-P11
 
 The tooling is machine-written, and months later attribution is still open. The emergency patching chases damage nobody can map.
 
-Brussels answers with what it has. Sofia's Cyber Recovery and Hardening Sprint sends emergency teams to the worst-hit cities and orders the compromised component patched, and wards and utilities switch to the manual procedures declared operational last year. The President puts the Commission's standing behind it. Funded overtime keeps the fallback standing. The nurses report errors multiplying on the manual charts, and the auditors begin asking who carries the liability when reconciling the paper fails.
+Brussels answers with what it has. Sofia's Cyber Recovery and Hardening Sprint sends emergency teams to the worst-hit cities and orders the compromised component patched, and wards and utilities switch to the manual procedures declared operational last year. The President throws the Commission's remaining weight behind it. Funded overtime keeps the fallback standing. The nurses report errors multiplying on the manual charts, and the auditors begin asking who carries the liability when reconciling the paper fails.
 
 > **Claire:** billing's on paper again
 > **Claire:** the certificate didn't cover this either. nothing covers this
@@ -31,6 +31,6 @@ Every compute plan becomes a security plan overnight. The Commission freezes the
 
 Against the outage, a counterpoint holds.
 
-> **May 2030.** A handful of public-sector AI deployments show undeniable results: waiting lists shortened, permits returned in days, tutoring pilots with measurable gains.
+> **May 2030.** A second round of public-sector deployments reports, and this time it is not the hospitals. Planning permits come back in days, benefit appeals are decided inside a month, and a tax administration closes a backlog it has carried since 2027.
 
 Ministers tour those sites deliberately, arguing that keeping the systems running through the incident was worth it. The public splits the difference. Relief at the visible benefits tempers the anger at disruption, but the outages dominate the coverage, and the Commission's standing steadies only because restoration is seen to be attempted.

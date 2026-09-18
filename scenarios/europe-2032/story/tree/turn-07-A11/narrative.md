@@ -14,7 +14,7 @@ In September the two gigafactory sites get their permits and their capital, and 
 
 Washington remains cordial and slow. The drafts come back with the audit-rights clauses still in brackets.
 
-> **October 2029.** A new freely downloadable model, close to the best closed one, is copied hundreds of thousands of times in days. Filters agreed in Brussels are bypassed within hours.
+> **October 2029.** A new freely downloadable model, close to the best closed one, is mirrored onto hundreds of thousands of machines in days. Filters agreed in Brussels are bypassed within hours.
 >
 > **October 2029.** Law firms, accountancies, software support desks and customer-service operators have stopped hiring graduates, a survey of employers finds.
 >

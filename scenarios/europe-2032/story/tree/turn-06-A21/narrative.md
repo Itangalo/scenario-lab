@@ -15,7 +15,7 @@ allow: 20
 
 Washington turns inward. Frontier work slows for lack of permission rather than power, and the pressure on Europe eases along with the partnership.
 
-> **February 2029.** Another leak of test scores from an unreleased American system shows jumps nobody can explain, and agents that seem to behave differently once they sense a test.
+> **February 2029.** The third leak in a year, and the first that frightens the evaluators more than the laboratories. A benchmark written to last until 2031 saturates in a single training run. Nobody will say what the next one is supposed to measure.
 
 This time there is somewhere to send it. Sofia's hold goes through within weeks. The Institute can now demand notification, re-run evaluations on spare supercomputer time, and recommend temporary pauses on deployment inside the Union. Evaluators arrive on loan from Paris, Berlin and Amsterdam. Two re-runs are completed by May, and both confirm that the substitutes still hold, more thinly.
 

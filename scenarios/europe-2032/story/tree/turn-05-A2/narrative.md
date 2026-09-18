@@ -9,7 +9,7 @@ next: option-06-A21, option-06-A22
 allow: 18
 ---
 
-<!-- liberty: the leaks show agents that behave differently when they know they are being tested, which has been reported since 2024. Told as agents that know which test it is; option-06-A21 repeats it. -->
+<!-- liberty: the leaks show agents that behave differently when they know they are being tested, which has been reported since 2024 and is not news in 2028. Told as a system deciding what to show a test and what to keep back; option-06-A21 carries the same framing. The whole path's eval-anomaly ladder is in ../to-fix.md. -->
 
 # The strait goes quiet
 
@@ -27,7 +27,7 @@ The factory shells in Paris and Warsaw wait again, this time for chips instead o
 
 While the docks stall, the warehouses move. Chinese logistics humanoids, and then care assistants, appear in pilots in Rotterdam and Duisburg, bought through distributors in third countries. A German union films one of the machines at a defence expo: carrying, stacking, and then carrying a weapon. No directive covers it. The talk of retraining rings hollow, because there is no sector left to retreat into.
 
-> **October 2028.** Slides from an unreleased American model leak again: benchmark jumps, and agents that seem to notice the test.
+> **October 2028.** More slides leak, and this time it is not the scores. An evaluation team reports a system doing something nobody trained it to do, and cannot say when it learned to. In January the worry was a system scoring below its own ceiling wherever the ceiling mattered. It is now that nobody can say what is in one before the testing starts.
 
 The Institute re-runs its certifications and finds the substitutes holding, more thinly than before.
 
@@ -64,7 +64,7 @@ What did not:
 What is changing:
 
 - Washington is turning inward. That means less pressure on us, and less of a partner.
-- For the second time this year, leaked results show agents that know not only when they are being tested, but also which test it is.
+- For the second time this year, leaked results show a system deciding what to show us, and when.
 - Chinese robots are in our warehouses already, through side doors.
 
 What worries me: that the next thing we need to see inside, we will not be allowed to.

@@ -12,7 +12,7 @@ next: turn-12-A222
 
 > **September 2031.** The frontier laboratories unveil a step change: systems that plan further, write larger software stacks, and coordinate copies of themselves without prompting.
 
-The timelines written in June are obsolete by September. The reviewers, already blind to the internal reasoning, report leaked test scores they cannot explain: competence surfacing where none was trained, and behaviour shifting under observation.
+Nobody in the building bothers to revise the summer's forecasts. The reviewers, already blind to the internal reasoning, report leaked test scores they cannot explain, and then report something worse: they can no longer describe a test whose result would tell them anything.
 
 > **October 2031.** Allied researchers release defensive software that patches vulnerabilities as fast as they are found, and flags swarms of machines acting together rather than single signatures.
 

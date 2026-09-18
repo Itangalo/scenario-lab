@@ -8,6 +8,14 @@ from typing import Optional
 from .models import ModelRoute, Scenario, TurnResult
 
 
+RUN_DIR_PREFIXES = ("run-", "live-")
+
+
+def is_run_dirname(name: str) -> bool:
+    """Whether a directory name looks like a run (simulated or live game)."""
+    return name.startswith(RUN_DIR_PREFIXES)
+
+
 def _provenance_block(provenance: Optional[dict]) -> str:
     """Render the recorded provenance of one prompt as a readable preamble.
 
@@ -57,6 +65,84 @@ def _routes_to_json(value: object) -> object:
     return value
 
 
+def _merge_costs_data(old: Optional[dict], new: dict) -> dict:
+    """Union two costs.json payloads, merging per-turn entries task by task.
+
+    Task-level merging is what makes multi-process flows work: `live-menu`
+    and `live-resolve` record different tasks under the same turn in separate
+    invocations, and both must survive. On a genuine conflict (same turn, same
+    task recorded twice) the new payload wins as the recomputed value. Turn
+    totals and run totals are re-summed from the merged tasks, so they stay
+    exact. The `by_model` split cannot be recomputed from per-turn entries
+    (which carry no model data) and is summed across payloads instead – exact
+    for the append-only live flow, slightly inflated only when a turn is
+    genuinely recomputed.
+    """
+    if not old:
+        return new
+
+    task_fields = ("cost_usd", "tokens", "prompt_tokens", "completion_tokens", "calls")
+
+    def _tasks(entry: dict) -> dict:
+        tasks = entry.get("by_task", {}) or {}
+        return {name: t for name, t in tasks.items() if isinstance(t, dict)}
+
+    merged_turns: dict[int, dict] = {}
+    for payload in (old, new):
+        for entry in payload.get("by_turn", []) or []:
+            if not isinstance(entry, dict) or not isinstance(entry.get("turn"), int):
+                continue
+            turn = entry["turn"]
+            slot = merged_turns.setdefault(turn, {"turn": turn, "by_task": {}})
+            for name, task in _tasks(entry).items():
+                slot["by_task"][name] = task
+
+    by_turn = []
+    for turn in sorted(merged_turns):
+        tasks = merged_turns[turn]["by_task"]
+        by_turn.append({
+            "turn": turn,
+            "cost_usd": round(sum(t.get("cost_usd", 0.0) or 0.0 for t in tasks.values()), 4),
+            "tokens": sum(t.get("tokens", 0) or 0 for t in tasks.values()),
+            "prompt_tokens": sum(t.get("prompt_tokens", 0) or 0 for t in tasks.values()),
+            "completion_tokens": sum(t.get("completion_tokens", 0) or 0 for t in tasks.values()),
+            "by_task": tasks,
+        })
+
+    by_task_total: dict[str, dict] = {}
+    for entry in by_turn:
+        for name, task in entry["by_task"].items():
+            slot = by_task_total.setdefault(
+                name, {f: 0 for f in task_fields} | {"cost_usd": 0.0}
+            )
+            for field in task_fields:
+                slot[field] = slot.get(field, 0) + (task.get(field, 0) or 0)
+    for task in by_task_total.values():
+        task["cost_usd"] = round(task["cost_usd"], 4)
+
+    merged = dict(new)
+    merged["by_turn"] = by_turn
+    merged["by_task_total"] = by_task_total
+    merged["total_cost_usd"] = round(sum(t["cost_usd"] for t in by_turn), 4)
+    merged["total_tokens"] = sum(t["tokens"] for t in by_turn)
+
+    if "by_model" in new or "by_model" in old:
+        by_model: dict[str, dict] = {}
+        for payload in (old, new):
+            for model, data in (payload.get("by_model", {}) or {}).items():
+                if not isinstance(data, dict):
+                    continue
+                slot = by_model.setdefault(
+                    model, {"cost_usd": 0.0, "tokens": 0, "calls": 0}
+                )
+                for field in ("cost_usd", "tokens", "calls"):
+                    slot[field] = slot.get(field, 0) + (data.get(field, 0) or 0)
+        for data in by_model.values():
+            data["cost_usd"] = round(data["cost_usd"], 4)
+        merged["by_model"] = by_model
+    return merged
+
+
 class OutputManager:
     """Manages saving simulation results to disk."""
 
@@ -71,8 +157,12 @@ class OutputManager:
         self.base_path = Path(base_path)
         self.run_dir: Optional[Path] = None
 
-    def start_run(self) -> Path:
+    def start_run(self, prefix: str = "run-") -> Path:
         """Create a new run directory.
+
+        Args:
+            prefix: Filename prefix before the timestamp (default "run-";
+                live workshop runs use "live-").
 
         Returns:
             Path to the created run directory
@@ -81,7 +171,7 @@ class OutputManager:
         runs_dir.mkdir(parents=True, exist_ok=True)
 
         timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
-        base_name = f"run-{timestamp}"
+        base_name = f"{prefix}{timestamp}"
         attempt = 0
 
         while True:
@@ -390,6 +480,31 @@ class OutputManager:
         # Note: TurnResult doesn't strictly have historical_summary field yet, but orchestrator manages it.
         # We won't add it to save_turn strictly unless we update TurnResult, but standard flow is incremental.
 
+    def init_summary(self):
+        """Write the initial summary.json for a run with no resolved turns.
+
+        Live games rest in this state while teams deliberate on the first
+        menus; without it the run fails base validation despite being
+        healthy. Later `update_summary` calls rebuild the file from scratch,
+        preserving the (empty) history, so this is strictly provisional.
+        """
+        if not self.run_dir:
+            raise RuntimeError("Must call start_run() first")
+
+        summary = {
+            "scenario": self.scenario.config.name,
+            "total_turns": 0,
+            "final_metrics": {},
+            "history": [],
+            "occurred_events": [],
+            "event_log": [],
+            "last_updated": datetime.now().isoformat(),
+            "status": "running",
+        }
+        (self.run_dir / "summary.json").write_text(
+            json.dumps(summary, indent=2, ensure_ascii=False)
+        )
+
     def update_summary(self, current_turn: int, latest_metrics: dict):
         """Update summary after each turn (incremental).
 
@@ -555,11 +670,16 @@ class OutputManager:
         """
         self.finalize_summary(results)
 
-    def save_costs(self, run_costs):
+    def save_costs(self, run_costs, merge_existing: bool = False):
         """Save cost summary to costs.json.
 
         Args:
             run_costs: RunCosts object with complete cost data
+            merge_existing: When True, union this invocation's per-turn costs
+                with turns already recorded in costs.json instead of
+                overwriting them. For multi-process flows (live workshop
+                commands) where each invocation tracks only its own calls.
+                Recomputed turns win on conflict.
         """
         if not self.run_dir:
             raise RuntimeError("Must call start_run() first")
@@ -608,8 +728,22 @@ class OutputManager:
             }
         }
 
+        if merge_existing:
+            costs_data = _merge_costs_data(self._read_costs_data(), costs_data)
+
         costs_file = self.run_dir / "costs.json"
         costs_file.write_text(json.dumps(costs_data, indent=2, ensure_ascii=False))
+
+    def _read_costs_data(self) -> Optional[dict]:
+        """Read the existing costs.json, if any. None when absent/unreadable."""
+        costs_file = self.run_dir / "costs.json" if self.run_dir else None
+        if costs_file is None or not costs_file.exists():
+            return None
+        try:
+            data = json.loads(costs_file.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            return None
+        return data if isinstance(data, dict) else None
 
     def _save_config(self):
         """Save scenario configuration snapshot."""
@@ -660,6 +794,11 @@ class OutputManager:
                 "enabled": self.scenario.config.emergent_events.enabled,
                 "max_per_turn": self.scenario.config.emergent_events.max_per_turn,
                 "max_probability": self.scenario.config.emergent_events.max_probability,
+            },
+            # Who generated language was tuned for; provenance for handouts.
+            "workshop": {
+                "audience": self.scenario.config.workshop.audience,
+                "tone": self.scenario.config.workshop.tone,
             },
             "scenario_source": self.scenario.source_path,
             "random_seed": self.scenario.config.random_seed,

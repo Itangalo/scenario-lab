@@ -78,6 +78,13 @@ Use this information to do the following:
 {% if output_language %}
 Please write your response in {{output_language}}.
 {% endif %}
+{% if workshop_guidance %}
+Who this narrative is for:
+
+{{workshop_guidance}}
+
+Fit the narrative's register to that room without changing what happens.
+{% endif %}
 
 Important: You must use the exact headers '## Metrics', '## Narrative', and '## Notepad' as specified below{% if has_world_store %}, plus '## Store changes' for your world writes{% endif %}. Do not translate these headers, even if you are writing the content in another language.
 

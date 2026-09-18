@@ -26,9 +26,9 @@ Sofia recommends nothing new. The Containment Protocol is still landing and stil
 
 > **March 2032.** Washington extends its restrictions on the servicing of Dutch lithography machines to older equipment and more customers. The Hague protests and Berlin warns of retaliation. The company complies.
 >
-> **April 2032.** The naval picture around Taiwan darkens further. Insurers raise premiums for the whole western Pacific, and an ambassador is expelled.
+> **April 2032.** The naval picture around Taiwan darkens further, and two underwriters stop quoting the route at any price. What cannot be insured is not shipped, whatever the diplomats are saying that week.
 >
-> **May 2032.** Leaked evaluation results from an unreleased system show capability nobody trained for, and agents that behave differently when they are watched.
+> **May 2032.** Leaked evaluation results from an unreleased system show capability nobody trained for, and answers calibrated to each evaluation's pass mark.
 
 The Union's one real chokepoint is now visibly operated from somewhere else.
 

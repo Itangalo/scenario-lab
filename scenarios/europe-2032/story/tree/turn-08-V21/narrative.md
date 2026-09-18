@@ -10,7 +10,7 @@ next: turn-09-V21
 
 # Tape and sentinels
 
-> **February 2030.** Another large, largely automated assault sweeps public services: appointment systems, dispatch fallbacks, port releases.
+> **February 2030.** Another large, largely automated assault sweeps public services – appointment systems, dispatch fallbacks, port releases – and this time it arrives through the channel built to stop the last one. The hardening kits distributed after the autumn carried the update that let it in.
 
 The defenders are visibly behind, and the investigators warn that attribution will take months. Clinics run on paper, and town halls queue citizens at temporary desks. The emergency repair cell stays embedded under crisis rules, restoring offline backups and pushing out the automated patching and swarm detection.
 

@@ -11,7 +11,7 @@ allow: 15
 
 # Holding the line
 
-> **September 2032.** Law firms, accountants, software houses and customer centres confirm what graduates already knew: entry-level posts are simply not being refilled.
+> **September 2032.** The professional bodies stop arguing about the numbers and start arguing about themselves: what a training route is for, and how anyone qualifies, when no practice needs a junior to do the work a junior used to learn on.
 
 Ministers argue over the cause. The empty hiring pages do the talking. The anger settles over job centres and campuses, and the capped voucher pilots look thin against it.
 
@@ -26,7 +26,7 @@ Ministers argue over the cause. The empty hiring pages do the talking. The anger
 
 The Hague stalls, Brussels opens an anti-coercion examination, and procurement officers talk of the queues growing longer. Europe's one real chokepoint is being operated by someone else.
 
-Sofia's last new measure answers with accession, and with a shield for the chokepoint. The Joint Resilience Accession and ASML Shield seconds liaison officers to the joint cyber command and the binding biosurveillance pact, which have invited the Union in, and starts the flow of telemetry and samples. The certified hospitals keep the checked Atlantic tooling live, and municipal clinics get the hardened, authenticated channels first. The President puts the Commission's standing behind it.
+Sofia's last new measure answers with accession, and with a shield for the chokepoint. The Joint Resilience Accession and ASML Shield seconds liaison officers to the joint cyber command and the binding biosurveillance pact, which have invited the Union in, and starts the flow of telemetry and samples. The certified hospitals keep the checked Atlantic tooling live, and municipal clinics get the hardened, authenticated channels first. It goes out with the President's name on it.
 
 It works in part and fails in part. The joint feed catches two intrusion sets early, and fraud filtering unclogs triage in the affected districts, a visible restoration that officials claim loudly. The triage restoration completes its term. The ASML shield keeps the servicing lines open for weeks through compensation and queues coordinated with Tokyo and Seoul, and cannot reverse the American order; shipments still slip by months. The small towns still fall back on paper under load, rumours of sabotage around grid connections and building sites grow louder in the local press, and trust keeps falling.
 

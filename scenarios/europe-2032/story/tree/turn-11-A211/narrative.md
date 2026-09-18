@@ -10,7 +10,7 @@ next: turn-12-A211
 
 # A state arm
 
-The autumn brings no new programme from Brussels, only the grinding work of keeping what exists running while the war at sea and in orbit goes on. Sofia's note recommends nothing new, and the President keeps the Commission's weight on the shelter. Reserve engineers stay on the substations, hospital generators and cable landings. The municipal registries, restored over painful months, stay open on dispersed backups.
+The autumn brings no new programme from Brussels, only the grinding work of keeping what exists running while the war at sea and in orbit goes on. Sofia's note recommends nothing new, and the President spends what credit the Commission has left on the shelter. Reserve engineers stay on the substations, hospital generators and cable landings. The municipal registries, restored over painful months, stay open on dispersed backups.
 
 > **September 2031.** A sudden leap in frontier capability, demonstrated abroad, makes every published timeline obsolete overnight.
 >
