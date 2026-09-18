@@ -1,4 +1,6 @@
-# What can still be learned
+# Which choices matter?
+
+This is not a grand ending, and it is not meant to be. This is just where the simulation ends.
 
 You have just decided European AI policy over six years. You may feel that it didn't change how AI developed.
 
