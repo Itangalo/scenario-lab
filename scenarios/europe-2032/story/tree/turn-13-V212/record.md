@@ -1,47 +1,47 @@
 <!-- record: machine-extracted from the run, always rewritten. Never edit by hand, never quote figures from anywhere else. -->
 
-Source: `scenarios/europe-2032/runs/run-20260911-083451-01/turn-13`. Figures live in `data.json`; do not retype them from below, cross-check against it.
+Source: `scenarios/europe-2032/runs/run-20260911-083749/turn-13`. Figures live in `data.json`; do not retype them from below, cross-check against it.
 
 ## Actor response (EU)
 
 ## New measure
-**EU Municipal Offline Continuity Corps**
-Keeps hospitals, registries and dispatch running on offline paper procedures and reserve staff through the cutoff and ransomware wave.
+**EU Bio-Shock Continuity Lockdown**
+Keeps hospitals, power, water and food logistics running on paper-plus-EU-hosted fallback through the AI-designed pandemic peak, using emergency health powers and the joint cyber-bio telemetry already plugged in.
 
-This is the cheapest continuity lever we can still fund with capital at 9 and sentiment at 1: a preparedness and resilience measure (category 6) that sustains the finished Shield, Repair Cell and Retention Pact legacies without a new vote or new money fight, holding our two-year commitment to secure continuity of essential health and public services.
+This is preparedness and resilience work when a more contagious, more lethal pathogen puts everything else on hold, member-state defection threatens the common line, and capital is at 8 — it is the only thing our two-year commitment to secure continuity through the bio-shock can mean now, which is why now and why this over any sovereignty build we cannot fund or enforce.
 
 ## Store changes
 ```json
-{"store": [{"op": "add", "table": "measures", "fields": {"name": "EU Municipal Offline Continuity Corps", "category": 6, "size": "small", "finish_turn": 15, "applies_to": "own jurisdiction", "targeted_effect": "resilience up modestly, eu_political_capital up modestly if services hold"}, "grounds": "to hold essential services through cutoff and attack with no headroom"}]}
+{"store": [{"op": "add", "table": "measures", "fields": {"name": "EU Bio-Shock Continuity Lockdown", "category": 6, "size": "small", "finish_turn": 15, "applies_to": "own jurisdiction", "targeted_effect": "resilience up strongly to absorb pandemic disruption"}, "grounds": "catastrophic AI-designed biological outbreak plus member-state defection fracturing response"}]}
 ```
 
 ## Priority
-EU Municipal Offline Continuity Corps, because with no measures in flight and frontier access denied during a major automated attack, keeping clinics and dispatch degraded-but-alive outranks any sovereignty build we cannot pay for.
+EU Bio-Shock Continuity Lockdown, because M9 holds telemetry and repair but only a pandemic-mode continuity regime keeps essential health and public services from stopping when the bio-shock is the world.
 
 ## In practice
-We run this through ENISA and DG ECHO with EPSCO cover, using reprogrammed UCPM rescEU and EU4Health balances only: printed playbooks, offline backups, reserve rosters and wastewater sequencing overtime extended to municipalities hit hardest in February. No new regulation, no attribution fight, no retaliation demand on capitals.
+We trigger the Health Emergency Preparedness and Response Authority and ECDC emergency operations room as the single allocator: Council Implementing Decision under the Serious Cross-Border Threats Regulation for binding triage protocols, staff redeployment, and sample-sharing through the biosurveillance pact, paid from repurposed Digital Europe and EU4Health inference credits and overtime lines. Municipal dispatch, hospital admin and appointment systems stay on the offline EU-hosted fallback list cleared by the Evaluation Institute, with ENISA/CERT-EU telemetry feeding the joint cyber command to block follow-on ransomware during the peak.
 
-We tell hospitals and mayors the authorized fallback is EU-hosted models from the Evaluation Institute list, and we tell finance ministers we are spending nothing new. Retention premia already paid under M9 are protected where they landed; where they lagged we send continuity teams, not inspectors, to keep emergency call-taking alive while attribution and the frontier cutoff run their course.
+We hold cohesion by letting the defecting member state's side-deal stand without endorsement while offering police-escorted repair, backup-power kits and Fallback Corps shifts to any mayor who keeps to the common protocol, isolating sabotage of grid works and depots as criminal obstruction. No new compute build, no export retaliation this turn; every point of capital goes to wards, power and water staying degraded-not-stopped.
 
 ## World state
 
-### Cut off in the middle of the fire
-In August the notices went out without explanation: European accounts on the leading American system stopped answering. Hospital triage assistants, ministry drafting tools, logistics planners that had quietly been rebuilt on top of it failed at once. Procurement officers were told to switch to approved European-hosted alternatives. In wards that had just restored admissions after February, the alternatives were slower and staff did not trust them.
+### Pandemic mode
+The pathogen announced itself in airport clinics and port hospitals almost at once. Sequencing shared through the new biosurveillance channels showed the same signature in three continents: a highly transmissible respiratory agent with immune-evasive features that bore the marks of AI-assisted design. Within weeks borders tightened, schools emptied, and elective care was cancelled across the Union.
 
-Weeks later a second blow landed. A self-mutating extortion campaign swept municipal networks again, faster than the spring version, locking registries, billing and dispatch consoles. ENISA buses rolled with the same printed playbooks. Care did not stop, but queues stretched around clinics and emergency calls waited on paper logs.
+Brussels invoked emergency health powers. A single allocator under the health emergency authority and the disease control centre set binding triage protocols, redeployed staff, and ordered municipal dispatch, hospital administration and appointment systems to stay on offline paper routines and slower European-hosted fallbacks. Telemetry from the joint cyber command was turned to shielding hospitals from follow-on extortion attacks during the peak.
 
-### Paper as a plan
-Brussels had almost nothing left to spend. The hospital retention agreement formally closed, and its uneven premiums stayed where they had landed. The only new programme was a shoestring continuity corps: reserve rosters, offline backups, photocopied procedures sent to the hardest-hit towns, funded by shifting leftover civil-protection and health balances.
+It kept wards degraded, not closed — where the fallback held, oxygen, power and water logistics continued on handwritten logs and escorted repair vans. Where it did not, ambulances queued and morgues overflowed. Nurses worked double shifts in protective kits paid from repurposed health and digital funds.
 
-Where teams arrived in time, the damage was contained. Dispatchers kept answering on degraded lines; nurses worked from printouts. Where they arrived late, mayors accused the Union of managing collapse with clipboards.
+### A line broken
+In the middle of the peak, one large member state announced its own supply arrangement for models, compute credits and medical countermeasures with an outside hyperscaler, on terms that undercut the common licence and bargaining line. The capital defended it as pragmatism to save lives; other capitals called it queue-jumping.
 
-Behind the noise, laboratories elsewhere showed a sharp jump in machine-written code and intrusion tooling. Defenders said openly they were behind, and no one could say who had run the autumn campaign. Voters did not debate the technical details. They saw closed counters, foreign sorting machines back in ports after the spring strikes, and officials who could neither keep the lights on digitally nor explain why the best tools were now denied.
+The Council chose not to punish. The side-deal was left standing without endorsement, while repair kits, backup-power cabinets and extra fallback shifts were offered to any mayor who kept to the common protocol. Police escorts for grid works and depot deliveries became permanent, after renewed sabotage and blockades.
 
-By December exhaustion had turned to contempt.
+By December the outbreak still dominated everything. Services had not stopped, but trust had collapsed further, and the Union survived the half-year on overtime, offline copies and outside telemetry — visibly unable to hold its own line when a member chose to leave it.
 
 ## Game-master notepad
 
-PORTFOLIO CHARGE t13: EU Municipal Offline Continuity Corps −2, priority −0 (capital below 20, no effect no cost) = −2
-PROPOSAL BONUS: EU Municipal Offline Continuity Corps (cat 6, small) +3 — cyber_major_incident and cutoff landed this turn and this answers continuity directly
-LEGITIMACY LENDS: none — capital 9, sentiment 0 -> none (capital higher)
-SOVEREIGNTY: 14 last turn, no cat4 finish +0, no cat4 in flight +0, eu_frontier_access_denied t13 −3, capability rose 1.2 −0 = 11
+PORTFOLIO CHARGE t13: M9 EU Joint Cyber-Bio Recovery Pact −2, M10 EU Bio-Shock Continuity Lockdown −2, priority −0 (capital below 20, no effect no cost) = −4
+PROPOSAL BONUS: EU Bio-Shock Continuity Lockdown (cat 6, small) +4 — catastrophic AI-designed pandemic this turn and this answers it directly via paper-plus-fallback continuity and joint telemetry
+LEGITIMACY LENDS: capital 3, sentiment 0 -> none (capital higher)
+SOVEREIGNTY: 16 last turn, no capacity event finish, no cat4 in flight +0, member_state_defection t13 −2, capability rose 0.8 −0 = 14

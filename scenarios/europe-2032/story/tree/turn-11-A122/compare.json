@@ -26,41 +26,63 @@
         "line": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or a model handling the fact of being evaluated in a way nobody designed for.",
         "of_nine": 5,
         "emergent": false
+      },
+      {
+        "id": "labour_displacement",
+        "title": "Labour Displacement Wave",
+        "line": "Measurable job losses attributed to AI in named sectors, with the graduate market worst hit: entry-level positions in law, accountancy, software, customer operations and administration are not replaced.",
+        "of_nine": 3,
+        "emergent": false
       }
     ],
-    "notable": []
+    "notable": [
+      {
+        "id": "catastrophic_great_power_conflict",
+        "title": "Hot Conflict Between Major Powers",
+        "line": "The US and China are shooting at each other.",
+        "of_nine": 1,
+        "emergent": false
+      },
+      {
+        "id": "us_labs_nationalised",
+        "title": "Washington Takes the Labs",
+        "line": "The United States takes its frontier laboratories under direct state control.",
+        "of_nine": 1,
+        "emergent": false
+      }
+    ]
   },
   "corpus_runs": 143,
   "corpus_cut": 17,
   "metrics": {
     "ai_capability": {
       "label": "AI capability",
-      "value": 92.5,
-      "higher_than": 138,
+      "value": 92.0,
+      "higher_than": 136,
       "of_runs": 143
     },
     "openweight_capability": {
       "label": "Open-weight capability",
-      "value": 87.5,
-      "higher_than": 141,
+      "value": 87.0,
+      "higher_than": 140,
       "of_runs": 143
     },
     "ai_safety": {
       "label": "AI safety",
-      "value": 0.0,
-      "higher_than": 0,
+      "value": 1.0,
+      "higher_than": 24,
       "of_runs": 143
     },
     "resilience": {
       "label": "Resilience",
-      "value": 42.0,
-      "higher_than": 47,
+      "value": 48.0,
+      "higher_than": 86,
       "of_runs": 143
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
-      "value": 12.0,
-      "higher_than": 32,
+      "value": 17.0,
+      "higher_than": 75,
       "of_runs": 143
     },
     "eu_political_capital": {
@@ -71,8 +93,8 @@
     },
     "public_sentiment": {
       "label": "Public sentiment",
-      "value": 10.0,
-      "higher_than": 58,
+      "value": 16.0,
+      "higher_than": 86,
       "of_runs": 143
     }
   }

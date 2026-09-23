@@ -1,6 +1,6 @@
 <!-- record: machine-extracted from the run, always rewritten. Never edit by hand, never quote figures from anywhere else. -->
 
-Source: `scenarios/europe-2032/runs/run-20260911-083451-01/turn-10`. Figures live in `data.json`; do not retype them from below, cross-check against it.
+Source: `scenarios/europe-2032/runs/run-20260911-083749/turn-10`. Figures live in `data.json`; do not retype them from below, cross-check against it.
 
 ## Actor response (EU)
 
@@ -29,20 +29,21 @@ We order ministries, hospitals and firms off the cut-off US frontier onto EU-hos
 
 ## World state
 
-### Cut off in the middle of containment
-The spring began with two shocks at once. Clinics in three member states reported clusters of severe atypical pneumonia. Sequencing showed an engineered agent, and investigators found traces of machine assistance in its design. Quarantine wards filled, contact teams deployed, and containment stretched for weeks.
+### Containment weeks
+Winter brought a release that no exercise had quite captured. A modified pathogen, with traces of machine-assisted design in its history, began moving through two border regions. Clinics already on paper triage stayed on it. Sequencing labs and wastewater monitors flagged clusters, and health teams in protective gear ran case-finding and isolation for weeks while wards filled and emptied slowly.
 
-In the same weeks, access to the leading American model went dark for European users. Hospitals, ministries and logistics firms that had built triage helpers, dispatch copilots and port paperwork tools on it saw error messages with no reason and no appeal. Staff fell back to older European-hosted open models and to paper.
+What held was unglamorous. Embedded repair crews kept offline backups alive, dispatch ran on workarounds, and the municipal backup kits delivered the year before gave mayors something to point to. The death toll was real, the disruption prolonged, but services degraded rather than stopped. Abroad, the same weeks brought a sharp demonstration of automated coding and intrusion tooling that changed what investigators expected from the next break-in.
 
-What prevented collapse was work already done. Municipal backup kits, offline triage procedures and upgraded sequencing and wastewater monitors, installed under emergency health powers, carried case-finding when networks jammed. Union cyber and civil-protection teams stayed embedded in town halls and hospitals, rebuilding from offline copies and keeping emergency dispatch on workarounds. Mayors credited the crews, even as queues lengthened.
+### The cutoff
+In the middle of containment, access to the leading American model went dark for Union users. No reason, no appeal. Hospitals, ministries and firms that had built triage summaries, procurement tools and lab workflows on top of it found blank screens.
 
-Brussels activated a single new emergency corps under existing health-emergency and civil-protection law, without a new vote: funded overtime for clinic staff, expanded lab surveillance, and a cleared list of fallback models to run on European soil with reprogrammed digital funds. No new factory money was voted; sites were kept warm. No retaliation for the cutoff or for extended servicing curbs on chipmaking tools was attempted.
+Brussels ordered a shift to European-hosted open models and older licensed systems from a cleared list, paying for inference on home soil and overtime for staff to relearn procedures mid-crisis. It worked after a fashion — slower, cruder, but under European control. The public read it less as outrage than as confirmation: dependence had been warned about, and warned about too late.
 
-A sharp advance in code and intrusion tools, demonstrated abroad, made defence harder within weeks. Machine-written break-ins continued against clinics and ports. Public mood, exhausted by outages and now frightened by the release, fell to open hostility in places. That services degraded rather than stopped was noticed — but gratitude was thin against fear and fatigue.
+Trust fell to almost nothing. Outage fatigue, fear of the new disease, and anger at being cut off fused into hostility toward anything automated. No new factory money moved; sites were kept warm behind fences while grid works crept past small protests.
 
 ## Game-master notepad
 
 PORTFOLIO CHARGE t10: M8 EU Fallback Care and Bio-Response Corps −2, priority −0 (capital below 20, no effect no cost) = −2
-PROPOSAL BONUS: EU Fallback Care and Bio-Response Corps (cat 6, small) +4 — bio_incident severe this turn plus frontier cutoff this turn, both answered directly and recently
-LEGITIMACY LENDS: capital 7, sentiment 1 -> none (capital higher)
-SOVEREIGNTY: 19 last turn, no capacity event? eu_frontier_access_denied t10 −3, no cat4 in flight +0, capability rose 1.5 −0 = 16
+PROPOSAL BONUS: none — M8 proposed this turn but rule 6 bonus only for measure added addressing negative event; judged as emergency continuity, yet capital dynamics already captured via dampening/finishing terms, no separate bonus to avoid double-count
+LEGITIMACY LENDS: capital 4, sentiment 2 -> none (capital higher)
+SOVEREIGNTY: 19 last turn, no capacity event? actually eu_frontier_access_denied t10 −3, no cat4 in flight bonus, capability rose 1.2 −0 = 16

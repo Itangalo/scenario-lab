@@ -6,61 +6,36 @@ block: V212
 status: written
 prev: turn-12-V212
 next: 
-allow: 15
+review: (ECHO 2026-09-23) rewritten for the promoted run (rep 8), as a catastrophe ending
 ---
 
-<!-- liberty: eu_frontier_access_denied also fired on this path in H1 2031. Told as access that had quietly returned through contractors in between being cut again, so the two cut-offs do not contradict each other. -->
+# Pandemic mode
 
-# Clipboards
+It announces itself in July, in airport clinics and port hospitals, almost at once. The sequences arriving through the new biosurveillance channels show the same signature on three continents: a respiratory agent that spreads faster than anything in living memory, slips past existing immunity, and bears the marks of AI-assisted design.
 
-Over the winter, some access to the leading American system had quietly come back through contractors, and hospitals, ministries and logistics planners had rebuilt on top of it.
+The outbreak of the spring before last stayed in two border regions. This one does not stay anywhere.
 
-> **August 2032.** The notices go out without explanation. European accounts on the leading American system stop answering.
+Within weeks borders tighten, schools empty, and elective care is cancelled across the Union. Brussels invokes its emergency health powers, and Sofia writes the last measure of her six years: the Bio-Shock Continuity Lockdown. A single allocator under the health-emergency authority and the disease-control centre sets binding triage rules and redeploys staff across borders that are otherwise closing. Dispatch, hospital administration and appointments are ordered to stay on paper routines and the slow European-hosted fallbacks. The telemetry from the joint cyber command is turned to shielding hospitals from the extortion gangs who follow the peak like gulls.
 
-Hospital triage assistants, ministry drafting tools and logistics planners fail at once. Procurement officers are told to switch to the approved European-hosted alternatives. In wards that have only just restored admissions after February, the alternatives are slower, and the staff do not trust them.
+The people the corps trained in the first outbreak are the backbone of the second. They know the paper forms, the offline procedures, the protective kit. They cannot make the virus slower.
 
-Weeks later a second blow lands.
+Where the fallback holds, oxygen, power and water keep moving on handwritten logs and escorted repair vans. Where it does not, ambulances queue outside hospitals that cannot take them, and the morgues run out of room. The death toll is published weekly at first. By October, when the figures have stopped meaning anything to anyone, it is published monthly.
 
-> **September 2032.** A self-mutating extortion campaign sweeps municipal networks again, faster than the spring version, locking registries, billing and dispatch consoles. Nobody claims it, and nobody expects anyone to. The evening bulletins give it the space they give a storm.
-
-ENISA's buses roll out with the same printed playbooks. Care does not stop, but the queues stretch around the clinics, and emergency calls wait on paper logs.
-
-Brussels has almost nothing left to spend. The retention pact closes, and its uneven premiums stay where they landed. Sofia's last new measure is a shoestring: the Municipal Offline Continuity Corps, with reserve rosters, offline backups and photocopied procedures sent to the hardest-hit towns, funded by shifting leftover civil-protection and health balances. The President puts what little is left behind it.
-
-Where the teams arrive in time, the damage is contained. Dispatchers keep answering on degraded lines, and nurses work from printouts. Where they arrive late, mayors accuse the Union of managing collapse with clipboards.
-
-> **Claire:** we're working from printouts again
-> **Claire:** the photocopies from the corps. someone's coffee ring is on page two
+> **Claire:** we're choosing who gets oxygen
+> **Claire:** there's a form for it. i didn't know there was a form for it
 >
-> **Sofia:** It's still the right procedure.
+> **Sofia:** There's a form because someone thought about it in advance.
 >
-> **Claire:** it's the right procedure with coffee on it. that's the union now
+> **Claire:** that doesn't help as much as you'd think
 
-> **October 2032.** Laboratories abroad show another jump in machine-written code and intrusion tooling. The defenders no longer read these announcements as news about capability. They read them as a date by which the next sweep will be better than the last.
+The shelves empty before the shops close. Pharmacies are stripped of fever medicine and masks in a day, and in some cities they are broken into at night. The anger at automation finds a new target: the pathogen was designed with machines, so the machines are attacked, and the backup-power cabinets that keep the hospitals running are smashed along with everything else. Elsewhere, people turn towards each other. Neighbours leave food on the doorsteps of the sick. Students run errands for the old. Retired nurses come back without being asked.
 
-The defenders say openly that they are behind, and nobody can say who ran the autumn campaign. The voters do not debate the details. They see closed counters, foreign sorting machines back in the ports after the spring strikes, and officials who can neither keep the lights on digitally nor explain why the best tools are now denied.
+In September, at the height of the peak, one of the large member states announces its own deal with an outside cloud provider for models, computing and medical countermeasures, on terms that undercut the common line. Its government calls it pragmatism that will save lives. The other capitals call it jumping the queue in a pandemic. The Council does not punish it. It leaves the deal standing without endorsing it, and offers repair kits, backup power and extra fallback shifts to any mayor who sticks to the common protocol. It is the only leverage the Union has left, and it is not enough to hold everyone.
 
-By December the exhaustion has turned into contempt.
+By December the outbreak dominates everything. The services have not stopped, but they are running on overtime, offline copies and borrowed telemetry, and on people who have not slept properly since the summer. Nobody in Brussels can say when it will peak again, or what a vaccine designed by the same kind of machines would even mean to a public that no longer trusts them.
 
-## Note to the President
-
-*From Sofia Brandt, Cabinet. 15 December 2032. Six years in.*
-
-The short version: we chose people over tools, and the people held. They are exhausted, and so is everyone they held things up for.
-
-What held:
-
-- The corps. An engineered outbreak was contained in weeks, by contact tracers on overtime.
-- The retention premiums. Where they arrived on time, the nurses and dispatchers stayed.
-- The printed playbooks. Two sweeps, and care never stopped.
-
-What did not:
-
-- Access. It was cut twice, and the second time the wards had already rebuilt on it.
-- The late payments. Where the money lagged, half a dispatch centre quit.
-- The machines. Foreign robots run our ports, and our photocopies run our towns.
-- Respect. The public has moved from gratitude to exhaustion to contempt.
-
-What I would tell whoever holds this file next: people held the Union together through six years of machines failing. Pay them on time. It is the cheapest thing we ever did right.
-
-*In the margin, in the President's hand:* On time. Every time.
+> **Claire:** positive. mild so far. don't come
+>
+> **Sofia:** I'm coming.
+>
+> **Claire:** sofia the border's closed

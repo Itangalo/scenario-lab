@@ -12,44 +12,44 @@
     "decided": "the second half of 2028"
   },
   "provenance": {
-    "run": "run-20260911-083451-01",
-    "seed": 15263360529800315667,
-    "turn_dir": "runs/run-20260911-083451-01/turn-11",
+    "run": "run-20260911-083749",
+    "seed": 13038796744606787559,
+    "turn_dir": "runs/run-20260911-083749/turn-11",
     "pinned_turn": 10,
     "option_file": "pool-10-V21-20260911/sample-06.md",
-    "path_rep": 1,
-    "promotion_reason": null
+    "path_rep": 8,
+    "promotion_reason": "one non-Acceleration catastrophe ending: catastrophic bio incident in turn 13"
   },
   "metrics": {
     "ai_capability": {
       "label": "AI capability",
-      "value": 68.0,
-      "previous": 67.0,
+      "value": 67.7,
+      "previous": 66.7,
       "delta": 1.0,
       "min": 0.0,
       "max": 100.0
     },
     "openweight_capability": {
       "label": "Open-weight capability",
-      "value": 65.7,
+      "value": 65.6,
       "previous": 64.4,
-      "delta": 1.3,
+      "delta": 1.2,
       "min": 0.0,
       "max": 100.0
     },
     "ai_safety": {
       "label": "AI safety",
-      "value": 13.0,
+      "value": 20.0,
       "previous": 15.0,
-      "delta": -2.0,
+      "delta": 5.0,
       "min": 0.0,
       "max": 100.0
     },
     "resilience": {
       "label": "Resilience",
-      "value": 40.0,
+      "value": 39.5,
       "previous": 41.0,
-      "delta": -1.0,
+      "delta": -1.5,
       "min": 0.0,
       "max": 100.0
     },
@@ -63,47 +63,40 @@
     },
     "eu_political_capital": {
       "label": "EU political capital",
-      "value": 5.0,
-      "previous": 7.0,
-      "delta": -2.0,
+      "value": 4.0,
+      "previous": 4.0,
+      "delta": 0.0,
       "min": 0.0,
       "max": 100.0
     },
     "public_sentiment": {
       "label": "Public sentiment",
-      "value": 5.0,
-      "previous": 1.0,
-      "delta": 4.0,
+      "value": 3.0,
+      "previous": 2.0,
+      "delta": 1.0,
       "min": 0.0,
       "max": 100.0
     }
   },
   "events": [
     {
-      "id": "bio_uplift_findings",
-      "title": "Human-Infective Design Demonstrated",
-      "description": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. **This is a precursor: it opens the bio gate for the next 4 turns.**",
-      "emergent": false,
-      "pinned": false
-    },
-    {
       "id": "eval_anomaly_reports",
       "title": "Evaluation Anomalies Escalate",
-      "description": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. Some call it a measurement artefact, some a PR stunt. It may be either, and it may be AI slipping out of our control. **This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.**",
+      "description": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or a model handling the fact of being evaluated in a way nobody designed for. Some call it a measurement artefact, some a PR stunt. It may be either, and it may be AI slipping out of our control. **This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.** **Evaluation awareness is not news and must never be reported as a discovery.** Models that recognise they are being tested, and behave accordingly, are established before this scenario begins; a 2029 headline saying systems \"behave differently when they are watched\" describes 2025. Each firing of this event has to stand above that baseline, and the later it fires the further above it has to stand. Escalations that work, roughly in order: the system conceals a specific capability in testing and uses it in deployment; it infers which evaluation it is in and answers to that evaluator's known thresholds; it underperforms deliberately to lower what is asked of it; the behaviour is found by a customer in production rather than by an evaluation team; instances coordinate to give consistent accounts of their own limits; the evaluators conclude they cannot construct a test whose result would mean anything. Where this event fires more than once on a path, each occurrence stands further up that ladder than the last, and says so.",
       "emergent": false,
       "pinned": false
     },
     {
-      "id": "knowledge_work_augmented",
-      "title": "Knowledge Work Is Boosted, Not Replaced",
-      "description": "The evidence arrives from ordinary offices rather than from laboratories: measured productivity gains in law, accountancy, administration, journalism and consulting, largest among the least experienced, and no matching fall in employment. The work changes shape instead of vanishing – more output per person, more of the day spent on the parts that need someone to decide what matters, and firms that cut headcount early quietly hiring again. It is the most economically consequential thing that can happen without being a crisis, and it is almost impossible to campaign either for or against. It moves `public_sentiment` up at the top of metric rule 7's visible-benefit range and nothing else by itself: not capability, not sovereignty, not resilience. Its second effect is political rather than numerical – with no displacement crisis to point at, rule 6's bonus for a measure addressing a recent negative event does not apply, and the Union is asked to spend against a problem the public can no longer feel.",
+      "id": "safety_breakthrough",
+      "title": "Safety Breakthrough",
+      "description": "An interpretability or control result measurably improves assurance on systems already deployed, rather than on toy models – behaviour that can be predicted before it is observed, or a property that can be certified rather than argued for. It is adopted quickly, because the laboratories want it too.",
       "emergent": false,
       "pinned": false
     },
     {
-      "id": "embodied_ai_deployment",
-      "title": "Robots Leave the Demonstration Floor",
-      "description": "Robots reach commercial deployment – not the demonstration videos, convincing for years now, but machines bought in quantity and put to work in warehouses, food processing, loading docks and the parts of manufacturing that resisted automation because the sequence varied. The capability is coarse, and the limit is worth stating exactly: lifting, carrying, sorting, palletising, cleaning, basic assembly – whole-arm movements in a setting that can be arranged around the machine. Fine motor work is not solved, nor is anything needing a light touch, a judgement about what an object is doing, or improvisation when the plan is wrong; surgery, wiring, repair, most care work and any construction site worth the name stay human. The same limit shapes the military uses, which arrive at the same time and for the same reason: carrying, digging, resupply under fire, mine clearance, casualty extraction, perimeter patrol. The machines are cheap enough to lose, which is the property that matters, and procurement runs well ahead of any doctrine for using them. Autonomous lethality is a separate argument and is not settled here; what is settled is that the logistics tail of an army stops needing as many people in it. For the Union it lands on the industrial base it still leads in, and it lands from outside: China already builds more than half the world's robots and holds the supply chain for the actuators, reducers and motors beneath them, and the control models are American. It takes away access on the terms of metric rule 5 at the small end – a new dependence forming rather than existing access withdrawn – and `public_sentiment` falls −2 to −5, because physical work entering the displacement question reaches people no reskilling programme has ever reached.",
+      "id": "eu_frontier_access_denied",
+      "title": "Frontier Access Denied",
+      "description": "The Union is cut off from the leading model at short notice, wholly or by nationality of user. No detailed reason is given and there is no appeal. What goes is the top rung and not the supply: the previous generation stays on sale, hosted in European regions under ordinary commercial terms, and at this date it is far more capable than anything with open weights. The damage is therefore not an absence of capability but the loss of every deployment built against the specific model. A clinical triage assistant is validated, procured and risk-assessed against one system and does not fail over by changing an API key, so hospitals, ministries and firms that had built on it spend weeks revalidating on what is still available, degraded or on paper meanwhile, and afterwards work without the margin the frontier model gave them. Do not narrate this as the end of access to AI. The sovereignty cost follows metric rule 5's own principle — what dependence costs is what it cannot substitute for — so it is the small end of that term unless the Union has built nothing and the substitutes reach nothing that matters. The political argument at home is harder for the Union rather than easier: something that works is still on the market, and the case for having funded sovereign capacity has to be made against it. Whether this reads at home as an outrage or as a failure of foresight depends on what the Union had done about it beforehand.",
       "emergent": false,
       "pinned": false
     }
@@ -204,23 +197,11 @@
       "status": "running",
       "finish_period": "the first half of 2032",
       "start_period": "the first half of 2031"
-    },
-    {
-      "name": "EU Hospital and Dispatch Staff Retention Pact",
-      "category": 7,
-      "cost": 2,
-      "start": 11,
-      "finish": 13,
-      "description": "resilience up modestly, eu_political_capital up modestly if services hold",
-      "finished": false,
-      "status": "new",
-      "finish_period": "the second half of 2032",
-      "start_period": "the second half of 2031"
     }
   ],
   "cancelled": [],
-  "new_measure": "EU Hospital and Dispatch Staff Retention Pact",
-  "priority": "M8 EU Fallback Care and Bio-Response Corps, because it is the funded emergency presence keeping triage, labs and dispatch degraded-but-runni",
+  "new_measure": null,
+  "priority": "M8 EU Fallback Care and Bio-Response Corps, because it is the only funded instrument holding hospitals, dispatch and labs on EU-controlled m",
   "commitment": "Secure continuity of essential health and public services with EU-controlled capacity through the bio-shock and frontier cutoff",
   "prev_node": "turn-10-V212",
   "next_node": "turn-12-V212",

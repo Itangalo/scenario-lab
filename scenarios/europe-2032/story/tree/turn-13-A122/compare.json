@@ -3,7 +3,7 @@
   "turn": 13,
   "period_prose": "the second half of 2032",
   "events": {
-    "siblings": 9,
+    "siblings": 8,
     "pinned": [],
     "common": [
       {
@@ -18,13 +18,6 @@
         "title": "Major Cyber Incident",
         "line": "A large, largely automated attack lands.",
         "of_nine": 4,
-        "emergent": false
-      },
-      {
-        "id": "knowledge_work_augmented",
-        "title": "Knowledge Work Is Boosted, Not Replaced",
-        "line": "The evidence arrives from ordinary offices rather than from laboratories: measured productivity gains in law, accountancy, administration, journalism and consulting, largest among the least experienced, and no matching fall in employment.",
-        "of_nine": 3,
         "emergent": false
       }
     ],
@@ -57,38 +50,38 @@
   "metrics": {
     "ai_capability": {
       "label": "AI capability",
-      "value": 97.0,
-      "higher_than": 129,
+      "value": 95.0,
+      "higher_than": 125,
       "of_runs": 131
     },
     "openweight_capability": {
       "label": "Open-weight capability",
-      "value": 92.5,
+      "value": 91.5,
       "higher_than": 128,
       "of_runs": 131
     },
     "ai_safety": {
       "label": "AI safety",
-      "value": 1.0,
-      "higher_than": 31,
+      "value": 0.0,
+      "higher_than": 0,
       "of_runs": 131
     },
     "resilience": {
       "label": "Resilience",
-      "value": 50.0,
-      "higher_than": 80,
+      "value": 56.0,
+      "higher_than": 107,
       "of_runs": 131
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
-      "value": 11.0,
-      "higher_than": 31,
+      "value": 13.0,
+      "higher_than": 46,
       "of_runs": 131
     },
     "eu_political_capital": {
       "label": "EU political capital",
-      "value": 9.0,
-      "higher_than": 64,
+      "value": 1.0,
+      "higher_than": 18,
       "of_runs": 131
     },
     "public_sentiment": {

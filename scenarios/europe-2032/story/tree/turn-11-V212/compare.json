@@ -7,10 +7,17 @@
     "pinned": [],
     "common": [
       {
+        "id": "bio_uplift_findings",
+        "title": "Human-Infective Design Demonstrated",
+        "line": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance.",
+        "of_nine": 3,
+        "emergent": false
+      },
+      {
         "id": "knowledge_work_augmented",
         "title": "Knowledge Work Is Boosted, Not Replaced",
         "line": "The evidence arrives from ordinary offices rather than from laboratories: measured productivity gains in law, accountancy, administration, journalism and consulting, largest among the least experienced, and no matching fall in employment.",
-        "of_nine": 4,
+        "of_nine": 5,
         "emergent": false
       }
     ],
@@ -19,7 +26,7 @@
         "id": "eu_frontier_access_denied",
         "title": "Frontier Access Denied",
         "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
-        "of_nine": 2,
+        "of_nine": 1,
         "emergent": false
       }
     ]
@@ -29,26 +36,26 @@
   "metrics": {
     "ai_capability": {
       "label": "AI capability",
-      "value": 68.0,
-      "higher_than": 96,
+      "value": 67.7,
+      "higher_than": 95,
       "of_runs": 143
     },
     "openweight_capability": {
       "label": "Open-weight capability",
-      "value": 65.7,
-      "higher_than": 97,
+      "value": 65.6,
+      "higher_than": 96,
       "of_runs": 143
     },
     "ai_safety": {
       "label": "AI safety",
-      "value": 13.0,
-      "higher_than": 80,
+      "value": 20.0,
+      "higher_than": 108,
       "of_runs": 143
     },
     "resilience": {
       "label": "Resilience",
-      "value": 40.0,
-      "higher_than": 35,
+      "value": 39.5,
+      "higher_than": 33,
       "of_runs": 143
     },
     "eu_ai_sovereignty": {
@@ -59,14 +66,14 @@
     },
     "eu_political_capital": {
       "label": "EU political capital",
-      "value": 5.0,
-      "higher_than": 37,
+      "value": 4.0,
+      "higher_than": 30,
       "of_runs": 143
     },
     "public_sentiment": {
       "label": "Public sentiment",
-      "value": 5.0,
-      "higher_than": 36,
+      "value": 3.0,
+      "higher_than": 19,
       "of_runs": 143
     }
   }

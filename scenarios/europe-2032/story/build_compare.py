@@ -117,7 +117,8 @@ def load_tree() -> dict[str, Any]:
 
 
 def block_reps() -> dict[str, list[str]]:
-    """All ten run dirs per story block, rep 1 first."""
+    """All ten run dirs per story block, in rep order (see `main` for which
+    one is the path)."""
     grouped: dict[str, list[dict[str, Any]]] = {}
     for name in ("stage-1-blocks-rerun.json", "stage-2-blocks-rerun.json",
                  "stage-3-blocks-rerun.json"):
@@ -276,7 +277,10 @@ def main() -> int:
             if not prose.is_file():
                 continue
             node = json.loads((TREE / name / "data.json").read_text(encoding="utf-8"))
-            box = sibling_box(block_id, turn, reps[block_id], catalogue, struck)
+            # The path's own run first: a promoted block follows a rep other
+            # than 1, and its siblings are the rest.
+            ordered = [blk["run"]] + [r for r in reps[block_id] if r != blk["run"]]
+            box = sibling_box(block_id, turn, ordered, catalogue, struck)
 
             if turn not in corpus_cache:
                 live_cache[turn] = [d for d in corpus if still_running(d, turn, struck)]

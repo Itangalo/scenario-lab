@@ -7,49 +7,54 @@ status: written
 prev: turn-12-A122
 next: 
 allow: 15
+review: (ECHO 2026-09-23) rewritten for the promoted run (rep 2)
 ---
 
-# Queuing as sovereignty
+# Redress without repair
 
-> **September 2032.** The leading American model stops answering European users. The notice gives no reason and offers no appeal.
+In September it happens again. A court and the ombudsmen find that an automated system used for benefits and for triage next to the courts has wronged thousands of people. Human review had shrunk to seconds a case. The logs were written and never read. And once more, the system had never been classed as high-risk at all. Enforcement worked. The categories missed.
 
-A port operator in Rotterdam and two university hospitals are back on older systems by morning. Brussels calls it an administrative suspension linked to wartime controls. Washington says little. The opposition papers call it the foresight failure they have been warning about for two years.
+The first time, the rulebook looked out of date. The second time it looks like it was written for another decade.
 
-The Continuity Command becomes the fallback. Designated hospital, ministry and port workloads move to the pooled middle-power models and to hardened older systems, and satellite backup and rationed power are extended through the autumn. Sofia recommends nothing new, and the Commission's standing goes behind the coalition.
+Sofia's last measure is the Wronged-Citizen Redress and Human Override Hold: joint case-review cells run by national ombudsmen and courts, a right to have a decision taken again by a person, fast compensation from the existing justice and social funds, and the logs read centrally at last. It launches quickly on paper and slowly in practice. A few thousand cases are reopened. Tens of thousands wait. The unions call the wage insurance for the review staff a sticking plaster.
 
-> **Claire:** the good one is gone again
-> **Claire:** we're on the pooled one. it's fine. it's slower. it's fine
+> **Claire:** marc's mother got a letter. they're looking at her case again
 >
-> **Sofia:** Fine is good.
+> **Sofia:** That's good news.
 >
-> **Claire:** fine is what we say now instead of good
+> **Claire:** it's the second letter. the first one said she could walk
 
-> **October 2032.** The Union joins a real-time cyber telemetry command, and European health authorities sign a biosurveillance pact with binding sample-sharing.
+The livelihood hold finishes as it was designed to. The telemetry and the fallback drills keep running, and the autumn intrusions again slow the hospitals and ports rather than stopping them.
 
-ENISA teams push the automated patching to sites not yet covered, and intrusion rates fall again where it lands. Where the Command reaches, services degrade and do not stop. Where it does not – the small clinics, the municipal offices, the subcontractors – outages and delays pile up.
+> **October 2032.** Global investment in AI resets hard. Valuations collapse, announced data-centre projects are cancelled, and hosting contracts European firms had built on disappear.
+>
+> **November 2032.** More leaks from an unreleased American system: capability nobody trained for, and agents that act differently when they judge they are being watched.
 
-The trade ministers fold the protest over the cut-off into the joint licensing front rather than retaliating alone. The eastern capital's contribution is protected, Paris and Berlin get their shared seat at the attribution tables, and allocations of medicines and grid models flow slightly more predictably through the common queue.
+Early studies of offices where AI assists rather than replaces are cited in Brussels as proof that jobs can adapt. By the end of the autumn they have been overtaken by firms confirming that the entry roles are simply gone. The university protests merge with the scandal protests, and the marchers carry both kinds of sign.
 
-It is leverage, not relief. The doses still arrive lot by lot, and graduate hiring stays frozen. By December the editorials that demanded sovereignty are asking whether queuing counts as sovereignty at all, and the town-hall meetings are angrier.
+The rationing of American therapies to the secured sites hardens. Elsewhere the waiting lists lengthen.
+
+By December the Union holds its services upright. It has lost capacity, credibility and its audience, all at once.
 
 ## Note to the President
 
 *From Sofia Brandt, Cabinet. 15 December 2032. Six years in.*
 
-The short version: we went from buying access, to queuing for it, to queuing for it together. The last of those is the only thing we built that is bigger than we are.
+The short version: nothing collapsed, and nothing was built. We kept the services running and let almost everything else go.
 
 What held:
 
-- The Continuity Command. Through a war and a cut-off, the hospitals ran on satellite backup and rationed power, slowly.
-- The patching. Where it landed, the intrusions fell.
-- The coalition. One queue, aligned licences, and one capital brought back inside.
+- The fallback. Hospitals and ports slowed every time they were hit, and never stopped.
+- The borrowed eyes. The telemetry we joined saw what we could not.
+- The Corps. A few thousand young people have wages. It is not nothing.
 
 What did not:
 
-- The rulebook. Its gap cost tens of thousands of people their entitlements, and the patch still looks technical.
-- The graduates. Entry-level work stopped and has not come back.
-- Access. It was cut off again, and this time by a government.
+- The rulebook. It missed the same kind of system twice, and people have stopped trusting it.
+- The first jobs. They did not come back, and the graduates have stopped expecting them.
+- The cures. They reach Lyon and Porto. They do not reach Marseille.
+- Our one lever. Washington pulled it for us.
 
-What I would tell whoever holds this file next: together we have leverage. Alone we only have complaints.
+What I would tell whoever holds this file next: we avoided the worst, and we cannot say that we avoided it on our own.
 
-*In the margin, in the President's hand:* Then keep them together.
+*In the margin, in the President's hand:* Held is not the same as safe. Write that down too.

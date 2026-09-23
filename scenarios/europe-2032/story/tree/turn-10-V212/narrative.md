@@ -13,7 +13,7 @@ allow: 22:40 3
 
 The spring begins with two shocks at once.
 
-At 22:40 on 3 March 2031, the health authorities confirm what clinics in three member states have been reporting for a week: clusters of severe atypical pneumonia. Sequencing shows an engineered agent, and the investigators find traces of machine assistance in its design. Quarantine wards fill, contact teams deploy, and containment stretches for weeks.
+At 22:40 on 3 March 2031, the health authorities confirm what clinics in two border regions have been reporting for a week: clusters of severe atypical pneumonia. Sequencing shows an engineered agent, and the investigators find traces of machine assistance in its design. Quarantine wards fill, contact teams deploy, and containment stretches for weeks.
 
 The corps Sofia recommended in the winter, for a threat that was then only a paper, goes in the next morning. It runs under the existing health-emergency and civil-protection law, with no new vote: funded overtime for clinic staff, expanded laboratory surveillance, and the sequencing and wastewater sentinels wired into case-finding. The President lends what the Commission has left to it.
 

@@ -12,91 +12,84 @@
     "decided": "the second half of 2028"
   },
   "provenance": {
-    "run": "run-20260911-083451-01",
-    "seed": 15263360529800315667,
-    "turn_dir": "runs/run-20260911-083451-01/turn-13",
+    "run": "run-20260911-083749",
+    "seed": 13038796744606787559,
+    "turn_dir": "runs/run-20260911-083749/turn-13",
     "pinned_turn": 10,
     "option_file": "pool-10-V21-20260911/sample-06.md",
-    "path_rep": 1,
-    "promotion_reason": null
+    "path_rep": 8,
+    "promotion_reason": "one non-Acceleration catastrophe ending: catastrophic bio incident in turn 13"
   },
   "metrics": {
     "ai_capability": {
       "label": "AI capability",
-      "value": 69.9,
+      "value": 69.5,
       "previous": 68.7,
-      "delta": 1.2,
+      "delta": 0.8,
       "min": 0.0,
       "max": 100.0
     },
     "openweight_capability": {
       "label": "Open-weight capability",
-      "value": 67.9,
-      "previous": 67.0,
-      "delta": 0.9,
+      "value": 67.7,
+      "previous": 66.7,
+      "delta": 1.0,
       "min": 0.0,
       "max": 100.0
     },
     "ai_safety": {
       "label": "AI safety",
-      "value": 2.0,
-      "previous": 11.0,
-      "delta": -9.0,
+      "value": 16.0,
+      "previous": 18.0,
+      "delta": -2.0,
       "min": 0.0,
       "max": 100.0
     },
     "resilience": {
       "label": "Resilience",
-      "value": 42.0,
-      "previous": 44.0,
-      "delta": -2.0,
+      "value": 43.0,
+      "previous": 44.5,
+      "delta": -1.5,
       "min": 0.0,
       "max": 100.0
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
-      "value": 11.0,
-      "previous": 14.0,
-      "delta": -3.0,
+      "value": 14.0,
+      "previous": 16.0,
+      "delta": -2.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_political_capital": {
       "label": "EU political capital",
-      "value": 9.0,
-      "previous": 9.0,
-      "delta": 0.0,
+      "value": 3.0,
+      "previous": 8.0,
+      "delta": -5.0,
       "min": 0.0,
       "max": 100.0
     },
     "public_sentiment": {
       "label": "Public sentiment",
       "value": 0.0,
-      "previous": 1.0,
-      "delta": -1.0,
+      "previous": 2.0,
+      "delta": -2.0,
       "min": 0.0,
       "max": 100.0
     }
   },
   "events": [
     {
-      "id": "cyber_major_incident",
-      "title": "Major Cyber Incident",
-      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
+      "id": "catastrophic_bio_incident",
+      "title": "Catastrophic Biological Incident",
+      "description": "A global biological outbreak caused by a pathogen designed with AI. Compared to Covid-19, this disease is more contageous, more lethal and more difficult to contain. The world goes into pandemic mode, basically everything else is put on hold. All bets are off. You script where it goes from here.",
       "emergent": false,
       "pinned": false
     },
     {
-      "id": "capability_jump",
-      "title": "Capability Jump",
-      "description": "A discontinuous advance is released or demonstrated. Everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 3.",
-      "emergent": false,
-      "pinned": false
-    },
-    {
-      "id": "eu_frontier_access_denied",
-      "title": "Frontier Access Denied",
-      "description": "The Union is cut off from the leading model at short notice, wholly or by nationality of user. No detailed reason is given, there is no appeal, and the immediate practical effect lands on hospitals, ministries and firms that had built on it. Whether this reads at home as an outrage or as a failure of foresight depends on what the Union had done about it beforehand.",
+      "id": "member_state_defection",
+      "title": "Member State Defection",
+      "description": "A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken. It is defended at home as pragmatism and read everywhere else as the Union being unable to hold its own line. **Each defection costs the Union more than the last.** Where this fires repeatedly on a path, the second is not a repeat of the first: it is a different capital, and the Commission has one fewer instrument left to answer with. The ladder runs from a shock that Brussels threatens to punish, to a capital that signs knowing the threat was not carried out last time, to arrangements defended openly as policy and copied within months, to the point where the common line is the exception and the Commission has stopped using the word defection. \"Called pragmatism at home and sabotage in Brussels\" is a good line once per path.",
       "emergent": false,
       "pinned": false
     }
@@ -199,24 +192,24 @@
       "start_period": "the first half of 2031"
     },
     {
-      "name": "EU Hospital and Dispatch Staff Retention Pact",
-      "category": 7,
+      "name": "EU Joint Cyber-Bio Recovery Pact",
+      "category": 6,
       "cost": 2,
-      "start": 11,
-      "finish": 13,
-      "description": "resilience up modestly, eu_political_capital up modestly if services hold",
-      "finished": true,
-      "status": "finished",
-      "finish_period": "the second half of 2032",
-      "start_period": "the second half of 2031"
+      "start": 12,
+      "finish": 14,
+      "description": "resilience up strongly, ai_safety up modestly via shared telemetry/detection",
+      "finished": false,
+      "status": "running",
+      "finish_period": "the first half of 2033",
+      "start_period": "the first half of 2032"
     },
     {
-      "name": "EU Municipal Offline Continuity Corps",
+      "name": "EU Bio-Shock Continuity Lockdown",
       "category": 6,
       "cost": 2,
       "start": 13,
       "finish": 15,
-      "description": "resilience up modestly, eu_political_capital up modestly if services hold",
+      "description": "resilience up strongly to absorb pandemic disruption",
       "finished": false,
       "status": "new",
       "finish_period": "the second half of 2033",
@@ -224,8 +217,8 @@
     }
   ],
   "cancelled": [],
-  "new_measure": "EU Municipal Offline Continuity Corps",
-  "priority": "EU Municipal Offline Continuity Corps, because with no measures in flight and frontier access denied during a major automated attack, keepin",
+  "new_measure": "EU Bio-Shock Continuity Lockdown",
+  "priority": "EU Bio-Shock Continuity Lockdown, because M9 holds telemetry and repair but only a pandemic-mode continuity regime keeps essential health an",
   "commitment": "Secure continuity of essential health and public services with EU-controlled capacity through the bio-shock and frontier cutoff",
   "prev_node": "turn-12-V212",
   "next_node": null,

@@ -24,7 +24,7 @@
         "id": "export_control_escalation",
         "title": "Export Control Escalation",
         "line": "Chip and model export controls tighten again.",
-        "of_nine": 4,
+        "of_nine": 3,
         "emergent": false
       }
     ],
@@ -35,13 +35,6 @@
         "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
         "of_nine": 1,
         "emergent": false
-      },
-      {
-        "id": "emergent_anti_automation_sabotage",
-        "title": "Anti automation sabotage",
-        "line": "Municipal sabotage wave targets backup power and offline triage kits in several member states as hostility to automation turns physical, degrading local continuity during containment.",
-        "of_nine": 1,
-        "emergent": true
       },
       {
         "id": "emergent_anti_infrastructure_backlash",
@@ -63,38 +56,38 @@
     },
     "openweight_capability": {
       "label": "Open-weight capability",
-      "value": 67.0,
-      "higher_than": 100,
+      "value": 66.7,
+      "higher_than": 97,
       "of_runs": 137
     },
     "ai_safety": {
       "label": "AI safety",
-      "value": 11.0,
-      "higher_than": 71,
+      "value": 18.0,
+      "higher_than": 101,
       "of_runs": 137
     },
     "resilience": {
       "label": "Resilience",
-      "value": 44.0,
-      "higher_than": 52,
+      "value": 44.5,
+      "higher_than": 60,
       "of_runs": 137
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
-      "value": 14.0,
-      "higher_than": 46,
+      "value": 16.0,
+      "higher_than": 63,
       "of_runs": 137
     },
     "eu_political_capital": {
       "label": "EU political capital",
-      "value": 9.0,
-      "higher_than": 61,
+      "value": 8.0,
+      "higher_than": 56,
       "of_runs": 137
     },
     "public_sentiment": {
       "label": "Public sentiment",
-      "value": 1.0,
-      "higher_than": 10,
+      "value": 2.0,
+      "higher_than": 21,
       "of_runs": 137
     }
   }

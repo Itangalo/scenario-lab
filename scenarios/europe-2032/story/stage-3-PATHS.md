@@ -1,5 +1,7 @@
 # Stage-3 rerun paths (rep 1 throughout)
 
+(ECHO 2026-09-23) Two promotions since: A122 follows rep 2 (`run-20260911-074427`; rep 1 was the only war among ten reps) and V212 follows rep 8 (`run-20260911-083749`; one non-Acceleration catastrophe ending, a catastrophic bio incident in turn 13). Recorded in `PROMOTIONS` in `build_tree_rerun.py`; the tables below still show the original rep-1 locks.
+
 Locked 2026-09-11 ~09:40 after fault scan: 24/24 clean (verbatim turn-10 actors, all store sections, stable postures, zero deadlocks). Full manifest with all 240 reps, parents, fixtures, options and seeds in ../stage-3-blocks-rerun.json.
 
 | block | path run | seed | turn-13 capital / sovereignty / sentiment |

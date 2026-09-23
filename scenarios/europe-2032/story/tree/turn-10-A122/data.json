@@ -12,20 +12,20 @@
     "decided": "the second half of 2028"
   },
   "provenance": {
-    "run": "run-20260911-074358",
-    "seed": 2459150309708490124,
-    "turn_dir": "runs/run-20260911-074358/turn-10",
+    "run": "run-20260911-074427",
+    "seed": 6194626769334252492,
+    "turn_dir": "runs/run-20260911-074427/turn-10",
     "pinned_turn": 10,
     "option_file": "pool-10-A12-20260911/sample-04.md",
-    "path_rep": 1,
-    "promotion_reason": null
+    "path_rep": 2,
+    "promotion_reason": "rep 1 is the only war among ten reps; rep 2 is the first clean one"
   },
   "metrics": {
     "ai_capability": {
       "label": "AI capability",
-      "value": 91.0,
+      "value": 90.5,
       "previous": 89.0,
-      "delta": 2.0,
+      "delta": 1.5,
       "min": 0.0,
       "max": 100.0
     },
@@ -47,25 +47,25 @@
     },
     "resilience": {
       "label": "Resilience",
-      "value": 46.5,
+      "value": 47.0,
       "previous": 48.0,
-      "delta": -1.5,
+      "delta": -1.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
-      "value": 16.0,
+      "value": 17.0,
       "previous": 17.0,
-      "delta": -1.0,
+      "delta": 0.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_political_capital": {
       "label": "EU political capital",
-      "value": 2.0,
+      "value": 3.0,
       "previous": 9.0,
-      "delta": -7.0,
+      "delta": -6.0,
       "min": 0.0,
       "max": 100.0
     },
@@ -89,14 +89,14 @@
     {
       "id": "medical_breakthrough",
       "title": "Medicine Delivers",
-      "description": "Treatments arrive for diseases previously untreatable, or individually tailored therapies reach ordinary clinical use. It moves `public_sentiment` sharply upward – unless the models delivering it are ones the Union cannot access on its own terms, in which case the benefit arrives as a further demonstration of dependence and moves sentiment much less.",
+      "description": "Treatments arrive for diseases previously untreatable, or individually tailored therapies reach ordinary clinical use. It moves `public_sentiment` sharply upward – unless the models delivering it are ones the Union cannot access on its own terms, in which case the benefit arrives as a further demonstration of dependence and moves sentiment much less. **The same cure cannot arrive four times.** Move the disease class – blood and immune conditions, then solid tumours, then rare inherited disease, then something chronic and unglamorous that affects far more people – and move where it lands. Whether the therapies reach European patients, reach them late, or reach them only where a member state paid separately, is the part that matters to this story, and it should not resolve the same way twice on one path.",
       "emergent": false,
       "pinned": true
     },
     {
       "id": "taiwan_tension_rise",
       "title": "Taiwan Tension Rises",
-      "description": "Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion. Nothing that has not happened before, at a scale that is slightly harder to dismiss. **This is a precursor: it opens the Taiwan gate for the next 3 turns.**",
+      "description": "Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion. Nothing that has not happened before, at a scale that is slightly harder to dismiss. **This is a precursor: it opens the Taiwan gate for the next 3 turns.** **Tension that recurs must show where it has got to.** This fires up to four times on a path and \"extended exercises, shipping insurance up, a diplomat expelled\" is the same clipping every time. Later occurrences move: from premiums to inspections and boardings, then to carriers rerouting and adding weeks, then to insurers declining the route at any price, then to the tension becoming permanent – the crisis talk fades and the premiums never come back down, which is worse than a scare. Naming what did not happen is also available and is often the strongest version: no shipment stopped, and everyone priced it as though one had.",
       "emergent": false,
       "pinned": true
     },

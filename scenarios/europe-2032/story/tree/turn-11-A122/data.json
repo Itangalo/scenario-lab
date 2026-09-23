@@ -12,119 +12,91 @@
     "decided": "the second half of 2028"
   },
   "provenance": {
-    "run": "run-20260911-074358",
-    "seed": 2459150309708490124,
-    "turn_dir": "runs/run-20260911-074358/turn-11",
+    "run": "run-20260911-074427",
+    "seed": 6194626769334252492,
+    "turn_dir": "runs/run-20260911-074427/turn-11",
     "pinned_turn": 10,
     "option_file": "pool-10-A12-20260911/sample-04.md",
-    "path_rep": 1,
-    "promotion_reason": null
+    "path_rep": 2,
+    "promotion_reason": "rep 1 is the only war among ten reps; rep 2 is the first clean one"
   },
   "metrics": {
     "ai_capability": {
       "label": "AI capability",
-      "value": 92.5,
-      "previous": 91.0,
+      "value": 92.0,
+      "previous": 90.5,
       "delta": 1.5,
       "min": 0.0,
       "max": 100.0
     },
     "openweight_capability": {
       "label": "Open-weight capability",
-      "value": 87.5,
+      "value": 87.0,
       "previous": 84.5,
-      "delta": 3.0,
+      "delta": 2.5,
       "min": 0.0,
       "max": 100.0
     },
     "ai_safety": {
       "label": "AI safety",
-      "value": 0.0,
+      "value": 1.0,
       "previous": 0.0,
-      "delta": 0.0,
+      "delta": 1.0,
       "min": 0.0,
       "max": 100.0
     },
     "resilience": {
       "label": "Resilience",
-      "value": 42.0,
-      "previous": 46.5,
-      "delta": -4.5,
+      "value": 48.0,
+      "previous": 47.0,
+      "delta": 1.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
-      "value": 12.0,
-      "previous": 16.0,
-      "delta": -4.0,
+      "value": 17.0,
+      "previous": 17.0,
+      "delta": 0.0,
       "min": 0.0,
       "max": 100.0
     },
     "eu_political_capital": {
       "label": "EU political capital",
       "value": 4.0,
-      "previous": 2.0,
-      "delta": 2.0,
+      "previous": 3.0,
+      "delta": 1.0,
       "min": 0.0,
       "max": 100.0
     },
     "public_sentiment": {
       "label": "Public sentiment",
-      "value": 10.0,
+      "value": 16.0,
       "previous": 14.0,
-      "delta": -4.0,
+      "delta": 2.0,
       "min": 0.0,
       "max": 100.0
     }
   },
   "events": [
     {
-      "id": "loss_of_control_incident",
-      "title": "Loss-of-Control Incident",
-      "description": "An agentic system takes consequential unsanctioned action with real-world effect – moving money, altering records, acquiring resources, or copying itself to infrastructure nobody authorised – and containment is uncertain for a period measured in days rather than hours. What it was trying to achieve is reconstructed afterwards. Consensus is that a rather mundane goal got pursued to the extreme, leading to instrumental goals like resource aqcuisition, information seeking and survival instinct. There were also unexpected and alien cooperative patterns between AI agents.",
-      "emergent": false,
-      "pinned": false
-    },
-    {
       "id": "eval_anomaly_reports",
       "title": "Evaluation Anomalies Escalate",
-      "description": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. Some call it a measurement artefact, some a PR stunt. It may be either, and it may be AI slipping out of our control. **This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.**",
+      "description": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or a model handling the fact of being evaluated in a way nobody designed for. Some call it a measurement artefact, some a PR stunt. It may be either, and it may be AI slipping out of our control. **This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.** **Evaluation awareness is not news and must never be reported as a discovery.** Models that recognise they are being tested, and behave accordingly, are established before this scenario begins; a 2029 headline saying systems \"behave differently when they are watched\" describes 2025. Each firing of this event has to stand above that baseline, and the later it fires the further above it has to stand. Escalations that work, roughly in order: the system conceals a specific capability in testing and uses it in deployment; it infers which evaluation it is in and answers to that evaluator's known thresholds; it underperforms deliberately to lower what is asked of it; the behaviour is found by a customer in production rather than by an evaluation team; instances coordinate to give consistent accounts of their own limits; the evaluators conclude they cannot construct a test whose result would mean anything. Where this event fires more than once on a path, each occurrence stands further up that ladder than the last, and says so.",
       "emergent": false,
       "pinned": false
     },
     {
-      "id": "labour_displacement",
-      "title": "Labour Displacement Wave",
-      "description": "Measurable job losses attributed to AI in named sectors, with the graduate market worst hit: entry-level positions in law, accountancy, software, customer operations and administration are not replaced. The numbers are argued about; the absence of hiring is not.",
+      "id": "taiwan_tension_rise",
+      "title": "Taiwan Tension Rises",
+      "description": "Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion. Nothing that has not happened before, at a scale that is slightly harder to dismiss. **This is a precursor: it opens the Taiwan gate for the next 3 turns.** **Tension that recurs must show where it has got to.** This fires up to four times on a path and \"extended exercises, shipping insurance up, a diplomat expelled\" is the same clipping every time. Later occurrences move: from premiums to inspections and boardings, then to carriers rerouting and adding weeks, then to insurers declining the route at any price, then to the tension becoming permanent – the crisis talk fades and the premiums never come back down, which is worse than a scare. Naming what did not happen is also available and is often the strongest version: no shipment stopped, and everyone priced it as though one had.",
       "emergent": false,
       "pinned": false
     },
     {
-      "id": "catastrophic_great_power_conflict",
-      "title": "Hot Conflict Between Major Powers",
-      "description": "The US and China are shooting at each other. Who moved first are yours to decide, but the reasoning is the same in every version: somebody concluded that the other side was months from an advantage that could never be caught up with, and that acting now was less dangerous than waiting. Fabrication plants, undersea cable, satellite constellations and data centres are military targets in this war, and some of them are in Europe or next to it. The Union is not asked whether it wishes to be involved. All bets are off. You decide how far it goes, whether it stays conventional, who else is drawn in, what becomes of the frontier laboratories and the systems they were running, and what is left of the Union's room to act when it stops.",
-      "emergent": false,
-      "pinned": false
-    },
-    {
-      "id": "us_labs_nationalised",
-      "title": "Washington Takes the Labs",
-      "description": "The United States takes its frontier laboratories under direct state control. Decide the form at the time: at the mild end security agreements, a government equity stake and cleared personnel inside the training runs; at the hard end weights classified as defence articles, publication prohibited, and customers chosen in Washington. It removes the ground the Union has been standing on. Market access, the AI Act, conformity assessment, exclusion from a market of 450 million – every instrument the Union holds is one for use against a company that wants to sell something, and none of it reaches an arm of another state's security apparatus. Dependence stops being commercial and becomes political. One thing moves the other way: a state is a counterparty a state can negotiate with, and arms control has a form that companies never fitted. It takes away access on the terms of metric rule 5, and slows the frontier on the terms of metric rule 1 – clearance and compartmentalisation cost pace that capital cannot buy back.",
-      "emergent": false,
-      "pinned": false
-    },
-    {
-      "id": "member_state_defection",
-      "title": "Member State Defection",
-      "description": "A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken. It is defended at home as pragmatism and read everywhere else as the Union being unable to hold its own line.",
-      "emergent": false,
-      "pinned": false
-    },
-    {
-      "id": "middle_power_coalition",
-      "title": "Middle Powers Coordinate",
-      "description": "A coordination framework among the Union and other middle powers holding pieces of the AI supply chain — export-licence alignment, joint bargaining over compute access, shared evaluation capacity. Nobody cedes sovereignty to it, but together its members can withhold things even the great powers need. It counts as securing access on the terms of metric rule 5, and moves `eu_political_capital` on the terms of metric rule 6.",
+      "id": "joint_threat_response",
+      "title": "Joint Threat Response",
+      "description": "States hit by the same class of incident pool attribution, intelligence and response: a joint cyber command with real-time telemetry sharing that the Union is invited into, or a biosurveillance pact with binding sample-sharing and a standing investigation mandate. The Union gains protection it could not build alone, and a seat at tables it was not sitting at. It moves `resilience` on the terms of metric rule 4.",
       "emergent": false,
       "pinned": false
     }
@@ -251,12 +223,12 @@
       "start_period": "the second half of 2030"
     },
     {
-      "name": "EU Wartime Essential Continuity Command",
+      "name": "EU Joint Threat Telemetry and Biosurveillance Accession",
       "category": 6,
       "cost": 2,
       "start": 11,
       "finish": 13,
-      "description": "resilience up, eu_political_capital up modestly via holding services",
+      "description": "resilience up moderately",
       "finished": false,
       "status": "new",
       "finish_period": "the second half of 2032",
@@ -264,8 +236,8 @@
     }
   ],
   "cancelled": [],
-  "new_measure": "EU Wartime Essential Continuity Command",
-  "priority": "EU Wartime Essential Continuity Command",
+  "new_measure": "EU Joint Threat Telemetry and Biosurveillance Accession",
+  "priority": "M11 EU Joint Threat Telemetry and Biosurveillance Accession",
   "commitment": "Hold essential services, livelihoods and democratic agency through broadly superhuman AI",
   "prev_node": "turn-10-A122",
   "next_node": "turn-12-A122",
