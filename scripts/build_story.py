@@ -588,6 +588,30 @@ aside { position: sticky; top: 1.5rem; display: flex; flex-direction: column; ga
 }
 .note.catastrophe p { margin: 0 0 0.9rem; }
 .note.catastrophe p:last-child { margin-bottom: 0; }
+/* The reader's own road, after an ending: each decision with the option not
+   taken, which reopens that decision. */
+.note.roads { margin: 2rem 0 0; background: var(--surface); color: var(--ink); }
+.note.roads h2 {
+  font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 1.15rem;
+  color: var(--ink); margin: 0 0 0.9rem;
+}
+.note.roads p { margin: 0 0 0.9rem; }
+.note.roads ul { margin: 0 0 0.9rem; padding-left: 1.15rem; }
+.note.roads li { margin: 0 0 0.5rem; }
+.note.roads ol.road { list-style: none; margin: 1.4rem 0 0; padding: 0; }
+.note.roads ol.road li { border-top: 1px solid var(--rule); padding: 0.9rem 0 0.2rem; margin: 0; }
+.road .when {
+  display: block; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.7rem;
+  letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.3rem;
+}
+.road .chose { display: block; margin-bottom: 0.2rem; }
+button.revisit {
+  font: inherit; font-size: 0.92rem; text-align: left; background: transparent; border: 0;
+  padding: 0.2rem 0; color: var(--accent); cursor: pointer;
+  text-decoration: underline; text-underline-offset: 2px;
+}
+button.revisit:hover { text-decoration-thickness: 2px; }
+.choices.reopened { outline: 2px solid var(--accent); outline-offset: 8px; }
 .note.draft {
   margin: 2rem 0 0; background: transparent; border-style: dashed;
   font-size: 0.9rem;
@@ -913,6 +937,7 @@ const START = __START__;
 const PREAMBLE = __PREAMBLE__;
 const POSTAMBLE = __POSTAMBLE__;
 const CATASTROPHE = __CATASTROPHE__;
+const EXPLORE = __EXPLORE__;
 const ABOUT = __ABOUT__;
 const LAST_TURN = 13;
 const TIPS = __TIPS__;
@@ -939,7 +964,10 @@ const ZONES = {
   eu_political_capital:  { red: [[0, 0.2]], green: [[0.65, 1]] },
 };
 
-let arm = 0, chain = [], picked = {}, active = null;
+// `unlocked` opens every decision on the road once the reader has reached an
+// ending. It never changes the arm: a new road is the same world, which is
+// the whole difference from "Start over".
+let arm = 0, chain = [], picked = {}, active = null, unlocked = false;
 
 function metricOrder() {
   for (const id in NODES) {
@@ -1105,14 +1133,16 @@ function compareHTML(entry) {
 function choiceCard(id, state) {
   const c = NODES[id];
   const cls = state === "taken" ? " taken" : (state === "untaken" ? " untaken" : "");
-  const label = state === "taken" ? "Chosen" : (state === "untaken" ? "Not taken" : "Choose this");
+  const open = unlocked && state === "untaken";
+  const label = state === "taken" ? (unlocked ? "Your choice" : "Chosen")
+    : (state === "untaken" ? (open ? "Take this road instead" : "Not taken") : "Choose this");
   return '<section class="choice' + cls + '">' + c.title +
     (c.meta ? '<div class="meta">' + c.meta + '</div>' : "") +
     (c.lead ? '<p class="lead">' + c.lead + '</p>' : "") +
     '<details><summary>Read the full case</summary>' + c.rest + '</details>' +
     (c.signal ? '<div class="signal">' + c.signal + '</div>' : "") +
     '<button class="pick" type="button" data-go="' + id + '"' +
-      (state ? " disabled" : "") + '>' + label + '</button></section>';
+      (state && !open ? " disabled" : "") + '>' + label + '</button></section>';
 }
 
 function endingHTML(unfinished, catastrophe) {
@@ -1121,7 +1151,7 @@ function endingHTML(unfinished, catastrophe) {
     // be wrong. The box comes first: it explains why the story ends early.
     const box = '<div class="note catastrophe" role="note">' +
       '<p class="eyebrow">Catastrophic event: ' + catastrophe + '</p>' + CATASTROPHE + '</div>';
-    return box + (POSTAMBLE ? '<div class="note end">' + POSTAMBLE + '</div>' : "");
+    return box + (POSTAMBLE ? '<div class="note end">' + POSTAMBLE + '</div>' : "") + roadHTML();
   }
   const notice = unfinished
     ? '<div class="note draft"><strong>This is as far as the writing has got.</strong> ' +
@@ -1130,7 +1160,35 @@ function endingHTML(unfinished, catastrophe) {
       'or that you had to read twice.</div>'
     : "";
   const closing = POSTAMBLE ? '<div class="note end">' + POSTAMBLE + '</div>' : "";
-  return notice + closing;
+  return notice + closing + (unfinished ? "" : roadHTML());
+}
+
+function plain(htmlText) {
+  return (htmlText || "").replace(/<[^>]+>/g, "").trim();
+}
+
+function roadHTML() {
+  // Every decision on the road so far, in order: what was chosen, and the
+  // option that was not, which reopens that decision.
+  const steps = chain.filter(id => NODES[id].choices && picked[id]);
+  if (!steps.length) return "";
+  const items = steps.map(from => {
+    const taken = NODES[picked[from]];
+    const others = NODES[from].choices.filter(c => c !== picked[from]);
+    return '<li><span class="when">' + (taken.period || NODES[from].period) + '</span>' +
+      '<span class="chose">You chose: <strong>' + plain(taken.title) + '</strong></span>' +
+      others.map(o => '<button class="revisit" type="button" data-revisit="' + from + '">' +
+        'Not chosen: ' + plain(NODES[o].title) + ' &rarr;</button>').join("") + '</li>';
+  }).join("");
+  return '<div class="note roads">' + EXPLORE + '<ol class="road">' + items + '</ol></div>';
+}
+
+function unlock() {
+  // Re-render every decision already on the page so its other option opens.
+  unlocked = true;
+  document.querySelectorAll(".choices[data-for]").forEach(h => {
+    h.outerHTML = controlsFor(h.dataset.for);
+  });
 }
 
 function controlsFor(id) {
@@ -1159,6 +1217,9 @@ function appendChapter(id, entering) {
   section.innerHTML = '<article>' + head + entry.html + '</article>' +
                       '<div class="controls">' + controlsFor(id) + '</div>';
   document.getElementById("stream").appendChild(section);
+  const ended = !entry.next && !(entry.choices && entry.choices.length) &&
+    (entry.catastrophe || entry.turn === LAST_TURN);
+  if (ended) unlock();
   return section;
 }
 
@@ -1255,6 +1316,7 @@ function reset(arriving) {
   chain = [];
   picked = {};
   active = null;
+  unlocked = false;
   const stream = document.getElementById("stream");
   stream.classList.remove("dissolving");
   stream.innerHTML = PREAMBLE ? '<div class="note preamble">' + PREAMBLE + '</div>' : "";
@@ -1308,12 +1370,29 @@ document.addEventListener("click", e => {
     pop.close();
     return;
   }
+  const back = e.target.closest("[data-revisit]");
+  if (back) {
+    const holder = document.querySelector('.choices[data-for="' + back.dataset.revisit + '"]');
+    if (holder) {
+      holder.classList.add("reopened");
+      holder.scrollIntoView({ behavior: REDUCED ? "auto" : "smooth", block: "center" });
+    }
+    return;
+  }
   const btn = e.target.closest("[data-go]");
   if (btn && !btn.disabled) {
     const id = btn.dataset.go, entry = NODES[id];
     const holder = btn.closest("[data-for]");
     const from = holder ? holder.dataset.for : null;
     let target = id;
+    if (entry && entry.kind === "choice" && from && picked[from] && picked[from] !== id) {
+      // A new road from an earlier decision: everything read after it goes,
+      // and the story continues from here as on a first reading.
+      const section = document.querySelector('[data-node="' + from + '"]');
+      while (section && section.nextElementSibling) section.nextElementSibling.remove();
+      chain = chain.slice(0, chain.indexOf(from) + 1);
+      Object.keys(picked).forEach(k => { if (!chain.includes(k)) delete picked[k]; });
+    }
     if (entry && entry.kind === "choice") {
       if (from) picked[from] = id;
       target = entry.nextByArm ? entry.nextByArm[arm] : entry.next;
@@ -1545,6 +1624,9 @@ def main() -> int:
     postamble_path = story_dir / "postamble.md"
     postamble = markdown(postamble_path.read_text(encoding="utf-8")) \
         if postamble_path.is_file() else ""
+    explore_path = story_dir / "explore.md"
+    explore = markdown(strip_front_matter(explore_path.read_text(encoding="utf-8"))[1]) \
+        if explore_path.is_file() else ""
     catastrophe_path = story_dir / "catastrophe.md"
     catastrophe = markdown(strip_front_matter(catastrophe_path.read_text(encoding="utf-8"))[1]) \
         if catastrophe_path.is_file() else ""
@@ -1562,6 +1644,7 @@ def main() -> int:
     body = body.replace("__PREAMBLE__", json.dumps(preamble))
     body = body.replace("__POSTAMBLE__", json.dumps(postamble))
     body = body.replace("__CATASTROPHE__", json.dumps(catastrophe))
+    body = body.replace("__EXPLORE__", json.dumps(explore))
     body = body.replace("__ABOUT__", json.dumps(about))
     body = body.replace("__TIPS__", json.dumps(tips, ensure_ascii=False))
     body = body.replace("__TABS__", alt_tabs, 1)
