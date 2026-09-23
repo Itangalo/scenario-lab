@@ -3,7 +3,7 @@
   "turn": 8,
   "period_prose": "the first half of 2030",
   "events": {
-    "siblings": 9,
+    "siblings": 7,
     "pinned": [],
     "common": [
       {
@@ -19,7 +19,7 @@
         "id": "catastrophic_bio_incident",
         "title": "Catastrophic Biological Incident",
         "line": "A global biological outbreak caused by a pathogen designed with AI.",
-        "of_nine": 2,
+        "of_nine": 1,
         "emergent": false
       },
       {
@@ -33,54 +33,55 @@
         "id": "rsi_onset",
         "title": "Recursive Self-Improvement Begins",
         "line": "Frontier AI training can now be done basically without human intervention, and the pace stops being bottlenecked by human researchers.",
-        "of_nine": 2,
+        "of_nine": 1,
         "emergent": false
       }
     ]
   },
-  "corpus_runs": 160,
+  "corpus_runs": 154,
+  "corpus_cut": 6,
   "metrics": {
     "ai_capability": {
       "label": "AI capability",
       "value": 87.0,
-      "higher_than": 158,
-      "of_runs": 160
+      "higher_than": 153,
+      "of_runs": 154
     },
     "openweight_capability": {
       "label": "Open-weight capability",
       "value": 76.5,
-      "higher_than": 149,
-      "of_runs": 160
+      "higher_than": 144,
+      "of_runs": 154
     },
     "ai_safety": {
       "label": "AI safety",
       "value": 1.0,
-      "higher_than": 8,
-      "of_runs": 160
+      "higher_than": 7,
+      "of_runs": 154
     },
     "resilience": {
       "label": "Resilience",
       "value": 41.0,
-      "higher_than": 49,
-      "of_runs": 160
+      "higher_than": 47,
+      "of_runs": 154
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
       "value": 19.0,
-      "higher_than": 77,
-      "of_runs": 160
+      "higher_than": 71,
+      "of_runs": 154
     },
     "eu_political_capital": {
       "label": "EU political capital",
       "value": 11.0,
-      "higher_than": 71,
-      "of_runs": 160
+      "higher_than": 68,
+      "of_runs": 154
     },
     "public_sentiment": {
       "label": "Public sentiment",
       "value": 14.0,
-      "higher_than": 52,
-      "of_runs": 160
+      "higher_than": 51,
+      "of_runs": 154
     }
   }
 }

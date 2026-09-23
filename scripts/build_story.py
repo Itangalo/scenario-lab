@@ -31,6 +31,15 @@ from scenario_lab.loader import load_events  # noqa: E402
 
 SALT = "europe-2032-reader"
 
+# The scenario is not written to simulate the world after one of these. The
+# runs carry on as if it were business as usual, so the reader stops at the
+# half-year the catastrophe lands in. Same set as `story/build_compare.py`.
+CATASTROPHIC = {
+    "catastrophic_great_power_conflict",
+    "catastrophic_loss_of_control_incident",
+    "catastrophic_bio_incident",
+}
+
 
 def opaque(name: str) -> str:
     return "n" + hashlib.sha1((SALT + name).encode()).hexdigest()[:10]
@@ -331,6 +340,7 @@ def compare_payload(compare: dict[str, Any]) -> dict[str, Any] | None:
     return {
         "siblings": events.get("siblings", 9),
         "corpusRuns": compare.get("corpus_runs", 0),
+        "corpusCut": compare.get("corpus_cut", 0),
         "pinned": [ev(e) for e in events.get("pinned", [])],
         "common": [ev(e) for e in events.get("common", [])],
         "notable": [ev(e) for e in events.get("notable", [])],
@@ -378,6 +388,12 @@ def build_payload(nodes: dict[str, dict[str, Any]], scenario_dir: Path) -> dict[
             choices = data.get("next_choice") or []
             live_choices = [opaque(c) for c in choices if c in nodes]
             entry["choices"] = live_choices or None
+            struck = [e for e in (data.get("events") or []) if e.get("id") in CATASTROPHIC]
+            if struck:
+                cat = catalogue.get(struck[0]["id"])
+                entry["catastrophe"] = html.escape(getattr(cat, "title", "") or struck[0].get("title", ""))
+                entry["next"] = None
+                entry["choices"] = None
         payload[nid] = entry
     return payload
 
@@ -397,6 +413,7 @@ HEAD = """<title>Europe 2032</title>
   --track: #dfe6e8;
   --accent: #0f5d6b;
   --accent-soft: #e3eff0;
+  --alarm-soft: #fbeadf;
   /* Good and bad have to stay apart for a reader with red-green colour
      blindness, where a dark green and a brick red are the same tone. A warm
      vermillion against a cool blue keeps them apart by hue and by lightness,
@@ -410,12 +427,14 @@ HEAD = """<title>Europe 2032</title>
     --ground: #0e1416; --surface: #151d20; --ink: #e7edee; --muted: #97a6ab;
     --faint: #6c7c81; --rule: #243135; --track: #1f2c30; --accent: #5cb8b2;
     --accent-soft: #16302f; --up: #56b4e9; --down: #e8862b;
+    --alarm-soft: #33201a;
   }
 }
 :root[data-theme="dark"] {
   --ground: #0e1416; --surface: #151d20; --ink: #e7edee; --muted: #97a6ab;
   --faint: #6c7c81; --rule: #243135; --track: #1f2c30; --accent: #5cb8b2;
   --accent-soft: #16302f; --up: #56b4e9; --down: #e8862b;
+  --alarm-soft: #33201a;
 }
 * { box-sizing: border-box; }
 /* `.layout` sets `display: grid`, which would beat the user-agent rule for
@@ -552,6 +571,23 @@ aside { position: sticky; top: 1.5rem; display: flex; flex-direction: column; ga
 }
 .note.end p { margin: 0 0 0.9rem; }
 .note.end p:last-child { margin-bottom: 0; }
+/* The warm vermillion the dials use for "worse", so the box reads as alarm
+   without depending on red-green vision; the heading carries it in words. */
+.note.catastrophe {
+  margin: 2.5rem 0 0; background: var(--alarm-soft); color: var(--ink);
+  border: 1px solid var(--down); border-left-width: 6px;
+}
+.note.catastrophe .eyebrow {
+  font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.72rem;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink);
+  margin: 0 0 0.6rem;
+}
+.note.catastrophe h2 {
+  font-family: Newsreader, Georgia, serif; font-weight: 600; font-size: 1.3rem;
+  color: var(--ink); margin: 0 0 0.9rem;
+}
+.note.catastrophe p { margin: 0 0 0.9rem; }
+.note.catastrophe p:last-child { margin-bottom: 0; }
 .note.draft {
   margin: 2rem 0 0; background: transparent; border-style: dashed;
   font-size: 0.9rem;
@@ -876,6 +912,7 @@ const NODES = __DATA__;
 const START = __START__;
 const PREAMBLE = __PREAMBLE__;
 const POSTAMBLE = __POSTAMBLE__;
+const CATASTROPHE = __CATASTROPHE__;
 const ABOUT = __ABOUT__;
 const LAST_TURN = 13;
 const TIPS = __TIPS__;
@@ -1033,7 +1070,7 @@ function compareHTML(entry) {
     'across every simulated Europe at this date.</p>';
   h += '<h3>In the parallel worlds</h3>';
   if (c.pinned.length) {
-    h += '<p class="pop-note">Fixed for this half-year, in all nine parallel worlds:</p>' +
+    h += '<p class="pop-note">Fixed for this half-year, in all ' + c.siblings + ' parallel worlds:</p>' +
       '<ul class="measures">' + c.pinned.map(e =>
         '<li><strong>' + e.title + '</strong> &mdash; ' + e.line + '</li>').join("") + '</ul>';
   }
@@ -1048,11 +1085,13 @@ function compareHTML(entry) {
       '</ul>';
   } else if (!c.pinned.length) {
     h += '<p class="none">The parallel worlds went their own ways this half-year ' +
-      '&mdash; no outside development recurred in more than two of nine.</p>';
+      '&mdash; no outside development recurred in more than two of ' + c.siblings + '.</p>';
   }
   h += '<h3>Across all simulated worlds</h3>' +
     '<p class="pop-note">Each reading against all ' + c.corpusRuns +
-    ' full runs at the same date, over all underlying worlds. Those runs made their own ' +
+    ' full runs at the same date, over all underlying worlds' +
+    (c.corpusCut ? ' (' + c.corpusCut + ' more had already been cut off by a catastrophe, and are left out)' : '') +
+    '. Those runs made their own ' +
     'choices, so this is where the half-year stands overall &mdash; not a ranking of your choices.</p>' +
     c.metrics.map(m => {
       const pct = c.corpusRuns ? Math.round(100 * m.higher / m.of) : 0;
@@ -1076,7 +1115,14 @@ function choiceCard(id, state) {
       (state ? " disabled" : "") + '>' + label + '</button></section>';
 }
 
-function endingHTML(unfinished) {
+function endingHTML(unfinished, catastrophe) {
+  if (catastrophe) {
+    // The story stops here on purpose, so the unfinished-writing note would
+    // be wrong. The box comes first: it explains why the story ends early.
+    const box = '<div class="note catastrophe" role="note">' +
+      '<p class="eyebrow">Catastrophic event: ' + catastrophe + '</p>' + CATASTROPHE + '</div>';
+    return box + (POSTAMBLE ? '<div class="note end">' + POSTAMBLE + '</div>' : "");
+  }
   const notice = unfinished
     ? '<div class="note draft"><strong>This is as far as the writing has got.</strong> ' +
       'The simulation runs on to the end of 2032 and to twenty-four different endings; the prose is ' +
@@ -1098,7 +1144,7 @@ function controlsFor(id) {
     return '<div class="advance" data-for="' + id + '">' +
       '<button class="pick" type="button" data-go="' + entry.next + '">Show the next six months</button></div>';
   }
-  return endingHTML(entry.turn !== LAST_TURN);
+  return endingHTML(entry.turn !== LAST_TURN, entry.catastrophe);
 }
 
 function appendChapter(id, entering) {
@@ -1499,6 +1545,9 @@ def main() -> int:
     postamble_path = story_dir / "postamble.md"
     postamble = markdown(postamble_path.read_text(encoding="utf-8")) \
         if postamble_path.is_file() else ""
+    catastrophe_path = story_dir / "catastrophe.md"
+    catastrophe = markdown(strip_front_matter(catastrophe_path.read_text(encoding="utf-8"))[1]) \
+        if catastrophe_path.is_file() else ""
     about_path = story_dir / "about.md"
     about = markdown(about_path.read_text(encoding="utf-8")) \
         if about_path.is_file() else ""
@@ -1512,6 +1561,7 @@ def main() -> int:
     body = body.replace("__START__", json.dumps(start))
     body = body.replace("__PREAMBLE__", json.dumps(preamble))
     body = body.replace("__POSTAMBLE__", json.dumps(postamble))
+    body = body.replace("__CATASTROPHE__", json.dumps(catastrophe))
     body = body.replace("__ABOUT__", json.dumps(about))
     body = body.replace("__TIPS__", json.dumps(tips, ensure_ascii=False))
     body = body.replace("__TABS__", alt_tabs, 1)

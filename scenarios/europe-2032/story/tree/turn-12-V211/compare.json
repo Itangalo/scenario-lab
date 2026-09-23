@@ -3,7 +3,7 @@
   "turn": 12,
   "period_prose": "the first half of 2032",
   "events": {
-    "siblings": 9,
+    "siblings": 8,
     "pinned": [],
     "common": [
       {
@@ -26,13 +26,6 @@
         "line": "The Union is cut off from the leading model at short notice, wholly or by nationality of user.",
         "of_nine": 3,
         "emergent": false
-      },
-      {
-        "id": "safety_breakthrough",
-        "title": "Safety Breakthrough",
-        "line": "An interpretability or control result measurably improves assurance on systems already deployed, rather than on toy models – behaviour that can be predicted before it is observed, or a property that can be certified rather than argued for.",
-        "of_nine": 3,
-        "emergent": false
       }
     ],
     "notable": [
@@ -45,49 +38,50 @@
       }
     ]
   },
-  "corpus_runs": 160,
+  "corpus_runs": 137,
+  "corpus_cut": 23,
   "metrics": {
     "ai_capability": {
       "label": "AI capability",
       "value": 69.5,
-      "higher_than": 105,
-      "of_runs": 160
+      "higher_than": 104,
+      "of_runs": 137
     },
     "openweight_capability": {
       "label": "Open-weight capability",
       "value": 66.9,
-      "higher_than": 100,
-      "of_runs": 160
+      "higher_than": 99,
+      "of_runs": 137
     },
     "ai_safety": {
       "label": "AI safety",
       "value": 6.0,
-      "higher_than": 71,
-      "of_runs": 160
+      "higher_than": 54,
+      "of_runs": 137
     },
     "resilience": {
       "label": "Resilience",
       "value": 43.0,
-      "higher_than": 52,
-      "of_runs": 160
+      "higher_than": 46,
+      "of_runs": 137
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
       "value": 17.0,
-      "higher_than": 98,
-      "of_runs": 160
+      "higher_than": 76,
+      "of_runs": 137
     },
     "eu_political_capital": {
       "label": "EU political capital",
       "value": 4.0,
-      "higher_than": 41,
-      "of_runs": 160
+      "higher_than": 37,
+      "of_runs": 137
     },
     "public_sentiment": {
       "label": "Public sentiment",
       "value": 2.0,
-      "higher_than": 25,
-      "of_runs": 160
+      "higher_than": 21,
+      "of_runs": 137
     }
   }
 }

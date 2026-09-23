@@ -3,7 +3,7 @@
   "turn": 13,
   "period_prose": "the second half of 2032",
   "events": {
-    "siblings": 9,
+    "siblings": 8,
     "pinned": [],
     "common": [
       {
@@ -17,7 +17,7 @@
         "id": "cyber_major_incident",
         "title": "Major Cyber Incident",
         "line": "A large, largely automated attack lands.",
-        "of_nine": 5,
+        "of_nine": 4,
         "emergent": false
       },
       {
@@ -52,49 +52,50 @@
       }
     ]
   },
-  "corpus_runs": 160,
+  "corpus_runs": 131,
+  "corpus_cut": 29,
   "metrics": {
     "ai_capability": {
       "label": "AI capability",
       "value": 70.0,
-      "higher_than": 99,
-      "of_runs": 160
+      "higher_than": 96,
+      "of_runs": 131
     },
     "openweight_capability": {
       "label": "Open-weight capability",
       "value": 67.6,
-      "higher_than": 96,
-      "of_runs": 160
+      "higher_than": 93,
+      "of_runs": 131
     },
     "ai_safety": {
       "label": "AI safety",
       "value": 3.0,
-      "higher_than": 64,
-      "of_runs": 160
+      "higher_than": 44,
+      "of_runs": 131
     },
     "resilience": {
       "label": "Resilience",
       "value": 41.0,
-      "higher_than": 34,
-      "of_runs": 160
+      "higher_than": 32,
+      "of_runs": 131
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
       "value": 15.0,
-      "higher_than": 86,
-      "of_runs": 160
+      "higher_than": 61,
+      "of_runs": 131
     },
     "eu_political_capital": {
       "label": "EU political capital",
       "value": 0.0,
       "higher_than": 0,
-      "of_runs": 160
+      "of_runs": 131
     },
     "public_sentiment": {
       "label": "Public sentiment",
       "value": 13.0,
-      "higher_than": 105,
-      "of_runs": 160
+      "higher_than": 80,
+      "of_runs": 131
     }
   }
 }

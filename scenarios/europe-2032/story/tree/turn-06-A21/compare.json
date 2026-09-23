@@ -8,7 +8,7 @@
       {
         "id": "eval_anomaly_reports",
         "title": "Evaluation Anomalies Escalate",
-        "line": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched.",
+        "line": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or a model handling the fact of being evaluated in a way nobody designed for.",
         "of_nine": 9,
         "emergent": false
       }
@@ -17,6 +17,7 @@
     "notable": []
   },
   "corpus_runs": 160,
+  "corpus_cut": 0,
   "metrics": {
     "ai_capability": {
       "label": "AI capability",

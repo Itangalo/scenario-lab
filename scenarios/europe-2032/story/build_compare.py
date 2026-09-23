@@ -10,6 +10,10 @@ edited by hand:
    same turn across the full-run reference corpus (arm-blind by design: the
    page never names arms or counts per arm).
 
+A run stops counting from the turn after its own catastrophe, in both. The
+scenario is not written for the world after one, and the reader stops there
+too, so its later turns are business as usual that never was.
+
 Usage:
     python scenarios/europe-2032/story/build_compare.py
     python scenarios/europe-2032/story/build_compare.py --check   # report, write nothing
@@ -155,6 +159,25 @@ def corpus_runs() -> list[str]:
     return out
 
 
+def catastrophe_turn(run_dir: str) -> int | None:
+    """The turn a catastrophic event fired in this run, if any. Reads the
+    whole run, parent turns included: a branched run carries its parent's
+    turns, so a catastrophe before the block started still counts."""
+    for tdir in sorted((RUNS / run_dir).glob("turn-[0-9][0-9]")):
+        turn = int(tdir.name[5:])
+        if any(e["id"] in CATASTROPHIC for e in turn_events(run_dir, turn)):
+            return turn
+    return None
+
+
+def still_running(run_dir: str, turn: int, cache: dict[str, int | None]) -> bool:
+    """False once a catastrophe has fired in an earlier turn of this run."""
+    if run_dir not in cache:
+        cache[run_dir] = catastrophe_turn(run_dir)
+    struck = cache[run_dir]
+    return struck is None or turn <= struck
+
+
 def corpus_metrics(runs: list[str], turn: int) -> dict[str, list[float]]:
     out: dict[str, list[float]] = {}
     for d in runs:
@@ -182,10 +205,12 @@ def rank_emergent(ids: list[str]) -> list[str]:
 
 
 def sibling_box(block: str, turn: int, reps: list[str],
-                catalogue: dict[str, dict[str, str]]) -> dict[str, Any]:
+                catalogue: dict[str, dict[str, str]],
+                struck: dict[str, int | None]) -> dict[str, Any]:
     counts: dict[str, int] = {}
     info: dict[str, dict[str, Any]] = {}
-    for d in reps[1:]:
+    siblings = [d for d in reps[1:] if still_running(d, turn, struck)]
+    for d in siblings:
         for e in turn_events(d, turn):
             counts[e["id"]] = counts.get(e["id"], 0) + 1
             info.setdefault(e["id"], e)
@@ -221,7 +246,7 @@ def sibling_box(block: str, turn: int, reps: list[str],
     shown_notable += [e for e in forced if e not in shown_notable]
 
     return {
-        "siblings": len(reps) - 1,
+        "siblings": len(siblings),
         "pinned": [entry(e) for e in pinned],
         "common": [entry(e) for e in common],
         "notable": [entry(e) for e in shown_notable],
@@ -239,6 +264,8 @@ def main() -> int:
     reps = block_reps()
     corpus = corpus_runs()
     corpus_cache: dict[int, dict[str, list[float]]] = {}
+    live_cache: dict[int, list[str]] = {}
+    struck: dict[str, int | None] = {}
 
     blocks = {b["block"]: b for b in tree["blocks"]}
     written = 0
@@ -249,10 +276,11 @@ def main() -> int:
             if not prose.is_file():
                 continue
             node = json.loads((TREE / name / "data.json").read_text(encoding="utf-8"))
-            box = sibling_box(block_id, turn, reps[block_id], catalogue)
+            box = sibling_box(block_id, turn, reps[block_id], catalogue, struck)
 
             if turn not in corpus_cache:
-                corpus_cache[turn] = corpus_metrics(corpus, turn)
+                live_cache[turn] = [d for d in corpus if still_running(d, turn, struck)]
+                corpus_cache[turn] = corpus_metrics(live_cache[turn], turn)
             metrics = {}
             for mid, m in (node.get("metrics") or {}).items():
                 values = sorted(corpus_cache[turn].get(mid, []))
@@ -263,7 +291,8 @@ def main() -> int:
             compare = {"node": name, "turn": turn,
                        "period_prose": node.get("period_prose", ""),
                        "events": box,
-                       "corpus_runs": len(corpus),
+                       "corpus_runs": len(live_cache[turn]),
+                       "corpus_cut": len(corpus) - len(live_cache[turn]),
                        "metrics": metrics}
             if not args.check:
                 (TREE / name / "compare.json").write_text(

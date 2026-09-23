@@ -2,7 +2,7 @@
 
 This is not a grand ending, and it is not meant to be. This is just where the simulation ends.
 
-You have just decided European AI policy over six years. You may feel that it didn't change how AI developed.
+You have just decided European AI policy for as long as this story ran. You may feel that it didn't change how AI developed.
 
 That is not a quirk of the path you happened to take.
 

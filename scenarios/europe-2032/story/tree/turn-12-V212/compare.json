@@ -16,7 +16,7 @@
       {
         "id": "eval_anomaly_reports",
         "title": "Evaluation Anomalies Escalate",
-        "line": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched.",
+        "line": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or a model handling the fact of being evaluated in a way nobody designed for.",
         "of_nine": 3,
         "emergent": false
       },
@@ -52,49 +52,50 @@
       }
     ]
   },
-  "corpus_runs": 160,
+  "corpus_runs": 137,
+  "corpus_cut": 23,
   "metrics": {
     "ai_capability": {
       "label": "AI capability",
       "value": 68.7,
-      "higher_than": 98,
-      "of_runs": 160
+      "higher_than": 97,
+      "of_runs": 137
     },
     "openweight_capability": {
       "label": "Open-weight capability",
       "value": 67.0,
-      "higher_than": 101,
-      "of_runs": 160
+      "higher_than": 100,
+      "of_runs": 137
     },
     "ai_safety": {
       "label": "AI safety",
       "value": 11.0,
-      "higher_than": 91,
-      "of_runs": 160
+      "higher_than": 71,
+      "of_runs": 137
     },
     "resilience": {
       "label": "Resilience",
       "value": 44.0,
-      "higher_than": 59,
-      "of_runs": 160
+      "higher_than": 52,
+      "of_runs": 137
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
       "value": 14.0,
-      "higher_than": 66,
-      "of_runs": 160
+      "higher_than": 46,
+      "of_runs": 137
     },
     "eu_political_capital": {
       "label": "EU political capital",
       "value": 9.0,
-      "higher_than": 71,
-      "of_runs": 160
+      "higher_than": 61,
+      "of_runs": 137
     },
     "public_sentiment": {
       "label": "Public sentiment",
       "value": 1.0,
-      "higher_than": 12,
-      "of_runs": 160
+      "higher_than": 10,
+      "of_runs": 137
     }
   }
 }

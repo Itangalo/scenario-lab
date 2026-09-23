@@ -45,49 +45,50 @@
       }
     ]
   },
-  "corpus_runs": 160,
+  "corpus_runs": 137,
+  "corpus_cut": 23,
   "metrics": {
     "ai_capability": {
       "label": "AI capability",
       "value": 63.5,
       "higher_than": 4,
-      "of_runs": 160
+      "of_runs": 137
     },
     "openweight_capability": {
       "label": "Open-weight capability",
       "value": 62.5,
       "higher_than": 10,
-      "of_runs": 160
+      "of_runs": 137
     },
     "ai_safety": {
       "label": "AI safety",
       "value": 14.5,
-      "higher_than": 111,
-      "of_runs": 160
+      "higher_than": 89,
+      "of_runs": 137
     },
     "resilience": {
       "label": "Resilience",
       "value": 52.0,
-      "higher_than": 109,
-      "of_runs": 160
+      "higher_than": 97,
+      "of_runs": 137
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
       "value": 25.0,
-      "higher_than": 144,
-      "of_runs": 160
+      "higher_than": 121,
+      "of_runs": 137
     },
     "eu_political_capital": {
       "label": "EU political capital",
       "value": 22.0,
-      "higher_than": 136,
-      "of_runs": 160
+      "higher_than": 116,
+      "of_runs": 137
     },
     "public_sentiment": {
       "label": "Public sentiment",
       "value": 16.0,
-      "higher_than": 111,
-      "of_runs": 160
+      "higher_than": 93,
+      "of_runs": 137
     }
   }
 }

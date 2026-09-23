@@ -16,7 +16,7 @@
       {
         "id": "eval_anomaly_reports",
         "title": "Evaluation Anomalies Escalate",
-        "line": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched.",
+        "line": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or a model handling the fact of being evaluated in a way nobody designed for.",
         "of_nine": 3,
         "emergent": false
       },
@@ -38,49 +38,50 @@
       }
     ]
   },
-  "corpus_runs": 160,
+  "corpus_runs": 137,
+  "corpus_cut": 23,
   "metrics": {
     "ai_capability": {
       "label": "AI capability",
       "value": 67.0,
       "higher_than": 45,
-      "of_runs": 160
+      "of_runs": 137
     },
     "openweight_capability": {
       "label": "Open-weight capability",
       "value": 65.6,
       "higher_than": 56,
-      "of_runs": 160
+      "of_runs": 137
     },
     "ai_safety": {
       "label": "AI safety",
       "value": 2.0,
-      "higher_than": 43,
-      "of_runs": 160
+      "higher_than": 30,
+      "of_runs": 137
     },
     "resilience": {
       "label": "Resilience",
       "value": 62.0,
-      "higher_than": 154,
-      "of_runs": 160
+      "higher_than": 134,
+      "of_runs": 137
     },
     "eu_ai_sovereignty": {
       "label": "EU AI sovereignty",
       "value": 11.0,
-      "higher_than": 45,
-      "of_runs": 160
+      "higher_than": 28,
+      "of_runs": 137
     },
     "eu_political_capital": {
       "label": "EU political capital",
       "value": 8.0,
-      "higher_than": 63,
-      "of_runs": 160
+      "higher_than": 56,
+      "of_runs": 137
     },
     "public_sentiment": {
       "label": "Public sentiment",
       "value": 27.0,
-      "higher_than": 149,
-      "of_runs": 160
+      "higher_than": 127,
+      "of_runs": 137
     }
   }
 }
