@@ -1279,8 +1279,8 @@ class Orchestrator:
         outputs = {}
         actor_ids = list(self.scenario.actors.keys())
 
-        def run_actor(actor_id: str) -> tuple[str, LLMResponse]:
-            """Execute one actor prompt and return raw response."""
+        def run_actor(actor_id: str) -> tuple[str, LLMResponse, object]:
+            """Execute one actor prompt and return raw response plus I/O record."""
             client = self.client_for_actor(actor_id)
             system, user = self.prompt_builder.build_actor_prompt(
                 actor_id,
@@ -1289,7 +1289,13 @@ class Orchestrator:
                 previous_actions=self.scenario.actors[actor_id].last_actions,
             )
             response = client.complete(system, user)
-            return actor_id, response
+            # The recording wrapper buffered this call on this worker thread,
+            # which the main thread cannot see (thread-local). Carry it back
+            # for replay there – the same pattern the multi-sample events path
+            # uses – otherwise the actor transcript is silently never written.
+            pending = getattr(self._llm_io_context, "pending", None)
+            self._llm_io_context.pending = None
+            return actor_id, response, pending
 
         # Parallelize actor prompts when possible (independent prompts)
         if len(actor_ids) > 1:
@@ -1298,7 +1304,9 @@ class Orchestrator:
                 futures = {executor.submit(run_actor, actor_id): actor_id for actor_id in actor_ids}
 
                 for future in as_completed(futures):
-                    actor_id, response = future.result()
+                    actor_id, response, pending = future.result()
+                    if pending is not None:
+                        self._llm_io_context.pending = pending
                     self._record_llm_call(turn, f"actor:{actor_id}", response)
                     outputs[actor_id] = response.content
                     self.scenario.actors[actor_id].last_actions = response.content
