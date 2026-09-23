@@ -1,0 +1,51 @@
+name: "Intelligence Rising"
+description: "Automated analogue of the Intelligence Rising AI-race roleplay: US and Chinese blocs race the four-level tech tree to RTAI while espionage, elections, and fragile treaties decide whether the endgame is negotiated safety or preventive war."
+start_date: "2026-01"
+time_scale: "1 year per turn"
+max_turns: 8
+
+actors:
+  - us_government
+  - china_government
+  - alphabet
+  - tencent
+
+research_questions:
+  - id: rq_race_vs_negotiated_safety
+    question: "Under what conditions does a US-China frontier-AI race end in negotiated, verifiably safe RTAI governance, and under what conditions does it end in preventive attack or loss of control?"
+    metrics: [us_capability, china_capability, safety_progress, global_stability, us_china_tension, agreement_strength]
+    events: [frontier_breakthrough, weight_exfiltration, bilateral_summit, defection_exposed, preventive_strike, warning_shot, taiwan_crisis, us_election_2028, us_election_2032]
+    notes: "The central question; everything else is secondary. Answered by comparing deployment endings against agreement and safety paths."
+
+termination:
+  - id: unsafe_rtai
+    when: "(us_capability >= 4 or china_capability >= 4) and safety_progress < 50"
+    description: "RTAI is deployed without adequate safety; catastrophe or loss of control ends the game."
+  - id: great_power_war
+    when: "global_stability <= 1 or us_china_tension >= 95"
+    description: "Escalation passes the point of return; full-scale war decides what is left."
+  - id: rtai_deployed
+    when: "us_capability >= 4 or china_capability >= 4"
+    description: "A bloc deploys RTAI under at least minimally adequate safety; the endgame resolves."
+
+llm:
+  model: "openrouter:meta/muse-spark-1.3-contributor"
+  temperature: 0.7
+  max_tokens: 3000
+  max_tokens_by_task:
+    rules: 3500
+  reasoning_effort: minimal
+  probability_samples: 3
+
+emergent_events:
+  enabled: true
+  max_per_turn: 1
+  max_probability: 0.35
+
+rule_evolution:
+  freeze_until_turn: 2
+  max_changes_per_turn: 4
+
+workshop:
+  audience: "present and future decision-makers with mixed AI background, playing the four roles live"
+  tone: "plain, brisk, concrete; no jargon without explanation"
