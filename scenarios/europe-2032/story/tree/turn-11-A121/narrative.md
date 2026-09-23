@@ -6,20 +6,25 @@ block: A121
 status: written
 prev: turn-10-A121
 next: turn-12-A121
-allow: 19 05:30
+allow: 19 05:30 1945
+review: (ECHO 2026-09-23) rewritten as a darker catastrophe ending
 ---
 
-# Islands
+# The line
 
 The autumn begins with exercises and ends with shooting.
 
-> **19 November 2031, 05:30.** After weeks of manoeuvres around the Taiwan Strait, expulsions and soaring insurance rates, American and Chinese forces exchange strikes.
+Through September and October the Taiwan Strait fills with manoeuvres, expulsions and insurance rates nobody can pay. The welfare files, meanwhile, deepen at home. Further logs show flagged cases decided in seconds, and nobody reading the pattern that cut single parents and migrants. The redress track, now the President's priority, bans approvals in under a minute, orders human re-decision, and pays arrears from social funds brought forward. On television, the difference between a sound law and a failed enforcement does not hold.
 
-Within days fabrication plants, undersea cables, satellite ground stations and large data centres are named as legitimate targets. Two cable landings and a power interconnector feeding southern computing clusters are damaged. Freight from East Asia all but stops, and the stockpiles become policy.
+The benefits hurt too. The immune therapies cut relapse in the early cohorts, and a new battery chemistry promises cheaper storage, and both run on American models and foreign computing. Waiting lists fall in the few clinics where European capacity runs the tools, which proves that the Corps's placements work where they are staffed, and how few such places there are.
 
-The Union declares itself neutral, designates the fabs, cables and data centres on its soil as civilian critical infrastructure, and puts guards and civil-protection teams around them. There is no new measure. The Commission's standing is close to nothing, and Sofia's note says so in its first line. Everything that runs is something already built – the cyber-recovery playbooks, the bio stockpiles, the continuity plans. It absorbs some of the harm. It does not restore services.
+> **19 November 2031, 05:30.** After weeks of manoeuvres around the Taiwan Strait, American and Chinese forces exchange strikes.
 
-> **December 2031.** A ransomware sweep built with machine-generated tooling moves through municipal systems, hospital administration and permit desks in several member states. Defenders say they are weeks behind.
+Within days fabrication plants, undersea cables, satellite ground stations and large data centres are named as legitimate targets. Cable landings and a power interconnector feeding southern computing clusters are damaged. Freight from East Asia all but stops, and the stockpiles become policy.
+
+The Union declares itself neutral and puts guards and civil-protection teams around the fabs, cables and data centres on its soil. There is no new measure. The Commission's standing is close to nothing, and Sofia's note says so in its first line. Everything that runs is something already built.
+
+> **December 2031.** A ransomware sweep built with machine-generated tooling moves through municipal systems, hospital administration and permit desks in several member states.
 
 Where European-anchored stacks in Lyon, Porto and Gdansk can run them, hospitals and ports island themselves and keep working. Elsewhere they degrade.
 
@@ -33,8 +38,18 @@ Where European-anchored stacks in Lyon, Porto and Gdansk can run them, hospitals
 >
 > **Sofia:** No.
 
-The welfare files deepen. Further logs show flagged cases decided in seconds, and nobody reading the pattern that cut single parents and migrants. The redress track, now the President's priority, bans approvals in under a minute, orders human re-decision, and pays arrears from social funds brought forward. Officials insist that the law is sound and the enforcement failed. On television, that distinction does not hold.
+In the Pacific the war goes badly for whoever is losing that week. A carrier group is struck east of Taiwan, then a naval base, then the ports that supply it. The generals on both sides speak in public of "escalation to de-escalate", a phrase the Council's defence advisers explain to the College in a closed room, and nobody asks them to explain twice.
 
-The benefits hurt too. The immune therapies cut relapse in the early cohorts, and the battery chemistry promises cheaper storage, and both run on American models and foreign computing. Waiting lists fall in the few clinics where European capacity runs the tools, which proves that the Corps's placements work where they are staffed, and how few such places there are.
+In the last week before Christmas, a single nuclear weapon detonates over the sea east of Taiwan.
 
-By December the queues are longer, the budgets tighter, and the rumours of sabotage around the grid interconnectors persistent. The Union is paying for a war it did not choose, with instruments built for a peace that has ended.
+It is small, as these things go. It is aimed at ships, not a city, and the first reports speak of hundreds dead, not millions. Each capital says the other fired it. Each says the next one will be answered in kind. For the first time since 1945, the question is not whether the line will be crossed, but whether it has been crossed only once.
+
+Europe learns it from the radio like everyone else. The Council meets through the night and issues a statement that nobody quotes. In Lyon the schools stay open, because nobody can say what closing them would protect against. The markets do not open at all.
+
+> **Claire:** the patients keep asking me if it's over
+>
+> **Sofia:** What do you tell them?
+>
+> **Claire:** that i'll ask you
+
+On the last night of the year, the Union is paying for a war it did not choose, with instruments built for a peace that has ended, and waiting, with the rest of the world, to learn whether there will be a second detonation.

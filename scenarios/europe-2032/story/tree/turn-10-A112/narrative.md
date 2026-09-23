@@ -7,6 +7,7 @@ status: written
 prev: option-10-A112
 next: turn-11-A112
 allow: 17 04:10
+review: (ECHO 2026-09-23) rewritten as a darker catastrophe ending
 ---
 
 # Non-belligerent
@@ -15,9 +16,9 @@ allow: 17 04:10
 
 Within weeks fabrication plants, undersea cables, satellite links and data centres have been declared military targets, and some of them are in Europe or beside it. A cable landing on the Atlantic coast goes dark for days. A North Sea interconnector is rerouted under naval escort.
 
-The Union is not asked whether it wishes to be involved. The Council declares European territory, its cable landings and the two permitted gigafactory plots non-belligerent, and offers both sides deconfliction and mutual recognition of tests in exchange for no targeting and continued licensed supply. The offer buys communiqués, not guarantees.
+The Union is not asked whether it wishes to be involved. The Council declares European territory, its cable landings and the two permitted gigafactory plots non-belligerent, and offers both sides deconfliction in exchange for no targeting and continued licensed supply. The offer buys communiqués, not guarantees.
 
-Sofia's note that month is the shortest she has written: no new measure. The President signs it without comment. It is harder to sign than it looks. The Union runs what it already has. The finished Shields isolate health, power and telecoms from the cyber spillover and reroute around damaged cables, and services degrade rather than stop. The middle-power club becomes the one channel through which anyone bargains.
+Sofia's note that month is the shortest she has written: no new measure. The President signs it without comment. It is harder to sign than it looks. The Union runs what it already has. The finished Shields isolate health, power and telecoms from the cyber spillover, and services degrade rather than stop.
 
 > **Claire:** is it true we're neutral
 >
@@ -27,14 +28,27 @@ Sofia's note that month is the shortest she has written: no new measure. The Pre
 >
 > **Sofia:** They still come from the same place. Behind the army's.
 
-The therapy doses, the scheduling software and the models behind the treatment plans stay on foreign licences, now queued behind wartime requisitions and still billed by the hour.
-
-> **March 2031.** Night-time arson spreads from robot pilot sites to the grid-connection works for the gigafactories. The Energy Council takes emergency control and posts guards. No new siting promise is made while fires are still being lit.
+> **March 2031.** Night-time arson spreads from robot pilot sites to the grid-connection works for the gigafactories. The Energy Council takes emergency control and posts guards.
 >
-> **April 2031.** A new freely downloadable model, only months behind the closed frontier, passes a hundred thousand downloads in a week – and this time into procurement systems. Three national health services list it as an approved option before the regulators have finished reading its licence.
+> **April 2031.** A new freely downloadable model, only months behind the closed frontier, spreads into procurement systems before the regulators have finished reading its licence.
 >
-> **May 2031.** The thinning reaches the middle. Law firms, accountancies, software houses and administrations are no longer only skipping the juniors; the people with five years behind them are going too. Graduate bridge pay is slow, and reopenings in ports and warehouses are frozen by blockades and war disruption.
+> **May 2031.** The thinning reaches the middle. Firms are no longer only skipping the juniors; the people with five years behind them are going too.
 
-Mayors who kept their bans on logistics machines now face pickets and patients at the same time. Both ask why an appointment can be guaranteed and a job interview cannot.
+Neutrality is a word the Union says. It is not a thing the belligerents see. What they see is a continent that makes the machines that make the chips, lands the cables that carry American traffic, hosts American bases, and runs its hospitals on American models. In Beijing's reading, Europe is part of the other side's supply of computing whether it says so or not.
 
-The frontier laboratories, running largely unattended, push again.
+The warnings come first, in April: a list, published without comment, of European sites that "support hostile compute". The lithography works in the Netherlands is on it. So are cable landings in Cornwall, Brittany and Portugal, air bases in Germany, and a data-centre campus in Ireland.
+
+Then, on a night in May, missiles meant for someone else's war come down on European soil.
+
+They are few, and they are precise. The lithography works burns until morning. The Irish campus is gone. A cable landing in Brittany is hit twice. At one of the German bases the strike kills soldiers and civilians together, and the pictures reach every phone in Europe before any government has spoken. By dawn the word "non-belligerent" has disappeared from every briefing in Brussels.
+
+Washington calls it an attack on an ally. Beijing calls it a strike on American military logistics. The eastern capitals want the Union in the war. The southern ones want it further out. Nobody in the Council can say what "further out" would still mean.
+
+> **Claire:** they're saying the next list is longer
+> **Claire:** is the hospital on it
+>
+> **Sofia:** No.
+>
+> **Claire:** would you know
+
+The laboratories, running largely unattended, push again, and each week the list is longer. At the end of June Europe is no longer choosing whether to be in the war, only how.
