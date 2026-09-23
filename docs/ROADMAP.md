@@ -165,9 +165,36 @@ The other three: nothing in the scenario drove the procedure to a conclusion (no
 
 **Why this is later:** The workbench becomes much more valuable after the underlying authoring and analysis capabilities are mature enough to deserve a front door.
 
+### 5. Mixed Human and LLM Actors in Live Games (ECHO 2026-09-23)
+
+**Priority:** Medium-High  
+**Type:** Live games  
+**Why it matters:** Live games today are all-human: every actor needs a menu and a pick before a turn resolves (`live.py` refuses otherwise). That ties the richness of the world to the number of teams the room and the facilitator can carry – in practice 4–6. Letting the LLM play some actors decouples the two: 6–8 human teams can act inside a world of 15–20 actors, so a workshop can put participants in roles close to their own (a union, a Land, a hospital chain) while the great powers, markets, and other stakeholders keep moving around them.
+
+**What this means:**
+
+- Each actor in a live game is marked as human or LLM, per game rather than per scenario, so the same scenario can be played with 4 or 8 human teams.
+- LLM actors decide through the ordinary actor step (same prompts as a simulated turn); human actors get menus as today. Both feed the same resolution.
+- The facilitator can switch an actor between human and LLM between turns (a team leaves early, or a spare group takes over an actor).
+
+**Likely scope:**
+
+- An actor-mode setting in `live` / `live-menu`, the facilitator UI, and `config.json`, so a run records who played what
+- Resolution that accepts LLM actions for LLM actors and requires picks only from human ones
+- Briefing and handouts that show which teams are human and what the LLM actors did
+- Integrity checks and `branch` / `resume` treating mixed runs like any other run
+
+**Open design questions:**
+
+- Timing and information: do LLM actors decide simultaneously with the humans on the same briefing (fair, but blind to human negotiation), or after the picks are in (reactive, but they see what humans chose)?
+- Negotiation: humans cannot talk to LLM actors across the table. Options include the facilitator relaying a message into the LLM actor's context, or a short written "diplomatic note" per turn that LLM actors read and may answer in the briefing.
+- Legibility: with many actors the 400-word turn narrative cannot cover everyone; mixed games likely need a short shared headline plus per-human-team consequence paragraphs.
+
+**Relationship to the backlog:** This is the live-game form of the "human-in-the-loop mode" idea below, now that all-human live games exist.
+
 ## Later
 
-### 5. Analyst Assistant over Saved Runs
+### 6. Analyst Assistant over Saved Runs
 
 **Priority:** Medium-Low  
 **Type:** Mirofish-inspired  
@@ -187,14 +214,14 @@ The other three: nothing in the scenario drove the procedure to a conclusion (no
 
 **Relationship to synthesis:** Largely the interactive form of the same capability. Now that `synthesize` exists, this is a much smaller job: the same artifacts, asked ad hoc rather than in one pass.
 
-### 6. Local Model Endpoints
+### 7. Local Model Endpoints
 
 **Priority:** Low-Medium  
 **Type:** Operational  
 
 The provider abstraction was built to accommodate this: the generic `openai` provider (any OpenAI-compatible endpoint via `OPENAI_BASE_URL`) now covers Ollama and vLLM without touching the router, and the `opencode` provider routes through an OpenCode server instead. Mainly useful for cheap high-volume batches and for running scenarios with sensitive material.
 
-### 7. Optional Public-Sphere or Social-Dynamics Modules
+### 8. Optional Public-Sphere or Social-Dynamics Modules
 
 **Priority:** Low / Experimental  
 **Type:** Mirofish-inspired  
@@ -214,7 +241,7 @@ A review of how well the engine models genuine uncertainty produced four shipped
 
 - **Established-facts canon against summarization drift.** All long-term memory flows through the historical summary (re-condensed every turn) and the notepad (REPLACE semantics), so load-bearing facts can silently vanish over 10+ turns. Idea: an append-only "established facts" list that the summarization step may add to but not delete, injected into prompt context. Left undone because it changes the summarize output contract and can only be verified with real runs.
 - **Probability calibration vignettes.** The evals test event-condition *logic*, but nothing tests whether elicited probabilities are *calibrated*. Idea: a small set of human-anchored reference vignettes with agreed probability ranges, run against candidate event models.
-- **Human-in-the-loop mode.** Let a human play one actor or approve/steer between turns, on top of the existing pause/resume machinery. Connects the tool to live scenario exercises with clients rather than only Monte Carlo automation.
+- **Human-in-the-loop mode.** Let a human play one actor or approve/steer between turns, on top of the existing pause/resume machinery. Connects the tool to live scenario exercises with clients rather than only Monte Carlo automation. (ECHO 2026-09-23) All-human play now exists as live workshop games ([LIVE_GAMES.md](LIVE_GAMES.md)); mixing human and LLM actors is item 5 above.
 
 ## Recommended Sequence
 
@@ -222,7 +249,8 @@ A review of how well the engine models genuine uncertainty produced four shipped
 2. Synthesis quality evals
 3. Visualization on top of stable aggregation
 4. Thin workbench over the whole flow
-5. Optional product layers: analyst assistant, local models, social-dynamics modules
+5. Mixed human and LLM actors in live games (can run in parallel with 3–4; it touches only the live path)
+6. Optional product layers: analyst assistant, local models, social-dynamics modules
 
 ## What to Avoid
 
