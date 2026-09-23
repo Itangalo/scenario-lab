@@ -1545,8 +1545,8 @@ def alt_panels(experiments: Path) -> tuple[str, str]:
 
 
 SITE_FOOTER = """<footer class="site">
-    <a href="https://falkai.org/">Falk AI</a>
-    <span><a href="https://github.com/Itangalo/scenario-lab">Scenario Lab</a> &middot; draft</span>
+    <a href="/">Scenario Lab</a>
+    <span><a href="https://github.com/Itangalo/scenario-lab">Source on GitHub</a></span>
   </footer>"""
 
 SITE_FOOTER_CSS = """
@@ -1564,15 +1564,11 @@ footer.site a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 
 def standalone(head: str, body: str) -> str:
-    """Wrap the page as an ordinary web page for falkai.org.
+    """Wrap the page as an ordinary web page for scenariolab.org.
 
     The artifact host supplies the document skeleton, so the page normally
     starts at <title>. On a site it has to carry its own, and follow the site's
-    conventions: the `... · Falk AI` title, the shared favicons, a link home.
-
-    It stays noindex on purpose. This is an unfinished draft that stops in 2029
-    and is meant to move to its own domain; indexing it now buys a search result
-    that will rot. One line to remove when that changes.
+    conventions: the `... · Scenario Lab` title, the shared favicon, a link home.
     """
     head = head.replace("<title>Europe 2032</title>\n", "", 1)
     head = head.replace("</style>", SITE_FOOTER_CSS + "</style>", 1)
@@ -1586,17 +1582,15 @@ def standalone(head: str, body: str) -> str:
         "<head>\n"
         '<meta charset="UTF-8">\n'
         '<meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
-        "<title>Europe 2032 &middot; Falk AI</title>\n"
+        "<title>Europe 2032 &middot; Scenario Lab</title>\n"
         f'<meta name="description" content="{description}">\n'
-        '<meta name="robots" content="noindex, follow">\n'
         '<meta property="og:type" content="article">\n'
-        '<meta property="og:site_name" content="Falk AI">\n'
+        '<meta property="og:site_name" content="Scenario Lab">\n'
         '<meta property="og:title" content="Europe 2032">\n'
         f'<meta property="og:description" content="{description}">\n'
-        '<meta property="og:url" content="https://falkai.org/europe-2032/">\n'
+        '<meta property="og:url" content="https://scenariolab.org/europe-2032/">\n'
         '<meta name="twitter:card" content="summary">\n'
-        '<link rel="icon" href="/favicon.ico">\n'
-        '<link rel="apple-touch-icon" href="/favicon-180.png">\n'
+        '<link rel="icon" href="/favicon.svg" type="image/svg+xml">\n'
         f"{head}"
         "</head>\n<body>\n"
         f"{body}"
@@ -1610,7 +1604,7 @@ def main() -> int:
     ap.add_argument("scenario", type=Path)
     ap.add_argument("--out", type=Path)
     ap.add_argument("--standalone", action="store_true",
-                    help="emit a full web page for falkai.org, not artifact content")
+                    help="emit a full web page for scenariolab.org, not artifact content")
     args = ap.parse_args()
 
     story_dir = args.scenario / "story"
