@@ -13,10 +13,3 @@ The story builds on LLM-powered simulations. Under the dials, showing some selec
 The prose is almost completely LLM-written. This is partly because this project wants to show how LLMs can be used for exploring scenarios, but also because there was not time to write the prose by hand.
 
 **The style and scope of the story are heavily inspired by the excellent scenario [Europe 2031](https://europe2031.ai/). Europe 2031 is not affiliated with Europe 2032, and any shortcomings of this text should not reflect on its authors.**
-
-## This is a draft – tell me what you think
-
-I am still working on this, and what I need most is how it reads to someone who is not me. Write to me at johan@falkai.org. These are the questions I am focusing on right now, but anything you noticed is welcome.
-
-- Is it enjoyable to read? Did you want to keep going, and was there a point where you stopped wanting to?
-- Almost all prose is LLM-generated, and some events and descriptions that didn't take recent AI developments into account has been edited. Did you find quirks in the story, with events or decisions that don't make sense given what we know today? Speculation is necessary, but it must be credible.
