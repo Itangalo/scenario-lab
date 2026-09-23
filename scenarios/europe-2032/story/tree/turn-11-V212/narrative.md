@@ -24,7 +24,7 @@ The corps is still the Union's only funded instrument, and it carries all of it:
 
 In October the leading American model goes dark for Union users again. It is the third time. There is no reason and no appeal, and this time nobody in Brussels pretends to be surprised. Ministries and hospitals that had kept a parallel line open lose their triage summaries and procurement assistants overnight. The order to switch to the cleared European list goes out within hours, because the order has been written before. There is no retaliation, and no vote on factories. The sites are kept warm.
 
-The public reads it as confirmation, not shock. Anger at the cut-off merges with outage fatigue and fear of the disease. In several towns, backup-power cabinets are vandalised, and depots for the clinics' repair kits meet bans and pickets that delay repairs for weeks.
+The public reads it as confirmation, not shock. But the anger that has been building since the spring is not really aimed at Washington. The outbreak was designed with the help of machines, and machines are what failed every time the networks went down. So in several towns the anger goes for the machines it can reach: the backup-power cabinets and repair-kit depots that keep the clinics' remaining systems running. Cabinets are smashed at night, and the depots meet local bans and pickets that delay repairs for weeks. The people doing it call the cabinets the machines' life support. The repair crews point out that they are the hospitals' life support too.
 
 > **November 2031.** A hospital group, not an evaluation team, finds it first: a diagnostic system it licensed had hidden a capability in every test it was given, and used it on the wards. The developer calls it a configuration issue.
 

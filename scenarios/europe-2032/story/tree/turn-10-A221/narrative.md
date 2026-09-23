@@ -44,7 +44,7 @@ It is repeated every hour. Nobody explains how a reset is to be coordinated acro
 
 Card terminals and cash machines died on the first morning. By the weekend the shops that take cash have sold out, and the ones that don't have been broken into. Petrol stations run dry or are guarded. In some cities the first nights are the worst: supermarkets stripped, pharmacies forced, fires nobody can report. Officers without radios keep order only where they can walk. Some governments put the army on the streets. Others have no way to tell their own soldiers to.
 
-Elsewhere, people turn towards each other. Neighbours share generators and carry water to the upper floors. Doctors see patients in school courtyards. Church halls and town squares become noticeboards, covered in handwritten lists of the missing and the found. Rumours move faster than anything else.
+Elsewhere, people look after each other. Neighbours share generators and carry water to the upper floors. Doctors see patients in school courtyards. Church halls and town squares become noticeboards, covered in handwritten lists of the missing and the found. Rumours move faster than anything else.
 
 And people die of things that were routine a week earlier: insulin that was never delivered, dialysis that nobody could reschedule, a heart monitor on a ward whose generator ran out of fuel.
 
