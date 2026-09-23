@@ -453,6 +453,8 @@ header.masthead {
 }
 /* The tellings of the same material, side by side under the masthead. */
 .tabs { display: flex; flex-wrap: wrap; gap: 0.35rem; padding-top: 0.9rem; margin-bottom: 2.5rem; }
+/* With one telling there is nothing to switch between; the bar goes, the space stays. */
+.tabs-gap { height: 2.5rem; }
 .tab {
   font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
   font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase;
@@ -892,6 +894,7 @@ button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 BODY = """
 <div class="wrap">
   <header class="masthead">
+    __SITENAV__
     <h1>Europe 2032</h1>
     <span class="sub">A simulated decision &middot; 2026&ndash;2032</span>
   </header>
@@ -1549,8 +1552,17 @@ SITE_FOOTER = """<footer class="site">
     <span><a href="https://github.com/Itangalo/scenario-lab">Source on GitHub</a></span>
   </footer>"""
 
+SITE_NAV = '<a class="sitenav" href="/">&larr; Scenario Lab</a>'
+
 SITE_FOOTER_CSS = """
 /* Standalone only: the page sits on a site, and needs a way back to it. */
+.masthead .sitenav {
+  flex-basis: 100%;
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--accent); text-decoration: none;
+}
+.masthead .sitenav:hover { text-decoration: underline; text-underline-offset: 3px; }
 footer.site {
   display: flex; flex-wrap: wrap; gap: 0.6rem 1.25rem; align-items: baseline;
   margin-top: 4rem; padding-top: 1.25rem; border-top: 1px solid var(--rule);
@@ -1573,6 +1585,7 @@ def standalone(head: str, body: str) -> str:
     head = head.replace("<title>Europe 2032</title>\n", "", 1)
     head = head.replace("</style>", SITE_FOOTER_CSS + "</style>", 1)
     body = body.replace("__SITEFOOTER__", SITE_FOOTER, 1)
+    body = body.replace("__SITENAV__", SITE_NAV, 1)
     description = ("An interactive scenario: you take the European Union through "
                    "2026\u20132032 without knowing which AI trajectory you are on. "
                    "Built from several hundred simulation runs.")
@@ -1641,11 +1654,15 @@ def main() -> int:
     body = body.replace("__EXPLORE__", json.dumps(explore))
     body = body.replace("__ABOUT__", json.dumps(about))
     body = body.replace("__TIPS__", json.dumps(tips, ensure_ascii=False))
-    body = body.replace("__TABS__", alt_tabs, 1)
+    if alt_tabs:
+        body = body.replace("__TABS__", alt_tabs, 1)
+    else:
+        body = re.sub(r'  <div class="tabs" role="tablist".*?</div>\n',
+                      '  <div class="tabs-gap"></div>\n', body, count=1, flags=re.S)
     body = body.replace("__ALTPANELS__", alt_views, 1)
     out = args.out or (args.scenario / "story.html")
     page = standalone(HEAD, body) if args.standalone else HEAD + body.replace(
-        "__SITEFOOTER__", "", 1)
+        "__SITEFOOTER__", "", 1).replace("__SITENAV__", "", 1)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(page, encoding="utf-8")
 
