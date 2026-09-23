@@ -35,7 +35,7 @@ Then, in May, something falls that was never supposed to be touched. Both countr
 
 A nuclear power that cannot see launches is a nuclear power that has to guess. Both governments move their forces to the highest state of alert either has declared since the Cold War. Bombers are dispersed. Submarines leave port and go silent. The hotline between the two capitals is used every day and settles nothing, because neither side can prove to the other what it is not doing.
 
-Europe has nothing to offer and nowhere to stand. The Council meets and issues a call for restraint that nobody in either capital reads. France and Britain raise their own alert levels, quietly. Pharmacies run out of iodine tablets in a single afternoon. In Lyon the schools practise sheltering drills that the teachers themselves last practised as children.
+Europe has nothing to offer and nowhere to stand. The Council meets and issues a call for restraint that nobody in either capital reads. France and Britain raise their own alert levels, quietly. Pharmacies run out of iodine tablets in a single afternoon. In Lyon the schools run their confinement drill, the one practised every year for a toxic cloud or an accident at the nuclear plant up the Rhône. This time nobody tells the children it is just for practice.
 
 > **Claire:** they gave us a leaflet at work. what to do if
 > **Claire:** it says stay inside. that's the whole leaflet
