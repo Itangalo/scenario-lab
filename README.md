@@ -135,6 +135,12 @@ python -m scenario_lab.cli live --skip-model-checks
 
 `live` starts or resumes a game with guided questions (which scenario, new or resume – each skipped when there is only one answer). It prepares the turn menus under `turn-NN/live/`; run it again once the teams have deliberated and it enters the picks, resolves, and prepares the next menus – the whole workshop runs on that one command. (`live-resolve` settles a turn directly, with an interactive picker or repeatable `--actor-action actor_id=pick` flags.) See [docs/LIVE_GAMES.md](docs/LIVE_GAMES.md) for the facilitator guide.
 
+Prefer no terminal at all? Run the facilitator web UI instead (same games, same files, localhost only):
+
+```bash
+scenario-lab-facilitate   # then open http://127.0.0.1:8000/
+```
+
 ### Show a scenario overview
 
 ```bash

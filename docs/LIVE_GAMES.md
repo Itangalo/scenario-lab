@@ -2,6 +2,14 @@
 
 Run a Scenario Lab scenario as a facilitated workshop game: human teams play the actors, choosing from a short menu of LLM-generated options each turn. One computer (the facilitator's), printed handouts, no laptops for the teams.
 
+## Facilitator web UI (no terminal)
+
+```bash
+scenario-lab-facilitate   # then open http://127.0.0.1:8000/
+```
+
+The page covers the whole loop: pick a scenario, start a new game or open an existing one, prepare menus, tick the teams' picks (radio buttons or free text), resolve with a confirm step, and print the briefing plus one sheet per team. Long model calls run in the background with a visible log. It writes exactly the same `turn-NN/live/` artifacts as the CLI below, so you can mix the two freely on one game – the UI and the terminal stay interoperable. The server binds localhost only and needs no new dependencies.
+
 ## The loop
 
 One command starts or resumes a game – it finds the live-ready scenario, asks new-or-resume when there is anything to ask, and prepares the menus:

@@ -29,6 +29,7 @@ dev = [
 
 [project.scripts]
 scenario-lab = "scenario_lab.cli:main"
+scenario-lab-facilitate = "scenario_lab.facilitator:main"
 
 [tool.pytest.ini_options]
 addopts = "-m 'not integration'"
