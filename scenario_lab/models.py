@@ -233,43 +233,47 @@ class LLMConfig:
     """LLM configuration with per-task model selection and fallback lists.
 
     Each model field supports:
-    - Single ModelRoute: ModelRoute("openrouter", "qwen/qwen3-235b-a22b-2507")
+    - Single ModelRoute: ModelRoute("openrouter", "meta/muse-spark-1.3-contributor")
     - Fallback list: [ModelRoute(...), ModelRoute(...)]
     - Dict for actors: {"actor1": ModelRoute(...), "actor2": [ModelRoute(...), ...]}
     """
 
     # Per-task model selection (ModelRoute or list for fallback)
     events: Union[ModelRoute, List[ModelRoute]] = field(
-        default_factory=lambda: ModelRoute("openrouter", "google/gemini-3-flash-preview")
+        default_factory=lambda: ModelRoute("openrouter", "meta/muse-spark-1.3-contributor")
     )
     actors: Union[ModelRoute, List[ModelRoute], dict] = field(
-        default_factory=lambda: ModelRoute("openrouter", "google/gemini-3-flash-preview")
+        default_factory=lambda: ModelRoute("openrouter", "meta/muse-spark-1.3-contributor")
     )
     rules: Union[ModelRoute, List[ModelRoute]] = field(
-        default_factory=lambda: ModelRoute("openrouter", "google/gemini-3-flash-preview")
+        default_factory=lambda: ModelRoute("openrouter", "meta/muse-spark-1.3-contributor")
     )
     metrics: Union[ModelRoute, List[ModelRoute]] = field(
-        default_factory=lambda: ModelRoute("openrouter", "google/gemini-3-flash-preview")
+        default_factory=lambda: ModelRoute("openrouter", "meta/muse-spark-1.3-contributor")
     )
     summary: Union[ModelRoute, List[ModelRoute]] = field(
-        default_factory=lambda: ModelRoute("openrouter", "qwen/qwen3-235b-a22b-2507")
+        default_factory=lambda: ModelRoute("openrouter", "meta/muse-spark-1.3-contributor")
     )
     analysis: Union[ModelRoute, List[ModelRoute]] = field(
-        default_factory=lambda: ModelRoute("openrouter", "qwen/qwen3-235b-a22b-2507")
+        default_factory=lambda: ModelRoute("openrouter", "meta/muse-spark-1.3-contributor")
     )
     referee: Union[ModelRoute, List[ModelRoute]] = field(
-        default_factory=lambda: ModelRoute("openrouter", "qwen/qwen3-235b-a22b-2507")
+        default_factory=lambda: ModelRoute("openrouter", "meta/muse-spark-1.3-contributor")
     )
 
     # Global settings
     temperature: float = 0.7
-    max_tokens: int = 2000
+    max_tokens: int = 3000
     max_tokens_by_task: dict[str, int] = field(default_factory=dict)
 
     # Reasoning level for models that emit reasoning tokens, passed to
-    # providers that accept it (currently OpenRouter). None omits the field, so
-    # every model stays on its own default and existing scenarios are
-    # unaffected.
+    # providers that accept it (currently OpenRouter). The default is
+    # "minimal": the default model (muse-spark) reasons mandatorily, and at
+    # its default effort it spends ~5x the tokens and wall clock for the same
+    # answer – and can exhaust max_tokens on reasoning alone, returning
+    # nothing parseable. Scenarios pinning non-reasoning instruct models are
+    # unaffected in practice (there is nothing to economise), and a scenario
+    # can still set any provider-named level explicitly.
     #
     # It matters more than its size suggests. A model whose reasoning is
     # mandatory spends output tokens on it whether or not the step needs
@@ -279,7 +283,7 @@ class LLMConfig:
     # and 5.5x the wall clock for the same answer. It is also what decides
     # whether such a model fits llm.max_tokens at all -- at 3000 the events
     # step exhausted the budget on reasoning and returned nothing parseable.
-    reasoning_effort: Optional[str] = None
+    reasoning_effort: Optional[str] = "minimal"
 
     # Provider-native structured outputs for the events step.
     #   "auto"  – try structured; on "unsupported" fall back silently to the
@@ -331,7 +335,7 @@ class LLMConfig:
             return self.actors
 
         # Dict case
-        default_route = ModelRoute("openrouter", "google/gemini-3-flash-preview")
+        default_route = ModelRoute("openrouter", "meta/muse-spark-1.3-contributor")
         result = self.actors.get(actor_id, self.actors.get("default", default_route))
         return result
 

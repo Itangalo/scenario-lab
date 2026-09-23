@@ -224,7 +224,7 @@ def test_old_style_model_config_sets_summary_and_referee(tmp_path):
     assert config.llm.metrics == ModelRoute("openrouter", "legacy-model")
     assert config.llm.summary == ModelRoute("openrouter", "legacy-model")
     assert config.llm.analysis == ModelRoute("openrouter", "legacy-model")
-    assert config.llm.referee == ModelRoute("openrouter", "qwen/qwen3-235b-a22b-2507")
+    assert config.llm.referee == ModelRoute("openrouter", "meta/muse-spark-1.3-contributor")
 
 
 def test_workshop_block_loads(tmp_path):

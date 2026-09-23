@@ -893,8 +893,8 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
     # Parse LLM configuration
     llm_data = data.get("llm", {})
 
-    _default_main = "openrouter:google/gemini-3-flash-preview"
-    _default_cheap = "openrouter:qwen/qwen3-235b-a22b-2507"
+    _default_main = "openrouter:meta/muse-spark-1.3-contributor"
+    _default_cheap = "openrouter:meta/muse-spark-1.3-contributor"
 
     # structured_outputs: accept YAML strings or native booleans, normalize to
     # the canonical "auto" | "true" | "false" strings the model validates.
@@ -906,7 +906,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
     _structured = _normalize_structured(llm_data.get("structured_outputs", "auto"))
     _probability_samples = llm_data.get("probability_samples", 1)
     _call_timeout = llm_data.get("call_timeout_seconds", 300)
-    _reasoning_effort = llm_data.get("reasoning_effort")
+    _reasoning_effort = llm_data.get("reasoning_effort", "minimal")
     if _reasoning_effort is not None:
         _reasoning_effort = str(_reasoning_effort).strip().lower() or None
     _model_limits = parse_model_limits(llm_data.get("model_limits"))
@@ -924,7 +924,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
             analysis=parse_route(llm_data.get("analysis", llm_data.get("summary", _m))),
             referee=parse_route(llm_data.get("referee", _default_cheap)),
             temperature=llm_data.get("temperature", 0.7),
-            max_tokens=llm_data.get("max_tokens", 2000),
+            max_tokens=llm_data.get("max_tokens", 3000),
             max_tokens_by_task=llm_data.get("max_tokens_by_task", {}),
             structured_outputs=_structured,
             probability_samples=_probability_samples,
@@ -945,7 +945,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
             ),
             referee=_parse_routes_field(llm_data.get("referee", _default_cheap)),
             temperature=llm_data.get("temperature", 0.7),
-            max_tokens=llm_data.get("max_tokens", 2000),
+            max_tokens=llm_data.get("max_tokens", 3000),
             max_tokens_by_task=llm_data.get("max_tokens_by_task", {}),
             structured_outputs=_structured,
             probability_samples=_probability_samples,

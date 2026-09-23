@@ -102,8 +102,10 @@ Draft in this order (each file informs the next):
 5. `metric-rules.md` – starting "physics"; few, clear, quantitative. See
    **Writing metric-rules.md** below for the form; it is the file that most
    often reads well and works badly.
-6. `scenario.yaml` – config; start with cheap models (e.g.
-   `openrouter:qwen/qwen3-235b-a22b-2507`), consider `rule_evolution.freeze_until_turn: 2`,
+6. `scenario.yaml` – config; the framework defaults already give you
+   `openrouter:meta/muse-spark-1.3-contributor` with `reasoning_effort: minimal`
+   and `max_tokens: 3000` on every task, so omit `llm` unless a task needs
+   otherwise. Also consider `rule_evolution.freeze_until_turn: 2`,
    and consider `emergent_events.enabled: true` (the purpose is exploring
    unknown futures) and `llm.probability_samples: 3` for better probabilities.
    Include a `research_questions:` block: copy the entry proposed in
