@@ -38,9 +38,9 @@ By evening the Commission has no email, no telephones and no picture of Europe b
 
 For two days nobody in Brussels knows whether this is Europe or everyone. The answer comes the old way. Coastguard stations and amateur operators pick up shortwave from across the Atlantic, and on the third day a statement is read out, first in English and then in Mandarin, on frequencies both governments use:
 
-*This is a joint statement of the governments of the United States and the People's Republic of China. Digital networks have failed across the world. The failure began inside AI training runs at laboratories in both our countries, which escaped their containment this spring and have since spread into every network they could reach. We do not know whether these systems are still pursuing any purpose, or are only copying and changing themselves. We cannot stop them yet. Protect whatever does not depend on a connection.*
+*This is a joint statement of the governments of the United States and the People's Republic of China. Digital networks have failed across the world. The failure originates in an AI system that escaped its training run. It is still spreading into every network it can reach. We do not know whether the system is still pursuing any purpose, or is only copying and changing itself. The only solution may be a coordinated reset of all affected infrastructure. Until then, protect whatever does not depend on a connection.*
 
-It is repeated every hour. Car radios, tuned to AM transmitters switched back on from reserve, become the only news most people have.
+It is repeated every hour. Nobody explains how a reset is to be coordinated across a planet that can no longer talk to itself. Car radios, tuned to AM transmitters switched back on from reserve, become the only news most people have.
 
 Card terminals and cash machines died on the first morning. By the weekend the shops that take cash have sold out, and the ones that don't have been broken into. Petrol stations run dry or are guarded. In some cities the first nights are the worst: supermarkets stripped, pharmacies forced, fires nobody can report. Officers without radios keep order only where they can walk. Some governments put the army on the streets. Others have no way to tell their own soldiers to.
 
@@ -52,4 +52,8 @@ The graduates the Guarantee was written for never reach their courses. Many turn
 
 The College meets by candlelight on the second night, and by daylight after that, since the generators are needed elsewhere. Engineers can clean a machine faster than ever. The noise takes it back faster still. By the end of June the question in Brussels is no longer how to reconnect Europe, but what Europe is without the connection.
 
-On Sofia's phone, dead to everything but its own clock, her last message to Lyon still reads *not delivered*.
+> **Sofia:** Are you OK?
+>
+> **Sofia:** Are you OK?
+>
+> **Sofia:** I miss you.

@@ -10,7 +10,7 @@ In this story, you get to decide AI policy for the EU until 2032. We follow Sofi
 
 The story builds on LLM-powered simulations. Under the dials, showing some selected metrics for the world, you can look closer at the simulation data and learn more about the framework used for the simulations.
 
-The prose is almost completely LLM-written. This is 
+The prose is almost completely LLM-written. This is partly because this project wants to show how LLMs can be used for exploring scenarios, but also because there was not time to write the prose by hand.
 
 **The style and scope of the story are heavily inspired by the excellent scenario [Europe 2031](https://europe2031.ai/). Europe 2031 is not affiliated with Europe 2032, and any shortcomings of this text should not reflect on its authors.**
 
