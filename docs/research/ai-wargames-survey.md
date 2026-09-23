@@ -1,10 +1,12 @@
 # AI scenarios and wargames worth emulating in Scenario Lab (ECHO 2026-09-23)
 
-Web survey of published AI wargames, tabletop exercises and scenario families, with notes on how each maps onto Scenario Lab constructs (actors, metrics, events, variants, live mode). Researched 2026-09-23; links verified live that day. Next step already decided: frame and build an Intelligence Rising analogue (see last section).
+Web survey of published AI wargames, tabletop exercises and scenario families, with notes on how each maps onto Scenario Lab constructs (actors, metrics, events, variants, live mode). Researched 2026-09-23; links verified live that day. Next step already decided: frame and build an Intelligence Rising analogue (see last section). (ECHO 2026-09-23: built the same day as `scenarios/intelligence-rising/` – emulated, not yet verified, see item 1.)
 
 ## Ranked candidates
 
-### 1. Intelligence Rising (CSER/FHI) – top pick, slated for build
+### 1. Intelligence Rising (CSER/FHI) – top pick, emulated 2026-09-23 (ECHO 2026-09-23)
+
+Status: emulated as `scenarios/intelligence-rising/` (4 actors, 6 metrics, 14 events, validated + smoke-tested + prompt sign-off generated), but not yet verified against the original – no TSG review, no batch comparison, Johan has not inspected the hand-off documents. Treat emulation fidelity as unconfirmed until then.
 
 The original AI strategy roleplay (Avin et al. 2020): 4+ stakeholders (US, China, Google, Microsoft, Baidu, Tencent) racing up a four-level tech tree to radically transformative AI (RTAI – either agentic AGI or Drexlerian Comprehensive AI Services). Mechanics cover R&D investment, product deployment, safety research, espionage/sabotage, and policy-making including international agreements. Later versions added a "Policy Tree" of frontier-AI governance policies (games with it were excluded from the analysis below) and an online adaptation.
 

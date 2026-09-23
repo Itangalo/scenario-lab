@@ -39,4 +39,5 @@ Under what conditions does a US–China frontier-AI race end in negotiated, veri
 - Minor nuance: turn-3 narrative invoked Defense Production Act funds during the blockade – crisis use, acceptable, but watch for DPA normalisation in longer runs (ledger C3).
 - Sign-off run (run-20260923-085922) + `render_signoff.py`: all 4 documents. Every coverage-table NO accounted for: other actors' sections (sampled actor only – US gov prompt verified directly from llm-io, correct per-actor interpolation); 5 gated events (Eligible exclusion at low capability/agreement, proven live in the smoke run); metric-rules title line (content rendered); research-question.md (documentation by design, machine-readable via scenario.yaml).
 - Known framework limitation for the TSG demo: all actors share one world state – IR's truly private facilitator resolution is narrated secrecy here (constitution invariant 6), not hidden information.
-- Signed off 2026-09-23. Regenerate sign-off after any change to templates, overrides, or background files.
+- Status: assistant-reviewed 2026-09-23. Johan's inspection of the hand-off (sign-off) documents is still pending – nothing here counts as human-signed-off until he has read them.
+- Regenerate sign-off after any change to templates, overrides, or background files.
