@@ -1,1 +1,0 @@
-Secure independent European AI capability and control

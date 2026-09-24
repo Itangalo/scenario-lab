@@ -1,1 +1,0 @@
-Secure sovereign resilience through independent control, anticipatory defence, and collective assurance
