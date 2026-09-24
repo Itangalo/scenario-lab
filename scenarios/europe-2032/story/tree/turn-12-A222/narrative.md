@@ -15,7 +15,7 @@ allow: 22 01:05
 
 Within weeks the war is in Europe's waters and skies. A cable landing on the Atlantic goes dark, a North Sea interconnector trips, and the airspace over the eastern Mediterranean closes. Nobody asks Brussels whether it wants to be involved.
 
-The Council answers with a declaration few would have imagined a year earlier: the Union will not be a belligerent. There will be no bases for offensive strikes and no transit for munitions, and ports and airspace are closed to attacks. Sofia's note that week is the Wartime Non-Belligerency and Infrastructure Survival Shield. ENISA and the military staff stand up a joint crisis cell, and grid and telecom operators disperse their backups, pool clean system images, and rehearse running hospitals, grids and payments by hand.
+The member governments answer with a declaration few would have imagined a year earlier: the Union will not be a belligerent. There will be no bases for offensive strikes and no transit for munitions, and ports and airspace are closed to attacks. Sofia's note that week is the survival shield, to keep infrastructure running through the war. ENISA and the military staff stand up a joint crisis cell, and grid and telecom operators disperse their backups, pool clean system images, and rehearse running hospitals, grids and payments by hand.
 
 The defences pushed out in the autumn prove their worth at once. Hospitals that have only just returned to networked scheduling stay up through the first wave of opportunistic intrusions.
 

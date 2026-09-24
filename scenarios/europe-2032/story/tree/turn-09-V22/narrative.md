@@ -11,7 +11,7 @@ allow: 24 16
 
 # The lights go out of order
 
-The second windless freeze arrives in November and does what the first had threatened. Demand surges and the interconnectors saturate. On the evening of 24 November 2030, operators in two western member states shed load outside the agreed sequence, and for ninety minutes whole suburbs go dark without warning. For a day afterwards, timetables, clinic bookings and mobile coverage run on paper and generators.
+The second windless freeze arrives in November and does what the first had threatened. Demand surges and the power lines between countries fill up. On the evening of 24 November 2030, grid operators in two western member states cut power out of the agreed order, and for ninety minutes whole suburbs go dark without warning. For a day afterwards, timetables, clinic bookings and mobile coverage run on paper and generators.
 
 > **Claire:** my whole street went dark for an hour and a half
 > **Claire:** i was on shift. hospital islanded. the lights never even flickered here
@@ -22,15 +22,15 @@ The second windless freeze arrives in November and does what the first had threa
 
 Brussels has its answer already printed. The continuity programme finishes rolling out its spares, offline clinical folders and wastewater sampling just as the cascade hits, and Sofia's new Emergency Winter Load-Shedding Pact and Municipal Islanding Kits order the same triage again: homes and hospitals protected, large computing curtailed first, daily technical notes, relief paid from reshuffled cohesion funds.
 
-It works, narrowly. The hospitals island, the water holds, the ports stay open. The data-centre operators again denounce forced downtime, the mayors again say the money is relabelled, and Sweden sells balancing power at a price that makes the evening news. Voters see not collapse but rationing made routine, for the second winter running.
+It works, narrowly. The hospitals "island", running on their own power; the water holds, the ports stay open. The data-centre operators again denounce forced downtime, the mayors again say the money is relabelled, and Sweden sells balancing power at a price that makes the evening news. Voters see not collapse but rationing made routine, for the second winter running.
 
 While technicians truck generators, two laboratory announcements travel faster.
 
 > **December 2030.** An American laboratory publishes a battery electrolyte family designed largely by its own models and validated in the cell.
 >
-> **December 2030.** A near-frontier open release leaks, then launches. Within days the safety-trained version and a stripped one are both circulating, and nobody can say which is downloaded more.
+> **December 2030.** An open model, nearly as good as the best, leaks and then launches. Within days the safety-trained version and a stripped one are both circulating, and nobody can say which is downloaded more.
 
-European institutes can reproduce the checks on the electrolyte, not the run that found it. And freely available tooling that had been months behind the frontier is suddenly weeks behind, running on private hardware across the world, for defenders and attackers alike. The regulators note the irony: during the blackouts, the most capable help available to municipal engineers and clinic staff came from weights no authority can recall.
+European institutes can reproduce the checks on the electrolyte, not the run that found it. And freely available tooling that had been months behind the frontier is suddenly weeks behind, running on private hardware across the world, for defenders and attackers alike. The regulators note the irony: during the blackouts, the most capable help available to municipal engineers and clinic staff came from open models no authority can recall.
 
 ## Note to the President
 
@@ -40,7 +40,7 @@ The short version: we stopped paying for what we could not build, and kept the l
 
 What held:
 
-- The rule. Homes and hospitals first, computing shed first, and we kept to it through two freezes.
+- The rule. Homes and hospitals first, data centres cut first, and we kept to it through two freezes.
 - The islanding. When the suburbs went dark, the hospitals did not.
 - The daily notes. People knew what was happening, even when they hated it.
 
@@ -49,7 +49,7 @@ What did not:
 - The build. There is nothing to show for it, and we chose that.
 - Stockholm. It kept its deal, and now sells us power.
 - The bills. Rationing has become routine, and the protests with it.
-- The frontier. The best tools our engineers used in the dark were weights nobody can recall.
+- The frontier. The best tools our engineers used in the dark were open models nobody can recall.
 
 What is changing:
 

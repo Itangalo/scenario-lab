@@ -12,7 +12,7 @@ next: turn-12-V222
 
 The recovery corps finishes its tour in the autumn. In the cities where the mobile teams bedded in, clinics rebook their patients and grid control rooms clear their queues. The mayors acknowledge the technicians, and then point at the claims window: one form for blackouts, ransomware and now benefit corrections, still waiting for payouts from Brussels.
 
-Sofia tries to answer with a single emergency package, the White-Collar Transition and Trusted Public AI Repair, and the President throws the Commission's remaining weight behind it. It pays wage insurance and short retraining for young coders and analysts, and sets up a redress desk for the benefits affair. The money moves as a reallocation, not a new budget. National employment agencies open transition desks in a dozen of the hardest-hit towns, and the courses in cyber-recovery assistance, care work and grid maintenance fill within days.
+Sofia tries to answer with a single emergency package, the White-Collar Transition and Trusted Public AI Repair, and the President throws the Commission's remaining political capital behind it. It pays wage insurance and short retraining for young coders and analysts, and sets up a redress desk for households cut off by a benefits-scoring system. The money moves as a reallocation, not a new budget. National employment agencies open transition desks in a dozen of the hardest-hit towns, and the courses in cyber-recovery assistance, care work and grid maintenance fill within days.
 
 > **Claire:** the care course at the nursing school got three ex-coders
 > **Claire:** one of them is good. actually good. he reads the patient not the screen
@@ -21,7 +21,7 @@ Sofia tries to answer with a single emergency package, the White-Collar Transiti
 >
 > **Claire:** we're trying. the course is six weeks. the ward is forever
 
-The redress desk is overtaken by the ruling itself.
+The redress desk is overtaken by what the auditors found.
 
 > **October 2031.** Auditors and an ombudsman find that a social-insurance scoring system cut or flagged thousands of households without meaningful human review. The logs existed, and were never read.
 

@@ -10,11 +10,11 @@ next: turn-11-P221
 
 # A success with a guard on it
 
-In the spring of 2031 the Union finally puts its name on something. Sofia's note becomes the European Public Dividend Showcase, and the President moves the Commission's standing off the black-start network and onto it.
+In the spring of 2031 the Union finally puts its name on something. Sofia's note becomes the European Public Dividend Showcase, and the President moves the Commission's political capital off the black-start network and onto it.
 
 > **February 2031.** A justice pilot and two finance ministries publish their figures. On assistants procured in Europe and hosted in Europe, case backlogs clear in weeks rather than months – and the opposition uses the numbers to argue that if the tools work this well, the factories were never needed.
 
-The Commission moves fast for once. An implementing decision credits European procurement and European hosting for the gains, open dashboards go up site by site, Commissioners visit, and the sites are promised European fallback first.
+The Commission moves fast for once. The Commission formally credits European buying and European hosting for the gains, open dashboards go up site by site, Commissioners visit, and the sites are promised European fallback first.
 
 The money moves the other way.
 
@@ -22,11 +22,11 @@ The money moves the other way.
 
 European operators that had been leasing capacity, or waiting on partnered build-outs, find their contracts repriced or withdrawn. Frontier progress does not stop, but it crawls.
 
-> **April 2031.** Another tightening, and the object moves from the chips to what runs on them. Allies keep their volume quotas and their case-by-case servicing approvals; what is new is that model weights above a stated capability need a licence to cross a border at all. Models trained on American accelerators travel under American rules, which is most of what the Union has.
+> **April 2031.** Another tightening, and the object moves from the chips to what runs on them. Allies keep their volume quotas and their case-by-case servicing approvals; what is new is that the files of models above a stated capability need a licence to cross a border at all. Models trained on American AI chips travel under American rules, which is most of what the Union has.
 
 The Hague complies under protest. The talks with Tokyo and Seoul keep going and produce little hardware.
 
-In May Sofia travels with the Commissioner to one of the showcase clinics. The night before, someone sets fire to its generator store. By the time the car pulls in, the fence is scorched black along one side, the store is a shell, and a generator on a trailer with foreign plates is humming in the yard. It came across the border within hours, under the mutual-aid protocol, which completes its term this spring and has never been more visible. Inside, the lobby screen shows the new waiting times in large green figures. The staff are proud of them, and tired. The journalists who came for the dashboard ask about the fire.
+In May Sofia travels with the Commissioner to one of the showcase clinics. The night before, someone sets fire to its generator store. By the time the car pulls in, the fence is scorched black along one side, the store is a shell, and a generator on a trailer with foreign plates is humming in the yard. It came across the border within hours, under the mutual-aid protocol written after the rogue rail agent, which completes its term this spring and has never been more visible. Inside, the lobby screen shows the new waiting times in large green figures. The staff are proud of them, and tired. The journalists who came for the dashboard ask about the fire.
 
 The fire is not the only one. Small groups hostile to AI coordinate arson and vandalism against generator stores, transformer yards and the cabins where the manual operating logs are kept. A few pools are damaged. The police make arrests, and the coverage treats the attackers as locals defending their towns rather than as criminals.
 
@@ -39,6 +39,6 @@ The fire is not the only one. Small groups hostile to AI coordinate arson and va
 
 The black-start drills mean the engineers can work around the lost stores, and the cross-border spares move under reimbursement. Restoration is slow, but it works often enough to be noticed.
 
-Brussels still has almost no standing. The common line holds, just, and the factories and the clinics describe the same position: fenced in, metered from outside, and waiting for money that has not come back.
+Brussels still has almost no political capital. The common line holds, just, and the factories and the clinics describe the same position: fenced in, metered from outside, and waiting for money that has not come back.
 
 By June the Union has a success with its name on it. It has to be guarded at night.

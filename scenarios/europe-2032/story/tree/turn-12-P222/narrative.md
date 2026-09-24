@@ -10,7 +10,7 @@ next: turn-13-P222
 
 # Two sets of books
 
-The first half of 2032 is a holding operation. With no money and no goodwill left to spend, Brussels does not legislate. Sofia recommends nothing new, and the President lends what the Commission has left to the pact, which is kept alive by procedure.
+The first half of 2032 is a holding operation. With no money and no goodwill left to spend, Brussels does not legislate. Sofia recommends nothing new, and the President lends what political capital the Commission has left to the pact, which is kept alive by procedure.
 
 The flat reimbursements for the unmapped micro-stores keep flowing through the civil-protection machinery, with guards only where towns ask for them. Where the holders trust the arrangement, the spares stay in place. Where they do not, a parallel practice hardens: one small declared stock for the inspectors, and the real reserve kept off any list.
 
@@ -33,7 +33,7 @@ The two health-scheduling tools keep running under different names, with manual 
 
 > **April 2032.** Vandalism of grid kits flares again through the spring, mostly minor.
 
-Abroad, the tiered quotas keep biting: licences granted, volumes withheld. The Dutch transit hubs comply, visibly reluctant.
+Abroad, Washington's quotas keep biting: licences granted, volumes withheld. The Dutch ports and airports comply, visibly reluctant.
 
 > **May 2032.** Talk of a crisis in the Taiwan Strait fades. Shipping insurance does not fall.
 

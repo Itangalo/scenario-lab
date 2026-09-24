@@ -16,11 +16,11 @@ The spring brings no pause in the war at sea and in orbit, but it brings two usa
 
 ENISA teams rush it to hospitals, grid operators and municipal registries. For the first time in years, operators report attacks that simply do not cascade.
 
-Sofia wants that window locked into something bigger. With the American laboratories now a state arm and the bilateral hardware deals dead, her note turns to the other middle powers that hold lithography spares, reagents and maintenance capacity. The Middle-Power Repair and Defensive Patch Coalition aligns export-licence lists, bargains for computing access jointly, and shares the evaluation of the new patching tools. As a bloc that can withhold inputs, the Union regains a hearing in Washington and Beijing that it had lost dealing alone.
+Sofia wants that window locked into something bigger. With the American laboratories now a state arm and the bilateral hardware deals dead, her note turns to the other middle powers that hold lithography spares, reagents and maintenance capacity. She proposes a coalition with them: its members line up their export-licence lists, bargain jointly for computing power, and share the testing of the new patching tools. As a bloc that can withhold inputs, the Union regains a hearing in Washington and Beijing that it had lost dealing alone.
 
 > **April 2032.** Slovakia, following Hungary, signs its own supply arrangement on terms that undercut the common line. Its government calls it pragmatism.
 
-The College again chooses quiet containment, through cohesion funds and procurement leverage in bilateral channels, over a public fight. The split still leaks, and the talk shows ask what a coalition is worth if its members shop alone.
+The Commissioners again choose quiet containment over a public fight, leaning on each capital in private with EU regional money and public contracts. The split still leaks, and the talk shows ask what a coalition is worth if its members shop alone.
 
 > **Claire:** we had an attack on the scheduling system tuesday
 > **Claire:** it just. stopped. the patch caught it

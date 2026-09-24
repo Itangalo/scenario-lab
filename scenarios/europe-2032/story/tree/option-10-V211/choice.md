@@ -15,11 +15,11 @@ next: turn-10-V211
 
 Sofia recommends turning the repair crews' improvised workarounds into a standing fallback. Hospitals, emergency dispatch and ports would run on EU-hosted models and offline kits for moving between paper and digital whenever a foreign provider cuts them off, with the bio-sentinels kept on an emergency footing.
 
-It is paid for by reprogramming emergency lines in Digital Europe, the civil protection mechanism and the health emergency authority. ENISA and the Union's computer emergency team turn the embedded repair rosters into standing packs, combining offline backups with EU-hosted open models for triage, prescribing, dispatch and port clearance. They are bought through joint health procurement, without a new vote. Mayors and hospital directors get crews that stay until systems hold, plus the hardened kits already delivered. Votes on the gigafactories are frozen, and so is any retaliation over lithography servicing.
+It is paid for by shifting money within existing EU emergency budgets. ENISA and the Union's computer emergency team make the repair crews permanent and give them ready-made kits, combining offline backups with open models hosted in the EU for triage, prescribing, dispatch and port clearance. The kits are bought through joint health procurement, without a new vote. Mayors and hospital directors get crews that stay until systems hold, plus the hardened kits already delivered. Votes on the gigafactories are frozen, and so is any retaliation over lithography servicing.
 
 The argument is that the Union was cut off once, in February 2027, and nothing has been built since that would stop it happening again. The crews have proved they can hold a town. The fallback makes that holding the default.
 
-The President spends the Commission's political weight on the fallback stack. With almost nothing left to spend, only continuity people can see is worth spending it on.
+The President spends political capital on the fallback stack. With almost nothing left to spend, only continuity people can see is worth spending it on.
 
 What it does not do is staff a single extra ward.
 

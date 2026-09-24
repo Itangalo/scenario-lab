@@ -11,9 +11,9 @@ allow: 09:05 17 15
 
 # Paper shield
 
-At 09:05 on 17 August 2032, the American frontier goes dark for European users. Hospitals, ministries and firms that had quietly kept an API key despite months of warnings find error messages and a one-line notice.
+At 09:05 on 17 August 2032, the American frontier goes dark for European users. Hospitals, ministries and firms that had quietly kept their accounts despite months of warnings find error messages and a one-line notice.
 
-The health emergency teams circulate continuity orders within days, pushing wards onto the European backup stack and the domestic helpers. Where the helpers were already installed, it works, after a fashion. Where teams have to reinstall in the middle of a shift, appointments are lost.
+The health emergency teams circulate continuity orders within days, pushing wards onto the continuity plan's European models and the domestic helpers. Where the helpers were already installed, it works, after a fashion. Where teams have to reinstall in the middle of a shift, appointments are lost.
 
 > **Claire:** someone in admin had kept the american key. it's dead now
 > **Claire:** we reinstalled mid-shift. we lost the afternoon
@@ -28,7 +28,7 @@ The Watch completes its term trying to referee the triage audit. Its re-testing 
 
 Then the scandal spreads beyond the hospitals.
 
-> **October 2032.** An ombudsman, and then a court, find that a scoring system for benefits and insurance systematically cut older claimants and migrants. Human oversight had shrunk to seconds per case. The logs went unread, and the conformity papers were in order.
+> **October 2032.** An ombudsman, and then a court, find that a scoring system for benefits and insurance systematically cut older claimants and migrants. Human oversight had shrunk to seconds per case. The logs went unread, and the compliance paperwork was in order.
 
 Brussels insists that high-risk obligations were breached, not that the law has a gap. Few are persuaded. The headlines call the AI Act a paper shield, the queues lengthen, and ministers distance themselves from any automated decision at all.
 
@@ -36,7 +36,7 @@ In that climate the municipal clinics lean harder into improvisation, with diagn
 
 > **November 2032.** Leaked benchmark chatter about an unreleased system underperforming on precisely the evaluations that gate it, and rising tension around Taiwan lifting shipping premiums, barely register outside the specialist press.
 
-By December care holds where the backup stack and the Watch teams are present, and is distrusted or improvised elsewhere. The diggers are still stopped.
+By December care holds where the European backup models and the Watch teams are present, and is distrusted or improvised elsewhere. The diggers are still stopped.
 
 ## Note to the President
 

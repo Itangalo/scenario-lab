@@ -10,19 +10,19 @@ next: turn-09-A12
 
 # Nominal oversight
 
-The spring belongs to the laboratories. A new generation of systems, trained with far less human steering, arrives on a cadence nobody announced, each release more autonomous in planning and tool use than the last. Researchers speak privately of human oversight becoming nominal. The interpretability cover Brussels had just pressed into public deployments is out of date within weeks.
+The spring belongs to the laboratories. A new generation of systems, trained with far less human steering, arrives on a cadence nobody announced, each release more autonomous in planning and tool use than the last. Researchers speak privately of human oversight becoming nominal. The interpretability result Brussels had just pressed into public services is out of date within weeks.
 
 The bottleneck moves to concrete. Chips, power and fenced ground are now what limits everything, and the construction sites draw the attention: intrusions at night, cut cables, halted works. It is still reported as vandalism, but it persists long enough that civil protection starts guarding two of the sites.
 
 > **April 2030.** The EU's restoration surge closes. Hospitals and utilities with crews came through degraded rather than stopped. Port checks resume in Rotterdam and Hamburg, and audits of robot stop procedures are folded into routine inspections.
 
-The Protocol ends as routine. That is what it was for.
+The robot Protocol ends as routine. That is what it was for.
 
-Sofia's next note is about the one thing that has worked. The Trusted Adoption Dividend puts EU money behind scaling it: shorter queues for scheduling therapies, one-stop permit offices, classroom assistants, all procured on computing anchored in the Union. On paper, anyway. Early videos from the cities that get the money show waiting lists falling. The rollout is partial, and the chips reserved for it do not yet exist in any rack.
+Sofia's next note is about the one thing that has worked: AI in public services. The Trusted Adoption Dividend puts EU money behind spreading it: shorter queues for scheduling therapies, one-stop permit offices, classroom assistants, all bought from operators legally bound to the Union. On paper, anyway. Early videos from the cities that get the money show waiting lists falling. The rollout is partial, and the chips reserved for it do not yet exist in any rack.
 
-> **May 2030.** Czechia unveils its own deal for hyperscale computing capacity, on terms that undercut the Union's common procurement line. Its government calls it pragmatism.
+> **May 2030.** Czechia unveils its own deal with a hyperscaler – one of the giant cloud companies – on terms that undercut what the Union negotiated for all members. Its government calls it pragmatism.
 
-Everywhere else it reads as a Union that cannot hold its members. The College cannot afford a sanctions fight. Sofia's line, adopted, is to offer Dividend money on condition of common terms, which contains the split and does not reverse it.
+Everywhere else it reads as a Union that cannot hold its members. The Commissioners cannot afford a sanctions fight. Sofia's line, adopted, is to offer Dividend money on condition of common purchasing terms, which contains the split and does not reverse it.
 
 > **Claire:** the new scheduling thing is great
 > **Claire:** we actually know when patients are coming
@@ -32,4 +32,4 @@ Everywhere else it reads as a Union that cannot hold its members. The College ca
 >
 > **Claire:** mostly
 
-Washington's allied-access drafting inches forward, and still no European firm has been onboarded. The insurers keep their Taiwan surcharges.
+Washington's allied-access drafting inches forward, and still no European firm has been let in. The insurers keep their Taiwan surcharges.

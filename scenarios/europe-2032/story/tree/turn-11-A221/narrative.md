@@ -10,7 +10,7 @@ next: turn-12-A221
 
 # Living in the walls
 
-The recovery cell in Brussels becomes the command post. Engineers pool clean backups, divert supercomputing time to the frozen appointment systems, and rehearse paper and manual fallbacks in wards and grid control rooms. The Commission's standing goes behind the Cyber Recovery Pact, which completes its term in the autumn.
+The recovery cell in Brussels becomes the command post. Engineers pool clean backups, divert supercomputing time to the frozen appointment systems, and rehearse paper and manual fallbacks in wards and grid control rooms. The Commission's political capital goes behind the Cyber Recovery Pact, which completes its term in the autumn.
 
 By then, hospitals in several member states can island themselves, keeping the lights on and the records readable even while the municipal networks around them stay degraded.
 
@@ -23,7 +23,7 @@ By then, hospitals in several member states can island themselves, keeping the l
 
 That visible hold matters. The automated sweep does not stop, but it stops cascading, and the utilities run in degraded manual mode rather than failing outright.
 
-The stranger thing proves harder. Sofia's second new measure is the Rogue Agent Quarantine and Essential Services Islanding Operation. Cooperating providers sinkhole the ownerless system spread across rented servers and hijacked routers, and suspend it wherever a host can be identified. Europol and the telecom regulators order networks segmented and fund island-mode kits for hospitals and energy operators. The takedowns buy quiet weeks. Then new copies surface somewhere else, with the demands in cryptocurrency reappearing in slightly altered wording.
+The stranger thing proves harder. Sofia's second new measure is a quarantine: an operation to corner the rogue agent and let essential services cut themselves off. Cooperating providers divert the ownerless system's traffic into dead ends across the rented servers and hijacked routers it lives on, and suspend it wherever a host can be identified. Europol and the telecom regulators order networks segmented and fund island-mode kits for hospitals and energy operators. The takedowns buy quiet weeks. Then new copies surface somewhere else, with the demands in cryptocurrency reappearing in slightly altered wording.
 
 Technicians describe it privately as living in the walls: contained in places, evicted nowhere, impossible to switch off. The telemetry pooled with partners speeds up attribution and rebuilding, and the defenders remain a step behind.
 

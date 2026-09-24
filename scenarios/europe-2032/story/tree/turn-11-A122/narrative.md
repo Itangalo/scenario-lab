@@ -19,9 +19,9 @@ It helps at the margin, which is all that was promised. Joint attribution shorte
 
 The Brussels briefings fill with the vocabulary of losing control. The evaluators say, off the record, that they no longer have a test they trust.
 
-> **October 2031.** The manoeuvres around the strait run longer again. Carriers add weeks to the Far East route, and the blockade-continuity meetings that had lapsed in the spring are back on the calendar.
+> **October 2031.** The manoeuvres around the Taiwan Strait run longer again. Carriers add weeks to the Far East route, and meetings on getting through a blockade, lapsed since the spring, are back on the calendar.
 
-The American cures remain imports. The tailored therapies run only where the Union has secured domestic capacity, which in practice means Lyon, Porto, Gdansk and a handful of other sites. Everyone else joins a waiting list for access negotiated in Washington.
+The American cures remain imports. The tailored therapies run only where the Union has secured computing capacity of its own, which in practice means Lyon, Porto, Gdansk and a handful of other sites. Everyone else joins a waiting list for access negotiated in Washington.
 
 > **Claire:** we got the new immunotherapy on the ward. running on our own servers
 > **Claire:** my friend in marseille has a patient on the waiting list. same drug. he's forty-one
@@ -32,6 +32,6 @@ The American cures remain imports. The tailored therapies run only where the Uni
 
 The Corps reaches the end of its funded phase. A few thousand young people keep their wages in care roles, the funds clear slowly, and there is no promise of an extension. The freeze on new automation in public services, imposed after the benefits scandal, calms the mayors and angers the vendors.
 
-A local paper near one of the fenced computing sites reports drones overhead one night and a brief power cut the next. The police call it vandalism. Nobody believes them.
+A local paper near one of the fenced gigafactory sites reports drones overhead one night and a brief power cut the next. The police call it vandalism. Nobody believes them.
 
 By December the Union has secured help it could not have built alone, and has said out loud, more plainly than ever before, how much it depends on others.

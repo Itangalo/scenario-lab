@@ -12,7 +12,7 @@ review: (ECHO 2026-09-23) rewritten for the promoted run (rep 2)
 
 # Redress without repair
 
-In September it happens again. A court and the ombudsmen find that an automated system used for benefits and for triage next to the courts has wronged thousands of people. Human review had shrunk to seconds a case. The logs were written and never read. And once more, the system had never been classed as high-risk at all. Enforcement worked. The categories missed.
+In September it happens again. A court and the ombudsmen find that an automated system used for benefits and for sorting court cases has wronged thousands of people. Human review had shrunk to seconds a case. The logs were written and never read. And once more, the system had never been classed as high-risk at all. Enforcement worked. The categories missed.
 
 The first time, the rulebook looked out of date. The second time it looks like it was written for another decade.
 
@@ -24,7 +24,7 @@ Sofia's last measure is the Wronged-Citizen Redress and Human Override Hold: joi
 >
 > **Claire:** it's the second letter. the first one said she could walk
 
-The livelihood hold finishes as it was designed to. The telemetry and the fallback drills keep running, and the autumn intrusions again slow the hospitals and ports rather than stopping them.
+The Livelihood Hold finishes as it was designed to. The joint cyber pool's warnings and the fallback drills keep running, and the autumn intrusions again slow the hospitals and ports rather than stopping them.
 
 > **October 2032.** Global investment in AI resets hard. Valuations collapse, announced data-centre projects are cancelled, and hosting contracts European firms had built on disappear.
 >
@@ -45,7 +45,7 @@ The short version: nothing collapsed, and nothing was built. We kept the service
 What held:
 
 - The fallback. Hospitals and ports slowed every time they were hit, and never stopped.
-- The borrowed eyes. The telemetry we joined saw what we could not.
+- The borrowed eyes. The warning feed we joined saw what we could not.
 - The Corps. A few thousand young people have wages. It is not nothing.
 
 What did not:

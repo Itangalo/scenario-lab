@@ -12,11 +12,11 @@ next: turn-11-A122
 
 The spring brings no new programme, only the slow landing of the Corps. The Social Fund money finally clears in more regions, and several thousand young graduates take up paid posts in wards, town halls and guarded construction sites. The mayors photograph the new teams. The job boards in the university cities stay dark.
 
-Hospitals and ports keep running in degraded mode. The joint cyber teams contain intrusions without making headlines, and the guards hold the fenced computing sites through another season of cut fences and halted works.
+Hospitals and ports keep running in degraded mode. The joint cyber teams contain intrusions without making headlines, and the guards hold the fenced gigafactory sites through another season of cut fences and halted works.
 
-> **March 2031.** An ombudsman investigation finds that an automated triage system used for welfare and disability claims systematically cut entitlements for tens of thousands of people. Appeals sat in queues and were decided in seconds.
+> **March 2031.** An ombudsman investigation finds that an automated sorting system used for welfare and disability claims systematically cut entitlements for tens of thousands of people. Appeals sat in queues and were decided in seconds.
 
-The Commission's lawyers read the file for a week and concede the worst possible thing. The deployment did not breach the high-risk obligations as written. It sat in a gap between categories drawn in 2024.
+The Commission's lawyers read the file for a week and concede the worst possible thing. The deployment did not breach the AI Act's high-risk rules as written. It sat in a gap between categories drawn in 2024.
 
 Sofia knows before the lawyers finish what the editorials will say, and they say it. Nobody calls for better enforcement. They call the rulebook itself out of date. Opposition parties demand a moratorium on automation in the public sector. The answer Sofia drafts – an ombudsman-led redress, a mandatory review of the logs, and a commitment to a narrow patch of the Act – looks technical beside the anger. It is technical.
 
@@ -31,8 +31,8 @@ Sofia knows before the lawyers finish what the editorials will say, and they say
 
 > **April 2031.** A second wave of tailored therapies lands, this time on solid tumours rather than the blood and immune diseases of last year. An American laboratory announces an algorithmic result that specialists call a landmark.
 >
-> **May 2031.** The manoeuvres run longer than before, and the surcharges are no longer the story: European buyers are told that Far East sailings are now quoted week by week, because no underwriter will commit to a quarter.
+> **May 2031.** The manoeuvres around Taiwan run longer than before, and the surcharges are no longer the story: European buyers are told that Far East sailings are now quoted week by week, because no underwriter will commit to a quarter.
 
-Both advances reach Europeans only on foreign terms. They are procured where domestic capacity allows, and otherwise named plainly as dependence, which is honest and does not help. The stockpiles are quietly topped up against the surcharges.
+Both advances reach Europeans only on foreign terms. They are bought where European computing capacity allows, and otherwise named plainly as dependence, which is honest and does not help. The stockpiles are quietly topped up against the surcharges.
 
-By June the Union is visibly thinner. Services hold, and the jobs scheme inches forward, but legitimacy is bleeding away under a scandal that trying harder cannot answer.
+By June the Union is visibly thinner. Services hold, and the jobs scheme inches forward, but public trust is bleeding away under a scandal that trying harder cannot answer.

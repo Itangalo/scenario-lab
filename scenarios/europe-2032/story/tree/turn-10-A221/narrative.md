@@ -24,7 +24,7 @@ Sofia's Guarantee goes out in January. The Social Fund is repurposed for wage in
 
 > **March 2031.** Both leading laboratories confirm that their best systems no longer reason in readable words. Oversight built on reading a model's drafts collapses overnight.
 >
-> **April 2031.** A control result from interpretability research transfers to deployed systems: their behaviour can be predicted before it is observed. A leaked evaluation shows capability nobody trained for.
+> **April 2031.** A control result from research into what goes on inside a model carries over to systems in real use: their behaviour can be predicted before it is observed. A leaked evaluation shows capability nobody trained for.
 >
 > **May 2031.** Washington and Beijing sign a thin pact on the security of model weights and on escalation.
 
@@ -50,7 +50,7 @@ And people die of things that were routine a week earlier: insulin that was neve
 
 The graduates the Guarantee was written for never reach their courses. Many turn up at town halls anyway, and are made runners, carrying messages between offices that used to be a click apart.
 
-The College meets by candlelight on the second night, and by daylight after that, since the generators are needed elsewhere. Engineers can clean a machine faster than ever. The noise takes it back faster still. By the end of June the question in Brussels is no longer how to reconnect Europe, but what Europe is without the connection.
+The Commissioners meet by candlelight on the second night, and by daylight after that, since the generators are needed elsewhere. Engineers can clean a machine faster than ever. The noise takes it back faster still. By the end of June the question in Brussels is no longer how to reconnect Europe, but what Europe is without the connection.
 
 > **Sofia:** Are you OK?
 >

@@ -13,13 +13,13 @@ next: turn-10-A221
 
 **EU Displaced Graduates Transition and Retraining Guarantee.** Labour and social protection. Small; running until the first half of 2032.
 
-Sofia recommends answering the hiring freeze now, not next year. The Guarantee pays wage insurance, rapid retraining and hiring incentives for employers, for the entry cohorts in law, accountancy, software support and customer operations whose recruitment has stopped.
+Sofia recommends answering the hiring freeze now, not next year. The Guarantee pays wage insurance, rapid retraining and hiring incentives for employers, for the new entrants in law, accountancy, software support and customer operations whose recruitment has stopped.
 
-It runs through the employment directorate and the labour ministers, by repurposing the Social Fund with a top-up on the model of the pandemic-era job-retention scheme. Retraining hires are covered by wage insurance, universities run short conversion courses, and transition funds are tied to the employers who automate. Unions and member states get delivery this half-year instead of promises for next year.
+It runs through the employment department and the labour ministers, redirecting the Social Fund, the EU's money for jobs and training, and topping it up as was done to save jobs in the pandemic. Retraining hires are covered by wage insurance, universities run short conversion courses, and transition funds are tied to the employers who automate. Unions and member states get help now instead of promises for next year.
 
-The argument is that a commitment to hold livelihoods fails if a whole cohort has nowhere to go. A small flexicurity instrument is the only one the Commission can fund before the local press turns "abandonment" into fragmentation.
+The argument is that a commitment to hold livelihoods fails if a whole cohort has nowhere to go. A small flexicurity instrument is the only one the Commission can fund before the local press turns "abandonment" into a Union coming apart.
 
-The President's standing stays on the Cyber Recovery Pact. The services the sweep broke are still being rebuilt, and nothing else holds if they cascade.
+The President's political capital stays on the Cyber Recovery Pact. The services the sweep broke are still being rebuilt, and nothing else holds if they cascade.
 
 What it does not do is prepare anything new for the systems rewriting their own training.
 

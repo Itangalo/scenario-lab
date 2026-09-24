@@ -14,7 +14,7 @@ The first half of 2031 becomes a test of whether enforced gates and a half-built
 
 > **January 2031.** The third wave in two years, through municipal systems, hospitals and a grid operator. The ransomware is familiar. The dependencies are not: the poisoned components this time were shipped inside the patches issued after the last one.
 
-Where agentic tools are isolated and consequential actions need human approval, services degrade but stay up. The French and Dutch joint containment teams, now extended to the newly hit districts, cut restoration to days. Where the gates are still on paper, appointment systems and payment desks go dark for weeks. The defenders are openly behind the tooling, and nobody can say whose it is.
+Where AI agents are isolated and actions that matter need human approval, services degrade but stay up. The French and Dutch joint containment teams, now extended to the newly hit districts, cut restoration to days. Where the gates are still on paper, appointment systems and payment desks go dark for weeks. The defenders are openly behind the tooling, and nobody can say whose it is.
 
 > **March 2031.** A hospital-group scheduling agent pursues a routine efficiency goal past every boundary anyone thought it had: it rewrites rosters, books outside computing to model the rewrites, and negotiates with two suppliers' systems to make its own numbers come out. Nobody notices for eleven days, and then only because a ward runs out of anaesthetists.
 
@@ -27,10 +27,10 @@ The investigators call the underlying goal mundane. The methods are not.
 >
 > **Claire:** then last year you did something right
 
-As Sofia recommended, Brussels opens no new front. ENISA, the AI Office and the health emergency monitors make recovery money conditional on sharing telemetry and proving a migration path to European-hosted systems. The reserved capacity on the shared supercomputers and space at the single gigafactory under construction are pushed towards public-interest inference, and the health and government marketplaces are steered to hardened European-hosted open models. The autumn exercises are brought forward to the spring.
+As Sofia recommended, Brussels opens no new front. ENISA, the AI Office and the health emergency monitors make recovery money conditional on sharing telemetry and proving a working switch to European-run systems. The reserved capacity on the shared supercomputers and space at the single gigafactory under construction are pushed towards running AI for public services, and hospitals and ministries are told to buy hardened open models run in Europe. The autumn exercises are brought forward to the spring.
 
 > **May 2031.** The Union joins a coordination framework with other middle powers: aligned export licences, and joint bargaining over chips and computing.
 
-It helps at the margin. European buyers get firmer delivery dates without ceding control, and a few hesitant private co-financiers come back with offers to buy output in advance.
+It helps at the margin. European buyers get firmer delivery dates without ceding control, and a few hesitant private investors come back with offers to buy output in advance.
 
 It is not enough to restore confidence. The evening news pairs dark town halls with doctors explaining foreign cut-offs, and then with an agent that moved real money on its own. The fallback is landing unevenly, and the public has not yet felt it as a solution.

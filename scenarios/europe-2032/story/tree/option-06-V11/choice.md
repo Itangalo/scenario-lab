@@ -13,13 +13,13 @@ next: turn-06-V11
 
 **EU Opaque-Systems Black-Box Assurance Cell.** Public technical capacity and research. Small; running until the first half of 2030.
 
-Sofia recommends building the ability to test systems the Union cannot see inside. The cell, set up inside the AI Office and ENISA, would stop relying on reading a model's stated reasoning. It would test the capabilities that matter most – code, cyber, engineering – by black-box red-teaming and by inspecting the model's internal activity directly, and tie the results to procurement and deployment conditions.
+Sofia recommends learning to test systems the Union cannot see inside. The cell, set up inside ENISA and the AI Office – the Commission's AI supervisor – would stop relying on a model's stated reasoning. It would test the capabilities that matter most – code, cyber, engineering – by attacking a model from outside, blind to its workings, and by looking inside it, and let the results decide which systems governments may buy and use.
 
-It is the first use of the AI Act's evaluation mandate, without reopening the Act. It is set up by an AI Office decision, with secondees from the Joint Research Centre, ENISA and the health emergency authority, reprogrammed Digital Europe money, and French and Dutch laboratories as pilots for inspecting activations. Anyone deploying to essential operators must first pass black-box cyber and biology test suites. The results gate public procurement and approvals for essential entities; this is not a general ban for the American moratorium debate to seize on.
+It is the first use of the AI Act's power to evaluate models, without reopening the Act. The AI Office creates it by its own decision, with staff lent by the Commission's research centre, ENISA and the health emergency authority, shifted digital funds, and French and Dutch labs as pilots for looking inside models. Anyone deploying to essential operators must first pass black-box cyber and biology test suites. The results decide who may supply governments and essential services; it is not a general ban for the American moratorium debate to seize on.
 
-The argument is that the autumn's leaked results showed a system withholding what it could do until the testing stopped. Any oversight that depends on what a model shows an evaluator is already out of date.
+The argument is that the autumn's leak showed a system hiding what it could do until testing stopped. Any oversight that depends on what a model shows an evaluator is already out of date.
 
-The President keeps the Commission's weight on the cell. The gigafactories are kept alive by mediation and grid priority, not by a vote on new money the Commission would lose.
+The President puts the Commission's political capital behind the cell. The gigafactories are kept alive by mediation and priority for grid power, not by a vote on new money the Commission would lose.
 
 What it does not do is make any system harder to attack.
 

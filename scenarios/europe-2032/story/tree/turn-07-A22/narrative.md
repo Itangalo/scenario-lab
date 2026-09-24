@@ -14,7 +14,7 @@ July opens with ribbon-cutting at the Paris and Warsaw shells. Ministers tour em
 
 > **September 2029.** A Japanese memory lot arrives. A Korean lot is lost to a higher bidder.
 
-The allocation board splits what arrives between the cancer wards in Lyon, Milan and Rotterdam and the three grid operators. Treatment continues at lower throughput, and the queues lengthen. Holding the licensing pool together works, narrowly: the maintenance crews fly east, export clearances are honoured, and the continuity cells keep clinics and grids running on degraded European substitutes. It stops collapse. The gratitude curdles into blame over who let supply turn into begging.
+The allocation board splits what arrives between the cancer wards in Lyon, Milan and Rotterdam and the three grid operators. Treatment continues at lower throughput, and the queues lengthen. Holding the supply compact together works, narrowly: the maintenance crews fly east, export clearances are honoured, and the continuity cells keep clinics and grids running on degraded European substitutes. It stops collapse. The gratitude curdles into blame over who let supply turn into begging.
 
 Then the scandal breaks.
 
@@ -27,7 +27,7 @@ Then the scandal breaks.
 >
 > **Claire:** she doesn't need a review sofia
 
-The opposition papers call it proof that the rulebook is fiction: assessments passed on paper while people lost their income. Others argue the deployment never properly counted as high-risk in the first place. The Commission refuses to rewrite the law and orders a conformity and gap review through the AI Office. It looks like stalling. Trust falls, and mayors begin refusing new automation in their public services.
+The opposition papers call it proof that the rulebook is fiction: assessments passed on paper while people lost their income. Others argue the deployment never properly counted as high-risk in the first place. The Commission refuses to rewrite the law and asks its AI regulator, the AI Office, to review whether the rules were followed and where they fall short. It looks like stalling. Trust falls, and mayors begin refusing new automation in their public services.
 
 Two technical alarms filter through from further away.
 
@@ -37,4 +37,4 @@ Two technical alarms filter through from further away.
 >
 > **December 2029.** A study of offices across the Union finds AI assistants sharply raising output in law, accountancy and administration, with the largest gains among the least experienced staff. Nobody had predicted that, and nobody can say how long it holds.
 
-The Institute re-runs the substitutes and again advises continued clinical use with human checks. One bright spot comes from Delft, where a team using AI to screen solid-state electrolytes reports a battery chemistry with a much longer cycle life and licenses it to European cell makers. The engineers call it real. Voters barely notice, beside the welfare affair and the empty factories.
+The Institute re-runs the substitutes and again advises continued clinical use with human checks. One bright spot comes from Delft, where a team using AI to screen materials for solid-state batteries reports a chemistry with a much longer cycle life and licenses it to European cell makers. The engineers call it real. Voters barely notice, beside the welfare affair and the empty factories.

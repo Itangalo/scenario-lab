@@ -15,11 +15,11 @@ next: turn-10-A111
 
 Sofia recommends putting what the Union already has under protection before anything else happens to it: the chip plants, the cables, the grid works for the two gigafactory sites, and the certified computing that the hospitals now run their triage and therapies on.
 
-The Shield brings guarded repair crews for the grid connections, priority power for hospitals and certified clinical computing, and cross-border failover for cables and data centres, so that when one goes down its load moves to another. It runs through the energy solidarity and civil protection mechanisms, with the grid operators' network, ENISA and the energy directorate doing the work. It is paid for out of the Shield and Guarantee envelopes that already exist, because a new ask is one the finance ministers would veto.
+This lights-on plan brings guarded repair crews for the grid connections, priority power for hospitals and their certified computers, and backup across borders for cables and data centres, so that when one goes down its load moves to another. The grid operators, ENISA and the Commission's energy department do the work, under the EU's schemes for energy solidarity and civil protection. It is paid for from budgets that already exist, the old Shield's and the jobs Guarantee's, because a new ask is one the finance ministers would veto.
 
 The argument is that everything the Union has built in four years is now physical, and physical things can burn. The fires at the robot sites have shown how easily, and nothing else on the books protects the rest.
 
-The President spends the Commission's political weight on the middle-power club. Only pooled chips, power and evaluation access keep Rome inside the tent and the therapies flowing.
+The President puts the Commission's political capital behind the middle-power club. Only pooled chips, power and access to model testing keep Rome inside the tent and the therapies flowing.
 
 What it does not do is build anything new.
 

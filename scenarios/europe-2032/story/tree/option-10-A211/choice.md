@@ -13,14 +13,14 @@ next: turn-10-A211
 
 **EU Neutrality Shelter and Lifeline Continuity.** Preparedness and resilience. Running until the second half of 2032.
 
-Sofia recommends preparing the Union to stay out of a war between the United States and China, a war the strait has been threatening since the quarantine in 2028, and to keep its lifelines running if one comes.
+Sofia recommends preparing the Union to stay out of a war between the United States and China, a war threatened since the Taiwan Strait was closed to chip shipments in 2028, and to keep its lifelines running if one comes.
 
-Non-belligerency would be declared in advance, and offensive use of any infrastructure on Union soil denied. Clean backups are dispersed. Cable landing points and grid switchgear are hardened with the new European alloys, and the Estonian, French and German reserve teams are extended into standing mutual aid. The Transition Shield and the bio-detection network run as lifelines, and the Union negotiates licences to manufacture the new therapies on infrastructure it runs itself, so that the next cure does not arrive as pure dependence.
+The Union would declare in advance that it takes no side, and deny offensive use of any infrastructure on its soil. Clean backups are dispersed. Undersea cable landings and grid switchgear are hardened with the new European alloys, and the Estonian, French and German reserve teams are extended into standing mutual aid. The Transition Shield and the bio-detection network run as lifelines, and the Union negotiates licences to manufacture the new therapies on infrastructure it runs itself, so that the next cure does not arrive as pure dependence.
 
 The argument is that every lifeline Europe has – cables, chips, medicines – runs through or past the strait. When it closes for good, what matters is what is still standing.
 
-The President stakes what standing the Commission has left on the shelter itself.
+The President stakes what political capital the Commission has left on the shelter itself.
 
 What it does not do is bring Europe any closer to the frontier.
 
-*All twenty simulated responses to this situation built a shelter of this kind. Twelve put the Commission's standing behind the shelter itself, as this one does. Eight put it behind the care network, the other recommendation.*
+*All twenty simulated responses to this situation built a shelter of this kind. Twelve put the Commission's political capital behind the shelter itself, as this one does. Eight put it behind the care network, the other recommendation.*

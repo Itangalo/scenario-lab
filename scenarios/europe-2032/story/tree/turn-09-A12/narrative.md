@@ -13,13 +13,13 @@ allow: 14
 
 > **September 2030.** Within weeks of each other, two American laboratories demonstrate systems that plan several days of work up front, and improve parts of their own training pipelines.
 
-European deployment teams say their evaluation checklists are obsolete on arrival. Human review of frontier behaviour becomes a formality.
+European teams putting AI into service say their testing checklists are out of date on arrival. Human review of what the most capable systems do becomes a formality.
 
-In Brussels the shift is felt in concrete and in queues. The fenced computing sites face another season of cut cables and halted works, now guarded as routine. And law firms, accountancies, software houses and customer-operations centres simply stop hiring juniors. On the maps of graduate unemployment, the university cities turn dark. The argument is over why.
+In Brussels the shift is felt in concrete and in queues. The fenced gigafactory sites face another season of cut cables and halted works, now guarded as routine. And law firms, accountancies, software houses and customer-operations centres simply stop hiring juniors. On the maps of graduate unemployment, the university cities turn dark. The argument is over why.
 
-The Dividend closes on schedule. Where the permit modules and therapy-scheduling assistants are installed on EU-anchored capacity, waiting times fall sharply, and clinics in Lyon, Porto and Gdansk post falling queues. Elsewhere the reserved chips arrive late, installations stall in half the member states, and the side deal stays outside common terms.
+The Dividend for AI in public services closes on schedule. Where the permit tools and therapy-scheduling assistants run on European servers, waiting times fall sharply, and clinics in Lyon, Porto and Gdansk post falling queues. Elsewhere the reserved chips arrive late, installations stall in half the member states, and Czechia's side deal stays outside common terms.
 
-Sofia's answer to the hiring collapse is the Entry-Level Transition and Essential Service Corps: wage insurance for firms that keep and retrain juniors alongside the AI, and paid twelve-month placements in hospitals, municipalities and the guarded build sites. Councils welcome it, and mayors ask for places the same week.
+Sofia's answer to the hiring collapse is the Entry-Level Transition and Essential Service Corps: wage insurance for firms that keep and retrain juniors alongside the AI, and paid twelve-month placements in hospitals, municipalities and the guarded build sites. Town councils welcome it, and mayors ask for places the same week.
 
 Delivery lags the announcement. The funding takes months to clear. The placements number in the thousands against tens of thousands of missing jobs, and firms keep juniors only where the subsidy covers most of the wage. Opposition parties start campaigning openly against data-centre expansion.
 
@@ -48,7 +48,7 @@ What held:
 
 What did not:
 
-- Washington. Two years of drafting, and no European firm onboarded.
+- Washington. Two years of drafting, and no European firm let in.
 - The build. The sites are fenced, guarded and waiting on chips.
 - The graduates. The Corps is thousands of places against tens of thousands of jobs.
 - Czechia. It has its own deal, and our conditions only contain it.

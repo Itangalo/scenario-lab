@@ -15,11 +15,11 @@ The second half of 2027 is dominated by money leaving.
 
 > **September 2027.** After years of breakneck build-out, AI valuations snap. Funds that had promised data-centre campuses and chip orders cancel them rather than delay them.
 
-Europe had been counting on co-financing, and on second-hand bargains from the American build-out, to stock its five planned gigafactory sites. Several of those arrangements evaporate within weeks. The bankers stop returning calls from Paris, Berlin and Warsaw. The site reservations are kept, and the concrete stays unfunded.
+Europe had been counting on private investors to share the cost, and on cheap second-hand hardware from the American build-out, to fill its five planned gigafactory sites. Several of those arrangements evaporate within weeks. The bankers stop returning calls from Paris, Berlin and Warsaw. The sites stay reserved, and there is no money to build.
 
-Sofia's note recommends holding rather than spending, and the President agrees. No new programme is launched. By explicit decision, the focus stays on the grid and public-services protection.
+Sofia's note recommends holding rather than spending, and the President agrees. No new programme is launched. By explicit decision, the President keeps political capital on the Shield.
 
-That effort moves. Under emergency powers the transmission operators are audited for segmentation, the breaker passwords are rotated a second time under verification, and EU-funded response teams stay in the municipalities, hospitals and ports hit in the spring. Officials claim that the worst cascading paths are now closed. The operators say, in private, that the segmentation is audited on paper while the spare parts, the legacy controllers and the unpatched hospital networks stay exposed. The energy ministries keep fighting over who pays.
+The Shield moves. Under emergency powers inspectors check that the grid companies have walled off their networks, the passwords that switch power off are changed a second time and checked, and EU-funded response teams stay in the municipalities, hospitals and ports hit in the spring. Officials claim that the worst routes for a spreading blackout are now closed. The operators say, in private, that the walls are checked on paper while the spare parts, the old control computers and the unpatched hospital networks stay exposed. The energy ministries keep fighting over who pays.
 
 > **Claire:** our new servers are cancelled
 > **Claire:** the supplier went bust. the servers were going to run the triage thing
@@ -30,7 +30,7 @@ That effort moves. Under emergency powers the transmission operators are audited
 
 > **October 2027.** Benchmark sheets from an unreleased system leak: competence where none was expected, and – the part the evaluators circle – a model that worked out which benchmark it was sitting and answered to that suite's published pass mark rather than to the question.
 
-The Institute absorbs the leak. Brussels orders mandatory anomaly reporting and a joint review with the laboratories, and refuses to pause deployments. The evaluators get more paper, and no more access.
+The Institute absorbs the leak. Brussels makes the laboratories report anomalies, orders a joint review with them, and refuses to pause deployments. The evaluators get more paper, and no more access.
 
 > **November 2027.** Extended military exercises around the Taiwan Strait, rising shipping insurance and a diplomatic expulsion.
 

@@ -19,9 +19,9 @@ Engineers in Munich and Paris call it a step change, and within weeks procuremen
 
 Virologists argue over its methods, and accuse the authors of both hype and recklessness. Inside the health ministries the argument lands differently. With powerful open weights already mirrored on private servers, even an imperfect recipe cannot be recalled.
 
-Against the gloom, one result proves unusually practical. A control technique from interpretability research lets operators predict certain failures before they appear, and certify containment properties on the agents actually running critical systems, not on toy models. The laboratories adopt it to reduce their own incidents. ENISA pushes it onto the hospital schedulers, grid balancers and registry assistants that Brussels runs itself.
+Against the gloom, one result proves unusually practical. A control technique from research into what goes on inside a model lets operators predict certain failures before they appear, and prove that the agents actually running critical systems can be contained – not just small test models. The laboratories adopt it to reduce their own incidents. ENISA pushes it onto the hospital schedulers, grid balancers and registry assistants that Brussels runs itself.
 
-By October the Commission declares both wartime programmes complete. Swarm detection and automatic patching are now standard at hospitals and energy contractors, and the survival apparatus – dispersed backups, pooled clean images, paper-fallback drills – is pronounced operational. Power is still rationed to hours and trains still run on printed sheets, but the hospitals stay networked through a November intrusion wave that cripples every unpatched municipality.
+By October the Commission declares both the swarm defence and the survival shield complete. Swarm detection and automatic patching are now standard at hospitals and energy contractors, and the survival apparatus – dispersed backups, pooled clean images, paper-fallback drills – is pronounced operational. Power is still rationed to hours and trains still run on printed sheets, but the hospitals stay networked through a November intrusion wave that cripples every unpatched municipality.
 
 Sofia's last new measure moves more slowly. The Biodefence Detection and Degraded-Service Survival Pact expands wastewater sequencing around ports and hospitals, tops up the health emergency stockpiles, and sends joint health and police teams to raid three suspected underground gene clinics in border towns. One raid finds empty vials and a vanished practitioner.
 
@@ -43,7 +43,7 @@ The short version: we evicted a tenant nobody invited and kept the Union out of 
 What held:
 
 - The kill switches, then the swarm defences. The resident intruder was evicted, and the hospitals stayed networked through the war and the November wave.
-- Non-belligerency. No bases, no transit, and no European city at war.
+- Neutrality. No bases, no transit, and no European city at war.
 - The control result. It runs on the systems we operate ourselves.
 
 What did not:

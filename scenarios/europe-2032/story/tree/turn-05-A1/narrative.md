@@ -19,11 +19,11 @@ The pathogen ebbs unevenly through the autumn. The big cities hold. Claire's wai
 
 The benchmarks fill inboxes in Brussels. What changes the politics is smaller.
 
-A small-town water operator follows the playbook exactly. It finds something on its network, cuts itself off, and in doing so loses remote monitoring of its chlorination for days. Boil-water notices go out. No one falls ill. The local paper blames the mandated procedure, not the intruders it was written for, and within days the major reinsurers pause cover for small utilities. Small utilities can no longer follow the playbook safely, or insure themselves when they do.
+A small-town water operator follows the patch-and-isolate playbook exactly. It finds something on its network, cuts itself off, and in doing so loses remote monitoring of its chlorination for days. Boil-water notices go out. No one falls ill. The local paper blames the mandated procedure, not the intruders it was written for, and within days the major reinsurers pause cover for small utilities. Small utilities can no longer follow the playbook safely, or insure themselves when they do.
 
-Sofia's answer goes to the College in two parts. The playbooks are rewritten with a manual fallback, and the European Investment Bank offers guarantees that carry the worst losses on small-utility cover, so the reinsurers have a reason to come back. The Municipal Trust and Transition Pact follows: retraining, wage bridges, and paid staff for small clinics and utilities. Where the staff arrive, it helps.
+Sofia's answer goes to the Commissioners in two parts. The playbooks are rewritten with a manual fallback, and the European Investment Bank, the EU's own bank, promises to cover the largest claims on small utilities' insurance, so the reinsurers have a reason to come back. Then comes a pact for small towns, the Municipal Trust and Transition Pact: retraining, wage bridges that carry workers between jobs, and paid staff for small clinics and utilities. Where the staff arrive, it helps.
 
-> **8 November 2028.** American voters elect the coalition-builder, who promises structured access to frontier AI for allies on published terms, joint evaluation, and alignment on export controls and standards.
+> **8 November 2028.** American voters elect a candidate who ran as a coalition-builder, promising allies access to the most capable American AI on published terms, joint testing of models, and common export controls and standards.
 
 The relief in the capitals is immediate. Under it runs a quieter fear: with access on offer, who will still want to pay for building at home?
 
@@ -49,9 +49,9 @@ What held:
 
 What did not:
 
-- Small municipalities. They have the kit but not the staff, one isolation cost a town its chlorination monitoring, and the insurers have walked. The Trust Pact is our answer, and it is only starting.
-- The build. The gigafactories are two sites, and the chips to fill them are behind a quarantine.
-- Our leverage over lithography. We have held it for two years and not used it.
+- Small municipalities. They have the kit but not the staff, one town that cut itself off lost its chlorination monitoring, and the insurers have walked. The Trust Pact is our answer, and it is only starting.
+- The build. The gigafactories are two sites, and the chips to fill them are behind the quarantine around Taiwan.
+- Our leverage over ASML's machines. We have held it for two years and not used it.
 
 What is changing:
 

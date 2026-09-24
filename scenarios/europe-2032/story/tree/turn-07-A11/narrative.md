@@ -10,11 +10,11 @@ next: turn-08-A11
 
 # Ribbons, not electricity
 
-In September the two gigafactory sites get their permits and their capital, and Sofia stands behind a minister in a hard hat on an empty field while the photographers work. The grid connection is still in a queue. So are the chips.
+In September the two gigafactory sites get their permits and their funding, and Sofia stands behind a minister in a hard hat on an empty field while the photographers work. The grid connection is still in a queue. So are the chips.
 
-Washington remains cordial and slow. The drafts come back with the audit-rights clauses still in brackets.
+Washington remains cordial and slow. The drafts come back with the audit-rights clauses still unagreed.
 
-> **October 2029.** A new freely downloadable model, close to the best closed one, is mirrored onto hundreds of thousands of machines in days. Filters agreed in Brussels are bypassed within hours.
+> **October 2029.** A new freely downloadable model, close to the best closed one, is mirrored onto hundreds of thousands of machines in days. Safety filters agreed in Brussels are bypassed within hours.
 >
 > **October 2029.** Law firms, accountancies, software support desks and customer-service operators have stopped hiring graduates, a survey of employers finds.
 >
@@ -30,4 +30,4 @@ The robots stand fenced behind shutters, and works councils in Germany and Italy
 
 She asks. Nobody is hiring.
 
-The Trust Pact closes its term in December, with staff in place in some towns and not in others. The one thing that plays well is filmed in clinics, where European triage assistants are cutting waiting lists. It softens the coverage without reversing it.
+The Trust Pact for small towns ends in December, with staff in place in some towns and not in others. The one thing that plays well is filmed in clinics, where European triage assistants are cutting waiting lists. It softens the coverage without reversing it.

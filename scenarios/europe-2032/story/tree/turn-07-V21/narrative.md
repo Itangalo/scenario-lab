@@ -12,9 +12,9 @@ next: turn-08-V21
 
 > **September 2029.** A second large-scale automated intrusion paralyses town halls, clinics and port systems: appointment queues, emergency dispatch backups, container releases. Screens stay dark for days.
 
-The investigators say again that attribution will take months, and that the tooling was written by machines. This time the defence does not only arrive afterwards. Sofia recommends nothing new, and the President's own weight goes behind the repair cell. Its crews stay in the worst-hit municipalities through the autumn, restoring backups and isolating compromised servers.
+The investigators say again that attribution will take months, and that the tooling was written by machines. This time the defence does not only arrive afterwards. Sofia recommends nothing new, and the President's own political capital goes behind the repair cell. Its crews stay in the worst-hit municipalities through the autumn, restoring backups and isolating compromised servers.
 
-> **October 2029.** A new generation of defensive software – automated patching, and detection of swarm behaviour – catches whole classes of attack at machine speed for the first time in years.
+> **October 2029.** A new generation of defensive software – automated patching, and detection that spots swarms of attacks moving together – catches whole classes of attack at machine speed for the first time in years.
 
 It was developed outside Europe, and the crews adopt it quickly and push it out as they work. The mayors who complained that the help left with the headlines now say the crews stayed until the systems held.
 
@@ -27,7 +27,7 @@ It was developed outside Europe, and the crews adopt it quickly and push it out 
 
 The relief is real and partial. The clinics reopen and the ports clear, and many administrations run on fragile workarounds. Trust does not return.
 
-Brussels freezes everything else, and no vote on new money is attempted. In December the gigafactory programme reaches the end of its first build phase: concrete poured, and the first halls fitted at the initial sites. Officials present the first operational capacity as progress beyond paper, and for once it is. The supply-chain compact closes its term with the joint licensing front intact. Solidarity aid from the repair cell is used to coax Warsaw, with its own American deal, back towards the common request to Washington, and the computing front begins to mend.
+Brussels freezes everything else, and no vote on new money is attempted. In December the gigafactory programme reaches the end of its first build phase: concrete poured, and the first halls fitted at the initial sites. Officials present the first operational capacity as progress beyond paper, and for once it is. The supply-chain compact closes its term with the joint licensing front intact. Solidarity aid from the repair cell is used to coax Warsaw, with its own American deal, back towards the common request to Washington, and the common front on computing power begins to mend.
 
 > **November 2029.** Studies from law firms, accountancies, newsrooms and consultancies find measurable productivity gains from AI assistants, especially for junior staff, and no layoffs. The economists note that the gain is largest where the work was most routine and smallest where it was most prized.
 

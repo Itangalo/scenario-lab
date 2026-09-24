@@ -14,11 +14,11 @@ next: turn-06-A11
 
 Sofia recommends taking the incoming administration at its word, and committing for two years to holding the Union's capacity through allied access while rebuilding trust and resilience at home.
 
-The Pact negotiates access to American frontier systems on published terms, with joint evaluation before release and alignment on standards – conditional, in every paragraph, on keeping the two gigafactory sites and the supply chain under construction. The EEAS and the trade and digital directorates carry it through the Foreign Affairs and Trade Councils and the Trade and Technology Council, while competition officials and the European Investment Bank hold state-aid cover so that access does not turn into dependence.
+The access pact seeks the use of the most capable American systems on published terms, with joint testing before release and common standards – conditional, in every paragraph, on keeping the two gigafactory sites and the supply chain under construction. The EU's diplomats and its trade and digital officials carry it to EU foreign and trade ministers and through the EU–US trade and technology forum, while competition officials and the European Investment Bank keep the subsidies for building at home legal, so that access does not turn into dependence.
 
 The argument is that the offer is a window, and windows close. A Union without frontier access cannot absorb the next shock, and a Union that takes the access without conditions will never build anything again.
 
-The President spends the Commission's political weight on the Trust Pact first. Nothing else lands if mayors keep blaming Brussels for boil-water notices and uninsured downtime.
+The President puts the Commission's political capital behind the Trust Pact first. Nothing else lands if mayors keep blaming Brussels for boil-water notices and uninsured downtime.
 
 What it does not do is make the robots stoppable.
 

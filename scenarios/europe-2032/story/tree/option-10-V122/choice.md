@@ -13,13 +13,13 @@ next: turn-10-V122
 
 **EU Joint Cyber Command Accession.** Preparedness and resilience. Running until the first half of 2032.
 
-Sofia recommends full membership of the joint cyber command, with pooled attribution and real-time telemetry, so that containment keeps working when domestic hardware and finance cannot.
+Sofia recommends full membership of the joint cyber command, with shared tracing of attackers and real-time telemetry, so that containment keeps working when domestic hardware and finance cannot.
 
-It goes through the Foreign Affairs and Telecommunications Councils, with ENISA and the Union's own computer emergency team. Attribution and real-time telemetry are pooled under the existing Shield playbooks, and the locked backups and drills for cutting cloud links stay live in the cooperating clinics and municipalities. The trade directorate keeps the joint licensing offer to The Hague, Tokyo and Seoul alive for quotas. No scarce standing is spent pretending the hardware comes back this half-year.
+It goes through EU foreign and telecoms ministers, with ENISA and the Union's cyber emergency team. Tracing and real-time telemetry are pooled under the plans of the Shield, the programme hardening hospitals and grids, and the locked backups and drills for cutting cloud links stay live in the cooperating clinics and municipalities. The Commission's trade department keeps the chip pact's offer to the Netherlands, Japan and Korea alive for guaranteed chip shares. No scarce political capital is spent pretending the hardware comes back soon.
 
-The argument is that protection the Union cannot build alone is within reach, while its own compute is still behind a blockade and its insurers are still waiting for a law. Cyber attacks are what has actually hit the Union, four times in three years, and the command is where attacks are seen first.
+The argument is that protection the Union cannot build alone is within reach, while its own computing power is still behind a blockade and its insurers are still waiting for a law. Cyber attacks are what has actually hit the Union, four times in three years, and the command is where attacks are seen first.
 
-The President's standing stays on the Civic AI Trust and Adoption Repair. With the scandal framed as lawful harm and deployments frozen, nothing survives politically unless civic AI is visibly trustworthy again.
+The President's political capital stays on the Civic AI Trust and Adoption Repair. With the scandal framed as lawful harm and deployments frozen, nothing survives politically unless civic AI is visibly trustworthy again.
 
 What it does not do is cover biological threats.
 

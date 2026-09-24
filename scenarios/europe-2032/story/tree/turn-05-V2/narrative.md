@@ -11,7 +11,7 @@ allow: 8 18
 
 # Leverage on paper
 
-Brussels spends the autumn closing the grid protection drive. Emergency teams stay in the worst-hit hospitals and ports through December, the spare-parts lists are handed to national budgets, and officials declare the programme complete. The operators are blunter: the paths for a cascading blackout are narrower, and the legacy controllers and unpatched clinics are still there.
+Brussels spends the autumn closing the Shield, the programme hardening grids and public services. Emergency teams stay in the worst-hit hospitals and ports through December, the spare-parts lists are handed to national budgets, and officials declare the programme complete. The operators are blunter: the routes for a spreading blackout are narrower, and the old control computers and unpatched clinics are still there.
 
 > **8 November 2028.** American voters elect a candidate who promises to hold advanced AI models as a strategic national asset, with tiered access for foreigners and tighter export reviews.
 
@@ -27,7 +27,7 @@ The result dominates everything else. It lands in European capitals as confirmat
 >
 > **Claire:** that's the worst thing you've ever said to me
 
-With the money gone, and the bankers still absent from the five reserved sites, Sofia's note turns to pooling. The Middle-Power Supply-Chain Compact mandates joint licence alignment with the Netherlands, Japan and Korea, a common request to Washington for computing capacity, and shared testing through the new Institute. A framework of middle powers holding chokepoints in lenses, chemicals and packaging gives Brussels its first joint bargaining table. The Commission's standing goes behind it.
+With the money gone, and the bankers still absent from the five reserved sites, Sofia's note turns to pooling. Under the Middle-Power Supply-Chain Compact, the Union sets export licences together with the Netherlands, Japan and Korea, asks Washington jointly for computing power, and tests models together through the new Institute. Countries that each control an essential step in chip-making – lenses, chemicals, packaging – give Brussels its first joint bargaining table. The President puts political capital behind the compact.
 
 It is leverage on paper more than capacity on the ground. The permits at the five sites are preserved, and nothing is built. The power-price protests flare again near two sites, and the polls read the autumn as dependence managed, not overcome.
 
@@ -39,16 +39,16 @@ The short version: we have conserved the Union, and shrunk it.
 
 What held:
 
-- The grid protection. The worst cascade paths are narrower, and the emergency teams stayed until the end.
+- The Shield. The worst routes for a spreading blackout are narrower, and the emergency teams stayed until the end.
 - The Institute. It is open, and it receives the anomaly reports. That is all it does.
 - The compact. We have a bargaining table with the Dutch, the Japanese and the Koreans, for the first time.
 
 What did not:
 
-- The money. The crash took our co-financing, and the bankers have not come back.
+- The money. The crash took our private investors, and the bankers have not come back.
 - The build. Five reserved sites, five sets of permits, no concrete.
 - Our leverage. The one chokepoint we have was used, by Washington, against China, with our company's machines.
-- Our standing. It is nearly spent. The next two years start with almost nothing.
+- Our political capital. It is nearly spent. The next two years start with almost nothing.
 
 What is changing:
 

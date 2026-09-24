@@ -24,16 +24,16 @@ Hospitals that built triage assistants on it, ministries using it for document w
 >
 > **Claire:** it works like a tax form works
 
-Sofia's answer is the EU Continuity Stack for Cut-Off Services: an inventory of every cut-off site, and a substitution drive – onto the same provider's older model where the certification carries across, onto European-hosted models where it does not, and onto whichever is quicker where a ward is waiting.
+Sofia's answer is a continuity plan: a list of every site that lost access, and a substitution drive – onto the same provider's older model where the certification carries across, onto European-hosted models where it does not, and onto whichever is quicker where a ward is waiting.
 
-> **March 2028.** New defensive software, which patches at machine speed and spots coordinated intrusions rather than single signatures, becomes available to operators.
+> **March 2028.** New defensive software, which patches at machine speed and spots coordinated intrusions rather than matching known attacks one by one, becomes available to operators.
 
 Each move to a European model is paired with the new tooling. Where the swap happens, security teams report calmer nights. But the replacement models are weaker, the migrations break workflows, and clinicians complain of slower, clumsier tools arriving just as the monitoring alerts multiply.
 
-The Institute formally opens this spring, on paper. Its staff, premises and evaluation protocols are still being assembled, and it publishes no evaluations and no incident notes. The cut-off dominates everything. The grid work inches forward on the telemetry deals already signed, and a few more control rooms get segmentation kits, while the vendors still miss their dates. The bio-cyber programme, now the President's stated priority, stays a limited pilot, its wider rollout waiting on coordination, standards, procurement and hospital triage staff that are not yet there.
+The Institute formally opens this spring, on paper. Its staff, premises and evaluation protocols are still being assembled, and it publishes no evaluations and no incident notes. The cut-off dominates everything. The grid work inches forward on the telemetry deals already signed, and a few more control rooms get segmentation kits, while the suppliers still miss their dates. The bio-cyber programme, now the President's stated priority, stays a limited pilot, its wider rollout waiting on coordination, standards, procurement and hospital triage staff that are not yet there.
 
 > **April 2028.** Citing grid strain, and fear of the openly available models linked to last year's intrusions, one candidate region freezes its data-centre permits outright.
 
-Brussels chooses not to force the fight. Every programme in the portfolio stays alive – staff time, preparatory spending, political ownership – and none of them gets new funding. The cost comes as delay and partial blockage: hearings reopened, approvals withheld, commitments weighing on the Commission's standing without delivering finished capacity.
+Brussels chooses not to force the fight. Every programme in the portfolio stays alive – staff time, preparatory spending, political ownership – and none of them gets new funding. The cost comes as delay and partial blockage: hearings reopened, approvals withheld, programmes that cost political capital and build nothing yet.
 
 By June the lights are on, there has been no epidemic, and the new defensive tooling is real progress. Voters see weaker public services, delayed factories, and money spent to stand still.

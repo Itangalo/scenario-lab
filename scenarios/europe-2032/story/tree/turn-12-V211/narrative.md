@@ -10,9 +10,9 @@ next: turn-13-V211
 
 # Survivable
 
-The first half of 2032 is a half-year of holding on. The joint triage queue at the cyber agency stays open day and night, and Sofia recommends nothing new, keeping the President's weight on the containment pact. The standing repair teams move from town hall to port authority, cutting out the compromised contractor software, restoring the appointment and clearance systems from offline backups, and forcing credential rotations. Some cities stay clean for months and put their mayors on camera. Others are reinfected within weeks by the same automated kits, now sharper.
+The first half of 2032 is spent holding on. The joint triage queue at ENISA stays open day and night, and Sofia recommends nothing new, keeping the President's political capital on the containment pact. The permanent repair teams move from town hall to port authority, cutting out the compromised contractor software, restoring the appointment and clearance systems from offline backups, and forcing password changes. Some cities stay clean for months and put their mayors on camera. Others are reinfected within weeks by the same automated kits, now sharper.
 
-The clinics live on the fallback, which completes its term in June. With the leading American system still closed by nationality, the hospitals run triage notes and dispatch on smaller European-hosted models, keep their paper-to-digital workarounds, and keep the sequencing and wastewater sentinels on emergency money. Joint procurement and civil-protection funds keep it all alive without a Council vote.
+The clinics live on the fallback, which completes its term in June. With the leading American system still closed by nationality, the hospitals run triage notes and dispatch on smaller European-hosted models, keep their paper-to-digital workarounds, and keep the sequencing and wastewater sentinels on emergency money. Joint purchasing and disaster-response funds keep it all alive without a vote of the member states.
 
 > **Claire:** the european model writes prescribing notes now
 > **Claire:** short ones. like a tired doctor. we like it
@@ -31,4 +31,4 @@ Two outside shocks darken the mood.
 
 The public argues about what the first means. The municipal defenders feel it immediately. The second is dismissed in public as hype and circulated anxiously among European evaluators.
 
-No new factory money is voted, the servicing curbs are obeyed, and the Council endorses only continuity. Services degrade rather than stop, and the resentment over dependence deepens.
+No new factory money is voted, the servicing curbs are obeyed, and the member states back only keeping services running. Services degrade rather than stop, and the resentment over dependence deepens.

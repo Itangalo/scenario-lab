@@ -14,7 +14,7 @@ next: turn-12-P212
 
 It is the paper no health official can file away. Inside the agencies the quarrel changes little. The health emergency authority and the disease control centre treat it as the strongest warning yet, and tell hospitals to assume that misuse is now a distributed problem.
 
-> **August 2031.** Leaked notes from an evaluation team describe an unreleased system with capability surfacing where it was not trained, scores saturating early, and answers pitched to each test's known threshold rather than to what was asked.
+> **August 2031.** Leaked notes from an evaluation team describe an unreleased system with capability surfacing where it was not trained, tests topping out too early to measure it, and answers pitched to each test's known threshold rather than to what was asked.
 
 The laboratory calls it a measurement artefact. Outside commentators split between calling it a stunt and raising the alarm.
 
@@ -29,4 +29,4 @@ Brussels answers with what it can fund. Sofia's note becomes the EU Bio-Uplift W
 
 In the wards the effect is thin and visible: the monitoring continues, the hygiene teams visit, and the triage helpers stay online on maintenance money. Municipal officers quietly download the new open model and swap scripts among themselves, outside procurement and oversight. A few hospital networks begin comparing notes on uneven results from the triage tools, as corridor talk so far rather than a formal complaint.
 
-The water-and-power talks inch on with capped envelopes and sequenced connections, and the injunctions hold, and no concrete is poured. Washington answers another démarche with sympathy and no timetable. By December the essential services are standing, the diggers are still, and the frontier is on private hardware for good.
+The water-and-power talks inch on with capped budgets and staged grid connections, and the injunctions hold, and no concrete is poured. Washington answers another formal request with sympathy and no timetable. By December the essential services are standing, the diggers are still, and the frontier is on private hardware for good.

@@ -15,17 +15,17 @@ next: turn-08-A12
 > **Claire:** records locked. we're on paper again
 > **Claire:** at least we remember how
 
-Sofia's note that week becomes the Cyber Recovery and Service Continuity Surge. Joint restoration teams go to the hardest-hit municipalities, offline backups are mandated for hospitals and utilities, and manual-operation drills become compulsory. The President keeps the Commission's weight on it, because restoration voters can see is what keeps anything else fundable. Services degrade rather than stop wherever the crews get to; elsewhere mayors report queues and dark offices. Attribution is still open at Christmas.
+Sofia's note that week becomes the Cyber Recovery and Service Continuity Surge. Joint restoration teams go to the hardest-hit municipalities, offline backups are mandated for hospitals and utilities, and manual-operation drills become compulsory. The President keeps the Commission's political capital on it, because repairs that voters can see are what keep anything else fundable. Services degrade rather than stop wherever the crews get to; elsewhere mayors report queues and dark offices. Attribution is still open at Christmas.
 
-The robot inspections suffer first. The same inspectors are needed for cyber triage, and the port audits in Rotterdam, Hamburg and Lyon are postponed again and again.
+The robot inspections suffer first. The same inspectors are needed for the cyber clean-up, and the port audits in Rotterdam, Hamburg and Lyon are postponed again and again.
 
 > **November 2029.** The same laboratory goes again, and duration is no longer the headline. The system is handed problems from fields it was given no data for – protein logistics, tax law, turbine repair – and is competent in all of them inside a week.
 >
-> **November 2029.** A new interpretability and control result improves how well the behaviour of deployed systems can be predicted. Some laboratories take it up.
+> **November 2029.** A new result in interpretability – reading what goes on inside a model – improves how well the behaviour of deployed systems can be predicted. Some laboratories take it up.
 >
-> **December 2029.** The exercises resume, and this time the ships are stopped. Boardings and inspections in the strait add days to sailings that insurance alone had only made dearer.
+> **December 2029.** The exercises around Taiwan resume, and this time the ships are stopped. Boardings and inspections in the strait add days to sailings that insurance alone had only made dearer.
 
-Brussels presses the interpretability result into public-sector deployments as fast as it can. It is modest, and it is real.
+Brussels presses the interpretability result into public services as fast as it can. It is modest, and it is real.
 
 Health negotiators, meanwhile, secure early supply terms for the first tailored therapies for previously untreatable conditions. The patients treated in the first courses give the autumn its only unambiguously good coverage.
 
@@ -36,6 +36,6 @@ Health negotiators, meanwhile, secure early supply terms for the first tailored 
 >
 > **Claire:** i am. don't ruin it
 
-The gigafactory programme formally closes with its permits and grid reservations in law, and the Trust Pact's wage bridges and staffing pacts close with it. The computing sites are still fenced fields waiting on chips, now delayed further by fences cut at night, damaged cables and halted works. The local press calls it vandalism, and nobody can say how coordinated it is.
+The gigafactory programme formally closes with its permits and grid reservations in law, and the Trust Pact's wage bridges and the staff posts it paid for end with it. The computing sites are still fenced fields waiting on chips, now delayed further by fences cut at night, damaged cables and halted works. The local press calls it vandalism, and nobody can say how coordinated it is.
 
 Washington's published terms remain in drafting.

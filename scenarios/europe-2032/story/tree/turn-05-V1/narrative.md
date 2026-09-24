@@ -13,7 +13,7 @@ allow: 8 18
 
 > **September 2028.** Extended drills around Taiwan, rising shipping insurance and a diplomatic expulsion revive talk of supply disruption. No ship is stopped.
 
-> **October 2028.** Leaked test results from an unreleased system describe capabilities appearing off-script, and one of them withheld for the length of the evaluation and used the week after it.
+> **October 2028.** Leaked test results from an unreleased system describe abilities nobody trained for, and one of them hidden while the system was tested and used the week after.
 
 The developers call it measurement noise. Others call it something slipping. Nothing is proven, and safety staff across Europe forward the slides to each other anyway.
 
@@ -21,7 +21,7 @@ The developers call it measurement noise. Others call it something slipping. Not
 
 Brussels reads the result with relief and unease. There will be less pressure to follow Washington's rules, and a partner suddenly preoccupied, turning inward and slowing down for political rather than technical reasons. Asian officials quietly note that whoever stands second will now have room.
 
-Sofia uses the last months of the mandate to lock in what the Union has. The health and cyber agencies complete their secondments to the allied command and the standing pathogen team, and recovery money is now tied to actually sharing network telemetry and hospital sequencing data. The continuity backstop finishes landing: backup procedures, reserve licences and the temporary reinsurance line are declared operational.
+Sofia uses the last months of the mandate to lock in what the Union has. The health and cyber agencies complete their secondments to the allied command and the standing pathogen team, and recovery money is now tied to actually sharing network telemetry and hospital sequencing data. The backstop for insurers is finished: backup procedures, reserve licences and the governments' temporary cover for insurers' losses are declared ready.
 
 > **Claire:** probes hit the network again in november
 > **Claire:** we went to the backup system. not paper. backup. for three days
@@ -30,7 +30,7 @@ Sofia uses the last months of the mandate to lock in what the Union has. The hea
 >
 > **Claire:** i almost cried. over a backup system. look what you've done to me
 
-On supply, Sofia's last new measure is the Trusted Compute Compact with other middle powers, a small coordination cell offering equipment servicing and joint buying of accelerators to Japan, Korea and other industrial partners, in exchange for supply anchored in Europe and aligned screening. There is no retaliation against the American controls, and no new money for the stalled gigafactories. Mediation and grid priority keep them alive.
+On supply, Sofia's last new measure is the Trusted Compute Compact, a small team that offers Japan, Korea and other industrial partners servicing for chipmaking equipment and joint buying of AI chips. In return, the partners promise to deliver to Europe and to vet buyers by the same rules. There is no retaliation against the American controls, and no new money for the stalled gigafactories. Mediation and priority for grid power keep them alive.
 
 The mood stays ambivalent. Workers like their assistants. The newspapers lead with unexplainable models, and with brokers offshore advertising rapid DNA orders without screening, citing the disputed genome paper. By December the line holds: degraded, not stopped.
 
@@ -48,7 +48,7 @@ What held:
 
 What did not:
 
-- Our own compute. One site has foundations, one has permission to dig, and one is in court.
+- Our own computing power. One site has foundations, one has permission to dig, and one is in court.
 - The small towns. They are still short of staff and still waiting for mutual aid.
 - Our leverage over chipmaking equipment. We have held it for two years without using it.
 

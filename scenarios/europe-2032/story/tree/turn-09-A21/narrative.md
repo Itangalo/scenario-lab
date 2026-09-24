@@ -30,7 +30,7 @@ Methodologists quarrel over the methods and over whether it should have been pub
 
 > **November 2030.** The European materials laboratory demonstrates its long-life alloys for grid switchgear and medical implants. Orders are discussed for the next two years.
 
-It is a genuine advance, and it does not fill the empty halls in Paris and Warsaw. The American systems that plan over days and rewrite their own pipelines remain far beyond anything European re-runs can copy.
+It is a genuine advance, and it does not fill the empty halls in Paris and Warsaw. The American systems that plan over days and rewrite their own pipelines remain far beyond anything Europe can test or copy.
 
 By December the blame has softened without lifting. Graduate hiring stays frozen, sorting machines spread through German and French warehouses amid marches, and the bio-detection network exists mostly as seed contracts. But for the first time in two years, voters have seen a European service improve because a European decision was made.
 

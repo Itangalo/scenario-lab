@@ -19,11 +19,11 @@ The recovery teams cut networks and pull locked backups off the shelves, and whe
 
 > **October 2032.** Law firms, accountants, local administrations and newsrooms report measured output gains from AI assistants, largest among juniors, and no new layoffs. The studies have stopped being news. They are filed, not read, and the people who would once have argued with them have moved on to arguing about the outages.
 
-Work is changing shape rather than disappearing. Brussels pushes its triage cell hard, and the President throws the Commission's remaining weight behind it. ENISA teams fund restores from existing envelopes, run isolation drills in the towns that were hit, and keep the pooled allied feeds flowing. It stops the cascades, and it underlines the dependence: the detection is borrowed, and the spare parts are counted.
+Work is changing shape rather than disappearing. Brussels pushes its cyber restoration effort hard, and the President throws the Commission's remaining political capital behind it. ENISA teams pay for restoring systems from existing budgets, run isolation drills in the towns that were hit, and keep the pooled allied feeds flowing. It stops the cascades, and it underlines the dependence: the detection is borrowed, and the spare parts are counted.
 
 That dependence sharpens when Washington tightens its licences once more. The condition has moved onto Europe's own customers: a buyer that wants its allocation must now account for who it sells on to, which makes the Union the enforcer of someone else's policy. With domestic fabrication still fenced and idle, the procurement officers have stopped speaking of autonomy at all.
 
-> **October 2032.** A near-frontier open release is downloaded hundreds of thousands of times. Its safety training lasts about as long as it takes to fine-tune away, which is demonstrated within the week. Whatever it can do is now on private machines, beyond recall.
+> **October 2032.** An open model almost as capable as the best is downloaded hundreds of thousands of times. Its safety training lasts about as long as it takes to retrain away, which is demonstrated within the week. Whatever it can do is now on private machines, beyond recall.
 >
 > **November 2032.** Another genome-model result circulates in biosecurity circles, and this one carries its workings. The path by which a non-expert reaches a design able to infect humans is no longer suggested. It is set out.
 

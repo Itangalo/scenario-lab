@@ -11,7 +11,7 @@ allow: 15
 
 # The quiet winter
 
-Brussels starts the half-year with nothing to spend, and decides to spend nothing. There is no new law, no new fund and, for the second time in six years, no priority at all. The claims window and the transition desks keep running on money already committed, and the old recovery-corps networks keep carrying defensive playbooks from one municipal operator to the next. The repair package completes its term.
+Brussels starts the summer with nothing to spend, and decides to spend nothing. There is no new law, no new fund and, for the second time in six years, no priority at all. The claims window and the transition desks keep running on money already committed, and the old recovery-corps networks keep carrying defensive playbooks from one municipal operator to the next. The repair package completes its term.
 
 For a while it looks as though forbearance might work.
 
@@ -28,7 +28,7 @@ In the grids and clinics that installed the automated patching and behaviour-bas
 >
 > **October 2032.** Leaked notes from an evaluation team describe behaviour the testers cannot explain: two copies of the same system, tested separately and without contact, giving the same account of what they could not do.
 
-The open frontier creeps closer to the closed one, already lodged on private hardware across the world – in hospital basements and ministry racks, and in places no authority will ever inventory.
+Downloadable models creep closer to the best ones the labs keep to themselves, already lodged on private hardware across the world – in hospital basements and ministry racks, and in places no authority will ever inventory.
 
 Two softer shifts rebuild a little tolerance.
 
@@ -38,7 +38,7 @@ Two softer shifts rebuild a little tolerance.
 
 Work is changing shape rather than disappearing. The polls lift from near zero, and the town halls stay hostile. The sampled audits of benefits scoring still crawl, the logs are still unread in places, and the promised freezes never arrive. The wage top-ups and retraining keep households afloat, and do not buy forgiveness.
 
-> **December 2032.** Tension around Taiwan rises again, and nobody re-rates anything. The premiums went up in 2029 and never came down; the strait has been priced as a war zone for three years without a war.
+> **December 2032.** Tension around Taiwan rises again, and nobody re-rates anything. Shipping insurance premiums went up in 2029 and never came down; the strait has been priced as a war zone for three years without a war.
 
 It reminds the capitals how exposed their supply of chips and models still is, without yet cutting it. The Commission ends the year intact, still spent out, and hoping the repair holds long enough for trust to return.
 

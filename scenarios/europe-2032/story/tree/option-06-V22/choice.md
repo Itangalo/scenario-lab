@@ -13,13 +13,13 @@ next: turn-06-V22
 
 **No new measure.** The gigafactory programme is retired.
 
-Sofia recommends starting nothing new, putting the Union's last standing behind the supply-chain compact, and retiring the gigafactory programme. That is twenty billion euros for four to five sites, which no bank will co-fund while the Commission's standing is close to nothing. The permits are held through the compact instead.
+Sofia recommends starting nothing new, putting the Commission's last political capital behind the supply-chain compact, and retiring the gigafactory programme. That is twenty billion euros for four to five sites, which no bank will help fund while the Commission has so little left to spend.
 
-When the next incident comes, ENISA, the Union's computer emergency team and the home affairs directorate put it first under the network-security and critical-entity rules: they triage the damage, isolate exposed public services and hospitals, and publish daily technical guidance, so that defenders are not seen as silent. No new resilience instrument is created; the spare parts and mutual aid already handed to national budgets are what gets used. If a capital breaks ranks with its own deal, the Trade and Competitiveness Councils treat it as a question of cohesion: an anti-coercion file, and the joint request to Washington offered as the way back. The five site permits are kept warm through the digital directorate and the European Investment Bank, with no cash at all.
+When the next incident comes, ENISA, the Union's computer emergency team and the Commission's security department take charge under existing law: they triage the damage, isolate exposed public services and hospitals, and publish daily technical guidance, so that defenders are not seen as silent. No new resilience instrument is created; the spare parts and mutual aid already handed to national budgets are what gets used. If a capital breaks ranks with its own deal, the member states' trade and industry ministers treat it as a threat to unity: a case under the rules against foreign trade pressure, with the joint request to Washington offered as the way back. The five site permits are kept alive by the Commission's digital department and the EU's investment bank, with no money at all.
 
-The argument is that with the Commission's standing nearly gone, and Washington now able to pick capitals off one by one, the only funded track towards sovereignty should be the compact. A programme that costs standing every month and builds nothing is a programme to stop paying for.
+The argument is that with almost nothing left to spend, and Washington now able to pick capitals off one by one, the only funded track towards sovereignty should be the compact. A programme that drains the Commission every month and builds nothing is a programme to stop paying for.
 
-The President stakes what standing the Commission has left on the Middle-Power Supply-Chain Compact.
+The President stakes what political capital the Commission has left on the compact.
 
 What it does not do is build anything, or repair anything faster.
 

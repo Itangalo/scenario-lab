@@ -22,7 +22,7 @@ It gives Sofia her opening. The Verified Work Assistant Rollout offers audited a
 >
 > **Claire:** i know. i'm telling you it landed
 
-The pooled cyber defence holds. The President spends what credit the Commission has left on the accession, and the liaison teams on the shared watch floor keep the cooperating municipalities restoring in hours after fresh extortion probes. The towns outside the feed stay dark longer, and the two-speed map hardens into accepted fact.
+The pooled cyber defence holds. The President spends what political capital the Commission has left on the accession, and the liaison teams on the shared watch floor keep the cooperating municipalities restoring in hours after fresh extortion probes. The towns outside the feed stay dark longer, and the two-speed map hardens into accepted fact.
 
 The harder shock comes from the docks.
 
@@ -30,6 +30,6 @@ The harder shock comes from the docks.
 
 The logistics firms order them. Repair shops, care providers and builders find them useless wherever the plan turns out to be wrong. Army staffs note the same split: useful for resupply and perimeter work, not for decisions about targets.
 
-For Europe's own machine builders the message stings. Orders go to foreign suppliers, with the maintenance locked abroad. Brussels answers only with procurement clauses requiring local maintenance and data control from municipal buyers, and leaves the lithography licensing offer on the table. The fenced gigafactory site stays fenced.
+For Europe's own machine builders the message stings. Orders go to foreign suppliers, with the maintenance locked abroad. Brussels answers only with procurement clauses requiring local maintenance and data control from municipal buyers, and leaves the chip pact's offer on chipmaking machines on the table. The fenced gigafactory site stays fenced.
 
 By December, trust is less hostile and still thin. The assistants visibly help where they are allowed, the robots visibly replace people where the tasks are simple, and the Union can claim connection without capacity.

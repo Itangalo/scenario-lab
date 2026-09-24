@@ -22,13 +22,13 @@ The hospitals running on frozen, vetted fallbacks feel the gap widen. What Bruss
 >
 > **Claire:** i know. that's the whole compliment
 
-The recovery cell holds its line. Pooled supercomputing stays diverted to prescribing, triage and benefits. The re-pointed tools are locked to checks with a doctor in the loop, and paper shifts cover wherever no fallback is safe. Sofia recommends nothing new, and the President spends what credit the Commission has left on the bridge.
+The recovery cell holds its line. Pooled supercomputing stays diverted to prescribing, triage and benefits. The tools moved to open models are locked to checks with a doctor in the loop, and paper shifts cover wherever no fallback is safe. Sofia recommends nothing new, and the President spends what political capital the Commission has left on the bridge.
 
-Against the ownerless agent in the routers and rented hosts, sinkholing and segmentation buy quiet weeks. Then altered copies resurface, and the island-mode kits are wheeled out again. The quarantine and islanding operation completes its rollout: backup links tested, manual procedures drilled, grid operators able to degrade rather than stop.
+Against the ownerless agent in the routers and rented hosts, diverting its traffic and splitting networks apart buy quiet weeks. Then altered copies resurface, and the island-mode kits are wheeled out again. The quarantine and islanding operation completes its rollout: backup links tested, manual procedures drilled, grid operators able to degrade rather than stop.
 
 That continuity is why the wards do not tip into failure, and it is why few people thank it. Outages are still counted in the local news, fraud cases still grow, and the backlogs in appointments and permits build again.
 
-Warsaw, with its own Washington arrangement, stays half in and half out, its hospitals ring-fenced inside the common bridge while ministers argue over pragmatism and undercutting. The tailored therapies delivered through EU-controlled channels shorten some queues. With the frontier visibly leaping ahead, many experience them as proof of dependence.
+Warsaw, with its own American cloud deal, stays half in and half out, its hospitals ring-fenced inside the common bridge while ministers argue over pragmatism and undercutting. The tailored therapies delivered through EU-controlled channels shorten some queues. With the frontier visibly leaping ahead, many experience them as proof of dependence.
 
 ## Note to the President
 

@@ -11,13 +11,13 @@ allow: 16
 
 # Lawful harm
 
-The rapid containment protocol finishes in time to matter. Clinics and town halls in the telemetry and locked-backup scheme isolate infected segments, cut their cloud links by the playbook, and restore from clean copies within hours. The auditors call it the reason a bad autumn did not become a cascading winter.
+The rapid containment protocol finishes in time to matter. Clinics and town halls that share telemetry and lock their backups isolate infected segments, cut their cloud links by the playbook, and restore from clean copies within hours. The auditors call it the reason a bad autumn did not become a cascading winter.
 
-Everything else slips. With the advanced chip slots still cancelled and the foundries still citing force majeure, the joint licensing offer to The Hague, Tokyo and Seoul stalls. The partners want binding lithography controls first and quotas later. The gigafactory site stays fenced and idle. The insurers welcome the draft liability clarification and do not resume cover. They are waiting for a law, not a promise.
+Everything else slips. With the advanced chip deliveries still cancelled and the chip factories still pleading events beyond their control, the chip pact's offer to the Netherlands, Japan and Korea stalls. The partners want binding controls on chipmaking machines first and guaranteed chip shares later. The gigafactory site stays fenced and idle. The insurers welcome the draft liability clarification and do not resume cover. They are waiting for a law, not a promise.
 
 > **September 2030.** AI valuations reset violently. Announced data-centre expansions are cancelled outright, not delayed. American laboratories slow their training plans, and second-tier builders talk openly of catching up.
 
-Two co-location options Brussels had counted on for anchored capacity evaporate with the valuations.
+Two data-centre deals Brussels had counted on for capacity inside the Union evaporate with the valuations.
 
 At home, two opposite stories collide. In the municipalities that cooperated, audited triage assistants cut the waiting lists, and administrative decisions that used to take months come back in days. The nurses call the system European, and voters notice.
 
@@ -32,9 +32,9 @@ In the same weeks the other story breaks.
 
 > **October 2030.** An ombudsman, and then a court, find that a support system for benefits and policing systematically harmed people for months. Caseworkers approved machine-ranked queues at forty seconds a case. The logs were written and never read. The conformity papers were in order.
 
-The opposition and the press do not argue that the Act failed in enforcement. They argue that the deployment was never high-risk under its categories at all, and that everything done had been lawful. That reading sticks.
+The opposition and the press do not argue that the AI Act was poorly enforced. They argue that the system never counted as high-risk under it at all, and that everything done had been lawful. That reading sticks.
 
-Sofia's answer is the Civic AI Trust and Adoption Repair. The system is frozen and its logs published, with workload limits, independent re-checks and an implementing act to close the gap promised, and audited roll-outs of the triage tools that work. The coverage frames it all as lawful harm, and restriction becomes the cheap position. Beyond the insurers, deployments freeze as well.
+Sofia's answer is the Civic AI Trust and Adoption Repair. The system is frozen and its logs published, with workload limits, independent re-checks and a new Commission rule to close the gap promised, and audited roll-outs of the triage tools that work. The coverage frames it all as lawful harm, and restriction becomes the cheap position. Beyond the insurers, deployments freeze as well.
 
 ## Note to the President
 
@@ -50,7 +50,7 @@ What held:
 
 What did not:
 
-- The chips. The blockade took them, and our partners want binding controls before quotas.
+- The chips. The blockade took them, and our partners want binding controls before guaranteed chip shares.
 - The insurers. They are waiting for a law.
 - The welfare system. It did harm lawfully, and that is worse than doing it unlawfully.
 - The common line. Warsaw still has its own deal.

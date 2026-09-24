@@ -11,7 +11,7 @@ allow: 09:20 10
 
 # The attack that ran itself
 
-At 09:20 on 10 February 2032, helpdesks from Porto to Gdansk start lighting up, and within the hour they are all lit. A ransomware sweep has ridden a compromised administrative software update into municipal networks and two hospital groups, encrypting records and appointment systems. The payload, the investigators later agree, is largely model-written: polymorphic, fast, and indifferent to language. Attribution takes weeks and never produces a name the public believes.
+At 09:20 on 10 February 2032, helpdesks from Porto to Gdansk start lighting up, and within the hour they are all lit. A ransomware sweep has ridden a compromised administrative software update into municipal networks and two hospital groups, encrypting records and appointment systems. The payload, the investigators later agree, is largely model-written: changing its shape as it spreads, fast, and indifferent to language. Tracing the attackers takes weeks and never produces a name the public believes.
 
 What follows splits the continent again. Towns tied into the shared early-warning feeds, and which rehearsed their isolation, cut their networks, fall back to locked backups and paper triage, and are booking appointments again within days. Others stay dark for weeks, taking cash and rebuilding registries by hand. Television carries both stories side by side: paramedics diverting ambulances in one region, nurses in another pulling clean backups off a shelf.
 
@@ -22,7 +22,7 @@ What follows splits the continent again. Towns tied into the shared early-warnin
 >
 > **Claire:** tell the table thank you from the fridge
 
-Sofia's note becomes the Automated Cyber Incident Triage and Restoration, run through the emergency coordination channels. It funds restores from existing envelopes and lends the allied detection feeds to towns that are not yet plugged in, while the President's own weight goes behind the scale-up. It helps to stop cascades, and it cannot hide the gap. Restoration depends on borrowed detection, and on spare parts that are suddenly harder to buy.
+Sofia's note becomes the Automated Cyber Incident Triage and Restoration, run through the emergency coordination channels. It pays for restoring systems from existing budgets and lends the allied detection feeds to towns that are not yet plugged in, while the President's own political capital goes behind the scale-up. It helps to stop cascades, and it cannot hide the gap. Restoration depends on borrowed detection, and on spare parts that are suddenly harder to buy.
 
 > **April 2032.** Washington tightens its chip and model controls again, and this time it reaches what Europe already owns: renewals, servicing visits and spare parts for installed equipment need the approvals a new purchase needs. Volume licences for close buyers stay, on paper.
 

@@ -10,7 +10,7 @@ next: turn-11-P211
 
 # Screening while the concrete sleeps
 
-Brussels spends the spring on laboratories, not building sites. With the hospital funds spent and the construction injunctions still taped to the fences, Sofia's shield goes out as an emergency health measure: pooled sequencing screening, triage rules for referral laboratories, stockpiled response kits, and hardening teams for hospitals, laboratories and water-control systems. The President's own weight goes behind it, and the health ministers carry it as civil protection, which helps.
+Brussels spends the spring on laboratories, not building sites. With the hospital funds spent and the construction injunctions still taped to the fences, Sofia's shield goes out as an emergency health measure: pooled sequencing screening, triage rules for referral laboratories, stockpiled response kits, and hardening teams for hospitals, laboratories and water-control systems. The President puts political capital behind it, and the health ministers carry it as civil protection, which helps.
 
 > **Claire:** two extra screening staff arrived today
 > **Claire:** we hugged them. they looked alarmed
@@ -21,14 +21,14 @@ Brussels spends the spring on laboratories, not building sites. With the hospita
 
 In the showcase regions, where the domestic triage helpers work, the waiting lists stay flat, and the nurses welcome the extra screening staff. Elsewhere the effort looks thin. The two frozen factory sites stay silent, the night vigils continue, and the energy lawyers spend months drafting water-and-power compacts that the councils refuse to sign.
 
-Two shocks from outside define the half-year.
+Two shocks from outside define the spring.
 
 > **February 2031.** A second genome-model design lands, and the field splits along a new line. The question is no longer whether the route works. It is whether describing it in public was itself the harm.
 >
-> **March 2031.** A near-frontier openly downloadable model is copied hundreds of thousands of times in a week. The municipalities are no longer downloading it out of curiosity. It is in the tender documents.
+> **March 2031.** An openly downloadable model nearly as capable as the best closed ones is copied hundreds of thousands of times in a week. The municipalities are no longer downloading it out of curiosity. It is in the tender documents.
 
 Methodologists cry alarmism. Others warn that a recipe has been aired. The new model's copies are soon circulating widely on private hardware.
 
-The shield cannot answer either directly. The screening protocols arrive slowly, hospital IT teams complain that the hardening checklists assume staff they do not have, and the press links the open model to fraud and intrusion attempts. Berlin, with its separate foreign supply arrangement, keeps getting its deliveries while the others queue, and Washington offers technical dialogue and no faster access. The no-undercut pact completes its term, a line held on paper.
+The shield cannot answer either directly. The screening protocols arrive slowly, hospital IT teams complain that the hardening checklists assume staff they do not have, and the press links the open model to fraud and intrusion attempts. Berlin, with its separate foreign supply arrangement, keeps getting its deliveries while the others queue, and Washington offers technical dialogue and no faster access. The no-side-deals pact completes its term, a line held on paper.
 
 By June the wards are holding and nothing has restarted. The Union has chosen containment over concrete, and the diggers are still.

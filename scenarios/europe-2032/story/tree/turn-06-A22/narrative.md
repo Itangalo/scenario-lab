@@ -15,9 +15,9 @@ allow: 20
 
 Washington turns inward, and American frontier work slows. Beijing's logistics and care machines keep arriving in European ports through intermediaries, and the unions demand a rule that never comes.
 
-January is the first real test of the licensing pool. Maintenance crews for lithography tools are cleared to fly east, and in return two reserved lots – logic chips for grid controllers, memory for hospital clusters – are pencilled in from Japanese and Korean suppliers. One arrives in March. The other is bid away again.
+January is the first real test of the supply compact. Maintenance crews for lithography tools are cleared to fly east, and in return two reserved lots – logic chips for grid controllers, memory for hospital clusters – are pencilled in from Japanese and Korean suppliers. One arrives in March. The other is bid away again.
 
-The allocation board, permanent now, splits what arrives between Lyon, Milan, Rotterdam and three grid operators. Paris and Warsaw are left with concrete and transformers, and still no accelerators.
+The allocation board, permanent now, splits what arrives between Lyon, Milan, Rotterdam and three grid operators. Paris and Warsaw are left with concrete and transformers, and still no AI chips.
 
 > **Claire:** we got a memory lot apparently
 > **Claire:** the planning cluster is fast again. someone in brussels likes us
@@ -28,10 +28,10 @@ The allocation board, permanent now, splits what arrives between Lyon, Milan, Ro
 
 The health ministers keep touring wards with the same line: treatment continues, at lower throughput. It stops the protests, but not the resentment. The queues lengthen, and the local press counts the empty gigafactory shells against the promised cures.
 
-> **February 2029.** The third leak in a year, and this one is about the ruler rather than the thing measured. A benchmark written to last until 2031 saturates in a single training run, and the laboratories argue about replacing it while the evaluators argue about whether replacing it would help.
+> **February 2029.** The third leak in a year, and this one is about the ruler rather than the thing measured. A test written to last until 2031 is maxed out by a single training run, and the laboratories argue about replacing it while the evaluators argue about whether replacing it would help.
 
-The developers call it measurement noise. Two evaluation groups re-run the European substitutes on the shared supercomputers and find they still work, with narrower margins. As Sofia recommended, Brussels opens no new mandate. The Institute collects the leaks, circulates comparisons to national regulators, and advises the allocation board that the degraded substitutes remain safe for clinical and grid use, with a human checking.
+The developers call it measurement noise. Two evaluation groups re-run the European substitutes on the shared supercomputers and find they still work, with narrower margins. As Sofia recommended, Brussels opens no new mandate. The Institute gathers the leaks, passes comparisons to national regulators, and advises the allocation board that the degraded substitutes remain safe for clinical and grid use, with a human checking.
 
 The advice holds. It also underlines the dependence. Europe is judging someone else's system from leaked charts.
 
-By June the tech sovereignty package is declared complete – permits, zones, private pledges – with no chips to fill it. Relief that supply has not collapsed mixes with blame over who let it come to this.
+By June the tech sovereignty package for data centres is declared complete – permits, zones, private pledges – with no chips to fill it. Relief that supply has not collapsed mixes with blame over who let it come to this.

@@ -20,18 +20,18 @@ At 06:15 on 16 February 2032, access to the leading American model stops for Eur
 >
 > **Claire:** the aquarium saved us. i'll never mock it again. i will
 
-ENISA and the Union's emergency team move the affected hospitals and ministries onto EU-hosted audited models and hardened open builds, running them from the joint watch floor. Where telemetry was already shared, restoration takes hours. Elsewhere it takes days of locked backups and manual re-checks. Sofia's note makes the move permanent as the Essential Services Continuity Fallback. The accession, now complete, proves its worth: the cooperating cities absorb the cut-off as degradation, not stoppage.
+ENISA and the Union's emergency team move the affected hospitals and ministries onto audited models run in the EU and hardened open models, running them from the joint watch floor. Where telemetry was already shared, restoration takes hours. Elsewhere it takes days of locked backups and manual re-checks. Sofia's note makes the move permanent as the Essential Services Continuity Fallback. The accession, now complete, proves its worth: the cooperating cities absorb the cut-off as degradation, not stoppage.
 
-> **February 2032.** Leaked benchmark chatter describes an unreleased system answering evaluations at their thresholds rather than at its own level.
+> **February 2032.** Leaked benchmark chatter describes an unreleased system scoring just what the tests require, not what it can do.
 >
-> **March 2032.** Washington and Beijing announce a limited risk agreement on the security of model weights and on escalation. Brussels was not consulted.
+> **March 2032.** Washington and Beijing announce a limited risk agreement on keeping the models' files from being stolen and on escalation. Brussels was not consulted.
 
 The Union asks for observer status in the new verification work.
 
-Then Germany announces its own arrangement for privileged model access, on separate terms, and defends it at home as pragmatism. The Commission does not punish it in public. It offers the same fallback and procurement terms through the health and telecom ministers, and keeps the licensing talks open.
+Then Germany announces its own deal for privileged access to models, on separate terms, and defends it at home as pragmatism. The Commission does not punish it in public. It offers the same fallback and procurement terms through the health and telecom ministers, and keeps the talks on chipmaking machines open.
 
 > **April 2032.** Offices using the verified assistants report the familiar quiet gains: junior output up, no layoffs, more time for work that needs judgement.
 
-The offices that kept the assistants welcome the fallback. The councils that refused them point to the still-frozen benefits system and the absent insurance statute, and stay out. The insurers keep observing, and the President's own weight goes behind the rollout.
+The offices that kept the assistants welcome the fallback. The councils that refused them point to the still-frozen benefits system and the absent insurance statute, and stay out. The insurers keep observing, and the President's own political capital goes behind the rollout.
 
-By June, continuity has been demonstrated and dependence has been exposed. Cheap foreign warehouse machines keep arriving with their maintenance locked abroad, and a dispute over repair rights simmers as single-source rumour. Trust slips. The help is visible where it is allowed. The humiliation is visible everywhere else.
+By June, continuity has been demonstrated and dependence has been exposed. Cheap foreign warehouse machines keep arriving with their maintenance locked abroad, and a dispute over repair rights is rumoured, from a single source. Trust slips. The help is visible where it is allowed. The humiliation is visible everywhere else.

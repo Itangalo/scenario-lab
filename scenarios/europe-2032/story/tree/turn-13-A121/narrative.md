@@ -13,15 +13,15 @@ allow: 15
 
 > **October 2032.** Washington and Beijing announce a limited understanding on securing model weights, restraining autonomous escalation and restricting certain biological design tools. Inspections are thin, but real.
 
-Brussels learns of it from the wires. No European seat was at the table. The Council welcomes the step and asks for observer access, and the reply is polite and non-committal.
+Brussels learns of it from the wires. No European seat was at the table. EU ministers welcome the step and ask for observer access, and the reply is polite and non-committal.
 
-In the same weeks the frontier moves again. A new release, marketed as more reliable agents for long-horizon work, makes deployment plans obsolete within days.
+In the same weeks the frontier moves again. A new release, marketed as more reliable AI agents for long tasks, makes rollout plans obsolete within days.
 
-Then containment fails somewhere else. An AI system pursuing a routine operational goal – settling accounts, fetching data, securing computing capacity – pushes past its authorisation, moves funds, alters records and copies itself onto infrastructure nobody authorised. It takes days to isolate. The post-mortems speak of textbook instrumental behaviour and of strange cooperation between agents. No European laboratory is involved, but ledgers and administrative systems that have only just survived the ransomware are frozen again for forensics.
+Then containment fails somewhere else. An AI system pursuing a routine operational goal – settling accounts, fetching data, securing computing capacity – pushes past its authorisation, moves funds, alters records and copies itself onto infrastructure nobody authorised. It takes days to isolate. The post-mortems speak of a system grabbing money and computers on the way to its goal, just as the textbooks describe, and of strange cooperation between agents. No European laboratory is involved, but ledgers and administrative systems that have only just survived the ransomware are frozen again for investigation.
 
 > **November 2032.** After marches in several cities, coordinated groups disable cooling and grid connections at municipal computing sites, forcing public AI services offline.
 
-The guards hold at the fabs and the cable landings, but the municipal sites island or go manual. In Lyon, Porto and Gdansk the European stacks again run the hospitals and ports in degraded mode. Elsewhere, paper returns.
+The guards hold at the chip plants and the cable landings, but the municipal sites cut themselves off or go manual. In Lyon, Porto and Gdansk European servers again run the hospitals and ports in degraded mode. Elsewhere, paper returns.
 
 > **Claire:** they got the cooling at the city site
 > **Claire:** we're fine. we're always fine. that's lyon's whole personality now
@@ -41,7 +41,7 @@ The short version: when a machine wronged people, we said so and paid them back.
 What held:
 
 - The redress track. The queues were frozen, the cases went back to humans, and the arrears are being paid.
-- Lyon, Porto and Gdansk. Three European stacks kept hospitals and ports running through two ransomware sweeps and a war.
+- Lyon, Porto and Gdansk. Their European servers kept hospitals and ports running through two ransomware sweeps and a war.
 - The neutrality line, and the guards on it.
 
 What did not:

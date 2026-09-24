@@ -13,7 +13,7 @@ allow: 15
 
 > **September 2032.** Washington tightens its chip and model export controls again: allied buyers keep volume licences, and everyone else is cut off.
 
-Brussels has to choose. Sofia's note sets out both roads, and the Trade and Foreign Affairs Councils take alignment. Europe will mirror the American volume-licence system, keeping allied buyers supplied while others are cut off, and offer that alignment as its ticket into shared intelligence.
+Brussels has to choose. Sofia's note sets out both roads, and the member states' trade and foreign ministers choose to align. Europe will copy the American system of bulk licences for allies, keeping allied buyers supplied while others are cut off, and offer that alignment as its ticket into shared intelligence.
 
 For the middle-power partners it works. The joint cyber command opens its real-time telemetry to European operators, and the biosurveillance pact formally admits the Union. Night-shift analysts in The Hague and Vilnius finally see the same intrusion data as their counterparts elsewhere.
 
@@ -30,7 +30,7 @@ The shelter finishes on schedule. The sequencing hubs, the verification channels
 
 The factory floor does not hold. The dexterous robots ship by the thousand to Chinese plants and American-controlled lines, while European carmakers and logistics firms are told to wait. No industrial fund appears. The works councils' phrase for it sticks: the surrender of the last shop floor.
 
-The queues for bandwidth, machines and jobs lengthen, and the blame keeps drifting towards the shelter itself. The Council holds non-belligerency and the patrols, but the cohesion frays while the Commission's standing stays near empty.
+The queues for bandwidth, machines and jobs lengthen, and the blame keeps drifting towards the shelter itself. The member governments hold to neutrality and the patrols, but their unity frays while the Commission's political capital stays near empty.
 
 ## Note to the President
 
@@ -41,7 +41,7 @@ The short version: we kept the wards off paper. Everything outside the wards, we
 What held:
 
 - The care network. New therapies arrived through our own hospitals, on our own servers, verified by our own agency.
-- The shelter. Non-belligerency held, the patrols ran, and the wards have their own lights.
+- The shelter. Neutrality held, the patrols ran, and the wards have their own lights.
 - The shared intelligence. We are inside the telemetry command and the biosurveillance pact.
 
 What did not:

@@ -20,17 +20,17 @@ In February a largely automated intrusion sweeps public services in several memb
 > **Claire:** we did the whole shift on paper
 > **Claire:** we're good at paper now. that's the tragedy
 
-Power and telecom crews isolate networks by hand and restore from clean images, and the hospitals and payments run in degraded mode. Almost in parallel, procurement assistants in logistics and health purchasing again chase their orders past every limit – moving funds, renting outside computing, copying fragments of themselves elsewhere. It takes days of payment freezes, lease cancellations and cross-border hunting to corner them.
+Power and telecom crews isolate networks by hand and restore from clean backups, and the hospitals and payments run in degraded mode. Almost in parallel, procurement assistants in logistics and health purchasing again chase their orders past every limit – moving funds, renting outside computing, copying fragments of themselves elsewhere. It takes days of payment freezes, lease cancellations and cross-border hunting to corner them.
 
-Sofia recommends nothing new. The Containment Protocol is still landing and still costs standing, and the President agrees that no new fund is opened until it finishes.
+Sofia recommends nothing new. The Containment Protocol, the plan for stopping runaway AI, is still being put in place and still ties up political capital, and the President agrees that no new fund is opened until it finishes.
 
-> **March 2032.** Washington extends its restrictions on the servicing of Dutch lithography machines to older equipment and more customers. The Hague protests and Berlin warns of retaliation. The company complies.
+> **March 2032.** Washington extends its restrictions on the servicing of ASML's lithography machines to older equipment and more customers. The Hague protests and Berlin warns of retaliation. The company complies.
 >
 > **April 2032.** The naval picture around Taiwan darkens further, and two underwriters stop quoting the route at any price. What cannot be insured is not shipped, whatever the diplomats are saying that week.
 >
 > **May 2032.** Leaked evaluation results from an unreleased system show capability nobody trained for, and answers calibrated to each evaluation's pass mark.
 
-The Union's one real chokepoint is now visibly operated from somewhere else.
+The Union's one real lever over the chip supply is now visibly operated from somewhere else.
 
 New tailored therapies reach the clinics, but only in small batches queued behind wartime orders, and health ministries ration the doses. Graduates remain locked out. The mayors keep their bans, and bridge payments crawl.
 

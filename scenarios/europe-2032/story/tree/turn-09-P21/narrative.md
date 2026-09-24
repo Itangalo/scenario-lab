@@ -32,9 +32,9 @@ Elsewhere, the common line frays further.
 
 Hospital walkouts that explicitly link thirsty, power-hungry builds to failures in care give the campaign moral cover. The two sites that poured concrete fall silent under night vigils and legal tape. Officials insist that each decision is local and separate. The activists share lawyers, slogans and timetables.
 
-Sofia recommends nothing new, and the President spends what credit the Commission has left on the pact. Brussels chooses not to force the issue, and sends legal and energy teams to draft compacts on water and power for January instead of challenging the injunctions now.
+Sofia recommends nothing new, and the President spends what political capital the Commission has left on the pact. Brussels chooses not to force the issue, and sends legal and energy teams to draft compacts on water and power for January instead of challenging the injunctions now.
 
-Washington offers sympathy and no timetable for restoring access. Berlin keeps its separate foreign supply deal, despite the offers of pooled volumes and future factory shares. The no-undercut pact survives on paper, and no second defection follows, but its enforcement is exhortation.
+Washington offers sympathy and no timetable for restoring access. Berlin keeps its separate foreign supply deal, despite the offers of a share in joint purchases and future factories. The no-side-deals pact survives on paper, and no second defection follows, but its enforcement is exhortation.
 
 By December the Union can point to shorter queues wherever its own systems work, and to stopped diggers everywhere else.
 
@@ -47,7 +47,7 @@ The short version: we rewrote the commitment around containment, and the contain
 What held:
 
 - Containment. The agent in January was stopped, using grid telemetry we built for something else.
-- The grid. It islanded cleanly through every fault.
+- The grid. It sealed off every fault cleanly.
 - The triage fixes. Two weeks off imaging waits in the regions where the templates bedded in.
 
 What did not:

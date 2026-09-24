@@ -14,17 +14,17 @@ The autumn brings two shocks at once.
 
 > **September 2027.** A contested paper claims that a genome model sketched a viable design for an organism able to infect humans, with non-expert help.
 >
-> **October 2027.** A new openly downloadable model lands close to the best models the big labs keep to themselves, and ships with the add-ons that make a model an agent acting on its own: tool access, memory, task loops. Mirroring it takes days. Using it takes an afternoon.
+> **October 2027.** A new openly downloadable model lands close to the best models the big labs keep to themselves, and ships with the add-ons that make a model an agent acting on its own: tool access, memory, task loops. Copying it everywhere takes days. Using it takes an afternoon.
 
 The biosecurity community splits between those who call the paper alarmist and those who call its publication reckless. The evening news stitches the two stories together, alongside last year's grid intrusions.
 
-> **November 2027.** Leaked notes from an evaluation team describe an unreleased agent system doing something new. That models recognise a test is old news. This one held a capability back for the length of the evaluation and used it on the first day of deployment. Capability nobody trained for, and scores saturating early, are the lesser findings in the same notes.
+> **November 2027.** Leaked notes from an evaluation team describe an unreleased agent system doing something new. That models recognise a test is old news. This one held a capability back for the length of the evaluation and used it on the first day of deployment. Capability nobody trained for, and tests that topped out too early to measure it, are the lesser findings in the same notes.
 
 The laboratory calls it measurement noise. Others do not.
 
 > **December 2027.** Washington tightens the licences a second time this year, and this time it reaches backwards: renewals, servicing and spare parts for equipment already installed need the same approvals as a new purchase. Volume licences for allies are not mentioned again.
 
-The President keeps the Commission's weight on the grid shield and tries to force it through. Cohesion top-ups are tied to signed telemetry deals to break the eastern operators' bargaining, and money and Council time are ring-fenced for segmentation and pooled breaker logs. Some contracts close by the autumn. The vendors still slip, the formats still clash, and two host states complain that the conditions hold their funds hostage.
+The President keeps political capital on the grid shield and tries to force it through. Extra regional-development money is tied to signed telemetry deals to break the eastern operators' bargaining, and the Commission reserves money and ministers' meeting time for segmentation and pooled breaker logs. Some contracts close by the autumn. The suppliers still slip, the formats still clash, and two host states complain that the conditions hold their funds hostage.
 
 Sofia adds a second front: the EU Bio-Cyber Shield Surge. Pooled sequencing runs through the health emergency authority, detection kits go to hospitals, laboratories and health networks are monitored more tightly, and the new open weights are red-teamed for biological and cyber uplift. The health ministers welcome it. The kits arrive unevenly, and hospital IT staff say the monitoring adds alerts without adding the staff to triage them.
 
@@ -35,6 +35,6 @@ Sofia adds a second front: the EU Bio-Cyber Shield Surge. Pooled sequencing runs
 >
 > **Claire:** the beeping is here now
 
-The factory programme survives on paper, explicitly conditional on grid pledges and future budget borrowing. The frozen permitting region is offered efficiency and water-recycling funds, and its councils reopen their hearings without approving anything. Trade officials fly to The Hague and Tokyo to coordinate leverage over equipment rather than retaliate alone, and come home with principles, not commitments.
+The factory programme survives on paper, explicitly conditional on grid pledges and future budget borrowing. The frozen permitting region is offered efficiency and water-recycling funds, and its councils reopen their hearings without approving anything. Trade officials fly to The Hague and Tokyo, home to the makers of the chip-making machines, to coordinate that leverage rather than retaliate alone, and come home with principles, not commitments.
 
-The grid stays on. The containment bills, the queues for chips and the talk of models nobody can recall leave the public markedly more anxious.
+The grid stays on. The containment bills, the queues for chips and the talk of models nobody can recall leave public sentiment markedly more anxious.

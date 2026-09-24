@@ -27,7 +27,7 @@ In the same weeks, the foreign vendors of warehouse robots harden their terms.
 >
 > **Claire:** fight faster. my back is european
 
-The councils and ports demand local servicing, open diagnostics and spare parts held in the Union. Sofia's last new measure backs them. The Swarm Patch and Repair-Rights Enforcement uses competition and procurement leverage and an implementing act on the right to repair, folded into the continuity programme rather than built as a parallel one. The insurers are invited to certify patched sites as a path to the long-delayed liability statute, and stay observing. The vendors comply in public wherever contracts are at stake, and stall in private on parts and codes.
+The councils and ports demand local servicing, open diagnostics and spare parts held in the Union. Sofia's last new measure backs them. The Swarm Patch and Repair-Rights Enforcement spreads the new defences and forces vendors to allow local repair, using competition law, public buying and a new Commission rule on the right to repair, folded into the continuity programme rather than built as a parallel one. The insurers are invited to certify patched sites as a path to the long-delayed liability statute, and stay observing. The vendors comply in public wherever contracts are at stake, and stall in private on parts and codes.
 
 The verified assistant rollout completes, bringing logged, human-checked aides to the consenting town halls, with quiet gains in junior output. The refusing councils point to the still-frozen benefits system, and stay out.
 

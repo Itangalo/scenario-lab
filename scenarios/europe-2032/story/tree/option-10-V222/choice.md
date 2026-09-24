@@ -15,11 +15,11 @@ next: turn-10-V222
 
 Sofia recommends a standing recovery corps for the next attack: joint teams from ENISA and the Union's computer emergency team, vendor patch contracts paid for in advance, and offline fallback procedures in municipalities, hospitals and grid operators.
 
-It runs as an operation under the network-security directive. Three mobile recovery corps are drawn from national response teams and contracted vendors, and sent first wherever ransomware hits public services or a compromised dependency spreads. The European cyber crisis network coordinates daily patch and isolation notes. The money comes from reshuffled Digital Europe and cohesion emergency envelopes, approved by written procedure, with no new vote. The corps is paired with the islanding kits: grid operators keep curtailing computing first, and hospitals and water stay islanded. Mayors get one claims window for both energy relief and cyber recovery, to answer the charge that the money is only relabelled. American volume-licence channels are asked for faster access to patch tooling. Open-weight assistance already running on municipal hardware is used quietly, because it cannot be recalled anyway.
+It runs as an operation under the EU's cybersecurity law. Three mobile recovery corps are drawn from national response teams and contracted vendors, and sent first wherever ransomware hits public services or a compromised dependency spreads. National cyber agencies send joint daily notes on what to patch and cut off. The money is shifted within existing EU digital and regional budgets and signed off in writing, with no new vote. The corps is paired with the islanding kits: grid operators keep cutting power to data centres first, and hospitals and water stay islanded. Mayors get one claims window for both energy relief and cyber recovery, to answer the charge that the money is only relabelled. Washington is asked for faster access to patching tools under allied quotas. Open models already running on town-hall computers are used quietly, because they cannot be recalled anyway.
 
-The argument is that the 2029 intrusion took weeks to map, and that the tooling behind it can now be reproduced on anyone's laptop. Without a response that visibly puts defenders ahead, the Union's last standing and trust evaporate.
+The argument is that the 2029 intrusion took weeks to map, and that the tooling behind it can now be reproduced on anyone's laptop. Without a response that visibly puts defenders ahead, the Union's last political capital and trust evaporate.
 
-What political weight the Commission has left goes behind the recovery corps.
+What political capital the Commission has left goes behind the recovery corps.
 
 What it does not do is protect a single job.
 

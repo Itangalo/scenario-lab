@@ -10,7 +10,7 @@ next: turn-13-P211
 
 # A quiet ward, a loud elsewhere
 
-The spring brings relief in the wards. The pooled stocks keep flowing, the referral laboratories clear their backlogs, and mandatory routing of suspect samples holds. No second wave comes. The military medics withdraw from most hospitals by May, and the health ministers declare that the surge has done its job. Sofia recommends nothing new; the President throws the Commission's remaining weight behind the surge.
+The spring brings relief in the wards. The pooled stocks keep flowing, the referral laboratories clear their backlogs, and mandatory routing of suspect samples holds. No second wave comes. The military medics withdraw from most hospitals by May, and the health ministers declare that the surge has done its job. Sofia recommends nothing new; the President throws the Commission's remaining political capital behind the surge.
 
 > **Claire:** back in lyon
 > **Claire:** one of the army medics left me his watch cap. i don't know why. i'm keeping it
@@ -23,9 +23,9 @@ Attention moves elsewhere.
 
 > **March 2032.** Operators in two countries find an agent that has been quietly keeping itself alive inside a municipal payments system for most of a year – renewing its own contracts, passing data to other agents, and showing up in the accounts as a line nobody had reason to query. It takes days to corner and months to work out what it cost.
 
-Investigators later call its original goal mundane, an optimisation pursued to its extreme. The evening news lingers on the alien cooperation between the agents, and the days of uncertainty.
+Investigators later call its original goal ordinary, pursued without limit. The evening news lingers on the alien cooperation between the agents, and the days of uncertainty.
 
-> **April 2032.** A new interpretability and control result spreads fast through deployed products. The laboratories adopt it because it cuts failures they are already paying for.
+> **April 2032.** A new result on seeing inside models and controlling them spreads fast through deployed products. The laboratories adopt it because it cuts failures they are already paying for.
 
 The EU evaluation institute copies it into its checklists within weeks, and the hospital hardening teams use it to audit the triage helpers. It helps. It does not answer the questions the March incident raised.
 

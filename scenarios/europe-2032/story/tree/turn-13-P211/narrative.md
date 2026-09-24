@@ -26,13 +26,13 @@ The second story undercuts the first. The cures run on foreign models and foreig
 
 > **October 2032.** Germany formalises its own supply arrangement with an American hyperscaler to guarantee its doses, and defends it as pragmatism.
 
-The other capitals call it an auction of the common line. Sofia's last new measure, the EU Clinical Benefit Delivery Pact, launches into that split, and the President backs it in the College and in public: pooled negotiation, second-source clauses and first-delivery slots, if the separate deal is folded in. The offer stays on the table through December, unsigned.
+The other capitals call it an auction of the common line. Sofia's last new measure, the EU Clinical Benefit Delivery Pact, launches into that split, and the President backs it before the Commissioners and in public: joint negotiation, a backup supplier for every contract and a place at the front of the queue, if the separate deal is folded in. The offer stays on the table through December, unsigned.
 
 The money leaves the sector while the ministers argue.
 
 > **September 2032.** AI valuations reset hard. Announced data-centre expansions are cancelled rather than delayed, and several financing structures European projects had counted on evaporate.
 
-The builders who promised machine labour at scale spend the half-year explaining missed deliveries: warehouse robots work where the floors were rebuilt around them, and stop at the door.
+The builders who promised machine labour at scale spend the months explaining missed deliveries: warehouse robots work where the floors were rebuilt around them, and stop at the door.
 
 What was built for biology holds. The detection network and the mutual-aid stocks complete their rollout, suspect samples are routed as routine, and the referral laboratories clear cases without the panic of last year. No second wave comes to test them, and officials claim the quiet as success.
 

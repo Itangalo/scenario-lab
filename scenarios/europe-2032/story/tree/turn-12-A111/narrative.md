@@ -31,10 +31,10 @@ Sofia drafts the protest. The Union sends it to both capitals and receives condo
 >
 > **Claire:** you keep saying that like it's yours
 
-The continuity shield completes in time to matter. Protected circuits hold around most certified clinics, and grid isolation keeps the struck port from cascading into Rotterdam and the Mediterranean ground stations.
+The lights-on plan completes in time to matter. Protected circuits hold around most certified clinics, and cutting the struck port off from the grid keeps the damage from spreading to Rotterdam and the Mediterranean ground stations.
 
 And the joint cyber and biosurveillance pool, with real-time intrusion feeds and binding sample-sharing, finally invites the Union in. It joins. Sofia's note that month stands up a casualty and threat-intake operation at the struck port – decontamination, grid isolation, protected failover for the clinics – and feeds what it finds into the pool.
 
-None of it feels like sovereignty. Chip prices rise again, licensing queues stretch to months, and another set of openly released weights is already running on private servers, beyond recall, and capable enough that the evaluation hosts have quietly stopped trying to say which model any given artefact came from.
+None of it feels like sovereignty. Chip prices rise again, licensing queues stretch to months, and another openly downloadable model is already running on private servers, beyond recall, and capable enough that the testing centres have quietly stopped trying to say which model any given output came from.
 
 Neutrality holds as concrete and cordons. As politics, it bleeds.

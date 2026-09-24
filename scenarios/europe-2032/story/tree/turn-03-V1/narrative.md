@@ -22,13 +22,13 @@ It comes as a wave, not a single strike. Automated ransomware spreads across mun
 >
 > **Claire:** send them to lyon first. i'm biased
 
-Brussels activates the emergency reserve. Joint response teams go to the worst-hit sites, and EU-paid recovery licences are pushed out. When insurers threaten to pull cover for essential operators, Sofia's note becomes the Incident Continuity Backstop, and finance ministers quietly agree to a temporary public reinsurance line behind it. The President puts the Commission's standing behind it.
+Brussels opens the EU's emergency fund. Joint response teams go to the worst-hit sites, and EU-paid recovery licences are pushed out. When insurers threaten to stop covering essential operators, Sofia's note becomes the backstop: finance ministers quietly agree that governments will, for a time, cover insurers' losses so the insurers stay in. The President stakes the Commission's political capital on it.
 
-The backstop holds. No insurer exits outright, and services degrade rather than stop. The recovery is ragged all the same: smaller municipalities lack staff to use the tools, mutual aid arrives late in one country after a quarrel at its interior ministry, and the costs overrun. Attribution is still unresolved in December.
+The backstop holds. No insurer exits outright, and services degrade rather than stop. The recovery is ragged all the same: smaller municipalities lack staff to use the tools, mutual aid arrives late in one country after a quarrel at its interior ministry, and the costs overrun. Who was behind it is still unknown in December.
 
-> **November 2027.** Washington tightens chip export controls again. Allied buyers keep volume licences, but new paperwork and compliance checks slow deliveries of advanced accelerators to Europe and raise their price.
+> **November 2027.** Washington tightens chip export controls again. Allied buyers keep volume licences, but new paperwork and compliance checks slow deliveries of advanced AI chips to Europe and raise their price.
 
-The Commission chooses not to retaliate. It keeps its equipment leverage in reserve and talks about wider coordination with other middle powers next year. One gigafactory site sees its foundations poured. Two others stay tangled in court injunctions.
+The Commission chooses not to retaliate. It keeps its leverage over ASML's machines in reserve and talks of working more closely next year with other middle powers. One gigafactory site sees its foundations poured. Two others stay blocked in court.
 
 > **December 2027.** Studies across law, accountancy, administration and consulting show clear productivity gains from AI assistants, strongest among junior staff, and no layoffs. Firms that cut early are rehiring.
 

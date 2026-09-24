@@ -14,7 +14,7 @@ review: (ECHO 2026-09-23) rewritten as a darker catastrophe ending
 
 > **9 January 2031, 23:50.** American and Chinese forces exchange strikes on orbital links, undersea cables and fabrication plants.
 
-Within days a cable landing station on the Atlantic and a power feed for a compute hall in southern France are damaged as collateral. Sofia's shelter, drafted for a war nobody wanted to name, goes out the next morning with almost no changes. The Union declares non-belligerency, denies offensive use of any infrastructure on its soil, and orders the backups dispersed.
+Within days a cable landing station on the Atlantic and a power line to a data centre in southern France are damaged as collateral. Sofia's shelter, drafted for a war nobody wanted to name, goes out the next morning with almost no changes. The Union declares that it takes no side, denies offensive use of any infrastructure on its soil, and orders the backups dispersed.
 
 The declaration does not take Europe off anyone's targeting maps. Insurance for shipping and chip supplies spikes. The reserve teams that had spent two years restoring town-hall registries are reassigned to guard grid switchgear and hospital power, and the Transition Shield's wage top-ups keep paying, late but steady.
 
@@ -27,7 +27,7 @@ The declaration does not take Europe off anyone's targeting maps. Insurance for 
 
 > **February 2031.** Tailored therapies for previously untreatable blood and immune diseases reach ordinary clinics in the United States, and weeks later, in licensed batches, in Shanghai.
 
-In March, through the care network's licences, the first European patients receive courses, and the evening news shows remissions nobody had dared to promise. Every dose depends on a production line across a war zone. Pharmacists count their stocks in weeks, not months.
+In March, through the licences the shelter negotiated, the first European patients receive courses, and the evening news shows remissions nobody had dared to promise. Every dose depends on a production line across a war zone. Pharmacists count their stocks in weeks, not months.
 
 The war, meanwhile, moves up. Both sides have learned that the fastest way to hurt the other's computing is from orbit: blind the satellites that carry its data, and the data centres below go deaf. In April the constellations start to fall. Navigation degrades across the northern hemisphere. Ships in the Channel go back to radar and paper charts.
 
@@ -35,7 +35,7 @@ Then, in May, something falls that was never supposed to be touched. Both countr
 
 A nuclear power that cannot see launches is a nuclear power that has to guess. Both governments move their forces to the highest state of alert either has declared since the Cold War. Bombers are dispersed. Submarines leave port and go silent. The hotline between the two capitals is used every day and settles nothing, because neither side can prove to the other what it is not doing.
 
-Europe has nothing to offer and nowhere to stand. The Council meets and issues a call for restraint that nobody in either capital reads. France and Britain raise their own alert levels, quietly. Pharmacies run out of iodine tablets in a single afternoon. In Lyon the schools run their confinement drill, the one practised every year for a toxic cloud or an accident at the nuclear plant up the Rhône. This time nobody tells the children it is just for practice.
+Europe has nothing to offer and nowhere to stand. EU leaders meet and issue a call for restraint that nobody in either capital reads. France and Britain raise their own alert levels, quietly. Pharmacies run out of iodine tablets in a single afternoon. In Lyon the schools run their confinement drill, the one practised every year for a toxic cloud or an accident at the nuclear plant up the Rhône. This time nobody tells the children it is just for practice.
 
 > **Claire:** they gave us a leaflet at work. what to do if
 > **Claire:** it says stay inside. that's the whole leaflet

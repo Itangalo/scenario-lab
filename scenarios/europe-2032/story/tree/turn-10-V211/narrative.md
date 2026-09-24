@@ -30,8 +30,8 @@ A third shock is quieter, and it changes the repair war.
 
 The crews who held the appointment systems and port clearance through the winter watch them jam again after cleaning.
 
-What holds is unglamorous. The municipal backup kits and clinic sentinels deployed last year keep triage moving between paper and digital, and keep dispatch logs and port manifests moving, without the frontier provider. Sofia's fallback stack, recommended in the winter, goes out now as standing rosters: the embedded Union repair teams swap in smaller European-hosted open models for prescribing notes and dispatch summaries, and stay until the systems hold. The mayors credit them. Containment is coordinated through the emergency health channels, without a new vote.
+What holds is unglamorous. The municipal backup kits and clinic sentinels deployed last year keep triage moving between paper and digital, and keep dispatch logs and port manifests moving, without the frontier provider. Sofia's fallback stack, recommended in the winter, goes out now as permanent crews: the Union repair teams already in place swap in smaller open models hosted in Europe for prescribing notes and dispatch summaries, and stay until the systems hold. The mayors credit them. Containment is coordinated through the emergency health channels, without a new vote.
 
-Everything else gives. No new factory money is voted. The curbs on servicing chipmaking tools are obeyed. The Council is asked only to endorse continuity, not money, for fear a budget fight would break the Union's cohesion entirely.
+Everything else gives. No new factory money is voted. The curbs on servicing chipmaking tools are obeyed. The member states are asked only to back keeping services running, not for money, for fear a budget fight would break the Union's unity entirely.
 
 Citizens see the queues hold without shortening, and blame both the provider who cut them off and the Union that let them depend on it.

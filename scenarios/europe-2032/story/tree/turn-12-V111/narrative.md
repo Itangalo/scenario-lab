@@ -29,6 +29,6 @@ The methodologists attack it, and others accuse the authors of publishing too mu
 
 The firms insist this is targeted automation, not a general wave, and point to juniors kept elsewhere and early cuts reversed. The unions call it a broken promise. The evening news leads with graduates without offers.
 
-Against that, the city halls can point to something working. Several municipal health administrations using European-hosted models cut their waiting lists and decision times measurably, and the Commission claims the credit loudly. It steadies the talks with the unions. It does not shift a mood shaped by paper wards and fear for jobs.
+Against that, the city halls can point to something working. Several municipal health administrations using European-run models cut their waiting lists and decision times measurably, and the Commission claims the credit loudly. It steadies the talks with the unions. It does not shift a mood shaped by paper wards and fear for jobs.
 
 The lockdown completes its term. Where the isolation gates hold, the winter's intrusions stop at the boundary. Where the new bio screening lags, officials admit in private that the gaps remain.

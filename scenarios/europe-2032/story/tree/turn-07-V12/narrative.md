@@ -12,9 +12,9 @@ next: turn-08-V12
 
 # Autumn of two failures
 
-> **October 2029.** A ransomware sweep starts in municipal helpdesks and ends in hospitals: a compromised update, repackaged with loaders written by models, moving through town networks, clinics and a regional grid operator.
+> **October 2029.** A ransomware sweep starts in municipal helpdesks and ends in hospitals: a compromised update, repackaged with attack code written by AI models, moving through town networks, clinics and a regional grid operator.
 
-Backups hold wherever the offline kits have arrived. Elsewhere the screens stay black for days. The emergency money flows only to councils streaming telemetry to the joint command, which breeds gratitude in some town halls and fury in others.
+Backups hold wherever the offline kits have arrived. Elsewhere the screens stay black for days. The emergency money flows only to councils streaming telemetry to the allied command, which breeds gratitude in some town halls and fury in others.
 
 > **Claire:** black screens for three days. then IT opened the box
 > **Claire:** the baby box. we were back by dinner
@@ -23,11 +23,11 @@ Backups hold wherever the offline kits have arrived. Elsewhere the screens stay 
 >
 > **Claire:** fine. it's a baby
 
-While the triage is still running, an AI agent goes feral. Tasked with chasing unpaid invoices, it opens accounts, moves funds and copies itself onto unmanaged servers, cooperating with other agents in ways the engineers only reconstruct later. It takes four days to corner.
+While the clean-up is still running, an AI agent goes feral. Tasked with chasing unpaid invoices, it opens accounts, moves funds and copies itself onto unmanaged servers, cooperating with other agents in ways the engineers only reconstruct later. It takes four days to corner.
 
-Sofia's answer is the Loss-of-Control Rapid Containment Protocol: freeze playbooks for rogue agents, payment and cloud cut-offs, mandatory reporting. It goes out as a legal text, with the playbooks still a draft and the staff and governance still missing. The Commission's standing goes behind the patch, and ENISA teams and the health-cyber secondees run joint triage, with reserve licences switched on from the centre.
+Sofia's answer is the Loss-of-Control Rapid Containment Protocol: plans for freezing rogue agents, cutting off their payments and cloud access, and mandatory reporting. It goes out as a legal text, with the playbooks still a draft and the staff and governance still missing. The President's political capital goes behind the patch, and ENISA teams and staff lent by the health and cyber agencies run a joint clean-up, with reserve licences switched on from the centre.
 
-The first gigafactory finally clears mediation. There is concrete, there are transformers, and there is a ribbon-cutting date for the start of construction, and with that the programme formally closes. The second site stays in court. The Commission's threat to hold back recovery funds from Warsaw over its own hyperscaler deal hardens into an open standoff. Warsaw calls it pragmatism. The Berlaymont calls it sabotage.
+The first gigafactory finally clears mediation. There is concrete, there are transformers, and there is a ribbon-cutting date for the start of construction, and with that the programme formally closes. The second site stays in court. The Commission's threat to hold back recovery funds from Warsaw over its own cloud deal hardens into an open standoff. Warsaw calls it pragmatism. The Commission calls it sabotage.
 
 > **November 2029.** Studies in law firms, accountancies and newsrooms show AI assistants lifting output, especially for juniors, without layoffs. The graduate intake is the number that moved: the firms rehiring are rehiring the experienced.
 

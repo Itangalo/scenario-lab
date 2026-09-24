@@ -13,14 +13,14 @@ next: turn-10-A212
 
 **EU Neutrality Shelter and Lifeline Continuity Operation.** Preparedness and resilience. Running until the second half of 2032.
 
-Sofia recommends the same shelter – non-belligerency declared in advance, lights, hospitals, registries and bio-detection kept running through whatever comes out of the strait – but with the Commission's standing behind the care network, not the shelter.
+Sofia recommends the same shelter – a pledge in advance to take no side, lights, hospitals, registries and bio-detection kept running through whatever comes out of the strait – but with the Commission's political capital behind the care network, not the shelter.
 
-The Union refuses any basing or targeting use of its fabs, cables and data centres, disperses clean images and reserve ENISA teams, and ring-fences the social and health funds so that the Transition Shield's top-ups and the placements in hospitals, registries and grid operators keep being paid. Any new therapy is procured only on condition of sovereign hosting, verification by the medicines agency and delivery through public clinics, with no dependence on an American or Chinese cloud. The placements are tied to triage, sequencing and restoration crews, so that nurses and unions see staffing, not sorting machines.
+No one may base forces at, or aim strikes from, the Union's chip plants, cables and data centres. Clean backups and ENISA's reserve teams are spread out; the social and health budgets are protected so that the Transition Shield's top-ups and the placements in hospitals, registries and grid operators keep being paid. A new therapy is bought only if hosted on European servers, checked by the EU's medicines agency and delivered through public clinics, free of any American or Chinese cloud. The placements are tied to triage, sequencing and restoration crews, so that nurses and unions see staffing, not sorting machines.
 
 The argument is that after last autumn's warning about pathogen design, the pooled reagents, hardened logistics and European-hosted triage are the lifeline itself. A shelter that protects cables and not clinics protects the wrong thing.
 
-What political weight the Commission has left goes behind the bio-detection and care network.
+What political capital the Commission has left goes behind the bio-detection and care network.
 
 What it does not do is bring Europe any closer to the frontier.
 
-*All twenty simulated responses to this situation built a shelter of this kind. Eight put the Commission's standing behind the care network, as this one does. Twelve put it behind the shelter itself, the other recommendation.*
+*All twenty simulated responses to this situation built a shelter of this kind. Eight put the Commission's political capital behind the care network, as this one does. Twelve put it behind the shelter itself, the other recommendation.*

@@ -14,11 +14,11 @@ next: turn-06-A12
 
 Sofia recommends a two-year commitment to regaining trusted capacity and resilience of the Union's own – and meeting the robots before they arrive in numbers.
 
-The Protocol makes safety interlocks, remote stop and manual override mandatory for industrial and service robots working in the Union, and rehearses continuity for logistics and care wherever robots replace workers, starting with Chinese-built fleets and American control software. It runs through the Machinery Regulation and the network-security rules: a registry of commercial fleets, an audit of every kill switch and manual fallback, and joint exercises with operators in ports, warehouses and hospitals. The new American administration is asked for joint evaluation of the control models. Chinese supply dependencies are screened rather than banned, because a ban could not be enforced.
+The Protocol makes safety interlocks, remote stop and manual override mandatory for industrial and service robots working in the Union, and rehearses how logistics and care keep running wherever robots replace workers, starting with Chinese-built fleets and American control software. Under the EU's machine-safety and network-security rules, it sets up a registry of commercial fleets, audits every kill switch and manual fallback, and runs joint exercises with operators in ports, warehouses and hospitals. The new American administration is asked for joint testing of the software that controls the robots. Dependence on Chinese suppliers is screened rather than banned, because a ban could not be enforced.
 
 The argument is that the machines will come from outside, onto the industrial base Europe still leads in, and with the public already sour they cannot be banned. They can be made stoppable, and their failures survivable.
 
-The President puts the Commission's standing behind the Trust Pact first. Nothing else lands if mayors keep blaming Brussels for boil-water notices and uninsured downtime.
+The President puts the Commission's political capital behind the Trust Pact first. Nothing else lands if mayors keep blaming Brussels for boil-water notices and uninsured downtime.
 
 What it does not do is take up Washington's offer of access.
 

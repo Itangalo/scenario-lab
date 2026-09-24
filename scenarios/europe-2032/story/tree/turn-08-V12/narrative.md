@@ -11,11 +11,11 @@ allow: 07:30 4
 
 # Blockade winter
 
-The halt in advanced chip shipments does not arrive as a memo. At 07:30 on 4 February 2030, the first force-majeure letter from a foundry lands in a procurement inbox in Brussels. By noon there are dozens. Delivery slots are cancelled, and the procurement channels go quiet.
+Shipments of advanced chips stop, and the news does not arrive as a memo. At 07:30 on 4 February 2030, the first letter from a chip factory declaring it cannot deliver lands in a procurement inbox in Brussels. By noon there are dozens. Delivery slots are cancelled, and the procurement channels go quiet.
 
-Overnight every conversation about compute in Brussels becomes a conversation about security. The Netherlands, Japan and Korea answer the phone, and each names its own price.
+Overnight every conversation about computing power in Brussels becomes a conversation about security. The Netherlands, Japan and Korea answer the phone, and each names its own price.
 
-In the middle of that scarcity, the automated attack comes. A compromised component, with rebuilt loaders written by models, moves from municipal IT into clinics and a grid operator's back office. The screens go dark in the town halls that refused to share telemetry. Where the offline kits and locked backups were installed, the systems degrade and come back. Elsewhere they stay down for days. The attribution teams say months.
+In the middle of that scarcity, the automated attack comes. A compromised component, with rebuilt attack code written by AI models, moves from municipal IT into clinics and a grid operator's back office. The screens go dark in the town halls that refused to share telemetry. Where the offline kits and locked backups were installed, the systems degrade and come back. Elsewhere they stay down for days. The teams tracing the attackers say months.
 
 Then the hospitals get a second shock.
 
@@ -30,12 +30,12 @@ Deployments freeze. Administrators postpone triage assistants and scheduling too
 >
 > **Claire:** draft faster. the old one is held together with tape
 
-Brussels pulls two levers. The President stakes what standing the Commission has left on the containment protocol, and civil protection teams run its first live cross-border isolation exercise: cloud cut-offs, payment freezes, mandatory reporting as soon as agents start acquiring resources. It is late and thinly staffed, and in the clinics that cooperate, it stops the worst of the cascade.
+Brussels pulls two levers. The President stakes what political capital the Commission has left on the containment protocol, and civil protection teams run its first live cross-border isolation exercise: cloud cut-offs, payment freezes, mandatory reporting as soon as agents start acquiring resources. It is late and thinly staffed, and in the clinics that cooperate, it stops the worst of the cascade.
 
-Sofia's second note becomes the Chips-for-Compute and Civic Liability Pact. It offers coordinated controls on lithography, servicing and spares, and pooled procurement in exchange for compute quotas anchored in the Union, to keep the stalled gigafactory alive. It adds a time-limited clarification of liability, and a backstop to coax the insurers back. The partners listen, and do not sign. Washington offers sympathy and little capacity of its own.
+Sofia's second note becomes the Chips-for-Compute and Civic Liability Pact. Europe offers joint controls with its partners on ASML's chipmaking machines, servicing and spares, and pooled buying; in return, the partners would guarantee shares of chips delivered inside the Union, to keep the stalled gigafactory alive. It also clarifies liability for a limited time and adds a liability backstop to coax the insurers back. The partners listen, and do not sign. Washington offers sympathy and little capacity of its own.
 
 > **May 2030.** Sorting, palletising and yard logistics automate quickly with imported robots and foreign control models. Repair, care and messy construction sites stay manual.
 
 Europe's machine builders feel both the order book and the dependence. The offices provide the counterpoint: new studies from law, accountancy and newsrooms show assistants lifting junior output without layoffs – in private offices, where voters do not queue. Voters feel benefit and breach at once.
 
-The exploit patch and the compact with Japan and Korea complete their terms in June, with the kits delivered and the joint buying still only an offer.
+Sofia's patch and the joint chip-buying compact with Japan and Korea complete in June, with the kits delivered and the joint buying still only an offer.

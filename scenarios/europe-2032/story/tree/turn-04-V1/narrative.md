@@ -10,7 +10,7 @@ next: turn-05-V1
 
 # Plugging in
 
-The first half of 2028 brings no repeat of the October wave, and the breathing space matters. The two shields Brussels has been building finally become real, and both finish on time. Centrally procured detection licences are now installed across most grid operators and large hospitals, and the behaviour-based blocking tools learn to share signatures across borders. When probes come in March and May, they are absorbed faster. Services degrade, and they do not stop.
+The first half of 2028 brings no repeat of the October wave, and the breathing space matters. The Shield and the swarm defences finally become real, and both finish on time. Centrally procured detection licences are now installed across most grid operators and large hospitals, and the behaviour-based blocking tools learn to share what they spot across borders. When probes come in March and May, they are absorbed faster. Services degrade, and they do not stop.
 
 That competence earns Brussels an invitation it could not have built for itself.
 
@@ -31,6 +31,6 @@ The timing is uncomfortable.
 
 The claim stays inside the biosecurity community, where methodologists shout at each other. The health officials take notice. The new pact suddenly looks prescient, and screening guidance for DNA synthesis providers is quietly drafted.
 
-Sovereign compute still lags. Mediation unblocks one of the two injuncted gigafactory sites for site works; the other stays in court. American accelerator deliveries remain slow and expensive under the tighter paperwork, and Brussels holds its equipment leverage without using it. The offices keep reporting steady gains from assistants without layoffs, which keeps the public mood ambivalent rather than hostile: useful at work, frightening in the lab.
+Europe's own computing power still lags. After mediation, one of the two gigafactory sites blocked in court may start ground work; the other stays in court. American AI chips still arrive slowly and expensively under the tighter paperwork, and Brussels holds its leverage over ASML without using it. The offices keep reporting steady gains from assistants without layoffs, which keeps the public mood ambivalent rather than hostile: useful at work, frightening in the lab.
 
-The recovery stays ragged at the edges. Small municipalities still lack staff, and one mutual-aid deployment arrives late after another quarrel, with the President still spending the Commission's standing on the backstop. But the insurers stay in, and voters notice that the hospitals stayed open.
+The recovery stays ragged at the edges. Small municipalities still lack staff, and one mutual-aid deployment arrives late after another quarrel, with the President still spending political capital on the backstop for insurers. But the insurers stay in, and voters notice that the hospitals stayed open.

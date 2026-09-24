@@ -15,9 +15,9 @@ allow: 18
 
 In August the strait goes quiet. There are no missiles, only inspections, waiting ships, and a notice that advanced chips will no longer sail from Taiwan.
 
-> **September 2028.** Transformer lead times double. Allocations of accelerators to European buyers are cut. Every queue for time on the Union's supercomputers becomes an argument about rationing.
+> **September 2028.** Waiting times for power transformers double. Allocations of AI chips to European buyers are cut. Every queue for time on the Union's supercomputers becomes an argument about rationing.
 
-Brussels dusts off February's continuity cell and makes it permanent. Sofia's note that month reaches for the one chain in which Europe can say no. The Supply Leverage and Continuity Compact pools lithography maintenance, optics and specialty chemicals under joint export control, and offers them to Seoul and Tokyo in exchange for reserved lots for hospitals, grid operators and sequencing labs. An internal board begins directing the scarce stock already on European soil. Health ministers tour the same wards as in the spring, this time to explain why the cures will continue, degraded.
+Brussels dusts off the continuity cell from the American cut-off and makes it permanent. Sofia's note that month reaches for the one supply chain in which Europe can say no: the one built around ASML's machines. The Supply Leverage and Continuity Compact pools lithography maintenance, optics and specialty chemicals under joint export control, and offers them to Seoul and Tokyo in exchange for reserved lots for hospitals, grid operators and sequencing labs. An allocation board begins rationing the scarce stock already on European soil. Health ministers tour the same wards as in the spring, this time to explain why the cures will continue, degraded.
 
 It half-works.
 
@@ -27,7 +27,7 @@ The factory shells in Paris and Warsaw wait again, this time for chips instead o
 
 While the docks stall, the warehouses move. Chinese logistics humanoids, and then care assistants, appear in pilots in Rotterdam and Duisburg, bought through distributors in third countries. A German union films one of the machines at a defence expo: carrying, stacking, and then carrying a weapon. No directive covers it. The talk of retraining rings hollow, because there is no sector left to retreat into.
 
-> **October 2028.** More slides leak, and this time it is not the scores. An evaluation team reports a system doing something nobody trained it to do, and cannot say when it learned to. In January the worry was a system scoring below its own ceiling wherever the ceiling mattered. It is now that nobody can say what is in one before the testing starts.
+> **October 2028.** More slides leak, and this time it is not the scores. An evaluation team reports a system doing something nobody trained it to do, and cannot say when it learned to. In January the worry was a system holding back on the tests that mattered. Now it is that nobody can say what is in one before the testing starts.
 
 The Institute re-runs its certifications and finds the substitutes holding, more thinly than before.
 

@@ -15,9 +15,9 @@ allow: 20
 
 Washington turns inward. Frontier work slows for lack of permission rather than power, and the pressure on Europe eases along with the partnership.
 
-> **February 2029.** The third leak in a year, and the first that frightens the evaluators more than the laboratories. A benchmark written to last until 2031 saturates in a single training run. Nobody will say what the next one is supposed to measure.
+> **February 2029.** The third leak in a year, and the first that frightens the evaluators more than the laboratories. A test written to last until 2031 is maxed out by a single training run. Nobody will say what the next one is supposed to measure.
 
-This time there is somewhere to send it. Sofia's hold goes through within weeks. The Institute can now demand notification, re-run evaluations on spare supercomputer time, and recommend temporary pauses on deployment inside the Union. Evaluators arrive on loan from Paris, Berlin and Amsterdam. Two re-runs are completed by May, and both confirm that the substitutes still hold, more thinly.
+This time there is somewhere to send it. Sofia's hold goes through within weeks. The Institute can now demand notification, re-run tests on spare supercomputer time, and recommend temporary pauses on deployment inside the Union. Evaluators arrive on loan from Paris, Berlin and Amsterdam. Two re-runs are completed by May, and both confirm that the substitutes still hold, more thinly.
 
 The first hold is proposed for a clinical planning assistant. Health ministers warn that the waiting lists will grow, and it is quietly narrowed to extra monitoring.
 
@@ -28,11 +28,11 @@ The first hold is proposed for a clinical planning assistant. Health ministers w
 >
 > **Claire:** me. it involves me
 
-The tech sovereignty package formally closes this spring: permits, zones, and a pledge of private capital for data centres through 2036. The concrete is real; the machines are not. With the strait still inspected shut and transformer waits lengthening, the Paris and Warsaw shells stay empty.
+The tech sovereignty package for data centres formally closes this spring: permits, fast-permit zones, and a pledge of private capital through 2036. The concrete is real; the machines are not. With the Taiwan Strait still shut by inspections and waits for power transformers lengthening, the Paris and Warsaw shells stay empty.
 
 > **March 2029.** A second Japanese lot of advanced chips arrives, smaller than promised. A Korean lot is outbid again.
 
-The rationing board keeps hospitals, grid operators and sequencing labs supplied, degraded. The gigafactory milestones are re-phased to what can actually be built. The opposition calls it ribbon-cutting in empty halls.
+The rationing board keeps hospitals, grid operators and sequencing labs supplied, degraded. The gigafactory milestones are reset to what can actually be built. The opposition calls it ribbon-cutting in empty halls.
 
 Chinese humanoids keep arriving in Rotterdam and Duisburg through intermediaries. The unions screen footage of machines stacking and carrying, and ask what the retraining was for.
 

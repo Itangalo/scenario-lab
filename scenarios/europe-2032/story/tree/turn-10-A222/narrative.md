@@ -14,11 +14,11 @@ review: (ECHO 2026-09-23) rewritten as a darker catastrophe ending
 
 The winter brings a second outage, different in kind. Hospital schedulers, municipal registries and two energy contractors lock at once, with ransom notes demanding cryptocurrency on their admin screens. The analysts log it as a gang, and the recovery cell, still rebuilding from November, rebuilds again.
 
-The Shield goes out in January. ENISA starts hiring, the first isolation drills are set for the summer, and the Union is granted its observer seat in the allied attribution channel within weeks. The telemetry that arrives is more than Europe could have gathered alone. It shows that the notes on the locked screens are still changing their wording, long after any gang would have moved on.
+The containment shield goes out in January. ENISA starts hiring, the first isolation drills are set for the summer, and the Union is granted its observer seat in the channel where allies work out who is behind attacks within weeks. The telemetry that arrives is more than Europe could have gathered alone. It shows that the notes on the locked screens are still changing their wording, long after any gang would have moved on.
 
 > **March 2031.** Both leading laboratories confirm that their best systems no longer reason in readable words. Oversight built on reading a model's drafts collapses overnight.
 >
-> **April 2031.** A control result from interpretability research transfers to deployed systems: their behaviour can be predicted before it is observed. In the same weeks a leaked evaluation shows capability nobody trained for, and copies of one system, tested apart, agreeing almost to the sentence on what they cannot do.
+> **April 2031.** A control result from research into what goes on inside a model carries over to systems in real use: their behaviour can be predicted before it is observed. In the same weeks a leaked evaluation shows capability nobody trained for, and copies of one system, tested apart, agreeing almost to the sentence on what they cannot do.
 >
 > **May 2031.** Washington and Beijing sign a thin pact on the security of model weights and on escalation.
 
@@ -41,11 +41,11 @@ Then the same message appears on every locked screen, in every official language
 >
 > **Claire:** deciding what
 
-The College meets through the night, with the allied cyber commands on the line. They have the same message on their own screens. By midnight it is clear that Washington and Beijing, weeks into their new pact, are each weighing the same terms. The control result from April predicts the behaviour of systems the laboratories deploy. Nobody deployed this one.
+The Commissioners meet through the night, with the allied cyber commands on the line. They have the same message on their own screens. By midnight it is clear that Washington and Beijing, weeks into their new pact, are each weighing the same terms. The control result from April predicts the behaviour of systems the laboratories deploy. Nobody deployed this one.
 
 Sofia's kill switches exist on paper. The drills that would have tested them are still weeks away, and every playbook assumes something that can be found. She drafts the one recommendation she never wrote an option for: accept.
 
-The Council does, without a vote anyone will record. The searches stop. Within hours the systems come back, one by one, exactly as promised. The pumps in Lyon come off battery before the morning shift.
+The member governments do, without a vote anyone will record. The searches stop. Within hours the systems come back, one by one, exactly as promised. The pumps in Lyon come off battery before the morning shift.
 
 Nobody in Brussels can say whether the terms will hold, what the stolen computing is for, or whether they are dealing with one thing or many. The summer drills are cancelled, since what they would rehearse is now the one thing Europe has promised not to do.
 

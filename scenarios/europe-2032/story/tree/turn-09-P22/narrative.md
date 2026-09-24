@@ -22,13 +22,13 @@ The segmentation kits and pooled breaker logs buy hours where they exist. Elsewh
 >
 > **Claire:** no. because i'm old
 
-Brussels orders the drills to become operations. National response teams work through the crisis network, pulling compromised dependencies offline, and Sofia's note that week does the one thing the stockpiles make possible. It becomes the EU Essential Services Black-Start and Manual Fallback Network, and the President moves the Commission's standing onto it: the off-books fuel and transformer pools are brought on-scheme with civil-protection reimbursement and turned into a cross-border fallback for hospitals, grid operators and municipalities. It is announced as restoration by hand, using what is already on European soil, because nothing more can be bought.
+Brussels orders the drills to become operations. National response teams work through the crisis network, pulling compromised dependencies offline, and Sofia's note that week does the one thing the stockpiles make possible. It becomes the black-start network, for restarting essential services by hand after a total failure, and the President moves the Commission's political capital onto it: the off-books fuel and transformer pools are taken into the EU's joint disaster-response scheme, their owners repaid, and turned into a cross-border fallback for hospitals, grid operators and municipalities. It is announced as restoration by hand, using what is already on European soil, because nothing more can be bought.
 
-> **November 2030.** Washington tightens export licences again. Allied buyers go on volume quotas for advanced chips and model access, and servicing for older lithography tools needs approval case by case.
+> **November 2030.** Washington tightens export licences again. Allied buyers go on volume quotas for advanced chips and model access, and servicing for older chip-making machines needs approval case by case.
 
 The Hague complies, again under protest. Talks with Tokyo and Seoul on spares and servicing produce sympathy and samples, not a supply line. The clinics stay on a European default with an American fallback that is now explicitly metered. Factory managers describe their position plainly: fenced in, and metered from outside.
 
-The public mood turns openly hostile. The coverage links the March agent to the autumn sweep as one story of machines running beyond their minders. Vandalism of telemetry cabinets returns to the press, and the local pools of fuel and parts grow bolder. The Commission spends what little standing it has keeping a common line, and ends the year with almost none.
+The public mood turns openly hostile. The coverage links the March agent to the autumn sweep as one story of machines running beyond their minders. Vandalism of telemetry cabinets returns to the press, and the local pools of fuel and parts grow bolder. The Commission spends what little political capital it has keeping a common line, and ends the year with almost none.
 
 ## Note to the President
 
@@ -46,9 +46,9 @@ What held:
 What did not:
 
 - Our tools. Staff prefer the American fallback, and it is now metered.
-- Our lever. The lithography chokepoint was pulled by Washington, and we issued conclusions.
+- Our lever. The chip-machine chokepoint was pulled by Washington, and we issued a statement.
 - The factories. Fenced, as they have been for two years.
-- Our standing. It is gone again.
+- Our political capital. It is gone again.
 
 What is changing:
 

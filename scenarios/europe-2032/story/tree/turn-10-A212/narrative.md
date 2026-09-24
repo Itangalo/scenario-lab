@@ -16,7 +16,7 @@ review: (ECHO 2026-09-23) rewritten as a darker catastrophe ending
 
 In February the war is far away. By March it is not. Airspace closes, power and data are rerouted in a hurry, and debris and sabotage scares end in a fire at a logistics hub near Rotterdam.
 
-Sofia's shelter goes out as drafted. The Union declares non-belligerency: no Union territory, ports, fabs or data centres for any targeting use, orders to protect airspace and cables, and the reserve teams dispersed again. The declaration does not stop the effects. Cloud outages roll through registries and hospitals. American frontier systems that European clinics and grid operators had quietly relied on become unreachable or restricted overnight.
+Sofia's shelter goes out as drafted. The Union declares that it takes no side: none of its territory, ports, chip plants or data centres may be used to aim strikes, airspace and cables are to be protected, and the reserve teams are dispersed again. The declaration does not stop the effects. Cloud outages roll through registries and hospitals. American frontier systems that European clinics and grid operators had quietly relied on become unreachable or restricted overnight.
 
 > **April 2031.** A second class of tailored therapy – rare inherited disease this time – reaches ordinary clinics abroad.
 
@@ -33,7 +33,7 @@ It is the last good news of the spring.
 
 The coastal and eastern states have been asking since March for air defence and cable patrols the centre cannot fund. They were asking because of what they could see from their side of the Baltic: drones over substations at night, ships loitering above the cables, jamming that grounds regional flights for hours at a time. With American forces committed in the Pacific, somebody has done the arithmetic of a Europe on its own.
 
-In May the arithmetic is tested. The interconnectors across the Baltic are cut in a single night, then the cables that carry the region's data. The Baltic grids, cut off from both their old and their new neighbours, go dark. Under that darkness, troops without insignia cross into a border district of one of the Baltic states, to "protect" a population nobody asked about.
+In May the arithmetic is tested. The interconnectors across the Baltic are cut in a single night, then the cables that carry the region's data. The Baltic grids, cut off from both their old neighbours and their new ones, go dark. Under that darkness, troops without insignia cross into a border district of one of the Baltic states, to "protect" a population nobody asked about.
 
 Washington says it stands by its allies, and that it has nothing to send. The eastern capitals invoke every clause of collective defence the Union and NATO have. The clauses hold on paper. Poland, Finland and the Baltic states mobilise. Germany and France send what they can move, which is less than anyone in the Council had assumed. The Union that declared itself outside one war in February is inside another by June, on its own soil, fought mostly by its own.
 

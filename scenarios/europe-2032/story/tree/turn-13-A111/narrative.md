@@ -29,7 +29,7 @@ Brussels was not at the table. It was briefed afterwards.
 
 Sofia's last note of the year offers what the Union has for a seat as verifier: the intrusion feeds from the joint pool, the triage work on the deceptive benchmark, and the Union's own controls on weight security and biological design tools, aligned in advance to the new floor so that joining is a technical step rather than a plea. The envoys listen politely. At year's end inclusion is neither granted nor refused.
 
-The neutral reserve completes its term. Capability growth eases slightly worldwide, and the openly released weights keep spreading, now on hundreds of thousands of private machines. The evaluation hosts warn that assurance is still far behind what the systems can do.
+The neutral reserve of ports and computing completes its term. Capability growth eases slightly worldwide, and the openly downloadable models keep spreading, now on hundreds of thousands of private machines. The testing centres warn that safety checks are still far behind what the systems can do.
 
 ## Note to the President
 
@@ -39,8 +39,8 @@ The short version: we kept the wards open. We were never in the room.
 
 What held:
 
-- The Shield, the Continuity Stack and the continuity shield. Through a cut-off, a pathogen, a war and a strike on our own soil, the hospitals stayed on.
-- The towns, mostly. They have manual fallbacks, some staff, and a European Investment Bank backstop that kept at least one insurer in the market.
+- The Shield for grids and networks, the Continuity Stack for hospital AI, and the wartime lights-on plan. Through a cut-off, a pathogen, a war and a strike on our own soil, the hospitals stayed on.
+- The towns, mostly. They have manual fallbacks, some staff, and the European Investment Bank's promise that kept at least one insurer in the market.
 - The joint pool. We are inside something that sees attacks in real time.
 
 What did not:

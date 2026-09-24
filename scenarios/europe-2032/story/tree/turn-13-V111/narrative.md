@@ -11,7 +11,7 @@ allow: 15
 
 # Covered, not closed
 
-The second half of 2032 is the half-year in which Brussels tries to be seen helping without building anything new.
+In the second half of 2032, Brussels tries to be seen helping without building anything new.
 
 The hospital shield surge finishes on paper. Wastewater sequencing stays on in the big western hubs, emergency-room screening keeps flagging suspect infections, and the DNA-synthesis checks continue where firms share their data.
 
@@ -26,9 +26,9 @@ The hospital shield surge finishes on paper. Wastewater sequencing stays on in t
 
 Officials call it proof that the money worked. Where the municipal clinics and eastern labs are still haggling over staff and data, coverage stays thin, and the French and Dutch teams spend the winter shuttling between follow-ups they never close.
 
-No new frontier capacity comes. The fallback of reserved supercomputing and European-hosted procurement keeps the city halls running, but private co-financing stays hesitant, and no gigafactory decision moves.
+No new frontier capacity comes. The fallback – reserved supercomputer time and public buying of European-run models – keeps the city halls running, but private investors stay hesitant, and no gigafactory decision moves.
 
-Sofia's last bet is on visibility. The Trusted Municipal AI and First-Job Re-entry Pact expands the triage, waiting-list and permitting assistants in municipalities already on the fallback, with Social Fund top-ups tied to keeping the audit gates on and publishing the results. Several city halls cut their waiting times again, and Brussels credits each one loudly. Employers in coding, analysis and support are pressed to sign first-job charters: subsidised junior places paid for from their automation savings.
+Sofia's last bet is on visibility. The Trusted Municipal AI and First-Job Re-entry Pact expands the triage, waiting-list and permitting assistants in municipalities already on the fallback, with extra EU money for jobs and training, tied to keeping the audits running and publishing the results. Several city halls cut their waiting times again, and Brussels credits each one loudly. Employers in coding, analysis and support are pressed to sign first-job charters: subsidised junior places paid for from their automation savings.
 
 The uptake is partial. A few sectoral agreements produce real places for newcomers; most firms sign vague pledges, or wait. The unions call the charters a down payment, not a reversal. The autumn's graduate fairs are tense, with small coordinated boycotts of automated recruiters and a data-protection inquiry in one member state. Entry-level hiring in routine office work still does not recover.
 

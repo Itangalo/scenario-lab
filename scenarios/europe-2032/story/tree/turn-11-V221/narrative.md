@@ -10,7 +10,7 @@ next: turn-12-V221
 
 # Green lights
 
-Brussels spends the autumn trying to make services look fixed. Sofia's note becomes the Municipal Cyber Restoration and Visible Service Guarantee. Emergency crews paid through cohesion funds rebuild the locked booking and payroll systems town by town and replace the compromised common component, and the mayors are given weekly dashboards to show green lights. In some municipalities the restoration is real and fast. In others the rebuilds stall over procurement disputes and a shortage of cleared engineers. The dashboards themselves become a grievance, when residents see "restored" next to queues that have not moved.
+Brussels spends the autumn trying to make services look fixed. Sofia's note becomes the Municipal Cyber Restoration and Visible Service Guarantee. Emergency crews paid from the EU's funds for poorer regions rebuild the locked booking and payroll systems town by town and replace the compromised common component, and the mayors are given weekly dashboards to show green lights. In some municipalities the restoration is real and fast. In others the rebuilds stall over procurement disputes and a shortage of security-vetted engineers. The dashboards themselves become a grievance, when residents see "restored" next to queues that have not moved.
 
 > **Claire:** the town hall dashboard says our booking system is green
 > **Claire:** the queue outside says otherwise. the queue is not green

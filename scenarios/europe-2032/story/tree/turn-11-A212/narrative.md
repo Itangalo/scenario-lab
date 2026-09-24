@@ -10,7 +10,7 @@ next: turn-12-A212
 
 # A market breaks, a queue forms
 
-> **September 2031.** Technology valuations reset in weeks. Data-centre projects are cancelled, accelerator orders paused. For the first time, the frontier laboratories talk about training less, not more.
+> **September 2031.** Technology valuations reset in weeks. Data-centre projects are cancelled, AI chip orders paused. For the first time, the frontier laboratories talk about training less, not more.
 
 Several private hosting deals that European hospitals and registries had quietly relied on evaporate with the valuations. In Brussels the rupture lands on top of the war. With transatlantic cloud links severed or throttled, clinics flicker back to paper for days. Repair ships for the cut cables wait months for wartime licences, and satellite capacity for neutral operators thins to a rumour of spare slots.
 
@@ -23,7 +23,7 @@ Several private hosting deals that European hospitals and registries had quietly
 
 > **October 2031.** Employers' surveys confirm what the regions already feel. Where one professional sector carried a local economy – the service towns, the back-office cities – the hollowing is not a cohort problem but a place problem, and it has no obvious floor.
 
-Sofia's answer is not to face the market alone. The Middle-Power Supply and Access Bargain brings the Union into a new coordination framework of middle powers holding chokepoints in the supply chain – aligning export licences, bargaining jointly for computing, pooling evaluation. The Council mandates pass quickly, and the coastal and eastern states are promised cable patrols and airspace protection from reprogrammed funds in exchange for holding the non-belligerency line on fabs and data centres.
+Sofia's answer is not to face the market alone. Her note, the middle-power bargain, brings the Union together with other mid-sized powers that each control a bottleneck in the chip supply chain: they line up export licences, bargain jointly for computing power and pool their testing. Member governments sign off quickly, and the coastal and eastern states are promised cable patrols and airspace protection, paid from shifted budgets, in return for keeping their chip plants and data centres out of the war.
 
 It helps at the margins. Joint bargaining keeps a few shipments of parts and maintenance contracts flowing when the private deals collapse. It does not restore the lights or the registries.
 

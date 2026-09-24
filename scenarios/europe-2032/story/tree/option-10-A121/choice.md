@@ -15,11 +15,11 @@ next: turn-10-A121
 
 Sofia recommends turning from the machines Europe buys to the decisions its own offices let them make. In welfare, policing and the courts, every AI-supported decision would carry a duty of re-examination, audited logs and human review that means something, enforced through the AI Act.
 
-The Dividend and the Corps have put AI into benefit offices, permit desks and clinics across the Union, and nobody reads the logs. The redress track runs through the justice directorate and the AI Office, with the Fundamental Rights Agency and the national ombudsmen. Where a system is found to have wronged people, its queue is frozen, every case goes back to a human, the logs are published and arrears are paid. It is framed as enforcing the Act, not amending it.
+The Dividend and the Corps have put AI into benefit offices, permit desks and clinics across the Union, and nobody reads the logs. Justice officials and the AI Office, the Commission's AI watchdog, run the redress track with the EU's Fundamental Rights Agency and the national ombudsmen. Where a system is found to have wronged people, its queue is frozen, every case goes back to a human, the logs are published and arrears are paid. It is framed as enforcing the Act, not amending it.
 
 The argument is that a public which uses AI every day and resents it every day will not pay for adoption or sovereignty unless people who are wronged can see that they get a remedy, fast.
 
-The President's standing stays on the Corps. Graduate livelihoods and visible EU-paid work are what keep services staffed and the build sites guardable.
+The President's political capital stays on the Corps. Graduate livelihoods and visible EU-paid work are what keep services staffed and the build sites guardable.
 
 What it does not do is build any capacity, or touch the laboratories.
 

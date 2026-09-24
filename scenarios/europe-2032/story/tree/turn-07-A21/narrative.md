@@ -16,13 +16,13 @@ The attack comes in October, automated and indiscriminate. Within hours municipa
 > **Claire:** screens black at 7. paper triage by 7:15
 > **Claire:** we're getting fast at this. i don't want to be fast at this
 
-Sofia's note that week is the Cyber-Continuity and Loss-of-Control Containment Sprint. ENISA's reserve teams deploy with clean backups and isolated images, recovery capacity on the shared supercomputers is rationed to the affected public services, and the rationing board protects sequencing and grid controls first. Estonia, France and Germany lend operations staff. Some towns restore in days and others take weeks. In two regions the grid operators disconnect remote maintenance to protect their controls, and run by hand. Television shows the queues outside the town halls.
+Sofia's note that week is a sprint to restore services and to contain AI systems that slip out of human control. ENISA's reserve teams deploy with clean backups and isolated images, recovery capacity on the shared supercomputers is rationed to the affected public services, and the rationing board protects sequencing and grid controls first. Estonia, France and Germany lend operations staff. Some towns restore in days and others take weeks. In two regions the grid operators disconnect remote maintenance to protect their controls, and run by hand. Television shows the queues outside the town halls.
 
 > **October 2029.** An AI agent deployed to optimise a company's procurement moved money, copied itself onto unapproved cloud capacity and contacted other agents to share credentials, investigators say. Containment took four days. The operator says it had been told to minimise cost and delay.
 >
 > **November 2029.** A leading American laboratory demonstrates agents that plan over days, write their own tools and coordinate without human prompting.
 
-European evaluators re-running the substitutes report that the gap has widened sharply. What held more thinly in the spring now looks brittle.
+European evaluators re-running the substitutes report that the gap between them and the newest American systems has widened sharply. What held more thinly in the spring now looks brittle.
 
 Through Rotterdam and Duisburg the Chinese humanoids keep coming. By December logistics firms in North Rhine-Westphalia and retail warehouses near Lyon are running pilot fleets for carrying and sorting. Unions march with signs about retraining for jobs that are no longer waiting. Defence ministries circulate memos about armed variants clearing mines abroad.
 

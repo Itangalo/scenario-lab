@@ -18,7 +18,7 @@ The grid control rooms cut their remote links again and run manual shifts. The c
 
 The Institute's re-runs of the substitutes fail quickly. Models that had held in degraded form now break on basic coordination tasks. The hold power still exists. There is nothing arriving in Europe that it could usefully hold.
 
-What the Union can fund, it funds. Sofia's note becomes the Transition Shield for Displaced Work and Essential Services: wage top-ups, six-month retraining vouchers and minimum staffing guarantees for clinics and registries, routed through the employment ministers and the existing social funds. It is aimed at young clerks, accountants, coders and call-centre staff whose entry jobs have stopped being advertised, and at keeping paper triage from becoming permanent.
+What the Union can fund, it funds. Sofia's note becomes the Transition Shield, for people losing their work and for essential services: wage top-ups, six-month retraining vouchers and minimum staffing guarantees for clinics and registries, paid through the employment ministers and the EU's existing funds for jobs and training. It is aimed at young clerks, accountants, coders and call-centre staff whose entry jobs have stopped being advertised, and at keeping paper triage from becoming permanent.
 
 > **Claire:** théo finished his computer science degree
 > **Claire:** zero interviews. not one
@@ -28,7 +28,7 @@ What the Union can fund, it funds. Sofia's note becomes the Transition Shield fo
 >
 > **Claire:** i'll tell him the first part
 
-The rollout is uneven and late. National job agencies quarrel over eligibility, the existing funds cannot absorb the demand without new appropriations, and payments lag in the south. Unions call the vouchers a bridge to nowhere, while Chinese sorting machines spread through German and French warehouses.
+The rollout is uneven and late. National job agencies quarrel over eligibility, the existing funds cannot absorb the demand without fresh money, and payments lag in the south. Unions call the vouchers a bridge to nowhere, while Chinese sorting machines spread through German and French warehouses.
 
 > **April 2030.** A study of European offices finds that AI assistants raise output sharply in law, accountancy and administration, and that almost none of the people doing that work are new.
 >

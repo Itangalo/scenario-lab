@@ -13,7 +13,7 @@ allow: 07:45 11
 
 At 07:45 on 11 February 2031, the attack comes as warned. It is not a single intrusion but a wave: machine-written ransomware and a poisoned software library spreading through municipal IT, clinic booking systems and two grid operators. Screens freeze, backups are wiped, and the patch notes arrive faster than staff can read them.
 
-Sofia's recovery corps is still hiring when it hits, and it goes out anyway. Three mobile corps drawn from national response units and contractors deploy to the worst-hit cities. They isolate servers, push vendor patches paid for in advance from emergency funds, and fall back on the paper procedures and offline folders left over from the winter blackouts. The President's own weight goes behind them. Where they arrive, water and hospitals stay up. Where they have not yet arrived, services stay down for days.
+Sofia's recovery corps is still hiring when it hits, and it goes out anyway. Three mobile corps drawn from national response units and contractors deploy to the worst-hit cities. They isolate servers, push vendor patches paid for in advance from emergency funds, and fall back on the paper procedures and offline folders left over from the winter blackouts. The President's own political capital goes behind them. Where they arrive, water and hospitals stay up. Where they have not yet arrived, services stay down for days.
 
 > **Claire:** backups wiped. the actual backups
 > **Claire:** we're on the blackout folders again. the ones from the freeze
@@ -22,7 +22,7 @@ Sofia's recovery corps is still hiring when it hits, and it goes out anyway. Thr
 >
 > **Claire:** it came. same faces as the winter. one of them brought the folders back
 
-Brussels publishes daily technical notes and opens a single claims window for energy relief and cyber repair. The mayors say it is the same envelope, renamed twice. The data-centre operators who were curtailed for the grid in the winter are now asked to lend clean capacity for the recovery.
+Brussels publishes daily technical notes and opens a single claims window for energy relief and cyber repair. The mayors say it is the same pot of money, renamed twice. The data-centre operators whose power was cut for the grid in the winter are now asked to lend clean capacity for the recovery.
 
 > **March 2031.** An American laboratory demonstrates systems that write and break code, prove theorems and plan intrusions markedly better than before.
 >

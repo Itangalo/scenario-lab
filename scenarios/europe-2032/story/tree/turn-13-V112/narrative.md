@@ -11,17 +11,17 @@ allow: 15
 
 # Continuity is not consent
 
-The hospitals and registries stay on the European-hosted images through the autumn. After the poisoned update, engineers keep triage in stripped-down text mode, restore wards from clean copies, and defend the small pool of reserved inference for health and civil records. It works, after a fashion. Operations are rescheduled rather than lost, and staff in three cities describe working with one hand tied. The continuity switch completes its term.
+The hospitals and registries stay on the European-run systems through the autumn. After the poisoned update, engineers keep triage in stripped-down text mode, restore wards from clean copies, and defend the small pool of computing reserved for health and civil-records AI. It works, after a fashion. Operations are rescheduled rather than lost, and staff in three cities describe working with one hand tied. The continuity switch completes its term.
 
-The certification teams go out alongside them, demonstrating pre-release checks, logs that are now actually read, and refusal behaviour to clinicians and mayors. Sofia recommends nothing new, and the President stakes what standing the Commission has left on the Fast-Track. Where the migration is finished, it calms shifts. Where teams are still reinstalling, it feels like an inspection on top of the queues.
+The certification teams go out alongside them, showing clinicians and mayors the checks before release, logs that are now actually read, and what the models refuse to do. Sofia recommends nothing new, and the President stakes what political capital the Commission has left on the Fast-Track. Where the migration is finished, it calms shifts. Where teams are still reinstalling, it feels like an inspection on top of the queues.
 
 Then the welfare file breaks.
 
 > **September 2032.** An investigation, backed by a court and an ombudsman, finds that an automated benefits-eligibility system systematically cut or flagged thousands of people for months. Caseworkers approved its recommendations in under a minute. The logs that showed the pattern were never examined.
 
-Brussels says the system breached its high-risk obligations and announces enforcement through the existing justice and employment channels. For the press and for victims' groups, that answer confirms the failure: conformity passed on paper while the harm ran in production. Protests outside job centres merge with the hospital walkouts against telemetry sharing. All talk of new adoption freezes.
+Brussels says the system broke the AI Act's rules for high-risk systems and announces enforcement through the existing justice and employment channels. For the press and for victims' groups, that answer confirms the failure: the checks were passed on paper while the harm ran in real use. Protests outside job centres merge with the hospital walkouts against telemetry sharing. All talk of new adoption freezes.
 
-> **October 2032.** A near-frontier open release is downloaded hundreds of thousands of times, and its safeguards are shown to come off in an afternoon by anyone who wants them off.
+> **October 2032.** An open model almost as capable as the best is downloaded hundreds of thousands of times, and its safeguards are shown to come off in an afternoon by anyone who wants them off.
 >
 > **November 2032.** A third genome-modelling result, and the non-experts in it are not hypothetical. The paper reports the route being reproduced on downloadable models by groups outside the field, which is the part the biosecurity community cannot answer.
 

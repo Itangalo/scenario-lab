@@ -25,7 +25,7 @@ In three hospitals with long backlogs, diagnostic support running on European se
 
 Public-sector adoption helps too. Permit and appointment backlogs fall in the cities where the rebuilt booking systems finally hold. Where the engineers have cleared out the compromised component, the queues shorten, and the councils freeze the discredited green dashboards and publish their restoration figures next to the actual waiting times.
 
-The improvement is uneven. The municipal rebuilds are still stalled in a third of the affected towns, over procurement and a lack of cleared staff. The transition income formally closes its set-up phase with the registration lists growing and the disbursements still symbolic. With no levy and no borrowing authorised, the job centres pay small one-off sums, and youth unemployment in checkable work barely moves.
+The improvement is uneven. The municipal rebuilds are still stalled in a third of the affected towns, over procurement and a lack of vetted staff. The transition income formally closes its set-up phase with the registration lists growing and the disbursements still symbolic. With no levy and no borrowing authorised, the job centres pay small one-off sums, and youth unemployment in checkable work barely moves.
 
 The offices keep reporting gains from augmentation, now with some rehiring of juniors, and the bills and the queued licences limit any goodwill. The specialist press dwells on leaked foreign benchmarks and evaluation anomalies that European laboratories cannot reproduce.
 

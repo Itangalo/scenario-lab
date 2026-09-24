@@ -10,7 +10,7 @@ next: turn-03-A1
 
 # Copycats
 
-> **January 2027.** A freely downloadable model, close to the leading closed systems, is copied hundreds of thousands of times in its first week. What is new is not the weights but the box around them: the add-ons that let it use tools and work through tasks on its own ship with the release. What used to need a team needs an afternoon. Unlike a closed model, none of it can be withdrawn.
+> **January 2027.** A freely downloadable model, close to the leading closed systems, is copied hundreds of thousands of times in its first week. What is new is not the model itself but the box around it: the add-ons that let it use tools and work through tasks on its own ship with the release. What used to need a team needs an afternoon. Unlike a closed model, none of it can be withdrawn.
 >
 > **February 2027.** Forensic samples of last autumn's grid-intrusion tooling have leaked and been repackaged into kits that need little skill to use, researchers warn.
 
@@ -24,7 +24,7 @@ The gigafactory programme, meanwhile, shrinks without anyone announcing it. It w
 
 > **May 2027.** Military exercises around Taiwan run longer than any in recent years. Shipping insurers raise premiums for the strait.
 
-In Council, the ministers agree that the Union's hold over chipmaking equipment is worth more kept than used. Sofia writes that paragraph, and she thinks it is right.
+EU ministers agree that the power to stop exports by ASML, the Dutch maker of the chipmaking machines, is worth more held in reserve than used. Sofia writes that paragraph, and she thinks it is right.
 
 > **Claire:** the triage thing is actually good btw
 > **Claire:** waits down all spring. first time since i started

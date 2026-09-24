@@ -15,11 +15,11 @@ allow: 20
 
 > **March 2029.** A new generation of systems, demonstrated abroad and quickly copied, proves strikingly better at code, mathematics and intrusion work.
 
-The leap is sharp and narrow. Within weeks, security teams see faster exploit chains and more convincing help with malicious engineering. General usefulness rises only a little. What an attacker can do changes a great deal.
+The leap is sharp and narrow. Within weeks, security teams see attacks strung together faster from software flaws, and more convincing help with malicious engineering. General usefulness rises only a little. What an attacker can do changes a great deal.
 
 > **April 2029.** Vendors confirm that the new architectures reason in representations that are not language. Oversight tools that relied on reading a model's step-by-step traces go blind overnight.
 
-Sofia had asked for exactly the capability that is now needed, a few weeks before it was needed. The Black-Box Assurance Cell opens inside the AI Office, with secondees from research laboratories and the cyber and health agencies, and pilots in Paris and Dutch laboratories. Essential operators buying AI face new pre-deployment test suites for cyber and biology, which gate public contracts and security approvals. The legal cover comes from existing evaluation powers. No new law is opened.
+Sofia had asked for exactly the capability that is now needed, a few weeks before it was needed. The black-box testing cell opens inside the AI Office, with staff lent by research laboratories and the cyber and health agencies, and pilots in laboratories in Paris and the Netherlands. Essential operators buying AI face new pre-deployment test suites for cyber and biology, which gate public contracts and security approvals. The legal cover comes from existing evaluation powers. No new law is opened.
 
 > **Claire:** our triage vendor has to pass your black box test now
 > **Claire:** they are FURIOUS. it's the best day of my year
@@ -32,8 +32,8 @@ The cell starts work and cannot keep pace. The results are disputed, vendors are
 
 > **May 2029.** An open release nearly as capable as the best models the big labs keep to themselves arrives with the add-ons that let it act on its own included. Whatever the spring's jump added is on private machines within the week – ready to run, rather than ready to build.
 
-The earlier bets pay in part. The tech sovereignty package formally closes, unlocking sites and grid links, though private money stays cautious. The joint cyber and pathogen integration closes too, with shared telemetry and sequencing now a condition of recovery funds, and when municipal networks are probed again, they degrade rather than stop.
+The earlier bets pay in part. The tech sovereignty package for data centres formally closes, unlocking sites and grid links, though private money stays cautious. The joint cyber and pathogen integration closes too, with shared telemetry and sequencing now a condition of recovery funds, and when municipal networks are probed again, they degrade rather than stop.
 
-Then the unity breaks on supply. Hungary signs its own capacity arrangement with a Chinese hyperscaler on looser screening terms, and calls it pragmatism. Brussels offers it joint-buying prices to come back, and ties the continuity reinsurance to data sharing. The deal stands. The papers call it a humiliation.
+Then the unity breaks on supply. Hungary signs its own cloud deal with a Chinese hyperscaler – one of the giant cloud companies – with looser vetting of buyers, and calls it pragmatism. Brussels offers it joint-buying prices to come back, and makes the backstop for insurers depend on sharing data. The deal stands. The papers call it a humiliation.
 
 Workers like their assistants. They fear replacement, and machines nobody can read.

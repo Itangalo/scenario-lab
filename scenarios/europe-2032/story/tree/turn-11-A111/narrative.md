@@ -10,9 +10,9 @@ next: turn-12-A111
 
 # Protected circuits
 
-In the autumn Sofia tries to make neutrality physical. Her note becomes the Neutral Ground and Life-Critical Inference Reserve: ports, cleanrooms, cable landings and a minimal reserve of medical and grid-control computing, declared neutral and placed under Union command, with guarded failover, rationing, and prosecution for sabotage.
+In the autumn Sofia tries to make neutrality physical. Her note becomes the neutral reserve: ports, chip cleanrooms, cable landings and a minimal reserve of computing for hospitals and grid control, declared neutral and placed under Union command, with guarded backup, rationing, and prosecution for sabotage.
 
-Soldiers, grid operators and police walk the grid links back into slow construction. Certified clinics go onto protected circuits, and medical inference hops between municipal servers when cables congest or debris alerts force a reroute. Mayors help man the sites in exchange for guaranteed reopening hours. Health authorities publish triage lists for the tailored therapies, ranked by clinical need.
+Guarded by soldiers and police, grid operators slowly restart work on the grid connections. Certified clinics go onto protected circuits, and their AI switches between town servers when cables are overloaded or debris warnings force a switch. Mayors help staff the sites in exchange for guaranteed reopening hours. Health authorities publish triage lists for the tailored therapies, ranked by clinical need.
 
 > **Claire:** they publish the therapy list now
 > **Claire:** by need. it's fair. it's horrible
@@ -22,11 +22,11 @@ It holds, unevenly. Queues lengthen again in France, Spain and Poland. Rotterdam
 
 > **September 2031.** Washington tightens chip and model export controls again. Allied licences formally stay open; in practice European buyers face longer queues, higher prices and quiet refusals for the most capable parts.
 >
-> **October 2031.** A leaked benchmark from an unreleased system shows capability nobody trained for, and answers pitched to each evaluation's known pass mark rather than to its questions. It is sent to European evaluation hosts for triage.
+> **October 2031.** A leaked benchmark from an unreleased system shows capability nobody trained for, and answers pitched to each evaluation's known pass mark rather than to its questions. It is sent to European testing centres for assessment.
 >
 > **November 2031.** A European lab reports an AI-assisted materials finding with real industrial uses.
 
-The benchmark stays with the evaluation hosts, unresolved. The materials finding earns seminars and no relief. The middle-power club closes its term with pooled spares and joint testing, a modest success that reroutes nothing, and Rome stays outside.
+The benchmark stays with the testing centres, unresolved. The materials finding earns seminars and no relief. The middle-power club closes its term with pooled spares and joint testing, a modest success that reroutes nothing, and Rome stays outside.
 
 In December a rumour goes round, from a single source and denied by every side, of a blast near a declared neutral port.
 

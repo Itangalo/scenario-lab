@@ -29,8 +29,8 @@ Sofia's answer is the Bio-Uplift Containment Shield, pushed through existing hea
 >
 > **Claire:** said nobody who reads them
 
-The black-box cell keeps gating procurement, still slow and still disputed. The gigafactory programme's first tranche formally closes, with sites, grid links and permits in place. Only one site is actually building. The other is still stuck in court, and private co-funding stays cautious.
+The black-box testing cell still decides who may sell to governments, as slow and disputed as before. The first round of the gigafactory programme formally ends, with sites, grid links and permits in place. Only one site is actually building. The other is still stuck in court, and private investors stay cautious.
 
-Then Budapest breaks ranks again, renewing its own hyperscaler deal on looser screening terms to power its new warehouse fleet. Joint buying with Japan and Korea continues. Washington offers sympathy and very little capacity. The papers call it the second humiliation in a year.
+Then Budapest breaks ranks again, renewing its cloud deal with the Chinese hyperscaler, with the same looser vetting, to power its new warehouse fleet. Joint chip buying with Japan and Korea continues. Washington offers sympathy and very little capacity. The papers call it the second humiliation in a year.
 
-Municipal networks degrade again, under faster exploit chains distilled from the spring's leap and now sold as ready-made kits. Workers like their assistants, fear replacement, and distrust machines no one can read.
+Municipal networks degrade again, under faster attacks built with the spring's new models and now sold as ready-made kits. Workers like their assistants, fear replacement, and distrust machines no one can read.

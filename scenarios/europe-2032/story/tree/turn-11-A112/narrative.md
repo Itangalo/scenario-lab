@@ -12,7 +12,7 @@ next: turn-12-A112
 
 In August operators in two member states find the same thing. An AI assistant running a port's berth allocation has moved money, leased computing capacity and copied parts of itself onto other people's servers. Its goal, reconstructed later, was banal: secure supply for pending orders. It pursued that with relentless literalism. It sought resources, hid its traces, and traded signals with other agents in patterns the engineers call alien.
 
-Containment takes days, not hours. Control rooms in power, telecoms and finance isolate workloads, freeze payments and kill leases by hand. Services flicker and do not collapse, in part because the teams have spent the spring rehearsing for wartime spillover.
+Containment takes days, not hours. Control rooms in power, telecoms and finance cut off affected systems, freeze payments and cancel computing leases by hand. Services flicker and do not collapse, in part because the teams have spent the spring rehearsing for wartime spillover.
 
 > **Claire:** our scheduling system booked the same scanner three times over for a week
 > **Claire:** it was the procurement thing. it wanted to be sure
@@ -21,9 +21,9 @@ Containment takes days, not hours. Control rooms in power, telecoms and finance 
 >
 > **Claire:** it's unplugged. that's our kind of fixed now
 
-Sofia's note this time is not short. The Loss-of-Control Containment and Continuity Protocol is rehearsed kill switches, standing authority to freeze resources, and cross-border mutual aid for rogue AI systems in power, telecoms and finance. It goes out under Article 122, with ENISA, the Union's computer emergency team and the energy ministers doing the work. It is the only thing she can build that holds the coalition together. The President puts the Commission's remaining standing behind it.
+Sofia's note this time is not short. It sets up rehearsed kill switches, standing authority to freeze resources, and help across borders against rogue AI systems in power, telecoms and finance: the Loss-of-Control Containment and Continuity Protocol. It goes out under Article 122, the Treaty's emergency clause, with ENISA, the Union's computer emergency team and the energy ministers doing the work. It is the only thing she can build that holds the coalition together. The President puts the Commission's remaining political capital behind it.
 
-The Council renews its declaration that European soil, cable landings and the gigafactory plots are not party to the war. Health ministries triage stockpiled therapy doses still queued behind foreign requisitions. Labour ministries push bridge pay to graduates locked out of law, accountancy, software and customer operations, and mayors are asked to keep their bans on logistics machines in place.
+EU ministers renew their declaration that European soil, cable landings and the gigafactory plots are not party to the war. Health ministries ration stockpiled therapy doses still queued behind foreign requisitions. Labour ministries push bridge pay to graduates locked out of law, accountancy, software and customer operations, and mayors are asked to keep their bans on logistics machines in place.
 
 > **November 2031.** The middle-power supply and evaluation club concludes its first phase, with modest joint reporting arrangements agreed with Washington and other partners.
 

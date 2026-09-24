@@ -15,11 +15,11 @@ next: turn-10-V121
 
 Sofia recommends turning the Union from a seconded partner into a full member of pooled allied defence, on its own terms. That means live intrusion feeds shared across cyber commands, and binding sample-sharing for biological threats, with ENISA's telemetry and the health authority's biosurveillance plugged into both.
 
-It goes through the Foreign Affairs Council and the cyber, health and disease-control agencies. The Union offers its locked-backup playbooks and the incident telemetry it has already exercised across borders, accepts binding sample-sharing with safeguards, and asks for a seat and early warning rather than trying to build sovereign detection it cannot fund. The trade directorate keeps the stalled licensing offer to The Hague, Tokyo and Seoul warm without new money, asking only that the partners hold slots open while finance is frozen.
+It goes through EU foreign ministers and the cyber, health and disease-control agencies. The Union offers its locked-backup playbooks and the incident telemetry it has already exercised across borders, accepts binding sample-sharing with safeguards, and asks for a seat and early warning rather than trying to build sovereign detection it cannot fund. The Commission's trade department keeps the chip pact's stalled offer to the Netherlands, Japan and Korea warm without new money, asking only that the partners hold delivery slots open while finance is frozen.
 
 The argument is that containment is proven and the hardware and finance have fled. Shared protection is the only gain in resilience the Union can still afford, and the October genome paper and the autumn sweeps are both threats that cross borders.
 
-The President's standing stays on the Civic AI Trust and Adoption Repair. Without restoring legitimacy after the lawful harm, and without the insurers back, nothing – joint telemetry included – can be redeployed in clinics and municipalities.
+The President's political capital stays on the Civic AI Trust and Adoption Repair. Without restoring legitimacy after the lawful harm, and without the insurers back, nothing – joint telemetry included – can be redeployed in clinics and municipalities.
 
 What it does not do is bring back a single chip.
 

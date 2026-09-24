@@ -21,16 +21,16 @@ The routine stops at the hospital doors. Outside them the Union waits in queues.
 
 > **February 2032.** Repair ships for cut subsea cables wait months in foreign licensing queues. Satellite slots for neutral operators thin further, and grid-balancing tools hosted abroad time out without warning.
 
-The restoration crews work with local fallbacks. Sofia recommends nothing new, and the President stakes what standing the Commission has left on the shelter.
+The restoration crews work with local fallbacks. Sofia recommends nothing new, and the President stakes what political capital the Commission has left on the shelter.
 
 > **March 2032.** Dexterous robots move from demonstration to purchase order, and into settings that have people in them: care homes and rehabilitation wards take deliveries. What the machines cannot do – a light touch, improvisation when the plan is wrong – stops being a caveat in a brochure and becomes a staffing question.
 
-European carmakers and logistics firms ask for units, and are told either to wait or to accept terms that send the data and the maintenance abroad. Brussels offers no new industrial fund. The retraining money stays tied to maintenance and care logistics, and the coalition's flow of spare parts covers only the margin. Works councils in the west and south call it the surrender of the last shop floor.
+European carmakers and logistics firms ask for units, and are told either to wait or to accept terms that send the data and the maintenance abroad. Brussels offers no new industrial fund. The retraining money stays tied to maintenance and care logistics, and the middle-power bargain's flow of spare parts covers only the margin. Works councils in the west and south call it the surrender of the last shop floor.
 
 The one opening comes from shared harm.
 
 > **May 2032.** After winter intrusions and biological scares, a joint cyber command with real-time telemetry, and a biosurveillance pact with binding sample-sharing, invite the Union to take part.
 
-The middle-power bargain becomes the ticket in: aligned export licences in exchange for shared intelligence. The Council holds the non-belligerency line, the patrols continue, the top-ups continue.
+The middle-power bargain becomes the ticket in: aligned export licences in exchange for shared intelligence. The member governments keep the Union neutral, the patrols continue, the top-ups continue.
 
 The queues for bandwidth, robots and jobs lengthen all the same. The blame that pointed outward begins to point at the shelter itself.

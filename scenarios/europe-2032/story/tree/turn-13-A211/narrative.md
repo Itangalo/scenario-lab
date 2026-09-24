@@ -24,13 +24,13 @@ Clinics in three member states triage fever cases under stretched protocols whil
 
 > **October 2032.** Washington and Beijing reach a limited understanding on biological design tools and the security of model weights. Verification is thin.
 
-Brussels, with no frontier of its own and little money, asks to join as an implementer rather than a rule-maker. Sofia's note offers pooled detection data, shared evaluation work and aligned export controls on reagents and spares, and becomes the Bio-Accord Accession and Containment Enforcement measure.
+Brussels, with no frontier models of its own and little money, asks to join as an implementer rather than a rule-maker. Sofia's note offers pooled detection data, shared evaluation work and aligned export controls on reagents and spares, and becomes the Bio-Accord Accession and Containment Enforcement measure.
 
 The bid half-succeeds. European laboratories are invited into the sample-sharing and patch-evaluation channels, and the joint lists on inputs stay intact. Full accession is deferred. American and Chinese officials brief their European counterparts after the key sessions, not during them. Inside the Commission it is called a foot in the door. In the press it is called observer status by another name.
 
 On the ground, the shelter built over two years pays. It completes its term with the registries still up on dispersed backups, the reserve engineers keeping substations and landing stations running through the jitter, and the machine-speed patching stopping the hospital systems from cascading. Voters notice that ambulances run and prescriptions are filled, even as they fear the next vial.
 
-The coalition frays further. Bratislava keeps its deal, trading quiet assurances on cohesion money for continued participation in joint withholding. There is no public break, but joint bargaining loses force at the moment it is most needed. By December, fear dominates the conversation, and trust in machine-mediated care falls again.
+The coalition frays further. Slovakia keeps its deal, and in return for quiet promises of EU regional money it stays in the coalition's joint withholding of supplies. There is no public break, but joint bargaining loses force at the moment it is most needed. By December, fear dominates the conversation, and trust in machine-mediated care falls again.
 
 ## Note to the President
 

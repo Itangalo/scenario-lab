@@ -26,18 +26,18 @@ Clinics that stretched through the autumn sweep on it revert to paper and to the
 
 The second blow comes from inside.
 
-> **March 2032.** Spain unveils its own supply deal with a hyperscaler – cheaper power, guaranteed quota – openly undercutting the common licence line.
+> **March 2032.** Spain unveils its own supply deal with a hyperscaler, one of the giant cloud companies: cheaper power and a guaranteed quota, openly undercutting the common licence line.
 
 Sofia spends a week on the answer, and the answer is small. Brussels notes the deal without suing. Access to the fuel and transformer pools is quietly tied to there being no further side deals. In the Council corridor a deputy permanent representative tells her, kindly, that it is the most anyone could have done. She does not find that comforting.
 
 > **April 2032.** A new openly released model, close to the frontier and able to run long tasks alone, is copied hundreds of thousands of times in days. By the summer it runs in more European public bodies than any commercial system does.
 
-University laboratories celebrate. Security teams find the same weights steering fresh phishing and intrusion scripts that shrug off the patching tools shared in the autumn.
+University laboratories celebrate. Security teams find the same model steering fresh phishing and intrusion scripts that shrug off the patching tools shared in the autumn.
 
-Brussels signs what it can. Sofia's note becomes the EU Middle-Power Supply-Chain Coalition, and the President lends what the Commission has left to it. Under its trade competence, the Commission joins the coordination it has been invited into by middle powers holding pieces of the lithography, energy and computing chain, and offers the telemetry already shared during the sweep in exchange for pooled bargaining and shared evaluation. The first fallback capacity is promised to the showcase clinics and grids. Delivery is months away, stalled by staffing gaps, incompatible tooling and drained reimbursement funds.
+Brussels signs what it can. Sofia's note becomes the EU Middle-Power Supply-Chain Coalition, and the President lends it what political capital the Commission has left. Using its powers over trade, the Commission joins a group of mid-sized countries that invited it in, each holding a piece of the supply chain – chip-making machines, energy or computing power, and offers the telemetry already shared during the sweep in exchange for pooled bargaining and shared evaluation. The first fallback capacity is promised to the showcase clinics and grids. Delivery is months away, stalled by staffing gaps, incompatible tooling and drained reimbursement funds.
 
 The showcase completes its term in June. The dashboards stay up, the waits on them stay short, and they are the only European tools anyone praises.
 
-The grey signals thicken. Brokers whisper about rerouted accelerators. There are forged claims on the mutual-aid pools, and a rumour that one showcase hospital has found its backup generator already sold on. Nothing is confirmed. Everything is repeated.
+The grey signals thicken. Brokers whisper about rerouted AI chips. There are forged claims on the mutual-aid pools, and a rumour that one showcase hospital has found its backup generator already sold on. Nothing is confirmed. Everything is repeated.
 
 By June services have degraded without stopping. Restoration by hand earns gratitude, and dependence earns anger. The common line holds, narrower than before.

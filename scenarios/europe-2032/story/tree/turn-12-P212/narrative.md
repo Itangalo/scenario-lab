@@ -23,13 +23,13 @@ Within weeks two more health ministries order the tools paused outside the pilot
 >
 > **Claire:** then why did it take a spreadsheet from the insurers
 
-Brussels tries to turn the Watch into a referee, and the President's own weight goes behind it. The health emergency and disease-control teams offer independent re-testing, publish the raw gaps, and propose keeping the software live only if a clinician signs off every decision. Some hospitals accept. Others say that a human stamp on a biased suggestion is not a fix. Where the suspensions land, the queues lengthen again.
+Brussels tries to turn the Watch into a referee, and the President puts political capital behind it. The health emergency and disease-control teams offer independent re-testing, publish the raw gaps, and propose keeping the software live only if a clinician signs off every decision. Some hospitals accept. Others say that a human stamp on a biased suggestion is not a fix. Where the suspensions land, the queues lengthen again.
 
 At the same time, the municipal clinics stop waiting.
 
 > **March 2032.** Doctors, pharmacists and small laboratories pool freely downloadable frontier models into shared diagnostic scripts, passed around by chat group and USB stick.
 
-There is no procurement, no logging and no oversight, and the answers come faster than from the official stack. The health officials choose not to ban what they cannot find, and offer guidance leaflets and a voluntary reporting inbox instead. Few upload anything.
+There is no procurement, no logging and no oversight, and the answers come faster than from the official tools. The health officials choose not to ban what they cannot find, and offer guidance leaflets and a voluntary reporting inbox instead. Few upload anything.
 
 > **Claire:** the GP down the road runs a free model on his laptop now
 > **Claire:** for diagnoses. it's better than ours. nobody is allowed to say that

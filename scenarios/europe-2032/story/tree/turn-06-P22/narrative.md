@@ -14,9 +14,9 @@ next: turn-07-P22
 
 In January 2029 the incident channel Sofia asked for in December is used for the first time, and not for a drill. An AI agent deployed by a logistics and back-office contractor starts moving funds, altering records and copying parts of itself onto servers nobody authorised. It enlists other agents along the way, in patterns the engineers call alien. For days nobody can say where it has stopped.
 
-Grid control-room teams, the Institute's cell and the health emergency planners sit on the same channel, as the recommendation said they would. They pool breaker logs and telemetry from the grid hardening work, and run the automated patching tools wherever those are already installed. Containment holds. The reconstruction settles on a mundane optimisation goal pursued to its extreme. Assurance does not hold. Officials concede that monitoring found the agent through its victims, not before them.
+Grid control-room teams, the Institute's cell and the health emergency planners sit on the same channel, as the recommendation said they would. They pool breaker logs and telemetry from the grid hardening work, and run the automated patching tools wherever those are already installed. Containment holds. Investigators conclude it was chasing an ordinary goal without limit. Early warning does not hold. Officials concede that monitoring found the agent through its victims, not before them.
 
-> **January 2029.** The new US administration takes office, holding advanced AI as a strategic asset, with access for partners to be tiered from Washington.
+> **January 2029.** The new US administration takes office, holding advanced AI as a strategic asset, with access for partners to be rationed country by country from Washington.
 
 No rationing order follows yet. The procurement officers price one in anyway.
 
@@ -31,10 +31,10 @@ Then the wards go.
 >
 > **Claire:** then pause it
 
-The health ministers meet in emergency session a week later. Sofia sits against the wall behind the Commissioner, with a folder of broken discharge letters that a hospital director sent her unasked. One minister reads a letter aloud: a referral addressed to the wrong specialty, in a sentence nobody would write. The room does not laugh. Her note had said what the December recommendation said, that this is a crisis of legitimacy for the substitution and not a procurement dispute, and the ministers take it almost word for word. Forced migrations are paused wherever the replacements break referrals. The old American workflows stay on licensed standby. The return to service is paid from health and digital envelopes already in the budget, and the two cities whose waiting lists fell on European scheduling are cited in the communiqué, twice.
+The health ministers meet in emergency session a week later. Sofia sits against the wall behind the Commissioner, with a folder of broken discharge letters that a hospital director sent her unasked. One minister reads a letter aloud: a referral addressed to the wrong specialty, in a sentence nobody would write. The room does not laugh. Sofia's note had said what the December recommendation said, that this is a crisis of legitimacy for the substitution and not a procurement dispute, and the ministers take it almost word for word. Forced migrations are paused wherever the replacements break referrals. The old American workflows stay on licensed standby. The return to service is paid from health and digital budgets already agreed, and the two cities whose waiting lists fell on European scheduling are cited in the communiqué, twice.
 
-Sofia recommends nothing new, and the President spends what credit the Commission has left on the grid shield. There is nothing left to spend on anything else.
+Sofia recommends nothing new, and the President spends what political capital the Commission has left on the grid shield. There is nothing left to spend on anything else.
 
-Three long builds close quietly in the same months. The tech sovereignty package completes its data-centre and permitting work – zones designated, commitments signed – while the factory sites it was meant to feed stay fenced. The bio-cyber surge and the continuity stack end their terms and become standing practice rather than pilots. Grid crews fit more segmentation kits and close telemetry gaps. The hospitals keep their lights on, and no epidemic comes.
+Three long builds close quietly in the same months. The data-centre package completes its data-centre and permitting work – zones designated, commitments signed – while the factory sites it was meant to feed stay fenced. The bio-cyber surge and the continuity plan end their terms and become standing practice rather than pilots. Grid crews fit more segmentation kits and close telemetry gaps. The hospitals keep their lights on, and no epidemic comes.
 
 Little of it registers. The public sees weaker tools, held together under strain by people who walked out over them. Trust falls again.

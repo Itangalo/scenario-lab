@@ -14,11 +14,11 @@ review: (ECHO 2026-09-23) rewritten as a darker catastrophe ending
 
 > **17 February 2031, 04:10.** American and Chinese forces are striking each other's satellites and undersea infrastructure, defence officials in several capitals confirm. Each side says the other was months from a lead that could never be caught.
 
-Within weeks both capitals have declared fabrication plants, cable landings, satellite ground stations and data centres legitimate targets. Cables are cut in the Atlantic. A fab yard in the Pacific is hit. Power and parts markets panic.
+Within weeks both capitals have declared chip plants, cable landings, satellite ground stations and data centres legitimate targets. Cables are cut in the Atlantic. A chip plant in the Pacific is hit. Power and parts markets panic.
 
-The College meets that afternoon, and again that night. By morning the Union has declared itself neutral and offered its ports, cleanrooms and test sites as neutral ground, on condition that both sides leave European sites alone. Neither capital gives a firm answer.
+On the day of the first strikes the Commissioners meet in the afternoon, and again that night. By morning the Union has declared itself neutral and offered its ports, cleanrooms and test sites as neutral ground, on condition that both sides leave European sites alone. Neither capital gives a firm answer.
 
-The continuity shield Sofia recommended in the winter becomes a wartime instrument in a week. Guarded repair battalions go to the gigafactory grid connections, hospitals and clinical computing get first call on power, and failover is lined up for cables and data centres that are hit. Nobody asks the finance ministers for new money, because everybody knows the answer.
+The lights-on plan Sofia recommended in the winter, guarding grid works and hospital power, becomes a wartime instrument in a week. Guarded repair battalions go to the gigafactory grid connections, hospitals and clinical computing get first call on power, and backup is lined up for cables and data centres that are hit. Nobody asks the finance ministers for new money, because everybody knows the answer.
 
 Europe is hit anyway. A drone damages a transformer in the Netherlands. Hospitals flicker.
 
@@ -47,4 +47,4 @@ Nobody planned this part of the war, and nobody is steering it. The strikes grow
 
 The middle-power club meets in emergency session. It has nobody to negotiate with. Rome asks for an exemption from wartime solidarity, and then, quietly, for protection.
 
-At the end of June the Council asks the only question left: how do you surrender to a war that nobody is fighting?
+At the end of June EU ministers ask the only question left: how do you surrender to a war that nobody is fighting?

@@ -15,7 +15,7 @@ The autumn begins with sirens.
 
 At 18:30 on 12 September 2031, a referral laboratory confirms what the local clinics in one border region had failed to recognise for days: a modified pathogen, whose design investigators later say bears traces of machine assistance, has escaped containment and is spreading.
 
-Cross-border teams arrive within days. The referral laboratories take over the suspect samples, and stockpiled treatments are released from the common stores. Sofia's note that week becomes the Bio Incident Containment and Mutual Aid Surge, and the President moves the Commission's standing onto it. Pooled kits move, routing suspect samples to sequencing becomes mandatory, and hardening teams isolate hospital and water-control networks.
+Cross-border teams arrive within days. The referral laboratories take over the suspect samples, and stockpiled treatments are released from the common stores. Sofia's note that week becomes the Bio Incident Containment and Mutual Aid Surge, and the President moves the Commission's political capital onto it. Pooled kits move, routing suspect samples to sequencing becomes mandatory, and hardening teams isolate hospital and water-control networks.
 
 > **Claire:** they asked for volunteers for the cross-border team
 > **Claire:** i'm here now. i'm fine. it's bad
@@ -28,7 +28,7 @@ Where the earlier screening shield had its staff, the system bends without break
 
 It is not enough to hide the second blow.
 
-> **October 2031.** In the middle of the containment, Germany confirms a second supply arrangement of its own with a foreign hyperscaler, on faster delivery terms than the Union line.
+> **October 2031.** In the middle of the containment, Germany confirms a second supply arrangement of its own with a foreign hyperscaler – one of the giant cloud companies – on faster delivery terms than the Union line.
 
 At home its ministers call it pragmatism, to protect patients. In the Council corridors it reads as a break. The water-and-power talks for the two frozen factory sites stall again, with the councils refusing to sign while the injunctions stand.
 
