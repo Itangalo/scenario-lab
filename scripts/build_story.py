@@ -1568,7 +1568,7 @@ def content_version(story_dir: Path) -> tuple[str, str] | None:
     would then differ from the commit it links to.
     """
     script = Path(__file__).resolve()
-    paths = [str(story_dir / p) for p in STORY_SOURCES] + [str(script)]
+    paths = [str(story_dir.resolve() / p) for p in STORY_SOURCES] + [str(script)]
     try:
         log = subprocess.run(["git", "log", "-1", "--format=%H %cs", "--", *paths],
                              cwd=script.parent, capture_output=True, text=True,
