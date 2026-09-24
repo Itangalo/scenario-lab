@@ -6,28 +6,28 @@ Each heading must match the metric's label in `data.json` exactly, or the dial g
 
 ## AI capability
 
-How capable the strongest systems anywhere are, closed or open. It accumulates — whatever the frontier reaches, it does not fall back.
+How capable the strongest AI system anywhere is, closed or open. It never falls.
 
 ## Open-weight capability
 
-The same measure read off the best openly published weights: the capability anyone can download, and nobody can recall.
+How capable the strongest publicly downloadable AI system is. Downloaded AI models can be stripped of guardrails, and cannot be recalled.
 
 ## AI safety
 
-How well the systems actually in use are understood, secured and controlled. Not what is being spent trying — what has landed.
+How well frontier AI systems actually in use are understood, secured and controlled. It falls whenever capability outpaces the safety work.
 
 ## Resilience
 
-How much harm you can absorb once it happens: hardened infrastructure, detection, continuity, and support for the people displaced.
+How much AI-related harm the EU can absorb and keep functioning, for example through hardened infrastructure, fast detection and support for people displaced by AI.
 
 ## EU AI sovereignty
 
-Compute on your own soil under your own law, the talent to run it, and the leverage that follows. Capacity, not ambition.
+Compute on EU soil under EU law, the talent to run it, and the leverage that follows. Capacity, not ambition.
 
 ## EU political capital
 
-What you can start, fund and enforce at the same time — standing, money, legal instruments, member states willing to move. This is what you spend.
+The EU's ability to start and continue to fund measures. Each running measure costs, evidence of success gives back.
 
 ## Public sentiment
 
-How the public regards AI. High acceptance makes restriction expensive; low acceptance makes building, adopting and partnering expensive.
+How the public regards AI. High sentiment adds political capital but makes restricting AI costly; low sentiment makes building and partnering costly.
