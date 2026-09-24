@@ -1499,11 +1499,14 @@ def alt_reading(path: Path) -> str:
     for a reader. Only the two read-throughs between them are published, so the
     extraction is anchored on those two landmarks rather than on line numbers
     the drafting will move. Every telling in `ALT_TELLINGS` is read this way.
+
+    A telling written as a plain reading file carries no such landmarks, so the
+    whole file is the telling.
     """
     text = path.read_text(encoding="utf-8")
     start = re.search(r"^#\s+Path one\b.*$", text, re.M)
     if not start:
-        return ""
+        return markdown(text.strip())
     end = re.search(r"^##\s+Notes for assessment\b.*$", text, re.M)
     body = text[start.start():end.start() if end else len(text)].rstrip()
     body = re.sub(r"\n\s*(?:-{3,}|\*{3,}|_{3,})\s*$", "", body)
@@ -1512,25 +1515,28 @@ def alt_reading(path: Path) -> str:
 
 # The alternative tellings, in tab order. A telling whose source file is absent
 # simply does not get a tab, so the page still builds from a partial checkout.
-# `view` is the tab's URL fragment as well as its id, so #straight-through and
-# #tight are the deep links.
+# `view` is the tab's URL fragment as well as its id, so #findings is the deep
+# link. Sources are read relative to the story directory.
 #
 # Retired 2026-09-11: the three experimental tellings are deleted with their
 # sources (in git history). The published page is the story alone.
-ALT_TELLINGS: list[dict[str, str]] = []
+ALT_TELLINGS: list[dict[str, str]] = [
+    {"view": "findings", "label": "Findings",
+     "source": "findings.md", "intro": "findings-intro.md"},
+]
 
 
-def alt_panels(experiments: Path) -> tuple[str, str]:
+def alt_panels(base: Path) -> tuple[str, str]:
     """Tab buttons and reader panels for every alternative telling that exists."""
     tabs: list[str] = []
     panels: list[str] = []
     for telling in ALT_TELLINGS:
-        source = experiments / telling["source"]
+        source = base / telling["source"]
         body = alt_reading(source) if source.is_file() else ""
         if not body:
             continue
         view = telling["view"]
-        intro_path = experiments / telling["intro"]
+        intro_path = base / telling["intro"]
         intro = markdown(intro_path.read_text(encoding="utf-8")) \
             if intro_path.is_file() else ""
         tabs.append(
@@ -1557,7 +1563,8 @@ SITE_FOOTER = """<footer class="site">
 # What the page is built from. A commit touching any of these changes what the
 # reader sees; one touching only run logs or pools does not.
 STORY_SOURCES = ("tree", "experiments", "preamble.md", "postamble.md",
-                 "explore.md", "catastrophe.md", "about.md", "dial-tips.md")
+                 "explore.md", "catastrophe.md", "about.md", "dial-tips.md",
+                 "findings.md", "findings-intro.md")
 
 
 def content_version(story_dir: Path) -> tuple[str, str] | None:
@@ -1683,7 +1690,7 @@ def main() -> int:
     about_path = story_dir / "about.md"
     about = markdown(about_path.read_text(encoding="utf-8")) \
         if about_path.is_file() else ""
-    alt_tabs, alt_views = alt_panels(story_dir / "experiments")
+    alt_tabs, alt_views = alt_panels(story_dir)
     payload = build_payload(nodes, args.scenario)
     start = opaque("turn-01")
     if start not in payload:
