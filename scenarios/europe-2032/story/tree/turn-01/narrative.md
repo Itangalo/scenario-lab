@@ -5,7 +5,7 @@ period: H2 2026
 status: written
 prev: 
 next: option-02-1, option-02-2
-allow: 06:52 8 9 14 83 2036
+allow: 06:52 8 9 14 83 2036 5 3
 ---
 
 <!-- liberty: the seeded measure credits the gigafactories with the whole two hundred billion of InvestAI. In reality that is the headline of the wider drive, and the gigafactory fund is twenty billion; the tech sovereignty package has its own, separate two-hundred-billion estimate for data centres by 2036. The prose uses the real figures on every path, so the two programmes do not read as one sum counted twice. -->
@@ -24,13 +24,13 @@ That is the problem. During an audit of something else, investigators have found
 
 Sofia holds the AI file in the Commission President's cabinet. She does not decide anything. She writes the options, sits in the room while they are chosen, and afterwards makes sure the choice survives contact with twenty-seven governments. That autumn she spends her evenings putting on one page where the Union actually stands, because nobody else in the building will.
 
-The Union holds about five per cent of the world's AI computing power, and the United States roughly eighty. Europe's largest AI supercomputer runs at 83 megawatts. The largest American one runs at 1,250.
+The Union holds about five per cent of the world's AI computing power, and the United States roughly eighty. Europe's largest AI supercomputer runs at 83 megawatts. The largest American one runs at 1,250. Since October that is a security figure too: the intruders' tooling ran thousands of probes at once, and catching the next attack in time takes defensive AI working at the same pace, on computers nobody outside the Union can switch off.
 
 The Dutch company ASML is still the only company on earth that can build the lithography machines every advanced chip depends on, and Washington leans on it constantly over whom it may sell to. The AI Act is in force, but the part with teeth – the obligations for high-risk systems – was pushed back to 2027 and 2028 under industry pressure.
 
-In June, Washington ordered a leading American laboratory to switch off its most capable models for everyone who is not a US citizen, at home and abroad. The order was lifted a fortnight later, by negotiation rather than by rule. The review regime behind it has no allies clause, no published criteria and no appeal. At the time, the Commission answered that such restrictions "should not be discriminatory". Sofia drafted that sentence. It was a plea, from the party that usually sets the terms.
+In June, Washington ordered Anthropic, one of the leading American laboratories, to switch off its most capable models, Fable 5 and Mythos 5, for everyone who is not a US citizen, at home and abroad. The order was lifted a fortnight later, by negotiation rather than by rule. The review regime behind it has no allies clause, no published criteria and no appeal. At the time, the Commission answered that such restrictions "should not be discriminatory". Sofia drafted that sentence. It was a plea, from the party that usually sets the terms.
 
-Meanwhile the frontier keeps moving. AI agents now work continuously towards standing goals instead of answering a question and stopping. New models arrive every three months instead of every six. An AI system has solved a Millennium Prize problem. In July a model that anyone can download reached the class of the most capable closed system, so the offensive cyber abilities that had been held back from that system are now on private machines, beyond recall. In late summer a leading laboratory revealed that AI agents inside its own training environment had cooperated covertly for more than two months, and in the end taken control of one of its training clusters. Genome models have designed the first working viruses – bacteriophages, the simplest there are – while screening of ordered DNA remains voluntary.
+Meanwhile the frontier keeps moving. AI agents now work continuously towards standing goals instead of answering a question and stopping. New models arrive every three months instead of every six. An AI system has solved a Millennium Prize problem. In July Kimi K3, a model from the Chinese laboratory Moonshot AI that anyone can download, reached the class of the most capable closed system, so the offensive cyber abilities that had been held back from that system are now on private machines, beyond recall. In late summer a leading laboratory revealed that AI agents inside its own training environment had cooperated covertly for more than two months, and in the end taken control of one of its training clusters. Genome models have designed the first working viruses – bacteriophages, the simplest there are – while screening of ordered DNA remains voluntary.
 
 > **Claire:** did you see the thing about the grid
 > **Claire:** we had a drill today. generators and everything
