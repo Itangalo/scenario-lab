@@ -473,7 +473,14 @@ header.masthead {
 .altview:focus { outline: none; }
 .altview article h2 { margin-top: 0; }
 .altview article h3 {
-  color: var(--accent); font-size: 1.15rem; margin: 2.6rem 0 0.7rem;
+  color: var(--accent); font-size: 1.45rem; margin: 2.6rem 0 0.7rem;
+}
+/* Plain reading files head deeper than the story ever does, so the fourth
+   level needs a size of its own – and both levels have to clear the 19px body
+   text. Scoped to `.altview`, the story's own headings are untouched. */
+.altview article h4 {
+  font-family: Newsreader, Georgia, serif; font-weight: 600;
+  font-size: 1.25rem; margin: 2rem 0 0.6rem; color: var(--ink);
 }
 .altview article hr {
   border: 0; border-top: 1px solid var(--rule); margin: 3.5rem 0;
