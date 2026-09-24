@@ -165,6 +165,8 @@ Pinned turn-1 base runs, one per option per arm (resolution differs per arm even
 
 `runs/` was otherwise wiped on 2026-09-04 (247 MB freed); every finding from the deleted batches lives in `design-notes.md`.
 
+(ECHO 2026-09-24) The runs of this first tree, which were run on Qwen, were deleted on 2026-09-24: the pinned turn-1 runs above, all Stage 1–3 runs (2026-09-04 to 2026-09-07), and eleven Qwen test runs from 2026-09-09 and 2026-09-10. The manifests `stage-1-blocks.json`, `stage-2-blocks.json` and `stage-3-blocks.json` were deleted with them. The run directories named in this section and the next two therefore no longer exist; the last commit that contains them is `3ec7a1f7b`. The published story is built from the rerun (`*-blocks-rerun.json`, `tree.json`).
+
 ## Stage 1 paths selected, turns 2–5 (2026-09-05)
 
 Overnight batch of 2026-09-04/05 rebuilt Stage 1 whole: 60 runs, 10 per branch, branched from the pinned turn-1 runs (manifest in `stage-1-blocks.json`, runs committed in git). Election exactly-one holds 60/60 at turn 5; zero named US postures before turn 6. Path per branch is the first run (earliest `branch_created_at`); reading prose in `stage-1/{A1,A2,P1,P2,V1,V2}.md` (V1 handled separately). Winners: A1 consolidation, A2 retrenchment, P1 alliance, P2 consolidation, V1 retrenchment, V2 retrenchment.

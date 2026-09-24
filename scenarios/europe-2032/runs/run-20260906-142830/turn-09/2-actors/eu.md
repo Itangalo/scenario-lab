@@ -1,1 +1,0 @@
-Secure the continuity of EU governance under autonomous AI threat through enforceable behavioural containment and institutional resilience
