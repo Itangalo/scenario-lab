@@ -21,6 +21,7 @@ import hashlib
 import html
 import json
 import re
+import subprocess
 import sys
 from pathlib import Path
 from typing import Any
@@ -1546,10 +1547,52 @@ def alt_panels(experiments: Path) -> tuple[str, str]:
     return "\n".join(tabs), "\n".join(panels)
 
 
+REPO_URL = "https://github.com/Itangalo/scenario-lab"
+
 SITE_FOOTER = """<footer class="site">
     <a href="/">Scenario Lab</a>
-    <span><a href="https://github.com/Itangalo/scenario-lab">Source on GitHub</a></span>
+    <span><a href="{repo}">Source on GitHub</a></span>{updated}
   </footer>"""
+
+# What the page is built from. A commit touching any of these changes what the
+# reader sees; one touching only run logs or pools does not.
+STORY_SOURCES = ("tree", "experiments", "preamble.md", "postamble.md",
+                 "explore.md", "catastrophe.md", "about.md", "dial-tips.md")
+
+
+def content_version(story_dir: Path) -> tuple[str, str] | None:
+    """The latest commit that changed the story's content: (hash, ISO date).
+
+    Dates the content rather than the build, so a rebuild with nothing new
+    does not move it. Uncommitted changes are warned about, since the page
+    would then differ from the commit it links to.
+    """
+    script = Path(__file__).resolve()
+    paths = [str(story_dir / p) for p in STORY_SOURCES] + [str(script)]
+    try:
+        log = subprocess.run(["git", "log", "-1", "--format=%H %cs", "--", *paths],
+                             cwd=script.parent, capture_output=True, text=True,
+                             check=True).stdout.split()
+        dirty = subprocess.run(["git", "status", "--porcelain", "--", *paths],
+                               cwd=script.parent, capture_output=True, text=True,
+                               check=True).stdout.strip()
+    except (OSError, subprocess.CalledProcessError):
+        return None
+    if dirty:
+        print("warning: uncommitted story changes; the footer links the last "
+              "commit, which the page no longer matches", file=sys.stderr)
+    return (log[0], log[1]) if len(log) == 2 else None
+
+
+def updated_link(version: tuple[str, str] | None) -> str:
+    if not version:
+        return ""
+    sha, iso = version
+    y, m, d = (int(x) for x in iso.split("-"))
+    months = ["January", "February", "March", "April", "May", "June", "July",
+              "August", "September", "October", "November", "December"]
+    return (f'\n    <span><a href="{REPO_URL}/commit/{sha}" title="{sha[:9]}">'
+            f"Updated {d} {months[m - 1]} {y}</a></span>")
 
 SITE_NAV = '<a class="sitenav" href="/">&larr; Scenario Lab</a>'
 
@@ -1574,7 +1617,7 @@ footer.site a:hover { text-decoration: underline; text-underline-offset: 3px; }
 """
 
 
-def standalone(head: str, body: str) -> str:
+def standalone(head: str, body: str, version: tuple[str, str] | None) -> str:
     """Wrap the page as an ordinary web page for scenariolab.org.
 
     The artifact host supplies the document skeleton, so the page normally
@@ -1583,7 +1626,8 @@ def standalone(head: str, body: str) -> str:
     """
     head = head.replace("<title>Europe 2032</title>\n", "", 1)
     head = head.replace("</style>", SITE_FOOTER_CSS + "</style>", 1)
-    body = body.replace("__SITEFOOTER__", SITE_FOOTER, 1)
+    body = body.replace("__SITEFOOTER__", SITE_FOOTER.format(
+        repo=REPO_URL, updated=updated_link(version)), 1)
     body = body.replace("__SITENAV__", SITE_NAV, 1)
     description = ("An interactive scenario: you take the European Union through "
                    "2026\u20132032 without knowing which AI trajectory you are on. "
@@ -1660,7 +1704,7 @@ def main() -> int:
                       '  <div class="tabs-gap"></div>\n', body, count=1, flags=re.S)
     body = body.replace("__ALTPANELS__", alt_views, 1)
     out = args.out or (args.scenario / "story.html")
-    page = standalone(HEAD, body) if args.standalone else HEAD + body.replace(
+    page = standalone(HEAD, body, content_version(story_dir)) if args.standalone else HEAD + body.replace(
         "__SITEFOOTER__", "", 1).replace("__SITENAV__", "", 1)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(page, encoding="utf-8")
