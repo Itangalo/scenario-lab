@@ -13,7 +13,7 @@ allow: 15
 
 > **September 2032.** A genome-modelling team publishes the route by which a non-expert with a model's help reaches a workable design for a human-infective organism. The claim is not what is disputed. The printing of it is.
 
-Methodologists attack the paper as alarmist, and as reckless to publish. The biosecurity lists argue for weeks. No patient is involved, but clinicians read it as a warning that last year's pathogen might not stay the only one.
+Methodologists attack the paper as alarmist, and as reckless to publish. Biosecurity experts argue for weeks. No patient is involved, but clinicians read it as a warning that last year's pathogen might not stay the only one.
 
 At the same time, the rosters break.
 

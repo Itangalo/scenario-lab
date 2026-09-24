@@ -15,11 +15,11 @@ next: turn-10-V212
 
 Sofia recommends a single funded emergency presence: a corps that keeps hospitals, dispatch and laboratories running on EU-controlled models and offline procedures, and that can lead weeks of containment if a biological threat ever moves from paper to patients.
 
-It is activated under the health-emergency and civil-protection legal bases, with no new vote. The repair teams stay embedded to keep the offline backups, the triage workarounds and the port and dispatch fallbacks holding. The health emergency authority and the disease control centre connect the sequencing and wastewater sentinels to case-finding and contact tracing, with funded overtime for clinic staff and mayors. Ministries, hospitals and firms are moved onto the Institute's list of cleared EU-hosted and previously licensed models, reprogrammed money pays for inference on European soil, and solidarity aid keeps a wavering Warsaw on the joint licensing line.
+It is activated under the health-emergency and civil-protection legal bases, with no new vote. The repair teams stay embedded to keep the offline backups, the triage workarounds and the port and dispatch fallbacks holding. The health emergency authority and the disease control centre connect the sequencing and wastewater sentinels to case-finding and contact tracing, with funded overtime for clinic staff and mayors. Ministries, hospitals and firms are moved onto the Institute's list of cleared models – tested, and hosted in the EU or already licensed – reprogrammed money pays for running them on European servers, and solidarity aid keeps a wavering Warsaw on the joint licensing line.
 
 The argument is that last spring's genome paper put a design within reach of non-experts, that the sentinels are already watching the drains, and that tools do not trace contacts. People do. If the next shock is biological, the Union will need a corps, not a software pack.
 
-The President gives the Commission's full weight to the corps.
+The President spends political capital on the corps.
 
 What it does not do is harden the municipal systems the attacks keep jamming.
 

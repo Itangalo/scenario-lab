@@ -2,18 +2,18 @@
 
 Sentences about pathogens, outbreaks and biological weapons tripped a safety filter on the agents, so they were left out of the readability pass. This file lists where that happened, so those passages can be updated some other way. It names nodes only and quotes nothing.
 
-## Nodes not edited at all
+## The six V2 nodes left out of the agent pass
 
-The first V2 editor was stopped before it had made any edits, so these six nodes were excluded from the V2 pass. They are exactly as they were before the pass.
+The first V2 editor was stopped before it had made any edits, so these nodes were left out of the agent pass:
 
+- `turn-08-V21`
 - `option-10-V212`
 - `turn-10-V212`
 - `turn-11-V212`
 - `turn-12-V212`
 - `turn-13-V212`
-- `turn-08-V21`
 
-The rest of V2 was edited around them, and no handle that appears in them was renamed, so they still fit.
+Update (ECHO 2026-09-24): Claude has since edited their sentences that are not about biological threats in the main session. These are the reader's four issues (diplomats instead of the External Action Service, running models on European servers instead of inference, the Institute's cleared list explained, and research into model internals instead of an interpretability result), plus political capital and plain words for telemetry. Sentences about biological threats are still as they were. `turn-12-V212` consists almost entirely of such sentences and is unchanged.
 
 ## Nodes edited around untouched sentences
 
@@ -118,8 +118,12 @@ In these nodes everything was edited except the sentences a filter flagged as bi
 - `turn-13-V211` – 2 untouched sentences
 - `turn-13-V221` – 2 untouched sentences
 
-## Ways to update them
+## Known problems that have been fixed
 
-- By hand: Johan, or Claude working directly in the main session, sentence by sentence, starting with the nodes that have skipped issues.
-- With a narrower rule for the agents: let them edit political, institutional and infrastructure wording inside these nodes, and hand only the sentences about how a threat works to a human.
-- For the six excluded V2 nodes: the same readability pass as the rest of V2, run in the main session rather than by an agent.
+Update (ECHO 2026-09-24): of the readability issues the readers found inside biological sentences, three were fixed in later rounds and three more by word-level edits in the main session (`turn-13-P112`, `option-10-P121`, `turn-11-P122`). One, a reminder in `option-10-P112`, was left because it pushed the node over the length limit. `option-06-P22` ("weight security") and `turn-06-P21` ("close too") are fixed as well.
+
+## Ways to update what remains
+
+- By hand: Johan, or Claude working directly in the main session, sentence by sentence.
+- Most flagged sentences probably need nothing; they are harmless mentions the broad filter caught.
+
