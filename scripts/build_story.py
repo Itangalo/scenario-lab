@@ -698,21 +698,22 @@ article .memo .memo-margin em {
 .dials { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem 0.5rem; }
 .dial { display: flex; flex-direction: column; align-items: center; gap: 0.35rem; }
 .dial svg { display: block; }
+/* One band, fixed whatever the dial reads: where this metric is trouble,
+   where it is doing well, and neutral between. The needle points into it. */
 .dial .track { stroke: var(--track); }
-.dial .fill { stroke: var(--accent); transition: stroke-dasharray 0.45s cubic-bezier(0.4, 0, 0.2, 1); }
-/* The bands the reading stands in, outside the arc and fixed whatever it
-   reads: where this metric is trouble, and where it is doing well. */
-.dial .zone { stroke-linecap: butt; }
 .dial .zone.bad { stroke: var(--down); }
 .dial .zone.good { stroke: var(--up); }
-@media (prefers-reduced-motion: reduce) { .dial .fill { transition: none; } }
+.dial .needle { stroke: var(--ink); stroke-linecap: round; }
+.dial .needle, .dial .hub { fill: var(--ink); }
+.dial .needle {
+  transform-box: view-box; transform-origin: 32px 32px;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (prefers-reduced-motion: reduce) { .dial .needle { transition: none; } }
 .dial b {
   font-size: 0.6rem; font-weight: 400; letter-spacing: 0.04em; color: var(--muted);
   text-align: center; line-height: 1.3;
 }
-.dial b i { font-style: normal; margin-left: 0.15rem; }
-.dial b i.up { color: var(--up); }
-.dial b i.down { color: var(--down); }
 /* The arcs carry a reading but never say what the reading is of. Each dial
    explains itself on hover and on keyboard focus; the text is authored in
    story/dial-tips.md, not here. */
@@ -946,10 +947,11 @@ const LAST_TURN = 13;
 const TIPS = __TIPS__;
 const BANDS = ["very low", "low", "moderate", "high", "very high"];
 const REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-const R = 24, CIRC = 2 * Math.PI * R, ARC = CIRC * 0.72;
-// The zone ring sits outside the value arc, so a reading never covers the
-// band it is standing in.
-const RZ = 29, CIRCZ = 2 * Math.PI * RZ, ARCZ = CIRCZ * 0.72;
+// The band sweeps 0.72 of a turn, starting at ARC_START degrees (SVG angles run
+// clockwise from three o'clock); the needle turns through the same sweep.
+const R = 26, CIRC = 2 * Math.PI * R, ARC = CIRC * 0.72;
+const ARC_START = 140.4, SWEEP = 360 * 0.72;
+const needleAngle = frac => "rotate(" + (ARC_START + SWEEP * frac).toFixed(1) + "deg)";
 
 // Where a reading is bad, and where it is good, as fractions of the scale.
 // Capability is not good or bad for the Union by being high — but the top of
@@ -984,13 +986,13 @@ const LABELS = metricOrder();
 function zoneArcs(id) {
   const zones = ZONES[id];
   if (!zones) return "";
-  // The bad band is drawn heavier than the good one, so which is which does
-  // not rest on telling two colours apart.
+  // Drawn over the neutral track, on the same radius and width: which is
+  // which reads from where the segment sits, not only from its colour.
   const band = (range, cls) =>
-    '<circle class="zone ' + cls + '" cx="32" cy="32" r="' + RZ + '" fill="none" ' +
-      'stroke-width="' + (cls === "bad" ? 3.6 : 2.4) + '" ' +
-      'stroke-dasharray="' + ((range[1] - range[0]) * ARCZ).toFixed(1) + ' ' + CIRCZ.toFixed(1) + '" ' +
-      'stroke-dashoffset="' + (-range[0] * ARCZ).toFixed(1) + '"></circle>';
+    '<circle class="zone ' + cls + '" cx="32" cy="32" r="' + R + '" fill="none" ' +
+      'stroke-width="6" ' +
+      'stroke-dasharray="' + ((range[1] - range[0]) * ARC).toFixed(1) + ' ' + CIRC.toFixed(1) + '" ' +
+      'stroke-dashoffset="' + (-range[0] * ARC).toFixed(1) + '"></circle>';
   return (zones.red || []).map(r => band(r, "bad")).join("") +
          (zones.green || []).map(r => band(r, "good")).join("");
 }
@@ -998,15 +1000,18 @@ function zoneArcs(id) {
 function buildDials() {
   document.getElementById("dials").innerHTML = LABELS.map((metric, i) =>
     '<div class="dial" tabindex="0" aria-describedby="tip' + i + '">' +
-      '<svg viewBox="0 0 64 64" width="58" height="58" role="img" id="a' + i + '" aria-label="' + metric.label + '">' +
-        '<g transform="rotate(140.4 32 32)">' +
-          '<circle class="track" cx="32" cy="32" r="' + R + '" fill="none" stroke-width="5" stroke-linecap="round" ' +
+      '<svg viewBox="0 0 64 64" width="66" height="66" role="img" id="a' + i + '" aria-label="' + metric.label + '">' +
+        '<g transform="rotate(' + ARC_START + ' 32 32)">' +
+          '<circle class="track" cx="32" cy="32" r="' + R + '" fill="none" stroke-width="6" ' +
             'stroke-dasharray="' + ARC.toFixed(1) + ' ' + CIRC.toFixed(1) + '"></circle>' +
           zoneArcs(metric.id) +
-          '<circle class="fill" id="f' + i + '" cx="32" cy="32" r="' + R + '" fill="none" stroke-width="5" ' +
-            'stroke-linecap="round" stroke-dasharray="0 ' + CIRC.toFixed(1) + '"></circle>' +
-        '</g></svg>' +
-      '<b>' + metric.label + '<i id="t' + i + '"></i></b>' +
+        '</g>' +
+        // Drawn pointing at three o'clock; setPanel turns it onto the reading.
+        '<line class="needle" id="n' + i + '" x1="32" y1="32" x2="55" y2="32" stroke-width="2.4" ' +
+          'style="transform: ' + needleAngle(0) + '"></line>' +
+        '<circle class="hub" cx="32" cy="32" r="3.2"></circle>' +
+      '</svg>' +
+      '<b>' + metric.label + '</b>' +
       '<span class="tip" role="tooltip" id="tip' + i + '">' +
         (TIPS[metric.label] || "") + '</span>' +
     '</div>').join("");
@@ -1016,16 +1021,10 @@ function setPanel(entry) {
   const metrics = entry.metrics || [];
   metrics.forEach((m, i) => {
     const frac = Math.max(0, Math.min(100, m.value)) / 100;
-    const fill = document.getElementById("f" + i);
-    if (fill) fill.setAttribute("stroke-dasharray", (ARC * frac).toFixed(1) + " " + CIRC.toFixed(1));
+    const needle = document.getElementById("n" + i);
+    if (needle) needle.style.transform = needleAngle(frac);
     const svg = document.getElementById("a" + i);
     if (svg) svg.setAttribute("aria-label", m.label + ": " + BANDS[Math.min(4, Math.floor(frac * 5))]);
-    const tick = document.getElementById("t" + i);
-    if (tick) {
-      const moved = typeof m.delta === "number" && m.delta !== 0;
-      tick.className = moved ? (m.delta > 0 ? "up" : "down") : "";
-      tick.textContent = moved ? (m.delta > 0 ? "\u25b4" : "\u25be") : "";
-    }
   });
   document.getElementById("panel-period").textContent = entry.period || "Where things stand";
   let ticks = "";
