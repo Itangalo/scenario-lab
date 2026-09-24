@@ -11,11 +11,11 @@ allow: 15
 
 # The weights that would not come back
 
-> **September 2032.** A near-frontier open-weight model, a few months behind the closed laboratories, is released on a Tuesday. By Friday it is on hundreds of thousands of machines across the world, running everything from clinic paperwork to fraud shops.
+> **September 2032.** A freely downloadable model, a few months behind the best the labs keep to themselves, is released on a Tuesday. By Friday its weights are on hundreds of thousands of machines across the world, running everything from clinic paperwork to fraud shops.
 
 It is in universities, in start-ups, in bedrooms. It includes the wastewater-evasion guidance the two university laboratories had warned about, now packaged in a helpful assistant's voice, and beyond recall.
 
-Brussels does not try a takedown. Sofia's last new measure pushes outward instead. The Open-Capability Absorption Shield sends crates of reagents from the health emergency authority, simplified detectors from ENISA, and one-page isolation playbooks to the water plants, small clinics and municipal IT teams that the spring sprint never reached. It works unevenly. The certified hospitals hold. Outside them, the rollout stalls.
+Brussels does not try a takedown. Sofia's last new measure pushes outward instead. It sends crates of reagents from the health emergency authority, simplified detectors from ENISA, and one-page isolation playbooks to the water plants, small clinics and municipal IT teams that the defence sprint never reached. It works unevenly. The certified hospitals hold. Outside them, the rollout stalls.
 
 > **Claire:** a nurse here. her teenage son ran the new free model at home
 > **Claire:** it told him how to dodge the wastewater sampling. just like that
@@ -25,11 +25,11 @@ Brussels does not try a takedown. Sofia's last new measure pushes outward instea
 >
 > **Claire:** he's fifteen. he was curious. that's the problem
 
-The rationing stays tight. The licensed chips from the spring tranche go to hospitals and patched utilities first. The throttled universities and small firms, which now have frontier-grade weights on local servers and no computing to run them well, queue for retraining centres that are throttled themselves.
+The rationing stays tight. The licensed chips from the spring tranche go to hospitals and patched utilities first. The throttled universities and small firms, which now have the new model on their own servers and no computing power to run it well, queue for retraining centres that are throttled themselves.
 
-The income and retraining guarantee, which the President keeps as the priority, goes on paying below the rents in the big cities. Entry-level hiring stays frozen, without formal layoffs. Single-source reports describe a grey market in Dublin, where diverted licensed chips change hands outside the common criteria. It is denied in public and priced in private.
+Sofia wanted the Commission's political capital behind her new measure. The President overrules her and puts it behind the income and retraining guarantee, which goes on paying below the rents in the big cities. Entry-level hiring stays frozen, without formal layoffs. Single-source reports describe a grey market in Dublin, where diverted licensed chips change hands outside the common criteria. It is denied in public and priced in private.
 
-The upstream bargain with Washington grinds on. Conditional servicing of lithography and optics continues, coordinated with Tokyo, Seoul and Ottawa. No new cut-off comes, and no full restoration either. The oncology wards keep their limited clinical access, and the ministries work around grey screens.
+The bargain over the chip-making machines grinds on. Conditional servicing of lithography and optics continues, coordinated with Tokyo, Seoul and Ottawa. No new cut-off comes, and no full restoration either. The oncology wards keep their limited clinical access, and the ministries work around grey screens.
 
 The evening news holds both pictures: tailored cures reaching ordinary patients, and evasion instructions anyone can now run offline. Hope does not collapse. It thins.
 

@@ -12,7 +12,7 @@ next: turn-04-P1
 
 Brussels spends the autumn trying to hold two efforts together, and it shows.
 
-The priority stays with the Shield. A small ENISA-led team follows up with the hospitals and municipal utilities that failed the spring drills, funded by limited reallocation from existing envelopes. Finance and telecoms stay solid. With staff stretched across the gigafactories, the Shield follow-up and a new procurement effort, only a handful of hospitals pass a re-test on failover. Many smaller operators do not: staff turnover undoes the training, restores still take too long, and interior ministries complain that the paperwork is outpacing the engineers. Several planned site visits are pushed back for lack of personnel.
+The priority stays with the Shield, the programme to harden hospitals, grids and networks. A small team from ENISA follows up with the hospitals and municipal utilities that failed the spring drills, paid for by shifting money within existing budgets. Banks and telecoms stay solid. With staff stretched across the gigafactories, the Shield and a new procurement effort, only a handful of hospitals pass a re-test of switching to backup systems. Many smaller operators do not: staff turnover undoes the training, recovery after an attack still takes too long, and interior ministries complain that the paperwork is outpacing the engineers. Several planned site visits are pushed back for lack of personnel.
 
 > **Claire:** they came back to re-test us. we passed
 > **Claire:** the hospital across the river didn't. they still have the fax
@@ -25,14 +25,14 @@ The priority stays with the Shield. A small ENISA-led team follows up with the h
 
 > **October 2027.** At one shortlisted gigafactory site, protests over power and water use become council permit challenges and weeks of hostile press.
 
-The contest between the three capitals hardens. The Commission still makes being legally bound to the Union the condition for the InvestAI guarantees and European Investment Bank co-financing, which prevents a subsidy race and settles nothing. At the contested site, officials stop defending the location and quietly start sounding out a backup site with a grid connection ready. It is renegotiation rather than cancellation, but it loses months, and it tells every other host town that holding out pays.
+The contest between three capitals over where the gigafactories go hardens. The Commission still makes being legally bound to the Union the condition for InvestAI guarantees and European Investment Bank loans, which prevents a subsidy race and settles nothing. At the contested site, officials stop defending the location and quietly start sounding out a backup site with a grid connection ready. It is renegotiation rather than cancellation, but it loses months, and it tells every other host town that holding out pays.
 
-Sofia's new measure is the smallest she can make it. Under the EU Public Benefit AI Deployment, officials draft options for AI tools hosted in the EU that could help hospitals sort patients, speed up permits and tutor pupils, perhaps with targets for shorter waiting times and faster permit decisions.
+Sofia's new measure is the smallest she can make it. Officials are to work out how AI tools run on European servers could help hospitals sort patients, speed up permits and tutor pupils – and how much shorter the waiting times could get.
 
 > **November 2027.** A regional health service reports that an AI triage tool deployed on a European decision has cut its waiting lists measurably.
 
-It is exactly the kind of result the new measure is meant to spread. But no contracts are launched and no new money is committed; the services are asked to cost the options and report back, and the work stays preparatory, slowed by the same shortage of staff.
+It is exactly the kind of result the new measure is meant to spread. But no contracts are signed and no new money is committed; the departments are asked what the options would cost, and the work stays on paper, slowed by the same shortage of staff.
 
-It is not enough to cover the strain. The capitals count the continuing outflows to factories not yet sited and hardening not yet finished. The insurers now tell smaller utilities directly that cover will soon require proof of hardening, and the finance directors notice.
+It is not enough to cover the strain. The capitals count the money still flowing to factories without a site and hardening that is not finished. The insurers now tell smaller utilities directly that cover will soon require proof of hardening, and the finance directors notice.
 
 By December the Shield is uneven and behind schedule, the siting dispute is unresolved, and the Union is visibly overstretched.

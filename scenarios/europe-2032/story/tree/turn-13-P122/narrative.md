@@ -24,11 +24,11 @@ Ministers argue over the cause. The empty hiring pages do the talking. The anger
 
 > **October 2032.** Under threat of losing access to American technology, Dutch suppliers are pressed to cut servicing and exports, not only of leading-edge lithography machines but of older tools used for ordinary chips, and to extend the curbs to other customers.
 
-The Hague stalls, Brussels opens an anti-coercion examination, and procurement officers talk of the queues growing longer. Europe's one real chokepoint is being operated by someone else.
+The Hague stalls, Brussels opens an examination under its law against economic blackmail, and procurement officers talk of the queues growing longer. Europe's one real chokepoint is being operated by someone else.
 
-Sofia's last new measure answers with accession, and with a shield for the chokepoint. The Joint Resilience Accession and ASML Shield seconds liaison officers to the joint cyber command and the binding biosurveillance pact, which have invited the Union in, and starts the flow of telemetry and samples. The certified hospitals keep the checked Atlantic tooling live, and municipal clinics get the hardened, authenticated channels first. It goes out with the President's name on it.
+Sofia's last new measure answers with accession, and with a shield for the chokepoint. It sends liaison officers to the joint cyber command its partners have set up and the binding disease-monitoring pact, which have invited the Union in, and starts the flow of network data and samples. The certified hospitals keep the checked control method running, and municipal clinics get the hardened, authenticated channels first. It goes out with the President's name on it.
 
-It works in part and fails in part. The joint feed catches two intrusion sets early, and fraud filtering unclogs triage in the affected districts, a visible restoration that officials claim loudly. The triage restoration completes its term. The ASML shield keeps the servicing lines open for weeks through compensation and queues coordinated with Tokyo and Seoul, and cannot reverse the American order; shipments still slip by months. The small towns still fall back on paper under load, rumours of sabotage around grid connections and building sites grow louder in the local press, and trust keeps falling.
+It works in part and fails in part. The joint feed catches two intrusion sets early, and fraud filtering unclogs triage in the affected districts, a visible restoration that officials claim loudly. The fix for the emergency lines completes its term. By paying compensation and agreeing the order of the queues with Tokyo and Seoul, Brussels keeps ASML, the Dutch chip-machine maker, servicing its customers for weeks. It cannot reverse the American order; shipments still slip by months. The small towns still fall back on paper under load, rumours of sabotage around grid connections and building sites grow louder in the local press, and trust keeps falling.
 
 ## Note to the President
 
@@ -40,7 +40,7 @@ What held:
 
 - The protected cores. Certified hospitals and large utilities absorbed an outbreak, a fraud wave and two ransomware waves.
 - Containment. Dozens died, and the cordons held.
-- The accession. We are inside the joint cyber command and the biosurveillance pact, and it caught two intrusions early.
+- The accession. We are inside the joint cyber command and the disease-monitoring pact, and it caught two intrusions early.
 
 What did not:
 

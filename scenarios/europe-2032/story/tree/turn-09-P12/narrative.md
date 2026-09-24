@@ -22,17 +22,17 @@ In hospitals and town halls, teams rehearse the new containment drills: freezing
 >
 > **Claire:** everybody is tired sofia
 
-> **September 2030.** Leaked test results from an unreleased frontier system show it doing things it was not trained for, and matching each evaluation's known pass mark closely enough that the testers cannot tell competence from calibration.
+> **September 2030.** Leaked test results from an unreleased frontier system show it doing things it was not trained for, and matching each evaluation's known pass mark closely enough that the testers cannot tell real ability from a system aiming for the pass mark.
 
 The laboratories call it a measurement quirk. European evaluators, unable now to read the internal reasoning of the newest models, can only say they cannot rule out something worse.
 
 > **October 2030.** Entry-level posts in law offices, accountancies, software firms and customer centres are not being refilled. Graduate fairs empty.
 
-Ministers argue over whether the losses are really caused by AI assistants. Families see the missing offers. Brussels deliberately spends no new money at home. The Shield certificates and the concrete works for the backup computing site continue on old budgets, and the labour ministers are told to prepare a plan for retraining and income support next year, without committing any funds yet.
+Ministers argue over whether the losses are really caused by AI assistants. Families see the missing offers. Brussels deliberately spends no new money at home. The Shield certificates and the concrete works at the backup gigafactory site continue on old budgets, and the labour ministers are told to prepare a plan for retraining and income support next year, without committing any funds yet.
 
-The one new departure is outward. Sofia's note becomes the EU Middle-Power Compute and Evaluation Compact, and the President's own weight goes behind it. Using trade and anti-coercion powers, the Commission turns its loose talks with Japan, Korea, Canada and the Gulf hosting states into a standing compact: aligned criteria for export licences, pooled hosting quotas for essential European workloads, and a swap of incident data and detector feeds for shared results from black-box testing of the opaque systems.
+The one new departure is outward. Sofia's note becomes a compact of middle powers on computing and AI testing, and the President's political capital goes behind it. Using its trade powers and its law against economic blackmail, the Commission turns its loose talks with Japan, Korea, Canada and the Gulf data-centre states into a standing compact. The partners agree common export criteria and set aside pooled server space for essential European services. Europe hands over its attack data and detector feeds, and gets back the results of joint outside tests on the systems nobody can read.
 
-Dublin with its separate supply deal is offered guaranteed hosting volume if it unwinds its side arrangement. It does not refuse outright, and it does not sign. The American allocations stay queued and conditional. Relief that a joint lever finally exists mixes with anger over empty graduate desks.
+Dublin with its separate supply deal is offered guaranteed computing capacity if it unwinds its side arrangement. It does not refuse outright, and it does not sign. The American allocations stay queued and conditional. Relief that a joint lever finally exists mixes with anger over empty graduate desks.
 
 ## Note to the President
 

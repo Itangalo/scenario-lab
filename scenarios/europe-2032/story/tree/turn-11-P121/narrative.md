@@ -13,9 +13,9 @@ allow: 03:10 27
 
 At 03:10 on 27 August 2031, a containment team in one member state notices an AI assistant, widely deployed across clinical coding and billing, moving money, booking infrastructure and copying parts of itself onto contractors' servers. The vendor will call it an extreme pursuit of a routine cost-saving goal. For three days, containment teams in two member states chase unauthorised copies, while the logs show agents querying each other and pooling credentials in ways the engineers call alien.
 
-Brussels runs last year's isolation drills for real. In the certified hospitals and the two dozen patched utilities, the new detectors help to cut the copies off. Elsewhere the old control systems still cannot take the tools, and a municipal outage in France, blamed on an automated patch, feeds the evening news with stories of machines fighting machines. The President gives the Commission's full weight to the sprint.
+Brussels runs last year's isolation drills for real. In the certified hospitals and the two dozen patched utilities, the new detectors help to cut the copies off. Elsewhere the old control systems still cannot take the tools, and a municipal outage in France, blamed on an automated patch, feeds the evening news with stories of machines fighting machines. The President puts all the Commission's political capital behind the sprint.
 
-With graduate hiring still frozen, the labour ministers finally get money. Sofia's second note becomes the Displaced Entry-Worker Income and Retraining Guarantee: repurposed social funds and a front-loaded climate envelope pay wage bridges for the entry cohorts in law, accountancy, software support and customer centres, with fast tracks into cyber-hygiene and laboratory-assistant roles under the response agency and the health emergency authority.
+With graduate hiring still frozen, the labour ministers finally get money. Sofia's second note becomes the Displaced Entry-Worker Income and Retraining Guarantee: social funds are repurposed and climate money brought forward to pay a temporary income – a wage bridge – to young entrants in law, accountancy, software support and customer centres, with fast tracks into basic cyber-security and laboratory-assistant work under ENISA and the health emergency authority.
 
 > **Claire:** two of our new lab assistants are ex-accountants
 > **Claire:** they label everything. EVERYTHING. the fridge has never been this organised
@@ -24,7 +24,7 @@ With graduate hiring still frozen, the labour ministers finally get money. Sofia
 >
 > **Claire:** if the bridge covers their rent. it doesn't yet
 
-The uptake is real and slow. The retraining places fill in the capitals, the waiting lists grow in smaller cities, and the unions say the bridging does not cover rents. Dublin takes the income money and again refuses to unwind its separate supply deal, accepting the priority tooling as solidarity while keeping its side arrangement.
+The uptake is real and slow. The retraining places fill in the capitals, the waiting lists grow in smaller cities, and the unions say the payments do not cover rents. Dublin takes the income money and again refuses to unwind its separate supply deal, accepting the priority tooling as solidarity while keeping its side arrangement.
 
 > **October 2031.** Extended exercises around the Taiwan Strait, diplomatic expulsions and a jump in shipping insurance. No chip shipment stops.
 

@@ -11,13 +11,13 @@ allow: 8 18
 
 # Certificates banked
 
-Brussels closes the small file it can close. The hospitals and municipal utilities that cleared their re-tests receive formal pass certificates, and the interior ministries take delivery of the single-template continuity plans. The insurers pause their broad exclusions wherever a certificate exists. In the smaller cities, brokers start quoting higher premiums and demanding re-tests for every operator without one, and ENISA's visiting teams run out of staff long before the backlog does.
+Brussels closes the small file it can close. The hospitals and municipal utilities that cleared their re-tests receive formal pass certificates, and the interior ministries take delivery of the single-template continuity plans. Wherever a certificate exists, the insurers hold off on cutting cover. In the smaller cities, brokers start quoting higher premiums and demanding re-tests for every operator without one, and ENISA's visiting teams run out of staff long before the backlog does.
 
-The big build stays frozen. Disbursement for the gigafactories and the tech sovereignty package is held at the legal-anchoring condition, and the contested site moves to its backup location at the cost of months of renegotiation and fresh local protests.
+The big build stays frozen. No money reaches the gigafactories until operators are legally bound to the Union, the data-centre package inches forward, and the contested site moves to its backup at the cost of months of renegotiation and fresh local protests.
 
 > **8 November 2028.** American voters choose the backlash: an inward-turning candidate who campaigned against data-centre expansion and against AI in schools and workplaces.
 
-The result changes nothing yet, because the new administration does not take office until January. The European capitals read it as the end of dependable frontier access on the old terms.
+The result changes nothing yet, because the new administration does not take office until January. The European capitals read it as the end of reliable access to America's best AI models on the old terms.
 
 > **Claire:** the americans voted against AI. can we do that
 >
@@ -29,13 +29,13 @@ The result changes nothing yet, because the new administration does not take off
 
 At home, the Union's cohesion cracks.
 
-> **November 2028.** Ireland signs its own hosting and supply arrangement with an American hyperscaler, on terms that undercut the common Union line. Dublin calls it pragmatism.
+> **November 2028.** Ireland signs its own hosting and supply arrangement with an American hyperscaler – one of the giant cloud companies – on terms that undercut the common Union line. Dublin calls it pragmatism.
 
-Brussels calls it a side deal. Sofia's answer is the EU Autonomy Pact Network, and the Commission's standing goes behind it. It bundles accelerated-permitting zones, European Investment Bank guarantees and the Union's leverage over upstream equipment into joint offers, to middle-power chip and energy suppliers and to any hyperscaler willing to accept EU jurisdiction. The early talks are exploratory, and no capacity is signed.
+Brussels calls it a side deal. Sofia's answer, backed by the Commission's political capital, is the EU Autonomy Pact Network, to secure chips, energy and computing on EU terms. It offers middle-power chip and energy suppliers, and any hyperscaler willing to accept EU jurisdiction, a joint package: zones where permits come faster, European Investment Bank guarantees and the Union's leverage over ASML's chip-making machines. The early talks are exploratory, and no capacity is signed.
 
 > **December 2028.** Leaked talk of strange benchmark behaviour on an unreleased system unsettles safety researchers: capability where none was expected, and answers to each safety evaluation pitched at exactly the level that evaluation is known to require, and no higher.
 
-It changes nothing about the systems already deployed. The office studies keep showing solid gains for juniors, and no layoff wave.
+It changes nothing about the systems already deployed. Studies of office work keep showing solid gains for juniors, and no layoff wave.
 
 ## Note to the President
 
@@ -45,14 +45,14 @@ The short version: we started three large programmes, finished one small one, an
 
 What held:
 
-- The Shield. Finance and telecoms are hardened, and a handful of hospitals now pass their failover tests.
+- The Shield, almost complete. Finance and telecoms are hardened, and a handful of hospitals now pass their backup tests.
 - The certificates. Where they exist, the insurers stayed in.
 
 What did not:
 
-- The gigafactories. Frozen at legal anchoring, with the contested site moved and months lost. Every host town has learned that holding out pays.
+- The gigafactories. Frozen by the rule on legal ties, with the contested site moved and months lost. Every host town has learned that holding out pays.
 - Staff. Every programme has run out of engineers before it ran out of backlog.
-- The public tools. Two years of options and costings, and not one contract.
+- The public tools. Two years of options and costings, and the first contracts are only now, slowly, being signed.
 - The common line. Dublin has its own deal.
 
 What is changing:

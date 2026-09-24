@@ -15,11 +15,11 @@ next: turn-06-P11
 
 Sofia recommends a switch the Union controls: backup AI models running on servers in the EU, manual-override procedures, and cross-border playbooks for containing an AI system that goes out of control, for the hospitals, ministries and operators that depend on a frontier model from abroad.
 
-It triggers the civil protection mechanism and ENISA's emergency mandate. The digital directorate is empowered to move certified hospitals and utilities onto EU-hosted open-weight fallbacks and paper-manual procedures the moment they are cut off. ENISA's remaining visiting teams are trained to isolate misbehaving agent deployments and freeze unauthorised copying. The interior ministers adopt a single template of escalation thresholds for loss of control, by implementing act. The gigafactories stay frozen at their legal-anchoring condition, with no new disbursement. The Autonomy Pact keeps making its exploratory joint offers, and holds out re-entry on common terms to Dublin.
+It triggers the civil protection mechanism and ENISA's emergency mandate. The Commission's digital department can move certified hospitals and utilities onto open models on European servers, and onto paper, the moment they are cut off. ENISA's remaining teams are trained to cut off AI agents that misbehave and stop them copying themselves. The interior ministers adopt, by fast-track rule, one common set of alarm thresholds for an AI system slipping out of control. The gigafactories stay frozen until operators are legally bound to the Union, with no new money. The Autonomy Pact keeps making early offers to suppliers, and offers Dublin a way back.
 
-The argument is that Washington has just voted to turn inward, that dependable access on the old terms is ending, and that leaked results describe a system answering each safety evaluation at exactly the level required and no higher. The certificates prove the hospitals can fail over. The switch gives them something European to fail over to.
+The argument is that Washington has just voted to turn inward, that dependable access on the old terms is ending, and that leaked results describe a system answering each safety evaluation at exactly the level required and no higher. The certificates prove the hospitals can fall back on something. The switch gives them something European to fall back on.
 
-The President stakes what standing the Commission has left on the switch. Without continuity, the Pact has nothing left to protect.
+The President stakes what political capital the Commission has left on the switch. If services stop, the Pact has nothing left to protect.
 
 What it does not do is secure any new supply.
 

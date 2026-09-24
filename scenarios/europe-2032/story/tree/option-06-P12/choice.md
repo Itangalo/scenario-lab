@@ -13,14 +13,14 @@ next: turn-06-P12
 
 **No new measure.** The Union runs what is already on the books.
 
-Sofia recommends starting nothing new until the Commission's standing recovers and it is clear what Washington's inward turn means for access. The next half-year is for triage, not building.
+Sofia recommends starting nothing new until the Commission's political capital recovers and it is clear what Washington's inward turn means for access to American AI. The coming months are for triage, not building.
 
-The banked Shield certificates and the template continuity plans become the Union's protocol for anything that goes wrong. Affected hospitals and ministries are isolated from the failing system, fail over to EU-hosted and open-weight fallbacks wherever they are certified, and use the incident reporting already on the books to reconstruct what happened. On access, nothing is replaced. The Trade Council uses the Autonomy Pact's mandate to turn exploratory talks into interim offers of hosting under EU jurisdiction for essential public workloads, explicitly to pull Dublin back to the common line. The gigafactory disbursement stays frozen, and the backup site proceeds through permitting.
+The banked Shield certificates and the template continuity plans become the Union's protocol for anything that goes wrong. When a system fails, hospitals and ministries cut it off, switch to backup AI models run on European servers or openly downloadable ones wherever they are certified, and use the incident reporting already on the books to reconstruct what happened. Nothing replaces access to American AI. Trade ministers use the Autonomy Pact to turn its exploratory talks into stopgap offers of computing under EU law for essential public services, to pull Dublin back to the common line. Gigafactory money stays frozen, and the backup site works through its permits.
 
-The argument is that the Union has already built the procedures it needs, and paid for the certificates. With its standing this low, a new fund would fail. A common supply line under EU jurisdiction is worth more than another programme.
+The argument is that the Union has already built the procedures it needs, and paid for the certificates. With its political capital this low, a new fund would fail. A common supply line under EU jurisdiction is worth more than another programme.
 
-The President stakes what standing the Commission has left on the Autonomy Pact Network.
+The President stakes what political capital the Commission has left on the Autonomy Pact.
 
-What it does not do is build anything to fail over to where the certificates do not reach.
+What it does not do is build any backup to switch to where the certificates do not reach.
 
 *Of ten simulated responses to this situation, two chose triage like this – a minority. Eight built a continuity switch the Union controls, the direction of the other recommendation.*

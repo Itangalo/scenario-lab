@@ -22,9 +22,9 @@ Triage assistants, radiology summarisers and ministry drafting tools built on it
 >
 > **Claire:** answer faster. radiology bites
 
-Sofia's answer is the Middle-Power Supply and Access Coalition, and the President takes it to the College and carries it. Using trade and anti-coercion powers, the Commission convenes the governments that hold fibre, lithography parts, specialty chemicals and spare computing into a standing secretariat, to align export licences and bargain jointly for replacement capacity. Reimbursed health and ministry workloads are ordered onto infrastructure logged by the coalition, paid for from existing investment envelopes.
+Sofia's answer is the Middle-Power Supply and Access Coalition, and the President takes it to the Commissioners and wins them over. Using trade and anti-coercion powers, the Commission convenes the governments that hold fibre, lithography parts, specialty chemicals and spare computing into a standing secretariat, to align export licences and bargain jointly for replacement capacity. Reimbursed health and ministry workloads are ordered onto infrastructure logged by the coalition, paid for from existing investment budgets.
 
-It works in part. By November two replacement pipelines are flowing, enough to restart most hospital workloads. Vendors outside the public sector largely ignore the order, and joint procurement secures far less frontier capacity than promised. Ministers still claim it as proof that a cut-off will be answered by withholding bottlenecks that others need.
+It works in part. By November two replacement pipelines are flowing, enough to restart most hospital workloads. Vendors outside the public sector largely ignore the order, and joint procurement secures far less access to the most capable models than promised. Ministers still claim it as proof that a cut-off will be answered by withholding bottlenecks that others need.
 
 > **Claire:** the coalition pipeline came back. radiology cheered
 > **Claire:** i've never heard radiology cheer
