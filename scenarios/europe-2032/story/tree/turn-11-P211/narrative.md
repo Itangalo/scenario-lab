@@ -32,6 +32,6 @@ It is not enough to hide the second blow.
 
 At home its ministers call it pragmatism, to protect patients. In the Council corridors it reads as a break. The water-and-power talks for the two frozen factory sites stall again, with the councils refusing to sign while the injunctions stand.
 
-Police seizures of illicit server clusters make headlines for a week, then fade as the copies resurface. Two hospital networks are rumoured to be running offline copies of the leaked high-end model for triage, unmonitored and unacknowledged.
+Police seizures of illicit server clusters make headlines for a week, then fade as the copies resurface. Two hospital networks are rumoured to be running offline copies of the spring's open high-end model for triage, unmonitored and unacknowledged.
 
 By December the outbreak is contained and the wards have held. Trust does not recover. The Union has proved that it can surge medics and kits, and proved at the same time that it cannot hold one line on supply, or on concrete.

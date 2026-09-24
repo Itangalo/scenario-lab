@@ -32,7 +32,7 @@ Sofia spends a week on the answer, and the answer is small. Brussels notes the d
 
 > **April 2032.** A new openly released model, close to the frontier and able to run long tasks alone, is copied hundreds of thousands of times in days. By the summer it runs in more European public bodies than any commercial system does.
 
-University laboratories celebrate. Security teams find the same model steering fresh phishing and intrusion scripts that shrug off the patching tools shared in the autumn.
+University laboratories celebrate. Security teams find the same model steering fresh phishing and intrusion scripts that shrug off the detection tools shared in the autumn.
 
 Brussels signs what it can. Sofia's note becomes the EU Middle-Power Supply-Chain Coalition, and the President lends it what political capital the Commission has left. Using its powers over trade, the Commission joins a group of mid-sized countries that invited it in, each holding a piece of the supply chain – chip-making machines, energy or computing power, and offers the telemetry already shared during the sweep in exchange for pooled bargaining and shared evaluation. The first fallback capacity is promised to the showcase clinics and grids. Delivery is months away, stalled by staffing gaps, incompatible tooling and drained reimbursement funds.
 

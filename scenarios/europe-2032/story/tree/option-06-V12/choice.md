@@ -15,11 +15,11 @@ next: turn-06-V12
 
 Sofia recommends pushing the next layer of protection down to the places the November probes found: backup systems locked down, offline recovery kits pre-positioned, and telemetry sharing made mandatory for municipalities and hospitals.
 
-ENISA and the allied cyber command run it. Offline backups are positioned in advance, reserve licences activated, and backstop payouts to insurers tied to live telemetry. The hospital sequencing feeds are locked to the pathogen pact's standard. There is no new power to evaluate models. The Union cannot read the models' reasoning, so it plans to degrade rather than stop, and to save what political capital it has.
+ENISA and the allied cyber command run it. Offline backups are positioned in advance, reserve licences activated, and backstop payouts to insurers tied to live telemetry. The hospital sequencing feeds are locked to the pathogen pact's standard. There is no new power to evaluate models. The Union cannot see inside the models, so it plans to degrade rather than stop, and to save what political capital it has.
 
 The argument is that offensive cyber capability has been downloadable and beyond recall since 2026, that the attacks that get through arrive at the smallest and least-staffed operators, and that the backstop only works if there is something to fall back on.
 
-What political capital the Commission has left goes behind the gigafactories. They are pushed through mediation and priority for grid power rather than new money: the site in mediation to a final go-ahead, the other, blocked in court, kept from sinking the rest. Without one gigafactory built in the Union, the rest of the strategy has nothing underneath it.
+What political capital the Commission has left goes behind the gigafactories. They are pushed through mediation and priority for grid power rather than new money: the site in mediation to a final go-ahead, the one blocked in court kept from sinking the rest. Without one gigafactory built in the Union, the rest of the strategy has nothing underneath it.
 
 What it does not do is look inside any of the systems it defends against.
 

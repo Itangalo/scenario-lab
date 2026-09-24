@@ -12,7 +12,7 @@ next: turn-11-P212
 
 Through the spring the showcase clinics keep their fragile gain. Where the triage helpers run, imaging waits stay a little shorter, and the regional papers keep repeating the Commission's line. Maintenance money and locum cover are enough to keep the wards open, though staff complain that the tools are still slow, and the queues lengthen again whenever the continuity plan's European models stutter.
 
-As Sofia recommended, nothing new is started and no priority is named. The months go on the compacts. The energy and legal officials shuttle to the two councils with offers of capped water use, grid connections in stages and money reserved for health, in exchange for lifting the suspensions site by site. The talks move by inches. No injunction is challenged, and no concrete is poured. The courts keep their suspensions in place pending technical review, and the night vigils continue at the silent sites.
+As Sofia recommended, the commitment is rewritten to put survival first, nothing new is started and no priority is named. The months go on the compacts. The energy and legal officials shuttle to the two councils with offers of capped water use, grid connections in stages and money reserved for health, in exchange for lifting the suspensions site by site. The talks move by inches. No injunction is challenged, and no concrete is poured. The courts keep their suspensions in place pending technical review, and the night vigils continue at the silent sites.
 
 > **Claire:** imaging waits are still shorter. two weeks
 > **Claire:** nobody has paid for anything new in a year. the two weeks are holding anyway

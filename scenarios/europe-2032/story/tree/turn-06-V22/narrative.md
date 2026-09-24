@@ -28,6 +28,6 @@ In the middle of the triage, Sweden announces its own side arrangement for compu
 
 The trade officials open a case against the side deal, and offer Stockholm a way back through the joint request to Washington and the joint licensing table with the Netherlands, Japan and Korea. The President spends what political capital the Commission has left on the compact, which is now the Union's only funded track towards sovereignty.
 
-The tech sovereignty package for data centres closes this spring, and there is little to celebrate. The five reserved gigafactory sites are empty fields with their permits kept warm. The two-hundred-billion-euro factory plan, retired in January, is not mentioned in the communiqué at all.
+The tech sovereignty package for data centres finishes its first phase this spring, and there is little to celebrate. Its permit zones are in place, and the five reserved gigafactory sites are empty fields with their permits kept warm. The twenty-billion-euro gigafactory plan, retired in January, is not mentioned in the communiqué at all.
 
 Public sentiment collapses. The power-price protests merge with anger over locked health records, and with the sense that dependence is now being dictated openly from abroad.

@@ -24,7 +24,7 @@ Then the clinics change the mood. Individually tailored therapies for two hard c
 >
 > **Claire:** i said the same thing
 
-Health ministers tour the wards with cameras in tow, and Sofia's note makes sure the wins are stamped European. Under it, the Union buys jointly to run the treatments and the AI triage tools on the shared supercomputers. Models that can run on hardware under Union control get preference, and every one needs a certificate from the Institute. The Institute formally opens in March. Its first reports are procedural checklists, not deep audits.
+Health ministers tour the wards with cameras in tow, and Sofia's note makes sure the wins are stamped European. Under it, the Union buys jointly to run the treatments and the AI triage tools on the shared supercomputers. Models that can run on hardware under Union control get preference, and every one needs a certificate from the Institute. The Institute, certifying on an interim basis since the cut-off, formally opens in March. Its first reports are procedural checklists, not deep audits.
 
 Delivery is uneven. The triage software works in Tallinn and stalls in Naples, for lack of staff and servers. The factory sites in Paris and Warsaw wait for grid hook-ups now conditioned on the tougher backup-power rules that came out of the autumn drills. The job-centre queues do not shorten, and the papers run cure stories beside automation stories.
 

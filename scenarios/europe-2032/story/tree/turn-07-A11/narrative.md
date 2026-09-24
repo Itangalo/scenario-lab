@@ -10,7 +10,7 @@ next: turn-08-A11
 
 # Ribbons, not electricity
 
-In September the two gigafactory sites get their permits and their funding, and Sofia stands behind a minister in a hard hat on an empty field while the photographers work. The grid connection is still in a queue. So are the chips.
+In September the two gigafactory sites get their permits and their InvestAI money, and Sofia stands behind a minister in a hard hat on an empty field while the photographers work. The grid connection is still in a queue. So are the chips.
 
 Washington remains cordial and slow. The drafts come back with the audit-rights clauses still unagreed.
 

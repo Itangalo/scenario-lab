@@ -29,7 +29,7 @@ Sofia's answer is the Bio-Uplift Containment Shield, pushed through existing hea
 >
 > **Claire:** said nobody who reads them
 
-The black-box testing cell still decides who may sell to governments, as slow and disputed as before. The first round of the gigafactory programme formally ends, with sites, grid links and permits in place. Only one site is actually building. The other is still stuck in court, and private investors stay cautious.
+The black-box testing cell still decides who may sell to governments, as slow and disputed as before. The first round of the gigafactory programme formally ends, with sites, grid links and permits in place. Only one site is actually building. Another is still stuck in court, and private investors stay cautious.
 
 Then Budapest breaks ranks again, renewing its cloud deal with the Chinese hyperscaler, with the same looser vetting, to power its new warehouse fleet. Joint chip buying with Japan and Korea continues. Washington offers sympathy and very little capacity. The papers call it the second humiliation in a year.
 

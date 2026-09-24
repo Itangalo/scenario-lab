@@ -19,7 +19,7 @@ This lights-on plan brings guarded repair crews for the grid connections, priori
 
 The argument is that everything the Union has built in four years is now physical, and physical things can burn. The fires at the robot sites have shown how easily, and nothing else on the books protects the rest.
 
-The President puts the Commission's political capital behind the middle-power club. Only pooled chips, power and access to model testing keep Rome inside the tent and the therapies flowing.
+The President puts the Commission's political capital behind the middle-power club. Only pooled chips, power and access to model testing bring Rome back inside the tent and the therapies flowing.
 
 What it does not do is build anything new.
 

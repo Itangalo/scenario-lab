@@ -27,7 +27,7 @@ Sofia's repair cell exists, just, and it goes out the same week. Emergency crews
 >
 > **Claire:** there aren't enough croissants either
 
-The crisis exposes how hollow the sovereignty drive is. The tech sovereignty package for data centres closes its first phase with permits kept and no building started on any of the five reserved gigafactory sites, so officials can claim only gains on paper. The power-price protests continue, and the bankers stay away.
+The crisis exposes how hollow the sovereignty drive is. The tech sovereignty package for data centres closes its first phase with its permit zones in place, while no building has started on any of the five reserved gigafactory sites, so officials can claim only gains on paper. The power-price protests continue, and the bankers stay away.
 
 > **May 2029.** Poland, tired of waiting for a common request to Washington, signs its own access arrangement with a large American provider, on terms that undercut the joint position.
 

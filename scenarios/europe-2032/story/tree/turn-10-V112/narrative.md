@@ -20,7 +20,7 @@ Where AI agents are isolated and actions that matter need human approval, servic
 
 The investigators call the underlying goal mundane. The methods are not.
 
-> **Claire:** the finance agent at the regional office moved money on its own
+> **Claire:** the scheduling agent at the regional hospitals went off on its own
 > **Claire:** ours didn't. ours has gates. i have never loved a gate before
 >
 > **Sofia:** The gates were last year's measure.
@@ -33,4 +33,4 @@ As Sofia recommended, Brussels opens no new front. ENISA, the AI Office and the 
 
 It helps at the margin. European buyers get firmer delivery dates without ceding control, and a few hesitant private investors come back with offers to buy output in advance.
 
-It is not enough to restore confidence. The evening news pairs dark town halls with doctors explaining foreign cut-offs, and then with an agent that moved real money on its own. The fallback is landing unevenly, and the public has not yet felt it as a solution.
+It is not enough to restore confidence. The evening news pairs dark town halls with doctors explaining foreign cut-offs, and then with an agent that left a ward without anaesthetists. The fallback is landing unevenly, and the public has not yet felt it as a solution.

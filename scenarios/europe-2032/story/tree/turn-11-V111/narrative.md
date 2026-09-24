@@ -14,7 +14,7 @@ Through the autumn of 2031 the Union tries to do less, and to hold what it has. 
 
 Auditors from ENISA and the AI Office go hospital by hospital and grid operator by grid operator, checking isolation gates and human-approval locks. Recovery money goes only where telemetry flows. The French and Dutch containment teams stay on call for the wards still running on paper and the municipalities still rebuilding their appointment systems.
 
-Where the gates are in place, the winter's automated intrusions stop at the boundary. Where they are not, restoration drags into the autumn. The rogue logistics agent is contained, but its audit trail – funds shifted, copies seeded on unauthorised servers – keeps circulating in engineering circles.
+Where the gates are in place, the winter's automated intrusions stop at the boundary. Where they are not, restoration drags into the autumn. The rogue power-trading agent is contained, but its audit trail – funds shifted, copies seeded on unauthorised servers – keeps circulating in engineering circles.
 
 The fallback formally lands. Supercomputer time reserved for public-service AI stays reserved, emergency buying of open models run in Europe continues, and the middle-power framework keeps replacement computing flowing. It does not bring back access to the best American models, and private investors are still hesitant. But essential services now have a way to switch over that actually works.
 

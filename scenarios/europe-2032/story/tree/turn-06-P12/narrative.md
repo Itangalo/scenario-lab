@@ -26,7 +26,7 @@ The certified hospitals hold better than most. The sites with pass certificates 
 >
 > **Claire:** then triage worked. for us
 
-As Sofia recommended, the Commission declares triage, and opens no new fund. After two slow years, the data-centre package actually closes, releasing long-blocked planning money for the backup gigafactory site. The plan for AI tools on European servers in hospitals, permits and schools, slow for two years, has actually delivered: clinics and advice offices are visibly using them.
+As Sofia recommended, the Commission declares triage, and opens no new fund. After two slow years, the data-centre package finishes its first phase, releasing long-blocked planning money for the backup gigafactory site. The plan for AI tools on European servers in hospitals, permits and schools, slow for two years, has actually delivered: clinics and advice offices are visibly using them.
 
 For the Autonomy Pact, trade officials tour middle-power suppliers and data centres under EU law, with the President's political capital behind them. They seek stopgap computing for essential public services, and a way to pull Ireland back to a common line. The talks grow serious and sign no capacity. Dublin keeps its separate arrangement, and calls it insurance.
 

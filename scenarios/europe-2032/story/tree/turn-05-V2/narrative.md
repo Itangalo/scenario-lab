@@ -27,7 +27,7 @@ The result dominates everything else. It lands in European capitals as confirmat
 >
 > **Claire:** that's the worst thing you've ever said to me
 
-With the money gone, and the bankers still absent from the five reserved sites, Sofia's note turns to pooling. Under the Middle-Power Supply-Chain Compact, the Union sets export licences together with the Netherlands, Japan and Korea, asks Washington jointly for computing power, and tests models together through the new Institute. Countries that each control an essential step in chip-making – lenses, chemicals, packaging – give Brussels its first joint bargaining table. The President puts political capital behind the compact.
+With the money gone, and the bankers still absent from the five reserved sites, Sofia's note turns to pooling. Under the Middle-Power Supply-Chain Compact, the Union, with the Netherlands in the lead, sets export licences together with Japan and Korea, asks Washington jointly for computing power, and tests models together through the new Institute. Countries that each control an essential step in chip-making – lenses, chemicals, packaging – give Brussels its first joint bargaining table. The President puts political capital behind the compact.
 
 It is leverage on paper more than capacity on the ground. The permits at the five sites are preserved, and nothing is built. The power-price protests flare again near two sites, and the polls read the autumn as dependence managed, not overcome.
 

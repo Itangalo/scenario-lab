@@ -30,7 +30,7 @@ The American cures remain imports. The tailored therapies run only where the Uni
 >
 > **Claire:** that's what i told her. she asked which half
 
-The Corps reaches the end of its funded phase. A few thousand young people keep their wages in care roles, the funds clear slowly, and there is no promise of an extension. The freeze on new automation in public services, imposed after the benefits scandal, calms the mayors and angers the vendors.
+The Corps reaches the end of its funded phase. A few thousand young people keep their wages in care roles, the funds clear slowly, and there is no promise of an extension. Going further than the narrow patch Brussels offered after the benefits scandal, labour ministers freeze approvals of new automation in public services. The freeze calms the mayors and angers the vendors.
 
 A local paper near one of the fenced gigafactory sites reports drones overhead one night and a brief power cut the next. The police call it vandalism. Nobody believes them.
 

@@ -31,7 +31,7 @@ Hospitals, ministries and ordinary firms had built their daily routines on that 
 >
 > **Claire:** be on it faster
 
-Sofia spends the weekend on the options note. Most of it is about the fortnight: emergency waivers so that hospitals can revalidate on the older model without starting procurement over, which is what most of them end up doing. The rest is about the next time. The President takes the plainest option, the Continuity Stack. Hospitals and ministries move onto AI systems run in the Union, the shared supercomputers and the two gigafactory sites reserve their capacity for essential services, and public banks pay European IT firms to rewire whatever broke. It is presented as continuity, not ambition. That is deliberate.
+Sofia spends the weekend on the options note. Most of it is about the fortnight: emergency waivers so that hospitals can revalidate on the older model without starting procurement over, which is what most of them end up doing. The rest is about the next time. The President takes the plainest option, the Continuity Stack. Hospitals and ministries move onto AI systems run in the Union, the shared supercomputers reserve their capacity for essential services, as the two gigafactory sites will once they run, and public banks pay European IT firms to rewire whatever broke. It is presented as continuity, not ambition. That is deliberate.
 
 It works where it has something to work with. The few regions already running European systems switch within days. Everywhere else the European models are noticeably weaker, there are too few engineers to do the rewiring, and small clinics wait at the back of the queue.
 

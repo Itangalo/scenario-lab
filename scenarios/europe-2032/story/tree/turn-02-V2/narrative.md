@@ -24,7 +24,7 @@ At 14:30 on 9 February 2027, in the middle of the response, access to the leadin
 >
 > **Claire:** that's not the comfort you think it is
 
-The message lands anyway: core tools can be withdrawn at will. Sofia's Institute, recommended in the autumn to find out what the models can do, is still hiring. What the winter needs is protection, and her note becomes the Grid and Public Services Shield. With the new year, the President moves political capital onto it. Grid operators are ordered to wall off their networks, the passwords that switch power off are changed, and cross-border response teams drill under the EU's joint disaster-response scheme. Energy ministries grumble about costs and about who is in charge. Protests over power prices flare around two sites shortlisted for gigafactories, and slow their permits.
+The message lands anyway: core tools can be withdrawn at will. Sofia's Institute, recommended in the autumn to find out what the models can do, is still hiring. What the winter needs is protection, and her note becomes the Grid and Public Services Shield. The President moves political capital off the gigafactories and onto it. Grid operators are ordered to wall off their networks, the passwords that switch power off are changed, and cross-border response teams drill under the EU's joint disaster-response scheme. Energy ministries grumble about costs and about who is in charge. Protests over power prices flare around two sites shortlisted for gigafactories, and slow their permits.
 
 Two counterweights soften the blow.
 

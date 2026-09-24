@@ -11,7 +11,7 @@ allow: 07:30 4
 
 # Blockade winter
 
-Shipments of advanced chips stop, and the news does not arrive as a memo. At 07:30 on 4 February 2030, the first letter from a chip factory declaring it cannot deliver lands in a procurement inbox in Brussels. By noon there are dozens. Delivery slots are cancelled, and the procurement channels go quiet.
+Shipments of advanced chips from Taiwan stop under a blockade, and the news does not arrive as a memo. At 07:30 on 4 February 2030, the first letter from a chip factory declaring it cannot deliver lands in a procurement inbox in Brussels. By noon there are dozens. Delivery slots are cancelled, and the procurement channels go quiet.
 
 Overnight every conversation about computing power in Brussels becomes a conversation about security. The Netherlands, Japan and Korea answer the phone, and each names its own price.
 
@@ -26,13 +26,13 @@ Deployments freeze. Administrators postpone triage assistants and scheduling too
 > **Claire:** the new scheduling tool is cancelled
 > **Claire:** nobody will insure it. so nobody will switch it on
 >
-> **Sofia:** We're drafting a liability backstop.
+> **Sofia:** We're drafting a liability guarantee.
 >
 > **Claire:** draft faster. the old one is held together with tape
 
 Brussels pulls two levers. The President stakes what political capital the Commission has left on the containment protocol, and civil protection teams run its first live cross-border isolation exercise: cloud cut-offs, payment freezes, mandatory reporting as soon as agents start acquiring resources. It is late and thinly staffed, and in the clinics that cooperate, it stops the worst of the cascade.
 
-Sofia's second note becomes the Chips-for-Compute and Civic Liability Pact. Europe offers joint controls with its partners on ASML's chipmaking machines, servicing and spares, and pooled buying; in return, the partners would guarantee shares of chips delivered inside the Union, to keep the stalled gigafactory alive. It also clarifies liability for a limited time and adds a liability backstop to coax the insurers back. The partners listen, and do not sign. Washington offers sympathy and little capacity of its own.
+Sofia's second note becomes the Chips-for-Compute and Civic Liability Pact. Europe offers joint controls with its partners on ASML's chipmaking machines, servicing and spares, and pooled buying; in return, the partners would guarantee shares of chips delivered inside the Union, to keep the stalled gigafactory alive. It also clarifies liability for a limited time and adds a public liability guarantee to coax the insurers back. The partners listen, and do not sign. Washington offers sympathy and little capacity of its own.
 
 > **May 2030.** Sorting, palletising and yard logistics automate quickly with imported robots and foreign control models. Repair, care and messy construction sites stay manual.
 

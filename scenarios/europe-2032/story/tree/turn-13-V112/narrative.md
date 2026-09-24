@@ -44,7 +44,7 @@ The short version: we switched Europe onto its own machines just in time, and go
 
 What held:
 
-- The gates. Where they were enforced, a runaway finance agent stayed somebody else's problem.
+- The gates. Where they were enforced, a runaway scheduling agent stayed somebody else's problem.
 - The switch. When the access was cut a second time, the wards that had migrated stayed up.
 - The checks. We can now show a clinician what the hospital model will and will not do.
 

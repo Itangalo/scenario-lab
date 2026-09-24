@@ -35,6 +35,6 @@ At home, Parliament asks the obvious question: if American models are coming on 
 
 The Commission's political capital this spring goes to the towns. Wage bridges are extended, empty clinic shifts filled, and civil-protection teams drill manual chlorination in village water plants. The European Investment Bank's promise keeps one major reinsurer insuring small utilities, at a higher premium. Where the staff never arrived, boil-water notices and premium letters still set the mood, and the evening news now has footage of robots in logistics halls.
 
-> **June 2029.** The tech sovereignty package for data centres completes its permits and funding. The bio-shield's stockpiles and monitoring network are declared operational.
+> **June 2029.** The tech sovereignty package for data centres reaches its first milestone: its zones are permitted and the private money is pledged. The bio-shield's stockpiles and monitoring network are declared operational.
 
 The engineers call both real and partial: capacity permitted, not powered; monitoring wide, not deep.

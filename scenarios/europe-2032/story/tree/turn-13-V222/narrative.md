@@ -38,7 +38,7 @@ Two softer shifts rebuild a little tolerance.
 
 Work is changing shape rather than disappearing. The polls lift from near zero, and the town halls stay hostile. The sampled audits of benefits scoring still crawl, the logs are still unread in places, and the promised freezes never arrive. The wage top-ups and retraining keep households afloat, and do not buy forgiveness.
 
-> **December 2032.** Tension around Taiwan rises again, and nobody re-rates anything. Shipping insurance premiums went up in 2029 and never came down; the strait has been priced as a war zone for three years without a war.
+> **December 2032.** Tension around Taiwan rises again, and nobody re-rates anything. Shipping insurance premiums went up in 2027 and never came down; the strait has been priced as a war zone for five years without a war.
 
 It reminds the capitals how exposed their supply of chips and models still is, without yet cutting it. The Commission ends the year intact, still spent out, and hoping the repair holds long enough for trust to return.
 

@@ -34,6 +34,6 @@ Sofia's patch is ready for them. Pre-packed offline recovery kits, locked-down b
 >
 > **Claire:** it's a box sofia
 
-The President keeps the Commission's political capital on the build, and politics moves the other way. Poland signs its own cloud and chip deal with a hyperscaler – one of the giant cloud companies – from outside the Union, breaking the common line on delivery to Europe and vetting of buyers. Brussels threatens to withhold recovery funds and offers joint buying with Japan and Korea instead. The gigafactory site in mediation is held to a final go-ahead. The second site stays in court.
+The President keeps the Commission's political capital on the build, and politics moves the other way. Poland signs its own cloud and chip deal with a hyperscaler – one of the giant cloud companies – from outside the Union, breaking the common line on delivery to Europe and vetting of buyers. Brussels threatens to withhold recovery funds and offers joint buying with Japan and Korea instead. The gigafactory site in mediation is held to a final go-ahead. The site in court stays there.
 
-The tech sovereignty package for data centres and the tie to the allied command both close, with permits and staff in place. European papers lead with unreadable models and fear for jobs. The assistants stay popular, and trust slips.
+The tie to the allied command closes with staff in place, and the tech sovereignty package for data centres finishes its first phase, its permit zones in place. European papers lead with unreadable models and fear for jobs. The assistants stay popular, and trust slips.

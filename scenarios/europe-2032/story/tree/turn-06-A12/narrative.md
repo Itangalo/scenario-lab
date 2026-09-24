@@ -31,8 +31,8 @@ The Commission does not try to ban what ports and warehouses are already buying.
 
 This spring the President spends the Commission's remaining political capital on the Trust Pact, the programme that pays for staff in small clinics and utilities. Wage bridges reach utility crews and care assistants in several regions, and mayors post videos of shorter hospital queues. Where the crews arrive, the boil-water notices end. In the smaller municipalities of the east and south, where they have not, the Pact is little more than posters, and anger grows as foreign robots take over warehouse shifts.
 
-> **June 2029.** The tech sovereignty package for data centres closes, its permits and grid reservations now law. The bio-monitoring network, stockpiles and rationing rules are declared operational.
+> **June 2029.** The tech sovereignty package for data centres finishes its first phase, the permits and grid reservations for its zones now law. The bio-monitoring network, stockpiles and rationing rules are declared operational.
 
-Engineers welcome both. Voters see little change. The computing sites in question are two fenced fields waiting on chips, and a monitoring network does not staff a clinic.
+Engineers welcome both. Voters see little change. The two gigafactory sites are still fenced fields waiting on chips, and a monitoring network does not staff a clinic.
 
 In Washington, the new team's negotiators speak warmly at the EU–US trade and technology forum about matching export controls and published terms. No European firm receives new access this spring. The terms are still being written.

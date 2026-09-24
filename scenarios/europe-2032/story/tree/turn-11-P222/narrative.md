@@ -33,7 +33,7 @@ The health-scheduling tools that still cut waits from months to days cannot sepa
 
 The world does not wait for Brussels.
 
-> **August 2031.** A new openly released model, nearly as capable as the best models the big labs keep to themselves, is copied hundreds of thousands of times in its first week. Two administrations are already running it in production, having decided that a model nobody can withdraw is the safer dependency.
+> **October 2031.** A new openly released model, nearly as capable as the best models the big labs keep to themselves, is copied hundreds of thousands of times in its first week. Two administrations are already running it in production, having decided that a model nobody can withdraw is the safer dependency.
 >
 > **November 2031.** Washington tightens export licensing again. Allies stay inside its rationing system on volume quotas, which in practice means licences without volume. Exercises around Taiwan push shipping insurance up.
 >

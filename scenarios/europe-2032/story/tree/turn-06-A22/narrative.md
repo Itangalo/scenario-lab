@@ -34,4 +34,4 @@ The developers call it measurement noise. Two evaluation groups re-run the Europ
 
 The advice holds. It also underlines the dependence. Europe is judging someone else's system from leaked charts.
 
-By June the tech sovereignty package for data centres is declared complete – permits, zones, private pledges – with no chips to fill it. Relief that supply has not collapsed mixes with blame over who let it come to this.
+By June the tech sovereignty package for data centres declares its first phase done – permits, zones, private pledges – with no chips to fill it. Relief that supply has not collapsed mixes with blame over who let it come to this.

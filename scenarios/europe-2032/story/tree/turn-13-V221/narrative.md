@@ -21,7 +21,7 @@ The other fronts deteriorate.
 
 > **September 2032.** Washington tightens chip and model controls again, this time rationing allied buyers alongside everyone else.
 >
-> **October 2032.** Portugal announces its own arrangement for cloud capacity on cheaper terms, and this time the Commission does not call it a defection. At home it is called pragmatism; in Brussels, a break in the common line.
+> **October 2032.** Portugal announces its own arrangement for cloud capacity on cheaper terms, and this time the Commission does not call it a defection. At home it is called pragmatism; in Brussels, privately, a break in the common line.
 
 Prices rise, and licences queue, for the very hardware the health and municipal systems need.
 

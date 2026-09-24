@@ -14,7 +14,7 @@ July opens with ribbon-cutting at the Paris and Warsaw shells. Ministers tour em
 
 > **September 2029.** A Japanese memory lot arrives. A Korean lot is lost to a higher bidder.
 
-The allocation board splits what arrives between the cancer wards in Lyon, Milan and Rotterdam and the three grid operators. Treatment continues at lower throughput, and the queues lengthen. Holding the supply compact together works, narrowly: the maintenance crews fly east, export clearances are honoured, and the continuity cells keep clinics and grids running on degraded European substitutes. It stops collapse. The gratitude curdles into blame over who let supply turn into begging.
+The allocation board splits what arrives between the cancer wards in Lyon, Milan and Rotterdam and the three grid operators. Treatment continues at lower throughput, and the queues lengthen. Holding the supply compact together works, narrowly: the maintenance crews fly east, export clearances are honoured, and the continuity cells keep clinics and grids running on degraded substitutes. It stops collapse. The gratitude curdles into blame over who let supply turn into begging.
 
 Then the scandal breaks.
 

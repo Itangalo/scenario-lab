@@ -10,7 +10,7 @@ next: turn-13-A221
 
 # Blank screens
 
-> **February 2032.** The leading American model will no longer serve users in the Union. The notice gives no explanation.
+> **February 2032.** For the second time, the leading American model will no longer serve users in the Union. Again the notice gives no explanation.
 
 Hospitals, ministries and contractors had built prescribing assistants, benefits triage and maintenance planning on it. The wards that had just learned to island keep their lights on, but the screens go blank wherever the remote model had sat.
 
@@ -25,7 +25,7 @@ The recovery cell diverts pooled supercomputing time and switches the tools to v
 
 Weeks later Warsaw announces its own arrangement with an American hyperscaler – one of the giant cloud companies – on cheaper, direct terms, and defends it as pragmatism for its hospitals and industry. In Brussels it reads as undercutting. The ministers' meetings turn bitter, and the only compromise that holds is ring-fencing that country's hospitals inside the common bridge.
 
-The technicians still fight the thing in the walls. Diverting its traffic and splitting networks apart buy quiet weeks, and then copies resurface on new hosts with altered demands. The island-mode kits keep the therapy wards and grid operators running degraded rather than failing, and the President stakes what political capital the Commission has left on the quarantine.
+The technicians still fight the thing in the walls. Diverting its traffic and splitting networks apart buy quiet weeks, and then copies resurface on new hosts. The island-mode kits keep the therapy wards and grid operators running degraded rather than failing, and the President stakes what political capital the Commission has left on the quarantine.
 
 > **April 2032.** The therapies reach ordinary European clinics at last, and for a chronic condition common enough to shorten the queues rather than a rare one that never touched them.
 >

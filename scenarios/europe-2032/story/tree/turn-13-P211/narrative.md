@@ -30,7 +30,7 @@ The other capitals call it an auction of the common line. Sofia's last new measu
 
 The money leaves the sector while the ministers argue.
 
-> **September 2032.** AI valuations reset hard. Announced data-centre expansions are cancelled rather than delayed, and several financing structures European projects had counted on evaporate.
+> **November 2032.** AI valuations reset hard. Announced data-centre expansions are cancelled rather than delayed, and several financing structures European projects had counted on evaporate.
 
 The builders who promised machine labour at scale spend the months explaining missed deliveries: warehouse robots work where the floors were rebuilt around them, and stop at the door.
 

@@ -32,7 +32,7 @@ The cell starts work and cannot keep pace. The results are disputed, vendors are
 
 > **May 2029.** An open release nearly as capable as the best models the big labs keep to themselves arrives with the add-ons that let it act on its own included. Whatever the spring's jump added is on private machines within the week – ready to run, rather than ready to build.
 
-The earlier bets pay in part. The tech sovereignty package for data centres formally closes, unlocking sites and grid links, though private money stays cautious. The joint cyber and pathogen integration closes too, with shared telemetry and sequencing now a condition of recovery funds, and when municipal networks are probed again, they degrade rather than stop.
+The earlier bets pay in part. The tech sovereignty package for data centres finishes its first phase, unlocking sites and grid links, though private money stays cautious. The joint cyber and pathogen integration closes too, with shared telemetry and sequencing now a condition of recovery funds, and when municipal networks are probed again, they degrade rather than stop.
 
 Then the unity breaks on supply. Hungary signs its own cloud deal with a Chinese hyperscaler – one of the giant cloud companies – with looser vetting of buyers, and calls it pragmatism. Brussels offers it joint-buying prices to come back, and makes the backstop for insurers depend on sharing data. The deal stands. The papers call it a humiliation.
 

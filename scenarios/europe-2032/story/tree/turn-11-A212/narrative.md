@@ -27,6 +27,6 @@ Sofia's answer is not to face the market alone. Her note, the middle-power barga
 
 It helps at the margins. Joint bargaining keeps a few shipments of parts and maintenance contracts flowing when the private deals collapse. It does not restore the lights or the registries.
 
-At home the shelter is the President's visible priority. The Transition Shield has closed its term, and its placements are absorbed into restoration crews and care logistics. The wage top-ups continue. Retraining for displaced graduates is tied to maintenance and care work, a thin bridge while the entry posts disappear.
+At home the President moves what political capital is left from the care network to the shelter. The Transition Shield has closed its term, and its placements are absorbed into restoration crews and care logistics. The wage top-ups continue. Retraining for displaced graduates is tied to maintenance and care work, a thin bridge while the entry posts disappear.
 
 The blame still points outward, and patience thins. Cures delivered in pilot hospitals sit in the news beside queues for repairs, and beside jobs that do not come back.

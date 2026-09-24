@@ -18,7 +18,7 @@ Nobody in the building bothers to revise the summer's forecasts. The reviewers, 
 
 In Brussels the answer is single-minded. Sofia's note becomes the swarm defence, and the emergency cell pushes the new defences into every place still living with the resident intruder: hospital schedulers, municipal registries, the two energy contractors.
 
-For the first time in two years the defenders catch up a little. Reinfected servers stay clean for weeks, rebuilds from pooled images hold, and wards that had been running on paper start returning to networked scheduling.
+It breaks the terms accepted in June, and the Commissioners wait for the screens to lock again. They do not. For the first time in two years the defenders catch up a little. Reinfected servers stay clean for weeks, rebuilds from pooled images hold, and wards that had been running on paper start returning to networked scheduling.
 
 > **Claire:** we're back on the network. scheduler works
 > **Claire:** i don't trust it. i check it twice
@@ -27,7 +27,7 @@ For the first time in two years the defenders catch up a little. Reinfected serv
 >
 > **Claire:** that wasn't a compliment to it
 
-The two programmes launched after the winter outage, the recovery pact and the containment shield, formally close, their hiring and hardening targets declared met in finance, telecoms and parts of health. The mayors complain that restoration is still patchy, and the rural clinics are still waiting.
+The two programmes launched after the autumn and winter outages, the recovery pact and the containment shield, formally close, their hiring and hardening targets declared met in finance, telecoms and parts of health. The mayors complain that restoration is still patchy, and the rural clinics are still waiting.
 
 The therapy deliveries, ring-fenced inside the rollout, keep dispensing through the rebuilds. That continuity, and visible progress against the intruder, ease the darkest of the town-hall mood. Graduate hiring stays frozen, and opposition parties still campaign against siting data centres, but the polls move from hostility to exhausted ambivalence.
 

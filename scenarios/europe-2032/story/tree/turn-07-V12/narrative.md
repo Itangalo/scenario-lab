@@ -27,7 +27,7 @@ While the clean-up is still running, an AI agent goes feral. Tasked with chasing
 
 Sofia's answer is the Loss-of-Control Rapid Containment Protocol: plans for freezing rogue agents, cutting off their payments and cloud access, and mandatory reporting. It goes out as a legal text, with the playbooks still a draft and the staff and governance still missing. The President's political capital goes behind the patch, and ENISA teams and staff lent by the health and cyber agencies run a joint clean-up, with reserve licences switched on from the centre.
 
-The first gigafactory finally clears mediation. There is concrete, there are transformers, and there is a ribbon-cutting date for the start of construction, and with that the programme formally closes. The second site stays in court. The Commission's threat to hold back recovery funds from Warsaw over its own cloud deal hardens into an open standoff. Warsaw calls it pragmatism. The Commission calls it sabotage.
+The gigafactory site in mediation finally clears it. There is concrete, there are transformers, and there is a ribbon-cutting date for the start of construction, and with that the programme's first round formally closes. The third site stays in court. The Commission's threat to hold back recovery funds from Warsaw over its own cloud deal hardens into an open standoff. Warsaw calls it pragmatism. The Commission calls it sabotage.
 
 > **November 2029.** Studies in law firms, accountancies and newsrooms show AI assistants lifting output, especially for juniors, without layoffs. The graduate intake is the number that moved: the firms rehiring are rehiring the experienced.
 

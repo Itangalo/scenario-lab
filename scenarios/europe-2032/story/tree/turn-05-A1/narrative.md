@@ -50,7 +50,7 @@ What held:
 What did not:
 
 - Small municipalities. They have the kit but not the staff, one town that cut itself off lost its chlorination monitoring, and the insurers have walked. The Trust Pact is our answer, and it is only starting.
-- The build. The gigafactories are two sites, and the chips to fill them are behind the quarantine around Taiwan.
+- The build. Two of the gigafactory sites are moving, and the chips to fill them are behind the quarantine around Taiwan.
 - Our leverage over ASML's machines. We have held it for two years and not used it.
 
 What is changing:

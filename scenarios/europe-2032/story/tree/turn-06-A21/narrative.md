@@ -28,7 +28,7 @@ The first hold is proposed for a clinical planning assistant. Health ministers w
 >
 > **Claire:** me. it involves me
 
-The tech sovereignty package for data centres formally closes this spring: permits, fast-permit zones, and a pledge of private capital through 2036. The concrete is real; the machines are not. With the Taiwan Strait still shut by inspections and waits for power transformers lengthening, the Paris and Warsaw shells stay empty.
+The tech sovereignty package for data centres reaches its first milestone this spring: permits, fast-permit zones, and a pledge of private capital through 2036. The concrete is real; the machines are not. With the Taiwan Strait still shut by inspections and waits for power transformers lengthening, the Paris and Warsaw shells stay empty.
 
 > **March 2029.** A second Japanese lot of advanced chips arrives, smaller than promised. A Korean lot is outbid again.
 

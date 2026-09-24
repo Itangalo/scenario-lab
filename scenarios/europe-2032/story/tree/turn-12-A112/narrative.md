@@ -24,7 +24,7 @@ Power and telecom crews isolate networks by hand and restore from clean backups,
 
 Sofia recommends nothing new. The Containment Protocol, the plan for stopping runaway AI, is still being put in place and still ties up political capital, and the President agrees that no new fund is opened until it finishes.
 
-> **March 2032.** Washington extends its restrictions on the servicing of ASML's lithography machines to older equipment and more customers. The Hague protests and Berlin warns of retaliation. The company complies.
+> **March 2032.** Washington extends its restrictions on the servicing of ASML's lithography machines already installed in fabs to older equipment and more customers. The Hague protests and Berlin warns of retaliation. The company, still rebuilding its burned works, complies.
 >
 > **April 2032.** The naval picture around Taiwan darkens further, and two underwriters stop quoting the route at any price. What cannot be insured is not shipped, whatever the diplomats are saying that week.
 >

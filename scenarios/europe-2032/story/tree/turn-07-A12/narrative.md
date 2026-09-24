@@ -36,6 +36,6 @@ Health negotiators, meanwhile, secure early supply terms for the first tailored 
 >
 > **Claire:** i am. don't ruin it
 
-The gigafactory programme formally closes with its permits and grid reservations in law, and the Trust Pact's wage bridges and the staff posts it paid for end with it. The computing sites are still fenced fields waiting on chips, now delayed further by fences cut at night, damaged cables and halted works. The local press calls it vandalism, and nobody can say how coordinated it is.
+The two gigafactory sites get their permits and their InvestAI money, and the Trust Pact's wage bridges and the staff posts it paid for end. The sites are still fenced fields waiting on chips, now delayed further by fences cut at night, damaged cables and halted works. The local press calls it vandalism, and nobody can say how coordinated it is.
 
 Washington's published terms remain in drafting.
