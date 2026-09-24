@@ -29,6 +29,6 @@ Two shocks from outside define the half-year.
 
 Methodologists cry alarmism. Others warn that a recipe has been aired. The new model's copies are soon circulating widely on private hardware.
 
-The shield cannot answer either directly. The screening protocols arrive slowly, hospital IT teams complain that the hardening checklists assume staff they do not have, and the press links the open model to fraud and intrusion attempts. The capital with its separate foreign supply arrangement keeps getting its deliveries while the others queue, and Washington offers technical dialogue and no faster access. The no-undercut pact completes its term, a line held on paper.
+The shield cannot answer either directly. The screening protocols arrive slowly, hospital IT teams complain that the hardening checklists assume staff they do not have, and the press links the open model to fraud and intrusion attempts. Berlin, with its separate foreign supply arrangement, keeps getting its deliveries while the others queue, and Washington offers technical dialogue and no faster access. The no-undercut pact completes its term, a line held on paper.
 
 By June the wards are holding and nothing has restarted. The Union has chosen containment over concrete, and the diggers are still.

@@ -33,6 +33,6 @@ The calm is dented from outside.
 >
 > **December 2029.** Washington tightens its export licensing again. European buyers find their volume licences honoured in name and rationed in practice.
 
-There are queues and conditions where there used to be open taps. Brussels keeps the interim hosting talks alive and pushes the permits for the backup gigafactory site, and signs no new foreign capacity. The Autonomy Pact closes its term with talks and no contracts. The capital that kept its separate hosting deal refuses to unwind it.
+There are queues and conditions where there used to be open taps. Brussels keeps the interim hosting talks alive and pushes the permits for the backup gigafactory site, and signs no new foreign capacity. The Autonomy Pact closes its term with talks and no contracts. Dublin refuses to unwind its separate hosting deal.
 
 By December the services run more patched, still degraded, and more European than a year before. The gigafactory programme reaches the end of its schedule with its first concrete poured at the backup site, and a toured coalition of middle-power suppliers gives the Commission something to point to. The relief stays mixed with anger at how exposed the continent still is.

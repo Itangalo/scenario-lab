@@ -13,9 +13,9 @@ next: turn-10-A112
 
 **No new measure.** The Union runs what is already on the books.
 
-Sofia recommends starting nothing this half-year. The Commission's standing is close to spent, one capital has already walked, and a new costly instrument now would break the coalition rather than hold it.
+Sofia recommends starting nothing this half-year. The Commission's standing is close to spent, Rome has already walked, and a new costly instrument now would break the coalition rather than hold it.
 
-Instead, the Union runs what it has. The finished Shields keep health, power and telecoms isolated from outside interference and reroute around damage. Bridge pay under the Guarantee continues where ports and warehouses lose shifts. Certified triage and therapy procurement keeps running, and no new siting promise is made while fires are still being lit at the robot sites. The middle-power club becomes the single channel for bargaining with anyone, and the capital that walked is offered a share of whatever pooled capacity there is, rather than being left to drag the Union into someone else's camp.
+Instead, the Union runs what it has. The finished Shields keep health, power and telecoms isolated from outside interference and reroute around damage. Bridge pay under the Guarantee continues where ports and warehouses lose shifts. Certified triage and therapy procurement keeps running, and no new siting promise is made while fires are still being lit at the robot sites. The middle-power club becomes the single channel for bargaining with anyone, and Rome is offered a share of whatever pooled capacity there is, rather than being left to drag the Union into someone else's camp.
 
 The argument is that the next move should wait until it is clear what is left to protect and what can still be bargained for.
 

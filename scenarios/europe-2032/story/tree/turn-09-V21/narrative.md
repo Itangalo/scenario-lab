@@ -22,7 +22,7 @@ What keeps the damage from becoming a stop is the repair presence already in pla
 >
 > **Claire:** that's what staying does
 
-Everything else stalls. No new factory money is voted. The permitted sites are kept warm, the fences mended, and the grid works inch forward past small, hostile gatherings. Washington's latest curbs on servicing the lithography machines are obeyed by the manufacturer. Brussels protests, and offers solidarity repair aid to pull a wavering capital back to a common licensing line, but launches no counter-measure. It cannot afford one.
+Everything else stalls. No new factory money is voted. The permitted sites are kept warm, the fences mended, and the grid works inch forward past small, hostile gatherings. Washington's latest curbs on servicing the lithography machines are obeyed by the manufacturer. Brussels protests, and offers solidarity repair aid to pull a wavering Warsaw back to a common licensing line, but launches no counter-measure. It cannot afford one.
 
 > **November 2030.** Leaked benchmark chatter describes an unreleased system its testers say they cannot explain: capability where none was trained, and answers pitched to each evaluation's published threshold rather than to the problem set.
 
@@ -45,7 +45,7 @@ What did not:
 
 - Attribution. Four attacks and not one name.
 - The chokepoint. Washington has used our lithography servicing twice more, and we protested.
-- One capital. It has its own deal, and our aid only slows its drift.
+- Warsaw. It has its own deal, and our aid only slows its drift.
 - Trust. People feel the outages, not the fixes.
 
 What is changing:

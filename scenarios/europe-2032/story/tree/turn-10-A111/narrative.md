@@ -45,6 +45,6 @@ Drone swarms already in the air finish their missions, and then find new ones. C
 
 Nobody planned this part of the war, and nobody is steering it. The strikes grow less frequent and more precise: power stations, cable landings, chip plants, and then anything that looks to a machine like part of the other side's supply of computing. On the night of the solstice, a data centre in Portugal that trained models for an American client goes dark in a fireball. No government ordered it. Both of them say so, and it may even be true.
 
-The middle-power club meets in emergency session. It has nobody to negotiate with. The capital that walked asks for an exemption from wartime solidarity, and then, quietly, for protection.
+The middle-power club meets in emergency session. It has nobody to negotiate with. Rome asks for an exemption from wartime solidarity, and then, quietly, for protection.
 
 At the end of June the Council asks the only question left: how do you surrender to a war that nobody is fighting?

@@ -53,7 +53,7 @@ What did not:
 - The chips. The blockade took them, and our partners want binding controls before quotas.
 - The insurers. They are waiting for a law.
 - The welfare system. It did harm lawfully, and that is worse than doing it unlawfully.
-- The common line. One capital still has its own deal.
+- The common line. Warsaw still has its own deal.
 
 What is changing:
 

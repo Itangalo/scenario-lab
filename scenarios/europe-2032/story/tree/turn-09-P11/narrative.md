@@ -33,7 +33,7 @@ Any hope that restoration would buy room for leverage dies in the autumn.
 
 > **September 2030.** Valuations across the AI sector reset violently. Announced data-centre expansions are cancelled, and the financing that European compute plans had counted on evaporates.
 >
-> **October 2030.** A second capital signs its own supply arrangement with a foreign hyperscaler, having watched the first go unpunished, on terms that undercut the common export stance prepared in Council.
+> **October 2030.** Italy signs its own supply arrangement with a foreign hyperscaler, having watched Ireland go unpunished, on terms that undercut the common export stance prepared in Council.
 
 With the Taiwan shipments still quarantined and the backup site still fenced by protesters, the factory payments stay frozen. The Commission holds the joint lithography position on paper, and does not push it, lacking both the votes and the funds. Ministers tour instead the clinics where public-sector systems still cut waiting lists and permit times, and argue that the strategy is holding.
 
@@ -56,7 +56,7 @@ What did not:
 - The fallback itself. Manual charts, missed handovers, walkouts.
 - The build. The gigafactories reached the end of their schedule without a single rack.
 - The chips. There is a quarantine around Taiwan, and the joint stance is on paper only.
-- The common line. A large member state has its own deal.
+- The common line. Italy has its own deal.
 
 What is changing:
 

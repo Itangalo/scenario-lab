@@ -30,6 +30,6 @@ For regulators and hospital safety officers it reads as a loss. The oversight ro
 
 Brussels therefore begins a phased withdrawal from automated triage, by a low-cost directive that takes full effect over the next half-year, with pilots of manual sorting in the worst-affected wards. The early shift avoids one kind of failure and creates another. Manual sorting is slower, inconsistent, and openly contested over liability, and most wards stay in mixed operation through June.
 
-The money does not come back. The data-centre plans stay cancelled, the Taiwan shipments stay quarantined, and the factory payments stay frozen. The capital with its own hyperscaler deal keeps it, and accepts only limited logging of its emergency use through European infrastructure. The ministers who toured recovery stories in 2030 now front cordons and queues.
+The money does not come back. The data-centre plans stay cancelled, the Taiwan shipments stay quarantined, and the factory payments stay frozen. Dublin keeps its own hyperscaler deal, and accepts only limited logging of its emergency use through European infrastructure. The ministers who toured recovery stories in 2030 now front cordons and queues.
 
 The public registers fear more than reassurance. The Union has kept its services standing through the containment, and it is poorer, more frightened, and still unable to enforce a single line on supply.

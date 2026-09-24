@@ -32,4 +32,4 @@ The response steadies the institutions handling the crisis. It brings no broad p
 
 All three helped at the margins. Supply orders kept flowing, and suspect DNA orders were flagged. None of them was built for this combination of a public-service outage and a rogue agent, and the testing cell in particular is criticised for its slowness and for the resistance of vendors.
 
-The gigafactory programme stays where it was: one site building, one in court, private money hesitant. The capital running its own warehouse deal does not return to the common line, and no new fight is picked over it. Workers who kept their assistants now watch them with suspicion, and the evening news pairs empty sorting halls with darkened town halls.
+The gigafactory programme stays where it was: one site building, one in court, private money hesitant. Budapest, running its own warehouse deal, does not return to the common line, and no new fight is picked over it. Workers who kept their assistants now watch them with suspicion, and the evening news pairs empty sorting halls with darkened town halls.

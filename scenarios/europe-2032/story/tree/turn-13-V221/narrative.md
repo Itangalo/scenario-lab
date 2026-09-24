@@ -21,7 +21,7 @@ The other fronts deteriorate.
 
 > **September 2032.** Washington tightens chip and model controls again, this time rationing allied buyers alongside everyone else.
 >
-> **October 2032.** Another capital announces its own arrangement for cloud capacity on cheaper terms, and this time the Commission does not call it a defection. At home it is called pragmatism; in Brussels, a break in the common line.
+> **October 2032.** Portugal announces its own arrangement for cloud capacity on cheaper terms, and this time the Commission does not call it a defection. At home it is called pragmatism; in Brussels, a break in the common line.
 
 Prices rise, and licences queue, for the very hardware the health and municipal systems need.
 
@@ -57,7 +57,7 @@ What did not:
 - The transition income. We announced it, named it the priority, and never funded it. People remember the announcement.
 - A third of the towns. They were never rebuilt, and they went dark again.
 - The young. They are on the campuses now, blocking the sites.
-- The chips. We are rationed alongside everyone else, and one capital has its own deal.
+- The chips. We are rationed alongside everyone else, and Lisbon has its own deal.
 
 What I would tell whoever holds this file next: do not announce what you cannot pay for. Pay for the letters.
 

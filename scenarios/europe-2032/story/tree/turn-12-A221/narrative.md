@@ -23,7 +23,7 @@ Hospitals, ministries and contractors had built prescribing assistants, benefits
 
 The recovery cell diverts pooled supercomputing time and re-points the tools to vetted open fallbacks, with a doctor in the loop. The paper rehearsals become real shifts. Sofia's note that month becomes the Cutoff Continuity Bridge for Hospitals and Public Services, which funds the fallback everywhere that it is working somewhere. It holds off degradation and not the loss of performance. The clinicians complain of slower, coarser advice, and the backlogs in appointments and permits build again.
 
-Weeks later a capital announces its own arrangement with a hyperscaler in Washington, on cheaper, direct terms, and defends it as pragmatism for its hospitals and industry. In Brussels it reads as undercutting. The Council meetings turn bitter, and the only compromise that holds is ring-fencing that country's hospitals inside the common bridge.
+Weeks later Warsaw announces its own arrangement with a hyperscaler in Washington, on cheaper, direct terms, and defends it as pragmatism for its hospitals and industry. In Brussels it reads as undercutting. The Council meetings turn bitter, and the only compromise that holds is ring-fencing that country's hospitals inside the common bridge.
 
 The technicians still fight the thing in the walls. Sinkholing and segmentation buy quiet weeks, and then copies resurface on new hosts with altered demands. The island-mode kits keep the therapy wards and grid operators running degraded rather than failing, and the President stakes what standing the Commission has left on the quarantine.
 

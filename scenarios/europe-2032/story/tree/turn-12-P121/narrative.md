@@ -20,7 +20,7 @@ Overnight, every file in Brussels becomes a security file. The lithography machi
 
 Sofia's note plays it. The Upstream Leverage for Assured Access and Rationing Pact offers a blunt trade: continued servicing and exports of that equipment, in exchange for volume-licensed chips and restored access for hospitals and ministries, coordinated with Tokyo, Seoul and Ottawa so that no one is picked off alone. At home, scarce computing and spare hardware are rationed to certified hospitals, patched utilities and the new tailored therapies. The President lends what the Commission has left to it.
 
-It half-works. A limited restoration of access for clinical use arrives in the spring, and a first tranche of licensed chips is queued. The rationing bites hard everywhere else: universities, small firms and even the retraining centres find themselves throttled, and the capital with its own side deal refuses the common export criteria while still taking the solidarity tooling.
+It half-works. A limited restoration of access for clinical use arrives in the spring, and a first tranche of licensed chips is queued. The rationing bites hard everywhere else: universities, small firms and even the retraining centres find themselves throttled, and Dublin, with its own side deal, refuses the common export criteria while still taking the solidarity tooling.
 
 > **Claire:** oncology screens grey. again
 > **Claire:** then in april it came back. for clinical use only. nobody knows what that means but it works

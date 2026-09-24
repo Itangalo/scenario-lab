@@ -22,11 +22,11 @@ The emergency crews from the autumn grid drive are recalled, and the spare-parts
 >
 > **Claire:** that's two guys and a van sofia
 
-In the middle of the triage, a member state announces its own side arrangement for computing capacity and model access, struck directly with a foreign hyperscaler under Washington's new doctrine of tiered access.
+In the middle of the triage, Sweden announces its own side arrangement for computing capacity and model access, struck directly with a foreign hyperscaler under Washington's new doctrine of tiered access.
 
-> **April 2029.** The breakaway capital calls its deal pragmatism. Brussels calls it a breach of the common line.
+> **April 2029.** Stockholm calls its deal pragmatism. Brussels calls it a breach of the common line.
 
-The trade officials open a coercion file on the side deal, and offer the capital a way back through the joint request to Washington and the joint licensing table with the Netherlands, Japan and Korea. The President spends what credit the Commission has left on the compact, which is now the Union's only funded track towards sovereignty.
+The trade officials open a coercion file on the side deal, and offer Stockholm a way back through the joint request to Washington and the joint licensing table with the Netherlands, Japan and Korea. The President spends what credit the Commission has left on the compact, which is now the Union's only funded track towards sovereignty.
 
 The tech sovereignty package formally closes this spring, and there is little to celebrate. The five reserved data-centre sites are empty fields with their permits kept warm. The two-hundred-billion-euro factory plan, retired in January, is not mentioned in the communiqué at all.
 

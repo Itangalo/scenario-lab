@@ -29,7 +29,7 @@ The rollout is partial. The evaluation cell gets access in public hospitals and 
 >
 > **Claire:** that's the first honest machine i've met
 
-Elsewhere, vendors stall, citing integration backlogs, and the synthesis screening mostly catches gaps in paperwork. The capital with its separate hyperscaler contract again routes only its reimbursed workloads through logged infrastructure.
+Elsewhere, vendors stall, citing integration backlogs, and the synthesis screening mostly catches gaps in paperwork. Dublin, with its separate hyperscaler contract, again routes only its reimbursed workloads through logged infrastructure.
 
 What carries the half-year is older work finishing. The containment cordons formally close, and when late-winter clusters hit, the clinics they reached bend without breaking: electives thinned and wards sealed briefly, while dispatch and power stayed up and the restored backups held. Staff seconded to the redress desks clear a fraction of the backlog of wrongful decisions, and the interim payments, uneven as they are, reach enough households to blunt the anger.
 

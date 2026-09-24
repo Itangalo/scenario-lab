@@ -26,7 +26,7 @@ It holds, unevenly. Queues lengthen again in France, Spain and Poland. Rotterdam
 >
 > **November 2031.** A European lab reports an AI-assisted materials finding with real industrial uses.
 
-The benchmark stays with the evaluation hosts, unresolved. The materials finding earns seminars and no relief. The middle-power club closes its term with pooled spares and joint testing, a modest success that reroutes nothing, and the capital that walked stays outside.
+The benchmark stays with the evaluation hosts, unresolved. The materials finding earns seminars and no relief. The middle-power club closes its term with pooled spares and joint testing, a modest success that reroutes nothing, and Rome stays outside.
 
 In December a rumour goes round, from a single source and denied by every side, of a blast near a declared neutral port.
 

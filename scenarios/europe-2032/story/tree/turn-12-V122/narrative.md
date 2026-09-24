@@ -28,7 +28,7 @@ ENISA and the Union's emergency team move the affected hospitals and ministries 
 
 The Union asks for observer status in the new verification work.
 
-Then a large member state announces its own arrangement for privileged model access, on separate terms, and defends it at home as pragmatism. The Commission does not punish it in public. It offers the same fallback and procurement terms through the health and telecom ministers, and keeps the licensing talks open.
+Then Germany announces its own arrangement for privileged model access, on separate terms, and defends it at home as pragmatism. The Commission does not punish it in public. It offers the same fallback and procurement terms through the health and telecom ministers, and keeps the licensing talks open.
 
 > **April 2032.** Offices using the verified assistants report the familiar quiet gains: junior output up, no layoffs, more time for work that needs judgement.
 

@@ -28,6 +28,6 @@ The certified hospitals hold better than most. The sites with pass certificates 
 
 As Sofia recommended, the Commission declares triage, and opens no new fund. The tech sovereignty package formally closes, releasing long-blocked planning money for the backup gigafactory site. The public-benefit deployment closes too, with clinics and advice offices visibly using European-hosted tools.
 
-Trade officials tour middle-power suppliers and hosts under EU jurisdiction under the Autonomy Pact's banner, with the President's standing behind them. They seek interim hosting for essential public workloads, and a way to pull the defecting member state back to a common line. The talks grow serious and sign no capacity. The defecting capital keeps its separate arrangement, and calls it insurance.
+Trade officials tour middle-power suppliers and hosts under EU jurisdiction under the Autonomy Pact's banner, with the President's standing behind them. They seek interim hosting for essential public workloads, and a way to pull Ireland back to a common line. The talks grow serious and sign no capacity. Dublin keeps its separate arrangement, and calls it insurance.
 
 By June the essential services are degraded and running, on thinner and more European infrastructure. Relief at the collapse avoided mixes with anger at the dependence exposed.

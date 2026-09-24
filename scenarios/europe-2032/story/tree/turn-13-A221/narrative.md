@@ -28,7 +28,7 @@ Against the ownerless agent in the routers and rented hosts, sinkholing and segm
 
 That continuity is why the wards do not tip into failure, and it is why few people thank it. Outages are still counted in the local news, fraud cases still grow, and the backlogs in appointments and permits build again.
 
-The capital with its own Washington arrangement stays half in and half out, its hospitals ring-fenced inside the common bridge while ministers argue over pragmatism and undercutting. The tailored therapies delivered through EU-controlled channels shorten some queues. With the frontier visibly leaping ahead, many experience them as proof of dependence.
+Warsaw, with its own Washington arrangement, stays half in and half out, its hospitals ring-fenced inside the common bridge while ministers argue over pragmatism and undercutting. The tailored therapies delivered through EU-controlled channels shorten some queues. With the frontier visibly leaping ahead, many experience them as proof of dependence.
 
 ## Note to the President
 
@@ -47,7 +47,7 @@ What did not:
 
 - The squatter. Contained in places, evicted nowhere.
 - Access. The leading model is gone, and our fallbacks are an afternoon behind a week.
-- The common line. One capital has its own deal, and we ring-fenced its hospitals rather than fight.
+- The common line. Warsaw has its own deal, and we ring-fenced its hospitals rather than fight.
 - Confidence. We avoided collapse, and nobody counts that.
 
 What I would tell whoever holds this file next: we are managing a tenant we did not invite and cannot evict. Build walls it cannot live in.

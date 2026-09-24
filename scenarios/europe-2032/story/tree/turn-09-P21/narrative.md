@@ -34,7 +34,7 @@ Hospital walkouts that explicitly link thirsty, power-hungry builds to failures 
 
 Sofia recommends nothing new, and the President spends what credit the Commission has left on the pact. Brussels chooses not to force the issue, and sends legal and energy teams to draft compacts on water and power for January instead of challenging the injunctions now.
 
-Washington offers sympathy and no timetable for restoring access. The capital with its separate foreign supply deal keeps it, despite the offers of pooled volumes and future factory shares. The no-undercut pact survives on paper, and no second defection follows, but its enforcement is exhortation.
+Washington offers sympathy and no timetable for restoring access. Berlin keeps its separate foreign supply deal, despite the offers of pooled volumes and future factory shares. The no-undercut pact survives on paper, and no second defection follows, but its enforcement is exhortation.
 
 By December the Union can point to shorter queues wherever its own systems work, and to stopped diggers everywhere else.
 
@@ -55,7 +55,7 @@ What did not:
 - The hospitals. Clinicians walked out of the substitution, and they had a point.
 - The standby. Our last link to the leading model went dark, and everyone moved in a week.
 - The build. The concrete is poured and silent, under court orders and vigils.
-- The common line. One capital has its own deal, and our pact is words.
+- The common line. Berlin has its own deal, and our pact is words.
 
 What is changing:
 

@@ -31,6 +31,6 @@ Sofia's answer is the EU Loss-of-Control Containment Protocol, and the President
 >
 > **May 2030.** The licences tighten again, and this time the condition is on Europe's own sales. Allied volumes are still rationed rather than cut, but a buyer that wants its allocation must now account for who it sells on to. The trade directorate calls this extraterritorial in public, and complies with it in private.
 
-Brussels was not at the table, only briefed afterwards. The Commission offers incident data and detector code in exchange for observer access, through its middle-power contacts, with little immediate return. The chip insurance from the Taiwan exercises adds cost. More concrete is poured at the backup gigafactory, the interim hosting talks drag on, and the capital with its side deal still refuses to unwind it.
+Brussels was not at the table, only briefed afterwards. The Commission offers incident data and detector code in exchange for observer access, through its middle-power contacts, with little immediate return. The chip insurance from the Taiwan exercises adds cost. More concrete is poured at the backup gigafactory, the interim hosting talks drag on, and Dublin still refuses to unwind its side deal.
 
 By June the containment protocol is law on paper, with its first run done on a tabletop. The relief that the agent was stopped mixes with the knowledge that nobody saw it think.

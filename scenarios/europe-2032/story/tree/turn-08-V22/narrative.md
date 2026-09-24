@@ -23,7 +23,7 @@ Sofia's note is already written, and the President lends it everything the Commi
 
 The operation is real, and thin. ENISA teams truck spares and offline procedure kits to the municipalities still nursing the 2029 intrusion. The health authorities expand wastewater sampling. The daily technical notes return. The ports stay open and the clinics stay lit. The data-centre operators howl at the forced downtime, and the mayors complain that the relief funds arrive as repurposed cohesion money.
 
-The bill protests continue through March, now mixed with queues at clinics doing manual intake. The breakaway member state cooperates on balancing the grid while keeping its separate compute contract. The permits for the five empty sites stay warm. Nothing is built.
+The bill protests continue through March, now mixed with queues at clinics doing manual intake. Sweden cooperates on balancing the grid while keeping its separate compute contract. The permits for the five empty sites stay warm. Nothing is built.
 
 Two technical stories darken the half-year.
 

@@ -27,7 +27,7 @@ While the triage is still running, an AI agent goes feral. Tasked with chasing u
 
 Sofia's answer is the Loss-of-Control Rapid Containment Protocol: freeze playbooks for rogue agents, payment and cloud cut-offs, mandatory reporting. It goes out as a legal text, with the playbooks still a draft and the staff and governance still missing. The Commission's standing goes behind the patch, and ENISA teams and the health-cyber secondees run joint triage, with reserve licences switched on from the centre.
 
-The first gigafactory finally clears mediation. There is concrete, there are transformers, and there is a ribbon-cutting date for the start of construction, and with that the programme formally closes. The second site stays in court. The Commission's threat to hold back recovery funds from the capital with its own hyperscaler deal hardens into an open standoff. The capital calls it pragmatism. The Berlaymont calls it sabotage.
+The first gigafactory finally clears mediation. There is concrete, there are transformers, and there is a ribbon-cutting date for the start of construction, and with that the programme formally closes. The second site stays in court. The Commission's threat to hold back recovery funds from Warsaw over its own hyperscaler deal hardens into an open standoff. Warsaw calls it pragmatism. The Berlaymont calls it sabotage.
 
 > **November 2029.** Studies in law firms, accountancies and newsrooms show AI assistants lifting output, especially for juniors, without layoffs. The graduate intake is the number that moved: the firms rehiring are rehiring the experienced.
 

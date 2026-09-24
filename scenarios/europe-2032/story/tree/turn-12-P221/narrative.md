@@ -26,7 +26,7 @@ Clinics that stretched through the autumn sweep on it revert to paper and to the
 
 The second blow comes from inside.
 
-> **March 2032.** A large member state unveils its own supply deal with a hyperscaler – cheaper power, guaranteed quota – openly undercutting the common licence line.
+> **March 2032.** Spain unveils its own supply deal with a hyperscaler – cheaper power, guaranteed quota – openly undercutting the common licence line.
 
 Sofia spends a week on the answer, and the answer is small. Brussels notes the deal without suing. Access to the fuel and transformer pools is quietly tied to there being no further side deals. In the Council corridor a deputy permanent representative tells her, kindly, that it is the most anyone could have done. She does not find that comforting.
 

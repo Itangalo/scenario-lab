@@ -31,6 +31,6 @@ Everything else frays.
 
 > **April 2030.** Washington compels further cuts to the servicing of Dutch lithography equipment, reaching back to the older machines used for ordinary chips. The company complies.
 
-The Union's one chokepoint is used again, and not by the Union. The capital with its own access arrangement defends it as pragmatism, undercutting the joint licensing front that the External Action Service is trying to hold with solidarity repair aid. No retaliatory export action follows, only a political protest.
+The Union's one chokepoint is used again, and not by the Union. Warsaw defends its own access arrangement as pragmatism, undercutting the joint licensing front that the External Action Service is trying to hold with solidarity repair aid. No retaliatory export action follows, only a political protest.
 
 No new building money is voted. The permitted factory sites are kept warm while the grid-connection works draw angry gatherings – rumours and single-source photos rather than a confirmed blockade, but enough to slow the contractors. Citizens feel the outages and not the productivity gains in offices. Trust falls further.

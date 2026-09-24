@@ -29,7 +29,7 @@ Sofia's repair cell exists, just, and it goes out the same week. Emergency crews
 
 The crisis exposes how hollow the sovereignty drive is. The tech sovereignty package formally closes its first phase with the permits preserved and no construction started on any of the five reserved sites, so officials can claim only planning gains. The power-price protests continue, and the bankers stay away.
 
-> **May 2029.** A member state, tired of waiting for a common request to Washington, signs its own access arrangement with a large American provider, on terms that undercut the joint position.
+> **May 2029.** Poland, tired of waiting for a common request to Washington, signs its own access arrangement with a large American provider, on terms that undercut the joint position.
 
 Its government calls it pragmatism. Paris and The Hague call it a breach of solidarity. The joint table with the Netherlands, Japan and Korea holds on licensing, and the common front on computing access frays.
 

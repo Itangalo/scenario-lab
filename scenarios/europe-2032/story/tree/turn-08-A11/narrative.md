@@ -24,7 +24,7 @@ The access pact concludes with draft tiers and an observer's seat at joint testi
 
 So Sofia writes the Graduate and Logistics Transition Guarantee: longer bridge pay, retraining places and hiring incentives, paid through the Social Fund and topped up by the levy on the employers who automate. Works councils co-sign site agreements to lift the blockades, and mayors get money to reopen suspended pilots, but only on certified sites. She sells it to finance ministers as cheaper than strikes. They argue about who pays the levy. Take-up is slow.
 
-Then, in May, a member state lets it be known that it is negotiating its own arrangement with a foreign hyperscaler: discounted computing capacity and early delivery of robots. At home it is called pragmatism. The College decides not to punish it. Sofia's line, adopted, is to make the Union's cover for workers more generous than anything the side deal offers, and to leave the door open.
+Then, in May, Italy lets it be known that it is negotiating its own arrangement with a foreign hyperscaler: discounted computing capacity and early delivery of robots. At home it is called pragmatism. The College decides not to punish it. Sofia's line, adopted, is to make the Union's cover for workers more generous than anything the side deal offers, and to leave the door open.
 
 Grid priority for the two gigafactory plots stalls in the energy council.
 

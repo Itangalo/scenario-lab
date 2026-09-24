@@ -18,7 +18,7 @@ ENISA teams rush it to hospitals, grid operators and municipal registries. For t
 
 Sofia wants that window locked into something bigger. With the American laboratories now a state arm and the bilateral hardware deals dead, her note turns to the other middle powers that hold lithography spares, reagents and maintenance capacity. The Middle-Power Repair and Defensive Patch Coalition aligns export-licence lists, bargains for computing access jointly, and shares the evaluation of the new patching tools. As a bloc that can withhold inputs, the Union regains a hearing in Washington and Beijing that it had lost dealing alone.
 
-> **April 2032.** A second member state signs its own supply arrangement on terms that undercut the common line. Its government calls it pragmatism.
+> **April 2032.** Slovakia, following Hungary, signs its own supply arrangement on terms that undercut the common line. Its government calls it pragmatism.
 
 The College again chooses quiet containment, through cohesion funds and procurement leverage in bilateral channels, over a public fight. The split still leaks, and the talk shows ask what a coalition is worth if its members shop alone.
 

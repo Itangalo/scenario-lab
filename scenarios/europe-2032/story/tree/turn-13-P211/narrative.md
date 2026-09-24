@@ -24,7 +24,7 @@ The queues form early. The health ministers tour the infusion rooms, and for a f
 
 The second story undercuts the first. The cures run on foreign models and foreign computing, on contracts Brussels did not negotiate.
 
-> **October 2032.** A large member state formalises its own supply arrangement with an American hyperscaler to guarantee its doses, and defends it as pragmatism.
+> **October 2032.** Germany formalises its own supply arrangement with an American hyperscaler to guarantee its doses, and defends it as pragmatism.
 
 The other capitals call it an auction of the common line. Sofia's last new measure, the EU Clinical Benefit Delivery Pact, launches into that split, and the President backs it in the College and in public: pooled negotiation, second-source clauses and first-delivery slots, if the separate deal is folded in. The offer stays on the table through December, unsigned.
 
@@ -54,7 +54,7 @@ What held:
 What did not:
 
 - The factories. Two sites, fenced and silent, with the water compacts unsigned.
-- The common line. A large member state bought its own doses on its own contract.
+- The common line. Germany bought its own doses on its own contract.
 - The table. Washington and Beijing set a floor under the race, and we watched from the corridor.
 - The copies. Two hospital networks may be running a model no one monitors.
 

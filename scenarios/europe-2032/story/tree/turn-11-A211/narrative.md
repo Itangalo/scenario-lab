@@ -31,6 +31,6 @@ The relief is short. Washington places its leading laboratories under direct sta
 >
 > **November 2031.** Offices across Europe report large productivity gains from AI assistants, and very little new hiring to go with them.
 
-In Europe's empty factory halls the symbolism stings. Then a member state breaks ranks and signs its own supply deal on terms that undercut the common line. The College chooses quiet containment over a public fight it cannot afford. The Transition Shield closes its term with its payments still running.
+In Europe's empty factory halls the symbolism stings. Then Hungary breaks ranks and signs its own supply deal on terms that undercut the common line. The College chooses quiet containment over a public fight it cannot afford. The Transition Shield closes its term with its payments still running.
 
 The therapies keep flowing, week to week, through pooled reagents and stretched licences, and the evening news still shows remissions. But the pharmacists still count stocks in weeks, hiring stays frozen, and voters who credit the shelter are starting to ask whether a continent that cannot build models, machines or medicines can stay neutral for long.

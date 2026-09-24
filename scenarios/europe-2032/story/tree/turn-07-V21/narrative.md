@@ -27,7 +27,7 @@ It was developed outside Europe, and the crews adopt it quickly and push it out 
 
 The relief is real and partial. The clinics reopen and the ports clear, and many administrations run on fragile workarounds. Trust does not return.
 
-Brussels freezes everything else, and no vote on new money is attempted. In December the gigafactory programme reaches the end of its first build phase: concrete poured, and the first halls fitted at the initial sites. Officials present the first operational capacity as progress beyond paper, and for once it is. The supply-chain compact closes its term with the joint licensing front intact. Solidarity aid from the repair cell is used to coax the capital with its own American deal back towards the common request to Washington, and the computing front begins to mend.
+Brussels freezes everything else, and no vote on new money is attempted. In December the gigafactory programme reaches the end of its first build phase: concrete poured, and the first halls fitted at the initial sites. Officials present the first operational capacity as progress beyond paper, and for once it is. The supply-chain compact closes its term with the joint licensing front intact. Solidarity aid from the repair cell is used to coax Warsaw, with its own American deal, back towards the common request to Washington, and the computing front begins to mend.
 
 > **November 2029.** Studies from law firms, accountancies, newsrooms and consultancies find measurable productivity gains from AI assistants, especially for junior staff, and no layoffs. The economists note that the gain is largest where the work was most routine and smallest where it was most prized.
 

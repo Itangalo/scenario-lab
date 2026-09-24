@@ -25,7 +25,7 @@ Trade officials steer some of the lots into inspected channels, and two showcase
 
 The spring's rumour is confirmed in the same report. One of the showcase hospitals had a generator contracted from the pool, and when the auditors go to see it, the yard is empty. It was sold months ago, to a buyer nobody can name, for cash. The hospital's director learns it from the auditors. The dashboard in its lobby is still showing short waiting times in green.
 
-Prosecutors open files in three countries. Mayors accuse each other of hoarding. Brussels issues a restatement of the pool principles, with no new conditions and no new enforcement. The large member state's separate deal carries on.
+Prosecutors open files in three countries. Mayors accuse each other of hoarding. Brussels issues a restatement of the pool principles, with no new conditions and no new enforcement. Spain's separate deal carries on.
 
 > **Claire:** an auditor came to count our diesel
 > **Claire:** it was all there. he shook my hand
@@ -52,7 +52,7 @@ What held:
 What did not:
 
 - Access. The leading model refuses us, and the fallback our staff preferred went with it.
-- The common line. A large member state bought its own quota.
+- The common line. Spain bought its own quota.
 - The pools. Forged claims, resold stock, and an empty yard where a showcase hospital's generator should have been.
 - The coalition. The capacity it promised is still months away.
 

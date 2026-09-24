@@ -51,7 +51,7 @@ What did not:
 - Washington. Two years of drafting, and no European firm onboarded.
 - The build. The sites are fenced, guarded and waiting on chips.
 - The graduates. The Corps is thousands of places against tens of thousands of jobs.
-- One member state. It has its own deal, and our conditions only contain it.
+- Czechia. It has its own deal, and our conditions only contain it.
 
 What is changing:
 

@@ -35,6 +35,6 @@ The larger shock comes from Washington and Beijing.
 
 Brussels is informed afterwards, not consulted. The editorials call it a floor under the race that Europe watched from the corridor. The Commission asks for observer access, and the reply is polite and non-committal.
 
-On the ground, the police seize another cluster of illicit servers, and the copies reappear. The two hospital networks rumoured to be running offline copies stay quiet, neither confirming it nor joining the monitoring. The two frozen factory sites stay frozen, their injunctions unlifted and the water talks unsigned. The large member state keeps its separate supply deal.
+On the ground, the police seize another cluster of illicit servers, and the copies reappear. The two hospital networks rumoured to be running offline copies stay quiet, neither confirming it nor joining the monitoring. The two frozen factory sites stay frozen, their injunctions unlifted and the water talks unsigned. Germany keeps its separate supply deal.
 
 By June, trust in containment is partly restored, and little else is.

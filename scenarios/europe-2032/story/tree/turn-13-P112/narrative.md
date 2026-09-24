@@ -34,7 +34,7 @@ Sofia's answer is the Care Workforce Emergency Retention Pact, and the President
 
 The money moves more slowly than the pickets. The bonuses land unevenly, the pool fills only a fraction of the shifts, and the unions call the guarantees a pay cut dressed up as solidarity. A handful of hospitals keep delivering tailored therapies on ring-fenced European computing, the sovereign medical channel completes its term, and most waiting lists lengthen again as staff leave and the stand-in models remain slower than the foreign system that was cut off.
 
-The accession diplomacy continues in working groups on weights security and on restraints for biological design tools, with Europe offering supply-chain pledges and clinical incident data. No entry is granted, and no model is re-licensed. The large member state's separate supply deal stays outside joint procurement, despite a plea to stop poaching staff during the strike.
+The accession diplomacy continues in working groups on weights security and on restraints for biological design tools, with Europe offering supply-chain pledges and clinical incident data. No entry is granted, and no model is re-licensed. Italy's separate supply deal stays outside joint procurement, despite a plea to stop poaching staff during the strike.
 
 By December, containment has held without a regional cascade, and the clinics have not. The emergency planners count the beds that stayed open. The patients count the appointments they lost.
 
@@ -55,7 +55,7 @@ What did not:
 - The workforce. It broke in October, and it had every right to.
 - The cures. The best therapies are behind a door abroad, and the accord did not open it.
 - The accord. We offered our data for a seat, and were given working groups.
-- The common line. A large member state poached staff during the strike.
+- The common line. Italy poached staff during the strike.
 
 What I would tell whoever holds this file next: every programme we ran was staffed by the same exhausted people. Pay them before the next plan, not after.
 

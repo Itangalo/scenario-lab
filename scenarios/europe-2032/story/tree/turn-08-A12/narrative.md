@@ -20,7 +20,7 @@ The Protocol ends as routine. That is what it was for.
 
 Sofia's next note is about the one thing that has worked. The Trusted Adoption Dividend puts EU money behind scaling it: shorter queues for scheduling therapies, one-stop permit offices, classroom assistants, all procured on computing anchored in the Union. On paper, anyway. Early videos from the cities that get the money show waiting lists falling. The rollout is partial, and the chips reserved for it do not yet exist in any rack.
 
-> **May 2030.** A member state unveils its own deal for hyperscale computing capacity, on terms that undercut the Union's common procurement line. Its government calls it pragmatism.
+> **May 2030.** Czechia unveils its own deal for hyperscale computing capacity, on terms that undercut the Union's common procurement line. Its government calls it pragmatism.
 
 Everywhere else it reads as a Union that cannot hold its members. The College cannot afford a sanctions fight. Sofia's line, adopted, is to offer Dividend money on condition of common terms, which contains the split and does not reverse it.
 

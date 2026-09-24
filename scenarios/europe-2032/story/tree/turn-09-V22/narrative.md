@@ -22,7 +22,7 @@ The second windless freeze arrives in November and does what the first had threa
 
 Brussels has its answer already printed. The continuity programme finishes rolling out its spares, offline clinical folders and wastewater sampling just as the cascade hits, and Sofia's new Emergency Winter Load-Shedding Pact and Municipal Islanding Kits order the same triage again: homes and hospitals protected, large computing curtailed first, daily technical notes, relief paid from reshuffled cohesion funds.
 
-It works, narrowly. The hospitals island, the water holds, the ports stay open. The data-centre operators again denounce forced downtime, the mayors again say the money is relabelled, and the breakaway state sells balancing power at a price that makes the evening news. Voters see not collapse but rationing made routine, for the second winter running.
+It works, narrowly. The hospitals island, the water holds, the ports stay open. The data-centre operators again denounce forced downtime, the mayors again say the money is relabelled, and Sweden sells balancing power at a price that makes the evening news. Voters see not collapse but rationing made routine, for the second winter running.
 
 While technicians truck generators, two laboratory announcements travel faster.
 
@@ -47,7 +47,7 @@ What held:
 What did not:
 
 - The build. There is nothing to show for it, and we chose that.
-- The breakaway capital. It kept its deal, and now sells us power.
+- Stockholm. It kept its deal, and now sells us power.
 - The bills. Rationing has become routine, and the protests with it.
 - The frontier. The best tools our engineers used in the dark were weights nobody can recall.
 

@@ -34,6 +34,6 @@ The cell starts work and cannot keep pace. The results are disputed, vendors are
 
 The earlier bets pay in part. The tech sovereignty package formally closes, unlocking sites and grid links, though private money stays cautious. The joint cyber and pathogen integration closes too, with shared telemetry and sequencing now a condition of recovery funds, and when municipal networks are probed again, they degrade rather than stop.
 
-Then the unity breaks on supply. One member state signs its own capacity arrangement with a foreign hyperscaler on looser screening terms, and calls it pragmatism. Brussels offers it joint-buying prices to come back, and ties the continuity reinsurance to data sharing. The deal stands. The papers call it a humiliation.
+Then the unity breaks on supply. Hungary signs its own capacity arrangement with a Chinese hyperscaler on looser screening terms, and calls it pragmatism. Brussels offers it joint-buying prices to come back, and ties the continuity reinsurance to data sharing. The deal stands. The papers call it a humiliation.
 
 Workers like their assistants. They fear replacement, and machines nobody can read.

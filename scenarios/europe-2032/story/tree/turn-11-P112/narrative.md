@@ -35,4 +35,4 @@ Sofia's answer is the EU Sovereign Medical AI Deployment, and the President decl
 
 In practice, the launch stalls. The containment work still consumes the same overtime pool that is now asked to stand up the new deployment. The licensed models arrive slower and weaker than the one that was denied. A few wards run their first tailored treatments on domestic capacity. Most patients are told to wait.
 
-The large member state's separate supply arrangement continues untouched, undercutting the joint plea to migrate. With auditing the newest opaque systems conceded as impossible, no new frontier law is attempted. The grids and the wards hold, and the public counts dependence itself as the failure.
+Italy's separate supply arrangement continues untouched, undercutting the joint plea to migrate. With auditing the newest opaque systems conceded as impossible, no new frontier law is attempted. The grids and the wards hold, and the public counts dependence itself as the failure.

@@ -28,7 +28,7 @@ Where the earlier screening shield had its staff, the system bends without break
 
 It is not enough to hide the second blow.
 
-> **October 2031.** In the middle of the containment, a large member state confirms its own supply arrangement with a foreign hyperscaler, on faster delivery terms than the Union line.
+> **October 2031.** In the middle of the containment, Germany confirms a second supply arrangement of its own with a foreign hyperscaler, on faster delivery terms than the Union line.
 
 At home its ministers call it pragmatism, to protect patients. In the Council corridors it reads as a break. The water-and-power talks for the two frozen factory sites stall again, with the councils refusing to sign while the injunctions stand.
 

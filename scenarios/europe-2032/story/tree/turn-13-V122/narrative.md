@@ -31,7 +31,7 @@ The councils and ports demand local servicing, open diagnostics and spare parts 
 
 The verified assistant rollout completes, bringing logged, human-checked aides to the consenting town halls, with quiet gains in junior output. The refusing councils point to the still-frozen benefits system, and stay out.
 
-Continuity holds where there is cooperation, and the dependence does not lift. The capital with its side deal keeps its separate access. The cut-off is managed as degradation, not reversed, and trust stays split between visible help and visible humiliation.
+Continuity holds where there is cooperation, and the dependence does not lift. Berlin keeps its separate access. The cut-off is managed as degradation, not reversed, and trust stays split between visible help and visible humiliation.
 
 ## Note to the President
 

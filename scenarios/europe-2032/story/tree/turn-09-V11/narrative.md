@@ -48,7 +48,7 @@ What did not:
 
 - The black-box cell. It was the right idea, and it was too slow and too resisted to matter this time.
 - The build. One site is building, one is in court.
-- The common line. One capital has twice gone its own way.
+- The common line. Budapest has twice gone its own way.
 - Access. It was withdrawn without a reason, and what we fell back on was the same company, one generation down.
 
 What is changing:

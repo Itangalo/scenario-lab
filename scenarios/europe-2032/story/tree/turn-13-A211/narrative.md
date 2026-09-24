@@ -30,7 +30,7 @@ The bid half-succeeds. European laboratories are invited into the sample-sharing
 
 On the ground, the shelter built over two years pays. It completes its term with the registries still up on dispersed backups, the reserve engineers keeping substations and landing stations running through the jitter, and the machine-speed patching stopping the hospital systems from cascading. Voters notice that ambulances run and prescriptions are filled, even as they fear the next vial.
 
-The coalition frays further. The second capital keeps its deal, trading quiet assurances on cohesion money for continued participation in joint withholding. There is no public break, but joint bargaining loses force at the moment it is most needed. By December, fear dominates the conversation, and trust in machine-mediated care falls again.
+The coalition frays further. Bratislava keeps its deal, trading quiet assurances on cohesion money for continued participation in joint withholding. There is no public break, but joint bargaining loses force at the moment it is most needed. By December, fear dominates the conversation, and trust in machine-mediated care falls again.
 
 ## Note to the President
 
@@ -47,7 +47,7 @@ What held:
 What did not:
 
 - Anything of our own. Models, machines and medicines all come from somewhere else.
-- The coalition. Two capitals shop alone, and our leverage leaks through them.
+- The coalition. Budapest and Bratislava shop alone, and our leverage leaks through them.
 - The table. We are in the channels, not in the room.
 
 What I would tell whoever holds this file next: we have become very good at holding. We are still a continent that cannot build what it holds.

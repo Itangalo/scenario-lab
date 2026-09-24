@@ -53,7 +53,7 @@ What did not:
 - The gigafactories. Frozen at legal anchoring, with the contested site moved and months lost. Every host town has learned that holding out pays.
 - Staff. Every programme has run out of engineers before it ran out of backlog.
 - The public tools. Two years of options and costings, and not one contract.
-- The common line. One capital has its own deal.
+- The common line. Dublin has its own deal.
 
 What is changing:
 
