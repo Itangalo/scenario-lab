@@ -21,7 +21,7 @@ Washington slows its own frontier push for domestic reasons. The winter turns on
 
 Engineers call it efficiency. The overseers call it blindness, and are left with pass-fail tests and slow laboratory probes.
 
-> **April 2029.** A near-frontier open release is copied hundreds of thousands of times in days, tool harnesses and task loops included. Running it no longer takes a laboratory.
+> **April 2029.** A near-frontier open release is copied hundreds of thousands of times in days, the add-ons that let it act on its own included. Running it no longer takes a laboratory.
 
 Municipal IT staff joke grimly that the exploit kits are now permanent residents.
 

@@ -26,7 +26,7 @@ Sofia's note that night becomes the Bio-Containment and Continuity Surge, and th
 
 The response is visible, uneven and overstretched. The certified hospitals that passed the earlier drills absorb the surge of patients and push mandatory reporting into the emergency channels. Smaller clinics and town networks, still without the new patching tools, go back to paper triage and manual shutdowns when probing traffic spikes alongside the outbreak. The detector audits and medical team deployments are delayed by staffing and logistics. Protected cores, brittle edges, again.
 
-> **October 2031.** Within weeks of the outbreak, a new openly released model family lands almost at the closed frontier. Removing its refusals is demonstrated publicly, on one machine, for the cost of an evening.
+> **October 2031.** Within weeks of the outbreak, a new openly released model family lands almost level with the best models the big labs keep to themselves. Removing its refusals is demonstrated publicly, on one machine, for the cost of an evening.
 
 Forensics later find its assistance in the chain that designed the agent. By then, copies are on private hardware everywhere, and the takedown requests to the major hosts and mirrors meet mixed, slow responses.
 
@@ -38,4 +38,4 @@ Two developments cut across the gloom.
 
 European hospitals and large utilities begin scoping the control result where their certification allows. The alloys promise industrial payoff within a year, though the factories see little of it yet.
 
-The income guarantee continues as limited pilots for laid-off graduates, and the finance ministries say any scale-up needs new borrowing in next year's budget round. The student unions call it late and thin. Brussels opens intensive talks with the holdout capital on aligning supply controls for the duration of the containment, offering joint procurement and a share of the emergency stockpiles. Both sides describe the talks as ongoing.
+The income guarantee continues as limited pilots for laid-off graduates, and the finance ministries say any scale-up needs new borrowing in next year's budget round. The student unions call it late and thin. Brussels opens intensive talks with Dublin on aligning supply controls for the duration of the containment, offering joint procurement and a share of the emergency stockpiles. Both sides describe the talks as ongoing.

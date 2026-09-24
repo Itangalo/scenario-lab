@@ -27,7 +27,7 @@ In the certified hospitals it works. In two dozen uncertified water and power ut
 
 The authors are accused of alarmism and of publishing too much. The health officials call the health emergency authority, and the authority orders wastewater and clinical sequencing at hospital laboratories, linked to the compact's incident swap. The detection capacity does not arrive in time to settle the argument. The sampling contracts are signed, and the reagents and staff are short.
 
-The holdout capital again links its cooperation to its separate supply arrangement. It accepts priority access to the defensive tooling and leaves its side deal untouched. The compact itself formally completes its term.
+Dublin again links its cooperation to its separate supply arrangement. It accepts priority access to the defensive tooling and leaves its side deal untouched. The compact itself formally completes its term.
 
 Graduate hiring does not recover. Law and accountancy firms confirm that entry-level posts will stay frozen, and the labour ministers finish their unfunded transition plan for next year. The Commission holds its spending at home flat – the concrete and certificates on old money – betting that visible hardening will buy it room to fund retraining later.
 

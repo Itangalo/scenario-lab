@@ -14,7 +14,7 @@ Brussels spends July to December trying not to lose more ground. Sofia's notes r
 
 The political damage is harder to patch. The member state with its own compute deal keeps it. The Commission keeps its coercion file open and does not escalate, offering again a joint approach to Washington and a shared licensing table. Neither side moves. The five reserved data-centre plots stay empty, with the permits kept warm by administrators who have no budget to build.
 
-> **October 2029.** An openly downloadable model family appears only months behind the closed frontier, packaged with the scaffolding that makes it act rather than answer. Hundreds of thousands of copies spread in days.
+> **October 2029.** An openly downloadable model family appears only months behind the best models the big labs keep to themselves, packaged with the add-ons that make it act rather than answer. Hundreds of thousands of copies spread in days.
 
 For the European security services it means that the ransomware tooling seen in the spring can now be reproduced on private hardware, beyond recall.
 

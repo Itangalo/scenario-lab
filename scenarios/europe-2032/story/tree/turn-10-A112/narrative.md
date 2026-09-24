@@ -30,7 +30,7 @@ Sofia's note that month is the shortest she has written: no new measure. The Pre
 
 > **March 2031.** Night-time arson spreads from robot pilot sites to the grid-connection works for the gigafactories. The Energy Council takes emergency control and posts guards.
 >
-> **April 2031.** A new freely downloadable model, only months behind the closed frontier, spreads into procurement systems before the regulators have finished reading its licence.
+> **April 2031.** A new freely downloadable model, only months behind the best models the big labs keep to themselves, spreads into procurement systems before the regulators have finished reading its licence.
 >
 > **May 2031.** The thinning reaches the middle. Firms are no longer only skipping the juniors; the people with five years behind them are going too.
 

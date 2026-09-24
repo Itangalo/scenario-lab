@@ -40,7 +40,7 @@ The short version: we kept the wards open. We were never in the room.
 What held:
 
 - The Shield, the Continuity Stack and the continuity shield. Through a cut-off, a pathogen, a war and a strike on our own soil, the hospitals stayed on.
-- The towns, mostly. They have manual fallbacks, some staff, and an EIB backstop that kept at least one insurer in the market.
+- The towns, mostly. They have manual fallbacks, some staff, and a European Investment Bank backstop that kept at least one insurer in the market.
 - The joint pool. We are inside something that sees attacks in real time.
 
 What did not:

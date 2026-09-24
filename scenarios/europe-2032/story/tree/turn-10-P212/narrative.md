@@ -25,7 +25,7 @@ Then the ground shifts under the posture.
 
 > **March 2031.** A second biosecurity paper lands, and this one is not contested on its methods. It is contested on having published them: the route from a model to a viable design able to infect humans is now written down where anyone can read it.
 >
-> **April 2031.** An openly released model lands within months of the closed frontier. What has changed is who runs it: hospitals and ministries, on their own hardware, as policy rather than as an experiment.
+> **April 2031.** An openly released model lands within months of the best models the big labs keep to themselves. What has changed is who runs it: hospitals and ministries, on their own hardware, as policy rather than as an experiment.
 
 The methodologists quarrel, and the authors are accused both of alarmism and of publishing too much. The health agencies cannot ignore it. And with the new model, municipal IT officers and small laboratories suddenly hold what only great powers held a few months earlier, permanently.
 

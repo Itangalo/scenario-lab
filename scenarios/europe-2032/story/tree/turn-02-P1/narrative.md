@@ -25,7 +25,7 @@ The results are mixed, and they are public. Finance and telecoms operators pass.
 
 The interior ministries that resisted the new obligations take the deal on offer: EU-paid hardening in exchange for signed, exercised continuity plans. It is uneven, and it is moving.
 
-The gigafactories do not move as fast. Choosing four or five sites turns into a contest between three capitals over grid connections, jobs and water. The Commission holds the line that priority power requires legal anchoring inside the Union, which stops an open subsidy race and does not stop the bargaining. One shortlisted site meets coordinated local opposition over its use of power and water, with permit questions raised in council meetings and in the press. Officials talk of renegotiation, not cancellation.
+The gigafactories do not move as fast. Choosing four or five sites turns into a contest between three capitals over grid connections, jobs and water. The Commission insists that a site gets priority on the power grid only if its operator is legally bound to the Union, which stops the capitals outbidding each other with subsidies, but not the bargaining. One shortlisted site meets coordinated local opposition over its use of power and water, with permit questions raised in council meetings and in the press. Officials talk of renegotiation, not cancellation.
 
 Quietly, the insurers start asking harder questions. Brokers let it be known that cyber cover for smaller utilities and hospitals will soon require proof of hardening, now that everyone knows intruders were sitting in transmission systems, a port and a water utility last autumn. Nothing is repriced yet. The risk managers notice.
 

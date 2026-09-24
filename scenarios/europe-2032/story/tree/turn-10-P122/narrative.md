@@ -29,4 +29,4 @@ Neither development touches the grievance that dominates. Graduate hiring in law
 
 By June the first payments have reached only pilot cohorts, and student unions call it a voucher for jobs that no longer exist.
 
-The middle-power compact formally enters into force, pooling hosting quotas and swapping incident feeds. The holdout capital still has not unwound its separate supply arrangement, and the cohesion stays cracked even as Brussels claims leverage.
+The middle-power compact formally enters into force, pooling hosting quotas and swapping incident feeds. Dublin still has not unwound its separate supply arrangement, and the cohesion stays cracked even as Brussels claims leverage.

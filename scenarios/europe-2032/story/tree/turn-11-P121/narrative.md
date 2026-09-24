@@ -24,7 +24,7 @@ With graduate hiring still frozen, the labour ministers finally get money. Sofia
 >
 > **Claire:** if the bridge covers their rent. it doesn't yet
 
-The uptake is real and slow. The retraining places fill in the capitals, the waiting lists grow in smaller cities, and the unions say the bridging does not cover rents. The holdout capital takes the income money and again refuses to unwind its separate supply deal, accepting the priority tooling as solidarity while keeping its side arrangement.
+The uptake is real and slow. The retraining places fill in the capitals, the waiting lists grow in smaller cities, and the unions say the bridging does not cover rents. Dublin takes the income money and again refuses to unwind its separate supply deal, accepting the priority tooling as solidarity while keeping its side arrangement.
 
 > **October 2031.** Extended exercises around the Taiwan Strait, diplomatic expulsions and a jump in shipping insurance. No chip shipment stops.
 

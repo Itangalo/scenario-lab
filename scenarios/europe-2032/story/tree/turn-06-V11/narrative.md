@@ -30,7 +30,7 @@ Sofia had asked for exactly the capability that is now needed, a few weeks befor
 
 The cell starts work and cannot keep pace. The results are disputed, vendors are slow to submit, and inspecting the models' internal activity yields little in time.
 
-> **May 2029.** A near-frontier open release arrives with its agent scaffolding included. Whatever the spring's jump added is on private machines within the week – ready to run, rather than ready to build.
+> **May 2029.** An open release nearly as capable as the best models the big labs keep to themselves arrives with the add-ons that let it act on its own included. Whatever the spring's jump added is on private machines within the week – ready to run, rather than ready to build.
 
 The earlier bets pay in part. The tech sovereignty package formally closes, unlocking sites and grid links, though private money stays cautious. The joint cyber and pathogen integration closes too, with shared telemetry and sequencing now a condition of recovery funds, and when municipal networks are probed again, they degrade rather than stop.
 

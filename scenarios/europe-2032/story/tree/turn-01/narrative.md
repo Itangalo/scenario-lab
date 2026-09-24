@@ -12,7 +12,7 @@ allow: 06:52 8 9 14 83 2036
 
 # Nothing happened
 
-The message reaches Sofia Brandt at 06:52 on 8 October 2026, on her phone, in her kitchen. It comes from the Union's cybersecurity agency, it is marked for the President's cabinet, and its first line says that nothing happened.
+The message reaches Sofia Brandt at 06:52 on 8 October 2026, on her phone, in her kitchen. It comes from ENISA, the Union's cybersecurity agency, it is marked for the President's cabinet, and its first line says that nothing happened.
 
 That is the problem. During an audit of something else, investigators have found intruders inside electricity transmission operators on three continents, a large container port authority and a regional water utility. Two of the grid operators are in the Union. The intruders had been there for weeks. They had mapped the protection relays, obtained the credentials for breaker control and staged their tools – in places leaving them in plain sight – and then done nothing. There was no ransom and no claim, and nothing worth selling was taken. The only outages were the ones the defenders caused by cutting systems off.
 
@@ -26,7 +26,7 @@ Sofia holds the AI file in the Commission President's cabinet. She does not deci
 
 The Union holds about five per cent of the world's AI computing power, and the United States roughly eighty. Europe's largest AI supercomputer runs at 83 megawatts. The largest American one runs at 1,250.
 
-ASML is still the only company on earth that can build the lithography machines every advanced chip depends on, and Washington leans on it constantly over whom it may sell to. The AI Act is in force, but the part with teeth – the obligations for high-risk systems – was pushed back to 2027 and 2028 under industry pressure.
+The Dutch company ASML is still the only company on earth that can build the lithography machines every advanced chip depends on, and Washington leans on it constantly over whom it may sell to. The AI Act is in force, but the part with teeth – the obligations for high-risk systems – was pushed back to 2027 and 2028 under industry pressure.
 
 In June, Washington ordered a leading American laboratory to switch off its most capable models for everyone who is not a US citizen, at home and abroad. The order was lifted a fortnight later, by negotiation rather than by rule. The review regime behind it has no allies clause, no published criteria and no appeal. At the time, the Commission answered that such restrictions "should not be discriminatory". Sofia drafted that sentence. It was a plea, from the party that usually sets the terms.
 
@@ -44,8 +44,8 @@ Two programmes were already running when Sofia took the file. The InvestAI gigaf
 
 What nobody can tell for certain is how AI progress will continue. Competent people read the same evidence three ways: as the start of an intelligence explosion; as super-human intelligence only in a few domains; and as a plateau, as every step forward costs exponentially more than the last. Nothing available in 2026 settles it.
 
-What she can tell the President is how slowly the Union moves. Drafting, negotiating and standing up an institution take between six months and eighteen, urgency does not shorten them, and compute takes years. So the President asks her for a direction to hold for two years, and after that, every six months, one priority and at most one new measure. Anything more and the machinery stalls.
+What she can tell the President is how slowly the Union moves. Drafting, negotiating and standing up an institution take between six months and eighteen, urgency does not shorten them, and building compute takes years. So the President asks her for a direction to hold for two years, and after that, every six months, one priority and at most one new measure. Anything more and the machinery stalls.
 
-By November two recommendations have support in the building. One says harden what must not fail: the grids, the hospitals, the networks the test shot walked through. The other says find out what the models can actually do, before the next one is pointed at Europe. The President reads both and asks Sofia which she would sign.
+By November, two recommendations have support in the building. One says harden what must not fail: the grids, the hospitals, the networks the test shot walked through. The other says find out what the models can actually do, before the next one is pointed at Europe. The President reads both and asks Sofia which she would sign.
 
 She has until Friday.

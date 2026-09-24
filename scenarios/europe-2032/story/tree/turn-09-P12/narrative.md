@@ -32,7 +32,7 @@ Ministers argue over whether the losses are really caused by AI assistants. Fami
 
 The one new departure is outward. Sofia's note becomes the EU Middle-Power Compute and Evaluation Compact, and the President's own weight goes behind it. Using trade and anti-coercion powers, the Commission turns its loose talks with Japan, Korea, Canada and the Gulf hosting states into a standing compact: aligned criteria for export licences, pooled hosting quotas for essential European workloads, and a swap of incident data and detector feeds for shared results from black-box testing of the opaque systems.
 
-The holdout capital with its separate supply deal is offered guaranteed hosting volume if it unwinds its side arrangement. It does not refuse outright, and it does not sign. The American allocations stay queued and conditional. Relief that a joint lever finally exists mixes with anger over empty graduate desks.
+Dublin with its separate supply deal is offered guaranteed hosting volume if it unwinds its side arrangement. It does not refuse outright, and it does not sign. The American allocations stay queued and conditional. Relief that a joint lever finally exists mixes with anger over empty graduate desks.
 
 ## Note to the President
 
@@ -51,7 +51,7 @@ What did not:
 - Sight. The newest models no longer show their reasoning, and our oversight went blind in one announcement.
 - The American supply. Honoured in name, rationed in practice.
 - The graduates. Their fairs are empty, and we have told the ministers to plan without money.
-- The holdout capital. It has neither refused us nor signed.
+- Dublin. It has neither refused us nor signed.
 
 What is changing:
 

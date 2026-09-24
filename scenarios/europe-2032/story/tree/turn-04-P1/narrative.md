@@ -10,7 +10,7 @@ next: turn-05-P1
 
 # Patching the edges
 
-> **February 2028.** A new openly released model, close to the closed frontier, is copied hundreds of thousands of times in days. It arrives with its tool harnesses attached, which is the part the security services read twice: the capability no longer has to be assembled by anyone competent.
+> **February 2028.** A new openly released model, nearly as capable as the best models the big labs keep to themselves, is copied hundreds of thousands of times in days. It arrives with the add-ons that let it act on its own already attached, which is the part the security services read twice: the capability no longer has to be assembled by anyone competent.
 
 The half-year is defined less in Brussels than by download counts. For EU security officials the timing is grim: last autumn's audits had already found intruders lodged in grid, port and water systems, and what could once be recalled is now permanently out.
 
@@ -29,7 +29,7 @@ It works in part. Restore times improve wherever the teams arrive, and several m
 
 > **April 2028.** Studies across law, accountancy, administration and consulting show solid productivity gains from AI assistants, strongest for junior staff, and no wave of layoffs. The firms that made redundancies last year are the ones now short-handed.
 >
-> **May 2028.** Extended military exercises around Taiwan lift shipping insurance, and a diplomat is expelled.
+> **May 2028.** Extended military exercises around Taiwan lift shipping insurance, and Beijing expels a Dutch diplomat over chip-export controls.
 
 The first brings relief, and some disappointment for those who had bet on endless transformation. The second is distant, and it is noted in the supply-risk memos.
 

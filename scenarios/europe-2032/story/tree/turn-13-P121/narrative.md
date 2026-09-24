@@ -27,7 +27,7 @@ Brussels does not try a takedown. Sofia's last new measure pushes outward instea
 
 The rationing stays tight. The licensed chips from the spring tranche go to hospitals and patched utilities first. The throttled universities and small firms, which now have frontier-grade weights on local servers and no computing to run them well, queue for retraining centres that are throttled themselves.
 
-The income and retraining guarantee, which the President keeps as the priority, goes on paying below the rents in the big cities. Entry-level hiring stays frozen, without formal layoffs. Single-source reports describe a grey market in the holdout capital, where diverted licensed chips change hands outside the common criteria. It is denied in public and priced in private.
+The income and retraining guarantee, which the President keeps as the priority, goes on paying below the rents in the big cities. Entry-level hiring stays frozen, without formal layoffs. Single-source reports describe a grey market in Dublin, where diverted licensed chips change hands outside the common criteria. It is denied in public and priced in private.
 
 The upstream bargain with Washington grinds on. Conditional servicing of lithography and optics continues, coordinated with Tokyo, Seoul and Ottawa. No new cut-off comes, and no full restoration either. The oncology wards keep their limited clinical access, and the ministries work around grey screens.
 
@@ -49,7 +49,7 @@ What did not:
 
 - The places beyond the certificates. The water plants and small clinics were reached last, and some not at all.
 - The open weights. The evasion guide is on a fifteen-year-old's laptop.
-- The holdout capital. It took our solidarity, kept its deal, and now there is a grey market.
+- Dublin. It took our solidarity, kept its deal, and now there is a grey market.
 - The young. Entry-level work stays frozen, and the bridge does not cover the rent.
 
 What I would tell whoever holds this file next: we have one real lever, the machines that make the machines. We used it once, and carefully. Keep it that way.

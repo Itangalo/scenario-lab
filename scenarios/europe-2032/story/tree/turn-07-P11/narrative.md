@@ -31,6 +31,6 @@ The rollout is partial and slow. Dutch, Danish and Portuguese laboratories link 
 >
 > **Claire:** the virus doesn't wait for the next round
 
-Two long-running files are booked as closed. The Autonomy Pact ends with permits and EIB guarantees on paper, no signed chip or power capacity, and the holdout capital's separate deal untouched. The continuity switch is declared operational, though fallback care remains largely manual. The gigafactory programme reaches the end of its schedule with its sites, grid reservations and legal anchoring on paper and nothing built, and the backup site is still fenced by protesters.
+Two long-running files are booked as closed. The Autonomy Pact ends with permits and European Investment Bank guarantees on paper, no signed chip or power capacity, and Dublin's separate deal untouched. The continuity switch is declared operational, though fallback care remains largely manual. The gigafactory programme reaches the end of its schedule with its sites, grid reservations and legal anchoring on paper and nothing built, and the backup site is still fenced by protesters.
 
 Voters barely notice. The coverage treats the completions as paperwork after the fact: capacity still foreign, supply still unsigned, fallback still manual. Faint signals persist from the spring, nurses warning of errors on manual charts and municipal auditors asking who pays when fallback care fails. Rumour, not yet record.

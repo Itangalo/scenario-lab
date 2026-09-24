@@ -25,9 +25,9 @@ The priority stays with the Shield. A small ENISA-led team follows up with the h
 
 > **October 2027.** At one shortlisted gigafactory site, protests over power and water use become council permit challenges and weeks of hostile press.
 
-The contest between the three capitals hardens. The Commission holds legal anchoring as the condition for the InvestAI guarantees and EIB co-financing, which prevents a subsidy race and settles nothing. At the contested site, officials stop defending the location and quietly start sounding out a backup site with a grid connection ready. It is renegotiation rather than cancellation, but it loses months, and it tells every other host town that holding out pays.
+The contest between the three capitals hardens. The Commission still makes being legally bound to the Union the condition for the InvestAI guarantees and European Investment Bank co-financing, which prevents a subsidy race and settles nothing. At the contested site, officials stop defending the location and quietly start sounding out a backup site with a grid connection ready. It is renegotiation rather than cancellation, but it loses months, and it tells every other host town that holding out pays.
 
-Sofia's new measure is the smallest she can make it. The EU Public Benefit AI Deployment circulates draft options for EU-hosted support tools in triage, permits and tutoring, with possible targets on waiting times and permit decision days.
+Sofia's new measure is the smallest she can make it. Under the EU Public Benefit AI Deployment, officials draft options for AI tools hosted in the EU that could help hospitals sort patients, speed up permits and tutor pupils, perhaps with targets for shorter waiting times and faster permit decisions.
 
 > **November 2027.** A regional health service reports that an AI triage tool deployed on a European decision has cut its waiting lists measurably.
 

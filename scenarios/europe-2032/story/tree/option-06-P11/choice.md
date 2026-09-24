@@ -13,7 +13,7 @@ next: turn-06-P11
 
 **EU Containment and Continuity Switch.** Preparedness and resilience. Small; running until the first half of 2030.
 
-Sofia recommends a switch the Union controls: fallback inference run in the EU, manual-override procedures, and cross-border playbooks for containing an AI system that goes out of control, for the hospitals, ministries and operators that depend on a frontier model from abroad.
+Sofia recommends a switch the Union controls: backup AI models running on servers in the EU, manual-override procedures, and cross-border playbooks for containing an AI system that goes out of control, for the hospitals, ministries and operators that depend on a frontier model from abroad.
 
 It triggers the civil protection mechanism and ENISA's emergency mandate. The digital directorate is empowered to move certified hospitals and utilities onto EU-hosted open-weight fallbacks and paper-manual procedures the moment they are cut off. ENISA's remaining visiting teams are trained to isolate misbehaving agent deployments and freeze unauthorised copying. The interior ministers adopt a single template of escalation thresholds for loss of control, by implementing act. The gigafactories stay frozen at their legal-anchoring condition, with no new disbursement. The Autonomy Pact keeps making its exploratory joint offers, and holds out re-entry on common terms to the capital with its own deal.
 
