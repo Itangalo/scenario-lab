@@ -26,7 +26,7 @@ Compute on EU soil under EU law, the talent to run it, and the leverage that fol
 
 ## EU political capital
 
-The EU's ability to start and continue to fund measures. Each running measure costs, evidence of success gives back.
+The EU's ability to start and keep funding AI measures. Each running measure costs, evidence of success gives back.
 
 ## Public sentiment
 
