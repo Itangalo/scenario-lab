@@ -6,28 +6,28 @@ Each heading must match the metric's label in `data.json` exactly, or the dial g
 
 ## AI capability
 
-How capable the strongest AI system anywhere is, closed or open. It never falls.
+How capable the strongest AI system anywhere is, closed or open. It never falls. The red band at the top marks levels dangerous for everyone.
 
 ## Open-weight capability
 
-How capable the strongest publicly downloadable AI system is. Downloaded AI models can be stripped of guardrails, and cannot be recalled.
+How capable the strongest publicly downloadable AI system is. Downloaded AI models can be stripped of guardrails, and cannot be recalled. The red band at the top marks levels dangerous for everyone.
 
 ## AI safety
 
-How well frontier AI systems actually in use are understood, secured and controlled. It falls whenever capability outpaces the safety work.
+How well frontier AI systems actually in use are understood, secured and controlled. It falls whenever capability outpaces the safety work. The red band marks trouble, the blue band a good position.
 
 ## Resilience
 
-How much AI-related harm the EU can absorb and keep functioning, for example through hardened infrastructure, fast detection and support for people displaced by AI.
+How much AI-related harm the EU can absorb and keep functioning, for example through hardened infrastructure, fast detection and support for people displaced by AI. The red band marks trouble, the blue band a good position.
 
 ## EU AI sovereignty
 
-Compute on EU soil under EU law, the talent to run it, and the leverage that follows. Capacity, not ambition.
+Compute on EU soil under EU law, the talent to run it, and the leverage that follows. Capacity, not ambition. The red band marks trouble, the blue band a good position.
 
 ## EU political capital
 
-The EU's ability to start and keep funding AI measures. Each running measure costs, evidence of success gives back.
+The EU's ability to start and keep funding AI measures. Each running measure costs, evidence of success gives back. The red band marks trouble, the blue band a good position.
 
 ## Public sentiment
 
-How the public regards AI. High sentiment adds political capital but makes restricting AI costly; low sentiment makes building and partnering costly.
+How the public regards AI. High sentiment adds political capital but makes restricting AI costly; low sentiment makes building and partnering costly. The red band marks trouble, the blue band a good position.

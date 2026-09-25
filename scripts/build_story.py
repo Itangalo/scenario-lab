@@ -703,6 +703,9 @@ article .memo .memo-margin em {
 }
 .panel { background: var(--surface); border: 1px solid var(--rule); border-radius: 2px; padding: 1.1rem 1.1rem 1.25rem; }
 .cap { font-size: 0.65rem; letter-spacing: 0.11em; text-transform: uppercase; color: var(--faint); margin: 0 0 1rem; }
+/* What the dial bands mean, in words: the bands alone never say so, and the
+   per-dial tooltips describe the metric rather than the colours. */
+.legend { font-size: 0.78rem; line-height: 1.5; color: var(--muted); margin: 0.9rem 0 0; }
 .dials { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem 0.5rem; }
 .dial { display: flex; flex-direction: column; align-items: center; gap: 0.35rem; }
 .dial svg { display: block; }
@@ -924,6 +927,7 @@ __TABS__
       <section class="panel">
         <p class="cap"><span id="panel-period">Where things stand</span></p>
         <div class="dials" id="dials"></div>
+        <p class="legend">Red marks danger; blue, where shown, marks a good position.</p>
       </section>
       <div class="simlinks">
         <button class="simbtn js-compare" type="button">Compare with other simulations</button>
