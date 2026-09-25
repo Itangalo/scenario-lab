@@ -14,20 +14,20 @@ How capable the strongest publicly downloadable AI system is. Downloaded AI mode
 
 ## AI safety
 
-How well frontier AI systems actually in use are understood, secured and controlled. It falls whenever capability outpaces the safety work. The red band marks trouble, the blue band a good position.
+How well frontier AI systems actually in use are understood, secured and controlled. It falls whenever capability outpaces the safety work. The red band marks danger.
 
 ## Resilience
 
-How much AI-related harm the EU can absorb and keep functioning, for example through hardened infrastructure, fast detection and support for people displaced by AI. The red band marks trouble, the blue band a good position.
+How much AI-related harm the EU can absorb and keep functioning, for example through hardened infrastructure, fast detection and support for people displaced by AI. The red band marks danger.
 
 ## EU AI sovereignty
 
-Compute on EU soil under EU law, the talent to run it, and the leverage that follows. Capacity, not ambition. The red band marks trouble, the blue band a good position.
+Compute on EU soil under EU law, the talent to run it, and the leverage that follows. Capacity, not ambition. The red band marks danger.
 
 ## EU political capital
 
-The EU's ability to start and keep funding AI measures. Each running measure costs, evidence of success gives back. The red band marks trouble, the blue band a good position.
+The EU's ability to start and keep funding AI measures. Each running measure costs, evidence of success gives back. The red band marks danger.
 
 ## Public sentiment
 
-How the public regards AI. High sentiment adds political capital but makes restricting AI costly; low sentiment makes building and partnering costly. The red band marks trouble, the blue band a good position.
+How the public regards AI. High sentiment adds political capital but makes restricting AI costly; low sentiment makes building and partnering costly. The red band marks danger.

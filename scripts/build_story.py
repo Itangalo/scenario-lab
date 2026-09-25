@@ -704,8 +704,17 @@ article .memo .memo-margin em {
 .panel { background: var(--surface); border: 1px solid var(--rule); border-radius: 2px; padding: 1.1rem 1.1rem 1.25rem; }
 .cap { font-size: 0.65rem; letter-spacing: 0.11em; text-transform: uppercase; color: var(--faint); margin: 0 0 1rem; }
 /* What the dial bands mean, in words: the bands alone never say so, and the
-   per-dial tooltips describe the metric rather than the colours. */
-.legend { font-size: 0.78rem; line-height: 1.5; color: var(--muted); margin: 0.9rem 0 0; }
+   per-dial tooltips describe the metric rather than the colour. One swatch
+   and one word, since danger is the only thing the bands mark. */
+.legend {
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-size: 0.65rem; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--faint); margin: 0.9rem 0 0;
+}
+.legend .sw {
+  display: inline-block; width: 0.62em; height: 0.62em; border-radius: 1px;
+  background: var(--down); margin-right: 0.4em;
+}
 .dials { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem 0.5rem; }
 .dial { display: flex; flex-direction: column; align-items: center; gap: 0.35rem; }
 .dial svg { display: block; }
@@ -713,7 +722,6 @@ article .memo .memo-margin em {
    where it is doing well, and neutral between. The needle points into it. */
 .dial .track { stroke: var(--track); }
 .dial .zone.bad { stroke: var(--down); }
-.dial .zone.good { stroke: var(--up); }
 .dial .needle { stroke: var(--ink); stroke-linecap: round; }
 .dial .needle, .dial .hub { fill: var(--ink); }
 .dial .needle {
@@ -927,7 +935,7 @@ __TABS__
       <section class="panel">
         <p class="cap"><span id="panel-period">Where things stand</span></p>
         <div class="dials" id="dials"></div>
-        <p class="legend">Red marks danger; blue, where shown, marks a good position.</p>
+        <p class="legend"><span class="sw"></span>Danger</p>
       </section>
       <div class="simlinks">
         <button class="simbtn js-compare" type="button">Compare with other simulations</button>
@@ -965,20 +973,19 @@ const R = 26, CIRC = 2 * Math.PI * R, ARC = CIRC * 0.72;
 const ARC_START = 140.4, SWEEP = 360 * 0.72;
 const needleAngle = frac => "rotate(" + (ARC_START + SWEEP * frac).toFixed(1) + "deg)";
 
-// Where a reading is bad, and where it is good, as fractions of the scale.
-// Capability is not good or bad for the Union by being high — but the top of
-// it is dangerous for everyone, and the same is true of capability that is
-// downloadable and beyond recall. Political capital keeps the shared good
-// band and only its floor is drawn tighter: a Commission with room to act is
-// in a good position, whatever it does with it.
+// Where a reading is dangerous, as fractions of the scale. The bands mark
+// danger only: the absence of red is the whole of the good news, and the page
+// takes no position on what counts as doing well. Capability is not bad for
+// the Union by being high — but the top of it is dangerous for everyone, and
+// the same is true of capability that is downloadable and beyond recall.
 const ZONES = {
   ai_capability:         { red: [[0.85, 1]] },
   openweight_capability: { red: [[0.85, 1]] },
-  ai_safety:             { red: [[0, 0.25]], green: [[0.65, 1]] },
-  resilience:            { red: [[0, 0.25]], green: [[0.65, 1]] },
-  eu_ai_sovereignty:     { red: [[0, 0.25]], green: [[0.65, 1]] },
-  public_sentiment:      { red: [[0, 0.25]], green: [[0.65, 1]] },
-  eu_political_capital:  { red: [[0, 0.2]], green: [[0.65, 1]] },
+  ai_safety:             { red: [[0, 0.25]] },
+  resilience:            { red: [[0, 0.25]] },
+  eu_ai_sovereignty:     { red: [[0, 0.25]] },
+  public_sentiment:      { red: [[0, 0.25]] },
+  eu_political_capital:  { red: [[0, 0.2]] },
 };
 
 // `unlocked` opens every decision on the road once the reader has reached an
@@ -998,15 +1005,13 @@ const LABELS = metricOrder();
 function zoneArcs(id) {
   const zones = ZONES[id];
   if (!zones) return "";
-  // Drawn over the neutral track, on the same radius and width: which is
-  // which reads from where the segment sits, not only from its colour.
-  const band = (range, cls) =>
-    '<circle class="zone ' + cls + '" cx="32" cy="32" r="' + R + '" fill="none" ' +
+  // Drawn over the neutral track, on the same radius and width.
+  const band = (range) =>
+    '<circle class="zone bad" cx="32" cy="32" r="' + R + '" fill="none" ' +
       'stroke-width="6" ' +
       'stroke-dasharray="' + ((range[1] - range[0]) * ARC).toFixed(1) + ' ' + CIRC.toFixed(1) + '" ' +
       'stroke-dashoffset="' + (-range[0] * ARC).toFixed(1) + '"></circle>';
-  return (zones.red || []).map(r => band(r, "bad")).join("") +
-         (zones.green || []).map(r => band(r, "good")).join("");
+  return (zones.red || []).map(band).join("");
 }
 
 function buildDials() {
