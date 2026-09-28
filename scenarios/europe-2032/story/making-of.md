@@ -1,7 +1,9 @@
 # Why and how Europe 2032 was built
 
-- Europe 2032 was built as an assignment for the Talos Network fellowship. The idea first started August 25 and went through three major iterations. The scenario was published one month later, and handed in on September 30.
-- The data for the scenario was built using Scenario Lab, a project I've been working on for almost a year. (It, too, has been through some major iterations, and another is on its way.) The code is written entirely by AI agents (Claude Code, OpenCode with Muse and Codex).
+## In brief
+
+- Europe 2032 was built as an assignment for the Talos Network fellowship. The idea started on 25 August and went through three major iterations. The scenario was published one month later, and handed in on September 30.
+- The simulations behind the scenario were run with Scenario Lab, a project I've been working on for almost a year. (It, too, has been through some major iterations, and another is on its way.) The code is written entirely by AI agents (Claude Code, OpenCode with Muse, and Codex).
 - The prose for Europe 2032 was not generated with Scenario Lab – the framework builds simulation data with functional narratives, not long prose. The prose was written with Claude Code and Opus, and though I've put quite some time into finding a good style and improving the prose it is still painfully obvious that it is LLM-written. I consider the simulations the main part of Europe 2032, and the scenario texts a way to present the simulations.
 
 ## The first iteration: three underlying realities
