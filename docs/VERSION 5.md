@@ -57,6 +57,23 @@ Note that events are presented in prose for the actors, but they are not resolve
 
 Resuming and branching should be possible after each phase, not just at the end of each turn. In general, these phases should be seen as a cycle, not a start-to-end procedure.
 
+### Deeper mechanics for live games (ECHO 2026-09-27)
+
+Live workshop games (see `docs/LIVE_GAMES.md`) currently end when the facilitator stops after a pre-announced number of turns. That gives a stopping point but no ending. Standard simulations do not need a climax; a live game does. Version 5 should have deeper mechanics for live play, with a clear ending as the central need. No path is chosen yet – the ideas below are candidates, and several can be combined.
+
+- **A known decisive moment.** The teams know from the start that the game ends with a fixed event – a summit vote, an election, a board decision. Earlier turns become positioning for it. The moment always happens; its outcome depends on the world state, which preserves agency. The final turn uses its own prompt ("resolve the vote") rather than advancing the world one more step. A fixed horizon also fits a 90-minute slot better than variable-length termination.
+- **Authored endings.** The scenario designer writes 3–5 named endings, each with a description and the conditions that lead to it. At the finale the Game Master judges which ending was reached and explains how the teams' moves led there – still pure LLM. For visible drama, the ending could instead be drawn by a weighted roll (like `event_groups` with `exactly_one`), with the model setting weights from the state.
+- **A joint final decision.** The last turn is a plenary: the whole room faces one shared decision (sign or not, deploy or pause), each team commits secretly, and all commitments are revealed at once. Probably the strongest emotional peak, but requires a new turn type in both the facilitator UI and resolution.
+- **Secret team objectives.** Each team gets a hidden goal on its printed sheet. The ending includes a reveal where goals are read out and the model scores each team. Gives a climax even when the world outcome is muddy, and enriches the debrief. Relates to negotiations above – private notes between teams would fit naturally.
+- **A visible countdown.** A metric shown as a clock (time to a tipping point, public patience), ideally two racing clocks – crisis versus solution. More an ending mechanism than a climax on its own, but reinforces the decisive moment and authored endings. The Europe 2032 dials already have the visual language.
+- **Epilogue.** After the final turn, generate a "ten years later" piece – front page, history-book paragraph, or one line per team on what became of them. One model call, closure even when nothing else delivers it, and a natural bridge to the debrief together with `branch` counterfactuals ("what if China had picked option 2?").
+
+Risk to design against: an authored arc feels railroaded if teams sense the ending was fixed. Fixing the moment but keeping the outcome open, and writing endings the teams could visibly steer toward, guards against it.
+
+Open question that decides the starting point: should the climax be about the world (which ending did we reach?) or about the teams (who got what they wanted, who betrayed whom)? The former points to authored endings, the latter to secret objectives.
+
+A possible minimal form, combining the decisive moment, authored endings and epilogue, is an optional `finale:` block in scenario.yaml (turn, moment, endings with conditions, epilogue on/off), a final-turn prompt variant, the reached ending recorded in the run summary, and a printable finale/epilogue sheet among the live handouts.
+
 ### Improved scenario building
 
 - Better guidelines for how scenario files should be built. In particular, keeping files short is good. Separating descriptions from reasoning in world rules (currently "metric rules") is probably also a good principle.
