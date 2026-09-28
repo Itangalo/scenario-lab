@@ -75,7 +75,8 @@ def blocks(text: str) -> list[tuple[str, str]]:
             continue
         lines = block.split("\n")
         if all(line.lstrip().startswith(">") for line in lines):
-            out.append(("q", quote(lines)))
+            fold = FOLD.match(lines[0])
+            out.append(("q", folded(fold.group(1), lines[1:]) if fold else quote(lines)))
             continue
         if all(BULLET.match(line) for line in lines):
             items = "".join(f"<li>{inline(BULLET.sub('', line))}</li>" for line in lines)
@@ -86,6 +87,31 @@ def blocks(text: str) -> list[tuple[str, str]]:
 
 
 BULLET = re.compile(r"^\s*[-*]\s+")
+# An Obsidian foldable callout, `> [!note]- Title`: reference material that
+# the making-of text quotes in full but most readers will skip.
+FOLD = re.compile(r"^\s*>\s*\[!\w+\]-\s*(.+)$")
+
+
+def folded(title: str, lines: list[str]) -> str:
+    """A foldable callout as a closed <details>. The body is quoted file
+    content, so it is set line by line: headings as headings, runs of bullets
+    as lists, and every other line as its own short paragraph."""
+    body: list[str] = []
+    items: list[str] = []
+    for raw in [re.sub(r"^\s*>\s?", "", line) for line in lines] + [""]:
+        if BULLET.match(raw):
+            items.append(f"<li>{inline(BULLET.sub('', raw))}</li>")
+            continue
+        if items:
+            body.append(f"<ul>{''.join(items)}</ul>")
+            items = []
+        heading = re.match(r"^#{1,6}\s+(.*)$", raw)
+        if heading:
+            body.append(f"<h5>{inline(heading.group(1))}</h5>")
+        elif raw.strip():
+            body.append(f"<p>{inline(raw.strip())}</p>")
+    return (f'<details class="fold"><summary>{inline(title)}</summary>'
+            f'{"".join(body)}</details>')
 SENDER = re.compile(r"^\*\*([^*:]+):\*\*\s*")
 # The story follows one person; her own messages sit on the other side of the
 # thread, the way they would on her phone.
@@ -201,6 +227,7 @@ def inline(text: str) -> str:
     # will contain them, and a raw [label](url) on the page is a visible defect.
     text = re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)",
                   r'<a href="\2" target="_blank" rel="noopener noreferrer">\1</a>', text)
+    text = re.sub(r"`([^`]+)`", r"<code>\1</code>", text)
     text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
     text = re.sub(r"(?<!\*)\*(?!\s)(.+?)(?<!\s)\*(?!\*)", r"<em>\1</em>", text)
     return text.replace("\n", " ")
@@ -471,6 +498,21 @@ header.masthead {
 /* The alternative telling is linear, so there is no half-year to report and
    no panel to report it in. It keeps the reading column and nothing else. */
 .altview:focus { outline: none; }
+.altview details.fold {
+  border: 1px solid var(--rule); border-radius: 3px; background: var(--surface);
+  margin: 1.5rem 0; padding: 0 1.1rem;
+}
+.altview details.fold summary {
+  cursor: pointer; padding: 0.8rem 0;
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-size: 0.75rem; letter-spacing: 0.07em; text-transform: uppercase; color: var(--accent);
+}
+.altview details.fold[open] { padding-bottom: 1rem; }
+.altview details.fold h5 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.altview details.fold p, .altview details.fold li { font-size: 0.88rem; margin: 0.15rem 0; }
+.altview details.fold ul { margin: 0.2rem 0 0.6rem; }
+.altview code { font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace; font-size: 0.85em; }
+.altview article a { color: var(--accent); text-underline-offset: 3px; }
 .altview article h2 { margin-top: 0; }
 .altview article h3 {
   color: var(--accent); font-size: 1.45rem; margin: 2.6rem 0 0.7rem;
@@ -1539,6 +1581,8 @@ def alt_reading(path: Path) -> str:
 ALT_TELLINGS: list[dict[str, str]] = [
     {"view": "findings", "label": "Findings",
      "source": "findings.md", "intro": "findings-intro.md"},
+    {"view": "making-of", "label": "How it was made",
+     "source": "making-of.md", "intro": "making-of-intro.md"},
 ]
 
 
@@ -1563,8 +1607,8 @@ def alt_panels(base: Path) -> tuple[str, str]:
         panels.append(
             f'  <div class="altview" id="view-{view}" role="tabpanel"'
             f' aria-labelledby="tab-{view}" tabindex="0" hidden>\n'
-            f'    <div class="note preamble">{intro}</div>\n'
-            f'    <article>{body}</article>\n'
+            + (f'    <div class="note preamble">{intro}</div>\n' if intro else "")
+            + f'    <article>{body}</article>\n'
             f'  </div>')
     return "\n".join(tabs), "\n".join(panels)
 
@@ -1580,7 +1624,8 @@ SITE_FOOTER = """<footer class="site">
 # reader sees; one touching only run logs or pools does not.
 STORY_SOURCES = ("tree", "experiments", "preamble.md", "postamble.md",
                  "explore.md", "catastrophe.md", "about.md", "dial-tips.md",
-                 "findings.md", "findings-intro.md")
+                 "findings.md", "findings-intro.md", "making-of.md",
+                 "making-of-intro.md")
 
 
 def content_version(story_dir: Path) -> tuple[str, str] | None:
