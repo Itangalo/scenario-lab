@@ -1,10 +1,10 @@
 # Why and how Europe 2032 was built
 
-## In brief
+Europe 2032 was built as an assignment for the Talos Network fellowship. The idea started on 25 August and went through three major iterations, homing in on the concept and then improving the execution. The scenario was published one month later, and handed in on 30 September.
 
-- Europe 2032 was built as an assignment for the Talos Network fellowship. The idea started on 25 August and went through three major iterations. The scenario was published one month later, and handed in on September 30.
-- The simulations behind the scenario were run with Scenario Lab, a project I've been working on for almost a year. (It, too, has been through some major iterations, and another is on its way.) The code is written entirely by AI agents (Claude Code, OpenCode with Muse, and Codex).
-- The prose for Europe 2032 was not generated with Scenario Lab – the framework builds simulation data with functional narratives, not long prose. The prose was written with Claude Code and Opus, and though I've put quite some time into finding a good style and improving the prose it is still painfully obvious that it is LLM-written. I consider the simulations the main part of Europe 2032, and the scenario texts a way to present the simulations.
+The simulations behind the scenario were run with [Scenario Lab](https://github.com/Itangalo/scenario-lab), a project I've been working on for almost a year. The code is written entirely by AI agents. Scenario Lab, too, has been through some major iterations, and more are on their way.
+
+The prose for Europe 2032 was not generated with Scenario Lab – the framework builds simulation data with functional narratives, not long prose. The prose was written with Claude Code and Opus, and though I've put some time into finding a good style and improving the prose, it is still painfully obvious that it is LLM-written. I consider the simulations the main part of Europe 2032, and the scenario texts a way to present the concept of LLM-powered scenario simulations.
 
 ## The first iteration: three underlying realities
 
@@ -143,7 +143,7 @@ After running some simulations I wanted to give the game master more freedom to 
 
 Only one or two days after creating Forking Futures, Europe 2032 was born.
 
-In discussions with my advisor, I came up with the idea of an interactive scenario story and wanted to try it out. The old scenario was cloned and modified. The nameless policymaker became the EU, world metrics were changed to reflect an EU actor, and probably a few other things changed as well.
+In discussions with my advisor, I came up with the idea of an interactive scenario story and wanted to try it out. The old scenario was cloned and modified. The nameless policymaker became the EU, [world metrics](https://github.com/Itangalo/scenario-lab/blob/main/scenarios/europe-2032/metrics.md) were changed to make sense for an EU actor, and probably a few other things changed as well.
 
 But the main work was building and exploring how to build a branching story.
 
@@ -187,7 +187,7 @@ I experimented with some different writing styles, and at this stage I'm pretty 
 
 The actual writing took some time, but in general went smoothly. Claude Code custom-wrote a script for turning prose snippets into full stories, and the stories into an html page that could be published.
 
-## The third iteration: cleaning up the scenario
+## The third iteration: cleaning up and architectural improvements
 
 Then on September 9 I found a problem.
 
@@ -199,10 +199,10 @@ I decided to push ahead with updates, but make it possible to quickly revert to 
 
 A number of real improvements were made:
 
-- I went through the scenario event list and made a lot of cleanup. Events that didn't really contribute to the scenario were removed, three catastrophic events were added, and probabilities for a lot of events were adjusted.
-- I introduced "sign-off documents" for scenarios; documents showing a sample of actual prompts being sent to LLMs, to make it easy to see if information was missing or written in confusing ways.
+- I went through [the scenario event list](https://github.com/Itangalo/scenario-lab/blob/main/scenarios/europe-2032/events.md) and made a lot of cleanup. Events that didn't really contribute to the scenario were removed, three catastrophic events were added, and probabilities for a lot of events were adjusted.
+- I introduced [sign-off documents](https://github.com/Itangalo/scenario-lab/tree/main/scenarios/europe-2032/sign-off) for scenarios; documents showing a sample of actual prompts being sent to LLMs, to make it easy to see if information was missing or written in confusing ways.
 - I switched to using Muse Spark as the LLM for Europe 2032, instead of a Qwen model. Muse Spark is a reasoning model, which makes a number of differences, and in total the switch turned out to increase fidelity, only cost slightly more and – most importantly – make simulations run faster.
-- Scenario Lab got a "ledger" for persistent storage, along with some basic syntax to add/remove/modify entries from prompts, as well as to read full lines, individual values, or aggregates of values (eg. sum, max/min and average).
+- Scenario Lab got a ledger for persistent storage, along with some basic syntax to add/remove/modify entries from prompts, as well as to read full lines, individual values, or aggregates of values (eg. sum, max/min and average).
 
 The ledger was a significant architectural change, and the most risky. Making Scenario Lab use a ledger is a pretty bold procedure, and on top of that the Europe 2032 scenario had to be converted to use the ledger properly. It took some manual work on top of the amazing work by Claude Code and OpenCode, but it actually worked.
 
@@ -230,11 +230,13 @@ Then again, this is a way to showcase Scenario Lab, and LLM-powered scenario gam
 
 ## What I learned
 
-- Creating LLM-powered scenario games is fun, and there is *much* more to explore in how to use them.
-- Spending time on finding time-saving methods is often time well spent, in particular when AI is included.
 - Building the first versions just to learn and start over is after all these years still a good approach.
+- Spending time on finding time-saving methods is often time well spent, in particular when AI is included.
 - Claude Code and OpenCode are really powerful tools.
 - Scenario Lab improves when LLM capability improves. This is good.
 - Building particular scenarios with particular needs is a good way to add new functionality to Scenario Lab, but it should be done in a way that is generic, not specific. I have a long list of improvements I want to do.
-- It is difficult to make LLMs write good prose, in particular when it can't be written start-to-end.
 - The simulations show no clear winner moves when it comes to EU AI policy. (See the "findings" tab for more information.)
+- It is difficult to make LLMs write good prose, in particular when it can't be written start-to-end.
+- Creating LLM-powered scenario games is fun, and there is *much* more to explore in how to use them.
+
+I want to thank my advisor Auriane Técourt for feedback and encouragement, and also fellowship peers for valuable input.
