@@ -1,6 +1,6 @@
 # Why and how Europe 2032 was built
 
-Europe 2032 was built as an assignment for the Talos Network fellowship. The idea started on 25 August and went through three major iterations, homing in on the concept and then improving the execution. The scenario was published one month later, and handed in on 30 September.
+Europe 2032 was built as an assignment for the Talos Network fellowship. The idea started on 25 August and went through three major iterations, homing in on the concept and then improving the execution. The scenario was published one month later, and handed in on 30 September. The total budget for simulations was around 50–60 USD in credits on OpenRouter. The simulations underpinning the published scenario and its 150 reference runs cost just below 20 USD.
 
 The simulations behind the scenario were run with [Scenario Lab](https://github.com/Itangalo/scenario-lab), a project I've been working on for almost a year. The code is written entirely by AI agents. Scenario Lab, too, has been through some major iterations, and more are on their way.
 
