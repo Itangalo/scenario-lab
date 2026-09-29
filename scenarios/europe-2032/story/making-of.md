@@ -8,9 +8,9 @@ The prose for Europe 2032 was not generated with Scenario Lab – the framework 
 
 ## The first iteration: three underlying realities
 
-The seed for Europe 2032 came from an idea of simulating how a global policymaker should act when facing deep uncertainty over how AI progress will continue. Some say that we are in the foothills of the singularity, expecting recursively self-improving AI and then AGI (possibly ASI) within 5–10 years. Some stubborn people say that AI will hit a wall. The current state of the technology suggests that AI is becoming superhuman in coding, mathematics and probably other domains where we can have [verifiable rewards](https://www.reinforcement-learning.com/kb/rlvr).
+The seed for Europe 2032 came from an idea of simulating how a global policymaker should act when facing deep uncertainty over how AI progress will continue. Some say that we are in the foothills of the singularity, expecting recursively self-improving AI and then AGI (possibly ASI) within 5–10 years. Some stubborn people say that AI will hit a wall. (This stance arguably has a poor track record looking at the past ten years, but still shouldn't be excluded as I see it.) The current state of the technology suggests that AI is becoming superhuman at least in coding, mathematics and probably other domains where we can have [verifiable rewards](https://www.reinforcement-learning.com/kb/rlvr).
 
-There is really no way of telling which of these forecasts are right, which should give policymakers a feeling of deep uncertainty. (The "hit a wall" stance arguably has a poor track record looking at the last ten years, but shouldn't be excluded as I see it.) I wanted to see if there were actions that policymakers could take that paid off reasonably well over all three underlying worlds, either by always being beneficial or by only having low costs in some and high yield in others.
+There is really no way of telling which of these forecasts are right, and they probably call for radically different policies. I wanted to see if there are actions that policymakers can take that pay off reasonably well over all three underlying worlds, either by always being beneficial or by only having low costs in some and high yield in others.
 
 I chose to create a scenario with one single actor, even if Scenario Lab is built to manage many. I don't really remember why. Maybe I was already planning for creating a choose-your-own-adventure story built on the scenario, maybe I wanted to reduce complexity, or maybe I felt that from a European perspective a single vague policymaker is the realistic option (compared to deciding the course for US government, the Chinese communist party or frontier labs).
 
@@ -175,6 +175,8 @@ What looked like an error was actually the game master directing the game in a s
 
 ### Building the tree and the prose
 
+I decided to give the reader a choice every second year, corresponding to four turns, with all stories starting from the same first turn. Branching every turn would be more fun, but would result in thousands of stories. Switching to two-year turns was an option, but would have required rewriting a lot of scenario configuration, since probabilities and world metrics were tuned to six-month turns.
+
 Interleaved with tuning the scenario settings, I started running batches of parts of the scenario, to use for the branching story. Ten simulations of the first turn, and selecting *one* that should be the starting point of all stories. Running ten simulations for each underlying world starting from `turn-01`, and analyzing them to see how actor choices cluster. Pinning down the choices that should be available to the reader, then running ten simulations of turn 2–5 for each underlying world, and drawing one randomly that becomes the actual story. Then creating reader options for each of these branches, and so on and so forth. One starting point, twenty-four endings.
 
 I prompted Claude Code for these simulations one at a time, which meant that it took quite some time to create all of them – I think it was roughly a week (but much less actual simulation time).
@@ -187,7 +189,7 @@ I experimented with some different writing styles, and at this stage I'm pretty 
 
 The actual writing took some time, but in general went smoothly. Claude Code custom-wrote a script for turning prose snippets into full stories, and the stories into an html page that could be published.
 
-## The third iteration: cleaning up and architectural improvements
+## The third iteration: clean-up and architectural improvements
 
 Then on September 9 I found a problem.
 
