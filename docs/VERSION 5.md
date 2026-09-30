@@ -78,6 +78,7 @@ A possible minimal form, combining the decisive moment, authored endings and epi
 
 - Better guidelines for how scenario files should be built. In particular, keeping files short is good. Separating descriptions from reasoning in world rules (currently "metric rules") is probably also a good principle.
 - Sign-off documents should be a part of the scenario generation process; created one at a time during the creation process.
+- (ECHO 2026-09-30) A command for updating an existing scenario from events and news found online. It would search for developments since the scenario's start date (or its last update), and propose changes: starting context and fixed facts, metric start values, event probabilities, events that have now happened (to be removed, or pinned into turn 1), and new events worth adding to the catalogue. Proposals should carry source and retrieval date, like the information bank from `frame-scenario`, and be approved by a human before anything is written – the command suggests, it does not edit silently. An update changes the scenario's physics, so runs before and after it are not comparable; the command should record the update (for example as a new version or a dated variant) so batches can be kept apart.
 
 ### Other improvements
 
