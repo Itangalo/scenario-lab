@@ -112,6 +112,11 @@ class StoreTable:
     # fit in a cell (descriptions, reference values). The LLM reads the prose
     # but never re-emits it -- the same custody split as world narration.
     info_file: Optional[str] = None
+    # The file's sections as loaded ({title: body}), enriched at load time
+    # from the scenario directory. Declaration only travels in the schema;
+    # content is re-read from disk on every load, so it never goes stale in
+    # run artifacts and never bloats config.json.
+    info_sections: dict[str, str] = field(default_factory=dict)
 
     @property
     def id_column(self) -> str:
@@ -1580,6 +1585,31 @@ class StoreView:
     def mean(self, table: str, column: str, **where: Any) -> Any:
         return self.rows(table, [column], **where).mean
 
+    def info(self, table: str, record_id: str) -> str:
+        """One record's rich description, for templates to render.
+
+        ``{{ store.info('metrics', 'eu_political_capital') }}`` renders that
+        record's H2 section from the table's info file -- the slice a prompt
+        needs, not the whole file. Section titles match record ids
+        case-insensitively. A table without an info file is an author error
+        and raises; a record with no section reads as empty, since records
+        created at run time legitimately have no prose yet.
+        """
+        schema_table = self._store.schema.tables.get(table)
+        if schema_table is None:
+            known = ", ".join(sorted(self._store.schema.tables)) or "(none)"
+            raise StoreSchemaError(f"unknown store table '{table}' (declared: {known})")
+        if not schema_table.info_file:
+            raise StoreSchemaError(
+                f"store table '{table}' declares no info_file, so store.info "
+                "has nothing to read"
+            )
+        wanted = str(record_id).strip().lower()
+        for title, body in schema_table.info_sections.items():
+            if title.strip().lower() == wanted:
+                return body
+        return ""
+
     def rows(
         self, table: str, columns: Optional[list[str] | tuple[str, ...]] = None, **where: Any
     ) -> StoreSelection:
@@ -1617,10 +1647,11 @@ def _history_snapshot(turn_dir: object) -> Optional[dict]:
     Per-actor ``2-actors/*-store.json`` files are saved sequentially as each
     actor's writes apply, so each holds the cumulative state and only the
     last-written one is complete -- they do not agree on contents. Prefer
-    the world file; otherwise keep the snapshot with the highest record-id
-    counters, which only increase as writes apply (filename order is actor-id
-    order, not write order, so sorting names cannot identify it). Snapshots
-    are self-describing (fields plus stamped derived values), so no schema is
+    the world file; otherwise take the last file present in the run's actor
+    order (from the run's ``config.json``), which is the order the files were
+    written in. Counters cannot identify it: they only increase on ``add``,
+    so an update/delete-only turn ties every snapshot. Snapshots are
+    self-describing (fields plus stamped derived values), so no schema is
     needed to read them back.
     """
     import json
@@ -1634,20 +1665,47 @@ def _history_snapshot(turn_dir: object) -> Optional[dict]:
         except ValueError:
             return None
     actors_dir = turn_dir / "2-actors"
-    if actors_dir.is_dir():
-        latest: Optional[dict] = None
-        latest_total = -1
-        for state_file in sorted(actors_dir.glob("*-store.json")):
-            try:
-                snapshot = json.loads(state_file.read_text(encoding="utf-8"))
-            except ValueError:
-                continue
-            counters = snapshot.get("counters") or {}
-            total = sum(v for v in counters.values() if isinstance(v, int))
-            if total >= latest_total:
-                latest, latest_total = snapshot, total
-        return latest
+    if not actors_dir.is_dir():
+        return None
+    by_actor = {
+        path.name[: -len("-store.json")]: path
+        for path in actors_dir.glob("*-store.json")
+    }
+    if not by_actor:
+        return None
+    order = _snapshot_actor_order(turn_dir)
+    ranked = [by_actor[actor_id] for actor_id in order if actor_id in by_actor]
+    ranked.extend(
+        path for name, path in sorted(by_actor.items()) if name not in set(order)
+    )
+    for state_file in reversed(ranked):
+        try:
+            return json.loads(state_file.read_text(encoding="utf-8"))
+        except ValueError:
+            continue
     return None
+
+
+def _snapshot_actor_order(turn_dir: object) -> list[str]:
+    """Actor ids from the run's config.json, in declaration order.
+
+    The turn directory's parent is the run directory; the order there is the
+    order the actor files were written in. Empty when unreadable, in which
+    case callers fall back to filename order.
+    """
+    import json
+    from pathlib import Path
+
+    try:
+        config = json.loads(
+            (Path(turn_dir).parent / "config.json").read_text(encoding="utf-8")
+        )
+    except (OSError, ValueError):
+        return []
+    actors = config.get("actors") if isinstance(config, dict) else None
+    if not isinstance(actors, list):
+        return []
+    return [actor_id for actor_id in actors if isinstance(actor_id, str)]
 
 
 def read_table_history(
@@ -2093,6 +2151,65 @@ def find_store_references(text: str) -> list[StoreReference]:
     return references
 
 
+def _has_second_argument(raw: str) -> bool:
+    """Whether a ``store.…(...)`` call passes anything after its first argument."""
+    inside = raw[raw.find("(") + 1:]
+    if inside.endswith(")"):
+        inside = inside[:-1]
+    depth = 0
+    quote: Optional[str] = None
+    for index, char in enumerate(inside):
+        if quote:
+            if char == quote:
+                quote = None
+        elif char in "'\"":
+            quote = char
+        elif char in "([{":
+            depth += 1
+        elif char in ")]}":
+            depth -= 1
+        elif char == "," and depth == 0:
+            return bool(inside[index + 1:].strip())
+    return False
+
+
+def _check_info_reference(
+    schema: StoreSchema, ref: StoreReference, where: str
+) -> list[str]:
+    """Validate one ``store.info('table', 'record')`` call."""
+    errors: list[str] = []
+    if ref.table is None:
+        errors.append(f"{where}: `{ref.raw}` — the table must be a quoted name")
+        return errors
+    table = schema.tables.get(ref.table)
+    if table is None:
+        errors.append(
+            f"{where}: `{ref.raw}` — unknown table '{ref.table}' "
+            f"(declared: {', '.join(sorted(schema.tables))})"
+        )
+        return errors
+    if not table.info_file:
+        errors.append(
+            f"{where}: `{ref.raw}` — table '{ref.table}' declares no info_file, "
+            "so there is no prose to render"
+        )
+    if ref.column is None and not _has_second_argument(ref.raw):
+        # A literal id is checked no further (runtime records may lack a
+        # section), and a variable one -- store.info('metrics', metric.id)
+        # inside a loop, the natural way to describe every record -- cannot
+        # be checked here at all. Only a missing record argument is an error.
+        errors.append(
+            f"{where}: `{ref.raw}` — name the record, "
+            f"e.g. store.info('{ref.table}', '<record id>') or a loop variable"
+        )
+    if ref.kwargs:
+        errors.append(
+            f"{where}: `{ref.raw}` — store.info takes no filters, "
+            "just a table and a record"
+        )
+    return errors
+
+
 def check_store_references(schema: StoreSchema, text: str, where: str) -> tuple[list[str], list[str]]:
     """Validate a template's ``store.…`` calls against the schema."""
     errors: list[str] = []
@@ -2109,6 +2226,10 @@ def check_store_references(schema: StoreSchema, text: str, where: str) -> tuple[
     itemised: set[str] = set()
 
     for ref in references:
+        if ref.method == "info":
+            info_errors = _check_info_reference(schema, ref, where)
+            errors.extend(info_errors)
+            continue
         if ref.method not in AGGREGATES:
             errors.append(
                 f"{where}: `{ref.raw}` — unknown store operation '{ref.method}' "
@@ -2493,6 +2614,24 @@ def self_test() -> int:
         check("history missing reads None", [s["value"] for s in missing], [None, None])
         narrowed = read_table_history(run_tmp, "measures", turns=[2])
         check("history turn filter", [s["turn"] for s in narrowed], [2])
+        # Tied snapshots resolve by actor order, not filename order: with
+        # write order [b, a], a-store.json is freshest despite sorting first.
+        tie_dir = run / "turn-04"
+        tie_dir.mkdir()
+        for actor_id, level in (("b", 20), ("a", 21)):
+            tie_dir.joinpath(f"2-actors").mkdir(exist_ok=True)
+            tie_dir.joinpath(f"2-actors/{actor_id}-store.json").write_text(json.dumps({
+                "turn": 4, "counters": {},
+                "records": [
+                    {"id": "M1", "table": "measures", "actor": actor_id,
+                     "fields": {"cost": level}, "derived": {},
+                     "added_turn": 1, "removed_turn": None},
+                ],
+            }), encoding="utf-8")
+        _Path(run_tmp).joinpath("config.json").write_text(
+            json.dumps({"actors": ["b", "a"]}), encoding="utf-8")
+        tied = read_table_history(run_tmp, "measures", "M1", "cost", turns=[4])
+        check("history tie follows actor order", [s["value"] for s in tied], [21])
 
     # Reference checking against a template.
     errors, warnings = check_store_references(

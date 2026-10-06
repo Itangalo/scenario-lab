@@ -83,7 +83,11 @@ def detect_last_phase(run_dir: Path, turn: int) -> Optional[str]:
     last actor answers, so their presence closes the crash window). Actor
     ids come from the run's own config.json. The summary.json phase record
     is a consistency signal, not the verdict: it is written after the same
-    statement step, so it can never be ahead of the files.
+    statement step, so it can never be ahead of the files. When the run
+    declares a store, every actor's `-store.json` is required too: statement
+    files land before store writes apply (and the store step can itself make
+    LLM re-ask calls), so without this a crash mid-store resumes past the
+    actors phase and the unwritten actors' writes are silently lost.
     "world" uses the same completeness rule as ``detect_last_turn`` (minus
     the turn-number guard), so the two can never disagree about whether a
     turn is finished. Artifact-based throughout, so runs saved before phase
@@ -98,12 +102,17 @@ def detect_last_phase(run_dir: Path, turn: int) -> Optional[str]:
         return None
     phase = PHASE_EVENTS
     actor_ids = _run_actor_ids(run_dir)
+    want_store = _run_store_declared(run_dir)
     actors_dir = turn_dir / "2-actors"
     if actors_dir.is_dir():
         if actor_ids is not None:
             complete = all(
                 (actors_dir / f"{actor_id}.md").is_file()
                 and (actors_dir / f"{actor_id}-statements.md").is_file()
+                and (
+                    not want_store
+                    or (actors_dir / f"{actor_id}-store.json").is_file()
+                )
                 for actor_id in actor_ids
             )
         else:
@@ -140,6 +149,37 @@ def _run_actor_ids(run_dir: Path) -> Optional[list[str]]:
     if not isinstance(actors, list) or not actors or not all(isinstance(a, str) for a in actors):
         return None
     return list(actors)
+
+
+def _run_store_declared(run_dir: Path) -> bool:
+    """Whether the run's config.json declares any store tables."""
+    import json
+
+    try:
+        config = json.loads((run_dir / "config.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return False
+    return isinstance(config, dict) and bool(config.get("store"))
+
+
+def log_covers_occurred(occurred: object, event_log: object) -> bool:
+    """Whether a summary's event log can be trusted to truncate its occurred set.
+
+    Every id in ``occurred_events`` must appear somewhere in the full,
+    turn-stamped ``event_log``. A current run logs every occurrence, so this
+    holds whatever turn its first event fired on (a quiet turn 1 is common).
+    A legacy run -- no log, or a log added partway through -- has occurred ids
+    the log never stamped, and those cannot be placed before or after a branch
+    point, so the caller keeps the full set rather than wiping history.
+    """
+    if not isinstance(occurred, list) or not isinstance(event_log, list):
+        return False
+    logged = {
+        entry.get("id")
+        for entry in event_log
+        if isinstance(entry, dict) and isinstance(entry.get("turn"), int)
+    }
+    return all(event_id in logged for event_id in occurred)
 
 
 def next_phase(phase: str) -> str:
@@ -405,11 +445,12 @@ def load_run_state(
 
     if "occurred_events" in summary:
         scenario.occurred_events = set(summary["occurred_events"])
-        if isinstance(summary.get("event_log"), list) and summary["event_log"]:
+        if log_covers_occurred(summary.get("occurred_events"), summary.get("event_log")):
             # The set is history too: entries that only fired after the load
             # point must not suppress one-shot events in the branch (or the
-            # resumed run). Without turn stamps there would be nothing to
-            # truncate by, so legacy summaries keep the full set.
+            # resumed run). Truncation needs a log that covers the whole set;
+            # a legacy log (absent, or started partway through) keeps the full
+            # set, since one-shot events it never stamped could fire again.
             scenario.occurred_events = {
                 event_id
                 for event_id in scenario.occurred_events
@@ -586,9 +627,10 @@ def create_branch(
     # The flat set is truncated to the stamped log: a non-repeatable event
     # that fired after the branch point in the parent must be able to fire in
     # the branch, or what-if comparisons silently inherit the parent's future.
-    # A legacy parent without a log keeps its full set: with no stamps there
-    # is nothing to truncate by, and wiping history would be worse.
-    if isinstance(parent_log, list) and parent_log:
+    # A legacy parent without a log -- or with one starting partway through,
+    # whose early history cannot be verified -- keeps its full set: with
+    # nothing complete to truncate by, wiping history would be worse.
+    if log_covers_occurred(parent_summary.get("occurred_events"), parent_log):
         logged_ids = {entry["id"] for entry in truncated_log}
     else:
         logged_ids = None

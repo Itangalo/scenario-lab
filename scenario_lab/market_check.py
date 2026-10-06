@@ -48,12 +48,22 @@ def market_check(run_dir: Path) -> dict[str, Any]:
         return {"comparisons": [], "warnings": ["turn-1 evaluations are not a list"]}
 
     gm: dict[str, float] = {}
+    rigged: list[str] = []
     for entry in evaluations:
         if not isinstance(entry, dict) or entry.get("skipped"):
             continue
         event_id = entry.get("id")
         probability = entry.get("probability")
-        if isinstance(event_id, str) and isinstance(probability, (int, float)):
+        if not isinstance(event_id, str):
+            continue
+        # Forced and suppressed entries carry no judgment: a forced event
+        # fires at probability 1.0 by flag, a suppressed one never fires by
+        # flag. Comparing either against a market figure would compare the
+        # flag, not the Game Master.
+        if entry.get("forced") or entry.get("suppressed"):
+            rigged.append(event_id)
+            continue
+        if isinstance(probability, (int, float)):
             gm[event_id] = float(probability)
 
     try:
@@ -94,6 +104,11 @@ def market_check(run_dir: Path) -> dict[str, Any]:
         )
     if not comparisons:
         warnings.append("No anchored events found in this scenario")
+    if rigged:
+        warnings.append(
+            "Skipped force/suppress-flagged evaluations (no Game Master "
+            f"judgment in them): {', '.join(sorted(set(rigged)))}"
+        )
     return {"comparisons": comparisons, "warnings": warnings}
 
 

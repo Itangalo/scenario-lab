@@ -402,6 +402,50 @@ def test_branch_truncates_occurred_events_at_the_branch_point(parent_run_dir, ou
     assert branched["occurred_events"] == ["early_signal"]
 
 
+def test_branch_truncates_when_turn_one_was_quiet(parent_run_dir, output_base):
+    """A run whose first event fired after turn 1 is not legacy.
+
+    The log only stamps fired events, so a quiet turn 1 must not switch
+    truncation off and hand the branch the parent's later one-shot events.
+    """
+    from scenario_lab.resume import create_branch
+
+    summary = json.loads((parent_run_dir / "summary.json").read_text())
+    summary["occurred_events"] = ["second_turn_signal", "after_the_branch"]
+    summary["event_log"] = [
+        {"turn": 2, "id": "second_turn_signal"},
+        {"turn": 3, "id": "after_the_branch"},
+    ]
+    (parent_run_dir / "summary.json").write_text(json.dumps(summary, indent=2))
+
+    branch_dir = create_branch(parent_run_dir, from_turn=2, output_base=output_base)
+    branched = json.loads((branch_dir / "summary.json").read_text())
+    assert branched["occurred_events"] == ["second_turn_signal"]
+
+
+def test_branch_keeps_full_set_for_a_legacy_partial_log(parent_run_dir, output_base):
+    """Occurred ids the log never stamped cannot be placed, so nothing is cut."""
+    from scenario_lab.resume import create_branch
+
+    summary = json.loads((parent_run_dir / "summary.json").read_text())
+    summary["occurred_events"] = ["before_the_log", "after_the_branch"]
+    summary["event_log"] = [{"turn": 3, "id": "after_the_branch"}]
+    (parent_run_dir / "summary.json").write_text(json.dumps(summary, indent=2))
+
+    branch_dir = create_branch(parent_run_dir, from_turn=1, output_base=output_base)
+    branched = json.loads((branch_dir / "summary.json").read_text())
+    assert branched["occurred_events"] == ["before_the_log", "after_the_branch"]
+
+
+def test_log_covers_occurred():
+    from scenario_lab.resume import log_covers_occurred
+
+    assert log_covers_occurred(["a"], [{"turn": 4, "id": "a"}])
+    assert log_covers_occurred([], [])
+    assert not log_covers_occurred(["a", "b"], [{"turn": 1, "id": "a"}])
+    assert not log_covers_occurred(["a"], None)
+
+
 def test_load_truncates_occurred_events_to_the_load_point(tmp_path):
     """Loading an earlier turn must not suppress later one-shot events."""
     import shutil

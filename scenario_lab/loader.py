@@ -1034,6 +1034,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
         store_schema = parse_store_schema(data.get("store"))
     except StoreSchemaError as err:
         raise ValueError(f"{path}: {err}") from err
+    _load_info_sections(store_schema, _scenario_dir_for(path))
 
     return ScenarioConfig(
         name=data["name"],
@@ -1057,6 +1058,40 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
         logging=logging_config,
         patches=[*base_patches, *resolve_patch_specs(child_patch_specs, path.parent)],
     )
+
+
+def _scenario_dir_for(config_path: Path) -> Optional[Path]:
+    """Scenario directory holding metrics.md above a config file, if any."""
+    directory = config_path.parent
+    while True:
+        if (directory / "metrics.md").exists():
+            return directory
+        if directory == directory.parent:
+            return None
+        directory = directory.parent
+
+
+def _load_info_sections(schema, scenario_dir: Optional[Path]) -> None:
+    """Enrich a parsed store schema with its info files' sections.
+
+    Best-effort by design: a missing or unreadable file leaves empty
+    sections, and validation owns the error. Loading never fails the scenario
+    -- the file may legitimately appear later in an agent-driven authoring
+    flow, and `validate` is the gate that says so.
+    """
+    from .store import read_info_sections, resolve_info_path
+
+    if scenario_dir is None:
+        return
+    for table in schema.tables.values():
+        if not table.info_file:
+            continue
+        try:
+            table.info_sections = read_info_sections(
+                resolve_info_path(scenario_dir, table.info_file)
+            )
+        except (ValueError, OSError):
+            table.info_sections = {}
 
 
 def _store_schema_to_yaml(schema) -> dict:

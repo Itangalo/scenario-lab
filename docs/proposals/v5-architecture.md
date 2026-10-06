@@ -66,6 +66,16 @@ Standard sims need no climax; live games do. Minimal v5 (combining decisive mome
 5. Mixed player modes (done on `version-5`): `--llm-actors` on `live-menu`/`live-resolve`/`live`, recorded in `menu.json`, chained next menus keep the mode, model actions via the shared `generate_actor_action`, facilitator pass-through. Finale block postponed.
 6. Tooling: output subfolders (done). Update-from-news (done as the `update-scenario` skill: harness-chosen sources, `updates/UPDATE-*.md` approval file with one entry per change, apply-approved-only, design-notes log, incomparability rule). Market anchors (done, Metaculus-first): `**Metaculus:**` / `**Retrieved:**` / `**Market probability:**` on events, parsed + validated + patchable + in `describe`; snapshots, never live fetches; creation flow records anchors at draft and signs off the events list (`create-scenario` skill). H2 standard (done): one H1 title + H2 sections in `metrics.md`/`events.md`, sub-H2 warns as folded prose. Sign-off gating rides on the existing creation checkpoints (framing, review, prompt sign-off) plus the new events sign-off.
 
+## Review fixes, round 2 (2026-10-06, from `v5-review-2-2026-10-06.md`)
+
+- Round prompts render inbox and outbox (regression from round 1 fixed), with a round-2 integration test proving both directions arrive.
+- Phase detection requires `-store.json` per actor when a store is declared.
+- History snapshots resolve by config actor order, not counters or filenames.
+- Live menus fall back to the nearest earlier record; `--llm-actors none` opts out explicitly (mode switches happen at menu time).
+- `--max-runs` orders by run-name timestamp (mtime fallback); `rounds` is a guaranteed minimum before silent-stop; `market-check` skips flagged evaluations; user templates must branch on `negotiation_round`; truncation keeps full history when the log starts partway.
+- `info_file` slices render in turn prompts via `store.info('table', 'record')` (validated, sections loaded at load time, content never persisted to artifacts).
+- `read_table_history` feeds the analysis prompt (`Declared State Over Turns`) as a first snapshot plus per-turn changes, so reports can date portfolio changes instead of recovering them from prose without repeating every unchanged record every turn.
+
 ## Review fixes (2026-10-06, from `v5-review-2026-10-06.md`)
 
 All thirteen findings fixed on `version-5`, each with a regression test:

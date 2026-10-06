@@ -43,6 +43,14 @@ Use the supplied metric overview as the baseline for exact start/end values. If 
 ```json
 {{ metric_overview_json }}
 ```
+{% if store_history_json %}
+
+## Declared State Over Turns
+Records the framework held for this run, per store table: the first snapshot (`initial`), then only what changed in later turns (`added` records, `changed` values as `[old, new]`, `removed` record ids). A turn absent from `changes` changed nothing.
+```json
+{{ store_history_json }}
+```
+{% endif %}
 
 ## Scenario Metrics
 {{ scenario_metrics_markdown }}

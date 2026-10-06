@@ -3201,9 +3201,10 @@ def run_live_menu_command(args, llm_client=None) -> int:
     from .live import (
         LiveError,
         is_live_run,
+        latest_llm_actors,
         mark_live_run,
         open_live_state,
-        parse_llm_actors,
+        parse_llm_actors_flag,
         read_run_seed,
         recorded_llm_actors,
         run_menu_turn,
@@ -3281,14 +3282,17 @@ def run_live_menu_command(args, llm_client=None) -> int:
         if not run_model_preflight_checks(scenario):
             return 1
 
-    # An explicit flag wins; otherwise an existing game keeps the mode its
-    # last menus recorded, so regenerating menus never silently turns a
-    # mixed game all-human.
-    flag_actors = parse_llm_actors(getattr(args, "llm_actors", None))
-    if flag_actors:
+    # An explicit flag wins (including "none" back to all-human); otherwise
+    # an existing game keeps the mode its menus recorded, falling back to
+    # the latest earlier record for hand-made menus, so regenerating menus
+    # never silently turns a mixed game all-human.
+    flag_actors = parse_llm_actors_flag(getattr(args, "llm_actors", None))
+    if flag_actors is not None:
         llm_actors = flag_actors
     else:
         llm_actors = recorded_llm_actors(run_dir, args.turn)
+        if not llm_actors:
+            llm_actors = latest_llm_actors(run_dir, args.turn)
         if llm_actors:
             print(f"  Keeping model-played actors from menu.json: {', '.join(llm_actors)}")
     try:
@@ -3323,7 +3327,7 @@ def run_live_resolve_command(args, llm_client=None, input_fn=input) -> int:
         LiveCancelled,
         LiveError,
         parse_actor_action_specs,
-        parse_llm_actors,
+        parse_llm_actors_flag,
         run_resolve_turn,
     )
 
@@ -3334,9 +3338,7 @@ def run_live_resolve_command(args, llm_client=None, input_fn=input) -> int:
         print(f"❌ Error: {e}")
         return 1
 
-    llm_actors = None
-    if getattr(args, "llm_actors", None):
-        llm_actors = parse_llm_actors(args.llm_actors)
+    llm_actors = parse_llm_actors_flag(getattr(args, "llm_actors", None))
 
     try:
         result = run_resolve_turn(

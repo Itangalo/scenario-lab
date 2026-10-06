@@ -767,9 +767,53 @@ def _mixed_mock() -> MockLLMClient:
 
 
 def test_parse_llm_actors():
+    from scenario_lab.live import parse_llm_actors_flag
+
     assert parse_llm_actors(None) == []
     assert parse_llm_actors("") == []
     assert parse_llm_actors("eu, china") == ["eu", "china"]
+    assert parse_llm_actors_flag(None) is None
+    assert parse_llm_actors_flag("") is None
+    assert parse_llm_actors_flag("none") == []
+    assert parse_llm_actors_flag("eu") == ["eu"]
+
+
+def test_latest_llm_actors_falls_back_to_earlier_record(tmp_path):
+    from scenario_lab.live import latest_llm_actors, write_menus
+
+    run_dir = tmp_path / "run-01"
+    (run_dir / "turn-01" / "live").mkdir(parents=True)
+    (run_dir / "turn-02" / "live").mkdir(parents=True)
+    write_menus(run_dir, 1, {}, "direct", llm_actors=["eu"])
+    write_menus(run_dir, 2, {}, "direct", llm_actors=[])
+    assert latest_llm_actors(run_dir, 2) == ["eu"]
+    assert latest_llm_actors(run_dir, 3) == []
+    assert latest_llm_actors(run_dir, 1) == []
+
+
+def test_explicit_empty_mode_returns_game_to_all_human(tmp_path):
+    scenario = load_scenario(_live_scenario_copy(tmp_path))
+    scenario.config.random_seed = 7
+    output_manager = OutputManager(scenario, tmp_path / "global-ai-live")
+    run_dir = output_manager.start_run(prefix="live-")
+    run_menu_turn(
+        scenario, output_manager, run_dir, 1, max_options=3,
+        llm_client=_live_mock(), llm_actors=["eu"],
+    )
+    # Switching back needs menus for everyone again -- the mode switch
+    # happens at menu time, resolve only records it.
+    run_menu_turn(
+        scenario, output_manager, run_dir, 1, max_options=3,
+        llm_client=_live_mock(), llm_actors=[],
+    )
+    result = run_resolve_turn(
+        run_dir, 1,
+        {"us-gov": "1", "us-labs": "2", "china": "1", "eu": "1"},
+        interactive=False, llm_client=_live_mock(), llm_actors=[],
+    )
+    assert set(result.actor_outputs) == {"us-gov", "us-labs", "china", "eu"}
+    assert recorded_llm_actors(run_dir, 1) == []
+    assert set(read_menus(run_dir, 2)) == {"us-gov", "us-labs", "china", "eu"}
 
 
 def test_mixed_mode_menu_skips_llm_actors(tmp_path):

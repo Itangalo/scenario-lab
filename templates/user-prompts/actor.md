@@ -54,6 +54,12 @@ The only thing that changes any of this is a JSON block under `## Store changes`
 {% if negotiation_round %}
 {{negotiation_instructions}}
 
+{% if negotiation_messages %}
+## Private messages to you
+
+{{negotiation_messages}}
+
+{% endif %}
 {% if negotiation_outbox %}
 Your notes so far this turn, for context on the replies above:
 

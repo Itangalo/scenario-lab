@@ -205,6 +205,50 @@ def test_negotiation_rerun_replaces_aborted_attempt(tmp_path):
     assert len(rounds) == 2
 
 
+def test_round_two_prompt_sees_both_directions():
+    """Regression: rounds after the first must render inbox and outbox."""
+    from scenario_lab.prompts import PromptBuilder
+
+    scenario = load_scenario("scenarios/sweden-ai-2030")
+    actor_id = next(iter(scenario.actors))
+    builder = PromptBuilder(scenario)
+    _, user = builder.build_actor_prompt(
+        actor_id,
+        1,
+        [],
+        negotiation_messages="Message from b (round 1): Hello.",
+        negotiation_instructions="Round 2.",
+        negotiation_round=True,
+        negotiation_outbox="You wrote to b (round 1): Hi back.",
+    )
+    assert "Message from b (round 1): Hello." in user
+    assert "You wrote to b (round 1): Hi back." in user
+    assert "Heading level 2: Actions" not in user
+
+
+def test_second_round_receives_first_round_notes(tmp_path):
+    """Integration: round-2 prompts carry round-1 notes and own offers."""
+    scenario, manager, _ = _negotiation_scenario(tmp_path, rounds=2, max_rounds=2)
+    actor_ids = list(scenario.actors.keys())
+    recipient = actor_ids[1]
+    client = _message_client("Round note.", recipient)
+    Orchestrator(scenario, client, manager)._run_negotiations(1, [])
+    round_prompts = [
+        user
+        for _, user in client.calls
+        if "private negotiations" in user.lower()
+    ]
+    assert round_prompts, "no negotiation prompts were made"
+    later = [p for p in round_prompts if "round 2" in p.lower()]
+    assert later, "no second round ran"
+    assert all("Round note." in p for p in later)
+    # Every round-2 prompt carries the sender's own round-1 notes: sent
+    # notes verbatim, plus the self-send rejection for the nominal recipient.
+    assert all(
+        "You wrote to" in p or "was not delivered" in p for p in later
+    )
+
+
 def test_metrics_prompt_carries_negotiation_record():
     """The Game Master sees every private note; silence renders nothing."""
     from scenario_lab.prompts import PromptBuilder

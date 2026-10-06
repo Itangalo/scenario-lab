@@ -95,6 +95,42 @@ def test_detect_last_phase_needs_every_actor(tmp_path):
     assert _detect(run_dir, 2) == "events"
 
 
+def test_detect_last_phase_needs_store_files_when_declared(tmp_path):
+    """A crash mid-store must not resume past the actors phase."""
+    import json as _json
+
+    run_dir = _run_two_turns(tmp_path)
+    config_path = run_dir / "config.json"
+    config = _json.loads(config_path.read_text())
+    config["store"] = {"measures": {"scope": "actor"}}
+    config_path.write_text(_json.dumps(config))
+    actors_dir = run_dir / "turn-02" / "2-actors"
+    actor_ids = sorted(
+        p.name[: -len(".md")]
+        for p in actors_dir.iterdir()
+        if p.name.endswith(".md")
+        and not p.name.endswith(("-statements.md", "-store.md"))
+    )
+    for actor_id in actor_ids[:-1]:
+        (actors_dir / f"{actor_id}-store.json").write_text("{}")
+    for name in (
+        "3-metric-rules.md",
+        "4-metrics.json",
+        "4-world-state.md",
+        "5-notepad.md",
+        "6-historical-summary.md",
+    ):
+        path = run_dir / "turn-02" / name
+        if path.exists():
+            path.unlink()
+
+    from scenario_lab.resume import detect_last_phase as _detect
+
+    assert _detect(run_dir, 2) == "events"
+    (actors_dir / f"{actor_ids[-1]}-store.json").write_text("{}")
+    assert _detect(run_dir, 2) == "actors"
+
+
 def test_detect_last_phase_partial_turn(tmp_path):
     run_dir = _run_two_turns(tmp_path)
     assert detect_last_phase(run_dir, 1) == PHASE_WORLD

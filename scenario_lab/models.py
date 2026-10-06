@@ -479,10 +479,11 @@ class NegotiationsConfig:
     Off by default: each round costs one LLM call per participating actor, so
     turning this on multiplies the actors phase's time and cost. When enabled,
     actors exchange short private notes (only the recipients see each one)
-    for up to ``max_rounds`` rounds; the round stops early when a round
-    delivers nothing. Notes are appended to what each recipient sees -- the
-    VERSION 5 mechanism -- and a recipient may quote one to a third actor, so
-    leaking is possible by design, not by accident.
+    for at least ``rounds`` rounds and at most ``max_rounds``; past the
+    planned rounds a silent round ends the loop early. Notes are appended to
+    what each recipient sees -- the VERSION 5 mechanism -- and a recipient
+    may quote one to a third actor, so leaking is possible by design, not by
+    accident.
 
     ``contacts`` optionally restricts who may write to whom (actor id to
     reachable actor ids); absent means any actor may write to any other.

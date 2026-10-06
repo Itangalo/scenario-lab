@@ -397,6 +397,7 @@ What templates can read, in `metric-rules.md` and in prompt overrides:
 - `{{ store.rows('measures', ['cost_per_turn'], status='running').sum }}`, and `.min`, `.max`, `.mean`, `.count` — reducers on the selector; a bare selector renders, a reduced one yields a number
 - one equality filter as a keyword argument: `store.rows('measures', ['cost_per_turn'], status='running').sum`
 - `store.actor('eu')` to scope a scenario-wide view to one actor
+- `store.info('measures', 'M1')` — one record's rich description from the table's `info_file` (titles match record ids case-insensitively; a record with no section reads as empty). This is the turn-prompt slice the proposal promises: render descriptions per record, never the whole file. The record may be a loop variable, e.g. `{% for m in ids %}{{ store.info('metrics', m) }}{% endfor %}`; a literal or variable id is accepted, a missing one is an error. The table must declare `info_file`; validation rejects anything else.
 
 There are no joins and no arithmetic between reducers, a second filter is a validation error, and a reducer other than `count` over anything but exactly one selected column is a validation error. **Render the rows beside any total** — the validator warns when a template aggregates over a table whose rows it never shows, because a number the reader cannot check against its terms is one they stop checking. The legacy `store.sum('measures', 'cost_per_turn', ...)` form still runs but new templates should use the selector.
 

@@ -1539,6 +1539,14 @@ def validate_negotiations(scenario: Scenario) -> Tuple[List[str], List[str]]:
                     )
                     + "Add the block from the default template."
                 )
+        if "negotiation_round" not in actor_template:
+            warnings.append(
+                "negotiations enabled but the custom user-prompts/actor.md "
+                "never branches on 'negotiation_round': rendering the "
+                "variables without the branch still sends the action "
+                "write-up format in message rounds. Add the block from the "
+                "default template."
+            )
     for key in ("actor", *(f"actor_{actor_id}" for actor_id in actors)):
         system_template = scenario.custom_system_prompts.get(key, "")
         if system_template and "negotiation_round" not in system_template:

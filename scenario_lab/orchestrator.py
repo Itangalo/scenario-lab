@@ -1488,10 +1488,10 @@ class Orchestrator:
         Each round every participant is asked for notes simultaneously (so
         prompts run in parallel, like the actors step); delivered notes join
         each recipient's inbox for the next round and for the final actions.
-        The loop runs up to ``max_rounds`` rounds (at least the planned
-        ``rounds``) while rounds keep delivering, seats every actor not
-        capped by ``actor_rounds``, and stops early on a silent round: with
-        no new information a further round only spends money.
+        The loop runs at least the planned ``rounds`` and at most
+        ``max_rounds``, seats every actor not capped by ``actor_rounds``,
+        and stops early on a silent round past the planned rounds: with no
+        new information a further round only spends money.
 
         Returns ``(inboxes, outboxes, delivered_all)``: notes received per
         actor, notes sent plus delivery failures per actor (a sender that
@@ -1504,6 +1504,7 @@ class Orchestrator:
             parse_message_block,
             participants_for_round,
             render_inbox,
+            render_sent,
         )
 
         cfg = self.scenario.config.negotiations
@@ -1546,12 +1547,14 @@ class Orchestrator:
                 reachable = cfg.contacts.get(writer_id)
                 if reachable is None:
                     reachable = [a for a in actor_ids if a != writer_id]
+                box = outboxes[writer_id]
                 system, user = self.prompt_builder.build_actor_prompt(
                     writer_id,
                     turn,
                     triggered_events,
                     previous_actions=self.scenario.actors[writer_id].last_actions,
                     negotiation_messages=render_inbox(inboxes[writer_id]),
+                    negotiation_outbox=render_sent(box["sent"], box["rejected"]),
                     negotiation_instructions=(
                         f"## Private negotiations (round {round_no})\n\n"
                         "Before actions are decided, you may send short private "
@@ -1622,7 +1625,7 @@ class Orchestrator:
                 f"  → Negotiation round {round_no}: "
                 f"{len(round_delivered)} delivered, {len(round_rejected)} rejected"
             )
-            if not round_delivered:
+            if not round_delivered and round_no >= planned:
                 break
 
         return inboxes, outboxes, delivered_all

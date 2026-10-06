@@ -374,3 +374,67 @@ None.
     assert "Analysis saved to:" in captured.out
     assert "The decisive shift came in turn 2" in captured.out
     assert custom_output.exists()
+
+
+def test_build_store_history_reads_mass_snapshots(tmp_path):
+    """Analysis consumes the store mass-read; storeless runs add nothing."""
+    from scenario_lab.analysis import _build_store_history
+
+    assert _build_store_history(tmp_path, {}) == []
+
+    run_dir = tmp_path / "run-01"
+    turn_dir = run_dir / "turn-01"
+    turn_dir.mkdir(parents=True)
+    (turn_dir / "4-world-store.json").write_text(json.dumps({
+        "turn": 1, "counters": {},
+        "records": [
+            {"id": "M1", "table": "measures", "actor": "eu",
+             "fields": {"name": "Build"}, "derived": {},
+             "added_turn": 1, "removed_turn": None},
+        ],
+    }))
+    config = {"store": {"measures": {"scope": "actor"}}}
+
+    series = _build_store_history(run_dir, config)
+    assert len(series) == 1 and series[0]["table"] == "measures"
+    assert series[0]["initial_turn"] == 1
+    assert series[0]["initial"] == [{"id": "M1", "name": "Build"}]
+    assert series[0]["changes"] == []
+
+    assert _build_store_history(run_dir, {"store": {"other": {}}}) == []
+
+
+def test_build_store_history_renders_changes_only(tmp_path):
+    """Later turns carry only what changed, not the whole table again."""
+    from scenario_lab.analysis import _build_store_history
+
+    run_dir = tmp_path / "run-01"
+
+    def snapshot(turn, records):
+        turn_dir = run_dir / f"turn-{turn:02d}"
+        turn_dir.mkdir(parents=True)
+        (turn_dir / "4-world-store.json").write_text(json.dumps({
+            "turn": turn, "counters": {},
+            "records": [
+                {"id": rid, "table": "measures", "actor": "eu", "fields": fields,
+                 "derived": derived, "added_turn": 1, "removed_turn": None}
+                for rid, fields, derived in records
+            ],
+        }))
+
+    snapshot(1, [("M1", {"size": "large"}, {"status": "running"}),
+                 ("M2", {"size": "small"}, {"status": "running"})])
+    # Turn 2: nothing changes, so it must not appear at all.
+    snapshot(2, [("M1", {"size": "large"}, {"status": "running"}),
+                 ("M2", {"size": "small"}, {"status": "running"})])
+    # Turn 3: M1 finishes (derived only), M2 is gone, M3 is new.
+    snapshot(3, [("M1", {"size": "large"}, {"status": "finished"}),
+                 ("M3", {"size": "small"}, {"status": "running"})])
+
+    series = _build_store_history(run_dir, {"store": {"measures": {}}})
+    assert series[0]["changes"] == [{
+        "turn": 3,
+        "added": [{"id": "M3", "status": "running", "size": "small"}],
+        "changed": [{"id": "M1", "values": {"status": ["running", "finished"]}}],
+        "removed": ["M2"],
+    }]

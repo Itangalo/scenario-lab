@@ -28,7 +28,10 @@ def iter_run_dirs(runs_dir: Path, order: str = "name") -> list[Path]:
     ``order="name"`` sorts by path for deterministic consumers;
     ``order="recent"`` sorts newest first for ``--max-runs`` ("most recent
     N"), where path order would rank subfolder runs before top-level runs
-    regardless of date.
+    regardless of date. Recency reads the timestamp in the run name
+    (``run-YYYYMMDD-HHMMSS[-NN]``), which -- unlike directory modification
+    time -- does not move when a run is resumed or a sync tool touches it;
+    names without a timestamp fall back to modification time.
     """
     runs_dir = Path(runs_dir)
     if not runs_dir.is_dir():
@@ -51,16 +54,22 @@ def iter_run_dirs(runs_dir: Path, order: str = "name") -> list[Path]:
             ):
                 found.append(grandchild)
     if order == "recent":
-        found.sort(key=_run_mtime, reverse=True)
+        found.sort(key=_run_recency, reverse=True)
     return found
 
 
-def _run_mtime(run_dir: Path) -> float:
-    """Modification time for recency ordering (0 when unreadable)."""
+_RUN_TS_RE = re.compile(r"^(?:run|live)-(\d{8})-(\d{6})(?:-(\d{2}))?$")
+
+
+def _run_recency(run_dir: Path) -> tuple[str, float]:
+    """Recency key: timestamp from the run name, else modification time."""
+    match = _RUN_TS_RE.match(run_dir.name)
+    stamp = "".join(group for group in match.groups() if group) if match else ""
     try:
-        return run_dir.stat().st_mtime
+        mtime = run_dir.stat().st_mtime
     except OSError:
-        return 0.0
+        mtime = 0.0
+    return (stamp, mtime)
 
 
 def _provenance_block(provenance: Optional[dict]) -> str:

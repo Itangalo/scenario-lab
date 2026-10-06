@@ -237,11 +237,14 @@ def _build_analysis_context(
         "costs": bundle.costs,
     }
 
+    store_history = _build_store_history(bundle.run_dir, bundle.config)
+
     return {
         "output_format": output_format,
         "context_mode": context_mode,
         "run_metadata_json": _to_json(run_metadata),
         "metric_overview_json": _to_json(bundle.metric_overview),
+        "store_history_json": _to_json(store_history) if store_history else "",
         "scenario_metrics_markdown": _format_metric_catalog(bundle.scenario),
         "scenario_events_markdown": _format_event_catalog(bundle.scenario),
         "scenario_actors_markdown": _format_actor_catalog(bundle.scenario),
@@ -253,6 +256,91 @@ def _build_analysis_context(
         ),
         "turn_artifacts_markdown": _format_turn_artifacts(bundle, context_mode),
     }
+
+
+def _build_store_history(run_dir: Path, config: dict[str, Any]) -> list[dict[str, Any]]:
+    """Per-turn declared-state changes for analysis, via mass-read.
+
+    This is the read path `read_table_history` exists for: the report can say
+    when a portfolio entry appeared, changed or vanished instead of
+    recovering it from narrative prose. Each table renders as its first
+    snapshot plus, for every later turn, only what changed (added records,
+    changed values as ``[old, new]``, removed ids). Full snapshots repeat
+    every unchanged record every turn -- about 45,000 characters for one
+    13-turn europe-2032 run -- and synthesis pays that once per run.
+    Turns without changes are dropped, and so are tables the run never
+    snapshotted, so storeless scenarios (and legacy runs) add no context.
+    """
+    from .store import read_table_history
+
+    tables = config.get("store")
+    if not isinstance(tables, dict) or not tables:
+        return []
+    series: list[dict[str, Any]] = []
+    for table in tables:
+        turns = [entry for entry in read_table_history(run_dir, table) if entry.get("records")]
+        if not turns:
+            continue
+        first = turns[0]
+        changes: list[dict[str, Any]] = []
+        previous = _record_values(first["records"])
+        for entry in turns[1:]:
+            current = _record_values(entry["records"])
+            delta = _record_delta(previous, current)
+            if delta:
+                changes.append({"turn": entry["turn"], **delta})
+            previous = current
+        series.append({
+            "table": table,
+            "initial_turn": first["turn"],
+            "initial": [
+                {"id": record_id, **values} for record_id, values in _record_values(first["records"]).items()
+            ],
+            "changes": changes,
+        })
+    return series
+
+
+def _record_values(records: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
+    """Map record id to its stored fields merged with stamped derived values.
+
+    Derived values are included because some move without any field changing
+    (a measure's status flips to finished when its turn arrives), and that
+    flip is exactly the kind of change a report should be able to date.
+    """
+    return {
+        str(record.get("id")): {**(record.get("derived") or {}), **(record.get("fields") or {})}
+        for record in records
+    }
+
+
+def _record_delta(
+    previous: dict[str, dict[str, Any]], current: dict[str, dict[str, Any]]
+) -> dict[str, Any]:
+    """Added records, changed values (``[old, new]``) and removed ids."""
+    delta: dict[str, Any] = {}
+    added = [{"id": rid, **values} for rid, values in current.items() if rid not in previous]
+    changed = []
+    for rid, values in current.items():
+        if rid not in previous:
+            continue
+        before = previous[rid]
+        moved = {
+            column: [before.get(column), value]
+            for column, value in values.items()
+            if before.get(column) != value
+        }
+        moved.update({column: [value, None] for column, value in before.items() if column not in values})
+        if moved:
+            changed.append({"id": rid, "values": moved})
+    removed = [rid for rid in previous if rid not in current]
+    if added:
+        delta["added"] = added
+    if changed:
+        delta["changed"] = changed
+    if removed:
+        delta["removed"] = removed
+    return delta
 
 
 def _build_metric_overview(

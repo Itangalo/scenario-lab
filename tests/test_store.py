@@ -1260,3 +1260,92 @@ def test_artifact_names_a_missing_section_as_a_fault(store: Store):
 def test_self_test_passes():
     """The `--self-test` the design asks for from the first commit."""
     assert self_test() == 0
+
+
+# ---------------------------------------------------------------------------
+# store.info: rich per-record prose for templates
+# ---------------------------------------------------------------------------
+
+
+def _informed_schema() -> StoreSchema:
+    schema = parse_store_schema(
+        {
+            "measures": {
+                "scope": "actor",
+                "info_file": "measures-info.md",
+                "columns": {
+                    "id": {"owner": "system"},
+                    "name": {"owner": "actor", "required": True},
+                },
+            },
+            "plain": {
+                "scope": "actor",
+                "columns": {
+                    "id": {"owner": "system"},
+                    "name": {"owner": "actor", "required": True},
+                },
+            },
+        }
+    )
+    schema.tables["measures"].info_sections = {
+        "M1": "A large build-out with reference costs."
+    }
+    return schema
+
+
+def test_store_info_renders_record_slice():
+    view = StoreView(Store(_informed_schema()))
+    assert view.info("measures", "M1") == "A large build-out with reference costs."
+    assert view.info("measures", "m1") == "A large build-out with reference costs."
+    assert view.info("measures", "M9") == ""
+
+
+def test_store_info_rejects_missing_table_and_file():
+    from scenario_lab.store import StoreSchemaError
+
+    view = StoreView(Store(_informed_schema()))
+    with pytest.raises(StoreSchemaError):
+        view.info("ghost", "M1")
+    with pytest.raises(StoreSchemaError):
+        view.info("plain", "M1")
+
+
+def test_store_info_reference_validation():
+    from scenario_lab.store import check_store_references
+
+    schema = _informed_schema()
+    errors, _ = check_store_references(
+        schema, "{{ store.info('measures', 'M1') }}", "t"
+    )
+    assert errors == []
+    errors, _ = check_store_references(schema, "{{ store.info('ghost', 'M1') }}", "t")
+    assert len(errors) == 1
+    errors, _ = check_store_references(schema, "{{ store.info('plain', 'M1') }}", "t")
+    assert len(errors) == 1
+    errors, _ = check_store_references(schema, "{{ store.info('measures') }}", "t")
+    assert len(errors) == 1
+    # A loop variable as the record is the natural way to describe every
+    # record, and is accepted (it cannot be checked before rendering).
+    errors, _ = check_store_references(
+        schema,
+        "{% for m in ids %}{{ store.info('measures', m) }}{% endfor %}",
+        "t",
+    )
+    assert errors == []
+    errors, _ = check_store_references(
+        schema, "{{ store.info('measures', record.id) }}", "t"
+    )
+    assert errors == []
+
+
+def test_store_info_renders_from_a_loop_in_the_sandbox():
+    """A loop variable reaches store.info through the sandboxed renderer."""
+    from jinja2.sandbox import SandboxedEnvironment
+
+    view = StoreView(Store(_informed_schema()))
+    template = SandboxedEnvironment().from_string(
+        "{% for rid in ids %}{{ rid }}: {{ store.info('measures', rid) }}|{% endfor %}"
+    )
+    assert template.render(store=view, ids=["M1", "M9"]) == (
+        "M1: A large build-out with reference costs.|M9: |"
+    )
