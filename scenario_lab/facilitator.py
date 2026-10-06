@@ -171,6 +171,7 @@ def prepare_turn(
     model: Optional[str] = None,
     overrides: Optional[list[str]] = None,
     log: Optional[Callable[[str], None]] = None,
+    llm_actors: Optional[list[str]] = None,
 ) -> dict[str, Any]:
     """Prepare one turn's menus; creates a new live game for a scenario target.
 
@@ -247,6 +248,7 @@ def prepare_turn(
         samples=samples,
         llm_client=LLM_CLIENT,
         config_overrides=overrides,
+        llm_actors=llm_actors,
     )
     for menu in menus.values():
         emit(f"  {menu.actor_name}: {len(menu.options)} options")

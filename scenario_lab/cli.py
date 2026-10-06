@@ -29,7 +29,7 @@ from .model_audit import (
 from .models import LLMConfig
 from .loader import parse_route
 from .orchestrator import run_simulation
-from .output import OutputManager, is_run_dirname
+from .output import OutputManager, is_run_dirname, iter_run_dirs
 from .validator import validate_scenario
 
 
@@ -288,6 +288,9 @@ def build_batch_run_command(
     if getattr(args, "log_llm_io", False):
         command.append("--log-llm-io")
 
+    if getattr(args, "output_subdir", None):
+        command.extend(["--output-subdir", args.output_subdir])
+
     for override in args.override or []:
         command.extend(["--override", override])
 
@@ -363,7 +366,11 @@ def resolve_integrity_targets(target: Path, max_runs: Optional[int] = None) -> l
     if not target.exists():
         raise ValueError(f"Target does not exist: {target}")
 
-    if target.is_dir() and is_run_dirname(target.name) and target.parent.name == "runs":
+    if (
+        target.is_dir()
+        and is_run_dirname(target.name)
+        and (target / "config.json").is_file()
+    ):
         return [target]
 
     runs_dir = target
@@ -371,9 +378,7 @@ def resolve_integrity_targets(target: Path, max_runs: Optional[int] = None) -> l
         runs_dir = target / "runs"
 
     if runs_dir.is_dir():
-        run_dirs = sorted(
-            path for path in runs_dir.iterdir() if path.is_dir() and is_run_dirname(path.name)
-        )
+        run_dirs = iter_run_dirs(runs_dir)
         if max_runs is not None:
             run_dirs = run_dirs[-max_runs:]
         if run_dirs:
@@ -497,23 +502,25 @@ def collect_batch_resume_runs(targets: list[Path]) -> list[Path]:
         if not target.exists():
             raise ValueError(f"Target does not exist: {target}")
 
-        if target.is_dir() and target.parent.name == "runs" and is_run_dirname(target.name):
+        if (
+            target.is_dir()
+            and is_run_dirname(target.name)
+            and (target / "config.json").is_file()
+        ):
             collected.append(target)
             continue
 
         if target.is_dir() and target.name == "runs":
-            run_dirs = sorted(
-                path for path in target.iterdir() if path.is_dir() and is_run_dirname(path.name)
+            collected.extend(
+                run_dir for run_dir in iter_run_dirs(target) if is_incomplete_run(run_dir)
             )
-            collected.extend(run_dir for run_dir in run_dirs if is_incomplete_run(run_dir))
             continue
 
         if target.is_dir() and (target / "runs").is_dir():
             runs_dir = target / "runs"
-            run_dirs = sorted(
-                path for path in runs_dir.iterdir() if path.is_dir() and is_run_dirname(path.name)
+            collected.extend(
+                run_dir for run_dir in iter_run_dirs(runs_dir) if is_incomplete_run(run_dir)
             )
-            collected.extend(run_dir for run_dir in run_dirs if is_incomplete_run(run_dir))
             continue
 
         raise ValueError(f"Unsupported batch-resume target: {target}")
@@ -973,6 +980,12 @@ def main():
         action="store_true",
         help="Write per-call LLM prompt/response transcripts to turn-XX/llm-io/",
     )
+    run_parser.add_argument(
+        "--output-subdir",
+        type=str,
+        default=None,
+        help="Named subfolder under runs/ for this run (e.g. a batch arm)",
+    )
 
     # Batch run command
     batch_run_parser = subparsers.add_parser(
@@ -1040,6 +1053,12 @@ def main():
         "--log-llm-io",
         action="store_true",
         help="Forward --log-llm-io to every job",
+    )
+    batch_run_parser.add_argument(
+        "--output-subdir",
+        type=str,
+        default=None,
+        help="Named subfolder under runs/ shared by every job in the batch",
     )
 
     # Batch resume command
@@ -1248,6 +1267,12 @@ def main():
         action="store_true",
         help="Write per-call LLM prompt/response transcripts to turn-XX/llm-io/",
     )
+    live_menu_parser.add_argument(
+        "--llm-actors",
+        type=str,
+        default=None,
+        help="Comma-separated actors the model plays (no menu, no team), e.g. 'industry,media'",
+    )
 
     # Live-resolve command (live workshop games)
     live_resolve_parser = subparsers.add_parser(
@@ -1274,6 +1299,12 @@ def main():
         "--log-llm-io",
         action="store_true",
         help="Write per-call LLM prompt/response transcripts to turn-XX/llm-io/",
+    )
+    live_resolve_parser.add_argument(
+        "--llm-actors",
+        type=str,
+        default=None,
+        help="Comma-separated actors the model plays (defaults to the menu.json record)",
     )
 
     # Live launcher command (guided start/resume for workshop games)
@@ -1348,6 +1379,12 @@ def main():
         "--log-llm-io",
         action="store_true",
         help="Write per-call LLM prompt/response transcripts to turn-XX/llm-io/",
+    )
+    live_parser.add_argument(
+        "--llm-actors",
+        type=str,
+        default=None,
+        help="Comma-separated actors the model plays (no menu, no team)",
     )
 
     # Costs command
@@ -1747,8 +1784,8 @@ def main():
             scenario_dir = target
             runs_dir = scenario_dir / "runs"
             candidates = [
-                d for d in sorted(runs_dir.iterdir())
-                if d.is_dir() and is_run_dirname(d.name) and _is_baseline_completed(d)
+                d for d in iter_run_dirs(runs_dir)
+                if _is_baseline_completed(d)
             ] if runs_dir.is_dir() else []
             if not candidates and not args.report_only:
                 print(f"❌ No completed baseline run found in {runs_dir}")
@@ -2440,7 +2477,14 @@ def main():
         return
 
     if args.command == "resume":
-        from .resume import load_run_state, detect_last_turn, validate_run_directory
+        from .resume import (
+            detect_last_phase,
+            detect_last_turn,
+            get_scenario_source_from_run,
+            load_run_state,
+            next_phase,
+            validate_run_directory,
+        )
 
         print(f"Resuming run: {args.run_dir}")
 
@@ -2454,14 +2498,28 @@ def main():
 
         # Determine resume point
         from_turn = args.from_turn or detect_last_turn(args.run_dir)
-        if from_turn == 0:
+        # A turn interrupted between phases keeps its completed phases on
+        # disk; continue it mid-turn instead of replaying it. ("world" here
+        # cannot happen: detect_last_turn would have counted the turn.)
+        start_phase = "events"
+        partial = detect_last_phase(args.run_dir, from_turn + 1)
+        if partial in ("events", "actors"):
+            start_phase = next_phase(partial)
+        if from_turn == 0 and partial is None:
             print("❌ No completed turns found")
             return 1
         print(f"  Resuming from turn {from_turn}")
 
         # Load state
-        scenario, loaded_turn = load_run_state(args.run_dir, from_turn)
-        print(f"  ✓ Loaded scenario state from turn {loaded_turn}")
+        if from_turn == 0:
+            scenario = load_scenario(get_scenario_source_from_run(args.run_dir))
+            loaded_turn = 0
+            print("  ✓ Loaded initial scenario state (first turn interrupted)")
+        else:
+            scenario, loaded_turn = load_run_state(args.run_dir, from_turn)
+            print(f"  ✓ Loaded scenario state from turn {loaded_turn}")
+        if start_phase != "events":
+            print(f"  → Continuing turn {from_turn + 1} from the {start_phase} phase")
 
         # Restore the dice RNG seed from config.json so rolls stay reproducible.
         # Legacy runs without a seed get a fresh one written back to config.json.
@@ -2550,12 +2608,17 @@ def main():
 
         num_turns = args.turns or scenario.config.max_turns
         start_turn = loaded_turn + 1
+        if start_turn > num_turns and start_phase != "events":
+            # The interrupted turn lies beyond the requested range, but it is
+            # still unfinished business: complete its remaining phases first.
+            num_turns = start_turn
 
         # Update summary.json resume metadata
         summary_path = args.run_dir / "summary.json"
         summary = json.loads(summary_path.read_text())
         summary["resumed_at"] = datetime.now().isoformat()
         summary["resumed_from_turn"] = loaded_turn
+        summary["resumed_from_phase"] = start_phase
         if start_turn <= num_turns:
             summary["status"] = "running"
         summary_path.write_text(json.dumps(summary, indent=2, ensure_ascii=False))
@@ -3034,7 +3097,13 @@ def main():
     output_base = resolve_output_base(args.scenario)
 
     output_manager = OutputManager(scenario, output_base)
-    run_dir = output_manager.start_run()
+    try:
+        run_dir = output_manager.start_run(
+            subdir=getattr(args, "output_subdir", None)
+        )
+    except ValueError as e:
+        print(f"❌ Error: {e}")
+        return 1
     print(f"Output directory: {run_dir.name}\n")
 
     # Create progress tracker
@@ -3106,6 +3175,7 @@ def run_live_menu_command(args, llm_client=None) -> int:
         is_live_run,
         mark_live_run,
         open_live_state,
+        parse_llm_actors,
         read_run_seed,
         run_menu_turn,
     )
@@ -3187,6 +3257,7 @@ def run_live_menu_command(args, llm_client=None) -> int:
             samples=args.samples,
             llm_client=llm_client,
             config_overrides=getattr(args, "override", None),
+            llm_actors=parse_llm_actors(getattr(args, "llm_actors", None)),
         )
     except LiveError as e:
         print(f"❌ Error: {e}")
@@ -3203,7 +3274,13 @@ def run_live_menu_command(args, llm_client=None) -> int:
 
 def run_live_resolve_command(args, llm_client=None, input_fn=input) -> int:
     """Handler for `live-resolve`: settle one live turn from the teams' picks."""
-    from .live import LiveCancelled, LiveError, parse_actor_action_specs, run_resolve_turn
+    from .live import (
+        LiveCancelled,
+        LiveError,
+        parse_actor_action_specs,
+        parse_llm_actors,
+        run_resolve_turn,
+    )
 
     specs: dict[str, str] = {}
     try:
@@ -3211,6 +3288,10 @@ def run_live_resolve_command(args, llm_client=None, input_fn=input) -> int:
     except LiveError as e:
         print(f"❌ Error: {e}")
         return 1
+
+    llm_actors = None
+    if getattr(args, "llm_actors", None):
+        llm_actors = parse_llm_actors(args.llm_actors)
 
     try:
         result = run_resolve_turn(
@@ -3222,6 +3303,7 @@ def run_live_resolve_command(args, llm_client=None, input_fn=input) -> int:
             log_llm_io=args.log_llm_io,
             llm_client=llm_client,
             input_fn=input_fn,
+            llm_actors=llm_actors,
         )
     except LiveCancelled as e:
         print(f"Cancelled: {e}")
@@ -3279,6 +3361,7 @@ def run_live_command(args, input_fn=input, llm_client=None) -> int:
             skip_model_checks=args.skip_model_checks,
             log_llm_io=args.log_llm_io,
             override=args.override,
+            llm_actors=getattr(args, "llm_actors", None),
         )
 
     if args.target is not None:

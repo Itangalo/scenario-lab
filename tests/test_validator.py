@@ -875,3 +875,28 @@ def test_validate_actor_sections_ignores_an_empty_heading(tmp_path):
     )
 
     assert validate_actor_sections(tmp_path) == []
+
+
+def test_validate_markdown_structure_warns_on_sub_h2(tmp_path):
+    """Sub-H2 headings in sectioned files are folded prose, not structure."""
+    from scenario_lab.validator import validate_markdown_structure
+
+    (tmp_path / "metrics.md").write_text(
+        "# Metrics\n\n## m1\nValue text.\n\n### Sub detail\nMore text.\n"
+    )
+    (tmp_path / "events.md").write_text("## E\n**ID:** e1\n")
+
+    warnings = validate_markdown_structure(tmp_path)
+
+    assert len(warnings) == 1
+    assert "metrics.md" in warnings[0]
+    assert "### Sub detail" in warnings[0]
+
+
+def test_validate_markdown_structure_silent_when_clean(tmp_path):
+    from scenario_lab.validator import validate_markdown_structure
+
+    (tmp_path / "metrics.md").write_text("# Metrics\n\n## m1\nValue text.\n")
+    (tmp_path / "events.md").write_text("## E\n**ID:** e1\n")
+
+    assert validate_markdown_structure(tmp_path) == []

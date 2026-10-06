@@ -20,6 +20,8 @@ Version 4 introduced a ledger ("the store") for persistent notes. It should be i
 - It is quite possible that the list of potential events should be stored in the Ledger.
 - It is quite possible that world state and generated prose should be stored in the Ledger.
 
+Concerning metrics: Maybe there should be something like "info_file" as optional data in the schema, allowing to link to richer information in an md file. That could allow metrics to have rich descriptions (reference values etc), and perhaps also allow other data to have richer descriptions.
+
 Improving the Ledger and increasing the use of it may seem like a conflict with "lean into LLM". The intent is the opposite. The Ledger should be used to make prompts cleaner, and off-load arithmetics – things that LLMs are bad at, are not needed for, and often lead to bloated prompts that reduce the quality of the work that LLMs are actually good at. The Ledger should also replace elaborate instructions for repeating information for carrying it forward in the timeline – another task where LLMs capabilities are (somewhat) weak and LLMs don't add anything compared to traditional code.
 
 Concerning storing world narration in the Ledger: This would replace the corresponding md files, and the main point if the shift would be to have one standardized way of storing/retrieving information. I'm not sure that is the best solution. Maybe there should be a simple way to parse md files into the Ledger? In that way, things like an event list or metric descriptions could be viewed and edited by humans in md files, and quickly converted into Ledger entries (and verified in the process).
@@ -29,6 +31,9 @@ Concerning storing world narration in the Ledger: This would replace the corresp
 Before actors describe their actions, there should be optional room for negotiations. Negotiations consists of actors writing short notes to one or more other actors, only viewable by them. The notes are appended to the world description, used when the actors decide their actions.
 
 It should be possible to have negotiations in multiple rounds, allowing reacting to proposals in one way or another (including leaking confidential information to a third actor). It should be possible to restrict whom an actor can write notes to, and it should be possible to dynamically change the number of negotiation rounds – also per actor.
+
+I imagine that negotiations from a technical perspective are done by appending messages to the world descriptions that other actors get to see. Example: All actors get the world description (including triggered events), then actor A might decide to send messages to B and C (while B and C simultaneously make their choices about messages). Then everyone gets updated descriptions, including "Message from A: ..." and possibly "Message from C: ..." for actor B. If there are more negotiation rounds, new messages can be sent as reply or to others in reaction to any previous messages.
+There might be other ways of handling negotiations, but I think this might be the best.
 
 By default negotiations should be turned off, and when building a scenario it should be clear that turning it on will increase time and costs for running the scenario quite a bit.
 
@@ -57,7 +62,9 @@ Note that events are presented in prose for the actors, but they are not resolve
 
 Resuming and branching should be possible after each phase, not just at the end of each turn. In general, these phases should be seen as a cycle, not a start-to-end procedure.
 
-### Deeper mechanics for live games (ECHO 2026-09-27)
+### Deeper mechanics for live games
+
+#### Ending mechanics
 
 Live workshop games (see `docs/LIVE_GAMES.md`) currently end when the facilitator stops after a pre-announced number of turns. That gives a stopping point but no ending. Standard simulations do not need a climax; a live game does. Version 5 should have deeper mechanics for live play, with a clear ending as the central need. No path is chosen yet – the ideas below are candidates, and several can be combined.
 
@@ -74,19 +81,27 @@ Open question that decides the starting point: should the climax be about the wo
 
 A possible minimal form, combining the decisive moment, authored endings and epilogue, is an optional `finale:` block in scenario.yaml (turn, moment, endings with conditions, epilogue on/off), a final-turn prompt variant, the reached ending recorded in the run summary, and a printable finale/epilogue sheet among the live handouts.
 
+#### Mixed player modes
+
+It should be possible to have *some* actors being handled by LLMs in live plays.
+
+#### Online plays
+
+At some point I want to be able to publish a live scenario on a web page, allowing visitors to play. This could be a one-off solution, and doesn't have to be built generically.
+
 ### Improved scenario building
 
 - Better guidelines for how scenario files should be built. In particular, keeping files short is good. Separating descriptions from reasoning in world rules (currently "metric rules") is probably also a good principle.
 - Sign-off documents should be a part of the scenario generation process; created one at a time during the creation process.
-- (ECHO 2026-09-30) A command for updating an existing scenario from events and news found online. It would search for developments since the scenario's start date (or its last update), and propose changes: starting context and fixed facts, metric start values, event probabilities, events that have now happened (to be removed, or pinned into turn 1), and new events worth adding to the catalogue. Proposals should carry source and retrieval date, like the information bank from `frame-scenario`, and be approved by a human before anything is written – the command suggests, it does not edit silently. An update changes the scenario's physics, so runs before and after it are not comparable; the command should record the update (for example as a new version or a dated variant) so batches can be kept apart.
+- A command for updating an existing scenario from events and news found online. It would search for developments since the scenario's start date (or its last update), and propose changes: starting context and fixed facts, metric start values, event probabilities, events that have now happened (to be removed, or pinned into turn 1), and new events worth adding to the catalogue. Proposals should carry source and retrieval date, like the information bank from `frame-scenario`, and be approved by a human before anything is written – the command suggests, it does not edit silently. An update changes the scenario's physics, so runs before and after it are not comparable; the command should record the update (for example as a new version or a dated variant) so batches can be kept apart.
+- Experiment with reading event probabilities from Metaculus or other forecasting platforms and prediction markets (Polymarket, Manifold, Kalshi), when a matching question exists. Things to work out: market probabilities are unconditional and tied to a resolution date, while scenario events are conditional on the simulated world state and priced per turn, so a market figure is probably best used as an anchor for turn 1 or as a prior the Game Master adjusts, rather than as the probability itself. For reproducibility, the figures should be snapshotted into the scenario (with source, question URL and retrieval date) rather than fetched live during a run. A useful first test is comparing the Game Master's own turn-1 pricing against market figures for the events where both exist.
+- When event probabilities or world rules descriptions are made, it shouldn't be assumed that they should be calibrated against today's world. Scenarios may reflect radically different worlds.
 
 ### Other improvements
 
 - It should be possible to put output data from simulation runs in subfolders.
 - The syntax in Markdown files should be more standardized, to give more stable parsing. One suggestion is to always have H2 headers to separate parsing segments, and nothing more.
-- We should evaluate whether it should be possible to run Scenario Lab in "AI agent mode": Instead of calling LLMs at OpenRouter or whatever, subagents called from within Claude Code/OpenCode/similar are used. They are fed with the proper data and prompts, and keep their information between turns, not being used as one-off calls. (This might not be possible to do, but could be worth investigating.) Update 2026-09-17: No, agent mode is dead. Subagents can't be resumed, and their internal states can't be accessed. This track is basically using subagents as one-off LLM calls, which we already have some functionality for. And it is *slow*. **Maybe worth investigating:** Is there a way to have persistent threads in LLM calls? To have one thread for each actor, and just feed updates rather than the full (but compacted) world state? If so, would it be cheaper or quicker?
-- Better and more formalized procedures for benchmarking how well LLMs do as actors, game master or other parts of Scenario Lab.
-- (ECHO 2026-09-29) Experiment with reading event probabilities from Metaculus or other forecasting platforms and prediction markets (Polymarket, Manifold, Kalshi), when a matching question exists. Things to work out: market probabilities are unconditional and tied to a resolution date, while scenario events are conditional on the simulated world state and priced per turn, so a market figure is probably best used as an anchor for turn 1 or as a prior the Game Master adjusts, rather than as the probability itself. For reproducibility, the figures should be snapshotted into the scenario (with source, question URL and retrieval date) rather than fetched live during a run. A useful first test is comparing the Game Master's own turn-1 pricing against market figures for the events where both exist.
+- Better and more formalized procedures for benchmarking how well LLMs do as actors, game master or other parts of Scenario Lab. (Probably rather low priority?)
 - System One models: evaluated September 2026, parked for now – see section below.
 
 ### System One models (evaluated September 2026, parked)
@@ -105,4 +120,3 @@ Findings, qualitative:
 Decision: no integration for now. Using Jev would not be a model swap but a paradigm graft – new request scaffolding, per-event judgment criteria to author and maintain alongside existing prose, a second provider and failure taxonomy, plus vendor risk (revocable trial, unannounced model updates, publication restrictions). Against that: per-run costs are already cents with attention as the binding constraint, the turn clock is dominated by generative steps Jev cannot touch, and the step where the money sits (events pricing) is where Jev tested weakest. The one clean substitution found (statement-relevance judgment, with verbatim quoting moved to deterministic string matching) saves too little to carry the scaffolding.
 
 Revisit if: ensembles grow 10–100x so small per-run savings compound; the product reaches GA with SLAs, versioned models and terms that permit reporting own evals; or a new high-volume narrow-judgment step appears that is shaped like relevance checking rather than event pricing. Probe scripts and raw responses were kept out of the repo; rerun from scratch if revisited.
-

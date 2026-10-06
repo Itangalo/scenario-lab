@@ -9,6 +9,7 @@ from scenario_lab.calibration import analyze_runs, format_analysis_report
 def _create_run(base_dir: Path, run_name: str, history: list[dict], events_by_turn: dict[int, list[dict]]):
     run_dir = base_dir / "runs" / run_name
     run_dir.mkdir(parents=True)
+    (run_dir / "config.json").write_text(json.dumps({"name": "Test Scenario"}), encoding="utf-8")
 
     total_turns = history[-1]["turn"] if history else 0
     final_metrics = history[-1]["metrics"] if history else {}

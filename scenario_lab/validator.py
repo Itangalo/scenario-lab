@@ -1347,5 +1347,220 @@ def validate_scenario(scenario_path: Path) -> ValidationResult:
     store_errors, store_warnings = validate_store(scenario)
     errors.extend(store_errors)
     warnings.extend(store_warnings)
+    info_errors, info_warnings = validate_store_info_files(scenario, scenario_path)
+    errors.extend(info_errors)
+    warnings.extend(info_warnings)
+    nego_errors, nego_warnings = validate_negotiations(scenario)
+    errors.extend(nego_errors)
+    warnings.extend(nego_warnings)
+    anchor_errors, anchor_warnings = validate_market_anchors(scenario)
+    errors.extend(anchor_errors)
+    warnings.extend(anchor_warnings)
+    warnings.extend(validate_markdown_structure(scenario_path))
 
     return ValidationResult(errors, warnings)
+
+
+def validate_markdown_structure(scenario_path: Path) -> List[str]:
+    """Warn about sub-H2 headers in files the loader segments by H2.
+
+    `metrics.md` and `events.md` are split into records at `##` headings; a
+    `###` heading inside a record is not structure the parser sees -- it is
+    folded into the surrounding prose and rendered to prompts as-is. That is
+    sometimes deliberate emphasis, but usually an author expecting sections,
+    so it warns rather than errors. One H1 title plus H2 sections is the
+    standard; anything deeper is prose formatting, not structure.
+    """
+    scenario_dir = scenario_path if scenario_path.is_dir() else scenario_path.parent
+    while not (scenario_dir / "metrics.md").exists() and scenario_dir != scenario_dir.parent:
+        scenario_dir = scenario_dir.parent
+
+    warnings: List[str] = []
+    for filename in ("metrics.md", "events.md"):
+        path = scenario_dir / filename
+        if not path.is_file():
+            continue
+        try:
+            lines = path.read_text(encoding="utf-8").splitlines()
+        except OSError:
+            continue
+        deep = sorted({line.strip() for line in lines if line.strip().startswith("###")})
+        if deep:
+            shown = ", ".join(repr(h) for h in deep[:3])
+            more = f" (+{len(deep) - 3} more)" if len(deep) > 3 else ""
+            warnings.append(
+                f"{filename}: {len(deep)} sub-H2 heading(s) ({shown}{more}) are "
+                "folded into surrounding prose, not parsed as structure"
+            )
+    return warnings
+
+
+def validate_market_anchors(scenario: Scenario) -> Tuple[List[str], List[str]]:
+    """Check the optional Metaculus anchors on events.
+
+    An anchor is a snapshot (URL, retrieval date, community figure), never a
+    live fetch: reproducibility demands the figure a run priced against stays
+    in the file. A mistyped URL or a figure no parser can read silently breaks
+    the update skill's re-check, so malformed anchors are errors, not
+    warnings. An event without an anchor is fine -- most events have no
+    matching market question.
+    """
+    errors: List[str] = []
+    warnings: List[str] = []
+    for event in scenario.events:
+        url = event.metaculus_url.strip()
+        retrieved = event.metaculus_retrieved.strip()
+        figure = event.metaculus_probability.strip()
+        if not url and not retrieved and not figure:
+            continue
+        if not url:
+            errors.append(
+                f"Event '{event.id}' has market data but no Metaculus URL"
+            )
+            continue
+        if "metaculus.com/questions/" not in url:
+            errors.append(
+                f"Event '{event.id}' Metaculus URL does not point at a "
+                f"Metaculus question: '{url}'"
+            )
+        if not retrieved:
+            errors.append(f"Event '{event.id}' has a Metaculus URL but no retrieval date")
+        else:
+            try:
+                datetime.strptime(retrieved, "%Y-%m-%d")
+            except ValueError:
+                errors.append(
+                    f"Event '{event.id}' retrieval date '{retrieved}' is not YYYY-MM-DD"
+                )
+        if not figure:
+            warnings.append(
+                f"Event '{event.id}' has a Metaculus URL but no community figure: "
+                "record one (e.g. '34%') so updates can compare against it"
+            )
+        else:
+            try:
+                value = float(figure.rstrip("%").strip())
+            except ValueError:
+                errors.append(
+                    f"Event '{event.id}' market probability '{figure}' does not parse"
+                )
+            else:
+                if not 0 <= value <= 100:
+                    errors.append(
+                        f"Event '{event.id}' market probability '{figure}' "
+                        "is outside 0-100%"
+                    )
+    return errors, warnings
+
+
+def validate_negotiations(scenario: Scenario) -> Tuple[List[str], List[str]]:
+    """Check the optional negotiations block against the actor list.
+
+    Rounds multiply the actors phase's LLM calls (one per participant per
+    round, plus the action write-up), so enabling them warns about cost even
+    when everything is well-formed. A custom actor template that predates
+    negotiations silently drops every inbox -- Jinja renders the unknown
+    variable as empty text -- which is warned about, not errored: the run
+    still works, the notes just never arrive.
+    """
+    errors: List[str] = []
+    warnings: List[str] = []
+    cfg = scenario.config.negotiations
+    if not cfg.enabled:
+        unknown_on = [
+            key
+            for key in ("contacts", "actor_rounds")
+            if getattr(cfg, key)
+        ]
+        if unknown_on or cfg.rounds != 1 or cfg.max_rounds != 1:
+            warnings.append(
+                "negotiations declares rounds/contacts while disabled: "
+                "nothing runs until 'enabled: true'."
+            )
+        return errors, warnings
+
+    actors = set(scenario.config.actor_ids)
+    if not isinstance(cfg.rounds, int) or cfg.rounds < 1:
+        errors.append("negotiations 'rounds' must be an integer of at least 1")
+    if not isinstance(cfg.max_rounds, int) or cfg.max_rounds < 1:
+        errors.append("negotiations 'max_rounds' must be an integer of at least 1")
+    elif isinstance(cfg.rounds, int) and cfg.max_rounds < cfg.rounds:
+        errors.append("negotiations 'max_rounds' must cover 'rounds'")
+    for sender, reachable in cfg.contacts.items():
+        if sender not in actors:
+            errors.append(f"negotiations contacts names unknown actor '{sender}'")
+        for other in reachable:
+            if other not in actors:
+                errors.append(
+                    f"negotiations contacts for '{sender}' names unknown actor '{other}'"
+                )
+            elif other == sender:
+                warnings.append(
+                    f"negotiations contacts for '{sender}' includes itself: "
+                    "self-sends are rejected at delivery"
+                )
+    for actor_id, actor_rounds in cfg.actor_rounds.items():
+        if actor_id not in actors:
+            errors.append(f"negotiations actor_rounds names unknown actor '{actor_id}'")
+        elif not isinstance(actor_rounds, int) or actor_rounds < 0:
+            errors.append(
+                f"negotiations actor_rounds for '{actor_id}' must be an integer of 0 or more"
+            )
+    if isinstance(cfg.rounds, int) and isinstance(cfg.max_rounds, int):
+        calls = len(actors) * max(cfg.rounds, 1)
+        warnings.append(
+            f"negotiations enabled: roughly {calls} extra LLM calls per turn "
+            f"({len(actors)} actors x {cfg.rounds} round(s), up to {cfg.max_rounds}), "
+            "plus the action write-up. Expect multiplied time and cost."
+        )
+    actor_template = scenario.custom_user_prompts.get("actor", "")
+    if actor_template and "negotiation_messages" not in actor_template:
+        warnings.append(
+            "negotiations enabled but the custom user-prompts/actor.md never "
+            "renders 'negotiation_messages': inboxes will be silently empty. "
+            "Add the block from the default template."
+        )
+    return errors, warnings
+
+
+def validate_store_info_files(scenario: Scenario, scenario_path: Path) -> Tuple[List[str], List[str]]:
+    """Check each table's ``info_file`` resolves inside the scenario directory.
+
+    Existence is an error (a dangling pointer breaks the custody split: the
+    prose the prompt was meant to render is silently absent). A file with no
+    H2 sections is a warning (readable, but no per-record slice exists to
+    render, so turn prompts cannot address a single record).
+    """
+    from .store import read_info_sections, resolve_info_path
+
+    errors: List[str] = []
+    warnings: List[str] = []
+    scenario_dir = Path(scenario_path)
+    for name, table in scenario.config.store.tables.items():
+        if not table.info_file:
+            continue
+        try:
+            target = resolve_info_path(scenario_dir, table.info_file)
+        except ValueError as err:
+            errors.append(f"store table '{name}': {err}")
+            continue
+        if not target.is_file():
+            errors.append(
+                f"store table '{name}': info_file '{table.info_file}' not found "
+                f"in scenario directory"
+            )
+            continue
+        try:
+            sections = read_info_sections(target)
+        except OSError as err:
+            errors.append(
+                f"store table '{name}': cannot read info_file "
+                f"'{table.info_file}': {err}"
+            )
+            continue
+        if not sections:
+            warnings.append(
+                f"store table '{name}': info_file '{table.info_file}' has no "
+                f"'## ' sections, so no per-record slice can be rendered"
+            )
+    return errors, warnings

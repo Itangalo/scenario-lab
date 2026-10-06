@@ -106,6 +106,12 @@ class StoreTable:
     id_prefix: str = "R"
     reporting_required: bool = False      # every writer-owned column, every turn
     initial: list[dict[str, Any]] = field(default_factory=list)  # seeded at load
+    # Optional pointer at a markdown file with rich per-record prose (H2
+    # sections, one per record), kept relative to the scenario directory.
+    # Ledger cells stay typed and aggregatable; the file holds what does not
+    # fit in a cell (descriptions, reference values). The LLM reads the prose
+    # but never re-emits it -- the same custody split as world narration.
+    info_file: Optional[str] = None
 
     @property
     def id_column(self) -> str:
@@ -169,11 +175,14 @@ class StoreSchema:
                 body["reporting_required"] = True
             if table.initial:
                 body["initial"] = [dict(entry) for entry in table.initial]
+            if table.info_file:
+                body["info_file"] = table.info_file
             out[name] = body
         return out
 
 
-_TABLE_KEYS = {"scope", "columns", "reporting_required", "write_form", "initial"}
+_TABLE_KEYS = {"scope", "columns", "reporting_required", "write_form", "initial",
+               "info_file"}
 _COLUMN_KEYS = {"owner", "type", "required", "reporting_required",
                 "range", "on_out_of_range",
                 "values", "from", "map", "when_reached", "else"}
@@ -264,6 +273,27 @@ def parse_store_schema(data: object) -> StoreSchema:
         # a dirty seed fails the load instead of the first turn.
         initial = _parse_initial(name, scope, body.get("initial"))
 
+        # Rich prose lives in a file, linked from the schema. Type-checked
+        # here; existence and H2 structure are validated where the scenario
+        # directory is known (validator), since this parser never sees a path.
+        info_file = body.get("info_file")
+        if info_file is not None:
+            if not isinstance(info_file, str) or not info_file.strip():
+                raise StoreSchemaError(
+                    f"store table '{name}': 'info_file' must be a non-empty path"
+                )
+            info_file = info_file.strip()
+            if info_file.startswith("/") or info_file.startswith("~"):
+                raise StoreSchemaError(
+                    f"store table '{name}': 'info_file' must be relative to the "
+                    f"scenario directory, got '{info_file}'"
+                )
+            if ".." in info_file.split("/"):
+                raise StoreSchemaError(
+                    f"store table '{name}': 'info_file' must not escape the "
+                    f"scenario directory, got '{info_file}'"
+                )
+
         columns: dict[str, StoreColumn] = {}
         for col_name, spec in raw_columns.items():
             columns[col_name] = _parse_column(name, col_name, spec)
@@ -293,6 +323,7 @@ def parse_store_schema(data: object) -> StoreSchema:
         tables[name] = StoreTable(
             name=name, scope=scope, columns=columns, id_prefix=prefixes[name],
             reporting_required=table_reporting, initial=initial,
+            info_file=info_file,
         )
 
     return StoreSchema(tables=tables)
@@ -1575,6 +1606,98 @@ class StoreView:
 
 
 # --------------------------------------------------------------------------
+# Mass-read: selected data across turns, for analysis of completed runs
+# --------------------------------------------------------------------------
+
+
+def _history_snapshot(turn_dir: object) -> Optional[dict]:
+    """The freshest store snapshot in a turn directory, if any.
+
+    ``4-world-store.json`` holds the whole store after the Game Master step;
+    per-actor ``2-actors/*-store.json`` files are written earlier in the turn
+    and agree on contents. Prefer the world file; fall back to the first actor
+    file found. Snapshots are self-describing (fields plus stamped derived
+    values), so no schema is needed to read them back.
+    """
+    import json
+    from pathlib import Path
+
+    turn_dir = Path(turn_dir)
+    world_file = turn_dir / "4-world-store.json"
+    if world_file.is_file():
+        try:
+            return json.loads(world_file.read_text(encoding="utf-8"))
+        except ValueError:
+            return None
+    actors_dir = turn_dir / "2-actors"
+    if actors_dir.is_dir():
+        for state_file in sorted(actors_dir.glob("*-store.json")):
+            try:
+                return json.loads(state_file.read_text(encoding="utf-8"))
+            except ValueError:
+                continue
+    return None
+
+
+def read_table_history(
+    run_dir: object,
+    table: str,
+    record_id: Optional[str] = None,
+    column: Optional[str] = None,
+    turns: Optional[list[int] | tuple[int, ...]] = None,
+) -> list[dict[str, Any]]:
+    """One table's records across a run's completed turns.
+
+    Returns ``[{"turn": N, "records": [{id, fields, derived}, ...]}, ...]``
+    in turn order, reading each turn's persisted snapshot. With ``record_id``
+    and ``column``, returns ``[{"turn": N, "value": ...}, ...]`` for that
+    cell instead (stored fields first, stamped derived values second, missing
+    as None -- a removed or never-present record reads as None, not as zero).
+    ``turns`` optionally narrows to those turn numbers. Turns without any
+    snapshot are skipped, so a run that predates the store still yields the
+    turns that have one.
+    """
+    import re
+    from pathlib import Path
+
+    wanted = set(turns) if turns is not None else None
+    series: list[dict[str, Any]] = []
+    for turn_dir in sorted(Path(run_dir).glob("turn-*")):
+        match = re.fullmatch(r"turn-(\d+)", turn_dir.name)
+        if not match:
+            continue
+        turn = int(match.group(1))
+        if wanted is not None and turn not in wanted:
+            continue
+        snapshot = _history_snapshot(turn_dir)
+        if snapshot is None:
+            continue
+        entries = [
+            e for e in (snapshot.get("records") or [])
+            if e.get("table") == table and e.get("removed_turn") is None
+        ]
+        if record_id is not None and column is not None:
+            value: Any = None
+            for entry in entries:
+                if str(entry.get("id", "")).upper() == record_id.strip().upper():
+                    fields = entry.get("fields") or {}
+                    derived = entry.get("derived") or {}
+                    value = fields.get(column, derived.get(column))
+                    break
+            series.append({"turn": turn, "value": value})
+        else:
+            series.append({
+                "turn": turn,
+                "records": [
+                    {"id": e.get("id"), "fields": dict(e.get("fields") or {}),
+                     "derived": dict(e.get("derived") or {})}
+                    for e in entries
+                ],
+            })
+    return series
+
+
+# --------------------------------------------------------------------------
 # Artifacts
 # --------------------------------------------------------------------------
 
@@ -1633,6 +1756,57 @@ def render_store_file(
 def world_tables(schema: StoreSchema) -> list[str]:
     """Names of the run-owned tables, in declaration order."""
     return [name for name, table in schema.tables.items() if table.scope == "world"]
+
+
+# --------------------------------------------------------------------------
+# Info files: rich prose linked from the schema
+# --------------------------------------------------------------------------
+
+_H2_RE = re.compile(r"^##\s+(.+?)\s*$")
+
+
+def resolve_info_path(scenario_dir: object, info_file: str) -> object:
+    """Resolve a table's ``info_file`` against the scenario directory.
+
+    The schema parser already rejects absolute paths and ``..`` segments, so
+    this is the second half of the guard: resolve, then confirm the result
+    stays inside the scenario directory (symlinks included).
+    """
+    from pathlib import Path
+
+    base = Path(scenario_dir).resolve()
+    target = (base / info_file).resolve()
+    if target != base and base not in target.parents:
+        raise StoreSchemaError(
+            f"'info_file' '{info_file}' escapes the scenario directory"
+        )
+    return target
+
+
+def read_info_sections(path: object) -> dict[str, str]:
+    """Split an info file into ``{H2 title: body}`` sections.
+
+    H2-only, matching the v5 markdown standard: one section per record, headed
+    by the record id or name. Content before the first H2 is ignored (title
+    preamble). Titles are matched case-insensitively by callers.
+    """
+    from pathlib import Path
+
+    sections: dict[str, str] = {}
+    current: Optional[str] = None
+    buf: list[str] = []
+    for line in Path(path).read_text(encoding="utf-8").splitlines():
+        match = _H2_RE.match(line)
+        if match:
+            if current is not None:
+                sections[current] = "\n".join(buf).strip()
+            current = match.group(1).strip()
+            buf = []
+        elif current is not None:
+            buf.append(line)
+    if current is not None:
+        sections[current] = "\n".join(buf).strip()
+    return sections
 
 
 # --------------------------------------------------------------------------
@@ -2244,6 +2418,70 @@ def self_test() -> int:
             failures.append(f"schema '{label}' was accepted and should not have been")
         except StoreSchemaError:
             pass
+
+    # Info files: linked prose, not cells.
+    linked = parse_store_schema({"m": {"scope": "actor", "info_file": "docs/measures.md",
+                                       "columns": {"id": {"owner": "system"},
+                                                   "n": {"owner": "actor"}}}})
+    check("info_file parsed", linked.tables["m"].info_file, "docs/measures.md")
+    check("info_file in to_dict", linked.to_dict()["m"].get("info_file"),
+          "docs/measures.md")
+    for label, bad in (
+        ("absolute info_file", {"m": {"scope": "actor", "info_file": "/etc/measures.md",
+                                      "columns": {"id": {"owner": "system"},
+                                                  "n": {"owner": "actor"}}}}),
+        ("escaping info_file", {"m": {"scope": "actor", "info_file": "../measures.md",
+                                      "columns": {"id": {"owner": "system"},
+                                                  "n": {"owner": "actor"}}}}),
+        ("empty info_file", {"m": {"scope": "actor", "info_file": "  ",
+                                   "columns": {"id": {"owner": "system"},
+                                               "n": {"owner": "actor"}}}}),
+    ):
+        try:
+            parse_store_schema(bad)
+            failures.append(f"schema '{label}' was accepted and should not have been")
+        except StoreSchemaError:
+            pass
+    import tempfile
+    from pathlib import Path as _Path
+    with tempfile.TemporaryDirectory() as tmp:
+        info = _Path(tmp) / "measures.md"
+        info.write_text("# Measures\n\n## M1\nLarge build.\n\n## M2\nSmall pilot.\n",
+                        encoding="utf-8")
+        sections = read_info_sections(info)
+        check("info sections split", sorted(sections), ["M1", "M2"])
+        check("info section body", sections["M1"], "Large build.")
+        check("info path resolves", resolve_info_path(tmp, "measures.md"), info.resolve())
+        try:
+            resolve_info_path(tmp, "../outside.md")
+            failures.append("resolve_info_path accepted an escaping path")
+        except StoreSchemaError:
+            pass
+
+    # Mass-read across turns.
+    with tempfile.TemporaryDirectory() as run_tmp:
+        run = _Path(run_tmp)
+        for turn_no, level in ((1, 10), (2, 12)):
+            turn_dir = run / f"turn-{turn_no:02d}"
+            turn_dir.mkdir()
+            turn_dir.joinpath("4-world-store.json").write_text(json.dumps({
+                "turn": turn_no, "counters": {},
+                "records": [
+                    {"id": "M1", "table": "measures", "actor": "eu",
+                     "fields": {"cost": level}, "derived": {},
+                     "added_turn": 1, "removed_turn": None},
+                ],
+            }), encoding="utf-8")
+        (run / "turn-03").mkdir()
+        table_series = read_table_history(run_tmp, "measures")
+        check("history turns", [s["turn"] for s in table_series], [1, 2])
+        check("history skips snapshot-less turns", len(table_series), 2)
+        cell_series = read_table_history(run_tmp, "measures", "M1", "cost")
+        check("history cell values", [s["value"] for s in cell_series], [10, 12])
+        missing = read_table_history(run_tmp, "measures", "M9", "cost")
+        check("history missing reads None", [s["value"] for s in missing], [None, None])
+        narrowed = read_table_history(run_tmp, "measures", turns=[2])
+        check("history turn filter", [s["turn"] for s in narrowed], [2])
 
     # Reference checking against a template.
     errors, warnings = check_store_references(

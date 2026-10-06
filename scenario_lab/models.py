@@ -114,6 +114,14 @@ class Event:
     # prompt entirely and rejects any candidate for it that turn. Prose
     # conditions the metrics cannot express stay in `condition` for the LLM.
     eligible: str = ""
+    # Optional forecasting anchor: a Metaculus question tracking the same
+    # outcome, snapshotted (never fetched live). The figure is a prior the
+    # Game Master adjusts to the simulated world state -- market odds are
+    # unconditional and dated, scenario events conditional and per-turn -- and
+    # the pointer lets the update skill re-check the market consistently.
+    metaculus_url: str = ""
+    metaculus_retrieved: str = ""  # YYYY-MM-DD
+    metaculus_probability: str = ""  # community figure at retrieval, e.g. "34%"
 
 
 STATEMENT_TIERS = ("position", "commitment", "identity")
@@ -465,6 +473,33 @@ class EmergentEventsConfig:
 
 
 @dataclass
+class NegotiationsConfig:
+    """Optional private rounds before actors describe their actions.
+
+    Off by default: each round costs one LLM call per participating actor, so
+    turning this on multiplies the actors phase's time and cost. When enabled,
+    actors exchange short private notes (only the recipients see each one)
+    for up to ``max_rounds`` rounds; the round stops early when a round
+    delivers nothing. Notes are appended to what each recipient sees -- the
+    VERSION 5 mechanism -- and a recipient may quote one to a third actor, so
+    leaking is possible by design, not by accident.
+
+    ``contacts`` optionally restricts who may write to whom (actor id to
+    reachable actor ids); absent means any actor may write to any other.
+    ``actor_rounds`` optionally sets how many rounds one actor joins (default
+    ``rounds``); 0 means the actor skips negotiations and only sees the final
+    actions. Python owns delivery lists and persistence only; content is never
+    judged.
+    """
+
+    enabled: bool = False
+    rounds: int = 1
+    max_rounds: int = 1
+    contacts: dict[str, list[str]] = field(default_factory=dict)
+    actor_rounds: dict[str, int] = field(default_factory=dict)
+
+
+@dataclass
 class RuleEvolutionConfig:
     """Guardrails for how freely metric rules may evolve."""
 
@@ -579,6 +614,7 @@ class ScenarioConfig:
     # LLM settings
     llm: LLMConfig = None
     emergent_events: EmergentEventsConfig = field(default_factory=EmergentEventsConfig)
+    negotiations: NegotiationsConfig = field(default_factory=NegotiationsConfig)
     rule_evolution: RuleEvolutionConfig = field(default_factory=RuleEvolutionConfig)
     # Who generated language is for (audience/tone for menus and narrative).
     # Presentation metadata; empty means prompts render as before.

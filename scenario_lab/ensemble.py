@@ -58,13 +58,12 @@ def _load_json_safe(path: Path) -> Any:
 
 def _discover_completed_runs(scenario_dir: Path, max_runs: int | None = None) -> list[Path]:
     """Return sorted run-* directories from <scenario_dir>/runs/ that have summary.json."""
+    from .output import iter_run_dirs
+
     runs_dir = scenario_dir / "runs"
     if not runs_dir.exists():
         return []
-    candidates = sorted(
-        d for d in runs_dir.iterdir()
-        if d.is_dir() and is_run_dirname(d.name)
-    )
+    candidates = iter_run_dirs(runs_dir)
     if max_runs is not None:
         candidates = candidates[-max_runs:]
     completed: list[Path] = []

@@ -20,6 +20,7 @@ from typing import Optional
 
 from .actor_sampling import is_run_dir, load_opening_state, load_triggered_events
 from .models import Scenario, TurnResult
+from .output import iter_run_dirs
 
 MENU_VERSION = 1
 LIVE_RUN_PREFIX = "live-"
@@ -112,6 +113,23 @@ def menu_json_path(run_dir: Path, turn: int) -> Path:
     return live_dir(run_dir, turn) / MENU_FILENAME
 
 
+def parse_llm_actors(raw: Optional[str]) -> list[str]:
+    """Split a comma-separated --llm-actors flag into actor ids."""
+    if not raw:
+        return []
+    return [token.strip() for token in raw.split(",") if token.strip()]
+
+
+def recorded_llm_actors(run_dir: Path, turn: int) -> list[str]:
+    """Actors the model played when this turn's menus were made (empty if none)."""
+    try:
+        data = json.loads(menu_json_path(run_dir, turn).read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return []
+    recorded = data.get("llm_actors", [])
+    return [str(a) for a in recorded] if isinstance(recorded, list) else []
+
+
 def recorded_overrides(run_dir: Path, turn: int) -> list[str]:
     """Raw `--override` flags recorded with a turn's menus (empty if none)."""
     try:
@@ -155,6 +173,7 @@ def write_menus(
     max_options: int = 6,
     samples: int = 4,
     config_overrides: Optional[list[str]] = None,
+    llm_actors: Optional[list[str]] = None,
 ) -> Path:
     """Persist menus machine-readably for shorthand resolution. Returns path.
 
@@ -162,7 +181,9 @@ def write_menus(
     turn's menus with identical settings and no new facilitator input.
     ``config_overrides`` (raw ``--override key=value`` flags) ride along for
     the same reason: later turns run in separate processes and must resolve
-    under the same settings (e.g. output_language).
+    under the same settings (e.g. output_language). ``llm_actors`` records
+    which actors the model plays that turn (no menu, no team), so resolve and
+    the chained next menus keep the same mixed mode without new flags.
     """
     payload = {
         "version": MENU_VERSION,
@@ -171,6 +192,7 @@ def write_menus(
         "max_options": max_options,
         "samples": samples,
         "config_overrides": list(config_overrides or []),
+        "llm_actors": list(llm_actors or []),
         "menus": {aid: menu.to_dict() for aid, menu in menus.items()},
     }
     path = menu_json_path(run_dir, turn)
@@ -417,7 +439,7 @@ def write_handouts(
     triggered_events: list[dict],
     menus: dict[str, ActorMenu],
 ) -> list[Path]:
-    """Write briefing.md plus one menu sheet per team. Returns written paths."""
+    """Write briefing.md plus one menu sheet per human team. Returns written paths."""
     directory = live_dir(run_dir, turn)
     paths = []
     briefing = directory / "briefing.md"
@@ -429,13 +451,19 @@ def write_handouts(
     metrics_lines = [
         f"{m.id}: {m.value:g}" for m in scenario.metrics.metrics.values()
     ]
-    for actor_id in scenario.actors:
+    # Menus key the sheets: model-played actors have no menu and no team, so
+    # they get no sheet (this also keeps stale sheets from surviving a mode
+    # change between turns).
+    for actor_id, menu in menus.items():
         sheet = directory / f"menu-{actor_id}.md"
         sheet.write_text(
-            render_actor_handout(menus[actor_id], time_period, metrics_lines),
+            render_actor_handout(menu, time_period, metrics_lines),
             encoding="utf-8",
         )
         paths.append(sheet)
+    for stale in directory.glob("menu-*.md"):
+        if stale.name.removeprefix("menu-").removesuffix(".md") not in menus:
+            stale.unlink()
     return paths
 
 
@@ -542,13 +570,17 @@ def run_menu_turn(
     samples: int = 4,
     llm_client=None,
     config_overrides: Optional[list[str]] = None,
+    llm_actors: Optional[list[str]] = None,
 ) -> dict[str, ActorMenu]:
-    """Roll events (once) and generate every actor's menu for a live turn.
+    """Roll events (once) and generate every human team's menu for a live turn.
 
-    Menus generate concurrently across actors; each is persisted to
-    ``turn-NN/live/`` (menu.json plus printable sheets) as it lands, and the
-    invocation's costs merge into the run's costs.json. ``llm_client`` is a
-    test seam (a real run passes None and builds routers from config).
+    Actors in ``llm_actors`` are played by the model: they get no menu and no
+    handout, and the choice is recorded in menu.json so resolve and the
+    chained next menus keep the same mixed mode. Menus generate concurrently
+    across actors; each is persisted to ``turn-NN/live/`` (menu.json plus
+    printable sheets) as it lands, and the invocation's costs merge into the
+    run's costs.json. ``llm_client`` is a test seam (a real run passes None
+    and builds routers from config).
     """
     from .loader import get_time_period
     from .orchestrator import Orchestrator
@@ -561,6 +593,14 @@ def run_menu_turn(
     # (notably the integrity checker's pending-turn leniency).
     mark_live_run(run_dir)
 
+    model_played = list(llm_actors or [])
+    unknown = sorted(set(model_played) - set(scenario.actors))
+    if unknown:
+        raise LiveError(
+            f"Unknown actor(s) in llm-actors: {', '.join(unknown)} "
+            f"(this scenario has: {', '.join(scenario.actors)})"
+        )
+
     orchestrator = Orchestrator(
         scenario, llm_client=llm_client, output_manager=output_manager
     )
@@ -570,7 +610,7 @@ def run_menu_turn(
         triggered_events = ensure_turn_events(
             orchestrator, output_manager, run_dir, turn
         )
-        actor_ids = list(scenario.actors.keys())
+        actor_ids = [aid for aid in scenario.actors if aid not in model_played]
         menus: dict[str, ActorMenu] = {}
 
         def _generate(actor_id: str) -> ActorMenu:
@@ -605,6 +645,7 @@ def run_menu_turn(
         write_menus(
             run_dir, turn, menus, strategy, max_options, samples,
             config_overrides=config_overrides,
+            llm_actors=model_played,
         )
         time_period = get_time_period(
             scenario.config.start_date, turn, scenario.config.time_scale
@@ -772,19 +813,23 @@ def run_resolve_turn(
     llm_client=None,
     auto_menu: bool = True,
     input_fn=input,
+    llm_actors: Optional[list[str]] = None,
 ) -> TurnResult:
     """Resolve a live turn from the teams' picks.
 
     Loads the recorded menu (picks are meaningless without the printed
-    sheets), resolves every actor to exactly one pick – missing actors are
-    collected through the interactive picker when allowed – wraps each pick
-    into a minimal valid actor document, and runs the standard rules →
-    metrics → referee → summary chain with identical persistence.
+    sheets), resolves every human-played actor to exactly one pick – missing
+    actors are collected through the interactive picker when allowed – wraps
+    each pick into a minimal valid actor document, generates actions for any
+    model-played actors with the same call a simulated turn uses, and runs
+    the standard rules → metrics → referee → summary chain with identical
+    persistence. ``llm_actors`` defaults to the menu.json record, so a mixed
+    game keeps its mode without repeating the flag every turn.
 
     When ``auto_menu`` holds (default), the next turn's menus generate
     immediately with the recorded menu settings, so the facilitator's next
     step is printing handouts rather than running another command. Skipped
-    past ``max_turns`` or when a termination condition ends the run.
+    past ``max_turns`` or after a termination condition fires.
     """
     from .cli import apply_config_overrides, apply_model_override
     from .loader import get_time_period
@@ -806,13 +851,21 @@ def run_resolve_turn(
         scenario.config.logging.llm_io = True
 
     actor_ids = list(scenario.actors.keys())
+    model_played = list(llm_actors) if llm_actors is not None else recorded_llm_actors(run_dir, turn)
+    unknown_actors = sorted(set(model_played) - set(actor_ids))
+    if unknown_actors:
+        raise LiveError(
+            f"Unknown actor(s) in llm-actors: {', '.join(unknown_actors)} "
+            f"(this run has: {', '.join(actor_ids)})"
+        )
     unknown = sorted(set(specs) - set(actor_ids))
     if unknown:
         raise LiveError(
             f"Unknown actor(s): {', '.join(unknown)} "
             f"(this run has: {', '.join(actor_ids)})"
         )
-    menu_missing = sorted(set(actor_ids) - set(menus))
+    human_played = [aid for aid in actor_ids if aid not in model_played]
+    menu_missing = sorted(set(human_played) - set(menus))
     if menu_missing:
         raise LiveError(
             f"No menu recorded for: {', '.join(menu_missing)}. "
@@ -821,12 +874,17 @@ def run_resolve_turn(
 
     picks: dict[str, Pick] = {}
     for actor_id, spec in specs.items():
+        if actor_id in model_played:
+            raise LiveError(
+                f"Pick given for {actor_id}, which is model-played this turn: "
+                "drop the pick or the llm-actors flag."
+            )
         try:
             picks[actor_id] = resolve_pick(spec, menus[actor_id])
         except LiveError as e:
             raise LiveError(str(e))
 
-    missing = [aid for aid in actor_ids if aid not in picks]
+    missing = [aid for aid in human_played if aid not in picks]
     if missing:
         if not interactive:
             raise LiveError(
@@ -846,6 +904,19 @@ def run_resolve_turn(
         print(f"Resolving turn {turn} from team picks...")
         actor_outputs: dict[str, str] = {}
         for actor_id in actor_ids:
+            if actor_id in model_played:
+                print(f"  … {scenario.actors[actor_id].name} (model-played, waiting)...", flush=True)
+                content, response, pending = orchestrator.generate_actor_action(
+                    actor_id, turn, triggered_events
+                )
+                if pending is not None:
+                    orchestrator._llm_io_context.pending = pending
+                orchestrator._record_llm_call(turn, f"actor:{actor_id}", response)
+                actor_outputs[actor_id] = content
+                scenario.actors[actor_id].last_actions = content
+                output_manager.save_actor_output(turn, actor_id, content)
+                print(f"  → {scenario.actors[actor_id].name}: model-played")
+                continue
             pick = picks[actor_id]
             document = wrap_human_action(pick.title, pick.text, store_tables)
             actor_outputs[actor_id] = document
@@ -960,6 +1031,9 @@ def _chain_next_menus(
     chained_overrides = recorded.get("config_overrides", [])
     if not isinstance(chained_overrides, list):
         chained_overrides = []
+    chained_llm = recorded.get("llm_actors", [])
+    if not isinstance(chained_llm, list):
+        chained_llm = []
 
     print(f"\nPreparing turn {next_turn} menus ({strategy}) – no input needed...")
     next_orchestrator = Orchestrator(
@@ -969,7 +1043,7 @@ def _chain_next_menus(
         triggered_events = ensure_turn_events(
             next_orchestrator, output_manager, run_dir, next_turn
         )
-        actor_ids = list(scenario.actors.keys())
+        actor_ids = [aid for aid in scenario.actors if aid not in chained_llm]
         next_menus: dict[str, ActorMenu] = {}
         for actor_id in actor_ids:
             menu = generate_menu(
@@ -986,6 +1060,7 @@ def _chain_next_menus(
         write_menus(
             run_dir, next_turn, next_menus, strategy, max_options, samples,
             config_overrides=chained_overrides,
+            llm_actors=list(chained_llm),
         )
         time_period = get_time_period(
             scenario.config.start_date, next_turn, scenario.config.time_scale
@@ -1105,8 +1180,8 @@ def find_live_runs(scenario_path: Path) -> list[LiveRun]:
         candidates = sorted(
             (
                 d
-                for d in runs_dir.iterdir()
-                if d.is_dir() and d.name.startswith(LIVE_RUN_PREFIX)
+                for d in iter_run_dirs(runs_dir)
+                if d.name.startswith(LIVE_RUN_PREFIX)
             ),
             key=lambda d: d.stat().st_mtime,
             reverse=True,

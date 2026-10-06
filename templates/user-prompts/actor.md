@@ -51,7 +51,17 @@ Some records are **held for you** and carry forward on their own. You do not res
 The only thing that changes any of this is a JSON block under `## Store changes` in your answer.
 {% endif %}
 
+{% if negotiation_messages %}
+## Private messages to you
+
+The following notes were sent to you privately during negotiations. Only you saw each one — but a sender's privacy ends at your discretion, and quoting one onward is allowed.
+
+{{negotiation_messages}}
+{% endif %}
+
 Use the background information to determine (1) which actions you want to take during the turn and (2) whether your statements still match what you are doing — proposing changes where they no longer do.
+
+{{negotiation_instructions}}
 
 Actions should align with your statements and be realistic given time and other resources. Your actions will be evaluated by a Game Master, who determines how they affect the world. Bold actions can have greater impact, but also greater risk of failure.
 

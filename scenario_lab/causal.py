@@ -146,9 +146,9 @@ def discover_causal_branches(
     if not runs_dir.is_dir():
         return groups
 
-    for run_dir in sorted(runs_dir.iterdir()):
-        if not run_dir.is_dir() or not is_run_dirname(run_dir.name):
-            continue
+    from .output import iter_run_dirs
+
+    for run_dir in iter_run_dirs(runs_dir):
         config = _load_json_safe(run_dir / "config.json")
         if not isinstance(config, dict):
             continue

@@ -87,6 +87,9 @@ def describe_scenario(
             "probability": event.probability,
             "can_repeat": event.can_repeat,
             "description": event.description,
+            "metaculus_url": event.metaculus_url,
+            "metaculus_retrieved": event.metaculus_retrieved,
+            "metaculus_probability": event.metaculus_probability,
         }
         for event in scenario.events
     ]
@@ -97,9 +100,9 @@ def describe_scenario(
     if runs_dir.is_dir():
         import json as _json
 
-        for run_dir in runs_dir.iterdir():
-            if not run_dir.is_dir() or not is_run_dirname(run_dir.name):
-                continue
+        from .output import iter_run_dirs
+
+        for run_dir in iter_run_dirs(runs_dir):
             total_runs += 1
             try:
                 summary = _json.loads((run_dir / "summary.json").read_text(encoding="utf-8"))
@@ -159,6 +162,7 @@ def describe_scenario(
                 "scope": table.scope,
                 "columns": len(table.columns),
                 "writable": table.writable(),
+                "info_file": table.info_file,
             }
             for name, table in config.store.tables.items()
         },
@@ -195,6 +199,12 @@ def describe_scenario(
             "enabled": config.emergent_events.enabled,
             "max_per_turn": config.emergent_events.max_per_turn,
             "max_probability": config.emergent_events.max_probability,
+        },
+        "negotiations": {
+            "enabled": config.negotiations.enabled,
+            "rounds": config.negotiations.rounds,
+            "max_rounds": config.negotiations.max_rounds,
+            "restricted": bool(config.negotiations.contacts),
         },
         "rule_evolution": {
             "freeze_until_turn": config.rule_evolution.freeze_until_turn,

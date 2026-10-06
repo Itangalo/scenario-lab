@@ -48,7 +48,9 @@ def analyze_runs(scenario_dir: Path, max_runs: int | None = None) -> dict[str, A
     if not runs_dir.exists():
         raise ValueError(f"No runs directory found: {runs_dir}")
 
-    run_dirs = sorted([d for d in runs_dir.iterdir() if d.is_dir() and is_run_dirname(d.name)])
+    from .output import iter_run_dirs
+
+    run_dirs = iter_run_dirs(runs_dir)
     if max_runs is not None:
         run_dirs = run_dirs[-max_runs:]
 

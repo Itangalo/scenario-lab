@@ -237,6 +237,34 @@ Behavior:
 
 Note: scenarios that override `user-prompts/events.md` must include the emergent-events instructions themselves (see `templates/user-prompts/events.md` for the default wording); otherwise the model is never told it may propose emergent events.
 
+### `negotiations`
+
+Optional private rounds before actors describe their actions. Off by default — each round costs one LLM call per participating actor:
+
+```yaml
+negotiations:
+  enabled: true
+  rounds: 1
+  max_rounds: 2
+  contacts:
+    government: [industry, opposition]
+```
+
+Supported fields:
+
+- `enabled` (boolean, default `false`)
+- `rounds` (integer >= 1, default `1`) — planned rounds; an actor joins rounds 1..k where k is its `actor_rounds` entry or `rounds`
+- `max_rounds` (integer >= `rounds`, default `rounds`) — extension cap; past the planned rounds the loop continues only while rounds keep delivering
+- `contacts` (mapping, optional) — who may write to whom; absent means any actor may write to any other
+- `actor_rounds` (mapping actor id to integer >= 0, optional) — how many rounds one actor joins; 0 sits out
+
+Behavior:
+
+- a silent round ends negotiations (no new information exists, only cost)
+- notes outside the contact list, to unknown actors, or to self are rejected with a recorded reason; one bad entry never kills the rest
+- every round persists under `turn-XX/2-negotiations/` (`round-NN.md` plus cumulative `messages.json`)
+- a custom `user-prompts/actor.md` that never renders `negotiation_messages` gets a validation warning: inboxes are then silently empty
+
 ### `event_groups`
 
 Optional. Declares families of events that cannot co-occur, so that exactly one — or at most one — resolves.
@@ -337,6 +365,7 @@ Table fields:
 - `scope` — `actor` (written by actors) or `world` (written by the Game Master step, read by every step). An actor entry touching a world table is rejected. The Game Master may additionally move records (`update` with grounds) on actor tables where the scenario gives it scheduling moves; it may never add or remove there, and actors cannot write world tables at all.
 - `columns` — an ordered mapping. Every table needs one system-owned `text` column for the record id, and at least one column owned by its writer (`actor` for actor tables, `world` for world tables); the other writer's columns are rejected at load.
 - `initial` — optional list of seeded records the run starts with, applied at turn 0 through the same path as any turn's writes. An actor-table entry names `actor` plus `fields`; a world-table entry names `fields` (and optional `grounds`). A dirty seed fails the load, not the first turn.
+- `info_file` — optional path, relative to the scenario directory, to a markdown file with rich per-record prose (`## ` sections, one per record). Ledger cells stay typed and aggregatable; the file holds what does not fit in a cell (descriptions, reference values). Missing file is a validation error; a file with no `## ` sections warns. `describe` shows the pointer; turn prompts render only the slice needed, never the whole file.
 
 Column fields:
 
@@ -376,7 +405,7 @@ Two things to know before using this:
 - **`metric-rules.md` is rendered for the metrics step and not for the rules step.** The rules step rewrites the rule set from its own output, so an expression there survives only if a model copies it back verbatim. Freeze rule evolution when you put store expressions in the rules; the validator warns when you have not.
 - **The schema is physics.** It is recorded in each run's `config.json`, a variant inherits its base's schema, and two batches run under different schemas are not comparable.
 
-Artifacts: `turn-XX/2-actors/<actor_id>-store.md` (records plus this turn's changelog, written every turn) and `<actor_id>-store.json` (the state `resume` reads back); world tables additionally land in `turn-XX/4-world-store.md` and `turn-XX/4-world-store.json` from the Game Master step, and `resume` prefers the latter when present because it holds the whole turn. `python -m scenario_lab.store --self-test` checks the mechanism itself.
+Artifacts: `turn-XX/2-actors/<actor_id>-store.md` (records plus this turn's changelog, written every turn) and `<actor_id>-store.json` (the state `resume` reads back); world tables additionally land in `turn-XX/4-world-store.md` and `turn-XX/4-world-store.json` from the Game Master step, and `resume` prefers the latter when present because it holds the whole turn. `python -m scenario_lab.store --self-test` checks the mechanism itself. Mass-read: `read_table_history(run_dir, table, record_id?, column?, turns?)` replays those snapshots turn by turn for analysis (whole records, or one cell's value per turn); turns without a snapshot are skipped.
 
 ### `store.metrics`: metrics as a world table (optional)
 
@@ -446,6 +475,8 @@ Validation:
 Canonical event block format:
 
 ```markdown
+# Events (one H1 title, then H2 sections – sub-H2 headings are folded into
+# prose, not parsed as structure, and `validate` warns about them)
 ## Event Name
 **ID:** event_id
 **Condition:** ...
@@ -454,13 +485,23 @@ Canonical event block format:
 **Description:** ...
 ```
 
-`Eligible` is the sixth and last field the parser reads: a deterministic gate evaluated in Python against current metric values.
+`Eligible` is the sixth field the parser reads: a deterministic gate evaluated in Python against current metric values.
+
+Optional forecasting anchor (snapshot, never fetched live):
+
+```markdown
+**Metaculus:** https://www.metaculus.com/questions/12345/my-event/
+**Retrieved:** 2026-10-01
+**Market probability:** 34%
+```
+
+The community figure is a prior the Game Master adjusts to the simulated world state – market odds are unconditional and dated, scenario events conditional and per-turn – and the pointer is what the `update-scenario` skill re-checks. Malformed anchors (wrong-domain URL, non-date retrieval, unparseable figure) are validation errors; a missing anchor is fine.
 
 Parsing behavior:
 
 - an event is only materialized if `ID` exists
 - `Can repeat` is true for `yes` or `true` (case-insensitive)
-- **exactly six fields are read** — `ID`, `Condition`, `Probability`, `Can repeat`, `Description`, `Eligible`. Any other `**Field:**` inside an event block is parsed and then discarded, so it reaches no prompt and never errors. `validate` warns about these; the warning names the labels and the number of events carrying them. Anything an author needs the model to act on belongs in one of the six fields, in the metric rules, or in a prompt — not in a field of its own invention.
+- **nine fields are read** — `ID`, `Condition`, `Probability`, `Can repeat`, `Description`, `Eligible`, `Metaculus`, `Retrieved`, `Market probability`. Any other `**Field:**` inside an event block is parsed and then discarded, so it reaches no prompt and never errors. `validate` warns about these; the warning names the labels and the number of events carrying them. Anything an author needs the model to act on belongs in the read fields, in the metric rules, or in a prompt — not in a field of its own invention. Anchors are also patchable per event (`variants/*.events.patch.md`).
 
 Probability values support:
 
@@ -553,6 +594,10 @@ python -m scenario_lab.cli batch-run scenarios/<id> --repeat 20 --initial-states
 ```
 
 `--initial-states` needs at least as many `.json` files as there are runs; too few is an error rather than a cycle, since reusing draws would narrow the distribution the batch reports on. The applied draw is stored in each run's `config.json` under `initial_state`.
+
+### Output subfolders
+
+`run --output-subdir NAME` (and `batch-run --output-subdir NAME` for the whole batch) places runs under `runs/NAME/` instead of directly under `runs/`. Discovery commands (`ensemble`, `calibrate`, `batch-resume`, `check-run-integrity`, live-game lookup, causal baselines) find subfoldered runs without further flags; explicit run paths keep working wherever they did. The name must stay inside `runs/` (no absolute paths, no `..`). One level only: deeper nesting is not a run location and is not discovered.
 
 Scenario Lab reads draws as data and never runs generator code. A scenario that needs draws should ship its generator as an ordinary script in its own directory and document how to run it; generating the draws stays a deliberate step you take, not something loading a scenario triggers.
 

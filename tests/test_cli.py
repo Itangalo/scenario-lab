@@ -408,6 +408,8 @@ def test_cli_check_run_integrity_accepts_scenario_directory(tmp_path):
     runs_dir = scenario_dir / "runs"
     (runs_dir / "run-001").mkdir(parents=True)
     (runs_dir / "run-002").mkdir(parents=True)
+    for name in ("run-001", "run-002"):
+        (runs_dir / name / "config.json").write_text("{}", encoding="utf-8")
 
     def fake_report(run_dir):
         return {
@@ -431,6 +433,8 @@ def test_cli_check_run_integrity_max_runs_limits_scope(tmp_path):
     (runs_dir / "run-001").mkdir(parents=True)
     (runs_dir / "run-002").mkdir(parents=True)
     (runs_dir / "run-003").mkdir(parents=True)
+    for name in ("run-001", "run-002", "run-003"):
+        (runs_dir / name / "config.json").write_text("{}", encoding="utf-8")
     seen = []
 
     def fake_report(run_dir):
@@ -533,6 +537,7 @@ def test_cli_quality_check_accepts_scenario_directory_without_failing_on_diffs(t
     runs_dir = scenario_dir / "runs"
     regressions_dir = scenario_dir / "regressions"
     (runs_dir / "run-001").mkdir(parents=True)
+    (runs_dir / "run-001" / "config.json").write_text("{}", encoding="utf-8")
     _write_manifest(
         regressions_dir / "pairwise.yaml",
         "\n".join(
@@ -584,6 +589,7 @@ def test_cli_quality_check_fail_on_diff_returns_error(tmp_path):
     runs_dir = scenario_dir / "runs"
     regressions_dir = scenario_dir / "regressions"
     (runs_dir / "run-001").mkdir(parents=True)
+    (runs_dir / "run-001" / "config.json").write_text("{}", encoding="utf-8")
     _write_manifest(
         regressions_dir / "pairwise.yaml",
         "\n".join(

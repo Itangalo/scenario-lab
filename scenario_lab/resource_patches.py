@@ -36,6 +36,9 @@ _EVENT_FIELD_KEYS = {
     "description": "description",
     "can_repeat": "can_repeat",
     "eligible": "eligible",
+    "metaculus": "metaculus_url",
+    "retrieved": "metaculus_retrieved",
+    "market_probability": "metaculus_probability",
 }
 
 _RULE_START_RE = re.compile(r"^(\d+)\.\s(.*)$")
@@ -136,6 +139,9 @@ def apply_event_patches(events: list[Event], path: Path) -> list[Event]:
                 probability=updates.get("probability", "0"),
                 can_repeat=updates.get("can_repeat", "no").lower() in ("yes", "true"),
                 eligible=updates.get("eligible", ""),
+                metaculus_url=updates.get("metaculus", ""),
+                metaculus_retrieved=updates.get("retrieved", ""),
+                metaculus_probability=updates.get("market_probability", ""),
             )
             result.append(new_event)
             by_id[event_id] = new_event
@@ -147,9 +153,9 @@ def apply_event_patches(events: list[Event], path: Path) -> list[Event]:
             updates["can_repeat"] = (
                 "yes" if updates["can_repeat"].lower() in ("yes", "true") else "no"
             )
-        for key in _EVENT_FIELD_KEYS:
+        for key, attr in _EVENT_FIELD_KEYS.items():
             if key in updates:
-                setattr(existing, key, updates[key])
+                setattr(existing, attr, updates[key])
 
     return result
 

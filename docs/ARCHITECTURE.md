@@ -42,6 +42,7 @@ V4 represents a radical simplification from previous versions. Instead of comple
 - **Definition:** Simulation participants (governments, organizations, companies) with defined goals and behaviors.
 - **Statements:** Each actor holds a **statement ledger** – a list of what it stands for, wants, and is, tagged with a changeability tier: `position` (working stances, move with strategy), `commitment` (staked positions whose reversal costs something someone will collect), and `identity` (what the actor would have to stop being to drop). Absolutes live outside the ledger in `constitution.md`. See *Actor Statement Ledgers* below.
 - **Actions:** Actors review their statements and describe actions each turn. These are descriptive text, not structured data.
+- **Negotiations (optional, off by default):** Before the action write-up, actors may exchange short private notes for up to `max_rounds` rounds (`orchestrator._run_negotiations`, pure delivery logic in `negotiations.py`). Each round's prompts run in parallel; delivered notes join each recipient's inbox for the next round and the final actions, rendered as "Message from ..." lines. Notes are written as `{"messages": [{"to", "text"}]}` under `## Messages`; silence is not a fault. Python enforces the contact allowlist and per-actor round participation and persists every round under `turn-XX/2-negotiations/` (`round-NN.md` plus cumulative `messages.json`); content is never judged, and quoting a note onward (leaking) is possible by design. Stops early on a silent round. Validation warns about the multiplied LLM cost and about custom actor templates that never render the inbox.
 
 ### Events
 - **Definition:** Exogenous happenings with probabilities and conditions.
@@ -165,7 +166,17 @@ Some scenarios have a definite finish – a government forms, a deadline passes,
 - **Ordering:** conditions are checked in declaration order and the first match wins.
 
 ### The Turn Loop (`orchestrator.py`)
-Each turn executes the following steps in order:
+Each turn executes the following steps in order, grouped into three phases
+(`PHASES = ("events", "actors", "world")` in `orchestrator.py`). Every phase
+persists before the next starts and records itself in `summary.json` under
+`phases: {"<turn>": phase}`; `run_turn(turn, from_phase=...)` reloads a
+skipped phase's inputs from the turn's artifacts (events list, actor
+responses plus ledgers and store records) instead of rerunning its LLM calls,
+so `resume` continues an interrupted turn mid-turn. Reloading the events phase
+also re-enters each triggered event into the run history, which the
+interrupted turn never persisted. Merging the world phase's prompts (rules,
+metrics, referee, summary) into fewer calls is explicitly deferred: grouping
+changes where a run can stop and continue, merging changes run quality.
 
 1. **Events Step**:
   * **Input:** World state (history + current), current metrics, list of potential events.
@@ -458,6 +469,7 @@ The `5-constitutional-check.json` file (when present) includes:
 - `live-menu <scenario|run> --turn N` ensures turn N's events are rolled first (same seeded dice as a simulated turn, persisted to `1-events.json` + `1-event-evaluations.json`), then generates one menu of at most `max_options` (default 6) per actor and writes printable handouts under `turn-NN/live/`: `briefing.md` (world summary, metrics, triggered events), `menu-<actor_id>.md` per team, and machine-readable `menu.json` for shorthand resolution. On a scenario target (turn 1 only) it creates a new `runs/live-YYYYMMDD-HHMMSS/` run; re-running it reuses the recorded events and overwrites the menus.
 - Teams deliberate and each team chooses exactly one option. `live-resolve <run> --turn N` collects the picks through an interactive picker (option headers per team, details on paper; free text as escape hatch; `back` revisits the previous team, final summary with per-team redo; `--actor-action actor=pick` flags cover scripting and non-interactive use), wraps each pick into a minimal valid actor document (picked text verbatim as `## Actions`, plus no-op statement/store sections so downstream parsers record no faults), saves it as `2-actors/<actor_id>.md`, and runs the standard rules → metrics → referee → summary chain with identical persistence. It then generates the next turn's menus immediately with the recorded menu settings (`--no-auto-menu` opts out), so the facilitator's next step is printing handouts rather than running another command. No menus generate past `max_turns` or after a termination condition fires.
 - The leader ends the workshop at any turn; the run stays an ordinary run (`resume` continues it with LLM actors, `check-run-integrity` validates it, `branch` forks what-if counterfactuals from it).
+- **Mixed player modes:** `--llm-actors a,b` on `live-menu`/`live-resolve`/`live` leaves those actors to the model (no menu, no handout, no pick). Resolve generates their actions through `Orchestrator.generate_actor_action` -- the same call a simulated turn uses -- so a model-played actor answers exactly as it would off-stage. The choice is recorded in `menu.json` (`llm_actors`), so resolve defaults to it and chained next menus keep the mode without new flags; a pick for a model-played actor is an error.
 
 **Audience tuning:** an optional `workshop:` block in scenario.yaml (`audience`, `tone`) renders as `workshop_guidance` into the menu-generation and turn-narrative prompts, so generated wording fits the room. Free-text presentation metadata, empty by default; strict on unknown keys at load time, inherited by variants, recorded in the run's config.json. The workshop leader picks the voice herself; there is deliberately no leader-facing notes file.
 

@@ -240,7 +240,7 @@ class TestGetScenarioPathFromRun:
         invalid_dir = tmp_path / "not-runs" / "run-123"
         invalid_dir.mkdir(parents=True)
 
-        with pytest.raises(ValueError, match="Expected parent directory to be 'runs'"):
+        with pytest.raises(ValueError, match="Could not find scenario directory"):
             get_scenario_path_from_run(invalid_dir)
 
 

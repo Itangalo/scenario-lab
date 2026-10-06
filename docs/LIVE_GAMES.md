@@ -67,6 +67,17 @@ It renders into the menu and narrative prompts (as `workshop_guidance`, overrida
 - **Decide the end in advance.** Tell the teams how many turns you will play; the leader can stop after any resolved turn – the run is complete as a record wherever it stops.
 - **Dry-run the full game** with `--actor-action` flags before the workshop to check timing and handout readability.
 
+## Mixed player modes (some actors model-played)
+
+A game can mix human teams with model-played actors – useful for a small room (three teams plus a model-run fourth) or for keeping a minor actor in play without staffing it:
+
+```bash
+python -m scenario_lab.cli live-menu scenarios/global-ai-live --turn 1 --llm-actors eu
+python -m scenario_lab.cli live-resolve <run> --turn 1 --actor-action us-gov=2 ...
+```
+
+Model-played actors get no menu and no handout; at resolve their actions generate with the same call a simulated turn uses. The choice is recorded in `menu.json`, so later turns (`live-resolve` without the flag, chained auto-menus, the `live` launcher) keep the same mode. Giving a pick for a model-played actor is an error, and so is naming an unknown actor.
+
 ## Options and limitations
 
 - `--max-options N` caps the menu length (default 6). No "do nothing" option is added by default; restraint appears only when the model judges it a genuine move.

@@ -73,6 +73,50 @@ def detect_last_turn(run_dir: Path) -> int:
     return 0
 
 
+def detect_last_phase(run_dir: Path, turn: int) -> Optional[str]:
+    """Highest completed phase of one turn ("events", "actors", "world").
+
+    Phase completion is read from the artifacts, not from summary.json, so it
+    holds for runs saved before phase tracking existed. "world" uses the same
+    completeness rule as ``detect_last_turn`` (minus the turn-number guard),
+    so the two can never disagree about whether a turn is finished.
+    """
+    from .orchestrator import PHASE_ACTORS, PHASE_EVENTS, PHASE_WORLD
+
+    turn_dir = run_dir / f"turn-{turn:02d}"
+    if not turn_dir.is_dir():
+        return None
+    if not (turn_dir / "1-events.json").is_file():
+        return None
+    phase = PHASE_EVENTS
+    actors_dir = turn_dir / "2-actors"
+    if actors_dir.is_dir() and any(
+        f.is_file() and f.suffix == ".md"
+        and not f.name.endswith(("-statements.md", "-store.md"))
+        for f in actors_dir.iterdir()
+    ):
+        phase = PHASE_ACTORS
+    required_files = [
+        "1-events.json",
+        "3-metric-rules.md",
+        "4-metrics.json",
+        "4-world-state.md",
+        "5-notepad.md",
+    ]
+    if turn > 1:
+        required_files.append("6-historical-summary.md")
+    if all((turn_dir / f).exists() for f in required_files):
+        phase = PHASE_WORLD
+    return phase
+
+
+def next_phase(phase: str) -> str:
+    """The phase after a completed one ("events" -> "actors" -> "world")."""
+    from .orchestrator import PHASES
+
+    return PHASES[PHASES.index(phase) + 1]
+
+
 def validate_run_directory(run_dir: Path) -> Tuple[bool, list[str]]:
     """Validate run directory structure.
 
@@ -119,26 +163,20 @@ def get_scenario_path_from_run(run_dir: Path) -> Path:
     Raises:
         ValueError: If scenario directory cannot be found
     """
-    # Navigate up from run directory
-    # Expected structure: scenarios/X/runs/run-YYYYMMDD-HHMMSS
-    # We need to go up 2 levels to get to scenarios/X
-
+    # Walk up toward the scenario directory instead of assuming a fixed depth:
+    # runs may sit in a named output subfolder one level under runs/.
     if not run_dir.exists():
         raise ValueError(f"Run directory does not exist: {run_dir}")
 
-    # Go up to runs directory
-    runs_dir = run_dir.parent
-    if runs_dir.name != "runs":
-        raise ValueError(f"Expected parent directory to be 'runs', got: {runs_dir.name}")
+    current = run_dir
+    for _ in range(5):
+        current = current.parent
+        if (current / "metrics.md").exists() or (current / "scenario.yaml").exists():
+            return current
 
-    # Go up to scenario directory
-    scenario_dir = runs_dir.parent
-
-    # Verify scenario directory has expected files
-    if not (scenario_dir / "metrics.md").exists() and not (scenario_dir / "scenario.yaml").exists():
-        raise ValueError(f"Scenario directory does not contain metrics.md or scenario.yaml: {scenario_dir}")
-
-    return scenario_dir
+    raise ValueError(
+        f"Could not find scenario directory above run directory: {run_dir}"
+    )
 
 
 def get_scenario_source_from_run(run_dir: Path) -> Path:

@@ -558,6 +558,8 @@ class PromptBuilder:
         turn: int,
         triggered_events: list[dict],
         previous_actions: str = "",
+        negotiation_messages: str = "",
+        negotiation_instructions: str = "",
     ) -> tuple[str, str]:
         """Build prompts for a specific actor.
 
@@ -571,6 +573,13 @@ class PromptBuilder:
                 its own last output -- the only durable record some scenarios
                 need (portfolios, tracked commitments) that the lossy
                 historical summary cannot provide.
+            negotiation_messages: Private notes this actor received, rendered
+                as "Message from ..." lines. Empty when negotiations are off
+                or nobody wrote to this actor.
+            negotiation_instructions: Round instructions (message rounds) or
+                "" for the action write-up. Scenario overrides that predate
+                negotiations render neither; the validator warns about that
+                when negotiations are enabled.
 
         Returns:
             (system_prompt, user_prompt)
@@ -584,6 +593,8 @@ class PromptBuilder:
         # Build context
         context = self._get_common_context(turn)
         context["previous_actions"] = previous_actions
+        context["negotiation_messages"] = negotiation_messages
+        context["negotiation_instructions"] = negotiation_instructions
         
         # Add actor-specific context
         context["store"] = self.store_view(actor_id)

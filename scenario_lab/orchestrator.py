@@ -123,6 +123,18 @@ class _RecordingClient:
         pass
 
 
+# The v5 turn cycle: three phases, not a start-to-end pipeline. Every phase
+# persists before the next starts, so a crash between phases resumes mid-turn
+# (``run_turn(turn, from_phase=...)``) instead of replaying it. The world
+# phase still runs rules, metrics, referee and summary as sub-steps; merging
+# those prompts is separate work that changes run quality, while grouping
+# them changes only where a run can stop and continue.
+PHASE_EVENTS = "events"
+PHASE_ACTORS = "actors"
+PHASE_WORLD = "world"
+PHASES = (PHASE_EVENTS, PHASE_ACTORS, PHASE_WORLD)
+
+
 class Orchestrator:
     """Executes the simulation turn loop with per-task LLM selection."""
 
@@ -441,15 +453,25 @@ class Orchestrator:
                 print(f"  ⚠️  Termination condition '{condition.id}' could not be evaluated: {exc}")
         return None
 
-    def run_turn(self, turn: int) -> TurnResult:
-        """Execute one complete turn.
+    def run_turn(self, turn: int, from_phase: str = PHASE_EVENTS) -> TurnResult:
+        """Execute one turn of the three-phase cycle.
 
         Args:
             turn: Turn number (1-indexed)
+            from_phase: Phase to start from (default: "events"). Later phases
+                reload their inputs from this turn's persisted artifacts instead
+                of rerunning LLM calls, so a run interrupted between phases
+                continues mid-turn. Requires an output manager whose run
+                directory holds the earlier phases' files.
 
         Returns:
             TurnResult with all outputs from the turn
         """
+        if from_phase not in PHASES:
+            raise ValueError(
+                f"Unknown phase '{from_phase}' (phases: {', '.join(PHASES)})"
+            )
+        start_at = PHASES.index(from_phase)
         from .loader import get_time_period
 
         time_period = get_time_period(
@@ -464,63 +486,61 @@ class Orchestrator:
             print(f"TURN {turn}: {time_period}")
             print(f"{'='*60}")
 
-        # Step 1: Determine events
-        if self.progress_tracker:
-            with self.progress_tracker.start_step(1, "") as step:
+        # Phase 1: Events. The previous world state goes in, a list of
+        # triggered events (possibly with prose) comes out. Nothing is
+        # resolved into metrics yet; actors react to the events in prose.
+        if start_at <= 0:
+            if self.progress_tracker:
+                with self.progress_tracker.start_step(1, "") as step:
+                    triggered_events = self._run_events_step(turn)
+                    step.update(f"{len(triggered_events)} events triggered")
+            else:
+                print("\n[1/3] Determining external events...")
                 triggered_events = self._run_events_step(turn)
-                step.update(f"{len(triggered_events)} events triggered")
+                print(f"  → {len(triggered_events)} events triggered")
+
+            if self.output_manager:
+                self.output_manager.save_events(turn, triggered_events)
+                self._record_phase(turn, PHASE_EVENTS)
         else:
-            print("\n[1/5] Determining external events...")
-            triggered_events = self._run_events_step(turn)
-            print(f"  → {len(triggered_events)} events triggered")
+            triggered_events = self._load_events_phase(turn)
+            print(f"\n[1/3] Events reloaded ({len(triggered_events)} triggered)")
 
-        if self.output_manager:
-            self.output_manager.save_events(turn, triggered_events)
+        # Phase 2: Actor actions. The previous world state plus the triggered
+        # events goes in, one action description per actor comes out. When
+        # negotiations are enabled, private rounds run first and each
+        # recipient's inbox joins its action prompt.
+        if start_at <= 1:
+            negotiation_inboxes = self._run_negotiations(turn, triggered_events)
+            if self.progress_tracker:
+                with self.progress_tracker.start_step(2, "") as step:
+                    actor_outputs = self._run_actors_step(
+                        turn, triggered_events, negotiation_inboxes
+                    )
+                    step.update(f"{len(actor_outputs)} actors responded")
+            else:
+                print("\n[2/3] Getting actor actions...")
+                actor_outputs = self._run_actors_step(
+                    turn, triggered_events, negotiation_inboxes
+                )
+                print(f"  → {len(actor_outputs)} actors responded")
 
-        # Step 2: Get actor actions
-        if self.progress_tracker:
-            with self.progress_tracker.start_step(2, "") as step:
-                actor_outputs = self._run_actors_step(turn, triggered_events)
-                step.update(f"{len(actor_outputs)} actors responded")
+            self._apply_actor_phase_state(turn, actor_outputs, triggered_events)
+            self._record_phase(turn, PHASE_ACTORS)
         else:
-            print("\n[2/5] Getting actor actions...")
-            actor_outputs = self._run_actors_step(turn, triggered_events)
-            print(f"  → {len(actor_outputs)} actors responded")
+            actor_outputs = self._load_actors_phase(turn)
+            print(f"\n[2/3] Actor actions reloaded ({len(actor_outputs)} actors)")
 
-        # Statement ledgers: apply any changes the actors proposed. Runs before
-        # the rules step so the rest of the turn sees the updated ledgers.
-        statement_outcomes = self._process_statement_changes(
-            turn, actor_outputs, triggered_events
-        )
-        applied = sum(
-            1
-            for outcomes in statement_outcomes.values()
-            for outcome in outcomes
-            if outcome.verdict == "applied"
-        )
-        if applied:
-            print(f"  → {applied} statement change(s) applied")
-
-        # Declared persistent state: apply this turn's commands. Same placement
-        # and same reason as the statement step above.
-        store_outcomes = self._process_store_changes(turn, actor_outputs)
-        store_applied = sum(
-            1
-            for outcomes in store_outcomes.values()
-            for outcome in outcomes
-            if outcome.verdict == "applied"
-        )
-        if store_applied:
-            print(f"  → {store_applied} store change(s) applied")
-
-        # Step 3: Update metric rules
+        # Phase 3: World update. Triggered events, actor actions and world
+        # rules go in; action success, ledger updates, new world state and
+        # narrative come out. Rules are adjusted rarely, not rewritten.
         if self.progress_tracker:
             with self.progress_tracker.start_step(3, "") as step:
                 new_rules = self._run_rules_step(turn, actor_outputs, triggered_events)
                 self.scenario.metric_rules = new_rules
                 step.update("Rules updated")
         else:
-            print("\n[3/5] Updating metric rules...")
+            print("\n[3/3] Updating world: rules, metrics, narrative...")
             new_rules = self._run_rules_step(turn, actor_outputs, triggered_events)
             self.scenario.metric_rules = new_rules
             print(f"  → Rules updated")
@@ -528,13 +548,13 @@ class Orchestrator:
         if self.output_manager:
             self.output_manager.save_metric_rules(turn, new_rules)
 
-        # Step 4: Update metrics and generate narrative
+        # Update metrics and generate narrative
         if self.progress_tracker:
-            with self.progress_tracker.start_step(4, "") as step:
+            with self.progress_tracker.start_step(3, "") as step:
                 new_metrics, narrative, notepad = self._run_metrics_step(turn, actor_outputs, triggered_events)
                 step.update("Metrics and narrative updated")
         else:
-            print("\n[4/6] Updating metrics and generating narrative...")
+            print("  Updating metrics and generating narrative...")
             new_metrics, narrative, notepad = self._run_metrics_step(turn, actor_outputs, triggered_events)
             print(f"  → Metrics and narrative updated")
 
@@ -543,16 +563,16 @@ class Orchestrator:
             self.output_manager.save_notepad(turn, notepad)
             self.output_manager.update_summary(turn, new_metrics)
 
-        # Step 5: Constitutional referee (optional)
+        # Constitutional referee (optional sub-step of the world phase)
         if self.scenario.constitution:
             if self.progress_tracker:
-                with self.progress_tracker.start_step(5, "") as step:
+                with self.progress_tracker.start_step(3, "") as step:
                     new_metrics, narrative = self._run_constitutional_referee_step(
                         turn, new_metrics, narrative, notepad=notepad
                     )
                     step.update("Constitution validated")
             else:
-                print("\n[5/6] Validating against constitutional constraints...")
+                print("  Validating against constitutional constraints...")
                 new_metrics, narrative = self._run_constitutional_referee_step(
                     turn, new_metrics, narrative, notepad=notepad
                 )
@@ -563,19 +583,19 @@ class Orchestrator:
                 self.output_manager.save_metrics_and_narrative(turn, new_metrics, narrative)
                 self.output_manager.update_summary(turn, new_metrics)
 
-        # Step 6: Update historical summary
+        # Update historical summary (sub-step of the world phase)
         if self.progress_tracker:
-            with self.progress_tracker.start_step(6, "") as step:
+            with self.progress_tracker.start_step(3, "") as step:
                 new_historical_summary = self._run_summarization_step(turn, narrative)
                 step.update("Summary updated")
         else:
-            step_num = "6/6" if self.scenario.constitution else "5/5"
-            print(f"\n[{step_num}] Updating historical summary...")
+            print("  Updating historical summary...")
             new_historical_summary = self._run_summarization_step(turn, narrative)
             print(f"  → Summary updated")
 
         if self.output_manager:
             self.output_manager.save_historical_summary(turn, new_historical_summary)
+            self._record_phase(turn, PHASE_WORLD)
 
         # Update scenario state
         self._update_scenario_state(new_metrics, narrative, new_historical_summary, notepad, turn, time_period)
@@ -599,6 +619,143 @@ class Orchestrator:
             narrative=narrative,
             notepad=notepad,
         )
+
+    def _record_phase(self, turn: int, phase: str) -> None:
+        """Persist a completed phase, when there is somewhere to persist to."""
+        if self.output_manager is not None:
+            self.output_manager.record_phase(turn, phase)
+
+    def _turn_dir(self, turn: int):
+        """This turn's artifact directory, without creating it.
+
+        Loading a skipped phase must never conjure an empty turn directory
+        into existence: that would look like progress to resume detection.
+        """
+        from pathlib import Path
+
+        if self.output_manager is None or self.output_manager.run_dir is None:
+            raise ValueError(
+                "Resuming from a later phase needs an output manager with a "
+                "run directory holding this turn's earlier phases"
+            )
+        return Path(self.output_manager.run_dir) / f"turn-{turn:02d}"
+
+    def _apply_actor_phase_state(
+        self,
+        turn: int,
+        actor_outputs: dict[str, str],
+        triggered_events: list[dict],
+    ) -> None:
+        """Apply what the actors wrote, so the world phase sees it.
+
+        Statement ledgers and store records are Python-owned: they change only
+        here, never inside the world phase. Runs before the rules step so the
+        rest of the turn sees the updated ledgers.
+        """
+        statement_outcomes = self._process_statement_changes(
+            turn, actor_outputs, triggered_events
+        )
+        applied = sum(
+            1
+            for outcomes in statement_outcomes.values()
+            for outcome in outcomes
+            if outcome.verdict == "applied"
+        )
+        if applied:
+            print(f"  → {applied} statement change(s) applied")
+
+        store_outcomes = self._process_store_changes(turn, actor_outputs)
+        store_applied = sum(
+            1
+            for outcomes in store_outcomes.values()
+            for outcome in outcomes
+            if outcome.verdict == "applied"
+        )
+        if store_applied:
+            print(f"  → {store_applied} store change(s) applied")
+
+    def _load_events_phase(self, turn: int) -> list[dict]:
+        """Reload a skipped events phase from this turn's artifacts.
+
+        Re-enters each triggered event into the run's history, An interrupted
+        turn never reached the metrics write that would have persisted them,
+        so without this the rerun's event log silently drops the turn. Entries
+        already present (a second resume of the same turn) are not duplicated.
+        """
+        import json
+
+        events_file = self._turn_dir(turn) / "1-events.json"
+        if not events_file.is_file():
+            raise ValueError(
+                f"Cannot resume turn {turn} after the events phase: "
+                f"{events_file} is missing"
+            )
+        triggered: list[dict] = json.loads(events_file.read_text(encoding="utf-8"))
+        known = {event.id: event for event in self.scenario.events}
+        for entry in triggered:
+            event_id = entry.get("id")
+            if not event_id or any(
+                log.get("turn") == turn and log.get("id") == event_id
+                for log in self.scenario.event_log
+            ):
+                continue
+            event_obj = known.get(event_id)
+            repeatable = (
+                event_id.startswith("emergent_")
+                or event_obj is None
+                or event_obj.can_repeat
+            )
+            self._record_occurrence(turn, event_id, repeatable=repeatable)
+        return triggered
+
+    def _load_actors_phase(self, turn: int) -> dict[str, str]:
+        """Reload a skipped actors phase and restore its Python-owned state.
+
+        Actor responses are read back verbatim; statement ledgers, last
+        responses and store records are restored from this turn's files with
+        the same readers resume uses, so the world phase sees exactly what it
+        would have seen had the actors just answered.
+        """
+        import json
+
+        from .statements import parse_ledger_file
+
+        actors_dir = self._turn_dir(turn) / "2-actors"
+        outputs: dict[str, str] = {}
+        for actor_id, actor in self.scenario.actors.items():
+            response_file = actors_dir / f"{actor_id}.md"
+            if not response_file.is_file():
+                raise ValueError(
+                    f"Cannot resume turn {turn} after the actors phase: "
+                    f"{response_file} is missing"
+                )
+            outputs[actor_id] = response_file.read_text(encoding="utf-8")
+            actor.last_actions = outputs[actor_id]
+            ledger_file = actors_dir / f"{actor_id}-statements.md"
+            if ledger_file.is_file():
+                loaded = parse_ledger_file(ledger_file.read_text(encoding="utf-8"))
+                if loaded:
+                    actor.statements = loaded
+        if self.scenario.store is not None:
+            world_state_file = self._turn_dir(turn) / "4-world-store.json"
+            restored = False
+            if world_state_file.is_file():
+                self.scenario.store.restore(
+                    json.loads(world_state_file.read_text(encoding="utf-8"))
+                )
+                restored = True
+            else:
+                for actor_id in self.scenario.actors:
+                    state_file = actors_dir / f"{actor_id}-store.json"
+                    if state_file.is_file():
+                        self.scenario.store.restore(
+                            json.loads(state_file.read_text(encoding="utf-8"))
+                        )
+                        restored = True
+                        break
+            if restored:
+                self.scenario.store.current_turn = turn
+        return outputs
 
     def _event_roll(self, turn: int, event_id: str) -> float:
         """Return a deterministic dice roll in [0, 1) for one event this turn.
@@ -1266,35 +1423,192 @@ class Orchestrator:
 
         return aggregated, skipped
 
-    def _run_actors_step(self, turn: int, triggered_events: list[dict]) -> dict[str, str]:
-        """Step 2: Get actions from each actor.
+    def _run_negotiations(
+        self, turn: int, triggered_events: list[dict]
+    ) -> dict[str, list]:
+        """Optional private rounds before the action write-up.
+
+        Each round every participant is asked for notes simultaneously (so
+        prompts run in parallel, like the actors step); delivered notes join
+        each recipient's inbox for the next round and for the final actions.
+        The loop runs the planned rounds, extends past them while rounds keep
+        delivering (up to ``max_rounds``), and stops early on a silent round:
+        with no new information a further round only spends money.
+        """
+        from .negotiations import (
+            deliver,
+            parse_message_block,
+            participants_for_round,
+            render_inbox,
+        )
+
+        cfg = self.scenario.config.negotiations
+        actor_ids = list(self.scenario.actors.keys())
+        inboxes: dict[str, list] = {actor_id: [] for actor_id in actor_ids}
+        if not cfg.enabled:
+            return inboxes
+        planned = max(int(cfg.rounds), 1)
+        cap = max(int(cfg.max_rounds), planned)
+
+        round_no = 0
+        while round_no < cap:
+            round_no += 1
+            participants = participants_for_round(
+                actor_ids, round_no, cfg.rounds, cfg.actor_rounds
+            )
+            if not participants:
+                break
+
+            round_delivered: list = []
+            round_rejected: list = []
+            round_malformed: list[str] = []
+
+            def run_note(writer_id: str) -> tuple[str, LLMResponse, object]:
+                client = self.client_for_actor(writer_id)
+                reachable = cfg.contacts.get(writer_id)
+                if reachable is None:
+                    reachable = [a for a in actor_ids if a != writer_id]
+                system, user = self.prompt_builder.build_actor_prompt(
+                    writer_id,
+                    turn,
+                    triggered_events,
+                    previous_actions=self.scenario.actors[writer_id].last_actions,
+                    negotiation_messages=render_inbox(inboxes[writer_id]),
+                    negotiation_instructions=(
+                        f"## Private negotiations (round {round_no})\n\n"
+                        "Before actions are decided, you may send short private "
+                        "notes to other actors. Only the recipients see your "
+                        "notes -- though a recipient may quote them onward, so "
+                        "nothing private is guaranteed to stay private.\n\n"
+                        "Reply with a `## Messages` section holding one JSON "
+                        "block, or `No messages.` when you have nothing to send:\n\n"
+                        "```json\n"
+                        '{"messages": [{"to": "<actor_id>", '
+                        '"text": "<one or two sentences>"}]}\n'
+                        "```\n\n"
+                        f"You may write to: {', '.join(reachable) if reachable else '(no one)'}. "
+                        "Do not describe your actions in this response; the "
+                        "action write-up comes after negotiations close."
+                    ),
+                )
+                response = client.complete(system, user)
+                pending = getattr(self._llm_io_context, "pending", None)
+                self._llm_io_context.pending = None
+                return writer_id, response, pending
+
+            if len(participants) > 1:
+                with ThreadPoolExecutor(max_workers=min(len(participants), 8)) as executor:
+                    futures = {
+                        executor.submit(run_note, writer_id): writer_id
+                        for writer_id in participants
+                    }
+                    replies: dict[str, str] = {}
+                    for future in as_completed(futures):
+                        writer_id, response, pending = future.result()
+                        if pending is not None:
+                            self._llm_io_context.pending = pending
+                        self._record_llm_call(
+                            turn, f"negotiation:{writer_id}:r{round_no}", response
+                        )
+                        replies[writer_id] = response.content
+            else:
+                writer_id = participants[0]
+                _, response, pending = run_note(writer_id)
+                if pending is not None:
+                    self._llm_io_context.pending = pending
+                self._record_llm_call(
+                    turn, f"negotiation:{writer_id}:r{round_no}", response
+                )
+                replies = {writer_id: response.content}
+
+            # Deliver in actor order so the artifacts read deterministically
+            # whatever order the threads finished in.
+            for writer_id in participants:
+                entries, malformed = parse_message_block(
+                    replies[writer_id], round_no, writer_id
+                )
+                round_malformed.extend(f"{writer_id}: {line}" for line in malformed)
+                delivered, rejected = deliver(
+                    entries, writer_id, round_no, actor_ids, cfg.contacts
+                )
+                for message in delivered:
+                    inboxes[message.recipient].append(message)
+                round_delivered.extend(delivered)
+                round_rejected.extend(rejected)
+
+            if self.output_manager:
+                self.output_manager.save_negotiation_round(
+                    turn, round_no, round_delivered, round_rejected, round_malformed
+                )
+            print(
+                f"  → Negotiation round {round_no}: "
+                f"{len(round_delivered)} delivered, {len(round_rejected)} rejected"
+            )
+            if not round_delivered:
+                break
+
+        return inboxes
+
+    def generate_actor_action(
+        self,
+        actor_id: str,
+        turn: int,
+        triggered_events: list[dict],
+        negotiation_messages: str = "",
+    ) -> tuple[str, LLMResponse, object]:
+        """Generate one actor's action write-up: prompt, call, raw parts.
+
+        Shared by the actors step and live games with model-played actors, so
+        a model playing an actor in a workshop answers exactly as it would in
+        a simulated turn. Returns ``(content, response, pending_io)`` where the
+        pending transcript replays on the calling thread -- the recording
+        wrapper buffers per thread, which the main thread cannot see, so the
+        caller replays it before ``_record_llm_call`` or the transcript is
+        silently never written.
+        """
+        client = self.client_for_actor(actor_id)
+        system, user = self.prompt_builder.build_actor_prompt(
+            actor_id,
+            turn,
+            triggered_events,
+            previous_actions=self.scenario.actors[actor_id].last_actions,
+            negotiation_messages=negotiation_messages,
+        )
+        response = client.complete(system, user)
+        pending = getattr(self._llm_io_context, "pending", None)
+        self._llm_io_context.pending = None
+        return response.content, response, pending
+
+    def _run_actors_step(
+        self,
+        turn: int,
+        triggered_events: list[dict],
+        negotiation_inboxes: Optional[dict[str, list]] = None,
+    ) -> dict[str, str]:
+        """Phase 2: Get actions from each actor.
 
         Args:
             turn: Current turn number
             triggered_events: List of events that occurred
+            negotiation_inboxes: Private notes per actor from the negotiation
+                rounds, rendered into each recipient's prompt. Empty when
+                negotiations are off or nobody wrote.
 
         Returns:
             Dict mapping actor_id to their markdown output
         """
+        from .negotiations import render_inbox
+
         outputs = {}
         actor_ids = list(self.scenario.actors.keys())
+        inboxes = negotiation_inboxes or {}
 
         def run_actor(actor_id: str) -> tuple[str, LLMResponse, object]:
             """Execute one actor prompt and return raw response plus I/O record."""
-            client = self.client_for_actor(actor_id)
-            system, user = self.prompt_builder.build_actor_prompt(
-                actor_id,
-                turn,
-                triggered_events,
-                previous_actions=self.scenario.actors[actor_id].last_actions,
+            _, response, pending = self.generate_actor_action(
+                actor_id, turn, triggered_events,
+                negotiation_messages=render_inbox(inboxes.get(actor_id, [])),
             )
-            response = client.complete(system, user)
-            # The recording wrapper buffered this call on this worker thread,
-            # which the main thread cannot see (thread-local). Carry it back
-            # for replay there – the same pattern the multi-sample events path
-            # uses – otherwise the actor transcript is silently never written.
-            pending = getattr(self._llm_io_context, "pending", None)
-            self._llm_io_context.pending = None
             return actor_id, response, pending
 
         # Parallelize actor prompts when possible (independent prompts)
@@ -1322,18 +1636,14 @@ class Orchestrator:
             actor = self.scenario.actors[actor_id]
             print(f"  → {actor.name}...")
 
-            # Get appropriate client for this actor
-            client = self.client_for_actor(actor_id)
-
-            system, user = self.prompt_builder.build_actor_prompt(
-                actor_id,
-                turn,
-                triggered_events,
-                previous_actions=self.scenario.actors[actor_id].last_actions,
+            content, response, pending = self.generate_actor_action(
+                actor_id, turn, triggered_events,
+                negotiation_messages=render_inbox(inboxes.get(actor_id, [])),
             )
-            response = client.complete(system, user)
+            if pending is not None:
+                self._llm_io_context.pending = pending
             self._record_llm_call(turn, f"actor:{actor_id}", response)
-            outputs[actor_id] = response.content
+            outputs[actor_id] = content
 
             # Update actor's last actions in scenario
             self.scenario.actors[actor_id].last_actions = response.content
@@ -2414,6 +2724,7 @@ def run_simulation(
     output_manager: Optional["OutputManager"] = None,
     start_turn: int = 1,
     progress_tracker: Optional["ProgressTracker"] = None,
+    start_phase: str = PHASE_EVENTS,
 ) -> list[TurnResult]:
     """Run a complete simulation.
 
@@ -2427,6 +2738,9 @@ def run_simulation(
         output_manager: Optional OutputManager for incremental writing
         start_turn: Turn number to start from (default: 1, for resume: N+1)
         progress_tracker: Optional ProgressTracker for progress display
+        start_phase: Phase the first turn starts from (default: "events").
+            Later turns always start from "events"; used to continue a turn
+            that was interrupted between phases.
 
     Returns:
         List of TurnResults
@@ -2441,7 +2755,9 @@ def run_simulation(
 
     try:
         for turn in range(start_turn, max_turns + 1):
-            result = orchestrator.run_turn(turn)
+            result = orchestrator.run_turn(
+                turn, from_phase=start_phase if turn == start_turn else PHASE_EVENTS
+            )
             results.append(result)
             scenario.turn_history.append(result)
 

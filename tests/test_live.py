@@ -19,10 +19,12 @@ from scenario_lab.live import (
     has_store_tables,
     newest_pending_turn,
     parse_actor_action_specs,
+    parse_llm_actors,
     parse_menu_json,
     pending_live_turns,
     pick_all,
     read_menus,
+    recorded_llm_actors,
     render_briefing,
     resolve_pick,
     run_menu_turn,
@@ -495,6 +497,8 @@ def test_find_live_runs_newest_first(tmp_path):
     time.sleep(0.01)
     (runs / "live-new").mkdir(parents=True)
     (runs / "run-plain").mkdir(parents=True)
+    for name in ("live-old", "live-new"):
+        (runs / name / "config.json").write_text("{}", encoding="utf-8")
     found = find_live_runs(scenario)
     assert [r.run_dir.name for r in found] == ["live-new", "live-old"]
     assert find_live_runs(tmp_path / "nope") == []
@@ -749,3 +753,88 @@ def test_output_language_override_rides_into_every_turn(tmp_path):
     )
     prompted = "\n".join(user for _, user in mock.calls)
     assert "German" in prompted
+
+
+# --- mixed player modes (some actors model-played) ---
+
+
+def _mixed_mock() -> MockLLMClient:
+    mock = _live_mock()
+    mock.responses["which actions you want to take during the turn"] = (
+        "## Actions\n\nThe EU coordinates standards work with member states."
+    )
+    return mock
+
+
+def test_parse_llm_actors():
+    assert parse_llm_actors(None) == []
+    assert parse_llm_actors("") == []
+    assert parse_llm_actors("eu, china") == ["eu", "china"]
+
+
+def test_mixed_mode_menu_skips_llm_actors(tmp_path):
+    scenario = load_scenario(_live_scenario_copy(tmp_path))
+    scenario.config.random_seed = 7
+    output_manager = OutputManager(scenario, tmp_path / "global-ai-live")
+    run_dir = output_manager.start_run(prefix="live-")
+    menus = run_menu_turn(
+        scenario, output_manager, run_dir, 1, max_options=3,
+        llm_client=_live_mock(), llm_actors=["eu"],
+    )
+    assert set(menus) == {"us-gov", "us-labs", "china"}
+    assert not (run_dir / "turn-01" / "live" / "menu-eu.md").exists()
+    assert recorded_llm_actors(run_dir, 1) == ["eu"]
+
+
+def test_mixed_mode_menu_rejects_unknown_actor(tmp_path):
+    from scenario_lab.live import run_menu_turn as _menu
+
+    scenario = load_scenario(_live_scenario_copy(tmp_path))
+    scenario.config.random_seed = 7
+    output_manager = OutputManager(scenario, tmp_path / "global-ai-live")
+    run_dir = output_manager.start_run(prefix="live-")
+    with pytest.raises(LiveError):
+        _menu(
+            scenario, output_manager, run_dir, 1,
+            llm_client=_live_mock(), llm_actors=["narnia"],
+        )
+
+
+def test_mixed_mode_resolve_plays_llm_actor(tmp_path):
+    scenario = load_scenario(_live_scenario_copy(tmp_path))
+    scenario.config.random_seed = 7
+    output_manager = OutputManager(scenario, tmp_path / "global-ai-live")
+    run_dir = output_manager.start_run(prefix="live-")
+    run_menu_turn(
+        scenario, output_manager, run_dir, 1, max_options=3,
+        llm_client=_live_mock(), llm_actors=["eu"],
+    )
+    mock = _mixed_mock()
+    # llm_actors=None: resolve reads the menu.json record.
+    result = run_resolve_turn(
+        run_dir, 1, {"us-gov": "1", "us-labs": "2", "china": "1"},
+        interactive=False, llm_client=mock,
+    )
+    assert set(result.actor_outputs) == {"us-gov", "us-labs", "china", "eu"}
+    assert "coordinates standards" in result.actor_outputs["eu"]
+    assert (run_dir / "turn-01" / "2-actors" / "eu.md").exists()
+    # The chained next turn keeps the mixed mode without new flags.
+    assert recorded_llm_actors(run_dir, 2) == ["eu"]
+    assert set(read_menus(run_dir, 2)) == {"us-gov", "us-labs", "china"}
+
+
+def test_mixed_mode_rejects_pick_for_llm_actor(tmp_path):
+    scenario = load_scenario(_live_scenario_copy(tmp_path))
+    scenario.config.random_seed = 7
+    output_manager = OutputManager(scenario, tmp_path / "global-ai-live")
+    run_dir = output_manager.start_run(prefix="live-")
+    run_menu_turn(
+        scenario, output_manager, run_dir, 1,
+        llm_client=_live_mock(), llm_actors=["eu"],
+    )
+    with pytest.raises(LiveError):
+        run_resolve_turn(
+            run_dir, 1,
+            {"us-gov": "1", "us-labs": "2", "china": "1", "eu": "1"},
+            interactive=False, llm_client=_mixed_mock(),
+        )

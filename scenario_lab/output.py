@@ -16,6 +16,39 @@ def is_run_dirname(name: str) -> bool:
     return name.startswith(RUN_DIR_PREFIXES)
 
 
+def iter_run_dirs(runs_dir: Path) -> list[Path]:
+    """Every run directory under runs/, including output subfolders.
+
+    Runs may sit directly under ``runs/`` or one level down in a named
+    subfolder (``runs/<subfolder>/run-*``, via ``--output-subdir``), so a
+    flat listing silently drops whole batches from ensembles and resumes. A
+    directory counts as a run when its name matches and it holds a
+    ``config.json`` -- turn folders and ``batch-logs/`` never do. Sorted for
+    deterministic consumers.
+    """
+    runs_dir = Path(runs_dir)
+    if not runs_dir.is_dir():
+        return []
+    found: list[Path] = []
+    for child in sorted(runs_dir.iterdir()):
+        if not child.is_dir():
+            continue
+        if is_run_dirname(child.name):
+            if (child / "config.json").is_file():
+                found.append(child)
+            continue
+        if child.name == "batch-logs":
+            continue
+        for grandchild in sorted(child.iterdir()):
+            if (
+                grandchild.is_dir()
+                and is_run_dirname(grandchild.name)
+                and (grandchild / "config.json").is_file()
+            ):
+                found.append(grandchild)
+    return found
+
+
 def _provenance_block(provenance: Optional[dict]) -> str:
     """Render the recorded provenance of one prompt as a readable preamble.
 
@@ -157,17 +190,28 @@ class OutputManager:
         self.base_path = Path(base_path)
         self.run_dir: Optional[Path] = None
 
-    def start_run(self, prefix: str = "run-") -> Path:
+    def start_run(self, prefix: str = "run-", subdir: Optional[str] = None) -> Path:
         """Create a new run directory.
 
         Args:
             prefix: Filename prefix before the timestamp (default "run-";
                 live workshop runs use "live-").
+            subdir: Optional named subfolder under runs/ (e.g. a batch arm).
+                Must be a plain relative name; discovery commands find runs
+                inside it without further flags.
 
         Returns:
             Path to the created run directory
         """
         runs_dir = self.base_path / "runs"
+        if subdir is not None:
+            if not isinstance(subdir, str) or not subdir.strip():
+                raise ValueError("--output-subdir must be a non-empty name")
+            if subdir.startswith(("/", "~")) or ".." in subdir.split("/"):
+                raise ValueError(
+                    f"--output-subdir must stay inside runs/, got '{subdir}'"
+                )
+            runs_dir = runs_dir / subdir.strip().strip("/")
         runs_dir.mkdir(parents=True, exist_ok=True)
 
         timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
@@ -338,6 +382,97 @@ class OutputManager:
         (actors_dir / f"{actor_id}-store.json").write_text(
             json.dumps(state, indent=2, ensure_ascii=False), encoding="utf-8"
         )
+
+    def save_negotiation_round(
+        self,
+        turn: int,
+        round_no: int,
+        delivered: list,
+        rejected: list,
+        malformed: list[str],
+    ) -> None:
+        """Save one negotiation round's messages and delivery record.
+
+        Written incrementally after every round under ``turn-XX/2-negotiations/``:
+        a readable ``round-NN.md`` log plus ``messages.json`` holding every note
+        delivered so far (rewritten each round, so a crash keeps what exists).
+        Rejections carry their reason, like every other per-entry verdict in
+        this project -- a note that never arrived must say why.
+        """
+        turn_dir = self.get_turn_dir(turn)
+        nego_dir = turn_dir / "2-negotiations"
+        nego_dir.mkdir(exist_ok=True)
+
+        (nego_dir / "messages.json").write_text(
+            json.dumps(
+                self._negotiation_history(turn_dir, delivered),
+                indent=2,
+                ensure_ascii=False,
+            ),
+            encoding="utf-8",
+        )
+
+        lines = [f"# Negotiations, round {round_no} (turn {turn})", ""]
+        if delivered:
+            lines.append("## Delivered")
+            lines.append("")
+            for message in delivered:
+                lines.append(
+                    f"- Round {message.round}: **{message.sender}** → "
+                    f"**{message.recipient}**: {message.text}"
+                )
+            lines.append("")
+        if rejected:
+            lines.append("## Rejected")
+            lines.append("")
+            for item in rejected:
+                lines.append(
+                    f"- Round {item.round}: **{item.sender}** → "
+                    f"**{item.recipient}**: {item.reason}"
+                )
+            lines.append("")
+        if malformed:
+            lines.append("## Unparsed")
+            lines.append("")
+            lines.extend(f"- {line}" for line in malformed)
+            lines.append("")
+        if not delivered and not rejected and not malformed:
+            lines.append("No notes sent this round.")
+            lines.append("")
+        (nego_dir / f"round-{round_no:02d}.md").write_text(
+            "\n".join(lines), encoding="utf-8"
+        )
+
+    @staticmethod
+    def _negotiation_history(turn_dir, delivered: list) -> list[dict]:
+        """Notes delivered in earlier rounds plus this round's, in order."""
+        from pathlib import Path as _Path
+
+        entries: list[dict] = []
+        messages_file = _Path(turn_dir) / "2-negotiations" / "messages.json"
+        if messages_file.is_file():
+            try:
+                earlier_raw = json.loads(messages_file.read_text(encoding="utf-8"))
+                if isinstance(earlier_raw, list):
+                    entries = [m for m in earlier_raw if isinstance(m, dict)]
+            except ValueError:
+                pass
+        seen = {
+            (m.get("round"), m.get("from"), m.get("to"), m.get("text")) for m in entries
+        }
+        for message in delivered:
+            key = (message.round, message.sender, message.recipient, message.text)
+            if key not in seen:
+                seen.add(key)
+                entries.append(
+                    {
+                        "round": message.round,
+                        "from": message.sender,
+                        "to": message.recipient,
+                        "text": message.text,
+                    }
+                )
+        return entries
 
     def save_world_store(self, turn: int, content: str, state: dict):
         """Save the run-owned tables and the Game Master step's changelog.
@@ -547,6 +682,19 @@ class OutputManager:
 
         emergent_cfg = self.scenario.config.emergent_events
 
+        # incremental writers rebuild this document, so carry the keys other
+        # writers own: a mid-turn phase record must survive the metrics write
+        # that follows it, and a termination record must survive everything.
+        carried: dict = {}
+        if summary_path.exists():
+            try:
+                previous = json.loads(summary_path.read_text(encoding="utf-8"))
+                for key in ("termination", "phases"):
+                    if key in previous:
+                        carried[key] = previous[key]
+            except json.JSONDecodeError:
+                pass
+
         summary = {
             "scenario": self.scenario.config.name,
             "total_turns": current_turn,
@@ -557,6 +705,7 @@ class OutputManager:
             "last_updated": datetime.now().isoformat(),
             "status": "running",
         }
+        summary.update(carried)
         if emergent_cfg.enabled and emergent_cfg.track_unfired:
             summary["emerging_events"] = [
                 {
@@ -570,6 +719,40 @@ class OutputManager:
 
         summary_path.write_text(
             json.dumps(summary, indent=2, ensure_ascii=False)
+        )
+
+    def record_phase(self, turn: int, phase: str) -> None:
+        """Record that a turn's phase completed, immediately.
+
+        Phases are the v5 cycle (events, actors, world); every phase persists
+        before the next starts, so a crash between phases resumes mid-turn
+        instead of replaying it. Stored as ``phases: {"<turn>": phase}`` with
+        the highest completed phase per turn, and preserved by the writers
+        that rebuild this document around it.
+        """
+        if not self.run_dir:
+            raise RuntimeError("Must call start_run() first")
+
+        summary_path = self.run_dir / "summary.json"
+        summary: dict = {}
+        if summary_path.exists():
+            try:
+                loaded = json.loads(summary_path.read_text(encoding="utf-8"))
+                if isinstance(loaded, dict):
+                    summary = loaded
+            except json.JSONDecodeError:
+                pass
+
+        phases = summary.get("phases")
+        if not isinstance(phases, dict):
+            phases = {}
+        phases[str(turn)] = phase
+        summary["phases"] = phases
+        summary["last_updated"] = datetime.now().isoformat()
+        if "status" not in summary:
+            summary["status"] = "running"
+        summary_path.write_text(
+            json.dumps(summary, indent=2, ensure_ascii=False), encoding="utf-8"
         )
 
     def record_termination(self, turn: int, condition) -> None:

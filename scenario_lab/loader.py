@@ -15,6 +15,7 @@ from .models import (
     ScenarioConfig,
     LLMConfig,
     EmergentEventsConfig,
+    NegotiationsConfig,
     RuleEvolutionConfig,
     WorkshopConfig,
     ConstitutionalEnforcementConfig,
@@ -865,6 +866,16 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
                     "track_unfired": base_config.emergent_events.track_unfired,
                     "window_turns": base_config.emergent_events.window_turns,
                 },
+                "negotiations": {
+                    "enabled": base_config.negotiations.enabled,
+                    "rounds": base_config.negotiations.rounds,
+                    "max_rounds": base_config.negotiations.max_rounds,
+                    "contacts": {
+                        actor: list(reachable)
+                        for actor, reachable in base_config.negotiations.contacts.items()
+                    },
+                    "actor_rounds": dict(base_config.negotiations.actor_rounds),
+                },
                 "rule_evolution": {
                     "freeze_until_turn": base_config.rule_evolution.freeze_until_turn,
                     "max_changes_per_turn": base_config.rule_evolution.max_changes_per_turn,
@@ -969,6 +980,31 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
         max_changes_per_turn=rule_evolution_data.get("max_changes_per_turn", 6),
     )
 
+    negotiations_data = data.get("negotiations", {})
+    if not isinstance(negotiations_data, dict):
+        raise ValueError(f"{path}: 'negotiations' must be a mapping")
+    _negotiations_unknown = set(negotiations_data) - {
+        "enabled", "rounds", "max_rounds", "contacts", "actor_rounds",
+    }
+    if _negotiations_unknown:
+        raise ValueError(
+            f"{path}: negotiations has unknown field(s) "
+            f"{sorted(_negotiations_unknown)}"
+        )
+    negotiations = NegotiationsConfig(
+        enabled=bool(negotiations_data.get("enabled", False)),
+        rounds=negotiations_data.get("rounds", 1),
+        max_rounds=negotiations_data.get("max_rounds", negotiations_data.get("rounds", 1)),
+        contacts={
+            str(actor): [str(other) for other in reachable]
+            for actor, reachable in (negotiations_data.get("contacts") or {}).items()
+        },
+        actor_rounds={
+            str(actor): rounds
+            for actor, rounds in (negotiations_data.get("actor_rounds") or {}).items()
+        },
+    )
+
     workshop_data = data.get("workshop", {})
     if not isinstance(workshop_data, dict):
         raise ValueError(f"{path}: 'workshop' must be a mapping, got: {workshop_data!r}")
@@ -1014,6 +1050,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
         store=store_schema,
         llm=llm_config,
         emergent_events=emergent_events,
+        negotiations=negotiations,
         rule_evolution=rule_evolution,
         workshop=workshop,
         constitutional_enforcement=constitutional_enforcement,
@@ -1059,6 +1096,8 @@ def _store_schema_to_yaml(schema) -> dict:
             body["reporting_required"] = True
         if table.initial:
             body["initial"] = [dict(entry) for entry in table.initial]
+        if table.info_file:
+            body["info_file"] = table.info_file
         out[name] = body
     return out
 
@@ -1193,7 +1232,17 @@ def create_metric(metric_id: str, data: dict) -> Metric:
 # parsed and then dropped, which is invisible unless something looks for it --
 # see `collect_unknown_event_fields`.
 EVENT_FIELDS = frozenset(
-    {"id", "condition", "probability", "can_repeat", "description", "eligible"}
+    {
+        "id",
+        "condition",
+        "probability",
+        "can_repeat",
+        "description",
+        "eligible",
+        "metaculus",
+        "retrieved",
+        "market_probability",
+    }
 )
 
 
@@ -1253,6 +1302,9 @@ def create_event(data: dict) -> Event:
         probability=probability,
         can_repeat=can_repeat,
         eligible=eligible,
+        metaculus_url=data.get("metaculus", ""),
+        metaculus_retrieved=data.get("retrieved", ""),
+        metaculus_probability=data.get("market_probability", ""),
     )
 
 
