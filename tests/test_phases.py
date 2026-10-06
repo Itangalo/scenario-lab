@@ -65,6 +65,36 @@ def test_phases_recorded_in_summary(tmp_path):
     assert phases == {"1": PHASE_WORLD, "2": PHASE_WORLD}
 
 
+def test_detect_last_phase_needs_every_actor(tmp_path):
+    """One answered actor is not a completed actors phase (regression)."""
+    run_dir = _run_two_turns(tmp_path)
+    actors_dir = run_dir / "turn-02" / "2-actors"
+    kept = []
+    for path in sorted(actors_dir.iterdir()):
+        if path.name.endswith(".md") and not path.name.endswith(
+            ("-statements.md", "-store.md")
+        ):
+            kept.append(path)
+    assert len(kept) >= 2
+    for path in kept[1:]:
+        path.unlink()
+    for path in list(actors_dir.glob("*-statements.md")):
+        path.unlink()
+    for name in (
+        "3-metric-rules.md",
+        "4-metrics.json",
+        "4-world-state.md",
+        "5-notepad.md",
+        "6-historical-summary.md",
+    ):
+        path = run_dir / "turn-02" / name
+        if path.exists():
+            path.unlink()
+    from scenario_lab.resume import detect_last_phase as _detect
+
+    assert _detect(run_dir, 2) == "events"
+
+
 def test_detect_last_phase_partial_turn(tmp_path):
     run_dir = _run_two_turns(tmp_path)
     assert detect_last_phase(run_dir, 1) == PHASE_WORLD

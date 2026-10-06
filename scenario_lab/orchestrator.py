@@ -508,20 +508,32 @@ class Orchestrator:
 
         # Phase 2: Actor actions. The previous world state plus the triggered
         # events goes in, one action description per actor comes out. When
-        # negotiations are enabled, private rounds run first and each
-        # recipient's inbox joins its action prompt.
+        # negotiations are enabled, private rounds run first: each recipient's
+        # inbox and each sender's outbox join its action prompt, and the full
+        # record rides into the world phase so the Game Master can hold actors
+        # to agreements and price leaks.
+        from .negotiations import render_record
+
+        negotiation_record = ""
+        if start_at > 1:
+            negotiation_record = self._load_negotiation_record(turn)
         if start_at <= 1:
-            negotiation_inboxes = self._run_negotiations(turn, triggered_events)
+            negotiation_inboxes, negotiation_outboxes, delivered_all = (
+                self._run_negotiations(turn, triggered_events)
+            )
+            negotiation_record = render_record(delivered_all)
             if self.progress_tracker:
                 with self.progress_tracker.start_step(2, "") as step:
                     actor_outputs = self._run_actors_step(
-                        turn, triggered_events, negotiation_inboxes
+                        turn, triggered_events,
+                        negotiation_inboxes, negotiation_outboxes,
                     )
                     step.update(f"{len(actor_outputs)} actors responded")
             else:
                 print("\n[2/3] Getting actor actions...")
                 actor_outputs = self._run_actors_step(
-                    turn, triggered_events, negotiation_inboxes
+                    turn, triggered_events,
+                    negotiation_inboxes, negotiation_outboxes,
                 )
                 print(f"  → {len(actor_outputs)} actors responded")
 
@@ -551,11 +563,15 @@ class Orchestrator:
         # Update metrics and generate narrative
         if self.progress_tracker:
             with self.progress_tracker.start_step(3, "") as step:
-                new_metrics, narrative, notepad = self._run_metrics_step(turn, actor_outputs, triggered_events)
+                new_metrics, narrative, notepad = self._run_metrics_step(
+                    turn, actor_outputs, triggered_events, negotiation_record
+                )
                 step.update("Metrics and narrative updated")
         else:
             print("  Updating metrics and generating narrative...")
-            new_metrics, narrative, notepad = self._run_metrics_step(turn, actor_outputs, triggered_events)
+            new_metrics, narrative, notepad = self._run_metrics_step(
+                turn, actor_outputs, triggered_events, negotiation_record
+            )
             print(f"  → Metrics and narrative updated")
 
         if self.output_manager:
@@ -691,6 +707,23 @@ class Orchestrator:
                 f"{events_file} is missing"
             )
         triggered: list[dict] = json.loads(events_file.read_text(encoding="utf-8"))
+        # Emerging developments are bookkeeping over the evaluations, so the
+        # persisted evaluations replay exactly: without this a resumed turn
+        # renders and persists the previous turn's list (stale) instead of
+        # this turn's. The update is idempotent over identical evaluations.
+        evaluations_file = self._turn_dir(turn) / "1-event-evaluations.json"
+        if evaluations_file.is_file():
+            try:
+                evaluations = json.loads(evaluations_file.read_text(encoding="utf-8"))
+            except ValueError:
+                evaluations = None
+            if isinstance(evaluations, list):
+                self._update_emerging_developments(turn, evaluations)
+        elif self.scenario.config.emergent_events.track_unfired:
+            print(
+                f"  Warning: {evaluations_file.name} missing, emerging "
+                "developments stay as restored"
+            )
         known = {event.id: event for event in self.scenario.events}
         for entry in triggered:
             event_id = entry.get("id")
@@ -707,6 +740,32 @@ class Orchestrator:
             )
             self._record_occurrence(turn, event_id, repeatable=repeatable)
         return triggered
+
+    def _load_negotiation_record(self, turn: int) -> str:
+        """Reload the Game Master negotiation record from this turn's artifacts.
+
+        Round prompts are never rerun on a resume into the world phase, so the
+        record is rebuilt from the persisted messages rather than going empty:
+        the rerun's metrics prompt then sees what the original saw.
+        """
+        import json
+
+        try:
+            messages_file = (
+                self._turn_dir(turn) / "2-negotiations" / "messages.json"
+            )
+            entries = json.loads(messages_file.read_text(encoding="utf-8"))
+        except (ValueError, OSError):
+            return ""
+        if not isinstance(entries, list):
+            return ""
+        lines = [
+            f"{entry.get('from')} → {entry.get('to')} "
+            f"(round {entry.get('round')}): {entry.get('text')}"
+            for entry in entries
+            if isinstance(entry, dict)
+        ]
+        return "\n".join(lines)
 
     def _load_actors_phase(self, turn: int) -> dict[str, str]:
         """Reload a skipped actors phase and restore its Python-owned state.
@@ -737,22 +796,20 @@ class Orchestrator:
                 if loaded:
                     actor.statements = loaded
         if self.scenario.store is not None:
-            world_state_file = self._turn_dir(turn) / "4-world-store.json"
+            # Actor files are saved sequentially as each actor's writes apply,
+            # so each holds the cumulative state: restore in actor order and
+            # let the last file present win (a crash mid-step leaves exactly
+            # the writes that had applied). Never touch 4-world-store.json
+            # here: it holds post-world state, and the world phase is about
+            # to rerun -- restoring it would apply every adjustment twice.
             restored = False
-            if world_state_file.is_file():
-                self.scenario.store.restore(
-                    json.loads(world_state_file.read_text(encoding="utf-8"))
-                )
-                restored = True
-            else:
-                for actor_id in self.scenario.actors:
-                    state_file = actors_dir / f"{actor_id}-store.json"
-                    if state_file.is_file():
-                        self.scenario.store.restore(
-                            json.loads(state_file.read_text(encoding="utf-8"))
-                        )
-                        restored = True
-                        break
+            for actor_id in self.scenario.actors:
+                state_file = actors_dir / f"{actor_id}-store.json"
+                if state_file.is_file():
+                    self.scenario.store.restore(
+                        json.loads(state_file.read_text(encoding="utf-8"))
+                    )
+                    restored = True
             if restored:
                 self.scenario.store.current_turn = turn
         return outputs
@@ -1425,15 +1482,22 @@ class Orchestrator:
 
     def _run_negotiations(
         self, turn: int, triggered_events: list[dict]
-    ) -> dict[str, list]:
+    ) -> tuple[dict[str, list], dict[str, list], dict[str, list]]:
         """Optional private rounds before the action write-up.
 
         Each round every participant is asked for notes simultaneously (so
         prompts run in parallel, like the actors step); delivered notes join
         each recipient's inbox for the next round and for the final actions.
-        The loop runs the planned rounds, extends past them while rounds keep
-        delivering (up to ``max_rounds``), and stops early on a silent round:
-        with no new information a further round only spends money.
+        The loop runs up to ``max_rounds`` rounds (at least the planned
+        ``rounds``) while rounds keep delivering, seats every actor not
+        capped by ``actor_rounds``, and stops early on a silent round: with
+        no new information a further round only spends money.
+
+        Returns ``(inboxes, outboxes, delivered_all)``: notes received per
+        actor, notes sent plus delivery failures per actor (a sender that
+        never sees its own offer cannot act on the reply, and an undelivered
+        note must say so rather than read as ignored), and every delivered
+        note for the Game Master record.
         """
         from .negotiations import (
             deliver,
@@ -1445,8 +1509,22 @@ class Orchestrator:
         cfg = self.scenario.config.negotiations
         actor_ids = list(self.scenario.actors.keys())
         inboxes: dict[str, list] = {actor_id: [] for actor_id in actor_ids}
+        outboxes: dict[str, dict] = {
+            actor_id: {"sent": [], "rejected": []} for actor_id in actor_ids
+        }
+        delivered_all: list = []
         if not cfg.enabled:
-            return inboxes
+            return inboxes, outboxes, delivered_all
+        if self.output_manager is not None:
+            # A rerun replaces the aborted attempt wholesale: without this,
+            # messages.json would merge notes from both attempts and stale
+            # round-NN.md files from a longer earlier attempt would remain.
+            # (Actor outputs behave the same way -- rerun files overwrite.)
+            import shutil
+
+            shutil.rmtree(
+                self._turn_dir(turn) / "2-negotiations", ignore_errors=True
+            )
         planned = max(int(cfg.rounds), 1)
         cap = max(int(cfg.max_rounds), planned)
 
@@ -1454,7 +1532,7 @@ class Orchestrator:
         while round_no < cap:
             round_no += 1
             participants = participants_for_round(
-                actor_ids, round_no, cfg.rounds, cfg.actor_rounds
+                actor_ids, round_no, max(int(cfg.max_rounds), 1), cfg.actor_rounds
             )
             if not participants:
                 break
@@ -1477,19 +1555,15 @@ class Orchestrator:
                     negotiation_instructions=(
                         f"## Private negotiations (round {round_no})\n\n"
                         "Before actions are decided, you may send short private "
-                        "notes to other actors. Only the recipients see your "
-                        "notes -- though a recipient may quote them onward, so "
-                        "nothing private is guaranteed to stay private.\n\n"
-                        "Reply with a `## Messages` section holding one JSON "
-                        "block, or `No messages.` when you have nothing to send:\n\n"
-                        "```json\n"
-                        '{"messages": [{"to": "<actor_id>", '
-                        '"text": "<one or two sentences>"}]}\n'
-                        "```\n\n"
+                        "notes to other actors: offers, warnings, requests, "
+                        "reactions to what they sent you. Only the recipients "
+                        "see your notes -- though a recipient may quote them "
+                        "onward, so nothing private is guaranteed to stay "
+                        "private.\n\n"
                         f"You may write to: {', '.join(reachable) if reachable else '(no one)'}. "
-                        "Do not describe your actions in this response; the "
-                        "action write-up comes after negotiations close."
+                        "If you have nothing worth sending, stay silent."
                     ),
+                    negotiation_round=True,
                 )
                 response = client.complete(system, user)
                 pending = getattr(self._llm_io_context, "pending", None)
@@ -1533,6 +1607,10 @@ class Orchestrator:
                 )
                 for message in delivered:
                     inboxes[message.recipient].append(message)
+                    outboxes[writer_id]["sent"].append(message)
+                    delivered_all.append(message)
+                for item in rejected:
+                    outboxes[writer_id]["rejected"].append(item)
                 round_delivered.extend(delivered)
                 round_rejected.extend(rejected)
 
@@ -1547,7 +1625,7 @@ class Orchestrator:
             if not round_delivered:
                 break
 
-        return inboxes
+        return inboxes, outboxes, delivered_all
 
     def generate_actor_action(
         self,
@@ -1555,6 +1633,7 @@ class Orchestrator:
         turn: int,
         triggered_events: list[dict],
         negotiation_messages: str = "",
+        negotiation_outbox: str = "",
     ) -> tuple[str, LLMResponse, object]:
         """Generate one actor's action write-up: prompt, call, raw parts.
 
@@ -1573,6 +1652,7 @@ class Orchestrator:
             triggered_events,
             previous_actions=self.scenario.actors[actor_id].last_actions,
             negotiation_messages=negotiation_messages,
+            negotiation_outbox=negotiation_outbox,
         )
         response = client.complete(system, user)
         pending = getattr(self._llm_io_context, "pending", None)
@@ -1584,6 +1664,7 @@ class Orchestrator:
         turn: int,
         triggered_events: list[dict],
         negotiation_inboxes: Optional[dict[str, list]] = None,
+        negotiation_outboxes: Optional[dict[str, dict]] = None,
     ) -> dict[str, str]:
         """Phase 2: Get actions from each actor.
 
@@ -1593,21 +1674,30 @@ class Orchestrator:
             negotiation_inboxes: Private notes per actor from the negotiation
                 rounds, rendered into each recipient's prompt. Empty when
                 negotiations are off or nobody wrote.
+            negotiation_outboxes: Per actor, the notes it sent plus its
+                delivery failures, rendered into its own prompt so it can act
+                on replies to its offers.
 
         Returns:
             Dict mapping actor_id to their markdown output
         """
-        from .negotiations import render_inbox
+        from .negotiations import render_inbox, render_sent
 
         outputs = {}
         actor_ids = list(self.scenario.actors.keys())
         inboxes = negotiation_inboxes or {}
+        outboxes = negotiation_outboxes or {}
+
+        def _outbox(actor_id: str) -> str:
+            box = outboxes.get(actor_id, {})
+            return render_sent(box.get("sent", []), box.get("rejected", []))
 
         def run_actor(actor_id: str) -> tuple[str, LLMResponse, object]:
             """Execute one actor prompt and return raw response plus I/O record."""
             _, response, pending = self.generate_actor_action(
                 actor_id, turn, triggered_events,
                 negotiation_messages=render_inbox(inboxes.get(actor_id, [])),
+                negotiation_outbox=_outbox(actor_id),
             )
             return actor_id, response, pending
 
@@ -1639,6 +1729,7 @@ class Orchestrator:
             content, response, pending = self.generate_actor_action(
                 actor_id, turn, triggered_events,
                 negotiation_messages=render_inbox(inboxes.get(actor_id, [])),
+                negotiation_outbox=_outbox(actor_id),
             )
             if pending is not None:
                 self._llm_io_context.pending = pending
@@ -2317,20 +2408,27 @@ class Orchestrator:
         )
 
     def _run_metrics_step(
-        self, turn: int, actor_outputs: dict[str, str], triggered_events: list[dict]
+        self,
+        turn: int,
+        actor_outputs: dict[str, str],
+        triggered_events: list[dict],
+        negotiation_record: str = "",
     ) -> tuple[dict, str, str]:
-        """Step 4: Update metrics and generate narrative.
+        """World phase, metrics sub-step: update metrics, narrate, take notes.
 
         Args:
             turn: Current turn number
             actor_outputs: Dict of actor outputs
             triggered_events: List of events that occurred
+            negotiation_record: Private notes exchanged this turn, for the
+                Game Master to hold actors to and price leaks from. Empty
+                when negotiations are off or silent.
 
         Returns:
             Tuple of (metrics dict, narrative string, notepad string)
         """
         system, user = self.prompt_builder.build_metrics_prompt(
-            turn, actor_outputs, triggered_events
+            turn, actor_outputs, triggered_events, negotiation_record
         )
         response = self.llm_clients["metrics"].complete(system, user)
         self._record_llm_call(turn, "metrics", response)

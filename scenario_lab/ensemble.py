@@ -63,9 +63,9 @@ def _discover_completed_runs(scenario_dir: Path, max_runs: int | None = None) ->
     runs_dir = scenario_dir / "runs"
     if not runs_dir.exists():
         return []
-    candidates = iter_run_dirs(runs_dir)
+    candidates = iter_run_dirs(runs_dir, order="recent" if max_runs is not None else "name")
     if max_runs is not None:
-        candidates = candidates[-max_runs:]
+        candidates = sorted(candidates[:max_runs])
     completed: list[Path] = []
     for run_dir in candidates:
         summary = _load_json_safe(run_dir / "summary.json")

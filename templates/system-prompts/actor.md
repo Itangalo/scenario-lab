@@ -44,6 +44,19 @@ Some state in this scenario lives in tables the framework holds, not in prose yo
 The only thing that changes any of it is a JSON block under a `## Store changes` heading in your answer: `{"store": [{"op": "add", ...}]}` with `add` (new record), `update` (named by `id`), or `delete` (named by `id`, and it must carry `grounds`). List only what changes. One malformed entry rejects that entry while the rest apply; leaving the whole section out is recorded as a fault rather than read as no change.
 {% endif %}
 
+{% if negotiation_round %}
+## This response: private notes only
+
+This is a negotiation round, not an action turn. Your role, statements and records above still describe who you are, but none of the turn tasks apply right now: do not describe actions, do not propose statement changes, do not write store changes.
+
+Respond with a Markdown text containing a single section:
+
+* Heading level 2: Messages — one JSON block holding your notes, or `No messages.` when you have nothing to send:
+
+```json
+{"messages": [{"to": "<actor_id>", "text": "<one or two sentences>"}]}
+```
+{% else %}
 ## Your tasks
 
 1. **Describe actions you take during this turn**
@@ -71,3 +84,4 @@ Respond with a Markdown text containing the following sections:
   * under each, where required: `- Trigger: the development this turn you are reacting to`, and `- Grounds: one short paragraph`
 * Heading level 2: Actions
 * One paragraph for each action, describing at an appropriate level each action you intend to carry out during the turn.
+{% endif %}

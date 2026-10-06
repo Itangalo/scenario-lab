@@ -49,16 +49,14 @@ class ProgressTracker:
         self.live: Optional[Live] = None
         self.turn_task_id: Optional[int] = None
 
-        # Step tracking
+        # Step tracking follows the three-phase cycle; the world phase's
+        # sub-steps (rules, metrics, referee, summary) report through the
+        # step's detail text instead of their own step numbers.
         self.steps = [
             "Determining external events",
             "Getting actor actions",
-            "Updating metric rules",
-            "Updating metrics and narrative",
+            "Updating the world",
         ]
-        if has_constitution:
-            self.steps.append("Validating constitutional constraints")
-        self.steps.append("Updating historical summary")
 
     def start_simulation(self):
         """Mark the start of the simulation."""

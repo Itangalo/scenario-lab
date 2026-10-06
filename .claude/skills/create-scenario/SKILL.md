@@ -276,9 +276,9 @@ underlying statement three of them are approximating. It is usually there.
    exists. The user approves the catalogue the same way they approve the
    constraint ledger – it is the scenario's uncertainty inventory, and the
    `update-scenario` skill will diff against exactly this version later.
-3. Run `python -m scenario_lab.cli estimate scenarios/<name>` and report cost.
-4. Summarize the assumptions from design-notes.md.
-5. Present `constraint-ledger.md`, leading with the open rulings and how each
+4. Run `python -m scenario_lab.cli estimate scenarios/<name>` and report cost.
+5. Summarize the assumptions from design-notes.md.
+6. Present `constraint-ledger.md`, leading with the open rulings and how each
    will be handled (event, branch dimension, or explicit limitation). The
    ledger – not the prose files – is the reviewable artifact: it is where a
    domain expert can say "no, that actor has never said that" at the

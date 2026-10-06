@@ -76,10 +76,18 @@ def detect_last_turn(run_dir: Path) -> int:
 def detect_last_phase(run_dir: Path, turn: int) -> Optional[str]:
     """Highest completed phase of one turn ("events", "actors", "world").
 
-    Phase completion is read from the artifacts, not from summary.json, so it
-    holds for runs saved before phase tracking existed. "world" uses the same
-    completeness rule as ``detect_last_turn`` (minus the turn-number guard),
-    so the two can never disagree about whether a turn is finished.
+    Actor files land one by one as parallel calls finish, so *any* response
+    file existing proves nothing: the actors phase counts as complete only
+    when every actor has both its response and its statements file (the
+    statements files are written by the statement step that runs after the
+    last actor answers, so their presence closes the crash window). Actor
+    ids come from the run's own config.json. The summary.json phase record
+    is a consistency signal, not the verdict: it is written after the same
+    statement step, so it can never be ahead of the files.
+    "world" uses the same completeness rule as ``detect_last_turn`` (minus
+    the turn-number guard), so the two can never disagree about whether a
+    turn is finished. Artifact-based throughout, so runs saved before phase
+    tracking existed read correctly too.
     """
     from .orchestrator import PHASE_ACTORS, PHASE_EVENTS, PHASE_WORLD
 
@@ -89,13 +97,23 @@ def detect_last_phase(run_dir: Path, turn: int) -> Optional[str]:
     if not (turn_dir / "1-events.json").is_file():
         return None
     phase = PHASE_EVENTS
+    actor_ids = _run_actor_ids(run_dir)
     actors_dir = turn_dir / "2-actors"
-    if actors_dir.is_dir() and any(
-        f.is_file() and f.suffix == ".md"
-        and not f.name.endswith(("-statements.md", "-store.md"))
-        for f in actors_dir.iterdir()
-    ):
-        phase = PHASE_ACTORS
+    if actors_dir.is_dir():
+        if actor_ids is not None:
+            complete = all(
+                (actors_dir / f"{actor_id}.md").is_file()
+                and (actors_dir / f"{actor_id}-statements.md").is_file()
+                for actor_id in actor_ids
+            )
+        else:
+            complete = any(
+                f.is_file() and f.suffix == ".md"
+                and not f.name.endswith(("-statements.md", "-store.md"))
+                for f in actors_dir.iterdir()
+            )
+        if complete:
+            phase = PHASE_ACTORS
     required_files = [
         "1-events.json",
         "3-metric-rules.md",
@@ -108,6 +126,20 @@ def detect_last_phase(run_dir: Path, turn: int) -> Optional[str]:
     if all((turn_dir / f).exists() for f in required_files):
         phase = PHASE_WORLD
     return phase
+
+
+def _run_actor_ids(run_dir: Path) -> Optional[list[str]]:
+    """Actor ids from the run's config.json snapshot, if readable."""
+    import json
+
+    try:
+        config = json.loads((run_dir / "config.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
+    actors = config.get("actors") if isinstance(config, dict) else None
+    if not isinstance(actors, list) or not actors or not all(isinstance(a, str) for a in actors):
+        return None
+    return list(actors)
 
 
 def next_phase(phase: str) -> str:
@@ -334,12 +366,14 @@ def load_run_state(
             scenario.store.restore(json.loads(world_state_file.read_text(encoding="utf-8")))
             scenario.store.current_turn = from_turn
         else:
+            # Per-actor files accumulate in actor order (each holds the state
+            # after its actor's writes), so the last file present is the
+            # freshest -- not the first, which holds only actor 1's writes.
             for actor_id in scenario.actors:
                 state_file = actors_dir / f"{actor_id}-store.json"
                 if state_file.exists():
                     scenario.store.restore(json.loads(state_file.read_text(encoding="utf-8")))
                     scenario.store.current_turn = from_turn
-                    break
 
     # 4d. When metrics live in the store, the store is the holder and
     # scenario.metrics its read interface: sync the restored records over the
@@ -361,16 +395,6 @@ def load_run_state(
     summary_json_file = run_dir / "summary.json"
     summary = json.loads(summary_json_file.read_text(encoding="utf-8"))
 
-    if "occurred_events" in summary:
-        scenario.occurred_events = set(summary["occurred_events"])
-        # The record now contains repeatable events too, so restoring it must
-        # not mark those as occurred: ``Event.occurred`` is the one-shot
-        # suppression flag, and setting it on a repeatable event would claim
-        # something the record does not say.
-        for event in scenario.events:
-            if event.id in scenario.occurred_events and not event.can_repeat:
-                event.occurred = True
-
     if isinstance(summary.get("event_log"), list):
         scenario.event_log = [
             entry for entry in summary["event_log"]
@@ -378,6 +402,26 @@ def load_run_state(
             and isinstance(entry.get("turn"), int)
             and (from_turn is None or entry["turn"] <= from_turn)
         ]
+
+    if "occurred_events" in summary:
+        scenario.occurred_events = set(summary["occurred_events"])
+        if isinstance(summary.get("event_log"), list) and summary["event_log"]:
+            # The set is history too: entries that only fired after the load
+            # point must not suppress one-shot events in the branch (or the
+            # resumed run). Without turn stamps there would be nothing to
+            # truncate by, so legacy summaries keep the full set.
+            scenario.occurred_events = {
+                event_id
+                for event_id in scenario.occurred_events
+                if event_id in {entry["id"] for entry in scenario.event_log}
+            }
+        # The record now contains repeatable events too, so restoring it must
+        # not mark those as occurred: ``Event.occurred`` is the one-shot
+        # suppression flag, and setting it on a repeatable event would claim
+        # something the record does not say.
+        for event in scenario.events:
+            if event.id in scenario.occurred_events and not event.can_repeat:
+                event.occurred = True
 
     # 6b. Restore emerging developments (unfired emergent proposals carried
     # forward), so a resumed or branched run keeps tracking what was in flight.
@@ -461,13 +505,16 @@ def create_branch(
     if from_turn < 1:
         raise ValueError(f"Cannot branch from turn {from_turn}. Must be at least turn 1.")
 
-    # Create new timestamped run directory. On a same-second collision (for
-    # example many branches launched concurrently), append a numeric suffix
-    # instead of silently merging into an existing directory.
+    # Create new timestamped run directory beside the parent, so a branch of
+    # a subfoldered run stays in its subfolder with the batch it belongs to.
+    # On a same-second collision (for example many branches launched
+    # concurrently), append a numeric suffix instead of silently merging into
+    # an existing directory.
     timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
     base_name = f"run-{timestamp}"
-    (output_base / "runs").mkdir(parents=True, exist_ok=True)
-    new_run_dir = output_base / "runs" / base_name
+    sibling_dir = parent_run_dir.parent
+    sibling_dir.mkdir(parents=True, exist_ok=True)
+    new_run_dir = sibling_dir / base_name
     suffix = 0
     while True:
         try:
@@ -475,7 +522,7 @@ def create_branch(
             break
         except FileExistsError:
             suffix += 1
-            new_run_dir = output_base / "runs" / f"{base_name}-{suffix:02d}"
+            new_run_dir = sibling_dir / f"{base_name}-{suffix:02d}"
 
     # Copy turn directories 1 through from_turn
     for turn_num in range(1, from_turn + 1):
@@ -530,22 +577,37 @@ def create_branch(
     # Get final metrics from the branch point
     final_metrics = new_history[-1]["metrics"] if new_history else {}
 
+    parent_log = parent_summary.get("event_log", [])
+    truncated_log = [
+        entry
+        for entry in parent_log
+        if isinstance(entry, dict) and entry.get("turn", 0) <= from_turn
+    ]
+    # The flat set is truncated to the stamped log: a non-repeatable event
+    # that fired after the branch point in the parent must be able to fire in
+    # the branch, or what-if comparisons silently inherit the parent's future.
+    # A legacy parent without a log keeps its full set: with no stamps there
+    # is nothing to truncate by, and wiping history would be worse.
+    if isinstance(parent_log, list) and parent_log:
+        logged_ids = {entry["id"] for entry in truncated_log}
+    else:
+        logged_ids = None
     new_summary = {
         "scenario": parent_summary["scenario"],
         "total_turns": from_turn,
         "final_metrics": final_metrics,
         "history": new_history,
-        "occurred_events": parent_summary.get("occurred_events", []),
+        "occurred_events": [
+            event_id
+            for event_id in parent_summary.get("occurred_events", [])
+            if logged_ids is None or event_id in logged_ids
+        ],
         # The turn-stamped record, truncated at the branch point. Without it a
         # branch starts with no history: every windowed gate condition reads as
         # shut, and any event group selecting from the record falls to its
         # default. The flat occurred-events set cannot stand in, because it
         # carries no turns.
-        "event_log": [
-            entry
-            for entry in parent_summary.get("event_log", [])
-            if isinstance(entry, dict) and entry.get("turn", 0) <= from_turn
-        ],
+        "event_log": truncated_log,
         "emerging_events": parent_summary.get("emerging_events", []),
         "status": "running",
         "last_updated": datetime.now().isoformat(),

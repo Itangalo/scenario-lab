@@ -34,25 +34,34 @@ def _metric_stats(values: list[float]) -> dict[str, float]:
     }
 
 
-def analyze_runs(scenario_dir: Path, max_runs: int | None = None) -> dict[str, Any]:
+def analyze_runs(
+    scenario_dir: Path,
+    max_runs: int | None = None,
+    filters: list[tuple[str, str]] | None = None,
+) -> dict[str, Any]:
     """Analyze completed runs for a scenario directory.
 
     Args:
         scenario_dir: Path to scenario directory containing runs/
         max_runs: Optional limit (most recent N runs)
+        filters: Optional ``KEY=VALUE`` cohort filters (e.g. subdir=arm-fast)
 
     Returns:
         Analysis dictionary suitable for JSON export.
     """
+    from .cohorts import apply_filters
+
     runs_dir = scenario_dir / "runs"
     if not runs_dir.exists():
         raise ValueError(f"No runs directory found: {runs_dir}")
 
     from .output import iter_run_dirs
 
-    run_dirs = iter_run_dirs(runs_dir)
+    run_dirs = iter_run_dirs(runs_dir, order="recent" if max_runs is not None else "name")
     if max_runs is not None:
-        run_dirs = run_dirs[-max_runs:]
+        run_dirs = sorted(run_dirs[:max_runs])
+    if filters:
+        run_dirs, _excluded = apply_filters(run_dirs, filters)
 
     if not run_dirs:
         raise ValueError(f"No run directories found in: {runs_dir}")

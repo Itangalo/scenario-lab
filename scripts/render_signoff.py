@@ -126,6 +126,34 @@ def normalise(text: str) -> str:
     return re.sub(r"[\s*_`>-]+", " ", text).lower()
 
 
+def store_info_files(scenario_dir: Path) -> list[Path]:
+    """Markdown files linked from the store schema (`info_file`).
+
+    They are validated but rendered nowhere yet, so without this they would
+    be invisible to sign-off entirely. Listed here they show up honestly as
+    uncovered -- the prompt to either render them or stop carrying them.
+    """
+    import yaml
+
+    try:
+        config = yaml.safe_load((scenario_dir / "scenario.yaml").read_text(encoding="utf-8"))
+    except OSError:
+        return []
+    if not isinstance(config, dict):
+        return []
+    store = config.get("store") or {}
+    if not isinstance(store, dict):
+        return []
+    files = []
+    for table in store.values():
+        info = table.get("info_file") if isinstance(table, dict) else None
+        if isinstance(info, str) and info and ".." not in info.split("/"):
+            candidate = scenario_dir / info
+            if candidate.is_file():
+                files.append(candidate)
+    return files
+
+
 def coverage_table(scenario_dir: Path, haystack: str) -> list[str]:
     """Report which headings of which scenario source files reached the prompts."""
     haystack_norm = normalise(haystack)
@@ -134,8 +162,9 @@ def coverage_table(scenario_dir: Path, haystack: str) -> list[str]:
         "|---|---|---|",
     ]
     targets = sorted(
-        list(scenario_dir.glob("background/**/*.md"))
-        + list(scenario_dir.glob("*.md"))
+        set(scenario_dir.glob("background/**/*.md"))
+        | set(scenario_dir.glob("*.md"))
+        | set(store_info_files(scenario_dir))
     )
     for path in targets:
         if path.name.lower() in {"readme.md", "design-notes.md", "constraint-ledger.md"}:

@@ -1361,6 +1361,19 @@ def validate_scenario(scenario_path: Path) -> ValidationResult:
     return ValidationResult(errors, warnings)
 
 
+def _scenario_dir(scenario_path: Path) -> Path:
+    """The scenario directory for a scenario path, yaml file, or variant.
+
+    `validate` accepts all three spellings, but resource files resolve
+    against the directory holding `metrics.md` -- never against the variants/
+    folder a variant yaml happens to sit in.
+    """
+    scenario_dir = scenario_path if scenario_path.is_dir() else scenario_path.parent
+    while not (scenario_dir / "metrics.md").exists() and scenario_dir != scenario_dir.parent:
+        scenario_dir = scenario_dir.parent
+    return scenario_dir
+
+
 def validate_markdown_structure(scenario_path: Path) -> List[str]:
     """Warn about sub-H2 headers in files the loader segments by H2.
 
@@ -1371,9 +1384,7 @@ def validate_markdown_structure(scenario_path: Path) -> List[str]:
     so it warns rather than errors. One H1 title plus H2 sections is the
     standard; anything deeper is prose formatting, not structure.
     """
-    scenario_dir = scenario_path if scenario_path.is_dir() else scenario_path.parent
-    while not (scenario_dir / "metrics.md").exists() and scenario_dir != scenario_dir.parent:
-        scenario_dir = scenario_dir.parent
+    scenario_dir = _scenario_dir(scenario_path)
 
     warnings: List[str] = []
     for filename in ("metrics.md", "events.md"):
@@ -1514,11 +1525,36 @@ def validate_negotiations(scenario: Scenario) -> Tuple[List[str], List[str]]:
             "plus the action write-up. Expect multiplied time and cost."
         )
     actor_template = scenario.custom_user_prompts.get("actor", "")
-    if actor_template and "negotiation_messages" not in actor_template:
+    if actor_template:
+        for variable in ("negotiation_messages", "negotiation_instructions"):
+            if variable not in actor_template:
+                warnings.append(
+                    "negotiations enabled but the custom user-prompts/actor.md "
+                    f"never renders '{variable}': "
+                    + (
+                        "inboxes will be silently empty. "
+                        if variable == "negotiation_messages"
+                        else "message rounds will carry the action write-up "
+                        "format instead of the messages format. "
+                    )
+                    + "Add the block from the default template."
+                )
+    for key in ("actor", *(f"actor_{actor_id}" for actor_id in actors)):
+        system_template = scenario.custom_system_prompts.get(key, "")
+        if system_template and "negotiation_round" not in system_template:
+            warnings.append(
+                f"negotiations enabled but the custom system-prompts/{key}.md "
+                "never branches on 'negotiation_round': message rounds will "
+                "carry the action write-up tasks. Add the block from the "
+                "default template."
+            )
+    metrics_template = scenario.custom_user_prompts.get("metrics_update", "")
+    if metrics_template and "negotiation_record" not in metrics_template:
         warnings.append(
-            "negotiations enabled but the custom user-prompts/actor.md never "
-            "renders 'negotiation_messages': inboxes will be silently empty. "
-            "Add the block from the default template."
+            "negotiations enabled but the custom user-prompts/metrics-update.md "
+            "never renders 'negotiation_record': the Game Master will judge "
+            "actions without seeing the private agreements behind them. Add "
+            "the block from the default template."
         )
     return errors, warnings
 
@@ -1535,7 +1571,7 @@ def validate_store_info_files(scenario: Scenario, scenario_path: Path) -> Tuple[
 
     errors: List[str] = []
     warnings: List[str] = []
-    scenario_dir = Path(scenario_path)
+    scenario_dir = _scenario_dir(scenario_path)
     for name, table in scenario.config.store.tables.items():
         if not table.info_file:
             continue

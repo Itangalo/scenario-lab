@@ -36,6 +36,24 @@ def _count_constraints(constitution: str) -> int:
     return len(re.findall(r"^\s*(?:\d+\.|[-*])\s+\S", constitution, flags=re.MULTILINE))
 
 
+def _info_sections(scenario_dir, info_file) -> list[str]:
+    """H2 section titles of a table's info file (empty when none).
+
+    Titles, not bodies: describe is the one-page overview, and the titles
+    are what tell an author whether each record has its rich description.
+    Unreadable or missing files read as empty here; validation owns the
+    error, describe only reports.
+    """
+    if not info_file:
+        return []
+    from .store import read_info_sections, resolve_info_path
+
+    try:
+        return list(read_info_sections(resolve_info_path(scenario_dir, info_file)))
+    except (ValueError, OSError):
+        return []
+
+
 def describe_scenario(
     scenario_path: Path,
     initial_state: Optional[Path] = None,
@@ -163,6 +181,7 @@ def describe_scenario(
                 "columns": len(table.columns),
                 "writable": table.writable(),
                 "info_file": table.info_file,
+                "info_sections": _info_sections(scenario_dir, table.info_file),
             }
             for name, table in config.store.tables.items()
         },
@@ -314,6 +333,12 @@ def format_describe_report(overview: dict[str, Any]) -> str:
                 f"- Declared state: `{name}` ({table['columns']} column(s); "
                 f"{writer} sets {', '.join(table['writable'])})"
             )
+            if table.get("info_file"):
+                sections = table.get("info_sections") or []
+                lines.append(
+                    f"  - Rich descriptions: `{table['info_file']}` "
+                    f"({len(sections)} section(s))"
+                )
     else:
         lines.append("- Declared state: none (actors carry their own state in prose)")
     emergent = overview["emergent_events"]

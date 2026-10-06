@@ -323,9 +323,39 @@ class TestCreateBranch:
             output_base=output_base
         )
 
-        # Verify runs directory was created
-        assert (output_base / "runs").exists()
-        assert new_run_dir.parent == output_base / "runs"
+        # The branch lands beside its parent (subfoldered parents keep it).
+        assert new_run_dir.parent == parent_run_dir.parent
+
+    def test_branch_stays_in_parent_subfolder(self, tmp_path):
+        """A branch of a subfoldered run stays in the subfolder."""
+        parent_run_dir = tmp_path / "scenarios" / "test" / "runs" / "arm" / "run-123"
+        parent_run_dir.mkdir(parents=True)
+        (parent_run_dir / "config.json").write_text(json.dumps({"name": "Test", "llm": {}}))
+        (parent_run_dir / "summary.json").write_text(json.dumps({
+            "scenario": "Test",
+            "history": [{"turn": 1, "metrics": {}}],
+            "occurred_events": [],
+            "status": "completed",
+        }))
+        turn_dir = parent_run_dir / "turn-01"
+        turn_dir.mkdir()
+        (turn_dir / "1-events.json").write_text("[]")
+        actors_dir = turn_dir / "2-actors"
+        actors_dir.mkdir()
+        (actors_dir / "actor1.md").write_text("Test")
+        (turn_dir / "3-metric-rules.md").write_text("Rules")
+        (turn_dir / "4-metrics.json").write_text("{}")
+        (turn_dir / "4-world-state.md").write_text("State")
+        (turn_dir / "5-notepad.md").write_text("Notes")
+
+        new_run_dir = create_branch(
+            parent_run_dir,
+            from_turn=1,
+            output_base=tmp_path / "scenarios" / "test",
+        )
+
+        assert new_run_dir.parent == parent_run_dir.parent
+        assert new_run_dir.parent.name == "arm"
 
 
 def test_branch_carries_the_event_log_truncated_at_the_branch_point(parent_run_dir, output_base):
@@ -349,3 +379,64 @@ def test_branch_carries_the_event_log_truncated_at_the_branch_point(parent_run_d
     branched = json.loads((branch_dir / "summary.json").read_text())
 
     assert [e["id"] for e in branched["event_log"]] == ["early_signal", "campaign_backlash"]
+
+
+def test_branch_truncates_occurred_events_at_the_branch_point(parent_run_dir, output_base):
+    """A one-shot event that fired after the branch point can fire in the branch.
+
+    The branch used to inherit the parent's full occurred set, so a later
+    non-repeatable event stayed suppressed forever in the what-if run.
+    """
+    from scenario_lab.resume import create_branch, load_run_state
+
+    summary = json.loads((parent_run_dir / "summary.json").read_text())
+    summary["occurred_events"] = ["early_signal", "after_the_branch"]
+    summary["event_log"] = [
+        {"turn": 1, "id": "early_signal"},
+        {"turn": 3, "id": "after_the_branch"},
+    ]
+    (parent_run_dir / "summary.json").write_text(json.dumps(summary, indent=2))
+
+    branch_dir = create_branch(parent_run_dir, from_turn=1, output_base=output_base)
+    branched = json.loads((branch_dir / "summary.json").read_text())
+    assert branched["occurred_events"] == ["early_signal"]
+
+
+def test_load_truncates_occurred_events_to_the_load_point(tmp_path):
+    """Loading an earlier turn must not suppress later one-shot events."""
+    import shutil
+
+    from scenario_lab.resume import load_run_state
+
+    scenario_dir = tmp_path / "sweden-ai-2030"
+    shutil.copytree("scenarios/sweden-ai-2030", scenario_dir,
+                    ignore=shutil.ignore_patterns("runs"))
+    run_dir = scenario_dir / "runs" / "run-20261006-000000"
+    turn_dir = run_dir / "turn-01"
+    (turn_dir / "2-actors").mkdir(parents=True)
+    from scenario_lab.loader import load_scenario as _load
+
+    fresh = _load(scenario_dir)
+    (turn_dir / "4-metrics.json").write_text(json.dumps(
+        {m_id: m.value for m_id, m in fresh.metrics.metrics.items()}
+    ))
+    (turn_dir / "4-world-state.md").write_text("State.")
+    (turn_dir / "3-metric-rules.md").write_text("Rules.")
+    (turn_dir / "5-notepad.md").write_text("Notes.")
+    (run_dir / "config.json").write_text(json.dumps(
+        {"scenario_source": str(scenario_dir / "scenario.yaml")}))
+    (run_dir / "summary.json").write_text(json.dumps({
+        "scenario": fresh.config.name,
+        "total_turns": 2,
+        "occurred_events": ["early_signal", "after_the_load"],
+        "event_log": [
+            {"turn": 1, "id": "early_signal"},
+            {"turn": 2, "id": "after_the_load"},
+        ],
+        "history": [{"turn": 1, "metrics": {}}],
+        "status": "completed",
+    }))
+
+    scenario, _ = load_run_state(run_dir, from_turn=1)
+    assert scenario.occurred_events == {"early_signal"}
+    assert [e["id"] for e in scenario.event_log] == ["early_signal"]

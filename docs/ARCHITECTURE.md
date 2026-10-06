@@ -42,7 +42,7 @@ V4 represents a radical simplification from previous versions. Instead of comple
 - **Definition:** Simulation participants (governments, organizations, companies) with defined goals and behaviors.
 - **Statements:** Each actor holds a **statement ledger** – a list of what it stands for, wants, and is, tagged with a changeability tier: `position` (working stances, move with strategy), `commitment` (staked positions whose reversal costs something someone will collect), and `identity` (what the actor would have to stop being to drop). Absolutes live outside the ledger in `constitution.md`. See *Actor Statement Ledgers* below.
 - **Actions:** Actors review their statements and describe actions each turn. These are descriptive text, not structured data.
-- **Negotiations (optional, off by default):** Before the action write-up, actors may exchange short private notes for up to `max_rounds` rounds (`orchestrator._run_negotiations`, pure delivery logic in `negotiations.py`). Each round's prompts run in parallel; delivered notes join each recipient's inbox for the next round and the final actions, rendered as "Message from ..." lines. Notes are written as `{"messages": [{"to", "text"}]}` under `## Messages`; silence is not a fault. Python enforces the contact allowlist and per-actor round participation and persists every round under `turn-XX/2-negotiations/` (`round-NN.md` plus cumulative `messages.json`); content is never judged, and quoting a note onward (leaking) is possible by design. Stops early on a silent round. Validation warns about the multiplied LLM cost and about custom actor templates that never render the inbox.
+- **Negotiations (optional, off by default):** Before the action write-up, actors may exchange short private notes for up to `max_rounds` rounds (`orchestrator._run_negotiations`, pure delivery logic in `negotiations.py`). Each round's prompts run in parallel; delivered notes join each recipient's inbox for the next round and the final actions, rendered as "Message from ..." lines, while each sender sees its own offers plus delivery failures ("You wrote to ..." / "was not delivered") so it can act on replies and never reads a lost note as ignored. Message rounds render a dedicated prompt variant on both system and user templates (`negotiation_round`), so they never carry the action write-up format; the validator warns on custom templates missing any of the three variables. Notes are written as `{"messages": [{"to", "text"}]}` under `## Messages`; silence is not a fault. Python enforces the contact allowlist and per-actor round participation and persists every round under `turn-XX/2-negotiations/` (`round-NN.md` plus cumulative `messages.json`, replaced wholesale on an actors-phase rerun); content is never judged, and quoting a note onward (leaking) is possible by design. Stops early on a silent round. The full record rides into the metrics prompt (`negotiation_record`), where the Game Master -- the only reader of every note -- holds actors to agreements and prices leaks. Validation warns about the multiplied LLM cost and about custom templates that drop the inbox, the outbox, the round variant, or the Game Master record.
 
 ### Events
 - **Definition:** Exogenous happenings with probabilities and conditions.
@@ -172,11 +172,20 @@ persists before the next starts and records itself in `summary.json` under
 `phases: {"<turn>": phase}`; `run_turn(turn, from_phase=...)` reloads a
 skipped phase's inputs from the turn's artifacts (events list, actor
 responses plus ledgers and store records) instead of rerunning its LLM calls,
-so `resume` continues an interrupted turn mid-turn. Reloading the events phase
-also re-enters each triggered event into the run history, which the
-interrupted turn never persisted. Merging the world phase's prompts (rules,
-metrics, referee, summary) into fewer calls is explicitly deferred: grouping
-changes where a run can stop and continue, merging changes run quality.
+so `resume` continues an interrupted turn mid-turn. Phase detection reads the
+artifacts, not the record: the actors phase counts as complete only when
+every actor (per the run's own `config.json`) has both its response and its
+statements file, since actor files land one by one and the statements files
+are written after the last answer. Reloading the events phase also replays
+the persisted evaluations into emerging-development tracking and re-enters
+each triggered event into the run history, which the interrupted turn never
+persisted. Reloading the actors phase restores store records from the
+per-actor files in actor order (last present wins -- each holds the cumulative
+state); it never touches `4-world-store.json`, which is post-world state that
+the rerun would otherwise apply twice. Merging the world phase's prompts
+(rules, metrics, referee, summary) into fewer calls is explicitly deferred:
+grouping changes where a run can stop and continue, merging changes run
+quality.
 
 1. **Events Step**:
   * **Input:** World state (history + current), current metrics, list of potential events.
@@ -387,7 +396,7 @@ New providers can be registered without changing orchestrator code.
   * Reads `turn-XX/2-actors/<actor_id>.md` to restore each actor's `last_actions` – the response the actor prompt renders back as "Your previous response", and the only substrate for state an actor carries forward in prose rather than in its statement ledger, such as a measure portfolio or a standing commitment. Without it a resumed or branched run handed the actor an empty block and that state was lost at the seam, with nothing recording the loss. A missing file leaves the field empty rather than failing
   * Reads `turn-XX/5-notepad.md` to restore game master notes
   * Reads `turn-XX/6-historical-summary.md` to restore turn history
-  * Reads `summary.json` to restore the occurred-events record, the turn-stamped `event_log`, and emerging developments. The suppression flag `Event.occurred` is re-derived rather than restored from the record, so repeatable events in it are not treated as spent; branch truncates `event_log` at the branch point
+   * Reads `summary.json` to restore the occurred-events record, the turn-stamped `event_log`, and emerging developments. The suppression flag `Event.occurred` is re-derived rather than restored from the record, so repeatable events in it are not treated as spent; both `event_log` and the occurred set truncate at the load point, so a one-shot event that fired later in the parent can fire in the branch (legacy summaries without a log keep the full set, having no stamps to truncate by). The child run lands beside its parent, keeping subfolder batches together.
 
 **Branch Implementation:**
 - **CLI Command:** `python -m scenario_lab.cli branch <run_dir> --from-turn N [options]`
@@ -642,12 +651,13 @@ Cost so far: $0.15 | Projected total: $0.50
 3. any `key=value` pair recorded in `initial_state.notes` (for example `arm=fast`, parsed from `"arm=fast; draw=018; ..."`), which lets scenarios define their own axes
 4. `initial_state` – the draw's *directory* name taken from `initial_state.source`
 5. `draw` – the notes pair if present, else the draw file stem
+6. `subdir` – the output subfolder from `config.json` (`--output-subdir`), so batches stay apart even when an in-place scenario update leaves name and actors unchanged
 
 A run with no value for the requested key is excluded by filters and grouped under `(unknown)` when grouping.
 
-**CLI surface on `ensemble` and `synthesize`:**
-- `--filter KEY=VALUE` (repeatable, AND semantics) restricts the population; exclusion counts are reported rather than silent. Recency (`--max-runs`) is applied before filtering.
-- `--group-by KEY` facets the analysis per cohort.
+**CLI surface on `ensemble`, `synthesize` and `calibrate`:**
+- `--filter KEY=VALUE` (repeatable, AND semantics) restricts the population; exclusion counts are reported rather than silent. Recency (`--max-runs`) is applied before filtering, newest-first by modification time.
+- `--group-by KEY` facets the analysis per cohort (ensemble, synthesize).
 
 **Default behaviour with neither flag is pooled and unchanged**, but when a population mixes scenario identities (name + actors), ensemble reports state it explicitly and point at `--filter`, so contamination is visible even when pooled.
 

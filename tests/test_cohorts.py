@@ -249,3 +249,26 @@ def test_between_group_stats_reports_means_and_rates(runs):
     # scandal fired only in run-a
     assert stats["event_occurrence_rate"]["scandal"]["fast"] == pytest.approx(1 / 3, abs=0.01)
     assert stats["event_occurrence_rate"]["scandal"]["plateau"] == 0.0
+
+
+def test_cohort_value_subdir_from_config(runs):
+    """The output subfolder is a first-class cohort axis."""
+    assert cohort_value({"subdir": "arm-fast"}, "subdir") == "arm-fast"
+    assert cohort_value({}, "subdir") is None
+
+
+def test_apply_filters_selects_subdir(tmp_path):
+    """--filter subdir= keeps one batch apart from another."""
+    scenario_dir = tmp_path / "case"
+    (scenario_dir / "runs" / "arm-fast").mkdir(parents=True)
+    (scenario_dir / "runs" / "arm-slow").mkdir(parents=True)
+    fast = scenario_dir / "runs" / "arm-fast" / "run-01"
+    slow = scenario_dir / "runs" / "arm-slow" / "run-02"
+    fast.mkdir(parents=True)
+    slow.mkdir(parents=True)
+    (fast / "config.json").write_text(json.dumps({"subdir": "arm-fast"}), encoding="utf-8")
+    (slow / "config.json").write_text(json.dumps({"subdir": "arm-slow"}), encoding="utf-8")
+
+    kept, excluded = apply_filters([fast, slow], [("subdir", "arm-fast")])
+    assert kept == [fast]
+    assert [run for run, _ in excluded] == [slow]

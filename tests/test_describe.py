@@ -95,3 +95,31 @@ def test_cli_describe_missing_scenario(capsys):
     captured = capsys.readouterr()
     assert result == 1
     assert "Error describing scenario" in captured.out
+
+
+def test_describe_lists_info_file_sections(tmp_path):
+    """describe shows which records have rich descriptions behind info_file."""
+    import shutil
+
+    from scenario_lab.describe import describe_scenario
+
+    dest = tmp_path / "case"
+    shutil.copytree("scenarios/sweden-ai-2030", dest, ignore=shutil.ignore_patterns("runs"))
+    (dest / "background" / "measures-info.md").write_text(
+        "# Measures\n\n## Solar build-out\nBig and slow.\n\n## Pilot\nSmall.\n",
+        encoding="utf-8",
+    )
+    scenario_yaml = (dest / "scenario.yaml").read_text(encoding="utf-8")
+    (dest / "scenario.yaml").write_text(
+        scenario_yaml
+        + "\nstore:\n  measures:\n    scope: actor\n"
+        "    info_file: background/measures-info.md\n"
+        "    columns:\n      id: {owner: system, type: text}\n"
+        "      name: {owner: actor, type: text, required: true}\n",
+        encoding="utf-8",
+    )
+
+    overview = describe_scenario(dest)
+    table = overview["store"]["measures"]
+    assert table["info_file"] == "background/measures-info.md"
+    assert table["info_sections"] == ["Solar build-out", "Pilot"]

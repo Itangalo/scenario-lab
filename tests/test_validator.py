@@ -900,3 +900,30 @@ def test_validate_markdown_structure_silent_when_clean(tmp_path):
     (tmp_path / "events.md").write_text("## E\n**ID:** e1\n")
 
     assert validate_markdown_structure(tmp_path) == []
+
+
+def test_validate_info_files_resolves_yaml_and_variant_paths(tmp_path):
+    """info_file resolves against the scenario dir for all path spellings."""
+    from pathlib import Path
+
+    from scenario_lab.loader import load_scenario
+    from scenario_lab.store import parse_store_schema
+    from scenario_lab.validator import validate_store_info_files
+
+    scenario = load_scenario("scenarios/sweden-ai-2030")
+    scenario.config.store = parse_store_schema(
+        {
+            "docs": {
+                "scope": "world",
+                "info_file": "background/context.md",
+                "columns": {
+                    "id": {"owner": "system"},
+                    "note": {"owner": "world"},
+                },
+            }
+        }
+    )
+    root = Path("scenarios/sweden-ai-2030").resolve()
+    for target in (root, root / "scenario.yaml", root / "variants" / "quick-test.yaml"):
+        errors, _ = validate_store_info_files(scenario, target)
+        assert errors == [], (target, errors)

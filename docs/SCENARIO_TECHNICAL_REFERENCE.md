@@ -599,6 +599,8 @@ python -m scenario_lab.cli batch-run scenarios/<id> --repeat 20 --initial-states
 
 `run --output-subdir NAME` (and `batch-run --output-subdir NAME` for the whole batch) places runs under `runs/NAME/` instead of directly under `runs/`. Discovery commands (`ensemble`, `calibrate`, `batch-resume`, `check-run-integrity`, live-game lookup, causal baselines) find subfoldered runs without further flags; explicit run paths keep working wherever they did. The name must stay inside `runs/` (no absolute paths, no `..`). One level only: deeper nesting is not a run location and is not discovered.
 
+The subfolder is recorded in each run's `config.json` (`subdir`), so analysis keeps batches apart: `ensemble --filter subdir=NAME`, `--group-by subdir`, and the same flags on `synthesize`. This is also the answer after an in-place scenario update – name and actors no longer distinguish the batches, `subdir` does.
+
 Scenario Lab reads draws as data and never runs generator code. A scenario that needs draws should ship its generator as an ordinary script in its own directory and document how to run it; generating the draws stays a deliberate step you take, not something loading a scenario triggers.
 
 ## Actor Files (`background/actors/<actor_id>.md`)

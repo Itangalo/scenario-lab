@@ -1,5 +1,6 @@
 """Tests for CLI module."""
 
+import os
 import pytest
 import sys
 import json
@@ -433,8 +434,12 @@ def test_cli_check_run_integrity_max_runs_limits_scope(tmp_path):
     (runs_dir / "run-001").mkdir(parents=True)
     (runs_dir / "run-002").mkdir(parents=True)
     (runs_dir / "run-003").mkdir(parents=True)
-    for name in ("run-001", "run-002", "run-003"):
+    import time as _time
+
+    for index, name in enumerate(("run-001", "run-002", "run-003")):
         (runs_dir / name / "config.json").write_text("{}", encoding="utf-8")
+        stamp = _time.time() + index
+        os.utime(runs_dir / name, (stamp, stamp))
     seen = []
 
     def fake_report(run_dir):

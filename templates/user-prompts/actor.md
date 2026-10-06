@@ -51,6 +51,23 @@ Some records are **held for you** and carry forward on their own. You do not res
 The only thing that changes any of this is a JSON block under `## Store changes` in your answer.
 {% endif %}
 
+{% if negotiation_round %}
+{{negotiation_instructions}}
+
+{% if negotiation_outbox %}
+Your notes so far this turn, for context on the replies above:
+
+{{negotiation_outbox}}
+
+{% endif %}
+Respond with a Markdown text containing a single section:
+
+* Heading level 2: Messages — one JSON block holding your notes, or `No messages.` when you have nothing to send:
+
+```json
+{"messages": [{"to": "<actor_id>", "text": "<one or two sentences>"}]}
+```
+{% else %}
 {% if negotiation_messages %}
 ## Private messages to you
 
@@ -59,9 +76,15 @@ The following notes were sent to you privately during negotiations. Only you saw
 {{negotiation_messages}}
 {% endif %}
 
-Use the background information to determine (1) which actions you want to take during the turn and (2) whether your statements still match what you are doing — proposing changes where they no longer do.
+{% if negotiation_outbox %}
+## Your own notes this turn
 
-{{negotiation_instructions}}
+{{negotiation_outbox}}
+
+The first lines are what you sent (the context your replies are answering); any delivery failure after them means the note never arrived — do not act as if it was ignored.
+{% endif %}
+
+Use the background information to determine (1) which actions you want to take during the turn and (2) whether your statements still match what you are doing — proposing changes where they no longer do.
 
 Actions should align with your statements and be realistic given time and other resources. Your actions will be evaluated by a Game Master, who determines how they affect the world. Bold actions can have greater impact, but also greater risk of failure.
 
@@ -82,4 +105,5 @@ Respond with a Markdown text containing the following sections:
 ```
 
 `op` is `add` (with `fields`), `update` (with `id` and `fields`), or `delete` (with `id`, and it must carry `grounds`). List only what changes; everything else carries forward on its own. Leaving the section out is not the same as writing that, and is recorded as a fault.
+{% endif %}
 {% endif %}

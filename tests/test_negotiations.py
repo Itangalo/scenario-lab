@@ -72,6 +72,9 @@ def test_participants_for_round():
     assert participants_for_round(actors, 1, 2, {}) == ["a", "b"]
     assert participants_for_round(actors, 2, 2, {"b": 1}) == ["a"]
     assert participants_for_round(actors, 1, 2, {"b": 0}) == ["a"]
+    # Extension rounds seat everyone not explicitly capped.
+    assert participants_for_round(actors, 3, 3, {}) == ["a", "b"]
+    assert participants_for_round(actors, 3, 3, {"a": 2}) == ["b"]
 
 
 def test_render_inbox_empty():
@@ -125,22 +128,96 @@ def test_negotiation_round_reaches_recipient(tmp_path):
         '{"messages": [{"to": "%s", "text": "Let us coordinate."}]} \n```\n' % recipient
     )
     orchestrator = Orchestrator(scenario, client, manager)
-    inboxes = orchestrator._run_negotiations(1, [])
+    inboxes, outboxes, delivered = orchestrator._run_negotiations(1, [])
 
     received = [(m.sender, m.recipient) for m in inboxes[recipient]]
     assert (sender, recipient) in received or any(
         m.recipient == recipient for m in inboxes[recipient]
     )
+    assert any(m.recipient == recipient for m in delivered)
     messages = json.loads((run_dir / "turn-01" / "2-negotiations" / "messages.json").read_text())
     assert any(m["to"] == recipient for m in messages)
 
-    # The recipient's action prompt carries the note.
-    orchestrator._run_actors_step(1, [], inboxes)
+    # The recipient's action prompt carries the note; the sender's carries
+    # its own offer; the Game Master record names both sides.
+    orchestrator._run_actors_step(1, [], inboxes, outboxes)
     action_prompts = [
         user for system, user in client.calls if "which actions" in (system + user).lower()
     ]
     recipient_calls = [p for p in action_prompts if "Let us coordinate" in p]
     assert recipient_calls, "recipient never saw the note in its action prompt"
+    assert any(
+        "You wrote to" in p and "Let us coordinate" in p for p in action_prompts
+    ), "sender never saw its own offer"
+    from scenario_lab.negotiations import render_record
+
+    record = render_record(delivered)
+    assert sender in record and recipient in record
+
+
+def test_round_prompts_carry_no_action_format():
+    """A message round must not ask for actions in either prompt."""
+    from scenario_lab.prompts import PromptBuilder
+
+    scenario = load_scenario("scenarios/sweden-ai-2030")
+    actor_id = next(iter(scenario.actors))
+    builder = PromptBuilder(scenario)
+    system, user = builder.build_actor_prompt(
+        actor_id, 1, [], negotiation_instructions="Round 1.", negotiation_round=True
+    )
+    assert "Heading level 2: Messages" in system
+    assert "Heading level 2: Messages" in user
+    assert "Heading level 2: Actions" not in system
+    assert "Heading level 2: Actions" not in user
+
+    system, user = builder.build_actor_prompt(actor_id, 1, [])
+    assert "Heading level 2: Actions" in system
+    assert "Heading level 2: Actions" in user
+    assert "Heading level 2: Messages" not in system
+    assert "Heading level 2: Messages" not in user
+
+
+def _message_client(text, recipient):
+    client = _negotiation_client()
+    client.responses["private negotiations"] = (
+        "## Messages\n```json\n"
+        '{"messages": [{"to": "%s", "text": "%s"}]} \n```\n' % (recipient, text)
+    )
+    return client
+
+
+def test_negotiation_rerun_replaces_aborted_attempt(tmp_path):
+    """Rerunning the actors phase must not merge two attempts' notes."""
+    scenario, manager, run_dir = _negotiation_scenario(tmp_path, rounds=2, max_rounds=2)
+    actor_ids = list(scenario.actors.keys())
+    recipient = actor_ids[1]
+    orchestrator = Orchestrator(scenario, _message_client("First.", recipient), manager)
+    orchestrator._run_negotiations(1, [])
+    nego_dir = run_dir / "turn-01" / "2-negotiations"
+    assert nego_dir.is_dir()
+
+    orchestrator2 = Orchestrator(scenario, _message_client("Second.", recipient), manager)
+    orchestrator2._run_negotiations(1, [])
+    messages = json.loads((nego_dir / "messages.json").read_text())
+    assert messages
+    assert all(m["text"] == "Second." for m in messages)
+    rounds = sorted(nego_dir.glob("round-*.md"))
+    assert len(rounds) == 2
+
+
+def test_metrics_prompt_carries_negotiation_record():
+    """The Game Master sees every private note; silence renders nothing."""
+    from scenario_lab.prompts import PromptBuilder
+
+    scenario = load_scenario("scenarios/sweden-ai-2030")
+    scenario.custom_user_prompts.pop("metrics_update", None)
+    builder = PromptBuilder(scenario)
+    _, user = builder.build_metrics_prompt(
+        1, {}, [], "a → b (round 1): Let us coordinate."
+    )
+    assert "a → b (round 1): Let us coordinate." in user
+    _, silent = builder.build_metrics_prompt(1, {}, [])
+    assert "Private notes" not in silent
 
 
 def test_negotiations_disabled_by_default(tmp_path):

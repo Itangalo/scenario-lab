@@ -378,9 +378,11 @@ def resolve_integrity_targets(target: Path, max_runs: Optional[int] = None) -> l
         runs_dir = target / "runs"
 
     if runs_dir.is_dir():
-        run_dirs = iter_run_dirs(runs_dir)
+        run_dirs = iter_run_dirs(
+            runs_dir, order="recent" if max_runs is not None else "name"
+        )
         if max_runs is not None:
-            run_dirs = run_dirs[-max_runs:]
+            run_dirs = sorted(run_dirs[:max_runs])
         if run_dirs:
             return run_dirs
 
@@ -1387,6 +1389,14 @@ def main():
         help="Comma-separated actors the model plays (no menu, no team)",
     )
 
+    # Market-check command (Game Master turn-1 pricing vs market snapshots)
+    market_check_parser = subparsers.add_parser(
+        "market-check",
+        help="Compare turn-1 evaluated event probabilities with Metaculus snapshots",
+    )
+    market_check_parser.add_argument("run_dir", type=Path, help="Path to run directory")
+    market_check_parser.add_argument("--json", action="store_true", help="Print JSON instead of text report")
+
     # Costs command
     costs_parser = subparsers.add_parser("costs", help="Display cost report for a run")
     costs_parser.add_argument("run_dir", type=Path, help="Path to run directory")
@@ -1508,6 +1518,12 @@ def main():
     )
     calibrate_parser.add_argument("scenario", type=Path, help="Path to scenario directory")
     calibrate_parser.add_argument("--max-runs", type=int, default=None, help="Analyze most recent N runs")
+    calibrate_parser.add_argument(
+        "--filter",
+        action="append",
+        default=None,
+        help="Restrict to runs matching KEY=VALUE cohort metadata (repeatable, e.g. subdir=arm-fast)",
+    )
     calibrate_parser.add_argument("--json", action="store_true", help="Print JSON instead of text report")
     calibrate_parser.add_argument("--output", type=Path, default=None, help="Write report to file")
 
@@ -1926,6 +1942,16 @@ def main():
             for warning in result.warnings:
                 print(f"  - {warning}")
         return
+
+    if args.command == "market-check":
+        from .market_check import format_market_check, market_check
+
+        report = market_check(args.run_dir)
+        if args.json:
+            print(json.dumps(report, indent=2, ensure_ascii=False))
+        else:
+            print(format_market_check(report))
+        return 0
 
     if args.command == "costs":
         costs_file = args.run_dir / "costs.json"
@@ -2432,12 +2458,14 @@ def main():
 
     if args.command == "calibrate":
         from .calibration import analyze_runs, format_analysis_report
+        from .cohorts import parse_filter
 
         scenario_dir = args.scenario if args.scenario.is_dir() else args.scenario.parent
         print(f"Analyzing runs for: {scenario_dir}")
 
         try:
-            analysis = analyze_runs(scenario_dir, max_runs=args.max_runs)
+            filters = [parse_filter(spec) for spec in (args.filter or [])]
+            analysis = analyze_runs(scenario_dir, max_runs=args.max_runs, filters=filters or None)
         except Exception as e:
             print(f"❌ Calibration analysis failed: {e}")
             return
@@ -3177,6 +3205,7 @@ def run_live_menu_command(args, llm_client=None) -> int:
         open_live_state,
         parse_llm_actors,
         read_run_seed,
+        recorded_llm_actors,
         run_menu_turn,
     )
 
@@ -3236,7 +3265,13 @@ def run_live_menu_command(args, llm_client=None) -> int:
         seed = read_run_seed(run_dir)
         if seed is not None:
             scenario.config.random_seed = seed
-        output_manager = OutputManager(scenario, run_dir.parent.parent)
+        from .resume import get_scenario_path_from_run
+
+        try:
+            live_base = get_scenario_path_from_run(run_dir)
+        except ValueError:
+            live_base = run_dir.parent.parent
+        output_manager = OutputManager(scenario, live_base)
         output_manager.run_dir = run_dir
 
     if args.log_llm_io:
@@ -3246,6 +3281,16 @@ def run_live_menu_command(args, llm_client=None) -> int:
         if not run_model_preflight_checks(scenario):
             return 1
 
+    # An explicit flag wins; otherwise an existing game keeps the mode its
+    # last menus recorded, so regenerating menus never silently turns a
+    # mixed game all-human.
+    flag_actors = parse_llm_actors(getattr(args, "llm_actors", None))
+    if flag_actors:
+        llm_actors = flag_actors
+    else:
+        llm_actors = recorded_llm_actors(run_dir, args.turn)
+        if llm_actors:
+            print(f"  Keeping model-played actors from menu.json: {', '.join(llm_actors)}")
     try:
         menus = run_menu_turn(
             scenario,
@@ -3257,7 +3302,7 @@ def run_live_menu_command(args, llm_client=None) -> int:
             samples=args.samples,
             llm_client=llm_client,
             config_overrides=getattr(args, "override", None),
-            llm_actors=parse_llm_actors(getattr(args, "llm_actors", None)),
+            llm_actors=llm_actors,
         )
     except LiveError as e:
         print(f"❌ Error: {e}")

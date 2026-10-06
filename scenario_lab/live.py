@@ -130,6 +130,23 @@ def recorded_llm_actors(run_dir: Path, turn: int) -> list[str]:
     return [str(a) for a in recorded] if isinstance(recorded, list) else []
 
 
+def record_llm_actors(run_dir: Path, turn: int, llm_actors: list[str]) -> None:
+    """Overwrite the mode recorded in a turn's menu.json.
+
+    Used when resolve overrides the mode by flag: the chained next menus read
+    this record, so without the rewrite they would silently revert to it.
+    """
+    path = menu_json_path(run_dir, turn)
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return
+    if not isinstance(data, dict):
+        return
+    data["llm_actors"] = list(llm_actors)
+    path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
 def recorded_overrides(run_dir: Path, turn: int) -> list[str]:
     """Raw `--override` flags recorded with a turn's menus (empty if none)."""
     try:
@@ -851,7 +868,11 @@ def run_resolve_turn(
         scenario.config.logging.llm_io = True
 
     actor_ids = list(scenario.actors.keys())
-    model_played = list(llm_actors) if llm_actors is not None else recorded_llm_actors(run_dir, turn)
+    if llm_actors is not None:
+        model_played = list(llm_actors)
+        record_llm_actors(run_dir, turn, model_played)
+    else:
+        model_played = recorded_llm_actors(run_dir, turn)
     unknown_actors = sorted(set(model_played) - set(actor_ids))
     if unknown_actors:
         raise LiveError(

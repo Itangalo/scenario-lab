@@ -53,6 +53,12 @@ The actors in the scenario describe their actions as follows:
 
 {{actor_actions}}
 
+{% if negotiation_record %}
+Private notes the actors exchanged this turn (each saw only its own inbox; you see all of them — hold actors to the agreements they made and price any leaks):
+
+{{negotiation_record}}
+
+{% endif %}
 ---
 
 {% if has_world_store %}

@@ -16,15 +16,19 @@ def is_run_dirname(name: str) -> bool:
     return name.startswith(RUN_DIR_PREFIXES)
 
 
-def iter_run_dirs(runs_dir: Path) -> list[Path]:
+def iter_run_dirs(runs_dir: Path, order: str = "name") -> list[Path]:
     """Every run directory under runs/, including output subfolders.
 
     Runs may sit directly under ``runs/`` or one level down in a named
     subfolder (``runs/<subfolder>/run-*``, via ``--output-subdir``), so a
     flat listing silently drops whole batches from ensembles and resumes. A
     directory counts as a run when its name matches and it holds a
-    ``config.json`` -- turn folders and ``batch-logs/`` never do. Sorted for
-    deterministic consumers.
+    ``config.json`` -- turn folders and ``batch-logs/`` never do.
+
+    ``order="name"`` sorts by path for deterministic consumers;
+    ``order="recent"`` sorts newest first for ``--max-runs`` ("most recent
+    N"), where path order would rank subfolder runs before top-level runs
+    regardless of date.
     """
     runs_dir = Path(runs_dir)
     if not runs_dir.is_dir():
@@ -46,7 +50,17 @@ def iter_run_dirs(runs_dir: Path) -> list[Path]:
                 and (grandchild / "config.json").is_file()
             ):
                 found.append(grandchild)
+    if order == "recent":
+        found.sort(key=_run_mtime, reverse=True)
     return found
+
+
+def _run_mtime(run_dir: Path) -> float:
+    """Modification time for recency ordering (0 when unreadable)."""
+    try:
+        return run_dir.stat().st_mtime
+    except OSError:
+        return 0.0
 
 
 def _provenance_block(provenance: Optional[dict]) -> str:
@@ -204,6 +218,7 @@ class OutputManager:
             Path to the created run directory
         """
         runs_dir = self.base_path / "runs"
+        subdir_name: Optional[str] = None
         if subdir is not None:
             if not isinstance(subdir, str) or not subdir.strip():
                 raise ValueError("--output-subdir must be a non-empty name")
@@ -211,7 +226,8 @@ class OutputManager:
                 raise ValueError(
                     f"--output-subdir must stay inside runs/, got '{subdir}'"
                 )
-            runs_dir = runs_dir / subdir.strip().strip("/")
+            subdir_name = subdir.strip().strip("/")
+            runs_dir = runs_dir / subdir_name
         runs_dir.mkdir(parents=True, exist_ok=True)
 
         timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
@@ -229,7 +245,7 @@ class OutputManager:
                 attempt += 1
 
         # Save config snapshot
-        self._save_config()
+        self._save_config(subdir=subdir_name)
 
         return self.run_dir
 
@@ -928,7 +944,7 @@ class OutputManager:
             return None
         return data if isinstance(data, dict) else None
 
-    def _save_config(self):
+    def _save_config(self, subdir: Optional[str] = None):
         """Save scenario configuration snapshot."""
         config = {
             "name": self.scenario.config.name,
@@ -978,6 +994,14 @@ class OutputManager:
                 "max_per_turn": self.scenario.config.emergent_events.max_per_turn,
                 "max_probability": self.scenario.config.emergent_events.max_probability,
             },
+            # Negotiations multiply the actors phase's calls, so a batch with
+            # them on is not comparable to one with them off. Recorded for
+            # the same reason the schema and reasoning effort are.
+            "negotiations": {
+                "enabled": self.scenario.config.negotiations.enabled,
+                "rounds": self.scenario.config.negotiations.rounds,
+                "max_rounds": self.scenario.config.negotiations.max_rounds,
+            },
             # Who generated language was tuned for; provenance for handouts.
             "workshop": {
                 "audience": self.scenario.config.workshop.audience,
@@ -985,6 +1009,9 @@ class OutputManager:
             },
             "scenario_source": self.scenario.source_path,
             "random_seed": self.scenario.config.random_seed,
+            # Subfolder placement, so cohort analysis can keep batches apart
+            # (--filter subdir=NAME, --group-by subdir). Top-level runs omit it.
+            **({"subdir": subdir} if subdir else {}),
             "logging": {
                 "llm_io": self.scenario.config.logging.llm_io,
             },

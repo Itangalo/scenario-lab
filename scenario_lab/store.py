@@ -1613,11 +1613,15 @@ class StoreView:
 def _history_snapshot(turn_dir: object) -> Optional[dict]:
     """The freshest store snapshot in a turn directory, if any.
 
-    ``4-world-store.json`` holds the whole store after the Game Master step;
-    per-actor ``2-actors/*-store.json`` files are written earlier in the turn
-    and agree on contents. Prefer the world file; fall back to the first actor
-    file found. Snapshots are self-describing (fields plus stamped derived
-    values), so no schema is needed to read them back.
+    ``4-world-store.json`` holds the whole store after the Game Master step.
+    Per-actor ``2-actors/*-store.json`` files are saved sequentially as each
+    actor's writes apply, so each holds the cumulative state and only the
+    last-written one is complete -- they do not agree on contents. Prefer
+    the world file; otherwise keep the snapshot with the highest record-id
+    counters, which only increase as writes apply (filename order is actor-id
+    order, not write order, so sorting names cannot identify it). Snapshots
+    are self-describing (fields plus stamped derived values), so no schema is
+    needed to read them back.
     """
     import json
     from pathlib import Path
@@ -1631,11 +1635,18 @@ def _history_snapshot(turn_dir: object) -> Optional[dict]:
             return None
     actors_dir = turn_dir / "2-actors"
     if actors_dir.is_dir():
+        latest: Optional[dict] = None
+        latest_total = -1
         for state_file in sorted(actors_dir.glob("*-store.json")):
             try:
-                return json.loads(state_file.read_text(encoding="utf-8"))
+                snapshot = json.loads(state_file.read_text(encoding="utf-8"))
             except ValueError:
                 continue
+            counters = snapshot.get("counters") or {}
+            total = sum(v for v in counters.values() if isinstance(v, int))
+            if total >= latest_total:
+                latest, latest_total = snapshot, total
+        return latest
     return None
 
 

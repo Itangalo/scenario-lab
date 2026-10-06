@@ -98,12 +98,20 @@ class PromptBuilder:
             "live_menu": (user_dir / "live_menu.md").read_text(encoding="utf-8"),
         }
 
-    def _get_system_prompt(self, prompt_type: str, actor_id: Optional[str] = None) -> str:
+    def _get_system_prompt(
+        self,
+        prompt_type: str,
+        actor_id: Optional[str] = None,
+        negotiation_round: bool = False,
+    ) -> str:
         """Get system prompt, preferring custom over template.
 
         Args:
             prompt_type: Type of prompt ("events", "actor", "metric_rules", "metrics_update")
             actor_id: Optional actor ID for actor-specific prompts
+            negotiation_round: When true, actor prompts render the round
+                variant (private notes, no action write-up) instead of the
+                turn tasks, so the two never contradict each other.
 
         Returns:
             Rendered system prompt.
@@ -134,29 +142,40 @@ class PromptBuilder:
             actor_specific_key = f"actor_{actor_id}"
             if actor_specific_key in self.scenario.custom_system_prompts:
                 prompt = self.scenario.custom_system_prompts[actor_specific_key]
-                return self._render_system_prompt(prompt, actor_id)
+                return self._render_system_prompt(prompt, actor_id, negotiation_round)
 
         # Check if scenario has generic custom prompt for this type
         custom_key = prompt_type.replace("-", "_")
         if custom_key in self.scenario.custom_system_prompts:
             prompt = self.scenario.custom_system_prompts[custom_key]
             self._template_label = f"system-prompts/{prompt_type}.md (this scenario's override)"
-            return self._render_system_prompt(prompt, actor_id)
+            return self._render_system_prompt(prompt, actor_id, negotiation_round)
 
         # Fall back to template
         self._template_label = f"templates/system-prompts/{prompt_type}.md (shared default)"
-        return self._render_system_prompt(self.system_templates[template_key], actor_id)
+        return self._render_system_prompt(
+            self.system_templates[template_key], actor_id, negotiation_round
+        )
 
-    def _render_system_prompt(self, prompt: str, actor_id: Optional[str] = None) -> str:
+    def _render_system_prompt(
+        self,
+        prompt: str,
+        actor_id: Optional[str] = None,
+        negotiation_round: bool = False,
+    ) -> str:
         """Render a system prompt template with the sandboxed Jinja environment.
 
         SECURITY: uses the same sandboxed environment as custom user prompts,
         since scenario-supplied system prompts are equally untrusted input.
         """
         template = self.jinja_env.from_string(prompt)
-        return self._render(template, self._get_system_prompt_context(actor_id))
+        return self._render(
+            template, self._get_system_prompt_context(actor_id, negotiation_round)
+        )
 
-    def _get_system_prompt_context(self, actor_id: Optional[str] = None) -> dict[str, Any]:
+    def _get_system_prompt_context(
+        self, actor_id: Optional[str] = None, negotiation_round: bool = False
+    ) -> dict[str, Any]:
         """Build the render context available to system prompt templates.
 
         Includes the legacy placeholder names so existing prompts written as
@@ -186,6 +205,7 @@ class PromptBuilder:
             "has_metrics_store": self.scenario.store is not None
             and self.scenario.store.schema.tables.get("metrics") is not None
             and self.scenario.store.schema.tables["metrics"].scope == "world",
+            "negotiation_round": negotiation_round,
         }
 
         if actor_id and actor_id in self.scenario.actors:
@@ -560,6 +580,8 @@ class PromptBuilder:
         previous_actions: str = "",
         negotiation_messages: str = "",
         negotiation_instructions: str = "",
+        negotiation_round: bool = False,
+        negotiation_outbox: str = "",
     ) -> tuple[str, str]:
         """Build prompts for a specific actor.
 
@@ -580,12 +602,15 @@ class PromptBuilder:
                 "" for the action write-up. Scenario overrides that predate
                 negotiations render neither; the validator warns about that
                 when negotiations are enabled.
+            negotiation_round: When true, both prompts render the round
+                variant (notes only, no actions), so a message round never
+                carries the action write-up format.
 
         Returns:
             (system_prompt, user_prompt)
         """
         # Get system prompt (custom or template)
-        system = self._get_system_prompt("actor", actor_id)
+        system = self._get_system_prompt("actor", actor_id, negotiation_round)
 
         # Get user template
         template = self._get_user_template("actor")
@@ -595,6 +620,8 @@ class PromptBuilder:
         context["previous_actions"] = previous_actions
         context["negotiation_messages"] = negotiation_messages
         context["negotiation_instructions"] = negotiation_instructions
+        context["negotiation_round"] = negotiation_round
+        context["negotiation_outbox"] = negotiation_outbox
         
         # Add actor-specific context
         context["store"] = self.store_view(actor_id)
@@ -787,7 +814,11 @@ class PromptBuilder:
         return "\n".join(lines)
 
     def build_metrics_prompt(
-        self, turn: int, actor_actions: dict[str, str], triggered_events: list[dict]
+        self,
+        turn: int,
+        actor_actions: dict[str, str],
+        triggered_events: list[dict],
+        negotiation_record: str = "",
     ) -> tuple[str, str]:
         """Build prompts for metrics update.
 
@@ -795,6 +826,10 @@ class PromptBuilder:
             turn: Current turn number
             actor_actions: Dict of actor_id -> action markdown
             triggered_events: List of events that occurred
+            negotiation_record: Private notes exchanged this turn. The Game
+                Master sees every note -- it needs the agreements to hold
+                actors to and the leaks to price -- while actors saw only
+                their own inboxes.
 
         Returns:
             (system_prompt, user_prompt)
@@ -813,6 +848,7 @@ class PromptBuilder:
         # rules, gets the source instead -- see build_rules_prompt.
         context["metric_rules"] = self._render_metric_rules(turn, context.get("store"))
         context["triggered_events"] = self._format_triggered_events(triggered_events)
+        context["negotiation_record"] = negotiation_record
         
         # Format actor actions
         actions_lines = []
@@ -1111,6 +1147,15 @@ class PromptBuilder:
             lines.append(f"- Probability: {event.probability}")
             lines.append(f"- Can repeat: {'Yes' if event.can_repeat else 'No'}")
             lines.append(f"- Description: {event.description}")
+            if event.metaculus_url:
+                # A prior, not the probability: market odds are unconditional
+                # and dated, this event conditional and per-turn. Shown so the
+                # Game Master can anchor its turn-1 pricing and adjust from
+                # the simulated world state -- never fetched live, always the
+                # snapshotted figure.
+                anchor = f"- Market anchor: Metaculus community {event.metaculus_probability or 'n/a'}"
+                anchor += f" (retrieved {event.metaculus_retrieved or 'unknown date'})"
+                lines.append(anchor)
             lines.append("")
 
         return "\n".join(lines)

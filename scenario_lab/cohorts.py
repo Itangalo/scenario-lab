@@ -1,7 +1,7 @@
 """Cohort bookkeeping over completed runs.
 
 A run's cohort is derived from metadata already persisted in its
-``config.json`` – no new run-time state. Two axes are supported:
+``config.json`` – no new run-time state. Three axes are supported:
 
 - **Scenario identity** – ``config.json``'s ``name`` and ``actors``, which
   separate a variant's runs from its base scenario's (variant runs land in the
@@ -9,6 +9,10 @@ A run's cohort is derived from metadata already persisted in its
 - **Initial-state group** – ``key=value`` pairs recorded in
   ``initial_state.notes`` (for example ``"arm=fast; draw=018; ..."``), or the
   draw's directory name taken from ``initial_state.source``.
+- **Output subfolder** – ``config.json``'s ``subdir`` (``--output-subdir``),
+  so ``--filter subdir=arm-fast`` keeps one batch apart from another even
+  when scenario identity is unchanged (notably across an in-place scenario
+  update, where name and actors cannot catch the mix).
 
 This module is deliberately bookkeeping only: which runs form a cohort is a
 filesystem question. What the difference between cohorts *means* is an LLM
@@ -26,7 +30,7 @@ from typing import Any
 UNKNOWN_GROUP = "(unknown)"
 
 # Keys every run can be filtered or grouped by, regardless of notes content.
-BUILTIN_KEYS = ("scenario", "actors", "initial_state", "draw")
+BUILTIN_KEYS = ("scenario", "actors", "initial_state", "draw", "subdir")
 
 _NOTES_PAIR_RE = re.compile(r"(\w+)\s*=\s*([^;,]+)")
 
@@ -105,6 +109,10 @@ def cohort_value(config: dict[str, Any], key: str) -> str | None:
     if key == "scenario":
         name = config.get("name")
         return name.strip() if isinstance(name, str) and name.strip() else None
+
+    if key == "subdir":
+        subdir = config.get("subdir")
+        return subdir.strip() if isinstance(subdir, str) and subdir.strip() else None
 
     if key == "actors":
         actors = config.get("actors")

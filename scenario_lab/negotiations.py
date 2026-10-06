@@ -153,20 +153,57 @@ def render_inbox(messages: list[NegotiationMessage]) -> str:
     )
 
 
+def render_record(delivered: list[NegotiationMessage]) -> str:
+    """The Game Master record: every private note, sender to recipient.
+
+    Notes are private between actors but never from the Game Master, which
+    judges action success: it needs the agreements to hold actors to and the
+    leaks to price. One line per note; empty when nothing was exchanged.
+    """
+    if not delivered:
+        return ""
+    return "\n".join(
+        f"{message.sender} → {message.recipient} "
+        f"(round {message.round}): {message.text}"
+        for message in delivered
+    )
+
+
+def render_sent(
+    delivered: list[NegotiationMessage], rejected: list[RejectedMessage]
+) -> str:
+    """What one sender sees of its own outbox: sent notes and rejections.
+
+    A sender that never sees its own offer cannot act on the reply to it,
+    and a note that died in delivery must say so -- silence would read as
+    "they ignored me" and poison the next round.
+    """
+    lines = [
+        f"You wrote to {message.recipient} (round {message.round}): {message.text}"
+        for message in delivered
+    ]
+    lines.extend(
+        f"Your note to {item.recipient} was not delivered: {item.reason}"
+        for item in rejected
+    )
+    return "\n".join(lines)
+
+
 def participants_for_round(
     actor_ids: list[str],
     round: int,
-    rounds: int,
+    limit: int,
     actor_rounds: dict[str, int],
 ) -> list[str]:
     """Actors joining this round, in declaration order.
 
     An actor joins rounds 1..k where k is its ``actor_rounds`` entry or the
-    scenario's ``rounds``. Round 1 always seats every actor with k >= 1, so an
-    actor that sits out still sees the final actions like any other turn.
+    round ``limit`` (the scenario's ``max_rounds`` -- extension rounds seat
+    everyone not explicitly capped, and die on silence anyway). An actor
+    that sits out still sees the final actions like any other turn.
     """
     return [
         actor_id
         for actor_id in actor_ids
-        if actor_rounds.get(actor_id, rounds) >= round >= 1
+        if actor_rounds.get(actor_id, limit) >= round >= 1
     ]
