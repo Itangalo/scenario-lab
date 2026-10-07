@@ -76,7 +76,9 @@ python -m scenario_lab.cli live-menu scenarios/global-ai-live --turn 1 --llm-act
 python -m scenario_lab.cli live-resolve <run> --turn 1 --actor-action us-gov=2 ...
 ```
 
-Model-played actors get no menu and no handout; at resolve their actions generate with the same call a simulated turn uses. The choice is recorded in `menu.json`, so later turns (`live-resolve` without the flag, chained auto-menus, the `live` launcher) keep the same mode. Giving a pick for a model-played actor is an error, and so is naming an unknown actor.
+Model-played actors get no menu and no handout; at resolve their actions generate with the same call a simulated turn uses. The choice is recorded in `menu.json`, so later turns (`live-resolve` without the flag, chained auto-menus, the `live` launcher) keep the same mode. Giving a pick for a model-played actor is an error, and so is naming an unknown actor. An explicit `--llm-actors none` switches back to all-human; regenerating a turn's menus never falls back to an older mode. New games can start in a subfolder (`--output-subdir`), and `live-resolve` accepts `--override` flags that apply on top of the menu.json record and ride into later turns.
+
+When the scenario enables negotiations, model-played actors exchange private notes among themselves at resolve (same rounds, contacts, and `2-negotiations/` artifacts as a simulated turn). Human teams negotiate face-to-face in the room – notes addressed to them are rejected with that reason, and the Game Master record carries only model-to-model notes. In an all-human game the rounds are skipped entirely.
 
 ## Options and limitations
 

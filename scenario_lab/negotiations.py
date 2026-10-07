@@ -19,7 +19,7 @@ from dataclasses import dataclass, field
 from typing import Any, Optional
 
 
-MESSAGES_HEADER_RE = re.compile(r"^##\s+messages\s*$", re.IGNORECASE | re.MULTILINE)
+MESSAGES_HEADER_RE = re.compile(r"^#{1,6}\s+messages\s*$", re.IGNORECASE | re.MULTILINE)
 NO_MESSAGES_MARKERS = ("no messages", "none", "nothing", "no private messages")
 
 
@@ -49,7 +49,7 @@ def _messages_section(output: str) -> Optional[str]:
     if not match:
         return None
     rest = output[match.end():]
-    next_header = re.search(r"^##\s+\S", rest, re.MULTILINE)
+    next_header = re.search(r"^#{1,6}\s+\S", rest, re.MULTILINE)
     return rest[: next_header.start()] if next_header else rest
 
 
@@ -65,7 +65,9 @@ def parse_message_block(output: str, round: int, sender: str) -> tuple[list[dict
     if section is None:
         return [], []
     stripped = section.strip()
-    if not stripped or stripped.strip("`*_").strip().lower() in NO_MESSAGES_MARKERS:
+    # The templates instruct `No messages.` (with a period); accept it with
+    # or without trailing punctuation, like the store parser does.
+    if not stripped or stripped.strip("`*_").strip().lower().rstrip(".") in NO_MESSAGES_MARKERS:
         return [], []
 
     fenced = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", section, re.DOTALL)
@@ -109,6 +111,7 @@ def deliver(
     round: int,
     actor_ids: list[str],
     contacts: dict[str, list[str]],
+    unavailable: Optional[dict[str, str]] = None,
 ) -> tuple[list[NegotiationMessage], list[RejectedMessage]]:
     """Apply the delivery policy to parsed entries.
 
@@ -116,10 +119,16 @@ def deliver(
     broadcast, and talking to yourself is not a negotiation). Where the
     scenario restricts contacts, a note outside the sender's list is rejected
     with the reason recorded. Matching is case-insensitive on ids.
+    ``unavailable`` optionally maps actor ids (case-insensitive) to a reason
+    they cannot receive notes right now -- live games use it for human-played
+    actors, who negotiate face-to-face in the room instead of through notes.
     """
     known = {actor_id.lower(): actor_id for actor_id in actor_ids}
     allowed = contacts.get(sender)
     allowed_ids = {a.lower() for a in allowed} if allowed is not None else None
+    closed = (
+        {k.lower(): v for k, v in unavailable.items()} if unavailable else {}
+    )
     delivered: list[NegotiationMessage] = []
     rejected: list[RejectedMessage] = []
     for entry in entries:
@@ -130,6 +139,11 @@ def deliver(
             continue
         if recipient == sender:
             rejected.append(RejectedMessage(round, sender, entry["to"], "cannot message yourself"))
+            continue
+        if wanted in closed:
+            rejected.append(
+                RejectedMessage(round, sender, entry["to"], closed[wanted])
+            )
             continue
         if allowed_ids is not None and recipient.lower() not in allowed_ids:
             rejected.append(

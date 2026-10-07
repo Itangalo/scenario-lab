@@ -1518,15 +1518,19 @@ def validate_negotiations(scenario: Scenario) -> Tuple[List[str], List[str]]:
                 f"negotiations actor_rounds for '{actor_id}' must be an integer of 0 or more"
             )
     if isinstance(cfg.rounds, int) and isinstance(cfg.max_rounds, int):
-        calls = len(actors) * max(cfg.rounds, 1)
+        # The loop runs up to max(rounds, max_rounds) on non-silent turns, so
+        # headline the worst case, not the planned rounds.
+        worst_rounds = max(cfg.rounds, cfg.max_rounds, 1)
+        calls = len(actors) * worst_rounds
         warnings.append(
             f"negotiations enabled: roughly {calls} extra LLM calls per turn "
-            f"({len(actors)} actors x {cfg.rounds} round(s), up to {cfg.max_rounds}), "
+            f"({len(actors)} actors x up to {worst_rounds} round(s): "
+            f"{cfg.rounds} planned, {cfg.max_rounds} max), "
             "plus the action write-up. Expect multiplied time and cost."
         )
     actor_template = scenario.custom_user_prompts.get("actor", "")
     if actor_template:
-        for variable in ("negotiation_messages", "negotiation_instructions"):
+        for variable in ("negotiation_messages", "negotiation_instructions", "negotiation_outbox"):
             if variable not in actor_template:
                 warnings.append(
                     "negotiations enabled but the custom user-prompts/actor.md "
@@ -1536,6 +1540,9 @@ def validate_negotiations(scenario: Scenario) -> Tuple[List[str], List[str]]:
                         if variable == "negotiation_messages"
                         else "message rounds will carry the action write-up "
                         "format instead of the messages format. "
+                        if variable == "negotiation_instructions"
+                        else "actors cannot tell an ignored note from one "
+                        "that never arrived. "
                     )
                     + "Add the block from the default template."
                 )

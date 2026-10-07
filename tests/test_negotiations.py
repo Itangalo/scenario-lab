@@ -33,6 +33,46 @@ def test_parse_silence_is_not_a_fault():
         assert entries == [] and malformed == []
 
 
+def test_parse_silence_marker_with_period_under_header():
+    # The templates instruct `No messages.` (with a period): with or without
+    # the header it must parse as silence, not as a malformed JSON block.
+    for body in (
+        "## Messages\nNo messages.",
+        "## Messages\nNo messages",
+        "## Messages\n`No messages.`",
+        "### Messages\nNo messages.",
+    ):
+        entries, malformed = parse_message_block(body, 1, "a")
+        assert entries == [] and malformed == [], body
+
+
+def test_parse_heading_level_below_h2_keeps_notes():
+    # A writer that uses ### instead of ## still sent notes; dropping them
+    # silently would lose the negotiation.
+    entries, malformed = parse_message_block(
+        '### Messages\n```json\n{"messages": [{"to": "b", "text": "Hi."}]}\n```\n',
+        1,
+        "a",
+    )
+    assert entries == [{"to": "b", "text": "Hi."}]
+    assert malformed == []
+
+
+def test_deliver_unavailable_recipients_rejected_with_reason():
+    delivered, rejected = deliver(
+        [{"to": "b", "text": "Hi"}, {"to": "c", "text": "Hello"}],
+        sender="a",
+        round=1,
+        actor_ids=["a", "b", "c"],
+        contacts={},
+        unavailable={"C": "human-played this turn"},
+    )
+    assert [m.recipient for m in delivered] == ["b"]
+    assert len(rejected) == 1
+    assert rejected[0].recipient == "c"
+    assert "human-played" in rejected[0].reason
+
+
 def test_parse_bad_entry_does_not_kill_good_ones():
     entries, malformed = parse_message_block(
         '## Messages\n{"messages": [{"to": "b", "text": "Hi"}, {"text": "lost"}, "nope"]}',

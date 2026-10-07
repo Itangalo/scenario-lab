@@ -1124,7 +1124,7 @@ def main():
     resume_parser.add_argument("--turns", type=int, default=None, help="Total turns to run")
     resume_parser.add_argument("--model", type=str, default=None, help="Override all LLM models")
     resume_parser.add_argument("--override", action="append", help="Override config (e.g., 'llm.temperature=0.5')")
-    resume_parser.add_argument("--from-turn", type=int, default=None, help="Resume from specific turn")
+    resume_parser.add_argument("--from-turn", type=int, default=None, help="Resume after a specific turn (names the last complete turn; a turn interrupted between phases continues mid-turn automatically)")
     resume_parser.add_argument(
         "--no-progress", action="store_true", help="Disable progress display"
     )
@@ -1275,6 +1275,12 @@ def main():
         default=None,
         help="Comma-separated actors the model plays (no menu, no team), e.g. 'industry,media'",
     )
+    live_menu_parser.add_argument(
+        "--output-subdir",
+        type=str,
+        default=None,
+        help="Subfolder under runs/ for a new live game (batches stay apart)",
+    )
 
     # Live-resolve command (live workshop games)
     live_resolve_parser = subparsers.add_parser(
@@ -1307,6 +1313,12 @@ def main():
         type=str,
         default=None,
         help="Comma-separated actors the model plays (defaults to the menu.json record)",
+    )
+    live_resolve_parser.add_argument(
+        "--override",
+        action="append",
+        default=None,
+        help="Override config (e.g. 'output_language=German'); applied on top of the menu.json record and carried into later turns",
     )
 
     # Live launcher command (guided start/resume for workshop games)
@@ -1387,6 +1399,12 @@ def main():
         type=str,
         default=None,
         help="Comma-separated actors the model plays (no menu, no team)",
+    )
+    live_parser.add_argument(
+        "--output-subdir",
+        type=str,
+        default=None,
+        help="Subfolder under runs/ for a new live game (batches stay apart)",
     )
 
     # Market-check command (Game Master turn-1 pricing vs market snapshots)
@@ -2525,7 +2543,11 @@ def main():
             return 1
 
         # Determine resume point
-        from_turn = args.from_turn or detect_last_turn(args.run_dir)
+        from_turn = (
+            args.from_turn
+            if args.from_turn is not None
+            else detect_last_turn(args.run_dir)
+        )
         # A turn interrupted between phases keeps its completed phases on
         # disk; continue it mid-turn instead of replaying it. ("world" here
         # cannot happen: detect_last_turn would have counted the turn.)
@@ -2629,8 +2651,15 @@ def main():
             apply_model_override(scenario.config.llm, args.model)
             print(f"  → Overrode all models to: {args.model}")
 
-        # Setup OutputManager for existing directory
-        scenario_dir = args.run_dir.parent.parent
+        # Setup OutputManager for existing directory. The run may sit in an
+        # output subfolder (runs/<sub>/run-*); resolve the scenario dir from
+        # the run itself rather than assuming a fixed depth.
+        from .resume import get_scenario_path_from_run
+
+        try:
+            scenario_dir = get_scenario_path_from_run(args.run_dir)
+        except ValueError:
+            scenario_dir = args.run_dir.parent.parent
         output_manager = OutputManager(scenario, scenario_dir)
         output_manager.run_dir = args.run_dir  # Use existing directory
 
@@ -2680,7 +2709,8 @@ def main():
             llm_client=None,
             num_turns=num_turns,
             output_manager=output_manager,
-            start_turn=start_turn
+            start_turn=start_turn,
+            start_phase=start_phase,
         )
 
         # Finalize
@@ -3255,13 +3285,20 @@ def run_live_menu_command(args, llm_client=None) -> int:
             scenario.config.random_seed = random.getrandbits(64)
         output_base = resolve_output_base(args.target)
         output_manager = OutputManager(scenario, output_base)
-        run_dir = output_manager.start_run(prefix="live-")
+        run_dir = output_manager.start_run(
+            prefix="live-", subdir=getattr(args, "output_subdir", None)
+        )
         mark_live_run(run_dir)
         print(f"New live game: {run_dir}")
     else:
         if not is_live_run(run_dir):
             print(
                 f"⚠️  {run_dir.name} is not marked as a live game – continuing anyway."
+            )
+        if getattr(args, "seed", None) is not None:
+            print(
+                "⚠️  --seed only applies to new live games; this game keeps "
+                "the seed recorded in its config.json."
             )
         seed = read_run_seed(run_dir)
         if seed is not None:
@@ -3290,8 +3327,13 @@ def run_live_menu_command(args, llm_client=None) -> int:
     if flag_actors is not None:
         llm_actors = flag_actors
     else:
+        # An existing menu.json speaks for its own turn, including an
+        # explicit all-human record ([]): falling back to an older mixed
+        # record here would resurrect a mode the facilitator switched off.
+        from .live import menu_json_path
+
         llm_actors = recorded_llm_actors(run_dir, args.turn)
-        if not llm_actors:
+        if not llm_actors and not menu_json_path(run_dir, args.turn).is_file():
             llm_actors = latest_llm_actors(run_dir, args.turn)
         if llm_actors:
             print(f"  Keeping model-played actors from menu.json: {', '.join(llm_actors)}")
@@ -3351,6 +3393,7 @@ def run_live_resolve_command(args, llm_client=None, input_fn=input) -> int:
             llm_client=llm_client,
             input_fn=input_fn,
             llm_actors=llm_actors,
+            extra_overrides=getattr(args, "override", None),
         )
     except LiveCancelled as e:
         print(f"Cancelled: {e}")
@@ -3409,6 +3452,7 @@ def run_live_command(args, input_fn=input, llm_client=None) -> int:
             log_llm_io=args.log_llm_io,
             override=args.override,
             llm_actors=getattr(args, "llm_actors", None),
+            output_subdir=getattr(args, "output_subdir", None),
         )
 
     if args.target is not None:
@@ -3516,6 +3560,9 @@ def _live_continue_game(args, run_dir, llm_client=None, input_fn=input) -> int:
                 seed=args.seed,
                 skip_model_checks=args.skip_model_checks,
                 log_llm_io=args.log_llm_io,
+                override=args.override,
+                llm_actors=getattr(args, "llm_actors", None),
+                output_subdir=getattr(args, "output_subdir", None),
             ),
             llm_client=llm_client,
         )
@@ -3528,6 +3575,8 @@ def _live_continue_game(args, run_dir, llm_client=None, input_fn=input) -> int:
                 no_auto_menu=False,
                 model=args.model,
                 log_llm_io=args.log_llm_io,
+                override=getattr(args, "override", None),
+                llm_actors=getattr(args, "llm_actors", None),
             ),
             llm_client=llm_client,
             input_fn=input_fn,
@@ -3545,6 +3594,8 @@ def _live_continue_game(args, run_dir, llm_client=None, input_fn=input) -> int:
             no_auto_menu=False,
             model=args.model,
             log_llm_io=args.log_llm_io,
+            override=getattr(args, "override", None),
+            llm_actors=getattr(args, "llm_actors", None),
         ),
         llm_client=llm_client,
         input_fn=input_fn,
@@ -3578,6 +3629,8 @@ def _live_resume_target(args, run_dir, llm_client=None, input_fn=input) -> int:
             skip_model_checks=args.skip_model_checks,
             log_llm_io=args.log_llm_io,
             override=args.override,
+            llm_actors=getattr(args, "llm_actors", None),
+            output_subdir=getattr(args, "output_subdir", None),
         ),
         llm_client=llm_client,
     )

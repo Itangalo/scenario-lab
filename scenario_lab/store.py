@@ -1640,7 +1640,9 @@ class StoreView:
 # --------------------------------------------------------------------------
 
 
-def _history_snapshot(turn_dir: object) -> Optional[dict]:
+def _history_snapshot(
+    turn_dir: object, actor_order: Optional[list[str]] = None
+) -> Optional[dict]:
     """The freshest store snapshot in a turn directory, if any.
 
     ``4-world-store.json`` holds the whole store after the Game Master step.
@@ -1652,7 +1654,8 @@ def _history_snapshot(turn_dir: object) -> Optional[dict]:
     written in. Counters cannot identify it: they only increase on ``add``,
     so an update/delete-only turn ties every snapshot. Snapshots are
     self-describing (fields plus stamped derived values), so no schema is
-    needed to read them back.
+    needed to read them back. ``actor_order`` lets batch readers pass the
+    order once instead of re-reading config.json per turn.
     """
     import json
     from pathlib import Path
@@ -1673,7 +1676,7 @@ def _history_snapshot(turn_dir: object) -> Optional[dict]:
     }
     if not by_actor:
         return None
-    order = _snapshot_actor_order(turn_dir)
+    order = actor_order if actor_order is not None else _snapshot_actor_order(turn_dir)
     ranked = [by_actor[actor_id] for actor_id in order if actor_id in by_actor]
     ranked.extend(
         path for name, path in sorted(by_actor.items()) if name not in set(order)
@@ -1731,14 +1734,32 @@ def read_table_history(
 
     wanted = set(turns) if turns is not None else None
     series: list[dict[str, Any]] = []
-    for turn_dir in sorted(Path(run_dir).glob("turn-*")):
+    # config.json is identical for every turn: read the actor order once
+    # here rather than once per turn directory. (_snapshot_actor_order
+    # resolves config.json from a turn directory's parent, so it cannot
+    # take the run directory directly.)
+    order: list[str] = []
+    try:
+        run_config = json.loads(
+            (Path(run_dir) / "config.json").read_text(encoding="utf-8")
+        )
+    except (OSError, ValueError):
+        run_config = {}
+    actors = run_config.get("actors") if isinstance(run_config, dict) else None
+    if isinstance(actors, list):
+        order = [a for a in actors if isinstance(a, str)]
+    turn_dirs: list[tuple[int, Path]] = []
+    for turn_dir in Path(run_dir).glob("turn-*"):
         match = re.fullmatch(r"turn-(\d+)", turn_dir.name)
         if not match:
             continue
-        turn = int(match.group(1))
+        turn_dirs.append((int(match.group(1)), turn_dir))
+    # Sort numerically: lexicographic order puts turn-100 between turn-10
+    # and turn-11.
+    for turn, turn_dir in sorted(turn_dirs):
         if wanted is not None and turn not in wanted:
             continue
-        snapshot = _history_snapshot(turn_dir)
+        snapshot = _history_snapshot(turn_dir, actor_order=order)
         if snapshot is None:
             continue
         entries = [

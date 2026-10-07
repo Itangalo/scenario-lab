@@ -44,11 +44,13 @@ class CostEstimator:
         rules_tokens = self._estimate_rules_tokens()
         metrics_tokens = self._estimate_metrics_tokens()
         summary_tokens = self._estimate_summary_tokens()
+        negotiations_tokens = self._estimate_negotiations_tokens()
 
         # Total per turn
         per_turn_tokens = (
             events_tokens
             + actors_tokens
+            + negotiations_tokens
             + rules_tokens
             + metrics_tokens
             + summary_tokens
@@ -57,12 +59,20 @@ class CostEstimator:
         # Calculate costs using configured models
         events_cost = self._calculate_task_cost(events_tokens, "events")
         actors_cost = self._calculate_task_cost(actors_tokens, "actors")
+        negotiations_cost = self._calculate_task_cost(
+            negotiations_tokens, "negotiations"
+        )
         rules_cost = self._calculate_task_cost(rules_tokens, "rules")
         metrics_cost = self._calculate_task_cost(metrics_tokens, "metrics")
         summary_cost = self._calculate_task_cost(summary_tokens, "summary")
 
         per_turn_cost = (
-            events_cost + actors_cost + rules_cost + metrics_cost + summary_cost
+            events_cost
+            + actors_cost
+            + negotiations_cost
+            + rules_cost
+            + metrics_cost
+            + summary_cost
         )
 
         return {
@@ -77,12 +87,45 @@ class CostEstimator:
                     "cost_usd": actors_cost,
                     "num_actors": len(self.scenario.config.actor_ids),
                 },
+                "negotiations": {
+                    "tokens": negotiations_tokens,
+                    "cost_usd": negotiations_cost,
+                    "max_rounds": self.scenario.config.negotiations.max_rounds,
+                },
                 "rules": {"tokens": rules_tokens, "cost_usd": rules_cost},
                 "metrics": {"tokens": metrics_tokens, "cost_usd": metrics_cost},
                 "summary": {"tokens": summary_tokens, "cost_usd": summary_cost},
             },
             "warning": "Estimates may vary ±30% based on actual LLM response length",
         }
+
+    def _estimate_negotiations_tokens(self) -> int:
+        """Estimate tokens for negotiation rounds (0 when disabled).
+
+        Samples one negotiation-round actor prompt and multiplies by actors
+        and the worst-case round count, mirroring the validator's warning:
+        rounds run to ``max(rounds, max_rounds)`` on non-silent turns.
+        """
+        cfg = self.scenario.config.negotiations
+        if not cfg.enabled:
+            return 0
+        num_actors = len(self.scenario.config.actor_ids)
+        if num_actors == 0:
+            return 0
+        sample_actor_id = self.scenario.config.actor_ids[0]
+        system, user = self.prompt_builder.build_actor_prompt(
+            sample_actor_id,
+            turn=1,
+            triggered_events=[],
+            negotiation_instructions="Sample round instructions.",
+            negotiation_round=True,
+        )
+        input_tokens = estimate_tokens(system) + estimate_tokens(user)
+        output_tokens = estimate_tokens(
+            '{"messages": [{"to": "actor", "text": "Sample note text."}]}'
+        )
+        worst_rounds = max(cfg.rounds, cfg.max_rounds, 1)
+        return (input_tokens + output_tokens) * num_actors * worst_rounds
 
     def _estimate_events_tokens(self) -> int:
         """Estimate tokens for events step."""
@@ -204,7 +247,8 @@ class CostEstimator:
 
         if task_name == "events":
             model = config.events
-        elif task_name == "actors":
+        elif task_name in ("actors", "negotiations"):
+            # Negotiation rounds run on the per-actor clients, like actions.
             # Use first actor's model or default
             model = config.get_actor_models(self.scenario.config.actor_ids[0]) if self.scenario.config.actor_ids else config.events
         elif task_name == "rules":
@@ -269,6 +313,15 @@ def format_estimate_report(estimate: dict, scenario_name: str, num_turns: int) -
             lines.append(
                 f"  {task_name.capitalize():10s}: ~{tokens:,} tokens "
                 f"({task_data['num_actors']} actors) → ${cost:.4f}"
+            )
+        elif task_name == "negotiations" and tokens:
+            lines.append(
+                f"  {task_name.capitalize():10s}: ~{tokens:,} tokens "
+                f"(up to {task_data.get('max_rounds', '?')} rounds) → ${cost:.4f}"
+            )
+        elif task_name == "negotiations":
+            lines.append(
+                f"  {task_name.capitalize():10s}: disabled → $0.0000"
             )
         else:
             lines.append(

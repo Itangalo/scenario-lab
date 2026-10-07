@@ -1349,3 +1349,26 @@ def test_store_info_renders_from_a_loop_in_the_sandbox():
     assert template.render(store=view, ids=["M1", "M9"]) == (
         "M1: A large build-out with reference costs.|M9: |"
     )
+
+
+def test_read_table_history_orders_turns_numerically(tmp_path):
+    """turn-100 sorts after turn-10, not between turn-10 and turn-11."""
+    from scenario_lab.store import read_table_history
+
+    run_dir = tmp_path / "run-01"
+    run_dir.mkdir()
+    (run_dir / "config.json").write_text(json.dumps({"actors": ["a"]}))
+    for turn in (9, 10, 11, 100):
+        turn_dir = run_dir / f"turn-{turn:02d}"
+        turn_dir.mkdir()
+        (turn_dir / "4-world-store.json").write_text(json.dumps({
+            "records": [{
+                "table": "measures", "id": "M1",
+                "fields": {"level": turn}, "derived": {},
+                "removed_turn": None,
+            }],
+        }))
+    series = read_table_history(run_dir, "measures", "M1", "level")
+    assert [(s["turn"], s["value"]) for s in series] == [
+        (9, 9), (10, 10), (11, 11), (100, 100),
+    ]

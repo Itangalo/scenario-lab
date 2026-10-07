@@ -484,3 +484,24 @@ def test_load_truncates_occurred_events_to_the_load_point(tmp_path):
     scenario, _ = load_run_state(run_dir, from_turn=1)
     assert scenario.occurred_events == {"early_signal"}
     assert [e["id"] for e in scenario.event_log] == ["early_signal"]
+
+
+def test_branch_carries_phases_and_termination(parent_run_dir, output_base):
+    """Phase markers ride along; termination only when it fired by the branch."""
+    summary = json.loads((parent_run_dir / "summary.json").read_text())
+    summary["phases"] = {"1": "world", "2": "world", "3": "world"}
+    summary["termination"] = {
+        "turn": 3, "condition_id": "done", "when": "x > 1",
+        "description": "finished",
+    }
+    (parent_run_dir / "summary.json").write_text(json.dumps(summary, indent=2))
+
+    early = create_branch(parent_run_dir, from_turn=2, output_base=output_base)
+    branched = json.loads((early / "summary.json").read_text())
+    assert branched["phases"] == {"1": "world", "2": "world"}
+    assert "termination" not in branched
+
+    late = create_branch(parent_run_dir, from_turn=3, output_base=output_base)
+    branched = json.loads((late / "summary.json").read_text())
+    assert branched["phases"] == {"1": "world", "2": "world", "3": "world"}
+    assert branched["termination"]["condition_id"] == "done"

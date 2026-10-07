@@ -236,6 +236,17 @@ class OutputManager:
                     f"--output-subdir must stay inside runs/, got '{subdir}'"
                 )
             subdir_name = subdir.strip().strip("/")
+            if "/" in subdir_name:
+                raise ValueError(
+                    "--output-subdir must be a single folder name, "
+                    f"got '{subdir}': discovery only descends one level, so "
+                    "deeper runs would be invisible to ensembles and resumes"
+                )
+            if subdir_name == "batch-logs":
+                raise ValueError(
+                    "--output-subdir cannot be 'batch-logs': that name is "
+                    "reserved and its runs would be undiscoverable"
+                )
             runs_dir = runs_dir / subdir_name
         runs_dir.mkdir(parents=True, exist_ok=True)
 
@@ -709,12 +720,19 @@ class OutputManager:
 
         # incremental writers rebuild this document, so carry the keys other
         # writers own: a mid-turn phase record must survive the metrics write
-        # that follows it, and a termination record must survive everything.
+        # that follows it, a termination record must survive everything, and
+        # resume metadata must survive the turns that follow the resume.
         carried: dict = {}
         if summary_path.exists():
             try:
                 previous = json.loads(summary_path.read_text(encoding="utf-8"))
-                for key in ("termination", "phases"):
+                for key in (
+                    "termination",
+                    "phases",
+                    "resumed_at",
+                    "resumed_from_turn",
+                    "resumed_from_phase",
+                ):
                     if key in previous:
                         carried[key] = previous[key]
             except json.JSONDecodeError:

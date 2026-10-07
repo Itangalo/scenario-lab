@@ -184,6 +184,25 @@ def recorded_overrides(run_dir: Path, turn: int) -> list[str]:
     return [str(o) for o in overrides] if isinstance(overrides, list) else []
 
 
+def record_config_overrides(
+    run_dir: Path, turn: int, overrides: list[str]
+) -> None:
+    """Overwrite the config overrides recorded in a turn's menu.json.
+
+    Used when resolve adds overrides by flag: the chained next menus read
+    this record, so without the rewrite they would silently drop them.
+    """
+    path = menu_json_path(run_dir, turn)
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return
+    if not isinstance(data, dict):
+        return
+    data["config_overrides"] = list(overrides)
+    path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
 def read_menus(run_dir: Path, turn: int) -> dict[str, ActorMenu]:
     """Read the menus ``live-menu`` wrote for a turn.
 
@@ -288,6 +307,10 @@ def wrap_human_action(title: str, text: str, has_store_tables: bool) -> str:
     omitted (absence means the ledger carries forward untouched), and a no-op
     store section is included only for scenarios that declare store tables,
     where an absent section would be recorded as a fault.
+
+    This is deliberate: a free-text pick cannot be parsed into ledger or
+    store commands without guessing, so human teams act through their pick
+    and negotiate ledger-level moves with the facilitator out of band.
     """
     lines = ["## Actions", "", f"### {title}", "", text.strip(), ""]
     if has_store_tables:
@@ -561,8 +584,13 @@ def read_run_seed(run_dir: Path) -> Optional[int]:
 def attach_output_manager(scenario: Scenario, run_dir: Path):
     """Attach an OutputManager to an existing run directory (resume pattern)."""
     from .output import OutputManager
+    from .resume import get_scenario_path_from_run
 
-    output_manager = OutputManager(scenario, run_dir.parent.parent)
+    try:
+        scenario_dir = get_scenario_path_from_run(run_dir)
+    except ValueError:
+        scenario_dir = run_dir.parent.parent
+    output_manager = OutputManager(scenario, scenario_dir)
     output_manager.run_dir = run_dir
     return output_manager
 
@@ -827,12 +855,13 @@ def pick_all(
 def parse_actor_action_specs(raw: Optional[list[str]]) -> dict[str, str]:
     """Parse repeatable ``--actor-action actor=pick`` flags.
 
-    Raises:
-        LiveError: On a flag without exactly one ``=`` or an empty side.
+    Splits on the first ``=`` so free-text picks may contain ``=``
+    (``eu=we demand a=b``). Raises:
+        LiveError: On a flag without ``=`` or with an empty side.
     """
     specs: dict[str, str] = {}
     for item in raw or []:
-        if item.count("=") != 1:
+        if "=" not in item:
             raise LiveError(
                 f"Invalid --actor-action '{item}': use 'actor_id=pick' "
                 "(e.g. 'eu=3' or 'us-gov=we sign the accord')."
@@ -858,6 +887,7 @@ def run_resolve_turn(
     auto_menu: bool = True,
     input_fn=input,
     llm_actors: Optional[list[str]] = None,
+    extra_overrides: Optional[list[str]] = None,
 ) -> TurnResult:
     """Resolve a live turn from the teams' picks.
 
@@ -869,6 +899,14 @@ def run_resolve_turn(
     the standard rules → metrics → referee → summary chain with identical
     persistence. ``llm_actors`` defaults to the menu.json record, so a mixed
     game keeps its mode without repeating the flag every turn.
+    ``extra_overrides`` are applied on top of the recorded menu.json
+    overrides and recorded back, so the chained next menus keep them.
+
+    When the scenario enables negotiations, model-played actors exchange
+    private notes among themselves before acting (same rounds, contacts,
+    and artifacts as a simulated turn); human teams negotiate face-to-face
+    in the room, so notes addressed to them are rejected with that reason
+    and the Game Master record carries only model-to-model notes.
 
     When ``auto_menu`` holds (default), the next turn's menus generate
     immediately with the recorded menu settings, so the facilitator's next
@@ -889,8 +927,14 @@ def run_resolve_turn(
     # Re-apply the game's config overrides (recorded in menu.json): this
     # process loaded the scenario fresh from YAML, so without this the
     # resolve would silently drop settings the menus were generated with
-    # (e.g. output_language).
-    apply_config_overrides(scenario, recorded_overrides(run_dir, turn))
+    # (e.g. output_language). Flag overrides apply on top and are recorded
+    # back so the chained next menus keep them too.
+    recorded = recorded_overrides(run_dir, turn)
+    apply_config_overrides(scenario, recorded)
+    fresh = [o for o in (extra_overrides or []) if o not in recorded]
+    if fresh:
+        apply_config_overrides(scenario, fresh)
+        record_config_overrides(run_dir, turn, [*recorded, *fresh])
     if log_llm_io:
         scenario.config.logging.llm_io = True
 
@@ -949,13 +993,63 @@ def run_resolve_turn(
         triggered_events = load_triggered_events(run_dir, turn, required=True)
         store_tables = has_store_tables(scenario)
 
+        # Private notes for model-played actors, same machinery as a
+        # simulated turn. Human teams negotiate face-to-face in the room:
+        # notes addressed to them are rejected with that reason, and the
+        # Game Master record carries only model-to-model notes.
+        from .negotiations import render_inbox, render_record, render_sent
+
+        negotiation_record = ""
+        negotiation_inboxes: dict[str, list] = {}
+        negotiation_outboxes: dict[str, dict] = {}
+        if scenario.config.negotiations.enabled:
+            if model_played:
+                human_played_ids = [
+                    aid for aid in actor_ids if aid not in model_played
+                ]
+                print(
+                    "  … Exchanging private notes between model-played "
+                    "actors (waiting for the model)...",
+                    flush=True,
+                )
+                negotiation_inboxes, negotiation_outboxes, delivered_all = (
+                    orchestrator._run_negotiations(
+                        turn,
+                        triggered_events,
+                        writers=model_played,
+                        unavailable={
+                            aid: (
+                                f"{aid} is human-played this turn – negotiate "
+                                "face-to-face in the room instead"
+                            )
+                            for aid in human_played_ids
+                        } or None,
+                    )
+                )
+                negotiation_record = render_record(delivered_all)
+            else:
+                print(
+                    "  … Negotiations are face-to-face this turn "
+                    "(all actors human-played)."
+                )
+
+        def _outbox(actor_id: str) -> str:
+            box = negotiation_outboxes.get(actor_id, {})
+            return render_sent(box.get("sent", []), box.get("rejected", []))
+
         print(f"Resolving turn {turn} from team picks...")
         actor_outputs: dict[str, str] = {}
         for actor_id in actor_ids:
             if actor_id in model_played:
                 print(f"  … {scenario.actors[actor_id].name} (model-played, waiting)...", flush=True)
                 content, response, pending = orchestrator.generate_actor_action(
-                    actor_id, turn, triggered_events
+                    actor_id,
+                    turn,
+                    triggered_events,
+                    negotiation_messages=render_inbox(
+                        negotiation_inboxes.get(actor_id, [])
+                    ),
+                    negotiation_outbox=_outbox(actor_id),
                 )
                 if pending is not None:
                     orchestrator._llm_io_context.pending = pending
@@ -983,7 +1077,8 @@ def run_resolve_turn(
 
         print("  … Updating metrics and narrative (waiting for the model)...", flush=True)
         new_metrics, narrative, notepad = orchestrator._run_metrics_step(
-            turn, actor_outputs, triggered_events
+            turn, actor_outputs, triggered_events,
+            negotiation_record=negotiation_record,
         )
         output_manager.save_metrics_and_narrative(turn, new_metrics, narrative)
         output_manager.save_notepad(turn, notepad)
@@ -1093,8 +1188,9 @@ def _chain_next_menus(
         )
         actor_ids = [aid for aid in scenario.actors if aid not in chained_llm]
         next_menus: dict[str, ActorMenu] = {}
-        for actor_id in actor_ids:
-            menu = generate_menu(
+
+        def _generate(actor_id: str) -> ActorMenu:
+            return generate_menu(
                 next_orchestrator,
                 actor_id,
                 next_turn,
@@ -1103,8 +1199,24 @@ def _chain_next_menus(
                 strategy=strategy,
                 samples=samples,
             )
-            next_menus[actor_id] = menu
-            print(f"  → {menu.actor_name}: {len(menu.options)} options")
+
+        if len(actor_ids) > 1:
+            with ThreadPoolExecutor(
+                max_workers=min(len(actor_ids), 4)
+            ) as executor:
+                futures = {
+                    executor.submit(_generate, aid): aid for aid in actor_ids
+                }
+                for future in as_completed(futures):
+                    menu = future.result()
+                    next_menus[menu.actor_id] = menu
+                    print(f"  → {menu.actor_name}: {len(menu.options)} options")
+            next_menus = {aid: next_menus[aid] for aid in actor_ids}
+        else:
+            for actor_id in actor_ids:
+                menu = _generate(actor_id)
+                next_menus[actor_id] = menu
+                print(f"  → {menu.actor_name}: {len(menu.options)} options")
         write_menus(
             run_dir, next_turn, next_menus, strategy, max_options, samples,
             config_overrides=chained_overrides,

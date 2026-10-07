@@ -83,13 +83,17 @@ def test_parse_actor_action_specs():
         "eu": "3",
         "us-gov": "we wait",
     }
+    # Free-text picks may contain "=": split on the first one only.
+    assert parse_actor_action_specs(["eu=we demand a=b"]) == {
+        "eu": "we demand a=b",
+    }
     assert parse_actor_action_specs(None) == {}
     with pytest.raises(LiveError):
         parse_actor_action_specs(["eu"])
     with pytest.raises(LiveError):
         parse_actor_action_specs(["eu="])
     with pytest.raises(LiveError):
-        parse_actor_action_specs(["a=b=c"])
+        parse_actor_action_specs(["=3"])
 
 
 # --- menu parsing ---
@@ -882,3 +886,93 @@ def test_mixed_mode_rejects_pick_for_llm_actor(tmp_path):
             {"us-gov": "1", "us-labs": "2", "china": "1", "eu": "1"},
             interactive=False, llm_client=_mixed_mock(),
         )
+
+
+def test_regenerating_all_human_menus_keeps_all_human(tmp_path):
+    """Regenerating a turn whose menu.json records [] must not resurrect older mixed mode."""
+    import argparse
+
+    from scenario_lab.cli import run_live_menu_command
+
+    scenario = load_scenario(_live_scenario_copy(tmp_path))
+    scenario.config.random_seed = 7
+    output_manager = OutputManager(scenario, tmp_path / "global-ai-live")
+    run_dir = output_manager.start_run(prefix="live-")
+
+    def _menu_ns(turn, llm_actors):
+        return argparse.Namespace(
+            target=run_dir, turn=turn, max_options=3, strategy="direct",
+            samples=4, initial_state=None, model=None, seed=None,
+            skip_model_checks=True, log_llm_io=False, override=None,
+            llm_actors=llm_actors, output_subdir=None,
+        )
+
+    # Turn 1 mixed, resolved (chaining turn-2 menus in the same mode).
+    assert run_live_menu_command(_menu_ns(1, "eu"), llm_client=_live_mock()) == 0
+    result = run_resolve_turn(
+        run_dir, 1, {"us-gov": "1", "us-labs": "2", "china": "1"},
+        interactive=False, llm_client=_mixed_mock(),
+    )
+    assert set(result.actor_outputs) == {"us-gov", "us-labs", "china", "eu"}
+    # Switch turn 2 back to all-human, then regenerate with no flag: the []
+    # record stands instead of falling back to turn 1's mixed record.
+    assert run_live_menu_command(_menu_ns(2, "none"), llm_client=_live_mock()) == 0
+    assert recorded_llm_actors(run_dir, 2) == []
+    # Regenerate turn 2 with no flag: the [] record stands, no fallback.
+    assert run_live_menu_command(_menu_ns(2, None), llm_client=_live_mock()) == 0
+    assert recorded_llm_actors(run_dir, 2) == []
+    assert set(read_menus(run_dir, 2)) == {"us-gov", "us-labs", "china", "eu"}
+
+
+def test_resolve_runs_negotiations_for_model_actors(tmp_path):
+    """With negotiations enabled, model actors exchange notes; human-addressed notes are refused."""
+    import yaml
+
+    scenario_path = _live_scenario_copy(tmp_path)
+    config_file = scenario_path / "scenario.yaml"
+    data = yaml.safe_load(config_file.read_text(encoding="utf-8"))
+    data["negotiations"] = {"enabled": True, "rounds": 1, "max_rounds": 1}
+    config_file.write_text(yaml.safe_dump(data), encoding="utf-8")
+
+    scenario = load_scenario(scenario_path)
+    scenario.config.random_seed = 7
+    output_manager = OutputManager(scenario, tmp_path / "global-ai-live")
+    run_dir = output_manager.start_run(prefix="live-")
+    run_menu_turn(
+        scenario, output_manager, run_dir, 1, max_options=3,
+        llm_client=_live_mock(), llm_actors=["eu"],
+    )
+    mock = _mixed_mock()
+    mock.responses["private negotiations"] = (
+        "## Messages\n```json\n"
+        '{"messages": [{"to": "us-gov", "text": "Back our standard."}]}\n'
+        "```\n"
+    )
+    result = run_resolve_turn(
+        run_dir, 1, {"us-gov": "1", "us-labs": "2", "china": "1"},
+        interactive=False, llm_client=mock,
+    )
+    assert set(result.actor_outputs) == {"us-gov", "us-labs", "china", "eu"}
+    assert "coordinates standards" in result.actor_outputs["eu"]
+    # Same artifacts as a simulated turn, including the refusal: a note to a
+    # human team is rejected, never silently delivered to nobody.
+    assert (run_dir / "turn-01" / "2-negotiations" / "messages.json").is_file()
+    rounds = list((run_dir / "turn-01" / "2-negotiations").glob("round-*.md"))
+    assert len(rounds) == 1
+    assert "face-to-face" in rounds[0].read_text()
+
+
+def test_resolve_extra_overrides_recorded_for_chained_menus(tmp_path):
+    """--override on resolve applies on top of the menu record and rides forward."""
+    from scenario_lab.live import recorded_overrides
+
+    scenario = load_scenario(_live_scenario_copy(tmp_path))
+    scenario.config.random_seed = 7
+    output_manager = OutputManager(scenario, tmp_path / "global-ai-live")
+    run_dir = output_manager.start_run(prefix="live-")
+    run_menu_turn(scenario, output_manager, run_dir, 1, llm_client=_live_mock())
+    run_resolve_turn(
+        run_dir, 1, _full_picks(), interactive=False,
+        llm_client=_live_mock(), extra_overrides=["output_language=German"],
+    )
+    assert "output_language=German" in recorded_overrides(run_dir, 1)

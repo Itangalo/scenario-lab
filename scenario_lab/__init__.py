@@ -1,3 +1,3 @@
-"""Scenario Lab V4 - LLM-driven scenario simulation framework."""
+"""Scenario Lab V5 - LLM-driven scenario simulation framework."""
 
-__version__ = "4.0.0"
+__version__ = "5.0.0"

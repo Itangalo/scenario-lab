@@ -64,7 +64,7 @@ def detect_last_turn(run_dir: Path) -> int:
         has_actors = actors_dir.exists() and actors_dir.is_dir() and any(actors_dir.iterdir())
 
         # Check all required files exist
-        all_files_exist = all((turn_dir / f).exists() for f in required_files)
+        all_files_exist = all((turn_dir / f).is_file() for f in required_files)
 
         if all_files_exist and has_actors:
             return turn_num
@@ -439,8 +439,8 @@ def load_run_state(
         scenario.event_log = [
             entry for entry in summary["event_log"]
             if isinstance(entry, dict) and isinstance(entry.get("id"), str)
-            and isinstance(entry.get("turn"), int)
-            and (from_turn is None or entry["turn"] <= from_turn)
+            and type(entry.get("turn")) is int
+            and entry["turn"] <= from_turn
         ]
 
     if "occurred_events" in summary:
@@ -613,7 +613,11 @@ def create_branch(
     parent_summary = json.loads(parent_summary_file.read_text(encoding="utf-8"))
 
     # Copy history up to from_turn
-    new_history = [h for h in parent_summary.get("history", []) if h["turn"] <= from_turn]
+    new_history = [
+        h for h in parent_summary.get("history", [])
+        if isinstance(h, dict) and type(h.get("turn")) is int
+        and h["turn"] <= from_turn
+    ]
 
     # Get final metrics from the branch point
     final_metrics = new_history[-1]["metrics"] if new_history else {}
@@ -634,6 +638,26 @@ def create_branch(
         logged_ids = {entry["id"] for entry in truncated_log}
     else:
         logged_ids = None
+    # Phase markers for the inherited turns ride along: they are provenance,
+    # and dropping them would make the branch's early turns look phaseless.
+    parent_phases = parent_summary.get("phases")
+    new_phases = (
+        {
+            key: phase
+            for key, phase in parent_phases.items()
+            if key.isdigit() and int(key) <= from_turn
+        }
+        if isinstance(parent_phases, dict)
+        else {}
+    )
+    # A termination record belongs to the turn it fired on: branching before
+    # it drops it, branching at or after it keeps it.
+    parent_termination = parent_summary.get("termination")
+    termination_turn = (
+        parent_termination.get("turn")
+        if isinstance(parent_termination, dict)
+        else None
+    )
     new_summary = {
         "scenario": parent_summary["scenario"],
         "total_turns": from_turn,
@@ -651,6 +675,7 @@ def create_branch(
         # carries no turns.
         "event_log": truncated_log,
         "emerging_events": parent_summary.get("emerging_events", []),
+        "phases": new_phases,
         "status": "running",
         "last_updated": datetime.now().isoformat(),
         "metadata": {
@@ -659,6 +684,12 @@ def create_branch(
             "branch_created_at": datetime.now().isoformat()
         }
     }
+    if (
+        isinstance(parent_termination, dict)
+        and type(termination_turn) is int
+        and termination_turn <= from_turn
+    ):
+        new_summary["termination"] = parent_termination
 
     if state_modifications:
         new_summary["metadata"]["state_modifications"] = state_modifications

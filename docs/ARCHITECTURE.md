@@ -4,13 +4,13 @@ This document serves as the "ground truth" for the Scenario Lab architecture. It
 
 ## 1. Design Philosophy: Pure LLM Architecture
 
-V4 represents a radical simplification from previous versions. Instead of complex Python game logic, **we lean into the LLM**.
+V5 keeps the V4 simplification and groups the turn into three resumable phases. Instead of complex Python game logic, **we lean into the LLM**.
 
 - **LLMs handle ALL complexity:** Narrative generation, metric updates, rule interpretation, and event evaluation are all performed by the LLM.
 - **Python is minimal orchestration:** The Python code is strictly for loading data, constructing prompts, calling APIs, and persisting results to files. It does *not* contain game rules or simulation logic.
-- **No communication phases:** There are no complex multi-step communication protocols between actors.
+- **Negotiations are delivery only:** The optional private-note rounds between actors have no Python judgment of content – Python owns delivery lists and persistence. (See *Negotiations* under Actors.)
 - **No hybrid architecture:** We do not mix Python-based rules with LLM-based reasoning. The simulation is purely LLM-driven.
-- **One simple turn loop:** The simulation proceeds in a linear sequence of steps for each turn.
+- **A three-phase turn cycle:** Each turn runs events → actors → world. Every phase persists before the next starts, and resume/branch can continue mid-turn. (See *The Turn Loop*.)
 
 ## 2. Core Concepts
 

@@ -1481,7 +1481,11 @@ class Orchestrator:
         return aggregated, skipped
 
     def _run_negotiations(
-        self, turn: int, triggered_events: list[dict]
+        self,
+        turn: int,
+        triggered_events: list[dict],
+        writers: Optional[list[str]] = None,
+        unavailable: Optional[dict[str, str]] = None,
     ) -> tuple[dict[str, list], dict[str, list], dict[str, list]]:
         """Optional private rounds before the action write-up.
 
@@ -1492,6 +1496,12 @@ class Orchestrator:
         ``max_rounds``, seats every actor not capped by ``actor_rounds``,
         and stops early on a silent round past the planned rounds: with no
         new information a further round only spends money.
+
+        ``writers`` optionally restricts who sends notes (live games pass the
+        model-played actors: human teams negotiate face-to-face in the room).
+        ``unavailable`` maps actor ids to a rejection reason for notes
+        addressed to them. Delivery policy (unknown/self/contacts) still
+        applies against the full cast.
 
         Returns ``(inboxes, outboxes, delivered_all)``: notes received per
         actor, notes sent plus delivery failures per actor (a sender that
@@ -1509,6 +1519,7 @@ class Orchestrator:
 
         cfg = self.scenario.config.negotiations
         actor_ids = list(self.scenario.actors.keys())
+        writing = list(writers) if writers is not None else list(actor_ids)
         inboxes: dict[str, list] = {actor_id: [] for actor_id in actor_ids}
         outboxes: dict[str, dict] = {
             actor_id: {"sent": [], "rejected": []} for actor_id in actor_ids
@@ -1533,7 +1544,7 @@ class Orchestrator:
         while round_no < cap:
             round_no += 1
             participants = participants_for_round(
-                actor_ids, round_no, max(int(cfg.max_rounds), 1), cfg.actor_rounds
+                writing, round_no, max(int(cfg.max_rounds), 1), cfg.actor_rounds
             )
             if not participants:
                 break
@@ -1606,7 +1617,8 @@ class Orchestrator:
                 )
                 round_malformed.extend(f"{writer_id}: {line}" for line in malformed)
                 delivered, rejected = deliver(
-                    entries, writer_id, round_no, actor_ids, cfg.contacts
+                    entries, writer_id, round_no, actor_ids, cfg.contacts,
+                    unavailable=unavailable,
                 )
                 for message in delivered:
                     inboxes[message.recipient].append(message)
