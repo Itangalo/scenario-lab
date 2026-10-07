@@ -128,8 +128,7 @@ def create_complete_turn(run_dir: Path, turn_num: int):
     (turn_dir / "4-world-state.md").write_text("# World State\n")
     (turn_dir / "5-notepad.md").write_text("# Notepad\n")
 
-    if turn_num > 1:
-        (turn_dir / "6-historical-summary.md").write_text("# Historical Summary\n")
+    (turn_dir / "6-historical-summary.md").write_text("# Historical Summary\n")
 
 
 def create_incomplete_turn(run_dir: Path, turn_num: int):

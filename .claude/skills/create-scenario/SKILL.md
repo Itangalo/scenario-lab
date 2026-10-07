@@ -98,11 +98,16 @@ Draft in this order (each file informs the next):
 3. `background/actors/<id>.md` – one per actor: incentives, resources,
    behavioral tendencies; conflicting interests between actors are essential
 4. `events.md` – exogenous uncertainties; conditions + probabilities; prefer
-   `can_repeat: false` for structural shifts. Where a Metaculus question tracks
-   the same outcome, record the anchor on the event (`**Metaculus:**` URL,
-   `**Retrieved:**` date, `**Market probability:**` community figure) – the
-   figure is a prior the Game Master adjusts, never the probability itself, and
-   the pointer is what lets the `update-scenario` skill re-check it later.
+   `can_repeat: false` for structural shifts. Where a Metaculus, Manifold or
+   Polymarket question tracks the same outcome, record the anchor on the event
+   (`**Market:**` URL, `**Retrieved:**` date, `**Market probability:**`
+   figure; `python -m scenario_lab.cli market-fetch <url>` prints Manifold and
+   Polymarket figures ready to paste, Metaculus is read off the page). The
+   anchor is a silent property for you as the builder: it is never shown to the
+   Game Master. Use it to inform the probability you write, remembering that
+   market odds are unconditional and dated while the event is conditional and
+   per-turn. The pointer is also what lets the `update-scenario` skill
+   re-check it later.
 5. `metric-rules.md` – starting "physics"; few, clear, quantitative. See
    **Writing metric-rules.md** below for the form; it is the file that most
    often reads well and works badly.
@@ -272,7 +277,7 @@ underlying statement three of them are approximating. It is usually there.
 2. Run `python -m scenario_lab.cli describe scenarios/<name>` and show the
    output to the user (this is the at-a-glance overview).
 3. Present the full `events.md` as an events sign-off document: every event
-   with its condition, probability framing, and Metaculus anchor where one
+   with its condition, probability framing, and market anchor where one
    exists. The user approves the catalogue the same way they approve the
    constraint ledger – it is the scenario's uncertainty inventory, and the
    `update-scenario` skill will diff against exactly this version later.

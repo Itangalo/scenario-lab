@@ -53,7 +53,7 @@ Standard sims need no climax; live games do. Minimal v5 (combining decisive mome
 
 - Authoring guidelines: short files, description/reasoning split, sign-off docs generated one at a time during creation (`scripts/render_signoff.py` already records provenance; extend to gate each creation phase).
 - `update-scenario-from-news` command: searches since start date / last update, proposes context/metric/event changes with source + retrieval date (information-bank style), human approves before any write, records update as new version/dated variant (batches kept apart). Suggests only; never edits silently.
-- Market anchors: snapshot Metaculus/Polymarket/Manifold/Kalshi figures into the scenario (source, URL, date) as turn-1 anchors/priors the GM adjusts — never fetched live. First test: GM turn-1 pricing vs market where both exist.
+- Market anchors: snapshot Metaculus/Polymarket/Manifold/Kalshi figures into the scenario (source, URL, date) as silent properties for the builder – never rendered into a prompt, never fetched during a run. First test: GM turn-1 pricing vs market where both exist (the GM does not see the market).
 - Calibration note: probabilities/rules are calibrated to the scenario's world, not today's world.
 - Output subfolders for run artifacts; benchmarking suite for actor/GM quality (low priority).
 
@@ -65,6 +65,16 @@ Standard sims need no climax; live games do. Minimal v5 (combining decisive mome
 4. Negotiations (done on `version-5`): `negotiations:` block, `negotiations.py` delivery, `_run_negotiations` in the actors phase, `2-negotiations/` artifacts, validator cost/stale-template warnings, `tests/test_negotiations.py`.
 5. Mixed player modes (done on `version-5`): `--llm-actors` on `live-menu`/`live-resolve`/`live`, recorded in `menu.json`, chained next menus keep the mode, model actions via the shared `generate_actor_action`, facilitator pass-through. Finale block postponed.
 6. Tooling: output subfolders (done). Update-from-news (done as the `update-scenario` skill: harness-chosen sources, `updates/UPDATE-*.md` approval file with one entry per change, apply-approved-only, design-notes log, incomparability rule). Market anchors (done, Metaculus-first): `**Metaculus:**` / `**Retrieved:**` / `**Market probability:**` on events, parsed + validated + patchable + in `describe`; snapshots, never live fetches; creation flow records anchors at draft and signs off the events list (`create-scenario` skill). H2 standard (done): one H1 title + H2 sections in `metrics.md`/`events.md`, sub-H2 warns as folded prose. Sign-off gating rides on the existing creation checkpoints (framing, review, prompt sign-off) plus the new events sign-off.
+
+## Review fixes, round 3 (2026-10-07)
+
+- Output subfolders named like runs (`run-*`, `live-*`) are rejected at creation, and discovery descends into any directory that has no `config.json` of its own, so existing ones are found too.
+- A turn-1 crash resumes with the recorded initial state (`load_initial_scenario`), not the scenario default.
+- A turn is complete only once `6-historical-summary.md` exists, on turn 1 too (it is written last, after the referee).
+- `rounds` is a guaranteed minimum even when `max_rounds` lags (a config override of `rounds` alone); writers with nobody reachable sit out, and the round prompt never offers unavailable recipients.
+- Market anchors are silent: no longer rendered into the events prompt. Sources are Metaculus, Manifold and Polymarket (`market_sources.py`, `market-fetch`); fields are `market_url`/`market_retrieved`/`market_probability`.
+- `branch --from-phase events|actors` branches inside a turn.
+- Parked: `market-check` with negotiations, see `market-check-negotiations.md`.
 
 ## Review fixes, round 2 (2026-10-06, from `v5-review-2-2026-10-06.md`)
 

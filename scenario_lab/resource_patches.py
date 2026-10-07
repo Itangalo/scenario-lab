@@ -36,9 +36,12 @@ _EVENT_FIELD_KEYS = {
     "description": "description",
     "can_repeat": "can_repeat",
     "eligible": "eligible",
-    "metaculus": "metaculus_url",
-    "retrieved": "metaculus_retrieved",
-    "market_probability": "metaculus_probability",
+    "market": "market_url",
+    "metaculus": "market_url",
+    "manifold": "market_url",
+    "polymarket": "market_url",
+    "retrieved": "market_retrieved",
+    "market_probability": "market_probability",
 }
 
 _RULE_START_RE = re.compile(r"^(\d+)\.\s(.*)$")
@@ -139,9 +142,12 @@ def apply_event_patches(events: list[Event], path: Path) -> list[Event]:
                 probability=updates.get("probability", "0"),
                 can_repeat=updates.get("can_repeat", "no").lower() in ("yes", "true"),
                 eligible=updates.get("eligible", ""),
-                metaculus_url=updates.get("metaculus", ""),
-                metaculus_retrieved=updates.get("retrieved", ""),
-                metaculus_probability=updates.get("market_probability", ""),
+                market_url=next(
+                    (updates[k] for k in ("market", "metaculus", "manifold", "polymarket") if updates.get(k)),
+                    "",
+                ),
+                market_retrieved=updates.get("retrieved", ""),
+                market_probability=updates.get("market_probability", ""),
             )
             result.append(new_event)
             by_id[event_id] = new_event

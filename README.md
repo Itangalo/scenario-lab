@@ -32,14 +32,13 @@ In practice, that means you can use it for questions like:
 
 ## How It Works
 
-Each turn follows the same basic loop:
+Each turn runs three phases, and every phase is saved before the next one starts:
 
-1. The system evaluates which external events happen.
-2. Each actor responds to the current situation.
-3. The system updates the metric rules if the world has changed.
-4. The system updates the metrics and writes the turn narrative.
-5. If the scenario includes constitutional constraints, an optional referee step checks for unrealistic changes.
-6. The historical summary is updated for the next turn.
+1. **Events.** The system evaluates which external events happen.
+2. **Actor actions.** Optionally, actors first exchange private notes (negotiations, off by default). Each actor then responds to the current situation.
+3. **World update.** The system updates the metric rules if the world has changed, updates the metrics and writes the turn narrative, optionally lets a referee check constitutional constraints, and updates the historical summary.
+
+Because each phase is persisted, an interrupted run resumes in the middle of a turn, and a branch can start inside a turn (after the events or after the actors) as well as between turns.
 
 LLMs do the scenario reasoning. Python handles orchestration, validation, persistence, and reporting.
 
@@ -127,6 +126,12 @@ By default, `run` performs model hygiene checks before execution and warns if th
 
 Each run records a `random_seed` in `config.json`. The seed makes the event *dice* deterministic (same seed, same rolls across `run`, `resume`, and `branch`), while the LLM outputs themselves remain nondeterministic. Pass `--seed INT` to fix the seed, or let Scenario Lab generate a random 64-bit seed. Use `--log-llm-io` to capture every LLM prompt/response under each turn's `llm-io/` directory.
 
+### Output subfolders, negotiations and market anchors
+
+- `--output-subdir NAME` (on `run`, `batch-run`, `live`) puts runs in `runs/NAME/` so batches stay apart; analysis commands find them and `--filter subdir=NAME` restricts a cohort. The name cannot start with `run-` or `live-` and cannot be `batch-logs`.
+- Negotiations are enabled per scenario with a `negotiations:` block (`enabled`, `rounds`, `max_rounds`, `contacts`, `actor_rounds`). They multiply the actors phase's LLM calls, so `validate` and `estimate` show the cost. Artifacts land in `turn-XX/2-negotiations/`.
+- `events.md` may carry a silent market anchor per event (`**Market:**` URL, `**Retrieved:**`, `**Market probability:**`; `**Metaculus:**`, `**Manifold:**` and `**Polymarket:**` work as labels). Anchors are never rendered into a prompt. `python -m scenario_lab.cli market-fetch URL...` reads current Manifold and Polymarket figures (public APIs; Metaculus is recorded by hand), `market-fetch scenarios/NAME` re-checks a scenario's anchored events read-only, and `market-check RUN_DIR` compares the Game Master's turn-1 pricing with the snapshots.
+
 ### Run a live workshop game
 
 ```bash
@@ -196,9 +201,12 @@ python -m scenario_lab.cli branch scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHM
 python -m scenario_lab.cli branch scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHMMSS --from-turn 4 --modify-metric unemployment=12
 python -m scenario_lab.cli branch scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHMMSS --from-turn 4 --force-event ai_breakthrough
 python -m scenario_lab.cli branch scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHMMSS --from-turn 4 --suppress-event taiwan_blockade --seed 7
+python -m scenario_lab.cli branch scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHMMSS --from-turn 4 --from-phase events --model some-other-model
 ```
 
-`resume` continues the same run. `branch` creates a new run starting from a previous turn, which is useful for "what if" analysis.
+`resume` continues the same run; a turn interrupted between phases continues from the next phase instead of replaying. `branch` creates a new run starting from a previous turn, which is useful for "what if" analysis.
+
+`--from-phase events|actors` moves the branch point inside `--from-turn`: the child keeps that turn's artifacts up to and including the phase and reruns the rest. `--from-turn 4 --from-phase events` means "same events in turn 4, different actors and world"; `--from-phase actors` means "same events and actor actions (and negotiations), different world update". Without `--from-phase` the branch point is the end of the turn. `--force-event` and `--suppress-event` cannot be combined with `--from-phase`, since they shape the events phase that the branch keeps.
 
 A branch keeps its parent's `random_seed` by default (so shared turns reproduce identically); pass `--seed INT` to override it. For controlled event counterfactuals, use repeatable `--force-event EVENT_ID` and `--suppress-event EVENT_ID`. These apply to the first turn executed in the branch: forced events trigger regardless of probability, suppressed events never trigger. The overrides are recorded in the new run's `config.json` and marked in `1-event-evaluations.json`.
 

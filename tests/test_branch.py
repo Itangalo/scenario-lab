@@ -64,8 +64,7 @@ def parent_run_dir(tmp_path):
         (turn_dir / "4-world-state.md").write_text(f"# World State Turn {turn_num}\n")
         (turn_dir / "5-notepad.md").write_text(f"# Notepad Turn {turn_num}\n")
 
-        if turn_num > 1:
-            (turn_dir / "6-historical-summary.md").write_text(f"# Summary up to Turn {turn_num}\n")
+        (turn_dir / "6-historical-summary.md").write_text(f"# Summary up to Turn {turn_num}\n")
 
     return run_dir
 
@@ -316,6 +315,7 @@ class TestCreateBranch:
         (turn_dir / "4-metrics.json").write_text("{}")
         (turn_dir / "4-world-state.md").write_text("State")
         (turn_dir / "5-notepad.md").write_text("Notes")
+        (turn_dir / "6-historical-summary.md").write_text("Summary")
 
         new_run_dir = create_branch(
             parent_run_dir,
@@ -347,6 +347,7 @@ class TestCreateBranch:
         (turn_dir / "4-metrics.json").write_text("{}")
         (turn_dir / "4-world-state.md").write_text("State")
         (turn_dir / "5-notepad.md").write_text("Notes")
+        (turn_dir / "6-historical-summary.md").write_text("Summary")
 
         new_run_dir = create_branch(
             parent_run_dir,
@@ -467,6 +468,7 @@ def test_load_truncates_occurred_events_to_the_load_point(tmp_path):
     (turn_dir / "4-world-state.md").write_text("State.")
     (turn_dir / "3-metric-rules.md").write_text("Rules.")
     (turn_dir / "5-notepad.md").write_text("Notes.")
+    (turn_dir / "6-historical-summary.md").write_text("Summary.")
     (run_dir / "config.json").write_text(json.dumps(
         {"scenario_source": str(scenario_dir / "scenario.yaml")}))
     (run_dir / "summary.json").write_text(json.dumps({

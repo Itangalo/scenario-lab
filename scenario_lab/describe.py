@@ -105,9 +105,9 @@ def describe_scenario(
             "probability": event.probability,
             "can_repeat": event.can_repeat,
             "description": event.description,
-            "metaculus_url": event.metaculus_url,
-            "metaculus_retrieved": event.metaculus_retrieved,
-            "metaculus_probability": event.metaculus_probability,
+            "market_url": event.market_url,
+            "market_retrieved": event.market_retrieved,
+            "market_probability": event.market_probability,
         }
         for event in scenario.events
     ]

@@ -114,14 +114,18 @@ class Event:
     # prompt entirely and rejects any candidate for it that turn. Prose
     # conditions the metrics cannot express stay in `condition` for the LLM.
     eligible: str = ""
-    # Optional forecasting anchor: a Metaculus question tracking the same
-    # outcome, snapshotted (never fetched live). The figure is a prior the
-    # Game Master adjusts to the simulated world state -- market odds are
-    # unconditional and dated, scenario events conditional and per-turn -- and
-    # the pointer lets the update skill re-check the market consistently.
-    metaculus_url: str = ""
-    metaculus_retrieved: str = ""  # YYYY-MM-DD
-    metaculus_probability: str = ""  # community figure at retrieval, e.g. "34%"
+    # Optional forecasting anchor: a Metaculus, Manifold or Polymarket
+    # question tracking the same outcome, snapshotted (never fetched during a
+    # run). A silent property for the people building the scenario: it is
+    # never rendered into any prompt, so the Game Master prices events
+    # without seeing the market (which keeps `market-check` an honest
+    # comparison) and the pointer lets the update skill re-check the market
+    # consistently. Market odds are unconditional and dated, scenario events
+    # conditional and per-turn, so the figure informs the author's
+    # probabilities; it is not the probability.
+    market_url: str = ""
+    market_retrieved: str = ""  # YYYY-MM-DD
+    market_probability: str = ""  # community figure at retrieval, e.g. "34%"
 
 
 STATEMENT_TIERS = ("position", "commitment", "identity")

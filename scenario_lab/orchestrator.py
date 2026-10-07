@@ -930,7 +930,7 @@ class Orchestrator:
         return None
 
     def _run_events_step(self, turn: int) -> list[dict]:
-        """Step 1: Determine which events occur.
+        """Phase 1 (events): Determine which events occur.
 
         Returns:
             List of triggered events with their probabilities
@@ -1538,13 +1538,35 @@ class Orchestrator:
                 self._turn_dir(turn) / "2-negotiations", ignore_errors=True
             )
         planned = max(int(cfg.rounds), 1)
+        # ``rounds`` is a guaranteed minimum, so the round cap -- and the
+        # participation limit -- is the larger of the two. (A config override
+        # such as ``negotiations.rounds=3`` leaves ``max_rounds`` at its
+        # loaded default; using ``max_rounds`` alone would silently stop
+        # after round 1.)
         cap = max(int(cfg.max_rounds), planned)
+
+        def reachable_for(writer_id: str) -> list[str]:
+            """Recipients a note from this writer could actually reach."""
+            allowed = cfg.contacts.get(writer_id)
+            if allowed is None:
+                allowed = [a for a in actor_ids if a != writer_id]
+            closed = {k.lower() for k in (unavailable or {})}
+            known = {a.lower() for a in actor_ids}
+            return [
+                a for a in allowed
+                if a != writer_id and a.lower() in known and a.lower() not in closed
+            ]
+
+        # A writer with nobody to write to (live games where every other
+        # actor is human-played, or an empty contacts list) would burn a paid
+        # call per round for notes that can only bounce: it sits out.
+        writing = [w for w in writing if reachable_for(w)]
 
         round_no = 0
         while round_no < cap:
             round_no += 1
             participants = participants_for_round(
-                writing, round_no, max(int(cfg.max_rounds), 1), cfg.actor_rounds
+                writing, round_no, cap, cfg.actor_rounds
             )
             if not participants:
                 break
@@ -1555,9 +1577,7 @@ class Orchestrator:
 
             def run_note(writer_id: str) -> tuple[str, LLMResponse, object]:
                 client = self.client_for_actor(writer_id)
-                reachable = cfg.contacts.get(writer_id)
-                if reachable is None:
-                    reachable = [a for a in actor_ids if a != writer_id]
+                reachable = reachable_for(writer_id)
                 box = outboxes[writer_id]
                 system, user = self.prompt_builder.build_actor_prompt(
                     writer_id,
@@ -2196,7 +2216,7 @@ class Orchestrator:
     def _run_rules_step(
         self, turn: int, actor_outputs: dict[str, str], triggered_events: list[dict]
     ) -> str:
-        """Step 3: Update metric rules.
+        """World phase, rules sub-step: Update metric rules.
 
         Args:
             turn: Current turn number
@@ -2566,7 +2586,7 @@ class Orchestrator:
     def _run_constitutional_referee_step(
         self, turn: int, proposed_metrics: dict, narrative: str, notepad: Optional[str] = None
     ) -> tuple[dict, str]:
-        """Step 5: Validate metrics against constitutional constraints (optional).
+        """World phase, referee sub-step: Validate metrics against constitutional constraints (optional).
 
         Args:
             turn: Current turn number
@@ -2792,7 +2812,7 @@ class Orchestrator:
         return metrics
 
     def _run_summarization_step(self, turn: int, current_narrative: str) -> str:
-        """Step 6: Update historical summary.
+        """World phase, summary sub-step: Update historical summary (the last artifact of a turn).
 
         Args:
             turn: Current turn number

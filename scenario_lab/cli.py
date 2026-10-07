@@ -1138,6 +1138,18 @@ def main():
     branch_parser = subparsers.add_parser("branch", help="Create a branch from an existing run")
     branch_parser.add_argument("run_dir", type=Path, help="Path to parent run directory")
     branch_parser.add_argument("--from-turn", type=int, required=True, help="Turn number to branch from")
+    branch_parser.add_argument(
+        "--from-phase",
+        choices=["events", "actors"],
+        default=None,
+        help=(
+            "Branch inside --from-turn, after this phase: the child keeps that "
+            "turn's artifacts up to and including the phase and reruns the rest "
+            "(e.g. --from-turn 5 --from-phase events keeps turn 5's events and "
+            "redoes actors and world). Without it the branch point is the end "
+            "of --from-turn."
+        ),
+    )
     branch_parser.add_argument("--turns", type=int, default=None, help="Total turns to run from branch point")
     branch_parser.add_argument("--modify-metric", action="append", help="Modify metric: 'metric_id=value'")
     branch_parser.add_argument("--modify-narrative", type=str, help="Replace narrative text")
@@ -1410,10 +1422,22 @@ def main():
     # Market-check command (Game Master turn-1 pricing vs market snapshots)
     market_check_parser = subparsers.add_parser(
         "market-check",
-        help="Compare turn-1 evaluated event probabilities with Metaculus snapshots",
+        help="Compare turn-1 evaluated event probabilities with market snapshots",
     )
     market_check_parser.add_argument("run_dir", type=Path, help="Path to run directory")
     market_check_parser.add_argument("--json", action="store_true", help="Print JSON instead of text report")
+
+    # Market-fetch command (current market figures, for snapshotting anchors)
+    market_fetch_parser = subparsers.add_parser(
+        "market-fetch",
+        help="Fetch current Manifold/Polymarket figures for question URLs, or for a scenario's anchored events",
+    )
+    market_fetch_parser.add_argument(
+        "targets",
+        nargs="+",
+        help="Question URL(s), or one scenario directory to re-check its anchored events (read-only)",
+    )
+    market_fetch_parser.add_argument("--json", action="store_true", help="Print JSON instead of text")
 
     # Costs command
     costs_parser = subparsers.add_parser("costs", help="Display cost report for a run")
@@ -1960,6 +1984,68 @@ def main():
             for warning in result.warnings:
                 print(f"  - {warning}")
         return
+
+    if args.command == "market-fetch":
+        from .market_sources import MarketError, fetch_quote, format_quote
+
+        urls: list[tuple[str, Optional[object]]] = []
+        for target in args.targets:
+            if target.startswith(("http://", "https://")):
+                urls.append((target, None))
+                continue
+            scenario_path = Path(target)
+            if not scenario_path.exists():
+                print(f"❌ Not a URL or an existing scenario: {target}")
+                return 1
+            scenario = load_scenario(scenario_path)
+            anchored = [e for e in scenario.events if e.market_url]
+            if not anchored:
+                print(f"No anchored events in {target}")
+            urls.extend((e.market_url, e) for e in anchored)
+
+        results = []
+        failed = False
+        for url, event in urls:
+            try:
+                quote = fetch_quote(url)
+            except MarketError as exc:
+                failed = True
+                results.append({"url": url, "event": getattr(event, "id", None), "error": str(exc)})
+                continue
+            entry = {
+                "url": url,
+                "event": getattr(event, "id", None),
+                "source": quote.source,
+                "title": quote.title,
+                "probability": quote.probability,
+                "figure": quote.figure,
+                "retrieved": quote.retrieved,
+                "closes": quote.closes,
+            }
+            if event is not None:
+                entry["snapshot"] = event.market_probability
+                entry["snapshot_retrieved"] = event.market_retrieved
+            results.append(entry)
+
+        if args.json:
+            print(json.dumps(results, indent=2, ensure_ascii=False))
+        else:
+            for entry in results:
+                label = f"[{entry['event']}] " if entry["event"] else ""
+                if "error" in entry:
+                    print(f"- {label}{entry['error']}")
+                    continue
+                print(f"- {label}{entry['title']}")
+                print(f"    now {entry['figure']} ({entry['retrieved']}, {entry['source']}"
+                      + (f", closes {entry['closes']}" if entry["closes"] else "") + ")")
+                if "snapshot" in entry:
+                    print(f"    snapshot {entry['snapshot'] or 'none'} ({entry['snapshot_retrieved'] or 'undated'})")
+                else:
+                    print(f"    **Market:** {entry['url']}")
+                    print(f"    **Retrieved:** {entry['retrieved']}")
+                    print(f"    **Market probability:** {entry['figure']}")
+            print("\nRead-only: paste figures into events.md yourself (or via an approved update).")
+        return 1 if failed else 0
 
     if args.command == "market-check":
         from .market_check import format_market_check, market_check
@@ -2526,7 +2612,7 @@ def main():
         from .resume import (
             detect_last_phase,
             detect_last_turn,
-            get_scenario_source_from_run,
+            load_initial_scenario,
             load_run_state,
             next_phase,
             validate_run_directory,
@@ -2562,7 +2648,7 @@ def main():
 
         # Load state
         if from_turn == 0:
-            scenario = load_scenario(get_scenario_source_from_run(args.run_dir))
+            scenario = load_initial_scenario(args.run_dir)
             loaded_turn = 0
             print("  ✓ Loaded initial scenario state (first turn interrupted)")
         else:
@@ -2802,12 +2888,31 @@ def main():
             load_run_state,
             create_branch,
             get_scenario_path_from_run,
+            load_initial_scenario,
+            next_phase,
             persist_scenario_state_at_turn,
             sync_summary_turn_state,
         )
 
         print(f"Creating branch from: {args.run_dir}")
-        print(f"  Branch point: Turn {args.from_turn}")
+        from_phase = getattr(args, "from_phase", None)
+        if from_phase:
+            print(f"  Branch point: Turn {args.from_turn}, after the {from_phase} phase")
+            if args.force_event or args.suppress_event:
+                print(
+                    "❌ Error: --force-event/--suppress-event shape the events "
+                    "phase, which a --from-phase branch keeps from the parent. "
+                    "Branch at the end of the previous turn instead."
+                )
+                return 1
+            if args.from_turn == 1 and (args.modify_metric or args.modify_narrative):
+                print(
+                    "❌ Error: --modify-metric/--modify-narrative edit the state "
+                    "at the end of the previous turn, and turn 1 has none."
+                )
+                return 1
+        else:
+            print(f"  Branch point: Turn {args.from_turn}")
 
         # Parse state modifications
         state_mods = {}
@@ -2864,7 +2969,8 @@ def main():
                 args.from_turn,
                 output_base,
                 state_modifications=state_mods if state_mods else None,
-                config_overrides=config_overrides if config_overrides else None
+                config_overrides=config_overrides if config_overrides else None,
+                from_phase=from_phase,
             )
             print(f"  ✓ Created branch: {new_run_dir.name}")
         except Exception as e:
@@ -2873,12 +2979,26 @@ def main():
 
         # Load branched state
         try:
-            scenario, loaded_turn = load_run_state(
-                new_run_dir,
-                from_turn=args.from_turn,
-                state_modifications=state_mods if state_mods else None
-            )
-            print(f"  ✓ Loaded scenario state from turn {loaded_turn}")
+            # A mid-turn branch loads the state at the end of the previous
+            # turn (the starting world of the branch turn); the kept phases
+            # are reloaded from the turn's artifacts when the turn continues.
+            state_turn = args.from_turn - 1 if from_phase else args.from_turn
+            if state_turn == 0:
+                scenario, loaded_turn = load_initial_scenario(new_run_dir), 0
+                print("  ✓ Loaded initial scenario state (branching inside turn 1)")
+            else:
+                scenario, loaded_turn = load_run_state(
+                    new_run_dir,
+                    from_turn=state_turn,
+                    state_modifications=state_mods if state_mods else None
+                )
+                print(f"  ✓ Loaded scenario state from turn {loaded_turn}")
+            if from_phase and state_mods:
+                print(
+                    "  Note: state modifications apply to the world before the "
+                    f"branch turn; the kept {from_phase} phase was computed "
+                    "from the parent's unmodified state."
+                )
         except Exception as e:
             print(f"❌ Error loading branched state: {e}")
             return
@@ -3010,11 +3130,15 @@ def main():
         output_manager.run_dir = new_run_dir
 
         # Persist branched state at branch point so modifications are durable on disk.
-        persist_scenario_state_at_turn(new_run_dir, loaded_turn, scenario)
-        branch_point_metrics = {m.id: m.value for m in scenario.metrics.metrics.values()}
-        sync_summary_turn_state(new_run_dir, loaded_turn, branch_point_metrics)
+        if loaded_turn >= 1:
+            persist_scenario_state_at_turn(new_run_dir, loaded_turn, scenario)
+            branch_point_metrics = {m.id: m.value for m in scenario.metrics.metrics.values()}
+            sync_summary_turn_state(new_run_dir, loaded_turn, branch_point_metrics)
 
         start_turn = loaded_turn + 1
+        start_phase = next_phase(from_phase) if from_phase else "events"
+        if from_phase:
+            print(f"  → Turn {start_turn} continues from the {start_phase} phase")
         num_turns = args.turns or scenario.config.max_turns
         print(f"\nRunning simulation from turn {start_turn}")
         print(f"LLM Configuration:")
@@ -3028,6 +3152,9 @@ def main():
             print(f"  Actors: {actors_cfg} (all)")
         print(f"  Rules: {scenario.config.llm.rules}")
         print(f"  Metrics: {scenario.config.llm.metrics}")
+        if from_phase and start_turn > num_turns:
+            # The branch turn is unfinished business, as on resume.
+            num_turns = start_turn
         print(f"Turns: {start_turn} to {num_turns}")
 
         if start_turn > num_turns:
@@ -3044,7 +3171,8 @@ def main():
             llm_client=None,
             num_turns=num_turns,
             output_manager=output_manager,
-            start_turn=start_turn
+            start_turn=start_turn,
+            start_phase=start_phase,
         )
 
         # Finalize

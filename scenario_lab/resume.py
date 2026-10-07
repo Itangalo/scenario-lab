@@ -53,11 +53,12 @@ def detect_last_turn(run_dir: Path) -> int:
             "4-metrics.json",
             "4-world-state.md",
             "5-notepad.md",
+            # Written last in the world phase (after the referee), so its
+            # presence closes the crash window on every turn, the first
+            # included: without it a turn-1 crash in the referee or summary
+            # call reads as a finished turn.
+            "6-historical-summary.md",
         ]
-
-        # Historical summary required for turns > 1
-        if turn_num > 1:
-            required_files.append("6-historical-summary.md")
 
         # Check if 2-actors directory exists and has at least one file
         actors_dir = turn_dir / "2-actors"
@@ -129,9 +130,8 @@ def detect_last_phase(run_dir: Path, turn: int) -> Optional[str]:
         "4-metrics.json",
         "4-world-state.md",
         "5-notepad.md",
+        "6-historical-summary.md",
     ]
-    if turn > 1:
-        required_files.append("6-historical-summary.md")
     if all((turn_dir / f).exists() for f in required_files):
         phase = PHASE_WORLD
     return phase
@@ -290,6 +290,40 @@ def get_scenario_source_from_run(run_dir: Path) -> Path:
             )
 
     return scenario_dir
+
+
+def load_initial_scenario(run_dir: Path) -> Scenario:
+    """Load a run's scenario as it stood before turn 1.
+
+    Used when the first turn was interrupted (resume) or branched mid-turn:
+    there is no completed turn to restore from, so the starting state is
+    rebuilt from the scenario source plus the initial state the run recorded
+    in ``config.json``. Without the latter a run started with
+    ``--initial-state`` would silently continue from the scenario's default
+    start. The recorded dict is used (not the original file, which may have
+    moved), so the rebuilt state is the one the run actually began from.
+    """
+    from .loader import apply_initial_state
+    from .models import InitialState
+
+    scenario = load_scenario(get_scenario_source_from_run(run_dir))
+    try:
+        config = json.loads((run_dir / "config.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        config = {}
+    recorded = config.get("initial_state") if isinstance(config, dict) else None
+    if isinstance(recorded, dict):
+        metrics = recorded.get("metrics")
+        apply_initial_state(
+            scenario,
+            InitialState(
+                metrics=dict(metrics) if isinstance(metrics, dict) else {},
+                context=str(recorded.get("context") or ""),
+                notes=str(recorded.get("notes") or ""),
+                source=recorded.get("source"),
+            ),
+        )
+    return scenario
 
 
 def load_run_state(
@@ -517,16 +551,25 @@ def create_branch(
     from_turn: int,
     output_base: Path,
     state_modifications: Optional[dict] = None,
-    config_overrides: Optional[dict] = None
+    config_overrides: Optional[dict] = None,
+    from_phase: Optional[str] = None,
 ) -> Path:
     """Create a new branched run from an existing run.
 
     Args:
         parent_run_dir: Path to parent run
-        from_turn: Turn number to branch from
+        from_turn: Turn number to branch from. Without ``from_phase`` the
+            branch point is the *end* of this turn (the child's first new
+            turn is ``from_turn + 1``).
         output_base: Base path for new run (scenario directory)
         state_modifications: State changes to apply (same format as load_run_state)
         config_overrides: Config changes (e.g., {"llm.events": "model-name"})
+        from_phase: Branch *inside* ``from_turn``, after this completed phase
+            ("events" or "actors"). The child keeps the turn's artifacts up to
+            and including that phase, drops the later ones, and continues the
+            same turn from the next phase -- so "same events, different actor
+            models" or "same negotiations, different world rules" are one
+            command. ``None`` (or "world") means the end of the turn.
 
     Returns:
         Path to new run directory
@@ -539,12 +582,39 @@ def create_branch(
     if not is_valid:
         raise ValueError(f"Invalid parent run directory: {', '.join(errors)}")
 
-    last_turn = detect_last_turn(parent_run_dir)
-    if from_turn > last_turn:
-        raise ValueError(f"Turn {from_turn} does not exist. Last completed turn: {last_turn}")
+    from .orchestrator import PHASE_WORLD, PHASES
 
+    if from_phase == PHASE_WORLD:
+        from_phase = None  # the end of the turn is the ordinary branch point
+    if from_phase is not None and from_phase not in PHASES:
+        raise ValueError(
+            f"Unknown phase '{from_phase}' (branchable phases: "
+            f"{', '.join(PHASES[:-1])}; omit --from-phase for the end of the turn)"
+        )
+
+    last_turn = detect_last_turn(parent_run_dir)
     if from_turn < 1:
         raise ValueError(f"Cannot branch from turn {from_turn}. Must be at least turn 1.")
+    if from_phase is None:
+        if from_turn > last_turn:
+            raise ValueError(f"Turn {from_turn} does not exist. Last completed turn: {last_turn}")
+        completed_turns = from_turn
+    else:
+        # Mid-turn branch: the turn itself may be unfinished in the parent
+        # (or finished -- either way only its phases up to from_phase carry
+        # over). Everything before it must be complete.
+        reached = detect_last_phase(parent_run_dir, from_turn)
+        if reached is None or PHASES.index(reached) < PHASES.index(from_phase):
+            raise ValueError(
+                f"Turn {from_turn} of the parent run has not completed the "
+                f"{from_phase} phase (it reached: {reached or 'nothing'})"
+            )
+        if from_turn - 1 > last_turn:
+            raise ValueError(
+                f"Turn {from_turn - 1} must be complete before branching inside "
+                f"turn {from_turn}. Last completed turn: {last_turn}"
+            )
+        completed_turns = from_turn - 1
 
     # Create new timestamped run directory beside the parent, so a branch of
     # a subfoldered run stays in its subfolder with the batch it belongs to.
@@ -565,14 +635,21 @@ def create_branch(
             suffix += 1
             new_run_dir = sibling_dir / f"{base_name}-{suffix:02d}"
 
-    # Copy turn directories 1 through from_turn
-    for turn_num in range(1, from_turn + 1):
+    # Copy the completed turns, then (mid-turn branch) the kept phases of the
+    # branch turn.
+    for turn_num in range(1, completed_turns + 1):
         turn_dir_name = f"turn-{turn_num:02d}"
         parent_turn_dir = parent_run_dir / turn_dir_name
         new_turn_dir = new_run_dir / turn_dir_name
 
         if parent_turn_dir.exists():
             shutil.copytree(parent_turn_dir, new_turn_dir)
+    if from_phase is not None:
+        _copy_turn_phases(
+            parent_run_dir / f"turn-{from_turn:02d}",
+            new_run_dir / f"turn-{from_turn:02d}",
+            from_phase,
+        )
 
     # Load and modify config.json
     parent_config_file = parent_run_dir / "config.json"
@@ -596,6 +673,8 @@ def create_branch(
 
     config["metadata"]["parent_run"] = parent_run_dir.name
     config["metadata"]["branch_turn"] = from_turn
+    if from_phase is not None:
+        config["metadata"]["branch_phase"] = from_phase
     config["metadata"]["branch_created_at"] = datetime.now().isoformat()
 
     if state_modifications:
@@ -616,7 +695,7 @@ def create_branch(
     new_history = [
         h for h in parent_summary.get("history", [])
         if isinstance(h, dict) and type(h.get("turn")) is int
-        and h["turn"] <= from_turn
+        and h["turn"] <= completed_turns
     ]
 
     # Get final metrics from the branch point
@@ -626,7 +705,7 @@ def create_branch(
     truncated_log = [
         entry
         for entry in parent_log
-        if isinstance(entry, dict) and entry.get("turn", 0) <= from_turn
+        if isinstance(entry, dict) and entry.get("turn", 0) <= completed_turns
     ]
     # The flat set is truncated to the stamped log: a non-repeatable event
     # that fired after the branch point in the parent must be able to fire in
@@ -645,11 +724,13 @@ def create_branch(
         {
             key: phase
             for key, phase in parent_phases.items()
-            if key.isdigit() and int(key) <= from_turn
+            if key.isdigit() and int(key) <= completed_turns
         }
         if isinstance(parent_phases, dict)
         else {}
     )
+    if from_phase is not None:
+        new_phases[str(from_turn)] = from_phase
     # A termination record belongs to the turn it fired on: branching before
     # it drops it, branching at or after it keeps it.
     parent_termination = parent_summary.get("termination")
@@ -660,7 +741,7 @@ def create_branch(
     )
     new_summary = {
         "scenario": parent_summary["scenario"],
-        "total_turns": from_turn,
+        "total_turns": completed_turns,
         "final_metrics": final_metrics,
         "history": new_history,
         "occurred_events": [
@@ -681,13 +762,14 @@ def create_branch(
         "metadata": {
             "parent_run": parent_run_dir.name,
             "branch_turn": from_turn,
+            **({"branch_phase": from_phase} if from_phase is not None else {}),
             "branch_created_at": datetime.now().isoformat()
         }
     }
     if (
         isinstance(parent_termination, dict)
         and type(termination_turn) is int
-        and termination_turn <= from_turn
+        and termination_turn <= completed_turns
     ):
         new_summary["termination"] = parent_termination
 
@@ -702,6 +784,34 @@ def create_branch(
     new_summary_file.write_text(json.dumps(new_summary, indent=2, ensure_ascii=False), encoding="utf-8")
 
     return new_run_dir
+
+
+# Which of a turn's artifacts belong to which phase. Everything not listed
+# under a kept phase is dropped from a mid-turn branch: the child recomputes
+# it, and a stale file from a later phase would look like finished work to
+# phase detection.
+_PHASE_ARTIFACTS = {
+    "events": ("1-",),
+    "actors": ("1-", "2-"),
+}
+
+
+def _copy_turn_phases(parent_turn_dir: Path, new_turn_dir: Path, through_phase: str) -> None:
+    """Copy a turn's artifacts for the phases up to and including one.
+
+    LLM transcripts (``llm-io/``) are left behind: they interleave every
+    phase, and the child writes its own for the phases it reruns.
+    """
+    prefixes = _PHASE_ARTIFACTS[through_phase]
+    new_turn_dir.mkdir(parents=True, exist_ok=True)
+    for child in sorted(parent_turn_dir.iterdir()):
+        if not child.name.startswith(prefixes):
+            continue
+        target = new_turn_dir / child.name
+        if child.is_dir():
+            shutil.copytree(child, target)
+        else:
+            shutil.copy2(child, target)
 
 
 def persist_scenario_state_at_turn(run_dir: Path, turn: int, scenario: Scenario) -> None:

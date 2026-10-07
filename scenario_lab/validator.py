@@ -1407,35 +1407,35 @@ def validate_markdown_structure(scenario_path: Path) -> List[str]:
 
 
 def validate_market_anchors(scenario: Scenario) -> Tuple[List[str], List[str]]:
-    """Check the optional Metaculus anchors on events.
+    """Check the optional market anchors on events (Metaculus, Manifold, Polymarket).
 
-    An anchor is a snapshot (URL, retrieval date, community figure), never a
-    live fetch: reproducibility demands the figure a run priced against stays
-    in the file. A mistyped URL or a figure no parser can read silently breaks
-    the update skill's re-check, so malformed anchors are errors, not
-    warnings. An event without an anchor is fine -- most events have no
-    matching market question.
+    An anchor is a silent property for scenario builders: a question URL, a
+    retrieval date and the figure at that date. It is a snapshot, never a live
+    fetch, and never rendered into a prompt. A mistyped URL or a figure no
+    parser can read silently breaks the update skill's re-check, so malformed
+    anchors are errors, not warnings. An event without an anchor is fine --
+    most events have no matching market question.
     """
+    from .market_sources import check_url
+
     errors: List[str] = []
     warnings: List[str] = []
     for event in scenario.events:
-        url = event.metaculus_url.strip()
-        retrieved = event.metaculus_retrieved.strip()
-        figure = event.metaculus_probability.strip()
+        url = event.market_url.strip()
+        retrieved = event.market_retrieved.strip()
+        figure = event.market_probability.strip()
         if not url and not retrieved and not figure:
             continue
         if not url:
             errors.append(
-                f"Event '{event.id}' has market data but no Metaculus URL"
+                f"Event '{event.id}' has market data but no market question URL"
             )
             continue
-        if "metaculus.com/questions/" not in url:
-            errors.append(
-                f"Event '{event.id}' Metaculus URL does not point at a "
-                f"Metaculus question: '{url}'"
-            )
+        problem = check_url(url)
+        if problem:
+            errors.append(f"Event '{event.id}': {problem}")
         if not retrieved:
-            errors.append(f"Event '{event.id}' has a Metaculus URL but no retrieval date")
+            errors.append(f"Event '{event.id}' has a market URL but no retrieval date")
         else:
             try:
                 datetime.strptime(retrieved, "%Y-%m-%d")
@@ -1445,7 +1445,7 @@ def validate_market_anchors(scenario: Scenario) -> Tuple[List[str], List[str]]:
                 )
         if not figure:
             warnings.append(
-                f"Event '{event.id}' has a Metaculus URL but no community figure: "
+                f"Event '{event.id}' has a market URL but no figure: "
                 "record one (e.g. '34%') so updates can compare against it"
             )
         else:

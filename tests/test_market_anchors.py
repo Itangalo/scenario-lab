@@ -25,16 +25,16 @@ def _events_with_anchor(tmp_path):
 
 def test_anchor_fields_parsed(tmp_path):
     (event,) = _events_with_anchor(tmp_path)
-    assert event.metaculus_url == "https://www.metaculus.com/questions/12345/big-event/"
-    assert event.metaculus_retrieved == "2026-10-01"
-    assert event.metaculus_probability == "34%"
+    assert event.market_url == "https://www.metaculus.com/questions/12345/big-event/"
+    assert event.market_retrieved == "2026-10-01"
+    assert event.market_probability == "34%"
 
 
 def test_anchor_absent_by_default():
     events = load_events(REPO_ROOT / "scenarios/sweden-ai-2030/events.md")
     assert events
     assert all(
-        not e.metaculus_url and not e.metaculus_retrieved and not e.metaculus_probability
+        not e.market_url and not e.market_retrieved and not e.market_probability
         for e in events
     )
 
@@ -76,9 +76,9 @@ def test_anchor_patch_override(tmp_path):
     entries = parse_event_patch(patch)
     assert entries[0]["updates"]["market_probability"] == "41%"
     updated = apply_event_patches(events, patch)
-    assert updated[0].metaculus_probability == "41%"
-    assert updated[0].metaculus_retrieved == "2026-10-06"
-    assert updated[0].metaculus_url.startswith("https://www.metaculus.com/")
+    assert updated[0].market_probability == "41%"
+    assert updated[0].market_retrieved == "2026-10-06"
+    assert updated[0].market_url.startswith("https://www.metaculus.com/")
 
 
 def test_market_check_compares_turn_1_pricing(tmp_path):

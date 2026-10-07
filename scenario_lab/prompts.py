@@ -1147,15 +1147,6 @@ class PromptBuilder:
             lines.append(f"- Probability: {event.probability}")
             lines.append(f"- Can repeat: {'Yes' if event.can_repeat else 'No'}")
             lines.append(f"- Description: {event.description}")
-            if event.metaculus_url:
-                # A prior, not the probability: market odds are unconditional
-                # and dated, this event conditional and per-turn. Shown so the
-                # Game Master can anchor its turn-1 pricing and adjust from
-                # the simulated world state -- never fetched live, always the
-                # snapshotted figure.
-                anchor = f"- Market anchor: Metaculus community {event.metaculus_probability or 'n/a'}"
-                anchor += f" (retrieved {event.metaculus_retrieved or 'unknown date'})"
-                lines.append(anchor)
             lines.append("")
 
         return "\n".join(lines)

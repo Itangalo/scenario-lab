@@ -1027,6 +1027,7 @@ def test_cli_batch_resume_scenario_only_launches_incomplete_runs(tmp_path):
         (turn_dir / "4-metrics.json").write_text("{}", encoding="utf-8")
         (turn_dir / "4-world-state.md").write_text("world", encoding="utf-8")
         (turn_dir / "5-notepad.md").write_text("notes", encoding="utf-8")
+        (turn_dir / "6-historical-summary.md").write_text("summary", encoding="utf-8")
 
     captured_specs = []
 

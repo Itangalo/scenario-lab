@@ -924,8 +924,7 @@ def test_regenerating_all_human_menus_keeps_all_human(tmp_path):
     assert set(read_menus(run_dir, 2)) == {"us-gov", "us-labs", "china", "eu"}
 
 
-def test_resolve_runs_negotiations_for_model_actors(tmp_path):
-    """With negotiations enabled, model actors exchange notes; human-addressed notes are refused."""
+def _negotiating_live_game(tmp_path, llm_actors):
     import yaml
 
     scenario_path = _live_scenario_copy(tmp_path)
@@ -940,8 +939,38 @@ def test_resolve_runs_negotiations_for_model_actors(tmp_path):
     run_dir = output_manager.start_run(prefix="live-")
     run_menu_turn(
         scenario, output_manager, run_dir, 1, max_options=3,
-        llm_client=_live_mock(), llm_actors=["eu"],
+        llm_client=_live_mock(), llm_actors=llm_actors,
     )
+    return run_dir
+
+
+def test_resolve_runs_negotiations_for_model_actors(tmp_path):
+    """With negotiations enabled, model actors exchange notes; human-addressed notes are refused."""
+    run_dir = _negotiating_live_game(tmp_path, ["eu", "china"])
+    mock = _mixed_mock()
+    mock.responses["private negotiations"] = (
+        "## Messages\n```json\n"
+        '{"messages": [{"to": "us-gov", "text": "Back our standard."},'
+        ' {"to": "china", "text": "Join us."}, {"to": "eu", "text": "Join us."}]}\n'
+        "```\n"
+    )
+    result = run_resolve_turn(
+        run_dir, 1, {"us-gov": "1", "us-labs": "2"},
+        interactive=False, llm_client=mock,
+    )
+    assert set(result.actor_outputs) == {"us-gov", "us-labs", "china", "eu"}
+    # Same artifacts as a simulated turn, including the refusal: a note to a
+    # human team is rejected, never silently delivered to nobody.
+    nego = run_dir / "turn-01" / "2-negotiations"
+    assert (nego / "messages.json").is_file()
+    rounds = list(nego.glob("round-*.md"))
+    assert len(rounds) == 1
+    assert "face-to-face" in rounds[0].read_text()
+
+
+def test_resolve_skips_negotiations_when_no_model_actor_can_be_reached(tmp_path):
+    """A lone model-played actor has only human teams to write to: no paid round for notes that must bounce."""
+    run_dir = _negotiating_live_game(tmp_path, ["eu"])
     mock = _mixed_mock()
     mock.responses["private negotiations"] = (
         "## Messages\n```json\n"
@@ -952,14 +981,8 @@ def test_resolve_runs_negotiations_for_model_actors(tmp_path):
         run_dir, 1, {"us-gov": "1", "us-labs": "2", "china": "1"},
         interactive=False, llm_client=mock,
     )
-    assert set(result.actor_outputs) == {"us-gov", "us-labs", "china", "eu"}
     assert "coordinates standards" in result.actor_outputs["eu"]
-    # Same artifacts as a simulated turn, including the refusal: a note to a
-    # human team is rejected, never silently delivered to nobody.
-    assert (run_dir / "turn-01" / "2-negotiations" / "messages.json").is_file()
-    rounds = list((run_dir / "turn-01" / "2-negotiations").glob("round-*.md"))
-    assert len(rounds) == 1
-    assert "face-to-face" in rounds[0].read_text()
+    assert not (run_dir / "turn-01" / "2-negotiations").exists()
 
 
 def test_resolve_extra_overrides_recorded_for_chained_menus(tmp_path):

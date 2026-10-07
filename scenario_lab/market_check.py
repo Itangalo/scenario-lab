@@ -1,9 +1,11 @@
 """Compare the Game Master's turn-1 event pricing against market anchors.
 
-The planned first test for market anchors: for every event carrying a
-``**Metaculus:**`` snapshot, set the snapshotted community figure beside the
-probability the events step actually evaluated on turn 1. No API calls --
-both sides are read from persisted artifacts. A gap is a question, not a
+The first test for market anchors: for every event carrying a market
+snapshot (Metaculus, Manifold or Polymarket), set the snapshotted figure
+beside the probability the events step actually evaluated on turn 1. No API
+calls -- both sides are read from persisted artifacts. Anchors are never
+rendered into a prompt, so the Game Master priced the event without seeing
+the market and the gap is a genuine comparison. A gap is a question, not a
 verdict: market odds are unconditional on the world and tied to a resolution
 date, while the Game Master prices the event conditional on the simulated
 state for one turn. Persistent overpricing against the market usually means
@@ -73,9 +75,9 @@ def market_check(run_dir: Path) -> dict[str, Any]:
 
     comparisons = []
     for event in scenario.events:
-        if not event.metaculus_url:
+        if not event.market_url:
             continue
-        market = _parse_percent(event.metaculus_probability)
+        market = _parse_percent(event.market_probability)
         if market is None:
             warnings.append(
                 f"Event '{event.id}' has a Metaculus URL but no parseable "
@@ -92,8 +94,8 @@ def market_check(run_dir: Path) -> dict[str, Any]:
             {
                 "id": event.id,
                 "market": market,
-                "market_retrieved": event.metaculus_retrieved,
-                "market_url": event.metaculus_url,
+                "market_retrieved": event.market_retrieved,
+                "market_url": event.market_url,
                 "gm_turn_1": gm_probability,
                 "gap": (
                     round(gm_probability - market, 4)

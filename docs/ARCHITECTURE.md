@@ -42,7 +42,8 @@ V5 keeps the V4 simplification and groups the turn into three resumable phases. 
 - **Definition:** Simulation participants (governments, organizations, companies) with defined goals and behaviors.
 - **Statements:** Each actor holds a **statement ledger** – a list of what it stands for, wants, and is, tagged with a changeability tier: `position` (working stances, move with strategy), `commitment` (staked positions whose reversal costs something someone will collect), and `identity` (what the actor would have to stop being to drop). Absolutes live outside the ledger in `constitution.md`. See *Actor Statement Ledgers* below.
 - **Actions:** Actors review their statements and describe actions each turn. These are descriptive text, not structured data.
-- **Negotiations (optional, off by default):** Before the action write-up, actors may exchange short private notes for up to `max_rounds` rounds (`orchestrator._run_negotiations`, pure delivery logic in `negotiations.py`). Each round's prompts run in parallel; delivered notes join each recipient's inbox for the next round and the final actions, rendered as "Message from ..." lines, while each sender sees its own offers plus delivery failures ("You wrote to ..." / "was not delivered") so it can act on replies and never reads a lost note as ignored. Message rounds render a dedicated prompt variant on both system and user templates (`negotiation_round`), so they never carry the action write-up format; the validator warns on custom templates missing any of the three variables. Notes are written as `{"messages": [{"to", "text"}]}` under `## Messages`; silence is not a fault. Python enforces the contact allowlist and per-actor round participation and persists every round under `turn-XX/2-negotiations/` (`round-NN.md` plus cumulative `messages.json`, replaced wholesale on an actors-phase rerun); content is never judged, and quoting a note onward (leaking) is possible by design. Stops early on a silent round. The full record rides into the metrics prompt (`negotiation_record`), where the Game Master -- the only reader of every note -- holds actors to agreements and prices leaks. Validation warns about the multiplied LLM cost and about custom templates that drop the inbox, the outbox, the round variant, or the Game Master record.
+- **Negotiations (optional, off by default):** Before the action write-up, actors may exchange short private notes for up to `max_rounds` rounds (`orchestrator._run_negotiations`, pure delivery logic in `negotiations.py`). Each round's prompts run in parallel; delivered notes join each recipient's inbox for the next round and the final actions, rendered as "Message from ..." lines, while each sender sees its own offers plus delivery failures ("You wrote to ..." / "was not delivered") so it can act on replies and never reads a lost note as ignored. Message rounds render a dedicated prompt variant on both system and user templates (`negotiation_round`), so they never carry the action write-up format; the validator warns on custom templates missing any of the three variables. Notes are written as `{"messages": [{"to", "text"}]}` under `## Messages`; silence is not a fault. Python enforces the contact allowlist and per-actor round participation and persists every round under `turn-XX/2-negotiations/` (`round-NN.md` plus cumulative `messages.json`, replaced wholesale on an actors-phase rerun); content is never judged, and quoting a note onward (leaking) is possible by design. Rounds run at least `rounds` and at most `max_rounds` (the larger of the two caps the loop, so a config override of `rounds` alone is honoured), and a silent round past the planned ones ends the loop early. A writer with nobody to write to (an empty `contacts` list, or in live games every other actor human-played) sits out rather than paying for notes that can only bounce, and `You may write to:` never lists an unavailable recipient. The full record rides into the metrics prompt (`negotiation_record`), where the Game Master -- the only reader of every note -- holds actors to agreements and prices leaks. Validation warns about the multiplied LLM cost and about custom templates that drop the inbox, the outbox, the round variant, or the Game Master record.
+- **Market anchors (silent, authoring-time):** An event may carry a forecasting-market snapshot (`market_url`, `market_retrieved`, `market_probability`; `events.md` fields `**Market:**` or the labels `**Metaculus:**` / `**Manifold:**` / `**Polymarket:**`, plus `**Retrieved:**` and `**Market probability:**`). They are properties for the people building a scenario and are deliberately **not rendered into any prompt**: the Game Master prices events without seeing the market, which keeps `market-check` an honest comparison of its turn-1 pricing against the snapshots, and avoids anchoring later turns on a figure that is unconditional, tied to a resolution date, and growing stale. `market_sources.py` recognises the three platforms from the URL (the validator rejects anything else) and fetches current figures for Manifold (binary markets) and Polymarket (Yes/No markets) from their public APIs via `market-fetch`; Metaculus' API needs a token, so its figure is recorded by hand. Fetching is a read-only authoring command – nothing is fetched during a run, and nothing is written to `events.md` without a human.
 
 ### Events
 - **Definition:** Exogenous happenings with probabilities and conditions.
@@ -373,12 +374,14 @@ New providers can be registered without changing orchestrator code.
 - `validate_run_directory(run_dir)`: Checks for required files (`config.json`, `summary.json`, turn directories).
 - `get_scenario_path_from_run(run_dir)`: Navigates from run directory to scenario directory.
 - `load_run_state(run_dir, from_turn, state_modifications)`: Loads complete scenario state from disk, with optional modifications.
-- `create_branch(parent_run_dir, from_turn, output_base, state_modifications, config_overrides)`: Creates a new branched run.
+- `load_initial_scenario(run_dir)`: Rebuilds the scenario as it stood before turn 1 (scenario source plus the `initial_state` recorded in `config.json`), for a turn-1 resume or a branch inside turn 1.
+- `detect_last_phase(run_dir, turn)`, `next_phase(phase)`: Mid-turn progress detection. A turn is complete only when its `6-historical-summary.md` exists, which the world phase writes last (after the constitutional referee), on turn 1 as on every other turn.
+- `create_branch(parent_run_dir, from_turn, output_base, state_modifications, config_overrides, from_phase)`: Creates a new branched run; `from_phase` branches inside `from_turn`.
 
 **Resume Implementation:**
 - **CLI Command:** `python -m scenario_lab.cli resume <run_dir> [options]`
 - **Options:**
-  * `--from-turn N`: Resume from specific turn (default: auto-detect last completed)
+  * `--from-turn N`: Resume after turn N, the last complete turn (default: auto-detect). A turn interrupted between phases continues mid-turn automatically; a turn-1 crash rebuilds the starting world with `load_initial_scenario`, including any `--initial-state` draw recorded in `config.json`
   * `--turns N`: Total turns to run (overrides config)
   * `--model X`: Override all LLM models
   * `--override key=value`: Override any config value
@@ -403,6 +406,7 @@ New providers can be registered without changing orchestrator code.
 - **CLI Command:** `python -m scenario_lab.cli branch <run_dir> --from-turn N [options]`
 - **Options:**
   * `--from-turn N`: **Required** - Turn number to branch from
+  * `--from-phase events|actors`: Branch *inside* turn N, after that phase. The child copies turns 1..N-1 whole and, for turn N, only the artifacts of the phases up to and including the named one (`1-*` for events; `1-*` and `2-*` for actors, including `2-negotiations/`); later-phase files and `llm-io/` stay behind so phase detection cannot mistake stale files for finished work. Requires that the parent reached that phase. The child's `summary.json` records `phases[N] = <phase>` and `metadata.branch_phase`, and the run continues turn N from the next phase using the same reload path as a mid-turn `resume`. State modifications apply to the world before turn N (the end of turn N-1), so they cannot be used when branching inside turn 1, and `--force-event`/`--suppress-event` are rejected because the events phase is kept. `--from-phase world` is the same as omitting the flag.
   * `--modify-metric id=value`: Modify metric value(s) for "what-if" scenarios (repeatable)
   * `--modify-narrative "text"`: Replace narrative text
   * `--model X`: Override all LLM models
@@ -413,12 +417,12 @@ New providers can be registered without changing orchestrator code.
   * `--log-llm-io`: Write per-call LLM transcripts under `turn-XX/llm-io/`
 - **Behavior:**
   * Creates a *new* timestamped run directory (same-second collisions get a numeric suffix, so concurrent branch creation is safe)
-  * Copies turn directories 1 through N from parent run
+  * Copies turn directories 1 through N from parent run (with `--from-phase`: 1 through N-1, plus turn N's kept phases)
   * Loads state from turn N and applies modifications
   * Continues execution from turn N+1 in new directory
   * Useful for: "what-if" experiments, sensitivity analysis, model comparison
 - **Metadata Tracking:**
-  * `config.json` includes: `parent_run`, `branch_turn`, `branch_created_at`, `state_modifications`, `config_overrides`
+  * `config.json` includes: `parent_run`, `branch_turn`, `branch_phase` (mid-turn branches), `branch_created_at`, `state_modifications`, `config_overrides`
   * `summary.json` includes: `metadata` object with parent run reference, branch point, and all modifications
   * Preserves full lineage for analysis and reproducibility
 - **State Modifications:**
@@ -657,7 +661,7 @@ Cost so far: $0.15 | Projected total: $0.50
 A run with no value for the requested key is excluded by filters and grouped under `(unknown)` when grouping.
 
 **CLI surface on `ensemble`, `synthesize` and `calibrate`:**
-- `--filter KEY=VALUE` (repeatable, AND semantics) restricts the population; exclusion counts are reported rather than silent. Recency (`--max-runs`) is applied before filtering, newest-first by modification time.
+- `--filter KEY=VALUE` (repeatable, AND semantics) restricts the population; exclusion counts are reported rather than silent. Recency (`--max-runs`) is applied before filtering, newest-first by the timestamp in the run name (modification time only for names without one), so `--max-runs 10 --filter subdir=arm-a` means the arm's share of the ten newest runs overall, not the ten newest of the arm.
 - `--group-by KEY` facets the analysis per cohort (ensemble, synthesize).
 
 **Default behaviour with neither flag is pooled and unchanged**, but when a population mixes scenario identities (name + actors), ensemble reports state it explicitly and point at `--filter`, so contamination is visible even when pooled.

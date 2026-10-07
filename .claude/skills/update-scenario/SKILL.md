@@ -2,7 +2,7 @@
 name: update-scenario
 description: >
   Refresh an existing Scenario Lab scenario from developments since its start
-  date (or last update): news, changed facts, and Metaculus markets. Researches
+  date (or last update): news, changed facts, and forecasting markets (Metaculus, Manifold, Polymarket). Researches
   with the harness's own search, writes one approval-markdown entry per proposed
   change (change, motivation, sources), waits for human approval, then applies
   only what was approved and records the update. Triggers: "update the
@@ -16,9 +16,9 @@ You are refreshing an existing Scenario Lab scenario. The rule that governs ever
 
 ## Phase 1: Scope
 
-1. Read the scenario: `scenario.yaml` (note `start_date`), `events.md` (note any `**Metaculus:**` anchors), `metrics.md`, `background/context.md`, `design-notes.md`.
+1. Read the scenario: `scenario.yaml` (note `start_date`), `events.md` (note any market anchors: `**Market:**`, `**Metaculus:**`, `**Manifold:**` or `**Polymarket:**`), `metrics.md`, `background/context.md`, `design-notes.md`.
 2. Check `scenarios/<id>/updates/` for previous `UPDATE-YYYYMMDD.md` files. The baseline date is the latest update's date, or the scenario's `start_date` if there are none.
-3. Present the scope in one short message: baseline date, how many anchored events (Metaculus re-checks), and what you will search for. Do not start editing.
+3. Present the scope in one short message: baseline date, how many anchored events (market re-checks), and what you will search for. Do not start editing.
 
 ## Phase 2: Research
 
@@ -29,7 +29,7 @@ Use the harness's own search and fetch tools (you choose the sources – news ou
 - **Catalogued events that have now happened**: each becomes either *retired* (remove from `events.md`) or *pinned* (rewritten as turn-1 context – it is history now, not uncertainty).
 - **New events** worth adding to the catalogue.
 - **Probability shifts**: developments that move an event's per-turn figure.
-- **Metaculus anchors**: re-fetch every `**Metaculus:**` URL, record the new community figure with today's date. A moved market is a proposal to adjust the event's probability framing, not an order – market odds are unconditional and dated, scenario events conditional and per-turn.
+- **Market anchors**: run `python -m scenario_lab.cli market-fetch scenarios/<id>` (read-only; Manifold and Polymarket figures come from their public APIs) and read Metaculus anchors off the page; record each new figure with today's date. A moved market is a proposal to adjust the event's probability framing, not an order – market odds are unconditional and dated, scenario events conditional and per-turn.
 
 Save fetched source texts or summaries under `scenarios/<id>/source-material/` (new `update-YYYYMMDD/` subfolder) so the update is reproducible without the links, with the same provenance habit as `frame-scenario`: user, source, model knowledge, assumption.
 
@@ -47,7 +47,7 @@ Write `scenarios/<id>/updates/UPDATE-YYYYMMDD.md` – one entry per proposed cha
 - **Status:** proposed
 ```
 
-Kinds: `context`, `metric`, `event-new`, `event-retired`, `event-pinned`, `probability`, `anchor` (Metaculus refresh). For `event-retired` vs `event-pinned`, recommend one and say why – the human decides. Entries must be independently applicable (approving U2 must not require U1).
+Kinds: `context`, `metric`, `event-new`, `event-retired`, `event-pinned`, `probability`, `anchor` (market refresh). For `event-retired` vs `event-pinned`, recommend one and say why – the human decides. Entries must be independently applicable (approving U2 must not require U1).
 
 Present the proposal to the user and stop. Do not touch scenario files in this phase – not even "trivial" ones.
 
@@ -60,6 +60,6 @@ Present the proposal to the user and stop. Do not touch scenario files in this p
 
 ## What this skill does not do
 
-- No live fetching during runs: market figures are snapshotted into `events.md` (`**Metaculus:**`, `**Retrieved:**`, `**Market probability:**`) with source, URL and date – the run never calls the web.
+- No live fetching during runs: market figures are snapshotted into `events.md` (`**Market:**` or its source label, `**Retrieved:**`, `**Market probability:**`) with source, URL and date – the run never calls the web.
 - No silent physics changes: a probability edit, a retired event, a moved metric start value each need their own approved entry.
 - No invented facts: a claim without a source is marked `[assumption]` in the entry and needs explicit approval to survive.

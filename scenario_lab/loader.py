@@ -1274,11 +1274,21 @@ EVENT_FIELDS = frozenset(
         "can_repeat",
         "description",
         "eligible",
+        # Silent market anchor: one URL field named after its source (or the
+        # neutral "market"), plus the snapshot date and figure.
+        "market",
         "metaculus",
+        "manifold",
+        "polymarket",
         "retrieved",
         "market_probability",
     }
 )
+
+
+# Field names that carry a market question's URL. The source is read from the
+# URL itself (see market_sources.detect_source); the key is only a label.
+MARKET_URL_KEYS = ("market", "metaculus", "manifold", "polymarket")
 
 
 def load_events(path: Path) -> list[Event]:
@@ -1337,9 +1347,11 @@ def create_event(data: dict) -> Event:
         probability=probability,
         can_repeat=can_repeat,
         eligible=eligible,
-        metaculus_url=data.get("metaculus", ""),
-        metaculus_retrieved=data.get("retrieved", ""),
-        metaculus_probability=data.get("market_probability", ""),
+        market_url=next(
+            (data[key] for key in MARKET_URL_KEYS if data.get(key)), ""
+        ),
+        market_retrieved=data.get("retrieved", ""),
+        market_probability=data.get("market_probability", ""),
     )
 
 

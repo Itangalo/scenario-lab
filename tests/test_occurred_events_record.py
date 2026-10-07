@@ -120,6 +120,7 @@ def test_resume_does_not_mark_repeatables_occurred(scenario, tmp_path):
     )
     (turn_dir / "4-world-state.md").write_text("state", encoding="utf-8")
     (turn_dir / "5-notepad.md").write_text("notes", encoding="utf-8")
+    (turn_dir / "6-historical-summary.md").write_text("summary", encoding="utf-8")
     (turn_dir / "2-actors" / "government.md").write_text("actions", encoding="utf-8")
     (run_dir / "config.json").write_text("{}", encoding="utf-8")
     (run_dir / "summary.json").write_text(

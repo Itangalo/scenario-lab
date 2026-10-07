@@ -40,10 +40,11 @@ def iter_run_dirs(runs_dir: Path, order: str = "name") -> list[Path]:
     for child in sorted(runs_dir.iterdir()):
         if not child.is_dir():
             continue
-        if is_run_dirname(child.name):
-            if (child / "config.json").is_file():
-                found.append(child)
+        if is_run_dirname(child.name) and (child / "config.json").is_file():
+            found.append(child)
             continue
+        # A directory that merely *looks* like a run (an output subfolder
+        # named "run-fast", say) has no config.json of its own: descend.
         if child.name == "batch-logs":
             continue
         for grandchild in sorted(child.iterdir()):
@@ -246,6 +247,12 @@ class OutputManager:
                 raise ValueError(
                     "--output-subdir cannot be 'batch-logs': that name is "
                     "reserved and its runs would be undiscoverable"
+                )
+            if is_run_dirname(subdir_name):
+                raise ValueError(
+                    f"--output-subdir cannot start with {' or '.join(repr(p) for p in RUN_DIR_PREFIXES)}: "
+                    f"'{subdir_name}' would read as a run directory and its runs "
+                    "would be hidden from ensembles and resumes"
                 )
             runs_dir = runs_dir / subdir_name
         runs_dir.mkdir(parents=True, exist_ok=True)

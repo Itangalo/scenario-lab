@@ -488,21 +488,21 @@ Canonical event block format:
 
 `Eligible` is the sixth field the parser reads: a deterministic gate evaluated in Python against current metric values.
 
-Optional forecasting anchor (snapshot, never fetched live):
+Optional market anchor – a silent property for scenario builders (snapshot, never fetched during a run, **never rendered into a prompt**):
 
 ```markdown
-**Metaculus:** https://www.metaculus.com/questions/12345/my-event/
+**Market:** https://manifold.markets/someone/will-my-event-happen
 **Retrieved:** 2026-10-01
 **Market probability:** 34%
 ```
 
-The community figure is a prior the Game Master adjusts to the simulated world state – market odds are unconditional and dated, scenario events conditional and per-turn – and the pointer is what the `update-scenario` skill re-checks. Malformed anchors (wrong-domain URL, non-date retrieval, unparseable figure) are validation errors; a missing anchor is fine.
+Supported sources are Metaculus (`metaculus.com/questions/<id>/…`), Manifold (`manifold.markets/<user>/<slug>`) and Polymarket (`polymarket.com/event/<event>/<market>`), recognised from the URL. The field label may be `Market`, `Metaculus`, `Manifold` or `Polymarket`; the label is cosmetic. Market odds are unconditional and tied to a resolution date, while scenario events are conditional on the simulated world and priced per turn, so the figure informs what the author writes in `Probability`; it is not the probability. Because the Game Master never sees it, `market-check RUN_DIR` can compare its own turn-1 pricing against the snapshot. `market-fetch URL…` reads the current Manifold or Polymarket figure (Metaculus is recorded by hand) and prints lines to paste; `market-fetch scenarios/NAME` re-checks every anchored event read-only. The pointer is also what the `update-scenario` skill re-checks. Malformed anchors (unrecognised URL, non-date retrieval, unparseable figure) are validation errors; a missing anchor is fine.
 
 Parsing behavior:
 
 - an event is only materialized if `ID` exists
 - `Can repeat` is true for `yes` or `true` (case-insensitive)
-- **nine fields are read** — `ID`, `Condition`, `Probability`, `Can repeat`, `Description`, `Eligible`, `Metaculus`, `Retrieved`, `Market probability`. Any other `**Field:**` inside an event block is parsed and then discarded, so it reaches no prompt and never errors. `validate` warns about these; the warning names the labels and the number of events carrying them. Anything an author needs the model to act on belongs in the read fields, in the metric rules, or in a prompt — not in a field of its own invention. Anchors are also patchable per event (`variants/*.events.patch.md`).
+- **nine fields are read** (the market URL under any of its four labels) — `ID`, `Condition`, `Probability`, `Can repeat`, `Description`, `Eligible`, `Market` (or its labels `Metaculus`, `Manifold`, `Polymarket`), `Retrieved`, `Market probability`. Any other `**Field:**` inside an event block is parsed and then discarded, so it reaches no prompt and never errors. `validate` warns about these; the warning names the labels and the number of events carrying them. Anything an author needs the model to act on belongs in the read fields, in the metric rules, or in a prompt — not in a field of its own invention. Anchors are also patchable per event (`variants/*.events.patch.md`).
 
 Probability values support:
 
